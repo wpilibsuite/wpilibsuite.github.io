@@ -1,7 +1,7 @@
 var NAVTREEINDEX37 =
 {
-"namespacewpi_1_1java.html":[4,0,4,1],
 "namespacewpi_1_1java.html":[5,0,7,3],
+"namespacewpi_1_1java.html":[4,0,4,1],
 "never__destroyed_8h_source.html":[6,0,7,0,0,0,0,0,0,5],
 "ntcore_8h_source.html":[6,0,3,0,0,0,0,2],
 "ntcore__c_8h_source.html":[6,0,3,0,0,0,0,3],

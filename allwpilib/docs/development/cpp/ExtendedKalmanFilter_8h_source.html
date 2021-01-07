@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.1.1-8-g278e0f1</span>
+   &#160;<span id="projectnumber">2021.1.2-1-g85a0bd4</span>
    </div>
   </td>
  </tr>
@@ -107,8 +107,8 @@ $(document).ready(function(){initNavTree('ExtendedKalmanFilter_8h_source.html','
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;drake/math/discrete_algebraic_riccati_equation.h&quot;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;frc/StateSpaceUtil.h&quot;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;frc/system/Discretization.h&quot;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;frc/system/NumericalJacobian.h&quot;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;frc/system/RungeKutta.h&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;frc/system/NumericalIntegration.h&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;frc/system/NumericalJacobian.h&quot;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;units/time.h&quot;</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacefrc.html">frc</a> {</div>
@@ -191,7 +191,7 @@ $(document).ready(function(){initNavTree('ExtendedKalmanFilter_8h_source.html','
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    Eigen::Matrix&lt;double, States, States&gt; discQ;</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    DiscretizeAQTaylor&lt;States&gt;(contA, m_contQ, dt, &amp;discA, &amp;discQ);</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    m_xHat = <a class="code" href="namespacefrc.html#a6b60c757e9bd9105eed9ca465cb50c45">RungeKutta</a>(m_f, m_xHat, u, dt);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    m_xHat = <a class="code" href="namespacefrc.html#a362829981d16ca01c86bb52d3df6118b">RK4</a>(m_f, m_xHat, u, dt);</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    m_P = discA * m_P * discA.transpose() + discQ;</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  }</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
@@ -258,7 +258,7 @@ $(document).ready(function(){initNavTree('ExtendedKalmanFilter_8h_source.html','
 <div class="ttc" id="aclassfrc_1_1ExtendedKalmanFilter_html_a7d6a8c672d26d8fbcc6598381947c823"><div class="ttname"><a href="classfrc_1_1ExtendedKalmanFilter.html#a7d6a8c672d26d8fbcc6598381947c823">frc::ExtendedKalmanFilter::SetP</a></div><div class="ttdeci">void SetP(const Eigen::Matrix&lt; double, States, States &gt; &amp;P)</div><div class="ttdoc">Set the current error covariance matrix P.</div><div class="ttdef"><b>Definition:</b> ExtendedKalmanFilter.h:97</div></div>
 <div class="ttc" id="aclassfrc_1_1ExtendedKalmanFilter_html_a9446ab7a24735306b8a13326b711f8ef"><div class="ttname"><a href="classfrc_1_1ExtendedKalmanFilter.html#a9446ab7a24735306b8a13326b711f8ef">frc::ExtendedKalmanFilter::SetXhat</a></div><div class="ttdeci">void SetXhat(int i, double value)</div><div class="ttdoc">Set an element of the initial state estimate x-hat.</div><div class="ttdef"><b>Definition:</b> ExtendedKalmanFilter.h:124</div></div>
 <div class="ttc" id="aclassfrc_1_1ExtendedKalmanFilter_html_ad60af5653b38d334755fbdc559752943"><div class="ttname"><a href="classfrc_1_1ExtendedKalmanFilter.html#ad60af5653b38d334755fbdc559752943">frc::ExtendedKalmanFilter::P</a></div><div class="ttdeci">double P(int i, int j) const</div><div class="ttdoc">Returns an element of the error covariance matrix P.</div><div class="ttdef"><b>Definition:</b> ExtendedKalmanFilter.h:90</div></div>
-<div class="ttc" id="anamespacefrc_html_a6b60c757e9bd9105eed9ca465cb50c45"><div class="ttname"><a href="namespacefrc.html#a6b60c757e9bd9105eed9ca465cb50c45">frc::RungeKutta</a></div><div class="ttdeci">T RungeKutta(F &amp;&amp;f, T x, units::second_t dt)</div><div class="ttdoc">Performs 4th order Runge-Kutta integration of dx/dt = f(x) for dt.</div><div class="ttdef"><b>Definition:</b> RungeKutta.h:20</div></div>
+<div class="ttc" id="anamespacefrc_html_a362829981d16ca01c86bb52d3df6118b"><div class="ttname"><a href="namespacefrc.html#a362829981d16ca01c86bb52d3df6118b">frc::RK4</a></div><div class="ttdeci">T RK4(F &amp;&amp;f, T x, units::second_t dt)</div><div class="ttdoc">Performs 4th order Runge-Kutta integration of dx/dt = f(x) for dt.</div><div class="ttdef"><b>Definition:</b> NumericalIntegration.h:24</div></div>
 <div class="ttc" id="aclassfrc_1_1ExtendedKalmanFilter_html_ae78e8524370532a532ce4a2314c6bc1c"><div class="ttname"><a href="classfrc_1_1ExtendedKalmanFilter.html#ae78e8524370532a532ce4a2314c6bc1c">frc::ExtendedKalmanFilter::Xhat</a></div><div class="ttdeci">const Eigen::Matrix&lt; double, States, 1 &gt; &amp; Xhat() const</div><div class="ttdoc">Returns the state estimate x-hat.</div><div class="ttdef"><b>Definition:</b> ExtendedKalmanFilter.h:102</div></div>
 <div class="ttc" id="aclassfrc_1_1ExtendedKalmanFilter_html_afd68484c47143bb0cdddf55120a7e8b5"><div class="ttname"><a href="classfrc_1_1ExtendedKalmanFilter.html#afd68484c47143bb0cdddf55120a7e8b5">frc::ExtendedKalmanFilter::Xhat</a></div><div class="ttdeci">double Xhat(int i) const</div><div class="ttdoc">Returns an element of the state estimate x-hat.</div><div class="ttdef"><b>Definition:</b> ExtendedKalmanFilter.h:109</div></div>
 <div class="ttc" id="aclassfrc_1_1ExtendedKalmanFilter_html_a540f4ee08bced06de29e2267cf7cfe1d"><div class="ttname"><a href="classfrc_1_1ExtendedKalmanFilter.html#a540f4ee08bced06de29e2267cf7cfe1d">frc::ExtendedKalmanFilter::Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdoc">Resets the observer.</div><div class="ttdef"><b>Definition:</b> ExtendedKalmanFilter.h:129</div></div>
@@ -274,7 +274,7 @@ $(document).ready(function(){initNavTree('ExtendedKalmanFilter_8h_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e81593cd22a74c0453b864f226c84e9d.html">wpimath</a></li><li class="navelem"><a class="el" href="dir_4a07e7e34c3309db4f2aee20318c365b.html">src</a></li><li class="navelem"><a class="el" href="dir_37ee524af24664d12db3cd06c96f93b9.html">main</a></li><li class="navelem"><a class="el" href="dir_0741e1c35aa739ecce87b7ca77560051.html">native</a></li><li class="navelem"><a class="el" href="dir_e7b4e55b90254cfe62f0cb6fe1aed23c.html">include</a></li><li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_7b4a0634315f7993a48b0e5d4ddcc644.html">estimator</a></li><li class="navelem"><b>ExtendedKalmanFilter.h</b></li>
-    <li class="footer">Generated on Wed Jan 6 2021 02:35:28 for WPILibC++ by
+    <li class="footer">Generated on Thu Jan 7 2021 05:42:44 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

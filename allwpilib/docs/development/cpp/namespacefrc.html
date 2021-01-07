@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.1.1-8-g278e0f1</span>
+   &#160;<span id="projectnumber">2021.1.2-1-g85a0bd4</span>
    </div>
   </td>
  </tr>
@@ -893,18 +893,26 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>from_json</b> (const 
 <tr class="memitem:af123172a8aa7b011d75963988ce2a800"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Matrix&lt; double, Outputs, Outputs &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#af123172a8aa7b011d75963988ce2a800">DiscretizeR</a> (const Eigen::Matrix&lt; double, Outputs, Outputs &gt; &amp;R, units::second_t dt)</td></tr>
 <tr class="memdesc:af123172a8aa7b011d75963988ce2a800"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a discretized version of the provided continuous measurement noise covariance matrix.  <a href="namespacefrc.html#af123172a8aa7b011d75963988ce2a800">More...</a><br /></td></tr>
 <tr class="separator:af123172a8aa7b011d75963988ce2a800"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b60c757e9bd9105eed9ca465cb50c45"><td class="memTemplParams" colspan="2">template&lt;typename F , typename T &gt; </td></tr>
-<tr class="memitem:a6b60c757e9bd9105eed9ca465cb50c45"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a6b60c757e9bd9105eed9ca465cb50c45">RungeKutta</a> (F &amp;&amp;f, T x, units::second_t dt)</td></tr>
-<tr class="memdesc:a6b60c757e9bd9105eed9ca465cb50c45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs 4th order Runge-Kutta integration of dx/dt = f(x) for dt.  <a href="namespacefrc.html#a6b60c757e9bd9105eed9ca465cb50c45">More...</a><br /></td></tr>
-<tr class="separator:a6b60c757e9bd9105eed9ca465cb50c45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22bc0e09f85f32fb3520a723a31338a1"><td class="memTemplParams" colspan="2">template&lt;typename F , typename T , typename U &gt; </td></tr>
-<tr class="memitem:a22bc0e09f85f32fb3520a723a31338a1"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a22bc0e09f85f32fb3520a723a31338a1">RungeKutta</a> (F &amp;&amp;f, T x, U u, units::second_t dt)</td></tr>
-<tr class="memdesc:a22bc0e09f85f32fb3520a723a31338a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs 4th order Runge-Kutta integration of dx/dt = f(x, u) for dt.  <a href="namespacefrc.html#a22bc0e09f85f32fb3520a723a31338a1">More...</a><br /></td></tr>
-<tr class="separator:a22bc0e09f85f32fb3520a723a31338a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a362829981d16ca01c86bb52d3df6118b"><td class="memTemplParams" colspan="2">template&lt;typename F , typename T &gt; </td></tr>
+<tr class="memitem:a362829981d16ca01c86bb52d3df6118b"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a362829981d16ca01c86bb52d3df6118b">RK4</a> (F &amp;&amp;f, T x, units::second_t dt)</td></tr>
+<tr class="memdesc:a362829981d16ca01c86bb52d3df6118b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs 4th order Runge-Kutta integration of dx/dt = f(x) for dt.  <a href="namespacefrc.html#a362829981d16ca01c86bb52d3df6118b">More...</a><br /></td></tr>
+<tr class="separator:a362829981d16ca01c86bb52d3df6118b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad21158d15addd3e6ec5c8b16b4a4c40c"><td class="memTemplParams" colspan="2">template&lt;typename F , typename T , typename U &gt; </td></tr>
+<tr class="memitem:ad21158d15addd3e6ec5c8b16b4a4c40c"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ad21158d15addd3e6ec5c8b16b4a4c40c">RK4</a> (F &amp;&amp;f, T x, U u, units::second_t dt)</td></tr>
+<tr class="memdesc:ad21158d15addd3e6ec5c8b16b4a4c40c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs 4th order Runge-Kutta integration of dx/dt = f(x, u) for dt.  <a href="namespacefrc.html#ad21158d15addd3e6ec5c8b16b4a4c40c">More...</a><br /></td></tr>
+<tr class="separator:ad21158d15addd3e6ec5c8b16b4a4c40c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a425ade41a4f9d2e4bb0618915c9937d4"><td class="memTemplParams" colspan="2">template&lt;typename F , typename T &gt; </td></tr>
 <tr class="memitem:a425ade41a4f9d2e4bb0618915c9937d4"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a425ade41a4f9d2e4bb0618915c9937d4">RungeKuttaTimeVarying</a> (F &amp;&amp;f, T x, units::second_t t, units::second_t dt)</td></tr>
 <tr class="memdesc:a425ade41a4f9d2e4bb0618915c9937d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs 4th order Runge-Kutta integration of dx/dt = f(t, x) for dt.  <a href="namespacefrc.html#a425ade41a4f9d2e4bb0618915c9937d4">More...</a><br /></td></tr>
 <tr class="separator:a425ade41a4f9d2e4bb0618915c9937d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1caaafb9e828af9aa8b55e7dfb99b5a"><td class="memTemplParams" colspan="2"><a id="ac1caaafb9e828af9aa8b55e7dfb99b5a"></a>
+template&lt;typename F , typename T , typename U &gt; </td></tr>
+<tr class="memitem:ac1caaafb9e828af9aa8b55e7dfb99b5a"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><b>RKF45Impl</b> (F &amp;&amp;f, T x, U u, double &amp;h, double maxTruncationError, double dtRemaining)</td></tr>
+<tr class="separator:ac1caaafb9e828af9aa8b55e7dfb99b5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1825219cb68950f7b141fabc3fd0904b"><td class="memTemplParams" colspan="2">template&lt;typename F , typename T , typename U &gt; </td></tr>
+<tr class="memitem:a1825219cb68950f7b141fabc3fd0904b"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a1825219cb68950f7b141fabc3fd0904b">RKF45</a> (F &amp;&amp;f, T x, U u, units::second_t dt, double maxError=1e-6)</td></tr>
+<tr class="memdesc:a1825219cb68950f7b141fabc3fd0904b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs adaptive RKF45 integration of dx/dt = f(x, u) for dt, as described in <a href="https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta%E2%80%93Fehlberg_method">https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta%E2%80%93Fehlberg_method</a>.  <a href="namespacefrc.html#a1825219cb68950f7b141fabc3fd0904b">More...</a><br /></td></tr>
+<tr class="separator:a1825219cb68950f7b141fabc3fd0904b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42a7f1c2bef6d2daeddbc1a07a3f24ca"><td class="memTemplParams" colspan="2">template&lt;int Rows, int Cols, typename... Ts, typename  = std::enable_if_t&lt;std::conjunction_v&lt;std::is_same&lt;double, Ts&gt;...&gt;&gt;&gt; </td></tr>
 <tr class="memitem:a42a7f1c2bef6d2daeddbc1a07a3f24ca"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Matrix&lt; double, Rows, Cols &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a42a7f1c2bef6d2daeddbc1a07a3f24ca">MakeMatrix</a> (Ts... elems)</td></tr>
 <tr class="memdesc:a42a7f1c2bef6d2daeddbc1a07a3f24ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a matrix from the given list of elements.  <a href="namespacefrc.html#a42a7f1c2bef6d2daeddbc1a07a3f24ca">More...</a><br /></td></tr>
@@ -2698,8 +2706,8 @@ template&lt;int Rows, int States, int Inputs, typename F , typename... Args&gt; 
 
 </div>
 </div>
-<a id="a22bc0e09f85f32fb3520a723a31338a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a22bc0e09f85f32fb3520a723a31338a1">&#9670;&nbsp;</a></span>RungeKutta() <span class="overload">[1/2]</span></h2>
+<a id="ad21158d15addd3e6ec5c8b16b4a4c40c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad21158d15addd3e6ec5c8b16b4a4c40c">&#9670;&nbsp;</a></span>RK4() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2707,7 +2715,7 @@ template&lt;int Rows, int States, int Inputs, typename F , typename... Args&gt; 
 template&lt;typename F , typename T , typename U &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">T frc::RungeKutta </td>
+          <td class="memname">T frc::RK4 </td>
           <td>(</td>
           <td class="paramtype">F &amp;&amp;&#160;</td>
           <td class="paramname"><em>f</em>, </td>
@@ -2751,8 +2759,8 @@ template&lt;typename F , typename T , typename U &gt; </div>
 
 </div>
 </div>
-<a id="a6b60c757e9bd9105eed9ca465cb50c45"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b60c757e9bd9105eed9ca465cb50c45">&#9670;&nbsp;</a></span>RungeKutta() <span class="overload">[2/2]</span></h2>
+<a id="a362829981d16ca01c86bb52d3df6118b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a362829981d16ca01c86bb52d3df6118b">&#9670;&nbsp;</a></span>RK4() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2760,7 +2768,7 @@ template&lt;typename F , typename T , typename U &gt; </div>
 template&lt;typename F , typename T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">T frc::RungeKutta </td>
+          <td class="memname">T frc::RK4 </td>
           <td>(</td>
           <td class="paramtype">F &amp;&amp;&#160;</td>
           <td class="paramname"><em>f</em>, </td>
@@ -2791,6 +2799,66 @@ template&lt;typename F , typename T &gt; </div>
     <tr><td class="paramname">f</td><td>The function to integrate. It must take one argument x. </td></tr>
     <tr><td class="paramname">x</td><td>The initial value of x. </td></tr>
     <tr><td class="paramname">dt</td><td>The time over which to integrate. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1825219cb68950f7b141fabc3fd0904b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1825219cb68950f7b141fabc3fd0904b">&#9670;&nbsp;</a></span>RKF45()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename F , typename T , typename U &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">T frc::RKF45 </td>
+          <td>(</td>
+          <td class="paramtype">F &amp;&amp;&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">U&#160;</td>
+          <td class="paramname"><em>u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">units::second_t&#160;</td>
+          <td class="paramname"><em>dt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>maxError</em> = <code>1e-6</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Performs adaptive RKF45 integration of dx/dt = f(x, u) for dt, as described in <a href="https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta%E2%80%93Fehlberg_method">https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta%E2%80%93Fehlberg_method</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td>The function to integrate. It must take two arguments x and u. </td></tr>
+    <tr><td class="paramname">x</td><td>The initial value of x. </td></tr>
+    <tr><td class="paramname">u</td><td>The value u held constant over the integration period. </td></tr>
+    <tr><td class="paramname">dt</td><td>The time over which to integrate. </td></tr>
+    <tr><td class="paramname">maxError</td><td>The maximum acceptable truncation error. Usually a small number like 1e-6. </td></tr>
   </table>
   </dd>
 </dl>
@@ -3037,7 +3105,7 @@ template&lt;int States, int CovDim&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li>
-    <li class="footer">Generated on Wed Jan 6 2021 02:35:29 for WPILibC++ by
+    <li class="footer">Generated on Thu Jan 7 2021 05:42:45 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>
