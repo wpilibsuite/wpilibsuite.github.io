@@ -1,7 +1,11 @@
 var NAVTREEINDEX37 =
 {
-"namespacewpi_1_1java.html":[5,0,7,3],
+"namespacent_1_1EntryListenerFlags.html":[4,0,3,0],
+"namespaces.html":[4,0],
+"namespacewpi_1_1detail.html":[5,0,7,0],
+"namespacewpi_1_1detail.html":[4,0,4,0],
 "namespacewpi_1_1java.html":[4,0,4,1],
+"namespacewpi_1_1java.html":[5,0,7,3],
 "never__destroyed_8h_source.html":[6,0,7,0,0,0,0,0,0,5],
 "ntcore_8h_source.html":[6,0,3,0,0,0,0,2],
 "ntcore__c_8h_source.html":[6,0,3,0,0,0,0,3],
@@ -245,9 +249,5 @@ var NAVTREEINDEX37 =
 "structfrc_1_1ADXL362_1_1AllAxes.html":[5,0,2,6,0],
 "structfrc_1_1ADXL362_1_1AllAxes.html#a965ef5a451165cc62db79901e0dc390b":[5,0,2,6,0,1],
 "structfrc_1_1ADXL362_1_1AllAxes.html#ae7ff073e5e548b74baab336e7c9a5fd3":[5,0,2,6,0,0],
-"structfrc_1_1ADXL362_1_1AllAxes.html#af923c40b7421cea1134f922ed655f598":[5,0,2,6,0,2],
-"structfrc_1_1CANData.html":[5,0,2,24],
-"structfrc_1_1CANData.html#aa275b9146373ebbbdf5c1f224fcd7352":[5,0,2,24,0],
-"structfrc_1_1CANData.html#ac0befe283818e030666fe5ca99f85be8":[5,0,2,24,2],
-"structfrc_1_1CANData.html#ac2515d55e732b243e84d53a440c15899":[5,0,2,24,1]
+"structfrc_1_1ADXL362_1_1AllAxes.html#af923c40b7421cea1134f922ed655f598":[5,0,2,6,0,2]
 };

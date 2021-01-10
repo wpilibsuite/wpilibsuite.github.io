@@ -12,8 +12,12 @@ var group__hal__simdevice =
     [ "HAL_GetSimValueBoolean", "group__hal__simdevice.html#ga73c9e5733f08b9004f3c3d277d3a2d1a", null ],
     [ "HAL_GetSimValueDouble", "group__hal__simdevice.html#ga0be6a1ad887572b47ef84ecb4c8e5d5d", null ],
     [ "HAL_GetSimValueEnum", "group__hal__simdevice.html#ga1331dc441f146dbb42ccc4cb3af54bf4", null ],
+    [ "HAL_GetSimValueInt", "group__hal__simdevice.html#gaba7c611c6e2f3704422c2fa1fe88d461", null ],
+    [ "HAL_GetSimValueLong", "group__hal__simdevice.html#ga8175dfd4d0c35f2381f5734803fa27ee", null ],
     [ "HAL_SetSimValue", "group__hal__simdevice.html#ga373599c87cbe5be376e745b618a8aeea", null ],
     [ "HAL_SetSimValueBoolean", "group__hal__simdevice.html#gab5cda539e8f0ad65d58cd0cd85578494", null ],
     [ "HAL_SetSimValueDouble", "group__hal__simdevice.html#ga22b78417a89aeacce9ec10fcec5e4a34", null ],
-    [ "HAL_SetSimValueEnum", "group__hal__simdevice.html#ga208247d10a836d74ccc9aba2eb5bc51d", null ]
+    [ "HAL_SetSimValueEnum", "group__hal__simdevice.html#ga208247d10a836d74ccc9aba2eb5bc51d", null ],
+    [ "HAL_SetSimValueInt", "group__hal__simdevice.html#ga6baff4d0914c4ff9946d403ba2c8e05b", null ],
+    [ "HAL_SetSimValueLong", "group__hal__simdevice.html#ga3849af578ee05d71fb340cc18487aa5a", null ]
 ];
