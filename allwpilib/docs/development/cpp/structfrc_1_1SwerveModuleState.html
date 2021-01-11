@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.1.2-5-gfb99910</span>
+   &#160;<span id="projectnumber">2021.1.2-6-ge955037</span>
    </div>
   </td>
  </tr>
@@ -90,6 +90,7 @@ $(document).ready(function(){initNavTree('structfrc_1_1SwerveModuleState.html','
 
 <div class="header">
   <div class="summary">
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structfrc_1_1SwerveModuleState-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -102,6 +103,12 @@ $(document).ready(function(){initNavTree('structfrc_1_1SwerveModuleState.html','
 
 <p><code>#include &lt;<a class="el" href="SwerveModuleState_8h_source.html">SwerveModuleState.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a156f23b8877aebb0820c48e2e536ae43"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structfrc_1_1SwerveModuleState.html">SwerveModuleState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfrc_1_1SwerveModuleState.html#a156f23b8877aebb0820c48e2e536ae43">Optimize</a> (const <a class="el" href="structfrc_1_1SwerveModuleState.html">SwerveModuleState</a> &amp;desiredState, const <a class="el" href="classfrc_1_1Rotation2d.html">Rotation2d</a> &amp;currentAngle)</td></tr>
+<tr class="memdesc:a156f23b8877aebb0820c48e2e536ae43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimize the change in heading the desired swerve module state would require by potentially reversing the direction the wheel spins.  <a href="structfrc_1_1SwerveModuleState.html#a156f23b8877aebb0820c48e2e536ae43">More...</a><br /></td></tr>
+<tr class="separator:a156f23b8877aebb0820c48e2e536ae43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a686b128ca4f86f83788ef08024523fa8"><td class="memItemLeft" align="right" valign="top"><a id="a686b128ca4f86f83788ef08024523fa8"></a>
@@ -115,7 +122,54 @@ units::meters_per_second_t&#160;</td><td class="memItemRight" valign="bottom"><a
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents the state of one swerve module. </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a156f23b8877aebb0820c48e2e536ae43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a156f23b8877aebb0820c48e2e536ae43">&#9670;&nbsp;</a></span>Optimize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="structfrc_1_1SwerveModuleState.html">SwerveModuleState</a> frc::SwerveModuleState::Optimize </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structfrc_1_1SwerveModuleState.html">SwerveModuleState</a> &amp;&#160;</td>
+          <td class="paramname"><em>desiredState</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classfrc_1_1Rotation2d.html">Rotation2d</a> &amp;&#160;</td>
+          <td class="paramname"><em>currentAngle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Minimize the change in heading the desired swerve module state would require by potentially reversing the direction the wheel spins. </p>
+<p>If this is used with the <a class="el" href="classfrc_1_1PIDController.html" title="Class implements a PID Control Loop.">PIDController</a> class's continuous input functionality, the furthest a wheel will ever rotate is 90 degrees.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">desiredState</td><td>The desired state. </td></tr>
+    <tr><td class="paramname">currentAngle</td><td>The current module angle. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li>/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/include/frc/kinematics/<a class="el" href="SwerveModuleState_8h_source.html">SwerveModuleState.h</a></li>
 </ul>
 </div><!-- contents -->
@@ -124,7 +178,7 @@ units::meters_per_second_t&#160;</td><td class="memItemRight" valign="bottom"><a
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="structfrc_1_1SwerveModuleState.html">SwerveModuleState</a></li>
-    <li class="footer">Generated on Sun Jan 10 2021 07:28:20 for WPILibC++ by
+    <li class="footer">Generated on Mon Jan 11 2021 06:51:48 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

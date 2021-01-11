@@ -47,8 +47,9 @@ var NAVTREEINDEX38 =
 "structfrc_1_1Spline_1_1ControlVector.html#a074418a97bc226aeb1a87bb61301849a":[5,0,2,183,0,1],
 "structfrc_1_1Spline_1_1ControlVector.html#ae36d85704be07deea3a57136a3928b66":[5,0,2,183,0,0],
 "structfrc_1_1SwerveModuleState.html":[5,0,2,193],
-"structfrc_1_1SwerveModuleState.html#a686b128ca4f86f83788ef08024523fa8":[5,0,2,193,1],
-"structfrc_1_1SwerveModuleState.html#ab8c668b9aaea89c1ce37502c09c18c0c":[5,0,2,193,0],
+"structfrc_1_1SwerveModuleState.html#a156f23b8877aebb0820c48e2e536ae43":[5,0,2,193,0],
+"structfrc_1_1SwerveModuleState.html#a686b128ca4f86f83788ef08024523fa8":[5,0,2,193,2],
+"structfrc_1_1SwerveModuleState.html#ab8c668b9aaea89c1ce37502c09c18c0c":[5,0,2,193,1],
 "structfrc_1_1TrajectoryConstraint_1_1MinMax.html":[5,0,2,202,0],
 "structfrc_1_1TrajectoryConstraint_1_1MinMax.html#a7ffbb771bf63970d5aec016d38f4bd8b":[5,0,2,202,0,1],
 "structfrc_1_1TrajectoryConstraint_1_1MinMax.html#a8c026d38680f80b6f7cee6070b02afb3":[5,0,2,202,0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX38 =
 "structwpi_1_1PointerLikeTypeTraits_3_01PointerUnion3_3_01PT1_00_01PT2_00_01PT3_01_4_01_4.html#a8a22b09219e6469d635d7d80daf48fe0":[5,0,7,146,1],
 "structwpi_1_1PointerLikeTypeTraits_3_01PointerUnion4_3_01PT1_00_01PT2_00_01PT3_00_01PT4_01_4_01_4.html":[5,0,7,147],
 "structwpi_1_1PointerLikeTypeTraits_3_01PointerUnion4_3_01PT1_00_01PT2_00_01PT3_00_01PT4_01_4_01_4.html#a16e3b47f5139751096f34a43c479a91b":[5,0,7,147,2],
-"structwpi_1_1PointerLikeTypeTraits_3_01PointerUnion4_3_01PT1_00_01PT2_00_01PT3_00_01PT4_01_4_01_4.html#a58fec20e2e5909d61250615b3786eaa5a94cfe986421cf5e6dc163e73e025017c":[5,0,7,147,0],
-"structwpi_1_1PointerLikeTypeTraits_3_01PointerUnion4_3_01PT1_00_01PT2_00_01PT3_00_01PT4_01_4_01_4.html#ae0cc4f66aab99e74a0d405f390bc2898":[5,0,7,147,1]
+"structwpi_1_1PointerLikeTypeTraits_3_01PointerUnion4_3_01PT1_00_01PT2_00_01PT3_00_01PT4_01_4_01_4.html#a58fec20e2e5909d61250615b3786eaa5a94cfe986421cf5e6dc163e73e025017c":[5,0,7,147,0]
 };

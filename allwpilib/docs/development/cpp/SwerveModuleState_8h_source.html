@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.1.2-5-gfb99910</span>
+   &#160;<span id="projectnumber">2021.1.2-6-ge955037</span>
    </div>
   </td>
  </tr>
@@ -100,27 +100,40 @@ $(document).ready(function(){initNavTree('SwerveModuleState_8h_source.html','');
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;frc/geometry/Rotation2d.h&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;units/velocity.h&quot;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacefrc.html">frc</a> {</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="structfrc_1_1SwerveModuleState.html">   14</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structfrc_1_1SwerveModuleState.html">SwerveModuleState</a> {</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="structfrc_1_1SwerveModuleState.html#a686b128ca4f86f83788ef08024523fa8">   18</a></span>&#160;  units::meters_per_second_t <a class="code" href="structfrc_1_1SwerveModuleState.html#a686b128ca4f86f83788ef08024523fa8">speed</a> = 0_mps;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="structfrc_1_1SwerveModuleState.html#ab8c668b9aaea89c1ce37502c09c18c0c">   23</a></span>&#160;  <a class="code" href="classfrc_1_1Rotation2d.html">Rotation2d</a> <a class="code" href="structfrc_1_1SwerveModuleState.html#ab8c668b9aaea89c1ce37502c09c18c0c">angle</a>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;units/angle.h&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;units/math.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;units/velocity.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacefrc.html">frc</a> {</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="structfrc_1_1SwerveModuleState.html">   16</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structfrc_1_1SwerveModuleState.html">SwerveModuleState</a> {</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="structfrc_1_1SwerveModuleState.html#a686b128ca4f86f83788ef08024523fa8">   20</a></span>&#160;  units::meters_per_second_t <a class="code" href="structfrc_1_1SwerveModuleState.html#a686b128ca4f86f83788ef08024523fa8">speed</a> = 0_mps;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="structfrc_1_1SwerveModuleState.html#ab8c668b9aaea89c1ce37502c09c18c0c">   25</a></span>&#160;  <a class="code" href="classfrc_1_1Rotation2d.html">Rotation2d</a> <a class="code" href="structfrc_1_1SwerveModuleState.html#ab8c668b9aaea89c1ce37502c09c18c0c">angle</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="structfrc_1_1SwerveModuleState.html#a156f23b8877aebb0820c48e2e536ae43">   36</a></span>&#160;  <span class="keyword">static</span> <a class="code" href="structfrc_1_1SwerveModuleState.html">SwerveModuleState</a> <a class="code" href="structfrc_1_1SwerveModuleState.html#a156f23b8877aebb0820c48e2e536ae43">Optimize</a>(<span class="keyword">const</span> <a class="code" href="structfrc_1_1SwerveModuleState.html">SwerveModuleState</a>&amp; desiredState,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                                    <span class="keyword">const</span> <a class="code" href="classfrc_1_1Rotation2d.html">Rotation2d</a>&amp; currentAngle) {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">auto</span> delta = desiredState.<a class="code" href="structfrc_1_1SwerveModuleState.html#ab8c668b9aaea89c1ce37502c09c18c0c">angle</a> - currentAngle;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">if</span> (units::math::abs(delta.Degrees()) &gt; 90_deg) {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      <span class="keywordflow">return</span> {-desiredState.<a class="code" href="structfrc_1_1SwerveModuleState.html#a686b128ca4f86f83788ef08024523fa8">speed</a>, desiredState.<a class="code" href="structfrc_1_1SwerveModuleState.html#ab8c668b9aaea89c1ce37502c09c18c0c">angle</a> + <a class="code" href="classfrc_1_1Rotation2d.html">Rotation2d</a>{180_deg}};</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      <span class="keywordflow">return</span> {desiredState.<a class="code" href="structfrc_1_1SwerveModuleState.html#a686b128ca4f86f83788ef08024523fa8">speed</a>, desiredState.<a class="code" href="structfrc_1_1SwerveModuleState.html#ab8c668b9aaea89c1ce37502c09c18c0c">angle</a>};</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}  <span class="comment">// namespace frc</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="astructfrc_1_1SwerveModuleState_html_a686b128ca4f86f83788ef08024523fa8"><div class="ttname"><a href="structfrc_1_1SwerveModuleState.html#a686b128ca4f86f83788ef08024523fa8">frc::SwerveModuleState::speed</a></div><div class="ttdeci">units::meters_per_second_t speed</div><div class="ttdoc">Speed of the wheel of the module.</div><div class="ttdef"><b>Definition:</b> SwerveModuleState.h:18</div></div>
-<div class="ttc" id="astructfrc_1_1SwerveModuleState_html"><div class="ttname"><a href="structfrc_1_1SwerveModuleState.html">frc::SwerveModuleState</a></div><div class="ttdoc">Represents the state of one swerve module.</div><div class="ttdef"><b>Definition:</b> SwerveModuleState.h:14</div></div>
+<div class="ttc" id="astructfrc_1_1SwerveModuleState_html_a686b128ca4f86f83788ef08024523fa8"><div class="ttname"><a href="structfrc_1_1SwerveModuleState.html#a686b128ca4f86f83788ef08024523fa8">frc::SwerveModuleState::speed</a></div><div class="ttdeci">units::meters_per_second_t speed</div><div class="ttdoc">Speed of the wheel of the module.</div><div class="ttdef"><b>Definition:</b> SwerveModuleState.h:20</div></div>
+<div class="ttc" id="astructfrc_1_1SwerveModuleState_html"><div class="ttname"><a href="structfrc_1_1SwerveModuleState.html">frc::SwerveModuleState</a></div><div class="ttdoc">Represents the state of one swerve module.</div><div class="ttdef"><b>Definition:</b> SwerveModuleState.h:16</div></div>
 <div class="ttc" id="aclassfrc_1_1Rotation2d_html"><div class="ttname"><a href="classfrc_1_1Rotation2d.html">frc::Rotation2d</a></div><div class="ttdoc">A rotation in a 2d coordinate frame represented a point on the unit circle (cosine and sine).</div><div class="ttdef"><b>Definition:</b> Rotation2d.h:19</div></div>
-<div class="ttc" id="astructfrc_1_1SwerveModuleState_html_ab8c668b9aaea89c1ce37502c09c18c0c"><div class="ttname"><a href="structfrc_1_1SwerveModuleState.html#ab8c668b9aaea89c1ce37502c09c18c0c">frc::SwerveModuleState::angle</a></div><div class="ttdeci">Rotation2d angle</div><div class="ttdoc">Angle of the module.</div><div class="ttdef"><b>Definition:</b> SwerveModuleState.h:23</div></div>
+<div class="ttc" id="astructfrc_1_1SwerveModuleState_html_a156f23b8877aebb0820c48e2e536ae43"><div class="ttname"><a href="structfrc_1_1SwerveModuleState.html#a156f23b8877aebb0820c48e2e536ae43">frc::SwerveModuleState::Optimize</a></div><div class="ttdeci">static SwerveModuleState Optimize(const SwerveModuleState &amp;desiredState, const Rotation2d &amp;currentAngle)</div><div class="ttdoc">Minimize the change in heading the desired swerve module state would require by potentially reversing...</div><div class="ttdef"><b>Definition:</b> SwerveModuleState.h:36</div></div>
+<div class="ttc" id="astructfrc_1_1SwerveModuleState_html_ab8c668b9aaea89c1ce37502c09c18c0c"><div class="ttname"><a href="structfrc_1_1SwerveModuleState.html#ab8c668b9aaea89c1ce37502c09c18c0c">frc::SwerveModuleState::angle</a></div><div class="ttdeci">Rotation2d angle</div><div class="ttdoc">Angle of the module.</div><div class="ttdef"><b>Definition:</b> SwerveModuleState.h:25</div></div>
 <div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> CameraServerShared.h:13</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e81593cd22a74c0453b864f226c84e9d.html">wpimath</a></li><li class="navelem"><a class="el" href="dir_4a07e7e34c3309db4f2aee20318c365b.html">src</a></li><li class="navelem"><a class="el" href="dir_37ee524af24664d12db3cd06c96f93b9.html">main</a></li><li class="navelem"><a class="el" href="dir_0741e1c35aa739ecce87b7ca77560051.html">native</a></li><li class="navelem"><a class="el" href="dir_e7b4e55b90254cfe62f0cb6fe1aed23c.html">include</a></li><li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_d2a0b1acc90a71e3394af07d8da08800.html">kinematics</a></li><li class="navelem"><b>SwerveModuleState.h</b></li>
-    <li class="footer">Generated on Sun Jan 10 2021 07:28:17 for WPILibC++ by
+    <li class="footer">Generated on Mon Jan 11 2021 06:51:45 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

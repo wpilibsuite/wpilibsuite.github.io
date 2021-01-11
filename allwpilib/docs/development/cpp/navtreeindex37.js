@@ -2,8 +2,8 @@ var NAVTREEINDEX37 =
 {
 "namespacent_1_1EntryListenerFlags.html":[4,0,3,0],
 "namespaces.html":[4,0],
-"namespacewpi_1_1detail.html":[5,0,7,0],
 "namespacewpi_1_1detail.html":[4,0,4,0],
+"namespacewpi_1_1detail.html":[5,0,7,0],
 "namespacewpi_1_1java.html":[4,0,4,1],
 "namespacewpi_1_1java.html":[5,0,7,3],
 "never__destroyed_8h_source.html":[6,0,7,0,0,0,0,0,0,5],
