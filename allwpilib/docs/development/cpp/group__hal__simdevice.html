@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.1.2-10-g9c3b51c</span>
+   &#160;<span id="projectnumber">2021.1.2-11-gbc80c55</span>
    </div>
   </td>
  </tr>
@@ -158,6 +158,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gab5cda539e8f0ad65d58cd0cd85578494"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__simdevice.html#gab5cda539e8f0ad65d58cd0cd85578494">HAL_SetSimValueBoolean</a> (HAL_SimValueHandle handle, HAL_Bool value)</td></tr>
 <tr class="memdesc:gab5cda539e8f0ad65d58cd0cd85578494"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a simulated value (boolean).  <a href="group__hal__simdevice.html#gab5cda539e8f0ad65d58cd0cd85578494">More...</a><br /></td></tr>
 <tr class="separator:gab5cda539e8f0ad65d58cd0cd85578494"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafce97e08831108baebcf3c986a21f3ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__simdevice.html#gafce97e08831108baebcf3c986a21f3ad">HAL_ResetSimValue</a> (HAL_SimValueHandle handle)</td></tr>
+<tr class="memdesc:gafce97e08831108baebcf3c986a21f3ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets a simulated double or integral value to 0.  <a href="group__hal__simdevice.html#gafce97e08831108baebcf3c986a21f3ad">More...</a><br /></td></tr>
+<tr class="separator:gafce97e08831108baebcf3c986a21f3ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>HAL Simulator Device Framework. This enables creating simulation-only variables for higher level device access. For example, a device such as a SPI gyro can expose angle and rate variables to enable direct access from simulation extensions or user test code instead of requiring that the SPI bit-level protocol be implemented in simulation code. </p>
@@ -771,6 +774,33 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="gafce97e08831108baebcf3c986a21f3ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafce97e08831108baebcf3c986a21f3ad">&#9670;&nbsp;</a></span>HAL_ResetSimValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HAL_ResetSimValue </td>
+          <td>(</td>
+          <td class="paramtype">HAL_SimValueHandle&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Resets a simulated double or integral value to 0. </p>
+<p>Has no effect on other value types. Use this instead of Set(0) for resetting incremental sensor values like encoder counts or gyro accumulated angle to ensure correct behavior in a distributed system (e.g. WebSockets).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>simulated value handle </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ga373599c87cbe5be376e745b618a8aeea"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga373599c87cbe5be376e745b618a8aeea">&#9670;&nbsp;</a></span>HAL_SetSimValue()</h2>
 
@@ -1038,7 +1068,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Jan 12 2021 05:57:55 for WPILibC++ by
+    <li class="footer">Generated on Tue Jan 12 2021 08:40:58 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

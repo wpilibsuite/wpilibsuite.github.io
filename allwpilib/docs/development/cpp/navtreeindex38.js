@@ -1,5 +1,6 @@
 var NAVTREEINDEX38 =
 {
+"structfrc_1_1ADXL362_1_1AllAxes.html#a965ef5a451165cc62db79901e0dc390b":[5,0,2,6,0,1],
 "structfrc_1_1ADXL362_1_1AllAxes.html#ae7ff073e5e548b74baab336e7c9a5fd3":[5,0,2,6,0,0],
 "structfrc_1_1ADXL362_1_1AllAxes.html#af923c40b7421cea1134f922ed655f598":[5,0,2,6,0,2],
 "structfrc_1_1CANData.html":[5,0,2,24],
@@ -248,6 +249,5 @@ var NAVTREEINDEX38 =
 "structwpi_1_1PointerLikeTypeTraits_3_01PointerUnion3_3_01PT1_00_01PT2_00_01PT3_01_4_01_4.html":[5,0,7,146],
 "structwpi_1_1PointerLikeTypeTraits_3_01PointerUnion3_3_01PT1_00_01PT2_00_01PT3_01_4_01_4.html#a15aac83206c6c68aebdbf666e971f3eeadba1ab4cc45c2d8c110747b2b095a1da":[5,0,7,146,0],
 "structwpi_1_1PointerLikeTypeTraits_3_01PointerUnion3_3_01PT1_00_01PT2_00_01PT3_01_4_01_4.html#a4d1457d01b8085e6b14c70a7ccf90cbd":[5,0,7,146,2],
-"structwpi_1_1PointerLikeTypeTraits_3_01PointerUnion3_3_01PT1_00_01PT2_00_01PT3_01_4_01_4.html#a8a22b09219e6469d635d7d80daf48fe0":[5,0,7,146,1],
-"structwpi_1_1PointerLikeTypeTraits_3_01PointerUnion4_3_01PT1_00_01PT2_00_01PT3_00_01PT4_01_4_01_4.html":[5,0,7,147]
+"structwpi_1_1PointerLikeTypeTraits_3_01PointerUnion3_3_01PT1_00_01PT2_00_01PT3_01_4_01_4.html#a8a22b09219e6469d635d7d80daf48fe0":[5,0,7,146,1]
 };

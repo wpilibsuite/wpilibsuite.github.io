@@ -1,5 +1,6 @@
 var NAVTREEINDEX36 =
 {
+"group__ntcore__logger__func.html#gaba7ed9ad02b89a75bc918f292126a9bf":[3,3,8,8],
 "group__ntcore__logger__func.html#gad04ce32957edaaadfa0c89986f9746f2":[3,3,8,5],
 "group__ntcore__logger__func.html#gadcada5f56cada2580781f75eb5910715":[3,3,8,7],
 "group__ntcore__memoryallocators__cfunc.html":[3,2,9,0],
@@ -243,11 +244,10 @@ var NAVTREEINDEX36 =
 "namespacefrc.html":[5,0,2],
 "namespacefrc.html":[4,0,1],
 "namespacefrc_1_1filesystem.html":[4,0,1,0],
-"namespacehal.html":[5,0,4],
 "namespacehal.html":[4,0,2],
+"namespacehal.html":[5,0,4],
 "namespacemembers.html":[4,1,0],
 "namespacemembers_enum.html":[4,1,3],
 "namespacemembers_eval.html":[4,1,4],
-"namespacemembers_func.html":[4,1,1],
-"namespacemembers_type.html":[4,1,2]
+"namespacemembers_func.html":[4,1,1]
 };

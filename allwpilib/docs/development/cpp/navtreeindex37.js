@@ -1,13 +1,14 @@
 var NAVTREEINDEX37 =
 {
+"namespacemembers_type.html":[4,1,2],
 "namespacent.html":[4,0,3],
 "namespacent.html":[5,0,5],
 "namespacent_1_1EntryListenerFlags.html":[4,0,3,0],
 "namespaces.html":[4,0],
-"namespacewpi_1_1detail.html":[5,0,7,0],
 "namespacewpi_1_1detail.html":[4,0,4,0],
-"namespacewpi_1_1java.html":[4,0,4,1],
+"namespacewpi_1_1detail.html":[5,0,7,0],
 "namespacewpi_1_1java.html":[5,0,7,3],
+"namespacewpi_1_1java.html":[4,0,4,1],
 "never__destroyed_8h_source.html":[6,0,7,0,0,0,0,0,0,5],
 "ntcore_8h_source.html":[6,0,3,0,0,0,0,2],
 "ntcore__c_8h_source.html":[6,0,3,0,0,0,0,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX37 =
 "structfrc_1_1ADXL345__SPI_1_1AllAxes.html#a5c871c94e1391d82f3cd65a8a1f97434":[5,0,2,5,0,1],
 "structfrc_1_1ADXL345__SPI_1_1AllAxes.html#abe57b1282d9538cf95563ccde793e7e8":[5,0,2,5,0,2],
 "structfrc_1_1ADXL345__SPI_1_1AllAxes.html#ac3211539489b6d5fca9af190c1281b8a":[5,0,2,5,0,0],
-"structfrc_1_1ADXL362_1_1AllAxes.html":[5,0,2,6,0],
-"structfrc_1_1ADXL362_1_1AllAxes.html#a965ef5a451165cc62db79901e0dc390b":[5,0,2,6,0,1]
+"structfrc_1_1ADXL362_1_1AllAxes.html":[5,0,2,6,0]
 };

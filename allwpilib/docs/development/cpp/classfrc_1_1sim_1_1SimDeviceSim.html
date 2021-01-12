@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.1.2-10-g9c3b51c</span>
+   &#160;<span id="projectnumber">2021.1.2-11-gbc80c55</span>
    </div>
   </td>
  </tr>
@@ -139,9 +139,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ab2ee494d961140157fddb1fc4d3a4b1c"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1SimDeviceSim.html#ab2ee494d961140157fddb1fc4d3a4b1c">GetEnumOptions</a> (hal::SimEnum val)</td></tr>
 <tr class="memdesc:ab2ee494d961140157fddb1fc4d3a4b1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all options for the given enum.  <a href="classfrc_1_1sim_1_1SimDeviceSim.html#ab2ee494d961140157fddb1fc4d3a4b1c">More...</a><br /></td></tr>
 <tr class="separator:ab2ee494d961140157fddb1fc4d3a4b1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2bb02c5e4858095139f831c0696ed06"><td class="memTemplParams" colspan="2"><a id="ae2bb02c5e4858095139f831c0696ed06"></a>
-template&lt;typename F &gt; </td></tr>
-<tr class="memitem:ae2bb02c5e4858095139f831c0696ed06"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>EnumerateDevices</b> (const char *prefix, F callback)</td></tr>
+<tr class="memitem:ae2bb02c5e4858095139f831c0696ed06"><td class="memTemplParams" colspan="2">template&lt;typename F &gt; </td></tr>
+<tr class="memitem:ae2bb02c5e4858095139f831c0696ed06"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1SimDeviceSim.html#ae2bb02c5e4858095139f831c0696ed06">EnumerateDevices</a> (const char *prefix, F callback)</td></tr>
+<tr class="memdesc:ae2bb02c5e4858095139f831c0696ed06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all sim devices with the given prefix.  <a href="classfrc_1_1sim_1_1SimDeviceSim.html#ae2bb02c5e4858095139f831c0696ed06">More...</a><br /></td></tr>
 <tr class="separator:ae2bb02c5e4858095139f831c0696ed06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa11d3306f6aa8c3cc608f0506e5ead1b"><td class="memItemLeft" align="right" valign="top"><a id="aa11d3306f6aa8c3cc608f0506e5ead1b"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1SimDeviceSim.html#aa11d3306f6aa8c3cc608f0506e5ead1b">ResetData</a> ()</td></tr>
@@ -186,6 +186,53 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae2bb02c5e4858095139f831c0696ed06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2bb02c5e4858095139f831c0696ed06">&#9670;&nbsp;</a></span>EnumerateDevices()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename F &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void frc::sim::SimDeviceSim::EnumerateDevices </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>prefix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">F&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get all sim devices with the given prefix. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prefix</td><td>the prefix to filter sim devices </td></tr>
+    <tr><td class="paramname">callback</td><td>callback function to call for each sim device </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a44ba81e2cb7d5d85f734f2c40582d16c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a44ba81e2cb7d5d85f734f2c40582d16c">&#9670;&nbsp;</a></span>EnumerateValues()</h2>
 
@@ -456,7 +503,7 @@ template&lt;typename F &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><b>sim</b></li><li class="navelem"><a class="el" href="classfrc_1_1sim_1_1SimDeviceSim.html">SimDeviceSim</a></li>
-    <li class="footer">Generated on Tue Jan 12 2021 05:57:57 for WPILibC++ by
+    <li class="footer">Generated on Tue Jan 12 2021 08:41:01 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>
