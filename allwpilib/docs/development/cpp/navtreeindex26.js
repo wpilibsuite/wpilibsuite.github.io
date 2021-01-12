@@ -1,5 +1,7 @@
 var NAVTREEINDEX26 =
 {
+"classwpi_1_1TCPStream.html#a9eed6b3c0c55edbc539f4f3369efd196":[5,0,7,234,5],
+"classwpi_1_1TCPStream.html#aa3bbe6ca1c4a48c0f36b32cf9f0d873e":[5,0,7,234,7],
 "classwpi_1_1TCPStream.html#aa49d524a0b1d29ef900d5ab711356dd1":[5,0,7,234,2],
 "classwpi_1_1TCPStream.html#ad203d854a53e1d22e77f054b2c77b8d4":[5,0,7,234,0],
 "classwpi_1_1ThreadSafeRefCountedBase.html":[5,0,7,235],
@@ -247,7 +249,5 @@ var NAVTREEINDEX26 =
 "classwpi_1_1detail_1_1SafeThreadProxyBase.html#a7379ae27227d1ec773cd6f31d6e47f18":[5,0,7,0,64,2],
 "classwpi_1_1detail_1_1SafeThreadProxyBase.html#aa8befb36ec3669f30ec74afbbe1ea5ad":[5,0,7,0,64,4],
 "classwpi_1_1detail_1_1SafeThreadProxyBase.html#ae3b23e8359dfb941dd42f2c5a3e3a636":[5,0,7,0,64,1],
-"classwpi_1_1detail_1_1SafeThreadProxyBase.html#af9a94cde588c798dac070a44ade65b63":[5,0,7,0,64,3],
-"classwpi_1_1detail_1_1WorkerThreadThread.html":[5,0,7,0,73],
-"classwpi_1_1detail_1_1WorkerThreadThread.html#a0a575b39105806fc177758459cfd8504":[5,0,7,0,73,1]
+"classwpi_1_1detail_1_1SafeThreadProxyBase.html#af9a94cde588c798dac070a44ade65b63":[5,0,7,0,64,3]
 };

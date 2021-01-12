@@ -1,5 +1,7 @@
 var NAVTREEINDEX21 =
 {
+"classnt_1_1RpcAnswer.html#aeabd75eef2fa528edc6d4bc22f06236e":[3,3,14,3],
+"classnt_1_1RpcCall.html":[3,1,2],
 "classnt_1_1RpcCall.html#a0464a89a36e00b3f6ebb2c84f62c1c0e":[3,1,2,3],
 "classnt_1_1RpcCall.html#a134ae7c121b6dd483c3295868d90d1f5":[3,1,2,1],
 "classnt_1_1RpcCall.html#a1d4ca2c6c383e3344e45f029be8a2a52":[3,1,2,9],
@@ -247,7 +249,5 @@ var NAVTREEINDEX21 =
 "classwpi_1_1ErrorHandlerTraits_3_01void_07_6_08_07ErrT_01_6_08_4.html#af60a056e9b329c5badb33ff0a05ab5b3":[5,0,7,60,0],
 "classwpi_1_1ErrorHandlerTraits_3_01void_07_6_08_07std_1_1unique__ptr_3_01ErrT_01_4_08_4.html":[5,0,7,61],
 "classwpi_1_1ErrorHandlerTraits_3_01void_07_6_08_07std_1_1unique__ptr_3_01ErrT_01_4_08_4.html#a3943b187d41aa39d8d5f0f5b1c9e8ad8":[5,0,7,61,1],
-"classwpi_1_1ErrorHandlerTraits_3_01void_07_6_08_07std_1_1unique__ptr_3_01ErrT_01_4_08_4.html#afba7847aa0aabf96fdc6784873c0ede5":[5,0,7,61,0],
-"classwpi_1_1ErrorInfo.html":[5,0,7,62],
-"classwpi_1_1ErrorInfo.html#a0f5ed23dd3292abac4456ac1c820f9ca":[5,0,7,62,2]
+"classwpi_1_1ErrorHandlerTraits_3_01void_07_6_08_07std_1_1unique__ptr_3_01ErrT_01_4_08_4.html#afba7847aa0aabf96fdc6784873c0ede5":[5,0,7,61,0]
 };

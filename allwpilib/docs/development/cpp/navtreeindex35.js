@@ -1,5 +1,7 @@
 var NAVTREEINDEX35 =
 {
+"group__hal__ports.html#gaade8717fd75e3de39ff698b246a7f595":[3,0,27,18],
+"group__hal__ports.html#gac1424cc22f7ade45e9dc863f64125a3e":[3,0,27,8],
 "group__hal__ports.html#gad2640f47afb8191db107a0ca558fc5b0":[3,0,27,11],
 "group__hal__ports.html#gada4dc681c7b01ec5f3bbad2e9f6c0cb1":[3,0,27,14],
 "group__hal__ports.html#gae41833d9f4375b7d7e038bb638720d41":[3,0,27,10],
@@ -247,7 +249,5 @@ var NAVTREEINDEX35 =
 "group__ntcore__logger__func.html#ga94afbd1ea3e48f43afef327cb5edc1e6":[3,3,8,3],
 "group__ntcore__logger__func.html#ga9c73b7905117ec0ebe03ec852712b6d7":[3,3,8,0],
 "group__ntcore__logger__func.html#gaacb9daf4304dba166adc3c51e1496f6f":[3,3,8,6],
-"group__ntcore__logger__func.html#gaba7ed9ad02b89a75bc918f292126a9bf":[3,3,8,8],
-"group__ntcore__logger__func.html#gad04ce32957edaaadfa0c89986f9746f2":[3,3,8,5],
-"group__ntcore__logger__func.html#gadcada5f56cada2580781f75eb5910715":[3,3,8,7]
+"group__ntcore__logger__func.html#gaba7ed9ad02b89a75bc918f292126a9bf":[3,3,8,8]
 };

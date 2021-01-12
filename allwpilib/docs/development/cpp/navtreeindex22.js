@@ -1,5 +1,7 @@
 var NAVTREEINDEX22 =
 {
+"classwpi_1_1ErrorInfo.html":[5,0,7,62],
+"classwpi_1_1ErrorInfo.html#a0f5ed23dd3292abac4456ac1c820f9ca":[5,0,7,62,2],
 "classwpi_1_1ErrorInfo.html#a36d411e4e178bff8d48d92d02bb0b166":[5,0,7,62,1],
 "classwpi_1_1ErrorInfo.html#a797d1f3164251d3d8d8df51ecc787d3f":[5,0,7,62,0],
 "classwpi_1_1ErrorInfoBase.html":[5,0,7,63],
@@ -247,7 +249,5 @@ var NAVTREEINDEX22 =
 "classwpi_1_1IntrusiveRefCntPtr.html#a5bf24c6c5214397d27c1df863e4faea9":[5,0,7,104,10],
 "classwpi_1_1IntrusiveRefCntPtr.html#a76a0521107fd1a76d801d51945fa338b":[5,0,7,104,1],
 "classwpi_1_1IntrusiveRefCntPtr.html#a84af480e8c0bd96b33e883b38976d7e6":[5,0,7,104,6],
-"classwpi_1_1IntrusiveRefCntPtr.html#a9a3f5687546d02323dd55333c4d4917c":[5,0,7,104,16],
-"classwpi_1_1IntrusiveRefCntPtr.html#aa1e251dc1820987367b298083fadcb40":[5,0,7,104,2],
-"classwpi_1_1IntrusiveRefCntPtr.html#ab38f5e2319a6e6fd275e505e8b376843":[5,0,7,104,9]
+"classwpi_1_1IntrusiveRefCntPtr.html#a9a3f5687546d02323dd55333c4d4917c":[5,0,7,104,16]
 };

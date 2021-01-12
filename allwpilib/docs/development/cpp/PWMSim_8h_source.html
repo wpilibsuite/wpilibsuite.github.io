@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.1.2-9-g26584ff</span>
+   &#160;<span id="projectnumber">2021.1.2-10-g9c3b51c</span>
    </div>
   </td>
  </tr>
@@ -115,67 +115,86 @@ $(document).ready(function(){initNavTree('PWMSim_8h_source.html',''); initResiza
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 <div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1PWMSim.html#ab63003dec6b71a53c0d6086f28150afa">   34</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc_1_1sim_1_1PWMSim.html#ab63003dec6b71a53c0d6086f28150afa">PWMSim</a>(<span class="keywordtype">int</span> channel);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  std::unique_ptr&lt;CallbackStore&gt; RegisterInitializedCallback(</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">bool</span> GetInitialized() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">void</span> SetInitialized(<span class="keywordtype">bool</span> initialized);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  std::unique_ptr&lt;CallbackStore&gt; RegisterRawValueCallback(</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1PWMSim.html#a6f480a1405b4a7286a73ef908802f4da">   43</a></span>&#160;  [[nodiscard]] std::unique_ptr&lt;CallbackStore&gt; <a class="code" href="classfrc_1_1sim_1_1PWMSim.html#a6f480a1405b4a7286a73ef908802f4da">RegisterInitializedCallback</a>(</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">int</span> GetRawValue() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">void</span> SetRawValue(<span class="keywordtype">int</span> rawValue);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  std::unique_ptr&lt;CallbackStore&gt; RegisterSpeedCallback(NotifyCallback callback,</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                                                       <span class="keywordtype">bool</span> initialNotify);</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1PWMSim.html#a214aa83542f24b4b7b5fb74420750b7e">   51</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1sim_1_1PWMSim.html#a214aa83542f24b4b7b5fb74420750b7e">GetInitialized</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">double</span> GetSpeed() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">void</span> SetSpeed(<span class="keywordtype">double</span> speed);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  std::unique_ptr&lt;CallbackStore&gt; RegisterPositionCallback(</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1PWMSim.html#a2119f2f5efa222cabe8f6b33224966cd">   58</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1sim_1_1PWMSim.html#a2119f2f5efa222cabe8f6b33224966cd">SetInitialized</a>(<span class="keywordtype">bool</span> initialized);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">double</span> GetPosition() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordtype">void</span> SetPosition(<span class="keywordtype">double</span> position);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  std::unique_ptr&lt;CallbackStore&gt; RegisterPeriodScaleCallback(</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">int</span> GetPeriodScale() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">void</span> SetPeriodScale(<span class="keywordtype">int</span> periodScale);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  std::unique_ptr&lt;CallbackStore&gt; RegisterZeroLatchCallback(</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">bool</span> GetZeroLatch() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordtype">void</span> SetZeroLatch(<span class="keywordtype">bool</span> zeroLatch);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordtype">void</span> ResetData();</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordtype">int</span> m_index;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;};</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}  <span class="comment">// namespace sim</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1PWMSim.html#aa620acfaac27f8aa094668cde4012442">   67</a></span>&#160;  [[nodiscard]] std::unique_ptr&lt;CallbackStore&gt; <a class="code" href="classfrc_1_1sim_1_1PWMSim.html#aa620acfaac27f8aa094668cde4012442">RegisterRawValueCallback</a>(</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1PWMSim.html#a647a638ec93285bf3c3c8565f544bfaf">   75</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classfrc_1_1sim_1_1PWMSim.html#a647a638ec93285bf3c3c8565f544bfaf">GetRawValue</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1PWMSim.html#ab600c0422b2fe91a094fa5402d1028eb">   82</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1sim_1_1PWMSim.html#ab600c0422b2fe91a094fa5402d1028eb">SetRawValue</a>(<span class="keywordtype">int</span> rawValue);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1PWMSim.html#a4f1610eb00be3bc8bca2c0455535afca">   91</a></span>&#160;  [[nodiscard]] std::unique_ptr&lt;CallbackStore&gt; <a class="code" href="classfrc_1_1sim_1_1PWMSim.html#a4f1610eb00be3bc8bca2c0455535afca">RegisterSpeedCallback</a>(</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1PWMSim.html#a1ea17b1c11ba19251b8b15d57a5d2488">   99</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classfrc_1_1sim_1_1PWMSim.html#a1ea17b1c11ba19251b8b15d57a5d2488">GetSpeed</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1PWMSim.html#aece0a3a4e22286280385572258c5e308">  106</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1sim_1_1PWMSim.html#aece0a3a4e22286280385572258c5e308">SetSpeed</a>(<span class="keywordtype">double</span> speed);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1PWMSim.html#a5fb1e97b9af901c4e84a5560d4587cdc">  115</a></span>&#160;  [[nodiscard]] std::unique_ptr&lt;CallbackStore&gt; <a class="code" href="classfrc_1_1sim_1_1PWMSim.html#a5fb1e97b9af901c4e84a5560d4587cdc">RegisterPositionCallback</a>(</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;      NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1PWMSim.html#a3ee4bdd367a3bcdce2e275569dacbb0f">  123</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classfrc_1_1sim_1_1PWMSim.html#a3ee4bdd367a3bcdce2e275569dacbb0f">GetPosition</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1PWMSim.html#a7af8473c7c0e93f1482f4000c1fff805">  130</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1sim_1_1PWMSim.html#a7af8473c7c0e93f1482f4000c1fff805">SetPosition</a>(<span class="keywordtype">double</span> position);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1PWMSim.html#a5052ab89e45578510b07332ec715277d">  139</a></span>&#160;  [[nodiscard]] std::unique_ptr&lt;CallbackStore&gt; <a class="code" href="classfrc_1_1sim_1_1PWMSim.html#a5052ab89e45578510b07332ec715277d">RegisterPeriodScaleCallback</a>(</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;      NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
+<div class="line"><a name="l00147"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1PWMSim.html#a9c384210775c26ad79825bcff1168c71">  147</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classfrc_1_1sim_1_1PWMSim.html#a9c384210775c26ad79825bcff1168c71">GetPeriodScale</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
+<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1PWMSim.html#a1f6c0ba8c0dd52ef989e15a283c9d675">  154</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1sim_1_1PWMSim.html#a1f6c0ba8c0dd52ef989e15a283c9d675">SetPeriodScale</a>(<span class="keywordtype">int</span> periodScale);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
+<div class="line"><a name="l00163"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1PWMSim.html#adc5efe5eab7609a3ef2dabdb42db7698">  163</a></span>&#160;  [[nodiscard]] std::unique_ptr&lt;CallbackStore&gt; <a class="code" href="classfrc_1_1sim_1_1PWMSim.html#adc5efe5eab7609a3ef2dabdb42db7698">RegisterZeroLatchCallback</a>(</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;      NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
+<div class="line"><a name="l00171"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1PWMSim.html#a834f30b74c5d8c7225562f1dad02977f">  171</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1sim_1_1PWMSim.html#a834f30b74c5d8c7225562f1dad02977f">GetZeroLatch</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
+<div class="line"><a name="l00178"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1PWMSim.html#afbe5297dce4abd7d32a67da484b2eeba">  178</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1sim_1_1PWMSim.html#afbe5297dce4abd7d32a67da484b2eeba">SetZeroLatch</a>(<span class="keywordtype">bool</span> zeroLatch);</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160; </div>
+<div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1PWMSim.html#aab11c3f9b1cf14275759577aff2eb141">  183</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1sim_1_1PWMSim.html#aab11c3f9b1cf14275759577aff2eb141">ResetData</a>();</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  <span class="keywordtype">int</span> m_index;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;};</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;}  <span class="comment">// namespace sim</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;}  <span class="comment">// namespace frc</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclassfrc_1_1sim_1_1PWMSim_html_afbe5297dce4abd7d32a67da484b2eeba"><div class="ttname"><a href="classfrc_1_1sim_1_1PWMSim.html#afbe5297dce4abd7d32a67da484b2eeba">frc::sim::PWMSim::SetZeroLatch</a></div><div class="ttdeci">void SetZeroLatch(bool zeroLatch)</div><div class="ttdoc">Define whether the PWM has been zero latched.</div></div>
 <div class="ttc" id="aclassfrc_1_1PWM_html"><div class="ttname"><a href="classfrc_1_1PWM.html">frc::PWM</a></div><div class="ttdoc">Class implements the PWM generation in the FPGA.</div><div class="ttdef"><b>Definition:</b> PWM.h:37</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1PWMSim_html_aa620acfaac27f8aa094668cde4012442"><div class="ttname"><a href="classfrc_1_1sim_1_1PWMSim.html#aa620acfaac27f8aa094668cde4012442">frc::sim::PWMSim::RegisterRawValueCallback</a></div><div class="ttdeci">std::unique_ptr&lt; CallbackStore &gt; RegisterRawValueCallback(NotifyCallback callback, bool initialNotify)</div><div class="ttdoc">Register a callback to be run when the PWM raw value changes.</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1PWMSim_html_ab600c0422b2fe91a094fa5402d1028eb"><div class="ttname"><a href="classfrc_1_1sim_1_1PWMSim.html#ab600c0422b2fe91a094fa5402d1028eb">frc::sim::PWMSim::SetRawValue</a></div><div class="ttdeci">void SetRawValue(int rawValue)</div><div class="ttdoc">Set the PWM raw value.</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1PWMSim_html_aece0a3a4e22286280385572258c5e308"><div class="ttname"><a href="classfrc_1_1sim_1_1PWMSim.html#aece0a3a4e22286280385572258c5e308">frc::sim::PWMSim::SetSpeed</a></div><div class="ttdeci">void SetSpeed(double speed)</div><div class="ttdoc">Set the PWM speed.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1PWMSim_html_ab63003dec6b71a53c0d6086f28150afa"><div class="ttname"><a href="classfrc_1_1sim_1_1PWMSim.html#ab63003dec6b71a53c0d6086f28150afa">frc::sim::PWMSim::PWMSim</a></div><div class="ttdeci">PWMSim(int channel)</div><div class="ttdoc">Constructs from a PWM channel number.</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1PWMSim_html_adc5efe5eab7609a3ef2dabdb42db7698"><div class="ttname"><a href="classfrc_1_1sim_1_1PWMSim.html#adc5efe5eab7609a3ef2dabdb42db7698">frc::sim::PWMSim::RegisterZeroLatchCallback</a></div><div class="ttdeci">std::unique_ptr&lt; CallbackStore &gt; RegisterZeroLatchCallback(NotifyCallback callback, bool initialNotify)</div><div class="ttdoc">Register a callback to be run when the PWM zero latch state changes.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1PWMSim_html_a17b2983cd6dd5077e0e8ed9a0a01e1ad"><div class="ttname"><a href="classfrc_1_1sim_1_1PWMSim.html#a17b2983cd6dd5077e0e8ed9a0a01e1ad">frc::sim::PWMSim::PWMSim</a></div><div class="ttdeci">PWMSim(const PWM &amp;pwm)</div><div class="ttdoc">Constructs from a PWM object.</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1PWMSim_html_a7af8473c7c0e93f1482f4000c1fff805"><div class="ttname"><a href="classfrc_1_1sim_1_1PWMSim.html#a7af8473c7c0e93f1482f4000c1fff805">frc::sim::PWMSim::SetPosition</a></div><div class="ttdeci">void SetPosition(double position)</div><div class="ttdoc">Set the PWM position.</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1PWMSim_html_a2119f2f5efa222cabe8f6b33224966cd"><div class="ttname"><a href="classfrc_1_1sim_1_1PWMSim.html#a2119f2f5efa222cabe8f6b33224966cd">frc::sim::PWMSim::SetInitialized</a></div><div class="ttdeci">void SetInitialized(bool initialized)</div><div class="ttdoc">Define whether the PWM has been initialized.</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1PWMSim_html_a1ea17b1c11ba19251b8b15d57a5d2488"><div class="ttname"><a href="classfrc_1_1sim_1_1PWMSim.html#a1ea17b1c11ba19251b8b15d57a5d2488">frc::sim::PWMSim::GetSpeed</a></div><div class="ttdeci">double GetSpeed() const</div><div class="ttdoc">Get the PWM speed.</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1PWMSim_html_a5fb1e97b9af901c4e84a5560d4587cdc"><div class="ttname"><a href="classfrc_1_1sim_1_1PWMSim.html#a5fb1e97b9af901c4e84a5560d4587cdc">frc::sim::PWMSim::RegisterPositionCallback</a></div><div class="ttdeci">std::unique_ptr&lt; CallbackStore &gt; RegisterPositionCallback(NotifyCallback callback, bool initialNotify)</div><div class="ttdoc">Register a callback to be run when the PWM position changes.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1PWMSim_html"><div class="ttname"><a href="classfrc_1_1sim_1_1PWMSim.html">frc::sim::PWMSim</a></div><div class="ttdoc">Class to control a simulated PWM output.</div><div class="ttdef"><b>Definition:</b> PWMSim.h:20</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1PWMSim_html_aab11c3f9b1cf14275759577aff2eb141"><div class="ttname"><a href="classfrc_1_1sim_1_1PWMSim.html#aab11c3f9b1cf14275759577aff2eb141">frc::sim::PWMSim::ResetData</a></div><div class="ttdeci">void ResetData()</div><div class="ttdoc">Reset all simulation data.</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1PWMSim_html_a214aa83542f24b4b7b5fb74420750b7e"><div class="ttname"><a href="classfrc_1_1sim_1_1PWMSim.html#a214aa83542f24b4b7b5fb74420750b7e">frc::sim::PWMSim::GetInitialized</a></div><div class="ttdeci">bool GetInitialized() const</div><div class="ttdoc">Check whether the PWM has been initialized.</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1PWMSim_html_a5052ab89e45578510b07332ec715277d"><div class="ttname"><a href="classfrc_1_1sim_1_1PWMSim.html#a5052ab89e45578510b07332ec715277d">frc::sim::PWMSim::RegisterPeriodScaleCallback</a></div><div class="ttdeci">std::unique_ptr&lt; CallbackStore &gt; RegisterPeriodScaleCallback(NotifyCallback callback, bool initialNotify)</div><div class="ttdoc">Register a callback to be run when the PWM period scale changes.</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1PWMSim_html_a1f6c0ba8c0dd52ef989e15a283c9d675"><div class="ttname"><a href="classfrc_1_1sim_1_1PWMSim.html#a1f6c0ba8c0dd52ef989e15a283c9d675">frc::sim::PWMSim::SetPeriodScale</a></div><div class="ttdeci">void SetPeriodScale(int periodScale)</div><div class="ttdoc">Set the PWM period scale.</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1PWMSim_html_a834f30b74c5d8c7225562f1dad02977f"><div class="ttname"><a href="classfrc_1_1sim_1_1PWMSim.html#a834f30b74c5d8c7225562f1dad02977f">frc::sim::PWMSim::GetZeroLatch</a></div><div class="ttdeci">bool GetZeroLatch() const</div><div class="ttdoc">Check whether the PWM is zero latched.</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1PWMSim_html_a647a638ec93285bf3c3c8565f544bfaf"><div class="ttname"><a href="classfrc_1_1sim_1_1PWMSim.html#a647a638ec93285bf3c3c8565f544bfaf">frc::sim::PWMSim::GetRawValue</a></div><div class="ttdeci">int GetRawValue() const</div><div class="ttdoc">Get the PWM raw value.</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1PWMSim_html_a9c384210775c26ad79825bcff1168c71"><div class="ttname"><a href="classfrc_1_1sim_1_1PWMSim.html#a9c384210775c26ad79825bcff1168c71">frc::sim::PWMSim::GetPeriodScale</a></div><div class="ttdeci">int GetPeriodScale() const</div><div class="ttdoc">Get the PWM period scale.</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1PWMSim_html_a6f480a1405b4a7286a73ef908802f4da"><div class="ttname"><a href="classfrc_1_1sim_1_1PWMSim.html#a6f480a1405b4a7286a73ef908802f4da">frc::sim::PWMSim::RegisterInitializedCallback</a></div><div class="ttdeci">std::unique_ptr&lt; CallbackStore &gt; RegisterInitializedCallback(NotifyCallback callback, bool initialNotify)</div><div class="ttdoc">Register a callback to be run when the PWM is initialized.</div></div>
 <div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> CameraServerShared.h:13</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1PWMSim_html_a3ee4bdd367a3bcdce2e275569dacbb0f"><div class="ttname"><a href="classfrc_1_1sim_1_1PWMSim.html#a3ee4bdd367a3bcdce2e275569dacbb0f">frc::sim::PWMSim::GetPosition</a></div><div class="ttdeci">double GetPosition() const</div><div class="ttdoc">Get the PWM position.</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1PWMSim_html_a4f1610eb00be3bc8bca2c0455535afca"><div class="ttname"><a href="classfrc_1_1sim_1_1PWMSim.html#a4f1610eb00be3bc8bca2c0455535afca">frc::sim::PWMSim::RegisterSpeedCallback</a></div><div class="ttdeci">std::unique_ptr&lt; CallbackStore &gt; RegisterSpeedCallback(NotifyCallback callback, bool initialNotify)</div><div class="ttdoc">Register a callback to be run when the PWM speed changes.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_c83246fd67bf422561e892c78521edd1.html">wpilibc</a></li><li class="navelem"><a class="el" href="dir_a55b36a80db95a4ab182a656f2eb2509.html">src</a></li><li class="navelem"><a class="el" href="dir_0fce2ef06e3c6f43f5c610d197b1a66e.html">main</a></li><li class="navelem"><a class="el" href="dir_05ef35d0b06c7e71bb0c2a8a996c52cb.html">native</a></li><li class="navelem"><a class="el" href="dir_9bb56e9ddac3e93dcc0aa7b90d99af5f.html">include</a></li><li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_297dc702852f645e4b9e531dac2da27d.html">simulation</a></li><li class="navelem"><b>PWMSim.h</b></li>
-    <li class="footer">Generated on Tue Jan 12 2021 04:10:49 for WPILibC++ by
+    <li class="footer">Generated on Tue Jan 12 2021 05:57:53 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

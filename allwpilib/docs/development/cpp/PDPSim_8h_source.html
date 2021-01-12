@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.1.2-9-g26584ff</span>
+   &#160;<span id="projectnumber">2021.1.2-10-g9c3b51c</span>
    </div>
   </td>
  </tr>
@@ -115,57 +115,72 @@ $(document).ready(function(){initNavTree('PDPSim_8h_source.html',''); initResiza
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 <div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1PDPSim.html#a77c120229fb935ec9e8139509a0e23e6">   34</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc_1_1sim_1_1PDPSim.html#a77c120229fb935ec9e8139509a0e23e6">PDPSim</a>(<span class="keyword">const</span> <a class="code" href="classfrc_1_1PowerDistributionPanel.html">PowerDistributionPanel</a>&amp; pdp);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  std::unique_ptr&lt;CallbackStore&gt; RegisterInitializedCallback(</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">bool</span> GetInitialized() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">void</span> SetInitialized(<span class="keywordtype">bool</span> initialized);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  std::unique_ptr&lt;CallbackStore&gt; RegisterTemperatureCallback(</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1PDPSim.html#a639e8ce27683676e55c67ad0668edc75">   43</a></span>&#160;  [[nodiscard]] std::unique_ptr&lt;CallbackStore&gt; <a class="code" href="classfrc_1_1sim_1_1PDPSim.html#a639e8ce27683676e55c67ad0668edc75">RegisterInitializedCallback</a>(</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">double</span> GetTemperature() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">void</span> SetTemperature(<span class="keywordtype">double</span> temperature);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  std::unique_ptr&lt;CallbackStore&gt; RegisterVoltageCallback(</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1PDPSim.html#aaa7f18fe3d4ddc0c0664dddda2816e4c">   51</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1sim_1_1PDPSim.html#aaa7f18fe3d4ddc0c0664dddda2816e4c">GetInitialized</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">double</span> GetVoltage() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">void</span> SetVoltage(<span class="keywordtype">double</span> voltage);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  std::unique_ptr&lt;CallbackStore&gt; RegisterCurrentCallback(</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      <span class="keywordtype">int</span> channel, NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1PDPSim.html#acd8e1ca1da9b58d12f21f324bc897355">   58</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1sim_1_1PDPSim.html#acd8e1ca1da9b58d12f21f324bc897355">SetInitialized</a>(<span class="keywordtype">bool</span> initialized);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">double</span> GetCurrent(<span class="keywordtype">int</span> channel) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordtype">void</span> SetCurrent(<span class="keywordtype">int</span> channel, <span class="keywordtype">double</span> current);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">void</span> GetAllCurrents(<span class="keywordtype">double</span>* currents) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">void</span> SetAllCurrents(<span class="keyword">const</span> <span class="keywordtype">double</span>* currents);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">void</span> ResetData();</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1PDPSim.html#ad91a72756beb7d4ecbdb520a4014cdb9">   67</a></span>&#160;  [[nodiscard]] std::unique_ptr&lt;CallbackStore&gt; <a class="code" href="classfrc_1_1sim_1_1PDPSim.html#ad91a72756beb7d4ecbdb520a4014cdb9">RegisterTemperatureCallback</a>(</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">int</span> m_index;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;};</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}  <span class="comment">// namespace sim</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1PDPSim.html#ac4e1efc7fe0c57fa8a7452f5e74145de">   75</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classfrc_1_1sim_1_1PDPSim.html#ac4e1efc7fe0c57fa8a7452f5e74145de">GetTemperature</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1PDPSim.html#a78b8909fccdbdb59e952a8410d6b8312">   82</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1sim_1_1PDPSim.html#a78b8909fccdbdb59e952a8410d6b8312">SetTemperature</a>(<span class="keywordtype">double</span> temperature);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1PDPSim.html#a3fb5b6e1334a09a295fa63b0bb54c885">   91</a></span>&#160;  [[nodiscard]] std::unique_ptr&lt;CallbackStore&gt; <a class="code" href="classfrc_1_1sim_1_1PDPSim.html#a3fb5b6e1334a09a295fa63b0bb54c885">RegisterVoltageCallback</a>(</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1PDPSim.html#ad7b7e26e48c040af45f75fbba12ce5b4">   99</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classfrc_1_1sim_1_1PDPSim.html#ad7b7e26e48c040af45f75fbba12ce5b4">GetVoltage</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1PDPSim.html#a0871e06044cfc3feb8aec63f6aa25aff">  106</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1sim_1_1PDPSim.html#a0871e06044cfc3feb8aec63f6aa25aff">SetVoltage</a>(<span class="keywordtype">double</span> voltage);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1PDPSim.html#ae3bd94f1e94527eaaa6ffe944fc6368a">  117</a></span>&#160;  [[nodiscard]] std::unique_ptr&lt;CallbackStore&gt; <a class="code" href="classfrc_1_1sim_1_1PDPSim.html#ae3bd94f1e94527eaaa6ffe944fc6368a">RegisterCurrentCallback</a>(</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;      <span class="keywordtype">int</span> channel, NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1PDPSim.html#aac31715a2efef52e98a6cc997486cdc0">  126</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classfrc_1_1sim_1_1PDPSim.html#aac31715a2efef52e98a6cc997486cdc0">GetCurrent</a>(<span class="keywordtype">int</span> channel) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1PDPSim.html#a1f29df85a6f1a80070d615a8692b8454">  134</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1sim_1_1PDPSim.html#a1f29df85a6f1a80070d615a8692b8454">SetCurrent</a>(<span class="keywordtype">int</span> channel, <span class="keywordtype">double</span> current);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1PDPSim.html#a6ba5a4bebd4b9c5c255f68e1525aa62f">  142</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1sim_1_1PDPSim.html#a6ba5a4bebd4b9c5c255f68e1525aa62f">GetAllCurrents</a>(<span class="keywordtype">double</span>* currents) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
+<div class="line"><a name="l00150"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1PDPSim.html#a97c1f97920c0049a49eb2e755e345a56">  150</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1sim_1_1PDPSim.html#a97c1f97920c0049a49eb2e755e345a56">SetAllCurrents</a>(<span class="keyword">const</span> <span class="keywordtype">double</span>* currents);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
+<div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1PDPSim.html#a3ab02f196d266c3c92be5c0f7f5b570a">  155</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1sim_1_1PDPSim.html#a3ab02f196d266c3c92be5c0f7f5b570a">ResetData</a>();</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  <span class="keywordtype">int</span> m_index;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;};</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;}  <span class="comment">// namespace sim</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;}  <span class="comment">// namespace frc</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclassfrc_1_1sim_1_1PDPSim_html_aaa7f18fe3d4ddc0c0664dddda2816e4c"><div class="ttname"><a href="classfrc_1_1sim_1_1PDPSim.html#aaa7f18fe3d4ddc0c0664dddda2816e4c">frc::sim::PDPSim::GetInitialized</a></div><div class="ttdeci">bool GetInitialized() const</div><div class="ttdoc">Check whether the PDP has been initialized.</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1PDPSim_html_a639e8ce27683676e55c67ad0668edc75"><div class="ttname"><a href="classfrc_1_1sim_1_1PDPSim.html#a639e8ce27683676e55c67ad0668edc75">frc::sim::PDPSim::RegisterInitializedCallback</a></div><div class="ttdeci">std::unique_ptr&lt; CallbackStore &gt; RegisterInitializedCallback(NotifyCallback callback, bool initialNotify)</div><div class="ttdoc">Register a callback to be run when the PDP is initialized.</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1PDPSim_html_a0871e06044cfc3feb8aec63f6aa25aff"><div class="ttname"><a href="classfrc_1_1sim_1_1PDPSim.html#a0871e06044cfc3feb8aec63f6aa25aff">frc::sim::PDPSim::SetVoltage</a></div><div class="ttdeci">void SetVoltage(double voltage)</div><div class="ttdoc">Set the PDP voltage.</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1PDPSim_html_acd8e1ca1da9b58d12f21f324bc897355"><div class="ttname"><a href="classfrc_1_1sim_1_1PDPSim.html#acd8e1ca1da9b58d12f21f324bc897355">frc::sim::PDPSim::SetInitialized</a></div><div class="ttdeci">void SetInitialized(bool initialized)</div><div class="ttdoc">Define whether the PDP has been initialized.</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1PDPSim_html_a3ab02f196d266c3c92be5c0f7f5b570a"><div class="ttname"><a href="classfrc_1_1sim_1_1PDPSim.html#a3ab02f196d266c3c92be5c0f7f5b570a">frc::sim::PDPSim::ResetData</a></div><div class="ttdeci">void ResetData()</div><div class="ttdoc">Reset all PDP simulation data.</div></div>
 <div class="ttc" id="aclassfrc_1_1PowerDistributionPanel_html"><div class="ttname"><a href="classfrc_1_1PowerDistributionPanel.html">frc::PowerDistributionPanel</a></div><div class="ttdoc">Class for getting voltage, current, temperature, power and energy from the CAN PDP.</div><div class="ttdef"><b>Definition:</b> PowerDistributionPanel.h:23</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1PDPSim_html_aac31715a2efef52e98a6cc997486cdc0"><div class="ttname"><a href="classfrc_1_1sim_1_1PDPSim.html#aac31715a2efef52e98a6cc997486cdc0">frc::sim::PDPSim::GetCurrent</a></div><div class="ttdeci">double GetCurrent(int channel) const</div><div class="ttdoc">Read the current in one of the PDP channels.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1PDPSim_html_a3018edd8511f636adc03c7e86f5a3fb6"><div class="ttname"><a href="classfrc_1_1sim_1_1PDPSim.html#a3018edd8511f636adc03c7e86f5a3fb6">frc::sim::PDPSim::PDPSim</a></div><div class="ttdeci">PDPSim(int module=0)</div><div class="ttdoc">Constructs from a PDP module number (CAN ID).</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1PDPSim_html_a77c120229fb935ec9e8139509a0e23e6"><div class="ttname"><a href="classfrc_1_1sim_1_1PDPSim.html#a77c120229fb935ec9e8139509a0e23e6">frc::sim::PDPSim::PDPSim</a></div><div class="ttdeci">PDPSim(const PowerDistributionPanel &amp;pdp)</div><div class="ttdoc">Constructs from a PowerDistributionPanel object.</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1PDPSim_html_ad7b7e26e48c040af45f75fbba12ce5b4"><div class="ttname"><a href="classfrc_1_1sim_1_1PDPSim.html#ad7b7e26e48c040af45f75fbba12ce5b4">frc::sim::PDPSim::GetVoltage</a></div><div class="ttdeci">double GetVoltage() const</div><div class="ttdoc">Check the PDP voltage.</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1PDPSim_html_ae3bd94f1e94527eaaa6ffe944fc6368a"><div class="ttname"><a href="classfrc_1_1sim_1_1PDPSim.html#ae3bd94f1e94527eaaa6ffe944fc6368a">frc::sim::PDPSim::RegisterCurrentCallback</a></div><div class="ttdeci">std::unique_ptr&lt; CallbackStore &gt; RegisterCurrentCallback(int channel, NotifyCallback callback, bool initialNotify)</div><div class="ttdoc">Register a callback to be run whenever the current of a specific channel changes.</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1PDPSim_html_ad91a72756beb7d4ecbdb520a4014cdb9"><div class="ttname"><a href="classfrc_1_1sim_1_1PDPSim.html#ad91a72756beb7d4ecbdb520a4014cdb9">frc::sim::PDPSim::RegisterTemperatureCallback</a></div><div class="ttdeci">std::unique_ptr&lt; CallbackStore &gt; RegisterTemperatureCallback(NotifyCallback callback, bool initialNotify)</div><div class="ttdoc">Register a callback to be run whenever the PDP temperature changes.</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1PDPSim_html_a3fb5b6e1334a09a295fa63b0bb54c885"><div class="ttname"><a href="classfrc_1_1sim_1_1PDPSim.html#a3fb5b6e1334a09a295fa63b0bb54c885">frc::sim::PDPSim::RegisterVoltageCallback</a></div><div class="ttdeci">std::unique_ptr&lt; CallbackStore &gt; RegisterVoltageCallback(NotifyCallback callback, bool initialNotify)</div><div class="ttdoc">Register a callback to be run whenever the PDP voltage changes.</div></div>
 <div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> CameraServerShared.h:13</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1PDPSim_html_a97c1f97920c0049a49eb2e755e345a56"><div class="ttname"><a href="classfrc_1_1sim_1_1PDPSim.html#a97c1f97920c0049a49eb2e755e345a56">frc::sim::PDPSim::SetAllCurrents</a></div><div class="ttdeci">void SetAllCurrents(const double *currents)</div><div class="ttdoc">Change the current in all of the PDP channels.</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1PDPSim_html_a78b8909fccdbdb59e952a8410d6b8312"><div class="ttname"><a href="classfrc_1_1sim_1_1PDPSim.html#a78b8909fccdbdb59e952a8410d6b8312">frc::sim::PDPSim::SetTemperature</a></div><div class="ttdeci">void SetTemperature(double temperature)</div><div class="ttdoc">Define the PDP temperature.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1PDPSim_html"><div class="ttname"><a href="classfrc_1_1sim_1_1PDPSim.html">frc::sim::PDPSim</a></div><div class="ttdoc">Class to control a simulated Power Distribution Panel (PDP).</div><div class="ttdef"><b>Definition:</b> PDPSim.h:20</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1PDPSim_html_a6ba5a4bebd4b9c5c255f68e1525aa62f"><div class="ttname"><a href="classfrc_1_1sim_1_1PDPSim.html#a6ba5a4bebd4b9c5c255f68e1525aa62f">frc::sim::PDPSim::GetAllCurrents</a></div><div class="ttdeci">void GetAllCurrents(double *currents) const</div><div class="ttdoc">Read the current of all of the PDP channels.</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1PDPSim_html_a1f29df85a6f1a80070d615a8692b8454"><div class="ttname"><a href="classfrc_1_1sim_1_1PDPSim.html#a1f29df85a6f1a80070d615a8692b8454">frc::sim::PDPSim::SetCurrent</a></div><div class="ttdeci">void SetCurrent(int channel, double current)</div><div class="ttdoc">Change the current in the given channel.</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1PDPSim_html_ac4e1efc7fe0c57fa8a7452f5e74145de"><div class="ttname"><a href="classfrc_1_1sim_1_1PDPSim.html#ac4e1efc7fe0c57fa8a7452f5e74145de">frc::sim::PDPSim::GetTemperature</a></div><div class="ttdeci">double GetTemperature() const</div><div class="ttdoc">Check the temperature of the PDP.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_c83246fd67bf422561e892c78521edd1.html">wpilibc</a></li><li class="navelem"><a class="el" href="dir_a55b36a80db95a4ab182a656f2eb2509.html">src</a></li><li class="navelem"><a class="el" href="dir_0fce2ef06e3c6f43f5c610d197b1a66e.html">main</a></li><li class="navelem"><a class="el" href="dir_05ef35d0b06c7e71bb0c2a8a996c52cb.html">native</a></li><li class="navelem"><a class="el" href="dir_9bb56e9ddac3e93dcc0aa7b90d99af5f.html">include</a></li><li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_297dc702852f645e4b9e531dac2da27d.html">simulation</a></li><li class="navelem"><b>PDPSim.h</b></li>
-    <li class="footer">Generated on Tue Jan 12 2021 04:10:49 for WPILibC++ by
+    <li class="footer">Generated on Tue Jan 12 2021 05:57:53 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>
