@@ -1,5 +1,9 @@
 var NAVTREEINDEX38 =
 {
+"structfrc_1_1ADXL345__SPI_1_1AllAxes.html#a5c871c94e1391d82f3cd65a8a1f97434":[5,0,2,5,0,1],
+"structfrc_1_1ADXL345__SPI_1_1AllAxes.html#abe57b1282d9538cf95563ccde793e7e8":[5,0,2,5,0,2],
+"structfrc_1_1ADXL345__SPI_1_1AllAxes.html#ac3211539489b6d5fca9af190c1281b8a":[5,0,2,5,0,0],
+"structfrc_1_1ADXL362_1_1AllAxes.html":[5,0,2,6,0],
 "structfrc_1_1ADXL362_1_1AllAxes.html#a965ef5a451165cc62db79901e0dc390b":[5,0,2,6,0,1],
 "structfrc_1_1ADXL362_1_1AllAxes.html#ae7ff073e5e548b74baab336e7c9a5fd3":[5,0,2,6,0,0],
 "structfrc_1_1ADXL362_1_1AllAxes.html#af923c40b7421cea1134f922ed655f598":[5,0,2,6,0,2],
@@ -245,9 +249,5 @@ var NAVTREEINDEX38 =
 "structwpi_1_1PointerLikeTypeTraits_3_01PointerIntPair_3_01PointerTy_00_01IntBits_00_01IntType_00_01PtrTraits_01_4_01_4.html#a09f4ad2fa53f22db3cbc69eb78f0ea8e":[5,0,7,145,1],
 "structwpi_1_1PointerLikeTypeTraits_3_01PointerIntPair_3_01PointerTy_00_01IntBits_00_01IntType_00_01PtrTraits_01_4_01_4.html#a1eabf1a71a9294758c647a3bc64f3d86":[5,0,7,145,2],
 "structwpi_1_1PointerLikeTypeTraits_3_01PointerIntPair_3_01PointerTy_00_01IntBits_00_01IntType_00_01PtrTraits_01_4_01_4.html#a823a46f492b782256b91d899d5e8d71a":[5,0,7,145,3],
-"structwpi_1_1PointerLikeTypeTraits_3_01PointerIntPair_3_01PointerTy_00_01IntBits_00_01IntType_00_01PtrTraits_01_4_01_4.html#ab798474f90c061dde9bcd09da1a23bbda6d81eba404783a1f98adada647bf46f6":[5,0,7,145,0],
-"structwpi_1_1PointerLikeTypeTraits_3_01PointerUnion3_3_01PT1_00_01PT2_00_01PT3_01_4_01_4.html":[5,0,7,146],
-"structwpi_1_1PointerLikeTypeTraits_3_01PointerUnion3_3_01PT1_00_01PT2_00_01PT3_01_4_01_4.html#a15aac83206c6c68aebdbf666e971f3eeadba1ab4cc45c2d8c110747b2b095a1da":[5,0,7,146,0],
-"structwpi_1_1PointerLikeTypeTraits_3_01PointerUnion3_3_01PT1_00_01PT2_00_01PT3_01_4_01_4.html#a4d1457d01b8085e6b14c70a7ccf90cbd":[5,0,7,146,2],
-"structwpi_1_1PointerLikeTypeTraits_3_01PointerUnion3_3_01PT1_00_01PT2_00_01PT3_01_4_01_4.html#a8a22b09219e6469d635d7d80daf48fe0":[5,0,7,146,1]
+"structwpi_1_1PointerLikeTypeTraits_3_01PointerIntPair_3_01PointerTy_00_01IntBits_00_01IntType_00_01PtrTraits_01_4_01_4.html#ab798474f90c061dde9bcd09da1a23bbda6d81eba404783a1f98adada647bf46f6":[5,0,7,145,0]
 };

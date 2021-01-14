@@ -1,5 +1,9 @@
 var NAVTREEINDEX41 =
 {
+"wpilibc_2src_2main_2native_2include_2frc_2DMA_8h_source.html":[6,0,4,0,0,0,0,0,34],
+"wpilibc_2src_2main_2native_2include_2frc_2DriverStation_8h_source.html":[6,0,4,0,0,0,0,0,38],
+"wpilibc_2src_2main_2native_2include_2frc_2DutyCycle_8h_source.html":[6,0,4,0,0,0,0,0,39],
+"wpilibc_2src_2main_2native_2include_2frc_2Encoder_8h_source.html":[6,0,4,0,0,0,0,0,41],
 "wpilibc_2src_2main_2native_2include_2frc_2Error_8h_source.html":[6,0,4,0,0,0,0,0,42],
 "wpilibc_2src_2main_2native_2include_2frc_2I2C_8h_source.html":[6,0,4,0,0,0,0,0,48],
 "wpilibc_2src_2main_2native_2include_2frc_2Notifier_8h_source.html":[6,0,4,0,0,0,0,0,56],

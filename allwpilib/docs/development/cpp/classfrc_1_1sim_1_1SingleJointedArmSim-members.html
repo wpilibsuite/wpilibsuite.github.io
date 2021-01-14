@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.1.2-13-g04a90b5</span>
+   &#160;<span id="projectnumber">2021.1.2-14-g406d055</span>
    </div>
   </td>
  </tr>
@@ -104,8 +104,8 @@ $(document).ready(function(){initNavTree('classfrc_1_1sim_1_1SingleJointedArmSim
   <tr><td class="entry"><a class="el" href="classfrc_1_1sim_1_1LinearSystemSim.html#a2953fa70a08d6b499c8805bfd113dda2">GetOutput</a>() const</td><td class="entry"><a class="el" href="classfrc_1_1sim_1_1LinearSystemSim.html">frc::sim::LinearSystemSim&lt; 2, 1, 1 &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1sim_1_1LinearSystemSim.html#a1ebbe7d917b6a01e401f364ddf2f7ea6">GetOutput</a>(int row) const</td><td class="entry"><a class="el" href="classfrc_1_1sim_1_1LinearSystemSim.html">frc::sim::LinearSystemSim&lt; 2, 1, 1 &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classfrc_1_1sim_1_1SingleJointedArmSim.html#a4c7e24169544102b77f42c847f92a520">GetVelocity</a>() const</td><td class="entry"><a class="el" href="classfrc_1_1sim_1_1SingleJointedArmSim.html">frc::sim::SingleJointedArmSim</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1sim_1_1SingleJointedArmSim.html#a8ded6723d692f55db4863afce3d30772">HasHitLowerLimit</a>(const Eigen::Matrix&lt; double, 2, 1 &gt; &amp;x) const</td><td class="entry"><a class="el" href="classfrc_1_1sim_1_1SingleJointedArmSim.html">frc::sim::SingleJointedArmSim</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classfrc_1_1sim_1_1SingleJointedArmSim.html#aa08e10cd8e7c03dae2e7ddc0540824b8">HasHitUpperLimit</a>(const Eigen::Matrix&lt; double, 2, 1 &gt; &amp;x) const</td><td class="entry"><a class="el" href="classfrc_1_1sim_1_1SingleJointedArmSim.html">frc::sim::SingleJointedArmSim</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1sim_1_1SingleJointedArmSim.html#acc330cff8accec3e3f49cce7f2630d39">HasHitLowerLimit</a>() const</td><td class="entry"><a class="el" href="classfrc_1_1sim_1_1SingleJointedArmSim.html">frc::sim::SingleJointedArmSim</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classfrc_1_1sim_1_1SingleJointedArmSim.html#ab76373eedc02d97dca02cc5017a5abae">HasHitUpperLimit</a>() const</td><td class="entry"><a class="el" href="classfrc_1_1sim_1_1SingleJointedArmSim.html">frc::sim::SingleJointedArmSim</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1sim_1_1LinearSystemSim.html#a3d62ff6432a0512b39fe9c7a431db483">LinearSystemSim</a>(const LinearSystem&lt; States, Inputs, Outputs &gt; &amp;system, const std::array&lt; double, Outputs &gt; &amp;measurementStdDevs={})</td><td class="entry"><a class="el" href="classfrc_1_1sim_1_1LinearSystemSim.html">frc::sim::LinearSystemSim&lt; 2, 1, 1 &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">explicit</span></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>m_measurementStdDevs</b> (defined in <a class="el" href="classfrc_1_1sim_1_1LinearSystemSim.html">frc::sim::LinearSystemSim&lt; 2, 1, 1 &gt;</a>)</td><td class="entry"><a class="el" href="classfrc_1_1sim_1_1LinearSystemSim.html">frc::sim::LinearSystemSim&lt; 2, 1, 1 &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>m_plant</b> (defined in <a class="el" href="classfrc_1_1sim_1_1LinearSystemSim.html">frc::sim::LinearSystemSim&lt; 2, 1, 1 &gt;</a>)</td><td class="entry"><a class="el" href="classfrc_1_1sim_1_1LinearSystemSim.html">frc::sim::LinearSystemSim&lt; 2, 1, 1 &gt;</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
@@ -121,12 +121,14 @@ $(document).ready(function(){initNavTree('classfrc_1_1sim_1_1SingleJointedArmSim
   <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1sim_1_1LinearSystemSim.html#a524cd5f6d58620b66c137c3a2d96316d">Update</a>(units::second_t dt)</td><td class="entry"><a class="el" href="classfrc_1_1sim_1_1LinearSystemSim.html">frc::sim::LinearSystemSim&lt; 2, 1, 1 &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classfrc_1_1sim_1_1SingleJointedArmSim.html#a13584bb1076cd3dbcd396a3c0808d6a7">UpdateX</a>(const Eigen::Matrix&lt; double, 2, 1 &gt; &amp;currentXhat, const Eigen::Matrix&lt; double, 1, 1 &gt; &amp;u, units::second_t dt) override</td><td class="entry"><a class="el" href="classfrc_1_1sim_1_1SingleJointedArmSim.html">frc::sim::SingleJointedArmSim</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1sim_1_1LinearSystemSim.html#a4ee2579d1061066ef40204077e4464ef">LinearSystemSim&lt; 2, 1, 1 &gt;::UpdateX</a>(const Eigen::Matrix&lt; double, States, 1 &gt; &amp;currentXhat, const Eigen::Matrix&lt; double, Inputs, 1 &gt; &amp;u, units::second_t dt)</td><td class="entry"><a class="el" href="classfrc_1_1sim_1_1LinearSystemSim.html">frc::sim::LinearSystemSim&lt; 2, 1, 1 &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classfrc_1_1sim_1_1SingleJointedArmSim.html#a0a809cf9543fc9c601df912cdfd2a13d">WouldHitLowerLimit</a>(units::radian_t armAngle) const</td><td class="entry"><a class="el" href="classfrc_1_1sim_1_1SingleJointedArmSim.html">frc::sim::SingleJointedArmSim</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1sim_1_1SingleJointedArmSim.html#abc446d399e9fd57573c731bade2e5ae4">WouldHitUpperLimit</a>(units::radian_t armAngle) const</td><td class="entry"><a class="el" href="classfrc_1_1sim_1_1SingleJointedArmSim.html">frc::sim::SingleJointedArmSim</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Jan 14 2021 04:10:58 for WPILibC++ by
+    <li class="footer">Generated on Thu Jan 14 2021 08:30:03 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

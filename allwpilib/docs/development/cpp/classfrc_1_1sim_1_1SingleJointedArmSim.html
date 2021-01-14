@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.1.2-13-g04a90b5</span>
+   &#160;<span id="projectnumber">2021.1.2-14-g406d055</span>
    </div>
   </td>
  </tr>
@@ -121,12 +121,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5c098b486f73274723c3b7296d153323"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1SingleJointedArmSim.html#a5c098b486f73274723c3b7296d153323">SingleJointedArmSim</a> (const <a class="el" href="classfrc_1_1DCMotor.html">DCMotor</a> &amp;gearbox, double gearing, units::kilogram_square_meter_t moi, units::meter_t armLength, units::radian_t minAngle, units::radian_t maxAngle, units::kilogram_t mass, bool simulateGravity, const std::array&lt; double, 1 &gt; &amp;measurementStdDevs={0.0})</td></tr>
 <tr class="memdesc:a5c098b486f73274723c3b7296d153323"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a simulated arm mechanism.  <a href="classfrc_1_1sim_1_1SingleJointedArmSim.html#a5c098b486f73274723c3b7296d153323">More...</a><br /></td></tr>
 <tr class="separator:a5c098b486f73274723c3b7296d153323"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ded6723d692f55db4863afce3d30772"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1SingleJointedArmSim.html#a8ded6723d692f55db4863afce3d30772">HasHitLowerLimit</a> (const Eigen::Matrix&lt; double, 2, 1 &gt; &amp;x) const</td></tr>
-<tr class="memdesc:a8ded6723d692f55db4863afce3d30772"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the arm has hit the lower limit.  <a href="classfrc_1_1sim_1_1SingleJointedArmSim.html#a8ded6723d692f55db4863afce3d30772">More...</a><br /></td></tr>
-<tr class="separator:a8ded6723d692f55db4863afce3d30772"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa08e10cd8e7c03dae2e7ddc0540824b8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1SingleJointedArmSim.html#aa08e10cd8e7c03dae2e7ddc0540824b8">HasHitUpperLimit</a> (const Eigen::Matrix&lt; double, 2, 1 &gt; &amp;x) const</td></tr>
-<tr class="memdesc:aa08e10cd8e7c03dae2e7ddc0540824b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the arm has hit the upper limit.  <a href="classfrc_1_1sim_1_1SingleJointedArmSim.html#aa08e10cd8e7c03dae2e7ddc0540824b8">More...</a><br /></td></tr>
-<tr class="separator:aa08e10cd8e7c03dae2e7ddc0540824b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a809cf9543fc9c601df912cdfd2a13d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1SingleJointedArmSim.html#a0a809cf9543fc9c601df912cdfd2a13d">WouldHitLowerLimit</a> (units::radian_t armAngle) const</td></tr>
+<tr class="memdesc:a0a809cf9543fc9c601df912cdfd2a13d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the arm would hit the lower limit.  <a href="classfrc_1_1sim_1_1SingleJointedArmSim.html#a0a809cf9543fc9c601df912cdfd2a13d">More...</a><br /></td></tr>
+<tr class="separator:a0a809cf9543fc9c601df912cdfd2a13d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc446d399e9fd57573c731bade2e5ae4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1SingleJointedArmSim.html#abc446d399e9fd57573c731bade2e5ae4">WouldHitUpperLimit</a> (units::radian_t armAngle) const</td></tr>
+<tr class="memdesc:abc446d399e9fd57573c731bade2e5ae4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the arm would hit the upper limit.  <a href="classfrc_1_1sim_1_1SingleJointedArmSim.html#abc446d399e9fd57573c731bade2e5ae4">More...</a><br /></td></tr>
+<tr class="separator:abc446d399e9fd57573c731bade2e5ae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc330cff8accec3e3f49cce7f2630d39"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1SingleJointedArmSim.html#acc330cff8accec3e3f49cce7f2630d39">HasHitLowerLimit</a> () const</td></tr>
+<tr class="memdesc:acc330cff8accec3e3f49cce7f2630d39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the arm has hit the lower limit.  <a href="classfrc_1_1sim_1_1SingleJointedArmSim.html#acc330cff8accec3e3f49cce7f2630d39">More...</a><br /></td></tr>
+<tr class="separator:acc330cff8accec3e3f49cce7f2630d39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab76373eedc02d97dca02cc5017a5abae"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1SingleJointedArmSim.html#ab76373eedc02d97dca02cc5017a5abae">HasHitUpperLimit</a> () const</td></tr>
+<tr class="memdesc:ab76373eedc02d97dca02cc5017a5abae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the arm has hit the upper limit.  <a href="classfrc_1_1sim_1_1SingleJointedArmSim.html#ab76373eedc02d97dca02cc5017a5abae">More...</a><br /></td></tr>
+<tr class="separator:ab76373eedc02d97dca02cc5017a5abae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b6d6739e5f70492c08475d03a04f9f5"><td class="memItemLeft" align="right" valign="top">units::radian_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1SingleJointedArmSim.html#a7b6d6739e5f70492c08475d03a04f9f5">GetAngle</a> () const</td></tr>
 <tr class="memdesc:a7b6d6739e5f70492c08475d03a04f9f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current arm angle.  <a href="classfrc_1_1sim_1_1SingleJointedArmSim.html#a7b6d6739e5f70492c08475d03a04f9f5">More...</a><br /></td></tr>
 <tr class="separator:a7b6d6739e5f70492c08475d03a04f9f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,7 +143,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a8bc9b2be5b96fd7ad84a0ccf6749f1e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the arm current draw.  <a href="classfrc_1_1sim_1_1SingleJointedArmSim.html#a8bc9b2be5b96fd7ad84a0ccf6749f1e5">More...</a><br /></td></tr>
 <tr class="separator:a8bc9b2be5b96fd7ad84a0ccf6749f1e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8157c4879cd1a27a2048ea729f6f365"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1SingleJointedArmSim.html#af8157c4879cd1a27a2048ea729f6f365">SetInputVoltage</a> (units::volt_t voltage)</td></tr>
-<tr class="memdesc:af8157c4879cd1a27a2048ea729f6f365"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the input voltage for the elevator.  <a href="classfrc_1_1sim_1_1SingleJointedArmSim.html#af8157c4879cd1a27a2048ea729f6f365">More...</a><br /></td></tr>
+<tr class="memdesc:af8157c4879cd1a27a2048ea729f6f365"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the input voltage for the arm.  <a href="classfrc_1_1sim_1_1SingleJointedArmSim.html#af8157c4879cd1a27a2048ea729f6f365">More...</a><br /></td></tr>
 <tr class="separator:af8157c4879cd1a27a2048ea729f6f365"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classfrc_1_1sim_1_1LinearSystemSim"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classfrc_1_1sim_1_1LinearSystemSim')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classfrc_1_1sim_1_1LinearSystemSim.html">frc::sim::LinearSystemSim&lt; 2, 1, 1 &gt;</a></td></tr>
 <tr class="memitem:a3d62ff6432a0512b39fe9c7a431db483 inherit pub_methods_classfrc_1_1sim_1_1LinearSystemSim"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1LinearSystemSim.html#a3d62ff6432a0512b39fe9c7a431db483">LinearSystemSim</a> (const <a class="el" href="classfrc_1_1LinearSystem.html">LinearSystem</a>&lt; States, Inputs, Outputs &gt; &amp;system, const std::array&lt; double, Outputs &gt; &amp;measurementStdDevs={})</td></tr>
@@ -493,8 +499,8 @@ std::array&lt; double, Outputs &gt;&#160;</td><td class="memItemRight" valign="b
 
 </div>
 </div>
-<a id="a8ded6723d692f55db4863afce3d30772"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ded6723d692f55db4863afce3d30772">&#9670;&nbsp;</a></span>HasHitLowerLimit()</h2>
+<a id="acc330cff8accec3e3f49cce7f2630d39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc330cff8accec3e3f49cce7f2630d39">&#9670;&nbsp;</a></span>HasHitLowerLimit()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -502,26 +508,19 @@ std::array&lt; double, Outputs &gt;&#160;</td><td class="memItemRight" valign="b
         <tr>
           <td class="memname">bool frc::sim::SingleJointedArmSim::HasHitLowerLimit </td>
           <td>(</td>
-          <td class="paramtype">const Eigen::Matrix&lt; double, 2, 1 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>x</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Returns whether the arm has hit the lower limit. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">x</td><td>The current arm state. </td></tr>
-  </table>
-  </dd>
-</dl>
 <dl class="section return"><dt>Returns</dt><dd>Whether the arm has hit the lower limit. </dd></dl>
 
 </div>
 </div>
-<a id="aa08e10cd8e7c03dae2e7ddc0540824b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa08e10cd8e7c03dae2e7ddc0540824b8">&#9670;&nbsp;</a></span>HasHitUpperLimit()</h2>
+<a id="ab76373eedc02d97dca02cc5017a5abae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab76373eedc02d97dca02cc5017a5abae">&#9670;&nbsp;</a></span>HasHitUpperLimit()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -529,20 +528,13 @@ std::array&lt; double, Outputs &gt;&#160;</td><td class="memItemRight" valign="b
         <tr>
           <td class="memname">bool frc::sim::SingleJointedArmSim::HasHitUpperLimit </td>
           <td>(</td>
-          <td class="paramtype">const Eigen::Matrix&lt; double, 2, 1 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>x</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Returns whether the arm has hit the upper limit. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">x</td><td>The current arm state. </td></tr>
-  </table>
-  </dd>
-</dl>
 <dl class="section return"><dt>Returns</dt><dd>Whether the arm has hit the upper limit. </dd></dl>
 
 </div>
@@ -563,7 +555,7 @@ std::array&lt; double, Outputs &gt;&#160;</td><td class="memItemRight" valign="b
       </table>
 </div><div class="memdoc">
 
-<p>Sets the input voltage for the elevator. </p>
+<p>Sets the input voltage for the arm. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">voltage</td><td>The input voltage. </td></tr>
@@ -625,6 +617,60 @@ std::array&lt; double, Outputs &gt;&#160;</td><td class="memItemRight" valign="b
 
 </div>
 </div>
+<a id="a0a809cf9543fc9c601df912cdfd2a13d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a809cf9543fc9c601df912cdfd2a13d">&#9670;&nbsp;</a></span>WouldHitLowerLimit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool frc::sim::SingleJointedArmSim::WouldHitLowerLimit </td>
+          <td>(</td>
+          <td class="paramtype">units::radian_t&#160;</td>
+          <td class="paramname"><em>armAngle</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns whether the arm would hit the lower limit. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">armAngle</td><td>The arm height. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Whether the arm would hit the lower limit. </dd></dl>
+
+</div>
+</div>
+<a id="abc446d399e9fd57573c731bade2e5ae4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc446d399e9fd57573c731bade2e5ae4">&#9670;&nbsp;</a></span>WouldHitUpperLimit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool frc::sim::SingleJointedArmSim::WouldHitUpperLimit </td>
+          <td>(</td>
+          <td class="paramtype">units::radian_t&#160;</td>
+          <td class="paramname"><em>armAngle</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns whether the arm would hit the upper limit. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">armAngle</td><td>The arm height. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Whether the arm would hit the upper limit. </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>/home/runner/work/allwpilib/allwpilib/wpilibc/src/main/native/include/frc/simulation/<a class="el" href="SingleJointedArmSim_8h_source.html">SingleJointedArmSim.h</a></li>
 </ul>
@@ -634,7 +680,7 @@ std::array&lt; double, Outputs &gt;&#160;</td><td class="memItemRight" valign="b
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><b>sim</b></li><li class="navelem"><a class="el" href="classfrc_1_1sim_1_1SingleJointedArmSim.html">SingleJointedArmSim</a></li>
-    <li class="footer">Generated on Thu Jan 14 2021 04:10:58 for WPILibC++ by
+    <li class="footer">Generated on Thu Jan 14 2021 08:30:03 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>
