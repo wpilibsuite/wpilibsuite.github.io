@@ -1,5 +1,6 @@
 var NAVTREEINDEX41 =
 {
+"wpilibc_2src_2main_2native_2include_2frc_2Counter_8h_source.html":[6,0,4,0,0,0,0,0,28],
 "wpilibc_2src_2main_2native_2include_2frc_2DMA_8h_source.html":[6,0,4,0,0,0,0,0,34],
 "wpilibc_2src_2main_2native_2include_2frc_2DriverStation_8h_source.html":[6,0,4,0,0,0,0,0,38],
 "wpilibc_2src_2main_2native_2include_2frc_2DutyCycle_8h_source.html":[6,0,4,0,0,0,0,0,39],

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.1.2-14-g406d055</span>
+   &#160;<span id="projectnumber">2021.1.2-15-g7c52401</span>
    </div>
   </td>
  </tr>
@@ -503,7 +503,7 @@ $(document).ready(function(){initNavTree('raw__ostream_8h_source.html',''); init
 <div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160; </div>
 <div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;  <span class="keywordtype">void</span> flush() = <span class="keyword">delete</span>;</div>
 <div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160; </div>
-<div class="line"><a name="l00549"></a><span class="lineno"><a class="line" href="classwpi_1_1raw__svector__ostream.html#a893d4f22f19b569a6ffa16c8c297b2f1">  549</a></span>&#160;  <a class="code" href="classwpi_1_1StringRef.html">StringRef</a> <a class="code" href="classwpi_1_1raw__svector__ostream.html#a893d4f22f19b569a6ffa16c8c297b2f1">str</a>() { <span class="keywordflow">return</span> <a class="code" href="classwpi_1_1StringRef.html">StringRef</a>(OS.<a class="code" href="classwpi_1_1SmallVectorTemplateCommon.html#a407d9019bf8ff07d493b57e89924ebb0">data</a>(), OS.size()); }</div>
+<div class="line"><a name="l00549"></a><span class="lineno"><a class="line" href="classwpi_1_1raw__svector__ostream.html#a893d4f22f19b569a6ffa16c8c297b2f1">  549</a></span>&#160;  <a class="code" href="classwpi_1_1StringRef.html">StringRef</a> <a class="code" href="classwpi_1_1raw__svector__ostream.html#a893d4f22f19b569a6ffa16c8c297b2f1">str</a>() { <span class="keywordflow">return</span> <a class="code" href="classwpi_1_1StringRef.html">StringRef</a>(OS.data(), OS.size()); }</div>
 <div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;};</div>
 <div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160; </div>
 <div class="line"><a name="l00557"></a><span class="lineno"><a class="line" href="classwpi_1_1raw__vector__ostream.html">  557</a></span>&#160;<span class="keyword">class </span><a class="code" href="classwpi_1_1raw__vector__ostream.html">raw_vector_ostream</a> : <span class="keyword">public</span> <a class="code" href="classwpi_1_1raw__pwrite__stream.html">raw_pwrite_stream</a> {</div>
@@ -545,7 +545,7 @@ $(document).ready(function(){initNavTree('raw__ostream_8h_source.html',''); init
 <div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160; </div>
 <div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;  <span class="keywordtype">void</span> flush() = <span class="keyword">delete</span>;</div>
 <div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160; </div>
-<div class="line"><a name="l00615"></a><span class="lineno"><a class="line" href="classwpi_1_1raw__usvector__ostream.html#a1fb58f6861587fbb2aaf448bc8716510">  615</a></span>&#160;  <a class="code" href="classwpi_1_1ArrayRef.html">ArrayRef&lt;uint8_t&gt;</a> <a class="code" href="classwpi_1_1raw__usvector__ostream.html#a1fb58f6861587fbb2aaf448bc8716510">array</a>() { <span class="keywordflow">return</span> <a class="code" href="classwpi_1_1ArrayRef.html">ArrayRef&lt;uint8_t&gt;</a>(OS.<a class="code" href="classwpi_1_1SmallVectorTemplateCommon.html#a407d9019bf8ff07d493b57e89924ebb0">data</a>(), OS.size()); }</div>
+<div class="line"><a name="l00615"></a><span class="lineno"><a class="line" href="classwpi_1_1raw__usvector__ostream.html#a1fb58f6861587fbb2aaf448bc8716510">  615</a></span>&#160;  <a class="code" href="classwpi_1_1ArrayRef.html">ArrayRef&lt;uint8_t&gt;</a> <a class="code" href="classwpi_1_1raw__usvector__ostream.html#a1fb58f6861587fbb2aaf448bc8716510">array</a>() { <span class="keywordflow">return</span> <a class="code" href="classwpi_1_1ArrayRef.html">ArrayRef&lt;uint8_t&gt;</a>(OS.data(), OS.size()); }</div>
 <div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;};</div>
 <div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160; </div>
 <div class="line"><a name="l00623"></a><span class="lineno"><a class="line" href="classwpi_1_1raw__uvector__ostream.html">  623</a></span>&#160;<span class="keyword">class </span><a class="code" href="classwpi_1_1raw__uvector__ostream.html">raw_uvector_ostream</a> : <span class="keyword">public</span> <a class="code" href="classwpi_1_1raw__pwrite__stream.html">raw_pwrite_stream</a> {</div>
@@ -622,7 +622,6 @@ $(document).ready(function(){initNavTree('raw__ostream_8h_source.html',''); init
 <div class="ttc" id="aclasswpi_1_1raw__ostream_html_aa4a39ffb16e40a429eb314efedf74e69"><div class="ttname"><a href="classwpi_1_1raw__ostream.html#aa4a39ffb16e40a429eb314efedf74e69">wpi::raw_ostream::SetUnbuffered</a></div><div class="ttdeci">void SetUnbuffered()</div><div class="ttdoc">Set the stream to be unbuffered.</div><div class="ttdef"><b>Definition:</b> raw_ostream.h:130</div></div>
 <div class="ttc" id="aclasswpi_1_1FormattedNumber_html"><div class="ttname"><a href="classwpi_1_1FormattedNumber.html">wpi::FormattedNumber</a></div><div class="ttdoc">This is a helper class used for format_hex() and format_decimal().</div><div class="ttdef"><b>Definition:</b> Format.h:172</div></div>
 <div class="ttc" id="aclasswpi_1_1format__object__base_html"><div class="ttname"><a href="classwpi_1_1format__object__base.html">wpi::format_object_base</a></div><div class="ttdoc">This is a helper class used for handling formatted output.</div><div class="ttdef"><b>Definition:</b> Format.h:39</div></div>
-<div class="ttc" id="aclasswpi_1_1SmallVectorTemplateCommon_html_a407d9019bf8ff07d493b57e89924ebb0"><div class="ttname"><a href="classwpi_1_1SmallVectorTemplateCommon.html#a407d9019bf8ff07d493b57e89924ebb0">wpi::SmallVectorTemplateCommon::data</a></div><div class="ttdeci">pointer data()</div><div class="ttdoc">Return a pointer to the vector's buffer, even if empty().</div><div class="ttdef"><b>Definition:</b> SmallVector.h:158</div></div>
 <div class="ttc" id="aclasswpi_1_1raw__string__ostream_html"><div class="ttname"><a href="classwpi_1_1raw__string__ostream.html">wpi::raw_string_ostream</a></div><div class="ttdoc">A raw_ostream that writes to an std::string.</div><div class="ttdef"><b>Definition:</b> raw_ostream.h:497</div></div>
 <div class="ttc" id="aclasswpi_1_1raw__null__ostream_html"><div class="ttname"><a href="classwpi_1_1raw__null__ostream.html">wpi::raw_null_ostream</a></div><div class="ttdoc">A raw_ostream that discards all output.</div><div class="ttdef"><b>Definition:</b> raw_ostream.h:653</div></div>
 <div class="ttc" id="aclasswpi_1_1raw__usvector__ostream_html"><div class="ttname"><a href="classwpi_1_1raw__usvector__ostream.html">wpi::raw_usvector_ostream</a></div><div class="ttdoc">A raw_ostream that writes to an SmallVector or SmallString.</div><div class="ttdef"><b>Definition:</b> raw_ostream.h:590</div></div>
@@ -651,7 +650,7 @@ $(document).ready(function(){initNavTree('raw__ostream_8h_source.html',''); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_ee3b12e3cc58cd62f356d078e112eeb4.html">wpiutil</a></li><li class="navelem"><a class="el" href="dir_0b37bdc985dfb85cd82ca92a771d9e04.html">src</a></li><li class="navelem"><a class="el" href="dir_19031513f3361c45d712cdc1c5b1f353.html">main</a></li><li class="navelem"><a class="el" href="dir_48410d5e596f2d65a12ffcdcda0be254.html">native</a></li><li class="navelem"><a class="el" href="dir_d01089097591e603100023951e2380fe.html">include</a></li><li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><b>raw_ostream.h</b></li>
-    <li class="footer">Generated on Thu Jan 14 2021 08:30:01 for WPILibC++ by
+    <li class="footer">Generated on Fri Jan 15 2021 04:02:50 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

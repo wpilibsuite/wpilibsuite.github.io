@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.1.2-14-g406d055</span>
+   &#160;<span id="projectnumber">2021.1.2-15-g7c52401</span>
    </div>
   </td>
  </tr>
@@ -156,7 +156,7 @@ $(document).ready(function(){initNavTree('Process_8h_source.html',''); initResiz
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">/*implicit*/</span> <a class="code" href="structwpi_1_1uv_1_1Process_1_1Option.html">Option</a>(<span class="keyword">const</span> <a class="code" href="classwpi_1_1SmallVectorImpl.html">SmallVectorImpl&lt;char&gt;</a>&amp; arg)  <span class="comment">// NOLINT</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        : m_strData(arg.<a class="code" href="classwpi_1_1SmallVectorTemplateCommon.html#a407d9019bf8ff07d493b57e89924ebb0">data</a>(), arg.size()) {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        : m_strData(arg.data(), arg.size()) {</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      m_data.str = m_strData.c_str();</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
@@ -310,7 +310,6 @@ $(document).ready(function(){initNavTree('Process_8h_source.html',''); initResiz
 <div class="ttc" id="aclasswpi_1_1uv_1_1Process_html_a79d4ccba3c34c6f42ed4fe52f0b417a6"><div class="ttname"><a href="classwpi_1_1uv_1_1Process.html#a79d4ccba3c34c6f42ed4fe52f0b417a6">wpi::uv::Process::DisableStdioInheritance</a></div><div class="ttdeci">static void DisableStdioInheritance()</div><div class="ttdoc">Disables inheritance for file descriptors / handles that this process inherited from its parent.</div><div class="ttdef"><b>Definition:</b> Process.h:224</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1Process_html_af1992440df0421d20a849feb0bbb572b"><div class="ttname"><a href="classwpi_1_1uv_1_1Process.html#af1992440df0421d20a849feb0bbb572b">wpi::uv::Process::Env</a></div><div class="ttdeci">static Option Env(const Twine &amp;env)</div><div class="ttdoc">Set environment variable for the subprocess.</div><div class="ttdef"><b>Definition:</b> Process.h:108</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1Process_html_a73c1861ec17b667824cc8aa773042d68"><div class="ttname"><a href="classwpi_1_1uv_1_1Process.html#a73c1861ec17b667824cc8aa773042d68">wpi::uv::Process::exited</a></div><div class="ttdeci">sig::Signal&lt; int64_t, int &gt; exited</div><div class="ttdoc">Signal generated when the process exits.</div><div class="ttdef"><b>Definition:</b> Process.h:309</div></div>
-<div class="ttc" id="aclasswpi_1_1SmallVectorTemplateCommon_html_a407d9019bf8ff07d493b57e89924ebb0"><div class="ttname"><a href="classwpi_1_1SmallVectorTemplateCommon.html#a407d9019bf8ff07d493b57e89924ebb0">wpi::SmallVectorTemplateCommon::data</a></div><div class="ttdeci">pointer data()</div><div class="ttdoc">Return a pointer to the vector's buffer, even if empty().</div><div class="ttdef"><b>Definition:</b> SmallVector.h:158</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1Process_html_ae6dab20bcbdca5d07ed7b1f5e39eb40a"><div class="ttname"><a href="classwpi_1_1uv_1_1Process.html#ae6dab20bcbdca5d07ed7b1f5e39eb40a">wpi::uv::Process::ClearFlags</a></div><div class="ttdeci">static Option ClearFlags(unsigned int flags)</div><div class="ttdoc">Clear spawn flags.</div><div class="ttdef"><b>Definition:</b> Process.h:160</div></div>
 <div class="ttc" id="astructwpi_1_1uv_1_1Process_1_1Option_html"><div class="ttname"><a href="structwpi_1_1uv_1_1Process_1_1Option.html">wpi::uv::Process::Option</a></div><div class="ttdoc">Structure for Spawn() option temporaries.</div><div class="ttdef"><b>Definition:</b> Process.h:42</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1Process_html_a1360fac3893b736edcbb677a4d92a775"><div class="ttname"><a href="classwpi_1_1uv_1_1Process.html#a1360fac3893b736edcbb677a4d92a775">wpi::uv::Process::StdioIgnore</a></div><div class="ttdeci">static Option StdioIgnore(size_t index)</div><div class="ttdoc">Explicitly ignore a stdio.</div><div class="ttdef"><b>Definition:</b> Process.h:170</div></div>
@@ -334,7 +333,7 @@ $(document).ready(function(){initNavTree('Process_8h_source.html',''); initResiz
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_ee3b12e3cc58cd62f356d078e112eeb4.html">wpiutil</a></li><li class="navelem"><a class="el" href="dir_0b37bdc985dfb85cd82ca92a771d9e04.html">src</a></li><li class="navelem"><a class="el" href="dir_19031513f3361c45d712cdc1c5b1f353.html">main</a></li><li class="navelem"><a class="el" href="dir_48410d5e596f2d65a12ffcdcda0be254.html">native</a></li><li class="navelem"><a class="el" href="dir_d01089097591e603100023951e2380fe.html">include</a></li><li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><a class="el" href="dir_25302867c2307ab8d43a1b1d664c1ea4.html">uv</a></li><li class="navelem"><b>Process.h</b></li>
-    <li class="footer">Generated on Thu Jan 14 2021 08:30:01 for WPILibC++ by
+    <li class="footer">Generated on Fri Jan 15 2021 04:02:50 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

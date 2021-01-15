@@ -247,7 +247,7 @@ var NAVTREEINDEX19 =
 "classhal_1_1impl_1_1SimDataValueBase.html#aa2990fca6503f0e9f81b8395f08d1d41":[5,0,4,0,1,4],
 "classhal_1_1impl_1_1SimDataValueBase.html#addfbad333e48d3bc0b930b916872004c":[5,0,4,0,1,7],
 "classhal_1_1impl_1_1SimDataValueBase.html#ae7433601b08d1c55e588638b22be2f7f":[5,0,4,0,1,8],
-"classnt_1_1ConnectionNotification.html":[3,3,16],
-"classnt_1_1ConnectionNotification.html#a2ef31fd07f9d7be03a5e6b0462addfa8":[3,3,16,1],
-"classnt_1_1ConnectionNotification.html#a8fff0cbd030936226424edeafb128dfa":[3,3,16,5]
+"classnt_1_1ConnectionNotification.html":[3,1,16],
+"classnt_1_1ConnectionNotification.html#a2ef31fd07f9d7be03a5e6b0462addfa8":[3,1,16,1],
+"classnt_1_1ConnectionNotification.html#a8fff0cbd030936226424edeafb128dfa":[3,1,16,5]
 };

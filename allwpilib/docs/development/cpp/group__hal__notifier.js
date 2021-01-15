@@ -6,5 +6,5 @@ var group__hal__notifier =
     [ "HAL_SetNotifierName", "group__hal__notifier.html#ga8e4040117e6562ac82a8e98912599a8a", null ],
     [ "HAL_StopNotifier", "group__hal__notifier.html#gab7bbf1b3d5eadf0c27b36f1dff7fa6d4", null ],
     [ "HAL_UpdateNotifierAlarm", "group__hal__notifier.html#ga72327a3f3c37f95ec4fbf9ba7c61380d", null ],
-    [ "HAL_WaitForNotifierAlarm", "group__hal__notifier.html#ga349a923ff7c51dde2e9bb739738f11ca", null ]
+    [ "HAL_WaitForNotifierAlarm", "group__hal__notifier.html#gaa07746b4e5448fe8a943d8d48013466c", null ]
 ];
