@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.1.2-16-gd6ed20c</span>
+   &#160;<span id="projectnumber">2021.1.2-18-g6efc58e</span>
    </div>
   </td>
  </tr>
@@ -99,9 +99,9 @@ $(document).ready(function(){initNavTree('classfrc_1_1ExtendedKalmanFilter.html'
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa052048e6d1f576ec50982e31f6f1faa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1ExtendedKalmanFilter.html#aa052048e6d1f576ec50982e31f6f1faa">ExtendedKalmanFilter</a> (std::function&lt; Eigen::Matrix&lt; double, States, 1 &gt;(const Eigen::Matrix&lt; double, States, 1 &gt; &amp;, const Eigen::Matrix&lt; double, Inputs, 1 &gt; &amp;)&gt; f, std::function&lt; Eigen::Matrix&lt; double, Outputs, 1 &gt;(const Eigen::Matrix&lt; double, States, 1 &gt; &amp;, const Eigen::Matrix&lt; double, Inputs, 1 &gt; &amp;)&gt; h, const std::array&lt; double, States &gt; &amp;stateStdDevs, const std::array&lt; double, Outputs &gt; &amp;measurementStdDevs, units::second_t dt)</td></tr>
-<tr class="memdesc:aa052048e6d1f576ec50982e31f6f1faa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an Extended Kalman filter.  <a href="classfrc_1_1ExtendedKalmanFilter.html#aa052048e6d1f576ec50982e31f6f1faa">More...</a><br /></td></tr>
-<tr class="separator:aa052048e6d1f576ec50982e31f6f1faa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8496ad06ed4d0d3e98aa18b13eb7a7c4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1ExtendedKalmanFilter.html#a8496ad06ed4d0d3e98aa18b13eb7a7c4">ExtendedKalmanFilter</a> (std::function&lt; Eigen::Matrix&lt; double, States, 1 &gt;(const Eigen::Matrix&lt; double, States, 1 &gt; &amp;, const Eigen::Matrix&lt; double, Inputs, 1 &gt; &amp;)&gt; f, std::function&lt; Eigen::Matrix&lt; double, Outputs, 1 &gt;(const Eigen::Matrix&lt; double, States, 1 &gt; &amp;, const Eigen::Matrix&lt; double, Inputs, 1 &gt; &amp;)&gt; h, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, States &gt; &amp;stateStdDevs, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, Outputs &gt; &amp;measurementStdDevs, units::second_t dt)</td></tr>
+<tr class="memdesc:a8496ad06ed4d0d3e98aa18b13eb7a7c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an Extended Kalman filter.  <a href="classfrc_1_1ExtendedKalmanFilter.html#a8496ad06ed4d0d3e98aa18b13eb7a7c4">More...</a><br /></td></tr>
+<tr class="separator:a8496ad06ed4d0d3e98aa18b13eb7a7c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaba4ddeffff8754437a04937df7f3e47"><td class="memItemLeft" align="right" valign="top"><a id="aaba4ddeffff8754437a04937df7f3e47"></a>
 const Eigen::Matrix&lt; double, States, States &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1ExtendedKalmanFilter.html#aaba4ddeffff8754437a04937df7f3e47">P</a> () const</td></tr>
 <tr class="memdesc:aaba4ddeffff8754437a04937df7f3e47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the error covariance matrix P. <br /></td></tr>
@@ -141,8 +141,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a9dad1ed47b3d741220c3ca870e97942f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aa052048e6d1f576ec50982e31f6f1faa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa052048e6d1f576ec50982e31f6f1faa">&#9670;&nbsp;</a></span>ExtendedKalmanFilter()</h2>
+<a id="a8496ad06ed4d0d3e98aa18b13eb7a7c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8496ad06ed4d0d3e98aa18b13eb7a7c4">&#9670;&nbsp;</a></span>ExtendedKalmanFilter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -167,13 +167,13 @@ template&lt;int States, int Inputs, int Outputs&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::array&lt; double, States &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, States &gt; &amp;&#160;</td>
           <td class="paramname"><em>stateStdDevs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::array&lt; double, Outputs &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, Outputs &gt; &amp;&#160;</td>
           <td class="paramname"><em>measurementStdDevs</em>, </td>
         </tr>
         <tr>
@@ -579,7 +579,7 @@ template&lt;int States, int Inputs, int Outputs&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1ExtendedKalmanFilter.html">ExtendedKalmanFilter</a></li>
-    <li class="footer">Generated on Fri Jan 15 2021 05:22:42 for WPILibC++ by
+    <li class="footer">Generated on Sun Jan 17 2021 04:28:49 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

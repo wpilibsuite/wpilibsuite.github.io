@@ -1,5 +1,17 @@
 var NAVTREEINDEX35 =
 {
+"group__hal__pdp.html#gae9ec745128f8bd0ebd52df376dc424b1":[3,0,20,8],
+"group__hal__ports.html":[3,0,30],
+"group__hal__ports.html#ga0834c59eb4cba11dabdc60145753b1c6":[3,0,30,16],
+"group__hal__ports.html#ga1094cd5deeb4607c8c8420f027004d28":[3,0,30,9],
+"group__hal__ports.html#ga25c6b2e7401ce5d8b4cb3ad2ecca9d16":[3,0,30,2],
+"group__hal__ports.html#ga2c372db73b25f485b870b1ba1e38660a":[3,0,30,4],
+"group__hal__ports.html#ga3f207b761554be4fceb82d8bc5d33f89":[3,0,30,7],
+"group__hal__ports.html#ga4121bca3cf2db1933fd2df812ace1677":[3,0,30,3],
+"group__hal__ports.html#ga50ead4cab628fd0f3773d81586dce6bc":[3,0,30,13],
+"group__hal__ports.html#ga5c72a1106b4e8ef39bfa17a2146e93eb":[3,0,30,6],
+"group__hal__ports.html#ga5daf68b1d8bdc5a2e04f5c0ba84ce6fa":[3,0,30,15],
+"group__hal__ports.html#ga7867d08ba3d3418edcc7c4c2a72d9ca5":[3,0,30,17],
 "group__hal__ports.html#ga8232fc3204c36875eab4836aec4b9193":[3,0,30,1],
 "group__hal__ports.html#ga8becf79bdde5e0a9216657075fe7a44f":[3,0,30,0],
 "group__hal__ports.html#ga8daf11e4908e27c2663dd75eb4359241":[3,0,30,5],
@@ -237,17 +249,5 @@ var NAVTREEINDEX35 =
 "group__ntcore__logger__cfunc.html":[3,2,8],
 "group__ntcore__logger__cfunc.html#ga01ae637d780a30b7e491fe0f1ab367de":[3,2,8,6],
 "group__ntcore__logger__cfunc.html#ga0a9c5c32c23466b02558b2dd5aae593b":[3,2,8,0],
-"group__ntcore__logger__cfunc.html#ga0d59625cf5b269e5690dcc2ff7197ac7":[3,2,8,7],
-"group__ntcore__logger__cfunc.html#ga28678881c133ffe87f91f621b5558cee":[3,2,8,1],
-"group__ntcore__logger__cfunc.html#ga52f5816a793c4327333f6aebfbf541ba":[3,2,8,5],
-"group__ntcore__logger__cfunc.html#gaaaf0d1c5efd341c80fb2ced526b53adf":[3,2,8,8],
-"group__ntcore__logger__cfunc.html#gab43666f384d6e2a149f93e18e3402cbb":[3,2,8,3],
-"group__ntcore__logger__cfunc.html#gab73de0e404687276b238f4a028606a49":[3,2,8,4],
-"group__ntcore__logger__cfunc.html#gabe1855920ae23107016f7c8b9917a6c0":[3,2,8,9],
-"group__ntcore__logger__cfunc.html#gaed63e3bae15ba09927e1866a0f07e83c":[3,2,8,2],
-"group__ntcore__logger__func.html":[3,1,8],
-"group__ntcore__logger__func.html#ga03fdd165c8996cd5f0f7e39a9ade192d":[3,1,8,9],
-"group__ntcore__logger__func.html#ga0941bdeffbe679fa463f30c674e4a203":[3,1,8,4],
-"group__ntcore__logger__func.html#ga4fae112bec6981b6636e7999aa40ed92":[3,1,8,10],
-"group__ntcore__logger__func.html#ga8171c7719887be8c60df6fbbf8408399":[3,1,8,1]
+"group__ntcore__logger__cfunc.html#ga0d59625cf5b269e5690dcc2ff7197ac7":[3,2,8,7]
 };

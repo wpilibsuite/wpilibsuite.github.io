@@ -1,5 +1,6 @@
 var NAVTREEINDEX18 =
 {
+"classfrc_1_1sim_1_1DifferentialDrivetrainSim_1_1KitbotMotor.html":[5,0,2,1,10,1],
 "classfrc_1_1sim_1_1DifferentialDrivetrainSim_1_1KitbotMotor.html#a9c30611f3d11df00bf283da66b02ec36":[5,0,2,1,10,1,3],
 "classfrc_1_1sim_1_1DifferentialDrivetrainSim_1_1KitbotMotor.html#aac8a1db6575a2ee04b368f434a6114d1":[5,0,2,1,10,1,2],
 "classfrc_1_1sim_1_1DifferentialDrivetrainSim_1_1KitbotMotor.html#ab0ff634b39051e7a55ae7ca55d9aee96":[5,0,2,1,10,1,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX18 =
 "classfrc_1_1sim_1_1PWMSim.html#a3ee4bdd367a3bcdce2e275569dacbb0f":[5,0,2,1,24,4],
 "classfrc_1_1sim_1_1PWMSim.html#a4f1610eb00be3bc8bca2c0455535afca":[5,0,2,1,24,12],
 "classfrc_1_1sim_1_1PWMSim.html#a5052ab89e45578510b07332ec715277d":[5,0,2,1,24,9],
-"classfrc_1_1sim_1_1PWMSim.html#a5fb1e97b9af901c4e84a5560d4587cdc":[5,0,2,1,24,10],
-"classfrc_1_1sim_1_1PWMSim.html#a647a638ec93285bf3c3c8565f544bfaf":[5,0,2,1,24,5]
+"classfrc_1_1sim_1_1PWMSim.html#a5fb1e97b9af901c4e84a5560d4587cdc":[5,0,2,1,24,10]
 };

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.1.2-16-gd6ed20c</span>
+   &#160;<span id="projectnumber">2021.1.2-18-g6efc58e</span>
    </div>
   </td>
  </tr>
@@ -99,63 +99,65 @@ $(document).ready(function(){initNavTree('SplineHelper_8h_source.html',''); init
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;array&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;utility&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;frc/spline/CubicHermiteSpline.h&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;frc/spline/QuinticHermiteSpline.h&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacefrc.html">frc</a> {</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classfrc_1_1SplineHelper.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1SplineHelper.html">SplineHelper</a> {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keyword">static</span> std::array&lt;Spline&lt;3&gt;::ControlVector, 2&gt;</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classfrc_1_1SplineHelper.html#af2e4c4c196729ef1ae7d10c522cbc7a7">   31</a></span>&#160;  <a class="code" href="classfrc_1_1SplineHelper.html#af2e4c4c196729ef1ae7d10c522cbc7a7">CubicControlVectorsFromWaypoints</a>(</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      <span class="keyword">const</span> <a class="code" href="classfrc_1_1Pose2d.html">Pose2d</a>&amp; start, <span class="keyword">const</span> std::vector&lt;Translation2d&gt;&amp; interiorWaypoints,</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      <span class="keyword">const</span> <a class="code" href="classfrc_1_1Pose2d.html">Pose2d</a>&amp; end);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classfrc_1_1SplineHelper.html#af1b57c0205789a127f32dcfca8f894fd">   41</a></span>&#160;  <span class="keyword">static</span> std::vector&lt;QuinticHermiteSpline&gt; <a class="code" href="classfrc_1_1SplineHelper.html#af1b57c0205789a127f32dcfca8f894fd">QuinticSplinesFromWaypoints</a>(</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      <span class="keyword">const</span> std::vector&lt;Pose2d&gt;&amp; waypoints);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classfrc_1_1SplineHelper.html#a116cb7a1bc80b4ac818018a4f3758250">   61</a></span>&#160;  <span class="keyword">static</span> std::vector&lt;CubicHermiteSpline&gt; <a class="code" href="classfrc_1_1SplineHelper.html#a116cb7a1bc80b4ac818018a4f3758250">CubicSplinesFromControlVectors</a>(</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <span class="keyword">const</span> <a class="code" href="classfrc_1_1Spline.html">Spline&lt;3&gt;::ControlVector</a>&amp; start,</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      std::vector&lt;Translation2d&gt; waypoints,</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      <span class="keyword">const</span> <a class="code" href="classfrc_1_1Spline.html">Spline&lt;3&gt;::ControlVector</a>&amp; end);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="classfrc_1_1SplineHelper.html#a6b72f5212a0d0012eb62102c97f62d38">   75</a></span>&#160;  <span class="keyword">static</span> std::vector&lt;QuinticHermiteSpline&gt; <a class="code" href="classfrc_1_1SplineHelper.html#a6b72f5212a0d0012eb62102c97f62d38">QuinticSplinesFromControlVectors</a>(</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      <span class="keyword">const</span> std::vector&lt;<a class="code" href="classfrc_1_1Spline.html">Spline&lt;5&gt;::ControlVector</a>&gt;&amp; controlVectors);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keyword">static</span> <a class="code" href="classfrc_1_1Spline.html">Spline&lt;3&gt;::ControlVector</a> CubicControlVector(<span class="keywordtype">double</span> scalar,</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                                                     <span class="keyword">const</span> <a class="code" href="classfrc_1_1Pose2d.html">Pose2d</a>&amp; point) {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">return</span> {{point.<a class="code" href="classfrc_1_1Pose2d.html#a24e0ea6b41a5b36ce9fbedb2bd774047">X</a>().to&lt;<span class="keywordtype">double</span>&gt;(), scalar * point.<a class="code" href="classfrc_1_1Pose2d.html#a7e855bba46f3a0f83e098527a7588398">Rotation</a>().<a class="code" href="classfrc_1_1Rotation2d.html#a0f562fbf812faf44f82810702740d19e">Cos</a>()},</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            {point.<a class="code" href="classfrc_1_1Pose2d.html#ad4cf5b44f1623e2b6d62323834a6a996">Y</a>().to&lt;<span class="keywordtype">double</span>&gt;(), scalar * point.<a class="code" href="classfrc_1_1Pose2d.html#a7e855bba46f3a0f83e098527a7588398">Rotation</a>().<a class="code" href="classfrc_1_1Rotation2d.html#a81dea185393032702fdb17ddcc917c63">Sin</a>()}};</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  }</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keyword">static</span> Spline&lt;5&gt;::ControlVector QuinticControlVector(<span class="keywordtype">double</span> scalar,</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                                                       <span class="keyword">const</span> Pose2d&amp; point) {</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">return</span> {{point.X().to&lt;<span class="keywordtype">double</span>&gt;(), scalar * point.Rotation().Cos(), 0.0},</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            {point.Y().to&lt;<span class="keywordtype">double</span>&gt;(), scalar * point.Rotation().Sin(), 0.0}};</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  }</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> ThomasAlgorithm(<span class="keyword">const</span> std::vector&lt;double&gt;&amp; a,</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                              <span class="keyword">const</span> std::vector&lt;double&gt;&amp; b,</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                              <span class="keyword">const</span> std::vector&lt;double&gt;&amp; c,</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                              <span class="keyword">const</span> std::vector&lt;double&gt;&amp; d,</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                              std::vector&lt;double&gt;* solutionVector);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;};</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;utility&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;wpi/array.h&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;frc/spline/CubicHermiteSpline.h&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;frc/spline/QuinticHermiteSpline.h&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacefrc.html">frc</a> {</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classfrc_1_1SplineHelper.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1SplineHelper.html">SplineHelper</a> {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">static</span> <a class="code" href="classwpi_1_1array.html">wpi::array&lt;Spline&lt;3&gt;::ControlVector</a>, 2&gt;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classfrc_1_1SplineHelper.html#adca90daf179719dfbec62b4a6d5ca209">   32</a></span>&#160;  <a class="code" href="classfrc_1_1SplineHelper.html#adca90daf179719dfbec62b4a6d5ca209">CubicControlVectorsFromWaypoints</a>(</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      <span class="keyword">const</span> <a class="code" href="classfrc_1_1Pose2d.html">Pose2d</a>&amp; start, <span class="keyword">const</span> std::vector&lt;Translation2d&gt;&amp; interiorWaypoints,</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      <span class="keyword">const</span> <a class="code" href="classfrc_1_1Pose2d.html">Pose2d</a>&amp; end);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classfrc_1_1SplineHelper.html#af1b57c0205789a127f32dcfca8f894fd">   42</a></span>&#160;  <span class="keyword">static</span> std::vector&lt;QuinticHermiteSpline&gt; <a class="code" href="classfrc_1_1SplineHelper.html#af1b57c0205789a127f32dcfca8f894fd">QuinticSplinesFromWaypoints</a>(</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      <span class="keyword">const</span> std::vector&lt;Pose2d&gt;&amp; waypoints);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classfrc_1_1SplineHelper.html#a116cb7a1bc80b4ac818018a4f3758250">   62</a></span>&#160;  <span class="keyword">static</span> std::vector&lt;CubicHermiteSpline&gt; <a class="code" href="classfrc_1_1SplineHelper.html#a116cb7a1bc80b4ac818018a4f3758250">CubicSplinesFromControlVectors</a>(</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      <span class="keyword">const</span> <a class="code" href="classfrc_1_1Spline.html">Spline&lt;3&gt;::ControlVector</a>&amp; start,</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      std::vector&lt;Translation2d&gt; waypoints,</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      <span class="keyword">const</span> <a class="code" href="classfrc_1_1Spline.html">Spline&lt;3&gt;::ControlVector</a>&amp; end);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classfrc_1_1SplineHelper.html#a6b72f5212a0d0012eb62102c97f62d38">   76</a></span>&#160;  <span class="keyword">static</span> std::vector&lt;QuinticHermiteSpline&gt; <a class="code" href="classfrc_1_1SplineHelper.html#a6b72f5212a0d0012eb62102c97f62d38">QuinticSplinesFromControlVectors</a>(</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <span class="keyword">const</span> std::vector&lt;<a class="code" href="classfrc_1_1Spline.html">Spline&lt;5&gt;::ControlVector</a>&gt;&amp; controlVectors);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keyword">static</span> <a class="code" href="classfrc_1_1Spline.html">Spline&lt;3&gt;::ControlVector</a> CubicControlVector(<span class="keywordtype">double</span> scalar,</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                                                     <span class="keyword">const</span> <a class="code" href="classfrc_1_1Pose2d.html">Pose2d</a>&amp; point) {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">return</span> {{point.<a class="code" href="classfrc_1_1Pose2d.html#a24e0ea6b41a5b36ce9fbedb2bd774047">X</a>().to&lt;<span class="keywordtype">double</span>&gt;(), scalar * point.<a class="code" href="classfrc_1_1Pose2d.html#a7e855bba46f3a0f83e098527a7588398">Rotation</a>().<a class="code" href="classfrc_1_1Rotation2d.html#a0f562fbf812faf44f82810702740d19e">Cos</a>()},</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            {point.<a class="code" href="classfrc_1_1Pose2d.html#ad4cf5b44f1623e2b6d62323834a6a996">Y</a>().to&lt;<span class="keywordtype">double</span>&gt;(), scalar * point.<a class="code" href="classfrc_1_1Pose2d.html#a7e855bba46f3a0f83e098527a7588398">Rotation</a>().<a class="code" href="classfrc_1_1Rotation2d.html#a81dea185393032702fdb17ddcc917c63">Sin</a>()}};</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keyword">static</span> Spline&lt;5&gt;::ControlVector QuinticControlVector(<span class="keywordtype">double</span> scalar,</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                                                       <span class="keyword">const</span> Pose2d&amp; point) {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">return</span> {{point.X().to&lt;<span class="keywordtype">double</span>&gt;(), scalar * point.Rotation().Cos(), 0.0},</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            {point.Y().to&lt;<span class="keywordtype">double</span>&gt;(), scalar * point.Rotation().Sin(), 0.0}};</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> ThomasAlgorithm(<span class="keyword">const</span> std::vector&lt;double&gt;&amp; a,</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                              <span class="keyword">const</span> std::vector&lt;double&gt;&amp; b,</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                              <span class="keyword">const</span> std::vector&lt;double&gt;&amp; c,</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                              <span class="keyword">const</span> std::vector&lt;double&gt;&amp; d,</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                              std::vector&lt;double&gt;* solutionVector);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;};</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}  <span class="comment">// namespace frc</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassfrc_1_1Spline_html"><div class="ttname"><a href="classfrc_1_1Spline.html">frc::Spline</a></div><div class="ttdoc">Represents a two-dimensional parametric spline that interpolates between two points.</div><div class="ttdef"><b>Definition:</b> Spline.h:24</div></div>
+<div class="ttc" id="aclassfrc_1_1Spline_html"><div class="ttname"><a href="classfrc_1_1Spline.html">frc::Spline</a></div><div class="ttdoc">Represents a two-dimensional parametric spline that interpolates between two points.</div><div class="ttdef"><b>Definition:</b> Spline.h:25</div></div>
 <div class="ttc" id="aclassfrc_1_1SplineHelper_html_a116cb7a1bc80b4ac818018a4f3758250"><div class="ttname"><a href="classfrc_1_1SplineHelper.html#a116cb7a1bc80b4ac818018a4f3758250">frc::SplineHelper::CubicSplinesFromControlVectors</a></div><div class="ttdeci">static std::vector&lt; CubicHermiteSpline &gt; CubicSplinesFromControlVectors(const Spline&lt; 3 &gt;::ControlVector &amp;start, std::vector&lt; Translation2d &gt; waypoints, const Spline&lt; 3 &gt;::ControlVector &amp;end)</div><div class="ttdoc">Returns a set of cubic splines corresponding to the provided control vectors.</div></div>
 <div class="ttc" id="aclassfrc_1_1Rotation2d_html_a0f562fbf812faf44f82810702740d19e"><div class="ttname"><a href="classfrc_1_1Rotation2d.html#a0f562fbf812faf44f82810702740d19e">frc::Rotation2d::Cos</a></div><div class="ttdeci">double Cos() const</div><div class="ttdoc">Returns the cosine of the rotation.</div><div class="ttdef"><b>Definition:</b> Rotation2d.h:164</div></div>
-<div class="ttc" id="aclassfrc_1_1SplineHelper_html"><div class="ttname"><a href="classfrc_1_1SplineHelper.html">frc::SplineHelper</a></div><div class="ttdoc">Helper class that is used to generate cubic and quintic splines from user provided waypoints.</div><div class="ttdef"><b>Definition:</b> SplineHelper.h:19</div></div>
+<div class="ttc" id="aclasswpi_1_1array_html"><div class="ttname"><a href="classwpi_1_1array.html">wpi::array</a></div><div class="ttdoc">This class is a wrapper around std::array that does compile time size checking.</div><div class="ttdef"><b>Definition:</b> array.h:25</div></div>
+<div class="ttc" id="aclassfrc_1_1SplineHelper_html"><div class="ttname"><a href="classfrc_1_1SplineHelper.html">frc::SplineHelper</a></div><div class="ttdoc">Helper class that is used to generate cubic and quintic splines from user provided waypoints.</div><div class="ttdef"><b>Definition:</b> SplineHelper.h:20</div></div>
 <div class="ttc" id="aclassfrc_1_1Pose2d_html_a24e0ea6b41a5b36ce9fbedb2bd774047"><div class="ttname"><a href="classfrc_1_1Pose2d.html#a24e0ea6b41a5b36ce9fbedb2bd774047">frc::Pose2d::X</a></div><div class="ttdeci">units::meter_t X() const</div><div class="ttdoc">Returns the X component of the pose's translation.</div><div class="ttdef"><b>Definition:</b> Pose2d.h:108</div></div>
 <div class="ttc" id="aclassfrc_1_1Pose2d_html"><div class="ttname"><a href="classfrc_1_1Pose2d.html">frc::Pose2d</a></div><div class="ttdoc">Represents a 2d pose containing translational and rotational elements.</div><div class="ttdef"><b>Definition:</b> Pose2d.h:20</div></div>
 <div class="ttc" id="aclassfrc_1_1Rotation2d_html_a81dea185393032702fdb17ddcc917c63"><div class="ttname"><a href="classfrc_1_1Rotation2d.html#a81dea185393032702fdb17ddcc917c63">frc::Rotation2d::Sin</a></div><div class="ttdeci">double Sin() const</div><div class="ttdoc">Returns the sine of the rotation.</div><div class="ttdef"><b>Definition:</b> Rotation2d.h:171</div></div>
 <div class="ttc" id="aclassfrc_1_1Pose2d_html_a7e855bba46f3a0f83e098527a7588398"><div class="ttname"><a href="classfrc_1_1Pose2d.html#a7e855bba46f3a0f83e098527a7588398">frc::Pose2d::Rotation</a></div><div class="ttdeci">const Rotation2d &amp; Rotation() const</div><div class="ttdoc">Returns the underlying rotation.</div><div class="ttdef"><b>Definition:</b> Pose2d.h:122</div></div>
-<div class="ttc" id="aclassfrc_1_1SplineHelper_html_af2e4c4c196729ef1ae7d10c522cbc7a7"><div class="ttname"><a href="classfrc_1_1SplineHelper.html#af2e4c4c196729ef1ae7d10c522cbc7a7">frc::SplineHelper::CubicControlVectorsFromWaypoints</a></div><div class="ttdeci">static std::array&lt; Spline&lt; 3 &gt;::ControlVector, 2 &gt; CubicControlVectorsFromWaypoints(const Pose2d &amp;start, const std::vector&lt; Translation2d &gt; &amp;interiorWaypoints, const Pose2d &amp;end)</div><div class="ttdoc">Returns 2 cubic control vectors from a set of exterior waypoints and interior translations.</div></div>
+<div class="ttc" id="aclassfrc_1_1SplineHelper_html_adca90daf179719dfbec62b4a6d5ca209"><div class="ttname"><a href="classfrc_1_1SplineHelper.html#adca90daf179719dfbec62b4a6d5ca209">frc::SplineHelper::CubicControlVectorsFromWaypoints</a></div><div class="ttdeci">static wpi::array&lt; Spline&lt; 3 &gt;::ControlVector, 2 &gt; CubicControlVectorsFromWaypoints(const Pose2d &amp;start, const std::vector&lt; Translation2d &gt; &amp;interiorWaypoints, const Pose2d &amp;end)</div><div class="ttdoc">Returns 2 cubic control vectors from a set of exterior waypoints and interior translations.</div></div>
 <div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> CameraServer.inc:12</div></div>
 <div class="ttc" id="aclassfrc_1_1Pose2d_html_ad4cf5b44f1623e2b6d62323834a6a996"><div class="ttname"><a href="classfrc_1_1Pose2d.html#ad4cf5b44f1623e2b6d62323834a6a996">frc::Pose2d::Y</a></div><div class="ttdeci">units::meter_t Y() const</div><div class="ttdoc">Returns the Y component of the pose's translation.</div><div class="ttdef"><b>Definition:</b> Pose2d.h:115</div></div>
 <div class="ttc" id="aclassfrc_1_1SplineHelper_html_af1b57c0205789a127f32dcfca8f894fd"><div class="ttname"><a href="classfrc_1_1SplineHelper.html#af1b57c0205789a127f32dcfca8f894fd">frc::SplineHelper::QuinticSplinesFromWaypoints</a></div><div class="ttdeci">static std::vector&lt; QuinticHermiteSpline &gt; QuinticSplinesFromWaypoints(const std::vector&lt; Pose2d &gt; &amp;waypoints)</div><div class="ttdoc">Returns quintic splines from a set of waypoints.</div></div>
@@ -164,7 +166,7 @@ $(document).ready(function(){initNavTree('SplineHelper_8h_source.html',''); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e81593cd22a74c0453b864f226c84e9d.html">wpimath</a></li><li class="navelem"><a class="el" href="dir_4a07e7e34c3309db4f2aee20318c365b.html">src</a></li><li class="navelem"><a class="el" href="dir_37ee524af24664d12db3cd06c96f93b9.html">main</a></li><li class="navelem"><a class="el" href="dir_0741e1c35aa739ecce87b7ca77560051.html">native</a></li><li class="navelem"><a class="el" href="dir_e7b4e55b90254cfe62f0cb6fe1aed23c.html">include</a></li><li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_d71b639942242251bb415aa2ae346d4f.html">spline</a></li><li class="navelem"><b>SplineHelper.h</b></li>
-    <li class="footer">Generated on Fri Jan 15 2021 05:22:40 for WPILibC++ by
+    <li class="footer">Generated on Sun Jan 17 2021 04:28:47 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

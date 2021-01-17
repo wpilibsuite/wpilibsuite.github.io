@@ -1,5 +1,6 @@
 var NAVTREEINDEX19 =
 {
+"classfrc_1_1sim_1_1PWMSim.html#a647a638ec93285bf3c3c8565f544bfaf":[5,0,2,1,24,5],
 "classfrc_1_1sim_1_1PWMSim.html#a6f480a1405b4a7286a73ef908802f4da":[5,0,2,1,24,8],
 "classfrc_1_1sim_1_1PWMSim.html#a7af8473c7c0e93f1482f4000c1fff805":[5,0,2,1,24,17],
 "classfrc_1_1sim_1_1PWMSim.html#a834f30b74c5d8c7225562f1dad02977f":[5,0,2,1,24,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX19 =
 "classhal_1_1impl_1_1SimDataValueBase.html#addfbad333e48d3bc0b930b916872004c":[5,0,4,0,1,7],
 "classhal_1_1impl_1_1SimDataValueBase.html#ae7433601b08d1c55e588638b22be2f7f":[5,0,4,0,1,8],
 "classnt_1_1ConnectionNotification.html":[3,1,16],
-"classnt_1_1ConnectionNotification.html#a2ef31fd07f9d7be03a5e6b0462addfa8":[3,1,16,1],
-"classnt_1_1ConnectionNotification.html#a8fff0cbd030936226424edeafb128dfa":[3,1,16,5]
+"classnt_1_1ConnectionNotification.html#a2ef31fd07f9d7be03a5e6b0462addfa8":[3,1,16,1]
 };

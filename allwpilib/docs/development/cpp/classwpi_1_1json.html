@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.1.2-16-gd6ed20c</span>
+   &#160;<span id="projectnumber">2021.1.2-18-g6efc58e</span>
    </div>
   </td>
  </tr>
@@ -1557,7 +1557,7 @@ template&lt;typename CompatibleType , typename U  = detail::uncvref_t&lt;Compati
 <p>@complexity Linear in the size of the initializer list <em>init</em>.</p>
 <p>@exceptionsafety Strong guarantee: if an exception is thrown, there are no changes to any JSON value.</p>
 <p>@liveexample{The example below shows how JSON values are created from initializer lists.,json__list_init_t}</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classwpi_1_1json.html#a1df2f83e3c8bc5c40efe756f85886fc7">array(initializer_list_t)</a> &ndash; create a JSON <a class="el" href="classwpi_1_1json.html#a1df2f83e3c8bc5c40efe756f85886fc7" title="explicitly create an array from an initializer list">array</a> <a class="el" href="classwpi_1_1json.html#a50961342ef794c2a8d3387f2f72b16a4" title="access specified object element with default value">value</a> from an initializer list </dd>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classwpi_1_1json.html#a1df2f83e3c8bc5c40efe756f85886fc7">array(initializer_list_t)</a> &ndash; create a JSON <a class="el" href="classwpi_1_1array.html" title="This class is a wrapper around std::array that does compile time size checking.">array</a> <a class="el" href="classwpi_1_1json.html#a50961342ef794c2a8d3387f2f72b16a4" title="access specified object element with default value">value</a> from an initializer list </dd>
 <dd>
 <a class="el" href="classwpi_1_1json.html#acf80d4d319d63291e24e3536f6c37bbc">object(initializer_list_t)</a> &ndash; create a JSON <a class="el" href="classwpi_1_1json.html#acf80d4d319d63291e24e3536f6c37bbc" title="explicitly create an object from an initializer list">object</a> <a class="el" href="classwpi_1_1json.html#a50961342ef794c2a8d3387f2f72b16a4" title="access specified object element with default value">value</a> from an initializer list</dd></dl>
 <dl class="section since"><dt>Since</dt><dd>version 1.0.0 </dd></dl>
@@ -3043,7 +3043,7 @@ erase() with null"</code> </td></tr>
 <dd>
 erase(const typename object_t::key_type&amp;) &ndash; removes the element from an <a class="el" href="classwpi_1_1json.html#acf80d4d319d63291e24e3536f6c37bbc" title="explicitly create an object from an initializer list">object</a> <a class="el" href="classwpi_1_1json.html#a99be415a916dc9d23df458ff26095ce9" title="access specified array element with bounds checking">at</a> the given key </dd>
 <dd>
-<a class="el" href="classwpi_1_1json.html#aab5b8ae52d39c64738a4347cd98159a6">erase(const size_type)</a> &ndash; removes the element from an <a class="el" href="classwpi_1_1json.html#a1df2f83e3c8bc5c40efe756f85886fc7" title="explicitly create an array from an initializer list">array</a> <a class="el" href="classwpi_1_1json.html#a99be415a916dc9d23df458ff26095ce9" title="access specified array element with bounds checking">at</a> the given index</dd></dl>
+<a class="el" href="classwpi_1_1json.html#aab5b8ae52d39c64738a4347cd98159a6">erase(const size_type)</a> &ndash; removes the element from an <a class="el" href="classwpi_1_1array.html" title="This class is a wrapper around std::array that does compile time size checking.">array</a> <a class="el" href="classwpi_1_1json.html#a99be415a916dc9d23df458ff26095ce9" title="access specified array element with bounds checking">at</a> the given index</dd></dl>
 <dl class="section since"><dt>Since</dt><dd>version 1.0.0 </dd></dl>
 
 </div>
@@ -3112,7 +3112,7 @@ out of range"</code></td></tr>
 <dd>
 <a class="el" href="classwpi_1_1json.html#acea979a75b9a37f2a677fffef1919821">erase(StringRef)</a> &ndash; removes the element from an <a class="el" href="classwpi_1_1json.html#acf80d4d319d63291e24e3536f6c37bbc" title="explicitly create an object from an initializer list">object</a> <a class="el" href="classwpi_1_1json.html#a99be415a916dc9d23df458ff26095ce9" title="access specified array element with bounds checking">at</a> the given key </dd>
 <dd>
-<a class="el" href="classwpi_1_1json.html#aab5b8ae52d39c64738a4347cd98159a6">erase(const size_type)</a> &ndash; removes the element from an <a class="el" href="classwpi_1_1json.html#a1df2f83e3c8bc5c40efe756f85886fc7" title="explicitly create an array from an initializer list">array</a> <a class="el" href="classwpi_1_1json.html#a99be415a916dc9d23df458ff26095ce9" title="access specified array element with bounds checking">at</a> the given index</dd></dl>
+<a class="el" href="classwpi_1_1json.html#aab5b8ae52d39c64738a4347cd98159a6">erase(const size_type)</a> &ndash; removes the element from an <a class="el" href="classwpi_1_1array.html" title="This class is a wrapper around std::array that does compile time size checking.">array</a> <a class="el" href="classwpi_1_1json.html#a99be415a916dc9d23df458ff26095ce9" title="access specified array element with bounds checking">at</a> the given index</dd></dl>
 <dl class="section since"><dt>Since</dt><dd>version 1.0.0 </dd></dl>
 
 </div>
@@ -3155,7 +3155,7 @@ out of range"</code></td></tr>
 <dd>
 <a class="el" href="classwpi_1_1json.html#af25fed127f0d16d6a8e6eb33b2e627e7">erase(IteratorType, IteratorType)</a> &ndash; removes the elements in the given range </dd>
 <dd>
-<a class="el" href="classwpi_1_1json.html#aab5b8ae52d39c64738a4347cd98159a6">erase(const size_type)</a> &ndash; removes the element from an <a class="el" href="classwpi_1_1json.html#a1df2f83e3c8bc5c40efe756f85886fc7" title="explicitly create an array from an initializer list">array</a> <a class="el" href="classwpi_1_1json.html#a99be415a916dc9d23df458ff26095ce9" title="access specified array element with bounds checking">at</a> the given index</dd></dl>
+<a class="el" href="classwpi_1_1json.html#aab5b8ae52d39c64738a4347cd98159a6">erase(const size_type)</a> &ndash; removes the element from an <a class="el" href="classwpi_1_1array.html" title="This class is a wrapper around std::array that does compile time size checking.">array</a> <a class="el" href="classwpi_1_1json.html#a99be415a916dc9d23df458ff26095ce9" title="access specified array element with bounds checking">at</a> the given index</dd></dl>
 <dl class="section since"><dt>Since</dt><dd>version 1.0.0 </dd></dl>
 
 </div>
@@ -5050,7 +5050,7 @@ belong to container"</code></td></tr>
 <p>@liveexample{The following code exemplifies <code><a class="el" href="classwpi_1_1json.html#a72a12f87b24fe19945ddd9ab29c693f2" title="return whether type is structured">is_structured()</a></code> for all JSON types.,is_structured}</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classwpi_1_1json.html#a57b8517df13caf1953705abb3c99c0b8">is_primitive()</a> &ndash; returns whether <a class="el" href="classwpi_1_1json.html#a50961342ef794c2a8d3387f2f72b16a4" title="access specified object element with default value">value</a> is primitive </dd>
 <dd>
-<a class="el" href="classwpi_1_1json.html#ac609abf5d11cafdd8ef86b51855c1cff">is_array()</a> &ndash; returns whether <a class="el" href="classwpi_1_1json.html#a50961342ef794c2a8d3387f2f72b16a4" title="access specified object element with default value">value</a> is an <a class="el" href="classwpi_1_1json.html#a1df2f83e3c8bc5c40efe756f85886fc7" title="explicitly create an array from an initializer list">array</a> </dd>
+<a class="el" href="classwpi_1_1json.html#ac609abf5d11cafdd8ef86b51855c1cff">is_array()</a> &ndash; returns whether <a class="el" href="classwpi_1_1json.html#a50961342ef794c2a8d3387f2f72b16a4" title="access specified object element with default value">value</a> is an <a class="el" href="classwpi_1_1array.html" title="This class is a wrapper around std::array that does compile time size checking.">array</a> </dd>
 <dd>
 <a class="el" href="classwpi_1_1json.html#ad9bba2e624678133a1616cc01cc09943">is_object()</a> &ndash; returns whether <a class="el" href="classwpi_1_1json.html#a50961342ef794c2a8d3387f2f72b16a4" title="access specified object element with default value">value</a> is an <a class="el" href="classwpi_1_1json.html#acf80d4d319d63291e24e3536f6c37bbc" title="explicitly create an object from an initializer list">object</a></dd></dl>
 <dl class="section since"><dt>Since</dt><dd>version 1.0.0 </dd></dl>
@@ -5354,7 +5354,7 @@ belong to container"</code></td></tr>
 <p>@liveexample{The following code shows an example for the <code>object</code> function.,object}</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classwpi_1_1json.html#a2b5f56d17d9b2bc3752595703d2135b0">json(initializer_list_t, bool, value_t)</a> &ndash; create a JSON <a class="el" href="classwpi_1_1json.html#a50961342ef794c2a8d3387f2f72b16a4" title="access specified object element with default value">value</a> from an initializer list </dd>
 <dd>
-<a class="el" href="classwpi_1_1json.html#a1df2f83e3c8bc5c40efe756f85886fc7">array(initializer_list_t)</a> &ndash; create a JSON <a class="el" href="classwpi_1_1json.html#a1df2f83e3c8bc5c40efe756f85886fc7" title="explicitly create an array from an initializer list">array</a> <a class="el" href="classwpi_1_1json.html#a50961342ef794c2a8d3387f2f72b16a4" title="access specified object element with default value">value</a> from an initializer list</dd></dl>
+<a class="el" href="classwpi_1_1json.html#a1df2f83e3c8bc5c40efe756f85886fc7">array(initializer_list_t)</a> &ndash; create a JSON <a class="el" href="classwpi_1_1array.html" title="This class is a wrapper around std::array that does compile time size checking.">array</a> <a class="el" href="classwpi_1_1json.html#a50961342ef794c2a8d3387f2f72b16a4" title="access specified object element with default value">value</a> from an initializer list</dd></dl>
 <dl class="section since"><dt>Since</dt><dd>version 1.0.0 </dd></dl>
 
 </div>
@@ -8754,7 +8754,7 @@ template&lt;typename ScalarType , typename std::enable_if&lt; std::is_scalar&lt;
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>wpi</b></li><li class="navelem"><a class="el" href="classwpi_1_1json.html">json</a></li>
-    <li class="footer">Generated on Fri Jan 15 2021 05:22:45 for WPILibC++ by
+    <li class="footer">Generated on Sun Jan 17 2021 04:28:51 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

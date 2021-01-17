@@ -88,6 +88,11 @@ var hierarchy =
     [ "wpi::are_base_of< T, Ts >", "structwpi_1_1are__base__of.html", null ],
     [ "wpi::are_base_of< T, U, Ts... >", "structwpi_1_1are__base__of_3_01T_00_01U_00_01Ts_8_8_8_01_4.html", null ],
     [ "frc::ArmFeedforward", "classfrc_1_1ArmFeedforward.html", null ],
+    [ "array", null, [
+      [ "wpi::array< double,(Degree+1)/2 >", "classwpi_1_1array.html", null ],
+      [ "wpi::array< frc::Translation2d, NumModules >", "classwpi_1_1array.html", null ],
+      [ "wpi::array< T, N >", "classwpi_1_1array.html", null ]
+    ] ],
     [ "wpi::ArrayRef< T >", "classwpi_1_1ArrayRef.html", [
       [ "wpi::MutableArrayRef< T >", "classwpi_1_1MutableArrayRef.html", [
         [ "wpi::OwningArrayRef< T >", "classwpi_1_1OwningArrayRef.html", null ]
@@ -210,6 +215,7 @@ var hierarchy =
     [ "frc::sim::DutyCycleEncoderSim", "classfrc_1_1sim_1_1DutyCycleEncoderSim.html", null ],
     [ "frc::sim::DutyCycleSim", "classfrc_1_1sim_1_1DutyCycleSim.html", null ],
     [ "frc::ElevatorFeedforward< Distance >", "classfrc_1_1ElevatorFeedforward.html", null ],
+    [ "wpi::empty_array_t", "structwpi_1_1empty__array__t.html", null ],
     [ "enable_shared_from_this", null, [
       [ "wpi::HttpWebSocketServerConnection< Derived >", "classwpi_1_1HttpWebSocketServerConnection.html", null ],
       [ "wpi::uv::Handle", "classwpi_1_1uv_1_1Handle.html", [
@@ -637,6 +643,9 @@ var hierarchy =
       [ "wpi::HttpWebSocketServerConnection< Derived >", "classwpi_1_1HttpWebSocketServerConnection.html", null ]
     ] ],
     [ "wpi::identity< Ty >", "structwpi_1_1identity.html", null ],
+    [ "integral_constant", null, [
+      [ "std::tuple_size< wpi::array< T, N > >", "structstd_1_1tuple__size_3_01wpi_1_1array_3_01T_00_01N_01_4_01_4.html", null ]
+    ] ],
     [ "integral_constant", null, [
       [ "wpi::detail::ConstantLog2< N >", "structwpi_1_1detail_1_1ConstantLog2.html", null ],
       [ "wpi::detail::ConstantLog2< 1 >", "structwpi_1_1detail_1_1ConstantLog2_3_011_01_4.html", null ],
@@ -1443,9 +1452,9 @@ var hierarchy =
     ] ],
     [ "frc::SplineHelper", "classfrc_1_1SplineHelper.html", null ],
     [ "frc::SplineParameterizer", "classfrc_1_1SplineParameterizer.html", null ],
+    [ "frc::Trajectory::State", "structfrc_1_1Trajectory_1_1State.html", null ],
     [ "frc::TrapezoidProfile< Distance >::State", "classfrc_1_1TrapezoidProfile_1_1State.html", null ],
     [ "frc::sim::DifferentialDrivetrainSim::State", "classfrc_1_1sim_1_1DifferentialDrivetrainSim_1_1State.html", null ],
-    [ "frc::Trajectory::State", "structfrc_1_1Trajectory_1_1State.html", null ],
     [ "wpi::static_circular_buffer< T, N >", "classwpi_1_1static__circular__buffer.html", null ],
     [ "wpi::detail::static_const< T >", "structwpi_1_1detail_1_1static__const.html", null ],
     [ "wpi::StringMapConstIterator< ValueTy >", "classwpi_1_1StringMapConstIterator.html", null ],
@@ -1475,8 +1484,8 @@ var hierarchy =
     [ "frc::SwerveModuleState", "structfrc_1_1SwerveModuleState.html", null ],
     [ "wpi::TCPConnector", "classwpi_1_1TCPConnector.html", null ],
     [ "wpi::ThreadSafeRefCountedBase< Derived >", "classwpi_1_1ThreadSafeRefCountedBase.html", null ],
-    [ "frc::Timer", "classfrc_1_1Timer.html", null ],
     [ "frc2::Timer", "classfrc2_1_1Timer.html", null ],
+    [ "frc::Timer", "classfrc_1_1Timer.html", null ],
     [ "wpi::detail::to_json_fn", "structwpi_1_1detail_1_1to__json__fn.html", null ],
     [ "frc::Tracer", "classfrc_1_1Tracer.html", null ],
     [ "wpi::detail::TrailingZerosCounter< T, SizeOfT >", "structwpi_1_1detail_1_1TrailingZerosCounter.html", null ],
@@ -1514,6 +1523,7 @@ var hierarchy =
       [ "wpi::sig::trait::detail::is_callable< F, typelist< T... >, void_t< decltype(std::declval< F >()(std::declval< T >()...))> >", "structwpi_1_1sig_1_1trait_1_1detail_1_1is__callable_3_01F_00_01typelist_3_01T_8_8_8_01_4_00_01vo0b9a9fbd9b294cae0c56b4f4fba775e5.html", null ],
       [ "wpi::sig::trait::detail::is_weak_ptr< T, void_t< decltype(std::declval< T >().expired()), decltype(std::declval< T >().lock()), decltype(std::declval< T >().reset())> >", "structwpi_1_1sig_1_1trait_1_1detail_1_1is__weak__ptr_3_01T_00_01void__t_3_01decltype_07std_1_1ded2bb11d31b8d0ed7a35eee4aeee8967a.html", null ]
     ] ],
+    [ "std::tuple_element< I, wpi::array< T, N > >", "structstd_1_1tuple__element_3_01I_00_01wpi_1_1array_3_01T_00_01N_01_4_01_4.html", null ],
     [ "wpi::Twine", "classwpi_1_1Twine.html", null ],
     [ "frc::Twist2d", "structfrc_1_1Twist2d.html", null ],
     [ "wpi::sig::trait::typelist<... >", "structwpi_1_1sig_1_1trait_1_1typelist.html", null ],

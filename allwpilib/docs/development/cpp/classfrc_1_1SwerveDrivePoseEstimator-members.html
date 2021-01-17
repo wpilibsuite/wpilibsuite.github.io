@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.1.2-16-gd6ed20c</span>
+   &#160;<span id="projectnumber">2021.1.2-18-g6efc58e</span>
    </div>
   </td>
  </tr>
@@ -99,8 +99,8 @@ $(document).ready(function(){initNavTree('classfrc_1_1SwerveDrivePoseEstimator.h
   <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1SwerveDrivePoseEstimator.html#af2ad6ac96725e2e2732032d9fdcdc5d7">AddVisionMeasurement</a>(const Pose2d &amp;visionRobotPose, units::second_t timestamp)</td><td class="entry"><a class="el" href="classfrc_1_1SwerveDrivePoseEstimator.html">frc::SwerveDrivePoseEstimator&lt; NumModules &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classfrc_1_1SwerveDrivePoseEstimator.html#afa43500d257dd6e01c810ffd6992e2a9">GetEstimatedPosition</a>() const</td><td class="entry"><a class="el" href="classfrc_1_1SwerveDrivePoseEstimator.html">frc::SwerveDrivePoseEstimator&lt; NumModules &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1SwerveDrivePoseEstimator.html#abc069c79c0503a5713593eda54af6245">ResetPosition</a>(const Pose2d &amp;pose, const Rotation2d &amp;gyroAngle)</td><td class="entry"><a class="el" href="classfrc_1_1SwerveDrivePoseEstimator.html">frc::SwerveDrivePoseEstimator&lt; NumModules &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classfrc_1_1SwerveDrivePoseEstimator.html#afe122d8d8a99bc25d8868f20ebfdf464">SetVisionMeasurementStdDevs</a>(const std::array&lt; double, 3 &gt; &amp;visionMeasurementStdDevs)</td><td class="entry"><a class="el" href="classfrc_1_1SwerveDrivePoseEstimator.html">frc::SwerveDrivePoseEstimator&lt; NumModules &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1SwerveDrivePoseEstimator.html#a82a186339abd3127b12d00cdb72f301c">SwerveDrivePoseEstimator</a>(const Rotation2d &amp;gyroAngle, const Pose2d &amp;initialPose, SwerveDriveKinematics&lt; NumModules &gt; &amp;kinematics, const std::array&lt; double, 3 &gt; &amp;stateStdDevs, const std::array&lt; double, 1 &gt; &amp;localMeasurementStdDevs, const std::array&lt; double, 3 &gt; &amp;visionMeasurementStdDevs, units::second_t nominalDt=0.02_s)</td><td class="entry"><a class="el" href="classfrc_1_1SwerveDrivePoseEstimator.html">frc::SwerveDrivePoseEstimator&lt; NumModules &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classfrc_1_1SwerveDrivePoseEstimator.html#aa839fb27ac13f391e5f9314e154b8f51">SetVisionMeasurementStdDevs</a>(const wpi::array&lt; double, 3 &gt; &amp;visionMeasurementStdDevs)</td><td class="entry"><a class="el" href="classfrc_1_1SwerveDrivePoseEstimator.html">frc::SwerveDrivePoseEstimator&lt; NumModules &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1SwerveDrivePoseEstimator.html#a31c93b63c5349dce5053414a6c30dccb">SwerveDrivePoseEstimator</a>(const Rotation2d &amp;gyroAngle, const Pose2d &amp;initialPose, SwerveDriveKinematics&lt; NumModules &gt; &amp;kinematics, const wpi::array&lt; double, 3 &gt; &amp;stateStdDevs, const wpi::array&lt; double, 1 &gt; &amp;localMeasurementStdDevs, const wpi::array&lt; double, 3 &gt; &amp;visionMeasurementStdDevs, units::second_t nominalDt=0.02_s)</td><td class="entry"><a class="el" href="classfrc_1_1SwerveDrivePoseEstimator.html">frc::SwerveDrivePoseEstimator&lt; NumModules &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classfrc_1_1SwerveDrivePoseEstimator.html#a1505962f9ffb09955be3b1a406426967">Update</a>(const Rotation2d &amp;gyroAngle, ModuleState &amp;&amp;... moduleStates)</td><td class="entry"><a class="el" href="classfrc_1_1SwerveDrivePoseEstimator.html">frc::SwerveDrivePoseEstimator&lt; NumModules &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1SwerveDrivePoseEstimator.html#a1d05916ae9eef2597fd43f2be06f8980">UpdateWithTime</a>(units::second_t currentTime, const Rotation2d &amp;gyroAngle, ModuleState &amp;&amp;... moduleStates)</td><td class="entry"><a class="el" href="classfrc_1_1SwerveDrivePoseEstimator.html">frc::SwerveDrivePoseEstimator&lt; NumModules &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
 </table></div><!-- contents -->
@@ -108,7 +108,7 @@ $(document).ready(function(){initNavTree('classfrc_1_1SwerveDrivePoseEstimator.h
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Jan 15 2021 05:22:43 for WPILibC++ by
+    <li class="footer">Generated on Sun Jan 17 2021 04:28:50 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

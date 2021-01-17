@@ -1,5 +1,17 @@
 var NAVTREEINDEX34 =
 {
+"group__hal__analoggyro.html#ga4f0ef7f247b728a27a558dafb09f5441":[3,0,16,4],
+"group__hal__analoggyro.html#ga7212501dae29e4fc3df18094f04f3fef":[3,0,16,3],
+"group__hal__analoggyro.html#ga7ad667ac034fdfc9da4074853a064f2a":[3,0,16,6],
+"group__hal__analoggyro.html#ga89b1038e0561eb1f4ec6d3ccc747dddd":[3,0,16,7],
+"group__hal__analoggyro.html#ga9c96af0829ee6b17fea37d3897550343":[3,0,16,11],
+"group__hal__analoggyro.html#gaae38fd1e3f5f1651a652126749664336":[3,0,16,1],
+"group__hal__analoggyro.html#gad77a6766f3cba425b3c6d78b06a111eb":[3,0,16,8],
+"group__hal__analoggyro.html#gadc7a11e59c368c174d79abe8fdeaea5e":[3,0,16,9],
+"group__hal__analoginput.html":[3,0,19],
+"group__hal__analoginput.html#ga02f152b2f03f34e45343791b307d0452":[3,0,19,3],
+"group__hal__analoginput.html#ga0f6a90fde07eda6f64d27edff7e6746a":[3,0,19,17],
+"group__hal__analoginput.html#ga3217a276a5295f6f9d13fa205edff47b":[3,0,19,11],
 "group__hal__analoginput.html#ga34d0a68a34c9fcc696d96b1102c7b3f8":[3,0,19,15],
 "group__hal__analoginput.html#ga6193461057b56f1e2273584221464418":[3,0,19,7],
 "group__hal__analoginput.html#ga6b4201c92d3b19b93a4487d6999217eb":[3,0,19,4],
@@ -237,17 +249,5 @@ var NAVTREEINDEX34 =
 "group__hal__pdp.html#gaba51f29c98924d15f9990d1d9a354500":[3,0,20,11],
 "group__hal__pdp.html#gac9a02588d9d1f679446487321817b91b":[3,0,20,1],
 "group__hal__pdp.html#gad18b9d203b4289639188bc099df3df0f":[3,0,20,5],
-"group__hal__pdp.html#gad56d2391d07cc7eee7f3f2d79d8d1f99":[3,0,20,9],
-"group__hal__pdp.html#gae9ec745128f8bd0ebd52df376dc424b1":[3,0,20,8],
-"group__hal__ports.html":[3,0,30],
-"group__hal__ports.html#ga0834c59eb4cba11dabdc60145753b1c6":[3,0,30,16],
-"group__hal__ports.html#ga1094cd5deeb4607c8c8420f027004d28":[3,0,30,9],
-"group__hal__ports.html#ga25c6b2e7401ce5d8b4cb3ad2ecca9d16":[3,0,30,2],
-"group__hal__ports.html#ga2c372db73b25f485b870b1ba1e38660a":[3,0,30,4],
-"group__hal__ports.html#ga3f207b761554be4fceb82d8bc5d33f89":[3,0,30,7],
-"group__hal__ports.html#ga4121bca3cf2db1933fd2df812ace1677":[3,0,30,3],
-"group__hal__ports.html#ga50ead4cab628fd0f3773d81586dce6bc":[3,0,30,13],
-"group__hal__ports.html#ga5c72a1106b4e8ef39bfa17a2146e93eb":[3,0,30,6],
-"group__hal__ports.html#ga5daf68b1d8bdc5a2e04f5c0ba84ce6fa":[3,0,30,15],
-"group__hal__ports.html#ga7867d08ba3d3418edcc7c4c2a72d9ca5":[3,0,30,17]
+"group__hal__pdp.html#gad56d2391d07cc7eee7f3f2d79d8d1f99":[3,0,20,9]
 };

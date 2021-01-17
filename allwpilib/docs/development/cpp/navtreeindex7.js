@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"classfrc_1_1CommandGroup.html#a08df0889578941a8370e86374d3856c5":[5,0,2,31,13],
 "classfrc_1_1CommandGroup.html#a27396af16cd7858a517aa482c39787dd":[5,0,2,31,8],
 "classfrc_1_1CommandGroup.html#a29a03c1e607cd4ef997ef52571309239":[5,0,2,31,3],
 "classfrc_1_1CommandGroup.html#a2a54d0bf08d57c1d1cf2f4ff4ecab805":[5,0,2,31,16],
@@ -159,7 +160,7 @@ var NAVTREEINDEX7 =
 "classfrc_1_1CounterBase.html#af246833332d671337fff0394423f05d2":[5,0,2,39,3],
 "classfrc_1_1CounterBase.html#af5e60bf11540579ee0900129f076020a":[5,0,2,39,10],
 "classfrc_1_1CubicHermiteSpline.html":[5,0,2,40],
-"classfrc_1_1CubicHermiteSpline.html#a406187ce86d3780ffce72ce3b973fde6":[5,0,2,40,0],
+"classfrc_1_1CubicHermiteSpline.html#aa7afd31d8125cd4a95edf981b7a30396":[5,0,2,40,0],
 "classfrc_1_1CubicHermiteSpline.html#ae007233e2a7eafb73a053e2936584d2b":[5,0,2,40,1],
 "classfrc_1_1DCMotor.html":[5,0,2,41],
 "classfrc_1_1DCMotor.html#a046a4cf7bb369b17213888268ca5c2e0":[5,0,2,41,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "classfrc_1_1DifferentialDriveKinematics.html#a12f5140b2c56473e2594e5bbd6138980":[5,0,2,43,1],
 "classfrc_1_1DifferentialDriveKinematics.html#aad1ec6f260c93d1efff03f285f9308f7":[5,0,2,43,2],
 "classfrc_1_1DifferentialDriveKinematics.html#ab66a093dd7521eded273cb45cae32260":[5,0,2,43,0],
-"classfrc_1_1DifferentialDriveKinematicsConstraint.html":[5,0,2,44],
-"classfrc_1_1DifferentialDriveKinematicsConstraint.html#a5032ff15e9d0f5765ef226e1beb8be62":[5,0,2,44,2]
+"classfrc_1_1DifferentialDriveKinematicsConstraint.html":[5,0,2,44]
 };

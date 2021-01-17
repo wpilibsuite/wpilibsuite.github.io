@@ -1,5 +1,6 @@
 var NAVTREEINDEX17 =
 {
+"classfrc_1_1XboxController.html#a7b20d7e717a02d2af0f1d790253a3fc1":[5,0,2,224,27],
 "classfrc_1_1XboxController.html#a7da55eb54e5c1201abd21886182e94e6":[5,0,2,224,10],
 "classfrc_1_1XboxController.html#a879dbba9de63acca156dc2184fccab88":[5,0,2,224,2],
 "classfrc_1_1XboxController.html#a8eac576fb4a05e180300c523e1cf3779":[5,0,2,224,15],
@@ -17,6 +18,7 @@ var NAVTREEINDEX17 =
 "classfrc_1_1detail_1_1KalmanFilterImpl.html":[5,0,2,0,0],
 "classfrc_1_1detail_1_1KalmanFilterImpl.html#a07f140ccb993049b57a8c113fd14cc31":[5,0,2,0,0,4],
 "classfrc_1_1detail_1_1KalmanFilterImpl.html#a0d024d4ea14c35bf3539128dd699d91f":[5,0,2,0,0,2],
+"classfrc_1_1detail_1_1KalmanFilterImpl.html#a16462afe3377a603c9416c0af071e848":[5,0,2,0,0,0],
 "classfrc_1_1detail_1_1KalmanFilterImpl.html#a3d21efc41bd140d1f44215c980ee0280":[5,0,2,0,0,6],
 "classfrc_1_1detail_1_1KalmanFilterImpl.html#a65bfe6c1ab99dfd987180089d6527ee1":[5,0,2,0,0,1],
 "classfrc_1_1detail_1_1KalmanFilterImpl.html#a69a913099380f13ea8892c71d5ceb961":[5,0,2,0,0,5],
@@ -25,11 +27,8 @@ var NAVTREEINDEX17 =
 "classfrc_1_1detail_1_1KalmanFilterImpl.html#aa93660139f4b626a3bebe567903bdaa9":[5,0,2,0,0,8],
 "classfrc_1_1detail_1_1KalmanFilterImpl.html#aaa368904ff08ecfbeea7b4d66a83344e":[5,0,2,0,0,7],
 "classfrc_1_1detail_1_1KalmanFilterImpl.html#ab7e3df8c5f1c73cd043f4f1abdd72666":[5,0,2,0,0,10],
-"classfrc_1_1detail_1_1KalmanFilterImpl.html#ad3b61a4ba6a395d2f995287efb4ba1ea":[5,0,2,0,0,0],
 "classfrc_1_1detail_1_1KalmanFilterImpl.html#ae6a865eb9fb5ccddcbaa89e41215b271":[5,0,2,0,0,11],
 "classfrc_1_1detail_1_1LinearQuadraticRegulatorImpl.html":[5,0,2,0,1],
-"classfrc_1_1detail_1_1LinearQuadraticRegulatorImpl.html#a013d823f888a4eaf8c3001f10d95acee":[5,0,2,0,1,0],
-"classfrc_1_1detail_1_1LinearQuadraticRegulatorImpl.html#a18b122d9b8e5b1420a682d3d8d6cee7b":[5,0,2,0,1,1],
 "classfrc_1_1detail_1_1LinearQuadraticRegulatorImpl.html#a1f0623a25a1e1720d0bc9537bc9cef63":[5,0,2,0,1,2],
 "classfrc_1_1detail_1_1LinearQuadraticRegulatorImpl.html#a3d7a99447a6b01ce0997a2f8e9294f9e":[5,0,2,0,1,9],
 "classfrc_1_1detail_1_1LinearQuadraticRegulatorImpl.html#a51fa24fab411efb64d11f9827e178770":[5,0,2,0,1,7],
@@ -37,6 +36,8 @@ var NAVTREEINDEX17 =
 "classfrc_1_1detail_1_1LinearQuadraticRegulatorImpl.html#a703932c665cb2e05aa02bdae2f5308e8":[5,0,2,0,1,13],
 "classfrc_1_1detail_1_1LinearQuadraticRegulatorImpl.html#a74cb3afe2de72d0a1eac26e5790a6cf5":[5,0,2,0,1,4],
 "classfrc_1_1detail_1_1LinearQuadraticRegulatorImpl.html#a76c2f83b13c5f8555c36a1405e355698":[5,0,2,0,1,6],
+"classfrc_1_1detail_1_1LinearQuadraticRegulatorImpl.html#a8d1df8c1f568e44b40289a7cff19c9c8":[5,0,2,0,1,1],
+"classfrc_1_1detail_1_1LinearQuadraticRegulatorImpl.html#a9e04bab9215fd029fb6e7a2f3dfc9942":[5,0,2,0,1,0],
 "classfrc_1_1detail_1_1LinearQuadraticRegulatorImpl.html#ac098214a4f791996b8968f3da1aa65e0":[5,0,2,0,1,11],
 "classfrc_1_1detail_1_1LinearQuadraticRegulatorImpl.html#ac46cbf2ca057d758eda7f8bdaedd712e":[5,0,2,0,1,12],
 "classfrc_1_1detail_1_1LinearQuadraticRegulatorImpl.html#acd1ec7de03fdf803482bdedf1472b6fd":[5,0,2,0,1,14],
@@ -248,6 +249,5 @@ var NAVTREEINDEX17 =
 "classfrc_1_1sim_1_1DifferentialDrivetrainSim_1_1KitbotGearing.html#a56e4520f91a0aae5e4d1cf44a80193e7":[5,0,2,1,10,0,2],
 "classfrc_1_1sim_1_1DifferentialDrivetrainSim_1_1KitbotGearing.html#a76d64f3223825ed195dc191e186bb767":[5,0,2,1,10,0,4],
 "classfrc_1_1sim_1_1DifferentialDrivetrainSim_1_1KitbotGearing.html#a946d011d38fcc0e37bb9070d907c96f4":[5,0,2,1,10,0,3],
-"classfrc_1_1sim_1_1DifferentialDrivetrainSim_1_1KitbotGearing.html#ae4903a4f3b19954decc468f39708ae79":[5,0,2,1,10,0,1],
-"classfrc_1_1sim_1_1DifferentialDrivetrainSim_1_1KitbotMotor.html":[5,0,2,1,10,1]
+"classfrc_1_1sim_1_1DifferentialDrivetrainSim_1_1KitbotGearing.html#ae4903a4f3b19954decc468f39708ae79":[5,0,2,1,10,0,1]
 };

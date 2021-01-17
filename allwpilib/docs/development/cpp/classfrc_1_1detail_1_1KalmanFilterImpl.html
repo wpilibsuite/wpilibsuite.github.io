@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.1.2-16-gd6ed20c</span>
+   &#160;<span id="projectnumber">2021.1.2-18-g6efc58e</span>
    </div>
   </td>
  </tr>
@@ -113,9 +113,9 @@ Inheritance diagram for frc::detail::KalmanFilterImpl&lt; States, Inputs, Output
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad3b61a4ba6a395d2f995287efb4ba1ea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1detail_1_1KalmanFilterImpl.html#ad3b61a4ba6a395d2f995287efb4ba1ea">KalmanFilterImpl</a> (<a class="el" href="classfrc_1_1LinearSystem.html">LinearSystem</a>&lt; States, Inputs, Outputs &gt; &amp;plant, const std::array&lt; double, States &gt; &amp;stateStdDevs, const std::array&lt; double, Outputs &gt; &amp;measurementStdDevs, units::second_t dt)</td></tr>
-<tr class="memdesc:ad3b61a4ba6a395d2f995287efb4ba1ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a state-space observer with the given plant.  <a href="classfrc_1_1detail_1_1KalmanFilterImpl.html#ad3b61a4ba6a395d2f995287efb4ba1ea">More...</a><br /></td></tr>
-<tr class="separator:ad3b61a4ba6a395d2f995287efb4ba1ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16462afe3377a603c9416c0af071e848"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1detail_1_1KalmanFilterImpl.html#a16462afe3377a603c9416c0af071e848">KalmanFilterImpl</a> (<a class="el" href="classfrc_1_1LinearSystem.html">LinearSystem</a>&lt; States, Inputs, Outputs &gt; &amp;plant, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, States &gt; &amp;stateStdDevs, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, Outputs &gt; &amp;measurementStdDevs, units::second_t dt)</td></tr>
+<tr class="memdesc:a16462afe3377a603c9416c0af071e848"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a state-space observer with the given plant.  <a href="classfrc_1_1detail_1_1KalmanFilterImpl.html#a16462afe3377a603c9416c0af071e848">More...</a><br /></td></tr>
+<tr class="separator:a16462afe3377a603c9416c0af071e848"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65bfe6c1ab99dfd987180089d6527ee1"><td class="memItemLeft" align="right" valign="top"><a id="a65bfe6c1ab99dfd987180089d6527ee1"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>KalmanFilterImpl</b> (<a class="el" href="classfrc_1_1detail_1_1KalmanFilterImpl.html">KalmanFilterImpl</a> &amp;&amp;)=default</td></tr>
 <tr class="separator:a65bfe6c1ab99dfd987180089d6527ee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,8 +162,8 @@ class frc::detail::KalmanFilterImpl&lt; States, Inputs, Outputs &gt;</h3>
 <p>Kalman filters use a K gain matrix to determine whether to trust the model or measurements more. Kalman filter theory uses statistics to compute an optimal K gain which minimizes the sum of squares error in the state estimate. This K gain is used to correct the state estimate by some amount of the difference between the actual measurements and the measurements predicted by the model.</p>
 <p>For more on the underlying math, read <a href="https://file.tavsys.net/control/controls-engineering-in-frc.pdf">https://file.tavsys.net/control/controls-engineering-in-frc.pdf</a> chapter 9 "Stochastic control theory". </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ad3b61a4ba6a395d2f995287efb4ba1ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3b61a4ba6a395d2f995287efb4ba1ea">&#9670;&nbsp;</a></span>KalmanFilterImpl()</h2>
+<a id="a16462afe3377a603c9416c0af071e848"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16462afe3377a603c9416c0af071e848">&#9670;&nbsp;</a></span>KalmanFilterImpl()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -182,13 +182,13 @@ template&lt;int States, int Inputs, int Outputs&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::array&lt; double, States &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, States &gt; &amp;&#160;</td>
           <td class="paramname"><em>stateStdDevs</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::array&lt; double, Outputs &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, Outputs &gt; &amp;&#160;</td>
           <td class="paramname"><em>measurementStdDevs</em>, </td>
         </tr>
         <tr>
@@ -493,7 +493,7 @@ template&lt;int States, int Inputs, int Outputs&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><b>detail</b></li><li class="navelem"><a class="el" href="classfrc_1_1detail_1_1KalmanFilterImpl.html">KalmanFilterImpl</a></li>
-    <li class="footer">Generated on Fri Jan 15 2021 05:22:44 for WPILibC++ by
+    <li class="footer">Generated on Sun Jan 17 2021 04:28:50 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>
