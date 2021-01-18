@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.1.2</span>
+   &#160;<span id="projectnumber">2021.2.1</span>
    </div>
   </td>
  </tr>
@@ -106,57 +106,74 @@ $(document).ready(function(){initNavTree('SPIAccelerometerSim_8h_source.html',''
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>frc::sim {</div>
 <div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1SPIAccelerometerSim.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1sim_1_1SPIAccelerometerSim.html">SPIAccelerometerSim</a> {</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc_1_1sim_1_1SPIAccelerometerSim.html">SPIAccelerometerSim</a>(<span class="keywordtype">int</span> index);</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  std::unique_ptr&lt;CallbackStore&gt; RegisterActiveCallback(NotifyCallback callback,</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                                                        <span class="keywordtype">bool</span> initialNotify);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keywordtype">bool</span> GetActive() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1SPIAccelerometerSim.html#a02312636314bafda00bc614ec2d26826">   19</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc_1_1sim_1_1SPIAccelerometerSim.html#a02312636314bafda00bc614ec2d26826">SPIAccelerometerSim</a>(<span class="keywordtype">int</span> index);</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keywordtype">void</span> SetActive(<span class="keywordtype">bool</span> active);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  std::unique_ptr&lt;CallbackStore&gt; RegisterRangeCallback(NotifyCallback callback,</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                                                       <span class="keywordtype">bool</span> initialNotify);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keywordtype">int</span> GetRange() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordtype">void</span> SetRange(<span class="keywordtype">int</span> range);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  std::unique_ptr&lt;CallbackStore&gt; RegisterXCallback(NotifyCallback callback,</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                                                   <span class="keywordtype">bool</span> initialNotify);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keywordtype">double</span> GetX() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordtype">void</span> SetX(<span class="keywordtype">double</span> x);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  std::unique_ptr&lt;CallbackStore&gt; RegisterYCallback(NotifyCallback callback,</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                                                   <span class="keywordtype">bool</span> initialNotify);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordtype">double</span> GetY() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">void</span> SetY(<span class="keywordtype">double</span> y);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  std::unique_ptr&lt;CallbackStore&gt; RegisterZCallback(NotifyCallback callback,</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                                   <span class="keywordtype">bool</span> initialNotify);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">double</span> GetZ() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">void</span> SetZ(<span class="keywordtype">double</span> z);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">void</span> ResetData();</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordtype">int</span> m_index;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;};</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}  <span class="comment">// namespace frc::sim</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1SPIAccelerometerSim.html#ae2bd6459ebbfd09921909c8d8cac1abc">   28</a></span>&#160;  [[nodiscard]] std::unique_ptr&lt;CallbackStore&gt; <a class="code" href="classfrc_1_1sim_1_1SPIAccelerometerSim.html#ae2bd6459ebbfd09921909c8d8cac1abc">RegisterActiveCallback</a>(</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;      NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1SPIAccelerometerSim.html#ac2d5900ec7a0456409ff0d72d1eca0d7">   36</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1sim_1_1SPIAccelerometerSim.html#ac2d5900ec7a0456409ff0d72d1eca0d7">GetActive</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1SPIAccelerometerSim.html#a2ef4fd810b9204744b14c8fa679066c9">   43</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1sim_1_1SPIAccelerometerSim.html#a2ef4fd810b9204744b14c8fa679066c9">SetActive</a>(<span class="keywordtype">bool</span> active);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1SPIAccelerometerSim.html#a715394f8bfd8e9fbfc5bace53f78121a">   52</a></span>&#160;  [[nodiscard]] std::unique_ptr&lt;CallbackStore&gt; <a class="code" href="classfrc_1_1sim_1_1SPIAccelerometerSim.html#a715394f8bfd8e9fbfc5bace53f78121a">RegisterRangeCallback</a>(</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1SPIAccelerometerSim.html#a548aad3f1e9f511fb480b37325aa44aa">   60</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classfrc_1_1sim_1_1SPIAccelerometerSim.html#a548aad3f1e9f511fb480b37325aa44aa">GetRange</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1SPIAccelerometerSim.html#a122916644eef1beab859edf3cf133d9c">   67</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1sim_1_1SPIAccelerometerSim.html#a122916644eef1beab859edf3cf133d9c">SetRange</a>(<span class="keywordtype">int</span> range);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1SPIAccelerometerSim.html#a374c8737e8cea1d8d3ecfa6a15c97cc7">   76</a></span>&#160;  [[nodiscard]] std::unique_ptr&lt;CallbackStore&gt; <a class="code" href="classfrc_1_1sim_1_1SPIAccelerometerSim.html#a374c8737e8cea1d8d3ecfa6a15c97cc7">RegisterXCallback</a>(</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1SPIAccelerometerSim.html#a8e249db8e55d5dd4e0f2cf05e49ada68">   84</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classfrc_1_1sim_1_1SPIAccelerometerSim.html#a8e249db8e55d5dd4e0f2cf05e49ada68">GetX</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1SPIAccelerometerSim.html#a91ead0f24ea78b688c9049aec01f2e35">   91</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1sim_1_1SPIAccelerometerSim.html#a91ead0f24ea78b688c9049aec01f2e35">SetX</a>(<span class="keywordtype">double</span> x);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1SPIAccelerometerSim.html#a9841ef08b9dbeb37703d86f50258fafc">  100</a></span>&#160;  [[nodiscard]] std::unique_ptr&lt;CallbackStore&gt; <a class="code" href="classfrc_1_1sim_1_1SPIAccelerometerSim.html#a9841ef08b9dbeb37703d86f50258fafc">RegisterYCallback</a>(</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1SPIAccelerometerSim.html#a054d3e85aae80cbc81a6e5065e9fc965">  108</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classfrc_1_1sim_1_1SPIAccelerometerSim.html#a054d3e85aae80cbc81a6e5065e9fc965">GetY</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1SPIAccelerometerSim.html#a3ca4c744647c4d778572121475efd4dc">  115</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1sim_1_1SPIAccelerometerSim.html#a3ca4c744647c4d778572121475efd4dc">SetY</a>(<span class="keywordtype">double</span> y);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1SPIAccelerometerSim.html#ab5924efb544d39c6032bb2ce81bc587d">  124</a></span>&#160;  [[nodiscard]] std::unique_ptr&lt;CallbackStore&gt; <a class="code" href="classfrc_1_1sim_1_1SPIAccelerometerSim.html#ab5924efb544d39c6032bb2ce81bc587d">RegisterZCallback</a>(</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;      NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1SPIAccelerometerSim.html#ae19088df7c4cfe35c221bdd5870bf51a">  132</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classfrc_1_1sim_1_1SPIAccelerometerSim.html#ae19088df7c4cfe35c221bdd5870bf51a">GetZ</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
+<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1SPIAccelerometerSim.html#ae10e44dae33bfaf02d41131f8df79a3b">  139</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1sim_1_1SPIAccelerometerSim.html#ae10e44dae33bfaf02d41131f8df79a3b">SetZ</a>(<span class="keywordtype">double</span> z);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
+<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1SPIAccelerometerSim.html#a96688a739e61b935e4fb7f606be59017">  144</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1sim_1_1SPIAccelerometerSim.html#a96688a739e61b935e4fb7f606be59017">ResetData</a>();</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  <span class="keywordtype">int</span> m_index;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;};</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;}  <span class="comment">// namespace frc::sim</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclassfrc_1_1sim_1_1SPIAccelerometerSim_html_a91ead0f24ea78b688c9049aec01f2e35"><div class="ttname"><a href="classfrc_1_1sim_1_1SPIAccelerometerSim.html#a91ead0f24ea78b688c9049aec01f2e35">frc::sim::SPIAccelerometerSim::SetX</a></div><div class="ttdeci">void SetX(double x)</div><div class="ttdoc">Change the X axis value of the accelerometer.</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1SPIAccelerometerSim_html_a054d3e85aae80cbc81a6e5065e9fc965"><div class="ttname"><a href="classfrc_1_1sim_1_1SPIAccelerometerSim.html#a054d3e85aae80cbc81a6e5065e9fc965">frc::sim::SPIAccelerometerSim::GetY</a></div><div class="ttdeci">double GetY() const</div><div class="ttdoc">Measure the Y axis value.</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1SPIAccelerometerSim_html_a3ca4c744647c4d778572121475efd4dc"><div class="ttname"><a href="classfrc_1_1sim_1_1SPIAccelerometerSim.html#a3ca4c744647c4d778572121475efd4dc">frc::sim::SPIAccelerometerSim::SetY</a></div><div class="ttdeci">void SetY(double y)</div><div class="ttdoc">Change the Y axis value of the accelerometer.</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1SPIAccelerometerSim_html_ae19088df7c4cfe35c221bdd5870bf51a"><div class="ttname"><a href="classfrc_1_1sim_1_1SPIAccelerometerSim.html#ae19088df7c4cfe35c221bdd5870bf51a">frc::sim::SPIAccelerometerSim::GetZ</a></div><div class="ttdeci">double GetZ() const</div><div class="ttdoc">Measure the Z axis value.</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1SPIAccelerometerSim_html_a374c8737e8cea1d8d3ecfa6a15c97cc7"><div class="ttname"><a href="classfrc_1_1sim_1_1SPIAccelerometerSim.html#a374c8737e8cea1d8d3ecfa6a15c97cc7">frc::sim::SPIAccelerometerSim::RegisterXCallback</a></div><div class="ttdeci">std::unique_ptr&lt; CallbackStore &gt; RegisterXCallback(NotifyCallback callback, bool initialNotify)</div><div class="ttdoc">Register a callback to be run whenever the X axis value changes.</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1SPIAccelerometerSim_html_a8e249db8e55d5dd4e0f2cf05e49ada68"><div class="ttname"><a href="classfrc_1_1sim_1_1SPIAccelerometerSim.html#a8e249db8e55d5dd4e0f2cf05e49ada68">frc::sim::SPIAccelerometerSim::GetX</a></div><div class="ttdeci">double GetX() const</div><div class="ttdoc">Measure the X axis value.</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1SPIAccelerometerSim_html_a02312636314bafda00bc614ec2d26826"><div class="ttname"><a href="classfrc_1_1sim_1_1SPIAccelerometerSim.html#a02312636314bafda00bc614ec2d26826">frc::sim::SPIAccelerometerSim::SPIAccelerometerSim</a></div><div class="ttdeci">SPIAccelerometerSim(int index)</div><div class="ttdoc">Construct a new simulation object.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1SPIAccelerometerSim_html"><div class="ttname"><a href="classfrc_1_1sim_1_1SPIAccelerometerSim.html">frc::sim::SPIAccelerometerSim</a></div><div class="ttdef"><b>Definition:</b> SPIAccelerometerSim.h:12</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1SPIAccelerometerSim_html_ac2d5900ec7a0456409ff0d72d1eca0d7"><div class="ttname"><a href="classfrc_1_1sim_1_1SPIAccelerometerSim.html#ac2d5900ec7a0456409ff0d72d1eca0d7">frc::sim::SPIAccelerometerSim::GetActive</a></div><div class="ttdeci">bool GetActive() const</div><div class="ttdoc">Check whether the accelerometer is active.</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1SPIAccelerometerSim_html_a2ef4fd810b9204744b14c8fa679066c9"><div class="ttname"><a href="classfrc_1_1sim_1_1SPIAccelerometerSim.html#a2ef4fd810b9204744b14c8fa679066c9">frc::sim::SPIAccelerometerSim::SetActive</a></div><div class="ttdeci">void SetActive(bool active)</div><div class="ttdoc">Define whether this accelerometer is active.</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1SPIAccelerometerSim_html_ae2bd6459ebbfd09921909c8d8cac1abc"><div class="ttname"><a href="classfrc_1_1sim_1_1SPIAccelerometerSim.html#ae2bd6459ebbfd09921909c8d8cac1abc">frc::sim::SPIAccelerometerSim::RegisterActiveCallback</a></div><div class="ttdeci">std::unique_ptr&lt; CallbackStore &gt; RegisterActiveCallback(NotifyCallback callback, bool initialNotify)</div><div class="ttdoc">Register a callback to be run when this accelerometer activates.</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1SPIAccelerometerSim_html_a122916644eef1beab859edf3cf133d9c"><div class="ttname"><a href="classfrc_1_1sim_1_1SPIAccelerometerSim.html#a122916644eef1beab859edf3cf133d9c">frc::sim::SPIAccelerometerSim::SetRange</a></div><div class="ttdeci">void SetRange(int range)</div><div class="ttdoc">Change the range of this accelerometer.</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1SPIAccelerometerSim_html_a715394f8bfd8e9fbfc5bace53f78121a"><div class="ttname"><a href="classfrc_1_1sim_1_1SPIAccelerometerSim.html#a715394f8bfd8e9fbfc5bace53f78121a">frc::sim::SPIAccelerometerSim::RegisterRangeCallback</a></div><div class="ttdeci">std::unique_ptr&lt; CallbackStore &gt; RegisterRangeCallback(NotifyCallback callback, bool initialNotify)</div><div class="ttdoc">Register a callback to be run whenever the range changes.</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1SPIAccelerometerSim_html_ab5924efb544d39c6032bb2ce81bc587d"><div class="ttname"><a href="classfrc_1_1sim_1_1SPIAccelerometerSim.html#ab5924efb544d39c6032bb2ce81bc587d">frc::sim::SPIAccelerometerSim::RegisterZCallback</a></div><div class="ttdeci">std::unique_ptr&lt; CallbackStore &gt; RegisterZCallback(NotifyCallback callback, bool initialNotify)</div><div class="ttdoc">Register a callback to be run whenever the Z axis value changes.</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1SPIAccelerometerSim_html_a9841ef08b9dbeb37703d86f50258fafc"><div class="ttname"><a href="classfrc_1_1sim_1_1SPIAccelerometerSim.html#a9841ef08b9dbeb37703d86f50258fafc">frc::sim::SPIAccelerometerSim::RegisterYCallback</a></div><div class="ttdeci">std::unique_ptr&lt; CallbackStore &gt; RegisterYCallback(NotifyCallback callback, bool initialNotify)</div><div class="ttdoc">Register a callback to be run whenever the Y axis value changes.</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1SPIAccelerometerSim_html_ae10e44dae33bfaf02d41131f8df79a3b"><div class="ttname"><a href="classfrc_1_1sim_1_1SPIAccelerometerSim.html#ae10e44dae33bfaf02d41131f8df79a3b">frc::sim::SPIAccelerometerSim::SetZ</a></div><div class="ttdeci">void SetZ(double z)</div><div class="ttdoc">Change the Z axis value of the accelerometer.</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1SPIAccelerometerSim_html_a96688a739e61b935e4fb7f606be59017"><div class="ttname"><a href="classfrc_1_1sim_1_1SPIAccelerometerSim.html#a96688a739e61b935e4fb7f606be59017">frc::sim::SPIAccelerometerSim::ResetData</a></div><div class="ttdeci">void ResetData()</div><div class="ttdoc">Reset all simulation data of this object.</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1SPIAccelerometerSim_html_a548aad3f1e9f511fb480b37325aa44aa"><div class="ttname"><a href="classfrc_1_1sim_1_1SPIAccelerometerSim.html#a548aad3f1e9f511fb480b37325aa44aa">frc::sim::SPIAccelerometerSim::GetRange</a></div><div class="ttdeci">int GetRange() const</div><div class="ttdoc">Check the range of this accelerometer.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_c83246fd67bf422561e892c78521edd1.html">wpilibc</a></li><li class="navelem"><a class="el" href="dir_a55b36a80db95a4ab182a656f2eb2509.html">src</a></li><li class="navelem"><a class="el" href="dir_0fce2ef06e3c6f43f5c610d197b1a66e.html">main</a></li><li class="navelem"><a class="el" href="dir_05ef35d0b06c7e71bb0c2a8a996c52cb.html">native</a></li><li class="navelem"><a class="el" href="dir_9bb56e9ddac3e93dcc0aa7b90d99af5f.html">include</a></li><li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_297dc702852f645e4b9e531dac2da27d.html">simulation</a></li><li class="navelem"><b>SPIAccelerometerSim.h</b></li>
-    <li class="footer">Generated on Wed Jan 6 2021 04:05:58 for WPILibC++ by
+    <li class="footer">Generated on Mon Jan 18 2021 04:37:00 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

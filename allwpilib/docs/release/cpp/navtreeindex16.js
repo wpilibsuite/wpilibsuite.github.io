@@ -1,5 +1,6 @@
 var NAVTREEINDEX16 =
 {
+"classfrc_1_1TrajectoryConfig.html#a7a5c7d104c53b51d10340551414988b2":[5,0,2,201,14],
 "classfrc_1_1TrajectoryConfig.html#a7e15ce7c23cbaa26bed8a8c975877d13":[5,0,2,201,6],
 "classfrc_1_1TrajectoryConfig.html#a8c14c4583412536c96c94eab1172110b":[5,0,2,201,0],
 "classfrc_1_1TrajectoryConfig.html#a8f18569ad611cc6d009365ab116e4f07":[5,0,2,201,4],
@@ -136,17 +137,17 @@ var NAVTREEINDEX16 =
 "classfrc_1_1UnscentedKalmanFilter.html#a1b9eaaab42a142391a75d1472cd8ec12":[5,0,2,212,13],
 "classfrc_1_1UnscentedKalmanFilter.html#a5aabd4b8bdbf288c014995eced0e33fa":[5,0,2,212,6],
 "classfrc_1_1UnscentedKalmanFilter.html#a5c551bb9699ec614c9c90bce276ef2bb":[5,0,2,212,4],
+"classfrc_1_1UnscentedKalmanFilter.html#a6423963161fc0d7d9247e76049cbb53b":[5,0,2,212,0],
 "classfrc_1_1UnscentedKalmanFilter.html#a7a6add97e52efdc06f74068c864493de":[5,0,2,212,7],
 "classfrc_1_1UnscentedKalmanFilter.html#a83ee707e89f691ad5f5c995fb9f06787":[5,0,2,212,9],
 "classfrc_1_1UnscentedKalmanFilter.html#aab659c752ce137ad7aee133a1a2a4b2b":[5,0,2,212,12],
 "classfrc_1_1UnscentedKalmanFilter.html#aaced414fe9446825bbb450daf47772ea":[5,0,2,212,5],
 "classfrc_1_1UnscentedKalmanFilter.html#ac2be5c5aaae45fb7c67c341e1ae2e700":[5,0,2,212,11],
 "classfrc_1_1UnscentedKalmanFilter.html#adde6af1afe00eafc4539e04c220ef87d":[5,0,2,212,10],
-"classfrc_1_1UnscentedKalmanFilter.html#ae7b7f51065a0573a3d833c0b1596518d":[5,0,2,212,1],
 "classfrc_1_1UnscentedKalmanFilter.html#aea76be479af4a0e4472930e49d8302d7":[5,0,2,212,8],
 "classfrc_1_1UnscentedKalmanFilter.html#aecc3ccc9bbdb26f49c258ae771be5521":[5,0,2,212,3],
+"classfrc_1_1UnscentedKalmanFilter.html#af26c8b8959c7741ffa52c75e12ee47b0":[5,0,2,212,1],
 "classfrc_1_1UnscentedKalmanFilter.html#af42b9c885ac152433abfc268014ff1f1":[5,0,2,212,2],
-"classfrc_1_1UnscentedKalmanFilter.html#affd55f3bb3d2c232f2dbd6efc6718b5f":[5,0,2,212,0],
 "classfrc_1_1Victor.html":[5,0,2,214],
 "classfrc_1_1Victor.html#a73c44c9e0a33347f91298b9764909286":[5,0,2,214,0],
 "classfrc_1_1Victor.html#ac58a5fa27f4e2811c9a5293d20c3e1c0":[5,0,2,214,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX16 =
 "classfrc_1_1XboxController.html#a51be4ced5d222649f900de435badbbc0":[5,0,2,224,4],
 "classfrc_1_1XboxController.html#a554172bbfa6bf88c4662eeddbbd5d380":[5,0,2,224,26],
 "classfrc_1_1XboxController.html#a5551498fd21cf54bb6918a2703a933fa":[5,0,2,224,28],
-"classfrc_1_1XboxController.html#a686efc14d81cd4f80887d2a1a27c4448":[5,0,2,224,31],
-"classfrc_1_1XboxController.html#a7b20d7e717a02d2af0f1d790253a3fc1":[5,0,2,224,27]
+"classfrc_1_1XboxController.html#a686efc14d81cd4f80887d2a1a27c4448":[5,0,2,224,31]
 };

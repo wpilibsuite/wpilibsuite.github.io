@@ -1,5 +1,6 @@
 var NAVTREEINDEX18 =
 {
+"classfrc_1_1sim_1_1DifferentialDrivetrainSim_1_1KitbotMotor.html":[5,0,2,1,10,1],
 "classfrc_1_1sim_1_1DifferentialDrivetrainSim_1_1KitbotMotor.html#a9c30611f3d11df00bf283da66b02ec36":[5,0,2,1,10,1,3],
 "classfrc_1_1sim_1_1DifferentialDrivetrainSim_1_1KitbotMotor.html#aac8a1db6575a2ee04b368f434a6114d1":[5,0,2,1,10,1,2],
 "classfrc_1_1sim_1_1DifferentialDrivetrainSim_1_1KitbotMotor.html#ab0ff634b39051e7a55ae7ca55d9aee96":[5,0,2,1,10,1,0],
@@ -96,15 +97,17 @@ var NAVTREEINDEX18 =
 "classfrc_1_1sim_1_1DutyCycleSim.html#ae8312a65f26eb70a516e6ff0025f6574":[5,0,2,1,15,1],
 "classfrc_1_1sim_1_1DutyCycleSim.html#af4dbcba9afedea99fa0647f6059f43c4":[5,0,2,1,15,4],
 "classfrc_1_1sim_1_1ElevatorSim.html":[5,0,2,1,16],
+"classfrc_1_1sim_1_1ElevatorSim.html#a1740da8aefa6cff947e11ab7e3790fbf":[5,0,2,1,16,6],
 "classfrc_1_1sim_1_1ElevatorSim.html#a2404a652b1dd5a3f325d27ade90ad9d0":[5,0,2,1,16,4],
 "classfrc_1_1sim_1_1ElevatorSim.html#a34848bf026d4dc3475df383881507a5b":[5,0,2,1,16,7],
 "classfrc_1_1sim_1_1ElevatorSim.html#a5d572ecdc8f3cb40f9e8f86cd35bedb7":[5,0,2,1,16,8],
 "classfrc_1_1sim_1_1ElevatorSim.html#a7d3526ff07e87dc537816c5e52ced75d":[5,0,2,1,16,2],
 "classfrc_1_1sim_1_1ElevatorSim.html#a8812d76d8e5cb991724e083124007486":[5,0,2,1,16,1],
 "classfrc_1_1sim_1_1ElevatorSim.html#a9624139efa24ee3422865711d8124c27":[5,0,2,1,16,0],
-"classfrc_1_1sim_1_1ElevatorSim.html#aa6a95d07a07e55c492e937eba8467dec":[5,0,2,1,16,6],
-"classfrc_1_1sim_1_1ElevatorSim.html#ac42b33f81358f844dba3b93db8b5394c":[5,0,2,1,16,5],
+"classfrc_1_1sim_1_1ElevatorSim.html#aa496ec508ade56dbfd6075d78b84e1fb":[5,0,2,1,16,10],
+"classfrc_1_1sim_1_1ElevatorSim.html#ab9b1b34281a05c640e5b51103f1ee943":[5,0,2,1,16,5],
 "classfrc_1_1sim_1_1ElevatorSim.html#ae1493b1895504fa6823d6653e8416fde":[5,0,2,1,16,3],
+"classfrc_1_1sim_1_1ElevatorSim.html#aefb5eb18267a4ed3abb0e439a5369905":[5,0,2,1,16,9],
 "classfrc_1_1sim_1_1EncoderSim.html":[5,0,2,1,17],
 "classfrc_1_1sim_1_1EncoderSim.html#a003b3f17049059ff34c6da47a4ef89ad":[5,0,2,1,17,10],
 "classfrc_1_1sim_1_1EncoderSim.html#a015fc7b17bd93a5a228c671e3b1b2264":[5,0,2,1,17,13],
@@ -246,8 +249,5 @@ var NAVTREEINDEX18 =
 "classfrc_1_1sim_1_1PWMSim.html#a3ee4bdd367a3bcdce2e275569dacbb0f":[5,0,2,1,24,4],
 "classfrc_1_1sim_1_1PWMSim.html#a4f1610eb00be3bc8bca2c0455535afca":[5,0,2,1,24,12],
 "classfrc_1_1sim_1_1PWMSim.html#a5052ab89e45578510b07332ec715277d":[5,0,2,1,24,9],
-"classfrc_1_1sim_1_1PWMSim.html#a5fb1e97b9af901c4e84a5560d4587cdc":[5,0,2,1,24,10],
-"classfrc_1_1sim_1_1PWMSim.html#a647a638ec93285bf3c3c8565f544bfaf":[5,0,2,1,24,5],
-"classfrc_1_1sim_1_1PWMSim.html#a6f480a1405b4a7286a73ef908802f4da":[5,0,2,1,24,8],
-"classfrc_1_1sim_1_1PWMSim.html#a7af8473c7c0e93f1482f4000c1fff805":[5,0,2,1,24,17]
+"classfrc_1_1sim_1_1PWMSim.html#a5fb1e97b9af901c4e84a5560d4587cdc":[5,0,2,1,24,10]
 };

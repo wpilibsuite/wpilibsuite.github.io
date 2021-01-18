@@ -59,7 +59,9 @@ var annotated_dup =
     [ "std", null, [
       [ "hash< wpi::json >", "structstd_1_1hash_3_01wpi_1_1json_01_4.html", "structstd_1_1hash_3_01wpi_1_1json_01_4" ],
       [ "is_error_code_enum< wpi::errc >", "structstd_1_1is__error__code__enum_3_01wpi_1_1errc_01_4.html", null ],
-      [ "less< ::wpi::detail::value_t >", "structstd_1_1less_3_01_1_1wpi_1_1detail_1_1value__t_01_4.html", "structstd_1_1less_3_01_1_1wpi_1_1detail_1_1value__t_01_4" ]
+      [ "less< ::wpi::detail::value_t >", "structstd_1_1less_3_01_1_1wpi_1_1detail_1_1value__t_01_4.html", "structstd_1_1less_3_01_1_1wpi_1_1detail_1_1value__t_01_4" ],
+      [ "tuple_element< I, wpi::array< T, N > >", "structstd_1_1tuple__element_3_01I_00_01wpi_1_1array_3_01T_00_01N_01_4_01_4.html", "structstd_1_1tuple__element_3_01I_00_01wpi_1_1array_3_01T_00_01N_01_4_01_4" ],
+      [ "tuple_size< wpi::array< T, N > >", "structstd_1_1tuple__size_3_01wpi_1_1array_3_01T_00_01N_01_4_01_4.html", null ]
     ] ],
     [ "wpi", null, [
       [ "detail", "namespacewpi_1_1detail.html", "namespacewpi_1_1detail" ],
@@ -189,6 +191,7 @@ var annotated_dup =
       ] ],
       [ "are_base_of", "structwpi_1_1are__base__of.html", "structwpi_1_1are__base__of" ],
       [ "are_base_of< T, U, Ts... >", "structwpi_1_1are__base__of_3_01T_00_01U_00_01Ts_8_8_8_01_4.html", "structwpi_1_1are__base__of_3_01T_00_01U_00_01Ts_8_8_8_01_4" ],
+      [ "array", "classwpi_1_1array.html", "classwpi_1_1array" ],
       [ "ArrayRef", "classwpi_1_1ArrayRef.html", "classwpi_1_1ArrayRef" ],
       [ "buffer_ostream", "classwpi_1_1buffer__ostream.html", "classwpi_1_1buffer__ostream" ],
       [ "circular_buffer", "classwpi_1_1circular__buffer.html", "classwpi_1_1circular__buffer" ],
@@ -219,6 +222,7 @@ var annotated_dup =
       [ "DenseMapIterator", "classwpi_1_1DenseMapIterator.html", "classwpi_1_1DenseMapIterator" ],
       [ "deref", "structwpi_1_1deref.html", "structwpi_1_1deref" ],
       [ "ECError", "classwpi_1_1ECError.html", "classwpi_1_1ECError" ],
+      [ "empty_array_t", "structwpi_1_1empty__array__t.html", null ],
       [ "Error", "classwpi_1_1Error.html", "classwpi_1_1Error" ],
       [ "ErrorAsOutParameter", "classwpi_1_1ErrorAsOutParameter.html", "classwpi_1_1ErrorAsOutParameter" ],
       [ "ErrorHandlerTraits", "classwpi_1_1ErrorHandlerTraits.html", null ],

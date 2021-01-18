@@ -1,5 +1,6 @@
 var NAVTREEINDEX12 =
 {
+"classfrc_1_1PWMSpeedController.html#a5cf56c4c57cf7e4ac19af4d5802af204":[5,0,2,132,8],
 "classfrc_1_1PWMSpeedController.html#a74323ac5a48d8caed4efe7192cef4619":[5,0,2,132,4],
 "classfrc_1_1PWMSpeedController.html#a7eca42fb050c221b477d69650ef7086b":[5,0,2,132,2],
 "classfrc_1_1PWMSpeedController.html#a91470767f8205af7a19432cff9514e9f":[5,0,2,132,9],
@@ -145,8 +146,8 @@ var NAVTREEINDEX12 =
 "classfrc_1_1ProfiledPIDController.html#af13e5e715edb76aec3eee4e45deedec5":[5,0,2,129,28],
 "classfrc_1_1ProfiledPIDController.html#af2888ba28768abcff7e74a7e31aab094":[5,0,2,129,11],
 "classfrc_1_1QuinticHermiteSpline.html":[5,0,2,137],
+"classfrc_1_1QuinticHermiteSpline.html#a6f479f9d7e447c856722d05964d33bb1":[5,0,2,137,0],
 "classfrc_1_1QuinticHermiteSpline.html#ae4ba15c88b5110889a69a5920e5aabfd":[5,0,2,137,1],
-"classfrc_1_1QuinticHermiteSpline.html#afca92ae26fccd3f0c91cc28f7d7adbcb":[5,0,2,137,0],
 "classfrc_1_1RamseteController.html":[5,0,2,138],
 "classfrc_1_1RamseteController.html#a2c792284f64f78e1fc521ee2deff8826":[5,0,2,138,4],
 "classfrc_1_1RamseteController.html#a38aac1cfffed34b94081609b1299b203":[5,0,2,138,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX12 =
 "classfrc_1_1RobotDrive.html#a3e3a9a86b08f1fa6121d7c311702b12b":[5,0,2,145,34],
 "classfrc_1_1RobotDrive.html#a42a25482392e70d44a64635f402907ed":[5,0,2,145,3],
 "classfrc_1_1RobotDrive.html#a456b3045d38e04e7ef8015a4ca533942":[5,0,2,145,12],
-"classfrc_1_1RobotDrive.html#a4661511e9f9d36dfa08b97ca69274f44":[5,0,2,145,9],
-"classfrc_1_1RobotDrive.html#a4b1ca2927733446ccec826805cf09201":[5,0,2,145,6]
+"classfrc_1_1RobotDrive.html#a4661511e9f9d36dfa08b97ca69274f44":[5,0,2,145,9]
 };

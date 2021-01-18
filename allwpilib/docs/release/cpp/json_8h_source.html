@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.1.2</span>
+   &#160;<span id="projectnumber">2021.2.1</span>
    </div>
   </td>
  </tr>
@@ -892,7 +892,7 @@ $(document).ready(function(){initNavTree('json_8h_source.html',''); initResizabl
 <div class="line"><a name="l01107"></a><span class="lineno"> 1107</span>&#160;};</div>
 <div class="line"><a name="l01108"></a><span class="lineno"> 1108</span>&#160; </div>
 <div class="line"><a name="l01109"></a><span class="lineno"> 1109</span>&#160;<span class="keyword">template</span>&lt;&gt;</div>
-<div class="line"><a name="l01110"></a><span class="lineno"><a class="line" href="structwpi_1_1detail_1_1external__constructor_3_01value__t_1_1array_01_4.html"> 1110</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structwpi_1_1detail_1_1external__constructor.html">external_constructor</a>&lt;<a class="code" href="namespacewpi_1_1detail.html#a4f2a85d1c51cbd4c58d990499f793788">value_t</a>::<a class="code" href="namespacewpi_1_1detail.html#a4f2a85d1c51cbd4c58d990499f793788af1f713c9e000f5d3f280adbd124df4f5">array</a>&gt;</div>
+<div class="line"><a name="l01110"></a><span class="lineno"><a class="line" href="structwpi_1_1detail_1_1external__constructor_3_01value__t_1_1array_01_4.html"> 1110</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structwpi_1_1detail_1_1external__constructor.html">external_constructor</a>&lt;<a class="code" href="namespacewpi_1_1detail.html#a4f2a85d1c51cbd4c58d990499f793788">value_t</a>::<a class="code" href="classwpi_1_1array.html">array</a>&gt;</div>
 <div class="line"><a name="l01111"></a><span class="lineno"> 1111</span>&#160;{</div>
 <div class="line"><a name="l01112"></a><span class="lineno"> 1112</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> BasicJsonType&gt;</div>
 <div class="line"><a name="l01113"></a><span class="lineno"> 1113</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> construct(BasicJsonType&amp; j, <span class="keyword">const</span> <span class="keyword">typename</span> BasicJsonType::array_t&amp; arr)</div>
@@ -3657,6 +3657,7 @@ $(document).ready(function(){initNavTree('json_8h_source.html',''); initResizabl
 <div class="ttc" id="aclasswpi_1_1detail_1_1iteration__proxy_html_a086240f74f0d2d1c8e6bd79492468788"><div class="ttname"><a href="classwpi_1_1detail_1_1iteration__proxy.html#a086240f74f0d2d1c8e6bd79492468788">wpi::detail::iteration_proxy::begin</a></div><div class="ttdeci">iteration_proxy_internal begin() noexcept</div><div class="ttdoc">return iterator begin (needed for range-based for)</div><div class="ttdef"><b>Definition:</b> json.h:2149</div></div>
 <div class="ttc" id="astructwpi_1_1adl__serializer_html_aa67ace1ae6e79a053b08e503e11f85fd"><div class="ttname"><a href="structwpi_1_1adl__serializer.html#aa67ace1ae6e79a053b08e503e11f85fd">wpi::adl_serializer::from_json</a></div><div class="ttdeci">static void from_json(BasicJsonType &amp;&amp;j, ValueType &amp;val) noexcept(noexcept(::wpi::from_json(std::forward&lt; BasicJsonType &gt;(j), val)))</div><div class="ttdoc">convert a JSON value to any value type</div><div class="ttdef"><b>Definition:</b> json.h:2570</div></div>
 <div class="ttc" id="astructwpi_1_1detail_1_1has__non__default__from__json_html"><div class="ttname"><a href="structwpi_1_1detail_1_1has__non__default__from__json.html">wpi::detail::has_non_default_from_json</a></div><div class="ttdef"><b>Definition:</b> json.h:325</div></div>
+<div class="ttc" id="aclasswpi_1_1array_html"><div class="ttname"><a href="classwpi_1_1array.html">wpi::array</a></div><div class="ttdoc">This class is a wrapper around std::array that does compile time size checking.</div><div class="ttdef"><b>Definition:</b> array.h:25</div></div>
 <div class="ttc" id="aclasswpi_1_1json_html_aa08367f7f01f6be03f756c0147a7274e"><div class="ttname"><a href="classwpi_1_1json.html#aa08367f7f01f6be03f756c0147a7274e">wpi::json::operator[]</a></div><div class="ttdeci">reference operator[](T *key)</div><div class="ttdoc">access specified object element</div><div class="ttdef"><b>Definition:</b> json.h:4890</div></div>
 <div class="ttc" id="aclasswpi_1_1detail_1_1exception_html_ac4fcb2e58a8f952c1eb5c0f82f285270"><div class="ttname"><a href="classwpi_1_1detail_1_1exception.html#ac4fcb2e58a8f952c1eb5c0f82f285270">wpi::detail::exception::id</a></div><div class="ttdeci">const int id</div><div class="ttdoc">the id of the exception</div><div class="ttdef"><b>Definition:</b> json.h:423</div></div>
 <div class="ttc" id="anamespacewpi_1_1detail_html_a4f2a85d1c51cbd4c58d990499f793788af1f713c9e000f5d3f280adbd124df4f5"><div class="ttname"><a href="namespacewpi_1_1detail.html#a4f2a85d1c51cbd4c58d990499f793788af1f713c9e000f5d3f280adbd124df4f5">wpi::detail::value_t::array</a></div><div class="ttdeci">@ array</div><div class="ttdoc">array (ordered collection of values)</div></div>
@@ -3811,7 +3812,7 @@ $(document).ready(function(){initNavTree('json_8h_source.html',''); initResizabl
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_ee3b12e3cc58cd62f356d078e112eeb4.html">wpiutil</a></li><li class="navelem"><a class="el" href="dir_0b37bdc985dfb85cd82ca92a771d9e04.html">src</a></li><li class="navelem"><a class="el" href="dir_19031513f3361c45d712cdc1c5b1f353.html">main</a></li><li class="navelem"><a class="el" href="dir_48410d5e596f2d65a12ffcdcda0be254.html">native</a></li><li class="navelem"><a class="el" href="dir_d01089097591e603100023951e2380fe.html">include</a></li><li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><b>json.h</b></li>
-    <li class="footer">Generated on Wed Jan 6 2021 04:05:59 for WPILibC++ by
+    <li class="footer">Generated on Mon Jan 18 2021 04:37:01 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

@@ -4,6 +4,6 @@ var dir_6a6d4dbfd7def32c812c83ce511abb63 =
     [ "Discretization.h", "Discretization_8h_source.html", null ],
     [ "LinearSystem.h", "LinearSystem_8h_source.html", null ],
     [ "LinearSystemLoop.h", "LinearSystemLoop_8h_source.html", null ],
-    [ "NumericalJacobian.h", "NumericalJacobian_8h_source.html", null ],
-    [ "RungeKutta.h", "RungeKutta_8h_source.html", null ]
+    [ "NumericalIntegration.h", "NumericalIntegration_8h_source.html", null ],
+    [ "NumericalJacobian.h", "NumericalJacobian_8h_source.html", null ]
 ];

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.1.2</span>
+   &#160;<span id="projectnumber">2021.2.1</span>
    </div>
   </td>
  </tr>
@@ -116,9 +116,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga8c603d99c43f289bc5b444d08cc75490"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__notifier.html#ga8c603d99c43f289bc5b444d08cc75490">HAL_CancelNotifierAlarm</a> (HAL_NotifierHandle notifierHandle, int32_t *status)</td></tr>
 <tr class="memdesc:ga8c603d99c43f289bc5b444d08cc75490"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancels the next notifier alarm.  <a href="group__hal__notifier.html#ga8c603d99c43f289bc5b444d08cc75490">More...</a><br /></td></tr>
 <tr class="separator:ga8c603d99c43f289bc5b444d08cc75490"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga349a923ff7c51dde2e9bb739738f11ca"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__notifier.html#ga349a923ff7c51dde2e9bb739738f11ca">HAL_WaitForNotifierAlarm</a> (HAL_NotifierHandle notifierHandle, int32_t *status)</td></tr>
-<tr class="memdesc:ga349a923ff7c51dde2e9bb739738f11ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waits for the next alarm for the specific notifier.  <a href="group__hal__notifier.html#ga349a923ff7c51dde2e9bb739738f11ca">More...</a><br /></td></tr>
-<tr class="separator:ga349a923ff7c51dde2e9bb739738f11ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa07746b4e5448fe8a943d8d48013466c"><td class="memItemLeft" align="right" valign="top">WPI_NODISCARD uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__notifier.html#gaa07746b4e5448fe8a943d8d48013466c">HAL_WaitForNotifierAlarm</a> (HAL_NotifierHandle notifierHandle, int32_t *status)</td></tr>
+<tr class="memdesc:gaa07746b4e5448fe8a943d8d48013466c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waits for the next alarm for the specific notifier.  <a href="group__hal__notifier.html#gaa07746b4e5448fe8a943d8d48013466c">More...</a><br /></td></tr>
+<tr class="separator:gaa07746b4e5448fe8a943d8d48013466c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Function Documentation</h2>
@@ -342,14 +342,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga349a923ff7c51dde2e9bb739738f11ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga349a923ff7c51dde2e9bb739738f11ca">&#9670;&nbsp;</a></span>HAL_WaitForNotifierAlarm()</h2>
+<a id="gaa07746b4e5448fe8a943d8d48013466c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa07746b4e5448fe8a943d8d48013466c">&#9670;&nbsp;</a></span>HAL_WaitForNotifierAlarm()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint64_t HAL_WaitForNotifierAlarm </td>
+          <td class="memname">WPI_NODISCARD uint64_t HAL_WaitForNotifierAlarm </td>
           <td>(</td>
           <td class="paramtype">HAL_NotifierHandle&#160;</td>
           <td class="paramname"><em>notifierHandle</em>, </td>
@@ -369,7 +369,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Waits for the next alarm for the specific notifier. </p>
-<p>This is a blocking call until either the time elapses or HAL_StopNotifier gets called.</p>
+<p>This is a blocking call until either the time elapses or HAL_StopNotifier gets called. If the latter occurs, this function will return zero and any loops using this function should exit. Failing to do so can lead to use-after-frees.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">notifierHandle</td><td>the notifier handle </td></tr>
@@ -385,7 +385,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Jan 6 2021 04:06:00 for WPILibC++ by
+    <li class="footer">Generated on Mon Jan 18 2021 04:37:01 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>
