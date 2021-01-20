@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.2.1-1-g38c1a1f</span>
+   &#160;<span id="projectnumber">2021.2.1-3-g6b1898f</span>
    </div>
   </td>
  </tr>
@@ -128,63 +128,63 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      : <a class="code" href="classfrc_1_1Notifier.html">Notifier</a>(std::bind(std::forward&lt;Callable&gt;(f), std::forward&lt;Arg&gt;(arg),</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                           std::forward&lt;Args&gt;(args)...)) {}</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classfrc_1_1Notifier.html#ab01ce1711d9054c05c670d6184e30696">   54</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc_1_1Notifier.html#ab01ce1711d9054c05c670d6184e30696">Notifier</a>(<span class="keywordtype">int</span> priority, std::function&lt;<span class="keywordtype">void</span>()&gt; handler);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Callable, <span class="keyword">typename</span> Arg, <span class="keyword">typename</span>... Args&gt;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="code" href="classfrc_1_1Notifier.html#a12ecfb6c6335e29ebe1dc6779e70e4c2">Notifier</a>(<span class="keywordtype">int</span> priority, Callable&amp;&amp; f, Arg&amp;&amp; arg, Args&amp;&amp;... args)</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      : <a class="code" href="classfrc_1_1Notifier.html">Notifier</a>(priority,</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                 std::bind(std::forward&lt;Callable&gt;(f), std::forward&lt;Arg&gt;(arg),</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                           std::forward&lt;Args&gt;(args)...)) {}</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classfrc_1_1Notifier.html#a2cce00402c030ff5764fb11faa5bc830">   65</a></span>&#160;  <a class="code" href="classfrc_1_1Notifier.html#a2cce00402c030ff5764fb11faa5bc830">~Notifier</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <a class="code" href="classfrc_1_1Notifier.html#a12ecfb6c6335e29ebe1dc6779e70e4c2">Notifier</a>(<a class="code" href="classfrc_1_1Notifier.html">Notifier</a>&amp;&amp; rhs);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="classfrc_1_1Notifier.html">Notifier</a>&amp; operator=(<a class="code" href="classfrc_1_1Notifier.html">Notifier</a>&amp;&amp; rhs);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="classfrc_1_1Notifier.html#aeed73a809d22908abae08440671c1d59">   75</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Notifier.html#aeed73a809d22908abae08440671c1d59">SetName</a>(<span class="keyword">const</span> <a class="code" href="classwpi_1_1Twine.html">wpi::Twine</a>&amp; name);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classfrc_1_1Notifier.html#a3744a6ff39272da9ad719fead95bc31a">   82</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Notifier.html#a3744a6ff39272da9ad719fead95bc31a">SetHandler</a>(std::function&lt;<span class="keywordtype">void</span>()&gt; handler);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  WPI_DEPRECATED(<span class="stringliteral">&quot;Use unit-safe StartSingle method instead.&quot;</span>)</div>
-<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="classfrc_1_1Notifier.html#af333fd2ede95b074803d2e15d9ae58b2">   95</a></span>&#160;  void <a class="code" href="classfrc_1_1Notifier.html#af333fd2ede95b074803d2e15d9ae58b2">StartSingle</a>(<span class="keywordtype">double</span> delay);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="classfrc_1_1Notifier.html#ac6fdc8a4a8ecbbb4a863e639bf719323">  104</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Notifier.html#af333fd2ede95b074803d2e15d9ae58b2">StartSingle</a>(units::second_t delay);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  WPI_DEPRECATED(&quot;Use unit-safe <a class="code" href="classfrc_1_1Notifier.html#a94134987d0296d5c193246e6543791e0">StartPeriodic</a> method instead.&quot;)</div>
-<div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="classfrc_1_1Notifier.html#a94134987d0296d5c193246e6543791e0">  120</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Notifier.html#a94134987d0296d5c193246e6543791e0">StartPeriodic</a>(<span class="keywordtype">double</span> period);</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
-<div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="classfrc_1_1Notifier.html#a5bc1b27b2d22ca7de91fe1701746c521">  132</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Notifier.html#a94134987d0296d5c193246e6543791e0">StartPeriodic</a>(units::second_t period);</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
-<div class="line"><a name="l00143"></a><span class="lineno"><a class="line" href="classfrc_1_1Notifier.html#a7aa272fd7d1d96c21f4aa52317449044">  143</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Notifier.html#a7aa272fd7d1d96c21f4aa52317449044">Stop</a>();</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; private:</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  <span class="keywordtype">void</span> UpdateAlarm(uint64_t triggerTime);</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  <span class="keywordtype">void</span> UpdateAlarm();</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  <span class="comment">// The thread waiting on the HAL alarm</span></div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  std::thread m_thread;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  <span class="comment">// Held while updating process information</span></div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  wpi::mutex m_processMutex;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  <span class="comment">// HAL handle, atomic for proper destruction</span></div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  std::atomic&lt;HAL_NotifierHandle&gt; m_notifier{0};</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  <span class="comment">// Address of the handler</span></div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  std::function&lt;void()&gt; m_handler;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <span class="comment">// The absolute expiration time</span></div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  <span class="keywordtype">double</span> m_expirationTime = 0;</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  <span class="comment">// The relative time (either periodic or single)</span></div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  <span class="keywordtype">double</span> m_period = 0;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  <span class="comment">// True if this is a periodic event</span></div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  <span class="keywordtype">bool</span> m_periodic = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;};</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160; </div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classfrc_1_1Notifier.html#ab01ce1711d9054c05c670d6184e30696">   55</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc_1_1Notifier.html#ab01ce1711d9054c05c670d6184e30696">Notifier</a>(<span class="keywordtype">int</span> priority, std::function&lt;<span class="keywordtype">void</span>()&gt; handler);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Callable, <span class="keyword">typename</span> Arg, <span class="keyword">typename</span>... Args&gt;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <a class="code" href="classfrc_1_1Notifier.html#a12ecfb6c6335e29ebe1dc6779e70e4c2">Notifier</a>(<span class="keywordtype">int</span> priority, Callable&amp;&amp; f, Arg&amp;&amp; arg, Args&amp;&amp;... args)</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      : <a class="code" href="classfrc_1_1Notifier.html">Notifier</a>(priority,</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                 std::bind(std::forward&lt;Callable&gt;(f), std::forward&lt;Arg&gt;(arg),</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                           std::forward&lt;Args&gt;(args)...)) {}</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classfrc_1_1Notifier.html#a2cce00402c030ff5764fb11faa5bc830">   66</a></span>&#160;  <a class="code" href="classfrc_1_1Notifier.html#a2cce00402c030ff5764fb11faa5bc830">~Notifier</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="classfrc_1_1Notifier.html#a12ecfb6c6335e29ebe1dc6779e70e4c2">Notifier</a>(<a class="code" href="classfrc_1_1Notifier.html">Notifier</a>&amp;&amp; rhs);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <a class="code" href="classfrc_1_1Notifier.html">Notifier</a>&amp; operator=(<a class="code" href="classfrc_1_1Notifier.html">Notifier</a>&amp;&amp; rhs);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classfrc_1_1Notifier.html#aeed73a809d22908abae08440671c1d59">   76</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Notifier.html#aeed73a809d22908abae08440671c1d59">SetName</a>(<span class="keyword">const</span> <a class="code" href="classwpi_1_1Twine.html">wpi::Twine</a>&amp; name);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="classfrc_1_1Notifier.html#a3744a6ff39272da9ad719fead95bc31a">   83</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Notifier.html#a3744a6ff39272da9ad719fead95bc31a">SetHandler</a>(std::function&lt;<span class="keywordtype">void</span>()&gt; handler);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  WPI_DEPRECATED(<span class="stringliteral">&quot;Use unit-safe StartSingle method instead.&quot;</span>)</div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="classfrc_1_1Notifier.html#af333fd2ede95b074803d2e15d9ae58b2">   96</a></span>&#160;  void <a class="code" href="classfrc_1_1Notifier.html#af333fd2ede95b074803d2e15d9ae58b2">StartSingle</a>(<span class="keywordtype">double</span> delay);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="classfrc_1_1Notifier.html#ac6fdc8a4a8ecbbb4a863e639bf719323">  105</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Notifier.html#af333fd2ede95b074803d2e15d9ae58b2">StartSingle</a>(units::second_t delay);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  WPI_DEPRECATED(&quot;Use unit-safe <a class="code" href="classfrc_1_1Notifier.html#a94134987d0296d5c193246e6543791e0">StartPeriodic</a> method instead.&quot;)</div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="classfrc_1_1Notifier.html#a94134987d0296d5c193246e6543791e0">  121</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Notifier.html#a94134987d0296d5c193246e6543791e0">StartPeriodic</a>(<span class="keywordtype">double</span> period);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="classfrc_1_1Notifier.html#a5bc1b27b2d22ca7de91fe1701746c521">  133</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Notifier.html#a94134987d0296d5c193246e6543791e0">StartPeriodic</a>(units::second_t period);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="classfrc_1_1Notifier.html#a7aa272fd7d1d96c21f4aa52317449044">  144</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Notifier.html#a7aa272fd7d1d96c21f4aa52317449044">Stop</a>();</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; private:</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  <span class="keywordtype">void</span> UpdateAlarm(uint64_t triggerTime);</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  <span class="keywordtype">void</span> UpdateAlarm();</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  <span class="comment">// The thread waiting on the HAL alarm</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  std::thread m_thread;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  <span class="comment">// Held while updating process information</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  wpi::mutex m_processMutex;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  <span class="comment">// HAL handle, atomic for proper destruction</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  std::atomic&lt;HAL_NotifierHandle&gt; m_notifier{0};</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  <span class="comment">// Address of the handler</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  std::function&lt;void()&gt; m_handler;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  <span class="comment">// The absolute expiration time</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  <span class="keywordtype">double</span> m_expirationTime = 0;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  <span class="comment">// The relative time (either periodic or single)</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  <span class="keywordtype">double</span> m_period = 0;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  <span class="comment">// True if this is a periodic event</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  <span class="keywordtype">bool</span> m_periodic = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;};</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; </div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;}  <span class="comment">// namespace frc</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassfrc_1_1Notifier_html_a94134987d0296d5c193246e6543791e0"><div class="ttname"><a href="classfrc_1_1Notifier.html#a94134987d0296d5c193246e6543791e0">frc::Notifier::StartPeriodic</a></div><div class="ttdeci">void StartPeriodic(double period)</div><div class="ttdoc">Register for periodic event notification.</div></div>
@@ -203,7 +203,7 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_c83246fd67bf422561e892c78521edd1.html">wpilibc</a></li><li class="navelem"><a class="el" href="dir_a55b36a80db95a4ab182a656f2eb2509.html">src</a></li><li class="navelem"><a class="el" href="dir_0fce2ef06e3c6f43f5c610d197b1a66e.html">main</a></li><li class="navelem"><a class="el" href="dir_05ef35d0b06c7e71bb0c2a8a996c52cb.html">native</a></li><li class="navelem"><a class="el" href="dir_9bb56e9ddac3e93dcc0aa7b90d99af5f.html">include</a></li><li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><b>Notifier.h</b></li>
-    <li class="footer">Generated on Wed Jan 20 2021 07:00:07 for WPILibC++ by
+    <li class="footer">Generated on Wed Jan 20 2021 07:01:13 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>
