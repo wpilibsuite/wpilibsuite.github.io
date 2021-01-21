@@ -1,5 +1,7 @@
 var NAVTREEINDEX36 =
 {
+"group__ntcore__logger__cfunc.html#ga0a9c5c32c23466b02558b2dd5aae593b":[3,2,8,0],
+"group__ntcore__logger__cfunc.html#ga0d59625cf5b269e5690dcc2ff7197ac7":[3,2,8,7],
 "group__ntcore__logger__cfunc.html#ga28678881c133ffe87f91f621b5558cee":[3,2,8,1],
 "group__ntcore__logger__cfunc.html#ga52f5816a793c4327333f6aebfbf541ba":[3,2,8,5],
 "group__ntcore__logger__cfunc.html#gaaaf0d1c5efd341c80fb2ced526b53adf":[3,2,8,8],
@@ -247,7 +249,5 @@ var NAVTREEINDEX36 =
 "iterator__range_8h.html":[6,0,8,0,0,0,0,0,37],
 "iterator__range_8h.html#a4910dff5043051d7289e9027e5945e66":[6,0,8,0,0,0,0,0,37,2],
 "iterator__range_8h.html#a4c5d16e42b960b9186d08d96e4d3a440":[6,0,8,0,0,0,0,0,37,3],
-"iterator__range_8h.html#afb625790b1f092e587f989ad80a110c1":[6,0,8,0,0,0,0,0,37,1],
-"iterator__range_8h_source.html":[6,0,8,0,0,0,0,0,37],
-"jni__util_8h_source.html":[6,0,8,0,0,0,0,0,38]
+"iterator__range_8h.html#afb625790b1f092e587f989ad80a110c1":[6,0,8,0,0,0,0,0,37,1]
 };

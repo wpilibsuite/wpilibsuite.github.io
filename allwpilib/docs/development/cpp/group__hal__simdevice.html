@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.2.1-5-g15be5cb</span>
+   &#160;<span id="projectnumber">2021.2.1-7-g6ba8c28</span>
    </div>
   </td>
  </tr>
@@ -110,6 +110,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ga10aabdc965263e8fcfa2c10678d40660"><td class="memItemLeft" align="right" valign="top">HAL_SimValueHandle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__simdevice.html#ga10aabdc965263e8fcfa2c10678d40660">HAL_CreateSimValue</a> (HAL_SimDeviceHandle device, const char *name, int32_t direction, const struct <a class="el" href="structHAL__Value.html">HAL_Value</a> *initialValue)</td></tr>
 <tr class="memdesc:ga10aabdc965263e8fcfa2c10678d40660"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a value on a simulated device.  <a href="group__hal__simdevice.html#ga10aabdc965263e8fcfa2c10678d40660">More...</a><br /></td></tr>
 <tr class="separator:ga10aabdc965263e8fcfa2c10678d40660"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga08441b04a6a6d9c7542f54572fc179a5"><td class="memItemLeft" align="right" valign="top">HAL_SimValueHandle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__simdevice.html#ga08441b04a6a6d9c7542f54572fc179a5">HAL_CreateSimValueInt</a> (HAL_SimDeviceHandle device, const char *name, int32_t direction, int32_t initialValue)</td></tr>
+<tr class="memdesc:ga08441b04a6a6d9c7542f54572fc179a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an int value on a simulated device.  <a href="group__hal__simdevice.html#ga08441b04a6a6d9c7542f54572fc179a5">More...</a><br /></td></tr>
+<tr class="separator:ga08441b04a6a6d9c7542f54572fc179a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga634408f23b2eba9059c652693e4c9066"><td class="memItemLeft" align="right" valign="top">HAL_SimValueHandle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__simdevice.html#ga634408f23b2eba9059c652693e4c9066">HAL_CreateSimValueLong</a> (HAL_SimDeviceHandle device, const char *name, int32_t direction, int64_t initialValue)</td></tr>
+<tr class="memdesc:ga634408f23b2eba9059c652693e4c9066"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a long value on a simulated device.  <a href="group__hal__simdevice.html#ga634408f23b2eba9059c652693e4c9066">More...</a><br /></td></tr>
+<tr class="separator:ga634408f23b2eba9059c652693e4c9066"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5bd6388ee950d49a3fa608e70e86e214"><td class="memItemLeft" align="right" valign="top">HAL_SimValueHandle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__simdevice.html#ga5bd6388ee950d49a3fa608e70e86e214">HAL_CreateSimValueDouble</a> (HAL_SimDeviceHandle device, const char *name, int32_t direction, double initialValue)</td></tr>
 <tr class="memdesc:ga5bd6388ee950d49a3fa608e70e86e214"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a double value on a simulated device.  <a href="group__hal__simdevice.html#ga5bd6388ee950d49a3fa608e70e86e214">More...</a><br /></td></tr>
 <tr class="separator:ga5bd6388ee950d49a3fa608e70e86e214"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -505,6 +511,128 @@ Functions</h2></td></tr>
     <tr><td class="paramname">options</td><td>array of option descriptions </td></tr>
     <tr><td class="paramname">optionValues</td><td>array of option double values </td></tr>
     <tr><td class="paramname">initialValue</td><td>initial value (selection) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>simulated value handle </dd></dl>
+
+</div>
+</div>
+<a id="ga08441b04a6a6d9c7542f54572fc179a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga08441b04a6a6d9c7542f54572fc179a5">&#9670;&nbsp;</a></span>HAL_CreateSimValueInt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HAL_SimValueHandle HAL_CreateSimValueInt </td>
+          <td>(</td>
+          <td class="paramtype">HAL_SimDeviceHandle&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>direction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>initialValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates an int value on a simulated device. </p>
+<p>Returns 0 if not in simulation; this can be used to avoid calls to Set/Get functions.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>simulated device handle </td></tr>
+    <tr><td class="paramname">name</td><td>value name </td></tr>
+    <tr><td class="paramname">direction</td><td>input/output/bidir (from perspective of user code) </td></tr>
+    <tr><td class="paramname">initialValue</td><td>initial value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>simulated value handle </dd></dl>
+
+</div>
+</div>
+<a id="ga634408f23b2eba9059c652693e4c9066"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga634408f23b2eba9059c652693e4c9066">&#9670;&nbsp;</a></span>HAL_CreateSimValueLong()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HAL_SimValueHandle HAL_CreateSimValueLong </td>
+          <td>(</td>
+          <td class="paramtype">HAL_SimDeviceHandle&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>direction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>initialValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a long value on a simulated device. </p>
+<p>Returns 0 if not in simulation; this can be used to avoid calls to Set/Get functions.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>simulated device handle </td></tr>
+    <tr><td class="paramname">name</td><td>value name </td></tr>
+    <tr><td class="paramname">direction</td><td>input/output/bidir (from perspective of user code) </td></tr>
+    <tr><td class="paramname">initialValue</td><td>initial value </td></tr>
   </table>
   </dd>
 </dl>
@@ -1068,7 +1196,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Jan 21 2021 04:40:41 for WPILibC++ by
+    <li class="footer">Generated on Thu Jan 21 2021 04:45:15 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

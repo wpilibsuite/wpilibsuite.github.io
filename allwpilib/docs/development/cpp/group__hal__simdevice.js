@@ -6,6 +6,8 @@ var group__hal__simdevice =
     [ "HAL_CreateSimValueDouble", "group__hal__simdevice.html#ga5bd6388ee950d49a3fa608e70e86e214", null ],
     [ "HAL_CreateSimValueEnum", "group__hal__simdevice.html#ga589be09032ac3119839caca8bdafd4d2", null ],
     [ "HAL_CreateSimValueEnumDouble", "group__hal__simdevice.html#ga068ccb7a53ae25eaefb4b184f3eee10c", null ],
+    [ "HAL_CreateSimValueInt", "group__hal__simdevice.html#ga08441b04a6a6d9c7542f54572fc179a5", null ],
+    [ "HAL_CreateSimValueLong", "group__hal__simdevice.html#ga634408f23b2eba9059c652693e4c9066", null ],
     [ "HAL_ENUM", "group__hal__simdevice.html#ga82d1db3d13cb6397a8a795dce593e181", null ],
     [ "HAL_FreeSimDevice", "group__hal__simdevice.html#ga2c6ebe956e466aa210fa74d23cd42808", null ],
     [ "HAL_GetSimValue", "group__hal__simdevice.html#ga8024433d1d76490e4c9032696bbb74be", null ],

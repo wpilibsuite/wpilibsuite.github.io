@@ -1,5 +1,7 @@
 var NAVTREEINDEX39 =
 {
+"structwpi_1_1IntrusiveRefCntPtrInfo.html":[5,0,7,107],
+"structwpi_1_1IntrusiveRefCntPtrInfo.html#a0f29906e2d4b116d0d69261748c98914":[5,0,7,107,0],
 "structwpi_1_1IntrusiveRefCntPtrInfo.html#a43f73a66b951583e94b82b6cf2bde43e":[5,0,7,107,1],
 "structwpi_1_1PointerIntPairInfo.html":[5,0,7,143],
 "structwpi_1_1PointerIntPairInfo.html#a7e8db268138a7a0b09919a997f2d479ead4d8412a6a5e67595910d32fca3085b6":[5,0,7,143,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX39 =
 "structwpi_1_1detail_1_1zip__common.html#a25d09f8735ca5195e13925d5f87df636":[5,0,7,0,74,6],
 "structwpi_1_1detail_1_1zip__common.html#a3355d8841f1e6518686db1f11d4d8771":[5,0,7,0,74,9],
 "structwpi_1_1detail_1_1zip__common.html#a593bfafdf5650fe89b4af2200d11afcc":[5,0,7,0,74,7],
-"structwpi_1_1detail_1_1zip__common.html#a72035113248f7df6d22d05832b3d2e2e":[5,0,7,0,74,5],
-"structwpi_1_1detail_1_1zip__common.html#a836e9f35d2b4e1c34195763804f6b8e1":[5,0,7,0,74,4],
-"structwpi_1_1detail_1_1zip__common.html#aad1619dbf23cfc84a7c25b9358540b94":[5,0,7,0,74,8]
+"structwpi_1_1detail_1_1zip__common.html#a72035113248f7df6d22d05832b3d2e2e":[5,0,7,0,74,5]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX38 =
 {
+"structcs_1_1VideoMode.html#af609b1218157529a43d8400e646e183c":[3,6,17,0],
+"structcs_1_1VideoMode.html#af609b1218157529a43d8400e646e183ca079dbdeb2ee22b4a1fca071e2a067afc":[3,6,17,0,2],
 "structcs_1_1VideoMode.html#af609b1218157529a43d8400e646e183ca30ac416074440d95b3d54defeba28251":[3,6,17,0,0],
 "structcs_1_1VideoMode.html#af609b1218157529a43d8400e646e183ca3cba1faed93be76a17daf0d962e48015":[3,6,17,0,5],
 "structcs_1_1VideoMode.html#af609b1218157529a43d8400e646e183ca6dd1f0ef1bc181b52b5e0c357b665d04":[3,6,17,0,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX38 =
 "structwpi_1_1FunctionPointerLikeTypeTraits.html":[5,0,7,85],
 "structwpi_1_1FunctionPointerLikeTypeTraits.html#a25e7aafc25d0aab10e7bdf93c991e73f":[5,0,7,85,2],
 "structwpi_1_1FunctionPointerLikeTypeTraits.html#a7dce07dd5ee4913b79aa670cde60f049a6dd9cfbb626782d1ce008980d83b0ef6":[5,0,7,85,0],
-"structwpi_1_1FunctionPointerLikeTypeTraits.html#a7e4782b02172a0463d371ff4e9fec083":[5,0,7,85,1],
-"structwpi_1_1IntrusiveRefCntPtrInfo.html":[5,0,7,107],
-"structwpi_1_1IntrusiveRefCntPtrInfo.html#a0f29906e2d4b116d0d69261748c98914":[5,0,7,107,0]
+"structwpi_1_1FunctionPointerLikeTypeTraits.html#a7e4782b02172a0463d371ff4e9fec083":[5,0,7,85,1]
 };

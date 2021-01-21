@@ -1,5 +1,7 @@
 var NAVTREEINDEX40 =
 {
+"structwpi_1_1detail_1_1zip__common.html#a836e9f35d2b4e1c34195763804f6b8e1":[5,0,7,0,74,4],
+"structwpi_1_1detail_1_1zip__common.html#aad1619dbf23cfc84a7c25b9358540b94":[5,0,7,0,74,8],
 "structwpi_1_1detail_1_1zip__common.html#ac61aa3e2d786cd1cdf7eb4510120e8c5":[5,0,7,0,74,10],
 "structwpi_1_1detail_1_1zip__common.html#ae3bdd53d494377ebdd7e65cd8b5a81e7":[5,0,7,0,74,2],
 "structwpi_1_1detail_1_1zip__common.html#aff06be5d1766a4901a39a7a6c57da2ca":[5,0,7,0,74,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX40 =
 "wpilibOldCommands_2src_2main_2native_2include_2frc_2buttons_2Button_8h_source.html":[6,0,6,0,0,0,0,0,0,0],
 "wpilibOldCommands_2src_2main_2native_2include_2frc_2buttons_2JoystickButton_8h_source.html":[6,0,6,0,0,0,0,0,0,5],
 "wpilibOldCommands_2src_2main_2native_2include_2frc_2buttons_2NetworkButton_8h_source.html":[6,0,6,0,0,0,0,0,0,6],
-"wpilibOldCommands_2src_2main_2native_2include_2frc_2buttons_2POVButton_8h_source.html":[6,0,6,0,0,0,0,0,0,7],
-"wpilibOldCommands_2src_2main_2native_2include_2frc_2buttons_2Trigger_8h_source.html":[6,0,6,0,0,0,0,0,0,11],
-"wpilibOldCommands_2src_2main_2native_2include_2frc_2commands_2Command_8h_source.html":[6,0,6,0,0,0,0,0,1,0]
+"wpilibOldCommands_2src_2main_2native_2include_2frc_2buttons_2POVButton_8h_source.html":[6,0,6,0,0,0,0,0,0,7]
 };
