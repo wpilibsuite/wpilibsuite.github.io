@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['raw_20image_20functions_7954',['Raw Image Functions',['../group__cscore__raw__cfunc.html',1,'']]],
-  ['remote_20procedure_20call_20functions_7955',['Remote Procedure Call Functions',['../group__ntcore__rpc__cfunc.html',1,'']]],
-  ['remote_20procedure_20call_20functions_7956',['Remote Procedure Call Functions',['../group__ntcore__rpc__func.html',1,'']]]
+  ['raw_20image_20functions_8004',['Raw Image Functions',['../group__cscore__raw__cfunc.html',1,'']]],
+  ['remote_20procedure_20call_20functions_8005',['Remote Procedure Call Functions',['../group__ntcore__rpc__cfunc.html',1,'']]],
+  ['remote_20procedure_20call_20functions_8006',['Remote Procedure Call Functions',['../group__ntcore__rpc__func.html',1,'']]]
 ];

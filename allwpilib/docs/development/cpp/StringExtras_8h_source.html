@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.2.1-4-g4cf0e5e</span>
+   &#160;<span id="projectnumber">2021.2.1-5-g15be5cb</span>
    </div>
   </td>
  </tr>
@@ -124,15 +124,15 @@ $(document).ready(function(){initNavTree('StringExtras_8h_source.html',''); init
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">namespace </span>wpi {</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classwpi_1_1SmallVectorImpl.html">   32</a></span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="keyword">class </span><a class="code" href="classwpi_1_1SmallVectorImpl.html">SmallVectorImpl</a>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">class </span><a class="code" href="classwpi_1_1raw__ostream.html">raw_ostream</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="keyword">class </span>SmallVectorImpl;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">class </span>raw_ostream;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">char</span> hexdigit(<span class="keywordtype">unsigned</span> X, <span class="keywordtype">bool</span> LowerCase = <span class="keyword">false</span>) {</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">char</span> HexChar = LowerCase ? <span class="charliteral">&#39;a&#39;</span> : <span class="charliteral">&#39;A&#39;</span>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordflow">return</span> X &lt; 10 ? <span class="charliteral">&#39;0&#39;</span> + X : HexChar + X - 10;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">inline</span> <a class="code" href="classwpi_1_1StringRef.html">StringRef</a> toStringRef(<span class="keywordtype">bool</span> B) { <span class="keywordflow">return</span> <a class="code" href="classwpi_1_1StringRef.html">StringRef</a>(B ? <span class="stringliteral">&quot;true&quot;</span> : <span class="stringliteral">&quot;false&quot;</span>); }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">inline</span> StringRef toStringRef(<span class="keywordtype">bool</span> B) { <span class="keywordflow">return</span> StringRef(B ? <span class="stringliteral">&quot;true&quot;</span> : <span class="stringliteral">&quot;false&quot;</span>); }</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">inline</span> StringRef toStringRef(ArrayRef&lt;uint8_t&gt; Input) {</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordflow">return</span> StringRef(<span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span><span class="keywordtype">char</span> *<span class="keyword">&gt;</span>(Input.begin()), Input.size());</div>
@@ -443,14 +443,12 @@ $(document).ready(function(){initNavTree('StringExtras_8h_source.html',''); init
 <div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;<span class="preprocessor">#endif // WPIUTIL_WPI_STRINGEXTRAS_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclasswpi_1_1SmallVectorImpl_html"><div class="ttname"><a href="classwpi_1_1SmallVectorImpl.html">wpi::SmallVectorImpl</a></div><div class="ttdoc">This class consists of common code factored out of the SmallVector class to reduce code duplication b...</div><div class="ttdef"><b>Definition:</b> StringExtras.h:32</div></div>
 <div class="ttc" id="aclasswpi_1_1StringRef_html"><div class="ttname"><a href="classwpi_1_1StringRef.html">wpi::StringRef</a></div><div class="ttdoc">StringRef - Represent a constant reference to a string, i.e.</div><div class="ttdef"><b>Definition:</b> StringRef.h:49</div></div>
-<div class="ttc" id="aclasswpi_1_1raw__ostream_html"><div class="ttname"><a href="classwpi_1_1raw__ostream.html">wpi::raw_ostream</a></div><div class="ttdoc">This class implements an extremely fast bulk output stream that can only output to a stream.</div><div class="ttdef"><b>Definition:</b> raw_ostream.h:47</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_ee3b12e3cc58cd62f356d078e112eeb4.html">wpiutil</a></li><li class="navelem"><a class="el" href="dir_0b37bdc985dfb85cd82ca92a771d9e04.html">src</a></li><li class="navelem"><a class="el" href="dir_19031513f3361c45d712cdc1c5b1f353.html">main</a></li><li class="navelem"><a class="el" href="dir_48410d5e596f2d65a12ffcdcda0be254.html">native</a></li><li class="navelem"><a class="el" href="dir_d01089097591e603100023951e2380fe.html">include</a></li><li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><b>StringExtras.h</b></li>
-    <li class="footer">Generated on Wed Jan 20 2021 07:02:40 for WPILibC++ by
+    <li class="footer">Generated on Thu Jan 21 2021 04:40:41 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

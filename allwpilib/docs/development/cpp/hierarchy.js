@@ -77,8 +77,8 @@ var hierarchy =
     [ "wpi::AlignedCharArray< wpi::support::detail::PickAlignment< value_type, alignment >::value, sizeof(value_type)>", "structwpi_1_1AlignedCharArray.html", null ],
     [ "wpi::detail::AlignerImpl< T1, T2, T3, T4, T5, T6, T7, T8, T9, T10 >", "classwpi_1_1detail_1_1AlignerImpl.html", null ],
     [ "wpi::AlignTo< Align >", "structwpi_1_1AlignTo.html", null ],
-    [ "frc::ADXL345_SPI::AllAxes", "structfrc_1_1ADXL345__SPI_1_1AllAxes.html", null ],
     [ "frc::ADXL345_I2C::AllAxes", "structfrc_1_1ADXL345__I2C_1_1AllAxes.html", null ],
+    [ "frc::ADXL345_SPI::AllAxes", "structfrc_1_1ADXL345__SPI_1_1AllAxes.html", null ],
     [ "frc::ADXL362::AllAxes", "structfrc_1_1ADXL362_1_1AllAxes.html", null ],
     [ "frc::sim::AnalogEncoderSim", "classfrc_1_1sim_1_1AnalogEncoderSim.html", null ],
     [ "frc::sim::AnalogGyroSim", "classfrc_1_1sim_1_1AnalogGyroSim.html", null ],
@@ -308,11 +308,11 @@ var hierarchy =
     [ "nt::EntryNotification", "classnt_1_1EntryNotification.html", null ],
     [ "wpi::detail::enumerator< R >", "classwpi_1_1detail_1_1enumerator.html", null ],
     [ "wpi::detail::enumerator_iter< R >", "classwpi_1_1detail_1_1enumerator__iter.html", null ],
+    [ "frc::Error", "classfrc_1_1Error.html", null ],
+    [ "wpi::uv::Error", "classwpi_1_1uv_1_1Error.html", null ],
     [ "wpi::Error", "classwpi_1_1Error.html", [
       [ "wpi::ErrorSuccess", "classwpi_1_1ErrorSuccess.html", null ]
     ] ],
-    [ "frc::Error", "classfrc_1_1Error.html", null ],
-    [ "wpi::uv::Error", "classwpi_1_1uv_1_1Error.html", null ],
     [ "wpi::ErrorAsOutParameter", "classwpi_1_1ErrorAsOutParameter.html", null ],
     [ "frc::ErrorBase", "classfrc_1_1ErrorBase.html", [
       [ "frc2::Command", "classfrc2_1_1Command.html", [
@@ -644,13 +644,13 @@ var hierarchy =
     ] ],
     [ "wpi::identity< Ty >", "structwpi_1_1identity.html", null ],
     [ "integral_constant", null, [
-      [ "std::tuple_size< wpi::array< T, N > >", "structstd_1_1tuple__size_3_01wpi_1_1array_3_01T_00_01N_01_4_01_4.html", null ]
-    ] ],
-    [ "integral_constant", null, [
       [ "wpi::detail::ConstantLog2< N >", "structwpi_1_1detail_1_1ConstantLog2.html", null ],
       [ "wpi::detail::ConstantLog2< 1 >", "structwpi_1_1detail_1_1ConstantLog2_3_011_01_4.html", null ],
       [ "wpi::hashing::detail::is_hashable_data< T >", "structwpi_1_1hashing_1_1detail_1_1is__hashable__data.html", null ],
       [ "wpi::hashing::detail::is_hashable_data< std::pair< T, U > >", "structwpi_1_1hashing_1_1detail_1_1is__hashable__data_3_01std_1_1pair_3_01T_00_01U_01_4_01_4.html", null ]
+    ] ],
+    [ "integral_constant", null, [
+      [ "std::tuple_size< wpi::array< T, N > >", "structstd_1_1tuple__size_3_01wpi_1_1array_3_01T_00_01N_01_4_01_4.html", null ]
     ] ],
     [ "wpi::detail::internal_iterator< BasicJsonType >", "structwpi_1_1detail_1_1internal__iterator.html", null ],
     [ "wpi::detail::internal_iterator< typename std::remove_const< BasicJsonType >::type >", "structwpi_1_1detail_1_1internal__iterator.html", null ],
@@ -1343,59 +1343,109 @@ var hierarchy =
     [ "wpi::SmallSet< std::string, 32 >", "classwpi_1_1SmallSet.html", null ],
     [ "wpi::SmallVectorAlignmentAndSize< T, typename >", "structwpi_1_1SmallVectorAlignmentAndSize.html", null ],
     [ "wpi::SmallVectorBase", "classwpi_1_1SmallVectorBase.html", [
+      [ "wpi::SmallVectorTemplateCommon< char >", "classwpi_1_1SmallVectorTemplateCommon.html", [
+        [ "wpi::SmallVectorTemplateBase< char >", "classwpi_1_1SmallVectorTemplateBase.html", [
+          [ "wpi::SmallVectorImpl< char >", "classwpi_1_1SmallVectorImpl.html", [
+            [ "wpi::SmallVector< char, 0 >", "classwpi_1_1SmallVector.html", null ],
+            [ "wpi::SmallVector< char, InternalLen >", "classwpi_1_1SmallVector.html", [
+              [ "wpi::SmallString< 128 >", "classwpi_1_1SmallString.html", null ],
+              [ "wpi::SmallString< 16 >", "classwpi_1_1SmallString.html", null ],
+              [ "wpi::SmallString< 32 >", "classwpi_1_1SmallString.html", null ],
+              [ "wpi::SmallString< 64 >", "classwpi_1_1SmallString.html", null ],
+              [ "wpi::SmallString< InternalLen >", "classwpi_1_1SmallString.html", null ]
+            ] ]
+          ] ]
+        ] ]
+      ] ],
+      [ "wpi::SmallVectorTemplateCommon< frc2::Command * >", "classwpi_1_1SmallVectorTemplateCommon.html", [
+        [ "wpi::SmallVectorTemplateBase< frc2::Command * >", "classwpi_1_1SmallVectorTemplateBase.html", [
+          [ "wpi::SmallVectorImpl< frc2::Command * >", "classwpi_1_1SmallVectorImpl.html", [
+            [ "wpi::SmallVector< frc2::Command *, 4 >", "classwpi_1_1SmallVector.html", null ]
+          ] ]
+        ] ]
+      ] ],
+      [ "wpi::SmallVectorTemplateCommon< frc2::Subsystem * >", "classwpi_1_1SmallVectorTemplateCommon.html", [
+        [ "wpi::SmallVectorTemplateBase< frc2::Subsystem * >", "classwpi_1_1SmallVectorTemplateBase.html", [
+          [ "wpi::SmallVectorImpl< frc2::Subsystem * >", "classwpi_1_1SmallVectorImpl.html", [
+            [ "wpi::SmallVector< frc2::Subsystem *, N >", "classwpi_1_1SmallVector.html", null ]
+          ] ]
+        ] ]
+      ] ],
+      [ "wpi::SmallVectorTemplateCommon< frc::Pose2d >", "classwpi_1_1SmallVectorTemplateCommon.html", [
+        [ "wpi::SmallVectorTemplateBase< frc::Pose2d >", "classwpi_1_1SmallVectorTemplateBase.html", [
+          [ "wpi::SmallVectorImpl< frc::Pose2d >", "classwpi_1_1SmallVectorImpl.html", [
+            [ "wpi::SmallVector< frc::Pose2d, 1 >", "classwpi_1_1SmallVector.html", null ]
+          ] ]
+        ] ]
+      ] ],
+      [ "wpi::SmallVectorTemplateCommon< nt::NetworkTableEntry >", "classwpi_1_1SmallVectorTemplateCommon.html", [
+        [ "wpi::SmallVectorTemplateBase< nt::NetworkTableEntry >", "classwpi_1_1SmallVectorTemplateBase.html", [
+          [ "wpi::SmallVectorImpl< nt::NetworkTableEntry >", "classwpi_1_1SmallVectorImpl.html", [
+            [ "wpi::SmallVector< nt::NetworkTableEntry, 2 >", "classwpi_1_1SmallVector.html", null ]
+          ] ]
+        ] ]
+      ] ],
+      [ "wpi::SmallVectorTemplateCommon< size_t >", "classwpi_1_1SmallVectorTemplateCommon.html", [
+        [ "wpi::SmallVectorTemplateBase< size_t >", "classwpi_1_1SmallVectorTemplateBase.html", [
+          [ "wpi::SmallVectorImpl< size_t >", "classwpi_1_1SmallVectorImpl.html", [
+            [ "wpi::SmallVector< size_t, 16 >", "classwpi_1_1SmallVector.html", null ]
+          ] ]
+        ] ]
+      ] ],
+      [ "wpi::SmallVectorTemplateCommon< std::pair< KeyT, ValueT > >", "classwpi_1_1SmallVectorTemplateCommon.html", [
+        [ "wpi::SmallVectorTemplateBase< std::pair< KeyT, ValueT > >", "classwpi_1_1SmallVectorTemplateBase.html", [
+          [ "wpi::SmallVectorImpl< std::pair< KeyT, ValueT > >", "classwpi_1_1SmallVectorImpl.html", [
+            [ "wpi::SmallVector< std::pair< KeyT, ValueT >, N >", "classwpi_1_1SmallVector.html", null ]
+          ] ]
+        ] ]
+      ] ],
+      [ "wpi::SmallVectorTemplateCommon< std::string >", "classwpi_1_1SmallVectorTemplateCommon.html", [
+        [ "wpi::SmallVectorTemplateBase< std::string >", "classwpi_1_1SmallVectorTemplateBase.html", [
+          [ "wpi::SmallVectorImpl< std::string >", "classwpi_1_1SmallVectorImpl.html", [
+            [ "wpi::SmallVector< std::string, 2 >", "classwpi_1_1SmallVector.html", null ],
+            [ "wpi::SmallVector< std::string, N >", "classwpi_1_1SmallVector.html", null ]
+          ] ]
+        ] ]
+      ] ],
+      [ "wpi::SmallVectorTemplateCommon< std::unique_ptr< frc2::Command > >", "classwpi_1_1SmallVectorTemplateCommon.html", [
+        [ "wpi::SmallVectorTemplateBase< std::unique_ptr< frc2::Command > >", "classwpi_1_1SmallVectorTemplateBase.html", [
+          [ "wpi::SmallVectorImpl< std::unique_ptr< frc2::Command > >", "classwpi_1_1SmallVectorImpl.html", [
+            [ "wpi::SmallVector< std::unique_ptr< frc2::Command >, 4 >", "classwpi_1_1SmallVector.html", null ]
+          ] ]
+        ] ]
+      ] ],
       [ "wpi::SmallVectorTemplateCommon< T >", "classwpi_1_1SmallVectorTemplateCommon.html", [
+        [ "wpi::SmallVectorTemplateBase< T >", "classwpi_1_1SmallVectorTemplateBase.html", [
+          [ "wpi::SmallVectorImpl< T >", "classwpi_1_1SmallVectorImpl.html", [
+            [ "wpi::SmallVector< T, N >", "classwpi_1_1SmallVector.html", null ]
+          ] ]
+        ] ],
         [ "wpi::SmallVectorTemplateBase< T, bool >", "classwpi_1_1SmallVectorTemplateBase.html", null ],
         [ "wpi::SmallVectorTemplateBase< T, true >", "classwpi_1_1SmallVectorTemplateBase_3_01T_00_01true_01_4.html", null ]
       ] ],
+      [ "wpi::SmallVectorTemplateCommon< uint8_t >", "classwpi_1_1SmallVectorTemplateCommon.html", [
+        [ "wpi::SmallVectorTemplateBase< uint8_t >", "classwpi_1_1SmallVectorTemplateBase.html", [
+          [ "wpi::SmallVectorImpl< uint8_t >", "classwpi_1_1SmallVectorImpl.html", [
+            [ "wpi::SmallVector< uint8_t, 1024 >", "classwpi_1_1SmallVector.html", null ],
+            [ "wpi::SmallVector< uint8_t, 14 >", "classwpi_1_1SmallVector.html", null ]
+          ] ]
+        ] ]
+      ] ],
+      [ "wpi::SmallVectorTemplateCommon< wpi::SmallString< 16 > >", "classwpi_1_1SmallVectorTemplateCommon.html", [
+        [ "wpi::SmallVectorTemplateBase< wpi::SmallString< 16 > >", "classwpi_1_1SmallVectorTemplateBase.html", [
+          [ "wpi::SmallVectorImpl< wpi::SmallString< 16 > >", "classwpi_1_1SmallVectorImpl.html", [
+            [ "wpi::SmallVector< wpi::SmallString< 16 >, 4 >", "classwpi_1_1SmallVector.html", null ]
+          ] ]
+        ] ]
+      ] ],
+      [ "wpi::SmallVectorTemplateCommon< wpi::uv::Buffer >", "classwpi_1_1SmallVectorTemplateCommon.html", [
+        [ "wpi::SmallVectorTemplateBase< wpi::uv::Buffer >", "classwpi_1_1SmallVectorTemplateBase.html", [
+          [ "wpi::SmallVectorImpl< wpi::uv::Buffer >", "classwpi_1_1SmallVectorImpl.html", [
+            [ "wpi::SmallVector< wpi::uv::Buffer, 4 >", "classwpi_1_1SmallVector.html", null ]
+          ] ]
+        ] ]
+      ] ],
       [ "wpi::SmallVectorTemplateCommon< T, typename >", "classwpi_1_1SmallVectorTemplateCommon.html", null ]
-    ] ],
-    [ "wpi::SmallVectorImpl< T >", "classwpi_1_1SmallVectorImpl.html", [
-      [ "wpi::SmallVector< T, N >", "classwpi_1_1SmallVector.html", null ]
-    ] ],
-    [ "wpi::SmallVectorImpl< char >", "classwpi_1_1SmallVectorImpl.html", [
-      [ "wpi::SmallVector< char, 0 >", "classwpi_1_1SmallVector.html", null ],
-      [ "wpi::SmallVector< char, InternalLen >", "classwpi_1_1SmallVector.html", [
-        [ "wpi::SmallString< 128 >", "classwpi_1_1SmallString.html", null ],
-        [ "wpi::SmallString< 16 >", "classwpi_1_1SmallString.html", null ],
-        [ "wpi::SmallString< 32 >", "classwpi_1_1SmallString.html", null ],
-        [ "wpi::SmallString< 64 >", "classwpi_1_1SmallString.html", null ],
-        [ "wpi::SmallString< InternalLen >", "classwpi_1_1SmallString.html", null ]
-      ] ]
-    ] ],
-    [ "wpi::SmallVectorImpl< frc2::Command * >", "classwpi_1_1SmallVectorImpl.html", [
-      [ "wpi::SmallVector< frc2::Command *, 4 >", "classwpi_1_1SmallVector.html", null ]
-    ] ],
-    [ "wpi::SmallVectorImpl< frc2::Subsystem * >", "classwpi_1_1SmallVectorImpl.html", [
-      [ "wpi::SmallVector< frc2::Subsystem *, N >", "classwpi_1_1SmallVector.html", null ]
-    ] ],
-    [ "wpi::SmallVectorImpl< frc::Pose2d >", "classwpi_1_1SmallVectorImpl.html", [
-      [ "wpi::SmallVector< frc::Pose2d, 1 >", "classwpi_1_1SmallVector.html", null ]
-    ] ],
-    [ "wpi::SmallVectorImpl< nt::NetworkTableEntry >", "classwpi_1_1SmallVectorImpl.html", [
-      [ "wpi::SmallVector< nt::NetworkTableEntry, 2 >", "classwpi_1_1SmallVector.html", null ]
-    ] ],
-    [ "wpi::SmallVectorImpl< size_t >", "classwpi_1_1SmallVectorImpl.html", [
-      [ "wpi::SmallVector< size_t, 16 >", "classwpi_1_1SmallVector.html", null ]
-    ] ],
-    [ "wpi::SmallVectorImpl< std::pair< KeyT, ValueT > >", "classwpi_1_1SmallVectorImpl.html", [
-      [ "wpi::SmallVector< std::pair< KeyT, ValueT >, N >", "classwpi_1_1SmallVector.html", null ]
-    ] ],
-    [ "wpi::SmallVectorImpl< std::string >", "classwpi_1_1SmallVectorImpl.html", [
-      [ "wpi::SmallVector< std::string, 2 >", "classwpi_1_1SmallVector.html", null ],
-      [ "wpi::SmallVector< std::string, N >", "classwpi_1_1SmallVector.html", null ]
-    ] ],
-    [ "wpi::SmallVectorImpl< std::unique_ptr< frc2::Command > >", "classwpi_1_1SmallVectorImpl.html", [
-      [ "wpi::SmallVector< std::unique_ptr< frc2::Command >, 4 >", "classwpi_1_1SmallVector.html", null ]
-    ] ],
-    [ "wpi::SmallVectorImpl< uint8_t >", "classwpi_1_1SmallVectorImpl.html", [
-      [ "wpi::SmallVector< uint8_t, 1024 >", "classwpi_1_1SmallVector.html", null ],
-      [ "wpi::SmallVector< uint8_t, 14 >", "classwpi_1_1SmallVector.html", null ]
-    ] ],
-    [ "wpi::SmallVectorImpl< wpi::SmallString< 16 > >", "classwpi_1_1SmallVectorImpl.html", [
-      [ "wpi::SmallVector< wpi::SmallString< 16 >, 4 >", "classwpi_1_1SmallVector.html", null ]
-    ] ],
-    [ "wpi::SmallVectorImpl< wpi::uv::Buffer >", "classwpi_1_1SmallVectorImpl.html", [
-      [ "wpi::SmallVector< wpi::uv::Buffer, 4 >", "classwpi_1_1SmallVector.html", null ]
     ] ],
     [ "wpi::SmallVectorStorage< T, N >", "structwpi_1_1SmallVectorStorage.html", [
       [ "wpi::SmallVector< T, N >", "classwpi_1_1SmallVector.html", null ]
@@ -1452,8 +1502,8 @@ var hierarchy =
     ] ],
     [ "frc::SplineHelper", "classfrc_1_1SplineHelper.html", null ],
     [ "frc::SplineParameterizer", "classfrc_1_1SplineParameterizer.html", null ],
-    [ "frc::Trajectory::State", "structfrc_1_1Trajectory_1_1State.html", null ],
     [ "frc::TrapezoidProfile< Distance >::State", "classfrc_1_1TrapezoidProfile_1_1State.html", null ],
+    [ "frc::Trajectory::State", "structfrc_1_1Trajectory_1_1State.html", null ],
     [ "frc::sim::DifferentialDrivetrainSim::State", "classfrc_1_1sim_1_1DifferentialDrivetrainSim_1_1State.html", null ],
     [ "wpi::static_circular_buffer< T, N >", "classwpi_1_1static__circular__buffer.html", null ],
     [ "wpi::detail::static_const< T >", "structwpi_1_1detail_1_1static__const.html", null ],
