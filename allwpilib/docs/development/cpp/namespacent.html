@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.2.1-16-g834a649</span>
+   &#160;<span id="projectnumber">2021.2.1-17-g45590ee</span>
    </div>
   </td>
  </tr>
@@ -156,6 +156,15 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:ga1869be780fcddb3d703623715ead828d"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; void(NT_EntryListener entry_listener, <a class="el" href="classwpi_1_1StringRef.html">StringRef</a> name, std::shared_ptr&lt; <a class="el" href="classnt_1_1Value.html">Value</a> &gt; value, unsigned int flags)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__entrylistener__func.html#ga1869be780fcddb3d703623715ead828d">EntryListenerCallback</a></td></tr>
+<tr class="memdesc:ga1869be780fcddb3d703623715ead828d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Entry listener callback function.  <a href="group__ntcore__entrylistener__func.html#ga1869be780fcddb3d703623715ead828d">More...</a><br /></td></tr>
+<tr class="separator:ga1869be780fcddb3d703623715ead828d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa88729f7f2563d47a4371de5e5c8badc"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__connectionlistener__func.html#gaa88729f7f2563d47a4371de5e5c8badc">ConnectionListenerCallback</a> = std::function&lt; void(NT_ConnectionListener, bool, const <a class="el" href="structnt_1_1ConnectionInfo.html">ConnectionInfo</a> &amp;)&gt;</td></tr>
+<tr class="memdesc:gaa88729f7f2563d47a4371de5e5c8badc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connection listener callback function.  <a href="group__ntcore__connectionlistener__func.html#gaa88729f7f2563d47a4371de5e5c8badc">More...</a><br /></td></tr>
+<tr class="separator:gaa88729f7f2563d47a4371de5e5c8badc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9c73b7905117ec0ebe03ec852712b6d7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__logger__func.html#ga9c73b7905117ec0ebe03ec852712b6d7">LogFunc</a> = std::function&lt; void(unsigned int, const char *, unsigned int, const char *)&gt;</td></tr>
+<tr class="memdesc:ga9c73b7905117ec0ebe03ec852712b6d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log function.  <a href="group__ntcore__logger__func.html#ga9c73b7905117ec0ebe03ec852712b6d7">More...</a><br /></td></tr>
+<tr class="separator:ga9c73b7905117ec0ebe03ec852712b6d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga10804efe6d43c40d49ddff640906ebd8"><td class="memItemLeft" align="right" valign="top">
 typedef <a class="el" href="classnt_1_1Value.html">Value</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__cpp__api.html#ga10804efe6d43c40d49ddff640906ebd8">NetworkTableValue</a></td></tr>
 <tr class="memdesc:ga10804efe6d43c40d49ddff640906ebd8"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classnt_1_1NetworkTable.html" title="A network table that knows its subtable path.">NetworkTable</a> <a class="el" href="classnt_1_1Value.html" title="A network table entry value.">Value</a> alias for similarity with Java. <br /></td></tr>
@@ -166,15 +175,6 @@ typedef <a class="el" href="classnt_1_1Value.html">Value</a>&#160;</td><td class
 <tr class="memitem:ga4650fe2de4b652883761692946db4a15"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; void(<a class="el" href="classnt_1_1NetworkTable.html">NetworkTable</a> *parent, <a class="el" href="classwpi_1_1StringRef.html">StringRef</a> name, std::shared_ptr&lt; <a class="el" href="classnt_1_1NetworkTable.html">NetworkTable</a> &gt; table)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__cpp__api.html#ga4650fe2de4b652883761692946db4a15">TableListener</a></td></tr>
 <tr class="memdesc:ga4650fe2de4b652883761692946db4a15"><td class="mdescLeft">&#160;</td><td class="mdescRight">A listener that listens to new sub-tables in a <a class="el" href="classnt_1_1NetworkTable.html" title="A network table that knows its subtable path.">NetworkTable</a>.  <a href="group__ntcore__cpp__api.html#ga4650fe2de4b652883761692946db4a15">More...</a><br /></td></tr>
 <tr class="separator:ga4650fe2de4b652883761692946db4a15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1869be780fcddb3d703623715ead828d"><td class="memItemLeft" align="right" valign="top">typedef std::function&lt; void(NT_EntryListener entry_listener, <a class="el" href="classwpi_1_1StringRef.html">StringRef</a> name, std::shared_ptr&lt; <a class="el" href="classnt_1_1Value.html">Value</a> &gt; value, unsigned int flags)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__entrylistener__func.html#ga1869be780fcddb3d703623715ead828d">EntryListenerCallback</a></td></tr>
-<tr class="memdesc:ga1869be780fcddb3d703623715ead828d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Entry listener callback function.  <a href="group__ntcore__entrylistener__func.html#ga1869be780fcddb3d703623715ead828d">More...</a><br /></td></tr>
-<tr class="separator:ga1869be780fcddb3d703623715ead828d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa88729f7f2563d47a4371de5e5c8badc"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__connectionlistener__func.html#gaa88729f7f2563d47a4371de5e5c8badc">ConnectionListenerCallback</a> = std::function&lt; void(NT_ConnectionListener, bool, const <a class="el" href="structnt_1_1ConnectionInfo.html">ConnectionInfo</a> &amp;)&gt;</td></tr>
-<tr class="memdesc:gaa88729f7f2563d47a4371de5e5c8badc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connection listener callback function.  <a href="group__ntcore__connectionlistener__func.html#gaa88729f7f2563d47a4371de5e5c8badc">More...</a><br /></td></tr>
-<tr class="separator:gaa88729f7f2563d47a4371de5e5c8badc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9c73b7905117ec0ebe03ec852712b6d7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__logger__func.html#ga9c73b7905117ec0ebe03ec852712b6d7">LogFunc</a> = std::function&lt; void(unsigned int, const char *, unsigned int, const char *)&gt;</td></tr>
-<tr class="memdesc:ga9c73b7905117ec0ebe03ec852712b6d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log function.  <a href="group__ntcore__logger__func.html#ga9c73b7905117ec0ebe03ec852712b6d7">More...</a><br /></td></tr>
-<tr class="separator:ga9c73b7905117ec0ebe03ec852712b6d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -197,12 +197,6 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a72b7fa3b4a38eadfc5abbb7e7e7c8dda"><td class="memItemLeft" align="right" valign="top"><a id="a72b7fa3b4a38eadfc5abbb7e7e7c8dda"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="classnt_1_1Value.html">Value</a> &amp;lhs, const <a class="el" href="classnt_1_1Value.html">Value</a> &amp;rhs)</td></tr>
-<tr class="separator:a72b7fa3b4a38eadfc5abbb7e7e7c8dda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63a12be9de54aa1ead198950207ca38f"><td class="memItemLeft" align="right" valign="top"><a id="a63a12be9de54aa1ead198950207ca38f"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="classnt_1_1Value.html">Value</a> &amp;lhs, const <a class="el" href="classnt_1_1Value.html">Value</a> &amp;rhs)</td></tr>
-<tr class="separator:a63a12be9de54aa1ead198950207ca38f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa010a3ec8b278c01a9c2b9a55336443b"><td class="memItemLeft" align="right" valign="top">NT_Inst&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__instance__func.html#gaa010a3ec8b278c01a9c2b9a55336443b">GetDefaultInstance</a> ()</td></tr>
 <tr class="memdesc:gaa010a3ec8b278c01a9c2b9a55336443b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get default instance.  <a href="group__ntcore__instance__func.html#gaa010a3ec8b278c01a9c2b9a55336443b">More...</a><br /></td></tr>
 <tr class="separator:gaa010a3ec8b278c01a9c2b9a55336443b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -566,6 +560,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 <tr class="memitem:ga4fae112bec6981b6636e7999aa40ed92"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__logger__func.html#ga4fae112bec6981b6636e7999aa40ed92">WaitForLoggerQueue</a> (NT_Inst inst, double timeout)</td></tr>
 <tr class="memdesc:ga4fae112bec6981b6636e7999aa40ed92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for the incoming log event queue to be empty.  <a href="group__ntcore__logger__func.html#ga4fae112bec6981b6636e7999aa40ed92">More...</a><br /></td></tr>
 <tr class="separator:ga4fae112bec6981b6636e7999aa40ed92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72b7fa3b4a38eadfc5abbb7e7e7c8dda"><td class="memItemLeft" align="right" valign="top"><a id="a72b7fa3b4a38eadfc5abbb7e7e7c8dda"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="classnt_1_1Value.html">Value</a> &amp;lhs, const <a class="el" href="classnt_1_1Value.html">Value</a> &amp;rhs)</td></tr>
+<tr class="separator:a72b7fa3b4a38eadfc5abbb7e7e7c8dda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63a12be9de54aa1ead198950207ca38f"><td class="memItemLeft" align="right" valign="top"><a id="a63a12be9de54aa1ead198950207ca38f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="classnt_1_1Value.html">Value</a> &amp;lhs, const <a class="el" href="classnt_1_1Value.html">Value</a> &amp;rhs)</td></tr>
+<tr class="separator:a63a12be9de54aa1ead198950207ca38f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>NetworkTables (ntcore) namespace. </p>
@@ -575,7 +575,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grou
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacent.html">nt</a></li>
-    <li class="footer">Generated on Tue Jan 26 2021 05:44:58 for WPILibC++ by
+    <li class="footer">Generated on Fri Jan 29 2021 05:54:25 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

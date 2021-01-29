@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.2.1-16-g834a649</span>
+   &#160;<span id="projectnumber">2021.2.1-17-g45590ee</span>
    </div>
   </td>
  </tr>
@@ -140,7 +140,7 @@ $(document).ready(function(){initNavTree('NidecBrushless_8h_source.html',''); in
 <div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classfrc_1_1NidecBrushless.html#a3b2224ab431ddf00f91e1ecee74d3ad6">   82</a></span>&#160;<span class="comment"></span>  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1NidecBrushless.html#a3b2224ab431ddf00f91e1ecee74d3ad6">PIDWrite</a>(<span class="keywordtype">double</span> output) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="comment">// MotorSafety interface</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classfrc_1_1NidecBrushless.html#a2ff988ba4a5488c8da0ba2237fc26c3c">   85</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1NidecBrushless.html#a2ff988ba4a5488c8da0ba2237fc26c3c">StopMotor</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordtype">void</span> StopMotor() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordtype">void</span> GetDescription(<a class="code" href="classwpi_1_1raw__ostream.html">wpi::raw_ostream</a>&amp; desc) <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
 <div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="classfrc_1_1NidecBrushless.html#aca6932e35b07c862f0bee47a90f4cf49">   93</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classfrc_1_1NidecBrushless.html#aca6932e35b07c862f0bee47a90f4cf49">GetChannel</a>() <span class="keyword">const</span>;</div>
@@ -165,7 +165,6 @@ $(document).ready(function(){initNavTree('NidecBrushless_8h_source.html',''); in
 <div class="ttc" id="aclassfrc_1_1MotorSafety_html"><div class="ttname"><a href="classfrc_1_1MotorSafety.html">frc::MotorSafety</a></div><div class="ttdoc">This base class runs a watchdog timer and calls the subclass's StopMotor() function if the timeout ex...</div><div class="ttdef"><b>Definition:</b> MotorSafety.h:21</div></div>
 <div class="ttc" id="aclassfrc_1_1NidecBrushless_html_ac5f8191405126d7cd44668392929bf5a"><div class="ttname"><a href="classfrc_1_1NidecBrushless.html#ac5f8191405126d7cd44668392929bf5a">frc::NidecBrushless::Enable</a></div><div class="ttdeci">void Enable()</div><div class="ttdoc">Re-enable the motor after Disable() has been called.</div></div>
 <div class="ttc" id="aclassfrc_1_1NidecBrushless_html_afe6ecb3d622f3b410043eabae0a1efe8"><div class="ttname"><a href="classfrc_1_1NidecBrushless.html#afe6ecb3d622f3b410043eabae0a1efe8">frc::NidecBrushless::SetInverted</a></div><div class="ttdeci">void SetInverted(bool isInverted) override</div><div class="ttdoc">Common interface for inverting direction of a speed controller.</div></div>
-<div class="ttc" id="aclassfrc_1_1NidecBrushless_html_a2ff988ba4a5488c8da0ba2237fc26c3c"><div class="ttname"><a href="classfrc_1_1NidecBrushless.html#a2ff988ba4a5488c8da0ba2237fc26c3c">frc::NidecBrushless::StopMotor</a></div><div class="ttdeci">void StopMotor() override</div><div class="ttdoc">Common interface to stop the motor until Set is called again.</div></div>
 <div class="ttc" id="aclassfrc_1_1NidecBrushless_html_aca6932e35b07c862f0bee47a90f4cf49"><div class="ttname"><a href="classfrc_1_1NidecBrushless.html#aca6932e35b07c862f0bee47a90f4cf49">frc::NidecBrushless::GetChannel</a></div><div class="ttdeci">int GetChannel() const</div><div class="ttdoc">Gets the channel number associated with the object.</div></div>
 <div class="ttc" id="aclassfrc_1_1NidecBrushless_html_a3b2224ab431ddf00f91e1ecee74d3ad6"><div class="ttname"><a href="classfrc_1_1NidecBrushless.html#a3b2224ab431ddf00f91e1ecee74d3ad6">frc::NidecBrushless::PIDWrite</a></div><div class="ttdeci">void PIDWrite(double output) override</div><div class="ttdoc">Write out the PID value as seen in the PIDOutput base object.</div></div>
 <div class="ttc" id="aclassfrc_1_1NidecBrushless_html_adbfd4b9f2ed0a9556d303fd3aab18631"><div class="ttname"><a href="classfrc_1_1NidecBrushless.html#adbfd4b9f2ed0a9556d303fd3aab18631">frc::NidecBrushless::GetInverted</a></div><div class="ttdeci">bool GetInverted() const override</div><div class="ttdoc">Common interface for returning the inversion state of a speed controller.</div></div>
@@ -173,7 +172,7 @@ $(document).ready(function(){initNavTree('NidecBrushless_8h_source.html',''); in
 <div class="ttc" id="aclassfrc_1_1NidecBrushless_html_a204be39f9fd6ac3e08477c5dcc71041a"><div class="ttname"><a href="classfrc_1_1NidecBrushless.html#a204be39f9fd6ac3e08477c5dcc71041a">frc::NidecBrushless::Get</a></div><div class="ttdeci">double Get() const override</div><div class="ttdoc">Get the recently set value of the PWM.</div></div>
 <div class="ttc" id="aclassfrc_1_1Sendable_html"><div class="ttname"><a href="classfrc_1_1Sendable.html">frc::Sendable</a></div><div class="ttdoc">Interface for Sendable objects.</div><div class="ttdef"><b>Definition:</b> Sendable.h:14</div></div>
 <div class="ttc" id="aclassfrc_1_1NidecBrushless_html_ad0fbeb8d79bbb8930b413b571abf255b"><div class="ttname"><a href="classfrc_1_1NidecBrushless.html#ad0fbeb8d79bbb8930b413b571abf255b">frc::NidecBrushless::Set</a></div><div class="ttdeci">void Set(double speed) override</div><div class="ttdoc">Set the PWM value.</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> CameraServerShared.h:13</div></div>
+<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> VisionRunner.h:15</div></div>
 <div class="ttc" id="aclassfrc_1_1SpeedController_html"><div class="ttname"><a href="classfrc_1_1SpeedController.html">frc::SpeedController</a></div><div class="ttdoc">Interface for speed controlling devices.</div><div class="ttdef"><b>Definition:</b> SpeedController.h:16</div></div>
 <div class="ttc" id="aclasswpi_1_1raw__ostream_html"><div class="ttname"><a href="classwpi_1_1raw__ostream.html">wpi::raw_ostream</a></div><div class="ttdoc">This class implements an extremely fast bulk output stream that can only output to a stream.</div><div class="ttdef"><b>Definition:</b> raw_ostream.h:47</div></div>
 <div class="ttc" id="aclassfrc_1_1NidecBrushless_html_a1762339273834e07d70185d47136be1f"><div class="ttname"><a href="classfrc_1_1NidecBrushless.html#a1762339273834e07d70185d47136be1f">frc::NidecBrushless::NidecBrushless</a></div><div class="ttdeci">NidecBrushless(int pwmChannel, int dioChannel)</div><div class="ttdoc">Constructor.</div></div>
@@ -184,7 +183,7 @@ $(document).ready(function(){initNavTree('NidecBrushless_8h_source.html',''); in
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_c83246fd67bf422561e892c78521edd1.html">wpilibc</a></li><li class="navelem"><a class="el" href="dir_a55b36a80db95a4ab182a656f2eb2509.html">src</a></li><li class="navelem"><a class="el" href="dir_0fce2ef06e3c6f43f5c610d197b1a66e.html">main</a></li><li class="navelem"><a class="el" href="dir_05ef35d0b06c7e71bb0c2a8a996c52cb.html">native</a></li><li class="navelem"><a class="el" href="dir_9bb56e9ddac3e93dcc0aa7b90d99af5f.html">include</a></li><li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><b>NidecBrushless.h</b></li>
-    <li class="footer">Generated on Tue Jan 26 2021 05:44:55 for WPILibC++ by
+    <li class="footer">Generated on Fri Jan 29 2021 05:54:21 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.2.1-16-g834a649</span>
+   &#160;<span id="projectnumber">2021.2.1-17-g45590ee</span>
    </div>
   </td>
  </tr>
@@ -300,7 +300,7 @@ wpi::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>m_pidWriteMutex
 <div class="textblock"><p>Class implements a PID Control Loop. </p>
 <p>Creates a separate thread which reads the given <a class="el" href="classfrc_1_1PIDSource.html" title="PIDSource interface is a generic sensor source for the PID class.">PIDSource</a> and takes care of the integral calculations, as well as writing the given <a class="el" href="classfrc_1_1PIDOutput.html" title="PIDOutput interface is a generic output for the PID class.">PIDOutput</a>.</p>
 <p>This feedback controller runs in discrete time, so time deltas are not used in the integral and derivative calculations. Therefore, the sample rate affects the controller's behavior for a given set of PID constants.</p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000020">Deprecated:</a></b></dt><dd>All APIs which use this have been deprecated. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000021">Deprecated:</a></b></dt><dd>All APIs which use this have been deprecated. </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af2c0a74b4babbd07d8480cb9d12a6683"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af2c0a74b4babbd07d8480cb9d12a6683">&#9670;&nbsp;</a></span>PIDBase() <span class="overload">[1/2]</span></h2>
@@ -833,6 +833,8 @@ wpi::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>m_pidWriteMutex
 </dl>
 
 <p>Implements <a class="el" href="classfrc_1_1Sendable.html#a5023f1e8965abafdcd728d9213f4eb28">frc::Sendable</a>.</p>
+
+<p>Reimplemented in <a class="el" href="classfrc_1_1PIDController.html#a8b68dc4157dd543cdb06bced614543e2">frc::PIDController</a>.</p>
 
 </div>
 </div>
@@ -1424,7 +1426,7 @@ wpi::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>m_pidWriteMutex
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1PIDBase.html">PIDBase</a></li>
-    <li class="footer">Generated on Tue Jan 26 2021 05:44:57 for WPILibC++ by
+    <li class="footer">Generated on Fri Jan 29 2021 05:54:23 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>
