@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.2.1</span>
+   &#160;<span id="projectnumber">2021.2.2</span>
    </div>
   </td>
  </tr>
@@ -150,12 +150,12 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">handle</td><td>Native handle pointer to the thread to get the priority for </td></tr>
-    <tr><td class="paramname">isRealTime</td><td>Set to true if thread is realtime, otherwise false </td></tr>
-    <tr><td class="paramname">status</td><td>Error status variable. 0 on success </td></tr>
+    <tr><td class="paramname">isRealTime</td><td>Set to true if thread is real-time, otherwise false. </td></tr>
+    <tr><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The current thread priority. Scaled 1-99, with 1 being highest. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The current thread priority. For real-time, this is 1-99 with 99 being highest. For non-real-time, this is 0. See "man 7 sched" for details. </dd></dl>
 
 </div>
 </div>
@@ -194,13 +194,13 @@ Functions</h2></td></tr>
 <p>Gets the thread priority for the specified thread. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>Native handle pointer to the thread to get the priority for </td></tr>
-    <tr><td class="paramname">isRealTime</td><td>Set to true if thread is realtime, otherwise false </td></tr>
-    <tr><td class="paramname">status</td><td>Error status variable. 0 on success </td></tr>
+    <tr><td class="paramname">handle</td><td>Native handle pointer to the thread to get the priority for. </td></tr>
+    <tr><td class="paramname">isRealTime</td><td>Set to true if thread is real-time, otherwise false. </td></tr>
+    <tr><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The current thread priority. Scaled 1-99, with 1 being highest. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The current thread priority. For real-time, this is 1-99 with 99 being highest. For non-real-time, this is 0. See "man 7 sched" for details. </dd></dl>
 
 </div>
 </div>
@@ -239,14 +239,14 @@ Functions</h2></td></tr>
 <p>Sets the thread priority for the current thread. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">thread</td><td>Reference to the thread to set the priority of </td></tr>
-    <tr><td class="paramname">realTime</td><td>Set to true to set a realtime priority, false for standard priority </td></tr>
-    <tr><td class="paramname">priority</td><td>Priority to set the thread to. Scaled 1-99, with 1 being highest </td></tr>
-    <tr><td class="paramname">status</td><td>Error status variable. 0 on success </td></tr>
+    <tr><td class="paramname">thread</td><td>Reference to the thread to set the priority of. </td></tr>
+    <tr><td class="paramname">realTime</td><td>Set to true to set a real-time priority, false for standard priority. </td></tr>
+    <tr><td class="paramname">priority</td><td>Priority to set the thread to. For real-time, this is 1-99 with 99 being highest. For non-real-time, this is forced to 0. See "man 7 sched" for more details. </td></tr>
+    <tr><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The success state of setting the priority </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True on success. </dd></dl>
 
 </div>
 </div>
@@ -291,14 +291,14 @@ Functions</h2></td></tr>
 <p>Sets the thread priority for the specified thread. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">thread</td><td>Reference to the thread to set the priority of </td></tr>
-    <tr><td class="paramname">realTime</td><td>Set to true to set a realtime priority, false for standard priority </td></tr>
-    <tr><td class="paramname">priority</td><td>Priority to set the thread to. Scaled 1-99, with 1 being highest </td></tr>
-    <tr><td class="paramname">status</td><td>Error status variable. 0 on success </td></tr>
+    <tr><td class="paramname">thread</td><td>Reference to the thread to set the priority of. </td></tr>
+    <tr><td class="paramname">realTime</td><td>Set to true to set a real-time priority, false for standard priority. </td></tr>
+    <tr><td class="paramname">priority</td><td>Priority to set the thread to. For real-time, this is 1-99 with 99 being highest. For non-real-time, this is forced to 0. See "man 7 sched" for more details. </td></tr>
+    <tr><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The success state of setting the priority </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True on success. </dd></dl>
 
 </div>
 </div>
@@ -307,7 +307,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jan 18 2021 04:37:01 for WPILibC++ by
+    <li class="footer">Generated on Sat Jan 30 2021 03:45:38 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

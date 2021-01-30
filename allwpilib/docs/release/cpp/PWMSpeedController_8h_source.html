@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.2.1</span>
+   &#160;<span id="projectnumber">2021.2.2</span>
    </div>
   </td>
  </tr>
@@ -119,7 +119,7 @@ $(document).ready(function(){initNavTree('PWMSpeedController_8h_source.html','')
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classfrc_1_1PWMSpeedController.html#a7eca42fb050c221b477d69650ef7086b">   43</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1PWMSpeedController.html#a7eca42fb050c221b477d69650ef7086b">Disable</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classfrc_1_1PWMSpeedController.html#afd26cc5c516888a18b3fd6eed989419d">   45</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1PWMSpeedController.html#afd26cc5c516888a18b3fd6eed989419d">StopMotor</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">void</span> StopMotor() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
 <div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classfrc_1_1PWMSpeedController.html#ad73a42658760326ce81f68de1be71f8e">   52</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1PWMSpeedController.html#ad73a42658760326ce81f68de1be71f8e">PIDWrite</a>(<span class="keywordtype">double</span> output) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
@@ -139,13 +139,12 @@ $(document).ready(function(){initNavTree('PWMSpeedController_8h_source.html','')
 <div class="ttc" id="aclassfrc_1_1PWMSpeedController_html_a5cf56c4c57cf7e4ac19af4d5802af204"><div class="ttname"><a href="classfrc_1_1PWMSpeedController.html#a5cf56c4c57cf7e4ac19af4d5802af204">frc::PWMSpeedController::Set</a></div><div class="ttdeci">void Set(double value) override</div><div class="ttdoc">Set the PWM value.</div></div>
 <div class="ttc" id="aclassfrc_1_1PWMSpeedController_html_a573d6b9821da1412a6bffcc01b32ab8a"><div class="ttname"><a href="classfrc_1_1PWMSpeedController.html#a573d6b9821da1412a6bffcc01b32ab8a">frc::PWMSpeedController::InitSendable</a></div><div class="ttdeci">void InitSendable(SendableBuilder &amp;builder) override</div><div class="ttdoc">Initializes this Sendable object.</div></div>
 <div class="ttc" id="aclassfrc_1_1PWMSpeedController_html_a7eca42fb050c221b477d69650ef7086b"><div class="ttname"><a href="classfrc_1_1PWMSpeedController.html#a7eca42fb050c221b477d69650ef7086b">frc::PWMSpeedController::Disable</a></div><div class="ttdeci">void Disable() override</div><div class="ttdoc">Common interface for disabling a motor.</div></div>
-<div class="ttc" id="aclassfrc_1_1PWMSpeedController_html_afd26cc5c516888a18b3fd6eed989419d"><div class="ttname"><a href="classfrc_1_1PWMSpeedController.html#afd26cc5c516888a18b3fd6eed989419d">frc::PWMSpeedController::StopMotor</a></div><div class="ttdeci">void StopMotor() override</div><div class="ttdoc">Common interface to stop the motor until Set is called again.</div></div>
 <div class="ttc" id="aclassfrc_1_1PWMSpeedController_html_aee536d7ff9d96ecf19093d52e788e4dc"><div class="ttname"><a href="classfrc_1_1PWMSpeedController.html#aee536d7ff9d96ecf19093d52e788e4dc">frc::PWMSpeedController::PWMSpeedController</a></div><div class="ttdeci">PWMSpeedController(int channel)</div><div class="ttdoc">Constructor for a PWM Speed Controller connected via PWM.</div></div>
 <div class="ttc" id="aclassfrc_1_1PWMSpeedController_html_a74323ac5a48d8caed4efe7192cef4619"><div class="ttname"><a href="classfrc_1_1PWMSpeedController.html#a74323ac5a48d8caed4efe7192cef4619">frc::PWMSpeedController::GetInverted</a></div><div class="ttdeci">bool GetInverted() const override</div><div class="ttdoc">Common interface for returning the inversion state of a speed controller.</div></div>
 <div class="ttc" id="aclassfrc_1_1PWMSpeedController_html_a91470767f8205af7a19432cff9514e9f"><div class="ttname"><a href="classfrc_1_1PWMSpeedController.html#a91470767f8205af7a19432cff9514e9f">frc::PWMSpeedController::SetInverted</a></div><div class="ttdeci">void SetInverted(bool isInverted) override</div><div class="ttdoc">Common interface for inverting direction of a speed controller.</div></div>
 <div class="ttc" id="aclassfrc_1_1PWMSpeedController_html_a3ff43e42da5ad54fb88dd8147aba7698"><div class="ttname"><a href="classfrc_1_1PWMSpeedController.html#a3ff43e42da5ad54fb88dd8147aba7698">frc::PWMSpeedController::Get</a></div><div class="ttdeci">double Get() const override</div><div class="ttdoc">Get the recently set value of the PWM.</div></div>
 <div class="ttc" id="aclassfrc_1_1PWMSpeedController_html"><div class="ttname"><a href="classfrc_1_1PWMSpeedController.html">frc::PWMSpeedController</a></div><div class="ttdoc">Common base class for all PWM Speed Controllers.</div><div class="ttdef"><b>Definition:</b> PWMSpeedController.h:15</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> CameraServer.inc:12</div></div>
+<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> VisionRunner.h:15</div></div>
 <div class="ttc" id="aclassfrc_1_1SpeedController_html"><div class="ttname"><a href="classfrc_1_1SpeedController.html">frc::SpeedController</a></div><div class="ttdoc">Interface for speed controlling devices.</div><div class="ttdef"><b>Definition:</b> SpeedController.h:16</div></div>
 <div class="ttc" id="aclassfrc_1_1PWMSpeedController_html_ad73a42658760326ce81f68de1be71f8e"><div class="ttname"><a href="classfrc_1_1PWMSpeedController.html#ad73a42658760326ce81f68de1be71f8e">frc::PWMSpeedController::PIDWrite</a></div><div class="ttdeci">void PIDWrite(double output) override</div><div class="ttdoc">Write out the PID value as seen in the PIDOutput base object.</div></div>
 <div class="ttc" id="aclassfrc_1_1SendableBuilder_html"><div class="ttname"><a href="classfrc_1_1SendableBuilder.html">frc::SendableBuilder</a></div><div class="ttdef"><b>Definition:</b> SendableBuilder.h:21</div></div>
@@ -153,7 +152,7 @@ $(document).ready(function(){initNavTree('PWMSpeedController_8h_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_c83246fd67bf422561e892c78521edd1.html">wpilibc</a></li><li class="navelem"><a class="el" href="dir_a55b36a80db95a4ab182a656f2eb2509.html">src</a></li><li class="navelem"><a class="el" href="dir_0fce2ef06e3c6f43f5c610d197b1a66e.html">main</a></li><li class="navelem"><a class="el" href="dir_05ef35d0b06c7e71bb0c2a8a996c52cb.html">native</a></li><li class="navelem"><a class="el" href="dir_9bb56e9ddac3e93dcc0aa7b90d99af5f.html">include</a></li><li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><b>PWMSpeedController.h</b></li>
-    <li class="footer">Generated on Mon Jan 18 2021 04:37:00 for WPILibC++ by
+    <li class="footer">Generated on Sat Jan 30 2021 03:45:36 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

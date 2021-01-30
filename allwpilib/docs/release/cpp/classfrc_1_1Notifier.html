@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.2.1</span>
+   &#160;<span id="projectnumber">2021.2.2</span>
    </div>
   </td>
  </tr>
@@ -297,7 +297,8 @@ static std::vector&lt; <a class="el" href="classfrc_1_1Error.html">Error</a> &gt
 <p>This overload makes the underlying thread run with a real-time priority. This is useful for reducing scheduling jitter on processes which are sensitive to timing variance, like model-based control.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">priority</td><td>The FIFO real-time scheduler priority ([0..100] where a lower number represents higher priority). </td></tr>
+    <tr><td class="paramname">priority</td><td>The FIFO real-time scheduler priority ([1..99] where a higher number represents higher priority). See "man 7
+                sched" for more details. </td></tr>
     <tr><td class="paramname">handler</td><td>The handler is called at the notification time which is set using StartSingle or StartPeriodic. </td></tr>
   </table>
   </dd>
@@ -377,7 +378,7 @@ static std::vector&lt; <a class="el" href="classfrc_1_1Error.html">Error</a> &gt
 
 <p>Register for periodic event notification. </p>
 <p>A timer event is queued for periodic event notification. Each time the interrupt occurs, the event will be immediately requeued for the same time interval.</p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000007">Deprecated:</a></b></dt><dd>Use unit-safe <a class="el" href="classfrc_1_1Notifier.html#a5bc1b27b2d22ca7de91fe1701746c521" title="Register for periodic event notification.">StartPeriodic(units::second_t period)</a> method instead</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000023">Deprecated:</a></b></dt><dd>Use unit-safe <a class="el" href="classfrc_1_1Notifier.html#a5bc1b27b2d22ca7de91fe1701746c521" title="Register for periodic event notification.">StartPeriodic(units::second_t period)</a> method instead</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">period</td><td>Period in seconds to call the handler starting one period after the call to this method. </td></tr>
@@ -432,7 +433,7 @@ static std::vector&lt; <a class="el" href="classfrc_1_1Error.html">Error</a> &gt
 
 <p>Register for single event notification. </p>
 <p>A timer event is queued for a single event after the specified delay.</p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000006">Deprecated:</a></b></dt><dd>Use unit-safe <a class="el" href="classfrc_1_1Notifier.html#ac6fdc8a4a8ecbbb4a863e639bf719323" title="Register for single event notification.">StartSingle(units::second_t delay)</a> method instead.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000022">Deprecated:</a></b></dt><dd>Use unit-safe <a class="el" href="classfrc_1_1Notifier.html#ac6fdc8a4a8ecbbb4a863e639bf719323" title="Register for single event notification.">StartSingle(units::second_t delay)</a> method instead.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">delay</td><td>Seconds to wait before the handler is called. </td></tr>
@@ -499,7 +500,7 @@ static std::vector&lt; <a class="el" href="classfrc_1_1Error.html">Error</a> &gt
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1Notifier.html">Notifier</a></li>
-    <li class="footer">Generated on Mon Jan 18 2021 04:37:02 for WPILibC++ by
+    <li class="footer">Generated on Sat Jan 30 2021 03:45:39 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

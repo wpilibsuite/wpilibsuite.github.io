@@ -1,5 +1,7 @@
 var NAVTREEINDEX41 =
 {
+"wpilibOldCommands_2src_2main_2native_2include_2frc_2buttons_2Trigger_8h_source.html":[6,0,6,0,0,0,0,0,0,11],
+"wpilibOldCommands_2src_2main_2native_2include_2frc_2commands_2Command_8h_source.html":[6,0,6,0,0,0,0,0,1,0],
 "wpilibOldCommands_2src_2main_2native_2include_2frc_2commands_2ConditionalCommand_8h_source.html":[6,0,6,0,0,0,0,0,1,3],
 "wpilibOldCommands_2src_2main_2native_2include_2frc_2commands_2InstantCommand_8h_source.html":[6,0,6,0,0,0,0,0,1,4],
 "wpilibOldCommands_2src_2main_2native_2include_2frc_2commands_2PIDCommand_8h_source.html":[6,0,6,0,0,0,0,0,1,5],
