@@ -59,7 +59,8 @@ var group__cscore__cpp__api =
         [ "kTelemetryUpdated", "structcs_1_1RawEvent.html#ad0b7b8d5828aa966bb95fc2bbe8bf25ea00f315883d0b9eb4fa86baac4a80c525", null ],
         [ "kSinkPropertyCreated", "structcs_1_1RawEvent.html#ad0b7b8d5828aa966bb95fc2bbe8bf25ea36784a172d3db818429b82023bc556a5", null ],
         [ "kSinkPropertyValueUpdated", "structcs_1_1RawEvent.html#ad0b7b8d5828aa966bb95fc2bbe8bf25ea820bda4336bdcaf5c773b5bbc983e862", null ],
-        [ "kSinkPropertyChoicesUpdated", "structcs_1_1RawEvent.html#ad0b7b8d5828aa966bb95fc2bbe8bf25ea84c33a85eacab88f997c6bd8976691c9", null ]
+        [ "kSinkPropertyChoicesUpdated", "structcs_1_1RawEvent.html#ad0b7b8d5828aa966bb95fc2bbe8bf25ea84c33a85eacab88f997c6bd8976691c9", null ],
+        [ "kUsbCamerasChanged", "structcs_1_1RawEvent.html#ad0b7b8d5828aa966bb95fc2bbe8bf25ea096a9c4634b8e8cab21411c8cdc88263", null ]
       ] ],
       [ "RawEvent", "structcs_1_1RawEvent.html#af6c97cd12ca023a5b63cf6a596a2b709", null ],
       [ "RawEvent", "structcs_1_1RawEvent.html#aab9ada362441ac5dd50d942d257e4c81", null ],

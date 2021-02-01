@@ -1,5 +1,6 @@
 var NAVTREEINDEX39 =
 {
+"structwpi_1_1DenseMapInfo_3_01long_01long_01_4.html#a13f02f4da98d1843ff2816fa98db989f":[5,0,7,39,2],
 "structwpi_1_1DenseMapInfo_3_01long_01long_01_4.html#a5a4c3f2080ebb912dd67c2a65a0e62c1":[5,0,7,39,3],
 "structwpi_1_1DenseMapInfo_3_01long_01long_01_4.html#a64257ef2bf518c1ca3bb6747d7b53872":[5,0,7,39,1],
 "structwpi_1_1DenseMapInfo_3_01long_01long_01_4.html#ae97e61fe090dca917606d546d63c2a23":[5,0,7,39,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX39 =
 "structwpi_1_1detail_1_1internal__iterator.html#a0b089e9e27dfe2ec92c298e945bf928d":[5,0,7,0,29,2],
 "structwpi_1_1detail_1_1internal__iterator.html#a8a1f3be16214195ba61e5b4eb827fd21":[5,0,7,0,29,0],
 "structwpi_1_1detail_1_1internal__iterator.html#aa134a85f0936b2221e00cc0275ec8167":[5,0,7,0,29,1],
-"structwpi_1_1detail_1_1is__compatible__array__type.html":[5,0,7,0,31],
-"structwpi_1_1detail_1_1is__compatible__array__type.html#a9f6a4db21d2fc39470aaf28bc8e6d8c2":[5,0,7,0,31,0]
+"structwpi_1_1detail_1_1is__compatible__array__type.html":[5,0,7,0,31]
 };
