@@ -67,6 +67,7 @@ var group__cscore__cpp__api =
       [ "RawEvent", "structcs_1_1RawEvent.html#ae44ef6217acb5ddcc7becf4b314918de", null ],
       [ "RawEvent", "structcs_1_1RawEvent.html#afcd506ac90f804535e5a70becb1eff69", null ],
       [ "kind", "structcs_1_1RawEvent.html#a51a32420fbb0e990c122aa2f0906e677", null ],
+      [ "listener", "structcs_1_1RawEvent.html#ab606442031f460269fee5de0eee69d70", null ],
       [ "mode", "structcs_1_1RawEvent.html#a07ce5e163e404ec11b367fa9eddc2ef7", null ],
       [ "name", "structcs_1_1RawEvent.html#a42be29ff0a6b631b98d309e5bfd082d5", null ],
       [ "propertyHandle", "structcs_1_1RawEvent.html#a6b0fe3b3119f4847109f18dff338f19d", null ],

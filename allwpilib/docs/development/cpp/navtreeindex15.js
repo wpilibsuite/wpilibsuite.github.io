@@ -1,5 +1,6 @@
 var NAVTREEINDEX15 =
 {
+"classfrc_1_1SlewRateLimiter.html#aa45ac37263b44cc58f71184402ab6154":[5,0,2,175,4],
 "classfrc_1_1SlewRateLimiter.html#ac8f8cf1a09860bc0f70db91bf14d1285":[5,0,2,175,2],
 "classfrc_1_1SlewRateLimiter.html#af6bf735e50606c2701ce33a07181beac":[5,0,2,175,0],
 "classfrc_1_1SlewRateLimiter.html#af6e94a2447bc3271a5d3e7d2719cafe1":[5,0,2,175,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX15 =
 "classfrc_1_1TrajectoryConfig.html#a1720df0036cde4a3fdeb632fb818cc7d":[5,0,2,201,8],
 "classfrc_1_1TrajectoryConfig.html#a1f4fd0dd6fcb9da65d91b995deaa39ec":[5,0,2,201,10],
 "classfrc_1_1TrajectoryConfig.html#a36d42ddb2224829d8a71862c8e9b49eb":[5,0,2,201,16],
-"classfrc_1_1TrajectoryConfig.html#a56ae59a4c5e98dd6818c76cf88874dd7":[5,0,2,201,5],
-"classfrc_1_1TrajectoryConfig.html#a5d61e5512dd2bd0cea38269d4f398c81":[5,0,2,201,12]
+"classfrc_1_1TrajectoryConfig.html#a56ae59a4c5e98dd6818c76cf88874dd7":[5,0,2,201,5]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX17 =
 {
+"classfrc_1_1XboxController.html#a686efc14d81cd4f80887d2a1a27c4448":[5,0,2,224,31],
 "classfrc_1_1XboxController.html#a7b20d7e717a02d2af0f1d790253a3fc1":[5,0,2,224,27],
 "classfrc_1_1XboxController.html#a7da55eb54e5c1201abd21886182e94e6":[5,0,2,224,10],
 "classfrc_1_1XboxController.html#a879dbba9de63acca156dc2184fccab88":[5,0,2,224,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX17 =
 "classfrc_1_1sim_1_1DifferentialDrivetrainSim_1_1KitbotGearing.html#a1dfcf86f8d79f4972f7e9ff79858baad":[5,0,2,1,10,0,0],
 "classfrc_1_1sim_1_1DifferentialDrivetrainSim_1_1KitbotGearing.html#a56e4520f91a0aae5e4d1cf44a80193e7":[5,0,2,1,10,0,2],
 "classfrc_1_1sim_1_1DifferentialDrivetrainSim_1_1KitbotGearing.html#a76d64f3223825ed195dc191e186bb767":[5,0,2,1,10,0,4],
-"classfrc_1_1sim_1_1DifferentialDrivetrainSim_1_1KitbotGearing.html#a946d011d38fcc0e37bb9070d907c96f4":[5,0,2,1,10,0,3],
-"classfrc_1_1sim_1_1DifferentialDrivetrainSim_1_1KitbotGearing.html#ae4903a4f3b19954decc468f39708ae79":[5,0,2,1,10,0,1]
+"classfrc_1_1sim_1_1DifferentialDrivetrainSim_1_1KitbotGearing.html#a946d011d38fcc0e37bb9070d907c96f4":[5,0,2,1,10,0,3]
 };

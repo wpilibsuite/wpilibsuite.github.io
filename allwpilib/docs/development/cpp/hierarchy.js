@@ -117,6 +117,8 @@ var hierarchy =
       [ "frc::ToggleButtonScheduler", "classfrc_1_1ToggleButtonScheduler.html", null ]
     ] ],
     [ "frc::SendableRegistry::CallbackData", "structfrc_1_1SendableRegistry_1_1CallbackData.html", null ],
+    [ "wpi::CallbackListenerData< Callback >", "classwpi_1_1CallbackListenerData.html", null ],
+    [ "wpi::CallbackManager< Derived, Thread >", "classwpi_1_1CallbackManager.html", null ],
     [ "frc::sim::CallbackStore", "classfrc_1_1sim_1_1CallbackStore.html", null ],
     [ "frc::CameraServer", "classfrc_1_1CameraServer.html", null ],
     [ "frc::CameraServerShared", "classfrc_1_1CameraServerShared.html", null ],
@@ -927,6 +929,7 @@ var hierarchy =
     [ "wpi::PointerUnionTypeSelectorReturn< T >", "structwpi_1_1PointerUnionTypeSelectorReturn.html", null ],
     [ "wpi::PointerUnionTypeSelectorReturn< PointerUnionTypeSelector< T1, T2, RET_EQ, RET_NE > >", "structwpi_1_1PointerUnionTypeSelectorReturn_3_01PointerUnionTypeSelector_3_01T1_00_01T2_00_01RET__EQ_00_01RET__NE_01_4_01_4.html", null ],
     [ "wpi::PointerUnionUIntTraits< PT1, PT2 >", "classwpi_1_1PointerUnionUIntTraits.html", null ],
+    [ "wpi::CallbackThread< Derived, TUserInfo, TListenerData, TNotifierData >::Poller", "structwpi_1_1CallbackThread_1_1Poller.html", null ],
     [ "wpi::detail::PopulationCounter< T, SizeOfT >", "structwpi_1_1detail_1_1PopulationCounter.html", null ],
     [ "wpi::detail::PopulationCounter< T, 8 >", "structwpi_1_1detail_1_1PopulationCounter_3_01T_00_018_01_4.html", null ],
     [ "wpi::PortForwarder", "classwpi_1_1PortForwarder.html", null ],
@@ -1013,6 +1016,7 @@ var hierarchy =
       [ "frc::SplineParameterizer::MalformedSplineException", "structfrc_1_1SplineParameterizer_1_1MalformedSplineException.html", null ]
     ] ],
     [ "wpi::SafeThread", "classwpi_1_1SafeThread.html", [
+      [ "wpi::CallbackThread< Derived, TUserInfo, TListenerData, TNotifierData >", "classwpi_1_1CallbackThread.html", null ],
       [ "wpi::detail::WorkerThreadThread< R, T >", "classwpi_1_1detail_1_1WorkerThreadThread.html", null ],
       [ "wpi::java::JCallbackThread< T >", "classwpi_1_1java_1_1JCallbackThread.html", null ]
     ] ],
@@ -1452,9 +1456,9 @@ var hierarchy =
     ] ],
     [ "frc::SplineHelper", "classfrc_1_1SplineHelper.html", null ],
     [ "frc::SplineParameterizer", "classfrc_1_1SplineParameterizer.html", null ],
-    [ "frc::Trajectory::State", "structfrc_1_1Trajectory_1_1State.html", null ],
     [ "frc::TrapezoidProfile< Distance >::State", "classfrc_1_1TrapezoidProfile_1_1State.html", null ],
     [ "frc::sim::DifferentialDrivetrainSim::State", "classfrc_1_1sim_1_1DifferentialDrivetrainSim_1_1State.html", null ],
+    [ "frc::Trajectory::State", "structfrc_1_1Trajectory_1_1State.html", null ],
     [ "wpi::static_circular_buffer< T, N >", "classwpi_1_1static__circular__buffer.html", null ],
     [ "wpi::detail::static_const< T >", "structwpi_1_1detail_1_1static__const.html", null ],
     [ "wpi::StringMapConstIterator< ValueTy >", "classwpi_1_1StringMapConstIterator.html", null ],
@@ -1529,6 +1533,8 @@ var hierarchy =
     [ "wpi::sig::trait::typelist<... >", "structwpi_1_1sig_1_1trait_1_1typelist.html", null ],
     [ "wpi::UDPClient", "classwpi_1_1UDPClient.html", null ],
     [ "wpi::UidVector< T, reuse_threshold >", "classwpi_1_1UidVector.html", null ],
+    [ "wpi::UidVector< ListenerData, 64 >", "classwpi_1_1UidVector.html", null ],
+    [ "wpi::UidVector< std::shared_ptr< wpi::CallbackThread::Poller >, 64 >", "classwpi_1_1UidVector.html", null ],
     [ "wpi::impl::UidVectorIterator< It >", "classwpi_1_1impl_1_1UidVectorIterator.html", null ],
     [ "wpi::unique_function< FunctionT >", "classwpi_1_1unique__function.html", null ],
     [ "wpi::unique_function< ReturnT(ParamTs...)>", "classwpi_1_1unique__function_3_01ReturnT_07ParamTs_8_8_8_08_4.html", null ],

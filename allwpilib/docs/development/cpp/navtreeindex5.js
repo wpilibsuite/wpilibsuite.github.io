@@ -1,5 +1,6 @@
 var NAVTREEINDEX5 =
 {
+"classfrc_1_1ADXRS450__Gyro.html#af475580220a2e02ebdd3c02a4c43e774":[5,0,2,7,0],
 "classfrc_1_1ADXRS450__Gyro.html#afecdc9df87ead925bc99e0b3e0493a40":[5,0,2,7,3],
 "classfrc_1_1Accelerometer.html":[5,0,2,2],
 "classfrc_1_1Accelerometer.html#a3f30d06f5b5971a538d4f1ecadf29ca2":[5,0,2,2,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "classfrc_1_1CameraServer.html#a7b937bf0b546102c111af9d56a0c2c65":[5,0,2,20,1],
 "classfrc_1_1CameraServer.html#a83279703ccafabf42899f5223a305f9b":[5,0,2,20,16],
 "classfrc_1_1CameraServer.html#a8a1db181a818602e9427a1872a65d720":[5,0,2,20,26],
-"classfrc_1_1CameraServer.html#a938bf7f5cd9c52f7450f74b8bbb9840a":[5,0,2,20,18],
-"classfrc_1_1CameraServer.html#a94a43767e36b2719c219e0da4496579b":[5,0,2,20,9]
+"classfrc_1_1CameraServer.html#a938bf7f5cd9c52f7450f74b8bbb9840a":[5,0,2,20,18]
 };

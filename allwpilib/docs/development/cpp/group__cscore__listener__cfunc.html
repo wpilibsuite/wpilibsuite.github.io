@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.2.2-2-gfdaec77</span>
+   &#160;<span id="projectnumber">2021.2.2-4-g29bf9d6</span>
    </div>
   </td>
  </tr>
@@ -104,12 +104,33 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>CS_SetListenerOnStart
 <tr class="memitem:ga4cbd1deafda979fdfc21112cd6abe9f3"><td class="memItemLeft" align="right" valign="top"><a id="ga4cbd1deafda979fdfc21112cd6abe9f3"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>CS_SetListenerOnExit</b> (void(*onExit)(void *data), void *data)</td></tr>
 <tr class="separator:ga4cbd1deafda979fdfc21112cd6abe9f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4113f83a47f2e9357603c31b5d4429ad"><td class="memItemLeft" align="right" valign="top"><a id="ga4113f83a47f2e9357603c31b5d4429ad"></a>
-CS_Listener&#160;</td><td class="memItemRight" valign="bottom"><b>CS_AddListener</b> (void *data, void(*callback)(void *data, const struct <a class="el" href="structCS__Event.html">CS_Event</a> *event), int eventMask, int immediateNotify, CS_Status *status)</td></tr>
-<tr class="separator:ga4113f83a47f2e9357603c31b5d4429ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga99a8dd6069f7f3f96aa923c5cc1a809b"><td class="memItemLeft" align="right" valign="top"><a id="ga99a8dd6069f7f3f96aa923c5cc1a809b"></a>
+CS_Listener&#160;</td><td class="memItemRight" valign="bottom"><b>CS_AddListener</b> (void *data, void(*callback)(void *data, const struct <a class="el" href="structCS__Event.html">CS_Event</a> *event), int eventMask, CS_Bool immediateNotify, CS_Status *status)</td></tr>
+<tr class="separator:ga99a8dd6069f7f3f96aa923c5cc1a809b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6abb2e33f17c5dc953be4926d74a2c12"><td class="memItemLeft" align="right" valign="top"><a id="ga6abb2e33f17c5dc953be4926d74a2c12"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>CS_RemoveListener</b> (CS_Listener handle, CS_Status *status)</td></tr>
 <tr class="separator:ga6abb2e33f17c5dc953be4926d74a2c12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga21d6e884c0c36beb8c52d972615b9a81"><td class="memItemLeft" align="right" valign="top"><a id="ga21d6e884c0c36beb8c52d972615b9a81"></a>
+CS_ListenerPoller&#160;</td><td class="memItemRight" valign="bottom"><b>CS_CreateListenerPoller</b> (void)</td></tr>
+<tr class="separator:ga21d6e884c0c36beb8c52d972615b9a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4f5bc25de5215aba49945ef1bdb845de"><td class="memItemLeft" align="right" valign="top"><a id="ga4f5bc25de5215aba49945ef1bdb845de"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CS_DestroyListenerPoller</b> (CS_ListenerPoller poller)</td></tr>
+<tr class="separator:ga4f5bc25de5215aba49945ef1bdb845de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga044bf78b743ee16be34a230262e518e9"><td class="memItemLeft" align="right" valign="top"><a id="ga044bf78b743ee16be34a230262e518e9"></a>
+CS_Listener&#160;</td><td class="memItemRight" valign="bottom"><b>CS_AddPolledListener</b> (CS_ListenerPoller poller, int eventMask, CS_Bool immediateNotify, CS_Status *status)</td></tr>
+<tr class="separator:ga044bf78b743ee16be34a230262e518e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3d7ef3931363a1b3fbc7f3c5c23701d4"><td class="memItemLeft" align="right" valign="top"><a id="ga3d7ef3931363a1b3fbc7f3c5c23701d4"></a>
+struct <a class="el" href="structCS__Event.html">CS_Event</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>CS_PollListener</b> (CS_ListenerPoller poller, int *count)</td></tr>
+<tr class="separator:ga3d7ef3931363a1b3fbc7f3c5c23701d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab8b8547572df5ffb18196cf21fb3d495"><td class="memItemLeft" align="right" valign="top"><a id="gab8b8547572df5ffb18196cf21fb3d495"></a>
+struct <a class="el" href="structCS__Event.html">CS_Event</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>CS_PollListenerTimeout</b> (CS_ListenerPoller poller, int *count, double timeout, CS_Bool *timedOut)</td></tr>
+<tr class="separator:gab8b8547572df5ffb18196cf21fb3d495"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae8a62cbc77e6edf13f778491cff0a2fd"><td class="memItemLeft" align="right" valign="top"><a id="gae8a62cbc77e6edf13f778491cff0a2fd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CS_FreeEvents</b> (struct <a class="el" href="structCS__Event.html">CS_Event</a> *arr, int count)</td></tr>
+<tr class="separator:gae8a62cbc77e6edf13f778491cff0a2fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga748a935102fab2b693d49682cff0913b"><td class="memItemLeft" align="right" valign="top"><a id="ga748a935102fab2b693d49682cff0913b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CS_CancelPollListener</b> (CS_ListenerPoller poller)</td></tr>
+<tr class="separator:ga748a935102fab2b693d49682cff0913b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 </div><!-- contents -->
@@ -117,7 +138,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>CS_RemoveListener</b>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Feb 1 2021 01:06:17 for WPILibC++ by
+    <li class="footer">Generated on Mon Feb 1 2021 01:08:35 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

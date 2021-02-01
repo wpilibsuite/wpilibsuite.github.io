@@ -1,5 +1,6 @@
 var NAVTREEINDEX12 =
 {
+"classfrc_1_1PWMSpeedController.html#a573d6b9821da1412a6bffcc01b32ab8a":[5,0,2,132,5],
 "classfrc_1_1PWMSpeedController.html#a5cf56c4c57cf7e4ac19af4d5802af204":[5,0,2,132,8],
 "classfrc_1_1PWMSpeedController.html#a74323ac5a48d8caed4efe7192cef4619":[5,0,2,132,4],
 "classfrc_1_1PWMSpeedController.html#a7eca42fb050c221b477d69650ef7086b":[5,0,2,132,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX12 =
 "classfrc_1_1RobotDrive.html#a36e9a405ed870edbb3518be451f9633c":[5,0,2,145,38],
 "classfrc_1_1RobotDrive.html#a3e3a9a86b08f1fa6121d7c311702b12b":[5,0,2,145,34],
 "classfrc_1_1RobotDrive.html#a42a25482392e70d44a64635f402907ed":[5,0,2,145,3],
-"classfrc_1_1RobotDrive.html#a456b3045d38e04e7ef8015a4ca533942":[5,0,2,145,12],
-"classfrc_1_1RobotDrive.html#a4661511e9f9d36dfa08b97ca69274f44":[5,0,2,145,9]
+"classfrc_1_1RobotDrive.html#a456b3045d38e04e7ef8015a4ca533942":[5,0,2,145,12]
 };
