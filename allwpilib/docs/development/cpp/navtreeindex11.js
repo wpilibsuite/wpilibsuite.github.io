@@ -1,5 +1,6 @@
 var NAVTREEINDEX11 =
 {
+"classfrc_1_1MecanumDriveOdometry.html":[5,0,2,104],
 "classfrc_1_1MecanumDriveOdometry.html#a1c3c799dfa0563d115c1fcad74988b16":[5,0,2,104,4],
 "classfrc_1_1MecanumDriveOdometry.html#a31e997d60d38b8dbe8c634c7300a7147":[5,0,2,104,3],
 "classfrc_1_1MecanumDriveOdometry.html#a42728604122f3802c6f661840176d655":[5,0,2,104,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX11 =
 "classfrc_1_1PWMSparkMax.html#a18d5d76ffcd3593dea33a67751694162":[5,0,2,131,2],
 "classfrc_1_1PWMSparkMax.html#ac54476cb81465ea7565e836b181a7ec4":[5,0,2,131,1],
 "classfrc_1_1PWMSparkMax.html#ad57d2c93765ab0c08c8387ab398989d2":[5,0,2,131,0],
-"classfrc_1_1PWMSpeedController.html":[5,0,2,132],
-"classfrc_1_1PWMSpeedController.html#a1e35c87402d642e9fb697400bf7d9fe1":[5,0,2,132,6]
+"classfrc_1_1PWMSpeedController.html":[5,0,2,132]
 };

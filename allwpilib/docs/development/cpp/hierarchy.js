@@ -434,7 +434,8 @@ var hierarchy =
       ] ],
       [ "frc::GyroBase", "classfrc_1_1GyroBase.html", [
         [ "frc::ADXRS450_Gyro", "classfrc_1_1ADXRS450__Gyro.html", null ],
-        [ "frc::AnalogGyro", "classfrc_1_1AnalogGyro.html", null ]
+        [ "frc::AnalogGyro", "classfrc_1_1AnalogGyro.html", null ],
+        [ "frc::RomiGyro", "classfrc_1_1RomiGyro.html", null ]
       ] ],
       [ "frc::I2C", "classfrc_1_1I2C.html", null ],
       [ "frc::InterruptableSensorBase", "classfrc_1_1InterruptableSensorBase.html", [
@@ -685,7 +686,6 @@ var hierarchy =
     ] ],
     [ "wpi::detail::iter_impl< BasicJsonType >", "classwpi_1_1detail_1_1iter__impl.html", null ],
     [ "wpi::detail::iteration_proxy< IteratorType >", "classwpi_1_1detail_1_1iteration__proxy.html", null ],
-    [ "wpi::static_circular_buffer< T, N >::iterator", "classwpi_1_1static__circular__buffer_1_1iterator.html", null ],
     [ "iterator", null, [
       [ "wpi::iterator_facade_base< concat_iterator< ValueT, IterTs... >, std::forward_iterator_tag, ValueT >", "classwpi_1_1iterator__facade__base.html", [
         [ "wpi::concat_iterator< ValueT, IterTs >", "classwpi_1_1concat__iterator.html", null ]
@@ -737,6 +737,7 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
+    [ "wpi::static_circular_buffer< T, N >::iterator", "classwpi_1_1static__circular__buffer_1_1iterator.html", null ],
     [ "iterator_facade_base< pointee_iterator< WrappedIteratorT, typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type, std::iterator_traits< WrappedIteratorT >::iterator_category, typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type, typename std::iterator_traits< WrappedIteratorT >::difference_type, typename std::conditional< std::is_same< typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type, typename std::iterator_traits< WrappedIteratorT >::value_type >::value, typename std::iterator_traits< WrappedIteratorT >::pointer, typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type * >::type, typename std::conditional< std::is_same< typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type, typename std::iterator_traits< WrappedIteratorT >::value_type >::value, typename std::iterator_traits< WrappedIteratorT >::reference, typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type & >::type >", null, [
       [ "wpi::iterator_adaptor_base< pointee_iterator< WrappedIteratorT, typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type >, WrappedIteratorT, std::iterator_traits< WrappedIteratorT >::iterator_category, typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type >", "classwpi_1_1iterator__adaptor__base.html", [
         [ "wpi::pointee_iterator< WrappedIteratorT, T >", "structwpi_1_1pointee__iterator.html", null ]
@@ -1455,8 +1456,8 @@ var hierarchy =
     [ "frc::SplineHelper", "classfrc_1_1SplineHelper.html", null ],
     [ "frc::SplineParameterizer", "classfrc_1_1SplineParameterizer.html", null ],
     [ "frc::Trajectory::State", "structfrc_1_1Trajectory_1_1State.html", null ],
-    [ "frc::TrapezoidProfile< Distance >::State", "classfrc_1_1TrapezoidProfile_1_1State.html", null ],
     [ "frc::sim::DifferentialDrivetrainSim::State", "classfrc_1_1sim_1_1DifferentialDrivetrainSim_1_1State.html", null ],
+    [ "frc::TrapezoidProfile< Distance >::State", "classfrc_1_1TrapezoidProfile_1_1State.html", null ],
     [ "wpi::static_circular_buffer< T, N >", "classwpi_1_1static__circular__buffer.html", null ],
     [ "wpi::detail::static_const< T >", "structwpi_1_1detail_1_1static__const.html", null ],
     [ "wpi::StringMapConstIterator< ValueTy >", "classwpi_1_1StringMapConstIterator.html", null ],

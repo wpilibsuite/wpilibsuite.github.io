@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"classfrc_1_1CameraServer.html#a938bf7f5cd9c52f7450f74b8bbb9840a":[5,0,2,20,18],
 "classfrc_1_1CameraServer.html#a94a43767e36b2719c219e0da4496579b":[5,0,2,20,9],
 "classfrc_1_1CameraServer.html#a94ad1047b2af0a2d27f2db2d95a68bb1":[5,0,2,20,30],
 "classfrc_1_1CameraServer.html#a94ec5cb0631002669048a9262bd42d0b":[5,0,2,20,32],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "classfrc_1_1Command.html#af60c9bdc34425ba1f7c2c2f0642af79e":[5,0,2,30,26],
 "classfrc_1_1Command.html#af6353922458a5b64f584b2401eaf7085":[5,0,2,30,45],
 "classfrc_1_1Command.html#af816dc206e90bdad6ae895fb5e5574c2":[5,0,2,30,17],
-"classfrc_1_1Command.html#afb88c77ea5daaefa6c8fa6bc5b9aa5c1":[5,0,2,30,52],
-"classfrc_1_1CommandGroup.html":[5,0,2,31]
+"classfrc_1_1Command.html#afb88c77ea5daaefa6c8fa6bc5b9aa5c1":[5,0,2,30,52]
 };

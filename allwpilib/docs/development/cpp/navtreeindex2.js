@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"classcs_1_1MjpegServer.html#ac4fea0e212aec552dd945115daa958e1":[3,7,8,4],
 "classcs_1_1RawCvSink.html":[5,0,0,5],
 "classcs_1_1RawCvSink.html#a0fe78da05d3c166aacf43824825f820b":[5,0,0,5,5],
 "classcs_1_1RawCvSink.html#a4a10e55aaafef30e617a5d0b3513cc25":[5,0,0,5,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "classfrc2_1_1CommandScheduler.html":[5,0,3,5],
 "classfrc2_1_1CommandScheduler.html#a00111757dc30378ede1437ae907902c8":[5,0,3,5,31],
 "classfrc2_1_1CommandScheduler.html#a01ad4d4ab8b9cdf9c3c15f42f47350b5":[5,0,3,5,7],
-"classfrc2_1_1CommandScheduler.html#a068e61446afe2341cc0651f0dfd2a55f":[5,0,3,5,18],
-"classfrc2_1_1CommandScheduler.html#a0a967399a51c4525b1ca179e9f2a7753":[5,0,3,5,25]
+"classfrc2_1_1CommandScheduler.html#a068e61446afe2341cc0651f0dfd2a55f":[5,0,3,5,18]
 };

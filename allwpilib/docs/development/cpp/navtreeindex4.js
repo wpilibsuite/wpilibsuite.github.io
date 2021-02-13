@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"classfrc2_1_1RamseteCommand.html#ac26d1e819d69234c815ea2237f742795":[5,0,3,26,7],
 "classfrc2_1_1RamseteCommand.html#acb08f1e405db107c07843ba3331c2185":[5,0,3,26,1],
 "classfrc2_1_1RamseteCommand.html#ad93edf0a4a92f81c1b619dcc666a101f":[5,0,3,26,2],
 "classfrc2_1_1RunCommand.html":[5,0,3,27],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "classfrc_1_1ADXRS450__Gyro.html#a548505e23354192ac81ffed5d21c9981":[5,0,2,7,9],
 "classfrc_1_1ADXRS450__Gyro.html#a6389885a2e8e4cf7f2df9593731117a3":[5,0,2,7,1],
 "classfrc_1_1ADXRS450__Gyro.html#a72e2eb9eb921d3712af1a6ff1d1a30ca":[5,0,2,7,2],
-"classfrc_1_1ADXRS450__Gyro.html#aa556e13cbce13edd8989e07d75d8885d":[5,0,2,7,5],
-"classfrc_1_1ADXRS450__Gyro.html#acb15a3d7900cf2f78b1eaddd95b911e6":[5,0,2,7,8]
+"classfrc_1_1ADXRS450__Gyro.html#aa556e13cbce13edd8989e07d75d8885d":[5,0,2,7,5]
 };

@@ -186,6 +186,7 @@ var namespacefrc =
     [ "RobotDrive", "classfrc_1_1RobotDrive.html", "classfrc_1_1RobotDrive" ],
     [ "RobotDriveBase", "classfrc_1_1RobotDriveBase.html", "classfrc_1_1RobotDriveBase" ],
     [ "RobotState", "classfrc_1_1RobotState.html", "classfrc_1_1RobotState" ],
+    [ "RomiGyro", "classfrc_1_1RomiGyro.html", "classfrc_1_1RomiGyro" ],
     [ "Rotation2d", "classfrc_1_1Rotation2d.html", "classfrc_1_1Rotation2d" ],
     [ "Scheduler", "classfrc_1_1Scheduler.html", "classfrc_1_1Scheduler" ],
     [ "ScopedTracer", "classfrc_1_1ScopedTracer.html", "classfrc_1_1ScopedTracer" ],
