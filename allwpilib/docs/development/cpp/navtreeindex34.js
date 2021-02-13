@@ -1,5 +1,7 @@
 var NAVTREEINDEX34 =
 {
+"group__cscore__logging__func.html":[3,6,13],
+"group__cscore__mjpegserver__cfunc.html":[3,5,10],
 "group__cscore__mjpegserver__func.html":[3,6,9],
 "group__cscore__oo.html":[3,7],
 "group__cscore__opencv__sink__cfunc.html":[3,5,11],
@@ -247,7 +249,5 @@ var NAVTREEINDEX34 =
 "group__hal__encoder.html#gac830c4961d0ddb67cdc02bc6cb52ec12":[3,0,4,3],
 "group__hal__encoder.html#gac8e8b9404204045bc7c4c92070787c17":[3,0,4,7],
 "group__hal__encoder.html#gae37a7e58f0cd174f549c2db25935c9ee":[3,0,4,18],
-"group__hal__encoder.html#gae38ad041836be4aa2a0a457ac1b97c40":[3,0,4,9],
-"group__hal__encoder.html#gae4e4cfc0aa3ef5f24f1eeedab2c8b0f6":[3,0,4,8],
-"group__hal__encoder.html#gaf72690908d0ab31d028dfdc5dad136ff":[3,0,4,11]
+"group__hal__encoder.html#gae38ad041836be4aa2a0a457ac1b97c40":[3,0,4,9]
 };

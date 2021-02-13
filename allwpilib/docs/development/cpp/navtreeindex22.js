@@ -1,5 +1,7 @@
 var NAVTREEINDEX22 =
 {
+"classwpi_1_1DenseMapIterator.html#a80284a764a3fc03099f6083bf47c2275":[5,0,7,50,6],
+"classwpi_1_1DenseMapIterator.html#a8fa43f5839907ccf81d0b19c2a5b89e7":[5,0,7,50,1],
 "classwpi_1_1DenseMapIterator.html#aae4ad3be2d052cc7af5797d382dea1e1":[5,0,7,50,0],
 "classwpi_1_1DenseMapIterator.html#ac199153a9b1599cd2925a12dfcc18037":[5,0,7,50,14],
 "classwpi_1_1DenseMapIterator.html#acf42efeaaba986aeb2156df262064f1d":[5,0,7,50,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX22 =
 "classwpi_1_1HttpPathRef.html#a450105610c9f56f48c5d67ed7b53b16c":[5,0,7,103,18],
 "classwpi_1_1HttpPathRef.html#a4ba0024af14793da885e0e5a9c392a36":[5,0,7,103,6],
 "classwpi_1_1HttpPathRef.html#a531f2be1f3fadc9e07b5ed41971f0bd2":[5,0,7,103,10],
-"classwpi_1_1HttpPathRef.html#a713365d2df5e0ef3985f802e52d410f0":[5,0,7,103,5],
-"classwpi_1_1HttpPathRef.html#a76a53b237b85ce91c47cbdb98ecf036f":[5,0,7,103,15],
-"classwpi_1_1HttpPathRef.html#a76f8b5957907f2bc29918afc3383064b":[5,0,7,103,9]
+"classwpi_1_1HttpPathRef.html#a713365d2df5e0ef3985f802e52d410f0":[5,0,7,103,5]
 };

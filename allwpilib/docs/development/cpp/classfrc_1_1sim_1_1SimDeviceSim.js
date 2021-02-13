@@ -1,6 +1,8 @@
 var classfrc_1_1sim_1_1SimDeviceSim =
 [
     [ "SimDeviceSim", "classfrc_1_1sim_1_1SimDeviceSim.html#a83eb29d9e66c07fc973862fb7e777e2c", null ],
+    [ "SimDeviceSim", "classfrc_1_1sim_1_1SimDeviceSim.html#a4f03ee913153018d0db30f29f5a0d4a2", null ],
+    [ "SimDeviceSim", "classfrc_1_1sim_1_1SimDeviceSim.html#abea2f72198998c0690dd2bcb40fccc2c", null ],
     [ "EnumerateDevices", "classfrc_1_1sim_1_1SimDeviceSim.html#ae2bb02c5e4858095139f831c0696ed06", null ],
     [ "EnumerateValues", "classfrc_1_1sim_1_1SimDeviceSim.html#a44ba81e2cb7d5d85f734f2c40582d16c", null ],
     [ "GetBoolean", "classfrc_1_1sim_1_1SimDeviceSim.html#a97619ca047f1e1f0ab1d4d40b9704ceb", null ],

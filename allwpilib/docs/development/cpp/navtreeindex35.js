@@ -1,5 +1,7 @@
 var NAVTREEINDEX35 =
 {
+"group__hal__encoder.html#gae4e4cfc0aa3ef5f24f1eeedab2c8b0f6":[3,0,4,8],
+"group__hal__encoder.html#gaf72690908d0ab31d028dfdc5dad136ff":[3,0,4,11],
 "group__hal__encoder.html#gafa07bd7dc73fd175ba7893a95cc86106":[3,0,4,0],
 "group__hal__errors.html":[3,0,10],
 "group__hal__extensions.html":[3,0,27],
@@ -247,7 +249,5 @@ var NAVTREEINDEX35 =
 "group__ntcore__cpp__api.html#gga2a2ad89b922736b757ebfaa2338392d4aeb1c99cf2cfb3074c4d21f3297b81167":[3,2,7,2],
 "group__ntcore__cpp__api.html#gga2a2ad89b922736b757ebfaa2338392d4afc5104febfc8a08878f3b5b589298a18":[3,2,7,5],
 "group__ntcore__cpp__handle__api.html":[3,1],
-"group__ntcore__entrylistener__cfunc.html":[3,3,2],
-"group__ntcore__entrylistener__cfunc.html#ga0f53b9b19acf632b141c25865034ce1d":[3,3,2,8],
-"group__ntcore__entrylistener__cfunc.html#ga13b04c8e36e1505bdb4000521b1423a3":[3,3,2,4]
+"group__ntcore__entrylistener__cfunc.html":[3,3,2]
 };

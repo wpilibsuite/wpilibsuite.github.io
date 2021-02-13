@@ -1,5 +1,7 @@
 var NAVTREEINDEX37 =
 {
+"group__ntcore__utility__cfunc.html#ga54b3029e8c81551f1f69bf7d03ebbbb1":[3,3,7,3],
+"group__ntcore__utility__cfunc.html#ga560d63022a5d123bb7d3739a9ce80403":[3,3,7,11],
 "group__ntcore__utility__cfunc.html#ga61fc33bc14ee480cfcd318f04aebfac6":[3,3,7,10],
 "group__ntcore__utility__cfunc.html#ga6792d01b286e3efb79f102c20404d58d":[3,3,7,14],
 "group__ntcore__utility__cfunc.html#ga773358c9d2b473bad2aaff51384d8eaa":[3,3,7,8],
@@ -56,10 +58,10 @@ var NAVTREEINDEX37 =
 "md__home_runner_work_allwpilib_allwpilib_LICENSE.html":[0],
 "modules.html":[3],
 "mutex_8h_source.html":[6,0,8,0,0,0,0,0,48],
-"namespacecs.html":[4,0,0],
 "namespacecs.html":[5,0,0],
-"namespacefrc.html":[5,0,2],
+"namespacecs.html":[4,0,0],
 "namespacefrc.html":[4,0,1],
+"namespacefrc.html":[5,0,2],
 "namespacefrc_1_1filesystem.html":[4,0,1,0],
 "namespacehal.html":[4,0,2],
 "namespacehal.html":[5,0,4],
@@ -68,14 +70,14 @@ var NAVTREEINDEX37 =
 "namespacemembers_eval.html":[4,1,4],
 "namespacemembers_func.html":[4,1,1],
 "namespacemembers_type.html":[4,1,2],
-"namespacent.html":[5,0,5],
 "namespacent.html":[4,0,3],
+"namespacent.html":[5,0,5],
 "namespacent_1_1EntryListenerFlags.html":[4,0,3,0],
 "namespaces.html":[4,0],
-"namespacewpi_1_1detail.html":[4,0,4,0],
 "namespacewpi_1_1detail.html":[5,0,7,0],
-"namespacewpi_1_1java.html":[5,0,7,3],
+"namespacewpi_1_1detail.html":[4,0,4,0],
 "namespacewpi_1_1java.html":[4,0,4,1],
+"namespacewpi_1_1java.html":[5,0,7,3],
 "never__destroyed_8h_source.html":[6,0,7,0,0,0,0,0,0,5],
 "nodiscard_8h_source.html":[6,0,8,0,0,0,0,0,52],
 "ntcore_8h_source.html":[6,0,3,0,0,0,0,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX37 =
 "structNT__Value.html#a640ba6c5b32013f1a5e09597e4b77470":[3,3,11,13],
 "structNT__Value.html#a71b27798d67c53e6635d7c38997e3d31":[3,3,11,12],
 "structNT__Value.html#ab4fee8c0729e8886dac8bb6a2ba13854":[3,3,11,11],
-"structNT__Value.html#abf83749e6dcf2eda3867a904e8ac8c80":[3,3,11,7],
-"structNT__Value.html#ad3fa4fcf6b3945e62f49638bb043948b":[3,3,11,6],
-"structNT__Value.html#ad57d2f0aaa820d67e013218183b9a329":[3,3,11,10]
+"structNT__Value.html#abf83749e6dcf2eda3867a904e8ac8c80":[3,3,11,7]
 };

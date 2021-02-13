@@ -1,5 +1,7 @@
 var NAVTREEINDEX41 =
 {
+"structwpi_1_1uv_1_1Process_1_1Option.html#a8963b215bcbc121741c247ca3b3f828f":[5,0,7,8,21,0,9],
+"structwpi_1_1uv_1_1Process_1_1Option.html#a9a9ad457c5e36bdb9451b9731c3c68d0":[5,0,7,8,21,0,16],
 "structwpi_1_1uv_1_1Process_1_1Option.html#ad09ae29fafdad687d38f32d6b32b8b19":[5,0,7,8,21,0,14],
 "structwpi_1_1uv_1_1Process_1_1Option.html#ada4c7e2e17f8938688fbc57107047a84":[5,0,7,8,21,0,7],
 "structwpi_1_1uv_1_1Process_1_1Option.html#ae3b132f27bd319778ddacb9192b02d0f":[5,0,7,8,21,0,13],
