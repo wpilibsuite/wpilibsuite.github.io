@@ -1,5 +1,7 @@
 var NAVTREEINDEX22 =
 {
+"classwpi_1_1ECError.html#adb08b1ed5bb09b66954e5ab2c2fb0b34":[5,0,7,52,0],
+"classwpi_1_1Error.html":[5,0,7,54],
 "classwpi_1_1Error.html#a2b67792bdc5edcbfa7d7f839df31a4db":[5,0,7,54,9],
 "classwpi_1_1Error.html#a2c831eabfe62504c9cc0cc16e0799c44":[5,0,7,54,14],
 "classwpi_1_1Error.html#a40896fefd201d38b62606019014fe65a":[5,0,7,54,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX22 =
 "classwpi_1_1HttpQueryMap.html#a1ffaa28bad5610eff9c839b6e6d29747":[5,0,7,104,0],
 "classwpi_1_1HttpQueryMap.html#a258fd1927149a8f51de1ec24dbcf1f6e":[5,0,7,104,2],
 "classwpi_1_1HttpQueryMap.html#a793fed784bb6142ba44f62c5900dbd34":[5,0,7,104,1],
-"classwpi_1_1HttpRequest.html":[5,0,7,105],
-"classwpi_1_1HttpRequest.html#a0bb17d7225ecc607ed788025c2f71d05":[5,0,7,105,4],
-"classwpi_1_1HttpRequest.html#a269380d47eaf23252a77e8ec6517f8f1":[5,0,7,105,0]
+"classwpi_1_1HttpRequest.html":[5,0,7,105]
 };

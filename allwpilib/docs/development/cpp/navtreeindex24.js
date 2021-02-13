@@ -1,5 +1,7 @@
 var NAVTREEINDEX24 =
 {
+"classwpi_1_1PointerUnion4.html#acf77f259dc232a330402de67e8745811":[5,0,7,160,16],
+"classwpi_1_1PointerUnion4.html#ae61f1507610e41e74ad8b23cf3822b3f":[5,0,7,160,14],
 "classwpi_1_1PointerUnion4.html#af7111646264d444caf6e00ba61ef3560":[5,0,7,160,1],
 "classwpi_1_1PointerUnionUIntTraits.html":[5,0,7,165],
 "classwpi_1_1PointerUnionUIntTraits.html#a2114fd2c60acbd8a647307968f3e50e3":[5,0,7,165,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX24 =
 "classwpi_1_1SmallVectorImpl.html#a178e1fca0cd06be2a884960b51150e73":[5,0,7,218,5],
 "classwpi_1_1SmallVectorImpl.html#a1e69fb3914c83517c040a1c2260acd55":[5,0,7,218,11],
 "classwpi_1_1SmallVectorImpl.html#a216194003b61b228314afa29d13d924e":[5,0,7,218,29],
-"classwpi_1_1SmallVectorImpl.html#a25d040708904522cd2dc6a7efe07a854":[5,0,7,218,8],
-"classwpi_1_1SmallVectorImpl.html#a290d987bc46f1f2af5bd34bdf0b83277":[5,0,7,218,17],
-"classwpi_1_1SmallVectorImpl.html#a2bc9e0398d20fcd92a188bc805dbf2de":[5,0,7,218,25]
+"classwpi_1_1SmallVectorImpl.html#a25d040708904522cd2dc6a7efe07a854":[5,0,7,218,8]
 };

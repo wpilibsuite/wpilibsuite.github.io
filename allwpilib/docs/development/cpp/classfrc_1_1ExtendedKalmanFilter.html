@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.2.2-10-gf82aa1d</span>
+   &#160;<span id="projectnumber">2021.2.2-12-g94e685e</span>
    </div>
   </td>
  </tr>
@@ -102,6 +102,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8496ad06ed4d0d3e98aa18b13eb7a7c4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1ExtendedKalmanFilter.html#a8496ad06ed4d0d3e98aa18b13eb7a7c4">ExtendedKalmanFilter</a> (std::function&lt; Eigen::Matrix&lt; double, States, 1 &gt;(const Eigen::Matrix&lt; double, States, 1 &gt; &amp;, const Eigen::Matrix&lt; double, Inputs, 1 &gt; &amp;)&gt; f, std::function&lt; Eigen::Matrix&lt; double, Outputs, 1 &gt;(const Eigen::Matrix&lt; double, States, 1 &gt; &amp;, const Eigen::Matrix&lt; double, Inputs, 1 &gt; &amp;)&gt; h, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, States &gt; &amp;stateStdDevs, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, Outputs &gt; &amp;measurementStdDevs, units::second_t dt)</td></tr>
 <tr class="memdesc:a8496ad06ed4d0d3e98aa18b13eb7a7c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an Extended Kalman filter.  <a href="classfrc_1_1ExtendedKalmanFilter.html#a8496ad06ed4d0d3e98aa18b13eb7a7c4">More...</a><br /></td></tr>
 <tr class="separator:a8496ad06ed4d0d3e98aa18b13eb7a7c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f7550acd532b0f0d91fab3c7a777dc3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1ExtendedKalmanFilter.html#a7f7550acd532b0f0d91fab3c7a777dc3">ExtendedKalmanFilter</a> (std::function&lt; Eigen::Matrix&lt; double, States, 1 &gt;(const Eigen::Matrix&lt; double, States, 1 &gt; &amp;, const Eigen::Matrix&lt; double, Inputs, 1 &gt; &amp;)&gt; f, std::function&lt; Eigen::Matrix&lt; double, Outputs, 1 &gt;(const Eigen::Matrix&lt; double, States, 1 &gt; &amp;, const Eigen::Matrix&lt; double, Inputs, 1 &gt; &amp;)&gt; h, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, States &gt; &amp;stateStdDevs, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, Outputs &gt; &amp;measurementStdDevs, std::function&lt; Eigen::Matrix&lt; double, Outputs, 1 &gt;(const Eigen::Matrix&lt; double, Outputs, 1 &gt; &amp;, const Eigen::Matrix&lt; double, Outputs, 1 &gt; &amp;)&gt; residualFuncY, std::function&lt; Eigen::Matrix&lt; double, States, 1 &gt;(const Eigen::Matrix&lt; double, States, 1 &gt; &amp;, const Eigen::Matrix&lt; double, States, 1 &gt; &amp;)&gt; addFuncX, units::second_t dt)</td></tr>
+<tr class="memdesc:a7f7550acd532b0f0d91fab3c7a777dc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an Extended Kalman filter.  <a href="classfrc_1_1ExtendedKalmanFilter.html#a7f7550acd532b0f0d91fab3c7a777dc3">More...</a><br /></td></tr>
+<tr class="separator:a7f7550acd532b0f0d91fab3c7a777dc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaba4ddeffff8754437a04937df7f3e47"><td class="memItemLeft" align="right" valign="top"><a id="aaba4ddeffff8754437a04937df7f3e47"></a>
 const Eigen::Matrix&lt; double, States, States &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1ExtendedKalmanFilter.html#aaba4ddeffff8754437a04937df7f3e47">P</a> () const</td></tr>
 <tr class="memdesc:aaba4ddeffff8754437a04937df7f3e47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the error covariance matrix P. <br /></td></tr>
@@ -135,14 +138,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:ad017e203aff9f1236bc7ef52dd1b049e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1ExtendedKalmanFilter.html#ad017e203aff9f1236bc7ef52dd1b049e">Correct</a> (const Eigen::Matrix&lt; double, Inputs, 1 &gt; &amp;u, const Eigen::Matrix&lt; double, Outputs, 1 &gt; &amp;y)</td></tr>
 <tr class="memdesc:ad017e203aff9f1236bc7ef52dd1b049e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Correct the state estimate x-hat using the measurements in y.  <a href="classfrc_1_1ExtendedKalmanFilter.html#ad017e203aff9f1236bc7ef52dd1b049e">More...</a><br /></td></tr>
 <tr class="separator:ad017e203aff9f1236bc7ef52dd1b049e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9dad1ed47b3d741220c3ca870e97942f"><td class="memTemplParams" colspan="2">template&lt;int Rows&gt; </td></tr>
-<tr class="memitem:a9dad1ed47b3d741220c3ca870e97942f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classfrc_1_1ExtendedKalmanFilter.html#a9dad1ed47b3d741220c3ca870e97942f">Correct</a> (const Eigen::Matrix&lt; double, Inputs, 1 &gt; &amp;u, const Eigen::Matrix&lt; double, Rows, 1 &gt; &amp;y, std::function&lt; Eigen::Matrix&lt; double, Rows, 1 &gt;(const Eigen::Matrix&lt; double, States, 1 &gt; &amp;, const Eigen::Matrix&lt; double, Inputs, 1 &gt; &amp;)&gt; h, const Eigen::Matrix&lt; double, Rows, Rows &gt; &amp;R)</td></tr>
-<tr class="memdesc:a9dad1ed47b3d741220c3ca870e97942f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Correct the state estimate x-hat using the measurements in y.  <a href="classfrc_1_1ExtendedKalmanFilter.html#a9dad1ed47b3d741220c3ca870e97942f">More...</a><br /></td></tr>
+<tr class="memitem:a9dad1ed47b3d741220c3ca870e97942f"><td class="memTemplParams" colspan="2"><a id="a9dad1ed47b3d741220c3ca870e97942f"></a>
+template&lt;int Rows&gt; </td></tr>
+<tr class="memitem:a9dad1ed47b3d741220c3ca870e97942f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Correct</b> (const Eigen::Matrix&lt; double, Inputs, 1 &gt; &amp;u, const Eigen::Matrix&lt; double, Rows, 1 &gt; &amp;y, std::function&lt; Eigen::Matrix&lt; double, Rows, 1 &gt;(const Eigen::Matrix&lt; double, States, 1 &gt; &amp;, const Eigen::Matrix&lt; double, Inputs, 1 &gt; &amp;)&gt; h, const Eigen::Matrix&lt; double, Rows, Rows &gt; &amp;R)</td></tr>
 <tr class="separator:a9dad1ed47b3d741220c3ca870e97942f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7e654bf0bb66f2b15a0ce5ee984a050"><td class="memTemplParams" colspan="2">template&lt;int Rows&gt; </td></tr>
+<tr class="memitem:aa7e654bf0bb66f2b15a0ce5ee984a050"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classfrc_1_1ExtendedKalmanFilter.html#aa7e654bf0bb66f2b15a0ce5ee984a050">Correct</a> (const Eigen::Matrix&lt; double, Inputs, 1 &gt; &amp;u, const Eigen::Matrix&lt; double, Rows, 1 &gt; &amp;y, std::function&lt; Eigen::Matrix&lt; double, Rows, 1 &gt;(const Eigen::Matrix&lt; double, States, 1 &gt; &amp;, const Eigen::Matrix&lt; double, Inputs, 1 &gt; &amp;)&gt; h, const Eigen::Matrix&lt; double, Rows, Rows &gt; &amp;R, std::function&lt; Eigen::Matrix&lt; double, Rows, 1 &gt;(const Eigen::Matrix&lt; double, Rows, 1 &gt; &amp;, const Eigen::Matrix&lt; double, Rows, 1 &gt; &amp;)&gt; residualFuncY, std::function&lt; Eigen::Matrix&lt; double, States, 1 &gt;(const Eigen::Matrix&lt; double, States, 1 &gt; &amp;, const Eigen::Matrix&lt; double, States, 1 &gt;)&gt; addFuncX)</td></tr>
+<tr class="memdesc:aa7e654bf0bb66f2b15a0ce5ee984a050"><td class="mdescLeft">&#160;</td><td class="mdescRight">Correct the state estimate x-hat using the measurements in y.  <a href="classfrc_1_1ExtendedKalmanFilter.html#aa7e654bf0bb66f2b15a0ce5ee984a050">More...</a><br /></td></tr>
+<tr class="separator:aa7e654bf0bb66f2b15a0ce5ee984a050"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8496ad06ed4d0d3e98aa18b13eb7a7c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8496ad06ed4d0d3e98aa18b13eb7a7c4">&#9670;&nbsp;</a></span>ExtendedKalmanFilter()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8496ad06ed4d0d3e98aa18b13eb7a7c4">&#9670;&nbsp;</a></span>ExtendedKalmanFilter() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -209,6 +216,88 @@ template&lt;int States, int Inputs, int Outputs&gt; </div>
 
 </div>
 </div>
+<a id="a7f7550acd532b0f0d91fab3c7a777dc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f7550acd532b0f0d91fab3c7a777dc3">&#9670;&nbsp;</a></span>ExtendedKalmanFilter() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int States, int Inputs, int Outputs&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfrc_1_1ExtendedKalmanFilter.html">frc::ExtendedKalmanFilter</a>&lt; States, Inputs, Outputs &gt;::<a class="el" href="classfrc_1_1ExtendedKalmanFilter.html">ExtendedKalmanFilter</a> </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; Eigen::Matrix&lt; double, States, 1 &gt;(const Eigen::Matrix&lt; double, States, 1 &gt; &amp;, const Eigen::Matrix&lt; double, Inputs, 1 &gt; &amp;)&gt;&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; Eigen::Matrix&lt; double, Outputs, 1 &gt;(const Eigen::Matrix&lt; double, States, 1 &gt; &amp;, const Eigen::Matrix&lt; double, Inputs, 1 &gt; &amp;)&gt;&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, States &gt; &amp;&#160;</td>
+          <td class="paramname"><em>stateStdDevs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, Outputs &gt; &amp;&#160;</td>
+          <td class="paramname"><em>measurementStdDevs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; Eigen::Matrix&lt; double, Outputs, 1 &gt;(const Eigen::Matrix&lt; double, Outputs, 1 &gt; &amp;, const Eigen::Matrix&lt; double, Outputs, 1 &gt; &amp;)&gt;&#160;</td>
+          <td class="paramname"><em>residualFuncY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; Eigen::Matrix&lt; double, States, 1 &gt;(const Eigen::Matrix&lt; double, States, 1 &gt; &amp;, const Eigen::Matrix&lt; double, States, 1 &gt; &amp;)&gt;&#160;</td>
+          <td class="paramname"><em>addFuncX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">units::second_t&#160;</td>
+          <td class="paramname"><em>dt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs an Extended Kalman filter. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">f</td><td>A vector-valued function of x and u that returns the derivative of the state vector. </td></tr>
+    <tr><td class="paramname">h</td><td>A vector-valued function of x and u that returns the measurement vector. </td></tr>
+    <tr><td class="paramname">stateStdDevs</td><td>Standard deviations of model states. </td></tr>
+    <tr><td class="paramname">measurementStdDevs</td><td>Standard deviations of measurements. </td></tr>
+    <tr><td class="paramname">residualFuncY</td><td>A function that computes the residual of two measurement vectors (i.e. it subtracts them.) </td></tr>
+    <tr><td class="paramname">addFuncX</td><td>A function that adds two state vectors. </td></tr>
+    <tr><td class="paramname">dt</td><td>Nominal discretization timestep. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ad017e203aff9f1236bc7ef52dd1b049e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad017e203aff9f1236bc7ef52dd1b049e">&#9670;&nbsp;</a></span>Correct() <span class="overload">[1/2]</span></h2>
@@ -257,8 +346,8 @@ template&lt;int States, int Inputs, int Outputs&gt; </div>
 
 </div>
 </div>
-<a id="a9dad1ed47b3d741220c3ca870e97942f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9dad1ed47b3d741220c3ca870e97942f">&#9670;&nbsp;</a></span>Correct() <span class="overload">[2/2]</span></h2>
+<a id="aa7e654bf0bb66f2b15a0ce5ee984a050"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7e654bf0bb66f2b15a0ce5ee984a050">&#9670;&nbsp;</a></span>Correct() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -292,7 +381,19 @@ template&lt;int Rows&gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const Eigen::Matrix&lt; double, Rows, Rows &gt; &amp;&#160;</td>
-          <td class="paramname"><em>R</em>&#160;</td>
+          <td class="paramname"><em>R</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; Eigen::Matrix&lt; double, Rows, 1 &gt;(const Eigen::Matrix&lt; double, Rows, 1 &gt; &amp;, const Eigen::Matrix&lt; double, Rows, 1 &gt; &amp;)&gt;&#160;</td>
+          <td class="paramname"><em>residualFuncY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; Eigen::Matrix&lt; double, States, 1 &gt;(const Eigen::Matrix&lt; double, States, 1 &gt; &amp;, const Eigen::Matrix&lt; double, States, 1 &gt;)&gt;&#160;</td>
+          <td class="paramname"><em>addFuncX</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -315,6 +416,8 @@ template&lt;int Rows&gt; </div>
     <tr><td class="paramname">y</td><td>Measurement vector. </td></tr>
     <tr><td class="paramname">h</td><td>A vector-valued function of x and u that returns the measurement vector. </td></tr>
     <tr><td class="paramname">R</td><td>Discrete measurement noise covariance matrix. </td></tr>
+    <tr><td class="paramname">residualFuncY</td><td>A function that computes the residual of two measurement vectors (i.e. it subtracts them.) </td></tr>
+    <tr><td class="paramname">addFuncX</td><td>A function that adds two state vectors. </td></tr>
   </table>
   </dd>
 </dl>
@@ -579,7 +682,7 @@ template&lt;int States, int Inputs, int Outputs&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1ExtendedKalmanFilter.html">ExtendedKalmanFilter</a></li>
-    <li class="footer">Generated on Sat Feb 13 2021 06:14:12 for WPILibC++ by
+    <li class="footer">Generated on Sat Feb 13 2021 06:16:04 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

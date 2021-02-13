@@ -1,5 +1,7 @@
 var NAVTREEINDEX35 =
 {
+"group__hal__i2c.html#gaf2ff125465e59df8a1e139e82426e8eb":[3,0,26,3],
+"group__hal__interrupts.html":[3,0,16],
 "group__hal__interrupts.html#ga35f98945b469afacbfcec081b98a1a1a":[3,0,16,6],
 "group__hal__interrupts.html#ga42d553aed65587375963d441cb48d6e0":[3,0,16,9],
 "group__hal__interrupts.html#ga60e1deb622cbc12ad28a17673b5c1e64":[3,0,16,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX35 =
 "group__ntcore__entrylistener__func.html":[3,1,2],
 "group__ntcore__entrylistener__func.html#ga1869be780fcddb3d703623715ead828d":[3,1,2,0],
 "group__ntcore__entrylistener__func.html#ga1a6be4e3e2330ea4c1107b62d9b9af53":[3,1,2,1],
-"group__ntcore__entrylistener__func.html#ga28cc419f2ba20e0efd0b911ba28e4d15":[3,1,2,8],
-"group__ntcore__entrylistener__func.html#ga2c45289a438275d2e556b20c09b5ebee":[3,1,2,6],
-"group__ntcore__entrylistener__func.html#ga300169d54ef43113d7b0a17c6de23838":[3,1,2,9]
+"group__ntcore__entrylistener__func.html#ga28cc419f2ba20e0efd0b911ba28e4d15":[3,1,2,8]
 };
