@@ -11,7 +11,7 @@ var searchData=
   ['entrynotification_4101',['EntryNotification',['../classnt_1_1EntryNotification.html',1,'nt']]],
   ['enumerator_4102',['enumerator',['../classwpi_1_1detail_1_1enumerator.html',1,'wpi::detail']]],
   ['enumerator_5fiter_4103',['enumerator_iter',['../classwpi_1_1detail_1_1enumerator__iter.html',1,'wpi::detail']]],
-  ['error_4104',['Error',['../classwpi_1_1uv_1_1Error.html',1,'wpi::uv::Error'],['../classfrc_1_1Error.html',1,'frc::Error'],['../classwpi_1_1Error.html',1,'wpi::Error']]],
+  ['error_4104',['Error',['../classfrc_1_1Error.html',1,'frc::Error'],['../classwpi_1_1uv_1_1Error.html',1,'wpi::uv::Error'],['../classwpi_1_1Error.html',1,'wpi::Error']]],
   ['errorasoutparameter_4105',['ErrorAsOutParameter',['../classwpi_1_1ErrorAsOutParameter.html',1,'wpi']]],
   ['errorbase_4106',['ErrorBase',['../classfrc_1_1ErrorBase.html',1,'frc']]],
   ['errorhandlertraits_4107',['ErrorHandlerTraits',['../classwpi_1_1ErrorHandlerTraits.html',1,'wpi']]],

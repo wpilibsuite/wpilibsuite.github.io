@@ -10,7 +10,7 @@ var searchData=
   ['m_5fstream_7699',['m_stream',['../classwpi_1_1HttpServerConnection.html#a93f24fcfd3d8d4099539f460c740c001',1,'wpi::HttpServerConnection']]],
   ['m_5fwebsocket_7700',['m_websocket',['../classwpi_1_1HttpWebSocketServerConnection.html#a795c640317fc1269dfe2f6adca4af012',1,'wpi::HttpWebSocketServerConnection']]],
   ['maxacceleration_7701',['maxAcceleration',['../structfrc_1_1TrajectoryConstraint_1_1MinMax.html#a8c026d38680f80b6f7cee6070b02afb3',1,'frc::TrajectoryConstraint::MinMax']]],
-  ['message_7702',['message',['../structNT__LogMessage.html#a1ea767b01ef4ffe026d1b3bb9553dbbc',1,'NT_LogMessage::message()'],['../classnt_1_1LogMessage.html#ac96f427a1107c0f4076f549c06ebb40b',1,'nt::LogMessage::message()']]],
+  ['message_7702',['message',['../classnt_1_1LogMessage.html#ac96f427a1107c0f4076f549c06ebb40b',1,'nt::LogMessage::message()'],['../structNT__LogMessage.html#a1ea767b01ef4ffe026d1b3bb9553dbbc',1,'NT_LogMessage::message()']]],
   ['messagebegin_7703',['messageBegin',['../classwpi_1_1HttpParser.html#acdd80c106ba77bfe430151b3a9db78fc',1,'wpi::HttpParser']]],
   ['messagecomplete_7704',['messageComplete',['../classwpi_1_1HttpParser.html#a8022236defcd5a438407436116e5c129',1,'wpi::HttpParser']]],
   ['minacceleration_7705',['minAcceleration',['../structfrc_1_1TrajectoryConstraint_1_1MinMax.html#a7ffbb771bf63970d5aec016d38f4bd8b',1,'frc::TrajectoryConstraint::MinMax']]]

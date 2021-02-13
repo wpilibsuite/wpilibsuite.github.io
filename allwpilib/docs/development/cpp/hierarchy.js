@@ -78,8 +78,8 @@ var hierarchy =
     [ "wpi::detail::AlignerImpl< T1, T2, T3, T4, T5, T6, T7, T8, T9, T10 >", "classwpi_1_1detail_1_1AlignerImpl.html", null ],
     [ "wpi::AlignTo< Align >", "structwpi_1_1AlignTo.html", null ],
     [ "frc::ADXL362::AllAxes", "structfrc_1_1ADXL362_1_1AllAxes.html", null ],
-    [ "frc::ADXL345_I2C::AllAxes", "structfrc_1_1ADXL345__I2C_1_1AllAxes.html", null ],
     [ "frc::ADXL345_SPI::AllAxes", "structfrc_1_1ADXL345__SPI_1_1AllAxes.html", null ],
+    [ "frc::ADXL345_I2C::AllAxes", "structfrc_1_1ADXL345__I2C_1_1AllAxes.html", null ],
     [ "frc::sim::AnalogEncoderSim", "classfrc_1_1sim_1_1AnalogEncoderSim.html", null ],
     [ "frc::sim::AnalogGyroSim", "classfrc_1_1sim_1_1AnalogGyroSim.html", null ],
     [ "frc::sim::AnalogInputSim", "classfrc_1_1sim_1_1AnalogInputSim.html", null ],
@@ -310,8 +310,8 @@ var hierarchy =
     [ "nt::EntryNotification", "classnt_1_1EntryNotification.html", null ],
     [ "wpi::detail::enumerator< R >", "classwpi_1_1detail_1_1enumerator.html", null ],
     [ "wpi::detail::enumerator_iter< R >", "classwpi_1_1detail_1_1enumerator__iter.html", null ],
-    [ "wpi::uv::Error", "classwpi_1_1uv_1_1Error.html", null ],
     [ "frc::Error", "classfrc_1_1Error.html", null ],
+    [ "wpi::uv::Error", "classwpi_1_1uv_1_1Error.html", null ],
     [ "wpi::Error", "classwpi_1_1Error.html", [
       [ "wpi::ErrorSuccess", "classwpi_1_1ErrorSuccess.html", null ]
     ] ],
@@ -607,7 +607,6 @@ var hierarchy =
     [ "HAL_MatchInfo", "structHAL__MatchInfo.html", null ],
     [ "HAL_Value", "structHAL__Value.html", null ],
     [ "HALSIM_NotifierInfo", "structHALSIM__NotifierInfo.html", null ],
-    [ "wpi::DebugEpochBase::HandleBase", "classwpi_1_1DebugEpochBase_1_1HandleBase.html", null ],
     [ "hal::HandleBase", "classhal_1_1HandleBase.html", [
       [ "hal::DigitalHandleResource< THandle, TStruct, size >", "classhal_1_1DigitalHandleResource.html", null ],
       [ "hal::IndexedClassedHandleResource< THandle, TStruct, size, enumValue >", "classhal_1_1IndexedClassedHandleResource.html", null ],
@@ -616,6 +615,7 @@ var hierarchy =
       [ "hal::LimitedHandleResource< THandle, TStruct, size, enumValue >", "classhal_1_1LimitedHandleResource.html", null ],
       [ "hal::UnlimitedHandleResource< THandle, TStruct, enumValue >", "classhal_1_1UnlimitedHandleResource.html", null ]
     ] ],
+    [ "wpi::DebugEpochBase::HandleBase", "classwpi_1_1DebugEpochBase_1_1HandleBase.html", null ],
     [ "wpi::detail::has_from_json< BasicJsonType, T >", "structwpi_1_1detail_1_1has__from__json.html", null ],
     [ "wpi::detail::has_non_default_from_json< BasicJsonType, T >", "structwpi_1_1detail_1_1has__non__default__from__json.html", null ],
     [ "wpi::has_rbegin_impl< Ty >", "classwpi_1_1has__rbegin__impl.html", null ],
@@ -646,9 +646,7 @@ var hierarchy =
     ] ],
     [ "wpi::identity< Ty >", "structwpi_1_1identity.html", null ],
     [ "integral_constant", null, [
-      [ "std::tuple_size< wpi::array< T, N > >", "structstd_1_1tuple__size_3_01wpi_1_1array_3_01T_00_01N_01_4_01_4.html", null ]
-    ] ],
-    [ "integral_constant", null, [
+      [ "std::tuple_size< wpi::array< T, N > >", "structstd_1_1tuple__size_3_01wpi_1_1array_3_01T_00_01N_01_4_01_4.html", null ],
       [ "wpi::detail::ConstantLog2< N >", "structwpi_1_1detail_1_1ConstantLog2.html", null ],
       [ "wpi::detail::ConstantLog2< 1 >", "structwpi_1_1detail_1_1ConstantLog2_3_011_01_4.html", null ],
       [ "wpi::hashing::detail::is_hashable_data< T >", "structwpi_1_1hashing_1_1detail_1_1is__hashable__data.html", null ],
@@ -1456,9 +1454,9 @@ var hierarchy =
     ] ],
     [ "frc::SplineHelper", "classfrc_1_1SplineHelper.html", null ],
     [ "frc::SplineParameterizer", "classfrc_1_1SplineParameterizer.html", null ],
+    [ "frc::Trajectory::State", "structfrc_1_1Trajectory_1_1State.html", null ],
     [ "frc::TrapezoidProfile< Distance >::State", "classfrc_1_1TrapezoidProfile_1_1State.html", null ],
     [ "frc::sim::DifferentialDrivetrainSim::State", "classfrc_1_1sim_1_1DifferentialDrivetrainSim_1_1State.html", null ],
-    [ "frc::Trajectory::State", "structfrc_1_1Trajectory_1_1State.html", null ],
     [ "wpi::static_circular_buffer< T, N >", "classwpi_1_1static__circular__buffer.html", null ],
     [ "wpi::detail::static_const< T >", "structwpi_1_1detail_1_1static__const.html", null ],
     [ "wpi::StringMapConstIterator< ValueTy >", "classwpi_1_1StringMapConstIterator.html", null ],
@@ -1488,8 +1486,8 @@ var hierarchy =
     [ "frc::SwerveModuleState", "structfrc_1_1SwerveModuleState.html", null ],
     [ "wpi::TCPConnector", "classwpi_1_1TCPConnector.html", null ],
     [ "wpi::ThreadSafeRefCountedBase< Derived >", "classwpi_1_1ThreadSafeRefCountedBase.html", null ],
-    [ "frc2::Timer", "classfrc2_1_1Timer.html", null ],
     [ "frc::Timer", "classfrc_1_1Timer.html", null ],
+    [ "frc2::Timer", "classfrc2_1_1Timer.html", null ],
     [ "wpi::detail::to_json_fn", "structwpi_1_1detail_1_1to__json__fn.html", null ],
     [ "frc::Tracer", "classfrc_1_1Tracer.html", null ],
     [ "wpi::detail::TrailingZerosCounter< T, SizeOfT >", "structwpi_1_1detail_1_1TrailingZerosCounter.html", null ],
