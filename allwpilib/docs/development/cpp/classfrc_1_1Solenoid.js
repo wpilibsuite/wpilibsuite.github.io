@@ -5,6 +5,7 @@ var classfrc_1_1Solenoid =
     [ "~Solenoid", "classfrc_1_1Solenoid.html#af4bdaaf0873c0e2b9d3175b9823a7809", null ],
     [ "Solenoid", "classfrc_1_1Solenoid.html#a2de33f14859ab5a2824baadc27c22c6a", null ],
     [ "Get", "classfrc_1_1Solenoid.html#aabf7b34baf6fda4f6f87f79d62c20f66", null ],
+    [ "GetChannel", "classfrc_1_1Solenoid.html#a955bc01fb6844349295b0cce5555527f", null ],
     [ "InitSendable", "classfrc_1_1Solenoid.html#aa512f68dcea950f8acc681b4d5dc6496", null ],
     [ "IsBlackListed", "classfrc_1_1Solenoid.html#a3947cbcc73de70a6b7244700c77c693e", null ],
     [ "operator=", "classfrc_1_1Solenoid.html#a492d0b0e1c8f0252c74d412972d77763", null ],

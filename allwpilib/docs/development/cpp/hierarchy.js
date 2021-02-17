@@ -213,6 +213,7 @@ var hierarchy =
     [ "wpi::sys::fs::directory_entry", "classwpi_1_1sys_1_1fs_1_1directory__entry.html", null ],
     [ "wpi::sys::fs::directory_iterator", "classwpi_1_1sys_1_1fs_1_1directory__iterator.html", null ],
     [ "wpi::sys::fs::detail::DirIterState", "structwpi_1_1sys_1_1fs_1_1detail_1_1DirIterState.html", null ],
+    [ "frc::sim::DoubleSolenoidSim", "classfrc_1_1sim_1_1DoubleSolenoidSim.html", null ],
     [ "frc::sim::DriverStationSim", "classfrc_1_1sim_1_1DriverStationSim.html", null ],
     [ "frc::sim::DutyCycleEncoderSim", "classfrc_1_1sim_1_1DutyCycleEncoderSim.html", null ],
     [ "frc::sim::DutyCycleSim", "classfrc_1_1sim_1_1DutyCycleSim.html", null ],
@@ -1443,6 +1444,7 @@ var hierarchy =
     [ "wpi::SmallVectorStorage< wpi::uv::Buffer, N >", "structwpi_1_1SmallVectorStorage.html", [
       [ "wpi::SmallVector< wpi::uv::Buffer, 4 >", "classwpi_1_1SmallVector.html", null ]
     ] ],
+    [ "frc::sim::SolenoidSim", "classfrc_1_1sim_1_1SolenoidSim.html", null ],
     [ "wpi::sys::fs::space_info", "structwpi_1_1sys_1_1fs_1_1space__info.html", null ],
     [ "frc::sim::SPIAccelerometerSim", "classfrc_1_1sim_1_1SPIAccelerometerSim.html", null ],
     [ "wpi::spinlock", "classwpi_1_1spinlock.html", null ],
@@ -1455,9 +1457,9 @@ var hierarchy =
     ] ],
     [ "frc::SplineHelper", "classfrc_1_1SplineHelper.html", null ],
     [ "frc::SplineParameterizer", "classfrc_1_1SplineParameterizer.html", null ],
+    [ "frc::TrapezoidProfile< Distance >::State", "classfrc_1_1TrapezoidProfile_1_1State.html", null ],
     [ "frc::Trajectory::State", "structfrc_1_1Trajectory_1_1State.html", null ],
     [ "frc::sim::DifferentialDrivetrainSim::State", "classfrc_1_1sim_1_1DifferentialDrivetrainSim_1_1State.html", null ],
-    [ "frc::TrapezoidProfile< Distance >::State", "classfrc_1_1TrapezoidProfile_1_1State.html", null ],
     [ "wpi::static_circular_buffer< T, N >", "classwpi_1_1static__circular__buffer.html", null ],
     [ "wpi::detail::static_const< T >", "structwpi_1_1detail_1_1static__const.html", null ],
     [ "wpi::StringMapConstIterator< ValueTy >", "classwpi_1_1StringMapConstIterator.html", null ],

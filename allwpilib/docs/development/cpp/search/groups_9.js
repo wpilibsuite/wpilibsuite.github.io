@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['notifier_20functions_7970',['Notifier Functions',['../group__hal__notifier.html',1,'']]],
-  ['ntcore_20c_20api_7971',['ntcore C API',['../group__ntcore__c__api.html',1,'']]],
-  ['ntcore_20c_2b_2b_20object_2doriented_20api_7972',['ntcore C++ object-oriented API',['../group__ntcore__cpp__api.html',1,'']]],
-  ['ntcore_20c_2b_2b_20api_7973',['ntcore C++ API',['../group__ntcore__cpp__handle__api.html',1,'']]]
+  ['notifier_20functions_7994',['Notifier Functions',['../group__hal__notifier.html',1,'']]],
+  ['ntcore_20c_20api_7995',['ntcore C API',['../group__ntcore__c__api.html',1,'']]],
+  ['ntcore_20c_2b_2b_20object_2doriented_20api_7996',['ntcore C++ object-oriented API',['../group__ntcore__cpp__api.html',1,'']]],
+  ['ntcore_20c_2b_2b_20api_7997',['ntcore C++ API',['../group__ntcore__cpp__handle__api.html',1,'']]]
 ];

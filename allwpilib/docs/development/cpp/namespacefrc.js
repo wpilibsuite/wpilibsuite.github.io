@@ -21,6 +21,7 @@ var namespacefrc =
       [ "DifferentialDrivetrainSim", "classfrc_1_1sim_1_1DifferentialDrivetrainSim.html", "classfrc_1_1sim_1_1DifferentialDrivetrainSim" ],
       [ "DigitalPWMSim", "classfrc_1_1sim_1_1DigitalPWMSim.html", "classfrc_1_1sim_1_1DigitalPWMSim" ],
       [ "DIOSim", "classfrc_1_1sim_1_1DIOSim.html", "classfrc_1_1sim_1_1DIOSim" ],
+      [ "DoubleSolenoidSim", "classfrc_1_1sim_1_1DoubleSolenoidSim.html", "classfrc_1_1sim_1_1DoubleSolenoidSim" ],
       [ "DriverStationSim", "classfrc_1_1sim_1_1DriverStationSim.html", "classfrc_1_1sim_1_1DriverStationSim" ],
       [ "DutyCycleEncoderSim", "classfrc_1_1sim_1_1DutyCycleEncoderSim.html", "classfrc_1_1sim_1_1DutyCycleEncoderSim" ],
       [ "DutyCycleSim", "classfrc_1_1sim_1_1DutyCycleSim.html", "classfrc_1_1sim_1_1DutyCycleSim" ],
@@ -37,6 +38,7 @@ var namespacefrc =
       [ "RoboRioSim", "classfrc_1_1sim_1_1RoboRioSim.html", "classfrc_1_1sim_1_1RoboRioSim" ],
       [ "SimDeviceSim", "classfrc_1_1sim_1_1SimDeviceSim.html", "classfrc_1_1sim_1_1SimDeviceSim" ],
       [ "SingleJointedArmSim", "classfrc_1_1sim_1_1SingleJointedArmSim.html", "classfrc_1_1sim_1_1SingleJointedArmSim" ],
+      [ "SolenoidSim", "classfrc_1_1sim_1_1SolenoidSim.html", "classfrc_1_1sim_1_1SolenoidSim" ],
       [ "SPIAccelerometerSim", "classfrc_1_1sim_1_1SPIAccelerometerSim.html", "classfrc_1_1sim_1_1SPIAccelerometerSim" ],
       [ "XboxControllerSim", "classfrc_1_1sim_1_1XboxControllerSim.html", "classfrc_1_1sim_1_1XboxControllerSim" ]
     ] ],

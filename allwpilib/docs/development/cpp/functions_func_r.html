@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.2.2-20-gcb7f39a</span>
+   &#160;<span id="projectnumber">2021.2.2-21-gd241bc8</span>
    </div>
   </td>
  </tr>
@@ -257,6 +257,9 @@ $(document).ready(function(){initNavTree('functions_func_r.html',''); initResiza
 <li>RegisterFrequencyCallback()
 : <a class="el" href="classfrc_1_1sim_1_1DutyCycleSim.html#ae2d8b6bbe3a4878a368ca99f64a9affb">frc::sim::DutyCycleSim</a>
 </li>
+<li>RegisterFwdInitializedCallback()
+: <a class="el" href="classfrc_1_1sim_1_1DoubleSolenoidSim.html#aac63829b03ef8c3f78bf9a25f67c771b">frc::sim::DoubleSolenoidSim</a>
+</li>
 <li>RegisterInitializedCallback()
 : <a class="el" href="classfrc_1_1sim_1_1AddressableLEDSim.html#a037db0753adc735525a5f35e9a7c7f21">frc::sim::AddressableLEDSim</a>
 , <a class="el" href="classfrc_1_1sim_1_1AnalogGyroSim.html#ad1291910391a70e7766255fc27fc66d3">frc::sim::AnalogGyroSim</a>
@@ -269,6 +272,7 @@ $(document).ready(function(){initNavTree('functions_func_r.html',''); initResiza
 , <a class="el" href="classfrc_1_1sim_1_1EncoderSim.html#a9a75a30d44730100351bb9686f22bd02">frc::sim::EncoderSim</a>
 , <a class="el" href="classfrc_1_1sim_1_1PDPSim.html#a639e8ce27683676e55c67ad0668edc75">frc::sim::PDPSim</a>
 , <a class="el" href="classfrc_1_1sim_1_1PWMSim.html#a6f480a1405b4a7286a73ef908802f4da">frc::sim::PWMSim</a>
+, <a class="el" href="classfrc_1_1sim_1_1SolenoidSim.html#a4b9b430c7ead605afcde6bc3816b00b8">frc::sim::SolenoidSim</a>
 </li>
 <li>RegisterInitializedForwardCallback()
 : <a class="el" href="classfrc_1_1sim_1_1RelaySim.html#a788119d5498c95198079413f26f5ad2f">frc::sim::RelaySim</a>
@@ -290,6 +294,7 @@ $(document).ready(function(){initNavTree('functions_func_r.html',''); initResiza
 </li>
 <li>RegisterOutputCallback()
 : <a class="el" href="classfrc_1_1sim_1_1DutyCycleSim.html#a859b2494829be198767e0d96ae3048a0">frc::sim::DutyCycleSim</a>
+, <a class="el" href="classfrc_1_1sim_1_1SolenoidSim.html#aaa66596ea32eb65baaffd2cef3f48377">frc::sim::SolenoidSim</a>
 </li>
 <li>RegisterOutputPortCallback()
 : <a class="el" href="classfrc_1_1sim_1_1AddressableLEDSim.html#a3b75dc03449fb7e9cb86b23d75ccd72f">frc::sim::AddressableLEDSim</a>
@@ -333,6 +338,9 @@ $(document).ready(function(){initNavTree('functions_func_r.html',''); initResiza
 </li>
 <li>RegisterReverseDirectionCallback()
 : <a class="el" href="classfrc_1_1sim_1_1EncoderSim.html#ac8048819fd1b484ca4a29638efbf5f91">frc::sim::EncoderSim</a>
+</li>
+<li>RegisterRevInitializedCallback()
+: <a class="el" href="classfrc_1_1sim_1_1DoubleSolenoidSim.html#a196b6f6af711e1457d45bab4e4fd7999">frc::sim::DoubleSolenoidSim</a>
 </li>
 <li>RegisterRunningCallback()
 : <a class="el" href="classfrc_1_1sim_1_1AddressableLEDSim.html#a1c4eb79dc73193056b901210f19a4f4b">frc::sim::AddressableLEDSim</a>
@@ -544,7 +552,7 @@ $(document).ready(function(){initNavTree('functions_func_r.html',''); initResiza
 , <a class="el" href="classfrc_1_1MedianFilter.html#ae13a8f7ef27720e65b3fc66b172ad489">frc::MedianFilter&lt; T &gt;</a>
 , <a class="el" href="classfrc_1_1PIDBase.html#a8efc7a08da5b5c4bbc0ac19ae70f9820">frc::PIDBase</a>
 , <a class="el" href="classfrc_1_1PIDController.html#a3b7642aed6f1bd94982004dacc9408a5">frc::PIDController</a>
-, <a class="el" href="classfrc_1_1ProfiledPIDController.html#acf699537ac61c53e8479cb97f0ed0102">frc::ProfiledPIDController&lt; Distance &gt;</a>
+, <a class="el" href="classfrc_1_1ProfiledPIDController.html#ad991365f1da9362f6927f82a3de6ee71">frc::ProfiledPIDController&lt; Distance &gt;</a>
 , <a class="el" href="classfrc_1_1RomiGyro.html#adcbbb5efd14da02228526cddf3cb21d8">frc::RomiGyro</a>
 , <a class="el" href="classfrc_1_1SerialPort.html#ac8b4115a7231812d3893894e2f6e9a48">frc::SerialPort</a>
 , <a class="el" href="classfrc_1_1SlewRateLimiter.html#af6e94a2447bc3271a5d3e7d2719cafe1">frc::SlewRateLimiter&lt; Unit &gt;</a>
@@ -628,11 +636,11 @@ $(document).ready(function(){initNavTree('functions_func_r.html',''); initResiza
 : <a class="el" href="classwpi_1_1raw__ostream.html#a71252d68f0f7cff6873fe52f55fdf753">wpi::raw_ostream</a>
 </li>
 <li>rfind()
-: <a class="el" href="classwpi_1_1SmallString.html#a670894c7ca6dd406b4f34ad4d1031c94">wpi::SmallString&lt; InternalLen &gt;</a>
+: <a class="el" href="classwpi_1_1SmallString.html#a076c792e19d01ffae774fb7326ab1556">wpi::SmallString&lt; InternalLen &gt;</a>
 , <a class="el" href="classwpi_1_1StringRef.html#a16b26de9e77c44da2d9db794070df64d">wpi::StringRef</a>
 </li>
 <li>rfind_lower()
-: <a class="el" href="classwpi_1_1StringRef.html#adfe5fe279dca9ac4e91c3218ea9d2f84">wpi::StringRef</a>
+: <a class="el" href="classwpi_1_1StringRef.html#a60b4d518ac6e18ceee7732203ab5a2c8">wpi::StringRef</a>
 </li>
 <li>RobotBase()
 : <a class="el" href="classfrc_1_1RobotBase.html#a1da594bfb434873d127c55c1f4117004">frc::RobotBase</a>
@@ -673,7 +681,7 @@ $(document).ready(function(){initNavTree('functions_func_r.html',''); initResiza
 : <a class="el" href="classwpi_1_1StringRef.html#a5ef588a86434344f850e89a9585265e5">wpi::StringRef</a>
 </li>
 <li>rtrim()
-: <a class="el" href="classwpi_1_1StringRef.html#a83eb4ffa6bc8e34fd61b65506d6e7090">wpi::StringRef</a>
+: <a class="el" href="classwpi_1_1StringRef.html#aae8069c9050e8c8089d697e35e5e2f55">wpi::StringRef</a>
 </li>
 <li>Run()
 : <a class="el" href="classfrc2_1_1CommandScheduler.html#aa5000fa52e320da7ba72c196f34aa0f5">frc2::CommandScheduler</a>
@@ -682,7 +690,7 @@ $(document).ready(function(){initNavTree('functions_func_r.html',''); initResiza
 , <a class="el" href="classwpi_1_1uv_1_1Loop.html#ab25e9ec1e845f950b0c744f58d908e6a">wpi::uv::Loop</a>
 </li>
 <li>RunCommand()
-: <a class="el" href="classfrc2_1_1RunCommand.html#abd7bd261b83c39126ba6e61739974167">frc2::RunCommand</a>
+: <a class="el" href="classfrc2_1_1RunCommand.html#a567d881422c1253e84c3f2d4ab597f3f">frc2::RunCommand</a>
 </li>
 <li>RunForever()
 : <a class="el" href="classfrc_1_1VisionRunnerBase.html#abe0871da61c7dea80f6fcc33ebcf4f4a">frc::VisionRunnerBase</a>
@@ -712,7 +720,7 @@ $(document).ready(function(){initNavTree('functions_func_r.html',''); initResiza
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Feb 17 2021 02:05:21 for WPILibC++ by
+    <li class="footer">Generated on Wed Feb 17 2021 02:06:06 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

@@ -1,5 +1,11 @@
 var NAVTREEINDEX17 =
 {
+"classfrc_1_1XboxController.html#a1034633d4be2db9277b3864efa55b99ba39b629a97c6f6ac91423cf042154dd86":[5,0,2,225,1,7],
+"classfrc_1_1XboxController.html#a1034633d4be2db9277b3864efa55b99ba3e56c011b37f0bc78fb9eb175c1181c6":[5,0,2,225,1,5],
+"classfrc_1_1XboxController.html#a1034633d4be2db9277b3864efa55b99ba7a5854def4bae2b036ead0ec71aa487c":[5,0,2,225,1,2],
+"classfrc_1_1XboxController.html#a1034633d4be2db9277b3864efa55b99baae5bfe2afd04fdba6fa361acf9d7fa92":[5,0,2,225,1,3],
+"classfrc_1_1XboxController.html#a1505e5968793bf7c73aef62d911e8dd6":[5,0,2,225,12],
+"classfrc_1_1XboxController.html#a16cc1608cea96379235dad26e80c0958":[5,0,2,225,32],
 "classfrc_1_1XboxController.html#a1bd1ad7e87475764f51fd765917a0a70":[5,0,2,225,5],
 "classfrc_1_1XboxController.html#a2b028151286ab89569bf2371066b6a61":[5,0,2,225,24],
 "classfrc_1_1XboxController.html#a41e2176c6bd725d8a8d2b0307768fcf1":[5,0,2,225,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX17 =
 "classfrc_1_1sim_1_1DifferentialDrivetrainSim.html#a020300fd572de4f7b4b7d8953b853fb4":[5,0,2,1,10,10],
 "classfrc_1_1sim_1_1DifferentialDrivetrainSim.html#a0302a3b4cc9ac4322d22d3703e2f33e3":[5,0,2,1,10,5],
 "classfrc_1_1sim_1_1DifferentialDrivetrainSim.html#a108d0f3ace07bb2d37c5121dc655194d":[5,0,2,1,10,24],
-"classfrc_1_1sim_1_1DifferentialDrivetrainSim.html#a31b0f3866b91cae52651503f3db28d3e":[5,0,2,1,10,18],
-"classfrc_1_1sim_1_1DifferentialDrivetrainSim.html#a3737c63d134d7f50fb3ae1699c5f3bab":[5,0,2,1,10,20],
-"classfrc_1_1sim_1_1DifferentialDrivetrainSim.html#a3a6228c3f4fe08ae78b100439fbd3adf":[5,0,2,1,10,16],
-"classfrc_1_1sim_1_1DifferentialDrivetrainSim.html#a51cf5881c381ed3df8aeebb068fa56c6":[5,0,2,1,10,6],
-"classfrc_1_1sim_1_1DifferentialDrivetrainSim.html#a533904932a8df9be99103b0f8a73e7fe":[5,0,2,1,10,14],
-"classfrc_1_1sim_1_1DifferentialDrivetrainSim.html#a53d31a4a65ecca25e73d532d285ff5bd":[5,0,2,1,10,23],
-"classfrc_1_1sim_1_1DifferentialDrivetrainSim.html#a55667f49b1fa0d90c777b3c9a7590333":[5,0,2,1,10,7]
+"classfrc_1_1sim_1_1DifferentialDrivetrainSim.html#a31b0f3866b91cae52651503f3db28d3e":[5,0,2,1,10,18]
 };

@@ -1,5 +1,9 @@
 var NAVTREEINDEX12 =
 {
+"classfrc_1_1PWMSparkMax.html#a18d5d76ffcd3593dea33a67751694162":[5,0,2,131,2],
+"classfrc_1_1PWMSparkMax.html#ac54476cb81465ea7565e836b181a7ec4":[5,0,2,131,1],
+"classfrc_1_1PWMSparkMax.html#ad57d2c93765ab0c08c8387ab398989d2":[5,0,2,131,0],
+"classfrc_1_1PWMSpeedController.html":[5,0,2,132],
 "classfrc_1_1PWMSpeedController.html#a1e35c87402d642e9fb697400bf7d9fe1":[5,0,2,132,6],
 "classfrc_1_1PWMSpeedController.html#a20dab67aea76af9818bbf2669c5cd6f9":[5,0,2,132,0],
 "classfrc_1_1PWMSpeedController.html#a3ff43e42da5ad54fb88dd8147aba7698":[5,0,2,132,3],
@@ -245,9 +249,5 @@ var NAVTREEINDEX12 =
 "classfrc_1_1RobotDrive.html":[5,0,2,145],
 "classfrc_1_1RobotDrive.html#a0b785c8bc3114855bf477f242e735de0":[5,0,2,145,25],
 "classfrc_1_1RobotDrive.html#a23b50aa85d2bb85c0a211f4ebeea9b7e":[5,0,2,145,30],
-"classfrc_1_1RobotDrive.html#a2b5f309a211685036601f4b73de602d6":[5,0,2,145,18],
-"classfrc_1_1RobotDrive.html#a2d3bdf8e1333f6b5cac8430335740170":[5,0,2,145,1],
-"classfrc_1_1RobotDrive.html#a2da71fa138e30178d4ab43c2995af935":[5,0,2,145,35],
-"classfrc_1_1RobotDrive.html#a2f909e95bb2a9460865e81f9158691e0":[5,0,2,145,33],
-"classfrc_1_1RobotDrive.html#a365e809b9e9bd11a066d51adbc1ea825":[5,0,2,145,23]
+"classfrc_1_1RobotDrive.html#a2b5f309a211685036601f4b73de602d6":[5,0,2,145,18]
 };
