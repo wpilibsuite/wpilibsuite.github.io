@@ -51,7 +51,7 @@ var searchData=
   ['getbackbutton_5444',['GetBackButton',['../classfrc_1_1XboxController.html#af6604d8d92c2528306f692315556fea4',1,'frc::XboxController']]],
   ['getbackbuttonpressed_5445',['GetBackButtonPressed',['../classfrc_1_1XboxController.html#a0cc20db6870fcd4fb2da1e92f74f4a97',1,'frc::XboxController']]],
   ['getbackbuttonreleased_5446',['GetBackButtonReleased',['../classfrc_1_1XboxController.html#a7da55eb54e5c1201abd21886182e94e6',1,'frc::XboxController']]],
-  ['getbatteryvoltage_5447',['GetBatteryVoltage',['../classfrc_1_1DriverStation.html#ae259fcc5ab931beba0eeb54cc14d6048',1,'frc::DriverStation']]],
+  ['getbatteryvoltage_5447',['GetBatteryVoltage',['../classfrc_1_1RobotController.html#a4b1e42e825583c82664a4ecc5d81b83f',1,'frc::RobotController::GetBatteryVoltage()'],['../classfrc_1_1DriverStation.html#ae259fcc5ab931beba0eeb54cc14d6048',1,'frc::DriverStation::GetBatteryVoltage()']]],
   ['getbbutton_5448',['GetBButton',['../classfrc_1_1XboxController.html#a51961325e7635a6ffa87b20f32c07e0a',1,'frc::XboxController']]],
   ['getbbuttonpressed_5449',['GetBButtonPressed',['../classfrc_1_1XboxController.html#a1505e5968793bf7c73aef62d911e8dd6',1,'frc::XboxController']]],
   ['getbbuttonreleased_5450',['GetBButtonReleased',['../classfrc_1_1XboxController.html#a01f76c6f675ce8e049c9fd4bc0250ef3',1,'frc::XboxController']]],

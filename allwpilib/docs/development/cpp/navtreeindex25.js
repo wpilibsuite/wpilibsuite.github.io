@@ -1,5 +1,6 @@
 var NAVTREEINDEX25 =
 {
+"classwpi_1_1SmallVectorBase.html#a24b75f3a3a60150805bdb1c92779c4d5":[5,0,7,217,8],
 "classwpi_1_1SmallVectorBase.html#a254eea40b23eef337293526530965f47":[5,0,7,217,9],
 "classwpi_1_1SmallVectorBase.html#a3c11d37314eb4419dabf218c8ccf7918":[5,0,7,217,3],
 "classwpi_1_1SmallVectorBase.html#a94893ea37c1aefc6f6b066925fad3497":[5,0,7,217,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX25 =
 "classwpi_1_1StringRef.html#a8df728fc5c667abfdbfd22e86c12d06c":[5,0,7,236,86],
 "classwpi_1_1StringRef.html#a91795d2d3202949289b358a701065c0d":[5,0,7,236,59],
 "classwpi_1_1StringRef.html#a927ec279d16b084402c286ff7b2e3e62":[5,0,7,236,73],
-"classwpi_1_1StringRef.html#a93cfe80bcaa65d749c44cd329c0d7b69":[5,0,7,236,19],
-"classwpi_1_1StringRef.html#a94042179e20fcd58a98aa682947da216":[5,0,7,236,25]
+"classwpi_1_1StringRef.html#a93cfe80bcaa65d749c44cd329c0d7b69":[5,0,7,236,19]
 };

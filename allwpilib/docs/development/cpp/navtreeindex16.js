@@ -1,5 +1,6 @@
 var NAVTREEINDEX16 =
 {
+"classfrc_1_1Trajectory.html#a6b9e02ec02ce417cb1833b3f1640d4e3":[5,0,2,201,9],
 "classfrc_1_1Trajectory.html#a87a8a48a591677006244409dc568960d":[5,0,2,201,4],
 "classfrc_1_1Trajectory.html#a8edfbd82347bbf32ddfb092679336cd8":[5,0,2,201,10],
 "classfrc_1_1Trajectory.html#a9c7e0e4359e85433348094cdc0d06b6d":[5,0,2,201,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX16 =
 "classfrc_1_1XboxController.html#a1034633d4be2db9277b3864efa55b99ba7a5854def4bae2b036ead0ec71aa487c":[5,0,2,225,1,2],
 "classfrc_1_1XboxController.html#a1034633d4be2db9277b3864efa55b99baae5bfe2afd04fdba6fa361acf9d7fa92":[5,0,2,225,1,3],
 "classfrc_1_1XboxController.html#a1505e5968793bf7c73aef62d911e8dd6":[5,0,2,225,12],
-"classfrc_1_1XboxController.html#a16cc1608cea96379235dad26e80c0958":[5,0,2,225,32],
-"classfrc_1_1XboxController.html#a1bd1ad7e87475764f51fd765917a0a70":[5,0,2,225,5]
+"classfrc_1_1XboxController.html#a16cc1608cea96379235dad26e80c0958":[5,0,2,225,32]
 };

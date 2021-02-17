@@ -1,5 +1,6 @@
 var NAVTREEINDEX39 =
 {
+"structwpi_1_1DenseMapInfo_3_01unsigned_01long_01_4.html#acfae16abf1676effb1a41291488d955a":[5,0,7,47,2],
 "structwpi_1_1DenseMapInfo_3_01unsigned_01long_01long_01_4.html":[5,0,7,48],
 "structwpi_1_1DenseMapInfo_3_01unsigned_01long_01long_01_4.html#a323e1eab4e5f5541d31d73bad08a1964":[5,0,7,48,2],
 "structwpi_1_1DenseMapInfo_3_01unsigned_01long_01long_01_4.html#a95ad8fccc5d7614a34c79c77f1a06bfb":[5,0,7,48,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX39 =
 "structwpi_1_1detail_1_1priority__tag.html":[5,0,7,0,58],
 "structwpi_1_1detail_1_1priority__tag_3_010_01_4.html":[5,0,7,0,59],
 "structwpi_1_1detail_1_1result__pair.html":[5,0,7,0,61],
-"structwpi_1_1detail_1_1result__pair.html#a0744911aa2ba447a578df84acef4f6ee":[5,0,7,0,61,3],
-"structwpi_1_1detail_1_1result__pair.html#a100897ca5b1c10f554c384bf4b422fad":[5,0,7,0,61,4]
+"structwpi_1_1detail_1_1result__pair.html#a0744911aa2ba447a578df84acef4f6ee":[5,0,7,0,61,3]
 };
