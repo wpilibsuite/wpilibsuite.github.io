@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.2.2-23-ge42a0b6</span>
+   &#160;<span id="projectnumber">2021.2.2-24-g9522f2e</span>
    </div>
   </td>
  </tr>
@@ -130,6 +130,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9c7e0e4359e85433348094cdc0d06b6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1Trajectory.html">Trajectory</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Trajectory.html#a9c7e0e4359e85433348094cdc0d06b6d">RelativeTo</a> (const <a class="el" href="classfrc_1_1Pose2d.html">Pose2d</a> &amp;pose)</td></tr>
 <tr class="memdesc:a9c7e0e4359e85433348094cdc0d06b6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms all poses in the trajectory so that they are relative to the given pose.  <a href="classfrc_1_1Trajectory.html#a9c7e0e4359e85433348094cdc0d06b6d">More...</a><br /></td></tr>
 <tr class="separator:a9c7e0e4359e85433348094cdc0d06b6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a789dcd026a4f57b485f4f3186737a644"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1Trajectory.html">Trajectory</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Trajectory.html#a789dcd026a4f57b485f4f3186737a644">operator+</a> (const <a class="el" href="classfrc_1_1Trajectory.html">Trajectory</a> &amp;other) const</td></tr>
+<tr class="memdesc:a789dcd026a4f57b485f4f3186737a644"><td class="mdescLeft">&#160;</td><td class="mdescRight">Concatenates another trajectory to the current trajectory.  <a href="classfrc_1_1Trajectory.html#a789dcd026a4f57b485f4f3186737a644">More...</a><br /></td></tr>
+<tr class="separator:a789dcd026a4f57b485f4f3186737a644"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af317c5d052e653165ef4567d038b6517"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1Pose2d.html">Pose2d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Trajectory.html#af317c5d052e653165ef4567d038b6517">InitialPose</a> () const</td></tr>
 <tr class="memdesc:af317c5d052e653165ef4567d038b6517"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the initial pose of the trajectory.  <a href="classfrc_1_1Trajectory.html#af317c5d052e653165ef4567d038b6517">More...</a><br /></td></tr>
 <tr class="separator:af317c5d052e653165ef4567d038b6517"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -196,6 +199,34 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Whether the two objects are inequal. </dd></dl>
+
+</div>
+</div>
+<a id="a789dcd026a4f57b485f4f3186737a644"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a789dcd026a4f57b485f4f3186737a644">&#9670;&nbsp;</a></span>operator+()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfrc_1_1Trajectory.html">Trajectory</a> frc::Trajectory::operator+ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classfrc_1_1Trajectory.html">Trajectory</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Concatenates another trajectory to the current trajectory. </p>
+<p>The user is responsible for making sure that the end pose of this trajectory and the start pose of the other trajectory match (if that is the desired behavior).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>The trajectory to concatenate. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The concatenated trajectory. </dd></dl>
 
 </div>
 </div>
@@ -374,7 +405,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1Trajectory.html">Trajectory</a></li>
-    <li class="footer">Generated on Wed Feb 17 2021 02:07:53 for WPILibC++ by
+    <li class="footer">Generated on Wed Feb 17 2021 02:08:34 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

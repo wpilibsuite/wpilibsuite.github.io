@@ -1,5 +1,6 @@
 var NAVTREEINDEX36 =
 {
+"group__ntcore__entrylistener__func.html#ga1869be780fcddb3d703623715ead828d":[3,1,2,0],
 "group__ntcore__entrylistener__func.html#ga1a6be4e3e2330ea4c1107b62d9b9af53":[3,1,2,1],
 "group__ntcore__entrylistener__func.html#ga28cc419f2ba20e0efd0b911ba28e4d15":[3,1,2,8],
 "group__ntcore__entrylistener__func.html#ga2c45289a438275d2e556b20c09b5ebee":[3,1,2,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX36 =
 "group__ntcore__utility__cfunc.html#gaeef9d0e4e266cd4d91632566debdf911":[3,3,7,7],
 "group__ntcore__utility__func.html":[3,1,7],
 "group__ntcore__utility__func.html#ga9e57c1308e76272f160b24b18b3ee254":[3,1,7,0],
-"group__ntcore__valuesetters__cfunc.html":[3,3,9,3],
-"group__ntcore__valuesetters__cfunc.html#ga0cb0f1870887cbab71cd712fe0b2f22a":[3,3,9,3,5]
+"group__ntcore__valuesetters__cfunc.html":[3,3,9,3]
 };

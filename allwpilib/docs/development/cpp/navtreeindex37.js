@@ -1,5 +1,6 @@
 var NAVTREEINDEX37 =
 {
+"group__ntcore__valuesetters__cfunc.html#ga0cb0f1870887cbab71cd712fe0b2f22a":[3,3,9,3,5],
 "group__ntcore__valuesetters__cfunc.html#ga4241b3336dd976d05d3b679efd68f213":[3,3,9,3,0],
 "group__ntcore__valuesetters__cfunc.html#ga6b4b5303883bf3d784fc7aa8922ab8ad":[3,3,9,3,1],
 "group__ntcore__valuesetters__cfunc.html#ga8755e7e7edfb2ee133766b437d12f7fb":[3,3,9,3,6],
@@ -46,18 +47,18 @@ var NAVTREEINDEX37 =
 "mutex_8h_source.html":[6,0,12,48],
 "namespacecs.html":[4,0,0],
 "namespacecs.html":[5,0,0],
-"namespacefrc.html":[4,0,1],
 "namespacefrc.html":[5,0,2],
+"namespacefrc.html":[4,0,1],
 "namespacefrc_1_1filesystem.html":[4,0,1,0],
-"namespacehal.html":[5,0,4],
 "namespacehal.html":[4,0,2],
+"namespacehal.html":[5,0,4],
 "namespacemembers.html":[4,1,0],
 "namespacemembers_enum.html":[4,1,3],
 "namespacemembers_eval.html":[4,1,4],
 "namespacemembers_func.html":[4,1,1],
 "namespacemembers_type.html":[4,1,2],
-"namespacent.html":[5,0,5],
 "namespacent.html":[4,0,3],
+"namespacent.html":[5,0,5],
 "namespacent_1_1EntryListenerFlags.html":[4,0,3,0],
 "namespaces.html":[4,0],
 "namespacewpi_1_1detail.html":[4,0,4,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX37 =
 "structcs_1_1RawEvent.html#a42be29ff0a6b631b98d309e5bfd082d5":[3,6,18,9],
 "structcs_1_1RawEvent.html#a51a32420fbb0e990c122aa2f0906e677":[3,6,18,6],
 "structcs_1_1RawEvent.html#a6b0fe3b3119f4847109f18dff338f19d":[3,6,18,10],
-"structcs_1_1RawEvent.html#a762b1faf22c4b888c363945f263800ec":[3,6,18,13],
-"structcs_1_1RawEvent.html#a80ff8f9f131cfa7e61c7da467719a82e":[3,6,18,15]
+"structcs_1_1RawEvent.html#a762b1faf22c4b888c363945f263800ec":[3,6,18,13]
 };

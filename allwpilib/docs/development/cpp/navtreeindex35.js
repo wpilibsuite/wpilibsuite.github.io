@@ -1,5 +1,6 @@
 var NAVTREEINDEX35 =
 {
+"group__hal__i2c.html#ga66cbc3cf5998ddf89f4ce87af4c7f693":[3,0,26,2],
 "group__hal__i2c.html#gab07e50c33a94b181892f12c1dd028a92":[3,0,26,0],
 "group__hal__i2c.html#gad4d63e38400272b82a60062289f5db6a":[3,0,26,4],
 "group__hal__i2c.html#gaf2ff125465e59df8a1e139e82426e8eb":[3,0,26,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX35 =
 "group__ntcore__entrylistener__cfunc.html#gae51adf782b4650b20b5ceb0ea5f5bd79":[3,3,2,9],
 "group__ntcore__entrylistener__cfunc.html#gae68cb63307c20fff54246ca54354affa":[3,3,2,1],
 "group__ntcore__entrylistener__cfunc.html#gae6c121996834835d616dca95dd1f4a7c":[3,3,2,6],
-"group__ntcore__entrylistener__func.html":[3,1,2],
-"group__ntcore__entrylistener__func.html#ga1869be780fcddb3d703623715ead828d":[3,1,2,0]
+"group__ntcore__entrylistener__func.html":[3,1,2]
 };
