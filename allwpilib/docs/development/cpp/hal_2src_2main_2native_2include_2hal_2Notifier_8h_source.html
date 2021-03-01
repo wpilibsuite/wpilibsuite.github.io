@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.2.2-30-g40b3675</span>
+   &#160;<span id="projectnumber">2021.2.2-32-g435bbb6</span>
    </div>
   </td>
  </tr>
@@ -111,32 +111,36 @@ $(document).ready(function(){initNavTree('hal_2src_2main_2native_2include_2hal_2
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
 <div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="group__hal__notifier.html#ga584fd8bb86b7895822cbd1ff1ae4349f">   31</a></span>&#160;HAL_NotifierHandle <a class="code" href="group__hal__notifier.html#ga584fd8bb86b7895822cbd1ff1ae4349f">HAL_InitializeNotifier</a>(int32_t* status);</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="group__hal__notifier.html#ga8e4040117e6562ac82a8e98912599a8a">   39</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__notifier.html#ga8e4040117e6562ac82a8e98912599a8a">HAL_SetNotifierName</a>(HAL_NotifierHandle notifierHandle, <span class="keyword">const</span> <span class="keywordtype">char</span>* name,</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                         int32_t* status);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="group__hal__notifier.html#gab7bbf1b3d5eadf0c27b36f1dff7fa6d4">   49</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__notifier.html#gab7bbf1b3d5eadf0c27b36f1dff7fa6d4">HAL_StopNotifier</a>(HAL_NotifierHandle notifierHandle, int32_t* status);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="group__hal__notifier.html#ga43acce6f9fd9b12ef83dfcc38622e9ff">   58</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__notifier.html#ga43acce6f9fd9b12ef83dfcc38622e9ff">HAL_CleanNotifier</a>(HAL_NotifierHandle notifierHandle, int32_t* status);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="group__hal__notifier.html#ga72327a3f3c37f95ec4fbf9ba7c61380d">   68</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__notifier.html#ga72327a3f3c37f95ec4fbf9ba7c61380d">HAL_UpdateNotifierAlarm</a>(HAL_NotifierHandle notifierHandle,</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                             uint64_t triggerTime, int32_t* status);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="group__hal__notifier.html#ga8c603d99c43f289bc5b444d08cc75490">   78</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__notifier.html#ga8c603d99c43f289bc5b444d08cc75490">HAL_CancelNotifierAlarm</a>(HAL_NotifierHandle notifierHandle,</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                             int32_t* status);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;WPI_NODISCARD</div>
-<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="group__hal__notifier.html#gaa07746b4e5448fe8a943d8d48013466c">   93</a></span>&#160;uint64_t <a class="code" href="group__hal__notifier.html#gaa07746b4e5448fe8a943d8d48013466c">HAL_WaitForNotifierAlarm</a>(HAL_NotifierHandle notifierHandle,</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                                  int32_t* status);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}  <span class="comment">// extern &quot;C&quot;</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="group__hal__notifier.html#ga17fc2d191394725ba00911e441ee4ee0">   49</a></span>&#160;HAL_Bool <a class="code" href="group__hal__notifier.html#ga17fc2d191394725ba00911e441ee4ee0">HAL_SetNotifierThreadPriority</a>(HAL_Bool realTime, int32_t priority,</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                                       int32_t* status);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="group__hal__notifier.html#ga8e4040117e6562ac82a8e98912599a8a">   58</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__notifier.html#ga8e4040117e6562ac82a8e98912599a8a">HAL_SetNotifierName</a>(HAL_NotifierHandle notifierHandle, <span class="keyword">const</span> <span class="keywordtype">char</span>* name,</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                         int32_t* status);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="group__hal__notifier.html#gab7bbf1b3d5eadf0c27b36f1dff7fa6d4">   68</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__notifier.html#gab7bbf1b3d5eadf0c27b36f1dff7fa6d4">HAL_StopNotifier</a>(HAL_NotifierHandle notifierHandle, int32_t* status);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="group__hal__notifier.html#ga43acce6f9fd9b12ef83dfcc38622e9ff">   77</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__notifier.html#ga43acce6f9fd9b12ef83dfcc38622e9ff">HAL_CleanNotifier</a>(HAL_NotifierHandle notifierHandle, int32_t* status);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="group__hal__notifier.html#ga72327a3f3c37f95ec4fbf9ba7c61380d">   87</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__notifier.html#ga72327a3f3c37f95ec4fbf9ba7c61380d">HAL_UpdateNotifierAlarm</a>(HAL_NotifierHandle notifierHandle,</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                             uint64_t triggerTime, int32_t* status);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="group__hal__notifier.html#ga8c603d99c43f289bc5b444d08cc75490">   97</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__notifier.html#ga8c603d99c43f289bc5b444d08cc75490">HAL_CancelNotifierAlarm</a>(HAL_NotifierHandle notifierHandle,</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                             int32_t* status);</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;WPI_NODISCARD</div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="group__hal__notifier.html#gaa07746b4e5448fe8a943d8d48013466c">  112</a></span>&#160;uint64_t <a class="code" href="group__hal__notifier.html#gaa07746b4e5448fe8a943d8d48013466c">HAL_WaitForNotifierAlarm</a>(HAL_NotifierHandle notifierHandle,</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                                  int32_t* status);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;}  <span class="comment">// extern &quot;C&quot;</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="agroup__hal__notifier_html_ga8c603d99c43f289bc5b444d08cc75490"><div class="ttname"><a href="group__hal__notifier.html#ga8c603d99c43f289bc5b444d08cc75490">HAL_CancelNotifierAlarm</a></div><div class="ttdeci">void HAL_CancelNotifierAlarm(HAL_NotifierHandle notifierHandle, int32_t *status)</div><div class="ttdoc">Cancels the next notifier alarm.</div></div>
 <div class="ttc" id="agroup__hal__notifier_html_ga8e4040117e6562ac82a8e98912599a8a"><div class="ttname"><a href="group__hal__notifier.html#ga8e4040117e6562ac82a8e98912599a8a">HAL_SetNotifierName</a></div><div class="ttdeci">void HAL_SetNotifierName(HAL_NotifierHandle notifierHandle, const char *name, int32_t *status)</div><div class="ttdoc">Sets the name of a notifier.</div></div>
 <div class="ttc" id="agroup__hal__notifier_html_ga72327a3f3c37f95ec4fbf9ba7c61380d"><div class="ttname"><a href="group__hal__notifier.html#ga72327a3f3c37f95ec4fbf9ba7c61380d">HAL_UpdateNotifierAlarm</a></div><div class="ttdeci">void HAL_UpdateNotifierAlarm(HAL_NotifierHandle notifierHandle, uint64_t triggerTime, int32_t *status)</div><div class="ttdoc">Updates the trigger time for a notifier.</div></div>
+<div class="ttc" id="agroup__hal__notifier_html_ga17fc2d191394725ba00911e441ee4ee0"><div class="ttname"><a href="group__hal__notifier.html#ga17fc2d191394725ba00911e441ee4ee0">HAL_SetNotifierThreadPriority</a></div><div class="ttdeci">HAL_Bool HAL_SetNotifierThreadPriority(HAL_Bool realTime, int32_t priority, int32_t *status)</div><div class="ttdoc">Sets the HAL notifier thread priority.</div></div>
 <div class="ttc" id="agroup__hal__notifier_html_ga43acce6f9fd9b12ef83dfcc38622e9ff"><div class="ttname"><a href="group__hal__notifier.html#ga43acce6f9fd9b12ef83dfcc38622e9ff">HAL_CleanNotifier</a></div><div class="ttdeci">void HAL_CleanNotifier(HAL_NotifierHandle notifierHandle, int32_t *status)</div><div class="ttdoc">Cleans a notifier.</div></div>
 <div class="ttc" id="agroup__hal__notifier_html_gab7bbf1b3d5eadf0c27b36f1dff7fa6d4"><div class="ttname"><a href="group__hal__notifier.html#gab7bbf1b3d5eadf0c27b36f1dff7fa6d4">HAL_StopNotifier</a></div><div class="ttdeci">void HAL_StopNotifier(HAL_NotifierHandle notifierHandle, int32_t *status)</div><div class="ttdoc">Stops a notifier from running.</div></div>
 <div class="ttc" id="agroup__hal__notifier_html_gaa07746b4e5448fe8a943d8d48013466c"><div class="ttname"><a href="group__hal__notifier.html#gaa07746b4e5448fe8a943d8d48013466c">HAL_WaitForNotifierAlarm</a></div><div class="ttdeci">WPI_NODISCARD uint64_t HAL_WaitForNotifierAlarm(HAL_NotifierHandle notifierHandle, int32_t *status)</div><div class="ttdoc">Waits for the next alarm for the specific notifier.</div></div>
@@ -145,7 +149,7 @@ $(document).ready(function(){initNavTree('hal_2src_2main_2native_2include_2hal_2
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_7dfa5b6b9262a4050979ee23e0eb392d.html">hal</a></li><li class="navelem"><b>Notifier.h</b></li>
-    <li class="footer">Generated on Sat Feb 27 2021 18:14:36 for WPILibC++ by
+    <li class="footer">Generated on Mon Mar 1 2021 06:08:32 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

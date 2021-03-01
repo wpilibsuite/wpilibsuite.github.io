@@ -1,5 +1,7 @@
 var NAVTREEINDEX39 =
 {
+"structwpi_1_1DenseMapInfo_3_01int_01_4.html#af915204f12f5f61c2674025502ea95b9":[5,0,7,37,2],
+"structwpi_1_1DenseMapInfo_3_01long_01_4.html":[5,0,7,38],
 "structwpi_1_1DenseMapInfo_3_01long_01_4.html#a11f31382bdd378172fb3cb00ebb763ef":[5,0,7,38,1],
 "structwpi_1_1DenseMapInfo_3_01long_01_4.html#a50fbc421f400b31d79d0fdbf59950a96":[5,0,7,38,0],
 "structwpi_1_1DenseMapInfo_3_01long_01_4.html#a55ed8ad836571787eaf2171c9d7f5486":[5,0,7,38,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX39 =
 "structwpi_1_1detail_1_1has__from__json.html":[5,0,7,0,24],
 "structwpi_1_1detail_1_1has__from__json.html#a1d60ad5f296ba9e609bd6666197a4b60":[5,0,7,0,24,0],
 "structwpi_1_1detail_1_1has__non__default__from__json.html":[5,0,7,0,25],
-"structwpi_1_1detail_1_1has__non__default__from__json.html#a722f8d0f8eb8656da31a55c2fb41746a":[5,0,7,0,25,0],
-"structwpi_1_1detail_1_1has__to__json.html":[5,0,7,0,26],
-"structwpi_1_1detail_1_1has__to__json.html#a2175507386e91c3671ed1feddf0b9c8a":[5,0,7,0,26,0]
+"structwpi_1_1detail_1_1has__non__default__from__json.html#a722f8d0f8eb8656da31a55c2fb41746a":[5,0,7,0,25,0]
 };

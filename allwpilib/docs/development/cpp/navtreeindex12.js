@@ -1,5 +1,6 @@
 var NAVTREEINDEX12 =
 {
+"classfrc_1_1PWMSparkMax.html":[5,0,2,131],
 "classfrc_1_1PWMSparkMax.html#a18d5d76ffcd3593dea33a67751694162":[5,0,2,131,2],
 "classfrc_1_1PWMSparkMax.html#ac54476cb81465ea7565e836b181a7ec4":[5,0,2,131,1],
 "classfrc_1_1PWMSparkMax.html#ad57d2c93765ab0c08c8387ab398989d2":[5,0,2,131,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX12 =
 "classfrc_1_1RobotController.html#afd09dd41cc6a49b7de04c3af063b23ba":[5,0,2,144,15],
 "classfrc_1_1RobotDrive.html":[5,0,2,145],
 "classfrc_1_1RobotDrive.html#a0b785c8bc3114855bf477f242e735de0":[5,0,2,145,25],
-"classfrc_1_1RobotDrive.html#a23b50aa85d2bb85c0a211f4ebeea9b7e":[5,0,2,145,30],
-"classfrc_1_1RobotDrive.html#a2b5f309a211685036601f4b73de602d6":[5,0,2,145,18]
+"classfrc_1_1RobotDrive.html#a23b50aa85d2bb85c0a211f4ebeea9b7e":[5,0,2,145,30]
 };

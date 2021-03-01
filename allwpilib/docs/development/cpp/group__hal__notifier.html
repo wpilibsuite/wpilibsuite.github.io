@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.2.2-30-g40b3675</span>
+   &#160;<span id="projectnumber">2021.2.2-32-g435bbb6</span>
    </div>
   </td>
  </tr>
@@ -101,6 +101,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga584fd8bb86b7895822cbd1ff1ae4349f"><td class="memItemLeft" align="right" valign="top">HAL_NotifierHandle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__notifier.html#ga584fd8bb86b7895822cbd1ff1ae4349f">HAL_InitializeNotifier</a> (int32_t *status)</td></tr>
 <tr class="memdesc:ga584fd8bb86b7895822cbd1ff1ae4349f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a notifier.  <a href="group__hal__notifier.html#ga584fd8bb86b7895822cbd1ff1ae4349f">More...</a><br /></td></tr>
 <tr class="separator:ga584fd8bb86b7895822cbd1ff1ae4349f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga17fc2d191394725ba00911e441ee4ee0"><td class="memItemLeft" align="right" valign="top">HAL_Bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__notifier.html#ga17fc2d191394725ba00911e441ee4ee0">HAL_SetNotifierThreadPriority</a> (HAL_Bool realTime, int32_t priority, int32_t *status)</td></tr>
+<tr class="memdesc:ga17fc2d191394725ba00911e441ee4ee0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the HAL notifier thread priority.  <a href="group__hal__notifier.html#ga17fc2d191394725ba00911e441ee4ee0">More...</a><br /></td></tr>
+<tr class="separator:ga17fc2d191394725ba00911e441ee4ee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8e4040117e6562ac82a8e98912599a8a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__notifier.html#ga8e4040117e6562ac82a8e98912599a8a">HAL_SetNotifierName</a> (HAL_NotifierHandle notifierHandle, const char *name, int32_t *status)</td></tr>
 <tr class="memdesc:ga8e4040117e6562ac82a8e98912599a8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name of a notifier.  <a href="group__hal__notifier.html#ga8e4040117e6562ac82a8e98912599a8a">More...</a><br /></td></tr>
 <tr class="separator:ga8e4040117e6562ac82a8e98912599a8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -261,6 +264,52 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ga17fc2d191394725ba00911e441ee4ee0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga17fc2d191394725ba00911e441ee4ee0">&#9670;&nbsp;</a></span>HAL_SetNotifierThreadPriority()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HAL_Bool HAL_SetNotifierThreadPriority </td>
+          <td>(</td>
+          <td class="paramtype">HAL_Bool&#160;</td>
+          <td class="paramname"><em>realTime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>priority</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t *&#160;</td>
+          <td class="paramname"><em>status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the HAL notifier thread priority. </p>
+<p>The HAL notifier thread is responsible for managing the FPGA's notifier interrupt and waking up user's Notifiers when it's their time to run. Giving the HAL notifier thread real-time priority helps ensure the user's real-time Notifiers, if any, are notified to run in a timely manner.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">realTime</td><td>Set to true to set a real-time priority, false for standard priority. </td></tr>
+    <tr><td class="paramname">priority</td><td>Priority to set the thread to. For real-time, this is 1-99 with 99 being highest. For non-real-time, this is forced to 0. See "man 7 sched" for more details. </td></tr>
+    <tr><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True on success. </dd></dl>
+
+</div>
+</div>
 <a id="gab7bbf1b3d5eadf0c27b36f1dff7fa6d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gab7bbf1b3d5eadf0c27b36f1dff7fa6d4">&#9670;&nbsp;</a></span>HAL_StopNotifier()</h2>
 
@@ -385,7 +434,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Feb 27 2021 18:14:38 for WPILibC++ by
+    <li class="footer">Generated on Mon Mar 1 2021 06:08:34 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>
