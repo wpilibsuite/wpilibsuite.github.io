@@ -14,11 +14,12 @@ var NAVTREEINDEX8 =
 "classfrc_1_1DifferentialDriveOdometry.html#a918d2c1c2411bb25d2ebeed372646930":[5,0,2,45,2],
 "classfrc_1_1DifferentialDrivePoseEstimator.html":[5,0,2,46],
 "classfrc_1_1DifferentialDrivePoseEstimator.html#a08f5072a0aa4e4fba8d7528427047720":[5,0,2,46,1],
-"classfrc_1_1DifferentialDrivePoseEstimator.html#a0fd2c4425e6249e337c0a5d46afac8c3":[5,0,2,46,3],
-"classfrc_1_1DifferentialDrivePoseEstimator.html#a16c47b88fa12c715da87d6bf516dcae3":[5,0,2,46,4],
-"classfrc_1_1DifferentialDrivePoseEstimator.html#a21eaaa6bfa686a0910a999fd7a3624c2":[5,0,2,46,2],
-"classfrc_1_1DifferentialDrivePoseEstimator.html#a3b1c6307abd690dc1babb27fe96014be":[5,0,2,46,6],
-"classfrc_1_1DifferentialDrivePoseEstimator.html#ae9d9b994b3e0c0f445b3781ae100c904":[5,0,2,46,5],
+"classfrc_1_1DifferentialDrivePoseEstimator.html#a0fd2c4425e6249e337c0a5d46afac8c3":[5,0,2,46,4],
+"classfrc_1_1DifferentialDrivePoseEstimator.html#a16c47b88fa12c715da87d6bf516dcae3":[5,0,2,46,5],
+"classfrc_1_1DifferentialDrivePoseEstimator.html#a21eaaa6bfa686a0910a999fd7a3624c2":[5,0,2,46,3],
+"classfrc_1_1DifferentialDrivePoseEstimator.html#a3b1c6307abd690dc1babb27fe96014be":[5,0,2,46,7],
+"classfrc_1_1DifferentialDrivePoseEstimator.html#ad273aa27bda035fe8ca417a7ea2891c5":[5,0,2,46,2],
+"classfrc_1_1DifferentialDrivePoseEstimator.html#ae9d9b994b3e0c0f445b3781ae100c904":[5,0,2,46,6],
 "classfrc_1_1DifferentialDrivePoseEstimator.html#afe6cb124c1e3195645eaaea9de6632e0":[5,0,2,46,0],
 "classfrc_1_1DifferentialDriveVoltageConstraint.html":[5,0,2,47],
 "classfrc_1_1DifferentialDriveVoltageConstraint.html#a1670e6436ffdac13516fb89d2ef41fbf":[5,0,2,47,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "classfrc_1_1Encoder.html#a981f675176708a1580d7f48779de56e4":[5,0,2,62,21],
 "classfrc_1_1Encoder.html#aa1416f313ea0a6685161d00010079018":[5,0,2,62,14],
 "classfrc_1_1Encoder.html#aa4f7f54349ffde3f93419ca80d96d820":[5,0,2,62,13],
-"classfrc_1_1Encoder.html#aaa0a1b07f1426dd0e4efafe68adef283":[5,0,2,62,28],
-"classfrc_1_1Encoder.html#aac1bc3f37c27c15bf048b504b921d3db":[5,0,2,62,27]
+"classfrc_1_1Encoder.html#aaa0a1b07f1426dd0e4efafe68adef283":[5,0,2,62,28]
 };

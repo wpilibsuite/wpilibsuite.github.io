@@ -1,5 +1,8 @@
 var NAVTREEINDEX37 =
 {
+"group__ntcore__utility__cfunc.html#gaeed743779ac03356d76f3489cfd98012":[3,3,7,6],
+"group__ntcore__utility__cfunc.html#gaeef9d0e4e266cd4d91632566debdf911":[3,3,7,7],
+"group__ntcore__utility__func.html":[3,1,7],
 "group__ntcore__utility__func.html#ga9e57c1308e76272f160b24b18b3ee254":[3,1,7,0],
 "group__ntcore__valuesetters__cfunc.html":[3,3,9,3],
 "group__ntcore__valuesetters__cfunc.html#ga0cb0f1870887cbab71cd712fe0b2f22a":[3,3,9,3,5],
@@ -47,8 +50,8 @@ var NAVTREEINDEX37 =
 "md__home_runner_work_allwpilib_allwpilib_LICENSE.html":[0],
 "modules.html":[3],
 "mutex_8h_source.html":[6,0,12,48],
-"namespacecs.html":[5,0,0],
 "namespacecs.html":[4,0,0],
+"namespacecs.html":[5,0,0],
 "namespacefrc.html":[5,0,2],
 "namespacefrc.html":[4,0,1],
 "namespacefrc_1_1filesystem.html":[4,0,1,0],
@@ -59,12 +62,12 @@ var NAVTREEINDEX37 =
 "namespacemembers_eval.html":[4,1,4],
 "namespacemembers_func.html":[4,1,1],
 "namespacemembers_type.html":[4,1,2],
-"namespacent.html":[5,0,5],
 "namespacent.html":[4,0,3],
+"namespacent.html":[5,0,5],
 "namespacent_1_1EntryListenerFlags.html":[4,0,3,0],
 "namespaces.html":[4,0],
-"namespacewpi_1_1detail.html":[4,0,4,0],
 "namespacewpi_1_1detail.html":[5,0,7,0],
+"namespacewpi_1_1detail.html":[4,0,4,0],
 "namespacewpi_1_1java.html":[5,0,7,3],
 "namespacewpi_1_1java.html":[4,0,4,1],
 "never__destroyed_8h_source.html":[6,0,2,0,5],
@@ -246,8 +249,5 @@ var NAVTREEINDEX37 =
 "structcs_1_1RawEvent.html":[3,6,18],
 "structcs_1_1RawEvent.html#a07ce5e163e404ec11b367fa9eddc2ef7":[3,6,18,8],
 "structcs_1_1RawEvent.html#a20d2d7a6fc5f11662bbd2f8839eb8b4e":[3,6,18,12],
-"structcs_1_1RawEvent.html#a2aeedf149efa9cb86b7b01fc59b8edfb":[3,6,18,3],
-"structcs_1_1RawEvent.html#a38f3b6552029a03ab0c68fb2b90d0596":[3,6,18,14],
-"structcs_1_1RawEvent.html#a42be29ff0a6b631b98d309e5bfd082d5":[3,6,18,9],
-"structcs_1_1RawEvent.html#a51a32420fbb0e990c122aa2f0906e677":[3,6,18,6]
+"structcs_1_1RawEvent.html#a2aeedf149efa9cb86b7b01fc59b8edfb":[3,6,18,3]
 };

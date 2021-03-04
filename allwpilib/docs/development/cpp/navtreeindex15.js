@@ -1,5 +1,7 @@
 var NAVTREEINDEX15 =
 {
+"classfrc_1_1ShuffleboardWidget.html#ab78be6213a4a5b08d2bb0624bc51eda8":[5,0,2,173,2],
+"classfrc_1_1SimpleMotorFeedforward.html":[5,0,2,174],
 "classfrc_1_1SimpleMotorFeedforward.html#a339fc3d231d056359f2e81915d9cc6fe":[5,0,2,174,12],
 "classfrc_1_1SimpleMotorFeedforward.html#a42c7ddd5b2eccd3c2a572112aae33337":[5,0,2,174,3],
 "classfrc_1_1SimpleMotorFeedforward.html#a58ae48792a7dbdeb9b9443361a7a219a":[5,0,2,174,1],
@@ -198,13 +200,14 @@ var NAVTREEINDEX15 =
 "classfrc_1_1SwerveDriveOdometry.html#af8ce50875ac5468526ec0ac819c666b9":[5,0,2,192,2],
 "classfrc_1_1SwerveDriveOdometry.html#aff1fac52925c40dd7286d8c1d1d3f140":[5,0,2,192,1],
 "classfrc_1_1SwerveDrivePoseEstimator.html":[5,0,2,193],
-"classfrc_1_1SwerveDrivePoseEstimator.html#a1505962f9ffb09955be3b1a406426967":[5,0,2,193,5],
-"classfrc_1_1SwerveDrivePoseEstimator.html#a1d05916ae9eef2597fd43f2be06f8980":[5,0,2,193,6],
+"classfrc_1_1SwerveDrivePoseEstimator.html#a0b964991242b8c03fc9010cc8001b5b8":[5,0,2,193,2],
+"classfrc_1_1SwerveDrivePoseEstimator.html#a1505962f9ffb09955be3b1a406426967":[5,0,2,193,6],
+"classfrc_1_1SwerveDrivePoseEstimator.html#a1d05916ae9eef2597fd43f2be06f8980":[5,0,2,193,7],
 "classfrc_1_1SwerveDrivePoseEstimator.html#a31c93b63c5349dce5053414a6c30dccb":[5,0,2,193,0],
-"classfrc_1_1SwerveDrivePoseEstimator.html#aa839fb27ac13f391e5f9314e154b8f51":[5,0,2,193,4],
-"classfrc_1_1SwerveDrivePoseEstimator.html#abc069c79c0503a5713593eda54af6245":[5,0,2,193,3],
+"classfrc_1_1SwerveDrivePoseEstimator.html#aa839fb27ac13f391e5f9314e154b8f51":[5,0,2,193,5],
+"classfrc_1_1SwerveDrivePoseEstimator.html#abc069c79c0503a5713593eda54af6245":[5,0,2,193,4],
 "classfrc_1_1SwerveDrivePoseEstimator.html#af2ad6ac96725e2e2732032d9fdcdc5d7":[5,0,2,193,1],
-"classfrc_1_1SwerveDrivePoseEstimator.html#afa43500d257dd6e01c810ffd6992e2a9":[5,0,2,193,2],
+"classfrc_1_1SwerveDrivePoseEstimator.html#afa43500d257dd6e01c810ffd6992e2a9":[5,0,2,193,3],
 "classfrc_1_1Talon.html":[5,0,2,195],
 "classfrc_1_1Talon.html#a57578860679d611521815091fe9a7aee":[5,0,2,195,2],
 "classfrc_1_1Talon.html#a788e8e882122fea1db0da07d95bbbdf1":[5,0,2,195,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX15 =
 "classfrc_1_1ToggleButtonScheduler.html":[5,0,2,199],
 "classfrc_1_1ToggleButtonScheduler.html#a58ce71973ff2c24217eaadacf6cceb68":[5,0,2,199,4],
 "classfrc_1_1ToggleButtonScheduler.html#a6682fbe88cfd03c1f72fef761bd3d75f":[5,0,2,199,0],
-"classfrc_1_1ToggleButtonScheduler.html#a9ce6e27de43cdc81d7294ffdaafab526":[5,0,2,199,1],
-"classfrc_1_1ToggleButtonScheduler.html#aae5c89c886b6266fa6145804f1bf6745":[5,0,2,199,2],
-"classfrc_1_1ToggleButtonScheduler.html#ab11c62eb5c27cc4708bafc63d4a09933":[5,0,2,199,3],
-"classfrc_1_1Tracer.html":[5,0,2,200]
+"classfrc_1_1ToggleButtonScheduler.html#a9ce6e27de43cdc81d7294ffdaafab526":[5,0,2,199,1]
 };

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.2.2-33-g1a2680b</span>
+   &#160;<span id="projectnumber">2021.2.2-35-g6812302</span>
    </div>
   </td>
  </tr>
@@ -187,79 +187,86 @@ $(document).ready(function(){initNavTree('SwerveDrivePoseEstimator_8h_source.htm
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        m_visionCorrect, timestamp);</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  }</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span>... ModuleState&gt;</div>
-<div class="line"><a name="l00203"></a><span class="lineno"><a class="line" href="classfrc_1_1SwerveDrivePoseEstimator.html#a1505962f9ffb09955be3b1a406426967">  203</a></span>&#160;  <a class="code" href="classfrc_1_1Pose2d.html">Pose2d</a> <a class="code" href="classfrc_1_1SwerveDrivePoseEstimator.html#a1505962f9ffb09955be3b1a406426967">Update</a>(<span class="keyword">const</span> <a class="code" href="classfrc_1_1Rotation2d.html">Rotation2d</a>&amp; gyroAngle, ModuleState&amp;&amp;... moduleStates) {</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classfrc_1_1SwerveDrivePoseEstimator.html#a1d05916ae9eef2597fd43f2be06f8980">UpdateWithTime</a>(units::microsecond_t(<a class="code" href="group__ntcore__utility__func.html#ga9e57c1308e76272f160b24b18b3ee254">wpi::Now</a>()), gyroAngle,</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                          moduleStates...);</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  }</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span>... ModuleState&gt;</div>
-<div class="line"><a name="l00220"></a><span class="lineno"><a class="line" href="classfrc_1_1SwerveDrivePoseEstimator.html#a1d05916ae9eef2597fd43f2be06f8980">  220</a></span>&#160;  <a class="code" href="classfrc_1_1Pose2d.html">Pose2d</a> <a class="code" href="classfrc_1_1SwerveDrivePoseEstimator.html#a1d05916ae9eef2597fd43f2be06f8980">UpdateWithTime</a>(units::second_t currentTime,</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                        <span class="keyword">const</span> <a class="code" href="classfrc_1_1Rotation2d.html">Rotation2d</a>&amp; gyroAngle,</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                        ModuleState&amp;&amp;... moduleStates) {</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <span class="keyword">auto</span> dt = m_prevTime &gt;= 0_s ? currentTime - m_prevTime : m_nominalDt;</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    m_prevTime = currentTime;</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160; </div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <span class="keyword">auto</span> angle = gyroAngle + m_gyroOffset;</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <span class="keyword">auto</span> omega = (angle - m_previousAngle).Radians() / dt;</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160; </div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <span class="keyword">auto</span> chassisSpeeds = m_kinematics.ToChassisSpeeds(moduleStates...);</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="keyword">auto</span> fieldRelativeSpeeds =</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        <a class="code" href="classfrc_1_1Translation2d.html">Translation2d</a>(chassisSpeeds.vx * 1_s, chassisSpeeds.vy * 1_s)</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;            .<a class="code" href="classfrc_1_1Translation2d.html#af305f18995bea59715535b0636a89abe">RotateBy</a>(angle);</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160; </div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <span class="keyword">auto</span> u =</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        frc::MakeMatrix&lt;3, 1&gt;(fieldRelativeSpeeds.X().template to&lt;double&gt;(),</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                              fieldRelativeSpeeds.Y().template to&lt;double&gt;(),</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;                              omega.template to&lt;double&gt;());</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160; </div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="keyword">auto</span> localY = frc::MakeMatrix&lt;1, 1&gt;(angle.Radians().template to&lt;double&gt;());</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    m_previousAngle = angle;</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160; </div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    m_latencyCompensator.AddObserverState(m_observer, u, localY, currentTime);</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160; </div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    m_observer.<a class="code" href="classfrc_1_1UnscentedKalmanFilter.html#a7a6add97e52efdc06f74068c864493de">Predict</a>(u, dt);</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    m_observer.<a class="code" href="classfrc_1_1UnscentedKalmanFilter.html#af42b9c885ac152433abfc268014ff1f1">Correct</a>(u, localY);</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160; </div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classfrc_1_1SwerveDrivePoseEstimator.html#afa43500d257dd6e01c810ffd6992e2a9">GetEstimatedPosition</a>();</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;  }</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160; </div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;  <a class="code" href="classfrc_1_1UnscentedKalmanFilter.html">UnscentedKalmanFilter&lt;3, 3, 1&gt;</a> m_observer;</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  <a class="code" href="classfrc_1_1SwerveDriveKinematics.html">SwerveDriveKinematics&lt;NumModules&gt;</a>&amp; m_kinematics;</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;  <a class="code" href="classfrc_1_1KalmanFilterLatencyCompensator.html">KalmanFilterLatencyCompensator&lt;3, 3, 1, UnscentedKalmanFilter&lt;3, 3, 1&gt;</a>&gt;</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;      m_latencyCompensator;</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  std::function&lt;void(<span class="keyword">const</span> Eigen::Matrix&lt;double, 3, 1&gt;&amp; u,</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                     <span class="keyword">const</span> Eigen::Matrix&lt;double, 3, 1&gt;&amp; y)&gt;</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;      m_visionCorrect;</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160; </div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;  Eigen::Matrix3d m_visionDiscR;</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160; </div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;  units::second_t m_nominalDt;</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;  units::second_t m_prevTime = -1_s;</div>
+<div class="line"><a name="l00223"></a><span class="lineno"><a class="line" href="classfrc_1_1SwerveDrivePoseEstimator.html#a0b964991242b8c03fc9010cc8001b5b8">  223</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1SwerveDrivePoseEstimator.html#a0b964991242b8c03fc9010cc8001b5b8">AddVisionMeasurement</a>(</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;      <span class="keyword">const</span> <a class="code" href="classfrc_1_1Pose2d.html">Pose2d</a>&amp; visionRobotPose, units::second_t timestamp,</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;      <span class="keyword">const</span> <a class="code" href="classwpi_1_1array.html">wpi::array&lt;double, 3&gt;</a>&amp; visionMeasurementStdDevs) {</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <a class="code" href="classfrc_1_1SwerveDrivePoseEstimator.html#aa839fb27ac13f391e5f9314e154b8f51">SetVisionMeasurementStdDevs</a>(visionMeasurementStdDevs);</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <a class="code" href="classfrc_1_1SwerveDrivePoseEstimator.html#af2ad6ac96725e2e2732032d9fdcdc5d7">AddVisionMeasurement</a>(visionRobotPose, timestamp);</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  }</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160; </div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span>... ModuleState&gt;</div>
+<div class="line"><a name="l00241"></a><span class="lineno"><a class="line" href="classfrc_1_1SwerveDrivePoseEstimator.html#a1505962f9ffb09955be3b1a406426967">  241</a></span>&#160;  <a class="code" href="classfrc_1_1Pose2d.html">Pose2d</a> <a class="code" href="classfrc_1_1SwerveDrivePoseEstimator.html#a1505962f9ffb09955be3b1a406426967">Update</a>(<span class="keyword">const</span> <a class="code" href="classfrc_1_1Rotation2d.html">Rotation2d</a>&amp; gyroAngle, ModuleState&amp;&amp;... moduleStates) {</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classfrc_1_1SwerveDrivePoseEstimator.html#a1d05916ae9eef2597fd43f2be06f8980">UpdateWithTime</a>(units::microsecond_t(<a class="code" href="group__ntcore__utility__func.html#ga9e57c1308e76272f160b24b18b3ee254">wpi::Now</a>()), gyroAngle,</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                          moduleStates...);</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;  }</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160; </div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span>... ModuleState&gt;</div>
+<div class="line"><a name="l00258"></a><span class="lineno"><a class="line" href="classfrc_1_1SwerveDrivePoseEstimator.html#a1d05916ae9eef2597fd43f2be06f8980">  258</a></span>&#160;  <a class="code" href="classfrc_1_1Pose2d.html">Pose2d</a> <a class="code" href="classfrc_1_1SwerveDrivePoseEstimator.html#a1d05916ae9eef2597fd43f2be06f8980">UpdateWithTime</a>(units::second_t currentTime,</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                        <span class="keyword">const</span> <a class="code" href="classfrc_1_1Rotation2d.html">Rotation2d</a>&amp; gyroAngle,</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                        ModuleState&amp;&amp;... moduleStates) {</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <span class="keyword">auto</span> dt = m_prevTime &gt;= 0_s ? currentTime - m_prevTime : m_nominalDt;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    m_prevTime = currentTime;</div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160; </div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;  <a class="code" href="classfrc_1_1Rotation2d.html">Rotation2d</a> m_gyroOffset;</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;  <a class="code" href="classfrc_1_1Rotation2d.html">Rotation2d</a> m_previousAngle;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="keyword">auto</span> angle = gyroAngle + m_gyroOffset;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <span class="keyword">auto</span> omega = (angle - m_previousAngle).Radians() / dt;</div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160; </div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;  <span class="keyword">template</span> &lt;<span class="keywordtype">int</span> Dim&gt;</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;  <span class="keyword">static</span> <a class="code" href="classwpi_1_1array.html">wpi::array&lt;double, Dim&gt;</a> StdDevMatrixToArray(</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;      <span class="keyword">const</span> Eigen::Matrix&lt;double, Dim, 1&gt;&amp; vector) {</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <a class="code" href="classwpi_1_1array.html">wpi::array&lt;double, Dim&gt;</a> array;</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; Dim; ++i) {</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;      array[i] = vector(i);</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    }</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <span class="keywordflow">return</span> array;</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;  }</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;};</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160; </div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <span class="keyword">auto</span> chassisSpeeds = m_kinematics.ToChassisSpeeds(moduleStates...);</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <span class="keyword">auto</span> fieldRelativeSpeeds =</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        <a class="code" href="classfrc_1_1Translation2d.html">Translation2d</a>(chassisSpeeds.vx * 1_s, chassisSpeeds.vy * 1_s)</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;            .<a class="code" href="classfrc_1_1Translation2d.html#af305f18995bea59715535b0636a89abe">RotateBy</a>(angle);</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160; </div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="keyword">auto</span> u =</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        frc::MakeMatrix&lt;3, 1&gt;(fieldRelativeSpeeds.X().template to&lt;double&gt;(),</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                              fieldRelativeSpeeds.Y().template to&lt;double&gt;(),</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;                              omega.template to&lt;double&gt;());</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160; </div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <span class="keyword">auto</span> localY = frc::MakeMatrix&lt;1, 1&gt;(angle.Radians().template to&lt;double&gt;());</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    m_previousAngle = angle;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160; </div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    m_latencyCompensator.AddObserverState(m_observer, u, localY, currentTime);</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160; </div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    m_observer.<a class="code" href="classfrc_1_1UnscentedKalmanFilter.html#a7a6add97e52efdc06f74068c864493de">Predict</a>(u, dt);</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    m_observer.<a class="code" href="classfrc_1_1UnscentedKalmanFilter.html#af42b9c885ac152433abfc268014ff1f1">Correct</a>(u, localY);</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160; </div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classfrc_1_1SwerveDrivePoseEstimator.html#afa43500d257dd6e01c810ffd6992e2a9">GetEstimatedPosition</a>();</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;  }</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160; </div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;  <a class="code" href="classfrc_1_1UnscentedKalmanFilter.html">UnscentedKalmanFilter&lt;3, 3, 1&gt;</a> m_observer;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;  <a class="code" href="classfrc_1_1SwerveDriveKinematics.html">SwerveDriveKinematics&lt;NumModules&gt;</a>&amp; m_kinematics;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;  <a class="code" href="classfrc_1_1KalmanFilterLatencyCompensator.html">KalmanFilterLatencyCompensator&lt;3, 3, 1, UnscentedKalmanFilter&lt;3, 3, 1&gt;</a>&gt;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;      m_latencyCompensator;</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;  std::function&lt;void(<span class="keyword">const</span> Eigen::Matrix&lt;double, 3, 1&gt;&amp; u,</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;                     <span class="keyword">const</span> Eigen::Matrix&lt;double, 3, 1&gt;&amp; y)&gt;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;      m_visionCorrect;</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160; </div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;  Eigen::Matrix3d m_visionDiscR;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160; </div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;  units::second_t m_nominalDt;</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;  units::second_t m_prevTime = -1_s;</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160; </div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;  <a class="code" href="classfrc_1_1Rotation2d.html">Rotation2d</a> m_gyroOffset;</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;  <a class="code" href="classfrc_1_1Rotation2d.html">Rotation2d</a> m_previousAngle;</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160; </div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;  <span class="keyword">template</span> &lt;<span class="keywordtype">int</span> Dim&gt;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;  <span class="keyword">static</span> <a class="code" href="classwpi_1_1array.html">wpi::array&lt;double, Dim&gt;</a> StdDevMatrixToArray(</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;      <span class="keyword">const</span> Eigen::Matrix&lt;double, Dim, 1&gt;&amp; vector) {</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <a class="code" href="classwpi_1_1array.html">wpi::array&lt;double, Dim&gt;</a> array;</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; Dim; ++i) {</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;      array[i] = vector(i);</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    }</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    <span class="keywordflow">return</span> array;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;  }</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;};</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160; </div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;}  <span class="comment">// namespace frc</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassfrc_1_1UnscentedKalmanFilter_html_aab659c752ce137ad7aee133a1a2a4b2b"><div class="ttname"><a href="classfrc_1_1UnscentedKalmanFilter.html#aab659c752ce137ad7aee133a1a2a4b2b">frc::UnscentedKalmanFilter::Xhat</a></div><div class="ttdeci">const Eigen::Matrix&lt; double, States, 1 &gt; &amp; Xhat() const</div><div class="ttdoc">Returns the state estimate x-hat.</div><div class="ttdef"><b>Definition:</b> UnscentedKalmanFilter.h:165</div></div>
-<div class="ttc" id="aclassfrc_1_1SwerveDrivePoseEstimator_html_a1505962f9ffb09955be3b1a406426967"><div class="ttname"><a href="classfrc_1_1SwerveDrivePoseEstimator.html#a1505962f9ffb09955be3b1a406426967">frc::SwerveDrivePoseEstimator::Update</a></div><div class="ttdeci">Pose2d Update(const Rotation2d &amp;gyroAngle, ModuleState &amp;&amp;... moduleStates)</div><div class="ttdoc">Updates the the Unscented Kalman Filter using only wheel encoder information.</div><div class="ttdef"><b>Definition:</b> SwerveDrivePoseEstimator.h:203</div></div>
+<div class="ttc" id="aclassfrc_1_1SwerveDrivePoseEstimator_html_a1505962f9ffb09955be3b1a406426967"><div class="ttname"><a href="classfrc_1_1SwerveDrivePoseEstimator.html#a1505962f9ffb09955be3b1a406426967">frc::SwerveDrivePoseEstimator::Update</a></div><div class="ttdeci">Pose2d Update(const Rotation2d &amp;gyroAngle, ModuleState &amp;&amp;... moduleStates)</div><div class="ttdoc">Updates the the Unscented Kalman Filter using only wheel encoder information.</div><div class="ttdef"><b>Definition:</b> SwerveDrivePoseEstimator.h:241</div></div>
 <div class="ttc" id="aclassfrc_1_1SwerveDrivePoseEstimator_html_aa839fb27ac13f391e5f9314e154b8f51"><div class="ttname"><a href="classfrc_1_1SwerveDrivePoseEstimator.html#aa839fb27ac13f391e5f9314e154b8f51">frc::SwerveDrivePoseEstimator::SetVisionMeasurementStdDevs</a></div><div class="ttdeci">void SetVisionMeasurementStdDevs(const wpi::array&lt; double, 3 &gt; &amp;visionMeasurementStdDevs)</div><div class="ttdoc">Sets the pose estimator's trust of global measurements.</div><div class="ttdef"><b>Definition:</b> SwerveDrivePoseEstimator.h:159</div></div>
 <div class="ttc" id="agroup__ntcore__utility__func_html_ga9e57c1308e76272f160b24b18b3ee254"><div class="ttname"><a href="group__ntcore__utility__func.html#ga9e57c1308e76272f160b24b18b3ee254">nt::Now</a></div><div class="ttdeci">uint64_t Now()</div><div class="ttdoc">Returns monotonic current time in 1 us increments.</div></div>
-<div class="ttc" id="aclassfrc_1_1SwerveDrivePoseEstimator_html_a1d05916ae9eef2597fd43f2be06f8980"><div class="ttname"><a href="classfrc_1_1SwerveDrivePoseEstimator.html#a1d05916ae9eef2597fd43f2be06f8980">frc::SwerveDrivePoseEstimator::UpdateWithTime</a></div><div class="ttdeci">Pose2d UpdateWithTime(units::second_t currentTime, const Rotation2d &amp;gyroAngle, ModuleState &amp;&amp;... moduleStates)</div><div class="ttdoc">Updates the the Unscented Kalman Filter using only wheel encoder information.</div><div class="ttdef"><b>Definition:</b> SwerveDrivePoseEstimator.h:220</div></div>
+<div class="ttc" id="aclassfrc_1_1SwerveDrivePoseEstimator_html_a1d05916ae9eef2597fd43f2be06f8980"><div class="ttname"><a href="classfrc_1_1SwerveDrivePoseEstimator.html#a1d05916ae9eef2597fd43f2be06f8980">frc::SwerveDrivePoseEstimator::UpdateWithTime</a></div><div class="ttdeci">Pose2d UpdateWithTime(units::second_t currentTime, const Rotation2d &amp;gyroAngle, ModuleState &amp;&amp;... moduleStates)</div><div class="ttdoc">Updates the the Unscented Kalman Filter using only wheel encoder information.</div><div class="ttdef"><b>Definition:</b> SwerveDrivePoseEstimator.h:258</div></div>
 <div class="ttc" id="aclassfrc_1_1Rotation2d_html"><div class="ttname"><a href="classfrc_1_1Rotation2d.html">frc::Rotation2d</a></div><div class="ttdoc">A rotation in a 2d coordinate frame represented a point on the unit circle (cosine and sine).</div><div class="ttdef"><b>Definition:</b> Rotation2d.h:19</div></div>
 <div class="ttc" id="aclassfrc_1_1Translation2d_html"><div class="ttname"><a href="classfrc_1_1Translation2d.html">frc::Translation2d</a></div><div class="ttdoc">Represents a translation in 2d space.</div><div class="ttdef"><b>Definition:</b> Translation2d.h:24</div></div>
 <div class="ttc" id="aclassfrc_1_1UnscentedKalmanFilter_html_adde6af1afe00eafc4539e04c220ef87d"><div class="ttname"><a href="classfrc_1_1UnscentedKalmanFilter.html#adde6af1afe00eafc4539e04c220ef87d">frc::UnscentedKalmanFilter::SetXhat</a></div><div class="ttdeci">void SetXhat(const Eigen::Matrix&lt; double, States, 1 &gt; &amp;xHat)</div><div class="ttdoc">Set initial state estimate x-hat.</div><div class="ttdef"><b>Definition:</b> UnscentedKalmanFilter.h:179</div></div>
@@ -270,6 +277,7 @@ $(document).ready(function(){initNavTree('SwerveDrivePoseEstimator_8h_source.htm
 <div class="ttc" id="aclassfrc_1_1SwerveDriveKinematics_html"><div class="ttname"><a href="classfrc_1_1SwerveDriveKinematics.html">frc::SwerveDriveKinematics</a></div><div class="ttdoc">Helper class that converts a chassis velocity (dx, dy, and dtheta components) into individual module ...</div><div class="ttdef"><b>Definition:</b> SwerveDriveKinematics.h:44</div></div>
 <div class="ttc" id="aclassfrc_1_1Pose2d_html_a7e855bba46f3a0f83e098527a7588398"><div class="ttname"><a href="classfrc_1_1Pose2d.html#a7e855bba46f3a0f83e098527a7588398">frc::Pose2d::Rotation</a></div><div class="ttdeci">const Rotation2d &amp; Rotation() const</div><div class="ttdoc">Returns the underlying rotation.</div><div class="ttdef"><b>Definition:</b> Pose2d.h:122</div></div>
 <div class="ttc" id="aclassfrc_1_1UnscentedKalmanFilter_html_a7a6add97e52efdc06f74068c864493de"><div class="ttname"><a href="classfrc_1_1UnscentedKalmanFilter.html#a7a6add97e52efdc06f74068c864493de">frc::UnscentedKalmanFilter::Predict</a></div><div class="ttdeci">void Predict(const Eigen::Matrix&lt; double, Inputs, 1 &gt; &amp;u, units::second_t dt)</div><div class="ttdoc">Project the model into the future with a new control input u.</div><div class="ttdef"><b>Definition:</b> UnscentedKalmanFilter.h:204</div></div>
+<div class="ttc" id="aclassfrc_1_1SwerveDrivePoseEstimator_html_a0b964991242b8c03fc9010cc8001b5b8"><div class="ttname"><a href="classfrc_1_1SwerveDrivePoseEstimator.html#a0b964991242b8c03fc9010cc8001b5b8">frc::SwerveDrivePoseEstimator::AddVisionMeasurement</a></div><div class="ttdeci">void AddVisionMeasurement(const Pose2d &amp;visionRobotPose, units::second_t timestamp, const wpi::array&lt; double, 3 &gt; &amp;visionMeasurementStdDevs)</div><div class="ttdoc">Adds a vision measurement to the Unscented Kalman Filter.</div><div class="ttdef"><b>Definition:</b> SwerveDrivePoseEstimator.h:223</div></div>
 <div class="ttc" id="aclassfrc_1_1KalmanFilterLatencyCompensator_html"><div class="ttname"><a href="classfrc_1_1KalmanFilterLatencyCompensator.html">frc::KalmanFilterLatencyCompensator</a></div><div class="ttdef"><b>Definition:</b> KalmanFilterLatencyCompensator.h:20</div></div>
 <div class="ttc" id="aclassfrc_1_1SwerveDrivePoseEstimator_html_afa43500d257dd6e01c810ffd6992e2a9"><div class="ttname"><a href="classfrc_1_1SwerveDrivePoseEstimator.html#afa43500d257dd6e01c810ffd6992e2a9">frc::SwerveDrivePoseEstimator::GetEstimatedPosition</a></div><div class="ttdeci">Pose2d GetEstimatedPosition() const</div><div class="ttdoc">Gets the pose of the robot at the current time as estimated by the Extended Kalman Filter.</div><div class="ttdef"><b>Definition:</b> SwerveDrivePoseEstimator.h:142</div></div>
 <div class="ttc" id="aclassfrc_1_1SwerveDrivePoseEstimator_html_a31c93b63c5349dce5053414a6c30dccb"><div class="ttname"><a href="classfrc_1_1SwerveDrivePoseEstimator.html#a31c93b63c5349dce5053414a6c30dccb">frc::SwerveDrivePoseEstimator::SwerveDrivePoseEstimator</a></div><div class="ttdeci">SwerveDrivePoseEstimator(const Rotation2d &amp;gyroAngle, const Pose2d &amp;initialPose, SwerveDriveKinematics&lt; NumModules &gt; &amp;kinematics, const wpi::array&lt; double, 3 &gt; &amp;stateStdDevs, const wpi::array&lt; double, 1 &gt; &amp;localMeasurementStdDevs, const wpi::array&lt; double, 3 &gt; &amp;visionMeasurementStdDevs, units::second_t nominalDt=0.02_s)</div><div class="ttdoc">Constructs a SwerveDrivePoseEstimator.</div><div class="ttdef"><b>Definition:</b> SwerveDrivePoseEstimator.h:76</div></div>
@@ -284,7 +292,7 @@ $(document).ready(function(){initNavTree('SwerveDrivePoseEstimator_8h_source.htm
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_7b4a0634315f7993a48b0e5d4ddcc644.html">estimator</a></li><li class="navelem"><b>SwerveDrivePoseEstimator.h</b></li>
-    <li class="footer">Generated on Thu Mar 4 2021 07:37:39 for WPILibC++ by
+    <li class="footer">Generated on Thu Mar 4 2021 07:40:04 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

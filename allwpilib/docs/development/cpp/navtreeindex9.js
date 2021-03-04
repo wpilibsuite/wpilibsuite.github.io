@@ -1,5 +1,6 @@
 var NAVTREEINDEX9 =
 {
+"classfrc_1_1Encoder.html#aac1bc3f37c27c15bf048b504b921d3db":[5,0,2,62,27],
 "classfrc_1_1Encoder.html#aac2f1cbfe45db68a215a60c695bae80f":[5,0,2,62,16],
 "classfrc_1_1Encoder.html#ac50921f87e0e3cc4785a4b1e157da433":[5,0,2,62,22],
 "classfrc_1_1Encoder.html#ac602f41b49cff5c30f7d80c748e15e89":[5,0,2,62,24],
@@ -248,6 +249,5 @@ var NAVTREEINDEX9 =
 "classfrc_1_1IterativeRobot.html#a056410e661aeaecc5e71bfc952954d72":[5,0,2,79,1],
 "classfrc_1_1IterativeRobot.html#a813a62c7853dc9cf6d048dd45f97b2c9":[5,0,2,79,0],
 "classfrc_1_1IterativeRobot.html#a8b6b8fcc7c53c3e0d835d2a39fd27afd":[5,0,2,79,3],
-"classfrc_1_1IterativeRobot.html#ab6b6c9e3e5a834e5660d549c34a8b842":[5,0,2,79,2],
-"classfrc_1_1IterativeRobotBase.html":[5,0,2,80]
+"classfrc_1_1IterativeRobot.html#ab6b6c9e3e5a834e5660d549c34a8b842":[5,0,2,79,2]
 };

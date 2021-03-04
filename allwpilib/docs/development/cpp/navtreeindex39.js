@@ -1,5 +1,8 @@
 var NAVTREEINDEX39 =
 {
+"structwpi_1_1DenseMapInfo_3_01int_01_4.html#a35d39d0bb9ab9ac4990b4843492050aa":[5,0,7,37,1],
+"structwpi_1_1DenseMapInfo_3_01int_01_4.html#a89b48298fec3a9f817b827a9476894dd":[5,0,7,37,0],
+"structwpi_1_1DenseMapInfo_3_01int_01_4.html#adfca0a855a20f82f0c039b8cbc1c4c7b":[5,0,7,37,3],
 "structwpi_1_1DenseMapInfo_3_01int_01_4.html#af915204f12f5f61c2674025502ea95b9":[5,0,7,37,2],
 "structwpi_1_1DenseMapInfo_3_01long_01_4.html":[5,0,7,38],
 "structwpi_1_1DenseMapInfo_3_01long_01_4.html#a11f31382bdd378172fb3cb00ebb763ef":[5,0,7,38,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX39 =
 "structwpi_1_1detail_1_1fwd__or__bidi__tag__impl.html#ad00687c4530026b4abcf195bd0df589c":[5,0,7,0,22,0],
 "structwpi_1_1detail_1_1fwd__or__bidi__tag__impl_3_01true_01_4.html":[5,0,7,0,23],
 "structwpi_1_1detail_1_1fwd__or__bidi__tag__impl_3_01true_01_4.html#ad9eefa7de6917e3bca09b60dcb3e636f":[5,0,7,0,23,0],
-"structwpi_1_1detail_1_1has__from__json.html":[5,0,7,0,24],
-"structwpi_1_1detail_1_1has__from__json.html#a1d60ad5f296ba9e609bd6666197a4b60":[5,0,7,0,24,0],
-"structwpi_1_1detail_1_1has__non__default__from__json.html":[5,0,7,0,25],
-"structwpi_1_1detail_1_1has__non__default__from__json.html#a722f8d0f8eb8656da31a55c2fb41746a":[5,0,7,0,25,0]
+"structwpi_1_1detail_1_1has__from__json.html":[5,0,7,0,24]
 };

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.2.2-33-g1a2680b</span>
+   &#160;<span id="projectnumber">2021.2.2-35-g6812302</span>
    </div>
   </td>
  </tr>
@@ -119,6 +119,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a08f5072a0aa4e4fba8d7528427047720"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1DifferentialDrivePoseEstimator.html#a08f5072a0aa4e4fba8d7528427047720">AddVisionMeasurement</a> (const <a class="el" href="classfrc_1_1Pose2d.html">Pose2d</a> &amp;visionRobotPose, units::second_t timestamp)</td></tr>
 <tr class="memdesc:a08f5072a0aa4e4fba8d7528427047720"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a vision measurement to the Unscented Kalman <a class="el" href="classfrc_1_1Filter.html" title="Interface for filters.">Filter</a>.  <a href="classfrc_1_1DifferentialDrivePoseEstimator.html#a08f5072a0aa4e4fba8d7528427047720">More...</a><br /></td></tr>
 <tr class="separator:a08f5072a0aa4e4fba8d7528427047720"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad273aa27bda035fe8ca417a7ea2891c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1DifferentialDrivePoseEstimator.html#ad273aa27bda035fe8ca417a7ea2891c5">AddVisionMeasurement</a> (const <a class="el" href="classfrc_1_1Pose2d.html">Pose2d</a> &amp;visionRobotPose, units::second_t timestamp, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, 3 &gt; &amp;visionMeasurementStdDevs)</td></tr>
+<tr class="memdesc:ad273aa27bda035fe8ca417a7ea2891c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a vision measurement to the Unscented Kalman <a class="el" href="classfrc_1_1Filter.html" title="Interface for filters.">Filter</a>.  <a href="classfrc_1_1DifferentialDrivePoseEstimator.html#ad273aa27bda035fe8ca417a7ea2891c5">More...</a><br /></td></tr>
+<tr class="separator:ad273aa27bda035fe8ca417a7ea2891c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9d9b994b3e0c0f445b3781ae100c904"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1Pose2d.html">Pose2d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1DifferentialDrivePoseEstimator.html#ae9d9b994b3e0c0f445b3781ae100c904">Update</a> (const <a class="el" href="classfrc_1_1Rotation2d.html">Rotation2d</a> &amp;gyroAngle, const <a class="el" href="structfrc_1_1DifferentialDriveWheelSpeeds.html">DifferentialDriveWheelSpeeds</a> &amp;wheelSpeeds, units::meter_t leftDistance, units::meter_t rightDistance)</td></tr>
 <tr class="memdesc:ae9d9b994b3e0c0f445b3781ae100c904"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the Unscented Kalman <a class="el" href="classfrc_1_1Filter.html" title="Interface for filters.">Filter</a> using only wheel encoder information.  <a href="classfrc_1_1DifferentialDrivePoseEstimator.html#ae9d9b994b3e0c0f445b3781ae100c904">More...</a><br /></td></tr>
 <tr class="separator:ae9d9b994b3e0c0f445b3781ae100c904"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -203,7 +206,7 @@ Public Member Functions</h2></td></tr>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a08f5072a0aa4e4fba8d7528427047720"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a08f5072a0aa4e4fba8d7528427047720">&#9670;&nbsp;</a></span>AddVisionMeasurement()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a08f5072a0aa4e4fba8d7528427047720">&#9670;&nbsp;</a></span>AddVisionMeasurement() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -235,6 +238,61 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">visionRobotPose</td><td>The pose of the robot as measured by the vision camera. </td></tr>
     <tr><td class="paramname">timestamp</td><td>The timestamp of the vision measurement in seconds. Note that if you don't use your own time source by calling <a class="el" href="classfrc_1_1DifferentialDrivePoseEstimator.html#a3b1c6307abd690dc1babb27fe96014be" title="Updates the Unscented Kalman Filter using only wheel encoder information.">UpdateWithTime()</a>, then you must use a timestamp with an epoch since FPGA startup (i.e. the epoch of this timestamp is the same epoch as <a class="el" href="classfrc2_1_1Timer.html#afe535587db8c1d9d8b3f03703a13282b" title="Return the FPGA system clock time in seconds.">frc2::Timer::GetFPGATimestamp()</a>. This means that you should use <a class="el" href="classfrc2_1_1Timer.html#afe535587db8c1d9d8b3f03703a13282b" title="Return the FPGA system clock time in seconds.">frc2::Timer::GetFPGATimestamp()</a> as your time source in this case. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad273aa27bda035fe8ca417a7ea2891c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad273aa27bda035fe8ca417a7ea2891c5">&#9670;&nbsp;</a></span>AddVisionMeasurement() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void frc::DifferentialDrivePoseEstimator::AddVisionMeasurement </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classfrc_1_1Pose2d.html">Pose2d</a> &amp;&#160;</td>
+          <td class="paramname"><em>visionRobotPose</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">units::second_t&#160;</td>
+          <td class="paramname"><em>timestamp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, 3 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>visionMeasurementStdDevs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Adds a vision measurement to the Unscented Kalman <a class="el" href="classfrc_1_1Filter.html" title="Interface for filters.">Filter</a>. </p>
+<p>This will correct the odometry pose estimate while still accounting for measurement noise.</p>
+<p>This method can be called as infrequently as you want, as long as you are calling <a class="el" href="classfrc_1_1DifferentialDrivePoseEstimator.html#ae9d9b994b3e0c0f445b3781ae100c904" title="Updates the Unscented Kalman Filter using only wheel encoder information.">Update()</a> every loop.</p>
+<p>Note that the vision measurement standard deviations passed into this method will continue to apply to future measurements until a subsequent call to <a class="el" href="classfrc_1_1DifferentialDrivePoseEstimator.html#a16c47b88fa12c715da87d6bf516dcae3" title="Sets the pose estimator&#39;s trust of global measurements.">SetVisionMeasurementStdDevs()</a> or this method.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">visionRobotPose</td><td>The pose of the robot as measured by the vision camera. </td></tr>
+    <tr><td class="paramname">timestamp</td><td>The timestamp of the vision measurement in seconds. Note that if you don't use your own time source by calling <a class="el" href="classfrc_1_1DifferentialDrivePoseEstimator.html#a3b1c6307abd690dc1babb27fe96014be" title="Updates the Unscented Kalman Filter using only wheel encoder information.">UpdateWithTime()</a>, then you must use a timestamp with an epoch since FPGA startup (i.e. the epoch of this timestamp is the same epoch as <a class="el" href="classfrc2_1_1Timer.html#afe535587db8c1d9d8b3f03703a13282b" title="Return the FPGA system clock time in seconds.">frc2::Timer::GetFPGATimestamp()</a>. This means that you should use <a class="el" href="classfrc2_1_1Timer.html#afe535587db8c1d9d8b3f03703a13282b" title="Return the FPGA system clock time in seconds.">frc2::Timer::GetFPGATimestamp()</a> as your time source in this case. </td></tr>
+    <tr><td class="paramname">visionMeasurementStdDevs</td><td>Standard deviations of the vision measurements. Increase these numbers to trust global measurements from vision less. This matrix is in the form [x, y, theta]^T, with units in meters and radians. </td></tr>
   </table>
   </dd>
 </dl>
@@ -446,7 +504,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1DifferentialDrivePoseEstimator.html">DifferentialDrivePoseEstimator</a></li>
-    <li class="footer">Generated on Thu Mar 4 2021 07:37:41 for WPILibC++ by
+    <li class="footer">Generated on Thu Mar 4 2021 07:40:05 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

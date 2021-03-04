@@ -1,5 +1,8 @@
 var NAVTREEINDEX24 =
 {
+"classwpi_1_1PointerUnion.html#a170b51c0cc701853168d146496a18896":[5,0,7,158,3],
+"classwpi_1_1PointerUnion.html#a1cb3883bc2980b1e1b3becc7573ebc44":[5,0,7,158,15],
+"classwpi_1_1PointerUnion.html#a3294dea770178f7210bb5531f8dd19b5":[5,0,7,158,11],
 "classwpi_1_1PointerUnion.html#a3db09d103afdee6d83a5365fccb6b24a":[5,0,7,158,4],
 "classwpi_1_1PointerUnion.html#a45271ae9b2f638881eac3a14d251a2f2":[5,0,7,158,0],
 "classwpi_1_1PointerUnion.html#a45c2ddb477954048d9613d87d7ee90e4":[5,0,7,158,10],
@@ -246,8 +249,5 @@ var NAVTREEINDEX24 =
 "classwpi_1_1SmallString.html#a5fa82108806b87bebac07c93b89dc180":[5,0,7,214,12],
 "classwpi_1_1SmallString.html#a670894c7ca6dd406b4f34ad4d1031c94":[5,0,7,214,33],
 "classwpi_1_1SmallString.html#a6a3fe6d1e6e86c43e99989f012a942a9":[5,0,7,214,35],
-"classwpi_1_1SmallString.html#a6b4874d030bb6ba792b622f5a80a9090":[5,0,7,214,13],
-"classwpi_1_1SmallString.html#a6da4bc7df227460a77d298b271be1db6":[5,0,7,214,20],
-"classwpi_1_1SmallString.html#a70e51d2696cb1013472a6cb33842b169":[5,0,7,214,36],
-"classwpi_1_1SmallString.html#a725de622fbf989313009e17c3d03f29b":[5,0,7,214,2]
+"classwpi_1_1SmallString.html#a6b4874d030bb6ba792b622f5a80a9090":[5,0,7,214,13]
 };

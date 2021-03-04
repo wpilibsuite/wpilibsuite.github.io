@@ -1,5 +1,8 @@
 var NAVTREEINDEX34 =
 {
+"group__cscore__property__func.html":[3,6,0],
+"group__cscore__raw__cfunc.html":[3,4],
+"group__cscore__shutdown__cfunc.html":[3,5,15],
 "group__cscore__shutdown__func.html":[3,6,14],
 "group__cscore__sink__cfunc.html":[3,5,9],
 "group__cscore__sink__create__cfunc.html":[3,5,8],
@@ -246,8 +249,5 @@ var NAVTREEINDEX34 =
 "group__hal__extensions.html#ga284112bc1976b816b0bb634068bfe936":[3,0,27,5],
 "group__hal__extensions.html#ga3aa76848cec1882598431fe098f3cbbf":[3,0,27,4],
 "group__hal__extensions.html#ga3be855af4d939007bb740cddf45b79ad":[3,0,27,0],
-"group__hal__extensions.html#ga6ce4155f2dd5888c57dafecb43ad299a":[3,0,27,3],
-"group__hal__extensions.html#ga6da0c5ba6c9d8e33b632a6e70126f819":[3,0,27,1],
-"group__hal__extensions.html#gaddbe76c774e63f8df76a20e1878957d3":[3,0,27,2],
-"group__hal__i2c.html":[3,0,26]
+"group__hal__extensions.html#ga6ce4155f2dd5888c57dafecb43ad299a":[3,0,27,3]
 };

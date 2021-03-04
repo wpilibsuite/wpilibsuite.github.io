@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.2.2-33-g1a2680b</span>
+   &#160;<span id="projectnumber">2021.2.2-35-g6812302</span>
    </div>
   </td>
  </tr>
@@ -97,18 +97,19 @@ $(document).ready(function(){initNavTree('classfrc_1_1MecanumDrivePoseEstimator.
 <p>This is the complete list of members for <a class="el" href="classfrc_1_1MecanumDrivePoseEstimator.html">frc::MecanumDrivePoseEstimator</a>, including all inherited members.</p>
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1MecanumDrivePoseEstimator.html#ad561f6f2261695854f797b7851bfe949">AddVisionMeasurement</a>(const Pose2d &amp;visionRobotPose, units::second_t timestamp)</td><td class="entry"><a class="el" href="classfrc_1_1MecanumDrivePoseEstimator.html">frc::MecanumDrivePoseEstimator</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classfrc_1_1MecanumDrivePoseEstimator.html#ab1aa41030fde5363102bba79146747cb">GetEstimatedPosition</a>() const</td><td class="entry"><a class="el" href="classfrc_1_1MecanumDrivePoseEstimator.html">frc::MecanumDrivePoseEstimator</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1MecanumDrivePoseEstimator.html#a1d58ad2d5e0a0d7a1cfcea46583afe40">MecanumDrivePoseEstimator</a>(const Rotation2d &amp;gyroAngle, const Pose2d &amp;initialPose, MecanumDriveKinematics kinematics, const wpi::array&lt; double, 3 &gt; &amp;stateStdDevs, const wpi::array&lt; double, 1 &gt; &amp;localMeasurementStdDevs, const wpi::array&lt; double, 3 &gt; &amp;visionMeasurementStdDevs, units::second_t nominalDt=0.02_s)</td><td class="entry"><a class="el" href="classfrc_1_1MecanumDrivePoseEstimator.html">frc::MecanumDrivePoseEstimator</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classfrc_1_1MecanumDrivePoseEstimator.html#a17b01865794677d966567bd5eb947935">ResetPosition</a>(const Pose2d &amp;pose, const Rotation2d &amp;gyroAngle)</td><td class="entry"><a class="el" href="classfrc_1_1MecanumDrivePoseEstimator.html">frc::MecanumDrivePoseEstimator</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1MecanumDrivePoseEstimator.html#a09d595a66bbb8e8779e204003de430f1">SetVisionMeasurementStdDevs</a>(const wpi::array&lt; double, 3 &gt; &amp;visionMeasurementStdDevs)</td><td class="entry"><a class="el" href="classfrc_1_1MecanumDrivePoseEstimator.html">frc::MecanumDrivePoseEstimator</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classfrc_1_1MecanumDrivePoseEstimator.html#a0f8251909256df2c00a750881ed4aee4">Update</a>(const Rotation2d &amp;gyroAngle, const MecanumDriveWheelSpeeds &amp;wheelSpeeds)</td><td class="entry"><a class="el" href="classfrc_1_1MecanumDrivePoseEstimator.html">frc::MecanumDrivePoseEstimator</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1MecanumDrivePoseEstimator.html#ac44bd596cc67920ca5792203711c1c25">UpdateWithTime</a>(units::second_t currentTime, const Rotation2d &amp;gyroAngle, const MecanumDriveWheelSpeeds &amp;wheelSpeeds)</td><td class="entry"><a class="el" href="classfrc_1_1MecanumDrivePoseEstimator.html">frc::MecanumDrivePoseEstimator</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classfrc_1_1MecanumDrivePoseEstimator.html#a41f151125d9e8e623a67a3b32f943e2d">AddVisionMeasurement</a>(const Pose2d &amp;visionRobotPose, units::second_t timestamp, const wpi::array&lt; double, 3 &gt; &amp;visionMeasurementStdDevs)</td><td class="entry"><a class="el" href="classfrc_1_1MecanumDrivePoseEstimator.html">frc::MecanumDrivePoseEstimator</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1MecanumDrivePoseEstimator.html#ab1aa41030fde5363102bba79146747cb">GetEstimatedPosition</a>() const</td><td class="entry"><a class="el" href="classfrc_1_1MecanumDrivePoseEstimator.html">frc::MecanumDrivePoseEstimator</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classfrc_1_1MecanumDrivePoseEstimator.html#a1d58ad2d5e0a0d7a1cfcea46583afe40">MecanumDrivePoseEstimator</a>(const Rotation2d &amp;gyroAngle, const Pose2d &amp;initialPose, MecanumDriveKinematics kinematics, const wpi::array&lt; double, 3 &gt; &amp;stateStdDevs, const wpi::array&lt; double, 1 &gt; &amp;localMeasurementStdDevs, const wpi::array&lt; double, 3 &gt; &amp;visionMeasurementStdDevs, units::second_t nominalDt=0.02_s)</td><td class="entry"><a class="el" href="classfrc_1_1MecanumDrivePoseEstimator.html">frc::MecanumDrivePoseEstimator</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1MecanumDrivePoseEstimator.html#a17b01865794677d966567bd5eb947935">ResetPosition</a>(const Pose2d &amp;pose, const Rotation2d &amp;gyroAngle)</td><td class="entry"><a class="el" href="classfrc_1_1MecanumDrivePoseEstimator.html">frc::MecanumDrivePoseEstimator</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classfrc_1_1MecanumDrivePoseEstimator.html#a09d595a66bbb8e8779e204003de430f1">SetVisionMeasurementStdDevs</a>(const wpi::array&lt; double, 3 &gt; &amp;visionMeasurementStdDevs)</td><td class="entry"><a class="el" href="classfrc_1_1MecanumDrivePoseEstimator.html">frc::MecanumDrivePoseEstimator</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1MecanumDrivePoseEstimator.html#a0f8251909256df2c00a750881ed4aee4">Update</a>(const Rotation2d &amp;gyroAngle, const MecanumDriveWheelSpeeds &amp;wheelSpeeds)</td><td class="entry"><a class="el" href="classfrc_1_1MecanumDrivePoseEstimator.html">frc::MecanumDrivePoseEstimator</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classfrc_1_1MecanumDrivePoseEstimator.html#ac44bd596cc67920ca5792203711c1c25">UpdateWithTime</a>(units::second_t currentTime, const Rotation2d &amp;gyroAngle, const MecanumDriveWheelSpeeds &amp;wheelSpeeds)</td><td class="entry"><a class="el" href="classfrc_1_1MecanumDrivePoseEstimator.html">frc::MecanumDrivePoseEstimator</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Mar 4 2021 07:37:41 for WPILibC++ by
+    <li class="footer">Generated on Thu Mar 4 2021 07:40:05 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

@@ -1,5 +1,7 @@
 var NAVTREEINDEX12 =
 {
+"classfrc_1_1PWM.html#af51f341c3a92c805d742589fae0513c6":[5,0,2,130,3],
+"classfrc_1_1PWM.html#af6de729862736e52227664018a3a4ebe":[5,0,2,130,10],
 "classfrc_1_1PWMSparkMax.html":[5,0,2,131],
 "classfrc_1_1PWMSparkMax.html#a18d5d76ffcd3593dea33a67751694162":[5,0,2,131,2],
 "classfrc_1_1PWMSparkMax.html#ac54476cb81465ea7565e836b181a7ec4":[5,0,2,131,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX12 =
 "classfrc_1_1RobotController.html#aeb594692d2cbedfa03ee5c3dc93aec6c":[5,0,2,144,5],
 "classfrc_1_1RobotController.html#aec16c910e71082e60486c23061dbfadb":[5,0,2,144,4],
 "classfrc_1_1RobotController.html#afd09dd41cc6a49b7de04c3af063b23ba":[5,0,2,144,15],
-"classfrc_1_1RobotDrive.html":[5,0,2,145],
-"classfrc_1_1RobotDrive.html#a0b785c8bc3114855bf477f242e735de0":[5,0,2,145,25],
-"classfrc_1_1RobotDrive.html#a23b50aa85d2bb85c0a211f4ebeea9b7e":[5,0,2,145,30]
+"classfrc_1_1RobotDrive.html":[5,0,2,145]
 };
