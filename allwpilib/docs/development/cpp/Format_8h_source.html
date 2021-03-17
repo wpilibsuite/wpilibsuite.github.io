@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.2.2-43-g2e07902</span>
+   &#160;<span id="projectnumber">2021.2.2-44-g1032c9b</span>
    </div>
   </td>
  </tr>
@@ -180,7 +180,7 @@ $(document).ready(function(){initNavTree('Format_8h_source.html',''); initResiza
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordtype">int</span> snprint_tuple(<span class="keywordtype">char</span> *Buffer, <span class="keywordtype">unsigned</span> BufferSize,</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                    std::index_sequence&lt;Is...&gt;)<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#ifdef _MSC_VER</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">return</span> _snprintf_s(Buffer, BufferSize, BufferSize, Fmt, std::get&lt;Is&gt;(Vals)...);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">return</span> _snprintf(Buffer, BufferSize, Fmt, std::get&lt;Is&gt;(Vals)...);</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#ifdef __GNUC__</span></div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#pragma GCC diagnostic push</span></div>
@@ -328,7 +328,7 @@ $(document).ready(function(){initNavTree('Format_8h_source.html',''); initResiza
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><b>Format.h</b></li>
-    <li class="footer">Generated on Sat Mar 13 2021 00:56:29 for WPILibC++ by
+    <li class="footer">Generated on Wed Mar 17 2021 05:06:42 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>
