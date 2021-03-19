@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.2.2-44-g1032c9b</span>
+   &#160;<span id="projectnumber">2021.2.2-45-gc3a8bdc</span>
    </div>
   </td>
  </tr>
@@ -725,7 +725,7 @@ $(document).ready(function(){initNavTree('SmallVector_8h_source.html',''); initR
 <div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;    <span class="keywordflow">return</span> !(*<span class="keyword">this</span> == RHS);</div>
 <div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;  }</div>
 <div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160; </div>
-<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;  <span class="keywordtype">bool</span> operator&lt;(<span class="keyword">const</span> SmallVectorImpl &amp;RHS)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="namespacewpi_1_1detail.html#ae0ba1341aee62171fc05eed5b2d973f2">operator&lt;</a>(<span class="keyword">const</span> SmallVectorImpl &amp;RHS)<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;    <span class="keywordflow">return</span> std::lexicographical_compare(this-&gt;begin(), this-&gt;end(),</div>
 <div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;                                        RHS.begin(), RHS.end());</div>
 <div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;  }</div>
@@ -995,6 +995,7 @@ $(document).ready(function(){initNavTree('SmallVector_8h_source.html',''); initR
 <div class="ttc" id="aclasswpi_1_1iterator__range_html"><div class="ttname"><a href="classwpi_1_1iterator__range.html">wpi::iterator_range</a></div><div class="ttdoc">A range adaptor for a pair of iterators.</div><div class="ttdef"><b>Definition:</b> iterator_range.h:32</div></div>
 <div class="ttc" id="aMemAlloc_8h_html"><div class="ttname"><a href="MemAlloc_8h.html">MemAlloc.h</a></div></div>
 <div class="ttc" id="aclasswpi_1_1SmallVectorTemplateCommon_html_a407d9019bf8ff07d493b57e89924ebb0"><div class="ttname"><a href="classwpi_1_1SmallVectorTemplateCommon.html#a407d9019bf8ff07d493b57e89924ebb0">wpi::SmallVectorTemplateCommon::data</a></div><div class="ttdeci">pointer data()</div><div class="ttdoc">Return a pointer to the vector's buffer, even if empty().</div><div class="ttdef"><b>Definition:</b> SmallVector.h:158</div></div>
+<div class="ttc" id="anamespacewpi_1_1detail_html_ae0ba1341aee62171fc05eed5b2d973f2"><div class="ttname"><a href="namespacewpi_1_1detail.html#ae0ba1341aee62171fc05eed5b2d973f2">wpi::detail::operator&lt;</a></div><div class="ttdeci">bool operator&lt;(const value_t lhs, const value_t rhs) noexcept</div><div class="ttdoc">comparison operator for JSON types</div><div class="ttdef"><b>Definition:</b> json.h:724</div></div>
 <div class="ttc" id="aclasswpi_1_1SmallVectorBase_html"><div class="ttname"><a href="classwpi_1_1SmallVectorBase.html">wpi::SmallVectorBase</a></div><div class="ttdoc">This is all the non-templated stuff common to all SmallVectors.</div><div class="ttdef"><b>Definition:</b> SmallVector.h:46</div></div>
 <div class="ttc" id="aclasswpi_1_1SmallVectorTemplateCommon_html_a40139f0869af5595338d800d5a428396"><div class="ttname"><a href="classwpi_1_1SmallVectorTemplateCommon.html#a40139f0869af5595338d800d5a428396">wpi::SmallVectorTemplateCommon::data</a></div><div class="ttdeci">const_pointer data() const</div><div class="ttdoc">Return a pointer to the vector's buffer, even if empty().</div><div class="ttdef"><b>Definition:</b> SmallVector.h:160</div></div>
 <div class="ttc" id="aclasswpi_1_1SmallVectorTemplateBase_html"><div class="ttname"><a href="classwpi_1_1SmallVectorTemplateBase.html">wpi::SmallVectorTemplateBase</a></div><div class="ttdoc">SmallVectorTemplateBase&lt;isPodLike = false&gt; - This is where we put method implementations that are des...</div><div class="ttdef"><b>Definition:</b> SmallVector.h:195</div></div>
@@ -1013,7 +1014,7 @@ $(document).ready(function(){initNavTree('SmallVector_8h_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><b>SmallVector.h</b></li>
-    <li class="footer">Generated on Wed Mar 17 2021 05:06:43 for WPILibC++ by
+    <li class="footer">Generated on Fri Mar 19 2021 16:01:45 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

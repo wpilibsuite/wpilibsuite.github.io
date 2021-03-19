@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.2.2-44-g1032c9b</span>
+   &#160;<span id="projectnumber">2021.2.2-45-gc3a8bdc</span>
    </div>
   </td>
  </tr>
@@ -746,16 +746,6 @@ Enumerations</h2></td></tr>
 <b>kFallingPulse</b> = 3
  }</td></tr>
 <tr class="separator:a76b4c6f0018b90c1ef0089c6ab4e1e84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7150d1b34eeaf4d5ef8b480a7f25afe1"><td class="memItemLeft" align="right" valign="top"><a id="a7150d1b34eeaf4d5ef8b480a7f25afe1"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>ShuffleboardEventImportance</b> { <br />
-&#160;&#160;<b>kTrivial</b>, 
-<b>kLow</b>, 
-<b>kNormal</b>, 
-<b>kHigh</b>, 
-<br />
-&#160;&#160;<b>kCritical</b>
-<br />
- }</td></tr>
-<tr class="separator:a7150d1b34eeaf4d5ef8b480a7f25afe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa813b05ca027557d06e5af4dea5959a7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#aa813b05ca027557d06e5af4dea5959a7">BuiltInWidgets</a> { <br />
 &#160;&#160;<a class="el" href="namespacefrc.html#aa813b05ca027557d06e5af4dea5959a7a2d0de88376435407ae2a0bfb0ddecbe8">BuiltInWidgets::kTextView</a>, 
 <a class="el" href="namespacefrc.html#aa813b05ca027557d06e5af4dea5959a7ad8f433eb6fa56a5340c6777e7ccef721">BuiltInWidgets::kNumberSlider</a>, 
@@ -790,6 +780,16 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:aa813b05ca027557d06e5af4dea5959a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The types of the widgets bundled with Shuffleboard.  <a href="namespacefrc.html#aa813b05ca027557d06e5af4dea5959a7">More...</a><br /></td></tr>
 <tr class="separator:aa813b05ca027557d06e5af4dea5959a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7150d1b34eeaf4d5ef8b480a7f25afe1"><td class="memItemLeft" align="right" valign="top"><a id="a7150d1b34eeaf4d5ef8b480a7f25afe1"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>ShuffleboardEventImportance</b> { <br />
+&#160;&#160;<b>kTrivial</b>, 
+<b>kLow</b>, 
+<b>kNormal</b>, 
+<b>kHigh</b>, 
+<br />
+&#160;&#160;<b>kCritical</b>
+<br />
+ }</td></tr>
+<tr class="separator:a7150d1b34eeaf4d5ef8b480a7f25afe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3dfa3f031ab695031e54042c1bf44472"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a3dfa3f031ab695031e54042c1bf44472">BuiltInLayouts</a> { <a class="el" href="namespacefrc.html#a3dfa3f031ab695031e54042c1bf44472af2017436709c101800e7fe65bff7fe27">BuiltInLayouts::kList</a>, 
 <a class="el" href="namespacefrc.html#a3dfa3f031ab695031e54042c1bf44472aef22950f87352c1654b4b527212a3be7">BuiltInLayouts::kGrid</a>
  }</td></tr>
@@ -801,10 +801,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a3a2afc641d8a5cbafdde2e5e15a0f272"><td class="memItemLeft" align="right" valign="top"><a id="a3a2afc641d8a5cbafdde2e5e15a0f272"></a>
 <a class="el" href="classfrc_1_1CameraServerShared.html">CameraServerShared</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetCameraServerShared</b> ()</td></tr>
 <tr class="separator:a3a2afc641d8a5cbafdde2e5e15a0f272"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87ce4ca979366ae46ffa1316cae50bb7"><td class="memTemplParams" colspan="2">template&lt;int States, int CovDim&gt; </td></tr>
-<tr class="memitem:a87ce4ca979366ae46ffa1316cae50bb7"><td class="memTemplItemLeft" align="right" valign="top">std::tuple&lt; Eigen::Matrix&lt; double, CovDim, 1 &gt;, Eigen::Matrix&lt; double, CovDim, CovDim &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a87ce4ca979366ae46ffa1316cae50bb7">UnscentedTransform</a> (const Eigen::Matrix&lt; double, CovDim, 2 *States+1 &gt; &amp;sigmas, const Eigen::Matrix&lt; double, 2 *States+1, 1 &gt; &amp;Wm, const Eigen::Matrix&lt; double, 2 *States+1, 1 &gt; &amp;Wc, std::function&lt; Eigen::Matrix&lt; double, CovDim, 1 &gt;(const Eigen::Matrix&lt; double, CovDim, 2 *States+1 &gt; &amp;, const Eigen::Matrix&lt; double, 2 *States+1, 1 &gt; &amp;)&gt; meanFunc, std::function&lt; Eigen::Matrix&lt; double, CovDim, 1 &gt;(const Eigen::Matrix&lt; double, CovDim, 1 &gt; &amp;, const Eigen::Matrix&lt; double, CovDim, 1 &gt; &amp;)&gt; residualFunc)</td></tr>
-<tr class="memdesc:a87ce4ca979366ae46ffa1316cae50bb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes unscented transform of a set of sigma points and weights.  <a href="namespacefrc.html#a87ce4ca979366ae46ffa1316cae50bb7">More...</a><br /></td></tr>
-<tr class="separator:a87ce4ca979366ae46ffa1316cae50bb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac11e2e1a8ea8ca146068546af83b9ef5"><td class="memTemplParams" colspan="2">template&lt;int States&gt; </td></tr>
 <tr class="memitem:ac11e2e1a8ea8ca146068546af83b9ef5"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Matrix&lt; double, States, 1 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ac11e2e1a8ea8ca146068546af83b9ef5">AngleResidual</a> (const Eigen::Matrix&lt; double, States, 1 &gt; &amp;a, const Eigen::Matrix&lt; double, States, 1 &gt; &amp;b, int angleStateIdx)</td></tr>
 <tr class="memdesc:ac11e2e1a8ea8ca146068546af83b9ef5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtracts a and b while normalizing the resulting value in the selected row as if it were an angle.  <a href="namespacefrc.html#ac11e2e1a8ea8ca146068546af83b9ef5">More...</a><br /></td></tr>
@@ -829,19 +825,74 @@ Functions</h2></td></tr>
 <tr class="memitem:a3979cb04f11eb6fa34f8dd3f301ef605"><td class="memTemplItemLeft" align="right" valign="top">std::function&lt; Eigen::Matrix&lt; double, CovDim, 1 &gt; const Eigen::Matrix&lt; double, CovDim, 2 *States+1 &gt; &amp;, const Eigen::Matrix&lt; double, 2 *States+1, 1 &gt; &amp;)&gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a3979cb04f11eb6fa34f8dd3f301ef605">AngleMean</a> (int angleStateIdx)</td></tr>
 <tr class="memdesc:a3979cb04f11eb6fa34f8dd3f301ef605"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a function that computes the mean of sigmas with the weights Wm while computing a special angle mean for a select row.  <a href="namespacefrc.html#a3979cb04f11eb6fa34f8dd3f301ef605">More...</a><br /></td></tr>
 <tr class="separator:a3979cb04f11eb6fa34f8dd3f301ef605"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87ce4ca979366ae46ffa1316cae50bb7"><td class="memTemplParams" colspan="2">template&lt;int States, int CovDim&gt; </td></tr>
+<tr class="memitem:a87ce4ca979366ae46ffa1316cae50bb7"><td class="memTemplItemLeft" align="right" valign="top">std::tuple&lt; Eigen::Matrix&lt; double, CovDim, 1 &gt;, Eigen::Matrix&lt; double, CovDim, CovDim &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a87ce4ca979366ae46ffa1316cae50bb7">UnscentedTransform</a> (const Eigen::Matrix&lt; double, CovDim, 2 *States+1 &gt; &amp;sigmas, const Eigen::Matrix&lt; double, 2 *States+1, 1 &gt; &amp;Wm, const Eigen::Matrix&lt; double, 2 *States+1, 1 &gt; &amp;Wc, std::function&lt; Eigen::Matrix&lt; double, CovDim, 1 &gt;(const Eigen::Matrix&lt; double, CovDim, 2 *States+1 &gt; &amp;, const Eigen::Matrix&lt; double, 2 *States+1, 1 &gt; &amp;)&gt; meanFunc, std::function&lt; Eigen::Matrix&lt; double, CovDim, 1 &gt;(const Eigen::Matrix&lt; double, CovDim, 1 &gt; &amp;, const Eigen::Matrix&lt; double, CovDim, 1 &gt; &amp;)&gt; residualFunc)</td></tr>
+<tr class="memdesc:a87ce4ca979366ae46ffa1316cae50bb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes unscented transform of a set of sigma points and weights.  <a href="namespacefrc.html#a87ce4ca979366ae46ffa1316cae50bb7">More...</a><br /></td></tr>
+<tr class="separator:a87ce4ca979366ae46ffa1316cae50bb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbcc27ca7c9f88e13d7c4da520d4a6cb"><td class="memTemplParams" colspan="2">template&lt;int States&gt; </td></tr>
+<tr class="memitem:acbcc27ca7c9f88e13d7c4da520d4a6cb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#acbcc27ca7c9f88e13d7c4da520d4a6cb">DiscretizeA</a> (const Eigen::Matrix&lt; double, States, States &gt; &amp;contA, units::second_t dt, Eigen::Matrix&lt; double, States, States &gt; *discA)</td></tr>
+<tr class="memdesc:acbcc27ca7c9f88e13d7c4da520d4a6cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discretizes the given continuous A matrix.  <a href="namespacefrc.html#acbcc27ca7c9f88e13d7c4da520d4a6cb">More...</a><br /></td></tr>
+<tr class="separator:acbcc27ca7c9f88e13d7c4da520d4a6cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0e1ca87aa1e11ff912712afe34f8803"><td class="memTemplParams" colspan="2">template&lt;int States, int Inputs&gt; </td></tr>
+<tr class="memitem:ab0e1ca87aa1e11ff912712afe34f8803"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ab0e1ca87aa1e11ff912712afe34f8803">DiscretizeAB</a> (const Eigen::Matrix&lt; double, States, States &gt; &amp;contA, const Eigen::Matrix&lt; double, States, Inputs &gt; &amp;contB, units::second_t dt, Eigen::Matrix&lt; double, States, States &gt; *discA, Eigen::Matrix&lt; double, States, Inputs &gt; *discB)</td></tr>
+<tr class="memdesc:ab0e1ca87aa1e11ff912712afe34f8803"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discretizes the given continuous A and B matrices.  <a href="namespacefrc.html#ab0e1ca87aa1e11ff912712afe34f8803">More...</a><br /></td></tr>
+<tr class="separator:ab0e1ca87aa1e11ff912712afe34f8803"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f7a16592525baf3b04f68f7b308a153"><td class="memTemplParams" colspan="2">template&lt;int States&gt; </td></tr>
+<tr class="memitem:a0f7a16592525baf3b04f68f7b308a153"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a0f7a16592525baf3b04f68f7b308a153">DiscretizeAQ</a> (const Eigen::Matrix&lt; double, States, States &gt; &amp;contA, const Eigen::Matrix&lt; double, States, States &gt; &amp;contQ, units::second_t dt, Eigen::Matrix&lt; double, States, States &gt; *discA, Eigen::Matrix&lt; double, States, States &gt; *discQ)</td></tr>
+<tr class="memdesc:a0f7a16592525baf3b04f68f7b308a153"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discretizes the given continuous A and Q matrices.  <a href="namespacefrc.html#a0f7a16592525baf3b04f68f7b308a153">More...</a><br /></td></tr>
+<tr class="separator:a0f7a16592525baf3b04f68f7b308a153"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21e6884091fc969f4d10fd01c1b26857"><td class="memTemplParams" colspan="2">template&lt;int States&gt; </td></tr>
+<tr class="memitem:a21e6884091fc969f4d10fd01c1b26857"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a21e6884091fc969f4d10fd01c1b26857">DiscretizeAQTaylor</a> (const Eigen::Matrix&lt; double, States, States &gt; &amp;contA, const Eigen::Matrix&lt; double, States, States &gt; &amp;contQ, units::second_t dt, Eigen::Matrix&lt; double, States, States &gt; *discA, Eigen::Matrix&lt; double, States, States &gt; *discQ)</td></tr>
+<tr class="memdesc:a21e6884091fc969f4d10fd01c1b26857"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discretizes the given continuous A and Q matrices.  <a href="namespacefrc.html#a21e6884091fc969f4d10fd01c1b26857">More...</a><br /></td></tr>
+<tr class="separator:a21e6884091fc969f4d10fd01c1b26857"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af123172a8aa7b011d75963988ce2a800"><td class="memTemplParams" colspan="2">template&lt;int Outputs&gt; </td></tr>
+<tr class="memitem:af123172a8aa7b011d75963988ce2a800"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Matrix&lt; double, Outputs, Outputs &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#af123172a8aa7b011d75963988ce2a800">DiscretizeR</a> (const Eigen::Matrix&lt; double, Outputs, Outputs &gt; &amp;R, units::second_t dt)</td></tr>
+<tr class="memdesc:af123172a8aa7b011d75963988ce2a800"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a discretized version of the provided continuous measurement noise covariance matrix.  <a href="namespacefrc.html#af123172a8aa7b011d75963988ce2a800">More...</a><br /></td></tr>
+<tr class="separator:af123172a8aa7b011d75963988ce2a800"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c68fe32c5c08f1ae28571767df3dff3"><td class="memTemplParams" colspan="2">template&lt;int Rows, int Cols, typename F &gt; </td></tr>
+<tr class="memitem:a3c68fe32c5c08f1ae28571767df3dff3"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a3c68fe32c5c08f1ae28571767df3dff3">NumericalJacobian</a> (F &amp;&amp;f, const Eigen::Matrix&lt; double, Cols, 1 &gt; &amp;x)</td></tr>
+<tr class="memdesc:a3c68fe32c5c08f1ae28571767df3dff3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns numerical Jacobian with respect to x for f(x).  <a href="namespacefrc.html#a3c68fe32c5c08f1ae28571767df3dff3">More...</a><br /></td></tr>
+<tr class="separator:a3c68fe32c5c08f1ae28571767df3dff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2fa623b84713efc1ded4a40d059d143"><td class="memTemplParams" colspan="2">template&lt;int Rows, int States, int Inputs, typename F , typename... Args&gt; </td></tr>
+<tr class="memitem:af2fa623b84713efc1ded4a40d059d143"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#af2fa623b84713efc1ded4a40d059d143">NumericalJacobianX</a> (F &amp;&amp;f, const Eigen::Matrix&lt; double, States, 1 &gt; &amp;x, const Eigen::Matrix&lt; double, Inputs, 1 &gt; &amp;u, Args &amp;&amp;... args)</td></tr>
+<tr class="memdesc:af2fa623b84713efc1ded4a40d059d143"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns numerical Jacobian with respect to x for f(x, u, ...).  <a href="namespacefrc.html#af2fa623b84713efc1ded4a40d059d143">More...</a><br /></td></tr>
+<tr class="separator:af2fa623b84713efc1ded4a40d059d143"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2db1f99cc14e6b233f29ab13f11ef66a"><td class="memTemplParams" colspan="2">template&lt;int Rows, int States, int Inputs, typename F , typename... Args&gt; </td></tr>
+<tr class="memitem:a2db1f99cc14e6b233f29ab13f11ef66a"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a2db1f99cc14e6b233f29ab13f11ef66a">NumericalJacobianU</a> (F &amp;&amp;f, const Eigen::Matrix&lt; double, States, 1 &gt; &amp;x, const Eigen::Matrix&lt; double, Inputs, 1 &gt; &amp;u, Args &amp;&amp;... args)</td></tr>
+<tr class="memdesc:a2db1f99cc14e6b233f29ab13f11ef66a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns numerical Jacobian with respect to u for f(x, u, ...).  <a href="namespacefrc.html#a2db1f99cc14e6b233f29ab13f11ef66a">More...</a><br /></td></tr>
+<tr class="separator:a2db1f99cc14e6b233f29ab13f11ef66a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a362829981d16ca01c86bb52d3df6118b"><td class="memTemplParams" colspan="2">template&lt;typename F , typename T &gt; </td></tr>
+<tr class="memitem:a362829981d16ca01c86bb52d3df6118b"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a362829981d16ca01c86bb52d3df6118b">RK4</a> (F &amp;&amp;f, T x, units::second_t dt)</td></tr>
+<tr class="memdesc:a362829981d16ca01c86bb52d3df6118b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs 4th order Runge-Kutta integration of dx/dt = f(x) for dt.  <a href="namespacefrc.html#a362829981d16ca01c86bb52d3df6118b">More...</a><br /></td></tr>
+<tr class="separator:a362829981d16ca01c86bb52d3df6118b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad21158d15addd3e6ec5c8b16b4a4c40c"><td class="memTemplParams" colspan="2">template&lt;typename F , typename T , typename U &gt; </td></tr>
+<tr class="memitem:ad21158d15addd3e6ec5c8b16b4a4c40c"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ad21158d15addd3e6ec5c8b16b4a4c40c">RK4</a> (F &amp;&amp;f, T x, U u, units::second_t dt)</td></tr>
+<tr class="memdesc:ad21158d15addd3e6ec5c8b16b4a4c40c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs 4th order Runge-Kutta integration of dx/dt = f(x, u) for dt.  <a href="namespacefrc.html#ad21158d15addd3e6ec5c8b16b4a4c40c">More...</a><br /></td></tr>
+<tr class="separator:ad21158d15addd3e6ec5c8b16b4a4c40c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a425ade41a4f9d2e4bb0618915c9937d4"><td class="memTemplParams" colspan="2">template&lt;typename F , typename T &gt; </td></tr>
+<tr class="memitem:a425ade41a4f9d2e4bb0618915c9937d4"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a425ade41a4f9d2e4bb0618915c9937d4">RungeKuttaTimeVarying</a> (F &amp;&amp;f, T x, units::second_t t, units::second_t dt)</td></tr>
+<tr class="memdesc:a425ade41a4f9d2e4bb0618915c9937d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs 4th order Runge-Kutta integration of dx/dt = f(t, x) for dt.  <a href="namespacefrc.html#a425ade41a4f9d2e4bb0618915c9937d4">More...</a><br /></td></tr>
+<tr class="separator:a425ade41a4f9d2e4bb0618915c9937d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1caaafb9e828af9aa8b55e7dfb99b5a"><td class="memTemplParams" colspan="2"><a id="ac1caaafb9e828af9aa8b55e7dfb99b5a"></a>
+template&lt;typename F , typename T , typename U &gt; </td></tr>
+<tr class="memitem:ac1caaafb9e828af9aa8b55e7dfb99b5a"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><b>RKF45Impl</b> (F &amp;&amp;f, T x, U u, double &amp;h, double maxTruncationError, double dtRemaining)</td></tr>
+<tr class="separator:ac1caaafb9e828af9aa8b55e7dfb99b5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1825219cb68950f7b141fabc3fd0904b"><td class="memTemplParams" colspan="2">template&lt;typename F , typename T , typename U &gt; </td></tr>
+<tr class="memitem:a1825219cb68950f7b141fabc3fd0904b"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a1825219cb68950f7b141fabc3fd0904b">RKF45</a> (F &amp;&amp;f, T x, U u, units::second_t dt, double maxError=1e-6)</td></tr>
+<tr class="memdesc:a1825219cb68950f7b141fabc3fd0904b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs adaptive RKF45 integration of dx/dt = f(x, u) for dt, as described in <a href="https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta%E2%80%93Fehlberg_method">https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta%E2%80%93Fehlberg_method</a>.  <a href="namespacefrc.html#a1825219cb68950f7b141fabc3fd0904b">More...</a><br /></td></tr>
+<tr class="separator:a1825219cb68950f7b141fabc3fd0904b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02df1da63fa9177c21fa970fb4e8d8b7"><td class="memItemLeft" align="right" valign="top"><a id="a02df1da63fa9177c21fa970fb4e8d8b7"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>to_json</b> (<a class="el" href="classwpi_1_1json.html">wpi::json</a> &amp;json, const <a class="el" href="structfrc_1_1Trajectory_1_1State.html">Trajectory::State</a> &amp;state)</td></tr>
 <tr class="separator:a02df1da63fa9177c21fa970fb4e8d8b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5d5470f8f7c882f55220e26439d8816"><td class="memItemLeft" align="right" valign="top"><a id="ab5d5470f8f7c882f55220e26439d8816"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>from_json</b> (const <a class="el" href="classwpi_1_1json.html">wpi::json</a> &amp;json, <a class="el" href="structfrc_1_1Trajectory_1_1State.html">Trajectory::State</a> &amp;state)</td></tr>
 <tr class="separator:ab5d5470f8f7c882f55220e26439d8816"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa026a3c3f3053fcafb58c6be2fa589fa"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:aa026a3c3f3053fcafb58c6be2fa589fa"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#aa026a3c3f3053fcafb58c6be2fa589fa">InputModulus</a> (T input, T minimumInput, T maximumInput)</td></tr>
-<tr class="memdesc:aa026a3c3f3053fcafb58c6be2fa589fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns modulus of input.  <a href="namespacefrc.html#aa026a3c3f3053fcafb58c6be2fa589fa">More...</a><br /></td></tr>
-<tr class="separator:aa026a3c3f3053fcafb58c6be2fa589fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42e1ee7c08ceffcf70e362e24988833d"><td class="memItemLeft" align="right" valign="top">constexpr units::radian_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a42e1ee7c08ceffcf70e362e24988833d">AngleModulus</a> (units::radian_t angle)</td></tr>
-<tr class="memdesc:a42e1ee7c08ceffcf70e362e24988833d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wraps an angle to the range -pi to pi radians (-180 to 180 degrees).  <a href="namespacefrc.html#a42e1ee7c08ceffcf70e362e24988833d">More...</a><br /></td></tr>
-<tr class="separator:a42e1ee7c08ceffcf70e362e24988833d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30e4272be62fc5da02fb5e848f4ca5ed"><td class="memItemLeft" align="right" valign="top"><a id="a30e4272be62fc5da02fb5e848f4ca5ed"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>to_json</b> (<a class="el" href="classwpi_1_1json.html">wpi::json</a> &amp;json, const <a class="el" href="classfrc_1_1Translation2d.html">Translation2d</a> &amp;state)</td></tr>
+<tr class="separator:a30e4272be62fc5da02fb5e848f4ca5ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc629ca8c0aaeba2ecfa9522a1409d48"><td class="memItemLeft" align="right" valign="top"><a id="acc629ca8c0aaeba2ecfa9522a1409d48"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>from_json</b> (const <a class="el" href="classwpi_1_1json.html">wpi::json</a> &amp;json, <a class="el" href="classfrc_1_1Translation2d.html">Translation2d</a> &amp;state)</td></tr>
+<tr class="separator:acc629ca8c0aaeba2ecfa9522a1409d48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8daafaa315db2abaca44492a84cff475"><td class="memItemLeft" align="right" valign="top"><a id="a8daafaa315db2abaca44492a84cff475"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>to_json</b> (<a class="el" href="classwpi_1_1json.html">wpi::json</a> &amp;json, const <a class="el" href="classfrc_1_1Rotation2d.html">Rotation2d</a> &amp;rotation)</td></tr>
 <tr class="separator:a8daafaa315db2abaca44492a84cff475"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -854,12 +905,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>to_json</b> (<a class
 <tr class="memitem:a468fe03672fe161d14e21fa4d13e4954"><td class="memItemLeft" align="right" valign="top"><a id="a468fe03672fe161d14e21fa4d13e4954"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>from_json</b> (const <a class="el" href="classwpi_1_1json.html">wpi::json</a> &amp;json, <a class="el" href="classfrc_1_1Pose2d.html">Pose2d</a> &amp;pose)</td></tr>
 <tr class="separator:a468fe03672fe161d14e21fa4d13e4954"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30e4272be62fc5da02fb5e848f4ca5ed"><td class="memItemLeft" align="right" valign="top"><a id="a30e4272be62fc5da02fb5e848f4ca5ed"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>to_json</b> (<a class="el" href="classwpi_1_1json.html">wpi::json</a> &amp;json, const <a class="el" href="classfrc_1_1Translation2d.html">Translation2d</a> &amp;state)</td></tr>
-<tr class="separator:a30e4272be62fc5da02fb5e848f4ca5ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc629ca8c0aaeba2ecfa9522a1409d48"><td class="memItemLeft" align="right" valign="top"><a id="acc629ca8c0aaeba2ecfa9522a1409d48"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>from_json</b> (const <a class="el" href="classwpi_1_1json.html">wpi::json</a> &amp;json, <a class="el" href="classfrc_1_1Translation2d.html">Translation2d</a> &amp;state)</td></tr>
-<tr class="separator:acc629ca8c0aaeba2ecfa9522a1409d48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa026a3c3f3053fcafb58c6be2fa589fa"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aa026a3c3f3053fcafb58c6be2fa589fa"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#aa026a3c3f3053fcafb58c6be2fa589fa">InputModulus</a> (T input, T minimumInput, T maximumInput)</td></tr>
+<tr class="memdesc:aa026a3c3f3053fcafb58c6be2fa589fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns modulus of input.  <a href="namespacefrc.html#aa026a3c3f3053fcafb58c6be2fa589fa">More...</a><br /></td></tr>
+<tr class="separator:aa026a3c3f3053fcafb58c6be2fa589fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42e1ee7c08ceffcf70e362e24988833d"><td class="memItemLeft" align="right" valign="top">constexpr units::radian_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a42e1ee7c08ceffcf70e362e24988833d">AngleModulus</a> (units::radian_t angle)</td></tr>
+<tr class="memdesc:a42e1ee7c08ceffcf70e362e24988833d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wraps an angle to the range -pi to pi radians (-180 to 180 degrees).  <a href="namespacefrc.html#a42e1ee7c08ceffcf70e362e24988833d">More...</a><br /></td></tr>
+<tr class="separator:a42e1ee7c08ceffcf70e362e24988833d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42a7f1c2bef6d2daeddbc1a07a3f24ca"><td class="memTemplParams" colspan="2">template&lt;int Rows, int Cols, typename... Ts, typename  = std::enable_if_t&lt;std::conjunction_v&lt;std::is_same&lt;double, Ts&gt;...&gt;&gt;&gt; </td></tr>
 <tr class="memitem:a42a7f1c2bef6d2daeddbc1a07a3f24ca"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Matrix&lt; double, Rows, Cols &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a42a7f1c2bef6d2daeddbc1a07a3f24ca">MakeMatrix</a> (Ts... elems)</td></tr>
 <tr class="memdesc:a42a7f1c2bef6d2daeddbc1a07a3f24ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a matrix from the given list of elements.  <a href="namespacefrc.html#a42a7f1c2bef6d2daeddbc1a07a3f24ca">More...</a><br /></td></tr>
@@ -921,64 +973,19 @@ template&lt;&gt; </td></tr>
 template&lt;class... Wheels&gt; </td></tr>
 <tr class="memitem:acf032b8adc55f3de1e6828f68f86b409"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SwerveDriveKinematics</b> (<a class="el" href="classfrc_1_1Translation2d.html">Translation2d</a>, Wheels...) -&gt; <a class="el" href="classfrc_1_1SwerveDriveKinematics.html">SwerveDriveKinematics</a>&lt; 1+sizeof...(Wheels)&gt;</td></tr>
 <tr class="separator:acf032b8adc55f3de1e6828f68f86b409"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a362829981d16ca01c86bb52d3df6118b"><td class="memTemplParams" colspan="2">template&lt;typename F , typename T &gt; </td></tr>
-<tr class="memitem:a362829981d16ca01c86bb52d3df6118b"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a362829981d16ca01c86bb52d3df6118b">RK4</a> (F &amp;&amp;f, T x, units::second_t dt)</td></tr>
-<tr class="memdesc:a362829981d16ca01c86bb52d3df6118b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs 4th order Runge-Kutta integration of dx/dt = f(x) for dt.  <a href="namespacefrc.html#a362829981d16ca01c86bb52d3df6118b">More...</a><br /></td></tr>
-<tr class="separator:a362829981d16ca01c86bb52d3df6118b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad21158d15addd3e6ec5c8b16b4a4c40c"><td class="memTemplParams" colspan="2">template&lt;typename F , typename T , typename U &gt; </td></tr>
-<tr class="memitem:ad21158d15addd3e6ec5c8b16b4a4c40c"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ad21158d15addd3e6ec5c8b16b4a4c40c">RK4</a> (F &amp;&amp;f, T x, U u, units::second_t dt)</td></tr>
-<tr class="memdesc:ad21158d15addd3e6ec5c8b16b4a4c40c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs 4th order Runge-Kutta integration of dx/dt = f(x, u) for dt.  <a href="namespacefrc.html#ad21158d15addd3e6ec5c8b16b4a4c40c">More...</a><br /></td></tr>
-<tr class="separator:ad21158d15addd3e6ec5c8b16b4a4c40c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a425ade41a4f9d2e4bb0618915c9937d4"><td class="memTemplParams" colspan="2">template&lt;typename F , typename T &gt; </td></tr>
-<tr class="memitem:a425ade41a4f9d2e4bb0618915c9937d4"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a425ade41a4f9d2e4bb0618915c9937d4">RungeKuttaTimeVarying</a> (F &amp;&amp;f, T x, units::second_t t, units::second_t dt)</td></tr>
-<tr class="memdesc:a425ade41a4f9d2e4bb0618915c9937d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs 4th order Runge-Kutta integration of dx/dt = f(t, x) for dt.  <a href="namespacefrc.html#a425ade41a4f9d2e4bb0618915c9937d4">More...</a><br /></td></tr>
-<tr class="separator:a425ade41a4f9d2e4bb0618915c9937d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1caaafb9e828af9aa8b55e7dfb99b5a"><td class="memTemplParams" colspan="2"><a id="ac1caaafb9e828af9aa8b55e7dfb99b5a"></a>
-template&lt;typename F , typename T , typename U &gt; </td></tr>
-<tr class="memitem:ac1caaafb9e828af9aa8b55e7dfb99b5a"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><b>RKF45Impl</b> (F &amp;&amp;f, T x, U u, double &amp;h, double maxTruncationError, double dtRemaining)</td></tr>
-<tr class="separator:ac1caaafb9e828af9aa8b55e7dfb99b5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1825219cb68950f7b141fabc3fd0904b"><td class="memTemplParams" colspan="2">template&lt;typename F , typename T , typename U &gt; </td></tr>
-<tr class="memitem:a1825219cb68950f7b141fabc3fd0904b"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a1825219cb68950f7b141fabc3fd0904b">RKF45</a> (F &amp;&amp;f, T x, U u, units::second_t dt, double maxError=1e-6)</td></tr>
-<tr class="memdesc:a1825219cb68950f7b141fabc3fd0904b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs adaptive RKF45 integration of dx/dt = f(x, u) for dt, as described in <a href="https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta%E2%80%93Fehlberg_method">https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta%E2%80%93Fehlberg_method</a>.  <a href="namespacefrc.html#a1825219cb68950f7b141fabc3fd0904b">More...</a><br /></td></tr>
-<tr class="separator:a1825219cb68950f7b141fabc3fd0904b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbcc27ca7c9f88e13d7c4da520d4a6cb"><td class="memTemplParams" colspan="2">template&lt;int States&gt; </td></tr>
-<tr class="memitem:acbcc27ca7c9f88e13d7c4da520d4a6cb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#acbcc27ca7c9f88e13d7c4da520d4a6cb">DiscretizeA</a> (const Eigen::Matrix&lt; double, States, States &gt; &amp;contA, units::second_t dt, Eigen::Matrix&lt; double, States, States &gt; *discA)</td></tr>
-<tr class="memdesc:acbcc27ca7c9f88e13d7c4da520d4a6cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discretizes the given continuous A matrix.  <a href="namespacefrc.html#acbcc27ca7c9f88e13d7c4da520d4a6cb">More...</a><br /></td></tr>
-<tr class="separator:acbcc27ca7c9f88e13d7c4da520d4a6cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0e1ca87aa1e11ff912712afe34f8803"><td class="memTemplParams" colspan="2">template&lt;int States, int Inputs&gt; </td></tr>
-<tr class="memitem:ab0e1ca87aa1e11ff912712afe34f8803"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ab0e1ca87aa1e11ff912712afe34f8803">DiscretizeAB</a> (const Eigen::Matrix&lt; double, States, States &gt; &amp;contA, const Eigen::Matrix&lt; double, States, Inputs &gt; &amp;contB, units::second_t dt, Eigen::Matrix&lt; double, States, States &gt; *discA, Eigen::Matrix&lt; double, States, Inputs &gt; *discB)</td></tr>
-<tr class="memdesc:ab0e1ca87aa1e11ff912712afe34f8803"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discretizes the given continuous A and B matrices.  <a href="namespacefrc.html#ab0e1ca87aa1e11ff912712afe34f8803">More...</a><br /></td></tr>
-<tr class="separator:ab0e1ca87aa1e11ff912712afe34f8803"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f7a16592525baf3b04f68f7b308a153"><td class="memTemplParams" colspan="2">template&lt;int States&gt; </td></tr>
-<tr class="memitem:a0f7a16592525baf3b04f68f7b308a153"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a0f7a16592525baf3b04f68f7b308a153">DiscretizeAQ</a> (const Eigen::Matrix&lt; double, States, States &gt; &amp;contA, const Eigen::Matrix&lt; double, States, States &gt; &amp;contQ, units::second_t dt, Eigen::Matrix&lt; double, States, States &gt; *discA, Eigen::Matrix&lt; double, States, States &gt; *discQ)</td></tr>
-<tr class="memdesc:a0f7a16592525baf3b04f68f7b308a153"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discretizes the given continuous A and Q matrices.  <a href="namespacefrc.html#a0f7a16592525baf3b04f68f7b308a153">More...</a><br /></td></tr>
-<tr class="separator:a0f7a16592525baf3b04f68f7b308a153"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21e6884091fc969f4d10fd01c1b26857"><td class="memTemplParams" colspan="2">template&lt;int States&gt; </td></tr>
-<tr class="memitem:a21e6884091fc969f4d10fd01c1b26857"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a21e6884091fc969f4d10fd01c1b26857">DiscretizeAQTaylor</a> (const Eigen::Matrix&lt; double, States, States &gt; &amp;contA, const Eigen::Matrix&lt; double, States, States &gt; &amp;contQ, units::second_t dt, Eigen::Matrix&lt; double, States, States &gt; *discA, Eigen::Matrix&lt; double, States, States &gt; *discQ)</td></tr>
-<tr class="memdesc:a21e6884091fc969f4d10fd01c1b26857"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discretizes the given continuous A and Q matrices.  <a href="namespacefrc.html#a21e6884091fc969f4d10fd01c1b26857">More...</a><br /></td></tr>
-<tr class="separator:a21e6884091fc969f4d10fd01c1b26857"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af123172a8aa7b011d75963988ce2a800"><td class="memTemplParams" colspan="2">template&lt;int Outputs&gt; </td></tr>
-<tr class="memitem:af123172a8aa7b011d75963988ce2a800"><td class="memTemplItemLeft" align="right" valign="top">Eigen::Matrix&lt; double, Outputs, Outputs &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#af123172a8aa7b011d75963988ce2a800">DiscretizeR</a> (const Eigen::Matrix&lt; double, Outputs, Outputs &gt; &amp;R, units::second_t dt)</td></tr>
-<tr class="memdesc:af123172a8aa7b011d75963988ce2a800"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a discretized version of the provided continuous measurement noise covariance matrix.  <a href="namespacefrc.html#af123172a8aa7b011d75963988ce2a800">More...</a><br /></td></tr>
-<tr class="separator:af123172a8aa7b011d75963988ce2a800"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c68fe32c5c08f1ae28571767df3dff3"><td class="memTemplParams" colspan="2">template&lt;int Rows, int Cols, typename F &gt; </td></tr>
-<tr class="memitem:a3c68fe32c5c08f1ae28571767df3dff3"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a3c68fe32c5c08f1ae28571767df3dff3">NumericalJacobian</a> (F &amp;&amp;f, const Eigen::Matrix&lt; double, Cols, 1 &gt; &amp;x)</td></tr>
-<tr class="memdesc:a3c68fe32c5c08f1ae28571767df3dff3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns numerical Jacobian with respect to x for f(x).  <a href="namespacefrc.html#a3c68fe32c5c08f1ae28571767df3dff3">More...</a><br /></td></tr>
-<tr class="separator:a3c68fe32c5c08f1ae28571767df3dff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2fa623b84713efc1ded4a40d059d143"><td class="memTemplParams" colspan="2">template&lt;int Rows, int States, int Inputs, typename F , typename... Args&gt; </td></tr>
-<tr class="memitem:af2fa623b84713efc1ded4a40d059d143"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#af2fa623b84713efc1ded4a40d059d143">NumericalJacobianX</a> (F &amp;&amp;f, const Eigen::Matrix&lt; double, States, 1 &gt; &amp;x, const Eigen::Matrix&lt; double, Inputs, 1 &gt; &amp;u, Args &amp;&amp;... args)</td></tr>
-<tr class="memdesc:af2fa623b84713efc1ded4a40d059d143"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns numerical Jacobian with respect to x for f(x, u, ...).  <a href="namespacefrc.html#af2fa623b84713efc1ded4a40d059d143">More...</a><br /></td></tr>
-<tr class="separator:af2fa623b84713efc1ded4a40d059d143"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2db1f99cc14e6b233f29ab13f11ef66a"><td class="memTemplParams" colspan="2">template&lt;int Rows, int States, int Inputs, typename F , typename... Args&gt; </td></tr>
-<tr class="memitem:a2db1f99cc14e6b233f29ab13f11ef66a"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a2db1f99cc14e6b233f29ab13f11ef66a">NumericalJacobianU</a> (F &amp;&amp;f, const Eigen::Matrix&lt; double, States, 1 &gt; &amp;x, const Eigen::Matrix&lt; double, Inputs, 1 &gt; &amp;u, Args &amp;&amp;... args)</td></tr>
-<tr class="memdesc:a2db1f99cc14e6b233f29ab13f11ef66a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns numerical Jacobian with respect to u for f(x, u, ...).  <a href="namespacefrc.html#a2db1f99cc14e6b233f29ab13f11ef66a">More...</a><br /></td></tr>
-<tr class="separator:a2db1f99cc14e6b233f29ab13f11ef66a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f9055634b2d43239d5333737b302cbd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a1f9055634b2d43239d5333737b302cbd">Wait</a> (double seconds)</td></tr>
 <tr class="memdesc:a1f9055634b2d43239d5333737b302cbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pause the task for a specified time.  <a href="namespacefrc.html#a1f9055634b2d43239d5333737b302cbd">More...</a><br /></td></tr>
 <tr class="separator:a1f9055634b2d43239d5333737b302cbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb4b1a6d7dc85098bcb669484ec05fe9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#acb4b1a6d7dc85098bcb669484ec05fe9">GetTime</a> ()</td></tr>
 <tr class="memdesc:acb4b1a6d7dc85098bcb669484ec05fe9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives real-time clock system time with nanosecond resolution.  <a href="namespacefrc.html#acb4b1a6d7dc85098bcb669484ec05fe9">More...</a><br /></td></tr>
 <tr class="separator:acb4b1a6d7dc85098bcb669484ec05fe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d83e7ec5a444cd625593917680b750c"><td class="memItemLeft" align="right" valign="top"><a id="a8d83e7ec5a444cd625593917680b750c"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>RunHALInitialization</b> ()</td></tr>
+<tr class="separator:a8d83e7ec5a444cd625593917680b750c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34e168565dec463c0b67d584e80c2c0d"><td class="memTemplParams" colspan="2"><a id="a34e168565dec463c0b67d584e80c2c0d"></a>
+template&lt;class Robot &gt; </td></tr>
+<tr class="memitem:a34e168565dec463c0b67d584e80c2c0d"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><b>StartRobot</b> ()</td></tr>
+<tr class="separator:a34e168565dec463c0b67d584e80c2c0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af23e0d617ddcb6f8eb3dad37e179086f"><td class="memItemLeft" align="right" valign="top"><a id="af23e0d617ddcb6f8eb3dad37e179086f"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="classfrc_1_1Color8Bit.html">Color8Bit</a> &amp;c1, const <a class="el" href="classfrc_1_1Color8Bit.html">Color8Bit</a> &amp;c2)</td></tr>
 <tr class="separator:af23e0d617ddcb6f8eb3dad37e179086f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -988,16 +995,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const
 <tr class="memitem:abf82d349981101e1f27fbfc05ede8f91"><td class="memItemLeft" align="right" valign="top"><a id="abf82d349981101e1f27fbfc05ede8f91"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="classfrc_1_1Color.html">Color</a> &amp;c1, const <a class="el" href="classfrc_1_1Color.html">Color</a> &amp;c2)</td></tr>
 <tr class="separator:abf82d349981101e1f27fbfc05ede8f91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4984b5a560f93a605895de839c7624c"><td class="memItemLeft" align="right" valign="top"><a id="ab4984b5a560f93a605895de839c7624c"></a>
-<a class="el" href="classwpi_1_1StringRef.html">wpi::StringRef</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ShuffleboardEventImportanceName</b> (ShuffleboardEventImportance importance)</td></tr>
-<tr class="separator:ab4984b5a560f93a605895de839c7624c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d83e7ec5a444cd625593917680b750c"><td class="memItemLeft" align="right" valign="top"><a id="a8d83e7ec5a444cd625593917680b750c"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>RunHALInitialization</b> ()</td></tr>
-<tr class="separator:a8d83e7ec5a444cd625593917680b750c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34e168565dec463c0b67d584e80c2c0d"><td class="memTemplParams" colspan="2"><a id="a34e168565dec463c0b67d584e80c2c0d"></a>
-template&lt;class Robot &gt; </td></tr>
-<tr class="memitem:a34e168565dec463c0b67d584e80c2c0d"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><b>StartRobot</b> ()</td></tr>
-<tr class="separator:a34e168565dec463c0b67d584e80c2c0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2369a95f34fca0109c8aa3c25e9fa50b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a2369a95f34fca0109c8aa3c25e9fa50b">GetThreadPriority</a> (std::thread &amp;thread, bool *isRealTime)</td></tr>
 <tr class="memdesc:a2369a95f34fca0109c8aa3c25e9fa50b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the thread priority for the specified thread.  <a href="namespacefrc.html#a2369a95f34fca0109c8aa3c25e9fa50b">More...</a><br /></td></tr>
 <tr class="separator:a2369a95f34fca0109c8aa3c25e9fa50b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1010,6 +1007,9 @@ template&lt;class Robot &gt; </td></tr>
 <tr class="memitem:a2d171ed3c8f73f2a5fd711b761dac0f5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a2d171ed3c8f73f2a5fd711b761dac0f5">SetCurrentThreadPriority</a> (bool realTime, int priority)</td></tr>
 <tr class="memdesc:a2d171ed3c8f73f2a5fd711b761dac0f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the thread priority for the current thread.  <a href="namespacefrc.html#a2d171ed3c8f73f2a5fd711b761dac0f5">More...</a><br /></td></tr>
 <tr class="separator:a2d171ed3c8f73f2a5fd711b761dac0f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4984b5a560f93a605895de839c7624c"><td class="memItemLeft" align="right" valign="top"><a id="ab4984b5a560f93a605895de839c7624c"></a>
+<a class="el" href="classwpi_1_1StringRef.html">wpi::StringRef</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ShuffleboardEventImportanceName</b> (ShuffleboardEventImportance importance)</td></tr>
+<tr class="separator:ab4984b5a560f93a605895de839c7624c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>WPILib FRC namespace. </p>
@@ -3108,7 +3108,7 @@ template&lt;int States, int CovDim&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li>
-    <li class="footer">Generated on Wed Mar 17 2021 05:06:43 for WPILibC++ by
+    <li class="footer">Generated on Fri Mar 19 2021 16:01:46 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

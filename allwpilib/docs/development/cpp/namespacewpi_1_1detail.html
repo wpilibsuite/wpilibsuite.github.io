@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.2.2-44-g1032c9b</span>
+   &#160;<span id="projectnumber">2021.2.2-45-gc3a8bdc</span>
    </div>
   </td>
  </tr>
@@ -286,6 +286,14 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:afe0837f80c2797e20e43f5cf9d1f5174"><td class="memTemplParams" colspan="2"><a id="afe0837f80c2797e20e43f5cf9d1f5174"></a>
+template&lt;bool B, typename T  = void&gt; </td></tr>
+<tr class="memitem:afe0837f80c2797e20e43f5cf9d1f5174"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>enable_if_t</b> = typename std::enable_if&lt; B, T &gt;::type</td></tr>
+<tr class="separator:afe0837f80c2797e20e43f5cf9d1f5174"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7989691524c4283ec6ef011a57486f4"><td class="memTemplParams" colspan="2"><a id="ad7989691524c4283ec6ef011a57486f4"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ad7989691524c4283ec6ef011a57486f4"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>uncvref_t</b> = typename std::remove_cv&lt; typename std::remove_reference&lt; T &gt;::type &gt;::type</td></tr>
+<tr class="separator:ad7989691524c4283ec6ef011a57486f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87f4132611957b9c2de4c1eac6011ec7"><td class="memTemplParams" colspan="2"><a id="a87f4132611957b9c2de4c1eac6011ec7"></a>
 template&lt;typename RangeT &gt; </td></tr>
 <tr class="memitem:a87f4132611957b9c2de4c1eac6011ec7"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>IterOfRange</b> = decltype(std::begin(std::declval&lt; RangeT &amp; &gt;()))</td></tr>
@@ -298,14 +306,6 @@ template&lt;typename RangeT &gt; </td></tr>
 template&lt;typename ZipType , typename... Iters&gt; </td></tr>
 <tr class="memitem:a5da73099635d0870209a7d0cadf362df"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>zip_traits</b> = <a class="el" href="classwpi_1_1iterator__facade__base.html">iterator_facade_base</a>&lt; ZipType, typename std::common_type&lt; std::bidirectional_iterator_tag, typename std::iterator_traits&lt; Iters &gt;::iterator_category... &gt;::type, typename <a class="el" href="structwpi_1_1detail_1_1ZipTupleType.html">ZipTupleType</a>&lt; Iters... &gt;::type, typename std::iterator_traits&lt; typename std::tuple_element&lt; 0, std::tuple&lt; Iters... &gt; &gt;::type &gt;::difference_type, typename <a class="el" href="structwpi_1_1detail_1_1ZipTupleType.html">ZipTupleType</a>&lt; Iters... &gt;::type *, typename <a class="el" href="structwpi_1_1detail_1_1ZipTupleType.html">ZipTupleType</a>&lt; Iters... &gt;::type &gt;</td></tr>
 <tr class="separator:a5da73099635d0870209a7d0cadf362df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe0837f80c2797e20e43f5cf9d1f5174"><td class="memTemplParams" colspan="2"><a id="afe0837f80c2797e20e43f5cf9d1f5174"></a>
-template&lt;bool B, typename T  = void&gt; </td></tr>
-<tr class="memitem:afe0837f80c2797e20e43f5cf9d1f5174"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>enable_if_t</b> = typename std::enable_if&lt; B, T &gt;::type</td></tr>
-<tr class="separator:afe0837f80c2797e20e43f5cf9d1f5174"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7989691524c4283ec6ef011a57486f4"><td class="memTemplParams" colspan="2"><a id="ad7989691524c4283ec6ef011a57486f4"></a>
-template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ad7989691524c4283ec6ef011a57486f4"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>uncvref_t</b> = typename std::remove_cv&lt; typename std::remove_reference&lt; T &gt;::type &gt;::type</td></tr>
-<tr class="separator:ad7989691524c4283ec6ef011a57486f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -328,14 +328,6 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aadf66fe5c83086f61fce461588be8760"><td class="memTemplParams" colspan="2"><a id="aadf66fe5c83086f61fce461588be8760"></a>
-template&lt;typename Iter &gt; </td></tr>
-<tr class="memitem:aadf66fe5c83086f61fce461588be8760"><td class="memTemplItemLeft" align="right" valign="top">static Iter&#160;</td><td class="memTemplItemRight" valign="bottom"><b>next_or_end</b> (const Iter &amp;I, const Iter &amp;End)</td></tr>
-<tr class="separator:aadf66fe5c83086f61fce461588be8760"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a773fd8bd4651dc5d18f06fef4f0dec8b"><td class="memTemplParams" colspan="2"><a id="a773fd8bd4651dc5d18f06fef4f0dec8b"></a>
-template&lt;typename Iter &gt; </td></tr>
-<tr class="memitem:a773fd8bd4651dc5d18f06fef4f0dec8b"><td class="memTemplItemLeft" align="right" valign="top">static auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>deref_or_none</b> (const Iter &amp;I, const Iter &amp;End) -&gt; std::optional&lt; typename std::remove_const&lt; typename std::remove_reference&lt; decltype(*I)&gt;::type &gt;::type &gt;</td></tr>
-<tr class="separator:a773fd8bd4651dc5d18f06fef4f0dec8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6099d4c90e13997712a1b9bef0cd0a90"><td class="memItemLeft" align="right" valign="top"><a id="a6099d4c90e13997712a1b9bef0cd0a90"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>NLOHMANN_JSON_HAS_HELPER</b> (mapped_type)</td></tr>
 <tr class="separator:a6099d4c90e13997712a1b9bef0cd0a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -495,6 +487,14 @@ template&lt;typename R , typename... T&gt; </td></tr>
 template&lt;typename... T&gt; </td></tr>
 <tr class="memitem:aa1975a46000408c21cd1a7958e81cf87"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>RunWorkerThreadRequest</b> (<a class="el" href="classwpi_1_1detail_1_1WorkerThreadThread.html">WorkerThreadThread</a>&lt; void, T... &gt; &amp;thr, <a class="el" href="structwpi_1_1detail_1_1WorkerThreadRequest.html">WorkerThreadRequest</a>&lt; void, T... &gt; &amp;req)</td></tr>
 <tr class="separator:aa1975a46000408c21cd1a7958e81cf87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadf66fe5c83086f61fce461588be8760"><td class="memTemplParams" colspan="2"><a id="aadf66fe5c83086f61fce461588be8760"></a>
+template&lt;typename Iter &gt; </td></tr>
+<tr class="memitem:aadf66fe5c83086f61fce461588be8760"><td class="memTemplItemLeft" align="right" valign="top">static Iter&#160;</td><td class="memTemplItemRight" valign="bottom"><b>next_or_end</b> (const Iter &amp;I, const Iter &amp;End)</td></tr>
+<tr class="separator:aadf66fe5c83086f61fce461588be8760"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a773fd8bd4651dc5d18f06fef4f0dec8b"><td class="memTemplParams" colspan="2"><a id="a773fd8bd4651dc5d18f06fef4f0dec8b"></a>
+template&lt;typename Iter &gt; </td></tr>
+<tr class="memitem:a773fd8bd4651dc5d18f06fef4f0dec8b"><td class="memTemplItemLeft" align="right" valign="top">static auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>deref_or_none</b> (const Iter &amp;I, const Iter &amp;End) -&gt; std::optional&lt; typename std::remove_const&lt; typename std::remove_reference&lt; decltype(*I)&gt;::type &gt;::type &gt;</td></tr>
+<tr class="separator:a773fd8bd4651dc5d18f06fef4f0dec8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad626cf147d66810615d4a7f54b8dccbe"><td class="memTemplParams" colspan="2"><a id="ad626cf147d66810615d4a7f54b8dccbe"></a>
 template&lt;typename N &gt; </td></tr>
 <tr class="memitem:ad626cf147d66810615d4a7f54b8dccbe"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>to_float</b> (const <a class="el" href="classwpi_1_1Twine.html">Twine</a> &amp;T, N &amp;Num, N(*StrTo)(const char *, char **))</td></tr>
@@ -648,7 +648,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="e
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>wpi</b></li><li class="navelem"><a class="el" href="namespacewpi_1_1detail.html">detail</a></li>
-    <li class="footer">Generated on Wed Mar 17 2021 05:06:46 for WPILibC++ by
+    <li class="footer">Generated on Fri Mar 19 2021 16:01:49 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>
