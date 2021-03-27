@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.2.2-55-g10c038d</span>
+   &#160;<span id="projectnumber">2021.2.2-56-gffb590b</span>
    </div>
   </td>
  </tr>
@@ -633,7 +633,7 @@ $(document).ready(function(){initNavTree('StringMap_8h_source.html',''); initRes
 <div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;}</div>
 <div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160; </div>
 <div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> ValueTy&gt;</div>
-<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="namespacewpi_1_1detail.html#ae0ba1341aee62171fc05eed5b2d973f2">operator&lt;</a>(<span class="keyword">const</span> StringMap&lt;ValueTy&gt;&amp; lhs, <span class="keyword">const</span> StringMap&lt;ValueTy&gt;&amp; rhs) {</div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;<span class="keywordtype">bool</span> operator&lt;(<span class="keyword">const</span> StringMap&lt;ValueTy&gt;&amp; lhs, <span class="keyword">const</span> StringMap&lt;ValueTy&gt;&amp; rhs) {</div>
 <div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;  <span class="comment">// same instance?</span></div>
 <div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;  <span class="keywordflow">if</span> (&amp;lhs == &amp;rhs) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160; </div>
@@ -689,7 +689,6 @@ $(document).ready(function(){initNavTree('StringMap_8h_source.html',''); initRes
 <div class="ttc" id="aclasswpi_1_1iterator__range_html"><div class="ttname"><a href="classwpi_1_1iterator__range.html">wpi::iterator_range</a></div><div class="ttdoc">A range adaptor for a pair of iterators.</div><div class="ttdef"><b>Definition:</b> iterator_range.h:32</div></div>
 <div class="ttc" id="aclasswpi_1_1StringMap_html_ae4f4adbd742da10dac0a15c62193135f"><div class="ttname"><a href="classwpi_1_1StringMap.html#ae4f4adbd742da10dac0a15c62193135f">wpi::StringMap::operator[]</a></div><div class="ttdeci">ValueTy &amp; operator[](StringRef Key)</div><div class="ttdoc">Lookup the ValueTy for the Key, or create a default constructed value if the key is not in the map.</div><div class="ttdef"><b>Definition:</b> StringMap.h:328</div></div>
 <div class="ttc" id="aMemAlloc_8h_html"><div class="ttname"><a href="MemAlloc_8h.html">MemAlloc.h</a></div></div>
-<div class="ttc" id="anamespacewpi_1_1detail_html_ae0ba1341aee62171fc05eed5b2d973f2"><div class="ttname"><a href="namespacewpi_1_1detail.html#ae0ba1341aee62171fc05eed5b2d973f2">wpi::detail::operator&lt;</a></div><div class="ttdeci">bool operator&lt;(const value_t lhs, const value_t rhs) noexcept</div><div class="ttdoc">comparison operator for JSON types</div><div class="ttdef"><b>Definition:</b> json.h:724</div></div>
 <div class="ttc" id="aclasswpi_1_1StringMap_html_a2ad52e808d717f6f72a75cc31d7998a3"><div class="ttname"><a href="classwpi_1_1StringMap.html#a2ad52e808d717f6f72a75cc31d7998a3">wpi::StringMap::count</a></div><div class="ttdeci">size_type count(StringRef Key) const</div><div class="ttdoc">count - Return 1 if the element is in the map, 0 otherwise.</div><div class="ttdef"><b>Definition:</b> StringMap.h:331</div></div>
 <div class="ttc" id="aclasswpi_1_1StringRef_html"><div class="ttname"><a href="classwpi_1_1StringRef.html">wpi::StringRef</a></div><div class="ttdoc">StringRef - Represent a constant reference to a string, i.e.</div><div class="ttdef"><b>Definition:</b> StringRef.h:49</div></div>
 <div class="ttc" id="aiterator__range_8h_html"><div class="ttname"><a href="iterator__range_8h.html">iterator_range.h</a></div></div>
@@ -714,7 +713,7 @@ $(document).ready(function(){initNavTree('StringMap_8h_source.html',''); initRes
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><b>StringMap.h</b></li>
-    <li class="footer">Generated on Mon Mar 22 2021 01:08:45 for WPILibC++ by
+    <li class="footer">Generated on Sat Mar 27 2021 04:24:21 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

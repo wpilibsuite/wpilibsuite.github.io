@@ -9,7 +9,7 @@ var searchData=
   ['threadsaferefcountedbase_4888',['ThreadSafeRefCountedBase',['../classwpi_1_1ThreadSafeRefCountedBase.html',1,'wpi']]],
   ['timedcommand_4889',['TimedCommand',['../classfrc_1_1TimedCommand.html',1,'frc']]],
   ['timedrobot_4890',['TimedRobot',['../classfrc_1_1TimedRobot.html',1,'frc']]],
-  ['timer_4891',['Timer',['../classwpi_1_1uv_1_1Timer.html',1,'wpi::uv::Timer'],['../classfrc_1_1Timer.html',1,'frc::Timer'],['../classfrc2_1_1Timer.html',1,'frc2::Timer']]],
+  ['timer_4891',['Timer',['../classfrc2_1_1Timer.html',1,'frc2::Timer'],['../classfrc_1_1Timer.html',1,'frc::Timer'],['../classwpi_1_1uv_1_1Timer.html',1,'wpi::uv::Timer']]],
   ['to_5fjson_5ffn_4892',['to_json_fn',['../structwpi_1_1detail_1_1to__json__fn.html',1,'wpi::detail']]],
   ['togglebuttonscheduler_4893',['ToggleButtonScheduler',['../classfrc_1_1ToggleButtonScheduler.html',1,'frc']]],
   ['tracer_4894',['Tracer',['../classfrc_1_1Tracer.html',1,'frc']]],

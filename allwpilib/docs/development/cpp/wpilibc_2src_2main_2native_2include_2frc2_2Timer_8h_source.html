@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.2.2-55-g10c038d</span>
+   &#160;<span id="projectnumber">2021.2.2-56-gffb590b</span>
    </div>
   </td>
  </tr>
@@ -104,9 +104,9 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>frc2 {</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keywordtype">void</span> Wait(units::second_t seconds);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacefrc.html#a1f9055634b2d43239d5333737b302cbd">Wait</a>(units::second_t seconds);</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;units::second_t GetTime();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;units::second_t <a class="code" href="namespacefrc.html#acb4b1a6d7dc85098bcb669484ec05fe9">GetTime</a>();</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
 <div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classfrc2_1_1Timer.html">   34</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc2_1_1Timer.html">Timer</a> {</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; <span class="keyword">public</span>:</div>
@@ -157,12 +157,14 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div class="ttc" id="aclassfrc2_1_1Timer_html_a99bcbb41fa653f50b24b6ec1bafb8582"><div class="ttname"><a href="classfrc2_1_1Timer.html#a99bcbb41fa653f50b24b6ec1bafb8582">frc2::Timer::GetMatchTime</a></div><div class="ttdeci">static units::second_t GetMatchTime()</div><div class="ttdoc">Return the approximate match time.</div></div>
 <div class="ttc" id="aclassfrc2_1_1Timer_html_a75bb420960fcbde8b4cbbd4f64a5de30"><div class="ttname"><a href="classfrc2_1_1Timer.html#a75bb420960fcbde8b4cbbd4f64a5de30">frc2::Timer::AdvanceIfElapsed</a></div><div class="ttdeci">bool AdvanceIfElapsed(units::second_t period)</div><div class="ttdoc">Check if the period specified has passed and if it has, advance the start time by that period.</div></div>
 <div class="ttc" id="aclassfrc2_1_1Timer_html_a9403fd41294fd437e42929542ec0e8fc"><div class="ttname"><a href="classfrc2_1_1Timer.html#a9403fd41294fd437e42929542ec0e8fc">frc2::Timer::Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdoc">Reset the timer by setting the time to 0.</div></div>
+<div class="ttc" id="anamespacefrc_html_acb4b1a6d7dc85098bcb669484ec05fe9"><div class="ttname"><a href="namespacefrc.html#acb4b1a6d7dc85098bcb669484ec05fe9">frc::GetTime</a></div><div class="ttdeci">double GetTime()</div><div class="ttdoc">Gives real-time clock system time with nanosecond resolution.</div></div>
+<div class="ttc" id="anamespacefrc_html_a1f9055634b2d43239d5333737b302cbd"><div class="ttname"><a href="namespacefrc.html#a1f9055634b2d43239d5333737b302cbd">frc::Wait</a></div><div class="ttdeci">void Wait(double seconds)</div><div class="ttdoc">Pause the task for a specified time.</div></div>
 <div class="ttc" id="aclassfrc2_1_1Timer_html_a856df077941ddad9f26f2f8cfc1d4d9b"><div class="ttname"><a href="classfrc2_1_1Timer.html#a856df077941ddad9f26f2f8cfc1d4d9b">frc2::Timer::Timer</a></div><div class="ttdeci">Timer()</div><div class="ttdoc">Create a new timer object.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_493cc50f8e81ada9ed17d03f8b3f360c.html">frc2</a></li><li class="navelem"><b>Timer.h</b></li>
-    <li class="footer">Generated on Mon Mar 22 2021 01:08:45 for WPILibC++ by
+    <li class="footer">Generated on Sat Mar 27 2021 04:24:21 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>
