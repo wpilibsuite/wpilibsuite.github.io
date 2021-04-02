@@ -1,5 +1,6 @@
 var NAVTREEINDEX24 =
 {
+"classwpi_1_1PointerUnion.html#a1505b405776b8824bc3cf95a81d0df72":[5,0,7,158,13],
 "classwpi_1_1PointerUnion.html#a170b51c0cc701853168d146496a18896":[5,0,7,158,3],
 "classwpi_1_1PointerUnion.html#a1cb3883bc2980b1e1b3becc7573ebc44":[5,0,7,158,15],
 "classwpi_1_1PointerUnion.html#a3294dea770178f7210bb5531f8dd19b5":[5,0,7,158,11],
@@ -55,10 +56,10 @@ var NAVTREEINDEX24 =
 "classwpi_1_1PointerUnion4.html#ae61f1507610e41e74ad8b23cf3822b3f":[5,0,7,160,14],
 "classwpi_1_1PointerUnion4.html#af7111646264d444caf6e00ba61ef3560":[5,0,7,160,1],
 "classwpi_1_1PointerUnionUIntTraits.html":[5,0,7,165],
-"classwpi_1_1PointerUnionUIntTraits.html#a0fc33c320b2adb4f6de241d062aee2d3a5f756e57184cf4c8c772500646ffa923":[5,0,7,165,1],
-"classwpi_1_1PointerUnionUIntTraits.html#a0fc33c320b2adb4f6de241d062aee2d3a7e216c239c17728483f94689fcd42283":[5,0,7,165,0],
 "classwpi_1_1PointerUnionUIntTraits.html#a2114fd2c60acbd8a647307968f3e50e3":[5,0,7,165,2],
 "classwpi_1_1PointerUnionUIntTraits.html#a66518523749f0b86cd8a6f3f491da242":[5,0,7,165,3],
+"classwpi_1_1PointerUnionUIntTraits.html#a963828b929b41bddb6ea905a8a183bc9a5f756e57184cf4c8c772500646ffa923":[5,0,7,165,1],
+"classwpi_1_1PointerUnionUIntTraits.html#a963828b929b41bddb6ea905a8a183bc9a7e216c239c17728483f94689fcd42283":[5,0,7,165,0],
 "classwpi_1_1PortForwarder.html":[5,0,7,166],
 "classwpi_1_1PortForwarder.html#a335108442d9bed20e79c1ee385729784":[5,0,7,166,3],
 "classwpi_1_1PortForwarder.html#a69321f62cd088582ab8a1b48b771865c":[5,0,7,166,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX24 =
 "classwpi_1_1SmallString.html#a592e70561dfba65c4bf40bd21fbc4669":[5,0,7,214,37],
 "classwpi_1_1SmallString.html#a5fa82108806b87bebac07c93b89dc180":[5,0,7,214,12],
 "classwpi_1_1SmallString.html#a670894c7ca6dd406b4f34ad4d1031c94":[5,0,7,214,33],
-"classwpi_1_1SmallString.html#a6a3fe6d1e6e86c43e99989f012a942a9":[5,0,7,214,35],
-"classwpi_1_1SmallString.html#a6b4874d030bb6ba792b622f5a80a9090":[5,0,7,214,13]
+"classwpi_1_1SmallString.html#a6a3fe6d1e6e86c43e99989f012a942a9":[5,0,7,214,35]
 };

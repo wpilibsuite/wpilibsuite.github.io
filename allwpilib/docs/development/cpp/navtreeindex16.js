@@ -1,5 +1,6 @@
 var NAVTREEINDEX16 =
 {
+"classfrc_1_1ToggleButtonScheduler.html#a9ce6e27de43cdc81d7294ffdaafab526":[5,0,2,199,1],
 "classfrc_1_1ToggleButtonScheduler.html#aae5c89c886b6266fa6145804f1bf6745":[5,0,2,199,2],
 "classfrc_1_1ToggleButtonScheduler.html#ab11c62eb5c27cc4708bafc63d4a09933":[5,0,2,199,3],
 "classfrc_1_1Tracer.html":[5,0,2,200],
@@ -248,6 +249,5 @@ var NAVTREEINDEX16 =
 "classfrc_1_1XboxController.html#a0cc20db6870fcd4fb2da1e92f74f4a97":[5,0,2,225,9],
 "classfrc_1_1XboxController.html#a0cc45462107fe6eaba85cf7e9a3ac428":[5,0,2,225,22],
 "classfrc_1_1XboxController.html#a0ff5bed58ba05a14be2f6a17036fcebc":[5,0,2,225,18],
-"classfrc_1_1XboxController.html#a1034633d4be2db9277b3864efa55b99b":[5,0,2,225,1],
-"classfrc_1_1XboxController.html#a1034633d4be2db9277b3864efa55b99ba0ac0dd65e82e143ab04d378a0133bf9e":[5,0,2,225,1,6]
+"classfrc_1_1XboxController.html#a1034633d4be2db9277b3864efa55b99b":[5,0,2,225,1]
 };

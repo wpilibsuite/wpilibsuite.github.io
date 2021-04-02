@@ -1,5 +1,6 @@
 var NAVTREEINDEX14 =
 {
+"classfrc_1_1SendableChooser.html#a3b36357f4b1e594dc32e7557ae5f6afc":[5,0,2,158,4],
 "classfrc_1_1SendableChooser.html#a4acb844523097015137ece87154efcdb":[5,0,2,158,9],
 "classfrc_1_1SendableChooser.html#a61e25379739ee1f9f3a4e35e4b54395f":[5,0,2,158,2],
 "classfrc_1_1SendableChooser.html#a80e334966831bfc40c0498e256dbf739":[5,0,2,158,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX14 =
 "classfrc_1_1ShuffleboardValue.html#afdc5003feb12e91b64536cf42bb390e5":[5,0,2,172,3],
 "classfrc_1_1ShuffleboardWidget.html":[5,0,2,173],
 "classfrc_1_1ShuffleboardWidget.html#a66111ebec3f0251b390b21cbdbc42f32":[5,0,2,173,1],
-"classfrc_1_1ShuffleboardWidget.html#a7e687a909c52c39e32d9e2b6cb42865b":[5,0,2,173,3],
-"classfrc_1_1ShuffleboardWidget.html#a8028c9bafb3754e6fd1e96ccade29722":[5,0,2,173,0]
+"classfrc_1_1ShuffleboardWidget.html#a7e687a909c52c39e32d9e2b6cb42865b":[5,0,2,173,3]
 };

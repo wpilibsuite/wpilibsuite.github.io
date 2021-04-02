@@ -10,5 +10,6 @@ var classfrc_1_1FieldObject2d =
     [ "SetPose", "classfrc_1_1FieldObject2d.html#a88e466b1b240a73c8cabea8e3b1428f8", null ],
     [ "SetPoses", "classfrc_1_1FieldObject2d.html#abaacaad18d6fceebd10becfad1458a73", null ],
     [ "SetPoses", "classfrc_1_1FieldObject2d.html#a1b8aa457cb9751b895b645eb7bde4fae", null ],
+    [ "SetTrajectory", "classfrc_1_1FieldObject2d.html#a179ca7d20fc74b2dbcf754ebd15487b3", null ],
     [ "Field2d", "classfrc_1_1FieldObject2d.html#a4d7c0d21b9cb65ddf328501a4e2e6086", null ]
 ];
