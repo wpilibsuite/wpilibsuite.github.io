@@ -1,5 +1,6 @@
 var NAVTREEINDEX37 =
 {
+"group__ntcore__utility__cfunc.html#gadec7c68e2add3829c0acf1fcf6a49c3c":[3,1,7,5],
 "group__ntcore__utility__cfunc.html#gaee811e168a6af0e3c2c5dbe34c0d1051":[3,1,7,17],
 "group__ntcore__utility__cfunc.html#gaeed743779ac03356d76f3489cfd98012":[3,1,7,6],
 "group__ntcore__utility__cfunc.html#gaeef9d0e4e266cd4d91632566debdf911":[3,1,7,7],
@@ -63,14 +64,14 @@ var NAVTREEINDEX37 =
 "namespacemembers_eval.html":[4,1,4],
 "namespacemembers_func.html":[4,1,1],
 "namespacemembers_type.html":[4,1,2],
-"namespacent.html":[4,0,3],
 "namespacent.html":[5,0,5],
+"namespacent.html":[4,0,3],
 "namespacent_1_1EntryListenerFlags.html":[4,0,3,0],
 "namespaces.html":[4,0],
 "namespacewpi_1_1detail.html":[5,0,7,0],
 "namespacewpi_1_1detail.html":[4,0,4,0],
-"namespacewpi_1_1java.html":[4,0,4,1],
 "namespacewpi_1_1java.html":[5,0,7,3],
+"namespacewpi_1_1java.html":[4,0,4,1],
 "never__destroyed_8h_source.html":[6,0,2,0,5],
 "nodiscard_8h_source.html":[6,0,12,52],
 "ntcore_8h_source.html":[6,0,21],
@@ -248,6 +249,5 @@ var NAVTREEINDEX37 =
 "structNT__Value.html#ae8a4e621562c50054b6759e43323dc7f":[3,1,11,8],
 "structNT__Value.html#aec85a7da81866a1e38efcdcfa33249f7":[3,1,11,0],
 "structcs_1_1RawEvent.html":[3,6,18],
-"structcs_1_1RawEvent.html#a07ce5e163e404ec11b367fa9eddc2ef7":[3,6,18,8],
-"structcs_1_1RawEvent.html#a20d2d7a6fc5f11662bbd2f8839eb8b4e":[3,6,18,12]
+"structcs_1_1RawEvent.html#a07ce5e163e404ec11b367fa9eddc2ef7":[3,6,18,8]
 };

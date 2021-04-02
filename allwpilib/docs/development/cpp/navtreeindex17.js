@@ -1,5 +1,6 @@
 var NAVTREEINDEX17 =
 {
+"classfrc_1_1XboxController.html#a1034633d4be2db9277b3864efa55b99b":[5,0,2,225,1],
 "classfrc_1_1XboxController.html#a1034633d4be2db9277b3864efa55b99ba0ac0dd65e82e143ab04d378a0133bf9e":[5,0,2,225,1,6],
 "classfrc_1_1XboxController.html#a1034633d4be2db9277b3864efa55b99ba127f8e8149d57253ad94c9d2c752113d":[5,0,2,225,1,9],
 "classfrc_1_1XboxController.html#a1034633d4be2db9277b3864efa55b99ba1aa843cfb007a05d484edf751fdc905d":[5,0,2,225,1,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX17 =
 "classfrc_1_1sim_1_1DIOSim.html#abe3ff2c4c4849aa92b421332d344330d":[5,0,2,1,12,16],
 "classfrc_1_1sim_1_1DIOSim.html#ac870e7b578a2aa866f42a5e5df2099f3":[5,0,2,1,12,14],
 "classfrc_1_1sim_1_1DIOSim.html#ad4a689eb99a49b64be57279b45e2de95":[5,0,2,1,12,0],
-"classfrc_1_1sim_1_1DIOSim.html#adccd1ce5ee53681a327a4af13466bd8f":[5,0,2,1,12,10],
-"classfrc_1_1sim_1_1DIOSim.html#aea8bd0b91b3cee3e28c64cc8c6a9c5e9":[5,0,2,1,12,4]
+"classfrc_1_1sim_1_1DIOSim.html#adccd1ce5ee53681a327a4af13466bd8f":[5,0,2,1,12,10]
 };

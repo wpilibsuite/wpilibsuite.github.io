@@ -1,5 +1,6 @@
 var classfrc_1_1AnalogEncoder =
 [
+    [ "AnalogEncoder", "classfrc_1_1AnalogEncoder.html#a823576cefb747ec258e09ae7bb606450", null ],
     [ "AnalogEncoder", "classfrc_1_1AnalogEncoder.html#a9136985622e9e5fcda44e279133371db", null ],
     [ "AnalogEncoder", "classfrc_1_1AnalogEncoder.html#a98f9e6325bb26c13b0519b1b3435178f", null ],
     [ "AnalogEncoder", "classfrc_1_1AnalogEncoder.html#ab4de554964a190a95b83f29d2dfd2005", null ],

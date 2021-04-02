@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"classfrc_1_1Command.html#af6353922458a5b64f584b2401eaf7085":[5,0,2,30,45],
 "classfrc_1_1Command.html#af816dc206e90bdad6ae895fb5e5574c2":[5,0,2,30,17],
 "classfrc_1_1Command.html#afb88c77ea5daaefa6c8fa6bc5b9aa5c1":[5,0,2,30,52],
 "classfrc_1_1CommandGroup.html":[5,0,2,31],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "classfrc_1_1DifferentialDrive.html#ad6c52ded7f348d49c5b5035c45fdf303":[5,0,2,42,13],
 "classfrc_1_1DifferentialDrive.html#adcf20b07c40750172d91f149f8ccc17c":[5,0,2,42,8],
 "classfrc_1_1DifferentialDrive.html#ae5b11f3e8ed93ec77d4eb0b51f4b5e20":[5,0,2,42,12],
-"classfrc_1_1DifferentialDriveKinematics.html":[5,0,2,43],
-"classfrc_1_1DifferentialDriveKinematics.html#a10b5f836f3e62bd397be3f426e4a54d3":[5,0,2,43,3]
+"classfrc_1_1DifferentialDriveKinematics.html":[5,0,2,43]
 };

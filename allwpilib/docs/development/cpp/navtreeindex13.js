@@ -1,5 +1,6 @@
 var NAVTREEINDEX13 =
 {
+"classfrc_1_1RobotController.html#afd09dd41cc6a49b7de04c3af063b23ba":[5,0,2,144,15],
 "classfrc_1_1RobotDrive.html":[5,0,2,145],
 "classfrc_1_1RobotDrive.html#a0b785c8bc3114855bf477f242e735de0":[5,0,2,145,25],
 "classfrc_1_1RobotDrive.html#a23b50aa85d2bb85c0a211f4ebeea9b7e":[5,0,2,145,30],
@@ -248,6 +249,5 @@ var NAVTREEINDEX13 =
 "classfrc_1_1SendableCameraWrapper.html#a5a53f162428ac9a069050769cc8ad4cf":[5,0,2,157,1],
 "classfrc_1_1SendableCameraWrapper.html#a72c29563e9ae329ef9ae4fe5bed3025a":[5,0,2,157,2],
 "classfrc_1_1SendableCameraWrapper.html#ad44c6da7872fc5d68a0b484d2156dfdd":[5,0,2,157,3],
-"classfrc_1_1SendableChooser.html":[5,0,2,158],
-"classfrc_1_1SendableChooser.html#a3a80f828f68820a9c602e6888761bba5":[5,0,2,158,7]
+"classfrc_1_1SendableChooser.html":[5,0,2,158]
 };

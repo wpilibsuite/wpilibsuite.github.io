@@ -1,5 +1,6 @@
 var NAVTREEINDEX39 =
 {
+"structwpi_1_1DenseMapInfo_3_01hash__code_01_4.html#adcffbb6446cb3152727385abc1605131":[5,0,7,36,3],
 "structwpi_1_1DenseMapInfo_3_01int_01_4.html":[5,0,7,37],
 "structwpi_1_1DenseMapInfo_3_01int_01_4.html#a35d39d0bb9ab9ac4990b4843492050aa":[5,0,7,37,1],
 "structwpi_1_1DenseMapInfo_3_01int_01_4.html#a89b48298fec3a9f817b827a9476894dd":[5,0,7,37,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX39 =
 "structwpi_1_1detail_1_1fwd__or__bidi__tag.html#a0e0898cc8691a0670a979fef2759eac3":[5,0,7,0,21,0],
 "structwpi_1_1detail_1_1fwd__or__bidi__tag__impl.html":[5,0,7,0,22],
 "structwpi_1_1detail_1_1fwd__or__bidi__tag__impl.html#ad00687c4530026b4abcf195bd0df589c":[5,0,7,0,22,0],
-"structwpi_1_1detail_1_1fwd__or__bidi__tag__impl_3_01true_01_4.html":[5,0,7,0,23],
-"structwpi_1_1detail_1_1fwd__or__bidi__tag__impl_3_01true_01_4.html#ad9eefa7de6917e3bca09b60dcb3e636f":[5,0,7,0,23,0]
+"structwpi_1_1detail_1_1fwd__or__bidi__tag__impl_3_01true_01_4.html":[5,0,7,0,23]
 };

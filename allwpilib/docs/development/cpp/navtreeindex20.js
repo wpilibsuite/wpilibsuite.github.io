@@ -1,5 +1,6 @@
 var NAVTREEINDEX20 =
 {
+"classhal_1_1SerialHelper.html#a5b140c7107d35576e27eb9c44387c5f7":[5,0,4,9,4],
 "classhal_1_1SerialHelper.html#af34ee8c13695ac43667448b6871ed353":[5,0,4,9,0],
 "classhal_1_1SerialHelper.html#af7231679e017cbb23f00579e4ca550dd":[5,0,4,9,1],
 "classhal_1_1SimCallbackRegistry.html":[5,0,4,10],
@@ -248,6 +249,5 @@ var NAVTREEINDEX20 =
 "classnt_1_1NetworkTableInstance.html#a1cdbcfc6aa5e893afdbbeb437a56bdee":[3,2,4,42],
 "classnt_1_1NetworkTableInstance.html#a1dd171401cb72e7e4a5073840584ecb6":[3,2,4,20],
 "classnt_1_1NetworkTableInstance.html#a1f7a671f7bcdcbe32b3c1092e07f0b17":[3,2,4,3],
-"classnt_1_1NetworkTableInstance.html#a22b34c327e0da33ab16b53c1994d7cf7":[3,2,4,9],
-"classnt_1_1NetworkTableInstance.html#a262186f1bb98cdec1087f524493f6764":[3,2,4,41]
+"classnt_1_1NetworkTableInstance.html#a22b34c327e0da33ab16b53c1994d7cf7":[3,2,4,9]
 };

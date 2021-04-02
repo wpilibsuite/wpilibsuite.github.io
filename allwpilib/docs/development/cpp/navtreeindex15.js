@@ -1,5 +1,6 @@
 var NAVTREEINDEX15 =
 {
+"classfrc_1_1ShuffleboardWidget.html#a7e687a909c52c39e32d9e2b6cb42865b":[5,0,2,173,3],
 "classfrc_1_1ShuffleboardWidget.html#a8028c9bafb3754e6fd1e96ccade29722":[5,0,2,173,0],
 "classfrc_1_1ShuffleboardWidget.html#ab78be6213a4a5b08d2bb0624bc51eda8":[5,0,2,173,2],
 "classfrc_1_1SimpleMotorFeedforward.html":[5,0,2,174],
@@ -248,6 +249,5 @@ var NAVTREEINDEX15 =
 "classfrc_1_1Timer.html#aebb12784217fa7f8e74c925b79c60536":[5,0,2,198,4],
 "classfrc_1_1Timer.html#af2ced2b604ef48b1466bb1ac422e6f4d":[5,0,2,198,8],
 "classfrc_1_1ToggleButtonScheduler.html":[5,0,2,199],
-"classfrc_1_1ToggleButtonScheduler.html#a58ce71973ff2c24217eaadacf6cceb68":[5,0,2,199,4],
-"classfrc_1_1ToggleButtonScheduler.html#a6682fbe88cfd03c1f72fef761bd3d75f":[5,0,2,199,0]
+"classfrc_1_1ToggleButtonScheduler.html#a58ce71973ff2c24217eaadacf6cceb68":[5,0,2,199,4]
 };

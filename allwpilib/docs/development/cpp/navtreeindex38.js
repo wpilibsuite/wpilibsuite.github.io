@@ -1,5 +1,6 @@
 var NAVTREEINDEX38 =
 {
+"structcs_1_1RawEvent.html#a20d2d7a6fc5f11662bbd2f8839eb8b4e":[3,6,18,12],
 "structcs_1_1RawEvent.html#a2aeedf149efa9cb86b7b01fc59b8edfb":[3,6,18,3],
 "structcs_1_1RawEvent.html#a38f3b6552029a03ab0c68fb2b90d0596":[3,6,18,14],
 "structcs_1_1RawEvent.html#a42be29ff0a6b631b98d309e5bfd082d5":[3,6,18,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX38 =
 "structwpi_1_1DenseMapInfo_3_01hash__code_01_4.html":[5,0,7,36],
 "structwpi_1_1DenseMapInfo_3_01hash__code_01_4.html#a105d788b07a523b0bfb26d520f0749b9":[5,0,7,36,0],
 "structwpi_1_1DenseMapInfo_3_01hash__code_01_4.html#a35476fc6db5ec1e0fb8148c61704edda":[5,0,7,36,1],
-"structwpi_1_1DenseMapInfo_3_01hash__code_01_4.html#aa28891bec8f0ab5cc5ace7e15a651725":[5,0,7,36,2],
-"structwpi_1_1DenseMapInfo_3_01hash__code_01_4.html#adcffbb6446cb3152727385abc1605131":[5,0,7,36,3]
+"structwpi_1_1DenseMapInfo_3_01hash__code_01_4.html#aa28891bec8f0ab5cc5ace7e15a651725":[5,0,7,36,2]
 };

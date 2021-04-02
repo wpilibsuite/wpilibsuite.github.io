@@ -1,5 +1,6 @@
 var NAVTREEINDEX23 =
 {
+"classwpi_1_1HttpParser.html#ac4e772cc0e21362753cc63fe6a35290a":[5,0,7,101,7],
 "classwpi_1_1HttpParser.html#acdd80c106ba77bfe430151b3a9db78fc":[5,0,7,101,23],
 "classwpi_1_1HttpParser.html#ae00a1262adec52569cb7e68d76d530f5":[5,0,7,101,20],
 "classwpi_1_1HttpParser.html#aed967c7329aa7ac3f51fb492f60669e0":[5,0,7,101,22],
@@ -248,6 +249,5 @@ var NAVTREEINDEX23 =
 "classwpi_1_1PointerIntPair.html#ac1f9a247af2b1d845bcc583a92db3ffd":[5,0,7,145,20],
 "classwpi_1_1PointerIntPair.html#acfac1f5ec2ee8c4da54c6bbf83365244":[5,0,7,145,18],
 "classwpi_1_1PointerIntPair.html#ae53638393a7b6b95495670dc5e21281f":[5,0,7,145,11],
-"classwpi_1_1PointerIntPair.html#afd4895917fbf15ec41e3445b72f1f40d":[5,0,7,145,13],
-"classwpi_1_1PointerUnion.html":[5,0,7,158]
+"classwpi_1_1PointerIntPair.html#afd4895917fbf15ec41e3445b72f1f40d":[5,0,7,145,13]
 };
