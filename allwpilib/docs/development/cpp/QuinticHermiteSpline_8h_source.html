@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.2.2-59-gf57c188</span>
+   &#160;<span id="projectnumber">2021.2.2-61-gfa7240a</span>
    </div>
   </td>
  </tr>
@@ -122,26 +122,54 @@ $(document).ready(function(){initNavTree('QuinticHermiteSpline_8h_source.html','
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      Eigen::Matrix&lt;double, 6, 6&gt;::Zero();</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keyword">static</span> Eigen::Matrix&lt;double, 6, 6&gt; MakeHermiteBasis() {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">// clang-format off</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">auto</span> basis = (Eigen::Matrix&lt;double, 6, 6&gt;() &lt;&lt;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      -06.0, -03.0, -00.5, +06.0, -03.0, +00.5,</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      +15.0, +08.0, +01.5, -15.0, +07.0, +01.0,</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      -10.0, -06.0, -01.5, +10.0, -04.0, +00.5,</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      +00.0, +00.0, +00.5, +00.0, +00.0, +00.0,</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      +00.0, +01.0, +00.0, +00.0, +00.0, +00.0,</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      +01.0, +00.0, +00.0, +00.0, +00.0, +00.0).finished();</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">// clang-format on</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">return</span> basis;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  }</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keyword">static</span> Eigen::Matrix&lt;double, 6, 1&gt; ControlVectorFromArrays(</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <a class="code" href="classwpi_1_1array.html">wpi::array&lt;double, 3&gt;</a> initialVector, <a class="code" href="classwpi_1_1array.html">wpi::array&lt;double, 3&gt;</a> finalVector) {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">return</span> (Eigen::Matrix&lt;double, 6, 1&gt;() &lt;&lt; initialVector[0], initialVector[1],</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            initialVector[2], finalVector[0], finalVector[1], finalVector[2])</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        .finished();</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  }</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;};</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">// Given P(i), P&#39;(i), P&#39;&#39;(i), P(i+1), P&#39;(i+1), P&#39;&#39;(i+1), the control</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">// vectors, we want to find the coefficients of the spline</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">// P(t) = a5 * t^5 + a4 * t^4 + a3 * t^3 + a2 * t^2 + a1 * t + a0.</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">// P(i)     = P(0)   = a0</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">// P&#39;(i)    = P&#39;(0)  = a1</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// P&#39;&#39;(i)   = P&#39;&#39;(0) = 2 * a2</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">// P(i+1)   = P(1)   = a5 + a4 + a3 + a2 + a1 + a0</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">// P&#39;(i+1)  = P&#39;(1)  = 5 * a5 + 4 * a4 + 3 * a3 + 2 * a2 + a1</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">// P&#39;&#39;(i+1) = P&#39;&#39;(1) = 20 * a5 + 12 * a4 + 6 * a3 + 2 * a2</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">// [ P(i)     ] = [  0  0  0  0  0  1 ][ a5 ]</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">// [ P&#39;(i)    ] = [  0  0  0  0  1  0 ][ a4 ]</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">// [ P&#39;&#39;(i)   ] = [  0  0  0  2  0  0 ][ a3 ]</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">// [ P(i+1)   ] = [  1  1  1  1  1  1 ][ a2 ]</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">// [ P&#39;(i+1)  ] = [  5  4  3  2  1  0 ][ a1 ]</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">// [ P&#39;&#39;(i+1) ] = [ 20 12  6  2  0  0 ][ a0 ]</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">// To solve for the coefficients, we can invert the 6x6 matrix and move it</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">// to the other side of the equation.</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment">// [ a5 ] = [  -6.0  -3.0  -0.5   6.0  -3.0   0.5 ][ P(i)     ]</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="comment">// [ a4 ] = [  15.0   8.0   1.5 -15.0   7.0  -1.0 ][ P&#39;(i)    ]</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">// [ a3 ] = [ -10.0  -6.0  -1.5  10.0  -4.0   0.5 ][ P&#39;&#39;(i)   ]</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="comment">// [ a2 ] = [   0.0   0.0   0.5   0.0   0.0   0.0 ][ P(i+1)   ]</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="comment">// [ a1 ] = [   0.0   1.0   0.0   0.0   0.0   0.0 ][ P&#39;(i+1)  ]</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="comment">// [ a0 ] = [   1.0   0.0   0.0   0.0   0.0   0.0 ][ P&#39;&#39;(i+1) ]</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="comment">// clang-format off</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">auto</span> basis = (Eigen::Matrix&lt;double, 6, 6&gt;() &lt;&lt;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      -06.0, -03.0, -00.5, +06.0, -03.0, +00.5,</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      +15.0, +08.0, +01.5, -15.0, +07.0, -01.0,</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      -10.0, -06.0, -01.5, +10.0, -04.0, +00.5,</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      +00.0, +00.0, +00.5, +00.0, +00.0, +00.0,</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      +00.0, +01.0, +00.0, +00.0, +00.0, +00.0,</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      +01.0, +00.0, +00.0, +00.0, +00.0, +00.0).finished();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="comment">// clang-format on</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">return</span> basis;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keyword">static</span> Eigen::Matrix&lt;double, 6, 1&gt; ControlVectorFromArrays(</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      <a class="code" href="classwpi_1_1array.html">wpi::array&lt;double, 3&gt;</a> initialVector, <a class="code" href="classwpi_1_1array.html">wpi::array&lt;double, 3&gt;</a> finalVector) {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordflow">return</span> (Eigen::Matrix&lt;double, 6, 1&gt;() &lt;&lt; initialVector[0], initialVector[1],</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            initialVector[2], finalVector[0], finalVector[1], finalVector[2])</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        .finished();</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  }</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;};</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;}  <span class="comment">// namespace frc</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassfrc_1_1Spline_html"><div class="ttname"><a href="classfrc_1_1Spline.html">frc::Spline</a></div><div class="ttdoc">Represents a two-dimensional parametric spline that interpolates between two points.</div><div class="ttdef"><b>Definition:</b> Spline.h:25</div></div>
@@ -154,7 +182,7 @@ $(document).ready(function(){initNavTree('QuinticHermiteSpline_8h_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_d71b639942242251bb415aa2ae346d4f.html">spline</a></li><li class="navelem"><b>QuinticHermiteSpline.h</b></li>
-    <li class="footer">Generated on Fri Apr 2 2021 15:28:46 for WPILibC++ by
+    <li class="footer">Generated on Sat Apr 3 2021 23:05:49 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>
