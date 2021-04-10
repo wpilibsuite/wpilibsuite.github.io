@@ -22,7 +22,6 @@ edu.wpi.first.wpilibj.kinematics
 edu.wpi.first.wpilibj.livewindow
 edu.wpi.first.wpilibj.math
 edu.wpi.first.wpilibj.networktables
-edu.wpi.first.wpilibj.romi
 edu.wpi.first.wpilibj.shuffleboard
 edu.wpi.first.wpilibj.simulation
 edu.wpi.first.wpilibj.smartdashboard
