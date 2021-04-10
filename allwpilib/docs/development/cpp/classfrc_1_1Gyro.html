@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.2.2-62-ga1c87e1</span>
+   &#160;<span id="projectnumber">2021.2.2-63-g01d0e12</span>
    </div>
   </td>
  </tr>
@@ -107,10 +107,9 @@ Inheritance diagram for frc::Gyro:</div>
  <div class="center">
   <img src="classfrc_1_1Gyro.png" usemap="#frc::Gyro_map" alt=""/>
   <map id="frc::Gyro_map" name="frc::Gyro_map">
-<area href="classfrc_1_1GyroBase.html" title="GyroBase is the common base class for Gyro implementations such as AnalogGyro." alt="frc::GyroBase" shape="rect" coords="143,56,276,80"/>
+<area href="classfrc_1_1GyroBase.html" title="GyroBase is the common base class for Gyro implementations such as AnalogGyro." alt="frc::GyroBase" shape="rect" coords="71,56,204,80"/>
 <area href="classfrc_1_1ADXRS450__Gyro.html" title="Use a rate gyro to return the robots heading relative to a starting position." alt="frc::ADXRS450_Gyro" shape="rect" coords="0,112,133,136"/>
 <area href="classfrc_1_1AnalogGyro.html" title="Use a rate gyro to return the robots heading relative to a starting position." alt="frc::AnalogGyro" shape="rect" coords="143,112,276,136"/>
-<area href="classfrc_1_1RomiGyro.html" title="Use a rate gyro to return the robots heading relative to a starting position." alt="frc::RomiGyro" shape="rect" coords="286,112,419,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -167,7 +166,7 @@ Public Member Functions</h2></td></tr>
 <p>Calibrate the gyro. </p>
 <p>It's important to make sure that the robot is not moving while the calibration is in progress, this is typically done when the robot is first turned on while it's sitting at rest before the match starts. </p>
 
-<p>Implemented in <a class="el" href="classfrc_1_1AnalogGyro.html#a28a4b47effb06921fe8a98d5a9d4c303">frc::AnalogGyro</a>, <a class="el" href="classfrc_1_1ADXRS450__Gyro.html#a4e2a2b0fcd3b03a479e05eb8f22deaa1">frc::ADXRS450_Gyro</a>, and <a class="el" href="classfrc_1_1RomiGyro.html#a31896381f3bc9c5b4b2582b519982d52">frc::RomiGyro</a>.</p>
+<p>Implemented in <a class="el" href="classfrc_1_1AnalogGyro.html#a28a4b47effb06921fe8a98d5a9d4c303">frc::AnalogGyro</a>, and <a class="el" href="classfrc_1_1ADXRS450__Gyro.html#a4e2a2b0fcd3b03a479e05eb8f22deaa1">frc::ADXRS450_Gyro</a>.</p>
 
 </div>
 </div>
@@ -199,7 +198,7 @@ Public Member Functions</h2></td></tr>
 <p>The angle is expected to increase as the gyro turns clockwise when looked at from the top. It needs to follow the NED axis convention.</p>
 <dl class="section return"><dt>Returns</dt><dd>the current heading of the robot in degrees. This heading is based on integration of the returned rate from the gyro. </dd></dl>
 
-<p>Implemented in <a class="el" href="classfrc_1_1AnalogGyro.html#aa38b3651e2e5e3dd6c564ba5f90f869b">frc::AnalogGyro</a>, <a class="el" href="classfrc_1_1ADXRS450__Gyro.html#aa556e13cbce13edd8989e07d75d8885d">frc::ADXRS450_Gyro</a>, and <a class="el" href="classfrc_1_1RomiGyro.html#a64bc69a5a93af1934f89a4c92a73287a">frc::RomiGyro</a>.</p>
+<p>Implemented in <a class="el" href="classfrc_1_1AnalogGyro.html#aa38b3651e2e5e3dd6c564ba5f90f869b">frc::AnalogGyro</a>, and <a class="el" href="classfrc_1_1ADXRS450__Gyro.html#aa556e13cbce13edd8989e07d75d8885d">frc::ADXRS450_Gyro</a>.</p>
 
 </div>
 </div>
@@ -231,7 +230,7 @@ Public Member Functions</h2></td></tr>
 <p>The rate is expected to be positive as the gyro turns clockwise when looked at from the top. It needs to follow the NED axis convention.</p>
 <dl class="section return"><dt>Returns</dt><dd>the current rate in degrees per second </dd></dl>
 
-<p>Implemented in <a class="el" href="classfrc_1_1AnalogGyro.html#ac4b9f9b77003b05b4445ea0468aa414d">frc::AnalogGyro</a>, <a class="el" href="classfrc_1_1ADXRS450__Gyro.html#a294f39dd58e1728d27f0570640f4ff2f">frc::ADXRS450_Gyro</a>, and <a class="el" href="classfrc_1_1RomiGyro.html#aa4cd0b927025c7cebd049135dbb109b9">frc::RomiGyro</a>.</p>
+<p>Implemented in <a class="el" href="classfrc_1_1AnalogGyro.html#ac4b9f9b77003b05b4445ea0468aa414d">frc::AnalogGyro</a>, and <a class="el" href="classfrc_1_1ADXRS450__Gyro.html#a294f39dd58e1728d27f0570640f4ff2f">frc::ADXRS450_Gyro</a>.</p>
 
 </div>
 </div>
@@ -291,7 +290,7 @@ Public Member Functions</h2></td></tr>
 <p>Reset the gyro. </p>
 <p>Resets the gyro to a heading of zero. This can be used if there is significant drift in the gyro and it needs to be recalibrated after it has been running. </p>
 
-<p>Implemented in <a class="el" href="classfrc_1_1RomiGyro.html#adcbbb5efd14da02228526cddf3cb21d8">frc::RomiGyro</a>, <a class="el" href="classfrc_1_1ADXRS450__Gyro.html#a548505e23354192ac81ffed5d21c9981">frc::ADXRS450_Gyro</a>, and <a class="el" href="classfrc_1_1AnalogGyro.html#a460c398825749aed4f2a50f21385e07e">frc::AnalogGyro</a>.</p>
+<p>Implemented in <a class="el" href="classfrc_1_1ADXRS450__Gyro.html#a548505e23354192ac81ffed5d21c9981">frc::ADXRS450_Gyro</a>, and <a class="el" href="classfrc_1_1AnalogGyro.html#a460c398825749aed4f2a50f21385e07e">frc::AnalogGyro</a>.</p>
 
 </div>
 </div>
@@ -304,7 +303,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1Gyro.html">Gyro</a></li>
-    <li class="footer">Generated on Tue Apr 6 2021 20:22:16 for WPILibC++ by
+    <li class="footer">Generated on Sat Apr 10 2021 17:30:05 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

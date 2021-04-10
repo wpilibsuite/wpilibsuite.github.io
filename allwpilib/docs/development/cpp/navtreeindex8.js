@@ -1,6 +1,5 @@
 var NAVTREEINDEX8 =
 {
-"classfrc_1_1DifferentialDriveKinematics.html#a10b5f836f3e62bd397be3f426e4a54d3":[5,0,2,43,3],
 "classfrc_1_1DifferentialDriveKinematics.html#a12f5140b2c56473e2594e5bbd6138980":[5,0,2,43,1],
 "classfrc_1_1DifferentialDriveKinematics.html#aad1ec6f260c93d1efff03f285f9308f7":[5,0,2,43,2],
 "classfrc_1_1DifferentialDriveKinematics.html#ab66a093dd7521eded273cb45cae32260":[5,0,2,43,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX8 =
 "classfrc_1_1Encoder.html#a8dd886aeff72fdd847a45f3bee3810b1":[5,0,2,62,31],
 "classfrc_1_1Encoder.html#a981f675176708a1580d7f48779de56e4":[5,0,2,62,21],
 "classfrc_1_1Encoder.html#aa1416f313ea0a6685161d00010079018":[5,0,2,62,14],
-"classfrc_1_1Encoder.html#aa4f7f54349ffde3f93419ca80d96d820":[5,0,2,62,13]
+"classfrc_1_1Encoder.html#aa4f7f54349ffde3f93419ca80d96d820":[5,0,2,62,13],
+"classfrc_1_1Encoder.html#aaa0a1b07f1426dd0e4efafe68adef283":[5,0,2,62,28]
 };
