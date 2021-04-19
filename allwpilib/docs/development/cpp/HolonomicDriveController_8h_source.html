@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.2.2-67-g659b37e</span>
+   &#160;<span id="projectnumber">2021.2.2-68-gaaf24e2</span>
    </div>
   </td>
  </tr>
@@ -139,8 +139,10 @@ $(document).ready(function(){initNavTree('HolonomicDriveController_8h_source.htm
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <a class="code" href="classfrc2_1_1PIDController.html">frc2::PIDController</a> m_xController;</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <a class="code" href="classfrc2_1_1PIDController.html">frc2::PIDController</a> m_yController;</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <a class="code" href="classfrc_1_1ProfiledPIDController.html">ProfiledPIDController&lt;units::radian&gt;</a> m_thetaController;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;};</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keywordtype">bool</span> m_firstRun = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;};</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;}  <span class="comment">// namespace frc</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassfrc_1_1HolonomicDriveController_html_a3c111c2c83d6277b1126cab5ca95d518"><div class="ttname"><a href="classfrc_1_1HolonomicDriveController.html#a3c111c2c83d6277b1126cab5ca95d518">frc::HolonomicDriveController::SetTolerance</a></div><div class="ttdeci">void SetTolerance(const Pose2d &amp;tolerance)</div><div class="ttdoc">Sets the pose error which is considered tolerable for use with AtReference().</div></div>
@@ -161,7 +163,7 @@ $(document).ready(function(){initNavTree('HolonomicDriveController_8h_source.htm
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_3c9e6ed63c4d2954b1495d7f7af56122.html">controller</a></li><li class="navelem"><b>HolonomicDriveController.h</b></li>
-    <li class="footer">Generated on Mon Apr 19 2021 03:36:47 for WPILibC++ by
+    <li class="footer">Generated on Mon Apr 19 2021 04:02:04 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>
