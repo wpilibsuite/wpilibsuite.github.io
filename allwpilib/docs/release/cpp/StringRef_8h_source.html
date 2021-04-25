@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>WPILibC++: /home/runner/work/allwpilib/allwpilib/wpiutil/src/main/native/include/wpi/StringRef.h Source File</title>
+<title>WPILibC++: wpi/StringRef.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.2.2</span>
+   &#160;<span id="projectnumber">2021.3.1</span>
    </div>
   </td>
  </tr>
@@ -740,7 +740,7 @@ $(document).ready(function(){initNavTree('StringRef_8h_source.html',''); initRes
 <div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;  hash_code hash_value(StringRef S);</div>
 <div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160; </div>
 <div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;  <span class="comment">// StringRefs can be treated like a POD type.</span></div>
-<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="keyword">struct </span>isPodLike;</div>
+<div class="line"><a name="l00942"></a><span class="lineno"><a class="line" href="structwpi_1_1isPodLike.html">  942</a></span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="keyword">struct </span><a class="code" href="structwpi_1_1isPodLike.html">isPodLike</a>;</div>
 <div class="line"><a name="l00943"></a><span class="lineno"><a class="line" href="structwpi_1_1isPodLike_3_01StringRef_01_4.html">  943</a></span>&#160;  <span class="keyword">template</span> &lt;&gt; <span class="keyword">struct </span><a class="code" href="structwpi_1_1isPodLike.html">isPodLike</a>&lt;<a class="code" href="classwpi_1_1StringRef.html">StringRef</a>&gt; { <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> value = <span class="keyword">true</span>; };</div>
 <div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160; </div>
 <div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;} <span class="comment">// end namespace wpi</span></div>
@@ -751,7 +751,7 @@ $(document).ready(function(){initNavTree('StringRef_8h_source.html',''); initRes
 <div class="ttc" id="aclasswpi_1_1StringRef_html_a94042179e20fcd58a98aa682947da216"><div class="ttname"><a href="classwpi_1_1StringRef.html#a94042179e20fcd58a98aa682947da216">wpi::StringRef::count</a></div><div class="ttdeci">LLVM_NODISCARD size_t count(char C) const noexcept</div><div class="ttdoc">Return the number of occurrences of C in the string.</div><div class="ttdef"><b>Definition:</b> StringRef.h:454</div></div>
 <div class="ttc" id="aclasswpi_1_1StringRef_html_a1bc6e1f6d4af6abc5c531df970943669"><div class="ttname"><a href="classwpi_1_1StringRef.html#a1bc6e1f6d4af6abc5c531df970943669">wpi::StringRef::empty</a></div><div class="ttdeci">LLVM_NODISCARD LLVM_ATTRIBUTE_ALWAYS_INLINE bool empty() const noexcept</div><div class="ttdoc">empty - Check if the string is empty.</div><div class="ttdef"><b>Definition:</b> StringRef.h:133</div></div>
 <div class="ttc" id="aclasswpi_1_1StringRef_html_af2495c7f6816028bb741ae99a803c6f3"><div class="ttname"><a href="classwpi_1_1StringRef.html#af2495c7f6816028bb741ae99a803c6f3">wpi::StringRef::trim</a></div><div class="ttdeci">LLVM_NODISCARD StringRef trim(char Char) const noexcept</div><div class="ttdoc">Return string with consecutive Char characters starting from the left and right removed.</div><div class="ttdef"><b>Definition:</b> StringRef.h:806</div></div>
-<div class="ttc" id="astructwpi_1_1isPodLike_html"><div class="ttname"><a href="structwpi_1_1isPodLike.html">wpi::isPodLike</a></div><div class="ttdoc">isPodLike - This is a type trait that is used to determine whether a given type can be copied around ...</div><div class="ttdef"><b>Definition:</b> PointerIntPair.h:179</div></div>
+<div class="ttc" id="astructwpi_1_1isPodLike_html"><div class="ttname"><a href="structwpi_1_1isPodLike.html">wpi::isPodLike</a></div><div class="ttdoc">isPodLike - This is a type trait that is used to determine whether a given type can be copied around ...</div><div class="ttdef"><b>Definition:</b> StringRef.h:942</div></div>
 <div class="ttc" id="aclasswpi_1_1StringRef_html_ae075a7620907ce3e46c9d53321fac324"><div class="ttname"><a href="classwpi_1_1StringRef.html#ae075a7620907ce3e46c9d53321fac324">wpi::StringRef::take_front</a></div><div class="ttdeci">LLVM_NODISCARD LLVM_ATTRIBUTE_ALWAYS_INLINE StringRef take_front(size_t N=1) const noexcept</div><div class="ttdoc">Return a StringRef equal to 'this' but with only the first N elements remaining.</div><div class="ttdef"><b>Definition:</b> StringRef.h:566</div></div>
 <div class="ttc" id="aclasswpi_1_1StringRef_html_a54a500766ebe40757116bca047131d74"><div class="ttname"><a href="classwpi_1_1StringRef.html#a54a500766ebe40757116bca047131d74">wpi::StringRef::split</a></div><div class="ttdeci">LLVM_NODISCARD std::pair&lt; StringRef, StringRef &gt; split(char Separator) const</div><div class="ttdoc">Split into two substrings around the first occurrence of a separator character.</div><div class="ttdef"><b>Definition:</b> StringRef.h:685</div></div>
 <div class="ttc" id="aclasswpi_1_1StringRef_html_a927ec279d16b084402c286ff7b2e3e62"><div class="ttname"><a href="classwpi_1_1StringRef.html#a927ec279d16b084402c286ff7b2e3e62">wpi::StringRef::split</a></div><div class="ttdeci">void split(SmallVectorImpl&lt; StringRef &gt; &amp;A, StringRef Separator, int MaxSplit=-1, bool KeepEmpty=true) const</div><div class="ttdoc">Split into substrings around the occurrences of a separator string.</div></div>
@@ -829,8 +829,8 @@ $(document).ready(function(){initNavTree('StringRef_8h_source.html',''); initRes
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_ee3b12e3cc58cd62f356d078e112eeb4.html">wpiutil</a></li><li class="navelem"><a class="el" href="dir_0b37bdc985dfb85cd82ca92a771d9e04.html">src</a></li><li class="navelem"><a class="el" href="dir_19031513f3361c45d712cdc1c5b1f353.html">main</a></li><li class="navelem"><a class="el" href="dir_48410d5e596f2d65a12ffcdcda0be254.html">native</a></li><li class="navelem"><a class="el" href="dir_d01089097591e603100023951e2380fe.html">include</a></li><li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><b>StringRef.h</b></li>
-    <li class="footer">Generated on Sat Jan 30 2021 03:45:38 for WPILibC++ by
+    <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><b>StringRef.h</b></li>
+    <li class="footer">Generated on Sun Apr 25 2021 03:25:25 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

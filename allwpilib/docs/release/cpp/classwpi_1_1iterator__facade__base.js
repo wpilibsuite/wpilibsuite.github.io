@@ -1,8 +1,8 @@
 var classwpi_1_1iterator__facade__base =
 [
     [ "ReferenceProxy", "classwpi_1_1iterator__facade__base_1_1ReferenceProxy.html", "classwpi_1_1iterator__facade__base_1_1ReferenceProxy" ],
-    [ "IsRandomAccess", "classwpi_1_1iterator__facade__base.html#a7c43a267878f6b2fd0aec7f40eb76dd6acfc903a00519f6a6735cda38c69cf415", null ],
-    [ "IsBidirectional", "classwpi_1_1iterator__facade__base.html#a7c43a267878f6b2fd0aec7f40eb76dd6a2a8b20fbd803bbe6415bd16fc1c7ccde", null ],
+    [ "IsRandomAccess", "classwpi_1_1iterator__facade__base.html#a9f99bfcc3c9ce4f012d8edbcaedf3c13acfc903a00519f6a6735cda38c69cf415", null ],
+    [ "IsBidirectional", "classwpi_1_1iterator__facade__base.html#a9f99bfcc3c9ce4f012d8edbcaedf3c13a2a8b20fbd803bbe6415bd16fc1c7ccde", null ],
     [ "operator!=", "classwpi_1_1iterator__facade__base.html#a0710ff3105b89fac2f5f06e2f3acdd2f", null ],
     [ "operator+", "classwpi_1_1iterator__facade__base.html#a48de662a50e0c39e792ba1a1a7bc5479", null ],
     [ "operator++", "classwpi_1_1iterator__facade__base.html#a923838d50307495b82affd6d2cdbd8cb", null ],

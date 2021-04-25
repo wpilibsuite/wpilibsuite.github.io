@@ -117,6 +117,8 @@ var hierarchy =
       [ "frc::ToggleButtonScheduler", "classfrc_1_1ToggleButtonScheduler.html", null ]
     ] ],
     [ "frc::SendableRegistry::CallbackData", "structfrc_1_1SendableRegistry_1_1CallbackData.html", null ],
+    [ "wpi::CallbackListenerData< Callback >", "classwpi_1_1CallbackListenerData.html", null ],
+    [ "wpi::CallbackManager< Derived, Thread >", "classwpi_1_1CallbackManager.html", null ],
     [ "frc::sim::CallbackStore", "classfrc_1_1sim_1_1CallbackStore.html", null ],
     [ "frc::CameraServer", "classfrc_1_1CameraServer.html", null ],
     [ "frc::CameraServerShared", "classfrc_1_1CameraServerShared.html", null ],
@@ -211,6 +213,7 @@ var hierarchy =
     [ "wpi::sys::fs::directory_entry", "classwpi_1_1sys_1_1fs_1_1directory__entry.html", null ],
     [ "wpi::sys::fs::directory_iterator", "classwpi_1_1sys_1_1fs_1_1directory__iterator.html", null ],
     [ "wpi::sys::fs::detail::DirIterState", "structwpi_1_1sys_1_1fs_1_1detail_1_1DirIterState.html", null ],
+    [ "frc::sim::DoubleSolenoidSim", "classfrc_1_1sim_1_1DoubleSolenoidSim.html", null ],
     [ "frc::sim::DriverStationSim", "classfrc_1_1sim_1_1DriverStationSim.html", null ],
     [ "frc::sim::DutyCycleEncoderSim", "classfrc_1_1sim_1_1DutyCycleEncoderSim.html", null ],
     [ "frc::sim::DutyCycleSim", "classfrc_1_1sim_1_1DutyCycleSim.html", null ],
@@ -308,8 +311,8 @@ var hierarchy =
     [ "nt::EntryNotification", "classnt_1_1EntryNotification.html", null ],
     [ "wpi::detail::enumerator< R >", "classwpi_1_1detail_1_1enumerator.html", null ],
     [ "wpi::detail::enumerator_iter< R >", "classwpi_1_1detail_1_1enumerator__iter.html", null ],
-    [ "wpi::uv::Error", "classwpi_1_1uv_1_1Error.html", null ],
     [ "frc::Error", "classfrc_1_1Error.html", null ],
+    [ "wpi::uv::Error", "classwpi_1_1uv_1_1Error.html", null ],
     [ "wpi::Error", "classwpi_1_1Error.html", [
       [ "wpi::ErrorSuccess", "classwpi_1_1ErrorSuccess.html", null ]
     ] ],
@@ -605,7 +608,6 @@ var hierarchy =
     [ "HAL_MatchInfo", "structHAL__MatchInfo.html", null ],
     [ "HAL_Value", "structHAL__Value.html", null ],
     [ "HALSIM_NotifierInfo", "structHALSIM__NotifierInfo.html", null ],
-    [ "wpi::DebugEpochBase::HandleBase", "classwpi_1_1DebugEpochBase_1_1HandleBase.html", null ],
     [ "hal::HandleBase", "classhal_1_1HandleBase.html", [
       [ "hal::DigitalHandleResource< THandle, TStruct, size >", "classhal_1_1DigitalHandleResource.html", null ],
       [ "hal::IndexedClassedHandleResource< THandle, TStruct, size, enumValue >", "classhal_1_1IndexedClassedHandleResource.html", null ],
@@ -614,6 +616,7 @@ var hierarchy =
       [ "hal::LimitedHandleResource< THandle, TStruct, size, enumValue >", "classhal_1_1LimitedHandleResource.html", null ],
       [ "hal::UnlimitedHandleResource< THandle, TStruct, enumValue >", "classhal_1_1UnlimitedHandleResource.html", null ]
     ] ],
+    [ "wpi::DebugEpochBase::HandleBase", "classwpi_1_1DebugEpochBase_1_1HandleBase.html", null ],
     [ "wpi::detail::has_from_json< BasicJsonType, T >", "structwpi_1_1detail_1_1has__from__json.html", null ],
     [ "wpi::detail::has_non_default_from_json< BasicJsonType, T >", "structwpi_1_1detail_1_1has__non__default__from__json.html", null ],
     [ "wpi::has_rbegin_impl< Ty >", "classwpi_1_1has__rbegin__impl.html", null ],
@@ -644,9 +647,7 @@ var hierarchy =
     ] ],
     [ "wpi::identity< Ty >", "structwpi_1_1identity.html", null ],
     [ "integral_constant", null, [
-      [ "std::tuple_size< wpi::array< T, N > >", "structstd_1_1tuple__size_3_01wpi_1_1array_3_01T_00_01N_01_4_01_4.html", null ]
-    ] ],
-    [ "integral_constant", null, [
+      [ "std::tuple_size< wpi::array< T, N > >", "structstd_1_1tuple__size_3_01wpi_1_1array_3_01T_00_01N_01_4_01_4.html", null ],
       [ "wpi::detail::ConstantLog2< N >", "structwpi_1_1detail_1_1ConstantLog2.html", null ],
       [ "wpi::detail::ConstantLog2< 1 >", "structwpi_1_1detail_1_1ConstantLog2_3_011_01_4.html", null ],
       [ "wpi::hashing::detail::is_hashable_data< T >", "structwpi_1_1hashing_1_1detail_1_1is__hashable__data.html", null ],
@@ -927,6 +928,7 @@ var hierarchy =
     [ "wpi::PointerUnionTypeSelectorReturn< T >", "structwpi_1_1PointerUnionTypeSelectorReturn.html", null ],
     [ "wpi::PointerUnionTypeSelectorReturn< PointerUnionTypeSelector< T1, T2, RET_EQ, RET_NE > >", "structwpi_1_1PointerUnionTypeSelectorReturn_3_01PointerUnionTypeSelector_3_01T1_00_01T2_00_01RET__EQ_00_01RET__NE_01_4_01_4.html", null ],
     [ "wpi::PointerUnionUIntTraits< PT1, PT2 >", "classwpi_1_1PointerUnionUIntTraits.html", null ],
+    [ "wpi::CallbackThread< Derived, TUserInfo, TListenerData, TNotifierData >::Poller", "structwpi_1_1CallbackThread_1_1Poller.html", null ],
     [ "wpi::detail::PopulationCounter< T, SizeOfT >", "structwpi_1_1detail_1_1PopulationCounter.html", null ],
     [ "wpi::detail::PopulationCounter< T, 8 >", "structwpi_1_1detail_1_1PopulationCounter_3_01T_00_018_01_4.html", null ],
     [ "wpi::PortForwarder", "classwpi_1_1PortForwarder.html", null ],
@@ -1013,6 +1015,7 @@ var hierarchy =
       [ "frc::SplineParameterizer::MalformedSplineException", "structfrc_1_1SplineParameterizer_1_1MalformedSplineException.html", null ]
     ] ],
     [ "wpi::SafeThread", "classwpi_1_1SafeThread.html", [
+      [ "wpi::CallbackThread< Derived, TUserInfo, TListenerData, TNotifierData >", "classwpi_1_1CallbackThread.html", null ],
       [ "wpi::detail::WorkerThreadThread< R, T >", "classwpi_1_1detail_1_1WorkerThreadThread.html", null ],
       [ "wpi::java::JCallbackThread< T >", "classwpi_1_1java_1_1JCallbackThread.html", null ]
     ] ],
@@ -1440,6 +1443,7 @@ var hierarchy =
     [ "wpi::SmallVectorStorage< wpi::uv::Buffer, N >", "structwpi_1_1SmallVectorStorage.html", [
       [ "wpi::SmallVector< wpi::uv::Buffer, 4 >", "classwpi_1_1SmallVector.html", null ]
     ] ],
+    [ "frc::sim::SolenoidSim", "classfrc_1_1sim_1_1SolenoidSim.html", null ],
     [ "wpi::sys::fs::space_info", "structwpi_1_1sys_1_1fs_1_1space__info.html", null ],
     [ "frc::sim::SPIAccelerometerSim", "classfrc_1_1sim_1_1SPIAccelerometerSim.html", null ],
     [ "wpi::spinlock", "classwpi_1_1spinlock.html", null ],
@@ -1452,9 +1456,9 @@ var hierarchy =
     ] ],
     [ "frc::SplineHelper", "classfrc_1_1SplineHelper.html", null ],
     [ "frc::SplineParameterizer", "classfrc_1_1SplineParameterizer.html", null ],
-    [ "frc::Trajectory::State", "structfrc_1_1Trajectory_1_1State.html", null ],
-    [ "frc::TrapezoidProfile< Distance >::State", "classfrc_1_1TrapezoidProfile_1_1State.html", null ],
     [ "frc::sim::DifferentialDrivetrainSim::State", "classfrc_1_1sim_1_1DifferentialDrivetrainSim_1_1State.html", null ],
+    [ "frc::TrapezoidProfile< Distance >::State", "classfrc_1_1TrapezoidProfile_1_1State.html", null ],
+    [ "frc::Trajectory::State", "structfrc_1_1Trajectory_1_1State.html", null ],
     [ "wpi::static_circular_buffer< T, N >", "classwpi_1_1static__circular__buffer.html", null ],
     [ "wpi::detail::static_const< T >", "structwpi_1_1detail_1_1static__const.html", null ],
     [ "wpi::StringMapConstIterator< ValueTy >", "classwpi_1_1StringMapConstIterator.html", null ],
@@ -1484,8 +1488,8 @@ var hierarchy =
     [ "frc::SwerveModuleState", "structfrc_1_1SwerveModuleState.html", null ],
     [ "wpi::TCPConnector", "classwpi_1_1TCPConnector.html", null ],
     [ "wpi::ThreadSafeRefCountedBase< Derived >", "classwpi_1_1ThreadSafeRefCountedBase.html", null ],
-    [ "frc2::Timer", "classfrc2_1_1Timer.html", null ],
     [ "frc::Timer", "classfrc_1_1Timer.html", null ],
+    [ "frc2::Timer", "classfrc2_1_1Timer.html", null ],
     [ "wpi::detail::to_json_fn", "structwpi_1_1detail_1_1to__json__fn.html", null ],
     [ "frc::Tracer", "classfrc_1_1Tracer.html", null ],
     [ "wpi::detail::TrailingZerosCounter< T, SizeOfT >", "structwpi_1_1detail_1_1TrailingZerosCounter.html", null ],
@@ -1529,6 +1533,8 @@ var hierarchy =
     [ "wpi::sig::trait::typelist<... >", "structwpi_1_1sig_1_1trait_1_1typelist.html", null ],
     [ "wpi::UDPClient", "classwpi_1_1UDPClient.html", null ],
     [ "wpi::UidVector< T, reuse_threshold >", "classwpi_1_1UidVector.html", null ],
+    [ "wpi::UidVector< ListenerData, 64 >", "classwpi_1_1UidVector.html", null ],
+    [ "wpi::UidVector< std::shared_ptr< wpi::CallbackThread::Poller >, 64 >", "classwpi_1_1UidVector.html", null ],
     [ "wpi::impl::UidVectorIterator< It >", "classwpi_1_1impl_1_1UidVectorIterator.html", null ],
     [ "wpi::unique_function< FunctionT >", "classwpi_1_1unique__function.html", null ],
     [ "wpi::unique_function< ReturnT(ParamTs...)>", "classwpi_1_1unique__function_3_01ReturnT_07ParamTs_8_8_8_08_4.html", null ],

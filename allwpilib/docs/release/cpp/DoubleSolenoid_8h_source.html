@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>WPILibC++: /home/runner/work/allwpilib/allwpilib/wpilibc/src/main/native/include/frc/DoubleSolenoid.h Source File</title>
+<title>WPILibC++: frc/DoubleSolenoid.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.2.2</span>
+   &#160;<span id="projectnumber">2021.3.1</span>
    </div>
   </td>
  </tr>
@@ -130,32 +130,38 @@ $(document).ready(function(){initNavTree('DoubleSolenoid_8h_source.html',''); in
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
 <div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="classfrc_1_1DoubleSolenoid.html#a962bf67a698287c36ddc655ae859e423">   75</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1DoubleSolenoid.html#a962bf67a698287c36ddc655ae859e423">Toggle</a>();</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="classfrc_1_1DoubleSolenoid.html#aaefc5ac6379dc587300f2d71c18983a6">   86</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1DoubleSolenoid.html#aaefc5ac6379dc587300f2d71c18983a6">IsFwdSolenoidBlackListed</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="classfrc_1_1DoubleSolenoid.html#ad8912756b195312121d54ec4d25022f6">   97</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1DoubleSolenoid.html#ad8912756b195312121d54ec4d25022f6">IsRevSolenoidBlackListed</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="classfrc_1_1DoubleSolenoid.html#a0e664de9c44d6b91b6d36cdcc8b2df7b">   99</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1DoubleSolenoid.html#a0e664de9c44d6b91b6d36cdcc8b2df7b">InitSendable</a>(<a class="code" href="classfrc_1_1SendableBuilder.html">SendableBuilder</a>&amp; builder) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keywordtype">int</span> m_forwardChannel;  <span class="comment">// The forward channel on the module to control.</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordtype">int</span> m_reverseChannel;  <span class="comment">// The reverse channel on the module to control.</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keywordtype">int</span> m_forwardMask;     <span class="comment">// The mask for the forward channel.</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keywordtype">int</span> m_reverseMask;     <span class="comment">// The mask for the reverse channel.</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  hal::Handle&lt;HAL_SolenoidHandle&gt; m_forwardHandle;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  hal::Handle&lt;HAL_SolenoidHandle&gt; m_reverseHandle;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;};</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classfrc_1_1DoubleSolenoid.html#ab3c04f238871212ccbb4e5310876cb52">   82</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classfrc_1_1DoubleSolenoid.html#ab3c04f238871212ccbb4e5310876cb52">GetFwdChannel</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classfrc_1_1DoubleSolenoid.html#aed301265eb12da821fcbf904b3c31452">   89</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classfrc_1_1DoubleSolenoid.html#aed301265eb12da821fcbf904b3c31452">GetRevChannel</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="classfrc_1_1DoubleSolenoid.html#aaefc5ac6379dc587300f2d71c18983a6">  100</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1DoubleSolenoid.html#aaefc5ac6379dc587300f2d71c18983a6">IsFwdSolenoidBlackListed</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="classfrc_1_1DoubleSolenoid.html#ad8912756b195312121d54ec4d25022f6">  111</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1DoubleSolenoid.html#ad8912756b195312121d54ec4d25022f6">IsRevSolenoidBlackListed</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="classfrc_1_1DoubleSolenoid.html#a0e664de9c44d6b91b6d36cdcc8b2df7b">  113</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1DoubleSolenoid.html#a0e664de9c44d6b91b6d36cdcc8b2df7b">InitSendable</a>(<a class="code" href="classfrc_1_1SendableBuilder.html">SendableBuilder</a>&amp; builder) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="keywordtype">int</span> m_forwardChannel;  <span class="comment">// The forward channel on the module to control.</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keywordtype">int</span> m_reverseChannel;  <span class="comment">// The reverse channel on the module to control.</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="keywordtype">int</span> m_forwardMask;     <span class="comment">// The mask for the forward channel.</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keywordtype">int</span> m_reverseMask;     <span class="comment">// The mask for the reverse channel.</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  hal::Handle&lt;HAL_SolenoidHandle&gt; m_forwardHandle;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  hal::Handle&lt;HAL_SolenoidHandle&gt; m_reverseHandle;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;};</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;}  <span class="comment">// namespace frc</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclassfrc_1_1DoubleSolenoid_html_aed301265eb12da821fcbf904b3c31452"><div class="ttname"><a href="classfrc_1_1DoubleSolenoid.html#aed301265eb12da821fcbf904b3c31452">frc::DoubleSolenoid::GetRevChannel</a></div><div class="ttdeci">int GetRevChannel() const</div><div class="ttdoc">Get the reverse channel.</div></div>
 <div class="ttc" id="aclassfrc_1_1DoubleSolenoid_html_ae3cd05c474cc2812d80b8432a7e65db2"><div class="ttname"><a href="classfrc_1_1DoubleSolenoid.html#ae3cd05c474cc2812d80b8432a7e65db2">frc::DoubleSolenoid::Set</a></div><div class="ttdeci">virtual void Set(Value value)</div><div class="ttdoc">Set the value of a solenoid.</div></div>
 <div class="ttc" id="aclassfrc_1_1DoubleSolenoid_html"><div class="ttname"><a href="classfrc_1_1DoubleSolenoid.html">frc::DoubleSolenoid</a></div><div class="ttdoc">DoubleSolenoid class for running 2 channels of high voltage Digital Output (PCM).</div><div class="ttdef"><b>Definition:</b> DoubleSolenoid.h:26</div></div>
 <div class="ttc" id="aclassfrc_1_1DoubleSolenoid_html_a962bf67a698287c36ddc655ae859e423"><div class="ttname"><a href="classfrc_1_1DoubleSolenoid.html#a962bf67a698287c36ddc655ae859e423">frc::DoubleSolenoid::Toggle</a></div><div class="ttdeci">void Toggle()</div><div class="ttdoc">Toggle the value of the solenoid.</div></div>
+<div class="ttc" id="aclassfrc_1_1DoubleSolenoid_html_ab3c04f238871212ccbb4e5310876cb52"><div class="ttname"><a href="classfrc_1_1DoubleSolenoid.html#ab3c04f238871212ccbb4e5310876cb52">frc::DoubleSolenoid::GetFwdChannel</a></div><div class="ttdeci">int GetFwdChannel() const</div><div class="ttdoc">Get the forward channel.</div></div>
 <div class="ttc" id="aclassfrc_1_1DoubleSolenoid_html_aaefc5ac6379dc587300f2d71c18983a6"><div class="ttname"><a href="classfrc_1_1DoubleSolenoid.html#aaefc5ac6379dc587300f2d71c18983a6">frc::DoubleSolenoid::IsFwdSolenoidBlackListed</a></div><div class="ttdeci">bool IsFwdSolenoidBlackListed() const</div><div class="ttdoc">Check if the forward solenoid is blacklisted.</div></div>
 <div class="ttc" id="aclassfrc_1_1SolenoidBase_html"><div class="ttname"><a href="classfrc_1_1SolenoidBase.html">frc::SolenoidBase</a></div><div class="ttdoc">SolenoidBase class is the common base class for the Solenoid and DoubleSolenoid classes.</div><div class="ttdef"><b>Definition:</b> SolenoidBase.h:15</div></div>
 <div class="ttc" id="aclassfrc_1_1Sendable_html"><div class="ttname"><a href="classfrc_1_1Sendable.html">frc::Sendable</a></div><div class="ttdoc">Interface for Sendable objects.</div><div class="ttdef"><b>Definition:</b> Sendable.h:14</div></div>
 <div class="ttc" id="aclassfrc_1_1DoubleSolenoid_html_a08adf7203f2a4810f41a947f62a54aee"><div class="ttname"><a href="classfrc_1_1DoubleSolenoid.html#a08adf7203f2a4810f41a947f62a54aee">frc::DoubleSolenoid::DoubleSolenoid</a></div><div class="ttdeci">DoubleSolenoid(int moduleNumber, int forwardChannel, int reverseChannel)</div><div class="ttdoc">Constructor.</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> VisionRunner.h:15</div></div>
+<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> VisionRunner.inc:9</div></div>
 <div class="ttc" id="aclassfrc_1_1DoubleSolenoid_html_a0e664de9c44d6b91b6d36cdcc8b2df7b"><div class="ttname"><a href="classfrc_1_1DoubleSolenoid.html#a0e664de9c44d6b91b6d36cdcc8b2df7b">frc::DoubleSolenoid::InitSendable</a></div><div class="ttdeci">void InitSendable(SendableBuilder &amp;builder) override</div><div class="ttdoc">Initializes this Sendable object.</div></div>
 <div class="ttc" id="aclassfrc_1_1DoubleSolenoid_html_a08376011bc958554bb88cecda1b71208"><div class="ttname"><a href="classfrc_1_1DoubleSolenoid.html#a08376011bc958554bb88cecda1b71208">frc::DoubleSolenoid::DoubleSolenoid</a></div><div class="ttdeci">DoubleSolenoid(int forwardChannel, int reverseChannel)</div><div class="ttdoc">Constructor.</div></div>
 <div class="ttc" id="aclassfrc_1_1DoubleSolenoid_html_ad8912756b195312121d54ec4d25022f6"><div class="ttname"><a href="classfrc_1_1DoubleSolenoid.html#ad8912756b195312121d54ec4d25022f6">frc::DoubleSolenoid::IsRevSolenoidBlackListed</a></div><div class="ttdeci">bool IsRevSolenoidBlackListed() const</div><div class="ttdoc">Check if the reverse solenoid is blacklisted.</div></div>
@@ -165,8 +171,8 @@ $(document).ready(function(){initNavTree('DoubleSolenoid_8h_source.html',''); in
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_c83246fd67bf422561e892c78521edd1.html">wpilibc</a></li><li class="navelem"><a class="el" href="dir_a55b36a80db95a4ab182a656f2eb2509.html">src</a></li><li class="navelem"><a class="el" href="dir_0fce2ef06e3c6f43f5c610d197b1a66e.html">main</a></li><li class="navelem"><a class="el" href="dir_05ef35d0b06c7e71bb0c2a8a996c52cb.html">native</a></li><li class="navelem"><a class="el" href="dir_9bb56e9ddac3e93dcc0aa7b90d99af5f.html">include</a></li><li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><b>DoubleSolenoid.h</b></li>
-    <li class="footer">Generated on Sat Jan 30 2021 03:45:36 for WPILibC++ by
+    <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><b>DoubleSolenoid.h</b></li>
+    <li class="footer">Generated on Sun Apr 25 2021 03:25:23 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

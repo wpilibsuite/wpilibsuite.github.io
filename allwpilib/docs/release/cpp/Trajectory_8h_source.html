@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>WPILibC++: /home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/include/frc/trajectory/Trajectory.h Source File</title>
+<title>WPILibC++: frc/trajectory/Trajectory.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.2.2</span>
+   &#160;<span id="projectnumber">2021.3.1</span>
    </div>
   </td>
  </tr>
@@ -152,31 +152,34 @@ $(document).ready(function(){initNavTree('Trajectory_8h_source.html',''); initRe
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
 <div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="classfrc_1_1Trajectory.html#a9c7e0e4359e85433348094cdc0d06b6d">  120</a></span>&#160;  <a class="code" href="classfrc_1_1Trajectory.html">Trajectory</a> <a class="code" href="classfrc_1_1Trajectory.html#a9c7e0e4359e85433348094cdc0d06b6d">RelativeTo</a>(<span class="keyword">const</span> <a class="code" href="classfrc_1_1Pose2d.html">Pose2d</a>&amp; pose);</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
-<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="classfrc_1_1Trajectory.html#af317c5d052e653165ef4567d038b6517">  127</a></span>&#160;  <a class="code" href="classfrc_1_1Pose2d.html">Pose2d</a> <a class="code" href="classfrc_1_1Trajectory.html#af317c5d052e653165ef4567d038b6517">InitialPose</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classfrc_1_1Trajectory.html#ae85ba571394bab7d9607a9eb8a227578">Sample</a>(0_s).pose; }</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
-<div class="line"><a name="l00135"></a><span class="lineno"><a class="line" href="classfrc_1_1Trajectory.html#acba50fab8a39dea2aebf1308797db39c">  135</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1Trajectory.html#acba50fab8a39dea2aebf1308797db39c">operator==</a>(<span class="keyword">const</span> <a class="code" href="classfrc_1_1Trajectory.html">Trajectory</a>&amp; other) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
-<div class="line"><a name="l00143"></a><span class="lineno"><a class="line" href="classfrc_1_1Trajectory.html#a87a8a48a591677006244409dc568960d">  143</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1Trajectory.html#a87a8a48a591677006244409dc568960d">operator!=</a>(<span class="keyword">const</span> <a class="code" href="classfrc_1_1Trajectory.html">Trajectory</a>&amp; other) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  std::vector&lt;State&gt; m_states;</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  units::second_t m_totalTime = 0_s;</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  <span class="keyword">static</span> T Lerp(<span class="keyword">const</span> T&amp; startValue, <span class="keyword">const</span> T&amp; endValue, <span class="keyword">const</span> <span class="keywordtype">double</span> t) {</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordflow">return</span> startValue + (endValue - startValue) * t;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  }</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;};</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="keywordtype">void</span> to_json(<a class="code" href="classwpi_1_1json.html">wpi::json</a>&amp; json, <span class="keyword">const</span> Trajectory::State&amp; state);</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="keywordtype">void</span> from_json(<span class="keyword">const</span> <a class="code" href="classwpi_1_1json.html">wpi::json</a>&amp; json, Trajectory::State&amp; state);</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="classfrc_1_1Trajectory.html#a789dcd026a4f57b485f4f3186737a644">  130</a></span>&#160;  <a class="code" href="classfrc_1_1Trajectory.html">Trajectory</a> <a class="code" href="classfrc_1_1Trajectory.html#a789dcd026a4f57b485f4f3186737a644">operator+</a>(<span class="keyword">const</span> <a class="code" href="classfrc_1_1Trajectory.html">Trajectory</a>&amp; other) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+<div class="line"><a name="l00137"></a><span class="lineno"><a class="line" href="classfrc_1_1Trajectory.html#af317c5d052e653165ef4567d038b6517">  137</a></span>&#160;  <a class="code" href="classfrc_1_1Pose2d.html">Pose2d</a> <a class="code" href="classfrc_1_1Trajectory.html#af317c5d052e653165ef4567d038b6517">InitialPose</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classfrc_1_1Trajectory.html#ae85ba571394bab7d9607a9eb8a227578">Sample</a>(0_s).pose; }</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
+<div class="line"><a name="l00145"></a><span class="lineno"><a class="line" href="classfrc_1_1Trajectory.html#acba50fab8a39dea2aebf1308797db39c">  145</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1Trajectory.html#acba50fab8a39dea2aebf1308797db39c">operator==</a>(<span class="keyword">const</span> <a class="code" href="classfrc_1_1Trajectory.html">Trajectory</a>&amp; other) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
+<div class="line"><a name="l00153"></a><span class="lineno"><a class="line" href="classfrc_1_1Trajectory.html#a87a8a48a591677006244409dc568960d">  153</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1Trajectory.html#a87a8a48a591677006244409dc568960d">operator!=</a>(<span class="keyword">const</span> <a class="code" href="classfrc_1_1Trajectory.html">Trajectory</a>&amp; other) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  std::vector&lt;State&gt; m_states;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  units::second_t m_totalTime = 0_s;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  <span class="keyword">static</span> T Lerp(<span class="keyword">const</span> T&amp; startValue, <span class="keyword">const</span> T&amp; endValue, <span class="keyword">const</span> <span class="keywordtype">double</span> t) {</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordflow">return</span> startValue + (endValue - startValue) * t;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  }</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;};</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="keywordtype">void</span> to_json(<a class="code" href="classwpi_1_1json.html">wpi::json</a>&amp; json, <span class="keyword">const</span> Trajectory::State&amp; state);</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="keywordtype">void</span> from_json(<span class="keyword">const</span> <a class="code" href="classwpi_1_1json.html">wpi::json</a>&amp; json, Trajectory::State&amp; state);</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;}  <span class="comment">// namespace frc</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclassfrc_1_1Trajectory_html_a789dcd026a4f57b485f4f3186737a644"><div class="ttname"><a href="classfrc_1_1Trajectory.html#a789dcd026a4f57b485f4f3186737a644">frc::Trajectory::operator+</a></div><div class="ttdeci">Trajectory operator+(const Trajectory &amp;other) const</div><div class="ttdoc">Concatenates another trajectory to the current trajectory.</div></div>
 <div class="ttc" id="aclasswpi_1_1json_html"><div class="ttname"><a href="classwpi_1_1json.html">wpi::json</a></div><div class="ttdoc">a class to store JSON values</div><div class="ttdef"><b>Definition:</b> json.h:2656</div></div>
-<div class="ttc" id="aclassfrc_1_1Trajectory_html_af317c5d052e653165ef4567d038b6517"><div class="ttname"><a href="classfrc_1_1Trajectory.html#af317c5d052e653165ef4567d038b6517">frc::Trajectory::InitialPose</a></div><div class="ttdeci">Pose2d InitialPose() const</div><div class="ttdoc">Returns the initial pose of the trajectory.</div><div class="ttdef"><b>Definition:</b> Trajectory.h:127</div></div>
+<div class="ttc" id="aclassfrc_1_1Trajectory_html_af317c5d052e653165ef4567d038b6517"><div class="ttname"><a href="classfrc_1_1Trajectory.html#af317c5d052e653165ef4567d038b6517">frc::Trajectory::InitialPose</a></div><div class="ttdeci">Pose2d InitialPose() const</div><div class="ttdoc">Returns the initial pose of the trajectory.</div><div class="ttdef"><b>Definition:</b> Trajectory.h:137</div></div>
 <div class="ttc" id="aclassfrc_1_1Trajectory_html_abc13b1161ac63b07b5e496ec67acbf82"><div class="ttname"><a href="classfrc_1_1Trajectory.html#abc13b1161ac63b07b5e496ec67acbf82">frc::Trajectory::Trajectory</a></div><div class="ttdeci">Trajectory(const std::vector&lt; State &gt; &amp;states)</div><div class="ttdoc">Constructs a trajectory from a vector of states.</div></div>
 <div class="ttc" id="astructfrc_1_1Trajectory_1_1State_html"><div class="ttname"><a href="structfrc_1_1Trajectory_1_1State.html">frc::Trajectory::State</a></div><div class="ttdoc">Represents one point on the trajectory.</div><div class="ttdef"><b>Definition:</b> Trajectory.h:31</div></div>
 <div class="ttc" id="aclassfrc_1_1Trajectory_html_a6b9e02ec02ce417cb1833b3f1640d4e3"><div class="ttname"><a href="classfrc_1_1Trajectory.html#a6b9e02ec02ce417cb1833b3f1640d4e3">frc::Trajectory::TotalTime</a></div><div class="ttdeci">units::second_t TotalTime() const</div><div class="ttdoc">Returns the overall duration of the trajectory.</div><div class="ttdef"><b>Definition:</b> Trajectory.h:85</div></div>
@@ -189,15 +192,15 @@ $(document).ready(function(){initNavTree('Trajectory_8h_source.html',''); initRe
 <div class="ttc" id="aclassfrc_1_1Pose2d_html"><div class="ttname"><a href="classfrc_1_1Pose2d.html">frc::Pose2d</a></div><div class="ttdoc">Represents a 2d pose containing translational and rotational elements.</div><div class="ttdef"><b>Definition:</b> Pose2d.h:20</div></div>
 <div class="ttc" id="aclassfrc_1_1Trajectory_html"><div class="ttname"><a href="classfrc_1_1Trajectory.html">frc::Trajectory</a></div><div class="ttdoc">Represents a time-parameterized trajectory.</div><div class="ttdef"><b>Definition:</b> Trajectory.h:26</div></div>
 <div class="ttc" id="astructfrc_1_1Trajectory_1_1State_html_a479e2d7059f93e95469348dbde773268"><div class="ttname"><a href="structfrc_1_1Trajectory_1_1State.html#a479e2d7059f93e95469348dbde773268">frc::Trajectory::State::Interpolate</a></div><div class="ttdeci">State Interpolate(State endValue, double i) const</div><div class="ttdoc">Interpolates between two States.</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> VisionRunner.h:15</div></div>
+<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> VisionRunner.inc:9</div></div>
 <div class="ttc" id="aclassfrc_1_1Trajectory_html_ae85ba571394bab7d9607a9eb8a227578"><div class="ttname"><a href="classfrc_1_1Trajectory.html#ae85ba571394bab7d9607a9eb8a227578">frc::Trajectory::Sample</a></div><div class="ttdeci">State Sample(units::second_t t) const</div><div class="ttdoc">Sample the trajectory at a point in time.</div></div>
 <div class="ttc" id="aclassfrc_1_1Trajectory_html_acba50fab8a39dea2aebf1308797db39c"><div class="ttname"><a href="classfrc_1_1Trajectory.html#acba50fab8a39dea2aebf1308797db39c">frc::Trajectory::operator==</a></div><div class="ttdeci">bool operator==(const Trajectory &amp;other) const</div><div class="ttdoc">Checks equality between this Trajectory and another object.</div></div>
 <div class="ttc" id="aclassfrc_1_1Trajectory_html_a87a8a48a591677006244409dc568960d"><div class="ttname"><a href="classfrc_1_1Trajectory.html#a87a8a48a591677006244409dc568960d">frc::Trajectory::operator!=</a></div><div class="ttdeci">bool operator!=(const Trajectory &amp;other) const</div><div class="ttdoc">Checks inequality between this Trajectory and another object.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_e81593cd22a74c0453b864f226c84e9d.html">wpimath</a></li><li class="navelem"><a class="el" href="dir_4a07e7e34c3309db4f2aee20318c365b.html">src</a></li><li class="navelem"><a class="el" href="dir_37ee524af24664d12db3cd06c96f93b9.html">main</a></li><li class="navelem"><a class="el" href="dir_0741e1c35aa739ecce87b7ca77560051.html">native</a></li><li class="navelem"><a class="el" href="dir_e7b4e55b90254cfe62f0cb6fe1aed23c.html">include</a></li><li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_b42dbd3ffe797209985ac3b5870ef1e5.html">trajectory</a></li><li class="navelem"><b>Trajectory.h</b></li>
-    <li class="footer">Generated on Sat Jan 30 2021 03:45:37 for WPILibC++ by
+    <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_b42dbd3ffe797209985ac3b5870ef1e5.html">trajectory</a></li><li class="navelem"><b>Trajectory.h</b></li>
+    <li class="footer">Generated on Sun Apr 25 2021 03:25:24 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

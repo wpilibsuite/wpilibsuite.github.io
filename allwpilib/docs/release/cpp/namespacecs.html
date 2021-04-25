@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.2.2</span>
+   &#160;<span id="projectnumber">2021.3.1</span>
    </div>
   </td>
  </tr>
@@ -433,6 +433,24 @@ CS_Listener&#160;</td><td class="memItemRight" valign="bottom"><b>AddListener</b
 <tr class="memitem:gac20befa30e62222c96f7ea0bf2a4822f"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveListener</b> (CS_Listener handle, CS_Status *status)</td></tr>
 <tr class="separator:gac20befa30e62222c96f7ea0bf2a4822f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0411eaede68407866491c9235d99d692"><td class="memItemLeft" align="right" valign="top">
+CS_ListenerPoller&#160;</td><td class="memItemRight" valign="bottom"><b>CreateListenerPoller</b> ()</td></tr>
+<tr class="separator:ga0411eaede68407866491c9235d99d692"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaee36a973b98a201ebcfaf61d642bf167"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DestroyListenerPoller</b> (CS_ListenerPoller poller)</td></tr>
+<tr class="separator:gaee36a973b98a201ebcfaf61d642bf167"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga888ae5243ba070bd380e5e79a2e0a885"><td class="memItemLeft" align="right" valign="top">
+CS_Listener&#160;</td><td class="memItemRight" valign="bottom"><b>AddPolledListener</b> (CS_ListenerPoller poller, int eventMask, bool immediateNotify, CS_Status *status)</td></tr>
+<tr class="separator:ga888ae5243ba070bd380e5e79a2e0a885"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadecb7533f0ec8caa8dfa8c3c8ffda314"><td class="memItemLeft" align="right" valign="top">
+std::vector&lt; <a class="el" href="structcs_1_1RawEvent.html">RawEvent</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>PollListener</b> (CS_ListenerPoller poller)</td></tr>
+<tr class="separator:gadecb7533f0ec8caa8dfa8c3c8ffda314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1d2a420b84ae44be2297310cc5e9a6b0"><td class="memItemLeft" align="right" valign="top">
+std::vector&lt; <a class="el" href="structcs_1_1RawEvent.html">RawEvent</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>PollListener</b> (CS_ListenerPoller poller, double timeout, bool *timedOut)</td></tr>
+<tr class="separator:ga1d2a420b84ae44be2297310cc5e9a6b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5583f54baf42887b38507f5819112d80"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CancelPollListener</b> (CS_ListenerPoller poller)</td></tr>
+<tr class="separator:ga5583f54baf42887b38507f5819112d80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad5e69d8e1555b982f540705f28c80d39"><td class="memItemLeft" align="right" valign="top">
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>NotifierDestroyed</b> ()</td></tr>
 <tr class="separator:gad5e69d8e1555b982f540705f28c80d39"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -481,7 +499,7 @@ std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bott
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacecs.html">cs</a></li>
-    <li class="footer">Generated on Sat Jan 30 2021 03:45:38 for WPILibC++ by
+    <li class="footer">Generated on Sun Apr 25 2021 03:25:25 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

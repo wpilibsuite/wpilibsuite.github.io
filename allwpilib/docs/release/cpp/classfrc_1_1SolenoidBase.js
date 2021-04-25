@@ -6,6 +6,7 @@ var classfrc_1_1SolenoidBase =
     [ "ClearAllPCMStickyFaults", "classfrc_1_1SolenoidBase.html#a1c3427788b562c3c5fdd18c022f845d4", null ],
     [ "GetAll", "classfrc_1_1SolenoidBase.html#a110d2f1b008dd31624dffba35dcc356f", null ],
     [ "GetAll", "classfrc_1_1SolenoidBase.html#a0ba56b5dcb5612d92a4845511a5fdee7", null ],
+    [ "GetModuleNumber", "classfrc_1_1SolenoidBase.html#a7ebb23273075d87bc30e06f273f7f9d9", null ],
     [ "GetPCMSolenoidBlackList", "classfrc_1_1SolenoidBase.html#a72a3ce08d06ae5b589ac99a6781151a0", null ],
     [ "GetPCMSolenoidBlackList", "classfrc_1_1SolenoidBase.html#a37e2030a6ba4630b0979b9847c35f2d5", null ],
     [ "GetPCMSolenoidVoltageFault", "classfrc_1_1SolenoidBase.html#a9eecfef720b31ccb05a3581628d589d9", null ],

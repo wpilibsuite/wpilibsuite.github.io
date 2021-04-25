@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>WPILibC++: /home/runner/work/allwpilib/allwpilib/wpilibc/src/main/native/include/frc/SPI.h Source File</title>
+<title>WPILibC++: frc/SPI.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.2.2</span>
+   &#160;<span id="projectnumber">2021.3.1</span>
    </div>
   </td>
  </tr>
@@ -236,7 +236,7 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div class="ttc" id="aclassfrc_1_1SPI_html_a45a82d68cd8f7a0523a95a01566ef626"><div class="ttname"><a href="classfrc_1_1SPI.html#a45a82d68cd8f7a0523a95a01566ef626">frc::SPI::ForceAutoRead</a></div><div class="ttdeci">void ForceAutoRead()</div><div class="ttdoc">Force the engine to make a single transfer.</div></div>
 <div class="ttc" id="aclassfrc_1_1SPI_html_ab4cc05f9f0c8ae3ce16757ce4b1c4a80"><div class="ttname"><a href="classfrc_1_1SPI.html#ab4cc05f9f0c8ae3ce16757ce4b1c4a80">frc::SPI::SetSampleDataOnTrailingEdge</a></div><div class="ttdeci">void SetSampleDataOnTrailingEdge()</div><div class="ttdoc">Configure that the data is stable on the trailing edge and the data changes on the leading edge.</div></div>
 <div class="ttc" id="aclassfrc_1_1SPI_html_a1a538757d510cbea45e087a7e02e515e"><div class="ttname"><a href="classfrc_1_1SPI.html#a1a538757d510cbea45e087a7e02e515e">frc::SPI::SetAccumulatorIntegratedCenter</a></div><div class="ttdeci">void SetAccumulatorIntegratedCenter(double center)</div><div class="ttdoc">Set the center value of the accumulator integrator.</div></div>
-<div class="ttc" id="anamespacehal_html"><div class="ttname"><a href="namespacehal.html">hal</a></div><div class="ttdoc">WPILib Hardware Abstraction Layer (HAL) namespace.</div><div class="ttdef"><b>Definition:</b> HandlesInternal.h:21</div></div>
+<div class="ttc" id="anamespacehal_html"><div class="ttname"><a href="namespacehal.html">hal</a></div><div class="ttdoc">WPILib Hardware Abstraction Layer (HAL) namespace.</div><div class="ttdef"><b>Definition:</b> UnsafeDIO.h:12</div></div>
 <div class="ttc" id="aclassfrc_1_1SPI_html_aaa51bf86f6f5fb142af12f767192a225"><div class="ttname"><a href="classfrc_1_1SPI.html#aaa51bf86f6f5fb142af12f767192a225">frc::SPI::SetSampleDataOnRising</a></div><div class="ttdeci">void SetSampleDataOnRising()</div><div class="ttdoc">Configure that the data is stable on the rising edge and the data changes on the falling edge.</div></div>
 <div class="ttc" id="aclassfrc_1_1SPI_html_afbabf1221808896f269dc6a0e76d3670"><div class="ttname"><a href="classfrc_1_1SPI.html#afbabf1221808896f269dc6a0e76d3670">frc::SPI::SetClockRate</a></div><div class="ttdeci">void SetClockRate(int hz)</div><div class="ttdoc">Configure the rate of the generated clock signal.</div></div>
 <div class="ttc" id="aclassfrc_1_1SPI_html_a50f17234e771c6eb5d154972237cb1e1"><div class="ttname"><a href="classfrc_1_1SPI.html#a50f17234e771c6eb5d154972237cb1e1">frc::SPI::FreeAccumulator</a></div><div class="ttdeci">void FreeAccumulator()</div><div class="ttdoc">Frees the accumulator.</div></div>
@@ -265,7 +265,7 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div class="ttc" id="aclassfrc_1_1SPI_html_af29b8a57f73536ce03f1e9f68623f332"><div class="ttname"><a href="classfrc_1_1SPI.html#af29b8a57f73536ce03f1e9f68623f332">frc::SPI::GetAccumulatorOutput</a></div><div class="ttdeci">void GetAccumulatorOutput(int64_t &amp;value, int64_t &amp;count) const</div><div class="ttdoc">Read the accumulated value and the number of accumulated values atomically.</div></div>
 <div class="ttc" id="aclassfrc_1_1SPI_html_a69f9888cae9f8a9dbef67f2d97a2487d"><div class="ttname"><a href="classfrc_1_1SPI.html#a69f9888cae9f8a9dbef67f2d97a2487d">frc::SPI::GetAccumulatorAverage</a></div><div class="ttdeci">double GetAccumulatorAverage() const</div><div class="ttdoc">Read the average of the accumulated value.</div></div>
 <div class="ttc" id="aclassfrc_1_1SPI_html_afed70a1e9bbc2f355c759623cad415f9"><div class="ttname"><a href="classfrc_1_1SPI.html#afed70a1e9bbc2f355c759623cad415f9">frc::SPI::ConfigureAutoStall</a></div><div class="ttdeci">void ConfigureAutoStall(HAL_SPIPort port, int csToSclkTicks, int stallTicks, int pow2BytesPerRead)</div><div class="ttdoc">Configure the Auto SPI Stall time between reads.</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> VisionRunner.h:15</div></div>
+<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> VisionRunner.inc:9</div></div>
 <div class="ttc" id="aclassfrc_1_1SPI_html_a7738041cb9e93724d8399a4b49ed98d1"><div class="ttname"><a href="classfrc_1_1SPI.html#a7738041cb9e93724d8399a4b49ed98d1">frc::SPI::FreeAuto</a></div><div class="ttdeci">void FreeAuto()</div><div class="ttdoc">Frees the automatic SPI transfer engine.</div></div>
 <div class="ttc" id="aclassfrc_1_1SPI_html_a901a0fc2729722899b1d099e09b9795f"><div class="ttname"><a href="classfrc_1_1SPI.html#a901a0fc2729722899b1d099e09b9795f">frc::SPI::Transaction</a></div><div class="ttdeci">virtual int Transaction(uint8_t *dataToSend, uint8_t *dataReceived, int size)</div><div class="ttdoc">Perform a simultaneous read/write transaction with the device.</div></div>
 <div class="ttc" id="aclassfrc_1_1SPI_html_ae108111a963f8730bf3e77a5f72b3907"><div class="ttname"><a href="classfrc_1_1SPI.html#ae108111a963f8730bf3e77a5f72b3907">frc::SPI::ReadAutoReceivedData</a></div><div class="ttdeci">int ReadAutoReceivedData(uint32_t *buffer, int numToRead, units::second_t timeout)</div><div class="ttdoc">Read data that has been transferred by the automatic SPI transfer engine.</div></div>
@@ -278,8 +278,8 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_c83246fd67bf422561e892c78521edd1.html">wpilibc</a></li><li class="navelem"><a class="el" href="dir_a55b36a80db95a4ab182a656f2eb2509.html">src</a></li><li class="navelem"><a class="el" href="dir_0fce2ef06e3c6f43f5c610d197b1a66e.html">main</a></li><li class="navelem"><a class="el" href="dir_05ef35d0b06c7e71bb0c2a8a996c52cb.html">native</a></li><li class="navelem"><a class="el" href="dir_9bb56e9ddac3e93dcc0aa7b90d99af5f.html">include</a></li><li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><b>SPI.h</b></li>
-    <li class="footer">Generated on Sat Jan 30 2021 03:45:36 for WPILibC++ by
+    <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><b>SPI.h</b></li>
+    <li class="footer">Generated on Sun Apr 25 2021 03:25:23 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

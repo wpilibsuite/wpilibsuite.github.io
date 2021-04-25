@@ -5,6 +5,7 @@ var classfrc_1_1Trajectory =
     [ "Trajectory", "classfrc_1_1Trajectory.html#abc13b1161ac63b07b5e496ec67acbf82", null ],
     [ "InitialPose", "classfrc_1_1Trajectory.html#af317c5d052e653165ef4567d038b6517", null ],
     [ "operator!=", "classfrc_1_1Trajectory.html#a87a8a48a591677006244409dc568960d", null ],
+    [ "operator+", "classfrc_1_1Trajectory.html#a789dcd026a4f57b485f4f3186737a644", null ],
     [ "operator==", "classfrc_1_1Trajectory.html#acba50fab8a39dea2aebf1308797db39c", null ],
     [ "RelativeTo", "classfrc_1_1Trajectory.html#a9c7e0e4359e85433348094cdc0d06b6d", null ],
     [ "Sample", "classfrc_1_1Trajectory.html#ae85ba571394bab7d9607a9eb8a227578", null ],

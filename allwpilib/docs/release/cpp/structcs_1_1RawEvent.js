@@ -19,7 +19,8 @@ var structcs_1_1RawEvent =
       [ "kTelemetryUpdated", "structcs_1_1RawEvent.html#ad0b7b8d5828aa966bb95fc2bbe8bf25ea00f315883d0b9eb4fa86baac4a80c525", null ],
       [ "kSinkPropertyCreated", "structcs_1_1RawEvent.html#ad0b7b8d5828aa966bb95fc2bbe8bf25ea36784a172d3db818429b82023bc556a5", null ],
       [ "kSinkPropertyValueUpdated", "structcs_1_1RawEvent.html#ad0b7b8d5828aa966bb95fc2bbe8bf25ea820bda4336bdcaf5c773b5bbc983e862", null ],
-      [ "kSinkPropertyChoicesUpdated", "structcs_1_1RawEvent.html#ad0b7b8d5828aa966bb95fc2bbe8bf25ea84c33a85eacab88f997c6bd8976691c9", null ]
+      [ "kSinkPropertyChoicesUpdated", "structcs_1_1RawEvent.html#ad0b7b8d5828aa966bb95fc2bbe8bf25ea84c33a85eacab88f997c6bd8976691c9", null ],
+      [ "kUsbCamerasChanged", "structcs_1_1RawEvent.html#ad0b7b8d5828aa966bb95fc2bbe8bf25ea096a9c4634b8e8cab21411c8cdc88263", null ]
     ] ],
     [ "RawEvent", "structcs_1_1RawEvent.html#af6c97cd12ca023a5b63cf6a596a2b709", null ],
     [ "RawEvent", "structcs_1_1RawEvent.html#aab9ada362441ac5dd50d942d257e4c81", null ],
@@ -27,6 +28,7 @@ var structcs_1_1RawEvent =
     [ "RawEvent", "structcs_1_1RawEvent.html#ae44ef6217acb5ddcc7becf4b314918de", null ],
     [ "RawEvent", "structcs_1_1RawEvent.html#afcd506ac90f804535e5a70becb1eff69", null ],
     [ "kind", "structcs_1_1RawEvent.html#a51a32420fbb0e990c122aa2f0906e677", null ],
+    [ "listener", "structcs_1_1RawEvent.html#ab606442031f460269fee5de0eee69d70", null ],
     [ "mode", "structcs_1_1RawEvent.html#a07ce5e163e404ec11b367fa9eddc2ef7", null ],
     [ "name", "structcs_1_1RawEvent.html#a42be29ff0a6b631b98d309e5bfd082d5", null ],
     [ "propertyHandle", "structcs_1_1RawEvent.html#a6b0fe3b3119f4847109f18dff338f19d", null ],

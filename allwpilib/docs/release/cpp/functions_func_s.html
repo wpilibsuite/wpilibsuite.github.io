@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.2.2</span>
+   &#160;<span id="projectnumber">2021.3.1</span>
    </div>
   </td>
  </tr>
@@ -193,6 +193,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 , <a class="el" href="classfrc_1_1PWMSpeedController.html#a5cf56c4c57cf7e4ac19af4d5802af204">frc::PWMSpeedController</a>
 , <a class="el" href="classfrc_1_1Relay.html#add10270afa395b368efd21bc0d33c27f">frc::Relay</a>
 , <a class="el" href="classfrc_1_1Servo.html#ac2385304776a3c1d4bde0ea413fe86fc">frc::Servo</a>
+, <a class="el" href="classfrc_1_1sim_1_1DoubleSolenoidSim.html#a7be1a4def73362068fb5ba8c3f60fbe2">frc::sim::DoubleSolenoidSim</a>
 , <a class="el" href="classfrc_1_1sim_1_1DutyCycleEncoderSim.html#a26078f6685fce87ca157f2bd8e6912a3">frc::sim::DutyCycleEncoderSim</a>
 , <a class="el" href="classfrc_1_1Solenoid.html#a9ee630c928008f0070eae1f9986cdfd2">frc::Solenoid</a>
 , <a class="el" href="classfrc_1_1SpeedController.html#a3f0cefeb5a3ab00111b472bfaaf55ab7">frc::SpeedController</a>
@@ -604,6 +605,9 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 <li>SetFrequency()
 : <a class="el" href="classfrc_1_1sim_1_1DutyCycleSim.html#a189083e6be0b4c6d5ba6faf72249fad9">frc::sim::DutyCycleSim</a>
 </li>
+<li>SetFwdInitialized()
+: <a class="el" href="classfrc_1_1sim_1_1DoubleSolenoidSim.html#ab4860391ccefa9ab8f8c7b5240351068">frc::sim::DoubleSolenoidSim</a>
+</li>
 <li>SetGameSpecificMessage()
 : <a class="el" href="classfrc_1_1sim_1_1DriverStationSim.html#abfe297add874650c47db9b40136f47dc">frc::sim::DriverStationSim</a>
 </li>
@@ -617,6 +621,9 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 </li>
 <li>SetGrouped()
 : <a class="el" href="classfrc2_1_1Command.html#a8c3e7ee729136e7e7e18e1e3a48a079a">frc2::Command</a>
+</li>
+<li>SetHALThreadPriority()
+: <a class="el" href="classfrc_1_1Notifier.html#aa927a8e8c60584038c16d07a4f8d5baf">frc::Notifier</a>
 </li>
 <li>SetHandler()
 : <a class="el" href="classfrc_1_1Notifier.html#a3744a6ff39272da9ad719fead95bc31a">frc::Notifier</a>
@@ -647,6 +654,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 , <a class="el" href="classfrc_1_1sim_1_1EncoderSim.html#af8b636ce795330149a75a73754097b86">frc::sim::EncoderSim</a>
 , <a class="el" href="classfrc_1_1sim_1_1PDPSim.html#acd8e1ca1da9b58d12f21f324bc897355">frc::sim::PDPSim</a>
 , <a class="el" href="classfrc_1_1sim_1_1PWMSim.html#a2119f2f5efa222cabe8f6b33224966cd">frc::sim::PWMSim</a>
+, <a class="el" href="classfrc_1_1sim_1_1SolenoidSim.html#affbb565185fa97f23fe303d3bd01eb51">frc::sim::SolenoidSim</a>
 </li>
 <li>SetInitializedForward()
 : <a class="el" href="classfrc_1_1sim_1_1RelaySim.html#a01a9302cdbe6788a0c5a23d5824dfc78">frc::sim::RelaySim</a>
@@ -828,6 +836,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 <li>SetOutput()
 : <a class="el" href="classfrc_1_1GenericHID.html#aa48f1d4afd2d2727bf7d8dcd02692a5a">frc::GenericHID</a>
 , <a class="el" href="classfrc_1_1sim_1_1DutyCycleSim.html#a41eb9373b689e208724ac98eb8136a69">frc::sim::DutyCycleSim</a>
+, <a class="el" href="classfrc_1_1sim_1_1SolenoidSim.html#aebdeef13e0f0a7b825c54c6e4e045b8c">frc::sim::SolenoidSim</a>
 </li>
 <li>SetOutputPort()
 : <a class="el" href="classfrc_1_1sim_1_1AddressableLEDSim.html#a85faa616f286f07f465da0128c7522fc">frc::sim::AddressableLEDSim</a>
@@ -903,7 +912,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 : <a class="el" href="classcs_1_1VideoSource.html#a07e1a2cbcec8e6fe29fb9c78baa26747">cs::VideoSource</a>
 </li>
 <li>SetPose()
-: <a class="el" href="classfrc_1_1FieldObject2d.html#a88e466b1b240a73c8cabea8e3b1428f8">frc::FieldObject2d</a>
+: <a class="el" href="classfrc_1_1FieldObject2d.html#a6b046e1e825c8523409c9cab773ea604">frc::FieldObject2d</a>
 , <a class="el" href="classfrc_1_1sim_1_1DifferentialDrivetrainSim.html#aa42de7657f2eee937be7640c0980e773">frc::sim::DifferentialDrivetrainSim</a>
 </li>
 <li>SetPoses()
@@ -1000,6 +1009,9 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 : <a class="el" href="classfrc_1_1Counter.html#aaada5281c76db58cfa3e52abad57661c">frc::Counter</a>
 , <a class="el" href="classfrc_1_1Encoder.html#a857308bfbf8d3cc0fbff20b976200b0c">frc::Encoder</a>
 , <a class="el" href="classfrc_1_1sim_1_1EncoderSim.html#ac2944e40ff40b9acc36d89806eee316a">frc::sim::EncoderSim</a>
+</li>
+<li>SetRevInitialized()
+: <a class="el" href="classfrc_1_1sim_1_1DoubleSolenoidSim.html#a3bc0580981da5e581c14bca4cb34da10">frc::sim::DoubleSolenoidSim</a>
 </li>
 <li>SetRGB()
 : <a class="el" href="classfrc_1_1AddressableLED_1_1LEDData.html#ad8e0dc5566901cfa3aee5c90a7a72dec">frc::AddressableLED::LEDData</a>
@@ -1125,7 +1137,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 : <a class="el" href="classnt_1_1NetworkTableEntry.html#a4f5edfc17fa70bfa383a4bcc821bb4b6">nt::NetworkTableEntry</a>
 </li>
 <li>SetStringArray()
-: <a class="el" href="classnt_1_1NetworkTableEntry.html#ac23374d6cd453233ed2e6731427ef0a1">nt::NetworkTableEntry</a>
+: <a class="el" href="classnt_1_1NetworkTableEntry.html#a46ac96faa293a90cca04217bbe41f201">nt::NetworkTableEntry</a>
 </li>
 <li>SetSubsystem()
 : <a class="el" href="classfrc2_1_1CommandBase.html#a9c49c6c497f9cd73e401c014e023c372">frc2::CommandBase</a>
@@ -1156,7 +1168,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 <li>SetTimeout()
 : <a class="el" href="classfrc_1_1Command.html#a4225b4ddfe1520170f95e8026eb767c2">frc::Command</a>
 , <a class="el" href="classfrc_1_1SerialPort.html#a1a52d5b1c53f3edae2052550a2eef771">frc::SerialPort</a>
-, <a class="el" href="classfrc_1_1Watchdog.html#af3a170ce0e1b2d2d4d84914e1ffa7e9f">frc::Watchdog</a>
+, <a class="el" href="classfrc_1_1Watchdog.html#a058a285727623db48ff9b444d1493b2e">frc::Watchdog</a>
 </li>
 <li>SetTolerance()
 : <a class="el" href="classfrc2_1_1PIDController.html#a53aa9ffadb689cbc9041adb6d32785e4">frc2::PIDController</a>
@@ -1170,6 +1182,9 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 </li>
 <li>SetTop()
 : <a class="el" href="classfrc_1_1sim_1_1JoystickSim.html#a62e553a07a516192238d7fe150f8261c">frc::sim::JoystickSim</a>
+</li>
+<li>SetTrajectory()
+: <a class="el" href="classfrc_1_1FieldObject2d.html#a179ca7d20fc74b2dbcf754ebd15487b3">frc::FieldObject2d</a>
 </li>
 <li>SetTrigger()
 : <a class="el" href="classfrc_1_1sim_1_1JoystickSim.html#afe24774e8038f36b84b3dfa1f1551257">frc::sim::JoystickSim</a>
@@ -1216,7 +1231,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 : <a class="el" href="classfrc_1_1Counter.html#a29e428983397affc585584ee68a6f5bf">frc::Counter</a>
 </li>
 <li>SetUpSource()
-: <a class="el" href="classfrc_1_1Counter.html#ad94860f74f41fb6aabbb07829631bb0c">frc::Counter</a>
+: <a class="el" href="classfrc_1_1Counter.html#adf3362740cec01c8707fcb6d4fc77427">frc::Counter</a>
 </li>
 <li>SetUpSourceEdge()
 : <a class="el" href="classfrc_1_1Counter.html#af64f5202f025c5ffb5ef14432789ff1f">frc::Counter</a>
@@ -1264,7 +1279,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 <li>SetValue()
 : <a class="el" href="classfrc_1_1sim_1_1DIOSim.html#a81da22aaa191c0f9bc0322124e39d047">frc::sim::DIOSim</a>
 , <a class="el" href="classnt_1_1NetworkTableEntry.html#a724c000a87563b6ddaa421cca4290f63">nt::NetworkTableEntry</a>
-, <a class="el" href="classwpi_1_1PromiseFactory.html#ac06244409f2dbb23060c5c2d0f54c981">wpi::PromiseFactory&lt; T &gt;</a>
+, <a class="el" href="classwpi_1_1PromiseFactory.html#ad4b8fcfcb2b8c4a1ffee89ed65338dfe">wpi::PromiseFactory&lt; T &gt;</a>
 , <a class="el" href="classwpi_1_1PromiseFactory_3_01void_01_4.html#a14d9b7de023181d682e81971bf2f7957">wpi::PromiseFactory&lt; void &gt;</a>
 </li>
 <li>SetVideoMode()
@@ -1319,9 +1334,9 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 : <a class="el" href="classfrc_1_1Joystick.html#ad4ef337272a1e7de7ff13959e7fb4c55">frc::Joystick</a>
 </li>
 <li>SetXhat()
-: <a class="el" href="classfrc_1_1detail_1_1KalmanFilterImpl.html#a71256dde7bb1bf93d3fa9287e3fae82e">frc::detail::KalmanFilterImpl&lt; States, Inputs, Outputs &gt;</a>
+: <a class="el" href="classfrc_1_1detail_1_1KalmanFilterImpl.html#aa93660139f4b626a3bebe567903bdaa9">frc::detail::KalmanFilterImpl&lt; States, Inputs, Outputs &gt;</a>
 , <a class="el" href="classfrc_1_1ExtendedKalmanFilter.html#ab69f563903cf4145571549f042355d46">frc::ExtendedKalmanFilter&lt; States, Inputs, Outputs &gt;</a>
-, <a class="el" href="classfrc_1_1LinearSystemLoop.html#ae015a57142458c29b5ea75a533c3f993">frc::LinearSystemLoop&lt; States, Inputs, Outputs &gt;</a>
+, <a class="el" href="classfrc_1_1LinearSystemLoop.html#a1a7451a57fb4ea174b79f3b049afc416">frc::LinearSystemLoop&lt; States, Inputs, Outputs &gt;</a>
 , <a class="el" href="classfrc_1_1UnscentedKalmanFilter.html#ac2be5c5aaae45fb7c67c341e1ae2e700">frc::UnscentedKalmanFilter&lt; States, Inputs, Outputs &gt;</a>
 </li>
 <li>SetY()
@@ -1363,7 +1378,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 : <a class="el" href="classfrc_1_1DriverStation.html#aa38ff5ed69365392b288ea1c07e33c8e">frc::DriverStation</a>
 </li>
 <li>SimDeviceSim()
-: <a class="el" href="classfrc_1_1sim_1_1SimDeviceSim.html#a83eb29d9e66c07fc973862fb7e777e2c">frc::sim::SimDeviceSim</a>
+: <a class="el" href="classfrc_1_1sim_1_1SimDeviceSim.html#a4f03ee913153018d0db30f29f5a0d4a2">frc::sim::SimDeviceSim</a>
 </li>
 <li>SimpleBufferPool()
 : <a class="el" href="classwpi_1_1uv_1_1SimpleBufferPool.html#a090cd393e399982fc209c248876648b0">wpi::uv::SimpleBufferPool&lt; DEPTH &gt;</a>
@@ -1388,11 +1403,11 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 : <a class="el" href="classfrc_1_1LinearSystemId.html#ac75cc825e18cd8b15113954b14469842">frc::LinearSystemId</a>
 </li>
 <li>SinglePoleIIR()
-: <a class="el" href="classfrc_1_1LinearDigitalFilter.html#a7e82400518f2547b6c8bdd08c2aa030a">frc::LinearDigitalFilter</a>
+: <a class="el" href="classfrc_1_1LinearDigitalFilter.html#ad357381d8e405af854d89b1ab2888125">frc::LinearDigitalFilter</a>
 , <a class="el" href="classfrc_1_1LinearFilter.html#aadb62ac99b63774baff9b6cd36ca37e0">frc::LinearFilter&lt; T &gt;</a>
 </li>
 <li>SingleShot()
-: <a class="el" href="classwpi_1_1uv_1_1Timer.html#aab3d0bbf0fde5426db2aa02cdfc75bc3">wpi::uv::Timer</a>
+: <a class="el" href="classwpi_1_1uv_1_1Timer.html#a00b72760ae9656b50a77f5cdd333e03a">wpi::uv::Timer</a>
 </li>
 <li>size()
 : <a class="el" href="classwpi_1_1ArrayRef.html#aa3c8c6c59f9974aa54b78728ce5ff1c1">wpi::ArrayRef&lt; T &gt;</a>
@@ -1407,7 +1422,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 </li>
 <li>slice()
 : <a class="el" href="classwpi_1_1ArrayRef.html#a1ebaee9e4a3e75bca8165769563dbc31">wpi::ArrayRef&lt; T &gt;</a>
-, <a class="el" href="classwpi_1_1MutableArrayRef.html#a4ac672752324935f88b9e850281563ab">wpi::MutableArrayRef&lt; T &gt;</a>
+, <a class="el" href="classwpi_1_1MutableArrayRef.html#a2abf95f14f2c8787e5cdc3c06c819847">wpi::MutableArrayRef&lt; T &gt;</a>
 , <a class="el" href="classwpi_1_1SmallString.html#a81e4708a28c8f396db6f69d2a376c05b">wpi::SmallString&lt; InternalLen &gt;</a>
 , <a class="el" href="classwpi_1_1StringRef.html#aa3351295715fb3ba0d746df7f710d99a">wpi::StringRef</a>
 </li>
@@ -1419,10 +1434,13 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 , <a class="el" href="classwpi_1_1format__object__base.html#ae171bd3bacc5954e90b5bc63e4d00e29">wpi::format_object_base</a>
 </li>
 <li>Solenoid()
-: <a class="el" href="classfrc_1_1Solenoid.html#a9ff51fd18311d0da6e67a7c2dbf90d90">frc::Solenoid</a>
+: <a class="el" href="classfrc_1_1Solenoid.html#a2f1aa95afed763b07fc0821418cab2db">frc::Solenoid</a>
 </li>
 <li>SolenoidBase()
 : <a class="el" href="classfrc_1_1SolenoidBase.html#a613c7a45b7ef3a4456534fb17e314ad3">frc::SolenoidBase</a>
+</li>
+<li>SolenoidSim()
+: <a class="el" href="classfrc_1_1sim_1_1SolenoidSim.html#aac80fe6608521c1d38ca4901b9767a60">frc::sim::SolenoidSim</a>
 </li>
 <li>Spark()
 : <a class="el" href="classfrc_1_1Spark.html#a8ba230d32f557843a520be5161b20c7e">frc::Spark</a>
@@ -1440,7 +1458,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 : <a class="el" href="classfrc_1_1TrajectoryGenerator.html#aa544c0abe35efb5088b21f1cb1d510b4">frc::TrajectoryGenerator</a>
 </li>
 <li>split()
-: <a class="el" href="classwpi_1_1StringRef.html#ab4b83c07833494a1e4e874909e7d73ef">wpi::StringRef</a>
+: <a class="el" href="classwpi_1_1StringRef.html#a927ec279d16b084402c286ff7b2e3e62">wpi::StringRef</a>
 </li>
 <li>Start()
 : <a class="el" href="classfrc2_1_1Timer.html#aba820dae40bc147d48aca9996dafe57a">frc2::Timer</a>
@@ -1457,16 +1475,16 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 , <a class="el" href="classwpi_1_1uv_1_1Timer.html#af1c65999d2c52d6c837c952df4c0840a">wpi::uv::Timer</a>
 </li>
 <li>StartAutomaticCapture()
-: <a class="el" href="classfrc_1_1CameraServer.html#a1f14d2564f3e68025ed5f1841702f528">frc::CameraServer</a>
+: <a class="el" href="classfrc_1_1CameraServer.html#af4b39b0179578e1959aaa41dcf5e1790">frc::CameraServer</a>
 </li>
 <li>StartAutoRate()
-: <a class="el" href="classfrc_1_1SPI.html#a7d77b758daa0cc642fcd08482b70f07d">frc::SPI</a>
+: <a class="el" href="classfrc_1_1SPI.html#aa12a3a1bf689e0bfdb7452d89af5124e">frc::SPI</a>
 </li>
 <li>StartAutoTrigger()
 : <a class="el" href="classfrc_1_1SPI.html#ae4cc2d423113bc64d1cb9f8b0cce3f52">frc::SPI</a>
 </li>
 <li>StartClient()
-: <a class="el" href="classnt_1_1NetworkTableInstance.html#a26fd8a5d320d98435f3c72785a37bb2d">nt::NetworkTableInstance</a>
+: <a class="el" href="classnt_1_1NetworkTableInstance.html#ad7fff110cc9faab6ffb2917a305030fd">nt::NetworkTableInstance</a>
 </li>
 <li>StartClientTeam()
 : <a class="el" href="classnt_1_1NetworkTableInstance.html#a262186f1bb98cdec1087f524493f6764">nt::NetworkTableInstance</a>
@@ -1479,7 +1497,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 : <a class="el" href="classnt_1_1NetworkTableInstance.html#a1cdbcfc6aa5e893afdbbeb437a56bdee">nt::NetworkTableInstance</a>
 </li>
 <li>StartEndCommand()
-: <a class="el" href="classfrc2_1_1StartEndCommand.html#aebb9817faf7b9aae81d7b837767d1f70">frc2::StartEndCommand</a>
+: <a class="el" href="classfrc2_1_1StartEndCommand.html#a1a991f02619d04a1aaf78d3605d2eed0">frc2::StartEndCommand</a>
 </li>
 <li>StartListeners()
 : <a class="el" href="classfrc_1_1SendableBuilderImpl.html#a3e06960b659059d652e92a089ea4529a">frc::SendableBuilderImpl</a>
@@ -1494,7 +1512,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 : <a class="el" href="classwpi_1_1uv_1_1Signal.html#ac77e191eae54bb124e21ab10b5a7cfbb">wpi::uv::Signal</a>
 </li>
 <li>StartPeriodic()
-: <a class="el" href="classfrc_1_1Notifier.html#a94134987d0296d5c193246e6543791e0">frc::Notifier</a>
+: <a class="el" href="classfrc_1_1Notifier.html#a5bc1b27b2d22ca7de91fe1701746c521">frc::Notifier</a>
 </li>
 <li>StartPulse()
 : <a class="el" href="classfrc_1_1Solenoid.html#a60b4342d9bddc7bf5745918622a08290">frc::Solenoid</a>
@@ -1512,7 +1530,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 : <a class="el" href="classnt_1_1NetworkTableInstance.html#ab11a9c200af15d6a0c737660e2b71f50">nt::NetworkTableInstance</a>
 </li>
 <li>StartSingle()
-: <a class="el" href="classfrc_1_1Notifier.html#af333fd2ede95b074803d2e15d9ae58b2">frc::Notifier</a>
+: <a class="el" href="classfrc_1_1Notifier.html#ac6fdc8a4a8ecbbb4a863e639bf719323">frc::Notifier</a>
 </li>
 <li>startswith()
 : <a class="el" href="classwpi_1_1HttpPath.html#aa3e8a08df00477c9f61b3a9d76ec9c5c">wpi::HttpPath</a>
@@ -1538,7 +1556,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 : <a class="el" href="classwpi_1_1uv_1_1Process.html#a1360fac3893b736edcbb677a4d92a775">wpi::uv::Process</a>
 </li>
 <li>StdioInherit()
-: <a class="el" href="classwpi_1_1uv_1_1Process.html#ab991708c7282f45701e9d661c0e4c240">wpi::uv::Process</a>
+: <a class="el" href="classwpi_1_1uv_1_1Process.html#ae9757bafa0a5f0877a3f4e41529cb07c">wpi::uv::Process</a>
 </li>
 <li>Stop()
 : <a class="el" href="classfrc2_1_1Timer.html#a11ebae89dcef5176f67867bdebd8b3b1">frc2::Timer</a>
@@ -1576,7 +1594,8 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 : <a class="el" href="classnt_1_1NetworkTableInstance.html#ab95d4b1f75c6ab1ff7952088a9565eb3">nt::NetworkTableInstance</a>
 </li>
 <li>StopMotor()
-: <a class="el" href="classfrc_1_1SpeedController.html#aa339a5be84fccf629148933676da9fff">frc::SpeedController</a>
+: <a class="el" href="classfrc_1_1NidecBrushless.html#a2ff988ba4a5488c8da0ba2237fc26c3c">frc::NidecBrushless</a>
+, <a class="el" href="classfrc_1_1SpeedController.html#aa339a5be84fccf629148933676da9fff">frc::SpeedController</a>
 , <a class="el" href="classfrc_1_1SpeedControllerGroup.html#a0d9e7ef06194a4125d677acc9fef9f34">frc::SpeedControllerGroup</a>
 </li>
 <li>StopPacketRepeating()
@@ -1620,14 +1639,14 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 : <a class="el" href="classfrc_1_1Watchdog.html#a9daffd96fcc3e427ddff5be98417704a">frc::Watchdog</a>
 </li>
 <li>swap()
-: <a class="el" href="classwpi_1_1json.html#ae707b415da6c78c08e9fce024ff66615">wpi::json</a>
+: <a class="el" href="classwpi_1_1json.html#a8abb7128914d8333f283304d9125e882">wpi::json</a>
 , <a class="el" href="classwpi_1_1promise.html#a5889ad561dc0bc0c05719dff849a529f">wpi::promise&lt; T &gt;</a>
 , <a class="el" href="classwpi_1_1promise_3_01void_01_4.html#aacd9fef19552530407d920df8442b58c">wpi::promise&lt; void &gt;</a>
 , <a class="el" href="classwpi_1_1SmallPtrSet.html#a906d103cebbca0441b0ceb1dd52bbeab">wpi::SmallPtrSet&lt; PtrType, SmallSize &gt;</a>
 , <a class="el" href="classwpi_1_1SmallPtrSetImplBase.html#aa1c4213be7d825c59192eee1954cdd2a">wpi::SmallPtrSetImplBase</a>
 </li>
 <li>SwerveControllerCommand()
-: <a class="el" href="classfrc2_1_1SwerveControllerCommand.html#ae01b60e065e30b7d7ea9f4bee939abbf">frc2::SwerveControllerCommand&lt; NumModules &gt;</a>
+: <a class="el" href="classfrc2_1_1SwerveControllerCommand.html#af991ad019f1809a84af92a39cf617ba2">frc2::SwerveControllerCommand&lt; NumModules &gt;</a>
 </li>
 <li>SwerveDriveKinematics()
 : <a class="el" href="classfrc_1_1SwerveDriveKinematics.html#ab3e7aa018b138375414924e0493b73cd">frc::SwerveDriveKinematics&lt; NumModules &gt;</a>
@@ -1647,7 +1666,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html',''); initResiza
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Jan 30 2021 03:45:42 for WPILibC++ by
+    <li class="footer">Generated on Sun Apr 25 2021 03:25:30 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

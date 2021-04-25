@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.2.2</span>
+   &#160;<span id="projectnumber">2021.3.1</span>
    </div>
   </td>
  </tr>
@@ -103,7 +103,7 @@ $(document).ready(function(){initNavTree('classwpi_1_1iterator__adaptor__base.ht
 <p>CRTP base class for adapting an iterator to a different type.  
  <a href="classwpi_1_1iterator__adaptor__base.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="iterator_8h_source.html">iterator.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="iterator_8h_source.html">wpi/iterator.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for wpi::iterator_adaptor_base&lt; DerivedT, WrappedIteratorT, IteratorCategoryT, T, DifferenceTypeT, PointerT, ReferenceT &gt;:</div>
 <div class="dyncontent">
@@ -208,8 +208,8 @@ WrappedIteratorT&#160;</td><td class="memItemRight" valign="bottom"><b>I</b></td
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_types_classwpi_1_1iterator__facade__base"><td colspan="2" onclick="javascript:toggleInherit('pro_types_classwpi_1_1iterator__facade__base')"><img src="closed.png" alt="-"/>&#160;Protected Types inherited from <a class="el" href="classwpi_1_1iterator__facade__base.html">wpi::iterator_facade_base&lt; DerivedT, typename std::iterator_traits&lt; WrappedIteratorT &gt;::iterator_category, typename std::iterator_traits&lt; WrappedIteratorT &gt;::value_type, typename std::iterator_traits&lt; WrappedIteratorT &gt;::difference_type, typename std::conditional&lt; std::is_same&lt; typename std::iterator_traits&lt; WrappedIteratorT &gt;::value_type, typename std::iterator_traits&lt; WrappedIteratorT &gt;::value_type &gt;::value, typename std::iterator_traits&lt; WrappedIteratorT &gt;::pointer, typename std::iterator_traits&lt; WrappedIteratorT &gt;::value_type * &gt;::type, typename std::conditional&lt; std::is_same&lt; typename std::iterator_traits&lt; WrappedIteratorT &gt;::value_type, typename std::iterator_traits&lt; WrappedIteratorT &gt;::value_type &gt;::value, typename std::iterator_traits&lt; WrappedIteratorT &gt;::reference, typename std::iterator_traits&lt; WrappedIteratorT &gt;::value_type &amp; &gt;::type &gt;</a></td></tr>
-<tr class="memitem:a7c43a267878f6b2fd0aec7f40eb76dd6 inherit pro_types_classwpi_1_1iterator__facade__base"><td class="memItemLeft" align="right" valign="top"><a id="a7c43a267878f6b2fd0aec7f40eb76dd6"></a>enum &#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a7c43a267878f6b2fd0aec7f40eb76dd6 inherit pro_types_classwpi_1_1iterator__facade__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f99bfcc3c9ce4f012d8edbcaedf3c13 inherit pro_types_classwpi_1_1iterator__facade__base"><td class="memItemLeft" align="right" valign="top"><a id="a9f99bfcc3c9ce4f012d8edbcaedf3c13"></a>enum &#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a9f99bfcc3c9ce4f012d8edbcaedf3c13 inherit pro_types_classwpi_1_1iterator__facade__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename DerivedT, typename WrappedIteratorT, typename IteratorCategoryT = typename std::iterator_traits&lt;WrappedIteratorT&gt;::iterator_category, typename T = typename std::iterator_traits&lt;WrappedIteratorT&gt;::value_type, typename DifferenceTypeT = typename std::iterator_traits&lt;WrappedIteratorT&gt;::difference_type, typename PointerT = typename std::conditional&lt;        std::is_same&lt;T, typename std::iterator_traits&lt;                            WrappedIteratorT&gt;::value_type&gt;::value,        typename std::iterator_traits&lt;WrappedIteratorT&gt;::pointer, T *&gt;::type, typename ReferenceT = typename std::conditional&lt;        std::is_same&lt;T, typename std::iterator_traits&lt;                            WrappedIteratorT&gt;::value_type&gt;::value,        typename std::iterator_traits&lt;WrappedIteratorT&gt;::reference, T &amp;&gt;::type&gt;<br />
@@ -218,7 +218,7 @@ class wpi::iterator_adaptor_base&lt; DerivedT, WrappedIteratorT, IteratorCategor
 <p>CRTP base class for adapting an iterator to a different type. </p>
 <p>This class can be used through CRTP to adapt one iterator into another. Typically this is done through providing in the derived class a custom <code>operator*</code> implementation. Other methods can be overridden as well. </p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/runner/work/allwpilib/allwpilib/wpiutil/src/main/native/include/wpi/<a class="el" href="iterator_8h_source.html">iterator.h</a></li>
+<li>wpi/<a class="el" href="iterator_8h_source.html">iterator.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -226,7 +226,7 @@ class wpi::iterator_adaptor_base&lt; DerivedT, WrappedIteratorT, IteratorCategor
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>wpi</b></li><li class="navelem"><a class="el" href="classwpi_1_1iterator__adaptor__base.html">iterator_adaptor_base</a></li>
-    <li class="footer">Generated on Sat Jan 30 2021 03:45:41 for WPILibC++ by
+    <li class="footer">Generated on Sun Apr 25 2021 03:25:28 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

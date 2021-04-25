@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>WPILibC++: /home/runner/work/allwpilib/allwpilib/wpilibc/src/main/native/include/frc/AnalogEncoder.h Source File</title>
+<title>WPILibC++: frc/AnalogEncoder.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.2.2</span>
+   &#160;<span id="projectnumber">2021.3.1</span>
    </div>
   </td>
  </tr>
@@ -118,47 +118,49 @@ $(document).ready(function(){initNavTree('AnalogEncoder_8h_source.html',''); ini
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                      <span class="keyword">public</span> <a class="code" href="classfrc_1_1Sendable.html">Sendable</a>,</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                      <span class="keyword">public</span> <a class="code" href="classfrc_1_1SendableHelper.html">SendableHelper</a>&lt;AnalogEncoder&gt; {</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogEncoder.html#a9136985622e9e5fcda44e279133371db">   34</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc_1_1AnalogEncoder.html#a9136985622e9e5fcda44e279133371db">AnalogEncoder</a>(<a class="code" href="classfrc_1_1AnalogInput.html">AnalogInput</a>&amp; analogInput);</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogEncoder.html#a823576cefb747ec258e09ae7bb606450">   34</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc_1_1AnalogEncoder.html#a823576cefb747ec258e09ae7bb606450">AnalogEncoder</a>(<span class="keywordtype">int</span> channel);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogEncoder.html#a98f9e6325bb26c13b0519b1b3435178f">   41</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc_1_1AnalogEncoder.html#a98f9e6325bb26c13b0519b1b3435178f">AnalogEncoder</a>(<a class="code" href="classfrc_1_1AnalogInput.html">AnalogInput</a>* analogInput);</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogEncoder.html#a9136985622e9e5fcda44e279133371db">   41</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc_1_1AnalogEncoder.html#a9136985622e9e5fcda44e279133371db">AnalogEncoder</a>(<a class="code" href="classfrc_1_1AnalogInput.html">AnalogInput</a>&amp; analogInput);</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogEncoder.html#ab4de554964a190a95b83f29d2dfd2005">   48</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc_1_1AnalogEncoder.html#ab4de554964a190a95b83f29d2dfd2005">AnalogEncoder</a>(std::shared_ptr&lt;AnalogInput&gt; analogInput);</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogEncoder.html#a98f9e6325bb26c13b0519b1b3435178f">   48</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc_1_1AnalogEncoder.html#a98f9e6325bb26c13b0519b1b3435178f">AnalogEncoder</a>(<a class="code" href="classfrc_1_1AnalogInput.html">AnalogInput</a>* analogInput);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  ~<a class="code" href="classfrc_1_1AnalogEncoder.html">AnalogEncoder</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <a class="code" href="classfrc_1_1AnalogEncoder.html#a9136985622e9e5fcda44e279133371db">AnalogEncoder</a>(<a class="code" href="classfrc_1_1AnalogEncoder.html">AnalogEncoder</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <a class="code" href="classfrc_1_1AnalogEncoder.html">AnalogEncoder</a>&amp; operator=(<a class="code" href="classfrc_1_1AnalogEncoder.html">AnalogEncoder</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogEncoder.html#add6d795e550e21d06805ef416e3ddfef">   58</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1AnalogEncoder.html#add6d795e550e21d06805ef416e3ddfef">Reset</a>();</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogEncoder.html#ac4cc5b86214dfbee95da56657e070aff">   67</a></span>&#160;  units::turn_t <a class="code" href="classfrc_1_1AnalogEncoder.html#ac4cc5b86214dfbee95da56657e070aff">Get</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogEncoder.html#a6e08681d120ef7dd4846756686ff4e12">   78</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classfrc_1_1AnalogEncoder.html#a6e08681d120ef7dd4846756686ff4e12">GetPositionOffset</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogEncoder.html#a815f5db558e67bba33ecff5943465a52">   90</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1AnalogEncoder.html#a815f5db558e67bba33ecff5943465a52">SetDistancePerRotation</a>(<span class="keywordtype">double</span> distancePerRotation);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogEncoder.html#adf859e72f1fa9f2e289ffdb68151b6c3">   98</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classfrc_1_1AnalogEncoder.html#adf859e72f1fa9f2e289ffdb68151b6c3">GetDistancePerRotation</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogEncoder.html#a7146c2f374a71abd11b3a6472d58966a">  106</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classfrc_1_1AnalogEncoder.html#a7146c2f374a71abd11b3a6472d58966a">GetDistance</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogEncoder.html#a88e36d46044feb33dd53030dbc131d72">  113</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classfrc_1_1AnalogEncoder.html#a88e36d46044feb33dd53030dbc131d72">GetChannel</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogEncoder.html#ab4de554964a190a95b83f29d2dfd2005">   55</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc_1_1AnalogEncoder.html#ab4de554964a190a95b83f29d2dfd2005">AnalogEncoder</a>(std::shared_ptr&lt;AnalogInput&gt; analogInput);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  ~<a class="code" href="classfrc_1_1AnalogEncoder.html">AnalogEncoder</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <a class="code" href="classfrc_1_1AnalogEncoder.html#a823576cefb747ec258e09ae7bb606450">AnalogEncoder</a>(<a class="code" href="classfrc_1_1AnalogEncoder.html">AnalogEncoder</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <a class="code" href="classfrc_1_1AnalogEncoder.html">AnalogEncoder</a>&amp; operator=(<a class="code" href="classfrc_1_1AnalogEncoder.html">AnalogEncoder</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogEncoder.html#add6d795e550e21d06805ef416e3ddfef">   65</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1AnalogEncoder.html#add6d795e550e21d06805ef416e3ddfef">Reset</a>();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogEncoder.html#ac4cc5b86214dfbee95da56657e070aff">   74</a></span>&#160;  units::turn_t <a class="code" href="classfrc_1_1AnalogEncoder.html#ac4cc5b86214dfbee95da56657e070aff">Get</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogEncoder.html#a6e08681d120ef7dd4846756686ff4e12">   85</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classfrc_1_1AnalogEncoder.html#a6e08681d120ef7dd4846756686ff4e12">GetPositionOffset</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogEncoder.html#a815f5db558e67bba33ecff5943465a52">   97</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1AnalogEncoder.html#a815f5db558e67bba33ecff5943465a52">SetDistancePerRotation</a>(<span class="keywordtype">double</span> distancePerRotation);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogEncoder.html#adf859e72f1fa9f2e289ffdb68151b6c3">  105</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classfrc_1_1AnalogEncoder.html#adf859e72f1fa9f2e289ffdb68151b6c3">GetDistancePerRotation</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogEncoder.html#a7146c2f374a71abd11b3a6472d58966a">  113</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classfrc_1_1AnalogEncoder.html#a7146c2f374a71abd11b3a6472d58966a">GetDistance</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
-<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogEncoder.html#a9c04ccc83a905bb81445b5e93401dfc3">  115</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1AnalogEncoder.html#a9c04ccc83a905bb81445b5e93401dfc3">InitSendable</a>(<a class="code" href="classfrc_1_1SendableBuilder.html">SendableBuilder</a>&amp; builder) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="keywordtype">void</span> Init();</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  std::shared_ptr&lt;AnalogInput&gt; m_analogInput;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <a class="code" href="classfrc_1_1AnalogTrigger.html">AnalogTrigger</a> m_analogTrigger;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <a class="code" href="classfrc_1_1Counter.html">Counter</a> m_counter;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <span class="keywordtype">double</span> m_positionOffset = 0;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <span class="keywordtype">double</span> m_distancePerRotation = 1.0;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="keyword">mutable</span> units::turn_t m_lastPosition{0.0};</div>
+<div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogEncoder.html#a88e36d46044feb33dd53030dbc131d72">  120</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classfrc_1_1AnalogEncoder.html#a88e36d46044feb33dd53030dbc131d72">GetChannel</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogEncoder.html#a9c04ccc83a905bb81445b5e93401dfc3">  122</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1AnalogEncoder.html#a9c04ccc83a905bb81445b5e93401dfc3">InitSendable</a>(<a class="code" href="classfrc_1_1SendableBuilder.html">SendableBuilder</a>&amp; builder) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="keywordtype">void</span> Init();</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  hal::SimDevice m_simDevice;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  hal::SimDouble m_simPosition;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;};</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  std::shared_ptr&lt;AnalogInput&gt; m_analogInput;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <a class="code" href="classfrc_1_1AnalogTrigger.html">AnalogTrigger</a> m_analogTrigger;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <a class="code" href="classfrc_1_1Counter.html">Counter</a> m_counter;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  <span class="keywordtype">double</span> m_positionOffset = 0;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <span class="keywordtype">double</span> m_distancePerRotation = 1.0;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <span class="keyword">mutable</span> units::turn_t m_lastPosition{0.0};</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  hal::SimDevice m_simDevice;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  hal::SimDouble m_simPosition;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;};</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;}  <span class="comment">// namespace frc</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassfrc_1_1AnalogTrigger_html"><div class="ttname"><a href="classfrc_1_1AnalogTrigger.html">frc::AnalogTrigger</a></div><div class="ttdef"><b>Definition:</b> AnalogTrigger.h:24</div></div>
@@ -174,7 +176,8 @@ $(document).ready(function(){initNavTree('AnalogEncoder_8h_source.html',''); ini
 <div class="ttc" id="aclassfrc_1_1AnalogEncoder_html_a98f9e6325bb26c13b0519b1b3435178f"><div class="ttname"><a href="classfrc_1_1AnalogEncoder.html#a98f9e6325bb26c13b0519b1b3435178f">frc::AnalogEncoder::AnalogEncoder</a></div><div class="ttdeci">AnalogEncoder(AnalogInput *analogInput)</div><div class="ttdoc">Construct a new AnalogEncoder attached to a specific AnalogInput.</div></div>
 <div class="ttc" id="aclassfrc_1_1AnalogEncoder_html_a7146c2f374a71abd11b3a6472d58966a"><div class="ttname"><a href="classfrc_1_1AnalogEncoder.html#a7146c2f374a71abd11b3a6472d58966a">frc::AnalogEncoder::GetDistance</a></div><div class="ttdeci">double GetDistance() const</div><div class="ttdoc">Get the distance the sensor has driven since the last reset as scaled by the value from SetDistancePe...</div></div>
 <div class="ttc" id="aclassfrc_1_1AnalogInput_html"><div class="ttname"><a href="classfrc_1_1AnalogInput.html">frc::AnalogInput</a></div><div class="ttdoc">Analog input class.</div><div class="ttdef"><b>Definition:</b> AnalogInput.h:37</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> VisionRunner.h:15</div></div>
+<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> VisionRunner.inc:9</div></div>
+<div class="ttc" id="aclassfrc_1_1AnalogEncoder_html_a823576cefb747ec258e09ae7bb606450"><div class="ttname"><a href="classfrc_1_1AnalogEncoder.html#a823576cefb747ec258e09ae7bb606450">frc::AnalogEncoder::AnalogEncoder</a></div><div class="ttdeci">AnalogEncoder(int channel)</div><div class="ttdoc">Construct a new AnalogEncoder attached to a specific AnalogIn channel.</div></div>
 <div class="ttc" id="aclassfrc_1_1AnalogEncoder_html_a9136985622e9e5fcda44e279133371db"><div class="ttname"><a href="classfrc_1_1AnalogEncoder.html#a9136985622e9e5fcda44e279133371db">frc::AnalogEncoder::AnalogEncoder</a></div><div class="ttdeci">AnalogEncoder(AnalogInput &amp;analogInput)</div><div class="ttdoc">Construct a new AnalogEncoder attached to a specific AnalogInput.</div></div>
 <div class="ttc" id="aclassfrc_1_1AnalogEncoder_html_ac4cc5b86214dfbee95da56657e070aff"><div class="ttname"><a href="classfrc_1_1AnalogEncoder.html#ac4cc5b86214dfbee95da56657e070aff">frc::AnalogEncoder::Get</a></div><div class="ttdeci">units::turn_t Get() const</div><div class="ttdoc">Get the encoder value since the last reset.</div></div>
 <div class="ttc" id="aclassfrc_1_1Counter_html"><div class="ttname"><a href="classfrc_1_1Counter.html">frc::Counter</a></div><div class="ttdoc">Class for counting the number of ticks on a digital input channel.</div><div class="ttdef"><b>Definition:</b> Counter.h:37</div></div>
@@ -184,8 +187,8 @@ $(document).ready(function(){initNavTree('AnalogEncoder_8h_source.html',''); ini
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_c83246fd67bf422561e892c78521edd1.html">wpilibc</a></li><li class="navelem"><a class="el" href="dir_a55b36a80db95a4ab182a656f2eb2509.html">src</a></li><li class="navelem"><a class="el" href="dir_0fce2ef06e3c6f43f5c610d197b1a66e.html">main</a></li><li class="navelem"><a class="el" href="dir_05ef35d0b06c7e71bb0c2a8a996c52cb.html">native</a></li><li class="navelem"><a class="el" href="dir_9bb56e9ddac3e93dcc0aa7b90d99af5f.html">include</a></li><li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><b>AnalogEncoder.h</b></li>
-    <li class="footer">Generated on Sat Jan 30 2021 03:45:36 for WPILibC++ by
+    <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><b>AnalogEncoder.h</b></li>
+    <li class="footer">Generated on Sun Apr 25 2021 03:25:23 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

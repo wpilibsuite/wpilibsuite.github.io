@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>WPILibC++: /home/runner/work/allwpilib/allwpilib/wpilibc/src/main/native/include/frc/Solenoid.h Source File</title>
+<title>WPILibC++: frc/Solenoid.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.2.2</span>
+   &#160;<span id="projectnumber">2021.3.1</span>
    </div>
   </td>
  </tr>
@@ -128,32 +128,35 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
 <div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classfrc_1_1Solenoid.html#a0825354d6291aeb0a89f9b33d75a8a24">   67</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Solenoid.html#a0825354d6291aeb0a89f9b33d75a8a24">Toggle</a>();</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="classfrc_1_1Solenoid.html#a3947cbcc73de70a6b7244700c77c693e">   79</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1Solenoid.html#a3947cbcc73de70a6b7244700c77c693e">IsBlackListed</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="classfrc_1_1Solenoid.html#a66b6ffd42f53c3829150711e200b23a8">   91</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Solenoid.html#a66b6ffd42f53c3829150711e200b23a8">SetPulseDuration</a>(<span class="keywordtype">double</span> durationSeconds);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="classfrc_1_1Solenoid.html#a60b4342d9bddc7bf5745918622a08290">   99</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Solenoid.html#a60b4342d9bddc7bf5745918622a08290">StartPulse</a>();</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="classfrc_1_1Solenoid.html#aa512f68dcea950f8acc681b4d5dc6496">  101</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Solenoid.html#aa512f68dcea950f8acc681b4d5dc6496">InitSendable</a>(<a class="code" href="classfrc_1_1SendableBuilder.html">SendableBuilder</a>&amp; builder) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  hal::Handle&lt;HAL_SolenoidHandle&gt; m_solenoidHandle;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keywordtype">int</span> m_channel;  <span class="comment">// The channel on the module to control</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;};</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classfrc_1_1Solenoid.html#a955bc01fb6844349295b0cce5555527f">   72</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classfrc_1_1Solenoid.html#a955bc01fb6844349295b0cce5555527f">GetChannel</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="classfrc_1_1Solenoid.html#a3947cbcc73de70a6b7244700c77c693e">   84</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1Solenoid.html#a3947cbcc73de70a6b7244700c77c693e">IsBlackListed</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="classfrc_1_1Solenoid.html#a66b6ffd42f53c3829150711e200b23a8">   96</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Solenoid.html#a66b6ffd42f53c3829150711e200b23a8">SetPulseDuration</a>(<span class="keywordtype">double</span> durationSeconds);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="classfrc_1_1Solenoid.html#a60b4342d9bddc7bf5745918622a08290">  104</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Solenoid.html#a60b4342d9bddc7bf5745918622a08290">StartPulse</a>();</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="classfrc_1_1Solenoid.html#aa512f68dcea950f8acc681b4d5dc6496">  106</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Solenoid.html#aa512f68dcea950f8acc681b4d5dc6496">InitSendable</a>(<a class="code" href="classfrc_1_1SendableBuilder.html">SendableBuilder</a>&amp; builder) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  hal::Handle&lt;HAL_SolenoidHandle&gt; m_solenoidHandle;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="keywordtype">int</span> m_channel;  <span class="comment">// The channel on the module to control</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;};</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;}  <span class="comment">// namespace frc</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassfrc_1_1Solenoid_html_a9ee630c928008f0070eae1f9986cdfd2"><div class="ttname"><a href="classfrc_1_1Solenoid.html#a9ee630c928008f0070eae1f9986cdfd2">frc::Solenoid::Set</a></div><div class="ttdeci">virtual void Set(bool on)</div><div class="ttdoc">Set the value of a solenoid.</div></div>
 <div class="ttc" id="aclassfrc_1_1Solenoid_html_a0825354d6291aeb0a89f9b33d75a8a24"><div class="ttname"><a href="classfrc_1_1Solenoid.html#a0825354d6291aeb0a89f9b33d75a8a24">frc::Solenoid::Toggle</a></div><div class="ttdeci">void Toggle()</div><div class="ttdoc">Toggle the value of the solenoid.</div></div>
 <div class="ttc" id="aclassfrc_1_1Solenoid_html_a3947cbcc73de70a6b7244700c77c693e"><div class="ttname"><a href="classfrc_1_1Solenoid.html#a3947cbcc73de70a6b7244700c77c693e">frc::Solenoid::IsBlackListed</a></div><div class="ttdeci">bool IsBlackListed() const</div><div class="ttdoc">Check if solenoid is blacklisted.</div></div>
+<div class="ttc" id="aclassfrc_1_1Solenoid_html_a955bc01fb6844349295b0cce5555527f"><div class="ttname"><a href="classfrc_1_1Solenoid.html#a955bc01fb6844349295b0cce5555527f">frc::Solenoid::GetChannel</a></div><div class="ttdeci">int GetChannel() const</div><div class="ttdoc">Get the channel this solenoid is connected to.</div></div>
 <div class="ttc" id="aclassfrc_1_1Solenoid_html_a9ff51fd18311d0da6e67a7c2dbf90d90"><div class="ttname"><a href="classfrc_1_1Solenoid.html#a9ff51fd18311d0da6e67a7c2dbf90d90">frc::Solenoid::Solenoid</a></div><div class="ttdeci">Solenoid(int moduleNumber, int channel)</div><div class="ttdoc">Constructor.</div></div>
 <div class="ttc" id="aclassfrc_1_1Solenoid_html_aabf7b34baf6fda4f6f87f79d62c20f66"><div class="ttname"><a href="classfrc_1_1Solenoid.html#aabf7b34baf6fda4f6f87f79d62c20f66">frc::Solenoid::Get</a></div><div class="ttdeci">virtual bool Get() const</div><div class="ttdoc">Read the current value of the solenoid.</div></div>
 <div class="ttc" id="aclassfrc_1_1Solenoid_html_a60b4342d9bddc7bf5745918622a08290"><div class="ttname"><a href="classfrc_1_1Solenoid.html#a60b4342d9bddc7bf5745918622a08290">frc::Solenoid::StartPulse</a></div><div class="ttdeci">void StartPulse()</div><div class="ttdoc">Trigger the PCM to generate a pulse of the duration set in setPulseDuration.</div></div>
 <div class="ttc" id="aclassfrc_1_1Solenoid_html"><div class="ttname"><a href="classfrc_1_1Solenoid.html">frc::Solenoid</a></div><div class="ttdoc">Solenoid class for running high voltage Digital Output (PCM).</div><div class="ttdef"><b>Definition:</b> Solenoid.h:25</div></div>
 <div class="ttc" id="aclassfrc_1_1SolenoidBase_html"><div class="ttname"><a href="classfrc_1_1SolenoidBase.html">frc::SolenoidBase</a></div><div class="ttdoc">SolenoidBase class is the common base class for the Solenoid and DoubleSolenoid classes.</div><div class="ttdef"><b>Definition:</b> SolenoidBase.h:15</div></div>
 <div class="ttc" id="aclassfrc_1_1Sendable_html"><div class="ttname"><a href="classfrc_1_1Sendable.html">frc::Sendable</a></div><div class="ttdoc">Interface for Sendable objects.</div><div class="ttdef"><b>Definition:</b> Sendable.h:14</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> VisionRunner.h:15</div></div>
+<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> VisionRunner.inc:9</div></div>
 <div class="ttc" id="aclassfrc_1_1Solenoid_html_a2f1aa95afed763b07fc0821418cab2db"><div class="ttname"><a href="classfrc_1_1Solenoid.html#a2f1aa95afed763b07fc0821418cab2db">frc::Solenoid::Solenoid</a></div><div class="ttdeci">Solenoid(int channel)</div><div class="ttdoc">Constructor using the default PCM ID (0).</div></div>
 <div class="ttc" id="aclassfrc_1_1SendableHelper_html"><div class="ttname"><a href="classfrc_1_1SendableHelper.html">frc::SendableHelper</a></div><div class="ttdoc">A helper class for use with objects that add themselves to SendableRegistry.</div><div class="ttdef"><b>Definition:</b> SendableHelper.h:25</div></div>
 <div class="ttc" id="aclassfrc_1_1SendableBuilder_html"><div class="ttname"><a href="classfrc_1_1SendableBuilder.html">frc::SendableBuilder</a></div><div class="ttdef"><b>Definition:</b> SendableBuilder.h:21</div></div>
@@ -162,8 +165,8 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_c83246fd67bf422561e892c78521edd1.html">wpilibc</a></li><li class="navelem"><a class="el" href="dir_a55b36a80db95a4ab182a656f2eb2509.html">src</a></li><li class="navelem"><a class="el" href="dir_0fce2ef06e3c6f43f5c610d197b1a66e.html">main</a></li><li class="navelem"><a class="el" href="dir_05ef35d0b06c7e71bb0c2a8a996c52cb.html">native</a></li><li class="navelem"><a class="el" href="dir_9bb56e9ddac3e93dcc0aa7b90d99af5f.html">include</a></li><li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><b>Solenoid.h</b></li>
-    <li class="footer">Generated on Sat Jan 30 2021 03:45:36 for WPILibC++ by
+    <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><b>Solenoid.h</b></li>
+    <li class="footer">Generated on Sun Apr 25 2021 03:25:23 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

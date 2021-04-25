@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.2.2</span>
+   &#160;<span id="projectnumber">2021.3.1</span>
    </div>
   </td>
  </tr>
@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('classfrc_1_1Solenoid.html',''); initRe
 <p><a class="el" href="classfrc_1_1Solenoid.html" title="Solenoid class for running high voltage Digital Output (PCM).">Solenoid</a> class for running high voltage Digital Output (PCM).  
  <a href="classfrc_1_1Solenoid.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2Solenoid_8h_source.html">Solenoid.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2Solenoid_8h_source.html">frc/Solenoid.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for frc::Solenoid:</div>
 <div class="dyncontent">
@@ -137,6 +137,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0825354d6291aeb0a89f9b33d75a8a24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Solenoid.html#a0825354d6291aeb0a89f9b33d75a8a24">Toggle</a> ()</td></tr>
 <tr class="memdesc:a0825354d6291aeb0a89f9b33d75a8a24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggle the value of the solenoid.  <a href="classfrc_1_1Solenoid.html#a0825354d6291aeb0a89f9b33d75a8a24">More...</a><br /></td></tr>
 <tr class="separator:a0825354d6291aeb0a89f9b33d75a8a24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a955bc01fb6844349295b0cce5555527f"><td class="memItemLeft" align="right" valign="top"><a id="a955bc01fb6844349295b0cce5555527f"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Solenoid.html#a955bc01fb6844349295b0cce5555527f">GetChannel</a> () const</td></tr>
+<tr class="memdesc:a955bc01fb6844349295b0cce5555527f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the channel this solenoid is connected to. <br /></td></tr>
+<tr class="separator:a955bc01fb6844349295b0cce5555527f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3947cbcc73de70a6b7244700c77c693e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Solenoid.html#a3947cbcc73de70a6b7244700c77c693e">IsBlackListed</a> () const</td></tr>
 <tr class="memdesc:a3947cbcc73de70a6b7244700c77c693e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if solenoid is blacklisted.  <a href="classfrc_1_1Solenoid.html#a3947cbcc73de70a6b7244700c77c693e">More...</a><br /></td></tr>
 <tr class="separator:a3947cbcc73de70a6b7244700c77c693e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -150,6 +154,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aa512f68dcea950f8acc681b4d5dc6496"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes this <a class="el" href="classfrc_1_1Sendable.html" title="Interface for Sendable objects.">Sendable</a> object.  <a href="classfrc_1_1Solenoid.html#aa512f68dcea950f8acc681b4d5dc6496">More...</a><br /></td></tr>
 <tr class="separator:aa512f68dcea950f8acc681b4d5dc6496"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classfrc_1_1SolenoidBase"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classfrc_1_1SolenoidBase')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classfrc_1_1SolenoidBase.html">frc::SolenoidBase</a></td></tr>
+<tr class="memitem:a7ebb23273075d87bc30e06f273f7f9d9 inherit pub_methods_classfrc_1_1SolenoidBase"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SolenoidBase.html#a7ebb23273075d87bc30e06f273f7f9d9">GetModuleNumber</a> () const</td></tr>
+<tr class="memdesc:a7ebb23273075d87bc30e06f273f7f9d9 inherit pub_methods_classfrc_1_1SolenoidBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the <a class="el" href="classfrc_1_1CAN.html" title="High level class for interfacing with CAN devices conforming to the standard CAN spec.">CAN</a> ID of the module this solenoid is connected to.  <a href="classfrc_1_1SolenoidBase.html#a7ebb23273075d87bc30e06f273f7f9d9">More...</a><br /></td></tr>
+<tr class="separator:a7ebb23273075d87bc30e06f273f7f9d9 inherit pub_methods_classfrc_1_1SolenoidBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a110d2f1b008dd31624dffba35dcc356f inherit pub_methods_classfrc_1_1SolenoidBase"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SolenoidBase.html#a110d2f1b008dd31624dffba35dcc356f">GetAll</a> () const</td></tr>
 <tr class="memdesc:a110d2f1b008dd31624dffba35dcc356f inherit pub_methods_classfrc_1_1SolenoidBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read all 8 solenoids as a single byte.  <a href="classfrc_1_1SolenoidBase.html#a110d2f1b008dd31624dffba35dcc356f">More...</a><br /></td></tr>
 <tr class="separator:a110d2f1b008dd31624dffba35dcc356f inherit pub_methods_classfrc_1_1SolenoidBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -575,7 +582,7 @@ static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>m_max
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/runner/work/allwpilib/allwpilib/wpilibc/src/main/native/include/frc/<a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2Solenoid_8h_source.html">Solenoid.h</a></li>
+<li>frc/<a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2Solenoid_8h_source.html">Solenoid.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -583,7 +590,7 @@ static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>m_max
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1Solenoid.html">Solenoid</a></li>
-    <li class="footer">Generated on Sat Jan 30 2021 03:45:39 for WPILibC++ by
+    <li class="footer">Generated on Sun Apr 25 2021 03:25:27 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

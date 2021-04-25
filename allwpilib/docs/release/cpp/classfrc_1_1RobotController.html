@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.2.2</span>
+   &#160;<span id="projectnumber">2021.3.1</span>
    </div>
   </td>
  </tr>
@@ -111,6 +111,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aba9416b78890766d8aa07c6156f5715d"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1RobotController.html#aba9416b78890766d8aa07c6156f5715d">GetUserButton</a> ()</td></tr>
 <tr class="memdesc:aba9416b78890766d8aa07c6156f5715d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the state of the "USER" button on the roboRIO.  <a href="classfrc_1_1RobotController.html#aba9416b78890766d8aa07c6156f5715d">More...</a><br /></td></tr>
 <tr class="separator:aba9416b78890766d8aa07c6156f5715d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b1e42e825583c82664a4ecc5d81b83f"><td class="memItemLeft" align="right" valign="top">static units::volt_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1RobotController.html#a4b1e42e825583c82664a4ecc5d81b83f">GetBatteryVoltage</a> ()</td></tr>
+<tr class="memdesc:a4b1e42e825583c82664a4ecc5d81b83f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the battery voltage.  <a href="classfrc_1_1RobotController.html#a4b1e42e825583c82664a4ecc5d81b83f">More...</a><br /></td></tr>
+<tr class="separator:a4b1e42e825583c82664a4ecc5d81b83f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04c9086414c10f72fdafcdeb81c4d911"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1RobotController.html#a04c9086414c10f72fdafcdeb81c4d911">IsSysActive</a> ()</td></tr>
 <tr class="memdesc:a04c9086414c10f72fdafcdeb81c4d911"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the FPGA outputs are enabled.  <a href="classfrc_1_1RobotController.html#a04c9086414c10f72fdafcdeb81c4d911">More...</a><br /></td></tr>
 <tr class="separator:a04c9086414c10f72fdafcdeb81c4d911"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -164,6 +167,34 @@ static <a class="el" href="structfrc_1_1CANStatus.html">CANStatus</a>&#160;</td>
 <tr class="separator:a58e7b24ddd479303b64d2b9ccff255a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4b1e42e825583c82664a4ecc5d81b83f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b1e42e825583c82664a4ecc5d81b83f">&#9670;&nbsp;</a></span>GetBatteryVoltage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static units::volt_t frc::RobotController::GetBatteryVoltage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Read the battery voltage. </p>
+<dl class="section return"><dt>Returns</dt><dd>The battery voltage in Volts. </dd></dl>
+
+</div>
+</div>
 <a id="ab8f84f32622befd0794899c3c5d1987c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab8f84f32622befd0794899c3c5d1987c">&#9670;&nbsp;</a></span>GetCurrent3V3()</h2>
 
@@ -731,7 +762,7 @@ static <a class="el" href="structfrc_1_1CANStatus.html">CANStatus</a>&#160;</td>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/runner/work/allwpilib/allwpilib/wpilibc/src/main/native/include/frc/<a class="el" href="RobotController_8h_source.html">RobotController.h</a></li>
+<li>frc/<a class="el" href="RobotController_8h_source.html">RobotController.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -739,7 +770,7 @@ static <a class="el" href="structfrc_1_1CANStatus.html">CANStatus</a>&#160;</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1RobotController.html">RobotController</a></li>
-    <li class="footer">Generated on Sat Jan 30 2021 03:45:39 for WPILibC++ by
+    <li class="footer">Generated on Sun Apr 25 2021 03:25:26 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

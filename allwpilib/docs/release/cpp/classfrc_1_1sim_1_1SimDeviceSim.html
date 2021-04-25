@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.2.2</span>
+   &#160;<span id="projectnumber">2021.3.1</span>
    </div>
   </td>
  </tr>
@@ -101,13 +101,19 @@ $(document).ready(function(){initNavTree('classfrc_1_1sim_1_1SimDeviceSim.html',
 <p>Class to control the simulation side of a SimDevice.  
  <a href="classfrc_1_1sim_1_1SimDeviceSim.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="SimDeviceSim_8h_source.html">SimDeviceSim.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="SimDeviceSim_8h_source.html">frc/simulation/SimDeviceSim.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a83eb29d9e66c07fc973862fb7e777e2c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1SimDeviceSim.html#a83eb29d9e66c07fc973862fb7e777e2c">SimDeviceSim</a> (const char *name)</td></tr>
 <tr class="memdesc:a83eb29d9e66c07fc973862fb7e777e2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classfrc_1_1sim_1_1SimDeviceSim.html" title="Class to control the simulation side of a SimDevice.">SimDeviceSim</a>.  <a href="classfrc_1_1sim_1_1SimDeviceSim.html#a83eb29d9e66c07fc973862fb7e777e2c">More...</a><br /></td></tr>
 <tr class="separator:a83eb29d9e66c07fc973862fb7e777e2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f03ee913153018d0db30f29f5a0d4a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1SimDeviceSim.html#a4f03ee913153018d0db30f29f5a0d4a2">SimDeviceSim</a> (const char *name, int index)</td></tr>
+<tr class="memdesc:a4f03ee913153018d0db30f29f5a0d4a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classfrc_1_1sim_1_1SimDeviceSim.html" title="Class to control the simulation side of a SimDevice.">SimDeviceSim</a>.  <a href="classfrc_1_1sim_1_1SimDeviceSim.html#a4f03ee913153018d0db30f29f5a0d4a2">More...</a><br /></td></tr>
+<tr class="separator:a4f03ee913153018d0db30f29f5a0d4a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abea2f72198998c0690dd2bcb40fccc2c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1SimDeviceSim.html#abea2f72198998c0690dd2bcb40fccc2c">SimDeviceSim</a> (const char *name, int index, int channel)</td></tr>
+<tr class="memdesc:abea2f72198998c0690dd2bcb40fccc2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classfrc_1_1sim_1_1SimDeviceSim.html" title="Class to control the simulation side of a SimDevice.">SimDeviceSim</a>.  <a href="classfrc_1_1sim_1_1SimDeviceSim.html#abea2f72198998c0690dd2bcb40fccc2c">More...</a><br /></td></tr>
+<tr class="separator:abea2f72198998c0690dd2bcb40fccc2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff4befa701db1ab1a842b67615162baf"><td class="memItemLeft" align="right" valign="top">hal::SimValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1SimDeviceSim.html#aff4befa701db1ab1a842b67615162baf">GetValue</a> (const char *name) const</td></tr>
 <tr class="memdesc:aff4befa701db1ab1a842b67615162baf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the property object with the given name.  <a href="classfrc_1_1sim_1_1SimDeviceSim.html#aff4befa701db1ab1a842b67615162baf">More...</a><br /></td></tr>
 <tr class="separator:aff4befa701db1ab1a842b67615162baf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,7 +158,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <div class="textblock"><p>Class to control the simulation side of a SimDevice. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a83eb29d9e66c07fc973862fb7e777e2c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83eb29d9e66c07fc973862fb7e777e2c">&#9670;&nbsp;</a></span>SimDeviceSim()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a83eb29d9e66c07fc973862fb7e777e2c">&#9670;&nbsp;</a></span>SimDeviceSim() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -179,6 +185,87 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>name of the SimDevice </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4f03ee913153018d0db30f29f5a0d4a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f03ee913153018d0db30f29f5a0d4a2">&#9670;&nbsp;</a></span>SimDeviceSim() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">frc::sim::SimDeviceSim::SimDeviceSim </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructs a <a class="el" href="classfrc_1_1sim_1_1SimDeviceSim.html" title="Class to control the simulation side of a SimDevice.">SimDeviceSim</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>name of the SimDevice </td></tr>
+    <tr><td class="paramname">index</td><td>device index number to append to name </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abea2f72198998c0690dd2bcb40fccc2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abea2f72198998c0690dd2bcb40fccc2c">&#9670;&nbsp;</a></span>SimDeviceSim() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">frc::sim::SimDeviceSim::SimDeviceSim </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>channel</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructs a <a class="el" href="classfrc_1_1sim_1_1SimDeviceSim.html" title="Class to control the simulation side of a SimDevice.">SimDeviceSim</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>name of the SimDevice </td></tr>
+    <tr><td class="paramname">index</td><td>device index number to append to name </td></tr>
+    <tr><td class="paramname">channel</td><td>device channel number to append to name </td></tr>
   </table>
   </dd>
 </dl>
@@ -495,7 +582,7 @@ template&lt;typename F &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/runner/work/allwpilib/allwpilib/wpilibc/src/main/native/include/frc/simulation/<a class="el" href="SimDeviceSim_8h_source.html">SimDeviceSim.h</a></li>
+<li>frc/simulation/<a class="el" href="SimDeviceSim_8h_source.html">SimDeviceSim.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -503,7 +590,7 @@ template&lt;typename F &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><b>sim</b></li><li class="navelem"><a class="el" href="classfrc_1_1sim_1_1SimDeviceSim.html">SimDeviceSim</a></li>
-    <li class="footer">Generated on Sat Jan 30 2021 03:45:40 for WPILibC++ by
+    <li class="footer">Generated on Sun Apr 25 2021 03:25:27 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

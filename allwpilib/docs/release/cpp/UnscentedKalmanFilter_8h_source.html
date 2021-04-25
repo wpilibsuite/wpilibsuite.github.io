@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>WPILibC++: /home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/include/frc/estimator/UnscentedKalmanFilter.h Source File</title>
+<title>WPILibC++: frc/estimator/UnscentedKalmanFilter.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.2.2</span>
+   &#160;<span id="projectnumber">2021.3.1</span>
    </div>
   </td>
  </tr>
@@ -398,7 +398,7 @@ $(document).ready(function(){initNavTree('UnscentedKalmanFilter_8h_source.html',
 <div class="ttc" id="aclassfrc_1_1UnscentedKalmanFilter_html_a7a6add97e52efdc06f74068c864493de"><div class="ttname"><a href="classfrc_1_1UnscentedKalmanFilter.html#a7a6add97e52efdc06f74068c864493de">frc::UnscentedKalmanFilter::Predict</a></div><div class="ttdeci">void Predict(const Eigen::Matrix&lt; double, Inputs, 1 &gt; &amp;u, units::second_t dt)</div><div class="ttdoc">Project the model into the future with a new control input u.</div><div class="ttdef"><b>Definition:</b> UnscentedKalmanFilter.h:204</div></div>
 <div class="ttc" id="aclassfrc_1_1UnscentedKalmanFilter_html_af26c8b8959c7741ffa52c75e12ee47b0"><div class="ttname"><a href="classfrc_1_1UnscentedKalmanFilter.html#af26c8b8959c7741ffa52c75e12ee47b0">frc::UnscentedKalmanFilter::UnscentedKalmanFilter</a></div><div class="ttdeci">UnscentedKalmanFilter(std::function&lt; Eigen::Matrix&lt; double, States, 1 &gt;(const Eigen::Matrix&lt; double, States, 1 &gt; &amp;, const Eigen::Matrix&lt; double, Inputs, 1 &gt; &amp;)&gt; f, std::function&lt; Eigen::Matrix&lt; double, Outputs, 1 &gt;(const Eigen::Matrix&lt; double, States, 1 &gt; &amp;, const Eigen::Matrix&lt; double, Inputs, 1 &gt; &amp;)&gt; h, const wpi::array&lt; double, States &gt; &amp;stateStdDevs, const wpi::array&lt; double, Outputs &gt; &amp;measurementStdDevs, std::function&lt; Eigen::Matrix&lt; double, States, 1 &gt;(const Eigen::Matrix&lt; double, States, 2 *States+1 &gt; &amp;, const Eigen::Matrix&lt; double, 2 *States+1, 1 &gt; &amp;)&gt; meanFuncX, std::function&lt; Eigen::Matrix&lt; double, Outputs, 1 &gt;(const Eigen::Matrix&lt; double, Outputs, 2 *States+1 &gt; &amp;, const Eigen::Matrix&lt; double, 2 *States+1, 1 &gt; &amp;)&gt; meanFuncY, std::function&lt; Eigen::Matrix&lt; double, States, 1 &gt;(const Eigen::Matrix&lt; double, States, 1 &gt; &amp;, const Eigen::Matrix&lt; double, States, 1 &gt; &amp;)&gt; residualFuncX, std::function&lt; Eigen::Matrix&lt; double, Outputs, 1 &gt;(const Eigen::Matrix&lt; double, Outputs, 1 &gt; &amp;, const Eigen::Matrix&lt; double, Outputs, 1 &gt; &amp;)&gt; residualFuncY, std::function&lt; Eigen::Matrix&lt; double, States, 1 &gt;(const Eigen::Matrix&lt; double, States, 1 &gt; &amp;, const Eigen::Matrix&lt; double, States, 1 &gt; &amp;)&gt; addFuncX, units::second_t dt)</div><div class="ttdoc">Constructs an unscented Kalman filter with custom mean, residual, and addition functions.</div><div class="ttdef"><b>Definition:</b> UnscentedKalmanFilter.h:96</div></div>
 <div class="ttc" id="aclassfrc_1_1UnscentedKalmanFilter_html_a5aabd4b8bdbf288c014995eced0e33fa"><div class="ttname"><a href="classfrc_1_1UnscentedKalmanFilter.html#a5aabd4b8bdbf288c014995eced0e33fa">frc::UnscentedKalmanFilter::P</a></div><div class="ttdeci">double P(int i, int j) const</div><div class="ttdoc">Returns an element of the error covariance matrix P.</div><div class="ttdef"><b>Definition:</b> UnscentedKalmanFilter.h:153</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> VisionRunner.h:15</div></div>
+<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> VisionRunner.inc:9</div></div>
 <div class="ttc" id="aclassfrc_1_1MerweScaledSigmaPoints_html"><div class="ttname"><a href="classfrc_1_1MerweScaledSigmaPoints.html">frc::MerweScaledSigmaPoints</a></div><div class="ttdoc">Generates sigma points and weights according to Van der Merwe's 2004 dissertation[1] for the Unscente...</div><div class="ttdef"><b>Definition:</b> MerweScaledSigmaPoints.h:29</div></div>
 <div class="ttc" id="aclassfrc_1_1UnscentedKalmanFilter_html"><div class="ttname"><a href="classfrc_1_1UnscentedKalmanFilter.html">frc::UnscentedKalmanFilter</a></div><div class="ttdef"><b>Definition:</b> UnscentedKalmanFilter.h:24</div></div>
 <div class="ttc" id="aclassfrc_1_1UnscentedKalmanFilter_html_a1b9eaaab42a142391a75d1472cd8ec12"><div class="ttname"><a href="classfrc_1_1UnscentedKalmanFilter.html#a1b9eaaab42a142391a75d1472cd8ec12">frc::UnscentedKalmanFilter::Xhat</a></div><div class="ttdeci">double Xhat(int i) const</div><div class="ttdoc">Returns an element of the state estimate x-hat.</div><div class="ttdef"><b>Definition:</b> UnscentedKalmanFilter.h:172</div></div>
@@ -406,8 +406,8 @@ $(document).ready(function(){initNavTree('UnscentedKalmanFilter_8h_source.html',
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_e81593cd22a74c0453b864f226c84e9d.html">wpimath</a></li><li class="navelem"><a class="el" href="dir_4a07e7e34c3309db4f2aee20318c365b.html">src</a></li><li class="navelem"><a class="el" href="dir_37ee524af24664d12db3cd06c96f93b9.html">main</a></li><li class="navelem"><a class="el" href="dir_0741e1c35aa739ecce87b7ca77560051.html">native</a></li><li class="navelem"><a class="el" href="dir_e7b4e55b90254cfe62f0cb6fe1aed23c.html">include</a></li><li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_7b4a0634315f7993a48b0e5d4ddcc644.html">estimator</a></li><li class="navelem"><b>UnscentedKalmanFilter.h</b></li>
-    <li class="footer">Generated on Sat Jan 30 2021 03:45:37 for WPILibC++ by
+    <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_7b4a0634315f7993a48b0e5d4ddcc644.html">estimator</a></li><li class="navelem"><b>UnscentedKalmanFilter.h</b></li>
+    <li class="footer">Generated on Sun Apr 25 2021 03:25:24 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

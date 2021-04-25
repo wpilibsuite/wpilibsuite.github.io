@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>WPILibC++: /home/runner/work/allwpilib/allwpilib/wpiutil/src/main/native/include/wpi/Format.h Source File</title>
+<title>WPILibC++: wpi/Format.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.2.2</span>
+   &#160;<span id="projectnumber">2021.3.1</span>
    </div>
   </td>
  </tr>
@@ -180,7 +180,7 @@ $(document).ready(function(){initNavTree('Format_8h_source.html',''); initResiza
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordtype">int</span> snprint_tuple(<span class="keywordtype">char</span> *Buffer, <span class="keywordtype">unsigned</span> BufferSize,</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                    std::index_sequence&lt;Is...&gt;)<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#ifdef _MSC_VER</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">return</span> _snprintf_s(Buffer, BufferSize, BufferSize, Fmt, std::get&lt;Is&gt;(Vals)...);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">return</span> _snprintf(Buffer, BufferSize, Fmt, std::get&lt;Is&gt;(Vals)...);</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#ifdef __GNUC__</span></div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#pragma GCC diagnostic push</span></div>
@@ -327,8 +327,8 @@ $(document).ready(function(){initNavTree('Format_8h_source.html',''); initResiza
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_ee3b12e3cc58cd62f356d078e112eeb4.html">wpiutil</a></li><li class="navelem"><a class="el" href="dir_0b37bdc985dfb85cd82ca92a771d9e04.html">src</a></li><li class="navelem"><a class="el" href="dir_19031513f3361c45d712cdc1c5b1f353.html">main</a></li><li class="navelem"><a class="el" href="dir_48410d5e596f2d65a12ffcdcda0be254.html">native</a></li><li class="navelem"><a class="el" href="dir_d01089097591e603100023951e2380fe.html">include</a></li><li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><b>Format.h</b></li>
-    <li class="footer">Generated on Sat Jan 30 2021 03:45:37 for WPILibC++ by
+    <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><b>Format.h</b></li>
+    <li class="footer">Generated on Sun Apr 25 2021 03:25:24 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

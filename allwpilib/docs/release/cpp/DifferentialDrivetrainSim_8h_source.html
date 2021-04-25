@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>WPILibC++: /home/runner/work/allwpilib/allwpilib/wpilibc/src/main/native/include/frc/simulation/DifferentialDrivetrainSim.h Source File</title>
+<title>WPILibC++: frc/simulation/DifferentialDrivetrainSim.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.2.2</span>
+   &#160;<span id="projectnumber">2021.3.1</span>
    </div>
   </td>
  </tr>
@@ -213,7 +213,7 @@ $(document).ready(function(){initNavTree('DifferentialDrivetrainSim_8h_source.ht
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                                                * (26_in / 2) * (26_in / 2);</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160; </div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classfrc_1_1sim_1_1DifferentialDrivetrainSim.html">DifferentialDrivetrainSim</a>{</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        motor,           gearing, batteryMoi + gearboxMoi, 25_kg,</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        motor,           gearing, batteryMoi + gearboxMoi, 60_lb,</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        wheelSize / 2.0, 26_in,   measurementStdDevs};</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;  }</div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160; </div>
@@ -222,7 +222,7 @@ $(document).ready(function(){initNavTree('DifferentialDrivetrainSim_8h_source.ht
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;      units::kilogram_square_meter_t J,</div>
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;      <span class="keyword">const</span> std::array&lt;double, 7&gt;&amp; measurementStdDevs = {}) {</div>
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classfrc_1_1sim_1_1DifferentialDrivetrainSim.html">DifferentialDrivetrainSim</a>{</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        motor, gearing, J, 25_kg, wheelSize / 2.0, 26_in, measurementStdDevs};</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        motor, gearing, J, 60_lb, wheelSize / 2.0, 26_in, measurementStdDevs};</div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;  }</div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160; </div>
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160; <span class="keyword">private</span>:</div>
@@ -285,8 +285,8 @@ $(document).ready(function(){initNavTree('DifferentialDrivetrainSim_8h_source.ht
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_c83246fd67bf422561e892c78521edd1.html">wpilibc</a></li><li class="navelem"><a class="el" href="dir_a55b36a80db95a4ab182a656f2eb2509.html">src</a></li><li class="navelem"><a class="el" href="dir_0fce2ef06e3c6f43f5c610d197b1a66e.html">main</a></li><li class="navelem"><a class="el" href="dir_05ef35d0b06c7e71bb0c2a8a996c52cb.html">native</a></li><li class="navelem"><a class="el" href="dir_9bb56e9ddac3e93dcc0aa7b90d99af5f.html">include</a></li><li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_297dc702852f645e4b9e531dac2da27d.html">simulation</a></li><li class="navelem"><b>DifferentialDrivetrainSim.h</b></li>
-    <li class="footer">Generated on Sat Jan 30 2021 03:45:36 for WPILibC++ by
+    <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_297dc702852f645e4b9e531dac2da27d.html">simulation</a></li><li class="navelem"><b>DifferentialDrivetrainSim.h</b></li>
+    <li class="footer">Generated on Sun Apr 25 2021 03:25:24 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

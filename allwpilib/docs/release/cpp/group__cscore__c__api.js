@@ -25,6 +25,7 @@ var group__cscore__c__api =
     ] ],
     [ "CS_Event", "structCS__Event.html", [
       [ "kind", "structCS__Event.html#ac5f06423573aa322a505ac6138589b1b", null ],
+      [ "listener", "structCS__Event.html#ab41ff6483edfd826bb20562129543c48", null ],
       [ "mode", "structCS__Event.html#a509b03c8866f2b23dadd7be545a1b870", null ],
       [ "name", "structCS__Event.html#a204dfb71f5b33e9765c6c8834d703b4c", null ],
       [ "property", "structCS__Event.html#a28c968a0e58d696b9513ba58a845b94a", null ],

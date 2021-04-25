@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.2.2</span>
+   &#160;<span id="projectnumber">2021.3.1</span>
    </div>
   </td>
  </tr>
@@ -91,6 +91,7 @@ $(document).ready(function(){initNavTree('classfrc_1_1Notifier.html',''); initRe
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classfrc_1_1Notifier-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">frc::Notifier Class Reference</div>  </div>
@@ -202,8 +203,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:a2ab67823d0cf73b2a658e48e3d24fb39 inherit pub_methods_classfrc_1_1ErrorBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear global errors. <br /></td></tr>
 <tr class="separator:a2ab67823d0cf73b2a658e48e3d24fb39 inherit pub_methods_classfrc_1_1ErrorBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:aa927a8e8c60584038c16d07a4f8d5baf"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Notifier.html#aa927a8e8c60584038c16d07a4f8d5baf">SetHALThreadPriority</a> (bool realTime, int32_t priority)</td></tr>
+<tr class="memdesc:aa927a8e8c60584038c16d07a4f8d5baf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the HAL notifier thread priority.  <a href="classfrc_1_1Notifier.html#aa927a8e8c60584038c16d07a4f8d5baf">More...</a><br /></td></tr>
+<tr class="separator:aa927a8e8c60584038c16d07a4f8d5baf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classfrc_1_1ErrorBase"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classfrc_1_1ErrorBase')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classfrc_1_1ErrorBase.html">frc::ErrorBase</a></td></tr>
 <tr class="memitem:af84e37119ebf0ee9cc0d202ce8d9cc84 inherit pub_static_methods_classfrc_1_1ErrorBase"><td class="memItemLeft" align="right" valign="top"><a id="af84e37119ebf0ee9cc0d202ce8d9cc84"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>SetGlobalError</b> (Error::Code code, const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;contextMessage, <a class="el" href="classwpi_1_1StringRef.html">wpi::StringRef</a> filename, <a class="el" href="classwpi_1_1StringRef.html">wpi::StringRef</a> function, int lineNumber)</td></tr>
@@ -219,6 +223,9 @@ static <a class="el" href="classfrc_1_1Error.html">Error</a>&#160;</td><td class
 static std::vector&lt; <a class="el" href="classfrc_1_1Error.html">Error</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1ErrorBase.html#a04d20efff05851a767ffb48805929ee9">GetGlobalErrors</a> ()</td></tr>
 <tr class="memdesc:a04d20efff05851a767ffb48805929ee9 inherit pub_static_methods_classfrc_1_1ErrorBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve all global errors. <br /></td></tr>
 <tr class="separator:a04d20efff05851a767ffb48805929ee9 inherit pub_static_methods_classfrc_1_1ErrorBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_classfrc_1_1ErrorBase"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classfrc_1_1ErrorBase')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classfrc_1_1ErrorBase.html">frc::ErrorBase</a></td></tr>
 <tr class="memitem:a37ea09ba2389bcd5b0cb96e9feccaa6a inherit pro_attribs_classfrc_1_1ErrorBase"><td class="memItemLeft" align="right" valign="top"><a id="a37ea09ba2389bcd5b0cb96e9feccaa6a"></a>
 <a class="el" href="classfrc_1_1Error.html">Error</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_error</b></td></tr>
@@ -307,6 +314,53 @@ static std::vector&lt; <a class="el" href="classfrc_1_1Error.html">Error</a> &gt
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa927a8e8c60584038c16d07a4f8d5baf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa927a8e8c60584038c16d07a4f8d5baf">&#9670;&nbsp;</a></span>SetHALThreadPriority()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool frc::Notifier::SetHALThreadPriority </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>realTime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>priority</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the HAL notifier thread priority. </p>
+<p>The HAL notifier thread is responsible for managing the FPGA's notifier interrupt and waking up user's Notifiers when it's their time to run. Giving the HAL notifier thread real-time priority helps ensure the user's real-time Notifiers, if any, are notified to run in a timely manner.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">realTime</td><td>Set to true to set a real-time priority, false for standard priority. </td></tr>
+    <tr><td class="paramname">priority</td><td>Priority to set the thread to. For real-time, this is 1-99 with 99 being highest. For non-real-time, this is forced to 0. See "man 7 sched" for more details. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True on success. </dd></dl>
+
+</div>
+</div>
 <a id="a3744a6ff39272da9ad719fead95bc31a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3744a6ff39272da9ad719fead95bc31a">&#9670;&nbsp;</a></span>SetHandler()</h2>
 
@@ -378,7 +432,7 @@ static std::vector&lt; <a class="el" href="classfrc_1_1Error.html">Error</a> &gt
 
 <p>Register for periodic event notification. </p>
 <p>A timer event is queued for periodic event notification. Each time the interrupt occurs, the event will be immediately requeued for the same time interval.</p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000023">Deprecated:</a></b></dt><dd>Use unit-safe <a class="el" href="classfrc_1_1Notifier.html#a5bc1b27b2d22ca7de91fe1701746c521" title="Register for periodic event notification.">StartPeriodic(units::second_t period)</a> method instead</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000017">Deprecated:</a></b></dt><dd>Use unit-safe <a class="el" href="classfrc_1_1Notifier.html#a5bc1b27b2d22ca7de91fe1701746c521" title="Register for periodic event notification.">StartPeriodic(units::second_t period)</a> method instead</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">period</td><td>Period in seconds to call the handler starting one period after the call to this method. </td></tr>
@@ -433,7 +487,7 @@ static std::vector&lt; <a class="el" href="classfrc_1_1Error.html">Error</a> &gt
 
 <p>Register for single event notification. </p>
 <p>A timer event is queued for a single event after the specified delay.</p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000022">Deprecated:</a></b></dt><dd>Use unit-safe <a class="el" href="classfrc_1_1Notifier.html#ac6fdc8a4a8ecbbb4a863e639bf719323" title="Register for single event notification.">StartSingle(units::second_t delay)</a> method instead.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000016">Deprecated:</a></b></dt><dd>Use unit-safe <a class="el" href="classfrc_1_1Notifier.html#ac6fdc8a4a8ecbbb4a863e639bf719323" title="Register for single event notification.">StartSingle(units::second_t delay)</a> method instead.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">delay</td><td>Seconds to wait before the handler is called. </td></tr>
@@ -492,7 +546,7 @@ static std::vector&lt; <a class="el" href="classfrc_1_1Error.html">Error</a> &gt
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/runner/work/allwpilib/allwpilib/wpilibc/src/main/native/include/frc/<a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2Notifier_8h_source.html">Notifier.h</a></li>
+<li>frc/<a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2Notifier_8h_source.html">Notifier.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -500,7 +554,7 @@ static std::vector&lt; <a class="el" href="classfrc_1_1Error.html">Error</a> &gt
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1Notifier.html">Notifier</a></li>
-    <li class="footer">Generated on Sat Jan 30 2021 03:45:39 for WPILibC++ by
+    <li class="footer">Generated on Sun Apr 25 2021 03:25:26 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>
