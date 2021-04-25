@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.2.2-68-gaaf24e2</span>
+   &#160;<span id="projectnumber">2021.2.2-69-g6e31230</span>
    </div>
   </td>
  </tr>
@@ -121,17 +121,17 @@ $(document).ready(function(){initNavTree('StringRef_8h_source.html',''); initRes
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span>wpi {</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keyword">class </span>hash_code;</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classwpi_1_1SmallVectorImpl.html">   29</a></span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="keyword">class </span><a class="code" href="classwpi_1_1SmallVectorImpl.html">SmallVectorImpl</a>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keyword">class </span><a class="code" href="classwpi_1_1StringRef.html">StringRef</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="keyword">class </span>SmallVectorImpl;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keyword">class </span>StringRef;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keywordtype">bool</span> getAsUnsignedInteger(<a class="code" href="classwpi_1_1StringRef.html">StringRef</a> Str, <span class="keywordtype">unsigned</span> Radix,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keywordtype">bool</span> getAsUnsignedInteger(StringRef Str, <span class="keywordtype">unsigned</span> Radix,</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                            <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> &amp;Result) noexcept;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordtype">bool</span> getAsSignedInteger(<a class="code" href="classwpi_1_1StringRef.html">StringRef</a> Str, <span class="keywordtype">unsigned</span> Radix, <span class="keywordtype">long</span> <span class="keywordtype">long</span> &amp;Result) noexcept;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordtype">bool</span> getAsSignedInteger(StringRef Str, <span class="keywordtype">unsigned</span> Radix, <span class="keywordtype">long</span> <span class="keywordtype">long</span> &amp;Result) noexcept;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordtype">bool</span> consumeUnsignedInteger(<a class="code" href="classwpi_1_1StringRef.html">StringRef</a> &amp;Str, <span class="keywordtype">unsigned</span> Radix,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordtype">bool</span> consumeUnsignedInteger(StringRef &amp;Str, <span class="keywordtype">unsigned</span> Radix,</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                              <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> &amp;Result) noexcept;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordtype">bool</span> consumeSignedInteger(<a class="code" href="classwpi_1_1StringRef.html">StringRef</a> &amp;Str, <span class="keywordtype">unsigned</span> Radix, <span class="keywordtype">long</span> <span class="keywordtype">long</span> &amp;Result) noexcept;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordtype">bool</span> consumeSignedInteger(StringRef &amp;Str, <span class="keywordtype">unsigned</span> Radix, <span class="keywordtype">long</span> <span class="keywordtype">long</span> &amp;Result) noexcept;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
 <div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classwpi_1_1StringRef.html">   49</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classwpi_1_1StringRef.html">StringRef</a> {</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">public</span>:</div>
@@ -733,7 +733,7 @@ $(document).ready(function(){initNavTree('StringRef_8h_source.html',''); initRes
 <div class="line"><a name="l00930"></a><span class="lineno">  930</span>&#160;    <span class="keywordflow">return</span> buffer.append(<span class="keywordtype">string</span>.data(), <span class="keywordtype">string</span>.size());</div>
 <div class="line"><a name="l00931"></a><span class="lineno">  931</span>&#160;  }</div>
 <div class="line"><a name="l00932"></a><span class="lineno">  932</span>&#160; </div>
-<div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;  std::ostream &amp;operator&lt;&lt;(std::ostream &amp;os, StringRef <span class="keywordtype">string</span>);</div>
+<div class="line"><a name="l00933"></a><span class="lineno">  933</span>&#160;  std::ostream &amp;<a class="code" href="VersionTuple_8h.html#a04997b330664057994d7f21d6959b205">operator&lt;&lt;</a>(std::ostream &amp;os, StringRef <span class="keywordtype">string</span>);</div>
 <div class="line"><a name="l00934"></a><span class="lineno">  934</span>&#160; </div>
 <div class="line"><a name="l00936"></a><span class="lineno">  936</span>&#160; </div>
 <div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;  LLVM_NODISCARD</div>
@@ -771,8 +771,9 @@ $(document).ready(function(){initNavTree('StringRef_8h_source.html',''); initRes
 <div class="ttc" id="aclasswpi_1_1StringRef_html_a3f9004ee0e815e1257a211073afc714d"><div class="ttname"><a href="classwpi_1_1StringRef.html#a3f9004ee0e815e1257a211073afc714d">wpi::StringRef::size</a></div><div class="ttdeci">LLVM_NODISCARD LLVM_ATTRIBUTE_ALWAYS_INLINE size_t size() const noexcept</div><div class="ttdoc">size - Get the string size.</div><div class="ttdef"><b>Definition:</b> StringRef.h:138</div></div>
 <div class="ttc" id="aclasswpi_1_1StringRef_html_ae870c975ea093eb1375a7360a8f0f780"><div class="ttname"><a href="classwpi_1_1StringRef.html#ae870c975ea093eb1375a7360a8f0f780">wpi::StringRef::trim</a></div><div class="ttdeci">LLVM_NODISCARD StringRef trim(StringRef Chars=&quot; \t\n\v\f\r&quot;) const noexcept</div><div class="ttdoc">Return string with consecutive characters in Chars starting from the left and right removed.</div><div class="ttdef"><b>Definition:</b> StringRef.h:813</div></div>
 <div class="ttc" id="aclasswpi_1_1StringLiteral_html"><div class="ttname"><a href="classwpi_1_1StringLiteral.html">wpi::StringLiteral</a></div><div class="ttdoc">A wrapper around a string literal that serves as a proxy for constructing global tables of StringRefs...</div><div class="ttdef"><b>Definition:</b> StringRef.h:827</div></div>
-<div class="ttc" id="aclasswpi_1_1SmallVectorImpl_html"><div class="ttname"><a href="classwpi_1_1SmallVectorImpl.html">wpi::SmallVectorImpl</a></div><div class="ttdoc">This class consists of common code factored out of the SmallVector class to reduce code duplication b...</div><div class="ttdef"><b>Definition:</b> StringRef.h:29</div></div>
+<div class="ttc" id="aclasswpi_1_1SmallVectorImpl_html"><div class="ttname"><a href="classwpi_1_1SmallVectorImpl.html">wpi::SmallVectorImpl</a></div><div class="ttdoc">This class consists of common code factored out of the SmallVector class to reduce code duplication b...</div><div class="ttdef"><b>Definition:</b> StringExtras.h:32</div></div>
 <div class="ttc" id="aclasswpi_1_1StringRef_html_aa53286328ead69105b0d7bf35d4cad3b"><div class="ttname"><a href="classwpi_1_1StringRef.html#aa53286328ead69105b0d7bf35d4cad3b">wpi::StringRef::drop_while</a></div><div class="ttdeci">LLVM_NODISCARD LLVM_ATTRIBUTE_ALWAYS_INLINE StringRef drop_while(function_ref&lt; bool(char)&gt; F) const noexcept</div><div class="ttdoc">Return a StringRef equal to 'this', but with all characters satisfying the given predicate dropped fr...</div><div class="ttdef"><b>Definition:</b> StringRef.h:621</div></div>
+<div class="ttc" id="aVersionTuple_8h_html_a04997b330664057994d7f21d6959b205"><div class="ttname"><a href="VersionTuple_8h.html#a04997b330664057994d7f21d6959b205">wpi::operator&lt;&lt;</a></div><div class="ttdeci">raw_ostream &amp; operator&lt;&lt;(raw_ostream &amp;Out, const VersionTuple &amp;V)</div><div class="ttdoc">Print a version number.</div></div>
 <div class="ttc" id="aclasswpi_1_1StringRef_html_a8cd7b5629008eb47fff52b243c3c315e"><div class="ttname"><a href="classwpi_1_1StringRef.html#a8cd7b5629008eb47fff52b243c3c315e">wpi::StringRef::StringRef</a></div><div class="ttdeci">constexpr LLVM_ATTRIBUTE_ALWAYS_INLINE StringRef(const char *data, size_t length) noexcept</div><div class="ttdoc">Construct a string ref from a pointer and length.</div><div class="ttdef"><b>Definition:</b> StringRef.h:90</div></div>
 <div class="ttc" id="aclasswpi_1_1StringRef_html_a1d876613f6faacbef5d86ff6696c717e"><div class="ttname"><a href="classwpi_1_1StringRef.html#a1d876613f6faacbef5d86ff6696c717e">wpi::StringRef::StringRef</a></div><div class="ttdeci">StringRef(std::nullptr_t)=delete</div><div class="ttdoc">Disable conversion from nullptr.</div></div>
 <div class="ttc" id="aclasswpi_1_1StringRef_html_acbe8f9e7a784ff7ae7a285e3346c2d90"><div class="ttname"><a href="classwpi_1_1StringRef.html#acbe8f9e7a784ff7ae7a285e3346c2d90">wpi::StringRef::startswith_lower</a></div><div class="ttdeci">LLVM_NODISCARD bool startswith_lower(StringRef Prefix) const noexcept</div><div class="ttdoc">Check if this string starts with the given Prefix, ignoring case.</div></div>
@@ -829,7 +830,7 @@ $(document).ready(function(){initNavTree('StringRef_8h_source.html',''); initRes
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><b>StringRef.h</b></li>
-    <li class="footer">Generated on Mon Apr 19 2021 04:02:06 for WPILibC++ by
+    <li class="footer">Generated on Sun Apr 25 2021 03:09:19 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

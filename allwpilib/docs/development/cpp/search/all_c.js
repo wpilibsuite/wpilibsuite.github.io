@@ -51,7 +51,7 @@ var searchData=
   ['logger_2145',['Logger',['../classwpi_1_1Logger.html',1,'wpi::Logger'],['../structNT__LogMessage.html#aa8431f76d15e80d1fac24dc791aac454',1,'NT_LogMessage::logger()'],['../classnt_1_1LogMessage.html#ac4884dfa6ea7878728496ff7bbd4a121',1,'nt::LogMessage::logger()']]],
   ['loglevel_2146',['LogLevel',['../classnt_1_1NetworkTableInstance.html#a88dfe5b82924f347c572cdada2707150',1,'nt::NetworkTableInstance']]],
   ['logmessage_2147',['LogMessage',['../classnt_1_1LogMessage.html',1,'nt']]],
-  ['lookup_2148',['lookup',['../classwpi_1_1DenseMapBase.html#aa7b535e6773c800e3e257618fda8e57f',1,'wpi::DenseMapBase::lookup()'],['../classwpi_1_1StringMap.html#a294a3332dd4741ef4faa6732599a4757',1,'wpi::StringMap::lookup()']]],
+  ['lookup_2148',['lookup',['../classwpi_1_1StringMap.html#a294a3332dd4741ef4faa6732599a4757',1,'wpi::StringMap::lookup()'],['../classwpi_1_1DenseMapBase.html#aa7b535e6773c800e3e257618fda8e57f',1,'wpi::DenseMapBase::lookup()']]],
   ['lookupbucketfor_2149',['LookupBucketFor',['../classwpi_1_1StringMapImpl.html#aefecb8c8e9aa7403e94b8b501b940f21',1,'wpi::StringMapImpl']]],
   ['loop_2150',['Loop',['../classwpi_1_1uv_1_1Loop.html',1,'wpi::uv']]],
   ['ltrim_2151',['ltrim',['../classwpi_1_1StringRef.html#a43489640f18850b7a52510498455549b',1,'wpi::StringRef::ltrim(char Char) const noexcept'],['../classwpi_1_1StringRef.html#af8268fd2a9dd1a013f0defa744f816b7',1,'wpi::StringRef::ltrim(StringRef Chars=&quot; \t\n\v\f\r&quot;) const noexcept']]],

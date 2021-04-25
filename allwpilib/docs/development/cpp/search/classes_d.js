@@ -1,7 +1,7 @@
 var searchData=
 [
   ['networkacceptor_4422',['NetworkAcceptor',['../classwpi_1_1NetworkAcceptor.html',1,'wpi']]],
-  ['networkbutton_4423',['NetworkButton',['../classfrc_1_1NetworkButton.html',1,'frc::NetworkButton'],['../classfrc2_1_1NetworkButton.html',1,'frc2::NetworkButton']]],
+  ['networkbutton_4423',['NetworkButton',['../classfrc2_1_1NetworkButton.html',1,'frc2::NetworkButton'],['../classfrc_1_1NetworkButton.html',1,'frc::NetworkButton']]],
   ['networkstream_4424',['NetworkStream',['../classwpi_1_1NetworkStream.html',1,'wpi::NetworkStream'],['../classwpi_1_1uv_1_1NetworkStream.html',1,'wpi::uv::NetworkStream']]],
   ['networkstreamimpl_4425',['NetworkStreamImpl',['../classwpi_1_1uv_1_1NetworkStreamImpl.html',1,'wpi::uv']]],
   ['networkstreamimpl_3c_20pipe_2c_20uv_5fpipe_5ft_20_3e_4426',['NetworkStreamImpl&lt; Pipe, uv_pipe_t &gt;',['../classwpi_1_1uv_1_1NetworkStreamImpl.html',1,'wpi::uv']]],

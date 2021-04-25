@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.2.2-68-gaaf24e2</span>
+   &#160;<span id="projectnumber">2021.2.2-69-g6e31230</span>
    </div>
   </td>
  </tr>
@@ -202,7 +202,7 @@ $(document).ready(function(){initNavTree('VersionTuple_8h_source.html',''); init
 <div class="line"><a name="l00147"></a><span class="lineno"><a class="line" href="classwpi_1_1VersionTuple.html#a26ed2dd96105b2fe1d80de222a14e661">  147</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classwpi_1_1VersionTuple.html#a26ed2dd96105b2fe1d80de222a14e661">tryParse</a>(<a class="code" href="classwpi_1_1StringRef.html">StringRef</a> <span class="keywordtype">string</span>);</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;};</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
-<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="VersionTuple_8h.html#a04997b330664057994d7f21d6959b205">  151</a></span>&#160;<a class="code" href="classwpi_1_1raw__ostream.html">raw_ostream</a> &amp;operator&lt;&lt;(<a class="code" href="classwpi_1_1raw__ostream.html">raw_ostream</a> &amp;Out, <span class="keyword">const</span> <a class="code" href="classwpi_1_1VersionTuple.html">VersionTuple</a> &amp;V);</div>
+<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="VersionTuple_8h.html#a04997b330664057994d7f21d6959b205">  151</a></span>&#160;<a class="code" href="classwpi_1_1raw__ostream.html">raw_ostream</a> &amp;<a class="code" href="VersionTuple_8h.html#a04997b330664057994d7f21d6959b205">operator&lt;&lt;</a>(<a class="code" href="classwpi_1_1raw__ostream.html">raw_ostream</a> &amp;Out, <span class="keyword">const</span> <a class="code" href="classwpi_1_1VersionTuple.html">VersionTuple</a> &amp;V);</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;} <span class="comment">// end namespace wpi</span></div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="preprocessor">#endif // WPIUTIL_WPI_VERSIONTUPLE_H</span></div>
@@ -214,6 +214,7 @@ $(document).ready(function(){initNavTree('VersionTuple_8h_source.html',''); init
 <div class="ttc" id="aclasswpi_1_1VersionTuple_html_af2c7a3c38cdcec673b1b89ae99a6f73b"><div class="ttname"><a href="classwpi_1_1VersionTuple.html#af2c7a3c38cdcec673b1b89ae99a6f73b">wpi::VersionTuple::operator&gt;</a></div><div class="ttdeci">friend bool operator&gt;(const VersionTuple &amp;X, const VersionTuple &amp;Y)</div><div class="ttdoc">Determine whether one version number follows another.</div><div class="ttdef"><b>Definition:</b> VersionTuple.h:119</div></div>
 <div class="ttc" id="aclasswpi_1_1VersionTuple_html_a6fbc2284adf76ea180b81ff0e7849089"><div class="ttname"><a href="classwpi_1_1VersionTuple.html#a6fbc2284adf76ea180b81ff0e7849089">wpi::VersionTuple::empty</a></div><div class="ttdeci">bool empty() const</div><div class="ttdoc">Determine whether this version information is empty (e.g., all version components are zero).</div><div class="ttdef"><b>Definition:</b> VersionTuple.h:63</div></div>
 <div class="ttc" id="aclasswpi_1_1VersionTuple_html_a50a9a6804ffb6fca89df88b19d69a5a0"><div class="ttname"><a href="classwpi_1_1VersionTuple.html#a50a9a6804ffb6fca89df88b19d69a5a0">wpi::VersionTuple::getAsString</a></div><div class="ttdeci">std::string getAsString() const</div><div class="ttdoc">Retrieve a string representation of the version number.</div></div>
+<div class="ttc" id="aVersionTuple_8h_html_a04997b330664057994d7f21d6959b205"><div class="ttname"><a href="VersionTuple_8h.html#a04997b330664057994d7f21d6959b205">wpi::operator&lt;&lt;</a></div><div class="ttdeci">raw_ostream &amp; operator&lt;&lt;(raw_ostream &amp;Out, const VersionTuple &amp;V)</div><div class="ttdoc">Print a version number.</div></div>
 <div class="ttc" id="aclasswpi_1_1StringRef_html"><div class="ttname"><a href="classwpi_1_1StringRef.html">wpi::StringRef</a></div><div class="ttdoc">StringRef - Represent a constant reference to a string, i.e.</div><div class="ttdef"><b>Definition:</b> StringRef.h:49</div></div>
 <div class="ttc" id="aclasswpi_1_1VersionTuple_html_a2613bacc6d3e5ad25a1bd1d39223747d"><div class="ttname"><a href="classwpi_1_1VersionTuple.html#a2613bacc6d3e5ad25a1bd1d39223747d">wpi::VersionTuple::getBuild</a></div><div class="ttdeci">std::optional&lt; unsigned &gt; getBuild() const</div><div class="ttdoc">Retrieve the build version number, if provided.</div><div class="ttdef"><b>Definition:</b> VersionTuple.h:85</div></div>
 <div class="ttc" id="aclasswpi_1_1VersionTuple_html_a02a93796d3d8996191d14c9aa729d646"><div class="ttname"><a href="classwpi_1_1VersionTuple.html#a02a93796d3d8996191d14c9aa729d646">wpi::VersionTuple::operator&lt;=</a></div><div class="ttdeci">friend bool operator&lt;=(const VersionTuple &amp;X, const VersionTuple &amp;Y)</div><div class="ttdoc">Determine whether one version number precedes or is equivalent to another.</div><div class="ttdef"><b>Definition:</b> VersionTuple.h:128</div></div>
@@ -228,7 +229,7 @@ $(document).ready(function(){initNavTree('VersionTuple_8h_source.html',''); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><a class="el" href="VersionTuple_8h.html">VersionTuple.h</a></li>
-    <li class="footer">Generated on Mon Apr 19 2021 04:02:06 for WPILibC++ by
+    <li class="footer">Generated on Sun Apr 25 2021 03:09:19 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

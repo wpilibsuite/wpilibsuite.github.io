@@ -12,7 +12,7 @@ var searchData=
   ['pickalignment_4467',['PickAlignment',['../structwpi_1_1support_1_1detail_1_1PickAlignment.html',1,'wpi::support::detail']]],
   ['pidbase_4468',['PIDBase',['../classfrc_1_1PIDBase.html',1,'frc']]],
   ['pidcommand_4469',['PIDCommand',['../classfrc_1_1PIDCommand.html',1,'frc::PIDCommand'],['../classfrc2_1_1PIDCommand.html',1,'frc2::PIDCommand']]],
-  ['pidcontroller_4470',['PIDController',['../classfrc2_1_1PIDController.html',1,'frc2::PIDController'],['../classfrc_1_1PIDController.html',1,'frc::PIDController']]],
+  ['pidcontroller_4470',['PIDController',['../classfrc_1_1PIDController.html',1,'frc::PIDController'],['../classfrc2_1_1PIDController.html',1,'frc2::PIDController']]],
   ['pidinterface_4471',['PIDInterface',['../classfrc_1_1PIDInterface.html',1,'frc']]],
   ['pidoutput_4472',['PIDOutput',['../classfrc_1_1PIDOutput.html',1,'frc']]],
   ['pidsource_4473',['PIDSource',['../classfrc_1_1PIDSource.html',1,'frc']]],
