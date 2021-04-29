@@ -1,5 +1,6 @@
 var NAVTREEINDEX22 =
 {
+"classwpi_1_1DenseMapBase.html#aa7b535e6773c800e3e257618fda8e57f":[5,0,7,32,37],
 "classwpi_1_1DenseMapBase.html#aa83adc74bd3a5f97d41ee4b135283cd3":[5,0,7,32,26],
 "classwpi_1_1DenseMapBase.html#aa914e0b5186d4c602bf49a663045523b":[5,0,7,32,6],
 "classwpi_1_1DenseMapBase.html#aa9ca559bd63e33a58758ce04e8c533ca":[5,0,7,32,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX22 =
 "classwpi_1_1HttpPath.html":[5,0,7,102],
 "classwpi_1_1HttpPath.html#a07b0e6acd21780c52c554227b0a196dc":[5,0,7,102,3],
 "classwpi_1_1HttpPath.html#a09b2130479084c6f6d2b8f9e784c3174":[5,0,7,102,12],
-"classwpi_1_1HttpPath.html#a0e894f06a7c783b718d2024cdfe071c6":[5,0,7,102,11],
-"classwpi_1_1HttpPath.html#a1e2062789022ff3c8bc5a63df30979cf":[5,0,7,102,2]
+"classwpi_1_1HttpPath.html#a0e894f06a7c783b718d2024cdfe071c6":[5,0,7,102,11]
 };

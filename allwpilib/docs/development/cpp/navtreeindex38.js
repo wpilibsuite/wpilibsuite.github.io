@@ -1,5 +1,6 @@
 var NAVTREEINDEX38 =
 {
+"structcs_1_1RawEvent.html#ad0b7b8d5828aa966bb95fc2bbe8bf25ea096a9c4634b8e8cab21411c8cdc88263":[3,6,18,0,19],
 "structcs_1_1RawEvent.html#ad0b7b8d5828aa966bb95fc2bbe8bf25ea0ceb8a1a4098607257526797b7a4c370":[3,6,18,0,9],
 "structcs_1_1RawEvent.html#ad0b7b8d5828aa966bb95fc2bbe8bf25ea1184a1c7467bcf73e96cf0c499c5035b":[3,6,18,0,6],
 "structcs_1_1RawEvent.html#ad0b7b8d5828aa966bb95fc2bbe8bf25ea35bd159cb634d3a01489f785b553ccab":[3,6,18,0,12],
@@ -248,6 +249,5 @@ var NAVTREEINDEX38 =
 "structwpi_1_1DenseMapInfo_3_01long_01_4.html#a55ed8ad836571787eaf2171c9d7f5486":[5,0,7,38,2],
 "structwpi_1_1DenseMapInfo_3_01long_01_4.html#acea7ef3e2a0a1927b2970a19ac5b7ea3":[5,0,7,38,3],
 "structwpi_1_1DenseMapInfo_3_01long_01long_01_4.html":[5,0,7,39],
-"structwpi_1_1DenseMapInfo_3_01long_01long_01_4.html#a13f02f4da98d1843ff2816fa98db989f":[5,0,7,39,2],
-"structwpi_1_1DenseMapInfo_3_01long_01long_01_4.html#a5a4c3f2080ebb912dd67c2a65a0e62c1":[5,0,7,39,3]
+"structwpi_1_1DenseMapInfo_3_01long_01long_01_4.html#a13f02f4da98d1843ff2816fa98db989f":[5,0,7,39,2]
 };

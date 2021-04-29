@@ -1,5 +1,6 @@
 var NAVTREEINDEX36 =
 {
+"group__ntcore__entrylistener__func.html#ga77564a5fd06f66e01045efd67433279d":[3,3,2,2],
 "group__ntcore__entrylistener__func.html#ga7f7b4382c74a930abc58e4d950e86a3b":[3,3,2,10],
 "group__ntcore__entrylistener__func.html#ga9099d76a06adaf12f90969551520183f":[3,3,2,11],
 "group__ntcore__entrylistener__func.html#ga92fc7fa2cf9b8d88accf4fc23846af98":[3,3,2,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX36 =
 "group__ntcore__valuesetters__cfunc.html#ga6b4b5303883bf3d784fc7aa8922ab8ad":[3,2,9,3,1],
 "group__ntcore__valuesetters__cfunc.html#ga8755e7e7edfb2ee133766b437d12f7fb":[3,2,9,3,6],
 "group__ntcore__valuesetters__cfunc.html#ga8e17f345bf4191a95ffde5ab0fe390b8":[3,2,9,3,2],
-"group__ntcore__valuesetters__cfunc.html#gac109161385214de3f427e3ad427e787a":[3,2,9,3,3],
-"group__ntcore__valuesetters__cfunc.html#gaca3ee0f53839ddb17491e1cc3cd1807f":[3,2,9,3,4]
+"group__ntcore__valuesetters__cfunc.html#gac109161385214de3f427e3ad427e787a":[3,2,9,3,3]
 };

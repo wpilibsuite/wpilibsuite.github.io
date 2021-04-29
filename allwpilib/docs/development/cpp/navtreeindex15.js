@@ -1,5 +1,6 @@
 var NAVTREEINDEX15 =
 {
+"classfrc_1_1SimpleMotorFeedforward.html#ab30fe25288efd06065c4e7e727747f12":[5,0,2,173,7],
 "classfrc_1_1SimpleMotorFeedforward.html#ac0aa2831119b468a83b9a391bbe74e18":[5,0,2,173,5],
 "classfrc_1_1SimpleMotorFeedforward.html#ac8c74a93749c971d1c441557b76f5107":[5,0,2,173,10],
 "classfrc_1_1SimpleMotorFeedforward.html#ae052d39e5491857bf9666e93d0047489":[5,0,2,173,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX15 =
 "classfrc_1_1Tracer.html#a337a87c6f2cdf409fc39c770a521eb78":[5,0,2,199,4],
 "classfrc_1_1Tracer.html#a7988e470eb2d877afc1083f746ba7342":[5,0,2,199,1],
 "classfrc_1_1Tracer.html#aef00dedf464031fbae3612d99c257131":[5,0,2,199,3],
-"classfrc_1_1Trajectory.html":[5,0,2,200],
-"classfrc_1_1Trajectory.html#a6b9e02ec02ce417cb1833b3f1640d4e3":[5,0,2,200,10]
+"classfrc_1_1Trajectory.html":[5,0,2,200]
 };

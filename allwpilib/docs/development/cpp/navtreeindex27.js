@@ -1,5 +1,6 @@
 var NAVTREEINDEX27 =
 {
+"classwpi_1_1WebSocketServerHelper.html#aa0acd834d1aa60d23171f53d99847a67":[5,0,7,253,1],
 "classwpi_1_1WebSocketServerHelper.html#ab87a55baffe7243d1c2c5f88aae38c33":[5,0,7,253,5],
 "classwpi_1_1WebSocketServerHelper.html#ad56aa07e47599910ef87e405aa74ea3e":[5,0,7,253,2],
 "classwpi_1_1WorkerThread.html":[5,0,7,254],
@@ -248,6 +249,5 @@ var NAVTREEINDEX27 =
 "classwpi_1_1filter__iterator__base.html#acf00eaed3c824b858bf0d199feb41d27":[5,0,7,77,5],
 "classwpi_1_1filter__iterator__base.html#ad50feee091b38c340e53c96a93562a83":[5,0,7,77,1],
 "classwpi_1_1filter__iterator__base.html#ae751ac35189bfb2d60070866e8c13883":[5,0,7,77,3],
-"classwpi_1_1filter__iterator__impl.html":[5,0,7,78],
-"classwpi_1_1filter__iterator__impl.html#a13082adde945d5e7eb0e8cb231ec19c8":[5,0,7,78,0]
+"classwpi_1_1filter__iterator__impl.html":[5,0,7,78]
 };

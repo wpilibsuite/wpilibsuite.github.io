@@ -1,5 +1,6 @@
 var NAVTREEINDEX37 =
 {
+"group__ntcore__valuesetters__cfunc.html#gaca3ee0f53839ddb17491e1cc3cd1807f":[3,2,9,3,4],
 "hal_2src_2main_2native_2include_2hal_2Accelerometer_8h_source.html":[6,0,8,3],
 "hal_2src_2main_2native_2include_2hal_2AddressableLED_8h_source.html":[6,0,8,4],
 "hal_2src_2main_2native_2include_2hal_2AnalogGyro_8h_source.html":[6,0,8,7],
@@ -40,8 +41,8 @@ var NAVTREEINDEX37 =
 "mutex_8h_source.html":[6,0,12,48],
 "namespacecs.html":[4,0,0],
 "namespacecs.html":[5,0,0],
-"namespacefrc.html":[4,0,1],
 "namespacefrc.html":[5,0,2],
+"namespacefrc.html":[4,0,1],
 "namespacefrc_1_1filesystem.html":[4,0,1,0],
 "namespacehal.html":[4,0,2],
 "namespacehal.html":[5,0,4],
@@ -50,14 +51,14 @@ var NAVTREEINDEX37 =
 "namespacemembers_eval.html":[4,1,4],
 "namespacemembers_func.html":[4,1,1],
 "namespacemembers_type.html":[4,1,2],
-"namespacent.html":[5,0,5],
 "namespacent.html":[4,0,3],
+"namespacent.html":[5,0,5],
 "namespacent_1_1EntryListenerFlags.html":[4,0,3,0],
 "namespaces.html":[4,0],
-"namespacewpi_1_1detail.html":[5,0,7,0],
 "namespacewpi_1_1detail.html":[4,0,4,0],
-"namespacewpi_1_1java.html":[4,0,4,1],
+"namespacewpi_1_1detail.html":[5,0,7,0],
 "namespacewpi_1_1java.html":[5,0,7,3],
+"namespacewpi_1_1java.html":[4,0,4,1],
 "never__destroyed_8h_source.html":[6,0,2,0,5],
 "nodiscard_8h_source.html":[6,0,12,52],
 "ntcore_8h_source.html":[6,0,21],
@@ -248,6 +249,5 @@ var NAVTREEINDEX37 =
 "structcs_1_1RawEvent.html#ab606442031f460269fee5de0eee69d70":[3,6,18,7],
 "structcs_1_1RawEvent.html#abbb861b2dd2b3cc770f5d5a285c12739":[3,6,18,11],
 "structcs_1_1RawEvent.html#ad0b7b8d5828aa966bb95fc2bbe8bf25e":[3,6,18,0],
-"structcs_1_1RawEvent.html#ad0b7b8d5828aa966bb95fc2bbe8bf25ea00f315883d0b9eb4fa86baac4a80c525":[3,6,18,0,15],
-"structcs_1_1RawEvent.html#ad0b7b8d5828aa966bb95fc2bbe8bf25ea096a9c4634b8e8cab21411c8cdc88263":[3,6,18,0,19]
+"structcs_1_1RawEvent.html#ad0b7b8d5828aa966bb95fc2bbe8bf25ea00f315883d0b9eb4fa86baac4a80c525":[3,6,18,0,15]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX26 =
 {
+"classwpi_1_1StringRef.html#a46c18571460fe69592ace16009f13a05":[5,0,7,236,33],
 "classwpi_1_1StringRef.html#a4a68d9feb3feb6548594a5d0c8460cd4":[5,0,7,236,28],
 "classwpi_1_1StringRef.html#a4b09a1917d17ed6c97381adaad0be533":[5,0,7,236,21],
 "classwpi_1_1StringRef.html#a4f46f66bc087e1c7a0e3c5e94b07eeeb":[5,0,7,236,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX26 =
 "classwpi_1_1WebSocketServerHelper.html#a025a9715a7bfb52043a282b116e60e52":[5,0,7,253,6],
 "classwpi_1_1WebSocketServerHelper.html#a0d589909a11f4074ef0c3ca1500e471e":[5,0,7,253,0],
 "classwpi_1_1WebSocketServerHelper.html#a61ee23a557d2b7ae9361870f92d14061":[5,0,7,253,4],
-"classwpi_1_1WebSocketServerHelper.html#a665d4e09f2780ae54a33d6e2057e9be2":[5,0,7,253,3],
-"classwpi_1_1WebSocketServerHelper.html#aa0acd834d1aa60d23171f53d99847a67":[5,0,7,253,1]
+"classwpi_1_1WebSocketServerHelper.html#a665d4e09f2780ae54a33d6e2057e9be2":[5,0,7,253,3]
 };

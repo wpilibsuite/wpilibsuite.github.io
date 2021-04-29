@@ -1,5 +1,6 @@
 var NAVTREEINDEX13 =
 {
+"classfrc_1_1RobotController.html#afd09dd41cc6a49b7de04c3af063b23ba":[5,0,2,144,15],
 "classfrc_1_1RobotDrive.html":[5,0,2,145],
 "classfrc_1_1RobotDrive.html#a0b785c8bc3114855bf477f242e735de0":[5,0,2,145,25],
 "classfrc_1_1RobotDrive.html#a23b50aa85d2bb85c0a211f4ebeea9b7e":[5,0,2,145,30],
@@ -248,6 +249,5 @@ var NAVTREEINDEX13 =
 "classfrc_1_1SendableChooser.html#ac1a304c6ce610f15ab0051e85bfd1978":[5,0,2,157,0],
 "classfrc_1_1SendableChooser.html#acf5caa625b9508b8561cf507a393e975":[5,0,2,157,3],
 "classfrc_1_1SendableChooserBase.html":[5,0,2,158],
-"classfrc_1_1SendableChooserBase.html#a152318f33da98aa925129603c4b344e7":[5,0,2,158,4],
-"classfrc_1_1SendableChooserBase.html#a2d169f796c195543742b06cf88806944":[5,0,2,158,9]
+"classfrc_1_1SendableChooserBase.html#a152318f33da98aa925129603c4b344e7":[5,0,2,158,4]
 };

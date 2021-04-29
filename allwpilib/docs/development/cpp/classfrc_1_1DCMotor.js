@@ -13,6 +13,7 @@ var classfrc_1_1DCMotor =
     [ "MiniCIM", "classfrc_1_1DCMotor.html#af943d05fac7ac8f35965841e7ca66343", null ],
     [ "NEO", "classfrc_1_1DCMotor.html#a8fae42950c3cbf926807a16e61774c89", null ],
     [ "NEO550", "classfrc_1_1DCMotor.html#ae3dd6e6e0847f798f6e6c275e912f682", null ],
+    [ "RomiBuiltIn", "classfrc_1_1DCMotor.html#acecdcd639c4fb7559fdf5c577080de21", null ],
     [ "RS775_125", "classfrc_1_1DCMotor.html#a97d0dea4698f8e7a4c0e489804e486a2", null ],
     [ "Vex775Pro", "classfrc_1_1DCMotor.html#a609933c5b8e79f10ad2ecc99e0d012bd", null ],
     [ "freeCurrent", "classfrc_1_1DCMotor.html#a5e6bb0c2c5abb5c63f99b1b1ba3e5f86", null ],
