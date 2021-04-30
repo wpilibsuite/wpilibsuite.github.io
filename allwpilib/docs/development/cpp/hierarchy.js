@@ -686,7 +686,6 @@ var hierarchy =
     ] ],
     [ "wpi::detail::iter_impl< BasicJsonType >", "classwpi_1_1detail_1_1iter__impl.html", null ],
     [ "wpi::detail::iteration_proxy< IteratorType >", "classwpi_1_1detail_1_1iteration__proxy.html", null ],
-    [ "wpi::static_circular_buffer< T, N >::iterator", "classwpi_1_1static__circular__buffer_1_1iterator.html", null ],
     [ "iterator", null, [
       [ "wpi::iterator_facade_base< concat_iterator< ValueT, IterTs... >, std::forward_iterator_tag, ValueT >", "classwpi_1_1iterator__facade__base.html", [
         [ "wpi::concat_iterator< ValueT, IterTs >", "classwpi_1_1concat__iterator.html", null ]
@@ -738,6 +737,7 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
+    [ "wpi::static_circular_buffer< T, N >::iterator", "classwpi_1_1static__circular__buffer_1_1iterator.html", null ],
     [ "iterator_facade_base< pointee_iterator< WrappedIteratorT, typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type, std::iterator_traits< WrappedIteratorT >::iterator_category, typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type, typename std::iterator_traits< WrappedIteratorT >::difference_type, typename std::conditional< std::is_same< typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type, typename std::iterator_traits< WrappedIteratorT >::value_type >::value, typename std::iterator_traits< WrappedIteratorT >::pointer, typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type * >::type, typename std::conditional< std::is_same< typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type, typename std::iterator_traits< WrappedIteratorT >::value_type >::value, typename std::iterator_traits< WrappedIteratorT >::reference, typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type & >::type >", null, [
       [ "wpi::iterator_adaptor_base< pointee_iterator< WrappedIteratorT, typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type >, WrappedIteratorT, std::iterator_traits< WrappedIteratorT >::iterator_category, typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type >", "classwpi_1_1iterator__adaptor__base.html", [
         [ "wpi::pointee_iterator< WrappedIteratorT, T >", "structwpi_1_1pointee__iterator.html", null ]
@@ -830,7 +830,10 @@ var hierarchy =
     [ "frc::MecanumDriveOdometry", "classfrc_1_1MecanumDriveOdometry.html", null ],
     [ "frc::MecanumDrivePoseEstimator", "classfrc_1_1MecanumDrivePoseEstimator.html", null ],
     [ "frc::MecanumDriveWheelSpeeds", "structfrc_1_1MecanumDriveWheelSpeeds.html", null ],
-    [ "frc::Mechanism2D", "classfrc_1_1Mechanism2D.html", null ],
+    [ "frc::MechanismObject2d", "classfrc_1_1MechanismObject2d.html", [
+      [ "frc::MechanismLigament2d", "classfrc_1_1MechanismLigament2d.html", null ],
+      [ "frc::MechanismRoot2d", "classfrc_1_1MechanismRoot2d.html", null ]
+    ] ],
     [ "frc::MedianFilter< T >", "classfrc_1_1MedianFilter.html", null ],
     [ "frc::MerweScaledSigmaPoints< States >", "classfrc_1_1MerweScaledSigmaPoints.html", null ],
     [ "frc::TrajectoryConstraint::MinMax", "structfrc_1_1TrajectoryConstraint_1_1MinMax.html", null ],
@@ -1070,6 +1073,7 @@ var hierarchy =
       [ "frc::GyroBase", "classfrc_1_1GyroBase.html", null ],
       [ "frc::KilloughDrive", "classfrc_1_1KilloughDrive.html", null ],
       [ "frc::MecanumDrive", "classfrc_1_1MecanumDrive.html", null ],
+      [ "frc::Mechanism2d", "classfrc_1_1Mechanism2d.html", null ],
       [ "frc::NidecBrushless", "classfrc_1_1NidecBrushless.html", null ],
       [ "frc::PIDBase", "classfrc_1_1PIDBase.html", null ],
       [ "frc::PowerDistributionPanel", "classfrc_1_1PowerDistributionPanel.html", null ],
@@ -1184,6 +1188,9 @@ var hierarchy =
     ] ],
     [ "frc::SendableHelper< MecanumDrive >", "classfrc_1_1SendableHelper.html", [
       [ "frc::MecanumDrive", "classfrc_1_1MecanumDrive.html", null ]
+    ] ],
+    [ "frc::SendableHelper< Mechanism2d >", "classfrc_1_1SendableHelper.html", [
+      [ "frc::Mechanism2d", "classfrc_1_1Mechanism2d.html", null ]
     ] ],
     [ "frc::SendableHelper< NidecBrushless >", "classfrc_1_1SendableHelper.html", [
       [ "frc::NidecBrushless", "classfrc_1_1NidecBrushless.html", null ]
@@ -1456,9 +1463,9 @@ var hierarchy =
     ] ],
     [ "frc::SplineHelper", "classfrc_1_1SplineHelper.html", null ],
     [ "frc::SplineParameterizer", "classfrc_1_1SplineParameterizer.html", null ],
-    [ "frc::sim::DifferentialDrivetrainSim::State", "classfrc_1_1sim_1_1DifferentialDrivetrainSim_1_1State.html", null ],
     [ "frc::TrapezoidProfile< Distance >::State", "classfrc_1_1TrapezoidProfile_1_1State.html", null ],
     [ "frc::Trajectory::State", "structfrc_1_1Trajectory_1_1State.html", null ],
+    [ "frc::sim::DifferentialDrivetrainSim::State", "classfrc_1_1sim_1_1DifferentialDrivetrainSim_1_1State.html", null ],
     [ "wpi::static_circular_buffer< T, N >", "classwpi_1_1static__circular__buffer.html", null ],
     [ "wpi::detail::static_const< T >", "structwpi_1_1detail_1_1static__const.html", null ],
     [ "wpi::StringMapConstIterator< ValueTy >", "classwpi_1_1StringMapConstIterator.html", null ],
@@ -1466,10 +1473,11 @@ var hierarchy =
     [ "wpi::StringMapEntryBase", "classwpi_1_1StringMapEntryBase.html", null ],
     [ "wpi::StringMapImpl", "classwpi_1_1StringMapImpl.html", [
       [ "wpi::StringMap< frc::ShuffleboardLayout * >", "classwpi_1_1StringMap.html", null ],
-      [ "wpi::StringMap< hal::SimDouble >", "classwpi_1_1StringMap.html", null ],
       [ "wpi::StringMap< NT_Entry >", "classwpi_1_1StringMap.html", null ],
       [ "wpi::StringMap< std::chrono::nanoseconds >", "classwpi_1_1StringMap.html", null ],
       [ "wpi::StringMap< std::shared_ptr< nt::Value > >", "classwpi_1_1StringMap.html", null ],
+      [ "wpi::StringMap< std::unique_ptr< frc::MechanismObject2d > >", "classwpi_1_1StringMap.html", null ],
+      [ "wpi::StringMap< std::unique_ptr< frc::MechanismRoot2d > >", "classwpi_1_1StringMap.html", null ],
       [ "wpi::StringMap< T >", "classwpi_1_1StringMap.html", null ],
       [ "wpi::StringMap< wpi::StringRef >", "classwpi_1_1StringMap.html", null ],
       [ "wpi::StringMap< ValueTy >", "classwpi_1_1StringMap.html", null ]
@@ -1488,8 +1496,8 @@ var hierarchy =
     [ "frc::SwerveModuleState", "structfrc_1_1SwerveModuleState.html", null ],
     [ "wpi::TCPConnector", "classwpi_1_1TCPConnector.html", null ],
     [ "wpi::ThreadSafeRefCountedBase< Derived >", "classwpi_1_1ThreadSafeRefCountedBase.html", null ],
-    [ "frc::Timer", "classfrc_1_1Timer.html", null ],
     [ "frc2::Timer", "classfrc2_1_1Timer.html", null ],
+    [ "frc::Timer", "classfrc_1_1Timer.html", null ],
     [ "wpi::detail::to_json_fn", "structwpi_1_1detail_1_1to__json__fn.html", null ],
     [ "frc::Tracer", "classfrc_1_1Tracer.html", null ],
     [ "wpi::detail::TrailingZerosCounter< T, SizeOfT >", "structwpi_1_1detail_1_1TrailingZerosCounter.html", null ],

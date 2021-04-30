@@ -1,5 +1,8 @@
 var NAVTREEINDEX2 =
 {
+"classcs_1_1MjpegServer.html#a8b2294c7a8710e8ad8904454cee2ccf8":[3,5,8,3],
+"classcs_1_1MjpegServer.html#aa44311b1495b3081b53869030737d540":[3,5,8,1],
+"classcs_1_1MjpegServer.html#ab2f5e20ec58984c75ab74d6809d2bd58":[3,5,8,6],
 "classcs_1_1MjpegServer.html#aba90c33f4620542ad79cd65dda0379cb":[3,5,8,5],
 "classcs_1_1MjpegServer.html#ac4fea0e212aec552dd945115daa958e1":[3,5,8,4],
 "classcs_1_1RawCvSink.html":[5,0,0,5],
@@ -246,8 +249,5 @@ var NAVTREEINDEX2 =
 "classfrc2_1_1CommandGroupBase.html#ad5d2d92c54e0305aab63801d895befaa":[5,0,3,3,1],
 "classfrc2_1_1CommandHelper.html":[5,0,3,4],
 "classfrc2_1_1CommandHelper.html#a96fd7695a473b85ef6fec939f802b9dc":[5,0,3,4,1],
-"classfrc2_1_1CommandHelper.html#a999c2432be3efe11eb786e33afa7ae47":[5,0,3,4,0],
-"classfrc2_1_1CommandScheduler.html":[5,0,3,5],
-"classfrc2_1_1CommandScheduler.html#a00111757dc30378ede1437ae907902c8":[5,0,3,5,31],
-"classfrc2_1_1CommandScheduler.html#a01ad4d4ab8b9cdf9c3c15f42f47350b5":[5,0,3,5,7]
+"classfrc2_1_1CommandHelper.html#a999c2432be3efe11eb786e33afa7ae47":[5,0,3,4,0]
 };
