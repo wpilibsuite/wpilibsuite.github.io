@@ -8,7 +8,7 @@ var classfrc_1_1InterruptableSensorBase =
       [ "kBoth", "classfrc_1_1InterruptableSensorBase.html#aa9480a557a834d448bcb2e7f6057d905a2f2f5676a4337270c01d2091da2dcf73", null ]
     ] ],
     [ "InterruptableSensorBase", "classfrc_1_1InterruptableSensorBase.html#a6687500a6331fbb19e81c459e79eaf5b", null ],
-    [ "~InterruptableSensorBase", "classfrc_1_1InterruptableSensorBase.html#a1bc4c8185547571880fbe5930a0e0db1", null ],
+    [ "~InterruptableSensorBase", "classfrc_1_1InterruptableSensorBase.html#a6011b55da3ede8b62ca967081d768212", null ],
     [ "InterruptableSensorBase", "classfrc_1_1InterruptableSensorBase.html#aa06ceb82289148d70e746a3adac068ab", null ],
     [ "AllocateInterrupts", "classfrc_1_1InterruptableSensorBase.html#a57db10f2307167f71f25628873044e56", null ],
     [ "CancelInterrupts", "classfrc_1_1InterruptableSensorBase.html#aa6c903bc9df8d214c18c6286f327bd5c", null ],

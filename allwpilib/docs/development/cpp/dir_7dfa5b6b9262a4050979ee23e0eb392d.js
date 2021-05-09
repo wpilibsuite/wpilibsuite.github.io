@@ -24,7 +24,7 @@ var dir_7dfa5b6b9262a4050979ee23e0eb392d =
     [ "DriverStationTypes.h", "DriverStationTypes_8h_source.html", null ],
     [ "DutyCycle.h", "hal_2src_2main_2native_2include_2hal_2DutyCycle_8h_source.html", null ],
     [ "Encoder.h", "hal_2src_2main_2native_2include_2hal_2Encoder_8h_source.html", null ],
-    [ "Errors.h", "Errors_8h_source.html", null ],
+    [ "Errors.h", "hal_2src_2main_2native_2include_2hal_2Errors_8h_source.html", null ],
     [ "Extensions.h", "Extensions_8h_source.html", null ],
     [ "HAL.h", "HAL_8h_source.html", null ],
     [ "HALBase.h", "HALBase_8h_source.html", null ],

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.3.1-8-gba08baa</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-37-g3cc2da3</span>
    </div>
   </td>
  </tr>
@@ -103,63 +103,73 @@ $(document).ready(function(){initNavTree('ADXRS450__Gyro_8h_source.html',''); in
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;hal/SimDevice.h&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;frc/GyroBase.h&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;frc/SPI.h&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacefrc.html">frc</a> {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;frc/SPI.h&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;frc/interfaces/Gyro.h&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;frc/smartdashboard/Sendable.h&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;frc/smartdashboard/SendableHelper.h&quot;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classfrc_1_1ADXRS450__Gyro.html">   29</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1ADXRS450__Gyro.html">ADXRS450_Gyro</a> : <span class="keyword">public</span> <a class="code" href="classfrc_1_1GyroBase.html">GyroBase</a> {</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classfrc_1_1ADXRS450__Gyro.html#af475580220a2e02ebdd3c02a4c43e774">   34</a></span>&#160;  <a class="code" href="classfrc_1_1ADXRS450__Gyro.html#af475580220a2e02ebdd3c02a4c43e774">ADXRS450_Gyro</a>();</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classfrc_1_1ADXRS450__Gyro.html#a6389885a2e8e4cf7f2df9593731117a3">   41</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc_1_1ADXRS450__Gyro.html#a6389885a2e8e4cf7f2df9593731117a3">ADXRS450_Gyro</a>(SPI::Port port);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  ~<a class="code" href="classfrc_1_1ADXRS450__Gyro.html">ADXRS450_Gyro</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="classfrc_1_1ADXRS450__Gyro.html#af475580220a2e02ebdd3c02a4c43e774">ADXRS450_Gyro</a>(<a class="code" href="classfrc_1_1ADXRS450__Gyro.html">ADXRS450_Gyro</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <a class="code" href="classfrc_1_1ADXRS450__Gyro.html">ADXRS450_Gyro</a>&amp; operator=(<a class="code" href="classfrc_1_1ADXRS450__Gyro.html">ADXRS450_Gyro</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classfrc_1_1ADXRS450__Gyro.html#aa556e13cbce13edd8989e07d75d8885d">   58</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classfrc_1_1ADXRS450__Gyro.html#aa556e13cbce13edd8989e07d75d8885d">GetAngle</a>() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classfrc_1_1ADXRS450__Gyro.html#a294f39dd58e1728d27f0570640f4ff2f">   67</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classfrc_1_1ADXRS450__Gyro.html#a294f39dd58e1728d27f0570640f4ff2f">GetRate</a>() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classfrc_1_1ADXRS450__Gyro.html#a548505e23354192ac81ffed5d21c9981">   76</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1ADXRS450__Gyro.html#a548505e23354192ac81ffed5d21c9981">Reset</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="classfrc_1_1ADXRS450__Gyro.html#a4e2a2b0fcd3b03a479e05eb8f22deaa1">   90</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1ADXRS450__Gyro.html#a4e2a2b0fcd3b03a479e05eb8f22deaa1">Calibrate</a>() final;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="classfrc_1_1ADXRS450__Gyro.html#a23e4d724a4b21b2446b685689b1ab94d">   97</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classfrc_1_1ADXRS450__Gyro.html#a23e4d724a4b21b2446b685689b1ab94d">GetPort</a>() const;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; private:</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <a class="code" href="classfrc_1_1SPI.html">SPI</a> m_spi;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <a class="code" href="classfrc_1_1SPI.html">SPI</a>::Port m_port;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacefrc.html">frc</a> {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classfrc_1_1ADXRS450__Gyro.html">   31</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1ADXRS450__Gyro.html">ADXRS450_Gyro</a> : <span class="keyword">public</span> <a class="code" href="classfrc_1_1Gyro.html">Gyro</a>,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                      <span class="keyword">public</span> <a class="code" href="classfrc_1_1Sendable.html">Sendable</a>,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                      <span class="keyword">public</span> <a class="code" href="classfrc_1_1SendableHelper.html">SendableHelper</a>&lt;ADXRS450_Gyro&gt; {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classfrc_1_1ADXRS450__Gyro.html#af475580220a2e02ebdd3c02a4c43e774">   38</a></span>&#160;  <a class="code" href="classfrc_1_1ADXRS450__Gyro.html#af475580220a2e02ebdd3c02a4c43e774">ADXRS450_Gyro</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classfrc_1_1ADXRS450__Gyro.html#a6389885a2e8e4cf7f2df9593731117a3">   45</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc_1_1ADXRS450__Gyro.html#a6389885a2e8e4cf7f2df9593731117a3">ADXRS450_Gyro</a>(SPI::Port port);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  ~<a class="code" href="classfrc_1_1ADXRS450__Gyro.html">ADXRS450_Gyro</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <a class="code" href="classfrc_1_1ADXRS450__Gyro.html#af475580220a2e02ebdd3c02a4c43e774">ADXRS450_Gyro</a>(<a class="code" href="classfrc_1_1ADXRS450__Gyro.html">ADXRS450_Gyro</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <a class="code" href="classfrc_1_1ADXRS450__Gyro.html">ADXRS450_Gyro</a>&amp; operator=(<a class="code" href="classfrc_1_1ADXRS450__Gyro.html">ADXRS450_Gyro</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classfrc_1_1ADXRS450__Gyro.html#aa556e13cbce13edd8989e07d75d8885d">   62</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classfrc_1_1ADXRS450__Gyro.html#aa556e13cbce13edd8989e07d75d8885d">GetAngle</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classfrc_1_1ADXRS450__Gyro.html#a294f39dd58e1728d27f0570640f4ff2f">   71</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classfrc_1_1ADXRS450__Gyro.html#a294f39dd58e1728d27f0570640f4ff2f">GetRate</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classfrc_1_1ADXRS450__Gyro.html#a548505e23354192ac81ffed5d21c9981">   80</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1ADXRS450__Gyro.html#a548505e23354192ac81ffed5d21c9981">Reset</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="classfrc_1_1ADXRS450__Gyro.html#a4e2a2b0fcd3b03a479e05eb8f22deaa1">   94</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1ADXRS450__Gyro.html#a4e2a2b0fcd3b03a479e05eb8f22deaa1">Calibrate</a>() final;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="classfrc_1_1ADXRS450__Gyro.html#a23e4d724a4b21b2446b685689b1ab94d">  101</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classfrc_1_1ADXRS450__Gyro.html#a23e4d724a4b21b2446b685689b1ab94d">GetPort</a>() const;</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <a class="code" href="namespacehal.html">hal</a>::SimDevice m_simDevice;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <a class="code" href="namespacehal.html">hal</a>::SimDouble m_simAngle;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <a class="code" href="namespacehal.html">hal</a>::SimDouble m_simRate;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  uint16_t ReadRegister(<span class="keywordtype">int</span> reg);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;};</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="classfrc_1_1ADXRS450__Gyro.html#a433fb3ef7d246109d8c11a252f37ae0e">  103</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1ADXRS450__Gyro.html#a433fb3ef7d246109d8c11a252f37ae0e">InitSendable</a>(<a class="code" href="classfrc_1_1SendableBuilder.html">SendableBuilder</a>&amp; builder) override;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; private:</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <a class="code" href="classfrc_1_1SPI.html">SPI</a> m_spi;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <a class="code" href="classfrc_1_1SPI.html">SPI</a>::Port m_port;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <a class="code" href="namespacehal.html">hal</a>::SimDevice m_simDevice;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <a class="code" href="namespacehal.html">hal</a>::SimDouble m_simAngle;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <a class="code" href="namespacehal.html">hal</a>::SimDouble m_simRate;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  uint16_t ReadRegister(<span class="keywordtype">int</span> reg);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;};</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;}  <span class="comment">// namespace frc</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclassfrc_1_1Gyro_html"><div class="ttname"><a href="classfrc_1_1Gyro.html">frc::Gyro</a></div><div class="ttdoc">Interface for yaw rate gyros.</div><div class="ttdef"><b>Definition:</b> Gyro.h:16</div></div>
 <div class="ttc" id="aclassfrc_1_1ADXRS450__Gyro_html_af475580220a2e02ebdd3c02a4c43e774"><div class="ttname"><a href="classfrc_1_1ADXRS450__Gyro.html#af475580220a2e02ebdd3c02a4c43e774">frc::ADXRS450_Gyro::ADXRS450_Gyro</a></div><div class="ttdeci">ADXRS450_Gyro()</div><div class="ttdoc">Gyro constructor on onboard CS0.</div></div>
+<div class="ttc" id="aclassfrc_1_1ADXRS450__Gyro_html_a433fb3ef7d246109d8c11a252f37ae0e"><div class="ttname"><a href="classfrc_1_1ADXRS450__Gyro.html#a433fb3ef7d246109d8c11a252f37ae0e">frc::ADXRS450_Gyro::InitSendable</a></div><div class="ttdeci">void InitSendable(SendableBuilder &amp;builder) override</div><div class="ttdoc">Initializes this Sendable object.</div></div>
 <div class="ttc" id="aclassfrc_1_1ADXRS450__Gyro_html_a6389885a2e8e4cf7f2df9593731117a3"><div class="ttname"><a href="classfrc_1_1ADXRS450__Gyro.html#a6389885a2e8e4cf7f2df9593731117a3">frc::ADXRS450_Gyro::ADXRS450_Gyro</a></div><div class="ttdeci">ADXRS450_Gyro(SPI::Port port)</div><div class="ttdoc">Gyro constructor on the specified SPI port.</div></div>
-<div class="ttc" id="anamespacehal_html"><div class="ttname"><a href="namespacehal.html">hal</a></div><div class="ttdoc">WPILib Hardware Abstraction Layer (HAL) namespace.</div><div class="ttdef"><b>Definition:</b> UnsafeDIO.h:12</div></div>
+<div class="ttc" id="anamespacehal_html"><div class="ttname"><a href="namespacehal.html">hal</a></div><div class="ttdoc">WPILib Hardware Abstraction Layer (HAL) namespace.</div><div class="ttdef"><b>Definition:</b> fpga_clock.h:10</div></div>
 <div class="ttc" id="aclassfrc_1_1ADXRS450__Gyro_html_a23e4d724a4b21b2446b685689b1ab94d"><div class="ttname"><a href="classfrc_1_1ADXRS450__Gyro.html#a23e4d724a4b21b2446b685689b1ab94d">frc::ADXRS450_Gyro::GetPort</a></div><div class="ttdeci">int GetPort() const</div><div class="ttdoc">Get the SPI port number.</div></div>
-<div class="ttc" id="aclassfrc_1_1SPI_html"><div class="ttname"><a href="classfrc_1_1SPI.html">frc::SPI</a></div><div class="ttdoc">SPI bus interface class.</div><div class="ttdef"><b>Definition:</b> SPI.h:29</div></div>
+<div class="ttc" id="aclassfrc_1_1SPI_html"><div class="ttname"><a href="classfrc_1_1SPI.html">frc::SPI</a></div><div class="ttdoc">SPI bus interface class.</div><div class="ttdef"><b>Definition:</b> SPI.h:27</div></div>
 <div class="ttc" id="aclassfrc_1_1ADXRS450__Gyro_html_a294f39dd58e1728d27f0570640f4ff2f"><div class="ttname"><a href="classfrc_1_1ADXRS450__Gyro.html#a294f39dd58e1728d27f0570640f4ff2f">frc::ADXRS450_Gyro::GetRate</a></div><div class="ttdeci">double GetRate() const override</div><div class="ttdoc">Return the rate of rotation of the gyro.</div></div>
 <div class="ttc" id="aclassfrc_1_1ADXRS450__Gyro_html_a548505e23354192ac81ffed5d21c9981"><div class="ttname"><a href="classfrc_1_1ADXRS450__Gyro.html#a548505e23354192ac81ffed5d21c9981">frc::ADXRS450_Gyro::Reset</a></div><div class="ttdeci">void Reset() override</div><div class="ttdoc">Reset the gyro.</div></div>
+<div class="ttc" id="aclassfrc_1_1Sendable_html"><div class="ttname"><a href="classfrc_1_1Sendable.html">frc::Sendable</a></div><div class="ttdoc">Interface for Sendable objects.</div><div class="ttdef"><b>Definition:</b> Sendable.h:14</div></div>
 <div class="ttc" id="aclassfrc_1_1ADXRS450__Gyro_html_a4e2a2b0fcd3b03a479e05eb8f22deaa1"><div class="ttname"><a href="classfrc_1_1ADXRS450__Gyro.html#a4e2a2b0fcd3b03a479e05eb8f22deaa1">frc::ADXRS450_Gyro::Calibrate</a></div><div class="ttdeci">void Calibrate() final</div><div class="ttdoc">Initialize the gyro.</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> VisionRunner.inc:9</div></div>
-<div class="ttc" id="aclassfrc_1_1GyroBase_html"><div class="ttname"><a href="classfrc_1_1GyroBase.html">frc::GyroBase</a></div><div class="ttdoc">GyroBase is the common base class for Gyro implementations such as AnalogGyro.</div><div class="ttdef"><b>Definition:</b> GyroBase.h:23</div></div>
+<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> CameraServer.h:18</div></div>
 <div class="ttc" id="aclassfrc_1_1ADXRS450__Gyro_html_aa556e13cbce13edd8989e07d75d8885d"><div class="ttname"><a href="classfrc_1_1ADXRS450__Gyro.html#aa556e13cbce13edd8989e07d75d8885d">frc::ADXRS450_Gyro::GetAngle</a></div><div class="ttdeci">double GetAngle() const override</div><div class="ttdoc">Return the actual angle in degrees that the robot is currently facing.</div></div>
-<div class="ttc" id="aclassfrc_1_1ADXRS450__Gyro_html"><div class="ttname"><a href="classfrc_1_1ADXRS450__Gyro.html">frc::ADXRS450_Gyro</a></div><div class="ttdoc">Use a rate gyro to return the robots heading relative to a starting position.</div><div class="ttdef"><b>Definition:</b> ADXRS450_Gyro.h:29</div></div>
+<div class="ttc" id="aclassfrc_1_1ADXRS450__Gyro_html"><div class="ttname"><a href="classfrc_1_1ADXRS450__Gyro.html">frc::ADXRS450_Gyro</a></div><div class="ttdoc">Use a rate gyro to return the robots heading relative to a starting position.</div><div class="ttdef"><b>Definition:</b> ADXRS450_Gyro.h:33</div></div>
+<div class="ttc" id="aclassfrc_1_1SendableHelper_html"><div class="ttname"><a href="classfrc_1_1SendableHelper.html">frc::SendableHelper</a></div><div class="ttdoc">A helper class for use with objects that add themselves to SendableRegistry.</div><div class="ttdef"><b>Definition:</b> SendableHelper.h:25</div></div>
+<div class="ttc" id="aclassfrc_1_1SendableBuilder_html"><div class="ttname"><a href="classfrc_1_1SendableBuilder.html">frc::SendableBuilder</a></div><div class="ttdef"><b>Definition:</b> SendableBuilder.h:21</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><b>ADXRS450_Gyro.h</b></li>
-    <li class="footer">Generated on Wed May 5 2021 16:19:09 for WPILibC++ by
+    <li class="footer">Generated on Sun May 9 2021 21:19:01 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

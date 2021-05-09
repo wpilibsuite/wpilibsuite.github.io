@@ -7,7 +7,7 @@ var group__hal__dio =
     [ "HAL_GetDIODirection", "group__hal__dio.html#ga3f04c3038a0d7bfed2d7214992fa6ddd", null ],
     [ "HAL_GetFilterPeriod", "group__hal__dio.html#ga7204092acb19e099dab382ac9a4a52e9", null ],
     [ "HAL_GetFilterSelect", "group__hal__dio.html#gaafeea1e3cfc600210c05026b80a89bb5", null ],
-    [ "HAL_InitializeDIOPort", "group__hal__dio.html#ga87a06b768677fe263288b9c15b83c575", null ],
+    [ "HAL_InitializeDIOPort", "group__hal__dio.html#ga5c42d6d3994fffcc1be089d30cfc2bfc", null ],
     [ "HAL_IsAnyPulsing", "group__hal__dio.html#ga4fac43cb414b237dbe8a82e7dedd9693", null ],
     [ "HAL_IsPulsing", "group__hal__dio.html#ga9bab8b1fed969b14463124be0e8137d8", null ],
     [ "HAL_Pulse", "group__hal__dio.html#gabb11867f538bf13408f3caefc26da912", null ],

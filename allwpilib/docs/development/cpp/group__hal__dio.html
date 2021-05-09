@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.3.1-8-gba08baa</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-37-g3cc2da3</span>
    </div>
   </td>
  </tr>
@@ -98,9 +98,9 @@ $(document).ready(function(){initNavTree('group__hal__dio.html',''); initResizab
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga87a06b768677fe263288b9c15b83c575"><td class="memItemLeft" align="right" valign="top">HAL_DigitalHandle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__dio.html#ga87a06b768677fe263288b9c15b83c575">HAL_InitializeDIOPort</a> (HAL_PortHandle portHandle, HAL_Bool input, int32_t *status)</td></tr>
-<tr class="memdesc:ga87a06b768677fe263288b9c15b83c575"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new instance of a digital port.  <a href="group__hal__dio.html#ga87a06b768677fe263288b9c15b83c575">More...</a><br /></td></tr>
-<tr class="separator:ga87a06b768677fe263288b9c15b83c575"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5c42d6d3994fffcc1be089d30cfc2bfc"><td class="memItemLeft" align="right" valign="top">HAL_DigitalHandle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__dio.html#ga5c42d6d3994fffcc1be089d30cfc2bfc">HAL_InitializeDIOPort</a> (HAL_PortHandle portHandle, HAL_Bool input, const char *allocationLocation, int32_t *status)</td></tr>
+<tr class="memdesc:ga5c42d6d3994fffcc1be089d30cfc2bfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new instance of a digital port.  <a href="group__hal__dio.html#ga5c42d6d3994fffcc1be089d30cfc2bfc">More...</a><br /></td></tr>
+<tr class="separator:ga5c42d6d3994fffcc1be089d30cfc2bfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa2c0dff5fb9d41d76d08b37009f71e99"><td class="memItemLeft" align="right" valign="top">HAL_Bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__dio.html#gaa2c0dff5fb9d41d76d08b37009f71e99">HAL_CheckDIOChannel</a> (int32_t channel)</td></tr>
 <tr class="memdesc:gaa2c0dff5fb9d41d76d08b37009f71e99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a DIO channel is valid.  <a href="group__hal__dio.html#gaa2c0dff5fb9d41d76d08b37009f71e99">More...</a><br /></td></tr>
 <tr class="separator:gaa2c0dff5fb9d41d76d08b37009f71e99"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -395,8 +395,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_FreeDIOPort</b> (
 
 </div>
 </div>
-<a id="ga87a06b768677fe263288b9c15b83c575"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga87a06b768677fe263288b9c15b83c575">&#9670;&nbsp;</a></span>HAL_InitializeDIOPort()</h2>
+<a id="ga5c42d6d3994fffcc1be089d30cfc2bfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5c42d6d3994fffcc1be089d30cfc2bfc">&#9670;&nbsp;</a></span>HAL_InitializeDIOPort()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -412,6 +412,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_FreeDIOPort</b> (
           <td></td>
           <td class="paramtype">HAL_Bool&#160;</td>
           <td class="paramname"><em>input</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>allocationLocation</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -432,6 +438,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_FreeDIOPort</b> (
   <table class="params">
     <tr><td class="paramname">portHandle</td><td>the port handle to create from </td></tr>
     <tr><td class="paramname">input</td><td>true for input, false for output </td></tr>
+    <tr><td class="paramname">allocationLocation</td><td>the location where the allocation is occuring (can be null) </td></tr>
   </table>
   </dd>
 </dl>
@@ -875,7 +882,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_FreeDIOPort</b> (
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed May 5 2021 16:19:11 for WPILibC++ by
+    <li class="footer">Generated on Sun May 9 2021 21:19:02 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

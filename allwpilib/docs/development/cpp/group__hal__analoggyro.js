@@ -6,7 +6,7 @@ var group__hal__analoggyro =
     [ "HAL_GetAnalogGyroCenter", "group__hal__analoggyro.html#ga7212501dae29e4fc3df18094f04f3fef", null ],
     [ "HAL_GetAnalogGyroOffset", "group__hal__analoggyro.html#ga4f0ef7f247b728a27a558dafb09f5441", null ],
     [ "HAL_GetAnalogGyroRate", "group__hal__analoggyro.html#ga34ab7e0949f288b61ba057137c41c24f", null ],
-    [ "HAL_InitializeAnalogGyro", "group__hal__analoggyro.html#ga7ad667ac034fdfc9da4074853a064f2a", null ],
+    [ "HAL_InitializeAnalogGyro", "group__hal__analoggyro.html#gabb9894fce3ebfed40aab914a56f58e85", null ],
     [ "HAL_ResetAnalogGyro", "group__hal__analoggyro.html#ga89b1038e0561eb1f4ec6d3ccc747dddd", null ],
     [ "HAL_SetAnalogGyroDeadband", "group__hal__analoggyro.html#gad77a6766f3cba425b3c6d78b06a111eb", null ],
     [ "HAL_SetAnalogGyroParameters", "group__hal__analoggyro.html#gadc7a11e59c368c174d79abe8fdeaea5e", null ],

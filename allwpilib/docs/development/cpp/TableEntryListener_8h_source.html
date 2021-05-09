@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.3.1-8-gba08baa</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-37-g3cc2da3</span>
    </div>
   </td>
  </tr>
@@ -111,26 +111,24 @@ $(document).ready(function(){initNavTree('TableEntryListener_8h_source.html','')
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">class </span>NetworkTableEntry;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">class </span>Value;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">using</span> <a class="code" href="classwpi_1_1StringRef.html">wpi::StringRef</a>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">typedef</span> std::function&lt;void(NetworkTable* table, StringRef name,</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                           NetworkTableEntry entry,</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                           std::shared_ptr&lt;Value&gt; value, <span class="keywordtype">int</span> flags)&gt;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="group__ntcore__cpp__api.html#gab3314c51b4d61147baecf8f26b438562">   38</a></span>&#160;    <a class="code" href="group__ntcore__cpp__api.html#gab3314c51b4d61147baecf8f26b438562">TableEntryListener</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">typedef</span> std::function&lt;void(NetworkTable* table, <a class="code" href="classwpi_1_1StringRef.html">wpi::StringRef</a> name,</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                           NetworkTableEntry entry,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                           std::shared_ptr&lt;Value&gt; value, <span class="keywordtype">int</span> flags)&gt;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="group__ntcore__cpp__api.html#ga2b3a7bf0e225d3115b2f06997e4878e0">   36</a></span>&#160;    <a class="code" href="group__ntcore__cpp__api.html#ga2b3a7bf0e225d3115b2f06997e4878e0">TableEntryListener</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}  <span class="comment">// namespace nt</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}  <span class="comment">// namespace nt</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif  // NTCORE_NETWORKTABLES_TABLEENTRYLISTENER_H_</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif  // NTCORE_NETWORKTABLES_TABLEENTRYLISTENER_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="agroup__ntcore__cpp__api_html_gab3314c51b4d61147baecf8f26b438562"><div class="ttname"><a href="group__ntcore__cpp__api.html#gab3314c51b4d61147baecf8f26b438562">nt::TableEntryListener</a></div><div class="ttdeci">std::function&lt; void(NetworkTable *table, StringRef name, NetworkTableEntry entry, std::shared_ptr&lt; Value &gt; value, int flags)&gt; TableEntryListener</div><div class="ttdoc">A listener that listens to changes in values in a NetworkTable.</div><div class="ttdef"><b>Definition:</b> TableEntryListener.h:38</div></div>
 <div class="ttc" id="aclasswpi_1_1StringRef_html"><div class="ttname"><a href="classwpi_1_1StringRef.html">wpi::StringRef</a></div><div class="ttdoc">StringRef - Represent a constant reference to a string, i.e.</div><div class="ttdef"><b>Definition:</b> StringRef.h:49</div></div>
-<div class="ttc" id="anamespacent_html"><div class="ttname"><a href="namespacent.html">nt</a></div><div class="ttdoc">NetworkTables (ntcore) namespace.</div><div class="ttdef"><b>Definition:</b> NetworkTable.h:25</div></div>
+<div class="ttc" id="agroup__ntcore__cpp__api_html_ga2b3a7bf0e225d3115b2f06997e4878e0"><div class="ttname"><a href="group__ntcore__cpp__api.html#ga2b3a7bf0e225d3115b2f06997e4878e0">nt::TableEntryListener</a></div><div class="ttdeci">std::function&lt; void(NetworkTable *table, wpi::StringRef name, NetworkTableEntry entry, std::shared_ptr&lt; Value &gt; value, int flags)&gt; TableEntryListener</div><div class="ttdoc">A listener that listens to changes in values in a NetworkTable.</div><div class="ttdef"><b>Definition:</b> TableEntryListener.h:17</div></div>
+<div class="ttc" id="anamespacent_html"><div class="ttname"><a href="namespacent.html">nt</a></div><div class="ttdoc">NetworkTables (ntcore) namespace.</div><div class="ttdef"><b>Definition:</b> ntcore_cpp.h:25</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_46f80a5b907f4a68e6277ec93a133082.html">networktables</a></li><li class="navelem"><b>TableEntryListener.h</b></li>
-    <li class="footer">Generated on Wed May 5 2021 16:19:09 for WPILibC++ by
+    <li class="footer">Generated on Sun May 9 2021 21:19:01 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

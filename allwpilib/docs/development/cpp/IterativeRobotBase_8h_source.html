@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.3.1-8-gba08baa</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-37-g3cc2da3</span>
    </div>
   </td>
  </tr>
@@ -135,34 +135,36 @@ $(document).ready(function(){initNavTree('IterativeRobotBase_8h_source.html','')
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
 <div class="line"><a name="l00161"></a><span class="lineno"><a class="line" href="classfrc_1_1IterativeRobotBase.html#af55ae3692aeddcb8f9d3e54a5d5b9474">  161</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1IterativeRobotBase.html#af55ae3692aeddcb8f9d3e54a5d5b9474">SetNetworkTablesFlushEnabled</a>(<span class="keywordtype">bool</span> enabled);</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  WPI_DEPRECATED(<span class="stringliteral">&quot;Use constructor with unit-safety instead.&quot;</span>)</div>
-<div class="line"><a name="l00172"></a><span class="lineno"><a class="line" href="classfrc_1_1IterativeRobotBase.html#adaad67b57154bd85fef26a742d9c66b2">  172</a></span>&#160;  explicit <a class="code" href="classfrc_1_1IterativeRobotBase.html">IterativeRobotBase</a>(<span class="keywordtype">double</span> period);</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
-<div class="line"><a name="l00179"></a><span class="lineno"><a class="line" href="classfrc_1_1IterativeRobotBase.html#afee5b7301bc0f4579d76f840a18f2cca">  179</a></span>&#160;  explicit <a class="code" href="classfrc_1_1IterativeRobotBase.html">IterativeRobotBase</a>(units::second_t period);</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; </div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  ~<a class="code" href="classfrc_1_1IterativeRobotBase.html">IterativeRobotBase</a>() override = default;</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160; </div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160; protected:</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  <a class="code" href="classfrc_1_1IterativeRobotBase.html">IterativeRobotBase</a>(<a class="code" href="classfrc_1_1IterativeRobotBase.html">IterativeRobotBase</a>&amp;&amp;) = default;</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  <a class="code" href="classfrc_1_1IterativeRobotBase.html">IterativeRobotBase</a>&amp; operator=(<a class="code" href="classfrc_1_1IterativeRobotBase.html">IterativeRobotBase</a>&amp;&amp;) = default;</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; </div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  <span class="keywordtype">void</span> LoopFunc();</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  units::second_t m_period;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160; </div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; private:</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  enum class Mode { kNone, kDisabled, kAutonomous, kTeleop, kTest };</div>
+<div class="line"><a name="l00166"></a><span class="lineno"><a class="line" href="classfrc_1_1IterativeRobotBase.html#aead36ef3891548d84322a593ddb5d049">  166</a></span>&#160;  units::second_t <a class="code" href="classfrc_1_1IterativeRobotBase.html#aead36ef3891548d84322a593ddb5d049">GetPeriod</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  <a class="code" href="namespacefrc.html#a3e1e63234243bd1c57fd61d0c7ea88ec">WPI_DEPRECATED</a>(<span class="stringliteral">&quot;Use constructor with unit-safety instead.&quot;</span>)</div>
+<div class="line"><a name="l00177"></a><span class="lineno"><a class="line" href="classfrc_1_1IterativeRobotBase.html#adaad67b57154bd85fef26a742d9c66b2">  177</a></span>&#160;  explicit <a class="code" href="classfrc_1_1IterativeRobotBase.html">IterativeRobotBase</a>(<span class="keywordtype">double</span> period);</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
+<div class="line"><a name="l00184"></a><span class="lineno"><a class="line" href="classfrc_1_1IterativeRobotBase.html#afee5b7301bc0f4579d76f840a18f2cca">  184</a></span>&#160;  explicit <a class="code" href="classfrc_1_1IterativeRobotBase.html">IterativeRobotBase</a>(units::second_t period);</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  ~<a class="code" href="classfrc_1_1IterativeRobotBase.html">IterativeRobotBase</a>() override = default;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; protected:</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  <a class="code" href="classfrc_1_1IterativeRobotBase.html">IterativeRobotBase</a>(<a class="code" href="classfrc_1_1IterativeRobotBase.html">IterativeRobotBase</a>&amp;&amp;) = default;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  <a class="code" href="classfrc_1_1IterativeRobotBase.html">IterativeRobotBase</a>&amp; operator=(<a class="code" href="classfrc_1_1IterativeRobotBase.html">IterativeRobotBase</a>&amp;&amp;) = default;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  <span class="keywordtype">void</span> LoopFunc();</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  Mode m_lastMode = Mode::kNone;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  <a class="code" href="classfrc_1_1Watchdog.html">Watchdog</a> m_watchdog;</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  <span class="keywordtype">bool</span> m_ntFlushEnabled = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; </div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  <span class="keywordtype">void</span> PrintLoopOverrunMessage();</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;};</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; private:</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  enum class Mode { kNone, kDisabled, kAutonomous, kTeleop, kTest };</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; </div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  Mode m_lastMode = Mode::kNone;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  units::second_t m_period;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  <a class="code" href="classfrc_1_1Watchdog.html">Watchdog</a> m_watchdog;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  <span class="keywordtype">bool</span> m_ntFlushEnabled = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160; </div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  <span class="keywordtype">void</span> PrintLoopOverrunMessage();</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;};</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160; </div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;}  <span class="comment">// namespace frc</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclassfrc_1_1IterativeRobotBase_html_aead36ef3891548d84322a593ddb5d049"><div class="ttname"><a href="classfrc_1_1IterativeRobotBase.html#aead36ef3891548d84322a593ddb5d049">frc::IterativeRobotBase::GetPeriod</a></div><div class="ttdeci">units::second_t GetPeriod() const</div><div class="ttdoc">Gets time period between calls to Periodic() functions.</div></div>
 <div class="ttc" id="aclassfrc_1_1IterativeRobotBase_html_a3e3798e0ac3ed99fb63a747bfc0622c0"><div class="ttname"><a href="classfrc_1_1IterativeRobotBase.html#a3e3798e0ac3ed99fb63a747bfc0622c0">frc::IterativeRobotBase::TeleopInit</a></div><div class="ttdeci">virtual void TeleopInit()</div><div class="ttdoc">Initialization code for teleop mode should go here.</div></div>
 <div class="ttc" id="aclassfrc_1_1IterativeRobotBase_html_a0c5042b873bd000d8258f146456eb9dd"><div class="ttname"><a href="classfrc_1_1IterativeRobotBase.html#a0c5042b873bd000d8258f146456eb9dd">frc::IterativeRobotBase::TestInit</a></div><div class="ttdeci">virtual void TestInit()</div><div class="ttdoc">Initialization code for test mode should go here.</div></div>
 <div class="ttc" id="aclassfrc_1_1IterativeRobotBase_html_aa1c0335b4c558340a2e624ab2db8c092"><div class="ttname"><a href="classfrc_1_1IterativeRobotBase.html#aa1c0335b4c558340a2e624ab2db8c092">frc::IterativeRobotBase::DisabledPeriodic</a></div><div class="ttdeci">virtual void DisabledPeriodic()</div><div class="ttdoc">Periodic code for disabled mode should go here.</div></div>
@@ -177,14 +179,15 @@ $(document).ready(function(){initNavTree('IterativeRobotBase_8h_source.html','')
 <div class="ttc" id="aclassfrc_1_1IterativeRobotBase_html_a43ded4345299bb1bdf4d3e615b585dc6"><div class="ttname"><a href="classfrc_1_1IterativeRobotBase.html#a43ded4345299bb1bdf4d3e615b585dc6">frc::IterativeRobotBase::SimulationPeriodic</a></div><div class="ttdeci">virtual void SimulationPeriodic()</div><div class="ttdoc">Periodic simulation code should go here.</div></div>
 <div class="ttc" id="aclassfrc_1_1IterativeRobotBase_html_ac9eeeb4ab51bb054d12bca1b398bc352"><div class="ttname"><a href="classfrc_1_1IterativeRobotBase.html#ac9eeeb4ab51bb054d12bca1b398bc352">frc::IterativeRobotBase::AutonomousInit</a></div><div class="ttdeci">virtual void AutonomousInit()</div><div class="ttdoc">Initialization code for autonomous mode should go here.</div></div>
 <div class="ttc" id="aclassfrc_1_1IterativeRobotBase_html_af55ae3692aeddcb8f9d3e54a5d5b9474"><div class="ttname"><a href="classfrc_1_1IterativeRobotBase.html#af55ae3692aeddcb8f9d3e54a5d5b9474">frc::IterativeRobotBase::SetNetworkTablesFlushEnabled</a></div><div class="ttdeci">void SetNetworkTablesFlushEnabled(bool enabled)</div><div class="ttdoc">Enables or disables flushing NetworkTables every loop iteration.</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> VisionRunner.inc:9</div></div>
+<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> CameraServer.h:18</div></div>
 <div class="ttc" id="aclassfrc_1_1IterativeRobotBase_html_a2e6f6bc04d6c62c9fa33bc12a21c74d5"><div class="ttname"><a href="classfrc_1_1IterativeRobotBase.html#a2e6f6bc04d6c62c9fa33bc12a21c74d5">frc::IterativeRobotBase::TeleopPeriodic</a></div><div class="ttdeci">virtual void TeleopPeriodic()</div><div class="ttdoc">Periodic code for teleop mode should go here.</div></div>
-<div class="ttc" id="aclassfrc_1_1RobotBase_html"><div class="ttname"><a href="classfrc_1_1RobotBase.html">frc::RobotBase</a></div><div class="ttdoc">Implement a Robot Program framework.</div><div class="ttdef"><b>Definition:</b> RobotBase.h:115</div></div>
+<div class="ttc" id="aclassfrc_1_1RobotBase_html"><div class="ttname"><a href="classfrc_1_1RobotBase.html">frc::RobotBase</a></div><div class="ttdoc">Implement a Robot Program framework.</div><div class="ttdef"><b>Definition:</b> RobotBase.h:121</div></div>
+<div class="ttc" id="anamespacefrc_html_a3e1e63234243bd1c57fd61d0c7ea88ec"><div class="ttname"><a href="namespacefrc.html#a3e1e63234243bd1c57fd61d0c7ea88ec">frc::WPI_DEPRECATED</a></div><div class="ttdeci">class WPI_DEPRECATED(&quot;use MotorController&quot;) SpeedController</div><div class="ttdoc">Interface for speed controlling devices.</div><div class="ttdef"><b>Definition:</b> SpeedController.h:15</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><b>IterativeRobotBase.h</b></li>
-    <li class="footer">Generated on Wed May 5 2021 16:19:09 for WPILibC++ by
+    <li class="footer">Generated on Sun May 9 2021 21:19:01 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

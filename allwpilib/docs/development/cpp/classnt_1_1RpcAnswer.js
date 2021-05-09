@@ -1,9 +1,9 @@
 var classnt_1_1RpcAnswer =
 [
     [ "RpcAnswer", "classnt_1_1RpcAnswer.html#a0d08fcd73e9a4e969a72ac5ea727469b", null ],
-    [ "RpcAnswer", "classnt_1_1RpcAnswer.html#ac6d83bdc9baa8965dd5df8d119b6639a", null ],
+    [ "RpcAnswer", "classnt_1_1RpcAnswer.html#abc1f8df7af2c1ee8fd548626e45bdfde", null ],
     [ "operator bool", "classnt_1_1RpcAnswer.html#a11dab1003d3be6dc7701a9836eaa649b", null ],
-    [ "PostResponse", "classnt_1_1RpcAnswer.html#aeabd75eef2fa528edc6d4bc22f06236e", null ],
+    [ "PostResponse", "classnt_1_1RpcAnswer.html#acc7489a6a1fe241fe50df93cce32afef", null ],
     [ "swap", "classnt_1_1RpcAnswer.html#a75bc005ff406f5a20ed8a1cc76400e97", null ],
     [ "call", "classnt_1_1RpcAnswer.html#a12f30deea8ee389a91470e31229c22c8", null ],
     [ "conn", "classnt_1_1RpcAnswer.html#a397c033f5a5a28fb256d38a7fff449e9", null ],

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.3.1-8-gba08baa</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-37-g3cc2da3</span>
    </div>
   </td>
  </tr>
@@ -112,13 +112,13 @@ $(document).ready(function(){initNavTree('Watchdog_8h_source.html',''); initResi
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classfrc_1_1Watchdog.html">   27</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1Watchdog.html">Watchdog</a> {</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  WPI_DEPRECATED(<span class="stringliteral">&quot;Use unit-safe version instead&quot;</span>)</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="namespacefrc.html#a3e1e63234243bd1c57fd61d0c7ea88ec">WPI_DEPRECATED</a>(<span class="stringliteral">&quot;Use unit-safe version instead&quot;</span>)</div>
 <div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classfrc_1_1Watchdog.html#acba51c5fcdfb3767814286d050fc8a7b">   40</a></span>&#160;  <a class="code" href="classfrc_1_1Watchdog.html">Watchdog</a>(<span class="keywordtype">double</span> timeout, std::function&lt;<span class="keywordtype">void</span>()&gt; callback);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
 <div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classfrc_1_1Watchdog.html#af466c4a726aa55292216af925b400b7e">   49</a></span>&#160;  <a class="code" href="classfrc_1_1Watchdog.html">Watchdog</a>(units::second_t timeout, std::function&lt;<span class="keywordtype">void</span>()&gt; callback);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  template &lt;typename Callable, typename Arg, typename... Args&gt;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  WPI_DEPRECATED(&quot;Use unit-safe version instead&quot;)</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <a class="code" href="namespacefrc.html#a3e1e63234243bd1c57fd61d0c7ea88ec">WPI_DEPRECATED</a>(&quot;Use unit-safe version instead&quot;)</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <a class="code" href="classfrc_1_1Watchdog.html">Watchdog</a>(<span class="keywordtype">double</span> timeout, Callable&amp;&amp; f, Arg&amp;&amp; arg, Args&amp;&amp;... args)</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      : <a class="code" href="classfrc_1_1Watchdog.html">Watchdog</a>(units::second_t{timeout}, arg, args...) {}</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
@@ -135,7 +135,7 @@ $(document).ready(function(){initNavTree('Watchdog_8h_source.html',''); initResi
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
 <div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="classfrc_1_1Watchdog.html#ad16d2b13cbb9872d93bcb723596854b2">   70</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classfrc_1_1Watchdog.html#ad16d2b13cbb9872d93bcb723596854b2">GetTime</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  WPI_DEPRECATED(<span class="stringliteral">&quot;Use unit-safe version instead&quot;</span>)</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <a class="code" href="namespacefrc.html#a3e1e63234243bd1c57fd61d0c7ea88ec">WPI_DEPRECATED</a>(<span class="stringliteral">&quot;Use unit-safe version instead&quot;</span>)</div>
 <div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classfrc_1_1Watchdog.html#a058a285727623db48ff9b444d1493b2e">   82</a></span>&#160;  void <a class="code" href="classfrc_1_1Watchdog.html#a058a285727623db48ff9b444d1493b2e">SetTimeout</a>(<span class="keywordtype">double</span> timeout);</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
 <div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="classfrc_1_1Watchdog.html#af3a170ce0e1b2d2d4d84914e1ffa7e9f">   90</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Watchdog.html#a058a285727623db48ff9b444d1493b2e">SetTimeout</a>(units::second_t timeout);</div>
@@ -191,8 +191,9 @@ $(document).ready(function(){initNavTree('Watchdog_8h_source.html',''); initResi
 <div class="ttc" id="aclassfrc_1_1Watchdog_html_ad16d2b13cbb9872d93bcb723596854b2"><div class="ttname"><a href="classfrc_1_1Watchdog.html#ad16d2b13cbb9872d93bcb723596854b2">frc::Watchdog::GetTime</a></div><div class="ttdeci">double GetTime() const</div><div class="ttdoc">Returns the time in seconds since the watchdog was last fed.</div></div>
 <div class="ttc" id="aclassfrc_1_1Tracer_html"><div class="ttname"><a href="classfrc_1_1Tracer.html">frc::Tracer</a></div><div class="ttdoc">A class for keeping track of how much time it takes for different parts of code to execute.</div><div class="ttdef"><b>Definition:</b> Tracer.h:26</div></div>
 <div class="ttc" id="aclassfrc_1_1Watchdog_html_afb1903c2b727850d2ffbc694deb75826"><div class="ttname"><a href="classfrc_1_1Watchdog.html#afb1903c2b727850d2ffbc694deb75826">frc::Watchdog::AddEpoch</a></div><div class="ttdeci">void AddEpoch(wpi::StringRef epochName)</div><div class="ttdoc">Adds time since last epoch to the list printed by PrintEpochs().</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> VisionRunner.inc:9</div></div>
+<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> CameraServer.h:18</div></div>
 <div class="ttc" id="aclassfrc_1_1Watchdog_html_adbf21b5f221c80544d439bfebbb76772"><div class="ttname"><a href="classfrc_1_1Watchdog.html#adbf21b5f221c80544d439bfebbb76772">frc::Watchdog::Enable</a></div><div class="ttdeci">void Enable()</div><div class="ttdoc">Enables the watchdog timer.</div></div>
+<div class="ttc" id="anamespacefrc_html_a3e1e63234243bd1c57fd61d0c7ea88ec"><div class="ttname"><a href="namespacefrc.html#a3e1e63234243bd1c57fd61d0c7ea88ec">frc::WPI_DEPRECATED</a></div><div class="ttdeci">class WPI_DEPRECATED(&quot;use MotorController&quot;) SpeedController</div><div class="ttdoc">Interface for speed controlling devices.</div><div class="ttdef"><b>Definition:</b> SpeedController.h:15</div></div>
 <div class="ttc" id="aclassfrc_1_1Watchdog_html_a058a285727623db48ff9b444d1493b2e"><div class="ttname"><a href="classfrc_1_1Watchdog.html#a058a285727623db48ff9b444d1493b2e">frc::Watchdog::SetTimeout</a></div><div class="ttdeci">void SetTimeout(double timeout)</div><div class="ttdoc">Sets the watchdog's timeout.</div></div>
 <div class="ttc" id="aclassfrc_1_1Watchdog_html_a75724a45738fbdd62e37de920bed44f8"><div class="ttname"><a href="classfrc_1_1Watchdog.html#a75724a45738fbdd62e37de920bed44f8">frc::Watchdog::GetTimeout</a></div><div class="ttdeci">double GetTimeout() const</div><div class="ttdoc">Returns the watchdog's timeout in seconds.</div></div>
 <div class="ttc" id="aclassfrc_1_1Watchdog_html_afed0766fe7a562022a43fe9202221468"><div class="ttname"><a href="classfrc_1_1Watchdog.html#afed0766fe7a562022a43fe9202221468">frc::Watchdog::PrintEpochs</a></div><div class="ttdeci">void PrintEpochs()</div><div class="ttdoc">Prints list of epochs added so far and their times.</div></div>
@@ -200,7 +201,7 @@ $(document).ready(function(){initNavTree('Watchdog_8h_source.html',''); initResi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><b>Watchdog.h</b></li>
-    <li class="footer">Generated on Wed May 5 2021 16:19:09 for WPILibC++ by
+    <li class="footer">Generated on Sun May 9 2021 21:19:01 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

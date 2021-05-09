@@ -1,7 +1,7 @@
 var classfrc_1_1DMA =
 [
     [ "DMA", "classfrc_1_1DMA.html#ac0718d7f0f2680c53e3b0588331a6aac", null ],
-    [ "~DMA", "classfrc_1_1DMA.html#a1c12613a778ca693065c20a9a5fdb507", null ],
+    [ "~DMA", "classfrc_1_1DMA.html#a1f6a8c0a4a0cfcae0de4041536bf2591", null ],
     [ "DMA", "classfrc_1_1DMA.html#a0d8394f658ba73e37439f67c41fa81b7", null ],
     [ "AddAnalogAccumulator", "classfrc_1_1DMA.html#afce83d02ca7dc4a5828e323422254609", null ],
     [ "AddAnalogInput", "classfrc_1_1DMA.html#abd97b67ebd594b0393bdceb68874072c", null ],

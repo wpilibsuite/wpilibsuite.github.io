@@ -20,7 +20,6 @@ var classfrc_1_1AnalogInput =
     [ "InitSendable", "classfrc_1_1AnalogInput.html#ab8c404e4fd322d31f0e35320ad06ef9a", null ],
     [ "IsAccumulatorChannel", "classfrc_1_1AnalogInput.html#a35704a9d53a76376afe205fb063d53bf", null ],
     [ "operator=", "classfrc_1_1AnalogInput.html#a1186995a9d811bee6459370e004fee5e", null ],
-    [ "PIDGet", "classfrc_1_1AnalogInput.html#ad771fe604f31199bdc32bb87050b4445", null ],
     [ "ResetAccumulator", "classfrc_1_1AnalogInput.html#af3506ada9eb3c5e555d701833763035a", null ],
     [ "SetAccumulatorCenter", "classfrc_1_1AnalogInput.html#a062f092340d86c78816224fc3895ed4d", null ],
     [ "SetAccumulatorDeadband", "classfrc_1_1AnalogInput.html#ae55f6281d543c19cea587447f5c06469", null ],

@@ -4,7 +4,7 @@ var classfrc_1_1Notifier =
     [ "Notifier", "classfrc_1_1Notifier.html#ae71e79fa76eeae3f56fc05309e189457", null ],
     [ "Notifier", "classfrc_1_1Notifier.html#ab01ce1711d9054c05c670d6184e30696", null ],
     [ "Notifier", "classfrc_1_1Notifier.html#a0eb6ef1b818ddd068ea8b96d34da7f8c", null ],
-    [ "~Notifier", "classfrc_1_1Notifier.html#a2cce00402c030ff5764fb11faa5bc830", null ],
+    [ "~Notifier", "classfrc_1_1Notifier.html#ae181100728f86905d37ce3f274241357", null ],
     [ "Notifier", "classfrc_1_1Notifier.html#a2fa897184106ffd9aa50fccb444be935", null ],
     [ "operator=", "classfrc_1_1Notifier.html#ae2ce5e955f935d8c0370034301b91cfd", null ],
     [ "SetHALThreadPriority", "classfrc_1_1Notifier.html#aa927a8e8c60584038c16d07a4f8d5baf", null ],

@@ -28,7 +28,7 @@ var classfrc_1_1GenericHID =
       [ "kRightRumble", "classfrc_1_1GenericHID.html#a5517fc779168c17f938be2e875976c66ac65d4f8c303600df135e7b2075410069", null ]
     ] ],
     [ "GenericHID", "classfrc_1_1GenericHID.html#ac3800a450e72919a59b70caf85bbad82", null ],
-    [ "~GenericHID", "classfrc_1_1GenericHID.html#ace02c8b5aae35fbe94d96f3e6049741b", null ],
+    [ "~GenericHID", "classfrc_1_1GenericHID.html#a198bc47fac8e662a5f7a9b018dc9154e", null ],
     [ "GenericHID", "classfrc_1_1GenericHID.html#a8da5ec717899a25e7689d222a42a492d", null ],
     [ "GetAxisCount", "classfrc_1_1GenericHID.html#ae59fa53ad800be21b65b19fe7690497e", null ],
     [ "GetAxisType", "classfrc_1_1GenericHID.html#a2fafc600a5cf100f363d8bef7c1d9e30", null ],

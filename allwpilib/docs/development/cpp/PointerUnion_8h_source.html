@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.3.1-8-gba08baa</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-37-g3cc2da3</span>
    </div>
   </td>
  </tr>
@@ -254,7 +254,7 @@ $(document).ready(function(){initNavTree('PointerUnion_8h_source.html',''); init
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;}</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> PT1, <span class="keyword">typename</span> PT2&gt;</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="keywordtype">bool</span> operator&lt;(PointerUnion&lt;PT1, PT2&gt; lhs, PointerUnion&lt;PT1, PT2&gt; rhs) {</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="namespacewpi_1_1detail.html#ae0ba1341aee62171fc05eed5b2d973f2">operator&lt;</a>(PointerUnion&lt;PT1, PT2&gt; lhs, PointerUnion&lt;PT1, PT2&gt; rhs) {</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;  <span class="keywordflow">return</span> lhs.getOpaqueValue() &lt; rhs.getOpaqueValue();</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;}</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
@@ -531,6 +531,7 @@ $(document).ready(function(){initNavTree('PointerUnion_8h_source.html',''); init
 <div class="ttc" id="aclasswpi_1_1PointerUnion3_html_a4cf87818af531715bc89851d081370dd"><div class="ttname"><a href="classwpi_1_1PointerUnion3.html#a4cf87818af531715bc89851d081370dd">wpi::PointerUnion3::is</a></div><div class="ttdeci">int is() const</div><div class="ttdoc">Test if the Union currently holds the type matching T.</div><div class="ttdef"><b>Definition:</b> PointerUnion.h:273</div></div>
 <div class="ttc" id="aclasswpi_1_1PointerUnion_html_a1cb3883bc2980b1e1b3becc7573ebc44"><div class="ttname"><a href="classwpi_1_1PointerUnion.html#a1cb3883bc2980b1e1b3becc7573ebc44">wpi::PointerUnion::operator=</a></div><div class="ttdeci">const PointerUnion &amp; operator=(std::nullptr_t)</div><div class="ttdoc">Assignment from nullptr which just clears the union.</div><div class="ttdef"><b>Definition:</b> PointerUnion.h:166</div></div>
 <div class="ttc" id="astructwpi_1_1PointerUnionTypeSelector_html"><div class="ttname"><a href="structwpi_1_1PointerUnionTypeSelector.html">wpi::PointerUnionTypeSelector</a></div><div class="ttdoc">Get a type based on whether two types are the same or not.</div><div class="ttdef"><b>Definition:</b> PointerUnion.h:41</div></div>
+<div class="ttc" id="anamespacewpi_1_1detail_html_ae0ba1341aee62171fc05eed5b2d973f2"><div class="ttname"><a href="namespacewpi_1_1detail.html#ae0ba1341aee62171fc05eed5b2d973f2">wpi::detail::operator&lt;</a></div><div class="ttdeci">bool operator&lt;(const value_t lhs, const value_t rhs) noexcept</div><div class="ttdoc">comparison operator for JSON types</div><div class="ttdef"><b>Definition:</b> json.h:724</div></div>
 <div class="ttc" id="aclasswpi_1_1PointerUnion_html_aedaf22ea52594ef8e35e6ffe9a1f76a5"><div class="ttname"><a href="classwpi_1_1PointerUnion.html#aedaf22ea52594ef8e35e6ffe9a1f76a5">wpi::PointerUnion::get</a></div><div class="ttdeci">T get() const</div><div class="ttdoc">Returns the value of the specified pointer type.</div><div class="ttdef"><b>Definition:</b> PointerUnion.h:135</div></div>
 <div class="ttc" id="aclasswpi_1_1PointerUnion3_html_a0b515b6411e789915309f8762b8b656a"><div class="ttname"><a href="classwpi_1_1PointerUnion3.html#a0b515b6411e789915309f8762b8b656a">wpi::PointerUnion3::get</a></div><div class="ttdeci">T get() const</div><div class="ttdoc">Returns the value of the specified pointer type.</div><div class="ttdef"><b>Definition:</b> PointerUnion.h:284</div></div>
 <div class="ttc" id="aclasswpi_1_1PointerUnion_html_a3294dea770178f7210bb5531f8dd19b5"><div class="ttname"><a href="classwpi_1_1PointerUnion.html#a3294dea770178f7210bb5531f8dd19b5">wpi::PointerUnion::isNull</a></div><div class="ttdeci">bool isNull() const</div><div class="ttdoc">Test if the pointer held in the union is null, regardless of which type it is.</div><div class="ttdef"><b>Definition:</b> PointerUnion.h:114</div></div>
@@ -551,7 +552,7 @@ $(document).ready(function(){initNavTree('PointerUnion_8h_source.html',''); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><b>PointerUnion.h</b></li>
-    <li class="footer">Generated on Wed May 5 2021 16:19:10 for WPILibC++ by
+    <li class="footer">Generated on Sun May 9 2021 21:19:02 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

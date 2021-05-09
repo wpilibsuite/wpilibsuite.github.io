@@ -8,7 +8,7 @@ var classfrc_1_1SPI =
       [ "kMXP", "classfrc_1_1SPI.html#ad5a4b71c1c453570e8b23d489e15fc03a9d8be8ebdbc8ea8279da408640bf216e", null ]
     ] ],
     [ "SPI", "classfrc_1_1SPI.html#a584d5d8c0aa471413e933164c69b4c60", null ],
-    [ "~SPI", "classfrc_1_1SPI.html#ab3aaecf7b7e39d7226c5f8d8e1a71bde", null ],
+    [ "~SPI", "classfrc_1_1SPI.html#ade227dccb960c0ba23a6e34532e33415", null ],
     [ "SPI", "classfrc_1_1SPI.html#aa2817c775463cc19be7aaa12a4f6cc96", null ],
     [ "ConfigureAutoStall", "classfrc_1_1SPI.html#afed70a1e9bbc2f355c759623cad415f9", null ],
     [ "ForceAutoRead", "classfrc_1_1SPI.html#a45a82d68cd8f7a0523a95a01566ef626", null ],

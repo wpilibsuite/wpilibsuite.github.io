@@ -31,7 +31,7 @@ var classfrc_1_1SerialPort =
     ] ],
     [ "SerialPort", "classfrc_1_1SerialPort.html#a58eb39901d0cd1128ff4e6a488308fec", null ],
     [ "SerialPort", "classfrc_1_1SerialPort.html#ad791a80ef8179e33327b268d6d5efcce", null ],
-    [ "~SerialPort", "classfrc_1_1SerialPort.html#a9aac0f35206279b432d3434c070ee27c", null ],
+    [ "~SerialPort", "classfrc_1_1SerialPort.html#a57d7b2a5ebdbb2ba5d8b9a38c83be4f2", null ],
     [ "SerialPort", "classfrc_1_1SerialPort.html#a02adbf989d2f912c9969fc3428782736", null ],
     [ "DisableTermination", "classfrc_1_1SerialPort.html#a6865f5e62398a304f953c57d7d63c050", null ],
     [ "EnableTermination", "classfrc_1_1SerialPort.html#a25b0be1bf26f74a96e2f5de5bf073c6e", null ],

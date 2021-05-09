@@ -14,7 +14,7 @@ var group__hal__analoginput =
     [ "HAL_GetAnalogValueToVolts", "group__hal__analoginput.html#ga3217a276a5295f6f9d13fa205edff47b", null ],
     [ "HAL_GetAnalogVoltage", "group__hal__analoginput.html#ga6f0b6f5e03b9a76e9d654d1d04d524d0", null ],
     [ "HAL_GetAnalogVoltsToValue", "group__hal__analoginput.html#gab5ecc1bef9fd36fa20043d0b2b2fc686", null ],
-    [ "HAL_InitializeAnalogInputPort", "group__hal__analoginput.html#ga85d82d41867502933afe21b16b9f9fe2", null ],
+    [ "HAL_InitializeAnalogInputPort", "group__hal__analoginput.html#ga97f303940a243beae1f5ee3df8793b8b", null ],
     [ "HAL_SetAnalogAverageBits", "group__hal__analoginput.html#ga34d0a68a34c9fcc696d96b1102c7b3f8", null ],
     [ "HAL_SetAnalogInputSimDevice", "group__hal__analoginput.html#gae63cb9ebd83360df0c180c8b46f48342", null ],
     [ "HAL_SetAnalogOversampleBits", "group__hal__analoginput.html#ga0f6a90fde07eda6f64d27edff7e6746a", null ],

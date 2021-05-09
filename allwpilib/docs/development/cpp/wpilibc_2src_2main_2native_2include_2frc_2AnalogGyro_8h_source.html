@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.3.1-8-gba08baa</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-37-g3cc2da3</span>
    </div>
   </td>
  </tr>
@@ -103,7 +103,7 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;hal/Types.h&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;frc/GyroBase.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;frc/interfaces/Gyro.h&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;frc/smartdashboard/Sendable.h&quot;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;frc/smartdashboard/SendableHelper.h&quot;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
@@ -111,62 +111,67 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">class </span>AnalogInput;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogGyro.html">   32</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1AnalogGyro.html">AnalogGyro</a> : <span class="keyword">public</span> <a class="code" href="classfrc_1_1GyroBase.html">GyroBase</a> {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keyword">static</span> constexpr <span class="keywordtype">int</span> kOversampleBits = 10;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keyword">static</span> constexpr <span class="keywordtype">int</span> kAverageBits = 0;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">static</span> constexpr <span class="keywordtype">double</span> kSamplesPerSecond = 50.0;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keyword">static</span> constexpr <span class="keywordtype">double</span> kCalibrationSampleTime = 5.0;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">static</span> constexpr <span class="keywordtype">double</span> kDefaultVoltsPerDegreePerSecond = 0.007;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogGyro.html#a4a6cd791f9cdcefaeccf900b5db0a77d">   46</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc_1_1AnalogGyro.html#a4a6cd791f9cdcefaeccf900b5db0a77d">AnalogGyro</a>(<span class="keywordtype">int</span> channel);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogGyro.html#a312dc00ee38cc067025fd26b0d1aece0">   60</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc_1_1AnalogGyro.html#a312dc00ee38cc067025fd26b0d1aece0">AnalogGyro</a>(<a class="code" href="classfrc_1_1AnalogInput.html">AnalogInput</a>* channel);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogGyro.html#a443576cfaed61b10f424eb64079ed395">   72</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc_1_1AnalogGyro.html#a443576cfaed61b10f424eb64079ed395">AnalogGyro</a>(std::shared_ptr&lt;AnalogInput&gt; channel);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogGyro.html#a914a753fd3f376cdefeee86ad6f74aaf">   84</a></span>&#160;  <a class="code" href="classfrc_1_1AnalogGyro.html#a914a753fd3f376cdefeee86ad6f74aaf">AnalogGyro</a>(<span class="keywordtype">int</span> channel, <span class="keywordtype">int</span> center, <span class="keywordtype">double</span> offset);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogGyro.html#a438ae8c9fa43e614de079eddf1a93b90">  100</a></span>&#160;  <a class="code" href="classfrc_1_1AnalogGyro.html#a438ae8c9fa43e614de079eddf1a93b90">AnalogGyro</a>(std::shared_ptr&lt;AnalogInput&gt; channel, <span class="keywordtype">int</span> center, <span class="keywordtype">double</span> offset);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  ~<a class="code" href="classfrc_1_1AnalogGyro.html">AnalogGyro</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogGyro.html">   32</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1AnalogGyro.html">AnalogGyro</a> : <span class="keyword">public</span> <a class="code" href="classfrc_1_1Gyro.html">Gyro</a>,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                   <span class="keyword">public</span> <a class="code" href="classfrc_1_1Sendable.html">Sendable</a>,</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                   <span class="keyword">public</span> <a class="code" href="classfrc_1_1SendableHelper.html">SendableHelper</a>&lt;AnalogGyro&gt; {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">static</span> constexpr <span class="keywordtype">int</span> kOversampleBits = 10;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keyword">static</span> constexpr <span class="keywordtype">int</span> kAverageBits = 0;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">static</span> constexpr <span class="keywordtype">double</span> kSamplesPerSecond = 50.0;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">static</span> constexpr <span class="keywordtype">double</span> kCalibrationSampleTime = 5.0;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">static</span> constexpr <span class="keywordtype">double</span> kDefaultVoltsPerDegreePerSecond = 0.007;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogGyro.html#a4a6cd791f9cdcefaeccf900b5db0a77d">   48</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc_1_1AnalogGyro.html#a4a6cd791f9cdcefaeccf900b5db0a77d">AnalogGyro</a>(<span class="keywordtype">int</span> channel);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogGyro.html#a312dc00ee38cc067025fd26b0d1aece0">   62</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc_1_1AnalogGyro.html#a312dc00ee38cc067025fd26b0d1aece0">AnalogGyro</a>(<a class="code" href="classfrc_1_1AnalogInput.html">AnalogInput</a>* channel);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogGyro.html#a443576cfaed61b10f424eb64079ed395">   74</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc_1_1AnalogGyro.html#a443576cfaed61b10f424eb64079ed395">AnalogGyro</a>(std::shared_ptr&lt;AnalogInput&gt; channel);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogGyro.html#a914a753fd3f376cdefeee86ad6f74aaf">   86</a></span>&#160;  <a class="code" href="classfrc_1_1AnalogGyro.html#a914a753fd3f376cdefeee86ad6f74aaf">AnalogGyro</a>(<span class="keywordtype">int</span> channel, <span class="keywordtype">int</span> center, <span class="keywordtype">double</span> offset);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogGyro.html#a438ae8c9fa43e614de079eddf1a93b90">  102</a></span>&#160;  <a class="code" href="classfrc_1_1AnalogGyro.html#a438ae8c9fa43e614de079eddf1a93b90">AnalogGyro</a>(std::shared_ptr&lt;AnalogInput&gt; channel, <span class="keywordtype">int</span> center, <span class="keywordtype">double</span> offset);</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <a class="code" href="classfrc_1_1AnalogGyro.html#a4a6cd791f9cdcefaeccf900b5db0a77d">AnalogGyro</a>(<a class="code" href="classfrc_1_1AnalogGyro.html">AnalogGyro</a>&amp;&amp; rhs) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <a class="code" href="classfrc_1_1AnalogGyro.html">AnalogGyro</a>&amp; operator=(<a class="code" href="classfrc_1_1AnalogGyro.html">AnalogGyro</a>&amp;&amp; rhs) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
-<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogGyro.html#aa38b3651e2e5e3dd6c564ba5f90f869b">  119</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classfrc_1_1AnalogGyro.html#aa38b3651e2e5e3dd6c564ba5f90f869b">GetAngle</a>() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
-<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogGyro.html#ac4b9f9b77003b05b4445ea0468aa414d">  128</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classfrc_1_1AnalogGyro.html#ac4b9f9b77003b05b4445ea0468aa414d">GetRate</a>() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
-<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogGyro.html#aab735e4f19d6486e9d40940641db29c3">  136</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classfrc_1_1AnalogGyro.html#aab735e4f19d6486e9d40940641db29c3">GetCenter</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
-<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogGyro.html#a1bd6aa565101a820911a976a6501a244">  144</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="classfrc_1_1AnalogGyro.html#a1bd6aa565101a820911a976a6501a244">GetOffset</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
-<div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogGyro.html#ad159eb656c8dde6546dc3014ba3372bc">  155</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1AnalogGyro.html#ad159eb656c8dde6546dc3014ba3372bc">SetSensitivity</a>(<span class="keywordtype">double</span> voltsPerDegreePerSecond);</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
-<div class="line"><a name="l00166"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogGyro.html#a0a99f91859b549a7166723640fe251ca">  166</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1AnalogGyro.html#a0a99f91859b549a7166723640fe251ca">SetDeadband</a>(<span class="keywordtype">double</span> volts);</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
-<div class="line"><a name="l00175"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogGyro.html#a460c398825749aed4f2a50f21385e07e">  175</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1AnalogGyro.html#a460c398825749aed4f2a50f21385e07e">Reset</a>() final;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
-<div class="line"><a name="l00182"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogGyro.html#ac831c32add66237a3d2a4b51810d1cd5">  182</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1AnalogGyro.html#ac831c32add66237a3d2a4b51810d1cd5">InitGyro</a>();</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160; </div>
-<div class="line"><a name="l00184"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogGyro.html#a28a4b47effb06921fe8a98d5a9d4c303">  184</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1AnalogGyro.html#a28a4b47effb06921fe8a98d5a9d4c303">Calibrate</a>() final;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  ~<a class="code" href="classfrc_1_1AnalogGyro.html">AnalogGyro</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <a class="code" href="classfrc_1_1AnalogGyro.html#a4a6cd791f9cdcefaeccf900b5db0a77d">AnalogGyro</a>(<a class="code" href="classfrc_1_1AnalogGyro.html">AnalogGyro</a>&amp;&amp; rhs) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <a class="code" href="classfrc_1_1AnalogGyro.html">AnalogGyro</a>&amp; operator=(<a class="code" href="classfrc_1_1AnalogGyro.html">AnalogGyro</a>&amp;&amp; rhs) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogGyro.html#aa38b3651e2e5e3dd6c564ba5f90f869b">  121</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classfrc_1_1AnalogGyro.html#aa38b3651e2e5e3dd6c564ba5f90f869b">GetAngle</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogGyro.html#ac4b9f9b77003b05b4445ea0468aa414d">  130</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classfrc_1_1AnalogGyro.html#ac4b9f9b77003b05b4445ea0468aa414d">GetRate</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+<div class="line"><a name="l00138"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogGyro.html#aab735e4f19d6486e9d40940641db29c3">  138</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="classfrc_1_1AnalogGyro.html#aab735e4f19d6486e9d40940641db29c3">GetCenter</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
+<div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogGyro.html#a1bd6aa565101a820911a976a6501a244">  146</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="classfrc_1_1AnalogGyro.html#a1bd6aa565101a820911a976a6501a244">GetOffset</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
+<div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogGyro.html#ad159eb656c8dde6546dc3014ba3372bc">  157</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1AnalogGyro.html#ad159eb656c8dde6546dc3014ba3372bc">SetSensitivity</a>(<span class="keywordtype">double</span> voltsPerDegreePerSecond);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
+<div class="line"><a name="l00168"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogGyro.html#a0a99f91859b549a7166723640fe251ca">  168</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1AnalogGyro.html#a0a99f91859b549a7166723640fe251ca">SetDeadband</a>(<span class="keywordtype">double</span> volts);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
+<div class="line"><a name="l00177"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogGyro.html#a460c398825749aed4f2a50f21385e07e">  177</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1AnalogGyro.html#a460c398825749aed4f2a50f21385e07e">Reset</a>() final;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
+<div class="line"><a name="l00184"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogGyro.html#ac831c32add66237a3d2a4b51810d1cd5">  184</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1AnalogGyro.html#ac831c32add66237a3d2a4b51810d1cd5">InitGyro</a>();</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
-<div class="line"><a name="l00191"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogGyro.html#afcf119ca61987f79043a5146403a9bb4">  191</a></span>&#160;  std::shared_ptr&lt;<a class="code" href="classfrc_1_1AnalogInput.html">AnalogInput</a>&gt; <a class="code" href="classfrc_1_1AnalogGyro.html#afcf119ca61987f79043a5146403a9bb4">GetAnalogInput</a>() const;</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; protected:</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  std::shared_ptr&lt;<a class="code" href="classfrc_1_1AnalogInput.html">AnalogInput</a>&gt; m_analog;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; private:</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  <a class="code" href="namespacehal.html">hal</a>::Handle&lt;HAL_GyroHandle&gt; m_gyroHandle;</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;};</div>
+<div class="line"><a name="l00186"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogGyro.html#a28a4b47effb06921fe8a98d5a9d4c303">  186</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1AnalogGyro.html#a28a4b47effb06921fe8a98d5a9d4c303">Calibrate</a>() final;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
+<div class="line"><a name="l00193"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogGyro.html#afcf119ca61987f79043a5146403a9bb4">  193</a></span>&#160;  std::shared_ptr&lt;<a class="code" href="classfrc_1_1AnalogInput.html">AnalogInput</a>&gt; <a class="code" href="classfrc_1_1AnalogGyro.html#afcf119ca61987f79043a5146403a9bb4">GetAnalogInput</a>() const;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
+<div class="line"><a name="l00195"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogGyro.html#ab634e4e6555fc3d8eb65e039f5733a5f">  195</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1AnalogGyro.html#ab634e4e6555fc3d8eb65e039f5733a5f">InitSendable</a>(<a class="code" href="classfrc_1_1SendableBuilder.html">SendableBuilder</a>&amp; builder) override;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; </div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; protected:</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  std::shared_ptr&lt;<a class="code" href="classfrc_1_1AnalogInput.html">AnalogInput</a>&gt; m_analog;</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160; </div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; private:</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  <a class="code" href="namespacehal.html">hal</a>::Handle&lt;HAL_GyroHandle&gt; m_gyroHandle;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;};</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160; </div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;}  <span class="comment">// namespace frc</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassfrc_1_1AnalogGyro_html"><div class="ttname"><a href="classfrc_1_1AnalogGyro.html">frc::AnalogGyro</a></div><div class="ttdoc">Use a rate gyro to return the robots heading relative to a starting position.</div><div class="ttdef"><b>Definition:</b> AnalogGyro.h:32</div></div>
+<div class="ttc" id="aclassfrc_1_1AnalogGyro_html"><div class="ttname"><a href="classfrc_1_1AnalogGyro.html">frc::AnalogGyro</a></div><div class="ttdoc">Use a rate gyro to return the robots heading relative to a starting position.</div><div class="ttdef"><b>Definition:</b> AnalogGyro.h:34</div></div>
+<div class="ttc" id="aclassfrc_1_1Gyro_html"><div class="ttname"><a href="classfrc_1_1Gyro.html">frc::Gyro</a></div><div class="ttdoc">Interface for yaw rate gyros.</div><div class="ttdef"><b>Definition:</b> Gyro.h:16</div></div>
 <div class="ttc" id="aclassfrc_1_1AnalogGyro_html_aab735e4f19d6486e9d40940641db29c3"><div class="ttname"><a href="classfrc_1_1AnalogGyro.html#aab735e4f19d6486e9d40940641db29c3">frc::AnalogGyro::GetCenter</a></div><div class="ttdeci">virtual int GetCenter() const</div><div class="ttdoc">Return the gyro center value.</div></div>
-<div class="ttc" id="anamespacehal_html"><div class="ttname"><a href="namespacehal.html">hal</a></div><div class="ttdoc">WPILib Hardware Abstraction Layer (HAL) namespace.</div><div class="ttdef"><b>Definition:</b> UnsafeDIO.h:12</div></div>
+<div class="ttc" id="anamespacehal_html"><div class="ttname"><a href="namespacehal.html">hal</a></div><div class="ttdoc">WPILib Hardware Abstraction Layer (HAL) namespace.</div><div class="ttdef"><b>Definition:</b> fpga_clock.h:10</div></div>
 <div class="ttc" id="aclassfrc_1_1AnalogGyro_html_a460c398825749aed4f2a50f21385e07e"><div class="ttname"><a href="classfrc_1_1AnalogGyro.html#a460c398825749aed4f2a50f21385e07e">frc::AnalogGyro::Reset</a></div><div class="ttdeci">void Reset() final</div><div class="ttdoc">Reset the gyro.</div></div>
 <div class="ttc" id="aclassfrc_1_1AnalogGyro_html_afcf119ca61987f79043a5146403a9bb4"><div class="ttname"><a href="classfrc_1_1AnalogGyro.html#afcf119ca61987f79043a5146403a9bb4">frc::AnalogGyro::GetAnalogInput</a></div><div class="ttdeci">std::shared_ptr&lt; AnalogInput &gt; GetAnalogInput() const</div><div class="ttdoc">Gets the analog input for the gyro.</div></div>
 <div class="ttc" id="aclassfrc_1_1AnalogGyro_html_aa38b3651e2e5e3dd6c564ba5f90f869b"><div class="ttname"><a href="classfrc_1_1AnalogGyro.html#aa38b3651e2e5e3dd6c564ba5f90f869b">frc::AnalogGyro::GetAngle</a></div><div class="ttdeci">double GetAngle() const override</div><div class="ttdoc">Return the actual angle in degrees that the robot is currently facing.</div></div>
@@ -177,18 +182,21 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div class="ttc" id="aclassfrc_1_1AnalogGyro_html_ac4b9f9b77003b05b4445ea0468aa414d"><div class="ttname"><a href="classfrc_1_1AnalogGyro.html#ac4b9f9b77003b05b4445ea0468aa414d">frc::AnalogGyro::GetRate</a></div><div class="ttdeci">double GetRate() const override</div><div class="ttdoc">Return the rate of rotation of the gyro.</div></div>
 <div class="ttc" id="aclassfrc_1_1AnalogGyro_html_a312dc00ee38cc067025fd26b0d1aece0"><div class="ttname"><a href="classfrc_1_1AnalogGyro.html#a312dc00ee38cc067025fd26b0d1aece0">frc::AnalogGyro::AnalogGyro</a></div><div class="ttdeci">AnalogGyro(AnalogInput *channel)</div><div class="ttdoc">Gyro constructor with a precreated AnalogInput object.</div></div>
 <div class="ttc" id="aclassfrc_1_1AnalogGyro_html_a28a4b47effb06921fe8a98d5a9d4c303"><div class="ttname"><a href="classfrc_1_1AnalogGyro.html#a28a4b47effb06921fe8a98d5a9d4c303">frc::AnalogGyro::Calibrate</a></div><div class="ttdeci">void Calibrate() final</div><div class="ttdoc">Calibrate the gyro.</div></div>
+<div class="ttc" id="aclassfrc_1_1Sendable_html"><div class="ttname"><a href="classfrc_1_1Sendable.html">frc::Sendable</a></div><div class="ttdoc">Interface for Sendable objects.</div><div class="ttdef"><b>Definition:</b> Sendable.h:14</div></div>
 <div class="ttc" id="aclassfrc_1_1AnalogGyro_html_a914a753fd3f376cdefeee86ad6f74aaf"><div class="ttname"><a href="classfrc_1_1AnalogGyro.html#a914a753fd3f376cdefeee86ad6f74aaf">frc::AnalogGyro::AnalogGyro</a></div><div class="ttdeci">AnalogGyro(int channel, int center, double offset)</div><div class="ttdoc">Gyro constructor using the Analog Input channel number with parameters for presetting the center and ...</div></div>
-<div class="ttc" id="aclassfrc_1_1AnalogInput_html"><div class="ttname"><a href="classfrc_1_1AnalogInput.html">frc::AnalogInput</a></div><div class="ttdoc">Analog input class.</div><div class="ttdef"><b>Definition:</b> AnalogInput.h:37</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> VisionRunner.inc:9</div></div>
+<div class="ttc" id="aclassfrc_1_1AnalogInput_html"><div class="ttname"><a href="classfrc_1_1AnalogInput.html">frc::AnalogInput</a></div><div class="ttdoc">Analog input class.</div><div class="ttdef"><b>Definition:</b> AnalogInput.h:32</div></div>
+<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> CameraServer.h:18</div></div>
 <div class="ttc" id="aclassfrc_1_1AnalogGyro_html_a443576cfaed61b10f424eb64079ed395"><div class="ttname"><a href="classfrc_1_1AnalogGyro.html#a443576cfaed61b10f424eb64079ed395">frc::AnalogGyro::AnalogGyro</a></div><div class="ttdeci">AnalogGyro(std::shared_ptr&lt; AnalogInput &gt; channel)</div><div class="ttdoc">Gyro constructor with a precreated AnalogInput object.</div></div>
 <div class="ttc" id="aclassfrc_1_1AnalogGyro_html_a438ae8c9fa43e614de079eddf1a93b90"><div class="ttname"><a href="classfrc_1_1AnalogGyro.html#a438ae8c9fa43e614de079eddf1a93b90">frc::AnalogGyro::AnalogGyro</a></div><div class="ttdeci">AnalogGyro(std::shared_ptr&lt; AnalogInput &gt; channel, int center, double offset)</div><div class="ttdoc">Gyro constructor with a precreated AnalogInput object and calibrated parameters.</div></div>
-<div class="ttc" id="aclassfrc_1_1GyroBase_html"><div class="ttname"><a href="classfrc_1_1GyroBase.html">frc::GyroBase</a></div><div class="ttdoc">GyroBase is the common base class for Gyro implementations such as AnalogGyro.</div><div class="ttdef"><b>Definition:</b> GyroBase.h:23</div></div>
+<div class="ttc" id="aclassfrc_1_1SendableHelper_html"><div class="ttname"><a href="classfrc_1_1SendableHelper.html">frc::SendableHelper</a></div><div class="ttdoc">A helper class for use with objects that add themselves to SendableRegistry.</div><div class="ttdef"><b>Definition:</b> SendableHelper.h:25</div></div>
+<div class="ttc" id="aclassfrc_1_1AnalogGyro_html_ab634e4e6555fc3d8eb65e039f5733a5f"><div class="ttname"><a href="classfrc_1_1AnalogGyro.html#ab634e4e6555fc3d8eb65e039f5733a5f">frc::AnalogGyro::InitSendable</a></div><div class="ttdeci">void InitSendable(SendableBuilder &amp;builder) override</div><div class="ttdoc">Initializes this Sendable object.</div></div>
+<div class="ttc" id="aclassfrc_1_1SendableBuilder_html"><div class="ttname"><a href="classfrc_1_1SendableBuilder.html">frc::SendableBuilder</a></div><div class="ttdef"><b>Definition:</b> SendableBuilder.h:21</div></div>
 <div class="ttc" id="aclassfrc_1_1AnalogGyro_html_ad159eb656c8dde6546dc3014ba3372bc"><div class="ttname"><a href="classfrc_1_1AnalogGyro.html#ad159eb656c8dde6546dc3014ba3372bc">frc::AnalogGyro::SetSensitivity</a></div><div class="ttdeci">void SetSensitivity(double voltsPerDegreePerSecond)</div><div class="ttdoc">Set the gyro sensitivity.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><b>AnalogGyro.h</b></li>
-    <li class="footer">Generated on Wed May 5 2021 16:19:09 for WPILibC++ by
+    <li class="footer">Generated on Sun May 9 2021 21:19:00 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

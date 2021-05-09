@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.3.1-8-gba08baa</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-37-g3cc2da3</span>
    </div>
   </td>
  </tr>
@@ -133,10 +133,10 @@ $(document).ready(function(){initNavTree('SendableChooser_8h_source.html',''); i
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1SendableChooser.html#a4acb844523097015137ece87154efcdb">SetDefaultOption</a>(<a class="code" href="classwpi_1_1StringRef.html">wpi::StringRef</a> name, T <span class="keywordtype">object</span>);</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  WPI_DEPRECATED(<span class="stringliteral">&quot;use AddOption() instead&quot;</span>)</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <a class="code" href="namespacefrc.html#a3e1e63234243bd1c57fd61d0c7ea88ec">WPI_DEPRECATED</a>(<span class="stringliteral">&quot;use AddOption() instead&quot;</span>)</div>
 <div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="classfrc_1_1SendableChooser.html#a3b36357f4b1e594dc32e7557ae5f6afc">   84</a></span>&#160;  void <a class="code" href="classfrc_1_1SendableChooser.html#a3b36357f4b1e594dc32e7557ae5f6afc">AddObject</a>(wpi::StringRef name, T <span class="keywordtype">object</span>) { <a class="code" href="classfrc_1_1SendableChooser.html#a854e0205c9edb809a1f1e96bbfd7fd0f">AddOption</a>(name, <span class="keywordtype">object</span>); }</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  WPI_DEPRECATED(<span class="stringliteral">&quot;use SetDefaultOption() instead&quot;</span>)</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <a class="code" href="namespacefrc.html#a3e1e63234243bd1c57fd61d0c7ea88ec">WPI_DEPRECATED</a>(<span class="stringliteral">&quot;use SetDefaultOption() instead&quot;</span>)</div>
 <div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="classfrc_1_1SendableChooser.html#acf5caa625b9508b8561cf507a393e975">   98</a></span>&#160;  void <a class="code" href="classfrc_1_1SendableChooser.html#acf5caa625b9508b8561cf507a393e975">AddDefault</a>(wpi::StringRef name, T <span class="keywordtype">object</span>) {</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <a class="code" href="classfrc_1_1SendableChooser.html#a4acb844523097015137ece87154efcdb">SetDefaultOption</a>(name, <span class="keywordtype">object</span>);</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  }</div>
@@ -159,15 +159,16 @@ $(document).ready(function(){initNavTree('SendableChooser_8h_source.html',''); i
 <div class="ttc" id="aclasswpi_1_1StringRef_html"><div class="ttname"><a href="classwpi_1_1StringRef.html">wpi::StringRef</a></div><div class="ttdoc">StringRef - Represent a constant reference to a string, i.e.</div><div class="ttdef"><b>Definition:</b> StringRef.h:49</div></div>
 <div class="ttc" id="aclassfrc_1_1SendableChooserBase_html"><div class="ttname"><a href="classfrc_1_1SendableChooserBase.html">frc::SendableChooserBase</a></div><div class="ttdoc">This class is a non-template base class for SendableChooser.</div><div class="ttdef"><b>Definition:</b> SendableChooserBase.h:26</div></div>
 <div class="ttc" id="aclasswpi_1_1StringMap_html"><div class="ttname"><a href="classwpi_1_1StringMap.html">wpi::StringMap&lt; T &gt;</a></div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> VisionRunner.inc:9</div></div>
+<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> CameraServer.h:18</div></div>
 <div class="ttc" id="aclassfrc_1_1SendableChooser_html_a80e334966831bfc40c0498e256dbf739"><div class="ttname"><a href="classfrc_1_1SendableChooser.html#a80e334966831bfc40c0498e256dbf739">frc::SendableChooser::GetSelected</a></div><div class="ttdeci">auto GetSelected() -&gt; decltype(_unwrap_smart_ptr(m_choices[&quot;&quot;]))</div><div class="ttdoc">Returns a copy of the selected option (a raw pointer U* if T = std::unique_ptr&lt;U&gt; or a std::weak_ptr&lt;...</div><div class="ttdef"><b>Definition:</b> SendableChooser.inc:31</div></div>
+<div class="ttc" id="anamespacefrc_html_a3e1e63234243bd1c57fd61d0c7ea88ec"><div class="ttname"><a href="namespacefrc.html#a3e1e63234243bd1c57fd61d0c7ea88ec">frc::WPI_DEPRECATED</a></div><div class="ttdeci">class WPI_DEPRECATED(&quot;use MotorController&quot;) SpeedController</div><div class="ttdoc">Interface for speed controlling devices.</div><div class="ttdef"><b>Definition:</b> SpeedController.h:15</div></div>
 <div class="ttc" id="aclassfrc_1_1SendableChooser_html_a854e0205c9edb809a1f1e96bbfd7fd0f"><div class="ttname"><a href="classfrc_1_1SendableChooser.html#a854e0205c9edb809a1f1e96bbfd7fd0f">frc::SendableChooser::AddOption</a></div><div class="ttdeci">void AddOption(wpi::StringRef name, T object)</div><div class="ttdoc">Adds the given object to the list of options.</div><div class="ttdef"><b>Definition:</b> SendableChooser.inc:20</div></div>
 <div class="ttc" id="aclassfrc_1_1SendableBuilder_html"><div class="ttname"><a href="classfrc_1_1SendableBuilder.html">frc::SendableBuilder</a></div><div class="ttdef"><b>Definition:</b> SendableBuilder.h:21</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_b02f085c5688c41df73c48b2d64de380.html">smartdashboard</a></li><li class="navelem"><b>SendableChooser.h</b></li>
-    <li class="footer">Generated on Wed May 5 2021 16:19:09 for WPILibC++ by
+    <li class="footer">Generated on Sun May 9 2021 21:19:01 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

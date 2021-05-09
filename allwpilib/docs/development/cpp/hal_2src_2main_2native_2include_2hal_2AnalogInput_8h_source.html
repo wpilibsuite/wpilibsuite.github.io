@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.3.1-8-gba08baa</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-37-g3cc2da3</span>
    </div>
   </td>
  </tr>
@@ -107,67 +107,68 @@ $(document).ready(function(){initNavTree('hal_2src_2main_2native_2include_2hal_2
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="group__hal__analoginput.html#ga85d82d41867502933afe21b16b9f9fe2">   27</a></span>&#160;HAL_AnalogInputHandle <a class="code" href="group__hal__analoginput.html#ga85d82d41867502933afe21b16b9f9fe2">HAL_InitializeAnalogInputPort</a>(HAL_PortHandle portHandle,</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                                                    int32_t* status);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="group__hal__analoginput.html#gae9946d95a93e01a5a58b6eb5e693cefd">   35</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__analoginput.html#gae9946d95a93e01a5a58b6eb5e693cefd">HAL_FreeAnalogInputPort</a>(HAL_AnalogInputHandle analogPortHandle);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="group__hal__analoginput.html#gaaf7400771724db2df58fcfda8b6e42f4">   43</a></span>&#160;HAL_Bool <a class="code" href="group__hal__analoginput.html#gaaf7400771724db2df58fcfda8b6e42f4">HAL_CheckAnalogModule</a>(int32_t module);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="group__hal__analoginput.html#gaaf69cd25b2ee701213e60ad2f419beb7">   53</a></span>&#160;HAL_Bool <a class="code" href="group__hal__analoginput.html#gaaf69cd25b2ee701213e60ad2f419beb7">HAL_CheckAnalogInputChannel</a>(int32_t channel);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="group__hal__analoginput.html#gae63cb9ebd83360df0c180c8b46f48342">   61</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__analoginput.html#gae63cb9ebd83360df0c180c8b46f48342">HAL_SetAnalogInputSimDevice</a>(HAL_AnalogInputHandle handle,</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                                 HAL_SimDeviceHandle device);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="group__hal__analoginput.html#ga929c30e6d64643e3a951573ae7c3bf9f">   71</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__analoginput.html#ga929c30e6d64643e3a951573ae7c3bf9f">HAL_SetAnalogSampleRate</a>(<span class="keywordtype">double</span> samplesPerSecond, int32_t* status);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="group__hal__analoginput.html#gaf1fd63e2870857b1138bfd360fbfa637">   81</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="group__hal__analoginput.html#gaf1fd63e2870857b1138bfd360fbfa637">HAL_GetAnalogSampleRate</a>(int32_t* status);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="group__hal__analoginput.html#ga34d0a68a34c9fcc696d96b1102c7b3f8">   93</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__analoginput.html#ga34d0a68a34c9fcc696d96b1102c7b3f8">HAL_SetAnalogAverageBits</a>(HAL_AnalogInputHandle analogPortHandle,</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                              int32_t bits, int32_t* status);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="group__hal__analoginput.html#ga02f152b2f03f34e45343791b307d0452">  105</a></span>&#160;int32_t <a class="code" href="group__hal__analoginput.html#ga02f152b2f03f34e45343791b307d0452">HAL_GetAnalogAverageBits</a>(HAL_AnalogInputHandle analogPortHandle,</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                                 int32_t* status);</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="group__hal__analoginput.html#ga0f6a90fde07eda6f64d27edff7e6746a">  119</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__analoginput.html#ga0f6a90fde07eda6f64d27edff7e6746a">HAL_SetAnalogOversampleBits</a>(HAL_AnalogInputHandle analogPortHandle,</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                                 int32_t bits, int32_t* status);</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
-<div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="group__hal__analoginput.html#gae96480fd466fe9ee241f4b7055d7a5b8">  132</a></span>&#160;int32_t <a class="code" href="group__hal__analoginput.html#gae96480fd466fe9ee241f4b7055d7a5b8">HAL_GetAnalogOversampleBits</a>(HAL_AnalogInputHandle analogPortHandle,</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                                    int32_t* status);</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
-<div class="line"><a name="l00145"></a><span class="lineno"><a class="line" href="group__hal__analoginput.html#ga98bbaca35b525e54978d268d7f68fb75">  145</a></span>&#160;int32_t <a class="code" href="group__hal__analoginput.html#ga98bbaca35b525e54978d268d7f68fb75">HAL_GetAnalogValue</a>(HAL_AnalogInputHandle analogPortHandle,</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                           int32_t* status);</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
-<div class="line"><a name="l00162"></a><span class="lineno"><a class="line" href="group__hal__analoginput.html#ga6b4201c92d3b19b93a4487d6999217eb">  162</a></span>&#160;int32_t <a class="code" href="group__hal__analoginput.html#ga6b4201c92d3b19b93a4487d6999217eb">HAL_GetAnalogAverageValue</a>(HAL_AnalogInputHandle analogPortHandle,</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                                  int32_t* status);</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
-<div class="line"><a name="l00177"></a><span class="lineno"><a class="line" href="group__hal__analoginput.html#gab5ecc1bef9fd36fa20043d0b2b2fc686">  177</a></span>&#160;int32_t <a class="code" href="group__hal__analoginput.html#gab5ecc1bef9fd36fa20043d0b2b2fc686">HAL_GetAnalogVoltsToValue</a>(HAL_AnalogInputHandle analogPortHandle,</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                                  <span class="keywordtype">double</span> voltage, int32_t* status);</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160; </div>
-<div class="line"><a name="l00189"></a><span class="lineno"><a class="line" href="group__hal__analoginput.html#ga6f0b6f5e03b9a76e9d654d1d04d524d0">  189</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="group__hal__analoginput.html#ga6f0b6f5e03b9a76e9d654d1d04d524d0">HAL_GetAnalogVoltage</a>(HAL_AnalogInputHandle analogPortHandle,</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                            int32_t* status);</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
-<div class="line"><a name="l00205"></a><span class="lineno"><a class="line" href="group__hal__analoginput.html#ga859f6b40ac680e70ae338ce8be093e5d">  205</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="group__hal__analoginput.html#ga859f6b40ac680e70ae338ce8be093e5d">HAL_GetAnalogAverageVoltage</a>(HAL_AnalogInputHandle analogPortHandle,</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;                                   int32_t* status);</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
-<div class="line"><a name="l00218"></a><span class="lineno"><a class="line" href="group__hal__analoginput.html#gadab9f087da0b952020fa1712a4096f0d">  218</a></span>&#160;int32_t <a class="code" href="group__hal__analoginput.html#gadab9f087da0b952020fa1712a4096f0d">HAL_GetAnalogLSBWeight</a>(HAL_AnalogInputHandle analogPortHandle,</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;                               int32_t* status);</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160; </div>
-<div class="line"><a name="l00231"></a><span class="lineno"><a class="line" href="group__hal__analoginput.html#ga6193461057b56f1e2273584221464418">  231</a></span>&#160;int32_t <a class="code" href="group__hal__analoginput.html#ga6193461057b56f1e2273584221464418">HAL_GetAnalogOffset</a>(HAL_AnalogInputHandle analogPortHandle,</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                            int32_t* status);</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160; </div>
-<div class="line"><a name="l00241"></a><span class="lineno"><a class="line" href="group__hal__analoginput.html#ga3217a276a5295f6f9d13fa205edff47b">  241</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="group__hal__analoginput.html#ga3217a276a5295f6f9d13fa205edff47b">HAL_GetAnalogValueToVolts</a>(HAL_AnalogInputHandle analogPortHandle,</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;                                 int32_t rawValue, int32_t* status);</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;}  <span class="comment">// extern &quot;C&quot;</span></div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="group__hal__analoginput.html#ga97f303940a243beae1f5ee3df8793b8b">   29</a></span>&#160;HAL_AnalogInputHandle <a class="code" href="group__hal__analoginput.html#ga97f303940a243beae1f5ee3df8793b8b">HAL_InitializeAnalogInputPort</a>(</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    HAL_PortHandle portHandle, <span class="keyword">const</span> <span class="keywordtype">char</span>* allocationLocation, int32_t* status);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="group__hal__analoginput.html#gae9946d95a93e01a5a58b6eb5e693cefd">   37</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__analoginput.html#gae9946d95a93e01a5a58b6eb5e693cefd">HAL_FreeAnalogInputPort</a>(HAL_AnalogInputHandle analogPortHandle);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="group__hal__analoginput.html#gaaf7400771724db2df58fcfda8b6e42f4">   45</a></span>&#160;HAL_Bool <a class="code" href="group__hal__analoginput.html#gaaf7400771724db2df58fcfda8b6e42f4">HAL_CheckAnalogModule</a>(int32_t module);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="group__hal__analoginput.html#gaaf69cd25b2ee701213e60ad2f419beb7">   55</a></span>&#160;HAL_Bool <a class="code" href="group__hal__analoginput.html#gaaf69cd25b2ee701213e60ad2f419beb7">HAL_CheckAnalogInputChannel</a>(int32_t channel);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="group__hal__analoginput.html#gae63cb9ebd83360df0c180c8b46f48342">   63</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__analoginput.html#gae63cb9ebd83360df0c180c8b46f48342">HAL_SetAnalogInputSimDevice</a>(HAL_AnalogInputHandle handle,</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                                 HAL_SimDeviceHandle device);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="group__hal__analoginput.html#ga929c30e6d64643e3a951573ae7c3bf9f">   73</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__analoginput.html#ga929c30e6d64643e3a951573ae7c3bf9f">HAL_SetAnalogSampleRate</a>(<span class="keywordtype">double</span> samplesPerSecond, int32_t* status);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="group__hal__analoginput.html#gaf1fd63e2870857b1138bfd360fbfa637">   83</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="group__hal__analoginput.html#gaf1fd63e2870857b1138bfd360fbfa637">HAL_GetAnalogSampleRate</a>(int32_t* status);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="group__hal__analoginput.html#ga34d0a68a34c9fcc696d96b1102c7b3f8">   95</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__analoginput.html#ga34d0a68a34c9fcc696d96b1102c7b3f8">HAL_SetAnalogAverageBits</a>(HAL_AnalogInputHandle analogPortHandle,</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                              int32_t bits, int32_t* status);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="group__hal__analoginput.html#ga02f152b2f03f34e45343791b307d0452">  107</a></span>&#160;int32_t <a class="code" href="group__hal__analoginput.html#ga02f152b2f03f34e45343791b307d0452">HAL_GetAnalogAverageBits</a>(HAL_AnalogInputHandle analogPortHandle,</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                                 int32_t* status);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="group__hal__analoginput.html#ga0f6a90fde07eda6f64d27edff7e6746a">  121</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__analoginput.html#ga0f6a90fde07eda6f64d27edff7e6746a">HAL_SetAnalogOversampleBits</a>(HAL_AnalogInputHandle analogPortHandle,</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                                 int32_t bits, int32_t* status);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="group__hal__analoginput.html#gae96480fd466fe9ee241f4b7055d7a5b8">  134</a></span>&#160;int32_t <a class="code" href="group__hal__analoginput.html#gae96480fd466fe9ee241f4b7055d7a5b8">HAL_GetAnalogOversampleBits</a>(HAL_AnalogInputHandle analogPortHandle,</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                                    int32_t* status);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
+<div class="line"><a name="l00147"></a><span class="lineno"><a class="line" href="group__hal__analoginput.html#ga98bbaca35b525e54978d268d7f68fb75">  147</a></span>&#160;int32_t <a class="code" href="group__hal__analoginput.html#ga98bbaca35b525e54978d268d7f68fb75">HAL_GetAnalogValue</a>(HAL_AnalogInputHandle analogPortHandle,</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                           int32_t* status);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
+<div class="line"><a name="l00164"></a><span class="lineno"><a class="line" href="group__hal__analoginput.html#ga6b4201c92d3b19b93a4487d6999217eb">  164</a></span>&#160;int32_t <a class="code" href="group__hal__analoginput.html#ga6b4201c92d3b19b93a4487d6999217eb">HAL_GetAnalogAverageValue</a>(HAL_AnalogInputHandle analogPortHandle,</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                                  int32_t* status);</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
+<div class="line"><a name="l00179"></a><span class="lineno"><a class="line" href="group__hal__analoginput.html#gab5ecc1bef9fd36fa20043d0b2b2fc686">  179</a></span>&#160;int32_t <a class="code" href="group__hal__analoginput.html#gab5ecc1bef9fd36fa20043d0b2b2fc686">HAL_GetAnalogVoltsToValue</a>(HAL_AnalogInputHandle analogPortHandle,</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                                  <span class="keywordtype">double</span> voltage, int32_t* status);</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160; </div>
+<div class="line"><a name="l00191"></a><span class="lineno"><a class="line" href="group__hal__analoginput.html#ga6f0b6f5e03b9a76e9d654d1d04d524d0">  191</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="group__hal__analoginput.html#ga6f0b6f5e03b9a76e9d654d1d04d524d0">HAL_GetAnalogVoltage</a>(HAL_AnalogInputHandle analogPortHandle,</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;                            int32_t* status);</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
+<div class="line"><a name="l00207"></a><span class="lineno"><a class="line" href="group__hal__analoginput.html#ga859f6b40ac680e70ae338ce8be093e5d">  207</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="group__hal__analoginput.html#ga859f6b40ac680e70ae338ce8be093e5d">HAL_GetAnalogAverageVoltage</a>(HAL_AnalogInputHandle analogPortHandle,</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                                   int32_t* status);</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160; </div>
+<div class="line"><a name="l00220"></a><span class="lineno"><a class="line" href="group__hal__analoginput.html#gadab9f087da0b952020fa1712a4096f0d">  220</a></span>&#160;int32_t <a class="code" href="group__hal__analoginput.html#gadab9f087da0b952020fa1712a4096f0d">HAL_GetAnalogLSBWeight</a>(HAL_AnalogInputHandle analogPortHandle,</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                               int32_t* status);</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160; </div>
+<div class="line"><a name="l00233"></a><span class="lineno"><a class="line" href="group__hal__analoginput.html#ga6193461057b56f1e2273584221464418">  233</a></span>&#160;int32_t <a class="code" href="group__hal__analoginput.html#ga6193461057b56f1e2273584221464418">HAL_GetAnalogOffset</a>(HAL_AnalogInputHandle analogPortHandle,</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                            int32_t* status);</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160; </div>
+<div class="line"><a name="l00243"></a><span class="lineno"><a class="line" href="group__hal__analoginput.html#ga3217a276a5295f6f9d13fa205edff47b">  243</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="group__hal__analoginput.html#ga3217a276a5295f6f9d13fa205edff47b">HAL_GetAnalogValueToVolts</a>(HAL_AnalogInputHandle analogPortHandle,</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                                 int32_t rawValue, int32_t* status);</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;}  <span class="comment">// extern &quot;C&quot;</span></div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="agroup__hal__analoginput_html_ga929c30e6d64643e3a951573ae7c3bf9f"><div class="ttname"><a href="group__hal__analoginput.html#ga929c30e6d64643e3a951573ae7c3bf9f">HAL_SetAnalogSampleRate</a></div><div class="ttdeci">void HAL_SetAnalogSampleRate(double samplesPerSecond, int32_t *status)</div><div class="ttdoc">Sets the sample rate.</div></div>
 <div class="ttc" id="agroup__hal__analoginput_html_ga6b4201c92d3b19b93a4487d6999217eb"><div class="ttname"><a href="group__hal__analoginput.html#ga6b4201c92d3b19b93a4487d6999217eb">HAL_GetAnalogAverageValue</a></div><div class="ttdeci">int32_t HAL_GetAnalogAverageValue(HAL_AnalogInputHandle analogPortHandle, int32_t *status)</div><div class="ttdoc">Gets a sample from the output of the oversample and average engine for the channel.</div></div>
 <div class="ttc" id="agroup__hal__analoginput_html_gaaf7400771724db2df58fcfda8b6e42f4"><div class="ttname"><a href="group__hal__analoginput.html#gaaf7400771724db2df58fcfda8b6e42f4">HAL_CheckAnalogModule</a></div><div class="ttdeci">HAL_Bool HAL_CheckAnalogModule(int32_t module)</div><div class="ttdoc">Checks that the analog module number is valid.</div></div>
 <div class="ttc" id="agroup__hal__analoginput_html_gae96480fd466fe9ee241f4b7055d7a5b8"><div class="ttname"><a href="group__hal__analoginput.html#gae96480fd466fe9ee241f4b7055d7a5b8">HAL_GetAnalogOversampleBits</a></div><div class="ttdeci">int32_t HAL_GetAnalogOversampleBits(HAL_AnalogInputHandle analogPortHandle, int32_t *status)</div><div class="ttdoc">Gets the number of oversample bits.</div></div>
+<div class="ttc" id="agroup__hal__analoginput_html_ga97f303940a243beae1f5ee3df8793b8b"><div class="ttname"><a href="group__hal__analoginput.html#ga97f303940a243beae1f5ee3df8793b8b">HAL_InitializeAnalogInputPort</a></div><div class="ttdeci">HAL_AnalogInputHandle HAL_InitializeAnalogInputPort(HAL_PortHandle portHandle, const char *allocationLocation, int32_t *status)</div><div class="ttdoc">Initializes the analog input port using the given port object.</div></div>
 <div class="ttc" id="agroup__hal__analoginput_html_gae9946d95a93e01a5a58b6eb5e693cefd"><div class="ttname"><a href="group__hal__analoginput.html#gae9946d95a93e01a5a58b6eb5e693cefd">HAL_FreeAnalogInputPort</a></div><div class="ttdeci">void HAL_FreeAnalogInputPort(HAL_AnalogInputHandle analogPortHandle)</div><div class="ttdoc">Frees an analog input port.</div></div>
 <div class="ttc" id="agroup__hal__analoginput_html_gaaf69cd25b2ee701213e60ad2f419beb7"><div class="ttname"><a href="group__hal__analoginput.html#gaaf69cd25b2ee701213e60ad2f419beb7">HAL_CheckAnalogInputChannel</a></div><div class="ttdeci">HAL_Bool HAL_CheckAnalogInputChannel(int32_t channel)</div><div class="ttdoc">Checks that the analog output channel number is value.</div></div>
 <div class="ttc" id="agroup__hal__analoginput_html_ga98bbaca35b525e54978d268d7f68fb75"><div class="ttname"><a href="group__hal__analoginput.html#ga98bbaca35b525e54978d268d7f68fb75">HAL_GetAnalogValue</a></div><div class="ttdeci">int32_t HAL_GetAnalogValue(HAL_AnalogInputHandle analogPortHandle, int32_t *status)</div><div class="ttdoc">Gets a sample straight from the channel on this module.</div></div>
@@ -176,7 +177,6 @@ $(document).ready(function(){initNavTree('hal_2src_2main_2native_2include_2hal_2
 <div class="ttc" id="agroup__hal__analoginput_html_ga6f0b6f5e03b9a76e9d654d1d04d524d0"><div class="ttname"><a href="group__hal__analoginput.html#ga6f0b6f5e03b9a76e9d654d1d04d524d0">HAL_GetAnalogVoltage</a></div><div class="ttdeci">double HAL_GetAnalogVoltage(HAL_AnalogInputHandle analogPortHandle, int32_t *status)</div><div class="ttdoc">Gets a scaled sample straight from the channel on this module.</div></div>
 <div class="ttc" id="agroup__hal__analoginput_html_ga02f152b2f03f34e45343791b307d0452"><div class="ttname"><a href="group__hal__analoginput.html#ga02f152b2f03f34e45343791b307d0452">HAL_GetAnalogAverageBits</a></div><div class="ttdeci">int32_t HAL_GetAnalogAverageBits(HAL_AnalogInputHandle analogPortHandle, int32_t *status)</div><div class="ttdoc">Gets the number of averaging bits.</div></div>
 <div class="ttc" id="agroup__hal__analoginput_html_ga34d0a68a34c9fcc696d96b1102c7b3f8"><div class="ttname"><a href="group__hal__analoginput.html#ga34d0a68a34c9fcc696d96b1102c7b3f8">HAL_SetAnalogAverageBits</a></div><div class="ttdeci">void HAL_SetAnalogAverageBits(HAL_AnalogInputHandle analogPortHandle, int32_t bits, int32_t *status)</div><div class="ttdoc">Sets the number of averaging bits.</div></div>
-<div class="ttc" id="agroup__hal__analoginput_html_ga85d82d41867502933afe21b16b9f9fe2"><div class="ttname"><a href="group__hal__analoginput.html#ga85d82d41867502933afe21b16b9f9fe2">HAL_InitializeAnalogInputPort</a></div><div class="ttdeci">HAL_AnalogInputHandle HAL_InitializeAnalogInputPort(HAL_PortHandle portHandle, int32_t *status)</div><div class="ttdoc">Initializes the analog input port using the given port object.</div></div>
 <div class="ttc" id="agroup__hal__analoginput_html_gab5ecc1bef9fd36fa20043d0b2b2fc686"><div class="ttname"><a href="group__hal__analoginput.html#gab5ecc1bef9fd36fa20043d0b2b2fc686">HAL_GetAnalogVoltsToValue</a></div><div class="ttdeci">int32_t HAL_GetAnalogVoltsToValue(HAL_AnalogInputHandle analogPortHandle, double voltage, int32_t *status)</div><div class="ttdoc">Converts a voltage to a raw value for a specified channel.</div></div>
 <div class="ttc" id="agroup__hal__analoginput_html_gae63cb9ebd83360df0c180c8b46f48342"><div class="ttname"><a href="group__hal__analoginput.html#gae63cb9ebd83360df0c180c8b46f48342">HAL_SetAnalogInputSimDevice</a></div><div class="ttdeci">void HAL_SetAnalogInputSimDevice(HAL_AnalogInputHandle handle, HAL_SimDeviceHandle device)</div><div class="ttdoc">Indicates the analog input is used by a simulated device.</div></div>
 <div class="ttc" id="agroup__hal__analoginput_html_ga0f6a90fde07eda6f64d27edff7e6746a"><div class="ttname"><a href="group__hal__analoginput.html#ga0f6a90fde07eda6f64d27edff7e6746a">HAL_SetAnalogOversampleBits</a></div><div class="ttdeci">void HAL_SetAnalogOversampleBits(HAL_AnalogInputHandle analogPortHandle, int32_t bits, int32_t *status)</div><div class="ttdoc">Sets the number of oversample bits.</div></div>
@@ -187,7 +187,7 @@ $(document).ready(function(){initNavTree('hal_2src_2main_2native_2include_2hal_2
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_7dfa5b6b9262a4050979ee23e0eb392d.html">hal</a></li><li class="navelem"><b>AnalogInput.h</b></li>
-    <li class="footer">Generated on Wed May 5 2021 16:19:09 for WPILibC++ by
+    <li class="footer">Generated on Sun May 9 2021 21:19:00 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

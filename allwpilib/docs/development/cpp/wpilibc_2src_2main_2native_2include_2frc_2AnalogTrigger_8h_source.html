@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.3.1-8-gba08baa</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-37-g3cc2da3</span>
    </div>
   </td>
  </tr>
@@ -104,62 +104,59 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;hal/Types.h&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;frc/AnalogTriggerOutput.h&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;frc/ErrorBase.h&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;frc/smartdashboard/Sendable.h&quot;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;frc/smartdashboard/SendableHelper.h&quot;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacefrc.html">frc</a> {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">class </span>AnalogInput;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">class </span>DutyCycle;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">class </span>SendableBuilder;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogTrigger.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1AnalogTrigger.html">AnalogTrigger</a> : <span class="keyword">public</span> <a class="code" href="classfrc_1_1ErrorBase.html">ErrorBase</a>,</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                      <span class="keyword">public</span> <a class="code" href="classfrc_1_1Sendable.html">Sendable</a>,</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                      <span class="keyword">public</span> <a class="code" href="classfrc_1_1SendableHelper.html">SendableHelper</a>&lt;AnalogTrigger&gt; {</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classfrc_1_1AnalogTriggerOutput.html">AnalogTriggerOutput</a>;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogTrigger.html#af891ee0b6a52a7d868e421a711713402">   34</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc_1_1AnalogTrigger.html#af891ee0b6a52a7d868e421a711713402">AnalogTrigger</a>(<span class="keywordtype">int</span> channel);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogTrigger.html#ad9cbec302e351273de733b7784ae870a">   44</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc_1_1AnalogTrigger.html#ad9cbec302e351273de733b7784ae870a">AnalogTrigger</a>(<a class="code" href="classfrc_1_1AnalogInput.html">AnalogInput</a>* channel);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogTrigger.html#a6ceba2c9c23d159011995a6b137a0205">   51</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc_1_1AnalogTrigger.html#a6ceba2c9c23d159011995a6b137a0205">AnalogTrigger</a>(<a class="code" href="classfrc_1_1DutyCycle.html">DutyCycle</a>* dutyCycle);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  ~<a class="code" href="classfrc_1_1AnalogTrigger.html">AnalogTrigger</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;frc/smartdashboard/Sendable.h&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;frc/smartdashboard/SendableHelper.h&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacefrc.html">frc</a> {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">class </span>AnalogInput;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">class </span>DutyCycle;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">class </span>SendableBuilder;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogTrigger.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1AnalogTrigger.html">AnalogTrigger</a> : <span class="keyword">public</span> <a class="code" href="classfrc_1_1Sendable.html">Sendable</a>, <span class="keyword">public</span> <a class="code" href="classfrc_1_1SendableHelper.html">SendableHelper</a>&lt;AnalogTrigger&gt; {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classfrc_1_1AnalogTriggerOutput.html">AnalogTriggerOutput</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogTrigger.html#af891ee0b6a52a7d868e421a711713402">   31</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc_1_1AnalogTrigger.html#af891ee0b6a52a7d868e421a711713402">AnalogTrigger</a>(<span class="keywordtype">int</span> channel);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogTrigger.html#ad9cbec302e351273de733b7784ae870a">   41</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc_1_1AnalogTrigger.html#ad9cbec302e351273de733b7784ae870a">AnalogTrigger</a>(<a class="code" href="classfrc_1_1AnalogInput.html">AnalogInput</a>* channel);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogTrigger.html#a6ceba2c9c23d159011995a6b137a0205">   48</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc_1_1AnalogTrigger.html#a6ceba2c9c23d159011995a6b137a0205">AnalogTrigger</a>(<a class="code" href="classfrc_1_1DutyCycle.html">DutyCycle</a>* dutyCycle);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  ~<a class="code" href="classfrc_1_1AnalogTrigger.html">AnalogTrigger</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <a class="code" href="classfrc_1_1AnalogTrigger.html#af891ee0b6a52a7d868e421a711713402">AnalogTrigger</a>(<a class="code" href="classfrc_1_1AnalogTrigger.html">AnalogTrigger</a>&amp;&amp; rhs);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <a class="code" href="classfrc_1_1AnalogTrigger.html">AnalogTrigger</a>&amp; operator=(<a class="code" href="classfrc_1_1AnalogTrigger.html">AnalogTrigger</a>&amp;&amp; rhs);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <a class="code" href="classfrc_1_1AnalogTrigger.html#af891ee0b6a52a7d868e421a711713402">AnalogTrigger</a>(<a class="code" href="classfrc_1_1AnalogTrigger.html">AnalogTrigger</a>&amp;&amp; rhs);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="classfrc_1_1AnalogTrigger.html">AnalogTrigger</a>&amp; operator=(<a class="code" href="classfrc_1_1AnalogTrigger.html">AnalogTrigger</a>&amp;&amp; rhs);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogTrigger.html#a0744c6505175fc6765f7a269229eb185">   66</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1AnalogTrigger.html#a0744c6505175fc6765f7a269229eb185">SetLimitsVoltage</a>(<span class="keywordtype">double</span> lower, <span class="keywordtype">double</span> upper);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogTrigger.html#a0faf8b6659b7313a28e203418b2775da">   76</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1AnalogTrigger.html#a0faf8b6659b7313a28e203418b2775da">SetLimitsDutyCycle</a>(<span class="keywordtype">double</span> lower, <span class="keywordtype">double</span> upper);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogTrigger.html#ad42f954723ee5556d52b748ab7df5c07">   87</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1AnalogTrigger.html#ad42f954723ee5556d52b748ab7df5c07">SetLimitsRaw</a>(<span class="keywordtype">int</span> lower, <span class="keywordtype">int</span> upper);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogTrigger.html#ae09d54a1b9f63aaca7b05306cd91d5c2">   98</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1AnalogTrigger.html#ae09d54a1b9f63aaca7b05306cd91d5c2">SetAveraged</a>(<span class="keywordtype">bool</span> useAveragedValue);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogTrigger.html#a3791c47af10652791607b0cb8b73e186">  110</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1AnalogTrigger.html#a3791c47af10652791607b0cb8b73e186">SetFiltered</a>(<span class="keywordtype">bool</span> useFilteredValue);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
-<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogTrigger.html#a6fa1adb6bea2c16913e2db2bd69692c7">  119</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classfrc_1_1AnalogTrigger.html#a6fa1adb6bea2c16913e2db2bd69692c7">GetIndex</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
-<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogTrigger.html#a76baf7a32930b7004f28724e2854794a">  128</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1AnalogTrigger.html#a76baf7a32930b7004f28724e2854794a">GetInWindow</a>();</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
-<div class="line"><a name="l00140"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogTrigger.html#a17372b905213830e41cb39b95eb43fbc">  140</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1AnalogTrigger.html#a17372b905213830e41cb39b95eb43fbc">GetTriggerState</a>();</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
-<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogTrigger.html#a639996c23e1762e1619badc1b29133aa">  151</a></span>&#160;  std::shared_ptr&lt;AnalogTriggerOutput&gt; <a class="code" href="classfrc_1_1AnalogTrigger.html#a639996c23e1762e1619badc1b29133aa">CreateOutput</a>(</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;      AnalogTriggerType type) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
-<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogTrigger.html#ade788148d6cc32da7bc7e335dd9c772e">  154</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1AnalogTrigger.html#ade788148d6cc32da7bc7e335dd9c772e">InitSendable</a>(<a class="code" href="classfrc_1_1SendableBuilder.html">SendableBuilder</a>&amp; builder) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  hal::Handle&lt;HAL_AnalogTriggerHandle&gt; m_trigger;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  <a class="code" href="classfrc_1_1AnalogInput.html">AnalogInput</a>* m_analogInput = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  <a class="code" href="classfrc_1_1DutyCycle.html">DutyCycle</a>* m_dutyCycle = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  <span class="keywordtype">bool</span> m_ownsAnalog = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;};</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogTrigger.html#a0744c6505175fc6765f7a269229eb185">   63</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1AnalogTrigger.html#a0744c6505175fc6765f7a269229eb185">SetLimitsVoltage</a>(<span class="keywordtype">double</span> lower, <span class="keywordtype">double</span> upper);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogTrigger.html#a0faf8b6659b7313a28e203418b2775da">   73</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1AnalogTrigger.html#a0faf8b6659b7313a28e203418b2775da">SetLimitsDutyCycle</a>(<span class="keywordtype">double</span> lower, <span class="keywordtype">double</span> upper);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogTrigger.html#ad42f954723ee5556d52b748ab7df5c07">   84</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1AnalogTrigger.html#ad42f954723ee5556d52b748ab7df5c07">SetLimitsRaw</a>(<span class="keywordtype">int</span> lower, <span class="keywordtype">int</span> upper);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogTrigger.html#ae09d54a1b9f63aaca7b05306cd91d5c2">   95</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1AnalogTrigger.html#ae09d54a1b9f63aaca7b05306cd91d5c2">SetAveraged</a>(<span class="keywordtype">bool</span> useAveragedValue);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogTrigger.html#a3791c47af10652791607b0cb8b73e186">  107</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1AnalogTrigger.html#a3791c47af10652791607b0cb8b73e186">SetFiltered</a>(<span class="keywordtype">bool</span> useFilteredValue);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogTrigger.html#a6fa1adb6bea2c16913e2db2bd69692c7">  116</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classfrc_1_1AnalogTrigger.html#a6fa1adb6bea2c16913e2db2bd69692c7">GetIndex</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogTrigger.html#a76baf7a32930b7004f28724e2854794a">  125</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1AnalogTrigger.html#a76baf7a32930b7004f28724e2854794a">GetInWindow</a>();</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00137"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogTrigger.html#a17372b905213830e41cb39b95eb43fbc">  137</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1AnalogTrigger.html#a17372b905213830e41cb39b95eb43fbc">GetTriggerState</a>();</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
+<div class="line"><a name="l00148"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogTrigger.html#a639996c23e1762e1619badc1b29133aa">  148</a></span>&#160;  std::shared_ptr&lt;AnalogTriggerOutput&gt; <a class="code" href="classfrc_1_1AnalogTrigger.html#a639996c23e1762e1619badc1b29133aa">CreateOutput</a>(</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;      AnalogTriggerType type) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
+<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogTrigger.html#ade788148d6cc32da7bc7e335dd9c772e">  151</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1AnalogTrigger.html#ade788148d6cc32da7bc7e335dd9c772e">InitSendable</a>(<a class="code" href="classfrc_1_1SendableBuilder.html">SendableBuilder</a>&amp; builder) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  hal::Handle&lt;HAL_AnalogTriggerHandle&gt; m_trigger;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  <a class="code" href="classfrc_1_1AnalogInput.html">AnalogInput</a>* m_analogInput = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  <a class="code" href="classfrc_1_1DutyCycle.html">DutyCycle</a>* m_dutyCycle = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  <span class="keywordtype">bool</span> m_ownsAnalog = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;};</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;}  <span class="comment">// namespace frc</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassfrc_1_1AnalogTrigger_html_a17372b905213830e41cb39b95eb43fbc"><div class="ttname"><a href="classfrc_1_1AnalogTrigger.html#a17372b905213830e41cb39b95eb43fbc">frc::AnalogTrigger::GetTriggerState</a></div><div class="ttdeci">bool GetTriggerState()</div><div class="ttdoc">Return the TriggerState output of the analog trigger.</div></div>
@@ -167,17 +164,16 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div class="ttc" id="aclassfrc_1_1AnalogTriggerOutput_html"><div class="ttname"><a href="classfrc_1_1AnalogTriggerOutput.html">frc::AnalogTriggerOutput</a></div><div class="ttdoc">Class to represent a specific output from an analog trigger.</div><div class="ttdef"><b>Definition:</b> AnalogTriggerOutput.h:48</div></div>
 <div class="ttc" id="aclassfrc_1_1AnalogTrigger_html_ad42f954723ee5556d52b748ab7df5c07"><div class="ttname"><a href="classfrc_1_1AnalogTrigger.html#ad42f954723ee5556d52b748ab7df5c07">frc::AnalogTrigger::SetLimitsRaw</a></div><div class="ttdeci">void SetLimitsRaw(int lower, int upper)</div><div class="ttdoc">Set the upper and lower limits of the analog trigger.</div></div>
 <div class="ttc" id="aclassfrc_1_1AnalogTrigger_html_a76baf7a32930b7004f28724e2854794a"><div class="ttname"><a href="classfrc_1_1AnalogTrigger.html#a76baf7a32930b7004f28724e2854794a">frc::AnalogTrigger::GetInWindow</a></div><div class="ttdeci">bool GetInWindow()</div><div class="ttdoc">Return the InWindow output of the analog trigger.</div></div>
-<div class="ttc" id="aclassfrc_1_1AnalogTrigger_html"><div class="ttname"><a href="classfrc_1_1AnalogTrigger.html">frc::AnalogTrigger</a></div><div class="ttdef"><b>Definition:</b> AnalogTrigger.h:24</div></div>
+<div class="ttc" id="aclassfrc_1_1AnalogTrigger_html"><div class="ttname"><a href="classfrc_1_1AnalogTrigger.html">frc::AnalogTrigger</a></div><div class="ttdef"><b>Definition:</b> AnalogTrigger.h:21</div></div>
 <div class="ttc" id="aclassfrc_1_1AnalogTrigger_html_ade788148d6cc32da7bc7e335dd9c772e"><div class="ttname"><a href="classfrc_1_1AnalogTrigger.html#ade788148d6cc32da7bc7e335dd9c772e">frc::AnalogTrigger::InitSendable</a></div><div class="ttdeci">void InitSendable(SendableBuilder &amp;builder) override</div><div class="ttdoc">Initializes this Sendable object.</div></div>
 <div class="ttc" id="aclassfrc_1_1AnalogTrigger_html_a639996c23e1762e1619badc1b29133aa"><div class="ttname"><a href="classfrc_1_1AnalogTrigger.html#a639996c23e1762e1619badc1b29133aa">frc::AnalogTrigger::CreateOutput</a></div><div class="ttdeci">std::shared_ptr&lt; AnalogTriggerOutput &gt; CreateOutput(AnalogTriggerType type) const</div><div class="ttdoc">Creates an AnalogTriggerOutput object.</div></div>
-<div class="ttc" id="aclassfrc_1_1DutyCycle_html"><div class="ttname"><a href="classfrc_1_1DutyCycle.html">frc::DutyCycle</a></div><div class="ttdoc">Class to read a duty cycle PWM input.</div><div class="ttdef"><b>Definition:</b> DutyCycle.h:34</div></div>
+<div class="ttc" id="aclassfrc_1_1DutyCycle_html"><div class="ttname"><a href="classfrc_1_1DutyCycle.html">frc::DutyCycle</a></div><div class="ttdoc">Class to read a duty cycle PWM input.</div><div class="ttdef"><b>Definition:</b> DutyCycle.h:31</div></div>
 <div class="ttc" id="aclassfrc_1_1AnalogTrigger_html_a0faf8b6659b7313a28e203418b2775da"><div class="ttname"><a href="classfrc_1_1AnalogTrigger.html#a0faf8b6659b7313a28e203418b2775da">frc::AnalogTrigger::SetLimitsDutyCycle</a></div><div class="ttdeci">void SetLimitsDutyCycle(double lower, double upper)</div><div class="ttdoc">Set the upper and lower duty cycle limits of the analog trigger.</div></div>
-<div class="ttc" id="aclassfrc_1_1ErrorBase_html"><div class="ttname"><a href="classfrc_1_1ErrorBase.html">frc::ErrorBase</a></div><div class="ttdoc">Base class for most objects.</div><div class="ttdef"><b>Definition:</b> ErrorBase.h:99</div></div>
 <div class="ttc" id="aclassfrc_1_1AnalogTrigger_html_a6fa1adb6bea2c16913e2db2bd69692c7"><div class="ttname"><a href="classfrc_1_1AnalogTrigger.html#a6fa1adb6bea2c16913e2db2bd69692c7">frc::AnalogTrigger::GetIndex</a></div><div class="ttdeci">int GetIndex() const</div><div class="ttdoc">Return the index of the analog trigger.</div></div>
 <div class="ttc" id="aclassfrc_1_1Sendable_html"><div class="ttname"><a href="classfrc_1_1Sendable.html">frc::Sendable</a></div><div class="ttdoc">Interface for Sendable objects.</div><div class="ttdef"><b>Definition:</b> Sendable.h:14</div></div>
 <div class="ttc" id="aclassfrc_1_1AnalogTrigger_html_a6ceba2c9c23d159011995a6b137a0205"><div class="ttname"><a href="classfrc_1_1AnalogTrigger.html#a6ceba2c9c23d159011995a6b137a0205">frc::AnalogTrigger::AnalogTrigger</a></div><div class="ttdeci">AnalogTrigger(DutyCycle *dutyCycle)</div><div class="ttdoc">Construct an analog trigger given a duty cycle input.</div></div>
-<div class="ttc" id="aclassfrc_1_1AnalogInput_html"><div class="ttname"><a href="classfrc_1_1AnalogInput.html">frc::AnalogInput</a></div><div class="ttdoc">Analog input class.</div><div class="ttdef"><b>Definition:</b> AnalogInput.h:37</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> VisionRunner.inc:9</div></div>
+<div class="ttc" id="aclassfrc_1_1AnalogInput_html"><div class="ttname"><a href="classfrc_1_1AnalogInput.html">frc::AnalogInput</a></div><div class="ttdoc">Analog input class.</div><div class="ttdef"><b>Definition:</b> AnalogInput.h:32</div></div>
+<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> CameraServer.h:18</div></div>
 <div class="ttc" id="aclassfrc_1_1AnalogTrigger_html_a3791c47af10652791607b0cb8b73e186"><div class="ttname"><a href="classfrc_1_1AnalogTrigger.html#a3791c47af10652791607b0cb8b73e186">frc::AnalogTrigger::SetFiltered</a></div><div class="ttdeci">void SetFiltered(bool useFilteredValue)</div><div class="ttdoc">Configure the analog trigger to use a filtered value.</div></div>
 <div class="ttc" id="aclassfrc_1_1AnalogTrigger_html_a0744c6505175fc6765f7a269229eb185"><div class="ttname"><a href="classfrc_1_1AnalogTrigger.html#a0744c6505175fc6765f7a269229eb185">frc::AnalogTrigger::SetLimitsVoltage</a></div><div class="ttdeci">void SetLimitsVoltage(double lower, double upper)</div><div class="ttdoc">Set the upper and lower limits of the analog trigger.</div></div>
 <div class="ttc" id="aclassfrc_1_1AnalogTrigger_html_ae09d54a1b9f63aaca7b05306cd91d5c2"><div class="ttname"><a href="classfrc_1_1AnalogTrigger.html#ae09d54a1b9f63aaca7b05306cd91d5c2">frc::AnalogTrigger::SetAveraged</a></div><div class="ttdeci">void SetAveraged(bool useAveragedValue)</div><div class="ttdoc">Configure the analog trigger to use the averaged vs.</div></div>
@@ -188,7 +184,7 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><b>AnalogTrigger.h</b></li>
-    <li class="footer">Generated on Wed May 5 2021 16:19:09 for WPILibC++ by
+    <li class="footer">Generated on Sun May 9 2021 21:19:01 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.3.1-8-gba08baa</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-37-g3cc2da3</span>
    </div>
   </td>
  </tr>
@@ -99,12 +99,12 @@ $(document).ready(function(){initNavTree('SolenoidBase_8h_source.html',''); init
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;frc/ErrorBase.h&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacefrc.html">frc</a> {</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacefrc.html">frc</a> {</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classfrc_1_1SolenoidBase.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1SolenoidBase.html">SolenoidBase</a> : <span class="keyword">public</span> <a class="code" href="classfrc_1_1ErrorBase.html">ErrorBase</a> {</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classfrc_1_1SolenoidBase.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1SolenoidBase.html">SolenoidBase</a> {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classfrc_1_1SolenoidBase.html">SolenoidBase</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classfrc_1_1SolenoidBase.html#a7ebb23273075d87bc30e06f273f7f9d9">   22</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classfrc_1_1SolenoidBase.html#a7ebb23273075d87bc30e06f273f7f9d9">GetModuleNumber</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classfrc_1_1SolenoidBase.html#a0ba56b5dcb5612d92a4845511a5fdee7">   30</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="classfrc_1_1SolenoidBase.html#a0ba56b5dcb5612d92a4845511a5fdee7">GetAll</a>(<span class="keywordtype">int</span> module);</div>
@@ -149,19 +149,18 @@ $(document).ready(function(){initNavTree('SolenoidBase_8h_source.html',''); init
 <div class="ttc" id="aclassfrc_1_1SolenoidBase_html_ac0460c587bc42fb20628a0684d18cb93"><div class="ttname"><a href="classfrc_1_1SolenoidBase.html#ac0460c587bc42fb20628a0684d18cb93">frc::SolenoidBase::ClearAllPCMStickyFaults</a></div><div class="ttdeci">void ClearAllPCMStickyFaults()</div><div class="ttdoc">Clear ALL sticky faults inside PCM that Compressor is wired to.</div></div>
 <div class="ttc" id="aclassfrc_1_1SolenoidBase_html_a72a3ce08d06ae5b589ac99a6781151a0"><div class="ttname"><a href="classfrc_1_1SolenoidBase.html#a72a3ce08d06ae5b589ac99a6781151a0">frc::SolenoidBase::GetPCMSolenoidBlackList</a></div><div class="ttdeci">int GetPCMSolenoidBlackList() const</div><div class="ttdoc">Reads complete solenoid blacklist for all 8 solenoids as a single byte.</div></div>
 <div class="ttc" id="aclassfrc_1_1SolenoidBase_html_a613c7a45b7ef3a4456534fb17e314ad3"><div class="ttname"><a href="classfrc_1_1SolenoidBase.html#a613c7a45b7ef3a4456534fb17e314ad3">frc::SolenoidBase::SolenoidBase</a></div><div class="ttdeci">SolenoidBase(int pcmID)</div><div class="ttdoc">Constructor.</div></div>
-<div class="ttc" id="aclassfrc_1_1ErrorBase_html"><div class="ttname"><a href="classfrc_1_1ErrorBase.html">frc::ErrorBase</a></div><div class="ttdoc">Base class for most objects.</div><div class="ttdef"><b>Definition:</b> ErrorBase.h:99</div></div>
-<div class="ttc" id="aclassfrc_1_1SolenoidBase_html"><div class="ttname"><a href="classfrc_1_1SolenoidBase.html">frc::SolenoidBase</a></div><div class="ttdoc">SolenoidBase class is the common base class for the Solenoid and DoubleSolenoid classes.</div><div class="ttdef"><b>Definition:</b> SolenoidBase.h:15</div></div>
+<div class="ttc" id="aclassfrc_1_1SolenoidBase_html"><div class="ttname"><a href="classfrc_1_1SolenoidBase.html">frc::SolenoidBase</a></div><div class="ttdoc">SolenoidBase class is the common base class for the Solenoid and DoubleSolenoid classes.</div><div class="ttdef"><b>Definition:</b> SolenoidBase.h:13</div></div>
 <div class="ttc" id="aclassfrc_1_1SolenoidBase_html_a110d2f1b008dd31624dffba35dcc356f"><div class="ttname"><a href="classfrc_1_1SolenoidBase.html#a110d2f1b008dd31624dffba35dcc356f">frc::SolenoidBase::GetAll</a></div><div class="ttdeci">int GetAll() const</div><div class="ttdoc">Read all 8 solenoids as a single byte.</div></div>
 <div class="ttc" id="aclassfrc_1_1SolenoidBase_html_a128a7719c4cee685feca80117f4b0c9f"><div class="ttname"><a href="classfrc_1_1SolenoidBase.html#a128a7719c4cee685feca80117f4b0c9f">frc::SolenoidBase::GetPCMSolenoidVoltageFault</a></div><div class="ttdeci">static bool GetPCMSolenoidVoltageFault(int module)</div></div>
 <div class="ttc" id="aclassfrc_1_1SolenoidBase_html_a1c3427788b562c3c5fdd18c022f845d4"><div class="ttname"><a href="classfrc_1_1SolenoidBase.html#a1c3427788b562c3c5fdd18c022f845d4">frc::SolenoidBase::ClearAllPCMStickyFaults</a></div><div class="ttdeci">static void ClearAllPCMStickyFaults(int module)</div><div class="ttdoc">Clear ALL sticky faults inside PCM that Compressor is wired to.</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> VisionRunner.inc:9</div></div>
+<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> CameraServer.h:18</div></div>
 <div class="ttc" id="aclassfrc_1_1SolenoidBase_html_a0ba56b5dcb5612d92a4845511a5fdee7"><div class="ttname"><a href="classfrc_1_1SolenoidBase.html#a0ba56b5dcb5612d92a4845511a5fdee7">frc::SolenoidBase::GetAll</a></div><div class="ttdeci">static int GetAll(int module)</div><div class="ttdoc">Read all 8 solenoids as a single byte.</div></div>
 <div class="ttc" id="aclassfrc_1_1SolenoidBase_html_a37e2030a6ba4630b0979b9847c35f2d5"><div class="ttname"><a href="classfrc_1_1SolenoidBase.html#a37e2030a6ba4630b0979b9847c35f2d5">frc::SolenoidBase::GetPCMSolenoidBlackList</a></div><div class="ttdeci">static int GetPCMSolenoidBlackList(int module)</div><div class="ttdoc">Reads complete solenoid blacklist for all 8 solenoids as a single byte.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><b>SolenoidBase.h</b></li>
-    <li class="footer">Generated on Wed May 5 2021 16:19:09 for WPILibC++ by
+    <li class="footer">Generated on Sun May 9 2021 21:19:01 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

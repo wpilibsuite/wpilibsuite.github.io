@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.3.1-8-gba08baa</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-37-g3cc2da3</span>
    </div>
   </td>
  </tr>
@@ -177,9 +177,6 @@ $(document).ready(function(){initNavTree('functions_func_i.html',''); initResiza
 <li>InitLong()
 : <a class="el" href="classfrc_1_1Preferences.html#a5579abba802d15c89744f7cf507568b8">frc::Preferences</a>
 </li>
-<li>InitRobotDrive()
-: <a class="el" href="classfrc_1_1RobotDrive.html#abd9ef883fdcde463a4020362f76109e6">frc::RobotDrive</a>
-</li>
 <li>InitSendable()
 : <a class="el" href="classfrc2_1_1CommandBase.html#a2c37b5f7e5fe388e1a15b759573abb3c">frc2::CommandBase</a>
 , <a class="el" href="classfrc2_1_1CommandScheduler.html#a14c1faabf308b9e59c441b50f79547c7">frc2::CommandScheduler</a>
@@ -188,8 +185,10 @@ $(document).ready(function(){initNavTree('functions_func_i.html',''); initResiza
 , <a class="el" href="classfrc_1_1ADXL345__I2C.html#a0f87af87133ed6348d1d8af1f3fe9fe1">frc::ADXL345_I2C</a>
 , <a class="el" href="classfrc_1_1ADXL345__SPI.html#af03e3dc5d96052c2cad71212a43eea9f">frc::ADXL345_SPI</a>
 , <a class="el" href="classfrc_1_1ADXL362.html#aa2a3edcfc6905a6d16f037aff946af93">frc::ADXL362</a>
+, <a class="el" href="classfrc_1_1ADXRS450__Gyro.html#a433fb3ef7d246109d8c11a252f37ae0e">frc::ADXRS450_Gyro</a>
 , <a class="el" href="classfrc_1_1AnalogAccelerometer.html#a301cc10fb1aba95aafe121356144dfda">frc::AnalogAccelerometer</a>
 , <a class="el" href="classfrc_1_1AnalogEncoder.html#a9c04ccc83a905bb81445b5e93401dfc3">frc::AnalogEncoder</a>
+, <a class="el" href="classfrc_1_1AnalogGyro.html#ab634e4e6555fc3d8eb65e039f5733a5f">frc::AnalogGyro</a>
 , <a class="el" href="classfrc_1_1AnalogInput.html#ab8c404e4fd322d31f0e35320ad06ef9a">frc::AnalogInput</a>
 , <a class="el" href="classfrc_1_1AnalogOutput.html#a25f7eea424aa40c2cf026899b03f0326">frc::AnalogOutput</a>
 , <a class="el" href="classfrc_1_1AnalogPotentiometer.html#ac357f6c7a609f89beb584a1b89225fed">frc::AnalogPotentiometer</a>
@@ -208,11 +207,10 @@ $(document).ready(function(){initNavTree('functions_func_i.html',''); initResiza
 , <a class="el" href="classfrc_1_1DutyCycleEncoder.html#a526b99ad8422849c02992e0ed59867c6">frc::DutyCycleEncoder</a>
 , <a class="el" href="classfrc_1_1Encoder.html#a8c16f229f8f17b6416898cbb7caf47d6">frc::Encoder</a>
 , <a class="el" href="classfrc_1_1Field2d.html#ad19593fd61022cff19d3c2ea43a3c2d1">frc::Field2d</a>
-, <a class="el" href="classfrc_1_1GearTooth.html#a4ec107274fa13bef49ee6f9d54763a58">frc::GearTooth</a>
-, <a class="el" href="classfrc_1_1GyroBase.html#a499d5539c57ea0549afd0c4b57b6c9d1">frc::GyroBase</a>
 , <a class="el" href="classfrc_1_1KilloughDrive.html#a0a09ea3d752b33e25fb3f0dc0c6e5a84">frc::KilloughDrive</a>
 , <a class="el" href="classfrc_1_1MecanumDrive.html#a21e46aac351007f6def9d2300826d828">frc::MecanumDrive</a>
 , <a class="el" href="classfrc_1_1Mechanism2d.html#ad35e23d5dc948fcefd64017f7398e0b3">frc::Mechanism2d</a>
+, <a class="el" href="classfrc_1_1MotorControllerGroup.html#ad8eabf9e3bb596eebccfdee65d5e1eab">frc::MotorControllerGroup</a>
 , <a class="el" href="classfrc_1_1NidecBrushless.html#afec023f45c2fcff132679f2a2061fdba">frc::NidecBrushless</a>
 , <a class="el" href="classfrc_1_1PIDBase.html#af1b5f4f73d58f907ce8cdebbc1f7fa10">frc::PIDBase</a>
 , <a class="el" href="classfrc_1_1PIDCommand.html#ace3a2f8997ddb8d1051e5c5cd3e9a712">frc::PIDCommand</a>
@@ -220,7 +218,7 @@ $(document).ready(function(){initNavTree('functions_func_i.html',''); initResiza
 , <a class="el" href="classfrc_1_1PowerDistributionPanel.html#a61587faa02751a80a31dd9c05f20e8c3">frc::PowerDistributionPanel</a>
 , <a class="el" href="classfrc_1_1ProfiledPIDController.html#aabe9dac67b9b611847a5c99e4ca43509">frc::ProfiledPIDController&lt; Distance &gt;</a>
 , <a class="el" href="classfrc_1_1PWM.html#af24a2e3193e536b40909b7f0bbe4790d">frc::PWM</a>
-, <a class="el" href="classfrc_1_1PWMSpeedController.html#a573d6b9821da1412a6bffcc01b32ab8a">frc::PWMSpeedController</a>
+, <a class="el" href="classfrc_1_1PWMMotorController.html#a0fc47626dfa5c72b3c22d77574e7eb0c">frc::PWMMotorController</a>
 , <a class="el" href="classfrc_1_1Relay.html#a929bfe3f3c8aa96a99eb3bc06c465f84">frc::Relay</a>
 , <a class="el" href="classfrc_1_1Scheduler.html#ae6f56926b6ec123970a85803a6155209">frc::Scheduler</a>
 , <a class="el" href="classfrc_1_1Sendable.html#a5023f1e8965abafdcd728d9213f4eb28">frc::Sendable</a>
@@ -228,7 +226,6 @@ $(document).ready(function(){initNavTree('functions_func_i.html',''); initResiza
 , <a class="el" href="classfrc_1_1SendableChooser.html#a3a80f828f68820a9c602e6888761bba5">frc::SendableChooser&lt; T &gt;</a>
 , <a class="el" href="classfrc_1_1Servo.html#ad3745cfe27c72de6dd71525ce22d0335">frc::Servo</a>
 , <a class="el" href="classfrc_1_1Solenoid.html#aa512f68dcea950f8acc681b4d5dc6496">frc::Solenoid</a>
-, <a class="el" href="classfrc_1_1SpeedControllerGroup.html#a2e8cd6f5fc175a0adeb9ad92f38703eb">frc::SpeedControllerGroup</a>
 , <a class="el" href="classfrc_1_1Subsystem.html#a4cd714f128b97e27f9ea4b035e1aa3c0">frc::Subsystem</a>
 , <a class="el" href="classfrc_1_1Trigger.html#a6cb30eeee7252bc1b41102101fa20270">frc::Trigger</a>
 , <a class="el" href="classfrc_1_1Ultrasonic.html#ae5394ab7b6e58a5913d3ab9c36deca18">frc::Ultrasonic</a>
@@ -493,7 +490,7 @@ $(document).ready(function(){initNavTree('functions_func_i.html',''); initResiza
 </li>
 <li>IsPersistent()
 : <a class="el" href="classfrc_1_1SmartDashboard.html#aafc19af1723e2ea8d002311b41a80dda">frc::SmartDashboard</a>
-, <a class="el" href="classnt_1_1NetworkTable.html#abea611c4f99f5d4f7875b5174bbbbde1">nt::NetworkTable</a>
+, <a class="el" href="classnt_1_1NetworkTable.html#a47f1e16e15037cfe87e5ce894a114cde">nt::NetworkTable</a>
 , <a class="el" href="classnt_1_1NetworkTableEntry.html#a5be18c22893fcd4860bb5fcd54b40656">nt::NetworkTableEntry</a>
 </li>
 <li>isPointerIntoBucketsArray()
@@ -539,7 +536,7 @@ $(document).ready(function(){initNavTree('functions_func_i.html',''); initResiza
 </li>
 <li>IsScheduled()
 : <a class="el" href="classfrc2_1_1Command.html#a03316d8a51ffcb8262e6f751ae42a494">frc2::Command</a>
-, <a class="el" href="classfrc2_1_1CommandScheduler.html#a0b321c0d56e092a9a7de1d8dc3d5c977">frc2::CommandScheduler</a>
+, <a class="el" href="classfrc2_1_1CommandScheduler.html#a508ffa7f0fc5ceea855316d3a191a1f2">frc2::CommandScheduler</a>
 </li>
 <li>IsSimulation()
 : <a class="el" href="classfrc_1_1RobotBase.html#a307a770aa58d89e1f1cc8e7970cceb84">frc::RobotBase</a>
@@ -586,7 +583,7 @@ $(document).ready(function(){initNavTree('functions_func_i.html',''); initResiza
 : <a class="el" href="classwpi_1_1uv_1_1Stream.html#acc5ecbcbd901ece08ca138c9ae5b073a">wpi::uv::Stream</a>
 </li>
 <li>items()
-: <a class="el" href="classwpi_1_1json.html#adcc5f618388172a7ee0eef54540881c5">wpi::json</a>
+: <a class="el" href="classwpi_1_1json.html#a508d6f7c83afbd7f3cadf619704a5a92">wpi::json</a>
 </li>
 <li>iter_impl()
 : <a class="el" href="classwpi_1_1detail_1_1iter__impl.html#a4322b788b57f5960d81bfad79f96a29a">wpi::detail::iter_impl&lt; BasicJsonType &gt;</a>
@@ -603,7 +600,7 @@ $(document).ready(function(){initNavTree('functions_func_i.html',''); initResiza
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed May 5 2021 16:19:15 for WPILibC++ by
+    <li class="footer">Generated on Sun May 9 2021 21:19:06 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

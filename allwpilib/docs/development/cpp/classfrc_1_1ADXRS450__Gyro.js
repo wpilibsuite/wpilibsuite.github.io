@@ -8,6 +8,7 @@ var classfrc_1_1ADXRS450__Gyro =
     [ "GetAngle", "classfrc_1_1ADXRS450__Gyro.html#aa556e13cbce13edd8989e07d75d8885d", null ],
     [ "GetPort", "classfrc_1_1ADXRS450__Gyro.html#a23e4d724a4b21b2446b685689b1ab94d", null ],
     [ "GetRate", "classfrc_1_1ADXRS450__Gyro.html#a294f39dd58e1728d27f0570640f4ff2f", null ],
+    [ "InitSendable", "classfrc_1_1ADXRS450__Gyro.html#a433fb3ef7d246109d8c11a252f37ae0e", null ],
     [ "operator=", "classfrc_1_1ADXRS450__Gyro.html#acb15a3d7900cf2f78b1eaddd95b911e6", null ],
     [ "Reset", "classfrc_1_1ADXRS450__Gyro.html#a548505e23354192ac81ffed5d21c9981", null ]
 ];

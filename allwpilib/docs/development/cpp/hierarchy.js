@@ -10,6 +10,7 @@ var hierarchy =
     [ "wpi::add_const_past_pointer< T, typename std::enable_if< std::is_pointer< T >::value >::type >", "structwpi_1_1add__const__past__pointer_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1is__pode4d144997f390316df5de746504be62.html", null ],
     [ "wpi::add_lvalue_reference_if_not_pointer< T, Enable >", "structwpi_1_1add__lvalue__reference__if__not__pointer.html", null ],
     [ "wpi::add_lvalue_reference_if_not_pointer< T, typename std::enable_if< std::is_pointer< T >::value >::type >", "structwpi_1_1add__lvalue__reference__if__not__pointer_3_01T_00_01typename_01std_1_1enable__if_3_8c6b33cfd3535e3d3fc401c6f4e8d209.html", null ],
+    [ "frc::AddressableLED", "classfrc_1_1AddressableLED.html", null ],
     [ "frc::sim::AddressableLEDSim", "classfrc_1_1sim_1_1AddressableLEDSim.html", null ],
     [ "wpi::adl_serializer< typename, typename >", "structwpi_1_1adl__serializer.html", null ],
     [ "frc::sim::ADXRS450_GyroSim", "classfrc_1_1sim_1_1ADXRS450__GyroSim.html", null ],
@@ -77,9 +78,9 @@ var hierarchy =
     [ "wpi::AlignedCharArray< wpi::support::detail::PickAlignment< value_type, alignment >::value, sizeof(value_type)>", "structwpi_1_1AlignedCharArray.html", null ],
     [ "wpi::detail::AlignerImpl< T1, T2, T3, T4, T5, T6, T7, T8, T9, T10 >", "classwpi_1_1detail_1_1AlignerImpl.html", null ],
     [ "wpi::AlignTo< Align >", "structwpi_1_1AlignTo.html", null ],
-    [ "frc::ADXL362::AllAxes", "structfrc_1_1ADXL362_1_1AllAxes.html", null ],
-    [ "frc::ADXL345_I2C::AllAxes", "structfrc_1_1ADXL345__I2C_1_1AllAxes.html", null ],
     [ "frc::ADXL345_SPI::AllAxes", "structfrc_1_1ADXL345__SPI_1_1AllAxes.html", null ],
+    [ "frc::ADXL345_I2C::AllAxes", "structfrc_1_1ADXL345__I2C_1_1AllAxes.html", null ],
+    [ "frc::ADXL362::AllAxes", "structfrc_1_1ADXL362_1_1AllAxes.html", null ],
     [ "frc::sim::AnalogEncoderSim", "classfrc_1_1sim_1_1AnalogEncoderSim.html", null ],
     [ "frc::sim::AnalogGyroSim", "classfrc_1_1sim_1_1AnalogGyroSim.html", null ],
     [ "frc::sim::AnalogInputSim", "classfrc_1_1sim_1_1AnalogInputSim.html", null ],
@@ -122,6 +123,7 @@ var hierarchy =
     [ "frc::sim::CallbackStore", "classfrc_1_1sim_1_1CallbackStore.html", null ],
     [ "frc::CameraServer", "classfrc_1_1CameraServer.html", null ],
     [ "frc::CameraServerShared", "classfrc_1_1CameraServerShared.html", null ],
+    [ "frc::CAN", "classfrc_1_1CAN.html", null ],
     [ "frc::CANData", "structfrc_1_1CANData.html", null ],
     [ "frc::CANStatus", "structfrc_1_1CANStatus.html", null ],
     [ "frc::ChassisSpeeds", "structfrc_1_1ChassisSpeeds.html", null ],
@@ -130,6 +132,82 @@ var hierarchy =
     [ "wpi::WebSocket::ClientOptions", "structwpi_1_1WebSocket_1_1ClientOptions.html", null ],
     [ "frc::Color", "classfrc_1_1Color.html", null ],
     [ "frc::Color8Bit", "classfrc_1_1Color8Bit.html", null ],
+    [ "frc2::Command", "classfrc2_1_1Command.html", [
+      [ "frc2::CommandBase", "classfrc2_1_1CommandBase.html", [
+        [ "frc2::CommandHelper< CommandBase, ConditionalCommand >", "classfrc2_1_1CommandHelper.html", [
+          [ "frc2::ConditionalCommand", "classfrc2_1_1ConditionalCommand.html", null ]
+        ] ],
+        [ "frc2::CommandHelper< CommandBase, FunctionalCommand >", "classfrc2_1_1CommandHelper.html", [
+          [ "frc2::FunctionalCommand", "classfrc2_1_1FunctionalCommand.html", null ]
+        ] ],
+        [ "frc2::CommandHelper< CommandBase, InstantCommand >", "classfrc2_1_1CommandHelper.html", [
+          [ "frc2::InstantCommand", "classfrc2_1_1InstantCommand.html", [
+            [ "frc2::CommandHelper< InstantCommand, PrintCommand >", "classfrc2_1_1CommandHelper.html", [
+              [ "frc2::PrintCommand", "classfrc2_1_1PrintCommand.html", null ]
+            ] ]
+          ] ]
+        ] ],
+        [ "frc2::CommandHelper< CommandBase, MecanumControllerCommand >", "classfrc2_1_1CommandHelper.html", [
+          [ "frc2::MecanumControllerCommand", "classfrc2_1_1MecanumControllerCommand.html", null ]
+        ] ],
+        [ "frc2::CommandHelper< CommandBase, NotifierCommand >", "classfrc2_1_1CommandHelper.html", [
+          [ "frc2::NotifierCommand", "classfrc2_1_1NotifierCommand.html", null ]
+        ] ],
+        [ "frc2::CommandHelper< CommandBase, PerpetualCommand >", "classfrc2_1_1CommandHelper.html", [
+          [ "frc2::PerpetualCommand", "classfrc2_1_1PerpetualCommand.html", null ]
+        ] ],
+        [ "frc2::CommandHelper< CommandBase, PIDCommand >", "classfrc2_1_1CommandHelper.html", [
+          [ "frc2::PIDCommand", "classfrc2_1_1PIDCommand.html", null ]
+        ] ],
+        [ "frc2::CommandHelper< CommandBase, ProfiledPIDCommand< Distance > >", "classfrc2_1_1CommandHelper.html", [
+          [ "frc2::ProfiledPIDCommand< Distance >", "classfrc2_1_1ProfiledPIDCommand.html", null ]
+        ] ],
+        [ "frc2::CommandHelper< CommandBase, ProxyScheduleCommand >", "classfrc2_1_1CommandHelper.html", [
+          [ "frc2::ProxyScheduleCommand", "classfrc2_1_1ProxyScheduleCommand.html", null ]
+        ] ],
+        [ "frc2::CommandHelper< CommandBase, RamseteCommand >", "classfrc2_1_1CommandHelper.html", [
+          [ "frc2::RamseteCommand", "classfrc2_1_1RamseteCommand.html", null ]
+        ] ],
+        [ "frc2::CommandHelper< CommandBase, RunCommand >", "classfrc2_1_1CommandHelper.html", [
+          [ "frc2::RunCommand", "classfrc2_1_1RunCommand.html", null ]
+        ] ],
+        [ "frc2::CommandHelper< CommandBase, ScheduleCommand >", "classfrc2_1_1CommandHelper.html", [
+          [ "frc2::ScheduleCommand", "classfrc2_1_1ScheduleCommand.html", null ]
+        ] ],
+        [ "frc2::CommandHelper< CommandBase, SelectCommand< Key > >", "classfrc2_1_1CommandHelper.html", [
+          [ "frc2::SelectCommand< Key >", "classfrc2_1_1SelectCommand.html", null ]
+        ] ],
+        [ "frc2::CommandHelper< CommandBase, StartEndCommand >", "classfrc2_1_1CommandHelper.html", [
+          [ "frc2::StartEndCommand", "classfrc2_1_1StartEndCommand.html", null ]
+        ] ],
+        [ "frc2::CommandHelper< CommandBase, SwerveControllerCommand< NumModules > >", "classfrc2_1_1CommandHelper.html", [
+          [ "frc2::SwerveControllerCommand< NumModules >", "classfrc2_1_1SwerveControllerCommand.html", null ]
+        ] ],
+        [ "frc2::CommandHelper< CommandBase, TrapezoidProfileCommand< Distance > >", "classfrc2_1_1CommandHelper.html", [
+          [ "frc2::TrapezoidProfileCommand< Distance >", "classfrc2_1_1TrapezoidProfileCommand.html", null ]
+        ] ],
+        [ "frc2::CommandHelper< CommandBase, WaitCommand >", "classfrc2_1_1CommandHelper.html", [
+          [ "frc2::WaitCommand", "classfrc2_1_1WaitCommand.html", null ]
+        ] ],
+        [ "frc2::CommandHelper< CommandBase, WaitUntilCommand >", "classfrc2_1_1CommandHelper.html", [
+          [ "frc2::WaitUntilCommand", "classfrc2_1_1WaitUntilCommand.html", null ]
+        ] ],
+        [ "frc2::CommandGroupBase", "classfrc2_1_1CommandGroupBase.html", [
+          [ "frc2::CommandHelper< CommandGroupBase, ParallelCommandGroup >", "classfrc2_1_1CommandHelper.html", [
+            [ "frc2::ParallelCommandGroup", "classfrc2_1_1ParallelCommandGroup.html", null ]
+          ] ],
+          [ "frc2::CommandHelper< CommandGroupBase, ParallelDeadlineGroup >", "classfrc2_1_1CommandHelper.html", [
+            [ "frc2::ParallelDeadlineGroup", "classfrc2_1_1ParallelDeadlineGroup.html", null ]
+          ] ],
+          [ "frc2::CommandHelper< CommandGroupBase, ParallelRaceGroup >", "classfrc2_1_1CommandHelper.html", [
+            [ "frc2::ParallelRaceGroup", "classfrc2_1_1ParallelRaceGroup.html", null ]
+          ] ],
+          [ "frc2::CommandHelper< CommandGroupBase, SequentialCommandGroup >", "classfrc2_1_1CommandHelper.html", [
+            [ "frc2::SequentialCommandGroup", "classfrc2_1_1SequentialCommandGroup.html", null ]
+          ] ]
+        ] ]
+      ] ]
+    ] ],
     [ "frc::CommandGroupEntry", "classfrc_1_1CommandGroupEntry.html", null ],
     [ "frc2::CommandState", "classfrc2_1_1CommandState.html", null ],
     [ "wpi::detail::concat_range< ValueT, RangeTs >", "classwpi_1_1detail_1_1concat__range.html", null ],
@@ -156,9 +234,7 @@ var hierarchy =
     [ "wpi::java::detail::ConvertIntArray< T, bool >", "structwpi_1_1java_1_1detail_1_1ConvertIntArray.html", null ],
     [ "wpi::java::detail::ConvertIntArray< T, true >", "structwpi_1_1java_1_1detail_1_1ConvertIntArray_3_01T_00_01true_01_4.html", null ],
     [ "frc::CounterBase", "classfrc_1_1CounterBase.html", [
-      [ "frc::Counter", "classfrc_1_1Counter.html", [
-        [ "frc::GearTooth", "classfrc_1_1GearTooth.html", null ]
-      ] ],
+      [ "frc::Counter", "classfrc_1_1Counter.html", null ],
       [ "frc::Encoder", "classfrc_1_1Encoder.html", null ]
     ] ],
     [ "CS_Event", "structCS__Event.html", null ],
@@ -213,7 +289,9 @@ var hierarchy =
     [ "wpi::sys::fs::directory_entry", "classwpi_1_1sys_1_1fs_1_1directory__entry.html", null ],
     [ "wpi::sys::fs::directory_iterator", "classwpi_1_1sys_1_1fs_1_1directory__iterator.html", null ],
     [ "wpi::sys::fs::detail::DirIterState", "structwpi_1_1sys_1_1fs_1_1detail_1_1DirIterState.html", null ],
+    [ "frc::DMA", "classfrc_1_1DMA.html", null ],
     [ "frc::sim::DoubleSolenoidSim", "classfrc_1_1sim_1_1DoubleSolenoidSim.html", null ],
+    [ "frc::DriverStation", "classfrc_1_1DriverStation.html", null ],
     [ "frc::sim::DriverStationSim", "classfrc_1_1sim_1_1DriverStationSim.html", null ],
     [ "frc::sim::DutyCycleEncoderSim", "classfrc_1_1sim_1_1DutyCycleEncoderSim.html", null ],
     [ "frc::sim::DutyCycleSim", "classfrc_1_1sim_1_1DutyCycleSim.html", null ],
@@ -311,189 +389,11 @@ var hierarchy =
     [ "nt::EntryNotification", "classnt_1_1EntryNotification.html", null ],
     [ "wpi::detail::enumerator< R >", "classwpi_1_1detail_1_1enumerator.html", null ],
     [ "wpi::detail::enumerator_iter< R >", "classwpi_1_1detail_1_1enumerator__iter.html", null ],
-    [ "frc::Error", "classfrc_1_1Error.html", null ],
-    [ "wpi::uv::Error", "classwpi_1_1uv_1_1Error.html", null ],
     [ "wpi::Error", "classwpi_1_1Error.html", [
       [ "wpi::ErrorSuccess", "classwpi_1_1ErrorSuccess.html", null ]
     ] ],
+    [ "wpi::uv::Error", "classwpi_1_1uv_1_1Error.html", null ],
     [ "wpi::ErrorAsOutParameter", "classwpi_1_1ErrorAsOutParameter.html", null ],
-    [ "frc::ErrorBase", "classfrc_1_1ErrorBase.html", [
-      [ "frc2::Command", "classfrc2_1_1Command.html", [
-        [ "frc2::CommandBase", "classfrc2_1_1CommandBase.html", [
-          [ "frc2::CommandHelper< CommandBase, ConditionalCommand >", "classfrc2_1_1CommandHelper.html", [
-            [ "frc2::ConditionalCommand", "classfrc2_1_1ConditionalCommand.html", null ]
-          ] ],
-          [ "frc2::CommandHelper< CommandBase, FunctionalCommand >", "classfrc2_1_1CommandHelper.html", [
-            [ "frc2::FunctionalCommand", "classfrc2_1_1FunctionalCommand.html", null ]
-          ] ],
-          [ "frc2::CommandHelper< CommandBase, InstantCommand >", "classfrc2_1_1CommandHelper.html", [
-            [ "frc2::InstantCommand", "classfrc2_1_1InstantCommand.html", [
-              [ "frc2::CommandHelper< InstantCommand, PrintCommand >", "classfrc2_1_1CommandHelper.html", [
-                [ "frc2::PrintCommand", "classfrc2_1_1PrintCommand.html", null ]
-              ] ]
-            ] ]
-          ] ],
-          [ "frc2::CommandHelper< CommandBase, MecanumControllerCommand >", "classfrc2_1_1CommandHelper.html", [
-            [ "frc2::MecanumControllerCommand", "classfrc2_1_1MecanumControllerCommand.html", null ]
-          ] ],
-          [ "frc2::CommandHelper< CommandBase, NotifierCommand >", "classfrc2_1_1CommandHelper.html", [
-            [ "frc2::NotifierCommand", "classfrc2_1_1NotifierCommand.html", null ]
-          ] ],
-          [ "frc2::CommandHelper< CommandBase, PerpetualCommand >", "classfrc2_1_1CommandHelper.html", [
-            [ "frc2::PerpetualCommand", "classfrc2_1_1PerpetualCommand.html", null ]
-          ] ],
-          [ "frc2::CommandHelper< CommandBase, PIDCommand >", "classfrc2_1_1CommandHelper.html", [
-            [ "frc2::PIDCommand", "classfrc2_1_1PIDCommand.html", null ]
-          ] ],
-          [ "frc2::CommandHelper< CommandBase, ProfiledPIDCommand< Distance > >", "classfrc2_1_1CommandHelper.html", [
-            [ "frc2::ProfiledPIDCommand< Distance >", "classfrc2_1_1ProfiledPIDCommand.html", null ]
-          ] ],
-          [ "frc2::CommandHelper< CommandBase, ProxyScheduleCommand >", "classfrc2_1_1CommandHelper.html", [
-            [ "frc2::ProxyScheduleCommand", "classfrc2_1_1ProxyScheduleCommand.html", null ]
-          ] ],
-          [ "frc2::CommandHelper< CommandBase, RamseteCommand >", "classfrc2_1_1CommandHelper.html", [
-            [ "frc2::RamseteCommand", "classfrc2_1_1RamseteCommand.html", null ]
-          ] ],
-          [ "frc2::CommandHelper< CommandBase, RunCommand >", "classfrc2_1_1CommandHelper.html", [
-            [ "frc2::RunCommand", "classfrc2_1_1RunCommand.html", null ]
-          ] ],
-          [ "frc2::CommandHelper< CommandBase, ScheduleCommand >", "classfrc2_1_1CommandHelper.html", [
-            [ "frc2::ScheduleCommand", "classfrc2_1_1ScheduleCommand.html", null ]
-          ] ],
-          [ "frc2::CommandHelper< CommandBase, SelectCommand< Key > >", "classfrc2_1_1CommandHelper.html", [
-            [ "frc2::SelectCommand< Key >", "classfrc2_1_1SelectCommand.html", null ]
-          ] ],
-          [ "frc2::CommandHelper< CommandBase, StartEndCommand >", "classfrc2_1_1CommandHelper.html", [
-            [ "frc2::StartEndCommand", "classfrc2_1_1StartEndCommand.html", null ]
-          ] ],
-          [ "frc2::CommandHelper< CommandBase, SwerveControllerCommand< NumModules > >", "classfrc2_1_1CommandHelper.html", [
-            [ "frc2::SwerveControllerCommand< NumModules >", "classfrc2_1_1SwerveControllerCommand.html", null ]
-          ] ],
-          [ "frc2::CommandHelper< CommandBase, TrapezoidProfileCommand< Distance > >", "classfrc2_1_1CommandHelper.html", [
-            [ "frc2::TrapezoidProfileCommand< Distance >", "classfrc2_1_1TrapezoidProfileCommand.html", null ]
-          ] ],
-          [ "frc2::CommandHelper< CommandBase, WaitCommand >", "classfrc2_1_1CommandHelper.html", [
-            [ "frc2::WaitCommand", "classfrc2_1_1WaitCommand.html", null ]
-          ] ],
-          [ "frc2::CommandHelper< CommandBase, WaitUntilCommand >", "classfrc2_1_1CommandHelper.html", [
-            [ "frc2::WaitUntilCommand", "classfrc2_1_1WaitUntilCommand.html", null ]
-          ] ],
-          [ "frc2::CommandGroupBase", "classfrc2_1_1CommandGroupBase.html", [
-            [ "frc2::CommandHelper< CommandGroupBase, ParallelCommandGroup >", "classfrc2_1_1CommandHelper.html", [
-              [ "frc2::ParallelCommandGroup", "classfrc2_1_1ParallelCommandGroup.html", null ]
-            ] ],
-            [ "frc2::CommandHelper< CommandGroupBase, ParallelDeadlineGroup >", "classfrc2_1_1CommandHelper.html", [
-              [ "frc2::ParallelDeadlineGroup", "classfrc2_1_1ParallelDeadlineGroup.html", null ]
-            ] ],
-            [ "frc2::CommandHelper< CommandGroupBase, ParallelRaceGroup >", "classfrc2_1_1CommandHelper.html", [
-              [ "frc2::ParallelRaceGroup", "classfrc2_1_1ParallelRaceGroup.html", null ]
-            ] ],
-            [ "frc2::CommandHelper< CommandGroupBase, SequentialCommandGroup >", "classfrc2_1_1CommandHelper.html", [
-              [ "frc2::SequentialCommandGroup", "classfrc2_1_1SequentialCommandGroup.html", null ]
-            ] ]
-          ] ]
-        ] ]
-      ] ],
-      [ "frc2::CommandScheduler", "classfrc2_1_1CommandScheduler.html", null ],
-      [ "frc::AddressableLED", "classfrc_1_1AddressableLED.html", null ],
-      [ "frc::ADXL345_I2C", "classfrc_1_1ADXL345__I2C.html", null ],
-      [ "frc::ADXL345_SPI", "classfrc_1_1ADXL345__SPI.html", null ],
-      [ "frc::ADXL362", "classfrc_1_1ADXL362.html", null ],
-      [ "frc::AnalogAccelerometer", "classfrc_1_1AnalogAccelerometer.html", null ],
-      [ "frc::AnalogEncoder", "classfrc_1_1AnalogEncoder.html", null ],
-      [ "frc::AnalogInput", "classfrc_1_1AnalogInput.html", null ],
-      [ "frc::AnalogOutput", "classfrc_1_1AnalogOutput.html", null ],
-      [ "frc::AnalogPotentiometer", "classfrc_1_1AnalogPotentiometer.html", null ],
-      [ "frc::AnalogTrigger", "classfrc_1_1AnalogTrigger.html", null ],
-      [ "frc::BuiltInAccelerometer", "classfrc_1_1BuiltInAccelerometer.html", null ],
-      [ "frc::CAN", "classfrc_1_1CAN.html", null ],
-      [ "frc::Command", "classfrc_1_1Command.html", [
-        [ "frc::CommandGroup", "classfrc_1_1CommandGroup.html", null ],
-        [ "frc::ConditionalCommand", "classfrc_1_1ConditionalCommand.html", null ],
-        [ "frc::InstantCommand", "classfrc_1_1InstantCommand.html", [
-          [ "frc::PrintCommand", "classfrc_1_1PrintCommand.html", null ],
-          [ "frc::StartCommand", "classfrc_1_1StartCommand.html", null ]
-        ] ],
-        [ "frc::PIDCommand", "classfrc_1_1PIDCommand.html", null ],
-        [ "frc::TimedCommand", "classfrc_1_1TimedCommand.html", [
-          [ "frc::WaitCommand", "classfrc_1_1WaitCommand.html", null ]
-        ] ],
-        [ "frc::WaitForChildren", "classfrc_1_1WaitForChildren.html", null ],
-        [ "frc::WaitUntilCommand", "classfrc_1_1WaitUntilCommand.html", null ]
-      ] ],
-      [ "frc::Compressor", "classfrc_1_1Compressor.html", null ],
-      [ "frc::Counter", "classfrc_1_1Counter.html", null ],
-      [ "frc::DigitalGlitchFilter", "classfrc_1_1DigitalGlitchFilter.html", null ],
-      [ "frc::DMA", "classfrc_1_1DMA.html", null ],
-      [ "frc::DriverStation", "classfrc_1_1DriverStation.html", null ],
-      [ "frc::DutyCycle", "classfrc_1_1DutyCycle.html", null ],
-      [ "frc::DutyCycleEncoder", "classfrc_1_1DutyCycleEncoder.html", null ],
-      [ "frc::Encoder", "classfrc_1_1Encoder.html", null ],
-      [ "frc::GenericHID", "classfrc_1_1GenericHID.html", [
-        [ "frc::Joystick", "classfrc_1_1Joystick.html", null ],
-        [ "frc::XboxController", "classfrc_1_1XboxController.html", null ]
-      ] ],
-      [ "frc::GyroBase", "classfrc_1_1GyroBase.html", [
-        [ "frc::ADXRS450_Gyro", "classfrc_1_1ADXRS450__Gyro.html", null ],
-        [ "frc::AnalogGyro", "classfrc_1_1AnalogGyro.html", null ]
-      ] ],
-      [ "frc::I2C", "classfrc_1_1I2C.html", null ],
-      [ "frc::InterruptableSensorBase", "classfrc_1_1InterruptableSensorBase.html", [
-        [ "frc::DigitalSource", "classfrc_1_1DigitalSource.html", [
-          [ "frc::AnalogTriggerOutput", "classfrc_1_1AnalogTriggerOutput.html", null ],
-          [ "frc::DigitalInput", "classfrc_1_1DigitalInput.html", null ],
-          [ "frc::DigitalOutput", "classfrc_1_1DigitalOutput.html", null ]
-        ] ]
-      ] ],
-      [ "frc::MotorSafety", "classfrc_1_1MotorSafety.html", [
-        [ "frc::NidecBrushless", "classfrc_1_1NidecBrushless.html", null ],
-        [ "frc::PWM", "classfrc_1_1PWM.html", [
-          [ "frc::PWMSpeedController", "classfrc_1_1PWMSpeedController.html", [
-            [ "frc::DMC60", "classfrc_1_1DMC60.html", null ],
-            [ "frc::Jaguar", "classfrc_1_1Jaguar.html", null ],
-            [ "frc::PWMSparkMax", "classfrc_1_1PWMSparkMax.html", null ],
-            [ "frc::PWMTalonFX", "classfrc_1_1PWMTalonFX.html", null ],
-            [ "frc::PWMTalonSRX", "classfrc_1_1PWMTalonSRX.html", null ],
-            [ "frc::PWMVenom", "classfrc_1_1PWMVenom.html", null ],
-            [ "frc::PWMVictorSPX", "classfrc_1_1PWMVictorSPX.html", null ],
-            [ "frc::SD540", "classfrc_1_1SD540.html", null ],
-            [ "frc::Spark", "classfrc_1_1Spark.html", null ],
-            [ "frc::Talon", "classfrc_1_1Talon.html", null ],
-            [ "frc::Victor", "classfrc_1_1Victor.html", null ],
-            [ "frc::VictorSP", "classfrc_1_1VictorSP.html", null ]
-          ] ],
-          [ "frc::Servo", "classfrc_1_1Servo.html", null ]
-        ] ],
-        [ "frc::Relay", "classfrc_1_1Relay.html", null ],
-        [ "frc::RobotDrive", "classfrc_1_1RobotDrive.html", null ],
-        [ "frc::RobotDriveBase", "classfrc_1_1RobotDriveBase.html", [
-          [ "frc::DifferentialDrive", "classfrc_1_1DifferentialDrive.html", null ],
-          [ "frc::KilloughDrive", "classfrc_1_1KilloughDrive.html", null ],
-          [ "frc::MecanumDrive", "classfrc_1_1MecanumDrive.html", null ]
-        ] ]
-      ] ],
-      [ "frc::Notifier", "classfrc_1_1Notifier.html", null ],
-      [ "frc::PowerDistributionPanel", "classfrc_1_1PowerDistributionPanel.html", null ],
-      [ "frc::Preferences", "classfrc_1_1Preferences.html", null ],
-      [ "frc::Resource", "classfrc_1_1Resource.html", null ],
-      [ "frc::Scheduler", "classfrc_1_1Scheduler.html", null ],
-      [ "frc::SerialPort", "classfrc_1_1SerialPort.html", null ],
-      [ "frc::ShuffleboardContainer", "classfrc_1_1ShuffleboardContainer.html", [
-        [ "frc::ShuffleboardLayout", "classfrc_1_1ShuffleboardLayout.html", null ],
-        [ "frc::ShuffleboardTab", "classfrc_1_1ShuffleboardTab.html", null ]
-      ] ],
-      [ "frc::SmartDashboard", "classfrc_1_1SmartDashboard.html", null ],
-      [ "frc::SolenoidBase", "classfrc_1_1SolenoidBase.html", [
-        [ "frc::DoubleSolenoid", "classfrc_1_1DoubleSolenoid.html", null ],
-        [ "frc::Solenoid", "classfrc_1_1Solenoid.html", null ]
-      ] ],
-      [ "frc::SPI", "classfrc_1_1SPI.html", null ],
-      [ "frc::Subsystem", "classfrc_1_1Subsystem.html", [
-        [ "frc::PIDSubsystem", "classfrc_1_1PIDSubsystem.html", null ]
-      ] ],
-      [ "frc::TimedRobot", "classfrc_1_1TimedRobot.html", null ],
-      [ "frc::Ultrasonic", "classfrc_1_1Ultrasonic.html", null ]
-    ] ],
     [ "wpi::ErrorHandlerTraits< HandlerT >", "classwpi_1_1ErrorHandlerTraits.html", null ],
     [ "wpi::ErrorHandlerTraits< Error(&)(ErrT &)>", "classwpi_1_1ErrorHandlerTraits_3_01Error_07_6_08_07ErrT_01_6_08_4.html", null ],
     [ "wpi::ErrorHandlerTraits< Error(&)(std::unique_ptr< ErrT >)>", "classwpi_1_1ErrorHandlerTraits_3_01Error_07_6_08_07std_1_1unique__ptr_3_01ErrT_01_4_08_4.html", null ],
@@ -585,13 +485,18 @@ var hierarchy =
     [ "wpi::detail::fwd_or_bidi_tag< IterT >", "structwpi_1_1detail_1_1fwd__or__bidi__tag.html", null ],
     [ "wpi::detail::fwd_or_bidi_tag_impl< is_bidirectional >", "structwpi_1_1detail_1_1fwd__or__bidi__tag__impl.html", null ],
     [ "wpi::detail::fwd_or_bidi_tag_impl< true >", "structwpi_1_1detail_1_1fwd__or__bidi__tag__impl_3_01true_01_4.html", null ],
+    [ "frc::GenericHID", "classfrc_1_1GenericHID.html", [
+      [ "frc::Joystick", "classfrc_1_1Joystick.html", null ],
+      [ "frc::XboxController", "classfrc_1_1XboxController.html", null ]
+    ] ],
     [ "frc::sim::GenericHIDSim", "classfrc_1_1sim_1_1GenericHIDSim.html", [
       [ "frc::sim::JoystickSim", "classfrc_1_1sim_1_1JoystickSim.html", null ],
       [ "frc::sim::XboxControllerSim", "classfrc_1_1sim_1_1XboxControllerSim.html", null ]
     ] ],
     [ "wpi::greater_ptr< Ty >", "structwpi_1_1greater__ptr.html", null ],
     [ "frc::Gyro", "classfrc_1_1Gyro.html", [
-      [ "frc::GyroBase", "classfrc_1_1GyroBase.html", null ]
+      [ "frc::ADXRS450_Gyro", "classfrc_1_1ADXRS450__Gyro.html", null ],
+      [ "frc::AnalogGyro", "classfrc_1_1AnalogGyro.html", null ]
     ] ],
     [ "HAL_AddressableLEDData", "structHAL__AddressableLEDData.html", [
       [ "frc::AddressableLED::LEDData", "classfrc_1_1AddressableLED_1_1LEDData.html", null ]
@@ -645,6 +550,7 @@ var hierarchy =
     [ "wpi::HttpServerConnection", "classwpi_1_1HttpServerConnection.html", [
       [ "wpi::HttpWebSocketServerConnection< Derived >", "classwpi_1_1HttpWebSocketServerConnection.html", null ]
     ] ],
+    [ "frc::I2C", "classfrc_1_1I2C.html", null ],
     [ "wpi::identity< Ty >", "structwpi_1_1identity.html", null ],
     [ "integral_constant", null, [
       [ "std::tuple_size< wpi::array< T, N > >", "structstd_1_1tuple__size_3_01wpi_1_1array_3_01T_00_01N_01_4_01_4.html", null ],
@@ -655,6 +561,13 @@ var hierarchy =
     ] ],
     [ "wpi::detail::internal_iterator< BasicJsonType >", "structwpi_1_1detail_1_1internal__iterator.html", null ],
     [ "wpi::detail::internal_iterator< typename std::remove_const< BasicJsonType >::type >", "structwpi_1_1detail_1_1internal__iterator.html", null ],
+    [ "frc::InterruptableSensorBase", "classfrc_1_1InterruptableSensorBase.html", [
+      [ "frc::DigitalSource", "classfrc_1_1DigitalSource.html", [
+        [ "frc::AnalogTriggerOutput", "classfrc_1_1AnalogTriggerOutput.html", null ],
+        [ "frc::DigitalInput", "classfrc_1_1DigitalInput.html", null ],
+        [ "frc::DigitalOutput", "classfrc_1_1DigitalOutput.html", null ]
+      ] ]
+    ] ],
     [ "wpi::IntrusiveRefCntPtr< T >", "classwpi_1_1IntrusiveRefCntPtr.html", null ],
     [ "wpi::IntrusiveRefCntPtrInfo< T >", "structwpi_1_1IntrusiveRefCntPtrInfo.html", null ],
     [ "wpi::detail::is_compatible_array_type< BasicJsonType, CompatibleArrayType >", "structwpi_1_1detail_1_1is__compatible__array__type.html", null ],
@@ -681,9 +594,6 @@ var hierarchy =
     [ "wpi::isPodLike< StringRef >", "structwpi_1_1isPodLike_3_01StringRef_01_4.html", null ],
     [ "wpi::detail::IsPointerLike< T >", "structwpi_1_1detail_1_1IsPointerLike.html", null ],
     [ "wpi::detail::IsPointerLike< T * >", "structwpi_1_1detail_1_1IsPointerLike_3_01T_01_5_01_4.html", null ],
-    [ "ITable", null, [
-      [ "nt::NetworkTable", "classnt_1_1NetworkTable.html", null ]
-    ] ],
     [ "wpi::detail::iter_impl< BasicJsonType >", "classwpi_1_1detail_1_1iter__impl.html", null ],
     [ "wpi::detail::iteration_proxy< IteratorType >", "classwpi_1_1detail_1_1iteration__proxy.html", null ],
     [ "iterator", null, [
@@ -837,15 +747,40 @@ var hierarchy =
     [ "frc::MedianFilter< T >", "classfrc_1_1MedianFilter.html", null ],
     [ "frc::MerweScaledSigmaPoints< States >", "classfrc_1_1MerweScaledSigmaPoints.html", null ],
     [ "frc::TrajectoryConstraint::MinMax", "structfrc_1_1TrajectoryConstraint_1_1MinMax.html", null ],
+    [ "frc::MotorSafety", "classfrc_1_1MotorSafety.html", [
+      [ "frc::NidecBrushless", "classfrc_1_1NidecBrushless.html", null ],
+      [ "frc::PWMMotorController", "classfrc_1_1PWMMotorController.html", [
+        [ "frc::DMC60", "classfrc_1_1DMC60.html", null ],
+        [ "frc::Jaguar", "classfrc_1_1Jaguar.html", null ],
+        [ "frc::PWMSparkMax", "classfrc_1_1PWMSparkMax.html", null ],
+        [ "frc::PWMTalonFX", "classfrc_1_1PWMTalonFX.html", null ],
+        [ "frc::PWMTalonSRX", "classfrc_1_1PWMTalonSRX.html", null ],
+        [ "frc::PWMVenom", "classfrc_1_1PWMVenom.html", null ],
+        [ "frc::PWMVictorSPX", "classfrc_1_1PWMVictorSPX.html", null ],
+        [ "frc::SD540", "classfrc_1_1SD540.html", null ],
+        [ "frc::Spark", "classfrc_1_1Spark.html", null ],
+        [ "frc::Talon", "classfrc_1_1Talon.html", null ],
+        [ "frc::Victor", "classfrc_1_1Victor.html", null ],
+        [ "frc::VictorSP", "classfrc_1_1VictorSP.html", null ]
+      ] ],
+      [ "frc::Relay", "classfrc_1_1Relay.html", null ],
+      [ "frc::RobotDriveBase", "classfrc_1_1RobotDriveBase.html", [
+        [ "frc::DifferentialDrive", "classfrc_1_1DifferentialDrive.html", null ],
+        [ "frc::KilloughDrive", "classfrc_1_1KilloughDrive.html", null ],
+        [ "frc::MecanumDrive", "classfrc_1_1MecanumDrive.html", null ]
+      ] ]
+    ] ],
     [ "wpi::NetworkAcceptor", "classwpi_1_1NetworkAcceptor.html", [
       [ "wpi::TCPAcceptor", "classwpi_1_1TCPAcceptor.html", null ]
     ] ],
     [ "wpi::NetworkStream", "classwpi_1_1NetworkStream.html", [
       [ "wpi::TCPStream", "classwpi_1_1TCPStream.html", null ]
     ] ],
+    [ "nt::NetworkTable", "classnt_1_1NetworkTable.html", null ],
     [ "nt::NetworkTableEntry", "classnt_1_1NetworkTableEntry.html", null ],
     [ "nt::NetworkTableInstance", "classnt_1_1NetworkTableInstance.html", null ],
     [ "drake::never_destroyed< T >", "classdrake_1_1never__destroyed.html", null ],
+    [ "frc::Notifier", "classfrc_1_1Notifier.html", null ],
     [ "NT_ConnectionInfo", "structNT__ConnectionInfo.html", null ],
     [ "NT_ConnectionNotification", "structNT__ConnectionNotification.html", null ],
     [ "NT_EntryInfo", "structNT__EntryInfo.html", null ],
@@ -883,27 +818,11 @@ var hierarchy =
     [ "frc::PIDOutput", "classfrc_1_1PIDOutput.html", [
       [ "frc::PIDBase", "classfrc_1_1PIDBase.html", null ],
       [ "frc::PIDCommand", "classfrc_1_1PIDCommand.html", null ],
-      [ "frc::PIDSubsystem", "classfrc_1_1PIDSubsystem.html", null ],
-      [ "frc::SpeedController", "classfrc_1_1SpeedController.html", [
-        [ "frc::NidecBrushless", "classfrc_1_1NidecBrushless.html", null ],
-        [ "frc::PWMSpeedController", "classfrc_1_1PWMSpeedController.html", null ],
-        [ "frc::SpeedControllerGroup", "classfrc_1_1SpeedControllerGroup.html", null ]
-      ] ]
+      [ "frc::PIDSubsystem", "classfrc_1_1PIDSubsystem.html", null ]
     ] ],
     [ "frc::PIDSource", "classfrc_1_1PIDSource.html", [
-      [ "frc::AnalogAccelerometer", "classfrc_1_1AnalogAccelerometer.html", null ],
-      [ "frc::AnalogInput", "classfrc_1_1AnalogInput.html", null ],
-      [ "frc::Encoder", "classfrc_1_1Encoder.html", null ],
-      [ "frc::Filter", "classfrc_1_1Filter.html", [
-        [ "frc::LinearDigitalFilter", "classfrc_1_1LinearDigitalFilter.html", null ]
-      ] ],
-      [ "frc::GyroBase", "classfrc_1_1GyroBase.html", null ],
       [ "frc::PIDCommand", "classfrc_1_1PIDCommand.html", null ],
-      [ "frc::PIDSubsystem", "classfrc_1_1PIDSubsystem.html", null ],
-      [ "frc::Potentiometer", "classfrc_1_1Potentiometer.html", [
-        [ "frc::AnalogPotentiometer", "classfrc_1_1AnalogPotentiometer.html", null ]
-      ] ],
-      [ "frc::Ultrasonic", "classfrc_1_1Ultrasonic.html", null ]
+      [ "frc::PIDSubsystem", "classfrc_1_1PIDSubsystem.html", null ]
     ] ],
     [ "wpi::PointerIntPair< PointerTy, IntBits, IntType, PtrTraits, Info >", "classwpi_1_1PointerIntPair.html", null ],
     [ "wpi::PointerIntPair< void *, 1, bool, PointerUnionUIntTraits< InnerUnion, PT3 > >", "classwpi_1_1PointerIntPair.html", null ],
@@ -936,6 +855,7 @@ var hierarchy =
     [ "wpi::detail::PopulationCounter< T, 8 >", "structwpi_1_1detail_1_1PopulationCounter_3_01T_00_018_01_4.html", null ],
     [ "wpi::PortForwarder", "classwpi_1_1PortForwarder.html", null ],
     [ "frc::Pose2d", "classfrc_1_1Pose2d.html", null ],
+    [ "frc::Preferences", "classfrc_1_1Preferences.html", null ],
     [ "wpi::detail::primitive_iterator_t", "classwpi_1_1detail_1_1primitive__iterator__t.html", null ],
     [ "wpi::priority_queue< T, Sequence, Compare >", "classwpi_1_1priority__queue.html", null ],
     [ "wpi::priority_queue< Callback, std::vector< Callback >, std::greater< Callback > >", "classwpi_1_1priority__queue.html", null ],
@@ -991,6 +911,7 @@ var hierarchy =
     [ "wpi::RefCountedBase< Derived >", "classwpi_1_1RefCountedBase.html", null ],
     [ "wpi::iterator_facade_base< DerivedT, IteratorCategoryT, T, DifferenceTypeT, PointerT, ReferenceT >::ReferenceProxy", "classwpi_1_1iterator__facade__base_1_1ReferenceProxy.html", null ],
     [ "frc::sim::RelaySim", "classfrc_1_1sim_1_1RelaySim.html", null ],
+    [ "frc::Resource", "classfrc_1_1Resource.html", null ],
     [ "wpi::detail::result_pair< R >", "structwpi_1_1detail_1_1result__pair.html", null ],
     [ "reverse_iterator", null, [
       [ "wpi::detail::json_reverse_iterator< Base >", "classwpi_1_1detail_1_1json__reverse__iterator.html", null ]
@@ -998,7 +919,6 @@ var hierarchy =
     [ "frc::sim::RoboRioSim", "classfrc_1_1sim_1_1RoboRioSim.html", null ],
     [ "frc::RobotBase", "classfrc_1_1RobotBase.html", [
       [ "frc::IterativeRobotBase", "classfrc_1_1IterativeRobotBase.html", [
-        [ "frc::IterativeRobot", "classfrc_1_1IterativeRobot.html", null ],
         [ "frc::TimedRobot", "classfrc_1_1TimedRobot.html", null ]
       ] ]
     ] ],
@@ -1015,6 +935,7 @@ var hierarchy =
     [ "nt::RpcResultDef", "structnt_1_1RpcResultDef.html", null ],
     [ "runtime_error", null, [
       [ "drake::internal::assertion_error", "classdrake_1_1internal_1_1assertion__error.html", null ],
+      [ "frc::RuntimeError", "classfrc_1_1RuntimeError.html", null ],
       [ "frc::SplineParameterizer::MalformedSplineException", "structfrc_1_1SplineParameterizer_1_1MalformedSplineException.html", null ]
     ] ],
     [ "wpi::SafeThread", "classwpi_1_1SafeThread.html", [
@@ -1050,15 +971,30 @@ var hierarchy =
       [ "frc::ADXL345_I2C", "classfrc_1_1ADXL345__I2C.html", null ],
       [ "frc::ADXL345_SPI", "classfrc_1_1ADXL345__SPI.html", null ],
       [ "frc::ADXL362", "classfrc_1_1ADXL362.html", null ],
+      [ "frc::ADXRS450_Gyro", "classfrc_1_1ADXRS450__Gyro.html", null ],
       [ "frc::AnalogAccelerometer", "classfrc_1_1AnalogAccelerometer.html", null ],
       [ "frc::AnalogEncoder", "classfrc_1_1AnalogEncoder.html", null ],
+      [ "frc::AnalogGyro", "classfrc_1_1AnalogGyro.html", null ],
       [ "frc::AnalogInput", "classfrc_1_1AnalogInput.html", null ],
       [ "frc::AnalogOutput", "classfrc_1_1AnalogOutput.html", null ],
       [ "frc::AnalogPotentiometer", "classfrc_1_1AnalogPotentiometer.html", null ],
       [ "frc::AnalogTrigger", "classfrc_1_1AnalogTrigger.html", null ],
       [ "frc::AnalogTriggerOutput", "classfrc_1_1AnalogTriggerOutput.html", null ],
       [ "frc::BuiltInAccelerometer", "classfrc_1_1BuiltInAccelerometer.html", null ],
-      [ "frc::Command", "classfrc_1_1Command.html", null ],
+      [ "frc::Command", "classfrc_1_1Command.html", [
+        [ "frc::CommandGroup", "classfrc_1_1CommandGroup.html", null ],
+        [ "frc::ConditionalCommand", "classfrc_1_1ConditionalCommand.html", null ],
+        [ "frc::InstantCommand", "classfrc_1_1InstantCommand.html", [
+          [ "frc::PrintCommand", "classfrc_1_1PrintCommand.html", null ],
+          [ "frc::StartCommand", "classfrc_1_1StartCommand.html", null ]
+        ] ],
+        [ "frc::PIDCommand", "classfrc_1_1PIDCommand.html", null ],
+        [ "frc::TimedCommand", "classfrc_1_1TimedCommand.html", [
+          [ "frc::WaitCommand", "classfrc_1_1WaitCommand.html", null ]
+        ] ],
+        [ "frc::WaitForChildren", "classfrc_1_1WaitForChildren.html", null ],
+        [ "frc::WaitUntilCommand", "classfrc_1_1WaitUntilCommand.html", null ]
+      ] ],
       [ "frc::Compressor", "classfrc_1_1Compressor.html", null ],
       [ "frc::Counter", "classfrc_1_1Counter.html", null ],
       [ "frc::DifferentialDrive", "classfrc_1_1DifferentialDrive.html", null ],
@@ -1070,26 +1006,29 @@ var hierarchy =
       [ "frc::DutyCycleEncoder", "classfrc_1_1DutyCycleEncoder.html", null ],
       [ "frc::Encoder", "classfrc_1_1Encoder.html", null ],
       [ "frc::Field2d", "classfrc_1_1Field2d.html", null ],
-      [ "frc::GyroBase", "classfrc_1_1GyroBase.html", null ],
       [ "frc::KilloughDrive", "classfrc_1_1KilloughDrive.html", null ],
       [ "frc::MecanumDrive", "classfrc_1_1MecanumDrive.html", null ],
       [ "frc::Mechanism2d", "classfrc_1_1Mechanism2d.html", null ],
+      [ "frc::MotorControllerGroup", "classfrc_1_1MotorControllerGroup.html", null ],
       [ "frc::NidecBrushless", "classfrc_1_1NidecBrushless.html", null ],
       [ "frc::PIDBase", "classfrc_1_1PIDBase.html", null ],
       [ "frc::PowerDistributionPanel", "classfrc_1_1PowerDistributionPanel.html", null ],
       [ "frc::ProfiledPIDController< Distance >", "classfrc_1_1ProfiledPIDController.html", null ],
-      [ "frc::PWM", "classfrc_1_1PWM.html", null ],
+      [ "frc::PWM", "classfrc_1_1PWM.html", [
+        [ "frc::Servo", "classfrc_1_1Servo.html", null ]
+      ] ],
+      [ "frc::PWMMotorController", "classfrc_1_1PWMMotorController.html", null ],
       [ "frc::Relay", "classfrc_1_1Relay.html", null ],
       [ "frc::Scheduler", "classfrc_1_1Scheduler.html", null ],
-      [ "frc::SendableBase", "classfrc_1_1SendableBase.html", null ],
       [ "frc::SendableCameraWrapper", "classfrc_1_1SendableCameraWrapper.html", null ],
       [ "frc::SendableChooserBase", "classfrc_1_1SendableChooserBase.html", [
         [ "frc::SendableChooser< T >", "classfrc_1_1SendableChooser.html", null ]
       ] ],
       [ "frc::SmartDashboard", "classfrc_1_1SmartDashboard.html", null ],
       [ "frc::Solenoid", "classfrc_1_1Solenoid.html", null ],
-      [ "frc::SpeedControllerGroup", "classfrc_1_1SpeedControllerGroup.html", null ],
-      [ "frc::Subsystem", "classfrc_1_1Subsystem.html", null ],
+      [ "frc::Subsystem", "classfrc_1_1Subsystem.html", [
+        [ "frc::PIDSubsystem", "classfrc_1_1PIDSubsystem.html", null ]
+      ] ],
       [ "frc::Trigger", "classfrc_1_1Trigger.html", [
         [ "frc::Button", "classfrc_1_1Button.html", [
           [ "frc::InternalButton", "classfrc_1_1InternalButton.html", null ],
@@ -1114,11 +1053,17 @@ var hierarchy =
     [ "frc::SendableHelper< ADXL362 >", "classfrc_1_1SendableHelper.html", [
       [ "frc::ADXL362", "classfrc_1_1ADXL362.html", null ]
     ] ],
+    [ "frc::SendableHelper< ADXRS450_Gyro >", "classfrc_1_1SendableHelper.html", [
+      [ "frc::ADXRS450_Gyro", "classfrc_1_1ADXRS450__Gyro.html", null ]
+    ] ],
     [ "frc::SendableHelper< AnalogAccelerometer >", "classfrc_1_1SendableHelper.html", [
       [ "frc::AnalogAccelerometer", "classfrc_1_1AnalogAccelerometer.html", null ]
     ] ],
     [ "frc::SendableHelper< AnalogEncoder >", "classfrc_1_1SendableHelper.html", [
       [ "frc::AnalogEncoder", "classfrc_1_1AnalogEncoder.html", null ]
+    ] ],
+    [ "frc::SendableHelper< AnalogGyro >", "classfrc_1_1SendableHelper.html", [
+      [ "frc::AnalogGyro", "classfrc_1_1AnalogGyro.html", null ]
     ] ],
     [ "frc::SendableHelper< AnalogInput >", "classfrc_1_1SendableHelper.html", [
       [ "frc::AnalogInput", "classfrc_1_1AnalogInput.html", null ]
@@ -1180,9 +1125,6 @@ var hierarchy =
     [ "frc::SendableHelper< Field2d >", "classfrc_1_1SendableHelper.html", [
       [ "frc::Field2d", "classfrc_1_1Field2d.html", null ]
     ] ],
-    [ "frc::SendableHelper< GyroBase >", "classfrc_1_1SendableHelper.html", [
-      [ "frc::GyroBase", "classfrc_1_1GyroBase.html", null ]
-    ] ],
     [ "frc::SendableHelper< KilloughDrive >", "classfrc_1_1SendableHelper.html", [
       [ "frc::KilloughDrive", "classfrc_1_1KilloughDrive.html", null ]
     ] ],
@@ -1191,6 +1133,9 @@ var hierarchy =
     ] ],
     [ "frc::SendableHelper< Mechanism2d >", "classfrc_1_1SendableHelper.html", [
       [ "frc::Mechanism2d", "classfrc_1_1Mechanism2d.html", null ]
+    ] ],
+    [ "frc::SendableHelper< MotorControllerGroup >", "classfrc_1_1SendableHelper.html", [
+      [ "frc::MotorControllerGroup", "classfrc_1_1MotorControllerGroup.html", null ]
     ] ],
     [ "frc::SendableHelper< NidecBrushless >", "classfrc_1_1SendableHelper.html", [
       [ "frc::NidecBrushless", "classfrc_1_1NidecBrushless.html", null ]
@@ -1213,14 +1158,14 @@ var hierarchy =
     [ "frc::SendableHelper< PWM >", "classfrc_1_1SendableHelper.html", [
       [ "frc::PWM", "classfrc_1_1PWM.html", null ]
     ] ],
+    [ "frc::SendableHelper< PWMMotorController >", "classfrc_1_1SendableHelper.html", [
+      [ "frc::PWMMotorController", "classfrc_1_1PWMMotorController.html", null ]
+    ] ],
     [ "frc::SendableHelper< Relay >", "classfrc_1_1SendableHelper.html", [
       [ "frc::Relay", "classfrc_1_1Relay.html", null ]
     ] ],
     [ "frc::SendableHelper< Scheduler >", "classfrc_1_1SendableHelper.html", [
       [ "frc::Scheduler", "classfrc_1_1Scheduler.html", null ]
-    ] ],
-    [ "frc::SendableHelper< SendableBase >", "classfrc_1_1SendableHelper.html", [
-      [ "frc::SendableBase", "classfrc_1_1SendableBase.html", null ]
     ] ],
     [ "frc::SendableHelper< SendableCameraWrapper >", "classfrc_1_1SendableHelper.html", [
       [ "frc::SendableCameraWrapper", "classfrc_1_1SendableCameraWrapper.html", null ]
@@ -1233,9 +1178,6 @@ var hierarchy =
     ] ],
     [ "frc::SendableHelper< Solenoid >", "classfrc_1_1SendableHelper.html", [
       [ "frc::Solenoid", "classfrc_1_1Solenoid.html", null ]
-    ] ],
-    [ "frc::SendableHelper< SpeedControllerGroup >", "classfrc_1_1SendableHelper.html", [
-      [ "frc::SpeedControllerGroup", "classfrc_1_1SpeedControllerGroup.html", null ]
     ] ],
     [ "frc::SendableHelper< Subsystem >", "classfrc_1_1SendableHelper.html", [
       [ "frc::Subsystem", "classfrc_1_1Subsystem.html", null ]
@@ -1252,6 +1194,7 @@ var hierarchy =
     [ "frc::SendableRegistry", "classfrc_1_1SendableRegistry.html", null ],
     [ "frc::SensorUtil", "classfrc_1_1SensorUtil.html", null ],
     [ "hal::SerialHelper", "classhal_1_1SerialHelper.html", null ],
+    [ "frc::SerialPort", "classfrc_1_1SerialPort.html", null ],
     [ "wpi::WebSocketServer::ServerOptions", "structwpi_1_1WebSocketServer_1_1ServerOptions.html", null ],
     [ "wpi::SHA1", "classwpi_1_1SHA1.html", null ],
     [ "frc::Shuffleboard", "classfrc_1_1Shuffleboard.html", null ],
@@ -1282,7 +1225,10 @@ var hierarchy =
           ] ]
         ] ]
       ] ],
-      [ "frc::ShuffleboardContainer", "classfrc_1_1ShuffleboardContainer.html", null ]
+      [ "frc::ShuffleboardContainer", "classfrc_1_1ShuffleboardContainer.html", [
+        [ "frc::ShuffleboardLayout", "classfrc_1_1ShuffleboardLayout.html", null ],
+        [ "frc::ShuffleboardTab", "classfrc_1_1ShuffleboardTab.html", null ]
+      ] ]
     ] ],
     [ "wpi::sig::SignalBase< Lockable, T >", "classwpi_1_1sig_1_1SignalBase.html", null ],
     [ "wpi::sig::SignalBase< bool >", "classwpi_1_1sig_1_1SignalBase.html", null ],
@@ -1450,8 +1396,20 @@ var hierarchy =
     [ "wpi::SmallVectorStorage< wpi::uv::Buffer, N >", "structwpi_1_1SmallVectorStorage.html", [
       [ "wpi::SmallVector< wpi::uv::Buffer, 4 >", "classwpi_1_1SmallVector.html", null ]
     ] ],
+    [ "frc::SolenoidBase", "classfrc_1_1SolenoidBase.html", [
+      [ "frc::DoubleSolenoid", "classfrc_1_1DoubleSolenoid.html", null ],
+      [ "frc::Solenoid", "classfrc_1_1Solenoid.html", null ]
+    ] ],
     [ "frc::sim::SolenoidSim", "classfrc_1_1sim_1_1SolenoidSim.html", null ],
     [ "wpi::sys::fs::space_info", "structwpi_1_1sys_1_1fs_1_1space__info.html", null ],
+    [ "SpeedController", null, [
+      [ "frc::MotorController", "classfrc_1_1MotorController.html", [
+        [ "frc::MotorControllerGroup", "classfrc_1_1MotorControllerGroup.html", null ],
+        [ "frc::NidecBrushless", "classfrc_1_1NidecBrushless.html", null ],
+        [ "frc::PWMMotorController", "classfrc_1_1PWMMotorController.html", null ]
+      ] ]
+    ] ],
+    [ "frc::SPI", "classfrc_1_1SPI.html", null ],
     [ "frc::sim::SPIAccelerometerSim", "classfrc_1_1sim_1_1SPIAccelerometerSim.html", null ],
     [ "wpi::spinlock", "classwpi_1_1spinlock.html", null ],
     [ "frc::Spline< Degree >", "classfrc_1_1Spline.html", null ],
@@ -1463,9 +1421,9 @@ var hierarchy =
     ] ],
     [ "frc::SplineHelper", "classfrc_1_1SplineHelper.html", null ],
     [ "frc::SplineParameterizer", "classfrc_1_1SplineParameterizer.html", null ],
-    [ "frc::TrapezoidProfile< Distance >::State", "classfrc_1_1TrapezoidProfile_1_1State.html", null ],
     [ "frc::Trajectory::State", "structfrc_1_1Trajectory_1_1State.html", null ],
     [ "frc::sim::DifferentialDrivetrainSim::State", "classfrc_1_1sim_1_1DifferentialDrivetrainSim_1_1State.html", null ],
+    [ "frc::TrapezoidProfile< Distance >::State", "classfrc_1_1TrapezoidProfile_1_1State.html", null ],
     [ "wpi::static_circular_buffer< T, N >", "classwpi_1_1static__circular__buffer.html", null ],
     [ "wpi::detail::static_const< T >", "structwpi_1_1detail_1_1static__const.html", null ],
     [ "wpi::StringMapConstIterator< ValueTy >", "classwpi_1_1StringMapConstIterator.html", null ],
@@ -1496,8 +1454,8 @@ var hierarchy =
     [ "frc::SwerveModuleState", "structfrc_1_1SwerveModuleState.html", null ],
     [ "wpi::TCPConnector", "classwpi_1_1TCPConnector.html", null ],
     [ "wpi::ThreadSafeRefCountedBase< Derived >", "classwpi_1_1ThreadSafeRefCountedBase.html", null ],
-    [ "frc2::Timer", "classfrc2_1_1Timer.html", null ],
     [ "frc::Timer", "classfrc_1_1Timer.html", null ],
+    [ "frc2::Timer", "classfrc2_1_1Timer.html", null ],
     [ "wpi::detail::to_json_fn", "structwpi_1_1detail_1_1to__json__fn.html", null ],
     [ "frc::Tracer", "classfrc_1_1Tracer.html", null ],
     [ "wpi::detail::TrailingZerosCounter< T, SizeOfT >", "structwpi_1_1detail_1_1TrailingZerosCounter.html", null ],

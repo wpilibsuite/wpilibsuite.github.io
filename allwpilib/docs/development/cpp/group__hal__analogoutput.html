@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.3.1-8-gba08baa</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-37-g3cc2da3</span>
    </div>
   </td>
  </tr>
@@ -98,9 +98,9 @@ $(document).ready(function(){initNavTree('group__hal__analogoutput.html',''); in
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gabc40f524a87fad1ab3abd85ebf595be1"><td class="memItemLeft" align="right" valign="top">HAL_AnalogOutputHandle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__analogoutput.html#gabc40f524a87fad1ab3abd85ebf595be1">HAL_InitializeAnalogOutputPort</a> (HAL_PortHandle portHandle, int32_t *status)</td></tr>
-<tr class="memdesc:gabc40f524a87fad1ab3abd85ebf595be1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the analog output port using the given port object.  <a href="group__hal__analogoutput.html#gabc40f524a87fad1ab3abd85ebf595be1">More...</a><br /></td></tr>
-<tr class="separator:gabc40f524a87fad1ab3abd85ebf595be1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga400c209027c3925b0cb5915518a0df03"><td class="memItemLeft" align="right" valign="top">HAL_AnalogOutputHandle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__analogoutput.html#ga400c209027c3925b0cb5915518a0df03">HAL_InitializeAnalogOutputPort</a> (HAL_PortHandle portHandle, const char *allocationLocation, int32_t *status)</td></tr>
+<tr class="memdesc:ga400c209027c3925b0cb5915518a0df03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the analog output port using the given port object.  <a href="group__hal__analogoutput.html#ga400c209027c3925b0cb5915518a0df03">More...</a><br /></td></tr>
+<tr class="separator:ga400c209027c3925b0cb5915518a0df03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2258048dc3660182254b2306dad55a2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__analogoutput.html#ga2258048dc3660182254b2306dad55a2b">HAL_FreeAnalogOutputPort</a> (HAL_AnalogOutputHandle analogOutputHandle)</td></tr>
 <tr class="memdesc:ga2258048dc3660182254b2306dad55a2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees an analog output port.  <a href="group__hal__analogoutput.html#ga2258048dc3660182254b2306dad55a2b">More...</a><br /></td></tr>
 <tr class="separator:ga2258048dc3660182254b2306dad55a2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -201,8 +201,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gabc40f524a87fad1ab3abd85ebf595be1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabc40f524a87fad1ab3abd85ebf595be1">&#9670;&nbsp;</a></span>HAL_InitializeAnalogOutputPort()</h2>
+<a id="ga400c209027c3925b0cb5915518a0df03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga400c209027c3925b0cb5915518a0df03">&#9670;&nbsp;</a></span>HAL_InitializeAnalogOutputPort()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -212,6 +212,12 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">HAL_PortHandle&#160;</td>
           <td class="paramname"><em>portHandle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>allocationLocation</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -231,6 +237,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">handle</td><td>handle to the port </td></tr>
+    <tr><td class="paramname">allocationLocation</td><td>the location where the allocation is occuring (can be null) </td></tr>
   </table>
   </dd>
 </dl>
@@ -286,7 +293,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed May 5 2021 16:19:11 for WPILibC++ by
+    <li class="footer">Generated on Sun May 9 2021 21:19:02 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

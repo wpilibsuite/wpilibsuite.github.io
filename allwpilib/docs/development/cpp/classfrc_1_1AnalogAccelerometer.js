@@ -8,7 +8,6 @@ var classfrc_1_1AnalogAccelerometer =
     [ "GetAcceleration", "classfrc_1_1AnalogAccelerometer.html#a0baa10094440820e7410c0c08e1fade1", null ],
     [ "InitSendable", "classfrc_1_1AnalogAccelerometer.html#a301cc10fb1aba95aafe121356144dfda", null ],
     [ "operator=", "classfrc_1_1AnalogAccelerometer.html#ab9ee5134faf7fcaa49bed13ed46b3e80", null ],
-    [ "PIDGet", "classfrc_1_1AnalogAccelerometer.html#aa20f62a19ff7290cc14aace5f699072f", null ],
     [ "SetSensitivity", "classfrc_1_1AnalogAccelerometer.html#a24d703f4ba26f1fc7667f57717542ae4", null ],
     [ "SetZero", "classfrc_1_1AnalogAccelerometer.html#a0964e8092e0d7c11cecefdf958af2f56", null ]
 ];

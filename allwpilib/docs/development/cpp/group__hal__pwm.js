@@ -9,7 +9,7 @@ var group__hal__pwm =
     [ "HAL_GetPWMPosition", "group__hal__pwm.html#gaa35a1bf8b7d6a5aae848730d0ec5c432", null ],
     [ "HAL_GetPWMRaw", "group__hal__pwm.html#gab0a94b19db7022d423efc99c69fce5f9", null ],
     [ "HAL_GetPWMSpeed", "group__hal__pwm.html#ga29ca5a9035d676b5b1287f4f6c9af286", null ],
-    [ "HAL_InitializePWMPort", "group__hal__pwm.html#gae100a60782ec99d03463db1fb573f8b7", null ],
+    [ "HAL_InitializePWMPort", "group__hal__pwm.html#gabc14e1d74c60212d1da9aaf5b7cbc9a9", null ],
     [ "HAL_LatchPWMZero", "group__hal__pwm.html#ga4905d6b330ea522818b633de07337fa6", null ],
     [ "HAL_SetPWMConfig", "group__hal__pwm.html#ga24054a72700e0350264e1e2f9fef8ba8", null ],
     [ "HAL_SetPWMConfigRaw", "group__hal__pwm.html#ga327dd3c43cd8ca5dd53cdbb150eeae5d", null ],

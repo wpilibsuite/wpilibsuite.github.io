@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.3.1-8-gba08baa</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-37-g3cc2da3</span>
    </div>
   </td>
  </tr>
@@ -120,9 +120,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4ce857fd5beae5f9a7a4e386110294e3"><td class="memItemLeft" align="right" valign="top"><a id="a4ce857fd5beae5f9a7a4e386110294e3"></a>
 <a class="el" href="classhal_1_1DigitalHandleResource.html">DigitalHandleResource</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classhal_1_1DigitalHandleResource.html">DigitalHandleResource</a> &amp;)=delete</td></tr>
 <tr class="separator:a4ce857fd5beae5f9a7a4e386110294e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade4580a75e3b00d352df4732b6b49b24"><td class="memItemLeft" align="right" valign="top"><a id="ade4580a75e3b00d352df4732b6b49b24"></a>
-THandle&#160;</td><td class="memItemRight" valign="bottom"><b>Allocate</b> (int16_t index, <a class="el" href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9">HAL_HandleEnum</a> enumValue, int32_t *status)</td></tr>
-<tr class="separator:ade4580a75e3b00d352df4732b6b49b24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c0e75ec5428284955c5bd27c061556c"><td class="memItemLeft" align="right" valign="top"><a id="a9c0e75ec5428284955c5bd27c061556c"></a>
+std::shared_ptr&lt; TStruct &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Allocate</b> (int16_t index, <a class="el" href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9">HAL_HandleEnum</a> enumValue, THandle *handle, int32_t *status)</td></tr>
+<tr class="separator:a9c0e75ec5428284955c5bd27c061556c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99d3c042b7c4b0bd310d355a8959ae9e"><td class="memItemLeft" align="right" valign="top"><a id="a99d3c042b7c4b0bd310d355a8959ae9e"></a>
 int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetIndex</b> (THandle handle, <a class="el" href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9">HAL_HandleEnum</a> enumValue)</td></tr>
 <tr class="separator:a99d3c042b7c4b0bd310d355a8959ae9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -165,7 +165,7 @@ int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_version</b></td>
 class hal::DigitalHandleResource&lt; THandle, TStruct, size &gt;</h3>
 
 <p>The <a class="el" href="classhal_1_1DigitalHandleResource.html" title="The DigitalHandleResource class is a way to track handles.">DigitalHandleResource</a> class is a way to track handles. </p>
-<p>This version allows a limited number of handles that are allocated by index. The enum value is separate, as 2 enum values are allowed per handle Because they are allocated by index, each individual index holds its own mutex, which reduces contention heavily.]</p>
+<p>This version allows a limited number of handles that are allocated by index. The enum value is separate, as 2 enum values are allowed per handle Because they are allocated by index, each individual index holds its own mutex, which reduces contention heavily.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">THandle</td><td>The Handle Type (Must be typedefed from HAL_Handle) </td></tr>
@@ -183,7 +183,7 @@ class hal::DigitalHandleResource&lt; THandle, TStruct, size &gt;</h3>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacehal.html">hal</a></li><li class="navelem"><a class="el" href="classhal_1_1DigitalHandleResource.html">DigitalHandleResource</a></li>
-    <li class="footer">Generated on Wed May 5 2021 16:19:13 for WPILibC++ by
+    <li class="footer">Generated on Sun May 9 2021 21:19:04 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

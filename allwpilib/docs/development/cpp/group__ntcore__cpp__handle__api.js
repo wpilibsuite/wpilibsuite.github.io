@@ -27,13 +27,13 @@ var group__ntcore__cpp__handle__api =
     ] ],
     [ "RpcParamDef", "structnt_1_1RpcParamDef.html", [
       [ "RpcParamDef", "structnt_1_1RpcParamDef.html#a96ba9260c2033f8071a9b34b3ff878ef", null ],
-      [ "RpcParamDef", "structnt_1_1RpcParamDef.html#a84786d62d02ed3f31e4d7d7195ae708d", null ],
+      [ "RpcParamDef", "structnt_1_1RpcParamDef.html#a35e21453fb3c30b0964a8c740db596e0", null ],
       [ "def_value", "structnt_1_1RpcParamDef.html#a29b1e08fba5e324202b851b31b1bfcb3", null ],
       [ "name", "structnt_1_1RpcParamDef.html#acc4ab1f3307e516a20a2620af26ba99e", null ]
     ] ],
     [ "RpcResultDef", "structnt_1_1RpcResultDef.html", [
       [ "RpcResultDef", "structnt_1_1RpcResultDef.html#a18621588351214621dcf745cfdda0355", null ],
-      [ "RpcResultDef", "structnt_1_1RpcResultDef.html#ae10aef361d44394caeb7487627b8bcda", null ],
+      [ "RpcResultDef", "structnt_1_1RpcResultDef.html#a7e5c5c12ba9ed0db8acf538a838df933", null ],
       [ "name", "structnt_1_1RpcResultDef.html#a09fe38cec8626e0f8f6207b8e53ea45d", null ],
       [ "type", "structnt_1_1RpcResultDef.html#aabf4718ae87af9b53ccde366aab462dc", null ]
     ] ],
@@ -45,9 +45,9 @@ var group__ntcore__cpp__handle__api =
     ] ],
     [ "RpcAnswer", "classnt_1_1RpcAnswer.html", [
       [ "RpcAnswer", "classnt_1_1RpcAnswer.html#a0d08fcd73e9a4e969a72ac5ea727469b", null ],
-      [ "RpcAnswer", "classnt_1_1RpcAnswer.html#ac6d83bdc9baa8965dd5df8d119b6639a", null ],
+      [ "RpcAnswer", "classnt_1_1RpcAnswer.html#abc1f8df7af2c1ee8fd548626e45bdfde", null ],
       [ "operator bool", "classnt_1_1RpcAnswer.html#a11dab1003d3be6dc7701a9836eaa649b", null ],
-      [ "PostResponse", "classnt_1_1RpcAnswer.html#aeabd75eef2fa528edc6d4bc22f06236e", null ],
+      [ "PostResponse", "classnt_1_1RpcAnswer.html#acc7489a6a1fe241fe50df93cce32afef", null ],
       [ "swap", "classnt_1_1RpcAnswer.html#a75bc005ff406f5a20ed8a1cc76400e97", null ],
       [ "call", "classnt_1_1RpcAnswer.html#a12f30deea8ee389a91470e31229c22c8", null ],
       [ "conn", "classnt_1_1RpcAnswer.html#a397c033f5a5a28fb256d38a7fff449e9", null ],
@@ -57,7 +57,7 @@ var group__ntcore__cpp__handle__api =
     ] ],
     [ "EntryNotification", "classnt_1_1EntryNotification.html", [
       [ "EntryNotification", "classnt_1_1EntryNotification.html#a96a7d3c5f2c28af753cd3e3926ffd373", null ],
-      [ "EntryNotification", "classnt_1_1EntryNotification.html#a9c57a9ea12c26f668b2993d9b079bd70", null ],
+      [ "EntryNotification", "classnt_1_1EntryNotification.html#a11232b128b116baabad1545f8c9decfe", null ],
       [ "swap", "classnt_1_1EntryNotification.html#aa4d244bca97c45cab1681344d91a1d7b", null ],
       [ "entry", "classnt_1_1EntryNotification.html#aceaea94b3665dedc155fce277083de95", null ],
       [ "flags", "classnt_1_1EntryNotification.html#a9e0c9af5ad0f935ea8a9a9e81ead1d57", null ],
@@ -75,7 +75,7 @@ var group__ntcore__cpp__handle__api =
     ] ],
     [ "LogMessage", "classnt_1_1LogMessage.html", [
       [ "LogMessage", "classnt_1_1LogMessage.html#a80edb2b75f1924d7c68e9fd0efd10c78", null ],
-      [ "LogMessage", "classnt_1_1LogMessage.html#abfc3a5d25465d3bb2dedc201b152d6d0", null ],
+      [ "LogMessage", "classnt_1_1LogMessage.html#a4b5593a9405e66d5016f1a5eb1507580", null ],
       [ "swap", "classnt_1_1LogMessage.html#a796eccb62d616bbb66106f3cc62bd843", null ],
       [ "filename", "classnt_1_1LogMessage.html#aa04b8267dc0f36b64017b809a07f4da1", null ],
       [ "level", "classnt_1_1LogMessage.html#a8ab3099aaa618a873dbbd1e7bb6b7be2", null ],

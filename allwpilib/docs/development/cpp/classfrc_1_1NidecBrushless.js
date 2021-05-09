@@ -11,7 +11,6 @@ var classfrc_1_1NidecBrushless =
     [ "GetInverted", "classfrc_1_1NidecBrushless.html#adbfd4b9f2ed0a9556d303fd3aab18631", null ],
     [ "InitSendable", "classfrc_1_1NidecBrushless.html#afec023f45c2fcff132679f2a2061fdba", null ],
     [ "operator=", "classfrc_1_1NidecBrushless.html#afee137a7c221e61b622c92ba173a6d4b", null ],
-    [ "PIDWrite", "classfrc_1_1NidecBrushless.html#a3b2224ab431ddf00f91e1ecee74d3ad6", null ],
     [ "Set", "classfrc_1_1NidecBrushless.html#ad0fbeb8d79bbb8930b413b571abf255b", null ],
     [ "SetInverted", "classfrc_1_1NidecBrushless.html#afe6ecb3d622f3b410043eabae0a1efe8", null ],
     [ "StopMotor", "classfrc_1_1NidecBrushless.html#a2ff988ba4a5488c8da0ba2237fc26c3c", null ]

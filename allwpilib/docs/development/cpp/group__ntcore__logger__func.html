@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.3.1-8-gba08baa</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-37-g3cc2da3</span>
    </div>
   </td>
  </tr>
@@ -90,24 +90,14 @@ $(document).ready(function(){initNavTree('group__ntcore__logger__func.html','');
 
 <div class="header">
   <div class="summary">
-<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Logger Functions<div class="ingroups"><a class="el" href="group__ntcore__cpp__handle__api.html">ntcore C++ API</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:ga9c73b7905117ec0ebe03ec852712b6d7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__logger__func.html#ga9c73b7905117ec0ebe03ec852712b6d7">nt::LogFunc</a> = std::function&lt; void(unsigned int, const char *, unsigned int, const char *)&gt;</td></tr>
-<tr class="memdesc:ga9c73b7905117ec0ebe03ec852712b6d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log function.  <a href="group__ntcore__logger__func.html#ga9c73b7905117ec0ebe03ec852712b6d7">More...</a><br /></td></tr>
-<tr class="separator:ga9c73b7905117ec0ebe03ec852712b6d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga03fdd165c8996cd5f0f7e39a9ade192d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__logger__func.html#ga03fdd165c8996cd5f0f7e39a9ade192d">nt::SetLogger</a> (<a class="el" href="group__ntcore__logger__func.html#ga9c73b7905117ec0ebe03ec852712b6d7">LogFunc</a> func, unsigned int min_level)</td></tr>
-<tr class="memdesc:ga03fdd165c8996cd5f0f7e39a9ade192d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set logger callback function.  <a href="group__ntcore__logger__func.html#ga03fdd165c8996cd5f0f7e39a9ade192d">More...</a><br /></td></tr>
-<tr class="separator:ga03fdd165c8996cd5f0f7e39a9ade192d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8171c7719887be8c60df6fbbf8408399"><td class="memItemLeft" align="right" valign="top">NT_Logger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__logger__func.html#ga8171c7719887be8c60df6fbbf8408399">nt::AddLogger</a> (NT_Inst inst, std::function&lt; void(const <a class="el" href="classnt_1_1LogMessage.html">LogMessage</a> &amp;msg)&gt; func, unsigned int min_level, unsigned int max_level)</td></tr>
 <tr class="memdesc:ga8171c7719887be8c60df6fbbf8408399"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add logger callback function.  <a href="group__ntcore__logger__func.html#ga8171c7719887be8c60df6fbbf8408399">More...</a><br /></td></tr>
 <tr class="separator:ga8171c7719887be8c60df6fbbf8408399"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,32 +127,6 @@ Functions</h2></td></tr>
 <tr class="separator:ga4fae112bec6981b6636e7999aa40ed92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a id="ga9c73b7905117ec0ebe03ec852712b6d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9c73b7905117ec0ebe03ec852712b6d7">&#9670;&nbsp;</a></span>LogFunc</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="group__ntcore__logger__func.html#ga9c73b7905117ec0ebe03ec852712b6d7">nt::LogFunc</a> = typedef std::function&lt;void(unsigned int, const char*, unsigned int, const char*)&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Log function. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">level</td><td>log level of the message (see NT_LogLevel) </td></tr>
-    <tr><td class="paramname">file</td><td>origin source filename </td></tr>
-    <tr><td class="paramname">line</td><td>origin source line number </td></tr>
-    <tr><td class="paramname">msg</td><td>message </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ga8171c7719887be8c60df6fbbf8408399"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga8171c7719887be8c60df6fbbf8408399">&#9670;&nbsp;</a></span>AddLogger()</h2>
@@ -445,44 +409,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga03fdd165c8996cd5f0f7e39a9ade192d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga03fdd165c8996cd5f0f7e39a9ade192d">&#9670;&nbsp;</a></span>SetLogger()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void nt::SetLogger </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__ntcore__logger__func.html#ga9c73b7905117ec0ebe03ec852712b6d7">LogFunc</a>&#160;</td>
-          <td class="paramname"><em>func</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>min_level</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set logger callback function. </p>
-<p>By default, log messages are sent to stderr; this function changes the log level and sends log messages to the provided callback function instead. The callback function will only be called for log messages with level greater than or equal to min_level; messages lower than this level will be silently ignored.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">func</td><td>log callback function </td></tr>
-    <tr><td class="paramname">min_level</td><td>minimum log level </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="ga4fae112bec6981b6636e7999aa40ed92"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga4fae112bec6981b6636e7999aa40ed92">&#9670;&nbsp;</a></span>WaitForLoggerQueue()</h2>
 
@@ -527,7 +453,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed May 5 2021 16:19:11 for WPILibC++ by
+    <li class="footer">Generated on Sun May 9 2021 21:19:02 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

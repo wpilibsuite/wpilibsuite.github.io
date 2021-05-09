@@ -26,7 +26,7 @@ var classfrc_1_1SendableRegistry =
     [ "GetUniqueId", "classfrc_1_1SendableRegistry.html#a491459de10ee114a4c6268220465b04d", null ],
     [ "Move", "classfrc_1_1SendableRegistry.html#ad9b4940f262e066d873b74365a604118", null ],
     [ "operator=", "classfrc_1_1SendableRegistry.html#ae5b85bd0b614f43aaa61d272a54882e0", null ],
-    [ "Publish", "classfrc_1_1SendableRegistry.html#a41fd58f88b7b9bf671f4db70a544644f", null ],
+    [ "Publish", "classfrc_1_1SendableRegistry.html#a6a2c15917c97f64d6d77bd95b97701d4", null ],
     [ "Remove", "classfrc_1_1SendableRegistry.html#af06ef9054f12f4cf0fdfadbdb74e5bcd", null ],
     [ "SetData", "classfrc_1_1SendableRegistry.html#a7c004ed738cd1f24384629a03b8eb418", null ],
     [ "SetName", "classfrc_1_1SendableRegistry.html#a6edb5437a7ae726990b700a5cce77adf", null ],

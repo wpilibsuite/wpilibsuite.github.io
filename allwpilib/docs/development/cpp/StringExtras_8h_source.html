@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.3.1-8-gba08baa</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-37-g3cc2da3</span>
    </div>
   </td>
  </tr>
@@ -124,15 +124,15 @@ $(document).ready(function(){initNavTree('StringExtras_8h_source.html',''); init
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">namespace </span>wpi {</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classwpi_1_1SmallVectorImpl.html">   32</a></span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="keyword">class </span><a class="code" href="classwpi_1_1SmallVectorImpl.html">SmallVectorImpl</a>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">class </span><a class="code" href="classwpi_1_1raw__ostream.html">raw_ostream</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="keyword">class </span>SmallVectorImpl;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">class </span>raw_ostream;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">char</span> hexdigit(<span class="keywordtype">unsigned</span> X, <span class="keywordtype">bool</span> LowerCase = <span class="keyword">false</span>) {</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">char</span> HexChar = LowerCase ? <span class="charliteral">&#39;a&#39;</span> : <span class="charliteral">&#39;A&#39;</span>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordflow">return</span> X &lt; 10 ? <span class="charliteral">&#39;0&#39;</span> + X : HexChar + X - 10;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">inline</span> <a class="code" href="classwpi_1_1StringRef.html">StringRef</a> toStringRef(<span class="keywordtype">bool</span> B) { <span class="keywordflow">return</span> <a class="code" href="classwpi_1_1StringRef.html">StringRef</a>(B ? <span class="stringliteral">&quot;true&quot;</span> : <span class="stringliteral">&quot;false&quot;</span>); }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">inline</span> StringRef toStringRef(<span class="keywordtype">bool</span> B) { <span class="keywordflow">return</span> StringRef(B ? <span class="stringliteral">&quot;true&quot;</span> : <span class="stringliteral">&quot;false&quot;</span>); }</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">inline</span> StringRef toStringRef(ArrayRef&lt;uint8_t&gt; Input) {</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordflow">return</span> StringRef(<span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span><span class="keywordtype">char</span> *<span class="keyword">&gt;</span>(Input.begin()), Input.size());</div>
@@ -251,11 +251,11 @@ $(document).ready(function(){initNavTree('StringExtras_8h_source.html',''); init
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  <span class="keywordflow">return</span> !S.getAsInteger(Base, Num);</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;}</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
-<div class="line"><a name="l00188"></a><span class="lineno"><a class="line" href="namespacewpi_1_1detail.html">  188</a></span>&#160;<span class="keyword">namespace </span>detail {</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="keyword">namespace </span>detail {</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> N&gt;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> to_float(<span class="keyword">const</span> <a class="code" href="classwpi_1_1Twine.html">Twine</a> &amp;T, N &amp;Num, N (*StrTo)(<span class="keyword">const</span> <span class="keywordtype">char</span> *, <span class="keywordtype">char</span> **)) {</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  <a class="code" href="classwpi_1_1SmallString.html">SmallString&lt;32&gt;</a> Storage;</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  <a class="code" href="classwpi_1_1StringRef.html">StringRef</a> S = T.<a class="code" href="classwpi_1_1Twine.html#a50e7384b0e9ebc4ccaac552e708220a8">toNullTerminatedStringRef</a>(Storage);</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> to_float(<span class="keyword">const</span> Twine &amp;T, N &amp;Num, N (*StrTo)(<span class="keyword">const</span> <span class="keywordtype">char</span> *, <span class="keywordtype">char</span> **)) {</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  SmallString&lt;32&gt; Storage;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  StringRef S = T.toNullTerminatedStringRef(Storage);</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  <span class="keywordtype">char</span> *End;</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  N Temp = StrTo(S.data(), &amp;End);</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  <span class="keywordflow">if</span> (*End != <span class="charliteral">&#39;\0&#39;</span>)</div>
@@ -265,7 +265,7 @@ $(document).ready(function(){initNavTree('StringExtras_8h_source.html',''); init
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;}</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;}</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160; </div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> to_float(<span class="keyword">const</span> <a class="code" href="classwpi_1_1Twine.html">Twine</a> &amp;T, <span class="keywordtype">float</span> &amp;Num) {</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> to_float(<span class="keyword">const</span> Twine &amp;T, <span class="keywordtype">float</span> &amp;Num) {</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  <span class="keywordflow">return</span> detail::to_float(T, Num, strtof);</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;}</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160; </div>
@@ -443,17 +443,12 @@ $(document).ready(function(){initNavTree('StringExtras_8h_source.html',''); init
 <div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;<span class="preprocessor">#endif // WPIUTIL_WPI_STRINGEXTRAS_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclasswpi_1_1SmallVectorImpl_html"><div class="ttname"><a href="classwpi_1_1SmallVectorImpl.html">wpi::SmallVectorImpl</a></div><div class="ttdoc">This class consists of common code factored out of the SmallVector class to reduce code duplication b...</div><div class="ttdef"><b>Definition:</b> StringExtras.h:32</div></div>
-<div class="ttc" id="aclasswpi_1_1SmallString_html"><div class="ttname"><a href="classwpi_1_1SmallString.html">wpi::SmallString&lt; 32 &gt;</a></div></div>
-<div class="ttc" id="aclasswpi_1_1Twine_html_a50e7384b0e9ebc4ccaac552e708220a8"><div class="ttname"><a href="classwpi_1_1Twine.html#a50e7384b0e9ebc4ccaac552e708220a8">wpi::Twine::toNullTerminatedStringRef</a></div><div class="ttdeci">StringRef toNullTerminatedStringRef(SmallVectorImpl&lt; char &gt; &amp;Out) const</div><div class="ttdoc">This returns the twine as a single null terminated StringRef if it can be represented as such.</div></div>
 <div class="ttc" id="aclasswpi_1_1StringRef_html"><div class="ttname"><a href="classwpi_1_1StringRef.html">wpi::StringRef</a></div><div class="ttdoc">StringRef - Represent a constant reference to a string, i.e.</div><div class="ttdef"><b>Definition:</b> StringRef.h:49</div></div>
-<div class="ttc" id="aclasswpi_1_1raw__ostream_html"><div class="ttname"><a href="classwpi_1_1raw__ostream.html">wpi::raw_ostream</a></div><div class="ttdoc">This class implements an extremely fast bulk output stream that can only output to a stream.</div><div class="ttdef"><b>Definition:</b> raw_ostream.h:47</div></div>
-<div class="ttc" id="aclasswpi_1_1Twine_html"><div class="ttname"><a href="classwpi_1_1Twine.html">wpi::Twine</a></div><div class="ttdoc">Twine - A lightweight data structure for efficiently representing the concatenation of temporary valu...</div><div class="ttdef"><b>Definition:</b> Twine.h:85</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><b>StringExtras.h</b></li>
-    <li class="footer">Generated on Wed May 5 2021 16:19:10 for WPILibC++ by
+    <li class="footer">Generated on Sun May 9 2021 21:19:02 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

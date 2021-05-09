@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.3.1-8-gba08baa</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-37-g3cc2da3</span>
    </div>
   </td>
  </tr>
@@ -107,46 +107,47 @@ $(document).ready(function(){initNavTree('hal_2src_2main_2native_2include_2hal_2
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="group__hal__analoggyro.html#ga7ad667ac034fdfc9da4074853a064f2a">   27</a></span>&#160;HAL_GyroHandle <a class="code" href="group__hal__analoggyro.html#ga7ad667ac034fdfc9da4074853a064f2a">HAL_InitializeAnalogGyro</a>(HAL_AnalogInputHandle handle,</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                                        int32_t* status);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="group__hal__analoggyro.html#ga9c96af0829ee6b17fea37d3897550343">   36</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__analoggyro.html#ga9c96af0829ee6b17fea37d3897550343">HAL_SetupAnalogGyro</a>(HAL_GyroHandle handle, int32_t* status);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="group__hal__analoggyro.html#gaae38fd1e3f5f1651a652126749664336">   43</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__analoggyro.html#gaae38fd1e3f5f1651a652126749664336">HAL_FreeAnalogGyro</a>(HAL_GyroHandle handle);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="group__hal__analoggyro.html#gadc7a11e59c368c174d79abe8fdeaea5e">   56</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__analoggyro.html#gadc7a11e59c368c174d79abe8fdeaea5e">HAL_SetAnalogGyroParameters</a>(HAL_GyroHandle handle,</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                                 <span class="keywordtype">double</span> voltsPerDegreePerSecond, <span class="keywordtype">double</span> offset,</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                                 int32_t center, int32_t* status);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="group__hal__analoggyro.html#ga4d90f84cf217bd01a6d9fcca3ba9261d">   66</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__analoggyro.html#ga4d90f84cf217bd01a6d9fcca3ba9261d">HAL_SetAnalogGyroVoltsPerDegreePerSecond</a>(HAL_GyroHandle handle,</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                                              <span class="keywordtype">double</span> voltsPerDegreePerSecond,</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                                              int32_t* status);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="group__hal__analoggyro.html#ga89b1038e0561eb1f4ec6d3ccc747dddd">   75</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__analoggyro.html#ga89b1038e0561eb1f4ec6d3ccc747dddd">HAL_ResetAnalogGyro</a>(HAL_GyroHandle handle, int32_t* status);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="group__hal__analoggyro.html#ga3fc6d1d16c47945442a78d378af91ede">   86</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__analoggyro.html#ga3fc6d1d16c47945442a78d378af91ede">HAL_CalibrateAnalogGyro</a>(HAL_GyroHandle handle, int32_t* status);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="group__hal__analoggyro.html#gad77a6766f3cba425b3c6d78b06a111eb">   94</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__analoggyro.html#gad77a6766f3cba425b3c6d78b06a111eb">HAL_SetAnalogGyroDeadband</a>(HAL_GyroHandle handle, <span class="keywordtype">double</span> volts,</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                               int32_t* status);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="group__hal__analoggyro.html#ga1413de42a70face20125ce03d84e7792">  103</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="group__hal__analoggyro.html#ga1413de42a70face20125ce03d84e7792">HAL_GetAnalogGyroAngle</a>(HAL_GyroHandle handle, int32_t* status);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="group__hal__analoggyro.html#ga34ab7e0949f288b61ba057137c41c24f">  111</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="group__hal__analoggyro.html#ga34ab7e0949f288b61ba057137c41c24f">HAL_GetAnalogGyroRate</a>(HAL_GyroHandle handle, int32_t* status);</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
-<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="group__hal__analoggyro.html#ga4f0ef7f247b728a27a558dafb09f5441">  121</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="group__hal__analoggyro.html#ga4f0ef7f247b728a27a558dafb09f5441">HAL_GetAnalogGyroOffset</a>(HAL_GyroHandle handle, int32_t* status);</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
-<div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="group__hal__analoggyro.html#ga7212501dae29e4fc3df18094f04f3fef">  131</a></span>&#160;int32_t <a class="code" href="group__hal__analoggyro.html#ga7212501dae29e4fc3df18094f04f3fef">HAL_GetAnalogGyroCenter</a>(HAL_GyroHandle handle, int32_t* status);</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;}  <span class="comment">// extern &quot;C&quot;</span></div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="group__hal__analoggyro.html#gabb9894fce3ebfed40aab914a56f58e85">   29</a></span>&#160;HAL_GyroHandle <a class="code" href="group__hal__analoggyro.html#gabb9894fce3ebfed40aab914a56f58e85">HAL_InitializeAnalogGyro</a>(HAL_AnalogInputHandle handle,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                                        <span class="keyword">const</span> <span class="keywordtype">char</span>* allocationLocation,</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                                        int32_t* status);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="group__hal__analoggyro.html#ga9c96af0829ee6b17fea37d3897550343">   39</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__analoggyro.html#ga9c96af0829ee6b17fea37d3897550343">HAL_SetupAnalogGyro</a>(HAL_GyroHandle handle, int32_t* status);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="group__hal__analoggyro.html#gaae38fd1e3f5f1651a652126749664336">   46</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__analoggyro.html#gaae38fd1e3f5f1651a652126749664336">HAL_FreeAnalogGyro</a>(HAL_GyroHandle handle);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="group__hal__analoggyro.html#gadc7a11e59c368c174d79abe8fdeaea5e">   59</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__analoggyro.html#gadc7a11e59c368c174d79abe8fdeaea5e">HAL_SetAnalogGyroParameters</a>(HAL_GyroHandle handle,</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                                 <span class="keywordtype">double</span> voltsPerDegreePerSecond, <span class="keywordtype">double</span> offset,</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                 int32_t center, int32_t* status);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="group__hal__analoggyro.html#ga4d90f84cf217bd01a6d9fcca3ba9261d">   69</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__analoggyro.html#ga4d90f84cf217bd01a6d9fcca3ba9261d">HAL_SetAnalogGyroVoltsPerDegreePerSecond</a>(HAL_GyroHandle handle,</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                                              <span class="keywordtype">double</span> voltsPerDegreePerSecond,</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                                              int32_t* status);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="group__hal__analoggyro.html#ga89b1038e0561eb1f4ec6d3ccc747dddd">   78</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__analoggyro.html#ga89b1038e0561eb1f4ec6d3ccc747dddd">HAL_ResetAnalogGyro</a>(HAL_GyroHandle handle, int32_t* status);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="group__hal__analoggyro.html#ga3fc6d1d16c47945442a78d378af91ede">   89</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__analoggyro.html#ga3fc6d1d16c47945442a78d378af91ede">HAL_CalibrateAnalogGyro</a>(HAL_GyroHandle handle, int32_t* status);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="group__hal__analoggyro.html#gad77a6766f3cba425b3c6d78b06a111eb">   97</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__analoggyro.html#gad77a6766f3cba425b3c6d78b06a111eb">HAL_SetAnalogGyroDeadband</a>(HAL_GyroHandle handle, <span class="keywordtype">double</span> volts,</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                               int32_t* status);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="group__hal__analoggyro.html#ga1413de42a70face20125ce03d84e7792">  106</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="group__hal__analoggyro.html#ga1413de42a70face20125ce03d84e7792">HAL_GetAnalogGyroAngle</a>(HAL_GyroHandle handle, int32_t* status);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="group__hal__analoggyro.html#ga34ab7e0949f288b61ba057137c41c24f">  114</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="group__hal__analoggyro.html#ga34ab7e0949f288b61ba057137c41c24f">HAL_GetAnalogGyroRate</a>(HAL_GyroHandle handle, int32_t* status);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="group__hal__analoggyro.html#ga4f0ef7f247b728a27a558dafb09f5441">  124</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="group__hal__analoggyro.html#ga4f0ef7f247b728a27a558dafb09f5441">HAL_GetAnalogGyroOffset</a>(HAL_GyroHandle handle, int32_t* status);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="group__hal__analoggyro.html#ga7212501dae29e4fc3df18094f04f3fef">  134</a></span>&#160;int32_t <a class="code" href="group__hal__analoggyro.html#ga7212501dae29e4fc3df18094f04f3fef">HAL_GetAnalogGyroCenter</a>(HAL_GyroHandle handle, int32_t* status);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;}  <span class="comment">// extern &quot;C&quot;</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="agroup__hal__analoggyro_html_ga1413de42a70face20125ce03d84e7792"><div class="ttname"><a href="group__hal__analoggyro.html#ga1413de42a70face20125ce03d84e7792">HAL_GetAnalogGyroAngle</a></div><div class="ttdeci">double HAL_GetAnalogGyroAngle(HAL_GyroHandle handle, int32_t *status)</div><div class="ttdoc">Gets the gyro angle in degrees.</div></div>
 <div class="ttc" id="agroup__hal__analoggyro_html_ga34ab7e0949f288b61ba057137c41c24f"><div class="ttname"><a href="group__hal__analoggyro.html#ga34ab7e0949f288b61ba057137c41c24f">HAL_GetAnalogGyroRate</a></div><div class="ttdeci">double HAL_GetAnalogGyroRate(HAL_GyroHandle handle, int32_t *status)</div><div class="ttdoc">Gets the gyro rate in degrees/second.</div></div>
 <div class="ttc" id="agroup__hal__analoggyro_html_ga4d90f84cf217bd01a6d9fcca3ba9261d"><div class="ttname"><a href="group__hal__analoggyro.html#ga4d90f84cf217bd01a6d9fcca3ba9261d">HAL_SetAnalogGyroVoltsPerDegreePerSecond</a></div><div class="ttdeci">void HAL_SetAnalogGyroVoltsPerDegreePerSecond(HAL_GyroHandle handle, double voltsPerDegreePerSecond, int32_t *status)</div><div class="ttdoc">Sets the analog gyro volts per degrees per second scaling.</div></div>
-<div class="ttc" id="agroup__hal__analoggyro_html_ga7ad667ac034fdfc9da4074853a064f2a"><div class="ttname"><a href="group__hal__analoggyro.html#ga7ad667ac034fdfc9da4074853a064f2a">HAL_InitializeAnalogGyro</a></div><div class="ttdeci">HAL_GyroHandle HAL_InitializeAnalogGyro(HAL_AnalogInputHandle handle, int32_t *status)</div><div class="ttdoc">Initializes an analog gyro.</div></div>
 <div class="ttc" id="agroup__hal__analoggyro_html_ga4f0ef7f247b728a27a558dafb09f5441"><div class="ttname"><a href="group__hal__analoggyro.html#ga4f0ef7f247b728a27a558dafb09f5441">HAL_GetAnalogGyroOffset</a></div><div class="ttdeci">double HAL_GetAnalogGyroOffset(HAL_GyroHandle handle, int32_t *status)</div><div class="ttdoc">Gets the calibrated gyro offset.</div></div>
+<div class="ttc" id="agroup__hal__analoggyro_html_gabb9894fce3ebfed40aab914a56f58e85"><div class="ttname"><a href="group__hal__analoggyro.html#gabb9894fce3ebfed40aab914a56f58e85">HAL_InitializeAnalogGyro</a></div><div class="ttdeci">HAL_GyroHandle HAL_InitializeAnalogGyro(HAL_AnalogInputHandle handle, const char *allocationLocation, int32_t *status)</div><div class="ttdoc">Initializes an analog gyro.</div></div>
 <div class="ttc" id="agroup__hal__analoggyro_html_ga9c96af0829ee6b17fea37d3897550343"><div class="ttname"><a href="group__hal__analoggyro.html#ga9c96af0829ee6b17fea37d3897550343">HAL_SetupAnalogGyro</a></div><div class="ttdeci">void HAL_SetupAnalogGyro(HAL_GyroHandle handle, int32_t *status)</div><div class="ttdoc">Sets up an analog gyro with the proper offsets and settings for the KOP analog gyro.</div></div>
 <div class="ttc" id="agroup__hal__analoggyro_html_gad77a6766f3cba425b3c6d78b06a111eb"><div class="ttname"><a href="group__hal__analoggyro.html#gad77a6766f3cba425b3c6d78b06a111eb">HAL_SetAnalogGyroDeadband</a></div><div class="ttdeci">void HAL_SetAnalogGyroDeadband(HAL_GyroHandle handle, double volts, int32_t *status)</div><div class="ttdoc">Sets the deadband of the analog gyro.</div></div>
 <div class="ttc" id="agroup__hal__analoggyro_html_ga7212501dae29e4fc3df18094f04f3fef"><div class="ttname"><a href="group__hal__analoggyro.html#ga7212501dae29e4fc3df18094f04f3fef">HAL_GetAnalogGyroCenter</a></div><div class="ttdeci">int32_t HAL_GetAnalogGyroCenter(HAL_GyroHandle handle, int32_t *status)</div><div class="ttdoc">Gets the calibrated gyro center.</div></div>
@@ -158,7 +159,7 @@ $(document).ready(function(){initNavTree('hal_2src_2main_2native_2include_2hal_2
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_7dfa5b6b9262a4050979ee23e0eb392d.html">hal</a></li><li class="navelem"><b>AnalogGyro.h</b></li>
-    <li class="footer">Generated on Wed May 5 2021 16:19:09 for WPILibC++ by
+    <li class="footer">Generated on Sun May 9 2021 21:19:00 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

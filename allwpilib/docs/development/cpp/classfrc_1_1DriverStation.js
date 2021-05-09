@@ -11,7 +11,7 @@ var classfrc_1_1DriverStation =
       [ "kQualification", "classfrc_1_1DriverStation.html#a9213f6e23391b910d010820e16005352a36d814fe8f34840d39a2bf861b066e8c", null ],
       [ "kElimination", "classfrc_1_1DriverStation.html#a9213f6e23391b910d010820e16005352a6ef6356038c94bcedf70efebf56127ce", null ]
     ] ],
-    [ "~DriverStation", "classfrc_1_1DriverStation.html#a2fc7fe7b22b7e31185eaf4d8aab36fae", null ],
+    [ "~DriverStation", "classfrc_1_1DriverStation.html#af4a7e27e57af9b81e0576a0827d0d379", null ],
     [ "DriverStation", "classfrc_1_1DriverStation.html#ac5452174a35a0342c777aaae7573698b", null ],
     [ "GetAlliance", "classfrc_1_1DriverStation.html#a6f6775591ef1b8a386eef2f29b9499b1", null ],
     [ "GetBatteryVoltage", "classfrc_1_1DriverStation.html#ae259fcc5ab931beba0eeb54cc14d6048", null ],

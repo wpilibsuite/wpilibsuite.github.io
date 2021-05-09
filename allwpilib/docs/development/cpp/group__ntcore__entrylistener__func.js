@@ -1,10 +1,9 @@
 var group__ntcore__entrylistener__func =
 [
-    [ "EntryListenerCallback", "group__ntcore__entrylistener__func.html#ga1869be780fcddb3d703623715ead828d", null ],
+    [ "EntryListenerCallback", "group__ntcore__entrylistener__func.html#ga0ff86295ad4672d010a7eed44d17c209", null ],
     [ "AddEntryListener", "group__ntcore__entrylistener__func.html#ga1a6be4e3e2330ea4c1107b62d9b9af53", null ],
-    [ "AddEntryListener", "group__ntcore__entrylistener__func.html#ga77564a5fd06f66e01045efd67433279d", null ],
-    [ "AddEntryListener", "group__ntcore__entrylistener__func.html#gaf7159f6c74df17d34ac2f87da7c902da", null ],
-    [ "AddPolledEntryListener", "group__ntcore__entrylistener__func.html#ga3e0eee3c2100172cfd049982ceafb259", null ],
+    [ "AddEntryListener", "group__ntcore__entrylistener__func.html#ga9208c9726eb669442c5a40c8e892876d", null ],
+    [ "AddPolledEntryListener", "group__ntcore__entrylistener__func.html#ga9ca9dd007d67f48ec8c192f2785b2ad6", null ],
     [ "AddPolledEntryListener", "group__ntcore__entrylistener__func.html#ga92fc7fa2cf9b8d88accf4fc23846af98", null ],
     [ "CancelPollEntryListener", "group__ntcore__entrylistener__func.html#ga2c45289a438275d2e556b20c09b5ebee", null ],
     [ "CreateEntryListenerPoller", "group__ntcore__entrylistener__func.html#gad4e9219522d715ba9a05aeac25277f60", null ],

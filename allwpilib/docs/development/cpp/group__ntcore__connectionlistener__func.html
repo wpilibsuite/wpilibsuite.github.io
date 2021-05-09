@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2021.3.1-8-gba08baa</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-37-g3cc2da3</span>
    </div>
   </td>
  </tr>
@@ -105,9 +105,6 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga571a1886fc9d876eb857f866bbe9c4ef"><td class="memItemLeft" align="right" valign="top">NT_ConnectionListener&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__connectionlistener__func.html#ga571a1886fc9d876eb857f866bbe9c4ef">nt::AddConnectionListener</a> (<a class="el" href="group__ntcore__connectionlistener__func.html#gaa88729f7f2563d47a4371de5e5c8badc">ConnectionListenerCallback</a> callback, bool immediate_notify)</td></tr>
-<tr class="memdesc:ga571a1886fc9d876eb857f866bbe9c4ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a connection listener.  <a href="group__ntcore__connectionlistener__func.html#ga571a1886fc9d876eb857f866bbe9c4ef">More...</a><br /></td></tr>
-<tr class="separator:ga571a1886fc9d876eb857f866bbe9c4ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf15e7dfa175ea46f2c0ff728a53c8723"><td class="memItemLeft" align="right" valign="top">NT_ConnectionListener&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__connectionlistener__func.html#gaf15e7dfa175ea46f2c0ff728a53c8723">nt::AddConnectionListener</a> (NT_Inst inst, std::function&lt; void(const <a class="el" href="classnt_1_1ConnectionNotification.html">ConnectionNotification</a> &amp;event)&gt; callback, bool immediate_notify)</td></tr>
 <tr class="memdesc:gaf15e7dfa175ea46f2c0ff728a53c8723"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a connection listener.  <a href="group__ntcore__connectionlistener__func.html#gaf15e7dfa175ea46f2c0ff728a53c8723">More...</a><br /></td></tr>
 <tr class="separator:gaf15e7dfa175ea46f2c0ff728a53c8723"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -164,46 +161,8 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga571a1886fc9d876eb857f866bbe9c4ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga571a1886fc9d876eb857f866bbe9c4ef">&#9670;&nbsp;</a></span>AddConnectionListener() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">NT_ConnectionListener nt::AddConnectionListener </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__ntcore__connectionlistener__func.html#gaa88729f7f2563d47a4371de5e5c8badc">ConnectionListenerCallback</a>&#160;</td>
-          <td class="paramname"><em>callback</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>immediate_notify</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Add a connection listener. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">callback</td><td>listener to add </td></tr>
-    <tr><td class="paramname">immediate_notify</td><td>notify listener of all existing connections </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Listener handle </dd></dl>
-
-</div>
-</div>
 <a id="gaf15e7dfa175ea46f2c0ff728a53c8723"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf15e7dfa175ea46f2c0ff728a53c8723">&#9670;&nbsp;</a></span>AddConnectionListener() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf15e7dfa175ea46f2c0ff728a53c8723">&#9670;&nbsp;</a></span>AddConnectionListener()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -237,18 +196,13 @@ Functions</h2></td></tr>
 <p>Add a connection listener. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">inst</td><td>instance handle </td></tr>
     <tr><td class="paramname">callback</td><td>listener to add </td></tr>
     <tr><td class="paramname">immediate_notify</td><td>notify listener of all existing connections </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Listener handle</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">inst</td><td>instance handle </td></tr>
-  </table>
-  </dd>
-</dl>
+<dl class="section return"><dt>Returns</dt><dd>Listener handle </dd></dl>
 
 </div>
 </div>
@@ -389,7 +343,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the next connection event. </p>
-<p>This blocks until the next connect or disconnect occurs. This is intended to be used with <a class="el" href="group__ntcore__connectionlistener__func.html#gaf40981b49ae44aa901af719afed08e2c" title="Create a polled connection listener.">AddPolledConnectionListener()</a>; connection listeners created using <a class="el" href="group__ntcore__connectionlistener__func.html#ga571a1886fc9d876eb857f866bbe9c4ef" title="Add a connection listener.">AddConnectionListener()</a> will not be serviced through this function.</p>
+<p>This blocks until the next connect or disconnect occurs. This is intended to be used with <a class="el" href="group__ntcore__connectionlistener__func.html#gaf40981b49ae44aa901af719afed08e2c" title="Create a polled connection listener.">AddPolledConnectionListener()</a>; connection listeners created using <a class="el" href="group__ntcore__connectionlistener__func.html#gaf15e7dfa175ea46f2c0ff728a53c8723" title="Add a connection listener.">AddConnectionListener()</a> will not be serviced through this function.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">poller</td><td>poller handle </td></tr>
@@ -433,7 +387,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the next connection event. </p>
-<p>This blocks until the next connect or disconnect occurs or it times out. This is intended to be used with <a class="el" href="group__ntcore__connectionlistener__func.html#gaf40981b49ae44aa901af719afed08e2c" title="Create a polled connection listener.">AddPolledConnectionListener()</a>; connection listeners created using <a class="el" href="group__ntcore__connectionlistener__func.html#ga571a1886fc9d876eb857f866bbe9c4ef" title="Add a connection listener.">AddConnectionListener()</a> will not be serviced through this function.</p>
+<p>This blocks until the next connect or disconnect occurs or it times out. This is intended to be used with <a class="el" href="group__ntcore__connectionlistener__func.html#gaf40981b49ae44aa901af719afed08e2c" title="Create a polled connection listener.">AddPolledConnectionListener()</a>; connection listeners created using <a class="el" href="group__ntcore__connectionlistener__func.html#gaf15e7dfa175ea46f2c0ff728a53c8723" title="Add a connection listener.">AddConnectionListener()</a> will not be serviced through this function.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">poller</td><td>poller handle </td></tr>
@@ -516,7 +470,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed May 5 2021 16:19:11 for WPILibC++ by
+    <li class="footer">Generated on Sun May 9 2021 21:19:02 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

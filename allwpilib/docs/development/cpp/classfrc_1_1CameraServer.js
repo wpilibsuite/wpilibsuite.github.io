@@ -15,7 +15,7 @@ var classfrc_1_1CameraServer =
     [ "AddServer", "classfrc_1_1CameraServer.html#ae1538b6326ec624ff879f5611b82f223", null ],
     [ "AddServer", "classfrc_1_1CameraServer.html#a9ca87d8d9a581a4e9ff9729a8c49989b", null ],
     [ "AddSwitchedCamera", "classfrc_1_1CameraServer.html#abbcb01c0071fa0f0be8014c77ee02451", null ],
-    [ "GetInstance", "classfrc_1_1CameraServer.html#af95e7dc8a84506763a0e7c4b22f48728", null ],
+    [ "GetInstance", "classfrc_1_1CameraServer.html#acd13f283bfd8a29ed1e26e891cbb283d", null ],
     [ "GetServer", "classfrc_1_1CameraServer.html#a83279703ccafabf42899f5223a305f9b", null ],
     [ "GetServer", "classfrc_1_1CameraServer.html#a4b52149f7efbed57077c330e2c2654db", null ],
     [ "GetVideo", "classfrc_1_1CameraServer.html#a938bf7f5cd9c52f7450f74b8bbb9840a", null ],

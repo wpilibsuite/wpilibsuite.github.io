@@ -1,5 +1,6 @@
 var classfrc_1_1SolenoidBase =
 [
+    [ "~SolenoidBase", "classfrc_1_1SolenoidBase.html#a7210937c4b9c42144ca2b82eb439f80f", null ],
     [ "SolenoidBase", "classfrc_1_1SolenoidBase.html#a613c7a45b7ef3a4456534fb17e314ad3", null ],
     [ "SolenoidBase", "classfrc_1_1SolenoidBase.html#ad18129b85a191790cacdbbd3699972c3", null ],
     [ "ClearAllPCMStickyFaults", "classfrc_1_1SolenoidBase.html#ac0460c587bc42fb20628a0684d18cb93", null ],

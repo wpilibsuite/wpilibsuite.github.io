@@ -1,7 +1,7 @@
 var classfrc_1_1MotorSafety =
 [
     [ "MotorSafety", "classfrc_1_1MotorSafety.html#a6f4cd35e3bc3caa8fe3120e00b3d3cbd", null ],
-    [ "~MotorSafety", "classfrc_1_1MotorSafety.html#aad0f815eb6eb6bd8e3c390d8c8d82988", null ],
+    [ "~MotorSafety", "classfrc_1_1MotorSafety.html#afe80d604ac851fdaae3f4f973a0392c7", null ],
     [ "MotorSafety", "classfrc_1_1MotorSafety.html#ac9a6ed8e2bf1f658264dd499be9efcc1", null ],
     [ "Check", "classfrc_1_1MotorSafety.html#a1449c25e11582cbea7d3e2254479f42b", null ],
     [ "CheckMotors", "classfrc_1_1MotorSafety.html#a2a666ba39461317728e52fbaa9cdca32", null ],

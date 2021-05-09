@@ -25,7 +25,6 @@ var classfrc_1_1Encoder =
     [ "GetStopped", "classfrc_1_1Encoder.html#acb7b9dab9e4362a724754da099143766", null ],
     [ "InitSendable", "classfrc_1_1Encoder.html#a8c16f229f8f17b6416898cbb7caf47d6", null ],
     [ "operator=", "classfrc_1_1Encoder.html#a2b202913c07885452ab03c248745fce6", null ],
-    [ "PIDGet", "classfrc_1_1Encoder.html#a55b76d1a764a26bd049223dbf0d750fa", null ],
     [ "Reset", "classfrc_1_1Encoder.html#a981f675176708a1580d7f48779de56e4", null ],
     [ "SetDistancePerPulse", "classfrc_1_1Encoder.html#ac50921f87e0e3cc4785a4b1e157da433", null ],
     [ "SetIndexSource", "classfrc_1_1Encoder.html#a3fe013532d791113feb16bb9e2355f3a", null ],

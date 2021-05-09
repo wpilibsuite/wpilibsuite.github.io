@@ -7,7 +7,6 @@ var classfrc_1_1Pose2d =
     [ "Log", "classfrc_1_1Pose2d.html#a230f05ea41c4fa44ff24622638aa20c7", null ],
     [ "operator!=", "classfrc_1_1Pose2d.html#a4e9640e9ef27bca8448c969490342d5d", null ],
     [ "operator+", "classfrc_1_1Pose2d.html#a1f5c1faa456c95579a9d0369da15f203", null ],
-    [ "operator+=", "classfrc_1_1Pose2d.html#a56126825d1d7d52cbdc38458d2e7b0da", null ],
     [ "operator-", "classfrc_1_1Pose2d.html#a08e349adffdba4f7a2fc1f9861b8040d", null ],
     [ "operator==", "classfrc_1_1Pose2d.html#a5fae46630528c38f60c221e481fb5f34", null ],
     [ "RelativeTo", "classfrc_1_1Pose2d.html#ab922c422989dfa732d5059b6ef787e91", null ],
