@@ -1,13 +1,12 @@
 var classfrc_1_1Preferences =
 [
     [ "Preferences", "classfrc_1_1Preferences.html#aac49b4078c9b0c8a668450d1a32c3ee8", null ],
-    [ "~Preferences", "classfrc_1_1Preferences.html#a110cf5569c230f72cd8f98a5357fa7a4", null ],
     [ "Preferences", "classfrc_1_1Preferences.html#a9c4e2a3c9ba2bb2f166d0cc57f203a56", null ],
     [ "ContainsKey", "classfrc_1_1Preferences.html#aa311eae592d48ba34bcd31502991bd3e", null ],
     [ "GetBoolean", "classfrc_1_1Preferences.html#ac37379478d6e50f4f3731f200d2f5748", null ],
     [ "GetDouble", "classfrc_1_1Preferences.html#ac0a0ee1938e344e1178635adeca4ab4b", null ],
     [ "GetFloat", "classfrc_1_1Preferences.html#afffc79d38630bbffe16d7f5e3c61d6fc", null ],
-    [ "GetInstance", "classfrc_1_1Preferences.html#a63c5ac0b72d11a6b912b4cb89f372a68", null ],
+    [ "GetInstance", "classfrc_1_1Preferences.html#a84dfc9bddaa8350739dac760cbc80a19", null ],
     [ "GetInt", "classfrc_1_1Preferences.html#ab56acd799e2a5d0a6035d27706ef3032", null ],
     [ "GetKeys", "classfrc_1_1Preferences.html#a780149fcc701c47e1b1bd93f66306ff3", null ],
     [ "GetLong", "classfrc_1_1Preferences.html#a027e52d50e67cf2ef6fdc98d45249ccd", null ],

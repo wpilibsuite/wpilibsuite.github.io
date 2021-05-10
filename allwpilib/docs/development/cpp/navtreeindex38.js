@@ -1,6 +1,5 @@
 var NAVTREEINDEX38 =
 {
-"structwpi_1_1CallbackThread_1_1Poller.html#a0a862fb759062081e55fa84830878c3a":[5,0,7,24,0,3],
 "structwpi_1_1CallbackThread_1_1Poller.html#a30519d1a58c289d34753ba588571b907":[5,0,7,24,0,2],
 "structwpi_1_1CallbackThread_1_1Poller.html#a53ba327b773143a084803f709d13150b":[5,0,7,24,0,0],
 "structwpi_1_1CallbackThread_1_1Poller.html#a88426de62dfad205c04747c52595c3a0":[5,0,7,24,0,4],
@@ -249,5 +248,6 @@ var NAVTREEINDEX38 =
 "structwpi_1_1detail_1_1WorkerThreadAsync_3_01void_01_4.html#a472a9468116ee44732f23ed512fc7460":[5,0,7,0,71,2],
 "structwpi_1_1detail_1_1WorkerThreadAsync_3_01void_01_4.html#a49f964d8b8def84625c6dabf5a51c62a":[5,0,7,0,71,3],
 "structwpi_1_1detail_1_1WorkerThreadAsync_3_01void_01_4.html#aa602315fda29e5b88184ec0eaea083d1":[5,0,7,0,71,0],
-"structwpi_1_1detail_1_1WorkerThreadAsync_3_01void_01_4.html#afbd4e9518084f29b83fce17a622ce15f":[5,0,7,0,71,1]
+"structwpi_1_1detail_1_1WorkerThreadAsync_3_01void_01_4.html#afbd4e9518084f29b83fce17a622ce15f":[5,0,7,0,71,1],
+"structwpi_1_1detail_1_1WorkerThreadRequest.html":[5,0,7,0,72]
 };

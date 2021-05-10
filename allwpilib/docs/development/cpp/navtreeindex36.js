@@ -1,6 +1,5 @@
 var NAVTREEINDEX36 =
 {
-"group__ntcore__table__func.html#ga17b4721bbd422853a29db96d63920c0a":[3,2,1,0],
 "group__ntcore__table__func.html#ga1a21fd80f383c92102bf3654f6cdca4f":[3,2,1,5],
 "group__ntcore__table__func.html#ga215d9cc613ffea1a3905ebd5e75be8f8":[3,2,1,2],
 "group__ntcore__table__func.html#ga292e4d9eaa943ad91c59d01372d8c1c0":[3,2,1,12],
@@ -115,8 +114,8 @@ var NAVTREEINDEX36 =
 "namespaces.html":[4,0],
 "namespacewpi_1_1detail.html":[4,0,4,0],
 "namespacewpi_1_1detail.html":[5,0,7,0],
-"namespacewpi_1_1java.html":[4,0,4,1],
 "namespacewpi_1_1java.html":[5,0,7,3],
+"namespacewpi_1_1java.html":[4,0,4,1],
 "never__destroyed_8h_source.html":[6,0,2,0,5],
 "nodiscard_8h_source.html":[6,0,11,52],
 "ntcore_8h_source.html":[6,0,20],
@@ -249,5 +248,6 @@ var NAVTREEINDEX36 =
 "structNT__EntryNotification.html#a443b7dae05f8d597197954d5df8e95d0":[3,1,18,4],
 "structNT__EntryNotification.html#ac22a071e4cb9648cdd894dfda1ade6ff":[3,1,18,1],
 "structNT__EntryNotification.html#adf53363e9c6c9be99f6b59608721f0bd":[3,1,18,3],
-"structNT__EntryNotification.html#af1127cfc472c444761c27723e4df8389":[3,1,18,0]
+"structNT__EntryNotification.html#af1127cfc472c444761c27723e4df8389":[3,1,18,0],
+"structNT__LogMessage.html":[3,1,20]
 };

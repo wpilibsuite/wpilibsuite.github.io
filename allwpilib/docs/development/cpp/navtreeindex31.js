@@ -1,6 +1,5 @@
 var NAVTREEINDEX31 =
 {
-"classwpi_1_1uv_1_1Buffer.html#a6ad9313e2f812668354673129d89c557":[5,0,7,8,4,15],
 "classwpi_1_1uv_1_1Buffer.html#a722eb50cda095246eddcc360e5ad1c8b":[5,0,7,8,4,12],
 "classwpi_1_1uv_1_1Buffer.html#a7be476dff7148ed546bf79e6f88e290d":[5,0,7,8,4,14],
 "classwpi_1_1uv_1_1Buffer.html#a9e4af6be4cd0b309e08d0c1037f34866":[5,0,7,8,4,7],
@@ -249,5 +248,6 @@ var NAVTREEINDEX31 =
 "classwpi_1_1uv_1_1SimpleBufferPool.html#acf260a372b97f9ecd8c1873ddb84fb7f":[5,0,7,8,26,1],
 "classwpi_1_1uv_1_1Stream.html":[5,0,7,8,27],
 "classwpi_1_1uv_1_1Stream.html#a18541d62397097c7977cec6d69b17896":[5,0,7,8,27,17],
-"classwpi_1_1uv_1_1Stream.html#a1c5573b9dd06096ee2f5608850515a18":[5,0,7,8,27,19]
+"classwpi_1_1uv_1_1Stream.html#a1c5573b9dd06096ee2f5608850515a18":[5,0,7,8,27,19],
+"classwpi_1_1uv_1_1Stream.html#a2ed522ab2a1f436499d11f5e8a07ae73":[5,0,7,8,27,3]
 };

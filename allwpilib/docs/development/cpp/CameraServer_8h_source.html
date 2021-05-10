@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-37-g3cc2da3</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-38-g3fe8fc7</span>
    </div>
   </td>
  </tr>
@@ -119,7 +119,7 @@ $(document).ready(function(){initNavTree('CameraServer_8h_source.html',''); init
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">static</span> constexpr <span class="keywordtype">int</span> kSize320x240 = 1;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keyword">static</span> constexpr <span class="keywordtype">int</span> kSize160x120 = 2;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classfrc_1_1CameraServer.html#acd13f283bfd8a29ed1e26e891cbb283d">   35</a></span>&#160;  <span class="keyword">static</span> <a class="code" href="classfrc_1_1CameraServer.html">CameraServer</a>&amp; <a class="code" href="classfrc_1_1CameraServer.html#acd13f283bfd8a29ed1e26e891cbb283d">GetInstance</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classfrc_1_1CameraServer.html#af95e7dc8a84506763a0e7c4b22f48728">   35</a></span>&#160;  <span class="keyword">static</span> <a class="code" href="classfrc_1_1CameraServer.html">CameraServer</a>* <a class="code" href="classfrc_1_1CameraServer.html#af95e7dc8a84506763a0e7c4b22f48728">GetInstance</a>();</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
 <div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classfrc_1_1CameraServer.html#af4b39b0179578e1959aaa41dcf5e1790">   48</a></span>&#160;  <a class="code" href="classcs_1_1UsbCamera.html">cs::UsbCamera</a> <a class="code" href="classfrc_1_1CameraServer.html#af4b39b0179578e1959aaa41dcf5e1790">StartAutomaticCapture</a>();</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
@@ -222,6 +222,7 @@ $(document).ready(function(){initNavTree('CameraServer_8h_source.html',''); init
 <div class="ttc" id="aclassfrc_1_1CameraServer_html_aa8c5ba9e0668aa316782bb10991eea3b"><div class="ttname"><a href="classfrc_1_1CameraServer.html#aa8c5ba9e0668aa316782bb10991eea3b">frc::CameraServer::AddAxisCamera</a></div><div class="ttdeci">cs::AxisCamera AddAxisCamera(const wpi::Twine &amp;name, wpi::ArrayRef&lt; std::string &gt; hosts)</div><div class="ttdoc">Adds an Axis IP camera.</div></div>
 <div class="ttc" id="aclassfrc_1_1CameraServer_html_ae183d72a952ec740347c08accd61cac5"><div class="ttname"><a href="classfrc_1_1CameraServer.html#ae183d72a952ec740347c08accd61cac5">frc::CameraServer::AddCamera</a></div><div class="ttdeci">void AddCamera(const cs::VideoSource &amp;camera)</div><div class="ttdoc">Adds an already created camera.</div></div>
 <div class="ttc" id="aclassfrc_1_1CameraServer_html"><div class="ttname"><a href="classfrc_1_1CameraServer.html">frc::CameraServer</a></div><div class="ttdoc">Singleton class for creating and keeping camera servers.</div><div class="ttdef"><b>Definition:</b> CameraServer.h:25</div></div>
+<div class="ttc" id="aclassfrc_1_1CameraServer_html_af95e7dc8a84506763a0e7c4b22f48728"><div class="ttname"><a href="classfrc_1_1CameraServer.html#af95e7dc8a84506763a0e7c4b22f48728">frc::CameraServer::GetInstance</a></div><div class="ttdeci">static CameraServer * GetInstance()</div><div class="ttdoc">Get the CameraServer instance.</div></div>
 <div class="ttc" id="aclassfrc_1_1CameraServer_html_ad126111201083b645d6183a6dfe0b46a"><div class="ttname"><a href="classfrc_1_1CameraServer.html#ad126111201083b645d6183a6dfe0b46a">frc::CameraServer::GetVideo</a></div><div class="ttdeci">cs::CvSink GetVideo(const cs::VideoSource &amp;camera)</div><div class="ttdoc">Get OpenCV access to the specified camera.</div></div>
 <div class="ttc" id="aclassfrc_1_1CameraServer_html_af4b39b0179578e1959aaa41dcf5e1790"><div class="ttname"><a href="classfrc_1_1CameraServer.html#af4b39b0179578e1959aaa41dcf5e1790">frc::CameraServer::StartAutomaticCapture</a></div><div class="ttdeci">cs::UsbCamera StartAutomaticCapture()</div><div class="ttdoc">Start automatically capturing images to send to the dashboard.</div></div>
 <div class="ttc" id="aclassfrc_1_1CameraServer_html_a125614187b9e0bc1aa53032d21aa1d1a"><div class="ttname"><a href="classfrc_1_1CameraServer.html#a125614187b9e0bc1aa53032d21aa1d1a">frc::CameraServer::RemoveServer</a></div><div class="ttdeci">void RemoveServer(const wpi::Twine &amp;name)</div><div class="ttdoc">Removes a server by name.</div></div>
@@ -231,14 +232,13 @@ $(document).ready(function(){initNavTree('CameraServer_8h_source.html',''); init
 <div class="ttc" id="aclasscs_1_1VideoSource_html"><div class="ttname"><a href="classcs_1_1VideoSource.html">cs::VideoSource</a></div><div class="ttdoc">A source for video that provides a sequence of frames.</div><div class="ttdef"><b>Definition:</b> cscore_oo.h:94</div></div>
 <div class="ttc" id="aclassfrc_1_1CameraServer_html_a331aefa416f51286e563ad40542001db"><div class="ttname"><a href="classfrc_1_1CameraServer.html#a331aefa416f51286e563ad40542001db">frc::CameraServer::StartAutomaticCapture</a></div><div class="ttdeci">cs::UsbCamera StartAutomaticCapture(const wpi::Twine &amp;name, int dev)</div><div class="ttdoc">Start automatically capturing images to send to the dashboard.</div></div>
 <div class="ttc" id="aclasswpi_1_1Twine_html"><div class="ttname"><a href="classwpi_1_1Twine.html">wpi::Twine</a></div><div class="ttdoc">Twine - A lightweight data structure for efficiently representing the concatenation of temporary valu...</div><div class="ttdef"><b>Definition:</b> Twine.h:85</div></div>
-<div class="ttc" id="aclassfrc_1_1CameraServer_html_acd13f283bfd8a29ed1e26e891cbb283d"><div class="ttname"><a href="classfrc_1_1CameraServer.html#acd13f283bfd8a29ed1e26e891cbb283d">frc::CameraServer::GetInstance</a></div><div class="ttdeci">static CameraServer &amp; GetInstance()</div><div class="ttdoc">Get the CameraServer instance.</div></div>
 <div class="ttc" id="aclassfrc_1_1CameraServer_html_a938bf7f5cd9c52f7450f74b8bbb9840a"><div class="ttname"><a href="classfrc_1_1CameraServer.html#a938bf7f5cd9c52f7450f74b8bbb9840a">frc::CameraServer::GetVideo</a></div><div class="ttdeci">cs::CvSink GetVideo()</div><div class="ttdoc">Get OpenCV access to the primary camera feed.</div></div>
 <div class="ttc" id="aclassfrc_1_1CameraServer_html_a36d9fe2e7a8d20f855a130e98d6551e8"><div class="ttname"><a href="classfrc_1_1CameraServer.html#a36d9fe2e7a8d20f855a130e98d6551e8">frc::CameraServer::AddAxisCamera</a></div><div class="ttdeci">cs::AxisCamera AddAxisCamera(const char *host)</div><div class="ttdoc">Adds an Axis IP camera.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59c2bc14bfbec6a96d4e6e7f35aa96aa.html">cameraserver</a></li><li class="navelem"><b>CameraServer.h</b></li>
-    <li class="footer">Generated on Sun May 9 2021 21:19:00 for WPILibC++ by
+    <li class="footer">Generated on Mon May 10 2021 01:17:43 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

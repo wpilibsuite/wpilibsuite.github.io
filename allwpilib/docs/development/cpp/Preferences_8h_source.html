@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-37-g3cc2da3</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-38-g3fe8fc7</span>
    </div>
   </td>
  </tr>
@@ -112,7 +112,7 @@ $(document).ready(function(){initNavTree('Preferences_8h_source.html',''); initR
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classfrc_1_1Preferences.html">   32</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1Preferences.html">Preferences</a> {</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classfrc_1_1Preferences.html#a63c5ac0b72d11a6b912b4cb89f372a68">   39</a></span>&#160;  <span class="keyword">static</span> <a class="code" href="classfrc_1_1Preferences.html">Preferences</a>&amp; <a class="code" href="classfrc_1_1Preferences.html#a63c5ac0b72d11a6b912b4cb89f372a68">GetInstance</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classfrc_1_1Preferences.html#a84dfc9bddaa8350739dac760cbc80a19">   39</a></span>&#160;  <span class="keyword">static</span> <a class="code" href="classfrc_1_1Preferences.html">Preferences</a>* <a class="code" href="classfrc_1_1Preferences.html#a84dfc9bddaa8350739dac760cbc80a19">GetInstance</a>();</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
 <div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classfrc_1_1Preferences.html#a780149fcc701c47e1b1bd93f66306ff3">   46</a></span>&#160;  std::vector&lt;std::string&gt; <a class="code" href="classfrc_1_1Preferences.html#a780149fcc701c47e1b1bd93f66306ff3">GetKeys</a>();</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
@@ -178,17 +178,16 @@ $(document).ready(function(){initNavTree('Preferences_8h_source.html',''); initR
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160; </div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160; protected:</div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;  <a class="code" href="classfrc_1_1Preferences.html">Preferences</a>();</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;  ~<a class="code" href="classfrc_1_1Preferences.html">Preferences</a>();</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160; </div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;  <a class="code" href="classfrc_1_1Preferences.html">Preferences</a>(<a class="code" href="classfrc_1_1Preferences.html">Preferences</a>&amp;&amp;) = default;</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;  <a class="code" href="classfrc_1_1Preferences.html">Preferences</a>&amp; operator=(<a class="code" href="classfrc_1_1Preferences.html">Preferences</a>&amp;&amp;) = default;</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160; </div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160; private:</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;  std::shared_ptr&lt;<a class="code" href="namespacent.html">nt</a>::NetworkTable&gt; m_table;</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;  NT_EntryListener m_listener;</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;};</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160; </div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160; </div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;  <a class="code" href="classfrc_1_1Preferences.html">Preferences</a>(<a class="code" href="classfrc_1_1Preferences.html">Preferences</a>&amp;&amp;) = default;</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;  <a class="code" href="classfrc_1_1Preferences.html">Preferences</a>&amp; operator=(<a class="code" href="classfrc_1_1Preferences.html">Preferences</a>&amp;&amp;) = default;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160; </div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160; private:</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;  std::shared_ptr&lt;<a class="code" href="namespacent.html">nt</a>::NetworkTable&gt; m_table;</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;  NT_EntryListener m_listener;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;};</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160; </div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;}  <span class="comment">// namespace frc</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassfrc_1_1Preferences_html_a7375f66bcd1eb98f44195c39bb5a1e88"><div class="ttname"><a href="classfrc_1_1Preferences.html#a7375f66bcd1eb98f44195c39bb5a1e88">frc::Preferences::InitDouble</a></div><div class="ttdeci">void InitDouble(wpi::StringRef key, double value)</div><div class="ttdoc">Puts the given double into the preferences table if it doesn't already exist.</div></div>
@@ -214,6 +213,7 @@ $(document).ready(function(){initNavTree('Preferences_8h_source.html',''); initR
 <div class="ttc" id="aclassfrc_1_1Preferences_html_a61c69e2d6d62f9d7e1fddc8767b63589"><div class="ttname"><a href="classfrc_1_1Preferences.html#a61c69e2d6d62f9d7e1fddc8767b63589">frc::Preferences::PutInt</a></div><div class="ttdeci">void PutInt(wpi::StringRef key, int value)</div><div class="ttdoc">Puts the given int into the preferences table.</div></div>
 <div class="ttc" id="aclassfrc_1_1Preferences_html_afffc79d38630bbffe16d7f5e3c61d6fc"><div class="ttname"><a href="classfrc_1_1Preferences.html#afffc79d38630bbffe16d7f5e3c61d6fc">frc::Preferences::GetFloat</a></div><div class="ttdeci">float GetFloat(wpi::StringRef key, float defaultValue=0.0)</div><div class="ttdoc">Returns the float at the given key.</div></div>
 <div class="ttc" id="aclassfrc_1_1Preferences_html_a6b1fc0eb3ae5b3fde41040f488e54a58"><div class="ttname"><a href="classfrc_1_1Preferences.html#a6b1fc0eb3ae5b3fde41040f488e54a58">frc::Preferences::InitString</a></div><div class="ttdeci">void InitString(wpi::StringRef key, wpi::StringRef value)</div><div class="ttdoc">Puts the given string into the preferences table if it doesn't already exist.</div></div>
+<div class="ttc" id="aclassfrc_1_1Preferences_html_a84dfc9bddaa8350739dac760cbc80a19"><div class="ttname"><a href="classfrc_1_1Preferences.html#a84dfc9bddaa8350739dac760cbc80a19">frc::Preferences::GetInstance</a></div><div class="ttdeci">static Preferences * GetInstance()</div><div class="ttdoc">Get the one and only Preferences object.</div></div>
 <div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> CameraServer.h:18</div></div>
 <div class="ttc" id="aclassfrc_1_1Preferences_html_ab56acd799e2a5d0a6035d27706ef3032"><div class="ttname"><a href="classfrc_1_1Preferences.html#ab56acd799e2a5d0a6035d27706ef3032">frc::Preferences::GetInt</a></div><div class="ttdeci">int GetInt(wpi::StringRef key, int defaultValue=0)</div><div class="ttdoc">Returns the int at the given key.</div></div>
 <div class="ttc" id="aclassfrc_1_1Preferences_html_a18b57840223b8247ef81bd7c32c2e235"><div class="ttname"><a href="classfrc_1_1Preferences.html#a18b57840223b8247ef81bd7c32c2e235">frc::Preferences::InitFloat</a></div><div class="ttdeci">void InitFloat(wpi::StringRef key, float value)</div><div class="ttdoc">Puts the given float into the preferences table if it doesn't already exist.</div></div>
@@ -221,7 +221,6 @@ $(document).ready(function(){initNavTree('Preferences_8h_source.html',''); initR
 <div class="ttc" id="anamespacefrc_html_a3e1e63234243bd1c57fd61d0c7ea88ec"><div class="ttname"><a href="namespacefrc.html#a3e1e63234243bd1c57fd61d0c7ea88ec">frc::WPI_DEPRECATED</a></div><div class="ttdeci">class WPI_DEPRECATED(&quot;use MotorController&quot;) SpeedController</div><div class="ttdoc">Interface for speed controlling devices.</div><div class="ttdef"><b>Definition:</b> SpeedController.h:15</div></div>
 <div class="ttc" id="aclassfrc_1_1Preferences_html"><div class="ttname"><a href="classfrc_1_1Preferences.html">frc::Preferences</a></div><div class="ttdoc">The preferences class provides a relatively simple way to save important values to the roboRIO to acc...</div><div class="ttdef"><b>Definition:</b> Preferences.h:32</div></div>
 <div class="ttc" id="anamespacent_html"><div class="ttname"><a href="namespacent.html">nt</a></div><div class="ttdoc">NetworkTables (ntcore) namespace.</div><div class="ttdef"><b>Definition:</b> ntcore_cpp.h:25</div></div>
-<div class="ttc" id="aclassfrc_1_1Preferences_html_a63c5ac0b72d11a6b912b4cb89f372a68"><div class="ttname"><a href="classfrc_1_1Preferences.html#a63c5ac0b72d11a6b912b4cb89f372a68">frc::Preferences::GetInstance</a></div><div class="ttdeci">static Preferences &amp; GetInstance()</div><div class="ttdoc">Get the one and only Preferences object.</div></div>
 <div class="ttc" id="aclassfrc_1_1Preferences_html_a7cf8c5c09dc97d32b1f1f5b1354bfecd"><div class="ttname"><a href="classfrc_1_1Preferences.html#a7cf8c5c09dc97d32b1f1f5b1354bfecd">frc::Preferences::PutString</a></div><div class="ttdeci">void PutString(wpi::StringRef key, wpi::StringRef value)</div><div class="ttdoc">Puts the given string into the preferences table.</div></div>
 <div class="ttc" id="aclassfrc_1_1Preferences_html_a13199d5fa51e9eb9741762484e3abb7c"><div class="ttname"><a href="classfrc_1_1Preferences.html#a13199d5fa51e9eb9741762484e3abb7c">frc::Preferences::InitInt</a></div><div class="ttdeci">void InitInt(wpi::StringRef key, int value)</div><div class="ttdoc">Puts the given int into the preferences table if it doesn't already exist.</div></div>
 <div class="ttc" id="aclassfrc_1_1Preferences_html_a5ccdbfcf20235c5fad81d79f950d466a"><div class="ttname"><a href="classfrc_1_1Preferences.html#a5ccdbfcf20235c5fad81d79f950d466a">frc::Preferences::SetBoolean</a></div><div class="ttdeci">void SetBoolean(wpi::StringRef key, bool value)</div><div class="ttdoc">Puts the given boolean into the preferences table.</div></div>
@@ -229,7 +228,7 @@ $(document).ready(function(){initNavTree('Preferences_8h_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><b>Preferences.h</b></li>
-    <li class="footer">Generated on Sun May 9 2021 21:19:01 for WPILibC++ by
+    <li class="footer">Generated on Mon May 10 2021 01:17:43 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

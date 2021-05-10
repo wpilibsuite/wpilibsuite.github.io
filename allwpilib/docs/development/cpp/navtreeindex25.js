@@ -1,6 +1,5 @@
 var NAVTREEINDEX25 =
 {
-"classwpi_1_1StringMapConstIterator.html#a653f110250ac425af98486a0ebce9ed2":[5,0,7,229,2],
 "classwpi_1_1StringMapConstIterator.html#ac43901fded8b3a42cd7447ae93456335":[5,0,7,229,3],
 "classwpi_1_1StringMapConstIterator.html#adee02da3cb13dab1d62e460a50b338a9":[5,0,7,229,0],
 "classwpi_1_1StringMapEntry.html":[5,0,7,230],
@@ -249,5 +248,6 @@ var NAVTREEINDEX25 =
 "classwpi_1_1UidVector.html#ac0b2477dfb2d713e3f70972e0c1d4902":[5,0,7,243,9],
 "classwpi_1_1UidVector.html#ac109bbcd70d272e0424b83e124f85331":[5,0,7,243,12],
 "classwpi_1_1UidVector.html#ae21b952e6b6d0ab46f82b97edcbe8efd":[5,0,7,243,18],
-"classwpi_1_1UidVector.html#afe9c6edd1cade5964d6d943e5b8f2a3e":[5,0,7,243,4]
+"classwpi_1_1UidVector.html#afe9c6edd1cade5964d6d943e5b8f2a3e":[5,0,7,243,4],
+"classwpi_1_1UidVector.html#afec2f6ab7f26f64bd7e11fc7ecf5f416":[5,0,7,243,17]
 };

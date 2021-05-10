@@ -1,6 +1,5 @@
 var NAVTREEINDEX37 =
 {
-"structNT__LogMessage.html":[3,1,20],
 "structNT__LogMessage.html#a0fcdc62e2927be09f6d25da3946e84a4":[3,1,20,1],
 "structNT__LogMessage.html#a1ea767b01ef4ffe026d1b3bb9553dbbc":[3,1,20,4],
 "structNT__LogMessage.html#a45b1bd2a57012283a32f7e56fbc543b1":[3,1,20,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX37 =
 "structwpi_1_1AlignedCharArray.html":[5,0,7,14],
 "structwpi_1_1AlignedCharArray.html#aee2bf488b53011aa60ea5532561492de":[5,0,7,14,0],
 "structwpi_1_1AlignedCharArrayUnion.html":[5,0,7,15],
-"structwpi_1_1CallbackThread_1_1Poller.html":[5,0,7,24,0]
+"structwpi_1_1CallbackThread_1_1Poller.html":[5,0,7,24,0],
+"structwpi_1_1CallbackThread_1_1Poller.html#a0a862fb759062081e55fa84830878c3a":[5,0,7,24,0,3]
 };
