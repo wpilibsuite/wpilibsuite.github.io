@@ -57,7 +57,7 @@ var searchData=
   ['alignedchararrayunion_3c_20wpi_3a_3auv_3a_3abuffer_20_3e_3904',['AlignedCharArrayUnion&lt; wpi::uv::Buffer &gt;',['../structwpi_1_1AlignedCharArrayUnion.html',1,'wpi']]],
   ['alignerimpl_3905',['AlignerImpl',['../classwpi_1_1detail_1_1AlignerImpl.html',1,'wpi::detail']]],
   ['alignto_3906',['AlignTo',['../structwpi_1_1AlignTo.html',1,'wpi']]],
-  ['allaxes_3907',['AllAxes',['../structfrc_1_1ADXL345__SPI_1_1AllAxes.html',1,'frc::ADXL345_SPI::AllAxes'],['../structfrc_1_1ADXL345__I2C_1_1AllAxes.html',1,'frc::ADXL345_I2C::AllAxes'],['../structfrc_1_1ADXL362_1_1AllAxes.html',1,'frc::ADXL362::AllAxes']]],
+  ['allaxes_3907',['AllAxes',['../structfrc_1_1ADXL362_1_1AllAxes.html',1,'frc::ADXL362::AllAxes'],['../structfrc_1_1ADXL345__SPI_1_1AllAxes.html',1,'frc::ADXL345_SPI::AllAxes'],['../structfrc_1_1ADXL345__I2C_1_1AllAxes.html',1,'frc::ADXL345_I2C::AllAxes']]],
   ['analogaccelerometer_3908',['AnalogAccelerometer',['../classfrc_1_1AnalogAccelerometer.html',1,'frc']]],
   ['analogencoder_3909',['AnalogEncoder',['../classfrc_1_1AnalogEncoder.html',1,'frc']]],
   ['analogencodersim_3910',['AnalogEncoderSim',['../classfrc_1_1sim_1_1AnalogEncoderSim.html',1,'frc::sim']]],

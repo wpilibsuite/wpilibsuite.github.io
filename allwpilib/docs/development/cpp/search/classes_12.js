@@ -233,7 +233,7 @@ var searchData=
   ['splineparameterizer_4812',['SplineParameterizer',['../classfrc_1_1SplineParameterizer.html',1,'frc']]],
   ['startcommand_4813',['StartCommand',['../classfrc_1_1StartCommand.html',1,'frc']]],
   ['startendcommand_4814',['StartEndCommand',['../classfrc2_1_1StartEndCommand.html',1,'frc2']]],
-  ['state_4815',['State',['../structfrc_1_1Trajectory_1_1State.html',1,'frc::Trajectory::State'],['../classfrc_1_1sim_1_1DifferentialDrivetrainSim_1_1State.html',1,'frc::sim::DifferentialDrivetrainSim::State'],['../classfrc_1_1TrapezoidProfile_1_1State.html',1,'frc::TrapezoidProfile&lt; Distance &gt;::State']]],
+  ['state_4815',['State',['../classfrc_1_1sim_1_1DifferentialDrivetrainSim_1_1State.html',1,'frc::sim::DifferentialDrivetrainSim::State'],['../structfrc_1_1Trajectory_1_1State.html',1,'frc::Trajectory::State'],['../classfrc_1_1TrapezoidProfile_1_1State.html',1,'frc::TrapezoidProfile&lt; Distance &gt;::State']]],
   ['static_5fcircular_5fbuffer_4816',['static_circular_buffer',['../classwpi_1_1static__circular__buffer.html',1,'wpi']]],
   ['static_5fconst_4817',['static_const',['../structwpi_1_1detail_1_1static__const.html',1,'wpi::detail']]],
   ['stream_4818',['Stream',['../classwpi_1_1uv_1_1Stream.html',1,'wpi::uv']]],

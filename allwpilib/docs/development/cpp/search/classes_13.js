@@ -26,7 +26,7 @@ var searchData=
   ['trapezoidprofile_3c_20units_3a_3aradian_20_3e_4872',['TrapezoidProfile&lt; units::radian &gt;',['../classfrc_1_1TrapezoidProfile.html',1,'frc']]],
   ['trapezoidprofilecommand_4873',['TrapezoidProfileCommand',['../classfrc2_1_1TrapezoidProfileCommand.html',1,'frc2']]],
   ['trapezoidprofilesubsystem_4874',['TrapezoidProfileSubsystem',['../classfrc2_1_1TrapezoidProfileSubsystem.html',1,'frc2']]],
-  ['trigger_4875',['Trigger',['../classfrc2_1_1Trigger.html',1,'frc2::Trigger'],['../classfrc_1_1Trigger.html',1,'frc::Trigger']]],
+  ['trigger_4875',['Trigger',['../classfrc_1_1Trigger.html',1,'frc::Trigger'],['../classfrc2_1_1Trigger.html',1,'frc2::Trigger']]],
   ['tty_4876',['Tty',['../classwpi_1_1uv_1_1Tty.html',1,'wpi::uv']]],
   ['tuple_5felement_3c_20i_2c_20wpi_3a_3aarray_3c_20t_2c_20n_20_3e_20_3e_4877',['tuple_element&lt; I, wpi::array&lt; T, N &gt; &gt;',['../structstd_1_1tuple__element_3_01I_00_01wpi_1_1array_3_01T_00_01N_01_4_01_4.html',1,'std']]],
   ['tuple_5fsize_3c_20wpi_3a_3aarray_3c_20t_2c_20n_20_3e_20_3e_4878',['tuple_size&lt; wpi::array&lt; T, N &gt; &gt;',['../structstd_1_1tuple__size_3_01wpi_1_1array_3_01T_00_01N_01_4_01_4.html',1,'std']]],

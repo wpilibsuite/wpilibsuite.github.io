@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['waitcommand_4920',['WaitCommand',['../classfrc2_1_1WaitCommand.html',1,'frc2::WaitCommand'],['../classfrc_1_1WaitCommand.html',1,'frc::WaitCommand']]],
+  ['waitcommand_4920',['WaitCommand',['../classfrc_1_1WaitCommand.html',1,'frc::WaitCommand'],['../classfrc2_1_1WaitCommand.html',1,'frc2::WaitCommand']]],
   ['waitforchildren_4921',['WaitForChildren',['../classfrc_1_1WaitForChildren.html',1,'frc']]],
   ['waituntilcommand_4922',['WaitUntilCommand',['../classfrc_1_1WaitUntilCommand.html',1,'frc::WaitUntilCommand'],['../classfrc2_1_1WaitUntilCommand.html',1,'frc2::WaitUntilCommand']]],
   ['watchdog_4923',['Watchdog',['../classfrc_1_1Watchdog.html',1,'frc']]],
