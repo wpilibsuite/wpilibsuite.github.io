@@ -1,8 +1,5 @@
 var NAVTREEINDEX9 =
 {
-"classfrc_1_1ExtendedKalmanFilter.html#a2a4ddc449a9f14234e18f8a01b11870d":[5,0,2,63,7],
-"classfrc_1_1ExtendedKalmanFilter.html#a540f4ee08bced06de29e2267cf7cfe1d":[5,0,2,63,8],
-"classfrc_1_1ExtendedKalmanFilter.html#a7d6a8c672d26d8fbcc6598381947c823":[5,0,2,63,9],
 "classfrc_1_1ExtendedKalmanFilter.html#a7f7550acd532b0f0d91fab3c7a777dc3":[5,0,2,63,1],
 "classfrc_1_1ExtendedKalmanFilter.html#a8496ad06ed4d0d3e98aa18b13eb7a7c4":[5,0,2,63,0],
 "classfrc_1_1ExtendedKalmanFilter.html#a9446ab7a24735306b8a13326b711f8ef":[5,0,2,63,11],
@@ -249,5 +246,8 @@ var NAVTREEINDEX9 =
 "classfrc_1_1JoystickButton.html#af781efaef4ea505420c233dcf7887308":[5,0,2,77,1],
 "classfrc_1_1KalmanFilter.html":[5,0,2,78],
 "classfrc_1_1KalmanFilter.html#a270c37e85d193fefd59e3426783fba3e":[5,0,2,78,0],
-"classfrc_1_1KalmanFilter.html#ac0b16418d86ec0a13651c46b65e4593d":[5,0,2,78,2]
+"classfrc_1_1KalmanFilter.html#ac0b16418d86ec0a13651c46b65e4593d":[5,0,2,78,2],
+"classfrc_1_1KalmanFilter.html#afeb51dfb8b9e26e2f4f8c7799f1ed2e6":[5,0,2,78,1],
+"classfrc_1_1KalmanFilterLatencyCompensator.html":[5,0,2,81],
+"classfrc_1_1KalmanFilterLatencyCompensator.html#a15bf928c83978a449fbc78731c4de97b":[5,0,2,81,1]
 };

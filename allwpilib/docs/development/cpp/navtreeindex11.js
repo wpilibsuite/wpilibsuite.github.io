@@ -1,8 +1,5 @@
 var NAVTREEINDEX11 =
 {
-"classfrc_1_1NetworkButton.html#adb96cc03577fe6a926e9e4c274f34762":[5,0,2,109,4],
-"classfrc_1_1NetworkButton.html#af0fe0f599c160f170609bbfb221bf188":[5,0,2,109,3],
-"classfrc_1_1NidecBrushless.html":[5,0,2,110],
 "classfrc_1_1NidecBrushless.html#a1762339273834e07d70185d47136be1f":[5,0,2,110,0],
 "classfrc_1_1NidecBrushless.html#a204be39f9fd6ac3e08477c5dcc71041a":[5,0,2,110,5],
 "classfrc_1_1NidecBrushless.html#a2ff988ba4a5488c8da0ba2237fc26c3c":[5,0,2,110,13],
@@ -249,5 +246,8 @@ var NAVTREEINDEX11 =
 "classfrc_1_1PowerDistributionPanel.html#a17b81c24c9c5aa735438ec02c8161959":[5,0,2,122,1],
 "classfrc_1_1PowerDistributionPanel.html#a2a0a95f841b04e69e061d80d8c3f6c33":[5,0,2,122,5],
 "classfrc_1_1PowerDistributionPanel.html#a48d1a5abbe2a3f1e5f2f0e8f775c110d":[5,0,2,122,4],
-"classfrc_1_1PowerDistributionPanel.html#a5847eb75511ea7bde3eec5f7b428c59c":[5,0,2,122,2]
+"classfrc_1_1PowerDistributionPanel.html#a5847eb75511ea7bde3eec5f7b428c59c":[5,0,2,122,2],
+"classfrc_1_1PowerDistributionPanel.html#a61587faa02751a80a31dd9c05f20e8c3":[5,0,2,122,11],
+"classfrc_1_1PowerDistributionPanel.html#a8d96b074c5391040a82773b2f679e9f1":[5,0,2,122,0],
+"classfrc_1_1PowerDistributionPanel.html#a96ca1c2ead3f4a4a938801c7212eb962":[5,0,2,122,10]
 };

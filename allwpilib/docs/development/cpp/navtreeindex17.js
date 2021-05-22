@@ -1,8 +1,5 @@
 var NAVTREEINDEX17 =
 {
-"classfrc_1_1sim_1_1AnalogInputSim.html#a67db4db6f7ceff3314fa3818fd156687":[5,0,2,1,4,29],
-"classfrc_1_1sim_1_1AnalogInputSim.html#a6cc8bfd6fd3c34aebf2414ff3eab0997":[5,0,2,1,4,24],
-"classfrc_1_1sim_1_1AnalogInputSim.html#a9e04ee1bc580874f025ac47e90fc60ae":[5,0,2,1,4,27],
 "classfrc_1_1sim_1_1AnalogInputSim.html#aa3a4fb3d00e483f1efffcd6f2fd6891c":[5,0,2,1,4,3],
 "classfrc_1_1sim_1_1AnalogInputSim.html#aacf2c458d5683441a62d447fd235969a":[5,0,2,1,4,6],
 "classfrc_1_1sim_1_1AnalogInputSim.html#aad607e468ac8b7dbc10f6b131c95a007":[5,0,2,1,4,14],
@@ -249,5 +246,8 @@ var NAVTREEINDEX17 =
 "classfrc_1_1sim_1_1ElevatorSim.html#ab9b1b34281a05c640e5b51103f1ee943":[5,0,2,1,17,5],
 "classfrc_1_1sim_1_1ElevatorSim.html#ae1493b1895504fa6823d6653e8416fde":[5,0,2,1,17,3],
 "classfrc_1_1sim_1_1ElevatorSim.html#aefb5eb18267a4ed3abb0e439a5369905":[5,0,2,1,17,9],
-"classfrc_1_1sim_1_1EncoderSim.html":[5,0,2,1,18]
+"classfrc_1_1sim_1_1EncoderSim.html":[5,0,2,1,18],
+"classfrc_1_1sim_1_1EncoderSim.html#a003b3f17049059ff34c6da47a4ef89ad":[5,0,2,1,18,10],
+"classfrc_1_1sim_1_1EncoderSim.html#a015fc7b17bd93a5a228c671e3b1b2264":[5,0,2,1,18,13],
+"classfrc_1_1sim_1_1EncoderSim.html#a11dd51140695eb643c1859c25d69a93a":[5,0,2,1,18,4]
 };

@@ -1,8 +1,5 @@
 var NAVTREEINDEX8 =
 {
-"classfrc_1_1DifferentialDriveOdometry.html#a1a0336856ce00debda1df449ab8723de":[5,0,2,45,3],
-"classfrc_1_1DifferentialDriveOdometry.html#a4503adecdf15423e6a892cd414998145":[5,0,2,45,1],
-"classfrc_1_1DifferentialDriveOdometry.html#a918d2c1c2411bb25d2ebeed372646930":[5,0,2,45,2],
 "classfrc_1_1DifferentialDrivePoseEstimator.html":[5,0,2,46],
 "classfrc_1_1DifferentialDrivePoseEstimator.html#a08f5072a0aa4e4fba8d7528427047720":[5,0,2,46,1],
 "classfrc_1_1DifferentialDrivePoseEstimator.html#a0fd2c4425e6249e337c0a5d46afac8c3":[5,0,2,46,4],
@@ -249,5 +246,8 @@ var NAVTREEINDEX8 =
 "classfrc_1_1Encoder.html#ad7348793b02487256a1b5506254f079e":[5,0,2,62,9],
 "classfrc_1_1Encoder.html#af22ed59784d03a7d3abb4b94ea0df0f9":[5,0,2,62,10],
 "classfrc_1_1Encoder.html#af87282d6297fec69d6bb051a53420520":[5,0,2,62,6],
-"classfrc_1_1ExtendedKalmanFilter.html":[5,0,2,63]
+"classfrc_1_1ExtendedKalmanFilter.html":[5,0,2,63],
+"classfrc_1_1ExtendedKalmanFilter.html#a2a4ddc449a9f14234e18f8a01b11870d":[5,0,2,63,7],
+"classfrc_1_1ExtendedKalmanFilter.html#a540f4ee08bced06de29e2267cf7cfe1d":[5,0,2,63,8],
+"classfrc_1_1ExtendedKalmanFilter.html#a7d6a8c672d26d8fbcc6598381947c823":[5,0,2,63,9]
 };

@@ -1,8 +1,5 @@
 var NAVTREEINDEX36 =
 {
-"group__ntcore__table__func.html#ga1a21fd80f383c92102bf3654f6cdca4f":[3,3,1,5],
-"group__ntcore__table__func.html#ga215d9cc613ffea1a3905ebd5e75be8f8":[3,3,1,2],
-"group__ntcore__table__func.html#ga292e4d9eaa943ad91c59d01372d8c1c0":[3,3,1,12],
 "group__ntcore__table__func.html#ga35cb2e138b34cf2ca81c6afbac4749e1":[3,3,1,10],
 "group__ntcore__table__func.html#ga40d4291a5e68e69bbe3da7f7de30d509":[3,3,1,6],
 "group__ntcore__table__func.html#ga70a9d991624ff61e0d293d3fbd23fa22":[3,3,1,4],
@@ -108,12 +105,12 @@ var NAVTREEINDEX36 =
 "namespacemembers_eval.html":[4,1,4],
 "namespacemembers_func.html":[4,1,1],
 "namespacemembers_type.html":[4,1,2],
-"namespacent.html":[5,0,5],
 "namespacent.html":[4,0,3],
+"namespacent.html":[5,0,5],
 "namespacent_1_1EntryListenerFlags.html":[4,0,3,0],
 "namespaces.html":[4,0],
-"namespacewpi_1_1detail.html":[5,0,7,0],
 "namespacewpi_1_1detail.html":[4,0,4,0],
+"namespacewpi_1_1detail.html":[5,0,7,0],
 "namespacewpi_1_1java.html":[5,0,7,3],
 "namespacewpi_1_1java.html":[4,0,4,1],
 "never__destroyed_8h_source.html":[6,0,2,0,5],
@@ -249,5 +246,8 @@ var NAVTREEINDEX36 =
 "structNT__EntryNotification.html#ac22a071e4cb9648cdd894dfda1ade6ff":[3,1,18,1],
 "structNT__EntryNotification.html#adf53363e9c6c9be99f6b59608721f0bd":[3,1,18,3],
 "structNT__EntryNotification.html#af1127cfc472c444761c27723e4df8389":[3,1,18,0],
-"structNT__LogMessage.html":[3,1,20]
+"structNT__LogMessage.html":[3,1,20],
+"structNT__LogMessage.html#a0fcdc62e2927be09f6d25da3946e84a4":[3,1,20,1],
+"structNT__LogMessage.html#a1ea767b01ef4ffe026d1b3bb9553dbbc":[3,1,20,4],
+"structNT__LogMessage.html#a45b1bd2a57012283a32f7e56fbc543b1":[3,1,20,0]
 };

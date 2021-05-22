@@ -1,8 +1,5 @@
 var NAVTREEINDEX24 =
 {
-"classwpi_1_1SmallPtrSetImplBase.html#ac7341a97d0cb21b09f2c772329860bcb":[5,0,7,208,16],
-"classwpi_1_1SmallPtrSetImplBase.html#ac8c6a2be4e7eac5c3988bc32a9c91188":[5,0,7,208,8],
-"classwpi_1_1SmallPtrSetImplBase.html#ac909154cadf146898924bbc6f935a608":[5,0,7,208,9],
 "classwpi_1_1SmallPtrSetImplBase.html#ad0e4e3a793b1e085d455bf7261d6e3c0":[5,0,7,208,14],
 "classwpi_1_1SmallPtrSetImplBase.html#ad30cee34309b33a3df7af9dbef238639":[5,0,7,208,13],
 "classwpi_1_1SmallPtrSetImplBase.html#ad7834d99c1a94bf1922ffe6b949a6e25":[5,0,7,208,2],
@@ -249,5 +246,8 @@ var NAVTREEINDEX24 =
 "classwpi_1_1StringMap.html#af33388ba0e5004d0ce00ad7f910c266b":[5,0,7,228,14],
 "classwpi_1_1StringMapConstIterator.html":[5,0,7,229],
 "classwpi_1_1StringMapConstIterator.html#a437e9e0ab5cc574a2eb89fc2016a30be":[5,0,7,229,1],
-"classwpi_1_1StringMapConstIterator.html#a653f110250ac425af98486a0ebce9ed2":[5,0,7,229,2]
+"classwpi_1_1StringMapConstIterator.html#a653f110250ac425af98486a0ebce9ed2":[5,0,7,229,2],
+"classwpi_1_1StringMapConstIterator.html#ac43901fded8b3a42cd7447ae93456335":[5,0,7,229,3],
+"classwpi_1_1StringMapConstIterator.html#adee02da3cb13dab1d62e460a50b338a9":[5,0,7,229,0],
+"classwpi_1_1StringMapEntry.html":[5,0,7,230]
 };

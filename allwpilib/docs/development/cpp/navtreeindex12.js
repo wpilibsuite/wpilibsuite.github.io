@@ -1,8 +1,5 @@
 var NAVTREEINDEX12 =
 {
-"classfrc_1_1PowerDistributionPanel.html#a61587faa02751a80a31dd9c05f20e8c3":[5,0,2,122,11],
-"classfrc_1_1PowerDistributionPanel.html#a8d96b074c5391040a82773b2f679e9f1":[5,0,2,122,0],
-"classfrc_1_1PowerDistributionPanel.html#a96ca1c2ead3f4a4a938801c7212eb962":[5,0,2,122,10],
 "classfrc_1_1PowerDistributionPanel.html#a9d33de919ae2e6abe8aa88a64debccef":[5,0,2,122,12],
 "classfrc_1_1PowerDistributionPanel.html#aa3871e7dba656a5f8b35a161b1c638ef":[5,0,2,122,3],
 "classfrc_1_1PowerDistributionPanel.html#abf5e21292221b457560484d6126e71a1":[5,0,2,122,9],
@@ -190,7 +187,7 @@ var NAVTREEINDEX12 =
 "classfrc_1_1RobotController.html#aec16c910e71082e60486c23061dbfadb":[5,0,2,141,4],
 "classfrc_1_1RobotController.html#afd09dd41cc6a49b7de04c3af063b23ba":[5,0,2,141,15],
 "classfrc_1_1RobotDriveBase.html":[5,0,2,142],
-"classfrc_1_1RobotDriveBase.html#a3133ccfbbc5fe81830d88f8eed6c6b6a":[5,0,2,142,4],
+"classfrc_1_1RobotDriveBase.html#a0e119bd107d07e744252eff218da0b2c":[5,0,2,142,7],
 "classfrc_1_1RobotDriveBase.html#a45bfa04aeb304c0bea2e000f428933fc":[5,0,2,142,8],
 "classfrc_1_1RobotDriveBase.html#a463d317b667cef70681fb58ab5a27662":[5,0,2,142,11],
 "classfrc_1_1RobotDriveBase.html#a66ca9d336c81659405045bf064490cfe":[5,0,2,142,9],
@@ -205,10 +202,10 @@ var NAVTREEINDEX12 =
 "classfrc_1_1RobotDriveBase.html#a91bbe6376ee340272ae36ea20b608754a7eef0180865cff6233c8c521c808f96c":[5,0,2,142,0,2],
 "classfrc_1_1RobotDriveBase.html#a91bbe6376ee340272ae36ea20b608754aef2d7e716b69e79e5d4843838a5c5e79":[5,0,2,142,0,6],
 "classfrc_1_1RobotDriveBase.html#a9dc728746014c7dc2b7141dac93a2b23":[5,0,2,142,6],
-"classfrc_1_1RobotDriveBase.html#aa45f7b95febc8a46c959d1aef2613467":[5,0,2,142,7],
 "classfrc_1_1RobotDriveBase.html#aa4970502fd5575de5602213c092c5aaf":[5,0,2,142,10],
 "classfrc_1_1RobotDriveBase.html#ac407bc60830a0d639de96bdc53d58a0f":[5,0,2,142,5],
 "classfrc_1_1RobotDriveBase.html#ad796a29767020626aa35b2a42fba8264":[5,0,2,142,1],
+"classfrc_1_1RobotDriveBase.html#ad88dd6640af8d27a012e9940f1d64fda":[5,0,2,142,4],
 "classfrc_1_1RobotDriveBase.html#ae011f3027be53e5d24b38ea976139c56":[5,0,2,142,3],
 "classfrc_1_1RobotDriveBase.html#afd5629481f44e20bcf2c79efba271ecb":[5,0,2,142,13],
 "classfrc_1_1RobotState.html":[5,0,2,143],
@@ -249,5 +246,8 @@ var NAVTREEINDEX12 =
 "classfrc_1_1SD540.html#af7c3af05887b22cc1e540be5c6d279b4":[5,0,2,148,2],
 "classfrc_1_1SPI.html":[5,0,2,176],
 "classfrc_1_1SPI.html#a0c5ccda50db4f892c99d339a9cef88e7":[5,0,2,176,27],
-"classfrc_1_1SPI.html#a13df61aff07325c9ea6768ef161db5be":[5,0,2,176,35]
+"classfrc_1_1SPI.html#a13df61aff07325c9ea6768ef161db5be":[5,0,2,176,35],
+"classfrc_1_1SPI.html#a1a538757d510cbea45e087a7e02e515e":[5,0,2,176,26],
+"classfrc_1_1SPI.html#a220425545082b5137f639b62925f80f1":[5,0,2,176,29],
+"classfrc_1_1SPI.html#a2249db26eca01d21361747391251ab70":[5,0,2,176,10]
 };

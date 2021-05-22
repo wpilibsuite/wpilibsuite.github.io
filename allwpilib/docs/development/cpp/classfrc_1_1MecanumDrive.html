@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-53-g8dd8d4d</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-54-g0768c39</span>
    </div>
   </td>
  </tr>
@@ -90,7 +90,9 @@ $(document).ready(function(){initNavTree('classfrc_1_1MecanumDrive.html',''); in
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classfrc_1_1MecanumDrive-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">frc::MecanumDrive Class Reference</div>  </div>
@@ -114,6 +116,11 @@ Inheritance diagram for frc::MecanumDrive:</div>
   </map>
 </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfrc_1_1MecanumDrive_1_1WheelSpeeds.html">WheelSpeeds</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a36a2305d3552c82ffc92943f1db7a507"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1MecanumDrive.html#a36a2305d3552c82ffc92943f1db7a507">MecanumDrive</a> (SpeedController &amp;frontLeftMotor, SpeedController &amp;rearLeftMotor, SpeedController &amp;frontRightMotor, SpeedController &amp;rearRightMotor)</td></tr>
@@ -131,12 +138,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5fb956c5b44a5b608a85212e77962d08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1MecanumDrive.html#a5fb956c5b44a5b608a85212e77962d08">DrivePolar</a> (double magnitude, double angle, double zRotation)</td></tr>
 <tr class="memdesc:a5fb956c5b44a5b608a85212e77962d08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Drive method for Mecanum platform.  <a href="classfrc_1_1MecanumDrive.html#a5fb956c5b44a5b608a85212e77962d08">More...</a><br /></td></tr>
 <tr class="separator:a5fb956c5b44a5b608a85212e77962d08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c9165a43381491582a8c8176e73cd82"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1MecanumDrive.html#a7c9165a43381491582a8c8176e73cd82">IsRightSideInverted</a> () const</td></tr>
-<tr class="memdesc:a7c9165a43381491582a8c8176e73cd82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets if the power sent to the right side of the drivetrain is multiplied by -1.  <a href="classfrc_1_1MecanumDrive.html#a7c9165a43381491582a8c8176e73cd82">More...</a><br /></td></tr>
-<tr class="separator:a7c9165a43381491582a8c8176e73cd82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0f01468ed6f73f7f4ef65999cc6856c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1MecanumDrive.html#af0f01468ed6f73f7f4ef65999cc6856c">SetRightSideInverted</a> (bool rightSideInverted)</td></tr>
-<tr class="memdesc:af0f01468ed6f73f7f4ef65999cc6856c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if the power sent to the right side of the drivetrain should be multiplied by -1.  <a href="classfrc_1_1MecanumDrive.html#af0f01468ed6f73f7f4ef65999cc6856c">More...</a><br /></td></tr>
-<tr class="separator:af0f01468ed6f73f7f4ef65999cc6856c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0be57ea2e3869a237086d04a7fbd51e4"><td class="memItemLeft" align="right" valign="top"><a id="a0be57ea2e3869a237086d04a7fbd51e4"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>StopMotor</b> () override</td></tr>
 <tr class="separator:a0be57ea2e3869a237086d04a7fbd51e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -219,6 +220,16 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>GetDescription</b> (<
 <tr class="memdesc:a47eb53e20e78fb45918759a82d806376 inherit pub_methods_classfrc_1_1SendableHelper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the subsystem name of this Sendable object.  <a href="classfrc_1_1SendableHelper.html#a47eb53e20e78fb45918759a82d806376">More...</a><br /></td></tr>
 <tr class="separator:a47eb53e20e78fb45918759a82d806376 inherit pub_methods_classfrc_1_1SendableHelper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ae8ba7951b238cab9512a9d124a86bbec"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structfrc_1_1MecanumDrive_1_1WheelSpeeds.html">WheelSpeeds</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1MecanumDrive.html#ae8ba7951b238cab9512a9d124a86bbec">DriveCartesianIK</a> (double ySpeed, double xSpeed, double zRotation, double gyroAngle=0.0)</td></tr>
+<tr class="memdesc:ae8ba7951b238cab9512a9d124a86bbec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cartesian inverse kinematics for Mecanum platform.  <a href="classfrc_1_1MecanumDrive.html#ae8ba7951b238cab9512a9d124a86bbec">More...</a><br /></td></tr>
+<tr class="separator:ae8ba7951b238cab9512a9d124a86bbec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_classfrc_1_1MotorSafety"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classfrc_1_1MotorSafety')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classfrc_1_1MotorSafety.html">frc::MotorSafety</a></td></tr>
+<tr class="memitem:a2a666ba39461317728e52fbaa9cdca32 inherit pub_static_methods_classfrc_1_1MotorSafety"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1MotorSafety.html#a2a666ba39461317728e52fbaa9cdca32">CheckMotors</a> ()</td></tr>
+<tr class="memdesc:a2a666ba39461317728e52fbaa9cdca32 inherit pub_static_methods_classfrc_1_1MotorSafety"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the motors to see if any have timed out.  <a href="classfrc_1_1MotorSafety.html#a2a666ba39461317728e52fbaa9cdca32">More...</a><br /></td></tr>
+<tr class="separator:a2a666ba39461317728e52fbaa9cdca32 inherit pub_static_methods_classfrc_1_1MotorSafety"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_classfrc_1_1RobotDriveBase"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classfrc_1_1RobotDriveBase')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classfrc_1_1RobotDriveBase.html">frc::RobotDriveBase</a></td></tr>
@@ -235,18 +246,6 @@ Additional Inherited Members</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a91bbe6376ee340272ae36ea20b608754"><td class="mdescLeft">&#160;</td><td class="mdescRight">The location of a motor on the robot for the purpose of driving. <br /></td></tr>
 <tr class="separator:a91bbe6376ee340272ae36ea20b608754 inherit pub_types_classfrc_1_1RobotDriveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_static_methods_classfrc_1_1MotorSafety"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classfrc_1_1MotorSafety')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classfrc_1_1MotorSafety.html">frc::MotorSafety</a></td></tr>
-<tr class="memitem:a2a666ba39461317728e52fbaa9cdca32 inherit pub_static_methods_classfrc_1_1MotorSafety"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1MotorSafety.html#a2a666ba39461317728e52fbaa9cdca32">CheckMotors</a> ()</td></tr>
-<tr class="memdesc:a2a666ba39461317728e52fbaa9cdca32 inherit pub_static_methods_classfrc_1_1MotorSafety"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the motors to see if any have timed out.  <a href="classfrc_1_1MotorSafety.html#a2a666ba39461317728e52fbaa9cdca32">More...</a><br /></td></tr>
-<tr class="separator:a2a666ba39461317728e52fbaa9cdca32 inherit pub_static_methods_classfrc_1_1MotorSafety"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_classfrc_1_1RobotDriveBase"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classfrc_1_1RobotDriveBase')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classfrc_1_1RobotDriveBase.html">frc::RobotDriveBase</a></td></tr>
-<tr class="memitem:a3133ccfbbc5fe81830d88f8eed6c6b6a inherit pro_methods_classfrc_1_1RobotDriveBase"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1RobotDriveBase.html#a3133ccfbbc5fe81830d88f8eed6c6b6a">ApplyDeadband</a> (double number, double deadband)</td></tr>
-<tr class="memdesc:a3133ccfbbc5fe81830d88f8eed6c6b6a inherit pro_methods_classfrc_1_1RobotDriveBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns 0.0 if the given value is within the specified range around zero.  <a href="classfrc_1_1RobotDriveBase.html#a3133ccfbbc5fe81830d88f8eed6c6b6a">More...</a><br /></td></tr>
-<tr class="separator:a3133ccfbbc5fe81830d88f8eed6c6b6a inherit pro_methods_classfrc_1_1RobotDriveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa45f7b95febc8a46c959d1aef2613467 inherit pro_methods_classfrc_1_1RobotDriveBase"><td class="memItemLeft" align="right" valign="top"><a id="aa45f7b95febc8a46c959d1aef2613467"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1RobotDriveBase.html#aa45f7b95febc8a46c959d1aef2613467">Normalize</a> (<a class="el" href="classwpi_1_1MutableArrayRef.html">wpi::MutableArrayRef</a>&lt; double &gt; wheelSpeeds)</td></tr>
-<tr class="memdesc:aa45f7b95febc8a46c959d1aef2613467 inherit pro_methods_classfrc_1_1RobotDriveBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normalize all wheel speeds if the magnitude of any wheel is greater than 1.0. <br /></td></tr>
-<tr class="separator:aa45f7b95febc8a46c959d1aef2613467 inherit pro_methods_classfrc_1_1RobotDriveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classfrc_1_1SendableHelper"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classfrc_1_1SendableHelper')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classfrc_1_1SendableHelper.html">frc::SendableHelper&lt; MecanumDrive &gt;</a></td></tr>
 <tr class="memitem:a4dd2d1a64ac47d461b323e2b53deabe6 inherit pro_methods_classfrc_1_1SendableHelper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SendableHelper.html#a4dd2d1a64ac47d461b323e2b53deabe6">SetName</a> (const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;moduleType, int channel)</td></tr>
 <tr class="memdesc:a4dd2d1a64ac47d461b323e2b53deabe6 inherit pro_methods_classfrc_1_1SendableHelper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name of the sensor with a channel number.  <a href="classfrc_1_1SendableHelper.html#a4dd2d1a64ac47d461b323e2b53deabe6">More...</a><br /></td></tr>
@@ -260,6 +259,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a6e4d57269484510fc5c2ab7cd4862c61 inherit pro_methods_classfrc_1_1SendableHelper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SendableHelper.html#a6e4d57269484510fc5c2ab7cd4862c61">AddChild</a> (void *child)</td></tr>
 <tr class="memdesc:a6e4d57269484510fc5c2ab7cd4862c61 inherit pro_methods_classfrc_1_1SendableHelper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a child component.  <a href="classfrc_1_1SendableHelper.html#a6e4d57269484510fc5c2ab7cd4862c61">More...</a><br /></td></tr>
 <tr class="separator:a6e4d57269484510fc5c2ab7cd4862c61 inherit pro_methods_classfrc_1_1SendableHelper"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_static_methods_classfrc_1_1RobotDriveBase"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_classfrc_1_1RobotDriveBase')"><img src="closed.png" alt="-"/>&#160;Static Protected Member Functions inherited from <a class="el" href="classfrc_1_1RobotDriveBase.html">frc::RobotDriveBase</a></td></tr>
+<tr class="memitem:ad88dd6640af8d27a012e9940f1d64fda inherit pro_static_methods_classfrc_1_1RobotDriveBase"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1RobotDriveBase.html#ad88dd6640af8d27a012e9940f1d64fda">ApplyDeadband</a> (double number, double deadband)</td></tr>
+<tr class="memdesc:ad88dd6640af8d27a012e9940f1d64fda inherit pro_static_methods_classfrc_1_1RobotDriveBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns 0.0 if the given value is within the specified range around zero.  <a href="classfrc_1_1RobotDriveBase.html#ad88dd6640af8d27a012e9940f1d64fda">More...</a><br /></td></tr>
+<tr class="separator:ad88dd6640af8d27a012e9940f1d64fda inherit pro_static_methods_classfrc_1_1RobotDriveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e119bd107d07e744252eff218da0b2c inherit pro_static_methods_classfrc_1_1RobotDriveBase"><td class="memItemLeft" align="right" valign="top"><a id="a0e119bd107d07e744252eff218da0b2c"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1RobotDriveBase.html#a0e119bd107d07e744252eff218da0b2c">Normalize</a> (<a class="el" href="classwpi_1_1MutableArrayRef.html">wpi::MutableArrayRef</a>&lt; double &gt; wheelSpeeds)</td></tr>
+<tr class="memdesc:a0e119bd107d07e744252eff218da0b2c inherit pro_static_methods_classfrc_1_1RobotDriveBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normalize all wheel speeds if the magnitude of any wheel is greater than 1.0. <br /></td></tr>
+<tr class="separator:a0e119bd107d07e744252eff218da0b2c inherit pro_static_methods_classfrc_1_1RobotDriveBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classfrc_1_1RobotDriveBase"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classfrc_1_1RobotDriveBase')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classfrc_1_1RobotDriveBase.html">frc::RobotDriveBase</a></td></tr>
 <tr class="memitem:a750d348d0107fcdcfcd41318101b4194 inherit pro_attribs_classfrc_1_1RobotDriveBase"><td class="memItemLeft" align="right" valign="top"><a id="a750d348d0107fcdcfcd41318101b4194"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>m_deadband</b> = 0.02</td></tr>
@@ -382,6 +389,66 @@ In <a class="el" href="classfrc_1_1MecanumDrive.html" title="A class for driving
 
 </div>
 </div>
+<a id="ae8ba7951b238cab9512a9d124a86bbec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8ba7951b238cab9512a9d124a86bbec">&#9670;&nbsp;</a></span>DriveCartesianIK()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="structfrc_1_1MecanumDrive_1_1WheelSpeeds.html">WheelSpeeds</a> frc::MecanumDrive::DriveCartesianIK </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>ySpeed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>xSpeed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>zRotation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>gyroAngle</em> = <code>0.0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Cartesian inverse kinematics for Mecanum platform. </p>
+<p>Angles are measured clockwise from the positive X axis. The robot's speed is independent from its angle or rotation rate.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ySpeed</td><td>The robot's speed along the Y axis [-1.0..1.0]. Right is positive. </td></tr>
+    <tr><td class="paramname">xSpeed</td><td>The robot's speed along the X axis [-1.0..1.0]. Forward is positive. </td></tr>
+    <tr><td class="paramname">zRotation</td><td>The robot's rotation rate around the Z axis [-1.0..1.0]. Clockwise is positive. </td></tr>
+    <tr><td class="paramname">gyroAngle</td><td>The current angle reading from the gyro in degrees around the Z axis. Use this to implement field-oriented controls. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a5fb956c5b44a5b608a85212e77962d08"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5fb956c5b44a5b608a85212e77962d08">&#9670;&nbsp;</a></span>DrivePolar()</h2>
 
@@ -463,52 +530,6 @@ In <a class="el" href="classfrc_1_1MecanumDrive.html" title="A class for driving
 
 </div>
 </div>
-<a id="a7c9165a43381491582a8c8176e73cd82"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c9165a43381491582a8c8176e73cd82">&#9670;&nbsp;</a></span>IsRightSideInverted()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool frc::MecanumDrive::IsRightSideInverted </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Gets if the power sent to the right side of the drivetrain is multiplied by -1. </p>
-<dl class="section return"><dt>Returns</dt><dd>true if the right side is inverted </dd></dl>
-
-</div>
-</div>
-<a id="af0f01468ed6f73f7f4ef65999cc6856c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0f01468ed6f73f7f4ef65999cc6856c">&#9670;&nbsp;</a></span>SetRightSideInverted()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void frc::MecanumDrive::SetRightSideInverted </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>rightSideInverted</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sets if the power sent to the right side of the drivetrain should be multiplied by -1. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">rightSideInverted</td><td>true if right side power should be multiplied by -1 </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>frc/drive/<a class="el" href="MecanumDrive_8h_source.html">MecanumDrive.h</a></li>
 </ul>
@@ -518,7 +539,7 @@ In <a class="el" href="classfrc_1_1MecanumDrive.html" title="A class for driving
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1MecanumDrive.html">MecanumDrive</a></li>
-    <li class="footer">Generated on Sat May 22 2021 05:31:21 for WPILibC++ by
+    <li class="footer">Generated on Sat May 22 2021 05:35:55 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>
