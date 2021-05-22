@@ -1,5 +1,6 @@
 var NAVTREEINDEX26 =
 {
+"classwpi_1_1UrlParser.html#a3f95547ce1760880dc729b63336e2c76":[5,0,7,246,15],
 "classwpi_1_1UrlParser.html#a54f6e9c38a64be45cc0752a7bc52f35f":[5,0,7,246,0],
 "classwpi_1_1UrlParser.html#a581e2b4d76b08911d1cb9701c2bd2e74":[5,0,7,246,7],
 "classwpi_1_1UrlParser.html#a5fd24a0a7e7acd3759c3079a2016e3cb":[5,0,7,246,12],
@@ -248,6 +249,5 @@ var NAVTREEINDEX26 =
 "classwpi_1_1detail_1_1json__ref.html#a562dbc86960d98387d25436f2479e76f":[5,0,7,0,49,10],
 "classwpi_1_1detail_1_1json__ref.html#a9c25cda9ec420d026611b45e9e4d0327":[5,0,7,0,49,1],
 "classwpi_1_1detail_1_1json__ref.html#aa2274eaf1c4a1cd147a3e425bf7fff67":[5,0,7,0,49,8],
-"classwpi_1_1detail_1_1json__ref.html#aa3d335c1930707df9e3b976032353531":[5,0,7,0,49,7],
-"classwpi_1_1detail_1_1json__ref.html#abc29108d8c95581193b182ef1cb56da3":[5,0,7,0,49,2]
+"classwpi_1_1detail_1_1json__ref.html#aa3d335c1930707df9e3b976032353531":[5,0,7,0,49,7]
 };

@@ -6,6 +6,7 @@ var classfrc_1_1SimpleMotorFeedforward =
     [ "Velocity", "classfrc_1_1SimpleMotorFeedforward.html#a42c7ddd5b2eccd3c2a572112aae33337", null ],
     [ "SimpleMotorFeedforward", "classfrc_1_1SimpleMotorFeedforward.html#af8afc264c79bdba33103517e65c7203b", null ],
     [ "SimpleMotorFeedforward", "classfrc_1_1SimpleMotorFeedforward.html#ac0aa2831119b468a83b9a391bbe74e18", null ],
+    [ "Calculate", "classfrc_1_1SimpleMotorFeedforward.html#a4137b38faf0f3d55c720a1ee0a4764c2", null ],
     [ "Calculate", "classfrc_1_1SimpleMotorFeedforward.html#a73aa2d93966118c8c2029fcebc1100fa", null ],
     [ "MaxAchievableAcceleration", "classfrc_1_1SimpleMotorFeedforward.html#ab30fe25288efd06065c4e7e727747f12", null ],
     [ "MaxAchievableVelocity", "classfrc_1_1SimpleMotorFeedforward.html#afbba101873e243e3c8346b92866f4bf1", null ],

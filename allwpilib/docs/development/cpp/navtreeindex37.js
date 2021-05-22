@@ -1,5 +1,6 @@
 var NAVTREEINDEX37 =
 {
+"structNT__LogMessage.html#a45b1bd2a57012283a32f7e56fbc543b1":[3,1,20,0],
 "structNT__LogMessage.html#aa8431f76d15e80d1fac24dc791aac454":[3,1,20,3],
 "structNT__LogMessage.html#af7c8c2ce49f205df7460f415cb7842af":[3,1,20,2],
 "structNT__RpcAnswer.html":[3,1,17],
@@ -248,6 +249,5 @@ var NAVTREEINDEX37 =
 "structstd_1_1is__error__code__enum_3_01wpi_1_1errc_01_4.html":[5,0,6,1],
 "structstd_1_1less_3_01_1_1wpi_1_1detail_1_1value__t_01_4.html":[5,0,6,2],
 "structstd_1_1less_3_01_1_1wpi_1_1detail_1_1value__t_01_4.html#a77368f0a5f1dfd597b9805cd89791ed2":[5,0,6,2,0],
-"structstd_1_1tuple__element_3_01I_00_01wpi_1_1array_3_01T_00_01N_01_4_01_4.html":[5,0,6,3],
-"structstd_1_1tuple__element_3_01I_00_01wpi_1_1array_3_01T_00_01N_01_4_01_4.html#a4841113befca5fa15c565ccb18980e80":[5,0,6,3,0]
+"structstd_1_1tuple__element_3_01I_00_01wpi_1_1array_3_01T_00_01N_01_4_01_4.html":[5,0,6,3]
 };

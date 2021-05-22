@@ -1,5 +1,6 @@
 var NAVTREEINDEX16 =
 {
+"classfrc_1_1Ultrasonic.html#a60ca13c6b00fe099752c5405f53f80bc":[5,0,2,205,11],
 "classfrc_1_1Ultrasonic.html#a6ce3eec9198fe8399231800c8584dff8":[5,0,2,205,14],
 "classfrc_1_1Ultrasonic.html#a70e35947a9e48a3b9fa610a68289e1e8":[5,0,2,205,7],
 "classfrc_1_1Ultrasonic.html#a9a857cae4a36aac2401f03f035a50c7f":[5,0,2,205,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX16 =
 "classfrc_1_1sim_1_1AnalogInputSim.html#a5c7d28d2ea436af700cf5bce4acfd3dc":[5,0,2,1,4,10],
 "classfrc_1_1sim_1_1AnalogInputSim.html#a60da50486b27900ab8b8a3916f95d80a":[5,0,2,1,4,9],
 "classfrc_1_1sim_1_1AnalogInputSim.html#a67db4db6f7ceff3314fa3818fd156687":[5,0,2,1,4,29],
-"classfrc_1_1sim_1_1AnalogInputSim.html#a6cc8bfd6fd3c34aebf2414ff3eab0997":[5,0,2,1,4,24],
-"classfrc_1_1sim_1_1AnalogInputSim.html#a9e04ee1bc580874f025ac47e90fc60ae":[5,0,2,1,4,27]
+"classfrc_1_1sim_1_1AnalogInputSim.html#a6cc8bfd6fd3c34aebf2414ff3eab0997":[5,0,2,1,4,24]
 };

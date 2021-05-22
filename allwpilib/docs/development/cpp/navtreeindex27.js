@@ -1,5 +1,6 @@
 var NAVTREEINDEX27 =
 {
+"classwpi_1_1detail_1_1json__ref.html#abc29108d8c95581193b182ef1cb56da3":[5,0,7,0,49,2],
 "classwpi_1_1detail_1_1json__ref.html#ac868df92b513b0a6b0d1d986d5dd9838":[5,0,7,0,49,0],
 "classwpi_1_1detail_1_1json__ref.html#acd4da8fe1c7bd9d6015f10540dd8d80e":[5,0,7,0,49,9],
 "classwpi_1_1detail_1_1json__ref.html#ad934a3d07a5bf89b2f4836cab97be40e":[5,0,7,0,49,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX27 =
 "classwpi_1_1java_1_1JSingletonCallbackManager.html#a9577bd51b1f41301fb2c4fd3ae5b01ec":[5,0,7,3,9,0],
 "classwpi_1_1java_1_1JStringRef.html":[5,0,7,3,10],
 "classwpi_1_1java_1_1JStringRef.html#a0b9bf565a43424710c1aa08213438b77":[5,0,7,3,10,1],
-"classwpi_1_1java_1_1JStringRef.html#a2a435b19c0265c02b1a124862aa3d2fa":[5,0,7,3,10,4],
-"classwpi_1_1java_1_1JStringRef.html#a98b59ad206d3223c5fabb7dbd4bc5d2b":[5,0,7,3,10,2]
+"classwpi_1_1java_1_1JStringRef.html#a2a435b19c0265c02b1a124862aa3d2fa":[5,0,7,3,10,4]
 };
