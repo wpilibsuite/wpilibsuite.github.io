@@ -12,7 +12,6 @@ edu.wpi.first.math.estimator
 edu.wpi.first.math.filter
 edu.wpi.first.math.geometry
 edu.wpi.first.math.kinematics
-edu.wpi.first.math.math
 edu.wpi.first.math.numbers
 edu.wpi.first.math.spline
 edu.wpi.first.math.system
