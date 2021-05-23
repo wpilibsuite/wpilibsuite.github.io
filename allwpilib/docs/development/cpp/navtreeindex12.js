@@ -1,6 +1,5 @@
 var NAVTREEINDEX12 =
 {
-"classfrc_1_1PowerDistributionPanel.html#a9d33de919ae2e6abe8aa88a64debccef":[5,0,2,122,12],
 "classfrc_1_1PowerDistributionPanel.html#aa3871e7dba656a5f8b35a161b1c638ef":[5,0,2,122,3],
 "classfrc_1_1PowerDistributionPanel.html#abf5e21292221b457560484d6126e71a1":[5,0,2,122,9],
 "classfrc_1_1PowerDistributionPanel.html#ac51b662f769e566f695323b1f9cac544":[5,0,2,122,13],
@@ -249,5 +248,6 @@ var NAVTREEINDEX12 =
 "classfrc_1_1SPI.html#a13df61aff07325c9ea6768ef161db5be":[5,0,2,176,35],
 "classfrc_1_1SPI.html#a1a538757d510cbea45e087a7e02e515e":[5,0,2,176,26],
 "classfrc_1_1SPI.html#a220425545082b5137f639b62925f80f1":[5,0,2,176,29],
-"classfrc_1_1SPI.html#a2249db26eca01d21361747391251ab70":[5,0,2,176,10]
+"classfrc_1_1SPI.html#a2249db26eca01d21361747391251ab70":[5,0,2,176,10],
+"classfrc_1_1SPI.html#a248b4f03717613ba2d130584d32a19d7":[5,0,2,176,21]
 };

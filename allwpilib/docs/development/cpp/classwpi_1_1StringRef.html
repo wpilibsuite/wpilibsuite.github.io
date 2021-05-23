@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-56-g87384ea</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-58-g6d20b12</span>
    </div>
   </td>
  </tr>
@@ -210,6 +210,9 @@ LLVM_NODISCARD char&#160;</td><td class="memItemRight" valign="bottom"><b>operat
 <tr class="memitem:aa7fe6323057605cd51f150ef981cc5c4"><td class="memItemLeft" align="right" valign="top"><a id="aa7fe6323057605cd51f150ef981cc5c4"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>operator std::string</b> () const</td></tr>
 <tr class="separator:aa7fe6323057605cd51f150ef981cc5c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7f2a9a250caa56eb283480292526f5f"><td class="memItemLeft" align="right" valign="top"><a id="ac7f2a9a250caa56eb283480292526f5f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>operator std::string_view</b> () const</td></tr>
+<tr class="separator:ac7f2a9a250caa56eb283480292526f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">String Predicates</div></td></tr>
 <tr class="memitem:aafd535c43143989eedd76cc77ea322f0"><td class="memItemLeft" align="right" valign="top"><a id="aafd535c43143989eedd76cc77ea322f0"></a>
 LLVM_NODISCARD LLVM_ATTRIBUTE_ALWAYS_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1StringRef.html#aafd535c43143989eedd76cc77ea322f0">startswith</a> (<a class="el" href="classwpi_1_1StringRef.html">StringRef</a> Prefix) const noexcept</td></tr>
@@ -441,6 +444,10 @@ constexpr LLVM_ATTRIBUTE_ALWAYS_INLINE&#160;</td><td class="memItemRight" valign
 LLVM_ATTRIBUTE_ALWAYS_INLINE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1StringRef.html#a4f46f66bc087e1c7a0e3c5e94b07eeeb">StringRef</a> (const std::string &amp;Str) noexcept</td></tr>
 <tr class="memdesc:a4f46f66bc087e1c7a0e3c5e94b07eeeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a string ref from an std::string. <br /></td></tr>
 <tr class="separator:a4f46f66bc087e1c7a0e3c5e94b07eeeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a825aa8dceddcd2cd19a13bafb5f537e8"><td class="memItemLeft" align="right" valign="top"><a id="a825aa8dceddcd2cd19a13bafb5f537e8"></a>
+constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1StringRef.html#a825aa8dceddcd2cd19a13bafb5f537e8">StringRef</a> (std::string_view Str)</td></tr>
+<tr class="memdesc:a825aa8dceddcd2cd19a13bafb5f537e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a string ref from an std::string_view. <br /></td></tr>
+<tr class="separator:a825aa8dceddcd2cd19a13bafb5f537e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8df728fc5c667abfdbfd22e86c12d06c"><td class="memItemLeft" align="right" valign="top"><a id="a8df728fc5c667abfdbfd22e86c12d06c"></a>
 static <a class="el" href="classwpi_1_1StringRef.html">StringRef</a>&#160;</td><td class="memItemRight" valign="bottom"><b>withNullAsEmpty</b> (const char *<a class="el" href="classwpi_1_1StringRef.html#a3639987deb10240784a410a843c6df94">data</a>) noexcept</td></tr>
 <tr class="separator:a8df728fc5c667abfdbfd22e86c12d06c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1565,7 +1572,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>wpi</b></li><li class="navelem"><a class="el" href="classwpi_1_1StringRef.html">StringRef</a></li>
-    <li class="footer">Generated on Sat May 22 2021 06:54:30 for WPILibC++ by
+    <li class="footer">Generated on Sun May 23 2021 22:28:18 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

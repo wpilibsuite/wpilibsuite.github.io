@@ -1,6 +1,5 @@
 var NAVTREEINDEX13 =
 {
-"classfrc_1_1SPI.html#a248b4f03717613ba2d130584d32a19d7":[5,0,2,176,21],
 "classfrc_1_1SPI.html#a24b13f7560a76642a2cb312041421423":[5,0,2,176,42],
 "classfrc_1_1SPI.html#a2d1fddb48bef3faefc190fa7ac9728ca":[5,0,2,176,33],
 "classfrc_1_1SPI.html#a2e0c839fc5c3a24b236e3e0d5cb2e01d":[5,0,2,176,20],
@@ -249,5 +248,6 @@ var NAVTREEINDEX13 =
 "classfrc_1_1SerialPort.html#ab8450a4f8ea9cbb66b7fcf3b65445408ac7db69a54ed85b15620d6d7b83571e64":[5,0,2,158,0,2],
 "classfrc_1_1SerialPort.html#ab8450a4f8ea9cbb66b7fcf3b65445408adaac9d4a472f76402d93ecd54846425d":[5,0,2,158,0,0],
 "classfrc_1_1SerialPort.html#ac7bc3846d5ec56487a2b2ee0d2dd9c77":[5,0,2,158,13],
-"classfrc_1_1SerialPort.html#ac863fb1cd3a134f359434e58033d7138":[5,0,2,158,2]
+"classfrc_1_1SerialPort.html#ac863fb1cd3a134f359434e58033d7138":[5,0,2,158,2],
+"classfrc_1_1SerialPort.html#ac863fb1cd3a134f359434e58033d7138a272a98c389970c5760d0b18572626350":[5,0,2,158,2,0]
 };

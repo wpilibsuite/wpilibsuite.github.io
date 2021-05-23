@@ -1,5 +1,10 @@
 var NAVTREEINDEX37 =
 {
+"structNT__EntryNotification.html#adf53363e9c6c9be99f6b59608721f0bd":[3,1,18,3],
+"structNT__EntryNotification.html#af1127cfc472c444761c27723e4df8389":[3,1,18,0],
+"structNT__LogMessage.html":[3,1,20],
+"structNT__LogMessage.html#a0fcdc62e2927be09f6d25da3946e84a4":[3,1,20,1],
+"structNT__LogMessage.html#a1ea767b01ef4ffe026d1b3bb9553dbbc":[3,1,20,4],
 "structNT__LogMessage.html#a45b1bd2a57012283a32f7e56fbc543b1":[3,1,20,0],
 "structNT__LogMessage.html#aa8431f76d15e80d1fac24dc791aac454":[3,1,20,3],
 "structNT__LogMessage.html#af7c8c2ce49f205df7460f415cb7842af":[3,1,20,2],
@@ -244,10 +249,5 @@ var NAVTREEINDEX37 =
 "structnt_1_1RpcResultDef.html#a18621588351214621dcf745cfdda0355":[3,3,12,0],
 "structnt_1_1RpcResultDef.html#a7e5c5c12ba9ed0db8acf538a838df933":[3,3,12,1],
 "structnt_1_1RpcResultDef.html#aabf4718ae87af9b53ccde366aab462dc":[3,3,12,3],
-"structstd_1_1hash_3_01wpi_1_1json_01_4.html":[5,0,6,0],
-"structstd_1_1hash_3_01wpi_1_1json_01_4.html#aa7173072f57ef2a8e0cbda8d5c2e7d2a":[5,0,6,0,0],
-"structstd_1_1is__error__code__enum_3_01wpi_1_1errc_01_4.html":[5,0,6,1],
-"structstd_1_1less_3_01_1_1wpi_1_1detail_1_1value__t_01_4.html":[5,0,6,2],
-"structstd_1_1less_3_01_1_1wpi_1_1detail_1_1value__t_01_4.html#a77368f0a5f1dfd597b9805cd89791ed2":[5,0,6,2,0],
-"structstd_1_1tuple__element_3_01I_00_01wpi_1_1array_3_01T_00_01N_01_4_01_4.html":[5,0,6,3]
+"structstd_1_1hash_3_01wpi_1_1json_01_4.html":[5,0,6,0]
 };

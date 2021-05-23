@@ -39,6 +39,7 @@ var classwpi_1_1raw__ostream =
     [ "operator<<", "classwpi_1_1raw__ostream.html#a76cbba1cf6c523ee83e68935830ab2c7", null ],
     [ "operator<<", "classwpi_1_1raw__ostream.html#abdde12a6dd45fb6e7c3ae139e1e1e550", null ],
     [ "operator<<", "classwpi_1_1raw__ostream.html#ac6345c3374cc51fb881fb2a4a823339b", null ],
+    [ "operator<<", "classwpi_1_1raw__ostream.html#ac3a34ef51cff26d4ea21f24253e936f6", null ],
     [ "operator<<", "classwpi_1_1raw__ostream.html#a8f2d59c9872168a4a24ab71e16e4cf08", null ],
     [ "operator<<", "classwpi_1_1raw__ostream.html#aba7ccb8b7320a42e2a20f24d6a70dc35", null ],
     [ "operator<<", "classwpi_1_1raw__ostream.html#aa4748cba41aa86e5695c6b1ef988751c", null ],

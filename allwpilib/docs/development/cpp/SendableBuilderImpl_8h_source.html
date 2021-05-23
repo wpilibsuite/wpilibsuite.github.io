@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-56-g87384ea</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-58-g6d20b12</span>
    </div>
   </td>
  </tr>
@@ -287,7 +287,7 @@ $(document).ready(function(){initNavTree('SendableBuilderImpl_8h_source.html',''
 <div class="ttc" id="aclassfrc_1_1SendableBuilderImpl_html_a83f7383893cf9d126950bbab173b7824"><div class="ttname"><a href="classfrc_1_1SendableBuilderImpl.html#a83f7383893cf9d126950bbab173b7824">frc::SendableBuilderImpl::SetTable</a></div><div class="ttdeci">void SetTable(std::shared_ptr&lt; nt::NetworkTable &gt; table)</div><div class="ttdoc">Set the network table.</div></div>
 <div class="ttc" id="aclassfrc_1_1SendableBuilderImpl_html_a60b96297df708e04a93049bd9cf0c3bc"><div class="ttname"><a href="classfrc_1_1SendableBuilderImpl.html#a60b96297df708e04a93049bd9cf0c3bc">frc::SendableBuilderImpl::StopLiveWindowMode</a></div><div class="ttdeci">void StopLiveWindowMode()</div><div class="ttdoc">Stop LiveWindow mode by unhooking the setters for all properties.</div></div>
 <div class="ttc" id="aclassfrc_1_1SendableBuilderImpl_html_ae58a130c546efe5d122df6eced280680"><div class="ttname"><a href="classfrc_1_1SendableBuilderImpl.html#ae58a130c546efe5d122df6eced280680">frc::SendableBuilderImpl::HasTable</a></div><div class="ttdeci">bool HasTable() const</div><div class="ttdoc">Return whether this sendable has an associated table.</div></div>
-<div class="ttc" id="aclasswpi_1_1StringRef_html"><div class="ttname"><a href="classwpi_1_1StringRef.html">wpi::StringRef</a></div><div class="ttdoc">StringRef - Represent a constant reference to a string, i.e.</div><div class="ttdef"><b>Definition:</b> StringRef.h:49</div></div>
+<div class="ttc" id="aclasswpi_1_1StringRef_html"><div class="ttname"><a href="classwpi_1_1StringRef.html">wpi::StringRef</a></div><div class="ttdoc">StringRef - Represent a constant reference to a string, i.e.</div><div class="ttdef"><b>Definition:</b> StringRef.h:50</div></div>
 <div class="ttc" id="aclassfrc_1_1SendableBuilderImpl_html_afca8237f825efc00eb3c1d0aef885f24"><div class="ttname"><a href="classfrc_1_1SendableBuilderImpl.html#afca8237f825efc00eb3c1d0aef885f24">frc::SendableBuilderImpl::SetUpdateTable</a></div><div class="ttdeci">void SetUpdateTable(std::function&lt; void()&gt; func) override</div><div class="ttdoc">Set the function that should be called to update the network table for things other than properties.</div></div>
 <div class="ttc" id="aclassfrc_1_1SendableBuilderImpl_html_a0baa585e6cfeb422c3e1b6a217039731"><div class="ttname"><a href="classfrc_1_1SendableBuilderImpl.html#a0baa585e6cfeb422c3e1b6a217039731">frc::SendableBuilderImpl::GetTable</a></div><div class="ttdeci">std::shared_ptr&lt; nt::NetworkTable &gt; GetTable() override</div><div class="ttdoc">Get the network table.</div></div>
 <div class="ttc" id="aclassfrc_1_1SendableBuilderImpl_html_ab2110310053e8db6bee88766f221fe3c"><div class="ttname"><a href="classfrc_1_1SendableBuilderImpl.html#ab2110310053e8db6bee88766f221fe3c">frc::SendableBuilderImpl::AddSmallStringProperty</a></div><div class="ttdeci">void AddSmallStringProperty(const wpi::Twine &amp;key, std::function&lt; wpi::StringRef(wpi::SmallVectorImpl&lt; char &gt; &amp;buf)&gt; getter, std::function&lt; void(wpi::StringRef)&gt; setter) override</div><div class="ttdoc">Add a string property (SmallString form).</div></div>
@@ -302,13 +302,13 @@ $(document).ready(function(){initNavTree('SendableBuilderImpl_8h_source.html',''
 <div class="ttc" id="aclassfrc_1_1SendableBuilderImpl_html_aba9e66cf9cadb7805ae0b1ed92f7c5a0"><div class="ttname"><a href="classfrc_1_1SendableBuilderImpl.html#aba9e66cf9cadb7805ae0b1ed92f7c5a0">frc::SendableBuilderImpl::AddSmallBooleanArrayProperty</a></div><div class="ttdeci">void AddSmallBooleanArrayProperty(const wpi::Twine &amp;key, std::function&lt; wpi::ArrayRef&lt; int &gt;(wpi::SmallVectorImpl&lt; int &gt; &amp;buf)&gt; getter, std::function&lt; void(wpi::ArrayRef&lt; int &gt;)&gt; setter) override</div><div class="ttdoc">Add a boolean array property (SmallVector form).</div></div>
 <div class="ttc" id="aclassfrc_1_1SendableBuilderImpl_html_a4788aa021728780cb68ae05b824112dc"><div class="ttname"><a href="classfrc_1_1SendableBuilderImpl.html#a4788aa021728780cb68ae05b824112dc">frc::SendableBuilderImpl::AddValueProperty</a></div><div class="ttdeci">void AddValueProperty(const wpi::Twine &amp;key, std::function&lt; std::shared_ptr&lt; nt::Value &gt;()&gt; getter, std::function&lt; void(std::shared_ptr&lt; nt::Value &gt;)&gt; setter) override</div><div class="ttdoc">Add a NetworkTableValue property.</div></div>
 <div class="ttc" id="aclassfrc_1_1SendableBuilderImpl_html_a5870caf3e603a11492c76e26a12eefa6"><div class="ttname"><a href="classfrc_1_1SendableBuilderImpl.html#a5870caf3e603a11492c76e26a12eefa6">frc::SendableBuilderImpl::AddDoubleProperty</a></div><div class="ttdeci">void AddDoubleProperty(const wpi::Twine &amp;key, std::function&lt; double()&gt; getter, std::function&lt; void(double)&gt; setter) override</div><div class="ttdoc">Add a double property.</div></div>
-<div class="ttc" id="aclasswpi_1_1Twine_html"><div class="ttname"><a href="classwpi_1_1Twine.html">wpi::Twine</a></div><div class="ttdoc">Twine - A lightweight data structure for efficiently representing the concatenation of temporary valu...</div><div class="ttdef"><b>Definition:</b> Twine.h:85</div></div>
+<div class="ttc" id="aclasswpi_1_1Twine_html"><div class="ttname"><a href="classwpi_1_1Twine.html">wpi::Twine</a></div><div class="ttdoc">Twine - A lightweight data structure for efficiently representing the concatenation of temporary valu...</div><div class="ttdef"><b>Definition:</b> Twine.h:86</div></div>
 <div class="ttc" id="aclassfrc_1_1SendableBuilder_html"><div class="ttname"><a href="classfrc_1_1SendableBuilder.html">frc::SendableBuilder</a></div><div class="ttdef"><b>Definition:</b> SendableBuilder.h:21</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_b02f085c5688c41df73c48b2d64de380.html">smartdashboard</a></li><li class="navelem"><b>SendableBuilderImpl.h</b></li>
-    <li class="footer">Generated on Sat May 22 2021 06:54:25 for WPILibC++ by
+    <li class="footer">Generated on Sun May 23 2021 22:28:14 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

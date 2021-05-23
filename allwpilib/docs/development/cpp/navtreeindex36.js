@@ -1,5 +1,10 @@
 var NAVTREEINDEX36 =
 {
+"group__ntcore__table__func.html#ga03d0a723385257cf6bd2cfb81f896b59":[3,3,1,1],
+"group__ntcore__table__func.html#ga16ae14eb3fcf593ca51d05a9fe2e9a81":[3,3,1,9],
+"group__ntcore__table__func.html#ga17b4721bbd422853a29db96d63920c0a":[3,3,1,0],
+"group__ntcore__table__func.html#ga1a21fd80f383c92102bf3654f6cdca4f":[3,3,1,5],
+"group__ntcore__table__func.html#ga215d9cc613ffea1a3905ebd5e75be8f8":[3,3,1,2],
 "group__ntcore__table__func.html#ga292e4d9eaa943ad91c59d01372d8c1c0":[3,3,1,12],
 "group__ntcore__table__func.html#ga35cb2e138b34cf2ca81c6afbac4749e1":[3,3,1,10],
 "group__ntcore__table__func.html#ga40d4291a5e68e69bbe3da7f7de30d509":[3,3,1,6],
@@ -94,8 +99,8 @@ var NAVTREEINDEX36 =
 "md__home_runner_work_allwpilib_allwpilib_LICENSE.html":[0],
 "modules.html":[3],
 "mutex_8h_source.html":[6,0,11,48],
-"namespacecs.html":[4,0,0],
 "namespacecs.html":[5,0,0],
+"namespacecs.html":[4,0,0],
 "namespacefrc.html":[5,0,2],
 "namespacefrc.html":[4,0,1],
 "namespacefrc_1_1filesystem.html":[4,0,1,0],
@@ -110,8 +115,8 @@ var NAVTREEINDEX36 =
 "namespacent.html":[4,0,3],
 "namespacent_1_1EntryListenerFlags.html":[4,0,3,0],
 "namespaces.html":[4,0],
-"namespacewpi_1_1detail.html":[5,0,7,0],
 "namespacewpi_1_1detail.html":[4,0,4,0],
+"namespacewpi_1_1detail.html":[5,0,7,0],
 "namespacewpi_1_1java.html":[4,0,4,1],
 "namespacewpi_1_1java.html":[5,0,7,3],
 "never__destroyed_8h_source.html":[6,0,2,0,5],
@@ -244,10 +249,5 @@ var NAVTREEINDEX36 =
 "structNT__EntryNotification.html":[3,1,18],
 "structNT__EntryNotification.html#a341a36e7e9d796a8417df94ff8c4fe4c":[3,1,18,2],
 "structNT__EntryNotification.html#a443b7dae05f8d597197954d5df8e95d0":[3,1,18,4],
-"structNT__EntryNotification.html#ac22a071e4cb9648cdd894dfda1ade6ff":[3,1,18,1],
-"structNT__EntryNotification.html#adf53363e9c6c9be99f6b59608721f0bd":[3,1,18,3],
-"structNT__EntryNotification.html#af1127cfc472c444761c27723e4df8389":[3,1,18,0],
-"structNT__LogMessage.html":[3,1,20],
-"structNT__LogMessage.html#a0fcdc62e2927be09f6d25da3946e84a4":[3,1,20,1],
-"structNT__LogMessage.html#a1ea767b01ef4ffe026d1b3bb9553dbbc":[3,1,20,4]
+"structNT__EntryNotification.html#ac22a071e4cb9648cdd894dfda1ade6ff":[3,1,18,1]
 };

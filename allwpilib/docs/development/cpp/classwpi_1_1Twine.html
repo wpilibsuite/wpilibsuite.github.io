@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-56-g87384ea</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-58-g6d20b12</span>
    </div>
   </td>
  </tr>
@@ -183,6 +183,10 @@ Constructors</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1Twine.html#aabd92223a3a83718c9f81a9e5c141e92">Twine</a> (const <a class="el" href="classwpi_1_1StringRef.html">StringRef</a> &amp;Str)</td></tr>
 <tr class="memdesc:aabd92223a3a83718c9f81a9e5c141e92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from a <a class="el" href="classwpi_1_1StringRef.html" title="StringRef - Represent a constant reference to a string, i.e.">StringRef</a>. <br /></td></tr>
 <tr class="separator:aabd92223a3a83718c9f81a9e5c141e92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26fc1743bfee89a7b3c23db30f031600"><td class="memItemLeft" align="right" valign="top"><a id="a26fc1743bfee89a7b3c23db30f031600"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1Twine.html#a26fc1743bfee89a7b3c23db30f031600">Twine</a> (const std::string_view &amp;Str)</td></tr>
+<tr class="memdesc:a26fc1743bfee89a7b3c23db30f031600"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from a std::string_view. <br /></td></tr>
+<tr class="separator:a26fc1743bfee89a7b3c23db30f031600"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe2c5f1134ac45cd7341c2b74e4d04cc"><td class="memItemLeft" align="right" valign="top"><a id="abe2c5f1134ac45cd7341c2b74e4d04cc"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1Twine.html#abe2c5f1134ac45cd7341c2b74e4d04cc">Twine</a> (const <a class="el" href="classwpi_1_1SmallVectorImpl.html">SmallVectorImpl</a>&lt; char &gt; &amp;Str)</td></tr>
 <tr class="memdesc:abe2c5f1134ac45cd7341c2b74e4d04cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from a <a class="el" href="classwpi_1_1SmallString.html" title="SmallString - A SmallString is just a SmallVector with methods and accessors that make it work better...">SmallString</a>. <br /></td></tr>
@@ -231,6 +235,14 @@ Constructors</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1Twine.html#ab869991e67ffc7d8387cf3940cc0f33c">Twine</a> (const <a class="el" href="classwpi_1_1StringRef.html">StringRef</a> &amp;LHS, const char *RHS)</td></tr>
 <tr class="memdesc:ab869991e67ffc7d8387cf3940cc0f33c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct as the concatenation of a <a class="el" href="classwpi_1_1StringRef.html" title="StringRef - Represent a constant reference to a string, i.e.">StringRef</a> and a C string. <br /></td></tr>
 <tr class="separator:ab869991e67ffc7d8387cf3940cc0f33c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28aa1d490ccfe58287b7f3e2508349f3"><td class="memItemLeft" align="right" valign="top"><a id="a28aa1d490ccfe58287b7f3e2508349f3"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1Twine.html#a28aa1d490ccfe58287b7f3e2508349f3">Twine</a> (const char *LHS, const std::string_view &amp;RHS)</td></tr>
+<tr class="memdesc:a28aa1d490ccfe58287b7f3e2508349f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct as the concatenation of a C string and a std::string_view. <br /></td></tr>
+<tr class="separator:a28aa1d490ccfe58287b7f3e2508349f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab02344774e559bfefd5e579f9ce6b605"><td class="memItemLeft" align="right" valign="top"><a id="ab02344774e559bfefd5e579f9ce6b605"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1Twine.html#ab02344774e559bfefd5e579f9ce6b605">Twine</a> (const std::string_view &amp;LHS, const char *RHS)</td></tr>
+<tr class="memdesc:ab02344774e559bfefd5e579f9ce6b605"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct as the concatenation of a std::string_view and a C string. <br /></td></tr>
+<tr class="separator:ab02344774e559bfefd5e579f9ce6b605"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9db29fd501cd11b06a31a9a6ae6c41cd"><td class="memItemLeft" align="right" valign="top"><a id="a9db29fd501cd11b06a31a9a6ae6c41cd"></a>
 <a class="el" href="classwpi_1_1Twine.html">Twine</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1Twine.html#a9db29fd501cd11b06a31a9a6ae6c41cd">operator=</a> (const <a class="el" href="classwpi_1_1Twine.html">Twine</a> &amp;)=delete</td></tr>
 <tr class="memdesc:a9db29fd501cd11b06a31a9a6ae6c41cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Since the intended use of twines is as temporary objects, assignments when concatenating might cause undefined behavior or stack corruptions. <br /></td></tr>
@@ -380,7 +392,7 @@ isBinary() predicates exist for testing the number of children.</dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>wpi</b></li><li class="navelem"><a class="el" href="classwpi_1_1Twine.html">Twine</a></li>
-    <li class="footer">Generated on Sat May 22 2021 06:54:30 for WPILibC++ by
+    <li class="footer">Generated on Sun May 23 2021 22:28:18 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

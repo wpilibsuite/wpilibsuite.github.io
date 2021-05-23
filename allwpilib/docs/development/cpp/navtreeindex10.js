@@ -1,6 +1,5 @@
 var NAVTREEINDEX10 =
 {
-"classfrc_1_1KalmanFilterLatencyCompensator.html#a8fa46ed1fbe25e1eb31cf5e472375308":[5,0,2,81,2],
 "classfrc_1_1KalmanFilter_3_011_00_011_00_011_01_4.html":[5,0,2,79],
 "classfrc_1_1KalmanFilter_3_011_00_011_00_011_01_4.html#a0bdfd41dafa5a395d92bc1c1bf52d264":[5,0,2,79,1],
 "classfrc_1_1KalmanFilter_3_011_00_011_00_011_01_4.html#a776d575b8881eb71649959fd843744e7":[5,0,2,79,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX10 =
 "classfrc_1_1NetworkButton.html#ab117cf7d4c22818c02da2a265bcccb49":[5,0,2,109,1],
 "classfrc_1_1NetworkButton.html#adb96cc03577fe6a926e9e4c274f34762":[5,0,2,109,4],
 "classfrc_1_1NetworkButton.html#af0fe0f599c160f170609bbfb221bf188":[5,0,2,109,3],
-"classfrc_1_1NidecBrushless.html":[5,0,2,110]
+"classfrc_1_1NidecBrushless.html":[5,0,2,110],
+"classfrc_1_1NidecBrushless.html#a1762339273834e07d70185d47136be1f":[5,0,2,110,0]
 };

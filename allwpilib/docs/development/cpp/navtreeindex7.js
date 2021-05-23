@@ -1,6 +1,5 @@
 var NAVTREEINDEX7 =
 {
-"classfrc_1_1CommandGroup.html#a369e18ff0ff13e340202477ba19383f9":[5,0,2,31,15],
 "classfrc_1_1CommandGroup.html#a40bc24e274d0b85b4c7eae4311d337e6":[5,0,2,31,6],
 "classfrc_1_1CommandGroup.html#a44ea9eb344e6791da4abe19b159c09db":[5,0,2,31,1],
 "classfrc_1_1CommandGroup.html#a4a747d7b886fdb886c9289b489410fd1":[5,0,2,31,12],
@@ -249,5 +248,6 @@ var NAVTREEINDEX7 =
 "classfrc_1_1DifferentialDriveOdometry.html#a0e5c34ff84932476e633a04af9900fdf":[5,0,2,45,0],
 "classfrc_1_1DifferentialDriveOdometry.html#a1a0336856ce00debda1df449ab8723de":[5,0,2,45,3],
 "classfrc_1_1DifferentialDriveOdometry.html#a4503adecdf15423e6a892cd414998145":[5,0,2,45,1],
-"classfrc_1_1DifferentialDriveOdometry.html#a918d2c1c2411bb25d2ebeed372646930":[5,0,2,45,2]
+"classfrc_1_1DifferentialDriveOdometry.html#a918d2c1c2411bb25d2ebeed372646930":[5,0,2,45,2],
+"classfrc_1_1DifferentialDrivePoseEstimator.html":[5,0,2,46]
 };

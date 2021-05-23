@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-56-g87384ea</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-58-g6d20b12</span>
    </div>
   </td>
  </tr>
@@ -294,7 +294,7 @@ $(document).ready(function(){initNavTree('NetworkTable_8h_source.html',''); init
 <div class="ttc" id="aclassnt_1_1NetworkTable_html_a2fa3879ba862a937cf79361ad4bcf154"><div class="ttname"><a href="classnt_1_1NetworkTable.html#a2fa3879ba862a937cf79361ad4bcf154">nt::NetworkTable::PutNumberArray</a></div><div class="ttdeci">bool PutNumberArray(wpi::StringRef key, wpi::ArrayRef&lt; double &gt; value)</div><div class="ttdoc">Put a number array in the table.</div></div>
 <div class="ttc" id="aclassnt_1_1NetworkTable_html_a16f5fc92e95ae3726689307f5921c4c7"><div class="ttname"><a href="classnt_1_1NetworkTable.html#a16f5fc92e95ae3726689307f5921c4c7">nt::NetworkTable::SetDefaultValue</a></div><div class="ttdeci">bool SetDefaultValue(const wpi::Twine &amp;key, std::shared_ptr&lt; Value &gt; defaultValue)</div><div class="ttdoc">Gets the current value in the table, setting it if it does not exist.</div></div>
 <div class="ttc" id="aclassnt_1_1NetworkTable_html_a6149915394a335c941579faaf43ab161"><div class="ttname"><a href="classnt_1_1NetworkTable.html#a6149915394a335c941579faaf43ab161">nt::NetworkTable::GetKeys</a></div><div class="ttdeci">std::vector&lt; std::string &gt; GetKeys(int types=0) const</div><div class="ttdoc">Gets all keys in the table (not including sub-tables).</div></div>
-<div class="ttc" id="aclasswpi_1_1StringRef_html"><div class="ttname"><a href="classwpi_1_1StringRef.html">wpi::StringRef</a></div><div class="ttdoc">StringRef - Represent a constant reference to a string, i.e.</div><div class="ttdef"><b>Definition:</b> StringRef.h:49</div></div>
+<div class="ttc" id="aclasswpi_1_1StringRef_html"><div class="ttname"><a href="classwpi_1_1StringRef.html">wpi::StringRef</a></div><div class="ttdoc">StringRef - Represent a constant reference to a string, i.e.</div><div class="ttdef"><b>Definition:</b> StringRef.h:50</div></div>
 <div class="ttc" id="aclassnt_1_1NetworkTable_html_a26a50c5009bc0bb0fc4e1da51ca055fe"><div class="ttname"><a href="classnt_1_1NetworkTable.html#a26a50c5009bc0bb0fc4e1da51ca055fe">nt::NetworkTable::GetPath</a></div><div class="ttdeci">wpi::StringRef GetPath() const</div><div class="ttdoc">Gets the full path of this table.</div></div>
 <div class="ttc" id="aclassnt_1_1NetworkTable_html_ae844532da53fe22542bfa6e53f781e21"><div class="ttname"><a href="classnt_1_1NetworkTable.html#ae844532da53fe22542bfa6e53f781e21">nt::NetworkTable::PutValue</a></div><div class="ttdeci">bool PutValue(const wpi::Twine &amp;key, std::shared_ptr&lt; Value &gt; value)</div><div class="ttdoc">Put a value in the table.</div></div>
 <div class="ttc" id="aclassnt_1_1NetworkTable_html_ac28f6cf2db6c52edfdcc0088b652acc5"><div class="ttname"><a href="classnt_1_1NetworkTable.html#ac28f6cf2db6c52edfdcc0088b652acc5">nt::NetworkTable::GetSubTable</a></div><div class="ttdeci">std::shared_ptr&lt; NetworkTable &gt; GetSubTable(const wpi::Twine &amp;key) const</div><div class="ttdoc">Returns the table at the specified key.</div></div>
@@ -316,7 +316,7 @@ $(document).ready(function(){initNavTree('NetworkTable_8h_source.html',''); init
 <div class="ttc" id="agroup__ntcore__cpp__api_html_ga2b3a7bf0e225d3115b2f06997e4878e0"><div class="ttname"><a href="group__ntcore__cpp__api.html#ga2b3a7bf0e225d3115b2f06997e4878e0">nt::TableEntryListener</a></div><div class="ttdeci">std::function&lt; void(NetworkTable *table, wpi::StringRef name, NetworkTableEntry entry, std::shared_ptr&lt; Value &gt; value, int flags)&gt; TableEntryListener</div><div class="ttdoc">A listener that listens to changes in values in a NetworkTable.</div><div class="ttdef"><b>Definition:</b> TableEntryListener.h:17</div></div>
 <div class="ttc" id="aclassnt_1_1NetworkTable_html_a47f1e16e15037cfe87e5ce894a114cde"><div class="ttname"><a href="classnt_1_1NetworkTable.html#a47f1e16e15037cfe87e5ce894a114cde">nt::NetworkTable::IsPersistent</a></div><div class="ttdeci">bool IsPersistent(wpi::StringRef key) const</div><div class="ttdoc">Returns whether the value is persistent through program restarts.</div></div>
 <div class="ttc" id="agroup__ntcore__cpp__api_html_ga28c5eaed199802e06e8a370644eb3fde"><div class="ttname"><a href="group__ntcore__cpp__api.html#ga28c5eaed199802e06e8a370644eb3fde">nt::TableListener</a></div><div class="ttdeci">std::function&lt; void(NetworkTable *parent, wpi::StringRef name, std::shared_ptr&lt; NetworkTable &gt; table)&gt; TableListener</div><div class="ttdoc">A listener that listens to new sub-tables in a NetworkTable.</div><div class="ttdef"><b>Definition:</b> TableListener.h:15</div></div>
-<div class="ttc" id="aclasswpi_1_1Twine_html"><div class="ttname"><a href="classwpi_1_1Twine.html">wpi::Twine</a></div><div class="ttdoc">Twine - A lightweight data structure for efficiently representing the concatenation of temporary valu...</div><div class="ttdef"><b>Definition:</b> Twine.h:85</div></div>
+<div class="ttc" id="aclasswpi_1_1Twine_html"><div class="ttname"><a href="classwpi_1_1Twine.html">wpi::Twine</a></div><div class="ttdoc">Twine - A lightweight data structure for efficiently representing the concatenation of temporary valu...</div><div class="ttdef"><b>Definition:</b> Twine.h:86</div></div>
 <div class="ttc" id="anamespacent_html"><div class="ttname"><a href="namespacent.html">nt</a></div><div class="ttdoc">NetworkTables (ntcore) namespace.</div><div class="ttdef"><b>Definition:</b> RpcCall.h:13</div></div>
 <div class="ttc" id="aclassnt_1_1NetworkTable_html_a89c972b1874babdc210a31f8eecf0f32"><div class="ttname"><a href="classnt_1_1NetworkTable.html#a89c972b1874babdc210a31f8eecf0f32">nt::NetworkTable::SetFlags</a></div><div class="ttdeci">void SetFlags(wpi::StringRef key, unsigned int flags)</div><div class="ttdoc">Sets flags on the specified key in this table.</div></div>
 <div class="ttc" id="aclassnt_1_1NetworkTable_html_a20a0aca0b108fa2e9c59068d6bb16c8e"><div class="ttname"><a href="classnt_1_1NetworkTable.html#a20a0aca0b108fa2e9c59068d6bb16c8e">nt::NetworkTable::GetString</a></div><div class="ttdeci">std::string GetString(wpi::StringRef key, wpi::StringRef defaultValue) const</div><div class="ttdoc">Gets the string associated with the given name.</div></div>
@@ -325,7 +325,7 @@ $(document).ready(function(){initNavTree('NetworkTable_8h_source.html',''); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_46f80a5b907f4a68e6277ec93a133082.html">networktables</a></li><li class="navelem"><b>NetworkTable.h</b></li>
-    <li class="footer">Generated on Sat May 22 2021 06:54:25 for WPILibC++ by
+    <li class="footer">Generated on Sun May 23 2021 22:28:14 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

@@ -1,6 +1,5 @@
 var NAVTREEINDEX11 =
 {
-"classfrc_1_1NidecBrushless.html#a1762339273834e07d70185d47136be1f":[5,0,2,110,0],
 "classfrc_1_1NidecBrushless.html#a204be39f9fd6ac3e08477c5dcc71041a":[5,0,2,110,5],
 "classfrc_1_1NidecBrushless.html#a2ff988ba4a5488c8da0ba2237fc26c3c":[5,0,2,110,13],
 "classfrc_1_1NidecBrushless.html#a42cb35146ef7afe276eba11c64df5e58":[5,0,2,110,7],
@@ -249,5 +248,6 @@ var NAVTREEINDEX11 =
 "classfrc_1_1PowerDistributionPanel.html#a5847eb75511ea7bde3eec5f7b428c59c":[5,0,2,122,2],
 "classfrc_1_1PowerDistributionPanel.html#a61587faa02751a80a31dd9c05f20e8c3":[5,0,2,122,11],
 "classfrc_1_1PowerDistributionPanel.html#a8d96b074c5391040a82773b2f679e9f1":[5,0,2,122,0],
-"classfrc_1_1PowerDistributionPanel.html#a96ca1c2ead3f4a4a938801c7212eb962":[5,0,2,122,10]
+"classfrc_1_1PowerDistributionPanel.html#a96ca1c2ead3f4a4a938801c7212eb962":[5,0,2,122,10],
+"classfrc_1_1PowerDistributionPanel.html#a9d33de919ae2e6abe8aa88a64debccef":[5,0,2,122,12]
 };

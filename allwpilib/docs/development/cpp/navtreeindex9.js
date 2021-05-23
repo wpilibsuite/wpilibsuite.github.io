@@ -1,6 +1,5 @@
 var NAVTREEINDEX9 =
 {
-"classfrc_1_1ExtendedKalmanFilter.html#a7f7550acd532b0f0d91fab3c7a777dc3":[5,0,2,63,1],
 "classfrc_1_1ExtendedKalmanFilter.html#a8496ad06ed4d0d3e98aa18b13eb7a7c4":[5,0,2,63,0],
 "classfrc_1_1ExtendedKalmanFilter.html#a9446ab7a24735306b8a13326b711f8ef":[5,0,2,63,11],
 "classfrc_1_1ExtendedKalmanFilter.html#a9dad1ed47b3d741220c3ca870e97942f":[5,0,2,63,3],
@@ -249,5 +248,6 @@ var NAVTREEINDEX9 =
 "classfrc_1_1KalmanFilter.html#ac0b16418d86ec0a13651c46b65e4593d":[5,0,2,78,2],
 "classfrc_1_1KalmanFilter.html#afeb51dfb8b9e26e2f4f8c7799f1ed2e6":[5,0,2,78,1],
 "classfrc_1_1KalmanFilterLatencyCompensator.html":[5,0,2,81],
-"classfrc_1_1KalmanFilterLatencyCompensator.html#a15bf928c83978a449fbc78731c4de97b":[5,0,2,81,1]
+"classfrc_1_1KalmanFilterLatencyCompensator.html#a15bf928c83978a449fbc78731c4de97b":[5,0,2,81,1],
+"classfrc_1_1KalmanFilterLatencyCompensator.html#a8fa46ed1fbe25e1eb31cf5e472375308":[5,0,2,81,2]
 };

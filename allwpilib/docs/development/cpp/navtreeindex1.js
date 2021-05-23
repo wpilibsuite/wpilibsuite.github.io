@@ -171,7 +171,6 @@ var NAVTREEINDEX1 =
 "UnscentedKalmanFilter_8h_source.html":[6,0,5,1,8],
 "UnscentedTransform_8h_source.html":[6,0,5,1,9],
 "UrlParser_8h_source.html":[6,0,11,91],
-"Utility_8h_source.html":[6,0,3,73],
 "Value_8h_source.html":[6,0,8,45],
 "Vector2d_8h_source.html":[6,0,3,1,4],
 "VersionTuple_8h.html":[6,0,11,92],
@@ -183,7 +182,7 @@ var NAVTREEINDEX1 =
 "VisionRunner_8h_source.html":[6,0,10,1],
 "WPILibVersion_8h_source.html":[6,0,24],
 "WaitForChildren_8h_source.html":[6,0,4,1,13],
-"Watchdog_8h_source.html":[6,0,3,74],
+"Watchdog_8h_source.html":[6,0,3,73],
 "WebSocketServer_8h_source.html":[6,0,11,94],
 "WebSocket_8h_source.html":[6,0,11,93],
 "WidgetType_8h_source.html":[6,0,3,5,19],
@@ -191,7 +190,7 @@ var NAVTREEINDEX1 =
 "Work_8h_source.html":[6,0,11,0,24],
 "WorkerThread_8h_source.html":[6,0,11,96],
 "XboxControllerSim_8h_source.html":[6,0,3,6,33],
-"XboxController_8h_source.html":[6,0,3,75],
+"XboxController_8h_source.html":[6,0,3,74],
 "annotated.html":[5,0],
 "array_8h_source.html":[6,0,11,3],
 "circular__buffer_8h_source.html":[6,0,11,8],
@@ -249,5 +248,6 @@ var NAVTREEINDEX1 =
 "classcs_1_1RawCvSink.html#a4ad66795372ac15076b8da7cb3749459":[5,0,0,5,2],
 "classcs_1_1RawCvSink.html#a73d3864931b38e45f9da3cba54b3de7d":[5,0,0,5,0],
 "classcs_1_1RawCvSink.html#a855a11a6832d9e573a50b9f48f3f3276":[5,0,0,5,1],
-"classcs_1_1RawCvSink.html#a860bf4452283f6e5e5d7ed662675869f":[5,0,0,5,4]
+"classcs_1_1RawCvSink.html#a860bf4452283f6e5e5d7ed662675869f":[5,0,0,5,4],
+"classcs_1_1RawCvSink.html#a88c19751a592ed747d3c2be0853a7f41":[5,0,0,5,3]
 };

@@ -1,6 +1,5 @@
 var NAVTREEINDEX8 =
 {
-"classfrc_1_1DifferentialDrivePoseEstimator.html":[5,0,2,46],
 "classfrc_1_1DifferentialDrivePoseEstimator.html#a08f5072a0aa4e4fba8d7528427047720":[5,0,2,46,1],
 "classfrc_1_1DifferentialDrivePoseEstimator.html#a0fd2c4425e6249e337c0a5d46afac8c3":[5,0,2,46,4],
 "classfrc_1_1DifferentialDrivePoseEstimator.html#a16c47b88fa12c715da87d6bf516dcae3":[5,0,2,46,5],
@@ -249,5 +248,6 @@ var NAVTREEINDEX8 =
 "classfrc_1_1ExtendedKalmanFilter.html":[5,0,2,63],
 "classfrc_1_1ExtendedKalmanFilter.html#a2a4ddc449a9f14234e18f8a01b11870d":[5,0,2,63,7],
 "classfrc_1_1ExtendedKalmanFilter.html#a540f4ee08bced06de29e2267cf7cfe1d":[5,0,2,63,8],
-"classfrc_1_1ExtendedKalmanFilter.html#a7d6a8c672d26d8fbcc6598381947c823":[5,0,2,63,9]
+"classfrc_1_1ExtendedKalmanFilter.html#a7d6a8c672d26d8fbcc6598381947c823":[5,0,2,63,9],
+"classfrc_1_1ExtendedKalmanFilter.html#a7f7550acd532b0f0d91fab3c7a777dc3":[5,0,2,63,1]
 };

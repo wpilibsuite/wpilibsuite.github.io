@@ -1,6 +1,5 @@
 var NAVTREEINDEX5 =
 {
-"classfrc_1_1Accelerometer.html#a5d391e33308914a751d30c6d56de95a3":[5,0,2,2,1],
 "classfrc_1_1Accelerometer.html#a701c1a0fb5a5c3f9bfd07991ff893f93":[5,0,2,2,0],
 "classfrc_1_1Accelerometer.html#a701c1a0fb5a5c3f9bfd07991ff893f93a0a32d5949adc1ed911d79f9e83030e6f":[5,0,2,2,0,3],
 "classfrc_1_1Accelerometer.html#a701c1a0fb5a5c3f9bfd07991ff893f93a1ec2542e09c9856285d3c28cab555e53":[5,0,2,2,0,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX5 =
 "classfrc_1_1CameraServer.html#a99b3fcaabd3d9a80fa63b7be9bb7d9c1":[5,0,2,20,11],
 "classfrc_1_1CameraServer.html#a9ca87d8d9a581a4e9ff9729a8c49989b":[5,0,2,20,13],
 "classfrc_1_1CameraServer.html#a9e7e3166bfea1cb80e1fa00b40cd85ab":[5,0,2,20,31],
-"classfrc_1_1CameraServer.html#a9ef19369e67bc7f7626e335df75b604a":[5,0,2,20,3]
+"classfrc_1_1CameraServer.html#a9ef19369e67bc7f7626e335df75b604a":[5,0,2,20,3],
+"classfrc_1_1CameraServer.html#aa77f17e135ff9cfaa70763c5d4815d16":[5,0,2,20,2]
 };
