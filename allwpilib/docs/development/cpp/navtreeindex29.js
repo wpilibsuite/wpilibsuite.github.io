@@ -1,5 +1,13 @@
 var NAVTREEINDEX29 =
 {
+"classwpi_1_1math_1_1MathSharedStore.html#acb19ed2b71e5afb6abd2b09e183c873a":[5,0,7,4,1,2],
+"classwpi_1_1math_1_1MathSharedStore.html#ada77808112415c4bbf92de6683466a20":[5,0,7,4,1,1],
+"classwpi_1_1pointer__iterator.html":[5,0,7,144],
+"classwpi_1_1pointer__iterator.html#a2753ac46ae848edad4c3a4f9e203d1b2":[5,0,7,144,2],
+"classwpi_1_1pointer__iterator.html#a27d8907ce189c2a13b81f529bb658ea2":[5,0,7,144,1],
+"classwpi_1_1pointer__iterator.html#a342943167e07c1731fadb986e30890fd":[5,0,7,144,0],
+"classwpi_1_1pointer__iterator.html#a9a0799a390223d48174d07708fa91aa0":[5,0,7,144,3],
+"classwpi_1_1priority__queue.html":[5,0,7,167],
 "classwpi_1_1priority__queue.html#a0e31b17e92f554de563cd89df9591fbf":[5,0,7,167,3],
 "classwpi_1_1priority__queue.html#a116ef7675d0125cedb7fe891b2db5637":[5,0,7,167,11],
 "classwpi_1_1priority__queue.html#a152c5da89497f4b8c0d7f6f666d3c7b0":[5,0,7,167,5],
@@ -241,13 +249,5 @@ var NAVTREEINDEX29 =
 "classwpi_1_1sig_1_1ConnectionBlocker.html#ae0f61fa367ed0414961d2751d52e44aa":[5,0,7,5,3,3],
 "classwpi_1_1sig_1_1ScopedConnection.html":[5,0,7,5,4],
 "classwpi_1_1sig_1_1ScopedConnection.html#a16a6172983435eef05e36ac203dec4b7":[5,0,7,5,4,5],
-"classwpi_1_1sig_1_1ScopedConnection.html#a2c6cf911e31828b58dc0bac5a3708e87":[5,0,7,5,4,0],
-"classwpi_1_1sig_1_1ScopedConnection.html#a3bb57e13a5efc38d5fb4e0a5cd88e87e":[5,0,7,5,4,4],
-"classwpi_1_1sig_1_1ScopedConnection.html#a3c19875f452b71710d6c8b6ee700fce4":[5,0,7,5,4,8],
-"classwpi_1_1sig_1_1ScopedConnection.html#a40f4cf282e416035326425751d46df03":[5,0,7,5,4,1],
-"classwpi_1_1sig_1_1ScopedConnection.html#a47daa59ac80840182fe242f5cdef768e":[5,0,7,5,4,2],
-"classwpi_1_1sig_1_1ScopedConnection.html#a8d92d2995fa9ef681c664df82440aa70":[5,0,7,5,4,6],
-"classwpi_1_1sig_1_1ScopedConnection.html#acdf2fbf6665c7668715f95a8581b54f0":[5,0,7,5,4,3],
-"classwpi_1_1sig_1_1ScopedConnection.html#ae5b9077e005085db305517d7b9b6e6b5":[5,0,7,5,4,7],
-"classwpi_1_1sig_1_1SignalBase.html":[5,0,7,5,5]
+"classwpi_1_1sig_1_1ScopedConnection.html#a2c6cf911e31828b58dc0bac5a3708e87":[5,0,7,5,4,0]
 };

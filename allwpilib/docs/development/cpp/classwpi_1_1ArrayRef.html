@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-58-g6d20b12</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-60-g4426216</span>
    </div>
   </td>
  </tr>
@@ -184,6 +184,14 @@ template&lt;size_t N&gt; </td></tr>
 <tr class="memitem:a33da6ac3337af6dbd5f424b518ad6fd7"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwpi_1_1ArrayRef.html#a33da6ac3337af6dbd5f424b518ad6fd7">ArrayRef</a> (const std::vector&lt; U *, A &gt; &amp;Vec, typename std::enable_if&lt; std::is_convertible&lt; U *const *, T const * &gt;::value &gt;::type *=0)</td></tr>
 <tr class="memdesc:a33da6ac3337af6dbd5f424b518ad6fd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an ArrayRef&lt;const T*&gt; from std::vector&lt;T*&gt;.  <a href="classwpi_1_1ArrayRef.html#a33da6ac3337af6dbd5f424b518ad6fd7">More...</a><br /></td></tr>
 <tr class="separator:a33da6ac3337af6dbd5f424b518ad6fd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f200c75bf6375913b53271471f9768b"><td class="memItemLeft" align="right" valign="top"><a id="a3f200c75bf6375913b53271471f9768b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1ArrayRef.html#a3f200c75bf6375913b53271471f9768b">ArrayRef</a> (<a class="el" href="classwpi_1_1span.html">span</a>&lt; T &gt; Span)</td></tr>
+<tr class="memdesc:a3f200c75bf6375913b53271471f9768b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an <a class="el" href="classwpi_1_1ArrayRef.html" title="ArrayRef - Represent a constant reference to an array (0 or more elements consecutively in memory),...">ArrayRef</a> from <a class="el" href="classwpi_1_1span.html">wpi::span</a>. <br /></td></tr>
+<tr class="separator:a3f200c75bf6375913b53271471f9768b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a444dbd6864ea372d30e50d86328c5ab0"><td class="memItemLeft" align="right" valign="top"><a id="a444dbd6864ea372d30e50d86328c5ab0"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1ArrayRef.html#a444dbd6864ea372d30e50d86328c5ab0">ArrayRef</a> (<a class="el" href="classwpi_1_1span.html">span</a>&lt; const T &gt; Span)</td></tr>
+<tr class="memdesc:a444dbd6864ea372d30e50d86328c5ab0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an <a class="el" href="classwpi_1_1ArrayRef.html" title="ArrayRef - Represent a constant reference to an array (0 or more elements consecutively in memory),...">ArrayRef</a> from <a class="el" href="classwpi_1_1span.html">wpi::span</a>. <br /></td></tr>
+<tr class="separator:a444dbd6864ea372d30e50d86328c5ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Simple Operations</div></td></tr>
 <tr class="memitem:acfe1c5a820950a8a5fafd76a03ff2a1d"><td class="memItemLeft" align="right" valign="top"><a id="acfe1c5a820950a8a5fafd76a03ff2a1d"></a>
 iterator&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> () const</td></tr>
@@ -288,6 +296,9 @@ std::vector&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>vec
 <tr class="memitem:ab6f48f89b31a146ac0226cfbdd32c06a"><td class="memItemLeft" align="right" valign="top"><a id="ab6f48f89b31a146ac0226cfbdd32c06a"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>operator std::vector&lt; T &gt;</b> () const</td></tr>
 <tr class="separator:ab6f48f89b31a146ac0226cfbdd32c06a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a441be351da93e639ec2b91c1160b48aa"><td class="memItemLeft" align="right" valign="top"><a id="a441be351da93e639ec2b91c1160b48aa"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>operator span&lt; const T &gt;</b> () const</td></tr>
+<tr class="separator:a441be351da93e639ec2b91c1160b48aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename T&gt;<br />
@@ -536,7 +547,7 @@ template&lt;typename U &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>wpi</b></li><li class="navelem"><a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a></li>
-    <li class="footer">Generated on Sun May 23 2021 22:28:18 for WPILibC++ by
+    <li class="footer">Generated on Sun May 23 2021 22:29:22 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

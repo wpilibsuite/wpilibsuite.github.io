@@ -79,6 +79,7 @@ var dir_1224104d412225b996ab6dfa83431a88 =
     [ "SmallString.h", "SmallString_8h_source.html", null ],
     [ "SmallVector.h", "SmallVector_8h_source.html", null ],
     [ "SocketError.h", "SocketError_8h_source.html", null ],
+    [ "span.h", "span_8h_source.html", null ],
     [ "spinlock.h", "spinlock_8h_source.html", null ],
     [ "StackTrace.h", "StackTrace_8h_source.html", null ],
     [ "static_circular_buffer.h", "static__circular__buffer_8h_source.html", null ],

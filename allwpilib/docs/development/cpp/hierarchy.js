@@ -451,10 +451,15 @@ var hierarchy =
       [ "wpi::sig::trait::detail::is_weak_ptr< decltype(to_weak(std::declval< T >()))>", "structwpi_1_1sig_1_1trait_1_1detail_1_1is__weak__ptr.html", [
         [ "wpi::sig::trait::detail::is_weak_ptr_compatible< T, void_t< decltype(to_weak(std::declval< T >()))> >", "structwpi_1_1sig_1_1trait_1_1detail_1_1is__weak__ptr__compatible_3_01T_00_01void__t_3_01decltype9a264182ae179661fbf0bdd69350ff51.html", null ]
       ] ],
+      [ "wpi::detail::has_size_and_data< typename, typename >", "structwpi_1_1detail_1_1has__size__and__data.html", null ],
       [ "wpi::detail::is_compatible_integer_type_impl< bool, typename, typename >", "structwpi_1_1detail_1_1is__compatible__integer__type__impl.html", null ],
       [ "wpi::detail::is_compatible_object_type_impl< B, RealType, CompatibleObjectType >", "structwpi_1_1detail_1_1is__compatible__object__type__impl.html", null ],
+      [ "wpi::detail::is_complete< typename, typename >", "structwpi_1_1detail_1_1is__complete.html", null ],
       [ "wpi::detail::is_complete_type< T, typename >", "structwpi_1_1detail_1_1is__complete__type.html", null ],
+      [ "wpi::detail::is_container_element_type_compatible< typename, typename, typename >", "structwpi_1_1detail_1_1is__container__element__type__compatible.html", null ],
       [ "wpi::detail::is_json< typename >", "structwpi_1_1detail_1_1is__json.html", null ],
+      [ "wpi::detail::is_span< typename >", "structwpi_1_1detail_1_1is__span.html", null ],
+      [ "wpi::detail::is_std_array< typename >", "structwpi_1_1detail_1_1is__std__array.html", null ],
       [ "wpi::sig::trait::detail::is_callable< typename, typename, typename, typename >", "structwpi_1_1sig_1_1trait_1_1detail_1_1is__callable.html", null ],
       [ "wpi::sig::trait::detail::is_weak_ptr< T, typename >", "structwpi_1_1sig_1_1trait_1_1detail_1_1is__weak__ptr.html", null ],
       [ "wpi::sig::trait::detail::is_weak_ptr_compatible< T, typename >", "structwpi_1_1sig_1_1trait_1_1detail_1_1is__weak__ptr__compatible.html", null ]
@@ -559,7 +564,8 @@ var hierarchy =
       [ "wpi::hashing::detail::is_hashable_data< std::pair< T, U > >", "structwpi_1_1hashing_1_1detail_1_1is__hashable__data_3_01std_1_1pair_3_01T_00_01U_01_4_01_4.html", null ]
     ] ],
     [ "integral_constant", null, [
-      [ "std::tuple_size< wpi::array< T, N > >", "structstd_1_1tuple__size_3_01wpi_1_1array_3_01T_00_01N_01_4_01_4.html", null ]
+      [ "std::tuple_size< wpi::array< T, N > >", "structstd_1_1tuple__size_3_01wpi_1_1array_3_01T_00_01N_01_4_01_4.html", null ],
+      [ "std::tuple_size< wpi::span< ElementType, Extent > >", "classstd_1_1tuple__size_3_01wpi_1_1span_3_01ElementType_00_01Extent_01_4_01_4.html", null ]
     ] ],
     [ "wpi::detail::internal_iterator< BasicJsonType >", "structwpi_1_1detail_1_1internal__iterator.html", null ],
     [ "wpi::detail::internal_iterator< typename std::remove_const< BasicJsonType >::type >", "structwpi_1_1detail_1_1internal__iterator.html", null ],
@@ -578,6 +584,10 @@ var hierarchy =
     [ "wpi::detail::is_compatible_integer_type_impl< true, RealIntegerType, CompatibleNumberIntegerType >", "structwpi_1_1detail_1_1is__compatible__integer__type__impl_3_01true_00_01RealIntegerType_00_01CompatibleNumberIntegerType_01_4.html", null ],
     [ "wpi::detail::is_compatible_object_type< BasicJsonType, CompatibleObjectType >", "structwpi_1_1detail_1_1is__compatible__object__type.html", null ],
     [ "wpi::detail::is_compatible_object_type_impl< true, RealType, CompatibleObjectType >", "structwpi_1_1detail_1_1is__compatible__object__type__impl_3_01true_00_01RealType_00_01CompatibleObjectType_01_4.html", null ],
+    [ "wpi::detail::is_container< C, U >", "structwpi_1_1detail_1_1is__container.html", null ],
+    [ "is_convertible", null, [
+      [ "wpi::detail::is_container_element_type_compatible< T, E, typename std::enable_if< !std::is_same< typename std::remove_cv< decltype(std::data(std::declval< T >()))>::type, void >::value >::type >", "structwpi_1_1detail_1_1is__container__element__type__compatible_3_01T_00_01E_00_01typename_01std98f2d63071a84767c6383eb7eb6269d8.html", null ]
+    ] ],
     [ "wpi::is_integral_or_enum< T >", "classwpi_1_1is__integral__or__enum.html", null ],
     [ "wpi::detail::is_json_nested_type< BasicJsonType, T >", "structwpi_1_1detail_1_1is__json__nested__type.html", null ],
     [ "wpi::is_one_of< T, Ts >", "structwpi_1_1is__one__of.html", null ],
@@ -598,7 +608,6 @@ var hierarchy =
     [ "wpi::detail::IsPointerLike< T * >", "structwpi_1_1detail_1_1IsPointerLike_3_01T_01_5_01_4.html", null ],
     [ "wpi::detail::iter_impl< BasicJsonType >", "classwpi_1_1detail_1_1iter__impl.html", null ],
     [ "wpi::detail::iteration_proxy< IteratorType >", "classwpi_1_1detail_1_1iteration__proxy.html", null ],
-    [ "wpi::static_circular_buffer< T, N >::iterator", "classwpi_1_1static__circular__buffer_1_1iterator.html", null ],
     [ "iterator", null, [
       [ "wpi::iterator_facade_base< concat_iterator< ValueT, IterTs... >, std::forward_iterator_tag, ValueT >", "classwpi_1_1iterator__facade__base.html", [
         [ "wpi::concat_iterator< ValueT, IterTs >", "classwpi_1_1concat__iterator.html", null ]
@@ -650,6 +659,7 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
+    [ "wpi::static_circular_buffer< T, N >::iterator", "classwpi_1_1static__circular__buffer_1_1iterator.html", null ],
     [ "iterator_facade_base< pointee_iterator< WrappedIteratorT, typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type, std::iterator_traits< WrappedIteratorT >::iterator_category, typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type, typename std::iterator_traits< WrappedIteratorT >::difference_type, typename std::conditional< std::is_same< typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type, typename std::iterator_traits< WrappedIteratorT >::value_type >::value, typename std::iterator_traits< WrappedIteratorT >::pointer, typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type * >::type, typename std::conditional< std::is_same< typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type, typename std::iterator_traits< WrappedIteratorT >::value_type >::value, typename std::iterator_traits< WrappedIteratorT >::reference, typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type & >::type >", null, [
       [ "wpi::iterator_adaptor_base< pointee_iterator< WrappedIteratorT, typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type >, WrappedIteratorT, std::iterator_traits< WrappedIteratorT >::iterator_category, typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type >", "classwpi_1_1iterator__adaptor__base.html", [
         [ "wpi::pointee_iterator< WrappedIteratorT, T >", "structwpi_1_1pointee__iterator.html", null ]
@@ -1404,6 +1414,10 @@ var hierarchy =
     ] ],
     [ "frc::sim::SolenoidSim", "classfrc_1_1sim_1_1SolenoidSim.html", null ],
     [ "wpi::sys::fs::space_info", "structwpi_1_1sys_1_1fs_1_1space__info.html", null ],
+    [ "wpi::span< ElementType, Extent >", "classwpi_1_1span.html", null ],
+    [ "wpi::detail::span_storage< E, S >", "structwpi_1_1detail_1_1span__storage.html", null ],
+    [ "wpi::detail::span_storage< E, dynamic_extent >", "structwpi_1_1detail_1_1span__storage_3_01E_00_01dynamic__extent_01_4.html", null ],
+    [ "wpi::detail::span_storage< ElementType, Extent >", "structwpi_1_1detail_1_1span__storage.html", null ],
     [ "SpeedController", null, [
       [ "frc::MotorController", "classfrc_1_1MotorController.html", [
         [ "frc::MotorControllerGroup", "classfrc_1_1MotorControllerGroup.html", null ],
@@ -1456,8 +1470,8 @@ var hierarchy =
     [ "frc::SwerveModuleState", "structfrc_1_1SwerveModuleState.html", null ],
     [ "wpi::TCPConnector", "classwpi_1_1TCPConnector.html", null ],
     [ "wpi::ThreadSafeRefCountedBase< Derived >", "classwpi_1_1ThreadSafeRefCountedBase.html", null ],
-    [ "frc::Timer", "classfrc_1_1Timer.html", null ],
     [ "frc2::Timer", "classfrc2_1_1Timer.html", null ],
+    [ "frc::Timer", "classfrc_1_1Timer.html", null ],
     [ "wpi::detail::to_json_fn", "structwpi_1_1detail_1_1to__json__fn.html", null ],
     [ "frc::Tracer", "classfrc_1_1Tracer.html", null ],
     [ "wpi::detail::TrailingZerosCounter< T, SizeOfT >", "structwpi_1_1detail_1_1TrailingZerosCounter.html", null ],
@@ -1489,13 +1503,18 @@ var hierarchy =
     ] ],
     [ "true_type", null, [
       [ "std::is_error_code_enum< wpi::errc >", "structstd_1_1is__error__code__enum_3_01wpi_1_1errc_01_4.html", null ],
+      [ "wpi::detail::has_size_and_data< T, std::void_t< decltype(std::size(std::declval< T >())), decltype(std::data(std::declval< T >()))> >", "structwpi_1_1detail_1_1has__size__and__data_3_01T_00_01std_1_1void__t_3_01decltype_07std_1_1sizea60477fe4ebf54c7a18502463df39fed.html", null ],
+      [ "wpi::detail::is_complete< T, decltype(sizeof(T))>", "structwpi_1_1detail_1_1is__complete_3_01T_00_01decltype_07sizeof_07T_08_08_4.html", null ],
       [ "wpi::detail::is_complete_type< T, decltype(void(sizeof(T)))>", "structwpi_1_1detail_1_1is__complete__type_3_01T_00_01decltype_07void_07sizeof_07T_08_08_08_4.html", null ],
       [ "wpi::detail::is_json< json >", "structwpi_1_1detail_1_1is__json_3_01json_01_4.html", null ],
+      [ "wpi::detail::is_span< span< T, S > >", "structwpi_1_1detail_1_1is__span_3_01span_3_01T_00_01S_01_4_01_4.html", null ],
+      [ "wpi::detail::is_std_array< std::array< T, N > >", "structwpi_1_1detail_1_1is__std__array_3_01std_1_1array_3_01T_00_01N_01_4_01_4.html", null ],
       [ "wpi::sig::trait::detail::is_callable< F, P, typelist< T... >, void_t< decltype(((*std::declval< P >()).*std::declval< F >())(std::declval< T >()...))> >", "structwpi_1_1sig_1_1trait_1_1detail_1_1is__callable_3_01F_00_01P_00_01typelist_3_01T_8_8_8_01_4_0902ba6059df7832961a9f154d06c1bf.html", null ],
       [ "wpi::sig::trait::detail::is_callable< F, typelist< T... >, void_t< decltype(std::declval< F >()(std::declval< T >()...))> >", "structwpi_1_1sig_1_1trait_1_1detail_1_1is__callable_3_01F_00_01typelist_3_01T_8_8_8_01_4_00_01vo0b9a9fbd9b294cae0c56b4f4fba775e5.html", null ],
       [ "wpi::sig::trait::detail::is_weak_ptr< T, void_t< decltype(std::declval< T >().expired()), decltype(std::declval< T >().lock()), decltype(std::declval< T >().reset())> >", "structwpi_1_1sig_1_1trait_1_1detail_1_1is__weak__ptr_3_01T_00_01void__t_3_01decltype_07std_1_1ded2bb11d31b8d0ed7a35eee4aeee8967a.html", null ]
     ] ],
     [ "std::tuple_element< I, wpi::array< T, N > >", "structstd_1_1tuple__element_3_01I_00_01wpi_1_1array_3_01T_00_01N_01_4_01_4.html", null ],
+    [ "std::tuple_element< I, wpi::span< ElementType, Extent > >", "classstd_1_1tuple__element_3_01I_00_01wpi_1_1span_3_01ElementType_00_01Extent_01_4_01_4.html", null ],
     [ "wpi::Twine", "classwpi_1_1Twine.html", null ],
     [ "frc::Twist2d", "structfrc_1_1Twist2d.html", null ],
     [ "wpi::sig::trait::typelist<... >", "structwpi_1_1sig_1_1trait_1_1typelist.html", null ],

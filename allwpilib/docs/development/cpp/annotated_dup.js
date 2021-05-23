@@ -61,7 +61,9 @@ var annotated_dup =
       [ "is_error_code_enum< wpi::errc >", "structstd_1_1is__error__code__enum_3_01wpi_1_1errc_01_4.html", null ],
       [ "less< ::wpi::detail::value_t >", "structstd_1_1less_3_01_1_1wpi_1_1detail_1_1value__t_01_4.html", "structstd_1_1less_3_01_1_1wpi_1_1detail_1_1value__t_01_4" ],
       [ "tuple_element< I, wpi::array< T, N > >", "structstd_1_1tuple__element_3_01I_00_01wpi_1_1array_3_01T_00_01N_01_4_01_4.html", "structstd_1_1tuple__element_3_01I_00_01wpi_1_1array_3_01T_00_01N_01_4_01_4" ],
-      [ "tuple_size< wpi::array< T, N > >", "structstd_1_1tuple__size_3_01wpi_1_1array_3_01T_00_01N_01_4_01_4.html", null ]
+      [ "tuple_element< I, wpi::span< ElementType, Extent > >", "classstd_1_1tuple__element_3_01I_00_01wpi_1_1span_3_01ElementType_00_01Extent_01_4_01_4.html", "classstd_1_1tuple__element_3_01I_00_01wpi_1_1span_3_01ElementType_00_01Extent_01_4_01_4" ],
+      [ "tuple_size< wpi::array< T, N > >", "structstd_1_1tuple__size_3_01wpi_1_1array_3_01T_00_01N_01_4_01_4.html", null ],
+      [ "tuple_size< wpi::span< ElementType, Extent > >", "classstd_1_1tuple__size_3_01wpi_1_1span_3_01ElementType_00_01Extent_01_4_01_4.html", null ]
     ] ],
     [ "wpi", null, [
       [ "detail", "namespacewpi_1_1detail.html", "namespacewpi_1_1detail" ],
@@ -396,6 +398,7 @@ var annotated_dup =
       [ "SmallVectorTemplateBase", "classwpi_1_1SmallVectorTemplateBase.html", "classwpi_1_1SmallVectorTemplateBase" ],
       [ "SmallVectorTemplateBase< T, true >", "classwpi_1_1SmallVectorTemplateBase_3_01T_00_01true_01_4.html", "classwpi_1_1SmallVectorTemplateBase_3_01T_00_01true_01_4" ],
       [ "SmallVectorTemplateCommon", "classwpi_1_1SmallVectorTemplateCommon.html", "classwpi_1_1SmallVectorTemplateCommon" ],
+      [ "span", "classwpi_1_1span.html", "classwpi_1_1span" ],
       [ "spinlock", "classwpi_1_1spinlock.html", "classwpi_1_1spinlock" ],
       [ "static_circular_buffer", "classwpi_1_1static__circular__buffer.html", "classwpi_1_1static__circular__buffer" ],
       [ "StringError", "classwpi_1_1StringError.html", "classwpi_1_1StringError" ],
