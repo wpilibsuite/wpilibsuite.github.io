@@ -1,5 +1,7 @@
 var NAVTREEINDEX31 =
 {
+"classwpi_1_1promise_3_01void_01_4.html#a39aec38b67edcb6b4b21cdf86b6663fb":[5,0,9,169,3],
+"classwpi_1_1promise_3_01void_01_4.html#a41cdb81e39fe9b5bf29c6dc60aeb8c2b":[5,0,9,169,4],
 "classwpi_1_1promise_3_01void_01_4.html#a6627702bc55c85de0b9cfad76477e293":[5,0,9,169,0],
 "classwpi_1_1promise_3_01void_01_4.html#a8cafc178dca1765ed1da87cba8b38a8a":[5,0,9,169,1],
 "classwpi_1_1promise_3_01void_01_4.html#aacd9fef19552530407d920df8442b58c":[5,0,9,169,8],
@@ -247,7 +249,5 @@ var NAVTREEINDEX31 =
 "classwpi_1_1sig_1_1detail_1_1SlotPmfTracked_3_01Pmf_00_01WeakPtr_00_01trait_1_1typelist_3_01Args_8_8_8_01_4_01_4.html#a8a8d629699865ff169ddd1ad9fd59466":[5,0,9,5,0,8,1],
 "classwpi_1_1sig_1_1detail_1_1SlotState.html":[5,0,9,5,0,9],
 "classwpi_1_1sig_1_1detail_1_1SlotState.html#a7b6bdab7a5ebc23d35b5a6d10486c4bf":[5,0,9,5,0,9,4],
-"classwpi_1_1sig_1_1detail_1_1SlotState.html#ab8243ec2bf5453475217f297ed34fb0e":[5,0,9,5,0,9,1],
-"classwpi_1_1sig_1_1detail_1_1SlotState.html#ac5f939b89593ff766b0fee0c8b7abedb":[5,0,9,5,0,9,6],
-"classwpi_1_1sig_1_1detail_1_1SlotState.html#acae7a80fd5b61f2d873b1858e7b88eda":[5,0,9,5,0,9,5]
+"classwpi_1_1sig_1_1detail_1_1SlotState.html#ab8243ec2bf5453475217f297ed34fb0e":[5,0,9,5,0,9,1]
 };

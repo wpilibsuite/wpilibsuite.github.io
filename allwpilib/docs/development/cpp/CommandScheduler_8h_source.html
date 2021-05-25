@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-61-g87603e4</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-64-g484cf9c</span>
    </div>
   </td>
  </tr>
@@ -160,11 +160,11 @@ $(document).ready(function(){initNavTree('CommandScheduler_8h_source.html',''); 
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                         <a class="code" href="classfrc2_1_1Command.html">Command</a>, std::remove_reference_t&lt;T&gt;&gt;&gt;&gt;</div>
 <div class="line"><a name="l00181"></a><span class="lineno"><a class="line" href="classfrc2_1_1CommandScheduler.html#ad748198c4967d298dfdab479a00e31b7">  181</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc2_1_1CommandScheduler.html#ad748198c4967d298dfdab479a00e31b7">SetDefaultCommand</a>(<a class="code" href="classfrc2_1_1Subsystem.html">Subsystem</a>* subsystem, T&amp;&amp; defaultCommand) {</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="keywordflow">if</span> (!defaultCommand.HasRequirement(subsystem)) {</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;      <span class="keywordflow">throw</span> FRC_MakeError(frc::err::CommandIllegalUse,</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;      <span class="keywordflow">throw</span> FRC_MakeError(frc::err::CommandIllegalUse, <span class="stringliteral">&quot;{}&quot;</span>,</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                          <span class="stringliteral">&quot;Default commands must require their subsystem!&quot;</span>);</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    }</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keywordflow">if</span> (defaultCommand.IsFinished()) {</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;      <span class="keywordflow">throw</span> FRC_MakeError(frc::err::CommandIllegalUse,</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;      <span class="keywordflow">throw</span> FRC_MakeError(frc::err::CommandIllegalUse, <span class="stringliteral">&quot;{}&quot;</span>,</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;                          <span class="stringliteral">&quot;Default commands should not end!&quot;</span>);</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    }</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    SetDefaultCommandImpl(subsystem,</div>
@@ -268,7 +268,7 @@ $(document).ready(function(){initNavTree('CommandScheduler_8h_source.html',''); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e7d5d1c9c07b3d6a0a849f7ca2bfcaa9.html">frc2</a></li><li class="navelem"><a class="el" href="dir_25d5854705192c92d2d003534c71255a.html">command</a></li><li class="navelem"><b>CommandScheduler.h</b></li>
-    <li class="footer">Generated on Tue May 25 2021 07:01:38 for WPILibC++ by
+    <li class="footer">Generated on Tue May 25 2021 17:07:54 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

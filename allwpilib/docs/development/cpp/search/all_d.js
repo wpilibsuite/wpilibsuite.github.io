@@ -28,7 +28,7 @@ var searchData=
   ['makecovmatrix_2351',['MakeCovMatrix',['../namespacefrc.html#a97f46ffa0575e8aa2b2f08e7a8a1e2d7',1,'frc::MakeCovMatrix(Ts... stdDevs)'],['../namespacefrc.html#ac94b609031d0704a42618afedd68103a',1,'frc::MakeCovMatrix(const std::array&lt; double, N &gt; &amp;stdDevs)']]],
   ['makedouble_2352',['MakeDouble',['../classnt_1_1Value.html#a3e9bf7092724853f4a8e27190e492a82',1,'nt::Value']]],
   ['makedoublearray_2353',['MakeDoubleArray',['../classnt_1_1Value.html#ac05373143871420b811eb96fe5ecdd97',1,'nt::Value::MakeDoubleArray(wpi::ArrayRef&lt; double &gt; value, uint64_t time=0)'],['../classnt_1_1Value.html#a5ef9aa1d9781515e5d1a13c1ec4d5583',1,'nt::Value::MakeDoubleArray(std::initializer_list&lt; double &gt; value, uint64_t time=0)']]],
-  ['makeerror_2354',['MakeError',['../namespacefrc.html#a9fe2ebd9d86752219d9e6878c78e4c66',1,'frc']]],
+  ['makeerrorv_2354',['MakeErrorV',['../namespacefrc.html#a663812993fa21e0b4d3a7ba1bd1d4955',1,'frc']]],
   ['makematrix_2355',['MakeMatrix',['../namespacefrc.html#a42a7f1c2bef6d2daeddbc1a07a3f24ca',1,'frc']]],
   ['makeraw_2356',['MakeRaw',['../classnt_1_1Value.html#a187c8590b8359bb75a389becc64a2caa',1,'nt::Value::MakeRaw(wpi::StringRef value, uint64_t time=0)'],['../classnt_1_1Value.html#acecafe447efbe5fc7259b915f2605ca4',1,'nt::Value::MakeRaw(T &amp;&amp;value, uint64_t time=0)']]],
   ['makereadyfuture_2357',['MakeReadyFuture',['../classwpi_1_1PromiseFactory.html#affcc5fd7e19123f1c1c7f9c6e91508e0',1,'wpi::PromiseFactory::MakeReadyFuture()'],['../classwpi_1_1PromiseFactory_3_01void_01_4.html#a800ef45a77921251c1f33e30dcc0840c',1,'wpi::PromiseFactory&lt; void &gt;::MakeReadyFuture()']]],

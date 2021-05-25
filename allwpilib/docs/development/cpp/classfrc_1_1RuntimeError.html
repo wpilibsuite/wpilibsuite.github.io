@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-61-g87603e4</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-64-g484cf9c</span>
    </div>
   </td>
  </tr>
@@ -111,12 +111,12 @@ Inheritance diagram for frc::RuntimeError:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a182ff82262383476c0d5a7b67934dee0"><td class="memItemLeft" align="right" valign="top"><a id="a182ff82262383476c0d5a7b67934dee0"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>RuntimeError</b> (int32_t code, const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;message, const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;loc, <a class="el" href="classwpi_1_1StringRef.html">wpi::StringRef</a> stack)</td></tr>
-<tr class="separator:a182ff82262383476c0d5a7b67934dee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14124aad16c19e316b0d95667f0fe9c6"><td class="memItemLeft" align="right" valign="top"><a id="a14124aad16c19e316b0d95667f0fe9c6"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>RuntimeError</b> (int32_t code, const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;message, const char *fileName, int lineNumber, const char *funcName, <a class="el" href="classwpi_1_1StringRef.html">wpi::StringRef</a> stack)</td></tr>
-<tr class="separator:a14124aad16c19e316b0d95667f0fe9c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4e95a9f4d01c1e08053f813a5876463"><td class="memItemLeft" align="right" valign="top"><a id="aa4e95a9f4d01c1e08053f813a5876463"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>RuntimeError</b> (int32_t code, std::string &amp;&amp;loc, std::string &amp;&amp;stack, std::string &amp;&amp;message)</td></tr>
+<tr class="separator:aa4e95a9f4d01c1e08053f813a5876463"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27d75f7f46e097abcf27a84c913f17ae"><td class="memItemLeft" align="right" valign="top"><a id="a27d75f7f46e097abcf27a84c913f17ae"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>RuntimeError</b> (int32_t code, const char *fileName, int lineNumber, const char *funcName, std::string &amp;&amp;stack, std::string &amp;&amp;message)</td></tr>
+<tr class="separator:a27d75f7f46e097abcf27a84c913f17ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a09f9508b35065d5ddceccba9d595eb"><td class="memItemLeft" align="right" valign="top"><a id="a8a09f9508b35065d5ddceccba9d595eb"></a>
 int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>code</b> () const noexcept</td></tr>
 <tr class="separator:a8a09f9508b35065d5ddceccba9d595eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,7 +142,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1RuntimeError.html">RuntimeError</a></li>
-    <li class="footer">Generated on Tue May 25 2021 07:01:41 for WPILibC++ by
+    <li class="footer">Generated on Tue May 25 2021 17:07:56 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

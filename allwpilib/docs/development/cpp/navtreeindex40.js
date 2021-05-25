@@ -1,5 +1,7 @@
 var NAVTREEINDEX40 =
 {
+"structcolor__type.html":[5,0,43],
+"structcolor__type.html#a0d4321deda7a3c7c8c00af9b2c44b909":[5,0,43,1],
 "structcolor__type.html#a366911c5e60a08e756cefd1891bc5cdc":[5,0,43,2],
 "structcolor__type.html#a77524da9613f1e27781b6d6194d2fb74":[5,0,43,3],
 "structcolor__type.html#a85adeb02a1b9b735be2a916d01ee8012":[5,0,43,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX40 =
 "structfallback__formatter.html#a6e0e3d2b91209937e0eb04880d5040e4":[5,0,60,0],
 "structfill__t.html":[5,0,61],
 "structfill__t.html#a205a72162ea2b2b2938d7ddccd35966f":[5,0,61,1],
-"structfill__t.html#a2f9cfa8b68ae1ccc39745b534b7ea814":[5,0,61,3],
-"structfill__t.html#a89ac8b3e760b219368ce2b010ea654e8":[5,0,61,4],
-"structfill__t.html#a96d2a7e6af20388e8523baef24d68fb9":[5,0,61,0]
+"structfill__t.html#a2f9cfa8b68ae1ccc39745b534b7ea814":[5,0,61,3]
 };

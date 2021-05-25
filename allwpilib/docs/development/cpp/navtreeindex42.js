@@ -1,5 +1,7 @@
 var NAVTREEINDEX42 =
 {
+"structnt_1_1EntryInfo.html#ab48ca918a22d2c3e839f1913f8ce9cdf":[3,3,9,2],
+"structnt_1_1EntryInfo.html#ab7167b08836d591d9b01c93a63e8171a":[3,3,9,1],
 "structnt_1_1RpcDefinition.html":[3,3,13],
 "structnt_1_1RpcDefinition.html#a36999ecb6793ab68bff6650ab02cc2a3":[3,3,13,1],
 "structnt_1_1RpcDefinition.html#ab98cbfb3868a18f59dc0f997e3eeec9a":[3,3,13,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX42 =
 "structwpi_1_1add__lvalue__reference__if__not__pointer.html":[5,0,9,11],
 "structwpi_1_1add__lvalue__reference__if__not__pointer.html#a0243fca1edd0927f589a23a10459bbac":[5,0,9,11,0],
 "structwpi_1_1add__lvalue__reference__if__not__pointer_3_01T_00_01typename_01std_1_1enable__if_3_8c6b33cfd3535e3d3fc401c6f4e8d209.html":[5,0,9,12],
-"structwpi_1_1add__lvalue__reference__if__not__pointer_3_01T_00_01typename_01std_1_1enable__if_3_8c6b33cfd3535e3d3fc401c6f4e8d209.html#adab0e16e76cd334b321aa6bcbee396a0":[5,0,9,12,0],
-"structwpi_1_1adl__serializer.html":[5,0,9,13],
-"structwpi_1_1adl__serializer.html#a5663deefa80b3e2c4db51419f9417777":[5,0,9,13,1]
+"structwpi_1_1add__lvalue__reference__if__not__pointer_3_01T_00_01typename_01std_1_1enable__if_3_8c6b33cfd3535e3d3fc401c6f4e8d209.html#adab0e16e76cd334b321aa6bcbee396a0":[5,0,9,12,0]
 };

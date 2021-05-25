@@ -1,5 +1,7 @@
 var NAVTREEINDEX44 =
 {
+"structwpi_1_1identity.html#aeb246b73cb04e20d40ed619840375880":[5,0,9,108,1],
+"structwpi_1_1isPodLike.html":[5,0,9,114],
 "structwpi_1_1isPodLike.html#ae06d5526d96efa4b3f53b9a0205c2ec3":[5,0,9,114,0],
 "structwpi_1_1isPodLike_3_01ArrayRef_3_01T_01_4_01_4.html":[5,0,9,115],
 "structwpi_1_1isPodLike_3_01ArrayRef_3_01T_01_4_01_4.html#ae2408681c75c8e92dc24b6d9e60a9130":[5,0,9,115,0],

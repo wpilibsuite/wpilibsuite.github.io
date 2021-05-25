@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-61-g87603e4</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-64-g484cf9c</span>
    </div>
   </td>
  </tr>
@@ -998,12 +998,20 @@ template&lt;class Robot &gt; </td></tr>
 const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a5dfbce48cc56cfb3ed1455bd879975a6">GetErrorMessage</a> (int32_t *code)</td></tr>
 <tr class="memdesc:a5dfbce48cc56cfb3ed1455bd879975a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets error message string for an error code. <br /></td></tr>
 <tr class="separator:a5dfbce48cc56cfb3ed1455bd879975a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12ee26748df294ee49c8e7436e106271"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a12ee26748df294ee49c8e7436e106271">ReportError</a> (int32_t status, const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;message, const char *fileName, int lineNumber, const char *funcName)</td></tr>
-<tr class="memdesc:a12ee26748df294ee49c8e7436e106271"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports an error to the driver station (using HAL_SendError).  <a href="namespacefrc.html#a12ee26748df294ee49c8e7436e106271">More...</a><br /></td></tr>
-<tr class="separator:a12ee26748df294ee49c8e7436e106271"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fe2ebd9d86752219d9e6878c78e4c66"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1RuntimeError.html">RuntimeError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a9fe2ebd9d86752219d9e6878c78e4c66">MakeError</a> (int32_t status, const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;message, const char *fileName, int lineNumber, const char *funcName)</td></tr>
-<tr class="memdesc:a9fe2ebd9d86752219d9e6878c78e4c66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes a runtime error exception object.  <a href="namespacefrc.html#a9fe2ebd9d86752219d9e6878c78e4c66">More...</a><br /></td></tr>
-<tr class="separator:a9fe2ebd9d86752219d9e6878c78e4c66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae524c828d05c9df76525cd615a26772a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ae524c828d05c9df76525cd615a26772a">ReportErrorV</a> (int32_t status, const char *fileName, int lineNumber, const char *funcName, fmt::string_view format, fmt::format_args args)</td></tr>
+<tr class="memdesc:ae524c828d05c9df76525cd615a26772a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports an error to the driver station (using HAL_SendError).  <a href="namespacefrc.html#ae524c828d05c9df76525cd615a26772a">More...</a><br /></td></tr>
+<tr class="separator:ae524c828d05c9df76525cd615a26772a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49dbf58a9be631cb32db6def6184cd60"><td class="memTemplParams" colspan="2">template&lt;typename S , typename... Args&gt; </td></tr>
+<tr class="memitem:a49dbf58a9be631cb32db6def6184cd60"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a49dbf58a9be631cb32db6def6184cd60">ReportError</a> (int32_t status, const char *fileName, int lineNumber, const char *funcName, const S &amp;format, Args &amp;&amp;... args)</td></tr>
+<tr class="memdesc:a49dbf58a9be631cb32db6def6184cd60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports an error to the driver station (using HAL_SendError).  <a href="namespacefrc.html#a49dbf58a9be631cb32db6def6184cd60">More...</a><br /></td></tr>
+<tr class="separator:a49dbf58a9be631cb32db6def6184cd60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a663812993fa21e0b4d3a7ba1bd1d4955"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1RuntimeError.html">RuntimeError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a663812993fa21e0b4d3a7ba1bd1d4955">MakeErrorV</a> (int32_t status, const char *fileName, int lineNumber, const char *funcName, fmt::string_view format, fmt::format_args args)</td></tr>
+<tr class="memdesc:a663812993fa21e0b4d3a7ba1bd1d4955"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes a runtime error exception object.  <a href="namespacefrc.html#a663812993fa21e0b4d3a7ba1bd1d4955">More...</a><br /></td></tr>
+<tr class="separator:a663812993fa21e0b4d3a7ba1bd1d4955"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2dbe14bbbcbe0ac98054ac4dab8619b"><td class="memTemplParams" colspan="2"><a id="af2dbe14bbbcbe0ac98054ac4dab8619b"></a>
+template&lt;typename S , typename... Args&gt; </td></tr>
+<tr class="memitem:af2dbe14bbbcbe0ac98054ac4dab8619b"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1RuntimeError.html">RuntimeError</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>MakeError</b> (int32_t status, const char *fileName, int lineNumber, const char *funcName, const S &amp;format, Args &amp;&amp;... args)</td></tr>
+<tr class="separator:af2dbe14bbbcbe0ac98054ac4dab8619b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>WPILib FRC namespace. </p>
@@ -2351,23 +2359,17 @@ template&lt;typename... Ts, typename  = std::enable_if_t&lt;                    
 
 </div>
 </div>
-<a id="a9fe2ebd9d86752219d9e6878c78e4c66"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9fe2ebd9d86752219d9e6878c78e4c66">&#9670;&nbsp;</a></span>MakeError()</h2>
+<a id="a663812993fa21e0b4d3a7ba1bd1d4955"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a663812993fa21e0b4d3a7ba1bd1d4955">&#9670;&nbsp;</a></span>MakeErrorV()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classfrc_1_1RuntimeError.html">RuntimeError</a> frc::MakeError </td>
+          <td class="memname"><a class="el" href="classfrc_1_1RuntimeError.html">RuntimeError</a> frc::MakeErrorV </td>
           <td>(</td>
           <td class="paramtype">int32_t&#160;</td>
           <td class="paramname"><em>status</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;&#160;</td>
-          <td class="paramname"><em>message</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2385,7 +2387,19 @@ template&lt;typename... Ts, typename  = std::enable_if_t&lt;                    
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>funcName</em>&#160;</td>
+          <td class="paramname"><em>funcName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">fmt::string_view&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">fmt::format_args&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2763,23 +2777,22 @@ template&lt;int Rows, int States, int Inputs, typename F , typename... Args&gt; 
 
 </div>
 </div>
-<a id="a12ee26748df294ee49c8e7436e106271"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a12ee26748df294ee49c8e7436e106271">&#9670;&nbsp;</a></span>ReportError()</h2>
+<a id="a49dbf58a9be631cb32db6def6184cd60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49dbf58a9be631cb32db6def6184cd60">&#9670;&nbsp;</a></span>ReportError()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename S , typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void frc::ReportError </td>
           <td>(</td>
           <td class="paramtype">int32_t&#160;</td>
           <td class="paramname"><em>status</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;&#160;</td>
-          <td class="paramname"><em>message</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2797,7 +2810,90 @@ template&lt;int Rows, int States, int Inputs, typename F , typename... Args&gt; 
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>funcName</em>&#160;</td>
+          <td class="paramname"><em>funcName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const S &amp;&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reports an error to the driver station (using HAL_SendError). </p>
+<p>Generally the FRC_ReportError wrapper macro should be used instead.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">status</td><td>error code </td></tr>
+    <tr><td class="paramname">fileName</td><td>source file name </td></tr>
+    <tr><td class="paramname">lineNumber</td><td>source line number </td></tr>
+    <tr><td class="paramname">funcName</td><td>source function name </td></tr>
+    <tr><td class="paramname">format</td><td>error message format </td></tr>
+    <tr><td class="paramname">args</td><td>error message format args </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae524c828d05c9df76525cd615a26772a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae524c828d05c9df76525cd615a26772a">&#9670;&nbsp;</a></span>ReportErrorV()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void frc::ReportErrorV </td>
+          <td>(</td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>status</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lineNumber</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>funcName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">fmt::string_view&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">fmt::format_args&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2812,10 +2908,11 @@ template&lt;int Rows, int States, int Inputs, typename F , typename... Args&gt; 
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">status</td><td>error code </td></tr>
-    <tr><td class="paramname">message</td><td>error message details </td></tr>
     <tr><td class="paramname">fileName</td><td>source file name </td></tr>
     <tr><td class="paramname">lineNumber</td><td>source line number </td></tr>
     <tr><td class="paramname">funcName</td><td>source function name </td></tr>
+    <tr><td class="paramname">format</td><td>error message format </td></tr>
+    <tr><td class="paramname">args</td><td>error message format args </td></tr>
   </table>
   </dd>
 </dl>
@@ -3269,7 +3366,7 @@ template&lt;int States, int CovDim&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li>
-    <li class="footer">Generated on Tue May 25 2021 07:01:40 for WPILibC++ by
+    <li class="footer">Generated on Tue May 25 2021 17:07:56 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

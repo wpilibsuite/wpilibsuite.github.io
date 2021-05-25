@@ -1,5 +1,7 @@
 var NAVTREEINDEX38 =
 {
+"group__ntcore__table__cfunc.html#ga0eb37934038f68d3e1e4295fcf360866":[3,1,1,10],
+"group__ntcore__table__cfunc.html#ga30500cbe99b25c805b86b87f25f228e6":[3,1,1,8],
 "group__ntcore__table__cfunc.html#ga4234794cf6eb2baaa58ecef3a8897c99":[3,1,1,2],
 "group__ntcore__table__cfunc.html#ga440eb62cdf0781156e82fa4097d29770":[3,1,1,9],
 "group__ntcore__table__cfunc.html#ga4d4e95c13b6b13920af6db25cfc36931":[3,1,1,11],
@@ -113,13 +115,13 @@ var NAVTREEINDEX38 =
 "md__home_runner_work_allwpilib_allwpilib_LICENSE.html":[0],
 "modules.html":[3],
 "mutex_8h_source.html":[6,0,12,48],
-"namespacecs.html":[4,0,0],
 "namespacecs.html":[5,0,0],
+"namespacecs.html":[4,0,0],
 "namespacefrc.html":[5,0,4],
 "namespacefrc.html":[4,0,1],
 "namespacefrc_1_1filesystem.html":[4,0,1,0],
-"namespacehal.html":[4,0,2],
 "namespacehal.html":[5,0,6],
+"namespacehal.html":[4,0,2],
 "namespacemembers.html":[4,1,0],
 "namespacemembers_enum.html":[4,1,3],
 "namespacemembers_eval.html":[4,1,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX38 =
 "structHAL__Value.html#acab9a5e1909d1f6065088a6d0070467f":[5,0,97,2],
 "structHAL__Value.html#ad2f6e0c830e11ea389ae5e9fe3c5cd4f":[5,0,97,5],
 "structHAL__Value.html#ada2019ab2332dfede295024c878557ab":[5,0,97,1],
-"structHAL__Value.html#ade61067b4f6774bf7c56102edb7c573f":[5,0,97,0],
-"structHAL__Value.html#ae854ac09615223f1be87c0b0c1b3a7c0":[5,0,97,4],
-"structNT__ConnectionInfo.html":[3,1,13]
+"structHAL__Value.html#ade61067b4f6774bf7c56102edb7c573f":[5,0,97,0]
 };

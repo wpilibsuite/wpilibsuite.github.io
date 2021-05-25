@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-61-g87603e4</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-64-g484cf9c</span>
    </div>
   </td>
  </tr>
@@ -264,15 +264,6 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ab8aad79200fa541f5f8c0088550fabc3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classfrc_1_1DriverStation.html">DriverStation</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1DriverStation.html#ab8aad79200fa541f5f8c0088550fabc3">GetInstance</a> ()</td></tr>
 <tr class="memdesc:ab8aad79200fa541f5f8c0088550fabc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a reference to the singleton <a class="el" href="classfrc_1_1DriverStation.html" title="Provide access to the network communication data to / from the Driver Station.">DriverStation</a>.  <a href="classfrc_1_1DriverStation.html#ab8aad79200fa541f5f8c0088550fabc3">More...</a><br /></td></tr>
 <tr class="separator:ab8aad79200fa541f5f8c0088550fabc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24e5ae98414b718f704ca9e9f8f88fc5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1DriverStation.html#a24e5ae98414b718f704ca9e9f8f88fc5">ReportError</a> (const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;error)</td></tr>
-<tr class="memdesc:a24e5ae98414b718f704ca9e9f8f88fc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Report an error to the <a class="el" href="classfrc_1_1DriverStation.html" title="Provide access to the network communication data to / from the Driver Station.">DriverStation</a> messages window.  <a href="classfrc_1_1DriverStation.html#a24e5ae98414b718f704ca9e9f8f88fc5">More...</a><br /></td></tr>
-<tr class="separator:a24e5ae98414b718f704ca9e9f8f88fc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4896964dca0a50373ee7407168b56541"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1DriverStation.html#a4896964dca0a50373ee7407168b56541">ReportWarning</a> (const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;error)</td></tr>
-<tr class="memdesc:a4896964dca0a50373ee7407168b56541"><td class="mdescLeft">&#160;</td><td class="mdescRight">Report a warning to the <a class="el" href="classfrc_1_1DriverStation.html" title="Provide access to the network communication data to / from the Driver Station.">DriverStation</a> messages window.  <a href="classfrc_1_1DriverStation.html#a4896964dca0a50373ee7407168b56541">More...</a><br /></td></tr>
-<tr class="separator:a4896964dca0a50373ee7407168b56541"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f3f34d51e13e06596ca66a263243e23"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1DriverStation.html#a7f3f34d51e13e06596ca66a263243e23">ReportError</a> (bool isError, int code, const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;error, const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;location, const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;stack)</td></tr>
-<tr class="memdesc:a7f3f34d51e13e06596ca66a263243e23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Report an error to the <a class="el" href="classfrc_1_1DriverStation.html" title="Provide access to the network communication data to / from the Driver Station.">DriverStation</a> messages window.  <a href="classfrc_1_1DriverStation.html#a7f3f34d51e13e06596ca66a263243e23">More...</a><br /></td></tr>
-<tr class="separator:a7f3f34d51e13e06596ca66a263243e23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -1349,121 +1340,6 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a7f3f34d51e13e06596ca66a263243e23"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f3f34d51e13e06596ca66a263243e23">&#9670;&nbsp;</a></span>ReportError() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void frc::DriverStation::ReportError </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>isError</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>code</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;&#160;</td>
-          <td class="paramname"><em>error</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;&#160;</td>
-          <td class="paramname"><em>location</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;&#160;</td>
-          <td class="paramname"><em>stack</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Report an error to the <a class="el" href="classfrc_1_1DriverStation.html" title="Provide access to the network communication data to / from the Driver Station.">DriverStation</a> messages window. </p>
-<p>The error is also printed to the program console. </p>
-
-</div>
-</div>
-<a id="a24e5ae98414b718f704ca9e9f8f88fc5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a24e5ae98414b718f704ca9e9f8f88fc5">&#9670;&nbsp;</a></span>ReportError() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void frc::DriverStation::ReportError </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;&#160;</td>
-          <td class="paramname"><em>error</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Report an error to the <a class="el" href="classfrc_1_1DriverStation.html" title="Provide access to the network communication data to / from the Driver Station.">DriverStation</a> messages window. </p>
-<p>The error is also printed to the program console. </p>
-
-</div>
-</div>
-<a id="a4896964dca0a50373ee7407168b56541"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4896964dca0a50373ee7407168b56541">&#9670;&nbsp;</a></span>ReportWarning()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void frc::DriverStation::ReportWarning </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;&#160;</td>
-          <td class="paramname"><em>error</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Report a warning to the <a class="el" href="classfrc_1_1DriverStation.html" title="Provide access to the network communication data to / from the Driver Station.">DriverStation</a> messages window. </p>
-<p>The warning is also printed to the program console. </p>
-
-</div>
-</div>
 <a id="aa38ff5ed69365392b288ea1c07e33c8e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa38ff5ed69365392b288ea1c07e33c8e">&#9670;&nbsp;</a></span>SilenceJoystickConnectionWarning()</h2>
 
@@ -1554,7 +1430,7 @@ Protected Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1DriverStation.html">DriverStation</a></li>
-    <li class="footer">Generated on Tue May 25 2021 07:01:40 for WPILibC++ by
+    <li class="footer">Generated on Tue May 25 2021 17:07:56 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

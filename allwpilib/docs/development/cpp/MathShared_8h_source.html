@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-61-g87603e4</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-64-g484cf9c</span>
    </div>
   </td>
  </tr>
@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('MathShared_8h_source.html',''); initRe
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;wpi/Twine.h&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;fmt/format.h&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>wpi::math {</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
@@ -119,36 +119,45 @@ $(document).ready(function(){initNavTree('MathShared_8h_source.html',''); initRe
 <div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classwpi_1_1math_1_1MathShared.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="classwpi_1_1math_1_1MathShared.html">MathShared</a> {</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classwpi_1_1math_1_1MathShared.html">MathShared</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> ReportError(<span class="keyword">const</span> <a class="code" href="classwpi_1_1Twine.html">wpi::Twine</a>&amp; error) = 0;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> ReportErrorV(fmt::string_view format, fmt::format_args args) = 0;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> ReportUsage(MathUsageId <span class="keywordtype">id</span>, <span class="keywordtype">int</span> count) = 0;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classwpi_1_1math_1_1MathSharedStore.html">   31</a></span>&#160;<span class="keyword">class </span><a class="code" href="classwpi_1_1math_1_1MathSharedStore.html">MathSharedStore</a> {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keyword">static</span> <a class="code" href="classwpi_1_1math_1_1MathShared.html">MathShared</a>&amp; GetMathShared();</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> SetMathShared(std::unique_ptr&lt;MathShared&gt; shared);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> ReportError(<span class="keyword">const</span> <a class="code" href="classwpi_1_1Twine.html">wpi::Twine</a>&amp; error) {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    GetMathShared().ReportError(error);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  }</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> ReportUsage(MathUsageId <span class="keywordtype">id</span>, <span class="keywordtype">int</span> count) {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    GetMathShared().ReportUsage(<span class="keywordtype">id</span>, count);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  }</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;};</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> S, <span class="keyword">typename</span>... Args&gt;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">inline</span> <span class="keywordtype">void</span> ReportError(<span class="keyword">const</span> S&amp; format, Args&amp;&amp;... args) {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    ReportErrorV(format, fmt::make_args_checked&lt;Args...&gt;(format, args...));</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;};</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classwpi_1_1math_1_1MathSharedStore.html">   36</a></span>&#160;<span class="keyword">class </span><a class="code" href="classwpi_1_1math_1_1MathSharedStore.html">MathSharedStore</a> {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">static</span> <a class="code" href="classwpi_1_1math_1_1MathShared.html">MathShared</a>&amp; GetMathShared();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> SetMathShared(std::unique_ptr&lt;MathShared&gt; shared);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> ReportErrorV(fmt::string_view format, fmt::format_args args) {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    GetMathShared().ReportErrorV(format, args);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  }</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}  <span class="comment">// namespace wpi::math</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> S, <span class="keyword">typename</span>... Args&gt;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> ReportError(<span class="keyword">const</span> S&amp; format, Args&amp;&amp;... args) {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    ReportErrorV(format, fmt::make_args_checked&lt;Args...&gt;(format, args...));</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> ReportUsage(MathUsageId <span class="keywordtype">id</span>, <span class="keywordtype">int</span> count) {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    GetMathShared().ReportUsage(<span class="keywordtype">id</span>, count);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}  <span class="comment">// namespace wpi::math</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclasswpi_1_1math_1_1MathSharedStore_html"><div class="ttname"><a href="classwpi_1_1math_1_1MathSharedStore.html">wpi::math::MathSharedStore</a></div><div class="ttdef"><b>Definition:</b> MathShared.h:31</div></div>
+<div class="ttc" id="aclasswpi_1_1math_1_1MathSharedStore_html"><div class="ttname"><a href="classwpi_1_1math_1_1MathSharedStore.html">wpi::math::MathSharedStore</a></div><div class="ttdef"><b>Definition:</b> MathShared.h:36</div></div>
 <div class="ttc" id="aclasswpi_1_1math_1_1MathShared_html"><div class="ttname"><a href="classwpi_1_1math_1_1MathShared.html">wpi::math::MathShared</a></div><div class="ttdef"><b>Definition:</b> MathShared.h:24</div></div>
-<div class="ttc" id="aclasswpi_1_1Twine_html"><div class="ttname"><a href="classwpi_1_1Twine.html">wpi::Twine</a></div><div class="ttdoc">Twine - A lightweight data structure for efficiently representing the concatenation of temporary valu...</div><div class="ttdef"><b>Definition:</b> Twine.h:86</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_9ed6d559e9d3ae0e5e98be60a74f2d52.html">wpimath</a></li><li class="navelem"><b>MathShared.h</b></li>
-    <li class="footer">Generated on Tue May 25 2021 07:01:38 for WPILibC++ by
+    <li class="footer">Generated on Tue May 25 2021 17:07:54 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

@@ -1,5 +1,7 @@
 var NAVTREEINDEX37 =
 {
+"group__hal__solenoid.html#ga0d3a3fa1ec825241f374d4b51511a4ee":[3,0,22,1],
+"group__hal__solenoid.html#ga13c37793d86c948b668b6948adc761f8":[3,0,22,11],
 "group__hal__solenoid.html#ga1e732970befc518e2b72373e24d97b44":[3,0,22,0],
 "group__hal__solenoid.html#ga3414b0c6e00582798e6992c1a4479d1d":[3,0,22,9],
 "group__hal__solenoid.html#ga442a24e54464a355a5a74667c7fe53fe":[3,0,22,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX37 =
 "group__ntcore__setdefault__cfunc.html#gab8c94073294e42f18de8504642e0f2d9":[3,1,9,2,1],
 "group__ntcore__setdefault__cfunc.html#gaf7f6e4e0605a280b9408039fcc9d31fa":[3,1,9,2,2],
 "group__ntcore__table__cfunc.html":[3,1,1],
-"group__ntcore__table__cfunc.html#ga0cbb1ad66f3abcd2b0a66dc760c691ee":[3,1,1,14],
-"group__ntcore__table__cfunc.html#ga0eb37934038f68d3e1e4295fcf360866":[3,1,1,10],
-"group__ntcore__table__cfunc.html#ga30500cbe99b25c805b86b87f25f228e6":[3,1,1,8]
+"group__ntcore__table__cfunc.html#ga0cbb1ad66f3abcd2b0a66dc760c691ee":[3,1,1,14]
 };
