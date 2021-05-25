@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-60-g4426216</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-61-g87603e4</span>
    </div>
   </td>
  </tr>
@@ -126,21 +126,21 @@ $(document).ready(function(){initNavTree('PointerLikeTypeTraits_8h_source.html',
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">// Provide a trait to check if T is pointer-like.</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="structwpi_1_1detail_1_1HasPointerLikeTypeTraits.html">   36</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> U = <span class="keywordtype">void</span>&gt; <span class="keyword">struct </span><a class="code" href="structwpi_1_1detail_1_1HasPointerLikeTypeTraits.html">HasPointerLikeTypeTraits</a> {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> value = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code" href="classvalue.html">value</a> = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">// sizeof(T) is valid only for a complete T.</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="structwpi_1_1detail_1_1HasPointerLikeTypeTraits_3_01T_00_01decltype_07_07sizeof_07PointerLikeTypc1179fa6075c47986ebe462bf45a5392.html">   41</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="keyword">struct </span><a class="code" href="structwpi_1_1detail_1_1HasPointerLikeTypeTraits.html">HasPointerLikeTypeTraits</a>&lt;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  T, decltype((sizeof(<a class="code" href="structwpi_1_1PointerLikeTypeTraits.html">PointerLikeTypeTraits</a>&lt;T&gt;) + sizeof(T)), void())&gt; {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> value = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code" href="classvalue.html">value</a> = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;};</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
 <div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="structwpi_1_1detail_1_1IsPointerLike.html">   46</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="keyword">struct </span><a class="code" href="structwpi_1_1detail_1_1IsPointerLike.html">IsPointerLike</a> {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> value = <a class="code" href="structwpi_1_1detail_1_1HasPointerLikeTypeTraits.html">HasPointerLikeTypeTraits&lt;T&gt;::value</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code" href="classvalue.html">value</a> = <a class="code" href="structwpi_1_1detail_1_1HasPointerLikeTypeTraits.html">HasPointerLikeTypeTraits&lt;T&gt;::value</a>;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
 <div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="structwpi_1_1detail_1_1IsPointerLike_3_01T_01_5_01_4.html">   50</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="keyword">struct </span><a class="code" href="structwpi_1_1detail_1_1IsPointerLike.html">IsPointerLike</a>&lt;T *&gt; {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> value = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code" href="classvalue.html">value</a> = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;} <span class="comment">// namespace detail</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
@@ -149,7 +149,7 @@ $(document).ready(function(){initNavTree('PointerLikeTypeTraits_8h_source.html',
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> *getAsVoidPointer(T *P) { <span class="keywordflow">return</span> P; }</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keyword">static</span> <span class="keyword">inline</span> T *getFromVoidPointer(<span class="keywordtype">void</span> *P) { <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>T *<span class="keyword">&gt;</span>(P); }</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keyword">enum</span> { NumLowBitsAvailable = <a class="code" href="structwpi_1_1detail_1_1ConstantLog2.html">detail::ConstantLog2</a>&lt;<span class="keyword">alignof</span>(T)&gt;::value };</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keyword">enum</span> { NumLowBitsAvailable = <a class="code" href="structwpi_1_1detail_1_1ConstantLog2.html">detail::ConstantLog2</a>&lt;<span class="keyword">alignof</span>(T)&gt;::<a class="code" href="classvalue.html">value</a> };</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;};</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
 <div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="structwpi_1_1PointerLikeTypeTraits_3_01void_01_5_01_4.html">   63</a></span>&#160;<span class="keyword">template</span> &lt;&gt; <span class="keyword">struct </span><a class="code" href="structwpi_1_1PointerLikeTypeTraits.html">PointerLikeTypeTraits</a>&lt;void *&gt; {</div>
@@ -220,6 +220,7 @@ $(document).ready(function(){initNavTree('PointerLikeTypeTraits_8h_source.html',
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1099</div></div>
 <div class="ttc" id="astructwpi_1_1PointerLikeTypeTraits_3_01T_01_5_01_4_html"><div class="ttname"><a href="structwpi_1_1PointerLikeTypeTraits_3_01T_01_5_01_4.html">wpi::PointerLikeTypeTraits&lt; T * &gt;</a></div><div class="ttdef"><b>Definition:</b> PointerLikeTypeTraits.h:56</div></div>
 <div class="ttc" id="astructwpi_1_1detail_1_1ConstantLog2_html"><div class="ttname"><a href="structwpi_1_1detail_1_1ConstantLog2.html">wpi::detail::ConstantLog2</a></div><div class="ttdoc">A tiny meta function to compute the log2 of a compile time constant.</div><div class="ttdef"><b>Definition:</b> PointerLikeTypeTraits.h:32</div></div>
 <div class="ttc" id="astructwpi_1_1FunctionPointerLikeTypeTraits_html"><div class="ttname"><a href="structwpi_1_1FunctionPointerLikeTypeTraits.html">wpi::FunctionPointerLikeTypeTraits</a></div><div class="ttdoc">Provide suitable custom traits struct for function pointers.</div><div class="ttdef"><b>Definition:</b> PointerLikeTypeTraits.h:124</div></div>
@@ -230,7 +231,7 @@ $(document).ready(function(){initNavTree('PointerLikeTypeTraits_8h_source.html',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><b>PointerLikeTypeTraits.h</b></li>
-    <li class="footer">Generated on Sun May 23 2021 22:29:19 for WPILibC++ by
+    <li class="footer">Generated on Tue May 25 2021 07:01:39 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

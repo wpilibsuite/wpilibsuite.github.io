@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-60-g4426216</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-61-g87603e4</span>
    </div>
   </td>
  </tr>
@@ -231,7 +231,7 @@ $(document).ready(function(){initNavTree('ExtendedKalmanFilter_8h_source.html','
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160; </div>
 <div class="line"><a name="l00189"></a><span class="lineno"><a class="line" href="classfrc_1_1ExtendedKalmanFilter.html#ab69f563903cf4145571549f042355d46">  189</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1ExtendedKalmanFilter.html#ab69f563903cf4145571549f042355d46">SetXhat</a>(<span class="keyword">const</span> Eigen::Matrix&lt;double, States, 1&gt;&amp; xHat) { m_xHat = xHat; }</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160; </div>
-<div class="line"><a name="l00197"></a><span class="lineno"><a class="line" href="classfrc_1_1ExtendedKalmanFilter.html#a9446ab7a24735306b8a13326b711f8ef">  197</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1ExtendedKalmanFilter.html#a9446ab7a24735306b8a13326b711f8ef">SetXhat</a>(<span class="keywordtype">int</span> i, <span class="keywordtype">double</span> value) { m_xHat(i, 0) = value; }</div>
+<div class="line"><a name="l00197"></a><span class="lineno"><a class="line" href="classfrc_1_1ExtendedKalmanFilter.html#a9446ab7a24735306b8a13326b711f8ef">  197</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1ExtendedKalmanFilter.html#a9446ab7a24735306b8a13326b711f8ef">SetXhat</a>(<span class="keywordtype">int</span> i, <span class="keywordtype">double</span> <a class="code" href="classvalue.html">value</a>) { m_xHat(i, 0) = <a class="code" href="classvalue.html">value</a>; }</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160; </div>
 <div class="line"><a name="l00202"></a><span class="lineno"><a class="line" href="classfrc_1_1ExtendedKalmanFilter.html#a540f4ee08bced06de29e2267cf7cfe1d">  202</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1ExtendedKalmanFilter.html#a540f4ee08bced06de29e2267cf7cfe1d">Reset</a>() {</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    m_xHat.setZero();</div>
@@ -346,6 +346,7 @@ $(document).ready(function(){initNavTree('ExtendedKalmanFilter_8h_source.html','
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;}  <span class="comment">// namespace frc</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1099</div></div>
 <div class="ttc" id="aclassfrc_1_1ExtendedKalmanFilter_html_aaba4ddeffff8754437a04937df7f3e47"><div class="ttname"><a href="classfrc_1_1ExtendedKalmanFilter.html#aaba4ddeffff8754437a04937df7f3e47">frc::ExtendedKalmanFilter::P</a></div><div class="ttdeci">const Eigen::Matrix&lt; double, States, States &gt; &amp; P() const</div><div class="ttdoc">Returns the error covariance matrix P.</div><div class="ttdef"><b>Definition:</b> ExtendedKalmanFilter.h:155</div></div>
 <div class="ttc" id="aclassfrc_1_1ExtendedKalmanFilter_html_a7d6a8c672d26d8fbcc6598381947c823"><div class="ttname"><a href="classfrc_1_1ExtendedKalmanFilter.html#a7d6a8c672d26d8fbcc6598381947c823">frc::ExtendedKalmanFilter::SetP</a></div><div class="ttdeci">void SetP(const Eigen::Matrix&lt; double, States, States &gt; &amp;P)</div><div class="ttdoc">Set the current error covariance matrix P.</div><div class="ttdef"><b>Definition:</b> ExtendedKalmanFilter.h:170</div></div>
 <div class="ttc" id="aclassfrc_1_1ExtendedKalmanFilter_html_a9446ab7a24735306b8a13326b711f8ef"><div class="ttname"><a href="classfrc_1_1ExtendedKalmanFilter.html#a9446ab7a24735306b8a13326b711f8ef">frc::ExtendedKalmanFilter::SetXhat</a></div><div class="ttdeci">void SetXhat(int i, double value)</div><div class="ttdoc">Set an element of the initial state estimate x-hat.</div><div class="ttdef"><b>Definition:</b> ExtendedKalmanFilter.h:197</div></div>
@@ -368,7 +369,7 @@ $(document).ready(function(){initNavTree('ExtendedKalmanFilter_8h_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_7b4a0634315f7993a48b0e5d4ddcc644.html">estimator</a></li><li class="navelem"><b>ExtendedKalmanFilter.h</b></li>
-    <li class="footer">Generated on Sun May 23 2021 22:29:19 for WPILibC++ by
+    <li class="footer">Generated on Tue May 25 2021 07:01:38 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

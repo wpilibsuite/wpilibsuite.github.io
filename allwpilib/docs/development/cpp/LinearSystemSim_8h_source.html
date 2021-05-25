@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-60-g4426216</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-61-g87603e4</span>
    </div>
   </td>
  </tr>
@@ -150,8 +150,8 @@ $(document).ready(function(){initNavTree('LinearSystemSim_8h_source.html',''); i
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">   * @param row   The row in the input matrix to set.</span></div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">   * @param value The value to set the row to.</span></div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1sim_1_1LinearSystemSim.html#a13d0d53ad3b488a4774c5e694d15f017">SetInput</a>(<span class="keywordtype">int</span> row, <span class="keywordtype">double</span> value) {</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    m_u(row, 0) = value;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1sim_1_1LinearSystemSim.html#a13d0d53ad3b488a4774c5e694d15f017">SetInput</a>(<span class="keywordtype">int</span> row, <span class="keywordtype">double</span> <a class="code" href="classvalue.html">value</a>) {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    m_u(row, 0) = <a class="code" href="classvalue.html">value</a>;</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <a class="code" href="classfrc_1_1sim_1_1LinearSystemSim.html#af60a4c4de49cb7713d37488a84790ad1">ClampInput</a>(m_u);</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  }</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
@@ -184,6 +184,7 @@ $(document).ready(function(){initNavTree('LinearSystemSim_8h_source.html',''); i
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;}  <span class="comment">// namespace frc::sim</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1099</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1LinearSystemSim_html_a1ebbe7d917b6a01e401f364ddf2f7ea6"><div class="ttname"><a href="classfrc_1_1sim_1_1LinearSystemSim.html#a1ebbe7d917b6a01e401f364ddf2f7ea6">frc::sim::LinearSystemSim::GetOutput</a></div><div class="ttdeci">double GetOutput(int row) const</div><div class="ttdoc">Returns an element of the current output of the plant.</div><div class="ttdef"><b>Definition:</b> LinearSystemSim.h:80</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1LinearSystemSim_html_af60a4c4de49cb7713d37488a84790ad1"><div class="ttname"><a href="classfrc_1_1sim_1_1LinearSystemSim.html#af60a4c4de49cb7713d37488a84790ad1">frc::sim::LinearSystemSim::ClampInput</a></div><div class="ttdeci">Eigen::Matrix&lt; double, Inputs, 1 &gt; ClampInput(Eigen::Matrix&lt; double, Inputs, 1 &gt; u)</div><div class="ttdoc">Clamp the input vector such that no element exceeds the given voltage.</div><div class="ttdef"><b>Definition:</b> LinearSystemSim.h:140</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1LinearSystemSim_html_a524cd5f6d58620b66c137c3a2d96316d"><div class="ttname"><a href="classfrc_1_1sim_1_1LinearSystemSim.html#a524cd5f6d58620b66c137c3a2d96316d">frc::sim::LinearSystemSim::Update</a></div><div class="ttdeci">void Update(units::second_t dt)</div><div class="ttdoc">Updates the simulation.</div><div class="ttdef"><b>Definition:</b> LinearSystemSim.h:53</div></div>
@@ -200,7 +201,7 @@ $(document).ready(function(){initNavTree('LinearSystemSim_8h_source.html',''); i
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_297dc702852f645e4b9e531dac2da27d.html">simulation</a></li><li class="navelem"><b>LinearSystemSim.h</b></li>
-    <li class="footer">Generated on Sun May 23 2021 22:29:18 for WPILibC++ by
+    <li class="footer">Generated on Tue May 25 2021 07:01:38 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

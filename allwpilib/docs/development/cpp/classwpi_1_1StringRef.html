@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-60-g4426216</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-61-g87603e4</span>
    </div>
   </td>
  </tr>
@@ -203,7 +203,7 @@ LLVM_NODISCARD std::string&#160;</td><td class="memItemRight" valign="bottom"><a
 LLVM_NODISCARD char&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (size_t Index) const noexcept</td></tr>
 <tr class="separator:a78653d66f199c57593722f7dc64a8aab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91795d2d3202949289b358a701065c0d"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a91795d2d3202949289b358a701065c0d"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; std::is_same&lt; T, std::string &gt;::value, <a class="el" href="classwpi_1_1StringRef.html">StringRef</a> &gt;::type &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwpi_1_1StringRef.html#a91795d2d3202949289b358a701065c0d">operator=</a> (T &amp;&amp;Str)=delete</td></tr>
+<tr class="memitem:a91795d2d3202949289b358a701065c0d"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; std::is_same&lt; T, std::string &gt;::<a class="el" href="classvalue.html">value</a>, <a class="el" href="classwpi_1_1StringRef.html">StringRef</a> &gt;::type &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwpi_1_1StringRef.html#a91795d2d3202949289b358a701065c0d">operator=</a> (T &amp;&amp;Str)=delete</td></tr>
 <tr class="memdesc:a91795d2d3202949289b358a701065c0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disallow accidental assignment from a temporary std::string.  <a href="classwpi_1_1StringRef.html#a91795d2d3202949289b358a701065c0d">More...</a><br /></td></tr>
 <tr class="separator:a91795d2d3202949289b358a701065c0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Type Conversions</div></td></tr>
@@ -437,7 +437,7 @@ LLVM_ATTRIBUTE_ALWAYS_INLINE&#160;</td><td class="memItemRight" valign="bottom">
 <tr class="memdesc:ac3e783da3d8b6437588fdad7045751ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a string ref from a cstring. <br /></td></tr>
 <tr class="separator:ac3e783da3d8b6437588fdad7045751ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8cd7b5629008eb47fff52b243c3c315e"><td class="memItemLeft" align="right" valign="top"><a id="a8cd7b5629008eb47fff52b243c3c315e"></a>
-constexpr LLVM_ATTRIBUTE_ALWAYS_INLINE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1StringRef.html#a8cd7b5629008eb47fff52b243c3c315e">StringRef</a> (const char *<a class="el" href="classwpi_1_1StringRef.html#a3639987deb10240784a410a843c6df94">data</a>, size_t length) noexcept</td></tr>
+constexpr LLVM_ATTRIBUTE_ALWAYS_INLINE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1StringRef.html#a8cd7b5629008eb47fff52b243c3c315e">StringRef</a> (const char *<a class="el" href="structdata.html">data</a>, size_t length) noexcept</td></tr>
 <tr class="memdesc:a8cd7b5629008eb47fff52b243c3c315e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a string ref from a pointer and length. <br /></td></tr>
 <tr class="separator:a8cd7b5629008eb47fff52b243c3c315e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f46f66bc087e1c7a0e3c5e94b07eeeb"><td class="memItemLeft" align="right" valign="top"><a id="a4f46f66bc087e1c7a0e3c5e94b07eeeb"></a>
@@ -449,7 +449,7 @@ constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 <tr class="memdesc:a825aa8dceddcd2cd19a13bafb5f537e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a string ref from an std::string_view. <br /></td></tr>
 <tr class="separator:a825aa8dceddcd2cd19a13bafb5f537e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8df728fc5c667abfdbfd22e86c12d06c"><td class="memItemLeft" align="right" valign="top"><a id="a8df728fc5c667abfdbfd22e86c12d06c"></a>
-static <a class="el" href="classwpi_1_1StringRef.html">StringRef</a>&#160;</td><td class="memItemRight" valign="bottom"><b>withNullAsEmpty</b> (const char *<a class="el" href="classwpi_1_1StringRef.html#a3639987deb10240784a410a843c6df94">data</a>) noexcept</td></tr>
+static <a class="el" href="classwpi_1_1StringRef.html">StringRef</a>&#160;</td><td class="memItemRight" valign="bottom"><b>withNullAsEmpty</b> (const char *<a class="el" href="structdata.html">data</a>) noexcept</td></tr>
 <tr class="separator:a8df728fc5c667abfdbfd22e86c12d06c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -1012,7 +1012,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::enable_if&lt;std::is_same&lt;T, std::string&gt;::value, <a class="el" href="classwpi_1_1StringRef.html">StringRef</a>&gt;::type&amp; wpi::StringRef::operator= </td>
+          <td class="memname">std::enable_if&lt;std::is_same&lt;T, std::string&gt;::<a class="el" href="classvalue.html">value</a>, <a class="el" href="classwpi_1_1StringRef.html">StringRef</a>&gt;::type&amp; wpi::StringRef::operator= </td>
           <td>(</td>
           <td class="paramtype">T &amp;&amp;&#160;</td>
           <td class="paramname"><em>Str</em></td><td>)</td>
@@ -1572,7 +1572,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>wpi</b></li><li class="navelem"><a class="el" href="classwpi_1_1StringRef.html">StringRef</a></li>
-    <li class="footer">Generated on Sun May 23 2021 22:29:23 for WPILibC++ by
+    <li class="footer">Generated on Tue May 25 2021 07:01:43 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

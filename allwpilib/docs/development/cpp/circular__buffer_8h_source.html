@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-60-g4426216</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-61-g87603e4</span>
    </div>
   </td>
  </tr>
@@ -122,8 +122,8 @@ $(document).ready(function(){initNavTree('circular__buffer_8h_source.html',''); 
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">const</span> T&amp; <a class="code" href="classwpi_1_1circular__buffer.html#abda85c941a0b8a62874b2f9e79128a71">front</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  T&amp; <a class="code" href="classwpi_1_1circular__buffer.html#afd0e871164181d932e7342f43f27b78b">back</a>();</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keyword">const</span> T&amp; <a class="code" href="classwpi_1_1circular__buffer.html#afd0e871164181d932e7342f43f27b78b">back</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classwpi_1_1circular__buffer.html#a470f72da7a1ebb701a2ab01761ae123b">push_front</a>(T value);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classwpi_1_1circular__buffer.html#a6ed2fcb399f26320c6664d213cf63673">push_back</a>(T value);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classwpi_1_1circular__buffer.html#a470f72da7a1ebb701a2ab01761ae123b">push_front</a>(T <a class="code" href="classvalue.html">value</a>);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classwpi_1_1circular__buffer.html#a6ed2fcb399f26320c6664d213cf63673">push_back</a>(T <a class="code" href="classvalue.html">value</a>);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  T <a class="code" href="classwpi_1_1circular__buffer.html#aa7a7a700f9c21d2a905aad06e8b1133c">pop_front</a>();</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  T <a class="code" href="classwpi_1_1circular__buffer.html#a1795c45ce45b57eaa07b73d6486c2de5">pop_back</a>();</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classwpi_1_1circular__buffer.html#a5afedb8d7f5559375567157f3279044e">resize</a>(<span class="keywordtype">size_t</span> <a class="code" href="classwpi_1_1circular__buffer.html#afbfdaef0c786bf24109f69c0e7737980">size</a>);</div>
@@ -153,6 +153,7 @@ $(document).ready(function(){initNavTree('circular__buffer_8h_source.html',''); 
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclasswpi_1_1circular__buffer_html_a46397d4b70a1f33d1e5df731535b5310"><div class="ttname"><a href="classwpi_1_1circular__buffer.html#a46397d4b70a1f33d1e5df731535b5310">wpi::circular_buffer::operator[]</a></div><div class="ttdeci">T &amp; operator[](size_t index)</div><div class="ttdef"><b>Definition:</b> circular_buffer.inc:202</div></div>
+<div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1099</div></div>
 <div class="ttc" id="aclasswpi_1_1circular__buffer_html_aa7a7a700f9c21d2a905aad06e8b1133c"><div class="ttname"><a href="classwpi_1_1circular__buffer.html#aa7a7a700f9c21d2a905aad06e8b1133c">wpi::circular_buffer::pop_front</a></div><div class="ttdeci">T pop_front()</div><div class="ttdoc">Pop value at front of buffer.</div><div class="ttdef"><b>Definition:</b> circular_buffer.inc:109</div></div>
 <div class="ttc" id="aclasswpi_1_1circular__buffer_html_abda85c941a0b8a62874b2f9e79128a71"><div class="ttname"><a href="classwpi_1_1circular__buffer.html#abda85c941a0b8a62874b2f9e79128a71">wpi::circular_buffer::front</a></div><div class="ttdeci">T &amp; front()</div><div class="ttdoc">Returns value at front of buffer.</div><div class="ttdef"><b>Definition:</b> circular_buffer.inc:28</div></div>
 <div class="ttc" id="aclasswpi_1_1circular__buffer_html_a470f72da7a1ebb701a2ab01761ae123b"><div class="ttname"><a href="classwpi_1_1circular__buffer.html#a470f72da7a1ebb701a2ab01761ae123b">wpi::circular_buffer::push_front</a></div><div class="ttdeci">void push_front(T value)</div><div class="ttdoc">Push new value onto front of the buffer.</div><div class="ttdef"><b>Definition:</b> circular_buffer.inc:71</div></div>
@@ -167,7 +168,7 @@ $(document).ready(function(){initNavTree('circular__buffer_8h_source.html',''); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><b>circular_buffer.h</b></li>
-    <li class="footer">Generated on Sun May 23 2021 22:29:19 for WPILibC++ by
+    <li class="footer">Generated on Tue May 25 2021 07:01:39 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

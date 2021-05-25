@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-60-g4426216</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-61-g87603e4</span>
    </div>
   </td>
  </tr>
@@ -127,8 +127,8 @@ $(document).ready(function(){initNavTree('SlewRateLimiter_8h_source.html',''); i
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">return</span> m_prevVal;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  }</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="classfrc_1_1SlewRateLimiter.html#af6e94a2447bc3271a5d3e7d2719cafe1">   63</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1SlewRateLimiter.html#af6e94a2447bc3271a5d3e7d2719cafe1">Reset</a>(Unit_t value) {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    m_prevVal = value;</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="classfrc_1_1SlewRateLimiter.html#af6e94a2447bc3271a5d3e7d2719cafe1">   63</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1SlewRateLimiter.html#af6e94a2447bc3271a5d3e7d2719cafe1">Reset</a>(Unit_t <a class="code" href="classvalue.html">value</a>) {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    m_prevVal = <a class="code" href="classvalue.html">value</a>;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    m_prevTime = <a class="code" href="classfrc2_1_1Timer.html#afe535587db8c1d9d8b3f03703a13282b">frc2::Timer::GetFPGATimestamp</a>();</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  }</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
@@ -142,6 +142,7 @@ $(document).ready(function(){initNavTree('SlewRateLimiter_8h_source.html',''); i
 </div><!-- doc-content -->
 <div class="ttc" id="aclassfrc_1_1SlewRateLimiter_html_aa45ac37263b44cc58f71184402ab6154"><div class="ttname"><a href="classfrc_1_1SlewRateLimiter.html#aa45ac37263b44cc58f71184402ab6154">frc::SlewRateLimiter::Calculate</a></div><div class="ttdeci">Unit_t Calculate(Unit_t input)</div><div class="ttdoc">Filters the input to limit its slew rate.</div><div class="ttdef"><b>Definition:</b> SlewRateLimiter.h:48</div></div>
 <div class="ttc" id="aclassfrc2_1_1Timer_html_afe535587db8c1d9d8b3f03703a13282b"><div class="ttname"><a href="classfrc2_1_1Timer.html#afe535587db8c1d9d8b3f03703a13282b">frc2::Timer::GetFPGATimestamp</a></div><div class="ttdeci">static units::second_t GetFPGATimestamp()</div><div class="ttdoc">Return the FPGA system clock time in seconds.</div></div>
+<div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1099</div></div>
 <div class="ttc" id="aclassfrc_1_1SlewRateLimiter_html"><div class="ttname"><a href="classfrc_1_1SlewRateLimiter.html">frc::SlewRateLimiter</a></div><div class="ttdoc">A class that limits the rate of change of an input value.</div><div class="ttdef"><b>Definition:</b> SlewRateLimiter.h:24</div></div>
 <div class="ttc" id="aclassfrc_1_1SlewRateLimiter_html_a054f9154117bba2fccfa2d8c086b2114"><div class="ttname"><a href="classfrc_1_1SlewRateLimiter.html#a054f9154117bba2fccfa2d8c086b2114">frc::SlewRateLimiter::SlewRateLimiter</a></div><div class="ttdeci">SlewRateLimiter(Rate_t rateLimit, Unit_t initialValue=Unit_t{0})</div><div class="ttdoc">Creates a new SlewRateLimiter with the given rate limit and initial value.</div><div class="ttdef"><b>Definition:</b> SlewRateLimiter.h:36</div></div>
 <div class="ttc" id="aclassfrc_1_1SlewRateLimiter_html_af6e94a2447bc3271a5d3e7d2719cafe1"><div class="ttname"><a href="classfrc_1_1SlewRateLimiter.html#af6e94a2447bc3271a5d3e7d2719cafe1">frc::SlewRateLimiter::Reset</a></div><div class="ttdeci">void Reset(Unit_t value)</div><div class="ttdoc">Resets the slew rate limiter to the specified value; ignores the rate limit when doing so.</div><div class="ttdef"><b>Definition:</b> SlewRateLimiter.h:63</div></div>
@@ -150,7 +151,7 @@ $(document).ready(function(){initNavTree('SlewRateLimiter_8h_source.html',''); i
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><b>SlewRateLimiter.h</b></li>
-    <li class="footer">Generated on Sun May 23 2021 22:29:18 for WPILibC++ by
+    <li class="footer">Generated on Tue May 25 2021 07:01:38 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

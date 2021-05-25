@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-60-g4426216</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-61-g87603e4</span>
    </div>
   </td>
  </tr>
@@ -119,7 +119,7 @@ $(document).ready(function(){initNavTree('SendableBuilder_8h_source.html',''); i
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
 <div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classfrc_1_1SendableBuilder.html#a86559e9838c5cbcacf71f318599e3e15">   31</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1SendableBuilder.html#a86559e9838c5cbcacf71f318599e3e15">SetSmartDashboardType</a>(<span class="keyword">const</span> <a class="code" href="classwpi_1_1Twine.html">wpi::Twine</a>&amp; type) = 0;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classfrc_1_1SendableBuilder.html#a73684684f4790e1da38d0e3062a8aa48">   39</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1SendableBuilder.html#a73684684f4790e1da38d0e3062a8aa48">SetActuator</a>(<span class="keywordtype">bool</span> value) = 0;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classfrc_1_1SendableBuilder.html#a73684684f4790e1da38d0e3062a8aa48">   39</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1SendableBuilder.html#a73684684f4790e1da38d0e3062a8aa48">SetActuator</a>(<span class="keywordtype">bool</span> <a class="code" href="classvalue.html">value</a>) = 0;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classfrc_1_1SendableBuilder.html#a152abd4f0c5cf462161c0d14ed2d75df">   47</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1SendableBuilder.html#a152abd4f0c5cf462161c0d14ed2d75df">SetSafeState</a>(std::function&lt;<span class="keywordtype">void</span>()&gt; func) = 0;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
@@ -195,6 +195,7 @@ $(document).ready(function(){initNavTree('SendableBuilder_8h_source.html',''); i
 </div><!-- doc-content -->
 <div class="ttc" id="aclassfrc_1_1SendableBuilder_html_a0ab9abdf2cae31c53d7aab3416ab8437"><div class="ttname"><a href="classfrc_1_1SendableBuilder.html#a0ab9abdf2cae31c53d7aab3416ab8437">frc::SendableBuilder::AddSmallStringProperty</a></div><div class="ttdeci">virtual void AddSmallStringProperty(const wpi::Twine &amp;key, std::function&lt; wpi::StringRef(wpi::SmallVectorImpl&lt; char &gt; &amp;buf)&gt; getter, std::function&lt; void(wpi::StringRef)&gt; setter)=0</div><div class="ttdoc">Add a string property (SmallString form).</div></div>
 <div class="ttc" id="aclassfrc_1_1SendableBuilder_html_a2c3226c696e81cd3db71cf8e2eed27a6"><div class="ttname"><a href="classfrc_1_1SendableBuilder.html#a2c3226c696e81cd3db71cf8e2eed27a6">frc::SendableBuilder::AddDoubleArrayProperty</a></div><div class="ttdeci">virtual void AddDoubleArrayProperty(const wpi::Twine &amp;key, std::function&lt; std::vector&lt; double &gt;()&gt; getter, std::function&lt; void(wpi::ArrayRef&lt; double &gt;)&gt; setter)=0</div><div class="ttdoc">Add a double array property.</div></div>
+<div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1099</div></div>
 <div class="ttc" id="aclasswpi_1_1ArrayRef_html"><div class="ttname"><a href="classwpi_1_1ArrayRef.html">wpi::ArrayRef</a></div><div class="ttdoc">ArrayRef - Represent a constant reference to an array (0 or more elements consecutively in memory),...</div><div class="ttdef"><b>Definition:</b> ArrayRef.h:46</div></div>
 <div class="ttc" id="aclasswpi_1_1SmallVectorImpl_html"><div class="ttname"><a href="classwpi_1_1SmallVectorImpl.html">wpi::SmallVectorImpl&lt; char &gt;</a></div></div>
 <div class="ttc" id="aclassfrc_1_1SendableBuilder_html_a6a373d909c217111b1d3678e2134536b"><div class="ttname"><a href="classfrc_1_1SendableBuilder.html#a6a373d909c217111b1d3678e2134536b">frc::SendableBuilder::SetUpdateTable</a></div><div class="ttdeci">virtual void SetUpdateTable(std::function&lt; void()&gt; func)=0</div><div class="ttdoc">Set the function that should be called to update the network table for things other than properties.</div></div>
@@ -223,7 +224,7 @@ $(document).ready(function(){initNavTree('SendableBuilder_8h_source.html',''); i
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_b02f085c5688c41df73c48b2d64de380.html">smartdashboard</a></li><li class="navelem"><b>SendableBuilder.h</b></li>
-    <li class="footer">Generated on Sun May 23 2021 22:29:18 for WPILibC++ by
+    <li class="footer">Generated on Tue May 25 2021 07:01:38 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

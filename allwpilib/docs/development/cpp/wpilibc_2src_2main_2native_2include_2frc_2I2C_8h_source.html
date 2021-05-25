@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-60-g4426216</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-61-g87603e4</span>
    </div>
   </td>
  </tr>
@@ -121,13 +121,13 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
 <div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classfrc_1_1I2C.html#ae4f7bf1a00834ba2bb85a692163b75b5">   61</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1I2C.html#ae4f7bf1a00834ba2bb85a692163b75b5">AddressOnly</a>();</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classfrc_1_1I2C.html#a54c2730bd878a99cae26727441a6d17e">   74</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1I2C.html#a54c2730bd878a99cae26727441a6d17e">Write</a>(<span class="keywordtype">int</span> registerAddress, uint8_t data);</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classfrc_1_1I2C.html#a54c2730bd878a99cae26727441a6d17e">   74</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1I2C.html#a54c2730bd878a99cae26727441a6d17e">Write</a>(<span class="keywordtype">int</span> registerAddress, uint8_t <a class="code" href="structdata.html">data</a>);</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="classfrc_1_1I2C.html#a7bf3e1e54d085d3ef207d29c59701035">   86</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1I2C.html#a7bf3e1e54d085d3ef207d29c59701035">WriteBulk</a>(uint8_t* data, <span class="keywordtype">int</span> count);</div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="classfrc_1_1I2C.html#a7bf3e1e54d085d3ef207d29c59701035">   86</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1I2C.html#a7bf3e1e54d085d3ef207d29c59701035">WriteBulk</a>(uint8_t* <a class="code" href="structdata.html">data</a>, <span class="keywordtype">int</span> count);</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="classfrc_1_1I2C.html#a329494a29c39976524e6414575515718">  102</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1I2C.html#a329494a29c39976524e6414575515718">Read</a>(<span class="keywordtype">int</span> registerAddress, <span class="keywordtype">int</span> count, uint8_t* data);</div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="classfrc_1_1I2C.html#a329494a29c39976524e6414575515718">  102</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1I2C.html#a329494a29c39976524e6414575515718">Read</a>(<span class="keywordtype">int</span> registerAddress, <span class="keywordtype">int</span> count, uint8_t* <a class="code" href="structdata.html">data</a>);</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="classfrc_1_1I2C.html#a3471fcb05700376340aeca8f6dc7e749">  115</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1I2C.html#a3471fcb05700376340aeca8f6dc7e749">ReadOnly</a>(<span class="keywordtype">int</span> count, uint8_t* buffer);</div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="classfrc_1_1I2C.html#a3471fcb05700376340aeca8f6dc7e749">  115</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1I2C.html#a3471fcb05700376340aeca8f6dc7e749">ReadOnly</a>(<span class="keywordtype">int</span> count, uint8_t* <a class="code" href="classbuffer.html">buffer</a>);</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
 <div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="classfrc_1_1I2C.html#aaad90350d03e2698b3db3c5f8c0108a5">  132</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1I2C.html#aaad90350d03e2698b3db3c5f8c0108a5">VerifySensor</a>(<span class="keywordtype">int</span> registerAddress, <span class="keywordtype">int</span> count, <span class="keyword">const</span> uint8_t* expected);</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
@@ -139,8 +139,10 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;}  <span class="comment">// namespace frc</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="astructdata_html"><div class="ttname"><a href="structdata.html">data</a></div><div class="ttdef"><b>Definition:</b> format.h:917</div></div>
 <div class="ttc" id="aclassfrc_1_1I2C_html_a54c2730bd878a99cae26727441a6d17e"><div class="ttname"><a href="classfrc_1_1I2C.html#a54c2730bd878a99cae26727441a6d17e">frc::I2C::Write</a></div><div class="ttdeci">bool Write(int registerAddress, uint8_t data)</div><div class="ttdoc">Execute a write transaction with the device.</div></div>
 <div class="ttc" id="aclassfrc_1_1I2C_html_a45b2f81ac07ed672b651ae0540a4d708"><div class="ttname"><a href="classfrc_1_1I2C.html#a45b2f81ac07ed672b651ae0540a4d708">frc::I2C::Transaction</a></div><div class="ttdeci">bool Transaction(uint8_t *dataToSend, int sendSize, uint8_t *dataReceived, int receiveSize)</div><div class="ttdoc">Generic transaction.</div></div>
+<div class="ttc" id="aclassbuffer_html"><div class="ttname"><a href="classbuffer.html">buffer</a></div><div class="ttdoc">\rst A contiguous memory buffer with an optional growing ability.</div><div class="ttdef"><b>Definition:</b> core.h:732</div></div>
 <div class="ttc" id="aclassfrc_1_1I2C_html_a3471fcb05700376340aeca8f6dc7e749"><div class="ttname"><a href="classfrc_1_1I2C.html#a3471fcb05700376340aeca8f6dc7e749">frc::I2C::ReadOnly</a></div><div class="ttdeci">bool ReadOnly(int count, uint8_t *buffer)</div><div class="ttdoc">Execute a read only transaction with the device.</div></div>
 <div class="ttc" id="aclassfrc_1_1I2C_html_a329494a29c39976524e6414575515718"><div class="ttname"><a href="classfrc_1_1I2C.html#a329494a29c39976524e6414575515718">frc::I2C::Read</a></div><div class="ttdeci">bool Read(int registerAddress, int count, uint8_t *data)</div><div class="ttdoc">Execute a read transaction with the device.</div></div>
 <div class="ttc" id="aclassfrc_1_1I2C_html_a30f1cc701e7d7a800d5768a7aed15390"><div class="ttname"><a href="classfrc_1_1I2C.html#a30f1cc701e7d7a800d5768a7aed15390">frc::I2C::I2C</a></div><div class="ttdeci">I2C(Port port, int deviceAddress)</div><div class="ttdoc">Constructor.</div></div>
@@ -153,7 +155,7 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><b>I2C.h</b></li>
-    <li class="footer">Generated on Sun May 23 2021 22:29:18 for WPILibC++ by
+    <li class="footer">Generated on Tue May 25 2021 07:01:37 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

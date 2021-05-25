@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-60-g4426216</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-61-g87603e4</span>
    </div>
   </td>
  </tr>
@@ -181,9 +181,9 @@ $(document).ready(function(){initNavTree('DMASample_8h_source.html',''); initRes
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  }</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordtype">void</span> GetAnalogAccumulator(<span class="keyword">const</span> <a class="code" href="classfrc_1_1AnalogInput.html">AnalogInput</a>* analogInput, int64_t* count,</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                            int64_t* value, int32_t* status)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                            int64_t* <a class="code" href="classvalue.html">value</a>, int32_t* status)<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">return</span> HAL_GetDMASampleAnalogAccumulator(<span class="keyword">this</span>, analogInput-&gt;m_port, count,</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                                             value, status);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                                             <a class="code" href="classvalue.html">value</a>, status);</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  }</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  int32_t GetDutyCycleOutputRaw(<span class="keyword">const</span> <a class="code" href="classfrc_1_1DutyCycle.html">DutyCycle</a>* dutyCycle,</div>
@@ -207,6 +207,7 @@ $(document).ready(function(){initNavTree('DMASample_8h_source.html',''); initRes
 <div class="ttc" id="aclassfrc_1_1DutyCycle_html_ac5de1c5bd282d9f9d3b802a2cfb2b115"><div class="ttname"><a href="classfrc_1_1DutyCycle.html#ac5de1c5bd282d9f9d3b802a2cfb2b115">frc::DutyCycle::GetOutputScaleFactor</a></div><div class="ttdeci">unsigned int GetOutputScaleFactor() const</div><div class="ttdoc">Get the scale factor of the output.</div></div>
 <div class="ttc" id="aclassfrc_1_1Encoder_html_af22ed59784d03a7d3abb4b94ea0df0f9"><div class="ttname"><a href="classfrc_1_1Encoder.html#af22ed59784d03a7d3abb4b94ea0df0f9">frc::Encoder::GetDistancePerPulse</a></div><div class="ttdeci">double GetDistancePerPulse() const</div><div class="ttdoc">Get the distance per pulse for this encoder.</div></div>
 <div class="ttc" id="aclassfrc_1_1DMASample_html"><div class="ttname"><a href="classfrc_1_1DMASample.html">frc::DMASample</a></div><div class="ttdef"><b>Definition:</b> DMASample.h:20</div></div>
+<div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1099</div></div>
 <div class="ttc" id="astructHAL__DMASample_html"><div class="ttname"><a href="structHAL__DMASample.html">HAL_DMASample</a></div><div class="ttdef"><b>Definition:</b> DMA.h:23</div></div>
 <div class="ttc" id="aclassfrc_1_1DutyCycle_html"><div class="ttname"><a href="classfrc_1_1DutyCycle.html">frc::DutyCycle</a></div><div class="ttdoc">Class to read a duty cycle PWM input.</div><div class="ttdef"><b>Definition:</b> DutyCycle.h:31</div></div>
 <div class="ttc" id="aclassfrc_1_1Encoder_html"><div class="ttname"><a href="classfrc_1_1Encoder.html">frc::Encoder</a></div><div class="ttdoc">Class to read quad encoders.</div><div class="ttdef"><b>Definition:</b> Encoder.h:41</div></div>
@@ -219,7 +220,7 @@ $(document).ready(function(){initNavTree('DMASample_8h_source.html',''); initRes
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><b>DMASample.h</b></li>
-    <li class="footer">Generated on Sun May 23 2021 22:29:18 for WPILibC++ by
+    <li class="footer">Generated on Tue May 25 2021 07:01:38 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

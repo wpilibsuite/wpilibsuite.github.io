@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['handleerrors_7903',['handleErrors',['../classwpi_1_1Error.html#a2c831eabfe62504c9cc0cc16e0799c44',1,'wpi::Error::handleErrors()'],['../classwpi_1_1ErrorList.html#a2c831eabfe62504c9cc0cc16e0799c44',1,'wpi::ErrorList::handleErrors()']]],
-  ['hash_5fvalue_7904',['hash_value',['../classwpi_1_1hash__code.html#a3bae3ed52c5efcdd61eea5789ba14a9c',1,'wpi::hash_code']]]
+  ['fg_8357',['fg',['../classtext__style.html#a997e6e620a49e3f2a459f74249305136',1,'text_style']]]
 ];

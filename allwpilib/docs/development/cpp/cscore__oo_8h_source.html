@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-60-g4426216</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-61-g87603e4</span>
    </div>
   </td>
  </tr>
@@ -145,7 +145,7 @@ $(document).ready(function(){initNavTree('cscore__oo_8h_source.html',''); initRe
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordtype">bool</span> IsEnum()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_kind == kEnum; }</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">int</span> Get() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">void</span> Set(<span class="keywordtype">int</span> value);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">void</span> Set(<span class="keywordtype">int</span> <a class="code" href="classvalue.html">value</a>);</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">int</span> GetMin() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">int</span> GetMax() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">int</span> GetStep() <span class="keyword">const</span>;</div>
@@ -154,7 +154,7 @@ $(document).ready(function(){initNavTree('cscore__oo_8h_source.html',''); initRe
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="comment">// String-specific functions</span></div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  std::string GetString() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <a class="code" href="classwpi_1_1StringRef.html">wpi::StringRef</a> GetString(<a class="code" href="classwpi_1_1SmallVectorImpl.html">wpi::SmallVectorImpl&lt;char&gt;</a>&amp; buf) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">void</span> SetString(<span class="keyword">const</span> <a class="code" href="classwpi_1_1Twine.html">wpi::Twine</a>&amp; value);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">void</span> SetString(<span class="keyword">const</span> <a class="code" href="classwpi_1_1Twine.html">wpi::Twine</a>&amp; <a class="code" href="classvalue.html">value</a>);</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="comment">// Enum-specific functions</span></div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  std::vector&lt;std::string&gt; GetChoices() <span class="keyword">const</span>;</div>
@@ -290,13 +290,13 @@ $(document).ready(function(){initNavTree('cscore__oo_8h_source.html',''); initRe
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160; </div>
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classcs_1_1VideoCamera.html#ad23d645013813023e3f44bd74181c730">SetWhiteBalanceHoldCurrent</a>();</div>
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160; </div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classcs_1_1VideoCamera.html#a5aac3d58106609080305cad5dd7c7c1e">SetWhiteBalanceManual</a>(<span class="keywordtype">int</span> value);</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classcs_1_1VideoCamera.html#a5aac3d58106609080305cad5dd7c7c1e">SetWhiteBalanceManual</a>(<span class="keywordtype">int</span> <a class="code" href="classvalue.html">value</a>);</div>
 <div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160; </div>
 <div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classcs_1_1VideoCamera.html#a5a7a683e022b3e9023f851f58884e00d">SetExposureAuto</a>();</div>
 <div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160; </div>
 <div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classcs_1_1VideoCamera.html#afa2914d97d62a5efcdf47ef365fabf8b">SetExposureHoldCurrent</a>();</div>
 <div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160; </div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classcs_1_1VideoCamera.html#ae20cf9ed652f3002e3d8bbde3780467b">SetExposureManual</a>(<span class="keywordtype">int</span> value);</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classcs_1_1VideoCamera.html#ae20cf9ed652f3002e3d8bbde3780467b">SetExposureManual</a>(<span class="keywordtype">int</span> <a class="code" href="classvalue.html">value</a>);</div>
 <div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160; </div>
 <div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160; <span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classcs_1_1VideoCamera.html">VideoCamera</a>(CS_Source handle) : <a class="code" href="classcs_1_1VideoSource.html">VideoSource</a>(handle) {}</div>
@@ -390,17 +390,17 @@ $(document).ready(function(){initNavTree('cscore__oo_8h_source.html',''); initRe
 <div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160; </div>
 <div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;  <a class="code" href="classcs_1_1VideoProperty.html">VideoProperty</a> <a class="code" href="classcs_1_1ImageSource.html#a1d47e1a399bc25aa3b8ed8443c098f45">CreateProperty</a>(<span class="keyword">const</span> <a class="code" href="classwpi_1_1Twine.html">wpi::Twine</a>&amp; name, VideoProperty::Kind kind,</div>
 <div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;                               <span class="keywordtype">int</span> minimum, <span class="keywordtype">int</span> maximum, <span class="keywordtype">int</span> step,</div>
-<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;                               <span class="keywordtype">int</span> defaultValue, <span class="keywordtype">int</span> value);</div>
+<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;                               <span class="keywordtype">int</span> defaultValue, <span class="keywordtype">int</span> <a class="code" href="classvalue.html">value</a>);</div>
 <div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160; </div>
 <div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;  <a class="code" href="classcs_1_1VideoProperty.html">VideoProperty</a> <a class="code" href="classcs_1_1ImageSource.html#a8093f70132c20bd479b21166bd09d950">CreateIntegerProperty</a>(<span class="keyword">const</span> <a class="code" href="classwpi_1_1Twine.html">wpi::Twine</a>&amp; name, <span class="keywordtype">int</span> minimum,</div>
 <div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;                                      <span class="keywordtype">int</span> maximum, <span class="keywordtype">int</span> step, <span class="keywordtype">int</span> defaultValue,</div>
-<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;                                      <span class="keywordtype">int</span> value);</div>
+<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;                                      <span class="keywordtype">int</span> <a class="code" href="classvalue.html">value</a>);</div>
 <div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160; </div>
 <div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;  <a class="code" href="classcs_1_1VideoProperty.html">VideoProperty</a> <a class="code" href="classcs_1_1ImageSource.html#ab4b35b770a70c21ff166b21218f1b985">CreateBooleanProperty</a>(<span class="keyword">const</span> <a class="code" href="classwpi_1_1Twine.html">wpi::Twine</a>&amp; name, <span class="keywordtype">bool</span> defaultValue,</div>
-<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;                                      <span class="keywordtype">bool</span> value);</div>
+<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;                                      <span class="keywordtype">bool</span> <a class="code" href="classvalue.html">value</a>);</div>
 <div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160; </div>
 <div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;  <a class="code" href="classcs_1_1VideoProperty.html">VideoProperty</a> <a class="code" href="classcs_1_1ImageSource.html#a4931c24b6877a1abb68097e5e43a8b24">CreateStringProperty</a>(<span class="keyword">const</span> <a class="code" href="classwpi_1_1Twine.html">wpi::Twine</a>&amp; name,</div>
-<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;                                     <span class="keyword">const</span> <a class="code" href="classwpi_1_1Twine.html">wpi::Twine</a>&amp; value);</div>
+<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;                                     <span class="keyword">const</span> <a class="code" href="classwpi_1_1Twine.html">wpi::Twine</a>&amp; <a class="code" href="classvalue.html">value</a>);</div>
 <div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160; </div>
 <div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classcs_1_1ImageSource.html#a2427d4f728dc77a3b9841876ba420216">SetEnumPropertyChoices</a>(<span class="keyword">const</span> <a class="code" href="classcs_1_1VideoProperty.html">VideoProperty</a>&amp; property,</div>
 <div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;                              <a class="code" href="classwpi_1_1ArrayRef.html">wpi::ArrayRef&lt;std::string&gt;</a> choices);</div>
@@ -567,6 +567,7 @@ $(document).ready(function(){initNavTree('cscore__oo_8h_source.html',''); initRe
 <div class="ttc" id="aclasscs_1_1UsbCamera_html_a9ecd3cb839b0f37d56ae7a35cd3de3be"><div class="ttname"><a href="classcs_1_1UsbCamera.html#a9ecd3cb839b0f37d56ae7a35cd3de3be">cs::UsbCamera::SetConnectVerbose</a></div><div class="ttdeci">void SetConnectVerbose(int level)</div><div class="ttdoc">Set how verbose the camera connection messages are.</div><div class="ttdef"><b>Definition:</b> cscore_oo.inl:279</div></div>
 <div class="ttc" id="aclasscs_1_1VideoSource_html_a0922874898b48dd58fd2443300357170"><div class="ttname"><a href="classcs_1_1VideoSource.html#a0922874898b48dd58fd2443300357170">cs::VideoSource::GetActualDataRate</a></div><div class="ttdeci">double GetActualDataRate() const</div><div class="ttdoc">Get the data rate (in bytes per second).</div><div class="ttdef"><b>Definition:</b> cscore_oo.inl:200</div></div>
 <div class="ttc" id="aclasscs_1_1VideoSource_html_adb14ba73eb7513ae0ad1e44a7993a1f1"><div class="ttname"><a href="classcs_1_1VideoSource.html#adb14ba73eb7513ae0ad1e44a7993a1f1">cs::VideoSource::GetConfigJson</a></div><div class="ttdeci">std::string GetConfigJson() const</div><div class="ttdoc">Get a JSON configuration string.</div><div class="ttdef"><b>Definition:</b> cscore_oo.inl:189</div></div>
+<div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1099</div></div>
 <div class="ttc" id="astructcs_1_1RawEvent_html"><div class="ttname"><a href="structcs_1_1RawEvent.html">cs::RawEvent</a></div><div class="ttdoc">Listener event.</div><div class="ttdef"><b>Definition:</b> cscore_cpp.h:99</div></div>
 <div class="ttc" id="aclasscs_1_1UsbCamera_html"><div class="ttname"><a href="classcs_1_1UsbCamera.html">cs::UsbCamera</a></div><div class="ttdoc">A source that represents a USB camera.</div><div class="ttdef"><b>Definition:</b> cscore_oo.h:417</div></div>
 <div class="ttc" id="aclasscs_1_1VideoSource_html_aa081f30679fe583cf56465cca0782070"><div class="ttname"><a href="classcs_1_1VideoSource.html#aa081f30679fe583cf56465cca0782070">cs::VideoSource::GetConfigJsonObject</a></div><div class="ttdeci">wpi::json GetConfigJsonObject() const</div><div class="ttdoc">Get a JSON configuration object.</div></div>
@@ -655,7 +656,7 @@ $(document).ready(function(){initNavTree('cscore__oo_8h_source.html',''); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>cscore_oo.h</b></li>
-    <li class="footer">Generated on Sun May 23 2021 22:29:18 for WPILibC++ by
+    <li class="footer">Generated on Tue May 25 2021 07:01:37 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

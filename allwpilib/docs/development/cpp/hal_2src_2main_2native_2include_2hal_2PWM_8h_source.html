@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-60-g4426216</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-61-g87603e4</span>
    </div>
   </td>
  </tr>
@@ -135,7 +135,7 @@ $(document).ready(function(){initNavTree('hal_2src_2main_2native_2include_2hal_2
 <div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="group__hal__pwm.html#gaddbb9336957cd263eec26ffdded00aba">  118</a></span>&#160;HAL_Bool <a class="code" href="group__hal__pwm.html#gaddbb9336957cd263eec26ffdded00aba">HAL_GetPWMEliminateDeadband</a>(HAL_DigitalHandle pwmPortHandle,</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                                     int32_t* status);</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
-<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="group__hal__pwm.html#ga492c89bd51e02164ffe4359a1715e6ca">  130</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__pwm.html#ga492c89bd51e02164ffe4359a1715e6ca">HAL_SetPWMRaw</a>(HAL_DigitalHandle pwmPortHandle, int32_t value,</div>
+<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="group__hal__pwm.html#ga492c89bd51e02164ffe4359a1715e6ca">  130</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__pwm.html#ga492c89bd51e02164ffe4359a1715e6ca">HAL_SetPWMRaw</a>(HAL_DigitalHandle pwmPortHandle, int32_t <a class="code" href="classvalue.html">value</a>,</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                   int32_t* status);</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
 <div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="group__hal__pwm.html#ga05367c5cdfc35e8b78700ce0a8ce8661">  142</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__pwm.html#ga05367c5cdfc35e8b78700ce0a8ce8661">HAL_SetPWMSpeed</a>(HAL_DigitalHandle pwmPortHandle, <span class="keywordtype">double</span> speed,</div>
@@ -170,6 +170,7 @@ $(document).ready(function(){initNavTree('hal_2src_2main_2native_2include_2hal_2
 <div class="ttc" id="agroup__hal__pwm_html_gabc14e1d74c60212d1da9aaf5b7cbc9a9"><div class="ttname"><a href="group__hal__pwm.html#gabc14e1d74c60212d1da9aaf5b7cbc9a9">HAL_InitializePWMPort</a></div><div class="ttdeci">HAL_DigitalHandle HAL_InitializePWMPort(HAL_PortHandle portHandle, const char *allocationLocation, int32_t *status)</div><div class="ttdoc">Initializes a PWM port.</div></div>
 <div class="ttc" id="agroup__hal__pwm_html_ga4163ee052cdf05d522eaa449e2f281b2"><div class="ttname"><a href="group__hal__pwm.html#ga4163ee052cdf05d522eaa449e2f281b2">HAL_SetPWMDisabled</a></div><div class="ttdeci">void HAL_SetPWMDisabled(HAL_DigitalHandle pwmPortHandle, int32_t *status)</div><div class="ttdoc">Sets a PWM channel to be disabled.</div></div>
 <div class="ttc" id="agroup__hal__pwm_html_gabb8f47b34e970f168b4cf7486c338b2f"><div class="ttname"><a href="group__hal__pwm.html#gabb8f47b34e970f168b4cf7486c338b2f">HAL_SetPWMPosition</a></div><div class="ttdeci">void HAL_SetPWMPosition(HAL_DigitalHandle pwmPortHandle, double position, int32_t *status)</div><div class="ttdoc">Sets a PWM channel to the desired position value.</div></div>
+<div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1099</div></div>
 <div class="ttc" id="agroup__hal__pwm_html_gab4d5a2dee26ab203f94c91288a47c7fc"><div class="ttname"><a href="group__hal__pwm.html#gab4d5a2dee26ab203f94c91288a47c7fc">HAL_FreePWMPort</a></div><div class="ttdeci">void HAL_FreePWMPort(HAL_DigitalHandle pwmPortHandle, int32_t *status)</div><div class="ttdoc">Frees a PWM port.</div></div>
 <div class="ttc" id="agroup__hal__pwm_html_ga8b80374d12741ef022d598335be039d1"><div class="ttname"><a href="group__hal__pwm.html#ga8b80374d12741ef022d598335be039d1">HAL_SetPWMEliminateDeadband</a></div><div class="ttdeci">void HAL_SetPWMEliminateDeadband(HAL_DigitalHandle pwmPortHandle, HAL_Bool eliminateDeadband, int32_t *status)</div><div class="ttdoc">Sets if the FPGA should output the center value if the input value is within the deadband.</div></div>
 <div class="ttc" id="agroup__hal__pwm_html_ga4905d6b330ea522818b633de07337fa6"><div class="ttname"><a href="group__hal__pwm.html#ga4905d6b330ea522818b633de07337fa6">HAL_LatchPWMZero</a></div><div class="ttdeci">void HAL_LatchPWMZero(HAL_DigitalHandle pwmPortHandle, int32_t *status)</div><div class="ttdoc">Forces a PWM signal to go to 0 temporarily.</div></div>
@@ -189,7 +190,7 @@ $(document).ready(function(){initNavTree('hal_2src_2main_2native_2include_2hal_2
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_7dfa5b6b9262a4050979ee23e0eb392d.html">hal</a></li><li class="navelem"><b>PWM.h</b></li>
-    <li class="footer">Generated on Sun May 23 2021 22:29:18 for WPILibC++ by
+    <li class="footer">Generated on Tue May 25 2021 07:01:37 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

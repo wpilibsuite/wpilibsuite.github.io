@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-60-g4426216</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-61-g87603e4</span>
    </div>
   </td>
  </tr>
@@ -115,13 +115,13 @@ $(document).ready(function(){initNavTree('SendableChooser_8h_source.html',''); i
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <a class="code" href="classwpi_1_1StringMap.html">wpi::StringMap&lt;T&gt;</a> m_choices;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> U&gt;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">static</span> U _unwrap_smart_ptr(<span class="keyword">const</span> U&amp; value);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">static</span> U _unwrap_smart_ptr(<span class="keyword">const</span> U&amp; <a class="code" href="classvalue.html">value</a>);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> U&gt;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">static</span> U* _unwrap_smart_ptr(<span class="keyword">const</span> std::unique_ptr&lt;U&gt;&amp; value);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">static</span> U* _unwrap_smart_ptr(<span class="keyword">const</span> std::unique_ptr&lt;U&gt;&amp; <a class="code" href="classvalue.html">value</a>);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span> U&gt;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">static</span> std::weak_ptr&lt;U&gt; _unwrap_smart_ptr(<span class="keyword">const</span> std::shared_ptr&lt;U&gt;&amp; value);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">static</span> std::weak_ptr&lt;U&gt; _unwrap_smart_ptr(<span class="keyword">const</span> std::shared_ptr&lt;U&gt;&amp; <a class="code" href="classvalue.html">value</a>);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="classfrc_1_1SendableChooser.html">SendableChooser</a>() = <span class="keywordflow">default</span>;</div>
@@ -152,6 +152,7 @@ $(document).ready(function(){initNavTree('SendableChooser_8h_source.html',''); i
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassfrc_1_1SendableChooser_html"><div class="ttname"><a href="classfrc_1_1SendableChooser.html">frc::SendableChooser</a></div><div class="ttdoc">The SendableChooser class is a useful tool for presenting a selection of options to the SmartDashboar...</div><div class="ttdef"><b>Definition:</b> SendableChooser.h:32</div></div>
+<div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1099</div></div>
 <div class="ttc" id="aclassfrc_1_1SendableChooser_html_a3a80f828f68820a9c602e6888761bba5"><div class="ttname"><a href="classfrc_1_1SendableChooser.html#a3a80f828f68820a9c602e6888761bba5">frc::SendableChooser::InitSendable</a></div><div class="ttdeci">void InitSendable(SendableBuilder &amp;builder) override</div><div class="ttdoc">Initializes this Sendable object.</div><div class="ttdef"><b>Definition:</b> SendableChooser.inc:48</div></div>
 <div class="ttc" id="aclassfrc_1_1SendableChooser_html_acf5caa625b9508b8561cf507a393e975"><div class="ttname"><a href="classfrc_1_1SendableChooser.html#acf5caa625b9508b8561cf507a393e975">frc::SendableChooser::AddDefault</a></div><div class="ttdeci">void AddDefault(wpi::StringRef name, T object)</div><div class="ttdoc">Add the given object to the list of options and marks it as the default.</div><div class="ttdef"><b>Definition:</b> SendableChooser.h:98</div></div>
 <div class="ttc" id="aclassfrc_1_1SendableChooser_html_a3b36357f4b1e594dc32e7557ae5f6afc"><div class="ttname"><a href="classfrc_1_1SendableChooser.html#a3b36357f4b1e594dc32e7557ae5f6afc">frc::SendableChooser::AddObject</a></div><div class="ttdeci">void AddObject(wpi::StringRef name, T object)</div><div class="ttdoc">Adds the given object to the list of options.</div><div class="ttdef"><b>Definition:</b> SendableChooser.h:84</div></div>
@@ -168,7 +169,7 @@ $(document).ready(function(){initNavTree('SendableChooser_8h_source.html',''); i
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_b02f085c5688c41df73c48b2d64de380.html">smartdashboard</a></li><li class="navelem"><b>SendableChooser.h</b></li>
-    <li class="footer">Generated on Sun May 23 2021 22:29:18 for WPILibC++ by
+    <li class="footer">Generated on Tue May 25 2021 07:01:38 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

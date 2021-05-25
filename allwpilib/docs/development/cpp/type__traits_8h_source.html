@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-60-g4426216</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-61-g87603e4</span>
    </div>
   </td>
  </tr>
@@ -128,30 +128,30 @@ $(document).ready(function(){initNavTree('type__traits_8h_source.html',''); init
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">    (defined(__GNUC__) &amp;&amp; __GNUC__ &gt;= 5)</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="comment">// If the compiler supports the is_trivially_copyable trait use it, as it</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="comment">// matches the definition of isPodLike closely.</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> value = std::is_trivially_copyable&lt;T&gt;::value;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code" href="classvalue.html">value</a> = std::is_trivially_copyable&lt;T&gt;::value;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#elif __has_feature(is_trivially_copyable)</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="comment">// Use the internal name if the compiler supports is_trivially_copyable but we</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="comment">// don&#39;t know if the standard library does. This is the case for clang in</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="comment">// conjunction with libstdc++ from GCC 4.x.</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> value = __is_trivially_copyable(T);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code" href="classvalue.html">value</a> = __is_trivially_copyable(T);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="comment">// If we don&#39;t know anything else, we can (at least) assume that all non-class</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="comment">// types are PODs.</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> value = !std::is_class&lt;T&gt;::value;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code" href="classvalue.html">value</a> = !std::is_class&lt;T&gt;::value;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">// std::pair&#39;s are pod-like if their elements are.</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> U&gt;</div>
 <div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="structwpi_1_1isPodLike_3_01std_1_1pair_3_01T_00_01U_01_4_01_4.html">   53</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structwpi_1_1isPodLike.html">isPodLike</a>&lt;std::pair&lt;T, U&gt;&gt; {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> value = <a class="code" href="structwpi_1_1isPodLike.html">isPodLike&lt;T&gt;::value</a> &amp;&amp; <a class="code" href="structwpi_1_1isPodLike.html">isPodLike&lt;U&gt;::value</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code" href="classvalue.html">value</a> = <a class="code" href="structwpi_1_1isPodLike.html">isPodLike&lt;T&gt;::value</a> &amp;&amp; <a class="code" href="structwpi_1_1isPodLike.html">isPodLike&lt;U&gt;::value</a>;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;};</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
 <div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classwpi_1_1is__integral__or__enum.html">   64</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="keyword">class </span><a class="code" href="classwpi_1_1is__integral__or__enum.html">is_integral_or_enum</a> {</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keyword">using</span> UnderlyingT = <span class="keyword">typename</span> std::remove_reference&lt;T&gt;::type;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> value =</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code" href="classvalue.html">value</a> =</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      !std::is_class&lt;UnderlyingT&gt;::value &amp;&amp; <span class="comment">// Filter conversion operators.</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      !std::is_pointer&lt;UnderlyingT&gt;::value &amp;&amp;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      !std::is_floating_point&lt;UnderlyingT&gt;::value &amp;&amp;</div>
@@ -209,6 +209,7 @@ $(document).ready(function(){initNavTree('type__traits_8h_source.html',''); init
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructwpi_1_1isPodLike_html"><div class="ttname"><a href="structwpi_1_1isPodLike.html">wpi::isPodLike</a></div><div class="ttdoc">isPodLike - This is a type trait that is used to determine whether a given type can be copied around ...</div><div class="ttdef"><b>Definition:</b> StringRef.h:951</div></div>
+<div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1099</div></div>
 <div class="ttc" id="astructwpi_1_1add__lvalue__reference__if__not__pointer_html"><div class="ttname"><a href="structwpi_1_1add__lvalue__reference__if__not__pointer.html">wpi::add_lvalue_reference_if_not_pointer</a></div><div class="ttdoc">If T is a pointer, just return it. If it is not, return T&amp;.</div><div class="ttdef"><b>Definition:</b> type_traits.h:78</div></div>
 <div class="ttc" id="astructwpi_1_1const__pointer__or__const__ref_html"><div class="ttname"><a href="structwpi_1_1const__pointer__or__const__ref.html">wpi::const_pointer_or_const_ref</a></div><div class="ttdef"><b>Definition:</b> type_traits.h:98</div></div>
 <div class="ttc" id="astructwpi_1_1add__const__past__pointer_html"><div class="ttname"><a href="structwpi_1_1add__const__past__pointer.html">wpi::add_const_past_pointer</a></div><div class="ttdoc">If T is a pointer to X, return a pointer to const X.</div><div class="ttdef"><b>Definition:</b> type_traits.h:89</div></div>
@@ -217,7 +218,7 @@ $(document).ready(function(){initNavTree('type__traits_8h_source.html',''); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><b>type_traits.h</b></li>
-    <li class="footer">Generated on Sun May 23 2021 22:29:19 for WPILibC++ by
+    <li class="footer">Generated on Tue May 25 2021 07:01:39 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

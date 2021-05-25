@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-60-g4426216</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-61-g87603e4</span>
    </div>
   </td>
  </tr>
@@ -210,7 +210,7 @@ $(document).ready(function(){initNavTree('STLExtras_8h_source.html',''); initRes
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <a class="code" href="classwpi_1_1function__ref.html">function_ref</a>(Callable &amp;&amp;callable,</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;               <span class="keyword">typename</span> std::enable_if&lt;</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                   !std::is_same&lt;<span class="keyword">typename</span> std::remove_reference&lt;Callable&gt;::type,</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                                 <a class="code" href="classwpi_1_1function__ref.html">function_ref</a>&gt;::value&gt;::type * = <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                                 <a class="code" href="classwpi_1_1function__ref.html">function_ref</a>&gt;::<a class="code" href="classvalue.html">value</a>&gt;::type * = <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;      : callback(callback_fn&lt;<span class="keyword">typename</span> std::remove_reference&lt;Callable&gt;::type&gt;),</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        callable(<span class="keyword">reinterpret_cast&lt;</span>intptr_t<span class="keyword">&gt;</span>(&amp;callable)) {}</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
@@ -326,7 +326,7 @@ $(document).ready(function(){initNavTree('STLExtras_8h_source.html',''); initRes
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;  <span class="keyword">static</span> no&amp; test(...);</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160; </div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> value = <span class="keyword">sizeof</span>(test&lt;Ty&gt;(<span class="keyword">nullptr</span>)) == <span class="keyword">sizeof</span>(yes);</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code" href="classvalue.html">value</a> = <span class="keyword">sizeof</span>(test&lt;Ty&gt;(<span class="keyword">nullptr</span>)) == <span class="keyword">sizeof</span>(yes);</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;};</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160; </div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Ty&gt;</div>
@@ -455,7 +455,7 @@ $(document).ready(function(){initNavTree('STLExtras_8h_source.html',''); initRes
 <div class="line"><a name="l00390"></a><span class="lineno"><a class="line" href="structwpi_1_1detail_1_1fwd__or__bidi__tag.html">  390</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> IterT&gt; <span class="keyword">struct </span><a class="code" href="structwpi_1_1detail_1_1fwd__or__bidi__tag.html">fwd_or_bidi_tag</a> {</div>
 <div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;  <span class="keyword">using</span> type = <span class="keyword">typename</span> <a class="code" href="structwpi_1_1detail_1_1fwd__or__bidi__tag__impl.html">fwd_or_bidi_tag_impl</a>&lt;std::is_base_of&lt;</div>
 <div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;      std::bidirectional_iterator_tag,</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;      <span class="keyword">typename</span> std::iterator_traits&lt;IterT&gt;::iterator_category&gt;::value&gt;::type;</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;      <span class="keyword">typename</span> std::iterator_traits&lt;IterT&gt;::iterator_category&gt;<a class="code" href="classvalue.html">::value</a>&gt;::type;</div>
 <div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;};</div>
 <div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160; </div>
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;} <span class="comment">// namespace detail</span></div>
@@ -889,23 +889,23 @@ $(document).ready(function(){initNavTree('STLExtras_8h_source.html',''); initRes
 <div class="line"><a name="l00889"></a><span class="lineno"><a class="line" href="structwpi_1_1rank_3_010_01_4.html">  889</a></span>&#160;<span class="keyword">template</span> &lt;&gt; <span class="keyword">struct </span><a class="code" href="structwpi_1_1rank.html">rank</a>&lt;0&gt; {};</div>
 <div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160; </div>
 <div class="line"><a name="l00893"></a><span class="lineno"><a class="line" href="structwpi_1_1is__one__of.html">  893</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span>... Ts&gt; <span class="keyword">struct </span><a class="code" href="structwpi_1_1is__one__of.html">is_one_of</a> {</div>
-<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> value = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code" href="classvalue.html">value</a> = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;};</div>
 <div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160; </div>
 <div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> U, <span class="keyword">typename</span>... Ts&gt;</div>
 <div class="line"><a name="l00898"></a><span class="lineno"><a class="line" href="structwpi_1_1is__one__of_3_01T_00_01U_00_01Ts_8_8_8_01_4.html">  898</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structwpi_1_1is__one__of.html">is_one_of</a>&lt;T, U, Ts...&gt; {</div>
-<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> value =</div>
-<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;      std::is_same&lt;T, U&gt;::value || <a class="code" href="structwpi_1_1is__one__of.html">is_one_of</a>&lt;T, Ts...&gt;::value;</div>
+<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code" href="classvalue.html">value</a> =</div>
+<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;      std::is_same&lt;T, U&gt;::value || <a class="code" href="structwpi_1_1is__one__of.html">is_one_of</a>&lt;T, Ts...&gt;<a class="code" href="classvalue.html">::value</a>;</div>
 <div class="line"><a name="l00901"></a><span class="lineno">  901</span>&#160;};</div>
 <div class="line"><a name="l00902"></a><span class="lineno">  902</span>&#160; </div>
 <div class="line"><a name="l00905"></a><span class="lineno"><a class="line" href="structwpi_1_1are__base__of.html">  905</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span>... Ts&gt; <span class="keyword">struct </span><a class="code" href="structwpi_1_1are__base__of.html">are_base_of</a> {</div>
-<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> value = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code" href="classvalue.html">value</a> = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;};</div>
 <div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160; </div>
 <div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> U, <span class="keyword">typename</span>... Ts&gt;</div>
 <div class="line"><a name="l00910"></a><span class="lineno"><a class="line" href="structwpi_1_1are__base__of_3_01T_00_01U_00_01Ts_8_8_8_01_4.html">  910</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structwpi_1_1are__base__of.html">are_base_of</a>&lt;T, U, Ts...&gt; {</div>
-<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> value =</div>
-<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;      std::is_base_of&lt;T, U&gt;::value &amp;&amp; <a class="code" href="structwpi_1_1are__base__of.html">are_base_of</a>&lt;T, Ts...&gt;::value;</div>
+<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code" href="classvalue.html">value</a> =</div>
+<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;      std::is_base_of&lt;T, U&gt;::value &amp;&amp; <a class="code" href="structwpi_1_1are__base__of.html">are_base_of</a>&lt;T, Ts...&gt;<a class="code" href="classvalue.html">::value</a>;</div>
 <div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;};</div>
 <div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160; </div>
 <div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160;<span class="comment">//===----------------------------------------------------------------------===//</span></div>
@@ -979,7 +979,7 @@ $(document).ready(function(){initNavTree('STLExtras_8h_source.html',''); initRes
 <div class="line"><a name="l01007"></a><span class="lineno"> 1007</span>&#160;<span class="keyword">auto</span> size(R &amp;&amp;Range, <span class="keyword">typename</span> std::enable_if&lt;</div>
 <div class="line"><a name="l01008"></a><span class="lineno"> 1008</span>&#160;                         std::is_same&lt;<span class="keyword">typename</span> std::iterator_traits&lt;decltype(</div>
 <div class="line"><a name="l01009"></a><span class="lineno"> 1009</span>&#160;                                          Range.begin())&gt;::iterator_category,</div>
-<div class="line"><a name="l01010"></a><span class="lineno"> 1010</span>&#160;                                      std::random_access_iterator_tag&gt;::value,</div>
+<div class="line"><a name="l01010"></a><span class="lineno"> 1010</span>&#160;                                      std::random_access_iterator_tag&gt;::<a class="code" href="classvalue.html">value</a>,</div>
 <div class="line"><a name="l01011"></a><span class="lineno"> 1011</span>&#160;                         <span class="keywordtype">void</span>&gt;::type * = <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l01012"></a><span class="lineno"> 1012</span>&#160;    -&gt; decltype(std::distance(Range.begin(), Range.end())) {</div>
 <div class="line"><a name="l01013"></a><span class="lineno"> 1013</span>&#160;  <span class="keywordflow">return</span> std::distance(Range.begin(), Range.end());</div>
@@ -1150,8 +1150,8 @@ $(document).ready(function(){initNavTree('STLExtras_8h_source.html',''); initRes
 <div class="line"><a name="l01222"></a><span class="lineno"> 1222</span>&#160;  }</div>
 <div class="line"><a name="l01223"></a><span class="lineno"> 1223</span>&#160; </div>
 <div class="line"><a name="l01224"></a><span class="lineno"> 1224</span>&#160;  std::size_t index()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> Index; }</div>
-<div class="line"><a name="l01225"></a><span class="lineno"> 1225</span>&#160;  <span class="keyword">const</span> ValueOfRange&lt;R&gt; &amp;value()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> *Iter; }</div>
-<div class="line"><a name="l01226"></a><span class="lineno"> 1226</span>&#160;  ValueOfRange&lt;R&gt; &amp;value() { <span class="keywordflow">return</span> *Iter; }</div>
+<div class="line"><a name="l01225"></a><span class="lineno"> 1225</span>&#160;  <span class="keyword">const</span> ValueOfRange&lt;R&gt; &amp;<a class="code" href="classvalue.html">value</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> *Iter; }</div>
+<div class="line"><a name="l01226"></a><span class="lineno"> 1226</span>&#160;  ValueOfRange&lt;R&gt; &amp;<a class="code" href="classvalue.html">value</a>() { <span class="keywordflow">return</span> *Iter; }</div>
 <div class="line"><a name="l01227"></a><span class="lineno"> 1227</span>&#160; </div>
 <div class="line"><a name="l01228"></a><span class="lineno"> 1228</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l01229"></a><span class="lineno"> 1229</span>&#160;  std::size_t Index = (std::numeric_limits&lt;std::size_t&gt;::max)();</div>
@@ -1229,7 +1229,7 @@ $(document).ready(function(){initNavTree('STLExtras_8h_source.html',''); initRes
 <div class="line"><a name="l01318"></a><span class="lineno"> 1318</span>&#160;        !std::is_same&lt;</div>
 <div class="line"><a name="l01319"></a><span class="lineno"> 1319</span>&#160;            <span class="keyword">typename</span> std::iterator_traits&lt;<span class="keyword">typename</span> std::remove_reference&lt;</div>
 <div class="line"><a name="l01320"></a><span class="lineno"> 1320</span>&#160;                decltype(Begin)&gt;::type&gt;::iterator_category,</div>
-<div class="line"><a name="l01321"></a><span class="lineno"> 1321</span>&#160;            std::random_access_iterator_tag&gt;::value,</div>
+<div class="line"><a name="l01321"></a><span class="lineno"> 1321</span>&#160;            std::random_access_iterator_tag&gt;::<a class="code" href="classvalue.html">value</a>,</div>
 <div class="line"><a name="l01322"></a><span class="lineno"> 1322</span>&#160;        <span class="keywordtype">void</span>&gt;::type * = <span class="keyword">nullptr</span>) {</div>
 <div class="line"><a name="l01323"></a><span class="lineno"> 1323</span>&#160;  <span class="keywordflow">for</span> (; N; --N, ++Begin)</div>
 <div class="line"><a name="l01324"></a><span class="lineno"> 1324</span>&#160;    <span class="keywordflow">if</span> (Begin == End)</div>
@@ -1244,7 +1244,7 @@ $(document).ready(function(){initNavTree('STLExtras_8h_source.html',''); initRes
 <div class="line"><a name="l01335"></a><span class="lineno"> 1335</span>&#160;        !std::is_same&lt;</div>
 <div class="line"><a name="l01336"></a><span class="lineno"> 1336</span>&#160;            <span class="keyword">typename</span> std::iterator_traits&lt;<span class="keyword">typename</span> std::remove_reference&lt;</div>
 <div class="line"><a name="l01337"></a><span class="lineno"> 1337</span>&#160;                decltype(Begin)&gt;::type&gt;::iterator_category,</div>
-<div class="line"><a name="l01338"></a><span class="lineno"> 1338</span>&#160;            std::random_access_iterator_tag&gt;::value,</div>
+<div class="line"><a name="l01338"></a><span class="lineno"> 1338</span>&#160;            std::random_access_iterator_tag&gt;::<a class="code" href="classvalue.html">value</a>,</div>
 <div class="line"><a name="l01339"></a><span class="lineno"> 1339</span>&#160;        <span class="keywordtype">void</span>&gt;::type * = <span class="keyword">nullptr</span>) {</div>
 <div class="line"><a name="l01340"></a><span class="lineno"> 1340</span>&#160;  <span class="keywordflow">for</span> (; N; --N, ++Begin)</div>
 <div class="line"><a name="l01341"></a><span class="lineno"> 1341</span>&#160;    <span class="keywordflow">if</span> (Begin == End)</div>
@@ -1268,6 +1268,7 @@ $(document).ready(function(){initNavTree('STLExtras_8h_source.html',''); initRes
 <div class="ttc" id="astructwpi_1_1detail_1_1zip__first_html"><div class="ttname"><a href="structwpi_1_1detail_1_1zip__first.html">wpi::detail::zip_first</a></div><div class="ttdef"><b>Definition:</b> STLExtras.h:501</div></div>
 <div class="ttc" id="astructwpi_1_1detail_1_1ZipTupleType_html"><div class="ttname"><a href="structwpi_1_1detail_1_1ZipTupleType.html">wpi::detail::ZipTupleType</a></div><div class="ttdef"><b>Definition:</b> STLExtras.h:436</div></div>
 <div class="ttc" id="astructwpi_1_1pair__hash_html"><div class="ttname"><a href="structwpi_1_1pair__hash.html">wpi::pair_hash</a></div><div class="ttdef"><b>Definition:</b> STLExtras.h:1185</div></div>
+<div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1099</div></div>
 <div class="ttc" id="aclasswpi_1_1iterator__adaptor__base_html"><div class="ttname"><a href="classwpi_1_1iterator__adaptor__base.html">wpi::iterator_adaptor_base</a></div><div class="ttdoc">CRTP base class for adapting an iterator to a different type.</div><div class="ttdef"><b>Definition:</b> iterator.h:208</div></div>
 <div class="ttc" id="astructwpi_1_1less__second_html"><div class="ttname"><a href="structwpi_1_1less__second.html">wpi::less_second</a></div><div class="ttdoc">Function object to check whether the second component of a std::pair compares less than the second co...</div><div class="ttdef"><b>Definition:</b> STLExtras.h:867</div></div>
 <div class="ttc" id="astructwpi_1_1is__one__of_html"><div class="ttname"><a href="structwpi_1_1is__one__of.html">wpi::is_one_of</a></div><div class="ttdoc">traits class for checking whether type T is one of any of the given types in the variadic list.</div><div class="ttdef"><b>Definition:</b> STLExtras.h:893</div></div>
@@ -1304,7 +1305,7 @@ $(document).ready(function(){initNavTree('STLExtras_8h_source.html',''); initRes
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><b>STLExtras.h</b></li>
-    <li class="footer">Generated on Sun May 23 2021 22:29:19 for WPILibC++ by
+    <li class="footer">Generated on Tue May 25 2021 07:01:39 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-60-g4426216</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-61-g87603e4</span>
    </div>
   </td>
  </tr>
@@ -314,16 +314,16 @@ $(document).ready(function(){initNavTree('DenseMapInfo_8h_source.html',''); init
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;  }</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160; </div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">unsigned</span> getHashValue(<a class="code" href="classwpi_1_1StringRef.html">StringRef</a> Val) {</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    assert(Val.<a class="code" href="classwpi_1_1StringRef.html#a3639987deb10240784a410a843c6df94">data</a>() != getEmptyKey().data() &amp;&amp; <span class="stringliteral">&quot;Cannot hash the empty key!&quot;</span>);</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    assert(Val.<a class="code" href="classwpi_1_1StringRef.html#a3639987deb10240784a410a843c6df94">data</a>() != getTombstoneKey().data() &amp;&amp;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    assert(Val.<a class="code" href="classwpi_1_1StringRef.html#a3639987deb10240784a410a843c6df94">data</a>() != getEmptyKey().<a class="code" href="structdata.html">data</a>() &amp;&amp; <span class="stringliteral">&quot;Cannot hash the empty key!&quot;</span>);</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    assert(Val.<a class="code" href="classwpi_1_1StringRef.html#a3639987deb10240784a410a843c6df94">data</a>() != getTombstoneKey().<a class="code" href="structdata.html">data</a>() &amp;&amp;</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;           <span class="stringliteral">&quot;Cannot hash the tombstone key!&quot;</span>);</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <span class="keywordflow">return</span> (<span class="keywordtype">unsigned</span>)(hash_value(Val));</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  }</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160; </div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> isEqual(<a class="code" href="classwpi_1_1StringRef.html">StringRef</a> LHS, <a class="code" href="classwpi_1_1StringRef.html">StringRef</a> RHS) {</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <span class="keywordflow">if</span> (RHS.<a class="code" href="classwpi_1_1StringRef.html#a3639987deb10240784a410a843c6df94">data</a>() == getEmptyKey().data())</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <span class="keywordflow">if</span> (RHS.<a class="code" href="classwpi_1_1StringRef.html#a3639987deb10240784a410a843c6df94">data</a>() == getEmptyKey().<a class="code" href="structdata.html">data</a>())</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;      <span class="keywordflow">return</span> LHS.<a class="code" href="classwpi_1_1StringRef.html#a3639987deb10240784a410a843c6df94">data</a>() == getEmptyKey().data();</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <span class="keywordflow">if</span> (RHS.<a class="code" href="classwpi_1_1StringRef.html#a3639987deb10240784a410a843c6df94">data</a>() == getTombstoneKey().data())</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <span class="keywordflow">if</span> (RHS.<a class="code" href="classwpi_1_1StringRef.html#a3639987deb10240784a410a843c6df94">data</a>() == getTombstoneKey().<a class="code" href="structdata.html">data</a>())</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;      <span class="keywordflow">return</span> LHS.<a class="code" href="classwpi_1_1StringRef.html#a3639987deb10240784a410a843c6df94">data</a>() == getTombstoneKey().data();</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <span class="keywordflow">return</span> LHS == RHS;</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  }</div>
@@ -342,16 +342,16 @@ $(document).ready(function(){initNavTree('DenseMapInfo_8h_source.html',''); init
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  }</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160; </div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">unsigned</span> getHashValue(<a class="code" href="classwpi_1_1ArrayRef.html">ArrayRef&lt;T&gt;</a> Val) {</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    assert(Val.data() != getEmptyKey().data() &amp;&amp; <span class="stringliteral">&quot;Cannot hash the empty key!&quot;</span>);</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    assert(Val.data() != getTombstoneKey().data() &amp;&amp;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    assert(Val.data() != getEmptyKey().<a class="code" href="structdata.html">data</a>() &amp;&amp; <span class="stringliteral">&quot;Cannot hash the empty key!&quot;</span>);</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    assert(Val.data() != getTombstoneKey().<a class="code" href="structdata.html">data</a>() &amp;&amp;</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;           <span class="stringliteral">&quot;Cannot hash the tombstone key!&quot;</span>);</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <span class="keywordflow">return</span> (<span class="keywordtype">unsigned</span>)(hash_value(Val));</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;  }</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160; </div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> isEqual(<a class="code" href="classwpi_1_1ArrayRef.html">ArrayRef&lt;T&gt;</a> LHS, <a class="code" href="classwpi_1_1ArrayRef.html">ArrayRef&lt;T&gt;</a> RHS) {</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <span class="keywordflow">if</span> (RHS.data() == getEmptyKey().data())</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <span class="keywordflow">if</span> (RHS.data() == getEmptyKey().<a class="code" href="structdata.html">data</a>())</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;      <span class="keywordflow">return</span> LHS.data() == getEmptyKey().data();</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="keywordflow">if</span> (RHS.data() == getTombstoneKey().data())</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="keywordflow">if</span> (RHS.data() == getTombstoneKey().<a class="code" href="structdata.html">data</a>())</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;      <span class="keywordflow">return</span> LHS.data() == getTombstoneKey().data();</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <span class="keywordflow">return</span> LHS == RHS;</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;  }</div>
@@ -369,6 +369,7 @@ $(document).ready(function(){initNavTree('DenseMapInfo_8h_source.html',''); init
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="preprocessor">#endif // LLVM_ADT_DENSEMAPINFO_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="astructdata_html"><div class="ttname"><a href="structdata.html">data</a></div><div class="ttdef"><b>Definition:</b> format.h:917</div></div>
 <div class="ttc" id="aclasswpi_1_1ArrayRef_html"><div class="ttname"><a href="classwpi_1_1ArrayRef.html">wpi::ArrayRef</a></div><div class="ttdoc">ArrayRef - Represent a constant reference to an array (0 or more elements consecutively in memory),...</div><div class="ttdef"><b>Definition:</b> ArrayRef.h:46</div></div>
 <div class="ttc" id="aclasswpi_1_1StringRef_html"><div class="ttname"><a href="classwpi_1_1StringRef.html">wpi::StringRef</a></div><div class="ttdoc">StringRef - Represent a constant reference to a string, i.e.</div><div class="ttdef"><b>Definition:</b> StringRef.h:50</div></div>
 <div class="ttc" id="aclasswpi_1_1StringRef_html_a3639987deb10240784a410a843c6df94"><div class="ttname"><a href="classwpi_1_1StringRef.html#a3639987deb10240784a410a843c6df94">wpi::StringRef::data</a></div><div class="ttdeci">LLVM_NODISCARD LLVM_ATTRIBUTE_ALWAYS_INLINE const char * data() const noexcept</div><div class="ttdoc">data - Get a pointer to the start of the string (which may not be null terminated).</div><div class="ttdef"><b>Definition:</b> StringRef.h:133</div></div>
@@ -378,7 +379,7 @@ $(document).ready(function(){initNavTree('DenseMapInfo_8h_source.html',''); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><b>DenseMapInfo.h</b></li>
-    <li class="footer">Generated on Sun May 23 2021 22:29:19 for WPILibC++ by
+    <li class="footer">Generated on Tue May 25 2021 07:01:39 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

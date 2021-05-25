@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-60-g4426216</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-61-g87603e4</span>
    </div>
   </td>
  </tr>
@@ -118,11 +118,11 @@ using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 <tr class="memdesc:a0b101b47fbae7de273d340ef4c80e50e"><td class="mdescLeft">&#160;</td><td class="mdescRight">a type to represent differences between iterators <br /></td></tr>
 <tr class="separator:a0b101b47fbae7de273d340ef4c80e50e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af04d1baf5c0a74b6f3ab98a51cb53e17"><td class="memItemLeft" align="right" valign="top"><a id="af04d1baf5c0a74b6f3ab98a51cb53e17"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1detail_1_1iter__impl.html#af04d1baf5c0a74b6f3ab98a51cb53e17">pointer</a> = typename std::conditional&lt; std::is_const&lt; BasicJsonType &gt;::<a class="el" href="classwpi_1_1detail_1_1iter__impl.html#a9fa458ba5099ae88fd85f749ffeebcc3">value</a>, typename BasicJsonType::const_pointer, typename BasicJsonType::pointer &gt;::type</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1detail_1_1iter__impl.html#af04d1baf5c0a74b6f3ab98a51cb53e17">pointer</a> = typename std::conditional&lt; std::is_const&lt; BasicJsonType &gt;::<a class="el" href="classvalue.html">value</a>, typename BasicJsonType::const_pointer, typename BasicJsonType::pointer &gt;::type</td></tr>
 <tr class="memdesc:af04d1baf5c0a74b6f3ab98a51cb53e17"><td class="mdescLeft">&#160;</td><td class="mdescRight">defines a pointer to the type iterated over (value_type) <br /></td></tr>
 <tr class="separator:af04d1baf5c0a74b6f3ab98a51cb53e17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76ecd28b1f59bc9a8d51da343a8cd478"><td class="memItemLeft" align="right" valign="top"><a id="a76ecd28b1f59bc9a8d51da343a8cd478"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1detail_1_1iter__impl.html#a76ecd28b1f59bc9a8d51da343a8cd478">reference</a> = typename std::conditional&lt; std::is_const&lt; BasicJsonType &gt;::<a class="el" href="classwpi_1_1detail_1_1iter__impl.html#a9fa458ba5099ae88fd85f749ffeebcc3">value</a>, typename BasicJsonType::const_reference, typename BasicJsonType::reference &gt;::type</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1detail_1_1iter__impl.html#a76ecd28b1f59bc9a8d51da343a8cd478">reference</a> = typename std::conditional&lt; std::is_const&lt; BasicJsonType &gt;::<a class="el" href="classvalue.html">value</a>, typename BasicJsonType::const_reference, typename BasicJsonType::reference &gt;::type</td></tr>
 <tr class="memdesc:a76ecd28b1f59bc9a8d51da343a8cd478"><td class="mdescLeft">&#160;</td><td class="mdescRight">defines a reference to the type iterated over (value_type) <br /></td></tr>
 <tr class="separator:a76ecd28b1f59bc9a8d51da343a8cd478"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -254,7 +254,7 @@ template&lt;typename BasicJsonType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classwpi_1_1detail_1_1iter__impl.html">iter_impl</a>&lt; typename std::conditional&lt; std::is_const&lt; BasicJsonType &gt;::<a class="el" href="classwpi_1_1detail_1_1iter__impl.html#a9fa458ba5099ae88fd85f749ffeebcc3">value</a>, typename std::remove_const&lt; BasicJsonType &gt;::type, const BasicJsonType &gt;::type &gt; </td>
+          <td class="memname"><a class="el" href="classwpi_1_1detail_1_1iter__impl.html">iter_impl</a>&lt; typename std::conditional&lt; std::is_const&lt; BasicJsonType &gt;::<a class="el" href="classvalue.html">value</a>, typename std::remove_const&lt; BasicJsonType &gt;::type, const BasicJsonType &gt;::type &gt; </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -983,7 +983,7 @@ template&lt;typename BasicJsonType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classwpi_1_1detail_1_1iter__impl.html#a76ecd28b1f59bc9a8d51da343a8cd478">reference</a> <a class="el" href="classwpi_1_1detail_1_1iter__impl.html">wpi::detail::iter_impl</a>&lt; BasicJsonType &gt;::value </td>
+          <td class="memname"><a class="el" href="classwpi_1_1detail_1_1iter__impl.html#a76ecd28b1f59bc9a8d51da343a8cd478">reference</a> <a class="el" href="classwpi_1_1detail_1_1iter__impl.html">wpi::detail::iter_impl</a>&lt; BasicJsonType &gt;::<a class="el" href="classvalue.html">value</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1052,7 +1052,7 @@ template&lt;typename BasicJsonType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>wpi</b></li><li class="navelem"><a class="el" href="namespacewpi_1_1detail.html">detail</a></li><li class="navelem"><a class="el" href="classwpi_1_1detail_1_1iter__impl.html">iter_impl</a></li>
-    <li class="footer">Generated on Sun May 23 2021 22:29:23 for WPILibC++ by
+    <li class="footer">Generated on Tue May 25 2021 07:01:43 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

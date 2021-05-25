@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-60-g4426216</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-61-g87603e4</span>
    </div>
   </td>
  </tr>
@@ -115,7 +115,7 @@ $(document).ready(function(){initNavTree('hal_2src_2main_2native_2include_2hal_2
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                           int32_t* status);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
 <div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="group__hal__compressor.html#ga483a87f7572a82ce9b4847f2310f7151">   52</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__compressor.html#ga483a87f7572a82ce9b4847f2310f7151">HAL_SetCompressorClosedLoopControl</a>(HAL_CompressorHandle compressorHandle,</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                        HAL_Bool value, int32_t* status);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                        HAL_Bool <a class="code" href="classvalue.html">value</a>, int32_t* status);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
 <div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="group__hal__compressor.html#ga91e4bbeed03440aa6d42fe5a1f5646a2">   62</a></span>&#160;HAL_Bool <a class="code" href="group__hal__compressor.html#ga91e4bbeed03440aa6d42fe5a1f5646a2">HAL_GetCompressorClosedLoopControl</a>(</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    HAL_CompressorHandle compressorHandle, int32_t* status);</div>
@@ -152,6 +152,7 @@ $(document).ready(function(){initNavTree('hal_2src_2main_2native_2include_2hal_2
 <div class="ttc" id="agroup__hal__compressor_html_ga0a6d5f498bfc0e0701351de0935f162e"><div class="ttname"><a href="group__hal__compressor.html#ga0a6d5f498bfc0e0701351de0935f162e">HAL_InitializeCompressor</a></div><div class="ttdeci">HAL_CompressorHandle HAL_InitializeCompressor(int32_t module, int32_t *status)</div><div class="ttdoc">Initializes a compressor on the given PCM module.</div></div>
 <div class="ttc" id="agroup__hal__compressor_html_ga84aeb49d86f10cc110b3adc65f0b9194"><div class="ttname"><a href="group__hal__compressor.html#ga84aeb49d86f10cc110b3adc65f0b9194">HAL_GetCompressor</a></div><div class="ttdeci">HAL_Bool HAL_GetCompressor(HAL_CompressorHandle compressorHandle, int32_t *status)</div><div class="ttdoc">Gets the compressor state (on or off).</div></div>
 <div class="ttc" id="agroup__hal__compressor_html_ga3baf5081415aa3f54e7614b0cae29648"><div class="ttname"><a href="group__hal__compressor.html#ga3baf5081415aa3f54e7614b0cae29648">HAL_GetCompressorCurrentTooHighFault</a></div><div class="ttdeci">HAL_Bool HAL_GetCompressorCurrentTooHighFault(HAL_CompressorHandle compressorHandle, int32_t *status)</div><div class="ttdoc">Gets if the compressor is faulted because of too high of current.</div></div>
+<div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1099</div></div>
 <div class="ttc" id="agroup__hal__compressor_html_ga892ca641d52ba440c63bc5e19efa4fa5"><div class="ttname"><a href="group__hal__compressor.html#ga892ca641d52ba440c63bc5e19efa4fa5">HAL_GetCompressorCurrent</a></div><div class="ttdeci">double HAL_GetCompressorCurrent(HAL_CompressorHandle compressorHandle, int32_t *status)</div><div class="ttdoc">Gets the compressor current.</div></div>
 <div class="ttc" id="agroup__hal__compressor_html_gad62c845524135065d31b1a4d663e2d77"><div class="ttname"><a href="group__hal__compressor.html#gad62c845524135065d31b1a4d663e2d77">HAL_GetCompressorShortedStickyFault</a></div><div class="ttdeci">HAL_Bool HAL_GetCompressorShortedStickyFault(HAL_CompressorHandle compressorHandle, int32_t *status)</div><div class="ttdoc">Gets if a sticky fauly is triggered because of a short.</div></div>
 <div class="ttc" id="agroup__hal__compressor_html_ga483a87f7572a82ce9b4847f2310f7151"><div class="ttname"><a href="group__hal__compressor.html#ga483a87f7572a82ce9b4847f2310f7151">HAL_SetCompressorClosedLoopControl</a></div><div class="ttdeci">void HAL_SetCompressorClosedLoopControl(HAL_CompressorHandle compressorHandle, HAL_Bool value, int32_t *status)</div><div class="ttdoc">Sets the compressor to closed loop mode.</div></div>
@@ -166,7 +167,7 @@ $(document).ready(function(){initNavTree('hal_2src_2main_2native_2include_2hal_2
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_7dfa5b6b9262a4050979ee23e0eb392d.html">hal</a></li><li class="navelem"><b>Compressor.h</b></li>
-    <li class="footer">Generated on Sun May 23 2021 22:29:18 for WPILibC++ by
+    <li class="footer">Generated on Tue May 25 2021 07:01:37 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

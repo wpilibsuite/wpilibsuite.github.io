@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-60-g4426216</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-61-g87603e4</span>
    </div>
   </td>
  </tr>
@@ -147,7 +147,7 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
 <div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="classfrc_1_1SPI.html#a220425545082b5137f639b62925f80f1">  117</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1SPI.html#a220425545082b5137f639b62925f80f1">SetChipSelectActiveLow</a>();</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
-<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="classfrc_1_1SPI.html#ace18201bd33d2a624fa476c75e06cc08">  126</a></span>&#160;  virtual <span class="keywordtype">int</span> <a class="code" href="classfrc_1_1SPI.html#ace18201bd33d2a624fa476c75e06cc08">Write</a>(uint8_t* data, <span class="keywordtype">int</span> size);</div>
+<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="classfrc_1_1SPI.html#ace18201bd33d2a624fa476c75e06cc08">  126</a></span>&#160;  virtual <span class="keywordtype">int</span> <a class="code" href="classfrc_1_1SPI.html#ace18201bd33d2a624fa476c75e06cc08">Write</a>(uint8_t* <a class="code" href="structdata.html">data</a>, <span class="keywordtype">int</span> size);</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
 <div class="line"><a name="l00141"></a><span class="lineno"><a class="line" href="classfrc_1_1SPI.html#a2e0c839fc5c3a24b236e3e0d5cb2e01d">  141</a></span>&#160;  virtual <span class="keywordtype">int</span> <a class="code" href="classfrc_1_1SPI.html#a2e0c839fc5c3a24b236e3e0d5cb2e01d">Read</a>(<span class="keywordtype">bool</span> initiate, uint8_t* dataReceived, <span class="keywordtype">int</span> size);</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
@@ -170,11 +170,11 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160; </div>
 <div class="line"><a name="l00221"></a><span class="lineno"><a class="line" href="classfrc_1_1SPI.html#a45a82d68cd8f7a0523a95a01566ef626">  221</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1SPI.html#a45a82d68cd8f7a0523a95a01566ef626">ForceAutoRead</a>();</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160; </div>
-<div class="line"><a name="l00242"></a><span class="lineno"><a class="line" href="classfrc_1_1SPI.html#ae108111a963f8730bf3e77a5f72b3907">  242</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classfrc_1_1SPI.html#ae108111a963f8730bf3e77a5f72b3907">ReadAutoReceivedData</a>(uint32_t* buffer, <span class="keywordtype">int</span> numToRead,</div>
+<div class="line"><a name="l00242"></a><span class="lineno"><a class="line" href="classfrc_1_1SPI.html#ae108111a963f8730bf3e77a5f72b3907">  242</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classfrc_1_1SPI.html#ae108111a963f8730bf3e77a5f72b3907">ReadAutoReceivedData</a>(uint32_t* <a class="code" href="classbuffer.html">buffer</a>, <span class="keywordtype">int</span> numToRead,</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                           units::second_t timeout);</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160; </div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;  <a class="code" href="namespacefrc.html#a3e1e63234243bd1c57fd61d0c7ea88ec">WPI_DEPRECATED</a>(&quot;Use <a class="code" href="classfrc_1_1SPI.html#ae108111a963f8730bf3e77a5f72b3907">ReadAutoReceivedData</a> with unit-safety instead&quot;)</div>
-<div class="line"><a name="l00269"></a><span class="lineno"><a class="line" href="classfrc_1_1SPI.html#a248b4f03717613ba2d130584d32a19d7">  269</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classfrc_1_1SPI.html#ae108111a963f8730bf3e77a5f72b3907">ReadAutoReceivedData</a>(uint32_t* buffer, <span class="keywordtype">int</span> numToRead, <span class="keywordtype">double</span> timeout);</div>
+<div class="line"><a name="l00269"></a><span class="lineno"><a class="line" href="classfrc_1_1SPI.html#a248b4f03717613ba2d130584d32a19d7">  269</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classfrc_1_1SPI.html#ae108111a963f8730bf3e77a5f72b3907">ReadAutoReceivedData</a>(uint32_t* <a class="code" href="classbuffer.html">buffer</a>, <span class="keywordtype">int</span> numToRead, <span class="keywordtype">double</span> timeout);</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160; </div>
 <div class="line"><a name="l00277"></a><span class="lineno"><a class="line" href="classfrc_1_1SPI.html#aeb4b59232167132f9b2ca13eb5d497b6">  277</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classfrc_1_1SPI.html#aeb4b59232167132f9b2ca13eb5d497b6">GetAutoDroppedCount</a>();</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160; </div>
@@ -206,7 +206,7 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160; </div>
 <div class="line"><a name="l00388"></a><span class="lineno"><a class="line" href="classfrc_1_1SPI.html#a69f9888cae9f8a9dbef67f2d97a2487d">  388</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classfrc_1_1SPI.html#a69f9888cae9f8a9dbef67f2d97a2487d">GetAccumulatorAverage</a>() const;</div>
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160; </div>
-<div class="line"><a name="l00399"></a><span class="lineno"><a class="line" href="classfrc_1_1SPI.html#af29b8a57f73536ce03f1e9f68623f332">  399</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1SPI.html#af29b8a57f73536ce03f1e9f68623f332">GetAccumulatorOutput</a>(int64_t&amp; value, int64_t&amp; count) const;</div>
+<div class="line"><a name="l00399"></a><span class="lineno"><a class="line" href="classfrc_1_1SPI.html#af29b8a57f73536ce03f1e9f68623f332">  399</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1SPI.html#af29b8a57f73536ce03f1e9f68623f332">GetAccumulatorOutput</a>(int64_t&amp; <a class="code" href="classvalue.html">value</a>, int64_t&amp; count) const;</div>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160; </div>
 <div class="line"><a name="l00408"></a><span class="lineno"><a class="line" href="classfrc_1_1SPI.html#a1a538757d510cbea45e087a7e02e515e">  408</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1SPI.html#a1a538757d510cbea45e087a7e02e515e">SetAccumulatorIntegratedCenter</a>(<span class="keywordtype">double</span> center);</div>
 <div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160; </div>
@@ -233,11 +233,14 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div class="ttc" id="aclassfrc_1_1SPI_html_a2d1fddb48bef3faefc190fa7ac9728ca"><div class="ttname"><a href="classfrc_1_1SPI.html#a2d1fddb48bef3faefc190fa7ac9728ca">frc::SPI::SetLSBFirst</a></div><div class="ttdeci">void SetLSBFirst()</div><div class="ttdoc">Configure the order that bits are sent and received on the wire to be least significant bit first.</div></div>
 <div class="ttc" id="aclassfrc_1_1SPI_html_a45a82d68cd8f7a0523a95a01566ef626"><div class="ttname"><a href="classfrc_1_1SPI.html#a45a82d68cd8f7a0523a95a01566ef626">frc::SPI::ForceAutoRead</a></div><div class="ttdeci">void ForceAutoRead()</div><div class="ttdoc">Force the engine to make a single transfer.</div></div>
 <div class="ttc" id="aclassfrc_1_1SPI_html_ab4cc05f9f0c8ae3ce16757ce4b1c4a80"><div class="ttname"><a href="classfrc_1_1SPI.html#ab4cc05f9f0c8ae3ce16757ce4b1c4a80">frc::SPI::SetSampleDataOnTrailingEdge</a></div><div class="ttdeci">void SetSampleDataOnTrailingEdge()</div><div class="ttdoc">Configure that the data is stable on the trailing edge and the data changes on the leading edge.</div></div>
+<div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1099</div></div>
+<div class="ttc" id="astructdata_html"><div class="ttname"><a href="structdata.html">data</a></div><div class="ttdef"><b>Definition:</b> format.h:917</div></div>
 <div class="ttc" id="aclassfrc_1_1SPI_html_a1a538757d510cbea45e087a7e02e515e"><div class="ttname"><a href="classfrc_1_1SPI.html#a1a538757d510cbea45e087a7e02e515e">frc::SPI::SetAccumulatorIntegratedCenter</a></div><div class="ttdeci">void SetAccumulatorIntegratedCenter(double center)</div><div class="ttdoc">Set the center value of the accumulator integrator.</div></div>
 <div class="ttc" id="anamespacehal_html"><div class="ttname"><a href="namespacehal.html">hal</a></div><div class="ttdoc">WPILib Hardware Abstraction Layer (HAL) namespace.</div><div class="ttdef"><b>Definition:</b> ChipObject.h:41</div></div>
 <div class="ttc" id="aclassfrc_1_1SPI_html_aaa51bf86f6f5fb142af12f767192a225"><div class="ttname"><a href="classfrc_1_1SPI.html#aaa51bf86f6f5fb142af12f767192a225">frc::SPI::SetSampleDataOnRising</a></div><div class="ttdeci">void SetSampleDataOnRising()</div><div class="ttdoc">Configure that the data is stable on the rising edge and the data changes on the falling edge.</div></div>
 <div class="ttc" id="aclassfrc_1_1SPI_html_afbabf1221808896f269dc6a0e76d3670"><div class="ttname"><a href="classfrc_1_1SPI.html#afbabf1221808896f269dc6a0e76d3670">frc::SPI::SetClockRate</a></div><div class="ttdeci">void SetClockRate(int hz)</div><div class="ttdoc">Configure the rate of the generated clock signal.</div></div>
 <div class="ttc" id="aclassfrc_1_1SPI_html_a50f17234e771c6eb5d154972237cb1e1"><div class="ttname"><a href="classfrc_1_1SPI.html#a50f17234e771c6eb5d154972237cb1e1">frc::SPI::FreeAccumulator</a></div><div class="ttdeci">void FreeAccumulator()</div><div class="ttdoc">Frees the accumulator.</div></div>
+<div class="ttc" id="aclassbuffer_html"><div class="ttname"><a href="classbuffer.html">buffer</a></div><div class="ttdoc">\rst A contiguous memory buffer with an optional growing ability.</div><div class="ttdef"><b>Definition:</b> core.h:732</div></div>
 <div class="ttc" id="aclassfrc_1_1SPI_html_a9d8b94f99e596d25c820b478b07d780e"><div class="ttname"><a href="classfrc_1_1SPI.html#a9d8b94f99e596d25c820b478b07d780e">frc::SPI::SetChipSelectActiveHigh</a></div><div class="ttdeci">void SetChipSelectActiveHigh()</div><div class="ttdoc">Configure the chip select line to be active high.</div></div>
 <div class="ttc" id="aclassfrc_1_1SPI_html_ad75723cb2e4d98b60979295a2e2aaaf4"><div class="ttname"><a href="classfrc_1_1SPI.html#ad75723cb2e4d98b60979295a2e2aaaf4">frc::SPI::GetAccumulatorValue</a></div><div class="ttdeci">int64_t GetAccumulatorValue() const</div><div class="ttdoc">Read the accumulated value.</div></div>
 <div class="ttc" id="aclassfrc_1_1SPI_html_acac48eeec3574ed6670dfa58fafcdfdd"><div class="ttname"><a href="classfrc_1_1SPI.html#acac48eeec3574ed6670dfa58fafcdfdd">frc::SPI::SetAccumulatorCenter</a></div><div class="ttdeci">void SetAccumulatorCenter(int center)</div><div class="ttdoc">Set the center value of the accumulator.</div></div>
@@ -277,7 +280,7 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><b>SPI.h</b></li>
-    <li class="footer">Generated on Sun May 23 2021 22:29:18 for WPILibC++ by
+    <li class="footer">Generated on Tue May 25 2021 07:01:38 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-60-g4426216</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-61-g87603e4</span>
    </div>
   </td>
  </tr>
@@ -184,7 +184,7 @@ $(document).ready(function(){initNavTree('LinearSystemLoop_8h_source.html',''); 
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    m_observer-&gt;SetXhat(xHat);</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  }</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
-<div class="line"><a name="l00185"></a><span class="lineno"><a class="line" href="classfrc_1_1LinearSystemLoop.html#ae015a57142458c29b5ea75a533c3f993">  185</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1LinearSystemLoop.html#ae015a57142458c29b5ea75a533c3f993">SetXhat</a>(<span class="keywordtype">int</span> i, <span class="keywordtype">double</span> value) { m_observer-&gt;SetXhat(i, value); }</div>
+<div class="line"><a name="l00185"></a><span class="lineno"><a class="line" href="classfrc_1_1LinearSystemLoop.html#ae015a57142458c29b5ea75a533c3f993">  185</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1LinearSystemLoop.html#ae015a57142458c29b5ea75a533c3f993">SetXhat</a>(<span class="keywordtype">int</span> i, <span class="keywordtype">double</span> <a class="code" href="classvalue.html">value</a>) { m_observer-&gt;SetXhat(i, <a class="code" href="classvalue.html">value</a>); }</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; </div>
 <div class="line"><a name="l00192"></a><span class="lineno"><a class="line" href="classfrc_1_1LinearSystemLoop.html#ab413e1db7ed82c8870e2f3fb56bad258">  192</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1LinearSystemLoop.html#ab413e1db7ed82c8870e2f3fb56bad258">SetNextR</a>(<span class="keyword">const</span> Eigen::Matrix&lt;double, States, 1&gt;&amp; nextR) {</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    m_nextR = nextR;</div>
@@ -254,6 +254,7 @@ $(document).ready(function(){initNavTree('LinearSystemLoop_8h_source.html',''); 
 <div class="ttc" id="aclassfrc_1_1LinearSystemLoop_html_a1018a7b88f12c6894f7cb8c2c0026f89"><div class="ttname"><a href="classfrc_1_1LinearSystemLoop.html#a1018a7b88f12c6894f7cb8c2c0026f89">frc::LinearSystemLoop::ClampInput</a></div><div class="ttdeci">Eigen::Matrix&lt; double, Inputs, 1 &gt; ClampInput(const Eigen::Matrix&lt; double, Inputs, 1 &gt; &amp;u) const</div><div class="ttdoc">Clamps input vector between system's minimum and maximum allowable input.</div><div class="ttdef"><b>Definition:</b> LinearSystemLoop.h:271</div></div>
 <div class="ttc" id="aclassfrc_1_1LinearSystemLoop_html_a686d0a88bb1e2a47b8b8695c4c249a83"><div class="ttname"><a href="classfrc_1_1LinearSystemLoop.html#a686d0a88bb1e2a47b8b8695c4c249a83">frc::LinearSystemLoop::m_clampFunc</a></div><div class="ttdeci">std::function&lt; Eigen::Matrix&lt; double, Inputs, 1 &gt; const Eigen::Matrix&lt; double, Inputs, 1 &gt; &amp;)&gt; m_clampFunc</div><div class="ttdoc">Clamping function.</div><div class="ttdef"><b>Definition:</b> LinearSystemLoop.h:286</div></div>
 <div class="ttc" id="aclassfrc_1_1LinearSystemLoop_html_a92694759ac399947256422c0b678554e"><div class="ttname"><a href="classfrc_1_1LinearSystemLoop.html#a92694759ac399947256422c0b678554e">frc::LinearSystemLoop::Xhat</a></div><div class="ttdeci">double Xhat(int i) const</div><div class="ttdoc">Returns an element of the observer's state estimate x-hat.</div><div class="ttdef"><b>Definition:</b> LinearSystemLoop.h:142</div></div>
+<div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1099</div></div>
 <div class="ttc" id="aclassfrc_1_1LinearSystemLoop_html_a8be82927549b755bc70d78807b1c577c"><div class="ttname"><a href="classfrc_1_1LinearSystemLoop.html#a8be82927549b755bc70d78807b1c577c">frc::LinearSystemLoop::Predict</a></div><div class="ttdeci">void Predict(units::second_t dt)</div><div class="ttdoc">Sets new controller output, projects model forward, and runs observer prediction.</div><div class="ttdef"><b>Definition:</b> LinearSystemLoop.h:258</div></div>
 <div class="ttc" id="aclassfrc_1_1LinearSystemLoop_html_a411dbe935e7b7f915439cd185cc9d163"><div class="ttname"><a href="classfrc_1_1LinearSystemLoop.html#a411dbe935e7b7f915439cd185cc9d163">frc::LinearSystemLoop::Reset</a></div><div class="ttdeci">void Reset(Eigen::Matrix&lt; double, States, 1 &gt; initialState)</div><div class="ttdoc">Zeroes reference r and controller output u.</div><div class="ttdef"><b>Definition:</b> LinearSystemLoop.h:226</div></div>
 <div class="ttc" id="aclassfrc_1_1LinearSystemLoop_html_ad6dd05509eb909dd944f5f5143e330ab"><div class="ttname"><a href="classfrc_1_1LinearSystemLoop.html#ad6dd05509eb909dd944f5f5143e330ab">frc::LinearSystemLoop::Correct</a></div><div class="ttdeci">void Correct(const Eigen::Matrix&lt; double, Outputs, 1 &gt; &amp;y)</div><div class="ttdoc">Correct the state estimate x-hat using the measurements in y.</div><div class="ttdef"><b>Definition:</b> LinearSystemLoop.h:245</div></div>
@@ -282,7 +283,7 @@ $(document).ready(function(){initNavTree('LinearSystemLoop_8h_source.html',''); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_6a6d4dbfd7def32c812c83ce511abb63.html">system</a></li><li class="navelem"><b>LinearSystemLoop.h</b></li>
-    <li class="footer">Generated on Sun May 23 2021 22:29:19 for WPILibC++ by
+    <li class="footer">Generated on Tue May 25 2021 07:01:38 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

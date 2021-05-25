@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-60-g4426216</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-61-g87603e4</span>
    </div>
   </td>
  </tr>
@@ -146,7 +146,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ab3a761e68285c23f492d392cc1695fd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an <a class="el" href="classwpi_1_1ArrayRef.html" title="ArrayRef - Represent a constant reference to an array (0 or more elements consecutively in memory),...">ArrayRef</a> from a single element. <br /></td></tr>
 <tr class="separator:ab3a761e68285c23f492d392cc1695fd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a197c625d03f897c6e525d6a8a1c9159b"><td class="memItemLeft" align="right" valign="top"><a id="a197c625d03f897c6e525d6a8a1c9159b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1ArrayRef.html#a197c625d03f897c6e525d6a8a1c9159b">ArrayRef</a> (const T *data, size_t length)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1ArrayRef.html#a197c625d03f897c6e525d6a8a1c9159b">ArrayRef</a> (const T *<a class="el" href="structdata.html">data</a>, size_t length)</td></tr>
 <tr class="memdesc:a197c625d03f897c6e525d6a8a1c9159b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an <a class="el" href="classwpi_1_1ArrayRef.html" title="ArrayRef - Represent a constant reference to an array (0 or more elements consecutively in memory),...">ArrayRef</a> from a pointer and length. <br /></td></tr>
 <tr class="separator:a197c625d03f897c6e525d6a8a1c9159b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f04cb111ce18697f629c144b9da6f6f"><td class="memItemLeft" align="right" valign="top"><a id="a2f04cb111ce18697f629c144b9da6f6f"></a>
@@ -173,15 +173,15 @@ template&lt;size_t N&gt; </td></tr>
 <tr class="memdesc:a47746f27e2f5252a4465140d370373ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an <a class="el" href="classwpi_1_1ArrayRef.html" title="ArrayRef - Represent a constant reference to an array (0 or more elements consecutively in memory),...">ArrayRef</a> from a C array. <br /></td></tr>
 <tr class="separator:a47746f27e2f5252a4465140d370373ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92b1c84f74c8fd5825cb0268f9ee31ed"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
-<tr class="memitem:a92b1c84f74c8fd5825cb0268f9ee31ed"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwpi_1_1ArrayRef.html#a92b1c84f74c8fd5825cb0268f9ee31ed">ArrayRef</a> (const <a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt; U * &gt; &amp;A, typename std::enable_if&lt; std::is_convertible&lt; U *const *, T const * &gt;::value &gt;::type *=nullptr)</td></tr>
+<tr class="memitem:a92b1c84f74c8fd5825cb0268f9ee31ed"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwpi_1_1ArrayRef.html#a92b1c84f74c8fd5825cb0268f9ee31ed">ArrayRef</a> (const <a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt; U * &gt; &amp;A, typename std::enable_if&lt; std::is_convertible&lt; U *const *, T const * &gt;::<a class="el" href="classvalue.html">value</a> &gt;::type *=nullptr)</td></tr>
 <tr class="memdesc:a92b1c84f74c8fd5825cb0268f9ee31ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an ArrayRef&lt;const T*&gt; from ArrayRef&lt;T*&gt;.  <a href="classwpi_1_1ArrayRef.html#a92b1c84f74c8fd5825cb0268f9ee31ed">More...</a><br /></td></tr>
 <tr class="separator:a92b1c84f74c8fd5825cb0268f9ee31ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1287a0127835184e02a10608bbdd1dc5"><td class="memTemplParams" colspan="2">template&lt;typename U , typename DummyT &gt; </td></tr>
-<tr class="memitem:a1287a0127835184e02a10608bbdd1dc5"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwpi_1_1ArrayRef.html#a1287a0127835184e02a10608bbdd1dc5">ArrayRef</a> (const <a class="el" href="classwpi_1_1SmallVectorTemplateCommon.html">SmallVectorTemplateCommon</a>&lt; U *, DummyT &gt; &amp;Vec, typename std::enable_if&lt; std::is_convertible&lt; U *const *, T const * &gt;::value &gt;::type *=nullptr)</td></tr>
+<tr class="memitem:a1287a0127835184e02a10608bbdd1dc5"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwpi_1_1ArrayRef.html#a1287a0127835184e02a10608bbdd1dc5">ArrayRef</a> (const <a class="el" href="classwpi_1_1SmallVectorTemplateCommon.html">SmallVectorTemplateCommon</a>&lt; U *, DummyT &gt; &amp;Vec, typename std::enable_if&lt; std::is_convertible&lt; U *const *, T const * &gt;::<a class="el" href="classvalue.html">value</a> &gt;::type *=nullptr)</td></tr>
 <tr class="memdesc:a1287a0127835184e02a10608bbdd1dc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an ArrayRef&lt;const T*&gt; from a SmallVector&lt;T*&gt;.  <a href="classwpi_1_1ArrayRef.html#a1287a0127835184e02a10608bbdd1dc5">More...</a><br /></td></tr>
 <tr class="separator:a1287a0127835184e02a10608bbdd1dc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33da6ac3337af6dbd5f424b518ad6fd7"><td class="memTemplParams" colspan="2">template&lt;typename U , typename A &gt; </td></tr>
-<tr class="memitem:a33da6ac3337af6dbd5f424b518ad6fd7"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwpi_1_1ArrayRef.html#a33da6ac3337af6dbd5f424b518ad6fd7">ArrayRef</a> (const std::vector&lt; U *, A &gt; &amp;Vec, typename std::enable_if&lt; std::is_convertible&lt; U *const *, T const * &gt;::value &gt;::type *=0)</td></tr>
+<tr class="memitem:a33da6ac3337af6dbd5f424b518ad6fd7"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwpi_1_1ArrayRef.html#a33da6ac3337af6dbd5f424b518ad6fd7">ArrayRef</a> (const std::vector&lt; U *, A &gt; &amp;Vec, typename std::enable_if&lt; std::is_convertible&lt; U *const *, T const * &gt;::<a class="el" href="classvalue.html">value</a> &gt;::type *=0)</td></tr>
 <tr class="memdesc:a33da6ac3337af6dbd5f424b518ad6fd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an ArrayRef&lt;const T*&gt; from std::vector&lt;T*&gt;.  <a href="classwpi_1_1ArrayRef.html#a33da6ac3337af6dbd5f424b518ad6fd7">More...</a><br /></td></tr>
 <tr class="separator:a33da6ac3337af6dbd5f424b518ad6fd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f200c75bf6375913b53271471f9768b"><td class="memItemLeft" align="right" valign="top"><a id="a3f200c75bf6375913b53271471f9768b"></a>
@@ -281,11 +281,11 @@ template&lt;class PredicateT &gt; </td></tr>
 const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (size_t Index) const</td></tr>
 <tr class="separator:a8d6c23f91ac1381c124c96d9e62f71f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e56d01dc8748d270d4905d5443bd8b2"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
-<tr class="memitem:a0e56d01dc8748d270d4905d5443bd8b2"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; std::is_same&lt; U, T &gt;::value, <a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt; T &gt; &gt;::type &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwpi_1_1ArrayRef.html#a0e56d01dc8748d270d4905d5443bd8b2">operator=</a> (U &amp;&amp;Temporary)=delete</td></tr>
+<tr class="memitem:a0e56d01dc8748d270d4905d5443bd8b2"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; std::is_same&lt; U, T &gt;::<a class="el" href="classvalue.html">value</a>, <a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt; T &gt; &gt;::type &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwpi_1_1ArrayRef.html#a0e56d01dc8748d270d4905d5443bd8b2">operator=</a> (U &amp;&amp;Temporary)=delete</td></tr>
 <tr class="memdesc:a0e56d01dc8748d270d4905d5443bd8b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disallow accidental assignment from a temporary.  <a href="classwpi_1_1ArrayRef.html#a0e56d01dc8748d270d4905d5443bd8b2">More...</a><br /></td></tr>
 <tr class="separator:a0e56d01dc8748d270d4905d5443bd8b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfda87f9e10775c058be5c52c9fb7aed"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
-<tr class="memitem:acfda87f9e10775c058be5c52c9fb7aed"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; std::is_same&lt; U, T &gt;::value, <a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt; T &gt; &gt;::type &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwpi_1_1ArrayRef.html#acfda87f9e10775c058be5c52c9fb7aed">operator=</a> (std::initializer_list&lt; U &gt;)=delete</td></tr>
+<tr class="memitem:acfda87f9e10775c058be5c52c9fb7aed"><td class="memTemplItemLeft" align="right" valign="top">std::enable_if&lt; std::is_same&lt; U, T &gt;::<a class="el" href="classvalue.html">value</a>, <a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt; T &gt; &gt;::type &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwpi_1_1ArrayRef.html#acfda87f9e10775c058be5c52c9fb7aed">operator=</a> (std::initializer_list&lt; U &gt;)=delete</td></tr>
 <tr class="memdesc:acfda87f9e10775c058be5c52c9fb7aed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disallow accidental assignment from a temporary.  <a href="classwpi_1_1ArrayRef.html#acfda87f9e10775c058be5c52c9fb7aed">More...</a><br /></td></tr>
 <tr class="separator:acfda87f9e10775c058be5c52c9fb7aed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Expensive Operations</div></td></tr>
@@ -364,7 +364,7 @@ template&lt;typename U &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">typename std::enable_if&lt; std::is_convertible&lt; U *const *, T const * &gt;::value &gt;::type *&#160;</td>
+          <td class="paramtype">typename std::enable_if&lt; std::is_convertible&lt; U *const *, T const * &gt;::<a class="el" href="classvalue.html">value</a> &gt;::type *&#160;</td>
           <td class="paramname"> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
@@ -407,7 +407,7 @@ template&lt;typename U , typename DummyT &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">typename std::enable_if&lt; std::is_convertible&lt; U *const *, T const * &gt;::value &gt;::type *&#160;</td>
+          <td class="paramtype">typename std::enable_if&lt; std::is_convertible&lt; U *const *, T const * &gt;::<a class="el" href="classvalue.html">value</a> &gt;::type *&#160;</td>
           <td class="paramname"> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
@@ -450,7 +450,7 @@ template&lt;typename U , typename A &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">typename std::enable_if&lt; std::is_convertible&lt; U *const *, T const * &gt;::value &gt;::type *&#160;</td>
+          <td class="paramtype">typename std::enable_if&lt; std::is_convertible&lt; U *const *, T const * &gt;::<a class="el" href="classvalue.html">value</a> &gt;::type *&#160;</td>
           <td class="paramname"> = <code>0</code>&#160;</td>
         </tr>
         <tr>
@@ -486,7 +486,7 @@ template&lt;typename U &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::enable_if&lt;std::is_same&lt;U, T&gt;::value, <a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt;T&gt; &gt;::type&amp; <a class="el" href="classwpi_1_1ArrayRef.html">wpi::ArrayRef</a>&lt; T &gt;::operator= </td>
+          <td class="memname">std::enable_if&lt;std::is_same&lt;U, T&gt;::<a class="el" href="classvalue.html">value</a>, <a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt;T&gt; &gt;::type&amp; <a class="el" href="classwpi_1_1ArrayRef.html">wpi::ArrayRef</a>&lt; T &gt;::operator= </td>
           <td>(</td>
           <td class="paramtype">std::initializer_list&lt; U &gt;&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -519,7 +519,7 @@ template&lt;typename U &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::enable_if&lt;std::is_same&lt;U, T&gt;::value, <a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt;T&gt; &gt;::type&amp; <a class="el" href="classwpi_1_1ArrayRef.html">wpi::ArrayRef</a>&lt; T &gt;::operator= </td>
+          <td class="memname">std::enable_if&lt;std::is_same&lt;U, T&gt;::<a class="el" href="classvalue.html">value</a>, <a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt;T&gt; &gt;::type&amp; <a class="el" href="classwpi_1_1ArrayRef.html">wpi::ArrayRef</a>&lt; T &gt;::operator= </td>
           <td>(</td>
           <td class="paramtype">U &amp;&amp;&#160;</td>
           <td class="paramname"><em>Temporary</em></td><td>)</td>
@@ -547,7 +547,7 @@ template&lt;typename U &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>wpi</b></li><li class="navelem"><a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a></li>
-    <li class="footer">Generated on Sun May 23 2021 22:29:22 for WPILibC++ by
+    <li class="footer">Generated on Tue May 25 2021 07:01:42 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

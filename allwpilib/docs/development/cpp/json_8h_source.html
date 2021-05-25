@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-60-g4426216</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-61-g87603e4</span>
    </div>
   </td>
  </tr>
@@ -285,7 +285,7 @@ $(document).ready(function(){initNavTree('json_8h_source.html',''); initResizabl
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> RealType, <span class="keyword">class</span> CompatibleObjectType&gt;</div>
 <div class="line"><a name="l00239"></a><span class="lineno"><a class="line" href="structwpi_1_1detail_1_1is__compatible__object__type__impl_3_01true_00_01RealType_00_01CompatibleObjectType_01_4.html">  239</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structwpi_1_1detail_1_1is__compatible__object__type__impl.html">is_compatible_object_type_impl</a>&lt;true, RealType, CompatibleObjectType&gt;</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;{</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <span class="keyword">static</span> constexpr <span class="keyword">auto</span> value =</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <span class="keyword">static</span> constexpr <span class="keyword">auto</span> <a class="code" href="classvalue.html">value</a> =</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        std::is_constructible&lt;StringRef, typename CompatibleObjectType::key_type&gt;::value and</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        std::is_constructible&lt;typename RealType::mapped_type, typename CompatibleObjectType::mapped_type&gt;::value;</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;};</div>
@@ -293,17 +293,17 @@ $(document).ready(function(){initNavTree('json_8h_source.html',''); initResizabl
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> BasicJsonType, <span class="keyword">class</span> CompatibleObjectType&gt;</div>
 <div class="line"><a name="l00247"></a><span class="lineno"><a class="line" href="structwpi_1_1detail_1_1is__compatible__object__type.html">  247</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structwpi_1_1detail_1_1is__compatible__object__type.html">is_compatible_object_type</a></div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;{</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="keyword">static</span> <span class="keyword">auto</span> constexpr value = <a class="code" href="structwpi_1_1detail_1_1is__compatible__object__type__impl.html">is_compatible_object_type_impl</a> &lt;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="keyword">static</span> <span class="keyword">auto</span> constexpr <a class="code" href="classvalue.html">value</a> = <a class="code" href="structwpi_1_1detail_1_1is__compatible__object__type__impl.html">is_compatible_object_type_impl</a> &lt;</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                                  std::conjunction&lt;std::negation&lt;std::is_same&lt;void, CompatibleObjectType&gt;&gt;,</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;                                  has_mapped_type&lt;CompatibleObjectType&gt;,</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                                  has_key_type&lt;CompatibleObjectType&gt;&gt;::value,</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                                  <span class="keyword">typename</span> BasicJsonType::object_t, CompatibleObjectType &gt;::value;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                                  has_key_type&lt;CompatibleObjectType&gt;&gt;<a class="code" href="classvalue.html">::value</a>,</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                                  <span class="keyword">typename</span> BasicJsonType::object_t, CompatibleObjectType &gt;<a class="code" href="classvalue.html">::value</a>;</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;};</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160; </div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> BasicJsonType, <span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00257"></a><span class="lineno"><a class="line" href="structwpi_1_1detail_1_1is__json__nested__type.html">  257</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structwpi_1_1detail_1_1is__json__nested__type.html">is_json_nested_type</a></div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;{</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="keyword">static</span> <span class="keyword">auto</span> constexpr value = std::is_same&lt;T, typename BasicJsonType::iterator&gt;::value or</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="keyword">static</span> <span class="keyword">auto</span> constexpr <a class="code" href="classvalue.html">value</a> = std::is_same&lt;T, typename BasicJsonType::iterator&gt;::value or</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                                  std::is_same&lt;T, typename BasicJsonType::const_iterator&gt;::value or</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;                                  std::is_same&lt;T, typename BasicJsonType::reverse_iterator&gt;::value or</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;                                  std::is_same&lt;T, typename BasicJsonType::const_reverse_iterator&gt;::value;</div>
@@ -312,7 +312,7 @@ $(document).ready(function(){initNavTree('json_8h_source.html',''); initResizabl
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> BasicJsonType, <span class="keyword">class</span> CompatibleArrayType&gt;</div>
 <div class="line"><a name="l00266"></a><span class="lineno"><a class="line" href="structwpi_1_1detail_1_1is__compatible__array__type.html">  266</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structwpi_1_1detail_1_1is__compatible__array__type.html">is_compatible_array_type</a></div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;{</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <span class="keyword">static</span> <span class="keyword">auto</span> constexpr value =</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <span class="keyword">static</span> <span class="keyword">auto</span> constexpr <a class="code" href="classvalue.html">value</a> =</div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        std::conjunction&lt;std::negation&lt;std::is_same&lt;void, CompatibleArrayType&gt;&gt;,</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        std::negation&lt;<a class="code" href="structwpi_1_1detail_1_1is__compatible__object__type.html">is_compatible_object_type</a>&lt;</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        BasicJsonType, CompatibleArrayType&gt;&gt;,</div>
@@ -320,7 +320,7 @@ $(document).ready(function(){initNavTree('json_8h_source.html',''); initResizabl
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        CompatibleArrayType&gt;&gt;,</div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        std::negation&lt;is_json_nested_type&lt;BasicJsonType, CompatibleArrayType&gt;&gt;,</div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        has_value_type&lt;CompatibleArrayType&gt;,</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        has_iterator&lt;CompatibleArrayType&gt;&gt;::value;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        has_iterator&lt;CompatibleArrayType&gt;&gt;<a class="code" href="classvalue.html">::value</a>;</div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;};</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160; </div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;<span class="keyword">template</span>&lt;<span class="keywordtype">bool</span>, <span class="keyword">typename</span>, <span class="keyword">typename</span>&gt;</div>
@@ -333,7 +333,7 @@ $(document).ready(function(){initNavTree('json_8h_source.html',''); initResizabl
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    <span class="keyword">using</span> RealLimits = std::numeric_limits&lt;RealIntegerType&gt;;</div>
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    <span class="keyword">using</span> CompatibleLimits = std::numeric_limits&lt;CompatibleNumberIntegerType&gt;;</div>
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160; </div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <span class="keyword">static</span> constexpr <span class="keyword">auto</span> value =</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <span class="keyword">static</span> constexpr <span class="keyword">auto</span> <a class="code" href="classvalue.html">value</a> =</div>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        std::is_constructible&lt;RealIntegerType, CompatibleNumberIntegerType&gt;::value and</div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        CompatibleLimits::is_integer and</div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        RealLimits::is_signed == CompatibleLimits::is_signed;</div>
@@ -342,11 +342,11 @@ $(document).ready(function(){initNavTree('json_8h_source.html',''); initResizabl
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> RealIntegerType, <span class="keyword">typename</span> CompatibleNumberIntegerType&gt;</div>
 <div class="line"><a name="l00296"></a><span class="lineno"><a class="line" href="structwpi_1_1detail_1_1is__compatible__integer__type.html">  296</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structwpi_1_1detail_1_1is__compatible__integer__type.html">is_compatible_integer_type</a></div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;{</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="keyword">static</span> constexpr <span class="keyword">auto</span> value =</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="keyword">static</span> constexpr <span class="keyword">auto</span> <a class="code" href="classvalue.html">value</a> =</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        <a class="code" href="structwpi_1_1detail_1_1is__compatible__integer__type__impl.html">is_compatible_integer_type_impl</a> &lt;</div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        std::is_integral&lt;CompatibleNumberIntegerType&gt;::value and</div>
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        not std::is_same&lt;bool, CompatibleNumberIntegerType&gt;::value,</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        RealIntegerType, CompatibleNumberIntegerType &gt; ::value;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        RealIntegerType, CompatibleNumberIntegerType &gt; <a class="code" href="classvalue.html">::value</a>;</div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;};</div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160; </div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="comment">// trait checking if JSONSerializer&lt;T&gt;::from_json(json const&amp;, udt&amp;) exists</span></div>
@@ -361,8 +361,8 @@ $(document).ready(function(){initNavTree('json_8h_source.html',''); initResizabl
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> detect(...);</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160; </div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">bool</span> value = std::is_integral&lt;decltype(</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;                                      detect(std::declval&lt;<span class="keyword">typename</span> BasicJsonType::template json_serializer&lt;T, void&gt;&gt;()))&gt;::value;</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="classvalue.html">value</a> = std::is_integral&lt;decltype(</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;                                      detect(std::declval&lt;<span class="keyword">typename</span> BasicJsonType::template json_serializer&lt;T, void&gt;&gt;()))&gt;<a class="code" href="classvalue.html">::value</a>;</div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;};</div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160; </div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;<span class="comment">// This trait checks if JSONSerializer&lt;T&gt;::from_json(json const&amp;) exists</span></div>
@@ -374,13 +374,13 @@ $(document).ready(function(){initNavTree('json_8h_source.html',''); initResizabl
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <span class="keyword">template</span> &lt;</div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        <span class="keyword">typename</span> U,</div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        <span class="keyword">typename</span> = enable_if_t&lt;std::is_same&lt;</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;                                   T, decltype(uncvref_t&lt;U&gt;::from_json(std::declval&lt;BasicJsonType&gt;()))&gt;::value &gt;&gt;</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;                                   T, decltype(uncvref_t&lt;U&gt;::from_json(std::declval&lt;BasicJsonType&gt;()))&gt;<a class="code" href="classvalue.html">::value</a> &gt;&gt;</div>
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> detect(U&amp;&amp;);</div>
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> detect(...);</div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160; </div>
 <div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">bool</span> value = std::is_integral&lt;decltype(detect(</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;                                      std::declval&lt;<span class="keyword">typename</span> BasicJsonType::template json_serializer&lt;T, void&gt;&gt;()))&gt;::value;</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="classvalue.html">value</a> = std::is_integral&lt;decltype(detect(</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;                                      std::declval&lt;<span class="keyword">typename</span> BasicJsonType::template json_serializer&lt;T, void&gt;&gt;()))&gt;<a class="code" href="classvalue.html">::value</a>;</div>
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;};</div>
 <div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160; </div>
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;<span class="comment">// This trait checks if BasicJsonType::json_serializer&lt;T&gt;::to_json exists</span></div>
@@ -394,14 +394,14 @@ $(document).ready(function(){initNavTree('json_8h_source.html',''); initResizabl
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> detect(...);</div>
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160; </div>
 <div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">bool</span> value = std::is_integral&lt;decltype(detect(</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;                                      std::declval&lt;<span class="keyword">typename</span> BasicJsonType::template json_serializer&lt;T, void&gt;&gt;()))&gt;::value;</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="classvalue.html">value</a> = std::is_integral&lt;decltype(detect(</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;                                      std::declval&lt;<span class="keyword">typename</span> BasicJsonType::template json_serializer&lt;T, void&gt;&gt;()))&gt;<a class="code" href="classvalue.html">::value</a>;</div>
 <div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;};</div>
 <div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160; </div>
 <div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> BasicJsonType, <span class="keyword">typename</span> CompatibleCompleteType&gt;</div>
 <div class="line"><a name="l00355"></a><span class="lineno"><a class="line" href="structwpi_1_1detail_1_1is__compatible__complete__type.html">  355</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structwpi_1_1detail_1_1is__compatible__complete__type.html">is_compatible_complete_type</a></div>
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;{</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">bool</span> value =</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="classvalue.html">value</a> =</div>
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        not std::is_base_of&lt;std::istream, CompatibleCompleteType&gt;::value and</div>
 <div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        not <a class="code" href="structwpi_1_1detail_1_1is__json.html">is_json&lt;CompatibleCompleteType&gt;::value</a> and</div>
 <div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        not <a class="code" href="structwpi_1_1detail_1_1is__json__nested__type.html">is_json_nested_type&lt;BasicJsonType, CompatibleCompleteType&gt;::value</a> and</div>
@@ -419,7 +419,7 @@ $(document).ready(function(){initNavTree('json_8h_source.html',''); initResizabl
 <div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00373"></a><span class="lineno"><a class="line" href="structwpi_1_1detail_1_1static__const.html">  373</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structwpi_1_1detail_1_1static__const.html">static_const</a></div>
 <div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;{</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    <span class="keyword">static</span> constexpr T value{};</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    <span class="keyword">static</span> constexpr T <a class="code" href="classvalue.html">value</a>{};</div>
 <div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;};</div>
 <div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160; </div>
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
@@ -654,9 +654,9 @@ $(document).ready(function(){initNavTree('json_8h_source.html',''); initResizabl
 <div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;    enable_if_t &lt;</div>
 <div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;        is_compatible_array_type&lt;BasicJsonType, CompatibleArrayType&gt;::value and</div>
 <div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;        not std::is_same&lt;<span class="keyword">typename</span> BasicJsonType::array_t,</div>
-<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;                         CompatibleArrayType&gt;::value and</div>
+<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;                         CompatibleArrayType&gt;<a class="code" href="classvalue.html">::value</a> and</div>
 <div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;        std::is_constructible &lt;</div>
-<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;            BasicJsonType, <span class="keyword">typename</span> CompatibleArrayType::value_type &gt;::value,</div>
+<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;            BasicJsonType, <span class="keyword">typename</span> CompatibleArrayType::value_type &gt;<a class="code" href="classvalue.html">::value</a>,</div>
 <div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;        <span class="keywordtype">int</span> &gt; = 0 &gt;</div>
 <div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;<span class="keywordtype">void</span> from_json(<span class="keyword">const</span> BasicJsonType&amp; j, CompatibleArrayType&amp; arr)</div>
 <div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;{</div>
@@ -1066,7 +1066,7 @@ $(document).ready(function(){initNavTree('json_8h_source.html',''); initResizabl
 <div class="line"><a name="l01283"></a><span class="lineno"> 1283</span>&#160;}</div>
 <div class="line"><a name="l01284"></a><span class="lineno"> 1284</span>&#160; </div>
 <div class="line"><a name="l01285"></a><span class="lineno"> 1285</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> BasicJsonType, <span class="keyword">typename</span> T, std::size_t N,</div>
-<div class="line"><a name="l01286"></a><span class="lineno"> 1286</span>&#160;         enable_if_t&lt;not std::is_constructible&lt;StringRef, T (&amp;)[N]&gt;::value, <span class="keywordtype">int</span>&gt; = 0&gt;</div>
+<div class="line"><a name="l01286"></a><span class="lineno"> 1286</span>&#160;         enable_if_t&lt;not std::is_constructible&lt;StringRef, T (&amp;)[N]&gt;<a class="code" href="classvalue.html">::value</a>, <span class="keywordtype">int</span>&gt; = 0&gt;</div>
 <div class="line"><a name="l01287"></a><span class="lineno"> 1287</span>&#160;<span class="keywordtype">void</span> to_json(BasicJsonType&amp; j, T (&amp;arr)[N])</div>
 <div class="line"><a name="l01288"></a><span class="lineno"> 1288</span>&#160;{</div>
 <div class="line"><a name="l01289"></a><span class="lineno"> 1289</span>&#160;    external_constructor&lt;value_t::array&gt;::construct(j, arr);</div>
@@ -1258,7 +1258,7 @@ $(document).ready(function(){initNavTree('json_8h_source.html',''); initResizabl
 <div class="line"><a name="l01510"></a><span class="lineno"> 1510</span>&#160;    <span class="keyword">using</span> object_t = <span class="keyword">typename</span> BasicJsonType::object_t;</div>
 <div class="line"><a name="l01511"></a><span class="lineno"> 1511</span>&#160;    <span class="keyword">using</span> array_t = <span class="keyword">typename</span> BasicJsonType::array_t;</div>
 <div class="line"><a name="l01512"></a><span class="lineno"> 1512</span>&#160;    <span class="comment">// make sure BasicJsonType is json or const json</span></div>
-<div class="line"><a name="l01513"></a><span class="lineno"> 1513</span>&#160;    static_assert(<a class="code" href="structwpi_1_1detail_1_1is__json.html">is_json</a>&lt;<span class="keyword">typename</span> std::remove_const&lt;BasicJsonType&gt;::type&gt;::<a class="code" href="classwpi_1_1detail_1_1iter__impl.html#a9fa458ba5099ae88fd85f749ffeebcc3">value</a>,</div>
+<div class="line"><a name="l01513"></a><span class="lineno"> 1513</span>&#160;    static_assert(<a class="code" href="structwpi_1_1detail_1_1is__json.html">is_json</a>&lt;<span class="keyword">typename</span> std::remove_const&lt;BasicJsonType&gt;::type&gt;::<a class="code" href="classvalue.html">value</a>,</div>
 <div class="line"><a name="l01514"></a><span class="lineno"> 1514</span>&#160;                  <span class="stringliteral">&quot;iter_impl only accepts (const) json&quot;</span>);</div>
 <div class="line"><a name="l01515"></a><span class="lineno"> 1515</span>&#160; </div>
 <div class="line"><a name="l01516"></a><span class="lineno"> 1516</span>&#160;  <span class="keyword">public</span>:</div>
@@ -1740,7 +1740,7 @@ $(document).ready(function(){initNavTree('json_8h_source.html',''); initResizabl
 <div class="line"><a name="l02130"></a><span class="lineno"> 2130</span>&#160;            }</div>
 <div class="line"><a name="l02131"></a><span class="lineno"> 2131</span>&#160;        }</div>
 <div class="line"><a name="l02132"></a><span class="lineno"> 2132</span>&#160; </div>
-<div class="line"><a name="l02134"></a><span class="lineno"> 2134</span>&#160;        <span class="keyword">typename</span> IteratorType::reference value()<span class="keyword"> const</span></div>
+<div class="line"><a name="l02134"></a><span class="lineno"> 2134</span>&#160;        <span class="keyword">typename</span> IteratorType::reference <a class="code" href="classvalue.html">value</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l02135"></a><span class="lineno"> 2135</span>&#160;<span class="keyword">        </span>{</div>
 <div class="line"><a name="l02136"></a><span class="lineno"> 2136</span>&#160;            <span class="keywordflow">return</span> anchor.value();</div>
 <div class="line"><a name="l02137"></a><span class="lineno"> 2137</span>&#160;        }</div>
@@ -1842,12 +1842,12 @@ $(document).ready(function(){initNavTree('json_8h_source.html',''); initResizabl
 <div class="line"><a name="l02272"></a><span class="lineno"> 2272</span>&#160;  <span class="keyword">public</span>:</div>
 <div class="line"><a name="l02273"></a><span class="lineno"> 2273</span>&#160;    <span class="keyword">using</span> value_type = BasicJsonType;</div>
 <div class="line"><a name="l02274"></a><span class="lineno"> 2274</span>&#160; </div>
-<div class="line"><a name="l02275"></a><span class="lineno"> 2275</span>&#160;    <a class="code" href="classwpi_1_1detail_1_1json__ref.html">json_ref</a>(value_type&amp;&amp; value)</div>
-<div class="line"><a name="l02276"></a><span class="lineno"> 2276</span>&#160;        : owned_value(std::move(value)), value_ref(&amp;owned_value), is_rvalue(<span class="keyword">true</span>)</div>
+<div class="line"><a name="l02275"></a><span class="lineno"> 2275</span>&#160;    <a class="code" href="classwpi_1_1detail_1_1json__ref.html">json_ref</a>(value_type&amp;&amp; <a class="code" href="classvalue.html">value</a>)</div>
+<div class="line"><a name="l02276"></a><span class="lineno"> 2276</span>&#160;        : owned_value(std::move(<a class="code" href="classvalue.html">value</a>)), value_ref(&amp;owned_value), is_rvalue(<span class="keyword">true</span>)</div>
 <div class="line"><a name="l02277"></a><span class="lineno"> 2277</span>&#160;    {}</div>
 <div class="line"><a name="l02278"></a><span class="lineno"> 2278</span>&#160; </div>
-<div class="line"><a name="l02279"></a><span class="lineno"> 2279</span>&#160;    <a class="code" href="classwpi_1_1detail_1_1json__ref.html">json_ref</a>(<span class="keyword">const</span> value_type&amp; value)</div>
-<div class="line"><a name="l02280"></a><span class="lineno"> 2280</span>&#160;        : value_ref(<span class="keyword">const_cast&lt;</span>value_type*<span class="keyword">&gt;</span>(&amp;value)), is_rvalue(<span class="keyword">false</span>)</div>
+<div class="line"><a name="l02279"></a><span class="lineno"> 2279</span>&#160;    <a class="code" href="classwpi_1_1detail_1_1json__ref.html">json_ref</a>(<span class="keyword">const</span> value_type&amp; <a class="code" href="classvalue.html">value</a>)</div>
+<div class="line"><a name="l02280"></a><span class="lineno"> 2280</span>&#160;        : value_ref(<span class="keyword">const_cast&lt;</span>value_type*<span class="keyword">&gt;</span>(&amp;<a class="code" href="classvalue.html">value</a>)), is_rvalue(<span class="keyword">false</span>)</div>
 <div class="line"><a name="l02281"></a><span class="lineno"> 2281</span>&#160;    {}</div>
 <div class="line"><a name="l02282"></a><span class="lineno"> 2282</span>&#160; </div>
 <div class="line"><a name="l02283"></a><span class="lineno"> 2283</span>&#160;    <a class="code" href="classwpi_1_1detail_1_1json__ref.html">json_ref</a>(std::initializer_list&lt;json_ref&gt; init)</div>
@@ -1960,11 +1960,11 @@ $(document).ready(function(){initNavTree('json_8h_source.html',''); initResizabl
 <div class="line"><a name="l02515"></a><span class="lineno"> 2515</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> unescape(std::string&amp; s);</div>
 <div class="line"><a name="l02516"></a><span class="lineno"> 2516</span>&#160; </div>
 <div class="line"><a name="l02524"></a><span class="lineno"> 2524</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> flatten(<span class="keyword">const</span> Twine&amp; reference_string,</div>
-<div class="line"><a name="l02525"></a><span class="lineno"> 2525</span>&#160;                        <span class="keyword">const</span> json&amp; value,</div>
+<div class="line"><a name="l02525"></a><span class="lineno"> 2525</span>&#160;                        <span class="keyword">const</span> json&amp; <a class="code" href="classvalue.html">value</a>,</div>
 <div class="line"><a name="l02526"></a><span class="lineno"> 2526</span>&#160;                        json&amp; result);</div>
 <div class="line"><a name="l02527"></a><span class="lineno"> 2527</span>&#160; </div>
 <div class="line"><a name="l02538"></a><span class="lineno"> 2538</span>&#160;    <span class="keyword">static</span> json</div>
-<div class="line"><a name="l02539"></a><span class="lineno"> 2539</span>&#160;    unflatten(<span class="keyword">const</span> json&amp; value);</div>
+<div class="line"><a name="l02539"></a><span class="lineno"> 2539</span>&#160;    unflatten(<span class="keyword">const</span> json&amp; <a class="code" href="classvalue.html">value</a>);</div>
 <div class="line"><a name="l02540"></a><span class="lineno"> 2540</span>&#160; </div>
 <div class="line"><a name="l02541"></a><span class="lineno"> 2541</span>&#160;    <span class="keyword">friend</span> <span class="keywordtype">bool</span> operator==(<a class="code" href="classwpi_1_1json__pointer.html#ab97252fd52bc78d5ff6f2dad9b3c10ec">json_pointer</a> <span class="keyword">const</span>&amp; lhs,</div>
 <div class="line"><a name="l02542"></a><span class="lineno"> 2542</span>&#160;                           <a class="code" href="classwpi_1_1json__pointer.html#ab97252fd52bc78d5ff6f2dad9b3c10ec">json_pointer</a> <span class="keyword">const</span>&amp; rhs) noexcept</div>
@@ -2126,39 +2126,39 @@ $(document).ready(function(){initNavTree('json_8h_source.html',''); initResizabl
 <div class="line"><a name="l02968"></a><span class="lineno"> 2968</span>&#160;        json_value(<span class="keywordtype">double</span> v) noexcept : <a class="code" href="namespacewpi_1_1detail.html#a4f2a85d1c51cbd4c58d990499f793788ad9966ecb59667235a57b4b999a649eef">number_float</a>(v) {}</div>
 <div class="line"><a name="l02970"></a><span class="lineno"> 2970</span>&#160;        json_value(value_t t);</div>
 <div class="line"><a name="l02971"></a><span class="lineno"> 2971</span>&#160; </div>
-<div class="line"><a name="l02973"></a><span class="lineno"> 2973</span>&#160;        json_value(StringRef <a class="code" href="classwpi_1_1json.html#a50961342ef794c2a8d3387f2f72b16a4">value</a>)</div>
+<div class="line"><a name="l02973"></a><span class="lineno"> 2973</span>&#160;        json_value(StringRef <a class="code" href="classvalue.html">value</a>)</div>
 <div class="line"><a name="l02974"></a><span class="lineno"> 2974</span>&#160;        {</div>
-<div class="line"><a name="l02975"></a><span class="lineno"> 2975</span>&#160;            <span class="keywordtype">string</span> = create&lt;std::string&gt;(<a class="code" href="classwpi_1_1json.html#a50961342ef794c2a8d3387f2f72b16a4">value</a>);</div>
+<div class="line"><a name="l02975"></a><span class="lineno"> 2975</span>&#160;            <span class="keywordtype">string</span> = create&lt;std::string&gt;(<a class="code" href="classvalue.html">value</a>);</div>
 <div class="line"><a name="l02976"></a><span class="lineno"> 2976</span>&#160;        }</div>
 <div class="line"><a name="l02977"></a><span class="lineno"> 2977</span>&#160; </div>
-<div class="line"><a name="l02979"></a><span class="lineno"> 2979</span>&#160;        json_value(<span class="keyword">const</span> std::string&amp; <a class="code" href="classwpi_1_1json.html#a50961342ef794c2a8d3387f2f72b16a4">value</a>)</div>
+<div class="line"><a name="l02979"></a><span class="lineno"> 2979</span>&#160;        json_value(<span class="keyword">const</span> std::string&amp; <a class="code" href="classvalue.html">value</a>)</div>
 <div class="line"><a name="l02980"></a><span class="lineno"> 2980</span>&#160;        {</div>
-<div class="line"><a name="l02981"></a><span class="lineno"> 2981</span>&#160;            <span class="keywordtype">string</span> = create&lt;std::string&gt;(<a class="code" href="classwpi_1_1json.html#a50961342ef794c2a8d3387f2f72b16a4">value</a>);</div>
+<div class="line"><a name="l02981"></a><span class="lineno"> 2981</span>&#160;            <span class="keywordtype">string</span> = create&lt;std::string&gt;(<a class="code" href="classvalue.html">value</a>);</div>
 <div class="line"><a name="l02982"></a><span class="lineno"> 2982</span>&#160;        }</div>
 <div class="line"><a name="l02983"></a><span class="lineno"> 2983</span>&#160; </div>
-<div class="line"><a name="l02985"></a><span class="lineno"> 2985</span>&#160;        json_value(std::string&amp;&amp; <a class="code" href="classwpi_1_1json.html#a50961342ef794c2a8d3387f2f72b16a4">value</a>)</div>
+<div class="line"><a name="l02985"></a><span class="lineno"> 2985</span>&#160;        json_value(std::string&amp;&amp; <a class="code" href="classvalue.html">value</a>)</div>
 <div class="line"><a name="l02986"></a><span class="lineno"> 2986</span>&#160;        {</div>
-<div class="line"><a name="l02987"></a><span class="lineno"> 2987</span>&#160;            <span class="keywordtype">string</span> = create&lt;std::string&gt;(std::move(<a class="code" href="classwpi_1_1json.html#a50961342ef794c2a8d3387f2f72b16a4">value</a>));</div>
+<div class="line"><a name="l02987"></a><span class="lineno"> 2987</span>&#160;            <span class="keywordtype">string</span> = create&lt;std::string&gt;(std::move(<a class="code" href="classvalue.html">value</a>));</div>
 <div class="line"><a name="l02988"></a><span class="lineno"> 2988</span>&#160;        }</div>
 <div class="line"><a name="l02989"></a><span class="lineno"> 2989</span>&#160; </div>
-<div class="line"><a name="l02991"></a><span class="lineno"> 2991</span>&#160;        json_value(<span class="keyword">const</span> <a class="code" href="classwpi_1_1json.html#a5eaf3f4fbf3c4648c70050db480358d6">object_t</a>&amp; <a class="code" href="classwpi_1_1json.html#a50961342ef794c2a8d3387f2f72b16a4">value</a>)</div>
+<div class="line"><a name="l02991"></a><span class="lineno"> 2991</span>&#160;        json_value(<span class="keyword">const</span> <a class="code" href="classwpi_1_1json.html#a5eaf3f4fbf3c4648c70050db480358d6">object_t</a>&amp; <a class="code" href="classvalue.html">value</a>)</div>
 <div class="line"><a name="l02992"></a><span class="lineno"> 2992</span>&#160;        {</div>
-<div class="line"><a name="l02993"></a><span class="lineno"> 2993</span>&#160;            <span class="keywordtype">object</span> = create&lt;object_t&gt;(<a class="code" href="classwpi_1_1json.html#a50961342ef794c2a8d3387f2f72b16a4">value</a>);</div>
+<div class="line"><a name="l02993"></a><span class="lineno"> 2993</span>&#160;            <span class="keywordtype">object</span> = create&lt;object_t&gt;(<a class="code" href="classvalue.html">value</a>);</div>
 <div class="line"><a name="l02994"></a><span class="lineno"> 2994</span>&#160;        }</div>
 <div class="line"><a name="l02995"></a><span class="lineno"> 2995</span>&#160; </div>
-<div class="line"><a name="l02997"></a><span class="lineno"> 2997</span>&#160;        json_value(<a class="code" href="classwpi_1_1json.html#a5eaf3f4fbf3c4648c70050db480358d6">object_t</a>&amp;&amp; <a class="code" href="classwpi_1_1json.html#a50961342ef794c2a8d3387f2f72b16a4">value</a>)</div>
+<div class="line"><a name="l02997"></a><span class="lineno"> 2997</span>&#160;        json_value(<a class="code" href="classwpi_1_1json.html#a5eaf3f4fbf3c4648c70050db480358d6">object_t</a>&amp;&amp; <a class="code" href="classvalue.html">value</a>)</div>
 <div class="line"><a name="l02998"></a><span class="lineno"> 2998</span>&#160;        {</div>
-<div class="line"><a name="l02999"></a><span class="lineno"> 2999</span>&#160;            <span class="keywordtype">object</span> = create&lt;object_t&gt;(std::move(<a class="code" href="classwpi_1_1json.html#a50961342ef794c2a8d3387f2f72b16a4">value</a>));</div>
+<div class="line"><a name="l02999"></a><span class="lineno"> 2999</span>&#160;            <span class="keywordtype">object</span> = create&lt;object_t&gt;(std::move(<a class="code" href="classvalue.html">value</a>));</div>
 <div class="line"><a name="l03000"></a><span class="lineno"> 3000</span>&#160;        }</div>
 <div class="line"><a name="l03001"></a><span class="lineno"> 3001</span>&#160; </div>
-<div class="line"><a name="l03003"></a><span class="lineno"> 3003</span>&#160;        json_value(<span class="keyword">const</span> <a class="code" href="classwpi_1_1json.html#a12095ab10e9bed9fe0b30aadcd829460">array_t</a>&amp; <a class="code" href="classwpi_1_1json.html#a50961342ef794c2a8d3387f2f72b16a4">value</a>)</div>
+<div class="line"><a name="l03003"></a><span class="lineno"> 3003</span>&#160;        json_value(<span class="keyword">const</span> <a class="code" href="classwpi_1_1json.html#a12095ab10e9bed9fe0b30aadcd829460">array_t</a>&amp; <a class="code" href="classvalue.html">value</a>)</div>
 <div class="line"><a name="l03004"></a><span class="lineno"> 3004</span>&#160;        {</div>
-<div class="line"><a name="l03005"></a><span class="lineno"> 3005</span>&#160;            <a class="code" href="classwpi_1_1json.html#a1df2f83e3c8bc5c40efe756f85886fc7">array</a> = create&lt;array_t&gt;(<a class="code" href="classwpi_1_1json.html#a50961342ef794c2a8d3387f2f72b16a4">value</a>);</div>
+<div class="line"><a name="l03005"></a><span class="lineno"> 3005</span>&#160;            <a class="code" href="classwpi_1_1json.html#a1df2f83e3c8bc5c40efe756f85886fc7">array</a> = create&lt;array_t&gt;(<a class="code" href="classvalue.html">value</a>);</div>
 <div class="line"><a name="l03006"></a><span class="lineno"> 3006</span>&#160;        }</div>
 <div class="line"><a name="l03007"></a><span class="lineno"> 3007</span>&#160; </div>
-<div class="line"><a name="l03009"></a><span class="lineno"> 3009</span>&#160;        json_value(<a class="code" href="classwpi_1_1json.html#a12095ab10e9bed9fe0b30aadcd829460">array_t</a>&amp;&amp; <a class="code" href="classwpi_1_1json.html#a50961342ef794c2a8d3387f2f72b16a4">value</a>)</div>
+<div class="line"><a name="l03009"></a><span class="lineno"> 3009</span>&#160;        json_value(<a class="code" href="classwpi_1_1json.html#a12095ab10e9bed9fe0b30aadcd829460">array_t</a>&amp;&amp; <a class="code" href="classvalue.html">value</a>)</div>
 <div class="line"><a name="l03010"></a><span class="lineno"> 3010</span>&#160;        {</div>
-<div class="line"><a name="l03011"></a><span class="lineno"> 3011</span>&#160;            <a class="code" href="classwpi_1_1json.html#a1df2f83e3c8bc5c40efe756f85886fc7">array</a> = create&lt;array_t&gt;(std::move(<a class="code" href="classwpi_1_1json.html#a50961342ef794c2a8d3387f2f72b16a4">value</a>));</div>
+<div class="line"><a name="l03011"></a><span class="lineno"> 3011</span>&#160;            <a class="code" href="classwpi_1_1json.html#a1df2f83e3c8bc5c40efe756f85886fc7">array</a> = create&lt;array_t&gt;(std::move(<a class="code" href="classvalue.html">value</a>));</div>
 <div class="line"><a name="l03012"></a><span class="lineno"> 3012</span>&#160;        }</div>
 <div class="line"><a name="l03013"></a><span class="lineno"> 3013</span>&#160; </div>
 <div class="line"><a name="l03014"></a><span class="lineno"> 3014</span>&#160;        <span class="keywordtype">void</span> destroy(value_t t) noexcept;</div>
@@ -2181,7 +2181,7 @@ $(document).ready(function(){initNavTree('json_8h_source.html',''); initResizabl
 <div class="line"><a name="l03060"></a><span class="lineno"> 3060</span>&#160;        <a class="code" href="classwpi_1_1json.html#a8ccc68470f029327303a5d77559f6e79aa4388a3d92419edbb1c6efd4d52461f3">array_start</a>,</div>
 <div class="line"><a name="l03062"></a><span class="lineno"> 3062</span>&#160;        <a class="code" href="classwpi_1_1json.html#a8ccc68470f029327303a5d77559f6e79a49642fb732aa2e112188fba1f9d3ef7f">array_end</a>,</div>
 <div class="line"><a name="l03064"></a><span class="lineno"> 3064</span>&#160;        <a class="code" href="classwpi_1_1json.html#a8ccc68470f029327303a5d77559f6e79a3c6e0b8a9c15224a8228b9a98ca1531d">key</a>,</div>
-<div class="line"><a name="l03066"></a><span class="lineno"> 3066</span>&#160;        <a class="code" href="classwpi_1_1json.html#a8ccc68470f029327303a5d77559f6e79a2063c1608d6e0baf80249c42e2be5804">value</a></div>
+<div class="line"><a name="l03066"></a><span class="lineno"> 3066</span>&#160;        <a class="code" href="classvalue.html">value</a></div>
 <div class="line"><a name="l03067"></a><span class="lineno"> 3067</span>&#160;    };</div>
 <div class="line"><a name="l03068"></a><span class="lineno"> 3068</span>&#160; </div>
 <div class="line"><a name="l03118"></a><span class="lineno"><a class="line" href="classwpi_1_1json.html#ad117db0d938e5069fedb0a9b556205d7"> 3118</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="classwpi_1_1json.html#ad117db0d938e5069fedb0a9b556205d7">parser_callback_t</a> =</div>
@@ -2233,7 +2233,7 @@ $(document).ready(function(){initNavTree('json_8h_source.html',''); initResizabl
 <div class="line"><a name="l03445"></a><span class="lineno"> 3445</span>&#160; </div>
 <div class="line"><a name="l03501"></a><span class="lineno"> 3501</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class </span>InputIT, <span class="keyword">typename</span> std::enable_if&lt;</div>
 <div class="line"><a name="l03502"></a><span class="lineno"> 3502</span>&#160;                 std::is_same&lt;InputIT, typename json_t::iterator&gt;::value or</div>
-<div class="line"><a name="l03503"></a><span class="lineno"> 3503</span>&#160;                 std::is_same&lt;InputIT, typename json_t::const_iterator&gt;::value, <span class="keywordtype">int</span>&gt;<a class="code" href="classwpi_1_1json.html#a583403a6133147274036e0fcf5290bdd">::type</a> = 0&gt;</div>
+<div class="line"><a name="l03503"></a><span class="lineno"> 3503</span>&#160;                 std::is_same&lt;InputIT, typename json_t::const_iterator&gt;::value, <span class="keywordtype">int</span>&gt;::type = 0&gt;</div>
 <div class="line"><a name="l03504"></a><span class="lineno"><a class="line" href="classwpi_1_1json.html#a9e41a49afd4de6f5c0ce83a9af71d977"> 3504</a></span>&#160;    <a class="code" href="classwpi_1_1json.html#a9e41a49afd4de6f5c0ce83a9af71d977">json</a>(InputIT first, InputIT last)</div>
 <div class="line"><a name="l03505"></a><span class="lineno"> 3505</span>&#160;    {</div>
 <div class="line"><a name="l03506"></a><span class="lineno"> 3506</span>&#160;        assert(first.m_object != <span class="keyword">nullptr</span>);</div>
@@ -2587,7 +2587,7 @@ $(document).ready(function(){initNavTree('json_8h_source.html',''); initResizabl
 <div class="line"><a name="l04406"></a><span class="lineno"> 4406</span>&#160;    }</div>
 <div class="line"><a name="l04407"></a><span class="lineno"> 4407</span>&#160; </div>
 <div class="line"><a name="l04434"></a><span class="lineno"> 4434</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> PointerType, <span class="keyword">typename</span> std::enable_if&lt;</div>
-<div class="line"><a name="l04435"></a><span class="lineno"> 4435</span>&#160;                 std::is_pointer&lt;PointerType&gt;::value, <span class="keywordtype">int</span>&gt;<a class="code" href="classwpi_1_1json.html#a583403a6133147274036e0fcf5290bdd">::type</a> = 0&gt;</div>
+<div class="line"><a name="l04435"></a><span class="lineno"> 4435</span>&#160;                 std::is_pointer&lt;PointerType&gt;::value, <span class="keywordtype">int</span>&gt;::type = 0&gt;</div>
 <div class="line"><a name="l04436"></a><span class="lineno"><a class="line" href="classwpi_1_1json.html#a0adc47b88e0d9ec5dd8ffabcc9582bb5"> 4436</a></span>&#160;    PointerType <a class="code" href="classwpi_1_1json.html#a0adc47b88e0d9ec5dd8ffabcc9582bb5">get</a>() noexcept</div>
 <div class="line"><a name="l04437"></a><span class="lineno"> 4437</span>&#160;    {</div>
 <div class="line"><a name="l04438"></a><span class="lineno"> 4438</span>&#160;        <span class="comment">// delegate the call to get_ptr</span></div>
@@ -2595,7 +2595,7 @@ $(document).ready(function(){initNavTree('json_8h_source.html',''); initResizabl
 <div class="line"><a name="l04440"></a><span class="lineno"> 4440</span>&#160;    }</div>
 <div class="line"><a name="l04441"></a><span class="lineno"> 4441</span>&#160; </div>
 <div class="line"><a name="l04446"></a><span class="lineno"> 4446</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> PointerType, <span class="keyword">typename</span> std::enable_if&lt;</div>
-<div class="line"><a name="l04447"></a><span class="lineno"> 4447</span>&#160;                 std::is_pointer&lt;PointerType&gt;::value, <span class="keywordtype">int</span>&gt;<a class="code" href="classwpi_1_1json.html#a583403a6133147274036e0fcf5290bdd">::type</a> = 0&gt;</div>
+<div class="line"><a name="l04447"></a><span class="lineno"> 4447</span>&#160;                 std::is_pointer&lt;PointerType&gt;::value, <span class="keywordtype">int</span>&gt;::type = 0&gt;</div>
 <div class="line"><a name="l04448"></a><span class="lineno"><a class="line" href="classwpi_1_1json.html#aca4dd28128737aea5e6a9b4161daa24e"> 4448</a></span>&#160;    <span class="keyword">const</span> PointerType <a class="code" href="classwpi_1_1json.html#aca4dd28128737aea5e6a9b4161daa24e">get</a>() const noexcept</div>
 <div class="line"><a name="l04449"></a><span class="lineno"> 4449</span>&#160;    {</div>
 <div class="line"><a name="l04450"></a><span class="lineno"> 4450</span>&#160;        <span class="comment">// delegate the call to get_ptr</span></div>
@@ -2603,13 +2603,13 @@ $(document).ready(function(){initNavTree('json_8h_source.html',''); initResizabl
 <div class="line"><a name="l04452"></a><span class="lineno"> 4452</span>&#160;    }</div>
 <div class="line"><a name="l04453"></a><span class="lineno"> 4453</span>&#160; </div>
 <div class="line"><a name="l04479"></a><span class="lineno"> 4479</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> PointerType, <span class="keyword">typename</span> std::enable_if&lt;</div>
-<div class="line"><a name="l04480"></a><span class="lineno"> 4480</span>&#160;                 std::is_pointer&lt;PointerType&gt;::value, <span class="keywordtype">int</span>&gt;<a class="code" href="classwpi_1_1json.html#a583403a6133147274036e0fcf5290bdd">::type</a> = 0&gt;</div>
+<div class="line"><a name="l04480"></a><span class="lineno"> 4480</span>&#160;                 std::is_pointer&lt;PointerType&gt;::value, <span class="keywordtype">int</span>&gt;::type = 0&gt;</div>
 <div class="line"><a name="l04481"></a><span class="lineno"><a class="line" href="classwpi_1_1json.html#a6b8fa455e57073153bd089062e97ae9c"> 4481</a></span>&#160;    PointerType <a class="code" href="classwpi_1_1json.html#a6b8fa455e57073153bd089062e97ae9c">get_ptr</a>() noexcept</div>
 <div class="line"><a name="l04482"></a><span class="lineno"> 4482</span>&#160;    {</div>
 <div class="line"><a name="l04483"></a><span class="lineno"> 4483</span>&#160;        <span class="comment">// get the type of the PointerType (remove pointer and const)</span></div>
 <div class="line"><a name="l04484"></a><span class="lineno"> 4484</span>&#160;        <span class="keyword">using</span> pointee_t = <span class="keyword">typename</span> std::remove_const&lt;<span class="keyword">typename</span></div>
 <div class="line"><a name="l04485"></a><span class="lineno"> 4485</span>&#160;                          std::remove_pointer&lt;<span class="keyword">typename</span></div>
-<div class="line"><a name="l04486"></a><span class="lineno"> 4486</span>&#160;                          std::remove_const&lt;PointerType&gt;::type&gt;<a class="code" href="classwpi_1_1json.html#a583403a6133147274036e0fcf5290bdd">::type</a>&gt;<a class="code" href="classwpi_1_1json.html#a583403a6133147274036e0fcf5290bdd">::type</a>;</div>
+<div class="line"><a name="l04486"></a><span class="lineno"> 4486</span>&#160;                          std::remove_const&lt;PointerType&gt;::type&gt;::type&gt;<a class="code" href="classwpi_1_1json.html#a583403a6133147274036e0fcf5290bdd">::type</a>;</div>
 <div class="line"><a name="l04487"></a><span class="lineno"> 4487</span>&#160;        <span class="comment">// make sure the type matches the allowed types</span></div>
 <div class="line"><a name="l04488"></a><span class="lineno"> 4488</span>&#160;        static_assert(</div>
 <div class="line"><a name="l04489"></a><span class="lineno"> 4489</span>&#160;            std::is_same&lt;object_t, pointee_t&gt;::value</div>
@@ -2627,13 +2627,13 @@ $(document).ready(function(){initNavTree('json_8h_source.html',''); initResizabl
 <div class="line"><a name="l04501"></a><span class="lineno"> 4501</span>&#160; </div>
 <div class="line"><a name="l04506"></a><span class="lineno"> 4506</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> PointerType, <span class="keyword">typename</span> std::enable_if&lt;</div>
 <div class="line"><a name="l04507"></a><span class="lineno"> 4507</span>&#160;                 std::is_pointer&lt;PointerType&gt;::value and</div>
-<div class="line"><a name="l04508"></a><span class="lineno"> 4508</span>&#160;                 std::is_const&lt;typename std::remove_pointer&lt;PointerType&gt;::type&gt;<a class="code" href="classwpi_1_1json.html#a50961342ef794c2a8d3387f2f72b16a4">::value</a>, <span class="keywordtype">int</span>&gt;<a class="code" href="classwpi_1_1json.html#a583403a6133147274036e0fcf5290bdd">::type</a> = 0&gt;</div>
+<div class="line"><a name="l04508"></a><span class="lineno"> 4508</span>&#160;                 std::is_const&lt;typename std::remove_pointer&lt;PointerType&gt;::type&gt;<a class="code" href="classwpi_1_1json.html#a50961342ef794c2a8d3387f2f72b16a4">::value</a>, <span class="keywordtype">int</span>&gt;::type = 0&gt;</div>
 <div class="line"><a name="l04509"></a><span class="lineno"><a class="line" href="classwpi_1_1json.html#ac0f0ee606ad8e05edf772742f14abc34"> 4509</a></span>&#160;    <span class="keyword">const</span> PointerType <a class="code" href="classwpi_1_1json.html#ac0f0ee606ad8e05edf772742f14abc34">get_ptr</a>() const noexcept</div>
 <div class="line"><a name="l04510"></a><span class="lineno"> 4510</span>&#160;    {</div>
 <div class="line"><a name="l04511"></a><span class="lineno"> 4511</span>&#160;        <span class="comment">// get the type of the PointerType (remove pointer and const)</span></div>
 <div class="line"><a name="l04512"></a><span class="lineno"> 4512</span>&#160;        <span class="keyword">using</span> pointee_t = <span class="keyword">typename</span> std::remove_const&lt;<span class="keyword">typename</span></div>
 <div class="line"><a name="l04513"></a><span class="lineno"> 4513</span>&#160;                          std::remove_pointer&lt;<span class="keyword">typename</span></div>
-<div class="line"><a name="l04514"></a><span class="lineno"> 4514</span>&#160;                          std::remove_const&lt;PointerType&gt;::type&gt;<a class="code" href="classwpi_1_1json.html#a583403a6133147274036e0fcf5290bdd">::type</a>&gt;<a class="code" href="classwpi_1_1json.html#a583403a6133147274036e0fcf5290bdd">::type</a>;</div>
+<div class="line"><a name="l04514"></a><span class="lineno"> 4514</span>&#160;                          std::remove_const&lt;PointerType&gt;::type&gt;::type&gt;<a class="code" href="classwpi_1_1json.html#a583403a6133147274036e0fcf5290bdd">::type</a>;</div>
 <div class="line"><a name="l04515"></a><span class="lineno"> 4515</span>&#160;        <span class="comment">// make sure the type matches the allowed types</span></div>
 <div class="line"><a name="l04516"></a><span class="lineno"> 4516</span>&#160;        static_assert(</div>
 <div class="line"><a name="l04517"></a><span class="lineno"> 4517</span>&#160;            std::is_same&lt;object_t, pointee_t&gt;::value</div>
@@ -2650,7 +2650,7 @@ $(document).ready(function(){initNavTree('json_8h_source.html',''); initResizabl
 <div class="line"><a name="l04528"></a><span class="lineno"> 4528</span>&#160;    }</div>
 <div class="line"><a name="l04529"></a><span class="lineno"> 4529</span>&#160; </div>
 <div class="line"><a name="l04556"></a><span class="lineno"> 4556</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> ReferenceType, <span class="keyword">typename</span> std::enable_if&lt;</div>
-<div class="line"><a name="l04557"></a><span class="lineno"> 4557</span>&#160;                 std::is_reference&lt;ReferenceType&gt;::value, <span class="keywordtype">int</span>&gt;<a class="code" href="classwpi_1_1json.html#a583403a6133147274036e0fcf5290bdd">::type</a> = 0&gt;</div>
+<div class="line"><a name="l04557"></a><span class="lineno"> 4557</span>&#160;                 std::is_reference&lt;ReferenceType&gt;::value, <span class="keywordtype">int</span>&gt;::type = 0&gt;</div>
 <div class="line"><a name="l04558"></a><span class="lineno"><a class="line" href="classwpi_1_1json.html#a0029968c70b5be52a13de40f66914ad1"> 4558</a></span>&#160;    ReferenceType <a class="code" href="classwpi_1_1json.html#a0029968c70b5be52a13de40f66914ad1">get_ref</a>()</div>
 <div class="line"><a name="l04559"></a><span class="lineno"> 4559</span>&#160;    {</div>
 <div class="line"><a name="l04560"></a><span class="lineno"> 4560</span>&#160;        <span class="comment">// delegate call to get_ref_impl</span></div>
@@ -2659,7 +2659,7 @@ $(document).ready(function(){initNavTree('json_8h_source.html',''); initResizabl
 <div class="line"><a name="l04563"></a><span class="lineno"> 4563</span>&#160; </div>
 <div class="line"><a name="l04568"></a><span class="lineno"> 4568</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> ReferenceType, <span class="keyword">typename</span> std::enable_if&lt;</div>
 <div class="line"><a name="l04569"></a><span class="lineno"> 4569</span>&#160;                 std::is_reference&lt;ReferenceType&gt;::value and</div>
-<div class="line"><a name="l04570"></a><span class="lineno"> 4570</span>&#160;                 std::is_const&lt;typename std::remove_reference&lt;ReferenceType&gt;::type&gt;<a class="code" href="classwpi_1_1json.html#a50961342ef794c2a8d3387f2f72b16a4">::value</a>, <span class="keywordtype">int</span>&gt;<a class="code" href="classwpi_1_1json.html#a583403a6133147274036e0fcf5290bdd">::type</a> = 0&gt;</div>
+<div class="line"><a name="l04570"></a><span class="lineno"> 4570</span>&#160;                 std::is_const&lt;typename std::remove_reference&lt;ReferenceType&gt;::type&gt;<a class="code" href="classwpi_1_1json.html#a50961342ef794c2a8d3387f2f72b16a4">::value</a>, <span class="keywordtype">int</span>&gt;::type = 0&gt;</div>
 <div class="line"><a name="l04571"></a><span class="lineno"><a class="line" href="classwpi_1_1json.html#a0f7bc32632ca9bb729e8b360a152886f"> 4571</a></span>&#160;    ReferenceType <a class="code" href="classwpi_1_1json.html#a0f7bc32632ca9bb729e8b360a152886f">get_ref</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l04572"></a><span class="lineno"> 4572</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l04573"></a><span class="lineno"> 4573</span>&#160;        <span class="comment">// delegate call to get_ref_impl</span></div>
@@ -2668,14 +2668,14 @@ $(document).ready(function(){initNavTree('json_8h_source.html',''); initResizabl
 <div class="line"><a name="l04576"></a><span class="lineno"> 4576</span>&#160; </div>
 <div class="line"><a name="l04606"></a><span class="lineno"> 4606</span>&#160;    <span class="keyword">template</span> &lt; <span class="keyword">typename</span> ValueType, <span class="keyword">typename</span> std::enable_if &lt;</div>
 <div class="line"><a name="l04607"></a><span class="lineno"> 4607</span>&#160;                   not std::is_pointer&lt;ValueType&gt;::value and</div>
-<div class="line"><a name="l04608"></a><span class="lineno"> 4608</span>&#160;                   not std::is_same&lt;ValueType, detail::json_ref&lt;json&gt;&gt;<a class="code" href="classwpi_1_1json.html#a50961342ef794c2a8d3387f2f72b16a4">::value</a> and</div>
+<div class="line"><a name="l04608"></a><span class="lineno"> 4608</span>&#160;                   not std::is_same&lt;ValueType, detail::json_ref&lt;json&gt;&gt;<a class="code" href="classvalue.html">::value</a> and</div>
 <div class="line"><a name="l04609"></a><span class="lineno"> 4609</span>&#160;                   not std::is_same&lt;ValueType, std::string::value_type&gt;::value and</div>
 <div class="line"><a name="l04610"></a><span class="lineno"> 4610</span>&#160;                   not <a class="code" href="structwpi_1_1detail_1_1is__json.html">detail::is_json&lt;ValueType&gt;::value</a></div>
 <div class="line"><a name="l04611"></a><span class="lineno"> 4611</span>&#160;<span class="preprocessor">#ifndef _MSC_VER  // fix for issue #167 operator&lt;&lt; ambiguity under VS2015</span></div>
-<div class="line"><a name="l04612"></a><span class="lineno"> 4612</span>&#160;                   and not std::is_same&lt;ValueType, std::initializer_list&lt;std::string::value_type&gt;&gt;<a class="code" href="classwpi_1_1json.html#a50961342ef794c2a8d3387f2f72b16a4">::value</a></div>
+<div class="line"><a name="l04612"></a><span class="lineno"> 4612</span>&#160;                   and not std::is_same&lt;ValueType, std::initializer_list&lt;std::string::value_type&gt;&gt;<a class="code" href="classvalue.html">::value</a></div>
 <div class="line"><a name="l04613"></a><span class="lineno"> 4613</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l04614"></a><span class="lineno"> 4614</span>&#160;                   and not std::is_same&lt;ValueType, typename std::string_view&gt;::value</div>
-<div class="line"><a name="l04615"></a><span class="lineno"> 4615</span>&#160;                   , <span class="keywordtype">int</span> &gt;<a class="code" href="classwpi_1_1json.html#a583403a6133147274036e0fcf5290bdd">::type</a> = 0 &gt;</div>
+<div class="line"><a name="l04615"></a><span class="lineno"> 4615</span>&#160;                   , <span class="keywordtype">int</span> &gt;::type = 0 &gt;</div>
 <div class="line"><a name="l04616"></a><span class="lineno"><a class="line" href="classwpi_1_1json.html#aafcf44ced103f76e4db32cc51e2d7f81"> 4616</a></span>&#160;    <span class="keyword">operator</span> ValueType()<span class="keyword"> const</span></div>
 <div class="line"><a name="l04617"></a><span class="lineno"> 4617</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l04618"></a><span class="lineno"> 4618</span>&#160;        <span class="comment">// delegate the call to get&lt;&gt;() const</span></div>
@@ -2737,7 +2737,7 @@ $(document).ready(function(){initNavTree('json_8h_source.html',''); initResizabl
 <div class="line"><a name="l04950"></a><span class="lineno"> 4950</span>&#160;    }</div>
 <div class="line"><a name="l04951"></a><span class="lineno"> 4951</span>&#160; </div>
 <div class="line"><a name="l05000"></a><span class="lineno"> 5000</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class </span>ValueType, <span class="keyword">typename</span> std::enable_if&lt;</div>
-<div class="line"><a name="l05001"></a><span class="lineno"> 5001</span>&#160;                 std::is_convertible&lt;json_t, ValueType&gt;::value, <span class="keywordtype">int</span>&gt;<a class="code" href="classwpi_1_1json.html#a583403a6133147274036e0fcf5290bdd">::type</a> = 0&gt;</div>
+<div class="line"><a name="l05001"></a><span class="lineno"> 5001</span>&#160;                 std::is_convertible&lt;json_t, ValueType&gt;::value, <span class="keywordtype">int</span>&gt;::type = 0&gt;</div>
 <div class="line"><a name="l05002"></a><span class="lineno"><a class="line" href="classwpi_1_1json.html#a50961342ef794c2a8d3387f2f72b16a4"> 5002</a></span>&#160;    ValueType <a class="code" href="classwpi_1_1json.html#a50961342ef794c2a8d3387f2f72b16a4">value</a>(<a class="code" href="classwpi_1_1StringRef.html">StringRef</a> key, <span class="keyword">const</span> ValueType&amp; default_value)<span class="keyword"> const</span></div>
 <div class="line"><a name="l05003"></a><span class="lineno"> 5003</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l05004"></a><span class="lineno"> 5004</span>&#160;        <span class="comment">// at only works for objects</span></div>
@@ -2762,7 +2762,7 @@ $(document).ready(function(){initNavTree('json_8h_source.html',''); initResizabl
 <div class="line"><a name="l05027"></a><span class="lineno"> 5027</span>&#160;    }</div>
 <div class="line"><a name="l05028"></a><span class="lineno"> 5028</span>&#160; </div>
 <div class="line"><a name="l05070"></a><span class="lineno"> 5070</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class </span>ValueType, <span class="keyword">typename</span> std::enable_if&lt;</div>
-<div class="line"><a name="l05071"></a><span class="lineno"> 5071</span>&#160;                 std::is_convertible&lt;json_t, ValueType&gt;::value, <span class="keywordtype">int</span>&gt;<a class="code" href="classwpi_1_1json.html#a583403a6133147274036e0fcf5290bdd">::type</a> = 0&gt;</div>
+<div class="line"><a name="l05071"></a><span class="lineno"> 5071</span>&#160;                 std::is_convertible&lt;json_t, ValueType&gt;::value, <span class="keywordtype">int</span>&gt;::type = 0&gt;</div>
 <div class="line"><a name="l05072"></a><span class="lineno"><a class="line" href="classwpi_1_1json.html#a49768063327044e1dfa45123f708362c"> 5072</a></span>&#160;    ValueType <a class="code" href="classwpi_1_1json.html#a49768063327044e1dfa45123f708362c">value</a>(<span class="keyword">const</span> <a class="code" href="classwpi_1_1json__pointer.html">json_pointer</a>&amp; ptr, <span class="keyword">const</span> ValueType&amp; default_value)<span class="keyword"> const</span></div>
 <div class="line"><a name="l05073"></a><span class="lineno"> 5073</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l05074"></a><span class="lineno"> 5074</span>&#160;        <span class="comment">// at only works for objects</span></div>
@@ -2813,7 +2813,7 @@ $(document).ready(function(){initNavTree('json_8h_source.html',''); initResizabl
 <div class="line"><a name="l05185"></a><span class="lineno"> 5185</span>&#160; </div>
 <div class="line"><a name="l05230"></a><span class="lineno"> 5230</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class </span>IteratorType, <span class="keyword">typename</span> std::enable_if&lt;</div>
 <div class="line"><a name="l05231"></a><span class="lineno"> 5231</span>&#160;                 std::is_same&lt;IteratorType, typename json_t::iterator&gt;::value or</div>
-<div class="line"><a name="l05232"></a><span class="lineno"> 5232</span>&#160;                 std::is_same&lt;IteratorType, typename json_t::const_iterator&gt;::value, <span class="keywordtype">int</span>&gt;<a class="code" href="classwpi_1_1json.html#a583403a6133147274036e0fcf5290bdd">::type</a></div>
+<div class="line"><a name="l05232"></a><span class="lineno"> 5232</span>&#160;                 std::is_same&lt;IteratorType, typename json_t::const_iterator&gt;::value, <span class="keywordtype">int</span>&gt;::type</div>
 <div class="line"><a name="l05233"></a><span class="lineno"> 5233</span>&#160;             = 0&gt;</div>
 <div class="line"><a name="l05234"></a><span class="lineno"><a class="line" href="classwpi_1_1json.html#a8ae8200fffc1c78dbbc75f1366a9c7b3"> 5234</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classwpi_1_1json.html#a8ae8200fffc1c78dbbc75f1366a9c7b3">erase</a>(IteratorType pos)</div>
 <div class="line"><a name="l05235"></a><span class="lineno"> 5235</span>&#160;    {</div>
@@ -2868,7 +2868,7 @@ $(document).ready(function(){initNavTree('json_8h_source.html',''); initResizabl
 <div class="line"><a name="l05284"></a><span class="lineno"> 5284</span>&#160; </div>
 <div class="line"><a name="l05331"></a><span class="lineno"> 5331</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class </span>IteratorType, <span class="keyword">typename</span> std::enable_if&lt;</div>
 <div class="line"><a name="l05332"></a><span class="lineno"> 5332</span>&#160;                 std::is_same&lt;IteratorType, typename json_t::iterator&gt;::value or</div>
-<div class="line"><a name="l05333"></a><span class="lineno"> 5333</span>&#160;                 std::is_same&lt;IteratorType, typename json_t::const_iterator&gt;::value, <span class="keywordtype">int</span>&gt;<a class="code" href="classwpi_1_1json.html#a583403a6133147274036e0fcf5290bdd">::type</a></div>
+<div class="line"><a name="l05333"></a><span class="lineno"> 5333</span>&#160;                 std::is_same&lt;IteratorType, typename json_t::const_iterator&gt;::value, <span class="keywordtype">int</span>&gt;::type</div>
 <div class="line"><a name="l05334"></a><span class="lineno"> 5334</span>&#160;             = 0&gt;</div>
 <div class="line"><a name="l05335"></a><span class="lineno"><a class="line" href="classwpi_1_1json.html#af25fed127f0d16d6a8e6eb33b2e627e7"> 5335</a></span>&#160;    IteratorType <a class="code" href="classwpi_1_1json.html#af25fed127f0d16d6a8e6eb33b2e627e7">erase</a>(IteratorType first, IteratorType last)</div>
 <div class="line"><a name="l05336"></a><span class="lineno"> 5336</span>&#160;    {</div>
@@ -3216,14 +3216,14 @@ $(document).ready(function(){initNavTree('json_8h_source.html',''); initResizabl
 <div class="line"><a name="l06643"></a><span class="lineno"><a class="line" href="classwpi_1_1json.html#a122640e7e2db1814fc7bbb3c122ec76e"> 6643</a></span>&#160;    <span class="keyword">friend</span> <span class="keywordtype">bool</span> <a class="code" href="classwpi_1_1json.html#a122640e7e2db1814fc7bbb3c122ec76e">operator==</a>(<a class="code" href="classwpi_1_1json.html">const_reference</a> lhs, <a class="code" href="classwpi_1_1json.html">const_reference</a> rhs) noexcept;</div>
 <div class="line"><a name="l06644"></a><span class="lineno"> 6644</span>&#160; </div>
 <div class="line"><a name="l06649"></a><span class="lineno"> 6649</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> ScalarType, <span class="keyword">typename</span> std::enable_if&lt;</div>
-<div class="line"><a name="l06650"></a><span class="lineno"> 6650</span>&#160;                 std::is_scalar&lt;ScalarType&gt;::value, <span class="keywordtype">int</span>&gt;<a class="code" href="classwpi_1_1json.html#a583403a6133147274036e0fcf5290bdd">::type</a> = 0&gt;</div>
+<div class="line"><a name="l06650"></a><span class="lineno"> 6650</span>&#160;                 std::is_scalar&lt;ScalarType&gt;::value, <span class="keywordtype">int</span>&gt;::type = 0&gt;</div>
 <div class="line"><a name="l06651"></a><span class="lineno"><a class="line" href="classwpi_1_1json.html#aba21440ea1aff44f718285ed7d6d20d9"> 6651</a></span>&#160;    <span class="keyword">friend</span> <span class="keywordtype">bool</span> <a class="code" href="classwpi_1_1json.html#aba21440ea1aff44f718285ed7d6d20d9">operator==</a>(<a class="code" href="classwpi_1_1json.html">const_reference</a> lhs, <span class="keyword">const</span> ScalarType rhs) noexcept</div>
 <div class="line"><a name="l06652"></a><span class="lineno"> 6652</span>&#160;    {</div>
 <div class="line"><a name="l06653"></a><span class="lineno"> 6653</span>&#160;        <span class="keywordflow">return</span> (lhs == <a class="code" href="classwpi_1_1json.html#a45ffac32624370a1a7ee9875368dbcd1">json</a>(rhs));</div>
 <div class="line"><a name="l06654"></a><span class="lineno"> 6654</span>&#160;    }</div>
 <div class="line"><a name="l06655"></a><span class="lineno"> 6655</span>&#160; </div>
 <div class="line"><a name="l06660"></a><span class="lineno"> 6660</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> ScalarType, <span class="keyword">typename</span> std::enable_if&lt;</div>
-<div class="line"><a name="l06661"></a><span class="lineno"> 6661</span>&#160;                 std::is_scalar&lt;ScalarType&gt;::value, <span class="keywordtype">int</span>&gt;<a class="code" href="classwpi_1_1json.html#a583403a6133147274036e0fcf5290bdd">::type</a> = 0&gt;</div>
+<div class="line"><a name="l06661"></a><span class="lineno"> 6661</span>&#160;                 std::is_scalar&lt;ScalarType&gt;::value, <span class="keywordtype">int</span>&gt;::type = 0&gt;</div>
 <div class="line"><a name="l06662"></a><span class="lineno"><a class="line" href="classwpi_1_1json.html#aef302e3ae215e46e5035d0e4fdf47235"> 6662</a></span>&#160;    <span class="keyword">friend</span> <span class="keywordtype">bool</span> <a class="code" href="classwpi_1_1json.html#aef302e3ae215e46e5035d0e4fdf47235">operator==</a>(<span class="keyword">const</span> ScalarType lhs, <a class="code" href="classwpi_1_1json.html">const_reference</a> rhs) noexcept</div>
 <div class="line"><a name="l06663"></a><span class="lineno"> 6663</span>&#160;    {</div>
 <div class="line"><a name="l06664"></a><span class="lineno"> 6664</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="classwpi_1_1json.html#a45ffac32624370a1a7ee9875368dbcd1">json</a>(lhs) == rhs);</div>
@@ -3235,14 +3235,14 @@ $(document).ready(function(){initNavTree('json_8h_source.html',''); initResizabl
 <div class="line"><a name="l06688"></a><span class="lineno"> 6688</span>&#160;    }</div>
 <div class="line"><a name="l06689"></a><span class="lineno"> 6689</span>&#160; </div>
 <div class="line"><a name="l06694"></a><span class="lineno"> 6694</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> ScalarType, <span class="keyword">typename</span> std::enable_if&lt;</div>
-<div class="line"><a name="l06695"></a><span class="lineno"> 6695</span>&#160;                 std::is_scalar&lt;ScalarType&gt;::value, <span class="keywordtype">int</span>&gt;<a class="code" href="classwpi_1_1json.html#a583403a6133147274036e0fcf5290bdd">::type</a> = 0&gt;</div>
+<div class="line"><a name="l06695"></a><span class="lineno"> 6695</span>&#160;                 std::is_scalar&lt;ScalarType&gt;::value, <span class="keywordtype">int</span>&gt;::type = 0&gt;</div>
 <div class="line"><a name="l06696"></a><span class="lineno"><a class="line" href="classwpi_1_1json.html#afefc38fc08bdb7a9a7474b5ab4a1140f"> 6696</a></span>&#160;    <span class="keyword">friend</span> <span class="keywordtype">bool</span> <a class="code" href="classwpi_1_1json.html#afefc38fc08bdb7a9a7474b5ab4a1140f">operator!=</a>(<a class="code" href="classwpi_1_1json.html">const_reference</a> lhs, <span class="keyword">const</span> ScalarType rhs) noexcept</div>
 <div class="line"><a name="l06697"></a><span class="lineno"> 6697</span>&#160;    {</div>
 <div class="line"><a name="l06698"></a><span class="lineno"> 6698</span>&#160;        <span class="keywordflow">return</span> (lhs != <a class="code" href="classwpi_1_1json.html#a45ffac32624370a1a7ee9875368dbcd1">json</a>(rhs));</div>
 <div class="line"><a name="l06699"></a><span class="lineno"> 6699</span>&#160;    }</div>
 <div class="line"><a name="l06700"></a><span class="lineno"> 6700</span>&#160; </div>
 <div class="line"><a name="l06705"></a><span class="lineno"> 6705</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> ScalarType, <span class="keyword">typename</span> std::enable_if&lt;</div>
-<div class="line"><a name="l06706"></a><span class="lineno"> 6706</span>&#160;                 std::is_scalar&lt;ScalarType&gt;::value, <span class="keywordtype">int</span>&gt;<a class="code" href="classwpi_1_1json.html#a583403a6133147274036e0fcf5290bdd">::type</a> = 0&gt;</div>
+<div class="line"><a name="l06706"></a><span class="lineno"> 6706</span>&#160;                 std::is_scalar&lt;ScalarType&gt;::value, <span class="keywordtype">int</span>&gt;::type = 0&gt;</div>
 <div class="line"><a name="l06707"></a><span class="lineno"><a class="line" href="classwpi_1_1json.html#ab0e886db6e9fa91ff9fd853333fed05b"> 6707</a></span>&#160;    <span class="keyword">friend</span> <span class="keywordtype">bool</span> <a class="code" href="classwpi_1_1json.html#ab0e886db6e9fa91ff9fd853333fed05b">operator!=</a>(<span class="keyword">const</span> ScalarType lhs, <a class="code" href="classwpi_1_1json.html">const_reference</a> rhs) noexcept</div>
 <div class="line"><a name="l06708"></a><span class="lineno"> 6708</span>&#160;    {</div>
 <div class="line"><a name="l06709"></a><span class="lineno"> 6709</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="classwpi_1_1json.html#a45ffac32624370a1a7ee9875368dbcd1">json</a>(lhs) != rhs);</div>
@@ -3251,14 +3251,14 @@ $(document).ready(function(){initNavTree('json_8h_source.html',''); initResizabl
 <div class="line"><a name="l06738"></a><span class="lineno"><a class="line" href="classwpi_1_1json.html#aacd442b66140c764c594ac8ad7dfd5b3"> 6738</a></span>&#160;    <span class="keyword">friend</span> <span class="keywordtype">bool</span> <a class="code" href="classwpi_1_1json.html#aacd442b66140c764c594ac8ad7dfd5b3">operator&lt;</a>(<a class="code" href="classwpi_1_1json.html">const_reference</a> lhs, <a class="code" href="classwpi_1_1json.html">const_reference</a> rhs) noexcept;</div>
 <div class="line"><a name="l06739"></a><span class="lineno"> 6739</span>&#160; </div>
 <div class="line"><a name="l06744"></a><span class="lineno"> 6744</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> ScalarType, <span class="keyword">typename</span> std::enable_if&lt;</div>
-<div class="line"><a name="l06745"></a><span class="lineno"> 6745</span>&#160;                 std::is_scalar&lt;ScalarType&gt;::value, <span class="keywordtype">int</span>&gt;<a class="code" href="classwpi_1_1json.html#a583403a6133147274036e0fcf5290bdd">::type</a> = 0&gt;</div>
+<div class="line"><a name="l06745"></a><span class="lineno"> 6745</span>&#160;                 std::is_scalar&lt;ScalarType&gt;::value, <span class="keywordtype">int</span>&gt;::type = 0&gt;</div>
 <div class="line"><a name="l06746"></a><span class="lineno"><a class="line" href="classwpi_1_1json.html#a7999ee3a69a4979d92e98ab1e88c8759"> 6746</a></span>&#160;    <span class="keyword">friend</span> <span class="keywordtype">bool</span> <a class="code" href="classwpi_1_1json.html#a7999ee3a69a4979d92e98ab1e88c8759">operator&lt;</a>(<a class="code" href="classwpi_1_1json.html">const_reference</a> lhs, <span class="keyword">const</span> ScalarType rhs) noexcept</div>
 <div class="line"><a name="l06747"></a><span class="lineno"> 6747</span>&#160;    {</div>
 <div class="line"><a name="l06748"></a><span class="lineno"> 6748</span>&#160;        <span class="keywordflow">return</span> (lhs &lt; <a class="code" href="classwpi_1_1json.html#a45ffac32624370a1a7ee9875368dbcd1">json</a>(rhs));</div>
 <div class="line"><a name="l06749"></a><span class="lineno"> 6749</span>&#160;    }</div>
 <div class="line"><a name="l06750"></a><span class="lineno"> 6750</span>&#160; </div>
 <div class="line"><a name="l06755"></a><span class="lineno"> 6755</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> ScalarType, <span class="keyword">typename</span> std::enable_if&lt;</div>
-<div class="line"><a name="l06756"></a><span class="lineno"> 6756</span>&#160;                 std::is_scalar&lt;ScalarType&gt;::value, <span class="keywordtype">int</span>&gt;<a class="code" href="classwpi_1_1json.html#a583403a6133147274036e0fcf5290bdd">::type</a> = 0&gt;</div>
+<div class="line"><a name="l06756"></a><span class="lineno"> 6756</span>&#160;                 std::is_scalar&lt;ScalarType&gt;::value, <span class="keywordtype">int</span>&gt;::type = 0&gt;</div>
 <div class="line"><a name="l06757"></a><span class="lineno"><a class="line" href="classwpi_1_1json.html#abed3e9b4ab75f5bcbd3cd20f5af5cdab"> 6757</a></span>&#160;    <span class="keyword">friend</span> <span class="keywordtype">bool</span> <a class="code" href="classwpi_1_1json.html#abed3e9b4ab75f5bcbd3cd20f5af5cdab">operator&lt;</a>(<span class="keyword">const</span> ScalarType lhs, <a class="code" href="classwpi_1_1json.html">const_reference</a> rhs) noexcept</div>
 <div class="line"><a name="l06758"></a><span class="lineno"> 6758</span>&#160;    {</div>
 <div class="line"><a name="l06759"></a><span class="lineno"> 6759</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="classwpi_1_1json.html#a45ffac32624370a1a7ee9875368dbcd1">json</a>(lhs) &lt; rhs);</div>
@@ -3270,14 +3270,14 @@ $(document).ready(function(){initNavTree('json_8h_source.html',''); initResizabl
 <div class="line"><a name="l06784"></a><span class="lineno"> 6784</span>&#160;    }</div>
 <div class="line"><a name="l06785"></a><span class="lineno"> 6785</span>&#160; </div>
 <div class="line"><a name="l06790"></a><span class="lineno"> 6790</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> ScalarType, <span class="keyword">typename</span> std::enable_if&lt;</div>
-<div class="line"><a name="l06791"></a><span class="lineno"> 6791</span>&#160;                 std::is_scalar&lt;ScalarType&gt;::value, <span class="keywordtype">int</span>&gt;<a class="code" href="classwpi_1_1json.html#a583403a6133147274036e0fcf5290bdd">::type</a> = 0&gt;</div>
+<div class="line"><a name="l06791"></a><span class="lineno"> 6791</span>&#160;                 std::is_scalar&lt;ScalarType&gt;::value, <span class="keywordtype">int</span>&gt;::type = 0&gt;</div>
 <div class="line"><a name="l06792"></a><span class="lineno"><a class="line" href="classwpi_1_1json.html#a7e368211047f725f333696aefdf39ffd"> 6792</a></span>&#160;    <span class="keyword">friend</span> <span class="keywordtype">bool</span> <a class="code" href="classwpi_1_1json.html#a7e368211047f725f333696aefdf39ffd">operator&lt;=</a>(<a class="code" href="classwpi_1_1json.html">const_reference</a> lhs, <span class="keyword">const</span> ScalarType rhs) noexcept</div>
 <div class="line"><a name="l06793"></a><span class="lineno"> 6793</span>&#160;    {</div>
 <div class="line"><a name="l06794"></a><span class="lineno"> 6794</span>&#160;        <span class="keywordflow">return</span> (lhs &lt;= <a class="code" href="classwpi_1_1json.html#a45ffac32624370a1a7ee9875368dbcd1">json</a>(rhs));</div>
 <div class="line"><a name="l06795"></a><span class="lineno"> 6795</span>&#160;    }</div>
 <div class="line"><a name="l06796"></a><span class="lineno"> 6796</span>&#160; </div>
 <div class="line"><a name="l06801"></a><span class="lineno"> 6801</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> ScalarType, <span class="keyword">typename</span> std::enable_if&lt;</div>
-<div class="line"><a name="l06802"></a><span class="lineno"> 6802</span>&#160;                 std::is_scalar&lt;ScalarType&gt;::value, <span class="keywordtype">int</span>&gt;<a class="code" href="classwpi_1_1json.html#a583403a6133147274036e0fcf5290bdd">::type</a> = 0&gt;</div>
+<div class="line"><a name="l06802"></a><span class="lineno"> 6802</span>&#160;                 std::is_scalar&lt;ScalarType&gt;::value, <span class="keywordtype">int</span>&gt;::type = 0&gt;</div>
 <div class="line"><a name="l06803"></a><span class="lineno"><a class="line" href="classwpi_1_1json.html#ad73f88f70fe5acfa521750a8cd710026"> 6803</a></span>&#160;    <span class="keyword">friend</span> <span class="keywordtype">bool</span> <a class="code" href="classwpi_1_1json.html#ad73f88f70fe5acfa521750a8cd710026">operator&lt;=</a>(<span class="keyword">const</span> ScalarType lhs, <a class="code" href="classwpi_1_1json.html">const_reference</a> rhs) noexcept</div>
 <div class="line"><a name="l06804"></a><span class="lineno"> 6804</span>&#160;    {</div>
 <div class="line"><a name="l06805"></a><span class="lineno"> 6805</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="classwpi_1_1json.html#a45ffac32624370a1a7ee9875368dbcd1">json</a>(lhs) &lt;= rhs);</div>
@@ -3289,14 +3289,14 @@ $(document).ready(function(){initNavTree('json_8h_source.html',''); initResizabl
 <div class="line"><a name="l06830"></a><span class="lineno"> 6830</span>&#160;    }</div>
 <div class="line"><a name="l06831"></a><span class="lineno"> 6831</span>&#160; </div>
 <div class="line"><a name="l06836"></a><span class="lineno"> 6836</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> ScalarType, <span class="keyword">typename</span> std::enable_if&lt;</div>
-<div class="line"><a name="l06837"></a><span class="lineno"> 6837</span>&#160;                 std::is_scalar&lt;ScalarType&gt;::value, <span class="keywordtype">int</span>&gt;<a class="code" href="classwpi_1_1json.html#a583403a6133147274036e0fcf5290bdd">::type</a> = 0&gt;</div>
+<div class="line"><a name="l06837"></a><span class="lineno"> 6837</span>&#160;                 std::is_scalar&lt;ScalarType&gt;::value, <span class="keywordtype">int</span>&gt;::type = 0&gt;</div>
 <div class="line"><a name="l06838"></a><span class="lineno"><a class="line" href="classwpi_1_1json.html#a412895af9a582869a4d369a64fb1b6d6"> 6838</a></span>&#160;    <span class="keyword">friend</span> <span class="keywordtype">bool</span> <a class="code" href="classwpi_1_1json.html#a412895af9a582869a4d369a64fb1b6d6">operator&gt;</a>(<a class="code" href="classwpi_1_1json.html">const_reference</a> lhs, <span class="keyword">const</span> ScalarType rhs) noexcept</div>
 <div class="line"><a name="l06839"></a><span class="lineno"> 6839</span>&#160;    {</div>
 <div class="line"><a name="l06840"></a><span class="lineno"> 6840</span>&#160;        <span class="keywordflow">return</span> (lhs &gt; <a class="code" href="classwpi_1_1json.html#a45ffac32624370a1a7ee9875368dbcd1">json</a>(rhs));</div>
 <div class="line"><a name="l06841"></a><span class="lineno"> 6841</span>&#160;    }</div>
 <div class="line"><a name="l06842"></a><span class="lineno"> 6842</span>&#160; </div>
 <div class="line"><a name="l06847"></a><span class="lineno"> 6847</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> ScalarType, <span class="keyword">typename</span> std::enable_if&lt;</div>
-<div class="line"><a name="l06848"></a><span class="lineno"> 6848</span>&#160;                 std::is_scalar&lt;ScalarType&gt;::value, <span class="keywordtype">int</span>&gt;<a class="code" href="classwpi_1_1json.html#a583403a6133147274036e0fcf5290bdd">::type</a> = 0&gt;</div>
+<div class="line"><a name="l06848"></a><span class="lineno"> 6848</span>&#160;                 std::is_scalar&lt;ScalarType&gt;::value, <span class="keywordtype">int</span>&gt;::type = 0&gt;</div>
 <div class="line"><a name="l06849"></a><span class="lineno"><a class="line" href="classwpi_1_1json.html#a124c319566198d9f092c5bebea46ce77"> 6849</a></span>&#160;    <span class="keyword">friend</span> <span class="keywordtype">bool</span> <a class="code" href="classwpi_1_1json.html#a124c319566198d9f092c5bebea46ce77">operator&gt;</a>(<span class="keyword">const</span> ScalarType lhs, <a class="code" href="classwpi_1_1json.html">const_reference</a> rhs) noexcept</div>
 <div class="line"><a name="l06850"></a><span class="lineno"> 6850</span>&#160;    {</div>
 <div class="line"><a name="l06851"></a><span class="lineno"> 6851</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="classwpi_1_1json.html#a45ffac32624370a1a7ee9875368dbcd1">json</a>(lhs) &gt; rhs);</div>
@@ -3308,14 +3308,14 @@ $(document).ready(function(){initNavTree('json_8h_source.html',''); initResizabl
 <div class="line"><a name="l06876"></a><span class="lineno"> 6876</span>&#160;    }</div>
 <div class="line"><a name="l06877"></a><span class="lineno"> 6877</span>&#160; </div>
 <div class="line"><a name="l06882"></a><span class="lineno"> 6882</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> ScalarType, <span class="keyword">typename</span> std::enable_if&lt;</div>
-<div class="line"><a name="l06883"></a><span class="lineno"> 6883</span>&#160;                 std::is_scalar&lt;ScalarType&gt;::value, <span class="keywordtype">int</span>&gt;<a class="code" href="classwpi_1_1json.html#a583403a6133147274036e0fcf5290bdd">::type</a> = 0&gt;</div>
+<div class="line"><a name="l06883"></a><span class="lineno"> 6883</span>&#160;                 std::is_scalar&lt;ScalarType&gt;::value, <span class="keywordtype">int</span>&gt;::type = 0&gt;</div>
 <div class="line"><a name="l06884"></a><span class="lineno"><a class="line" href="classwpi_1_1json.html#a68e3a92b3d9be1faa05c92d096299189"> 6884</a></span>&#160;    <span class="keyword">friend</span> <span class="keywordtype">bool</span> <a class="code" href="classwpi_1_1json.html#a68e3a92b3d9be1faa05c92d096299189">operator&gt;=</a>(<a class="code" href="classwpi_1_1json.html">const_reference</a> lhs, <span class="keyword">const</span> ScalarType rhs) noexcept</div>
 <div class="line"><a name="l06885"></a><span class="lineno"> 6885</span>&#160;    {</div>
 <div class="line"><a name="l06886"></a><span class="lineno"> 6886</span>&#160;        <span class="keywordflow">return</span> (lhs &gt;= <a class="code" href="classwpi_1_1json.html#a45ffac32624370a1a7ee9875368dbcd1">json</a>(rhs));</div>
 <div class="line"><a name="l06887"></a><span class="lineno"> 6887</span>&#160;    }</div>
 <div class="line"><a name="l06888"></a><span class="lineno"> 6888</span>&#160; </div>
 <div class="line"><a name="l06893"></a><span class="lineno"> 6893</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> ScalarType, <span class="keyword">typename</span> std::enable_if&lt;</div>
-<div class="line"><a name="l06894"></a><span class="lineno"> 6894</span>&#160;                 std::is_scalar&lt;ScalarType&gt;::value, <span class="keywordtype">int</span>&gt;<a class="code" href="classwpi_1_1json.html#a583403a6133147274036e0fcf5290bdd">::type</a> = 0&gt;</div>
+<div class="line"><a name="l06894"></a><span class="lineno"> 6894</span>&#160;                 std::is_scalar&lt;ScalarType&gt;::value, <span class="keywordtype">int</span>&gt;::type = 0&gt;</div>
 <div class="line"><a name="l06895"></a><span class="lineno"><a class="line" href="classwpi_1_1json.html#a5ee0e3e8afc7cbd932d6ed66418fa80a"> 6895</a></span>&#160;    <span class="keyword">friend</span> <span class="keywordtype">bool</span> <a class="code" href="classwpi_1_1json.html#a5ee0e3e8afc7cbd932d6ed66418fa80a">operator&gt;=</a>(<span class="keyword">const</span> ScalarType lhs, <a class="code" href="classwpi_1_1json.html">const_reference</a> rhs) noexcept</div>
 <div class="line"><a name="l06896"></a><span class="lineno"> 6896</span>&#160;    {</div>
 <div class="line"><a name="l06897"></a><span class="lineno"> 6897</span>&#160;        <span class="keywordflow">return</span> (<a class="code" href="classwpi_1_1json.html#a45ffac32624370a1a7ee9875368dbcd1">json</a>(lhs) &gt;= rhs);</div>
@@ -3564,6 +3564,7 @@ $(document).ready(function(){initNavTree('json_8h_source.html',''); initResizabl
 <div class="ttc" id="aclasswpi_1_1json_html_a6e2e21da48f5d9471716cd868a068327"><div class="ttname"><a href="classwpi_1_1json.html#a6e2e21da48f5d9471716cd868a068327">wpi::json::operator!=</a></div><div class="ttdeci">friend bool operator!=(const_reference lhs, const_reference rhs) noexcept</div><div class="ttdoc">comparison: not equal</div><div class="ttdef"><b>Definition:</b> json.h:6685</div></div>
 <div class="ttc" id="astructstd_1_1hash_3_01wpi_1_1json_01_4_html_aa7173072f57ef2a8e0cbda8d5c2e7d2a"><div class="ttname"><a href="structstd_1_1hash_3_01wpi_1_1json_01_4.html#aa7173072f57ef2a8e0cbda8d5c2e7d2a">std::hash&lt; wpi::json &gt;::operator()</a></div><div class="ttdeci">std::size_t operator()(const wpi::json &amp;j) const</div><div class="ttdoc">return a hash value for a JSON object</div><div class="ttdef"><b>Definition:</b> json.h:8035</div></div>
 <div class="ttc" id="anamespacewpi_1_1detail_html_a4f2a85d1c51cbd4c58d990499f793788a84e2c64f38f78ba3ea5c905ab5a2da27"><div class="ttname"><a href="namespacewpi_1_1detail.html#a4f2a85d1c51cbd4c58d990499f793788a84e2c64f38f78ba3ea5c905ab5a2da27">wpi::detail::value_t::boolean</a></div><div class="ttdeci">@ boolean</div><div class="ttdoc">boolean value</div></div>
+<div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1099</div></div>
 <div class="ttc" id="aclasswpi_1_1json_html_a838bccd65446fedce74a184a25b6c6a8"><div class="ttname"><a href="classwpi_1_1json.html#a838bccd65446fedce74a184a25b6c6a8">wpi::json::end</a></div><div class="ttdeci">const_iterator end() const noexcept</div><div class="ttdoc">returns a const iterator to one past the last element</div><div class="ttdef"><b>Definition:</b> json.h:5621</div></div>
 <div class="ttc" id="astructwpi_1_1detail_1_1internal__iterator_html"><div class="ttname"><a href="structwpi_1_1detail_1_1internal__iterator.html">wpi::detail::internal_iterator</a></div><div class="ttdoc">an iterator value</div><div class="ttdef"><b>Definition:</b> json.h:1469</div></div>
 <div class="ttc" id="aclasswpi_1_1json_html_a0e30da312a7fd284eadacf963c059f12"><div class="ttname"><a href="classwpi_1_1json.html#a0e30da312a7fd284eadacf963c059f12">wpi::json::swap</a></div><div class="ttdeci">void swap(object_t &amp;other)</div><div class="ttdoc">exchanges the values</div><div class="ttdef"><b>Definition:</b> json.h:6548</div></div>
@@ -3590,7 +3591,6 @@ $(document).ready(function(){initNavTree('json_8h_source.html',''); initResizabl
 <div class="ttc" id="aclasswpi_1_1json_html_ae3e20c921b014a94d55f7f95fbccb932"><div class="ttname"><a href="classwpi_1_1json.html#ae3e20c921b014a94d55f7f95fbccb932">wpi::json::operator+=</a></div><div class="ttdeci">reference operator+=(initializer_list_t init)</div><div class="ttdoc">add an object to an object</div><div class="ttdef"><b>Definition:</b> json.h:6173</div></div>
 <div class="ttc" id="astructwpi_1_1detail_1_1is__compatible__integer__type_html"><div class="ttname"><a href="structwpi_1_1detail_1_1is__compatible__integer__type.html">wpi::detail::is_compatible_integer_type</a></div><div class="ttdef"><b>Definition:</b> json.h:297</div></div>
 <div class="ttc" id="aclasswpi_1_1json_html_a93cf12b4068b2dffde077e3347c616df"><div class="ttname"><a href="classwpi_1_1json.html#a93cf12b4068b2dffde077e3347c616df">wpi::json::json</a></div><div class="ttdeci">json(json &amp;&amp;other) noexcept</div><div class="ttdoc">move constructor</div><div class="ttdef"><b>Definition:</b> json.h:3649</div></div>
-<div class="ttc" id="aclasswpi_1_1json_html_a8ccc68470f029327303a5d77559f6e79a2063c1608d6e0baf80249c42e2be5804"><div class="ttname"><a href="classwpi_1_1json.html#a8ccc68470f029327303a5d77559f6e79a2063c1608d6e0baf80249c42e2be5804">wpi::json::parse_event_t::value</a></div><div class="ttdeci">@ value</div><div class="ttdoc">the parser finished reading a JSON value</div></div>
 <div class="ttc" id="aclasswpi_1_1json_html_a5bc6b436fd18fc96f4c14395b945842a"><div class="ttname"><a href="classwpi_1_1json.html#a5bc6b436fd18fc96f4c14395b945842a">wpi::json::insert</a></div><div class="ttdeci">iterator insert(const_iterator pos, initializer_list_t ilist)</div><div class="ttdoc">inserts elements</div></div>
 <div class="ttc" id="aclasswpi_1_1detail_1_1iteration__proxy_html_af3deb147f2db08e252047f783b532e8a"><div class="ttname"><a href="classwpi_1_1detail_1_1iteration__proxy.html#af3deb147f2db08e252047f783b532e8a">wpi::detail::iteration_proxy::end</a></div><div class="ttdeci">iteration_proxy_internal end() noexcept</div><div class="ttdoc">return iterator end (needed for range-based for)</div><div class="ttdef"><b>Definition:</b> json.h:2155</div></div>
 <div class="ttc" id="anamespacewpi_1_1detail_html_a4f2a85d1c51cbd4c58d990499f793788a94708897ec9db8647dfe695714c98e46"><div class="ttname"><a href="namespacewpi_1_1detail.html#a4f2a85d1c51cbd4c58d990499f793788a94708897ec9db8647dfe695714c98e46">wpi::detail::value_t::discarded</a></div><div class="ttdeci">@ discarded</div><div class="ttdoc">discarded by the the parser callback function</div></div>
@@ -3812,7 +3812,7 @@ $(document).ready(function(){initNavTree('json_8h_source.html',''); initResizabl
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><b>json.h</b></li>
-    <li class="footer">Generated on Sun May 23 2021 22:29:19 for WPILibC++ by
+    <li class="footer">Generated on Tue May 25 2021 07:01:39 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

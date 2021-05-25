@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-60-g4426216</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-61-g87603e4</span>
    </div>
   </td>
  </tr>
@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('cscore__raw_8h_source.html',''); initR
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="structCS__RawFrame.html">   17</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structCS__RawFrame.html">CS_RawFrame</a> {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keywordtype">char</span>* data;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keywordtype">char</span>* <a class="code" href="structdata.html">data</a>;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keywordtype">int</span> dataLength;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keywordtype">int</span> pixelFormat;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keywordtype">int</span> width;</div>
@@ -129,8 +129,8 @@ $(document).ready(function(){initNavTree('cscore__raw_8h_source.html',''); initR
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;CS_Sink CS_CreateRawSink(<span class="keyword">const</span> <span class="keywordtype">char</span>* name, CS_Status* status);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;CS_Sink CS_CreateRawSinkCallback(<span class="keyword">const</span> <span class="keywordtype">char</span>* name, <span class="keywordtype">void</span>* data,</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                 <span class="keywordtype">void</span> (*processFrame)(<span class="keywordtype">void</span>* data,</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;CS_Sink CS_CreateRawSinkCallback(<span class="keyword">const</span> <span class="keywordtype">char</span>* name, <span class="keywordtype">void</span>* <a class="code" href="structdata.html">data</a>,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                 <span class="keywordtype">void</span> (*processFrame)(<span class="keywordtype">void</span>* <a class="code" href="structdata.html">data</a>,</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                                                      uint64_t time),</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                                 CS_Status* status);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
@@ -148,7 +148,7 @@ $(document).ready(function(){initNavTree('cscore__raw_8h_source.html',''); initR
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">struct </span>RawFrame : <span class="keyword">public</span> <a class="code" href="structCS__RawFrame.html">CS_RawFrame</a> {</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  RawFrame() {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    data = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="structdata.html">data</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    dataLength = 0;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    pixelFormat = CS_PIXFMT_UNKNOWN;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    width = 0;</div>
@@ -243,6 +243,7 @@ $(document).ready(function(){initNavTree('cscore__raw_8h_source.html',''); initR
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<span class="preprocessor">#endif  // CSCORE_CSCORE_RAW_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="astructdata_html"><div class="ttname"><a href="structdata.html">data</a></div><div class="ttdef"><b>Definition:</b> format.h:917</div></div>
 <div class="ttc" id="astructCS__VideoMode_html"><div class="ttname"><a href="structCS__VideoMode.html">CS_VideoMode</a></div><div class="ttdoc">Video mode.</div><div class="ttdef"><b>Definition:</b> cscore_c.h:102</div></div>
 <div class="ttc" id="anamespacecs_html"><div class="ttname"><a href="namespacecs.html">cs</a></div><div class="ttdoc">CameraServer (cscore) namespace.</div><div class="ttdef"><b>Definition:</b> cscore_oo.inl:14</div></div>
 <div class="ttc" id="astructCS__RawFrame_html"><div class="ttname"><a href="structCS__RawFrame.html">CS_RawFrame</a></div><div class="ttdoc">Raw Frame.</div><div class="ttdef"><b>Definition:</b> cscore_raw.h:17</div></div>
@@ -251,7 +252,7 @@ $(document).ready(function(){initNavTree('cscore__raw_8h_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>cscore_raw.h</b></li>
-    <li class="footer">Generated on Sun May 23 2021 22:29:18 for WPILibC++ by
+    <li class="footer">Generated on Tue May 25 2021 07:01:37 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-60-g4426216</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-61-g87603e4</span>
    </div>
   </td>
  </tr>
@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('DIO_8h_source.html',''); initResizable
 <div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="group__hal__dio.html#gada62e9dda0fb6dae1151e78bda6dc426">   93</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__dio.html#gada62e9dda0fb6dae1151e78bda6dc426">HAL_SetDigitalPWMOutputChannel</a>(HAL_DigitalPWMHandle pwmGenerator,</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                                    int32_t channel, int32_t* status);</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="group__hal__dio.html#ga1be24475ee40bb65036187b9bc705980">  103</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__dio.html#ga1be24475ee40bb65036187b9bc705980">HAL_SetDIO</a>(HAL_DigitalHandle dioPortHandle, HAL_Bool value,</div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="group__hal__dio.html#ga1be24475ee40bb65036187b9bc705980">  103</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__dio.html#ga1be24475ee40bb65036187b9bc705980">HAL_SetDIO</a>(HAL_DigitalHandle dioPortHandle, HAL_Bool <a class="code" href="classvalue.html">value</a>,</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                int32_t* status);</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
 <div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="group__hal__dio.html#gacf78c6712e41431c772a61e6a5e64a54">  112</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__dio.html#gacf78c6712e41431c772a61e6a5e64a54">HAL_SetDIODirection</a>(HAL_DigitalHandle dioPortHandle, HAL_Bool input,</div>
@@ -152,7 +152,7 @@ $(document).ready(function(){initNavTree('DIO_8h_source.html',''); initResizable
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
 <div class="line"><a name="l00178"></a><span class="lineno"><a class="line" href="group__hal__dio.html#gaafeea1e3cfc600210c05026b80a89bb5">  178</a></span>&#160;int32_t <a class="code" href="group__hal__dio.html#gaafeea1e3cfc600210c05026b80a89bb5">HAL_GetFilterSelect</a>(HAL_DigitalHandle dioPortHandle, int32_t* status);</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160; </div>
-<div class="line"><a name="l00191"></a><span class="lineno"><a class="line" href="group__hal__dio.html#gacdacf394aaae6670167245e2801970c4">  191</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__dio.html#gacdacf394aaae6670167245e2801970c4">HAL_SetFilterPeriod</a>(int32_t filterIndex, int64_t value, int32_t* status);</div>
+<div class="line"><a name="l00191"></a><span class="lineno"><a class="line" href="group__hal__dio.html#gacdacf394aaae6670167245e2801970c4">  191</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__dio.html#gacdacf394aaae6670167245e2801970c4">HAL_SetFilterPeriod</a>(int32_t filterIndex, int64_t <a class="code" href="classvalue.html">value</a>, int32_t* status);</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
 <div class="line"><a name="l00205"></a><span class="lineno"><a class="line" href="group__hal__dio.html#ga7204092acb19e099dab382ac9a4a52e9">  205</a></span>&#160;int64_t <a class="code" href="group__hal__dio.html#ga7204092acb19e099dab382ac9a4a52e9">HAL_GetFilterPeriod</a>(int32_t filterIndex, int32_t* status);</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
@@ -163,6 +163,7 @@ $(document).ready(function(){initNavTree('DIO_8h_source.html',''); initResizable
 </div><!-- doc-content -->
 <div class="ttc" id="agroup__hal__dio_html_gacdacf394aaae6670167245e2801970c4"><div class="ttname"><a href="group__hal__dio.html#gacdacf394aaae6670167245e2801970c4">HAL_SetFilterPeriod</a></div><div class="ttdeci">void HAL_SetFilterPeriod(int32_t filterIndex, int64_t value, int32_t *status)</div><div class="ttdoc">Sets the filter period for the specified filter index.</div></div>
 <div class="ttc" id="agroup__hal__dio_html_gaafeea1e3cfc600210c05026b80a89bb5"><div class="ttname"><a href="group__hal__dio.html#gaafeea1e3cfc600210c05026b80a89bb5">HAL_GetFilterSelect</a></div><div class="ttdeci">int32_t HAL_GetFilterSelect(HAL_DigitalHandle dioPortHandle, int32_t *status)</div><div class="ttdoc">Reads the filter index from the FPGA.</div></div>
+<div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1099</div></div>
 <div class="ttc" id="agroup__hal__dio_html_ga3f04c3038a0d7bfed2d7214992fa6ddd"><div class="ttname"><a href="group__hal__dio.html#ga3f04c3038a0d7bfed2d7214992fa6ddd">HAL_GetDIODirection</a></div><div class="ttdeci">HAL_Bool HAL_GetDIODirection(HAL_DigitalHandle dioPortHandle, int32_t *status)</div><div class="ttdoc">Reads the direction of a DIO channel.</div></div>
 <div class="ttc" id="agroup__hal__dio_html_ga7204092acb19e099dab382ac9a4a52e9"><div class="ttname"><a href="group__hal__dio.html#ga7204092acb19e099dab382ac9a4a52e9">HAL_GetFilterPeriod</a></div><div class="ttdeci">int64_t HAL_GetFilterPeriod(int32_t filterIndex, int32_t *status)</div><div class="ttdoc">Gets the filter period for the specified filter index.</div></div>
 <div class="ttc" id="agroup__hal__dio_html_ga4d55ada4fa6714a8fb2df4e79918ecff"><div class="ttname"><a href="group__hal__dio.html#ga4d55ada4fa6714a8fb2df4e79918ecff">HAL_GetDIO</a></div><div class="ttdeci">HAL_Bool HAL_GetDIO(HAL_DigitalHandle dioPortHandle, int32_t *status)</div><div class="ttdoc">Reads a digital value from a DIO channel.</div></div>
@@ -184,7 +185,7 @@ $(document).ready(function(){initNavTree('DIO_8h_source.html',''); initResizable
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_7dfa5b6b9262a4050979ee23e0eb392d.html">hal</a></li><li class="navelem"><b>DIO.h</b></li>
-    <li class="footer">Generated on Sun May 23 2021 22:29:18 for WPILibC++ by
+    <li class="footer">Generated on Tue May 25 2021 07:01:37 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

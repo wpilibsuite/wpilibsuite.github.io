@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-60-g4426216</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-61-g87603e4</span>
    </div>
   </td>
  </tr>
@@ -246,7 +246,7 @@ $(document).ready(function(){initNavTree('cscore__c_8h_source.html',''); initRes
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;  <span class="comment">// Fields for CS_SOURCE_PROPERTY_* events</span></div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;  CS_Property property;</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  <span class="keyword">enum</span> <a class="code" href="group__cscore__c__api.html#ga748df10eca5adcbc533b0fe788daf22e">CS_PropertyKind</a> propertyKind;</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  <span class="keywordtype">int</span> value;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classvalue.html">value</a>;</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">char</span>* valueStr;</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160; </div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  <span class="comment">// Listener that was triggered</span></div>
@@ -267,13 +267,13 @@ $(document).ready(function(){initNavTree('cscore__c_8h_source.html',''); initRes
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                                        CS_Status* status);</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="keywordtype">char</span>* CS_GetPropertyName(CS_Property property, CS_Status* status);</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="keywordtype">int</span> CS_GetProperty(CS_Property property, CS_Status* status);</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="keywordtype">void</span> CS_SetProperty(CS_Property property, <span class="keywordtype">int</span> value, CS_Status* status);</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="keywordtype">void</span> CS_SetProperty(CS_Property property, <span class="keywordtype">int</span> <a class="code" href="classvalue.html">value</a>, CS_Status* status);</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;<span class="keywordtype">int</span> CS_GetPropertyMin(CS_Property property, CS_Status* status);</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="keywordtype">int</span> CS_GetPropertyMax(CS_Property property, CS_Status* status);</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="keywordtype">int</span> CS_GetPropertyStep(CS_Property property, CS_Status* status);</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="keywordtype">int</span> CS_GetPropertyDefault(CS_Property property, CS_Status* status);</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="keywordtype">char</span>* CS_GetStringProperty(CS_Property property, CS_Status* status);</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="keywordtype">void</span> CS_SetStringProperty(CS_Property property, <span class="keyword">const</span> <span class="keywordtype">char</span>* value,</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="keywordtype">void</span> CS_SetStringProperty(CS_Property property, <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="classvalue.html">value</a>,</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                          CS_Status* status);</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="keywordtype">char</span>** CS_GetEnumPropertyChoices(CS_Property property, <span class="keywordtype">int</span>* count,</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;                                 CS_Status* status);</div>
@@ -328,11 +328,11 @@ $(document).ready(function(){initNavTree('cscore__c_8h_source.html',''); initRes
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;<span class="keywordtype">int</span> CS_GetCameraBrightness(CS_Source source, CS_Status* status);</div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;<span class="keywordtype">void</span> CS_SetCameraWhiteBalanceAuto(CS_Source source, CS_Status* status);</div>
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;<span class="keywordtype">void</span> CS_SetCameraWhiteBalanceHoldCurrent(CS_Source source, CS_Status* status);</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;<span class="keywordtype">void</span> CS_SetCameraWhiteBalanceManual(CS_Source source, <span class="keywordtype">int</span> value,</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;<span class="keywordtype">void</span> CS_SetCameraWhiteBalanceManual(CS_Source source, <span class="keywordtype">int</span> <a class="code" href="classvalue.html">value</a>,</div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;                                    CS_Status* status);</div>
 <div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="keywordtype">void</span> CS_SetCameraExposureAuto(CS_Source source, CS_Status* status);</div>
 <div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;<span class="keywordtype">void</span> CS_SetCameraExposureHoldCurrent(CS_Source source, CS_Status* status);</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="keywordtype">void</span> CS_SetCameraExposureManual(CS_Source source, <span class="keywordtype">int</span> value, CS_Status* status);</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="keywordtype">void</span> CS_SetCameraExposureManual(CS_Source source, <span class="keywordtype">int</span> <a class="code" href="classvalue.html">value</a>, CS_Status* status);</div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;<span class="keywordtype">void</span> CS_SetUsbCameraPath(CS_Source source, <span class="keyword">const</span> <span class="keywordtype">char</span>* path, CS_Status* status);</div>
 <div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;<span class="keywordtype">char</span>* CS_GetUsbCameraPath(CS_Source source, CS_Status* status);</div>
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;<a class="code" href="structCS__UsbCameraInfo.html">CS_UsbCameraInfo</a>* CS_GetUsbCameraInfo(CS_Source source, CS_Status* status);</div>
@@ -349,15 +349,15 @@ $(document).ready(function(){initNavTree('cscore__c_8h_source.html',''); initRes
 <div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;CS_Property CS_CreateSourceProperty(CS_Source source, <span class="keyword">const</span> <span class="keywordtype">char</span>* name,</div>
 <div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;                                    <span class="keyword">enum</span> <a class="code" href="group__cscore__c__api.html#ga748df10eca5adcbc533b0fe788daf22e">CS_PropertyKind</a> kind, <span class="keywordtype">int</span> minimum,</div>
 <div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;                                    <span class="keywordtype">int</span> maximum, <span class="keywordtype">int</span> step, <span class="keywordtype">int</span> defaultValue,</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;                                    <span class="keywordtype">int</span> value, CS_Status* status);</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;                                    <span class="keywordtype">int</span> <a class="code" href="classvalue.html">value</a>, CS_Status* status);</div>
 <div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;<span class="keywordtype">void</span> CS_SetSourceEnumPropertyChoices(CS_Source source, CS_Property property,</div>
 <div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;                                     <span class="keyword">const</span> <span class="keywordtype">char</span>** choices, <span class="keywordtype">int</span> count,</div>
 <div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;                                     CS_Status* status);</div>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;CS_Sink CS_CreateMjpegServer(<span class="keyword">const</span> <span class="keywordtype">char</span>* name, <span class="keyword">const</span> <span class="keywordtype">char</span>* listenAddress,</div>
 <div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;                             <span class="keywordtype">int</span> port, CS_Status* status);</div>
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;CS_Sink CS_CreateCvSink(<span class="keyword">const</span> <span class="keywordtype">char</span>* name, CS_Status* status);</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;CS_Sink CS_CreateCvSinkCallback(<span class="keyword">const</span> <span class="keywordtype">char</span>* name, <span class="keywordtype">void</span>* data,</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;                                <span class="keywordtype">void</span> (*processFrame)(<span class="keywordtype">void</span>* data, uint64_t time),</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;CS_Sink CS_CreateCvSinkCallback(<span class="keyword">const</span> <span class="keywordtype">char</span>* name, <span class="keywordtype">void</span>* <a class="code" href="structdata.html">data</a>,</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;                                <span class="keywordtype">void</span> (*processFrame)(<span class="keywordtype">void</span>* <a class="code" href="structdata.html">data</a>, uint64_t time),</div>
 <div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;                                CS_Status* status);</div>
 <div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;<span class="keyword">enum</span> <a class="code" href="group__cscore__c__api.html#gac4d8e712e12b167a7038c76f195bab10">CS_SinkKind</a> CS_GetSinkKind(CS_Sink sink, CS_Status* status);</div>
 <div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;<span class="keywordtype">char</span>* CS_GetSinkName(CS_Sink sink, CS_Status* status);</div>
@@ -381,10 +381,10 @@ $(document).ready(function(){initNavTree('cscore__c_8h_source.html',''); initRes
 <div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;                           CS_Status* status);</div>
 <div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;<span class="keywordtype">char</span>* CS_GetSinkError(CS_Sink sink, CS_Status* status);</div>
 <div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;<span class="keywordtype">void</span> CS_SetSinkEnabled(CS_Sink sink, CS_Bool enabled, CS_Status* status);</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;<span class="keywordtype">void</span> CS_SetListenerOnStart(<span class="keywordtype">void</span> (*onStart)(<span class="keywordtype">void</span>* data), <span class="keywordtype">void</span>* data);</div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;<span class="keywordtype">void</span> CS_SetListenerOnExit(<span class="keywordtype">void</span> (*onExit)(<span class="keywordtype">void</span>* data), <span class="keywordtype">void</span>* data);</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;<span class="keywordtype">void</span> CS_SetListenerOnStart(<span class="keywordtype">void</span> (*onStart)(<span class="keywordtype">void</span>* <a class="code" href="structdata.html">data</a>), <span class="keywordtype">void</span>* <a class="code" href="structdata.html">data</a>);</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;<span class="keywordtype">void</span> CS_SetListenerOnExit(<span class="keywordtype">void</span> (*onExit)(<span class="keywordtype">void</span>* <a class="code" href="structdata.html">data</a>), <span class="keywordtype">void</span>* <a class="code" href="structdata.html">data</a>);</div>
 <div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;CS_Listener CS_AddListener(</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    <span class="keywordtype">void</span>* data, <span class="keywordtype">void</span> (*callback)(<span class="keywordtype">void</span>* data, <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structCS__Event.html">CS_Event</a>* event),</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    <span class="keywordtype">void</span>* <a class="code" href="structdata.html">data</a>, <span class="keywordtype">void</span> (*callback)(<span class="keywordtype">void</span>* <a class="code" href="structdata.html">data</a>, <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structCS__Event.html">CS_Event</a>* event),</div>
 <div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;    <span class="keywordtype">int</span> eventMask, CS_Bool immediateNotify, CS_Status* status);</div>
 <div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160; </div>
 <div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;<span class="keywordtype">void</span> CS_RemoveListener(CS_Listener handle, CS_Status* status);</div>
@@ -441,7 +441,9 @@ $(document).ready(function(){initNavTree('cscore__c_8h_source.html',''); initRes
 </div><!-- doc-content -->
 <div class="ttc" id="agroup__cscore__c__api_html_gaaaab82f52d0ca0b385c9d2c198be5483"><div class="ttname"><a href="group__cscore__c__api.html#gaaaab82f52d0ca0b385c9d2c198be5483">CS_TelemetryKind</a></div><div class="ttdeci">CS_TelemetryKind</div><div class="ttdoc">Telemetry kinds.</div><div class="ttdef"><b>Definition:</b> cscore_c.h:180</div></div>
 <div class="ttc" id="agroup__cscore__c__api_html_ga387389ba85dfc7a8d8d1f4c714e0c8ab"><div class="ttname"><a href="group__cscore__c__api.html#ga387389ba85dfc7a8d8d1f4c714e0c8ab">CS_LogLevel</a></div><div class="ttdeci">CS_LogLevel</div><div class="ttdoc">Logging levels.</div><div class="ttdef"><b>Definition:</b> cscore_c.h:75</div></div>
+<div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1099</div></div>
 <div class="ttc" id="agroup__cscore__c__api_html_gadc1c443f3f1387d53adf6fce897454c6"><div class="ttname"><a href="group__cscore__c__api.html#gadc1c443f3f1387d53adf6fce897454c6">CS_UsbCameraInfo</a></div><div class="ttdeci">struct CS_UsbCameraInfo CS_UsbCameraInfo</div><div class="ttdoc">USB camera information.</div></div>
+<div class="ttc" id="astructdata_html"><div class="ttname"><a href="structdata.html">data</a></div><div class="ttdef"><b>Definition:</b> format.h:917</div></div>
 <div class="ttc" id="astructCS__VideoMode_html"><div class="ttname"><a href="structCS__VideoMode.html">CS_VideoMode</a></div><div class="ttdoc">Video mode.</div><div class="ttdef"><b>Definition:</b> cscore_c.h:102</div></div>
 <div class="ttc" id="agroup__cscore__c__api_html_gga4a0bad578a21faca1701631a0d491875ac373b70d521e151fa18598218e71de16"><div class="ttname"><a href="group__cscore__c__api.html#gga4a0bad578a21faca1701631a0d491875ac373b70d521e151fa18598218e71de16">CS_CONNECTION_KEEP_OPEN</a></div><div class="ttdeci">@ CS_CONNECTION_KEEP_OPEN</div><div class="ttdoc">Try to keep the connection open regardless of whether any sinks are connected.</div><div class="ttdef"><b>Definition:</b> cscore_c.h:197</div></div>
 <div class="ttc" id="agroup__cscore__c__api_html_ga61ab6e0263fe88aa1da0e21fc25a5a4a"><div class="ttname"><a href="group__cscore__c__api.html#ga61ab6e0263fe88aa1da0e21fc25a5a4a">CS_HttpCameraKind</a></div><div class="ttdeci">CS_HttpCameraKind</div><div class="ttdoc">HTTP Camera kinds.</div><div class="ttdef"><b>Definition:</b> cscore_c.h:134</div></div>
@@ -461,7 +463,7 @@ $(document).ready(function(){initNavTree('cscore__c_8h_source.html',''); initRes
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>cscore_c.h</b></li>
-    <li class="footer">Generated on Sun May 23 2021 22:29:18 for WPILibC++ by
+    <li class="footer">Generated on Tue May 25 2021 07:01:37 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

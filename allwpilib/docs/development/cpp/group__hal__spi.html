@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-60-g4426216</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-61-g87603e4</span>
    </div>
   </td>
  </tr>
@@ -107,7 +107,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ga390d8bf5857ea987a606b47394f75e19"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__spi.html#ga390d8bf5857ea987a606b47394f75e19">HAL_WriteSPI</a> (HAL_SPIPort port, const uint8_t *dataToSend, int32_t sendSize)</td></tr>
 <tr class="memdesc:ga390d8bf5857ea987a606b47394f75e19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes a write transaction with the device.  <a href="group__hal__spi.html#ga390d8bf5857ea987a606b47394f75e19">More...</a><br /></td></tr>
 <tr class="separator:ga390d8bf5857ea987a606b47394f75e19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2ac079dcc211039fccff72ac75e41f0a"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__spi.html#ga2ac079dcc211039fccff72ac75e41f0a">HAL_ReadSPI</a> (HAL_SPIPort port, uint8_t *buffer, int32_t count)</td></tr>
+<tr class="memitem:ga2ac079dcc211039fccff72ac75e41f0a"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__spi.html#ga2ac079dcc211039fccff72ac75e41f0a">HAL_ReadSPI</a> (HAL_SPIPort port, uint8_t *<a class="el" href="classbuffer.html">buffer</a>, int32_t count)</td></tr>
 <tr class="memdesc:ga2ac079dcc211039fccff72ac75e41f0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes a read from the device.  <a href="group__hal__spi.html#ga2ac079dcc211039fccff72ac75e41f0a">More...</a><br /></td></tr>
 <tr class="separator:ga2ac079dcc211039fccff72ac75e41f0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6c79f2c1a53777af8912dd29efe6f78e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__spi.html#ga6c79f2c1a53777af8912dd29efe6f78e">HAL_CloseSPI</a> (HAL_SPIPort port)</td></tr>
@@ -152,7 +152,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ga9e3235810dce4e090c20a2a0e58ea29a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__spi.html#ga9e3235810dce4e090c20a2a0e58ea29a">HAL_ForceSPIAutoRead</a> (HAL_SPIPort port, int32_t *status)</td></tr>
 <tr class="memdesc:ga9e3235810dce4e090c20a2a0e58ea29a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Immediately forces an SPI read to happen.  <a href="group__hal__spi.html#ga9e3235810dce4e090c20a2a0e58ea29a">More...</a><br /></td></tr>
 <tr class="separator:ga9e3235810dce4e090c20a2a0e58ea29a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2dcc3ad46c3a053d111f5816a0c889c8"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__spi.html#ga2dcc3ad46c3a053d111f5816a0c889c8">HAL_ReadSPIAutoReceivedData</a> (HAL_SPIPort port, uint32_t *buffer, int32_t numToRead, double timeout, int32_t *status)</td></tr>
+<tr class="memitem:ga2dcc3ad46c3a053d111f5816a0c889c8"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__spi.html#ga2dcc3ad46c3a053d111f5816a0c889c8">HAL_ReadSPIAutoReceivedData</a> (HAL_SPIPort port, uint32_t *<a class="el" href="classbuffer.html">buffer</a>, int32_t numToRead, double timeout, int32_t *status)</td></tr>
 <tr class="memdesc:ga2dcc3ad46c3a053d111f5816a0c889c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads data received by the SPI accumulator.  <a href="group__hal__spi.html#ga2dcc3ad46c3a053d111f5816a0c889c8">More...</a><br /></td></tr>
 <tr class="separator:ga2dcc3ad46c3a053d111f5816a0c889c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad60d88465ec0e71d9252ad00d8a7ab27"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__spi.html#gad60d88465ec0e71d9252ad00d8a7ab27">HAL_GetSPIAutoDroppedCount</a> (HAL_SPIPort port, int32_t *status)</td></tr>
@@ -1075,7 +1075,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun May 23 2021 22:29:20 for WPILibC++ by
+    <li class="footer">Generated on Tue May 25 2021 07:01:39 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

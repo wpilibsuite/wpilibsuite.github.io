@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-60-g4426216</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-61-g87603e4</span>
    </div>
   </td>
  </tr>
@@ -121,7 +121,7 @@ $(document).ready(function(){initNavTree('hal_2src_2main_2native_2include_2hal_2
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
 <div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="group__hal__solenoid.html#ga9fa7b0de9e738b3bd922454994a466e5">   68</a></span>&#160;int32_t <a class="code" href="group__hal__solenoid.html#ga9fa7b0de9e738b3bd922454994a466e5">HAL_GetAllSolenoids</a>(int32_t module, int32_t* status);</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="group__hal__solenoid.html#gaa03cd27ec9f3995b7187e79467531c78">   76</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__solenoid.html#gaa03cd27ec9f3995b7187e79467531c78">HAL_SetSolenoid</a>(HAL_SolenoidHandle solenoidPortHandle, HAL_Bool value,</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="group__hal__solenoid.html#gaa03cd27ec9f3995b7187e79467531c78">   76</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__solenoid.html#gaa03cd27ec9f3995b7187e79467531c78">HAL_SetSolenoid</a>(HAL_SolenoidHandle solenoidPortHandle, HAL_Bool <a class="code" href="classvalue.html">value</a>,</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                     int32_t* status);</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
 <div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="group__hal__solenoid.html#ga13c37793d86c948b668b6948adc761f8">   85</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__solenoid.html#ga13c37793d86c948b668b6948adc761f8">HAL_SetAllSolenoids</a>(int32_t module, int32_t state, int32_t* status);</div>
@@ -147,6 +147,7 @@ $(document).ready(function(){initNavTree('hal_2src_2main_2native_2include_2hal_2
 <div class="ttc" id="agroup__hal__solenoid_html_ga9f9978339119120e5058e21a5dfb5e30"><div class="ttname"><a href="group__hal__solenoid.html#ga9f9978339119120e5058e21a5dfb5e30">HAL_GetPCMSolenoidBlackList</a></div><div class="ttdeci">int32_t HAL_GetPCMSolenoidBlackList(int32_t module, int32_t *status)</div><div class="ttdoc">Gets the channels blacklisted from being enabled on a module.</div></div>
 <div class="ttc" id="agroup__hal__solenoid_html_ga5516cfcdf096afaa3ebc89ef4fa4eb0c"><div class="ttname"><a href="group__hal__solenoid.html#ga5516cfcdf096afaa3ebc89ef4fa4eb0c">HAL_FireOneShot</a></div><div class="ttdeci">void HAL_FireOneShot(HAL_SolenoidHandle solenoidPortHandle, int32_t *status)</div><div class="ttdoc">Fires a single pulse on a solenoid channel.</div></div>
 <div class="ttc" id="agroup__hal__solenoid_html_gae6c0404673588e56254ec69b88ff0b17"><div class="ttname"><a href="group__hal__solenoid.html#gae6c0404673588e56254ec69b88ff0b17">HAL_GetPCMSolenoidVoltageFault</a></div><div class="ttdeci">HAL_Bool HAL_GetPCMSolenoidVoltageFault(int32_t module, int32_t *status)</div><div class="ttdoc">Gets if a specific module has an over or under voltage fault.</div></div>
+<div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1099</div></div>
 <div class="ttc" id="agroup__hal__solenoid_html_ga9fa7b0de9e738b3bd922454994a466e5"><div class="ttname"><a href="group__hal__solenoid.html#ga9fa7b0de9e738b3bd922454994a466e5">HAL_GetAllSolenoids</a></div><div class="ttdeci">int32_t HAL_GetAllSolenoids(int32_t module, int32_t *status)</div><div class="ttdoc">Gets the status of all solenoids on a specific module.</div></div>
 <div class="ttc" id="agroup__hal__solenoid_html_ga1e732970befc518e2b72373e24d97b44"><div class="ttname"><a href="group__hal__solenoid.html#ga1e732970befc518e2b72373e24d97b44">HAL_CheckSolenoidChannel</a></div><div class="ttdeci">HAL_Bool HAL_CheckSolenoidChannel(int32_t channel)</div><div class="ttdoc">Checks if a solenoid channel is in the valid range.</div></div>
 <div class="ttc" id="agroup__hal__solenoid_html_gaa452ba184e2a238dd3db1243e74f68fe"><div class="ttname"><a href="group__hal__solenoid.html#gaa452ba184e2a238dd3db1243e74f68fe">HAL_GetPCMSolenoidVoltageStickyFault</a></div><div class="ttdeci">HAL_Bool HAL_GetPCMSolenoidVoltageStickyFault(int32_t module, int32_t *status)</div><div class="ttdoc">Gets if a specific module has an over or under voltage sticky fault.</div></div>
@@ -162,7 +163,7 @@ $(document).ready(function(){initNavTree('hal_2src_2main_2native_2include_2hal_2
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_7dfa5b6b9262a4050979ee23e0eb392d.html">hal</a></li><li class="navelem"><b>Solenoid.h</b></li>
-    <li class="footer">Generated on Sun May 23 2021 22:29:18 for WPILibC++ by
+    <li class="footer">Generated on Tue May 25 2021 07:01:38 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

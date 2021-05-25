@@ -62,7 +62,7 @@ var group__ntcore__cpp__api =
       [ "operator==", "classnt_1_1Value.html#a53d426708bd9b1a13c9e5b425063dcaa", null ]
     ] ],
     [ "NetworkTableInstance", "classnt_1_1NetworkTableInstance.html", [
-      [ "kDefaultPort", "classnt_1_1NetworkTableInstance.html#a8c8aed4f098a6c14034a5daa191c516aa56a06549716972d3b062cb7cccaed979", null ],
+      [ "kDefaultPort", "classnt_1_1NetworkTableInstance.html#a6ad49de3b211af2e469bc52e40cee3d3a56a06549716972d3b062cb7cccaed979", null ],
       [ "LogLevel", "classnt_1_1NetworkTableInstance.html#a88dfe5b82924f347c572cdada2707150", [
         [ "kLogCritical", "classnt_1_1NetworkTableInstance.html#a88dfe5b82924f347c572cdada2707150ad8346f55c62557dffb78007a3e8d450d", null ],
         [ "kLogError", "classnt_1_1NetworkTableInstance.html#a88dfe5b82924f347c572cdada2707150a5239b1f499019c007f9d4d00036d6765", null ],
@@ -270,12 +270,12 @@ var group__ntcore__cpp__api =
     [ "NetworkTableValue", "group__ntcore__cpp__api.html#ga10804efe6d43c40d49ddff640906ebd8", null ],
     [ "TableEntryListener", "group__ntcore__cpp__api.html#ga2b3a7bf0e225d3115b2f06997e4878e0", null ],
     [ "TableListener", "group__ntcore__cpp__api.html#ga28c5eaed199802e06e8a370644eb3fde", [
-      [ "kImmediate", "group__ntcore__cpp__api.html#gga7528887aacee80a220a077a45bac71c8aa637552032d3e89f0db0e302122b691d", null ],
-      [ "kLocal", "group__ntcore__cpp__api.html#gga7528887aacee80a220a077a45bac71c8aa4fd4805f919234abe0f9a8750d3eebe", null ],
-      [ "kNew", "group__ntcore__cpp__api.html#gga7528887aacee80a220a077a45bac71c8aeb1c99cf2cfb3074c4d21f3297b81167", null ],
-      [ "kDelete", "group__ntcore__cpp__api.html#gga7528887aacee80a220a077a45bac71c8ab598151d1b91de678e6b01cf3eb58ff9", null ],
-      [ "kUpdate", "group__ntcore__cpp__api.html#gga7528887aacee80a220a077a45bac71c8a0ccb0be5fa05a46c301a4f70d2a036cd", null ],
-      [ "kFlags", "group__ntcore__cpp__api.html#gga7528887aacee80a220a077a45bac71c8afc5104febfc8a08878f3b5b589298a18", null ]
+      [ "kImmediate", "group__ntcore__cpp__api.html#ggaf862944e0a7302b1a76116532c289476aa637552032d3e89f0db0e302122b691d", null ],
+      [ "kLocal", "group__ntcore__cpp__api.html#ggaf862944e0a7302b1a76116532c289476aa4fd4805f919234abe0f9a8750d3eebe", null ],
+      [ "kNew", "group__ntcore__cpp__api.html#ggaf862944e0a7302b1a76116532c289476aeb1c99cf2cfb3074c4d21f3297b81167", null ],
+      [ "kDelete", "group__ntcore__cpp__api.html#ggaf862944e0a7302b1a76116532c289476ab598151d1b91de678e6b01cf3eb58ff9", null ],
+      [ "kUpdate", "group__ntcore__cpp__api.html#ggaf862944e0a7302b1a76116532c289476a0ccb0be5fa05a46c301a4f70d2a036cd", null ],
+      [ "kFlags", "group__ntcore__cpp__api.html#ggaf862944e0a7302b1a76116532c289476afc5104febfc8a08878f3b5b589298a18", null ]
     ] ],
     [ "NetworkTableType", "group__ntcore__cpp__api.html#ga6389efeaed0733f40baa02cd3070a15c", null ]
 ];

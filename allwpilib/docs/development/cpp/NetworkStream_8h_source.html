@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-60-g4426216</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-61-g87603e4</span>
    </div>
   </td>
  </tr>
@@ -118,8 +118,8 @@ $(document).ready(function(){initNavTree('NetworkStream_8h_source.html',''); ini
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    kWouldBlock = -3</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  };</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">size_t</span> send(<span class="keyword">const</span> <span class="keywordtype">char</span>* buffer, <span class="keywordtype">size_t</span> len, Error* err) = 0;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">size_t</span> receive(<span class="keywordtype">char</span>* buffer, <span class="keywordtype">size_t</span> len, Error* err,</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">size_t</span> send(<span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="classbuffer.html">buffer</a>, <span class="keywordtype">size_t</span> len, Error* err) = 0;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">size_t</span> receive(<span class="keywordtype">char</span>* <a class="code" href="classbuffer.html">buffer</a>, <span class="keywordtype">size_t</span> len, Error* err,</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                         <span class="keywordtype">int</span> timeout = 0) = 0;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> close() = 0;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
@@ -140,13 +140,14 @@ $(document).ready(function(){initNavTree('NetworkStream_8h_source.html',''); ini
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#endif  // WPIUTIL_WPI_NETWORKSTREAM_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclassbuffer_html"><div class="ttname"><a href="classbuffer.html">buffer</a></div><div class="ttdoc">\rst A contiguous memory buffer with an optional growing ability.</div><div class="ttdef"><b>Definition:</b> core.h:732</div></div>
 <div class="ttc" id="aclasswpi_1_1NetworkStream_html"><div class="ttname"><a href="classwpi_1_1NetworkStream.html">wpi::NetworkStream</a></div><div class="ttdef"><b>Definition:</b> NetworkStream.h:14</div></div>
 <div class="ttc" id="aclasswpi_1_1StringRef_html"><div class="ttname"><a href="classwpi_1_1StringRef.html">wpi::StringRef</a></div><div class="ttdoc">StringRef - Represent a constant reference to a string, i.e.</div><div class="ttdef"><b>Definition:</b> StringRef.h:50</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><b>NetworkStream.h</b></li>
-    <li class="footer">Generated on Sun May 23 2021 22:29:19 for WPILibC++ by
+    <li class="footer">Generated on Tue May 25 2021 07:01:39 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

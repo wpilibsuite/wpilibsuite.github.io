@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-60-g4426216</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-61-g87603e4</span>
    </div>
   </td>
  </tr>
@@ -135,17 +135,17 @@ $(document).ready(function(){initNavTree('raw__istream_8h_source.html',''); init
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  }</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <a class="code" href="classwpi_1_1raw__istream.html">raw_istream</a>&amp; read(<span class="keywordtype">void</span>* data, <span class="keywordtype">size_t</span> len) {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    read_impl(data, len);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <a class="code" href="classwpi_1_1raw__istream.html">raw_istream</a>&amp; read(<span class="keywordtype">void</span>* <a class="code" href="structdata.html">data</a>, <span class="keywordtype">size_t</span> len) {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    read_impl(<a class="code" href="structdata.html">data</a>, len);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  }</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">size_t</span> readsome(<span class="keywordtype">void</span>* data, <span class="keywordtype">size_t</span> len) {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">size_t</span> readsome(<span class="keywordtype">void</span>* <a class="code" href="structdata.html">data</a>, <span class="keywordtype">size_t</span> len) {</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">size_t</span> readlen = (std::min)(in_avail(), len);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">if</span> (readlen == 0) {</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    read_impl(data, readlen);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    read_impl(<a class="code" href="structdata.html">data</a>, readlen);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">return</span> m_read_count;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  }</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
@@ -218,7 +218,7 @@ $(document).ready(function(){initNavTree('raw__istream_8h_source.html',''); init
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <span class="keywordtype">void</span> set_read_count(<span class="keywordtype">size_t</span> count) { m_read_count = count; }</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> read_impl(<span class="keywordtype">void</span>* data, <span class="keywordtype">size_t</span> len) = 0;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> read_impl(<span class="keywordtype">void</span>* <a class="code" href="structdata.html">data</a>, <span class="keywordtype">size_t</span> len) = 0;</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <span class="keywordtype">bool</span> m_error = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <span class="keywordtype">size_t</span> m_read_count = 0;</div>
@@ -241,7 +241,7 @@ $(document).ready(function(){initNavTree('raw__istream_8h_source.html',''); init
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  <span class="keywordtype">size_t</span> in_avail() <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  <span class="keywordtype">void</span> read_impl(<span class="keywordtype">void</span>* data, <span class="keywordtype">size_t</span> len) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  <span class="keywordtype">void</span> read_impl(<span class="keywordtype">void</span>* <a class="code" href="structdata.html">data</a>, <span class="keywordtype">size_t</span> len) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">char</span>* m_cur;</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  <span class="keywordtype">size_t</span> m_left;</div>
@@ -257,7 +257,7 @@ $(document).ready(function(){initNavTree('raw__istream_8h_source.html',''); init
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  <span class="keywordtype">size_t</span> in_avail() <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  <span class="keywordtype">void</span> read_impl(<span class="keywordtype">void</span>* data, <span class="keywordtype">size_t</span> len) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  <span class="keywordtype">void</span> read_impl(<span class="keywordtype">void</span>* <a class="code" href="structdata.html">data</a>, <span class="keywordtype">size_t</span> len) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  <span class="keywordtype">char</span>* m_buf;</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  <span class="keywordtype">char</span>* m_cur;</div>
@@ -273,6 +273,7 @@ $(document).ready(function(){initNavTree('raw__istream_8h_source.html',''); init
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclasswpi_1_1raw__fd__istream_html"><div class="ttname"><a href="classwpi_1_1raw__fd__istream.html">wpi::raw_fd_istream</a></div><div class="ttdef"><b>Definition:</b> raw_istream.h:155</div></div>
+<div class="ttc" id="astructdata_html"><div class="ttname"><a href="structdata.html">data</a></div><div class="ttdef"><b>Definition:</b> format.h:917</div></div>
 <div class="ttc" id="aclasswpi_1_1ArrayRef_html"><div class="ttname"><a href="classwpi_1_1ArrayRef.html">wpi::ArrayRef</a></div><div class="ttdoc">ArrayRef - Represent a constant reference to an array (0 or more elements consecutively in memory),...</div><div class="ttdef"><b>Definition:</b> ArrayRef.h:46</div></div>
 <div class="ttc" id="aclasswpi_1_1SmallVectorImpl_html"><div class="ttname"><a href="classwpi_1_1SmallVectorImpl.html">wpi::SmallVectorImpl&lt; char &gt;</a></div></div>
 <div class="ttc" id="aclasswpi_1_1raw__istream_html"><div class="ttname"><a href="classwpi_1_1raw__istream.html">wpi::raw_istream</a></div><div class="ttdef"><b>Definition:</b> raw_istream.h:23</div></div>
@@ -285,7 +286,7 @@ $(document).ready(function(){initNavTree('raw__istream_8h_source.html',''); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><b>raw_istream.h</b></li>
-    <li class="footer">Generated on Sun May 23 2021 22:29:19 for WPILibC++ by
+    <li class="footer">Generated on Tue May 25 2021 07:01:39 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>
