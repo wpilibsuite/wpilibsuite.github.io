@@ -8,7 +8,7 @@ var classfrc_1_1KilloughDrive =
     [ "DriveCartesian", "classfrc_1_1KilloughDrive.html#a8ee2eff3194584b379017f7ba800669a", null ],
     [ "DriveCartesianIK", "classfrc_1_1KilloughDrive.html#a719f91286215eff1d2d8372ca3d33913", null ],
     [ "DrivePolar", "classfrc_1_1KilloughDrive.html#a0f21ecd01732131e82d744f8d18e4e03", null ],
-    [ "GetDescription", "classfrc_1_1KilloughDrive.html#adfd23c2b8d1f1972e167265e84286420", null ],
+    [ "GetDescription", "classfrc_1_1KilloughDrive.html#a065cd8af0902e3c5ba451b706195b877", null ],
     [ "InitSendable", "classfrc_1_1KilloughDrive.html#a0a09ea3d752b33e25fb3f0dc0c6e5a84", null ],
     [ "operator=", "classfrc_1_1KilloughDrive.html#ab212ccf32bc974741e5e8054622c7684", null ],
     [ "StopMotor", "classfrc_1_1KilloughDrive.html#a8b12495951bf32d344e358ed40a6adf5", null ],

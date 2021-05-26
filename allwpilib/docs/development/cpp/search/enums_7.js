@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['parse_5fevent_5ft_8280',['parse_event_t',['../classwpi_1_1json.html#a8ccc68470f029327303a5d77559f6e79',1,'wpi::json']]],
-  ['periodmultiplier_8281',['PeriodMultiplier',['../classfrc_1_1PWM.html#a229fe8d5000cb865b0562daded70c270',1,'frc::PWM']]]
+  ['state_8182',['State',['../classwpi_1_1WebSocket.html#a767b9ee610b2638448e936302cd3b1b3',1,'wpi::WebSocket']]]
 ];

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-73-gcb0051a</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-75-g50915cb</span>
    </div>
   </td>
  </tr>
@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('SendableHelper_8h_source.html',''); in
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;frc/smartdashboard/SendableRegistry.h&quot;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacefrc.html">frc</a> {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span>frc {</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Derived&gt;</div>
 <div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classfrc_1_1SendableHelper.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1SendableHelper.html">SendableHelper</a> {</div>
@@ -128,55 +128,55 @@ $(document).ready(function(){initNavTree('SendableHelper_8h_source.html',''); in
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  }</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <a class="code" href="namespacefrc.html#a3e1e63234243bd1c57fd61d0c7ea88ec">WPI_DEPRECATED</a>(<span class="stringliteral">&quot;use SendableRegistry::GetName()&quot;</span>)</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  WPI_DEPRECATED(<span class="stringliteral">&quot;use SendableRegistry::GetName()&quot;</span>)</div>
 <div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classfrc_1_1SendableHelper.html#a75d698ea5a4e90ad3b43d0dae6581079">   51</a></span>&#160;  std::<span class="keywordtype">string</span> <a class="code" href="classfrc_1_1SendableHelper.html#a75d698ea5a4e90ad3b43d0dae6581079">GetName</a>()<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classfrc_1_1SendableRegistry.html#a80211651cfff6b70eeb9f0dd40ba588e">SendableRegistry::GetInstance</a>().<a class="code" href="classfrc_1_1SendableRegistry.html#a1d026eea8070c8ebeeea33dc4a5f217e">GetName</a>(</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keyword">static_cast&lt;</span><span class="keyword">const </span>Derived*<span class="keyword">&gt;</span>(<span class="keyword">this</span>));</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  }</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <a class="code" href="namespacefrc.html#a3e1e63234243bd1c57fd61d0c7ea88ec">WPI_DEPRECATED</a>(<span class="stringliteral">&quot;use SendableRegistry::SetName()&quot;</span>)</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  WPI_DEPRECATED(<span class="stringliteral">&quot;use SendableRegistry::SetName()&quot;</span>)</div>
 <div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classfrc_1_1SendableHelper.html#abf3f66a2edb9747941607e5f858885e4">   64</a></span>&#160;  void <a class="code" href="classfrc_1_1SendableHelper.html#abf3f66a2edb9747941607e5f858885e4">SetName</a>(const wpi::Twine&amp; name) {</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="classfrc_1_1SendableRegistry.html#a80211651cfff6b70eeb9f0dd40ba588e">SendableRegistry::GetInstance</a>().<a class="code" href="classfrc_1_1SendableRegistry.html#a33d97707237c6cefe80bfdf9c3afdbd5">SetName</a>(<span class="keyword">static_cast&lt;</span>Derived*<span class="keyword">&gt;</span>(<span class="keyword">this</span>), name);</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  }</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <a class="code" href="namespacefrc.html#a3e1e63234243bd1c57fd61d0c7ea88ec">WPI_DEPRECATED</a>(<span class="stringliteral">&quot;use SendableRegistry::SetName()&quot;</span>)</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  WPI_DEPRECATED(<span class="stringliteral">&quot;use SendableRegistry::SetName()&quot;</span>)</div>
 <div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classfrc_1_1SendableHelper.html#a77cad6240a0f47ed804a385836f483c5">   77</a></span>&#160;  void <a class="code" href="classfrc_1_1SendableHelper.html#abf3f66a2edb9747941607e5f858885e4">SetName</a>(const wpi::Twine&amp; subsystem, const wpi::Twine&amp; name) {</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="classfrc_1_1SendableRegistry.html#a80211651cfff6b70eeb9f0dd40ba588e">SendableRegistry::GetInstance</a>().<a class="code" href="classfrc_1_1SendableRegistry.html#a33d97707237c6cefe80bfdf9c3afdbd5">SetName</a>(<span class="keyword">static_cast&lt;</span>Derived*<span class="keyword">&gt;</span>(<span class="keyword">this</span>),</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                                            subsystem, name);</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  }</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <a class="code" href="namespacefrc.html#a3e1e63234243bd1c57fd61d0c7ea88ec">WPI_DEPRECATED</a>(<span class="stringliteral">&quot;use SendableRegistry::GetSubsystem()&quot;</span>)</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  WPI_DEPRECATED(<span class="stringliteral">&quot;use SendableRegistry::GetSubsystem()&quot;</span>)</div>
 <div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="classfrc_1_1SendableHelper.html#a31d1fbcdecca9492ded28083609e0f01">   90</a></span>&#160;  std::<span class="keywordtype">string</span> <a class="code" href="classfrc_1_1SendableHelper.html#a31d1fbcdecca9492ded28083609e0f01">GetSubsystem</a>()<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classfrc_1_1SendableRegistry.html#a80211651cfff6b70eeb9f0dd40ba588e">SendableRegistry::GetInstance</a>().<a class="code" href="classfrc_1_1SendableRegistry.html#a2fab37290627fb5019d11a3491a60cd4">GetSubsystem</a>(</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keyword">static_cast&lt;</span><span class="keyword">const </span>Derived*<span class="keyword">&gt;</span>(<span class="keyword">this</span>));</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  }</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <a class="code" href="namespacefrc.html#a3e1e63234243bd1c57fd61d0c7ea88ec">WPI_DEPRECATED</a>(<span class="stringliteral">&quot;use SendableRegistry::SetSubsystem()&quot;</span>)</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  WPI_DEPRECATED(<span class="stringliteral">&quot;use SendableRegistry::SetSubsystem()&quot;</span>)</div>
 <div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="classfrc_1_1SendableHelper.html#a47eb53e20e78fb45918759a82d806376">  103</a></span>&#160;  void <a class="code" href="classfrc_1_1SendableHelper.html#a47eb53e20e78fb45918759a82d806376">SetSubsystem</a>(const wpi::Twine&amp; subsystem) {</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <a class="code" href="classfrc_1_1SendableRegistry.html#a80211651cfff6b70eeb9f0dd40ba588e">SendableRegistry::GetInstance</a>().<a class="code" href="classfrc_1_1SendableRegistry.html#af8e1533f8dc447c6d09f77b1f4807634">SetSubsystem</a>(<span class="keyword">static_cast&lt;</span>Derived*<span class="keyword">&gt;</span>(<span class="keyword">this</span>),</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                                                 subsystem);</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  }</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <a class="code" href="namespacefrc.html#a3e1e63234243bd1c57fd61d0c7ea88ec">WPI_DEPRECATED</a>(<span class="stringliteral">&quot;use SendableRegistry::AddChild()&quot;</span>)</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  WPI_DEPRECATED(<span class="stringliteral">&quot;use SendableRegistry::AddChild()&quot;</span>)</div>
 <div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="classfrc_1_1SendableHelper.html#ac201047b464953c58120eb0d41c72982">  117</a></span>&#160;  void <a class="code" href="classfrc_1_1SendableHelper.html#ac201047b464953c58120eb0d41c72982">AddChild</a>(std::shared_ptr&lt;<a class="code" href="classfrc_1_1Sendable.html">Sendable</a>&gt; child) {</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <a class="code" href="classfrc_1_1SendableRegistry.html#a80211651cfff6b70eeb9f0dd40ba588e">SendableRegistry::GetInstance</a>().<a class="code" href="classfrc_1_1SendableRegistry.html#a7002d6dc8e96ce236854c7e28e0fc4f8">AddChild</a>(<span class="keyword">static_cast&lt;</span>Derived*<span class="keyword">&gt;</span>(<span class="keyword">this</span>),</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                                             child.get());</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  }</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <a class="code" href="namespacefrc.html#a3e1e63234243bd1c57fd61d0c7ea88ec">WPI_DEPRECATED</a>(<span class="stringliteral">&quot;use SendableRegistry::AddChild()&quot;</span>)</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  WPI_DEPRECATED(<span class="stringliteral">&quot;use SendableRegistry::AddChild()&quot;</span>)</div>
 <div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="classfrc_1_1SendableHelper.html#a6e4d57269484510fc5c2ab7cd4862c61">  130</a></span>&#160;  void <a class="code" href="classfrc_1_1SendableHelper.html#ac201047b464953c58120eb0d41c72982">AddChild</a>(<span class="keywordtype">void</span>* child) {</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <a class="code" href="classfrc_1_1SendableRegistry.html#a80211651cfff6b70eeb9f0dd40ba588e">SendableRegistry::GetInstance</a>().<a class="code" href="classfrc_1_1SendableRegistry.html#a7002d6dc8e96ce236854c7e28e0fc4f8">AddChild</a>(<span class="keyword">static_cast&lt;</span>Derived*<span class="keyword">&gt;</span>(<span class="keyword">this</span>),</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                                             child);</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  }</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  <a class="code" href="namespacefrc.html#a3e1e63234243bd1c57fd61d0c7ea88ec">WPI_DEPRECATED</a>(<span class="stringliteral">&quot;use SendableRegistry::SetName()&quot;</span>)</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  WPI_DEPRECATED(<span class="stringliteral">&quot;use SendableRegistry::SetName()&quot;</span>)</div>
 <div class="line"><a name="l00145"></a><span class="lineno"><a class="line" href="classfrc_1_1SendableHelper.html#a4dd2d1a64ac47d461b323e2b53deabe6">  145</a></span>&#160;  void <a class="code" href="classfrc_1_1SendableHelper.html#abf3f66a2edb9747941607e5f858885e4">SetName</a>(const wpi::Twine&amp; moduleType, <span class="keywordtype">int</span> channel) {</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <a class="code" href="classfrc_1_1SendableRegistry.html#a80211651cfff6b70eeb9f0dd40ba588e">SendableRegistry::GetInstance</a>().<a class="code" href="classfrc_1_1SendableRegistry.html#a33d97707237c6cefe80bfdf9c3afdbd5">SetName</a>(<span class="keyword">static_cast&lt;</span>Derived*<span class="keyword">&gt;</span>(<span class="keyword">this</span>),</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                                            moduleType, channel);</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  }</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  <a class="code" href="namespacefrc.html#a3e1e63234243bd1c57fd61d0c7ea88ec">WPI_DEPRECATED</a>(<span class="stringliteral">&quot;use SendableRegistry::SetName()&quot;</span>)</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  WPI_DEPRECATED(<span class="stringliteral">&quot;use SendableRegistry::SetName()&quot;</span>)</div>
 <div class="line"><a name="l00162"></a><span class="lineno"><a class="line" href="classfrc_1_1SendableHelper.html#aea88b8605f45b60eb28c3c6ec27be1a8">  162</a></span>&#160;  void <a class="code" href="classfrc_1_1SendableHelper.html#abf3f66a2edb9747941607e5f858885e4">SetName</a>(const wpi::Twine&amp; moduleType, <span class="keywordtype">int</span> moduleNumber, <span class="keywordtype">int</span> channel) {</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <a class="code" href="classfrc_1_1SendableRegistry.html#a80211651cfff6b70eeb9f0dd40ba588e">SendableRegistry::GetInstance</a>().<a class="code" href="classfrc_1_1SendableRegistry.html#a33d97707237c6cefe80bfdf9c3afdbd5">SetName</a>(<span class="keyword">static_cast&lt;</span>Derived*<span class="keyword">&gt;</span>(<span class="keyword">this</span>),</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                                            moduleType, moduleNumber, channel);</div>
@@ -204,18 +204,16 @@ $(document).ready(function(){initNavTree('SendableHelper_8h_source.html',''); in
 <div class="ttc" id="aclassfrc_1_1SendableHelper_html_ac201047b464953c58120eb0d41c72982"><div class="ttname"><a href="classfrc_1_1SendableHelper.html#ac201047b464953c58120eb0d41c72982">frc::SendableHelper::AddChild</a></div><div class="ttdeci">void AddChild(std::shared_ptr&lt; Sendable &gt; child)</div><div class="ttdoc">Add a child component.</div><div class="ttdef"><b>Definition:</b> SendableHelper.h:117</div></div>
 <div class="ttc" id="aclassfrc_1_1Sendable_html"><div class="ttname"><a href="classfrc_1_1Sendable.html">frc::Sendable</a></div><div class="ttdoc">Interface for Sendable objects.</div><div class="ttdef"><b>Definition:</b> Sendable.h:14</div></div>
 <div class="ttc" id="aclassfrc_1_1SendableHelper_html_abf3f66a2edb9747941607e5f858885e4"><div class="ttname"><a href="classfrc_1_1SendableHelper.html#abf3f66a2edb9747941607e5f858885e4">frc::SendableHelper::SetName</a></div><div class="ttdeci">void SetName(const wpi::Twine &amp;name)</div><div class="ttdoc">Sets the name of this Sendable object.</div><div class="ttdef"><b>Definition:</b> SendableHelper.h:64</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> CameraServer.inc:12</div></div>
 <div class="ttc" id="aclassfrc_1_1SendableRegistry_html_a33d97707237c6cefe80bfdf9c3afdbd5"><div class="ttname"><a href="classfrc_1_1SendableRegistry.html#a33d97707237c6cefe80bfdf9c3afdbd5">frc::SendableRegistry::SetName</a></div><div class="ttdeci">void SetName(Sendable *sendable, const wpi::Twine &amp;name)</div><div class="ttdoc">Sets the name of an object.</div></div>
 <div class="ttc" id="aclassfrc_1_1SendableHelper_html_a47eb53e20e78fb45918759a82d806376"><div class="ttname"><a href="classfrc_1_1SendableHelper.html#a47eb53e20e78fb45918759a82d806376">frc::SendableHelper::SetSubsystem</a></div><div class="ttdeci">void SetSubsystem(const wpi::Twine &amp;subsystem)</div><div class="ttdoc">Sets the subsystem name of this Sendable object.</div><div class="ttdef"><b>Definition:</b> SendableHelper.h:103</div></div>
 <div class="ttc" id="aclassfrc_1_1SendableRegistry_html_af06ef9054f12f4cf0fdfadbdb74e5bcd"><div class="ttname"><a href="classfrc_1_1SendableRegistry.html#af06ef9054f12f4cf0fdfadbdb74e5bcd">frc::SendableRegistry::Remove</a></div><div class="ttdeci">bool Remove(Sendable *sendable)</div><div class="ttdoc">Removes an object from the registry.</div></div>
-<div class="ttc" id="anamespacefrc_html_a3e1e63234243bd1c57fd61d0c7ea88ec"><div class="ttname"><a href="namespacefrc.html#a3e1e63234243bd1c57fd61d0c7ea88ec">frc::WPI_DEPRECATED</a></div><div class="ttdeci">class WPI_DEPRECATED(&quot;use MotorController&quot;) SpeedController</div><div class="ttdoc">Interface for speed controlling devices.</div><div class="ttdef"><b>Definition:</b> SpeedController.h:15</div></div>
 <div class="ttc" id="aclassfrc_1_1SendableHelper_html"><div class="ttname"><a href="classfrc_1_1SendableHelper.html">frc::SendableHelper</a></div><div class="ttdoc">A helper class for use with objects that add themselves to SendableRegistry.</div><div class="ttdef"><b>Definition:</b> SendableHelper.h:25</div></div>
 <div class="ttc" id="aclassfrc_1_1SendableRegistry_html_a7002d6dc8e96ce236854c7e28e0fc4f8"><div class="ttname"><a href="classfrc_1_1SendableRegistry.html#a7002d6dc8e96ce236854c7e28e0fc4f8">frc::SendableRegistry::AddChild</a></div><div class="ttdeci">void AddChild(Sendable *parent, Sendable *child)</div><div class="ttdoc">Adds a child object to an object.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_b02f085c5688c41df73c48b2d64de380.html">smartdashboard</a></li><li class="navelem"><b>SendableHelper.h</b></li>
-    <li class="footer">Generated on Wed May 26 2021 14:25:36 for WPILibC++ by
+    <li class="footer">Generated on Wed May 26 2021 14:27:21 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

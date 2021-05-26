@@ -7,7 +7,7 @@ var classfrc_1_1MecanumDrive =
     [ "DriveCartesian", "classfrc_1_1MecanumDrive.html#a7801f779e6486dfd7f6f101d51d5e1f5", null ],
     [ "DriveCartesianIK", "classfrc_1_1MecanumDrive.html#ae8ba7951b238cab9512a9d124a86bbec", null ],
     [ "DrivePolar", "classfrc_1_1MecanumDrive.html#a5fb956c5b44a5b608a85212e77962d08", null ],
-    [ "GetDescription", "classfrc_1_1MecanumDrive.html#a6561a67b233e11108c373cadebc73477", null ],
+    [ "GetDescription", "classfrc_1_1MecanumDrive.html#ac49f911dea1276792bb84f6ba4f4b0fd", null ],
     [ "InitSendable", "classfrc_1_1MecanumDrive.html#a21e46aac351007f6def9d2300826d828", null ],
     [ "operator=", "classfrc_1_1MecanumDrive.html#ab9fff761ee1ab3028df2fc7437254de7", null ],
     [ "StopMotor", "classfrc_1_1MecanumDrive.html#a0be57ea2e3869a237086d04a7fbd51e4", null ]

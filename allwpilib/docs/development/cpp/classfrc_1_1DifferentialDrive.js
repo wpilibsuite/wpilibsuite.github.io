@@ -8,7 +8,7 @@ var classfrc_1_1DifferentialDrive =
     [ "ArcadeDriveIK", "classfrc_1_1DifferentialDrive.html#aceb5781acc01c3f5d5c4a5b76a316866", null ],
     [ "CurvatureDrive", "classfrc_1_1DifferentialDrive.html#aeb97b7ce318d1f38c97a9796fba7a4e3", null ],
     [ "CurvatureDriveIK", "classfrc_1_1DifferentialDrive.html#a87de87615dddde2ca1e92b3a8d0045ec", null ],
-    [ "GetDescription", "classfrc_1_1DifferentialDrive.html#ab9da8a63cdd344b0b9048401bf670c2a", null ],
+    [ "GetDescription", "classfrc_1_1DifferentialDrive.html#a29a245a2ca23ddce38e6f9876ba5b0c8", null ],
     [ "InitSendable", "classfrc_1_1DifferentialDrive.html#a33736c0962c6f6af31cdd1b9f8c9f6d8", null ],
     [ "operator=", "classfrc_1_1DifferentialDrive.html#adcf20b07c40750172d91f149f8ccc17c", null ],
     [ "StopMotor", "classfrc_1_1DifferentialDrive.html#ae5b11f3e8ed93ec77d4eb0b51f4b5e20", null ],

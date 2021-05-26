@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-73-gcb0051a</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-75-g50915cb</span>
    </div>
   </td>
  </tr>
@@ -105,7 +105,7 @@ $(document).ready(function(){initNavTree('IterativeRobotBase_8h_source.html','')
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;frc/RobotBase.h&quot;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;frc/Watchdog.h&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacefrc.html">frc</a> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span>frc {</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classfrc_1_1IterativeRobotBase.html">   45</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1IterativeRobotBase.html">IterativeRobotBase</a> : <span class="keyword">public</span> <a class="code" href="classfrc_1_1RobotBase.html">RobotBase</a> {</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; <span class="keyword">public</span>:</div>
@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('IterativeRobotBase_8h_source.html','')
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
 <div class="line"><a name="l00166"></a><span class="lineno"><a class="line" href="classfrc_1_1IterativeRobotBase.html#aead36ef3891548d84322a593ddb5d049">  166</a></span>&#160;  units::second_t <a class="code" href="classfrc_1_1IterativeRobotBase.html#aead36ef3891548d84322a593ddb5d049">GetPeriod</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  <a class="code" href="namespacefrc.html#a3e1e63234243bd1c57fd61d0c7ea88ec">WPI_DEPRECATED</a>(<span class="stringliteral">&quot;Use constructor with unit-safety instead.&quot;</span>)</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  WPI_DEPRECATED(<span class="stringliteral">&quot;Use constructor with unit-safety instead.&quot;</span>)</div>
 <div class="line"><a name="l00177"></a><span class="lineno"><a class="line" href="classfrc_1_1IterativeRobotBase.html#adaad67b57154bd85fef26a742d9c66b2">  177</a></span>&#160;  explicit <a class="code" href="classfrc_1_1IterativeRobotBase.html">IterativeRobotBase</a>(<span class="keywordtype">double</span> period);</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
 <div class="line"><a name="l00184"></a><span class="lineno"><a class="line" href="classfrc_1_1IterativeRobotBase.html#afee5b7301bc0f4579d76f840a18f2cca">  184</a></span>&#160;  explicit <a class="code" href="classfrc_1_1IterativeRobotBase.html">IterativeRobotBase</a>(units::second_t period);</div>
@@ -179,15 +179,13 @@ $(document).ready(function(){initNavTree('IterativeRobotBase_8h_source.html','')
 <div class="ttc" id="aclassfrc_1_1IterativeRobotBase_html_a43ded4345299bb1bdf4d3e615b585dc6"><div class="ttname"><a href="classfrc_1_1IterativeRobotBase.html#a43ded4345299bb1bdf4d3e615b585dc6">frc::IterativeRobotBase::SimulationPeriodic</a></div><div class="ttdeci">virtual void SimulationPeriodic()</div><div class="ttdoc">Periodic simulation code should go here.</div></div>
 <div class="ttc" id="aclassfrc_1_1IterativeRobotBase_html_ac9eeeb4ab51bb054d12bca1b398bc352"><div class="ttname"><a href="classfrc_1_1IterativeRobotBase.html#ac9eeeb4ab51bb054d12bca1b398bc352">frc::IterativeRobotBase::AutonomousInit</a></div><div class="ttdeci">virtual void AutonomousInit()</div><div class="ttdoc">Initialization code for autonomous mode should go here.</div></div>
 <div class="ttc" id="aclassfrc_1_1IterativeRobotBase_html_af55ae3692aeddcb8f9d3e54a5d5b9474"><div class="ttname"><a href="classfrc_1_1IterativeRobotBase.html#af55ae3692aeddcb8f9d3e54a5d5b9474">frc::IterativeRobotBase::SetNetworkTablesFlushEnabled</a></div><div class="ttdeci">void SetNetworkTablesFlushEnabled(bool enabled)</div><div class="ttdoc">Enables or disables flushing NetworkTables every loop iteration.</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> CameraServer.inc:12</div></div>
 <div class="ttc" id="aclassfrc_1_1IterativeRobotBase_html_a2e6f6bc04d6c62c9fa33bc12a21c74d5"><div class="ttname"><a href="classfrc_1_1IterativeRobotBase.html#a2e6f6bc04d6c62c9fa33bc12a21c74d5">frc::IterativeRobotBase::TeleopPeriodic</a></div><div class="ttdeci">virtual void TeleopPeriodic()</div><div class="ttdoc">Periodic code for teleop mode should go here.</div></div>
-<div class="ttc" id="aclassfrc_1_1RobotBase_html"><div class="ttname"><a href="classfrc_1_1RobotBase.html">frc::RobotBase</a></div><div class="ttdoc">Implement a Robot Program framework.</div><div class="ttdef"><b>Definition:</b> RobotBase.h:114</div></div>
-<div class="ttc" id="anamespacefrc_html_a3e1e63234243bd1c57fd61d0c7ea88ec"><div class="ttname"><a href="namespacefrc.html#a3e1e63234243bd1c57fd61d0c7ea88ec">frc::WPI_DEPRECATED</a></div><div class="ttdeci">class WPI_DEPRECATED(&quot;use MotorController&quot;) SpeedController</div><div class="ttdoc">Interface for speed controlling devices.</div><div class="ttdef"><b>Definition:</b> SpeedController.h:15</div></div>
+<div class="ttc" id="aclassfrc_1_1RobotBase_html"><div class="ttname"><a href="classfrc_1_1RobotBase.html">frc::RobotBase</a></div><div class="ttdoc">Implement a Robot Program framework.</div><div class="ttdef"><b>Definition:</b> RobotBase.h:113</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><b>IterativeRobotBase.h</b></li>
-    <li class="footer">Generated on Wed May 26 2021 14:25:36 for WPILibC++ by
+    <li class="footer">Generated on Wed May 26 2021 14:27:21 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

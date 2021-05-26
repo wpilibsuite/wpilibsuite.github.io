@@ -23,7 +23,6 @@ var dir_0616eb0edb7e8533b85fb847c3c08b17 =
     [ "AnalogTrigger.h", "wpilibc_2src_2main_2native_2include_2frc_2AnalogTrigger_8h_source.html", null ],
     [ "AnalogTriggerOutput.h", "AnalogTriggerOutput_8h_source.html", null ],
     [ "AnalogTriggerType.h", "AnalogTriggerType_8h_source.html", null ],
-    [ "Base.h", "Base_8h_source.html", null ],
     [ "BuiltInAccelerometer.h", "BuiltInAccelerometer_8h_source.html", null ],
     [ "CAN.h", "wpilibc_2src_2main_2native_2include_2frc_2CAN_8h_source.html", null ],
     [ "Compressor.h", "wpilibc_2src_2main_2native_2include_2frc_2Compressor_8h_source.html", null ],

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-73-gcb0051a</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-75-g50915cb</span>
    </div>
   </td>
  </tr>
@@ -100,15 +100,15 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;hal/Types.h&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;wpi/raw_ostream.h&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;hal/Types.h&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;frc/MotorSafety.h&quot;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;frc/smartdashboard/Sendable.h&quot;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;frc/smartdashboard/SendableHelper.h&quot;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacefrc.html">frc</a> {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span>frc {</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">class </span>SendableBuilder;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
@@ -135,7 +135,7 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="comment">// MotorSafety interface</span></div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordtype">void</span> StopMotor() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keywordtype">void</span> GetDescription(<a class="code" href="classwpi_1_1raw__ostream.html">wpi::raw_ostream</a>&amp; desc) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  std::string GetDescription() <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
 <div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="classfrc_1_1Relay.html#a929bfe3f3c8aa96a99eb3bc06c465f84">   96</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Relay.html#a929bfe3f3c8aa96a99eb3bc06c465f84">InitSendable</a>(<a class="code" href="classfrc_1_1SendableBuilder.html">SendableBuilder</a>&amp; builder) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
@@ -153,13 +153,11 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1099</div></div>
 <div class="ttc" id="aclassfrc_1_1Relay_html"><div class="ttname"><a href="classfrc_1_1Relay.html">frc::Relay</a></div><div class="ttdoc">Class for Spike style relay outputs.</div><div class="ttdef"><b>Definition:</b> Relay.h:34</div></div>
 <div class="ttc" id="aclassfrc_1_1Relay_html_a929bfe3f3c8aa96a99eb3bc06c465f84"><div class="ttname"><a href="classfrc_1_1Relay.html#a929bfe3f3c8aa96a99eb3bc06c465f84">frc::Relay::InitSendable</a></div><div class="ttdeci">void InitSendable(SendableBuilder &amp;builder) override</div><div class="ttdoc">Initializes this Sendable object.</div></div>
-<div class="ttc" id="aclassfrc_1_1MotorSafety_html"><div class="ttname"><a href="classfrc_1_1MotorSafety.html">frc::MotorSafety</a></div><div class="ttdoc">This base class runs a watchdog timer and calls the subclass's StopMotor() function if the timeout ex...</div><div class="ttdef"><b>Definition:</b> MotorSafety.h:23</div></div>
+<div class="ttc" id="aclassfrc_1_1MotorSafety_html"><div class="ttname"><a href="classfrc_1_1MotorSafety.html">frc::MotorSafety</a></div><div class="ttdoc">This base class runs a watchdog timer and calls the subclass's StopMotor() function if the timeout ex...</div><div class="ttdef"><b>Definition:</b> MotorSafety.h:21</div></div>
 <div class="ttc" id="aclassfrc_1_1Relay_html_add10270afa395b368efd21bc0d33c27f"><div class="ttname"><a href="classfrc_1_1Relay.html#add10270afa395b368efd21bc0d33c27f">frc::Relay::Set</a></div><div class="ttdeci">void Set(Value value)</div><div class="ttdoc">Set the relay state.</div></div>
 <div class="ttc" id="aclassfrc_1_1Relay_html_aee901ec9353c9235133a48196f8ae3f9"><div class="ttname"><a href="classfrc_1_1Relay.html#aee901ec9353c9235133a48196f8ae3f9">frc::Relay::~Relay</a></div><div class="ttdeci">~Relay() override</div><div class="ttdoc">Free the resource associated with a relay.</div></div>
 <div class="ttc" id="aclassfrc_1_1Relay_html_af4d21a1534b1c2b1cbeadeaa25652249"><div class="ttname"><a href="classfrc_1_1Relay.html#af4d21a1534b1c2b1cbeadeaa25652249">frc::Relay::Relay</a></div><div class="ttdeci">Relay(int channel, Direction direction=kBothDirections)</div><div class="ttdoc">Relay constructor given a channel.</div></div>
 <div class="ttc" id="aclassfrc_1_1Sendable_html"><div class="ttname"><a href="classfrc_1_1Sendable.html">frc::Sendable</a></div><div class="ttdoc">Interface for Sendable objects.</div><div class="ttdef"><b>Definition:</b> Sendable.h:14</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> CameraServer.inc:12</div></div>
-<div class="ttc" id="aclasswpi_1_1raw__ostream_html"><div class="ttname"><a href="classwpi_1_1raw__ostream.html">wpi::raw_ostream</a></div><div class="ttdoc">This class implements an extremely fast bulk output stream that can only output to a stream.</div><div class="ttdef"><b>Definition:</b> raw_ostream.h:48</div></div>
 <div class="ttc" id="aclassfrc_1_1Relay_html_a73919e46eed8512b081097751ff37cf5"><div class="ttname"><a href="classfrc_1_1Relay.html#a73919e46eed8512b081097751ff37cf5">frc::Relay::Get</a></div><div class="ttdeci">Value Get() const</div><div class="ttdoc">Get the Relay State.</div></div>
 <div class="ttc" id="aclassfrc_1_1SendableHelper_html"><div class="ttname"><a href="classfrc_1_1SendableHelper.html">frc::SendableHelper</a></div><div class="ttdoc">A helper class for use with objects that add themselves to SendableRegistry.</div><div class="ttdef"><b>Definition:</b> SendableHelper.h:25</div></div>
 <div class="ttc" id="aclassfrc_1_1SendableBuilder_html"><div class="ttname"><a href="classfrc_1_1SendableBuilder.html">frc::SendableBuilder</a></div><div class="ttdef"><b>Definition:</b> SendableBuilder.h:21</div></div>
@@ -167,7 +165,7 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><b>Relay.h</b></li>
-    <li class="footer">Generated on Wed May 26 2021 14:25:36 for WPILibC++ by
+    <li class="footer">Generated on Wed May 26 2021 14:27:21 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

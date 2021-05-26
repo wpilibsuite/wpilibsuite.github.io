@@ -6,7 +6,7 @@ var classfrc_1_1MotorSafety =
     [ "Check", "classfrc_1_1MotorSafety.html#a1449c25e11582cbea7d3e2254479f42b", null ],
     [ "CheckMotors", "classfrc_1_1MotorSafety.html#a2a666ba39461317728e52fbaa9cdca32", null ],
     [ "Feed", "classfrc_1_1MotorSafety.html#a64f96194caddf9df5e0ab9871fb2b7a3", null ],
-    [ "GetDescription", "classfrc_1_1MotorSafety.html#ac92187de068783dab3a6325bcdf22542", null ],
+    [ "GetDescription", "classfrc_1_1MotorSafety.html#a601228c7ebc676162bdecedeba071c58", null ],
     [ "GetExpiration", "classfrc_1_1MotorSafety.html#ad2cfdc7e808eb4670fcd14d63e83c679", null ],
     [ "IsAlive", "classfrc_1_1MotorSafety.html#af48493aa5e82c350b59f2ecd2953be31", null ],
     [ "IsSafetyEnabled", "classfrc_1_1MotorSafety.html#a6d4ff31fddf4aa7af933b47e8b04833e", null ],

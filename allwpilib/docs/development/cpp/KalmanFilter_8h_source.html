@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-73-gcb0051a</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-75-g50915cb</span>
    </div>
   </td>
  </tr>
@@ -112,7 +112,7 @@ $(document).ready(function(){initNavTree('KalmanFilter_8h_source.html',''); init
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;units/time.h&quot;</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;wpimath/MathShared.h&quot;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacefrc.html">frc</a> {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span>frc {</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">namespace </span>detail {</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">int</span> States, <span class="keywordtype">int</span> Inputs, <span class="keywordtype">int</span> Outputs&gt;</div>
@@ -124,8 +124,8 @@ $(document).ready(function(){initNavTree('KalmanFilter_8h_source.html',''); init
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                   units::second_t dt) {</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    m_plant = &amp;plant;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">auto</span> contQ = <a class="code" href="namespacefrc.html#a97f46ffa0575e8aa2b2f08e7a8a1e2d7">MakeCovMatrix</a>(stateStdDevs);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">auto</span> contR = <a class="code" href="namespacefrc.html#a97f46ffa0575e8aa2b2f08e7a8a1e2d7">MakeCovMatrix</a>(measurementStdDevs);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">auto</span> contQ = MakeCovMatrix(stateStdDevs);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">auto</span> contR = MakeCovMatrix(measurementStdDevs);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    Eigen::Matrix&lt;double, States, States&gt; discA;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    Eigen::Matrix&lt;double, States, States&gt; discQ;</div>
@@ -263,17 +263,15 @@ $(document).ready(function(){initNavTree('KalmanFilter_8h_source.html',''); init
 <div class="ttc" id="aclassfrc_1_1detail_1_1KalmanFilterImpl_html_ab7e3df8c5f1c73cd043f4f1abdd72666"><div class="ttname"><a href="classfrc_1_1detail_1_1KalmanFilterImpl.html#ab7e3df8c5f1c73cd043f4f1abdd72666">frc::detail::KalmanFilterImpl::Xhat</a></div><div class="ttdeci">const Eigen::Matrix&lt; double, States, 1 &gt; &amp; Xhat() const</div><div class="ttdoc">Returns the state estimate x-hat.</div><div class="ttdef"><b>Definition:</b> KalmanFilter.h:119</div></div>
 <div class="ttc" id="aclassfrc_1_1detail_1_1KalmanFilterImpl_html_aa93660139f4b626a3bebe567903bdaa9"><div class="ttname"><a href="classfrc_1_1detail_1_1KalmanFilterImpl.html#aa93660139f4b626a3bebe567903bdaa9">frc::detail::KalmanFilterImpl::SetXhat</a></div><div class="ttdeci">void SetXhat(const Eigen::Matrix&lt; double, States, 1 &gt; &amp;xHat)</div><div class="ttdoc">Set initial state estimate x-hat.</div><div class="ttdef"><b>Definition:</b> KalmanFilter.h:133</div></div>
 <div class="ttc" id="aclassfrc_1_1detail_1_1KalmanFilterImpl_html_aaa368904ff08ecfbeea7b4d66a83344e"><div class="ttname"><a href="classfrc_1_1detail_1_1KalmanFilterImpl.html#aaa368904ff08ecfbeea7b4d66a83344e">frc::detail::KalmanFilterImpl::Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdoc">Resets the observer.</div><div class="ttdef"><b>Definition:</b> KalmanFilter.h:146</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> CameraServer.inc:12</div></div>
 <div class="ttc" id="aclassfrc_1_1LinearSystem_html_ac6d6f39aa08722e074924ecf6b7bfed1"><div class="ttname"><a href="classfrc_1_1LinearSystem.html#ac6d6f39aa08722e074924ecf6b7bfed1">frc::LinearSystem::C</a></div><div class="ttdeci">const Eigen::Matrix&lt; double, Outputs, States &gt; &amp; C() const</div><div class="ttdoc">Returns the output matrix C.</div><div class="ttdef"><b>Definition:</b> LinearSystem.h:80</div></div>
 <div class="ttc" id="aclassfrc_1_1detail_1_1KalmanFilterImpl_html_a71256dde7bb1bf93d3fa9287e3fae82e"><div class="ttname"><a href="classfrc_1_1detail_1_1KalmanFilterImpl.html#a71256dde7bb1bf93d3fa9287e3fae82e">frc::detail::KalmanFilterImpl::SetXhat</a></div><div class="ttdeci">void SetXhat(int i, double value)</div><div class="ttdoc">Set an element of the initial state estimate x-hat.</div><div class="ttdef"><b>Definition:</b> KalmanFilter.h:141</div></div>
 <div class="ttc" id="aclassfrc_1_1LinearSystem_html_ab0f7a086442751f5d8eacb8d748cbb79"><div class="ttname"><a href="classfrc_1_1LinearSystem.html#ab0f7a086442751f5d8eacb8d748cbb79">frc::LinearSystem::A</a></div><div class="ttdeci">const Eigen::Matrix&lt; double, States, States &gt; &amp; A() const</div><div class="ttdoc">Returns the system matrix A.</div><div class="ttdef"><b>Definition:</b> LinearSystem.h:54</div></div>
-<div class="ttc" id="anamespacefrc_html_a97f46ffa0575e8aa2b2f08e7a8a1e2d7"><div class="ttname"><a href="namespacefrc.html#a97f46ffa0575e8aa2b2f08e7a8a1e2d7">frc::MakeCovMatrix</a></div><div class="ttdeci">Eigen::Matrix&lt; double, sizeof...(Ts), sizeof...(Ts)&gt; MakeCovMatrix(Ts... stdDevs)</div><div class="ttdoc">Creates a covariance matrix from the given vector for use with Kalman filters.</div><div class="ttdef"><b>Definition:</b> StateSpaceUtil.h:144</div></div>
 <div class="ttc" id="aclassfrc_1_1detail_1_1KalmanFilterImpl_html_a16462afe3377a603c9416c0af071e848"><div class="ttname"><a href="classfrc_1_1detail_1_1KalmanFilterImpl.html#a16462afe3377a603c9416c0af071e848">frc::detail::KalmanFilterImpl::KalmanFilterImpl</a></div><div class="ttdeci">KalmanFilterImpl(LinearSystem&lt; States, Inputs, Outputs &gt; &amp;plant, const wpi::array&lt; double, States &gt; &amp;stateStdDevs, const wpi::array&lt; double, Outputs &gt; &amp;measurementStdDevs, units::second_t dt)</div><div class="ttdoc">Constructs a state-space observer with the given plant.</div><div class="ttdef"><b>Definition:</b> KalmanFilter.h:50</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_7b4a0634315f7993a48b0e5d4ddcc644.html">estimator</a></li><li class="navelem"><b>KalmanFilter.h</b></li>
-    <li class="footer">Generated on Wed May 26 2021 14:25:37 for WPILibC++ by
+    <li class="footer">Generated on Wed May 26 2021 14:27:22 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

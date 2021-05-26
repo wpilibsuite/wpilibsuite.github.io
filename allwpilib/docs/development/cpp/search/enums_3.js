@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['hal_5fhandleenum_8269',['HAL_HandleEnum',['../namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9',1,'hal']]]
+  ['loglevel_8170',['LogLevel',['../classnt_1_1NetworkTableInstance.html#a88dfe5b82924f347c572cdada2707150',1,'nt::NetworkTableInstance']]]
 ];

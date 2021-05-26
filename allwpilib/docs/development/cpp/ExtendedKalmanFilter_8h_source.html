@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-73-gcb0051a</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-75-g50915cb</span>
    </div>
   </td>
  </tr>
@@ -112,7 +112,7 @@ $(document).ready(function(){initNavTree('ExtendedKalmanFilter_8h_source.html','
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;frc/system/NumericalJacobian.h&quot;</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;units/time.h&quot;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacefrc.html">frc</a> {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span>frc {</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">int</span> States, <span class="keywordtype">int</span> Inputs, <span class="keywordtype">int</span> Outputs&gt;</div>
 <div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classfrc_1_1ExtendedKalmanFilter.html">   23</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1ExtendedKalmanFilter.html">ExtendedKalmanFilter</a> {</div>
@@ -129,8 +129,8 @@ $(document).ready(function(){initNavTree('ExtendedKalmanFilter_8h_source.html','
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                       <span class="keyword">const</span> <a class="code" href="classwpi_1_1array.html">wpi::array&lt;double, Outputs&gt;</a>&amp; measurementStdDevs,</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                       units::second_t dt)</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      : m_f(f), m_h(h) {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    m_contQ = <a class="code" href="namespacefrc.html#a97f46ffa0575e8aa2b2f08e7a8a1e2d7">MakeCovMatrix</a>(stateStdDevs);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    m_contR = <a class="code" href="namespacefrc.html#a97f46ffa0575e8aa2b2f08e7a8a1e2d7">MakeCovMatrix</a>(measurementStdDevs);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    m_contQ = MakeCovMatrix(stateStdDevs);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    m_contR = MakeCovMatrix(measurementStdDevs);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    m_residualFuncY = [](<span class="keyword">auto</span> a, <span class="keyword">auto</span> b) -&gt; Eigen::Matrix&lt;double, Outputs, 1&gt; {</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      <span class="keywordflow">return</span> a - b;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    };</div>
@@ -187,8 +187,8 @@ $(document).ready(function(){initNavTree('ExtendedKalmanFilter_8h_source.html','
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                           addFuncX,</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                       units::second_t dt)</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;      : m_f(f), m_h(h), m_residualFuncY(residualFuncY), m_addFuncX(addFuncX) {</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    m_contQ = <a class="code" href="namespacefrc.html#a97f46ffa0575e8aa2b2f08e7a8a1e2d7">MakeCovMatrix</a>(stateStdDevs);</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    m_contR = <a class="code" href="namespacefrc.html#a97f46ffa0575e8aa2b2f08e7a8a1e2d7">MakeCovMatrix</a>(measurementStdDevs);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    m_contQ = MakeCovMatrix(stateStdDevs);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    m_contR = MakeCovMatrix(measurementStdDevs);</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    m_dt = dt;</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <a class="code" href="classfrc_1_1ExtendedKalmanFilter.html#a540f4ee08bced06de29e2267cf7cfe1d">Reset</a>();</div>
@@ -250,7 +250,7 @@ $(document).ready(function(){initNavTree('ExtendedKalmanFilter_8h_source.html','
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    Eigen::Matrix&lt;double, States, States&gt; discQ;</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    DiscretizeAQTaylor&lt;States&gt;(contA, m_contQ, dt, &amp;discA, &amp;discQ);</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160; </div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    m_xHat = <a class="code" href="namespacefrc.html#a362829981d16ca01c86bb52d3df6118b">RK4</a>(m_f, m_xHat, u, dt);</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    m_xHat = RK4(m_f, m_xHat, u, dt);</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    m_P = discA * m_P * discA.transpose() + discQ;</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  }</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160; </div>
@@ -351,7 +351,6 @@ $(document).ready(function(){initNavTree('ExtendedKalmanFilter_8h_source.html','
 <div class="ttc" id="aclassfrc_1_1ExtendedKalmanFilter_html_a7d6a8c672d26d8fbcc6598381947c823"><div class="ttname"><a href="classfrc_1_1ExtendedKalmanFilter.html#a7d6a8c672d26d8fbcc6598381947c823">frc::ExtendedKalmanFilter::SetP</a></div><div class="ttdeci">void SetP(const Eigen::Matrix&lt; double, States, States &gt; &amp;P)</div><div class="ttdoc">Set the current error covariance matrix P.</div><div class="ttdef"><b>Definition:</b> ExtendedKalmanFilter.h:170</div></div>
 <div class="ttc" id="aclassfrc_1_1ExtendedKalmanFilter_html_a9446ab7a24735306b8a13326b711f8ef"><div class="ttname"><a href="classfrc_1_1ExtendedKalmanFilter.html#a9446ab7a24735306b8a13326b711f8ef">frc::ExtendedKalmanFilter::SetXhat</a></div><div class="ttdeci">void SetXhat(int i, double value)</div><div class="ttdoc">Set an element of the initial state estimate x-hat.</div><div class="ttdef"><b>Definition:</b> ExtendedKalmanFilter.h:197</div></div>
 <div class="ttc" id="aclassfrc_1_1ExtendedKalmanFilter_html_ad60af5653b38d334755fbdc559752943"><div class="ttname"><a href="classfrc_1_1ExtendedKalmanFilter.html#ad60af5653b38d334755fbdc559752943">frc::ExtendedKalmanFilter::P</a></div><div class="ttdeci">double P(int i, int j) const</div><div class="ttdoc">Returns an element of the error covariance matrix P.</div><div class="ttdef"><b>Definition:</b> ExtendedKalmanFilter.h:163</div></div>
-<div class="ttc" id="anamespacefrc_html_a362829981d16ca01c86bb52d3df6118b"><div class="ttname"><a href="namespacefrc.html#a362829981d16ca01c86bb52d3df6118b">frc::RK4</a></div><div class="ttdeci">T RK4(F &amp;&amp;f, T x, units::second_t dt)</div><div class="ttdoc">Performs 4th order Runge-Kutta integration of dx/dt = f(x) for dt.</div><div class="ttdef"><b>Definition:</b> NumericalIntegration.h:24</div></div>
 <div class="ttc" id="aclassfrc_1_1ExtendedKalmanFilter_html_a8496ad06ed4d0d3e98aa18b13eb7a7c4"><div class="ttname"><a href="classfrc_1_1ExtendedKalmanFilter.html#a8496ad06ed4d0d3e98aa18b13eb7a7c4">frc::ExtendedKalmanFilter::ExtendedKalmanFilter</a></div><div class="ttdeci">ExtendedKalmanFilter(std::function&lt; Eigen::Matrix&lt; double, States, 1 &gt;(const Eigen::Matrix&lt; double, States, 1 &gt; &amp;, const Eigen::Matrix&lt; double, Inputs, 1 &gt; &amp;)&gt; f, std::function&lt; Eigen::Matrix&lt; double, Outputs, 1 &gt;(const Eigen::Matrix&lt; double, States, 1 &gt; &amp;, const Eigen::Matrix&lt; double, Inputs, 1 &gt; &amp;)&gt; h, const wpi::array&lt; double, States &gt; &amp;stateStdDevs, const wpi::array&lt; double, Outputs &gt; &amp;measurementStdDevs, units::second_t dt)</div><div class="ttdoc">Constructs an Extended Kalman filter.</div><div class="ttdef"><b>Definition:</b> ExtendedKalmanFilter.h:36</div></div>
 <div class="ttc" id="aclasswpi_1_1array_html"><div class="ttname"><a href="classwpi_1_1array.html">wpi::array</a></div><div class="ttdoc">This class is a wrapper around std::array that does compile time size checking.</div><div class="ttdef"><b>Definition:</b> array.h:25</div></div>
 <div class="ttc" id="aclassfrc_1_1ExtendedKalmanFilter_html_ae78e8524370532a532ce4a2314c6bc1c"><div class="ttname"><a href="classfrc_1_1ExtendedKalmanFilter.html#ae78e8524370532a532ce4a2314c6bc1c">frc::ExtendedKalmanFilter::Xhat</a></div><div class="ttdeci">const Eigen::Matrix&lt; double, States, 1 &gt; &amp; Xhat() const</div><div class="ttdoc">Returns the state estimate x-hat.</div><div class="ttdef"><b>Definition:</b> ExtendedKalmanFilter.h:175</div></div>
@@ -361,15 +360,13 @@ $(document).ready(function(){initNavTree('ExtendedKalmanFilter_8h_source.html','
 <div class="ttc" id="aclassfrc_1_1ExtendedKalmanFilter_html_a2a4ddc449a9f14234e18f8a01b11870d"><div class="ttname"><a href="classfrc_1_1ExtendedKalmanFilter.html#a2a4ddc449a9f14234e18f8a01b11870d">frc::ExtendedKalmanFilter::Predict</a></div><div class="ttdeci">void Predict(const Eigen::Matrix&lt; double, Inputs, 1 &gt; &amp;u, units::second_t dt)</div><div class="ttdoc">Project the model into the future with a new control input u.</div><div class="ttdef"><b>Definition:</b> ExtendedKalmanFilter.h:213</div></div>
 <div class="ttc" id="aclassfrc_1_1ExtendedKalmanFilter_html_a7f7550acd532b0f0d91fab3c7a777dc3"><div class="ttname"><a href="classfrc_1_1ExtendedKalmanFilter.html#a7f7550acd532b0f0d91fab3c7a777dc3">frc::ExtendedKalmanFilter::ExtendedKalmanFilter</a></div><div class="ttdeci">ExtendedKalmanFilter(std::function&lt; Eigen::Matrix&lt; double, States, 1 &gt;(const Eigen::Matrix&lt; double, States, 1 &gt; &amp;, const Eigen::Matrix&lt; double, Inputs, 1 &gt; &amp;)&gt; f, std::function&lt; Eigen::Matrix&lt; double, Outputs, 1 &gt;(const Eigen::Matrix&lt; double, States, 1 &gt; &amp;, const Eigen::Matrix&lt; double, Inputs, 1 &gt; &amp;)&gt; h, const wpi::array&lt; double, States &gt; &amp;stateStdDevs, const wpi::array&lt; double, Outputs &gt; &amp;measurementStdDevs, std::function&lt; Eigen::Matrix&lt; double, Outputs, 1 &gt;(const Eigen::Matrix&lt; double, Outputs, 1 &gt; &amp;, const Eigen::Matrix&lt; double, Outputs, 1 &gt; &amp;)&gt; residualFuncY, std::function&lt; Eigen::Matrix&lt; double, States, 1 &gt;(const Eigen::Matrix&lt; double, States, 1 &gt; &amp;, const Eigen::Matrix&lt; double, States, 1 &gt; &amp;)&gt; addFuncX, units::second_t dt)</div><div class="ttdoc">Constructs an Extended Kalman filter.</div><div class="ttdef"><b>Definition:</b> ExtendedKalmanFilter.h:100</div></div>
 <div class="ttc" id="aclassfrc_1_1ExtendedKalmanFilter_html_ab69f563903cf4145571549f042355d46"><div class="ttname"><a href="classfrc_1_1ExtendedKalmanFilter.html#ab69f563903cf4145571549f042355d46">frc::ExtendedKalmanFilter::SetXhat</a></div><div class="ttdeci">void SetXhat(const Eigen::Matrix&lt; double, States, 1 &gt; &amp;xHat)</div><div class="ttdoc">Set initial state estimate x-hat.</div><div class="ttdef"><b>Definition:</b> ExtendedKalmanFilter.h:189</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> CameraServer.inc:12</div></div>
 <div class="ttc" id="aclassfrc_1_1ExtendedKalmanFilter_html"><div class="ttname"><a href="classfrc_1_1ExtendedKalmanFilter.html">frc::ExtendedKalmanFilter</a></div><div class="ttdef"><b>Definition:</b> ExtendedKalmanFilter.h:23</div></div>
 <div class="ttc" id="aclassfrc_1_1ExtendedKalmanFilter_html_ad017e203aff9f1236bc7ef52dd1b049e"><div class="ttname"><a href="classfrc_1_1ExtendedKalmanFilter.html#ad017e203aff9f1236bc7ef52dd1b049e">frc::ExtendedKalmanFilter::Correct</a></div><div class="ttdeci">void Correct(const Eigen::Matrix&lt; double, Inputs, 1 &gt; &amp;u, const Eigen::Matrix&lt; double, Outputs, 1 &gt; &amp;y)</div><div class="ttdoc">Correct the state estimate x-hat using the measurements in y.</div><div class="ttdef"><b>Definition:</b> ExtendedKalmanFilter.h:235</div></div>
-<div class="ttc" id="anamespacefrc_html_a97f46ffa0575e8aa2b2f08e7a8a1e2d7"><div class="ttname"><a href="namespacefrc.html#a97f46ffa0575e8aa2b2f08e7a8a1e2d7">frc::MakeCovMatrix</a></div><div class="ttdeci">Eigen::Matrix&lt; double, sizeof...(Ts), sizeof...(Ts)&gt; MakeCovMatrix(Ts... stdDevs)</div><div class="ttdoc">Creates a covariance matrix from the given vector for use with Kalman filters.</div><div class="ttdef"><b>Definition:</b> StateSpaceUtil.h:144</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_7b4a0634315f7993a48b0e5d4ddcc644.html">estimator</a></li><li class="navelem"><b>ExtendedKalmanFilter.h</b></li>
-    <li class="footer">Generated on Wed May 26 2021 14:25:37 for WPILibC++ by
+    <li class="footer">Generated on Wed May 26 2021 14:27:22 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

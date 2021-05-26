@@ -1,5 +1,7 @@
 var NAVTREEINDEX22 =
 {
+"classnt_1_1RpcCall.html#afcc6d73fc6e3aa78b833fb543076d332":[3,2,0,11],
+"classnt_1_1Value.html":[3,2,1],
 "classnt_1_1Value.html#a0223a64ebeb9473f6adc43c9546d6305":[3,2,1,0],
 "classnt_1_1Value.html#a187c8590b8359bb75a389becc64a2caa":[3,2,1,31],
 "classnt_1_1Value.html#a2a78d905607746ea858e00f79759a2c8":[3,2,1,20],
@@ -247,7 +249,5 @@ var NAVTREEINDEX22 =
 "classwpi_1_1DebugEpochBase.html#a54237a8793e15f16f377a6a0333abcad":[5,0,9,30,2],
 "classwpi_1_1DebugEpochBase.html#a56c7baf9700920d0c6243b5dea37eb1e":[5,0,9,30,1],
 "classwpi_1_1DebugEpochBase_1_1HandleBase.html":[5,0,9,30,0],
-"classwpi_1_1DebugEpochBase_1_1HandleBase.html#a48f01e7711ca6821d2de11ac4c964b6f":[5,0,9,30,0,3],
-"classwpi_1_1DebugEpochBase_1_1HandleBase.html#a62cacf5c808f346f8c39c85f24a71b76":[5,0,9,30,0,1],
-"classwpi_1_1DebugEpochBase_1_1HandleBase.html#a96548bd9bc39e3982b5c3ba081c1d6cd":[5,0,9,30,0,2]
+"classwpi_1_1DebugEpochBase_1_1HandleBase.html#a48f01e7711ca6821d2de11ac4c964b6f":[5,0,9,30,0,3]
 };

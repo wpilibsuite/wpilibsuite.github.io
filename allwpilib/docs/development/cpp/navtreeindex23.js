@@ -1,5 +1,7 @@
 var NAVTREEINDEX23 =
 {
+"classwpi_1_1DebugEpochBase_1_1HandleBase.html#a62cacf5c808f346f8c39c85f24a71b76":[5,0,9,30,0,1],
+"classwpi_1_1DebugEpochBase_1_1HandleBase.html#a96548bd9bc39e3982b5c3ba081c1d6cd":[5,0,9,30,0,2],
 "classwpi_1_1DebugEpochBase_1_1HandleBase.html#aaf3c9305c51fe0be287004cbc9e27df0":[5,0,9,30,0,0],
 "classwpi_1_1DenseMap.html":[5,0,9,31],
 "classwpi_1_1DenseMap.html#a220b229cd0ace47795f35c2458f43f49":[5,0,9,31,8],
@@ -247,7 +249,5 @@ var NAVTREEINDEX23 =
 "classwpi_1_1HttpLocation.html#a33ae0c0c89a5360cd8f70cd115157c00":[5,0,9,99,9],
 "classwpi_1_1HttpLocation.html#a464dfeb88d41a5ed2c0d4587de9ee640":[5,0,9,99,8],
 "classwpi_1_1HttpLocation.html#a52da7b47fea6dd8aec75e40c982c3376":[5,0,9,99,5],
-"classwpi_1_1HttpLocation.html#a5d3821a6ed45219350b7e84ea0aac9be":[5,0,9,99,1],
-"classwpi_1_1HttpLocation.html#a7b00097cff04e926e3466b5a097e9488":[5,0,9,99,7],
-"classwpi_1_1HttpLocation.html#a901747aaf7b6c15ee762333d3c3ec841":[5,0,9,99,2]
+"classwpi_1_1HttpLocation.html#a5d3821a6ed45219350b7e84ea0aac9be":[5,0,9,99,1]
 };

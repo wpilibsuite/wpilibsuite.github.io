@@ -1,5 +1,7 @@
 var NAVTREEINDEX18 =
 {
+"classfrc_1_1detail_1_1RecordingController.html#a186fa96fdc4a82fc76135850e2bbee47":[5,0,4,0,3,1],
+"classfrc_1_1detail_1_1RecordingController.html#a2138f1cedec7ba56146a7d4681dd733e":[5,0,4,0,3,6],
 "classfrc_1_1detail_1_1RecordingController.html#a468cfd499b0807c91f8552b36fb009ae":[5,0,4,0,3,3],
 "classfrc_1_1detail_1_1RecordingController.html#a697f7e25f6f60460fc97b81bfd465203":[5,0,4,0,3,2],
 "classfrc_1_1detail_1_1RecordingController.html#aabbe66086abd03137f54f3d589ef9d94":[5,0,4,0,3,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX18 =
 "classfrc_1_1sim_1_1DriverStationSim.html#a025e4170bf86a53c4942ad24633f15c6":[5,0,4,1,14,8],
 "classfrc_1_1sim_1_1DriverStationSim.html#a056e8282a8a74dd37b02317745c2bd5a":[5,0,4,1,14,31],
 "classfrc_1_1sim_1_1DriverStationSim.html#a0737e62ca23c1e4010e2754557f5c009":[5,0,4,1,14,22],
-"classfrc_1_1sim_1_1DriverStationSim.html#a0f9df3a06b34f74a8eecc777649e9c58":[5,0,4,1,14,20],
-"classfrc_1_1sim_1_1DriverStationSim.html#a200fd1cdebe709e3f0a04696f77f5218":[5,0,4,1,14,44],
-"classfrc_1_1sim_1_1DriverStationSim.html#a26bf20d5c156c0b8a8cbbc91a13a8845":[5,0,4,1,14,29]
+"classfrc_1_1sim_1_1DriverStationSim.html#a0f9df3a06b34f74a8eecc777649e9c58":[5,0,4,1,14,20]
 };

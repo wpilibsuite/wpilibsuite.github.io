@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-73-gcb0051a</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-75-g50915cb</span>
    </div>
   </td>
  </tr>
@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('ControlAffinePlantInversionFeedforward
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;frc/system/NumericalJacobian.h&quot;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;units/time.h&quot;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacefrc.html">frc</a> {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span>frc {</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">int</span> States, <span class="keywordtype">int</span> Inputs&gt;</div>
 <div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classfrc_1_1ControlAffinePlantInversionFeedforward.html">   37</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1ControlAffinePlantInversionFeedforward.html">ControlAffinePlantInversionFeedforward</a> {</div>
@@ -211,13 +211,12 @@ $(document).ready(function(){initNavTree('ControlAffinePlantInversionFeedforward
 <div class="ttc" id="aclassfrc_1_1ControlAffinePlantInversionFeedforward_html_a7d4221f094c48de82215a33a634d8843"><div class="ttname"><a href="classfrc_1_1ControlAffinePlantInversionFeedforward.html#a7d4221f094c48de82215a33a634d8843">frc::ControlAffinePlantInversionFeedforward::R</a></div><div class="ttdeci">const Eigen::Matrix&lt; double, States, 1 &gt; &amp; R() const</div><div class="ttdoc">Returns the current reference vector r.</div><div class="ttdef"><b>Definition:</b> ControlAffinePlantInversionFeedforward.h:113</div></div>
 <div class="ttc" id="aclassfrc_1_1ControlAffinePlantInversionFeedforward_html_a61f99de2452afcee40356f9175d214a3"><div class="ttname"><a href="classfrc_1_1ControlAffinePlantInversionFeedforward.html#a61f99de2452afcee40356f9175d214a3">frc::ControlAffinePlantInversionFeedforward::ControlAffinePlantInversionFeedforward</a></div><div class="ttdeci">ControlAffinePlantInversionFeedforward(std::function&lt; Eigen::Matrix&lt; double, States, 1 &gt;(const Eigen::Matrix&lt; double, States, 1 &gt; &amp;)&gt; f, const Eigen::Matrix&lt; double, States, Inputs &gt; &amp;B, units::second_t dt)</div><div class="ttdoc">Constructs a feedforward with given model dynamics as a function of state, and the plant's B matrix(c...</div><div class="ttdef"><b>Definition:</b> ControlAffinePlantInversionFeedforward.h:73</div></div>
 <div class="ttc" id="aclassfrc_1_1ControlAffinePlantInversionFeedforward_html_a40081023060c7fe6209847a7fade1630"><div class="ttname"><a href="classfrc_1_1ControlAffinePlantInversionFeedforward.html#a40081023060c7fe6209847a7fade1630">frc::ControlAffinePlantInversionFeedforward::Calculate</a></div><div class="ttdeci">Eigen::Matrix&lt; double, Inputs, 1 &gt; Calculate(const Eigen::Matrix&lt; double, States, 1 &gt; &amp;r, const Eigen::Matrix&lt; double, States, 1 &gt; &amp;nextR)</div><div class="ttdoc">Calculate the feedforward with current and future reference vectors.</div><div class="ttdef"><b>Definition:</b> ControlAffinePlantInversionFeedforward.h:168</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> CameraServer.inc:12</div></div>
 <div class="ttc" id="aclassfrc_1_1ControlAffinePlantInversionFeedforward_html"><div class="ttname"><a href="classfrc_1_1ControlAffinePlantInversionFeedforward.html">frc::ControlAffinePlantInversionFeedforward</a></div><div class="ttdoc">Constructs a control-affine plant inversion model-based feedforward from given model dynamics.</div><div class="ttdef"><b>Definition:</b> ControlAffinePlantInversionFeedforward.h:37</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_901369ca5399cfb92b9538222311796d.html">controller</a></li><li class="navelem"><b>ControlAffinePlantInversionFeedforward.h</b></li>
-    <li class="footer">Generated on Wed May 26 2021 14:25:37 for WPILibC++ by
+    <li class="footer">Generated on Wed May 26 2021 14:27:22 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

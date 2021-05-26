@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>WPILibC++: frc::NullDeleter&lt; T &gt; Struct Template Reference</title>
+<title>WPILibC++: wpi/NullDeleter.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-73-gcb0051a</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-75-g50915cb</span>
    </div>
   </td>
  </tr>
@@ -70,7 +70,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('structfrc_1_1NullDeleter.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('NullDeleter_8h_source.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -89,30 +89,34 @@ $(document).ready(function(){initNavTree('structfrc_1_1NullDeleter.html',''); in
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="structfrc_1_1NullDeleter-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">frc::NullDeleter&lt; T &gt; Struct Template Reference</div>  </div>
+<div class="title">NullDeleter.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a8e1b15180c4ed799be88d03780b644cd"><td class="memItemLeft" align="right" valign="top"><a id="a8e1b15180c4ed799be88d03780b644cd"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (T *) const noexcept</td></tr>
-<tr class="separator:a8e1b15180c4ed799be88d03780b644cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li>frc/<a class="el" href="Base_8h_source.html">Base.h</a></li>
-</ul>
-</div><!-- contents -->
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Open Source Software; you can modify and/or share it under the terms of</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// the WPILib BSD license file in the root directory of this project.</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>wpi {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// A struct to use as a deleter when a std::shared_ptr must wrap a raw pointer</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// that is being deleted by someone else.</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="structwpi_1_1NullDeleter.html">   12</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structwpi_1_1NullDeleter.html">NullDeleter</a> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <span class="keywordtype">void</span> operator()(T*) <span class="keyword">const</span> noexcept {};</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;};</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}  <span class="comment">// namespace wpi</span></div>
+</div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="astructwpi_1_1NullDeleter_html"><div class="ttname"><a href="structwpi_1_1NullDeleter.html">wpi::NullDeleter</a></div><div class="ttdef"><b>Definition:</b> NullDeleter.h:12</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="structfrc_1_1NullDeleter.html">NullDeleter</a></li>
-    <li class="footer">Generated on Wed May 26 2021 14:25:39 for WPILibC++ by
+    <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><b>NullDeleter.h</b></li>
+    <li class="footer">Generated on Wed May 26 2021 14:27:23 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-73-gcb0051a</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-75-g50915cb</span>
    </div>
   </td>
  </tr>
@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;fmt/format.h&gt;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacefrc.html">frc</a> {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span>frc {</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classfrc_1_1RuntimeError.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1RuntimeError.html">RuntimeError</a> : <span class="keyword">public</span> std::runtime_error {</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; <span class="keyword">public</span>:</div>
@@ -132,31 +132,31 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  std::shared_ptr&lt;Data&gt; m_data;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;};</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="namespacefrc.html#a5dfbce48cc56cfb3ed1455bd879975a6">   49</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="namespacefrc.html#a5dfbce48cc56cfb3ed1455bd879975a6">GetErrorMessage</a>(int32_t* code);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">const</span> <span class="keywordtype">char</span>* GetErrorMessage(int32_t* code);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="namespacefrc.html#ae524c828d05c9df76525cd615a26772a">   62</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacefrc.html#ae524c828d05c9df76525cd615a26772a">ReportErrorV</a>(int32_t status, <span class="keyword">const</span> <span class="keywordtype">char</span>* fileName, <span class="keywordtype">int</span> lineNumber,</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keywordtype">void</span> ReportErrorV(int32_t status, <span class="keyword">const</span> <span class="keywordtype">char</span>* fileName, <span class="keywordtype">int</span> lineNumber,</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                  <span class="keyword">const</span> <span class="keywordtype">char</span>* funcName, fmt::string_view format,</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                  fmt::format_args args);</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> S, <span class="keyword">typename</span>... Args&gt;</div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="namespacefrc.html#a49dbf58a9be631cb32db6def6184cd60">   78</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespacefrc.html#a49dbf58a9be631cb32db6def6184cd60">ReportError</a>(int32_t status, <span class="keyword">const</span> <span class="keywordtype">char</span>* fileName, <span class="keywordtype">int</span> lineNumber,</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> ReportError(int32_t status, <span class="keyword">const</span> <span class="keywordtype">char</span>* fileName, <span class="keywordtype">int</span> lineNumber,</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">char</span>* funcName, <span class="keyword">const</span> S&amp; format, Args&amp;&amp;... args) {</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <a class="code" href="namespacefrc.html#ae524c828d05c9df76525cd615a26772a">ReportErrorV</a>(status, fileName, lineNumber, funcName, format,</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  ReportErrorV(status, fileName, lineNumber, funcName, format,</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;               fmt::make_args_checked&lt;Args...&gt;(format, args...));</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="namespacefrc.html#a663812993fa21e0b4d3a7ba1bd1d4955">   96</a></span>&#160;[[nodiscard]] <a class="code" href="classfrc_1_1RuntimeError.html">RuntimeError</a> <a class="code" href="namespacefrc.html#a663812993fa21e0b4d3a7ba1bd1d4955">MakeErrorV</a>(int32_t status, <span class="keyword">const</span> <span class="keywordtype">char</span>* fileName,</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;[[nodiscard]] RuntimeError MakeErrorV(int32_t status, <span class="keyword">const</span> <span class="keywordtype">char</span>* fileName,</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                                      <span class="keywordtype">int</span> lineNumber, <span class="keyword">const</span> <span class="keywordtype">char</span>* funcName,</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                                      fmt::string_view format,</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                                      fmt::format_args args);</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> S, <span class="keyword">typename</span>... Args&gt;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;[[nodiscard]] <span class="keyword">inline</span> <a class="code" href="classfrc_1_1RuntimeError.html">RuntimeError</a> MakeError(int32_t status,</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;[[nodiscard]] <span class="keyword">inline</span> RuntimeError MakeError(int32_t status,</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                                            <span class="keyword">const</span> <span class="keywordtype">char</span>* fileName,</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                                            <span class="keywordtype">int</span> lineNumber,</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                                            <span class="keyword">const</span> <span class="keywordtype">char</span>* funcName,</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                                            <span class="keyword">const</span> S&amp; format, Args&amp;&amp;... args) {</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="namespacefrc.html#a663812993fa21e0b4d3a7ba1bd1d4955">MakeErrorV</a>(status, fileName, lineNumber, funcName, format,</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="keywordflow">return</span> MakeErrorV(status, fileName, lineNumber, funcName, format,</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                    fmt::make_args_checked&lt;Args...&gt;(format, args...));</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;}</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
@@ -207,18 +207,13 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="preprocessor">#define FRC_Assert(condition) FRC_AssertMessage(condition, &quot;{}&quot;, #condition)</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespacefrc_html_a663812993fa21e0b4d3a7ba1bd1d4955"><div class="ttname"><a href="namespacefrc.html#a663812993fa21e0b4d3a7ba1bd1d4955">frc::MakeErrorV</a></div><div class="ttdeci">RuntimeError MakeErrorV(int32_t status, const char *fileName, int lineNumber, const char *funcName, fmt::string_view format, fmt::format_args args)</div><div class="ttdoc">Makes a runtime error exception object.</div></div>
-<div class="ttc" id="anamespacefrc_html_ae524c828d05c9df76525cd615a26772a"><div class="ttname"><a href="namespacefrc.html#ae524c828d05c9df76525cd615a26772a">frc::ReportErrorV</a></div><div class="ttdeci">void ReportErrorV(int32_t status, const char *fileName, int lineNumber, const char *funcName, fmt::string_view format, fmt::format_args args)</div><div class="ttdoc">Reports an error to the driver station (using HAL_SendError).</div></div>
-<div class="ttc" id="anamespacefrc_html_a5dfbce48cc56cfb3ed1455bd879975a6"><div class="ttname"><a href="namespacefrc.html#a5dfbce48cc56cfb3ed1455bd879975a6">frc::GetErrorMessage</a></div><div class="ttdeci">const char * GetErrorMessage(int32_t *code)</div><div class="ttdoc">Gets error message string for an error code.</div></div>
-<div class="ttc" id="anamespacefrc_html_a49dbf58a9be631cb32db6def6184cd60"><div class="ttname"><a href="namespacefrc.html#a49dbf58a9be631cb32db6def6184cd60">frc::ReportError</a></div><div class="ttdeci">void ReportError(int32_t status, const char *fileName, int lineNumber, const char *funcName, const S &amp;format, Args &amp;&amp;... args)</div><div class="ttdoc">Reports an error to the driver station (using HAL_SendError).</div><div class="ttdef"><b>Definition:</b> Errors.h:78</div></div>
 <div class="ttc" id="aclassfrc_1_1RuntimeError_html_aabab6854c640922e9be9b72c237c90c7"><div class="ttname"><a href="classfrc_1_1RuntimeError.html#aabab6854c640922e9be9b72c237c90c7">frc::RuntimeError::Report</a></div><div class="ttdeci">void Report() const</div><div class="ttdoc">Reports error to Driver Station (using HAL_SendError).</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> CameraServer.inc:12</div></div>
 <div class="ttc" id="aclassfrc_1_1RuntimeError_html"><div class="ttname"><a href="classfrc_1_1RuntimeError.html">frc::RuntimeError</a></div><div class="ttdoc">Runtime error exception.</div><div class="ttdef"><b>Definition:</b> Errors.h:20</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><b>Errors.h</b></li>
-    <li class="footer">Generated on Wed May 26 2021 14:25:36 for WPILibC++ by
+    <li class="footer">Generated on Wed May 26 2021 14:27:21 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

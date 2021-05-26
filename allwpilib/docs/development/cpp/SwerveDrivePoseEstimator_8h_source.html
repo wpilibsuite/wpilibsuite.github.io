@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-73-gcb0051a</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-75-g50915cb</span>
    </div>
   </td>
  </tr>
@@ -114,7 +114,7 @@ $(document).ready(function(){initNavTree('SwerveDrivePoseEstimator_8h_source.htm
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;frc/kinematics/SwerveDriveKinematics.h&quot;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;units/time.h&quot;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacefrc.html">frc</a> {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">namespace </span>frc {</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> NumModules&gt;</div>
 <div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classfrc_1_1SwerveDrivePoseEstimator.html">   48</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1SwerveDrivePoseEstimator.html">SwerveDrivePoseEstimator</a> {</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; <span class="keyword">public</span>:</div>
@@ -151,7 +151,7 @@ $(document).ready(function(){initNavTree('SwerveDrivePoseEstimator_8h_source.htm
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    };</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="comment">// Set initial state.</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    m_observer.<a class="code" href="classfrc_1_1UnscentedKalmanFilter.html#adde6af1afe00eafc4539e04c220ef87d">SetXhat</a>(<a class="code" href="namespacefrc.html#a533bfec8c7fdeb6905533817ec027165">PoseTo3dVector</a>(initialPose));</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    m_observer.<a class="code" href="classfrc_1_1UnscentedKalmanFilter.html#adde6af1afe00eafc4539e04c220ef87d">SetXhat</a>(PoseTo3dVector(initialPose));</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="comment">// Calculate offsets.</span></div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    m_gyroOffset = initialPose.Rotation() - gyroAngle;</div>
@@ -160,7 +160,7 @@ $(document).ready(function(){initNavTree('SwerveDrivePoseEstimator_8h_source.htm
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
 <div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="classfrc_1_1SwerveDrivePoseEstimator.html#abc069c79c0503a5713593eda54af6245">  127</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1SwerveDrivePoseEstimator.html#abc069c79c0503a5713593eda54af6245">ResetPosition</a>(<span class="keyword">const</span> <a class="code" href="classfrc_1_1Pose2d.html">Pose2d</a>&amp; pose, <span class="keyword">const</span> <a class="code" href="classfrc_1_1Rotation2d.html">Rotation2d</a>&amp; gyroAngle) {</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="comment">// Set observer state.</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    m_observer.<a class="code" href="classfrc_1_1UnscentedKalmanFilter.html#adde6af1afe00eafc4539e04c220ef87d">SetXhat</a>(<a class="code" href="namespacefrc.html#a533bfec8c7fdeb6905533817ec027165">PoseTo3dVector</a>(pose));</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    m_observer.<a class="code" href="classfrc_1_1UnscentedKalmanFilter.html#adde6af1afe00eafc4539e04c220ef87d">SetXhat</a>(PoseTo3dVector(pose));</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="comment">// Calculate offsets.</span></div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    m_gyroOffset = pose.<a class="code" href="classfrc_1_1Pose2d.html#a7e855bba46f3a0f83e098527a7588398">Rotation</a>() - gyroAngle;</div>
@@ -176,14 +176,14 @@ $(document).ready(function(){initNavTree('SwerveDrivePoseEstimator_8h_source.htm
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;      <span class="keyword">const</span> <a class="code" href="classwpi_1_1array.html">wpi::array&lt;double, 3&gt;</a>&amp; visionMeasurementStdDevs) {</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="comment">// Create R (covariances) for vision measurements.</span></div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    Eigen::Matrix&lt;double, 3, 3&gt; visionContR =</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <a class="code" href="namespacefrc.html#a97f46ffa0575e8aa2b2f08e7a8a1e2d7">frc::MakeCovMatrix</a>(visionMeasurementStdDevs);</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        frc::MakeCovMatrix(visionMeasurementStdDevs);</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    m_visionDiscR = frc::DiscretizeR&lt;3&gt;(visionContR, m_nominalDt);</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  }</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
 <div class="line"><a name="l00185"></a><span class="lineno"><a class="line" href="classfrc_1_1SwerveDrivePoseEstimator.html#af2ad6ac96725e2e2732032d9fdcdc5d7">  185</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1SwerveDrivePoseEstimator.html#af2ad6ac96725e2e2732032d9fdcdc5d7">AddVisionMeasurement</a>(<span class="keyword">const</span> <a class="code" href="classfrc_1_1Pose2d.html">Pose2d</a>&amp; visionRobotPose,</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;                            units::second_t timestamp) {</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    m_latencyCompensator.ApplyPastMeasurement&lt;3&gt;(</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        &amp;m_observer, m_nominalDt, <a class="code" href="namespacefrc.html#a533bfec8c7fdeb6905533817ec027165">PoseTo3dVector</a>(visionRobotPose),</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        &amp;m_observer, m_nominalDt, PoseTo3dVector(visionRobotPose),</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        m_visionCorrect, timestamp);</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  }</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
@@ -270,7 +270,6 @@ $(document).ready(function(){initNavTree('SwerveDrivePoseEstimator_8h_source.htm
 <div class="ttc" id="aclassfrc_1_1Rotation2d_html"><div class="ttname"><a href="classfrc_1_1Rotation2d.html">frc::Rotation2d</a></div><div class="ttdoc">A rotation in a 2d coordinate frame represented a point on the unit circle (cosine and sine).</div><div class="ttdef"><b>Definition:</b> Rotation2d.h:19</div></div>
 <div class="ttc" id="aclassfrc_1_1Translation2d_html"><div class="ttname"><a href="classfrc_1_1Translation2d.html">frc::Translation2d</a></div><div class="ttdoc">Represents a translation in 2d space.</div><div class="ttdef"><b>Definition:</b> Translation2d.h:24</div></div>
 <div class="ttc" id="aclassfrc_1_1UnscentedKalmanFilter_html_adde6af1afe00eafc4539e04c220ef87d"><div class="ttname"><a href="classfrc_1_1UnscentedKalmanFilter.html#adde6af1afe00eafc4539e04c220ef87d">frc::UnscentedKalmanFilter::SetXhat</a></div><div class="ttdeci">void SetXhat(const Eigen::Matrix&lt; double, States, 1 &gt; &amp;xHat)</div><div class="ttdoc">Set initial state estimate x-hat.</div><div class="ttdef"><b>Definition:</b> UnscentedKalmanFilter.h:179</div></div>
-<div class="ttc" id="anamespacefrc_html_a533bfec8c7fdeb6905533817ec027165"><div class="ttname"><a href="namespacefrc.html#a533bfec8c7fdeb6905533817ec027165">frc::PoseTo3dVector</a></div><div class="ttdeci">Eigen::Matrix&lt; double, 3, 1 &gt; PoseTo3dVector(const Pose2d &amp;pose)</div><div class="ttdoc">Converts a Pose2d into a vector of [x, y, theta].</div></div>
 <div class="ttc" id="aclasswpi_1_1array_html"><div class="ttname"><a href="classwpi_1_1array.html">wpi::array</a></div><div class="ttdoc">This class is a wrapper around std::array that does compile time size checking.</div><div class="ttdef"><b>Definition:</b> array.h:25</div></div>
 <div class="ttc" id="aclassfrc_1_1UnscentedKalmanFilter_html_af42b9c885ac152433abfc268014ff1f1"><div class="ttname"><a href="classfrc_1_1UnscentedKalmanFilter.html#af42b9c885ac152433abfc268014ff1f1">frc::UnscentedKalmanFilter::Correct</a></div><div class="ttdeci">void Correct(const Eigen::Matrix&lt; double, Inputs, 1 &gt; &amp;u, const Eigen::Matrix&lt; double, Outputs, 1 &gt; &amp;y)</div><div class="ttdoc">Correct the state estimate x-hat using the measurements in y.</div><div class="ttdef"><b>Definition:</b> UnscentedKalmanFilter.h:237</div></div>
 <div class="ttc" id="aclassfrc_1_1Pose2d_html"><div class="ttname"><a href="classfrc_1_1Pose2d.html">frc::Pose2d</a></div><div class="ttdoc">Represents a 2d pose containing translational and rotational elements.</div><div class="ttdef"><b>Definition:</b> Pose2d.h:20</div></div>
@@ -281,18 +280,16 @@ $(document).ready(function(){initNavTree('SwerveDrivePoseEstimator_8h_source.htm
 <div class="ttc" id="aclassfrc_1_1KalmanFilterLatencyCompensator_html"><div class="ttname"><a href="classfrc_1_1KalmanFilterLatencyCompensator.html">frc::KalmanFilterLatencyCompensator</a></div><div class="ttdef"><b>Definition:</b> KalmanFilterLatencyCompensator.h:20</div></div>
 <div class="ttc" id="aclassfrc_1_1SwerveDrivePoseEstimator_html_afa43500d257dd6e01c810ffd6992e2a9"><div class="ttname"><a href="classfrc_1_1SwerveDrivePoseEstimator.html#afa43500d257dd6e01c810ffd6992e2a9">frc::SwerveDrivePoseEstimator::GetEstimatedPosition</a></div><div class="ttdeci">Pose2d GetEstimatedPosition() const</div><div class="ttdoc">Gets the pose of the robot at the current time as estimated by the Extended Kalman Filter.</div><div class="ttdef"><b>Definition:</b> SwerveDrivePoseEstimator.h:142</div></div>
 <div class="ttc" id="aclassfrc_1_1SwerveDrivePoseEstimator_html_a31c93b63c5349dce5053414a6c30dccb"><div class="ttname"><a href="classfrc_1_1SwerveDrivePoseEstimator.html#a31c93b63c5349dce5053414a6c30dccb">frc::SwerveDrivePoseEstimator::SwerveDrivePoseEstimator</a></div><div class="ttdeci">SwerveDrivePoseEstimator(const Rotation2d &amp;gyroAngle, const Pose2d &amp;initialPose, SwerveDriveKinematics&lt; NumModules &gt; &amp;kinematics, const wpi::array&lt; double, 3 &gt; &amp;stateStdDevs, const wpi::array&lt; double, 1 &gt; &amp;localMeasurementStdDevs, const wpi::array&lt; double, 3 &gt; &amp;visionMeasurementStdDevs, units::second_t nominalDt=0.02_s)</div><div class="ttdoc">Constructs a SwerveDrivePoseEstimator.</div><div class="ttdef"><b>Definition:</b> SwerveDrivePoseEstimator.h:76</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> CameraServer.inc:12</div></div>
 <div class="ttc" id="aclassfrc_1_1SwerveDrivePoseEstimator_html_af2ad6ac96725e2e2732032d9fdcdc5d7"><div class="ttname"><a href="classfrc_1_1SwerveDrivePoseEstimator.html#af2ad6ac96725e2e2732032d9fdcdc5d7">frc::SwerveDrivePoseEstimator::AddVisionMeasurement</a></div><div class="ttdeci">void AddVisionMeasurement(const Pose2d &amp;visionRobotPose, units::second_t timestamp)</div><div class="ttdoc">Add a vision measurement to the Unscented Kalman Filter.</div><div class="ttdef"><b>Definition:</b> SwerveDrivePoseEstimator.h:185</div></div>
 <div class="ttc" id="aclassfrc_1_1UnscentedKalmanFilter_html"><div class="ttname"><a href="classfrc_1_1UnscentedKalmanFilter.html">frc::UnscentedKalmanFilter&lt; 3, 3, 1 &gt;</a></div></div>
 <div class="ttc" id="aclassfrc_1_1SwerveDrivePoseEstimator_html"><div class="ttname"><a href="classfrc_1_1SwerveDrivePoseEstimator.html">frc::SwerveDrivePoseEstimator</a></div><div class="ttdoc">This class wraps an Unscented Kalman Filter to fuse latency-compensated vision measurements with swer...</div><div class="ttdef"><b>Definition:</b> SwerveDrivePoseEstimator.h:48</div></div>
 <div class="ttc" id="aclassfrc_1_1SwerveDrivePoseEstimator_html_abc069c79c0503a5713593eda54af6245"><div class="ttname"><a href="classfrc_1_1SwerveDrivePoseEstimator.html#abc069c79c0503a5713593eda54af6245">frc::SwerveDrivePoseEstimator::ResetPosition</a></div><div class="ttdeci">void ResetPosition(const Pose2d &amp;pose, const Rotation2d &amp;gyroAngle)</div><div class="ttdoc">Resets the robot's position on the field.</div><div class="ttdef"><b>Definition:</b> SwerveDrivePoseEstimator.h:127</div></div>
-<div class="ttc" id="anamespacefrc_html_a97f46ffa0575e8aa2b2f08e7a8a1e2d7"><div class="ttname"><a href="namespacefrc.html#a97f46ffa0575e8aa2b2f08e7a8a1e2d7">frc::MakeCovMatrix</a></div><div class="ttdeci">Eigen::Matrix&lt; double, sizeof...(Ts), sizeof...(Ts)&gt; MakeCovMatrix(Ts... stdDevs)</div><div class="ttdoc">Creates a covariance matrix from the given vector for use with Kalman filters.</div><div class="ttdef"><b>Definition:</b> StateSpaceUtil.h:144</div></div>
 <div class="ttc" id="aclassfrc_1_1Translation2d_html_af305f18995bea59715535b0636a89abe"><div class="ttname"><a href="classfrc_1_1Translation2d.html#af305f18995bea59715535b0636a89abe">frc::Translation2d::RotateBy</a></div><div class="ttdeci">Translation2d RotateBy(const Rotation2d &amp;other) const</div><div class="ttdoc">Applies a rotation to the translation in 2d space.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_7b4a0634315f7993a48b0e5d4ddcc644.html">estimator</a></li><li class="navelem"><b>SwerveDrivePoseEstimator.h</b></li>
-    <li class="footer">Generated on Wed May 26 2021 14:25:37 for WPILibC++ by
+    <li class="footer">Generated on Wed May 26 2021 14:27:22 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

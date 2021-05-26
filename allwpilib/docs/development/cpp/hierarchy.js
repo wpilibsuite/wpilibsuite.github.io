@@ -680,6 +680,7 @@ var hierarchy =
     [ "HAL_Value", "structHAL__Value.html", null ],
     [ "HALSIM_NotifierInfo", "structHALSIM__NotifierInfo.html", null ],
     [ "basic_format_arg< Context >::handle", "classbasic__format__arg_1_1handle.html", null ],
+    [ "wpi::DebugEpochBase::HandleBase", "classwpi_1_1DebugEpochBase_1_1HandleBase.html", null ],
     [ "hal::HandleBase", "classhal_1_1HandleBase.html", [
       [ "hal::DigitalHandleResource< THandle, TStruct, size >", "classhal_1_1DigitalHandleResource.html", null ],
       [ "hal::IndexedClassedHandleResource< THandle, TStruct, size, enumValue >", "classhal_1_1IndexedClassedHandleResource.html", null ],
@@ -688,7 +689,6 @@ var hierarchy =
       [ "hal::LimitedHandleResource< THandle, TStruct, size, enumValue >", "classhal_1_1LimitedHandleResource.html", null ],
       [ "hal::UnlimitedHandleResource< THandle, TStruct, enumValue >", "classhal_1_1UnlimitedHandleResource.html", null ]
     ] ],
-    [ "wpi::DebugEpochBase::HandleBase", "classwpi_1_1DebugEpochBase_1_1HandleBase.html", null ],
     [ "Handler", null, [
       [ "specs_checker< Handler >", "classspecs__checker.html", null ]
     ] ],
@@ -1005,7 +1005,7 @@ var hierarchy =
     [ "NT_String", "structNT__String.html", null ],
     [ "NT_Value", "structNT__Value.html", null ],
     [ "detail::null< T >", "structdetail_1_1null.html", null ],
-    [ "frc::NullDeleter< T >", "structfrc_1_1NullDeleter.html", null ],
+    [ "wpi::NullDeleter< T >", "structwpi_1_1NullDeleter.html", null ],
     [ "wpi::sig::detail::NullMutex", "structwpi_1_1sig_1_1detail_1_1NullMutex.html", null ],
     [ "wpi::object_creator< C >", "structwpi_1_1object__creator.html", null ],
     [ "wpi::object_deleter< T >", "structwpi_1_1object__deleter.html", null ],
@@ -1691,8 +1691,8 @@ var hierarchy =
     [ "wpi::TCPConnector", "classwpi_1_1TCPConnector.html", null ],
     [ "text_style", "classtext__style.html", null ],
     [ "wpi::ThreadSafeRefCountedBase< Derived >", "classwpi_1_1ThreadSafeRefCountedBase.html", null ],
-    [ "frc2::Timer", "classfrc2_1_1Timer.html", null ],
     [ "frc::Timer", "classfrc_1_1Timer.html", null ],
+    [ "frc2::Timer", "classfrc2_1_1Timer.html", null ],
     [ "wpi::detail::to_json_fn", "structwpi_1_1detail_1_1to__json__fn.html", null ],
     [ "frc::Tracer", "classfrc_1_1Tracer.html", null ],
     [ "wpi::detail::TrailingZerosCounter< T, SizeOfT >", "structwpi_1_1detail_1_1TrailingZerosCounter.html", null ],
@@ -1786,9 +1786,9 @@ var hierarchy =
     [ "wpi::validate_format_parameters< Args >", "structwpi_1_1validate__format__parameters.html", null ],
     [ "wpi::validate_format_parameters< Arg, Args... >", "structwpi_1_1validate__format__parameters_3_01Arg_00_01Args_8_8_8_01_4.html", null ],
     [ "wpi::validate_format_parameters<>", "structwpi_1_1validate__format__parameters_3_4.html", null ],
-    [ "value< Context >", "classvalue.html", null ],
     [ "nt::Value", "classnt_1_1Value.html", null ],
     [ "arg_ref< Char >::value", "unionarg__ref_1_1value.html", null ],
+    [ "value< Context >", "classvalue.html", null ],
     [ "detail::counting_iterator::value_type", "structdetail_1_1counting__iterator_1_1value__type.html", null ],
     [ "frc::Vector2d", "structfrc_1_1Vector2d.html", null ],
     [ "wpi::VersionTuple", "classwpi_1_1VersionTuple.html", null ],
@@ -1807,15 +1807,15 @@ var hierarchy =
         [ "cs::UsbCamera", "classcs_1_1UsbCamera.html", null ]
       ] ]
     ] ],
-    [ "view", "structview.html", [
-      [ "named_arg< Char, T >", "structnamed__arg.html", null ]
-    ] ],
     [ "view", null, [
       [ "arg_join< It, Sentinel, Char >", "structarg__join.html", null ],
       [ "tuple_arg_join< Char, T >", "structtuple__arg__join.html", null ]
     ] ],
-    [ "detail::range_to_view< T, enable_if_t<!has_const_begin_end< T >::value &&has_mutable_begin_end< T >::value > >::view_t", "structdetail_1_1range__to__view_3_01T_00_01enable__if__t_3_9has__const__begin__end_3_01T_01_4_1_1cf1f6c31b1fc849c7f6ab73440db946.html", null ],
+    [ "view", "structview.html", [
+      [ "named_arg< Char, T >", "structnamed__arg.html", null ]
+    ] ],
     [ "detail::range_to_view< T, enable_if_t< has_const_begin_end< T >::value > >::view_t", "structdetail_1_1range__to__view_3_01T_00_01enable__if__t_3_01has__const__begin__end_3_01T_01_4_1_1value_01_4_01_4_1_1view__t.html", null ],
+    [ "detail::range_to_view< T, enable_if_t<!has_const_begin_end< T >::value &&has_mutable_begin_end< T >::value > >::view_t", "structdetail_1_1range__to__view_3_01T_00_01enable__if__t_3_9has__const__begin__end_3_01T_01_4_1_1cf1f6c31b1fc849c7f6ab73440db946.html", null ],
     [ "frc::VisionPipeline", "classfrc_1_1VisionPipeline.html", null ],
     [ "frc::VisionRunnerBase", "classfrc_1_1VisionRunnerBase.html", [
       [ "frc::VisionRunner< T >", "classfrc_1_1VisionRunner.html", null ]
@@ -1823,9 +1823,9 @@ var hierarchy =
     [ "wpi::sig::trait::detail::voider<... >", "structwpi_1_1sig_1_1trait_1_1detail_1_1voider.html", null ],
     [ "frc::Watchdog", "classfrc_1_1Watchdog.html", null ],
     [ "wpi::WebSocketServerHelper", "classwpi_1_1WebSocketServerHelper.html", null ],
-    [ "frc::DifferentialDrive::WheelSpeeds", "structfrc_1_1DifferentialDrive_1_1WheelSpeeds.html", null ],
-    [ "frc::MecanumDrive::WheelSpeeds", "structfrc_1_1MecanumDrive_1_1WheelSpeeds.html", null ],
     [ "frc::KilloughDrive::WheelSpeeds", "structfrc_1_1KilloughDrive_1_1WheelSpeeds.html", null ],
+    [ "frc::MecanumDrive::WheelSpeeds", "structfrc_1_1MecanumDrive_1_1WheelSpeeds.html", null ],
+    [ "frc::DifferentialDrive::WheelSpeeds", "structfrc_1_1DifferentialDrive_1_1WheelSpeeds.html", null ],
     [ "frc::WidgetType", "classfrc_1_1WidgetType.html", null ],
     [ "width_checker< ErrorHandler >", "classwidth__checker.html", null ],
     [ "wpi::WorkerThread< T >", "classwpi_1_1WorkerThread.html", null ],

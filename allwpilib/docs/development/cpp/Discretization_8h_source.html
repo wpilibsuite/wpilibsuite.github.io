@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-73-gcb0051a</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-75-g50915cb</span>
    </div>
   </td>
  </tr>
@@ -104,17 +104,17 @@ $(document).ready(function(){initNavTree('Discretization_8h_source.html',''); in
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;units/time.h&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;unsupported/Eigen/src/MatrixFunctions/MatrixExponential.h&quot;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacefrc.html">frc</a> {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span>frc {</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">int</span> States&gt;</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="namespacefrc.html#acbcc27ca7c9f88e13d7c4da520d4a6cb">   22</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacefrc.html#acbcc27ca7c9f88e13d7c4da520d4a6cb">DiscretizeA</a>(<span class="keyword">const</span> Eigen::Matrix&lt;double, States, States&gt;&amp; contA,</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keywordtype">void</span> DiscretizeA(<span class="keyword">const</span> Eigen::Matrix&lt;double, States, States&gt;&amp; contA,</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                 units::second_t dt,</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                 Eigen::Matrix&lt;double, States, States&gt;* discA) {</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  *discA = (contA * dt.to&lt;<span class="keywordtype">double</span>&gt;()).exp();</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">int</span> States, <span class="keywordtype">int</span> Inputs&gt;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="namespacefrc.html#ab0e1ca87aa1e11ff912712afe34f8803">   38</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacefrc.html#ab0e1ca87aa1e11ff912712afe34f8803">DiscretizeAB</a>(<span class="keyword">const</span> Eigen::Matrix&lt;double, States, States&gt;&amp; contA,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keywordtype">void</span> DiscretizeAB(<span class="keyword">const</span> Eigen::Matrix&lt;double, States, States&gt;&amp; contA,</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                  <span class="keyword">const</span> Eigen::Matrix&lt;double, States, Inputs&gt;&amp; contB,</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                  units::second_t dt,</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                  Eigen::Matrix&lt;double, States, States&gt;* discA,</div>
@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('Discretization_8h_source.html',''); in
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">int</span> States&gt;</div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="namespacefrc.html#a0f7a16592525baf3b04f68f7b308a153">   65</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacefrc.html#a0f7a16592525baf3b04f68f7b308a153">DiscretizeAQ</a>(<span class="keyword">const</span> Eigen::Matrix&lt;double, States, States&gt;&amp; contA,</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keywordtype">void</span> DiscretizeAQ(<span class="keyword">const</span> Eigen::Matrix&lt;double, States, States&gt;&amp; contA,</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                  <span class="keyword">const</span> Eigen::Matrix&lt;double, States, States&gt;&amp; contQ,</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                  units::second_t dt,</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                  Eigen::Matrix&lt;double, States, States&gt;* discA,</div>
@@ -166,7 +166,7 @@ $(document).ready(function(){initNavTree('Discretization_8h_source.html',''); in
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">int</span> States&gt;</div>
-<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="namespacefrc.html#a21e6884091fc969f4d10fd01c1b26857">  117</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacefrc.html#a21e6884091fc969f4d10fd01c1b26857">DiscretizeAQTaylor</a>(<span class="keyword">const</span> Eigen::Matrix&lt;double, States, States&gt;&amp; contA,</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keywordtype">void</span> DiscretizeAQTaylor(<span class="keyword">const</span> Eigen::Matrix&lt;double, States, States&gt;&amp; contA,</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                        <span class="keyword">const</span> Eigen::Matrix&lt;double, States, States&gt;&amp; contQ,</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                        units::second_t dt,</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                        Eigen::Matrix&lt;double, States, States&gt;* discA,</div>
@@ -200,7 +200,7 @@ $(document).ready(function(){initNavTree('Discretization_8h_source.html',''); in
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;}</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">int</span> Outputs&gt;</div>
-<div class="line"><a name="l00158"></a><span class="lineno"><a class="line" href="namespacefrc.html#af123172a8aa7b011d75963988ce2a800">  158</a></span>&#160;Eigen::Matrix&lt;double, Outputs, Outputs&gt; <a class="code" href="namespacefrc.html#af123172a8aa7b011d75963988ce2a800">DiscretizeR</a>(</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;Eigen::Matrix&lt;double, Outputs, Outputs&gt; DiscretizeR(</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keyword">const</span> Eigen::Matrix&lt;double, Outputs, Outputs&gt;&amp; R, units::second_t dt) {</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  <span class="keywordflow">return</span> R / dt.to&lt;<span class="keywordtype">double</span>&gt;();</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;}</div>
@@ -208,17 +208,11 @@ $(document).ready(function(){initNavTree('Discretization_8h_source.html',''); in
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;}  <span class="comment">// namespace frc</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespacefrc_html_ab0e1ca87aa1e11ff912712afe34f8803"><div class="ttname"><a href="namespacefrc.html#ab0e1ca87aa1e11ff912712afe34f8803">frc::DiscretizeAB</a></div><div class="ttdeci">void DiscretizeAB(const Eigen::Matrix&lt; double, States, States &gt; &amp;contA, const Eigen::Matrix&lt; double, States, Inputs &gt; &amp;contB, units::second_t dt, Eigen::Matrix&lt; double, States, States &gt; *discA, Eigen::Matrix&lt; double, States, Inputs &gt; *discB)</div><div class="ttdoc">Discretizes the given continuous A and B matrices.</div><div class="ttdef"><b>Definition:</b> Discretization.h:38</div></div>
-<div class="ttc" id="anamespacefrc_html_af123172a8aa7b011d75963988ce2a800"><div class="ttname"><a href="namespacefrc.html#af123172a8aa7b011d75963988ce2a800">frc::DiscretizeR</a></div><div class="ttdeci">Eigen::Matrix&lt; double, Outputs, Outputs &gt; DiscretizeR(const Eigen::Matrix&lt; double, Outputs, Outputs &gt; &amp;R, units::second_t dt)</div><div class="ttdoc">Returns a discretized version of the provided continuous measurement noise covariance matrix.</div><div class="ttdef"><b>Definition:</b> Discretization.h:158</div></div>
-<div class="ttc" id="anamespacefrc_html_a0f7a16592525baf3b04f68f7b308a153"><div class="ttname"><a href="namespacefrc.html#a0f7a16592525baf3b04f68f7b308a153">frc::DiscretizeAQ</a></div><div class="ttdeci">void DiscretizeAQ(const Eigen::Matrix&lt; double, States, States &gt; &amp;contA, const Eigen::Matrix&lt; double, States, States &gt; &amp;contQ, units::second_t dt, Eigen::Matrix&lt; double, States, States &gt; *discA, Eigen::Matrix&lt; double, States, States &gt; *discQ)</div><div class="ttdoc">Discretizes the given continuous A and Q matrices.</div><div class="ttdef"><b>Definition:</b> Discretization.h:65</div></div>
-<div class="ttc" id="anamespacefrc_html_acbcc27ca7c9f88e13d7c4da520d4a6cb"><div class="ttname"><a href="namespacefrc.html#acbcc27ca7c9f88e13d7c4da520d4a6cb">frc::DiscretizeA</a></div><div class="ttdeci">void DiscretizeA(const Eigen::Matrix&lt; double, States, States &gt; &amp;contA, units::second_t dt, Eigen::Matrix&lt; double, States, States &gt; *discA)</div><div class="ttdoc">Discretizes the given continuous A matrix.</div><div class="ttdef"><b>Definition:</b> Discretization.h:22</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> CameraServer.inc:12</div></div>
-<div class="ttc" id="anamespacefrc_html_a21e6884091fc969f4d10fd01c1b26857"><div class="ttname"><a href="namespacefrc.html#a21e6884091fc969f4d10fd01c1b26857">frc::DiscretizeAQTaylor</a></div><div class="ttdeci">void DiscretizeAQTaylor(const Eigen::Matrix&lt; double, States, States &gt; &amp;contA, const Eigen::Matrix&lt; double, States, States &gt; &amp;contQ, units::second_t dt, Eigen::Matrix&lt; double, States, States &gt; *discA, Eigen::Matrix&lt; double, States, States &gt; *discQ)</div><div class="ttdoc">Discretizes the given continuous A and Q matrices.</div><div class="ttdef"><b>Definition:</b> Discretization.h:117</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_6a6d4dbfd7def32c812c83ce511abb63.html">system</a></li><li class="navelem"><b>Discretization.h</b></li>
-    <li class="footer">Generated on Wed May 26 2021 14:25:37 for WPILibC++ by
+    <li class="footer">Generated on Wed May 26 2021 14:27:22 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

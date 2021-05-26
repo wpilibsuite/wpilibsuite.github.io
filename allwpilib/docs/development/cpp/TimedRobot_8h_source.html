@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-73-gcb0051a</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-75-g50915cb</span>
    </div>
   </td>
  </tr>
@@ -112,7 +112,7 @@ $(document).ready(function(){initNavTree('TimedRobot_8h_source.html',''); initRe
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;frc/IterativeRobotBase.h&quot;</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;frc2/Timer.h&quot;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacefrc.html">frc</a> {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span>frc {</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classfrc_1_1TimedRobot.html">   31</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1TimedRobot.html">TimedRobot</a> : <span class="keyword">public</span> <a class="code" href="classfrc_1_1IterativeRobotBase.html">IterativeRobotBase</a> {</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; <span class="keyword">public</span>:</div>
@@ -122,7 +122,7 @@ $(document).ready(function(){initNavTree('TimedRobot_8h_source.html',''); initRe
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classfrc_1_1TimedRobot.html#a8b227bf26e7b42431c7905c9e46775cf">   43</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1TimedRobot.html#a8b227bf26e7b42431c7905c9e46775cf">EndCompetition</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <a class="code" href="namespacefrc.html#a3e1e63234243bd1c57fd61d0c7ea88ec">WPI_DEPRECATED</a>(<span class="stringliteral">&quot;Use constructor with unit-safety instead.&quot;</span>)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  WPI_DEPRECATED(<span class="stringliteral">&quot;Use constructor with unit-safety instead.&quot;</span>)</div>
 <div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classfrc_1_1TimedRobot.html#a70890d7283a8afc101de444e99b6fb7a">   54</a></span>&#160;  explicit <a class="code" href="classfrc_1_1TimedRobot.html">TimedRobot</a>(<span class="keywordtype">double</span> period);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
 <div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classfrc_1_1TimedRobot.html#a622f35ae5205eed127b5016b189ec274">   61</a></span>&#160;  explicit <a class="code" href="classfrc_1_1TimedRobot.html">TimedRobot</a>(units::second_t period = kDefaultPeriod);</div>
@@ -174,14 +174,12 @@ $(document).ready(function(){initNavTree('TimedRobot_8h_source.html',''); initRe
 <div class="ttc" id="aclassfrc_1_1TimedRobot_html_afa4de496e6856238b106240012efe889"><div class="ttname"><a href="classfrc_1_1TimedRobot.html#afa4de496e6856238b106240012efe889">frc::TimedRobot::StartCompetition</a></div><div class="ttdeci">void StartCompetition() override</div><div class="ttdoc">Provide an alternate &quot;main loop&quot; via StartCompetition().</div></div>
 <div class="ttc" id="aclassfrc_1_1TimedRobot_html_a3a868e141770202d46ffaec5328d8c11"><div class="ttname"><a href="classfrc_1_1TimedRobot.html#a3a868e141770202d46ffaec5328d8c11">frc::TimedRobot::AddPeriodic</a></div><div class="ttdeci">void AddPeriodic(std::function&lt; void()&gt; callback, units::second_t period, units::second_t offset=0_s)</div><div class="ttdoc">Add a callback to run at a specific period with a starting time offset.</div></div>
 <div class="ttc" id="aclassfrc_1_1TimedRobot_html_a8b227bf26e7b42431c7905c9e46775cf"><div class="ttname"><a href="classfrc_1_1TimedRobot.html#a8b227bf26e7b42431c7905c9e46775cf">frc::TimedRobot::EndCompetition</a></div><div class="ttdeci">void EndCompetition() override</div><div class="ttdoc">Ends the main loop in StartCompetition().</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> CameraServer.inc:12</div></div>
 <div class="ttc" id="aclassfrc_1_1TimedRobot_html"><div class="ttname"><a href="classfrc_1_1TimedRobot.html">frc::TimedRobot</a></div><div class="ttdoc">TimedRobot implements the IterativeRobotBase robot program framework.</div><div class="ttdef"><b>Definition:</b> TimedRobot.h:31</div></div>
-<div class="ttc" id="anamespacefrc_html_a3e1e63234243bd1c57fd61d0c7ea88ec"><div class="ttname"><a href="namespacefrc.html#a3e1e63234243bd1c57fd61d0c7ea88ec">frc::WPI_DEPRECATED</a></div><div class="ttdeci">class WPI_DEPRECATED(&quot;use MotorController&quot;) SpeedController</div><div class="ttdoc">Interface for speed controlling devices.</div><div class="ttdef"><b>Definition:</b> SpeedController.h:15</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><b>TimedRobot.h</b></li>
-    <li class="footer">Generated on Wed May 26 2021 14:25:36 for WPILibC++ by
+    <li class="footer">Generated on Wed May 26 2021 14:27:21 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

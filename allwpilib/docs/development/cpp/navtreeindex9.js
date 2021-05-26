@@ -1,5 +1,7 @@
 var NAVTREEINDEX9 =
 {
+"classfrc_1_1DCMotor.html#ab23a53a3532df6689dedb0786e54eb3c":[5,0,4,41,19],
+"classfrc_1_1DCMotor.html#acecdcd639c4fb7559fdf5c577080de21":[5,0,4,41,13],
 "classfrc_1_1DCMotor.html#ae39e09029d01d92d7ad33b9b5841ffcd":[5,0,4,41,8],
 "classfrc_1_1DCMotor.html#ae3dd6e6e0847f798f6e6c275e912f682":[5,0,4,41,12],
 "classfrc_1_1DCMotor.html#ae539ff643424447f5e66c481dd90c80a":[5,0,4,41,20],
@@ -51,11 +53,11 @@ var NAVTREEINDEX9 =
 "classfrc_1_1DifferentialDrive.html":[5,0,4,42],
 "classfrc_1_1DifferentialDrive.html#a0a5fcea511631a24110afcee8f659633":[5,0,4,42,4],
 "classfrc_1_1DifferentialDrive.html#a1f4313b48f19eb5d7933804c3ef34ba1":[5,0,4,42,3],
+"classfrc_1_1DifferentialDrive.html#a29a245a2ca23ddce38e6f9876ba5b0c8":[5,0,4,42,8],
 "classfrc_1_1DifferentialDrive.html#a33736c0962c6f6af31cdd1b9f8c9f6d8":[5,0,4,42,9],
 "classfrc_1_1DifferentialDrive.html#a87de87615dddde2ca1e92b3a8d0045ec":[5,0,4,42,7],
 "classfrc_1_1DifferentialDrive.html#aa29cfe8b33ef9fd72e7c0eea70ce4edb":[5,0,4,42,2],
 "classfrc_1_1DifferentialDrive.html#ab5c27ab3615a86dfb40b1843e4db5ac4":[5,0,4,42,1],
-"classfrc_1_1DifferentialDrive.html#ab9da8a63cdd344b0b9048401bf670c2a":[5,0,4,42,8],
 "classfrc_1_1DifferentialDrive.html#aceb5781acc01c3f5d5c4a5b76a316866":[5,0,4,42,5],
 "classfrc_1_1DifferentialDrive.html#ad6c52ded7f348d49c5b5035c45fdf303":[5,0,4,42,12],
 "classfrc_1_1DifferentialDrive.html#adcf20b07c40750172d91f149f8ccc17c":[5,0,4,42,10],
@@ -247,7 +249,5 @@ var NAVTREEINDEX9 =
 "classfrc_1_1DutyCycleEncoder.html#a3b613a97453957b3c63b6415e95fdc69":[5,0,4,59,16],
 "classfrc_1_1DutyCycleEncoder.html#a510264a3bb1c89a93c733e623b6082f8":[5,0,4,59,4],
 "classfrc_1_1DutyCycleEncoder.html#a526b99ad8422849c02992e0ed59867c6":[5,0,4,59,15],
-"classfrc_1_1DutyCycleEncoder.html#a5a4011f1ec7e2fc4e2b25e2eea0061b9":[5,0,4,59,5],
-"classfrc_1_1DutyCycleEncoder.html#a66c33804bb43a906ea9ae65fccb4e752":[5,0,4,59,11],
-"classfrc_1_1DutyCycleEncoder.html#a7a87ce134f93c339629684fe3f84ad90":[5,0,4,59,7]
+"classfrc_1_1DutyCycleEncoder.html#a5a4011f1ec7e2fc4e2b25e2eea0061b9":[5,0,4,59,5]
 };

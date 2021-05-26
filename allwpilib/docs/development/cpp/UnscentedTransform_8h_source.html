@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-73-gcb0051a</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-75-g50915cb</span>
    </div>
   </td>
  </tr>
@@ -103,12 +103,12 @@ $(document).ready(function(){initNavTree('UnscentedTransform_8h_source.html','')
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;Eigen/Core&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacefrc.html">frc</a> {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>frc {</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">int</span> States, <span class="keywordtype">int</span> CovDim&gt;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;std::tuple&lt;Eigen::Matrix&lt;double, CovDim, 1&gt;,</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;           Eigen::Matrix&lt;double, CovDim, CovDim&gt;&gt;</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="namespacefrc.html#a87ce4ca979366ae46ffa1316cae50bb7">   32</a></span>&#160;<a class="code" href="namespacefrc.html#a87ce4ca979366ae46ffa1316cae50bb7">UnscentedTransform</a>(<span class="keyword">const</span> Eigen::Matrix&lt;double, CovDim, 2 * States + 1&gt;&amp; sigmas,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;UnscentedTransform(<span class="keyword">const</span> Eigen::Matrix&lt;double, CovDim, 2 * States + 1&gt;&amp; sigmas,</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                   <span class="keyword">const</span> Eigen::Matrix&lt;double, 2 * States + 1, 1&gt;&amp; Wm,</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                   <span class="keyword">const</span> Eigen::Matrix&lt;double, 2 * States + 1, 1&gt;&amp; Wc,</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                   std::function&lt;Eigen::Matrix&lt;double, CovDim, 1&gt;(</div>
@@ -140,13 +140,11 @@ $(document).ready(function(){initNavTree('UnscentedTransform_8h_source.html','')
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}  <span class="comment">// namespace frc</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespacefrc_html_a87ce4ca979366ae46ffa1316cae50bb7"><div class="ttname"><a href="namespacefrc.html#a87ce4ca979366ae46ffa1316cae50bb7">frc::UnscentedTransform</a></div><div class="ttdeci">std::tuple&lt; Eigen::Matrix&lt; double, CovDim, 1 &gt;, Eigen::Matrix&lt; double, CovDim, CovDim &gt; &gt; UnscentedTransform(const Eigen::Matrix&lt; double, CovDim, 2 *States+1 &gt; &amp;sigmas, const Eigen::Matrix&lt; double, 2 *States+1, 1 &gt; &amp;Wm, const Eigen::Matrix&lt; double, 2 *States+1, 1 &gt; &amp;Wc, std::function&lt; Eigen::Matrix&lt; double, CovDim, 1 &gt;(const Eigen::Matrix&lt; double, CovDim, 2 *States+1 &gt; &amp;, const Eigen::Matrix&lt; double, 2 *States+1, 1 &gt; &amp;)&gt; meanFunc, std::function&lt; Eigen::Matrix&lt; double, CovDim, 1 &gt;(const Eigen::Matrix&lt; double, CovDim, 1 &gt; &amp;, const Eigen::Matrix&lt; double, CovDim, 1 &gt; &amp;)&gt; residualFunc)</div><div class="ttdoc">Computes unscented transform of a set of sigma points and weights.</div><div class="ttdef"><b>Definition:</b> UnscentedTransform.h:32</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> CameraServer.inc:12</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_7b4a0634315f7993a48b0e5d4ddcc644.html">estimator</a></li><li class="navelem"><b>UnscentedTransform.h</b></li>
-    <li class="footer">Generated on Wed May 26 2021 14:25:37 for WPILibC++ by
+    <li class="footer">Generated on Wed May 26 2021 14:27:22 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-73-gcb0051a</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-75-g50915cb</span>
    </div>
   </td>
  </tr>
@@ -127,7 +127,7 @@ Public Member Functions</h2></td></tr>
 const std::vector&lt; std::unique_ptr&lt; <a class="el" href="classfrc_1_1ShuffleboardComponentBase.html">ShuffleboardComponentBase</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1ShuffleboardContainer.html#ae2a57d12cfa753120074f6016cb8be41">GetComponents</a> () const</td></tr>
 <tr class="memdesc:ae2a57d12cfa753120074f6016cb8be41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the components that are direct children of this container. <br /></td></tr>
 <tr class="separator:ae2a57d12cfa753120074f6016cb8be41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab5369de421a9f2ca7e7539150f639fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1ShuffleboardLayout.html">ShuffleboardLayout</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1ShuffleboardContainer.html#aab5369de421a9f2ca7e7539150f639fc">GetLayout</a> (const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;title, <a class="el" href="namespacefrc.html#a3dfa3f031ab695031e54042c1bf44472">BuiltInLayouts</a> type)</td></tr>
+<tr class="memitem:aab5369de421a9f2ca7e7539150f639fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1ShuffleboardLayout.html">ShuffleboardLayout</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1ShuffleboardContainer.html#aab5369de421a9f2ca7e7539150f639fc">GetLayout</a> (const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;title, BuiltInLayouts type)</td></tr>
 <tr class="memdesc:aab5369de421a9f2ca7e7539150f639fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the layout with the given type and title, creating it if it does not already exist at the time this method is called.  <a href="classfrc_1_1ShuffleboardContainer.html#aab5369de421a9f2ca7e7539150f639fc">More...</a><br /></td></tr>
 <tr class="separator:aab5369de421a9f2ca7e7539150f639fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae24c1f9a1d248b4fbcb62695aa5ddc60"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1ShuffleboardLayout.html">ShuffleboardLayout</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1ShuffleboardContainer.html#ae24c1f9a1d248b4fbcb62695aa5ddc60">GetLayout</a> (const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;title, const <a class="el" href="classfrc_1_1LayoutType.html">LayoutType</a> &amp;type)</td></tr>
@@ -1510,7 +1510,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SimpleWidget</b></td
 
 <p>Gets the already-defined layout in this container with the given title. </p>
 <pre><div class="fragment"><div class="line"><a class="code" href="classfrc_1_1Shuffleboard.html#affeb420866c24bd21a21c7724388ea09">Shuffleboard::GetTab</a>(<span class="stringliteral">&quot;Example Tab&quot;</span>)-&gt;getLayout(<span class="stringliteral">&quot;My Layout&quot;</span>,</div>
-<div class="line">&amp;<a class="code" href="namespacefrc.html#a3dfa3f031ab695031e54042c1bf44472">BuiltInLayouts</a>.kList);</div>
+<div class="line">&amp;BuiltInLayouts.kList);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Later...</span></div>
 <div class="line"><a class="code" href="classfrc_1_1Shuffleboard.html#affeb420866c24bd21a21c7724388ea09">Shuffleboard::GetTab</a>(<span class="stringliteral">&quot;Example Tab&quot;</span>)-&gt;<a class="code" href="classfrc_1_1ShuffleboardContainer.html#aab5369de421a9f2ca7e7539150f639fc">GetLayout</a>(<span class="stringliteral">&quot;My Layout&quot;</span>);</div>
@@ -1545,7 +1545,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SimpleWidget</b></td
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacefrc.html#a3dfa3f031ab695031e54042c1bf44472">BuiltInLayouts</a>&#160;</td>
+          <td class="paramtype">BuiltInLayouts&#160;</td>
           <td class="paramname"><em>type</em>&#160;</td>
         </tr>
         <tr>
@@ -1633,7 +1633,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SimpleWidget</b></td
 </div><div class="memdoc">
 
 <p>Gets the layout with the given type and title, creating it if it does not already exist at the time this method is called. </p>
-<p>Note: this method should only be used to use a layout type that is not already built into <a class="el" href="classfrc_1_1Shuffleboard.html" title="The Shuffleboard class provides a mechanism with which data can be added and laid out in the Shuffleb...">Shuffleboard</a>. To use a layout built into <a class="el" href="classfrc_1_1Shuffleboard.html" title="The Shuffleboard class provides a mechanism with which data can be added and laid out in the Shuffleb...">Shuffleboard</a>, use <a class="el" href="">GetLayout(String, LayoutType)</a> and the layouts in {<a class="el" href="namespacefrc.html#a3dfa3f031ab695031e54042c1bf44472">}.  title the title of the layout  type the type of the layout, eg "List Layout" or "Grid Layout"  the layout  #GetLayout(String, LayoutType) </a></p>
+<p>Note: this method should only be used to use a layout type that is not already built into <a class="el" href="classfrc_1_1Shuffleboard.html" title="The Shuffleboard class provides a mechanism with which data can be added and laid out in the Shuffleb...">Shuffleboard</a>. To use a layout built into <a class="el" href="classfrc_1_1Shuffleboard.html" title="The Shuffleboard class provides a mechanism with which data can be added and laid out in the Shuffleb...">Shuffleboard</a>, use <a class="el" href="">GetLayout(String, LayoutType)</a> and the layouts in {<a class="el" href="">}.  title the title of the layout  type the type of the layout, eg "List Layout" or "Grid Layout"  the layout  #GetLayout(String, LayoutType) </a></p>
 
 </div>
 </div>
@@ -1644,12 +1644,11 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>SimpleWidget</b></td
 </div><!-- doc-content -->
 <div class="ttc" id="aclassfrc_1_1ShuffleboardContainer_html_aab5369de421a9f2ca7e7539150f639fc"><div class="ttname"><a href="classfrc_1_1ShuffleboardContainer.html#aab5369de421a9f2ca7e7539150f639fc">frc::ShuffleboardContainer::GetLayout</a></div><div class="ttdeci">ShuffleboardLayout &amp; GetLayout(const wpi::Twine &amp;title, BuiltInLayouts type)</div><div class="ttdoc">Gets the layout with the given type and title, creating it if it does not already exist at the time t...</div></div>
 <div class="ttc" id="aclassfrc_1_1Shuffleboard_html_affeb420866c24bd21a21c7724388ea09"><div class="ttname"><a href="classfrc_1_1Shuffleboard.html#affeb420866c24bd21a21c7724388ea09">frc::Shuffleboard::GetTab</a></div><div class="ttdeci">static ShuffleboardTab &amp; GetTab(wpi::StringRef title)</div><div class="ttdoc">Gets the Shuffleboard tab with the given title, creating it if it does not already exist.</div></div>
-<div class="ttc" id="anamespacefrc_html_a3dfa3f031ab695031e54042c1bf44472"><div class="ttname"><a href="namespacefrc.html#a3dfa3f031ab695031e54042c1bf44472">frc::BuiltInLayouts</a></div><div class="ttdeci">BuiltInLayouts</div><div class="ttdoc">The types of layouts bundled with Shuffleboard.</div><div class="ttdef"><b>Definition:</b> BuiltInLayouts.h:19</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1ShuffleboardContainer.html">ShuffleboardContainer</a></li>
-    <li class="footer">Generated on Wed May 26 2021 14:25:40 for WPILibC++ by
+    <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1ShuffleboardContainer.html">ShuffleboardContainer</a></li>
+    <li class="footer">Generated on Wed May 26 2021 14:27:25 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

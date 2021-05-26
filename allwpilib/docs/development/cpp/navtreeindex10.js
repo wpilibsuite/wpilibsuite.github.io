@@ -1,5 +1,7 @@
 var NAVTREEINDEX10 =
 {
+"classfrc_1_1DutyCycleEncoder.html#a66c33804bb43a906ea9ae65fccb4e752":[5,0,4,59,11],
+"classfrc_1_1DutyCycleEncoder.html#a7a87ce134f93c339629684fe3f84ad90":[5,0,4,59,7],
 "classfrc_1_1DutyCycleEncoder.html#a7e3bdba84ed3c3643b6c3311e480fb91":[5,0,4,59,13],
 "classfrc_1_1DutyCycleEncoder.html#a82ff91f628934d5a849f51302fdd18e6":[5,0,4,59,14],
 "classfrc_1_1DutyCycleEncoder.html#a897dbd042c23299243fed139745178ae":[5,0,4,59,20],
@@ -247,7 +249,5 @@ var NAVTREEINDEX10 =
 "classfrc_1_1IterativeRobotBase.html#a08618f13dbf3d1f1fa98f56406da52c6":[5,0,4,74,11],
 "classfrc_1_1IterativeRobotBase.html#a0c5042b873bd000d8258f146456eb9dd":[5,0,4,74,18],
 "classfrc_1_1IterativeRobotBase.html#a18d45c31d09c13f77ed8c857da2f4897":[5,0,4,74,12],
-"classfrc_1_1IterativeRobotBase.html#a2e6f6bc04d6c62c9fa33bc12a21c74d5":[5,0,4,74,17],
-"classfrc_1_1IterativeRobotBase.html#a379bededf5d908e76fc6b2b19010e3ab":[5,0,4,74,19],
-"classfrc_1_1IterativeRobotBase.html#a3e3798e0ac3ed99fb63a747bfc0622c0":[5,0,4,74,16]
+"classfrc_1_1IterativeRobotBase.html#a2e6f6bc04d6c62c9fa33bc12a21c74d5":[5,0,4,74,17]
 };

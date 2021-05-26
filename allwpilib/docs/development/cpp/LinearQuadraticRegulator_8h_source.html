@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-73-gcb0051a</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-75-g50915cb</span>
    </div>
   </td>
  </tr>
@@ -114,7 +114,7 @@ $(document).ready(function(){initNavTree('LinearQuadraticRegulator_8h_source.htm
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;unsupported/Eigen/src/MatrixFunctions/MatrixPower.h&quot;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;unsupported/Eigen/src/MatrixFunctions/MatrixSquareRoot.h&quot;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacefrc.html">frc</a> {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">namespace </span>frc {</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span>detail {</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">int</span> States, <span class="keywordtype">int</span> Inputs&gt;</div>
@@ -133,8 +133,8 @@ $(document).ready(function(){initNavTree('LinearQuadraticRegulator_8h_source.htm
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                               <span class="keyword">const</span> <a class="code" href="classwpi_1_1array.html">wpi::array&lt;double, States&gt;</a>&amp; Qelems,</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                               <span class="keyword">const</span> <a class="code" href="classwpi_1_1array.html">wpi::array&lt;double, Inputs&gt;</a>&amp; Relems,</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                               units::second_t dt)</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      : <a class="code" href="classfrc_1_1detail_1_1LinearQuadraticRegulatorImpl.html">LinearQuadraticRegulatorImpl</a>(A, B, <a class="code" href="namespacefrc.html#a3eadd8473fc84e9c0a6fc5663c41f04b">MakeCostMatrix</a>(Qelems),</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                                     <a class="code" href="namespacefrc.html#a3eadd8473fc84e9c0a6fc5663c41f04b">MakeCostMatrix</a>(Relems), dt) {}</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      : <a class="code" href="classfrc_1_1detail_1_1LinearQuadraticRegulatorImpl.html">LinearQuadraticRegulatorImpl</a>(A, B, MakeCostMatrix(Qelems),</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                                     MakeCostMatrix(Relems), dt) {}</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
 <div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="classfrc_1_1detail_1_1LinearQuadraticRegulatorImpl.html#a1f0623a25a1e1720d0bc9537bc9cef63">   78</a></span>&#160;  <a class="code" href="classfrc_1_1detail_1_1LinearQuadraticRegulatorImpl.html#a1f0623a25a1e1720d0bc9537bc9cef63">LinearQuadraticRegulatorImpl</a>(<span class="keyword">const</span> Eigen::Matrix&lt;double, States, States&gt;&amp; A,</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                               <span class="keyword">const</span> Eigen::Matrix&lt;double, States, Inputs&gt;&amp; B,</div>
@@ -226,8 +226,8 @@ $(document).ready(function(){initNavTree('LinearQuadraticRegulator_8h_source.htm
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                           <span class="keyword">const</span> <a class="code" href="classwpi_1_1array.html">wpi::array&lt;double, States&gt;</a>&amp; Qelems,</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                           <span class="keyword">const</span> <a class="code" href="classwpi_1_1array.html">wpi::array&lt;double, Inputs&gt;</a>&amp; Relems,</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                           units::second_t dt)</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;      : <a class="code" href="classfrc_1_1LinearQuadraticRegulator.html">LinearQuadraticRegulator</a>(A, B, <a class="code" href="namespacefrc.html#a3eadd8473fc84e9c0a6fc5663c41f04b">MakeCostMatrix</a>(Qelems),</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                                 <a class="code" href="namespacefrc.html#a3eadd8473fc84e9c0a6fc5663c41f04b">MakeCostMatrix</a>(Relems), dt) {}</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;      : <a class="code" href="classfrc_1_1LinearQuadraticRegulator.html">LinearQuadraticRegulator</a>(A, B, MakeCostMatrix(Qelems),</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                                 MakeCostMatrix(Relems), dt) {}</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160; </div>
 <div class="line"><a name="l00260"></a><span class="lineno"><a class="line" href="classfrc_1_1LinearQuadraticRegulator.html#abdcb518fa5853463e06aeb810a11e25e">  260</a></span>&#160;  <a class="code" href="classfrc_1_1LinearQuadraticRegulator.html#abdcb518fa5853463e06aeb810a11e25e">LinearQuadraticRegulator</a>(<span class="keyword">const</span> Eigen::Matrix&lt;double, States, States&gt;&amp; A,</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;                           <span class="keyword">const</span> Eigen::Matrix&lt;double, States, Inputs&gt;&amp; B,</div>
@@ -319,8 +319,6 @@ $(document).ready(function(){initNavTree('LinearQuadraticRegulator_8h_source.htm
 <div class="ttc" id="aclassfrc_1_1detail_1_1LinearQuadraticRegulatorImpl_html_a703932c665cb2e05aa02bdae2f5308e8"><div class="ttname"><a href="classfrc_1_1detail_1_1LinearQuadraticRegulatorImpl.html#a703932c665cb2e05aa02bdae2f5308e8">frc::detail::LinearQuadraticRegulatorImpl::U</a></div><div class="ttdeci">const Eigen::Matrix&lt; double, Inputs, 1 &gt; &amp; U() const</div><div class="ttdoc">Returns the control input vector u.</div><div class="ttdef"><b>Definition:</b> LinearQuadraticRegulator.h:134</div></div>
 <div class="ttc" id="aclassfrc_1_1detail_1_1LinearQuadraticRegulatorImpl_html_a51fa24fab411efb64d11f9827e178770"><div class="ttname"><a href="classfrc_1_1detail_1_1LinearQuadraticRegulatorImpl.html#a51fa24fab411efb64d11f9827e178770">frc::detail::LinearQuadraticRegulatorImpl::K</a></div><div class="ttdeci">double K(int i, int j) const</div><div class="ttdoc">Returns an element of the controller matrix K.</div><div class="ttdef"><b>Definition:</b> LinearQuadraticRegulator.h:111</div></div>
 <div class="ttc" id="aclassfrc_1_1LinearSystem_html"><div class="ttname"><a href="classfrc_1_1LinearSystem.html">frc::LinearSystem</a></div><div class="ttdoc">A plant defined using state-space notation.</div><div class="ttdef"><b>Definition:</b> LinearSystem.h:26</div></div>
-<div class="ttc" id="anamespacefrc_html_a3eadd8473fc84e9c0a6fc5663c41f04b"><div class="ttname"><a href="namespacefrc.html#a3eadd8473fc84e9c0a6fc5663c41f04b">frc::MakeCostMatrix</a></div><div class="ttdeci">Eigen::Matrix&lt; double, sizeof...(Ts), sizeof...(Ts)&gt; MakeCostMatrix(Ts... costs)</div><div class="ttdoc">Creates a cost matrix from the given vector for use with LQR.</div><div class="ttdef"><b>Definition:</b> StateSpaceUtil.h:123</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> CameraServer.inc:12</div></div>
 <div class="ttc" id="aclassfrc_1_1LinearQuadraticRegulator_html_a9aaadec94d7f2c1e5289211b7e236e7a"><div class="ttname"><a href="classfrc_1_1LinearQuadraticRegulator.html#a9aaadec94d7f2c1e5289211b7e236e7a">frc::LinearQuadraticRegulator::LinearQuadraticRegulator</a></div><div class="ttdeci">LinearQuadraticRegulator(const Eigen::Matrix&lt; double, States, States &gt; &amp;A, const Eigen::Matrix&lt; double, States, Inputs &gt; &amp;B, const wpi::array&lt; double, States &gt; &amp;Qelems, const wpi::array&lt; double, Inputs &gt; &amp;Relems, units::second_t dt)</div><div class="ttdoc">Constructs a controller with the given coefficients and plant.</div><div class="ttdef"><b>Definition:</b> LinearQuadraticRegulator.h:243</div></div>
 <div class="ttc" id="aclassfrc_1_1detail_1_1LinearQuadraticRegulatorImpl_html_a9e04bab9215fd029fb6e7a2f3dfc9942"><div class="ttname"><a href="classfrc_1_1detail_1_1LinearQuadraticRegulatorImpl.html#a9e04bab9215fd029fb6e7a2f3dfc9942">frc::detail::LinearQuadraticRegulatorImpl::LinearQuadraticRegulatorImpl</a></div><div class="ttdeci">LinearQuadraticRegulatorImpl(const LinearSystem&lt; States, Inputs, Outputs &gt; &amp;plant, const wpi::array&lt; double, States &gt; &amp;Qelems, const wpi::array&lt; double, Inputs &gt; &amp;Relems, units::second_t dt)</div><div class="ttdoc">Constructs a controller with the given coefficients and plant.</div><div class="ttdef"><b>Definition:</b> LinearQuadraticRegulator.h:45</div></div>
 <div class="ttc" id="aclassfrc_1_1LinearSystem_html_ab0f7a086442751f5d8eacb8d748cbb79"><div class="ttname"><a href="classfrc_1_1LinearSystem.html#ab0f7a086442751f5d8eacb8d748cbb79">frc::LinearSystem::A</a></div><div class="ttdeci">const Eigen::Matrix&lt; double, States, States &gt; &amp; A() const</div><div class="ttdoc">Returns the system matrix A.</div><div class="ttdef"><b>Definition:</b> LinearSystem.h:54</div></div>
@@ -329,7 +327,7 @@ $(document).ready(function(){initNavTree('LinearQuadraticRegulator_8h_source.htm
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_901369ca5399cfb92b9538222311796d.html">controller</a></li><li class="navelem"><b>LinearQuadraticRegulator.h</b></li>
-    <li class="footer">Generated on Wed May 26 2021 14:25:37 for WPILibC++ by
+    <li class="footer">Generated on Wed May 26 2021 14:27:22 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

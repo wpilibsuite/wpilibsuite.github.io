@@ -16,7 +16,7 @@ var classfrc_1_1Relay =
     [ "Relay", "classfrc_1_1Relay.html#af66c4b140ffa61e5558e5ca473df1c85", null ],
     [ "Get", "classfrc_1_1Relay.html#a73919e46eed8512b081097751ff37cf5", null ],
     [ "GetChannel", "classfrc_1_1Relay.html#a6e0bb4bcfade404440da44c58742bb5b", null ],
-    [ "GetDescription", "classfrc_1_1Relay.html#aff33d8e73dabb9d23d1d99ed1c66b928", null ],
+    [ "GetDescription", "classfrc_1_1Relay.html#ad434ea73c451bb5c55d7fc7fc5c747f6", null ],
     [ "InitSendable", "classfrc_1_1Relay.html#a929bfe3f3c8aa96a99eb3bc06c465f84", null ],
     [ "operator=", "classfrc_1_1Relay.html#aa25954f8bd168cde93b77d23255e04a2", null ],
     [ "Set", "classfrc_1_1Relay.html#add10270afa395b368efd21bc0d33c27f", null ],

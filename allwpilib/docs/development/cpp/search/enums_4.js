@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['loglevel_8270',['LogLevel',['../classnt_1_1NetworkTableInstance.html#a88dfe5b82924f347c572cdada2707150',1,'nt::NetworkTableInstance']]]
+  ['mapmode_8171',['mapmode',['../classwpi_1_1sys_1_1fs_1_1mapped__file__region.html#af93a0ecf3ea96c98946a1f9cab929710',1,'wpi::sys::fs::mapped_file_region']]],
+  ['motortype_8172',['MotorType',['../classfrc_1_1RobotDriveBase.html#a91bbe6376ee340272ae36ea20b608754',1,'frc::RobotDriveBase']]]
 ];
