@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-75-g50915cb</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-76-g4e2c305</span>
    </div>
   </td>
  </tr>
@@ -130,22 +130,22 @@ $(document).ready(function(){initNavTree('deprecated.html',''); initResizable();
 <dd><a class="anchor" id="_deprecated000013"></a>use <a class="el" href="classfrc_1_1SendableChooser.html#a4acb844523097015137ece87154efcdb" title="Add the given object to the list of options and marks it as the default.">SetDefaultOption(wpi::StringRef name, T object)</a> instead. </dd>
 <dt>Member <a class="el" href="classfrc_1_1SendableChooser.html#a3b36357f4b1e594dc32e7557ae5f6afc">frc::SendableChooser&lt; T &gt;::AddObject</a>  (<a class="el" href="classwpi_1_1StringRef.html" title="StringRef - Represent a constant reference to a string, i.e.">wpi::StringRef</a> name, T object)</dt>
 <dd><a class="anchor" id="_deprecated000012"></a>use <a class="el" href="classfrc_1_1SendableChooser.html#a854e0205c9edb809a1f1e96bbfd7fd0f" title="Adds the given object to the list of options.">AddOption(wpi::StringRef name, T object)</a> instead. </dd>
-<dt>Member <a class="el" href="classfrc_1_1SendableHelper.html#aea88b8605f45b60eb28c3c6ec27be1a8">frc::SendableHelper&lt; Derived &gt;::SetName</a>  (const <a class="el" href="classwpi_1_1Twine.html" title="Twine - A lightweight data structure for efficiently representing the concatenation of temporary valu...">wpi::Twine</a> &amp;moduleType, int moduleNumber, int channel)</dt>
-<dd><a class="anchor" id="_deprecated000011"></a>use <a class="el" href="classfrc_1_1SendableRegistry.html#a33d97707237c6cefe80bfdf9c3afdbd5" title="Sets the name of an object.">SendableRegistry::SetName()</a> </dd>
-<dt>Member <a class="el" href="classfrc_1_1SendableHelper.html#a4dd2d1a64ac47d461b323e2b53deabe6">frc::SendableHelper&lt; Derived &gt;::SetName</a>  (const <a class="el" href="classwpi_1_1Twine.html" title="Twine - A lightweight data structure for efficiently representing the concatenation of temporary valu...">wpi::Twine</a> &amp;moduleType, int channel)</dt>
-<dd><a class="anchor" id="_deprecated000010"></a>use <a class="el" href="classfrc_1_1SendableRegistry.html#a33d97707237c6cefe80bfdf9c3afdbd5" title="Sets the name of an object.">SendableRegistry::SetName()</a> </dd>
+<dt>Member <a class="el" href="classfrc_1_1SendableHelper.html#a34427261bfcc261a7525a3590d72d0c4">frc::SendableHelper&lt; Derived &gt;::SetName</a>  (std::string_view moduleType, int moduleNumber, int channel)</dt>
+<dd><a class="anchor" id="_deprecated000011"></a>use <a class="el" href="classfrc_1_1SendableRegistry.html#a18fe71b78d2a6f35c1044a8195b4d4fc" title="Sets the name of an object.">SendableRegistry::SetName()</a> </dd>
+<dt>Member <a class="el" href="classfrc_1_1SendableHelper.html#a0a510c55cb79b74dc0892230ddd17344">frc::SendableHelper&lt; Derived &gt;::SetName</a>  (std::string_view moduleType, int channel)</dt>
+<dd><a class="anchor" id="_deprecated000010"></a>use <a class="el" href="classfrc_1_1SendableRegistry.html#a18fe71b78d2a6f35c1044a8195b4d4fc" title="Sets the name of an object.">SendableRegistry::SetName()</a> </dd>
 <dt>Member <a class="el" href="classfrc_1_1SendableHelper.html#a6e4d57269484510fc5c2ab7cd4862c61">frc::SendableHelper&lt; Derived &gt;::AddChild</a>  (void *child)</dt>
 <dd><a class="anchor" id="_deprecated000009"></a>use <a class="el" href="classfrc_1_1SendableRegistry.html#a7002d6dc8e96ce236854c7e28e0fc4f8" title="Adds a child object to an object.">SendableRegistry::AddChild()</a> </dd>
 <dt>Member <a class="el" href="classfrc_1_1SendableHelper.html#ac201047b464953c58120eb0d41c72982">frc::SendableHelper&lt; Derived &gt;::AddChild</a>  (std::shared_ptr&lt; Sendable &gt; child)</dt>
 <dd><a class="anchor" id="_deprecated000008"></a>use <a class="el" href="classfrc_1_1SendableRegistry.html#a7002d6dc8e96ce236854c7e28e0fc4f8" title="Adds a child object to an object.">SendableRegistry::AddChild()</a> </dd>
-<dt>Member <a class="el" href="classfrc_1_1SendableHelper.html#a47eb53e20e78fb45918759a82d806376">frc::SendableHelper&lt; Derived &gt;::SetSubsystem</a>  (const <a class="el" href="classwpi_1_1Twine.html" title="Twine - A lightweight data structure for efficiently representing the concatenation of temporary valu...">wpi::Twine</a> &amp;subsystem)</dt>
-<dd><a class="anchor" id="_deprecated000007"></a>use <a class="el" href="classfrc_1_1SendableRegistry.html#af8e1533f8dc447c6d09f77b1f4807634" title="Sets the subsystem name of an object.">SendableRegistry::SetSubsystem()</a> </dd>
+<dt>Member <a class="el" href="classfrc_1_1SendableHelper.html#aa8b2bd0ccaed7dd2b71e832fd89aaaa1">frc::SendableHelper&lt; Derived &gt;::SetSubsystem</a>  (std::string_view subsystem)</dt>
+<dd><a class="anchor" id="_deprecated000007"></a>use <a class="el" href="classfrc_1_1SendableRegistry.html#a31b61a9c212759abee7538d797e422fd" title="Sets the subsystem name of an object.">SendableRegistry::SetSubsystem()</a> </dd>
 <dt>Member <a class="el" href="classfrc_1_1SendableHelper.html#a31d1fbcdecca9492ded28083609e0f01">frc::SendableHelper&lt; Derived &gt;::GetSubsystem</a>  () const</dt>
 <dd><a class="anchor" id="_deprecated000006"></a>use <a class="el" href="classfrc_1_1SendableRegistry.html#a2fab37290627fb5019d11a3491a60cd4" title="Gets the subsystem name of an object.">SendableRegistry::GetSubsystem()</a>. </dd>
-<dt>Member <a class="el" href="classfrc_1_1SendableHelper.html#a77cad6240a0f47ed804a385836f483c5">frc::SendableHelper&lt; Derived &gt;::SetName</a>  (const <a class="el" href="classwpi_1_1Twine.html" title="Twine - A lightweight data structure for efficiently representing the concatenation of temporary valu...">wpi::Twine</a> &amp;subsystem, const <a class="el" href="classwpi_1_1Twine.html" title="Twine - A lightweight data structure for efficiently representing the concatenation of temporary valu...">wpi::Twine</a> &amp;name)</dt>
-<dd><a class="anchor" id="_deprecated000005"></a>use <a class="el" href="classfrc_1_1SendableRegistry.html#a33d97707237c6cefe80bfdf9c3afdbd5" title="Sets the name of an object.">SendableRegistry::SetName()</a> </dd>
-<dt>Member <a class="el" href="classfrc_1_1SendableHelper.html#abf3f66a2edb9747941607e5f858885e4">frc::SendableHelper&lt; Derived &gt;::SetName</a>  (const <a class="el" href="classwpi_1_1Twine.html" title="Twine - A lightweight data structure for efficiently representing the concatenation of temporary valu...">wpi::Twine</a> &amp;name)</dt>
-<dd><a class="anchor" id="_deprecated000004"></a>use <a class="el" href="classfrc_1_1SendableRegistry.html#a33d97707237c6cefe80bfdf9c3afdbd5" title="Sets the name of an object.">SendableRegistry::SetName()</a> </dd>
+<dt>Member <a class="el" href="classfrc_1_1SendableHelper.html#ac21520c0b26f6f4ab9bf05670b0d1ab9">frc::SendableHelper&lt; Derived &gt;::SetName</a>  (std::string_view subsystem, std::string_view name)</dt>
+<dd><a class="anchor" id="_deprecated000005"></a>use <a class="el" href="classfrc_1_1SendableRegistry.html#a18fe71b78d2a6f35c1044a8195b4d4fc" title="Sets the name of an object.">SendableRegistry::SetName()</a> </dd>
+<dt>Member <a class="el" href="classfrc_1_1SendableHelper.html#a19826e5150651b3f549cc39e1508227f">frc::SendableHelper&lt; Derived &gt;::SetName</a>  (std::string_view name)</dt>
+<dd><a class="anchor" id="_deprecated000004"></a>use <a class="el" href="classfrc_1_1SendableRegistry.html#a18fe71b78d2a6f35c1044a8195b4d4fc" title="Sets the name of an object.">SendableRegistry::SetName()</a> </dd>
 <dt>Member <a class="el" href="classfrc_1_1SendableHelper.html#a75d698ea5a4e90ad3b43d0dae6581079">frc::SendableHelper&lt; Derived &gt;::GetName</a>  () const</dt>
 <dd><a class="anchor" id="_deprecated000003"></a>use <a class="el" href="classfrc_1_1SendableRegistry.html#a1d026eea8070c8ebeeea33dc4a5f217e" title="Gets the name of an object.">SendableRegistry::GetName()</a> </dd>
 <dt>Class <a class="el" href="classfrc_1_1Controller.html">frc::Controller</a>  </dt>
@@ -157,7 +157,7 @@ $(document).ready(function(){initNavTree('deprecated.html',''); initResizable();
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed May 26 2021 14:27:23 for WPILibC++ by
+    <li class="footer">Generated on Thu May 27 2021 00:46:05 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

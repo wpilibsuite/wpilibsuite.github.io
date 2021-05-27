@@ -10,9 +10,9 @@ var classfrc_1_1SendableHelper =
     [ "GetSubsystem", "classfrc_1_1SendableHelper.html#a31d1fbcdecca9492ded28083609e0f01", null ],
     [ "operator=", "classfrc_1_1SendableHelper.html#a3abc49ca971ee031eccf10cd4a370e16", null ],
     [ "operator=", "classfrc_1_1SendableHelper.html#aebf0d2f95545eb594d590478a422c955", null ],
-    [ "SetName", "classfrc_1_1SendableHelper.html#a4dd2d1a64ac47d461b323e2b53deabe6", null ],
-    [ "SetName", "classfrc_1_1SendableHelper.html#aea88b8605f45b60eb28c3c6ec27be1a8", null ],
-    [ "SetName", "classfrc_1_1SendableHelper.html#abf3f66a2edb9747941607e5f858885e4", null ],
-    [ "SetName", "classfrc_1_1SendableHelper.html#a77cad6240a0f47ed804a385836f483c5", null ],
-    [ "SetSubsystem", "classfrc_1_1SendableHelper.html#a47eb53e20e78fb45918759a82d806376", null ]
+    [ "SetName", "classfrc_1_1SendableHelper.html#a0a510c55cb79b74dc0892230ddd17344", null ],
+    [ "SetName", "classfrc_1_1SendableHelper.html#a34427261bfcc261a7525a3590d72d0c4", null ],
+    [ "SetName", "classfrc_1_1SendableHelper.html#a19826e5150651b3f549cc39e1508227f", null ],
+    [ "SetName", "classfrc_1_1SendableHelper.html#ac21520c0b26f6f4ab9bf05670b0d1ab9", null ],
+    [ "SetSubsystem", "classfrc_1_1SendableHelper.html#aa8b2bd0ccaed7dd2b71e832fd89aaaa1", null ]
 ];

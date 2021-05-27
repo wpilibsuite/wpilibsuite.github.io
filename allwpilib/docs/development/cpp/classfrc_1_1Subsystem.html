@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-75-g50915cb</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-76-g4e2c305</span>
    </div>
   </td>
  </tr>
@@ -111,9 +111,9 @@ Inheritance diagram for frc::Subsystem:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a188c54b8cd0f53d4df16e4b66104a3e2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Subsystem.html#a188c54b8cd0f53d4df16e4b66104a3e2">Subsystem</a> (const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;name)</td></tr>
-<tr class="memdesc:a188c54b8cd0f53d4df16e4b66104a3e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a subsystem with the given name.  <a href="classfrc_1_1Subsystem.html#a188c54b8cd0f53d4df16e4b66104a3e2">More...</a><br /></td></tr>
-<tr class="separator:a188c54b8cd0f53d4df16e4b66104a3e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e9d67c0f56f96da8b605dedea55132c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Subsystem.html#a6e9d67c0f56f96da8b605dedea55132c">Subsystem</a> (std::string_view name)</td></tr>
+<tr class="memdesc:a6e9d67c0f56f96da8b605dedea55132c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a subsystem with the given name.  <a href="classfrc_1_1Subsystem.html#a6e9d67c0f56f96da8b605dedea55132c">More...</a><br /></td></tr>
+<tr class="separator:a6e9d67c0f56f96da8b605dedea55132c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a640987ec192b673a2141b71d3887d27d"><td class="memItemLeft" align="right" valign="top"><a id="a640987ec192b673a2141b71d3887d27d"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Subsystem</b> (<a class="el" href="classfrc_1_1Subsystem.html">Subsystem</a> &amp;&amp;)=default</td></tr>
 <tr class="separator:a640987ec192b673a2141b71d3887d27d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,18 +126,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1df02675db4165526b30a03d754c692e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1Command.html">Command</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Subsystem.html#a1df02675db4165526b30a03d754c692e">GetDefaultCommand</a> ()</td></tr>
 <tr class="memdesc:a1df02675db4165526b30a03d754c692e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the default command (or null if there is none).  <a href="classfrc_1_1Subsystem.html#a1df02675db4165526b30a03d754c692e">More...</a><br /></td></tr>
 <tr class="separator:a1df02675db4165526b30a03d754c692e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99d4c837918040e63f86b1942c3fe64c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1StringRef.html">wpi::StringRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Subsystem.html#a99d4c837918040e63f86b1942c3fe64c">GetDefaultCommandName</a> ()</td></tr>
-<tr class="memdesc:a99d4c837918040e63f86b1942c3fe64c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the default command name, or empty string is there is none.  <a href="classfrc_1_1Subsystem.html#a99d4c837918040e63f86b1942c3fe64c">More...</a><br /></td></tr>
-<tr class="separator:a99d4c837918040e63f86b1942c3fe64c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdb05bee6316a471a39ccb782a4e3382"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Subsystem.html#abdb05bee6316a471a39ccb782a4e3382">GetDefaultCommandName</a> ()</td></tr>
+<tr class="memdesc:abdb05bee6316a471a39ccb782a4e3382"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the default command name, or empty string is there is none.  <a href="classfrc_1_1Subsystem.html#abdb05bee6316a471a39ccb782a4e3382">More...</a><br /></td></tr>
+<tr class="separator:abdb05bee6316a471a39ccb782a4e3382"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e3c1968fbb174c21fd12209550a3f1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Subsystem.html#a6e3c1968fbb174c21fd12209550a3f1f">SetCurrentCommand</a> (<a class="el" href="classfrc_1_1Command.html">Command</a> *command)</td></tr>
 <tr class="memdesc:a6e3c1968fbb174c21fd12209550a3f1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the current command.  <a href="classfrc_1_1Subsystem.html#a6e3c1968fbb174c21fd12209550a3f1f">More...</a><br /></td></tr>
 <tr class="separator:a6e3c1968fbb174c21fd12209550a3f1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8b34373c145ea492d5ab90aa3175d58"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1Command.html">Command</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Subsystem.html#ae8b34373c145ea492d5ab90aa3175d58">GetCurrentCommand</a> () const</td></tr>
 <tr class="memdesc:ae8b34373c145ea492d5ab90aa3175d58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the command which currently claims this subsystem.  <a href="classfrc_1_1Subsystem.html#ae8b34373c145ea492d5ab90aa3175d58">More...</a><br /></td></tr>
 <tr class="separator:ae8b34373c145ea492d5ab90aa3175d58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92f82b1337071d3fefe29c83519899f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1StringRef.html">wpi::StringRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Subsystem.html#a92f82b1337071d3fefe29c83519899f1">GetCurrentCommandName</a> () const</td></tr>
-<tr class="memdesc:a92f82b1337071d3fefe29c83519899f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current command name, or empty string if no current command.  <a href="classfrc_1_1Subsystem.html#a92f82b1337071d3fefe29c83519899f1">More...</a><br /></td></tr>
-<tr class="separator:a92f82b1337071d3fefe29c83519899f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace743521c7ce1cd6ed69b976cca1a7c7"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Subsystem.html#ace743521c7ce1cd6ed69b976cca1a7c7">GetCurrentCommandName</a> () const</td></tr>
+<tr class="memdesc:ace743521c7ce1cd6ed69b976cca1a7c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current command name, or empty string if no current command.  <a href="classfrc_1_1Subsystem.html#ace743521c7ce1cd6ed69b976cca1a7c7">More...</a><br /></td></tr>
+<tr class="separator:ace743521c7ce1cd6ed69b976cca1a7c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcb1c92c628e067293f99ba6a55e1df6"><td class="memItemLeft" align="right" valign="top"><a id="afcb1c92c628e067293f99ba6a55e1df6"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Subsystem.html#afcb1c92c628e067293f99ba6a55e1df6">Periodic</a> ()</td></tr>
 <tr class="memdesc:afcb1c92c628e067293f99ba6a55e1df6"><td class="mdescLeft">&#160;</td><td class="mdescRight">When the run method of the scheduler is called this method will be called. <br /></td></tr>
@@ -148,24 +148,24 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memitem:a122811759cf06729ec3a62afb85a8917"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Subsystem.html#a122811759cf06729ec3a62afb85a8917">GetName</a> () const</td></tr>
 <tr class="memdesc:a122811759cf06729ec3a62afb85a8917"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the name of this <a class="el" href="classfrc_1_1Subsystem.html">Subsystem</a>.  <a href="classfrc_1_1Subsystem.html#a122811759cf06729ec3a62afb85a8917">More...</a><br /></td></tr>
 <tr class="separator:a122811759cf06729ec3a62afb85a8917"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac64c7b21d541df691ada4db7c28c65c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Subsystem.html#ac64c7b21d541df691ada4db7c28c65c3">SetName</a> (const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;name)</td></tr>
-<tr class="memdesc:ac64c7b21d541df691ada4db7c28c65c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name of this <a class="el" href="classfrc_1_1Subsystem.html">Subsystem</a>.  <a href="classfrc_1_1Subsystem.html#ac64c7b21d541df691ada4db7c28c65c3">More...</a><br /></td></tr>
-<tr class="separator:ac64c7b21d541df691ada4db7c28c65c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af56acfffe2f1379550f52858ff3f0942"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Subsystem.html#af56acfffe2f1379550f52858ff3f0942">SetName</a> (std::string_view name)</td></tr>
+<tr class="memdesc:af56acfffe2f1379550f52858ff3f0942"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name of this <a class="el" href="classfrc_1_1Subsystem.html">Subsystem</a>.  <a href="classfrc_1_1Subsystem.html#af56acfffe2f1379550f52858ff3f0942">More...</a><br /></td></tr>
+<tr class="separator:af56acfffe2f1379550f52858ff3f0942"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a37b8ae610a3bc6d97cfc2ebba449aa"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Subsystem.html#a0a37b8ae610a3bc6d97cfc2ebba449aa">GetSubsystem</a> () const</td></tr>
 <tr class="memdesc:a0a37b8ae610a3bc6d97cfc2ebba449aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the subsystem name of this <a class="el" href="classfrc_1_1Subsystem.html">Subsystem</a>.  <a href="classfrc_1_1Subsystem.html#a0a37b8ae610a3bc6d97cfc2ebba449aa">More...</a><br /></td></tr>
 <tr class="separator:a0a37b8ae610a3bc6d97cfc2ebba449aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d9f43f91ee824fda7bf2a2eab5fc63a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Subsystem.html#a8d9f43f91ee824fda7bf2a2eab5fc63a">SetSubsystem</a> (const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;subsystem)</td></tr>
-<tr class="memdesc:a8d9f43f91ee824fda7bf2a2eab5fc63a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the subsystem name of this <a class="el" href="classfrc_1_1Subsystem.html">Subsystem</a>.  <a href="classfrc_1_1Subsystem.html#a8d9f43f91ee824fda7bf2a2eab5fc63a">More...</a><br /></td></tr>
-<tr class="separator:a8d9f43f91ee824fda7bf2a2eab5fc63a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6267ce646f7bf75e512576a748f6c84c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Subsystem.html#a6267ce646f7bf75e512576a748f6c84c">AddChild</a> (const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;name, std::shared_ptr&lt; <a class="el" href="classfrc_1_1Sendable.html">Sendable</a> &gt; child)</td></tr>
-<tr class="memdesc:a6267ce646f7bf75e512576a748f6c84c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Associate a <a class="el" href="classfrc_1_1Sendable.html" title="Interface for Sendable objects.">Sendable</a> with this <a class="el" href="classfrc_1_1Subsystem.html">Subsystem</a>.  <a href="classfrc_1_1Subsystem.html#a6267ce646f7bf75e512576a748f6c84c">More...</a><br /></td></tr>
-<tr class="separator:a6267ce646f7bf75e512576a748f6c84c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a556a3ee6c2a63da1eda85ab6d0145a2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Subsystem.html#a556a3ee6c2a63da1eda85ab6d0145a2c">AddChild</a> (const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;name, <a class="el" href="classfrc_1_1Sendable.html">Sendable</a> *child)</td></tr>
-<tr class="memdesc:a556a3ee6c2a63da1eda85ab6d0145a2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Associate a <a class="el" href="classfrc_1_1Sendable.html" title="Interface for Sendable objects.">Sendable</a> with this <a class="el" href="classfrc_1_1Subsystem.html">Subsystem</a>.  <a href="classfrc_1_1Subsystem.html#a556a3ee6c2a63da1eda85ab6d0145a2c">More...</a><br /></td></tr>
-<tr class="separator:a556a3ee6c2a63da1eda85ab6d0145a2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afec1d8fcbfb7d181ca340d777cf2d459"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Subsystem.html#afec1d8fcbfb7d181ca340d777cf2d459">AddChild</a> (const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;name, <a class="el" href="classfrc_1_1Sendable.html">Sendable</a> &amp;child)</td></tr>
-<tr class="memdesc:afec1d8fcbfb7d181ca340d777cf2d459"><td class="mdescLeft">&#160;</td><td class="mdescRight">Associate a <a class="el" href="classfrc_1_1Sendable.html" title="Interface for Sendable objects.">Sendable</a> with this <a class="el" href="classfrc_1_1Subsystem.html">Subsystem</a>.  <a href="classfrc_1_1Subsystem.html#afec1d8fcbfb7d181ca340d777cf2d459">More...</a><br /></td></tr>
-<tr class="separator:afec1d8fcbfb7d181ca340d777cf2d459"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0f35348627641fcce846d7bb757a195"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Subsystem.html#ae0f35348627641fcce846d7bb757a195">SetSubsystem</a> (std::string_view subsystem)</td></tr>
+<tr class="memdesc:ae0f35348627641fcce846d7bb757a195"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the subsystem name of this <a class="el" href="classfrc_1_1Subsystem.html">Subsystem</a>.  <a href="classfrc_1_1Subsystem.html#ae0f35348627641fcce846d7bb757a195">More...</a><br /></td></tr>
+<tr class="separator:ae0f35348627641fcce846d7bb757a195"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a610ea46ed01a383fbb4a8bdfb260d103"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Subsystem.html#a610ea46ed01a383fbb4a8bdfb260d103">AddChild</a> (std::string_view name, std::shared_ptr&lt; <a class="el" href="classfrc_1_1Sendable.html">Sendable</a> &gt; child)</td></tr>
+<tr class="memdesc:a610ea46ed01a383fbb4a8bdfb260d103"><td class="mdescLeft">&#160;</td><td class="mdescRight">Associate a <a class="el" href="classfrc_1_1Sendable.html" title="Interface for Sendable objects.">Sendable</a> with this <a class="el" href="classfrc_1_1Subsystem.html">Subsystem</a>.  <a href="classfrc_1_1Subsystem.html#a610ea46ed01a383fbb4a8bdfb260d103">More...</a><br /></td></tr>
+<tr class="separator:a610ea46ed01a383fbb4a8bdfb260d103"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61f9156983772b965356cdc770dd1388"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Subsystem.html#a61f9156983772b965356cdc770dd1388">AddChild</a> (std::string_view name, <a class="el" href="classfrc_1_1Sendable.html">Sendable</a> *child)</td></tr>
+<tr class="memdesc:a61f9156983772b965356cdc770dd1388"><td class="mdescLeft">&#160;</td><td class="mdescRight">Associate a <a class="el" href="classfrc_1_1Sendable.html" title="Interface for Sendable objects.">Sendable</a> with this <a class="el" href="classfrc_1_1Subsystem.html">Subsystem</a>.  <a href="classfrc_1_1Subsystem.html#a61f9156983772b965356cdc770dd1388">More...</a><br /></td></tr>
+<tr class="separator:a61f9156983772b965356cdc770dd1388"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a632c9a5601537185e0955006ba61c49a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Subsystem.html#a632c9a5601537185e0955006ba61c49a">AddChild</a> (std::string_view name, <a class="el" href="classfrc_1_1Sendable.html">Sendable</a> &amp;child)</td></tr>
+<tr class="memdesc:a632c9a5601537185e0955006ba61c49a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Associate a <a class="el" href="classfrc_1_1Sendable.html" title="Interface for Sendable objects.">Sendable</a> with this <a class="el" href="classfrc_1_1Subsystem.html">Subsystem</a>.  <a href="classfrc_1_1Subsystem.html#a632c9a5601537185e0955006ba61c49a">More...</a><br /></td></tr>
+<tr class="separator:a632c9a5601537185e0955006ba61c49a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30c556279a9e8a349ab40d80fa76ba06"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Subsystem.html#a30c556279a9e8a349ab40d80fa76ba06">AddChild</a> (std::shared_ptr&lt; <a class="el" href="classfrc_1_1Sendable.html">Sendable</a> &gt; child)</td></tr>
 <tr class="memdesc:a30c556279a9e8a349ab40d80fa76ba06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Associate a <a class="el" href="classfrc_1_1Sendable.html">Sendable</a> with this <a class="el" href="classfrc_1_1Subsystem.html">Subsystem</a>.  <a href="classfrc_1_1Subsystem.html#a30c556279a9e8a349ab40d80fa76ba06">More...</a><br /></td></tr>
 <tr class="separator:a30c556279a9e8a349ab40d80fa76ba06"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -194,18 +194,18 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memitem:a75d698ea5a4e90ad3b43d0dae6581079 inherit pub_methods_classfrc_1_1SendableHelper"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SendableHelper.html#a75d698ea5a4e90ad3b43d0dae6581079">GetName</a> () const</td></tr>
 <tr class="memdesc:a75d698ea5a4e90ad3b43d0dae6581079 inherit pub_methods_classfrc_1_1SendableHelper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the name of this Sendable object.  <a href="classfrc_1_1SendableHelper.html#a75d698ea5a4e90ad3b43d0dae6581079">More...</a><br /></td></tr>
 <tr class="separator:a75d698ea5a4e90ad3b43d0dae6581079 inherit pub_methods_classfrc_1_1SendableHelper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf3f66a2edb9747941607e5f858885e4 inherit pub_methods_classfrc_1_1SendableHelper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SendableHelper.html#abf3f66a2edb9747941607e5f858885e4">SetName</a> (const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;name)</td></tr>
-<tr class="memdesc:abf3f66a2edb9747941607e5f858885e4 inherit pub_methods_classfrc_1_1SendableHelper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name of this Sendable object.  <a href="classfrc_1_1SendableHelper.html#abf3f66a2edb9747941607e5f858885e4">More...</a><br /></td></tr>
-<tr class="separator:abf3f66a2edb9747941607e5f858885e4 inherit pub_methods_classfrc_1_1SendableHelper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77cad6240a0f47ed804a385836f483c5 inherit pub_methods_classfrc_1_1SendableHelper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SendableHelper.html#a77cad6240a0f47ed804a385836f483c5">SetName</a> (const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;subsystem, const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;name)</td></tr>
-<tr class="memdesc:a77cad6240a0f47ed804a385836f483c5 inherit pub_methods_classfrc_1_1SendableHelper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets both the subsystem name and device name of this Sendable object.  <a href="classfrc_1_1SendableHelper.html#a77cad6240a0f47ed804a385836f483c5">More...</a><br /></td></tr>
-<tr class="separator:a77cad6240a0f47ed804a385836f483c5 inherit pub_methods_classfrc_1_1SendableHelper"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19826e5150651b3f549cc39e1508227f inherit pub_methods_classfrc_1_1SendableHelper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SendableHelper.html#a19826e5150651b3f549cc39e1508227f">SetName</a> (std::string_view name)</td></tr>
+<tr class="memdesc:a19826e5150651b3f549cc39e1508227f inherit pub_methods_classfrc_1_1SendableHelper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name of this Sendable object.  <a href="classfrc_1_1SendableHelper.html#a19826e5150651b3f549cc39e1508227f">More...</a><br /></td></tr>
+<tr class="separator:a19826e5150651b3f549cc39e1508227f inherit pub_methods_classfrc_1_1SendableHelper"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac21520c0b26f6f4ab9bf05670b0d1ab9 inherit pub_methods_classfrc_1_1SendableHelper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SendableHelper.html#ac21520c0b26f6f4ab9bf05670b0d1ab9">SetName</a> (std::string_view subsystem, std::string_view name)</td></tr>
+<tr class="memdesc:ac21520c0b26f6f4ab9bf05670b0d1ab9 inherit pub_methods_classfrc_1_1SendableHelper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets both the subsystem name and device name of this Sendable object.  <a href="classfrc_1_1SendableHelper.html#ac21520c0b26f6f4ab9bf05670b0d1ab9">More...</a><br /></td></tr>
+<tr class="separator:ac21520c0b26f6f4ab9bf05670b0d1ab9 inherit pub_methods_classfrc_1_1SendableHelper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31d1fbcdecca9492ded28083609e0f01 inherit pub_methods_classfrc_1_1SendableHelper"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SendableHelper.html#a31d1fbcdecca9492ded28083609e0f01">GetSubsystem</a> () const</td></tr>
 <tr class="memdesc:a31d1fbcdecca9492ded28083609e0f01 inherit pub_methods_classfrc_1_1SendableHelper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the subsystem name of this Sendable object.  <a href="classfrc_1_1SendableHelper.html#a31d1fbcdecca9492ded28083609e0f01">More...</a><br /></td></tr>
 <tr class="separator:a31d1fbcdecca9492ded28083609e0f01 inherit pub_methods_classfrc_1_1SendableHelper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47eb53e20e78fb45918759a82d806376 inherit pub_methods_classfrc_1_1SendableHelper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SendableHelper.html#a47eb53e20e78fb45918759a82d806376">SetSubsystem</a> (const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;subsystem)</td></tr>
-<tr class="memdesc:a47eb53e20e78fb45918759a82d806376 inherit pub_methods_classfrc_1_1SendableHelper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the subsystem name of this Sendable object.  <a href="classfrc_1_1SendableHelper.html#a47eb53e20e78fb45918759a82d806376">More...</a><br /></td></tr>
-<tr class="separator:a47eb53e20e78fb45918759a82d806376 inherit pub_methods_classfrc_1_1SendableHelper"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8b2bd0ccaed7dd2b71e832fd89aaaa1 inherit pub_methods_classfrc_1_1SendableHelper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SendableHelper.html#aa8b2bd0ccaed7dd2b71e832fd89aaaa1">SetSubsystem</a> (std::string_view subsystem)</td></tr>
+<tr class="memdesc:aa8b2bd0ccaed7dd2b71e832fd89aaaa1 inherit pub_methods_classfrc_1_1SendableHelper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the subsystem name of this Sendable object.  <a href="classfrc_1_1SendableHelper.html#aa8b2bd0ccaed7dd2b71e832fd89aaaa1">More...</a><br /></td></tr>
+<tr class="separator:aa8b2bd0ccaed7dd2b71e832fd89aaaa1 inherit pub_methods_classfrc_1_1SendableHelper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -216,12 +216,12 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Scheduler</b></td></
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_classfrc_1_1SendableHelper"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classfrc_1_1SendableHelper')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classfrc_1_1SendableHelper.html">frc::SendableHelper&lt; Subsystem &gt;</a></td></tr>
-<tr class="memitem:a4dd2d1a64ac47d461b323e2b53deabe6 inherit pro_methods_classfrc_1_1SendableHelper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SendableHelper.html#a4dd2d1a64ac47d461b323e2b53deabe6">SetName</a> (const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;moduleType, int channel)</td></tr>
-<tr class="memdesc:a4dd2d1a64ac47d461b323e2b53deabe6 inherit pro_methods_classfrc_1_1SendableHelper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name of the sensor with a channel number.  <a href="classfrc_1_1SendableHelper.html#a4dd2d1a64ac47d461b323e2b53deabe6">More...</a><br /></td></tr>
-<tr class="separator:a4dd2d1a64ac47d461b323e2b53deabe6 inherit pro_methods_classfrc_1_1SendableHelper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea88b8605f45b60eb28c3c6ec27be1a8 inherit pro_methods_classfrc_1_1SendableHelper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SendableHelper.html#aea88b8605f45b60eb28c3c6ec27be1a8">SetName</a> (const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;moduleType, int moduleNumber, int channel)</td></tr>
-<tr class="memdesc:aea88b8605f45b60eb28c3c6ec27be1a8 inherit pro_methods_classfrc_1_1SendableHelper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name of the sensor with a module and channel number.  <a href="classfrc_1_1SendableHelper.html#aea88b8605f45b60eb28c3c6ec27be1a8">More...</a><br /></td></tr>
-<tr class="separator:aea88b8605f45b60eb28c3c6ec27be1a8 inherit pro_methods_classfrc_1_1SendableHelper"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a510c55cb79b74dc0892230ddd17344 inherit pro_methods_classfrc_1_1SendableHelper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SendableHelper.html#a0a510c55cb79b74dc0892230ddd17344">SetName</a> (std::string_view moduleType, int channel)</td></tr>
+<tr class="memdesc:a0a510c55cb79b74dc0892230ddd17344 inherit pro_methods_classfrc_1_1SendableHelper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name of the sensor with a channel number.  <a href="classfrc_1_1SendableHelper.html#a0a510c55cb79b74dc0892230ddd17344">More...</a><br /></td></tr>
+<tr class="separator:a0a510c55cb79b74dc0892230ddd17344 inherit pro_methods_classfrc_1_1SendableHelper"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34427261bfcc261a7525a3590d72d0c4 inherit pro_methods_classfrc_1_1SendableHelper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SendableHelper.html#a34427261bfcc261a7525a3590d72d0c4">SetName</a> (std::string_view moduleType, int moduleNumber, int channel)</td></tr>
+<tr class="memdesc:a34427261bfcc261a7525a3590d72d0c4 inherit pro_methods_classfrc_1_1SendableHelper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name of the sensor with a module and channel number.  <a href="classfrc_1_1SendableHelper.html#a34427261bfcc261a7525a3590d72d0c4">More...</a><br /></td></tr>
+<tr class="separator:a34427261bfcc261a7525a3590d72d0c4 inherit pro_methods_classfrc_1_1SendableHelper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac201047b464953c58120eb0d41c72982 inherit pro_methods_classfrc_1_1SendableHelper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SendableHelper.html#ac201047b464953c58120eb0d41c72982">AddChild</a> (std::shared_ptr&lt; <a class="el" href="classfrc_1_1Sendable.html">Sendable</a> &gt; child)</td></tr>
 <tr class="memdesc:ac201047b464953c58120eb0d41c72982 inherit pro_methods_classfrc_1_1SendableHelper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a child component.  <a href="classfrc_1_1SendableHelper.html#ac201047b464953c58120eb0d41c72982">More...</a><br /></td></tr>
 <tr class="separator:ac201047b464953c58120eb0d41c72982 inherit pro_methods_classfrc_1_1SendableHelper"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -230,8 +230,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a6e4d57269484510fc5c2ab7cd4862c61 inherit pro_methods_classfrc_1_1SendableHelper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a188c54b8cd0f53d4df16e4b66104a3e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a188c54b8cd0f53d4df16e4b66104a3e2">&#9670;&nbsp;</a></span>Subsystem()</h2>
+<a id="a6e9d67c0f56f96da8b605dedea55132c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e9d67c0f56f96da8b605dedea55132c">&#9670;&nbsp;</a></span>Subsystem()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -242,7 +242,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">frc::Subsystem::Subsystem </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
           <td></td>
         </tr>
@@ -265,122 +265,8 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="afec1d8fcbfb7d181ca340d777cf2d459"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afec1d8fcbfb7d181ca340d777cf2d459">&#9670;&nbsp;</a></span>AddChild() <span class="overload">[1/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void frc::Subsystem::AddChild </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classfrc_1_1Sendable.html">Sendable</a> &amp;&#160;</td>
-          <td class="paramname"><em>child</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Associate a <a class="el" href="classfrc_1_1Sendable.html" title="Interface for Sendable objects.">Sendable</a> with this <a class="el" href="classfrc_1_1Subsystem.html">Subsystem</a>. </p>
-<p>Also update the child's name.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">name</td><td>name to give child </td></tr>
-    <tr><td class="paramname">child</td><td>sendable </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a556a3ee6c2a63da1eda85ab6d0145a2c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a556a3ee6c2a63da1eda85ab6d0145a2c">&#9670;&nbsp;</a></span>AddChild() <span class="overload">[2/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void frc::Subsystem::AddChild </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classfrc_1_1Sendable.html">Sendable</a> *&#160;</td>
-          <td class="paramname"><em>child</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Associate a <a class="el" href="classfrc_1_1Sendable.html" title="Interface for Sendable objects.">Sendable</a> with this <a class="el" href="classfrc_1_1Subsystem.html">Subsystem</a>. </p>
-<p>Also update the child's name.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">name</td><td>name to give child </td></tr>
-    <tr><td class="paramname">child</td><td>sendable </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a6267ce646f7bf75e512576a748f6c84c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6267ce646f7bf75e512576a748f6c84c">&#9670;&nbsp;</a></span>AddChild() <span class="overload">[3/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void frc::Subsystem::AddChild </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classfrc_1_1Sendable.html">Sendable</a> &gt;&#160;</td>
-          <td class="paramname"><em>child</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Associate a <a class="el" href="classfrc_1_1Sendable.html" title="Interface for Sendable objects.">Sendable</a> with this <a class="el" href="classfrc_1_1Subsystem.html">Subsystem</a>. </p>
-<p>Also update the child's name.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">name</td><td>name to give child </td></tr>
-    <tr><td class="paramname">child</td><td>sendable </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a28fd6bfc67d19eca90d1af18f9947dd7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28fd6bfc67d19eca90d1af18f9947dd7">&#9670;&nbsp;</a></span>AddChild() <span class="overload">[4/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a28fd6bfc67d19eca90d1af18f9947dd7">&#9670;&nbsp;</a></span>AddChild() <span class="overload">[1/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -406,7 +292,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a185336bc3710c60a24516a0449a53ac1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a185336bc3710c60a24516a0449a53ac1">&#9670;&nbsp;</a></span>AddChild() <span class="overload">[5/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a185336bc3710c60a24516a0449a53ac1">&#9670;&nbsp;</a></span>AddChild() <span class="overload">[2/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -432,7 +318,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a30c556279a9e8a349ab40d80fa76ba06"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30c556279a9e8a349ab40d80fa76ba06">&#9670;&nbsp;</a></span>AddChild() <span class="overload">[6/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a30c556279a9e8a349ab40d80fa76ba06">&#9670;&nbsp;</a></span>AddChild() <span class="overload">[3/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -450,6 +336,120 @@ Additional Inherited Members</h2></td></tr>
 <p>Associate a <a class="el" href="classfrc_1_1Sendable.html">Sendable</a> with this <a class="el" href="classfrc_1_1Subsystem.html">Subsystem</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">child</td><td>sendable </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a632c9a5601537185e0955006ba61c49a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a632c9a5601537185e0955006ba61c49a">&#9670;&nbsp;</a></span>AddChild() <span class="overload">[4/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void frc::Subsystem::AddChild </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classfrc_1_1Sendable.html">Sendable</a> &amp;&#160;</td>
+          <td class="paramname"><em>child</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Associate a <a class="el" href="classfrc_1_1Sendable.html" title="Interface for Sendable objects.">Sendable</a> with this <a class="el" href="classfrc_1_1Subsystem.html">Subsystem</a>. </p>
+<p>Also update the child's name.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>name to give child </td></tr>
+    <tr><td class="paramname">child</td><td>sendable </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a61f9156983772b965356cdc770dd1388"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61f9156983772b965356cdc770dd1388">&#9670;&nbsp;</a></span>AddChild() <span class="overload">[5/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void frc::Subsystem::AddChild </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classfrc_1_1Sendable.html">Sendable</a> *&#160;</td>
+          <td class="paramname"><em>child</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Associate a <a class="el" href="classfrc_1_1Sendable.html" title="Interface for Sendable objects.">Sendable</a> with this <a class="el" href="classfrc_1_1Subsystem.html">Subsystem</a>. </p>
+<p>Also update the child's name.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>name to give child </td></tr>
+    <tr><td class="paramname">child</td><td>sendable </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a610ea46ed01a383fbb4a8bdfb260d103"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a610ea46ed01a383fbb4a8bdfb260d103">&#9670;&nbsp;</a></span>AddChild() <span class="overload">[6/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void frc::Subsystem::AddChild </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classfrc_1_1Sendable.html">Sendable</a> &gt;&#160;</td>
+          <td class="paramname"><em>child</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Associate a <a class="el" href="classfrc_1_1Sendable.html" title="Interface for Sendable objects.">Sendable</a> with this <a class="el" href="classfrc_1_1Subsystem.html">Subsystem</a>. </p>
+<p>Also update the child's name.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>name to give child </td></tr>
     <tr><td class="paramname">child</td><td>sendable </td></tr>
   </table>
   </dd>
@@ -477,14 +477,14 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a92f82b1337071d3fefe29c83519899f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92f82b1337071d3fefe29c83519899f1">&#9670;&nbsp;</a></span>GetCurrentCommandName()</h2>
+<a id="ace743521c7ce1cd6ed69b976cca1a7c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace743521c7ce1cd6ed69b976cca1a7c7">&#9670;&nbsp;</a></span>GetCurrentCommandName()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classwpi_1_1StringRef.html">wpi::StringRef</a> frc::Subsystem::GetCurrentCommandName </td>
+          <td class="memname">std::string frc::Subsystem::GetCurrentCommandName </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -517,14 +517,14 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a99d4c837918040e63f86b1942c3fe64c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a99d4c837918040e63f86b1942c3fe64c">&#9670;&nbsp;</a></span>GetDefaultCommandName()</h2>
+<a id="abdb05bee6316a471a39ccb782a4e3382"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdb05bee6316a471a39ccb782a4e3382">&#9670;&nbsp;</a></span>GetDefaultCommandName()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classwpi_1_1StringRef.html">wpi::StringRef</a> frc::Subsystem::GetDefaultCommandName </td>
+          <td class="memname">std::string frc::Subsystem::GetDefaultCommandName </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -696,8 +696,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="ac64c7b21d541df691ada4db7c28c65c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac64c7b21d541df691ada4db7c28c65c3">&#9670;&nbsp;</a></span>SetName()</h2>
+<a id="af56acfffe2f1379550f52858ff3f0942"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af56acfffe2f1379550f52858ff3f0942">&#9670;&nbsp;</a></span>SetName()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -705,7 +705,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">void frc::Subsystem::SetName </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
           <td></td>
         </tr>
@@ -722,8 +722,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a8d9f43f91ee824fda7bf2a2eab5fc63a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d9f43f91ee824fda7bf2a2eab5fc63a">&#9670;&nbsp;</a></span>SetSubsystem()</h2>
+<a id="ae0f35348627641fcce846d7bb757a195"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0f35348627641fcce846d7bb757a195">&#9670;&nbsp;</a></span>SetSubsystem()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -731,7 +731,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">void frc::Subsystem::SetSubsystem </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>subsystem</em></td><td>)</td>
           <td></td>
         </tr>
@@ -757,7 +757,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1Subsystem.html">Subsystem</a></li>
-    <li class="footer">Generated on Wed May 26 2021 14:27:25 for WPILibC++ by
+    <li class="footer">Generated on Thu May 27 2021 00:46:06 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-75-g50915cb</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-76-g4e2c305</span>
    </div>
   </td>
  </tr>
@@ -149,9 +149,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SendableBuilderImpl.html#afb4a73755560fbfa5857508b742a4f5c">ClearProperties</a> ()</td></tr>
 <tr class="memdesc:afb4a73755560fbfa5857508b742a4f5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear properties. <br /></td></tr>
 <tr class="separator:afb4a73755560fbfa5857508b742a4f5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8614baecb8e69a660b292784eb1dcf19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SendableBuilderImpl.html#a8614baecb8e69a660b292784eb1dcf19">SetSmartDashboardType</a> (const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;type) override</td></tr>
-<tr class="memdesc:a8614baecb8e69a660b292784eb1dcf19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the string representation of the named data type that will be used by the smart dashboard for this sendable.  <a href="classfrc_1_1SendableBuilderImpl.html#a8614baecb8e69a660b292784eb1dcf19">More...</a><br /></td></tr>
-<tr class="separator:a8614baecb8e69a660b292784eb1dcf19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a319c3f94772db63de793021c7ab826fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SendableBuilderImpl.html#a319c3f94772db63de793021c7ab826fb">SetSmartDashboardType</a> (std::string_view type) override</td></tr>
+<tr class="memdesc:a319c3f94772db63de793021c7ab826fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the string representation of the named data type that will be used by the smart dashboard for this sendable.  <a href="classfrc_1_1SendableBuilderImpl.html#a319c3f94772db63de793021c7ab826fb">More...</a><br /></td></tr>
+<tr class="separator:a319c3f94772db63de793021c7ab826fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96ee9d5cdb0e09f7d972db156e36d691"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SendableBuilderImpl.html#a96ee9d5cdb0e09f7d972db156e36d691">SetActuator</a> (bool <a class="el" href="classvalue.html">value</a>) override</td></tr>
 <tr class="memdesc:a96ee9d5cdb0e09f7d972db156e36d691"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a flag indicating if this sendable should be treated as an actuator.  <a href="classfrc_1_1SendableBuilderImpl.html#a96ee9d5cdb0e09f7d972db156e36d691">More...</a><br /></td></tr>
 <tr class="separator:a96ee9d5cdb0e09f7d972db156e36d691"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,52 +161,52 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:afca8237f825efc00eb3c1d0aef885f24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SendableBuilderImpl.html#afca8237f825efc00eb3c1d0aef885f24">SetUpdateTable</a> (std::function&lt; void()&gt; func) override</td></tr>
 <tr class="memdesc:afca8237f825efc00eb3c1d0aef885f24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the function that should be called to update the network table for things other than properties.  <a href="classfrc_1_1SendableBuilderImpl.html#afca8237f825efc00eb3c1d0aef885f24">More...</a><br /></td></tr>
 <tr class="separator:afca8237f825efc00eb3c1d0aef885f24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afee5a77930fb27c3505ffbba20833cca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnt_1_1NetworkTableEntry.html">nt::NetworkTableEntry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SendableBuilderImpl.html#afee5a77930fb27c3505ffbba20833cca">GetEntry</a> (const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;key) override</td></tr>
-<tr class="memdesc:afee5a77930fb27c3505ffbba20833cca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a property without getters or setters.  <a href="classfrc_1_1SendableBuilderImpl.html#afee5a77930fb27c3505ffbba20833cca">More...</a><br /></td></tr>
-<tr class="separator:afee5a77930fb27c3505ffbba20833cca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8c50a41c986a784770e0f35b62c0764"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SendableBuilderImpl.html#ab8c50a41c986a784770e0f35b62c0764">AddBooleanProperty</a> (const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;key, std::function&lt; bool()&gt; getter, std::function&lt; void(bool)&gt; setter) override</td></tr>
-<tr class="memdesc:ab8c50a41c986a784770e0f35b62c0764"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a boolean property.  <a href="classfrc_1_1SendableBuilderImpl.html#ab8c50a41c986a784770e0f35b62c0764">More...</a><br /></td></tr>
-<tr class="separator:ab8c50a41c986a784770e0f35b62c0764"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5870caf3e603a11492c76e26a12eefa6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SendableBuilderImpl.html#a5870caf3e603a11492c76e26a12eefa6">AddDoubleProperty</a> (const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;key, std::function&lt; double()&gt; getter, std::function&lt; void(double)&gt; setter) override</td></tr>
-<tr class="memdesc:a5870caf3e603a11492c76e26a12eefa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a double property.  <a href="classfrc_1_1SendableBuilderImpl.html#a5870caf3e603a11492c76e26a12eefa6">More...</a><br /></td></tr>
-<tr class="separator:a5870caf3e603a11492c76e26a12eefa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abaa86b0ff42f7692d171e3dd4c94137b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SendableBuilderImpl.html#abaa86b0ff42f7692d171e3dd4c94137b">AddStringProperty</a> (const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;key, std::function&lt; std::string()&gt; getter, std::function&lt; void(<a class="el" href="classwpi_1_1StringRef.html">wpi::StringRef</a>)&gt; setter) override</td></tr>
-<tr class="memdesc:abaa86b0ff42f7692d171e3dd4c94137b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a string property.  <a href="classfrc_1_1SendableBuilderImpl.html#abaa86b0ff42f7692d171e3dd4c94137b">More...</a><br /></td></tr>
-<tr class="separator:abaa86b0ff42f7692d171e3dd4c94137b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10373255604c517c2c0702dd36cfd9e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SendableBuilderImpl.html#a10373255604c517c2c0702dd36cfd9e3">AddBooleanArrayProperty</a> (const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;key, std::function&lt; std::vector&lt; int &gt;()&gt; getter, std::function&lt; void(<a class="el" href="classwpi_1_1ArrayRef.html">wpi::ArrayRef</a>&lt; int &gt;)&gt; setter) override</td></tr>
-<tr class="memdesc:a10373255604c517c2c0702dd36cfd9e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a boolean array property.  <a href="classfrc_1_1SendableBuilderImpl.html#a10373255604c517c2c0702dd36cfd9e3">More...</a><br /></td></tr>
-<tr class="separator:a10373255604c517c2c0702dd36cfd9e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83ab7a0b35e603ef72a8af8ba1cd9499"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SendableBuilderImpl.html#a83ab7a0b35e603ef72a8af8ba1cd9499">AddDoubleArrayProperty</a> (const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;key, std::function&lt; std::vector&lt; double &gt;()&gt; getter, std::function&lt; void(<a class="el" href="classwpi_1_1ArrayRef.html">wpi::ArrayRef</a>&lt; double &gt;)&gt; setter) override</td></tr>
-<tr class="memdesc:a83ab7a0b35e603ef72a8af8ba1cd9499"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a double array property.  <a href="classfrc_1_1SendableBuilderImpl.html#a83ab7a0b35e603ef72a8af8ba1cd9499">More...</a><br /></td></tr>
-<tr class="separator:a83ab7a0b35e603ef72a8af8ba1cd9499"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd6b58e2f7fd571ef16be363687e90d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SendableBuilderImpl.html#acd6b58e2f7fd571ef16be363687e90d4">AddStringArrayProperty</a> (const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;key, std::function&lt; std::vector&lt; std::string &gt;()&gt; getter, std::function&lt; void(<a class="el" href="classwpi_1_1ArrayRef.html">wpi::ArrayRef</a>&lt; std::string &gt;)&gt; setter) override</td></tr>
-<tr class="memdesc:acd6b58e2f7fd571ef16be363687e90d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a string array property.  <a href="classfrc_1_1SendableBuilderImpl.html#acd6b58e2f7fd571ef16be363687e90d4">More...</a><br /></td></tr>
-<tr class="separator:acd6b58e2f7fd571ef16be363687e90d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acea04228cd93928cf151485c7b028817"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SendableBuilderImpl.html#acea04228cd93928cf151485c7b028817">AddRawProperty</a> (const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;key, std::function&lt; std::string()&gt; getter, std::function&lt; void(<a class="el" href="classwpi_1_1StringRef.html">wpi::StringRef</a>)&gt; setter) override</td></tr>
-<tr class="memdesc:acea04228cd93928cf151485c7b028817"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a raw property.  <a href="classfrc_1_1SendableBuilderImpl.html#acea04228cd93928cf151485c7b028817">More...</a><br /></td></tr>
-<tr class="separator:acea04228cd93928cf151485c7b028817"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4788aa021728780cb68ae05b824112dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SendableBuilderImpl.html#a4788aa021728780cb68ae05b824112dc">AddValueProperty</a> (const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;key, std::function&lt; std::shared_ptr&lt; <a class="el" href="classnt_1_1Value.html">nt::Value</a> &gt;()&gt; getter, std::function&lt; void(std::shared_ptr&lt; <a class="el" href="classnt_1_1Value.html">nt::Value</a> &gt;)&gt; setter) override</td></tr>
-<tr class="memdesc:a4788aa021728780cb68ae05b824112dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a NetworkTableValue property.  <a href="classfrc_1_1SendableBuilderImpl.html#a4788aa021728780cb68ae05b824112dc">More...</a><br /></td></tr>
-<tr class="separator:a4788aa021728780cb68ae05b824112dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2110310053e8db6bee88766f221fe3c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SendableBuilderImpl.html#ab2110310053e8db6bee88766f221fe3c">AddSmallStringProperty</a> (const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;key, std::function&lt; <a class="el" href="classwpi_1_1StringRef.html">wpi::StringRef</a>(<a class="el" href="classwpi_1_1SmallVectorImpl.html">wpi::SmallVectorImpl</a>&lt; char &gt; &amp;buf)&gt; getter, std::function&lt; void(<a class="el" href="classwpi_1_1StringRef.html">wpi::StringRef</a>)&gt; setter) override</td></tr>
-<tr class="memdesc:ab2110310053e8db6bee88766f221fe3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a string property (SmallString form).  <a href="classfrc_1_1SendableBuilderImpl.html#ab2110310053e8db6bee88766f221fe3c">More...</a><br /></td></tr>
-<tr class="separator:ab2110310053e8db6bee88766f221fe3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba9e66cf9cadb7805ae0b1ed92f7c5a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SendableBuilderImpl.html#aba9e66cf9cadb7805ae0b1ed92f7c5a0">AddSmallBooleanArrayProperty</a> (const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;key, std::function&lt; <a class="el" href="classwpi_1_1ArrayRef.html">wpi::ArrayRef</a>&lt; int &gt;(<a class="el" href="classwpi_1_1SmallVectorImpl.html">wpi::SmallVectorImpl</a>&lt; int &gt; &amp;buf)&gt; getter, std::function&lt; void(<a class="el" href="classwpi_1_1ArrayRef.html">wpi::ArrayRef</a>&lt; int &gt;)&gt; setter) override</td></tr>
-<tr class="memdesc:aba9e66cf9cadb7805ae0b1ed92f7c5a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a boolean array property (SmallVector form).  <a href="classfrc_1_1SendableBuilderImpl.html#aba9e66cf9cadb7805ae0b1ed92f7c5a0">More...</a><br /></td></tr>
-<tr class="separator:aba9e66cf9cadb7805ae0b1ed92f7c5a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab49d2447d200ff99f2e3b920e99a6261"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SendableBuilderImpl.html#ab49d2447d200ff99f2e3b920e99a6261">AddSmallDoubleArrayProperty</a> (const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;key, std::function&lt; <a class="el" href="classwpi_1_1ArrayRef.html">wpi::ArrayRef</a>&lt; double &gt;(<a class="el" href="classwpi_1_1SmallVectorImpl.html">wpi::SmallVectorImpl</a>&lt; double &gt; &amp;buf)&gt; getter, std::function&lt; void(<a class="el" href="classwpi_1_1ArrayRef.html">wpi::ArrayRef</a>&lt; double &gt;)&gt; setter) override</td></tr>
-<tr class="memdesc:ab49d2447d200ff99f2e3b920e99a6261"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a double array property (SmallVector form).  <a href="classfrc_1_1SendableBuilderImpl.html#ab49d2447d200ff99f2e3b920e99a6261">More...</a><br /></td></tr>
-<tr class="separator:ab49d2447d200ff99f2e3b920e99a6261"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37ce0eafa9576421bf1b450653471e15"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SendableBuilderImpl.html#a37ce0eafa9576421bf1b450653471e15">AddSmallStringArrayProperty</a> (const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;key, std::function&lt; <a class="el" href="classwpi_1_1ArrayRef.html">wpi::ArrayRef</a>&lt; std::string &gt;(<a class="el" href="classwpi_1_1SmallVectorImpl.html">wpi::SmallVectorImpl</a>&lt; std::string &gt; &amp;buf)&gt; getter, std::function&lt; void(<a class="el" href="classwpi_1_1ArrayRef.html">wpi::ArrayRef</a>&lt; std::string &gt;)&gt; setter) override</td></tr>
-<tr class="memdesc:a37ce0eafa9576421bf1b450653471e15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a string array property (SmallVector form).  <a href="classfrc_1_1SendableBuilderImpl.html#a37ce0eafa9576421bf1b450653471e15">More...</a><br /></td></tr>
-<tr class="separator:a37ce0eafa9576421bf1b450653471e15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f95de70d15e2f21f2caee43dd0121a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SendableBuilderImpl.html#a2f95de70d15e2f21f2caee43dd0121a5">AddSmallRawProperty</a> (const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;key, std::function&lt; <a class="el" href="classwpi_1_1StringRef.html">wpi::StringRef</a>(<a class="el" href="classwpi_1_1SmallVectorImpl.html">wpi::SmallVectorImpl</a>&lt; char &gt; &amp;buf)&gt; getter, std::function&lt; void(<a class="el" href="classwpi_1_1StringRef.html">wpi::StringRef</a>)&gt; setter) override</td></tr>
-<tr class="memdesc:a2f95de70d15e2f21f2caee43dd0121a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a raw property (SmallVector form).  <a href="classfrc_1_1SendableBuilderImpl.html#a2f95de70d15e2f21f2caee43dd0121a5">More...</a><br /></td></tr>
-<tr class="separator:a2f95de70d15e2f21f2caee43dd0121a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a637e6d55cbc7be1fbc6be3f7cc55fe9b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnt_1_1NetworkTableEntry.html">nt::NetworkTableEntry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SendableBuilderImpl.html#a637e6d55cbc7be1fbc6be3f7cc55fe9b">GetEntry</a> (std::string_view key) override</td></tr>
+<tr class="memdesc:a637e6d55cbc7be1fbc6be3f7cc55fe9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a property without getters or setters.  <a href="classfrc_1_1SendableBuilderImpl.html#a637e6d55cbc7be1fbc6be3f7cc55fe9b">More...</a><br /></td></tr>
+<tr class="separator:a637e6d55cbc7be1fbc6be3f7cc55fe9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a428b78bf15576862409edcd1e4118099"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SendableBuilderImpl.html#a428b78bf15576862409edcd1e4118099">AddBooleanProperty</a> (std::string_view key, std::function&lt; bool()&gt; getter, std::function&lt; void(bool)&gt; setter) override</td></tr>
+<tr class="memdesc:a428b78bf15576862409edcd1e4118099"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a boolean property.  <a href="classfrc_1_1SendableBuilderImpl.html#a428b78bf15576862409edcd1e4118099">More...</a><br /></td></tr>
+<tr class="separator:a428b78bf15576862409edcd1e4118099"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c36be4292d6ae8b99e0dd39600a52c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SendableBuilderImpl.html#a0c36be4292d6ae8b99e0dd39600a52c9">AddDoubleProperty</a> (std::string_view key, std::function&lt; double()&gt; getter, std::function&lt; void(double)&gt; setter) override</td></tr>
+<tr class="memdesc:a0c36be4292d6ae8b99e0dd39600a52c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a double property.  <a href="classfrc_1_1SendableBuilderImpl.html#a0c36be4292d6ae8b99e0dd39600a52c9">More...</a><br /></td></tr>
+<tr class="separator:a0c36be4292d6ae8b99e0dd39600a52c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5ad4d3212996e4385137b414bbfe101"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SendableBuilderImpl.html#ac5ad4d3212996e4385137b414bbfe101">AddStringProperty</a> (std::string_view key, std::function&lt; std::string()&gt; getter, std::function&lt; void(<a class="el" href="classwpi_1_1StringRef.html">wpi::StringRef</a>)&gt; setter) override</td></tr>
+<tr class="memdesc:ac5ad4d3212996e4385137b414bbfe101"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a string property.  <a href="classfrc_1_1SendableBuilderImpl.html#ac5ad4d3212996e4385137b414bbfe101">More...</a><br /></td></tr>
+<tr class="separator:ac5ad4d3212996e4385137b414bbfe101"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8a8af9fe9f3dbd66e0b0623f0d5bca7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SendableBuilderImpl.html#aa8a8af9fe9f3dbd66e0b0623f0d5bca7">AddBooleanArrayProperty</a> (std::string_view key, std::function&lt; std::vector&lt; int &gt;()&gt; getter, std::function&lt; void(<a class="el" href="classwpi_1_1ArrayRef.html">wpi::ArrayRef</a>&lt; int &gt;)&gt; setter) override</td></tr>
+<tr class="memdesc:aa8a8af9fe9f3dbd66e0b0623f0d5bca7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a boolean array property.  <a href="classfrc_1_1SendableBuilderImpl.html#aa8a8af9fe9f3dbd66e0b0623f0d5bca7">More...</a><br /></td></tr>
+<tr class="separator:aa8a8af9fe9f3dbd66e0b0623f0d5bca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7057c9ced1f05fa0872c08fd59a6a895"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SendableBuilderImpl.html#a7057c9ced1f05fa0872c08fd59a6a895">AddDoubleArrayProperty</a> (std::string_view key, std::function&lt; std::vector&lt; double &gt;()&gt; getter, std::function&lt; void(<a class="el" href="classwpi_1_1ArrayRef.html">wpi::ArrayRef</a>&lt; double &gt;)&gt; setter) override</td></tr>
+<tr class="memdesc:a7057c9ced1f05fa0872c08fd59a6a895"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a double array property.  <a href="classfrc_1_1SendableBuilderImpl.html#a7057c9ced1f05fa0872c08fd59a6a895">More...</a><br /></td></tr>
+<tr class="separator:a7057c9ced1f05fa0872c08fd59a6a895"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4a892b32da80fd9742d20fae57f43b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SendableBuilderImpl.html#ab4a892b32da80fd9742d20fae57f43b4">AddStringArrayProperty</a> (std::string_view key, std::function&lt; std::vector&lt; std::string &gt;()&gt; getter, std::function&lt; void(<a class="el" href="classwpi_1_1ArrayRef.html">wpi::ArrayRef</a>&lt; std::string &gt;)&gt; setter) override</td></tr>
+<tr class="memdesc:ab4a892b32da80fd9742d20fae57f43b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a string array property.  <a href="classfrc_1_1SendableBuilderImpl.html#ab4a892b32da80fd9742d20fae57f43b4">More...</a><br /></td></tr>
+<tr class="separator:ab4a892b32da80fd9742d20fae57f43b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d6e7fd165387fdd9df83eaf104c591b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SendableBuilderImpl.html#a0d6e7fd165387fdd9df83eaf104c591b">AddRawProperty</a> (std::string_view key, std::function&lt; std::string()&gt; getter, std::function&lt; void(<a class="el" href="classwpi_1_1StringRef.html">wpi::StringRef</a>)&gt; setter) override</td></tr>
+<tr class="memdesc:a0d6e7fd165387fdd9df83eaf104c591b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a raw property.  <a href="classfrc_1_1SendableBuilderImpl.html#a0d6e7fd165387fdd9df83eaf104c591b">More...</a><br /></td></tr>
+<tr class="separator:a0d6e7fd165387fdd9df83eaf104c591b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e30b25ed632b7ce560e955e02b46342"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SendableBuilderImpl.html#a9e30b25ed632b7ce560e955e02b46342">AddValueProperty</a> (std::string_view key, std::function&lt; std::shared_ptr&lt; <a class="el" href="classnt_1_1Value.html">nt::Value</a> &gt;()&gt; getter, std::function&lt; void(std::shared_ptr&lt; <a class="el" href="classnt_1_1Value.html">nt::Value</a> &gt;)&gt; setter) override</td></tr>
+<tr class="memdesc:a9e30b25ed632b7ce560e955e02b46342"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a NetworkTableValue property.  <a href="classfrc_1_1SendableBuilderImpl.html#a9e30b25ed632b7ce560e955e02b46342">More...</a><br /></td></tr>
+<tr class="separator:a9e30b25ed632b7ce560e955e02b46342"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab38c33f20d1d78414bded1c4759257fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SendableBuilderImpl.html#ab38c33f20d1d78414bded1c4759257fa">AddSmallStringProperty</a> (std::string_view key, std::function&lt; <a class="el" href="classwpi_1_1StringRef.html">wpi::StringRef</a>(<a class="el" href="classwpi_1_1SmallVectorImpl.html">wpi::SmallVectorImpl</a>&lt; char &gt; &amp;buf)&gt; getter, std::function&lt; void(<a class="el" href="classwpi_1_1StringRef.html">wpi::StringRef</a>)&gt; setter) override</td></tr>
+<tr class="memdesc:ab38c33f20d1d78414bded1c4759257fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a string property (SmallString form).  <a href="classfrc_1_1SendableBuilderImpl.html#ab38c33f20d1d78414bded1c4759257fa">More...</a><br /></td></tr>
+<tr class="separator:ab38c33f20d1d78414bded1c4759257fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aada907d759b727b09927f1ce72fb8c32"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SendableBuilderImpl.html#aada907d759b727b09927f1ce72fb8c32">AddSmallBooleanArrayProperty</a> (std::string_view key, std::function&lt; <a class="el" href="classwpi_1_1ArrayRef.html">wpi::ArrayRef</a>&lt; int &gt;(<a class="el" href="classwpi_1_1SmallVectorImpl.html">wpi::SmallVectorImpl</a>&lt; int &gt; &amp;buf)&gt; getter, std::function&lt; void(<a class="el" href="classwpi_1_1ArrayRef.html">wpi::ArrayRef</a>&lt; int &gt;)&gt; setter) override</td></tr>
+<tr class="memdesc:aada907d759b727b09927f1ce72fb8c32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a boolean array property (SmallVector form).  <a href="classfrc_1_1SendableBuilderImpl.html#aada907d759b727b09927f1ce72fb8c32">More...</a><br /></td></tr>
+<tr class="separator:aada907d759b727b09927f1ce72fb8c32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c67cfb56f94a16105e34492051d7d63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SendableBuilderImpl.html#a3c67cfb56f94a16105e34492051d7d63">AddSmallDoubleArrayProperty</a> (std::string_view key, std::function&lt; <a class="el" href="classwpi_1_1ArrayRef.html">wpi::ArrayRef</a>&lt; double &gt;(<a class="el" href="classwpi_1_1SmallVectorImpl.html">wpi::SmallVectorImpl</a>&lt; double &gt; &amp;buf)&gt; getter, std::function&lt; void(<a class="el" href="classwpi_1_1ArrayRef.html">wpi::ArrayRef</a>&lt; double &gt;)&gt; setter) override</td></tr>
+<tr class="memdesc:a3c67cfb56f94a16105e34492051d7d63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a double array property (SmallVector form).  <a href="classfrc_1_1SendableBuilderImpl.html#a3c67cfb56f94a16105e34492051d7d63">More...</a><br /></td></tr>
+<tr class="separator:a3c67cfb56f94a16105e34492051d7d63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bf07cb170136fed105653ab508fa617"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SendableBuilderImpl.html#a3bf07cb170136fed105653ab508fa617">AddSmallStringArrayProperty</a> (std::string_view key, std::function&lt; <a class="el" href="classwpi_1_1ArrayRef.html">wpi::ArrayRef</a>&lt; std::string &gt;(<a class="el" href="classwpi_1_1SmallVectorImpl.html">wpi::SmallVectorImpl</a>&lt; std::string &gt; &amp;buf)&gt; getter, std::function&lt; void(<a class="el" href="classwpi_1_1ArrayRef.html">wpi::ArrayRef</a>&lt; std::string &gt;)&gt; setter) override</td></tr>
+<tr class="memdesc:a3bf07cb170136fed105653ab508fa617"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a string array property (SmallVector form).  <a href="classfrc_1_1SendableBuilderImpl.html#a3bf07cb170136fed105653ab508fa617">More...</a><br /></td></tr>
+<tr class="separator:a3bf07cb170136fed105653ab508fa617"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50e4a9ca88854ce3952a698b7b66280a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SendableBuilderImpl.html#a50e4a9ca88854ce3952a698b7b66280a">AddSmallRawProperty</a> (std::string_view key, std::function&lt; <a class="el" href="classwpi_1_1StringRef.html">wpi::StringRef</a>(<a class="el" href="classwpi_1_1SmallVectorImpl.html">wpi::SmallVectorImpl</a>&lt; char &gt; &amp;buf)&gt; getter, std::function&lt; void(<a class="el" href="classwpi_1_1StringRef.html">wpi::StringRef</a>)&gt; setter) override</td></tr>
+<tr class="memdesc:a50e4a9ca88854ce3952a698b7b66280a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a raw property (SmallVector form).  <a href="classfrc_1_1SendableBuilderImpl.html#a50e4a9ca88854ce3952a698b7b66280a">More...</a><br /></td></tr>
+<tr class="separator:a50e4a9ca88854ce3952a698b7b66280a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a10373255604c517c2c0702dd36cfd9e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a10373255604c517c2c0702dd36cfd9e3">&#9670;&nbsp;</a></span>AddBooleanArrayProperty()</h2>
+<a id="aa8a8af9fe9f3dbd66e0b0623f0d5bca7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8a8af9fe9f3dbd66e0b0623f0d5bca7">&#9670;&nbsp;</a></span>AddBooleanArrayProperty()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -217,7 +217,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         <tr>
           <td class="memname">void frc::SendableBuilderImpl::AddBooleanArrayProperty </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>
@@ -255,12 +255,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classfrc_1_1SendableBuilder.html#a7e4a95442bda5c690252e7a8ad8d6c22">frc::SendableBuilder</a>.</p>
+<p>Implements <a class="el" href="classfrc_1_1SendableBuilder.html#aa52668ae1d54f528cf2c9adcc862062c">frc::SendableBuilder</a>.</p>
 
 </div>
 </div>
-<a id="ab8c50a41c986a784770e0f35b62c0764"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab8c50a41c986a784770e0f35b62c0764">&#9670;&nbsp;</a></span>AddBooleanProperty()</h2>
+<a id="a428b78bf15576862409edcd1e4118099"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a428b78bf15576862409edcd1e4118099">&#9670;&nbsp;</a></span>AddBooleanProperty()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -271,7 +271,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         <tr>
           <td class="memname">void frc::SendableBuilderImpl::AddBooleanProperty </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>
@@ -309,12 +309,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classfrc_1_1SendableBuilder.html#aee83a7b80a70f1719faf8f9da37c5f6f">frc::SendableBuilder</a>.</p>
+<p>Implements <a class="el" href="classfrc_1_1SendableBuilder.html#a2ef5f71edeecfc45fbb8710a3be741ab">frc::SendableBuilder</a>.</p>
 
 </div>
 </div>
-<a id="a83ab7a0b35e603ef72a8af8ba1cd9499"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83ab7a0b35e603ef72a8af8ba1cd9499">&#9670;&nbsp;</a></span>AddDoubleArrayProperty()</h2>
+<a id="a7057c9ced1f05fa0872c08fd59a6a895"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7057c9ced1f05fa0872c08fd59a6a895">&#9670;&nbsp;</a></span>AddDoubleArrayProperty()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -325,7 +325,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         <tr>
           <td class="memname">void frc::SendableBuilderImpl::AddDoubleArrayProperty </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>
@@ -363,12 +363,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classfrc_1_1SendableBuilder.html#a2c3226c696e81cd3db71cf8e2eed27a6">frc::SendableBuilder</a>.</p>
+<p>Implements <a class="el" href="classfrc_1_1SendableBuilder.html#ae60ed83fcc44071e3b6070a8a6ecbf39">frc::SendableBuilder</a>.</p>
 
 </div>
 </div>
-<a id="a5870caf3e603a11492c76e26a12eefa6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5870caf3e603a11492c76e26a12eefa6">&#9670;&nbsp;</a></span>AddDoubleProperty()</h2>
+<a id="a0c36be4292d6ae8b99e0dd39600a52c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c36be4292d6ae8b99e0dd39600a52c9">&#9670;&nbsp;</a></span>AddDoubleProperty()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -379,7 +379,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         <tr>
           <td class="memname">void frc::SendableBuilderImpl::AddDoubleProperty </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>
@@ -417,12 +417,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classfrc_1_1SendableBuilder.html#a414bd365cc0893b370bec7a95dc6fb75">frc::SendableBuilder</a>.</p>
+<p>Implements <a class="el" href="classfrc_1_1SendableBuilder.html#a9f0e9f3ad5ef88d0ef036db2c97bbc6a">frc::SendableBuilder</a>.</p>
 
 </div>
 </div>
-<a id="acea04228cd93928cf151485c7b028817"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acea04228cd93928cf151485c7b028817">&#9670;&nbsp;</a></span>AddRawProperty()</h2>
+<a id="a0d6e7fd165387fdd9df83eaf104c591b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d6e7fd165387fdd9df83eaf104c591b">&#9670;&nbsp;</a></span>AddRawProperty()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -433,7 +433,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         <tr>
           <td class="memname">void frc::SendableBuilderImpl::AddRawProperty </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>
@@ -471,12 +471,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classfrc_1_1SendableBuilder.html#a2712b3b1a9349257425d8adb431b2826">frc::SendableBuilder</a>.</p>
+<p>Implements <a class="el" href="classfrc_1_1SendableBuilder.html#a2b932ccc439080c29039e66884e4abbd">frc::SendableBuilder</a>.</p>
 
 </div>
 </div>
-<a id="aba9e66cf9cadb7805ae0b1ed92f7c5a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba9e66cf9cadb7805ae0b1ed92f7c5a0">&#9670;&nbsp;</a></span>AddSmallBooleanArrayProperty()</h2>
+<a id="aada907d759b727b09927f1ce72fb8c32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aada907d759b727b09927f1ce72fb8c32">&#9670;&nbsp;</a></span>AddSmallBooleanArrayProperty()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -487,7 +487,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         <tr>
           <td class="memname">void frc::SendableBuilderImpl::AddSmallBooleanArrayProperty </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>
@@ -525,12 +525,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classfrc_1_1SendableBuilder.html#a148aca295578a3d775f25d8f66ea8f8e">frc::SendableBuilder</a>.</p>
+<p>Implements <a class="el" href="classfrc_1_1SendableBuilder.html#a7e2b8cc2aaf138a318520a9f42cca0fe">frc::SendableBuilder</a>.</p>
 
 </div>
 </div>
-<a id="ab49d2447d200ff99f2e3b920e99a6261"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab49d2447d200ff99f2e3b920e99a6261">&#9670;&nbsp;</a></span>AddSmallDoubleArrayProperty()</h2>
+<a id="a3c67cfb56f94a16105e34492051d7d63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c67cfb56f94a16105e34492051d7d63">&#9670;&nbsp;</a></span>AddSmallDoubleArrayProperty()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -541,7 +541,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         <tr>
           <td class="memname">void frc::SendableBuilderImpl::AddSmallDoubleArrayProperty </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>
@@ -579,12 +579,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classfrc_1_1SendableBuilder.html#ad40af97e47b2ff69c122772d7cf236fd">frc::SendableBuilder</a>.</p>
+<p>Implements <a class="el" href="classfrc_1_1SendableBuilder.html#a8c1549079fb0222552bed2fcf519c476">frc::SendableBuilder</a>.</p>
 
 </div>
 </div>
-<a id="a2f95de70d15e2f21f2caee43dd0121a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f95de70d15e2f21f2caee43dd0121a5">&#9670;&nbsp;</a></span>AddSmallRawProperty()</h2>
+<a id="a50e4a9ca88854ce3952a698b7b66280a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50e4a9ca88854ce3952a698b7b66280a">&#9670;&nbsp;</a></span>AddSmallRawProperty()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -595,7 +595,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         <tr>
           <td class="memname">void frc::SendableBuilderImpl::AddSmallRawProperty </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>
@@ -633,12 +633,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classfrc_1_1SendableBuilder.html#ad18ae56ce04560dd9030ea5ca1ead8c1">frc::SendableBuilder</a>.</p>
+<p>Implements <a class="el" href="classfrc_1_1SendableBuilder.html#a669f6ca99ee92d585caaac0c06f86914">frc::SendableBuilder</a>.</p>
 
 </div>
 </div>
-<a id="a37ce0eafa9576421bf1b450653471e15"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37ce0eafa9576421bf1b450653471e15">&#9670;&nbsp;</a></span>AddSmallStringArrayProperty()</h2>
+<a id="a3bf07cb170136fed105653ab508fa617"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bf07cb170136fed105653ab508fa617">&#9670;&nbsp;</a></span>AddSmallStringArrayProperty()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -649,7 +649,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         <tr>
           <td class="memname">void frc::SendableBuilderImpl::AddSmallStringArrayProperty </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>
@@ -687,12 +687,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classfrc_1_1SendableBuilder.html#a7d33432fc0ad71c84fb6d0412b09bde8">frc::SendableBuilder</a>.</p>
+<p>Implements <a class="el" href="classfrc_1_1SendableBuilder.html#ad00220aa4d705c2198877a14e10c3b2d">frc::SendableBuilder</a>.</p>
 
 </div>
 </div>
-<a id="ab2110310053e8db6bee88766f221fe3c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab2110310053e8db6bee88766f221fe3c">&#9670;&nbsp;</a></span>AddSmallStringProperty()</h2>
+<a id="ab38c33f20d1d78414bded1c4759257fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab38c33f20d1d78414bded1c4759257fa">&#9670;&nbsp;</a></span>AddSmallStringProperty()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -703,7 +703,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         <tr>
           <td class="memname">void frc::SendableBuilderImpl::AddSmallStringProperty </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>
@@ -741,12 +741,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classfrc_1_1SendableBuilder.html#a0ab9abdf2cae31c53d7aab3416ab8437">frc::SendableBuilder</a>.</p>
+<p>Implements <a class="el" href="classfrc_1_1SendableBuilder.html#a383376a6b51553ebd71dd8737d8c5738">frc::SendableBuilder</a>.</p>
 
 </div>
 </div>
-<a id="acd6b58e2f7fd571ef16be363687e90d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd6b58e2f7fd571ef16be363687e90d4">&#9670;&nbsp;</a></span>AddStringArrayProperty()</h2>
+<a id="ab4a892b32da80fd9742d20fae57f43b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4a892b32da80fd9742d20fae57f43b4">&#9670;&nbsp;</a></span>AddStringArrayProperty()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -757,7 +757,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         <tr>
           <td class="memname">void frc::SendableBuilderImpl::AddStringArrayProperty </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>
@@ -795,12 +795,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classfrc_1_1SendableBuilder.html#af47a82c7c9bdc0b4fa0a504b04be8a20">frc::SendableBuilder</a>.</p>
+<p>Implements <a class="el" href="classfrc_1_1SendableBuilder.html#a798f64a9cda9aafce76a53a7ff615d8e">frc::SendableBuilder</a>.</p>
 
 </div>
 </div>
-<a id="abaa86b0ff42f7692d171e3dd4c94137b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abaa86b0ff42f7692d171e3dd4c94137b">&#9670;&nbsp;</a></span>AddStringProperty()</h2>
+<a id="ac5ad4d3212996e4385137b414bbfe101"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5ad4d3212996e4385137b414bbfe101">&#9670;&nbsp;</a></span>AddStringProperty()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -811,7 +811,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         <tr>
           <td class="memname">void frc::SendableBuilderImpl::AddStringProperty </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>
@@ -849,12 +849,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classfrc_1_1SendableBuilder.html#a519c651746c16372eaed08c2c7fb5b74">frc::SendableBuilder</a>.</p>
+<p>Implements <a class="el" href="classfrc_1_1SendableBuilder.html#a6ac5910fe5d48ae7eca9272903f25f5b">frc::SendableBuilder</a>.</p>
 
 </div>
 </div>
-<a id="a4788aa021728780cb68ae05b824112dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4788aa021728780cb68ae05b824112dc">&#9670;&nbsp;</a></span>AddValueProperty()</h2>
+<a id="a9e30b25ed632b7ce560e955e02b46342"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e30b25ed632b7ce560e955e02b46342">&#9670;&nbsp;</a></span>AddValueProperty()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -865,7 +865,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         <tr>
           <td class="memname">void frc::SendableBuilderImpl::AddValueProperty </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>
@@ -903,12 +903,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classfrc_1_1SendableBuilder.html#aef4c8936bfa505c20318332f84045bae">frc::SendableBuilder</a>.</p>
+<p>Implements <a class="el" href="classfrc_1_1SendableBuilder.html#a67bbe5c62f0341a8c7ae8cb3bcebdbc3">frc::SendableBuilder</a>.</p>
 
 </div>
 </div>
-<a id="afee5a77930fb27c3505ffbba20833cca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afee5a77930fb27c3505ffbba20833cca">&#9670;&nbsp;</a></span>GetEntry()</h2>
+<a id="a637e6d55cbc7be1fbc6be3f7cc55fe9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a637e6d55cbc7be1fbc6be3f7cc55fe9b">&#9670;&nbsp;</a></span>GetEntry()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -919,7 +919,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         <tr>
           <td class="memname"><a class="el" href="classnt_1_1NetworkTableEntry.html">nt::NetworkTableEntry</a> frc::SendableBuilderImpl::GetEntry </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>key</em></td><td>)</td>
           <td></td>
         </tr>
@@ -941,7 +941,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Network table entry </dd></dl>
 
-<p>Implements <a class="el" href="classfrc_1_1SendableBuilder.html#ad1a1a796972d961323b5d88d11359781">frc::SendableBuilder</a>.</p>
+<p>Implements <a class="el" href="classfrc_1_1SendableBuilder.html#a8ab5e99579d95b5c86db7e6dfb56b59b">frc::SendableBuilder</a>.</p>
 
 </div>
 </div>
@@ -1089,8 +1089,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a id="a8614baecb8e69a660b292784eb1dcf19"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8614baecb8e69a660b292784eb1dcf19">&#9670;&nbsp;</a></span>SetSmartDashboardType()</h2>
+<a id="a319c3f94772db63de793021c7ab826fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a319c3f94772db63de793021c7ab826fb">&#9670;&nbsp;</a></span>SetSmartDashboardType()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1101,7 +1101,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         <tr>
           <td class="memname">void frc::SendableBuilderImpl::SetSmartDashboardType </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>type</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1121,7 +1121,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classfrc_1_1SendableBuilder.html#a86559e9838c5cbcacf71f318599e3e15">frc::SendableBuilder</a>.</p>
+<p>Implements <a class="el" href="classfrc_1_1SendableBuilder.html#aed6e5c8b32313a7f79f6d494748fbb06">frc::SendableBuilder</a>.</p>
 
 </div>
 </div>
@@ -1176,7 +1176,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><div class="memdoc">
 
 <p>Set the function that should be called to update the network table for things other than properties. </p>
-<p>Note this function is not passed the network table object; instead it should use the entry handles returned by <a class="el" href="classfrc_1_1SendableBuilderImpl.html#afee5a77930fb27c3505ffbba20833cca" title="Add a property without getters or setters.">GetEntry()</a>.</p>
+<p>Note this function is not passed the network table object; instead it should use the entry handles returned by <a class="el" href="classfrc_1_1SendableBuilderImpl.html#a637e6d55cbc7be1fbc6be3f7cc55fe9b" title="Add a property without getters or setters.">GetEntry()</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">func</td><td>function </td></tr>
@@ -1237,7 +1237,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1SendableBuilderImpl.html">SendableBuilderImpl</a></li>
-    <li class="footer">Generated on Wed May 26 2021 14:27:25 for WPILibC++ by
+    <li class="footer">Generated on Thu May 27 2021 00:46:06 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

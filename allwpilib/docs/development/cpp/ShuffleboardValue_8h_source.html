@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-75-g50915cb</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-76-g4e2c305</span>
    </div>
   </td>
  </tr>
@@ -101,52 +101,44 @@ $(document).ready(function(){initNavTree('ShuffleboardValue_8h_source.html','');
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;networktables/NetworkTable.h&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;wpi/SmallVector.h&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;wpi/StringRef.h&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span>frc {</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classfrc_1_1ShuffleboardValue.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1ShuffleboardValue.html">ShuffleboardValue</a> {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc_1_1ShuffleboardValue.html">ShuffleboardValue</a>(<span class="keyword">const</span> <a class="code" href="classwpi_1_1Twine.html">wpi::Twine</a>&amp; title) {</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="classwpi_1_1SmallVector.html">wpi::SmallVector&lt;char, 16&gt;</a> storage;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    m_title = title.<a class="code" href="classwpi_1_1Twine.html#a8b2ff9b14e9962e7e0fcf229b864cb72">toStringRef</a>(storage);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  }</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classfrc_1_1ShuffleboardValue.html">ShuffleboardValue</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classfrc_1_1ShuffleboardValue.html#abc74a50e7af48284c5d6419c37bbfd9b">   28</a></span>&#160;  <a class="code" href="classwpi_1_1StringRef.html">wpi::StringRef</a> <a class="code" href="classfrc_1_1ShuffleboardValue.html#abc74a50e7af48284c5d6419c37bbfd9b">GetTitle</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_title; }</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classfrc_1_1ShuffleboardValue.html#a5312b0a46e5a8bc55513c56d1a00d161">   43</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1ShuffleboardValue.html#a5312b0a46e5a8bc55513c56d1a00d161">BuildInto</a>(std::shared_ptr&lt;nt::NetworkTable&gt; parentTable,</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                         std::shared_ptr&lt;nt::NetworkTable&gt; metaTable) = 0;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classfrc_1_1ShuffleboardValue.html#a8cdd383ae1960e9fb1341093143ef3ed">   53</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1ShuffleboardValue.html#a8cdd383ae1960e9fb1341093143ef3ed">EnableIfActuator</a>() {}</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classfrc_1_1ShuffleboardValue.html#afdc5003feb12e91b64536cf42bb390e5">   62</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1ShuffleboardValue.html#afdc5003feb12e91b64536cf42bb390e5">DisableIfActuator</a>() {}</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;string_view&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;networktables/NetworkTable.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span>frc {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classfrc_1_1ShuffleboardValue.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1ShuffleboardValue.html">ShuffleboardValue</a> {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc_1_1ShuffleboardValue.html">ShuffleboardValue</a>(std::string_view title) : m_title(title) {}</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classfrc_1_1ShuffleboardValue.html">ShuffleboardValue</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classfrc_1_1ShuffleboardValue.html#a3185e4c6c7eaa85199e09c4e92a0c301">   24</a></span>&#160;  <span class="keyword">const</span> std::string&amp; <a class="code" href="classfrc_1_1ShuffleboardValue.html#a3185e4c6c7eaa85199e09c4e92a0c301">GetTitle</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_title; }</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classfrc_1_1ShuffleboardValue.html#a5312b0a46e5a8bc55513c56d1a00d161">   39</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1ShuffleboardValue.html#a5312b0a46e5a8bc55513c56d1a00d161">BuildInto</a>(std::shared_ptr&lt;nt::NetworkTable&gt; parentTable,</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                         std::shared_ptr&lt;nt::NetworkTable&gt; metaTable) = 0;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classfrc_1_1ShuffleboardValue.html#a8cdd383ae1960e9fb1341093143ef3ed">   49</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1ShuffleboardValue.html#a8cdd383ae1960e9fb1341093143ef3ed">EnableIfActuator</a>() {}</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classfrc_1_1ShuffleboardValue.html#afdc5003feb12e91b64536cf42bb390e5">   58</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1ShuffleboardValue.html#afdc5003feb12e91b64536cf42bb390e5">DisableIfActuator</a>() {}</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  std::string m_title;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  std::string m_title;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;};</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}  <span class="comment">// namespace frc</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclasswpi_1_1Twine_html_a8b2ff9b14e9962e7e0fcf229b864cb72"><div class="ttname"><a href="classwpi_1_1Twine.html#a8b2ff9b14e9962e7e0fcf229b864cb72">wpi::Twine::toStringRef</a></div><div class="ttdeci">StringRef toStringRef(SmallVectorImpl&lt; char &gt; &amp;Out) const</div><div class="ttdoc">This returns the twine as a single StringRef if it can be represented as such.</div><div class="ttdef"><b>Definition:</b> Twine.h:479</div></div>
-<div class="ttc" id="aclassfrc_1_1ShuffleboardValue_html"><div class="ttname"><a href="classfrc_1_1ShuffleboardValue.html">frc::ShuffleboardValue</a></div><div class="ttdef"><b>Definition:</b> ShuffleboardValue.h:16</div></div>
+<div class="ttc" id="aclassfrc_1_1ShuffleboardValue_html"><div class="ttname"><a href="classfrc_1_1ShuffleboardValue.html">frc::ShuffleboardValue</a></div><div class="ttdef"><b>Definition:</b> ShuffleboardValue.h:15</div></div>
 <div class="ttc" id="aclassfrc_1_1ShuffleboardValue_html_a5312b0a46e5a8bc55513c56d1a00d161"><div class="ttname"><a href="classfrc_1_1ShuffleboardValue.html#a5312b0a46e5a8bc55513c56d1a00d161">frc::ShuffleboardValue::BuildInto</a></div><div class="ttdeci">virtual void BuildInto(std::shared_ptr&lt; nt::NetworkTable &gt; parentTable, std::shared_ptr&lt; nt::NetworkTable &gt; metaTable)=0</div><div class="ttdoc">Builds the entries for this value.</div></div>
-<div class="ttc" id="aclasswpi_1_1StringRef_html"><div class="ttname"><a href="classwpi_1_1StringRef.html">wpi::StringRef</a></div><div class="ttdoc">StringRef - Represent a constant reference to a string, i.e.</div><div class="ttdef"><b>Definition:</b> StringRef.h:50</div></div>
-<div class="ttc" id="aclasswpi_1_1SmallVector_html"><div class="ttname"><a href="classwpi_1_1SmallVector.html">wpi::SmallVector</a></div><div class="ttdoc">This is a 'vector' (really, a variable-sized array), optimized for the case when the array is small.</div><div class="ttdef"><b>Definition:</b> SmallVector.h:856</div></div>
-<div class="ttc" id="aclassfrc_1_1ShuffleboardValue_html_a8cdd383ae1960e9fb1341093143ef3ed"><div class="ttname"><a href="classfrc_1_1ShuffleboardValue.html#a8cdd383ae1960e9fb1341093143ef3ed">frc::ShuffleboardValue::EnableIfActuator</a></div><div class="ttdeci">virtual void EnableIfActuator()</div><div class="ttdoc">Enables user control of this widget in the Shuffleboard application.</div><div class="ttdef"><b>Definition:</b> ShuffleboardValue.h:53</div></div>
-<div class="ttc" id="aclasswpi_1_1Twine_html"><div class="ttname"><a href="classwpi_1_1Twine.html">wpi::Twine</a></div><div class="ttdoc">Twine - A lightweight data structure for efficiently representing the concatenation of temporary valu...</div><div class="ttdef"><b>Definition:</b> Twine.h:86</div></div>
-<div class="ttc" id="aclassfrc_1_1ShuffleboardValue_html_abc74a50e7af48284c5d6419c37bbfd9b"><div class="ttname"><a href="classfrc_1_1ShuffleboardValue.html#abc74a50e7af48284c5d6419c37bbfd9b">frc::ShuffleboardValue::GetTitle</a></div><div class="ttdeci">wpi::StringRef GetTitle() const</div><div class="ttdoc">Gets the title of this Shuffleboard value.</div><div class="ttdef"><b>Definition:</b> ShuffleboardValue.h:28</div></div>
-<div class="ttc" id="aclassfrc_1_1ShuffleboardValue_html_afdc5003feb12e91b64536cf42bb390e5"><div class="ttname"><a href="classfrc_1_1ShuffleboardValue.html#afdc5003feb12e91b64536cf42bb390e5">frc::ShuffleboardValue::DisableIfActuator</a></div><div class="ttdeci">virtual void DisableIfActuator()</div><div class="ttdoc">Disables user control of this widget in the Shuffleboard application.</div><div class="ttdef"><b>Definition:</b> ShuffleboardValue.h:62</div></div>
+<div class="ttc" id="aclassfrc_1_1ShuffleboardValue_html_a3185e4c6c7eaa85199e09c4e92a0c301"><div class="ttname"><a href="classfrc_1_1ShuffleboardValue.html#a3185e4c6c7eaa85199e09c4e92a0c301">frc::ShuffleboardValue::GetTitle</a></div><div class="ttdeci">const std::string &amp; GetTitle() const</div><div class="ttdoc">Gets the title of this Shuffleboard value.</div><div class="ttdef"><b>Definition:</b> ShuffleboardValue.h:24</div></div>
+<div class="ttc" id="aclassfrc_1_1ShuffleboardValue_html_a8cdd383ae1960e9fb1341093143ef3ed"><div class="ttname"><a href="classfrc_1_1ShuffleboardValue.html#a8cdd383ae1960e9fb1341093143ef3ed">frc::ShuffleboardValue::EnableIfActuator</a></div><div class="ttdeci">virtual void EnableIfActuator()</div><div class="ttdoc">Enables user control of this widget in the Shuffleboard application.</div><div class="ttdef"><b>Definition:</b> ShuffleboardValue.h:49</div></div>
+<div class="ttc" id="aclassfrc_1_1ShuffleboardValue_html_afdc5003feb12e91b64536cf42bb390e5"><div class="ttname"><a href="classfrc_1_1ShuffleboardValue.html#afdc5003feb12e91b64536cf42bb390e5">frc::ShuffleboardValue::DisableIfActuator</a></div><div class="ttdeci">virtual void DisableIfActuator()</div><div class="ttdoc">Disables user control of this widget in the Shuffleboard application.</div><div class="ttdef"><b>Definition:</b> ShuffleboardValue.h:58</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_dca1c19c73302e87d1cbe8eae641dd78.html">shuffleboard</a></li><li class="navelem"><b>ShuffleboardValue.h</b></li>
-    <li class="footer">Generated on Wed May 26 2021 14:27:21 for WPILibC++ by
+    <li class="footer">Generated on Thu May 27 2021 00:46:03 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

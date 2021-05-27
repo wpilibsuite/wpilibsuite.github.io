@@ -8,7 +8,7 @@ var classfrc2_1_1CommandBase =
     [ "GetRequirements", "classfrc2_1_1CommandBase.html#a271292eed7dfb894e191a936fb1b1be7", null ],
     [ "GetSubsystem", "classfrc2_1_1CommandBase.html#acd23702bf1d4155eda6c071e1aa9bdaf", null ],
     [ "InitSendable", "classfrc2_1_1CommandBase.html#a2c37b5f7e5fe388e1a15b759573abb3c", null ],
-    [ "SetName", "classfrc2_1_1CommandBase.html#a45191e761808d301b62c58f74f900681", null ],
-    [ "SetSubsystem", "classfrc2_1_1CommandBase.html#a9c49c6c497f9cd73e401c014e023c372", null ],
+    [ "SetName", "classfrc2_1_1CommandBase.html#a75fa3f1baf64ecde0a946e4da4bbee18", null ],
+    [ "SetSubsystem", "classfrc2_1_1CommandBase.html#ae03b1c6ce3a67b2ba0b401e6f5fdb18b", null ],
     [ "m_requirements", "classfrc2_1_1CommandBase.html#a48dd8f10481cd16e75fb9c6cb49ccbb6", null ]
 ];

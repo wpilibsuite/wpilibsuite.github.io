@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-75-g50915cb</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-76-g4e2c305</span>
    </div>
   </td>
  </tr>
@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('wpilibOldCommands_2src_2main_2native_2
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;wpi/Twine.h&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;string_view&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;frc/commands/Command.h&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
@@ -109,7 +109,7 @@ $(document).ready(function(){initNavTree('wpilibOldCommands_2src_2main_2native_2
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classfrc_1_1WaitUntilCommand.html#aa004d841492df00580c4d9495ecbafe1">   23</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc_1_1WaitUntilCommand.html#aa004d841492df00580c4d9495ecbafe1">WaitUntilCommand</a>(<span class="keywordtype">double</span> time);</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <a class="code" href="classfrc_1_1WaitUntilCommand.html#aa004d841492df00580c4d9495ecbafe1">WaitUntilCommand</a>(<span class="keyword">const</span> <a class="code" href="classwpi_1_1Twine.html">wpi::Twine</a>&amp; name, <span class="keywordtype">double</span> time);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <a class="code" href="classfrc_1_1WaitUntilCommand.html#aa004d841492df00580c4d9495ecbafe1">WaitUntilCommand</a>(std::string_view name, <span class="keywordtype">double</span> time);</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  ~<a class="code" href="classfrc_1_1WaitUntilCommand.html">WaitUntilCommand</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
@@ -130,12 +130,11 @@ $(document).ready(function(){initNavTree('wpilibOldCommands_2src_2main_2native_2
 <div class="ttc" id="aclassfrc_1_1Command_html"><div class="ttname"><a href="classfrc_1_1Command.html">frc::Command</a></div><div class="ttdoc">The Command class is at the very core of the entire command framework.</div><div class="ttdef"><b>Definition:</b> Command.h:45</div></div>
 <div class="ttc" id="aclassfrc_1_1WaitUntilCommand_html_aa004d841492df00580c4d9495ecbafe1"><div class="ttname"><a href="classfrc_1_1WaitUntilCommand.html#aa004d841492df00580c4d9495ecbafe1">frc::WaitUntilCommand::WaitUntilCommand</a></div><div class="ttdeci">WaitUntilCommand(double time)</div><div class="ttdoc">A WaitCommand will wait until a certain match time before finishing.</div></div>
 <div class="ttc" id="aclassfrc_1_1WaitUntilCommand_html_abc82f60b26128e63dad702cf6bec2bca"><div class="ttname"><a href="classfrc_1_1WaitUntilCommand.html#abc82f60b26128e63dad702cf6bec2bca">frc::WaitUntilCommand::IsFinished</a></div><div class="ttdeci">bool IsFinished() override</div><div class="ttdoc">Check if we've reached the actual finish time.</div></div>
-<div class="ttc" id="aclasswpi_1_1Twine_html"><div class="ttname"><a href="classwpi_1_1Twine.html">wpi::Twine</a></div><div class="ttdoc">Twine - A lightweight data structure for efficiently representing the concatenation of temporary valu...</div><div class="ttdef"><b>Definition:</b> Twine.h:86</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_bb1991b688e3fae464f82f03a0e274c4.html">frc</a></li><li class="navelem"><a class="el" href="dir_4ab5eeb5ed54f6cf3cf8c80dd363976a.html">commands</a></li><li class="navelem"><b>WaitUntilCommand.h</b></li>
-    <li class="footer">Generated on Wed May 26 2021 14:27:22 for WPILibC++ by
+    <li class="footer">Generated on Thu May 27 2021 00:46:03 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-75-g50915cb</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-76-g4e2c305</span>
    </div>
   </td>
  </tr>
@@ -104,9 +104,9 @@ $(document).ready(function(){initNavTree('classfrc_1_1ScopedTracer.html',''); in
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7b2ecfd4481cfaa532a01ca025e0fcd8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1ScopedTracer.html#a7b2ecfd4481cfaa532a01ca025e0fcd8">ScopedTracer</a> (<a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> name, <a class="el" href="classwpi_1_1raw__ostream.html">wpi::raw_ostream</a> &amp;os)</td></tr>
-<tr class="memdesc:a7b2ecfd4481cfaa532a01ca025e0fcd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classfrc_1_1ScopedTracer.html" title="A class for keeping track of how much time it takes for different parts of code to execute.">ScopedTracer</a> instance.  <a href="classfrc_1_1ScopedTracer.html#a7b2ecfd4481cfaa532a01ca025e0fcd8">More...</a><br /></td></tr>
-<tr class="separator:a7b2ecfd4481cfaa532a01ca025e0fcd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee290c031a46276bffe1a343cd3a389b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1ScopedTracer.html#aee290c031a46276bffe1a343cd3a389b">ScopedTracer</a> (std::string_view name, <a class="el" href="classwpi_1_1raw__ostream.html">wpi::raw_ostream</a> &amp;os)</td></tr>
+<tr class="memdesc:aee290c031a46276bffe1a343cd3a389b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classfrc_1_1ScopedTracer.html" title="A class for keeping track of how much time it takes for different parts of code to execute.">ScopedTracer</a> instance.  <a href="classfrc_1_1ScopedTracer.html#aee290c031a46276bffe1a343cd3a389b">More...</a><br /></td></tr>
+<tr class="separator:aee290c031a46276bffe1a343cd3a389b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afdc41d4c7414f0c402906acccd5c251f"><td class="memItemLeft" align="right" valign="top"><a id="afdc41d4c7414f0c402906acccd5c251f"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>ScopedTracer</b> (const <a class="el" href="classfrc_1_1ScopedTracer.html">ScopedTracer</a> &amp;)=delete</td></tr>
 <tr class="separator:afdc41d4c7414f0c402906acccd5c251f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -118,8 +118,8 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>A class for keeping track of how much time it takes for different parts of code to execute. </p>
 <p>This class uses RAII, meaning you simply need to create an instance at the top of the block you are timing. After the block finishes execution (i.e. when the <a class="el" href="classfrc_1_1ScopedTracer.html" title="A class for keeping track of how much time it takes for different parts of code to execute.">ScopedTracer</a> instance gets destroyed), the epoch is printed to the provided raw_ostream. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a7b2ecfd4481cfaa532a01ca025e0fcd8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b2ecfd4481cfaa532a01ca025e0fcd8">&#9670;&nbsp;</a></span>ScopedTracer()</h2>
+<a id="aee290c031a46276bffe1a343cd3a389b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee290c031a46276bffe1a343cd3a389b">&#9670;&nbsp;</a></span>ScopedTracer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -127,7 +127,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">frc::ScopedTracer::ScopedTracer </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a>&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
@@ -164,7 +164,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1ScopedTracer.html">ScopedTracer</a></li>
-    <li class="footer">Generated on Wed May 26 2021 14:27:25 for WPILibC++ by
+    <li class="footer">Generated on Thu May 27 2021 00:46:06 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

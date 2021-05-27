@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-75-g50915cb</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-76-g4e2c305</span>
    </div>
   </td>
  </tr>
@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('wpilibOldCommands_2src_2main_2native_2
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;wpi/Twine.h&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;string_view&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;frc/commands/TimedCommand.h&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
@@ -109,7 +109,7 @@ $(document).ready(function(){initNavTree('wpilibOldCommands_2src_2main_2native_2
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classfrc_1_1WaitCommand.html#a10a19a873b7306f29ea75777d6b39eaf">   21</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc_1_1WaitCommand.html#a10a19a873b7306f29ea75777d6b39eaf">WaitCommand</a>(<span class="keywordtype">double</span> timeout);</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classfrc_1_1WaitCommand.html#a4c5e894f178c29225ae610411c2dcfc3">   28</a></span>&#160;  <a class="code" href="classfrc_1_1WaitCommand.html#a4c5e894f178c29225ae610411c2dcfc3">WaitCommand</a>(<span class="keyword">const</span> <a class="code" href="classwpi_1_1Twine.html">wpi::Twine</a>&amp; name, <span class="keywordtype">double</span> timeout);</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classfrc_1_1WaitCommand.html#a4b469a3f271c9ab5e9e59955728b08c8">   28</a></span>&#160;  <a class="code" href="classfrc_1_1WaitCommand.html#a4b469a3f271c9ab5e9e59955728b08c8">WaitCommand</a>(std::string_view name, <span class="keywordtype">double</span> timeout);</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  ~<a class="code" href="classfrc_1_1WaitCommand.html">WaitCommand</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
@@ -121,15 +121,14 @@ $(document).ready(function(){initNavTree('wpilibOldCommands_2src_2main_2native_2
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassfrc_1_1WaitCommand_html_a10a19a873b7306f29ea75777d6b39eaf"><div class="ttname"><a href="classfrc_1_1WaitCommand.html#a10a19a873b7306f29ea75777d6b39eaf">frc::WaitCommand::WaitCommand</a></div><div class="ttdeci">WaitCommand(double timeout)</div><div class="ttdoc">Creates a new WaitCommand with the given name and timeout.</div></div>
-<div class="ttc" id="aclassfrc_1_1WaitCommand_html_a4c5e894f178c29225ae610411c2dcfc3"><div class="ttname"><a href="classfrc_1_1WaitCommand.html#a4c5e894f178c29225ae610411c2dcfc3">frc::WaitCommand::WaitCommand</a></div><div class="ttdeci">WaitCommand(const wpi::Twine &amp;name, double timeout)</div><div class="ttdoc">Creates a new WaitCommand with the given timeout.</div></div>
 <div class="ttc" id="aclassfrc_1_1TimedCommand_html"><div class="ttname"><a href="classfrc_1_1TimedCommand.html">frc::TimedCommand</a></div><div class="ttdoc">A TimedCommand will wait for a timeout before finishing.</div><div class="ttdef"><b>Definition:</b> TimedCommand.h:18</div></div>
-<div class="ttc" id="aclasswpi_1_1Twine_html"><div class="ttname"><a href="classwpi_1_1Twine.html">wpi::Twine</a></div><div class="ttdoc">Twine - A lightweight data structure for efficiently representing the concatenation of temporary valu...</div><div class="ttdef"><b>Definition:</b> Twine.h:86</div></div>
+<div class="ttc" id="aclassfrc_1_1WaitCommand_html_a4b469a3f271c9ab5e9e59955728b08c8"><div class="ttname"><a href="classfrc_1_1WaitCommand.html#a4b469a3f271c9ab5e9e59955728b08c8">frc::WaitCommand::WaitCommand</a></div><div class="ttdeci">WaitCommand(std::string_view name, double timeout)</div><div class="ttdoc">Creates a new WaitCommand with the given timeout.</div></div>
 <div class="ttc" id="aclassfrc_1_1WaitCommand_html"><div class="ttname"><a href="classfrc_1_1WaitCommand.html">frc::WaitCommand</a></div><div class="ttdef"><b>Definition:</b> WaitCommand.h:13</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_bb1991b688e3fae464f82f03a0e274c4.html">frc</a></li><li class="navelem"><a class="el" href="dir_4ab5eeb5ed54f6cf3cf8c80dd363976a.html">commands</a></li><li class="navelem"><b>WaitCommand.h</b></li>
-    <li class="footer">Generated on Wed May 26 2021 14:27:22 for WPILibC++ by
+    <li class="footer">Generated on Thu May 27 2021 00:46:03 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

@@ -80,7 +80,7 @@ var NAVTREEINDEX =
 "classfrc_1_1Mechanism2d.html#a04a37bbe0915126289c3f61165d84552",
 "classfrc_1_1PWM.html#a4667fefcb5a584c1c0049741a4109bc8",
 "classfrc_1_1RobotController.html#a9048aab04cee80ddbef6fb749ccf7b3c",
-"classfrc_1_1SendableRegistry.html#a2ae68c1955b76d43b03c043b2c0af9ee",
+"classfrc_1_1SendableRegistry.html#a1d026eea8070c8ebeeea33dc4a5f217e",
 "classfrc_1_1SmartDashboard.html#a60cd8a4016aa00e8f1d7ba88a650354a",
 "classfrc_1_1Transform2d.html",
 "classfrc_1_1detail_1_1RecordingController.html#a186fa96fdc4a82fc76135850e2bbee47",

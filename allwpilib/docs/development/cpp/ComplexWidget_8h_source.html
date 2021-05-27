@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-75-g50915cb</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-76-g4e2c305</span>
    </div>
   </td>
  </tr>
@@ -100,9 +100,9 @@ $(document).ready(function(){initNavTree('ComplexWidget_8h_source.html',''); ini
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;networktables/NetworkTable.h&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;wpi/Twine.h&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;string_view&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;networktables/NetworkTable.h&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;frc/shuffleboard/ShuffleboardWidget.h&quot;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;frc/smartdashboard/SendableBuilder.h&quot;</span></div>
@@ -115,7 +115,7 @@ $(document).ready(function(){initNavTree('ComplexWidget_8h_source.html',''); ini
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classfrc_1_1ComplexWidget.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1ComplexWidget.html">ComplexWidget</a> final : <span class="keyword">public</span> <a class="code" href="classfrc_1_1ShuffleboardWidget.html">ShuffleboardWidget</a>&lt;ComplexWidget&gt; {</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <a class="code" href="classfrc_1_1ComplexWidget.html">ComplexWidget</a>(<a class="code" href="classfrc_1_1ShuffleboardContainer.html">ShuffleboardContainer</a>&amp; parent, <span class="keyword">const</span> <a class="code" href="classwpi_1_1Twine.html">wpi::Twine</a>&amp; title,</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <a class="code" href="classfrc_1_1ComplexWidget.html">ComplexWidget</a>(<a class="code" href="classfrc_1_1ShuffleboardContainer.html">ShuffleboardContainer</a>&amp; parent, std::string_view title,</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                <a class="code" href="classfrc_1_1Sendable.html">Sendable</a>&amp; sendable);</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classfrc_1_1ComplexWidget.html#a98eab198798b7719f3a3cc330a13e5ab">   30</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1ComplexWidget.html#a98eab198798b7719f3a3cc330a13e5ab">EnableIfActuator</a>() <span class="keyword">override</span>;</div>
@@ -142,12 +142,11 @@ $(document).ready(function(){initNavTree('ComplexWidget_8h_source.html',''); ini
 <div class="ttc" id="aclassfrc_1_1ComplexWidget_html_a98eab198798b7719f3a3cc330a13e5ab"><div class="ttname"><a href="classfrc_1_1ComplexWidget.html#a98eab198798b7719f3a3cc330a13e5ab">frc::ComplexWidget::EnableIfActuator</a></div><div class="ttdeci">void EnableIfActuator() override</div><div class="ttdoc">Enables user control of this widget in the Shuffleboard application.</div></div>
 <div class="ttc" id="aclassfrc_1_1Sendable_html"><div class="ttname"><a href="classfrc_1_1Sendable.html">frc::Sendable</a></div><div class="ttdoc">Interface for Sendable objects.</div><div class="ttdef"><b>Definition:</b> Sendable.h:14</div></div>
 <div class="ttc" id="aclassfrc_1_1ShuffleboardWidget_html"><div class="ttname"><a href="classfrc_1_1ShuffleboardWidget.html">frc::ShuffleboardWidget</a></div><div class="ttdoc">Abstract superclass for widgets.</div><div class="ttdef"><b>Definition:</b> ShuffleboardWidget.h:29</div></div>
-<div class="ttc" id="aclasswpi_1_1Twine_html"><div class="ttname"><a href="classwpi_1_1Twine.html">wpi::Twine</a></div><div class="ttdoc">Twine - A lightweight data structure for efficiently representing the concatenation of temporary valu...</div><div class="ttdef"><b>Definition:</b> Twine.h:86</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_dca1c19c73302e87d1cbe8eae641dd78.html">shuffleboard</a></li><li class="navelem"><b>ComplexWidget.h</b></li>
-    <li class="footer">Generated on Wed May 26 2021 14:27:21 for WPILibC++ by
+    <li class="footer">Generated on Thu May 27 2021 00:46:03 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-75-g50915cb</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-76-g4e2c305</span>
    </div>
   </td>
  </tr>
@@ -100,43 +100,40 @@ $(document).ready(function(){initNavTree('ScopedTracer_8h_source.html',''); init
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;wpi/StringRef.h&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;wpi/Twine.h&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;string_view&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;frc/Tracer.h&quot;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;frc/Tracer.h&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span>wpi {</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">class </span>raw_ostream;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}  <span class="comment">// namespace wpi</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span>frc {</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classfrc_1_1ScopedTracer.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1ScopedTracer.html">ScopedTracer</a> {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classfrc_1_1ScopedTracer.html#a7b2ecfd4481cfaa532a01ca025e0fcd8">   34</a></span>&#160;  <a class="code" href="classfrc_1_1ScopedTracer.html#a7b2ecfd4481cfaa532a01ca025e0fcd8">ScopedTracer</a>(<a class="code" href="classwpi_1_1Twine.html">wpi::Twine</a> name, <a class="code" href="classwpi_1_1raw__ostream.html">wpi::raw_ostream</a>&amp; os);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  ~<a class="code" href="classfrc_1_1ScopedTracer.html">ScopedTracer</a>();</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="classfrc_1_1ScopedTracer.html#a7b2ecfd4481cfaa532a01ca025e0fcd8">ScopedTracer</a>(<span class="keyword">const</span> <a class="code" href="classfrc_1_1ScopedTracer.html">ScopedTracer</a>&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <a class="code" href="classfrc_1_1ScopedTracer.html">ScopedTracer</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="classfrc_1_1ScopedTracer.html">ScopedTracer</a>&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="classfrc_1_1Tracer.html">Tracer</a> m_tracer;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  std::string m_name;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <a class="code" href="classwpi_1_1raw__ostream.html">wpi::raw_ostream</a>&amp; m_os;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;};</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span>wpi {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span>raw_ostream;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}  <span class="comment">// namespace wpi</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span>frc {</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classfrc_1_1ScopedTracer.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1ScopedTracer.html">ScopedTracer</a> {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classfrc_1_1ScopedTracer.html#aee290c031a46276bffe1a343cd3a389b">   32</a></span>&#160;  <a class="code" href="classfrc_1_1ScopedTracer.html#aee290c031a46276bffe1a343cd3a389b">ScopedTracer</a>(std::string_view name, <a class="code" href="classwpi_1_1raw__ostream.html">wpi::raw_ostream</a>&amp; os);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  ~<a class="code" href="classfrc_1_1ScopedTracer.html">ScopedTracer</a>();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <a class="code" href="classfrc_1_1ScopedTracer.html#aee290c031a46276bffe1a343cd3a389b">ScopedTracer</a>(<span class="keyword">const</span> <a class="code" href="classfrc_1_1ScopedTracer.html">ScopedTracer</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <a class="code" href="classfrc_1_1ScopedTracer.html">ScopedTracer</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="classfrc_1_1ScopedTracer.html">ScopedTracer</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="classfrc_1_1Tracer.html">Tracer</a> m_tracer;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  std::string m_name;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="classwpi_1_1raw__ostream.html">wpi::raw_ostream</a>&amp; m_os;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}  <span class="comment">// namespace frc</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassfrc_1_1ScopedTracer_html"><div class="ttname"><a href="classfrc_1_1ScopedTracer.html">frc::ScopedTracer</a></div><div class="ttdoc">A class for keeping track of how much time it takes for different parts of code to execute.</div><div class="ttdef"><b>Definition:</b> ScopedTracer.h:26</div></div>
-<div class="ttc" id="aclassfrc_1_1ScopedTracer_html_a7b2ecfd4481cfaa532a01ca025e0fcd8"><div class="ttname"><a href="classfrc_1_1ScopedTracer.html#a7b2ecfd4481cfaa532a01ca025e0fcd8">frc::ScopedTracer::ScopedTracer</a></div><div class="ttdeci">ScopedTracer(wpi::Twine name, wpi::raw_ostream &amp;os)</div><div class="ttdoc">Constructs a ScopedTracer instance.</div></div>
+<div class="ttc" id="aclassfrc_1_1ScopedTracer_html"><div class="ttname"><a href="classfrc_1_1ScopedTracer.html">frc::ScopedTracer</a></div><div class="ttdoc">A class for keeping track of how much time it takes for different parts of code to execute.</div><div class="ttdef"><b>Definition:</b> ScopedTracer.h:24</div></div>
 <div class="ttc" id="aclassfrc_1_1Tracer_html"><div class="ttname"><a href="classfrc_1_1Tracer.html">frc::Tracer</a></div><div class="ttdoc">A class for keeping track of how much time it takes for different parts of code to execute.</div><div class="ttdef"><b>Definition:</b> Tracer.h:26</div></div>
 <div class="ttc" id="aclasswpi_1_1raw__ostream_html"><div class="ttname"><a href="classwpi_1_1raw__ostream.html">wpi::raw_ostream</a></div><div class="ttdoc">This class implements an extremely fast bulk output stream that can only output to a stream.</div><div class="ttdef"><b>Definition:</b> raw_ostream.h:48</div></div>
-<div class="ttc" id="aclasswpi_1_1Twine_html"><div class="ttname"><a href="classwpi_1_1Twine.html">wpi::Twine</a></div><div class="ttdoc">Twine - A lightweight data structure for efficiently representing the concatenation of temporary valu...</div><div class="ttdef"><b>Definition:</b> Twine.h:86</div></div>
+<div class="ttc" id="aclassfrc_1_1ScopedTracer_html_aee290c031a46276bffe1a343cd3a389b"><div class="ttname"><a href="classfrc_1_1ScopedTracer.html#aee290c031a46276bffe1a343cd3a389b">frc::ScopedTracer::ScopedTracer</a></div><div class="ttdeci">ScopedTracer(std::string_view name, wpi::raw_ostream &amp;os)</div><div class="ttdoc">Constructs a ScopedTracer instance.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><b>ScopedTracer.h</b></li>
-    <li class="footer">Generated on Wed May 26 2021 14:27:21 for WPILibC++ by
+    <li class="footer">Generated on Thu May 27 2021 00:46:03 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

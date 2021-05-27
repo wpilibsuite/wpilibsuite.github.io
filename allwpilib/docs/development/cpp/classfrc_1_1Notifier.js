@@ -9,7 +9,7 @@ var classfrc_1_1Notifier =
     [ "operator=", "classfrc_1_1Notifier.html#ae2ce5e955f935d8c0370034301b91cfd", null ],
     [ "SetHALThreadPriority", "classfrc_1_1Notifier.html#aa927a8e8c60584038c16d07a4f8d5baf", null ],
     [ "SetHandler", "classfrc_1_1Notifier.html#a3744a6ff39272da9ad719fead95bc31a", null ],
-    [ "SetName", "classfrc_1_1Notifier.html#aeed73a809d22908abae08440671c1d59", null ],
+    [ "SetName", "classfrc_1_1Notifier.html#a6965c6242d77fd554c1692b7afa6e625", null ],
     [ "StartPeriodic", "classfrc_1_1Notifier.html#a94134987d0296d5c193246e6543791e0", null ],
     [ "StartPeriodic", "classfrc_1_1Notifier.html#a5bc1b27b2d22ca7de91fe1701746c521", null ],
     [ "StartSingle", "classfrc_1_1Notifier.html#af333fd2ede95b074803d2e15d9ae58b2", null ],

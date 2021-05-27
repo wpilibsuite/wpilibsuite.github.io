@@ -5,6 +5,6 @@ var classfrc2_1_1SubsystemBase =
     [ "GetName", "classfrc2_1_1SubsystemBase.html#ace9a0ee1ee647c28bfb213c39468a06c", null ],
     [ "GetSubsystem", "classfrc2_1_1SubsystemBase.html#a4ebb92a7ecae884542de95e64b8b7bc1", null ],
     [ "InitSendable", "classfrc2_1_1SubsystemBase.html#a9967650ba168dd618d7bef2058df53a6", null ],
-    [ "SetName", "classfrc2_1_1SubsystemBase.html#a05b68c7e2cab60bad25272969830e745", null ],
-    [ "SetSubsystem", "classfrc2_1_1SubsystemBase.html#ac9dfde8fd5426f151708142a64487b1b", null ]
+    [ "SetName", "classfrc2_1_1SubsystemBase.html#a4be073b25104735aa602fe289c30788b", null ],
+    [ "SetSubsystem", "classfrc2_1_1SubsystemBase.html#a01d1b8bab95750dae485f5f2ea322b5f", null ]
 ];
