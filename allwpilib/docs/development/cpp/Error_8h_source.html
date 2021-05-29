@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-79-ge09293a</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-80-g4f7a446</span>
    </div>
   </td>
  </tr>
@@ -745,237 +745,229 @@ $(document).ready(function(){initNavTree('Error_8h_source.html',''); initResizab
 <div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160; </div>
 <div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;<span class="keywordtype">void</span> logAllUnhandledErrors(Error E, raw_ostream &amp;OS, Twine ErrorBanner = {});</div>
 <div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160; </div>
-<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;<span class="keyword">inline</span> std::string toString(Error E) {</div>
-<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;  SmallVector&lt;std::string, 2&gt; Errors;</div>
-<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;  handleAllErrors(std::move(E), [&amp;Errors](<span class="keyword">const</span> ErrorInfoBase &amp;EI) {</div>
-<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;    Errors.push_back(EI.message());</div>
-<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;  });</div>
-<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;  <span class="keywordflow">return</span> join(Errors.begin(), Errors.end(), <span class="stringliteral">&quot;\n&quot;</span>);</div>
-<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;}</div>
-<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160; </div>
-<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> consumeError(Error Err) {</div>
-<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;  handleAllErrors(std::move(Err), [](<span class="keyword">const</span> ErrorInfoBase &amp;) {});</div>
-<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;}</div>
-<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160; </div>
-<div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> errorToBool(Error Err) {</div>
-<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;  <span class="keywordtype">bool</span> IsError = <span class="keyword">static_cast&lt;</span><span class="keywordtype">bool</span><span class="keyword">&gt;</span>(Err);</div>
-<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;  <span class="keywordflow">if</span> (IsError)</div>
-<div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;    consumeError(std::move(Err));</div>
-<div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;  <span class="keywordflow">return</span> IsError;</div>
-<div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160;}</div>
-<div class="line"><a name="l00922"></a><span class="lineno">  922</span>&#160; </div>
-<div class="line"><a name="l00947"></a><span class="lineno"><a class="line" href="classwpi_1_1ErrorAsOutParameter.html">  947</a></span>&#160;<span class="keyword">class </span><a class="code" href="classwpi_1_1ErrorAsOutParameter.html">ErrorAsOutParameter</a> {</div>
-<div class="line"><a name="l00948"></a><span class="lineno">  948</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00949"></a><span class="lineno">  949</span>&#160;  <a class="code" href="classwpi_1_1ErrorAsOutParameter.html">ErrorAsOutParameter</a>(<a class="code" href="classwpi_1_1Error.html">Error</a> *Err) : Err(Err) {</div>
-<div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;    <span class="comment">// Raise the checked bit if Err is success.</span></div>
-<div class="line"><a name="l00951"></a><span class="lineno">  951</span>&#160;    <span class="keywordflow">if</span> (Err)</div>
-<div class="line"><a name="l00952"></a><span class="lineno">  952</span>&#160;      (void)!!*Err;</div>
-<div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160;  }</div>
+<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> consumeError(Error Err) {</div>
+<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;  handleAllErrors(std::move(Err), [](<span class="keyword">const</span> ErrorInfoBase &amp;) {});</div>
+<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;}</div>
+<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160; </div>
+<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> errorToBool(Error Err) {</div>
+<div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;  <span class="keywordtype">bool</span> IsError = <span class="keyword">static_cast&lt;</span><span class="keywordtype">bool</span><span class="keyword">&gt;</span>(Err);</div>
+<div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160;  <span class="keywordflow">if</span> (IsError)</div>
+<div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;    consumeError(std::move(Err));</div>
+<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;  <span class="keywordflow">return</span> IsError;</div>
+<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;}</div>
+<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160; </div>
+<div class="line"><a name="l00937"></a><span class="lineno"><a class="line" href="classwpi_1_1ErrorAsOutParameter.html">  937</a></span>&#160;<span class="keyword">class </span><a class="code" href="classwpi_1_1ErrorAsOutParameter.html">ErrorAsOutParameter</a> {</div>
+<div class="line"><a name="l00938"></a><span class="lineno">  938</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00939"></a><span class="lineno">  939</span>&#160;  <a class="code" href="classwpi_1_1ErrorAsOutParameter.html">ErrorAsOutParameter</a>(<a class="code" href="classwpi_1_1Error.html">Error</a> *Err) : Err(Err) {</div>
+<div class="line"><a name="l00940"></a><span class="lineno">  940</span>&#160;    <span class="comment">// Raise the checked bit if Err is success.</span></div>
+<div class="line"><a name="l00941"></a><span class="lineno">  941</span>&#160;    <span class="keywordflow">if</span> (Err)</div>
+<div class="line"><a name="l00942"></a><span class="lineno">  942</span>&#160;      (void)!!*Err;</div>
+<div class="line"><a name="l00943"></a><span class="lineno">  943</span>&#160;  }</div>
+<div class="line"><a name="l00944"></a><span class="lineno">  944</span>&#160; </div>
+<div class="line"><a name="l00945"></a><span class="lineno">  945</span>&#160;  ~<a class="code" href="classwpi_1_1ErrorAsOutParameter.html">ErrorAsOutParameter</a>() {</div>
+<div class="line"><a name="l00946"></a><span class="lineno">  946</span>&#160;    <span class="comment">// Clear the checked bit.</span></div>
+<div class="line"><a name="l00947"></a><span class="lineno">  947</span>&#160;    <span class="keywordflow">if</span> (Err &amp;&amp; !*Err)</div>
+<div class="line"><a name="l00948"></a><span class="lineno">  948</span>&#160;      *Err = <a class="code" href="classwpi_1_1Error.html#aa1f66aa86aa30d89252a06999dc1bc82">Error::success</a>();</div>
+<div class="line"><a name="l00949"></a><span class="lineno">  949</span>&#160;  }</div>
+<div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160; </div>
+<div class="line"><a name="l00951"></a><span class="lineno">  951</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00952"></a><span class="lineno">  952</span>&#160;  <a class="code" href="classwpi_1_1Error.html">Error</a> *Err;</div>
+<div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160;};</div>
 <div class="line"><a name="l00954"></a><span class="lineno">  954</span>&#160; </div>
-<div class="line"><a name="l00955"></a><span class="lineno">  955</span>&#160;  ~<a class="code" href="classwpi_1_1ErrorAsOutParameter.html">ErrorAsOutParameter</a>() {</div>
-<div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;    <span class="comment">// Clear the checked bit.</span></div>
-<div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160;    <span class="keywordflow">if</span> (Err &amp;&amp; !*Err)</div>
-<div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;      *Err = <a class="code" href="classwpi_1_1Error.html#aa1f66aa86aa30d89252a06999dc1bc82">Error::success</a>();</div>
-<div class="line"><a name="l00959"></a><span class="lineno">  959</span>&#160;  }</div>
-<div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160; </div>
-<div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160;  <a class="code" href="classwpi_1_1Error.html">Error</a> *Err;</div>
-<div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;};</div>
-<div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160; </div>
-<div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00969"></a><span class="lineno"><a class="line" href="classwpi_1_1ExpectedAsOutParameter.html">  969</a></span>&#160;<span class="keyword">class </span><a class="code" href="classwpi_1_1ExpectedAsOutParameter.html">ExpectedAsOutParameter</a> {</div>
-<div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160;  <a class="code" href="classwpi_1_1ExpectedAsOutParameter.html">ExpectedAsOutParameter</a>(<a class="code" href="classwpi_1_1Expected.html">Expected&lt;T&gt;</a> *ValOrErr)</div>
-<div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;    : ValOrErr(ValOrErr) {</div>
-<div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;    <span class="keywordflow">if</span> (ValOrErr)</div>
-<div class="line"><a name="l00974"></a><span class="lineno">  974</span>&#160;      (void)!!*ValOrErr;</div>
-<div class="line"><a name="l00975"></a><span class="lineno">  975</span>&#160;  }</div>
-<div class="line"><a name="l00976"></a><span class="lineno">  976</span>&#160; </div>
-<div class="line"><a name="l00977"></a><span class="lineno">  977</span>&#160;  ~<a class="code" href="classwpi_1_1ExpectedAsOutParameter.html">ExpectedAsOutParameter</a>() {</div>
-<div class="line"><a name="l00978"></a><span class="lineno">  978</span>&#160;    <span class="keywordflow">if</span> (ValOrErr)</div>
-<div class="line"><a name="l00979"></a><span class="lineno">  979</span>&#160;      ValOrErr-&gt;setUnchecked();</div>
-<div class="line"><a name="l00980"></a><span class="lineno">  980</span>&#160;  }</div>
-<div class="line"><a name="l00981"></a><span class="lineno">  981</span>&#160; </div>
-<div class="line"><a name="l00982"></a><span class="lineno">  982</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00983"></a><span class="lineno">  983</span>&#160;  <a class="code" href="classwpi_1_1Expected.html">Expected&lt;T&gt;</a> *ValOrErr;</div>
-<div class="line"><a name="l00984"></a><span class="lineno">  984</span>&#160;};</div>
+<div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00959"></a><span class="lineno"><a class="line" href="classwpi_1_1ExpectedAsOutParameter.html">  959</a></span>&#160;<span class="keyword">class </span><a class="code" href="classwpi_1_1ExpectedAsOutParameter.html">ExpectedAsOutParameter</a> {</div>
+<div class="line"><a name="l00960"></a><span class="lineno">  960</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00961"></a><span class="lineno">  961</span>&#160;  <a class="code" href="classwpi_1_1ExpectedAsOutParameter.html">ExpectedAsOutParameter</a>(<a class="code" href="classwpi_1_1Expected.html">Expected&lt;T&gt;</a> *ValOrErr)</div>
+<div class="line"><a name="l00962"></a><span class="lineno">  962</span>&#160;    : ValOrErr(ValOrErr) {</div>
+<div class="line"><a name="l00963"></a><span class="lineno">  963</span>&#160;    <span class="keywordflow">if</span> (ValOrErr)</div>
+<div class="line"><a name="l00964"></a><span class="lineno">  964</span>&#160;      (void)!!*ValOrErr;</div>
+<div class="line"><a name="l00965"></a><span class="lineno">  965</span>&#160;  }</div>
+<div class="line"><a name="l00966"></a><span class="lineno">  966</span>&#160; </div>
+<div class="line"><a name="l00967"></a><span class="lineno">  967</span>&#160;  ~<a class="code" href="classwpi_1_1ExpectedAsOutParameter.html">ExpectedAsOutParameter</a>() {</div>
+<div class="line"><a name="l00968"></a><span class="lineno">  968</span>&#160;    <span class="keywordflow">if</span> (ValOrErr)</div>
+<div class="line"><a name="l00969"></a><span class="lineno">  969</span>&#160;      ValOrErr-&gt;setUnchecked();</div>
+<div class="line"><a name="l00970"></a><span class="lineno">  970</span>&#160;  }</div>
+<div class="line"><a name="l00971"></a><span class="lineno">  971</span>&#160; </div>
+<div class="line"><a name="l00972"></a><span class="lineno">  972</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00973"></a><span class="lineno">  973</span>&#160;  <a class="code" href="classwpi_1_1Expected.html">Expected&lt;T&gt;</a> *ValOrErr;</div>
+<div class="line"><a name="l00974"></a><span class="lineno">  974</span>&#160;};</div>
+<div class="line"><a name="l00975"></a><span class="lineno">  975</span>&#160; </div>
+<div class="line"><a name="l00981"></a><span class="lineno"><a class="line" href="classwpi_1_1ECError.html">  981</a></span>&#160;<span class="keyword">class </span><a class="code" href="classwpi_1_1ECError.html">ECError</a> : <span class="keyword">public</span> <a class="code" href="classwpi_1_1ErrorInfo.html">ErrorInfo</a>&lt;ECError&gt; {</div>
+<div class="line"><a name="l00982"></a><span class="lineno"><a class="line" href="classwpi_1_1ECError.html#abd3ceb8d2e68a229b0343d162b08bd53">  982</a></span>&#160;  <span class="keyword">friend</span> <a class="code" href="classwpi_1_1Error.html">Error</a> <a class="code" href="classwpi_1_1ECError.html#abd3ceb8d2e68a229b0343d162b08bd53">errorCodeToError</a>(std::error_code);</div>
+<div class="line"><a name="l00983"></a><span class="lineno">  983</span>&#160; </div>
+<div class="line"><a name="l00984"></a><span class="lineno">  984</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> anchor() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00985"></a><span class="lineno">  985</span>&#160; </div>
-<div class="line"><a name="l00991"></a><span class="lineno"><a class="line" href="classwpi_1_1ECError.html">  991</a></span>&#160;<span class="keyword">class </span><a class="code" href="classwpi_1_1ECError.html">ECError</a> : <span class="keyword">public</span> <a class="code" href="classwpi_1_1ErrorInfo.html">ErrorInfo</a>&lt;ECError&gt; {</div>
-<div class="line"><a name="l00992"></a><span class="lineno"><a class="line" href="classwpi_1_1ECError.html#abd3ceb8d2e68a229b0343d162b08bd53">  992</a></span>&#160;  <span class="keyword">friend</span> <a class="code" href="classwpi_1_1Error.html">Error</a> <a class="code" href="classwpi_1_1ECError.html#abd3ceb8d2e68a229b0343d162b08bd53">errorCodeToError</a>(std::error_code);</div>
+<div class="line"><a name="l00986"></a><span class="lineno">  986</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160;  <span class="keywordtype">void</span> setErrorCode(std::error_code EC) { this-&gt;EC = EC; }</div>
+<div class="line"><a name="l00988"></a><span class="lineno"><a class="line" href="classwpi_1_1ECError.html#a4d3c248051dff92a6aa20a9d80ee20cc">  988</a></span>&#160;  std::error_code <a class="code" href="classwpi_1_1ECError.html#a4d3c248051dff92a6aa20a9d80ee20cc">convertToErrorCode</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> EC; }</div>
+<div class="line"><a name="l00989"></a><span class="lineno"><a class="line" href="classwpi_1_1ECError.html#a0f8e5228b2a9b6d76e3317aea1de34b4">  989</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classwpi_1_1ECError.html#a0f8e5228b2a9b6d76e3317aea1de34b4">log</a>(<a class="code" href="classwpi_1_1raw__ostream.html">raw_ostream</a> &amp;OS)<span class="keyword"> const override </span>{ OS &lt;&lt; EC.message(); }</div>
+<div class="line"><a name="l00990"></a><span class="lineno">  990</span>&#160; </div>
+<div class="line"><a name="l00991"></a><span class="lineno">  991</span>&#160;  <span class="comment">// Used by ErrorInfo::classID.</span></div>
+<div class="line"><a name="l00992"></a><span class="lineno">  992</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">char</span> ID;</div>
 <div class="line"><a name="l00993"></a><span class="lineno">  993</span>&#160; </div>
-<div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> anchor() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160; </div>
-<div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00997"></a><span class="lineno">  997</span>&#160;  <span class="keywordtype">void</span> setErrorCode(std::error_code EC) { this-&gt;EC = EC; }</div>
-<div class="line"><a name="l00998"></a><span class="lineno"><a class="line" href="classwpi_1_1ECError.html#a4d3c248051dff92a6aa20a9d80ee20cc">  998</a></span>&#160;  std::error_code <a class="code" href="classwpi_1_1ECError.html#a4d3c248051dff92a6aa20a9d80ee20cc">convertToErrorCode</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> EC; }</div>
-<div class="line"><a name="l00999"></a><span class="lineno"><a class="line" href="classwpi_1_1ECError.html#a0f8e5228b2a9b6d76e3317aea1de34b4">  999</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classwpi_1_1ECError.html#a0f8e5228b2a9b6d76e3317aea1de34b4">log</a>(<a class="code" href="classwpi_1_1raw__ostream.html">raw_ostream</a> &amp;OS)<span class="keyword"> const override </span>{ OS &lt;&lt; EC.message(); }</div>
+<div class="line"><a name="l00994"></a><span class="lineno">  994</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00995"></a><span class="lineno">  995</span>&#160;  <a class="code" href="classwpi_1_1ECError.html">ECError</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00996"></a><span class="lineno">  996</span>&#160;  <a class="code" href="classwpi_1_1ECError.html">ECError</a>(std::error_code EC) : EC(EC) {}</div>
+<div class="line"><a name="l00997"></a><span class="lineno">  997</span>&#160; </div>
+<div class="line"><a name="l00998"></a><span class="lineno">  998</span>&#160;  std::error_code EC;</div>
+<div class="line"><a name="l00999"></a><span class="lineno">  999</span>&#160;};</div>
 <div class="line"><a name="l01000"></a><span class="lineno"> 1000</span>&#160; </div>
-<div class="line"><a name="l01001"></a><span class="lineno"> 1001</span>&#160;  <span class="comment">// Used by ErrorInfo::classID.</span></div>
-<div class="line"><a name="l01002"></a><span class="lineno"> 1002</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">char</span> ID;</div>
-<div class="line"><a name="l01003"></a><span class="lineno"> 1003</span>&#160; </div>
-<div class="line"><a name="l01004"></a><span class="lineno"> 1004</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l01005"></a><span class="lineno"> 1005</span>&#160;  <a class="code" href="classwpi_1_1ECError.html">ECError</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l01006"></a><span class="lineno"> 1006</span>&#160;  <a class="code" href="classwpi_1_1ECError.html">ECError</a>(std::error_code EC) : EC(EC) {}</div>
-<div class="line"><a name="l01007"></a><span class="lineno"> 1007</span>&#160; </div>
-<div class="line"><a name="l01008"></a><span class="lineno"> 1008</span>&#160;  std::error_code EC;</div>
-<div class="line"><a name="l01009"></a><span class="lineno"> 1009</span>&#160;};</div>
-<div class="line"><a name="l01010"></a><span class="lineno"> 1010</span>&#160; </div>
-<div class="line"><a name="l01017"></a><span class="lineno"> 1017</span>&#160;std::error_code inconvertibleErrorCode();</div>
-<div class="line"><a name="l01018"></a><span class="lineno"> 1018</span>&#160; </div>
-<div class="line"><a name="l01020"></a><span class="lineno"> 1020</span>&#160;Error errorCodeToError(std::error_code EC);</div>
-<div class="line"><a name="l01021"></a><span class="lineno"> 1021</span>&#160; </div>
-<div class="line"><a name="l01026"></a><span class="lineno"> 1026</span>&#160;std::error_code errorToErrorCode(Error Err);</div>
-<div class="line"><a name="l01027"></a><span class="lineno"> 1027</span>&#160; </div>
-<div class="line"><a name="l01029"></a><span class="lineno"> 1029</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; Expected&lt;T&gt; errorOrToExpected(ErrorOr&lt;T&gt; &amp;&amp;EO) {</div>
-<div class="line"><a name="l01030"></a><span class="lineno"> 1030</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">auto</span> EC = EO.getError())</div>
-<div class="line"><a name="l01031"></a><span class="lineno"> 1031</span>&#160;    <span class="keywordflow">return</span> errorCodeToError(EC);</div>
-<div class="line"><a name="l01032"></a><span class="lineno"> 1032</span>&#160;  <span class="keywordflow">return</span> std::move(*EO);</div>
-<div class="line"><a name="l01033"></a><span class="lineno"> 1033</span>&#160;}</div>
-<div class="line"><a name="l01034"></a><span class="lineno"> 1034</span>&#160; </div>
-<div class="line"><a name="l01036"></a><span class="lineno"> 1036</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; ErrorOr&lt;T&gt; expectedToErrorOr(Expected&lt;T&gt; &amp;&amp;E) {</div>
-<div class="line"><a name="l01037"></a><span class="lineno"> 1037</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">auto</span> Err = E.takeError())</div>
-<div class="line"><a name="l01038"></a><span class="lineno"> 1038</span>&#160;    <span class="keywordflow">return</span> errorToErrorCode(std::move(Err));</div>
-<div class="line"><a name="l01039"></a><span class="lineno"> 1039</span>&#160;  <span class="keywordflow">return</span> std::move(*E);</div>
-<div class="line"><a name="l01040"></a><span class="lineno"> 1040</span>&#160;}</div>
-<div class="line"><a name="l01041"></a><span class="lineno"> 1041</span>&#160; </div>
-<div class="line"><a name="l01066"></a><span class="lineno"><a class="line" href="classwpi_1_1StringError.html"> 1066</a></span>&#160;<span class="keyword">class </span><a class="code" href="classwpi_1_1StringError.html">StringError</a> : <span class="keyword">public</span> <a class="code" href="classwpi_1_1ErrorInfo.html">ErrorInfo</a>&lt;StringError&gt; {</div>
-<div class="line"><a name="l01067"></a><span class="lineno"> 1067</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l01068"></a><span class="lineno"> 1068</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">char</span> ID;</div>
-<div class="line"><a name="l01069"></a><span class="lineno"> 1069</span>&#160; </div>
-<div class="line"><a name="l01070"></a><span class="lineno"> 1070</span>&#160;  <span class="comment">// Prints EC + S and converts to EC</span></div>
-<div class="line"><a name="l01071"></a><span class="lineno"> 1071</span>&#160;  <a class="code" href="classwpi_1_1StringError.html">StringError</a>(std::error_code EC, <span class="keyword">const</span> <a class="code" href="classwpi_1_1Twine.html">Twine</a> &amp;S = <a class="code" href="classwpi_1_1Twine.html">Twine</a>());</div>
-<div class="line"><a name="l01072"></a><span class="lineno"> 1072</span>&#160; </div>
-<div class="line"><a name="l01073"></a><span class="lineno"> 1073</span>&#160;  <span class="comment">// Prints S and converts to EC</span></div>
-<div class="line"><a name="l01074"></a><span class="lineno"> 1074</span>&#160;  <a class="code" href="classwpi_1_1StringError.html">StringError</a>(<span class="keyword">const</span> <a class="code" href="classwpi_1_1Twine.html">Twine</a> &amp;S, std::error_code EC);</div>
-<div class="line"><a name="l01075"></a><span class="lineno"> 1075</span>&#160; </div>
-<div class="line"><a name="l01076"></a><span class="lineno"><a class="line" href="classwpi_1_1StringError.html#a1dd05d7cb6e28a8b5b03e49c8c4263bd"> 1076</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classwpi_1_1StringError.html#a1dd05d7cb6e28a8b5b03e49c8c4263bd">log</a>(<a class="code" href="classwpi_1_1raw__ostream.html">raw_ostream</a> &amp;OS) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l01077"></a><span class="lineno"><a class="line" href="classwpi_1_1StringError.html#a581b5e60ea4199c7011a48b17b5b2698"> 1077</a></span>&#160;  std::error_code <a class="code" href="classwpi_1_1StringError.html#a581b5e60ea4199c7011a48b17b5b2698">convertToErrorCode</a>() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l01078"></a><span class="lineno"> 1078</span>&#160; </div>
-<div class="line"><a name="l01079"></a><span class="lineno"> 1079</span>&#160;  <span class="keyword">const</span> std::string &amp;getMessage()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> Msg; }</div>
-<div class="line"><a name="l01080"></a><span class="lineno"> 1080</span>&#160; </div>
-<div class="line"><a name="l01081"></a><span class="lineno"> 1081</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l01082"></a><span class="lineno"> 1082</span>&#160;  std::string Msg;</div>
-<div class="line"><a name="l01083"></a><span class="lineno"> 1083</span>&#160;  std::error_code EC;</div>
-<div class="line"><a name="l01084"></a><span class="lineno"> 1084</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">bool</span> PrintMsgOnly = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l01085"></a><span class="lineno"> 1085</span>&#160;};</div>
+<div class="line"><a name="l01007"></a><span class="lineno"> 1007</span>&#160;std::error_code inconvertibleErrorCode();</div>
+<div class="line"><a name="l01008"></a><span class="lineno"> 1008</span>&#160; </div>
+<div class="line"><a name="l01010"></a><span class="lineno"> 1010</span>&#160;Error errorCodeToError(std::error_code EC);</div>
+<div class="line"><a name="l01011"></a><span class="lineno"> 1011</span>&#160; </div>
+<div class="line"><a name="l01016"></a><span class="lineno"> 1016</span>&#160;std::error_code errorToErrorCode(Error Err);</div>
+<div class="line"><a name="l01017"></a><span class="lineno"> 1017</span>&#160; </div>
+<div class="line"><a name="l01019"></a><span class="lineno"> 1019</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; Expected&lt;T&gt; errorOrToExpected(ErrorOr&lt;T&gt; &amp;&amp;EO) {</div>
+<div class="line"><a name="l01020"></a><span class="lineno"> 1020</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">auto</span> EC = EO.getError())</div>
+<div class="line"><a name="l01021"></a><span class="lineno"> 1021</span>&#160;    <span class="keywordflow">return</span> errorCodeToError(EC);</div>
+<div class="line"><a name="l01022"></a><span class="lineno"> 1022</span>&#160;  <span class="keywordflow">return</span> std::move(*EO);</div>
+<div class="line"><a name="l01023"></a><span class="lineno"> 1023</span>&#160;}</div>
+<div class="line"><a name="l01024"></a><span class="lineno"> 1024</span>&#160; </div>
+<div class="line"><a name="l01026"></a><span class="lineno"> 1026</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; ErrorOr&lt;T&gt; expectedToErrorOr(Expected&lt;T&gt; &amp;&amp;E) {</div>
+<div class="line"><a name="l01027"></a><span class="lineno"> 1027</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">auto</span> Err = E.takeError())</div>
+<div class="line"><a name="l01028"></a><span class="lineno"> 1028</span>&#160;    <span class="keywordflow">return</span> errorToErrorCode(std::move(Err));</div>
+<div class="line"><a name="l01029"></a><span class="lineno"> 1029</span>&#160;  <span class="keywordflow">return</span> std::move(*E);</div>
+<div class="line"><a name="l01030"></a><span class="lineno"> 1030</span>&#160;}</div>
+<div class="line"><a name="l01031"></a><span class="lineno"> 1031</span>&#160; </div>
+<div class="line"><a name="l01056"></a><span class="lineno"><a class="line" href="classwpi_1_1StringError.html"> 1056</a></span>&#160;<span class="keyword">class </span><a class="code" href="classwpi_1_1StringError.html">StringError</a> : <span class="keyword">public</span> <a class="code" href="classwpi_1_1ErrorInfo.html">ErrorInfo</a>&lt;StringError&gt; {</div>
+<div class="line"><a name="l01057"></a><span class="lineno"> 1057</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l01058"></a><span class="lineno"> 1058</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">char</span> ID;</div>
+<div class="line"><a name="l01059"></a><span class="lineno"> 1059</span>&#160; </div>
+<div class="line"><a name="l01060"></a><span class="lineno"> 1060</span>&#160;  <span class="comment">// Prints EC + S and converts to EC</span></div>
+<div class="line"><a name="l01061"></a><span class="lineno"> 1061</span>&#160;  <a class="code" href="classwpi_1_1StringError.html">StringError</a>(std::error_code EC, <span class="keyword">const</span> <a class="code" href="classwpi_1_1Twine.html">Twine</a> &amp;S = <a class="code" href="classwpi_1_1Twine.html">Twine</a>());</div>
+<div class="line"><a name="l01062"></a><span class="lineno"> 1062</span>&#160; </div>
+<div class="line"><a name="l01063"></a><span class="lineno"> 1063</span>&#160;  <span class="comment">// Prints S and converts to EC</span></div>
+<div class="line"><a name="l01064"></a><span class="lineno"> 1064</span>&#160;  <a class="code" href="classwpi_1_1StringError.html">StringError</a>(<span class="keyword">const</span> <a class="code" href="classwpi_1_1Twine.html">Twine</a> &amp;S, std::error_code EC);</div>
+<div class="line"><a name="l01065"></a><span class="lineno"> 1065</span>&#160; </div>
+<div class="line"><a name="l01066"></a><span class="lineno"><a class="line" href="classwpi_1_1StringError.html#a1dd05d7cb6e28a8b5b03e49c8c4263bd"> 1066</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classwpi_1_1StringError.html#a1dd05d7cb6e28a8b5b03e49c8c4263bd">log</a>(<a class="code" href="classwpi_1_1raw__ostream.html">raw_ostream</a> &amp;OS) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l01067"></a><span class="lineno"><a class="line" href="classwpi_1_1StringError.html#a581b5e60ea4199c7011a48b17b5b2698"> 1067</a></span>&#160;  std::error_code <a class="code" href="classwpi_1_1StringError.html#a581b5e60ea4199c7011a48b17b5b2698">convertToErrorCode</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l01068"></a><span class="lineno"> 1068</span>&#160; </div>
+<div class="line"><a name="l01069"></a><span class="lineno"> 1069</span>&#160;  <span class="keyword">const</span> std::string &amp;getMessage()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> Msg; }</div>
+<div class="line"><a name="l01070"></a><span class="lineno"> 1070</span>&#160; </div>
+<div class="line"><a name="l01071"></a><span class="lineno"> 1071</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l01072"></a><span class="lineno"> 1072</span>&#160;  std::string Msg;</div>
+<div class="line"><a name="l01073"></a><span class="lineno"> 1073</span>&#160;  std::error_code EC;</div>
+<div class="line"><a name="l01074"></a><span class="lineno"> 1074</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">bool</span> PrintMsgOnly = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l01075"></a><span class="lineno"> 1075</span>&#160;};</div>
+<div class="line"><a name="l01076"></a><span class="lineno"> 1076</span>&#160; </div>
+<div class="line"><a name="l01078"></a><span class="lineno"> 1078</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Ts&gt;</div>
+<div class="line"><a name="l01079"></a><span class="lineno"> 1079</span>&#160;Error createStringError(std::error_code EC, <span class="keywordtype">char</span> <span class="keyword">const</span> *Fmt,</div>
+<div class="line"><a name="l01080"></a><span class="lineno"> 1080</span>&#160;                        <span class="keyword">const</span> Ts &amp;... Vals) {</div>
+<div class="line"><a name="l01081"></a><span class="lineno"> 1081</span>&#160;  std::string Buffer;</div>
+<div class="line"><a name="l01082"></a><span class="lineno"> 1082</span>&#160;  raw_string_ostream Stream(Buffer);</div>
+<div class="line"><a name="l01083"></a><span class="lineno"> 1083</span>&#160;  Stream &lt;&lt; format(Fmt, Vals...);</div>
+<div class="line"><a name="l01084"></a><span class="lineno"> 1084</span>&#160;  <span class="keywordflow">return</span> make_error&lt;StringError&gt;(Stream.str(), EC);</div>
+<div class="line"><a name="l01085"></a><span class="lineno"> 1085</span>&#160;}</div>
 <div class="line"><a name="l01086"></a><span class="lineno"> 1086</span>&#160; </div>
-<div class="line"><a name="l01088"></a><span class="lineno"> 1088</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Ts&gt;</div>
-<div class="line"><a name="l01089"></a><span class="lineno"> 1089</span>&#160;Error createStringError(std::error_code EC, <span class="keywordtype">char</span> <span class="keyword">const</span> *Fmt,</div>
-<div class="line"><a name="l01090"></a><span class="lineno"> 1090</span>&#160;                        <span class="keyword">const</span> Ts &amp;... Vals) {</div>
-<div class="line"><a name="l01091"></a><span class="lineno"> 1091</span>&#160;  std::string Buffer;</div>
-<div class="line"><a name="l01092"></a><span class="lineno"> 1092</span>&#160;  raw_string_ostream Stream(Buffer);</div>
-<div class="line"><a name="l01093"></a><span class="lineno"> 1093</span>&#160;  Stream &lt;&lt; format(Fmt, Vals...);</div>
-<div class="line"><a name="l01094"></a><span class="lineno"> 1094</span>&#160;  <span class="keywordflow">return</span> make_error&lt;StringError&gt;(Stream.str(), EC);</div>
-<div class="line"><a name="l01095"></a><span class="lineno"> 1095</span>&#160;}</div>
+<div class="line"><a name="l01087"></a><span class="lineno"> 1087</span>&#160;Error createStringError(std::error_code EC, <span class="keywordtype">char</span> <span class="keyword">const</span> *Msg);</div>
+<div class="line"><a name="l01088"></a><span class="lineno"> 1088</span>&#160; </div>
+<div class="line"><a name="l01093"></a><span class="lineno"><a class="line" href="classwpi_1_1FileError.html"> 1093</a></span>&#160;<span class="keyword">class </span><a class="code" href="classwpi_1_1FileError.html">FileError</a> final : <span class="keyword">public</span> <a class="code" href="classwpi_1_1ErrorInfo.html">ErrorInfo</a>&lt;FileError&gt; {</div>
+<div class="line"><a name="l01094"></a><span class="lineno"> 1094</span>&#160; </div>
+<div class="line"><a name="l01095"></a><span class="lineno"> 1095</span>&#160;  <span class="keyword">friend</span> <a class="code" href="classwpi_1_1Error.html">Error</a> <a class="code" href="classwpi_1_1FileError.html#a2531f045c7ca75184d85b51c5a9b3892">createFileError</a>(std::string, <a class="code" href="classwpi_1_1Error.html">Error</a>);</div>
 <div class="line"><a name="l01096"></a><span class="lineno"> 1096</span>&#160; </div>
-<div class="line"><a name="l01097"></a><span class="lineno"> 1097</span>&#160;Error createStringError(std::error_code EC, <span class="keywordtype">char</span> <span class="keyword">const</span> *Msg);</div>
-<div class="line"><a name="l01098"></a><span class="lineno"> 1098</span>&#160; </div>
-<div class="line"><a name="l01103"></a><span class="lineno"><a class="line" href="classwpi_1_1FileError.html"> 1103</a></span>&#160;<span class="keyword">class </span><a class="code" href="classwpi_1_1FileError.html">FileError</a> final : <span class="keyword">public</span> <a class="code" href="classwpi_1_1ErrorInfo.html">ErrorInfo</a>&lt;FileError&gt; {</div>
-<div class="line"><a name="l01104"></a><span class="lineno"> 1104</span>&#160; </div>
-<div class="line"><a name="l01105"></a><span class="lineno"> 1105</span>&#160;  <span class="keyword">friend</span> <a class="code" href="classwpi_1_1Error.html">Error</a> <a class="code" href="classwpi_1_1FileError.html#a2531f045c7ca75184d85b51c5a9b3892">createFileError</a>(std::string, <a class="code" href="classwpi_1_1Error.html">Error</a>);</div>
-<div class="line"><a name="l01106"></a><span class="lineno"> 1106</span>&#160; </div>
-<div class="line"><a name="l01107"></a><span class="lineno"> 1107</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l01108"></a><span class="lineno"><a class="line" href="classwpi_1_1FileError.html#af9b3a2f2fe602fcedfd3d070ab27dd09"> 1108</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classwpi_1_1FileError.html#af9b3a2f2fe602fcedfd3d070ab27dd09">log</a>(<a class="code" href="classwpi_1_1raw__ostream.html">raw_ostream</a> &amp;OS)<span class="keyword"> const override </span>{</div>
-<div class="line"><a name="l01109"></a><span class="lineno"> 1109</span>&#160;    assert(Err &amp;&amp; !FileName.empty() &amp;&amp; <span class="stringliteral">&quot;Trying to log after takeError().&quot;</span>);</div>
-<div class="line"><a name="l01110"></a><span class="lineno"> 1110</span>&#160;    OS &lt;&lt; <span class="stringliteral">&quot;&#39;&quot;</span> &lt;&lt; FileName &lt;&lt; <span class="stringliteral">&quot;&#39;: &quot;</span>;</div>
-<div class="line"><a name="l01111"></a><span class="lineno"> 1111</span>&#160;    Err-&gt;log(OS);</div>
-<div class="line"><a name="l01112"></a><span class="lineno"> 1112</span>&#160;  }</div>
-<div class="line"><a name="l01113"></a><span class="lineno"> 1113</span>&#160; </div>
-<div class="line"><a name="l01114"></a><span class="lineno"> 1114</span>&#160;  <a class="code" href="classwpi_1_1Error.html">Error</a> takeError() { <span class="keywordflow">return</span> <a class="code" href="classwpi_1_1Error.html">Error</a>(std::move(Err)); }</div>
-<div class="line"><a name="l01115"></a><span class="lineno"> 1115</span>&#160; </div>
-<div class="line"><a name="l01116"></a><span class="lineno"><a class="line" href="classwpi_1_1FileError.html#a6f77732e852139be525961030148cbae"> 1116</a></span>&#160;  std::error_code <a class="code" href="classwpi_1_1FileError.html#a6f77732e852139be525961030148cbae">convertToErrorCode</a>() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l01117"></a><span class="lineno"> 1117</span>&#160; </div>
-<div class="line"><a name="l01118"></a><span class="lineno"> 1118</span>&#160;  <span class="comment">// Used by ErrorInfo::classID.</span></div>
-<div class="line"><a name="l01119"></a><span class="lineno"> 1119</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">char</span> ID;</div>
-<div class="line"><a name="l01120"></a><span class="lineno"> 1120</span>&#160; </div>
-<div class="line"><a name="l01121"></a><span class="lineno"> 1121</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l01122"></a><span class="lineno"> 1122</span>&#160;  <a class="code" href="classwpi_1_1FileError.html">FileError</a>(std::string F, std::unique_ptr&lt;ErrorInfoBase&gt; E) {</div>
-<div class="line"><a name="l01123"></a><span class="lineno"> 1123</span>&#160;    assert(E &amp;&amp; <span class="stringliteral">&quot;Cannot create FileError from Error success value.&quot;</span>);</div>
-<div class="line"><a name="l01124"></a><span class="lineno"> 1124</span>&#160;    assert(!F.empty() &amp;&amp;</div>
-<div class="line"><a name="l01125"></a><span class="lineno"> 1125</span>&#160;           <span class="stringliteral">&quot;The file name provided to FileError must not be empty.&quot;</span>);</div>
-<div class="line"><a name="l01126"></a><span class="lineno"> 1126</span>&#160;    FileName = F;</div>
-<div class="line"><a name="l01127"></a><span class="lineno"> 1127</span>&#160;    Err = std::move(E);</div>
-<div class="line"><a name="l01128"></a><span class="lineno"> 1128</span>&#160;  }</div>
-<div class="line"><a name="l01129"></a><span class="lineno"> 1129</span>&#160; </div>
-<div class="line"><a name="l01130"></a><span class="lineno"> 1130</span>&#160;  <span class="keyword">static</span> <a class="code" href="classwpi_1_1Error.html">Error</a> build(std::string F, <a class="code" href="classwpi_1_1Error.html">Error</a> E) {</div>
-<div class="line"><a name="l01131"></a><span class="lineno"> 1131</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classwpi_1_1Error.html">Error</a>(std::unique_ptr&lt;FileError&gt;(<span class="keyword">new</span> <a class="code" href="classwpi_1_1FileError.html">FileError</a>(F, E.takePayload())));</div>
-<div class="line"><a name="l01132"></a><span class="lineno"> 1132</span>&#160;  }</div>
+<div class="line"><a name="l01097"></a><span class="lineno"> 1097</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l01098"></a><span class="lineno"><a class="line" href="classwpi_1_1FileError.html#af9b3a2f2fe602fcedfd3d070ab27dd09"> 1098</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classwpi_1_1FileError.html#af9b3a2f2fe602fcedfd3d070ab27dd09">log</a>(<a class="code" href="classwpi_1_1raw__ostream.html">raw_ostream</a> &amp;OS)<span class="keyword"> const override </span>{</div>
+<div class="line"><a name="l01099"></a><span class="lineno"> 1099</span>&#160;    assert(Err &amp;&amp; !FileName.empty() &amp;&amp; <span class="stringliteral">&quot;Trying to log after takeError().&quot;</span>);</div>
+<div class="line"><a name="l01100"></a><span class="lineno"> 1100</span>&#160;    OS &lt;&lt; <span class="stringliteral">&quot;&#39;&quot;</span> &lt;&lt; FileName &lt;&lt; <span class="stringliteral">&quot;&#39;: &quot;</span>;</div>
+<div class="line"><a name="l01101"></a><span class="lineno"> 1101</span>&#160;    Err-&gt;log(OS);</div>
+<div class="line"><a name="l01102"></a><span class="lineno"> 1102</span>&#160;  }</div>
+<div class="line"><a name="l01103"></a><span class="lineno"> 1103</span>&#160; </div>
+<div class="line"><a name="l01104"></a><span class="lineno"> 1104</span>&#160;  <a class="code" href="classwpi_1_1Error.html">Error</a> takeError() { <span class="keywordflow">return</span> <a class="code" href="classwpi_1_1Error.html">Error</a>(std::move(Err)); }</div>
+<div class="line"><a name="l01105"></a><span class="lineno"> 1105</span>&#160; </div>
+<div class="line"><a name="l01106"></a><span class="lineno"><a class="line" href="classwpi_1_1FileError.html#a6f77732e852139be525961030148cbae"> 1106</a></span>&#160;  std::error_code <a class="code" href="classwpi_1_1FileError.html#a6f77732e852139be525961030148cbae">convertToErrorCode</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l01107"></a><span class="lineno"> 1107</span>&#160; </div>
+<div class="line"><a name="l01108"></a><span class="lineno"> 1108</span>&#160;  <span class="comment">// Used by ErrorInfo::classID.</span></div>
+<div class="line"><a name="l01109"></a><span class="lineno"> 1109</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">char</span> ID;</div>
+<div class="line"><a name="l01110"></a><span class="lineno"> 1110</span>&#160; </div>
+<div class="line"><a name="l01111"></a><span class="lineno"> 1111</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l01112"></a><span class="lineno"> 1112</span>&#160;  <a class="code" href="classwpi_1_1FileError.html">FileError</a>(std::string F, std::unique_ptr&lt;ErrorInfoBase&gt; E) {</div>
+<div class="line"><a name="l01113"></a><span class="lineno"> 1113</span>&#160;    assert(E &amp;&amp; <span class="stringliteral">&quot;Cannot create FileError from Error success value.&quot;</span>);</div>
+<div class="line"><a name="l01114"></a><span class="lineno"> 1114</span>&#160;    assert(!F.empty() &amp;&amp;</div>
+<div class="line"><a name="l01115"></a><span class="lineno"> 1115</span>&#160;           <span class="stringliteral">&quot;The file name provided to FileError must not be empty.&quot;</span>);</div>
+<div class="line"><a name="l01116"></a><span class="lineno"> 1116</span>&#160;    FileName = F;</div>
+<div class="line"><a name="l01117"></a><span class="lineno"> 1117</span>&#160;    Err = std::move(E);</div>
+<div class="line"><a name="l01118"></a><span class="lineno"> 1118</span>&#160;  }</div>
+<div class="line"><a name="l01119"></a><span class="lineno"> 1119</span>&#160; </div>
+<div class="line"><a name="l01120"></a><span class="lineno"> 1120</span>&#160;  <span class="keyword">static</span> <a class="code" href="classwpi_1_1Error.html">Error</a> build(std::string F, <a class="code" href="classwpi_1_1Error.html">Error</a> E) {</div>
+<div class="line"><a name="l01121"></a><span class="lineno"> 1121</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classwpi_1_1Error.html">Error</a>(std::unique_ptr&lt;FileError&gt;(<span class="keyword">new</span> <a class="code" href="classwpi_1_1FileError.html">FileError</a>(F, E.takePayload())));</div>
+<div class="line"><a name="l01122"></a><span class="lineno"> 1122</span>&#160;  }</div>
+<div class="line"><a name="l01123"></a><span class="lineno"> 1123</span>&#160; </div>
+<div class="line"><a name="l01124"></a><span class="lineno"> 1124</span>&#160;  std::string FileName;</div>
+<div class="line"><a name="l01125"></a><span class="lineno"> 1125</span>&#160;  std::unique_ptr&lt;ErrorInfoBase&gt; Err;</div>
+<div class="line"><a name="l01126"></a><span class="lineno"> 1126</span>&#160;};</div>
+<div class="line"><a name="l01127"></a><span class="lineno"> 1127</span>&#160; </div>
+<div class="line"><a name="l01130"></a><span class="lineno"><a class="line" href="classwpi_1_1FileError.html#a2531f045c7ca75184d85b51c5a9b3892"> 1130</a></span>&#160;<span class="keyword">inline</span> <a class="code" href="classwpi_1_1Error.html">Error</a> createFileError(std::string F, <a class="code" href="classwpi_1_1Error.html">Error</a> E) {</div>
+<div class="line"><a name="l01131"></a><span class="lineno"> 1131</span>&#160;  <span class="keywordflow">return</span> FileError::build(F, std::move(E));</div>
+<div class="line"><a name="l01132"></a><span class="lineno"> 1132</span>&#160;}</div>
 <div class="line"><a name="l01133"></a><span class="lineno"> 1133</span>&#160; </div>
-<div class="line"><a name="l01134"></a><span class="lineno"> 1134</span>&#160;  std::string FileName;</div>
-<div class="line"><a name="l01135"></a><span class="lineno"> 1135</span>&#160;  std::unique_ptr&lt;ErrorInfoBase&gt; Err;</div>
-<div class="line"><a name="l01136"></a><span class="lineno"> 1136</span>&#160;};</div>
-<div class="line"><a name="l01137"></a><span class="lineno"> 1137</span>&#160; </div>
-<div class="line"><a name="l01140"></a><span class="lineno"><a class="line" href="classwpi_1_1FileError.html#a2531f045c7ca75184d85b51c5a9b3892"> 1140</a></span>&#160;<span class="keyword">inline</span> <a class="code" href="classwpi_1_1Error.html">Error</a> createFileError(std::string F, <a class="code" href="classwpi_1_1Error.html">Error</a> E) {</div>
-<div class="line"><a name="l01141"></a><span class="lineno"> 1141</span>&#160;  <span class="keywordflow">return</span> FileError::build(F, std::move(E));</div>
-<div class="line"><a name="l01142"></a><span class="lineno"> 1142</span>&#160;}</div>
-<div class="line"><a name="l01143"></a><span class="lineno"> 1143</span>&#160; </div>
-<div class="line"><a name="l01144"></a><span class="lineno"> 1144</span>&#160;<a class="code" href="classwpi_1_1Error.html">Error</a> createFileError(std::string F, <a class="code" href="classwpi_1_1ErrorSuccess.html">ErrorSuccess</a>) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l01145"></a><span class="lineno"> 1145</span>&#160; </div>
-<div class="line"><a name="l01150"></a><span class="lineno"><a class="line" href="classwpi_1_1ExitOnError.html"> 1150</a></span>&#160;<span class="keyword">class </span><a class="code" href="classwpi_1_1ExitOnError.html">ExitOnError</a> {</div>
-<div class="line"><a name="l01151"></a><span class="lineno"> 1151</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l01153"></a><span class="lineno"><a class="line" href="classwpi_1_1ExitOnError.html#aedb6db7e5d071a3f982c740f2f60e0f6"> 1153</a></span>&#160;  <a class="code" href="classwpi_1_1ExitOnError.html#aedb6db7e5d071a3f982c740f2f60e0f6">ExitOnError</a>(std::string Banner = <span class="stringliteral">&quot;&quot;</span>, <span class="keywordtype">int</span> DefaultErrorExitCode = 1)</div>
-<div class="line"><a name="l01154"></a><span class="lineno"> 1154</span>&#160;      : Banner(std::move(Banner)),</div>
-<div class="line"><a name="l01155"></a><span class="lineno"> 1155</span>&#160;        GetExitCode([=](const <a class="code" href="classwpi_1_1Error.html">Error</a> &amp;) { <span class="keywordflow">return</span> DefaultErrorExitCode; }) {}</div>
-<div class="line"><a name="l01156"></a><span class="lineno"> 1156</span>&#160; </div>
-<div class="line"><a name="l01158"></a><span class="lineno"><a class="line" href="classwpi_1_1ExitOnError.html#aef55f80ea974782b8c8a5e20df20618e"> 1158</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classwpi_1_1ExitOnError.html#aef55f80ea974782b8c8a5e20df20618e">setBanner</a>(std::string Banner) { this-&gt;Banner = std::move(Banner); }</div>
-<div class="line"><a name="l01159"></a><span class="lineno"> 1159</span>&#160; </div>
-<div class="line"><a name="l01161"></a><span class="lineno"><a class="line" href="classwpi_1_1ExitOnError.html#a7aef745ff4133bcacfd909bb7435b33f"> 1161</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classwpi_1_1ExitOnError.html#a7aef745ff4133bcacfd909bb7435b33f">setExitCodeMapper</a>(std::function&lt;<span class="keywordtype">int</span>(<span class="keyword">const</span> <a class="code" href="classwpi_1_1Error.html">Error</a> &amp;)&gt; GetExitCode) {</div>
-<div class="line"><a name="l01162"></a><span class="lineno"> 1162</span>&#160;    this-&gt;GetExitCode = std::move(GetExitCode);</div>
+<div class="line"><a name="l01134"></a><span class="lineno"> 1134</span>&#160;<a class="code" href="classwpi_1_1Error.html">Error</a> createFileError(std::string F, <a class="code" href="classwpi_1_1ErrorSuccess.html">ErrorSuccess</a>) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l01135"></a><span class="lineno"> 1135</span>&#160; </div>
+<div class="line"><a name="l01140"></a><span class="lineno"><a class="line" href="classwpi_1_1ExitOnError.html"> 1140</a></span>&#160;<span class="keyword">class </span><a class="code" href="classwpi_1_1ExitOnError.html">ExitOnError</a> {</div>
+<div class="line"><a name="l01141"></a><span class="lineno"> 1141</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l01143"></a><span class="lineno"><a class="line" href="classwpi_1_1ExitOnError.html#aedb6db7e5d071a3f982c740f2f60e0f6"> 1143</a></span>&#160;  <a class="code" href="classwpi_1_1ExitOnError.html#aedb6db7e5d071a3f982c740f2f60e0f6">ExitOnError</a>(std::string Banner = <span class="stringliteral">&quot;&quot;</span>, <span class="keywordtype">int</span> DefaultErrorExitCode = 1)</div>
+<div class="line"><a name="l01144"></a><span class="lineno"> 1144</span>&#160;      : Banner(std::move(Banner)),</div>
+<div class="line"><a name="l01145"></a><span class="lineno"> 1145</span>&#160;        GetExitCode([=](const <a class="code" href="classwpi_1_1Error.html">Error</a> &amp;) { <span class="keywordflow">return</span> DefaultErrorExitCode; }) {}</div>
+<div class="line"><a name="l01146"></a><span class="lineno"> 1146</span>&#160; </div>
+<div class="line"><a name="l01148"></a><span class="lineno"><a class="line" href="classwpi_1_1ExitOnError.html#aef55f80ea974782b8c8a5e20df20618e"> 1148</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classwpi_1_1ExitOnError.html#aef55f80ea974782b8c8a5e20df20618e">setBanner</a>(std::string Banner) { this-&gt;Banner = std::move(Banner); }</div>
+<div class="line"><a name="l01149"></a><span class="lineno"> 1149</span>&#160; </div>
+<div class="line"><a name="l01151"></a><span class="lineno"><a class="line" href="classwpi_1_1ExitOnError.html#a7aef745ff4133bcacfd909bb7435b33f"> 1151</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classwpi_1_1ExitOnError.html#a7aef745ff4133bcacfd909bb7435b33f">setExitCodeMapper</a>(std::function&lt;<span class="keywordtype">int</span>(<span class="keyword">const</span> <a class="code" href="classwpi_1_1Error.html">Error</a> &amp;)&gt; GetExitCode) {</div>
+<div class="line"><a name="l01152"></a><span class="lineno"> 1152</span>&#160;    this-&gt;GetExitCode = std::move(GetExitCode);</div>
+<div class="line"><a name="l01153"></a><span class="lineno"> 1153</span>&#160;  }</div>
+<div class="line"><a name="l01154"></a><span class="lineno"> 1154</span>&#160; </div>
+<div class="line"><a name="l01156"></a><span class="lineno"><a class="line" href="classwpi_1_1ExitOnError.html#aa67caeed69445b4e4d50595a167824c7"> 1156</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classwpi_1_1ExitOnError.html#aa67caeed69445b4e4d50595a167824c7">operator()</a>(<a class="code" href="classwpi_1_1Error.html">Error</a> Err)<span class="keyword"> const </span>{ checkError(std::move(Err)); }</div>
+<div class="line"><a name="l01157"></a><span class="lineno"> 1157</span>&#160; </div>
+<div class="line"><a name="l01160"></a><span class="lineno"><a class="line" href="classwpi_1_1ExitOnError.html#a14ebb673e83aa4a641e23d8d2c474625"> 1160</a></span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; T <a class="code" href="classwpi_1_1ExitOnError.html#a14ebb673e83aa4a641e23d8d2c474625">operator()</a>(<a class="code" href="classwpi_1_1Expected.html">Expected&lt;T&gt;</a> &amp;&amp;E)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l01161"></a><span class="lineno"> 1161</span>&#160;    checkError(E.takeError());</div>
+<div class="line"><a name="l01162"></a><span class="lineno"> 1162</span>&#160;    <span class="keywordflow">return</span> std::move(*E);</div>
 <div class="line"><a name="l01163"></a><span class="lineno"> 1163</span>&#160;  }</div>
 <div class="line"><a name="l01164"></a><span class="lineno"> 1164</span>&#160; </div>
-<div class="line"><a name="l01166"></a><span class="lineno"><a class="line" href="classwpi_1_1ExitOnError.html#aa67caeed69445b4e4d50595a167824c7"> 1166</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classwpi_1_1ExitOnError.html#aa67caeed69445b4e4d50595a167824c7">operator()</a>(<a class="code" href="classwpi_1_1Error.html">Error</a> Err)<span class="keyword"> const </span>{ checkError(std::move(Err)); }</div>
-<div class="line"><a name="l01167"></a><span class="lineno"> 1167</span>&#160; </div>
-<div class="line"><a name="l01170"></a><span class="lineno"><a class="line" href="classwpi_1_1ExitOnError.html#a14ebb673e83aa4a641e23d8d2c474625"> 1170</a></span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; T <a class="code" href="classwpi_1_1ExitOnError.html#a14ebb673e83aa4a641e23d8d2c474625">operator()</a>(<a class="code" href="classwpi_1_1Expected.html">Expected&lt;T&gt;</a> &amp;&amp;E)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l01171"></a><span class="lineno"> 1171</span>&#160;    checkError(E.takeError());</div>
-<div class="line"><a name="l01172"></a><span class="lineno"> 1172</span>&#160;    <span class="keywordflow">return</span> std::move(*E);</div>
-<div class="line"><a name="l01173"></a><span class="lineno"> 1173</span>&#160;  }</div>
-<div class="line"><a name="l01174"></a><span class="lineno"> 1174</span>&#160; </div>
-<div class="line"><a name="l01177"></a><span class="lineno"><a class="line" href="classwpi_1_1ExitOnError.html#ac7716965bec754ed4f8c11cefaed5942"> 1177</a></span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; T&amp; <a class="code" href="classwpi_1_1ExitOnError.html#ac7716965bec754ed4f8c11cefaed5942">operator()</a>(<a class="code" href="classwpi_1_1Expected.html">Expected&lt;T&amp;&gt;</a> &amp;&amp;E)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l01178"></a><span class="lineno"> 1178</span>&#160;    checkError(E.takeError());</div>
-<div class="line"><a name="l01179"></a><span class="lineno"> 1179</span>&#160;    <span class="keywordflow">return</span> *E;</div>
-<div class="line"><a name="l01180"></a><span class="lineno"> 1180</span>&#160;  }</div>
-<div class="line"><a name="l01181"></a><span class="lineno"> 1181</span>&#160; </div>
-<div class="line"><a name="l01182"></a><span class="lineno"> 1182</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l01183"></a><span class="lineno"> 1183</span>&#160;  <span class="keywordtype">void</span> checkError(<a class="code" href="classwpi_1_1Error.html">Error</a> Err)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l01184"></a><span class="lineno"> 1184</span>&#160;    <span class="keywordflow">if</span> (Err) {</div>
-<div class="line"><a name="l01185"></a><span class="lineno"> 1185</span>&#160;      <span class="keywordtype">int</span> ExitCode = GetExitCode(Err);</div>
-<div class="line"><a name="l01186"></a><span class="lineno"> 1186</span>&#160;      logAllUnhandledErrors(std::move(Err), errs(), Banner);</div>
-<div class="line"><a name="l01187"></a><span class="lineno"> 1187</span>&#160;      exit(ExitCode);</div>
-<div class="line"><a name="l01188"></a><span class="lineno"> 1188</span>&#160;    }</div>
-<div class="line"><a name="l01189"></a><span class="lineno"> 1189</span>&#160;  }</div>
-<div class="line"><a name="l01190"></a><span class="lineno"> 1190</span>&#160; </div>
-<div class="line"><a name="l01191"></a><span class="lineno"> 1191</span>&#160;  std::string Banner;</div>
-<div class="line"><a name="l01192"></a><span class="lineno"> 1192</span>&#160;  std::function&lt;int(<span class="keyword">const</span> Error &amp;)&gt; GetExitCode;</div>
-<div class="line"><a name="l01193"></a><span class="lineno"> 1193</span>&#160;};</div>
-<div class="line"><a name="l01194"></a><span class="lineno"> 1194</span>&#160; </div>
-<div class="line"><a name="l01195"></a><span class="lineno"> 1195</span>&#160;} <span class="comment">// end namespace wpi</span></div>
-<div class="line"><a name="l01196"></a><span class="lineno"> 1196</span>&#160; </div>
-<div class="line"><a name="l01197"></a><span class="lineno"> 1197</span>&#160;<span class="preprocessor">#endif // WPIUTIL_WPI_ERROR_H</span></div>
+<div class="line"><a name="l01167"></a><span class="lineno"><a class="line" href="classwpi_1_1ExitOnError.html#ac7716965bec754ed4f8c11cefaed5942"> 1167</a></span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; T&amp; <a class="code" href="classwpi_1_1ExitOnError.html#ac7716965bec754ed4f8c11cefaed5942">operator()</a>(<a class="code" href="classwpi_1_1Expected.html">Expected&lt;T&amp;&gt;</a> &amp;&amp;E)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l01168"></a><span class="lineno"> 1168</span>&#160;    checkError(E.takeError());</div>
+<div class="line"><a name="l01169"></a><span class="lineno"> 1169</span>&#160;    <span class="keywordflow">return</span> *E;</div>
+<div class="line"><a name="l01170"></a><span class="lineno"> 1170</span>&#160;  }</div>
+<div class="line"><a name="l01171"></a><span class="lineno"> 1171</span>&#160; </div>
+<div class="line"><a name="l01172"></a><span class="lineno"> 1172</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l01173"></a><span class="lineno"> 1173</span>&#160;  <span class="keywordtype">void</span> checkError(<a class="code" href="classwpi_1_1Error.html">Error</a> Err)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l01174"></a><span class="lineno"> 1174</span>&#160;    <span class="keywordflow">if</span> (Err) {</div>
+<div class="line"><a name="l01175"></a><span class="lineno"> 1175</span>&#160;      <span class="keywordtype">int</span> ExitCode = GetExitCode(Err);</div>
+<div class="line"><a name="l01176"></a><span class="lineno"> 1176</span>&#160;      logAllUnhandledErrors(std::move(Err), errs(), Banner);</div>
+<div class="line"><a name="l01177"></a><span class="lineno"> 1177</span>&#160;      exit(ExitCode);</div>
+<div class="line"><a name="l01178"></a><span class="lineno"> 1178</span>&#160;    }</div>
+<div class="line"><a name="l01179"></a><span class="lineno"> 1179</span>&#160;  }</div>
+<div class="line"><a name="l01180"></a><span class="lineno"> 1180</span>&#160; </div>
+<div class="line"><a name="l01181"></a><span class="lineno"> 1181</span>&#160;  std::string Banner;</div>
+<div class="line"><a name="l01182"></a><span class="lineno"> 1182</span>&#160;  std::function&lt;int(<span class="keyword">const</span> Error &amp;)&gt; GetExitCode;</div>
+<div class="line"><a name="l01183"></a><span class="lineno"> 1183</span>&#160;};</div>
+<div class="line"><a name="l01184"></a><span class="lineno"> 1184</span>&#160; </div>
+<div class="line"><a name="l01185"></a><span class="lineno"> 1185</span>&#160;} <span class="comment">// end namespace wpi</span></div>
+<div class="line"><a name="l01186"></a><span class="lineno"> 1186</span>&#160; </div>
+<div class="line"><a name="l01187"></a><span class="lineno"> 1187</span>&#160;<span class="preprocessor">#endif // WPIUTIL_WPI_ERROR_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclasswpi_1_1ECError_html_a4d3c248051dff92a6aa20a9d80ee20cc"><div class="ttname"><a href="classwpi_1_1ECError.html#a4d3c248051dff92a6aa20a9d80ee20cc">wpi::ECError::convertToErrorCode</a></div><div class="ttdeci">std::error_code convertToErrorCode() const override</div><div class="ttdoc">Convert this error to a std::error_code.</div><div class="ttdef"><b>Definition:</b> Error.h:998</div></div>
-<div class="ttc" id="aclasswpi_1_1ExitOnError_html_aedb6db7e5d071a3f982c740f2f60e0f6"><div class="ttname"><a href="classwpi_1_1ExitOnError.html#aedb6db7e5d071a3f982c740f2f60e0f6">wpi::ExitOnError::ExitOnError</a></div><div class="ttdeci">ExitOnError(std::string Banner=&quot;&quot;, int DefaultErrorExitCode=1)</div><div class="ttdoc">Create an error on exit helper.</div><div class="ttdef"><b>Definition:</b> Error.h:1153</div></div>
+<div class="ttc" id="aclasswpi_1_1ECError_html_a4d3c248051dff92a6aa20a9d80ee20cc"><div class="ttname"><a href="classwpi_1_1ECError.html#a4d3c248051dff92a6aa20a9d80ee20cc">wpi::ECError::convertToErrorCode</a></div><div class="ttdeci">std::error_code convertToErrorCode() const override</div><div class="ttdoc">Convert this error to a std::error_code.</div><div class="ttdef"><b>Definition:</b> Error.h:988</div></div>
+<div class="ttc" id="aclasswpi_1_1ExitOnError_html_aedb6db7e5d071a3f982c740f2f60e0f6"><div class="ttname"><a href="classwpi_1_1ExitOnError.html#aedb6db7e5d071a3f982c740f2f60e0f6">wpi::ExitOnError::ExitOnError</a></div><div class="ttdeci">ExitOnError(std::string Banner=&quot;&quot;, int DefaultErrorExitCode=1)</div><div class="ttdoc">Create an error on exit helper.</div><div class="ttdef"><b>Definition:</b> Error.h:1143</div></div>
 <div class="ttc" id="aclasswpi_1_1StringError_html_a1dd05d7cb6e28a8b5b03e49c8c4263bd"><div class="ttname"><a href="classwpi_1_1StringError.html#a1dd05d7cb6e28a8b5b03e49c8c4263bd">wpi::StringError::log</a></div><div class="ttdeci">void log(raw_ostream &amp;OS) const override</div><div class="ttdoc">Print an error message to an output stream.</div></div>
 <div class="ttc" id="aclasswpi_1_1Expected_html_aaa9293efd9652d7fd78044419229b693"><div class="ttname"><a href="classwpi_1_1Expected.html#aaa9293efd9652d7fd78044419229b693">wpi::Expected::operator-&gt;</a></div><div class="ttdeci">const_pointer operator-&gt;() const</div><div class="ttdoc">Returns a const pointer to the stored T value.</div><div class="ttdef"><b>Definition:</b> Error.h:522</div></div>
-<div class="ttc" id="aclasswpi_1_1ExitOnError_html_aa67caeed69445b4e4d50595a167824c7"><div class="ttname"><a href="classwpi_1_1ExitOnError.html#aa67caeed69445b4e4d50595a167824c7">wpi::ExitOnError::operator()</a></div><div class="ttdeci">void operator()(Error Err) const</div><div class="ttdoc">Check Err. If it's in a failure state log the error(s) and exit.</div><div class="ttdef"><b>Definition:</b> Error.h:1166</div></div>
+<div class="ttc" id="aclasswpi_1_1ExitOnError_html_aa67caeed69445b4e4d50595a167824c7"><div class="ttname"><a href="classwpi_1_1ExitOnError.html#aa67caeed69445b4e4d50595a167824c7">wpi::ExitOnError::operator()</a></div><div class="ttdeci">void operator()(Error Err) const</div><div class="ttdoc">Check Err. If it's in a failure state log the error(s) and exit.</div><div class="ttdef"><b>Definition:</b> Error.h:1156</div></div>
 <div class="ttc" id="aclasswpi_1_1Expected_html_a767fcbae71481ad8d549622a44e80842"><div class="ttname"><a href="classwpi_1_1Expected.html#a767fcbae71481ad8d549622a44e80842">wpi::Expected::get</a></div><div class="ttdeci">const_reference get() const</div><div class="ttdoc">Returns a const reference to the stored T value.</div><div class="ttdef"><b>Definition:</b> Error.h:497</div></div>
 <div class="ttc" id="aclasswpi_1_1Expected_html_aff7142594b684129b09a5f2ea8e258bc"><div class="ttname"><a href="classwpi_1_1Expected.html#aff7142594b684129b09a5f2ea8e258bc">wpi::Expected::Expected</a></div><div class="ttdeci">Expected(Error Err)</div><div class="ttdoc">Create an Expected&lt;T&gt; error value from the given Error.</div><div class="ttdef"><b>Definition:</b> Error.h:425</div></div>
 <div class="ttc" id="aclasswpi_1_1ErrorInfoBase_html_a195b0f2e5de11ce2a86655f020385e8a"><div class="ttname"><a href="classwpi_1_1ErrorInfoBase.html#a195b0f2e5de11ce2a86655f020385e8a">wpi::ErrorInfoBase::convertToErrorCode</a></div><div class="ttdeci">virtual std::error_code convertToErrorCode() const =0</div><div class="ttdoc">Convert this error to a std::error_code.</div></div>
-<div class="ttc" id="aclasswpi_1_1ECError_html"><div class="ttname"><a href="classwpi_1_1ECError.html">wpi::ECError</a></div><div class="ttdoc">This class wraps a std::error_code in a Error.</div><div class="ttdef"><b>Definition:</b> Error.h:991</div></div>
+<div class="ttc" id="aclasswpi_1_1ECError_html"><div class="ttname"><a href="classwpi_1_1ECError.html">wpi::ECError</a></div><div class="ttdoc">This class wraps a std::error_code in a Error.</div><div class="ttdef"><b>Definition:</b> Error.h:981</div></div>
 <div class="ttc" id="aclasswpi_1_1Error_html_a40896fefd201d38b62606019014fe65a"><div class="ttname"><a href="classwpi_1_1Error.html#a40896fefd201d38b62606019014fe65a">wpi::Error::Error</a></div><div class="ttdeci">Error(Error &amp;&amp;Other) noexcept</div><div class="ttdoc">Move-construct an error value.</div><div class="ttdef"><b>Definition:</b> Error.h:186</div></div>
 <div class="ttc" id="aclasswpi_1_1ErrorInfo_html"><div class="ttname"><a href="classwpi_1_1ErrorInfo.html">wpi::ErrorInfo</a></div><div class="ttdoc">Base class for user error types.</div><div class="ttdef"><b>Definition:</b> Error.h:314</div></div>
 <div class="ttc" id="aclasswpi_1_1Expected_html_a2024a40dd3428727275f327e3418de86"><div class="ttname"><a href="classwpi_1_1Expected.html#a2024a40dd3428727275f327e3418de86">wpi::Expected::Expected</a></div><div class="ttdeci">Expected(Expected&lt; OtherT &gt; &amp;&amp;Other, typename std::enable_if&lt; std::is_convertible&lt; OtherT, T &gt;::value &gt;::type *=nullptr)</div><div class="ttdoc">Move construct an Expected&lt;T&gt; value from an Expected&lt;OtherT&gt;, where OtherT must be convertible to T.</div><div class="ttdef"><b>Definition:</b> Error.h:454</div></div>
 <div class="ttc" id="aclasswpi_1_1Expected_html_a79d1c8b93325b67d0ed944c2f9af4c72"><div class="ttname"><a href="classwpi_1_1Expected.html#a79d1c8b93325b67d0ed944c2f9af4c72">wpi::Expected::get</a></div><div class="ttdeci">reference get()</div><div class="ttdoc">Returns a reference to the stored T value.</div><div class="ttdef"><b>Definition:</b> Error.h:491</div></div>
 <div class="ttc" id="aclasswpi_1_1Expected_html_ad9e63407ee14361c8d4e0827eaedacdc"><div class="ttname"><a href="classwpi_1_1Expected.html#ad9e63407ee14361c8d4e0827eaedacdc">wpi::Expected::takeError</a></div><div class="ttdeci">Error takeError()</div><div class="ttdoc">Take ownership of the stored error.</div><div class="ttdef"><b>Definition:</b> Error.h:511</div></div>
 <div class="ttc" id="aclasswpi_1_1Expected_html_a38c327786bfe648bf1a5fc1304bd1a80"><div class="ttname"><a href="classwpi_1_1Expected.html#a38c327786bfe648bf1a5fc1304bd1a80">wpi::Expected::errorIsA</a></div><div class="ttdeci">bool errorIsA() const</div><div class="ttdoc">Check that this Expected&lt;T&gt; is an error of type ErrT.</div><div class="ttdef"><b>Definition:</b> Error.h:503</div></div>
-<div class="ttc" id="aclasswpi_1_1ExpectedAsOutParameter_html"><div class="ttname"><a href="classwpi_1_1ExpectedAsOutParameter.html">wpi::ExpectedAsOutParameter</a></div><div class="ttdoc">Helper for Expected&lt;T&gt;s used as out-parameters.</div><div class="ttdef"><b>Definition:</b> Error.h:969</div></div>
+<div class="ttc" id="aclasswpi_1_1ExpectedAsOutParameter_html"><div class="ttname"><a href="classwpi_1_1ExpectedAsOutParameter.html">wpi::ExpectedAsOutParameter</a></div><div class="ttdoc">Helper for Expected&lt;T&gt;s used as out-parameters.</div><div class="ttdef"><b>Definition:</b> Error.h:959</div></div>
 <div class="ttc" id="aclasswpi_1_1ErrorList_html_a2c831eabfe62504c9cc0cc16e0799c44"><div class="ttname"><a href="classwpi_1_1ErrorList.html#a2c831eabfe62504c9cc0cc16e0799c44">wpi::ErrorList::handleErrors</a></div><div class="ttdeci">friend Error handleErrors(Error E, HandlerTs &amp;&amp;... Handlers)</div><div class="ttdoc">Pass the ErrorInfo(s) contained in E to their respective handlers.</div><div class="ttdef"><b>Definition:</b> Error.h:807</div></div>
 <div class="ttc" id="aclasswpi_1_1Expected_html_ab7a500d88fe2c67a03434969df4af8b7"><div class="ttname"><a href="classwpi_1_1Expected.html#ab7a500d88fe2c67a03434969df4af8b7">wpi::Expected::operator*</a></div><div class="ttdeci">const_reference operator*() const</div><div class="ttdoc">Returns a const reference to the stored T value.</div><div class="ttdef"><b>Definition:</b> Error.h:534</div></div>
-<div class="ttc" id="aclasswpi_1_1FileError_html_a2531f045c7ca75184d85b51c5a9b3892"><div class="ttname"><a href="classwpi_1_1FileError.html#a2531f045c7ca75184d85b51c5a9b3892">wpi::FileError::createFileError</a></div><div class="ttdeci">friend Error createFileError(std::string, Error)</div><div class="ttdoc">Concatenate a source file path and/or name with an Error.</div><div class="ttdef"><b>Definition:</b> Error.h:1140</div></div>
-<div class="ttc" id="aclasswpi_1_1ExitOnError_html_a7aef745ff4133bcacfd909bb7435b33f"><div class="ttname"><a href="classwpi_1_1ExitOnError.html#a7aef745ff4133bcacfd909bb7435b33f">wpi::ExitOnError::setExitCodeMapper</a></div><div class="ttdeci">void setExitCodeMapper(std::function&lt; int(const Error &amp;)&gt; GetExitCode)</div><div class="ttdoc">Set the exit-code mapper function.</div><div class="ttdef"><b>Definition:</b> Error.h:1161</div></div>
+<div class="ttc" id="aclasswpi_1_1FileError_html_a2531f045c7ca75184d85b51c5a9b3892"><div class="ttname"><a href="classwpi_1_1FileError.html#a2531f045c7ca75184d85b51c5a9b3892">wpi::FileError::createFileError</a></div><div class="ttdeci">friend Error createFileError(std::string, Error)</div><div class="ttdoc">Concatenate a source file path and/or name with an Error.</div><div class="ttdef"><b>Definition:</b> Error.h:1130</div></div>
+<div class="ttc" id="aclasswpi_1_1ExitOnError_html_a7aef745ff4133bcacfd909bb7435b33f"><div class="ttname"><a href="classwpi_1_1ExitOnError.html#a7aef745ff4133bcacfd909bb7435b33f">wpi::ExitOnError::setExitCodeMapper</a></div><div class="ttdeci">void setExitCodeMapper(std::function&lt; int(const Error &amp;)&gt; GetExitCode)</div><div class="ttdoc">Set the exit-code mapper function.</div><div class="ttdef"><b>Definition:</b> Error.h:1151</div></div>
 <div class="ttc" id="aclasswpi_1_1raw__string__ostream_html_ade551932494fdc3c098fa7972808acd8"><div class="ttname"><a href="classwpi_1_1raw__string__ostream.html#ade551932494fdc3c098fa7972808acd8">wpi::raw_string_ostream::str</a></div><div class="ttdeci">std::string &amp; str()</div><div class="ttdoc">Flushes the stream contents to the target string and returns the string's reference.</div><div class="ttdef"><b>Definition:</b> raw_ostream.h:529</div></div>
-<div class="ttc" id="aclasswpi_1_1ErrorAsOutParameter_html"><div class="ttname"><a href="classwpi_1_1ErrorAsOutParameter.html">wpi::ErrorAsOutParameter</a></div><div class="ttdoc">Helper for Errors used as out-parameters.</div><div class="ttdef"><b>Definition:</b> Error.h:947</div></div>
-<div class="ttc" id="aclasswpi_1_1FileError_html_af9b3a2f2fe602fcedfd3d070ab27dd09"><div class="ttname"><a href="classwpi_1_1FileError.html#af9b3a2f2fe602fcedfd3d070ab27dd09">wpi::FileError::log</a></div><div class="ttdeci">void log(raw_ostream &amp;OS) const override</div><div class="ttdoc">Print an error message to an output stream.</div><div class="ttdef"><b>Definition:</b> Error.h:1108</div></div>
+<div class="ttc" id="aclasswpi_1_1ErrorAsOutParameter_html"><div class="ttname"><a href="classwpi_1_1ErrorAsOutParameter.html">wpi::ErrorAsOutParameter</a></div><div class="ttdoc">Helper for Errors used as out-parameters.</div><div class="ttdef"><b>Definition:</b> Error.h:937</div></div>
+<div class="ttc" id="aclasswpi_1_1FileError_html_af9b3a2f2fe602fcedfd3d070ab27dd09"><div class="ttname"><a href="classwpi_1_1FileError.html#af9b3a2f2fe602fcedfd3d070ab27dd09">wpi::FileError::log</a></div><div class="ttdeci">void log(raw_ostream &amp;OS) const override</div><div class="ttdoc">Print an error message to an output stream.</div><div class="ttdef"><b>Definition:</b> Error.h:1098</div></div>
 <div class="ttc" id="aclasswpi_1_1Expected_html_a57e412b046d2fe8bc6c14183ee76f522"><div class="ttname"><a href="classwpi_1_1Expected.html#a57e412b046d2fe8bc6c14183ee76f522">wpi::Expected::~Expected</a></div><div class="ttdeci">~Expected()</div><div class="ttdoc">Destroy an Expected&lt;T&gt;.</div><div class="ttdef"><b>Definition:</b> Error.h:477</div></div>
 <div class="ttc" id="aclasswpi_1_1Error_html_a2b67792bdc5edcbfa7d7f839df31a4db"><div class="ttname"><a href="classwpi_1_1Error.html#a2b67792bdc5edcbfa7d7f839df31a4db">wpi::Error::operator=</a></div><div class="ttdeci">Error &amp; operator=(Error &amp;&amp;Other) noexcept</div><div class="ttdoc">Move-assign an error value.</div><div class="ttdef"><b>Definition:</b> Error.h:205</div></div>
 <div class="ttc" id="aclasswpi_1_1Error_html"><div class="ttname"><a href="classwpi_1_1Error.html">wpi::Error</a></div><div class="ttdoc">Lightweight error class with error context and mandatory checking.</div><div class="ttdef"><b>Definition:</b> Error.h:155</div></div>
@@ -983,44 +975,44 @@ $(document).ready(function(){initNavTree('Error_8h_source.html',''); initResizab
 <div class="ttc" id="aclasswpi_1_1Error_html_abb65cc4c51f82082311e8b2abcc49110"><div class="ttname"><a href="classwpi_1_1Error.html#abb65cc4c51f82082311e8b2abcc49110">wpi::Error::~Error</a></div><div class="ttdeci">~Error()</div><div class="ttdoc">Destroy a Error.</div><div class="ttdef"><b>Definition:</b> Error.h:222</div></div>
 <div class="ttc" id="aclasswpi_1_1Expected_html"><div class="ttname"><a href="classwpi_1_1Expected.html">wpi::Expected</a></div><div class="ttdoc">Tagged union holding either a T or a Error.</div><div class="ttdef"><b>Definition:</b> Error.h:403</div></div>
 <div class="ttc" id="aclasswpi_1_1Expected_html_a14b3433a58fc09d40ae5e0c5ac8947c5"><div class="ttname"><a href="classwpi_1_1Expected.html#a14b3433a58fc09d40ae5e0c5ac8947c5">wpi::Expected::Expected</a></div><div class="ttdeci">Expected(ErrorSuccess)=delete</div><div class="ttdoc">Forbid to convert from Error::success() implicitly, this avoids having Expected&lt;T&gt; foo() { return Err...</div></div>
-<div class="ttc" id="aclasswpi_1_1StringError_html"><div class="ttname"><a href="classwpi_1_1StringError.html">wpi::StringError</a></div><div class="ttdoc">This class wraps a string in an Error.</div><div class="ttdef"><b>Definition:</b> Error.h:1066</div></div>
+<div class="ttc" id="aclasswpi_1_1StringError_html"><div class="ttname"><a href="classwpi_1_1StringError.html">wpi::StringError</a></div><div class="ttdoc">This class wraps a string in an Error.</div><div class="ttdef"><b>Definition:</b> Error.h:1056</div></div>
 <div class="ttc" id="aclasswpi_1_1Expected_html_ad39d230f43cc683ec8a6accb59e45280"><div class="ttname"><a href="classwpi_1_1Expected.html#ad39d230f43cc683ec8a6accb59e45280">wpi::Expected::Expected</a></div><div class="ttdeci">Expected(Expected&lt; OtherT &gt; &amp;&amp;Other, typename std::enable_if&lt;!std::is_convertible&lt; OtherT, T &gt;::value &gt;::type *=nullptr)</div><div class="ttdoc">Move construct an Expected&lt;T&gt; value from an Expected&lt;OtherT&gt;, where OtherT isn't convertible to T.</div><div class="ttdef"><b>Definition:</b> Error.h:463</div></div>
 <div class="ttc" id="aclasswpi_1_1raw__string__ostream_html"><div class="ttname"><a href="classwpi_1_1raw__string__ostream.html">wpi::raw_string_ostream</a></div><div class="ttdoc">A raw_ostream that writes to an std::string.</div><div class="ttdef"><b>Definition:</b> raw_ostream.h:513</div></div>
-<div class="ttc" id="aclasswpi_1_1ExitOnError_html_ac7716965bec754ed4f8c11cefaed5942"><div class="ttname"><a href="classwpi_1_1ExitOnError.html#ac7716965bec754ed4f8c11cefaed5942">wpi::ExitOnError::operator()</a></div><div class="ttdeci">T &amp; operator()(Expected&lt; T &amp; &gt; &amp;&amp;E) const</div><div class="ttdoc">Check E.</div><div class="ttdef"><b>Definition:</b> Error.h:1177</div></div>
+<div class="ttc" id="aclasswpi_1_1ExitOnError_html_ac7716965bec754ed4f8c11cefaed5942"><div class="ttname"><a href="classwpi_1_1ExitOnError.html#ac7716965bec754ed4f8c11cefaed5942">wpi::ExitOnError::operator()</a></div><div class="ttdeci">T &amp; operator()(Expected&lt; T &amp; &gt; &amp;&amp;E) const</div><div class="ttdoc">Check E.</div><div class="ttdef"><b>Definition:</b> Error.h:1167</div></div>
 <div class="ttc" id="aclasswpi_1_1ErrorHandlerTraits_html"><div class="ttname"><a href="classwpi_1_1ErrorHandlerTraits.html">wpi::ErrorHandlerTraits</a></div><div class="ttdoc">Helper for testing applicability of, and applying, handlers for ErrorInfo types.</div><div class="ttdef"><b>Definition:</b> Error.h:690</div></div>
 <div class="ttc" id="aclasswpi_1_1Expected_html_ab14371f04faa3b8abe1e84b62f23e700"><div class="ttname"><a href="classwpi_1_1Expected.html#ab14371f04faa3b8abe1e84b62f23e700">wpi::Expected::Expected</a></div><div class="ttdeci">Expected(Expected &amp;&amp;Other)</div><div class="ttdoc">Move construct an Expected&lt;T&gt; value.</div><div class="ttdef"><b>Definition:</b> Error.h:449</div></div>
 <div class="ttc" id="aErrorOr_8h_html"><div class="ttname"><a href="ErrorOr_8h.html">ErrorOr.h</a></div></div>
 <div class="ttc" id="aclasswpi_1_1Error_html_aa45af8c412e03a4cb24a4a523f629cca"><div class="ttname"><a href="classwpi_1_1Error.html#aa45af8c412e03a4cb24a4a523f629cca">wpi::Error::Error</a></div><div class="ttdeci">Error()</div><div class="ttdoc">Create a success value. Prefer using 'Error::success()' for readability.</div><div class="ttdef"><b>Definition:</b> Error.h:171</div></div>
 <div class="ttc" id="aclasswpi_1_1Expected_html_a6d9d6a45e1baaf75f150f2e1a9f0de08"><div class="ttname"><a href="classwpi_1_1Expected.html#a6d9d6a45e1baaf75f150f2e1a9f0de08">wpi::Expected::Expected</a></div><div class="ttdeci">Expected(OtherT &amp;&amp;Val, typename std::enable_if&lt; std::is_convertible&lt; OtherT, T &gt;::value &gt;::type *=nullptr)</div><div class="ttdoc">Create an Expected&lt;T&gt; success value from the given OtherT value, which must be convertible to T.</div><div class="ttdef"><b>Definition:</b> Error.h:440</div></div>
 <div class="ttc" id="aclasswpi_1_1Expected_html_a7bd4e412e3bbe5667c99b2f7e58be18f"><div class="ttname"><a href="classwpi_1_1Expected.html#a7bd4e412e3bbe5667c99b2f7e58be18f">wpi::Expected::operator=</a></div><div class="ttdeci">Expected &amp; operator=(Expected &amp;&amp;Other)</div><div class="ttdoc">Move-assign from another Expected&lt;T&gt;.</div><div class="ttdef"><b>Definition:</b> Error.h:471</div></div>
-<div class="ttc" id="aclasswpi_1_1FileError_html"><div class="ttname"><a href="classwpi_1_1FileError.html">wpi::FileError</a></div><div class="ttdoc">This class wraps a filename and another Error.</div><div class="ttdef"><b>Definition:</b> Error.h:1103</div></div>
+<div class="ttc" id="aclasswpi_1_1FileError_html"><div class="ttname"><a href="classwpi_1_1FileError.html">wpi::FileError</a></div><div class="ttdoc">This class wraps a filename and another Error.</div><div class="ttdef"><b>Definition:</b> Error.h:1093</div></div>
 <div class="ttc" id="aclasswpi_1_1ErrorList_html"><div class="ttname"><a href="classwpi_1_1ErrorList.html">wpi::ErrorList</a></div><div class="ttdoc">Special ErrorInfo subclass representing a list of ErrorInfos.</div><div class="ttdef"><b>Definition:</b> Error.h:329</div></div>
 <div class="ttc" id="aclasswpi_1_1ErrorInfoBase_html_afb63f3946fdf4ec655f2fdf9c00e59da"><div class="ttname"><a href="classwpi_1_1ErrorInfoBase.html#afb63f3946fdf4ec655f2fdf9c00e59da">wpi::ErrorInfoBase::message</a></div><div class="ttdeci">virtual std::string message() const</div><div class="ttdoc">Return the error message as a string.</div><div class="ttdef"><b>Definition:</b> Error.h:54</div></div>
 <div class="ttc" id="aclasswpi_1_1Expected_html_a48c0ba060672353493b905cfee5988f8"><div class="ttname"><a href="classwpi_1_1Expected.html#a48c0ba060672353493b905cfee5988f8">wpi::Expected::operator*</a></div><div class="ttdeci">reference operator*()</div><div class="ttdoc">Returns a reference to the stored T value.</div><div class="ttdef"><b>Definition:</b> Error.h:528</div></div>
-<div class="ttc" id="aclasswpi_1_1ExitOnError_html_aef55f80ea974782b8c8a5e20df20618e"><div class="ttname"><a href="classwpi_1_1ExitOnError.html#aef55f80ea974782b8c8a5e20df20618e">wpi::ExitOnError::setBanner</a></div><div class="ttdeci">void setBanner(std::string Banner)</div><div class="ttdoc">Set the banner string for any errors caught by operator().</div><div class="ttdef"><b>Definition:</b> Error.h:1158</div></div>
+<div class="ttc" id="aclasswpi_1_1ExitOnError_html_aef55f80ea974782b8c8a5e20df20618e"><div class="ttname"><a href="classwpi_1_1ExitOnError.html#aef55f80ea974782b8c8a5e20df20618e">wpi::ExitOnError::setBanner</a></div><div class="ttdeci">void setBanner(std::string Banner)</div><div class="ttdoc">Set the banner string for any errors caught by operator().</div><div class="ttdef"><b>Definition:</b> Error.h:1148</div></div>
 <div class="ttc" id="aclasswpi_1_1ErrorList_html_ab85caa3a38967b7fcb13e0e00bc8f3d6"><div class="ttname"><a href="classwpi_1_1ErrorList.html#ab85caa3a38967b7fcb13e0e00bc8f3d6">wpi::ErrorList::convertToErrorCode</a></div><div class="ttdeci">std::error_code convertToErrorCode() const override</div><div class="ttdoc">Convert this error to a std::error_code.</div></div>
 <div class="ttc" id="aclasswpi_1_1FileError_html_a6f77732e852139be525961030148cbae"><div class="ttname"><a href="classwpi_1_1FileError.html#a6f77732e852139be525961030148cbae">wpi::FileError::convertToErrorCode</a></div><div class="ttdeci">std::error_code convertToErrorCode() const override</div><div class="ttdoc">Convert this error to a std::error_code.</div></div>
 <div class="ttc" id="aclasswpi_1_1ErrorList_html_a7ba2903f32ae8dfef69463fc3aeb609a"><div class="ttname"><a href="classwpi_1_1ErrorList.html#a7ba2903f32ae8dfef69463fc3aeb609a">wpi::ErrorList::log</a></div><div class="ttdeci">void log(raw_ostream &amp;OS) const override</div><div class="ttdoc">Print an error message to an output stream.</div><div class="ttdef"><b>Definition:</b> Error.h:339</div></div>
 <div class="ttc" id="aclasswpi_1_1ECError_html_abd3ceb8d2e68a229b0343d162b08bd53"><div class="ttname"><a href="classwpi_1_1ECError.html#abd3ceb8d2e68a229b0343d162b08bd53">wpi::ECError::errorCodeToError</a></div><div class="ttdeci">friend Error errorCodeToError(std::error_code)</div><div class="ttdoc">Helper for converting an std::error_code to a Error.</div></div>
 <div class="ttc" id="aclasswpi_1_1Expected_html_a437f4c9be5fe5a5fbb94c34e7c17d148"><div class="ttname"><a href="classwpi_1_1Expected.html#a437f4c9be5fe5a5fbb94c34e7c17d148">wpi::Expected::operator-&gt;</a></div><div class="ttdeci">pointer operator-&gt;()</div><div class="ttdoc">Returns a pointer to the stored T value.</div><div class="ttdef"><b>Definition:</b> Error.h:516</div></div>
 <div class="ttc" id="aclasswpi_1_1ErrorList_html_ab2db430577b7cf3bfa1af01e55e2f36c"><div class="ttname"><a href="classwpi_1_1ErrorList.html#ab2db430577b7cf3bfa1af01e55e2f36c">wpi::ErrorList::joinErrors</a></div><div class="ttdeci">friend Error joinErrors(Error, Error)</div><div class="ttdoc">Concatenate errors.</div><div class="ttdef"><b>Definition:</b> Error.h:393</div></div>
-<div class="ttc" id="aclasswpi_1_1ExitOnError_html_a14ebb673e83aa4a641e23d8d2c474625"><div class="ttname"><a href="classwpi_1_1ExitOnError.html#a14ebb673e83aa4a641e23d8d2c474625">wpi::ExitOnError::operator()</a></div><div class="ttdeci">T operator()(Expected&lt; T &gt; &amp;&amp;E) const</div><div class="ttdoc">Check E.</div><div class="ttdef"><b>Definition:</b> Error.h:1170</div></div>
+<div class="ttc" id="aclasswpi_1_1ExitOnError_html_a14ebb673e83aa4a641e23d8d2c474625"><div class="ttname"><a href="classwpi_1_1ExitOnError.html#a14ebb673e83aa4a641e23d8d2c474625">wpi::ExitOnError::operator()</a></div><div class="ttdeci">T operator()(Expected&lt; T &gt; &amp;&amp;E) const</div><div class="ttdoc">Check E.</div><div class="ttdef"><b>Definition:</b> Error.h:1160</div></div>
 <div class="ttc" id="aclasswpi_1_1ErrorInfoBase_html"><div class="ttname"><a href="classwpi_1_1ErrorInfoBase.html">wpi::ErrorInfoBase</a></div><div class="ttdoc">Base class for error info classes.</div><div class="ttdef"><b>Definition:</b> Error.h:46</div></div>
 <div class="ttc" id="aclasswpi_1_1Error_html_ab56ef295e9a4e94cf8a77f78a02402a5"><div class="ttname"><a href="classwpi_1_1Error.html#ab56ef295e9a4e94cf8a77f78a02402a5">wpi::Error::Error</a></div><div class="ttdeci">Error(std::unique_ptr&lt; ErrorInfoBase &gt; Payload)</div><div class="ttdoc">Create an error value.</div><div class="ttdef"><b>Definition:</b> Error.h:193</div></div>
-<div class="ttc" id="aclasswpi_1_1ExitOnError_html"><div class="ttname"><a href="classwpi_1_1ExitOnError.html">wpi::ExitOnError</a></div><div class="ttdoc">Helper for check-and-exit error handling.</div><div class="ttdef"><b>Definition:</b> Error.h:1150</div></div>
+<div class="ttc" id="aclasswpi_1_1ExitOnError_html"><div class="ttname"><a href="classwpi_1_1ExitOnError.html">wpi::ExitOnError</a></div><div class="ttdoc">Helper for check-and-exit error handling.</div><div class="ttdef"><b>Definition:</b> Error.h:1140</div></div>
 <div class="ttc" id="aclasswpi_1_1raw__ostream_html"><div class="ttname"><a href="classwpi_1_1raw__ostream.html">wpi::raw_ostream</a></div><div class="ttdoc">This class implements an extremely fast bulk output stream that can only output to a stream.</div><div class="ttdef"><b>Definition:</b> raw_ostream.h:48</div></div>
 <div class="ttc" id="aclasswpi_1_1Twine_html"><div class="ttname"><a href="classwpi_1_1Twine.html">wpi::Twine</a></div><div class="ttdoc">Twine - A lightweight data structure for efficiently representing the concatenation of temporary valu...</div><div class="ttdef"><b>Definition:</b> Twine.h:86</div></div>
 <div class="ttc" id="aclasswpi_1_1StringError_html_a581b5e60ea4199c7011a48b17b5b2698"><div class="ttname"><a href="classwpi_1_1StringError.html#a581b5e60ea4199c7011a48b17b5b2698">wpi::StringError::convertToErrorCode</a></div><div class="ttdeci">std::error_code convertToErrorCode() const override</div><div class="ttdoc">Convert this error to a std::error_code.</div></div>
 <div class="ttc" id="aclasswpi_1_1Error_html_a7d795b7a95248b93aab9b1bb8b166b0a"><div class="ttname"><a href="classwpi_1_1Error.html#a7d795b7a95248b93aab9b1bb8b166b0a">wpi::Error::isA</a></div><div class="ttdeci">bool isA() const</div><div class="ttdoc">Check whether one error is a subclass of another.</div><div class="ttdef"><b>Definition:</b> Error.h:236</div></div>
 <div class="ttc" id="aclasswpi_1_1ErrorSuccess_html"><div class="ttname"><a href="classwpi_1_1ErrorSuccess.html">wpi::ErrorSuccess</a></div><div class="ttdoc">Subclass of Error for the sole purpose of identifying the success path in the type system.</div><div class="ttdef"><b>Definition:</b> Error.h:294</div></div>
-<div class="ttc" id="aclasswpi_1_1ECError_html_a0f8e5228b2a9b6d76e3317aea1de34b4"><div class="ttname"><a href="classwpi_1_1ECError.html#a0f8e5228b2a9b6d76e3317aea1de34b4">wpi::ECError::log</a></div><div class="ttdeci">void log(raw_ostream &amp;OS) const override</div><div class="ttdoc">Print an error message to an output stream.</div><div class="ttdef"><b>Definition:</b> Error.h:999</div></div>
+<div class="ttc" id="aclasswpi_1_1ECError_html_a0f8e5228b2a9b6d76e3317aea1de34b4"><div class="ttname"><a href="classwpi_1_1ECError.html#a0f8e5228b2a9b6d76e3317aea1de34b4">wpi::ECError::log</a></div><div class="ttdeci">void log(raw_ostream &amp;OS) const override</div><div class="ttdoc">Print an error message to an output stream.</div><div class="ttdef"><b>Definition:</b> Error.h:989</div></div>
 <div class="ttc" id="aclasswpi_1_1Error_html_aa1f66aa86aa30d89252a06999dc1bc82"><div class="ttname"><a href="classwpi_1_1Error.html#aa1f66aa86aa30d89252a06999dc1bc82">wpi::Error::success</a></div><div class="ttdeci">static ErrorSuccess success()</div><div class="ttdoc">Create a success value.</div><div class="ttdef"><b>Definition:</b> Error.h:296</div></div>
 <div class="ttc" id="aclasswpi_1_1Error_html_afdd3190b9c558662875c5eebac953b5c"><div class="ttname"><a href="classwpi_1_1Error.html#afdd3190b9c558662875c5eebac953b5c">wpi::Error::dynamicClassID</a></div><div class="ttdeci">const void * dynamicClassID() const</div><div class="ttdoc">Returns the dynamic class id of this error, or null if this is a success value.</div><div class="ttdef"><b>Definition:</b> Error.h:242</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><b>Error.h</b></li>
-    <li class="footer">Generated on Sat May 29 2021 05:08:55 for WPILibC++ by
+    <li class="footer">Generated on Sat May 29 2021 06:44:34 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>
