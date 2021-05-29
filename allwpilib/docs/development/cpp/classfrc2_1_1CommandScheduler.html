@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-78-g827b17a</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-79-ge09293a</span>
    </div>
   </td>
  </tr>
@@ -198,9 +198,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterSubsystem</
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1CommandScheduler.html#a01ad4d4ab8b9cdf9c3c15f42f47350b5">CancelAll</a> ()</td></tr>
 <tr class="memdesc:a01ad4d4ab8b9cdf9c3c15f42f47350b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancels all commands that are currently scheduled. <br /></td></tr>
 <tr class="separator:a01ad4d4ab8b9cdf9c3c15f42f47350b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d670767311e026a5e2b0fee7a7f2ebf"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1CommandScheduler.html#a6d670767311e026a5e2b0fee7a7f2ebf">TimeSinceScheduled</a> (const <a class="el" href="classfrc2_1_1Command.html">Command</a> *command) const</td></tr>
-<tr class="memdesc:a6d670767311e026a5e2b0fee7a7f2ebf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the time since a given command was scheduled.  <a href="classfrc2_1_1CommandScheduler.html#a6d670767311e026a5e2b0fee7a7f2ebf">More...</a><br /></td></tr>
-<tr class="separator:a6d670767311e026a5e2b0fee7a7f2ebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3101430bdf290496c4a6c82f1892d67"><td class="memItemLeft" align="right" valign="top">units::second_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1CommandScheduler.html#ad3101430bdf290496c4a6c82f1892d67">TimeSinceScheduled</a> (const <a class="el" href="classfrc2_1_1Command.html">Command</a> *command) const</td></tr>
+<tr class="memdesc:ad3101430bdf290496c4a6c82f1892d67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the time since a given command was scheduled.  <a href="classfrc2_1_1CommandScheduler.html#ad3101430bdf290496c4a6c82f1892d67">More...</a><br /></td></tr>
+<tr class="separator:ad3101430bdf290496c4a6c82f1892d67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa8743c00d9a4d549bf7fc85f434146b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1CommandScheduler.html#afa8743c00d9a4d549bf7fc85f434146b">IsScheduled</a> (<a class="el" href="classwpi_1_1ArrayRef.html">wpi::ArrayRef</a>&lt; const <a class="el" href="classfrc2_1_1Command.html">Command</a> * &gt; commands) const</td></tr>
 <tr class="memdesc:afa8743c00d9a4d549bf7fc85f434146b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the given commands are running.  <a href="classfrc2_1_1CommandScheduler.html#afa8743c00d9a4d549bf7fc85f434146b">More...</a><br /></td></tr>
 <tr class="separator:afa8743c00d9a4d549bf7fc85f434146b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1031,14 +1031,14 @@ template&lt;class T , typename  = std::enable_if_t&lt;std::is_base_of_v&lt;     
 
 </div>
 </div>
-<a id="a6d670767311e026a5e2b0fee7a7f2ebf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d670767311e026a5e2b0fee7a7f2ebf">&#9670;&nbsp;</a></span>TimeSinceScheduled()</h2>
+<a id="ad3101430bdf290496c4a6c82f1892d67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3101430bdf290496c4a6c82f1892d67">&#9670;&nbsp;</a></span>TimeSinceScheduled()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double frc2::CommandScheduler::TimeSinceScheduled </td>
+          <td class="memname">units::second_t frc2::CommandScheduler::TimeSinceScheduled </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classfrc2_1_1Command.html">Command</a> *&#160;</td>
           <td class="paramname"><em>command</em></td><td>)</td>
@@ -1055,7 +1055,7 @@ template&lt;class T , typename  = std::enable_if_t&lt;std::is_base_of_v&lt;     
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the time since the command was scheduled, in seconds </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the time since the command was scheduled </dd></dl>
 
 </div>
 </div>
@@ -1095,7 +1095,7 @@ template&lt;class T , typename  = std::enable_if_t&lt;std::is_base_of_v&lt;     
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>frc2</b></li><li class="navelem"><a class="el" href="classfrc2_1_1CommandScheduler.html">CommandScheduler</a></li>
-    <li class="footer">Generated on Sat May 29 2021 05:07:11 for WPILibC++ by
+    <li class="footer">Generated on Sat May 29 2021 05:08:58 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

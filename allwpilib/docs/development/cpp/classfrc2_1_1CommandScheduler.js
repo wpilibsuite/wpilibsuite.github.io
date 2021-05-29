@@ -35,7 +35,7 @@ var classfrc2_1_1CommandScheduler =
     [ "Schedule", "classfrc2_1_1CommandScheduler.html#aedba723f05a0e3f185fac4ce0a802b0e", null ],
     [ "SetDefaultCommand", "classfrc2_1_1CommandScheduler.html#ad748198c4967d298dfdab479a00e31b7", null ],
     [ "SetPeriod", "classfrc2_1_1CommandScheduler.html#a2739ab92351c561ddeb353ea14efa46a", null ],
-    [ "TimeSinceScheduled", "classfrc2_1_1CommandScheduler.html#a6d670767311e026a5e2b0fee7a7f2ebf", null ],
+    [ "TimeSinceScheduled", "classfrc2_1_1CommandScheduler.html#ad3101430bdf290496c4a6c82f1892d67", null ],
     [ "UnregisterSubsystem", "classfrc2_1_1CommandScheduler.html#ac8d83b513ca63f86e12c866f21baf0c9", null ],
     [ "UnregisterSubsystem", "classfrc2_1_1CommandScheduler.html#a4c6c118d955821e086f9f64700250923", null ],
     [ "UnregisterSubsystem", "classfrc2_1_1CommandScheduler.html#ac996c69d5d2b640208f1bf5c37c87dbc", null ],

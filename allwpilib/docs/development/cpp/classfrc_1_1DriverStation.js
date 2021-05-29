@@ -57,7 +57,7 @@ var classfrc_1_1DriverStation =
     [ "operator=", "classfrc_1_1DriverStation.html#ac8b51b52dacd4147b9457ee922e083ce", null ],
     [ "SilenceJoystickConnectionWarning", "classfrc_1_1DriverStation.html#aa38ff5ed69365392b288ea1c07e33c8e", null ],
     [ "WaitForData", "classfrc_1_1DriverStation.html#a7d0e1251f66083b86c6322a4be01c695", null ],
-    [ "WaitForData", "classfrc_1_1DriverStation.html#a274ecb09c808d5cd8ed4762ab442743d", null ],
+    [ "WaitForData", "classfrc_1_1DriverStation.html#a751b0f5f2678b0ee7ff56fe2c1cbf939", null ],
     [ "WakeupWaitForData", "classfrc_1_1DriverStation.html#a49f2b93641a2e432304d659afbdf09e0", null ],
     [ "kJoystickPorts", "classfrc_1_1DriverStation.html#ae95b20dbb78d92dfd36b4f8d93f5ce2b", null ]
 ];

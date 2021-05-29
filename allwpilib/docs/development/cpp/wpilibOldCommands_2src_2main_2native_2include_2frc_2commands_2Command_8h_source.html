@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-78-g827b17a</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-79-ge09293a</span>
    </div>
   </td>
  </tr>
@@ -103,181 +103,182 @@ $(document).ready(function(){initNavTree('wpilibOldCommands_2src_2main_2native_2
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;string_view&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;wpi/SmallPtrSet.h&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;frc/commands/Subsystem.h&quot;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;frc/smartdashboard/Sendable.h&quot;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;frc/smartdashboard/SendableHelper.h&quot;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span>frc {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">class </span>CommandGroup;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html">   45</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1Command.html">Command</a> : <span class="keyword">public</span> <a class="code" href="classfrc_1_1Sendable.html">Sendable</a>, <span class="keyword">public</span> <a class="code" href="classfrc_1_1SendableHelper.html">SendableHelper</a>&lt;Command&gt; {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classfrc_1_1CommandGroup.html">CommandGroup</a>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classfrc_1_1Scheduler.html">Scheduler</a>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#a5de92743e2afd524fc247a4aeeae0fce">   55</a></span>&#160;  <a class="code" href="classfrc_1_1Command.html#a5de92743e2afd524fc247a4aeeae0fce">Command</a>();</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#a0e28d6d5c363150c8d48a2f62ef1928e">   62</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc_1_1Command.html#a0e28d6d5c363150c8d48a2f62ef1928e">Command</a>(std::string_view name);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#a9b3096cbc964df9bf9cbe6c1457c5835">   70</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc_1_1Command.html#a9b3096cbc964df9bf9cbe6c1457c5835">Command</a>(<span class="keywordtype">double</span> timeout);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#a39f74ff82f4b522ce63b8de5dac9fe67">   77</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc_1_1Command.html#a39f74ff82f4b522ce63b8de5dac9fe67">Command</a>(<a class="code" href="classfrc_1_1Subsystem.html">Subsystem</a>&amp; subsystem);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#a973489af1fff6f9984c595466df11ced">   86</a></span>&#160;  <a class="code" href="classfrc_1_1Command.html#a973489af1fff6f9984c595466df11ced">Command</a>(std::string_view name, <span class="keywordtype">double</span> timeout);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#a3f7d56d4ff84094d5722611f436cbfdb">   94</a></span>&#160;  <a class="code" href="classfrc_1_1Command.html#a3f7d56d4ff84094d5722611f436cbfdb">Command</a>(std::string_view name, <a class="code" href="classfrc_1_1Subsystem.html">Subsystem</a>&amp; subsystem);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#aa5b872997a00930d75bdbbb7e2529b16">  102</a></span>&#160;  <a class="code" href="classfrc_1_1Command.html#aa5b872997a00930d75bdbbb7e2529b16">Command</a>(<span class="keywordtype">double</span> timeout, <a class="code" href="classfrc_1_1Subsystem.html">Subsystem</a>&amp; subsystem);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#aaa2eda01608ff58f8e8a4fde6159453a">  111</a></span>&#160;  <a class="code" href="classfrc_1_1Command.html#aaa2eda01608ff58f8e8a4fde6159453a">Command</a>(std::string_view name, <span class="keywordtype">double</span> timeout, <a class="code" href="classfrc_1_1Subsystem.html">Subsystem</a>&amp; subsystem);</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  ~<a class="code" href="classfrc_1_1Command.html">Command</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <a class="code" href="classfrc_1_1Command.html#a5de92743e2afd524fc247a4aeeae0fce">Command</a>(<a class="code" href="classfrc_1_1Command.html">Command</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <a class="code" href="classfrc_1_1Command.html">Command</a>&amp; operator=(<a class="code" href="classfrc_1_1Command.html">Command</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
-<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#a224b1a26b2f64ce3ec97189da95dfe9f">  125</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classfrc_1_1Command.html#a224b1a26b2f64ce3ec97189da95dfe9f">TimeSinceInitialized</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
-<div class="line"><a name="l00137"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#a51cce76d54be5915afaa78c647254f4e">  137</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Command.html#a51cce76d54be5915afaa78c647254f4e">Requires</a>(<a class="code" href="classfrc_1_1Subsystem.html">Subsystem</a>* s);</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
-<div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#a0f4501af3516c00803f8540ac6c61175">  146</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Command.html#a0f4501af3516c00803f8540ac6c61175">Start</a>();</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
-<div class="line"><a name="l00153"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#a6a57e379abe8b0a358342c6394be78e7">  153</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1Command.html#a6a57e379abe8b0a358342c6394be78e7">Run</a>();</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
-<div class="line"><a name="l00166"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#af816dc206e90bdad6ae895fb5e5574c2">  166</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Command.html#af816dc206e90bdad6ae895fb5e5574c2">Cancel</a>();</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
-<div class="line"><a name="l00176"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#a5f6d91da111c81e554759c66b2aa5ee6">  176</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1Command.html#a5f6d91da111c81e554759c66b2aa5ee6">IsRunning</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
-<div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#ab5949fe65b1b4f26bf230f82f0f44e03">  183</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1Command.html#ab5949fe65b1b4f26bf230f82f0f44e03">IsInitialized</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
-<div class="line"><a name="l00190"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#a75e98922283baeb640adf723bdd6c8ae">  190</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1Command.html#a75e98922283baeb640adf723bdd6c8ae">IsCompleted</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
-<div class="line"><a name="l00197"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#a454143c4df402c266975e1ee124b9a92">  197</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1Command.html#a454143c4df402c266975e1ee124b9a92">IsCanceled</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160; </div>
-<div class="line"><a name="l00204"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#ad9076344a3fb042994fd2ec0e4c33d97">  204</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1Command.html#ad9076344a3fb042994fd2ec0e4c33d97">IsInterruptible</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160; </div>
-<div class="line"><a name="l00211"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#ab657ac42c885ee9e5b7fff126b732f2c">  211</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Command.html#ab657ac42c885ee9e5b7fff126b732f2c">SetInterruptible</a>(<span class="keywordtype">bool</span> interruptible);</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160; </div>
-<div class="line"><a name="l00219"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#a082e02f365d6f594b9b1572ee162eb21">  219</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1Command.html#a082e02f365d6f594b9b1572ee162eb21">DoesRequire</a>(<a class="code" href="classfrc_1_1Subsystem.html">Subsystem</a>* subsystem) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160; </div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;  <span class="keyword">using</span> <a class="code" href="classwpi_1_1SmallPtrSetImpl.html">SubsystemSet</a> = <a class="code" href="classwpi_1_1SmallPtrSetImpl.html">wpi::SmallPtrSetImpl&lt;Subsystem*&gt;</a>;</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160; </div>
-<div class="line"><a name="l00230"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#a324ac11012078a9f3f9b43f3731807d5">  230</a></span>&#160;  <span class="keyword">const</span> <a class="code" href="classwpi_1_1SmallPtrSetImpl.html">SubsystemSet</a>&amp; <a class="code" href="classfrc_1_1Command.html#a324ac11012078a9f3f9b43f3731807d5">GetRequirements</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160; </div>
-<div class="line"><a name="l00240"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#a8091b3429c168c47491230030bb5f520">  240</a></span>&#160;  <a class="code" href="classfrc_1_1CommandGroup.html">CommandGroup</a>* <a class="code" href="classfrc_1_1Command.html#a8091b3429c168c47491230030bb5f520">GetGroup</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160; </div>
-<div class="line"><a name="l00250"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#a10c1a15a1cca718b9034f9abd8d06e9c">  250</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Command.html#a10c1a15a1cca718b9034f9abd8d06e9c">SetRunWhenDisabled</a>(<span class="keywordtype">bool</span> run);</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160; </div>
-<div class="line"><a name="l00259"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#a280811e6ef09e710203dd42ceae5b761">  259</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1Command.html#a280811e6ef09e710203dd42ceae5b761">WillRunWhenDisabled</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160; </div>
-<div class="line"><a name="l00268"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#a0ca6e4b046526824a4815c082f16c90a">  268</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classfrc_1_1Command.html#a0ca6e4b046526824a4815c082f16c90a">GetID</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160; </div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160; <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00277"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#a4225b4ddfe1520170f95e8026eb767c2">  277</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Command.html#a4225b4ddfe1520170f95e8026eb767c2">SetTimeout</a>(<span class="keywordtype">double</span> timeout);</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160; </div>
-<div class="line"><a name="l00287"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#ae0a347b105cc5e7a0bff6ea07a9100ec">  287</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1Command.html#ae0a347b105cc5e7a0bff6ea07a9100ec">IsTimedOut</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160; </div>
-<div class="line"><a name="l00296"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#a5d1b3eacfbdeaa5c88417825a1e4c8d7">  296</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1Command.html#a5d1b3eacfbdeaa5c88417825a1e4c8d7">AssertUnlocked</a>(std::string_view message);</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160; </div>
-<div class="line"><a name="l00303"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#ae9c0fe37b9c6d57c303a8ab5ccd04c59">  303</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Command.html#ae9c0fe37b9c6d57c303a8ab5ccd04c59">SetParent</a>(<a class="code" href="classfrc_1_1CommandGroup.html">CommandGroup</a>* parent);</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160; </div>
-<div class="line"><a name="l00310"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#ad66e97b0447e36aec3e4370a20fa5e4a">  310</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1Command.html#ad66e97b0447e36aec3e4370a20fa5e4a">IsParented</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160; </div>
-<div class="line"><a name="l00318"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#aa7c84392f88831e02a761615e7170457">  318</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Command.html#aa7c84392f88831e02a761615e7170457">ClearRequirements</a>();</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160; </div>
-<div class="line"><a name="l00324"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#a18db0ecafe4e8ec6c1d3e77393fc8843">  324</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Command.html#a18db0ecafe4e8ec6c1d3e77393fc8843">Initialize</a>();</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160; </div>
-<div class="line"><a name="l00330"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#ac26f53da9061c835104c42a6f799e280">  330</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Command.html#ac26f53da9061c835104c42a6f799e280">Execute</a>();</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160; </div>
-<div class="line"><a name="l00348"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#ac1683a5e3ef8870f165db771c85a0dd5">  348</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1Command.html#ac1683a5e3ef8870f165db771c85a0dd5">IsFinished</a>() = 0;</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160; </div>
-<div class="line"><a name="l00356"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#ac4aa2d9113c477d2c41c1b9406a11b21">  356</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Command.html#ac4aa2d9113c477d2c41c1b9406a11b21">End</a>();</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160; </div>
-<div class="line"><a name="l00368"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#a3e53f0de33e61973fbaeaf3a5f4a26aa">  368</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Command.html#a3e53f0de33e61973fbaeaf3a5f4a26aa">Interrupted</a>();</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160; </div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> _Initialize();</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> _Interrupted();</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> _Execute();</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> _End();</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160; </div>
-<div class="line"><a name="l00381"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#ad5180cb79824a93fa0d7d17a01eea162">  381</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Command.html#ad5180cb79824a93fa0d7d17a01eea162">_Cancel</a>();</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160; </div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classfrc_1_1ConditionalCommand.html">ConditionalCommand</a>;</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160; </div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00391"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#a9db1b07ae9c473dfe00386c6769e29c8">  391</a></span>&#160;  std::string <a class="code" href="classfrc_1_1Command.html#a9db1b07ae9c473dfe00386c6769e29c8">GetName</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160; </div>
-<div class="line"><a name="l00398"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#a1638cf5b828dfe9dc58556ee82bead9a">  398</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Command.html#a1638cf5b828dfe9dc58556ee82bead9a">SetName</a>(std::string_view name);</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160; </div>
-<div class="line"><a name="l00405"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#af60c9bdc34425ba1f7c2c2f0642af79e">  405</a></span>&#160;  std::string <a class="code" href="classfrc_1_1Command.html#af60c9bdc34425ba1f7c2c2f0642af79e">GetSubsystem</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160; </div>
-<div class="line"><a name="l00412"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#aa032f133266d14363b121dad31fc46af">  412</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Command.html#aa032f133266d14363b121dad31fc46af">SetSubsystem</a>(std::string_view subsystem);</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160; </div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;  <span class="keywordtype">void</span> LockChanges();</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160; </div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;  <span class="keywordtype">void</span> Removed();</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160; </div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;  <span class="keywordtype">void</span> StartRunning();</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160; </div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;  <span class="keywordtype">void</span> StartTiming();</div>
-<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160; </div>
-<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;  <span class="comment">// The time since this command was initialized</span></div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;  <span class="keywordtype">double</span> m_startTime = -1;</div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160; </div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;  <span class="comment">// The time (in seconds) before this command &quot;times out&quot; (-1 if no timeout)</span></div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;  <span class="keywordtype">double</span> m_timeout;</div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160; </div>
-<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;  <span class="comment">// Whether or not this command has been initialized</span></div>
-<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;  <span class="keywordtype">bool</span> m_initialized = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160; </div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;  <span class="comment">// The requirements (or null if no requirements)</span></div>
-<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;  <a class="code" href="classwpi_1_1SmallPtrSet.html">wpi::SmallPtrSet&lt;Subsystem*, 4&gt;</a> m_requirements;</div>
-<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160; </div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;  <span class="comment">// Whether or not it is running</span></div>
-<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;  <span class="keywordtype">bool</span> m_running = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160; </div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;  <span class="comment">// Whether or not it is interruptible</span></div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;  <span class="keywordtype">bool</span> m_interruptible = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160; </div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;  <span class="comment">// Whether or not it has been canceled</span></div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;  <span class="keywordtype">bool</span> m_canceled = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160; </div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;  <span class="comment">// Whether or not it has been locked</span></div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;  <span class="keywordtype">bool</span> m_locked = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160; </div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;  <span class="comment">// Whether this command should run when the robot is disabled</span></div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;  <span class="keywordtype">bool</span> m_runWhenDisabled = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160; </div>
-<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;  <span class="comment">// The CommandGroup this is in</span></div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;  <a class="code" href="classfrc_1_1CommandGroup.html">CommandGroup</a>* m_parent = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160; </div>
-<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;  <span class="comment">// Whether or not this command has completed running</span></div>
-<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;  <span class="keywordtype">bool</span> m_completed = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160; </div>
-<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;  <span class="keywordtype">int</span> m_commandID = m_commandCounter++;</div>
-<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">int</span> m_commandCounter;</div>
-<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160; </div>
-<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00484"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#a4b1f5f0d84d55431acc146623c5bde5c">  484</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Command.html#a4b1f5f0d84d55431acc146623c5bde5c">InitSendable</a>(<a class="code" href="classfrc_1_1SendableBuilder.html">SendableBuilder</a>&amp; builder) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;};</div>
-<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160; </div>
-<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;units/time.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;wpi/SmallPtrSet.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;frc/commands/Subsystem.h&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;frc/smartdashboard/Sendable.h&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;frc/smartdashboard/SendableHelper.h&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span>frc {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">class </span>CommandGroup;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html">   46</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1Command.html">Command</a> : <span class="keyword">public</span> <a class="code" href="classfrc_1_1Sendable.html">Sendable</a>, <span class="keyword">public</span> <a class="code" href="classfrc_1_1SendableHelper.html">SendableHelper</a>&lt;Command&gt; {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classfrc_1_1CommandGroup.html">CommandGroup</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classfrc_1_1Scheduler.html">Scheduler</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#a5de92743e2afd524fc247a4aeeae0fce">   56</a></span>&#160;  <a class="code" href="classfrc_1_1Command.html#a5de92743e2afd524fc247a4aeeae0fce">Command</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#a0e28d6d5c363150c8d48a2f62ef1928e">   63</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc_1_1Command.html#a0e28d6d5c363150c8d48a2f62ef1928e">Command</a>(std::string_view name);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#acf579e15bc6c70d4937858f0e839edf3">   71</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc_1_1Command.html#acf579e15bc6c70d4937858f0e839edf3">Command</a>(units::second_t timeout);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#a39f74ff82f4b522ce63b8de5dac9fe67">   78</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc_1_1Command.html#a39f74ff82f4b522ce63b8de5dac9fe67">Command</a>(<a class="code" href="classfrc_1_1Subsystem.html">Subsystem</a>&amp; subsystem);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#ac63cdce2a8fa8110759487450660c17a">   87</a></span>&#160;  <a class="code" href="classfrc_1_1Command.html#ac63cdce2a8fa8110759487450660c17a">Command</a>(std::string_view name, units::second_t timeout);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#a3f7d56d4ff84094d5722611f436cbfdb">   95</a></span>&#160;  <a class="code" href="classfrc_1_1Command.html#a3f7d56d4ff84094d5722611f436cbfdb">Command</a>(std::string_view name, <a class="code" href="classfrc_1_1Subsystem.html">Subsystem</a>&amp; subsystem);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#a05c391a1955980bde9b9bd7d48d1899b">  103</a></span>&#160;  <a class="code" href="classfrc_1_1Command.html#a05c391a1955980bde9b9bd7d48d1899b">Command</a>(units::second_t timeout, <a class="code" href="classfrc_1_1Subsystem.html">Subsystem</a>&amp; subsystem);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#a257567545abadd8178fe3a9eb64ba30a">  112</a></span>&#160;  <a class="code" href="classfrc_1_1Command.html#a257567545abadd8178fe3a9eb64ba30a">Command</a>(std::string_view name, units::second_t timeout, <a class="code" href="classfrc_1_1Subsystem.html">Subsystem</a>&amp; subsystem);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  ~<a class="code" href="classfrc_1_1Command.html">Command</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <a class="code" href="classfrc_1_1Command.html#a5de92743e2afd524fc247a4aeeae0fce">Command</a>(<a class="code" href="classfrc_1_1Command.html">Command</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <a class="code" href="classfrc_1_1Command.html">Command</a>&amp; operator=(<a class="code" href="classfrc_1_1Command.html">Command</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#ab29c1b983b4843e5c167324b89d21c69">  126</a></span>&#160;  units::second_t <a class="code" href="classfrc_1_1Command.html#ab29c1b983b4843e5c167324b89d21c69">TimeSinceInitialized</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+<div class="line"><a name="l00138"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#a51cce76d54be5915afaa78c647254f4e">  138</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Command.html#a51cce76d54be5915afaa78c647254f4e">Requires</a>(<a class="code" href="classfrc_1_1Subsystem.html">Subsystem</a>* s);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
+<div class="line"><a name="l00147"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#a0f4501af3516c00803f8540ac6c61175">  147</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Command.html#a0f4501af3516c00803f8540ac6c61175">Start</a>();</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
+<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#a6a57e379abe8b0a358342c6394be78e7">  154</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1Command.html#a6a57e379abe8b0a358342c6394be78e7">Run</a>();</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
+<div class="line"><a name="l00167"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#af816dc206e90bdad6ae895fb5e5574c2">  167</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Command.html#af816dc206e90bdad6ae895fb5e5574c2">Cancel</a>();</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
+<div class="line"><a name="l00177"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#a5f6d91da111c81e554759c66b2aa5ee6">  177</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1Command.html#a5f6d91da111c81e554759c66b2aa5ee6">IsRunning</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
+<div class="line"><a name="l00184"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#ab5949fe65b1b4f26bf230f82f0f44e03">  184</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1Command.html#ab5949fe65b1b4f26bf230f82f0f44e03">IsInitialized</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
+<div class="line"><a name="l00191"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#a75e98922283baeb640adf723bdd6c8ae">  191</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1Command.html#a75e98922283baeb640adf723bdd6c8ae">IsCompleted</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
+<div class="line"><a name="l00198"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#a454143c4df402c266975e1ee124b9a92">  198</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1Command.html#a454143c4df402c266975e1ee124b9a92">IsCanceled</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160; </div>
+<div class="line"><a name="l00205"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#ad9076344a3fb042994fd2ec0e4c33d97">  205</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1Command.html#ad9076344a3fb042994fd2ec0e4c33d97">IsInterruptible</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160; </div>
+<div class="line"><a name="l00212"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#ab657ac42c885ee9e5b7fff126b732f2c">  212</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Command.html#ab657ac42c885ee9e5b7fff126b732f2c">SetInterruptible</a>(<span class="keywordtype">bool</span> interruptible);</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160; </div>
+<div class="line"><a name="l00220"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#a082e02f365d6f594b9b1572ee162eb21">  220</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1Command.html#a082e02f365d6f594b9b1572ee162eb21">DoesRequire</a>(<a class="code" href="classfrc_1_1Subsystem.html">Subsystem</a>* subsystem) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160; </div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;  <span class="keyword">using</span> <a class="code" href="classwpi_1_1SmallPtrSetImpl.html">SubsystemSet</a> = <a class="code" href="classwpi_1_1SmallPtrSetImpl.html">wpi::SmallPtrSetImpl&lt;Subsystem*&gt;</a>;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160; </div>
+<div class="line"><a name="l00231"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#a324ac11012078a9f3f9b43f3731807d5">  231</a></span>&#160;  <span class="keyword">const</span> <a class="code" href="classwpi_1_1SmallPtrSetImpl.html">SubsystemSet</a>&amp; <a class="code" href="classfrc_1_1Command.html#a324ac11012078a9f3f9b43f3731807d5">GetRequirements</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160; </div>
+<div class="line"><a name="l00241"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#a8091b3429c168c47491230030bb5f520">  241</a></span>&#160;  <a class="code" href="classfrc_1_1CommandGroup.html">CommandGroup</a>* <a class="code" href="classfrc_1_1Command.html#a8091b3429c168c47491230030bb5f520">GetGroup</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160; </div>
+<div class="line"><a name="l00251"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#a10c1a15a1cca718b9034f9abd8d06e9c">  251</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Command.html#a10c1a15a1cca718b9034f9abd8d06e9c">SetRunWhenDisabled</a>(<span class="keywordtype">bool</span> run);</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160; </div>
+<div class="line"><a name="l00260"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#a280811e6ef09e710203dd42ceae5b761">  260</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1Command.html#a280811e6ef09e710203dd42ceae5b761">WillRunWhenDisabled</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160; </div>
+<div class="line"><a name="l00269"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#a0ca6e4b046526824a4815c082f16c90a">  269</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classfrc_1_1Command.html#a0ca6e4b046526824a4815c082f16c90a">GetID</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160; </div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160; <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00278"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#a89e8359a369764274a4fcede7f8853cd">  278</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Command.html#a89e8359a369764274a4fcede7f8853cd">SetTimeout</a>(units::second_t timeout);</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160; </div>
+<div class="line"><a name="l00288"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#ae0a347b105cc5e7a0bff6ea07a9100ec">  288</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1Command.html#ae0a347b105cc5e7a0bff6ea07a9100ec">IsTimedOut</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160; </div>
+<div class="line"><a name="l00297"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#a5d1b3eacfbdeaa5c88417825a1e4c8d7">  297</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1Command.html#a5d1b3eacfbdeaa5c88417825a1e4c8d7">AssertUnlocked</a>(std::string_view message);</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160; </div>
+<div class="line"><a name="l00304"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#ae9c0fe37b9c6d57c303a8ab5ccd04c59">  304</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Command.html#ae9c0fe37b9c6d57c303a8ab5ccd04c59">SetParent</a>(<a class="code" href="classfrc_1_1CommandGroup.html">CommandGroup</a>* parent);</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160; </div>
+<div class="line"><a name="l00311"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#ad66e97b0447e36aec3e4370a20fa5e4a">  311</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1Command.html#ad66e97b0447e36aec3e4370a20fa5e4a">IsParented</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160; </div>
+<div class="line"><a name="l00319"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#aa7c84392f88831e02a761615e7170457">  319</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Command.html#aa7c84392f88831e02a761615e7170457">ClearRequirements</a>();</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160; </div>
+<div class="line"><a name="l00325"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#a18db0ecafe4e8ec6c1d3e77393fc8843">  325</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Command.html#a18db0ecafe4e8ec6c1d3e77393fc8843">Initialize</a>();</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160; </div>
+<div class="line"><a name="l00331"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#ac26f53da9061c835104c42a6f799e280">  331</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Command.html#ac26f53da9061c835104c42a6f799e280">Execute</a>();</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160; </div>
+<div class="line"><a name="l00349"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#ac1683a5e3ef8870f165db771c85a0dd5">  349</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1Command.html#ac1683a5e3ef8870f165db771c85a0dd5">IsFinished</a>() = 0;</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160; </div>
+<div class="line"><a name="l00357"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#ac4aa2d9113c477d2c41c1b9406a11b21">  357</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Command.html#ac4aa2d9113c477d2c41c1b9406a11b21">End</a>();</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160; </div>
+<div class="line"><a name="l00369"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#a3e53f0de33e61973fbaeaf3a5f4a26aa">  369</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Command.html#a3e53f0de33e61973fbaeaf3a5f4a26aa">Interrupted</a>();</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160; </div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> _Initialize();</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> _Interrupted();</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> _Execute();</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> _End();</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160; </div>
+<div class="line"><a name="l00382"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#ad5180cb79824a93fa0d7d17a01eea162">  382</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Command.html#ad5180cb79824a93fa0d7d17a01eea162">_Cancel</a>();</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160; </div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classfrc_1_1ConditionalCommand.html">ConditionalCommand</a>;</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160; </div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00392"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#a9db1b07ae9c473dfe00386c6769e29c8">  392</a></span>&#160;  std::string <a class="code" href="classfrc_1_1Command.html#a9db1b07ae9c473dfe00386c6769e29c8">GetName</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160; </div>
+<div class="line"><a name="l00399"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#a1638cf5b828dfe9dc58556ee82bead9a">  399</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Command.html#a1638cf5b828dfe9dc58556ee82bead9a">SetName</a>(std::string_view name);</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160; </div>
+<div class="line"><a name="l00406"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#af60c9bdc34425ba1f7c2c2f0642af79e">  406</a></span>&#160;  std::string <a class="code" href="classfrc_1_1Command.html#af60c9bdc34425ba1f7c2c2f0642af79e">GetSubsystem</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160; </div>
+<div class="line"><a name="l00413"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#aa032f133266d14363b121dad31fc46af">  413</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Command.html#aa032f133266d14363b121dad31fc46af">SetSubsystem</a>(std::string_view subsystem);</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160; </div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;  <span class="keywordtype">void</span> LockChanges();</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160; </div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;  <span class="keywordtype">void</span> Removed();</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160; </div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;  <span class="keywordtype">void</span> StartRunning();</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160; </div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;  <span class="keywordtype">void</span> StartTiming();</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160; </div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;  <span class="comment">// The time since this command was initialized</span></div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;  units::second_t m_startTime = -1_s;</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160; </div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;  <span class="comment">// The time (in seconds) before this command &quot;times out&quot; (-1 if no timeout)</span></div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;  units::second_t m_timeout;</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160; </div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;  <span class="comment">// Whether or not this command has been initialized</span></div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;  <span class="keywordtype">bool</span> m_initialized = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160; </div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;  <span class="comment">// The requirements (or null if no requirements)</span></div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;  <a class="code" href="classwpi_1_1SmallPtrSet.html">wpi::SmallPtrSet&lt;Subsystem*, 4&gt;</a> m_requirements;</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160; </div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;  <span class="comment">// Whether or not it is running</span></div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;  <span class="keywordtype">bool</span> m_running = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160; </div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;  <span class="comment">// Whether or not it is interruptible</span></div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;  <span class="keywordtype">bool</span> m_interruptible = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160; </div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;  <span class="comment">// Whether or not it has been canceled</span></div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;  <span class="keywordtype">bool</span> m_canceled = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160; </div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;  <span class="comment">// Whether or not it has been locked</span></div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;  <span class="keywordtype">bool</span> m_locked = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160; </div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;  <span class="comment">// Whether this command should run when the robot is disabled</span></div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;  <span class="keywordtype">bool</span> m_runWhenDisabled = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160; </div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;  <span class="comment">// The CommandGroup this is in</span></div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;  <a class="code" href="classfrc_1_1CommandGroup.html">CommandGroup</a>* m_parent = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160; </div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;  <span class="comment">// Whether or not this command has completed running</span></div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;  <span class="keywordtype">bool</span> m_completed = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160; </div>
+<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;  <span class="keywordtype">int</span> m_commandID = m_commandCounter++;</div>
+<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">int</span> m_commandCounter;</div>
+<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160; </div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00485"></a><span class="lineno"><a class="line" href="classfrc_1_1Command.html#a4b1f5f0d84d55431acc146623c5bde5c">  485</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Command.html#a4b1f5f0d84d55431acc146623c5bde5c">InitSendable</a>(<a class="code" href="classfrc_1_1SendableBuilder.html">SendableBuilder</a>&amp; builder) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;};</div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160; </div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;}  <span class="comment">// namespace frc</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassfrc_1_1Command_html_ac4aa2d9113c477d2c41c1b9406a11b21"><div class="ttname"><a href="classfrc_1_1Command.html#ac4aa2d9113c477d2c41c1b9406a11b21">frc::Command::End</a></div><div class="ttdeci">virtual void End()</div><div class="ttdoc">Called when the command ended peacefully.</div></div>
 <div class="ttc" id="aclassfrc_1_1Command_html_a6a57e379abe8b0a358342c6394be78e7"><div class="ttname"><a href="classfrc_1_1Command.html#a6a57e379abe8b0a358342c6394be78e7">frc::Command::Run</a></div><div class="ttdeci">bool Run()</div><div class="ttdoc">The run method is used internally to actually run the commands.</div></div>
 <div class="ttc" id="aclassfrc_1_1Command_html_a324ac11012078a9f3f9b43f3731807d5"><div class="ttname"><a href="classfrc_1_1Command.html#a324ac11012078a9f3f9b43f3731807d5">frc::Command::GetRequirements</a></div><div class="ttdeci">const SubsystemSet &amp; GetRequirements() const</div><div class="ttdoc">Returns the requirements (as an std::set of Subsystem pointers) of this command.</div></div>
 <div class="ttc" id="aclassfrc_1_1Command_html_a5d1b3eacfbdeaa5c88417825a1e4c8d7"><div class="ttname"><a href="classfrc_1_1Command.html#a5d1b3eacfbdeaa5c88417825a1e4c8d7">frc::Command::AssertUnlocked</a></div><div class="ttdeci">bool AssertUnlocked(std::string_view message)</div><div class="ttdoc">If changes are locked, then this will generate a CommandIllegalUse error.</div></div>
+<div class="ttc" id="aclassfrc_1_1Command_html_acf579e15bc6c70d4937858f0e839edf3"><div class="ttname"><a href="classfrc_1_1Command.html#acf579e15bc6c70d4937858f0e839edf3">frc::Command::Command</a></div><div class="ttdeci">Command(units::second_t timeout)</div><div class="ttdoc">Creates a new command with the given timeout and a default name.</div></div>
 <div class="ttc" id="aclassfrc_1_1Command_html_af816dc206e90bdad6ae895fb5e5574c2"><div class="ttname"><a href="classfrc_1_1Command.html#af816dc206e90bdad6ae895fb5e5574c2">frc::Command::Cancel</a></div><div class="ttdeci">void Cancel()</div><div class="ttdoc">This will cancel the current command.</div></div>
-<div class="ttc" id="aclassfrc_1_1Command_html_a973489af1fff6f9984c595466df11ced"><div class="ttname"><a href="classfrc_1_1Command.html#a973489af1fff6f9984c595466df11ced">frc::Command::Command</a></div><div class="ttdeci">Command(std::string_view name, double timeout)</div><div class="ttdoc">Creates a new command with the given name and timeout.</div></div>
 <div class="ttc" id="aclassfrc_1_1Command_html_a3e53f0de33e61973fbaeaf3a5f4a26aa"><div class="ttname"><a href="classfrc_1_1Command.html#a3e53f0de33e61973fbaeaf3a5f4a26aa">frc::Command::Interrupted</a></div><div class="ttdeci">virtual void Interrupted()</div><div class="ttdoc">Called when the command ends because somebody called Cancel() or another command shared the same requ...</div></div>
 <div class="ttc" id="aclasswpi_1_1SmallPtrSet_html"><div class="ttname"><a href="classwpi_1_1SmallPtrSet.html">wpi::SmallPtrSet</a></div><div class="ttdoc">SmallPtrSet - This class implements a set which is optimized for holding SmallSize or less elements.</div><div class="ttdef"><b>Definition:</b> SmallPtrSet.h:395</div></div>
 <div class="ttc" id="aclassfrc_1_1Command_html_ac1683a5e3ef8870f165db771c85a0dd5"><div class="ttname"><a href="classfrc_1_1Command.html#ac1683a5e3ef8870f165db771c85a0dd5">frc::Command::IsFinished</a></div><div class="ttdeci">virtual bool IsFinished()=0</div><div class="ttdoc">Returns whether this command is finished.</div></div>
-<div class="ttc" id="aclassfrc_1_1CommandGroup_html"><div class="ttname"><a href="classfrc_1_1CommandGroup.html">frc::CommandGroup</a></div><div class="ttdoc">A CommandGroup is a list of commands which are executed in sequence.</div><div class="ttdef"><b>Definition:</b> CommandGroup.h:32</div></div>
+<div class="ttc" id="aclassfrc_1_1CommandGroup_html"><div class="ttname"><a href="classfrc_1_1CommandGroup.html">frc::CommandGroup</a></div><div class="ttdoc">A CommandGroup is a list of commands which are executed in sequence.</div><div class="ttdef"><b>Definition:</b> CommandGroup.h:34</div></div>
 <div class="ttc" id="aclassfrc_1_1Command_html_a51cce76d54be5915afaa78c647254f4e"><div class="ttname"><a href="classfrc_1_1Command.html#a51cce76d54be5915afaa78c647254f4e">frc::Command::Requires</a></div><div class="ttdeci">void Requires(Subsystem *s)</div><div class="ttdoc">This method specifies that the given Subsystem is used by this command.</div></div>
 <div class="ttc" id="aclassfrc_1_1Scheduler_html"><div class="ttname"><a href="classfrc_1_1Scheduler.html">frc::Scheduler</a></div><div class="ttdef"><b>Definition:</b> Scheduler.h:18</div></div>
 <div class="ttc" id="aclassfrc_1_1Command_html_a39f74ff82f4b522ce63b8de5dac9fe67"><div class="ttname"><a href="classfrc_1_1Command.html#a39f74ff82f4b522ce63b8de5dac9fe67">frc::Command::Command</a></div><div class="ttdeci">Command(Subsystem &amp;subsystem)</div><div class="ttdoc">Creates a new command with the given timeout and a default name.</div></div>
@@ -287,17 +288,18 @@ $(document).ready(function(){initNavTree('wpilibOldCommands_2src_2main_2native_2
 <div class="ttc" id="aclassfrc_1_1Command_html_a1638cf5b828dfe9dc58556ee82bead9a"><div class="ttname"><a href="classfrc_1_1Command.html#a1638cf5b828dfe9dc58556ee82bead9a">frc::Command::SetName</a></div><div class="ttdeci">void SetName(std::string_view name)</div><div class="ttdoc">Sets the name of this Command.</div></div>
 <div class="ttc" id="aclassfrc_1_1Command_html_a5f6d91da111c81e554759c66b2aa5ee6"><div class="ttname"><a href="classfrc_1_1Command.html#a5f6d91da111c81e554759c66b2aa5ee6">frc::Command::IsRunning</a></div><div class="ttdeci">bool IsRunning() const</div><div class="ttdoc">Returns whether or not the command is running.</div></div>
 <div class="ttc" id="aclassfrc_1_1Command_html_a4b1f5f0d84d55431acc146623c5bde5c"><div class="ttname"><a href="classfrc_1_1Command.html#a4b1f5f0d84d55431acc146623c5bde5c">frc::Command::InitSendable</a></div><div class="ttdeci">void InitSendable(SendableBuilder &amp;builder) override</div><div class="ttdoc">Initializes this Sendable object.</div></div>
-<div class="ttc" id="aclassfrc_1_1Command_html_a224b1a26b2f64ce3ec97189da95dfe9f"><div class="ttname"><a href="classfrc_1_1Command.html#a224b1a26b2f64ce3ec97189da95dfe9f">frc::Command::TimeSinceInitialized</a></div><div class="ttdeci">double TimeSinceInitialized() const</div><div class="ttdoc">Returns the time since this command was initialized (in seconds).</div></div>
-<div class="ttc" id="aclassfrc_1_1Command_html"><div class="ttname"><a href="classfrc_1_1Command.html">frc::Command</a></div><div class="ttdoc">The Command class is at the very core of the entire command framework.</div><div class="ttdef"><b>Definition:</b> Command.h:45</div></div>
+<div class="ttc" id="aclassfrc_1_1Command_html"><div class="ttname"><a href="classfrc_1_1Command.html">frc::Command</a></div><div class="ttdoc">The Command class is at the very core of the entire command framework.</div><div class="ttdef"><b>Definition:</b> Command.h:46</div></div>
+<div class="ttc" id="aclassfrc_1_1Command_html_a257567545abadd8178fe3a9eb64ba30a"><div class="ttname"><a href="classfrc_1_1Command.html#a257567545abadd8178fe3a9eb64ba30a">frc::Command::Command</a></div><div class="ttdeci">Command(std::string_view name, units::second_t timeout, Subsystem &amp;subsystem)</div><div class="ttdoc">Creates a new command with the given name and timeout.</div></div>
 <div class="ttc" id="aclassfrc_1_1Command_html_aa7c84392f88831e02a761615e7170457"><div class="ttname"><a href="classfrc_1_1Command.html#aa7c84392f88831e02a761615e7170457">frc::Command::ClearRequirements</a></div><div class="ttdeci">void ClearRequirements()</div><div class="ttdoc">Clears list of subsystem requirements.</div></div>
 <div class="ttc" id="aclassfrc_1_1Command_html_ad66e97b0447e36aec3e4370a20fa5e4a"><div class="ttname"><a href="classfrc_1_1Command.html#ad66e97b0447e36aec3e4370a20fa5e4a">frc::Command::IsParented</a></div><div class="ttdeci">bool IsParented() const</div><div class="ttdoc">Returns whether the command has a parent.</div></div>
 <div class="ttc" id="aclassfrc_1_1Subsystem_html"><div class="ttname"><a href="classfrc_1_1Subsystem.html">frc::Subsystem</a></div><div class="ttdef"><b>Definition:</b> Subsystem.h:18</div></div>
 <div class="ttc" id="aclassfrc_1_1Command_html_a9db1b07ae9c473dfe00386c6769e29c8"><div class="ttname"><a href="classfrc_1_1Command.html#a9db1b07ae9c473dfe00386c6769e29c8">frc::Command::GetName</a></div><div class="ttdeci">std::string GetName() const</div><div class="ttdoc">Gets the name of this Command.</div></div>
 <div class="ttc" id="aclassfrc_1_1Command_html_ab5949fe65b1b4f26bf230f82f0f44e03"><div class="ttname"><a href="classfrc_1_1Command.html#ab5949fe65b1b4f26bf230f82f0f44e03">frc::Command::IsInitialized</a></div><div class="ttdeci">bool IsInitialized() const</div><div class="ttdoc">Returns whether or not the command has been initialized.</div></div>
 <div class="ttc" id="aclassfrc_1_1Command_html_a0ca6e4b046526824a4815c082f16c90a"><div class="ttname"><a href="classfrc_1_1Command.html#a0ca6e4b046526824a4815c082f16c90a">frc::Command::GetID</a></div><div class="ttdeci">int GetID() const</div><div class="ttdoc">Get the ID (sequence number) for this command.</div></div>
-<div class="ttc" id="aclassfrc_1_1Command_html_aa5b872997a00930d75bdbbb7e2529b16"><div class="ttname"><a href="classfrc_1_1Command.html#aa5b872997a00930d75bdbbb7e2529b16">frc::Command::Command</a></div><div class="ttdeci">Command(double timeout, Subsystem &amp;subsystem)</div><div class="ttdoc">Creates a new command with the given name and timeout.</div></div>
 <div class="ttc" id="aclassfrc_1_1Command_html_af60c9bdc34425ba1f7c2c2f0642af79e"><div class="ttname"><a href="classfrc_1_1Command.html#af60c9bdc34425ba1f7c2c2f0642af79e">frc::Command::GetSubsystem</a></div><div class="ttdeci">std::string GetSubsystem() const</div><div class="ttdoc">Gets the subsystem name of this Command.</div></div>
+<div class="ttc" id="aclassfrc_1_1Command_html_a05c391a1955980bde9b9bd7d48d1899b"><div class="ttname"><a href="classfrc_1_1Command.html#a05c391a1955980bde9b9bd7d48d1899b">frc::Command::Command</a></div><div class="ttdeci">Command(units::second_t timeout, Subsystem &amp;subsystem)</div><div class="ttdoc">Creates a new command with the given name and timeout.</div></div>
 <div class="ttc" id="aclassfrc_1_1Command_html_a454143c4df402c266975e1ee124b9a92"><div class="ttname"><a href="classfrc_1_1Command.html#a454143c4df402c266975e1ee124b9a92">frc::Command::IsCanceled</a></div><div class="ttdeci">bool IsCanceled() const</div><div class="ttdoc">Returns whether or not this has been canceled.</div></div>
+<div class="ttc" id="aclassfrc_1_1Command_html_ab29c1b983b4843e5c167324b89d21c69"><div class="ttname"><a href="classfrc_1_1Command.html#ab29c1b983b4843e5c167324b89d21c69">frc::Command::TimeSinceInitialized</a></div><div class="ttdeci">units::second_t TimeSinceInitialized() const</div><div class="ttdoc">Returns the time since this command was initialized.</div></div>
 <div class="ttc" id="aclasswpi_1_1SmallPtrSetImpl_html"><div class="ttname"><a href="classwpi_1_1SmallPtrSetImpl.html">wpi::SmallPtrSetImpl</a></div><div class="ttdoc">A templated base class for SmallPtrSet which provides the typesafe interface that is common across al...</div><div class="ttdef"><b>Definition:</b> SmallPtrSet.h:324</div></div>
 <div class="ttc" id="aclassfrc_1_1Command_html_a0e28d6d5c363150c8d48a2f62ef1928e"><div class="ttname"><a href="classfrc_1_1Command.html#a0e28d6d5c363150c8d48a2f62ef1928e">frc::Command::Command</a></div><div class="ttdeci">Command(std::string_view name)</div><div class="ttdoc">Creates a new command with the given name and no timeout.</div></div>
 <div class="ttc" id="aclassfrc_1_1Command_html_a0f4501af3516c00803f8540ac6c61175"><div class="ttname"><a href="classfrc_1_1Command.html#a0f4501af3516c00803f8540ac6c61175">frc::Command::Start</a></div><div class="ttdeci">void Start()</div><div class="ttdoc">Starts up the command.</div></div>
@@ -305,16 +307,15 @@ $(document).ready(function(){initNavTree('wpilibOldCommands_2src_2main_2native_2
 <div class="ttc" id="aclassfrc_1_1Command_html_ad5180cb79824a93fa0d7d17a01eea162"><div class="ttname"><a href="classfrc_1_1Command.html#ad5180cb79824a93fa0d7d17a01eea162">frc::Command::_Cancel</a></div><div class="ttdeci">virtual void _Cancel()</div><div class="ttdoc">This works like Cancel(), except that it doesn't throw an exception if it is a part of a command grou...</div></div>
 <div class="ttc" id="aclassfrc_1_1Command_html_a082e02f365d6f594b9b1572ee162eb21"><div class="ttname"><a href="classfrc_1_1Command.html#a082e02f365d6f594b9b1572ee162eb21">frc::Command::DoesRequire</a></div><div class="ttdeci">bool DoesRequire(Subsystem *subsystem) const</div><div class="ttdoc">Checks if the command requires the given Subsystem.</div></div>
 <div class="ttc" id="aclassfrc_1_1Sendable_html"><div class="ttname"><a href="classfrc_1_1Sendable.html">frc::Sendable</a></div><div class="ttdoc">Interface for Sendable objects.</div><div class="ttdef"><b>Definition:</b> Sendable.h:14</div></div>
-<div class="ttc" id="aclassfrc_1_1Command_html_a4225b4ddfe1520170f95e8026eb767c2"><div class="ttname"><a href="classfrc_1_1Command.html#a4225b4ddfe1520170f95e8026eb767c2">frc::Command::SetTimeout</a></div><div class="ttdeci">void SetTimeout(double timeout)</div><div class="ttdoc">Sets the timeout of this command.</div></div>
 <div class="ttc" id="aclassfrc_1_1Command_html_ab657ac42c885ee9e5b7fff126b732f2c"><div class="ttname"><a href="classfrc_1_1Command.html#ab657ac42c885ee9e5b7fff126b732f2c">frc::Command::SetInterruptible</a></div><div class="ttdeci">void SetInterruptible(bool interruptible)</div><div class="ttdoc">Sets whether or not this command can be interrupted.</div></div>
-<div class="ttc" id="aclassfrc_1_1Command_html_aaa2eda01608ff58f8e8a4fde6159453a"><div class="ttname"><a href="classfrc_1_1Command.html#aaa2eda01608ff58f8e8a4fde6159453a">frc::Command::Command</a></div><div class="ttdeci">Command(std::string_view name, double timeout, Subsystem &amp;subsystem)</div><div class="ttdoc">Creates a new command with the given name and timeout.</div></div>
+<div class="ttc" id="aclassfrc_1_1Command_html_ac63cdce2a8fa8110759487450660c17a"><div class="ttname"><a href="classfrc_1_1Command.html#ac63cdce2a8fa8110759487450660c17a">frc::Command::Command</a></div><div class="ttdeci">Command(std::string_view name, units::second_t timeout)</div><div class="ttdoc">Creates a new command with the given name and timeout.</div></div>
 <div class="ttc" id="aclassfrc_1_1Command_html_a10c1a15a1cca718b9034f9abd8d06e9c"><div class="ttname"><a href="classfrc_1_1Command.html#a10c1a15a1cca718b9034f9abd8d06e9c">frc::Command::SetRunWhenDisabled</a></div><div class="ttdeci">void SetRunWhenDisabled(bool run)</div><div class="ttdoc">Sets whether or not this Command should run when the robot is disabled.</div></div>
 <div class="ttc" id="aclassfrc_1_1Command_html_a75e98922283baeb640adf723bdd6c8ae"><div class="ttname"><a href="classfrc_1_1Command.html#a75e98922283baeb640adf723bdd6c8ae">frc::Command::IsCompleted</a></div><div class="ttdeci">bool IsCompleted() const</div><div class="ttdoc">Returns whether or not the command has completed running.</div></div>
 <div class="ttc" id="aclassfrc_1_1Command_html_a3f7d56d4ff84094d5722611f436cbfdb"><div class="ttname"><a href="classfrc_1_1Command.html#a3f7d56d4ff84094d5722611f436cbfdb">frc::Command::Command</a></div><div class="ttdeci">Command(std::string_view name, Subsystem &amp;subsystem)</div><div class="ttdoc">Creates a new command with the given name and timeout.</div></div>
 <div class="ttc" id="aclassfrc_1_1Command_html_ae0a347b105cc5e7a0bff6ea07a9100ec"><div class="ttname"><a href="classfrc_1_1Command.html#ae0a347b105cc5e7a0bff6ea07a9100ec">frc::Command::IsTimedOut</a></div><div class="ttdeci">bool IsTimedOut() const</div><div class="ttdoc">Returns whether or not the TimeSinceInitialized() method returns a number which is greater than or eq...</div></div>
 <div class="ttc" id="aclassfrc_1_1Command_html_a18db0ecafe4e8ec6c1d3e77393fc8843"><div class="ttname"><a href="classfrc_1_1Command.html#a18db0ecafe4e8ec6c1d3e77393fc8843">frc::Command::Initialize</a></div><div class="ttdeci">virtual void Initialize()</div><div class="ttdoc">The initialize method is called the first time this Command is run after being started.</div></div>
 <div class="ttc" id="aclassfrc_1_1Command_html_ac26f53da9061c835104c42a6f799e280"><div class="ttname"><a href="classfrc_1_1Command.html#ac26f53da9061c835104c42a6f799e280">frc::Command::Execute</a></div><div class="ttdeci">virtual void Execute()</div><div class="ttdoc">The execute method is called repeatedly until this Command either finishes or is canceled.</div></div>
-<div class="ttc" id="aclassfrc_1_1Command_html_a9b3096cbc964df9bf9cbe6c1457c5835"><div class="ttname"><a href="classfrc_1_1Command.html#a9b3096cbc964df9bf9cbe6c1457c5835">frc::Command::Command</a></div><div class="ttdeci">Command(double timeout)</div><div class="ttdoc">Creates a new command with the given timeout and a default name.</div></div>
+<div class="ttc" id="aclassfrc_1_1Command_html_a89e8359a369764274a4fcede7f8853cd"><div class="ttname"><a href="classfrc_1_1Command.html#a89e8359a369764274a4fcede7f8853cd">frc::Command::SetTimeout</a></div><div class="ttdeci">void SetTimeout(units::second_t timeout)</div><div class="ttdoc">Sets the timeout of this command.</div></div>
 <div class="ttc" id="aclassfrc_1_1SendableHelper_html"><div class="ttname"><a href="classfrc_1_1SendableHelper.html">frc::SendableHelper</a></div><div class="ttdoc">A helper class for use with objects that add themselves to SendableRegistry.</div><div class="ttdef"><b>Definition:</b> SendableHelper.h:25</div></div>
 <div class="ttc" id="aclassfrc_1_1Command_html_a280811e6ef09e710203dd42ceae5b761"><div class="ttname"><a href="classfrc_1_1Command.html#a280811e6ef09e710203dd42ceae5b761">frc::Command::WillRunWhenDisabled</a></div><div class="ttdeci">bool WillRunWhenDisabled() const</div><div class="ttdoc">Returns whether or not this Command will run when the robot is disabled, or if it will cancel itself.</div></div>
 <div class="ttc" id="aclassfrc_1_1SendableBuilder_html"><div class="ttname"><a href="classfrc_1_1SendableBuilder.html">frc::SendableBuilder</a></div><div class="ttdef"><b>Definition:</b> SendableBuilder.h:21</div></div>
@@ -324,7 +325,7 @@ $(document).ready(function(){initNavTree('wpilibOldCommands_2src_2main_2native_2
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_bb1991b688e3fae464f82f03a0e274c4.html">frc</a></li><li class="navelem"><a class="el" href="dir_4ab5eeb5ed54f6cf3cf8c80dd363976a.html">commands</a></li><li class="navelem"><b>Command.h</b></li>
-    <li class="footer">Generated on Sat May 29 2021 05:07:08 for WPILibC++ by
+    <li class="footer">Generated on Sat May 29 2021 05:08:55 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

@@ -8,7 +8,6 @@ var files_dup =
     [ "frc", "dir_bb1991b688e3fae464f82f03a0e274c4.html", "dir_bb1991b688e3fae464f82f03a0e274c4" ],
     [ "frc", "dir_4d863b529094b8a59afd2a32ef89b8cd.html", "dir_4d863b529094b8a59afd2a32ef89b8cd" ],
     [ "frc2", "dir_e7d5d1c9c07b3d6a0a849f7ca2bfcaa9.html", "dir_e7d5d1c9c07b3d6a0a849f7ca2bfcaa9" ],
-    [ "frc2", "dir_493cc50f8e81ada9ed17d03f8b3f360c.html", "dir_493cc50f8e81ada9ed17d03f8b3f360c" ],
     [ "hal", "dir_7dfa5b6b9262a4050979ee23e0eb392d.html", "dir_7dfa5b6b9262a4050979ee23e0eb392d" ],
     [ "networktables", "dir_46f80a5b907f4a68e6277ec93a133082.html", "dir_46f80a5b907f4a68e6277ec93a133082" ],
     [ "vision", "dir_e0a9384abf5c2f50047c6336e9d3d267.html", "dir_e0a9384abf5c2f50047c6336e9d3d267" ],

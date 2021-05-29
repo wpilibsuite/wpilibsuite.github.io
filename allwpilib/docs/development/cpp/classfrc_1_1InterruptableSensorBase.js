@@ -17,13 +17,13 @@ var classfrc_1_1InterruptableSensorBase =
     [ "GetAnalogTriggerTypeForRouting", "classfrc_1_1InterruptableSensorBase.html#a15ce344cc4fb04ecc2d784ae490b7696", null ],
     [ "GetPortHandleForRouting", "classfrc_1_1InterruptableSensorBase.html#a819871d70a5a055415385d92d9966af9", null ],
     [ "operator=", "classfrc_1_1InterruptableSensorBase.html#a2c1569fc7f6a7941c2955f834bd617f9", null ],
-    [ "ReadFallingTimestamp", "classfrc_1_1InterruptableSensorBase.html#a3051d50a812790c9c90a5f44e0bf4eca", null ],
-    [ "ReadRisingTimestamp", "classfrc_1_1InterruptableSensorBase.html#a27d0e82781d8bfbdbe11b3b16148e90b", null ],
+    [ "ReadFallingTimestamp", "classfrc_1_1InterruptableSensorBase.html#a6a08d00180306f22f04e5689d29900ff", null ],
+    [ "ReadRisingTimestamp", "classfrc_1_1InterruptableSensorBase.html#a1f3774c8a193e4527b76be7c71372e88", null ],
     [ "RequestInterrupts", "classfrc_1_1InterruptableSensorBase.html#af99269b96a34858bb2cf609eff41bf6b", null ],
     [ "RequestInterrupts", "classfrc_1_1InterruptableSensorBase.html#a31a1ee3339b6194c7b4eaa3719d6d797", null ],
     [ "RequestInterrupts", "classfrc_1_1InterruptableSensorBase.html#aed2392fa61c1a3a2fbfb9dadd69b79af", null ],
     [ "SetUpSourceEdge", "classfrc_1_1InterruptableSensorBase.html#a028684a11a9f88bd2833f7713e68cb10", null ],
-    [ "WaitForInterrupt", "classfrc_1_1InterruptableSensorBase.html#a055769db2bfe6c5b0b6b07dab39fb970", null ],
+    [ "WaitForInterrupt", "classfrc_1_1InterruptableSensorBase.html#ac07cceef3a37a53a20204549b5133ff5", null ],
     [ "m_interrupt", "classfrc_1_1InterruptableSensorBase.html#a1a296710fa053355394990982baf19af", null ],
     [ "m_interruptHandler", "classfrc_1_1InterruptableSensorBase.html#aaaa56ba0452cbb293f0508f3647c3928", null ]
 ];

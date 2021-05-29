@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-78-g827b17a</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-79-ge09293a</span>
    </div>
   </td>
  </tr>
@@ -101,72 +101,73 @@ $(document).ready(function(){initNavTree('MotorSafety_8h_source.html',''); initR
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;wpi/mutex.h&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;frc/Timer.h&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span>frc {</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classfrc_1_1MotorSafety.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1MotorSafety.html">MotorSafety</a> {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <a class="code" href="classfrc_1_1MotorSafety.html">MotorSafety</a>();</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classfrc_1_1MotorSafety.html">MotorSafety</a>();</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <a class="code" href="classfrc_1_1MotorSafety.html">MotorSafety</a>(<a class="code" href="classfrc_1_1MotorSafety.html">MotorSafety</a>&amp;&amp; rhs);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <a class="code" href="classfrc_1_1MotorSafety.html">MotorSafety</a>&amp; operator=(<a class="code" href="classfrc_1_1MotorSafety.html">MotorSafety</a>&amp;&amp; rhs);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classfrc_1_1MotorSafety.html#a64f96194caddf9df5e0ab9871fb2b7a3">   34</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1MotorSafety.html#a64f96194caddf9df5e0ab9871fb2b7a3">Feed</a>();</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classfrc_1_1MotorSafety.html#aa4b1249b4fa63040a711bcaf7c7fb2d4">   41</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1MotorSafety.html#aa4b1249b4fa63040a711bcaf7c7fb2d4">SetExpiration</a>(<span class="keywordtype">double</span> expirationTime);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classfrc_1_1MotorSafety.html#ad2cfdc7e808eb4670fcd14d63e83c679">   48</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classfrc_1_1MotorSafety.html#ad2cfdc7e808eb4670fcd14d63e83c679">GetExpiration</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classfrc_1_1MotorSafety.html#af48493aa5e82c350b59f2ecd2953be31">   55</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1MotorSafety.html#af48493aa5e82c350b59f2ecd2953be31">IsAlive</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classfrc_1_1MotorSafety.html#a59fd72553c5de00827b21037f0c88ec4">   64</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1MotorSafety.html#a59fd72553c5de00827b21037f0c88ec4">SetSafetyEnabled</a>(<span class="keywordtype">bool</span> enabled);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classfrc_1_1MotorSafety.html#a6d4ff31fddf4aa7af933b47e8b04833e">   73</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1MotorSafety.html#a6d4ff31fddf4aa7af933b47e8b04833e">IsSafetyEnabled</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classfrc_1_1MotorSafety.html#a1449c25e11582cbea7d3e2254479f42b">   82</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1MotorSafety.html#a1449c25e11582cbea7d3e2254479f42b">Check</a>();</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="classfrc_1_1MotorSafety.html#a2a666ba39461317728e52fbaa9cdca32">   90</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1MotorSafety.html#a2a666ba39461317728e52fbaa9cdca32">CheckMotors</a>();</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> StopMotor() = 0;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keyword">virtual</span> std::string GetDescription() <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keyword">static</span> constexpr <span class="keywordtype">double</span> kDefaultSafetyExpiration = 0.1;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="comment">// The expiration time for this object</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordtype">double</span> m_expiration = kDefaultSafetyExpiration;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="comment">// True if motor safety is enabled for this motor</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keywordtype">bool</span> m_enabled = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="comment">// The FPGA clock value when the motor has expired</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keywordtype">double</span> m_stopTime = <a class="code" href="classfrc_1_1Timer.html#a35aa65e2046982979c224fa98fe0d051">Timer::GetFPGATimestamp</a>();</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="keyword">mutable</span> wpi::mutex m_thisMutex;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;};</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;units/time.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;wpi/mutex.h&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;frc/Timer.h&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span>frc {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classfrc_1_1MotorSafety.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1MotorSafety.html">MotorSafety</a> {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <a class="code" href="classfrc_1_1MotorSafety.html">MotorSafety</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classfrc_1_1MotorSafety.html">MotorSafety</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <a class="code" href="classfrc_1_1MotorSafety.html">MotorSafety</a>(<a class="code" href="classfrc_1_1MotorSafety.html">MotorSafety</a>&amp;&amp; rhs);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <a class="code" href="classfrc_1_1MotorSafety.html">MotorSafety</a>&amp; operator=(<a class="code" href="classfrc_1_1MotorSafety.html">MotorSafety</a>&amp;&amp; rhs);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classfrc_1_1MotorSafety.html#a64f96194caddf9df5e0ab9871fb2b7a3">   35</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1MotorSafety.html#a64f96194caddf9df5e0ab9871fb2b7a3">Feed</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classfrc_1_1MotorSafety.html#a50a1de9a34f3efda20c6e46df1a77b4e">   42</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1MotorSafety.html#a50a1de9a34f3efda20c6e46df1a77b4e">SetExpiration</a>(units::second_t expirationTime);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classfrc_1_1MotorSafety.html#a22aecf3025d0dc3d50b9b9323b9051c9">   49</a></span>&#160;  units::second_t <a class="code" href="classfrc_1_1MotorSafety.html#a22aecf3025d0dc3d50b9b9323b9051c9">GetExpiration</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classfrc_1_1MotorSafety.html#af48493aa5e82c350b59f2ecd2953be31">   56</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1MotorSafety.html#af48493aa5e82c350b59f2ecd2953be31">IsAlive</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classfrc_1_1MotorSafety.html#a59fd72553c5de00827b21037f0c88ec4">   65</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1MotorSafety.html#a59fd72553c5de00827b21037f0c88ec4">SetSafetyEnabled</a>(<span class="keywordtype">bool</span> enabled);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classfrc_1_1MotorSafety.html#a6d4ff31fddf4aa7af933b47e8b04833e">   74</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1MotorSafety.html#a6d4ff31fddf4aa7af933b47e8b04833e">IsSafetyEnabled</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="classfrc_1_1MotorSafety.html#a1449c25e11582cbea7d3e2254479f42b">   83</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1MotorSafety.html#a1449c25e11582cbea7d3e2254479f42b">Check</a>();</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="classfrc_1_1MotorSafety.html#a2a666ba39461317728e52fbaa9cdca32">   91</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1MotorSafety.html#a2a666ba39461317728e52fbaa9cdca32">CheckMotors</a>();</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> StopMotor() = 0;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keyword">virtual</span> std::string GetDescription() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keyword">static</span> constexpr <span class="keyword">auto</span> kDefaultSafetyExpiration = 100_ms;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="comment">// The expiration time for this object</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  units::second_t m_expiration = kDefaultSafetyExpiration;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="comment">// True if motor safety is enabled for this motor</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordtype">bool</span> m_enabled = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="comment">// The FPGA clock value when the motor has expired</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  units::second_t m_stopTime = <a class="code" href="classfrc_1_1Timer.html#a1a0b1c162a033bbf4d7053eee550745c">Timer::GetFPGATimestamp</a>();</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keyword">mutable</span> wpi::mutex m_thisMutex;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;};</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;}  <span class="comment">// namespace frc</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassfrc_1_1MotorSafety_html_ad2cfdc7e808eb4670fcd14d63e83c679"><div class="ttname"><a href="classfrc_1_1MotorSafety.html#ad2cfdc7e808eb4670fcd14d63e83c679">frc::MotorSafety::GetExpiration</a></div><div class="ttdeci">double GetExpiration() const</div><div class="ttdoc">Retrieve the timeout value for the corresponding motor safety object.</div></div>
 <div class="ttc" id="aclassfrc_1_1MotorSafety_html_a2a666ba39461317728e52fbaa9cdca32"><div class="ttname"><a href="classfrc_1_1MotorSafety.html#a2a666ba39461317728e52fbaa9cdca32">frc::MotorSafety::CheckMotors</a></div><div class="ttdeci">static void CheckMotors()</div><div class="ttdoc">Check the motors to see if any have timed out.</div></div>
 <div class="ttc" id="aclassfrc_1_1MotorSafety_html_af48493aa5e82c350b59f2ecd2953be31"><div class="ttname"><a href="classfrc_1_1MotorSafety.html#af48493aa5e82c350b59f2ecd2953be31">frc::MotorSafety::IsAlive</a></div><div class="ttdeci">bool IsAlive() const</div><div class="ttdoc">Determine if the motor is still operating or has timed out.</div></div>
+<div class="ttc" id="aclassfrc_1_1Timer_html_a1a0b1c162a033bbf4d7053eee550745c"><div class="ttname"><a href="classfrc_1_1Timer.html#a1a0b1c162a033bbf4d7053eee550745c">frc::Timer::GetFPGATimestamp</a></div><div class="ttdeci">static units::second_t GetFPGATimestamp()</div><div class="ttdoc">Return the FPGA system clock time in seconds.</div></div>
 <div class="ttc" id="aclassfrc_1_1MotorSafety_html_a64f96194caddf9df5e0ab9871fb2b7a3"><div class="ttname"><a href="classfrc_1_1MotorSafety.html#a64f96194caddf9df5e0ab9871fb2b7a3">frc::MotorSafety::Feed</a></div><div class="ttdeci">void Feed()</div><div class="ttdoc">Feed the motor safety object.</div></div>
-<div class="ttc" id="aclassfrc_1_1MotorSafety_html"><div class="ttname"><a href="classfrc_1_1MotorSafety.html">frc::MotorSafety</a></div><div class="ttdoc">This base class runs a watchdog timer and calls the subclass's StopMotor() function if the timeout ex...</div><div class="ttdef"><b>Definition:</b> MotorSafety.h:21</div></div>
+<div class="ttc" id="aclassfrc_1_1MotorSafety_html"><div class="ttname"><a href="classfrc_1_1MotorSafety.html">frc::MotorSafety</a></div><div class="ttdoc">This base class runs a watchdog timer and calls the subclass's StopMotor() function if the timeout ex...</div><div class="ttdef"><b>Definition:</b> MotorSafety.h:22</div></div>
 <div class="ttc" id="aclassfrc_1_1MotorSafety_html_a59fd72553c5de00827b21037f0c88ec4"><div class="ttname"><a href="classfrc_1_1MotorSafety.html#a59fd72553c5de00827b21037f0c88ec4">frc::MotorSafety::SetSafetyEnabled</a></div><div class="ttdeci">void SetSafetyEnabled(bool enabled)</div><div class="ttdoc">Enable/disable motor safety for this device.</div></div>
-<div class="ttc" id="aclassfrc_1_1MotorSafety_html_aa4b1249b4fa63040a711bcaf7c7fb2d4"><div class="ttname"><a href="classfrc_1_1MotorSafety.html#aa4b1249b4fa63040a711bcaf7c7fb2d4">frc::MotorSafety::SetExpiration</a></div><div class="ttdeci">void SetExpiration(double expirationTime)</div><div class="ttdoc">Set the expiration time for the corresponding motor safety object.</div></div>
-<div class="ttc" id="aclassfrc_1_1Timer_html_a35aa65e2046982979c224fa98fe0d051"><div class="ttname"><a href="classfrc_1_1Timer.html#a35aa65e2046982979c224fa98fe0d051">frc::Timer::GetFPGATimestamp</a></div><div class="ttdeci">static double GetFPGATimestamp()</div><div class="ttdoc">Return the FPGA system clock time in seconds.</div></div>
+<div class="ttc" id="aclassfrc_1_1MotorSafety_html_a22aecf3025d0dc3d50b9b9323b9051c9"><div class="ttname"><a href="classfrc_1_1MotorSafety.html#a22aecf3025d0dc3d50b9b9323b9051c9">frc::MotorSafety::GetExpiration</a></div><div class="ttdeci">units::second_t GetExpiration() const</div><div class="ttdoc">Retrieve the timeout value for the corresponding motor safety object.</div></div>
 <div class="ttc" id="aclassfrc_1_1MotorSafety_html_a1449c25e11582cbea7d3e2254479f42b"><div class="ttname"><a href="classfrc_1_1MotorSafety.html#a1449c25e11582cbea7d3e2254479f42b">frc::MotorSafety::Check</a></div><div class="ttdeci">void Check()</div><div class="ttdoc">Check if this motor has exceeded its timeout.</div></div>
+<div class="ttc" id="aclassfrc_1_1MotorSafety_html_a50a1de9a34f3efda20c6e46df1a77b4e"><div class="ttname"><a href="classfrc_1_1MotorSafety.html#a50a1de9a34f3efda20c6e46df1a77b4e">frc::MotorSafety::SetExpiration</a></div><div class="ttdeci">void SetExpiration(units::second_t expirationTime)</div><div class="ttdoc">Set the expiration time for the corresponding motor safety object.</div></div>
 <div class="ttc" id="aclassfrc_1_1MotorSafety_html_a6d4ff31fddf4aa7af933b47e8b04833e"><div class="ttname"><a href="classfrc_1_1MotorSafety.html#a6d4ff31fddf4aa7af933b47e8b04833e">frc::MotorSafety::IsSafetyEnabled</a></div><div class="ttdeci">bool IsSafetyEnabled() const</div><div class="ttdoc">Return the state of the motor safety enabled flag.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><b>MotorSafety.h</b></li>
-    <li class="footer">Generated on Sat May 29 2021 05:07:07 for WPILibC++ by
+    <li class="footer">Generated on Sat May 29 2021 05:08:54 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

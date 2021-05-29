@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-78-g827b17a</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-79-ge09293a</span>
    </div>
   </td>
  </tr>
@@ -100,50 +100,51 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;hal/Types.h&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;frc/SolenoidBase.h&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;frc/smartdashboard/Sendable.h&quot;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;frc/smartdashboard/SendableHelper.h&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span>frc {</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">class </span>SendableBuilder;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classfrc_1_1Solenoid.html">   23</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1Solenoid.html">Solenoid</a> : <span class="keyword">public</span> <a class="code" href="classfrc_1_1SolenoidBase.html">SolenoidBase</a>,</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                 <span class="keyword">public</span> <a class="code" href="classfrc_1_1Sendable.html">Sendable</a>,</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                 <span class="keyword">public</span> <a class="code" href="classfrc_1_1SendableHelper.html">SendableHelper</a>&lt;Solenoid&gt; {</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classfrc_1_1Solenoid.html#a2f1aa95afed763b07fc0821418cab2db">   32</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc_1_1Solenoid.html#a2f1aa95afed763b07fc0821418cab2db">Solenoid</a>(<span class="keywordtype">int</span> channel);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classfrc_1_1Solenoid.html#a9ff51fd18311d0da6e67a7c2dbf90d90">   40</a></span>&#160;  <a class="code" href="classfrc_1_1Solenoid.html#a9ff51fd18311d0da6e67a7c2dbf90d90">Solenoid</a>(<span class="keywordtype">int</span> moduleNumber, <span class="keywordtype">int</span> channel);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  ~<a class="code" href="classfrc_1_1Solenoid.html">Solenoid</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <a class="code" href="classfrc_1_1Solenoid.html#a2f1aa95afed763b07fc0821418cab2db">Solenoid</a>(<a class="code" href="classfrc_1_1Solenoid.html">Solenoid</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="classfrc_1_1Solenoid.html">Solenoid</a>&amp; operator=(<a class="code" href="classfrc_1_1Solenoid.html">Solenoid</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classfrc_1_1Solenoid.html#a9ee630c928008f0070eae1f9986cdfd2">   52</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Solenoid.html#a9ee630c928008f0070eae1f9986cdfd2">Set</a>(<span class="keywordtype">bool</span> on);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classfrc_1_1Solenoid.html#aabf7b34baf6fda4f6f87f79d62c20f66">   59</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1Solenoid.html#aabf7b34baf6fda4f6f87f79d62c20f66">Get</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classfrc_1_1Solenoid.html#a0825354d6291aeb0a89f9b33d75a8a24">   67</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Solenoid.html#a0825354d6291aeb0a89f9b33d75a8a24">Toggle</a>();</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classfrc_1_1Solenoid.html#a955bc01fb6844349295b0cce5555527f">   72</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classfrc_1_1Solenoid.html#a955bc01fb6844349295b0cce5555527f">GetChannel</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="classfrc_1_1Solenoid.html#a3947cbcc73de70a6b7244700c77c693e">   84</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1Solenoid.html#a3947cbcc73de70a6b7244700c77c693e">IsBlackListed</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="classfrc_1_1Solenoid.html#a66b6ffd42f53c3829150711e200b23a8">   96</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Solenoid.html#a66b6ffd42f53c3829150711e200b23a8">SetPulseDuration</a>(<span class="keywordtype">double</span> durationSeconds);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="classfrc_1_1Solenoid.html#a60b4342d9bddc7bf5745918622a08290">  104</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Solenoid.html#a60b4342d9bddc7bf5745918622a08290">StartPulse</a>();</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="classfrc_1_1Solenoid.html#aa512f68dcea950f8acc681b4d5dc6496">  106</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Solenoid.html#aa512f68dcea950f8acc681b4d5dc6496">InitSendable</a>(<a class="code" href="classfrc_1_1SendableBuilder.html">SendableBuilder</a>&amp; builder) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  hal::Handle&lt;HAL_SolenoidHandle&gt; m_solenoidHandle;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="keywordtype">int</span> m_channel;  <span class="comment">// The channel on the module to control</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;};</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;units/time.h&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;frc/SolenoidBase.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;frc/smartdashboard/Sendable.h&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;frc/smartdashboard/SendableHelper.h&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span>frc {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">class </span>SendableBuilder;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classfrc_1_1Solenoid.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1Solenoid.html">Solenoid</a> : <span class="keyword">public</span> <a class="code" href="classfrc_1_1SolenoidBase.html">SolenoidBase</a>,</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                 <span class="keyword">public</span> <a class="code" href="classfrc_1_1Sendable.html">Sendable</a>,</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                 <span class="keyword">public</span> <a class="code" href="classfrc_1_1SendableHelper.html">SendableHelper</a>&lt;Solenoid&gt; {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classfrc_1_1Solenoid.html#a2f1aa95afed763b07fc0821418cab2db">   33</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc_1_1Solenoid.html#a2f1aa95afed763b07fc0821418cab2db">Solenoid</a>(<span class="keywordtype">int</span> channel);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classfrc_1_1Solenoid.html#a9ff51fd18311d0da6e67a7c2dbf90d90">   41</a></span>&#160;  <a class="code" href="classfrc_1_1Solenoid.html#a9ff51fd18311d0da6e67a7c2dbf90d90">Solenoid</a>(<span class="keywordtype">int</span> moduleNumber, <span class="keywordtype">int</span> channel);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  ~<a class="code" href="classfrc_1_1Solenoid.html">Solenoid</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="classfrc_1_1Solenoid.html#a2f1aa95afed763b07fc0821418cab2db">Solenoid</a>(<a class="code" href="classfrc_1_1Solenoid.html">Solenoid</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <a class="code" href="classfrc_1_1Solenoid.html">Solenoid</a>&amp; operator=(<a class="code" href="classfrc_1_1Solenoid.html">Solenoid</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classfrc_1_1Solenoid.html#a9ee630c928008f0070eae1f9986cdfd2">   53</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Solenoid.html#a9ee630c928008f0070eae1f9986cdfd2">Set</a>(<span class="keywordtype">bool</span> on);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classfrc_1_1Solenoid.html#aabf7b34baf6fda4f6f87f79d62c20f66">   60</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1Solenoid.html#aabf7b34baf6fda4f6f87f79d62c20f66">Get</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classfrc_1_1Solenoid.html#a0825354d6291aeb0a89f9b33d75a8a24">   68</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Solenoid.html#a0825354d6291aeb0a89f9b33d75a8a24">Toggle</a>();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classfrc_1_1Solenoid.html#a955bc01fb6844349295b0cce5555527f">   73</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classfrc_1_1Solenoid.html#a955bc01fb6844349295b0cce5555527f">GetChannel</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classfrc_1_1Solenoid.html#a3947cbcc73de70a6b7244700c77c693e">   85</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1Solenoid.html#a3947cbcc73de70a6b7244700c77c693e">IsBlackListed</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="classfrc_1_1Solenoid.html#a1f65b6d1b6fe29af2982073ccc7499c0">   97</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Solenoid.html#a1f65b6d1b6fe29af2982073ccc7499c0">SetPulseDuration</a>(units::second_t duration);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="classfrc_1_1Solenoid.html#a60b4342d9bddc7bf5745918622a08290">  105</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Solenoid.html#a60b4342d9bddc7bf5745918622a08290">StartPulse</a>();</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="classfrc_1_1Solenoid.html#aa512f68dcea950f8acc681b4d5dc6496">  107</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Solenoid.html#aa512f68dcea950f8acc681b4d5dc6496">InitSendable</a>(<a class="code" href="classfrc_1_1SendableBuilder.html">SendableBuilder</a>&amp; builder) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  hal::Handle&lt;HAL_SolenoidHandle&gt; m_solenoidHandle;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keywordtype">int</span> m_channel;  <span class="comment">// The channel on the module to control</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;};</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}  <span class="comment">// namespace frc</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassfrc_1_1Solenoid_html_a9ee630c928008f0070eae1f9986cdfd2"><div class="ttname"><a href="classfrc_1_1Solenoid.html#a9ee630c928008f0070eae1f9986cdfd2">frc::Solenoid::Set</a></div><div class="ttdeci">virtual void Set(bool on)</div><div class="ttdoc">Set the value of a solenoid.</div></div>
@@ -151,21 +152,21 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div class="ttc" id="aclassfrc_1_1Solenoid_html_a3947cbcc73de70a6b7244700c77c693e"><div class="ttname"><a href="classfrc_1_1Solenoid.html#a3947cbcc73de70a6b7244700c77c693e">frc::Solenoid::IsBlackListed</a></div><div class="ttdeci">bool IsBlackListed() const</div><div class="ttdoc">Check if solenoid is blacklisted.</div></div>
 <div class="ttc" id="aclassfrc_1_1Solenoid_html_a955bc01fb6844349295b0cce5555527f"><div class="ttname"><a href="classfrc_1_1Solenoid.html#a955bc01fb6844349295b0cce5555527f">frc::Solenoid::GetChannel</a></div><div class="ttdeci">int GetChannel() const</div><div class="ttdoc">Get the channel this solenoid is connected to.</div></div>
 <div class="ttc" id="aclassfrc_1_1Solenoid_html_a9ff51fd18311d0da6e67a7c2dbf90d90"><div class="ttname"><a href="classfrc_1_1Solenoid.html#a9ff51fd18311d0da6e67a7c2dbf90d90">frc::Solenoid::Solenoid</a></div><div class="ttdeci">Solenoid(int moduleNumber, int channel)</div><div class="ttdoc">Constructor.</div></div>
+<div class="ttc" id="aclassfrc_1_1Solenoid_html_a1f65b6d1b6fe29af2982073ccc7499c0"><div class="ttname"><a href="classfrc_1_1Solenoid.html#a1f65b6d1b6fe29af2982073ccc7499c0">frc::Solenoid::SetPulseDuration</a></div><div class="ttdeci">void SetPulseDuration(units::second_t duration)</div><div class="ttdoc">Set the pulse duration in the PCM.</div></div>
 <div class="ttc" id="aclassfrc_1_1Solenoid_html_aabf7b34baf6fda4f6f87f79d62c20f66"><div class="ttname"><a href="classfrc_1_1Solenoid.html#aabf7b34baf6fda4f6f87f79d62c20f66">frc::Solenoid::Get</a></div><div class="ttdeci">virtual bool Get() const</div><div class="ttdoc">Read the current value of the solenoid.</div></div>
 <div class="ttc" id="aclassfrc_1_1Solenoid_html_a60b4342d9bddc7bf5745918622a08290"><div class="ttname"><a href="classfrc_1_1Solenoid.html#a60b4342d9bddc7bf5745918622a08290">frc::Solenoid::StartPulse</a></div><div class="ttdeci">void StartPulse()</div><div class="ttdoc">Trigger the PCM to generate a pulse of the duration set in setPulseDuration.</div></div>
-<div class="ttc" id="aclassfrc_1_1Solenoid_html"><div class="ttname"><a href="classfrc_1_1Solenoid.html">frc::Solenoid</a></div><div class="ttdoc">Solenoid class for running high voltage Digital Output (PCM).</div><div class="ttdef"><b>Definition:</b> Solenoid.h:25</div></div>
+<div class="ttc" id="aclassfrc_1_1Solenoid_html"><div class="ttname"><a href="classfrc_1_1Solenoid.html">frc::Solenoid</a></div><div class="ttdoc">Solenoid class for running high voltage Digital Output (PCM).</div><div class="ttdef"><b>Definition:</b> Solenoid.h:26</div></div>
 <div class="ttc" id="aclassfrc_1_1SolenoidBase_html"><div class="ttname"><a href="classfrc_1_1SolenoidBase.html">frc::SolenoidBase</a></div><div class="ttdoc">SolenoidBase class is the common base class for the Solenoid and DoubleSolenoid classes.</div><div class="ttdef"><b>Definition:</b> SolenoidBase.h:13</div></div>
 <div class="ttc" id="aclassfrc_1_1Sendable_html"><div class="ttname"><a href="classfrc_1_1Sendable.html">frc::Sendable</a></div><div class="ttdoc">Interface for Sendable objects.</div><div class="ttdef"><b>Definition:</b> Sendable.h:14</div></div>
 <div class="ttc" id="aclassfrc_1_1Solenoid_html_a2f1aa95afed763b07fc0821418cab2db"><div class="ttname"><a href="classfrc_1_1Solenoid.html#a2f1aa95afed763b07fc0821418cab2db">frc::Solenoid::Solenoid</a></div><div class="ttdeci">Solenoid(int channel)</div><div class="ttdoc">Constructor using the default PCM ID (0).</div></div>
 <div class="ttc" id="aclassfrc_1_1SendableHelper_html"><div class="ttname"><a href="classfrc_1_1SendableHelper.html">frc::SendableHelper</a></div><div class="ttdoc">A helper class for use with objects that add themselves to SendableRegistry.</div><div class="ttdef"><b>Definition:</b> SendableHelper.h:25</div></div>
 <div class="ttc" id="aclassfrc_1_1SendableBuilder_html"><div class="ttname"><a href="classfrc_1_1SendableBuilder.html">frc::SendableBuilder</a></div><div class="ttdef"><b>Definition:</b> SendableBuilder.h:21</div></div>
-<div class="ttc" id="aclassfrc_1_1Solenoid_html_a66b6ffd42f53c3829150711e200b23a8"><div class="ttname"><a href="classfrc_1_1Solenoid.html#a66b6ffd42f53c3829150711e200b23a8">frc::Solenoid::SetPulseDuration</a></div><div class="ttdeci">void SetPulseDuration(double durationSeconds)</div><div class="ttdoc">Set the pulse duration in the PCM.</div></div>
 <div class="ttc" id="aclassfrc_1_1Solenoid_html_aa512f68dcea950f8acc681b4d5dc6496"><div class="ttname"><a href="classfrc_1_1Solenoid.html#aa512f68dcea950f8acc681b4d5dc6496">frc::Solenoid::InitSendable</a></div><div class="ttdeci">void InitSendable(SendableBuilder &amp;builder) override</div><div class="ttdoc">Initializes this Sendable object.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><b>Solenoid.h</b></li>
-    <li class="footer">Generated on Sat May 29 2021 05:07:07 for WPILibC++ by
+    <li class="footer">Generated on Sat May 29 2021 05:08:54 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

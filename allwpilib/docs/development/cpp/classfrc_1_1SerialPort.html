@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-78-g827b17a</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-79-ge09293a</span>
    </div>
   </td>
  </tr>
@@ -177,9 +177,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:aa4b6be1e50efd9500c9cb72a729797fb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SerialPort.html#aa4b6be1e50efd9500c9cb72a729797fb">Write</a> (std::string_view <a class="el" href="classbuffer.html">buffer</a>)</td></tr>
 <tr class="memdesc:aa4b6be1e50efd9500c9cb72a729797fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write raw bytes to the buffer.  <a href="classfrc_1_1SerialPort.html#aa4b6be1e50efd9500c9cb72a729797fb">More...</a><br /></td></tr>
 <tr class="separator:aa4b6be1e50efd9500c9cb72a729797fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a52d5b1c53f3edae2052550a2eef771"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SerialPort.html#a1a52d5b1c53f3edae2052550a2eef771">SetTimeout</a> (double timeout)</td></tr>
-<tr class="memdesc:a1a52d5b1c53f3edae2052550a2eef771"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the timeout of the serial port.  <a href="classfrc_1_1SerialPort.html#a1a52d5b1c53f3edae2052550a2eef771">More...</a><br /></td></tr>
-<tr class="separator:a1a52d5b1c53f3edae2052550a2eef771"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2f41da3f7852a7097d61ff997143a85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SerialPort.html#ab2f41da3f7852a7097d61ff997143a85">SetTimeout</a> (units::second_t timeout)</td></tr>
+<tr class="memdesc:ab2f41da3f7852a7097d61ff997143a85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the timeout of the serial port.  <a href="classfrc_1_1SerialPort.html#ab2f41da3f7852a7097d61ff997143a85">More...</a><br /></td></tr>
+<tr class="separator:ab2f41da3f7852a7097d61ff997143a85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c8c8495405ddcdb925111a1c7d2666c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SerialPort.html#a2c8c8495405ddcdb925111a1c7d2666c">SetReadBufferSize</a> (int size)</td></tr>
 <tr class="memdesc:a2c8c8495405ddcdb925111a1c7d2666c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify the size of the input buffer.  <a href="classfrc_1_1SerialPort.html#a2c8c8495405ddcdb925111a1c7d2666c">More...</a><br /></td></tr>
 <tr class="separator:a2c8c8495405ddcdb925111a1c7d2666c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -508,8 +508,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a id="a1a52d5b1c53f3edae2052550a2eef771"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a52d5b1c53f3edae2052550a2eef771">&#9670;&nbsp;</a></span>SetTimeout()</h2>
+<a id="ab2f41da3f7852a7097d61ff997143a85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2f41da3f7852a7097d61ff997143a85">&#9670;&nbsp;</a></span>SetTimeout()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -517,7 +517,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         <tr>
           <td class="memname">void frc::SerialPort::SetTimeout </td>
           <td>(</td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">units::second_t&#160;</td>
           <td class="paramname"><em>timeout</em></td><td>)</td>
           <td></td>
         </tr>
@@ -528,7 +528,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <p>This defines the timeout for transactions with the hardware. It will affect reads and very large writes.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">timeout</td><td>The number of seconds to to wait for I/O. </td></tr>
+    <tr><td class="paramname">timeout</td><td>The time to wait for I/O. </td></tr>
   </table>
   </dd>
 </dl>
@@ -665,7 +665,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1SerialPort.html">SerialPort</a></li>
-    <li class="footer">Generated on Sat May 29 2021 05:07:10 for WPILibC++ by
+    <li class="footer">Generated on Sat May 29 2021 05:08:58 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

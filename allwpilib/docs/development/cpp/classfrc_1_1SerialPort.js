@@ -42,7 +42,7 @@ var classfrc_1_1SerialPort =
     [ "Reset", "classfrc_1_1SerialPort.html#ac8b4115a7231812d3893894e2f6e9a48", null ],
     [ "SetFlowControl", "classfrc_1_1SerialPort.html#af9a6e92242c4f5792ab98cda05ac880c", null ],
     [ "SetReadBufferSize", "classfrc_1_1SerialPort.html#a2c8c8495405ddcdb925111a1c7d2666c", null ],
-    [ "SetTimeout", "classfrc_1_1SerialPort.html#a1a52d5b1c53f3edae2052550a2eef771", null ],
+    [ "SetTimeout", "classfrc_1_1SerialPort.html#ab2f41da3f7852a7097d61ff997143a85", null ],
     [ "SetWriteBufferMode", "classfrc_1_1SerialPort.html#a724f1545a15bf23ced9ac7e3f384801e", null ],
     [ "SetWriteBufferSize", "classfrc_1_1SerialPort.html#a4a7b7df3e2ed45ec1956cc399018b5d4", null ],
     [ "Write", "classfrc_1_1SerialPort.html#a8c725f9011fb3c484fb0c90a0d6a8fc0", null ],

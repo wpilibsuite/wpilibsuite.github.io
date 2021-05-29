@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-78-g827b17a</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-79-ge09293a</span>
    </div>
   </td>
  </tr>
@@ -173,61 +173,58 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div class="line"><a name="l00242"></a><span class="lineno"><a class="line" href="classfrc_1_1SPI.html#ae108111a963f8730bf3e77a5f72b3907">  242</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classfrc_1_1SPI.html#ae108111a963f8730bf3e77a5f72b3907">ReadAutoReceivedData</a>(uint32_t* <a class="code" href="classbuffer.html">buffer</a>, <span class="keywordtype">int</span> numToRead,</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                           units::second_t timeout);</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160; </div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;  WPI_DEPRECATED(&quot;Use <a class="code" href="classfrc_1_1SPI.html#ae108111a963f8730bf3e77a5f72b3907">ReadAutoReceivedData</a> with unit-safety instead&quot;)</div>
-<div class="line"><a name="l00269"></a><span class="lineno"><a class="line" href="classfrc_1_1SPI.html#a248b4f03717613ba2d130584d32a19d7">  269</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classfrc_1_1SPI.html#ae108111a963f8730bf3e77a5f72b3907">ReadAutoReceivedData</a>(uint32_t* <a class="code" href="classbuffer.html">buffer</a>, <span class="keywordtype">int</span> numToRead, <span class="keywordtype">double</span> timeout);</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160; </div>
-<div class="line"><a name="l00277"></a><span class="lineno"><a class="line" href="classfrc_1_1SPI.html#aeb4b59232167132f9b2ca13eb5d497b6">  277</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classfrc_1_1SPI.html#aeb4b59232167132f9b2ca13eb5d497b6">GetAutoDroppedCount</a>();</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160; </div>
-<div class="line"><a name="l00289"></a><span class="lineno"><a class="line" href="classfrc_1_1SPI.html#afed70a1e9bbc2f355c759623cad415f9">  289</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1SPI.html#afed70a1e9bbc2f355c759623cad415f9">ConfigureAutoStall</a>(HAL_SPIPort port, <span class="keywordtype">int</span> csToSclkTicks, <span class="keywordtype">int</span> stallTicks,</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                          <span class="keywordtype">int</span> pow2BytesPerRead);</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160; </div>
-<div class="line"><a name="l00307"></a><span class="lineno"><a class="line" href="classfrc_1_1SPI.html#af2bda94cf34d6e5905efa5d54c726510">  307</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1SPI.html#af2bda94cf34d6e5905efa5d54c726510">InitAccumulator</a>(units::second_t period, <span class="keywordtype">int</span> cmd, <span class="keywordtype">int</span> xferSize,</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;                       <span class="keywordtype">int</span> validMask, <span class="keywordtype">int</span> validValue, <span class="keywordtype">int</span> dataShift,</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;                       <span class="keywordtype">int</span> dataSize, <span class="keywordtype">bool</span> isSigned, <span class="keywordtype">bool</span> bigEndian);</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160; </div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;  WPI_DEPRECATED(&quot;Use <a class="code" href="classfrc_1_1SPI.html#af2bda94cf34d6e5905efa5d54c726510">InitAccumulator</a> with unit-safety instead&quot;)</div>
-<div class="line"><a name="l00332"></a><span class="lineno"><a class="line" href="classfrc_1_1SPI.html#aa071c1d8e6c6c9995db38dd9c1dd03b4">  332</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1SPI.html#af2bda94cf34d6e5905efa5d54c726510">InitAccumulator</a>(<span class="keywordtype">double</span> period, <span class="keywordtype">int</span> cmd, <span class="keywordtype">int</span> xferSize, <span class="keywordtype">int</span> validMask,</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;                       <span class="keywordtype">int</span> validValue, <span class="keywordtype">int</span> dataShift, <span class="keywordtype">int</span> dataSize,</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;                       <span class="keywordtype">bool</span> isSigned, <span class="keywordtype">bool</span> bigEndian);</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160; </div>
-<div class="line"><a name="l00339"></a><span class="lineno"><a class="line" href="classfrc_1_1SPI.html#a50f17234e771c6eb5d154972237cb1e1">  339</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1SPI.html#a50f17234e771c6eb5d154972237cb1e1">FreeAccumulator</a>();</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160; </div>
-<div class="line"><a name="l00344"></a><span class="lineno"><a class="line" href="classfrc_1_1SPI.html#a5f3c8d773e8e3bdae420ca14b29dc6e4">  344</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1SPI.html#a5f3c8d773e8e3bdae420ca14b29dc6e4">ResetAccumulator</a>();</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160; </div>
-<div class="line"><a name="l00354"></a><span class="lineno"><a class="line" href="classfrc_1_1SPI.html#acac48eeec3574ed6670dfa58fafcdfdd">  354</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1SPI.html#acac48eeec3574ed6670dfa58fafcdfdd">SetAccumulatorCenter</a>(<span class="keywordtype">int</span> center);</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160; </div>
-<div class="line"><a name="l00359"></a><span class="lineno"><a class="line" href="classfrc_1_1SPI.html#a5c423b7cb5f34b4c076881f167ff0d9a">  359</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1SPI.html#a5c423b7cb5f34b4c076881f167ff0d9a">SetAccumulatorDeadband</a>(<span class="keywordtype">int</span> deadband);</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160; </div>
-<div class="line"><a name="l00364"></a><span class="lineno"><a class="line" href="classfrc_1_1SPI.html#ab888155b386c50496f2d6fcdc3a41967">  364</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classfrc_1_1SPI.html#ab888155b386c50496f2d6fcdc3a41967">GetAccumulatorLastValue</a>() const;</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160; </div>
-<div class="line"><a name="l00371"></a><span class="lineno"><a class="line" href="classfrc_1_1SPI.html#ad75723cb2e4d98b60979295a2e2aaaf4">  371</a></span>&#160;  int64_t <a class="code" href="classfrc_1_1SPI.html#ad75723cb2e4d98b60979295a2e2aaaf4">GetAccumulatorValue</a>() const;</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160; </div>
-<div class="line"><a name="l00381"></a><span class="lineno"><a class="line" href="classfrc_1_1SPI.html#aa03efd57e6a32ee565f5e7a3196b643b">  381</a></span>&#160;  int64_t <a class="code" href="classfrc_1_1SPI.html#aa03efd57e6a32ee565f5e7a3196b643b">GetAccumulatorCount</a>() const;</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160; </div>
-<div class="line"><a name="l00388"></a><span class="lineno"><a class="line" href="classfrc_1_1SPI.html#a69f9888cae9f8a9dbef67f2d97a2487d">  388</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classfrc_1_1SPI.html#a69f9888cae9f8a9dbef67f2d97a2487d">GetAccumulatorAverage</a>() const;</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160; </div>
-<div class="line"><a name="l00399"></a><span class="lineno"><a class="line" href="classfrc_1_1SPI.html#af29b8a57f73536ce03f1e9f68623f332">  399</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1SPI.html#af29b8a57f73536ce03f1e9f68623f332">GetAccumulatorOutput</a>(int64_t&amp; <a class="code" href="classvalue.html">value</a>, int64_t&amp; count) const;</div>
+<div class="line"><a name="l00251"></a><span class="lineno"><a class="line" href="classfrc_1_1SPI.html#aeb4b59232167132f9b2ca13eb5d497b6">  251</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classfrc_1_1SPI.html#aeb4b59232167132f9b2ca13eb5d497b6">GetAutoDroppedCount</a>();</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160; </div>
+<div class="line"><a name="l00263"></a><span class="lineno"><a class="line" href="classfrc_1_1SPI.html#afed70a1e9bbc2f355c759623cad415f9">  263</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1SPI.html#afed70a1e9bbc2f355c759623cad415f9">ConfigureAutoStall</a>(HAL_SPIPort port, <span class="keywordtype">int</span> csToSclkTicks, <span class="keywordtype">int</span> stallTicks,</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;                          <span class="keywordtype">int</span> pow2BytesPerRead);</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160; </div>
+<div class="line"><a name="l00281"></a><span class="lineno"><a class="line" href="classfrc_1_1SPI.html#af2bda94cf34d6e5905efa5d54c726510">  281</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1SPI.html#af2bda94cf34d6e5905efa5d54c726510">InitAccumulator</a>(units::second_t period, <span class="keywordtype">int</span> cmd, <span class="keywordtype">int</span> xferSize,</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                       <span class="keywordtype">int</span> validMask, <span class="keywordtype">int</span> validValue, <span class="keywordtype">int</span> dataShift,</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;                       <span class="keywordtype">int</span> dataSize, <span class="keywordtype">bool</span> isSigned, <span class="keywordtype">bool</span> bigEndian);</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160; </div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;  WPI_DEPRECATED(&quot;Use <a class="code" href="classfrc_1_1SPI.html#af2bda94cf34d6e5905efa5d54c726510">InitAccumulator</a> with unit-safety instead&quot;)</div>
+<div class="line"><a name="l00306"></a><span class="lineno"><a class="line" href="classfrc_1_1SPI.html#aa071c1d8e6c6c9995db38dd9c1dd03b4">  306</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1SPI.html#af2bda94cf34d6e5905efa5d54c726510">InitAccumulator</a>(<span class="keywordtype">double</span> period, <span class="keywordtype">int</span> cmd, <span class="keywordtype">int</span> xferSize, <span class="keywordtype">int</span> validMask,</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;                       <span class="keywordtype">int</span> validValue, <span class="keywordtype">int</span> dataShift, <span class="keywordtype">int</span> dataSize,</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;                       <span class="keywordtype">bool</span> isSigned, <span class="keywordtype">bool</span> bigEndian);</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160; </div>
+<div class="line"><a name="l00313"></a><span class="lineno"><a class="line" href="classfrc_1_1SPI.html#a50f17234e771c6eb5d154972237cb1e1">  313</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1SPI.html#a50f17234e771c6eb5d154972237cb1e1">FreeAccumulator</a>();</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160; </div>
+<div class="line"><a name="l00318"></a><span class="lineno"><a class="line" href="classfrc_1_1SPI.html#a5f3c8d773e8e3bdae420ca14b29dc6e4">  318</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1SPI.html#a5f3c8d773e8e3bdae420ca14b29dc6e4">ResetAccumulator</a>();</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160; </div>
+<div class="line"><a name="l00328"></a><span class="lineno"><a class="line" href="classfrc_1_1SPI.html#acac48eeec3574ed6670dfa58fafcdfdd">  328</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1SPI.html#acac48eeec3574ed6670dfa58fafcdfdd">SetAccumulatorCenter</a>(<span class="keywordtype">int</span> center);</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160; </div>
+<div class="line"><a name="l00333"></a><span class="lineno"><a class="line" href="classfrc_1_1SPI.html#a5c423b7cb5f34b4c076881f167ff0d9a">  333</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1SPI.html#a5c423b7cb5f34b4c076881f167ff0d9a">SetAccumulatorDeadband</a>(<span class="keywordtype">int</span> deadband);</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160; </div>
+<div class="line"><a name="l00338"></a><span class="lineno"><a class="line" href="classfrc_1_1SPI.html#ab888155b386c50496f2d6fcdc3a41967">  338</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classfrc_1_1SPI.html#ab888155b386c50496f2d6fcdc3a41967">GetAccumulatorLastValue</a>() const;</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160; </div>
+<div class="line"><a name="l00345"></a><span class="lineno"><a class="line" href="classfrc_1_1SPI.html#ad75723cb2e4d98b60979295a2e2aaaf4">  345</a></span>&#160;  int64_t <a class="code" href="classfrc_1_1SPI.html#ad75723cb2e4d98b60979295a2e2aaaf4">GetAccumulatorValue</a>() const;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160; </div>
+<div class="line"><a name="l00355"></a><span class="lineno"><a class="line" href="classfrc_1_1SPI.html#aa03efd57e6a32ee565f5e7a3196b643b">  355</a></span>&#160;  int64_t <a class="code" href="classfrc_1_1SPI.html#aa03efd57e6a32ee565f5e7a3196b643b">GetAccumulatorCount</a>() const;</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160; </div>
+<div class="line"><a name="l00362"></a><span class="lineno"><a class="line" href="classfrc_1_1SPI.html#a69f9888cae9f8a9dbef67f2d97a2487d">  362</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classfrc_1_1SPI.html#a69f9888cae9f8a9dbef67f2d97a2487d">GetAccumulatorAverage</a>() const;</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160; </div>
+<div class="line"><a name="l00373"></a><span class="lineno"><a class="line" href="classfrc_1_1SPI.html#af29b8a57f73536ce03f1e9f68623f332">  373</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1SPI.html#af29b8a57f73536ce03f1e9f68623f332">GetAccumulatorOutput</a>(int64_t&amp; <a class="code" href="classvalue.html">value</a>, int64_t&amp; count) const;</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160; </div>
+<div class="line"><a name="l00382"></a><span class="lineno"><a class="line" href="classfrc_1_1SPI.html#a1a538757d510cbea45e087a7e02e515e">  382</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1SPI.html#a1a538757d510cbea45e087a7e02e515e">SetAccumulatorIntegratedCenter</a>(<span class="keywordtype">double</span> center);</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160; </div>
+<div class="line"><a name="l00390"></a><span class="lineno"><a class="line" href="classfrc_1_1SPI.html#abbb8f06f6bdece9794d994809cf46dc7">  390</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classfrc_1_1SPI.html#abbb8f06f6bdece9794d994809cf46dc7">GetAccumulatorIntegratedValue</a>() const;</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160; </div>
+<div class="line"><a name="l00399"></a><span class="lineno"><a class="line" href="classfrc_1_1SPI.html#a2249db26eca01d21361747391251ab70">  399</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classfrc_1_1SPI.html#a2249db26eca01d21361747391251ab70">GetAccumulatorIntegratedAverage</a>() const;</div>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160; </div>
-<div class="line"><a name="l00408"></a><span class="lineno"><a class="line" href="classfrc_1_1SPI.html#a1a538757d510cbea45e087a7e02e515e">  408</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1SPI.html#a1a538757d510cbea45e087a7e02e515e">SetAccumulatorIntegratedCenter</a>(<span class="keywordtype">double</span> center);</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160; protected:</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;  <a class="code" href="namespacehal.html">hal</a>::SPIPort m_port;</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;  <span class="keywordtype">bool</span> m_msbFirst = false;          <span class="comment">// Default little-endian</span></div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;  <span class="keywordtype">bool</span> m_sampleOnTrailing = false;  <span class="comment">// Default data updated on falling edge</span></div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;  <span class="keywordtype">bool</span> m_clockIdleHigh = false;     <span class="comment">// Default clock active high</span></div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160; </div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160; private:</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;  <span class="keywordtype">void</span> Init();</div>
 <div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160; </div>
-<div class="line"><a name="l00416"></a><span class="lineno"><a class="line" href="classfrc_1_1SPI.html#abbb8f06f6bdece9794d994809cf46dc7">  416</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classfrc_1_1SPI.html#abbb8f06f6bdece9794d994809cf46dc7">GetAccumulatorIntegratedValue</a>() const;</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160; </div>
-<div class="line"><a name="l00425"></a><span class="lineno"><a class="line" href="classfrc_1_1SPI.html#a2249db26eca01d21361747391251ab70">  425</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classfrc_1_1SPI.html#a2249db26eca01d21361747391251ab70">GetAccumulatorIntegratedAverage</a>() const;</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160; </div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160; protected:</div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;  <a class="code" href="namespacehal.html">hal</a>::SPIPort m_port;</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;  <span class="keywordtype">bool</span> m_msbFirst = false;          <span class="comment">// Default little-endian</span></div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;  <span class="keywordtype">bool</span> m_sampleOnTrailing = false;  <span class="comment">// Default data updated on falling edge</span></div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;  <span class="keywordtype">bool</span> m_clockIdleHigh = false;     <span class="comment">// Default clock active high</span></div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160; </div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160; private:</div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;  <span class="keywordtype">void</span> Init();</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160; </div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;  class Accumulator;</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;  std::unique_ptr&lt;Accumulator&gt; m_accum;</div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;};</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160; </div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;  class Accumulator;</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;  std::unique_ptr&lt;Accumulator&gt; m_accum;</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;};</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160; </div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;}  <span class="comment">// namespace frc</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassfrc_1_1SPI_html_a2d1fddb48bef3faefc190fa7ac9728ca"><div class="ttname"><a href="classfrc_1_1SPI.html#a2d1fddb48bef3faefc190fa7ac9728ca">frc::SPI::SetLSBFirst</a></div><div class="ttdeci">void SetLSBFirst()</div><div class="ttdoc">Configure the order that bits are sent and received on the wire to be least significant bit first.</div></div>
@@ -278,7 +275,7 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><b>SPI.h</b></li>
-    <li class="footer">Generated on Sat May 29 2021 05:07:07 for WPILibC++ by
+    <li class="footer">Generated on Sat May 29 2021 05:08:54 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

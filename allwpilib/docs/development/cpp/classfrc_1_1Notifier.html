@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-78-g827b17a</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-79-ge09293a</span>
    </div>
   </td>
  </tr>
@@ -130,15 +130,9 @@ template&lt;typename Callable , typename Arg , typename... Args&gt; </td></tr>
 <tr class="memitem:a3744a6ff39272da9ad719fead95bc31a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Notifier.html#a3744a6ff39272da9ad719fead95bc31a">SetHandler</a> (std::function&lt; void()&gt; handler)</td></tr>
 <tr class="memdesc:a3744a6ff39272da9ad719fead95bc31a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the handler function.  <a href="classfrc_1_1Notifier.html#a3744a6ff39272da9ad719fead95bc31a">More...</a><br /></td></tr>
 <tr class="separator:a3744a6ff39272da9ad719fead95bc31a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af333fd2ede95b074803d2e15d9ae58b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Notifier.html#af333fd2ede95b074803d2e15d9ae58b2">StartSingle</a> (double delay)</td></tr>
-<tr class="memdesc:af333fd2ede95b074803d2e15d9ae58b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register for single event notification.  <a href="classfrc_1_1Notifier.html#af333fd2ede95b074803d2e15d9ae58b2">More...</a><br /></td></tr>
-<tr class="separator:af333fd2ede95b074803d2e15d9ae58b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6fdc8a4a8ecbbb4a863e639bf719323"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Notifier.html#ac6fdc8a4a8ecbbb4a863e639bf719323">StartSingle</a> (units::second_t delay)</td></tr>
 <tr class="memdesc:ac6fdc8a4a8ecbbb4a863e639bf719323"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register for single event notification.  <a href="classfrc_1_1Notifier.html#ac6fdc8a4a8ecbbb4a863e639bf719323">More...</a><br /></td></tr>
 <tr class="separator:ac6fdc8a4a8ecbbb4a863e639bf719323"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94134987d0296d5c193246e6543791e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Notifier.html#a94134987d0296d5c193246e6543791e0">StartPeriodic</a> (double period)</td></tr>
-<tr class="memdesc:a94134987d0296d5c193246e6543791e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register for periodic event notification.  <a href="classfrc_1_1Notifier.html#a94134987d0296d5c193246e6543791e0">More...</a><br /></td></tr>
-<tr class="separator:a94134987d0296d5c193246e6543791e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bc1b27b2d22ca7de91fe1701746c521"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Notifier.html#a5bc1b27b2d22ca7de91fe1701746c521">StartPeriodic</a> (units::second_t period)</td></tr>
 <tr class="memdesc:a5bc1b27b2d22ca7de91fe1701746c521"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register for periodic event notification.  <a href="classfrc_1_1Notifier.html#a5bc1b27b2d22ca7de91fe1701746c521">More...</a><br /></td></tr>
 <tr class="separator:a5bc1b27b2d22ca7de91fe1701746c521"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -335,36 +329,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a94134987d0296d5c193246e6543791e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a94134987d0296d5c193246e6543791e0">&#9670;&nbsp;</a></span>StartPeriodic() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void frc::Notifier::StartPeriodic </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>period</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Register for periodic event notification. </p>
-<p>A timer event is queued for periodic event notification. Each time the interrupt occurs, the event will be immediately requeued for the same time interval.</p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000015">Deprecated:</a></b></dt><dd>Use unit-safe <a class="el" href="classfrc_1_1Notifier.html#a5bc1b27b2d22ca7de91fe1701746c521" title="Register for periodic event notification.">StartPeriodic(units::second_t period)</a> method instead</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">period</td><td>Period in seconds to call the handler starting one period after the call to this method. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a5bc1b27b2d22ca7de91fe1701746c521"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5bc1b27b2d22ca7de91fe1701746c521">&#9670;&nbsp;</a></span>StartPeriodic() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bc1b27b2d22ca7de91fe1701746c521">&#9670;&nbsp;</a></span>StartPeriodic()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -390,36 +356,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af333fd2ede95b074803d2e15d9ae58b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af333fd2ede95b074803d2e15d9ae58b2">&#9670;&nbsp;</a></span>StartSingle() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void frc::Notifier::StartSingle </td>
-          <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>delay</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Register for single event notification. </p>
-<p>A timer event is queued for a single event after the specified delay.</p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000014">Deprecated:</a></b></dt><dd>Use unit-safe <a class="el" href="classfrc_1_1Notifier.html#ac6fdc8a4a8ecbbb4a863e639bf719323" title="Register for single event notification.">StartSingle(units::second_t delay)</a> method instead.</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">delay</td><td>Seconds to wait before the handler is called. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="ac6fdc8a4a8ecbbb4a863e639bf719323"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6fdc8a4a8ecbbb4a863e639bf719323">&#9670;&nbsp;</a></span>StartSingle() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6fdc8a4a8ecbbb4a863e639bf719323">&#9670;&nbsp;</a></span>StartSingle()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -475,7 +413,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1Notifier.html">Notifier</a></li>
-    <li class="footer">Generated on Sat May 29 2021 05:07:10 for WPILibC++ by
+    <li class="footer">Generated on Sat May 29 2021 05:08:57 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

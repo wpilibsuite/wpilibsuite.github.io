@@ -27,7 +27,6 @@ var classfrc_1_1SPI =
     [ "InitAuto", "classfrc_1_1SPI.html#ade47943406f4534df47293166dd2dae6", null ],
     [ "operator=", "classfrc_1_1SPI.html#aac108a7fc3f77fc32402a3fc831067bd", null ],
     [ "Read", "classfrc_1_1SPI.html#a2e0c839fc5c3a24b236e3e0d5cb2e01d", null ],
-    [ "ReadAutoReceivedData", "classfrc_1_1SPI.html#a248b4f03717613ba2d130584d32a19d7", null ],
     [ "ReadAutoReceivedData", "classfrc_1_1SPI.html#ae108111a963f8730bf3e77a5f72b3907", null ],
     [ "ResetAccumulator", "classfrc_1_1SPI.html#a5f3c8d773e8e3bdae420ca14b29dc6e4", null ],
     [ "SetAccumulatorCenter", "classfrc_1_1SPI.html#acac48eeec3574ed6670dfa58fafcdfdd", null ],

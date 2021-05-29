@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-78-g827b17a</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-79-ge09293a</span>
    </div>
   </td>
  </tr>
@@ -141,12 +141,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a64f96194caddf9df5e0ab9871fb2b7a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1MotorSafety.html#a64f96194caddf9df5e0ab9871fb2b7a3">Feed</a> ()</td></tr>
 <tr class="memdesc:a64f96194caddf9df5e0ab9871fb2b7a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Feed the motor safety object.  <a href="classfrc_1_1MotorSafety.html#a64f96194caddf9df5e0ab9871fb2b7a3">More...</a><br /></td></tr>
 <tr class="separator:a64f96194caddf9df5e0ab9871fb2b7a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4b1249b4fa63040a711bcaf7c7fb2d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1MotorSafety.html#aa4b1249b4fa63040a711bcaf7c7fb2d4">SetExpiration</a> (double expirationTime)</td></tr>
-<tr class="memdesc:aa4b1249b4fa63040a711bcaf7c7fb2d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the expiration time for the corresponding motor safety object.  <a href="classfrc_1_1MotorSafety.html#aa4b1249b4fa63040a711bcaf7c7fb2d4">More...</a><br /></td></tr>
-<tr class="separator:aa4b1249b4fa63040a711bcaf7c7fb2d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2cfdc7e808eb4670fcd14d63e83c679"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1MotorSafety.html#ad2cfdc7e808eb4670fcd14d63e83c679">GetExpiration</a> () const</td></tr>
-<tr class="memdesc:ad2cfdc7e808eb4670fcd14d63e83c679"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the timeout value for the corresponding motor safety object.  <a href="classfrc_1_1MotorSafety.html#ad2cfdc7e808eb4670fcd14d63e83c679">More...</a><br /></td></tr>
-<tr class="separator:ad2cfdc7e808eb4670fcd14d63e83c679"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50a1de9a34f3efda20c6e46df1a77b4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1MotorSafety.html#a50a1de9a34f3efda20c6e46df1a77b4e">SetExpiration</a> (units::second_t expirationTime)</td></tr>
+<tr class="memdesc:a50a1de9a34f3efda20c6e46df1a77b4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the expiration time for the corresponding motor safety object.  <a href="classfrc_1_1MotorSafety.html#a50a1de9a34f3efda20c6e46df1a77b4e">More...</a><br /></td></tr>
+<tr class="separator:a50a1de9a34f3efda20c6e46df1a77b4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22aecf3025d0dc3d50b9b9323b9051c9"><td class="memItemLeft" align="right" valign="top">units::second_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1MotorSafety.html#a22aecf3025d0dc3d50b9b9323b9051c9">GetExpiration</a> () const</td></tr>
+<tr class="memdesc:a22aecf3025d0dc3d50b9b9323b9051c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the timeout value for the corresponding motor safety object.  <a href="classfrc_1_1MotorSafety.html#a22aecf3025d0dc3d50b9b9323b9051c9">More...</a><br /></td></tr>
+<tr class="separator:a22aecf3025d0dc3d50b9b9323b9051c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af48493aa5e82c350b59f2ecd2953be31"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1MotorSafety.html#af48493aa5e82c350b59f2ecd2953be31">IsAlive</a> () const</td></tr>
 <tr class="memdesc:af48493aa5e82c350b59f2ecd2953be31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if the motor is still operating or has timed out.  <a href="classfrc_1_1MotorSafety.html#af48493aa5e82c350b59f2ecd2953be31">More...</a><br /></td></tr>
 <tr class="separator:af48493aa5e82c350b59f2ecd2953be31"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -244,14 +244,14 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad2cfdc7e808eb4670fcd14d63e83c679"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2cfdc7e808eb4670fcd14d63e83c679">&#9670;&nbsp;</a></span>GetExpiration()</h2>
+<a id="a22aecf3025d0dc3d50b9b9323b9051c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22aecf3025d0dc3d50b9b9323b9051c9">&#9670;&nbsp;</a></span>GetExpiration()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double frc::MotorSafety::GetExpiration </td>
+          <td class="memname">units::second_t frc::MotorSafety::GetExpiration </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -260,7 +260,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Retrieve the timeout value for the corresponding motor safety object. </p>
-<dl class="section return"><dt>Returns</dt><dd>the timeout value in seconds. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the timeout value. </dd></dl>
 
 </div>
 </div>
@@ -305,8 +305,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa4b1249b4fa63040a711bcaf7c7fb2d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa4b1249b4fa63040a711bcaf7c7fb2d4">&#9670;&nbsp;</a></span>SetExpiration()</h2>
+<a id="a50a1de9a34f3efda20c6e46df1a77b4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50a1de9a34f3efda20c6e46df1a77b4e">&#9670;&nbsp;</a></span>SetExpiration()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -314,7 +314,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void frc::MotorSafety::SetExpiration </td>
           <td>(</td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">units::second_t&#160;</td>
           <td class="paramname"><em>expirationTime</em></td><td>)</td>
           <td></td>
         </tr>
@@ -324,7 +324,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Set the expiration time for the corresponding motor safety object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">expirationTime</td><td>The timeout value in seconds. </td></tr>
+    <tr><td class="paramname">expirationTime</td><td>The timeout value. </td></tr>
   </table>
   </dd>
 </dl>
@@ -367,7 +367,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1MotorSafety.html">MotorSafety</a></li>
-    <li class="footer">Generated on Sat May 29 2021 05:07:10 for WPILibC++ by
+    <li class="footer">Generated on Sat May 29 2021 05:08:57 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

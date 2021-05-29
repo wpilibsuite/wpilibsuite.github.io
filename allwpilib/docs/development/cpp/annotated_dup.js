@@ -365,7 +365,6 @@ var annotated_dup =
       [ "Subsystem", "classfrc2_1_1Subsystem.html", "classfrc2_1_1Subsystem" ],
       [ "SubsystemBase", "classfrc2_1_1SubsystemBase.html", "classfrc2_1_1SubsystemBase" ],
       [ "SwerveControllerCommand", "classfrc2_1_1SwerveControllerCommand.html", "classfrc2_1_1SwerveControllerCommand" ],
-      [ "Timer", "classfrc2_1_1Timer.html", "classfrc2_1_1Timer" ],
       [ "TrapezoidProfileCommand", "classfrc2_1_1TrapezoidProfileCommand.html", "classfrc2_1_1TrapezoidProfileCommand" ],
       [ "TrapezoidProfileSubsystem", "classfrc2_1_1TrapezoidProfileSubsystem.html", "classfrc2_1_1TrapezoidProfileSubsystem" ],
       [ "Trigger", "classfrc2_1_1Trigger.html", "classfrc2_1_1Trigger" ],

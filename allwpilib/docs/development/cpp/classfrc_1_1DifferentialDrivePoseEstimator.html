@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-78-g827b17a</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-79-ge09293a</span>
    </div>
   </td>
  </tr>
@@ -237,7 +237,7 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">visionRobotPose</td><td>The pose of the robot as measured by the vision camera. </td></tr>
-    <tr><td class="paramname">timestamp</td><td>The timestamp of the vision measurement in seconds. Note that if you don't use your own time source by calling <a class="el" href="classfrc_1_1DifferentialDrivePoseEstimator.html#a3b1c6307abd690dc1babb27fe96014be" title="Updates the Unscented Kalman Filter using only wheel encoder information.">UpdateWithTime()</a>, then you must use a timestamp with an epoch since FPGA startup (i.e. the epoch of this timestamp is the same epoch as <a class="el" href="classfrc2_1_1Timer.html#afe535587db8c1d9d8b3f03703a13282b" title="Return the FPGA system clock time in seconds.">frc2::Timer::GetFPGATimestamp()</a>. This means that you should use <a class="el" href="classfrc2_1_1Timer.html#afe535587db8c1d9d8b3f03703a13282b" title="Return the FPGA system clock time in seconds.">frc2::Timer::GetFPGATimestamp()</a> as your time source in this case. </td></tr>
+    <tr><td class="paramname">timestamp</td><td>The timestamp of the vision measurement in seconds. Note that if you don't use your own time source by calling <a class="el" href="classfrc_1_1DifferentialDrivePoseEstimator.html#a3b1c6307abd690dc1babb27fe96014be" title="Updates the Unscented Kalman Filter using only wheel encoder information.">UpdateWithTime()</a>, then you must use a timestamp with an epoch since FPGA startup (i.e. the epoch of this timestamp is the same epoch as <a class="el" href="classfrc_1_1Timer.html#a1a0b1c162a033bbf4d7053eee550745c" title="Return the FPGA system clock time in seconds.">frc::Timer::GetFPGATimestamp()</a>. This means that you should use <a class="el" href="classfrc_1_1Timer.html#a1a0b1c162a033bbf4d7053eee550745c" title="Return the FPGA system clock time in seconds.">frc::Timer::GetFPGATimestamp()</a> as your time source in this case. </td></tr>
   </table>
   </dd>
 </dl>
@@ -291,7 +291,7 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">visionRobotPose</td><td>The pose of the robot as measured by the vision camera. </td></tr>
-    <tr><td class="paramname">timestamp</td><td>The timestamp of the vision measurement in seconds. Note that if you don't use your own time source by calling <a class="el" href="classfrc_1_1DifferentialDrivePoseEstimator.html#a3b1c6307abd690dc1babb27fe96014be" title="Updates the Unscented Kalman Filter using only wheel encoder information.">UpdateWithTime()</a>, then you must use a timestamp with an epoch since FPGA startup (i.e. the epoch of this timestamp is the same epoch as <a class="el" href="classfrc2_1_1Timer.html#afe535587db8c1d9d8b3f03703a13282b" title="Return the FPGA system clock time in seconds.">frc2::Timer::GetFPGATimestamp()</a>. This means that you should use <a class="el" href="classfrc2_1_1Timer.html#afe535587db8c1d9d8b3f03703a13282b" title="Return the FPGA system clock time in seconds.">frc2::Timer::GetFPGATimestamp()</a> as your time source in this case. </td></tr>
+    <tr><td class="paramname">timestamp</td><td>The timestamp of the vision measurement in seconds. Note that if you don't use your own time source by calling <a class="el" href="classfrc_1_1DifferentialDrivePoseEstimator.html#a3b1c6307abd690dc1babb27fe96014be" title="Updates the Unscented Kalman Filter using only wheel encoder information.">UpdateWithTime()</a>, then you must use a timestamp with an epoch since FPGA startup (i.e. the epoch of this timestamp is the same epoch as <a class="el" href="classfrc_1_1Timer.html#a1a0b1c162a033bbf4d7053eee550745c" title="Return the FPGA system clock time in seconds.">frc::Timer::GetFPGATimestamp()</a>. This means that you should use <a class="el" href="classfrc_1_1Timer.html#a1a0b1c162a033bbf4d7053eee550745c" title="Return the FPGA system clock time in seconds.">frc::Timer::GetFPGATimestamp()</a> as your time source in this case. </td></tr>
     <tr><td class="paramname">visionMeasurementStdDevs</td><td>Standard deviations of the vision measurements. Increase these numbers to trust global measurements from vision less. This matrix is in the form [x, y, theta]^T, with units in meters and radians. </td></tr>
   </table>
   </dd>
@@ -504,7 +504,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1DifferentialDrivePoseEstimator.html">DifferentialDrivePoseEstimator</a></li>
-    <li class="footer">Generated on Sat May 29 2021 05:07:10 for WPILibC++ by
+    <li class="footer">Generated on Sat May 29 2021 05:08:57 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

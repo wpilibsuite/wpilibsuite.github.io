@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-78-g827b17a</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-79-ge09293a</span>
    </div>
   </td>
  </tr>
@@ -143,9 +143,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <tr class="memitem:a3947cbcc73de70a6b7244700c77c693e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Solenoid.html#a3947cbcc73de70a6b7244700c77c693e">IsBlackListed</a> () const</td></tr>
 <tr class="memdesc:a3947cbcc73de70a6b7244700c77c693e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if solenoid is blacklisted.  <a href="classfrc_1_1Solenoid.html#a3947cbcc73de70a6b7244700c77c693e">More...</a><br /></td></tr>
 <tr class="separator:a3947cbcc73de70a6b7244700c77c693e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66b6ffd42f53c3829150711e200b23a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Solenoid.html#a66b6ffd42f53c3829150711e200b23a8">SetPulseDuration</a> (double durationSeconds)</td></tr>
-<tr class="memdesc:a66b6ffd42f53c3829150711e200b23a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the pulse duration in the PCM.  <a href="classfrc_1_1Solenoid.html#a66b6ffd42f53c3829150711e200b23a8">More...</a><br /></td></tr>
-<tr class="separator:a66b6ffd42f53c3829150711e200b23a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f65b6d1b6fe29af2982073ccc7499c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Solenoid.html#a1f65b6d1b6fe29af2982073ccc7499c0">SetPulseDuration</a> (units::second_t duration)</td></tr>
+<tr class="memdesc:a1f65b6d1b6fe29af2982073ccc7499c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the pulse duration in the PCM.  <a href="classfrc_1_1Solenoid.html#a1f65b6d1b6fe29af2982073ccc7499c0">More...</a><br /></td></tr>
+<tr class="separator:a1f65b6d1b6fe29af2982073ccc7499c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60b4342d9bddc7bf5745918622a08290"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Solenoid.html#a60b4342d9bddc7bf5745918622a08290">StartPulse</a> ()</td></tr>
 <tr class="memdesc:a60b4342d9bddc7bf5745918622a08290"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classfrc_1_1Trigger.html" title="This class provides an easy way to link commands to inputs.">Trigger</a> the PCM to generate a pulse of the duration set in setPulseDuration.  <a href="classfrc_1_1Solenoid.html#a60b4342d9bddc7bf5745918622a08290">More...</a><br /></td></tr>
 <tr class="separator:a60b4342d9bddc7bf5745918622a08290"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -445,8 +445,8 @@ static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>m_max
 
 </div>
 </div>
-<a id="a66b6ffd42f53c3829150711e200b23a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66b6ffd42f53c3829150711e200b23a8">&#9670;&nbsp;</a></span>SetPulseDuration()</h2>
+<a id="a1f65b6d1b6fe29af2982073ccc7499c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f65b6d1b6fe29af2982073ccc7499c0">&#9670;&nbsp;</a></span>SetPulseDuration()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -454,8 +454,8 @@ static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>m_max
         <tr>
           <td class="memname">void frc::Solenoid::SetPulseDuration </td>
           <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>durationSeconds</em></td><td>)</td>
+          <td class="paramtype">units::second_t&#160;</td>
+          <td class="paramname"><em>duration</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -522,7 +522,7 @@ static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>m_max
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1Solenoid.html">Solenoid</a></li>
-    <li class="footer">Generated on Sat May 29 2021 05:07:10 for WPILibC++ by
+    <li class="footer">Generated on Sat May 29 2021 05:08:58 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

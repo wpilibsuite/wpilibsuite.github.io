@@ -8,5 +8,5 @@ var classfrc_1_1TimedRobot =
     [ "EndCompetition", "classfrc_1_1TimedRobot.html#a8b227bf26e7b42431c7905c9e46775cf", null ],
     [ "operator=", "classfrc_1_1TimedRobot.html#a1b7271f146b9fc9f09732764a6b3e488", null ],
     [ "StartCompetition", "classfrc_1_1TimedRobot.html#afa4de496e6856238b106240012efe889", null ],
-    [ "kDefaultPeriod", "classfrc_1_1TimedRobot.html#a847515e47038f8fbaec288342127d892", null ]
+    [ "kDefaultPeriod", "classfrc_1_1TimedRobot.html#af9b6857e01d71a20a01dfca286e36c68", null ]
 ];
