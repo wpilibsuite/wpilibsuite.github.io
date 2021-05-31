@@ -1,13 +1,13 @@
 var searchData=
 [
-  ['waitcommand_5326',['WaitCommand',['../classfrc2_1_1WaitCommand.html',1,'frc2::WaitCommand'],['../classfrc_1_1WaitCommand.html',1,'frc::WaitCommand']]],
+  ['waitcommand_5326',['WaitCommand',['../classfrc_1_1WaitCommand.html',1,'frc::WaitCommand'],['../classfrc2_1_1WaitCommand.html',1,'frc2::WaitCommand']]],
   ['waitforchildren_5327',['WaitForChildren',['../classfrc_1_1WaitForChildren.html',1,'frc']]],
-  ['waituntilcommand_5328',['WaitUntilCommand',['../classfrc2_1_1WaitUntilCommand.html',1,'frc2::WaitUntilCommand'],['../classfrc_1_1WaitUntilCommand.html',1,'frc::WaitUntilCommand']]],
+  ['waituntilcommand_5328',['WaitUntilCommand',['../classfrc_1_1WaitUntilCommand.html',1,'frc::WaitUntilCommand'],['../classfrc2_1_1WaitUntilCommand.html',1,'frc2::WaitUntilCommand']]],
   ['watchdog_5329',['Watchdog',['../classfrc_1_1Watchdog.html',1,'frc']]],
   ['websocket_5330',['WebSocket',['../classwpi_1_1WebSocket.html',1,'wpi']]],
   ['websocketserver_5331',['WebSocketServer',['../classwpi_1_1WebSocketServer.html',1,'wpi']]],
   ['websocketserverhelper_5332',['WebSocketServerHelper',['../classwpi_1_1WebSocketServerHelper.html',1,'wpi']]],
-  ['wheelspeeds_5333',['WheelSpeeds',['../structfrc_1_1KilloughDrive_1_1WheelSpeeds.html',1,'frc::KilloughDrive::WheelSpeeds'],['../structfrc_1_1MecanumDrive_1_1WheelSpeeds.html',1,'frc::MecanumDrive::WheelSpeeds'],['../structfrc_1_1DifferentialDrive_1_1WheelSpeeds.html',1,'frc::DifferentialDrive::WheelSpeeds']]],
+  ['wheelspeeds_5333',['WheelSpeeds',['../structfrc_1_1MecanumDrive_1_1WheelSpeeds.html',1,'frc::MecanumDrive::WheelSpeeds'],['../structfrc_1_1DifferentialDrive_1_1WheelSpeeds.html',1,'frc::DifferentialDrive::WheelSpeeds'],['../structfrc_1_1KilloughDrive_1_1WheelSpeeds.html',1,'frc::KilloughDrive::WheelSpeeds']]],
   ['widgettype_5334',['WidgetType',['../classfrc_1_1WidgetType.html',1,'frc']]],
   ['width_5fchecker_5335',['width_checker',['../classwidth__checker.html',1,'']]],
   ['workerthread_5336',['WorkerThread',['../classwpi_1_1WorkerThread.html',1,'wpi']]],

@@ -61,7 +61,6 @@ var dir_0616eb0edb7e8533b85fb847c3c08b17 =
     [ "SensorUtil.h", "SensorUtil_8h_source.html", null ],
     [ "SerialPort.h", "wpilibc_2src_2main_2native_2include_2frc_2SerialPort_8h_source.html", null ],
     [ "Servo.h", "Servo_8h_source.html", null ],
-    [ "SlewRateLimiter.h", "SlewRateLimiter_8h_source.html", null ],
     [ "Solenoid.h", "wpilibc_2src_2main_2native_2include_2frc_2Solenoid_8h_source.html", null ],
     [ "SolenoidBase.h", "SolenoidBase_8h_source.html", null ],
     [ "SpeedController.h", "SpeedController_8h_source.html", null ],

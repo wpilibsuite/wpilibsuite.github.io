@@ -10,5 +10,6 @@ var dir_4d863b529094b8a59afd2a32ef89b8cd =
     [ "LinearFilter.h", "LinearFilter_8h_source.html", null ],
     [ "MathUtil.h", "MathUtil_8h_source.html", null ],
     [ "MedianFilter.h", "MedianFilter_8h_source.html", null ],
+    [ "SlewRateLimiter.h", "SlewRateLimiter_8h_source.html", null ],
     [ "StateSpaceUtil.h", "StateSpaceUtil_8h_source.html", null ]
 ];

@@ -11,7 +11,7 @@ var searchData=
   ['threadsaferefcountedbase_5246',['ThreadSafeRefCountedBase',['../classwpi_1_1ThreadSafeRefCountedBase.html',1,'wpi']]],
   ['timedcommand_5247',['TimedCommand',['../classfrc_1_1TimedCommand.html',1,'frc']]],
   ['timedrobot_5248',['TimedRobot',['../classfrc_1_1TimedRobot.html',1,'frc']]],
-  ['timer_5249',['Timer',['../classfrc_1_1Timer.html',1,'frc::Timer'],['../classwpi_1_1uv_1_1Timer.html',1,'wpi::uv::Timer']]],
+  ['timer_5249',['Timer',['../classwpi_1_1uv_1_1Timer.html',1,'wpi::uv::Timer'],['../classfrc_1_1Timer.html',1,'frc::Timer']]],
   ['to_5fjson_5ffn_5250',['to_json_fn',['../structwpi_1_1detail_1_1to__json__fn.html',1,'wpi::detail']]],
   ['togglebuttonscheduler_5251',['ToggleButtonScheduler',['../classfrc_1_1ToggleButtonScheduler.html',1,'frc']]],
   ['tracer_5252',['Tracer',['../classfrc_1_1Tracer.html',1,'frc']]],

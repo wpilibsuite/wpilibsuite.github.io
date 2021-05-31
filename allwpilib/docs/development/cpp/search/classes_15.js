@@ -3,7 +3,7 @@ var searchData=
   ['validate_5fformat_5fparameters_5304',['validate_format_parameters',['../structwpi_1_1validate__format__parameters.html',1,'wpi']]],
   ['validate_5fformat_5fparameters_3c_20arg_2c_20args_2e_2e_2e_20_3e_5305',['validate_format_parameters&lt; Arg, Args... &gt;',['../structwpi_1_1validate__format__parameters_3_01Arg_00_01Args_8_8_8_01_4.html',1,'wpi']]],
   ['validate_5fformat_5fparameters_3c_3e_5306',['validate_format_parameters&lt;&gt;',['../structwpi_1_1validate__format__parameters_3_4.html',1,'wpi']]],
-  ['value_5307',['Value',['../classnt_1_1Value.html',1,'nt::Value'],['../classvalue.html',1,'value&lt; Context &gt;'],['../unionarg__ref_1_1value.html',1,'arg_ref&lt; Char &gt;::value']]],
+  ['value_5307',['value',['../classvalue.html',1,'value&lt; Context &gt;'],['../classnt_1_1Value.html',1,'nt::Value'],['../unionarg__ref_1_1value.html',1,'arg_ref&lt; Char &gt;::value']]],
   ['value_5ftype_5308',['value_type',['../structdetail_1_1counting__iterator_1_1value__type.html',1,'detail::counting_iterator']]],
   ['vector2d_5309',['Vector2d',['../structfrc_1_1Vector2d.html',1,'frc']]],
   ['versiontuple_5310',['VersionTuple',['../classwpi_1_1VersionTuple.html',1,'wpi']]],
