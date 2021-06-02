@@ -1,6 +1,5 @@
 var NAVTREEINDEX7 =
 {
-"classfrc_1_1Button.html#a47dcf99f0fed0c39cfe6ddb9fe7b2927":[5,0,4,18,7],
 "classfrc_1_1Button.html#a6b792c4da7747414dfdf0e45cdc27373":[5,0,4,18,2],
 "classfrc_1_1Button.html#a6fca17ee466d140e93f8a53d0c882b49":[5,0,4,18,3],
 "classfrc_1_1Button.html#a789aebbc162b3777b337fede32af8d71":[5,0,4,18,5],
@@ -249,5 +248,6 @@ var NAVTREEINDEX7 =
 "classfrc_1_1Color8Bit.html#a7508647820b675aa4d66c459d3095934":[5,0,4,29,6],
 "classfrc_1_1Color8Bit.html#aaaac746bac2772158658d10311281950":[5,0,4,29,0],
 "classfrc_1_1Color8Bit.html#aeaf51b86a8ace6100d37ae942ef88239":[5,0,4,29,4],
-"classfrc_1_1Color8Bit.html#aed22be8ac6496e3a6da81c304aff138a":[5,0,4,29,5]
+"classfrc_1_1Color8Bit.html#aed22be8ac6496e3a6da81c304aff138a":[5,0,4,29,5],
+"classfrc_1_1Command.html":[5,0,4,30]
 };

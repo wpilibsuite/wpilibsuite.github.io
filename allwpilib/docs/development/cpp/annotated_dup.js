@@ -371,6 +371,24 @@ var annotated_dup =
       [ "WaitCommand", "classfrc2_1_1WaitCommand.html", "classfrc2_1_1WaitCommand" ],
       [ "WaitUntilCommand", "classfrc2_1_1WaitUntilCommand.html", "classfrc2_1_1WaitUntilCommand" ]
     ] ],
+    [ "ghc", null, [
+      [ "filesystem", null, [
+        [ "basic_filebuf", "classghc_1_1filesystem_1_1basic__filebuf.html", "classghc_1_1filesystem_1_1basic__filebuf" ],
+        [ "basic_fstream", "classghc_1_1filesystem_1_1basic__fstream.html", "classghc_1_1filesystem_1_1basic__fstream" ],
+        [ "basic_ifstream", "classghc_1_1filesystem_1_1basic__ifstream.html", "classghc_1_1filesystem_1_1basic__ifstream" ],
+        [ "basic_ofstream", "classghc_1_1filesystem_1_1basic__ofstream.html", "classghc_1_1filesystem_1_1basic__ofstream" ],
+        [ "directory_entry", "classghc_1_1filesystem_1_1directory__entry.html", "classghc_1_1filesystem_1_1directory__entry" ],
+        [ "directory_iterator", "classghc_1_1filesystem_1_1directory__iterator.html", "classghc_1_1filesystem_1_1directory__iterator" ],
+        [ "file_status", "classghc_1_1filesystem_1_1file__status.html", "classghc_1_1filesystem_1_1file__status" ],
+        [ "filesystem_error", "classghc_1_1filesystem_1_1filesystem__error.html", "classghc_1_1filesystem_1_1filesystem__error" ],
+        [ "not_implemented_exception", "classghc_1_1filesystem_1_1not__implemented__exception.html", "classghc_1_1filesystem_1_1not__implemented__exception" ],
+        [ "path", "classghc_1_1filesystem_1_1path.html", "classghc_1_1filesystem_1_1path" ],
+        [ "path_helper_base", "classghc_1_1filesystem_1_1path__helper__base.html", "classghc_1_1filesystem_1_1path__helper__base" ],
+        [ "recursive_directory_iterator", "classghc_1_1filesystem_1_1recursive__directory__iterator.html", "classghc_1_1filesystem_1_1recursive__directory__iterator" ],
+        [ "space_info", "structghc_1_1filesystem_1_1space__info.html", "structghc_1_1filesystem_1_1space__info" ],
+        [ "u8arguments", "classghc_1_1filesystem_1_1u8arguments.html", "classghc_1_1filesystem_1_1u8arguments" ]
+      ] ]
+    ] ],
     [ "hal", "namespacehal.html", "namespacehal" ],
     [ "nt", "namespacent.html", "namespacent" ],
     [ "std", null, [
@@ -440,20 +458,6 @@ var annotated_dup =
         ] ]
       ] ],
       [ "sys", null, [
-        [ "fs", null, [
-          [ "detail", null, [
-            [ "DirIterState", "structwpi_1_1sys_1_1fs_1_1detail_1_1DirIterState.html", "structwpi_1_1sys_1_1fs_1_1detail_1_1DirIterState" ],
-            [ "RecDirIterState", "structwpi_1_1sys_1_1fs_1_1detail_1_1RecDirIterState.html", "structwpi_1_1sys_1_1fs_1_1detail_1_1RecDirIterState" ]
-          ] ],
-          [ "basic_file_status", "classwpi_1_1sys_1_1fs_1_1basic__file__status.html", "classwpi_1_1sys_1_1fs_1_1basic__file__status" ],
-          [ "directory_entry", "classwpi_1_1sys_1_1fs_1_1directory__entry.html", "classwpi_1_1sys_1_1fs_1_1directory__entry" ],
-          [ "directory_iterator", "classwpi_1_1sys_1_1fs_1_1directory__iterator.html", "classwpi_1_1sys_1_1fs_1_1directory__iterator" ],
-          [ "file_status", "classwpi_1_1sys_1_1fs_1_1file__status.html", "classwpi_1_1sys_1_1fs_1_1file__status" ],
-          [ "mapped_file_region", "classwpi_1_1sys_1_1fs_1_1mapped__file__region.html", "classwpi_1_1sys_1_1fs_1_1mapped__file__region" ],
-          [ "recursive_directory_iterator", "classwpi_1_1sys_1_1fs_1_1recursive__directory__iterator.html", "classwpi_1_1sys_1_1fs_1_1recursive__directory__iterator" ],
-          [ "space_info", "structwpi_1_1sys_1_1fs_1_1space__info.html", "structwpi_1_1sys_1_1fs_1_1space__info" ],
-          [ "UniqueID", "classwpi_1_1sys_1_1fs_1_1UniqueID.html", "classwpi_1_1sys_1_1fs_1_1UniqueID" ]
-        ] ],
         [ "path", null, [
           [ "const_iterator", "classwpi_1_1sys_1_1path_1_1const__iterator.html", "classwpi_1_1sys_1_1path_1_1const__iterator" ],
           [ "reverse_iterator", "classwpi_1_1sys_1_1path_1_1reverse__iterator.html", "classwpi_1_1sys_1_1path_1_1reverse__iterator" ]

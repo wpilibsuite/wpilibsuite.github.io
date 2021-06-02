@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-82-g01dc024</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-83-gfe570e0</span>
    </div>
   </td>
  </tr>
@@ -2664,7 +2664,7 @@ $(document).ready(function(){initNavTree('core_8h_source.html',''); initResizabl
 <div class="line"><a name="l02707"></a><span class="lineno"> 2707</span>&#160;  <span class="comment">// terminating &#39;}&#39;.</span></div>
 <div class="line"><a name="l02708"></a><span class="lineno"> 2708</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> ParseContext&gt;</div>
 <div class="line"><a name="l02709"></a><span class="lineno"> 2709</span>&#160;  FMT_CONSTEXPR <span class="keyword">auto</span> parse(ParseContext&amp; ctx) -&gt; decltype(ctx.begin()) {</div>
-<div class="line"><a name="l02710"></a><span class="lineno"> 2710</span>&#160;    <span class="keyword">auto</span> begin = ctx.<a class="code" href="classwpi_1_1sys_1_1path_1_1const__iterator.html#a88c072843122519fd4f3547f2a0ab178">begin</a>(), end = ctx.<a class="code" href="classwpi_1_1sys_1_1path_1_1const__iterator.html#a8a503d1cbee10d1b8c8f5ac2a03b90df">end</a>();</div>
+<div class="line"><a name="l02710"></a><span class="lineno"> 2710</span>&#160;    <span class="keyword">auto</span> begin = ctx.begin(), end = ctx.end();</div>
 <div class="line"><a name="l02711"></a><span class="lineno"> 2711</span>&#160;    <span class="keywordflow">if</span> (begin == end) <span class="keywordflow">return</span> begin;</div>
 <div class="line"><a name="l02712"></a><span class="lineno"> 2712</span>&#160;    <span class="keyword">using</span> handler_type = detail::dynamic_specs_handler&lt;ParseContext&gt;;</div>
 <div class="line"><a name="l02713"></a><span class="lineno"> 2713</span>&#160;    <span class="keyword">auto</span> type = detail::type_constant&lt;T, Char&gt;::value;</div>
@@ -2900,7 +2900,6 @@ $(document).ready(function(){initNavTree('core_8h_source.html',''); initResizabl
 <div class="ttc" id="astructis__contiguous__back__insert__iterator_html"><div class="ttname"><a href="structis__contiguous__back__insert__iterator.html">is_contiguous_back_insert_iterator</a></div><div class="ttdef"><b>Definition:</b> core.h:1492</div></div>
 <div class="ttc" id="aclassbasic__format__parse__context_html_a9eb66391da04f3f435cb4664fc9d9170"><div class="ttname"><a href="classbasic__format__parse__context.html#a9eb66391da04f3f435cb4664fc9d9170">basic_format_parse_context::next_arg_id</a></div><div class="ttdeci">FMT_CONSTEXPR auto next_arg_id() -&gt; int</div><div class="ttdoc">Reports an error if using the manual argument indexing; otherwise returns the next argument index and...</div><div class="ttdef"><b>Definition:</b> core.h:658</div></div>
 <div class="ttc" id="aclassdynamic__format__arg__store_html"><div class="ttname"><a href="classdynamic__format__arg__store.html">dynamic_format_arg_store</a></div><div class="ttdoc">\rst A dynamic version of fmt::format_arg_store.</div><div class="ttdef"><b>Definition:</b> args.h:79</div></div>
-<div class="ttc" id="aclasswpi_1_1sys_1_1path_1_1const__iterator_html_a8a503d1cbee10d1b8c8f5ac2a03b90df"><div class="ttname"><a href="classwpi_1_1sys_1_1path_1_1const__iterator.html#a8a503d1cbee10d1b8c8f5ac2a03b90df">wpi::sys::path::const_iterator::end</a></div><div class="ttdeci">friend const_iterator end(StringRef path)</div><div class="ttdoc">Get end iterator over path.</div></div>
 <div class="ttc" id="aclassiterator__buffer_3_01T_01_5_00_01T_01_4_html_a61d87c8bcb2afc3369820e27d4dc90c3"><div class="ttname"><a href="classiterator__buffer_3_01T_01_5_00_01T_01_4.html#a61d87c8bcb2afc3369820e27d4dc90c3">iterator_buffer&lt; T *, T &gt;::grow</a></div><div class="ttdeci">void grow(size_t) final FMT_OVERRIDE</div><div class="ttdoc">Increases the buffer capacity to hold at least capacity elements.</div><div class="ttdef"><b>Definition:</b> core.h:868</div></div>
 <div class="ttc" id="aclassbuffer_html_ad1dde4f6deedf8ff95d73a3a5cf16a88"><div class="ttname"><a href="classbuffer.html#ad1dde4f6deedf8ff95d73a3a5cf16a88">buffer::capacity</a></div><div class="ttdeci">auto capacity() const FMT_NOEXCEPT -&gt; size_t</div><div class="ttdoc">Returns the capacity of this buffer.</div><div class="ttdef"><b>Definition:</b> core.h:777</div></div>
 <div class="ttc" id="aclassbuffer_html_a144ad707b324a714fbe334896f90ba28"><div class="ttname"><a href="classbuffer.html#a144ad707b324a714fbe334896f90ba28">buffer::append</a></div><div class="ttdeci">void append(const U *begin, const U *end)</div><div class="ttdoc">Appends data to the end of the buffer.</div><div class="ttdef"><b>Definition:</b> format.h:609</div></div>
@@ -2926,7 +2925,6 @@ $(document).ready(function(){initNavTree('core_8h_source.html',''); initResizabl
 <div class="ttc" id="aclassbasic__format__parse__context_html"><div class="ttname"><a href="classbasic__format__parse__context.html">basic_format_parse_context</a></div><div class="ttdoc">\rst Parsing context consisting of a format string range being parsed and an argument counter for aut...</div><div class="ttdef"><b>Definition:</b> core.h:620</div></div>
 <div class="ttc" id="aclassbasic__string__view_html_a034a8a79389ecc31954bdf773c680de7"><div class="ttname"><a href="classbasic__string__view.html#a034a8a79389ecc31954bdf773c680de7">basic_string_view::basic_string_view</a></div><div class="ttdeci">constexpr basic_string_view(const Char *s, size_t count) FMT_NOEXCEPT</div><div class="ttdoc">Constructs a string reference object from a C string and a size.</div><div class="ttdef"><b>Definition:</b> core.h:430</div></div>
 <div class="ttc" id="astructbasic__format__specs_html"><div class="ttname"><a href="structbasic__format__specs.html">basic_format_specs</a></div><div class="ttdef"><b>Definition:</b> core.h:1868</div></div>
-<div class="ttc" id="aclasswpi_1_1sys_1_1path_1_1const__iterator_html_a88c072843122519fd4f3547f2a0ab178"><div class="ttname"><a href="classwpi_1_1sys_1_1path_1_1const__iterator.html#a88c072843122519fd4f3547f2a0ab178">wpi::sys::path::const_iterator::begin</a></div><div class="ttdeci">friend const_iterator begin(StringRef path, Style style)</div><div class="ttdoc">Get begin iterator over path.</div></div>
 <div class="ttc" id="astructnamed__arg__value_html"><div class="ttname"><a href="structnamed__arg__value.html">named_arg_value</a></div><div class="ttdef"><b>Definition:</b> core.h:1087</div></div>
 <div class="ttc" id="astructunformattable_html"><div class="ttname"><a href="structunformattable.html">unformattable</a></div><div class="ttdef"><b>Definition:</b> core.h:1176</div></div>
 <div class="ttc" id="aclassbuffer_html_ac49689772428740402ec27e02cf2e139"><div class="ttname"><a href="classbuffer.html#ac49689772428740402ec27e02cf2e139">buffer::grow</a></div><div class="ttdeci">virtual void grow(size_t capacity)=0</div><div class="ttdoc">Increases the buffer capacity to hold at least capacity elements.</div></div>
@@ -2956,7 +2954,7 @@ $(document).ready(function(){initNavTree('core_8h_source.html',''); initResizabl
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_07f1050b175e2d01c230e5cadf135f7c.html">fmtlib</a></li><li class="navelem"><a class="el" href="dir_f186fa79a3895d81ef02af9fef546a30.html">include</a></li><li class="navelem"><a class="el" href="dir_37137cfaace3bfc79a7a3aee825a2892.html">fmt</a></li><li class="navelem"><b>core.h</b></li>
-    <li class="footer">Generated on Mon May 31 2021 17:38:03 for WPILibC++ by
+    <li class="footer">Generated on Wed Jun 2 2021 04:52:19 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

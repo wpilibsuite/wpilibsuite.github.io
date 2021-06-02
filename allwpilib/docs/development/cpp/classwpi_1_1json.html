@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-82-g01dc024</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-83-gfe570e0</span>
    </div>
   </td>
  </tr>
@@ -1468,7 +1468,7 @@ template&lt;typename CompatibleType , typename U  = detail::uncvref_t&lt;Compati
 <li><em>CompatibleType</em> is not derived from <code>std::istream</code>,</li>
 <li><em>CompatibleType</em> is not <a class="el" href="classwpi_1_1json.html">json</a> (to avoid hijacking copy/move constructors),</li>
 <li><em>CompatibleType</em> is not a different <a class="el" href="classwpi_1_1json.html">json</a> type (i.e. with different template arguments)</li>
-<li><em>CompatibleType</em> is not a <a class="el" href="classwpi_1_1json.html">json</a> nested type (e.g., <a class="el" href="classwpi_1_1json__pointer.html">json_pointer</a>, <a class="el" href="classwpi_1_1json.html#ac6f2508a98ce0de7aa0b2b74f3eb9e03">iterator</a>, etc ...)</li>
+<li><em>CompatibleType</em> is not a <a class="el" href="classwpi_1_1json.html">json</a> nested type (e.g., <a class="el" href="classwpi_1_1json__pointer.html">json_pointer</a>, iterator, etc ...)</li>
 <li>json_serializer<u></u> has a <code>to_json(json_t&amp;, CompatibleType&amp;&amp;)</code> method</li>
 </ul>
 </td></tr>
@@ -1651,7 +1651,7 @@ template&lt;class InputIT , typename std::enable_if&lt; std::is_same&lt; InputIT
 </ul>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">InputIT</td><td>an input iterator type (<a class="el" href="classwpi_1_1json.html#ac6f2508a98ce0de7aa0b2b74f3eb9e03">iterator</a> or <a class="el" href="classwpi_1_1json.html#a74348c2a8325d68c265d359e5dd60c95">const_iterator</a>)</td></tr>
+    <tr><td class="paramname">InputIT</td><td>an input iterator type (iterator or <a class="el" href="classwpi_1_1json.html#a74348c2a8325d68c265d359e5dd60c95">const_iterator</a>)</td></tr>
   </table>
   </dd>
 </dl>
@@ -3018,7 +3018,7 @@ template&lt;class IteratorType , typename std::enable_if&lt; std::is_same&lt; It
 <dl class="section return"><dt>Returns</dt><dd>Iterator following the last removed element. If the iterator <em>second</em> refers to the last element, the <code><a class="el" href="classwpi_1_1json.html#a85ae15d6b09d38945e3e45e1aac4fbce" title="returns an iterator to one past the last element">end()</a></code> iterator is returned.</dd></dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">IteratorType</td><td>an <a class="el" href="classwpi_1_1json.html#ac6f2508a98ce0de7aa0b2b74f3eb9e03">iterator</a> or <a class="el" href="classwpi_1_1json.html#a74348c2a8325d68c265d359e5dd60c95">const_iterator</a></td></tr>
+    <tr><td class="paramname">IteratorType</td><td>an iterator or <a class="el" href="classwpi_1_1json.html#a74348c2a8325d68c265d359e5dd60c95">const_iterator</a></td></tr>
   </table>
   </dd>
 </dl>
@@ -3085,7 +3085,7 @@ template&lt;class IteratorType , typename std::enable_if&lt; std::is_same&lt; It
 </dl>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">IteratorType</td><td>an <a class="el" href="classwpi_1_1json.html#ac6f2508a98ce0de7aa0b2b74f3eb9e03">iterator</a> or <a class="el" href="classwpi_1_1json.html#a74348c2a8325d68c265d359e5dd60c95">const_iterator</a></td></tr>
+    <tr><td class="paramname">IteratorType</td><td>an iterator or <a class="el" href="classwpi_1_1json.html#a74348c2a8325d68c265d359e5dd60c95">const_iterator</a></td></tr>
   </table>
   </dd>
 </dl>
@@ -8754,7 +8754,7 @@ template&lt;typename ScalarType , typename std::enable_if&lt; std::is_scalar&lt;
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>wpi</b></li><li class="navelem"><a class="el" href="classwpi_1_1json.html">json</a></li>
-    <li class="footer">Generated on Mon May 31 2021 17:38:07 for WPILibC++ by
+    <li class="footer">Generated on Wed Jun 2 2021 04:52:24 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

@@ -1,6 +1,5 @@
 var NAVTREEINDEX9 =
 {
-"classfrc_1_1DMA.html#a3050f9f767c42f0758244ba539883a7d":[5,0,4,53,12],
 "classfrc_1_1DMA.html#a4ccd57522a356690820b7a47175ff14b":[5,0,4,53,8],
 "classfrc_1_1DMA.html#a65cf5d723ccf445279e13e2afbb90a3c":[5,0,4,53,15],
 "classfrc_1_1DMA.html#a7175b380706a21e8d366205206e52773":[5,0,4,53,18],
@@ -249,5 +248,6 @@ var NAVTREEINDEX9 =
 "classfrc_1_1DutyCycleEncoder.html#af3b87f633d1fc2ab81b597c629e9df0b":[5,0,4,59,8],
 "classfrc_1_1ElevatorFeedforward.html":[5,0,4,60],
 "classfrc_1_1ElevatorFeedforward.html#a3aacfc1f278b18b6db940a4e2b927554":[5,0,4,60,3],
-"classfrc_1_1ElevatorFeedforward.html#a3c3ea34e0f20d0b58ce0fa73cb92106f":[5,0,4,60,5]
+"classfrc_1_1ElevatorFeedforward.html#a3c3ea34e0f20d0b58ce0fa73cb92106f":[5,0,4,60,5],
+"classfrc_1_1ElevatorFeedforward.html#a3f6ca39b02dc06ea6009cf905ac96a7a":[5,0,4,60,11]
 };

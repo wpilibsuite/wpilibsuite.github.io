@@ -79,9 +79,9 @@ var hierarchy =
     [ "wpi::AlignedCharArray< wpi::support::detail::PickAlignment< value_type, alignment >value, sizeof(value_type)>", "structwpi_1_1AlignedCharArray.html", null ],
     [ "wpi::detail::AlignerImpl< T1, T2, T3, T4, T5, T6, T7, T8, T9, T10 >", "classwpi_1_1detail_1_1AlignerImpl.html", null ],
     [ "wpi::AlignTo< Align >", "structwpi_1_1AlignTo.html", null ],
+    [ "frc::ADXL345_I2C::AllAxes", "structfrc_1_1ADXL345__I2C_1_1AllAxes.html", null ],
     [ "frc::ADXL362::AllAxes", "structfrc_1_1ADXL362_1_1AllAxes.html", null ],
     [ "frc::ADXL345_SPI::AllAxes", "structfrc_1_1ADXL345__SPI_1_1AllAxes.html", null ],
-    [ "frc::ADXL345_I2C::AllAxes", "structfrc_1_1ADXL345__I2C_1_1AllAxes.html", null ],
     [ "frc::sim::AnalogEncoderSim", "classfrc_1_1sim_1_1AnalogEncoderSim.html", null ],
     [ "frc::sim::AnalogGyroSim", "classfrc_1_1sim_1_1AnalogGyroSim.html", null ],
     [ "frc::sim::AnalogInputSim", "classfrc_1_1sim_1_1AnalogInputSim.html", null ],
@@ -125,8 +125,8 @@ var hierarchy =
     [ "basic_data<>", "structbasic__data.html", [
       [ "data", "structdata.html", null ]
     ] ],
-    [ "wpi::sys::fs::basic_file_status", "classwpi_1_1sys_1_1fs_1_1basic__file__status.html", [
-      [ "wpi::sys::fs::file_status", "classwpi_1_1sys_1_1fs_1_1file__status.html", null ]
+    [ "basic_filebuf", null, [
+      [ "ghc::filesystem::basic_filebuf< charT, traits >", "classghc_1_1filesystem_1_1basic__filebuf.html", null ]
     ] ],
     [ "basic_format_arg< Context >", "classbasic__format__arg.html", null ],
     [ "basic_format_args< Context >", "classbasic__format__args.html", null ],
@@ -142,6 +142,15 @@ var hierarchy =
     ] ],
     [ "basic_format_specs< ParseContext::char_type >", "structbasic__format__specs.html", null ],
     [ "basic_format_string< Char, Args >", "classbasic__format__string.html", null ],
+    [ "basic_fstream", null, [
+      [ "ghc::filesystem::basic_fstream< charT, traits >", "classghc_1_1filesystem_1_1basic__fstream.html", null ]
+    ] ],
+    [ "basic_ifstream", null, [
+      [ "ghc::filesystem::basic_ifstream< charT, traits >", "classghc_1_1filesystem_1_1basic__ifstream.html", null ]
+    ] ],
+    [ "basic_ofstream", null, [
+      [ "ghc::filesystem::basic_ofstream< charT, traits >", "classghc_1_1filesystem_1_1basic__ofstream.html", null ]
+    ] ],
     [ "basic_ostream", null, [
       [ "detail::test_stream< Char >", "structdetail_1_1test__stream.html", null ]
     ] ],
@@ -374,9 +383,8 @@ var hierarchy =
     [ "frc::sim::DigitalPWMSim", "classfrc_1_1sim_1_1DigitalPWMSim.html", null ],
     [ "hal::DIOSetProxy", "structhal_1_1DIOSetProxy.html", null ],
     [ "frc::sim::DIOSim", "classfrc_1_1sim_1_1DIOSim.html", null ],
-    [ "wpi::sys::fs::directory_entry", "classwpi_1_1sys_1_1fs_1_1directory__entry.html", null ],
-    [ "wpi::sys::fs::directory_iterator", "classwpi_1_1sys_1_1fs_1_1directory__iterator.html", null ],
-    [ "wpi::sys::fs::detail::DirIterState", "structwpi_1_1sys_1_1fs_1_1detail_1_1DirIterState.html", null ],
+    [ "ghc::filesystem::directory_entry", "classghc_1_1filesystem_1_1directory__entry.html", null ],
+    [ "ghc::filesystem::directory_iterator", "classghc_1_1filesystem_1_1directory__iterator.html", null ],
     [ "detail::dragonbox::divtest_table_entry< T >", "structdetail_1_1dragonbox_1_1divtest__table__entry.html", null ],
     [ "frc::DMA", "classfrc_1_1DMA.html", null ],
     [ "frc::sim::DoubleSolenoidSim", "classfrc_1_1sim_1_1DoubleSolenoidSim.html", null ],
@@ -586,6 +594,7 @@ var hierarchy =
       [ "wpi::sig::trait::detail::is_weak_ptr_compatible< T, typename >", "structwpi_1_1sig_1_1trait_1_1detail_1_1is__weak__ptr__compatible.html", null ]
     ] ],
     [ "frc::FieldObject2d", "classfrc_1_1FieldObject2d.html", null ],
+    [ "ghc::filesystem::file_status", "classghc_1_1filesystem_1_1file__status.html", null ],
     [ "fill_t< Char >", "structfill__t.html", null ],
     [ "fixed_buffer_traits", "classfixed__buffer__traits.html", null ],
     [ "detail::fixed_handler", "structdetail_1_1fixed__handler.html", null ],
@@ -680,7 +689,6 @@ var hierarchy =
     [ "HAL_Value", "structHAL__Value.html", null ],
     [ "HALSIM_NotifierInfo", "structHALSIM__NotifierInfo.html", null ],
     [ "basic_format_arg< Context >::handle", "classbasic__format__arg_1_1handle.html", null ],
-    [ "wpi::DebugEpochBase::HandleBase", "classwpi_1_1DebugEpochBase_1_1HandleBase.html", null ],
     [ "hal::HandleBase", "classhal_1_1HandleBase.html", [
       [ "hal::DigitalHandleResource< THandle, TStruct, size >", "classhal_1_1DigitalHandleResource.html", null ],
       [ "hal::IndexedClassedHandleResource< THandle, TStruct, size, enumValue >", "classhal_1_1IndexedClassedHandleResource.html", null ],
@@ -689,6 +697,7 @@ var hierarchy =
       [ "hal::LimitedHandleResource< THandle, TStruct, size, enumValue >", "classhal_1_1LimitedHandleResource.html", null ],
       [ "hal::UnlimitedHandleResource< THandle, TStruct, enumValue >", "classhal_1_1UnlimitedHandleResource.html", null ]
     ] ],
+    [ "wpi::DebugEpochBase::HandleBase", "classwpi_1_1DebugEpochBase_1_1HandleBase.html", null ],
     [ "Handler", null, [
       [ "specs_checker< Handler >", "classspecs__checker.html", null ]
     ] ],
@@ -722,6 +731,7 @@ var hierarchy =
     ] ],
     [ "frc::I2C", "classfrc_1_1I2C.html", null ],
     [ "wpi::identity< Ty >", "structwpi_1_1identity.html", null ],
+    [ "ghc::filesystem::directory_iterator::impl", "classghc_1_1filesystem_1_1directory__iterator_1_1impl.html", null ],
     [ "int_checker< IsSigned >", "structint__checker.html", null ],
     [ "int_checker< true >", "structint__checker_3_01true_01_4.html", null ],
     [ "detail::integer_sequence< T, N >", "structdetail_1_1integer__sequence.html", null ],
@@ -846,6 +856,9 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
+    [ "iterator", null, [
+      [ "ghc::filesystem::path", "classghc_1_1filesystem_1_1path.html", null ]
+    ] ],
     [ "wpi::static_circular_buffer< T, N >::iterator", "classwpi_1_1static__circular__buffer_1_1iterator.html", null ],
     [ "iterator_facade_base< pointee_iterator< WrappedIteratorT, typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type, std::iterator_traits< WrappedIteratorT >::iterator_category, typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type, typename std::iterator_traits< WrappedIteratorT >::difference_type, typename std::conditional< std::is_same< typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type, typename std::iterator_traits< WrappedIteratorT >::value_type >::value, typename std::iterator_traits< WrappedIteratorT >::pointer, typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type * >::type, typename std::conditional< std::is_same< typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type, typename std::iterator_traits< WrappedIteratorT >::value_type >::value, typename std::iterator_traits< WrappedIteratorT >::reference, typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type & >::type >", null, [
       [ "wpi::iterator_adaptor_base< pointee_iterator< WrappedIteratorT, typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type >, WrappedIteratorT, std::iterator_traits< WrappedIteratorT >::iterator_category, typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type >", "classwpi_1_1iterator__adaptor__base.html", [
@@ -923,6 +936,9 @@ var hierarchy =
     [ "frc::LiveWindow", "classfrc_1_1LiveWindow.html", null ],
     [ "locale_ref", "classlocale__ref.html", null ],
     [ "wpi::Logger", "classwpi_1_1Logger.html", null ],
+    [ "logic_error", null, [
+      [ "ghc::filesystem::not_implemented_exception", "classghc_1_1filesystem_1_1not__implemented__exception.html", null ]
+    ] ],
     [ "nt::LogMessage", "classnt_1_1LogMessage.html", null ],
     [ "wpi::make_const_ptr< T >", "structwpi_1_1make__const__ptr.html", null ],
     [ "wpi::make_const_ref< T >", "structwpi_1_1make__const__ref.html", null ],
@@ -936,7 +952,6 @@ var hierarchy =
     [ "wpi::ManagedStaticBase", "classwpi_1_1ManagedStaticBase.html", [
       [ "wpi::ManagedStatic< C, Creator, Deleter >", "classwpi_1_1ManagedStatic.html", null ]
     ] ],
-    [ "wpi::sys::fs::mapped_file_region", "classwpi_1_1sys_1_1fs_1_1mapped__file__region.html", null ],
     [ "wpi::MapVector< KeyT, ValueT, MapType, VectorType >", "classwpi_1_1MapVector.html", null ],
     [ "wpi::MapVector< KeyT, ValueT, SmallDenseMap< KeyT, unsigned, N >, SmallVector< std::pair< KeyT, ValueT >, N > >", "classwpi_1_1MapVector.html", [
       [ "wpi::SmallMapVector< KeyT, ValueT, N >", "structwpi_1_1SmallMapVector.html", null ]
@@ -1020,6 +1035,7 @@ var hierarchy =
       [ "wpi::detail::DenseMapPair< KeyT, ValueT >", "structwpi_1_1detail_1_1DenseMapPair.html", null ]
     ] ],
     [ "wpi::pair_hash< First, Second >", "structwpi_1_1pair__hash.html", null ],
+    [ "ghc::filesystem::path_helper_base< char_type >", "classghc_1_1filesystem_1_1path__helper__base.html", null ],
     [ "frc::sim::PCMSim", "classfrc_1_1sim_1_1PCMSim.html", null ],
     [ "frc::sim::PDPSim", "classfrc_1_1sim_1_1PDPSim.html", null ],
     [ "wpi::support::detail::PickAlignment< T, alignment >", "structwpi_1_1support_1_1detail_1_1PickAlignment.html", null ],
@@ -1085,6 +1101,7 @@ var hierarchy =
     [ "wpi::detail::PromiseFactoryBase", "classwpi_1_1detail_1_1PromiseFactoryBase.html", [
       [ "wpi::PromiseFactory< void >", "classwpi_1_1PromiseFactory_3_01void_01_4.html", null ]
     ] ],
+    [ "ghc::filesystem::directory_iterator::proxy", "classghc_1_1filesystem_1_1directory__iterator_1_1proxy.html", null ],
     [ "frc::sim::PWMSim", "classfrc_1_1sim_1_1PWMSim.html", null ],
     [ "frc::RamseteController", "classfrc_1_1RamseteController.html", null ],
     [ "detail::range_to_view< T, Enable >", "structdetail_1_1range__to__view.html", null ],
@@ -1122,9 +1139,8 @@ var hierarchy =
     [ "RawSource", null, [
       [ "cs::RawCvSource", "classcs_1_1RawCvSource.html", null ]
     ] ],
-    [ "wpi::sys::fs::detail::RecDirIterState", "structwpi_1_1sys_1_1fs_1_1detail_1_1RecDirIterState.html", null ],
     [ "frc::detail::RecordingController", "classfrc_1_1detail_1_1RecordingController.html", null ],
-    [ "wpi::sys::fs::recursive_directory_iterator", "classwpi_1_1sys_1_1fs_1_1recursive__directory__iterator.html", null ],
+    [ "ghc::filesystem::recursive_directory_iterator", "classghc_1_1filesystem_1_1recursive__directory__iterator.html", null ],
     [ "wpi::recursive_spinlock1", "classwpi_1_1recursive__spinlock1.html", null ],
     [ "wpi::recursive_spinlock2", "classwpi_1_1recursive__spinlock2.html", null ],
     [ "wpi::support::detail::packed_endian_specific_integral< value_type, endian, alignment >::ref", "structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral_1_1ref.html", null ],
@@ -1623,7 +1639,7 @@ var hierarchy =
       [ "frc::Solenoid", "classfrc_1_1Solenoid.html", null ]
     ] ],
     [ "frc::sim::SolenoidSim", "classfrc_1_1sim_1_1SolenoidSim.html", null ],
-    [ "wpi::sys::fs::space_info", "structwpi_1_1sys_1_1fs_1_1space__info.html", null ],
+    [ "ghc::filesystem::space_info", "structghc_1_1filesystem_1_1space__info.html", null ],
     [ "wpi::span< ElementType, Extent >", "classwpi_1_1span.html", null ],
     [ "wpi::detail::span_storage< E, S >", "structwpi_1_1detail_1_1span__storage.html", null ],
     [ "wpi::detail::span_storage< E, dynamic_extent >", "structwpi_1_1detail_1_1span__storage_3_01E_00_01dynamic__extent_01_4.html", null ],
@@ -1653,8 +1669,8 @@ var hierarchy =
     ] ],
     [ "frc::SplineHelper", "classfrc_1_1SplineHelper.html", null ],
     [ "frc::SplineParameterizer", "classfrc_1_1SplineParameterizer.html", null ],
-    [ "frc::TrapezoidProfile< Distance >::State", "classfrc_1_1TrapezoidProfile_1_1State.html", null ],
     [ "frc::sim::DifferentialDrivetrainSim::State", "classfrc_1_1sim_1_1DifferentialDrivetrainSim_1_1State.html", null ],
+    [ "frc::TrapezoidProfile< Distance >::State", "classfrc_1_1TrapezoidProfile_1_1State.html", null ],
     [ "frc::Trajectory::State", "structfrc_1_1Trajectory_1_1State.html", null ],
     [ "wpi::static_circular_buffer< T, N >", "classwpi_1_1static__circular__buffer.html", null ],
     [ "wpi::detail::static_const< T >", "structwpi_1_1detail_1_1static__const.html", null ],
@@ -1688,6 +1704,9 @@ var hierarchy =
     [ "frc::SwerveDriveOdometry< NumModules >", "classfrc_1_1SwerveDriveOdometry.html", null ],
     [ "frc::SwerveDrivePoseEstimator< NumModules >", "classfrc_1_1SwerveDrivePoseEstimator.html", null ],
     [ "frc::SwerveModuleState", "structfrc_1_1SwerveModuleState.html", null ],
+    [ "system_error", null, [
+      [ "ghc::filesystem::filesystem_error", "classghc_1_1filesystem_1_1filesystem__error.html", null ]
+    ] ],
     [ "wpi::TCPConnector", "classwpi_1_1TCPConnector.html", null ],
     [ "text_style", "classtext__style.html", null ],
     [ "wpi::ThreadSafeRefCountedBase< Derived >", "classwpi_1_1ThreadSafeRefCountedBase.html", null ],
@@ -1763,6 +1782,7 @@ var hierarchy =
     [ "frc::Twist2d", "structfrc_1_1Twist2d.html", null ],
     [ "type_identity< T >", "structtype__identity.html", null ],
     [ "wpi::sig::trait::typelist<... >", "structwpi_1_1sig_1_1trait_1_1typelist.html", null ],
+    [ "ghc::filesystem::u8arguments", "classghc_1_1filesystem_1_1u8arguments.html", null ],
     [ "wpi::UDPClient", "classwpi_1_1UDPClient.html", null ],
     [ "wpi::UidVector< T, reuse_threshold >", "classwpi_1_1UidVector.html", null ],
     [ "wpi::UidVector< ListenerData, 64 >", "classwpi_1_1UidVector.html", null ],
@@ -1772,7 +1792,6 @@ var hierarchy =
     [ "unformattable", "structunformattable.html", null ],
     [ "wpi::unique_function< FunctionT >", "classwpi_1_1unique__function.html", null ],
     [ "wpi::unique_function< ReturnT(ParamTs...)>", "classwpi_1_1unique__function_3_01ReturnT_07ParamTs_8_8_8_08_4.html", null ],
-    [ "wpi::sys::fs::UniqueID", "classwpi_1_1sys_1_1fs_1_1UniqueID.html", null ],
     [ "frc::UnscentedKalmanFilter< States, Inputs, Outputs >", "classfrc_1_1UnscentedKalmanFilter.html", null ],
     [ "frc::UnscentedKalmanFilter< 3, 3, 1 >", "classfrc_1_1UnscentedKalmanFilter.html", null ],
     [ "frc::UnscentedKalmanFilter< 5, 3, 3 >", "classfrc_1_1UnscentedKalmanFilter.html", null ],
@@ -1785,9 +1804,9 @@ var hierarchy =
     [ "wpi::validate_format_parameters< Args >", "structwpi_1_1validate__format__parameters.html", null ],
     [ "wpi::validate_format_parameters< Arg, Args... >", "structwpi_1_1validate__format__parameters_3_01Arg_00_01Args_8_8_8_01_4.html", null ],
     [ "wpi::validate_format_parameters<>", "structwpi_1_1validate__format__parameters_3_4.html", null ],
-    [ "value< Context >", "classvalue.html", null ],
-    [ "nt::Value", "classnt_1_1Value.html", null ],
     [ "arg_ref< Char >::value", "unionarg__ref_1_1value.html", null ],
+    [ "nt::Value", "classnt_1_1Value.html", null ],
+    [ "value< Context >", "classvalue.html", null ],
     [ "detail::counting_iterator::value_type", "structdetail_1_1counting__iterator_1_1value__type.html", null ],
     [ "frc::Vector2d", "structfrc_1_1Vector2d.html", null ],
     [ "wpi::VersionTuple", "classwpi_1_1VersionTuple.html", null ],
@@ -1806,12 +1825,12 @@ var hierarchy =
         [ "cs::UsbCamera", "classcs_1_1UsbCamera.html", null ]
       ] ]
     ] ],
-    [ "view", "structview.html", [
-      [ "named_arg< Char, T >", "structnamed__arg.html", null ]
-    ] ],
     [ "view", null, [
       [ "arg_join< It, Sentinel, Char >", "structarg__join.html", null ],
       [ "tuple_arg_join< Char, T >", "structtuple__arg__join.html", null ]
+    ] ],
+    [ "view", "structview.html", [
+      [ "named_arg< Char, T >", "structnamed__arg.html", null ]
     ] ],
     [ "detail::range_to_view< T, enable_if_t<!has_const_begin_end< T >::value &&has_mutable_begin_end< T >::value > >::view_t", "structdetail_1_1range__to__view_3_01T_00_01enable__if__t_3_9has__const__begin__end_3_01T_01_4_1_1cf1f6c31b1fc849c7f6ab73440db946.html", null ],
     [ "detail::range_to_view< T, enable_if_t< has_const_begin_end< T >::value > >::view_t", "structdetail_1_1range__to__view_3_01T_00_01enable__if__t_3_01has__const__begin__end_3_01T_01_4_1_1value_01_4_01_4_1_1view__t.html", null ],
@@ -1822,9 +1841,9 @@ var hierarchy =
     [ "wpi::sig::trait::detail::voider<... >", "structwpi_1_1sig_1_1trait_1_1detail_1_1voider.html", null ],
     [ "frc::Watchdog", "classfrc_1_1Watchdog.html", null ],
     [ "wpi::WebSocketServerHelper", "classwpi_1_1WebSocketServerHelper.html", null ],
-    [ "frc::MecanumDrive::WheelSpeeds", "structfrc_1_1MecanumDrive_1_1WheelSpeeds.html", null ],
     [ "frc::DifferentialDrive::WheelSpeeds", "structfrc_1_1DifferentialDrive_1_1WheelSpeeds.html", null ],
     [ "frc::KilloughDrive::WheelSpeeds", "structfrc_1_1KilloughDrive_1_1WheelSpeeds.html", null ],
+    [ "frc::MecanumDrive::WheelSpeeds", "structfrc_1_1MecanumDrive_1_1WheelSpeeds.html", null ],
     [ "frc::WidgetType", "classfrc_1_1WidgetType.html", null ],
     [ "width_checker< ErrorHandler >", "classwidth__checker.html", null ],
     [ "wpi::WorkerThread< T >", "classwpi_1_1WorkerThread.html", null ],

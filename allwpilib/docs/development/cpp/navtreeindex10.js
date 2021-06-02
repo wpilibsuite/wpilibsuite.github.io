@@ -1,6 +1,5 @@
 var NAVTREEINDEX10 =
 {
-"classfrc_1_1ElevatorFeedforward.html#a3f6ca39b02dc06ea6009cf905ac96a7a":[5,0,4,60,11],
 "classfrc_1_1ElevatorFeedforward.html#a4ec4bcf9525053c6921af2f42822e09a":[5,0,4,60,10],
 "classfrc_1_1ElevatorFeedforward.html#a5eef769a83b9b8dbda7b605444f03d9c":[5,0,4,60,6],
 "classfrc_1_1ElevatorFeedforward.html#a5f612929d669d64809f670557b194a66":[5,0,4,60,13],
@@ -249,5 +248,6 @@ var NAVTREEINDEX10 =
 "classfrc_1_1IterativeRobotBase.html#af55ae3692aeddcb8f9d3e54a5d5b9474":[5,0,4,74,13],
 "classfrc_1_1IterativeRobotBase.html#afee5b7301bc0f4579d76f840a18f2cca":[5,0,4,74,1],
 "classfrc_1_1Jaguar.html":[5,0,4,75],
-"classfrc_1_1Jaguar.html#a5363bd3b68d97c7be78154721f709612":[5,0,4,75,0]
+"classfrc_1_1Jaguar.html#a5363bd3b68d97c7be78154721f709612":[5,0,4,75,0],
+"classfrc_1_1Jaguar.html#ae055fd69cfc01f6efa8653c70f40b6de":[5,0,4,75,2]
 };
