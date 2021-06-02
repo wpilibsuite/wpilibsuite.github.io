@@ -1,6 +1,5 @@
 var NAVTREEINDEX35 =
 {
-"dir_bb1991b688e3fae464f82f03a0e274c4.html":[6,0,5],
 "dir_c6e2d0887a78731b55ec560dc12beac1.html":[6,0,0],
 "dir_d0a9c1f552287e8d1bf6d4228ef74d88.html":[6,0,4,4],
 "dir_d2a0b1acc90a71e3394af07d8da08800.html":[6,0,6,3],
@@ -41,8 +40,8 @@ var NAVTREEINDEX35 =
 "format_8h_source.html":[6,0,3,0,0,6],
 "fpga__clock_8h_source.html":[6,0,8,0,0],
 "fs_8h_source.html":[6,0,11,27],
-"functions.html":[5,3,0,0],
 "functions.html":[5,3,0],
+"functions.html":[5,3,0,0],
 "functions_a.html":[5,3,0,1],
 "functions_b.html":[5,3,0,2],
 "functions_c.html":[5,3,0,3],
@@ -51,8 +50,8 @@ var NAVTREEINDEX35 =
 "functions_enum.html":[5,3,4],
 "functions_eval.html":[5,3,5],
 "functions_f.html":[5,3,0,6],
-"functions_func.html":[5,3,1,0],
 "functions_func.html":[5,3,1],
+"functions_func.html":[5,3,1,0],
 "functions_func_a.html":[5,3,1,1],
 "functions_func_b.html":[5,3,1,2],
 "functions_func_c.html":[5,3,1,3],
@@ -97,8 +96,8 @@ var NAVTREEINDEX35 =
 "functions_type.html":[5,3,3],
 "functions_u.html":[5,3,0,21],
 "functions_v.html":[5,3,0,22],
-"functions_vars.html":[5,3,2,0],
 "functions_vars.html":[5,3,2],
+"functions_vars.html":[5,3,2,0],
 "functions_vars_b.html":[5,3,2,1],
 "functions_vars_c.html":[5,3,2,2],
 "functions_vars_d.html":[5,3,2,3],
@@ -249,5 +248,6 @@ var NAVTREEINDEX35 =
 "group__hal__canapi.html":[3,0,15],
 "group__hal__canapi.html#ga096d75b813ab0c3d4623f174c9f08a82":[3,0,15,3],
 "group__hal__canapi.html#ga140e61c4b22ea7177a249fb6ca208468":[3,0,15,6],
-"group__hal__canapi.html#ga2427e08c4232a0bd698cb595790ce6fc":[3,0,15,5]
+"group__hal__canapi.html#ga2427e08c4232a0bd698cb595790ce6fc":[3,0,15,5],
+"group__hal__canapi.html#ga6d6f754cb6725d06551dc2bdc86c5a21":[3,0,15,8]
 };
