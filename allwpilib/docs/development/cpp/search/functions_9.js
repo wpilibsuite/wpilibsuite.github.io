@@ -1,7 +1,7 @@
 var searchData=
 [
   ['i2c_6608',['I2C',['../classfrc_1_1I2C.html#a30f1cc701e7d7a800d5768a7aed15390',1,'frc::I2C']]],
-  ['identifydrivetrainsystem_6609',['IdentifyDrivetrainSystem',['../classfrc_1_1LinearSystemId.html#a092b17d6fc057c675bd199a27bffc909',1,'frc::LinearSystemId']]],
+  ['identifydrivetrainsystem_6609',['IdentifyDrivetrainSystem',['../classfrc_1_1LinearSystemId.html#a5e32d1d2708a55570aedbd1f5871c01d',1,'frc::LinearSystemId::IdentifyDrivetrainSystem(decltype(1_V/1_mps) kVlinear, decltype(1_V/1_mps_sq) kAlinear, decltype(1_V/1_mps) kVangular, decltype(1_V/1_mps_sq) kAangular)'],['../classfrc_1_1LinearSystemId.html#a4d1b0dd06307c7956fd84361f80c0b85',1,'frc::LinearSystemId::IdentifyDrivetrainSystem(decltype(1_V/1_mps) kVlinear, decltype(1_V/1_mps_sq) kAlinear, decltype(1_V/1_rad_per_s) kVangular, decltype(1_V/1_rad_per_s_sq) kAangular, units::meter_t trackwidth)']]],
   ['identifypositionsystem_6610',['IdentifyPositionSystem',['../classfrc_1_1LinearSystemId.html#a21e94c56d387f6cf17d62a671c1b90bc',1,'frc::LinearSystemId']]],
   ['identifyvelocitysystem_6611',['IdentifyVelocitySystem',['../classfrc_1_1LinearSystemId.html#a4c25cc196bc235afe55a3408e8d1bfe9',1,'frc::LinearSystemId']]],
   ['inautonomous_6612',['InAutonomous',['../classfrc_1_1DriverStation.html#a2fad0163c68694dd8adcfff73c8f7b00',1,'frc::DriverStation']]],

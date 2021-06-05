@@ -1,5 +1,6 @@
 var NAVTREEINDEX12 =
 {
+"classfrc_1_1MechanismObject2d.html#a5cc20b8822d489a0a42ebc31e25c90b8":[5,0,4,102,0],
 "classfrc_1_1MechanismObject2d.html#a786464f0e430f628b247848129bf15ce":[5,0,4,102,2],
 "classfrc_1_1MechanismObject2d.html#af2157e93dd3038076fb4f928e737c69d":[5,0,4,102,5],
 "classfrc_1_1MechanismRoot2d.html":[5,0,4,103],
@@ -248,6 +249,5 @@ var NAVTREEINDEX12 =
 "classfrc_1_1PWMMotorController.html#a0910c229495436a8dc94dcbd478c0bae":[5,0,4,127,2],
 "classfrc_1_1PWMMotorController.html#a0db05ebd2c05fecae5c95bcad9ed5b96":[5,0,4,127,8],
 "classfrc_1_1PWMMotorController.html#a0fc47626dfa5c72b3c22d77574e7eb0c":[5,0,4,127,7],
-"classfrc_1_1PWMMotorController.html#a23586a3111a6b7114bbaa6df952c9c92":[5,0,4,127,1],
-"classfrc_1_1PWMMotorController.html#a3274a2293ee6990bcd15cc0dd8f33282":[5,0,4,127,6]
+"classfrc_1_1PWMMotorController.html#a23586a3111a6b7114bbaa6df952c9c92":[5,0,4,127,1]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX25 =
 {
+"classwpi_1_1HttpServerConnection.html#a49235d25ea52d88faab2633741fd5d37":[5,0,10,106,2],
 "classwpi_1_1HttpServerConnection.html#a724e3f5bec8d51d91b2ae3b507e27767":[5,0,10,106,1],
 "classwpi_1_1HttpServerConnection.html#a74b9ba0081df7bb190dbb06d2eeaa247":[5,0,10,106,7],
 "classwpi_1_1HttpServerConnection.html#a7d0ec3d4643c9afb51ba386a5f6b0127":[5,0,10,106,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX25 =
 "classwpi_1_1PortForwarder.html#a69321f62cd088582ab8a1b48b771865c":[5,0,10,167,2],
 "classwpi_1_1PortForwarder.html#aa3419b2b4c65b8e82c6b885b58b21b47":[5,0,10,167,1],
 "classwpi_1_1PortForwarder.html#ab7714761ade7f7d9f7158d3990ec3739":[5,0,10,167,4],
-"classwpi_1_1PortForwarder.html#acc335fb133bb1f9327383dff47f1f8b8":[5,0,10,167,0],
-"classwpi_1_1PromiseFactory.html":[5,0,10,171]
+"classwpi_1_1PortForwarder.html#acc335fb133bb1f9327383dff47f1f8b8":[5,0,10,167,0]
 };

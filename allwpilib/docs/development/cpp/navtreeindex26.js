@@ -1,5 +1,6 @@
 var NAVTREEINDEX26 =
 {
+"classwpi_1_1PromiseFactory.html":[5,0,10,171],
 "classwpi_1_1PromiseFactory.html#a1da363cf672345251a5582fc7631bf5f":[5,0,10,171,12],
 "classwpi_1_1PromiseFactory.html#a287f92c926734608a1f6d82e1f3e205b":[5,0,10,171,10],
 "classwpi_1_1PromiseFactory.html#a2d0b3d0c57454c68d23850ab05bc4e0b":[5,0,10,171,11],
@@ -248,6 +249,5 @@ var NAVTREEINDEX26 =
 "classwpi_1_1SmallVectorImpl.html#a655f3fb0a2581d6ef05c4343bbab1378":[5,0,10,219,20],
 "classwpi_1_1SmallVectorImpl.html#a66a8548d8eda43fb76f47a84849d8916":[5,0,10,219,27],
 "classwpi_1_1SmallVectorImpl.html#a84adc62bb14ec4e7b6b51bcfe784247d":[5,0,10,219,1],
-"classwpi_1_1SmallVectorImpl.html#a897112d226150ae64722f6328e0d8f5d":[5,0,10,219,22],
-"classwpi_1_1SmallVectorImpl.html#aa2fadb0fd0cb0753768a8a8661d8d72c":[5,0,10,219,0]
+"classwpi_1_1SmallVectorImpl.html#a897112d226150ae64722f6328e0d8f5d":[5,0,10,219,22]
 };

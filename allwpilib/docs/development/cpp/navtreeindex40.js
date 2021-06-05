@@ -1,5 +1,6 @@
 var NAVTREEINDEX40 =
 {
+"structchrono__format__checker.html#a5a3544cb6e2a54fc527bb3e8e4ae6fde":[5,0,42,0],
 "structchrono__format__checker.html#a81b3c1414ee24f3afd8b709f9f23e56b":[5,0,42,2],
 "structchrono__format__checker.html#a86e6e2fd43d82f1389ca8510ed9608f2":[5,0,42,19],
 "structchrono__format__checker.html#aa0a07c5e4f065cddeae5b06e96dd2747":[5,0,42,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX40 =
 "structdragonbox_1_1decimal__fp.html#a47b4f3fc16d1d3d77473e75994b3da49":[5,0,2,0,0],
 "structdragonbox_1_1decimal__fp.html#a64d25dcef761036d13362bdad991cf89":[5,0,2,0,2],
 "structdragonbox_1_1float__info.html":[5,0,2,1],
-"structdragonbox_1_1float__info_3_01double_01_4.html":[5,0,2,2],
-"structdragonbox_1_1float__info_3_01double_01_4.html#a06d6cb45fc7101a3c825599aecbe3051":[5,0,2,2,4]
+"structdragonbox_1_1float__info_3_01double_01_4.html":[5,0,2,2]
 };

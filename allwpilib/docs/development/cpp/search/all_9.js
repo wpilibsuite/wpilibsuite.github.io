@@ -4,7 +4,7 @@ var searchData=
   ['interrupts_20functions_1768',['Interrupts Functions',['../group__hal__interrupts.html',1,'']]],
   ['i2c_1769',['I2C',['../classfrc_1_1I2C.html',1,'frc::I2C'],['../classfrc_1_1I2C.html#a30f1cc701e7d7a800d5768a7aed15390',1,'frc::I2C::I2C()']]],
   ['id_1770',['id',['../classwpi_1_1detail_1_1exception.html#ac4fcb2e58a8f952c1eb5c0f82f285270',1,'wpi::detail::exception']]],
-  ['identifydrivetrainsystem_1771',['IdentifyDrivetrainSystem',['../classfrc_1_1LinearSystemId.html#a092b17d6fc057c675bd199a27bffc909',1,'frc::LinearSystemId']]],
+  ['identifydrivetrainsystem_1771',['IdentifyDrivetrainSystem',['../classfrc_1_1LinearSystemId.html#a5e32d1d2708a55570aedbd1f5871c01d',1,'frc::LinearSystemId::IdentifyDrivetrainSystem(decltype(1_V/1_mps) kVlinear, decltype(1_V/1_mps_sq) kAlinear, decltype(1_V/1_mps) kVangular, decltype(1_V/1_mps_sq) kAangular)'],['../classfrc_1_1LinearSystemId.html#a4d1b0dd06307c7956fd84361f80c0b85',1,'frc::LinearSystemId::IdentifyDrivetrainSystem(decltype(1_V/1_mps) kVlinear, decltype(1_V/1_mps_sq) kAlinear, decltype(1_V/1_rad_per_s) kVangular, decltype(1_V/1_rad_per_s_sq) kAangular, units::meter_t trackwidth)']]],
   ['identifypositionsystem_1772',['IdentifyPositionSystem',['../classfrc_1_1LinearSystemId.html#a21e94c56d387f6cf17d62a671c1b90bc',1,'frc::LinearSystemId']]],
   ['identifyvelocitysystem_1773',['IdentifyVelocitySystem',['../classfrc_1_1LinearSystemId.html#a4c25cc196bc235afe55a3408e8d1bfe9',1,'frc::LinearSystemId']]],
   ['identity_1774',['identity',['../structwpi_1_1identity.html',1,'wpi']]],

@@ -1,5 +1,6 @@
 var NAVTREEINDEX44 =
 {
+"structwpi_1_1detail_1_1zip__first.html":[5,0,10,0,88],
 "structwpi_1_1detail_1_1zip__first.html#a949c83a964513d4372272e6c7313335a":[5,0,10,0,88,0],
 "structwpi_1_1detail_1_1zip__first.html#ad272c887e52ccf5365982b0587562bb1":[5,0,10,0,88,2],
 "structwpi_1_1detail_1_1zip__first.html#ad63e05477062630ef0d35956e9fb6169":[5,0,10,0,88,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX44 =
 "wpilibOldCommands_2src_2main_2native_2include_2frc_2PIDController_8h_source.html":[6,0,5,3],
 "wpilibOldCommands_2src_2main_2native_2include_2frc_2buttons_2Button_8h_source.html":[6,0,5,0,0],
 "wpilibOldCommands_2src_2main_2native_2include_2frc_2buttons_2JoystickButton_8h_source.html":[6,0,5,0,5],
-"wpilibOldCommands_2src_2main_2native_2include_2frc_2buttons_2NetworkButton_8h_source.html":[6,0,5,0,6],
-"wpilibOldCommands_2src_2main_2native_2include_2frc_2buttons_2POVButton_8h_source.html":[6,0,5,0,7]
+"wpilibOldCommands_2src_2main_2native_2include_2frc_2buttons_2NetworkButton_8h_source.html":[6,0,5,0,6]
 };

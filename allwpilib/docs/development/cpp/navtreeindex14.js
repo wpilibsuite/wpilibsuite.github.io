@@ -1,5 +1,6 @@
 var NAVTREEINDEX14 =
 {
+"classfrc_1_1RobotDriveBase.html#a91bbe6376ee340272ae36ea20b608754a024977796e74c04a6f0cdd027580a0e9":[5,0,4,141,0,4],
 "classfrc_1_1RobotDriveBase.html#a91bbe6376ee340272ae36ea20b608754a10b4c2722341a2b7e41ddfd45c019cdc":[5,0,4,141,0,0],
 "classfrc_1_1RobotDriveBase.html#a91bbe6376ee340272ae36ea20b608754a2e9ff3c98bdf920a7cb9314b38beb007":[5,0,4,141,0,5],
 "classfrc_1_1RobotDriveBase.html#a91bbe6376ee340272ae36ea20b608754a5f2fc6a85d38b20ae27e441ece6fbc6b":[5,0,4,141,0,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX14 =
 "classfrc_1_1SendableRegistry.html#aadadfba41b36903bb5735df5bd60e163":[5,0,4,155,1],
 "classfrc_1_1SendableRegistry.html#ab1ea105bce62b5fa9abde886be485a29":[5,0,4,155,32],
 "classfrc_1_1SendableRegistry.html#ab7457c07dcf5dff88eb7ee82ad598166":[5,0,4,155,2],
-"classfrc_1_1SendableRegistry.html#ac53549df80587a8af54751e24481b9a0":[5,0,4,155,12],
-"classfrc_1_1SendableRegistry.html#ac72e138aeed4dc0e019d83c962fb4cbb":[5,0,4,155,8]
+"classfrc_1_1SendableRegistry.html#ac53549df80587a8af54751e24481b9a0":[5,0,4,155,12]
 };

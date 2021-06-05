@@ -1,5 +1,6 @@
 var NAVTREEINDEX24 =
 {
+"classwpi_1_1Error.html#af9853a913f7c3209c5076a66ebdee623":[5,0,10,54,11],
 "classwpi_1_1Error.html#afdd3190b9c558662875c5eebac953b5c":[5,0,10,54,5],
 "classwpi_1_1ErrorAsOutParameter.html":[5,0,10,55],
 "classwpi_1_1ErrorAsOutParameter.html#a08f8909635cb19c3389a0ebf86bd4349":[5,0,10,55,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX24 =
 "classwpi_1_1HttpServerConnection.html#a22c0d3068e33195331465e9351340d1f":[5,0,10,106,8],
 "classwpi_1_1HttpServerConnection.html#a33e14330649254066ec02c7e70403f65":[5,0,10,106,5],
 "classwpi_1_1HttpServerConnection.html#a37acb1c41763dd1747d501341e4b3412":[5,0,10,106,10],
-"classwpi_1_1HttpServerConnection.html#a4865a10b2a8c81c50ccc22166f29341b":[5,0,10,106,3],
-"classwpi_1_1HttpServerConnection.html#a49235d25ea52d88faab2633741fd5d37":[5,0,10,106,2]
+"classwpi_1_1HttpServerConnection.html#a4865a10b2a8c81c50ccc22166f29341b":[5,0,10,106,3]
 };
