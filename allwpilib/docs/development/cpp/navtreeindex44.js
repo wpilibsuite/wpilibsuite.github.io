@@ -1,5 +1,6 @@
 var NAVTREEINDEX44 =
 {
+"structwpi_1_1detail_1_1zip__common.html#aff06be5d1766a4901a39a7a6c57da2ca":[5,0,10,0,87,3],
 "structwpi_1_1detail_1_1zip__first.html":[5,0,10,0,88],
 "structwpi_1_1detail_1_1zip__first.html#a949c83a964513d4372272e6c7313335a":[5,0,10,0,88,0],
 "structwpi_1_1detail_1_1zip__first.html#ad272c887e52ccf5365982b0587562bb1":[5,0,10,0,88,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX44 =
 "wpilibNewCommands_2src_2main_2native_2include_2frc2_2command_2button_2Trigger_8h_source.html":[6,0,7,0,0,4],
 "wpilibOldCommands_2src_2main_2native_2include_2frc_2PIDController_8h_source.html":[6,0,5,3],
 "wpilibOldCommands_2src_2main_2native_2include_2frc_2buttons_2Button_8h_source.html":[6,0,5,0,0],
-"wpilibOldCommands_2src_2main_2native_2include_2frc_2buttons_2JoystickButton_8h_source.html":[6,0,5,0,5],
-"wpilibOldCommands_2src_2main_2native_2include_2frc_2buttons_2NetworkButton_8h_source.html":[6,0,5,0,6]
+"wpilibOldCommands_2src_2main_2native_2include_2frc_2buttons_2JoystickButton_8h_source.html":[6,0,5,0,5]
 };

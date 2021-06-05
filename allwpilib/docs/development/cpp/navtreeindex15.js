@@ -1,17 +1,5 @@
 var NAVTREEINDEX15 =
 {
-"classfrc_1_1SendableRegistry.html#ac72e138aeed4dc0e019d83c962fb4cbb":[5,0,4,155,8],
-"classfrc_1_1SendableRegistry.html#ad1c37431bb939ba5c0ae597a306f59a6":[5,0,4,155,9],
-"classfrc_1_1SendableRegistry.html#ad7c5291e56dd7a2a50613a6efedf2671":[5,0,4,155,15],
-"classfrc_1_1SendableRegistry.html#ad9b4940f262e066d873b74365a604118":[5,0,4,155,24],
-"classfrc_1_1SendableRegistry.html#ada591c7188bb3bbb9413cde8a3508a05":[5,0,4,155,11],
-"classfrc_1_1SendableRegistry.html#ae5b85bd0b614f43aaa61d272a54882e0":[5,0,4,155,25],
-"classfrc_1_1SendableRegistry.html#ae72068a93ee04baa6445025ad4f12514":[5,0,4,155,13],
-"classfrc_1_1SendableRegistry.html#af00951ed4bd88adf4cbddda94874fa6c":[5,0,4,155,4],
-"classfrc_1_1SendableRegistry.html#af06ef9054f12f4cf0fdfadbdb74e5bcd":[5,0,4,155,27],
-"classfrc_1_1SendableRegistry.html#af9e428d2f07ba27a374e16d7bf12c138":[5,0,4,155,16],
-"classfrc_1_1SensorUtil.html":[5,0,4,156],
-"classfrc_1_1SensorUtil.html#a099c3fbe2ab9c2d3fd8b89b069b52527":[5,0,4,156,7],
 "classfrc_1_1SensorUtil.html#a0dc2c39819ee4355b9dd7b1fc933445a":[5,0,4,156,4],
 "classfrc_1_1SensorUtil.html#a16d10766188420a4548aa616038bc27c":[5,0,4,156,10],
 "classfrc_1_1SensorUtil.html#a25df178a8bdef462fd0c589433f0cfdf":[5,0,4,156,14],
@@ -249,5 +237,17 @@ var NAVTREEINDEX15 =
 "classfrc_1_1SmartDashboard.html#adc33ff34ec70b8fc192436a1d7924c26":[5,0,4,171,25],
 "classfrc_1_1SmartDashboard.html#ae1ea2b4a8fe264b1bc89f45437171b25":[5,0,4,171,7],
 "classfrc_1_1SmartDashboard.html#ae1f47720ab6e66df53441b1e4d67933a":[5,0,4,171,2],
-"classfrc_1_1SmartDashboard.html#af73c67b480e47aebc1dfd8be403ddf47":[5,0,4,171,1]
+"classfrc_1_1SmartDashboard.html#af73c67b480e47aebc1dfd8be403ddf47":[5,0,4,171,1],
+"classfrc_1_1SmartDashboard.html#af9761241a48c8f228845deab9a4b61b4":[5,0,4,171,19],
+"classfrc_1_1SmartDashboard.html#af9ecbf74b055d0574d2f2286e5369712":[5,0,4,171,32],
+"classfrc_1_1SmartDashboard.html#afd14936cc74df4d28ee86c21d029eb59":[5,0,4,171,36],
+"classfrc_1_1Solenoid.html":[5,0,4,172],
+"classfrc_1_1Solenoid.html#a0825354d6291aeb0a89f9b33d75a8a24":[5,0,4,172,12],
+"classfrc_1_1Solenoid.html#a1f65b6d1b6fe29af2982073ccc7499c0":[5,0,4,172,10],
+"classfrc_1_1Solenoid.html#a2de33f14859ab5a2824baadc27c22c6a":[5,0,4,172,3],
+"classfrc_1_1Solenoid.html#a2f1aa95afed763b07fc0821418cab2db":[5,0,4,172,0],
+"classfrc_1_1Solenoid.html#a3947cbcc73de70a6b7244700c77c693e":[5,0,4,172,7],
+"classfrc_1_1Solenoid.html#a492d0b0e1c8f0252c74d412972d77763":[5,0,4,172,8],
+"classfrc_1_1Solenoid.html#a60b4342d9bddc7bf5745918622a08290":[5,0,4,172,11],
+"classfrc_1_1Solenoid.html#a955bc01fb6844349295b0cce5555527f":[5,0,4,172,5]
 };

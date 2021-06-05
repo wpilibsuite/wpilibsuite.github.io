@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-86-g15c521a</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-87-g5c81708</span>
    </div>
   </td>
  </tr>
@@ -108,70 +108,50 @@ $(document).ready(function(){initNavTree('Interrupts_8h_source.html',''); initRe
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">typedef</span> void (*HAL_InterruptHandlerFunction)(uint32_t interruptAssertedMask,</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                                             <span class="keywordtype">void</span>* param);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="group__hal__interrupts.html#ga60e1deb622cbc12ad28a17673b5c1e64">   31</a></span>&#160;HAL_InterruptHandle <a class="code" href="group__hal__interrupts.html#ga60e1deb622cbc12ad28a17673b5c1e64">HAL_InitializeInterrupts</a>(HAL_Bool watcher, int32_t* status);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="group__hal__interrupts.html#ga820bced156fd7a81fd632b98a5df52a3">   40</a></span>&#160;<span class="keywordtype">void</span>* <a class="code" href="group__hal__interrupts.html#ga820bced156fd7a81fd632b98a5df52a3">HAL_CleanInterrupts</a>(HAL_InterruptHandle interruptHandle, int32_t* status);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="group__hal__interrupts.html#ga9bd2cfe22ac6a8cf7cdc1dc163728e1d">   51</a></span>&#160;int64_t <a class="code" href="group__hal__interrupts.html#ga9bd2cfe22ac6a8cf7cdc1dc163728e1d">HAL_WaitForInterrupt</a>(HAL_InterruptHandle interruptHandle,</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                             <span class="keywordtype">double</span> timeout, HAL_Bool ignorePrevious,</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                             int32_t* status);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="group__hal__interrupts.html#gab0ebc1a5040f6e60aed2151937acf909">   64</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__interrupts.html#gab0ebc1a5040f6e60aed2151937acf909">HAL_EnableInterrupts</a>(HAL_InterruptHandle interruptHandle, int32_t* status);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="group__hal__interrupts.html#ga6e805c5a33bbae8cb990cd2d61bfc8a6">   71</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__interrupts.html#ga6e805c5a33bbae8cb990cd2d61bfc8a6">HAL_DisableInterrupts</a>(HAL_InterruptHandle interruptHandle,</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                           int32_t* status);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="group__hal__interrupts.html#gabcd95895a76e956a3b19e0d72b46ea9f">   84</a></span>&#160;int64_t <a class="code" href="group__hal__interrupts.html#gabcd95895a76e956a3b19e0d72b46ea9f">HAL_ReadInterruptRisingTimestamp</a>(HAL_InterruptHandle interruptHandle,</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                                         int32_t* status);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="group__hal__interrupts.html#ga35f98945b469afacbfcec081b98a1a1a">   97</a></span>&#160;int64_t <a class="code" href="group__hal__interrupts.html#ga35f98945b469afacbfcec081b98a1a1a">HAL_ReadInterruptFallingTimestamp</a>(HAL_InterruptHandle interruptHandle,</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                                          int32_t* status);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="group__hal__interrupts.html#ga42d553aed65587375963d441cb48d6e0">  108</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__interrupts.html#ga42d553aed65587375963d441cb48d6e0">HAL_RequestInterrupts</a>(HAL_InterruptHandle interruptHandle,</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                           HAL_Handle digitalSourceHandle,</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                           HAL_AnalogTriggerType analogTriggerType,</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                           int32_t* status);</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
-<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="group__hal__interrupts.html#gac9efc74031d89662676ebde134e2b730">  123</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__interrupts.html#gac9efc74031d89662676ebde134e2b730">HAL_AttachInterruptHandler</a>(HAL_InterruptHandle interruptHandle,</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                                HAL_InterruptHandlerFunction handler,</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                                <span class="keywordtype">void</span>* param, int32_t* status);</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
-<div class="line"><a name="l00137"></a><span class="lineno"><a class="line" href="group__hal__interrupts.html#gae62617c3db17f2d4004649b229d109f9">  137</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__interrupts.html#gae62617c3db17f2d4004649b229d109f9">HAL_AttachInterruptHandlerThreaded</a>(HAL_InterruptHandle interruptHandle,</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                                        HAL_InterruptHandlerFunction handler,</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                                        <span class="keywordtype">void</span>* param, int32_t* status);</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
-<div class="line"><a name="l00150"></a><span class="lineno"><a class="line" href="group__hal__interrupts.html#ga96e6618288cfac532a31049cda0d48c0">  150</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__interrupts.html#ga96e6618288cfac532a31049cda0d48c0">HAL_SetInterruptUpSourceEdge</a>(HAL_InterruptHandle interruptHandle,</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                                  HAL_Bool risingEdge, HAL_Bool fallingEdge,</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                                  int32_t* status);</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
-<div class="line"><a name="l00161"></a><span class="lineno"><a class="line" href="group__hal__interrupts.html#ga67f157be25831233951cb239c837d098">  161</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__interrupts.html#ga67f157be25831233951cb239c837d098">HAL_ReleaseWaitingInterrupt</a>(HAL_InterruptHandle interruptHandle,</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                                 int32_t* status);</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;}  <span class="comment">// extern &quot;C&quot;</span></div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="group__hal__interrupts.html#gab85a7a97fabeb4b1af9abe6292f83170">   28</a></span>&#160;HAL_InterruptHandle <a class="code" href="group__hal__interrupts.html#gab85a7a97fabeb4b1af9abe6292f83170">HAL_InitializeInterrupts</a>(int32_t* status);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="group__hal__interrupts.html#ga7a03ed9b7bbb6eb87a74434595147f65">   35</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__interrupts.html#ga7a03ed9b7bbb6eb87a74434595147f65">HAL_CleanInterrupts</a>(HAL_InterruptHandle interruptHandle);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="group__hal__interrupts.html#ga9bd2cfe22ac6a8cf7cdc1dc163728e1d">   46</a></span>&#160;int64_t <a class="code" href="group__hal__interrupts.html#ga9bd2cfe22ac6a8cf7cdc1dc163728e1d">HAL_WaitForInterrupt</a>(HAL_InterruptHandle interruptHandle,</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                             <span class="keywordtype">double</span> timeout, HAL_Bool ignorePrevious,</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                             int32_t* status);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="group__hal__interrupts.html#gabcd95895a76e956a3b19e0d72b46ea9f">   60</a></span>&#160;int64_t <a class="code" href="group__hal__interrupts.html#gabcd95895a76e956a3b19e0d72b46ea9f">HAL_ReadInterruptRisingTimestamp</a>(HAL_InterruptHandle interruptHandle,</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                         int32_t* status);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="group__hal__interrupts.html#ga35f98945b469afacbfcec081b98a1a1a">   73</a></span>&#160;int64_t <a class="code" href="group__hal__interrupts.html#ga35f98945b469afacbfcec081b98a1a1a">HAL_ReadInterruptFallingTimestamp</a>(HAL_InterruptHandle interruptHandle,</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                                          int32_t* status);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="group__hal__interrupts.html#ga42d553aed65587375963d441cb48d6e0">   84</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__interrupts.html#ga42d553aed65587375963d441cb48d6e0">HAL_RequestInterrupts</a>(HAL_InterruptHandle interruptHandle,</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                           HAL_Handle digitalSourceHandle,</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                           HAL_AnalogTriggerType analogTriggerType,</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                           int32_t* status);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="group__hal__interrupts.html#ga96e6618288cfac532a31049cda0d48c0">   98</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__interrupts.html#ga96e6618288cfac532a31049cda0d48c0">HAL_SetInterruptUpSourceEdge</a>(HAL_InterruptHandle interruptHandle,</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                                  HAL_Bool risingEdge, HAL_Bool fallingEdge,</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                                  int32_t* status);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="group__hal__interrupts.html#ga67f157be25831233951cb239c837d098">  109</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__interrupts.html#ga67f157be25831233951cb239c837d098">HAL_ReleaseWaitingInterrupt</a>(HAL_InterruptHandle interruptHandle,</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                                 int32_t* status);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;}  <span class="comment">// extern &quot;C&quot;</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="agroup__hal__interrupts_html_ga42d553aed65587375963d441cb48d6e0"><div class="ttname"><a href="group__hal__interrupts.html#ga42d553aed65587375963d441cb48d6e0">HAL_RequestInterrupts</a></div><div class="ttdeci">void HAL_RequestInterrupts(HAL_InterruptHandle interruptHandle, HAL_Handle digitalSourceHandle, HAL_AnalogTriggerType analogTriggerType, int32_t *status)</div><div class="ttdoc">Requests interrupts on a specific digital source.</div></div>
 <div class="ttc" id="agroup__hal__interrupts_html_ga96e6618288cfac532a31049cda0d48c0"><div class="ttname"><a href="group__hal__interrupts.html#ga96e6618288cfac532a31049cda0d48c0">HAL_SetInterruptUpSourceEdge</a></div><div class="ttdeci">void HAL_SetInterruptUpSourceEdge(HAL_InterruptHandle interruptHandle, HAL_Bool risingEdge, HAL_Bool fallingEdge, int32_t *status)</div><div class="ttdoc">Sets the edges to trigger the interrupt on.</div></div>
 <div class="ttc" id="agroup__hal__interrupts_html_gabcd95895a76e956a3b19e0d72b46ea9f"><div class="ttname"><a href="group__hal__interrupts.html#gabcd95895a76e956a3b19e0d72b46ea9f">HAL_ReadInterruptRisingTimestamp</a></div><div class="ttdeci">int64_t HAL_ReadInterruptRisingTimestamp(HAL_InterruptHandle interruptHandle, int32_t *status)</div><div class="ttdoc">Returns the timestamp for the rising interrupt that occurred most recently.</div></div>
+<div class="ttc" id="agroup__hal__interrupts_html_ga7a03ed9b7bbb6eb87a74434595147f65"><div class="ttname"><a href="group__hal__interrupts.html#ga7a03ed9b7bbb6eb87a74434595147f65">HAL_CleanInterrupts</a></div><div class="ttdeci">void HAL_CleanInterrupts(HAL_InterruptHandle interruptHandle)</div><div class="ttdoc">Frees an interrupt.</div></div>
 <div class="ttc" id="agroup__hal__interrupts_html_ga67f157be25831233951cb239c837d098"><div class="ttname"><a href="group__hal__interrupts.html#ga67f157be25831233951cb239c837d098">HAL_ReleaseWaitingInterrupt</a></div><div class="ttdeci">void HAL_ReleaseWaitingInterrupt(HAL_InterruptHandle interruptHandle, int32_t *status)</div><div class="ttdoc">Releases a waiting interrupt.</div></div>
-<div class="ttc" id="agroup__hal__interrupts_html_gab0ebc1a5040f6e60aed2151937acf909"><div class="ttname"><a href="group__hal__interrupts.html#gab0ebc1a5040f6e60aed2151937acf909">HAL_EnableInterrupts</a></div><div class="ttdeci">void HAL_EnableInterrupts(HAL_InterruptHandle interruptHandle, int32_t *status)</div><div class="ttdoc">Enables interrupts to occur on this input.</div></div>
-<div class="ttc" id="agroup__hal__interrupts_html_gac9efc74031d89662676ebde134e2b730"><div class="ttname"><a href="group__hal__interrupts.html#gac9efc74031d89662676ebde134e2b730">HAL_AttachInterruptHandler</a></div><div class="ttdeci">void HAL_AttachInterruptHandler(HAL_InterruptHandle interruptHandle, HAL_InterruptHandlerFunction handler, void *param, int32_t *status)</div><div class="ttdoc">Attaches an asynchronous interrupt handler to the interrupt.</div></div>
 <div class="ttc" id="agroup__hal__interrupts_html_ga35f98945b469afacbfcec081b98a1a1a"><div class="ttname"><a href="group__hal__interrupts.html#ga35f98945b469afacbfcec081b98a1a1a">HAL_ReadInterruptFallingTimestamp</a></div><div class="ttdeci">int64_t HAL_ReadInterruptFallingTimestamp(HAL_InterruptHandle interruptHandle, int32_t *status)</div><div class="ttdoc">Returns the timestamp for the falling interrupt that occurred most recently.</div></div>
-<div class="ttc" id="agroup__hal__interrupts_html_gae62617c3db17f2d4004649b229d109f9"><div class="ttname"><a href="group__hal__interrupts.html#gae62617c3db17f2d4004649b229d109f9">HAL_AttachInterruptHandlerThreaded</a></div><div class="ttdeci">void HAL_AttachInterruptHandlerThreaded(HAL_InterruptHandle interruptHandle, HAL_InterruptHandlerFunction handler, void *param, int32_t *status)</div><div class="ttdoc">Attaches an asynchronous interrupt handler to the interrupt.</div></div>
 <div class="ttc" id="agroup__hal__interrupts_html_ga9bd2cfe22ac6a8cf7cdc1dc163728e1d"><div class="ttname"><a href="group__hal__interrupts.html#ga9bd2cfe22ac6a8cf7cdc1dc163728e1d">HAL_WaitForInterrupt</a></div><div class="ttdeci">int64_t HAL_WaitForInterrupt(HAL_InterruptHandle interruptHandle, double timeout, HAL_Bool ignorePrevious, int32_t *status)</div><div class="ttdoc">In synchronous mode, waits for the defined interrupt to occur.</div></div>
-<div class="ttc" id="agroup__hal__interrupts_html_ga820bced156fd7a81fd632b98a5df52a3"><div class="ttname"><a href="group__hal__interrupts.html#ga820bced156fd7a81fd632b98a5df52a3">HAL_CleanInterrupts</a></div><div class="ttdeci">void * HAL_CleanInterrupts(HAL_InterruptHandle interruptHandle, int32_t *status)</div><div class="ttdoc">Frees an interrupt.</div></div>
-<div class="ttc" id="agroup__hal__interrupts_html_ga6e805c5a33bbae8cb990cd2d61bfc8a6"><div class="ttname"><a href="group__hal__interrupts.html#ga6e805c5a33bbae8cb990cd2d61bfc8a6">HAL_DisableInterrupts</a></div><div class="ttdeci">void HAL_DisableInterrupts(HAL_InterruptHandle interruptHandle, int32_t *status)</div><div class="ttdoc">Disables interrupts without without deallocating structures.</div></div>
-<div class="ttc" id="agroup__hal__interrupts_html_ga60e1deb622cbc12ad28a17673b5c1e64"><div class="ttname"><a href="group__hal__interrupts.html#ga60e1deb622cbc12ad28a17673b5c1e64">HAL_InitializeInterrupts</a></div><div class="ttdeci">HAL_InterruptHandle HAL_InitializeInterrupts(HAL_Bool watcher, int32_t *status)</div><div class="ttdoc">Initializes an interrupt.</div></div>
+<div class="ttc" id="agroup__hal__interrupts_html_gab85a7a97fabeb4b1af9abe6292f83170"><div class="ttname"><a href="group__hal__interrupts.html#gab85a7a97fabeb4b1af9abe6292f83170">HAL_InitializeInterrupts</a></div><div class="ttdeci">HAL_InterruptHandle HAL_InitializeInterrupts(int32_t *status)</div><div class="ttdoc">Initializes an interrupt.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_7dfa5b6b9262a4050979ee23e0eb392d.html">hal</a></li><li class="navelem"><b>Interrupts.h</b></li>
-    <li class="footer">Generated on Sat Jun 5 2021 18:23:42 for WPILibC++ by
+    <li class="footer">Generated on Sat Jun 5 2021 18:27:38 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

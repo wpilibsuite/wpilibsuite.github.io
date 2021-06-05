@@ -1,17 +1,5 @@
 var NAVTREEINDEX12 =
 {
-"classfrc_1_1MechanismObject2d.html#a5cc20b8822d489a0a42ebc31e25c90b8":[5,0,4,102,0],
-"classfrc_1_1MechanismObject2d.html#a786464f0e430f628b247848129bf15ce":[5,0,4,102,2],
-"classfrc_1_1MechanismObject2d.html#af2157e93dd3038076fb4f928e737c69d":[5,0,4,102,5],
-"classfrc_1_1MechanismRoot2d.html":[5,0,4,103],
-"classfrc_1_1MechanismRoot2d.html#a15b8234551090c8cc21e932fb706d7c5":[5,0,4,103,2],
-"classfrc_1_1MechanismRoot2d.html#a29d03ee138b423a7add68ad387ea130f":[5,0,4,103,0],
-"classfrc_1_1MechanismRoot2d.html#a7416fee1be419b5ff33e8157954e64d0":[5,0,4,103,3],
-"classfrc_1_1MechanismRoot2d.html#a786464f0e430f628b247848129bf15ce":[5,0,4,103,1],
-"classfrc_1_1MechanismRoot2d.html#af2157e93dd3038076fb4f928e737c69d":[5,0,4,103,4],
-"classfrc_1_1MedianFilter.html":[5,0,4,104],
-"classfrc_1_1MedianFilter.html#a4ac072582b7de24424968f63e185af50":[5,0,4,104,0],
-"classfrc_1_1MedianFilter.html#a641ec0f285315c7ebd84865321c90f85":[5,0,4,104,1],
 "classfrc_1_1MedianFilter.html#ae13a8f7ef27720e65b3fc66b172ad489":[5,0,4,104,2],
 "classfrc_1_1MerweScaledSigmaPoints.html":[5,0,4,105],
 "classfrc_1_1MerweScaledSigmaPoints.html#a15c06c71c78144ba7d589bdbdfccf404":[5,0,4,105,1],
@@ -249,5 +237,17 @@ var NAVTREEINDEX12 =
 "classfrc_1_1PWMMotorController.html#a0910c229495436a8dc94dcbd478c0bae":[5,0,4,127,2],
 "classfrc_1_1PWMMotorController.html#a0db05ebd2c05fecae5c95bcad9ed5b96":[5,0,4,127,8],
 "classfrc_1_1PWMMotorController.html#a0fc47626dfa5c72b3c22d77574e7eb0c":[5,0,4,127,7],
-"classfrc_1_1PWMMotorController.html#a23586a3111a6b7114bbaa6df952c9c92":[5,0,4,127,1]
+"classfrc_1_1PWMMotorController.html#a23586a3111a6b7114bbaa6df952c9c92":[5,0,4,127,1],
+"classfrc_1_1PWMMotorController.html#a3274a2293ee6990bcd15cc0dd8f33282":[5,0,4,127,6],
+"classfrc_1_1PWMMotorController.html#a7d268832fe2fc1a6a5dde3f27095a026":[5,0,4,127,11],
+"classfrc_1_1PWMMotorController.html#a9761802323fed0791245f1e91af3aff3":[5,0,4,127,12],
+"classfrc_1_1PWMMotorController.html#aad5957bc21f8549f5f6cbc9c1bd5afaf":[5,0,4,127,9],
+"classfrc_1_1PWMMotorController.html#abdf28e68ae00418333a3ece09627a037":[5,0,4,127,3],
+"classfrc_1_1PWMMotorController.html#abe44af44fba50c21985a23bab6f9ce43":[5,0,4,127,0],
+"classfrc_1_1PWMMotorController.html#adce0f524fe91c63a0deaa64144457b47":[5,0,4,127,5],
+"classfrc_1_1PWMMotorController.html#afa39100c2ad5b9d491e79d44d03c90ff":[5,0,4,127,4],
+"classfrc_1_1PWMMotorController.html#afcc5f0358caacf37c8eb817368a37df7":[5,0,4,127,10],
+"classfrc_1_1PWMSparkMax.html":[5,0,4,128],
+"classfrc_1_1PWMSparkMax.html#a18d5d76ffcd3593dea33a67751694162":[5,0,4,128,2],
+"classfrc_1_1PWMSparkMax.html#ac54476cb81465ea7565e836b181a7ec4":[5,0,4,128,1]
 };

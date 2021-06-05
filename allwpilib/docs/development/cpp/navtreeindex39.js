@@ -1,5 +1,6 @@
 var NAVTREEINDEX39 =
 {
+"structCS__VideoMode.html#a8b576fed8622dea23ffa91139e0b3ea6":[3,4,17,2],
 "structCS__VideoMode.html#abd82e2bba6ed8fc0164c67629dbf0c98":[3,4,17,0],
 "structCS__VideoMode.html#ada90f303ae60ea79624fdf03d6094c1e":[3,4,17,1],
 "structHALSIM__NotifierInfo.html":[5,0,99],
@@ -248,6 +249,5 @@ var NAVTREEINDEX39 =
 "structchrono__format__checker.html#a36ab46db9ebab57c003cd773f5ae53c9":[5,0,42,3],
 "structchrono__format__checker.html#a3a3c92af2eab6efedd3c2a9ef6345ca8":[5,0,42,15],
 "structchrono__format__checker.html#a4196cdc8df327f1e88b6cc3c824af373":[5,0,42,11],
-"structchrono__format__checker.html#a44a2f34e2081381b14f71ef2c579fa0a":[5,0,42,18],
-"structchrono__format__checker.html#a58426cb5ce126de6c309c8e605e2fa38":[5,0,42,7]
+"structchrono__format__checker.html#a44a2f34e2081381b14f71ef2c579fa0a":[5,0,42,18]
 };

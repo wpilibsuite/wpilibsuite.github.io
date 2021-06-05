@@ -1,5 +1,10 @@
 var NAVTREEINDEX24 =
 {
+"classwpi_1_1Error.html#ab56ef295e9a4e94cf8a77f78a02402a5":[5,0,10,54,3],
+"classwpi_1_1Error.html#abb65cc4c51f82082311e8b2abcc49110":[5,0,10,54,4],
+"classwpi_1_1Error.html#ac1b65639a51adb7da796c8220612642b":[5,0,10,54,8],
+"classwpi_1_1Error.html#acee5faccb7409cb6be4aed1ea76ceb18":[5,0,10,54,1],
+"classwpi_1_1Error.html#add5a7bc30638fe9f769cc644056a3601":[5,0,10,54,15],
 "classwpi_1_1Error.html#af9853a913f7c3209c5076a66ebdee623":[5,0,10,54,11],
 "classwpi_1_1Error.html#afdd3190b9c558662875c5eebac953b5c":[5,0,10,54,5],
 "classwpi_1_1ErrorAsOutParameter.html":[5,0,10,55],
@@ -244,10 +249,5 @@ var NAVTREEINDEX24 =
 "classwpi_1_1HttpRequest.html#aca785f84b63de2d52f53acb01cea6ad7":[5,0,10,105,6],
 "classwpi_1_1HttpRequest.html#af5453f71256bc3d528c992968d33ec48":[5,0,10,105,5],
 "classwpi_1_1HttpServerConnection.html":[5,0,10,106],
-"classwpi_1_1HttpServerConnection.html#a00ac2a70c31329b90d3c2cf6db89de81":[5,0,10,106,6],
-"classwpi_1_1HttpServerConnection.html#a204be8b4e203e024cb08e6650dd17d8d":[5,0,10,106,0],
-"classwpi_1_1HttpServerConnection.html#a22c0d3068e33195331465e9351340d1f":[5,0,10,106,8],
-"classwpi_1_1HttpServerConnection.html#a33e14330649254066ec02c7e70403f65":[5,0,10,106,5],
-"classwpi_1_1HttpServerConnection.html#a37acb1c41763dd1747d501341e4b3412":[5,0,10,106,10],
-"classwpi_1_1HttpServerConnection.html#a4865a10b2a8c81c50ccc22166f29341b":[5,0,10,106,3]
+"classwpi_1_1HttpServerConnection.html#a00ac2a70c31329b90d3c2cf6db89de81":[5,0,10,106,6]
 };

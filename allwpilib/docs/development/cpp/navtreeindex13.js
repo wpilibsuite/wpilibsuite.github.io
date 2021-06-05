@@ -1,17 +1,5 @@
 var NAVTREEINDEX13 =
 {
-"classfrc_1_1PWMMotorController.html#a3274a2293ee6990bcd15cc0dd8f33282":[5,0,4,127,6],
-"classfrc_1_1PWMMotorController.html#a7d268832fe2fc1a6a5dde3f27095a026":[5,0,4,127,11],
-"classfrc_1_1PWMMotorController.html#a9761802323fed0791245f1e91af3aff3":[5,0,4,127,12],
-"classfrc_1_1PWMMotorController.html#aad5957bc21f8549f5f6cbc9c1bd5afaf":[5,0,4,127,9],
-"classfrc_1_1PWMMotorController.html#abdf28e68ae00418333a3ece09627a037":[5,0,4,127,3],
-"classfrc_1_1PWMMotorController.html#abe44af44fba50c21985a23bab6f9ce43":[5,0,4,127,0],
-"classfrc_1_1PWMMotorController.html#adce0f524fe91c63a0deaa64144457b47":[5,0,4,127,5],
-"classfrc_1_1PWMMotorController.html#afa39100c2ad5b9d491e79d44d03c90ff":[5,0,4,127,4],
-"classfrc_1_1PWMMotorController.html#afcc5f0358caacf37c8eb817368a37df7":[5,0,4,127,10],
-"classfrc_1_1PWMSparkMax.html":[5,0,4,128],
-"classfrc_1_1PWMSparkMax.html#a18d5d76ffcd3593dea33a67751694162":[5,0,4,128,2],
-"classfrc_1_1PWMSparkMax.html#ac54476cb81465ea7565e836b181a7ec4":[5,0,4,128,1],
 "classfrc_1_1PWMSparkMax.html#ad57d2c93765ab0c08c8387ab398989d2":[5,0,4,128,0],
 "classfrc_1_1PWMTalonFX.html":[5,0,4,129],
 "classfrc_1_1PWMTalonFX.html#a3cc943b481c12332668b0221fe84a03a":[5,0,4,129,2],
@@ -249,5 +237,17 @@ var NAVTREEINDEX13 =
 "classfrc_1_1RobotDriveBase.html#a66ca9d336c81659405045bf064490cfe":[5,0,4,141,9],
 "classfrc_1_1RobotDriveBase.html#a750d348d0107fcdcfcd41318101b4194":[5,0,4,141,12],
 "classfrc_1_1RobotDriveBase.html#a821b770d27682489c54eeb76b52aad00":[5,0,4,141,2],
-"classfrc_1_1RobotDriveBase.html#a91bbe6376ee340272ae36ea20b608754":[5,0,4,141,0]
+"classfrc_1_1RobotDriveBase.html#a91bbe6376ee340272ae36ea20b608754":[5,0,4,141,0],
+"classfrc_1_1RobotDriveBase.html#a91bbe6376ee340272ae36ea20b608754a024977796e74c04a6f0cdd027580a0e9":[5,0,4,141,0,4],
+"classfrc_1_1RobotDriveBase.html#a91bbe6376ee340272ae36ea20b608754a10b4c2722341a2b7e41ddfd45c019cdc":[5,0,4,141,0,0],
+"classfrc_1_1RobotDriveBase.html#a91bbe6376ee340272ae36ea20b608754a2e9ff3c98bdf920a7cb9314b38beb007":[5,0,4,141,0,5],
+"classfrc_1_1RobotDriveBase.html#a91bbe6376ee340272ae36ea20b608754a5f2fc6a85d38b20ae27e441ece6fbc6b":[5,0,4,141,0,1],
+"classfrc_1_1RobotDriveBase.html#a91bbe6376ee340272ae36ea20b608754a6a850db63077ec5fe5b0445e783664e8":[5,0,4,141,0,3],
+"classfrc_1_1RobotDriveBase.html#a91bbe6376ee340272ae36ea20b608754a7eef0180865cff6233c8c521c808f96c":[5,0,4,141,0,2],
+"classfrc_1_1RobotDriveBase.html#a91bbe6376ee340272ae36ea20b608754aef2d7e716b69e79e5d4843838a5c5e79":[5,0,4,141,0,6],
+"classfrc_1_1RobotDriveBase.html#aa4970502fd5575de5602213c092c5aaf":[5,0,4,141,10],
+"classfrc_1_1RobotDriveBase.html#ac407bc60830a0d639de96bdc53d58a0f":[5,0,4,141,5],
+"classfrc_1_1RobotDriveBase.html#ad796a29767020626aa35b2a42fba8264":[5,0,4,141,1],
+"classfrc_1_1RobotDriveBase.html#ad88dd6640af8d27a012e9940f1d64fda":[5,0,4,141,4],
+"classfrc_1_1RobotDriveBase.html#ae011f3027be53e5d24b38ea976139c56":[5,0,4,141,3]
 };

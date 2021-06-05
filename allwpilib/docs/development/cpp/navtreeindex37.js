@@ -1,5 +1,6 @@
 var NAVTREEINDEX37 =
 {
+"group__hal__pwm.html#gab0a94b19db7022d423efc99c69fce5f9":[3,0,7,7],
 "group__hal__pwm.html#gab33ab57c52ac19059e46b7612c430fe6":[3,0,7,0],
 "group__hal__pwm.html#gab4d5a2dee26ab203f94c91288a47c7fc":[3,0,7,1],
 "group__hal__pwm.html#gab5862dc4dd97b6b21023ffef57250af8":[3,0,7,15],
@@ -248,6 +249,5 @@ var NAVTREEINDEX37 =
 "group__ntcore__network__cfunc.html#gaef30093ce18098ce576e7255383199e2":[3,1,5,6],
 "group__ntcore__network__func.html":[3,3,5],
 "group__ntcore__network__func.html#ga13258f5f06e3ee8566849ce70eccba11":[3,3,5,12],
-"group__ntcore__network__func.html#ga2a94e9e2babda8d1f7041d1e74935d48":[3,3,5,15],
-"group__ntcore__network__func.html#ga32b5eca82864b163cda8b96b879f40ee":[3,3,5,2]
+"group__ntcore__network__func.html#ga2a94e9e2babda8d1f7041d1e74935d48":[3,3,5,15]
 };

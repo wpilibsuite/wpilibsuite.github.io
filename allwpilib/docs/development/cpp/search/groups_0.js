@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['accelerometer_20functions_8230',['Accelerometer Functions',['../group__hal__accelerometer.html',1,'']]],
-  ['addressable_20led_20functions_8231',['Addressable LED Functions',['../group__hal__addressable.html',1,'']]],
-  ['analog_20accumulator_20functions_8232',['Analog Accumulator Functions',['../group__hal__analogaccumulator.html',1,'']]],
-  ['analog_20gyro_20functions_8233',['Analog Gyro Functions',['../group__hal__analoggyro.html',1,'']]],
-  ['analog_20input_20functions_8234',['Analog Input Functions',['../group__hal__analoginput.html',1,'']]],
-  ['analog_20output_20functions_8235',['Analog Output Functions',['../group__hal__analogoutput.html',1,'']]],
-  ['analog_20trigger_20functions_8236',['Analog Trigger Functions',['../group__hal__analogtrigger.html',1,'']]]
+  ['accelerometer_20functions_8218',['Accelerometer Functions',['../group__hal__accelerometer.html',1,'']]],
+  ['addressable_20led_20functions_8219',['Addressable LED Functions',['../group__hal__addressable.html',1,'']]],
+  ['analog_20accumulator_20functions_8220',['Analog Accumulator Functions',['../group__hal__analogaccumulator.html',1,'']]],
+  ['analog_20gyro_20functions_8221',['Analog Gyro Functions',['../group__hal__analoggyro.html',1,'']]],
+  ['analog_20input_20functions_8222',['Analog Input Functions',['../group__hal__analoginput.html',1,'']]],
+  ['analog_20output_20functions_8223',['Analog Output Functions',['../group__hal__analogoutput.html',1,'']]],
+  ['analog_20trigger_20functions_8224',['Analog Trigger Functions',['../group__hal__analogtrigger.html',1,'']]]
 ];
