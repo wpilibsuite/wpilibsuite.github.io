@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-94-g4f1cecb</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-95-gb2c3b2d</span>
    </div>
   </td>
  </tr>
@@ -186,10 +186,10 @@ $(document).ready(function(){initNavTree('ConvertUTF_8h_source.html',''); initRe
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#define LLVM_SUPPORT_CONVERTUTF_H</span></div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#include &quot;wpi/ArrayRef.h&quot;</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#include &quot;wpi/StringRef.h&quot;</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">#include &lt;cstddef&gt;</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#include &lt;cstddef&gt;</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#include &lt;string_view&gt;</span></div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#include &lt;system_error&gt;</span></div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">// Wrap everything in namespace wpi so that programs can link with wpiutil and</span></div>
@@ -291,14 +291,14 @@ $(document).ready(function(){initNavTree('ConvertUTF_8h_source.html',''); initRe
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="keywordtype">bool</span> convertUTF16ToUTF8String(ArrayRef&lt;UTF16&gt; SrcUTF16,</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;                              SmallVectorImpl&lt;char&gt; &amp;DstUTF8);</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160; </div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="keywordtype">bool</span> convertUTF8ToUTF16String(StringRef SrcUTF8,</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="keywordtype">bool</span> convertUTF8ToUTF16String(std::string_view SrcUTF8,</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                              SmallVectorImpl&lt;UTF16&gt; &amp;DstUTF16);</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160; </div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<span class="preprocessor">#if defined(_WIN32)</span></div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="keyword">namespace </span>sys {</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="keyword">namespace </span>windows {</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;std::error_code UTF8ToUTF16(StringRef utf8, SmallVectorImpl&lt;wchar_t&gt; &amp;utf16);</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;std::error_code CurCPToUTF16(StringRef utf8, SmallVectorImpl&lt;wchar_t&gt; &amp;utf16);</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;std::error_code UTF8ToUTF16(std::string_view utf8, SmallVectorImpl&lt;wchar_t&gt; &amp;utf16);</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;std::error_code CurCPToUTF16(std::string_view utf8, SmallVectorImpl&lt;wchar_t&gt; &amp;utf16);</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;std::error_code UTF16ToUTF8(<span class="keyword">const</span> <span class="keywordtype">wchar_t</span> *utf16, <span class="keywordtype">size_t</span> utf16_len,</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                            SmallVectorImpl&lt;char&gt; &amp;utf8);</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;std::error_code UTF16ToCurCP(<span class="keyword">const</span> <span class="keywordtype">wchar_t</span> *utf16, <span class="keywordtype">size_t</span> utf16_len,</div>
@@ -316,7 +316,7 @@ $(document).ready(function(){initNavTree('ConvertUTF_8h_source.html',''); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><b>ConvertUTF.h</b></li>
-    <li class="footer">Generated on Sun Jun 6 2021 22:52:14 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 6 2021 23:16:00 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

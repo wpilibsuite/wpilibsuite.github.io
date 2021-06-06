@@ -1,14 +1,5 @@
 var NAVTREEINDEX12 =
 {
-"classfrc_1_1MotorControllerGroup.html#afa117b6a610daf923e7ae77eb2e0e19e":[5,0,5,106,9],
-"classfrc_1_1MotorControllerGroup.html#affa672f42c667d3ceac2b978540cacb2":[5,0,5,106,3],
-"classfrc_1_1MotorSafety.html":[5,0,5,107],
-"classfrc_1_1MotorSafety.html#a0269b4f422dd90c886074a41a5f7400a":[5,0,5,107,13],
-"classfrc_1_1MotorSafety.html#a1449c25e11582cbea7d3e2254479f42b":[5,0,5,107,3],
-"classfrc_1_1MotorSafety.html#a22aecf3025d0dc3d50b9b9323b9051c9":[5,0,5,107,7],
-"classfrc_1_1MotorSafety.html#a2a666ba39461317728e52fbaa9cdca32":[5,0,5,107,4],
-"classfrc_1_1MotorSafety.html#a50a1de9a34f3efda20c6e46df1a77b4e":[5,0,5,107,11],
-"classfrc_1_1MotorSafety.html#a59fd72553c5de00827b21037f0c88ec4":[5,0,5,107,12],
 "classfrc_1_1MotorSafety.html#a601228c7ebc676162bdecedeba071c58":[5,0,5,107,6],
 "classfrc_1_1MotorSafety.html#a64f96194caddf9df5e0ab9871fb2b7a3":[5,0,5,107,5],
 "classfrc_1_1MotorSafety.html#a6d4ff31fddf4aa7af933b47e8b04833e":[5,0,5,107,9],
@@ -249,5 +240,14 @@ var NAVTREEINDEX12 =
 "classfrc_1_1PWMVictorSPX.html#af2a44a084b8902a9e1ac75eab7e199d9":[5,0,5,133,1],
 "classfrc_1_1PneumaticsBase.html":[5,0,5,118],
 "classfrc_1_1PneumaticsBase.html#a0b5fdac79320553254cabc15118e1298":[5,0,5,118,7],
-"classfrc_1_1PneumaticsBase.html#a10ed7d280a402532bf649169053e98d8":[5,0,5,118,3]
+"classfrc_1_1PneumaticsBase.html#a10ed7d280a402532bf649169053e98d8":[5,0,5,118,3],
+"classfrc_1_1PneumaticsBase.html#a57424c17d7b533cd925354c57abe032c":[5,0,5,118,6],
+"classfrc_1_1PneumaticsBase.html#a5b279e56be78d6d81aa542c545d06927":[5,0,5,118,2],
+"classfrc_1_1PneumaticsBase.html#a752aa5019f761564e01550dce8334bec":[5,0,5,118,1],
+"classfrc_1_1PneumaticsBase.html#a77f34494a62f6580ebf0012833a937da":[5,0,5,118,0],
+"classfrc_1_1PneumaticsBase.html#aacf4ac281029aebe4b774a036d5e8cfd":[5,0,5,118,5],
+"classfrc_1_1PneumaticsBase.html#ae6c1ac9be8d3cac8696e20242aa62100":[5,0,5,118,4],
+"classfrc_1_1PneumaticsControlModule.html":[5,0,5,119],
+"classfrc_1_1PneumaticsControlModule.html#a039f2c403abfcf14f41d9ba0a4826415":[5,0,5,119,18],
+"classfrc_1_1PneumaticsControlModule.html#a14bf3c6437e23765136da7b383d0fd26":[5,0,5,119,6]
 };

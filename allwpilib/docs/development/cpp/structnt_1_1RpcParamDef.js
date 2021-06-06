@@ -1,7 +1,7 @@
 var structnt_1_1RpcParamDef =
 [
     [ "RpcParamDef", "structnt_1_1RpcParamDef.html#a96ba9260c2033f8071a9b34b3ff878ef", null ],
-    [ "RpcParamDef", "structnt_1_1RpcParamDef.html#a35e21453fb3c30b0964a8c740db596e0", null ],
+    [ "RpcParamDef", "structnt_1_1RpcParamDef.html#a19088859e93c50db90b916d7096fc054", null ],
     [ "def_value", "structnt_1_1RpcParamDef.html#a29b1e08fba5e324202b851b31b1bfcb3", null ],
     [ "name", "structnt_1_1RpcParamDef.html#acc4ab1f3307e516a20a2620af26ba99e", null ]
 ];

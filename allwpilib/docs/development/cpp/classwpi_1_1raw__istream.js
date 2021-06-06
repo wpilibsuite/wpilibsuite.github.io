@@ -6,7 +6,7 @@ var classwpi_1_1raw__istream =
     [ "clear_error", "classwpi_1_1raw__istream.html#af45d50dd91bca1bc711e9a07cf4a0fc5", null ],
     [ "close", "classwpi_1_1raw__istream.html#a08b9b8773b06c7b88989538b56aa8032", null ],
     [ "error_detected", "classwpi_1_1raw__istream.html#ac2ec0de99875086659dd59785f9eb9ee", null ],
-    [ "getline", "classwpi_1_1raw__istream.html#a119a337d359746d77d35c62a7962d5d1", null ],
+    [ "getline", "classwpi_1_1raw__istream.html#a4aceb2d1f0d66f2ff13e8aed8c3df0ac", null ],
     [ "has_error", "classwpi_1_1raw__istream.html#a032b326079dbae553af7e75b76951963", null ],
     [ "in_avail", "classwpi_1_1raw__istream.html#a30bc9c995c27aca1277337b8b327d094", null ],
     [ "operator=", "classwpi_1_1raw__istream.html#aabd96bad55ead303e38ab9112b63fdb6", null ],

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-94-g4f1cecb</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-95-gb2c3b2d</span>
    </div>
   </td>
  </tr>
@@ -129,15 +129,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aab9ada362441ac5dd50d942d257e4c81 inherit pub_methods_structcs_1_1RawEvent"><td class="memItemLeft" align="right" valign="top"><a id="aab9ada362441ac5dd50d942d257e4c81"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>RawEvent</b> (RawEvent::Kind kind_)</td></tr>
 <tr class="separator:aab9ada362441ac5dd50d942d257e4c81 inherit pub_methods_structcs_1_1RawEvent"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2aeedf149efa9cb86b7b01fc59b8edfb inherit pub_methods_structcs_1_1RawEvent"><td class="memItemLeft" align="right" valign="top"><a id="a2aeedf149efa9cb86b7b01fc59b8edfb"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>RawEvent</b> (const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;name_, CS_Handle handle_, RawEvent::Kind kind_)</td></tr>
-<tr class="separator:a2aeedf149efa9cb86b7b01fc59b8edfb inherit pub_methods_structcs_1_1RawEvent"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae44ef6217acb5ddcc7becf4b314918de inherit pub_methods_structcs_1_1RawEvent"><td class="memItemLeft" align="right" valign="top"><a id="ae44ef6217acb5ddcc7becf4b314918de"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>RawEvent</b> (const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;name_, CS_Source source_, const <a class="el" href="structcs_1_1VideoMode.html">VideoMode</a> &amp;mode_)</td></tr>
-<tr class="separator:ae44ef6217acb5ddcc7becf4b314918de inherit pub_methods_structcs_1_1RawEvent"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afcd506ac90f804535e5a70becb1eff69 inherit pub_methods_structcs_1_1RawEvent"><td class="memItemLeft" align="right" valign="top"><a id="afcd506ac90f804535e5a70becb1eff69"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>RawEvent</b> (const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;name_, CS_Source source_, RawEvent::Kind kind_, CS_Property property_, <a class="el" href="group__cscore__c__api.html#ga748df10eca5adcbc533b0fe788daf22e">CS_PropertyKind</a> propertyKind_, int value_, const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;valueStr_)</td></tr>
-<tr class="separator:afcd506ac90f804535e5a70becb1eff69 inherit pub_methods_structcs_1_1RawEvent"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab83937134512331ae8b1ae4528446ee3 inherit pub_methods_structcs_1_1RawEvent"><td class="memItemLeft" align="right" valign="top"><a id="ab83937134512331ae8b1ae4528446ee3"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>RawEvent</b> (std::string_view name_, CS_Handle handle_, RawEvent::Kind kind_)</td></tr>
+<tr class="separator:ab83937134512331ae8b1ae4528446ee3 inherit pub_methods_structcs_1_1RawEvent"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac55faad0d4ecec19772439e4adbc04b inherit pub_methods_structcs_1_1RawEvent"><td class="memItemLeft" align="right" valign="top"><a id="aac55faad0d4ecec19772439e4adbc04b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>RawEvent</b> (std::string_view name_, CS_Source source_, const <a class="el" href="structcs_1_1VideoMode.html">VideoMode</a> &amp;mode_)</td></tr>
+<tr class="separator:aac55faad0d4ecec19772439e4adbc04b inherit pub_methods_structcs_1_1RawEvent"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6de7cde91b33233e8df659962e504733 inherit pub_methods_structcs_1_1RawEvent"><td class="memItemLeft" align="right" valign="top"><a id="a6de7cde91b33233e8df659962e504733"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>RawEvent</b> (std::string_view name_, CS_Source source_, RawEvent::Kind kind_, CS_Property property_, <a class="el" href="group__cscore__c__api.html#ga748df10eca5adcbc533b0fe788daf22e">CS_PropertyKind</a> propertyKind_, int value_, std::string_view valueStr_)</td></tr>
+<tr class="separator:a6de7cde91b33233e8df659962e504733 inherit pub_methods_structcs_1_1RawEvent"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -214,7 +214,7 @@ CS_Listener&#160;</td><td class="memItemRight" valign="bottom"><b>listener</b> {
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacecs.html">cs</a></li><li class="navelem"><a class="el" href="classcs_1_1VideoEvent.html">VideoEvent</a></li>
-    <li class="footer">Generated on Sun Jun 6 2021 22:52:15 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 6 2021 23:16:02 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

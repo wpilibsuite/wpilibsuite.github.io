@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-94-g4f1cecb</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-95-gb2c3b2d</span>
    </div>
   </td>
  </tr>
@@ -98,18 +98,18 @@ $(document).ready(function(){initNavTree('group__cscore__opencv__source__func.ht
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga75d66b4b854effb9e069b247b1f18dd3"><td class="memItemLeft" align="right" valign="top"><a id="ga75d66b4b854effb9e069b247b1f18dd3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>cs::NotifySourceError</b> (CS_Source source, const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;msg, CS_Status *status)</td></tr>
-<tr class="separator:ga75d66b4b854effb9e069b247b1f18dd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9bd8653ffe3d6208bf514db29c31e32a"><td class="memItemLeft" align="right" valign="top"><a id="ga9bd8653ffe3d6208bf514db29c31e32a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>cs::NotifySourceError</b> (CS_Source source, std::string_view msg, CS_Status *status)</td></tr>
+<tr class="separator:ga9bd8653ffe3d6208bf514db29c31e32a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1d6122c193bc08a1589285ffd208d5b7"><td class="memItemLeft" align="right" valign="top"><a id="ga1d6122c193bc08a1589285ffd208d5b7"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>cs::SetSourceConnected</b> (CS_Source source, bool connected, CS_Status *status)</td></tr>
 <tr class="separator:ga1d6122c193bc08a1589285ffd208d5b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga271a3fc3ec49dc3639e711a24c4242b7"><td class="memItemLeft" align="right" valign="top"><a id="ga271a3fc3ec49dc3639e711a24c4242b7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>cs::SetSourceDescription</b> (CS_Source source, const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;description, CS_Status *status)</td></tr>
-<tr class="separator:ga271a3fc3ec49dc3639e711a24c4242b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga67f93a557b392688e91ae97e78b57e01"><td class="memItemLeft" align="right" valign="top"><a id="ga67f93a557b392688e91ae97e78b57e01"></a>
-CS_Property&#160;</td><td class="memItemRight" valign="bottom"><b>cs::CreateSourceProperty</b> (CS_Source source, const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;name, <a class="el" href="group__cscore__c__api.html#ga748df10eca5adcbc533b0fe788daf22e">CS_PropertyKind</a> kind, int minimum, int maximum, int step, int defaultValue, int <a class="el" href="classvalue.html">value</a>, CS_Status *status)</td></tr>
-<tr class="separator:ga67f93a557b392688e91ae97e78b57e01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga78cc02e47052d3342f54a088f0a6edcf"><td class="memItemLeft" align="right" valign="top"><a id="ga78cc02e47052d3342f54a088f0a6edcf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>cs::SetSourceDescription</b> (CS_Source source, std::string_view description, CS_Status *status)</td></tr>
+<tr class="separator:ga78cc02e47052d3342f54a088f0a6edcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga981d61fad9a668f3ec42b6a71d991314"><td class="memItemLeft" align="right" valign="top"><a id="ga981d61fad9a668f3ec42b6a71d991314"></a>
+CS_Property&#160;</td><td class="memItemRight" valign="bottom"><b>cs::CreateSourceProperty</b> (CS_Source source, std::string_view name, <a class="el" href="group__cscore__c__api.html#ga748df10eca5adcbc533b0fe788daf22e">CS_PropertyKind</a> kind, int minimum, int maximum, int step, int defaultValue, int <a class="el" href="classvalue.html">value</a>, CS_Status *status)</td></tr>
+<tr class="separator:ga981d61fad9a668f3ec42b6a71d991314"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf569c2b2e04c895eb536ad5293054ab4"><td class="memItemLeft" align="right" valign="top"><a id="gaf569c2b2e04c895eb536ad5293054ab4"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>cs::SetSourceEnumPropertyChoices</b> (CS_Source source, CS_Property property, <a class="el" href="classwpi_1_1ArrayRef.html">wpi::ArrayRef</a>&lt; std::string &gt; choices, CS_Status *status)</td></tr>
 <tr class="separator:gaf569c2b2e04c895eb536ad5293054ab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -120,7 +120,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>cs::SetSourceEnumProp
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Jun 6 2021 22:52:15 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 6 2021 23:16:02 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

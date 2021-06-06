@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-94-g4f1cecb</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-95-gb2c3b2d</span>
    </div>
   </td>
  </tr>
@@ -99,24 +99,24 @@ $(document).ready(function(){initNavTree('classwpi_1_1HttpMultipartScanner.html'
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a75e1da271377fd64962d9efdc694d843"><td class="memItemLeft" align="right" valign="top"><a id="a75e1da271377fd64962d9efdc694d843"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>HttpMultipartScanner</b> (<a class="el" href="classwpi_1_1StringRef.html">StringRef</a> boundary, bool saveSkipped=false)</td></tr>
-<tr class="separator:a75e1da271377fd64962d9efdc694d843"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a174e2e74872075daef21fda109694db5"><td class="memItemLeft" align="right" valign="top"><a id="a174e2e74872075daef21fda109694db5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetBoundary</b> (<a class="el" href="classwpi_1_1StringRef.html">StringRef</a> boundary)</td></tr>
-<tr class="separator:a174e2e74872075daef21fda109694db5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b85ed7f335beb79447f95af0a47c753"><td class="memItemLeft" align="right" valign="top"><a id="a4b85ed7f335beb79447f95af0a47c753"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>HttpMultipartScanner</b> (std::string_view boundary, bool saveSkipped=false)</td></tr>
+<tr class="separator:a4b85ed7f335beb79447f95af0a47c753"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec3f6dab2cae5bcc450be2c54328f3e7"><td class="memItemLeft" align="right" valign="top"><a id="aec3f6dab2cae5bcc450be2c54328f3e7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetBoundary</b> (std::string_view boundary)</td></tr>
+<tr class="separator:aec3f6dab2cae5bcc450be2c54328f3e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a825c531d18b65e7c8bc374703c17285c"><td class="memItemLeft" align="right" valign="top"><a id="a825c531d18b65e7c8bc374703c17285c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Reset</b> (bool saveSkipped=false)</td></tr>
 <tr class="separator:a825c531d18b65e7c8bc374703c17285c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a5f0896e1b966f8967805f3d8ecd159"><td class="memItemLeft" align="right" valign="top"><a id="a6a5f0896e1b966f8967805f3d8ecd159"></a>
-<a class="el" href="classwpi_1_1StringRef.html">StringRef</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Execute</b> (<a class="el" href="classwpi_1_1StringRef.html">StringRef</a> in)</td></tr>
-<tr class="separator:a6a5f0896e1b966f8967805f3d8ecd159"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7d838ca1e7b829a225c6c57c1688830"><td class="memItemLeft" align="right" valign="top"><a id="ad7d838ca1e7b829a225c6c57c1688830"></a>
+std::string_view&#160;</td><td class="memItemRight" valign="bottom"><b>Execute</b> (std::string_view in)</td></tr>
+<tr class="separator:ad7d838ca1e7b829a225c6c57c1688830"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9d0c967e3d110384505f41eb97e8a23"><td class="memItemLeft" align="right" valign="top"><a id="ae9d0c967e3d110384505f41eb97e8a23"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsDone</b> () const</td></tr>
 <tr class="separator:ae9d0c967e3d110384505f41eb97e8a23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae37f7691c9bff580c3d4a6e50986bd92"><td class="memItemLeft" align="right" valign="top"><a id="ae37f7691c9bff580c3d4a6e50986bd92"></a>
-<a class="el" href="classwpi_1_1StringRef.html">StringRef</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetSkipped</b> () const</td></tr>
-<tr class="separator:ae37f7691c9bff580c3d4a6e50986bd92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a46b3143e32735fecc3fa16c2d56cb0"><td class="memItemLeft" align="right" valign="top"><a id="a9a46b3143e32735fecc3fa16c2d56cb0"></a>
+std::string_view&#160;</td><td class="memItemRight" valign="bottom"><b>GetSkipped</b> () const</td></tr>
+<tr class="separator:a9a46b3143e32735fecc3fa16c2d56cb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>wpi/<a class="el" href="HttpUtil_8h_source.html">HttpUtil.h</a></li>
@@ -127,7 +127,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsDone</b> () const</
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>wpi</b></li><li class="navelem"><a class="el" href="classwpi_1_1HttpMultipartScanner.html">HttpMultipartScanner</a></li>
-    <li class="footer">Generated on Sun Jun 6 2021 22:52:17 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 6 2021 23:16:04 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

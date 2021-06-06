@@ -1,5 +1,6 @@
 var dir_1224104d412225b996ab6dfa83431a88 =
 [
+    [ "fmt", "dir_01760b1104b35a6fd322a027d9259ea5.html", "dir_01760b1104b35a6fd322a027d9259ea5" ],
     [ "ghc", "dir_1e83498808adc8ad9629ea2e4946666a.html", "dir_1e83498808adc8ad9629ea2e4946666a" ],
     [ "uv", "dir_25302867c2307ab8d43a1b1d664c1ea4.html", "dir_25302867c2307ab8d43a1b1d664c1ea4" ],
     [ "Algorithm.h", "Algorithm_8h_source.html", null ],
@@ -22,11 +23,8 @@ var dir_1224104d412225b996ab6dfa83431a88 =
     [ "EpochTracker.h", "EpochTracker_8h_source.html", null ],
     [ "Errc.h", "Errc_8h_source.html", null ],
     [ "Errno.h", "Errno_8h_source.html", null ],
-    [ "Error.h", "Error_8h_source.html", null ],
     [ "ErrorHandling.h", "ErrorHandling_8h_source.html", null ],
-    [ "ErrorOr.h", "ErrorOr_8h.html", "ErrorOr_8h" ],
     [ "EventLoopRunner.h", "EventLoopRunner_8h_source.html", null ],
-    [ "Format.h", "Format_8h_source.html", null ],
     [ "fs.h", "fs_8h_source.html", null ],
     [ "FunctionExtras.h", "FunctionExtras_8h.html", [
       [ "unique_function", "classwpi_1_1unique__function.html", null ],
@@ -54,7 +52,6 @@ var dir_1224104d412225b996ab6dfa83431a88 =
     [ "MemAlloc.h", "MemAlloc_8h.html", "MemAlloc_8h" ],
     [ "MimeTypes.h", "MimeTypes_8h_source.html", null ],
     [ "mutex.h", "mutex_8h_source.html", null ],
-    [ "NativeFormatting.h", "NativeFormatting_8h_source.html", null ],
     [ "NetworkAcceptor.h", "NetworkAcceptor_8h_source.html", null ],
     [ "NetworkStream.h", "NetworkStream_8h_source.html", null ],
     [ "nodiscard.h", "nodiscard_8h_source.html", null ],
@@ -87,18 +84,18 @@ var dir_1224104d412225b996ab6dfa83431a88 =
     [ "STLExtras.h", "STLExtras_8h_source.html", null ],
     [ "StringExtras.h", "StringExtras_8h_source.html", null ],
     [ "StringMap.h", "StringMap_8h_source.html", null ],
-    [ "StringRef.h", "StringRef_8h_source.html", null ],
     [ "SwapByteOrder.h", "SwapByteOrder_8h_source.html", null ],
     [ "TCPAcceptor.h", "TCPAcceptor_8h_source.html", null ],
     [ "TCPConnector.h", "TCPConnector_8h_source.html", null ],
     [ "TCPStream.h", "TCPStream_8h_source.html", null ],
     [ "timestamp.h", "timestamp_8h_source.html", null ],
-    [ "Twine.h", "Twine_8h_source.html", null ],
     [ "type_traits.h", "type__traits_8h_source.html", null ],
     [ "UDPClient.h", "UDPClient_8h_source.html", null ],
     [ "UidVector.h", "UidVector_8h_source.html", null ],
     [ "UrlParser.h", "UrlParser_8h_source.html", null ],
-    [ "VersionTuple.h", "VersionTuple_8h.html", "VersionTuple_8h" ],
+    [ "VersionTuple.h", "VersionTuple_8h.html", [
+      [ "VersionTuple", "classwpi_1_1VersionTuple.html", "classwpi_1_1VersionTuple" ]
+    ] ],
     [ "WebSocket.h", "WebSocket_8h_source.html", null ],
     [ "WebSocketServer.h", "WebSocketServer_8h_source.html", null ],
     [ "WindowsError.h", "WindowsError_8h_source.html", null ],

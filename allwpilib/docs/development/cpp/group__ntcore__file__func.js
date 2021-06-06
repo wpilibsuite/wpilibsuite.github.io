@@ -1,7 +1,7 @@
 var group__ntcore__file__func =
 [
-    [ "LoadEntries", "group__ntcore__file__func.html#gadd49ef33e2de43c7cd7c29e1726c9ec4", null ],
-    [ "LoadPersistent", "group__ntcore__file__func.html#ga08fdf15c146c23a565c7c6891d0def67", null ],
-    [ "SaveEntries", "group__ntcore__file__func.html#gac2c30383d5d37da8584951aff41b03d6", null ],
-    [ "SavePersistent", "group__ntcore__file__func.html#gade78471589909837ad32494a9f63d401", null ]
+    [ "LoadEntries", "group__ntcore__file__func.html#ga1abc3eec44e9334b800cf77c7a706f18", null ],
+    [ "LoadPersistent", "group__ntcore__file__func.html#ga2fc8e49d506e36393ec77790b8477901", null ],
+    [ "SaveEntries", "group__ntcore__file__func.html#gaeacac4dc64da50c4bc1a6b8fec02a54e", null ],
+    [ "SavePersistent", "group__ntcore__file__func.html#gaede185ad78271b426805cdd36deddb10", null ]
 ];

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-94-g4f1cecb</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-95-gb2c3b2d</span>
    </div>
   </td>
  </tr>
@@ -162,12 +162,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Bind</b> (const socka
 <tr class="memitem:a8debf333fb6a63918373757bcffa7476"><td class="memItemLeft" align="right" valign="top"><a id="a8debf333fb6a63918373757bcffa7476"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Bind</b> (const sockaddr_in6 &amp;addr, unsigned int flags=0)</td></tr>
 <tr class="separator:a8debf333fb6a63918373757bcffa7476"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aced349325533c9cc851ea6f9b28fb256"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1uv_1_1Tcp.html#aced349325533c9cc851ea6f9b28fb256">Bind</a> (const <a class="el" href="classwpi_1_1Twine.html">Twine</a> &amp;ip, unsigned int port, unsigned int flags=0)</td></tr>
-<tr class="memdesc:aced349325533c9cc851ea6f9b28fb256"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind the handle to an IPv4 address and port.  <a href="classwpi_1_1uv_1_1Tcp.html#aced349325533c9cc851ea6f9b28fb256">More...</a><br /></td></tr>
-<tr class="separator:aced349325533c9cc851ea6f9b28fb256"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a41d100c6b23607b2f76f06390449fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1uv_1_1Tcp.html#a7a41d100c6b23607b2f76f06390449fe">Bind6</a> (const <a class="el" href="classwpi_1_1Twine.html">Twine</a> &amp;ip, unsigned int port, unsigned int flags=0)</td></tr>
-<tr class="memdesc:a7a41d100c6b23607b2f76f06390449fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind the handle to an IPv6 address and port.  <a href="classwpi_1_1uv_1_1Tcp.html#a7a41d100c6b23607b2f76f06390449fe">More...</a><br /></td></tr>
-<tr class="separator:a7a41d100c6b23607b2f76f06390449fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fbc4bc5a730f4a9fa7e9a8dd77daaea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1uv_1_1Tcp.html#a3fbc4bc5a730f4a9fa7e9a8dd77daaea">Bind</a> (std::string_view ip, unsigned int port, unsigned int flags=0)</td></tr>
+<tr class="memdesc:a3fbc4bc5a730f4a9fa7e9a8dd77daaea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind the handle to an IPv4 address and port.  <a href="classwpi_1_1uv_1_1Tcp.html#a3fbc4bc5a730f4a9fa7e9a8dd77daaea">More...</a><br /></td></tr>
+<tr class="separator:a3fbc4bc5a730f4a9fa7e9a8dd77daaea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa387dd7afdb223c33392782356ca55e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1uv_1_1Tcp.html#aa387dd7afdb223c33392782356ca55e8">Bind6</a> (std::string_view ip, unsigned int port, unsigned int flags=0)</td></tr>
+<tr class="memdesc:aa387dd7afdb223c33392782356ca55e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind the handle to an IPv6 address and port.  <a href="classwpi_1_1uv_1_1Tcp.html#aa387dd7afdb223c33392782356ca55e8">More...</a><br /></td></tr>
+<tr class="separator:aa387dd7afdb223c33392782356ca55e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae00a4db63024fc2e39e19c7bc946a729"><td class="memItemLeft" align="right" valign="top">sockaddr_storage&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1uv_1_1Tcp.html#ae00a4db63024fc2e39e19c7bc946a729">GetSock</a> ()</td></tr>
 <tr class="memdesc:ae00a4db63024fc2e39e19c7bc946a729"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current address to which the handle is bound.  <a href="classwpi_1_1uv_1_1Tcp.html#ae00a4db63024fc2e39e19c7bc946a729">More...</a><br /></td></tr>
 <tr class="separator:ae00a4db63024fc2e39e19c7bc946a729"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -192,18 +192,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Connect</b> (const so
 <tr class="memitem:a59250296f19237e0b22e5a7c93e94596"><td class="memItemLeft" align="right" valign="top"><a id="a59250296f19237e0b22e5a7c93e94596"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Connect</b> (const sockaddr_in6 &amp;addr, std::function&lt; void()&gt; callback)</td></tr>
 <tr class="separator:a59250296f19237e0b22e5a7c93e94596"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1ff2b3ff9dcc23ba0454b2807ea4aea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1uv_1_1Tcp.html#af1ff2b3ff9dcc23ba0454b2807ea4aea">Connect</a> (const <a class="el" href="classwpi_1_1Twine.html">Twine</a> &amp;ip, unsigned int port, const std::shared_ptr&lt; <a class="el" href="classwpi_1_1uv_1_1TcpConnectReq.html">TcpConnectReq</a> &gt; &amp;req)</td></tr>
-<tr class="memdesc:af1ff2b3ff9dcc23ba0454b2807ea4aea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Establish an IPv4 TCP connection.  <a href="classwpi_1_1uv_1_1Tcp.html#af1ff2b3ff9dcc23ba0454b2807ea4aea">More...</a><br /></td></tr>
-<tr class="separator:af1ff2b3ff9dcc23ba0454b2807ea4aea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bbadd846b289abbd56c283b14fc0e5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1uv_1_1Tcp.html#a9bbadd846b289abbd56c283b14fc0e5b">Connect</a> (const <a class="el" href="classwpi_1_1Twine.html">Twine</a> &amp;ip, unsigned int port, std::function&lt; void()&gt; callback)</td></tr>
-<tr class="memdesc:a9bbadd846b289abbd56c283b14fc0e5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Establish an IPv4 TCP connection.  <a href="classwpi_1_1uv_1_1Tcp.html#a9bbadd846b289abbd56c283b14fc0e5b">More...</a><br /></td></tr>
-<tr class="separator:a9bbadd846b289abbd56c283b14fc0e5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbbebc161f94a33adfe95add3b853f94"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1uv_1_1Tcp.html#acbbebc161f94a33adfe95add3b853f94">Connect6</a> (const <a class="el" href="classwpi_1_1Twine.html">Twine</a> &amp;ip, unsigned int port, const std::shared_ptr&lt; <a class="el" href="classwpi_1_1uv_1_1TcpConnectReq.html">TcpConnectReq</a> &gt; &amp;req)</td></tr>
-<tr class="memdesc:acbbebc161f94a33adfe95add3b853f94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Establish an IPv6 TCP connection.  <a href="classwpi_1_1uv_1_1Tcp.html#acbbebc161f94a33adfe95add3b853f94">More...</a><br /></td></tr>
-<tr class="separator:acbbebc161f94a33adfe95add3b853f94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a178ce45b7ef1a526f1f61bb8da4be6b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1uv_1_1Tcp.html#a178ce45b7ef1a526f1f61bb8da4be6b2">Connect6</a> (const <a class="el" href="classwpi_1_1Twine.html">Twine</a> &amp;ip, unsigned int port, std::function&lt; void()&gt; callback)</td></tr>
-<tr class="memdesc:a178ce45b7ef1a526f1f61bb8da4be6b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Establish an IPv6 TCP connection.  <a href="classwpi_1_1uv_1_1Tcp.html#a178ce45b7ef1a526f1f61bb8da4be6b2">More...</a><br /></td></tr>
-<tr class="separator:a178ce45b7ef1a526f1f61bb8da4be6b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c189f4d216530d8f843e8a7b4ab42b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1uv_1_1Tcp.html#a9c189f4d216530d8f843e8a7b4ab42b2">Connect</a> (std::string_view ip, unsigned int port, const std::shared_ptr&lt; <a class="el" href="classwpi_1_1uv_1_1TcpConnectReq.html">TcpConnectReq</a> &gt; &amp;req)</td></tr>
+<tr class="memdesc:a9c189f4d216530d8f843e8a7b4ab42b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Establish an IPv4 TCP connection.  <a href="classwpi_1_1uv_1_1Tcp.html#a9c189f4d216530d8f843e8a7b4ab42b2">More...</a><br /></td></tr>
+<tr class="separator:a9c189f4d216530d8f843e8a7b4ab42b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7067f3321811f28b95cace3cac35e323"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1uv_1_1Tcp.html#a7067f3321811f28b95cace3cac35e323">Connect</a> (std::string_view ip, unsigned int port, std::function&lt; void()&gt; callback)</td></tr>
+<tr class="memdesc:a7067f3321811f28b95cace3cac35e323"><td class="mdescLeft">&#160;</td><td class="mdescRight">Establish an IPv4 TCP connection.  <a href="classwpi_1_1uv_1_1Tcp.html#a7067f3321811f28b95cace3cac35e323">More...</a><br /></td></tr>
+<tr class="separator:a7067f3321811f28b95cace3cac35e323"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a163c3892951d94fb8bacd1fc1f490d5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1uv_1_1Tcp.html#a163c3892951d94fb8bacd1fc1f490d5f">Connect6</a> (std::string_view ip, unsigned int port, const std::shared_ptr&lt; <a class="el" href="classwpi_1_1uv_1_1TcpConnectReq.html">TcpConnectReq</a> &gt; &amp;req)</td></tr>
+<tr class="memdesc:a163c3892951d94fb8bacd1fc1f490d5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Establish an IPv6 TCP connection.  <a href="classwpi_1_1uv_1_1Tcp.html#a163c3892951d94fb8bacd1fc1f490d5f">More...</a><br /></td></tr>
+<tr class="separator:a163c3892951d94fb8bacd1fc1f490d5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73f7655b2bd5717d5079030decfa22d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1uv_1_1Tcp.html#a73f7655b2bd5717d5079030decfa22d4">Connect6</a> (std::string_view ip, unsigned int port, std::function&lt; void()&gt; callback)</td></tr>
+<tr class="memdesc:a73f7655b2bd5717d5079030decfa22d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Establish an IPv6 TCP connection.  <a href="classwpi_1_1uv_1_1Tcp.html#a73f7655b2bd5717d5079030decfa22d4">More...</a><br /></td></tr>
+<tr class="separator:a73f7655b2bd5717d5079030decfa22d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classwpi_1_1uv_1_1NetworkStreamImpl"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classwpi_1_1uv_1_1NetworkStreamImpl')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classwpi_1_1uv_1_1NetworkStreamImpl.html">wpi::uv::NetworkStreamImpl&lt; Tcp, uv_tcp_t &gt;</a></td></tr>
 <tr class="memitem:a75b73807315657d93783c39424dec233 inherit pub_methods_classwpi_1_1uv_1_1NetworkStreamImpl"><td class="memItemLeft" align="right" valign="top"><a id="a75b73807315657d93783c39424dec233"></a>
 std::shared_ptr&lt; <a class="el" href="classwpi_1_1uv_1_1Tcp.html">Tcp</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>shared_from_this</b> ()</td></tr>
@@ -301,9 +301,9 @@ std::shared_ptr&lt; const <a class="el" href="classwpi_1_1uv_1_1Stream.html">Str
 <tr class="memitem:abb60b23d01d10e0391358407c2a25948 inherit pub_methods_classwpi_1_1uv_1_1Handle"><td class="memItemLeft" align="right" valign="top">Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1uv_1_1Handle.html#abb60b23d01d10e0391358407c2a25948">GetType</a> () const noexcept</td></tr>
 <tr class="memdesc:abb60b23d01d10e0391358407c2a25948 inherit pub_methods_classwpi_1_1uv_1_1Handle"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the type of the handle.  <a href="classwpi_1_1uv_1_1Handle.html#abb60b23d01d10e0391358407c2a25948">More...</a><br /></td></tr>
 <tr class="separator:abb60b23d01d10e0391358407c2a25948 inherit pub_methods_classwpi_1_1uv_1_1Handle"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a166fe8e4d5ac708d097f9bf05fa4adaa inherit pub_methods_classwpi_1_1uv_1_1Handle"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1StringRef.html">StringRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1uv_1_1Handle.html#a166fe8e4d5ac708d097f9bf05fa4adaa">GetTypeName</a> () const noexcept</td></tr>
-<tr class="memdesc:a166fe8e4d5ac708d097f9bf05fa4adaa inherit pub_methods_classwpi_1_1uv_1_1Handle"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of the type of the handle.  <a href="classwpi_1_1uv_1_1Handle.html#a166fe8e4d5ac708d097f9bf05fa4adaa">More...</a><br /></td></tr>
-<tr class="separator:a166fe8e4d5ac708d097f9bf05fa4adaa inherit pub_methods_classwpi_1_1uv_1_1Handle"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31a2f5256e99fbc665d353282c80c458 inherit pub_methods_classwpi_1_1uv_1_1Handle"><td class="memItemLeft" align="right" valign="top">std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1uv_1_1Handle.html#a31a2f5256e99fbc665d353282c80c458">GetTypeName</a> () const noexcept</td></tr>
+<tr class="memdesc:a31a2f5256e99fbc665d353282c80c458 inherit pub_methods_classwpi_1_1uv_1_1Handle"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of the type of the handle.  <a href="classwpi_1_1uv_1_1Handle.html#a31a2f5256e99fbc665d353282c80c458">More...</a><br /></td></tr>
+<tr class="separator:a31a2f5256e99fbc665d353282c80c458 inherit pub_methods_classwpi_1_1uv_1_1Handle"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5144758fb0f20af9b6c2f3c7b1501a9e inherit pub_methods_classwpi_1_1uv_1_1Handle"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwpi_1_1uv_1_1Loop.html">Loop</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1uv_1_1Handle.html#a5144758fb0f20af9b6c2f3c7b1501a9e">GetLoop</a> () const noexcept</td></tr>
 <tr class="memdesc:a5144758fb0f20af9b6c2f3c7b1501a9e inherit pub_methods_classwpi_1_1uv_1_1Handle"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the loop where this handle runs.  <a href="classwpi_1_1uv_1_1Handle.html#a5144758fb0f20af9b6c2f3c7b1501a9e">More...</a><br /></td></tr>
 <tr class="separator:a5144758fb0f20af9b6c2f3c7b1501a9e inherit pub_methods_classwpi_1_1uv_1_1Handle"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -537,8 +537,8 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>DefaultFreeBuf
 
 </div>
 </div>
-<a id="aced349325533c9cc851ea6f9b28fb256"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aced349325533c9cc851ea6f9b28fb256">&#9670;&nbsp;</a></span>Bind() <span class="overload">[2/2]</span></h2>
+<a id="a3fbc4bc5a730f4a9fa7e9a8dd77daaea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fbc4bc5a730f4a9fa7e9a8dd77daaea">&#9670;&nbsp;</a></span>Bind() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -546,7 +546,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>DefaultFreeBuf
         <tr>
           <td class="memname">void wpi::uv::Tcp::Bind </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1Twine.html">Twine</a> &amp;&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>ip</em>, </td>
         </tr>
         <tr>
@@ -583,8 +583,8 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>DefaultFreeBuf
 
 </div>
 </div>
-<a id="a7a41d100c6b23607b2f76f06390449fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a41d100c6b23607b2f76f06390449fe">&#9670;&nbsp;</a></span>Bind6()</h2>
+<a id="aa387dd7afdb223c33392782356ca55e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa387dd7afdb223c33392782356ca55e8">&#9670;&nbsp;</a></span>Bind6()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -592,7 +592,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>DefaultFreeBuf
         <tr>
           <td class="memname">void wpi::uv::Tcp::Bind6 </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1Twine.html">Twine</a> &amp;&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>ip</em>, </td>
         </tr>
         <tr>
@@ -707,8 +707,8 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>DefaultFreeBuf
 
 </div>
 </div>
-<a id="af1ff2b3ff9dcc23ba0454b2807ea4aea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af1ff2b3ff9dcc23ba0454b2807ea4aea">&#9670;&nbsp;</a></span>Connect() <span class="overload">[3/4]</span></h2>
+<a id="a9c189f4d216530d8f843e8a7b4ab42b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c189f4d216530d8f843e8a7b4ab42b2">&#9670;&nbsp;</a></span>Connect() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -716,7 +716,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>DefaultFreeBuf
         <tr>
           <td class="memname">void wpi::uv::Tcp::Connect </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1Twine.html">Twine</a> &amp;&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>ip</em>, </td>
         </tr>
         <tr>
@@ -753,8 +753,8 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>DefaultFreeBuf
 
 </div>
 </div>
-<a id="a9bbadd846b289abbd56c283b14fc0e5b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9bbadd846b289abbd56c283b14fc0e5b">&#9670;&nbsp;</a></span>Connect() <span class="overload">[4/4]</span></h2>
+<a id="a7067f3321811f28b95cace3cac35e323"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7067f3321811f28b95cace3cac35e323">&#9670;&nbsp;</a></span>Connect() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -762,7 +762,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>DefaultFreeBuf
         <tr>
           <td class="memname">void wpi::uv::Tcp::Connect </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1Twine.html">Twine</a> &amp;&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>ip</em>, </td>
         </tr>
         <tr>
@@ -799,8 +799,8 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>DefaultFreeBuf
 
 </div>
 </div>
-<a id="acbbebc161f94a33adfe95add3b853f94"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acbbebc161f94a33adfe95add3b853f94">&#9670;&nbsp;</a></span>Connect6() <span class="overload">[1/2]</span></h2>
+<a id="a163c3892951d94fb8bacd1fc1f490d5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a163c3892951d94fb8bacd1fc1f490d5f">&#9670;&nbsp;</a></span>Connect6() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -808,7 +808,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>DefaultFreeBuf
         <tr>
           <td class="memname">void wpi::uv::Tcp::Connect6 </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1Twine.html">Twine</a> &amp;&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>ip</em>, </td>
         </tr>
         <tr>
@@ -845,8 +845,8 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>DefaultFreeBuf
 
 </div>
 </div>
-<a id="a178ce45b7ef1a526f1f61bb8da4be6b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a178ce45b7ef1a526f1f61bb8da4be6b2">&#9670;&nbsp;</a></span>Connect6() <span class="overload">[2/2]</span></h2>
+<a id="a73f7655b2bd5717d5079030decfa22d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73f7655b2bd5717d5079030decfa22d4">&#9670;&nbsp;</a></span>Connect6() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -854,7 +854,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>DefaultFreeBuf
         <tr>
           <td class="memname">void wpi::uv::Tcp::Connect6 </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1Twine.html">Twine</a> &amp;&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>ip</em>, </td>
         </tr>
         <tr>
@@ -1220,7 +1220,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>DefaultFreeBuf
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>wpi</b></li><li class="navelem"><b>uv</b></li><li class="navelem"><a class="el" href="classwpi_1_1uv_1_1Tcp.html">Tcp</a></li>
-    <li class="footer">Generated on Sun Jun 6 2021 22:52:18 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 6 2021 23:16:06 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

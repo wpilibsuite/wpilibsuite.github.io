@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-94-g4f1cecb</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-95-gb2c3b2d</span>
    </div>
   </td>
  </tr>
@@ -100,15 +100,15 @@ $(document).ready(function(){initNavTree('CallbackStore_8h_source.html',''); ini
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;functional&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;hal/Value.h&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;wpi/StringRef.h&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;string_view&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;hal/Value.h&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span>frc::sim {</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">using</span> NotifyCallback = std::function&lt;void(<a class="code" href="classwpi_1_1StringRef.html">wpi::StringRef</a>, <span class="keyword">const</span> <a class="code" href="structHAL__Value.html">HAL_Value</a>*)&gt;;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">using</span> NotifyCallback = std::function&lt;void(std::string_view, <span class="keyword">const</span> <a class="code" href="structHAL__Value.html">HAL_Value</a>*)&gt;;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">using</span> ConstBufferCallback = std::function&lt;void(</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="classwpi_1_1StringRef.html">wpi::StringRef</a>, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* <a class="code" href="classbuffer.html">buffer</a>, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> count)&gt;;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    std::string_view, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* <a class="code" href="classbuffer.html">buffer</a>, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> count)&gt;;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">using</span> CancelCallbackFunc = void (*)(int32_t index, int32_t uid);</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">using</span> CancelCallbackNoIndexFunc = void (*)(int32_t uid);</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">using</span> CancelCallbackChannelFunc = void (*)(int32_t index, int32_t channel,</div>
@@ -173,13 +173,12 @@ $(document).ready(function(){initNavTree('CallbackStore_8h_source.html',''); ini
 <div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1099</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1CallbackStore_html"><div class="ttname"><a href="classfrc_1_1sim_1_1CallbackStore.html">frc::sim::CallbackStore</a></div><div class="ttdoc">Manages simulation callbacks; each object is associated with a callback.</div><div class="ttdef"><b>Definition:</b> CallbackStore.h:30</div></div>
 <div class="ttc" id="aclassbuffer_html"><div class="ttname"><a href="classbuffer.html">buffer</a></div><div class="ttdoc">\rst A contiguous memory buffer with an optional growing ability.</div><div class="ttdef"><b>Definition:</b> core.h:732</div></div>
-<div class="ttc" id="aclasswpi_1_1StringRef_html"><div class="ttname"><a href="classwpi_1_1StringRef.html">wpi::StringRef</a></div><div class="ttdoc">StringRef - Represent a constant reference to a string, i.e.</div><div class="ttdef"><b>Definition:</b> StringRef.h:50</div></div>
 <div class="ttc" id="astructHAL__Value_html"><div class="ttname"><a href="structHAL__Value.html">HAL_Value</a></div><div class="ttdoc">HAL Entry Value.</div><div class="ttdef"><b>Definition:</b> Value.h:20</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_297dc702852f645e4b9e531dac2da27d.html">simulation</a></li><li class="navelem"><b>CallbackStore.h</b></li>
-    <li class="footer">Generated on Sun Jun 6 2021 22:52:13 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 6 2021 23:15:59 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

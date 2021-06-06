@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-94-g4f1cecb</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-95-gb2c3b2d</span>
    </div>
   </td>
  </tr>
@@ -104,9 +104,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gafdb2917aac0115fca9d6daa660b69c4b"><td class="memItemLeft" align="right" valign="top"><a id="gafdb2917aac0115fca9d6daa660b69c4b"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>cs::GetPropertyName</b> (CS_Property property, CS_Status *status)</td></tr>
 <tr class="separator:gafdb2917aac0115fca9d6daa660b69c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga175a39963aef10a83a5d7c9477dd10db"><td class="memItemLeft" align="right" valign="top"><a id="ga175a39963aef10a83a5d7c9477dd10db"></a>
-<a class="el" href="classwpi_1_1StringRef.html">wpi::StringRef</a>&#160;</td><td class="memItemRight" valign="bottom"><b>cs::GetPropertyName</b> (CS_Property property, <a class="el" href="classwpi_1_1SmallVectorImpl.html">wpi::SmallVectorImpl</a>&lt; char &gt; &amp;buf, CS_Status *status)</td></tr>
-<tr class="separator:ga175a39963aef10a83a5d7c9477dd10db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacdfe41c266d3a5b4ee0692d5bd14232a"><td class="memItemLeft" align="right" valign="top"><a id="gacdfe41c266d3a5b4ee0692d5bd14232a"></a>
+std::string_view&#160;</td><td class="memItemRight" valign="bottom"><b>cs::GetPropertyName</b> (CS_Property property, <a class="el" href="classwpi_1_1SmallVectorImpl.html">wpi::SmallVectorImpl</a>&lt; char &gt; &amp;buf, CS_Status *status)</td></tr>
+<tr class="separator:gacdfe41c266d3a5b4ee0692d5bd14232a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga92658452286bb6ddad2f952fabbc4563"><td class="memItemLeft" align="right" valign="top"><a id="ga92658452286bb6ddad2f952fabbc4563"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>cs::GetProperty</b> (CS_Property property, CS_Status *status)</td></tr>
 <tr class="separator:ga92658452286bb6ddad2f952fabbc4563"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,12 +128,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>cs::GetPropertyDefault
 <tr class="memitem:gac1e528837ea0ee5e0c1f8a6e3435fe62"><td class="memItemLeft" align="right" valign="top"><a id="gac1e528837ea0ee5e0c1f8a6e3435fe62"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>cs::GetStringProperty</b> (CS_Property property, CS_Status *status)</td></tr>
 <tr class="separator:gac1e528837ea0ee5e0c1f8a6e3435fe62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7a8bf245a102a8863daeadcda440da59"><td class="memItemLeft" align="right" valign="top"><a id="ga7a8bf245a102a8863daeadcda440da59"></a>
-<a class="el" href="classwpi_1_1StringRef.html">wpi::StringRef</a>&#160;</td><td class="memItemRight" valign="bottom"><b>cs::GetStringProperty</b> (CS_Property property, <a class="el" href="classwpi_1_1SmallVectorImpl.html">wpi::SmallVectorImpl</a>&lt; char &gt; &amp;buf, CS_Status *status)</td></tr>
-<tr class="separator:ga7a8bf245a102a8863daeadcda440da59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab4f0b5183db43d84a81626d084bcbdc2"><td class="memItemLeft" align="right" valign="top"><a id="gab4f0b5183db43d84a81626d084bcbdc2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>cs::SetStringProperty</b> (CS_Property property, const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;<a class="el" href="classvalue.html">value</a>, CS_Status *status)</td></tr>
-<tr class="separator:gab4f0b5183db43d84a81626d084bcbdc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0f11c6cf61f9b11f0f1e212ce310824c"><td class="memItemLeft" align="right" valign="top"><a id="ga0f11c6cf61f9b11f0f1e212ce310824c"></a>
+std::string_view&#160;</td><td class="memItemRight" valign="bottom"><b>cs::GetStringProperty</b> (CS_Property property, <a class="el" href="classwpi_1_1SmallVectorImpl.html">wpi::SmallVectorImpl</a>&lt; char &gt; &amp;buf, CS_Status *status)</td></tr>
+<tr class="separator:ga0f11c6cf61f9b11f0f1e212ce310824c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6238f0047002f035729f01be5fa1da32"><td class="memItemLeft" align="right" valign="top"><a id="ga6238f0047002f035729f01be5fa1da32"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>cs::SetStringProperty</b> (CS_Property property, std::string_view <a class="el" href="classvalue.html">value</a>, CS_Status *status)</td></tr>
+<tr class="separator:ga6238f0047002f035729f01be5fa1da32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga66ee36ab544593a98bd4bc72c814e90f"><td class="memItemLeft" align="right" valign="top"><a id="ga66ee36ab544593a98bd4bc72c814e90f"></a>
 std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>cs::GetEnumPropertyChoices</b> (CS_Property property, CS_Status *status)</td></tr>
 <tr class="separator:ga66ee36ab544593a98bd4bc72c814e90f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -144,7 +144,7 @@ std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bott
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Jun 6 2021 22:52:15 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 6 2021 23:16:02 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

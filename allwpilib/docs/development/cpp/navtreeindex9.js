@@ -1,14 +1,5 @@
 var NAVTREEINDEX9 =
 {
-"classfrc_1_1DMA.html#abd97b67ebd594b0393bdceb68874072c":[5,0,5,53,4],
-"classfrc_1_1DMA.html#ac0718d7f0f2680c53e3b0588331a6aac":[5,0,5,53,0],
-"classfrc_1_1DMA.html#ac5cf92617a660969e63c6d8b1cbd402f":[5,0,5,53,5],
-"classfrc_1_1DMA.html#af267e400ea72ded4ccd4b7ac0d0bc501":[5,0,5,53,10],
-"classfrc_1_1DMA.html#afce83d02ca7dc4a5828e323422254609":[5,0,5,53,3],
-"classfrc_1_1DMASample.html":[5,0,5,54],
-"classfrc_1_1DMASample.html#a0f4aedf762d4ea5396221b0bc2537541":[5,0,5,54,10],
-"classfrc_1_1DMASample.html#a19921e60ea1c11cbb246d709b81ef866":[5,0,5,54,4],
-"classfrc_1_1DMASample.html#a1ea3025fc5a55acbddb8e9b09cc54eaf":[5,0,5,54,0],
 "classfrc_1_1DMASample.html#a2b220a234c2e9d73ffb0495bcd20840a":[5,0,5,54,5],
 "classfrc_1_1DMASample.html#a3302e7d83b69875f28ef934515597143":[5,0,5,54,6],
 "classfrc_1_1DMASample.html#a3c6f59fff1141c027557d183b365ec1c":[5,0,5,54,13],
@@ -249,5 +240,14 @@ var NAVTREEINDEX9 =
 "classfrc_1_1ElevatorFeedforward.html#a5f612929d669d64809f670557b194a66":[5,0,5,60,13],
 "classfrc_1_1ElevatorFeedforward.html#a73d47e21726e5018c8af98aab1a8029c":[5,0,5,60,8],
 "classfrc_1_1ElevatorFeedforward.html#a90f21d5596abd4f4530c03bea8e20ada":[5,0,5,60,1],
-"classfrc_1_1ElevatorFeedforward.html#a9ce97a7c88a7cdb32ad53bcbf2c59aef":[5,0,5,60,7]
+"classfrc_1_1ElevatorFeedforward.html#a9ce97a7c88a7cdb32ad53bcbf2c59aef":[5,0,5,60,7],
+"classfrc_1_1ElevatorFeedforward.html#aba5ec71554befafc8dd9c8560eecb463":[5,0,5,60,14],
+"classfrc_1_1ElevatorFeedforward.html#abcf0f05092f91475ef7963f323289ffe":[5,0,5,60,0],
+"classfrc_1_1ElevatorFeedforward.html#acf276a5c244c84580a670a9bee1df4a0":[5,0,5,60,2],
+"classfrc_1_1ElevatorFeedforward.html#ae39e57aaa304d49985853353c39c6380":[5,0,5,60,12],
+"classfrc_1_1ElevatorFeedforward.html#aef0703e075b22b2196c67adf91cf6896":[5,0,5,60,9],
+"classfrc_1_1ElevatorFeedforward.html#afcd91ca93ccb0b7ffc09d1f0425f9be6":[5,0,5,60,4],
+"classfrc_1_1EllipticalRegionConstraint.html":[5,0,5,61],
+"classfrc_1_1EllipticalRegionConstraint.html#a154ba1481071d00b38b6213cf7e3e65b":[5,0,5,61,3],
+"classfrc_1_1EllipticalRegionConstraint.html#a1ea5cb6935d6e3eabf77b03523aa506f":[5,0,5,61,1]
 };

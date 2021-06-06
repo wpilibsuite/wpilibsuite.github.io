@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-94-g4f1cecb</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-95-gb2c3b2d</span>
    </div>
   </td>
  </tr>
@@ -94,8 +94,8 @@ $(document).ready(function(){initNavTree('deprecated.html',''); initResizable();
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><dl class="reflist">
-<dt>Member <a class="el" href="classfrc_1_1SendableChooser.html#a3b36357f4b1e594dc32e7557ae5f6afc">frc::SendableChooser&lt; T &gt;::AddObject</a>  (<a class="el" href="classwpi_1_1StringRef.html" title="StringRef - Represent a constant reference to a string, i.e.">wpi::StringRef</a> name, T object)</dt>
-<dd><a class="anchor" id="_deprecated000012"></a>use <a class="el" href="classfrc_1_1SendableChooser.html#a854e0205c9edb809a1f1e96bbfd7fd0f" title="Adds the given object to the list of options.">AddOption(wpi::StringRef name, T object)</a> instead. </dd>
+<dt>Member <a class="el" href="classfrc_1_1SendableChooser.html#ab01426bbcb86a824bd0e9af426b47ba0">frc::SendableChooser&lt; T &gt;::AddObject</a>  (std::string_view name, T object)</dt>
+<dd><a class="anchor" id="_deprecated000012"></a>use <a class="el" href="classfrc_1_1SendableChooser.html#aaa1f52d5ecc0929bffcefb2801b1c3cf" title="Adds the given object to the list of options.">AddOption(std::string_view name, T object)</a> instead. </dd>
 <dt>Class <a class="el" href="classfrc_1_1PIDInterface.html">frc::PIDInterface</a>  </dt>
 <dd><a class="anchor" id="_deprecated000023"></a>All APIs which use this have been deprecated.  </dd>
 <dt>Class <a class="el" href="classfrc_1_1PIDController.html">frc::PIDController</a>  </dt>
@@ -116,8 +116,8 @@ $(document).ready(function(){initNavTree('deprecated.html',''); initResizable();
 <dd><a class="anchor" id="_deprecated000015"></a>Use <a class="el" href="classfrc_1_1SPI.html#ab78a7f35b03ccc3d62b656d5430a5eb9" title="Configure that the data is stable on the leading edge and the data changes on the trailing edge.">SetSampleDataOnLeadingEdge()</a> instead. </dd>
 <dt>Member <a class="el" href="classfrc_1_1SPI.html#a13df61aff07325c9ea6768ef161db5be">frc::SPI::SetSampleDataOnFalling</a>  ()</dt>
 <dd><a class="anchor" id="_deprecated000014"></a>Use <a class="el" href="classfrc_1_1SPI.html#ab4cc05f9f0c8ae3ce16757ce4b1c4a80" title="Configure that the data is stable on the trailing edge and the data changes on the leading edge.">SetSampleDataOnTrailingEdge()</a> instead. </dd>
-<dt>Member <a class="el" href="classfrc_1_1SendableChooser.html#acf5caa625b9508b8561cf507a393e975">frc::SendableChooser&lt; T &gt;::AddDefault</a>  (<a class="el" href="classwpi_1_1StringRef.html" title="StringRef - Represent a constant reference to a string, i.e.">wpi::StringRef</a> name, T object)</dt>
-<dd><a class="anchor" id="_deprecated000013"></a>use <a class="el" href="classfrc_1_1SendableChooser.html#a4acb844523097015137ece87154efcdb" title="Add the given object to the list of options and marks it as the default.">SetDefaultOption(wpi::StringRef name, T object)</a> instead. </dd>
+<dt>Member <a class="el" href="classfrc_1_1SendableChooser.html#a6d0bcabbab460e10f846abe03865641e">frc::SendableChooser&lt; T &gt;::AddDefault</a>  (std::string_view name, T object)</dt>
+<dd><a class="anchor" id="_deprecated000013"></a>use <a class="el" href="classfrc_1_1SendableChooser.html#a347cd324e81176fa4e32f2a0f7a77158" title="Add the given object to the list of options and marks it as the default.">SetDefaultOption(std::string_view name, T object)</a> instead. </dd>
 <dt>Member <a class="el" href="classfrc_1_1CameraServer.html#a20b099c1105c5db977870109a206c13b">frc::CameraServer::SetSize</a>  (int size)</dt>
 <dd><a class="anchor" id="_deprecated000001"></a>Use SetResolution on the UsbCamera returned by <a class="el" href="classfrc_1_1CameraServer.html#af4b39b0179578e1959aaa41dcf5e1790" title="Start automatically capturing images to send to the dashboard.">StartAutomaticCapture()</a> instead.  </dd>
 <dt>Member <a class="el" href="classfrc_1_1SendableHelper.html#a34427261bfcc261a7525a3590d72d0c4">frc::SendableHelper&lt; Derived &gt;::SetName</a>  (std::string_view moduleType, int moduleNumber, int channel)</dt>
@@ -147,7 +147,7 @@ $(document).ready(function(){initNavTree('deprecated.html',''); initResizable();
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Jun 6 2021 22:52:14 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 6 2021 23:16:01 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

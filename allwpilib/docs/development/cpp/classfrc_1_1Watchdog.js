@@ -4,7 +4,7 @@ var classfrc_1_1Watchdog =
     [ "Watchdog", "classfrc_1_1Watchdog.html#aaf50fdb91b2eadd066e7f5854c849c4d", null ],
     [ "~Watchdog", "classfrc_1_1Watchdog.html#aa5748acc01dfa554babf7f98560dae90", null ],
     [ "Watchdog", "classfrc_1_1Watchdog.html#a583c054b7a8eef1822877752028620c1", null ],
-    [ "AddEpoch", "classfrc_1_1Watchdog.html#afb1903c2b727850d2ffbc694deb75826", null ],
+    [ "AddEpoch", "classfrc_1_1Watchdog.html#a9bec44e4063d4750f1cc77a2a08440eb", null ],
     [ "Disable", "classfrc_1_1Watchdog.html#a87c3ccb5871c216a19fde16574b36290", null ],
     [ "Enable", "classfrc_1_1Watchdog.html#adbf21b5f221c80544d439bfebbb76772", null ],
     [ "GetTime", "classfrc_1_1Watchdog.html#a854390dec35d194be1e04330a6aae7a8", null ],

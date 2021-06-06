@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-94-g4f1cecb</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-95-gb2c3b2d</span>
    </div>
   </td>
  </tr>
@@ -111,15 +111,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a665d4e09f2780ae54a33d6e2057e9be2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocketServerHelper.html#a665d4e09f2780ae54a33d6e2057e9be2">IsWebsocket</a> () const</td></tr>
 <tr class="memdesc:a665d4e09f2780ae54a33d6e2057e9be2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get whether or not this was a websocket upgrade.  <a href="classwpi_1_1WebSocketServerHelper.html#a665d4e09f2780ae54a33d6e2057e9be2">More...</a><br /></td></tr>
 <tr class="separator:a665d4e09f2780ae54a33d6e2057e9be2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61ee23a557d2b7ae9361870f92d14061"><td class="memItemLeft" align="right" valign="top">std::pair&lt; bool, <a class="el" href="classwpi_1_1StringRef.html">StringRef</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocketServerHelper.html#a61ee23a557d2b7ae9361870f92d14061">MatchProtocol</a> (<a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt; <a class="el" href="classwpi_1_1StringRef.html">StringRef</a> &gt; protocols)</td></tr>
-<tr class="memdesc:a61ee23a557d2b7ae9361870f92d14061"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to find a match to the list of sub-protocols provided by the client.  <a href="classwpi_1_1WebSocketServerHelper.html#a61ee23a557d2b7ae9361870f92d14061">More...</a><br /></td></tr>
-<tr class="separator:a61ee23a557d2b7ae9361870f92d14061"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab87a55baffe7243d1c2c5f88aae38c33"><td class="memItemLeft" align="right" valign="top">std::pair&lt; bool, <a class="el" href="classwpi_1_1StringRef.html">StringRef</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocketServerHelper.html#ab87a55baffe7243d1c2c5f88aae38c33">MatchProtocol</a> (std::initializer_list&lt; <a class="el" href="classwpi_1_1StringRef.html">StringRef</a> &gt; protocols)</td></tr>
-<tr class="memdesc:ab87a55baffe7243d1c2c5f88aae38c33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to find a match to the list of sub-protocols provided by the client.  <a href="classwpi_1_1WebSocketServerHelper.html#ab87a55baffe7243d1c2c5f88aae38c33">More...</a><br /></td></tr>
-<tr class="separator:ab87a55baffe7243d1c2c5f88aae38c33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0acd834d1aa60d23171f53d99847a67"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwpi_1_1WebSocket.html">WebSocket</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocketServerHelper.html#aa0acd834d1aa60d23171f53d99847a67">Accept</a> (<a class="el" href="classwpi_1_1uv_1_1Stream.html">uv::Stream</a> &amp;stream, <a class="el" href="classwpi_1_1StringRef.html">StringRef</a> protocol=<a class="el" href="classwpi_1_1StringRef.html">StringRef</a>{})</td></tr>
-<tr class="memdesc:aa0acd834d1aa60d23171f53d99847a67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accept the upgrade.  <a href="classwpi_1_1WebSocketServerHelper.html#aa0acd834d1aa60d23171f53d99847a67">More...</a><br /></td></tr>
-<tr class="separator:aa0acd834d1aa60d23171f53d99847a67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a693ffca999b4558f159ed4d04ef19930"><td class="memItemLeft" align="right" valign="top">std::pair&lt; bool, std::string_view &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocketServerHelper.html#a693ffca999b4558f159ed4d04ef19930">MatchProtocol</a> (<a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt; std::string_view &gt; protocols)</td></tr>
+<tr class="memdesc:a693ffca999b4558f159ed4d04ef19930"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to find a match to the list of sub-protocols provided by the client.  <a href="classwpi_1_1WebSocketServerHelper.html#a693ffca999b4558f159ed4d04ef19930">More...</a><br /></td></tr>
+<tr class="separator:a693ffca999b4558f159ed4d04ef19930"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefc5d43858f6c00b33748310204c2db5"><td class="memItemLeft" align="right" valign="top">std::pair&lt; bool, std::string_view &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocketServerHelper.html#aefc5d43858f6c00b33748310204c2db5">MatchProtocol</a> (std::initializer_list&lt; std::string_view &gt; protocols)</td></tr>
+<tr class="memdesc:aefc5d43858f6c00b33748310204c2db5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to find a match to the list of sub-protocols provided by the client.  <a href="classwpi_1_1WebSocketServerHelper.html#aefc5d43858f6c00b33748310204c2db5">More...</a><br /></td></tr>
+<tr class="separator:aefc5d43858f6c00b33748310204c2db5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56d483d5df327ba37cc29cbfb4fe7cf3"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwpi_1_1WebSocket.html">WebSocket</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocketServerHelper.html#a56d483d5df327ba37cc29cbfb4fe7cf3">Accept</a> (<a class="el" href="classwpi_1_1uv_1_1Stream.html">uv::Stream</a> &amp;stream, std::string_view protocol={})</td></tr>
+<tr class="memdesc:a56d483d5df327ba37cc29cbfb4fe7cf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accept the upgrade.  <a href="classwpi_1_1WebSocketServerHelper.html#a56d483d5df327ba37cc29cbfb4fe7cf3">More...</a><br /></td></tr>
+<tr class="separator:a56d483d5df327ba37cc29cbfb4fe7cf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad56aa07e47599910ef87e405aa74ea3e"><td class="memItemLeft" align="right" valign="top"><a id="ad56aa07e47599910ef87e405aa74ea3e"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsUpgrade</b> () const</td></tr>
 <tr class="separator:ad56aa07e47599910ef87e405aa74ea3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -169,8 +169,8 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa0acd834d1aa60d23171f53d99847a67"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa0acd834d1aa60d23171f53d99847a67">&#9670;&nbsp;</a></span>Accept()</h2>
+<a id="a56d483d5df327ba37cc29cbfb4fe7cf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56d483d5df327ba37cc29cbfb4fe7cf3">&#9670;&nbsp;</a></span>Accept()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -187,8 +187,8 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1StringRef.html">StringRef</a>&#160;</td>
-          <td class="paramname"><em>protocol</em> = <code><a class="el" href="classwpi_1_1StringRef.html">StringRef</a>{}</code>&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>protocol</em> = <code>{}</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -204,7 +204,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Accept the upgrade. </p>
-<p>Disconnect other readers (such as the <a class="el" href="classwpi_1_1HttpParser.html" title="HTTP protocol parser.">HttpParser</a> reader) before calling this. See also <a class="el" href="classwpi_1_1WebSocket.html#a65d9ffc1b728426d15e9fae3fa4ba514" title="Starts a server connection by performing the initial server side handshake.">WebSocket::CreateServer()</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Disconnect other readers (such as the <a class="el" href="classwpi_1_1HttpParser.html" title="HTTP protocol parser.">HttpParser</a> reader) before calling this. See also <a class="el" href="classwpi_1_1WebSocket.html#a42906ab16c3ed8b8ab1983afb3a454af" title="Starts a server connection by performing the initial server side handshake.">WebSocket::CreateServer()</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">stream</td><td>Connection stream </td></tr>
     <tr><td class="paramname">protocol</td><td>The subprotocol to send to the client </td></tr>
@@ -242,16 +242,16 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a61ee23a557d2b7ae9361870f92d14061"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a61ee23a557d2b7ae9361870f92d14061">&#9670;&nbsp;</a></span>MatchProtocol() <span class="overload">[1/2]</span></h2>
+<a id="a693ffca999b4558f159ed4d04ef19930"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a693ffca999b4558f159ed4d04ef19930">&#9670;&nbsp;</a></span>MatchProtocol() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::pair&lt;bool, <a class="el" href="classwpi_1_1StringRef.html">StringRef</a>&gt; wpi::WebSocketServerHelper::MatchProtocol </td>
+          <td class="memname">std::pair&lt;bool, std::string_view&gt; wpi::WebSocketServerHelper::MatchProtocol </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt; <a class="el" href="classwpi_1_1StringRef.html">StringRef</a> &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt; std::string_view &gt;&#160;</td>
           <td class="paramname"><em>protocols</em></td><td>)</td>
           <td></td>
         </tr>
@@ -269,8 +269,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ab87a55baffe7243d1c2c5f88aae38c33"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab87a55baffe7243d1c2c5f88aae38c33">&#9670;&nbsp;</a></span>MatchProtocol() <span class="overload">[2/2]</span></h2>
+<a id="aefc5d43858f6c00b33748310204c2db5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefc5d43858f6c00b33748310204c2db5">&#9670;&nbsp;</a></span>MatchProtocol() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -279,9 +279,9 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::pair&lt;bool, <a class="el" href="classwpi_1_1StringRef.html">StringRef</a>&gt; wpi::WebSocketServerHelper::MatchProtocol </td>
+          <td class="memname">std::pair&lt;bool, std::string_view&gt; wpi::WebSocketServerHelper::MatchProtocol </td>
           <td>(</td>
-          <td class="paramtype">std::initializer_list&lt; <a class="el" href="classwpi_1_1StringRef.html">StringRef</a> &gt;&#160;</td>
+          <td class="paramtype">std::initializer_list&lt; std::string_view &gt;&#160;</td>
           <td class="paramname"><em>protocols</em></td><td>)</td>
           <td></td>
         </tr>
@@ -318,7 +318,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Upgrade event. </p>
-<p>Call <a class="el" href="classwpi_1_1WebSocketServerHelper.html#aa0acd834d1aa60d23171f53d99847a67" title="Accept the upgrade.">Accept()</a> to accept the upgrade. </p>
+<p>Call <a class="el" href="classwpi_1_1WebSocketServerHelper.html#a56d483d5df327ba37cc29cbfb4fe7cf3" title="Accept the upgrade.">Accept()</a> to accept the upgrade. </p>
 
 </div>
 </div>
@@ -331,7 +331,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>wpi</b></li><li class="navelem"><a class="el" href="classwpi_1_1WebSocketServerHelper.html">WebSocketServerHelper</a></li>
-    <li class="footer">Generated on Sun Jun 6 2021 22:52:17 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 6 2021 23:16:05 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

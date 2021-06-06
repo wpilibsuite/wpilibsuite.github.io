@@ -15,7 +15,7 @@ var classwpi_1_1uv_1_1Handle =
     [ "GetLoopRef", "classwpi_1_1uv_1_1Handle.html#a780fc5df466862c6e749b0e02c694190", null ],
     [ "GetRawHandle", "classwpi_1_1uv_1_1Handle.html#a2717ad050c76a1b7f30ecb4b6590c447", null ],
     [ "GetType", "classwpi_1_1uv_1_1Handle.html#abb60b23d01d10e0391358407c2a25948", null ],
-    [ "GetTypeName", "classwpi_1_1uv_1_1Handle.html#a166fe8e4d5ac708d097f9bf05fa4adaa", null ],
+    [ "GetTypeName", "classwpi_1_1uv_1_1Handle.html#a31a2f5256e99fbc665d353282c80c458", null ],
     [ "HasReference", "classwpi_1_1uv_1_1Handle.html#ad6fbea1549b19ab018be1b6d4ced9241", null ],
     [ "Invoke", "classwpi_1_1uv_1_1Handle.html#ac57b8059a53c5b83f25ea84f99c24f7a", null ],
     [ "IsActive", "classwpi_1_1uv_1_1Handle.html#a7ff9bb4689b14ad6c2103b5b2720da79", null ],

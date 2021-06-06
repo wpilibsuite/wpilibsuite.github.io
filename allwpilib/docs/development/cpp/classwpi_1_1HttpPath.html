@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-94-g4f1cecb</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-95-gb2c3b2d</span>
    </div>
   </td>
  </tr>
@@ -108,9 +108,9 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1HttpPath.html#aba29cb59ae824de963bf07dc91174745">HttpPath</a> ()=default</td></tr>
 <tr class="memdesc:aba29cb59ae824de963bf07dc91174745"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an empty HTTP path. <br /></td></tr>
 <tr class="separator:aba29cb59ae824de963bf07dc91174745"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fd2918d26303862d64feeff8054dfe1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1HttpPath.html#a4fd2918d26303862d64feeff8054dfe1">HttpPath</a> (<a class="el" href="classwpi_1_1StringRef.html">StringRef</a> path)</td></tr>
-<tr class="memdesc:a4fd2918d26303862d64feeff8054dfe1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a HTTP path from an escaped path string.  <a href="classwpi_1_1HttpPath.html#a4fd2918d26303862d64feeff8054dfe1">More...</a><br /></td></tr>
-<tr class="separator:a4fd2918d26303862d64feeff8054dfe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9b5e17e02ddda08b79bdb724f0cc313"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1HttpPath.html#ad9b5e17e02ddda08b79bdb724f0cc313">HttpPath</a> (std::string_view path)</td></tr>
+<tr class="memdesc:ad9b5e17e02ddda08b79bdb724f0cc313"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a HTTP path from an escaped path string.  <a href="classwpi_1_1HttpPath.html#ad9b5e17e02ddda08b79bdb724f0cc313">More...</a><br /></td></tr>
+<tr class="separator:ad9b5e17e02ddda08b79bdb724f0cc313"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8fad6ab772f5f8c58b0af0bc69af7bf2"><td class="memItemLeft" align="right" valign="top"><a id="a8fad6ab772f5f8c58b0af0bc69af7bf2"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1HttpPath.html#a8fad6ab772f5f8c58b0af0bc69af7bf2">operator bool</a> () const</td></tr>
 <tr class="memdesc:a8fad6ab772f5f8c58b0af0bc69af7bf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluates to true if the path is not empty. <br /></td></tr>
@@ -123,46 +123,46 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1HttpPath.html#a09b2130479084c6f6d2b8f9e784c3174">size</a> () const</td></tr>
 <tr class="memdesc:a09b2130479084c6f6d2b8f9e784c3174"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns number of elements in the path. <br /></td></tr>
 <tr class="separator:a09b2130479084c6f6d2b8f9e784c3174"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a216b0632bb453d6249b56c54721d12f3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1HttpPath.html#a216b0632bb453d6249b56c54721d12f3">equals</a> (std::initializer_list&lt; <a class="el" href="classwpi_1_1StringRef.html">StringRef</a> &gt; match) const</td></tr>
-<tr class="memdesc:a216b0632bb453d6249b56c54721d12f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the path exactly matches the provided match list.  <a href="classwpi_1_1HttpPath.html#a216b0632bb453d6249b56c54721d12f3">More...</a><br /></td></tr>
-<tr class="separator:a216b0632bb453d6249b56c54721d12f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae17b18a24031aed64d5c96adcd5ebead"><td class="memItemLeft" align="right" valign="top"><a id="ae17b18a24031aed64d5c96adcd5ebead"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>equals</b> (<a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt; <a class="el" href="classwpi_1_1StringRef.html">StringRef</a> &gt; match) const</td></tr>
-<tr class="separator:ae17b18a24031aed64d5c96adcd5ebead"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a248c3a85aead5975a4a68205c1787ff8"><td class="memItemLeft" align="right" valign="top"><a id="a248c3a85aead5975a4a68205c1787ff8"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>equals</b> (<a class="el" href="classwpi_1_1StringRef.html">StringRef</a> match) const</td></tr>
-<tr class="separator:a248c3a85aead5975a4a68205c1787ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71b940b7b35545dc42e6ff5054294b32"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1HttpPath.html#a71b940b7b35545dc42e6ff5054294b32">equals</a> (size_t start, std::initializer_list&lt; <a class="el" href="classwpi_1_1StringRef.html">StringRef</a> &gt; match) const</td></tr>
-<tr class="memdesc:a71b940b7b35545dc42e6ff5054294b32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the elements of the path starting at the "start" element match the provided match list, and there are no additional elements.  <a href="classwpi_1_1HttpPath.html#a71b940b7b35545dc42e6ff5054294b32">More...</a><br /></td></tr>
-<tr class="separator:a71b940b7b35545dc42e6ff5054294b32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab95adc6bccbe85645d152e4aa606589d"><td class="memItemLeft" align="right" valign="top"><a id="ab95adc6bccbe85645d152e4aa606589d"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>equals</b> (size_t start, <a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt; <a class="el" href="classwpi_1_1StringRef.html">StringRef</a> &gt; match) const</td></tr>
-<tr class="separator:ab95adc6bccbe85645d152e4aa606589d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac54fd1c2b0b5839404addeb312588346"><td class="memItemLeft" align="right" valign="top"><a id="ac54fd1c2b0b5839404addeb312588346"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>equals</b> (size_t start, <a class="el" href="classwpi_1_1StringRef.html">StringRef</a> match) const</td></tr>
-<tr class="separator:ac54fd1c2b0b5839404addeb312588346"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad66956504b43f6bc5f59814b67f1d2a9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1HttpPath.html#ad66956504b43f6bc5f59814b67f1d2a9">startswith</a> (std::initializer_list&lt; <a class="el" href="classwpi_1_1StringRef.html">StringRef</a> &gt; match) const</td></tr>
-<tr class="memdesc:ad66956504b43f6bc5f59814b67f1d2a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the first elements of the path match the provided match list.  <a href="classwpi_1_1HttpPath.html#ad66956504b43f6bc5f59814b67f1d2a9">More...</a><br /></td></tr>
-<tr class="separator:ad66956504b43f6bc5f59814b67f1d2a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a610e440bb25888eb071ce44a470fef"><td class="memItemLeft" align="right" valign="top"><a id="a2a610e440bb25888eb071ce44a470fef"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>startswith</b> (<a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt; <a class="el" href="classwpi_1_1StringRef.html">StringRef</a> &gt; match) const</td></tr>
-<tr class="separator:a2a610e440bb25888eb071ce44a470fef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff10d3ac5083a0c2f282f281a10a00ac"><td class="memItemLeft" align="right" valign="top"><a id="aff10d3ac5083a0c2f282f281a10a00ac"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>startswith</b> (<a class="el" href="classwpi_1_1StringRef.html">StringRef</a> match) const</td></tr>
-<tr class="separator:aff10d3ac5083a0c2f282f281a10a00ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3e8a08df00477c9f61b3a9d76ec9c5c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1HttpPath.html#aa3e8a08df00477c9f61b3a9d76ec9c5c">startswith</a> (size_t start, std::initializer_list&lt; <a class="el" href="classwpi_1_1StringRef.html">StringRef</a> &gt; match) const</td></tr>
-<tr class="memdesc:aa3e8a08df00477c9f61b3a9d76ec9c5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the elements of the path starting at the "start" element match the provided match list.  <a href="classwpi_1_1HttpPath.html#aa3e8a08df00477c9f61b3a9d76ec9c5c">More...</a><br /></td></tr>
-<tr class="separator:aa3e8a08df00477c9f61b3a9d76ec9c5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad724850ec1709ca53d35517d69a32792"><td class="memItemLeft" align="right" valign="top"><a id="ad724850ec1709ca53d35517d69a32792"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>startswith</b> (size_t start, <a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt; <a class="el" href="classwpi_1_1StringRef.html">StringRef</a> &gt; match) const</td></tr>
-<tr class="separator:ad724850ec1709ca53d35517d69a32792"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2900177478cc372b2682d11becdfc377"><td class="memItemLeft" align="right" valign="top"><a id="a2900177478cc372b2682d11becdfc377"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>startswith</b> (size_t start, <a class="el" href="classwpi_1_1StringRef.html">StringRef</a> match) const</td></tr>
-<tr class="separator:a2900177478cc372b2682d11becdfc377"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e894f06a7c783b718d2024cdfe071c6"><td class="memItemLeft" align="right" valign="top"><a id="a0e894f06a7c783b718d2024cdfe071c6"></a>
-<a class="el" href="classwpi_1_1StringRef.html">StringRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1HttpPath.html#a0e894f06a7c783b718d2024cdfe071c6">operator[]</a> (size_t n) const</td></tr>
-<tr class="memdesc:a0e894f06a7c783b718d2024cdfe071c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a single element of the path. <br /></td></tr>
-<tr class="separator:a0e894f06a7c783b718d2024cdfe071c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae345c403543bfa5e9804ed7a458e327d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1HttpPath.html#ae345c403543bfa5e9804ed7a458e327d">equals</a> (std::initializer_list&lt; std::string_view &gt; match) const</td></tr>
+<tr class="memdesc:ae345c403543bfa5e9804ed7a458e327d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the path exactly matches the provided match list.  <a href="classwpi_1_1HttpPath.html#ae345c403543bfa5e9804ed7a458e327d">More...</a><br /></td></tr>
+<tr class="separator:ae345c403543bfa5e9804ed7a458e327d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75a4f890415aae068954980607a96429"><td class="memItemLeft" align="right" valign="top"><a id="a75a4f890415aae068954980607a96429"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>equals</b> (<a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt; std::string_view &gt; match) const</td></tr>
+<tr class="separator:a75a4f890415aae068954980607a96429"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a224a674d09ec03ae82a71e47b32abfb8"><td class="memItemLeft" align="right" valign="top"><a id="a224a674d09ec03ae82a71e47b32abfb8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>equals</b> (std::string_view match) const</td></tr>
+<tr class="separator:a224a674d09ec03ae82a71e47b32abfb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d9b6b5555081b8aee6b76c34d8c1b0f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1HttpPath.html#a4d9b6b5555081b8aee6b76c34d8c1b0f">equals</a> (size_t start, std::initializer_list&lt; std::string_view &gt; match) const</td></tr>
+<tr class="memdesc:a4d9b6b5555081b8aee6b76c34d8c1b0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the elements of the path starting at the "start" element match the provided match list, and there are no additional elements.  <a href="classwpi_1_1HttpPath.html#a4d9b6b5555081b8aee6b76c34d8c1b0f">More...</a><br /></td></tr>
+<tr class="separator:a4d9b6b5555081b8aee6b76c34d8c1b0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca8971748a081165ae879453a3440913"><td class="memItemLeft" align="right" valign="top"><a id="aca8971748a081165ae879453a3440913"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>equals</b> (size_t start, <a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt; std::string_view &gt; match) const</td></tr>
+<tr class="separator:aca8971748a081165ae879453a3440913"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa892a07674f36de5b94aa8c39b446243"><td class="memItemLeft" align="right" valign="top"><a id="aa892a07674f36de5b94aa8c39b446243"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>equals</b> (size_t start, std::string_view match) const</td></tr>
+<tr class="separator:aa892a07674f36de5b94aa8c39b446243"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08315a7e25cdc7044d6415ef7ca2a8e2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1HttpPath.html#a08315a7e25cdc7044d6415ef7ca2a8e2">startswith</a> (std::initializer_list&lt; std::string_view &gt; match) const</td></tr>
+<tr class="memdesc:a08315a7e25cdc7044d6415ef7ca2a8e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the first elements of the path match the provided match list.  <a href="classwpi_1_1HttpPath.html#a08315a7e25cdc7044d6415ef7ca2a8e2">More...</a><br /></td></tr>
+<tr class="separator:a08315a7e25cdc7044d6415ef7ca2a8e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a111f7c0391d8e7852f6cddcf2213c027"><td class="memItemLeft" align="right" valign="top"><a id="a111f7c0391d8e7852f6cddcf2213c027"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>startswith</b> (<a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt; std::string_view &gt; match) const</td></tr>
+<tr class="separator:a111f7c0391d8e7852f6cddcf2213c027"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a2cfec6dbfe2e933aa3dfae0a7fa64b"><td class="memItemLeft" align="right" valign="top"><a id="a5a2cfec6dbfe2e933aa3dfae0a7fa64b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>startswith</b> (std::string_view match) const</td></tr>
+<tr class="separator:a5a2cfec6dbfe2e933aa3dfae0a7fa64b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a888bedc4d37836724e90337acf9054b2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1HttpPath.html#a888bedc4d37836724e90337acf9054b2">startswith</a> (size_t start, std::initializer_list&lt; std::string_view &gt; match) const</td></tr>
+<tr class="memdesc:a888bedc4d37836724e90337acf9054b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the elements of the path starting at the "start" element match the provided match list.  <a href="classwpi_1_1HttpPath.html#a888bedc4d37836724e90337acf9054b2">More...</a><br /></td></tr>
+<tr class="separator:a888bedc4d37836724e90337acf9054b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4699ffec59e7dd667889a374dec63237"><td class="memItemLeft" align="right" valign="top"><a id="a4699ffec59e7dd667889a374dec63237"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>startswith</b> (size_t start, <a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt; std::string_view &gt; match) const</td></tr>
+<tr class="separator:a4699ffec59e7dd667889a374dec63237"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22e4ef7a514b09c96b499b41041bcbf1"><td class="memItemLeft" align="right" valign="top"><a id="a22e4ef7a514b09c96b499b41041bcbf1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>startswith</b> (size_t start, std::string_view match) const</td></tr>
+<tr class="separator:a22e4ef7a514b09c96b499b41041bcbf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeec1630772c36f03200fb3b9f45b0294"><td class="memItemLeft" align="right" valign="top"><a id="aeec1630772c36f03200fb3b9f45b0294"></a>
+std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1HttpPath.html#aeec1630772c36f03200fb3b9f45b0294">operator[]</a> (size_t n) const</td></tr>
+<tr class="memdesc:aeec1630772c36f03200fb3b9f45b0294"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a single element of the path. <br /></td></tr>
+<tr class="separator:aeec1630772c36f03200fb3b9f45b0294"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e2062789022ff3c8bc5a63df30979cf"><td class="memItemLeft" align="right" valign="top"><a id="a1e2062789022ff3c8bc5a63df30979cf"></a>
 <a class="el" href="classwpi_1_1HttpPathRef.html">HttpPathRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1HttpPath.html#a1e2062789022ff3c8bc5a63df30979cf">drop_front</a> (size_t n) const</td></tr>
 <tr class="memdesc:a1e2062789022ff3c8bc5a63df30979cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a path reference with the first N elements of the path removed. <br /></td></tr>
@@ -179,8 +179,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>startswith</b> (size_
 </ul>
 <p>All path elements are unescaped. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a4fd2918d26303862d64feeff8054dfe1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4fd2918d26303862d64feeff8054dfe1">&#9670;&nbsp;</a></span>HttpPath()</h2>
+<a id="ad9b5e17e02ddda08b79bdb724f0cc313"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9b5e17e02ddda08b79bdb724f0cc313">&#9670;&nbsp;</a></span>HttpPath()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -191,7 +191,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>startswith</b> (size_
         <tr>
           <td class="memname">wpi::HttpPath::HttpPath </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1StringRef.html">StringRef</a>&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>path</em></td><td>)</td>
           <td></td>
         </tr>
@@ -209,8 +209,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>startswith</b> (size_
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a71b940b7b35545dc42e6ff5054294b32"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a71b940b7b35545dc42e6ff5054294b32">&#9670;&nbsp;</a></span>equals() <span class="overload">[1/2]</span></h2>
+<a id="a4d9b6b5555081b8aee6b76c34d8c1b0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d9b6b5555081b8aee6b76c34d8c1b0f">&#9670;&nbsp;</a></span>equals() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -227,7 +227,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>startswith</b> (size_
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::initializer_list&lt; <a class="el" href="classwpi_1_1StringRef.html">StringRef</a> &gt;&#160;</td>
+          <td class="paramtype">std::initializer_list&lt; std::string_view &gt;&#160;</td>
           <td class="paramname"><em>match</em>&#160;</td>
         </tr>
         <tr>
@@ -255,8 +255,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>startswith</b> (size_
 
 </div>
 </div>
-<a id="a216b0632bb453d6249b56c54721d12f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a216b0632bb453d6249b56c54721d12f3">&#9670;&nbsp;</a></span>equals() <span class="overload">[2/2]</span></h2>
+<a id="ae345c403543bfa5e9804ed7a458e327d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae345c403543bfa5e9804ed7a458e327d">&#9670;&nbsp;</a></span>equals() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -267,7 +267,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>startswith</b> (size_
         <tr>
           <td class="memname">bool wpi::HttpPath::equals </td>
           <td>(</td>
-          <td class="paramtype">std::initializer_list&lt; <a class="el" href="classwpi_1_1StringRef.html">StringRef</a> &gt;&#160;</td>
+          <td class="paramtype">std::initializer_list&lt; std::string_view &gt;&#160;</td>
           <td class="paramname"><em>match</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -290,8 +290,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>startswith</b> (size_
 
 </div>
 </div>
-<a id="aa3e8a08df00477c9f61b3a9d76ec9c5c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3e8a08df00477c9f61b3a9d76ec9c5c">&#9670;&nbsp;</a></span>startswith() <span class="overload">[1/2]</span></h2>
+<a id="a888bedc4d37836724e90337acf9054b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a888bedc4d37836724e90337acf9054b2">&#9670;&nbsp;</a></span>startswith() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -308,7 +308,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>startswith</b> (size_
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::initializer_list&lt; <a class="el" href="classwpi_1_1StringRef.html">StringRef</a> &gt;&#160;</td>
+          <td class="paramtype">std::initializer_list&lt; std::string_view &gt;&#160;</td>
           <td class="paramname"><em>match</em>&#160;</td>
         </tr>
         <tr>
@@ -337,8 +337,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>startswith</b> (size_
 
 </div>
 </div>
-<a id="ad66956504b43f6bc5f59814b67f1d2a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad66956504b43f6bc5f59814b67f1d2a9">&#9670;&nbsp;</a></span>startswith() <span class="overload">[2/2]</span></h2>
+<a id="a08315a7e25cdc7044d6415ef7ca2a8e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08315a7e25cdc7044d6415ef7ca2a8e2">&#9670;&nbsp;</a></span>startswith() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -349,7 +349,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>startswith</b> (size_
         <tr>
           <td class="memname">bool wpi::HttpPath::startswith </td>
           <td>(</td>
-          <td class="paramtype">std::initializer_list&lt; <a class="el" href="classwpi_1_1StringRef.html">StringRef</a> &gt;&#160;</td>
+          <td class="paramtype">std::initializer_list&lt; std::string_view &gt;&#160;</td>
           <td class="paramname"><em>match</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -383,7 +383,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>startswith</b> (size_
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>wpi</b></li><li class="navelem"><a class="el" href="classwpi_1_1HttpPath.html">HttpPath</a></li>
-    <li class="footer">Generated on Sun Jun 6 2021 22:52:17 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 6 2021 23:16:04 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-94-g4f1cecb</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-95-gb2c3b2d</span>
    </div>
   </td>
  </tr>
@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('WidgetType_8h_source.html',''); initRe
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;wpi/StringRef.h&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;string_view&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>frc {</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
@@ -109,7 +109,7 @@ $(document).ready(function(){initNavTree('WidgetType_8h_source.html',''); initRe
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;      : m_widgetName(widgetName) {}</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  ~<a class="code" href="classfrc_1_1WidgetType.html">WidgetType</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classfrc_1_1WidgetType.html#a64902e352fd7d09565d889b85eea1fbe">   28</a></span>&#160;  <a class="code" href="classwpi_1_1StringRef.html">wpi::StringRef</a> <a class="code" href="classfrc_1_1WidgetType.html#a64902e352fd7d09565d889b85eea1fbe">GetWidgetName</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classfrc_1_1WidgetType.html#aaf822f67627974400d660c03adc2a57f">   28</a></span>&#160;  std::string_view <a class="code" href="classfrc_1_1WidgetType.html#aaf822f67627974400d660c03adc2a57f">GetWidgetName</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">char</span>* m_widgetName;</div>
@@ -118,14 +118,13 @@ $(document).ready(function(){initNavTree('WidgetType_8h_source.html',''); initRe
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}  <span class="comment">// namespace frc</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassfrc_1_1WidgetType_html_a64902e352fd7d09565d889b85eea1fbe"><div class="ttname"><a href="classfrc_1_1WidgetType.html#a64902e352fd7d09565d889b85eea1fbe">frc::WidgetType::GetWidgetName</a></div><div class="ttdeci">wpi::StringRef GetWidgetName() const</div><div class="ttdoc">Gets the string type of the widget as defined by that widget in Shuffleboard.</div></div>
-<div class="ttc" id="aclasswpi_1_1StringRef_html"><div class="ttname"><a href="classwpi_1_1StringRef.html">wpi::StringRef</a></div><div class="ttdoc">StringRef - Represent a constant reference to a string, i.e.</div><div class="ttdef"><b>Definition:</b> StringRef.h:50</div></div>
+<div class="ttc" id="aclassfrc_1_1WidgetType_html_aaf822f67627974400d660c03adc2a57f"><div class="ttname"><a href="classfrc_1_1WidgetType.html#aaf822f67627974400d660c03adc2a57f">frc::WidgetType::GetWidgetName</a></div><div class="ttdeci">std::string_view GetWidgetName() const</div><div class="ttdoc">Gets the string type of the widget as defined by that widget in Shuffleboard.</div></div>
 <div class="ttc" id="aclassfrc_1_1WidgetType_html"><div class="ttname"><a href="classfrc_1_1WidgetType.html">frc::WidgetType</a></div><div class="ttdoc">Represents the type of a widget in Shuffleboard.</div><div class="ttdef"><b>Definition:</b> WidgetType.h:18</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_dca1c19c73302e87d1cbe8eae641dd78.html">shuffleboard</a></li><li class="navelem"><b>WidgetType.h</b></li>
-    <li class="footer">Generated on Sun Jun 6 2021 22:52:13 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 6 2021 23:15:59 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

@@ -1,14 +1,5 @@
 var NAVTREEINDEX10 =
 {
-"classfrc_1_1ElevatorFeedforward.html#aba5ec71554befafc8dd9c8560eecb463":[5,0,5,60,14],
-"classfrc_1_1ElevatorFeedforward.html#abcf0f05092f91475ef7963f323289ffe":[5,0,5,60,0],
-"classfrc_1_1ElevatorFeedforward.html#acf276a5c244c84580a670a9bee1df4a0":[5,0,5,60,2],
-"classfrc_1_1ElevatorFeedforward.html#ae39e57aaa304d49985853353c39c6380":[5,0,5,60,12],
-"classfrc_1_1ElevatorFeedforward.html#aef0703e075b22b2196c67adf91cf6896":[5,0,5,60,9],
-"classfrc_1_1ElevatorFeedforward.html#afcd91ca93ccb0b7ffc09d1f0425f9be6":[5,0,5,60,4],
-"classfrc_1_1EllipticalRegionConstraint.html":[5,0,5,61],
-"classfrc_1_1EllipticalRegionConstraint.html#a154ba1481071d00b38b6213cf7e3e65b":[5,0,5,61,3],
-"classfrc_1_1EllipticalRegionConstraint.html#a1ea5cb6935d6e3eabf77b03523aa506f":[5,0,5,61,1],
 "classfrc_1_1EllipticalRegionConstraint.html#a9d571583bbca975b90ab69fcc91b090e":[5,0,5,61,0],
 "classfrc_1_1EllipticalRegionConstraint.html#ad5ff7d30b1d6d3af2cf3000704bf09fc":[5,0,5,61,2],
 "classfrc_1_1Encoder.html":[5,0,5,62],
@@ -249,5 +240,14 @@ var NAVTREEINDEX10 =
 "classfrc_1_1Joystick.html#a900dc7eeab035c4151fc5ebc88006487":[5,0,5,75,33],
 "classfrc_1_1Joystick.html#a93df8f506da8175b8b26070d063655ba":[5,0,5,75,28],
 "classfrc_1_1Joystick.html#a986446219fb0dc5bdde10c1f37b97513":[5,0,5,75,20],
-"classfrc_1_1Joystick.html#aa1736feefead176e8843f463608e9a7c":[5,0,5,75,6]
+"classfrc_1_1Joystick.html#aa1736feefead176e8843f463608e9a7c":[5,0,5,75,6],
+"classfrc_1_1Joystick.html#aaa3652f52c28d71b2a372a79b74bf35b":[5,0,5,75,4],
+"classfrc_1_1Joystick.html#aad454d6d34e1a45ddd49f56b4ff835e4":[5,0,5,75,9],
+"classfrc_1_1Joystick.html#ab9e402a6429034621c81584deaa9dc8e":[5,0,5,75,29],
+"classfrc_1_1Joystick.html#abd7d1284c86e3cc2098e9749acc8fd0e":[5,0,5,75,0],
+"classfrc_1_1Joystick.html#abd7d1284c86e3cc2098e9749acc8fd0ea04700231aa1b893d075901700ddec18a":[5,0,5,75,0,4],
+"classfrc_1_1Joystick.html#abd7d1284c86e3cc2098e9749acc8fd0ea1a1f97d1d153ddb4b7d9e31e6efd6b96":[5,0,5,75,0,3],
+"classfrc_1_1Joystick.html#abd7d1284c86e3cc2098e9749acc8fd0eac010f9bc0a9522e1086e59e1321a99b9":[5,0,5,75,0,0],
+"classfrc_1_1Joystick.html#abd7d1284c86e3cc2098e9749acc8fd0eacb2930b39e6be338c6b24ac1547e493b":[5,0,5,75,0,1],
+"classfrc_1_1Joystick.html#abd7d1284c86e3cc2098e9749acc8fd0ead19cc9cca265476803d746009df7bb03":[5,0,5,75,0,2]
 };

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-94-g4f1cecb</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-95-gb2c3b2d</span>
    </div>
   </td>
  </tr>
@@ -110,12 +110,12 @@ Inheritance diagram for cs::RawCvSource:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3d989b983debfd388a4e2430fa967b99"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcs_1_1RawCvSource.html#a3d989b983debfd388a4e2430fa967b99">RawCvSource</a> (const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;name, const <a class="el" href="structcs_1_1VideoMode.html">VideoMode</a> &amp;mode)</td></tr>
-<tr class="memdesc:a3d989b983debfd388a4e2430fa967b99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a Raw OpenCV source.  <a href="classcs_1_1RawCvSource.html#a3d989b983debfd388a4e2430fa967b99">More...</a><br /></td></tr>
-<tr class="separator:a3d989b983debfd388a4e2430fa967b99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e25c4fc410178bc6ccb4e3f638fc1f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcs_1_1RawCvSource.html#a3e25c4fc410178bc6ccb4e3f638fc1f2">RawCvSource</a> (const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;name, VideoMode::PixelFormat pixelFormat, int width, int height, int fps)</td></tr>
-<tr class="memdesc:a3e25c4fc410178bc6ccb4e3f638fc1f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a Raw OpenCV source.  <a href="classcs_1_1RawCvSource.html#a3e25c4fc410178bc6ccb4e3f638fc1f2">More...</a><br /></td></tr>
-<tr class="separator:a3e25c4fc410178bc6ccb4e3f638fc1f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b7f673ca6f534ff3345da1cf3e72965"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcs_1_1RawCvSource.html#a7b7f673ca6f534ff3345da1cf3e72965">RawCvSource</a> (std::string_view name, const <a class="el" href="structcs_1_1VideoMode.html">VideoMode</a> &amp;mode)</td></tr>
+<tr class="memdesc:a7b7f673ca6f534ff3345da1cf3e72965"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a Raw OpenCV source.  <a href="classcs_1_1RawCvSource.html#a7b7f673ca6f534ff3345da1cf3e72965">More...</a><br /></td></tr>
+<tr class="separator:a7b7f673ca6f534ff3345da1cf3e72965"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a144219f21b38a8084eabe0b8c92b8079"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcs_1_1RawCvSource.html#a144219f21b38a8084eabe0b8c92b8079">RawCvSource</a> (std::string_view name, VideoMode::PixelFormat pixelFormat, int width, int height, int fps)</td></tr>
+<tr class="memdesc:a144219f21b38a8084eabe0b8c92b8079"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a Raw OpenCV source.  <a href="classcs_1_1RawCvSource.html#a144219f21b38a8084eabe0b8c92b8079">More...</a><br /></td></tr>
+<tr class="separator:a144219f21b38a8084eabe0b8c92b8079"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c2e08e1006cdcee282de2c3f1ce7ebd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcs_1_1RawCvSource.html#a2c2e08e1006cdcee282de2c3f1ce7ebd">PutFrame</a> (cv::Mat &amp;image)</td></tr>
 <tr class="memdesc:a2c2e08e1006cdcee282de2c3f1ce7ebd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Put an OpenCV image and notify sinks.  <a href="classcs_1_1RawCvSource.html#a2c2e08e1006cdcee282de2c3f1ce7ebd">More...</a><br /></td></tr>
 <tr class="separator:a2c2e08e1006cdcee282de2c3f1ce7ebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -125,8 +125,8 @@ Public Member Functions</h2></td></tr>
 <p>If you are using the WPILib OpenCV builds, do not use this, and instead include "cscore_cv.h" to get a more performant version.</p>
 <p>This is not dependent on any opencv binary ABI, and can be used with versions of OpenCV that are not 3. If using OpenCV 3, use CvSource. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a3d989b983debfd388a4e2430fa967b99"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d989b983debfd388a4e2430fa967b99">&#9670;&nbsp;</a></span>RawCvSource() <span class="overload">[1/2]</span></h2>
+<a id="a7b7f673ca6f534ff3345da1cf3e72965"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b7f673ca6f534ff3345da1cf3e72965">&#9670;&nbsp;</a></span>RawCvSource() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -137,7 +137,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">cs::RawCvSource::RawCvSource </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
@@ -170,8 +170,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a3e25c4fc410178bc6ccb4e3f638fc1f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e25c4fc410178bc6ccb4e3f638fc1f2">&#9670;&nbsp;</a></span>RawCvSource() <span class="overload">[2/2]</span></h2>
+<a id="a144219f21b38a8084eabe0b8c92b8079"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a144219f21b38a8084eabe0b8c92b8079">&#9670;&nbsp;</a></span>RawCvSource() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -182,7 +182,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">cs::RawCvSource::RawCvSource </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
@@ -281,7 +281,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacecs.html">cs</a></li><li class="navelem"><a class="el" href="classcs_1_1RawCvSource.html">RawCvSource</a></li>
-    <li class="footer">Generated on Sun Jun 6 2021 22:52:15 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 6 2021 23:16:02 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-94-g4f1cecb</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-95-gb2c3b2d</span>
    </div>
   </td>
  </tr>
@@ -114,9 +114,9 @@ Inheritance diagram for wpi::detail::parse_error:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:abbd722a82a08434f130713092e8285cb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classwpi_1_1detail_1_1parse__error.html">parse_error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1detail_1_1parse__error.html#abbd722a82a08434f130713092e8285cb">create</a> (int id_, std::size_t byte_, const <a class="el" href="classwpi_1_1Twine.html">Twine</a> &amp;what_arg)</td></tr>
-<tr class="memdesc:abbd722a82a08434f130713092e8285cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a parse error exception  <a href="classwpi_1_1detail_1_1parse__error.html#abbd722a82a08434f130713092e8285cb">More...</a><br /></td></tr>
-<tr class="separator:abbd722a82a08434f130713092e8285cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f933ba9102653fb6ef2776de5a61952"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classwpi_1_1detail_1_1parse__error.html">parse_error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1detail_1_1parse__error.html#a0f933ba9102653fb6ef2776de5a61952">create</a> (int id_, std::size_t byte_, std::string_view what_arg)</td></tr>
+<tr class="memdesc:a0f933ba9102653fb6ef2776de5a61952"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a parse error exception  <a href="classwpi_1_1detail_1_1parse__error.html#a0f933ba9102653fb6ef2776de5a61952">More...</a><br /></td></tr>
+<tr class="separator:a0f933ba9102653fb6ef2776de5a61952"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -137,9 +137,9 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memdesc:a796612b2e2ba258c5dcd9118eec4941f inherit pub_methods_classwpi_1_1detail_1_1exception"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the explanatory string <br /></td></tr>
 <tr class="separator:a796612b2e2ba258c5dcd9118eec4941f inherit pub_methods_classwpi_1_1detail_1_1exception"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classwpi_1_1detail_1_1exception"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classwpi_1_1detail_1_1exception')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classwpi_1_1detail_1_1exception.html">wpi::detail::exception</a></td></tr>
-<tr class="memitem:a04a9e5b41bb49504027edbad3ef3895d inherit pro_methods_classwpi_1_1detail_1_1exception"><td class="memItemLeft" align="right" valign="top"><a id="a04a9e5b41bb49504027edbad3ef3895d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>exception</b> (int id_, const <a class="el" href="classwpi_1_1Twine.html">Twine</a> &amp;what_arg)</td></tr>
-<tr class="separator:a04a9e5b41bb49504027edbad3ef3895d inherit pro_methods_classwpi_1_1detail_1_1exception"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43ffe36cef21dcb2c10521b3e69b36d1 inherit pro_methods_classwpi_1_1detail_1_1exception"><td class="memItemLeft" align="right" valign="top"><a id="a43ffe36cef21dcb2c10521b3e69b36d1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>exception</b> (int id_, std::string_view what_arg)</td></tr>
+<tr class="separator:a43ffe36cef21dcb2c10521b3e69b36d1 inherit pro_methods_classwpi_1_1detail_1_1exception"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>exception indicating a parse error </p>
@@ -187,8 +187,8 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <a class="el" href="classwpi_1_1detail_1_1other__error.html">other_error</a> for exceptions indicating other library errors</dd></dl>
 <dl class="section since"><dt>Since</dt><dd>version 3.0.0 </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="abbd722a82a08434f130713092e8285cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abbd722a82a08434f130713092e8285cb">&#9670;&nbsp;</a></span>create()</h2>
+<a id="a0f933ba9102653fb6ef2776de5a61952"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f933ba9102653fb6ef2776de5a61952">&#9670;&nbsp;</a></span>create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -211,7 +211,7 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1Twine.html">Twine</a> &amp;&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>what_arg</em>&#160;</td>
         </tr>
         <tr>
@@ -268,7 +268,7 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>wpi</b></li><li class="navelem"><a class="el" href="namespacewpi_1_1detail.html">detail</a></li><li class="navelem"><a class="el" href="classwpi_1_1detail_1_1parse__error.html">parse_error</a></li>
-    <li class="footer">Generated on Sun Jun 6 2021 22:52:18 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 6 2021 23:16:05 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

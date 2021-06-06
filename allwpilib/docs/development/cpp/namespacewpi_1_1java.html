@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-94-g4f1cecb</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-95-gb2c3b2d</span>
    </div>
   </td>
  </tr>
@@ -125,12 +125,12 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aeffe7ef1e35009faa6e883d9383ee1e9"><td class="memItemLeft" align="right" valign="top"><a id="aeffe7ef1e35009faa6e883d9383ee1e9"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetJavaStackTrace</b> (JNIEnv *env, std::string *func=nullptr, <a class="el" href="classwpi_1_1StringRef.html">StringRef</a> excludeFuncPrefix=<a class="el" href="classwpi_1_1StringRef.html">StringRef</a>())</td></tr>
-<tr class="separator:aeffe7ef1e35009faa6e883d9383ee1e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76ea6986c85cd0d709dd20b418feff31"><td class="memItemLeft" align="right" valign="top"><a id="a76ea6986c85cd0d709dd20b418feff31"></a>
-jstring&#160;</td><td class="memItemRight" valign="bottom"><b>MakeJString</b> (JNIEnv *env, <a class="el" href="classwpi_1_1StringRef.html">StringRef</a> str)</td></tr>
-<tr class="separator:a76ea6986c85cd0d709dd20b418feff31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f1058b45861b4abda3c9a43fa80e0fc"><td class="memItemLeft" align="right" valign="top"><a id="a4f1058b45861b4abda3c9a43fa80e0fc"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetJavaStackTrace</b> (JNIEnv *env, std::string *func=nullptr, std::string_view excludeFuncPrefix={})</td></tr>
+<tr class="separator:a4f1058b45861b4abda3c9a43fa80e0fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03d617c196aeee2778c8b22699dd4acb"><td class="memItemLeft" align="right" valign="top"><a id="a03d617c196aeee2778c8b22699dd4acb"></a>
+jstring&#160;</td><td class="memItemRight" valign="bottom"><b>MakeJString</b> (JNIEnv *env, std::string_view str)</td></tr>
+<tr class="separator:a03d617c196aeee2778c8b22699dd4acb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1d470f7fc7df5ff24a6b0c002d12d94"><td class="memTemplParams" colspan="2"><a id="aa1d470f7fc7df5ff24a6b0c002d12d94"></a>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:aa1d470f7fc7df5ff24a6b0c002d12d94"><td class="memTemplItemLeft" align="right" valign="top">jintArray&#160;</td><td class="memTemplItemRight" valign="bottom"><b>MakeJIntArray</b> (JNIEnv *env, <a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt; T &gt; arr)</td></tr>
@@ -143,9 +143,9 @@ template&lt;typename T &gt; </td></tr>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:afd8252e0c11698f82fa6a139a9b69268"><td class="memTemplItemLeft" align="right" valign="top">jintArray&#160;</td><td class="memTemplItemRight" valign="bottom"><b>MakeJIntArray</b> (JNIEnv *env, const std::vector&lt; T &gt; &amp;arr)</td></tr>
 <tr class="separator:afd8252e0c11698f82fa6a139a9b69268"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33aab67a53ceb58fdea7c29f6141c506"><td class="memItemLeft" align="right" valign="top"><a id="a33aab67a53ceb58fdea7c29f6141c506"></a>
-jbyteArray&#160;</td><td class="memItemRight" valign="bottom"><b>MakeJByteArray</b> (JNIEnv *env, <a class="el" href="classwpi_1_1StringRef.html">StringRef</a> str)</td></tr>
-<tr class="separator:a33aab67a53ceb58fdea7c29f6141c506"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca886121bf517a09913c060d6fe78db9"><td class="memItemLeft" align="right" valign="top"><a id="aca886121bf517a09913c060d6fe78db9"></a>
+jbyteArray&#160;</td><td class="memItemRight" valign="bottom"><b>MakeJByteArray</b> (JNIEnv *env, std::string_view str)</td></tr>
+<tr class="separator:aca886121bf517a09913c060d6fe78db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85848611456c36bc12387786e158a1a3"><td class="memItemLeft" align="right" valign="top"><a id="a85848611456c36bc12387786e158a1a3"></a>
 jbooleanArray&#160;</td><td class="memItemRight" valign="bottom"><b>MakeJBooleanArray</b> (JNIEnv *env, <a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt; int &gt; arr)</td></tr>
 <tr class="separator:a85848611456c36bc12387786e158a1a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -155,9 +155,9 @@ jbooleanArray&#160;</td><td class="memItemRight" valign="bottom"><b>MakeJBoolean
 <tr class="memitem:ac89bc970e991222c291594a1a0ed3a0d"><td class="memItemLeft" align="right" valign="top"><a id="ac89bc970e991222c291594a1a0ed3a0d"></a>
 jobjectArray&#160;</td><td class="memItemRight" valign="bottom"><b>MakeJStringArray</b> (JNIEnv *env, <a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt; std::string &gt; arr)</td></tr>
 <tr class="separator:ac89bc970e991222c291594a1a0ed3a0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b463934e41d93e3dd6fab5f06ef646c"><td class="memItemLeft" align="right" valign="top"><a id="a3b463934e41d93e3dd6fab5f06ef646c"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetJavaStackTrace</b> (JNIEnv *env, <a class="el" href="classwpi_1_1StringRef.html">StringRef</a> skipPrefix)</td></tr>
-<tr class="separator:a3b463934e41d93e3dd6fab5f06ef646c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cbe25ac3d8be6df498bc791b999f143"><td class="memItemLeft" align="right" valign="top"><a id="a6cbe25ac3d8be6df498bc791b999f143"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetJavaStackTrace</b> (JNIEnv *env, std::string_view skipPrefix)</td></tr>
+<tr class="separator:a6cbe25ac3d8be6df498bc791b999f143"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Java Native Interface (JNI) utility functions. </p>
@@ -167,7 +167,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetJavaStackTr
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>wpi</b></li><li class="navelem"><a class="el" href="namespacewpi_1_1java.html">java</a></li>
-    <li class="footer">Generated on Sun Jun 6 2021 22:52:18 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 6 2021 23:16:05 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

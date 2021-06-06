@@ -1,7 +1,7 @@
 var classnt_1_1LogMessage =
 [
     [ "LogMessage", "classnt_1_1LogMessage.html#a80edb2b75f1924d7c68e9fd0efd10c78", null ],
-    [ "LogMessage", "classnt_1_1LogMessage.html#a4b5593a9405e66d5016f1a5eb1507580", null ],
+    [ "LogMessage", "classnt_1_1LogMessage.html#ab1650d97328a9bb8df1e09f58bdacd48", null ],
     [ "swap", "classnt_1_1LogMessage.html#a796eccb62d616bbb66106f3cc62bd843", null ],
     [ "filename", "classnt_1_1LogMessage.html#aa04b8267dc0f36b64017b809a07f4da1", null ],
     [ "level", "classnt_1_1LogMessage.html#a8ab3099aaa618a873dbbd1e7bb6b7be2", null ],

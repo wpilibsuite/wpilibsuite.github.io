@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-94-g4f1cecb</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-95-gb2c3b2d</span>
    </div>
   </td>
  </tr>
@@ -121,9 +121,16 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>set_min_level</b> (un
 <tr class="memitem:a90464d6b6ae54ed09f2e35b732e44a2b"><td class="memItemLeft" align="right" valign="top"><a id="a90464d6b6ae54ed09f2e35b732e44a2b"></a>
 unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>min_level</b> () const</td></tr>
 <tr class="separator:a90464d6b6ae54ed09f2e35b732e44a2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac889584b40ed5e0043b9096e8d278a2e"><td class="memItemLeft" align="right" valign="top"><a id="ac889584b40ed5e0043b9096e8d278a2e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Log</b> (unsigned int level, const char *file, unsigned int line, const char *msg)</td></tr>
-<tr class="separator:ac889584b40ed5e0043b9096e8d278a2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc5f5bc0e6389ac22dd10b679616800f"><td class="memItemLeft" align="right" valign="top"><a id="acc5f5bc0e6389ac22dd10b679616800f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DoLog</b> (unsigned int level, const char *file, unsigned int line, const char *msg)</td></tr>
+<tr class="separator:acc5f5bc0e6389ac22dd10b679616800f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a359e5a5bad7a2e4f4fa0a5dfc2222abc"><td class="memItemLeft" align="right" valign="top"><a id="a359e5a5bad7a2e4f4fa0a5dfc2222abc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>LogV</b> (unsigned int level, const char *file, unsigned int line, fmt::string_view format, fmt::format_args args)</td></tr>
+<tr class="separator:a359e5a5bad7a2e4f4fa0a5dfc2222abc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94a0de442976029ceb334a39e2eeaa3e"><td class="memTemplParams" colspan="2"><a id="a94a0de442976029ceb334a39e2eeaa3e"></a>
+template&lt;typename S , typename... Args&gt; </td></tr>
+<tr class="memitem:a94a0de442976029ceb334a39e2eeaa3e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Log</b> (unsigned int level, const char *file, unsigned int line, const S &amp;format, Args &amp;&amp;... args)</td></tr>
+<tr class="separator:a94a0de442976029ceb334a39e2eeaa3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a730cd6a75f24e93ecf391ceea16d3807"><td class="memItemLeft" align="right" valign="top"><a id="a730cd6a75f24e93ecf391ceea16d3807"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasLogger</b> () const</td></tr>
 <tr class="separator:a730cd6a75f24e93ecf391ceea16d3807"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,7 +144,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasLogger</b> () cons
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>wpi</b></li><li class="navelem"><a class="el" href="classwpi_1_1Logger.html">Logger</a></li>
-    <li class="footer">Generated on Sun Jun 6 2021 22:52:17 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 6 2021 23:16:05 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

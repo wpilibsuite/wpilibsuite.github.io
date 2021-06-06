@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-94-g4f1cecb</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-95-gb2c3b2d</span>
    </div>
   </td>
  </tr>
@@ -113,9 +113,12 @@ Inheritance diagram for wpi::detail::invalid_iterator:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aa733dfba66d742395f8518496a90d3e0"><td class="memItemLeft" align="right" valign="top"><a id="aa733dfba66d742395f8518496a90d3e0"></a>
-static <a class="el" href="classwpi_1_1detail_1_1invalid__iterator.html">invalid_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>create</b> (int id_, const <a class="el" href="classwpi_1_1Twine.html">Twine</a> &amp;what_arg)</td></tr>
-<tr class="separator:aa733dfba66d742395f8518496a90d3e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09bd29961e75345a38bf1f3acaca4d9e"><td class="memItemLeft" align="right" valign="top"><a id="a09bd29961e75345a38bf1f3acaca4d9e"></a>
+static <a class="el" href="classwpi_1_1detail_1_1invalid__iterator.html">invalid_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>create</b> (int id_, std::string_view what_arg)</td></tr>
+<tr class="separator:a09bd29961e75345a38bf1f3acaca4d9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af12bd449a78d681a3d89c768a42fc1dc"><td class="memItemLeft" align="right" valign="top"><a id="af12bd449a78d681a3d89c768a42fc1dc"></a>
+static <a class="el" href="classwpi_1_1detail_1_1invalid__iterator.html">invalid_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>create</b> (int id_, std::string_view what_arg, std::string_view type_info)</td></tr>
+<tr class="separator:af12bd449a78d681a3d89c768a42fc1dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -130,9 +133,9 @@ const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 <tr class="memdesc:ac4fcb2e58a8f952c1eb5c0f82f285270 inherit pub_attribs_classwpi_1_1detail_1_1exception"><td class="mdescLeft">&#160;</td><td class="mdescRight">the id of the exception <br /></td></tr>
 <tr class="separator:ac4fcb2e58a8f952c1eb5c0f82f285270 inherit pub_attribs_classwpi_1_1detail_1_1exception"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classwpi_1_1detail_1_1exception"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classwpi_1_1detail_1_1exception')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classwpi_1_1detail_1_1exception.html">wpi::detail::exception</a></td></tr>
-<tr class="memitem:a04a9e5b41bb49504027edbad3ef3895d inherit pro_methods_classwpi_1_1detail_1_1exception"><td class="memItemLeft" align="right" valign="top"><a id="a04a9e5b41bb49504027edbad3ef3895d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>exception</b> (int id_, const <a class="el" href="classwpi_1_1Twine.html">Twine</a> &amp;what_arg)</td></tr>
-<tr class="separator:a04a9e5b41bb49504027edbad3ef3895d inherit pro_methods_classwpi_1_1detail_1_1exception"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43ffe36cef21dcb2c10521b3e69b36d1 inherit pro_methods_classwpi_1_1detail_1_1exception"><td class="memItemLeft" align="right" valign="top"><a id="a43ffe36cef21dcb2c10521b3e69b36d1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>exception</b> (int id_, std::string_view what_arg)</td></tr>
+<tr class="separator:a43ffe36cef21dcb2c10521b3e69b36d1 inherit pro_methods_classwpi_1_1detail_1_1exception"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>exception indicating errors with iterators </p>
@@ -190,7 +193,7 @@ const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>wpi</b></li><li class="navelem"><a class="el" href="namespacewpi_1_1detail.html">detail</a></li><li class="navelem"><a class="el" href="classwpi_1_1detail_1_1invalid__iterator.html">invalid_iterator</a></li>
-    <li class="footer">Generated on Sun Jun 6 2021 22:52:17 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 6 2021 23:16:05 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

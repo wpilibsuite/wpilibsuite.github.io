@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-94-g4f1cecb</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-95-gb2c3b2d</span>
    </div>
   </td>
  </tr>
@@ -111,11 +111,11 @@ $(document).ready(function(){initNavTree('DenseMapInfo_8h_source.html',''); init
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;wpi/ArrayRef.h&quot;</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;wpi/Hashing.h&quot;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;wpi/StringRef.h&quot;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;wpi/PointerLikeTypeTraits.h&quot;</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;cassert&gt;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;cstddef&gt;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;cstdint&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;wpi/PointerLikeTypeTraits.h&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;cassert&gt;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;cstddef&gt;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;cstdint&gt;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;string_view&gt;</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;utility&gt;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span>wpi {</div>
@@ -301,30 +301,30 @@ $(document).ready(function(){initNavTree('DenseMapInfo_8h_source.html',''); init
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  }</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;};</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160; </div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="comment">// Provide DenseMapInfo for StringRefs.</span></div>
-<div class="line"><a name="l00210"></a><span class="lineno"><a class="line" href="structwpi_1_1DenseMapInfo_3_01StringRef_01_4.html">  210</a></span>&#160;<span class="keyword">template</span> &lt;&gt; <span class="keyword">struct </span><a class="code" href="structwpi_1_1DenseMapInfo.html">DenseMapInfo</a>&lt;<a class="code" href="classwpi_1_1StringRef.html">StringRef</a>&gt; {</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  <span class="keyword">static</span> <span class="keyword">inline</span> <a class="code" href="classwpi_1_1StringRef.html">StringRef</a> getEmptyKey() {</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classwpi_1_1StringRef.html">StringRef</a>(<span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span><span class="keywordtype">char</span> *<span class="keyword">&gt;</span>(~<span class="keyword">static_cast&lt;</span>uintptr_t<span class="keyword">&gt;</span>(0)),</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="comment">// Provide DenseMapInfo for std::string_view.</span></div>
+<div class="line"><a name="l00210"></a><span class="lineno"><a class="line" href="structwpi_1_1DenseMapInfo_3_01std_1_1string__view_01_4.html">  210</a></span>&#160;<span class="keyword">template</span> &lt;&gt; <span class="keyword">struct </span><a class="code" href="structwpi_1_1DenseMapInfo.html">DenseMapInfo</a>&lt;std::<a class="code" href="classbasic__string__view.html">string_view</a>&gt; {</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  <span class="keyword">static</span> <span class="keyword">inline</span> std::string_view getEmptyKey() {</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <span class="keywordflow">return</span> std::string_view(<span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span><span class="keywordtype">char</span> *<span class="keyword">&gt;</span>(~<span class="keyword">static_cast&lt;</span>uintptr_t<span class="keyword">&gt;</span>(0)),</div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                     0);</div>
 <div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  }</div>
 <div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160; </div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  <span class="keyword">static</span> <span class="keyword">inline</span> <a class="code" href="classwpi_1_1StringRef.html">StringRef</a> getTombstoneKey() {</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classwpi_1_1StringRef.html">StringRef</a>(<span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span><span class="keywordtype">char</span> *<span class="keyword">&gt;</span>(~<span class="keyword">static_cast&lt;</span>uintptr_t<span class="keyword">&gt;</span>(1)),</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  <span class="keyword">static</span> <span class="keyword">inline</span> std::string_view getTombstoneKey() {</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <span class="keywordflow">return</span> std::string_view(<span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span><span class="keywordtype">char</span> *<span class="keyword">&gt;</span>(~<span class="keyword">static_cast&lt;</span>uintptr_t<span class="keyword">&gt;</span>(1)),</div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;                     0);</div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;  }</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160; </div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">unsigned</span> getHashValue(<a class="code" href="classwpi_1_1StringRef.html">StringRef</a> Val) {</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    assert(Val.<a class="code" href="classwpi_1_1StringRef.html#a3639987deb10240784a410a843c6df94">data</a>() != getEmptyKey().<a class="code" href="structdata.html">data</a>() &amp;&amp; <span class="stringliteral">&quot;Cannot hash the empty key!&quot;</span>);</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    assert(Val.<a class="code" href="classwpi_1_1StringRef.html#a3639987deb10240784a410a843c6df94">data</a>() != getTombstoneKey().<a class="code" href="structdata.html">data</a>() &amp;&amp;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">unsigned</span> getHashValue(std::string_view Val) {</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    assert(Val.data() != getEmptyKey().<a class="code" href="structdata.html">data</a>() &amp;&amp; <span class="stringliteral">&quot;Cannot hash the empty key!&quot;</span>);</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    assert(Val.data() != getTombstoneKey().<a class="code" href="structdata.html">data</a>() &amp;&amp;</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;           <span class="stringliteral">&quot;Cannot hash the tombstone key!&quot;</span>);</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <span class="keywordflow">return</span> (<span class="keywordtype">unsigned</span>)(hash_value(Val));</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  }</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160; </div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> isEqual(<a class="code" href="classwpi_1_1StringRef.html">StringRef</a> LHS, <a class="code" href="classwpi_1_1StringRef.html">StringRef</a> RHS) {</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <span class="keywordflow">if</span> (RHS.<a class="code" href="classwpi_1_1StringRef.html#a3639987deb10240784a410a843c6df94">data</a>() == getEmptyKey().<a class="code" href="structdata.html">data</a>())</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;      <span class="keywordflow">return</span> LHS.<a class="code" href="classwpi_1_1StringRef.html#a3639987deb10240784a410a843c6df94">data</a>() == getEmptyKey().data();</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <span class="keywordflow">if</span> (RHS.<a class="code" href="classwpi_1_1StringRef.html#a3639987deb10240784a410a843c6df94">data</a>() == getTombstoneKey().<a class="code" href="structdata.html">data</a>())</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;      <span class="keywordflow">return</span> LHS.<a class="code" href="classwpi_1_1StringRef.html#a3639987deb10240784a410a843c6df94">data</a>() == getTombstoneKey().data();</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> isEqual(std::string_view LHS, std::string_view RHS) {</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <span class="keywordflow">if</span> (RHS.data() == getEmptyKey().<a class="code" href="structdata.html">data</a>())</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;      <span class="keywordflow">return</span> LHS.data() == getEmptyKey().data();</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <span class="keywordflow">if</span> (RHS.data() == getTombstoneKey().<a class="code" href="structdata.html">data</a>())</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;      <span class="keywordflow">return</span> LHS.data() == getTombstoneKey().data();</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <span class="keywordflow">return</span> LHS == RHS;</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  }</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;};</div>
@@ -369,17 +369,16 @@ $(document).ready(function(){initNavTree('DenseMapInfo_8h_source.html',''); init
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="preprocessor">#endif // LLVM_ADT_DENSEMAPINFO_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclassbasic__string__view_html"><div class="ttname"><a href="classbasic__string__view.html">basic_string_view&lt; char &gt;</a></div></div>
 <div class="ttc" id="astructdata_html"><div class="ttname"><a href="structdata.html">data</a></div><div class="ttdef"><b>Definition:</b> format.h:917</div></div>
 <div class="ttc" id="aclasswpi_1_1ArrayRef_html"><div class="ttname"><a href="classwpi_1_1ArrayRef.html">wpi::ArrayRef</a></div><div class="ttdoc">ArrayRef - Represent a constant reference to an array (0 or more elements consecutively in memory),...</div><div class="ttdef"><b>Definition:</b> ArrayRef.h:46</div></div>
-<div class="ttc" id="aclasswpi_1_1StringRef_html"><div class="ttname"><a href="classwpi_1_1StringRef.html">wpi::StringRef</a></div><div class="ttdoc">StringRef - Represent a constant reference to a string, i.e.</div><div class="ttdef"><b>Definition:</b> StringRef.h:50</div></div>
-<div class="ttc" id="aclasswpi_1_1StringRef_html_a3639987deb10240784a410a843c6df94"><div class="ttname"><a href="classwpi_1_1StringRef.html#a3639987deb10240784a410a843c6df94">wpi::StringRef::data</a></div><div class="ttdeci">LLVM_NODISCARD LLVM_ATTRIBUTE_ALWAYS_INLINE const char * data() const noexcept</div><div class="ttdoc">data - Get a pointer to the start of the string (which may not be null terminated).</div><div class="ttdef"><b>Definition:</b> StringRef.h:133</div></div>
 <div class="ttc" id="astructwpi_1_1DenseMapInfo_html"><div class="ttname"><a href="structwpi_1_1DenseMapInfo.html">wpi::DenseMapInfo</a></div><div class="ttdef"><b>Definition:</b> DenseMapInfo.h:29</div></div>
-<div class="ttc" id="aclasswpi_1_1hash__code_html"><div class="ttname"><a href="classwpi_1_1hash__code.html">wpi::hash_code</a></div><div class="ttdoc">An opaque object representing a hash code.</div><div class="ttdef"><b>Definition:</b> Hashing.h:77</div></div>
+<div class="ttc" id="aclasswpi_1_1hash__code_html"><div class="ttname"><a href="classwpi_1_1hash__code.html">wpi::hash_code</a></div><div class="ttdoc">An opaque object representing a hash code.</div><div class="ttdef"><b>Definition:</b> Hashing.h:78</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><b>DenseMapInfo.h</b></li>
-    <li class="footer">Generated on Sun Jun 6 2021 22:52:14 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 6 2021 23:16:00 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

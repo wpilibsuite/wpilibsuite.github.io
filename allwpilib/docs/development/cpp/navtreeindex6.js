@@ -1,14 +1,5 @@
 var NAVTREEINDEX6 =
 {
-"classfrc_1_1ADXL345__SPI.html#a8f5c05124b550e41a94b19a80fa8ecd2a2d372ab5244f1d793a243bb003f8a99d":[5,0,5,5,2,4],
-"classfrc_1_1ADXL345__SPI.html#a8f5c05124b550e41a94b19a80fa8ecd2a375bb9c839918f1aa47d93106456912c":[5,0,5,5,2,3],
-"classfrc_1_1ADXL345__SPI.html#a8f5c05124b550e41a94b19a80fa8ecd2a6524a820a12531369527cd230abbf5ae":[5,0,5,5,2,2],
-"classfrc_1_1ADXL345__SPI.html#a8f5c05124b550e41a94b19a80fa8ecd2adbc6c3f505fba96339140062734b8f88":[5,0,5,5,2,1],
-"classfrc_1_1ADXL345__SPI.html#a90c2d685ea8a221983e6cf58cc87683e":[5,0,5,5,20],
-"classfrc_1_1ADXL345__SPI.html#a9d5f3672ddb6304de4334c072ae7a576":[5,0,5,5,21],
-"classfrc_1_1ADXL345__SPI.html#ab0964ef022e400efad4585c8825bb296":[5,0,5,5,3],
-"classfrc_1_1ADXL345__SPI.html#ab0964ef022e400efad4585c8825bb296a4ee8e716ea13abfbe7a5157e402d7654":[5,0,5,5,3,2],
-"classfrc_1_1ADXL345__SPI.html#ab0964ef022e400efad4585c8825bb296a5e2f156bbf53d0b72cd4f71ee11a13ce":[5,0,5,5,3,0],
 "classfrc_1_1ADXL345__SPI.html#ab0964ef022e400efad4585c8825bb296a66f0e067dfe4ab8bdf54b3bb6540568c":[5,0,5,5,3,3],
 "classfrc_1_1ADXL345__SPI.html#ab0964ef022e400efad4585c8825bb296a9b8e4d122c788f36669b4e55fc0731af":[5,0,5,5,3,1],
 "classfrc_1_1ADXL345__SPI.html#abab9904b365ca2ece9bdd28b15420537":[5,0,5,5,1],
@@ -249,5 +240,14 @@ var NAVTREEINDEX6 =
 "classfrc_1_1AsynchronousInterrupt.html#a903d8cad0fc1338d96e2a3931d4974d3":[5,0,5,17,4],
 "classfrc_1_1AsynchronousInterrupt.html#a9fba7e6f7f76d51bb60752be8bc4abcc":[5,0,5,17,3],
 "classfrc_1_1AsynchronousInterrupt.html#aa3eb479b12339bc18bc970c15febc74f":[5,0,5,17,10],
-"classfrc_1_1AsynchronousInterrupt.html#ac103d447e8628cc467f828b6c793389a":[5,0,5,17,8]
+"classfrc_1_1AsynchronousInterrupt.html#ac103d447e8628cc467f828b6c793389a":[5,0,5,17,8],
+"classfrc_1_1AsynchronousInterrupt.html#acc7a0dea5453eba6e4c86c19f5d8ee31":[5,0,5,17,11],
+"classfrc_1_1AsynchronousInterrupt.html#ae2c37f854947f414a2bb5a9688ad9233":[5,0,5,17,5],
+"classfrc_1_1AsynchronousInterrupt.html#ae4be083edecc23fb8deae8f4fffbcc66":[5,0,5,17,9],
+"classfrc_1_1BuiltInAccelerometer.html":[5,0,5,18],
+"classfrc_1_1BuiltInAccelerometer.html#a5c32a616c68deb9203a21d549b54ca75":[5,0,5,18,0],
+"classfrc_1_1BuiltInAccelerometer.html#a6dd6e22c1eed09bf00d84ce2c6793e4e":[5,0,5,18,4],
+"classfrc_1_1BuiltInAccelerometer.html#a77a6aa8e81395e9fa809128e274b7989":[5,0,5,18,6],
+"classfrc_1_1BuiltInAccelerometer.html#a934e92f7f3aefacc14400f0f5c2b354e":[5,0,5,18,3],
+"classfrc_1_1BuiltInAccelerometer.html#aa466ef7845ce387d832069f81ba7b9a8":[5,0,5,18,5]
 };

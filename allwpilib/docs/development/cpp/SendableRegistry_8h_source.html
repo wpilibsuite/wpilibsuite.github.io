@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-94-g4f1cecb</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-95-gb2c3b2d</span>
    </div>
   </td>
  </tr>
@@ -186,8 +186,8 @@ $(document).ready(function(){initNavTree('SendableRegistry_8h_source.html',''); 
 <div class="line"><a name="l00295"></a><span class="lineno"><a class="line" href="classfrc_1_1SendableRegistry.html#a2ce940d715a8155b5a4558e2d6dafd39">  295</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1SendableRegistry.html#a2ce940d715a8155b5a4558e2d6dafd39">Update</a>(UID sendableUid);</div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160; </div>
 <div class="line"><a name="l00300"></a><span class="lineno"><a class="line" href="structfrc_1_1SendableRegistry_1_1CallbackData.html">  300</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="structfrc_1_1SendableRegistry_1_1CallbackData.html">CallbackData</a> {</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    <a class="code" href="structfrc_1_1SendableRegistry_1_1CallbackData.html">CallbackData</a>(<a class="code" href="classfrc_1_1Sendable.html">Sendable</a>* sendable_, <a class="code" href="classwpi_1_1StringRef.html">wpi::StringRef</a> name_,</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;                 <a class="code" href="classwpi_1_1StringRef.html">wpi::StringRef</a> subsystem_, <a class="code" href="classfrc_1_1Sendable.html">Sendable</a>* parent_,</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    <a class="code" href="structfrc_1_1SendableRegistry_1_1CallbackData.html">CallbackData</a>(<a class="code" href="classfrc_1_1Sendable.html">Sendable</a>* sendable_, std::string_view name_,</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;                 std::string_view subsystem_, <a class="code" href="classfrc_1_1Sendable.html">Sendable</a>* parent_,</div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;                 std::shared_ptr&lt;void&gt;&amp; data_, <a class="code" href="classfrc_1_1SendableBuilderImpl.html">SendableBuilderImpl</a>&amp; builder_)</div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        : sendable(sendable_),</div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;          name(name_),</div>
@@ -197,8 +197,8 @@ $(document).ready(function(){initNavTree('SendableRegistry_8h_source.html',''); 
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;          builder(builder_) {}</div>
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160; </div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <a class="code" href="classfrc_1_1Sendable.html">Sendable</a>* sendable;</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    <a class="code" href="classwpi_1_1StringRef.html">wpi::StringRef</a> name;</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <a class="code" href="classwpi_1_1StringRef.html">wpi::StringRef</a> subsystem;</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    std::string_view name;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    std::string_view subsystem;</div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    <a class="code" href="classfrc_1_1Sendable.html">Sendable</a>* parent;</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    std::shared_ptr&lt;void&gt;&amp; <a class="code" href="structdata.html">data</a>;</div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    <a class="code" href="classfrc_1_1SendableBuilderImpl.html">SendableBuilderImpl</a>&amp; builder;</div>
@@ -247,7 +247,6 @@ $(document).ready(function(){initNavTree('SendableRegistry_8h_source.html',''); 
 <div class="ttc" id="aclassfrc_1_1SendableRegistry_html_a5a44a1e2af90bf23e1620bb233b2be37"><div class="ttname"><a href="classfrc_1_1SendableRegistry.html#a5a44a1e2af90bf23e1620bb233b2be37">frc::SendableRegistry::GetDataHandle</a></div><div class="ttdeci">int GetDataHandle()</div><div class="ttdoc">Gets a unique handle for setting/getting data with SetData() and GetData().</div></div>
 <div class="ttc" id="aclassfrc_1_1SendableRegistry_html_a41cc484135c9c33defcb7dcc7ea66631"><div class="ttname"><a href="classfrc_1_1SendableRegistry.html#a41cc484135c9c33defcb7dcc7ea66631">frc::SendableRegistry::DisableLiveWindow</a></div><div class="ttdeci">void DisableLiveWindow(Sendable *sendable)</div><div class="ttdoc">Disables LiveWindow for an object.</div></div>
 <div class="ttc" id="aclassfrc_1_1SendableRegistry_html_ac53549df80587a8af54751e24481b9a0"><div class="ttname"><a href="classfrc_1_1SendableRegistry.html#ac53549df80587a8af54751e24481b9a0">frc::SendableRegistry::AddLW</a></div><div class="ttdeci">void AddLW(Sendable *sendable, std::string_view subsystem, std::string_view name)</div><div class="ttdoc">Adds an object to the registry and LiveWindow.</div></div>
-<div class="ttc" id="aclasswpi_1_1StringRef_html"><div class="ttname"><a href="classwpi_1_1StringRef.html">wpi::StringRef</a></div><div class="ttdoc">StringRef - Represent a constant reference to a string, i.e.</div><div class="ttdef"><b>Definition:</b> StringRef.h:50</div></div>
 <div class="ttc" id="aclassfrc_1_1SendableRegistry_html_a72b369b9ab203e3be8d17612dd5edd40"><div class="ttname"><a href="classfrc_1_1SendableRegistry.html#a72b369b9ab203e3be8d17612dd5edd40">frc::SendableRegistry::GetSendable</a></div><div class="ttdeci">Sendable * GetSendable(UID uid)</div><div class="ttdoc">Get sendable object for a given unique id.</div></div>
 <div class="ttc" id="aclassfrc_1_1SendableRegistry_html_af00951ed4bd88adf4cbddda94874fa6c"><div class="ttname"><a href="classfrc_1_1SendableRegistry.html#af00951ed4bd88adf4cbddda94874fa6c">frc::SendableRegistry::Add</a></div><div class="ttdeci">void Add(Sendable *sendable, std::string_view moduleType, int moduleNumber, int channel)</div><div class="ttdoc">Adds an object to the registry.</div></div>
 <div class="ttc" id="aclasswpi_1_1function__ref_html"><div class="ttname"><a href="classwpi_1_1function__ref.html">wpi::function_ref</a></div><div class="ttdoc">An efficient, type-erasing, non-owning reference to a callable.</div><div class="ttdef"><b>Definition:</b> STLExtras.h:103</div></div>
@@ -260,7 +259,7 @@ $(document).ready(function(){initNavTree('SendableRegistry_8h_source.html',''); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_b02f085c5688c41df73c48b2d64de380.html">smartdashboard</a></li><li class="navelem"><b>SendableRegistry.h</b></li>
-    <li class="footer">Generated on Sun Jun 6 2021 22:52:13 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 6 2021 23:15:59 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>
