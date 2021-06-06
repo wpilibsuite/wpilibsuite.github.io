@@ -460,12 +460,6 @@ var annotated_dup =
           [ "PickAlignment", "structwpi_1_1support_1_1detail_1_1PickAlignment.html", "structwpi_1_1support_1_1detail_1_1PickAlignment" ]
         ] ]
       ] ],
-      [ "sys", null, [
-        [ "path", null, [
-          [ "const_iterator", "classwpi_1_1sys_1_1path_1_1const__iterator.html", "classwpi_1_1sys_1_1path_1_1const__iterator" ],
-          [ "reverse_iterator", "classwpi_1_1sys_1_1path_1_1reverse__iterator.html", "classwpi_1_1sys_1_1path_1_1reverse__iterator" ]
-        ] ]
-      ] ],
       [ "uv", null, [
         [ "Async", "classwpi_1_1uv_1_1Async.html", "classwpi_1_1uv_1_1Async" ],
         [ "Async<>", "classwpi_1_1uv_1_1Async_3_4.html", "classwpi_1_1uv_1_1Async_3_4" ],

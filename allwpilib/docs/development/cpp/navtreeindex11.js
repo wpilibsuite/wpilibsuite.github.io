@@ -1,8 +1,5 @@
 var NAVTREEINDEX11 =
 {
-"classfrc_1_1Joystick.html#a93df8f506da8175b8b26070d063655ba":[5,0,5,75,28],
-"classfrc_1_1Joystick.html#a986446219fb0dc5bdde10c1f37b97513":[5,0,5,75,20],
-"classfrc_1_1Joystick.html#aa1736feefead176e8843f463608e9a7c":[5,0,5,75,6],
 "classfrc_1_1Joystick.html#aaa3652f52c28d71b2a372a79b74bf35b":[5,0,5,75,4],
 "classfrc_1_1Joystick.html#aad454d6d34e1a45ddd49f56b4ff835e4":[5,0,5,75,9],
 "classfrc_1_1Joystick.html#ab9e402a6429034621c81584deaa9dc8e":[5,0,5,75,29],
@@ -249,5 +246,8 @@ var NAVTREEINDEX11 =
 "classfrc_1_1MotorControllerGroup.html#a786f25a7ac1363d4c4b59a41eeef2c2b":[5,0,5,106,0],
 "classfrc_1_1MotorControllerGroup.html#a87d2d50dbdebbc4ed2da85d20d7a7607":[5,0,5,106,8],
 "classfrc_1_1MotorControllerGroup.html#a927bec9e678a96b162ebb469c7ebf620":[5,0,5,106,5],
-"classfrc_1_1MotorControllerGroup.html#a9f0a43ccbd19ac6b6cf2427408b3646b":[5,0,5,106,1]
+"classfrc_1_1MotorControllerGroup.html#a9f0a43ccbd19ac6b6cf2427408b3646b":[5,0,5,106,1],
+"classfrc_1_1MotorControllerGroup.html#a9f33bca180a40e347adb1c8ce4f2bbba":[5,0,5,106,2],
+"classfrc_1_1MotorControllerGroup.html#aaa92d1da1245bbc72a29deec04b19977":[5,0,5,106,7],
+"classfrc_1_1MotorControllerGroup.html#ad8eabf9e3bb596eebccfdee65d5e1eab":[5,0,5,106,6]
 };

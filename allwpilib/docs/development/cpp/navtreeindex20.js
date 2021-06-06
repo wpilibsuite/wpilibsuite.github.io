@@ -1,8 +1,5 @@
 var NAVTREEINDEX20 =
 {
-"classfrc_1_1sim_1_1RoboRioSim.html#adfa87341412ac815c34acc5ebe1c6a0f":[5,0,5,1,26,24],
-"classfrc_1_1sim_1_1RoboRioSim.html#ae52266ac688763a744b00bb65206559e":[5,0,5,1,26,35],
-"classfrc_1_1sim_1_1RoboRioSim.html#ae591665fa8c8e45d96588fe6b4de51bf":[5,0,5,1,26,23],
 "classfrc_1_1sim_1_1RoboRioSim.html#af106585f58a6df3f4e133aa8cde29ab7":[5,0,5,1,26,17],
 "classfrc_1_1sim_1_1SPIAccelerometerSim.html":[5,0,5,1,29],
 "classfrc_1_1sim_1_1SPIAccelerometerSim.html#a02312636314bafda00bc614ec2d26826":[5,0,5,1,29,0],
@@ -249,5 +246,8 @@ var NAVTREEINDEX20 =
 "classhal_1_1HandleBase.html#a95b22451c91139de904df2738db3d6d8":[5,0,8,4,3],
 "classhal_1_1HandleBase.html#ab648b6c1b2cc5541592005f14428ab4a":[5,0,8,4,0],
 "classhal_1_1HandleBase.html#af0bfc60f5c8db57d536172238285ee62":[5,0,8,4,2],
-"classhal_1_1HandleBase.html#af90db8fc08f56b6fbb23ee93ca3d45b8":[5,0,8,4,6]
+"classhal_1_1HandleBase.html#af90db8fc08f56b6fbb23ee93ca3d45b8":[5,0,8,4,6],
+"classhal_1_1IndexedClassedHandleResource.html":[5,0,8,5],
+"classhal_1_1IndexedClassedHandleResource.html#a00585003b90a487a0aee908d0c956d8d":[5,0,8,5,4],
+"classhal_1_1IndexedClassedHandleResource.html#a06eb061f52fdc2796c8898411027f7a4":[5,0,8,5,5]
 };

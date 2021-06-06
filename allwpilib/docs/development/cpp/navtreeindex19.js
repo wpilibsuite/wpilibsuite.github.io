@@ -1,8 +1,5 @@
 var NAVTREEINDEX19 =
 {
-"classfrc_1_1sim_1_1DriverStationSim.html#a515f60511cfaf49d1b095050c49aebc2":[5,0,5,1,14,2],
-"classfrc_1_1sim_1_1DriverStationSim.html#a5c66f5728f99554069582c2000dfb594":[5,0,5,1,14,13],
-"classfrc_1_1sim_1_1DriverStationSim.html#a65e6b9c61b947640ce682a80a7aa4fae":[5,0,5,1,14,40],
 "classfrc_1_1sim_1_1DriverStationSim.html#a6d1b10ab0f27a5ee6f764bd86866c25d":[5,0,5,1,14,43],
 "classfrc_1_1sim_1_1DriverStationSim.html#a7ca9c657830d05176619ab4ece889c5c":[5,0,5,1,14,16],
 "classfrc_1_1sim_1_1DriverStationSim.html#a8248bd9f80e0f87404a5c6c8a3d56a1b":[5,0,5,1,14,35],
@@ -249,5 +246,8 @@ var NAVTREEINDEX19 =
 "classfrc_1_1sim_1_1RoboRioSim.html#ad54a7b6d6c63eeb97526d7de76a2adb1":[5,0,5,1,26,43],
 "classfrc_1_1sim_1_1RoboRioSim.html#ad92d92a86dc9a4a8cabc31f57b297287":[5,0,5,1,26,9],
 "classfrc_1_1sim_1_1RoboRioSim.html#adcbaa84ea754f09205d10265029ca5ff":[5,0,5,1,26,3],
-"classfrc_1_1sim_1_1RoboRioSim.html#ade3da5b26a16ef906ffd58d165beafad":[5,0,5,1,26,18]
+"classfrc_1_1sim_1_1RoboRioSim.html#ade3da5b26a16ef906ffd58d165beafad":[5,0,5,1,26,18],
+"classfrc_1_1sim_1_1RoboRioSim.html#adfa87341412ac815c34acc5ebe1c6a0f":[5,0,5,1,26,24],
+"classfrc_1_1sim_1_1RoboRioSim.html#ae52266ac688763a744b00bb65206559e":[5,0,5,1,26,35],
+"classfrc_1_1sim_1_1RoboRioSim.html#ae591665fa8c8e45d96588fe6b4de51bf":[5,0,5,1,26,23]
 };

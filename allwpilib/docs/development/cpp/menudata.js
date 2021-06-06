@@ -172,8 +172,7 @@ var menudata={children:[
 {text:"f",url:"functions_rela.html#index_f"},
 {text:"h",url:"functions_rela.html#index_h"},
 {text:"j",url:"functions_rela.html#index_j"},
-{text:"o",url:"functions_rela.html#index_o"},
-{text:"r",url:"functions_rela.html#index_r"}]}]}]},
+{text:"o",url:"functions_rela.html#index_o"}]}]}]},
 {text:"Files",url:"files.html",children:[
 {text:"File List",url:"files.html"},
 {text:"File Members",url:"globals.html",children:[

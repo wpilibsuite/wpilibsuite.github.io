@@ -60,7 +60,6 @@ var dir_1224104d412225b996ab6dfa83431a88 =
     [ "nodiscard.h", "nodiscard_8h_source.html", null ],
     [ "NullDeleter.h", "NullDeleter_8h_source.html", null ],
     [ "optional.h", "optional_8h_source.html", null ],
-    [ "Path.h", "Path_8h_source.html", null ],
     [ "PointerIntPair.h", "PointerIntPair_8h_source.html", null ],
     [ "PointerLikeTypeTraits.h", "PointerLikeTypeTraits_8h_source.html", null ],
     [ "PointerUnion.h", "PointerUnion_8h_source.html", null ],

@@ -26,8 +26,6 @@ var NAVTREEINDEX0 =
 ".html":[5,0,11,6],
 ".html":[5,0,11,6,0],
 ".html":[5,0,11,7],
-".html":[5,0,11,7,0],
-".html":[5,0,11,8],
 ".html":[5,0,4],
 ".html":[5,0,5],
 ".html":[5,0,5,0],
@@ -249,5 +247,7 @@ var NAVTREEINDEX0 =
 "NetworkTableEntry_8h_source.html":[6,0,9,2],
 "NetworkTableInstance_8h_source.html":[6,0,9,3],
 "NetworkTableType_8h_source.html":[6,0,9,4],
-"NetworkTableValue_8h_source.html":[6,0,9,5]
+"NetworkTableValue_8h_source.html":[6,0,9,5],
+"NetworkTable_8h_source.html":[6,0,9,1],
+"NidecBrushless_8h_source.html":[6,0,4,4,4]
 };
