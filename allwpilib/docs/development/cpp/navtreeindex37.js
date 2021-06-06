@@ -1,5 +1,9 @@
 var NAVTREEINDEX37 =
 {
+"group__hal__ports.html#gaade8717fd75e3de39ff698b246a7f595":[3,0,0,18],
+"group__hal__ports.html#gac1424cc22f7ade45e9dc863f64125a3e":[3,0,0,8],
+"group__hal__ports.html#gad2640f47afb8191db107a0ca558fc5b0":[3,0,0,11],
+"group__hal__ports.html#gada4dc681c7b01ec5f3bbad2e9f6c0cb1":[3,0,0,14],
 "group__hal__ports.html#gae41833d9f4375b7d7e038bb638720d41":[3,0,0,10],
 "group__hal__ports.html#gaef6b76aa8cf965bb4999bd0bc1718de7":[3,0,0,12],
 "group__hal__power.html":[3,0,5],
@@ -245,9 +249,5 @@ var NAVTREEINDEX37 =
 "group__ntcore__logger__func.html#gaba7ed9ad02b89a75bc918f292126a9bf":[3,3,8,7],
 "group__ntcore__logger__func.html#gad04ce32957edaaadfa0c89986f9746f2":[3,3,8,4],
 "group__ntcore__logger__func.html#gadcada5f56cada2580781f75eb5910715":[3,3,8,6],
-"group__ntcore__memoryallocators__cfunc.html":[3,1,9,0],
-"group__ntcore__memoryallocators__cfunc.html#ga0eb2d97187dffa221f3bfd87f1fcae1c":[3,1,9,0,1],
-"group__ntcore__memoryallocators__cfunc.html#ga12477fbf760977606daacbb5fcc9b4e4":[3,1,9,0,2],
-"group__ntcore__memoryallocators__cfunc.html#ga1480d5afcfaeea9496dac0e95b5f6fd0":[3,1,9,0,3],
-"group__ntcore__memoryallocators__cfunc.html#ga4d42423a59d9baf5b75f3d35a6ca65a9":[3,1,9,0,7]
+"group__ntcore__memoryallocators__cfunc.html":[3,1,9,0]
 };

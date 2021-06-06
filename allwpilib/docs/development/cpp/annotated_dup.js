@@ -69,6 +69,10 @@ var annotated_dup =
       ] ],
       [ "never_destroyed", "classdrake_1_1never__destroyed.html", "classdrake_1_1never__destroyed" ]
     ] ],
+    [ "fmt", null, [
+      [ "formatter< Eigen::Matrix< double, Rows, Cols, Args... > >", "structfmt_1_1formatter_3_01Eigen_1_1Matrix_3_01double_00_01Rows_00_01Cols_00_01Args_8_8_8_01_4_01_4.html", "structfmt_1_1formatter_3_01Eigen_1_1Matrix_3_01double_00_01Rows_00_01Cols_00_01Args_8_8_8_01_4_01_4" ],
+      [ "formatter< units::unit_t< Units, T, NonLinearScale > >", "structfmt_1_1formatter_3_01units_1_1unit__t_3_01Units_00_01T_00_01NonLinearScale_01_4_01_4.html", "structfmt_1_1formatter_3_01units_1_1unit__t_3_01Units_00_01T_00_01NonLinearScale_01_4_01_4" ]
+    ] ],
     [ "frc", null, [
       [ "detail", null, [
         [ "KalmanFilterImpl", "classfrc_1_1detail_1_1KalmanFilterImpl.html", "classfrc_1_1detail_1_1KalmanFilterImpl" ],
