@@ -1,5 +1,16 @@
 var NAVTREEINDEX36 =
 {
+"group__hal__threads.html#ga997a73e6e65b1e5a9584921003044539":[3,0,21,2],
+"group__hal__types.html":[3,0,25],
+"group__ntcore__c__api.html":[3,1],
+"group__ntcore__c__api.html#ga3cca2867677bf312d4d8df4aa48a09d7":[3,1,23],
+"group__ntcore__c__api.html#ga3d0c2962b4afea3fff6d34d2b9995ff0":[3,1,22],
+"group__ntcore__c__api.html#ga5a37c1408d3bd3090edcfd497c00acbe":[3,1,24],
+"group__ntcore__c__api.html#ga625cf01c8aa4a321d9a4790033fc3846":[3,1,25],
+"group__ntcore__c__api.html#ga85e32a7c652ecd10ca642d78ec21e46a":[3,1,27],
+"group__ntcore__c__api.html#gaca5ac35ca784df4518df6fec4c3f82ad":[3,1,21],
+"group__ntcore__c__api.html#gad85a24a4cc529c300483f712ffccf6be":[3,1,26],
+"group__ntcore__connectionlistener__cfunc.html":[3,1,3],
 "group__ntcore__connectionlistener__cfunc.html#ga018293d965922e7dbf71e0fb7c192366":[3,1,3,7],
 "group__ntcore__connectionlistener__cfunc.html#ga02b07a837bac69fc086f1c21c0aedaea":[3,1,3,4],
 "group__ntcore__connectionlistener__cfunc.html#ga0689545a1b4f59bf3a87aa3c758d3bfb":[3,1,3,5],
@@ -238,16 +249,5 @@ var NAVTREEINDEX36 =
 "group__ntcore__typedgetters__cfunc.html#ga66ee0b36f439f2822fd7195e7b960f7e":[3,1,9,1,10],
 "group__ntcore__typedgetters__cfunc.html#ga7ffa611ac1b899c70dfbfe30e09291ff":[3,1,9,1,2],
 "group__ntcore__typedgetters__cfunc.html#ga92ad3d4575d004d051798ca49b0a01dc":[3,1,9,1,13],
-"group__ntcore__typedgetters__cfunc.html#gaabea79578421e6342b9c23406f680823":[3,1,9,1,9],
-"group__ntcore__typedgetters__cfunc.html#gab120380be861101d44e36d03849e900d":[3,1,9,1,12],
-"group__ntcore__typedgetters__cfunc.html#gad1bea0df8a4b5788c378f4688f841951":[3,1,9,1,1],
-"group__ntcore__typedgetters__cfunc.html#gae0baa9869569002315d5197c1556649f":[3,1,9,1,7],
-"group__ntcore__typedgetters__cfunc.html#gae18b540cec024cfc5941013e5d45ddab":[3,1,9,1,11],
-"group__ntcore__typedgetters__cfunc.html#gae8f77f58748d30870731f450ba07a7be":[3,1,9,1,6],
-"group__ntcore__typedgetters__cfunc.html#gafb40235fb74b4063bbd101d8cb86ed00":[3,1,9,1,5],
-"group__ntcore__utility__cfunc.html":[3,1,7],
-"group__ntcore__utility__cfunc.html#ga0fd423cd0d8bd810ac2f93bb03688784":[3,1,7,16],
-"group__ntcore__utility__cfunc.html#ga20f8444d4db738f7734050ff402dbe72":[3,1,7,15],
-"group__ntcore__utility__cfunc.html#ga28656328928d31d24d2169b371f3001c":[3,1,7,4],
-"group__ntcore__utility__cfunc.html#ga2e357f638ce86385617f8153217fb8a9":[3,1,7,9]
+"group__ntcore__typedgetters__cfunc.html#gaabea79578421e6342b9c23406f680823":[3,1,9,1,9]
 };

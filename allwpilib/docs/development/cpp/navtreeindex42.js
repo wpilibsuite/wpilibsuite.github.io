@@ -1,5 +1,16 @@
 var NAVTREEINDEX42 =
 {
+"structwpi_1_1detail_1_1HasPointerLikeTypeTraits_3_01T_00_01decltype_07_07sizeof_07PointerLikeTypc1179fa6075c47986ebe462bf45a5392.html#adce3a5f5e5f9fe3576b96e50ea971ba9":[5,0,11,0,30,0],
+"structwpi_1_1detail_1_1IsPointerLike.html":[5,0,11,0,56],
+"structwpi_1_1detail_1_1IsPointerLike.html#a6bba20b158f8d96f09f5b76ba94b03ce":[5,0,11,0,56,0],
+"structwpi_1_1detail_1_1IsPointerLike_3_01T_01_5_01_4.html":[5,0,11,0,57],
+"structwpi_1_1detail_1_1IsPointerLike_3_01T_01_5_01_4.html#a4f8964dba8d87c7fd2ac35073323cb6f":[5,0,11,0,57,0],
+"structwpi_1_1detail_1_1LeadingZerosCounter.html":[5,0,11,0,62],
+"structwpi_1_1detail_1_1LeadingZerosCounter.html#af7ab1bde20cfa425c4b505fc3771b551":[5,0,11,0,62,0],
+"structwpi_1_1detail_1_1PopulationCounter.html":[5,0,11,0,66],
+"structwpi_1_1detail_1_1PopulationCounter.html#a49e48b0e8456a5009be25e3dd3e7f7ed":[5,0,11,0,66,0],
+"structwpi_1_1detail_1_1PopulationCounter_3_01T_00_018_01_4.html":[5,0,11,0,67],
+"structwpi_1_1detail_1_1PopulationCounter_3_01T_00_018_01_4.html#aa21b16d9533711e5eda30c0bde74356b":[5,0,11,0,67,0],
 "structwpi_1_1detail_1_1TrailingZerosCounter.html":[5,0,11,0,81],
 "structwpi_1_1detail_1_1TrailingZerosCounter.html#a8ad75223a45652132498e14bbdb389ea":[5,0,11,0,81,0],
 "structwpi_1_1detail_1_1WorkerThreadAsync.html":[5,0,11,0,83],
@@ -238,16 +249,5 @@ var NAVTREEINDEX42 =
 "structwpi_1_1less__second.html#a7f2ffbe536827ab756a995ad9dbfc0bc":[5,0,11,96,0],
 "structwpi_1_1make__const__ptr.html":[5,0,11,98],
 "structwpi_1_1make__const__ptr.html#a2007727cbd4927f44bcf04818209004a":[5,0,11,98,0],
-"structwpi_1_1make__const__ref.html":[5,0,11,99],
-"structwpi_1_1make__const__ref.html#af6f8ac3ef9c325b6eab2514226195bab":[5,0,11,99,0],
-"structwpi_1_1object__creator.html":[5,0,11,108],
-"structwpi_1_1object__creator.html#a49667e3d91de7e8517aff15647316925":[5,0,11,108,0],
-"structwpi_1_1object__deleter.html":[5,0,11,109],
-"structwpi_1_1object__deleter.html#aef2af5cec19450adbbce4334d8cbff09":[5,0,11,109,0],
-"structwpi_1_1object__deleter_3_01T_0fN_0e_4.html":[5,0,11,110],
-"structwpi_1_1object__deleter_3_01T_0fN_0e_4.html#aba964fbdf6eb87d558456660d56cc5fb":[5,0,11,110,0],
-"structwpi_1_1on__first.html":[5,0,11,111],
-"structwpi_1_1on__first.html#a13ebd37e325d180bf7c8191632254e2a":[5,0,11,111,0],
-"structwpi_1_1on__first.html#a1935500c11d09f18c37206d455fe49ab":[5,0,11,111,1],
-"structwpi_1_1pair__hash.html":[5,0,11,113]
+"structwpi_1_1make__const__ref.html":[5,0,11,99]
 };

@@ -861,6 +861,9 @@ var hierarchy =
     [ "frc::detail::LinearQuadraticRegulatorImpl< 2, 1 >", "classfrc_1_1detail_1_1LinearQuadraticRegulatorImpl.html", [
       [ "frc::LinearQuadraticRegulator< 2, 1 >", "classfrc_1_1LinearQuadraticRegulator_3_012_00_011_01_4.html", null ]
     ] ],
+    [ "frc::detail::LinearQuadraticRegulatorImpl< 2, 2 >", "classfrc_1_1detail_1_1LinearQuadraticRegulatorImpl.html", [
+      [ "frc::LinearQuadraticRegulator< 2, 2 >", "classfrc_1_1LinearQuadraticRegulator_3_012_00_012_01_4.html", null ]
+    ] ],
     [ "frc::LinearSystem< States, Inputs, Outputs >", "classfrc_1_1LinearSystem.html", null ],
     [ "frc::LinearSystem< 2, 2, 2 >", "classfrc_1_1LinearSystem.html", null ],
     [ "frc::LinearSystemId", "classfrc_1_1LinearSystemId.html", null ],
@@ -1603,8 +1606,8 @@ var hierarchy =
     ] ],
     [ "frc::SplineHelper", "classfrc_1_1SplineHelper.html", null ],
     [ "frc::SplineParameterizer", "classfrc_1_1SplineParameterizer.html", null ],
-    [ "frc::Trajectory::State", "structfrc_1_1Trajectory_1_1State.html", null ],
     [ "frc::TrapezoidProfile< Distance >::State", "classfrc_1_1TrapezoidProfile_1_1State.html", null ],
+    [ "frc::Trajectory::State", "structfrc_1_1Trajectory_1_1State.html", null ],
     [ "frc::sim::DifferentialDrivetrainSim::State", "classfrc_1_1sim_1_1DifferentialDrivetrainSim_1_1State.html", null ],
     [ "wpi::static_circular_buffer< T, N >", "classwpi_1_1static__circular__buffer.html", null ],
     [ "wpi::detail::static_const< T >", "structwpi_1_1detail_1_1static__const.html", null ],
@@ -1732,9 +1735,9 @@ var hierarchy =
     [ "uv_buf_t", null, [
       [ "wpi::uv::Buffer", "classwpi_1_1uv_1_1Buffer.html", null ]
     ] ],
-    [ "nt::Value", "classnt_1_1Value.html", null ],
     [ "value< Context >", "classvalue.html", null ],
     [ "arg_ref< Char >::value", "unionarg__ref_1_1value.html", null ],
+    [ "nt::Value", "classnt_1_1Value.html", null ],
     [ "detail::counting_iterator::value_type", "structdetail_1_1counting__iterator_1_1value__type.html", null ],
     [ "frc::Vector2d", "structfrc_1_1Vector2d.html", null ],
     [ "wpi::VersionTuple", "classwpi_1_1VersionTuple.html", null ],
@@ -1753,15 +1756,15 @@ var hierarchy =
         [ "cs::UsbCamera", "classcs_1_1UsbCamera.html", null ]
       ] ]
     ] ],
+    [ "view", "structview.html", [
+      [ "named_arg< Char, T >", "structnamed__arg.html", null ]
+    ] ],
     [ "view", null, [
       [ "arg_join< It, Sentinel, Char >", "structarg__join.html", null ],
       [ "tuple_arg_join< Char, T >", "structtuple__arg__join.html", null ]
     ] ],
-    [ "view", "structview.html", [
-      [ "named_arg< Char, T >", "structnamed__arg.html", null ]
-    ] ],
-    [ "detail::range_to_view< T, enable_if_t<!has_const_begin_end< T >::value &&has_mutable_begin_end< T >::value > >::view_t", "structdetail_1_1range__to__view_3_01T_00_01enable__if__t_3_9has__const__begin__end_3_01T_01_4_1_1cf1f6c31b1fc849c7f6ab73440db946.html", null ],
     [ "detail::range_to_view< T, enable_if_t< has_const_begin_end< T >::value > >::view_t", "structdetail_1_1range__to__view_3_01T_00_01enable__if__t_3_01has__const__begin__end_3_01T_01_4_1_1value_01_4_01_4_1_1view__t.html", null ],
+    [ "detail::range_to_view< T, enable_if_t<!has_const_begin_end< T >::value &&has_mutable_begin_end< T >::value > >::view_t", "structdetail_1_1range__to__view_3_01T_00_01enable__if__t_3_9has__const__begin__end_3_01T_01_4_1_1cf1f6c31b1fc849c7f6ab73440db946.html", null ],
     [ "frc::VisionPipeline", "classfrc_1_1VisionPipeline.html", null ],
     [ "frc::VisionRunnerBase", "classfrc_1_1VisionRunnerBase.html", [
       [ "frc::VisionRunner< T >", "classfrc_1_1VisionRunner.html", null ]
@@ -1769,9 +1772,9 @@ var hierarchy =
     [ "wpi::sig::trait::detail::voider<... >", "structwpi_1_1sig_1_1trait_1_1detail_1_1voider.html", null ],
     [ "frc::Watchdog", "classfrc_1_1Watchdog.html", null ],
     [ "wpi::WebSocketServerHelper", "classwpi_1_1WebSocketServerHelper.html", null ],
+    [ "frc::KilloughDrive::WheelSpeeds", "structfrc_1_1KilloughDrive_1_1WheelSpeeds.html", null ],
     [ "frc::DifferentialDrive::WheelSpeeds", "structfrc_1_1DifferentialDrive_1_1WheelSpeeds.html", null ],
     [ "frc::MecanumDrive::WheelSpeeds", "structfrc_1_1MecanumDrive_1_1WheelSpeeds.html", null ],
-    [ "frc::KilloughDrive::WheelSpeeds", "structfrc_1_1KilloughDrive_1_1WheelSpeeds.html", null ],
     [ "frc::WidgetType", "classfrc_1_1WidgetType.html", null ],
     [ "width_checker< ErrorHandler >", "classwidth__checker.html", null ],
     [ "wpi::WorkerThread< T >", "classwpi_1_1WorkerThread.html", null ],

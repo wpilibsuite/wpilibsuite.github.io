@@ -1,5 +1,16 @@
 var NAVTREEINDEX39 =
 {
+"structcs_1_1RawEvent.html#af6c97cd12ca023a5b63cf6a596a2b709":[3,6,18,1],
+"structcs_1_1UsbCameraInfo.html":[3,6,16],
+"structcs_1_1UsbCameraInfo.html#a0c88d22224cb6730d162f9fb7dcdb8e2":[3,6,16,0],
+"structcs_1_1UsbCameraInfo.html#a13f32c4bb80329004d8a6cf6c0320bd4":[3,6,16,1],
+"structcs_1_1UsbCameraInfo.html#a89e975415e6d1a12c82eb1e40c6eb1cd":[3,6,16,4],
+"structcs_1_1UsbCameraInfo.html#aa3c422ce6458222a76347800e69b3df0":[3,6,16,5],
+"structcs_1_1UsbCameraInfo.html#aae77dce7f5164fd0db2b63f4ea20eaf2":[3,6,16,3],
+"structcs_1_1UsbCameraInfo.html#abf40fa4cd6a97e22bb93c0af1c52f471":[3,6,16,2],
+"structcs_1_1VideoMode.html":[3,6,17],
+"structcs_1_1VideoMode.html#a163bf1a68be118da4263fb77ff51620f":[3,6,17,2],
+"structcs_1_1VideoMode.html#a1ab1b4d090c15a11850819d4c2bafbb5":[3,6,17,1],
 "structcs_1_1VideoMode.html#a7edfda92cb98f2dfb6e91e310e73f8d1":[3,6,17,3],
 "structcs_1_1VideoMode.html#a7fd009ed027c50ca9790fd292aff9258":[3,6,17,5],
 "structcs_1_1VideoMode.html#ae49551cdd0382d00ad9b716373559fb2":[3,6,17,4],
@@ -238,16 +249,5 @@ var NAVTREEINDEX39 =
 "structformatter_3_01TupleT_00_01Char_00_01enable__if__t_3_01fmt_1_1is__tuple__like_3_01TupleT_01_4_1_1value_01_4_01_4.html#aa96a81177ffa5f2ad3fd83fb1ecb2eb3":[5,0,84,0],
 "structformatter_3_01TupleT_00_01Char_00_01enable__if__t_3_01fmt_1_1is__tuple__like_3_01TupleT_01_4_1_1value_01_4_01_4.html#ad924ff0c32550c242ec16cddc3667b39":[5,0,84,1],
 "structformatter_3_01arg__join_3_01It_00_01Sentinel_00_01Char_01_4_00_01Char_01_4.html":[5,0,73],
-"structformatter_3_01arg__join_3_01It_00_01Sentinel_00_01Char_01_4_00_01Char_01_4.html#a23f5abf8d0294cfd54205363b8124b64":[5,0,73,0],
-"structformatter_3_01arg__join_3_01It_00_01Sentinel_00_01Char_01_4_00_01Char_01_4.html#ab96aebde601d41a99f8cff2f20aab88b":[5,0,73,1],
-"structformatter_3_01bytes_01_4.html":[5,0,74],
-"structformatter_3_01bytes_01_4.html#a83564f7339fc600390b0520f0eafcc8d":[5,0,74,0],
-"structformatter_3_01bytes_01_4.html#adddf00fb9136d97ffdc2345482a342a6":[5,0,74,1],
-"structformatter_3_01detail_1_1bigint_01_4.html":[5,0,76],
-"structformatter_3_01detail_1_1bigint_01_4.html#aa92eb8c69612d8a2734be99373ecb8c2":[5,0,76,0],
-"structformatter_3_01detail_1_1bigint_01_4.html#ad967882a92af91a90d0e521633d43737":[5,0,76,1],
-"structformatter_3_01std_1_1chrono_1_1duration_3_01Rep_00_01Period_01_4_00_01Char_01_4.html":[5,0,77],
-"structformatter_3_01std_1_1chrono_1_1duration_3_01Rep_00_01Period_01_4_00_01Char_01_4.html#a61336eae6a6e84dc63a367da3aaf91e8":[5,0,77,1],
-"structformatter_3_01std_1_1chrono_1_1duration_3_01Rep_00_01Period_01_4_00_01Char_01_4.html#af5f36bee52319a4a42bfea75a762e3a7":[5,0,77,0],
-"structformatter_3_01std_1_1chrono_1_1time__point_3_01std_1_1chrono_1_1system__clock_00_01Duration_01_4_00_01Char_01_4.html":[5,0,78]
+"structformatter_3_01arg__join_3_01It_00_01Sentinel_00_01Char_01_4_00_01Char_01_4.html#a23f5abf8d0294cfd54205363b8124b64":[5,0,73,0]
 };

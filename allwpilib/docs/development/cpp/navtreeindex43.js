@@ -1,5 +1,16 @@
 var NAVTREEINDEX43 =
 {
+"structwpi_1_1make__const__ref.html#af6f8ac3ef9c325b6eab2514226195bab":[5,0,11,99,0],
+"structwpi_1_1object__creator.html":[5,0,11,108],
+"structwpi_1_1object__creator.html#a49667e3d91de7e8517aff15647316925":[5,0,11,108,0],
+"structwpi_1_1object__deleter.html":[5,0,11,109],
+"structwpi_1_1object__deleter.html#aef2af5cec19450adbbce4334d8cbff09":[5,0,11,109,0],
+"structwpi_1_1object__deleter_3_01T_0fN_0e_4.html":[5,0,11,110],
+"structwpi_1_1object__deleter_3_01T_0fN_0e_4.html#aba964fbdf6eb87d558456660d56cc5fb":[5,0,11,110,0],
+"structwpi_1_1on__first.html":[5,0,11,111],
+"structwpi_1_1on__first.html#a13ebd37e325d180bf7c8191632254e2a":[5,0,11,111,0],
+"structwpi_1_1on__first.html#a1935500c11d09f18c37206d455fe49ab":[5,0,11,111,1],
+"structwpi_1_1pair__hash.html":[5,0,11,113],
 "structwpi_1_1pair__hash.html#ae4b4fd4cf4171b8c98737eb9d962334b":[5,0,11,113,0],
 "structwpi_1_1pointee__iterator.html":[5,0,11,114],
 "structwpi_1_1pointee__iterator.html#a930e8619987258b66eb92cf2475cbee5":[5,0,11,114,1],

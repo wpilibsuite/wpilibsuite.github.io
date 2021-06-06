@@ -1,5 +1,16 @@
 var NAVTREEINDEX35 =
 {
+"group__hal__dio.html#gaafeea1e3cfc600210c05026b80a89bb5":[3,0,11,6],
+"group__hal__dio.html#gabb11867f538bf13408f3caefc26da912":[3,0,11,10],
+"group__hal__dio.html#gacdacf394aaae6670167245e2801970c4":[3,0,11,17],
+"group__hal__dio.html#gacf78c6712e41431c772a61e6a5e64a54":[3,0,11,15],
+"group__hal__dio.html#gada62e9dda0fb6dae1151e78bda6dc426":[3,0,11,12],
+"group__hal__dio.html#gae39e0179d9f5068bb78ffbccb1901d8e":[3,0,11,18],
+"group__hal__driverstation.html":[3,0,3],
+"group__hal__driverstation.html#ga00603ecd30baaa0d0712488161a83f38":[3,0,3,10],
+"group__hal__driverstation.html#ga10e5c8ea5a1b890126167e9d352e9e0a":[3,0,3,7],
+"group__hal__driverstation.html#ga13435855e61c724e9708bdd90baee155":[3,0,3,28],
+"group__hal__driverstation.html#ga14a875e969edf0b14cfd47b4bf5520f7":[3,0,3,31],
 "group__hal__driverstation.html#ga17675749678926c6ecd3c62fb4da298c":[3,0,3,9],
 "group__hal__driverstation.html#ga1cbbdda947c9737a78cefff79524dac2":[3,0,3,19],
 "group__hal__driverstation.html#ga254ee88ecedb950c19314d855755fc2b":[3,0,3,22],
@@ -238,16 +249,5 @@ var NAVTREEINDEX35 =
 "group__hal__threads.html":[3,0,21],
 "group__hal__threads.html#ga24b740f1b297b0144e0362993e02e9c8":[3,0,21,3],
 "group__hal__threads.html#ga2c0fdc5179026e7027981764e60143fc":[3,0,21,0],
-"group__hal__threads.html#ga4cd4a92031d9cfdf085323c48338fdfc":[3,0,21,1],
-"group__hal__threads.html#ga997a73e6e65b1e5a9584921003044539":[3,0,21,2],
-"group__hal__types.html":[3,0,25],
-"group__ntcore__c__api.html":[3,1],
-"group__ntcore__c__api.html#ga3cca2867677bf312d4d8df4aa48a09d7":[3,1,23],
-"group__ntcore__c__api.html#ga3d0c2962b4afea3fff6d34d2b9995ff0":[3,1,22],
-"group__ntcore__c__api.html#ga5a37c1408d3bd3090edcfd497c00acbe":[3,1,24],
-"group__ntcore__c__api.html#ga625cf01c8aa4a321d9a4790033fc3846":[3,1,25],
-"group__ntcore__c__api.html#ga85e32a7c652ecd10ca642d78ec21e46a":[3,1,27],
-"group__ntcore__c__api.html#gaca5ac35ca784df4518df6fec4c3f82ad":[3,1,21],
-"group__ntcore__c__api.html#gad85a24a4cc529c300483f712ffccf6be":[3,1,26],
-"group__ntcore__connectionlistener__cfunc.html":[3,1,3]
+"group__hal__threads.html#ga4cd4a92031d9cfdf085323c48338fdfc":[3,0,21,1]
 };

@@ -200,6 +200,7 @@ var annotated_dup =
       [ "LinearQuadraticRegulator", "classfrc_1_1LinearQuadraticRegulator.html", "classfrc_1_1LinearQuadraticRegulator" ],
       [ "LinearQuadraticRegulator< 1, 1 >", "classfrc_1_1LinearQuadraticRegulator_3_011_00_011_01_4.html", "classfrc_1_1LinearQuadraticRegulator_3_011_00_011_01_4" ],
       [ "LinearQuadraticRegulator< 2, 1 >", "classfrc_1_1LinearQuadraticRegulator_3_012_00_011_01_4.html", "classfrc_1_1LinearQuadraticRegulator_3_012_00_011_01_4" ],
+      [ "LinearQuadraticRegulator< 2, 2 >", "classfrc_1_1LinearQuadraticRegulator_3_012_00_012_01_4.html", "classfrc_1_1LinearQuadraticRegulator_3_012_00_012_01_4" ],
       [ "LinearSystem", "classfrc_1_1LinearSystem.html", "classfrc_1_1LinearSystem" ],
       [ "LinearSystemId", "classfrc_1_1LinearSystemId.html", "classfrc_1_1LinearSystemId" ],
       [ "LinearSystemLoop", "classfrc_1_1LinearSystemLoop.html", "classfrc_1_1LinearSystemLoop" ],
