@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-90-gdea8411</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-91-g0e702eb</span>
    </div>
   </td>
  </tr>
@@ -140,9 +140,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gaade8717fd75e3de39ff698b246a7f595"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__ports.html#gaade8717fd75e3de39ff698b246a7f595">HAL_GetNumRelayHeaders</a> (void)</td></tr>
 <tr class="memdesc:gaade8717fd75e3de39ff698b246a7f595"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the number of relay headers in the current system.  <a href="group__hal__ports.html#gaade8717fd75e3de39ff698b246a7f595">More...</a><br /></td></tr>
 <tr class="separator:gaade8717fd75e3de39ff698b246a7f595"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaef6b76aa8cf965bb4999bd0bc1718de7"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__ports.html#gaef6b76aa8cf965bb4999bd0bc1718de7">HAL_GetNumPCMModules</a> (void)</td></tr>
-<tr class="memdesc:gaef6b76aa8cf965bb4999bd0bc1718de7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the number of PCM modules in the current system.  <a href="group__hal__ports.html#gaef6b76aa8cf965bb4999bd0bc1718de7">More...</a><br /></td></tr>
-<tr class="separator:gaef6b76aa8cf965bb4999bd0bc1718de7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0f0bb0071c9633961d49e3547b94619c"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__ports.html#ga0f0bb0071c9633961d49e3547b94619c">HAL_GetNumCTREPCMModules</a> (void)</td></tr>
+<tr class="memdesc:ga0f0bb0071c9633961d49e3547b94619c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the number of PCM modules in the current system.  <a href="group__hal__ports.html#ga0f0bb0071c9633961d49e3547b94619c">More...</a><br /></td></tr>
+<tr class="separator:ga0f0bb0071c9633961d49e3547b94619c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga97ee2222646f72407f6619367539e6ea"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__ports.html#ga97ee2222646f72407f6619367539e6ea">HAL_GetNumSolenoidChannels</a> (void)</td></tr>
 <tr class="memdesc:ga97ee2222646f72407f6619367539e6ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the number of solenoid channels in the current system.  <a href="group__hal__ports.html#ga97ee2222646f72407f6619367539e6ea">More...</a><br /></td></tr>
 <tr class="separator:ga97ee2222646f72407f6619367539e6ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -287,6 +287,27 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ga0f0bb0071c9633961d49e3547b94619c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0f0bb0071c9633961d49e3547b94619c">&#9670;&nbsp;</a></span>HAL_GetNumCTREPCMModules()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t HAL_GetNumCTREPCMModules </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the number of PCM modules in the current system. </p>
+<dl class="section return"><dt>Returns</dt><dd>the number of PCM modules </dd></dl>
+
+</div>
+</div>
 <a id="ga5c72a1106b4e8ef39bfa17a2146e93eb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga5c72a1106b4e8ef39bfa17a2146e93eb">&#9670;&nbsp;</a></span>HAL_GetNumDigitalChannels()</h2>
 
@@ -410,27 +431,6 @@ Functions</h2></td></tr>
 
 <p>Gets the number of interrupts in the current system. </p>
 <dl class="section return"><dt>Returns</dt><dd>the number of interrupts </dd></dl>
-
-</div>
-</div>
-<a id="gaef6b76aa8cf965bb4999bd0bc1718de7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaef6b76aa8cf965bb4999bd0bc1718de7">&#9670;&nbsp;</a></span>HAL_GetNumPCMModules()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int32_t HAL_GetNumPCMModules </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Gets the number of PCM modules in the current system. </p>
-<dl class="section return"><dt>Returns</dt><dd>the number of PCM modules </dd></dl>
 
 </div>
 </div>
@@ -586,7 +586,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Jun 6 2021 04:12:29 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 6 2021 05:38:31 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

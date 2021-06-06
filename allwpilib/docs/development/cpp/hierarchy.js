@@ -338,6 +338,7 @@ var hierarchy =
     [ "CS_VideoMode", "structCS__VideoMode.html", [
       [ "cs::VideoMode", "structcs_1_1VideoMode.html", null ]
     ] ],
+    [ "frc::sim::CTREPCMSim", "classfrc_1_1sim_1_1CTREPCMSim.html", null ],
     [ "custom_formatter< Char >", "structcustom__formatter.html", null ],
     [ "custom_value< Context >", "structcustom__value.html", null ],
     [ "frc::DCMotor", "classfrc_1_1DCMotor.html", null ],
@@ -394,7 +395,6 @@ var hierarchy =
     [ "ghc::filesystem::directory_iterator", "classghc_1_1filesystem_1_1directory__iterator.html", null ],
     [ "detail::dragonbox::divtest_table_entry< T >", "structdetail_1_1dragonbox_1_1divtest__table__entry.html", null ],
     [ "frc::DMA", "classfrc_1_1DMA.html", null ],
-    [ "frc::sim::DoubleSolenoidSim", "classfrc_1_1sim_1_1DoubleSolenoidSim.html", null ],
     [ "frc::DriverStation", "classfrc_1_1DriverStation.html", null ],
     [ "frc::sim::DriverStationSim", "classfrc_1_1sim_1_1DriverStationSim.html", null ],
     [ "frc::sim::DutyCycleEncoderSim", "classfrc_1_1sim_1_1DutyCycleEncoderSim.html", null ],
@@ -858,11 +858,11 @@ var hierarchy =
         ] ]
       ] ]
     ] ],
-    [ "wpi::circular_buffer< T >::iterator", "classwpi_1_1circular__buffer_1_1iterator.html", null ],
-    [ "wpi::static_circular_buffer< T, N >::iterator", "classwpi_1_1static__circular__buffer_1_1iterator.html", null ],
     [ "iterator", null, [
       [ "ghc::filesystem::path", "classghc_1_1filesystem_1_1path.html", null ]
     ] ],
+    [ "wpi::circular_buffer< T >::iterator", "classwpi_1_1circular__buffer_1_1iterator.html", null ],
+    [ "wpi::static_circular_buffer< T, N >::iterator", "classwpi_1_1static__circular__buffer_1_1iterator.html", null ],
     [ "iterator_facade_base< pointee_iterator< WrappedIteratorT, typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type, std::iterator_traits< WrappedIteratorT >::iterator_category, typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type, typename std::iterator_traits< WrappedIteratorT >::difference_type, typename std::conditional< std::is_same< typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type, typename std::iterator_traits< WrappedIteratorT >::value_type >::value, typename std::iterator_traits< WrappedIteratorT >::pointer, typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type * >::type, typename std::conditional< std::is_same< typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type, typename std::iterator_traits< WrappedIteratorT >::value_type >::value, typename std::iterator_traits< WrappedIteratorT >::reference, typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type & >::type >", null, [
       [ "wpi::iterator_adaptor_base< pointee_iterator< WrappedIteratorT, typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type >, WrappedIteratorT, std::iterator_traits< WrappedIteratorT >::iterator_category, typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type >", "classwpi_1_1iterator__adaptor__base.html", [
         [ "wpi::pointee_iterator< WrappedIteratorT, T >", "structwpi_1_1pointee__iterator.html", null ]
@@ -1039,7 +1039,6 @@ var hierarchy =
     ] ],
     [ "wpi::pair_hash< First, Second >", "structwpi_1_1pair__hash.html", null ],
     [ "ghc::filesystem::path_helper_base< char_type >", "classghc_1_1filesystem_1_1path__helper__base.html", null ],
-    [ "frc::sim::PCMSim", "classfrc_1_1sim_1_1PCMSim.html", null ],
     [ "frc::sim::PDPSim", "classfrc_1_1sim_1_1PDPSim.html", null ],
     [ "wpi::support::detail::PickAlignment< T, alignment >", "structwpi_1_1support_1_1detail_1_1PickAlignment.html", null ],
     [ "frc::PIDInterface", "classfrc_1_1PIDInterface.html", [
@@ -1055,6 +1054,9 @@ var hierarchy =
     [ "frc::PIDSource", "classfrc_1_1PIDSource.html", [
       [ "frc::PIDCommand", "classfrc_1_1PIDCommand.html", null ],
       [ "frc::PIDSubsystem", "classfrc_1_1PIDSubsystem.html", null ]
+    ] ],
+    [ "frc::PneumaticsBase", "classfrc_1_1PneumaticsBase.html", [
+      [ "frc::PneumaticsControlModule", "classfrc_1_1PneumaticsControlModule.html", null ]
     ] ],
     [ "wpi::PointerIntPair< PointerTy, IntBits, IntType, PtrTraits, Info >", "classwpi_1_1PointerIntPair.html", null ],
     [ "wpi::PointerIntPair< void *, 1, bool, PointerUnionUIntTraits< InnerUnion, PT3 > >", "classwpi_1_1PointerIntPair.html", null ],
@@ -1236,7 +1238,6 @@ var hierarchy =
         [ "frc::WaitForChildren", "classfrc_1_1WaitForChildren.html", null ],
         [ "frc::WaitUntilCommand", "classfrc_1_1WaitUntilCommand.html", null ]
       ] ],
-      [ "frc::Compressor", "classfrc_1_1Compressor.html", null ],
       [ "frc::Counter", "classfrc_1_1Counter.html", null ],
       [ "frc::DifferentialDrive", "classfrc_1_1DifferentialDrive.html", null ],
       [ "frc::DigitalGlitchFilter", "classfrc_1_1DigitalGlitchFilter.html", null ],
@@ -1332,9 +1333,6 @@ var hierarchy =
     ] ],
     [ "frc::SendableHelper< CommandScheduler >", "classfrc_1_1SendableHelper.html", [
       [ "frc2::CommandScheduler", "classfrc2_1_1CommandScheduler.html", null ]
-    ] ],
-    [ "frc::SendableHelper< Compressor >", "classfrc_1_1SendableHelper.html", [
-      [ "frc::Compressor", "classfrc_1_1Compressor.html", null ]
     ] ],
     [ "frc::SendableHelper< Counter >", "classfrc_1_1SendableHelper.html", [
       [ "frc::Counter", "classfrc_1_1Counter.html", null ]
@@ -1637,11 +1635,6 @@ var hierarchy =
     [ "wpi::SmallVectorStorage< wpi::uv::Buffer, N >", "structwpi_1_1SmallVectorStorage.html", [
       [ "wpi::SmallVector< wpi::uv::Buffer, 4 >", "classwpi_1_1SmallVector.html", null ]
     ] ],
-    [ "frc::SolenoidBase", "classfrc_1_1SolenoidBase.html", [
-      [ "frc::DoubleSolenoid", "classfrc_1_1DoubleSolenoid.html", null ],
-      [ "frc::Solenoid", "classfrc_1_1Solenoid.html", null ]
-    ] ],
-    [ "frc::sim::SolenoidSim", "classfrc_1_1sim_1_1SolenoidSim.html", null ],
     [ "ghc::filesystem::space_info", "structghc_1_1filesystem_1_1space__info.html", null ],
     [ "wpi::span< ElementType, Extent >", "classwpi_1_1span.html", null ],
     [ "wpi::detail::span_storage< E, S >", "structwpi_1_1detail_1_1span__storage.html", null ],
@@ -1672,8 +1665,8 @@ var hierarchy =
     ] ],
     [ "frc::SplineHelper", "classfrc_1_1SplineHelper.html", null ],
     [ "frc::SplineParameterizer", "classfrc_1_1SplineParameterizer.html", null ],
-    [ "frc::Trajectory::State", "structfrc_1_1Trajectory_1_1State.html", null ],
     [ "frc::sim::DifferentialDrivetrainSim::State", "classfrc_1_1sim_1_1DifferentialDrivetrainSim_1_1State.html", null ],
+    [ "frc::Trajectory::State", "structfrc_1_1Trajectory_1_1State.html", null ],
     [ "frc::TrapezoidProfile< Distance >::State", "classfrc_1_1TrapezoidProfile_1_1State.html", null ],
     [ "wpi::static_circular_buffer< T, N >", "classwpi_1_1static__circular__buffer.html", null ],
     [ "wpi::detail::static_const< T >", "structwpi_1_1detail_1_1static__const.html", null ],
@@ -1808,8 +1801,8 @@ var hierarchy =
     [ "wpi::validate_format_parameters< Args >", "structwpi_1_1validate__format__parameters.html", null ],
     [ "wpi::validate_format_parameters< Arg, Args... >", "structwpi_1_1validate__format__parameters_3_01Arg_00_01Args_8_8_8_01_4.html", null ],
     [ "wpi::validate_format_parameters<>", "structwpi_1_1validate__format__parameters_3_4.html", null ],
-    [ "arg_ref< Char >::value", "unionarg__ref_1_1value.html", null ],
     [ "value< Context >", "classvalue.html", null ],
+    [ "arg_ref< Char >::value", "unionarg__ref_1_1value.html", null ],
     [ "nt::Value", "classnt_1_1Value.html", null ],
     [ "detail::counting_iterator::value_type", "structdetail_1_1counting__iterator_1_1value__type.html", null ],
     [ "frc::Vector2d", "structfrc_1_1Vector2d.html", null ],
@@ -1845,9 +1838,9 @@ var hierarchy =
     [ "wpi::sig::trait::detail::voider<... >", "structwpi_1_1sig_1_1trait_1_1detail_1_1voider.html", null ],
     [ "frc::Watchdog", "classfrc_1_1Watchdog.html", null ],
     [ "wpi::WebSocketServerHelper", "classwpi_1_1WebSocketServerHelper.html", null ],
-    [ "frc::MecanumDrive::WheelSpeeds", "structfrc_1_1MecanumDrive_1_1WheelSpeeds.html", null ],
-    [ "frc::KilloughDrive::WheelSpeeds", "structfrc_1_1KilloughDrive_1_1WheelSpeeds.html", null ],
     [ "frc::DifferentialDrive::WheelSpeeds", "structfrc_1_1DifferentialDrive_1_1WheelSpeeds.html", null ],
+    [ "frc::KilloughDrive::WheelSpeeds", "structfrc_1_1KilloughDrive_1_1WheelSpeeds.html", null ],
+    [ "frc::MecanumDrive::WheelSpeeds", "structfrc_1_1MecanumDrive_1_1WheelSpeeds.html", null ],
     [ "frc::WidgetType", "classfrc_1_1WidgetType.html", null ],
     [ "width_checker< ErrorHandler >", "classwidth__checker.html", null ],
     [ "wpi::WorkerThread< T >", "classwpi_1_1WorkerThread.html", null ],

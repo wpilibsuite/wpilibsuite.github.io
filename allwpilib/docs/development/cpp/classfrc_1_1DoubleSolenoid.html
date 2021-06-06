@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-90-gdea8411</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-91-g0e702eb</span>
    </div>
   </td>
  </tr>
@@ -108,9 +108,8 @@ Inheritance diagram for frc::DoubleSolenoid:</div>
  <div class="center">
   <img src="classfrc_1_1DoubleSolenoid.png" usemap="#frc::DoubleSolenoid_map" alt=""/>
   <map id="frc::DoubleSolenoid_map" name="frc::DoubleSolenoid_map">
-<area href="classfrc_1_1SolenoidBase.html" title="SolenoidBase class is the common base class for the Solenoid and DoubleSolenoid classes." alt="frc::SolenoidBase" shape="rect" coords="0,0,238,24"/>
-<area href="classfrc_1_1Sendable.html" title="Interface for Sendable objects." alt="frc::Sendable" shape="rect" coords="248,0,486,24"/>
-<area href="classfrc_1_1SendableHelper.html" alt="frc::SendableHelper&lt; DoubleSolenoid &gt;" shape="rect" coords="496,0,734,24"/>
+<area href="classfrc_1_1Sendable.html" title="Interface for Sendable objects." alt="frc::Sendable" shape="rect" coords="0,0,238,24"/>
+<area href="classfrc_1_1SendableHelper.html" alt="frc::SendableHelper&lt; DoubleSolenoid &gt;" shape="rect" coords="248,0,486,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -124,12 +123,15 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a08376011bc958554bb88cecda1b71208"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1DoubleSolenoid.html#a08376011bc958554bb88cecda1b71208">DoubleSolenoid</a> (int forwardChannel, int reverseChannel)</td></tr>
-<tr class="memdesc:a08376011bc958554bb88cecda1b71208"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classfrc_1_1DoubleSolenoid.html#a08376011bc958554bb88cecda1b71208">More...</a><br /></td></tr>
-<tr class="separator:a08376011bc958554bb88cecda1b71208"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08adf7203f2a4810f41a947f62a54aee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1DoubleSolenoid.html#a08adf7203f2a4810f41a947f62a54aee">DoubleSolenoid</a> (int moduleNumber, int forwardChannel, int reverseChannel)</td></tr>
-<tr class="memdesc:a08adf7203f2a4810f41a947f62a54aee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classfrc_1_1DoubleSolenoid.html#a08adf7203f2a4810f41a947f62a54aee">More...</a><br /></td></tr>
-<tr class="separator:a08adf7203f2a4810f41a947f62a54aee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a269331ea7786ea5d651dc8162afd69de"><td class="memItemLeft" align="right" valign="top"><a id="a269331ea7786ea5d651dc8162afd69de"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DoubleSolenoid</b> (<a class="el" href="classfrc_1_1PneumaticsBase.html">PneumaticsBase</a> &amp;module, int forwardChannel, int reverseChannel)</td></tr>
+<tr class="separator:a269331ea7786ea5d651dc8162afd69de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1e549041a06c2a51b47dcc42a8941cd"><td class="memItemLeft" align="right" valign="top"><a id="ac1e549041a06c2a51b47dcc42a8941cd"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DoubleSolenoid</b> (<a class="el" href="classfrc_1_1PneumaticsBase.html">PneumaticsBase</a> *module, int forwardChannel, int reverseChannel)</td></tr>
+<tr class="separator:ac1e549041a06c2a51b47dcc42a8941cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc8c08299007140580b7424b0c7fd8f7"><td class="memItemLeft" align="right" valign="top"><a id="abc8c08299007140580b7424b0c7fd8f7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DoubleSolenoid</b> (std::shared_ptr&lt; <a class="el" href="classfrc_1_1PneumaticsBase.html">PneumaticsBase</a> &gt; module, int forwardChannel, int reverseChannel)</td></tr>
+<tr class="separator:abc8c08299007140580b7424b0c7fd8f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a648a1af816cc1bca8e9c54f7b2ffe908"><td class="memItemLeft" align="right" valign="top"><a id="a648a1af816cc1bca8e9c54f7b2ffe908"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>DoubleSolenoid</b> (<a class="el" href="classfrc_1_1DoubleSolenoid.html">DoubleSolenoid</a> &amp;&amp;)=default</td></tr>
 <tr class="separator:a648a1af816cc1bca8e9c54f7b2ffe908"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,32 +153,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aed301265eb12da821fcbf904b3c31452"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1DoubleSolenoid.html#aed301265eb12da821fcbf904b3c31452">GetRevChannel</a> () const</td></tr>
 <tr class="memdesc:aed301265eb12da821fcbf904b3c31452"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the reverse channel.  <a href="classfrc_1_1DoubleSolenoid.html#aed301265eb12da821fcbf904b3c31452">More...</a><br /></td></tr>
 <tr class="separator:aed301265eb12da821fcbf904b3c31452"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaefc5ac6379dc587300f2d71c18983a6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1DoubleSolenoid.html#aaefc5ac6379dc587300f2d71c18983a6">IsFwdSolenoidBlackListed</a> () const</td></tr>
-<tr class="memdesc:aaefc5ac6379dc587300f2d71c18983a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the forward solenoid is blacklisted.  <a href="classfrc_1_1DoubleSolenoid.html#aaefc5ac6379dc587300f2d71c18983a6">More...</a><br /></td></tr>
-<tr class="separator:aaefc5ac6379dc587300f2d71c18983a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8912756b195312121d54ec4d25022f6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1DoubleSolenoid.html#ad8912756b195312121d54ec4d25022f6">IsRevSolenoidBlackListed</a> () const</td></tr>
-<tr class="memdesc:ad8912756b195312121d54ec4d25022f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the reverse solenoid is blacklisted.  <a href="classfrc_1_1DoubleSolenoid.html#ad8912756b195312121d54ec4d25022f6">More...</a><br /></td></tr>
-<tr class="separator:ad8912756b195312121d54ec4d25022f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a090d9ea97a7f6e6769fbdd07ad1b0401"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1DoubleSolenoid.html#a090d9ea97a7f6e6769fbdd07ad1b0401">IsFwdSolenoidDisabled</a> () const</td></tr>
+<tr class="memdesc:a090d9ea97a7f6e6769fbdd07ad1b0401"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the forward solenoid is Disabled.  <a href="classfrc_1_1DoubleSolenoid.html#a090d9ea97a7f6e6769fbdd07ad1b0401">More...</a><br /></td></tr>
+<tr class="separator:a090d9ea97a7f6e6769fbdd07ad1b0401"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bc3b8619f998f760c45e8d4644694d6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1DoubleSolenoid.html#a4bc3b8619f998f760c45e8d4644694d6">IsRevSolenoidDisabled</a> () const</td></tr>
+<tr class="memdesc:a4bc3b8619f998f760c45e8d4644694d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the reverse solenoid is Disabled.  <a href="classfrc_1_1DoubleSolenoid.html#a4bc3b8619f998f760c45e8d4644694d6">More...</a><br /></td></tr>
+<tr class="separator:a4bc3b8619f998f760c45e8d4644694d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e664de9c44d6b91b6d36cdcc8b2df7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1DoubleSolenoid.html#a0e664de9c44d6b91b6d36cdcc8b2df7b">InitSendable</a> (<a class="el" href="classfrc_1_1SendableBuilder.html">SendableBuilder</a> &amp;builder) override</td></tr>
 <tr class="memdesc:a0e664de9c44d6b91b6d36cdcc8b2df7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes this <a class="el" href="classfrc_1_1Sendable.html" title="Interface for Sendable objects.">Sendable</a> object.  <a href="classfrc_1_1DoubleSolenoid.html#a0e664de9c44d6b91b6d36cdcc8b2df7b">More...</a><br /></td></tr>
 <tr class="separator:a0e664de9c44d6b91b6d36cdcc8b2df7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classfrc_1_1SolenoidBase"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classfrc_1_1SolenoidBase')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classfrc_1_1SolenoidBase.html">frc::SolenoidBase</a></td></tr>
-<tr class="memitem:a7ebb23273075d87bc30e06f273f7f9d9 inherit pub_methods_classfrc_1_1SolenoidBase"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SolenoidBase.html#a7ebb23273075d87bc30e06f273f7f9d9">GetModuleNumber</a> () const</td></tr>
-<tr class="memdesc:a7ebb23273075d87bc30e06f273f7f9d9 inherit pub_methods_classfrc_1_1SolenoidBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the <a class="el" href="classfrc_1_1CAN.html" title="High level class for interfacing with CAN devices conforming to the standard CAN spec.">CAN</a> ID of the module this solenoid is connected to.  <a href="classfrc_1_1SolenoidBase.html#a7ebb23273075d87bc30e06f273f7f9d9">More...</a><br /></td></tr>
-<tr class="separator:a7ebb23273075d87bc30e06f273f7f9d9 inherit pub_methods_classfrc_1_1SolenoidBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a110d2f1b008dd31624dffba35dcc356f inherit pub_methods_classfrc_1_1SolenoidBase"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SolenoidBase.html#a110d2f1b008dd31624dffba35dcc356f">GetAll</a> () const</td></tr>
-<tr class="memdesc:a110d2f1b008dd31624dffba35dcc356f inherit pub_methods_classfrc_1_1SolenoidBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read all 8 solenoids as a single byte.  <a href="classfrc_1_1SolenoidBase.html#a110d2f1b008dd31624dffba35dcc356f">More...</a><br /></td></tr>
-<tr class="separator:a110d2f1b008dd31624dffba35dcc356f inherit pub_methods_classfrc_1_1SolenoidBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72a3ce08d06ae5b589ac99a6781151a0 inherit pub_methods_classfrc_1_1SolenoidBase"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SolenoidBase.html#a72a3ce08d06ae5b589ac99a6781151a0">GetPCMSolenoidBlackList</a> () const</td></tr>
-<tr class="memdesc:a72a3ce08d06ae5b589ac99a6781151a0 inherit pub_methods_classfrc_1_1SolenoidBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads complete solenoid blacklist for all 8 solenoids as a single byte.  <a href="classfrc_1_1SolenoidBase.html#a72a3ce08d06ae5b589ac99a6781151a0">More...</a><br /></td></tr>
-<tr class="separator:a72a3ce08d06ae5b589ac99a6781151a0 inherit pub_methods_classfrc_1_1SolenoidBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91f901415e1280ff82f8cf53eeeced3c inherit pub_methods_classfrc_1_1SolenoidBase"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SolenoidBase.html#a91f901415e1280ff82f8cf53eeeced3c">GetPCMSolenoidVoltageStickyFault</a> () const</td></tr>
-<tr class="separator:a91f901415e1280ff82f8cf53eeeced3c inherit pub_methods_classfrc_1_1SolenoidBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9eecfef720b31ccb05a3581628d589d9 inherit pub_methods_classfrc_1_1SolenoidBase"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SolenoidBase.html#a9eecfef720b31ccb05a3581628d589d9">GetPCMSolenoidVoltageFault</a> () const</td></tr>
-<tr class="separator:a9eecfef720b31ccb05a3581628d589d9 inherit pub_methods_classfrc_1_1SolenoidBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0460c587bc42fb20628a0684d18cb93 inherit pub_methods_classfrc_1_1SolenoidBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SolenoidBase.html#ac0460c587bc42fb20628a0684d18cb93">ClearAllPCMStickyFaults</a> ()</td></tr>
-<tr class="memdesc:ac0460c587bc42fb20628a0684d18cb93 inherit pub_methods_classfrc_1_1SolenoidBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear ALL sticky faults inside PCM that <a class="el" href="classfrc_1_1Compressor.html" title="Class for operating a compressor connected to a PCM (Pneumatic Control Module).">Compressor</a> is wired to.  <a href="classfrc_1_1SolenoidBase.html#ac0460c587bc42fb20628a0684d18cb93">More...</a><br /></td></tr>
-<tr class="separator:ac0460c587bc42fb20628a0684d18cb93 inherit pub_methods_classfrc_1_1SolenoidBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classfrc_1_1SendableHelper"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classfrc_1_1SendableHelper')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classfrc_1_1SendableHelper.html">frc::SendableHelper&lt; DoubleSolenoid &gt;</a></td></tr>
 <tr class="memitem:a6a5f84ae33f2a458cb5247eac6c3586a inherit pub_methods_classfrc_1_1SendableHelper"><td class="memItemLeft" align="right" valign="top"><a id="a6a5f84ae33f2a458cb5247eac6c3586a"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SendableHelper</b> (const <a class="el" href="classfrc_1_1SendableHelper.html">SendableHelper</a> &amp;rhs)=default</td></tr>
@@ -208,30 +193,6 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_static_methods_classfrc_1_1SolenoidBase"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classfrc_1_1SolenoidBase')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classfrc_1_1SolenoidBase.html">frc::SolenoidBase</a></td></tr>
-<tr class="memitem:a0ba56b5dcb5612d92a4845511a5fdee7 inherit pub_static_methods_classfrc_1_1SolenoidBase"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SolenoidBase.html#a0ba56b5dcb5612d92a4845511a5fdee7">GetAll</a> (int module)</td></tr>
-<tr class="memdesc:a0ba56b5dcb5612d92a4845511a5fdee7 inherit pub_static_methods_classfrc_1_1SolenoidBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read all 8 solenoids as a single byte.  <a href="classfrc_1_1SolenoidBase.html#a0ba56b5dcb5612d92a4845511a5fdee7">More...</a><br /></td></tr>
-<tr class="separator:a0ba56b5dcb5612d92a4845511a5fdee7 inherit pub_static_methods_classfrc_1_1SolenoidBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37e2030a6ba4630b0979b9847c35f2d5 inherit pub_static_methods_classfrc_1_1SolenoidBase"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SolenoidBase.html#a37e2030a6ba4630b0979b9847c35f2d5">GetPCMSolenoidBlackList</a> (int module)</td></tr>
-<tr class="memdesc:a37e2030a6ba4630b0979b9847c35f2d5 inherit pub_static_methods_classfrc_1_1SolenoidBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads complete solenoid blacklist for all 8 solenoids as a single byte.  <a href="classfrc_1_1SolenoidBase.html#a37e2030a6ba4630b0979b9847c35f2d5">More...</a><br /></td></tr>
-<tr class="separator:a37e2030a6ba4630b0979b9847c35f2d5 inherit pub_static_methods_classfrc_1_1SolenoidBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8df2d18a118258f4e1b9b2d8ffce42f8 inherit pub_static_methods_classfrc_1_1SolenoidBase"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SolenoidBase.html#a8df2d18a118258f4e1b9b2d8ffce42f8">GetPCMSolenoidVoltageStickyFault</a> (int module)</td></tr>
-<tr class="separator:a8df2d18a118258f4e1b9b2d8ffce42f8 inherit pub_static_methods_classfrc_1_1SolenoidBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a128a7719c4cee685feca80117f4b0c9f inherit pub_static_methods_classfrc_1_1SolenoidBase"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SolenoidBase.html#a128a7719c4cee685feca80117f4b0c9f">GetPCMSolenoidVoltageFault</a> (int module)</td></tr>
-<tr class="separator:a128a7719c4cee685feca80117f4b0c9f inherit pub_static_methods_classfrc_1_1SolenoidBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c3427788b562c3c5fdd18c022f845d4 inherit pub_static_methods_classfrc_1_1SolenoidBase"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SolenoidBase.html#a1c3427788b562c3c5fdd18c022f845d4">ClearAllPCMStickyFaults</a> (int module)</td></tr>
-<tr class="memdesc:a1c3427788b562c3c5fdd18c022f845d4 inherit pub_static_methods_classfrc_1_1SolenoidBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear ALL sticky faults inside PCM that <a class="el" href="classfrc_1_1Compressor.html" title="Class for operating a compressor connected to a PCM (Pneumatic Control Module).">Compressor</a> is wired to.  <a href="classfrc_1_1SolenoidBase.html#a1c3427788b562c3c5fdd18c022f845d4">More...</a><br /></td></tr>
-<tr class="separator:a1c3427788b562c3c5fdd18c022f845d4 inherit pub_static_methods_classfrc_1_1SolenoidBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_classfrc_1_1SolenoidBase"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classfrc_1_1SolenoidBase')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classfrc_1_1SolenoidBase.html">frc::SolenoidBase</a></td></tr>
-<tr class="memitem:a613c7a45b7ef3a4456534fb17e314ad3 inherit pro_methods_classfrc_1_1SolenoidBase"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SolenoidBase.html#a613c7a45b7ef3a4456534fb17e314ad3">SolenoidBase</a> (int pcmID)</td></tr>
-<tr class="memdesc:a613c7a45b7ef3a4456534fb17e314ad3 inherit pro_methods_classfrc_1_1SolenoidBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classfrc_1_1SolenoidBase.html#a613c7a45b7ef3a4456534fb17e314ad3">More...</a><br /></td></tr>
-<tr class="separator:a613c7a45b7ef3a4456534fb17e314ad3 inherit pro_methods_classfrc_1_1SolenoidBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad18129b85a191790cacdbbd3699972c3 inherit pro_methods_classfrc_1_1SolenoidBase"><td class="memItemLeft" align="right" valign="top"><a id="ad18129b85a191790cacdbbd3699972c3"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SolenoidBase</b> (<a class="el" href="classfrc_1_1SolenoidBase.html">SolenoidBase</a> &amp;&amp;)=default</td></tr>
-<tr class="separator:ad18129b85a191790cacdbbd3699972c3 inherit pro_methods_classfrc_1_1SolenoidBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affce595792540e864012e0194e2cb512 inherit pro_methods_classfrc_1_1SolenoidBase"><td class="memItemLeft" align="right" valign="top"><a id="affce595792540e864012e0194e2cb512"></a>
-<a class="el" href="classfrc_1_1SolenoidBase.html">SolenoidBase</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classfrc_1_1SolenoidBase.html">SolenoidBase</a> &amp;&amp;)=default</td></tr>
-<tr class="separator:affce595792540e864012e0194e2cb512 inherit pro_methods_classfrc_1_1SolenoidBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classfrc_1_1SendableHelper"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classfrc_1_1SendableHelper')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classfrc_1_1SendableHelper.html">frc::SendableHelper&lt; DoubleSolenoid &gt;</a></td></tr>
 <tr class="memitem:a0a510c55cb79b74dc0892230ddd17344 inherit pro_methods_classfrc_1_1SendableHelper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SendableHelper.html#a0a510c55cb79b74dc0892230ddd17344">SetName</a> (std::string_view moduleType, int channel)</td></tr>
 <tr class="memdesc:a0a510c55cb79b74dc0892230ddd17344 inherit pro_methods_classfrc_1_1SendableHelper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name of the sensor with a channel number.  <a href="classfrc_1_1SendableHelper.html#a0a510c55cb79b74dc0892230ddd17344">More...</a><br /></td></tr>
@@ -245,113 +206,11 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a6e4d57269484510fc5c2ab7cd4862c61 inherit pro_methods_classfrc_1_1SendableHelper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SendableHelper.html#a6e4d57269484510fc5c2ab7cd4862c61">AddChild</a> (void *child)</td></tr>
 <tr class="memdesc:a6e4d57269484510fc5c2ab7cd4862c61 inherit pro_methods_classfrc_1_1SendableHelper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a child component.  <a href="classfrc_1_1SendableHelper.html#a6e4d57269484510fc5c2ab7cd4862c61">More...</a><br /></td></tr>
 <tr class="separator:a6e4d57269484510fc5c2ab7cd4862c61 inherit pro_methods_classfrc_1_1SendableHelper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_classfrc_1_1SolenoidBase"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classfrc_1_1SolenoidBase')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classfrc_1_1SolenoidBase.html">frc::SolenoidBase</a></td></tr>
-<tr class="memitem:a718d82054b4a972a88b3035d73495185 inherit pro_attribs_classfrc_1_1SolenoidBase"><td class="memItemLeft" align="right" valign="top"><a id="a718d82054b4a972a88b3035d73495185"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>m_moduleNumber</b></td></tr>
-<tr class="separator:a718d82054b4a972a88b3035d73495185 inherit pro_attribs_classfrc_1_1SolenoidBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_static_attribs_classfrc_1_1SolenoidBase"><td colspan="2" onclick="javascript:toggleInherit('pro_static_attribs_classfrc_1_1SolenoidBase')"><img src="closed.png" alt="-"/>&#160;Static Protected Attributes inherited from <a class="el" href="classfrc_1_1SolenoidBase.html">frc::SolenoidBase</a></td></tr>
-<tr class="memitem:a58c990143f8fd18e8242aa370dfde351 inherit pro_static_attribs_classfrc_1_1SolenoidBase"><td class="memItemLeft" align="right" valign="top"><a id="a58c990143f8fd18e8242aa370dfde351"></a>
-static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>m_maxModules</b> = 63</td></tr>
-<tr class="separator:a58c990143f8fd18e8242aa370dfde351 inherit pro_static_attribs_classfrc_1_1SolenoidBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1389aec427a9b5eb5507b752e1f944e9 inherit pro_static_attribs_classfrc_1_1SolenoidBase"><td class="memItemLeft" align="right" valign="top"><a id="a1389aec427a9b5eb5507b752e1f944e9"></a>
-static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>m_maxPorts</b> = 8</td></tr>
-<tr class="separator:a1389aec427a9b5eb5507b752e1f944e9 inherit pro_static_attribs_classfrc_1_1SolenoidBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classfrc_1_1DoubleSolenoid.html" title="DoubleSolenoid class for running 2 channels of high voltage Digital Output (PCM).">DoubleSolenoid</a> class for running 2 channels of high voltage Digital Output (PCM). </p>
 <p>The <a class="el" href="classfrc_1_1DoubleSolenoid.html" title="DoubleSolenoid class for running 2 channels of high voltage Digital Output (PCM).">DoubleSolenoid</a> class is typically used for pneumatics solenoids that have two positions controlled by two separate channels. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a08376011bc958554bb88cecda1b71208"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a08376011bc958554bb88cecda1b71208">&#9670;&nbsp;</a></span>DoubleSolenoid() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">frc::DoubleSolenoid::DoubleSolenoid </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>forwardChannel</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>reverseChannel</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Constructor. </p>
-<p>Uses the default PCM ID of 0.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">forwardChannel</td><td>The forward channel number on the PCM (0..7). </td></tr>
-    <tr><td class="paramname">reverseChannel</td><td>The reverse channel number on the PCM (0..7). </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a08adf7203f2a4810f41a947f62a54aee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a08adf7203f2a4810f41a947f62a54aee">&#9670;&nbsp;</a></span>DoubleSolenoid() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">frc::DoubleSolenoid::DoubleSolenoid </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>moduleNumber</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>forwardChannel</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>reverseChannel</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Constructor. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">moduleNumber</td><td>The <a class="el" href="classfrc_1_1CAN.html" title="High level class for interfacing with CAN devices conforming to the standard CAN spec.">CAN</a> ID of the PCM. </td></tr>
-    <tr><td class="paramname">forwardChannel</td><td>The forward channel on the PCM to control (0..7). </td></tr>
-    <tr><td class="paramname">reverseChannel</td><td>The reverse channel on the PCM to control (0..7). </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aa5743c88d07c37e5137ccbde13e53f43"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa5743c88d07c37e5137ccbde13e53f43">&#9670;&nbsp;</a></span>Get()</h2>
 
@@ -456,14 +315,14 @@ static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>m_max
 
 </div>
 </div>
-<a id="aaefc5ac6379dc587300f2d71c18983a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaefc5ac6379dc587300f2d71c18983a6">&#9670;&nbsp;</a></span>IsFwdSolenoidBlackListed()</h2>
+<a id="a090d9ea97a7f6e6769fbdd07ad1b0401"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a090d9ea97a7f6e6769fbdd07ad1b0401">&#9670;&nbsp;</a></span>IsFwdSolenoidDisabled()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool frc::DoubleSolenoid::IsFwdSolenoidBlackListed </td>
+          <td class="memname">bool frc::DoubleSolenoid::IsFwdSolenoidDisabled </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -471,21 +330,21 @@ static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>m_max
       </table>
 </div><div class="memdoc">
 
-<p>Check if the forward solenoid is blacklisted. </p>
-<p>If a solenoid is shorted, it is added to the blacklist and disabled until power cycle, or until faults are cleared.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classfrc_1_1SolenoidBase.html#ac0460c587bc42fb20628a0684d18cb93" title="Clear ALL sticky faults inside PCM that Compressor is wired to.">ClearAllPCMStickyFaults()</a> </dd></dl>
+<p>Check if the forward solenoid is Disabled. </p>
+<p>If a solenoid is shorted, it is added to the DisabledList and disabled until power cycle, or until faults are cleared.</p>
+<dl class="section see"><dt>See also</dt><dd>ClearAllPCMStickyFaults() </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>If solenoid is disabled due to short. </dd></dl>
 
 </div>
 </div>
-<a id="ad8912756b195312121d54ec4d25022f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8912756b195312121d54ec4d25022f6">&#9670;&nbsp;</a></span>IsRevSolenoidBlackListed()</h2>
+<a id="a4bc3b8619f998f760c45e8d4644694d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bc3b8619f998f760c45e8d4644694d6">&#9670;&nbsp;</a></span>IsRevSolenoidDisabled()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool frc::DoubleSolenoid::IsRevSolenoidBlackListed </td>
+          <td class="memname">bool frc::DoubleSolenoid::IsRevSolenoidDisabled </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -493,9 +352,9 @@ static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>m_max
       </table>
 </div><div class="memdoc">
 
-<p>Check if the reverse solenoid is blacklisted. </p>
-<p>If a solenoid is shorted, it is added to the blacklist and disabled until power cycle, or until faults are cleared.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classfrc_1_1SolenoidBase.html#ac0460c587bc42fb20628a0684d18cb93" title="Clear ALL sticky faults inside PCM that Compressor is wired to.">ClearAllPCMStickyFaults()</a> </dd></dl>
+<p>Check if the reverse solenoid is Disabled. </p>
+<p>If a solenoid is shorted, it is added to the DisabledList and disabled until power cycle, or until faults are cleared.</p>
+<dl class="section see"><dt>See also</dt><dd>ClearAllPCMStickyFaults() </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>If solenoid is disabled due to short. </dd></dl>
 
 </div>
@@ -563,7 +422,7 @@ static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>m_max
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1DoubleSolenoid.html">DoubleSolenoid</a></li>
-    <li class="footer">Generated on Sun Jun 6 2021 04:12:30 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 6 2021 05:38:32 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

@@ -2,6 +2,7 @@ var group__hal__capi =
 [
     [ "Ports Functions", "group__hal__ports.html", "group__hal__ports" ],
     [ "Analog Accumulator Functions", "group__hal__analogaccumulator.html", "group__hal__analogaccumulator" ],
+    [ "CTRE PCM Functions", "group__hal__ctre__pcm.html", null ],
     [ "Driver Station Functions", "group__hal__driverstation.html", "group__hal__driverstation" ],
     [ "Counter Functions", "group__hal__counter.html", "group__hal__counter" ],
     [ "I2C Functions", "group__hal__i2c.html", "group__hal__i2c" ],
@@ -22,7 +23,6 @@ var group__hal__capi =
     [ "Analog Gyro Functions", "group__hal__analoggyro.html", "group__hal__analoggyro" ],
     [ "Threads Functions", "group__hal__threads.html", "group__hal__threads" ],
     [ "Interrupts Functions", "group__hal__interrupts.html", "group__hal__interrupts" ],
-    [ "Solenoid Output Functions", "group__hal__solenoid.html", "group__hal__solenoid" ],
     [ "Constants Functions", "group__hal__constants.html", "group__hal__constants" ],
     [ "Encoder Functions", "group__hal__encoder.html", "group__hal__encoder" ],
     [ "Type Definitions", "group__hal__types.html", null ],
@@ -31,7 +31,6 @@ var group__hal__capi =
     [ "Error Defines", "group__hal__errors.html", null ],
     [ "Analog Trigger Functions", "group__hal__analogtrigger.html", "group__hal__analogtrigger" ],
     [ "DutyCycle Functions", "group__hal__dutycycle.html", "group__hal__dutycycle" ],
-    [ "Compressor Functions", "group__hal__compressor.html", "group__hal__compressor" ],
     [ "HAL_ExpandFPGATime", "group__hal__capi.html#ga285eaaf1e64b3d11ff692eec2454cfe4", null ],
     [ "HAL_GetBrownedOut", "group__hal__capi.html#gaa08f0d857909be9eb98cdb71189eca0c", null ],
     [ "HAL_GetErrorMessage", "group__hal__capi.html#ga353fed1ef0582ec7418d21a458042e67", null ],
