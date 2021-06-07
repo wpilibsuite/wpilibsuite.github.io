@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-98-g2abbbd9</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-99-g64f5413</span>
    </div>
   </td>
  </tr>
@@ -211,9 +211,9 @@ CS_Source&#160;</td><td class="memItemRight" valign="bottom"><b>CreateUsbCameraP
 <tr class="memitem:ga42bcc3d040a2ddbb75bf3ec934a4cd43"><td class="memItemLeft" align="right" valign="top">
 CS_Source&#160;</td><td class="memItemRight" valign="bottom"><b>CreateHttpCamera</b> (std::string_view name, std::string_view url, <a class="el" href="group__cscore__c__api.html#ga61ab6e0263fe88aa1da0e21fc25a5a4a">CS_HttpCameraKind</a> kind, CS_Status *status)</td></tr>
 <tr class="separator:ga42bcc3d040a2ddbb75bf3ec934a4cd43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8660ae3a34d10cc4a2f0b598509e0e88"><td class="memItemLeft" align="right" valign="top">
-CS_Source&#160;</td><td class="memItemRight" valign="bottom"><b>CreateHttpCamera</b> (std::string_view name, <a class="el" href="classwpi_1_1ArrayRef.html">wpi::ArrayRef</a>&lt; std::string &gt; urls, <a class="el" href="group__cscore__c__api.html#ga61ab6e0263fe88aa1da0e21fc25a5a4a">CS_HttpCameraKind</a> kind, CS_Status *status)</td></tr>
-<tr class="separator:ga8660ae3a34d10cc4a2f0b598509e0e88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga786ec315ee637ef07919376b5c871824"><td class="memItemLeft" align="right" valign="top">
+CS_Source&#160;</td><td class="memItemRight" valign="bottom"><b>CreateHttpCamera</b> (std::string_view name, <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const std::string &gt; urls, <a class="el" href="group__cscore__c__api.html#ga61ab6e0263fe88aa1da0e21fc25a5a4a">CS_HttpCameraKind</a> kind, CS_Status *status)</td></tr>
+<tr class="separator:ga786ec315ee637ef07919376b5c871824"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaae6f1c7ec698a5a349fd4ed01936545b"><td class="memItemLeft" align="right" valign="top">
 CS_Source&#160;</td><td class="memItemRight" valign="bottom"><b>CreateCvSource</b> (std::string_view name, const <a class="el" href="structcs_1_1VideoMode.html">VideoMode</a> &amp;mode, CS_Status *status)</td></tr>
 <tr class="separator:gaae6f1c7ec698a5a349fd4ed01936545b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -247,9 +247,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsSourceEnabled</b> (
 <tr class="memitem:ga3bc72f22d4c2f22527331fdc81e10bc4"><td class="memItemLeft" align="right" valign="top">
 CS_Property&#160;</td><td class="memItemRight" valign="bottom"><b>GetSourceProperty</b> (CS_Source source, std::string_view name, CS_Status *status)</td></tr>
 <tr class="separator:ga3bc72f22d4c2f22527331fdc81e10bc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga45d680ff659ccfcd45784155b6970157"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="classwpi_1_1ArrayRef.html">wpi::ArrayRef</a>&lt; CS_Property &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>EnumerateSourceProperties</b> (CS_Source source, <a class="el" href="classwpi_1_1SmallVectorImpl.html">wpi::SmallVectorImpl</a>&lt; CS_Property &gt; &amp;vec, CS_Status *status)</td></tr>
-<tr class="separator:ga45d680ff659ccfcd45784155b6970157"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf86d3c3fb8c23f2a503d766230f2dd57"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; CS_Property &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>EnumerateSourceProperties</b> (CS_Source source, <a class="el" href="classwpi_1_1SmallVectorImpl.html">wpi::SmallVectorImpl</a>&lt; CS_Property &gt; &amp;vec, CS_Status *status)</td></tr>
+<tr class="separator:gaf86d3c3fb8c23f2a503d766230f2dd57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga59a28273f3bf6eed6a0e57d781b1e1ee"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="structcs_1_1VideoMode.html">VideoMode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetSourceVideoMode</b> (CS_Source source, CS_Status *status)</td></tr>
 <tr class="separator:ga59a28273f3bf6eed6a0e57d781b1e1ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -280,9 +280,9 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetSourceConfi
 <tr class="memitem:ga7f1599d3ac26dac53d39f5511edc5cf7"><td class="memItemLeft" align="right" valign="top">
 std::vector&lt; <a class="el" href="structcs_1_1VideoMode.html">VideoMode</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>EnumerateSourceVideoModes</b> (CS_Source source, CS_Status *status)</td></tr>
 <tr class="separator:ga7f1599d3ac26dac53d39f5511edc5cf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4dbe6f2701f273bf40e0d86b4f02f8f8"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="classwpi_1_1ArrayRef.html">wpi::ArrayRef</a>&lt; CS_Sink &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>EnumerateSourceSinks</b> (CS_Source source, <a class="el" href="classwpi_1_1SmallVectorImpl.html">wpi::SmallVectorImpl</a>&lt; CS_Sink &gt; &amp;vec, CS_Status *status)</td></tr>
-<tr class="separator:ga4dbe6f2701f273bf40e0d86b4f02f8f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga545e8e874dad95f13a5b976de8228a29"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; CS_Sink &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>EnumerateSourceSinks</b> (CS_Source source, <a class="el" href="classwpi_1_1SmallVectorImpl.html">wpi::SmallVectorImpl</a>&lt; CS_Sink &gt; &amp;vec, CS_Status *status)</td></tr>
+<tr class="separator:ga545e8e874dad95f13a5b976de8228a29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5e96e9a6f6c3f4c085c33f1bb281a9bd"><td class="memItemLeft" align="right" valign="top">
 CS_Source&#160;</td><td class="memItemRight" valign="bottom"><b>CopySource</b> (CS_Source source, CS_Status *status)</td></tr>
 <tr class="separator:ga5e96e9a6f6c3f4c085c33f1bb281a9bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -325,9 +325,9 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetUsbCameraPa
 <tr class="memitem:gaf0bfd7983c964f73b6f43c58b2914149"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="group__cscore__c__api.html#ga61ab6e0263fe88aa1da0e21fc25a5a4a">CS_HttpCameraKind</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetHttpCameraKind</b> (CS_Source source, CS_Status *status)</td></tr>
 <tr class="separator:gaf0bfd7983c964f73b6f43c58b2914149"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga568fb7a61ca8c453ce039367624260b8"><td class="memItemLeft" align="right" valign="top">
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetHttpCameraUrls</b> (CS_Source source, <a class="el" href="classwpi_1_1ArrayRef.html">wpi::ArrayRef</a>&lt; std::string &gt; urls, CS_Status *status)</td></tr>
-<tr class="separator:ga568fb7a61ca8c453ce039367624260b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa34e8eab5d9f1148c7a36c5b99530771"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetHttpCameraUrls</b> (CS_Source source, <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const std::string &gt; urls, CS_Status *status)</td></tr>
+<tr class="separator:gaa34e8eab5d9f1148c7a36c5b99530771"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac239707bb2a1105bdf4df974afcd1e1d"><td class="memItemLeft" align="right" valign="top">
 std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetHttpCameraUrls</b> (CS_Source source, CS_Status *status)</td></tr>
 <tr class="separator:gac239707bb2a1105bdf4df974afcd1e1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -343,9 +343,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSourceDescription<
 <tr class="memitem:ga981d61fad9a668f3ec42b6a71d991314"><td class="memItemLeft" align="right" valign="top">
 CS_Property&#160;</td><td class="memItemRight" valign="bottom"><b>CreateSourceProperty</b> (CS_Source source, std::string_view name, <a class="el" href="group__cscore__c__api.html#ga748df10eca5adcbc533b0fe788daf22e">CS_PropertyKind</a> kind, int minimum, int maximum, int step, int defaultValue, int <a class="el" href="classvalue.html">value</a>, CS_Status *status)</td></tr>
 <tr class="separator:ga981d61fad9a668f3ec42b6a71d991314"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf569c2b2e04c895eb536ad5293054ab4"><td class="memItemLeft" align="right" valign="top">
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSourceEnumPropertyChoices</b> (CS_Source source, CS_Property property, <a class="el" href="classwpi_1_1ArrayRef.html">wpi::ArrayRef</a>&lt; std::string &gt; choices, CS_Status *status)</td></tr>
-<tr class="separator:gaf569c2b2e04c895eb536ad5293054ab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga207bb29e83232d91bacaf5a4c2fab121"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSourceEnumPropertyChoices</b> (CS_Source source, CS_Property property, <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const std::string &gt; choices, CS_Status *status)</td></tr>
+<tr class="separator:ga207bb29e83232d91bacaf5a4c2fab121"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf223ba2e83bce2212ca8de21cad48138"><td class="memItemLeft" align="right" valign="top">
 CS_Sink&#160;</td><td class="memItemRight" valign="bottom"><b>CreateMjpegServer</b> (std::string_view name, std::string_view listenAddress, int port, CS_Status *status)</td></tr>
 <tr class="separator:gaf223ba2e83bce2212ca8de21cad48138"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -373,9 +373,9 @@ std::string_view&#160;</td><td class="memItemRight" valign="bottom"><b>GetSinkDe
 <tr class="memitem:gadd445f306b3a9ba58ce9695fe929cb13"><td class="memItemLeft" align="right" valign="top">
 CS_Property&#160;</td><td class="memItemRight" valign="bottom"><b>GetSinkProperty</b> (CS_Sink sink, std::string_view name, CS_Status *status)</td></tr>
 <tr class="separator:gadd445f306b3a9ba58ce9695fe929cb13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf0cb98ea0382db1eae303666c0fd565c"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="classwpi_1_1ArrayRef.html">wpi::ArrayRef</a>&lt; CS_Property &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>EnumerateSinkProperties</b> (CS_Sink sink, <a class="el" href="classwpi_1_1SmallVectorImpl.html">wpi::SmallVectorImpl</a>&lt; CS_Property &gt; &amp;vec, CS_Status *status)</td></tr>
-<tr class="separator:gaf0cb98ea0382db1eae303666c0fd565c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga557340118c86807e9e770c433e8dc9e4"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; CS_Property &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>EnumerateSinkProperties</b> (CS_Sink sink, <a class="el" href="classwpi_1_1SmallVectorImpl.html">wpi::SmallVectorImpl</a>&lt; CS_Property &gt; &amp;vec, CS_Status *status)</td></tr>
+<tr class="separator:ga557340118c86807e9e770c433e8dc9e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga25ef995cdc1a745fc816f56f1c57c333"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSinkSource</b> (CS_Sink sink, CS_Source source, CS_Status *status)</td></tr>
 <tr class="separator:ga25ef995cdc1a745fc816f56f1c57c333"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -478,12 +478,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Shutdown</b> ()</td><
 <tr class="memitem:ga4fbfc8f82b8feee3e4b05828a57900cc"><td class="memItemLeft" align="right" valign="top">
 std::vector&lt; <a class="el" href="structcs_1_1UsbCameraInfo.html">UsbCameraInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>EnumerateUsbCameras</b> (CS_Status *status)</td></tr>
 <tr class="separator:ga4fbfc8f82b8feee3e4b05828a57900cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2c4cedf4ec1952ca806400907cbcedc4"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="classwpi_1_1ArrayRef.html">wpi::ArrayRef</a>&lt; CS_Source &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>EnumerateSourceHandles</b> (<a class="el" href="classwpi_1_1SmallVectorImpl.html">wpi::SmallVectorImpl</a>&lt; CS_Source &gt; &amp;vec, CS_Status *status)</td></tr>
-<tr class="separator:ga2c4cedf4ec1952ca806400907cbcedc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga91ed919081d6fd6abd0fde58722887d1"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="classwpi_1_1ArrayRef.html">wpi::ArrayRef</a>&lt; CS_Sink &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>EnumerateSinkHandles</b> (<a class="el" href="classwpi_1_1SmallVectorImpl.html">wpi::SmallVectorImpl</a>&lt; CS_Sink &gt; &amp;vec, CS_Status *status)</td></tr>
-<tr class="separator:ga91ed919081d6fd6abd0fde58722887d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga718a0009c496d0d307364b87609ca8aa"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; CS_Source &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>EnumerateSourceHandles</b> (<a class="el" href="classwpi_1_1SmallVectorImpl.html">wpi::SmallVectorImpl</a>&lt; CS_Source &gt; &amp;vec, CS_Status *status)</td></tr>
+<tr class="separator:ga718a0009c496d0d307364b87609ca8aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga79176b2b3a7c78c5d1d4042162dcfe7e"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; CS_Sink &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>EnumerateSinkHandles</b> (<a class="el" href="classwpi_1_1SmallVectorImpl.html">wpi::SmallVectorImpl</a>&lt; CS_Sink &gt; &amp;vec, CS_Status *status)</td></tr>
+<tr class="separator:ga79176b2b3a7c78c5d1d4042162dcfe7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga263fc200b6a4ea7e0b71492553683199"><td class="memItemLeft" align="right" valign="top">
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetHostname</b> ()</td></tr>
 <tr class="separator:ga263fc200b6a4ea7e0b71492553683199"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -499,7 +499,7 @@ std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bott
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacecs.html">cs</a></li>
-    <li class="footer">Generated on Mon Jun 7 2021 00:49:18 for WPILibC++ by
+    <li class="footer">Generated on Mon Jun 7 2021 02:53:15 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

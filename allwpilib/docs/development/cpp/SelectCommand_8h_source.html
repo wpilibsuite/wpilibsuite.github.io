@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-98-g2abbbd9</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-99-g64f5413</span>
    </div>
   </td>
  </tr>
@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('SelectCommand_8h_source.html',''); ini
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;     ...);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp;&amp; command : foo) {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <span class="keywordflow">if</span> (!<a class="code" href="classfrc2_1_1CommandGroupBase.html#ad5d2d92c54e0305aab63801d895befaa">CommandGroupBase::RequireUngrouped</a>(command.second)) {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <span class="keywordflow">if</span> (!<a class="code" href="classfrc2_1_1CommandGroupBase.html#a87ded177225c388fb17ba11ab007aaf5">CommandGroupBase::RequireUngrouped</a>(*command.second)) {</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      }</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
@@ -149,7 +149,7 @@ $(document).ready(function(){initNavTree('SelectCommand_8h_source.html',''); ini
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      std::vector&lt;std::pair&lt;Key, std::unique_ptr&lt;Command&gt;&gt;&gt;&amp;&amp; commands)</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      : m_selector{std::move(selector)} {</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp;&amp; command : commands) {</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      <span class="keywordflow">if</span> (!<a class="code" href="classfrc2_1_1CommandGroupBase.html#ad5d2d92c54e0305aab63801d895befaa">CommandGroupBase::RequireUngrouped</a>(command.second)) {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      <span class="keywordflow">if</span> (!<a class="code" href="classfrc2_1_1CommandGroupBase.html#a87ded177225c388fb17ba11ab007aaf5">CommandGroupBase::RequireUngrouped</a>(*command.second)) {</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      }</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
@@ -226,8 +226,8 @@ $(document).ready(function(){initNavTree('SelectCommand_8h_source.html',''); ini
 <div class="ttc" id="aclassfrc2_1_1SelectCommand_html_a49d487767f3ae18688f069a7febd82e4"><div class="ttname"><a href="classfrc2_1_1SelectCommand.html#a49d487767f3ae18688f069a7febd82e4">frc2::SelectCommand::SelectCommand</a></div><div class="ttdeci">SelectCommand(std::function&lt; Command *()&gt; toRun)</div><div class="ttdoc">Creates a new selectcommand.</div><div class="ttdef"><b>Definition:</b> SelectCommand.h:102</div></div>
 <div class="ttc" id="aclassfrc2_1_1Command_html_a7d7ea1271f7dcc65c0ba3221d179b510"><div class="ttname"><a href="classfrc2_1_1Command.html#a7d7ea1271f7dcc65c0ba3221d179b510">frc2::Command::Execute</a></div><div class="ttdeci">virtual void Execute()</div><div class="ttdoc">The main body of a command.</div></div>
 <div class="ttc" id="aclassfrc2_1_1Command_html_a134eda3756f00c667bb5415b23ee920c"><div class="ttname"><a href="classfrc2_1_1Command.html#a134eda3756f00c667bb5415b23ee920c">frc2::Command::End</a></div><div class="ttdeci">virtual void End(bool interrupted)</div><div class="ttdoc">The action to take when the command ends.</div></div>
+<div class="ttc" id="aclassfrc2_1_1CommandGroupBase_html_a87ded177225c388fb17ba11ab007aaf5"><div class="ttname"><a href="classfrc2_1_1CommandGroupBase.html#a87ded177225c388fb17ba11ab007aaf5">frc2::CommandGroupBase::RequireUngrouped</a></div><div class="ttdeci">static bool RequireUngrouped(const Command &amp;command)</div><div class="ttdoc">Requires that the specified command not have been already allocated to a CommandGroup.</div></div>
 <div class="ttc" id="aclassfrc2_1_1SelectCommand_html_a80428fb7dc2264bfee40faacebeaacc6"><div class="ttname"><a href="classfrc2_1_1SelectCommand.html#a80428fb7dc2264bfee40faacebeaacc6">frc2::SelectCommand::IsFinished</a></div><div class="ttdeci">bool IsFinished() override</div><div class="ttdoc">Whether the command has finished.</div><div class="ttdef"><b>Definition:</b> SelectCommand.h:115</div></div>
-<div class="ttc" id="aclassfrc2_1_1CommandGroupBase_html_ad5d2d92c54e0305aab63801d895befaa"><div class="ttname"><a href="classfrc2_1_1CommandGroupBase.html#ad5d2d92c54e0305aab63801d895befaa">frc2::CommandGroupBase::RequireUngrouped</a></div><div class="ttdeci">static bool RequireUngrouped(Command &amp;command)</div><div class="ttdoc">Requires that the specified command not have been already allocated to a CommandGroup.</div></div>
 <div class="ttc" id="aclassfrc2_1_1SelectCommand_html_ae658863c2f6ead8b3c2c2e39486b35d5"><div class="ttname"><a href="classfrc2_1_1SelectCommand.html#ae658863c2f6ead8b3c2c2e39486b35d5">frc2::SelectCommand::Execute</a></div><div class="ttdeci">void Execute() override</div><div class="ttdoc">The main body of a command.</div><div class="ttdef"><b>Definition:</b> SelectCommand.h:109</div></div>
 <div class="ttc" id="aclassfrc2_1_1SelectCommand_html"><div class="ttname"><a href="classfrc2_1_1SelectCommand.html">frc2::SelectCommand</a></div><div class="ttdoc">Runs one of a selection of commands, either using a selector and a key to command mapping,...</div><div class="ttdef"><b>Definition:</b> SelectCommand.h:40</div></div>
 <div class="ttc" id="aclassfrc2_1_1SelectCommand_html_a22a257397b610aef79cad5fbee247f2e"><div class="ttname"><a href="classfrc2_1_1SelectCommand.html#a22a257397b610aef79cad5fbee247f2e">frc2::SelectCommand::End</a></div><div class="ttdeci">void End(bool interrupted) override</div><div class="ttdoc">The action to take when the command ends.</div><div class="ttdef"><b>Definition:</b> SelectCommand.h:111</div></div>
@@ -241,7 +241,7 @@ $(document).ready(function(){initNavTree('SelectCommand_8h_source.html',''); ini
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e7d5d1c9c07b3d6a0a849f7ca2bfcaa9.html">frc2</a></li><li class="navelem"><a class="el" href="dir_25d5854705192c92d2d003534c71255a.html">command</a></li><li class="navelem"><b>SelectCommand.h</b></li>
-    <li class="footer">Generated on Mon Jun 7 2021 00:49:16 for WPILibC++ by
+    <li class="footer">Generated on Mon Jun 7 2021 02:53:13 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

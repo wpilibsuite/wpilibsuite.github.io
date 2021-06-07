@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-98-g2abbbd9</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-99-g64f5413</span>
    </div>
   </td>
  </tr>
@@ -120,10 +120,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aeee782c40173966d4c745cc3a2b439b7"><td class="memItemLeft" align="right" valign="top"><a id="aeee782c40173966d4c745cc3a2b439b7"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>flush</b> ()=delete</td></tr>
 <tr class="separator:aeee782c40173966d4c745cc3a2b439b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1fb58f6861587fbb2aaf448bc8716510"><td class="memItemLeft" align="right" valign="top"><a id="a1fb58f6861587fbb2aaf448bc8716510"></a>
-<a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__usvector__ostream.html#a1fb58f6861587fbb2aaf448bc8716510">array</a> ()</td></tr>
-<tr class="memdesc:a1fb58f6861587fbb2aaf448bc8716510"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an <a class="el" href="classwpi_1_1ArrayRef.html" title="ArrayRef - Represent a constant reference to an array (0 or more elements consecutively in memory),...">ArrayRef</a> for the vector contents. <br /></td></tr>
-<tr class="separator:a1fb58f6861587fbb2aaf448bc8716510"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92dc6e86c173109636d6c50ef4adac55"><td class="memItemLeft" align="right" valign="top"><a id="a92dc6e86c173109636d6c50ef4adac55"></a>
+<a class="el" href="classwpi_1_1span.html">span</a>&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__usvector__ostream.html#a92dc6e86c173109636d6c50ef4adac55">array</a> ()</td></tr>
+<tr class="memdesc:a92dc6e86c173109636d6c50ef4adac55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an span for the vector contents. <br /></td></tr>
+<tr class="separator:a92dc6e86c173109636d6c50ef4adac55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f41ebf0e957601e8c1a510f6ba3a2c8"><td class="memItemLeft" align="right" valign="top"><a id="a3f41ebf0e957601e8c1a510f6ba3a2c8"></a>
+<a class="el" href="classwpi_1_1span.html">span</a>&lt; const uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>array</b> () const</td></tr>
+<tr class="separator:a3f41ebf0e957601e8c1a510f6ba3a2c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classwpi_1_1raw__pwrite__stream"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classwpi_1_1raw__pwrite__stream')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classwpi_1_1raw__pwrite__stream.html">wpi::raw_pwrite_stream</a></td></tr>
 <tr class="memitem:a04c0b5833185421348f79194220f9c5a inherit pub_methods_classwpi_1_1raw__pwrite__stream"><td class="memItemLeft" align="right" valign="top"><a id="a04c0b5833185421348f79194220f9c5a"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>raw_pwrite_stream</b> (bool Unbuffered=false)</td></tr>
@@ -174,9 +177,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>flush</b> ()</td></tr
 <tr class="memitem:ac6345c3374cc51fb881fb2a4a823339b inherit pub_methods_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top"><a id="ac6345c3374cc51fb881fb2a4a823339b"></a>
 <a class="el" href="classwpi_1_1raw__ostream.html">raw_ostream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (signed char C)</td></tr>
 <tr class="separator:ac6345c3374cc51fb881fb2a4a823339b inherit pub_methods_classwpi_1_1raw__ostream"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ae9af0b4ed3080114cbe33139a0f11d inherit pub_methods_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top"><a id="a4ae9af0b4ed3080114cbe33139a0f11d"></a>
-<a class="el" href="classwpi_1_1raw__ostream.html">raw_ostream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (<a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt; uint8_t &gt; Arr)</td></tr>
-<tr class="separator:a4ae9af0b4ed3080114cbe33139a0f11d inherit pub_methods_classwpi_1_1raw__ostream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a618c9cac586380816118c80260dc8406 inherit pub_methods_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top"><a id="a618c9cac586380816118c80260dc8406"></a>
+<a class="el" href="classwpi_1_1raw__ostream.html">raw_ostream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (<a class="el" href="classwpi_1_1span.html">span</a>&lt; const uint8_t &gt; Arr)</td></tr>
+<tr class="separator:a618c9cac586380816118c80260dc8406 inherit pub_methods_classwpi_1_1raw__ostream"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3a34ef51cff26d4ea21f24253e936f6 inherit pub_methods_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top"><a id="ac3a34ef51cff26d4ea21f24253e936f6"></a>
 <a class="el" href="classwpi_1_1raw__ostream.html">raw_ostream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (std::string_view Str)</td></tr>
 <tr class="separator:ac3a34ef51cff26d4ea21f24253e936f6 inherit pub_methods_classwpi_1_1raw__ostream"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -313,7 +316,7 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>wpi</b></li><li class="navelem"><a class="el" href="classwpi_1_1raw__usvector__ostream.html">raw_usvector_ostream</a></li>
-    <li class="footer">Generated on Mon Jun 7 2021 00:49:21 for WPILibC++ by
+    <li class="footer">Generated on Mon Jun 7 2021 02:53:17 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

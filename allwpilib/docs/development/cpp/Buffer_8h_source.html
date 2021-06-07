@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-98-g2abbbd9</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-99-g64f5413</span>
    </div>
   </td>
  </tr>
@@ -107,8 +107,8 @@ $(document).ready(function(){initNavTree('Buffer_8h_source.html',''); initResiza
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;string_view&gt;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;utility&gt;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;wpi/ArrayRef.h&quot;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;wpi/SmallVector.h&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;wpi/SmallVector.h&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;wpi/span.h&quot;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span>wpi::uv {</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
@@ -124,8 +124,8 @@ $(document).ready(function(){initNavTree('Buffer_8h_source.html',''); initResiza
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  }</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="comment">/*implicit*/</span> <a class="code" href="classwpi_1_1uv_1_1Buffer.html">Buffer</a>(std::string_view str)  <span class="comment">// NOLINT</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      : <a class="code" href="classwpi_1_1uv_1_1Buffer.html">Buffer</a>{str.data(), str.size()} {}</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="comment">/*implicit*/</span> <a class="code" href="classwpi_1_1uv_1_1Buffer.html">Buffer</a>(<a class="code" href="classwpi_1_1ArrayRef.html">ArrayRef&lt;uint8_t&gt;</a> arr)  <span class="comment">// NOLINT</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      : <a class="code" href="classwpi_1_1uv_1_1Buffer.html">Buffer</a>{<span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span><span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(arr.data()), arr.<a class="code" href="classwpi_1_1ArrayRef.html#aa3c8c6c59f9974aa54b78728ce5ff1c1">size</a>()} {}</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="comment">/*implicit*/</span> <a class="code" href="classwpi_1_1uv_1_1Buffer.html">Buffer</a>(<a class="code" href="classwpi_1_1span.html">span&lt;const uint8_t&gt;</a> arr)  <span class="comment">// NOLINT</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      : <a class="code" href="classwpi_1_1uv_1_1Buffer.html">Buffer</a>{<span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span><span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(arr.data()), arr.size()} {}</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="classwpi_1_1uv_1_1Buffer.html">Buffer</a>(<span class="keywordtype">char</span>* base_, <span class="keywordtype">size_t</span> len_) {</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    base = base_;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    len = <span class="keyword">static_cast&lt;</span>decltype(len)<span class="keyword">&gt;</span>(len_);</div>
@@ -135,11 +135,11 @@ $(document).ready(function(){initNavTree('Buffer_8h_source.html',''); initResiza
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    len = <span class="keyword">static_cast&lt;</span>decltype(len)<span class="keyword">&gt;</span>(len_);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  }</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <a class="code" href="classwpi_1_1ArrayRef.html">ArrayRef&lt;char&gt;</a> <a class="code" href="structdata.html">data</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classwpi_1_1ArrayRef.html">ArrayRef&lt;char&gt;</a>{base, len}; }</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <a class="code" href="classwpi_1_1MutableArrayRef.html">MutableArrayRef&lt;char&gt;</a> <a class="code" href="structdata.html">data</a>() { <span class="keywordflow">return</span> <a class="code" href="classwpi_1_1MutableArrayRef.html">MutableArrayRef&lt;char&gt;</a>{base, len}; }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <a class="code" href="classwpi_1_1span.html">span&lt;const char&gt;</a> <a class="code" href="structdata.html">data</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> {base, len}; }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <a class="code" href="classwpi_1_1span.html">span&lt;char&gt;</a> <a class="code" href="structdata.html">data</a>() { <span class="keywordflow">return</span> {base, len}; }</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">operator</span> <a class="code" href="classwpi_1_1ArrayRef.html">ArrayRef&lt;char&gt;</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="structdata.html">data</a>(); }   <span class="comment">// NOLINT</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">operator</span> <a class="code" href="classwpi_1_1MutableArrayRef.html">MutableArrayRef&lt;char&gt;</a>() { <span class="keywordflow">return</span> <a class="code" href="structdata.html">data</a>(); }  <span class="comment">// NOLINT</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">operator</span> <a class="code" href="classwpi_1_1span.html">span&lt;const char&gt;</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="structdata.html">data</a>(); }  <span class="comment">// NOLINT</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">operator</span> <a class="code" href="classwpi_1_1span.html">span&lt;char&gt;</a>() { <span class="keywordflow">return</span> <a class="code" href="structdata.html">data</a>(); }              <span class="comment">// NOLINT</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">static</span> <a class="code" href="classwpi_1_1uv_1_1Buffer.html">Buffer</a> Allocate(<span class="keywordtype">size_t</span> size) { <span class="keywordflow">return</span> <a class="code" href="classwpi_1_1uv_1_1Buffer.html">Buffer</a>{<span class="keyword">new</span> <span class="keywordtype">char</span>[size], size}; }</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
@@ -149,9 +149,9 @@ $(document).ready(function(){initNavTree('Buffer_8h_source.html',''); initResiza
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">return</span> buf;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  }</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keyword">static</span> <a class="code" href="classwpi_1_1uv_1_1Buffer.html">Buffer</a> Dup(<a class="code" href="classwpi_1_1ArrayRef.html">ArrayRef&lt;uint8_t&gt;</a> in) {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="classwpi_1_1uv_1_1Buffer.html">Buffer</a> buf = Allocate(in.<a class="code" href="classwpi_1_1ArrayRef.html#aa3c8c6c59f9974aa54b78728ce5ff1c1">size</a>());</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    std::memcpy(buf.base, in.begin(), in.<a class="code" href="classwpi_1_1ArrayRef.html#aa3c8c6c59f9974aa54b78728ce5ff1c1">size</a>());</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keyword">static</span> <a class="code" href="classwpi_1_1uv_1_1Buffer.html">Buffer</a> Dup(<a class="code" href="classwpi_1_1span.html">span&lt;const uint8_t&gt;</a> in) {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="classwpi_1_1uv_1_1Buffer.html">Buffer</a> buf = Allocate(in.size());</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    std::memcpy(buf.base, in.begin(), in.size());</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">return</span> buf;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  }</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
@@ -202,7 +202,7 @@ $(document).ready(function(){initNavTree('Buffer_8h_source.html',''); initResiza
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
 <div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1SimpleBufferPool.html#a02904cac6d769a954eff53c8f5bfc986">  127</a></span>&#160;  <a class="code" href="classwpi_1_1uv_1_1Buffer.html">Buffer</a> <a class="code" href="classwpi_1_1uv_1_1SimpleBufferPool.html#a02904cac6d769a954eff53c8f5bfc986">operator()</a>() { <span class="keywordflow">return</span> <a class="code" href="classwpi_1_1uv_1_1SimpleBufferPool.html#ac29cab909aac1f13b7af1b488e9f302b">Allocate</a>(); }</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
-<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1SimpleBufferPool.html#a955080bb90f861d10bf51ecefac3972a">  134</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classwpi_1_1uv_1_1SimpleBufferPool.html#a955080bb90f861d10bf51ecefac3972a">Release</a>(<a class="code" href="classwpi_1_1MutableArrayRef.html">MutableArrayRef&lt;Buffer&gt;</a> bufs) {</div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1SimpleBufferPool.html#a290f49dc7584544870199c7a59771a53">  134</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classwpi_1_1uv_1_1SimpleBufferPool.html#a290f49dc7584544870199c7a59771a53">Release</a>(<a class="code" href="classwpi_1_1span.html">span&lt;Buffer&gt;</a> bufs) {</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; buf : bufs) {</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;      m_pool.emplace_back(buf.Move());</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    }</div>
@@ -229,22 +229,20 @@ $(document).ready(function(){initNavTree('Buffer_8h_source.html',''); initResiza
 </div><!-- doc-content -->
 <div class="ttc" id="aclasswpi_1_1uv_1_1SimpleBufferPool_html_a02904cac6d769a954eff53c8f5bfc986"><div class="ttname"><a href="classwpi_1_1uv_1_1SimpleBufferPool.html#a02904cac6d769a954eff53c8f5bfc986">wpi::uv::SimpleBufferPool::operator()</a></div><div class="ttdeci">Buffer operator()()</div><div class="ttdoc">Allocate a buffer.</div><div class="ttdef"><b>Definition:</b> Buffer.h:127</div></div>
 <div class="ttc" id="astructdata_html"><div class="ttname"><a href="structdata.html">data</a></div><div class="ttdef"><b>Definition:</b> format.h:917</div></div>
-<div class="ttc" id="aclasswpi_1_1ArrayRef_html"><div class="ttname"><a href="classwpi_1_1ArrayRef.html">wpi::ArrayRef&lt; uint8_t &gt;</a></div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1SimpleBufferPool_html_ac29cab909aac1f13b7af1b488e9f302b"><div class="ttname"><a href="classwpi_1_1uv_1_1SimpleBufferPool.html#ac29cab909aac1f13b7af1b488e9f302b">wpi::uv::SimpleBufferPool::Allocate</a></div><div class="ttdeci">Buffer Allocate()</div><div class="ttdoc">Allocate a buffer.</div><div class="ttdef"><b>Definition:</b> Buffer.h:114</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1SimpleBufferPool_html_a4b4e0ba2915b50773cb0a8957ab50882"><div class="ttname"><a href="classwpi_1_1uv_1_1SimpleBufferPool.html#a4b4e0ba2915b50773cb0a8957ab50882">wpi::uv::SimpleBufferPool::Clear</a></div><div class="ttdeci">void Clear()</div><div class="ttdoc">Clear the pool, releasing all buffers.</div><div class="ttdef"><b>Definition:</b> Buffer.h:143</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1Buffer_html"><div class="ttname"><a href="classwpi_1_1uv_1_1Buffer.html">wpi::uv::Buffer</a></div><div class="ttdoc">Data buffer.</div><div class="ttdef"><b>Definition:</b> Buffer.h:23</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1SimpleBufferPool_html"><div class="ttname"><a href="classwpi_1_1uv_1_1SimpleBufferPool.html">wpi::uv::SimpleBufferPool</a></div><div class="ttdoc">A simple pool allocator for Buffers.</div><div class="ttdef"><b>Definition:</b> Buffer.h:99</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1SimpleBufferPool_html_a30f2ba936bc01b27679cf07c850ca1a5"><div class="ttname"><a href="classwpi_1_1uv_1_1SimpleBufferPool.html#a30f2ba936bc01b27679cf07c850ca1a5">wpi::uv::SimpleBufferPool::Remaining</a></div><div class="ttdeci">size_t Remaining() const</div><div class="ttdoc">Get number of buffers left in the pool before a new buffer will be allocated from the heap.</div><div class="ttdef"><b>Definition:</b> Buffer.h:154</div></div>
-<div class="ttc" id="aclasswpi_1_1ArrayRef_html_aa3c8c6c59f9974aa54b78728ce5ff1c1"><div class="ttname"><a href="classwpi_1_1ArrayRef.html#aa3c8c6c59f9974aa54b78728ce5ff1c1">wpi::ArrayRef::size</a></div><div class="ttdeci">size_t size() const</div><div class="ttdoc">size - Get the array size.</div><div class="ttdef"><b>Definition:</b> ArrayRef.h:167</div></div>
-<div class="ttc" id="aclasswpi_1_1MutableArrayRef_html"><div class="ttname"><a href="classwpi_1_1MutableArrayRef.html">wpi::MutableArrayRef</a></div><div class="ttdoc">MutableArrayRef - Represent a mutable reference to an array (0 or more elements consecutively in memo...</div><div class="ttdef"><b>Definition:</b> ArrayRef.h:318</div></div>
-<div class="ttc" id="aclasswpi_1_1uv_1_1SimpleBufferPool_html_a955080bb90f861d10bf51ecefac3972a"><div class="ttname"><a href="classwpi_1_1uv_1_1SimpleBufferPool.html#a955080bb90f861d10bf51ecefac3972a">wpi::uv::SimpleBufferPool::Release</a></div><div class="ttdeci">void Release(MutableArrayRef&lt; Buffer &gt; bufs)</div><div class="ttdoc">Release allocated buffers back into the pool.</div><div class="ttdef"><b>Definition:</b> Buffer.h:134</div></div>
+<div class="ttc" id="aclasswpi_1_1span_html"><div class="ttname"><a href="classwpi_1_1span.html">wpi::span&lt; const uint8_t &gt;</a></div></div>
+<div class="ttc" id="aclasswpi_1_1uv_1_1SimpleBufferPool_html_a290f49dc7584544870199c7a59771a53"><div class="ttname"><a href="classwpi_1_1uv_1_1SimpleBufferPool.html#a290f49dc7584544870199c7a59771a53">wpi::uv::SimpleBufferPool::Release</a></div><div class="ttdeci">void Release(span&lt; Buffer &gt; bufs)</div><div class="ttdoc">Release allocated buffers back into the pool.</div><div class="ttdef"><b>Definition:</b> Buffer.h:134</div></div>
 <div class="ttc" id="aclasswpi_1_1SmallVector_html"><div class="ttname"><a href="classwpi_1_1SmallVector.html">wpi::SmallVector</a></div><div class="ttdoc">This is a 'vector' (really, a variable-sized array), optimized for the case when the array is small.</div><div class="ttdef"><b>Definition:</b> SmallVector.h:856</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1SimpleBufferPool_html_a090cd393e399982fc209c248876648b0"><div class="ttname"><a href="classwpi_1_1uv_1_1SimpleBufferPool.html#a090cd393e399982fc209c248876648b0">wpi::uv::SimpleBufferPool::SimpleBufferPool</a></div><div class="ttdeci">SimpleBufferPool(size_t size=4096)</div><div class="ttdoc">Constructor.</div><div class="ttdef"><b>Definition:</b> Buffer.h:105</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><a class="el" href="dir_25302867c2307ab8d43a1b1d664c1ea4.html">uv</a></li><li class="navelem"><b>Buffer.h</b></li>
-    <li class="footer">Generated on Mon Jun 7 2021 00:49:18 for WPILibC++ by
+    <li class="footer">Generated on Mon Jun 7 2021 02:53:14 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

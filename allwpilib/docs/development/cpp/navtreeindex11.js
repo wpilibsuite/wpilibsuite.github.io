@@ -1,5 +1,8 @@
 var NAVTREEINDEX11 =
 {
+"classfrc_1_1Joystick.html#abd7d1284c86e3cc2098e9749acc8fd0eac010f9bc0a9522e1086e59e1321a99b9":[5,0,5,75,0,0],
+"classfrc_1_1Joystick.html#abd7d1284c86e3cc2098e9749acc8fd0eacb2930b39e6be338c6b24ac1547e493b":[5,0,5,75,0,1],
+"classfrc_1_1Joystick.html#abd7d1284c86e3cc2098e9749acc8fd0ead19cc9cca265476803d746009df7bb03":[5,0,5,75,0,2],
 "classfrc_1_1Joystick.html#ac791ce00b6c5e6b86f6085cbc9548b43":[5,0,5,75,34],
 "classfrc_1_1Joystick.html#acb6ad0b83213a24c0f860aef8092d7af":[5,0,5,75,7],
 "classfrc_1_1Joystick.html#ad4ef337272a1e7de7ff13959e7fb4c55":[5,0,5,75,27],
@@ -44,13 +47,13 @@ var NAVTREEINDEX11 =
 "classfrc_1_1LayoutType.html#a5966368cf09cfe03eb02a0f0722f7c43":[5,0,5,82,1],
 "classfrc_1_1LayoutType.html#aa67d5befb044d17a67f47b9ca2f88e19":[5,0,5,82,0],
 "classfrc_1_1LinearFilter.html":[5,0,5,83],
-"classfrc_1_1LinearFilter.html#a44db0da90000928ffb715e518abfe718":[5,0,5,83,0],
 "classfrc_1_1LinearFilter.html#a4ce233ce452caec0f7489ddbb12ca980":[5,0,5,83,2],
 "classfrc_1_1LinearFilter.html#a63923fe82113bacaeeef0b84e94df810":[5,0,5,83,3],
 "classfrc_1_1LinearFilter.html#a678b1cf1dd0b4390b3de84de21a58607":[5,0,5,83,4],
 "classfrc_1_1LinearFilter.html#aadb62ac99b63774baff9b6cd36ca37e0":[5,0,5,83,6],
 "classfrc_1_1LinearFilter.html#ac197e7d5cea0a24d9729cc63bc0f122f":[5,0,5,83,5],
 "classfrc_1_1LinearFilter.html#ad9e2fcd1f28f1b9e40582c500d4ca6bb":[5,0,5,83,1],
+"classfrc_1_1LinearFilter.html#aea766a0ce1bd742f5884cbd82a839924":[5,0,5,83,0],
 "classfrc_1_1LinearPlantInversionFeedforward.html":[5,0,5,84],
 "classfrc_1_1LinearPlantInversionFeedforward.html#a12496885c69771aaca685491620cd227":[5,0,5,84,5],
 "classfrc_1_1LinearPlantInversionFeedforward.html#a1edaaf6f2db30bf7d709c92b433110e4":[5,0,5,84,3],
@@ -246,8 +249,5 @@ var NAVTREEINDEX11 =
 "classfrc_1_1MotorControllerGroup.html#a1018f6fa8af739eb2527ab5edbdca8b2":[5,0,5,107,10],
 "classfrc_1_1MotorControllerGroup.html#a786f25a7ac1363d4c4b59a41eeef2c2b":[5,0,5,107,0],
 "classfrc_1_1MotorControllerGroup.html#a87d2d50dbdebbc4ed2da85d20d7a7607":[5,0,5,107,8],
-"classfrc_1_1MotorControllerGroup.html#a927bec9e678a96b162ebb469c7ebf620":[5,0,5,107,5],
-"classfrc_1_1MotorControllerGroup.html#a9f0a43ccbd19ac6b6cf2427408b3646b":[5,0,5,107,1],
-"classfrc_1_1MotorControllerGroup.html#a9f33bca180a40e347adb1c8ce4f2bbba":[5,0,5,107,2],
-"classfrc_1_1MotorControllerGroup.html#aaa92d1da1245bbc72a29deec04b19977":[5,0,5,107,7]
+"classfrc_1_1MotorControllerGroup.html#a927bec9e678a96b162ebb469c7ebf620":[5,0,5,107,5]
 };

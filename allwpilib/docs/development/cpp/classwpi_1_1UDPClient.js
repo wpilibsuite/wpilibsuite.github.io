@@ -9,7 +9,7 @@ var classwpi_1_1UDPClient =
     [ "operator=", "classwpi_1_1UDPClient.html#aec7e1591815c8e24e6b41ec6d53b0cfb", null ],
     [ "receive", "classwpi_1_1UDPClient.html#af3c1ab28b4717d597e91c087d07c2293", null ],
     [ "receive", "classwpi_1_1UDPClient.html#aef56757433ce1ad6a570d1bca52f2731", null ],
-    [ "send", "classwpi_1_1UDPClient.html#a3060535ac524b3586f8e5512d0cf19b3", null ],
+    [ "send", "classwpi_1_1UDPClient.html#a9bc9165b883fdacd0ed31696feef345d", null ],
     [ "send", "classwpi_1_1UDPClient.html#ab42af11028b25f392dd25d10747310c5", null ],
     [ "set_timeout", "classwpi_1_1UDPClient.html#a4e3a48744d427a72a56cb01d1633f31b", null ],
     [ "shutdown", "classwpi_1_1UDPClient.html#a23103cc547c083ec02fe9a2e31bc6cf6", null ],

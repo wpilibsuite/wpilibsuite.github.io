@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-98-g2abbbd9</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-99-g64f5413</span>
    </div>
   </td>
  </tr>
@@ -104,7 +104,7 @@ $(document).ready(function(){initNavTree('SimDevice_8h_source.html',''); initRes
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;initializer_list&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;wpi/ArrayRef.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;wpi/span.h&gt;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;hal/Types.h&quot;</span></div>
@@ -422,49 +422,50 @@ $(document).ready(function(){initNavTree('SimDevice_8h_source.html',''); initRes
 <div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;  }</div>
 <div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160; </div>
 <div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;  SimEnum CreateEnum(<span class="keyword">const</span> <span class="keywordtype">char</span>* name, int32_t direction,</div>
-<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;                     <a class="code" href="classwpi_1_1ArrayRef.html">wpi::ArrayRef&lt;const char*&gt;</a> options, int32_t initialValue) {</div>
-<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="group__hal__simdevice.html#ga589be09032ac3119839caca8bdafd4d2">HAL_CreateSimValueEnum</a>(m_handle, name, direction, options.<a class="code" href="classwpi_1_1ArrayRef.html#aa3c8c6c59f9974aa54b78728ce5ff1c1">size</a>(),</div>
-<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;                                  <span class="keyword">const_cast&lt;</span><span class="keyword">const </span><span class="keywordtype">char</span>**<span class="keyword">&gt;</span>(options.data()),</div>
-<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;                                  initialValue);</div>
-<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;  }</div>
-<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160; </div>
-<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;  SimEnum CreateEnumDouble(<span class="keyword">const</span> <span class="keywordtype">char</span>* name, int32_t direction,</div>
-<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;                           std::initializer_list&lt;const char*&gt; options,</div>
-<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;                           std::initializer_list&lt;double&gt; optionValues,</div>
-<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;                           int32_t initialValue) {</div>
-<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;    <span class="keywordflow">if</span> (options.size() != optionValues.size()) {</div>
-<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;      <span class="keywordflow">return</span> {};</div>
-<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;    }</div>
-<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="group__hal__simdevice.html#ga068ccb7a53ae25eaefb4b184f3eee10c">HAL_CreateSimValueEnumDouble</a>(</div>
-<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;        m_handle, name, direction, options.size(),</div>
-<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;        <span class="keyword">const_cast&lt;</span><span class="keyword">const </span><span class="keywordtype">char</span>**<span class="keyword">&gt;</span>(options.begin()), optionValues.begin(),</div>
-<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;        initialValue);</div>
-<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;  }</div>
-<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160; </div>
-<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;  SimEnum CreateEnumDouble(<span class="keyword">const</span> <span class="keywordtype">char</span>* name, int32_t direction,</div>
-<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;                           <a class="code" href="classwpi_1_1ArrayRef.html">wpi::ArrayRef&lt;const char*&gt;</a> options,</div>
-<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;                           <a class="code" href="classwpi_1_1ArrayRef.html">wpi::ArrayRef&lt;double&gt;</a> optionValues,</div>
-<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;                           int32_t initialValue) {</div>
-<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;    <span class="keywordflow">if</span> (options.<a class="code" href="classwpi_1_1ArrayRef.html#aa3c8c6c59f9974aa54b78728ce5ff1c1">size</a>() != optionValues.<a class="code" href="classwpi_1_1ArrayRef.html#aa3c8c6c59f9974aa54b78728ce5ff1c1">size</a>()) {</div>
-<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;      <span class="keywordflow">return</span> {};</div>
-<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;    }</div>
-<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="group__hal__simdevice.html#ga068ccb7a53ae25eaefb4b184f3eee10c">HAL_CreateSimValueEnumDouble</a>(</div>
-<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;        m_handle, name, direction, options.<a class="code" href="classwpi_1_1ArrayRef.html#aa3c8c6c59f9974aa54b78728ce5ff1c1">size</a>(),</div>
-<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;        <span class="keyword">const_cast&lt;</span><span class="keyword">const </span><span class="keywordtype">char</span>**<span class="keyword">&gt;</span>(options.data()), optionValues.data(),</div>
-<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;        initialValue);</div>
-<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;  }</div>
-<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160; </div>
-<div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;  SimBoolean CreateBoolean(<span class="keyword">const</span> <span class="keywordtype">char</span>* name, int32_t direction,</div>
-<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;                           <span class="keywordtype">bool</span> initialValue) {</div>
-<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="group__hal__simdevice.html#ga16fbed705d05d3ad30e66facb2947fdd">HAL_CreateSimValueBoolean</a>(m_handle, name, direction, initialValue);</div>
-<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;  }</div>
-<div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160; </div>
-<div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160; <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160;  HAL_SimDeviceHandle m_handle = HAL_kInvalidHandle;</div>
-<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;};</div>
-<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160; </div>
-<div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160;}  <span class="comment">// namespace hal</span></div>
-<div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;<span class="preprocessor">#endif  // __cplusplus</span></div>
+<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;                     <a class="code" href="classwpi_1_1span.html">wpi::span&lt;const char* const&gt;</a> options,</div>
+<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;                     int32_t initialValue) {</div>
+<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="group__hal__simdevice.html#ga589be09032ac3119839caca8bdafd4d2">HAL_CreateSimValueEnum</a>(m_handle, name, direction, options.size(),</div>
+<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;                                  <span class="keyword">const_cast&lt;</span><span class="keyword">const </span><span class="keywordtype">char</span>**<span class="keyword">&gt;</span>(options.data()),</div>
+<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;                                  initialValue);</div>
+<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;  }</div>
+<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160; </div>
+<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;  SimEnum CreateEnumDouble(<span class="keyword">const</span> <span class="keywordtype">char</span>* name, int32_t direction,</div>
+<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;                           std::initializer_list&lt;const char*&gt; options,</div>
+<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;                           std::initializer_list&lt;double&gt; optionValues,</div>
+<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;                           int32_t initialValue) {</div>
+<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;    <span class="keywordflow">if</span> (options.size() != optionValues.size()) {</div>
+<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;      <span class="keywordflow">return</span> {};</div>
+<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;    }</div>
+<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="group__hal__simdevice.html#ga068ccb7a53ae25eaefb4b184f3eee10c">HAL_CreateSimValueEnumDouble</a>(</div>
+<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;        m_handle, name, direction, options.size(),</div>
+<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;        <span class="keyword">const_cast&lt;</span><span class="keyword">const </span><span class="keywordtype">char</span>**<span class="keyword">&gt;</span>(options.begin()), optionValues.begin(),</div>
+<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;        initialValue);</div>
+<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;  }</div>
+<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160; </div>
+<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;  SimEnum CreateEnumDouble(<span class="keyword">const</span> <span class="keywordtype">char</span>* name, int32_t direction,</div>
+<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;                           <a class="code" href="classwpi_1_1span.html">wpi::span&lt;const char* const&gt;</a> options,</div>
+<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;                           <a class="code" href="classwpi_1_1span.html">wpi::span&lt;const double&gt;</a> optionValues,</div>
+<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;                           int32_t initialValue) {</div>
+<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;    <span class="keywordflow">if</span> (options.size() != optionValues.size()) {</div>
+<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;      <span class="keywordflow">return</span> {};</div>
+<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;    }</div>
+<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="group__hal__simdevice.html#ga068ccb7a53ae25eaefb4b184f3eee10c">HAL_CreateSimValueEnumDouble</a>(</div>
+<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;        m_handle, name, direction, options.size(),</div>
+<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;        <span class="keyword">const_cast&lt;</span><span class="keyword">const </span><span class="keywordtype">char</span>**<span class="keyword">&gt;</span>(options.data()), optionValues.data(),</div>
+<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;        initialValue);</div>
+<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;  }</div>
+<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160; </div>
+<div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;  SimBoolean CreateBoolean(<span class="keyword">const</span> <span class="keywordtype">char</span>* name, int32_t direction,</div>
+<div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;                           <span class="keywordtype">bool</span> initialValue) {</div>
+<div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="group__hal__simdevice.html#ga16fbed705d05d3ad30e66facb2947fdd">HAL_CreateSimValueBoolean</a>(m_handle, name, direction, initialValue);</div>
+<div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160;  }</div>
+<div class="line"><a name="l00915"></a><span class="lineno">  915</span>&#160; </div>
+<div class="line"><a name="l00916"></a><span class="lineno">  916</span>&#160; <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00917"></a><span class="lineno">  917</span>&#160;  HAL_SimDeviceHandle m_handle = HAL_kInvalidHandle;</div>
+<div class="line"><a name="l00918"></a><span class="lineno">  918</span>&#160;};</div>
+<div class="line"><a name="l00919"></a><span class="lineno">  919</span>&#160; </div>
+<div class="line"><a name="l00920"></a><span class="lineno">  920</span>&#160;}  <span class="comment">// namespace hal</span></div>
+<div class="line"><a name="l00921"></a><span class="lineno">  921</span>&#160;<span class="preprocessor">#endif  // __cplusplus</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="agroup__hal__simdevice_html_ga373599c87cbe5be376e745b618a8aeea"><div class="ttname"><a href="group__hal__simdevice.html#ga373599c87cbe5be376e745b618a8aeea">HAL_SetSimValue</a></div><div class="ttdeci">void HAL_SetSimValue(HAL_SimValueHandle handle, const struct HAL_Value *value)</div><div class="ttdoc">Sets a simulated value.</div></div>
@@ -473,7 +474,6 @@ $(document).ready(function(){initNavTree('SimDevice_8h_source.html',''); initRes
 <div class="ttc" id="agroup__hal__simdevice_html_ga068ccb7a53ae25eaefb4b184f3eee10c"><div class="ttname"><a href="group__hal__simdevice.html#ga068ccb7a53ae25eaefb4b184f3eee10c">HAL_CreateSimValueEnumDouble</a></div><div class="ttdeci">HAL_SimValueHandle HAL_CreateSimValueEnumDouble(HAL_SimDeviceHandle device, const char *name, int32_t direction, int32_t numOptions, const char **options, const double *optionValues, int32_t initialValue)</div><div class="ttdoc">Creates an enumerated value on a simulated device with double values.</div></div>
 <div class="ttc" id="agroup__hal__simdevice_html_ga2c6ebe956e466aa210fa74d23cd42808"><div class="ttname"><a href="group__hal__simdevice.html#ga2c6ebe956e466aa210fa74d23cd42808">HAL_FreeSimDevice</a></div><div class="ttdeci">void HAL_FreeSimDevice(HAL_SimDeviceHandle handle)</div><div class="ttdoc">Frees a simulated device.</div></div>
 <div class="ttc" id="anamespacehal_html"><div class="ttname"><a href="namespacehal.html">hal</a></div><div class="ttdoc">WPILib Hardware Abstraction Layer (HAL) namespace.</div><div class="ttdef"><b>Definition:</b> ChipObject.h:41</div></div>
-<div class="ttc" id="aclasswpi_1_1ArrayRef_html"><div class="ttname"><a href="classwpi_1_1ArrayRef.html">wpi::ArrayRef</a></div><div class="ttdoc">ArrayRef - Represent a constant reference to an array (0 or more elements consecutively in memory),...</div><div class="ttdef"><b>Definition:</b> ArrayRef.h:46</div></div>
 <div class="ttc" id="agroup__hal__simdevice_html_gab5cda539e8f0ad65d58cd0cd85578494"><div class="ttname"><a href="group__hal__simdevice.html#gab5cda539e8f0ad65d58cd0cd85578494">HAL_SetSimValueBoolean</a></div><div class="ttdeci">void HAL_SetSimValueBoolean(HAL_SimValueHandle handle, HAL_Bool value)</div><div class="ttdoc">Sets a simulated value (boolean).</div><div class="ttdef"><b>Definition:</b> SimDevice.h:365</div></div>
 <div class="ttc" id="agroup__hal__simdevice_html_ga589be09032ac3119839caca8bdafd4d2"><div class="ttname"><a href="group__hal__simdevice.html#ga589be09032ac3119839caca8bdafd4d2">HAL_CreateSimValueEnum</a></div><div class="ttdeci">HAL_SimValueHandle HAL_CreateSimValueEnum(HAL_SimDeviceHandle device, const char *name, int32_t direction, int32_t numOptions, const char **options, int32_t initialValue)</div><div class="ttdoc">Creates an enumerated value on a simulated device.</div></div>
 <div class="ttc" id="agroup__hal__simdevice_html_ga16fbed705d05d3ad30e66facb2947fdd"><div class="ttname"><a href="group__hal__simdevice.html#ga16fbed705d05d3ad30e66facb2947fdd">HAL_CreateSimValueBoolean</a></div><div class="ttdeci">HAL_SimValueHandle HAL_CreateSimValueBoolean(HAL_SimDeviceHandle device, const char *name, int32_t direction, HAL_Bool initialValue)</div><div class="ttdoc">Creates a boolean value on a simulated device.</div><div class="ttdef"><b>Definition:</b> SimDevice.h:213</div></div>
@@ -482,8 +482,8 @@ $(document).ready(function(){initNavTree('SimDevice_8h_source.html',''); initRes
 <div class="ttc" id="agroup__hal__simdevice_html_ga73c9e5733f08b9004f3c3d277d3a2d1a"><div class="ttname"><a href="group__hal__simdevice.html#ga73c9e5733f08b9004f3c3d277d3a2d1a">HAL_GetSimValueBoolean</a></div><div class="ttdeci">HAL_Bool HAL_GetSimValueBoolean(HAL_SimValueHandle handle)</div><div class="ttdoc">Gets a simulated value (boolean).</div><div class="ttdef"><b>Definition:</b> SimDevice.h:293</div></div>
 <div class="ttc" id="agroup__hal__simdevice_html_ga208247d10a836d74ccc9aba2eb5bc51d"><div class="ttname"><a href="group__hal__simdevice.html#ga208247d10a836d74ccc9aba2eb5bc51d">HAL_SetSimValueEnum</a></div><div class="ttdeci">void HAL_SetSimValueEnum(HAL_SimValueHandle handle, int32_t value)</div><div class="ttdoc">Sets a simulated value (enum).</div><div class="ttdef"><b>Definition:</b> SimDevice.h:354</div></div>
 <div class="ttc" id="agroup__hal__simdevice_html_ga5bd6388ee950d49a3fa608e70e86e214"><div class="ttname"><a href="group__hal__simdevice.html#ga5bd6388ee950d49a3fa608e70e86e214">HAL_CreateSimValueDouble</a></div><div class="ttdeci">HAL_SimValueHandle HAL_CreateSimValueDouble(HAL_SimDeviceHandle device, const char *name, int32_t direction, double initialValue)</div><div class="ttdoc">Creates a double value on a simulated device.</div><div class="ttdef"><b>Definition:</b> SimDevice.h:149</div></div>
+<div class="ttc" id="aclasswpi_1_1span_html"><div class="ttname"><a href="classwpi_1_1span.html">wpi::span</a></div><div class="ttdef"><b>Definition:</b> span.h:29</div></div>
 <div class="ttc" id="agroup__hal__simdevice_html_ga0be6a1ad887572b47ef84ecb4c8e5d5d"><div class="ttname"><a href="group__hal__simdevice.html#ga0be6a1ad887572b47ef84ecb4c8e5d5d">HAL_GetSimValueDouble</a></div><div class="ttdeci">double HAL_GetSimValueDouble(HAL_SimValueHandle handle)</div><div class="ttdoc">Gets a simulated value (double).</div><div class="ttdef"><b>Definition:</b> SimDevice.h:269</div></div>
-<div class="ttc" id="aclasswpi_1_1ArrayRef_html_aa3c8c6c59f9974aa54b78728ce5ff1c1"><div class="ttname"><a href="classwpi_1_1ArrayRef.html#aa3c8c6c59f9974aa54b78728ce5ff1c1">wpi::ArrayRef::size</a></div><div class="ttdeci">size_t size() const</div><div class="ttdoc">size - Get the array size.</div><div class="ttdef"><b>Definition:</b> ArrayRef.h:167</div></div>
 <div class="ttc" id="agroup__hal__simdevice_html_ga6baff4d0914c4ff9946d403ba2c8e05b"><div class="ttname"><a href="group__hal__simdevice.html#ga6baff4d0914c4ff9946d403ba2c8e05b">HAL_SetSimValueInt</a></div><div class="ttdeci">void HAL_SetSimValueInt(HAL_SimValueHandle handle, int value)</div><div class="ttdoc">Sets a simulated value (int).</div><div class="ttdef"><b>Definition:</b> SimDevice.h:321</div></div>
 <div class="ttc" id="agroup__hal__simdevice_html_ga82d1db3d13cb6397a8a795dce593e181"><div class="ttname"><a href="group__hal__simdevice.html#ga82d1db3d13cb6397a8a795dce593e181">HAL_ENUM</a></div><div class="ttdeci">HAL_ENUM(HAL_SimValueDirection)</div><div class="ttdoc">Direction of a simulated value (from the perspective of user code).</div><div class="ttdef"><b>Definition:</b> SimDevice.h:34</div></div>
 <div class="ttc" id="agroup__hal__simdevice_html_ga08441b04a6a6d9c7542f54572fc179a5"><div class="ttname"><a href="group__hal__simdevice.html#ga08441b04a6a6d9c7542f54572fc179a5">HAL_CreateSimValueInt</a></div><div class="ttdeci">HAL_SimValueHandle HAL_CreateSimValueInt(HAL_SimDeviceHandle device, const char *name, int32_t direction, int32_t initialValue)</div><div class="ttdoc">Creates an int value on a simulated device.</div><div class="ttdef"><b>Definition:</b> SimDevice.h:109</div></div>
@@ -499,7 +499,7 @@ $(document).ready(function(){initNavTree('SimDevice_8h_source.html',''); initRes
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_7dfa5b6b9262a4050979ee23e0eb392d.html">hal</a></li><li class="navelem"><b>SimDevice.h</b></li>
-    <li class="footer">Generated on Mon Jun 7 2021 00:49:16 for WPILibC++ by
+    <li class="footer">Generated on Mon Jun 7 2021 02:53:12 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-98-g2abbbd9</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-99-g64f5413</span>
    </div>
   </td>
  </tr>
@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('classwpi_1_1json.html',''); initResiza
 <table class="directory">
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>::wpi::detail::iter_impl</b> (defined in <a class="el" href="classwpi_1_1json.html">wpi::json</a>)</td><td class="entry"><a class="el" href="classwpi_1_1json.html">wpi::json</a></td><td class="entry"><span class="mlabel">friend</span></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>accept</b>(std::string_view s) (defined in <a class="el" href="classwpi_1_1json.html">wpi::json</a>)</td><td class="entry"><a class="el" href="classwpi_1_1json.html">wpi::json</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>accept</b>(ArrayRef&lt; uint8_t &gt; arr) (defined in <a class="el" href="classwpi_1_1json.html">wpi::json</a>)</td><td class="entry"><a class="el" href="classwpi_1_1json.html">wpi::json</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>accept</b>(span&lt; const uint8_t &gt; arr) (defined in <a class="el" href="classwpi_1_1json.html">wpi::json</a>)</td><td class="entry"><a class="el" href="classwpi_1_1json.html">wpi::json</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>accept</b>(raw_istream &amp;i) (defined in <a class="el" href="classwpi_1_1json.html">wpi::json</a>)</td><td class="entry"><a class="el" href="classwpi_1_1json.html">wpi::json</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classwpi_1_1json.html#a0977fc0c16c2d2b69cd7b0e4613dbfed">allocator_type</a> typedef</td><td class="entry"><a class="el" href="classwpi_1_1json.html">wpi::json</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classwpi_1_1json.html#a1df2f83e3c8bc5c40efe756f85886fc7">array</a>(initializer_list_t init={})</td><td class="entry"><a class="el" href="classwpi_1_1json.html">wpi::json</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
@@ -142,11 +142,11 @@ $(document).ready(function(){initNavTree('classwpi_1_1json.html',''); initResiza
   <tr><td class="entry"><a class="el" href="classwpi_1_1json.html#aa808bfe44b637b7f46efbf76e9dd4ae9">find</a>(std::string_view key) const</td><td class="entry"><a class="el" href="classwpi_1_1json.html">wpi::json</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classwpi_1_1json.html#ac5f1c2dfa4a2d21d6e1fc700bd606a50">flatten</a>() const</td><td class="entry"><a class="el" href="classwpi_1_1json.html">wpi::json</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classwpi_1_1json.html#ac9bea3ceb22376d6ee339503a5b951a5">from_cbor</a>(raw_istream &amp;is, const bool strict=true)</td><td class="entry"><a class="el" href="classwpi_1_1json.html">wpi::json</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classwpi_1_1json.html#a90ac7e4698ba80573cf025679452e617">from_cbor</a>(ArrayRef&lt; uint8_t &gt; arr, const bool strict=true)</td><td class="entry"><a class="el" href="classwpi_1_1json.html">wpi::json</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classwpi_1_1json.html#a29be4530aeaa432756b464495a7dec48">from_cbor</a>(span&lt; const uint8_t &gt; arr, const bool strict=true)</td><td class="entry"><a class="el" href="classwpi_1_1json.html">wpi::json</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr><td class="entry"><a class="el" href="classwpi_1_1json.html#ac048a5f84b8ff029fdcb70db0c21f804">from_msgpack</a>(raw_istream &amp;is, const bool strict=true)</td><td class="entry"><a class="el" href="classwpi_1_1json.html">wpi::json</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classwpi_1_1json.html#a061fac637eecbd45440ecc2e48518f24">from_msgpack</a>(ArrayRef&lt; uint8_t &gt; arr, const bool strict=true)</td><td class="entry"><a class="el" href="classwpi_1_1json.html">wpi::json</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classwpi_1_1json.html#a3261863b88ebb6fe1d0f09e992b9377c">from_msgpack</a>(span&lt; const uint8_t &gt; arr, const bool strict=true)</td><td class="entry"><a class="el" href="classwpi_1_1json.html">wpi::json</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr><td class="entry"><a class="el" href="classwpi_1_1json.html#ac223d7e1d1c73610251180c27d3395b7">from_ubjson</a>(raw_istream &amp;is, const bool strict=true)</td><td class="entry"><a class="el" href="classwpi_1_1json.html">wpi::json</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>from_ubjson</b>(ArrayRef&lt; uint8_t &gt; arr, const bool strict=true) (defined in <a class="el" href="classwpi_1_1json.html">wpi::json</a>)</td><td class="entry"><a class="el" href="classwpi_1_1json.html">wpi::json</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>from_ubjson</b>(span&lt; const uint8_t &gt; arr, const bool strict=true) (defined in <a class="el" href="classwpi_1_1json.html">wpi::json</a>)</td><td class="entry"><a class="el" href="classwpi_1_1json.html">wpi::json</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr><td class="entry"><a class="el" href="classwpi_1_1json.html#a25004dc06c9ae4045fe0eccb984c2a0a">front</a>()</td><td class="entry"><a class="el" href="classwpi_1_1json.html">wpi::json</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classwpi_1_1json.html#a4c53b9d07041c6e16acc4e1aefb0115f">front</a>() const</td><td class="entry"><a class="el" href="classwpi_1_1json.html">wpi::json</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classwpi_1_1json.html#a270f45bacdb1bfbfb8eda4342d699fac">get</a>() const</td><td class="entry"><a class="el" href="classwpi_1_1json.html">wpi::json</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
@@ -237,7 +237,7 @@ $(document).ready(function(){initNavTree('classwpi_1_1json.html',''); initResiza
   <tr class="even"><td class="entry"><a class="el" href="classwpi_1_1json.html#aa02bbed26190f697f5d5cdd24ecb36c0">other_error</a> typedef</td><td class="entry"><a class="el" href="classwpi_1_1json.html">wpi::json</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classwpi_1_1json.html#aab36cadf0a02394d11bf493b3d95e272">out_of_range</a> typedef</td><td class="entry"><a class="el" href="classwpi_1_1json.html">wpi::json</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classwpi_1_1json.html#a5132e0dad4ad3f4dbc98672a1a0d46da">parse</a>(std::string_view s, const parser_callback_t cb=nullptr, const bool allow_exceptions=true)</td><td class="entry"><a class="el" href="classwpi_1_1json.html">wpi::json</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>parse</b>(ArrayRef&lt; uint8_t &gt; arr, const parser_callback_t cb=nullptr, const bool allow_exceptions=true) (defined in <a class="el" href="classwpi_1_1json.html">wpi::json</a>)</td><td class="entry"><a class="el" href="classwpi_1_1json.html">wpi::json</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>parse</b>(span&lt; const uint8_t &gt; arr, const parser_callback_t cb=nullptr, const bool allow_exceptions=true) (defined in <a class="el" href="classwpi_1_1json.html">wpi::json</a>)</td><td class="entry"><a class="el" href="classwpi_1_1json.html">wpi::json</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classwpi_1_1json.html#ad33b014d8a0a183029cad79d40504ead">parse</a>(raw_istream &amp;i, const parser_callback_t cb=nullptr, const bool allow_exceptions=true)</td><td class="entry"><a class="el" href="classwpi_1_1json.html">wpi::json</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr><td class="entry"><a class="el" href="classwpi_1_1json.html#a6417f576804e4c69795c765d38553226">parse_error</a> typedef</td><td class="entry"><a class="el" href="classwpi_1_1json.html">wpi::json</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classwpi_1_1json.html#a8ccc68470f029327303a5d77559f6e79">parse_event_t</a> enum name</td><td class="entry"><a class="el" href="classwpi_1_1json.html">wpi::json</a></td><td class="entry"></td></tr>
@@ -290,7 +290,7 @@ $(document).ready(function(){initNavTree('classwpi_1_1json.html',''); initResiza
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jun 7 2021 00:49:21 for WPILibC++ by
+    <li class="footer">Generated on Mon Jun 7 2021 02:53:17 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

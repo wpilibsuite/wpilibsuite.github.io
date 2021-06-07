@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-98-g2abbbd9</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-99-g64f5413</span>
    </div>
   </td>
  </tr>
@@ -104,7 +104,7 @@ $(document).ready(function(){initNavTree('NotifierCommand_8h_source.html',''); i
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;frc/Notifier.h&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;units/time.h&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;wpi/ArrayRef.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;wpi/span.h&gt;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;frc2/command/CommandBase.h&quot;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;frc2/command/CommandHelper.h&quot;</span></div>
@@ -115,8 +115,8 @@ $(document).ready(function(){initNavTree('NotifierCommand_8h_source.html',''); i
 <div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classfrc2_1_1NotifierCommand.html#abc3d9359932b10e69fa1ae3588bfc4cb">   37</a></span>&#160;  <a class="code" href="classfrc2_1_1NotifierCommand.html#abc3d9359932b10e69fa1ae3588bfc4cb">NotifierCommand</a>(std::function&lt;<span class="keywordtype">void</span>()&gt; toRun, units::second_t period,</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                  std::initializer_list&lt;Subsystem*&gt; requirements);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classfrc2_1_1NotifierCommand.html#ae3ca66e30a9b42b2429cb973ced0936d">   47</a></span>&#160;  <a class="code" href="classfrc2_1_1NotifierCommand.html#ae3ca66e30a9b42b2429cb973ced0936d">NotifierCommand</a>(std::function&lt;<span class="keywordtype">void</span>()&gt; toRun, units::second_t period,</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                  <a class="code" href="classwpi_1_1ArrayRef.html">wpi::ArrayRef&lt;Subsystem*&gt;</a> requirements = {});</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classfrc2_1_1NotifierCommand.html#a90f1f455f5265e5f2c742e051b651b26">   47</a></span>&#160;  <a class="code" href="classfrc2_1_1NotifierCommand.html#a90f1f455f5265e5f2c742e051b651b26">NotifierCommand</a>(std::function&lt;<span class="keywordtype">void</span>()&gt; toRun, units::second_t period,</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                  <a class="code" href="classwpi_1_1span.html">wpi::span&lt;Subsystem* const&gt;</a> requirements = {});</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <a class="code" href="classfrc2_1_1NotifierCommand.html#abc3d9359932b10e69fa1ae3588bfc4cb">NotifierCommand</a>(<a class="code" href="classfrc2_1_1NotifierCommand.html">NotifierCommand</a>&amp;&amp; other);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
@@ -135,10 +135,10 @@ $(document).ready(function(){initNavTree('NotifierCommand_8h_source.html',''); i
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassfrc2_1_1NotifierCommand_html_ac17b00e06553b1e9bc9d42fd7cb15ae1"><div class="ttname"><a href="classfrc2_1_1NotifierCommand.html#ac17b00e06553b1e9bc9d42fd7cb15ae1">frc2::NotifierCommand::End</a></div><div class="ttdeci">void End(bool interrupted) override</div><div class="ttdoc">The action to take when the command ends.</div></div>
-<div class="ttc" id="aclasswpi_1_1ArrayRef_html"><div class="ttname"><a href="classwpi_1_1ArrayRef.html">wpi::ArrayRef</a></div><div class="ttdoc">ArrayRef - Represent a constant reference to an array (0 or more elements consecutively in memory),...</div><div class="ttdef"><b>Definition:</b> ArrayRef.h:46</div></div>
-<div class="ttc" id="aclassfrc2_1_1NotifierCommand_html_ae3ca66e30a9b42b2429cb973ced0936d"><div class="ttname"><a href="classfrc2_1_1NotifierCommand.html#ae3ca66e30a9b42b2429cb973ced0936d">frc2::NotifierCommand::NotifierCommand</a></div><div class="ttdeci">NotifierCommand(std::function&lt; void()&gt; toRun, units::second_t period, wpi::ArrayRef&lt; Subsystem * &gt; requirements={})</div><div class="ttdoc">Creates a new NotifierCommand.</div></div>
 <div class="ttc" id="aclassfrc2_1_1NotifierCommand_html"><div class="ttname"><a href="classfrc2_1_1NotifierCommand.html">frc2::NotifierCommand</a></div><div class="ttdoc">A command that starts a notifier to run the given runnable periodically in a separate thread.</div><div class="ttdef"><b>Definition:</b> NotifierCommand.h:28</div></div>
+<div class="ttc" id="aclasswpi_1_1span_html"><div class="ttname"><a href="classwpi_1_1span.html">wpi::span</a></div><div class="ttdef"><b>Definition:</b> span.h:29</div></div>
 <div class="ttc" id="aclassfrc2_1_1CommandHelper_html"><div class="ttname"><a href="classfrc2_1_1CommandHelper.html">frc2::CommandHelper</a></div><div class="ttdoc">CRTP implementation to allow polymorphic decorator functions in Command.</div><div class="ttdef"><b>Definition:</b> CommandHelper.h:23</div></div>
+<div class="ttc" id="aclassfrc2_1_1NotifierCommand_html_a90f1f455f5265e5f2c742e051b651b26"><div class="ttname"><a href="classfrc2_1_1NotifierCommand.html#a90f1f455f5265e5f2c742e051b651b26">frc2::NotifierCommand::NotifierCommand</a></div><div class="ttdeci">NotifierCommand(std::function&lt; void()&gt; toRun, units::second_t period, wpi::span&lt; Subsystem *const &gt; requirements={})</div><div class="ttdoc">Creates a new NotifierCommand.</div></div>
 <div class="ttc" id="aclassfrc2_1_1NotifierCommand_html_a815e3e7828540dbe56a845fb9bfec6b5"><div class="ttname"><a href="classfrc2_1_1NotifierCommand.html#a815e3e7828540dbe56a845fb9bfec6b5">frc2::NotifierCommand::Initialize</a></div><div class="ttdeci">void Initialize() override</div><div class="ttdoc">The initial subroutine of a command.</div></div>
 <div class="ttc" id="aclassfrc2_1_1NotifierCommand_html_abc3d9359932b10e69fa1ae3588bfc4cb"><div class="ttname"><a href="classfrc2_1_1NotifierCommand.html#abc3d9359932b10e69fa1ae3588bfc4cb">frc2::NotifierCommand::NotifierCommand</a></div><div class="ttdeci">NotifierCommand(std::function&lt; void()&gt; toRun, units::second_t period, std::initializer_list&lt; Subsystem * &gt; requirements)</div><div class="ttdoc">Creates a new NotifierCommand.</div></div>
 <div class="ttc" id="aclassfrc_1_1Notifier_html"><div class="ttname"><a href="classfrc_1_1Notifier.html">frc::Notifier</a></div><div class="ttdef"><b>Definition:</b> Notifier.h:22</div></div>
@@ -146,7 +146,7 @@ $(document).ready(function(){initNavTree('NotifierCommand_8h_source.html',''); i
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e7d5d1c9c07b3d6a0a849f7ca2bfcaa9.html">frc2</a></li><li class="navelem"><a class="el" href="dir_25d5854705192c92d2d003534c71255a.html">command</a></li><li class="navelem"><b>NotifierCommand.h</b></li>
-    <li class="footer">Generated on Mon Jun 7 2021 00:49:16 for WPILibC++ by
+    <li class="footer">Generated on Mon Jun 7 2021 02:53:13 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-98-g2abbbd9</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-99-g64f5413</span>
    </div>
   </td>
  </tr>
@@ -99,12 +99,12 @@ $(document).ready(function(){initNavTree('SetUtilities_8h_source.html',''); init
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;wpi/ArrayRef.h&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;wpi/SmallVector.h&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;wpi/SmallVector.h&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;wpi/span.h&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>frc2 {</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keywordtype">void</span> SetInsert(<a class="code" href="classwpi_1_1SmallVectorImpl.html">wpi::SmallVectorImpl&lt;T*&gt;</a>&amp; vector, <a class="code" href="classwpi_1_1ArrayRef.html">wpi::ArrayRef&lt;T*&gt;</a> toAdd) {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keywordtype">void</span> SetInsert(<a class="code" href="classwpi_1_1SmallVectorImpl.html">wpi::SmallVectorImpl&lt;T*&gt;</a>&amp; vector, <a class="code" href="classwpi_1_1span.html">wpi::span&lt;T* const&gt;</a> toAdd) {</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span> addCommand : toAdd) {</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">bool</span> exists = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> existingCommand : vector) {</div>
@@ -121,13 +121,13 @@ $(document).ready(function(){initNavTree('SetUtilities_8h_source.html',''); init
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}  <span class="comment">// namespace frc2</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclasswpi_1_1ArrayRef_html"><div class="ttname"><a href="classwpi_1_1ArrayRef.html">wpi::ArrayRef</a></div><div class="ttdoc">ArrayRef - Represent a constant reference to an array (0 or more elements consecutively in memory),...</div><div class="ttdef"><b>Definition:</b> ArrayRef.h:46</div></div>
-<div class="ttc" id="aclasswpi_1_1SmallVectorImpl_html"><div class="ttname"><a href="classwpi_1_1SmallVectorImpl.html">wpi::SmallVectorImpl</a></div><div class="ttdoc">This class consists of common code factored out of the SmallVector class to reduce code duplication b...</div><div class="ttdef"><b>Definition:</b> hostname.h:13</div></div>
+<div class="ttc" id="aclasswpi_1_1SmallVectorImpl_html"><div class="ttname"><a href="classwpi_1_1SmallVectorImpl.html">wpi::SmallVectorImpl</a></div><div class="ttdoc">This class consists of common code factored out of the SmallVector class to reduce code duplication b...</div><div class="ttdef"><b>Definition:</b> ConvertUTF.h:106</div></div>
+<div class="ttc" id="aclasswpi_1_1span_html"><div class="ttname"><a href="classwpi_1_1span.html">wpi::span</a></div><div class="ttdef"><b>Definition:</b> span.h:29</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e7d5d1c9c07b3d6a0a849f7ca2bfcaa9.html">frc2</a></li><li class="navelem"><a class="el" href="dir_25d5854705192c92d2d003534c71255a.html">command</a></li><li class="navelem"><b>SetUtilities.h</b></li>
-    <li class="footer">Generated on Mon Jun 7 2021 00:49:16 for WPILibC++ by
+    <li class="footer">Generated on Mon Jun 7 2021 02:53:13 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

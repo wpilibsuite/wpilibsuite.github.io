@@ -32,7 +32,7 @@ var classfrc_1_1SPI =
     [ "SetAccumulatorCenter", "classfrc_1_1SPI.html#acac48eeec3574ed6670dfa58fafcdfdd", null ],
     [ "SetAccumulatorDeadband", "classfrc_1_1SPI.html#a5c423b7cb5f34b4c076881f167ff0d9a", null ],
     [ "SetAccumulatorIntegratedCenter", "classfrc_1_1SPI.html#a1a538757d510cbea45e087a7e02e515e", null ],
-    [ "SetAutoTransmitData", "classfrc_1_1SPI.html#a0c5ccda50db4f892c99d339a9cef88e7", null ],
+    [ "SetAutoTransmitData", "classfrc_1_1SPI.html#a744aac37ffe2f9f81a770492970aee96", null ],
     [ "SetChipSelectActiveHigh", "classfrc_1_1SPI.html#a9d8b94f99e596d25c820b478b07d780e", null ],
     [ "SetChipSelectActiveLow", "classfrc_1_1SPI.html#a220425545082b5137f639b62925f80f1", null ],
     [ "SetClockActiveHigh", "classfrc_1_1SPI.html#ae15d94ef40c01beb33378d544ed05be6", null ],

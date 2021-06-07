@@ -5,7 +5,7 @@ var classwpi_1_1HttpServerConnection =
     [ "BuildCommonHeaders", "classwpi_1_1HttpServerConnection.html#a49235d25ea52d88faab2633741fd5d37", null ],
     [ "BuildHeader", "classwpi_1_1HttpServerConnection.html#abc4c5490c7f33ec73d71a9622b4128da", null ],
     [ "ProcessRequest", "classwpi_1_1HttpServerConnection.html#a9fcd9c70806c07e8bdc29618eae2008c", null ],
-    [ "SendData", "classwpi_1_1HttpServerConnection.html#a33e14330649254066ec02c7e70403f65", null ],
+    [ "SendData", "classwpi_1_1HttpServerConnection.html#a97555b65a6acd9942b349f2852e3ca16", null ],
     [ "SendError", "classwpi_1_1HttpServerConnection.html#a6878054742f5deb6191c45499e4ab6e5", null ],
     [ "SendResponse", "classwpi_1_1HttpServerConnection.html#aca323f8c2114ec8510ce571fe647d4d7", null ],
     [ "SendStaticResponse", "classwpi_1_1HttpServerConnection.html#a548a44730f8b4303d97bc0390407324d", null ],

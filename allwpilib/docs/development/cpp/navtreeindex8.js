@@ -1,5 +1,8 @@
 var NAVTREEINDEX8 =
 {
+"classfrc_1_1Color8Bit.html":[5,0,5,30],
+"classfrc_1_1Color8Bit.html#a366bf46f9feb6aac2314c9ae27724743":[5,0,5,30,3],
+"classfrc_1_1Color8Bit.html#a37b4731923004c306cdf44085ca90f87":[5,0,5,30,2],
 "classfrc_1_1Color8Bit.html#a53dc0449308cd835e98db226640e4a65":[5,0,5,30,1],
 "classfrc_1_1Color8Bit.html#a7508647820b675aa4d66c459d3095934":[5,0,5,30,6],
 "classfrc_1_1Color8Bit.html#aaaac746bac2772158658d10311281950":[5,0,5,30,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX8 =
 "classfrc_1_1DMA.html#ac5cf92617a660969e63c6d8b1cbd402f":[5,0,5,53,5],
 "classfrc_1_1DMA.html#af267e400ea72ded4ccd4b7ac0d0bc501":[5,0,5,53,10],
 "classfrc_1_1DMA.html#afce83d02ca7dc4a5828e323422254609":[5,0,5,53,3],
-"classfrc_1_1DMASample.html":[5,0,5,54],
-"classfrc_1_1DMASample.html#a0f4aedf762d4ea5396221b0bc2537541":[5,0,5,54,10],
-"classfrc_1_1DMASample.html#a19921e60ea1c11cbb246d709b81ef866":[5,0,5,54,4],
-"classfrc_1_1DMASample.html#a1ea3025fc5a55acbddb8e9b09cc54eaf":[5,0,5,54,0]
+"classfrc_1_1DMASample.html":[5,0,5,54]
 };

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-98-g2abbbd9</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-99-g64f5413</span>
    </div>
   </td>
  </tr>
@@ -104,7 +104,7 @@ $(document).ready(function(){initNavTree('TrapezoidProfileCommand_8h_source.html
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;frc/Timer.h&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;frc/trajectory/TrapezoidProfile.h&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;wpi/ArrayRef.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;wpi/span.h&gt;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;frc2/command/CommandBase.h&quot;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;frc2/command/CommandHelper.h&quot;</span></div>
@@ -127,9 +127,9 @@ $(document).ready(function(){initNavTree('TrapezoidProfileCommand_8h_source.html
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    this-&gt;<a class="code" href="classfrc2_1_1CommandBase.html#a64f050689acd13a075633d78786d5aaf">AddRequirements</a>(requirements);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  }</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classfrc2_1_1TrapezoidProfileCommand.html#aeb215fcbe62cac09a4000ffdddabed3c">   55</a></span>&#160;  <a class="code" href="classfrc2_1_1TrapezoidProfileCommand.html#aeb215fcbe62cac09a4000ffdddabed3c">TrapezoidProfileCommand</a>(<a class="code" href="classfrc_1_1TrapezoidProfile.html">frc::TrapezoidProfile&lt;Distance&gt;</a> profile,</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classfrc2_1_1TrapezoidProfileCommand.html#a942776626612c743c074a8e0b72cbfee">   55</a></span>&#160;  <a class="code" href="classfrc2_1_1TrapezoidProfileCommand.html#a942776626612c743c074a8e0b72cbfee">TrapezoidProfileCommand</a>(<a class="code" href="classfrc_1_1TrapezoidProfile.html">frc::TrapezoidProfile&lt;Distance&gt;</a> profile,</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                          std::function&lt;<span class="keywordtype">void</span>(State)&gt; output,</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                          <a class="code" href="classwpi_1_1ArrayRef.html">wpi::ArrayRef&lt;Subsystem*&gt;</a> requirements = {})</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                          <a class="code" href="classwpi_1_1span.html">wpi::span&lt;Subsystem* const&gt;</a> requirements = {})</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      : m_profile(profile), m_output(output) {</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    this-&gt;<a class="code" href="classfrc2_1_1CommandBase.html#a64f050689acd13a075633d78786d5aaf">AddRequirements</a>(requirements);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  }</div>
@@ -159,13 +159,13 @@ $(document).ready(function(){initNavTree('TrapezoidProfileCommand_8h_source.html
 </div><!-- doc-content -->
 <div class="ttc" id="aclassfrc_1_1Timer_html_a5950fe350497fb7040832120fe836ac7"><div class="ttname"><a href="classfrc_1_1Timer.html#a5950fe350497fb7040832120fe836ac7">frc::Timer::Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdoc">Reset the timer by setting the time to 0.</div></div>
 <div class="ttc" id="aclassfrc_1_1Timer_html_ab91796452ca04b1b3b090f0a2c9c5600"><div class="ttname"><a href="classfrc_1_1Timer.html#ab91796452ca04b1b3b090f0a2c9c5600">frc::Timer::Start</a></div><div class="ttdeci">void Start()</div><div class="ttdoc">Start the timer running.</div></div>
-<div class="ttc" id="aclasswpi_1_1ArrayRef_html"><div class="ttname"><a href="classwpi_1_1ArrayRef.html">wpi::ArrayRef</a></div><div class="ttdoc">ArrayRef - Represent a constant reference to an array (0 or more elements consecutively in memory),...</div><div class="ttdef"><b>Definition:</b> ArrayRef.h:46</div></div>
 <div class="ttc" id="aclassfrc2_1_1TrapezoidProfileCommand_html_acd0673ce0d587d76fafbb0709743baf3"><div class="ttname"><a href="classfrc2_1_1TrapezoidProfileCommand.html#acd0673ce0d587d76fafbb0709743baf3">frc2::TrapezoidProfileCommand::Execute</a></div><div class="ttdeci">void Execute() override</div><div class="ttdoc">The main body of a command.</div><div class="ttdef"><b>Definition:</b> TrapezoidProfileCommand.h:67</div></div>
 <div class="ttc" id="aclassfrc_1_1TrapezoidProfile_html"><div class="ttname"><a href="classfrc_1_1TrapezoidProfile.html">frc::TrapezoidProfile</a></div><div class="ttdoc">A trapezoid-shaped velocity profile.</div><div class="ttdef"><b>Definition:</b> TrapezoidProfile.h:42</div></div>
 <div class="ttc" id="aclassfrc2_1_1TrapezoidProfileCommand_html_a179e30f028f1dfdcbb2020a95583dcd9"><div class="ttname"><a href="classfrc2_1_1TrapezoidProfileCommand.html#a179e30f028f1dfdcbb2020a95583dcd9">frc2::TrapezoidProfileCommand::Initialize</a></div><div class="ttdeci">void Initialize() override</div><div class="ttdoc">The initial subroutine of a command.</div><div class="ttdef"><b>Definition:</b> TrapezoidProfileCommand.h:62</div></div>
 <div class="ttc" id="aclassfrc_1_1Timer_html_ad2accdd26a18986c2b5f5acad2f844a2"><div class="ttname"><a href="classfrc_1_1Timer.html#ad2accdd26a18986c2b5f5acad2f844a2">frc::Timer::Stop</a></div><div class="ttdeci">void Stop()</div><div class="ttdoc">Stop the timer.</div></div>
 <div class="ttc" id="aclassfrc_1_1Timer_html"><div class="ttname"><a href="classfrc_1_1Timer.html">frc::Timer</a></div><div class="ttdoc">A wrapper for the frc::Timer class that returns unit-typed values.</div><div class="ttdef"><b>Definition:</b> Timer.h:33</div></div>
-<div class="ttc" id="aclassfrc2_1_1TrapezoidProfileCommand_html_aeb215fcbe62cac09a4000ffdddabed3c"><div class="ttname"><a href="classfrc2_1_1TrapezoidProfileCommand.html#aeb215fcbe62cac09a4000ffdddabed3c">frc2::TrapezoidProfileCommand::TrapezoidProfileCommand</a></div><div class="ttdeci">TrapezoidProfileCommand(frc::TrapezoidProfile&lt; Distance &gt; profile, std::function&lt; void(State)&gt; output, wpi::ArrayRef&lt; Subsystem * &gt; requirements={})</div><div class="ttdoc">Creates a new TrapezoidProfileCommand that will execute the given TrapezoidalProfile.</div><div class="ttdef"><b>Definition:</b> TrapezoidProfileCommand.h:55</div></div>
+<div class="ttc" id="aclassfrc2_1_1TrapezoidProfileCommand_html_a942776626612c743c074a8e0b72cbfee"><div class="ttname"><a href="classfrc2_1_1TrapezoidProfileCommand.html#a942776626612c743c074a8e0b72cbfee">frc2::TrapezoidProfileCommand::TrapezoidProfileCommand</a></div><div class="ttdeci">TrapezoidProfileCommand(frc::TrapezoidProfile&lt; Distance &gt; profile, std::function&lt; void(State)&gt; output, wpi::span&lt; Subsystem *const &gt; requirements={})</div><div class="ttdoc">Creates a new TrapezoidProfileCommand that will execute the given TrapezoidalProfile.</div><div class="ttdef"><b>Definition:</b> TrapezoidProfileCommand.h:55</div></div>
+<div class="ttc" id="aclasswpi_1_1span_html"><div class="ttname"><a href="classwpi_1_1span.html">wpi::span</a></div><div class="ttdef"><b>Definition:</b> span.h:29</div></div>
 <div class="ttc" id="aclassfrc2_1_1TrapezoidProfileCommand_html_ae8056f2fab05e0df1e6c9cd32c5a4b79"><div class="ttname"><a href="classfrc2_1_1TrapezoidProfileCommand.html#ae8056f2fab05e0df1e6c9cd32c5a4b79">frc2::TrapezoidProfileCommand::End</a></div><div class="ttdeci">void End(bool interrupted) override</div><div class="ttdoc">The action to take when the command ends.</div><div class="ttdef"><b>Definition:</b> TrapezoidProfileCommand.h:69</div></div>
 <div class="ttc" id="aclassfrc2_1_1TrapezoidProfileCommand_html"><div class="ttname"><a href="classfrc2_1_1TrapezoidProfileCommand.html">frc2::TrapezoidProfileCommand</a></div><div class="ttdoc">A command that runs a TrapezoidProfile.</div><div class="ttdef"><b>Definition:</b> TrapezoidProfileCommand.h:26</div></div>
 <div class="ttc" id="aclassfrc2_1_1CommandBase_html_a64f050689acd13a075633d78786d5aaf"><div class="ttname"><a href="classfrc2_1_1CommandBase.html#a64f050689acd13a075633d78786d5aaf">frc2::CommandBase::AddRequirements</a></div><div class="ttdeci">void AddRequirements(std::initializer_list&lt; Subsystem * &gt; requirements)</div><div class="ttdoc">Adds the specified requirements to the command.</div></div>
@@ -179,7 +179,7 @@ $(document).ready(function(){initNavTree('TrapezoidProfileCommand_8h_source.html
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e7d5d1c9c07b3d6a0a849f7ca2bfcaa9.html">frc2</a></li><li class="navelem"><a class="el" href="dir_25d5854705192c92d2d003534c71255a.html">command</a></li><li class="navelem"><b>TrapezoidProfileCommand.h</b></li>
-    <li class="footer">Generated on Mon Jun 7 2021 00:49:16 for WPILibC++ by
+    <li class="footer">Generated on Mon Jun 7 2021 02:53:13 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

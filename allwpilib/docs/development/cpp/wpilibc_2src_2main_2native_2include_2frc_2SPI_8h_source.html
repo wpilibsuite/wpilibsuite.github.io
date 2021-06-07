@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-98-g2abbbd9</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-99-g64f5413</span>
    </div>
   </td>
  </tr>
@@ -105,8 +105,8 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;hal/SPITypes.h&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;units/time.h&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;wpi/ArrayRef.h&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;wpi/deprecated.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;wpi/deprecated.h&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;wpi/span.h&gt;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span>frc {</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
@@ -157,7 +157,7 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
 <div class="line"><a name="l00165"></a><span class="lineno"><a class="line" href="classfrc_1_1SPI.html#a7738041cb9e93724d8399a4b49ed98d1">  165</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1SPI.html#a7738041cb9e93724d8399a4b49ed98d1">FreeAuto</a>();</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
-<div class="line"><a name="l00176"></a><span class="lineno"><a class="line" href="classfrc_1_1SPI.html#a0c5ccda50db4f892c99d339a9cef88e7">  176</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1SPI.html#a0c5ccda50db4f892c99d339a9cef88e7">SetAutoTransmitData</a>(wpi::ArrayRef&lt;uint8_t&gt; dataToSend, <span class="keywordtype">int</span> zeroSize);</div>
+<div class="line"><a name="l00176"></a><span class="lineno"><a class="line" href="classfrc_1_1SPI.html#a744aac37ffe2f9f81a770492970aee96">  176</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1SPI.html#a744aac37ffe2f9f81a770492970aee96">SetAutoTransmitData</a>(wpi::span&lt;const uint8_t&gt; dataToSend, <span class="keywordtype">int</span> zeroSize);</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
 <div class="line"><a name="l00186"></a><span class="lineno"><a class="line" href="classfrc_1_1SPI.html#a7d77b758daa0cc642fcd08482b70f07d">  186</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1SPI.html#a7d77b758daa0cc642fcd08482b70f07d">StartAutoRate</a>(units::second_t period);</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
@@ -242,7 +242,6 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div class="ttc" id="aclassfrc_1_1SPI_html_ad75723cb2e4d98b60979295a2e2aaaf4"><div class="ttname"><a href="classfrc_1_1SPI.html#ad75723cb2e4d98b60979295a2e2aaaf4">frc::SPI::GetAccumulatorValue</a></div><div class="ttdeci">int64_t GetAccumulatorValue() const</div><div class="ttdoc">Read the accumulated value.</div></div>
 <div class="ttc" id="aclassfrc_1_1SPI_html_acac48eeec3574ed6670dfa58fafcdfdd"><div class="ttname"><a href="classfrc_1_1SPI.html#acac48eeec3574ed6670dfa58fafcdfdd">frc::SPI::SetAccumulatorCenter</a></div><div class="ttdeci">void SetAccumulatorCenter(int center)</div><div class="ttdoc">Set the center value of the accumulator.</div></div>
 <div class="ttc" id="aclassfrc_1_1SPI_html_ab78a7f35b03ccc3d62b656d5430a5eb9"><div class="ttname"><a href="classfrc_1_1SPI.html#ab78a7f35b03ccc3d62b656d5430a5eb9">frc::SPI::SetSampleDataOnLeadingEdge</a></div><div class="ttdeci">void SetSampleDataOnLeadingEdge()</div><div class="ttdoc">Configure that the data is stable on the leading edge and the data changes on the trailing edge.</div></div>
-<div class="ttc" id="aclassfrc_1_1SPI_html_a0c5ccda50db4f892c99d339a9cef88e7"><div class="ttname"><a href="classfrc_1_1SPI.html#a0c5ccda50db4f892c99d339a9cef88e7">frc::SPI::SetAutoTransmitData</a></div><div class="ttdeci">void SetAutoTransmitData(wpi::ArrayRef&lt; uint8_t &gt; dataToSend, int zeroSize)</div><div class="ttdoc">Set the data to be transmitted by the engine.</div></div>
 <div class="ttc" id="aclassfrc_1_1SPI_html_a5ab5f96a82ce90c7345c3a0a20f5a9ce"><div class="ttname"><a href="classfrc_1_1SPI.html#a5ab5f96a82ce90c7345c3a0a20f5a9ce">frc::SPI::SetClockActiveLow</a></div><div class="ttdeci">void SetClockActiveLow()</div><div class="ttdoc">Configure the clock output line to be active low.</div></div>
 <div class="ttc" id="aclassfrc_1_1SPI_html_ae4cc2d423113bc64d1cb9f8b0cce3f52"><div class="ttname"><a href="classfrc_1_1SPI.html#ae4cc2d423113bc64d1cb9f8b0cce3f52">frc::SPI::StartAutoTrigger</a></div><div class="ttdeci">void StartAutoTrigger(DigitalSource &amp;source, bool rising, bool falling)</div><div class="ttdoc">Start running the automatic SPI transfer engine when a trigger occurs.</div></div>
 <div class="ttc" id="aclassfrc_1_1SPI_html_ade47943406f4534df47293166dd2dae6"><div class="ttname"><a href="classfrc_1_1SPI.html#ade47943406f4534df47293166dd2dae6">frc::SPI::InitAuto</a></div><div class="ttdeci">void InitAuto(int bufferSize)</div><div class="ttdoc">Initialize automatic SPI transfer engine.</div></div>
@@ -261,6 +260,7 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div class="ttc" id="aclassfrc_1_1SPI_html_a24b13f7560a76642a2cb312041421423"><div class="ttname"><a href="classfrc_1_1SPI.html#a24b13f7560a76642a2cb312041421423">frc::SPI::StopAuto</a></div><div class="ttdeci">void StopAuto()</div><div class="ttdoc">Stop running the automatic SPI transfer engine.</div></div>
 <div class="ttc" id="aclassfrc_1_1SPI_html_af29b8a57f73536ce03f1e9f68623f332"><div class="ttname"><a href="classfrc_1_1SPI.html#af29b8a57f73536ce03f1e9f68623f332">frc::SPI::GetAccumulatorOutput</a></div><div class="ttdeci">void GetAccumulatorOutput(int64_t &amp;value, int64_t &amp;count) const</div><div class="ttdoc">Read the accumulated value and the number of accumulated values atomically.</div></div>
 <div class="ttc" id="aclassfrc_1_1SPI_html_a69f9888cae9f8a9dbef67f2d97a2487d"><div class="ttname"><a href="classfrc_1_1SPI.html#a69f9888cae9f8a9dbef67f2d97a2487d">frc::SPI::GetAccumulatorAverage</a></div><div class="ttdeci">double GetAccumulatorAverage() const</div><div class="ttdoc">Read the average of the accumulated value.</div></div>
+<div class="ttc" id="aclassfrc_1_1SPI_html_a744aac37ffe2f9f81a770492970aee96"><div class="ttname"><a href="classfrc_1_1SPI.html#a744aac37ffe2f9f81a770492970aee96">frc::SPI::SetAutoTransmitData</a></div><div class="ttdeci">void SetAutoTransmitData(wpi::span&lt; const uint8_t &gt; dataToSend, int zeroSize)</div><div class="ttdoc">Set the data to be transmitted by the engine.</div></div>
 <div class="ttc" id="aclassfrc_1_1SPI_html_afed70a1e9bbc2f355c759623cad415f9"><div class="ttname"><a href="classfrc_1_1SPI.html#afed70a1e9bbc2f355c759623cad415f9">frc::SPI::ConfigureAutoStall</a></div><div class="ttdeci">void ConfigureAutoStall(HAL_SPIPort port, int csToSclkTicks, int stallTicks, int pow2BytesPerRead)</div><div class="ttdoc">Configure the Auto SPI Stall time between reads.</div></div>
 <div class="ttc" id="aclassfrc_1_1SPI_html_a7738041cb9e93724d8399a4b49ed98d1"><div class="ttname"><a href="classfrc_1_1SPI.html#a7738041cb9e93724d8399a4b49ed98d1">frc::SPI::FreeAuto</a></div><div class="ttdeci">void FreeAuto()</div><div class="ttdoc">Frees the automatic SPI transfer engine.</div></div>
 <div class="ttc" id="aclassfrc_1_1SPI_html_a901a0fc2729722899b1d099e09b9795f"><div class="ttname"><a href="classfrc_1_1SPI.html#a901a0fc2729722899b1d099e09b9795f">frc::SPI::Transaction</a></div><div class="ttdeci">virtual int Transaction(uint8_t *dataToSend, uint8_t *dataReceived, int size)</div><div class="ttdoc">Perform a simultaneous read/write transaction with the device.</div></div>
@@ -275,7 +275,7 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><b>SPI.h</b></li>
-    <li class="footer">Generated on Mon Jun 7 2021 00:49:16 for WPILibC++ by
+    <li class="footer">Generated on Mon Jun 7 2021 02:53:12 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

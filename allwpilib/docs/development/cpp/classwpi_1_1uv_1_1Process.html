@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-98-g2abbbd9</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-99-g64f5413</span>
    </div>
   </td>
  </tr>
@@ -249,9 +249,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a79d4ccba3c34c6f42ed4fe52f0b417a6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1uv_1_1Process.html#a79d4ccba3c34c6f42ed4fe52f0b417a6">DisableStdioInheritance</a> ()</td></tr>
 <tr class="memdesc:a79d4ccba3c34c6f42ed4fe52f0b417a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disables inheritance for file descriptors / handles that this process inherited from its parent.  <a href="classwpi_1_1uv_1_1Process.html#a79d4ccba3c34c6f42ed4fe52f0b417a6">More...</a><br /></td></tr>
 <tr class="separator:a79d4ccba3c34c6f42ed4fe52f0b417a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07d8e73f900dc88ea3858325bc56e8af"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classwpi_1_1uv_1_1Process.html">Process</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1uv_1_1Process.html#a07d8e73f900dc88ea3858325bc56e8af">SpawnArray</a> (<a class="el" href="classwpi_1_1uv_1_1Loop.html">Loop</a> &amp;loop, std::string_view file, <a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt; <a class="el" href="structwpi_1_1uv_1_1Process_1_1Option.html">Option</a> &gt; options)</td></tr>
-<tr class="memdesc:a07d8e73f900dc88ea3858325bc56e8af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a process.  <a href="classwpi_1_1uv_1_1Process.html#a07d8e73f900dc88ea3858325bc56e8af">More...</a><br /></td></tr>
-<tr class="separator:a07d8e73f900dc88ea3858325bc56e8af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbc81b88529af8c0cea5f3a7562f8eec"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classwpi_1_1uv_1_1Process.html">Process</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1uv_1_1Process.html#adbc81b88529af8c0cea5f3a7562f8eec">SpawnArray</a> (<a class="el" href="classwpi_1_1uv_1_1Loop.html">Loop</a> &amp;loop, std::string_view file, <a class="el" href="classwpi_1_1span.html">span</a>&lt; const <a class="el" href="structwpi_1_1uv_1_1Process_1_1Option.html">Option</a> &gt; options)</td></tr>
+<tr class="memdesc:adbc81b88529af8c0cea5f3a7562f8eec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a process.  <a href="classwpi_1_1uv_1_1Process.html#adbc81b88529af8c0cea5f3a7562f8eec">More...</a><br /></td></tr>
+<tr class="separator:adbc81b88529af8c0cea5f3a7562f8eec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f030dd26ac41a0a543e0e84a2e025ba"><td class="memItemLeft" align="right" valign="top"><a id="a6f030dd26ac41a0a543e0e84a2e025ba"></a>
 static std::shared_ptr&lt; <a class="el" href="classwpi_1_1uv_1_1Process.html">Process</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>SpawnArray</b> (<a class="el" href="classwpi_1_1uv_1_1Loop.html">Loop</a> &amp;loop, std::string_view file, std::initializer_list&lt; <a class="el" href="structwpi_1_1uv_1_1Process_1_1Option.html">Option</a> &gt; options)</td></tr>
 <tr class="separator:a6f030dd26ac41a0a543e0e84a2e025ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -259,9 +259,9 @@ static std::shared_ptr&lt; <a class="el" href="classwpi_1_1uv_1_1Process.html">P
 template&lt;typename... Args&gt; </td></tr>
 <tr class="memitem:ad1ff30cb4348326134e02102b479f645"><td class="memTemplItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classwpi_1_1uv_1_1Process.html">Process</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Spawn</b> (<a class="el" href="classwpi_1_1uv_1_1Loop.html">Loop</a> &amp;loop, std::string_view file, const Args &amp;... options)</td></tr>
 <tr class="separator:ad1ff30cb4348326134e02102b479f645"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d47630624ab9a2d7bd7f7256af49547"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classwpi_1_1uv_1_1Process.html">Process</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1uv_1_1Process.html#a8d47630624ab9a2d7bd7f7256af49547">SpawnArray</a> (const std::shared_ptr&lt; <a class="el" href="classwpi_1_1uv_1_1Loop.html">Loop</a> &gt; &amp;loop, std::string_view file, <a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt; <a class="el" href="structwpi_1_1uv_1_1Process_1_1Option.html">Option</a> &gt; options)</td></tr>
-<tr class="memdesc:a8d47630624ab9a2d7bd7f7256af49547"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a process.  <a href="classwpi_1_1uv_1_1Process.html#a8d47630624ab9a2d7bd7f7256af49547">More...</a><br /></td></tr>
-<tr class="separator:a8d47630624ab9a2d7bd7f7256af49547"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add58e9586c6a5e8132cc3234cf9c9337"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classwpi_1_1uv_1_1Process.html">Process</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1uv_1_1Process.html#add58e9586c6a5e8132cc3234cf9c9337">SpawnArray</a> (const std::shared_ptr&lt; <a class="el" href="classwpi_1_1uv_1_1Loop.html">Loop</a> &gt; &amp;loop, std::string_view file, <a class="el" href="classwpi_1_1span.html">span</a>&lt; const <a class="el" href="structwpi_1_1uv_1_1Process_1_1Option.html">Option</a> &gt; options)</td></tr>
+<tr class="memdesc:add58e9586c6a5e8132cc3234cf9c9337"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a process.  <a href="classwpi_1_1uv_1_1Process.html#add58e9586c6a5e8132cc3234cf9c9337">More...</a><br /></td></tr>
+<tr class="separator:add58e9586c6a5e8132cc3234cf9c9337"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af686d4c42b878ca9adeae0a7503f7698"><td class="memItemLeft" align="right" valign="top"><a id="af686d4c42b878ca9adeae0a7503f7698"></a>
 static std::shared_ptr&lt; <a class="el" href="classwpi_1_1uv_1_1Process.html">Process</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>SpawnArray</b> (const std::shared_ptr&lt; <a class="el" href="classwpi_1_1uv_1_1Loop.html">Loop</a> &gt; &amp;loop, std::string_view file, std::initializer_list&lt; <a class="el" href="structwpi_1_1uv_1_1Process_1_1Option.html">Option</a> &gt; options)</td></tr>
 <tr class="separator:af686d4c42b878ca9adeae0a7503f7698"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -630,8 +630,8 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>DefaultFreeBuf
 
 </div>
 </div>
-<a id="a8d47630624ab9a2d7bd7f7256af49547"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d47630624ab9a2d7bd7f7256af49547">&#9670;&nbsp;</a></span>SpawnArray() <span class="overload">[1/2]</span></h2>
+<a id="add58e9586c6a5e8132cc3234cf9c9337"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add58e9586c6a5e8132cc3234cf9c9337">&#9670;&nbsp;</a></span>SpawnArray() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -654,7 +654,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>DefaultFreeBuf
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt; <a class="el" href="structwpi_1_1uv_1_1Process_1_1Option.html">Option</a> &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">span</a>&lt; const <a class="el" href="structwpi_1_1uv_1_1Process_1_1Option.html">Option</a> &gt;&#160;</td>
           <td class="paramname"><em>options</em>&#160;</td>
         </tr>
         <tr>
@@ -684,8 +684,8 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>DefaultFreeBuf
 
 </div>
 </div>
-<a id="a07d8e73f900dc88ea3858325bc56e8af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07d8e73f900dc88ea3858325bc56e8af">&#9670;&nbsp;</a></span>SpawnArray() <span class="overload">[2/2]</span></h2>
+<a id="adbc81b88529af8c0cea5f3a7562f8eec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbc81b88529af8c0cea5f3a7562f8eec">&#9670;&nbsp;</a></span>SpawnArray() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -708,7 +708,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>DefaultFreeBuf
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt; <a class="el" href="structwpi_1_1uv_1_1Process_1_1Option.html">Option</a> &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">span</a>&lt; const <a class="el" href="structwpi_1_1uv_1_1Process_1_1Option.html">Option</a> &gt;&#160;</td>
           <td class="paramname"><em>options</em>&#160;</td>
         </tr>
         <tr>
@@ -975,7 +975,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>DefaultFreeBuf
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>wpi</b></li><li class="navelem"><b>uv</b></li><li class="navelem"><a class="el" href="classwpi_1_1uv_1_1Process.html">Process</a></li>
-    <li class="footer">Generated on Mon Jun 7 2021 00:49:22 for WPILibC++ by
+    <li class="footer">Generated on Mon Jun 7 2021 02:53:18 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

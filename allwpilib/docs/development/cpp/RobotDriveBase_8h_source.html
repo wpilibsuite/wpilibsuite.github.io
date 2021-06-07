@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-98-g2abbbd9</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-99-g64f5413</span>
    </div>
   </td>
  </tr>
@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('RobotDriveBase_8h_source.html',''); in
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;wpi/ArrayRef.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;wpi/span.h&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;frc/MotorSafety.h&quot;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
@@ -138,7 +138,7 @@ $(document).ready(function(){initNavTree('RobotDriveBase_8h_source.html',''); in
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; <span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="classfrc_1_1RobotDriveBase.html#ad88dd6640af8d27a012e9940f1d64fda">   79</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code" href="classfrc_1_1RobotDriveBase.html#ad88dd6640af8d27a012e9940f1d64fda">ApplyDeadband</a>(<span class="keywordtype">double</span> number, <span class="keywordtype">double</span> deadband);</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classfrc_1_1RobotDriveBase.html#a0e119bd107d07e744252eff218da0b2c">   85</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1RobotDriveBase.html#a0e119bd107d07e744252eff218da0b2c">Normalize</a>(<a class="code" href="classwpi_1_1MutableArrayRef.html">wpi::MutableArrayRef&lt;double&gt;</a> wheelSpeeds);</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classfrc_1_1RobotDriveBase.html#aaa50f4e60de47a159179570acf64cb68">   85</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1RobotDriveBase.html#aaa50f4e60de47a159179570acf64cb68">Normalize</a>(<a class="code" href="classwpi_1_1span.html">wpi::span&lt;double&gt;</a> wheelSpeeds);</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordtype">double</span> m_deadband = 0.02;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordtype">double</span> m_maxOutput = 1.0;</div>
@@ -150,17 +150,17 @@ $(document).ready(function(){initNavTree('RobotDriveBase_8h_source.html',''); in
 <div class="ttc" id="aclassfrc_1_1RobotDriveBase_html_a66ca9d336c81659405045bf064490cfe"><div class="ttname"><a href="classfrc_1_1RobotDriveBase.html#a66ca9d336c81659405045bf064490cfe">frc::RobotDriveBase::SetDeadband</a></div><div class="ttdeci">void SetDeadband(double deadband)</div><div class="ttdoc">Sets the deadband applied to the drive inputs (e.g., joystick values).</div></div>
 <div class="ttc" id="aclassfrc_1_1RobotDriveBase_html"><div class="ttname"><a href="classfrc_1_1RobotDriveBase.html">frc::RobotDriveBase</a></div><div class="ttdoc">Common base class for drive platforms.</div><div class="ttdef"><b>Definition:</b> RobotDriveBase.h:19</div></div>
 <div class="ttc" id="aclassfrc_1_1MotorSafety_html"><div class="ttname"><a href="classfrc_1_1MotorSafety.html">frc::MotorSafety</a></div><div class="ttdoc">This base class runs a watchdog timer and calls the subclass's StopMotor() function if the timeout ex...</div><div class="ttdef"><b>Definition:</b> MotorSafety.h:22</div></div>
-<div class="ttc" id="aclassfrc_1_1RobotDriveBase_html_a0e119bd107d07e744252eff218da0b2c"><div class="ttname"><a href="classfrc_1_1RobotDriveBase.html#a0e119bd107d07e744252eff218da0b2c">frc::RobotDriveBase::Normalize</a></div><div class="ttdeci">static void Normalize(wpi::MutableArrayRef&lt; double &gt; wheelSpeeds)</div><div class="ttdoc">Normalize all wheel speeds if the magnitude of any wheel is greater than 1.0.</div></div>
 <div class="ttc" id="aclassfrc_1_1RobotDriveBase_html_ac407bc60830a0d639de96bdc53d58a0f"><div class="ttname"><a href="classfrc_1_1RobotDriveBase.html#ac407bc60830a0d639de96bdc53d58a0f">frc::RobotDriveBase::FeedWatchdog</a></div><div class="ttdeci">void FeedWatchdog()</div><div class="ttdoc">Feed the motor safety object.</div></div>
 <div class="ttc" id="aclassfrc_1_1RobotDriveBase_html_a91bbe6376ee340272ae36ea20b608754"><div class="ttname"><a href="classfrc_1_1RobotDriveBase.html#a91bbe6376ee340272ae36ea20b608754">frc::RobotDriveBase::MotorType</a></div><div class="ttdeci">MotorType</div><div class="ttdoc">The location of a motor on the robot for the purpose of driving.</div><div class="ttdef"><b>Definition:</b> RobotDriveBase.h:24</div></div>
-<div class="ttc" id="aclasswpi_1_1MutableArrayRef_html"><div class="ttname"><a href="classwpi_1_1MutableArrayRef.html">wpi::MutableArrayRef</a></div><div class="ttdoc">MutableArrayRef - Represent a mutable reference to an array (0 or more elements consecutively in memo...</div><div class="ttdef"><b>Definition:</b> ArrayRef.h:318</div></div>
+<div class="ttc" id="aclasswpi_1_1span_html"><div class="ttname"><a href="classwpi_1_1span.html">wpi::span</a></div><div class="ttdef"><b>Definition:</b> span.h:29</div></div>
 <div class="ttc" id="aclassfrc_1_1RobotDriveBase_html_aa4970502fd5575de5602213c092c5aaf"><div class="ttname"><a href="classfrc_1_1RobotDriveBase.html#aa4970502fd5575de5602213c092c5aaf">frc::RobotDriveBase::SetMaxOutput</a></div><div class="ttdeci">void SetMaxOutput(double maxOutput)</div><div class="ttdoc">Configure the scaling factor for using RobotDrive with motor controllers in a mode other than Percent...</div></div>
 <div class="ttc" id="aclassfrc_1_1RobotDriveBase_html_ad88dd6640af8d27a012e9940f1d64fda"><div class="ttname"><a href="classfrc_1_1RobotDriveBase.html#ad88dd6640af8d27a012e9940f1d64fda">frc::RobotDriveBase::ApplyDeadband</a></div><div class="ttdeci">static double ApplyDeadband(double number, double deadband)</div><div class="ttdoc">Returns 0.0 if the given value is within the specified range around zero.</div></div>
+<div class="ttc" id="aclassfrc_1_1RobotDriveBase_html_aaa50f4e60de47a159179570acf64cb68"><div class="ttname"><a href="classfrc_1_1RobotDriveBase.html#aaa50f4e60de47a159179570acf64cb68">frc::RobotDriveBase::Normalize</a></div><div class="ttdeci">static void Normalize(wpi::span&lt; double &gt; wheelSpeeds)</div><div class="ttdoc">Normalize all wheel speeds if the magnitude of any wheel is greater than 1.0.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_fcdce402877842ae45be332f822e2127.html">drive</a></li><li class="navelem"><b>RobotDriveBase.h</b></li>
-    <li class="footer">Generated on Mon Jun 7 2021 00:49:16 for WPILibC++ by
+    <li class="footer">Generated on Mon Jun 7 2021 02:53:13 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

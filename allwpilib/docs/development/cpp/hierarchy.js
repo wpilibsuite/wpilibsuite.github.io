@@ -96,13 +96,6 @@ var hierarchy =
       [ "wpi::array< frc::Translation2d, NumModules >", "classwpi_1_1array.html", null ],
       [ "wpi::array< T, N >", "classwpi_1_1array.html", null ]
     ] ],
-    [ "wpi::ArrayRef< T >", "classwpi_1_1ArrayRef.html", [
-      [ "wpi::MutableArrayRef< T >", "classwpi_1_1MutableArrayRef.html", [
-        [ "wpi::OwningArrayRef< T >", "classwpi_1_1OwningArrayRef.html", null ]
-      ] ]
-    ] ],
-    [ "wpi::ArrayRef< std::pair< std::string_view, std::string_view > >", "classwpi_1_1ArrayRef.html", null ],
-    [ "wpi::ArrayRef< uint8_t >", "classwpi_1_1ArrayRef.html", null ],
     [ "wpi::uv::AsyncFunction< T >", "classwpi_1_1uv_1_1AsyncFunction.html", null ],
     [ "frc::AsynchronousInterrupt", "classfrc_1_1AsynchronousInterrupt.html", null ],
     [ "auto_id", "structauto__id.html", null ],
@@ -351,7 +344,6 @@ var hierarchy =
     [ "dragonbox::decimal_fp< T >", "structdragonbox_1_1decimal__fp.html", null ],
     [ "default_arg_formatter< Char >", "structdefault__arg__formatter.html", null ],
     [ "wpi::DenseMapInfo< T >", "structwpi_1_1DenseMapInfo.html", null ],
-    [ "wpi::DenseMapInfo< ArrayRef< T > >", "structwpi_1_1DenseMapInfo_3_01ArrayRef_3_01T_01_4_01_4.html", null ],
     [ "wpi::DenseMapInfo< char >", "structwpi_1_1DenseMapInfo_3_01char_01_4.html", null ],
     [ "wpi::DenseMapInfo< hash_code >", "structwpi_1_1DenseMapInfo_3_01hash__code_01_4.html", null ],
     [ "wpi::DenseMapInfo< int >", "structwpi_1_1DenseMapInfo_3_01int_01_4.html", null ],
@@ -360,6 +352,7 @@ var hierarchy =
     [ "wpi::DenseMapInfo< PointerIntPair< PointerTy, IntBits, IntType > >", "structwpi_1_1DenseMapInfo_3_01PointerIntPair_3_01PointerTy_00_01IntBits_00_01IntType_01_4_01_4.html", null ],
     [ "wpi::DenseMapInfo< PointerUnion< T, U > >", "structwpi_1_1DenseMapInfo_3_01PointerUnion_3_01T_00_01U_01_4_01_4.html", null ],
     [ "wpi::DenseMapInfo< short >", "structwpi_1_1DenseMapInfo_3_01short_01_4.html", null ],
+    [ "wpi::DenseMapInfo< span< T > >", "structwpi_1_1DenseMapInfo_3_01span_3_01T_01_4_01_4.html", null ],
     [ "wpi::DenseMapInfo< std::pair< T, U > >", "structwpi_1_1DenseMapInfo_3_01std_1_1pair_3_01T_00_01U_01_4_01_4.html", null ],
     [ "wpi::DenseMapInfo< std::string_view >", "structwpi_1_1DenseMapInfo_3_01std_1_1string__view_01_4.html", null ],
     [ "wpi::DenseMapInfo< T * >", "structwpi_1_1DenseMapInfo_3_01T_01_5_01_4.html", null ],
@@ -746,7 +739,6 @@ var hierarchy =
     [ "detail::is_tuple_like_< T >", "classdetail_1_1is__tuple__like__.html", null ],
     [ "is_zero_int", "classis__zero__int.html", null ],
     [ "wpi::isPodLike< T >", "structwpi_1_1isPodLike.html", null ],
-    [ "wpi::isPodLike< ArrayRef< T > >", "structwpi_1_1isPodLike_3_01ArrayRef_3_01T_01_4_01_4.html", null ],
     [ "wpi::isPodLike< PointerIntPair< PointerTy, IntBits, IntType > >", "structwpi_1_1isPodLike_3_01PointerIntPair_3_01PointerTy_00_01IntBits_00_01IntType_01_4_01_4.html", null ],
     [ "wpi::isPodLike< std::pair< T, U > >", "structwpi_1_1isPodLike_3_01std_1_1pair_3_01T_00_01U_01_4_01_4.html", null ],
     [ "wpi::detail::IsPointerLike< T >", "structwpi_1_1detail_1_1IsPointerLike.html", null ],
@@ -754,7 +746,6 @@ var hierarchy =
     [ "wpi::detail::iter_impl< BasicJsonType >", "classwpi_1_1detail_1_1iter__impl.html", null ],
     [ "wpi::detail::iteration_proxy< IteratorType >", "classwpi_1_1detail_1_1iteration__proxy.html", null ],
     [ "iterator", null, [
-      [ "ghc::filesystem::path", "classghc_1_1filesystem_1_1path.html", null ],
       [ "wpi::iterator_facade_base< concat_iterator< ValueT, IterTs... >, std::forward_iterator_tag, ValueT >", "classwpi_1_1iterator__facade__base.html", [
         [ "wpi::concat_iterator< ValueT, IterTs >", "classwpi_1_1concat__iterator.html", null ]
       ] ],
@@ -798,6 +789,9 @@ var hierarchy =
           [ "wpi::detail::zip_shortest< Iters >", "classwpi_1_1detail_1_1zip__shortest.html", null ]
         ] ]
       ] ]
+    ] ],
+    [ "iterator", null, [
+      [ "ghc::filesystem::path", "classghc_1_1filesystem_1_1path.html", null ]
     ] ],
     [ "wpi::circular_buffer< T >::iterator", "classwpi_1_1circular__buffer_1_1iterator.html", null ],
     [ "wpi::static_circular_buffer< T, N >::iterator", "classwpi_1_1static__circular__buffer_1_1iterator.html", null ],
@@ -1424,8 +1418,8 @@ var hierarchy =
     [ "wpi::sig::SignalBase< T... >", "classwpi_1_1sig_1_1SignalBase.html", null ],
     [ "wpi::sig::SignalBase< uint16_t, std::string_view >", "classwpi_1_1sig_1_1SignalBase.html", null ],
     [ "wpi::sig::SignalBase< uint64_t >", "classwpi_1_1sig_1_1SignalBase.html", null ],
-    [ "wpi::sig::SignalBase< wpi::ArrayRef< uint8_t > >", "classwpi_1_1sig_1_1SignalBase.html", null ],
-    [ "wpi::sig::SignalBase< wpi::ArrayRef< uint8_t >, bool >", "classwpi_1_1sig_1_1SignalBase.html", null ],
+    [ "wpi::sig::SignalBase< wpi::span< const uint8_t > >", "classwpi_1_1sig_1_1SignalBase.html", null ],
+    [ "wpi::sig::SignalBase< wpi::span< const uint8_t >, bool >", "classwpi_1_1sig_1_1SignalBase.html", null ],
     [ "wpi::sig::SignalBase< wpi::uv::Buffer &, size_t >", "classwpi_1_1sig_1_1SignalBase.html", null ],
     [ "wpi::sig::SignalBase< wpi::uv::Buffer &, size_t, const sockaddr &, unsigned >", "classwpi_1_1sig_1_1SignalBase.html", null ],
     [ "wpi::sig::SignalBase< wpi::uv::Error >", "classwpi_1_1sig_1_1SignalBase.html", null ],
@@ -1578,7 +1572,11 @@ var hierarchy =
     ] ],
     [ "ghc::filesystem::space_info", "structghc_1_1filesystem_1_1space__info.html", null ],
     [ "wpi::span< ElementType, Extent >", "classwpi_1_1span.html", null ],
+    [ "wpi::span< const std::pair< std::string_view, std::string_view > >", "classwpi_1_1span.html", null ],
+    [ "wpi::span< const uint8_t >", "classwpi_1_1span.html", null ],
     [ "wpi::detail::span_storage< E, S >", "structwpi_1_1detail_1_1span__storage.html", null ],
+    [ "wpi::detail::span_storage< const std::pair< std::string_view, std::string_view >, Extent >", "structwpi_1_1detail_1_1span__storage.html", null ],
+    [ "wpi::detail::span_storage< const uint8_t, Extent >", "structwpi_1_1detail_1_1span__storage.html", null ],
     [ "wpi::detail::span_storage< E, dynamic_extent >", "structwpi_1_1detail_1_1span__storage_3_01E_00_01dynamic__extent_01_4.html", null ],
     [ "wpi::detail::span_storage< ElementType, Extent >", "structwpi_1_1detail_1_1span__storage.html", null ],
     [ "specs_setter< Char >", "classspecs__setter.html", [
@@ -1607,8 +1605,8 @@ var hierarchy =
     [ "frc::SplineHelper", "classfrc_1_1SplineHelper.html", null ],
     [ "frc::SplineParameterizer", "classfrc_1_1SplineParameterizer.html", null ],
     [ "frc::TrapezoidProfile< Distance >::State", "classfrc_1_1TrapezoidProfile_1_1State.html", null ],
-    [ "frc::Trajectory::State", "structfrc_1_1Trajectory_1_1State.html", null ],
     [ "frc::sim::DifferentialDrivetrainSim::State", "classfrc_1_1sim_1_1DifferentialDrivetrainSim_1_1State.html", null ],
+    [ "frc::Trajectory::State", "structfrc_1_1Trajectory_1_1State.html", null ],
     [ "wpi::static_circular_buffer< T, N >", "classwpi_1_1static__circular__buffer.html", null ],
     [ "wpi::detail::static_const< T >", "structwpi_1_1detail_1_1static__const.html", null ],
     [ "std_string_view< T >", "structstd__string__view.html", null ],
@@ -1735,9 +1733,9 @@ var hierarchy =
     [ "uv_buf_t", null, [
       [ "wpi::uv::Buffer", "classwpi_1_1uv_1_1Buffer.html", null ]
     ] ],
+    [ "nt::Value", "classnt_1_1Value.html", null ],
     [ "value< Context >", "classvalue.html", null ],
     [ "arg_ref< Char >::value", "unionarg__ref_1_1value.html", null ],
-    [ "nt::Value", "classnt_1_1Value.html", null ],
     [ "detail::counting_iterator::value_type", "structdetail_1_1counting__iterator_1_1value__type.html", null ],
     [ "frc::Vector2d", "structfrc_1_1Vector2d.html", null ],
     [ "wpi::VersionTuple", "classwpi_1_1VersionTuple.html", null ],
@@ -1756,15 +1754,15 @@ var hierarchy =
         [ "cs::UsbCamera", "classcs_1_1UsbCamera.html", null ]
       ] ]
     ] ],
-    [ "view", "structview.html", [
-      [ "named_arg< Char, T >", "structnamed__arg.html", null ]
-    ] ],
     [ "view", null, [
       [ "arg_join< It, Sentinel, Char >", "structarg__join.html", null ],
       [ "tuple_arg_join< Char, T >", "structtuple__arg__join.html", null ]
     ] ],
-    [ "detail::range_to_view< T, enable_if_t< has_const_begin_end< T >::value > >::view_t", "structdetail_1_1range__to__view_3_01T_00_01enable__if__t_3_01has__const__begin__end_3_01T_01_4_1_1value_01_4_01_4_1_1view__t.html", null ],
+    [ "view", "structview.html", [
+      [ "named_arg< Char, T >", "structnamed__arg.html", null ]
+    ] ],
     [ "detail::range_to_view< T, enable_if_t<!has_const_begin_end< T >::value &&has_mutable_begin_end< T >::value > >::view_t", "structdetail_1_1range__to__view_3_01T_00_01enable__if__t_3_9has__const__begin__end_3_01T_01_4_1_1cf1f6c31b1fc849c7f6ab73440db946.html", null ],
+    [ "detail::range_to_view< T, enable_if_t< has_const_begin_end< T >::value > >::view_t", "structdetail_1_1range__to__view_3_01T_00_01enable__if__t_3_01has__const__begin__end_3_01T_01_4_1_1value_01_4_01_4_1_1view__t.html", null ],
     [ "frc::VisionPipeline", "classfrc_1_1VisionPipeline.html", null ],
     [ "frc::VisionRunnerBase", "classfrc_1_1VisionRunnerBase.html", [
       [ "frc::VisionRunner< T >", "classfrc_1_1VisionRunner.html", null ]

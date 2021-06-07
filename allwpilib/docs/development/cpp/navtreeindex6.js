@@ -1,5 +1,8 @@
 var NAVTREEINDEX6 =
 {
+"classfrc_1_1ADXL345__SPI.html#ab0964ef022e400efad4585c8825bb296":[5,0,5,5,3],
+"classfrc_1_1ADXL345__SPI.html#ab0964ef022e400efad4585c8825bb296a4ee8e716ea13abfbe7a5157e402d7654":[5,0,5,5,3,2],
+"classfrc_1_1ADXL345__SPI.html#ab0964ef022e400efad4585c8825bb296a5e2f156bbf53d0b72cd4f71ee11a13ce":[5,0,5,5,3,0],
 "classfrc_1_1ADXL345__SPI.html#ab0964ef022e400efad4585c8825bb296a66f0e067dfe4ab8bdf54b3bb6540568c":[5,0,5,5,3,3],
 "classfrc_1_1ADXL345__SPI.html#ab0964ef022e400efad4585c8825bb296a9b8e4d122c788f36669b4e55fc0731af":[5,0,5,5,3,1],
 "classfrc_1_1ADXL345__SPI.html#abab9904b365ca2ece9bdd28b15420537":[5,0,5,5,1],
@@ -64,12 +67,12 @@ var NAVTREEINDEX6 =
 "classfrc_1_1AddressableLED.html":[5,0,5,3],
 "classfrc_1_1AddressableLED.html#a0727831f166772e1ed18a0d98a91d968":[5,0,5,3,8],
 "classfrc_1_1AddressableLED.html#a302c78623cdf1078b734ea9ce4f4f795":[5,0,5,3,4],
-"classfrc_1_1AddressableLED.html#a51cef2cfe3371a192c28b6bba53bad5f":[5,0,5,3,5],
 "classfrc_1_1AddressableLED.html#a6ad3614d52a0be79634bad7ab5bfc81f":[5,0,5,3,3],
 "classfrc_1_1AddressableLED.html#a736c95e5161301622c7d4a49c07ac432":[5,0,5,3,1],
 "classfrc_1_1AddressableLED.html#a96212f159a32146213983fce7c373492":[5,0,5,3,9],
 "classfrc_1_1AddressableLED.html#a9f0a4d07c01e246c2c019ef5a4d15c0d":[5,0,5,3,6],
 "classfrc_1_1AddressableLED.html#ad55f690efdc6298e152240bbfc0d8172":[5,0,5,3,7],
+"classfrc_1_1AddressableLED.html#aeb1d0585d5dff98ef2c7d45c1a536c7d":[5,0,5,3,5],
 "classfrc_1_1AddressableLED.html#af1f1735de349efc22ed8d19a88376085":[5,0,5,3,2],
 "classfrc_1_1AddressableLED_1_1LEDData.html":[5,0,5,3,0],
 "classfrc_1_1AddressableLED_1_1LEDData.html#a4906b50269500c6f3e500b5012e42285":[5,0,5,3,0,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX6 =
 "classfrc_1_1AsynchronousInterrupt.html#ae4be083edecc23fb8deae8f4fffbcc66":[5,0,5,17,9],
 "classfrc_1_1BuiltInAccelerometer.html":[5,0,5,18],
 "classfrc_1_1BuiltInAccelerometer.html#a5c32a616c68deb9203a21d549b54ca75":[5,0,5,18,0],
-"classfrc_1_1BuiltInAccelerometer.html#a6dd6e22c1eed09bf00d84ce2c6793e4e":[5,0,5,18,4],
-"classfrc_1_1BuiltInAccelerometer.html#a77a6aa8e81395e9fa809128e274b7989":[5,0,5,18,6],
-"classfrc_1_1BuiltInAccelerometer.html#a934e92f7f3aefacc14400f0f5c2b354e":[5,0,5,18,3],
-"classfrc_1_1BuiltInAccelerometer.html#aa466ef7845ce387d832069f81ba7b9a8":[5,0,5,18,5]
+"classfrc_1_1BuiltInAccelerometer.html#a6dd6e22c1eed09bf00d84ce2c6793e4e":[5,0,5,18,4]
 };

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-98-g2abbbd9</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-99-g64f5413</span>
    </div>
   </td>
  </tr>
@@ -103,9 +103,9 @@ $(document).ready(function(){initNavTree('UDPClient_8h_source.html',''); initRes
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;string_view&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;wpi/ArrayRef.h&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;wpi/SmallVector.h&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;wpi/mutex.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;wpi/SmallVector.h&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;wpi/mutex.h&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;wpi/span.h&quot;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span>wpi {</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
@@ -131,7 +131,7 @@ $(document).ready(function(){initNavTree('UDPClient_8h_source.html',''); initRes
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordtype">int</span> start(<span class="keywordtype">int</span> port);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordtype">void</span> shutdown();</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="comment">// The passed in address MUST be a resolved IP address.</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">int</span> send(<a class="code" href="classwpi_1_1ArrayRef.html">ArrayRef&lt;uint8_t&gt;</a> <a class="code" href="structdata.html">data</a>, std::string_view server, <span class="keywordtype">int</span> port);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">int</span> send(<a class="code" href="classwpi_1_1span.html">span&lt;const uint8_t&gt;</a> <a class="code" href="structdata.html">data</a>, std::string_view server, <span class="keywordtype">int</span> port);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordtype">int</span> send(std::string_view <a class="code" href="structdata.html">data</a>, std::string_view server, <span class="keywordtype">int</span> port);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">int</span> receive(uint8_t* data_received, <span class="keywordtype">int</span> receive_len);</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">int</span> receive(uint8_t* data_received, <span class="keywordtype">int</span> receive_len,</div>
@@ -145,15 +145,15 @@ $(document).ready(function(){initNavTree('UDPClient_8h_source.html',''); initRes
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructdata_html"><div class="ttname"><a href="structdata.html">data</a></div><div class="ttdef"><b>Definition:</b> format.h:917</div></div>
-<div class="ttc" id="aclasswpi_1_1ArrayRef_html"><div class="ttname"><a href="classwpi_1_1ArrayRef.html">wpi::ArrayRef&lt; uint8_t &gt;</a></div></div>
 <div class="ttc" id="aclasswpi_1_1SmallVectorImpl_html"><div class="ttname"><a href="classwpi_1_1SmallVectorImpl.html">wpi::SmallVectorImpl&lt; char &gt;</a></div></div>
 <div class="ttc" id="aclasswpi_1_1UDPClient_html"><div class="ttname"><a href="classwpi_1_1UDPClient.html">wpi::UDPClient</a></div><div class="ttdef"><b>Definition:</b> UDPClient.h:19</div></div>
 <div class="ttc" id="aclasswpi_1_1Logger_html"><div class="ttname"><a href="classwpi_1_1Logger.html">wpi::Logger</a></div><div class="ttdef"><b>Definition:</b> Logger.h:27</div></div>
+<div class="ttc" id="aclasswpi_1_1span_html"><div class="ttname"><a href="classwpi_1_1span.html">wpi::span&lt; const uint8_t &gt;</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><b>UDPClient.h</b></li>
-    <li class="footer">Generated on Mon Jun 7 2021 00:49:18 for WPILibC++ by
+    <li class="footer">Generated on Mon Jun 7 2021 02:53:14 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

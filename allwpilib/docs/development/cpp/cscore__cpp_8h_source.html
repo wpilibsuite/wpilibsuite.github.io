@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-98-g2abbbd9</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-99-g64f5413</span>
    </div>
   </td>
  </tr>
@@ -107,8 +107,8 @@ $(document).ready(function(){initNavTree('cscore__cpp_8h_source.html',''); initR
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;string_view&gt;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;wpi/ArrayRef.h&gt;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;wpi/SmallVector.h&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;wpi/SmallVector.h&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;wpi/span.h&gt;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;cscore_c.h&quot;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
@@ -262,7 +262,7 @@ $(document).ready(function(){initNavTree('cscore__cpp_8h_source.html',''); initR
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;CS_Source CreateHttpCamera(std::string_view name, std::string_view url,</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;                           <a class="code" href="group__cscore__c__api.html#ga61ab6e0263fe88aa1da0e21fc25a5a4a">CS_HttpCameraKind</a> kind, CS_Status* status);</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;CS_Source CreateHttpCamera(std::string_view name,</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;                           <a class="code" href="classwpi_1_1ArrayRef.html">wpi::ArrayRef&lt;std::string&gt;</a> urls,</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;                           <a class="code" href="classwpi_1_1span.html">wpi::span&lt;const std::string&gt;</a> urls,</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;                           <a class="code" href="group__cscore__c__api.html#ga61ab6e0263fe88aa1da0e21fc25a5a4a">CS_HttpCameraKind</a> kind, CS_Status* status);</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;CS_Source CreateCvSource(std::string_view name, <span class="keyword">const</span> <a class="code" href="structcs_1_1VideoMode.html">VideoMode</a>&amp; mode,</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                         CS_Status* status);</div>
@@ -283,7 +283,7 @@ $(document).ready(function(){initNavTree('cscore__cpp_8h_source.html',''); initR
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="keywordtype">bool</span> IsSourceEnabled(CS_Source source, CS_Status* status);</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;CS_Property GetSourceProperty(CS_Source source, std::string_view name,</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                              CS_Status* status);</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<a class="code" href="classwpi_1_1ArrayRef.html">wpi::ArrayRef&lt;CS_Property&gt;</a> EnumerateSourceProperties(</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<a class="code" href="classwpi_1_1span.html">wpi::span&lt;CS_Property&gt;</a> EnumerateSourceProperties(</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    CS_Source source, <a class="code" href="classwpi_1_1SmallVectorImpl.html">wpi::SmallVectorImpl&lt;CS_Property&gt;</a>&amp; vec,</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    CS_Status* status);</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<a class="code" href="structcs_1_1VideoMode.html">VideoMode</a> GetSourceVideoMode(CS_Source source, CS_Status* status);</div>
@@ -302,9 +302,9 @@ $(document).ready(function(){initNavTree('cscore__cpp_8h_source.html',''); initR
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<a class="code" href="classwpi_1_1json.html">wpi::json</a> GetSourceConfigJsonObject(CS_Source source, CS_Status* status);</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;std::vector&lt;VideoMode&gt; EnumerateSourceVideoModes(CS_Source source,</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;                                                 CS_Status* status);</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<a class="code" href="classwpi_1_1ArrayRef.html">wpi::ArrayRef&lt;CS_Sink&gt;</a> EnumerateSourceSinks(CS_Source source,</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                                            <a class="code" href="classwpi_1_1SmallVectorImpl.html">wpi::SmallVectorImpl&lt;CS_Sink&gt;</a>&amp; vec,</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;                                            CS_Status* status);</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<a class="code" href="classwpi_1_1span.html">wpi::span&lt;CS_Sink&gt;</a> EnumerateSourceSinks(CS_Source source,</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                                        <a class="code" href="classwpi_1_1SmallVectorImpl.html">wpi::SmallVectorImpl&lt;CS_Sink&gt;</a>&amp; vec,</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;                                        CS_Status* status);</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;CS_Source CopySource(CS_Source source, CS_Status* status);</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="keywordtype">void</span> ReleaseSource(CS_Source source, CS_Status* status);</div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="keywordtype">void</span> SetCameraBrightness(CS_Source source, <span class="keywordtype">int</span> brightness, CS_Status* status);</div>
@@ -320,7 +320,7 @@ $(document).ready(function(){initNavTree('cscore__cpp_8h_source.html',''); initR
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;std::string GetUsbCameraPath(CS_Source source, CS_Status* status);</div>
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<a class="code" href="structcs_1_1UsbCameraInfo.html">UsbCameraInfo</a> GetUsbCameraInfo(CS_Source source, CS_Status* status);</div>
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;<a class="code" href="group__cscore__c__api.html#ga61ab6e0263fe88aa1da0e21fc25a5a4a">CS_HttpCameraKind</a> GetHttpCameraKind(CS_Source source, CS_Status* status);</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="keywordtype">void</span> SetHttpCameraUrls(CS_Source source, <a class="code" href="classwpi_1_1ArrayRef.html">wpi::ArrayRef&lt;std::string&gt;</a> urls,</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="keywordtype">void</span> SetHttpCameraUrls(CS_Source source, <a class="code" href="classwpi_1_1span.html">wpi::span&lt;const std::string&gt;</a> urls,</div>
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                       CS_Status* status);</div>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;std::vector&lt;std::string&gt; GetHttpCameraUrls(CS_Source source, CS_Status* status);</div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;<span class="keywordtype">void</span> NotifySourceError(CS_Source source, std::string_view msg,</div>
@@ -333,7 +333,7 @@ $(document).ready(function(){initNavTree('cscore__cpp_8h_source.html',''); initR
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;                                 <span class="keywordtype">int</span> step, <span class="keywordtype">int</span> defaultValue, <span class="keywordtype">int</span> <a class="code" href="classvalue.html">value</a>,</div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;                                 CS_Status* status);</div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="keywordtype">void</span> SetSourceEnumPropertyChoices(CS_Source source, CS_Property property,</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;                                  <a class="code" href="classwpi_1_1ArrayRef.html">wpi::ArrayRef&lt;std::string&gt;</a> choices,</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;                                  <a class="code" href="classwpi_1_1span.html">wpi::span&lt;const std::string&gt;</a> choices,</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;                                  CS_Status* status);</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;CS_Sink CreateMjpegServer(std::string_view name, std::string_view listenAddress,</div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;                          <span class="keywordtype">int</span> port, CS_Status* status);</div>
@@ -352,7 +352,7 @@ $(document).ready(function(){initNavTree('cscore__cpp_8h_source.html',''); initR
 <div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;                                    CS_Status* status);</div>
 <div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;CS_Property GetSinkProperty(CS_Sink sink, std::string_view name,</div>
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;                            CS_Status* status);</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<a class="code" href="classwpi_1_1ArrayRef.html">wpi::ArrayRef&lt;CS_Property&gt;</a> EnumerateSinkProperties(</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<a class="code" href="classwpi_1_1span.html">wpi::span&lt;CS_Property&gt;</a> EnumerateSinkProperties(</div>
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    CS_Sink sink, <a class="code" href="classwpi_1_1SmallVectorImpl.html">wpi::SmallVectorImpl&lt;CS_Property&gt;</a>&amp; vec, CS_Status* status);</div>
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;<span class="keywordtype">void</span> SetSinkSource(CS_Sink sink, CS_Source source, CS_Status* status);</div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;CS_Property GetSinkSourceProperty(CS_Sink sink, std::string_view name,</div>
@@ -405,10 +405,10 @@ $(document).ready(function(){initNavTree('cscore__cpp_8h_source.html',''); initR
 <div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;<span class="keywordtype">void</span> Shutdown();</div>
 <div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;std::vector&lt;UsbCameraInfo&gt; EnumerateUsbCameras(CS_Status* status);</div>
 <div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160; </div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;<a class="code" href="classwpi_1_1ArrayRef.html">wpi::ArrayRef&lt;CS_Source&gt;</a> EnumerateSourceHandles(</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;<a class="code" href="classwpi_1_1span.html">wpi::span&lt;CS_Source&gt;</a> EnumerateSourceHandles(</div>
 <div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;    <a class="code" href="classwpi_1_1SmallVectorImpl.html">wpi::SmallVectorImpl&lt;CS_Source&gt;</a>&amp; vec, CS_Status* status);</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;<a class="code" href="classwpi_1_1ArrayRef.html">wpi::ArrayRef&lt;CS_Sink&gt;</a> EnumerateSinkHandles(<a class="code" href="classwpi_1_1SmallVectorImpl.html">wpi::SmallVectorImpl&lt;CS_Sink&gt;</a>&amp; vec,</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;                                            CS_Status* status);</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;<a class="code" href="classwpi_1_1span.html">wpi::span&lt;CS_Sink&gt;</a> EnumerateSinkHandles(<a class="code" href="classwpi_1_1SmallVectorImpl.html">wpi::SmallVectorImpl&lt;CS_Sink&gt;</a>&amp; vec,</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;                                        CS_Status* status);</div>
 <div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160; </div>
 <div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;std::string GetHostname();</div>
 <div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160; </div>
@@ -429,7 +429,6 @@ $(document).ready(function(){initNavTree('cscore__cpp_8h_source.html',''); initR
 <div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1099</div></div>
 <div class="ttc" id="astructcs_1_1UsbCameraInfo_html_a0c88d22224cb6730d162f9fb7dcdb8e2"><div class="ttname"><a href="structcs_1_1UsbCameraInfo.html#a0c88d22224cb6730d162f9fb7dcdb8e2">cs::UsbCameraInfo::dev</a></div><div class="ttdeci">int dev</div><div class="ttdoc">Device number (e.g.</div><div class="ttdef"><b>Definition:</b> cscore_cpp.h:48</div></div>
 <div class="ttc" id="astructcs_1_1RawEvent_html"><div class="ttname"><a href="structcs_1_1RawEvent.html">cs::RawEvent</a></div><div class="ttdoc">Listener event.</div><div class="ttdef"><b>Definition:</b> cscore_cpp.h:98</div></div>
-<div class="ttc" id="aclasswpi_1_1ArrayRef_html"><div class="ttname"><a href="classwpi_1_1ArrayRef.html">wpi::ArrayRef</a></div><div class="ttdoc">ArrayRef - Represent a constant reference to an array (0 or more elements consecutively in memory),...</div><div class="ttdef"><b>Definition:</b> ArrayRef.h:46</div></div>
 <div class="ttc" id="astructcs_1_1UsbCameraInfo_html_aae77dce7f5164fd0db2b63f4ea20eaf2"><div class="ttname"><a href="structcs_1_1UsbCameraInfo.html#aae77dce7f5164fd0db2b63f4ea20eaf2">cs::UsbCameraInfo::path</a></div><div class="ttdeci">std::string path</div><div class="ttdoc">Path to device if available (e.g.</div><div class="ttdef"><b>Definition:</b> cscore_cpp.h:50</div></div>
 <div class="ttc" id="aclasswpi_1_1SmallVectorImpl_html"><div class="ttname"><a href="classwpi_1_1SmallVectorImpl.html">wpi::SmallVectorImpl&lt; char &gt;</a></div></div>
 <div class="ttc" id="astructCS__VideoMode_html"><div class="ttname"><a href="structCS__VideoMode.html">CS_VideoMode</a></div><div class="ttdoc">Video mode.</div><div class="ttdef"><b>Definition:</b> cscore_c.h:102</div></div>
@@ -441,6 +440,7 @@ $(document).ready(function(){initNavTree('cscore__cpp_8h_source.html',''); initR
 <div class="ttc" id="anamespacecs_html"><div class="ttname"><a href="namespacecs.html">cs</a></div><div class="ttdoc">CameraServer (cscore) namespace.</div><div class="ttdef"><b>Definition:</b> cscore_oo.inc:15</div></div>
 <div class="ttc" id="astructcs_1_1UsbCameraInfo_html"><div class="ttname"><a href="structcs_1_1UsbCameraInfo.html">cs::UsbCameraInfo</a></div><div class="ttdoc">USB camera information.</div><div class="ttdef"><b>Definition:</b> cscore_cpp.h:46</div></div>
 <div class="ttc" id="astructcs_1_1UsbCameraInfo_html_abf40fa4cd6a97e22bb93c0af1c52f471"><div class="ttname"><a href="structcs_1_1UsbCameraInfo.html#abf40fa4cd6a97e22bb93c0af1c52f471">cs::UsbCameraInfo::otherPaths</a></div><div class="ttdeci">std::vector&lt; std::string &gt; otherPaths</div><div class="ttdoc">Other path aliases to device (e.g.</div><div class="ttdef"><b>Definition:</b> cscore_cpp.h:54</div></div>
+<div class="ttc" id="aclasswpi_1_1span_html"><div class="ttname"><a href="classwpi_1_1span.html">wpi::span</a></div><div class="ttdef"><b>Definition:</b> span.h:29</div></div>
 <div class="ttc" id="astructcs_1_1UsbCameraInfo_html_aa3c422ce6458222a76347800e69b3df0"><div class="ttname"><a href="structcs_1_1UsbCameraInfo.html#aa3c422ce6458222a76347800e69b3df0">cs::UsbCameraInfo::vendorId</a></div><div class="ttdeci">int vendorId</div><div class="ttdoc">USB Vendor Id.</div><div class="ttdef"><b>Definition:</b> cscore_cpp.h:56</div></div>
 <div class="ttc" id="astructcs_1_1UsbCameraInfo_html_a13f32c4bb80329004d8a6cf6c0320bd4"><div class="ttname"><a href="structcs_1_1UsbCameraInfo.html#a13f32c4bb80329004d8a6cf6c0320bd4">cs::UsbCameraInfo::name</a></div><div class="ttdeci">std::string name</div><div class="ttdoc">Vendor/model name of the camera as provided by the USB driver.</div><div class="ttdef"><b>Definition:</b> cscore_cpp.h:52</div></div>
 <div class="ttc" id="agroup__cscore__c__api_html_ga748df10eca5adcbc533b0fe788daf22e"><div class="ttname"><a href="group__cscore__c__api.html#ga748df10eca5adcbc533b0fe788daf22e">CS_PropertyKind</a></div><div class="ttdeci">CS_PropertyKind</div><div class="ttdoc">Property kinds.</div><div class="ttdef"><b>Definition:</b> cscore_c.h:112</div></div>
@@ -448,7 +448,7 @@ $(document).ready(function(){initNavTree('cscore__cpp_8h_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>cscore_cpp.h</b></li>
-    <li class="footer">Generated on Mon Jun 7 2021 00:49:15 for WPILibC++ by
+    <li class="footer">Generated on Mon Jun 7 2021 02:53:12 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

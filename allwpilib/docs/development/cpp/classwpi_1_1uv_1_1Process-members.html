@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-98-g2abbbd9</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-99-g64f5413</span>
    </div>
   </td>
  </tr>
@@ -144,9 +144,9 @@ $(document).ready(function(){initNavTree('classwpi_1_1uv_1_1Process.html',''); i
   <tr bgcolor="#f0f0f0"><td class="entry"><b>shared_from_this</b>() const (defined in <a class="el" href="classwpi_1_1uv_1_1HandleImpl.html">wpi::uv::HandleImpl&lt; Process, uv_process_t &gt;</a>)</td><td class="entry"><a class="el" href="classwpi_1_1uv_1_1HandleImpl.html">wpi::uv::HandleImpl&lt; Process, uv_process_t &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>Spawn</b>(Loop &amp;loop, std::string_view file, const Args &amp;... options) (defined in <a class="el" href="classwpi_1_1uv_1_1Process.html">wpi::uv::Process</a>)</td><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Process.html">wpi::uv::Process</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>Spawn</b>(const std::shared_ptr&lt; Loop &gt; &amp;loop, std::string_view file, const Args &amp;... options) (defined in <a class="el" href="classwpi_1_1uv_1_1Process.html">wpi::uv::Process</a>)</td><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Process.html">wpi::uv::Process</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Process.html#a07d8e73f900dc88ea3858325bc56e8af">SpawnArray</a>(Loop &amp;loop, std::string_view file, ArrayRef&lt; Option &gt; options)</td><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Process.html">wpi::uv::Process</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Process.html#adbc81b88529af8c0cea5f3a7562f8eec">SpawnArray</a>(Loop &amp;loop, std::string_view file, span&lt; const Option &gt; options)</td><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Process.html">wpi::uv::Process</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>SpawnArray</b>(Loop &amp;loop, std::string_view file, std::initializer_list&lt; Option &gt; options) (defined in <a class="el" href="classwpi_1_1uv_1_1Process.html">wpi::uv::Process</a>)</td><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Process.html">wpi::uv::Process</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Process.html#a8d47630624ab9a2d7bd7f7256af49547">SpawnArray</a>(const std::shared_ptr&lt; Loop &gt; &amp;loop, std::string_view file, ArrayRef&lt; Option &gt; options)</td><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Process.html">wpi::uv::Process</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Process.html#add58e9586c6a5e8132cc3234cf9c9337">SpawnArray</a>(const std::shared_ptr&lt; Loop &gt; &amp;loop, std::string_view file, span&lt; const Option &gt; options)</td><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Process.html">wpi::uv::Process</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>SpawnArray</b>(const std::shared_ptr&lt; Loop &gt; &amp;loop, std::string_view file, std::initializer_list&lt; Option &gt; options) (defined in <a class="el" href="classwpi_1_1uv_1_1Process.html">wpi::uv::Process</a>)</td><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Process.html">wpi::uv::Process</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Process.html#a09e1f6dd7c5b1f81f0363696b79403bb">StdioCreatePipe</a>(size_t index, Pipe &amp;pipe, unsigned int flags)</td><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Process.html">wpi::uv::Process</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
   <tr><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Process.html#a1360fac3893b736edcbb677a4d92a775">StdioIgnore</a>(size_t index)</td><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Process.html">wpi::uv::Process</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
@@ -162,7 +162,7 @@ $(document).ready(function(){initNavTree('classwpi_1_1uv_1_1Process.html',''); i
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jun 7 2021 00:49:22 for WPILibC++ by
+    <li class="footer">Generated on Mon Jun 7 2021 02:53:18 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

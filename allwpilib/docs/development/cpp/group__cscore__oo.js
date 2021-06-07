@@ -124,18 +124,18 @@ var group__cscore__oo =
       [ "HttpCamera", "classcs_1_1HttpCamera.html#a083aafa8d6621b2d6b92a97a7e22dac6", null ],
       [ "HttpCamera", "classcs_1_1HttpCamera.html#a113e3be8347f30e5708e8aea5dd2121e", null ],
       [ "HttpCamera", "classcs_1_1HttpCamera.html#ada17866aa09cba574d3219352019b217", null ],
-      [ "HttpCamera", "classcs_1_1HttpCamera.html#a88312c81524aee26cd8426b5ed61f299", null ],
+      [ "HttpCamera", "classcs_1_1HttpCamera.html#aa8186bf8343569ec2fc0135065d17c61", null ],
       [ "HttpCamera", "classcs_1_1HttpCamera.html#aed5a59cc2313596894c757ff81356c81", null ],
       [ "GetHttpCameraKind", "classcs_1_1HttpCamera.html#abc4132d35d5405087c14a582ac13a392", null ],
       [ "GetUrls", "classcs_1_1HttpCamera.html#a2098e86539dc7882bbf493540b542d65", null ],
       [ "SetUrls", "classcs_1_1HttpCamera.html#a4b048a5e03c69c86836b8aba70eba501", null ],
-      [ "SetUrls", "classcs_1_1HttpCamera.html#ab762fd8fd190f92155c52f95e37558ba", null ]
+      [ "SetUrls", "classcs_1_1HttpCamera.html#a70f19e655843674534255f65b65363d1", null ]
     ] ],
     [ "AxisCamera", "classcs_1_1AxisCamera.html", [
       [ "AxisCamera", "classcs_1_1AxisCamera.html#a1703b258fd6faf6d03508a7753813043", null ],
       [ "AxisCamera", "classcs_1_1AxisCamera.html#a7c13fea529375fe2e41a492223d645cf", null ],
       [ "AxisCamera", "classcs_1_1AxisCamera.html#a480df872f2501129ad040377d34c6169", null ],
-      [ "AxisCamera", "classcs_1_1AxisCamera.html#a50f3d80a17c23071bf7b5aa3695b6ad2", null ],
+      [ "AxisCamera", "classcs_1_1AxisCamera.html#a7b54e796b9600eed7e4f14929a6eee6d", null ],
       [ "AxisCamera", "classcs_1_1AxisCamera.html#a0a394899c8bf87d00709cc030f337bbf", null ]
     ] ],
     [ "ImageSource", "classcs_1_1ImageSource.html", [
@@ -148,7 +148,7 @@ var group__cscore__oo =
       [ "SetConnected", "classcs_1_1ImageSource.html#a5de22bd274261df7d1b601cae45b96cf", null ],
       [ "SetDescription", "classcs_1_1ImageSource.html#a150c0993030062cbdee1ab91aa39579d", null ],
       [ "SetEnumPropertyChoices", "classcs_1_1ImageSource.html#a3883f83d4b3a1c2f298a327440a9c510", null ],
-      [ "SetEnumPropertyChoices", "classcs_1_1ImageSource.html#a2427d4f728dc77a3b9841876ba420216", null ]
+      [ "SetEnumPropertyChoices", "classcs_1_1ImageSource.html#a8f8bab97d1530306bb0fe5c24a68465e", null ]
     ] ],
     [ "VideoSink", "classcs_1_1VideoSink.html", [
       [ "Kind", "classcs_1_1VideoSink.html#a2dfd389f1cdd5173d67b7dc235c2aba0", [

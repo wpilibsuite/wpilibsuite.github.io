@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-98-g2abbbd9</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-99-g64f5413</span>
    </div>
   </td>
  </tr>
@@ -125,9 +125,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:abc4c5490c7f33ec73d71a9622b4128da"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1HttpServerConnection.html#abc4c5490c7f33ec73d71a9622b4128da">BuildHeader</a> (<a class="el" href="classwpi_1_1raw__ostream.html">raw_ostream</a> &amp;os, int code, std::string_view codeText, std::string_view contentType, uint64_t contentLength, std::string_view extra={})</td></tr>
 <tr class="memdesc:abc4c5490c7f33ec73d71a9622b4128da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build HTTP response header, along with other header information like mimetype.  <a href="classwpi_1_1HttpServerConnection.html#abc4c5490c7f33ec73d71a9622b4128da">More...</a><br /></td></tr>
 <tr class="separator:abc4c5490c7f33ec73d71a9622b4128da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33e14330649254066ec02c7e70403f65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1HttpServerConnection.html#a33e14330649254066ec02c7e70403f65">SendData</a> (<a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt; bufs, bool closeAfter=false)</td></tr>
-<tr class="memdesc:a33e14330649254066ec02c7e70403f65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send data to client.  <a href="classwpi_1_1HttpServerConnection.html#a33e14330649254066ec02c7e70403f65">More...</a><br /></td></tr>
-<tr class="separator:a33e14330649254066ec02c7e70403f65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97555b65a6acd9942b349f2852e3ca16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1HttpServerConnection.html#a97555b65a6acd9942b349f2852e3ca16">SendData</a> (<a class="el" href="classwpi_1_1span.html">span</a>&lt; const <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt; bufs, bool closeAfter=false)</td></tr>
+<tr class="memdesc:a97555b65a6acd9942b349f2852e3ca16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send data to client.  <a href="classwpi_1_1HttpServerConnection.html#a97555b65a6acd9942b349f2852e3ca16">More...</a><br /></td></tr>
+<tr class="separator:a97555b65a6acd9942b349f2852e3ca16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca323f8c2114ec8510ce571fe647d4d7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1HttpServerConnection.html#aca323f8c2114ec8510ce571fe647d4d7">SendResponse</a> (int code, std::string_view codeText, std::string_view contentType, std::string_view content, std::string_view extraHeader={})</td></tr>
 <tr class="memdesc:aca323f8c2114ec8510ce571fe647d4d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send HTTP response, along with other header information like mimetype.  <a href="classwpi_1_1HttpServerConnection.html#aca323f8c2114ec8510ce571fe647d4d7">More...</a><br /></td></tr>
 <tr class="separator:aca323f8c2114ec8510ce571fe647d4d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -311,8 +311,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a id="a33e14330649254066ec02c7e70403f65"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33e14330649254066ec02c7e70403f65">&#9670;&nbsp;</a></span>SendData()</h2>
+<a id="a97555b65a6acd9942b349f2852e3ca16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97555b65a6acd9942b349f2852e3ca16">&#9670;&nbsp;</a></span>SendData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -323,7 +323,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         <tr>
           <td class="memname">void wpi::HttpServerConnection::SendData </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">span</a>&lt; const <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;&#160;</td>
           <td class="paramname"><em>bufs</em>, </td>
         </tr>
         <tr>
@@ -553,7 +553,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>wpi</b></li><li class="navelem"><a class="el" href="classwpi_1_1HttpServerConnection.html">HttpServerConnection</a></li>
-    <li class="footer">Generated on Mon Jun 7 2021 00:49:21 for WPILibC++ by
+    <li class="footer">Generated on Mon Jun 7 2021 02:53:17 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

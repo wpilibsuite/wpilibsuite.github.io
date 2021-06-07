@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-98-g2abbbd9</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-99-g64f5413</span>
    </div>
   </td>
  </tr>
@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('RunCommand_8h_source.html',''); initRe
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;functional&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;initializer_list&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;wpi/ArrayRef.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;wpi/span.h&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;frc2/command/CommandBase.h&quot;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;frc2/command/CommandHelper.h&quot;</span></div>
@@ -113,8 +113,8 @@ $(document).ready(function(){initNavTree('RunCommand_8h_source.html',''); initRe
 <div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classfrc2_1_1RunCommand.html#a567d881422c1253e84c3f2d4ab597f3f">   31</a></span>&#160;  <a class="code" href="classfrc2_1_1RunCommand.html#a567d881422c1253e84c3f2d4ab597f3f">RunCommand</a>(std::function&lt;<span class="keywordtype">void</span>()&gt; toRun,</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;             std::initializer_list&lt;Subsystem*&gt; requirements);</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classfrc2_1_1RunCommand.html#abd7bd261b83c39126ba6e61739974167">   41</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc2_1_1RunCommand.html#abd7bd261b83c39126ba6e61739974167">RunCommand</a>(std::function&lt;<span class="keywordtype">void</span>()&gt; toRun,</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                      <a class="code" href="classwpi_1_1ArrayRef.html">wpi::ArrayRef&lt;Subsystem*&gt;</a> requirements = {});</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classfrc2_1_1RunCommand.html#abc940fd9c8ff0bdc7e6b020cf01a32b4">   41</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc2_1_1RunCommand.html#abc940fd9c8ff0bdc7e6b020cf01a32b4">RunCommand</a>(std::function&lt;<span class="keywordtype">void</span>()&gt; toRun,</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                      <a class="code" href="classwpi_1_1span.html">wpi::span&lt;Subsystem* const&gt;</a> requirements = {});</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <a class="code" href="classfrc2_1_1RunCommand.html#a567d881422c1253e84c3f2d4ab597f3f">RunCommand</a>(<a class="code" href="classfrc2_1_1RunCommand.html">RunCommand</a>&amp;&amp; other) = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
@@ -129,8 +129,8 @@ $(document).ready(function(){initNavTree('RunCommand_8h_source.html',''); initRe
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassfrc2_1_1RunCommand_html_a043b9c23fe423538d0dac913ea4f137a"><div class="ttname"><a href="classfrc2_1_1RunCommand.html#a043b9c23fe423538d0dac913ea4f137a">frc2::RunCommand::Execute</a></div><div class="ttdeci">void Execute() override</div><div class="ttdoc">The main body of a command.</div></div>
-<div class="ttc" id="aclassfrc2_1_1RunCommand_html_abd7bd261b83c39126ba6e61739974167"><div class="ttname"><a href="classfrc2_1_1RunCommand.html#abd7bd261b83c39126ba6e61739974167">frc2::RunCommand::RunCommand</a></div><div class="ttdeci">RunCommand(std::function&lt; void()&gt; toRun, wpi::ArrayRef&lt; Subsystem * &gt; requirements={})</div><div class="ttdoc">Creates a new RunCommand.</div></div>
-<div class="ttc" id="aclasswpi_1_1ArrayRef_html"><div class="ttname"><a href="classwpi_1_1ArrayRef.html">wpi::ArrayRef</a></div><div class="ttdoc">ArrayRef - Represent a constant reference to an array (0 or more elements consecutively in memory),...</div><div class="ttdef"><b>Definition:</b> ArrayRef.h:46</div></div>
+<div class="ttc" id="aclassfrc2_1_1RunCommand_html_abc940fd9c8ff0bdc7e6b020cf01a32b4"><div class="ttname"><a href="classfrc2_1_1RunCommand.html#abc940fd9c8ff0bdc7e6b020cf01a32b4">frc2::RunCommand::RunCommand</a></div><div class="ttdeci">RunCommand(std::function&lt; void()&gt; toRun, wpi::span&lt; Subsystem *const &gt; requirements={})</div><div class="ttdoc">Creates a new RunCommand.</div></div>
+<div class="ttc" id="aclasswpi_1_1span_html"><div class="ttname"><a href="classwpi_1_1span.html">wpi::span</a></div><div class="ttdef"><b>Definition:</b> span.h:29</div></div>
 <div class="ttc" id="aclassfrc2_1_1RunCommand_html_a567d881422c1253e84c3f2d4ab597f3f"><div class="ttname"><a href="classfrc2_1_1RunCommand.html#a567d881422c1253e84c3f2d4ab597f3f">frc2::RunCommand::RunCommand</a></div><div class="ttdeci">RunCommand(std::function&lt; void()&gt; toRun, std::initializer_list&lt; Subsystem * &gt; requirements)</div><div class="ttdoc">Creates a new RunCommand.</div></div>
 <div class="ttc" id="aclassfrc2_1_1CommandHelper_html"><div class="ttname"><a href="classfrc2_1_1CommandHelper.html">frc2::CommandHelper</a></div><div class="ttdoc">CRTP implementation to allow polymorphic decorator functions in Command.</div><div class="ttdef"><b>Definition:</b> CommandHelper.h:23</div></div>
 <div class="ttc" id="aclassfrc2_1_1RunCommand_html"><div class="ttname"><a href="classfrc2_1_1RunCommand.html">frc2::RunCommand</a></div><div class="ttdoc">A command that runs a Runnable continuously.</div><div class="ttdef"><b>Definition:</b> RunCommand.h:22</div></div>
@@ -138,7 +138,7 @@ $(document).ready(function(){initNavTree('RunCommand_8h_source.html',''); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e7d5d1c9c07b3d6a0a849f7ca2bfcaa9.html">frc2</a></li><li class="navelem"><a class="el" href="dir_25d5854705192c92d2d003534c71255a.html">command</a></li><li class="navelem"><b>RunCommand.h</b></li>
-    <li class="footer">Generated on Mon Jun 7 2021 00:49:16 for WPILibC++ by
+    <li class="footer">Generated on Mon Jun 7 2021 02:53:13 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>
