@@ -79,8 +79,6 @@ var hierarchy =
     [ "frc::sim::AnalogOutputSim", "classfrc_1_1sim_1_1AnalogOutputSim.html", null ],
     [ "frc::sim::AnalogTriggerSim", "classfrc_1_1sim_1_1AnalogTriggerSim.html", null ],
     [ "ansi_color_escape< Char >", "structansi__color__escape.html", null ],
-    [ "wpi::are_base_of< T, Ts >", "structwpi_1_1are__base__of.html", null ],
-    [ "wpi::are_base_of< T, U, Ts... >", "structwpi_1_1are__base__of_3_01T_00_01U_00_01Ts_8_8_8_01_4.html", null ],
     [ "arg_converter< T, Context >", "classarg__converter.html", null ],
     [ "arg_data< T, Char, NUM_ARGS, NUM_NAMED_ARGS >", "structarg__data.html", null ],
     [ "arg_data< T, Char, NUM_ARGS, 0 >", "structarg__data_3_01T_00_01Char_00_01NUM__ARGS_00_010_01_4.html", null ],
@@ -285,7 +283,6 @@ var hierarchy =
     [ "frc2::CommandState", "classfrc2_1_1CommandState.html", null ],
     [ "compile_string", "structcompile__string.html", null ],
     [ "detail::compiled_string", "classdetail_1_1compiled__string.html", null ],
-    [ "wpi::detail::concat_range< ValueT, RangeTs >", "classwpi_1_1detail_1_1concat__range.html", null ],
     [ "wpi::ConcurrentQueue< T >", "classwpi_1_1ConcurrentQueue.html", null ],
     [ "detail::conditional_helper< Ts >", "structdetail_1_1conditional__helper.html", null ],
     [ "drake::assert::ConditionTraits< Condition >", "structdrake_1_1assert_1_1ConditionTraits.html", null ],
@@ -361,7 +358,6 @@ var hierarchy =
     [ "wpi::DenseMapInfo< unsigned long long >", "structwpi_1_1DenseMapInfo_3_01unsigned_01long_01long_01_4.html", null ],
     [ "wpi::DenseMapInfo< unsigned short >", "structwpi_1_1DenseMapInfo_3_01unsigned_01short_01_4.html", null ],
     [ "wpi::DenseMapIterator< KeyT, ValueT, KeyInfoT, Bucket, IsConst >", "classwpi_1_1DenseMapIterator.html", null ],
-    [ "wpi::deref< T >", "structwpi_1_1deref.html", null ],
     [ "frc::DifferentialDriveKinematics", "classfrc_1_1DifferentialDriveKinematics.html", null ],
     [ "frc::DifferentialDriveOdometry", "classfrc_1_1DifferentialDriveOdometry.html", null ],
     [ "frc::DifferentialDrivePoseEstimator", "classfrc_1_1DifferentialDrivePoseEstimator.html", null ],
@@ -478,8 +474,6 @@ var hierarchy =
     [ "frc::sim::EncoderSim", "classfrc_1_1sim_1_1EncoderSim.html", null ],
     [ "nt::EntryInfo", "structnt_1_1EntryInfo.html", null ],
     [ "nt::EntryNotification", "classnt_1_1EntryNotification.html", null ],
-    [ "wpi::detail::enumerator< R >", "classwpi_1_1detail_1_1enumerator.html", null ],
-    [ "wpi::detail::enumerator_iter< R >", "classwpi_1_1detail_1_1enumerator__iter.html", null ],
     [ "wpi::uv::Error", "classwpi_1_1uv_1_1Error.html", null ],
     [ "error_handler", "structerror__handler.html", [
       [ "basic_format_parse_context< Char, error_handler >", "classbasic__format__parse__context.html", [
@@ -590,7 +584,6 @@ var hierarchy =
     ] ],
     [ "detail::fp", "classdetail_1_1fp.html", null ],
     [ "hal::fpga_clock", "classhal_1_1fpga__clock.html", null ],
-    [ "wpi::FreeDeleter", "structwpi_1_1FreeDeleter.html", null ],
     [ "wpi::detail::from_json_fn", "structwpi_1_1detail_1_1from__json__fn.html", null ],
     [ "wpi::AlignTo< Align >::from_value< Value >", "structwpi_1_1AlignTo_1_1from__value.html", null ],
     [ "wpi::function_ref< Fn >", "classwpi_1_1function__ref.html", null ],
@@ -605,9 +598,6 @@ var hierarchy =
     [ "wpi::detail::FutureThen< To, void >", "structwpi_1_1detail_1_1FutureThen_3_01To_00_01void_01_4.html", null ],
     [ "wpi::detail::FutureThen< void, From >", "structwpi_1_1detail_1_1FutureThen_3_01void_00_01From_01_4.html", null ],
     [ "wpi::detail::FutureThen< void, void >", "structwpi_1_1detail_1_1FutureThen_3_01void_00_01void_01_4.html", null ],
-    [ "wpi::detail::fwd_or_bidi_tag< IterT >", "structwpi_1_1detail_1_1fwd__or__bidi__tag.html", null ],
-    [ "wpi::detail::fwd_or_bidi_tag_impl< is_bidirectional >", "structwpi_1_1detail_1_1fwd__or__bidi__tag__impl.html", null ],
-    [ "wpi::detail::fwd_or_bidi_tag_impl< true >", "structwpi_1_1detail_1_1fwd__or__bidi__tag__impl_3_01true_01_4.html", null ],
     [ "frc::GenericHID", "classfrc_1_1GenericHID.html", [
       [ "frc::Joystick", "classfrc_1_1Joystick.html", null ],
       [ "frc::XboxController", "classfrc_1_1XboxController.html", null ]
@@ -617,7 +607,6 @@ var hierarchy =
       [ "frc::sim::XboxControllerSim", "classfrc_1_1sim_1_1XboxControllerSim.html", null ]
     ] ],
     [ "get_cstring< Char >", "structget__cstring.html", null ],
-    [ "wpi::greater_ptr< Ty >", "structwpi_1_1greater__ptr.html", null ],
     [ "frc::Gyro", "classfrc_1_1Gyro.html", [
       [ "frc::ADXRS450_Gyro", "classfrc_1_1ADXRS450__Gyro.html", null ],
       [ "frc::AnalogGyro", "classfrc_1_1AnalogGyro.html", null ]
@@ -652,10 +641,6 @@ var hierarchy =
     ] ],
     [ "wpi::detail::has_from_json< BasicJsonType, T >", "structwpi_1_1detail_1_1has__from__json.html", null ],
     [ "wpi::detail::has_non_default_from_json< BasicJsonType, T >", "structwpi_1_1detail_1_1has__non__default__from__json.html", null ],
-    [ "wpi::has_rbegin_impl< Ty >", "classwpi_1_1has__rbegin__impl.html", null ],
-    [ "wpi::has_rbegin_impl< std::remove_reference< Ty >::type >", "classwpi_1_1has__rbegin__impl.html", [
-      [ "wpi::has_rbegin< Ty >", "structwpi_1_1has__rbegin.html", null ]
-    ] ],
     [ "wpi::detail::has_to_json< BasicJsonType, T >", "structwpi_1_1detail_1_1has__to__json.html", null ],
     [ "std::hash< wpi::json >", "structstd_1_1hash_3_01wpi_1_1json_01_4.html", null ],
     [ "wpi::hash_code", "classwpi_1_1hash__code.html", null ],
@@ -679,7 +664,6 @@ var hierarchy =
       [ "wpi::HttpWebSocketServerConnection< Derived >", "classwpi_1_1HttpWebSocketServerConnection.html", null ]
     ] ],
     [ "frc::I2C", "classfrc_1_1I2C.html", null ],
-    [ "wpi::identity< Ty >", "structwpi_1_1identity.html", null ],
     [ "ghc::filesystem::directory_iterator::impl", "classghc_1_1filesystem_1_1directory__iterator_1_1impl.html", null ],
     [ "int_checker< IsSigned >", "structint__checker.html", null ],
     [ "int_checker< true >", "structint__checker_3_01true_01_4.html", null ],
@@ -723,16 +707,7 @@ var hierarchy =
     ] ],
     [ "wpi::is_integral_or_enum< T >", "classwpi_1_1is__integral__or__enum.html", null ],
     [ "wpi::detail::is_json_nested_type< BasicJsonType, T >", "structwpi_1_1detail_1_1is__json__nested__type.html", null ],
-    [ "wpi::is_one_of< T, Ts >", "structwpi_1_1is__one__of.html", null ],
-    [ "wpi::is_one_of< T, U, Ts... >", "structwpi_1_1is__one__of_3_01T_00_01U_00_01Ts_8_8_8_01_4.html", null ],
     [ "is_range< T, Char >", "structis__range.html", null ],
-    [ "is_same< std::remove_reference< decltype(std::declval< FuncTy >()(*std::declval< ItTy >())) >::type, typename std::iterator_traits< ItTy >::value_type >", null, [
-      [ "wpi::iterator_facade_base< mapped_iterator< ItTy, FuncTy >, std::iterator_traits< ItTy >::iterator_category, std::remove_reference< decltype(std::declval< FuncTy >()(*std::declval< ItTy >())) >::type, typename std::iterator_traits< ItTy >::difference_type, typename std::conditional< std::is_same< std::remove_reference< decltype(std::declval< FuncTy >()(*std::declval< ItTy >())) >::type, typename std::iterator_traits< ItTy >::value_type >::value, typename std::iterator_traits< ItTy >::pointer, std::remove_reference< decltype(std::declval< FuncTy >()(*std::declval< ItTy >())) >::type * >::type, typename std::conditional< std::is_same< std::remove_reference< decltype(std::declval< FuncTy >()(*std::declval< ItTy >())) >::type, typename std::iterator_traits< ItTy >::value_type >::value, typename std::iterator_traits< ItTy >::reference, std::remove_reference< decltype(std::declval< FuncTy >()(*std::declval< ItTy >())) >::type & >::type >", "classwpi_1_1iterator__facade__base.html", [
-        [ "wpi::iterator_adaptor_base< mapped_iterator< ItTy, FuncTy >, ItTy, std::iterator_traits< ItTy >::iterator_category, std::remove_reference< decltype(std::declval< FuncTy >()(*std::declval< ItTy >())) >::type >", "classwpi_1_1iterator__adaptor__base.html", [
-          [ "wpi::mapped_iterator< ItTy, FuncTy, FuncReturnTy >", "classwpi_1_1mapped__iterator.html", null ]
-        ] ]
-      ] ]
-    ] ],
     [ "detail::is_std_string_like< T >", "classdetail_1_1is__std__string__like.html", null ],
     [ "detail::is_streamable< T, Char >", "classdetail_1_1is__streamable.html", null ],
     [ "is_tuple_like< T >", "structis__tuple__like.html", null ],
@@ -746,54 +721,21 @@ var hierarchy =
     [ "wpi::detail::iter_impl< BasicJsonType >", "classwpi_1_1detail_1_1iter__impl.html", null ],
     [ "wpi::detail::iteration_proxy< IteratorType >", "classwpi_1_1detail_1_1iteration__proxy.html", null ],
     [ "iterator", null, [
-      [ "wpi::iterator_facade_base< concat_iterator< ValueT, IterTs... >, std::forward_iterator_tag, ValueT >", "classwpi_1_1iterator__facade__base.html", [
-        [ "wpi::concat_iterator< ValueT, IterTs >", "classwpi_1_1concat__iterator.html", null ]
-      ] ],
       [ "wpi::iterator_facade_base< DerivedT, typename std::iterator_traits< WrappedIteratorT >::iterator_category, typename std::iterator_traits< WrappedIteratorT >::value_type, typename std::iterator_traits< WrappedIteratorT >::difference_type, typename std::conditional< std::is_same< typename std::iterator_traits< WrappedIteratorT >::value_type, typename std::iterator_traits< WrappedIteratorT >::value_type >::value, typename std::iterator_traits< WrappedIteratorT >::pointer, typename std::iterator_traits< WrappedIteratorT >::value_type * >::type, typename std::conditional< std::is_same< typename std::iterator_traits< WrappedIteratorT >::value_type, typename std::iterator_traits< WrappedIteratorT >::value_type >::value, typename std::iterator_traits< WrappedIteratorT >::reference, typename std::iterator_traits< WrappedIteratorT >::value_type & >::type >", "classwpi_1_1iterator__facade__base.html", [
         [ "wpi::iterator_adaptor_base< DerivedT, WrappedIteratorT, IteratorCategoryT, T, DifferenceTypeT, PointerT, ReferenceT >", "classwpi_1_1iterator__adaptor__base.html", null ]
       ] ],
       [ "wpi::iterator_facade_base< DerivedTy, std::forward_iterator_tag, ValueTy >", "classwpi_1_1iterator__facade__base.html", [
         [ "wpi::StringMapIterBase< DerivedTy, ValueTy >", "classwpi_1_1StringMapIterBase.html", null ]
       ] ],
-      [ "wpi::iterator_facade_base< filter_iterator_base< WrappedIteratorT, PredicateT, IterTag >, std::common_type< IterTag, std::iterator_traits< WrappedIteratorT >::iterator_category >::type, typename std::iterator_traits< WrappedIteratorT >::value_type, typename std::iterator_traits< WrappedIteratorT >::difference_type, typename std::conditional< std::is_same< typename std::iterator_traits< WrappedIteratorT >::value_type, typename std::iterator_traits< WrappedIteratorT >::value_type >::value, typename std::iterator_traits< WrappedIteratorT >::pointer, typename std::iterator_traits< WrappedIteratorT >::value_type * >::type, typename std::conditional< std::is_same< typename std::iterator_traits< WrappedIteratorT >::value_type, typename std::iterator_traits< WrappedIteratorT >::value_type >::value, typename std::iterator_traits< WrappedIteratorT >::reference, typename std::iterator_traits< WrappedIteratorT >::value_type & >::type >", "classwpi_1_1iterator__facade__base.html", [
-        [ "wpi::iterator_adaptor_base< filter_iterator_base< WrappedIteratorT, PredicateT, IterTag >, WrappedIteratorT, std::common_type< IterTag, std::iterator_traits< WrappedIteratorT >::iterator_category >::type >", "classwpi_1_1iterator__adaptor__base.html", [
-          [ "wpi::filter_iterator_base< WrappedIteratorT, PredicateT, IterTag >", "classwpi_1_1filter__iterator__base.html", null ]
-        ] ]
-      ] ],
-      [ "wpi::iterator_facade_base< filter_iterator_base< WrappedIteratorT, PredicateT, std::bidirectional_iterator_tag >, std::common_type< std::bidirectional_iterator_tag, std::iterator_traits< WrappedIteratorT >::iterator_category >::type, typename std::iterator_traits< WrappedIteratorT >::value_type, typename std::iterator_traits< WrappedIteratorT >::difference_type, typename std::conditional< std::is_same< typename std::iterator_traits< WrappedIteratorT >::value_type, typename std::iterator_traits< WrappedIteratorT >::value_type >::value, typename std::iterator_traits< WrappedIteratorT >::pointer, typename std::iterator_traits< WrappedIteratorT >::value_type * >::type, typename std::conditional< std::is_same< typename std::iterator_traits< WrappedIteratorT >::value_type, typename std::iterator_traits< WrappedIteratorT >::value_type >::value, typename std::iterator_traits< WrappedIteratorT >::reference, typename std::iterator_traits< WrappedIteratorT >::value_type & >::type >", "classwpi_1_1iterator__facade__base.html", [
-        [ "wpi::iterator_adaptor_base< filter_iterator_base< WrappedIteratorT, PredicateT, std::bidirectional_iterator_tag >, WrappedIteratorT, std::common_type< std::bidirectional_iterator_tag, std::iterator_traits< WrappedIteratorT >::iterator_category >::type >", "classwpi_1_1iterator__adaptor__base.html", [
-          [ "wpi::filter_iterator_base< WrappedIteratorT, PredicateT, std::bidirectional_iterator_tag >", "classwpi_1_1filter__iterator__base.html", [
-            [ "wpi::filter_iterator_impl< WrappedIteratorT, PredicateT, std::bidirectional_iterator_tag >", "classwpi_1_1filter__iterator__impl_3_01WrappedIteratorT_00_01PredicateT_00_01std_1_1bidirectional__iterator__tag_01_4.html", null ]
-          ] ]
-        ] ]
-      ] ],
-      [ "wpi::iterator_facade_base< filter_iterator_base< WrappedIteratorT, PredicateT, std::forward_iterator_tag >, std::common_type< std::forward_iterator_tag, std::iterator_traits< WrappedIteratorT >::iterator_category >::type, typename std::iterator_traits< WrappedIteratorT >::value_type, typename std::iterator_traits< WrappedIteratorT >::difference_type, typename std::conditional< std::is_same< typename std::iterator_traits< WrappedIteratorT >::value_type, typename std::iterator_traits< WrappedIteratorT >::value_type >::value, typename std::iterator_traits< WrappedIteratorT >::pointer, typename std::iterator_traits< WrappedIteratorT >::value_type * >::type, typename std::conditional< std::is_same< typename std::iterator_traits< WrappedIteratorT >::value_type, typename std::iterator_traits< WrappedIteratorT >::value_type >::value, typename std::iterator_traits< WrappedIteratorT >::reference, typename std::iterator_traits< WrappedIteratorT >::value_type & >::type >", "classwpi_1_1iterator__facade__base.html", [
-        [ "wpi::iterator_adaptor_base< filter_iterator_base< WrappedIteratorT, PredicateT, std::forward_iterator_tag >, WrappedIteratorT, std::common_type< std::forward_iterator_tag, std::iterator_traits< WrappedIteratorT >::iterator_category >::type >", "classwpi_1_1iterator__adaptor__base.html", [
-          [ "wpi::filter_iterator_base< WrappedIteratorT, PredicateT, std::forward_iterator_tag >", "classwpi_1_1filter__iterator__base.html", [
-            [ "wpi::filter_iterator_impl< WrappedIteratorT, PredicateT, IterTag >", "classwpi_1_1filter__iterator__impl.html", null ]
-          ] ]
-        ] ]
-      ] ],
       [ "wpi::iterator_facade_base< SmallSetIterator< T, N, C >, std::forward_iterator_tag, T >", "classwpi_1_1iterator__facade__base.html", [
         [ "wpi::SmallSetIterator< T, N, C >", "classwpi_1_1SmallSetIterator.html", null ]
       ] ],
-      [ "wpi::iterator_facade_base< zip_longest_iterator< Iters... >, std::common_type< std::forward_iterator_tag, std::iterator_traits< Iters >::iterator_category... >::type, ZipLongestTupleType< Iters... >::type, std::iterator_traits< std::tuple_element< 0, std::tuple< Iters... > >::type >::difference_type, ZipLongestTupleType< Iters... >::type *, ZipLongestTupleType< Iters... >::type >", "classwpi_1_1iterator__facade__base.html", [
-        [ "wpi::detail::zip_longest_iterator< Iters >", "classwpi_1_1detail_1_1zip__longest__iterator.html", null ]
-      ] ],
-      [ "wpi::iterator_facade_base< DerivedT, IteratorCategoryT, T, DifferenceTypeT, PointerT, ReferenceT >", "classwpi_1_1iterator__facade__base.html", [
-        [ "wpi::detail::zip_common< ZipType, Iters >", "structwpi_1_1detail_1_1zip__common.html", null ],
-        [ "wpi::detail::zip_common< zip_first< Iters... >, Iters... >", "structwpi_1_1detail_1_1zip__common.html", [
-          [ "wpi::detail::zip_first< Iters >", "structwpi_1_1detail_1_1zip__first.html", null ]
-        ] ],
-        [ "wpi::detail::zip_common< zip_shortest< Iters... >, Iters... >", "structwpi_1_1detail_1_1zip__common.html", [
-          [ "wpi::detail::zip_shortest< Iters >", "classwpi_1_1detail_1_1zip__shortest.html", null ]
-        ] ]
-      ] ]
+      [ "wpi::iterator_facade_base< DerivedT, IteratorCategoryT, T, DifferenceTypeT, PointerT, ReferenceT >", "classwpi_1_1iterator__facade__base.html", null ]
     ] ],
+    [ "wpi::circular_buffer< T >::iterator", "classwpi_1_1circular__buffer_1_1iterator.html", null ],
     [ "iterator", null, [
       [ "ghc::filesystem::path", "classghc_1_1filesystem_1_1path.html", null ]
     ] ],
-    [ "wpi::circular_buffer< T >::iterator", "classwpi_1_1circular__buffer_1_1iterator.html", null ],
     [ "wpi::static_circular_buffer< T, N >::iterator", "classwpi_1_1static__circular__buffer_1_1iterator.html", null ],
     [ "iterator_facade_base< pointee_iterator< WrappedIteratorT, typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type, std::iterator_traits< WrappedIteratorT >::iterator_category, typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type, typename std::iterator_traits< WrappedIteratorT >::difference_type, typename std::conditional< std::is_same< typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type, typename std::iterator_traits< WrappedIteratorT >::value_type >::value, typename std::iterator_traits< WrappedIteratorT >::pointer, typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type * >::type, typename std::conditional< std::is_same< typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type, typename std::iterator_traits< WrappedIteratorT >::value_type >::value, typename std::iterator_traits< WrappedIteratorT >::reference, typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type & >::type >", null, [
       [ "wpi::iterator_adaptor_base< pointee_iterator< WrappedIteratorT, typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type >, WrappedIteratorT, std::iterator_traits< WrappedIteratorT >::iterator_category, typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type >", "classwpi_1_1iterator__adaptor__base.html", [
@@ -840,9 +782,6 @@ var hierarchy =
     [ "frc::LayoutType", "classfrc_1_1LayoutType.html", null ],
     [ "wpi::detail::LeadingZerosCounter< T, SizeOfT >", "structwpi_1_1detail_1_1LeadingZerosCounter.html", null ],
     [ "std::less< ::wpi::detail::value_t >", "structstd_1_1less_3_01_1_1wpi_1_1detail_1_1value__t_01_4.html", null ],
-    [ "wpi::less_first", "structwpi_1_1less__first.html", null ],
-    [ "wpi::less_ptr< Ty >", "structwpi_1_1less__ptr.html", null ],
-    [ "wpi::less_second", "structwpi_1_1less__second.html", null ],
     [ "frc::LinearFilter< T >", "classfrc_1_1LinearFilter.html", null ],
     [ "frc::LinearFilter< double >", "classfrc_1_1LinearFilter.html", null ],
     [ "frc::LinearPlantInversionFeedforward< States, Inputs >", "classfrc_1_1LinearPlantInversionFeedforward.html", null ],
@@ -878,8 +817,6 @@ var hierarchy =
       [ "ghc::filesystem::not_implemented_exception", "classghc_1_1filesystem_1_1not__implemented__exception.html", null ]
     ] ],
     [ "nt::LogMessage", "classnt_1_1LogMessage.html", null ],
-    [ "wpi::make_const_ptr< T >", "structwpi_1_1make__const__ptr.html", null ],
-    [ "wpi::make_const_ref< T >", "structwpi_1_1make__const__ref.html", null ],
     [ "detail::make_integer_sequence< T, N, Ns >", "structdetail_1_1make__integer__sequence.html", null ],
     [ "make_unsigned", null, [
       [ "make_unsigned_or_bool< T >", "structmake__unsigned__or__bool.html", null ]
@@ -964,7 +901,6 @@ var hierarchy =
     [ "wpi::object_deleter< T >", "structwpi_1_1object__deleter.html", null ],
     [ "wpi::object_deleter< T[N]>", "structwpi_1_1object__deleter_3_01T_0fN_0e_4.html", null ],
     [ "frc::KalmanFilterLatencyCompensator< States, Inputs, Outputs, KalmanFilterType >::ObserverSnapshot", "structfrc_1_1KalmanFilterLatencyCompensator_1_1ObserverSnapshot.html", null ],
-    [ "wpi::on_first< FuncTy >", "structwpi_1_1on__first.html", null ],
     [ "wpi::uv::Process::Option", "structwpi_1_1uv_1_1Process_1_1Option.html", null ],
     [ "wpi::unique_function< ReturnT(ParamTs...)>::StorageUnionT::OutOfLineStorageT", "structwpi_1_1unique__function_3_01ReturnT_07ParamTs_8_8_8_08_4_1_1StorageUnionT_1_1OutOfLineStorageT.html", null ],
     [ "wpi::support::detail::packed_endian_specific_integral< value_type, endian, alignment >", "structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html", null ],
@@ -972,7 +908,6 @@ var hierarchy =
       [ "wpi::detail::DenseMapPair< KeyT, unsigned >", "structwpi_1_1detail_1_1DenseMapPair.html", null ],
       [ "wpi::detail::DenseMapPair< KeyT, ValueT >", "structwpi_1_1detail_1_1DenseMapPair.html", null ]
     ] ],
-    [ "wpi::pair_hash< First, Second >", "structwpi_1_1pair__hash.html", null ],
     [ "ghc::filesystem::path_helper_base< char_type >", "classghc_1_1filesystem_1_1path__helper__base.html", null ],
     [ "frc::sim::PDPSim", "classfrc_1_1sim_1_1PDPSim.html", null ],
     [ "wpi::support::detail::PickAlignment< T, alignment >", "structwpi_1_1support_1_1detail_1_1PickAlignment.html", null ],
@@ -1047,8 +982,6 @@ var hierarchy =
     [ "detail::range_to_view< T, Enable >", "structdetail_1_1range__to__view.html", null ],
     [ "detail::range_to_view< T, enable_if_t< has_const_begin_end< T >::value > >", "structdetail_1_1range__to__view_3_01T_00_01enable__if__t_3_01has__const__begin__end_3_01T_01_4_1_1value_01_4_01_4.html", null ],
     [ "detail::range_to_view< T, enable_if_t<!has_const_begin_end< T >::value &&has_mutable_begin_end< T >::value > >", "structdetail_1_1range__to__view_3_01T_00_01enable__if__t_3_9has__const__begin__end_3_01T_01_4_1_4751f3aaae3e6906975a7170fa3a99eb.html", null ],
-    [ "wpi::rank< N >", "structwpi_1_1rank.html", null ],
-    [ "wpi::rank< 0 >", "structwpi_1_1rank_3_010_01_4.html", null ],
     [ "wpi::raw_istream", "classwpi_1_1raw__istream.html", [
       [ "wpi::raw_fd_istream", "classwpi_1_1raw__fd__istream.html", null ],
       [ "wpi::raw_mem_istream", "classwpi_1_1raw__mem__istream.html", null ],
@@ -1088,7 +1021,6 @@ var hierarchy =
     [ "wpi::iterator_facade_base< DerivedT, IteratorCategoryT, T, DifferenceTypeT, PointerT, ReferenceT >::ReferenceProxy", "classwpi_1_1iterator__facade__base_1_1ReferenceProxy.html", null ],
     [ "frc::sim::RelaySim", "classfrc_1_1sim_1_1RelaySim.html", null ],
     [ "frc::Resource", "classfrc_1_1Resource.html", null ],
-    [ "wpi::detail::result_pair< R >", "structwpi_1_1detail_1_1result__pair.html", null ],
     [ "reverse_iterator", null, [
       [ "wpi::detail::json_reverse_iterator< Base >", "classwpi_1_1detail_1_1json__reverse__iterator.html", null ]
     ] ],
@@ -1134,7 +1066,6 @@ var hierarchy =
     [ "wpi::detail::SafeThreadProxyBase", "classwpi_1_1detail_1_1SafeThreadProxyBase.html", [
       [ "wpi::detail::SafeThreadProxy< T >", "classwpi_1_1detail_1_1SafeThreadProxy.html", null ]
     ] ],
-    [ "wpi::SameType< T, T >", "structwpi_1_1SameType.html", null ],
     [ "wpi::ScopedFatalErrorHandler", "structwpi_1_1ScopedFatalErrorHandler.html", null ],
     [ "frc::ScopedTracer", "classfrc_1_1ScopedTracer.html", null ],
     [ "frc::Sendable", "classfrc_1_1Sendable.html", [
@@ -1604,9 +1535,9 @@ var hierarchy =
     ] ],
     [ "frc::SplineHelper", "classfrc_1_1SplineHelper.html", null ],
     [ "frc::SplineParameterizer", "classfrc_1_1SplineParameterizer.html", null ],
-    [ "frc::TrapezoidProfile< Distance >::State", "classfrc_1_1TrapezoidProfile_1_1State.html", null ],
-    [ "frc::sim::DifferentialDrivetrainSim::State", "classfrc_1_1sim_1_1DifferentialDrivetrainSim_1_1State.html", null ],
     [ "frc::Trajectory::State", "structfrc_1_1Trajectory_1_1State.html", null ],
+    [ "frc::sim::DifferentialDrivetrainSim::State", "classfrc_1_1sim_1_1DifferentialDrivetrainSim_1_1State.html", null ],
+    [ "frc::TrapezoidProfile< Distance >::State", "classfrc_1_1TrapezoidProfile_1_1State.html", null ],
     [ "wpi::static_circular_buffer< T, N >", "classwpi_1_1static__circular__buffer.html", null ],
     [ "wpi::detail::static_const< T >", "structwpi_1_1detail_1_1static__const.html", null ],
     [ "std_string_view< T >", "structstd__string__view.html", null ],
@@ -1733,9 +1664,9 @@ var hierarchy =
     [ "uv_buf_t", null, [
       [ "wpi::uv::Buffer", "classwpi_1_1uv_1_1Buffer.html", null ]
     ] ],
+    [ "arg_ref< Char >::value", "unionarg__ref_1_1value.html", null ],
     [ "nt::Value", "classnt_1_1Value.html", null ],
     [ "value< Context >", "classvalue.html", null ],
-    [ "arg_ref< Char >::value", "unionarg__ref_1_1value.html", null ],
     [ "detail::counting_iterator::value_type", "structdetail_1_1counting__iterator_1_1value__type.html", null ],
     [ "frc::Vector2d", "structfrc_1_1Vector2d.html", null ],
     [ "wpi::VersionTuple", "classwpi_1_1VersionTuple.html", null ],
@@ -1754,12 +1685,12 @@ var hierarchy =
         [ "cs::UsbCamera", "classcs_1_1UsbCamera.html", null ]
       ] ]
     ] ],
+    [ "view", "structview.html", [
+      [ "named_arg< Char, T >", "structnamed__arg.html", null ]
+    ] ],
     [ "view", null, [
       [ "arg_join< It, Sentinel, Char >", "structarg__join.html", null ],
       [ "tuple_arg_join< Char, T >", "structtuple__arg__join.html", null ]
-    ] ],
-    [ "view", "structview.html", [
-      [ "named_arg< Char, T >", "structnamed__arg.html", null ]
     ] ],
     [ "detail::range_to_view< T, enable_if_t<!has_const_begin_end< T >::value &&has_mutable_begin_end< T >::value > >::view_t", "structdetail_1_1range__to__view_3_01T_00_01enable__if__t_3_9has__const__begin__end_3_01T_01_4_1_1cf1f6c31b1fc849c7f6ab73440db946.html", null ],
     [ "detail::range_to_view< T, enable_if_t< has_const_begin_end< T >::value > >::view_t", "structdetail_1_1range__to__view_3_01T_00_01enable__if__t_3_01has__const__begin__end_3_01T_01_4_1_1value_01_4_01_4_1_1view__t.html", null ],
@@ -1770,8 +1701,8 @@ var hierarchy =
     [ "wpi::sig::trait::detail::voider<... >", "structwpi_1_1sig_1_1trait_1_1detail_1_1voider.html", null ],
     [ "frc::Watchdog", "classfrc_1_1Watchdog.html", null ],
     [ "wpi::WebSocketServerHelper", "classwpi_1_1WebSocketServerHelper.html", null ],
-    [ "frc::KilloughDrive::WheelSpeeds", "structfrc_1_1KilloughDrive_1_1WheelSpeeds.html", null ],
     [ "frc::DifferentialDrive::WheelSpeeds", "structfrc_1_1DifferentialDrive_1_1WheelSpeeds.html", null ],
+    [ "frc::KilloughDrive::WheelSpeeds", "structfrc_1_1KilloughDrive_1_1WheelSpeeds.html", null ],
     [ "frc::MecanumDrive::WheelSpeeds", "structfrc_1_1MecanumDrive_1_1WheelSpeeds.html", null ],
     [ "frc::WidgetType", "classfrc_1_1WidgetType.html", null ],
     [ "width_checker< ErrorHandler >", "classwidth__checker.html", null ],
@@ -1782,10 +1713,5 @@ var hierarchy =
     [ "wpi::detail::WorkerThreadRequest< R, T >", "structwpi_1_1detail_1_1WorkerThreadRequest.html", null ],
     [ "wpi::wpi_shutdown_obj", "structwpi_1_1wpi__shutdown__obj.html", null ],
     [ "write_int_arg< UInt >", "structwrite__int__arg.html", null ],
-    [ "write_int_data< Char >", "structwrite__int__data.html", null ],
-    [ "wpi::detail::zip_longest_range< Args >", "classwpi_1_1detail_1_1zip__longest__range.html", null ],
-    [ "wpi::detail::ZipLongestItemType< Iter >", "structwpi_1_1detail_1_1ZipLongestItemType.html", null ],
-    [ "wpi::detail::ZipLongestTupleType< Iters >", "structwpi_1_1detail_1_1ZipLongestTupleType.html", null ],
-    [ "wpi::detail::zippy< ItType, Args >", "classwpi_1_1detail_1_1zippy.html", null ],
-    [ "wpi::detail::ZipTupleType< Iters >", "structwpi_1_1detail_1_1ZipTupleType.html", null ]
+    [ "write_int_data< Char >", "structwrite__int__data.html", null ]
 ];

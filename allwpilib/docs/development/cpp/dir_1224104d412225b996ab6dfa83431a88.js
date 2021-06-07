@@ -25,6 +25,7 @@ var dir_1224104d412225b996ab6dfa83431a88 =
     [ "ErrorHandling.h", "ErrorHandling_8h_source.html", null ],
     [ "EventLoopRunner.h", "EventLoopRunner_8h_source.html", null ],
     [ "fs.h", "fs_8h_source.html", null ],
+    [ "function_ref.h", "function__ref_8h_source.html", null ],
     [ "FunctionExtras.h", "FunctionExtras_8h.html", [
       [ "unique_function", "classwpi_1_1unique__function.html", null ],
       [ "unique_function< ReturnT(ParamTs...)>", "classwpi_1_1unique__function_3_01ReturnT_07ParamTs_8_8_8_08_4.html", "classwpi_1_1unique__function_3_01ReturnT_07ParamTs_8_8_8_08_4" ],
@@ -81,7 +82,6 @@ var dir_1224104d412225b996ab6dfa83431a88 =
     [ "spinlock.h", "spinlock_8h_source.html", null ],
     [ "StackTrace.h", "StackTrace_8h_source.html", null ],
     [ "static_circular_buffer.h", "static__circular__buffer_8h_source.html", null ],
-    [ "STLExtras.h", "STLExtras_8h_source.html", null ],
     [ "StringExtras.h", "StringExtras_8h_source.html", null ],
     [ "StringMap.h", "StringMap_8h_source.html", null ],
     [ "SwapByteOrder.h", "SwapByteOrder_8h_source.html", null ],

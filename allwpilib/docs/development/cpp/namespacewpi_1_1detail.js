@@ -1,12 +1,9 @@
 var namespacewpi_1_1detail =
 [
     [ "AlignerImpl", "classwpi_1_1detail_1_1AlignerImpl.html", null ],
-    [ "concat_range", "classwpi_1_1detail_1_1concat__range.html", "classwpi_1_1detail_1_1concat__range" ],
     [ "ConstantLog2", "structwpi_1_1detail_1_1ConstantLog2.html", null ],
     [ "ConstantLog2< 1 >", "structwpi_1_1detail_1_1ConstantLog2_3_011_01_4.html", null ],
     [ "DenseMapPair", "structwpi_1_1detail_1_1DenseMapPair.html", "structwpi_1_1detail_1_1DenseMapPair" ],
-    [ "enumerator", "classwpi_1_1detail_1_1enumerator.html", "classwpi_1_1detail_1_1enumerator" ],
-    [ "enumerator_iter", "classwpi_1_1detail_1_1enumerator__iter.html", "classwpi_1_1detail_1_1enumerator__iter" ],
     [ "exception", "classwpi_1_1detail_1_1exception.html", "classwpi_1_1detail_1_1exception" ],
     [ "external_constructor", "structwpi_1_1detail_1_1external__constructor.html", null ],
     [ "external_constructor< value_t::array >", "structwpi_1_1detail_1_1external__constructor_3_01value__t_1_1array_01_4.html", "structwpi_1_1detail_1_1external__constructor_3_01value__t_1_1array_01_4" ],
@@ -21,9 +18,6 @@ var namespacewpi_1_1detail =
     [ "FutureThen< To, void >", "structwpi_1_1detail_1_1FutureThen_3_01To_00_01void_01_4.html", "structwpi_1_1detail_1_1FutureThen_3_01To_00_01void_01_4" ],
     [ "FutureThen< void, From >", "structwpi_1_1detail_1_1FutureThen_3_01void_00_01From_01_4.html", "structwpi_1_1detail_1_1FutureThen_3_01void_00_01From_01_4" ],
     [ "FutureThen< void, void >", "structwpi_1_1detail_1_1FutureThen_3_01void_00_01void_01_4.html", "structwpi_1_1detail_1_1FutureThen_3_01void_00_01void_01_4" ],
-    [ "fwd_or_bidi_tag", "structwpi_1_1detail_1_1fwd__or__bidi__tag.html", "structwpi_1_1detail_1_1fwd__or__bidi__tag" ],
-    [ "fwd_or_bidi_tag_impl", "structwpi_1_1detail_1_1fwd__or__bidi__tag__impl.html", "structwpi_1_1detail_1_1fwd__or__bidi__tag__impl" ],
-    [ "fwd_or_bidi_tag_impl< true >", "structwpi_1_1detail_1_1fwd__or__bidi__tag__impl_3_01true_01_4.html", "structwpi_1_1detail_1_1fwd__or__bidi__tag__impl_3_01true_01_4" ],
     [ "has_from_json", "structwpi_1_1detail_1_1has__from__json.html", "structwpi_1_1detail_1_1has__from__json" ],
     [ "has_non_default_from_json", "structwpi_1_1detail_1_1has__non__default__from__json.html", "structwpi_1_1detail_1_1has__non__default__from__json" ],
     [ "has_size_and_data", "structwpi_1_1detail_1_1has__size__and__data.html", null ],
@@ -72,7 +66,6 @@ var namespacewpi_1_1detail =
     [ "priority_tag", "structwpi_1_1detail_1_1priority__tag.html", null ],
     [ "priority_tag< 0 >", "structwpi_1_1detail_1_1priority__tag_3_010_01_4.html", null ],
     [ "PromiseFactoryBase", "classwpi_1_1detail_1_1PromiseFactoryBase.html", "classwpi_1_1detail_1_1PromiseFactoryBase" ],
-    [ "result_pair", "structwpi_1_1detail_1_1result__pair.html", "structwpi_1_1detail_1_1result__pair" ],
     [ "SafeThreadOwnerBase", "classwpi_1_1detail_1_1SafeThreadOwnerBase.html", "classwpi_1_1detail_1_1SafeThreadOwnerBase" ],
     [ "SafeThreadProxy", "classwpi_1_1detail_1_1SafeThreadProxy.html", "classwpi_1_1detail_1_1SafeThreadProxy" ],
     [ "SafeThreadProxyBase", "classwpi_1_1detail_1_1SafeThreadProxyBase.html", "classwpi_1_1detail_1_1SafeThreadProxyBase" ],
@@ -86,14 +79,5 @@ var namespacewpi_1_1detail =
     [ "WorkerThreadAsync", "structwpi_1_1detail_1_1WorkerThreadAsync.html", "structwpi_1_1detail_1_1WorkerThreadAsync" ],
     [ "WorkerThreadAsync< void >", "structwpi_1_1detail_1_1WorkerThreadAsync_3_01void_01_4.html", "structwpi_1_1detail_1_1WorkerThreadAsync_3_01void_01_4" ],
     [ "WorkerThreadRequest", "structwpi_1_1detail_1_1WorkerThreadRequest.html", "structwpi_1_1detail_1_1WorkerThreadRequest" ],
-    [ "WorkerThreadThread", "classwpi_1_1detail_1_1WorkerThreadThread.html", "classwpi_1_1detail_1_1WorkerThreadThread" ],
-    [ "zip_common", "structwpi_1_1detail_1_1zip__common.html", "structwpi_1_1detail_1_1zip__common" ],
-    [ "zip_first", "structwpi_1_1detail_1_1zip__first.html", "structwpi_1_1detail_1_1zip__first" ],
-    [ "zip_longest_iterator", "classwpi_1_1detail_1_1zip__longest__iterator.html", "classwpi_1_1detail_1_1zip__longest__iterator" ],
-    [ "zip_longest_range", "classwpi_1_1detail_1_1zip__longest__range.html", "classwpi_1_1detail_1_1zip__longest__range" ],
-    [ "zip_shortest", "classwpi_1_1detail_1_1zip__shortest.html", "classwpi_1_1detail_1_1zip__shortest" ],
-    [ "ZipLongestItemType", "structwpi_1_1detail_1_1ZipLongestItemType.html", "structwpi_1_1detail_1_1ZipLongestItemType" ],
-    [ "ZipLongestTupleType", "structwpi_1_1detail_1_1ZipLongestTupleType.html", "structwpi_1_1detail_1_1ZipLongestTupleType" ],
-    [ "zippy", "classwpi_1_1detail_1_1zippy.html", "classwpi_1_1detail_1_1zippy" ],
-    [ "ZipTupleType", "structwpi_1_1detail_1_1ZipTupleType.html", "structwpi_1_1detail_1_1ZipTupleType" ]
+    [ "WorkerThreadThread", "classwpi_1_1detail_1_1WorkerThreadThread.html", "classwpi_1_1detail_1_1WorkerThreadThread" ]
 ];

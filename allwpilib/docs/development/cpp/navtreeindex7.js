@@ -1,6 +1,5 @@
 var NAVTREEINDEX7 =
 {
-"classfrc_1_1BuiltInAccelerometer.html#a77a6aa8e81395e9fa809128e274b7989":[5,0,5,18,6],
 "classfrc_1_1BuiltInAccelerometer.html#a934e92f7f3aefacc14400f0f5c2b354e":[5,0,5,18,3],
 "classfrc_1_1BuiltInAccelerometer.html#aa466ef7845ce387d832069f81ba7b9a8":[5,0,5,18,5],
 "classfrc_1_1BuiltInAccelerometer.html#ab12c009e4a828729e7d1de1f34169ee6":[5,0,5,18,2],
@@ -249,5 +248,6 @@ var NAVTREEINDEX7 =
 "classfrc_1_1Color.html#afcb7977d48a565a402bd5170e036c65a":[5,0,5,29,124],
 "classfrc_1_1Color.html#afcc4a67428dc00bd34e998020eeb7a22":[5,0,5,29,132],
 "classfrc_1_1Color.html#afcf3e138356901681b6a64d1a0048ed8":[5,0,5,29,84],
-"classfrc_1_1Color.html#afd50671d29419ce9b9d785f3ca52596a":[5,0,5,29,77]
+"classfrc_1_1Color.html#afd50671d29419ce9b9d785f3ca52596a":[5,0,5,29,77],
+"classfrc_1_1Color8Bit.html":[5,0,5,30]
 };

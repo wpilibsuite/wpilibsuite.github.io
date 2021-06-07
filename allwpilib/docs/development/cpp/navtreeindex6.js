@@ -1,6 +1,5 @@
 var NAVTREEINDEX6 =
 {
-"classfrc_1_1ADXL345__SPI.html#ab0964ef022e400efad4585c8825bb296":[5,0,5,5,3],
 "classfrc_1_1ADXL345__SPI.html#ab0964ef022e400efad4585c8825bb296a4ee8e716ea13abfbe7a5157e402d7654":[5,0,5,5,3,2],
 "classfrc_1_1ADXL345__SPI.html#ab0964ef022e400efad4585c8825bb296a5e2f156bbf53d0b72cd4f71ee11a13ce":[5,0,5,5,3,0],
 "classfrc_1_1ADXL345__SPI.html#ab0964ef022e400efad4585c8825bb296a66f0e067dfe4ab8bdf54b3bb6540568c":[5,0,5,5,3,3],
@@ -249,5 +248,6 @@ var NAVTREEINDEX6 =
 "classfrc_1_1AsynchronousInterrupt.html#ae4be083edecc23fb8deae8f4fffbcc66":[5,0,5,17,9],
 "classfrc_1_1BuiltInAccelerometer.html":[5,0,5,18],
 "classfrc_1_1BuiltInAccelerometer.html#a5c32a616c68deb9203a21d549b54ca75":[5,0,5,18,0],
-"classfrc_1_1BuiltInAccelerometer.html#a6dd6e22c1eed09bf00d84ce2c6793e4e":[5,0,5,18,4]
+"classfrc_1_1BuiltInAccelerometer.html#a6dd6e22c1eed09bf00d84ce2c6793e4e":[5,0,5,18,4],
+"classfrc_1_1BuiltInAccelerometer.html#a77a6aa8e81395e9fa809128e274b7989":[5,0,5,18,6]
 };
