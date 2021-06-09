@@ -1,5 +1,6 @@
 var NAVTREEINDEX34 =
 {
+"group__hal__analoginput.html#ga859f6b40ac680e70ae338ce8be093e5d":[3,0,26,5],
 "group__hal__analoginput.html#ga929c30e6d64643e3a951573ae7c3bf9f":[3,0,26,18],
 "group__hal__analoginput.html#ga97f303940a243beae1f5ee3df8793b8b":[3,0,26,14],
 "group__hal__analoginput.html#ga98bbaca35b525e54978d268d7f68fb75":[3,0,26,10],
@@ -248,6 +249,5 @@ var NAVTREEINDEX34 =
 "group__hal__power.html#ga54bbd26b5af42f7ee1978681128fbddf":[3,0,6,6],
 "group__hal__power.html#ga5edc3b2140ad16d76545f5a2251843ae":[3,0,6,1],
 "group__hal__power.html#ga772a5710a48dde57c0e93756e897f4b6":[3,0,6,4],
-"group__hal__power.html#ga7bde6a4fc8b7c730b82deea2f50c676e":[3,0,6,0],
-"group__hal__power.html#gab793b44ece04e698052bfd5f1fd331fe":[3,0,6,10]
+"group__hal__power.html#ga7bde6a4fc8b7c730b82deea2f50c676e":[3,0,6,0]
 };

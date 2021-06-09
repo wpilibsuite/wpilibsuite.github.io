@@ -36,7 +36,7 @@ var searchData=
   ['timeleftuntil_3564',['TimeLeftUntil',['../classfrc_1_1TrapezoidProfile.html#a61e00f74ff2a34dcd978f20764981603',1,'frc::TrapezoidProfile']]],
   ['timeout_3565',['timeout',['../classwpi_1_1uv_1_1Timer.html#a7739213e3b4ad87d1ca35f24b692c821',1,'wpi::uv::Timer']]],
   ['timeparameterizetrajectory_3566',['TimeParameterizeTrajectory',['../classfrc_1_1TrajectoryParameterizer.html#a9d698638ca153a768f5ddde3b5c633d7',1,'frc::TrajectoryParameterizer']]],
-  ['timer_3567',['Timer',['../classwpi_1_1uv_1_1Timer.html',1,'wpi::uv::Timer'],['../classfrc_1_1Timer.html',1,'frc::Timer'],['../classfrc_1_1Timer.html#a2246466fd584658798fd452cb1dba1d0',1,'frc::Timer::Timer()']]],
+  ['timer_3567',['Timer',['../classfrc_1_1Timer.html',1,'frc::Timer'],['../classwpi_1_1uv_1_1Timer.html',1,'wpi::uv::Timer'],['../classfrc_1_1Timer.html#a2246466fd584658798fd452cb1dba1d0',1,'frc::Timer::Timer()']]],
   ['timesinceinitialized_3568',['TimeSinceInitialized',['../classfrc_1_1Command.html#ab29c1b983b4843e5c167324b89d21c69',1,'frc::Command']]],
   ['timesincescheduled_3569',['TimeSinceScheduled',['../classfrc2_1_1CommandScheduler.html#ad3101430bdf290496c4a6c82f1892d67',1,'frc2::CommandScheduler']]],
   ['to_5fcbor_3570',['to_cbor',['../classwpi_1_1json.html#a94d51a1fe2ce24598b873ee38f32f143',1,'wpi::json']]],

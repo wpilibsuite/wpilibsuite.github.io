@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['waitcommand_5001',['WaitCommand',['../classfrc_1_1WaitCommand.html',1,'frc::WaitCommand'],['../classfrc2_1_1WaitCommand.html',1,'frc2::WaitCommand']]],
+  ['waitcommand_5001',['WaitCommand',['../classfrc2_1_1WaitCommand.html',1,'frc2::WaitCommand'],['../classfrc_1_1WaitCommand.html',1,'frc::WaitCommand']]],
   ['waitforchildren_5002',['WaitForChildren',['../classfrc_1_1WaitForChildren.html',1,'frc']]],
-  ['waituntilcommand_5003',['WaitUntilCommand',['../classfrc_1_1WaitUntilCommand.html',1,'frc::WaitUntilCommand'],['../classfrc2_1_1WaitUntilCommand.html',1,'frc2::WaitUntilCommand']]],
+  ['waituntilcommand_5003',['WaitUntilCommand',['../classfrc2_1_1WaitUntilCommand.html',1,'frc2::WaitUntilCommand'],['../classfrc_1_1WaitUntilCommand.html',1,'frc::WaitUntilCommand']]],
   ['watchdog_5004',['Watchdog',['../classfrc_1_1Watchdog.html',1,'frc']]],
   ['websocket_5005',['WebSocket',['../classwpi_1_1WebSocket.html',1,'wpi']]],
   ['websocketserver_5006',['WebSocketServer',['../classwpi_1_1WebSocketServer.html',1,'wpi']]],

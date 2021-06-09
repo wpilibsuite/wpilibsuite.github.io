@@ -1,5 +1,6 @@
 var NAVTREEINDEX36 =
 {
+"group__ntcore__network__func.html#ga13258f5f06e3ee8566849ce70eccba11":[3,3,5,12],
 "group__ntcore__network__func.html#ga26f9dae0d32d2ed028e917e8cc318f46":[3,3,5,4],
 "group__ntcore__network__func.html#ga321386a8c320be43419d2bb2a5a7ba44":[3,3,5,6],
 "group__ntcore__network__func.html#ga32b5eca82864b163cda8b96b879f40ee":[3,3,5,2],
@@ -195,8 +196,8 @@ var NAVTREEINDEX36 =
 "namespaces.html":[4,0],
 "namespacewpi_1_1detail.html":[4,0,4,0],
 "namespacewpi_1_1detail.html":[5,0,11,0],
-"namespacewpi_1_1java.html":[4,0,4,1],
 "namespacewpi_1_1java.html":[5,0,11,3],
+"namespacewpi_1_1java.html":[4,0,4,1],
 "never__destroyed_8h_source.html":[6,0,2,0,5],
 "nodiscard_8h_source.html":[6,0,11,50],
 "ntcore_8h_source.html":[6,0,20],
@@ -248,6 +249,5 @@ var NAVTREEINDEX36 =
 "structCS__UsbCameraInfo.html#aeaf92af97323e8e9382d48b72abc5a16":[3,4,19,1],
 "structCS__UsbCameraInfo.html#af8e259e0d7a97fc2f358458928aea8c5":[3,4,19,4],
 "structCS__VideoMode.html":[3,4,17],
-"structCS__VideoMode.html#a7712c4356a511ba2d7daee027b509de1":[3,4,17,3],
-"structCS__VideoMode.html#a8b576fed8622dea23ffa91139e0b3ea6":[3,4,17,2]
+"structCS__VideoMode.html#a7712c4356a511ba2d7daee027b509de1":[3,4,17,3]
 };
