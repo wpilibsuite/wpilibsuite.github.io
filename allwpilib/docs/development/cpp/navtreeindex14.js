@@ -1,5 +1,6 @@
 var NAVTREEINDEX14 =
 {
+"classfrc_1_1RobotDriveBase.html#a45bfa04aeb304c0bea2e000f428933fc":[5,0,5,143,8],
 "classfrc_1_1RobotDriveBase.html#a463d317b667cef70681fb58ab5a27662":[5,0,5,143,11],
 "classfrc_1_1RobotDriveBase.html#a5b8e78f04144ecdd389e9aeeea111bff":[5,0,5,143,6],
 "classfrc_1_1RobotDriveBase.html#a66ca9d336c81659405045bf064490cfe":[5,0,5,143,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX14 =
 "classfrc_1_1SendableRegistry.html#a569186db3671b185b023415bbc731da6":[5,0,5,157,17],
 "classfrc_1_1SendableRegistry.html#a5a44a1e2af90bf23e1620bb233b2be37":[5,0,5,157,18],
 "classfrc_1_1SendableRegistry.html#a68e209adf9a42e7762e9b1405e3aa40f":[5,0,5,157,29],
-"classfrc_1_1SendableRegistry.html#a6a2c15917c97f64d6d77bd95b97701d4":[5,0,5,157,26],
-"classfrc_1_1SendableRegistry.html#a7002d6dc8e96ce236854c7e28e0fc4f8":[5,0,5,157,7]
+"classfrc_1_1SendableRegistry.html#a6a2c15917c97f64d6d77bd95b97701d4":[5,0,5,157,26]
 };

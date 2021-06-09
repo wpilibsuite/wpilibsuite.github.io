@@ -1,5 +1,6 @@
 var NAVTREEINDEX21 =
 {
+"classhal_1_1HandleBase.html#af0bfc60f5c8db57d536172238285ee62":[5,0,8,4,2],
 "classhal_1_1HandleBase.html#af90db8fc08f56b6fbb23ee93ca3d45b8":[5,0,8,4,6],
 "classhal_1_1IndexedClassedHandleResource.html":[5,0,8,5],
 "classhal_1_1IndexedClassedHandleResource.html#a00585003b90a487a0aee908d0c956d8d":[5,0,8,5,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX21 =
 "classnt_1_1NetworkTableEntry.html#a98228a6bb656cbb945efa418635d53a7":[3,2,4,12],
 "classnt_1_1NetworkTableEntry.html#a98a461f55b6e7bd8cf80a8a2ae691b2d":[3,2,4,19],
 "classnt_1_1NetworkTableEntry.html#aa151b407de61db2e32d6fed008d21a8f":[3,2,4,57],
-"classnt_1_1NetworkTableEntry.html#aa4a6fe4de92ed8e5a7e49a6c8edc21df":[3,2,4,58],
-"classnt_1_1NetworkTableEntry.html#aa572f030d9cbd67bbdf320d0c0be807f":[3,2,4,73]
+"classnt_1_1NetworkTableEntry.html#aa4a6fe4de92ed8e5a7e49a6c8edc21df":[3,2,4,58]
 };

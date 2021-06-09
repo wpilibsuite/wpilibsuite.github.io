@@ -17,7 +17,8 @@ var NAVTREEINDEX11 =
 "classfrc_1_1KalmanFilter.html#afeb51dfb8b9e26e2f4f8c7799f1ed2e6":[5,0,5,77,1],
 "classfrc_1_1KalmanFilterLatencyCompensator.html":[5,0,5,80],
 "classfrc_1_1KalmanFilterLatencyCompensator.html#a15bf928c83978a449fbc78731c4de97b":[5,0,5,80,1],
-"classfrc_1_1KalmanFilterLatencyCompensator.html#a8fa46ed1fbe25e1eb31cf5e472375308":[5,0,5,80,2],
+"classfrc_1_1KalmanFilterLatencyCompensator.html#a2fd858c67952d32c89d6b35f0d241ab1":[5,0,5,80,3],
+"classfrc_1_1KalmanFilterLatencyCompensator.html#a92a3c5d41f1b05c68add95b6d77faec9":[5,0,5,80,2],
 "classfrc_1_1KalmanFilter_3_011_00_011_00_011_01_4.html":[5,0,5,78],
 "classfrc_1_1KalmanFilter_3_011_00_011_00_011_01_4.html#a0bdfd41dafa5a395d92bc1c1bf52d264":[5,0,5,78,1],
 "classfrc_1_1KalmanFilter_3_011_00_011_00_011_01_4.html#a776d575b8881eb71649959fd843744e7":[5,0,5,78,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX11 =
 "classfrc_1_1MotorControllerGroup.html#a1018f6fa8af739eb2527ab5edbdca8b2":[5,0,5,107,10],
 "classfrc_1_1MotorControllerGroup.html#a786f25a7ac1363d4c4b59a41eeef2c2b":[5,0,5,107,0],
 "classfrc_1_1MotorControllerGroup.html#a87d2d50dbdebbc4ed2da85d20d7a7607":[5,0,5,107,8],
-"classfrc_1_1MotorControllerGroup.html#a927bec9e678a96b162ebb469c7ebf620":[5,0,5,107,5],
-"classfrc_1_1MotorControllerGroup.html#a9f0a43ccbd19ac6b6cf2427408b3646b":[5,0,5,107,1]
+"classfrc_1_1MotorControllerGroup.html#a927bec9e678a96b162ebb469c7ebf620":[5,0,5,107,5]
 };

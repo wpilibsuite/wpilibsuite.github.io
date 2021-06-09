@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-103-g0773f40</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-104-gf9c3d54</span>
    </div>
   </td>
  </tr>
@@ -105,14 +105,150 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a15bf928c83978a449fbc78731c4de97b"><td class="memItemLeft" align="right" valign="top"><a id="a15bf928c83978a449fbc78731c4de97b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AddObserverState</b> (const KalmanFilterType &amp;observer, Eigen::Matrix&lt; double, Inputs, 1 &gt; u, Eigen::Matrix&lt; double, Outputs, 1 &gt; localY, units::second_t timestamp)</td></tr>
+<tr class="memitem:a2fd858c67952d32c89d6b35f0d241ab1"><td class="memItemLeft" align="right" valign="top"><a id="a2fd858c67952d32c89d6b35f0d241ab1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1KalmanFilterLatencyCompensator.html#a2fd858c67952d32c89d6b35f0d241ab1">Reset</a> ()</td></tr>
+<tr class="memdesc:a2fd858c67952d32c89d6b35f0d241ab1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the observer snapshot buffer. <br /></td></tr>
+<tr class="separator:a2fd858c67952d32c89d6b35f0d241ab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15bf928c83978a449fbc78731c4de97b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1KalmanFilterLatencyCompensator.html#a15bf928c83978a449fbc78731c4de97b">AddObserverState</a> (const KalmanFilterType &amp;observer, Eigen::Matrix&lt; double, Inputs, 1 &gt; u, Eigen::Matrix&lt; double, Outputs, 1 &gt; localY, units::second_t timestamp)</td></tr>
+<tr class="memdesc:a15bf928c83978a449fbc78731c4de97b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add past observer states to the observer snapshots list.  <a href="classfrc_1_1KalmanFilterLatencyCompensator.html#a15bf928c83978a449fbc78731c4de97b">More...</a><br /></td></tr>
 <tr class="separator:a15bf928c83978a449fbc78731c4de97b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fa46ed1fbe25e1eb31cf5e472375308"><td class="memTemplParams" colspan="2"><a id="a8fa46ed1fbe25e1eb31cf5e472375308"></a>
-template&lt;int Rows&gt; </td></tr>
-<tr class="memitem:a8fa46ed1fbe25e1eb31cf5e472375308"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ApplyPastMeasurement</b> (KalmanFilterType *observer, units::second_t nominalDt, Eigen::Matrix&lt; double, Rows, 1 &gt; y, std::function&lt; void(const Eigen::Matrix&lt; double, Inputs, 1 &gt; &amp;u, const Eigen::Matrix&lt; double, Rows, 1 &gt; &amp;y)&gt; globalMeasurementCorrect, units::second_t timestamp)</td></tr>
-<tr class="separator:a8fa46ed1fbe25e1eb31cf5e472375308"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92a3c5d41f1b05c68add95b6d77faec9"><td class="memTemplParams" colspan="2">template&lt;int Rows&gt; </td></tr>
+<tr class="memitem:a92a3c5d41f1b05c68add95b6d77faec9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classfrc_1_1KalmanFilterLatencyCompensator.html#a92a3c5d41f1b05c68add95b6d77faec9">ApplyPastGlobalMeasurement</a> (KalmanFilterType *observer, units::second_t nominalDt, Eigen::Matrix&lt; double, Rows, 1 &gt; y, std::function&lt; void(const Eigen::Matrix&lt; double, Inputs, 1 &gt; &amp;u, const Eigen::Matrix&lt; double, Rows, 1 &gt; &amp;y)&gt; globalMeasurementCorrect, units::second_t timestamp)</td></tr>
+<tr class="memdesc:a92a3c5d41f1b05c68add95b6d77faec9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add past global measurements (such as from vision)to the estimator.  <a href="classfrc_1_1KalmanFilterLatencyCompensator.html#a92a3c5d41f1b05c68add95b6d77faec9">More...</a><br /></td></tr>
+<tr class="separator:a92a3c5d41f1b05c68add95b6d77faec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a15bf928c83978a449fbc78731c4de97b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15bf928c83978a449fbc78731c4de97b">&#9670;&nbsp;</a></span>AddObserverState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int States, int Inputs, int Outputs, typename KalmanFilterType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classfrc_1_1KalmanFilterLatencyCompensator.html">frc::KalmanFilterLatencyCompensator</a>&lt; States, Inputs, Outputs, KalmanFilterType &gt;::AddObserverState </td>
+          <td>(</td>
+          <td class="paramtype">const KalmanFilterType &amp;&#160;</td>
+          <td class="paramname"><em>observer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Eigen::Matrix&lt; double, Inputs, 1 &gt;&#160;</td>
+          <td class="paramname"><em>u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Eigen::Matrix&lt; double, Outputs, 1 &gt;&#160;</td>
+          <td class="paramname"><em>localY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">units::second_t&#160;</td>
+          <td class="paramname"><em>timestamp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add past observer states to the observer snapshots list. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">observer</td><td>The observer. </td></tr>
+    <tr><td class="paramname">u</td><td>The input at the timestamp. </td></tr>
+    <tr><td class="paramname">localY</td><td>The local output at the timestamp </td></tr>
+    <tr><td class="paramname">timestamp</td><td>The timesnap of the state. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a92a3c5d41f1b05c68add95b6d77faec9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92a3c5d41f1b05c68add95b6d77faec9">&#9670;&nbsp;</a></span>ApplyPastGlobalMeasurement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int States, int Inputs, int Outputs, typename KalmanFilterType &gt; </div>
+<div class="memtemplate">
+template&lt;int Rows&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classfrc_1_1KalmanFilterLatencyCompensator.html">frc::KalmanFilterLatencyCompensator</a>&lt; States, Inputs, Outputs, KalmanFilterType &gt;::ApplyPastGlobalMeasurement </td>
+          <td>(</td>
+          <td class="paramtype">KalmanFilterType *&#160;</td>
+          <td class="paramname"><em>observer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">units::second_t&#160;</td>
+          <td class="paramname"><em>nominalDt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Eigen::Matrix&lt; double, Rows, 1 &gt;&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; void(const Eigen::Matrix&lt; double, Inputs, 1 &gt; &amp;u, const Eigen::Matrix&lt; double, Rows, 1 &gt; &amp;y)&gt;&#160;</td>
+          <td class="paramname"><em>globalMeasurementCorrect</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">units::second_t&#160;</td>
+          <td class="paramname"><em>timestamp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add past global measurements (such as from vision)to the estimator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">observer</td><td>The observer to apply the past global measurement. </td></tr>
+    <tr><td class="paramname">nominalDt</td><td>The nominal timestep. </td></tr>
+    <tr><td class="paramname">y</td><td>The measurement. </td></tr>
+    <tr><td class="paramname">globalMeasurementCorrect</td><td>The function take calls correct() on the observer. </td></tr>
+    <tr><td class="paramname">timestamp</td><td>The timestamp of the measurement. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>frc/estimator/<a class="el" href="KalmanFilterLatencyCompensator_8h_source.html">KalmanFilterLatencyCompensator.h</a></li>
 </ul>
@@ -122,7 +258,7 @@ template&lt;int Rows&gt; </td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1KalmanFilterLatencyCompensator.html">KalmanFilterLatencyCompensator</a></li>
-    <li class="footer">Generated on Wed Jun 9 2021 04:21:18 for WPILibC++ by
+    <li class="footer">Generated on Wed Jun 9 2021 04:22:41 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

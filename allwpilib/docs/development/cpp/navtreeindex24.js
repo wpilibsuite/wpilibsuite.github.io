@@ -1,5 +1,6 @@
 var NAVTREEINDEX24 =
 {
+"classwpi_1_1HttpPathRef.html#a531f2be1f3fadc9e07b5ed41971f0bd2":[5,0,11,62,10],
 "classwpi_1_1HttpPathRef.html#a547087c127ead6c72858401dabcc6eb9":[5,0,11,62,13],
 "classwpi_1_1HttpPathRef.html#a5861e7abea78c2a6e47e8095efb4aebb":[5,0,11,62,8],
 "classwpi_1_1HttpPathRef.html#a69332d1a7303c9b3966a6111a7eabb7f":[5,0,11,62,11],
@@ -248,6 +249,5 @@ var NAVTREEINDEX24 =
 "classwpi_1_1PortForwarder.html#ab7714761ade7f7d9f7158d3990ec3739":[5,0,11,111,4],
 "classwpi_1_1PortForwarder.html#acc335fb133bb1f9327383dff47f1f8b8":[5,0,11,111,0],
 "classwpi_1_1PromiseFactory.html":[5,0,11,115],
-"classwpi_1_1PromiseFactory.html#a1da363cf672345251a5582fc7631bf5f":[5,0,11,115,12],
-"classwpi_1_1PromiseFactory.html#a287f92c926734608a1f6d82e1f3e205b":[5,0,11,115,10]
+"classwpi_1_1PromiseFactory.html#a1da363cf672345251a5582fc7631bf5f":[5,0,11,115,12]
 };

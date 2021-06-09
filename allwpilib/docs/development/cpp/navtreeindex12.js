@@ -1,5 +1,6 @@
 var NAVTREEINDEX12 =
 {
+"classfrc_1_1MotorControllerGroup.html#a9f0a43ccbd19ac6b6cf2427408b3646b":[5,0,5,107,1],
 "classfrc_1_1MotorControllerGroup.html#a9f33bca180a40e347adb1c8ce4f2bbba":[5,0,5,107,2],
 "classfrc_1_1MotorControllerGroup.html#aaa92d1da1245bbc72a29deec04b19977":[5,0,5,107,7],
 "classfrc_1_1MotorControllerGroup.html#ad8eabf9e3bb596eebccfdee65d5e1eab":[5,0,5,107,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX12 =
 "classfrc_1_1PWMVenom.html#ac22f5cd715cbb542e235a516c4a20ac0":[5,0,5,133,1],
 "classfrc_1_1PWMVictorSPX.html":[5,0,5,134],
 "classfrc_1_1PWMVictorSPX.html#a44587d027583bfa66b961c7c77c6611e":[5,0,5,134,2],
-"classfrc_1_1PWMVictorSPX.html#ac53e410aec61882f026226123a8eea4c":[5,0,5,134,0],
-"classfrc_1_1PWMVictorSPX.html#af2a44a084b8902a9e1ac75eab7e199d9":[5,0,5,134,1]
+"classfrc_1_1PWMVictorSPX.html#ac53e410aec61882f026226123a8eea4c":[5,0,5,134,0]
 };

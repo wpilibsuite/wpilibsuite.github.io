@@ -1,5 +1,6 @@
 var NAVTREEINDEX27 =
 {
+"classwpi_1_1WebSocket.html#a0206ee21dc8765fe3648d1a6a1a54ea5":[5,0,11,187,41],
 "classwpi_1_1WebSocket.html#a17224f8d6ff96488135f607a4451fa2d":[5,0,11,187,29],
 "classwpi_1_1WebSocket.html#a1daec0484f6f3034717912142e3cc7e1":[5,0,11,187,39],
 "classwpi_1_1WebSocket.html#a252eade72c7d564bf98db49e6cc21781":[5,0,11,187,14],
@@ -248,6 +249,5 @@ var NAVTREEINDEX27 =
 "classwpi_1_1detail_1_1json__reverse__iterator.html#a800c75482a5b6a82f5c699855630d7e1":[5,0,11,0,55,3],
 "classwpi_1_1detail_1_1json__reverse__iterator.html#a8095f01dc5321a62c55fffee38cd3160":[5,0,11,0,55,15],
 "classwpi_1_1detail_1_1json__reverse__iterator.html#a9bbc868eb26f618c4cdd7733f231dfd7":[5,0,11,0,55,1],
-"classwpi_1_1detail_1_1json__reverse__iterator.html#aaf111e9187c64f60f8bdacb5e64ea7ee":[5,0,11,0,55,13],
-"classwpi_1_1detail_1_1json__reverse__iterator.html#adc331656bee3a88dd64dcf5c58a350b9":[5,0,11,0,55,4]
+"classwpi_1_1detail_1_1json__reverse__iterator.html#aaf111e9187c64f60f8bdacb5e64ea7ee":[5,0,11,0,55,13]
 };
