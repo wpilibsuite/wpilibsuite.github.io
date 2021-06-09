@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-106-g8284075</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-107-gc1e128b</span>
    </div>
   </td>
  </tr>
@@ -107,32 +107,32 @@ $(document).ready(function(){initNavTree('BatterySim_8h_source.html',''); initRe
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span>frc::sim {</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1BatterySim.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1sim_1_1BatterySim.html">BatterySim</a> {</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1BatterySim.html#a7d24f778a66abea773d7e67947a788bb">   29</a></span>&#160;  <span class="keyword">static</span> units::volt_t <a class="code" href="classfrc_1_1sim_1_1BatterySim.html#a7d24f778a66abea773d7e67947a788bb">Calculate</a>(</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      units::volt_t nominalVoltage, units::ohm_t resistance,</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      std::initializer_list&lt;units::ampere_t&gt; currents) {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">return</span> nominalVoltage -</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;           std::accumulate(currents.begin(), currents.end(), 0_A) * resistance;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  }</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1BatterySim.html#a86bdca5dfc8818706f5405aa616e6f82">   46</a></span>&#160;  <span class="keyword">static</span> units::volt_t <a class="code" href="classfrc_1_1sim_1_1BatterySim.html#a86bdca5dfc8818706f5405aa616e6f82">Calculate</a>(</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      std::initializer_list&lt;units::ampere_t&gt; currents) {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classfrc_1_1sim_1_1BatterySim.html#a7d24f778a66abea773d7e67947a788bb">Calculate</a>(12_V, 0.02_Ohm, currents);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  }</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}  <span class="comment">// namespace frc::sim</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1BatterySim.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1sim_1_1BatterySim.html">BatterySim</a> {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1BatterySim.html#a7d24f778a66abea773d7e67947a788bb">   32</a></span>&#160;  <span class="keyword">static</span> units::volt_t <a class="code" href="classfrc_1_1sim_1_1BatterySim.html#a7d24f778a66abea773d7e67947a788bb">Calculate</a>(</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      units::volt_t nominalVoltage, units::ohm_t resistance,</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      std::initializer_list&lt;units::ampere_t&gt; currents) {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">return</span> nominalVoltage -</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;           std::accumulate(currents.begin(), currents.end(), 0_A) * resistance;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1BatterySim.html#a86bdca5dfc8818706f5405aa616e6f82">   49</a></span>&#160;  <span class="keyword">static</span> units::volt_t <a class="code" href="classfrc_1_1sim_1_1BatterySim.html#a86bdca5dfc8818706f5405aa616e6f82">Calculate</a>(</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      std::initializer_list&lt;units::ampere_t&gt; currents) {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classfrc_1_1sim_1_1BatterySim.html#a7d24f778a66abea773d7e67947a788bb">Calculate</a>(12_V, 0.02_Ohm, currents);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}  <span class="comment">// namespace frc::sim</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassfrc_1_1sim_1_1BatterySim_html_a7d24f778a66abea773d7e67947a788bb"><div class="ttname"><a href="classfrc_1_1sim_1_1BatterySim.html#a7d24f778a66abea773d7e67947a788bb">frc::sim::BatterySim::Calculate</a></div><div class="ttdeci">static units::volt_t Calculate(units::volt_t nominalVoltage, units::ohm_t resistance, std::initializer_list&lt; units::ampere_t &gt; currents)</div><div class="ttdoc">Calculate the loaded battery voltage.</div><div class="ttdef"><b>Definition:</b> BatterySim.h:29</div></div>
-<div class="ttc" id="aclassfrc_1_1sim_1_1BatterySim_html_a86bdca5dfc8818706f5405aa616e6f82"><div class="ttname"><a href="classfrc_1_1sim_1_1BatterySim.html#a86bdca5dfc8818706f5405aa616e6f82">frc::sim::BatterySim::Calculate</a></div><div class="ttdeci">static units::volt_t Calculate(std::initializer_list&lt; units::ampere_t &gt; currents)</div><div class="ttdoc">Calculate the loaded battery voltage.</div><div class="ttdef"><b>Definition:</b> BatterySim.h:46</div></div>
-<div class="ttc" id="aclassfrc_1_1sim_1_1BatterySim_html"><div class="ttname"><a href="classfrc_1_1sim_1_1BatterySim.html">frc::sim::BatterySim</a></div><div class="ttdef"><b>Definition:</b> BatterySim.h:15</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1BatterySim_html_a7d24f778a66abea773d7e67947a788bb"><div class="ttname"><a href="classfrc_1_1sim_1_1BatterySim.html#a7d24f778a66abea773d7e67947a788bb">frc::sim::BatterySim::Calculate</a></div><div class="ttdeci">static units::volt_t Calculate(units::volt_t nominalVoltage, units::ohm_t resistance, std::initializer_list&lt; units::ampere_t &gt; currents)</div><div class="ttdoc">Calculate the loaded battery voltage.</div><div class="ttdef"><b>Definition:</b> BatterySim.h:32</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1BatterySim_html_a86bdca5dfc8818706f5405aa616e6f82"><div class="ttname"><a href="classfrc_1_1sim_1_1BatterySim.html#a86bdca5dfc8818706f5405aa616e6f82">frc::sim::BatterySim::Calculate</a></div><div class="ttdeci">static units::volt_t Calculate(std::initializer_list&lt; units::ampere_t &gt; currents)</div><div class="ttdoc">Calculate the loaded battery voltage.</div><div class="ttdef"><b>Definition:</b> BatterySim.h:49</div></div>
+<div class="ttc" id="aclassfrc_1_1sim_1_1BatterySim_html"><div class="ttname"><a href="classfrc_1_1sim_1_1BatterySim.html">frc::sim::BatterySim</a></div><div class="ttdoc">A utility class to simulate the robot battery.</div><div class="ttdef"><b>Definition:</b> BatterySim.h:18</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_297dc702852f645e4b9e531dac2da27d.html">simulation</a></li><li class="navelem"><b>BatterySim.h</b></li>
-    <li class="footer">Generated on Wed Jun 9 2021 06:24:24 for WPILibC++ by
+    <li class="footer">Generated on Wed Jun 9 2021 14:03:14 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>
