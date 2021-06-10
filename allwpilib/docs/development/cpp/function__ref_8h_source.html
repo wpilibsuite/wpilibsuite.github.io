@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-110-g099fde9</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-111-ga77c6ff</span>
    </div>
   </td>
  </tr>
@@ -126,32 +126,33 @@ $(document).ready(function(){initNavTree('function__ref_8h_source.html',''); ini
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Callable&gt;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">static</span> Ret callback_fn(intptr_t callable, Params... params) {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">return</span> (*<span class="keyword">reinterpret_cast&lt;</span>Callable*<span class="keyword">&gt;</span>(callable))(</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        std::forward&lt;Params&gt;(params)...);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">return</span> (*<span class="keyword">reinterpret_cast&lt;</span>Callable*<span class="keyword">&gt;</span>(callable))(std::forward&lt;Params&gt;(</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        params)...);</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  }</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="classwpi_1_1function__ref.html">function_ref</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <a class="code" href="classwpi_1_1function__ref.html">function_ref</a>(std::nullptr_t) {}</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="comment">/*implicit*/</span> <a class="code" href="classwpi_1_1function__ref.html">function_ref</a>(std::nullptr_t) {}  <span class="comment">// NOLINT</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Callable&gt;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <a class="code" href="classwpi_1_1function__ref.html">function_ref</a>(Callable&amp;&amp; callable,</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;               <span class="keyword">typename</span> std::enable_if&lt;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                   !std::is_same&lt;<span class="keyword">typename</span> std::remove_reference&lt;Callable&gt;::type,</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                 <a class="code" href="classwpi_1_1function__ref.html">function_ref</a>&gt;::<a class="code" href="classvalue.html">value</a>&gt;::type* = <span class="keyword">nullptr</span>)</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      : callback(callback_fn&lt;<span class="keyword">typename</span> std::remove_reference&lt;Callable&gt;::type&gt;),</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        callable(<span class="keyword">reinterpret_cast&lt;</span>intptr_t<span class="keyword">&gt;</span>(&amp;callable)) {}</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  Ret operator()(Params... params)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">return</span> callback(callable, std::forward&lt;Params&gt;(params)...);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keyword">explicit</span> <span class="keyword">operator</span> bool()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> callback; }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;};</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}  <span class="comment">// namespace wpi</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif  // WPIUTIL_WPI_FUNCTION_REF_H_</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="comment">/*implicit*/</span> <a class="code" href="classwpi_1_1function__ref.html">function_ref</a>(  <span class="comment">// NOLINT</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      Callable&amp;&amp; callable,</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      <span class="keyword">typename</span> std::enable_if&lt;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;          !std::is_same&lt;<span class="keyword">typename</span> std::remove_reference&lt;Callable&gt;::type,</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                        <a class="code" href="classwpi_1_1function__ref.html">function_ref</a>&gt;::<a class="code" href="classvalue.html">value</a>&gt;::type* = <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      : callback(callback_fn&lt;<span class="keyword">typename</span> std::remove_reference&lt;Callable&gt;::type&gt;),</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        callable(<span class="keyword">reinterpret_cast&lt;</span>intptr_t<span class="keyword">&gt;</span>(&amp;callable)) {}</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  Ret operator()(Params... params)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">return</span> callback(callable, std::forward&lt;Params&gt;(params)...);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keyword">explicit</span> <span class="keyword">operator</span> bool()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> callback; }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}  <span class="comment">// namespace wpi</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif  // WPIUTIL_WPI_FUNCTION_REF_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1099</div></div>
@@ -160,7 +161,7 @@ $(document).ready(function(){initNavTree('function__ref_8h_source.html',''); ini
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><b>function_ref.h</b></li>
-    <li class="footer">Generated on Thu Jun 10 2021 07:05:03 for WPILibC++ by
+    <li class="footer">Generated on Thu Jun 10 2021 18:14:54 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

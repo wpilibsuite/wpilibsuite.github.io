@@ -267,7 +267,7 @@ var group__ntcore__cpp__api =
       [ "SetValue", "classnt_1_1NetworkTableEntry.html#a724c000a87563b6ddaa421cca4290f63", null ],
       [ "m_handle", "classnt_1_1NetworkTableEntry.html#aa572f030d9cbd67bbdf320d0c0be807f", null ]
     ] ],
-    [ "NetworkTableValue", "group__ntcore__cpp__api.html#ga10804efe6d43c40d49ddff640906ebd8", null ],
+    [ "NetworkTableValue", "group__ntcore__cpp__api.html#ga2bdfee8c11f9a4cfb1951cc824428725", null ],
     [ "TableEntryListener", "group__ntcore__cpp__api.html#ga2803a8887ee10b29350d4cd1301937fc", null ],
     [ "TableListener", "group__ntcore__cpp__api.html#gabefa1316ff1efa7c7bf48d855a8a7ea3", [
       [ "kImmediate", "group__ntcore__cpp__api.html#gga887cc6740f34496c468e67b81a017b6eaa637552032d3e89f0db0e302122b691d", null ],
