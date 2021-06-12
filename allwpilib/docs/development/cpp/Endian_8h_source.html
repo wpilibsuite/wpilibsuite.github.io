@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-112-g9e1b7e0</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-114-gcfa1ca9</span>
    </div>
   </td>
  </tr>
@@ -133,6 +133,7 @@ $(document).ready(function(){initNavTree('Endian_8h_source.html',''); initResiza
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">namespace </span>detail {</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">// value is either alignment, or alignof(T) if alignment is 0.</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> T, <span class="keywordtype">int</span> alignment&gt;</div>
 <div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="structwpi_1_1support_1_1detail_1_1PickAlignment.html">   43</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structwpi_1_1support_1_1detail_1_1PickAlignment.html">PickAlignment</a> {</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; <span class="keyword">enum</span> { <a class="code" href="classvalue.html">value</a> = alignment == 0 ? <span class="keyword">alignof</span>(T) : alignment };</div>
@@ -521,7 +522,7 @@ $(document).ready(function(){initNavTree('Endian_8h_source.html',''); initResiza
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructwpi_1_1support_1_1detail_1_1packed__endian__specific__integral_html"><div class="ttname"><a href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html">wpi::support::detail::packed_endian_specific_integral</a></div><div class="ttdef"><b>Definition:</b> Endian.h:230</div></div>
-<div class="ttc" id="astructwpi_1_1support_1_1detail_1_1PickAlignment_html"><div class="ttname"><a href="structwpi_1_1support_1_1detail_1_1PickAlignment.html">wpi::support::detail::PickAlignment</a></div><div class="ttdoc">value is either alignment, or alignof(T) if alignment is 0.</div><div class="ttdef"><b>Definition:</b> Endian.h:43</div></div>
+<div class="ttc" id="astructwpi_1_1support_1_1detail_1_1PickAlignment_html"><div class="ttname"><a href="structwpi_1_1support_1_1detail_1_1PickAlignment.html">wpi::support::detail::PickAlignment</a></div><div class="ttdef"><b>Definition:</b> Endian.h:43</div></div>
 <div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1099</div></div>
 <div class="ttc" id="astructwpi_1_1AlignedCharArray_html"><div class="ttname"><a href="structwpi_1_1AlignedCharArray.html">wpi::AlignedCharArray</a></div><div class="ttdef"><b>Definition:</b> AlignOf.h:36</div></div>
 <div class="ttc" id="astructwpi_1_1support_1_1detail_1_1packed__endian__specific__integral_1_1ref_html"><div class="ttname"><a href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral_1_1ref.html">wpi::support::detail::packed_endian_specific_integral::ref</a></div><div class="ttdef"><b>Definition:</b> Endian.h:270</div></div>
@@ -529,7 +530,7 @@ $(document).ready(function(){initNavTree('Endian_8h_source.html',''); initResiza
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><b>Endian.h</b></li>
-    <li class="footer">Generated on Fri Jun 11 2021 03:48:31 for WPILibC++ by
+    <li class="footer">Generated on Sat Jun 12 2021 03:19:14 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-112-g9e1b7e0</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-114-gcfa1ca9</span>
    </div>
   </td>
  </tr>
@@ -768,6 +768,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>to_ubjson</b> 
 <tr class="memdesc:ac048a5f84b8ff029fdcb70db0c21f804"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a JSON value from an input in MessagePack format  <a href="classwpi_1_1json.html#ac048a5f84b8ff029fdcb70db0c21f804">More...</a><br /></td></tr>
 <tr class="separator:ac048a5f84b8ff029fdcb70db0c21f804"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3261863b88ebb6fe1d0f09e992b9377c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classwpi_1_1json.html">json</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1json.html#a3261863b88ebb6fe1d0f09e992b9377c">from_msgpack</a> (<a class="el" href="classwpi_1_1span.html">span</a>&lt; const uint8_t &gt; arr, const bool strict=true)</td></tr>
+<tr class="memdesc:a3261863b88ebb6fe1d0f09e992b9377c"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a JSON value from an input in MessagePack format  <a href="classwpi_1_1json.html#a3261863b88ebb6fe1d0f09e992b9377c">More...</a><br /></td></tr>
 <tr class="separator:a3261863b88ebb6fe1d0f09e992b9377c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac223d7e1d1c73610251180c27d3395b7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classwpi_1_1json.html">json</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1json.html#ac223d7e1d1c73610251180c27d3395b7">from_ubjson</a> (<a class="el" href="classwpi_1_1raw__istream.html">raw_istream</a> &amp;is, const bool strict=true)</td></tr>
 <tr class="memdesc:ac223d7e1d1c73610251180c27d3395b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">create a JSON value from an input in UBJSON format  <a href="classwpi_1_1json.html#ac223d7e1d1c73610251180c27d3395b7">More...</a><br /></td></tr>
@@ -3716,7 +3717,95 @@ CBOR allows map keys of any type, whereas JSON only allows strings as keys in ob
 </table>
 </div><div class="memdoc">
 
-<p></p>
+<p>create a JSON value from an input in MessagePack format </p>
+<p>Deserializes a given input <em>i</em> to a JSON value using the MessagePack serialization format.</p>
+<p>The library maps MessagePack types to JSON value types as follows:</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">MessagePack type </th><th class="markdownTableHeadNone">JSON value type </th><th class="markdownTableHeadNone">first byte  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">positive fixint </td><td class="markdownTableBodyNone">number_unsigned </td><td class="markdownTableBodyNone">0x00..0x7F  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">fixmap </td><td class="markdownTableBodyNone">object </td><td class="markdownTableBodyNone">0x80..0x8F  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">fixarray </td><td class="markdownTableBodyNone">array </td><td class="markdownTableBodyNone">0x90..0x9F  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">fixstr </td><td class="markdownTableBodyNone">string </td><td class="markdownTableBodyNone">0xA0..0xBF  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">nil </td><td class="markdownTableBodyNone"><code>null</code> </td><td class="markdownTableBodyNone">0xC0  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">false </td><td class="markdownTableBodyNone"><code>false</code> </td><td class="markdownTableBodyNone">0xC2  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">true </td><td class="markdownTableBodyNone"><code>true</code> </td><td class="markdownTableBodyNone">0xC3  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">float 32 </td><td class="markdownTableBodyNone">number_float </td><td class="markdownTableBodyNone">0xCA  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">float 64 </td><td class="markdownTableBodyNone">number_float </td><td class="markdownTableBodyNone">0xCB  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">uint 8 </td><td class="markdownTableBodyNone">number_unsigned </td><td class="markdownTableBodyNone">0xCC  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">uint 16 </td><td class="markdownTableBodyNone">number_unsigned </td><td class="markdownTableBodyNone">0xCD  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">uint 32 </td><td class="markdownTableBodyNone">number_unsigned </td><td class="markdownTableBodyNone">0xCE  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">uint 64 </td><td class="markdownTableBodyNone">number_unsigned </td><td class="markdownTableBodyNone">0xCF  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">int 8 </td><td class="markdownTableBodyNone">number_integer </td><td class="markdownTableBodyNone">0xD0  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">int 16 </td><td class="markdownTableBodyNone">number_integer </td><td class="markdownTableBodyNone">0xD1  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">int 32 </td><td class="markdownTableBodyNone">number_integer </td><td class="markdownTableBodyNone">0xD2  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">int 64 </td><td class="markdownTableBodyNone">number_integer </td><td class="markdownTableBodyNone">0xD3  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">str 8 </td><td class="markdownTableBodyNone">string </td><td class="markdownTableBodyNone">0xD9  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">str 16 </td><td class="markdownTableBodyNone">string </td><td class="markdownTableBodyNone">0xDA  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">str 32 </td><td class="markdownTableBodyNone">string </td><td class="markdownTableBodyNone">0xDB  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">array 16 </td><td class="markdownTableBodyNone">array </td><td class="markdownTableBodyNone">0xDC  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">array 32 </td><td class="markdownTableBodyNone">array </td><td class="markdownTableBodyNone">0xDD  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">map 16 </td><td class="markdownTableBodyNone">object </td><td class="markdownTableBodyNone">0xDE  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">map 32 </td><td class="markdownTableBodyNone">object </td><td class="markdownTableBodyNone">0xDF  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">negative fixint </td><td class="markdownTableBodyNone">number_integer </td><td class="markdownTableBodyNone">0xE0-0xFF  </td></tr>
+</table>
+<dl class="section warning"><dt>Warning</dt><dd>The mapping is <b>incomplete</b> in the sense that not all MessagePack types can be converted to a JSON value. The following MessagePack types are not supported and will yield parse errors:<ul>
+<li>bin 8 - bin 32 (0xC4..0xC6)</li>
+<li>ext 8 - ext 32 (0xC7..0xC9)</li>
+<li>fixext 1 - fixext 16 (0xD4..0xD8)</li>
+</ul>
+</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Any MessagePack output created <a class="el" href="classwpi_1_1json.html#a890e8c5be8144391acc636abb946b28c">to_msgpack</a> can be successfully parsed by <a class="el" href="classwpi_1_1json.html#ac048a5f84b8ff029fdcb70db0c21f804">from_msgpack</a>.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">i</td><td>an input in MessagePack format convertible to an input adapter </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">strict</td><td>whether to expect the input to be consumed until EOF (true by default)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">parse_error.110</td><td>if the given input ends prematurely or the end of file was not reached when <em>strict</em> was set to true </td></tr>
+    <tr><td class="paramname">parse_error.112</td><td>if unsupported features from MessagePack were used in the given input <em>i</em> or if the input is not valid MessagePack </td></tr>
+    <tr><td class="paramname">parse_error.113</td><td>if a string was expected as map key, but not found</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>@complexity Linear in the size of the input <em>i</em>.</p>
+<p>@liveexample{The example shows the deserialization of a byte vector in MessagePack format to a JSON value.,from_msgpack}</p>
+<dl class="section see"><dt>See also</dt><dd><a href="http://msgpack.org">http://msgpack.org</a> </dd>
+<dd>
+<a class="el" href="classwpi_1_1json.html#a890e8c5be8144391acc636abb946b28c">to_msgpack(const json&amp;)</a> for the analogous serialization </dd>
+<dd>
+<a class="el" href="classwpi_1_1json.html#ac9bea3ceb22376d6ee339503a5b951a5">from_cbor(raw_istream&amp;, const bool)</a> for the related CBOR format </dd>
+<dd>
+<a class="el" href="classwpi_1_1json.html#ac223d7e1d1c73610251180c27d3395b7">from_ubjson(raw_istream&amp;, const bool)</a> for the related UBJSON format</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>version 2.0.9; parameter <em>start_index</em> since 2.1.1; changed to consume input adapters, removed start_index parameter, and added <em>strict</em> parameter since 3.0.0 </dd></dl>
 
 </div>
 </div>
@@ -8754,7 +8843,7 @@ template&lt;typename ScalarType , typename std::enable_if&lt; std::is_scalar&lt;
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>wpi</b></li><li class="navelem"><a class="el" href="classwpi_1_1json.html">json</a></li>
-    <li class="footer">Generated on Fri Jun 11 2021 03:48:35 for WPILibC++ by
+    <li class="footer">Generated on Sat Jun 12 2021 03:19:18 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

@@ -180,12 +180,14 @@ var NAVTREEINDEX15 =
 "classfrc_1_1ShuffleboardTab.html#a8c891a150fb9cb04c7e9560dbe6b5e58":[5,0,5,167,0],
 "classfrc_1_1ShuffleboardTab.html#aa78d7250eb95109e5cc2dd1301186b98":[5,0,5,167,2],
 "classfrc_1_1ShuffleboardValue.html":[5,0,5,168],
-"classfrc_1_1ShuffleboardValue.html#a3185e4c6c7eaa85199e09c4e92a0c301":[5,0,5,168,5],
+"classfrc_1_1ShuffleboardValue.html#a0bc615d7dc4ef733f0d651dc54484888":[5,0,5,168,2],
+"classfrc_1_1ShuffleboardValue.html#a3185e4c6c7eaa85199e09c4e92a0c301":[5,0,5,168,6],
 "classfrc_1_1ShuffleboardValue.html#a3c296ec82a403ed54355c89eaef17feb":[5,0,5,168,0],
-"classfrc_1_1ShuffleboardValue.html#a5312b0a46e5a8bc55513c56d1a00d161":[5,0,5,168,2],
-"classfrc_1_1ShuffleboardValue.html#a8cdd383ae1960e9fb1341093143ef3ed":[5,0,5,168,4],
+"classfrc_1_1ShuffleboardValue.html#a5312b0a46e5a8bc55513c56d1a00d161":[5,0,5,168,3],
+"classfrc_1_1ShuffleboardValue.html#a8cdd383ae1960e9fb1341093143ef3ed":[5,0,5,168,5],
+"classfrc_1_1ShuffleboardValue.html#ab2f81f6dbc7b48b6da53f173fd989028":[5,0,5,168,7],
 "classfrc_1_1ShuffleboardValue.html#acee65cd0116bd122631c1f0be9690e74":[5,0,5,168,1],
-"classfrc_1_1ShuffleboardValue.html#afdc5003feb12e91b64536cf42bb390e5":[5,0,5,168,3],
+"classfrc_1_1ShuffleboardValue.html#afdc5003feb12e91b64536cf42bb390e5":[5,0,5,168,4],
 "classfrc_1_1ShuffleboardWidget.html":[5,0,5,169],
 "classfrc_1_1ShuffleboardWidget.html#a04814af656327dc23189ee3d204f3e81":[5,0,5,169,0],
 "classfrc_1_1ShuffleboardWidget.html#a66111ebec3f0251b390b21cbdbc42f32":[5,0,5,169,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX15 =
 "classfrc_1_1SmartDashboard.html#a78695b6a4ef4beb1cc2972a812c44348":[5,0,5,173,12],
 "classfrc_1_1SmartDashboard.html#a7b57b5b29062e43b6e54a2378acb4912":[5,0,5,173,1],
 "classfrc_1_1SmartDashboard.html#a8df2ee68e497a5e83f58cd1dd34a91cb":[5,0,5,173,25],
-"classfrc_1_1SmartDashboard.html#a8f4407586f602f5396e2016f6742e4f1":[5,0,5,173,2],
-"classfrc_1_1SmartDashboard.html#a90fa00f837974f47f83c2ec11369826d":[5,0,5,173,36],
-"classfrc_1_1SmartDashboard.html#aa2ac6b23c26a2fc0431119ee558b1528":[5,0,5,173,10]
+"classfrc_1_1SmartDashboard.html#a8f4407586f602f5396e2016f6742e4f1":[5,0,5,173,2]
 };

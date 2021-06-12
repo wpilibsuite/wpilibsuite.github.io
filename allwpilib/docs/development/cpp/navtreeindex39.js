@@ -1,5 +1,7 @@
 var NAVTREEINDEX39 =
 {
+"structdragonbox_1_1decimal__fp.html#a64d25dcef761036d13362bdad991cf89":[5,0,2,0,2],
+"structdragonbox_1_1float__info.html":[5,0,2,1],
 "structdragonbox_1_1float__info_3_01double_01_4.html":[5,0,2,2],
 "structdragonbox_1_1float__info_3_01double_01_4.html#a06d6cb45fc7101a3c825599aecbe3051":[5,0,2,2,4],
 "structdragonbox_1_1float__info_3_01double_01_4.html#a07dd3de5739172f1478270bda2808bf0":[5,0,2,2,10],
@@ -247,7 +249,5 @@ var NAVTREEINDEX39 =
 "structghc_1_1filesystem_1_1space__info.html#ae3aaec720c16cab46c72d253be7dca9d":[5,0,7,0,12,1],
 "structhal_1_1DIOSetProxy.html":[5,0,8,2],
 "structhal_1_1DIOSetProxy.html#a02f1e61d6d9426b60543504689ec1698":[5,0,8,2,1],
-"structhal_1_1DIOSetProxy.html#a256b0940f2a2ce34db9ab1ddea836c9d":[5,0,8,2,5],
-"structhal_1_1DIOSetProxy.html#a388429ec7dfcecc1835cf453ca9aad4c":[5,0,8,2,7],
-"structhal_1_1DIOSetProxy.html#a50686b1970ed96094f0a16fe08288d82":[5,0,8,2,9]
+"structhal_1_1DIOSetProxy.html#a256b0940f2a2ce34db9ab1ddea836c9d":[5,0,8,2,5]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX42 =
 {
+"structwpi_1_1http__parser.html#a874f6b6b2c28ebdd3790bd67c3cc34bf":[5,0,11,54,11],
+"structwpi_1_1http__parser.html#a98ecfc0b870f5735a08bec3b2cf19651":[5,0,11,54,5],
 "structwpi_1_1http__parser.html#acab200315a27002386df175e3299ff87":[5,0,11,54,2],
 "structwpi_1_1http__parser.html#ad736d0b92bfcd4a1520148123ecd4aa1":[5,0,11,54,3],
 "structwpi_1_1http__parser.html#ad8a87939f1e5f6bbd0dd68bb3876e92b":[5,0,11,54,6],

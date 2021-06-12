@@ -1,5 +1,7 @@
 var NAVTREEINDEX33 =
 {
+"dir_0616eb0edb7e8533b85fb847c3c08b17.html":[6,0,4],
+"dir_07f1050b175e2d01c230e5cadf135f7c.html":[6,0,3],
 "dir_11fa3620b13e96ccc6d4bbc9ccdbdb01.html":[6,0,6,2],
 "dir_1224104d412225b996ab6dfa83431a88.html":[6,0,11],
 "dir_13bd6880487aa1c996ba50003d654919.html":[6,0,6,8,0],
@@ -76,8 +78,8 @@ var NAVTREEINDEX33 =
 "fpga__clock_8h_source.html":[6,0,8,0,0],
 "fs_8h_source.html":[6,0,11,24],
 "function__ref_8h_source.html":[6,0,11,25],
-"functions.html":[5,3,0],
 "functions.html":[5,3,0,0],
+"functions.html":[5,3,0],
 "functions_a.html":[5,3,0,1],
 "functions_b.html":[5,3,0,2],
 "functions_c.html":[5,3,0,3],
@@ -86,8 +88,8 @@ var NAVTREEINDEX33 =
 "functions_enum.html":[5,3,4],
 "functions_eval.html":[5,3,5],
 "functions_f.html":[5,3,0,6],
-"functions_func.html":[5,3,1],
 "functions_func.html":[5,3,1,0],
+"functions_func.html":[5,3,1],
 "functions_func_a.html":[5,3,1,1],
 "functions_func_b.html":[5,3,1,2],
 "functions_func_c.html":[5,3,1,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX33 =
 "group__hal__analoginput.html#ga0f6a90fde07eda6f64d27edff7e6746a":[3,0,26,17],
 "group__hal__analoginput.html#ga3217a276a5295f6f9d13fa205edff47b":[3,0,26,11],
 "group__hal__analoginput.html#ga34d0a68a34c9fcc696d96b1102c7b3f8":[3,0,26,15],
-"group__hal__analoginput.html#ga6193461057b56f1e2273584221464418":[3,0,26,7],
-"group__hal__analoginput.html#ga6b4201c92d3b19b93a4487d6999217eb":[3,0,26,4],
-"group__hal__analoginput.html#ga6f0b6f5e03b9a76e9d654d1d04d524d0":[3,0,26,12]
+"group__hal__analoginput.html#ga6193461057b56f1e2273584221464418":[3,0,26,7]
 };

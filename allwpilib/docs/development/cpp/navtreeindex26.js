@@ -1,5 +1,7 @@
 var NAVTREEINDEX26 =
 {
+"classwpi_1_1SmallVectorImpl.html#afd420cab2ed68fd9b848d3d5faf01d2f":[5,0,11,160,16],
+"classwpi_1_1SmallVectorImpl.html#affa74cb3522d6cc11e500aeee8daebf7":[5,0,11,160,15],
 "classwpi_1_1SmallVectorTemplateBase.html":[5,0,11,163],
 "classwpi_1_1SmallVectorTemplateBase.html#a09d88ee0240540df3fb19ce2232c55d5":[5,0,11,163,7],
 "classwpi_1_1SmallVectorTemplateBase.html#a40d16c3f54b6740b9e417c6d83b5c571":[5,0,11,163,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX26 =
 "classwpi_1_1VersionTuple.html#adfce2b618ca7468efe9df9203bb1282d":[5,0,11,186,3],
 "classwpi_1_1VersionTuple.html#ae5fcab8ce10189b39de1ed4f55d81665":[5,0,11,186,8],
 "classwpi_1_1VersionTuple.html#ae7e9308b6336e026f1f64d6e032f6568":[5,0,11,186,13],
-"classwpi_1_1VersionTuple.html#af2c7a3c38cdcec673b1b89ae99a6f73b":[5,0,11,186,14],
-"classwpi_1_1VersionTuple.html#afb4fb0cb720e60fa212925140e3fc7d2":[5,0,11,186,0],
-"classwpi_1_1WebSocket.html":[5,0,11,187]
+"classwpi_1_1VersionTuple.html#af2c7a3c38cdcec673b1b89ae99a6f73b":[5,0,11,186,14]
 };
