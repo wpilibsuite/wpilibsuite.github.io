@@ -20,6 +20,8 @@ edu.wpi.first.math.trajectory
 edu.wpi.first.math.trajectory.constraint
 edu.wpi.first.math.util
 edu.wpi.first.networktables
+edu.wpi.first.util
+edu.wpi.first.util.net
 edu.wpi.first.vision
 edu.wpi.first.wpilibj
 edu.wpi.first.wpilibj.buttons
@@ -36,8 +38,6 @@ edu.wpi.first.wpilibj.util
 edu.wpi.first.wpilibj.vision
 edu.wpi.first.wpilibj2.command
 edu.wpi.first.wpilibj2.command.button
-edu.wpi.first.wpiutil
-edu.wpi.first.wpiutil.net
 org.opencv.calib3d
 org.opencv.core
 org.opencv.features2d
