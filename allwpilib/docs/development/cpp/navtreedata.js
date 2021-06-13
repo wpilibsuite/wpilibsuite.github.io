@@ -100,14 +100,14 @@ var NAVTREEINDEX =
 "classwpi_1_1uv_1_1Pipe.html#aaa3dc37e2ac7715502b7310ddcf031e8",
 "dir_0616eb0edb7e8533b85fb847c3c08b17.html",
 "group__hal__analoginput.html#ga6b4201c92d3b19b93a4487d6999217eb",
-"group__hal__power.html#ga772a5710a48dde57c0e93756e897f4b6",
-"group__ntcore__network__cfunc.html#gaef30093ce18098ce576e7255383199e2",
-"structCS__VideoMode.html",
-"structchrono__format__checker.html#a4196cdc8df327f1e88b6cc3c824af373",
-"structdragonbox_1_1decimal__fp.html#a64d25dcef761036d13362bdad991cf89",
-"structhal_1_1DIOSetProxy.html#a388429ec7dfcecc1835cf453ca9aad4c",
-"structwpi_1_1PointerLikeTypeTraits_3_01PointerUnion3_3_01PT1_00_01PT2_00_01PT3_01_4_01_4.html",
-"structwpi_1_1http__parser.html#a874f6b6b2c28ebdd3790bd67c3cc34bf"
+"group__hal__power.html#ga5edc3b2140ad16d76545f5a2251843ae",
+"group__ntcore__network__cfunc.html#gade461a4f30454ee0a8c50cea1b00b6f0",
+"structCS__UsbCameraInfo.html#af8e259e0d7a97fc2f358458928aea8c5",
+"structchrono__format__checker.html#a3a3c92af2eab6efedd3c2a9ef6345ca8",
+"structdragonbox_1_1decimal__fp.html#a47b4f3fc16d1d3d77473e75994b3da49",
+"structhal_1_1DIOSetProxy.html#a256b0940f2a2ce34db9ab1ddea836c9d",
+"structwpi_1_1PointerLikeTypeTraits_3_01PointerIntPair_3_01PointerTy_00_01IntBits_00_01IntType_00_01PtrTraits_01_4_01_4.html#af1642fe59f7849d7d0e66999c3d6fb2ba6d81eba404783a1f98adada647bf46f6",
+"structwpi_1_1http__parser.html#a600d39df8c275a5e64e3c28e9d5bc5b9"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

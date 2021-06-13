@@ -1,5 +1,6 @@
 var NAVTREEINDEX36 =
 {
+"group__ntcore__network__cfunc.html#gade461a4f30454ee0a8c50cea1b00b6f0":[3,1,5,17],
 "group__ntcore__network__cfunc.html#gaef30093ce18098ce576e7255383199e2":[3,1,5,6],
 "group__ntcore__network__func.html":[3,3,5],
 "group__ntcore__network__func.html#ga13258f5f06e3ee8566849ce70eccba11":[3,3,5,12],
@@ -248,6 +249,5 @@ var NAVTREEINDEX36 =
 "structCS__UsbCameraInfo.html#a7ca41852519549bfe766484b59de8a40":[3,4,19,3],
 "structCS__UsbCameraInfo.html#a81311211a5ded68cf47ac7cb02c5cbcf":[3,4,19,0],
 "structCS__UsbCameraInfo.html#ad163783cac498752f3de6dd2fc593db8":[3,4,19,5],
-"structCS__UsbCameraInfo.html#aeaf92af97323e8e9382d48b72abc5a16":[3,4,19,1],
-"structCS__UsbCameraInfo.html#af8e259e0d7a97fc2f358458928aea8c5":[3,4,19,4]
+"structCS__UsbCameraInfo.html#aeaf92af97323e8e9382d48b72abc5a16":[3,4,19,1]
 };

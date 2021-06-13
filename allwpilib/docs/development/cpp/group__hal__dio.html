@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-116-g04e64db</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-117-g186dadf</span>
    </div>
   </td>
  </tr>
@@ -104,8 +104,8 @@ Functions</h2></td></tr>
 <tr class="memitem:gaa2c0dff5fb9d41d76d08b37009f71e99"><td class="memItemLeft" align="right" valign="top">HAL_Bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__dio.html#gaa2c0dff5fb9d41d76d08b37009f71e99">HAL_CheckDIOChannel</a> (int32_t channel)</td></tr>
 <tr class="memdesc:gaa2c0dff5fb9d41d76d08b37009f71e99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a DIO channel is valid.  <a href="group__hal__dio.html#gaa2c0dff5fb9d41d76d08b37009f71e99">More...</a><br /></td></tr>
 <tr class="separator:gaa2c0dff5fb9d41d76d08b37009f71e99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8d885456b0becd37c96fc25eaba1d0e8"><td class="memItemLeft" align="right" valign="top"><a id="ga8d885456b0becd37c96fc25eaba1d0e8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_FreeDIOPort</b> (HAL_DigitalHandle dioPortHandle)</td></tr>
+<tr class="memitem:ga8d885456b0becd37c96fc25eaba1d0e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__dio.html#ga8d885456b0becd37c96fc25eaba1d0e8">HAL_FreeDIOPort</a> (HAL_DigitalHandle dioPortHandle)</td></tr>
+<tr class="memdesc:ga8d885456b0becd37c96fc25eaba1d0e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees a DIO port.  <a href="group__hal__dio.html#ga8d885456b0becd37c96fc25eaba1d0e8">More...</a><br /></td></tr>
 <tr class="separator:ga8d885456b0becd37c96fc25eaba1d0e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga132e0160746807b1fe4aa4d5784199c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__dio.html#ga132e0160746807b1fe4aa4d5784199c5">HAL_SetDIOSimDevice</a> (HAL_DigitalHandle handle, HAL_SimDeviceHandle device)</td></tr>
 <tr class="memdesc:ga132e0160746807b1fe4aa4d5784199c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates the DIO channel is used by a simulated device.  <a href="group__hal__dio.html#ga132e0160746807b1fe4aa4d5784199c5">More...</a><br /></td></tr>
@@ -239,6 +239,32 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_FreeDIOPort</b> (
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pwmGenerator</td><td>the digital PWM handle </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga8d885456b0becd37c96fc25eaba1d0e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8d885456b0becd37c96fc25eaba1d0e8">&#9670;&nbsp;</a></span>HAL_FreeDIOPort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HAL_FreeDIOPort </td>
+          <td>(</td>
+          <td class="paramtype">HAL_DigitalHandle&#160;</td>
+          <td class="paramname"><em>dioPortHandle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Frees a DIO port. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>the DIO channel handle </td></tr>
   </table>
   </dd>
 </dl>
@@ -882,7 +908,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_FreeDIOPort</b> (
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Jun 12 2021 15:09:12 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 13 2021 22:02:56 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

@@ -3,6 +3,7 @@ var group__hal__dio =
     [ "HAL_AllocateDigitalPWM", "group__hal__dio.html#ga9e040e8dba3c0ba04ffbcbb70155bfc9", null ],
     [ "HAL_CheckDIOChannel", "group__hal__dio.html#gaa2c0dff5fb9d41d76d08b37009f71e99", null ],
     [ "HAL_FreeDigitalPWM", "group__hal__dio.html#ga9c0e247b0ad0ee2c2141a765399d009a", null ],
+    [ "HAL_FreeDIOPort", "group__hal__dio.html#ga8d885456b0becd37c96fc25eaba1d0e8", null ],
     [ "HAL_GetDIO", "group__hal__dio.html#ga4d55ada4fa6714a8fb2df4e79918ecff", null ],
     [ "HAL_GetDIODirection", "group__hal__dio.html#ga3f04c3038a0d7bfed2d7214992fa6ddd", null ],
     [ "HAL_GetFilterPeriod", "group__hal__dio.html#ga7204092acb19e099dab382ac9a4a52e9", null ],

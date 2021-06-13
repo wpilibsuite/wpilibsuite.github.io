@@ -1,5 +1,6 @@
 var NAVTREEINDEX37 =
 {
+"structCS__UsbCameraInfo.html#af8e259e0d7a97fc2f358458928aea8c5":[3,4,19,4],
 "structCS__VideoMode.html":[3,4,17],
 "structCS__VideoMode.html#a7712c4356a511ba2d7daee027b509de1":[3,4,17,3],
 "structCS__VideoMode.html#a8b576fed8622dea23ffa91139e0b3ea6":[3,4,17,2],
@@ -183,9 +184,9 @@ var NAVTREEINDEX37 =
 "structarg__mapper.html#a851c9bf2c9931f7fb2422e42281021bd":[5,0,19,2],
 "structarg__mapper.html#a8ccc7b05fa1629a4259127bed5005786":[5,0,19,5],
 "structarg__mapper.html#a99b7d4f47bbef0dc0255758a84df484b":[5,0,19,33],
+"structarg__mapper.html#aa46c5ded7f53e8251d3adaa9e65ddf5e":[5,0,19,8],
 "structarg__mapper.html#aa46c5ded7f53e8251d3adaa9e65ddf5e":[5,0,19,9],
 "structarg__mapper.html#aa46c5ded7f53e8251d3adaa9e65ddf5e":[5,0,19,7],
-"structarg__mapper.html#aa46c5ded7f53e8251d3adaa9e65ddf5e":[5,0,19,8],
 "structarg__mapper.html#ab0ca23b1107e95c90038a32db2611dd6":[5,0,19,11],
 "structarg__mapper.html#ab6d7f9750eddc29b3eb69fe8b07e1d16":[5,0,19,35],
 "structarg__mapper.html#aba49e677ad2ec1ce1e49fb888a6df858":[5,0,19,31],
@@ -248,6 +249,5 @@ var NAVTREEINDEX37 =
 "structchrono__format__checker.html#a0afb6bc7919f53f51e6f2bfc18dd04c5":[5,0,43,4],
 "structchrono__format__checker.html#a1ffc02cc86336037c4733b9bc05823ee":[5,0,43,23],
 "structchrono__format__checker.html#a2ddc60cc069ca1131bb80950f25b3946":[5,0,43,12],
-"structchrono__format__checker.html#a36ab46db9ebab57c003cd773f5ae53c9":[5,0,43,3],
-"structchrono__format__checker.html#a3a3c92af2eab6efedd3c2a9ef6345ca8":[5,0,43,15]
+"structchrono__format__checker.html#a36ab46db9ebab57c003cd773f5ae53c9":[5,0,43,3]
 };
