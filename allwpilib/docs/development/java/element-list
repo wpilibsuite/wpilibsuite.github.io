@@ -22,6 +22,7 @@ edu.wpi.first.math.util
 edu.wpi.first.networktables
 edu.wpi.first.util
 edu.wpi.first.util.net
+edu.wpi.first.util.sendable
 edu.wpi.first.vision
 edu.wpi.first.wpilibj
 edu.wpi.first.wpilibj.buttons
