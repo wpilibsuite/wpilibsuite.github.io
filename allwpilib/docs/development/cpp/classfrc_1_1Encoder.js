@@ -22,7 +22,7 @@ var classfrc_1_1Encoder =
     [ "GetRate", "classfrc_1_1Encoder.html#aa1416f313ea0a6685161d00010079018", null ],
     [ "GetRaw", "classfrc_1_1Encoder.html#a1b7e07c44c8e26fde4d62e4606cb86d2", null ],
     [ "GetSamplesToAverage", "classfrc_1_1Encoder.html#aac2f1cbfe45db68a215a60c695bae80f", null ],
-    [ "InitSendable", "classfrc_1_1Encoder.html#a8c16f229f8f17b6416898cbb7caf47d6", null ],
+    [ "InitSendable", "classfrc_1_1Encoder.html#a94e09e2c03861d44885d1cdab756ddff", null ],
     [ "operator=", "classfrc_1_1Encoder.html#a2b202913c07885452ab03c248745fce6", null ],
     [ "Reset", "classfrc_1_1Encoder.html#a981f675176708a1580d7f48779de56e4", null ],
     [ "SetDistancePerPulse", "classfrc_1_1Encoder.html#ac50921f87e0e3cc4785a4b1e157da433", null ],

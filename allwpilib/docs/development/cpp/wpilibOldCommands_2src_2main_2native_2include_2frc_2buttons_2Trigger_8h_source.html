@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-119-gef4ea84</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-120-gb417d96</span>
    </div>
   </td>
  </tr>
@@ -101,14 +101,14 @@ $(document).ready(function(){initNavTree('wpilibOldCommands_2src_2main_2native_2
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;atomic&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;frc/smartdashboard/Sendable.h&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;frc/smartdashboard/SendableHelper.h&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;wpi/sendable/Sendable.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;wpi/sendable/SendableHelper.h&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span>frc {</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span>Command;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classfrc_1_1Trigger.html">   29</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1Trigger.html">Trigger</a> : <span class="keyword">public</span> <a class="code" href="classfrc_1_1Sendable.html">Sendable</a>, <span class="keyword">public</span> <a class="code" href="classfrc_1_1SendableHelper.html">SendableHelper</a>&lt;Trigger&gt; {</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classfrc_1_1Trigger.html">   29</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1Trigger.html">Trigger</a> : <span class="keyword">public</span> <a class="code" href="classwpi_1_1Sendable.html">wpi::Sendable</a>, <span class="keyword">public</span> <a class="code" href="classwpi_1_1SendableHelper.html">wpi::SendableHelper</a>&lt;Trigger&gt; {</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <a class="code" href="classfrc_1_1Trigger.html">Trigger</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  ~<a class="code" href="classfrc_1_1Trigger.html">Trigger</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
@@ -126,7 +126,7 @@ $(document).ready(function(){initNavTree('wpilibOldCommands_2src_2main_2native_2
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">void</span> CancelWhenActive(<a class="code" href="classfrc_1_1Command.html">Command</a>* command);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">void</span> ToggleWhenActive(<a class="code" href="classfrc_1_1Command.html">Command</a>* command);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classfrc_1_1Trigger.html#a6cb30eeee7252bc1b41102101fa20270">   47</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Trigger.html#a6cb30eeee7252bc1b41102101fa20270">InitSendable</a>(<a class="code" href="classfrc_1_1SendableBuilder.html">SendableBuilder</a>&amp; builder) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classfrc_1_1Trigger.html#a314800317cd973ce88a0ccf691d69dfb">   47</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Trigger.html#a314800317cd973ce88a0ccf691d69dfb">InitSendable</a>(<a class="code" href="classwpi_1_1SendableBuilder.html">wpi::SendableBuilder</a>&amp; builder) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  std::atomic_bool m_sendablePressed{<span class="keyword">false</span>};</div>
@@ -135,17 +135,17 @@ $(document).ready(function(){initNavTree('wpilibOldCommands_2src_2main_2native_2
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}  <span class="comment">// namespace frc</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclasswpi_1_1SendableBuilder_html"><div class="ttname"><a href="classwpi_1_1SendableBuilder.html">wpi::SendableBuilder</a></div><div class="ttdef"><b>Definition:</b> SendableBuilder.h:18</div></div>
+<div class="ttc" id="aclasswpi_1_1Sendable_html"><div class="ttname"><a href="classwpi_1_1Sendable.html">wpi::Sendable</a></div><div class="ttdoc">Interface for Sendable objects.</div><div class="ttdef"><b>Definition:</b> Sendable.h:14</div></div>
+<div class="ttc" id="aclassfrc_1_1Trigger_html_a314800317cd973ce88a0ccf691d69dfb"><div class="ttname"><a href="classfrc_1_1Trigger.html#a314800317cd973ce88a0ccf691d69dfb">frc::Trigger::InitSendable</a></div><div class="ttdeci">void InitSendable(wpi::SendableBuilder &amp;builder) override</div><div class="ttdoc">Initializes this Sendable object.</div></div>
 <div class="ttc" id="aclassfrc_1_1Command_html"><div class="ttname"><a href="classfrc_1_1Command.html">frc::Command</a></div><div class="ttdoc">The Command class is at the very core of the entire command framework.</div><div class="ttdef"><b>Definition:</b> Command.h:46</div></div>
 <div class="ttc" id="aclassfrc_1_1Trigger_html"><div class="ttname"><a href="classfrc_1_1Trigger.html">frc::Trigger</a></div><div class="ttdoc">This class provides an easy way to link commands to inputs.</div><div class="ttdef"><b>Definition:</b> Trigger.h:29</div></div>
-<div class="ttc" id="aclassfrc_1_1Trigger_html_a6cb30eeee7252bc1b41102101fa20270"><div class="ttname"><a href="classfrc_1_1Trigger.html#a6cb30eeee7252bc1b41102101fa20270">frc::Trigger::InitSendable</a></div><div class="ttdeci">void InitSendable(SendableBuilder &amp;builder) override</div><div class="ttdoc">Initializes this Sendable object.</div></div>
-<div class="ttc" id="aclassfrc_1_1Sendable_html"><div class="ttname"><a href="classfrc_1_1Sendable.html">frc::Sendable</a></div><div class="ttdoc">Interface for Sendable objects.</div><div class="ttdef"><b>Definition:</b> Sendable.h:14</div></div>
-<div class="ttc" id="aclassfrc_1_1SendableHelper_html"><div class="ttname"><a href="classfrc_1_1SendableHelper.html">frc::SendableHelper</a></div><div class="ttdoc">A helper class for use with objects that add themselves to SendableRegistry.</div><div class="ttdef"><b>Definition:</b> SendableHelper.h:25</div></div>
-<div class="ttc" id="aclassfrc_1_1SendableBuilder_html"><div class="ttname"><a href="classfrc_1_1SendableBuilder.html">frc::SendableBuilder</a></div><div class="ttdef"><b>Definition:</b> SendableBuilder.h:21</div></div>
+<div class="ttc" id="aclasswpi_1_1SendableHelper_html"><div class="ttname"><a href="classwpi_1_1SendableHelper.html">wpi::SendableHelper</a></div><div class="ttdoc">A helper class for use with objects that add themselves to SendableRegistry.</div><div class="ttdef"><b>Definition:</b> SendableHelper.h:24</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_bb1991b688e3fae464f82f03a0e274c4.html">frc</a></li><li class="navelem"><a class="el" href="dir_2806a47f1bd27756a9266462cf76a864.html">buttons</a></li><li class="navelem"><b>Trigger.h</b></li>
-    <li class="footer">Generated on Sun Jun 13 2021 23:07:19 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 13 2021 23:40:25 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

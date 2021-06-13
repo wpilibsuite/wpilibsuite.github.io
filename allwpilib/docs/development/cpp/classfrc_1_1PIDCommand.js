@@ -20,7 +20,7 @@ var classfrc_1_1PIDCommand =
     [ "GetPIDController", "classfrc_1_1PIDCommand.html#ac3fc9c06fec89138ed96c88039f84682", null ],
     [ "GetPosition", "classfrc_1_1PIDCommand.html#a0e3a69b66b0fc1cc4359ed4a71641e26", null ],
     [ "GetSetpoint", "classfrc_1_1PIDCommand.html#af9719aac57d55dd08c47f134bbeba090", null ],
-    [ "InitSendable", "classfrc_1_1PIDCommand.html#ace3a2f8997ddb8d1051e5c5cd3e9a712", null ],
+    [ "InitSendable", "classfrc_1_1PIDCommand.html#abc58d9ecbda13719c2eb39f2f2158d6f", null ],
     [ "operator=", "classfrc_1_1PIDCommand.html#a37b39ca67a5b8e1a7c8ad2e354ddf64a", null ],
     [ "PIDGet", "classfrc_1_1PIDCommand.html#a0b3a05e0937fc29d562d6cc859dac3c6", null ],
     [ "PIDWrite", "classfrc_1_1PIDCommand.html#ab3cf867739c872f86b5976e61dd3ac18", null ],

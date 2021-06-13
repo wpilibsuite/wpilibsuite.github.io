@@ -8,6 +8,8 @@ var namespacent =
     [ "NetworkTable", "classnt_1_1NetworkTable.html", "classnt_1_1NetworkTable" ],
     [ "NetworkTableEntry", "classnt_1_1NetworkTableEntry.html", "classnt_1_1NetworkTableEntry" ],
     [ "NetworkTableInstance", "classnt_1_1NetworkTableInstance.html", "classnt_1_1NetworkTableInstance" ],
+    [ "NTSendable", "classnt_1_1NTSendable.html", "classnt_1_1NTSendable" ],
+    [ "NTSendableBuilder", "classnt_1_1NTSendableBuilder.html", "classnt_1_1NTSendableBuilder" ],
     [ "RpcAnswer", "classnt_1_1RpcAnswer.html", "classnt_1_1RpcAnswer" ],
     [ "RpcCall", "classnt_1_1RpcCall.html", "classnt_1_1RpcCall" ],
     [ "RpcDefinition", "structnt_1_1RpcDefinition.html", "structnt_1_1RpcDefinition" ],

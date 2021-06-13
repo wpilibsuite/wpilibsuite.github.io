@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-119-gef4ea84</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-120-gb417d96</span>
    </div>
   </td>
  </tr>
@@ -103,17 +103,17 @@ $(document).ready(function(){initNavTree('CommandBase_8h_source.html',''); initR
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;string_view&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;frc/smartdashboard/Sendable.h&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;frc/smartdashboard/SendableHelper.h&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;wpi/SmallSet.h&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;wpi/SmallSet.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;wpi/sendable/Sendable.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;wpi/sendable/SendableHelper.h&gt;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;wpi/span.h&gt;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;frc2/command/Command.h&quot;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span>frc2 {</div>
 <div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classfrc2_1_1CommandBase.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc2_1_1CommandBase.html">CommandBase</a> : <span class="keyword">public</span> <a class="code" href="classfrc2_1_1Command.html">Command</a>,</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                    <span class="keyword">public</span> <a class="code" href="classfrc_1_1Sendable.html">frc::Sendable</a>,</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                    <span class="keyword">public</span> <a class="code" href="classfrc_1_1SendableHelper.html">frc::SendableHelper</a>&lt;CommandBase&gt; {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                    <span class="keyword">public</span> <a class="code" href="classwpi_1_1Sendable.html">wpi::Sendable</a>,</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                    <span class="keyword">public</span> <a class="code" href="classwpi_1_1SendableHelper.html">wpi::SendableHelper</a>&lt;CommandBase&gt; {</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classfrc2_1_1CommandBase.html#a64f050689acd13a075633d78786d5aaf">   31</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc2_1_1CommandBase.html#a64f050689acd13a075633d78786d5aaf">AddRequirements</a>(std::initializer_list&lt;Subsystem*&gt; requirements);</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
@@ -131,7 +131,7 @@ $(document).ready(function(){initNavTree('CommandBase_8h_source.html',''); initR
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
 <div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="classfrc2_1_1CommandBase.html#ae03b1c6ce3a67b2ba0b401e6f5fdb18b">   70</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc2_1_1CommandBase.html#ae03b1c6ce3a67b2ba0b401e6f5fdb18b">SetSubsystem</a>(std::string_view subsystem);</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classfrc2_1_1CommandBase.html#a2c37b5f7e5fe388e1a15b759573abb3c">   72</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc2_1_1CommandBase.html#a2c37b5f7e5fe388e1a15b759573abb3c">InitSendable</a>(<a class="code" href="classfrc_1_1SendableBuilder.html">frc::SendableBuilder</a>&amp; builder) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classfrc2_1_1CommandBase.html#a805d7e700007025500de08d88d53a1e8">   72</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc2_1_1CommandBase.html#a805d7e700007025500de08d88d53a1e8">InitSendable</a>(<a class="code" href="classwpi_1_1SendableBuilder.html">wpi::SendableBuilder</a>&amp; builder) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; <span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <a class="code" href="classfrc2_1_1CommandBase.html">CommandBase</a>();</div>
@@ -141,25 +141,25 @@ $(document).ready(function(){initNavTree('CommandBase_8h_source.html',''); initR
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassfrc2_1_1CommandBase_html_acd23702bf1d4155eda6c071e1aa9bdaf"><div class="ttname"><a href="classfrc2_1_1CommandBase.html#acd23702bf1d4155eda6c071e1aa9bdaf">frc2::CommandBase::GetSubsystem</a></div><div class="ttdeci">std::string GetSubsystem() const</div><div class="ttdoc">Gets the subsystem name of this Command.</div></div>
+<div class="ttc" id="aclasswpi_1_1SendableBuilder_html"><div class="ttname"><a href="classwpi_1_1SendableBuilder.html">wpi::SendableBuilder</a></div><div class="ttdef"><b>Definition:</b> SendableBuilder.h:18</div></div>
+<div class="ttc" id="aclassfrc2_1_1CommandBase_html_a805d7e700007025500de08d88d53a1e8"><div class="ttname"><a href="classfrc2_1_1CommandBase.html#a805d7e700007025500de08d88d53a1e8">frc2::CommandBase::InitSendable</a></div><div class="ttdeci">void InitSendable(wpi::SendableBuilder &amp;builder) override</div><div class="ttdoc">Initializes this Sendable object.</div></div>
 <div class="ttc" id="aclassfrc2_1_1CommandBase_html_a271292eed7dfb894e191a936fb1b1be7"><div class="ttname"><a href="classfrc2_1_1CommandBase.html#a271292eed7dfb894e191a936fb1b1be7">frc2::CommandBase::GetRequirements</a></div><div class="ttdeci">wpi::SmallSet&lt; Subsystem *, 4 &gt; GetRequirements() const override</div><div class="ttdoc">Specifies the set of subsystems used by this command.</div></div>
+<div class="ttc" id="aclasswpi_1_1Sendable_html"><div class="ttname"><a href="classwpi_1_1Sendable.html">wpi::Sendable</a></div><div class="ttdoc">Interface for Sendable objects.</div><div class="ttdef"><b>Definition:</b> Sendable.h:14</div></div>
 <div class="ttc" id="aclassfrc2_1_1CommandBase_html_ae03b1c6ce3a67b2ba0b401e6f5fdb18b"><div class="ttname"><a href="classfrc2_1_1CommandBase.html#ae03b1c6ce3a67b2ba0b401e6f5fdb18b">frc2::CommandBase::SetSubsystem</a></div><div class="ttdeci">void SetSubsystem(std::string_view subsystem)</div><div class="ttdoc">Sets the subsystem name of this Command.</div></div>
 <div class="ttc" id="aclassfrc2_1_1CommandBase_html_a75fa3f1baf64ecde0a946e4da4bbee18"><div class="ttname"><a href="classfrc2_1_1CommandBase.html#a75fa3f1baf64ecde0a946e4da4bbee18">frc2::CommandBase::SetName</a></div><div class="ttdeci">void SetName(std::string_view name)</div><div class="ttdoc">Sets the name of this Command.</div></div>
 <div class="ttc" id="aclassfrc2_1_1Command_html"><div class="ttname"><a href="classfrc2_1_1Command.html">frc2::Command</a></div><div class="ttdoc">A state machine representing a complete action to be performed by the robot.</div><div class="ttdef"><b>Definition:</b> Command.h:48</div></div>
 <div class="ttc" id="aclassfrc2_1_1CommandBase_html_ab35d893f3c42a882dbafbcbccce1396a"><div class="ttname"><a href="classfrc2_1_1CommandBase.html#ab35d893f3c42a882dbafbcbccce1396a">frc2::CommandBase::AddRequirements</a></div><div class="ttdeci">void AddRequirements(wpi::span&lt; Subsystem *const &gt; requirements)</div><div class="ttdoc">Adds the specified requirements to the command.</div></div>
+<div class="ttc" id="aclasswpi_1_1SendableHelper_html"><div class="ttname"><a href="classwpi_1_1SendableHelper.html">wpi::SendableHelper</a></div><div class="ttdoc">A helper class for use with objects that add themselves to SendableRegistry.</div><div class="ttdef"><b>Definition:</b> SendableHelper.h:24</div></div>
 <div class="ttc" id="aclasswpi_1_1SmallSet_html"><div class="ttname"><a href="classwpi_1_1SmallSet.html">wpi::SmallSet</a></div><div class="ttdoc">SmallSet - This maintains a set of unique values, optimizing for the case when the set is small (less...</div><div class="ttdef"><b>Definition:</b> SmallSet.h:135</div></div>
 <div class="ttc" id="aclasswpi_1_1span_html"><div class="ttname"><a href="classwpi_1_1span.html">wpi::span</a></div><div class="ttdef"><b>Definition:</b> span.h:29</div></div>
-<div class="ttc" id="aclassfrc2_1_1CommandBase_html_a2c37b5f7e5fe388e1a15b759573abb3c"><div class="ttname"><a href="classfrc2_1_1CommandBase.html#a2c37b5f7e5fe388e1a15b759573abb3c">frc2::CommandBase::InitSendable</a></div><div class="ttdeci">void InitSendable(frc::SendableBuilder &amp;builder) override</div><div class="ttdoc">Initializes this Sendable object.</div></div>
 <div class="ttc" id="aclassfrc2_1_1CommandBase_html_a64f050689acd13a075633d78786d5aaf"><div class="ttname"><a href="classfrc2_1_1CommandBase.html#a64f050689acd13a075633d78786d5aaf">frc2::CommandBase::AddRequirements</a></div><div class="ttdeci">void AddRequirements(std::initializer_list&lt; Subsystem * &gt; requirements)</div><div class="ttdoc">Adds the specified requirements to the command.</div></div>
-<div class="ttc" id="aclassfrc_1_1Sendable_html"><div class="ttname"><a href="classfrc_1_1Sendable.html">frc::Sendable</a></div><div class="ttdoc">Interface for Sendable objects.</div><div class="ttdef"><b>Definition:</b> Sendable.h:14</div></div>
 <div class="ttc" id="aclassfrc2_1_1CommandBase_html"><div class="ttname"><a href="classfrc2_1_1CommandBase.html">frc2::CommandBase</a></div><div class="ttdoc">A Sendable base class for Commands.</div><div class="ttdef"><b>Definition:</b> CommandBase.h:24</div></div>
 <div class="ttc" id="aclassfrc2_1_1CommandBase_html_a9bcb764f5f464d52f3d175fd80790916"><div class="ttname"><a href="classfrc2_1_1CommandBase.html#a9bcb764f5f464d52f3d175fd80790916">frc2::CommandBase::GetName</a></div><div class="ttdeci">std::string GetName() const override</div><div class="ttdoc">Gets the name of this Command.</div></div>
-<div class="ttc" id="aclassfrc_1_1SendableHelper_html"><div class="ttname"><a href="classfrc_1_1SendableHelper.html">frc::SendableHelper</a></div><div class="ttdoc">A helper class for use with objects that add themselves to SendableRegistry.</div><div class="ttdef"><b>Definition:</b> SendableHelper.h:25</div></div>
-<div class="ttc" id="aclassfrc_1_1SendableBuilder_html"><div class="ttname"><a href="classfrc_1_1SendableBuilder.html">frc::SendableBuilder</a></div><div class="ttdef"><b>Definition:</b> SendableBuilder.h:21</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e7d5d1c9c07b3d6a0a849f7ca2bfcaa9.html">frc2</a></li><li class="navelem"><a class="el" href="dir_25d5854705192c92d2d003534c71255a.html">command</a></li><li class="navelem"><b>CommandBase.h</b></li>
-    <li class="footer">Generated on Sun Jun 13 2021 23:07:19 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 13 2021 23:40:25 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

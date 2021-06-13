@@ -1,7 +1,6 @@
 var classfrc_1_1ShuffleboardComponentBase =
 [
     [ "ShuffleboardComponentBase", "classfrc_1_1ShuffleboardComponentBase.html#a5bf73811837f1dc7b94033685702b533", null ],
-    [ "~ShuffleboardComponentBase", "classfrc_1_1ShuffleboardComponentBase.html#af15b346499dba2871c724ee9c52b01d7", null ],
     [ "BuildMetadata", "classfrc_1_1ShuffleboardComponentBase.html#abb1bc5daa2c2aa50a12da5c4c6dc33ff", null ],
     [ "GetParent", "classfrc_1_1ShuffleboardComponentBase.html#a2181ee114d519d9e1b35e5b18041dc1c", null ],
     [ "GetType", "classfrc_1_1ShuffleboardComponentBase.html#a052e68dc3c70f19c39e2d36bcc45814d", null ],

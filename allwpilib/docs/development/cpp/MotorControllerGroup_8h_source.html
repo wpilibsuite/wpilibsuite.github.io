@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-119-gef4ea84</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-120-gb417d96</span>
    </div>
   </td>
  </tr>
@@ -102,57 +102,58 @@ $(document).ready(function(){initNavTree('MotorControllerGroup_8h_source.html','
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;functional&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;frc/motorcontrol/MotorController.h&quot;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;frc/smartdashboard/Sendable.h&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;frc/smartdashboard/SendableHelper.h&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span>frc {</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classfrc_1_1MotorControllerGroup.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1MotorControllerGroup.html">MotorControllerGroup</a> : <span class="keyword">public</span> <a class="code" href="classfrc_1_1Sendable.html">Sendable</a>,</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                             <span class="keyword">public</span> <a class="code" href="classfrc_1_1MotorController.html">MotorController</a>,</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                             <span class="keyword">public</span> <a class="code" href="classfrc_1_1SendableHelper.html">SendableHelper</a>&lt;MotorControllerGroup&gt; {</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span>... MotorControllers&gt;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc_1_1MotorControllerGroup.html">MotorControllerGroup</a>(<a class="code" href="classfrc_1_1MotorController.html">MotorController</a>&amp; motorController,</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                                MotorControllers&amp;... motorControllers);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc_1_1MotorControllerGroup.html">MotorControllerGroup</a>(</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;      std::vector&lt;std::reference_wrapper&lt;MotorController&gt;&gt;&amp;&amp; motorControllers);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <a class="code" href="classfrc_1_1MotorControllerGroup.html">MotorControllerGroup</a>(<a class="code" href="classfrc_1_1MotorControllerGroup.html">MotorControllerGroup</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <a class="code" href="classfrc_1_1MotorControllerGroup.html">MotorControllerGroup</a>&amp; operator=(<a class="code" href="classfrc_1_1MotorControllerGroup.html">MotorControllerGroup</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordtype">void</span> Set(<span class="keywordtype">double</span> speed) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">double</span> Get() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordtype">void</span> SetInverted(<span class="keywordtype">bool</span> isInverted) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordtype">bool</span> GetInverted() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keywordtype">void</span> Disable() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">void</span> StopMotor() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classfrc_1_1MotorControllerGroup.html#ad8eabf9e3bb596eebccfdee65d5e1eab">   36</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1MotorControllerGroup.html#ad8eabf9e3bb596eebccfdee65d5e1eab">InitSendable</a>(<a class="code" href="classfrc_1_1SendableBuilder.html">SendableBuilder</a>&amp; builder) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">bool</span> m_isInverted = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  std::vector&lt;std::reference_wrapper&lt;MotorController&gt;&gt; m_motorControllers;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">void</span> Initialize();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;};</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}  <span class="comment">// namespace frc</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#include &quot;frc/motorcontrol/MotorControllerGroup.inc&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;wpi/sendable/Sendable.h&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;wpi/sendable/SendableHelper.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;frc/motorcontrol/MotorController.h&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span>frc {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classfrc_1_1MotorControllerGroup.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1MotorControllerGroup.html">MotorControllerGroup</a> : <span class="keyword">public</span> <a class="code" href="classwpi_1_1Sendable.html">wpi::Sendable</a>,</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                             <span class="keyword">public</span> <a class="code" href="classfrc_1_1MotorController.html">MotorController</a>,</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                             <span class="keyword">public</span> <a class="code" href="classwpi_1_1SendableHelper.html">wpi::SendableHelper</a>&lt;MotorControllerGroup&gt; {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">class</span>... MotorControllers&gt;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc_1_1MotorControllerGroup.html">MotorControllerGroup</a>(<a class="code" href="classfrc_1_1MotorController.html">MotorController</a>&amp; motorController,</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                                MotorControllers&amp;... motorControllers);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc_1_1MotorControllerGroup.html">MotorControllerGroup</a>(</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;      std::vector&lt;std::reference_wrapper&lt;MotorController&gt;&gt;&amp;&amp; motorControllers);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <a class="code" href="classfrc_1_1MotorControllerGroup.html">MotorControllerGroup</a>(<a class="code" href="classfrc_1_1MotorControllerGroup.html">MotorControllerGroup</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <a class="code" href="classfrc_1_1MotorControllerGroup.html">MotorControllerGroup</a>&amp; operator=(<a class="code" href="classfrc_1_1MotorControllerGroup.html">MotorControllerGroup</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">void</span> Set(<span class="keywordtype">double</span> speed) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordtype">double</span> Get() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordtype">void</span> SetInverted(<span class="keywordtype">bool</span> isInverted) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keywordtype">bool</span> GetInverted() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">void</span> Disable() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordtype">void</span> StopMotor() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classfrc_1_1MotorControllerGroup.html#ac6b3950bbec9e0862593d20857d9c6c7">   37</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1MotorControllerGroup.html#ac6b3950bbec9e0862593d20857d9c6c7">InitSendable</a>(<a class="code" href="classwpi_1_1SendableBuilder.html">wpi::SendableBuilder</a>&amp; builder) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordtype">bool</span> m_isInverted = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  std::vector&lt;std::reference_wrapper&lt;MotorController&gt;&gt; m_motorControllers;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">void</span> Initialize();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;};</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#include &quot;frc/motorcontrol/MotorControllerGroup.inc&quot;</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassfrc_1_1MotorControllerGroup_html"><div class="ttname"><a href="classfrc_1_1MotorControllerGroup.html">frc::MotorControllerGroup</a></div><div class="ttdef"><b>Definition:</b> MotorControllerGroup.h:18</div></div>
+<div class="ttc" id="aclasswpi_1_1SendableBuilder_html"><div class="ttname"><a href="classwpi_1_1SendableBuilder.html">wpi::SendableBuilder</a></div><div class="ttdef"><b>Definition:</b> SendableBuilder.h:18</div></div>
+<div class="ttc" id="aclassfrc_1_1MotorControllerGroup_html"><div class="ttname"><a href="classfrc_1_1MotorControllerGroup.html">frc::MotorControllerGroup</a></div><div class="ttdef"><b>Definition:</b> MotorControllerGroup.h:19</div></div>
 <div class="ttc" id="aclassfrc_1_1MotorController_html"><div class="ttname"><a href="classfrc_1_1MotorController.html">frc::MotorController</a></div><div class="ttdoc">Interface for motor controlling devices.</div><div class="ttdef"><b>Definition:</b> MotorController.h:27</div></div>
-<div class="ttc" id="aclassfrc_1_1Sendable_html"><div class="ttname"><a href="classfrc_1_1Sendable.html">frc::Sendable</a></div><div class="ttdoc">Interface for Sendable objects.</div><div class="ttdef"><b>Definition:</b> Sendable.h:14</div></div>
-<div class="ttc" id="aclassfrc_1_1MotorControllerGroup_html_ad8eabf9e3bb596eebccfdee65d5e1eab"><div class="ttname"><a href="classfrc_1_1MotorControllerGroup.html#ad8eabf9e3bb596eebccfdee65d5e1eab">frc::MotorControllerGroup::InitSendable</a></div><div class="ttdeci">void InitSendable(SendableBuilder &amp;builder) override</div><div class="ttdoc">Initializes this Sendable object.</div></div>
-<div class="ttc" id="aclassfrc_1_1SendableHelper_html"><div class="ttname"><a href="classfrc_1_1SendableHelper.html">frc::SendableHelper</a></div><div class="ttdoc">A helper class for use with objects that add themselves to SendableRegistry.</div><div class="ttdef"><b>Definition:</b> SendableHelper.h:25</div></div>
-<div class="ttc" id="aclassfrc_1_1SendableBuilder_html"><div class="ttname"><a href="classfrc_1_1SendableBuilder.html">frc::SendableBuilder</a></div><div class="ttdef"><b>Definition:</b> SendableBuilder.h:21</div></div>
+<div class="ttc" id="aclasswpi_1_1Sendable_html"><div class="ttname"><a href="classwpi_1_1Sendable.html">wpi::Sendable</a></div><div class="ttdoc">Interface for Sendable objects.</div><div class="ttdef"><b>Definition:</b> Sendable.h:14</div></div>
+<div class="ttc" id="aclasswpi_1_1SendableHelper_html"><div class="ttname"><a href="classwpi_1_1SendableHelper.html">wpi::SendableHelper</a></div><div class="ttdoc">A helper class for use with objects that add themselves to SendableRegistry.</div><div class="ttdef"><b>Definition:</b> SendableHelper.h:24</div></div>
+<div class="ttc" id="aclassfrc_1_1MotorControllerGroup_html_ac6b3950bbec9e0862593d20857d9c6c7"><div class="ttname"><a href="classfrc_1_1MotorControllerGroup.html#ac6b3950bbec9e0862593d20857d9c6c7">frc::MotorControllerGroup::InitSendable</a></div><div class="ttdeci">void InitSendable(wpi::SendableBuilder &amp;builder) override</div><div class="ttdoc">Initializes this Sendable object.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_d0a9c1f552287e8d1bf6d4228ef74d88.html">motorcontrol</a></li><li class="navelem"><b>MotorControllerGroup.h</b></li>
-    <li class="footer">Generated on Sun Jun 13 2021 23:07:19 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 13 2021 23:40:24 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

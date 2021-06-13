@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['value_5ft_7705',['value_t',['../namespacewpi_1_1detail.html#a4f2a85d1c51cbd4c58d990499f793788',1,'wpi::detail']]]
+  ['state_7712',['State',['../classwpi_1_1WebSocket.html#a767b9ee610b2638448e936302cd3b1b3',1,'wpi::WebSocket']]]
 ];

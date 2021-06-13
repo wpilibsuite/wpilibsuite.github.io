@@ -14,7 +14,7 @@ var classfrc_1_1PWM =
     [ "GetRaw", "classfrc_1_1PWM.html#a64faa1c68eccb3565779b1bf211aadcb", null ],
     [ "GetRawBounds", "classfrc_1_1PWM.html#aa9756be27d3c29450b0da87981f3f921", null ],
     [ "GetSpeed", "classfrc_1_1PWM.html#af6de729862736e52227664018a3a4ebe", null ],
-    [ "InitSendable", "classfrc_1_1PWM.html#af24a2e3193e536b40909b7f0bbe4790d", null ],
+    [ "InitSendable", "classfrc_1_1PWM.html#a9009269e7d7d0d627b28898d0035e9f7", null ],
     [ "operator=", "classfrc_1_1PWM.html#a0a923a04eec01c5fb4abef602557cfc3", null ],
     [ "SetBounds", "classfrc_1_1PWM.html#ad6961fb56ca5018388836707e568b94e", null ],
     [ "SetDisabled", "classfrc_1_1PWM.html#a4667fefcb5a584c1c0049741a4109bc8", null ],

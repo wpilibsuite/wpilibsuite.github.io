@@ -9,7 +9,7 @@ var classfrc_1_1AnalogTrigger =
     [ "GetIndex", "classfrc_1_1AnalogTrigger.html#a6fa1adb6bea2c16913e2db2bd69692c7", null ],
     [ "GetInWindow", "classfrc_1_1AnalogTrigger.html#a76baf7a32930b7004f28724e2854794a", null ],
     [ "GetTriggerState", "classfrc_1_1AnalogTrigger.html#a17372b905213830e41cb39b95eb43fbc", null ],
-    [ "InitSendable", "classfrc_1_1AnalogTrigger.html#ade788148d6cc32da7bc7e335dd9c772e", null ],
+    [ "InitSendable", "classfrc_1_1AnalogTrigger.html#a1a672771823b9fbf9c5a7c83dc589cf2", null ],
     [ "operator=", "classfrc_1_1AnalogTrigger.html#a06e5f0c2f646aa04869c92d278bb5678", null ],
     [ "SetAveraged", "classfrc_1_1AnalogTrigger.html#ae09d54a1b9f63aaca7b05306cd91d5c2", null ],
     [ "SetFiltered", "classfrc_1_1AnalogTrigger.html#a3791c47af10652791607b0cb8b73e186", null ],

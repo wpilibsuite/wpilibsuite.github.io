@@ -6,7 +6,7 @@ var classfrc_1_1AnalogAccelerometer =
     [ "~AnalogAccelerometer", "classfrc_1_1AnalogAccelerometer.html#a88abc31297de3e618ddeb616f25aebb4", null ],
     [ "AnalogAccelerometer", "classfrc_1_1AnalogAccelerometer.html#a9961896914212b6ec717490b6316e3b7", null ],
     [ "GetAcceleration", "classfrc_1_1AnalogAccelerometer.html#a0baa10094440820e7410c0c08e1fade1", null ],
-    [ "InitSendable", "classfrc_1_1AnalogAccelerometer.html#a301cc10fb1aba95aafe121356144dfda", null ],
+    [ "InitSendable", "classfrc_1_1AnalogAccelerometer.html#ac279c0cee7e70b30cccd2380990f7f80", null ],
     [ "operator=", "classfrc_1_1AnalogAccelerometer.html#ab9ee5134faf7fcaa49bed13ed46b3e80", null ],
     [ "SetSensitivity", "classfrc_1_1AnalogAccelerometer.html#a24d703f4ba26f1fc7667f57717542ae4", null ],
     [ "SetZero", "classfrc_1_1AnalogAccelerometer.html#a0964e8092e0d7c11cecefdf958af2f56", null ]

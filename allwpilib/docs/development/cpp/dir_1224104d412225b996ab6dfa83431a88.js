@@ -2,6 +2,7 @@ var dir_1224104d412225b996ab6dfa83431a88 =
 [
     [ "fmt", "dir_01760b1104b35a6fd322a027d9259ea5.html", "dir_01760b1104b35a6fd322a027d9259ea5" ],
     [ "ghc", "dir_1e83498808adc8ad9629ea2e4946666a.html", "dir_1e83498808adc8ad9629ea2e4946666a" ],
+    [ "sendable", "dir_66b42d2eb6c651d815a5f70399c9ed10.html", "dir_66b42d2eb6c651d815a5f70399c9ed10" ],
     [ "uv", "dir_25302867c2307ab8d43a1b1d664c1ea4.html", "dir_25302867c2307ab8d43a1b1d664c1ea4" ],
     [ "Algorithm.h", "Algorithm_8h_source.html", null ],
     [ "AlignOf.h", "AlignOf_8h_source.html", null ],

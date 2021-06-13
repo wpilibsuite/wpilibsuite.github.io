@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-119-gef4ea84</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-120-gb417d96</span>
    </div>
   </td>
  </tr>
@@ -100,17 +100,17 @@ $(document).ready(function(){initNavTree('ADXL345__SPI_8h_source.html',''); init
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;hal/SimDevice.h&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;frc/SPI.h&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;frc/interfaces/Accelerometer.h&quot;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;frc/smartdashboard/Sendable.h&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;frc/smartdashboard/SendableHelper.h&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;networktables/NTSendable.h&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;wpi/sendable/SendableHelper.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;frc/SPI.h&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;frc/interfaces/Accelerometer.h&quot;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span>frc {</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classfrc_1_1ADXL345__SPI.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1ADXL345__SPI.html">ADXL345_SPI</a> : <span class="keyword">public</span> <a class="code" href="classfrc_1_1Accelerometer.html">Accelerometer</a>,</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                    <span class="keyword">public</span> <a class="code" href="classfrc_1_1Sendable.html">Sendable</a>,</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                    <span class="keyword">public</span> <a class="code" href="classfrc_1_1SendableHelper.html">SendableHelper</a>&lt;ADXL345_SPI&gt; {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                    <span class="keyword">public</span> <a class="code" href="classnt_1_1NTSendable.html">nt::NTSendable</a>,</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                    <span class="keyword">public</span> <a class="code" href="classwpi_1_1SendableHelper.html">wpi::SendableHelper</a>&lt;ADXL345_SPI&gt; {</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">enum</span> Axes { kAxis_X = 0x00, kAxis_Y = 0x02, kAxis_Z = 0x04 };</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('ADXL345__SPI_8h_source.html',''); init
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
 <div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classfrc_1_1ADXL345__SPI.html#a4f0575061e3426648b18ef8d04379ab9">   67</a></span>&#160;  <span class="keyword">virtual</span> <a class="code" href="structfrc_1_1ADXL345__SPI_1_1AllAxes.html">AllAxes</a> <a class="code" href="classfrc_1_1ADXL345__SPI.html#a4f0575061e3426648b18ef8d04379ab9">GetAccelerations</a>();</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classfrc_1_1ADXL345__SPI.html#af03e3dc5d96052c2cad71212a43eea9f">   69</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1ADXL345__SPI.html#af03e3dc5d96052c2cad71212a43eea9f">InitSendable</a>(<a class="code" href="classfrc_1_1SendableBuilder.html">SendableBuilder</a>&amp; builder) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classfrc_1_1ADXL345__SPI.html#abe83a316f21899aee4a689ad7131f184">   69</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1ADXL345__SPI.html#abe83a316f21899aee4a689ad7131f184">InitSendable</a>(<a class="code" href="classnt_1_1NTSendableBuilder.html">nt::NTSendableBuilder</a>&amp; builder) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; <span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <a class="code" href="classfrc_1_1SPI.html">SPI</a> m_spi;</div>
@@ -175,25 +175,25 @@ $(document).ready(function(){initNavTree('ADXL345__SPI_8h_source.html',''); init
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassfrc_1_1ADXL345__SPI_html_a5bb9c7836be8dcf473c578cba84c7b33"><div class="ttname"><a href="classfrc_1_1ADXL345__SPI.html#a5bb9c7836be8dcf473c578cba84c7b33">frc::ADXL345_SPI::GetZ</a></div><div class="ttdeci">double GetZ() override</div><div class="ttdoc">Common interface for getting the z axis acceleration.</div></div>
-<div class="ttc" id="aclassfrc_1_1ADXL345__SPI_html_af03e3dc5d96052c2cad71212a43eea9f"><div class="ttname"><a href="classfrc_1_1ADXL345__SPI.html#af03e3dc5d96052c2cad71212a43eea9f">frc::ADXL345_SPI::InitSendable</a></div><div class="ttdeci">void InitSendable(SendableBuilder &amp;builder) override</div><div class="ttdoc">Initializes this Sendable object.</div></div>
 <div class="ttc" id="aclassfrc_1_1ADXL345__SPI_html"><div class="ttname"><a href="classfrc_1_1ADXL345__SPI.html">frc::ADXL345_SPI</a></div><div class="ttdoc">ADXL345 Accelerometer on SPI.</div><div class="ttdef"><b>Definition:</b> ADXL345_SPI.h:24</div></div>
 <div class="ttc" id="aclassfrc_1_1ADXL345__SPI_html_af0b186acfa2457fb78c464214109a6d2"><div class="ttname"><a href="classfrc_1_1ADXL345__SPI.html#af0b186acfa2457fb78c464214109a6d2">frc::ADXL345_SPI::ADXL345_SPI</a></div><div class="ttdeci">ADXL345_SPI(SPI::Port port, Range range=kRange_2G)</div><div class="ttdoc">Constructor.</div></div>
 <div class="ttc" id="aclassfrc_1_1ADXL345__SPI_html_a364f57e34a903119d1ec36c81224583c"><div class="ttname"><a href="classfrc_1_1ADXL345__SPI.html#a364f57e34a903119d1ec36c81224583c">frc::ADXL345_SPI::SetRange</a></div><div class="ttdeci">void SetRange(Range range) final</div><div class="ttdoc">Common interface for setting the measuring range of an accelerometer.</div></div>
 <div class="ttc" id="aclassfrc_1_1ADXL345__SPI_html_a4f0575061e3426648b18ef8d04379ab9"><div class="ttname"><a href="classfrc_1_1ADXL345__SPI.html#a4f0575061e3426648b18ef8d04379ab9">frc::ADXL345_SPI::GetAccelerations</a></div><div class="ttdeci">virtual AllAxes GetAccelerations()</div><div class="ttdoc">Get the acceleration of all axes in Gs.</div></div>
 <div class="ttc" id="astructfrc_1_1ADXL345__SPI_1_1AllAxes_html"><div class="ttname"><a href="structfrc_1_1ADXL345__SPI_1_1AllAxes.html">frc::ADXL345_SPI::AllAxes</a></div><div class="ttdef"><b>Definition:</b> ADXL345_SPI.h:28</div></div>
 <div class="ttc" id="aclassfrc_1_1Accelerometer_html"><div class="ttname"><a href="classfrc_1_1Accelerometer.html">frc::Accelerometer</a></div><div class="ttdoc">Interface for 3-axis accelerometers.</div><div class="ttdef"><b>Definition:</b> Accelerometer.h:12</div></div>
+<div class="ttc" id="aclasswpi_1_1SendableHelper_html"><div class="ttname"><a href="classwpi_1_1SendableHelper.html">wpi::SendableHelper</a></div><div class="ttdoc">A helper class for use with objects that add themselves to SendableRegistry.</div><div class="ttdef"><b>Definition:</b> SendableHelper.h:24</div></div>
 <div class="ttc" id="aclassfrc_1_1ADXL345__SPI_html_ae1ad3f4e2160751d2509de4c3a5bf6ce"><div class="ttname"><a href="classfrc_1_1ADXL345__SPI.html#ae1ad3f4e2160751d2509de4c3a5bf6ce">frc::ADXL345_SPI::GetY</a></div><div class="ttdeci">double GetY() override</div><div class="ttdoc">Common interface for getting the y axis acceleration.</div></div>
+<div class="ttc" id="aclassnt_1_1NTSendable_html"><div class="ttname"><a href="classnt_1_1NTSendable.html">nt::NTSendable</a></div><div class="ttdoc">Interface for NetworkTable Sendable objects.</div><div class="ttdef"><b>Definition:</b> NTSendable.h:16</div></div>
 <div class="ttc" id="aclassfrc_1_1SPI_html"><div class="ttname"><a href="classfrc_1_1SPI.html">frc::SPI</a></div><div class="ttdoc">SPI bus interface class.</div><div class="ttdef"><b>Definition:</b> SPI.h:27</div></div>
-<div class="ttc" id="aclassfrc_1_1Sendable_html"><div class="ttname"><a href="classfrc_1_1Sendable.html">frc::Sendable</a></div><div class="ttdoc">Interface for Sendable objects.</div><div class="ttdef"><b>Definition:</b> Sendable.h:14</div></div>
+<div class="ttc" id="aclassfrc_1_1ADXL345__SPI_html_abe83a316f21899aee4a689ad7131f184"><div class="ttname"><a href="classfrc_1_1ADXL345__SPI.html#abe83a316f21899aee4a689ad7131f184">frc::ADXL345_SPI::InitSendable</a></div><div class="ttdeci">void InitSendable(nt::NTSendableBuilder &amp;builder) override</div><div class="ttdoc">Initializes this Sendable object.</div></div>
+<div class="ttc" id="aclassnt_1_1NTSendableBuilder_html"><div class="ttname"><a href="classnt_1_1NTSendableBuilder.html">nt::NTSendableBuilder</a></div><div class="ttdef"><b>Definition:</b> NTSendableBuilder.h:19</div></div>
 <div class="ttc" id="aclassfrc_1_1ADXL345__SPI_html_a35c1c2a35ef8ece479f4e88513ba3204"><div class="ttname"><a href="classfrc_1_1ADXL345__SPI.html#a35c1c2a35ef8ece479f4e88513ba3204">frc::ADXL345_SPI::GetAcceleration</a></div><div class="ttdeci">virtual double GetAcceleration(Axes axis)</div><div class="ttdoc">Get the acceleration of one axis in Gs.</div></div>
 <div class="ttc" id="aclassfrc_1_1ADXL345__SPI_html_a2d3efc5ae387f747c8153114c9bf29b5"><div class="ttname"><a href="classfrc_1_1ADXL345__SPI.html#a2d3efc5ae387f747c8153114c9bf29b5">frc::ADXL345_SPI::GetX</a></div><div class="ttdeci">double GetX() override</div><div class="ttdoc">Common interface for getting the x axis acceleration.</div></div>
-<div class="ttc" id="aclassfrc_1_1SendableHelper_html"><div class="ttname"><a href="classfrc_1_1SendableHelper.html">frc::SendableHelper</a></div><div class="ttdoc">A helper class for use with objects that add themselves to SendableRegistry.</div><div class="ttdef"><b>Definition:</b> SendableHelper.h:25</div></div>
-<div class="ttc" id="aclassfrc_1_1SendableBuilder_html"><div class="ttname"><a href="classfrc_1_1SendableBuilder.html">frc::SendableBuilder</a></div><div class="ttdef"><b>Definition:</b> SendableBuilder.h:21</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><b>ADXL345_SPI.h</b></li>
-    <li class="footer">Generated on Sun Jun 13 2021 23:07:19 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 13 2021 23:40:24 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

@@ -27,7 +27,7 @@ var classfrc_1_1ADXL345__I2C =
     [ "GetX", "classfrc_1_1ADXL345__I2C.html#a9d09d7932bd677cdfe8df5d2295998a9", null ],
     [ "GetY", "classfrc_1_1ADXL345__I2C.html#affd35849ff694985e524641538636243", null ],
     [ "GetZ", "classfrc_1_1ADXL345__I2C.html#ae7b6f54fc7211ebc2344cb0599e3fdcc", null ],
-    [ "InitSendable", "classfrc_1_1ADXL345__I2C.html#a0f87af87133ed6348d1d8af1f3fe9fe1", null ],
+    [ "InitSendable", "classfrc_1_1ADXL345__I2C.html#ae5583082a560b69ac2e96041a330dc76", null ],
     [ "operator=", "classfrc_1_1ADXL345__I2C.html#a90dfa81d6291698af1495155393ae0af", null ],
     [ "SetRange", "classfrc_1_1ADXL345__I2C.html#a0cd0c56e51cbe9713a27b421fc84ca17", null ],
     [ "kAddress", "classfrc_1_1ADXL345__I2C.html#a0ed23df38e595e5103b7ad638284c554", null ],

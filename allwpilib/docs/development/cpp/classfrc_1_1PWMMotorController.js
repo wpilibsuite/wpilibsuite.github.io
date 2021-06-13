@@ -7,7 +7,7 @@ var classfrc_1_1PWMMotorController =
     [ "GetChannel", "classfrc_1_1PWMMotorController.html#afa39100c2ad5b9d491e79d44d03c90ff", null ],
     [ "GetDescription", "classfrc_1_1PWMMotorController.html#adce0f524fe91c63a0deaa64144457b47", null ],
     [ "GetInverted", "classfrc_1_1PWMMotorController.html#a3274a2293ee6990bcd15cc0dd8f33282", null ],
-    [ "InitSendable", "classfrc_1_1PWMMotorController.html#a0fc47626dfa5c72b3c22d77574e7eb0c", null ],
+    [ "InitSendable", "classfrc_1_1PWMMotorController.html#a1f6523c097b787e6a2d4108cd5a4226c", null ],
     [ "operator=", "classfrc_1_1PWMMotorController.html#a0db05ebd2c05fecae5c95bcad9ed5b96", null ],
     [ "Set", "classfrc_1_1PWMMotorController.html#aad5957bc21f8549f5f6cbc9c1bd5afaf", null ],
     [ "SetInverted", "classfrc_1_1PWMMotorController.html#afcc5f0358caacf37c8eb817368a37df7", null ],

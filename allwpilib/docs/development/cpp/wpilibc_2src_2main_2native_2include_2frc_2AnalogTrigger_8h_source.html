@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-119-gef4ea84</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-120-gb417d96</span>
    </div>
   </td>
  </tr>
@@ -102,18 +102,18 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;hal/Types.h&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;frc/AnalogTriggerOutput.h&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;frc/smartdashboard/Sendable.h&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;frc/smartdashboard/SendableHelper.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;wpi/sendable/Sendable.h&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;wpi/sendable/SendableHelper.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;frc/AnalogTriggerOutput.h&quot;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span>frc {</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">class </span>AnalogInput;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">class </span>DutyCycle;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">class </span>SendableBuilder;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogTrigger.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1AnalogTrigger.html">AnalogTrigger</a> : <span class="keyword">public</span> <a class="code" href="classfrc_1_1Sendable.html">Sendable</a>, <span class="keyword">public</span> <a class="code" href="classfrc_1_1SendableHelper.html">SendableHelper</a>&lt;AnalogTrigger&gt; {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogTrigger.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1AnalogTrigger.html">AnalogTrigger</a> : <span class="keyword">public</span> <a class="code" href="classwpi_1_1Sendable.html">wpi::Sendable</a>,</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                      <span class="keyword">public</span> <a class="code" href="classwpi_1_1SendableHelper.html">wpi::SendableHelper</a>&lt;AnalogTrigger&gt; {</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classfrc_1_1AnalogTriggerOutput.html">AnalogTriggerOutput</a>;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; <span class="keyword">public</span>:</div>
@@ -147,7 +147,7 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div class="line"><a name="l00148"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogTrigger.html#a639996c23e1762e1619badc1b29133aa">  148</a></span>&#160;  std::shared_ptr&lt;AnalogTriggerOutput&gt; <a class="code" href="classfrc_1_1AnalogTrigger.html#a639996c23e1762e1619badc1b29133aa">CreateOutput</a>(</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;      AnalogTriggerType type) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
-<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogTrigger.html#ade788148d6cc32da7bc7e335dd9c772e">  151</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1AnalogTrigger.html#ade788148d6cc32da7bc7e335dd9c772e">InitSendable</a>(<a class="code" href="classfrc_1_1SendableBuilder.html">SendableBuilder</a>&amp; builder) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogTrigger.html#a1a672771823b9fbf9c5a7c83dc589cf2">  151</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1AnalogTrigger.html#a1a672771823b9fbf9c5a7c83dc589cf2">InitSendable</a>(<a class="code" href="classwpi_1_1SendableBuilder.html">wpi::SendableBuilder</a>&amp; builder) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  <span class="keywordtype">int</span> GetSourceChannel() <span class="keyword">const</span>;</div>
@@ -163,29 +163,29 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 </div><!-- doc-content -->
 <div class="ttc" id="aclassfrc_1_1AnalogTrigger_html_a17372b905213830e41cb39b95eb43fbc"><div class="ttname"><a href="classfrc_1_1AnalogTrigger.html#a17372b905213830e41cb39b95eb43fbc">frc::AnalogTrigger::GetTriggerState</a></div><div class="ttdeci">bool GetTriggerState()</div><div class="ttdoc">Return the TriggerState output of the analog trigger.</div></div>
 <div class="ttc" id="aclassfrc_1_1AnalogTrigger_html_ad9cbec302e351273de733b7784ae870a"><div class="ttname"><a href="classfrc_1_1AnalogTrigger.html#ad9cbec302e351273de733b7784ae870a">frc::AnalogTrigger::AnalogTrigger</a></div><div class="ttdeci">AnalogTrigger(AnalogInput *channel)</div><div class="ttdoc">Construct an analog trigger given an analog input.</div></div>
-<div class="ttc" id="aclassfrc_1_1AnalogTriggerOutput_html"><div class="ttname"><a href="classfrc_1_1AnalogTriggerOutput.html">frc::AnalogTriggerOutput</a></div><div class="ttdoc">Class to represent a specific output from an analog trigger.</div><div class="ttdef"><b>Definition:</b> AnalogTriggerOutput.h:48</div></div>
+<div class="ttc" id="aclassfrc_1_1AnalogTriggerOutput_html"><div class="ttname"><a href="classfrc_1_1AnalogTriggerOutput.html">frc::AnalogTriggerOutput</a></div><div class="ttdoc">Class to represent a specific output from an analog trigger.</div><div class="ttdef"><b>Definition:</b> AnalogTriggerOutput.h:49</div></div>
+<div class="ttc" id="aclasswpi_1_1SendableBuilder_html"><div class="ttname"><a href="classwpi_1_1SendableBuilder.html">wpi::SendableBuilder</a></div><div class="ttdef"><b>Definition:</b> SendableBuilder.h:18</div></div>
+<div class="ttc" id="aclasswpi_1_1Sendable_html"><div class="ttname"><a href="classwpi_1_1Sendable.html">wpi::Sendable</a></div><div class="ttdoc">Interface for Sendable objects.</div><div class="ttdef"><b>Definition:</b> Sendable.h:14</div></div>
 <div class="ttc" id="aclassfrc_1_1AnalogTrigger_html_ad42f954723ee5556d52b748ab7df5c07"><div class="ttname"><a href="classfrc_1_1AnalogTrigger.html#ad42f954723ee5556d52b748ab7df5c07">frc::AnalogTrigger::SetLimitsRaw</a></div><div class="ttdeci">void SetLimitsRaw(int lower, int upper)</div><div class="ttdoc">Set the upper and lower limits of the analog trigger.</div></div>
 <div class="ttc" id="aclassfrc_1_1AnalogTrigger_html_a76baf7a32930b7004f28724e2854794a"><div class="ttname"><a href="classfrc_1_1AnalogTrigger.html#a76baf7a32930b7004f28724e2854794a">frc::AnalogTrigger::GetInWindow</a></div><div class="ttdeci">bool GetInWindow()</div><div class="ttdoc">Return the InWindow output of the analog trigger.</div></div>
 <div class="ttc" id="aclassfrc_1_1AnalogTrigger_html"><div class="ttname"><a href="classfrc_1_1AnalogTrigger.html">frc::AnalogTrigger</a></div><div class="ttdef"><b>Definition:</b> AnalogTrigger.h:21</div></div>
-<div class="ttc" id="aclassfrc_1_1AnalogTrigger_html_ade788148d6cc32da7bc7e335dd9c772e"><div class="ttname"><a href="classfrc_1_1AnalogTrigger.html#ade788148d6cc32da7bc7e335dd9c772e">frc::AnalogTrigger::InitSendable</a></div><div class="ttdeci">void InitSendable(SendableBuilder &amp;builder) override</div><div class="ttdoc">Initializes this Sendable object.</div></div>
 <div class="ttc" id="aclassfrc_1_1AnalogTrigger_html_a639996c23e1762e1619badc1b29133aa"><div class="ttname"><a href="classfrc_1_1AnalogTrigger.html#a639996c23e1762e1619badc1b29133aa">frc::AnalogTrigger::CreateOutput</a></div><div class="ttdeci">std::shared_ptr&lt; AnalogTriggerOutput &gt; CreateOutput(AnalogTriggerType type) const</div><div class="ttdoc">Creates an AnalogTriggerOutput object.</div></div>
-<div class="ttc" id="aclassfrc_1_1DutyCycle_html"><div class="ttname"><a href="classfrc_1_1DutyCycle.html">frc::DutyCycle</a></div><div class="ttdoc">Class to read a duty cycle PWM input.</div><div class="ttdef"><b>Definition:</b> DutyCycle.h:31</div></div>
+<div class="ttc" id="aclassfrc_1_1DutyCycle_html"><div class="ttname"><a href="classfrc_1_1DutyCycle.html">frc::DutyCycle</a></div><div class="ttdoc">Class to read a duty cycle PWM input.</div><div class="ttdef"><b>Definition:</b> DutyCycle.h:30</div></div>
+<div class="ttc" id="aclasswpi_1_1SendableHelper_html"><div class="ttname"><a href="classwpi_1_1SendableHelper.html">wpi::SendableHelper</a></div><div class="ttdoc">A helper class for use with objects that add themselves to SendableRegistry.</div><div class="ttdef"><b>Definition:</b> SendableHelper.h:24</div></div>
 <div class="ttc" id="aclassfrc_1_1AnalogTrigger_html_a0faf8b6659b7313a28e203418b2775da"><div class="ttname"><a href="classfrc_1_1AnalogTrigger.html#a0faf8b6659b7313a28e203418b2775da">frc::AnalogTrigger::SetLimitsDutyCycle</a></div><div class="ttdeci">void SetLimitsDutyCycle(double lower, double upper)</div><div class="ttdoc">Set the upper and lower duty cycle limits of the analog trigger.</div></div>
 <div class="ttc" id="aclassfrc_1_1AnalogTrigger_html_a6fa1adb6bea2c16913e2db2bd69692c7"><div class="ttname"><a href="classfrc_1_1AnalogTrigger.html#a6fa1adb6bea2c16913e2db2bd69692c7">frc::AnalogTrigger::GetIndex</a></div><div class="ttdeci">int GetIndex() const</div><div class="ttdoc">Return the index of the analog trigger.</div></div>
-<div class="ttc" id="aclassfrc_1_1Sendable_html"><div class="ttname"><a href="classfrc_1_1Sendable.html">frc::Sendable</a></div><div class="ttdoc">Interface for Sendable objects.</div><div class="ttdef"><b>Definition:</b> Sendable.h:14</div></div>
 <div class="ttc" id="aclassfrc_1_1AnalogTrigger_html_a6ceba2c9c23d159011995a6b137a0205"><div class="ttname"><a href="classfrc_1_1AnalogTrigger.html#a6ceba2c9c23d159011995a6b137a0205">frc::AnalogTrigger::AnalogTrigger</a></div><div class="ttdeci">AnalogTrigger(DutyCycle *dutyCycle)</div><div class="ttdoc">Construct an analog trigger given a duty cycle input.</div></div>
-<div class="ttc" id="aclassfrc_1_1AnalogInput_html"><div class="ttname"><a href="classfrc_1_1AnalogInput.html">frc::AnalogInput</a></div><div class="ttdoc">Analog input class.</div><div class="ttdef"><b>Definition:</b> AnalogInput.h:32</div></div>
+<div class="ttc" id="aclassfrc_1_1AnalogInput_html"><div class="ttname"><a href="classfrc_1_1AnalogInput.html">frc::AnalogInput</a></div><div class="ttdoc">Analog input class.</div><div class="ttdef"><b>Definition:</b> AnalogInput.h:31</div></div>
+<div class="ttc" id="aclassfrc_1_1AnalogTrigger_html_a1a672771823b9fbf9c5a7c83dc589cf2"><div class="ttname"><a href="classfrc_1_1AnalogTrigger.html#a1a672771823b9fbf9c5a7c83dc589cf2">frc::AnalogTrigger::InitSendable</a></div><div class="ttdeci">void InitSendable(wpi::SendableBuilder &amp;builder) override</div><div class="ttdoc">Initializes this Sendable object.</div></div>
 <div class="ttc" id="aclassfrc_1_1AnalogTrigger_html_a3791c47af10652791607b0cb8b73e186"><div class="ttname"><a href="classfrc_1_1AnalogTrigger.html#a3791c47af10652791607b0cb8b73e186">frc::AnalogTrigger::SetFiltered</a></div><div class="ttdeci">void SetFiltered(bool useFilteredValue)</div><div class="ttdoc">Configure the analog trigger to use a filtered value.</div></div>
 <div class="ttc" id="aclassfrc_1_1AnalogTrigger_html_a0744c6505175fc6765f7a269229eb185"><div class="ttname"><a href="classfrc_1_1AnalogTrigger.html#a0744c6505175fc6765f7a269229eb185">frc::AnalogTrigger::SetLimitsVoltage</a></div><div class="ttdeci">void SetLimitsVoltage(double lower, double upper)</div><div class="ttdoc">Set the upper and lower limits of the analog trigger.</div></div>
 <div class="ttc" id="aclassfrc_1_1AnalogTrigger_html_ae09d54a1b9f63aaca7b05306cd91d5c2"><div class="ttname"><a href="classfrc_1_1AnalogTrigger.html#ae09d54a1b9f63aaca7b05306cd91d5c2">frc::AnalogTrigger::SetAveraged</a></div><div class="ttdeci">void SetAveraged(bool useAveragedValue)</div><div class="ttdoc">Configure the analog trigger to use the averaged vs.</div></div>
-<div class="ttc" id="aclassfrc_1_1SendableHelper_html"><div class="ttname"><a href="classfrc_1_1SendableHelper.html">frc::SendableHelper</a></div><div class="ttdoc">A helper class for use with objects that add themselves to SendableRegistry.</div><div class="ttdef"><b>Definition:</b> SendableHelper.h:25</div></div>
-<div class="ttc" id="aclassfrc_1_1SendableBuilder_html"><div class="ttname"><a href="classfrc_1_1SendableBuilder.html">frc::SendableBuilder</a></div><div class="ttdef"><b>Definition:</b> SendableBuilder.h:21</div></div>
 <div class="ttc" id="aclassfrc_1_1AnalogTrigger_html_af891ee0b6a52a7d868e421a711713402"><div class="ttname"><a href="classfrc_1_1AnalogTrigger.html#af891ee0b6a52a7d868e421a711713402">frc::AnalogTrigger::AnalogTrigger</a></div><div class="ttdeci">AnalogTrigger(int channel)</div><div class="ttdoc">Constructor for an analog trigger given a channel number.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><b>AnalogTrigger.h</b></li>
-    <li class="footer">Generated on Sun Jun 13 2021 23:07:19 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 13 2021 23:40:24 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

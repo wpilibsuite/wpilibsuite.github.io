@@ -16,11 +16,11 @@ var classfrc_1_1SendableBuilderImpl =
     [ "AddStringArrayProperty", "classfrc_1_1SendableBuilderImpl.html#a4c8fa02983797db56c84f4314161b3f3", null ],
     [ "AddStringProperty", "classfrc_1_1SendableBuilderImpl.html#a456e755a2e2f6893a2ae89dc244d19d7", null ],
     [ "AddValueProperty", "classfrc_1_1SendableBuilderImpl.html#a9e30b25ed632b7ce560e955e02b46342", null ],
-    [ "ClearProperties", "classfrc_1_1SendableBuilderImpl.html#afb4a73755560fbfa5857508b742a4f5c", null ],
+    [ "ClearProperties", "classfrc_1_1SendableBuilderImpl.html#af584b1d93019e29a9b301e221cc2cbfb", null ],
     [ "GetEntry", "classfrc_1_1SendableBuilderImpl.html#a637e6d55cbc7be1fbc6be3f7cc55fe9b", null ],
     [ "GetTable", "classfrc_1_1SendableBuilderImpl.html#a0baa585e6cfeb422c3e1b6a217039731", null ],
-    [ "HasTable", "classfrc_1_1SendableBuilderImpl.html#ae58a130c546efe5d122df6eced280680", null ],
     [ "IsActuator", "classfrc_1_1SendableBuilderImpl.html#a3be8a5e043d54cca6af784e7fc89d7e3", null ],
+    [ "IsPublished", "classfrc_1_1SendableBuilderImpl.html#ae4192da565874bbe927eca4eecc9cbe6", null ],
     [ "operator=", "classfrc_1_1SendableBuilderImpl.html#a4772e9a6f2d7589d2d7850593b4a2726", null ],
     [ "SetActuator", "classfrc_1_1SendableBuilderImpl.html#a96ee9d5cdb0e09f7d972db156e36d691", null ],
     [ "SetSafeState", "classfrc_1_1SendableBuilderImpl.html#a3311c40a24b1eed7c15a953cdea83a87", null ],
@@ -31,5 +31,5 @@ var classfrc_1_1SendableBuilderImpl =
     [ "StartLiveWindowMode", "classfrc_1_1SendableBuilderImpl.html#acefd9126c88867e7d5a59a495973ca5c", null ],
     [ "StopListeners", "classfrc_1_1SendableBuilderImpl.html#af3f12fe674fe211139df5ca0d59bd0b1", null ],
     [ "StopLiveWindowMode", "classfrc_1_1SendableBuilderImpl.html#a60b96297df708e04a93049bd9cf0c3bc", null ],
-    [ "UpdateTable", "classfrc_1_1SendableBuilderImpl.html#a736ba5344a72d52366f15d0e1f40bd93", null ]
+    [ "Update", "classfrc_1_1SendableBuilderImpl.html#abe4c8d37aba288f6f2bdf32c11e9c1a1", null ]
 ];

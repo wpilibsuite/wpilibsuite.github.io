@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-119-gef4ea84</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-120-gb417d96</span>
    </div>
   </td>
  </tr>
@@ -102,17 +102,17 @@ $(document).ready(function(){initNavTree('SubsystemBase_8h_source.html',''); ini
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;string_view&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;frc/smartdashboard/Sendable.h&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;frc/smartdashboard/SendableHelper.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;wpi/sendable/Sendable.h&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;wpi/sendable/SendableHelper.h&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;frc2/command/Subsystem.h&quot;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span>frc2 {</div>
 <div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classfrc2_1_1SubsystemBase.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc2_1_1SubsystemBase.html">SubsystemBase</a> : <span class="keyword">public</span> <a class="code" href="classfrc2_1_1Subsystem.html">Subsystem</a>,</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                      <span class="keyword">public</span> <a class="code" href="classfrc_1_1Sendable.html">frc::Sendable</a>,</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                      <span class="keyword">public</span> <a class="code" href="classfrc_1_1SendableHelper.html">frc::SendableHelper</a>&lt;SubsystemBase&gt; {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                      <span class="keyword">public</span> <a class="code" href="classwpi_1_1Sendable.html">wpi::Sendable</a>,</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                      <span class="keyword">public</span> <a class="code" href="classwpi_1_1SendableHelper.html">wpi::SendableHelper</a>&lt;SubsystemBase&gt; {</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classfrc2_1_1SubsystemBase.html#a9967650ba168dd618d7bef2058df53a6">   24</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc2_1_1SubsystemBase.html#a9967650ba168dd618d7bef2058df53a6">InitSendable</a>(<a class="code" href="classfrc_1_1SendableBuilder.html">frc::SendableBuilder</a>&amp; builder) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classfrc2_1_1SubsystemBase.html#af2501d93cd40b1ad8cc5f8487b0a2a82">   24</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc2_1_1SubsystemBase.html#af2501d93cd40b1ad8cc5f8487b0a2a82">InitSendable</a>(<a class="code" href="classwpi_1_1SendableBuilder.html">wpi::SendableBuilder</a>&amp; builder) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
 <div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classfrc2_1_1SubsystemBase.html#ace9a0ee1ee647c28bfb213c39468a06c">   31</a></span>&#160;  std::string <a class="code" href="classfrc2_1_1SubsystemBase.html#ace9a0ee1ee647c28bfb213c39468a06c">GetName</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
@@ -122,7 +122,7 @@ $(document).ready(function(){initNavTree('SubsystemBase_8h_source.html',''); ini
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
 <div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classfrc2_1_1SubsystemBase.html#a01d1b8bab95750dae485f5f2ea322b5f">   52</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc2_1_1SubsystemBase.html#a01d1b8bab95750dae485f5f2ea322b5f">SetSubsystem</a>(std::string_view name);</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classfrc2_1_1SubsystemBase.html#aab01073f3a7e86c106e70437b13abb95">   61</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc2_1_1SubsystemBase.html#aab01073f3a7e86c106e70437b13abb95">AddChild</a>(std::string name, <a class="code" href="classfrc_1_1Sendable.html">frc::Sendable</a>* child);</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classfrc2_1_1SubsystemBase.html#a464068a3dce23c11110e8d3e26346262">   61</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc2_1_1SubsystemBase.html#a464068a3dce23c11110e8d3e26346262">AddChild</a>(std::string name, <a class="code" href="classwpi_1_1Sendable.html">wpi::Sendable</a>* child);</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; <span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <a class="code" href="classfrc2_1_1SubsystemBase.html">SubsystemBase</a>();</div>
@@ -131,21 +131,21 @@ $(document).ready(function(){initNavTree('SubsystemBase_8h_source.html',''); ini
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassfrc2_1_1SubsystemBase_html_a4be073b25104735aa602fe289c30788b"><div class="ttname"><a href="classfrc2_1_1SubsystemBase.html#a4be073b25104735aa602fe289c30788b">frc2::SubsystemBase::SetName</a></div><div class="ttdeci">void SetName(std::string_view name)</div><div class="ttdoc">Sets the name of this Subsystem.</div></div>
-<div class="ttc" id="aclassfrc2_1_1SubsystemBase_html_a9967650ba168dd618d7bef2058df53a6"><div class="ttname"><a href="classfrc2_1_1SubsystemBase.html#a9967650ba168dd618d7bef2058df53a6">frc2::SubsystemBase::InitSendable</a></div><div class="ttdeci">void InitSendable(frc::SendableBuilder &amp;builder) override</div><div class="ttdoc">Initializes this Sendable object.</div></div>
-<div class="ttc" id="aclassfrc2_1_1SubsystemBase_html_aab01073f3a7e86c106e70437b13abb95"><div class="ttname"><a href="classfrc2_1_1SubsystemBase.html#aab01073f3a7e86c106e70437b13abb95">frc2::SubsystemBase::AddChild</a></div><div class="ttdeci">void AddChild(std::string name, frc::Sendable *child)</div><div class="ttdoc">Associate a Sendable with this Subsystem.</div></div>
+<div class="ttc" id="aclasswpi_1_1SendableBuilder_html"><div class="ttname"><a href="classwpi_1_1SendableBuilder.html">wpi::SendableBuilder</a></div><div class="ttdef"><b>Definition:</b> SendableBuilder.h:18</div></div>
+<div class="ttc" id="aclasswpi_1_1Sendable_html"><div class="ttname"><a href="classwpi_1_1Sendable.html">wpi::Sendable</a></div><div class="ttdoc">Interface for Sendable objects.</div><div class="ttdef"><b>Definition:</b> Sendable.h:14</div></div>
+<div class="ttc" id="aclasswpi_1_1SendableHelper_html"><div class="ttname"><a href="classwpi_1_1SendableHelper.html">wpi::SendableHelper</a></div><div class="ttdoc">A helper class for use with objects that add themselves to SendableRegistry.</div><div class="ttdef"><b>Definition:</b> SendableHelper.h:24</div></div>
 <div class="ttc" id="aclassfrc2_1_1SubsystemBase_html_a01d1b8bab95750dae485f5f2ea322b5f"><div class="ttname"><a href="classfrc2_1_1SubsystemBase.html#a01d1b8bab95750dae485f5f2ea322b5f">frc2::SubsystemBase::SetSubsystem</a></div><div class="ttdeci">void SetSubsystem(std::string_view name)</div><div class="ttdoc">Sets the subsystem name of this Subsystem.</div></div>
-<div class="ttc" id="aclassfrc_1_1Sendable_html"><div class="ttname"><a href="classfrc_1_1Sendable.html">frc::Sendable</a></div><div class="ttdoc">Interface for Sendable objects.</div><div class="ttdef"><b>Definition:</b> Sendable.h:14</div></div>
+<div class="ttc" id="aclassfrc2_1_1SubsystemBase_html_af2501d93cd40b1ad8cc5f8487b0a2a82"><div class="ttname"><a href="classfrc2_1_1SubsystemBase.html#af2501d93cd40b1ad8cc5f8487b0a2a82">frc2::SubsystemBase::InitSendable</a></div><div class="ttdeci">void InitSendable(wpi::SendableBuilder &amp;builder) override</div><div class="ttdoc">Initializes this Sendable object.</div></div>
 <div class="ttc" id="aclassfrc2_1_1SubsystemBase_html"><div class="ttname"><a href="classfrc2_1_1SubsystemBase.html">frc2::SubsystemBase</a></div><div class="ttdoc">A base for subsystems that handles registration in the constructor, and provides a more intuitive met...</div><div class="ttdef"><b>Definition:</b> SubsystemBase.h:22</div></div>
+<div class="ttc" id="aclassfrc2_1_1SubsystemBase_html_a464068a3dce23c11110e8d3e26346262"><div class="ttname"><a href="classfrc2_1_1SubsystemBase.html#a464068a3dce23c11110e8d3e26346262">frc2::SubsystemBase::AddChild</a></div><div class="ttdeci">void AddChild(std::string name, wpi::Sendable *child)</div><div class="ttdoc">Associate a Sendable with this Subsystem.</div></div>
 <div class="ttc" id="aclassfrc2_1_1Subsystem_html"><div class="ttname"><a href="classfrc2_1_1Subsystem.html">frc2::Subsystem</a></div><div class="ttdoc">A robot subsystem.</div><div class="ttdef"><b>Definition:</b> Subsystem.h:36</div></div>
 <div class="ttc" id="aclassfrc2_1_1SubsystemBase_html_ace9a0ee1ee647c28bfb213c39468a06c"><div class="ttname"><a href="classfrc2_1_1SubsystemBase.html#ace9a0ee1ee647c28bfb213c39468a06c">frc2::SubsystemBase::GetName</a></div><div class="ttdeci">std::string GetName() const</div><div class="ttdoc">Gets the name of this Subsystem.</div></div>
 <div class="ttc" id="aclassfrc2_1_1SubsystemBase_html_a4ebb92a7ecae884542de95e64b8b7bc1"><div class="ttname"><a href="classfrc2_1_1SubsystemBase.html#a4ebb92a7ecae884542de95e64b8b7bc1">frc2::SubsystemBase::GetSubsystem</a></div><div class="ttdeci">std::string GetSubsystem() const</div><div class="ttdoc">Gets the subsystem name of this Subsystem.</div></div>
-<div class="ttc" id="aclassfrc_1_1SendableHelper_html"><div class="ttname"><a href="classfrc_1_1SendableHelper.html">frc::SendableHelper</a></div><div class="ttdoc">A helper class for use with objects that add themselves to SendableRegistry.</div><div class="ttdef"><b>Definition:</b> SendableHelper.h:25</div></div>
-<div class="ttc" id="aclassfrc_1_1SendableBuilder_html"><div class="ttname"><a href="classfrc_1_1SendableBuilder.html">frc::SendableBuilder</a></div><div class="ttdef"><b>Definition:</b> SendableBuilder.h:21</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e7d5d1c9c07b3d6a0a849f7ca2bfcaa9.html">frc2</a></li><li class="navelem"><a class="el" href="dir_25d5854705192c92d2d003534c71255a.html">command</a></li><li class="navelem"><b>SubsystemBase.h</b></li>
-    <li class="footer">Generated on Sun Jun 13 2021 23:07:19 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 13 2021 23:40:25 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

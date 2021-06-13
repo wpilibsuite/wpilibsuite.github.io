@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-119-gef4ea84</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-120-gb417d96</span>
    </div>
   </td>
  </tr>
@@ -102,57 +102,59 @@ $(document).ready(function(){initNavTree('LiveWindow_8h_source.html',''); initRe
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;functional&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>frc {</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">class </span>Sendable;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>wpi {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">class </span>Sendable;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;}  <span class="comment">// namespace wpi</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classfrc_1_1LiveWindow.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1LiveWindow.html">LiveWindow</a> {</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <a class="code" href="classfrc_1_1LiveWindow.html">LiveWindow</a>(<span class="keyword">const</span> <a class="code" href="classfrc_1_1LiveWindow.html">LiveWindow</a>&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <a class="code" href="classfrc_1_1LiveWindow.html">LiveWindow</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="classfrc_1_1LiveWindow.html">LiveWindow</a>&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  std::function&lt;void()&gt; enabled;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  std::function&lt;void()&gt; disabled;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classfrc_1_1LiveWindow.html#ab1d14ba99d478ccabccffa8ee23a1261">   32</a></span>&#160;  <span class="keyword">static</span> <a class="code" href="classfrc_1_1LiveWindow.html">LiveWindow</a>* <a class="code" href="classfrc_1_1LiveWindow.html#ab1d14ba99d478ccabccffa8ee23a1261">GetInstance</a>();</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classfrc_1_1LiveWindow.html#a7b6411a50f980fac10d9532fc63bf692">   39</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1LiveWindow.html#a7b6411a50f980fac10d9532fc63bf692">EnableTelemetry</a>(<a class="code" href="classfrc_1_1Sendable.html">Sendable</a>* component);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classfrc_1_1LiveWindow.html#a8aab38281091d2ff6376f242015c554d">   46</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1LiveWindow.html#a8aab38281091d2ff6376f242015c554d">DisableTelemetry</a>(<a class="code" href="classfrc_1_1Sendable.html">Sendable</a>* component);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classfrc_1_1LiveWindow.html#a5523f55559289731881b0d303d49430d">   51</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1LiveWindow.html#a5523f55559289731881b0d303d49430d">DisableAllTelemetry</a>();</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">bool</span> IsEnabled() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span>frc {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classfrc_1_1LiveWindow.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1LiveWindow.html">LiveWindow</a> {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <a class="code" href="classfrc_1_1LiveWindow.html">LiveWindow</a>(<span class="keyword">const</span> <a class="code" href="classfrc_1_1LiveWindow.html">LiveWindow</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <a class="code" href="classfrc_1_1LiveWindow.html">LiveWindow</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="classfrc_1_1LiveWindow.html">LiveWindow</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  std::function&lt;void()&gt; enabled;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  std::function&lt;void()&gt; disabled;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classfrc_1_1LiveWindow.html#ab1d14ba99d478ccabccffa8ee23a1261">   34</a></span>&#160;  <span class="keyword">static</span> <a class="code" href="classfrc_1_1LiveWindow.html">LiveWindow</a>* <a class="code" href="classfrc_1_1LiveWindow.html#ab1d14ba99d478ccabccffa8ee23a1261">GetInstance</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classfrc_1_1LiveWindow.html#afb058887100de102d28971409abc6db0">   41</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1LiveWindow.html#afb058887100de102d28971409abc6db0">EnableTelemetry</a>(<a class="code" href="classwpi_1_1Sendable.html">wpi::Sendable</a>* component);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classfrc_1_1LiveWindow.html#acec07b0cef91b0c9c2ae049c5ff2520a">   48</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1LiveWindow.html#acec07b0cef91b0c9c2ae049c5ff2520a">DisableTelemetry</a>(<a class="code" href="classwpi_1_1Sendable.html">wpi::Sendable</a>* component);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classfrc_1_1LiveWindow.html#a5523f55559289731881b0d303d49430d">   53</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1LiveWindow.html#a5523f55559289731881b0d303d49430d">DisableAllTelemetry</a>();</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classfrc_1_1LiveWindow.html#a1c47b1e65dd43aed0d695be8e893b429">   60</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1LiveWindow.html#a1c47b1e65dd43aed0d695be8e893b429">SetEnabled</a>(<span class="keywordtype">bool</span> enabled);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classfrc_1_1LiveWindow.html#a8282ae655ce0cf5ee3f8b2a8dc102719">   68</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1LiveWindow.html#a8282ae655ce0cf5ee3f8b2a8dc102719">UpdateValues</a>();</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <a class="code" href="classfrc_1_1LiveWindow.html">LiveWindow</a>();</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keyword">struct </span>Impl;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  std::unique_ptr&lt;Impl&gt; m_impl;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordtype">void</span> UpdateValuesUnsafe();</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;};</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">bool</span> IsEnabled() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classfrc_1_1LiveWindow.html#a1c47b1e65dd43aed0d695be8e893b429">   62</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1LiveWindow.html#a1c47b1e65dd43aed0d695be8e893b429">SetEnabled</a>(<span class="keywordtype">bool</span> enabled);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="classfrc_1_1LiveWindow.html#a8282ae655ce0cf5ee3f8b2a8dc102719">   70</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1LiveWindow.html#a8282ae655ce0cf5ee3f8b2a8dc102719">UpdateValues</a>();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <a class="code" href="classfrc_1_1LiveWindow.html">LiveWindow</a>();</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keyword">struct </span>Impl;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  std::unique_ptr&lt;Impl&gt; m_impl;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordtype">void</span> UpdateValuesUnsafe();</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;};</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}  <span class="comment">// namespace frc</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassfrc_1_1LiveWindow_html_a8aab38281091d2ff6376f242015c554d"><div class="ttname"><a href="classfrc_1_1LiveWindow.html#a8aab38281091d2ff6376f242015c554d">frc::LiveWindow::DisableTelemetry</a></div><div class="ttdeci">void DisableTelemetry(Sendable *component)</div><div class="ttdoc">Disable telemetry for a single component.</div></div>
+<div class="ttc" id="aclassfrc_1_1LiveWindow_html_acec07b0cef91b0c9c2ae049c5ff2520a"><div class="ttname"><a href="classfrc_1_1LiveWindow.html#acec07b0cef91b0c9c2ae049c5ff2520a">frc::LiveWindow::DisableTelemetry</a></div><div class="ttdeci">void DisableTelemetry(wpi::Sendable *component)</div><div class="ttdoc">Disable telemetry for a single component.</div></div>
+<div class="ttc" id="aclasswpi_1_1Sendable_html"><div class="ttname"><a href="classwpi_1_1Sendable.html">wpi::Sendable</a></div><div class="ttdoc">Interface for Sendable objects.</div><div class="ttdef"><b>Definition:</b> Sendable.h:14</div></div>
+<div class="ttc" id="aclassfrc_1_1LiveWindow_html_afb058887100de102d28971409abc6db0"><div class="ttname"><a href="classfrc_1_1LiveWindow.html#afb058887100de102d28971409abc6db0">frc::LiveWindow::EnableTelemetry</a></div><div class="ttdeci">void EnableTelemetry(wpi::Sendable *component)</div><div class="ttdoc">Enable telemetry for a single component.</div></div>
 <div class="ttc" id="aclassfrc_1_1LiveWindow_html_a5523f55559289731881b0d303d49430d"><div class="ttname"><a href="classfrc_1_1LiveWindow.html#a5523f55559289731881b0d303d49430d">frc::LiveWindow::DisableAllTelemetry</a></div><div class="ttdeci">void DisableAllTelemetry()</div><div class="ttdoc">Disable ALL telemetry.</div></div>
 <div class="ttc" id="aclassfrc_1_1LiveWindow_html_ab1d14ba99d478ccabccffa8ee23a1261"><div class="ttname"><a href="classfrc_1_1LiveWindow.html#ab1d14ba99d478ccabccffa8ee23a1261">frc::LiveWindow::GetInstance</a></div><div class="ttdeci">static LiveWindow * GetInstance()</div><div class="ttdoc">Get an instance of the LiveWindow main class.</div></div>
-<div class="ttc" id="aclassfrc_1_1LiveWindow_html"><div class="ttname"><a href="classfrc_1_1LiveWindow.html">frc::LiveWindow</a></div><div class="ttdoc">The LiveWindow class is the public interface for putting sensors and actuators on the LiveWindow.</div><div class="ttdef"><b>Definition:</b> LiveWindow.h:18</div></div>
+<div class="ttc" id="aclassfrc_1_1LiveWindow_html"><div class="ttname"><a href="classfrc_1_1LiveWindow.html">frc::LiveWindow</a></div><div class="ttdoc">The LiveWindow class is the public interface for putting sensors and actuators on the LiveWindow.</div><div class="ttdef"><b>Definition:</b> LiveWindow.h:20</div></div>
 <div class="ttc" id="aclassfrc_1_1LiveWindow_html_a1c47b1e65dd43aed0d695be8e893b429"><div class="ttname"><a href="classfrc_1_1LiveWindow.html#a1c47b1e65dd43aed0d695be8e893b429">frc::LiveWindow::SetEnabled</a></div><div class="ttdeci">void SetEnabled(bool enabled)</div><div class="ttdoc">Change the enabled status of LiveWindow.</div></div>
-<div class="ttc" id="aclassfrc_1_1Sendable_html"><div class="ttname"><a href="classfrc_1_1Sendable.html">frc::Sendable</a></div><div class="ttdoc">Interface for Sendable objects.</div><div class="ttdef"><b>Definition:</b> Sendable.h:14</div></div>
 <div class="ttc" id="aclassfrc_1_1LiveWindow_html_a8282ae655ce0cf5ee3f8b2a8dc102719"><div class="ttname"><a href="classfrc_1_1LiveWindow.html#a8282ae655ce0cf5ee3f8b2a8dc102719">frc::LiveWindow::UpdateValues</a></div><div class="ttdeci">void UpdateValues()</div><div class="ttdoc">Tell all the sensors to update (send) their values.</div></div>
-<div class="ttc" id="aclassfrc_1_1LiveWindow_html_a7b6411a50f980fac10d9532fc63bf692"><div class="ttname"><a href="classfrc_1_1LiveWindow.html#a7b6411a50f980fac10d9532fc63bf692">frc::LiveWindow::EnableTelemetry</a></div><div class="ttdeci">void EnableTelemetry(Sendable *component)</div><div class="ttdoc">Enable telemetry for a single component.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_9ca97cc90ae1cd0bcd0d2fbcb2617eef.html">livewindow</a></li><li class="navelem"><b>LiveWindow.h</b></li>
-    <li class="footer">Generated on Sun Jun 13 2021 23:07:19 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 13 2021 23:40:24 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

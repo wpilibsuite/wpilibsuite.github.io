@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-119-gef4ea84</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-120-gb417d96</span>
    </div>
   </td>
  </tr>
@@ -105,48 +105,50 @@ $(document).ready(function(){initNavTree('ComplexWidget_8h_source.html',''); ini
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;networktables/NetworkTable.h&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;frc/shuffleboard/ShuffleboardWidget.h&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;frc/smartdashboard/SendableBuilder.h&quot;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;frc/smartdashboard/SendableBuilderImpl.h&quot;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span>frc {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">class </span>Sendable;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">class </span>ShuffleboardContainer;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span>wpi {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">class </span>Sendable;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">class </span>SendableBuilder;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}  <span class="comment">// namespace wpi</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">namespace </span>frc {</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classfrc_1_1ComplexWidget.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1ComplexWidget.html">ComplexWidget</a> final : <span class="keyword">public</span> <a class="code" href="classfrc_1_1ShuffleboardWidget.html">ShuffleboardWidget</a>&lt;ComplexWidget&gt; {</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <a class="code" href="classfrc_1_1ComplexWidget.html">ComplexWidget</a>(<a class="code" href="classfrc_1_1ShuffleboardContainer.html">ShuffleboardContainer</a>&amp; parent, std::string_view title,</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                <a class="code" href="classfrc_1_1Sendable.html">Sendable</a>&amp; sendable);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classfrc_1_1ComplexWidget.html#a98eab198798b7719f3a3cc330a13e5ab">   30</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1ComplexWidget.html#a98eab198798b7719f3a3cc330a13e5ab">EnableIfActuator</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">class </span>ShuffleboardContainer;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classfrc_1_1ComplexWidget.html">   27</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1ComplexWidget.html">ComplexWidget</a> final : <span class="keyword">public</span> <a class="code" href="classfrc_1_1ShuffleboardWidget.html">ShuffleboardWidget</a>&lt;ComplexWidget&gt; {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <a class="code" href="classfrc_1_1ComplexWidget.html">ComplexWidget</a>(<a class="code" href="classfrc_1_1ShuffleboardContainer.html">ShuffleboardContainer</a>&amp; parent, std::string_view title,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                <a class="code" href="classwpi_1_1Sendable.html">wpi::Sendable</a>&amp; sendable);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classfrc_1_1ComplexWidget.html#a3452e989b3fb4923a5258f3f1f90d147">   32</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1ComplexWidget.html#a3452e989b3fb4923a5258f3f1f90d147">DisableIfActuator</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  ~<a class="code" href="classfrc_1_1ComplexWidget.html">ComplexWidget</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classfrc_1_1ComplexWidget.html#a0c6b77ed05f282fca32f1323b9f898a7">   34</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1ComplexWidget.html#a0c6b77ed05f282fca32f1323b9f898a7">BuildInto</a>(std::shared_ptr&lt;nt::NetworkTable&gt; parentTable,</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                 std::shared_ptr&lt;nt::NetworkTable&gt; metaTable) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <a class="code" href="classfrc_1_1Sendable.html">Sendable</a>&amp; m_sendable;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="classfrc_1_1SendableBuilderImpl.html">SendableBuilderImpl</a> m_builder;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordtype">bool</span> m_builderInit = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;};</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classfrc_1_1ComplexWidget.html#a98eab198798b7719f3a3cc330a13e5ab">   34</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1ComplexWidget.html#a98eab198798b7719f3a3cc330a13e5ab">EnableIfActuator</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classfrc_1_1ComplexWidget.html#a3452e989b3fb4923a5258f3f1f90d147">   36</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1ComplexWidget.html#a3452e989b3fb4923a5258f3f1f90d147">DisableIfActuator</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classfrc_1_1ComplexWidget.html#a0c6b77ed05f282fca32f1323b9f898a7">   38</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1ComplexWidget.html#a0c6b77ed05f282fca32f1323b9f898a7">BuildInto</a>(std::shared_ptr&lt;nt::NetworkTable&gt; parentTable,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                 std::shared_ptr&lt;nt::NetworkTable&gt; metaTable) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="classwpi_1_1Sendable.html">wpi::Sendable</a>&amp; m_sendable;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  std::unique_ptr&lt;wpi::SendableBuilder&gt; m_builder;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;};</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}  <span class="comment">// namespace frc</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassfrc_1_1SendableBuilderImpl_html"><div class="ttname"><a href="classfrc_1_1SendableBuilderImpl.html">frc::SendableBuilderImpl</a></div><div class="ttdef"><b>Definition:</b> SendableBuilderImpl.h:24</div></div>
-<div class="ttc" id="aclassfrc_1_1ComplexWidget_html"><div class="ttname"><a href="classfrc_1_1ComplexWidget.html">frc::ComplexWidget</a></div><div class="ttdoc">A Shuffleboard widget that handles a Sendable object such as a speed controller or sensor.</div><div class="ttdef"><b>Definition:</b> ComplexWidget.h:25</div></div>
+<div class="ttc" id="aclassfrc_1_1ComplexWidget_html"><div class="ttname"><a href="classfrc_1_1ComplexWidget.html">frc::ComplexWidget</a></div><div class="ttdoc">A Shuffleboard widget that handles a Sendable object such as a speed controller or sensor.</div><div class="ttdef"><b>Definition:</b> ComplexWidget.h:27</div></div>
+<div class="ttc" id="aclasswpi_1_1Sendable_html"><div class="ttname"><a href="classwpi_1_1Sendable.html">wpi::Sendable</a></div><div class="ttdoc">Interface for Sendable objects.</div><div class="ttdef"><b>Definition:</b> Sendable.h:14</div></div>
 <div class="ttc" id="aclassfrc_1_1ComplexWidget_html_a3452e989b3fb4923a5258f3f1f90d147"><div class="ttname"><a href="classfrc_1_1ComplexWidget.html#a3452e989b3fb4923a5258f3f1f90d147">frc::ComplexWidget::DisableIfActuator</a></div><div class="ttdeci">void DisableIfActuator() override</div><div class="ttdoc">Disables user control of this widget in the Shuffleboard application.</div></div>
 <div class="ttc" id="aclassfrc_1_1ComplexWidget_html_a0c6b77ed05f282fca32f1323b9f898a7"><div class="ttname"><a href="classfrc_1_1ComplexWidget.html#a0c6b77ed05f282fca32f1323b9f898a7">frc::ComplexWidget::BuildInto</a></div><div class="ttdeci">void BuildInto(std::shared_ptr&lt; nt::NetworkTable &gt; parentTable, std::shared_ptr&lt; nt::NetworkTable &gt; metaTable) override</div><div class="ttdoc">Builds the entries for this value.</div></div>
-<div class="ttc" id="aclassfrc_1_1ShuffleboardContainer_html"><div class="ttname"><a href="classfrc_1_1ShuffleboardContainer.html">frc::ShuffleboardContainer</a></div><div class="ttdoc">Common interface for objects that can contain shuffleboard components.</div><div class="ttdef"><b>Definition:</b> ShuffleboardContainer.h:39</div></div>
+<div class="ttc" id="aclassfrc_1_1ShuffleboardContainer_html"><div class="ttname"><a href="classfrc_1_1ShuffleboardContainer.html">frc::ShuffleboardContainer</a></div><div class="ttdoc">Common interface for objects that can contain shuffleboard components.</div><div class="ttdef"><b>Definition:</b> ShuffleboardContainer.h:42</div></div>
 <div class="ttc" id="aclassfrc_1_1ComplexWidget_html_a98eab198798b7719f3a3cc330a13e5ab"><div class="ttname"><a href="classfrc_1_1ComplexWidget.html#a98eab198798b7719f3a3cc330a13e5ab">frc::ComplexWidget::EnableIfActuator</a></div><div class="ttdeci">void EnableIfActuator() override</div><div class="ttdoc">Enables user control of this widget in the Shuffleboard application.</div></div>
-<div class="ttc" id="aclassfrc_1_1Sendable_html"><div class="ttname"><a href="classfrc_1_1Sendable.html">frc::Sendable</a></div><div class="ttdoc">Interface for Sendable objects.</div><div class="ttdef"><b>Definition:</b> Sendable.h:14</div></div>
 <div class="ttc" id="aclassfrc_1_1ShuffleboardWidget_html"><div class="ttname"><a href="classfrc_1_1ShuffleboardWidget.html">frc::ShuffleboardWidget</a></div><div class="ttdoc">Abstract superclass for widgets.</div><div class="ttdef"><b>Definition:</b> ShuffleboardWidget.h:29</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_dca1c19c73302e87d1cbe8eae641dd78.html">shuffleboard</a></li><li class="navelem"><b>ComplexWidget.h</b></li>
-    <li class="footer">Generated on Sun Jun 13 2021 23:07:19 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 13 2021 23:40:24 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

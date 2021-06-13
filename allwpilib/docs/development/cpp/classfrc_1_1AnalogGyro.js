@@ -14,7 +14,7 @@ var classfrc_1_1AnalogGyro =
     [ "GetOffset", "classfrc_1_1AnalogGyro.html#a1bd6aa565101a820911a976a6501a244", null ],
     [ "GetRate", "classfrc_1_1AnalogGyro.html#ac4b9f9b77003b05b4445ea0468aa414d", null ],
     [ "InitGyro", "classfrc_1_1AnalogGyro.html#ac831c32add66237a3d2a4b51810d1cd5", null ],
-    [ "InitSendable", "classfrc_1_1AnalogGyro.html#ab634e4e6555fc3d8eb65e039f5733a5f", null ],
+    [ "InitSendable", "classfrc_1_1AnalogGyro.html#ad24893afe9b68e0ddd6d1072e02830fb", null ],
     [ "operator=", "classfrc_1_1AnalogGyro.html#aafa1d9b964a8dd5b247bf70e93118b93", null ],
     [ "Reset", "classfrc_1_1AnalogGyro.html#a460c398825749aed4f2a50f21385e07e", null ],
     [ "SetDeadband", "classfrc_1_1AnalogGyro.html#a0a99f91859b549a7166723640fe251ca", null ],

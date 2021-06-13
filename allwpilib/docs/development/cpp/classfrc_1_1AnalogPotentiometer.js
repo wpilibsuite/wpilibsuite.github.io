@@ -6,6 +6,6 @@ var classfrc_1_1AnalogPotentiometer =
     [ "~AnalogPotentiometer", "classfrc_1_1AnalogPotentiometer.html#aa2bf722b35e53b64890fc405d92ab0b8", null ],
     [ "AnalogPotentiometer", "classfrc_1_1AnalogPotentiometer.html#a037c828ba9908b54d2b0815f15a407e6", null ],
     [ "Get", "classfrc_1_1AnalogPotentiometer.html#a073e6a9c96e187be0feab33c3908d745", null ],
-    [ "InitSendable", "classfrc_1_1AnalogPotentiometer.html#ac357f6c7a609f89beb584a1b89225fed", null ],
+    [ "InitSendable", "classfrc_1_1AnalogPotentiometer.html#aca0f7310f17e2e7349d353548eed4a1a", null ],
     [ "operator=", "classfrc_1_1AnalogPotentiometer.html#a8968578b91bbbc18c6c43db5955b9143", null ]
 ];

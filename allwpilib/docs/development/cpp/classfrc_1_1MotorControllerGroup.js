@@ -6,7 +6,7 @@ var classfrc_1_1MotorControllerGroup =
     [ "Disable", "classfrc_1_1MotorControllerGroup.html#affa672f42c667d3ceac2b978540cacb2", null ],
     [ "Get", "classfrc_1_1MotorControllerGroup.html#a0666a9ab6022a9c6c6a7b31c23b5216a", null ],
     [ "GetInverted", "classfrc_1_1MotorControllerGroup.html#a927bec9e678a96b162ebb469c7ebf620", null ],
-    [ "InitSendable", "classfrc_1_1MotorControllerGroup.html#ad8eabf9e3bb596eebccfdee65d5e1eab", null ],
+    [ "InitSendable", "classfrc_1_1MotorControllerGroup.html#ac6b3950bbec9e0862593d20857d9c6c7", null ],
     [ "operator=", "classfrc_1_1MotorControllerGroup.html#aaa92d1da1245bbc72a29deec04b19977", null ],
     [ "Set", "classfrc_1_1MotorControllerGroup.html#a87d2d50dbdebbc4ed2da85d20d7a7607", null ],
     [ "SetInverted", "classfrc_1_1MotorControllerGroup.html#afa117b6a610daf923e7ae77eb2e0e19e", null ],

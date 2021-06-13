@@ -13,7 +13,7 @@ var classfrc2_1_1CommandScheduler =
     [ "Enable", "classfrc2_1_1CommandScheduler.html#ad7d60afe9eb0ff1525d2240efe0c9413", null ],
     [ "GetDefaultCommand", "classfrc2_1_1CommandScheduler.html#af1b3e6e4fc02dada98f29984d9f967dd", null ],
     [ "GetInstance", "classfrc2_1_1CommandScheduler.html#a4cb79f70b1682b21d897e7b057a766e6", null ],
-    [ "InitSendable", "classfrc2_1_1CommandScheduler.html#a14c1faabf308b9e59c441b50f79547c7", null ],
+    [ "InitSendable", "classfrc2_1_1CommandScheduler.html#a62d623797743f33f54f5ae1a9842e832", null ],
     [ "IsScheduled", "classfrc2_1_1CommandScheduler.html#a508ffa7f0fc5ceea855316d3a191a1f2", null ],
     [ "IsScheduled", "classfrc2_1_1CommandScheduler.html#a0b321c0d56e092a9a7de1d8dc3d5c977", null ],
     [ "IsScheduled", "classfrc2_1_1CommandScheduler.html#a7a5dbc8fcac9c6828ffd39ffcf5aa240", null ],

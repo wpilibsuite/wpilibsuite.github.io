@@ -1,12 +1,14 @@
 var NAVTREEINDEX7 =
 {
+"classfrc_1_1AsynchronousInterrupt.html#ae4be083edecc23fb8deae8f4fffbcc66":[5,0,5,17,9],
+"classfrc_1_1BuiltInAccelerometer.html":[5,0,5,18],
 "classfrc_1_1BuiltInAccelerometer.html#a5c32a616c68deb9203a21d549b54ca75":[5,0,5,18,0],
 "classfrc_1_1BuiltInAccelerometer.html#a6dd6e22c1eed09bf00d84ce2c6793e4e":[5,0,5,18,4],
 "classfrc_1_1BuiltInAccelerometer.html#a77a6aa8e81395e9fa809128e274b7989":[5,0,5,18,6],
 "classfrc_1_1BuiltInAccelerometer.html#a934e92f7f3aefacc14400f0f5c2b354e":[5,0,5,18,3],
-"classfrc_1_1BuiltInAccelerometer.html#aa466ef7845ce387d832069f81ba7b9a8":[5,0,5,18,5],
 "classfrc_1_1BuiltInAccelerometer.html#ab12c009e4a828729e7d1de1f34169ee6":[5,0,5,18,2],
 "classfrc_1_1BuiltInAccelerometer.html#ab44e41917da38a62c97dbe4a20443acf":[5,0,5,18,7],
+"classfrc_1_1BuiltInAccelerometer.html#ad36517c9d8f309f2640e10449d3cc5af":[5,0,5,18,5],
 "classfrc_1_1BuiltInAccelerometer.html#ade056a3b7125de572f3fd81072cc97aa":[5,0,5,18,1],
 "classfrc_1_1Button.html":[5,0,5,19],
 "classfrc_1_1Button.html#a412e86132cbcee3b3f02cd89e2e31c7f":[5,0,5,19,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX7 =
 "classfrc_1_1Color.html#af806c07163a90a6983039baa2d353711":[5,0,5,29,103],
 "classfrc_1_1Color.html#af95336dce5146f309ff82f4862209142":[5,0,5,29,131],
 "classfrc_1_1Color.html#afae9585a3c0f42a97b99c899e7a658dc":[5,0,5,29,73],
-"classfrc_1_1Color.html#afc8a9cdf7d5ea9c87032ff51a2e0b1c3":[5,0,5,29,112],
-"classfrc_1_1Color.html#afcb7977d48a565a402bd5170e036c65a":[5,0,5,29,124],
-"classfrc_1_1Color.html#afcc4a67428dc00bd34e998020eeb7a22":[5,0,5,29,132]
+"classfrc_1_1Color.html#afc8a9cdf7d5ea9c87032ff51a2e0b1c3":[5,0,5,29,112]
 };

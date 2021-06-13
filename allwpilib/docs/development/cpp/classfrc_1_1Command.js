@@ -28,7 +28,7 @@ var classfrc_1_1Command =
     [ "GetRequirements", "classfrc_1_1Command.html#a324ac11012078a9f3f9b43f3731807d5", null ],
     [ "GetSubsystem", "classfrc_1_1Command.html#af60c9bdc34425ba1f7c2c2f0642af79e", null ],
     [ "Initialize", "classfrc_1_1Command.html#a18db0ecafe4e8ec6c1d3e77393fc8843", null ],
-    [ "InitSendable", "classfrc_1_1Command.html#a4b1f5f0d84d55431acc146623c5bde5c", null ],
+    [ "InitSendable", "classfrc_1_1Command.html#ad598df3a9e9b4bca2242fb4aa594434f", null ],
     [ "Interrupted", "classfrc_1_1Command.html#a3e53f0de33e61973fbaeaf3a5f4a26aa", null ],
     [ "IsCanceled", "classfrc_1_1Command.html#a454143c4df402c266975e1ee124b9a92", null ],
     [ "IsCompleted", "classfrc_1_1Command.html#a75e98922283baeb640adf723bdd6c8ae", null ],

@@ -23,7 +23,7 @@ var classfrc_1_1Counter =
     [ "GetPeriod", "classfrc_1_1Counter.html#a8d703fa9e956b461a26c748ef3faf1ca", null ],
     [ "GetSamplesToAverage", "classfrc_1_1Counter.html#ad1f383540c8f5fc00456919bba790073", null ],
     [ "GetStopped", "classfrc_1_1Counter.html#aec0762cc681995343e5756636ac77fe5", null ],
-    [ "InitSendable", "classfrc_1_1Counter.html#ac8268a6f5a678d0441286cc1a064132f", null ],
+    [ "InitSendable", "classfrc_1_1Counter.html#a6c3fdf26e702fc63b735ae1f806ba2fc", null ],
     [ "operator=", "classfrc_1_1Counter.html#ae9050ba00a6d974c4e4ef030221a317e", null ],
     [ "Reset", "classfrc_1_1Counter.html#a356852c24f6abd80254bfe6a89d24aed", null ],
     [ "SetDownSource", "classfrc_1_1Counter.html#ad09b1a201b06b58d90247ba158f2739c", null ],

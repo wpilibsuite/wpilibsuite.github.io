@@ -11,7 +11,7 @@ var classfrc_1_1PowerDistributionPanel =
     [ "GetTotalEnergy", "classfrc_1_1PowerDistributionPanel.html#afe796d2fb6a23bce349d3e47e06c0ea6", null ],
     [ "GetTotalPower", "classfrc_1_1PowerDistributionPanel.html#abf5e21292221b457560484d6126e71a1", null ],
     [ "GetVoltage", "classfrc_1_1PowerDistributionPanel.html#a96ca1c2ead3f4a4a938801c7212eb962", null ],
-    [ "InitSendable", "classfrc_1_1PowerDistributionPanel.html#a61587faa02751a80a31dd9c05f20e8c3", null ],
+    [ "InitSendable", "classfrc_1_1PowerDistributionPanel.html#a38db76cf9795424ae0bf1fea0eafb682", null ],
     [ "operator=", "classfrc_1_1PowerDistributionPanel.html#a9d33de919ae2e6abe8aa88a64debccef", null ],
     [ "ResetTotalEnergy", "classfrc_1_1PowerDistributionPanel.html#ac51b662f769e566f695323b1f9cac544", null ]
 ];
