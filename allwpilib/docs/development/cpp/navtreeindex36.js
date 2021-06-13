@@ -1,5 +1,8 @@
 var NAVTREEINDEX36 =
 {
+"group__ntcore__network__cfunc.html#gab478ded74997d0de45295fa344726f0f":[3,1,5,15],
+"group__ntcore__network__cfunc.html#gabf4c3453a3f181b4bf55f894d2a0e50e":[3,1,5,11],
+"group__ntcore__network__cfunc.html#gacd8f16632452e67ca39605feaf1110a8":[3,1,5,13],
 "group__ntcore__network__cfunc.html#gade461a4f30454ee0a8c50cea1b00b6f0":[3,1,5,17],
 "group__ntcore__network__cfunc.html#gaef30093ce18098ce576e7255383199e2":[3,1,5,6],
 "group__ntcore__network__func.html":[3,3,5],
@@ -183,8 +186,8 @@ var NAVTREEINDEX36 =
 "md__home_runner_work_allwpilib_allwpilib_LICENSE.html":[0],
 "modules.html":[3],
 "mutex_8h_source.html":[6,0,11,47],
-"namespacecs.html":[5,0,0],
 "namespacecs.html":[4,0,0],
+"namespacecs.html":[5,0,0],
 "namespacefrc_1_1filesystem.html":[4,0,1,0],
 "namespacehal.html":[4,0,2],
 "namespacehal.html":[5,0,8],
@@ -199,8 +202,8 @@ var NAVTREEINDEX36 =
 "namespaces.html":[4,0],
 "namespacewpi_1_1detail.html":[4,0,4,0],
 "namespacewpi_1_1detail.html":[5,0,11,0],
-"namespacewpi_1_1java.html":[4,0,4,1],
 "namespacewpi_1_1java.html":[5,0,11,3],
+"namespacewpi_1_1java.html":[4,0,4,1],
 "never__destroyed_8h_source.html":[6,0,2,0,5],
 "nodiscard_8h_source.html":[6,0,11,50],
 "ntcore_8h_source.html":[6,0,20],
@@ -246,8 +249,5 @@ var NAVTREEINDEX36 =
 "structCS__UsbCameraInfo.html":[3,4,19],
 "structCS__UsbCameraInfo.html#a25e552236309e4799cda12df106f2106":[3,4,19,2],
 "structCS__UsbCameraInfo.html#a3ba5b90fa1f6462321a02a643695f602":[3,4,19,6],
-"structCS__UsbCameraInfo.html#a7ca41852519549bfe766484b59de8a40":[3,4,19,3],
-"structCS__UsbCameraInfo.html#a81311211a5ded68cf47ac7cb02c5cbcf":[3,4,19,0],
-"structCS__UsbCameraInfo.html#ad163783cac498752f3de6dd2fc593db8":[3,4,19,5],
-"structCS__UsbCameraInfo.html#aeaf92af97323e8e9382d48b72abc5a16":[3,4,19,1]
+"structCS__UsbCameraInfo.html#a7ca41852519549bfe766484b59de8a40":[3,4,19,3]
 };

@@ -1,5 +1,8 @@
 var NAVTREEINDEX33 =
 {
+"dir_01760b1104b35a6fd322a027d9259ea5.html":[6,0,11,0],
+"dir_02fb1de250452f44c80739865561dc94.html":[6,0,8,1],
+"dir_03b7d37b9dc08ca478f4c25141f731ae.html":[6,0,8,2],
 "dir_0616eb0edb7e8533b85fb847c3c08b17.html":[6,0,4],
 "dir_07f1050b175e2d01c230e5cadf135f7c.html":[6,0,3],
 "dir_11fa3620b13e96ccc6d4bbc9ccdbdb01.html":[6,0,6,2],
@@ -88,8 +91,8 @@ var NAVTREEINDEX33 =
 "functions_enum.html":[5,3,4],
 "functions_eval.html":[5,3,5],
 "functions_f.html":[5,3,0,6],
-"functions_func.html":[5,3,1],
 "functions_func.html":[5,3,1,0],
+"functions_func.html":[5,3,1],
 "functions_func_a.html":[5,3,1,1],
 "functions_func_b.html":[5,3,1,2],
 "functions_func_c.html":[5,3,1,3],
@@ -246,8 +249,5 @@ var NAVTREEINDEX33 =
 "group__hal__analoggyro.html#gadc7a11e59c368c174d79abe8fdeaea5e":[3,0,20,9],
 "group__hal__analoginput.html":[3,0,26],
 "group__hal__analoginput.html#ga02f152b2f03f34e45343791b307d0452":[3,0,26,3],
-"group__hal__analoginput.html#ga0f6a90fde07eda6f64d27edff7e6746a":[3,0,26,17],
-"group__hal__analoginput.html#ga3217a276a5295f6f9d13fa205edff47b":[3,0,26,11],
-"group__hal__analoginput.html#ga34d0a68a34c9fcc696d96b1102c7b3f8":[3,0,26,15],
-"group__hal__analoginput.html#ga6193461057b56f1e2273584221464418":[3,0,26,7]
+"group__hal__analoginput.html#ga0f6a90fde07eda6f64d27edff7e6746a":[3,0,26,17]
 };

@@ -1,5 +1,8 @@
 var NAVTREEINDEX40 =
 {
+"structghc_1_1filesystem_1_1space__info.html#ae3aaec720c16cab46c72d253be7dca9d":[5,0,7,0,12,1],
+"structhal_1_1DIOSetProxy.html":[5,0,8,2],
+"structhal_1_1DIOSetProxy.html#a02f1e61d6d9426b60543504689ec1698":[5,0,8,2,1],
 "structhal_1_1DIOSetProxy.html#a256b0940f2a2ce34db9ab1ddea836c9d":[5,0,8,2,5],
 "structhal_1_1DIOSetProxy.html#a388429ec7dfcecc1835cf453ca9aad4c":[5,0,8,2,7],
 "structhal_1_1DIOSetProxy.html#a50686b1970ed96094f0a16fe08288d82":[5,0,8,2,9],
@@ -246,8 +249,5 @@ var NAVTREEINDEX40 =
 "structwpi_1_1PointerIntPairInfo.html#af9ea60cafa23b60657295128deec2029":[5,0,11,91,7],
 "structwpi_1_1PointerIntPairInfo.html#afa13d415e0727c7c5eb37b8b957d3eb3":[5,0,11,91,6],
 "structwpi_1_1PointerLikeTypeTraits.html":[5,0,11,92],
-"structwpi_1_1PointerLikeTypeTraits_3_01PointerIntPair_3_01PointerTy_00_01IntBits_00_01IntType_00_01PtrTraits_01_4_01_4.html":[5,0,11,95],
-"structwpi_1_1PointerLikeTypeTraits_3_01PointerIntPair_3_01PointerTy_00_01IntBits_00_01IntType_00_01PtrTraits_01_4_01_4.html#a09f4ad2fa53f22db3cbc69eb78f0ea8e":[5,0,11,95,1],
-"structwpi_1_1PointerLikeTypeTraits_3_01PointerIntPair_3_01PointerTy_00_01IntBits_00_01IntType_00_01PtrTraits_01_4_01_4.html#a1eabf1a71a9294758c647a3bc64f3d86":[5,0,11,95,2],
-"structwpi_1_1PointerLikeTypeTraits_3_01PointerIntPair_3_01PointerTy_00_01IntBits_00_01IntType_00_01PtrTraits_01_4_01_4.html#a823a46f492b782256b91d899d5e8d71a":[5,0,11,95,3]
+"structwpi_1_1PointerLikeTypeTraits_3_01PointerIntPair_3_01PointerTy_00_01IntBits_00_01IntType_00_01PtrTraits_01_4_01_4.html":[5,0,11,95]
 };

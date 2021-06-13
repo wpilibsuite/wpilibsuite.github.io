@@ -1,5 +1,8 @@
 var NAVTREEINDEX24 =
 {
+"classwpi_1_1HttpPathRef.html#a0aaa317481374f29d9af3b51d3bd3fd5":[5,0,11,62,3],
+"classwpi_1_1HttpPathRef.html#a13a8cfac1783304f042a30a6736a8339":[5,0,11,62,14],
+"classwpi_1_1HttpPathRef.html#a1b376bb9731ed55b839661f0a66d09fd":[5,0,11,62,12],
 "classwpi_1_1HttpPathRef.html#a2445c8c024340376208d977917a18bb4":[5,0,11,62,16],
 "classwpi_1_1HttpPathRef.html#a34e6211be88dc90d2588091a2c48ace9":[5,0,11,62,5],
 "classwpi_1_1HttpPathRef.html#a531f2be1f3fadc9e07b5ed41971f0bd2":[5,0,11,62,10],
@@ -246,8 +249,5 @@ var NAVTREEINDEX24 =
 "classwpi_1_1PointerUnionUIntTraits.html#a66518523749f0b86cd8a6f3f491da242":[5,0,11,110,3],
 "classwpi_1_1PortForwarder.html":[5,0,11,111],
 "classwpi_1_1PortForwarder.html#a255fdc5125d14e3987a91f58767d3f62":[5,0,11,111,1],
-"classwpi_1_1PortForwarder.html#a335108442d9bed20e79c1ee385729784":[5,0,11,111,3],
-"classwpi_1_1PortForwarder.html#a69321f62cd088582ab8a1b48b771865c":[5,0,11,111,2],
-"classwpi_1_1PortForwarder.html#ab7714761ade7f7d9f7158d3990ec3739":[5,0,11,111,4],
-"classwpi_1_1PortForwarder.html#acc335fb133bb1f9327383dff47f1f8b8":[5,0,11,111,0]
+"classwpi_1_1PortForwarder.html#a335108442d9bed20e79c1ee385729784":[5,0,11,111,3]
 };

@@ -1,5 +1,8 @@
 var NAVTREEINDEX9 =
 {
+"classfrc_1_1DMA.html#afce83d02ca7dc4a5828e323422254609":[5,0,5,53,3],
+"classfrc_1_1DMASample.html":[5,0,5,54],
+"classfrc_1_1DMASample.html#a0f4aedf762d4ea5396221b0bc2537541":[5,0,5,54,10],
 "classfrc_1_1DMASample.html#a19921e60ea1c11cbb246d709b81ef866":[5,0,5,54,4],
 "classfrc_1_1DMASample.html#a1ea3025fc5a55acbddb8e9b09cc54eaf":[5,0,5,54,0],
 "classfrc_1_1DMASample.html#a2b220a234c2e9d73ffb0495bcd20840a":[5,0,5,54,5],
@@ -246,8 +249,5 @@ var NAVTREEINDEX9 =
 "classfrc_1_1ElevatorFeedforward.html#aba5ec71554befafc8dd9c8560eecb463":[5,0,5,60,14],
 "classfrc_1_1ElevatorFeedforward.html#abcf0f05092f91475ef7963f323289ffe":[5,0,5,60,0],
 "classfrc_1_1ElevatorFeedforward.html#acf276a5c244c84580a670a9bee1df4a0":[5,0,5,60,2],
-"classfrc_1_1ElevatorFeedforward.html#ae39e57aaa304d49985853353c39c6380":[5,0,5,60,12],
-"classfrc_1_1ElevatorFeedforward.html#aef0703e075b22b2196c67adf91cf6896":[5,0,5,60,9],
-"classfrc_1_1ElevatorFeedforward.html#afcd91ca93ccb0b7ffc09d1f0425f9be6":[5,0,5,60,4],
-"classfrc_1_1EllipticalRegionConstraint.html":[5,0,5,61]
+"classfrc_1_1ElevatorFeedforward.html#ae39e57aaa304d49985853353c39c6380":[5,0,5,60,12]
 };

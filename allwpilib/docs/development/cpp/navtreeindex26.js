@@ -1,5 +1,8 @@
 var NAVTREEINDEX26 =
 {
+"classwpi_1_1SmallVectorImpl.html#ae0932ee9e9c857ba10836ad4ef74541f":[5,0,11,160,7],
+"classwpi_1_1SmallVectorImpl.html#af103c53f1da879d0269439b839fd233f":[5,0,11,160,19],
+"classwpi_1_1SmallVectorImpl.html#afcc2c09b896d1267702a0f99614281e0":[5,0,11,160,28],
 "classwpi_1_1SmallVectorImpl.html#afd420cab2ed68fd9b848d3d5faf01d2f":[5,0,11,160,16],
 "classwpi_1_1SmallVectorImpl.html#affa74cb3522d6cc11e500aeee8daebf7":[5,0,11,160,15],
 "classwpi_1_1SmallVectorTemplateBase.html":[5,0,11,163],
@@ -246,8 +249,5 @@ var NAVTREEINDEX26 =
 "classwpi_1_1VersionTuple.html#a871b5ea2d9c0746c0eb32f36bdf5c2ff":[5,0,11,186,4],
 "classwpi_1_1VersionTuple.html#aae7f5e6be0a91b9c5f629f583eb89452":[5,0,11,186,7],
 "classwpi_1_1VersionTuple.html#ab5ef9f5597f9b7f2ca66e889ea1cf3ae":[5,0,11,186,9],
-"classwpi_1_1VersionTuple.html#adfce2b618ca7468efe9df9203bb1282d":[5,0,11,186,3],
-"classwpi_1_1VersionTuple.html#ae5fcab8ce10189b39de1ed4f55d81665":[5,0,11,186,8],
-"classwpi_1_1VersionTuple.html#ae7e9308b6336e026f1f64d6e032f6568":[5,0,11,186,13],
-"classwpi_1_1VersionTuple.html#af2c7a3c38cdcec673b1b89ae99a6f73b":[5,0,11,186,14]
+"classwpi_1_1VersionTuple.html#adfce2b618ca7468efe9df9203bb1282d":[5,0,11,186,3]
 };

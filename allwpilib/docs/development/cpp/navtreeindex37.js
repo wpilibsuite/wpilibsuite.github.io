@@ -1,5 +1,8 @@
 var NAVTREEINDEX37 =
 {
+"structCS__UsbCameraInfo.html#a81311211a5ded68cf47ac7cb02c5cbcf":[3,4,19,0],
+"structCS__UsbCameraInfo.html#ad163783cac498752f3de6dd2fc593db8":[3,4,19,5],
+"structCS__UsbCameraInfo.html#aeaf92af97323e8e9382d48b72abc5a16":[3,4,19,1],
 "structCS__UsbCameraInfo.html#af8e259e0d7a97fc2f358458928aea8c5":[3,4,19,4],
 "structCS__VideoMode.html":[3,4,17],
 "structCS__VideoMode.html#a7712c4356a511ba2d7daee027b509de1":[3,4,17,3],
@@ -246,8 +249,5 @@ var NAVTREEINDEX37 =
 "structchrono__format__checker.html#a02d57c3dd2fb8f12515548761d4acfb2":[5,0,43,21],
 "structchrono__format__checker.html#a0757f988c18f602f8415d3080e3d9f21":[5,0,43,10],
 "structchrono__format__checker.html#a09e675223ea627f35d47665955e2f355":[5,0,43,6],
-"structchrono__format__checker.html#a0afb6bc7919f53f51e6f2bfc18dd04c5":[5,0,43,4],
-"structchrono__format__checker.html#a1ffc02cc86336037c4733b9bc05823ee":[5,0,43,23],
-"structchrono__format__checker.html#a2ddc60cc069ca1131bb80950f25b3946":[5,0,43,12],
-"structchrono__format__checker.html#a36ab46db9ebab57c003cd773f5ae53c9":[5,0,43,3]
+"structchrono__format__checker.html#a0afb6bc7919f53f51e6f2bfc18dd04c5":[5,0,43,4]
 };

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-118-gb422665</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-119-gef4ea84</span>
    </div>
   </td>
  </tr>
@@ -159,18 +159,27 @@ $(document).ready(function(){initNavTree('SequentialCommandGroup_8h_source.html'
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
 <div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classfrc2_1_1SequentialCommandGroup.html#a5aa6a2bc503b46495ec47d24ccdf82e5">   85</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc2_1_1SequentialCommandGroup.html#a5aa6a2bc503b46495ec47d24ccdf82e5">RunsWhenDisabled</a>() <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordtype">void</span> AddCommands(std::vector&lt;std::unique_ptr&lt;Command&gt;&gt;&amp;&amp; commands) <span class="keyword">final</span>;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <a class="code" href="classwpi_1_1SmallVector.html">wpi::SmallVector&lt;std::unique_ptr&lt;Command&gt;</a>, 4&gt; m_commands;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordtype">size_t</span> m_currentCommandIndex{invalid_index};</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordtype">bool</span> m_runWhenDisabled{<span class="keyword">true</span>};</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;};</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}  <span class="comment">// namespace frc2</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <a class="code" href="classfrc2_1_1SequentialCommandGroup.html">SequentialCommandGroup</a> BeforeStarting(</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      std::function&lt;<span class="keywordtype">void</span>()&gt; toRun,</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      wpi::ArrayRef&lt;Subsystem*&gt; requirements = {}) &amp;&amp;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <a class="code" href="classfrc2_1_1SequentialCommandGroup.html">SequentialCommandGroup</a> AndThen(std::function&lt;<span class="keywordtype">void</span>()&gt; toRun,</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                                 wpi::ArrayRef&lt;Subsystem*&gt; requirements = {}) &amp;&amp;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="preprocessor">#ifdef _WIN32</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#pragma warning(pop)</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordtype">void</span> AddCommands(std::vector&lt;std::unique_ptr&lt;Command&gt;&gt;&amp;&amp; commands) <span class="keyword">final</span>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <a class="code" href="classwpi_1_1SmallVector.html">wpi::SmallVector&lt;std::unique_ptr&lt;Command&gt;</a>, 4&gt; m_commands;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keywordtype">size_t</span> m_currentCommandIndex{invalid_index};</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keywordtype">bool</span> m_runWhenDisabled{<span class="keyword">true</span>};</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;};</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;}  <span class="comment">// namespace frc2</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#ifdef _WIN32</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#pragma warning(pop)</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassfrc2_1_1SequentialCommandGroup_html_a089385b0790dee592c70ae54891be209"><div class="ttname"><a href="classfrc2_1_1SequentialCommandGroup.html#a089385b0790dee592c70ae54891be209">frc2::SequentialCommandGroup::Execute</a></div><div class="ttdeci">void Execute() override</div><div class="ttdoc">The main body of a command.</div></div>
@@ -187,7 +196,7 @@ $(document).ready(function(){initNavTree('SequentialCommandGroup_8h_source.html'
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e7d5d1c9c07b3d6a0a849f7ca2bfcaa9.html">frc2</a></li><li class="navelem"><a class="el" href="dir_25d5854705192c92d2d003534c71255a.html">command</a></li><li class="navelem"><b>SequentialCommandGroup.h</b></li>
-    <li class="footer">Generated on Sun Jun 13 2021 22:45:27 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 13 2021 23:07:19 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

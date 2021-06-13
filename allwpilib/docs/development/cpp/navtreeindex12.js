@@ -1,5 +1,8 @@
 var NAVTREEINDEX12 =
 {
+"classfrc_1_1MotorControllerGroup.html#a786f25a7ac1363d4c4b59a41eeef2c2b":[5,0,5,107,0],
+"classfrc_1_1MotorControllerGroup.html#a87d2d50dbdebbc4ed2da85d20d7a7607":[5,0,5,107,8],
+"classfrc_1_1MotorControllerGroup.html#a927bec9e678a96b162ebb469c7ebf620":[5,0,5,107,5],
 "classfrc_1_1MotorControllerGroup.html#a9f0a43ccbd19ac6b6cf2427408b3646b":[5,0,5,107,1],
 "classfrc_1_1MotorControllerGroup.html#a9f33bca180a40e347adb1c8ce4f2bbba":[5,0,5,107,2],
 "classfrc_1_1MotorControllerGroup.html#aaa92d1da1245bbc72a29deec04b19977":[5,0,5,107,7],
@@ -246,8 +249,5 @@ var NAVTREEINDEX12 =
 "classfrc_1_1PWMVenom.html":[5,0,5,133],
 "classfrc_1_1PWMVenom.html#a4d1d70e332b581098085a00b2e4fc413":[5,0,5,133,2],
 "classfrc_1_1PWMVenom.html#ab3ccf358a5fc1348b06cb764fe30002c":[5,0,5,133,0],
-"classfrc_1_1PWMVenom.html#ac22f5cd715cbb542e235a516c4a20ac0":[5,0,5,133,1],
-"classfrc_1_1PWMVictorSPX.html":[5,0,5,134],
-"classfrc_1_1PWMVictorSPX.html#a44587d027583bfa66b961c7c77c6611e":[5,0,5,134,2],
-"classfrc_1_1PWMVictorSPX.html#ac53e410aec61882f026226123a8eea4c":[5,0,5,134,0]
+"classfrc_1_1PWMVenom.html#ac22f5cd715cbb542e235a516c4a20ac0":[5,0,5,133,1]
 };

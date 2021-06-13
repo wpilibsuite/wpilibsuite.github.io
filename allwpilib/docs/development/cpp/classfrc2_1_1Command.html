@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-118-gb422665</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-119-gef4ea84</span>
    </div>
   </td>
  </tr>
@@ -161,30 +161,30 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a37fd2b0824058ee2eadb057a329040c1"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classwpi_1_1SmallSet.html">wpi::SmallSet</a>&lt; <a class="el" href="classfrc2_1_1Subsystem.html">Subsystem</a> *, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1Command.html#a37fd2b0824058ee2eadb057a329040c1">GetRequirements</a> () const =0</td></tr>
 <tr class="memdesc:a37fd2b0824058ee2eadb057a329040c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the set of subsystems used by this command.  <a href="classfrc2_1_1Command.html#a37fd2b0824058ee2eadb057a329040c1">More...</a><br /></td></tr>
 <tr class="separator:a37fd2b0824058ee2eadb057a329040c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ea625147c08ce10ba8e8a767cd321d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1ParallelRaceGroup.html">ParallelRaceGroup</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1Command.html#a3ea625147c08ce10ba8e8a767cd321d6">WithTimeout</a> (units::second_t duration) &amp;&amp;</td></tr>
-<tr class="memdesc:a3ea625147c08ce10ba8e8a767cd321d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command with a timeout.  <a href="classfrc2_1_1Command.html#a3ea625147c08ce10ba8e8a767cd321d6">More...</a><br /></td></tr>
-<tr class="separator:a3ea625147c08ce10ba8e8a767cd321d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a6078c253a1578b3310833dcdfc01f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1ParallelRaceGroup.html">ParallelRaceGroup</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1Command.html#a4a6078c253a1578b3310833dcdfc01f0">WithInterrupt</a> (std::function&lt; bool()&gt; condition) &amp;&amp;</td></tr>
-<tr class="memdesc:a4a6078c253a1578b3310833dcdfc01f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command with an interrupt condition.  <a href="classfrc2_1_1Command.html#a4a6078c253a1578b3310833dcdfc01f0">More...</a><br /></td></tr>
-<tr class="separator:a4a6078c253a1578b3310833dcdfc01f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a147d269840b44a8ef1c15ab40b7c1893"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1SequentialCommandGroup.html">SequentialCommandGroup</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1Command.html#a147d269840b44a8ef1c15ab40b7c1893">BeforeStarting</a> (std::function&lt; void()&gt; toRun, std::initializer_list&lt; <a class="el" href="classfrc2_1_1Subsystem.html">Subsystem</a> * &gt; requirements) &amp;&amp;</td></tr>
-<tr class="memdesc:a147d269840b44a8ef1c15ab40b7c1893"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command with a runnable to run before this command starts.  <a href="classfrc2_1_1Command.html#a147d269840b44a8ef1c15ab40b7c1893">More...</a><br /></td></tr>
-<tr class="separator:a147d269840b44a8ef1c15ab40b7c1893"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae05a3d168f268f822a821fadfcef465f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1SequentialCommandGroup.html">SequentialCommandGroup</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1Command.html#ae05a3d168f268f822a821fadfcef465f">BeforeStarting</a> (std::function&lt; void()&gt; toRun, <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; <a class="el" href="classfrc2_1_1Subsystem.html">Subsystem</a> *const &gt; requirements={}) &amp;&amp;</td></tr>
-<tr class="memdesc:ae05a3d168f268f822a821fadfcef465f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command with a runnable to run before this command starts.  <a href="classfrc2_1_1Command.html#ae05a3d168f268f822a821fadfcef465f">More...</a><br /></td></tr>
-<tr class="separator:ae05a3d168f268f822a821fadfcef465f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade79bfb9d4ad670cdcb35369c0081b37"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1SequentialCommandGroup.html">SequentialCommandGroup</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1Command.html#ade79bfb9d4ad670cdcb35369c0081b37">AndThen</a> (std::function&lt; void()&gt; toRun, std::initializer_list&lt; <a class="el" href="classfrc2_1_1Subsystem.html">Subsystem</a> * &gt; requirements) &amp;&amp;</td></tr>
-<tr class="memdesc:ade79bfb9d4ad670cdcb35369c0081b37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command with a runnable to run after the command finishes.  <a href="classfrc2_1_1Command.html#ade79bfb9d4ad670cdcb35369c0081b37">More...</a><br /></td></tr>
-<tr class="separator:ade79bfb9d4ad670cdcb35369c0081b37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7dfcfa60ee03518f4c3c1f97f31ce361"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1SequentialCommandGroup.html">SequentialCommandGroup</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1Command.html#a7dfcfa60ee03518f4c3c1f97f31ce361">AndThen</a> (std::function&lt; void()&gt; toRun, <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; <a class="el" href="classfrc2_1_1Subsystem.html">Subsystem</a> *const &gt; requirements={}) &amp;&amp;</td></tr>
-<tr class="memdesc:a7dfcfa60ee03518f4c3c1f97f31ce361"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command with a runnable to run after the command finishes.  <a href="classfrc2_1_1Command.html#a7dfcfa60ee03518f4c3c1f97f31ce361">More...</a><br /></td></tr>
-<tr class="separator:a7dfcfa60ee03518f4c3c1f97f31ce361"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac215e297864084cba7b0a4b6d4aa558f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1PerpetualCommand.html">PerpetualCommand</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1Command.html#ac215e297864084cba7b0a4b6d4aa558f">Perpetually</a> () &amp;&amp;</td></tr>
-<tr class="memdesc:ac215e297864084cba7b0a4b6d4aa558f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command to run perpetually, ignoring its ordinary end conditions.  <a href="classfrc2_1_1Command.html#ac215e297864084cba7b0a4b6d4aa558f">More...</a><br /></td></tr>
-<tr class="separator:ac215e297864084cba7b0a4b6d4aa558f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab726d92cac6600d12d7ad6d57f21a08a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1ProxyScheduleCommand.html">ProxyScheduleCommand</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1Command.html#ab726d92cac6600d12d7ad6d57f21a08a">AsProxy</a> ()</td></tr>
-<tr class="memdesc:ab726d92cac6600d12d7ad6d57f21a08a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command to run "by proxy" by wrapping it in a <a class="el" href="classfrc2_1_1ProxyScheduleCommand.html" title="Schedules the given commands when this command is initialized, and ends when all the commands are no ...">ProxyScheduleCommand</a>.  <a href="classfrc2_1_1Command.html#ab726d92cac6600d12d7ad6d57f21a08a">More...</a><br /></td></tr>
-<tr class="separator:ab726d92cac6600d12d7ad6d57f21a08a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d1ba6905ebca2f7e000942b318b59ae"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classfrc2_1_1ParallelRaceGroup.html">ParallelRaceGroup</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1Command.html#a7d1ba6905ebca2f7e000942b318b59ae">WithTimeout</a> (units::second_t duration) &amp;&amp;</td></tr>
+<tr class="memdesc:a7d1ba6905ebca2f7e000942b318b59ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command with a timeout.  <a href="classfrc2_1_1Command.html#a7d1ba6905ebca2f7e000942b318b59ae">More...</a><br /></td></tr>
+<tr class="separator:a7d1ba6905ebca2f7e000942b318b59ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5d6a753ec2790f274bc7b884e9e305b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classfrc2_1_1ParallelRaceGroup.html">ParallelRaceGroup</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1Command.html#ad5d6a753ec2790f274bc7b884e9e305b">WithInterrupt</a> (std::function&lt; bool()&gt; condition) &amp;&amp;</td></tr>
+<tr class="memdesc:ad5d6a753ec2790f274bc7b884e9e305b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command with an interrupt condition.  <a href="classfrc2_1_1Command.html#ad5d6a753ec2790f274bc7b884e9e305b">More...</a><br /></td></tr>
+<tr class="separator:ad5d6a753ec2790f274bc7b884e9e305b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f411a9590b1ab45fbcb132787596662"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classfrc2_1_1SequentialCommandGroup.html">SequentialCommandGroup</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1Command.html#a9f411a9590b1ab45fbcb132787596662">BeforeStarting</a> (std::function&lt; void()&gt; toRun, std::initializer_list&lt; <a class="el" href="classfrc2_1_1Subsystem.html">Subsystem</a> * &gt; requirements) &amp;&amp;</td></tr>
+<tr class="memdesc:a9f411a9590b1ab45fbcb132787596662"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command with a runnable to run before this command starts.  <a href="classfrc2_1_1Command.html#a9f411a9590b1ab45fbcb132787596662">More...</a><br /></td></tr>
+<tr class="separator:a9f411a9590b1ab45fbcb132787596662"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8d1d6ccf24f90ffa9be270544dd7162"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classfrc2_1_1SequentialCommandGroup.html">SequentialCommandGroup</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1Command.html#ab8d1d6ccf24f90ffa9be270544dd7162">BeforeStarting</a> (std::function&lt; void()&gt; toRun, <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; <a class="el" href="classfrc2_1_1Subsystem.html">Subsystem</a> *const &gt; requirements={}) &amp;&amp;</td></tr>
+<tr class="memdesc:ab8d1d6ccf24f90ffa9be270544dd7162"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command with a runnable to run before this command starts.  <a href="classfrc2_1_1Command.html#ab8d1d6ccf24f90ffa9be270544dd7162">More...</a><br /></td></tr>
+<tr class="separator:ab8d1d6ccf24f90ffa9be270544dd7162"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82d7a714c4c6162d3d5fc426d9ceeb5b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classfrc2_1_1SequentialCommandGroup.html">SequentialCommandGroup</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1Command.html#a82d7a714c4c6162d3d5fc426d9ceeb5b">AndThen</a> (std::function&lt; void()&gt; toRun, std::initializer_list&lt; <a class="el" href="classfrc2_1_1Subsystem.html">Subsystem</a> * &gt; requirements) &amp;&amp;</td></tr>
+<tr class="memdesc:a82d7a714c4c6162d3d5fc426d9ceeb5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command with a runnable to run after the command finishes.  <a href="classfrc2_1_1Command.html#a82d7a714c4c6162d3d5fc426d9ceeb5b">More...</a><br /></td></tr>
+<tr class="separator:a82d7a714c4c6162d3d5fc426d9ceeb5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0cc63118f578b328222ab2e9f1b7b65"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classfrc2_1_1SequentialCommandGroup.html">SequentialCommandGroup</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1Command.html#ab0cc63118f578b328222ab2e9f1b7b65">AndThen</a> (std::function&lt; void()&gt; toRun, <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; <a class="el" href="classfrc2_1_1Subsystem.html">Subsystem</a> *const &gt; requirements={}) &amp;&amp;</td></tr>
+<tr class="memdesc:ab0cc63118f578b328222ab2e9f1b7b65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command with a runnable to run after the command finishes.  <a href="classfrc2_1_1Command.html#ab0cc63118f578b328222ab2e9f1b7b65">More...</a><br /></td></tr>
+<tr class="separator:ab0cc63118f578b328222ab2e9f1b7b65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e72c5be424accbf416cf35be061c918"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classfrc2_1_1PerpetualCommand.html">PerpetualCommand</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1Command.html#a4e72c5be424accbf416cf35be061c918">Perpetually</a> () &amp;&amp;</td></tr>
+<tr class="memdesc:a4e72c5be424accbf416cf35be061c918"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command to run perpetually, ignoring its ordinary end conditions.  <a href="classfrc2_1_1Command.html#a4e72c5be424accbf416cf35be061c918">More...</a><br /></td></tr>
+<tr class="separator:a4e72c5be424accbf416cf35be061c918"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd847a1c3b2097e9d13cd0c1b00dbacf"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classfrc2_1_1ProxyScheduleCommand.html">ProxyScheduleCommand</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1Command.html#afd847a1c3b2097e9d13cd0c1b00dbacf">AsProxy</a> ()</td></tr>
+<tr class="memdesc:afd847a1c3b2097e9d13cd0c1b00dbacf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command to run "by proxy" by wrapping it in a <a class="el" href="classfrc2_1_1ProxyScheduleCommand.html" title="Schedules the given commands when this command is initialized, and ends when all the commands are no ...">ProxyScheduleCommand</a>.  <a href="classfrc2_1_1Command.html#afd847a1c3b2097e9d13cd0c1b00dbacf">More...</a><br /></td></tr>
+<tr class="separator:afd847a1c3b2097e9d13cd0c1b00dbacf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9920c649ab4ac6f37155e19f348145e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1Command.html#aa9920c649ab4ac6f37155e19f348145e">Schedule</a> (bool interruptible)</td></tr>
 <tr class="memdesc:aa9920c649ab4ac6f37155e19f348145e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedules this command.  <a href="classfrc2_1_1Command.html#aa9920c649ab4ac6f37155e19f348145e">More...</a><br /></td></tr>
 <tr class="separator:aa9920c649ab4ac6f37155e19f348145e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -235,14 +235,17 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isGrouped</b> = fal
 <dd>
 <a class="el" href="classfrc2_1_1CommandHelper.html" title="CRTP implementation to allow polymorphic decorator functions in Command.">CommandHelper</a> </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ade79bfb9d4ad670cdcb35369c0081b37"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade79bfb9d4ad670cdcb35369c0081b37">&#9670;&nbsp;</a></span>AndThen() <span class="overload">[1/2]</span></h2>
+<a id="a82d7a714c4c6162d3d5fc426d9ceeb5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82d7a714c4c6162d3d5fc426d9ceeb5b">&#9670;&nbsp;</a></span>AndThen() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classfrc2_1_1SequentialCommandGroup.html">SequentialCommandGroup</a> frc2::Command::AndThen </td>
+          <td class="memname">virtual <a class="el" href="classfrc2_1_1SequentialCommandGroup.html">SequentialCommandGroup</a> frc2::Command::AndThen </td>
           <td>(</td>
           <td class="paramtype">std::function&lt; void()&gt;&#160;</td>
           <td class="paramname"><em>toRun</em>, </td>
@@ -259,6 +262,11 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isGrouped</b> = fal
           <td></td><td> &amp;&amp;</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Decorates this command with a runnable to run after the command finishes. </p>
@@ -273,14 +281,17 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isGrouped</b> = fal
 
 </div>
 </div>
-<a id="a7dfcfa60ee03518f4c3c1f97f31ce361"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7dfcfa60ee03518f4c3c1f97f31ce361">&#9670;&nbsp;</a></span>AndThen() <span class="overload">[2/2]</span></h2>
+<a id="ab0cc63118f578b328222ab2e9f1b7b65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0cc63118f578b328222ab2e9f1b7b65">&#9670;&nbsp;</a></span>AndThen() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classfrc2_1_1SequentialCommandGroup.html">SequentialCommandGroup</a> frc2::Command::AndThen </td>
+          <td class="memname">virtual <a class="el" href="classfrc2_1_1SequentialCommandGroup.html">SequentialCommandGroup</a> frc2::Command::AndThen </td>
           <td>(</td>
           <td class="paramtype">std::function&lt; void()&gt;&#160;</td>
           <td class="paramname"><em>toRun</em>, </td>
@@ -297,6 +308,11 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isGrouped</b> = fal
           <td></td><td> &amp;&amp;</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Decorates this command with a runnable to run after the command finishes. </p>
@@ -311,19 +327,27 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isGrouped</b> = fal
 
 </div>
 </div>
-<a id="ab726d92cac6600d12d7ad6d57f21a08a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab726d92cac6600d12d7ad6d57f21a08a">&#9670;&nbsp;</a></span>AsProxy()</h2>
+<a id="afd847a1c3b2097e9d13cd0c1b00dbacf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd847a1c3b2097e9d13cd0c1b00dbacf">&#9670;&nbsp;</a></span>AsProxy()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classfrc2_1_1ProxyScheduleCommand.html">ProxyScheduleCommand</a> frc2::Command::AsProxy </td>
+          <td class="memname">virtual <a class="el" href="classfrc2_1_1ProxyScheduleCommand.html">ProxyScheduleCommand</a> frc2::Command::AsProxy </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Decorates this command to run "by proxy" by wrapping it in a <a class="el" href="classfrc2_1_1ProxyScheduleCommand.html" title="Schedules the given commands when this command is initialized, and ends when all the commands are no ...">ProxyScheduleCommand</a>. </p>
@@ -332,14 +356,17 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isGrouped</b> = fal
 
 </div>
 </div>
-<a id="a147d269840b44a8ef1c15ab40b7c1893"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a147d269840b44a8ef1c15ab40b7c1893">&#9670;&nbsp;</a></span>BeforeStarting() <span class="overload">[1/2]</span></h2>
+<a id="a9f411a9590b1ab45fbcb132787596662"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f411a9590b1ab45fbcb132787596662">&#9670;&nbsp;</a></span>BeforeStarting() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classfrc2_1_1SequentialCommandGroup.html">SequentialCommandGroup</a> frc2::Command::BeforeStarting </td>
+          <td class="memname">virtual <a class="el" href="classfrc2_1_1SequentialCommandGroup.html">SequentialCommandGroup</a> frc2::Command::BeforeStarting </td>
           <td>(</td>
           <td class="paramtype">std::function&lt; void()&gt;&#160;</td>
           <td class="paramname"><em>toRun</em>, </td>
@@ -356,6 +383,11 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isGrouped</b> = fal
           <td></td><td> &amp;&amp;</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Decorates this command with a runnable to run before this command starts. </p>
@@ -370,14 +402,17 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isGrouped</b> = fal
 
 </div>
 </div>
-<a id="ae05a3d168f268f822a821fadfcef465f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae05a3d168f268f822a821fadfcef465f">&#9670;&nbsp;</a></span>BeforeStarting() <span class="overload">[2/2]</span></h2>
+<a id="ab8d1d6ccf24f90ffa9be270544dd7162"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8d1d6ccf24f90ffa9be270544dd7162">&#9670;&nbsp;</a></span>BeforeStarting() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classfrc2_1_1SequentialCommandGroup.html">SequentialCommandGroup</a> frc2::Command::BeforeStarting </td>
+          <td class="memname">virtual <a class="el" href="classfrc2_1_1SequentialCommandGroup.html">SequentialCommandGroup</a> frc2::Command::BeforeStarting </td>
           <td>(</td>
           <td class="paramtype">std::function&lt; void()&gt;&#160;</td>
           <td class="paramname"><em>toRun</em>, </td>
@@ -394,6 +429,11 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isGrouped</b> = fal
           <td></td><td> &amp;&amp;</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Decorates this command with a runnable to run before this command starts. </p>
@@ -650,24 +690,34 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isGrouped</b> = fal
 
 </div>
 </div>
-<a id="ac215e297864084cba7b0a4b6d4aa558f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac215e297864084cba7b0a4b6d4aa558f">&#9670;&nbsp;</a></span>Perpetually()</h2>
+<a id="a4e72c5be424accbf416cf35be061c918"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e72c5be424accbf416cf35be061c918">&#9670;&nbsp;</a></span>Perpetually()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classfrc2_1_1PerpetualCommand.html">PerpetualCommand</a> frc2::Command::Perpetually </td>
+          <td class="memname">virtual <a class="el" href="classfrc2_1_1PerpetualCommand.html">PerpetualCommand</a> frc2::Command::Perpetually </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> &amp;&amp;</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Decorates this command to run perpetually, ignoring its ordinary end conditions. </p>
 <p>The decorated command can still be interrupted or canceled.</p>
 <dl class="section return"><dt>Returns</dt><dd>the decorated command </dd></dl>
+
+<p>Reimplemented in <a class="el" href="classfrc2_1_1PerpetualCommand.html#a04d5b01d258361c73094bd60defa5928">frc2::PerpetualCommand</a>.</p>
 
 </div>
 </div>
@@ -779,20 +829,28 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isGrouped</b> = fal
 
 </div>
 </div>
-<a id="a4a6078c253a1578b3310833dcdfc01f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a6078c253a1578b3310833dcdfc01f0">&#9670;&nbsp;</a></span>WithInterrupt()</h2>
+<a id="ad5d6a753ec2790f274bc7b884e9e305b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5d6a753ec2790f274bc7b884e9e305b">&#9670;&nbsp;</a></span>WithInterrupt()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classfrc2_1_1ParallelRaceGroup.html">ParallelRaceGroup</a> frc2::Command::WithInterrupt </td>
+          <td class="memname">virtual <a class="el" href="classfrc2_1_1ParallelRaceGroup.html">ParallelRaceGroup</a> frc2::Command::WithInterrupt </td>
           <td>(</td>
           <td class="paramtype">std::function&lt; bool()&gt;&#160;</td>
           <td class="paramname"><em>condition</em></td><td>)</td>
           <td> &amp;&amp;</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Decorates this command with an interrupt condition. </p>
@@ -807,20 +865,28 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isGrouped</b> = fal
 
 </div>
 </div>
-<a id="a3ea625147c08ce10ba8e8a767cd321d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ea625147c08ce10ba8e8a767cd321d6">&#9670;&nbsp;</a></span>WithTimeout()</h2>
+<a id="a7d1ba6905ebca2f7e000942b318b59ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d1ba6905ebca2f7e000942b318b59ae">&#9670;&nbsp;</a></span>WithTimeout()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classfrc2_1_1ParallelRaceGroup.html">ParallelRaceGroup</a> frc2::Command::WithTimeout </td>
+          <td class="memname">virtual <a class="el" href="classfrc2_1_1ParallelRaceGroup.html">ParallelRaceGroup</a> frc2::Command::WithTimeout </td>
           <td>(</td>
           <td class="paramtype">units::second_t&#160;</td>
           <td class="paramname"><em>duration</em></td><td>)</td>
           <td> &amp;&amp;</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Decorates this command with a timeout. </p>
@@ -844,7 +910,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isGrouped</b> = fal
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>frc2</b></li><li class="navelem"><a class="el" href="classfrc2_1_1Command.html">Command</a></li>
-    <li class="footer">Generated on Sun Jun 13 2021 22:45:31 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 13 2021 23:07:22 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>
