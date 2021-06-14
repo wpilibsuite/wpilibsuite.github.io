@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-120-gb417d96</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-121-g85144e4</span>
    </div>
   </td>
  </tr>
@@ -153,12 +153,12 @@ template&lt;class... Types, typename  = std::enable_if_t&lt;std::conjunction_v&l
 <tr class="memitem:a5aa6a2bc503b46495ec47d24ccdf82e5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1SequentialCommandGroup.html#a5aa6a2bc503b46495ec47d24ccdf82e5">RunsWhenDisabled</a> () const override</td></tr>
 <tr class="memdesc:a5aa6a2bc503b46495ec47d24ccdf82e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the given command should run when the robot is disabled.  <a href="classfrc2_1_1SequentialCommandGroup.html#a5aa6a2bc503b46495ec47d24ccdf82e5">More...</a><br /></td></tr>
 <tr class="separator:a5aa6a2bc503b46495ec47d24ccdf82e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf6b2bd684dc078032cb7f2723615660"><td class="memItemLeft" align="right" valign="top"><a id="aaf6b2bd684dc078032cb7f2723615660"></a>
-<a class="el" href="classfrc2_1_1SequentialCommandGroup.html">SequentialCommandGroup</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BeforeStarting</b> (std::function&lt; void()&gt; toRun, wpi::ArrayRef&lt; <a class="el" href="classfrc2_1_1Subsystem.html">Subsystem</a> * &gt; requirements={}) &amp;&amp;override</td></tr>
-<tr class="separator:aaf6b2bd684dc078032cb7f2723615660"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1aa2be10499c0c34dd2150886cd7d5ef"><td class="memItemLeft" align="right" valign="top"><a id="a1aa2be10499c0c34dd2150886cd7d5ef"></a>
-<a class="el" href="classfrc2_1_1SequentialCommandGroup.html">SequentialCommandGroup</a>&#160;</td><td class="memItemRight" valign="bottom"><b>AndThen</b> (std::function&lt; void()&gt; toRun, wpi::ArrayRef&lt; <a class="el" href="classfrc2_1_1Subsystem.html">Subsystem</a> * &gt; requirements={}) &amp;&amp;override</td></tr>
-<tr class="separator:a1aa2be10499c0c34dd2150886cd7d5ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcd4d525096b03629279f6c4a411ea03"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1SequentialCommandGroup.html">SequentialCommandGroup</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1SequentialCommandGroup.html#adcd4d525096b03629279f6c4a411ea03">BeforeStarting</a> (std::function&lt; void()&gt; toRun, <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; <a class="el" href="classfrc2_1_1Subsystem.html">Subsystem</a> *const &gt; requirements={}) &amp;&amp;override</td></tr>
+<tr class="memdesc:adcd4d525096b03629279f6c4a411ea03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command with a runnable to run before this command starts.  <a href="classfrc2_1_1SequentialCommandGroup.html#adcd4d525096b03629279f6c4a411ea03">More...</a><br /></td></tr>
+<tr class="separator:adcd4d525096b03629279f6c4a411ea03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3e6741fb467452aed2511115ac88faf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1SequentialCommandGroup.html">SequentialCommandGroup</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1SequentialCommandGroup.html#ac3e6741fb467452aed2511115ac88faf">AndThen</a> (std::function&lt; void()&gt; toRun, <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; <a class="el" href="classfrc2_1_1Subsystem.html">Subsystem</a> *const &gt; requirements={}) &amp;&amp;override</td></tr>
+<tr class="memdesc:ac3e6741fb467452aed2511115ac88faf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command with a runnable to run after the command finishes.  <a href="classfrc2_1_1SequentialCommandGroup.html#ac3e6741fb467452aed2511115ac88faf">More...</a><br /></td></tr>
+<tr class="separator:ac3e6741fb467452aed2511115ac88faf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classfrc2_1_1CommandBase"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classfrc2_1_1CommandBase')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classfrc2_1_1CommandBase.html">frc2::CommandBase</a></td></tr>
 <tr class="memitem:a64f050689acd13a075633d78786d5aaf inherit pub_methods_classfrc2_1_1CommandBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1CommandBase.html#a64f050689acd13a075633d78786d5aaf">AddRequirements</a> (std::initializer_list&lt; <a class="el" href="classfrc2_1_1Subsystem.html">Subsystem</a> * &gt; requirements)</td></tr>
 <tr class="memdesc:a64f050689acd13a075633d78786d5aaf inherit pub_methods_classfrc2_1_1CommandBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the specified requirements to the command.  <a href="classfrc2_1_1CommandBase.html#a64f050689acd13a075633d78786d5aaf">More...</a><br /></td></tr>
@@ -209,15 +209,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>AddRequirements</b> (
 <tr class="memitem:a9f411a9590b1ab45fbcb132787596662 inherit pub_methods_classfrc2_1_1Command"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classfrc2_1_1SequentialCommandGroup.html">SequentialCommandGroup</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1Command.html#a9f411a9590b1ab45fbcb132787596662">BeforeStarting</a> (std::function&lt; void()&gt; toRun, std::initializer_list&lt; <a class="el" href="classfrc2_1_1Subsystem.html">Subsystem</a> * &gt; requirements) &amp;&amp;</td></tr>
 <tr class="memdesc:a9f411a9590b1ab45fbcb132787596662 inherit pub_methods_classfrc2_1_1Command"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command with a runnable to run before this command starts.  <a href="classfrc2_1_1Command.html#a9f411a9590b1ab45fbcb132787596662">More...</a><br /></td></tr>
 <tr class="separator:a9f411a9590b1ab45fbcb132787596662 inherit pub_methods_classfrc2_1_1Command"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8d1d6ccf24f90ffa9be270544dd7162 inherit pub_methods_classfrc2_1_1Command"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classfrc2_1_1SequentialCommandGroup.html">SequentialCommandGroup</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1Command.html#ab8d1d6ccf24f90ffa9be270544dd7162">BeforeStarting</a> (std::function&lt; void()&gt; toRun, <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; <a class="el" href="classfrc2_1_1Subsystem.html">Subsystem</a> *const &gt; requirements={}) &amp;&amp;</td></tr>
-<tr class="memdesc:ab8d1d6ccf24f90ffa9be270544dd7162 inherit pub_methods_classfrc2_1_1Command"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command with a runnable to run before this command starts.  <a href="classfrc2_1_1Command.html#ab8d1d6ccf24f90ffa9be270544dd7162">More...</a><br /></td></tr>
-<tr class="separator:ab8d1d6ccf24f90ffa9be270544dd7162 inherit pub_methods_classfrc2_1_1Command"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82d7a714c4c6162d3d5fc426d9ceeb5b inherit pub_methods_classfrc2_1_1Command"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classfrc2_1_1SequentialCommandGroup.html">SequentialCommandGroup</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1Command.html#a82d7a714c4c6162d3d5fc426d9ceeb5b">AndThen</a> (std::function&lt; void()&gt; toRun, std::initializer_list&lt; <a class="el" href="classfrc2_1_1Subsystem.html">Subsystem</a> * &gt; requirements) &amp;&amp;</td></tr>
 <tr class="memdesc:a82d7a714c4c6162d3d5fc426d9ceeb5b inherit pub_methods_classfrc2_1_1Command"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command with a runnable to run after the command finishes.  <a href="classfrc2_1_1Command.html#a82d7a714c4c6162d3d5fc426d9ceeb5b">More...</a><br /></td></tr>
 <tr class="separator:a82d7a714c4c6162d3d5fc426d9ceeb5b inherit pub_methods_classfrc2_1_1Command"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0cc63118f578b328222ab2e9f1b7b65 inherit pub_methods_classfrc2_1_1Command"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classfrc2_1_1SequentialCommandGroup.html">SequentialCommandGroup</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1Command.html#ab0cc63118f578b328222ab2e9f1b7b65">AndThen</a> (std::function&lt; void()&gt; toRun, <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; <a class="el" href="classfrc2_1_1Subsystem.html">Subsystem</a> *const &gt; requirements={}) &amp;&amp;</td></tr>
-<tr class="memdesc:ab0cc63118f578b328222ab2e9f1b7b65 inherit pub_methods_classfrc2_1_1Command"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command with a runnable to run after the command finishes.  <a href="classfrc2_1_1Command.html#ab0cc63118f578b328222ab2e9f1b7b65">More...</a><br /></td></tr>
-<tr class="separator:ab0cc63118f578b328222ab2e9f1b7b65 inherit pub_methods_classfrc2_1_1Command"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e72c5be424accbf416cf35be061c918 inherit pub_methods_classfrc2_1_1Command"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classfrc2_1_1PerpetualCommand.html">PerpetualCommand</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1Command.html#a4e72c5be424accbf416cf35be061c918">Perpetually</a> () &amp;&amp;</td></tr>
 <tr class="memdesc:a4e72c5be424accbf416cf35be061c918 inherit pub_methods_classfrc2_1_1Command"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decorates this command to run perpetually, ignoring its ordinary end conditions.  <a href="classfrc2_1_1Command.html#a4e72c5be424accbf416cf35be061c918">More...</a><br /></td></tr>
 <tr class="separator:a4e72c5be424accbf416cf35be061c918 inherit pub_methods_classfrc2_1_1Command"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -397,6 +391,102 @@ template&lt;class... Types, typename  = std::enable_if_t&lt;std::conjunction_v&l
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac3e6741fb467452aed2511115ac88faf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3e6741fb467452aed2511115ac88faf">&#9670;&nbsp;</a></span>AndThen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfrc2_1_1SequentialCommandGroup.html">SequentialCommandGroup</a> frc2::SequentialCommandGroup::AndThen </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; void()&gt;&#160;</td>
+          <td class="paramname"><em>toRun</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; <a class="el" href="classfrc2_1_1Subsystem.html">Subsystem</a> *const &gt;&#160;</td>
+          <td class="paramname"><em>requirements</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> &amp;&amp;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Decorates this command with a runnable to run after the command finishes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">toRun</td><td>the Runnable to run </td></tr>
+    <tr><td class="paramname">requirements</td><td>the required subsystems </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the decorated command </dd></dl>
+
+<p>Reimplemented from <a class="el" href="classfrc2_1_1Command.html#ab0cc63118f578b328222ab2e9f1b7b65">frc2::Command</a>.</p>
+
+</div>
+</div>
+<a id="adcd4d525096b03629279f6c4a411ea03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcd4d525096b03629279f6c4a411ea03">&#9670;&nbsp;</a></span>BeforeStarting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfrc2_1_1SequentialCommandGroup.html">SequentialCommandGroup</a> frc2::SequentialCommandGroup::BeforeStarting </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; void()&gt;&#160;</td>
+          <td class="paramname"><em>toRun</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; <a class="el" href="classfrc2_1_1Subsystem.html">Subsystem</a> *const &gt;&#160;</td>
+          <td class="paramname"><em>requirements</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> &amp;&amp;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Decorates this command with a runnable to run before this command starts. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">toRun</td><td>the Runnable to run </td></tr>
+    <tr><td class="paramname">requirements</td><td>the required subsystems </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the decorated command </dd></dl>
+
+<p>Reimplemented from <a class="el" href="classfrc2_1_1Command.html#ab8d1d6ccf24f90ffa9be270544dd7162">frc2::Command</a>.</p>
+
+</div>
+</div>
 <a id="a798af677bbcbb29270d828749c551bec"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a798af677bbcbb29270d828749c551bec">&#9670;&nbsp;</a></span>End()</h2>
 
@@ -565,7 +655,7 @@ template&lt;class... Types, typename  = std::enable_if_t&lt;std::conjunction_v&l
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>frc2</b></li><li class="navelem"><a class="el" href="classfrc2_1_1SequentialCommandGroup.html">SequentialCommandGroup</a></li>
-    <li class="footer">Generated on Sun Jun 13 2021 23:40:29 for WPILibC++ by
+    <li class="footer">Generated on Mon Jun 14 2021 14:37:43 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>
