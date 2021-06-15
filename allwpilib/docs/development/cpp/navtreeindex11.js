@@ -1,5 +1,14 @@
 var NAVTREEINDEX11 =
 {
+"classfrc_1_1Joystick.html#a8446bec782e1db910d4fe7fef8fd91cc":[5,0,5,75,22],
+"classfrc_1_1Joystick.html#a86e2971cd0f21cb4ec0594279830fb70":[5,0,5,75,10],
+"classfrc_1_1Joystick.html#a8cb0f38310cf9fdd0f5ef7915e9f61f3":[5,0,5,75,12],
+"classfrc_1_1Joystick.html#a8da655d8c056e00ef787373e22fc707e":[5,0,5,75,31],
+"classfrc_1_1Joystick.html#a900dc7eeab035c4151fc5ebc88006487":[5,0,5,75,33],
+"classfrc_1_1Joystick.html#a93df8f506da8175b8b26070d063655ba":[5,0,5,75,28],
+"classfrc_1_1Joystick.html#a986446219fb0dc5bdde10c1f37b97513":[5,0,5,75,20],
+"classfrc_1_1Joystick.html#aa1736feefead176e8843f463608e9a7c":[5,0,5,75,6],
+"classfrc_1_1Joystick.html#aaa3652f52c28d71b2a372a79b74bf35b":[5,0,5,75,4],
 "classfrc_1_1Joystick.html#aad454d6d34e1a45ddd49f56b4ff835e4":[5,0,5,75,9],
 "classfrc_1_1Joystick.html#ab9e402a6429034621c81584deaa9dc8e":[5,0,5,75,29],
 "classfrc_1_1Joystick.html#abd7d1284c86e3cc2098e9749acc8fd0e":[5,0,5,75,0],
@@ -240,14 +249,5 @@ var NAVTREEINDEX11 =
 "classfrc_1_1MedianFilter.html":[5,0,5,104],
 "classfrc_1_1MedianFilter.html#a4ac072582b7de24424968f63e185af50":[5,0,5,104,0],
 "classfrc_1_1MedianFilter.html#a641ec0f285315c7ebd84865321c90f85":[5,0,5,104,1],
-"classfrc_1_1MedianFilter.html#ae13a8f7ef27720e65b3fc66b172ad489":[5,0,5,104,2],
-"classfrc_1_1MerweScaledSigmaPoints.html":[5,0,5,105],
-"classfrc_1_1MerweScaledSigmaPoints.html#a15c06c71c78144ba7d589bdbdfccf404":[5,0,5,105,1],
-"classfrc_1_1MerweScaledSigmaPoints.html#a2a376a61a41f7e2cd5bae21588aa7560":[5,0,5,105,0],
-"classfrc_1_1MerweScaledSigmaPoints.html#a49f3dcf4e9152d25279ca737ab0bd521":[5,0,5,105,5],
-"classfrc_1_1MerweScaledSigmaPoints.html#a539ed39d0c09683d022e072796696cf0":[5,0,5,105,4],
-"classfrc_1_1MerweScaledSigmaPoints.html#a7e4bd5990975d8d226f92460094ef071":[5,0,5,105,6],
-"classfrc_1_1MerweScaledSigmaPoints.html#ab725ba8e1238a46ed8a537efd562ce4f":[5,0,5,105,3],
-"classfrc_1_1MerweScaledSigmaPoints.html#ae70b5e9545215f123368f4670b29b253":[5,0,5,105,2],
-"classfrc_1_1MotorController.html":[5,0,5,106]
+"classfrc_1_1MedianFilter.html#ae13a8f7ef27720e65b3fc66b172ad489":[5,0,5,104,2]
 };

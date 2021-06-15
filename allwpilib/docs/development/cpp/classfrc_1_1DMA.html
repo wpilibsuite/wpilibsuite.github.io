@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-121-g85144e4</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-122-g4a36f86</span>
    </div>
   </td>
  </tr>
@@ -109,9 +109,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a08ed0d0bbf6f224a214daa8f0e7b1e9e"><td class="memItemLeft" align="right" valign="top"><a id="a08ed0d0bbf6f224a214daa8f0e7b1e9e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPause</b> (bool pause)</td></tr>
 <tr class="separator:a08ed0d0bbf6f224a214daa8f0e7b1e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65cf5d723ccf445279e13e2afbb90a3c"><td class="memItemLeft" align="right" valign="top"><a id="a65cf5d723ccf445279e13e2afbb90a3c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetRate</b> (int cycles)</td></tr>
-<tr class="separator:a65cf5d723ccf445279e13e2afbb90a3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2107b846a04bc10a1b284651b0e5744d"><td class="memItemLeft" align="right" valign="top"><a id="a2107b846a04bc10a1b284651b0e5744d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTimedTrigger</b> (units::second_t seconds)</td></tr>
+<tr class="separator:a2107b846a04bc10a1b284651b0e5744d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a841fba1c8ae58540d9117197a57f2182"><td class="memItemLeft" align="right" valign="top"><a id="a841fba1c8ae58540d9117197a57f2182"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTimedTriggerCycles</b> (int cycles)</td></tr>
+<tr class="separator:a841fba1c8ae58540d9117197a57f2182"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af267e400ea72ded4ccd4b7ac0d0bc501"><td class="memItemLeft" align="right" valign="top"><a id="af267e400ea72ded4ccd4b7ac0d0bc501"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>AddEncoder</b> (const <a class="el" href="classfrc_1_1Encoder.html">Encoder</a> *encoder)</td></tr>
 <tr class="separator:af267e400ea72ded4ccd4b7ac0d0bc501"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,15 +142,27 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>AddAveragedAnalogInpu
 <tr class="memitem:afce83d02ca7dc4a5828e323422254609"><td class="memItemLeft" align="right" valign="top"><a id="afce83d02ca7dc4a5828e323422254609"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>AddAnalogAccumulator</b> (const <a class="el" href="classfrc_1_1AnalogInput.html">AnalogInput</a> *analogInput)</td></tr>
 <tr class="separator:afce83d02ca7dc4a5828e323422254609"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06ab3143b0a08aa2fa28931f9a6da3d2"><td class="memItemLeft" align="right" valign="top"><a id="a06ab3143b0a08aa2fa28931f9a6da3d2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetExternalTrigger</b> (<a class="el" href="classfrc_1_1DigitalSource.html">DigitalSource</a> *source, bool rising, bool falling)</td></tr>
-<tr class="separator:a06ab3143b0a08aa2fa28931f9a6da3d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76a2d2c79f2ca19fcabaed3e606a283c"><td class="memItemLeft" align="right" valign="top"><a id="a76a2d2c79f2ca19fcabaed3e606a283c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>StartDMA</b> (int queueDepth)</td></tr>
-<tr class="separator:a76a2d2c79f2ca19fcabaed3e606a283c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2118c1d4ce98e34d419948c92ae2f1bc"><td class="memItemLeft" align="right" valign="top"><a id="a2118c1d4ce98e34d419948c92ae2f1bc"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>StopDMA</b> ()</td></tr>
-<tr class="separator:a2118c1d4ce98e34d419948c92ae2f1bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c6773b82b6b757fa9259bd44bad5f32"><td class="memItemLeft" align="right" valign="top"><a id="a5c6773b82b6b757fa9259bd44bad5f32"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>SetExternalTrigger</b> (<a class="el" href="classfrc_1_1DigitalSource.html">DigitalSource</a> *source, bool rising, bool falling)</td></tr>
+<tr class="separator:a5c6773b82b6b757fa9259bd44bad5f32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e1447e8dbf4cd4fce770e2347b25761"><td class="memItemLeft" align="right" valign="top"><a id="a1e1447e8dbf4cd4fce770e2347b25761"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>SetPwmEdgeTrigger</b> (<a class="el" href="classfrc_1_1PWM.html">PWM</a> *pwm, bool rising, bool falling)</td></tr>
+<tr class="separator:a1e1447e8dbf4cd4fce770e2347b25761"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4600ba687d7de437e77cbd5b0144307"><td class="memItemLeft" align="right" valign="top"><a id="af4600ba687d7de437e77cbd5b0144307"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>SetPwmEdgeTrigger</b> (<a class="el" href="classfrc_1_1PWMMotorController.html">PWMMotorController</a> *pwm, bool rising, bool falling)</td></tr>
+<tr class="separator:af4600ba687d7de437e77cbd5b0144307"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9318ff2dbad05bad139d8916e6085114"><td class="memItemLeft" align="right" valign="top"><a id="a9318ff2dbad05bad139d8916e6085114"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearSensors</b> ()</td></tr>
+<tr class="separator:a9318ff2dbad05bad139d8916e6085114"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1692fa5d4e4839bcabcb06e2b0582a4"><td class="memItemLeft" align="right" valign="top"><a id="af1692fa5d4e4839bcabcb06e2b0582a4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearExternalTriggers</b> ()</td></tr>
+<tr class="separator:af1692fa5d4e4839bcabcb06e2b0582a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab26ce0a621fa949981c29e1b29deaeb"><td class="memItemLeft" align="right" valign="top"><a id="aab26ce0a621fa949981c29e1b29deaeb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Start</b> (int queueDepth)</td></tr>
+<tr class="separator:aab26ce0a621fa949981c29e1b29deaeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c5230c968029ceff2f539bc386cddf4"><td class="memItemLeft" align="right" valign="top"><a id="a4c5230c968029ceff2f539bc386cddf4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Stop</b> ()</td></tr>
+<tr class="separator:a4c5230c968029ceff2f539bc386cddf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -164,7 +179,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DMASample</b></td></
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1DMA.html">DMA</a></li>
-    <li class="footer">Generated on Mon Jun 14 2021 14:37:41 for WPILibC++ by
+    <li class="footer">Generated on Tue Jun 15 2021 02:58:47 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

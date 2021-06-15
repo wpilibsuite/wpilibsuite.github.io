@@ -12,5 +12,6 @@ var classfrc_1_1PWMMotorController =
     [ "Set", "classfrc_1_1PWMMotorController.html#aad5957bc21f8549f5f6cbc9c1bd5afaf", null ],
     [ "SetInverted", "classfrc_1_1PWMMotorController.html#afcc5f0358caacf37c8eb817368a37df7", null ],
     [ "StopMotor", "classfrc_1_1PWMMotorController.html#a7d268832fe2fc1a6a5dde3f27095a026", null ],
+    [ "DMA", "classfrc_1_1PWMMotorController.html#a8dd886aeff72fdd847a45f3bee3810b1", null ],
     [ "m_pwm", "classfrc_1_1PWMMotorController.html#a9761802323fed0791245f1e91af3aff3", null ]
 ];

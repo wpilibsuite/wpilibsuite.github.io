@@ -24,5 +24,6 @@ var classfrc_1_1PWM =
     [ "SetRawBounds", "classfrc_1_1PWM.html#a25c769d94cf902d659ceeffc4a2c52e6", null ],
     [ "SetSpeed", "classfrc_1_1PWM.html#a613ec09042c118168fef4e300cb2e7bc", null ],
     [ "SetZeroLatch", "classfrc_1_1PWM.html#ac6fba19d9fb79e42d37d97bd6072238e", null ],
-    [ "AddressableLED", "classfrc_1_1PWM.html#a8432a1db334d212c13a13f96c33646c6", null ]
+    [ "AddressableLED", "classfrc_1_1PWM.html#a8432a1db334d212c13a13f96c33646c6", null ],
+    [ "DMA", "classfrc_1_1PWM.html#a8dd886aeff72fdd847a45f3bee3810b1", null ]
 ];

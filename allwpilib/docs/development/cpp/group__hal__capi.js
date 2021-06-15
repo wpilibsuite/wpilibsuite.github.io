@@ -17,6 +17,7 @@ var group__hal__capi =
     [ "SPI Functions", "group__hal__spi.html", "group__hal__spi" ],
     [ "Main loop functions", "group__hal__relay.html", "group__hal__relay" ],
     [ "CAN API Functions", "group__hal__canapi.html", "group__hal__canapi" ],
+    [ "DMA Functions", "group__hal__dma.html", "group__hal__dma" ],
     [ "Analog Output Functions", "group__hal__analogoutput.html", "group__hal__analogoutput" ],
     [ "Serial Port Functions", "group__hal__serialport.html", "group__hal__serialport" ],
     [ "Addressable LED Functions", "group__hal__addressable.html", null ],

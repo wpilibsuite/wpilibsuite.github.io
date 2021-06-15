@@ -1,5 +1,16 @@
 var NAVTREEINDEX13 =
 {
+"classfrc_1_1PWMSparkMax.html#ac54476cb81465ea7565e836b181a7ec4":[5,0,5,130,1],
+"classfrc_1_1PWMSparkMax.html#ad57d2c93765ab0c08c8387ab398989d2":[5,0,5,130,0],
+"classfrc_1_1PWMTalonFX.html":[5,0,5,131],
+"classfrc_1_1PWMTalonFX.html#a3cc943b481c12332668b0221fe84a03a":[5,0,5,131,2],
+"classfrc_1_1PWMTalonFX.html#a5d603daefdd3efee0350225fa05d7192":[5,0,5,131,0],
+"classfrc_1_1PWMTalonFX.html#a63522b8c230e840248e277b425551c81":[5,0,5,131,1],
+"classfrc_1_1PWMTalonSRX.html":[5,0,5,132],
+"classfrc_1_1PWMTalonSRX.html#a505a88898d09d3ac0367a352f1053384":[5,0,5,132,1],
+"classfrc_1_1PWMTalonSRX.html#a6f2439d87d2e630ecaed33d348dad880":[5,0,5,132,2],
+"classfrc_1_1PWMTalonSRX.html#ad5265576b66fd3326868b2b5b4bf6e5e":[5,0,5,132,0],
+"classfrc_1_1PWMVenom.html":[5,0,5,133],
 "classfrc_1_1PWMVenom.html#a4d1d70e332b581098085a00b2e4fc413":[5,0,5,133,2],
 "classfrc_1_1PWMVenom.html#ab3ccf358a5fc1348b06cb764fe30002c":[5,0,5,133,0],
 "classfrc_1_1PWMVenom.html#ac22f5cd715cbb542e235a516c4a20ac0":[5,0,5,133,1],
@@ -238,16 +249,5 @@ var NAVTREEINDEX13 =
 "classfrc_1_1RobotController.html#a332abce56c45b8ad44d012cda061ea24":[5,0,5,142,6],
 "classfrc_1_1RobotController.html#a4b1e42e825583c82664a4ecc5d81b83f":[5,0,5,142,1],
 "classfrc_1_1RobotController.html#a4d79bd84a083bc771e87730044387f4e":[5,0,5,142,19],
-"classfrc_1_1RobotController.html#a5109d4e32894a36385a3781be2d32e27":[5,0,5,142,10],
-"classfrc_1_1RobotController.html#a5456e9704430bc4446e65e2f891e429a":[5,0,5,142,0],
-"classfrc_1_1RobotController.html#a58e7b24ddd479303b64d2b9ccff255a9":[5,0,5,142,2],
-"classfrc_1_1RobotController.html#a62f692be0358add2a277a4611b7f0765":[5,0,5,142,21],
-"classfrc_1_1RobotController.html#a85cdf28b2a5946422a2cf7e4f353cee5":[5,0,5,142,14],
-"classfrc_1_1RobotController.html#a8a3621d4cc460ace1c7d5983f6a6ae11":[5,0,5,142,12],
-"classfrc_1_1RobotController.html#a9048aab04cee80ddbef6fb749ccf7b3c":[5,0,5,142,18],
-"classfrc_1_1RobotController.html#a9213b2476cf7dda939f46f6d0531ab9d":[5,0,5,142,11],
-"classfrc_1_1RobotController.html#aa07847090b60fb2b73f9254039169353":[5,0,5,142,16],
-"classfrc_1_1RobotController.html#aa9fcd2d4897c882cbd6a579880ed2f60":[5,0,5,142,20],
-"classfrc_1_1RobotController.html#aad5f225c9ef5df7e9cabf7f691f8985d":[5,0,5,142,7],
-"classfrc_1_1RobotController.html#ab8f84f32622befd0794899c3c5d1987c":[5,0,5,142,3]
+"classfrc_1_1RobotController.html#a5109d4e32894a36385a3781be2d32e27":[5,0,5,142,10]
 };
