@@ -1,6 +1,5 @@
 var NAVTREEINDEX39 =
 {
-"structdetail_1_1fallback__formatter_3_01T_00_01Char_00_01enable__if__t_3_01is__streamable_3_01T_70fb5240ebb5f83009cdb1627fa42087.html#adea58bb1a9c0a55995b13ee92de61fb9":[5,0,1,10,1],
 "structdetail_1_1fallback__uintptr.html":[5,0,1,11],
 "structdetail_1_1fallback__uintptr.html#a30754a63509bd79a52980cd784a97fd7":[5,0,1,11,2],
 "structdetail_1_1fallback__uintptr.html#a54970cfa9d6c862b450365cb6258cea5":[5,0,1,11,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX39 =
 "structfrc_1_1MecanumDriveWheelSpeeds.html#ab8214c04b8a3dad8bfdedbd1ab245c7b":[5,0,5,99,4],
 "structfrc_1_1MecanumDriveWheelSpeeds.html#af8975078e8e457bee179969493cf58df":[5,0,5,99,3],
 "structfrc_1_1MecanumDrive_1_1WheelSpeeds.html":[5,0,5,94,0],
-"structfrc_1_1MecanumDrive_1_1WheelSpeeds.html#a00753652871e229b01010e1e2ef09544":[5,0,5,94,0,3]
+"structfrc_1_1MecanumDrive_1_1WheelSpeeds.html#a00753652871e229b01010e1e2ef09544":[5,0,5,94,0,3],
+"structfrc_1_1MecanumDrive_1_1WheelSpeeds.html#a176ea3f0cf7684a7b41415b5c746ac3a":[5,0,5,94,0,1]
 };

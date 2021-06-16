@@ -1,6 +1,5 @@
 var NAVTREEINDEX40 =
 {
-"structfrc_1_1MecanumDrive_1_1WheelSpeeds.html#a176ea3f0cf7684a7b41415b5c746ac3a":[5,0,5,94,0,1],
 "structfrc_1_1MecanumDrive_1_1WheelSpeeds.html#a5cb79897fbc89681cf7cbe838a2ca2d0":[5,0,5,94,0,0],
 "structfrc_1_1MecanumDrive_1_1WheelSpeeds.html#afaff5737d9d3411379546abe7ca86b76":[5,0,5,94,0,2],
 "structfrc_1_1SplineParameterizer_1_1MalformedSplineException.html":[5,0,5,175,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX40 =
 "structwpi_1_1DenseMapInfo_3_01std_1_1pair_3_01T_00_01U_01_4_01_4.html#a975620ac737435bc64b2b4e106ffe6a1":[5,0,11,38,4],
 "structwpi_1_1DenseMapInfo_3_01std_1_1pair_3_01T_00_01U_01_4_01_4.html#a99c8614f68c7a05c538cda3b346f4386":[5,0,11,38,0],
 "structwpi_1_1DenseMapInfo_3_01std_1_1pair_3_01T_00_01U_01_4_01_4.html#adb93daf2bab5a07eada5508120e7bfd2":[5,0,11,38,2],
-"structwpi_1_1DenseMapInfo_3_01std_1_1pair_3_01T_00_01U_01_4_01_4.html#aee36fb019d5533dec7497dec6fa45e73":[5,0,11,38,1]
+"structwpi_1_1DenseMapInfo_3_01std_1_1pair_3_01T_00_01U_01_4_01_4.html#aee36fb019d5533dec7497dec6fa45e73":[5,0,11,38,1],
+"structwpi_1_1DenseMapInfo_3_01std_1_1string__view_01_4.html":[5,0,11,39]
 };

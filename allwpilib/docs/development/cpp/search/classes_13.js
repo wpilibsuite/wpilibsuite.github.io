@@ -28,7 +28,7 @@ var searchData=
   ['trapezoidprofile_3c_20units_3a_3aradian_20_3e_4982',['TrapezoidProfile&lt; units::radian &gt;',['../classfrc_1_1TrapezoidProfile.html',1,'frc']]],
   ['trapezoidprofilecommand_4983',['TrapezoidProfileCommand',['../classfrc2_1_1TrapezoidProfileCommand.html',1,'frc2']]],
   ['trapezoidprofilesubsystem_4984',['TrapezoidProfileSubsystem',['../classfrc2_1_1TrapezoidProfileSubsystem.html',1,'frc2']]],
-  ['trigger_4985',['Trigger',['../classfrc2_1_1Trigger.html',1,'frc2::Trigger'],['../classfrc_1_1Trigger.html',1,'frc::Trigger']]],
+  ['trigger_4985',['Trigger',['../classfrc_1_1Trigger.html',1,'frc::Trigger'],['../classfrc2_1_1Trigger.html',1,'frc2::Trigger']]],
   ['truncating_5fiterator_4986',['truncating_iterator',['../classdetail_1_1truncating__iterator.html',1,'detail']]],
   ['truncating_5fiterator_3c_20outputit_2c_20std_3a_3afalse_5ftype_20_3e_4987',['truncating_iterator&lt; OutputIt, std::false_type &gt;',['../classdetail_1_1truncating__iterator_3_01OutputIt_00_01std_1_1false__type_01_4.html',1,'detail']]],
   ['truncating_5fiterator_3c_20outputit_2c_20std_3a_3atrue_5ftype_20_3e_4988',['truncating_iterator&lt; OutputIt, std::true_type &gt;',['../classdetail_1_1truncating__iterator_3_01OutputIt_00_01std_1_1true__type_01_4.html',1,'detail']]],

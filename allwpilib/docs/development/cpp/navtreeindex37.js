@@ -1,12 +1,11 @@
 var NAVTREEINDEX37 =
 {
-"namespacent.html":[5,0,9],
 "namespacent_1_1EntryListenerFlags.html":[4,0,3,0],
 "namespaces.html":[4,0],
 "namespacewpi_1_1detail.html":[4,0,4,0],
 "namespacewpi_1_1detail.html":[5,0,11,0],
-"namespacewpi_1_1java.html":[4,0,4,1],
 "namespacewpi_1_1java.html":[5,0,11,3],
+"namespacewpi_1_1java.html":[4,0,4,1],
 "never__destroyed_8h_source.html":[6,0,2,0,5],
 "nodiscard_8h_source.html":[6,0,11,51],
 "ntcore_8h_source.html":[6,0,20],
@@ -240,14 +239,15 @@ var NAVTREEINDEX37 =
 "structarg__mapper.html#a851c9bf2c9931f7fb2422e42281021bd":[5,0,19,2],
 "structarg__mapper.html#a8ccc7b05fa1629a4259127bed5005786":[5,0,19,5],
 "structarg__mapper.html#a99b7d4f47bbef0dc0255758a84df484b":[5,0,19,33],
-"structarg__mapper.html#aa46c5ded7f53e8251d3adaa9e65ddf5e":[5,0,19,9],
-"structarg__mapper.html#aa46c5ded7f53e8251d3adaa9e65ddf5e":[5,0,19,8],
 "structarg__mapper.html#aa46c5ded7f53e8251d3adaa9e65ddf5e":[5,0,19,7],
+"structarg__mapper.html#aa46c5ded7f53e8251d3adaa9e65ddf5e":[5,0,19,8],
+"structarg__mapper.html#aa46c5ded7f53e8251d3adaa9e65ddf5e":[5,0,19,9],
 "structarg__mapper.html#ab0ca23b1107e95c90038a32db2611dd6":[5,0,19,11],
 "structarg__mapper.html#ab6d7f9750eddc29b3eb69fe8b07e1d16":[5,0,19,35],
 "structarg__mapper.html#aba49e677ad2ec1ce1e49fb888a6df858":[5,0,19,31],
 "structarg__mapper.html#ac1a0b6aba62957b8602875d03e894a81":[5,0,19,21],
 "structarg__mapper.html#ac6686082a318b1de16e4eb34824820bc":[5,0,19,26],
 "structarg__mapper.html#ace74acca7a05829782e3d3edaaa22712":[5,0,19,22],
-"structarg__mapper.html#ad51bdd11cbac696cf4a76e9f489938f6":[5,0,19,10]
+"structarg__mapper.html#ad51bdd11cbac696cf4a76e9f489938f6":[5,0,19,10],
+"structarg__mapper.html#ada04473d28d2026bd8a696df0c4db8a2":[5,0,19,14]
 };
