@@ -1,5 +1,9 @@
 var NAVTREEINDEX36 =
 {
+"group__ntcore__instance__cfunc.html#gafc28542270b17a686aeb6362b1cf5c45":[3,1,0,3],
+"group__ntcore__instance__func.html":[3,3,0],
+"group__ntcore__instance__func.html#ga0ea94aca9e31be49b1d47671af7f56fc":[3,3,0,3],
+"group__ntcore__instance__func.html#ga852d119bcd273fe884a95c2217c8209d":[3,3,0,0],
 "group__ntcore__instance__func.html#gaa010a3ec8b278c01a9c2b9a55336443b":[3,3,0,2],
 "group__ntcore__instance__func.html#gaf0d49ad975f2b1c2135d94d10ecfec85":[3,3,0,1],
 "group__ntcore__interop__cfunc.html":[3,1,9],
@@ -235,8 +239,8 @@ var NAVTREEINDEX36 =
 "md__home_runner_work_allwpilib_allwpilib_LICENSE.html":[0],
 "modules.html":[3],
 "mutex_8h_source.html":[6,0,11,48],
-"namespacecs.html":[4,0,0],
 "namespacecs.html":[5,0,0],
+"namespacecs.html":[4,0,0],
 "namespacefrc_1_1filesystem.html":[4,0,1,0],
 "namespacehal.html":[5,0,8],
 "namespacehal.html":[4,0,2],
@@ -245,9 +249,5 @@ var NAVTREEINDEX36 =
 "namespacemembers_eval.html":[4,1,4],
 "namespacemembers_func.html":[4,1,1],
 "namespacemembers_type.html":[4,1,2],
-"namespacent.html":[5,0,9],
-"namespacent.html":[4,0,3],
-"namespacent_1_1EntryListenerFlags.html":[4,0,3,0],
-"namespaces.html":[4,0],
-"namespacewpi_1_1detail.html":[4,0,4,0]
+"namespacent.html":[4,0,3]
 };

@@ -1,5 +1,9 @@
 var NAVTREEINDEX34 =
 {
+"group__hal__analogaccumulator.html#gad029abe7187603b18cfde046be0a7443":[3,0,1,3],
+"group__hal__analogaccumulator.html#gae4ca24c50905b8258a5838357c5aadc7":[3,0,1,7],
+"group__hal__analogaccumulator.html#gaf81d827fb12cada06a52ce6978455354":[3,0,1,5],
+"group__hal__analoggyro.html":[3,0,21],
 "group__hal__analoggyro.html#ga1413de42a70face20125ce03d84e7792":[3,0,21,2],
 "group__hal__analoggyro.html#ga34ab7e0949f288b61ba057137c41c24f":[3,0,21,5],
 "group__hal__analoggyro.html#ga3fc6d1d16c47945442a78d378af91ede":[3,0,21,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX34 =
 "group__hal__i2c.html#gaf2ff125465e59df8a1e139e82426e8eb":[3,0,5,3],
 "group__hal__interrupts.html":[3,0,23],
 "group__hal__interrupts.html#ga35f98945b469afacbfcec081b98a1a1a":[3,0,23,2],
-"group__hal__interrupts.html#ga42d553aed65587375963d441cb48d6e0":[3,0,23,5],
-"group__hal__interrupts.html#ga67f157be25831233951cb239c837d098":[3,0,23,4],
-"group__hal__interrupts.html#ga7a03ed9b7bbb6eb87a74434595147f65":[3,0,23,0],
-"group__hal__interrupts.html#ga96e6618288cfac532a31049cda0d48c0":[3,0,23,6],
-"group__hal__interrupts.html#ga9bd2cfe22ac6a8cf7cdc1dc163728e1d":[3,0,23,7]
+"group__hal__interrupts.html#ga42d553aed65587375963d441cb48d6e0":[3,0,23,5]
 };

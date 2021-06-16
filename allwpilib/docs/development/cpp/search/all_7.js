@@ -194,7 +194,7 @@ var searchData=
   ['getloopref_980',['GetLoopRef',['../classwpi_1_1uv_1_1Handle.html#a780fc5df466862c6e749b0e02c694190',1,'wpi::uv::Handle']]],
   ['getlsbweight_981',['GetLSBWeight',['../classfrc_1_1AnalogInput.html#a8a188c064a70b59287365998696f5a8c',1,'frc::AnalogInput']]],
   ['getmagnitude_982',['GetMagnitude',['../classfrc_1_1Joystick.html#acb6ad0b83213a24c0f860aef8092d7af',1,'frc::Joystick']]],
-  ['getmajor_983',['GetMajor',['../classwpi_1_1HttpParser.html#a87ef1ce31fd93d4f57a1a25a9b2f09ff',1,'wpi::HttpParser::GetMajor()'],['../classwpi_1_1VersionTuple.html#aae7f5e6be0a91b9c5f629f583eb89452',1,'wpi::VersionTuple::getMajor()']]],
+  ['getmajor_983',['getMajor',['../classwpi_1_1VersionTuple.html#aae7f5e6be0a91b9c5f629f583eb89452',1,'wpi::VersionTuple::getMajor()'],['../classwpi_1_1HttpParser.html#a87ef1ce31fd93d4f57a1a25a9b2f09ff',1,'wpi::HttpParser::GetMajor()']]],
   ['getmatchnumber_984',['GetMatchNumber',['../classfrc_1_1DriverStation.html#afbb94a8c73d56b28ad5af32e409e24e7',1,'frc::DriverStation']]],
   ['getmatchtime_985',['GetMatchTime',['../classfrc_1_1DriverStation.html#adbb8f1990adc55fe1cd265b85c1f8d11',1,'frc::DriverStation::GetMatchTime()'],['../classfrc_1_1Timer.html#a79c185032dcc8dd906bab83262b349c6',1,'frc::Timer::GetMatchTime()'],['../classfrc_1_1sim_1_1DriverStationSim.html#a025e4170bf86a53c4942ad24633f15c6',1,'frc::sim::DriverStationSim::GetMatchTime()']]],
   ['getmatchtype_986',['GetMatchType',['../classfrc_1_1DriverStation.html#a54b63485d35421a8edbf768927ff51bd',1,'frc::DriverStation']]],

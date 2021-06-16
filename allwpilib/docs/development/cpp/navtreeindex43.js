@@ -1,5 +1,9 @@
 var NAVTREEINDEX43 =
 {
+"wpilibc_2src_2main_2native_2include_2frc_2CAN_8h_source.html":[6,0,4,25],
+"wpilibc_2src_2main_2native_2include_2frc_2Counter_8h_source.html":[6,0,4,27],
+"wpilibc_2src_2main_2native_2include_2frc_2DMA_8h_source.html":[6,0,4,33],
+"wpilibc_2src_2main_2native_2include_2frc_2DriverStation_8h_source.html":[6,0,4,36],
 "wpilibc_2src_2main_2native_2include_2frc_2DutyCycle_8h_source.html":[6,0,4,37],
 "wpilibc_2src_2main_2native_2include_2frc_2Encoder_8h_source.html":[6,0,4,39],
 "wpilibc_2src_2main_2native_2include_2frc_2Errors_8h_source.html":[6,0,4,40],
