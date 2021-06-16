@@ -1,11 +1,5 @@
 var NAVTREEINDEX12 =
 {
-"classfrc_1_1MerweScaledSigmaPoints.html":[5,0,5,105],
-"classfrc_1_1MerweScaledSigmaPoints.html#a15c06c71c78144ba7d589bdbdfccf404":[5,0,5,105,1],
-"classfrc_1_1MerweScaledSigmaPoints.html#a2a376a61a41f7e2cd5bae21588aa7560":[5,0,5,105,0],
-"classfrc_1_1MerweScaledSigmaPoints.html#a49f3dcf4e9152d25279ca737ab0bd521":[5,0,5,105,5],
-"classfrc_1_1MerweScaledSigmaPoints.html#a539ed39d0c09683d022e072796696cf0":[5,0,5,105,4],
-"classfrc_1_1MerweScaledSigmaPoints.html#a7e4bd5990975d8d226f92460094ef071":[5,0,5,105,6],
 "classfrc_1_1MerweScaledSigmaPoints.html#ab725ba8e1238a46ed8a537efd562ce4f":[5,0,5,105,3],
 "classfrc_1_1MerweScaledSigmaPoints.html#ae70b5e9545215f123368f4670b29b253":[5,0,5,105,2],
 "classfrc_1_1MotorController.html":[5,0,5,106],
@@ -249,5 +243,11 @@ var NAVTREEINDEX12 =
 "classfrc_1_1PWMMotorController.html#afa39100c2ad5b9d491e79d44d03c90ff":[5,0,5,129,4],
 "classfrc_1_1PWMMotorController.html#afcc5f0358caacf37c8eb817368a37df7":[5,0,5,129,10],
 "classfrc_1_1PWMSparkMax.html":[5,0,5,130],
-"classfrc_1_1PWMSparkMax.html#a18d5d76ffcd3593dea33a67751694162":[5,0,5,130,2]
+"classfrc_1_1PWMSparkMax.html#a18d5d76ffcd3593dea33a67751694162":[5,0,5,130,2],
+"classfrc_1_1PWMSparkMax.html#ac54476cb81465ea7565e836b181a7ec4":[5,0,5,130,1],
+"classfrc_1_1PWMSparkMax.html#ad57d2c93765ab0c08c8387ab398989d2":[5,0,5,130,0],
+"classfrc_1_1PWMTalonFX.html":[5,0,5,131],
+"classfrc_1_1PWMTalonFX.html#a3cc943b481c12332668b0221fe84a03a":[5,0,5,131,2],
+"classfrc_1_1PWMTalonFX.html#a5d603daefdd3efee0350225fa05d7192":[5,0,5,131,0],
+"classfrc_1_1PWMTalonFX.html#a63522b8c230e840248e277b425551c81":[5,0,5,131,1]
 };

@@ -1,14 +1,5 @@
 var NAVTREEINDEX24 =
 {
-"classwpi_1_1HttpWebSocketServerConnection.html#a795c640317fc1269dfe2f6adca4af012":[5,0,11,66,4],
-"classwpi_1_1HttpWebSocketServerConnection.html#a8b48cdc3a852e77d1cfb7a8ebb4931f4":[5,0,11,66,1],
-"classwpi_1_1IntrusiveRefCntPtr.html":[5,0,11,67],
-"classwpi_1_1IntrusiveRefCntPtr.html#a21580d1408523783ceb70bb036ddd335":[5,0,11,67,7],
-"classwpi_1_1IntrusiveRefCntPtr.html#a2f9b11ec41d2306854cf1b56a2463cb0":[5,0,11,67,15],
-"classwpi_1_1IntrusiveRefCntPtr.html#a5a6e681ca66f0091d6a257cb12db69e9":[5,0,11,67,0],
-"classwpi_1_1IntrusiveRefCntPtr.html#a5bf24c6c5214397d27c1df863e4faea9":[5,0,11,67,10],
-"classwpi_1_1IntrusiveRefCntPtr.html#a76a0521107fd1a76d801d51945fa338b":[5,0,11,67,1],
-"classwpi_1_1IntrusiveRefCntPtr.html#a84af480e8c0bd96b33e883b38976d7e6":[5,0,11,67,6],
 "classwpi_1_1IntrusiveRefCntPtr.html#a9a3f5687546d02323dd55333c4d4917c":[5,0,11,67,16],
 "classwpi_1_1IntrusiveRefCntPtr.html#aa1e251dc1820987367b298083fadcb40":[5,0,11,67,2],
 "classwpi_1_1IntrusiveRefCntPtr.html#ab38f5e2319a6e6fd275e505e8b376843":[5,0,11,67,9],
@@ -249,5 +240,14 @@ var NAVTREEINDEX24 =
 "classwpi_1_1SafeThreadOwner.html":[5,0,11,140],
 "classwpi_1_1SafeThreadOwner.html#a0fff88f1c4b769d7207f84500b883445":[5,0,11,140,3],
 "classwpi_1_1SafeThreadOwner.html#a18600dcdb5a79da9743cfc35217194f8":[5,0,11,140,1],
-"classwpi_1_1SafeThreadOwner.html#a3256196592aef7b8bcbb89d1c31c28c3":[5,0,11,140,0]
+"classwpi_1_1SafeThreadOwner.html#a3256196592aef7b8bcbb89d1c31c28c3":[5,0,11,140,0],
+"classwpi_1_1SafeThreadOwner.html#a5180b7f902e36778c878f7b3bf6f4d71":[5,0,11,140,2],
+"classwpi_1_1Sendable.html":[5,0,11,142],
+"classwpi_1_1Sendable.html#a02dfae73ea50b297f05151eafdc2efe6":[5,0,11,142,1],
+"classwpi_1_1Sendable.html#a37e52c8d490b4cecf5e6fa7e7d47e7ec":[5,0,11,142,0],
+"classwpi_1_1SendableBuilder.html":[5,0,11,143],
+"classwpi_1_1SendableBuilder.html#a06908bf8ddbf4ff2ada26828d76c696a":[5,0,11,143,5],
+"classwpi_1_1SendableBuilder.html#a0f01ef0d54c00c699ce55183af1ac09f":[5,0,11,143,4],
+"classwpi_1_1SendableBuilder.html#a1ee147b695aeb8a150cf758baaa443ea":[5,0,11,143,2],
+"classwpi_1_1SendableBuilder.html#a316af590e3085fd678b01c7b416441d0":[5,0,11,143,1]
 };

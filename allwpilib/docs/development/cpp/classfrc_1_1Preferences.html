@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-123-g26ff937</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-124-g362066a</span>
    </div>
   </td>
  </tr>
@@ -90,9 +90,7 @@ $(document).ready(function(){initNavTree('classfrc_1_1Preferences.html',''); ini
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="classfrc_1_1Preferences-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">frc::Preferences Class Reference</div>  </div>
@@ -104,114 +102,102 @@ $(document).ready(function(){initNavTree('classfrc_1_1Preferences.html',''); ini
 
 <p><code>#include &lt;<a class="el" href="Preferences_8h_source.html">frc/Preferences.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a780149fcc701c47e1b1bd93f66306ff3"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#a780149fcc701c47e1b1bd93f66306ff3">GetKeys</a> ()</td></tr>
-<tr class="memdesc:a780149fcc701c47e1b1bd93f66306ff3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a vector of all the keys.  <a href="classfrc_1_1Preferences.html#a780149fcc701c47e1b1bd93f66306ff3">More...</a><br /></td></tr>
-<tr class="separator:a780149fcc701c47e1b1bd93f66306ff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f3a580733a87f330d4d8a22faab244c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#a2f3a580733a87f330d4d8a22faab244c">GetString</a> (std::string_view key, std::string_view defaultValue=&quot;&quot;)</td></tr>
-<tr class="memdesc:a2f3a580733a87f330d4d8a22faab244c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the string at the given key.  <a href="classfrc_1_1Preferences.html#a2f3a580733a87f330d4d8a22faab244c">More...</a><br /></td></tr>
-<tr class="separator:a2f3a580733a87f330d4d8a22faab244c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af19df2dd1ac620a488253353f70934d1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#af19df2dd1ac620a488253353f70934d1">GetInt</a> (std::string_view key, int defaultValue=0)</td></tr>
-<tr class="memdesc:af19df2dd1ac620a488253353f70934d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the int at the given key.  <a href="classfrc_1_1Preferences.html#af19df2dd1ac620a488253353f70934d1">More...</a><br /></td></tr>
-<tr class="separator:af19df2dd1ac620a488253353f70934d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8b666dca73a0d79c49c61d41191256a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#ab8b666dca73a0d79c49c61d41191256a">GetDouble</a> (std::string_view key, double defaultValue=0.0)</td></tr>
-<tr class="memdesc:ab8b666dca73a0d79c49c61d41191256a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the double at the given key.  <a href="classfrc_1_1Preferences.html#ab8b666dca73a0d79c49c61d41191256a">More...</a><br /></td></tr>
-<tr class="separator:ab8b666dca73a0d79c49c61d41191256a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adffbbaafeecfb566c8d4e591215483ca"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#adffbbaafeecfb566c8d4e591215483ca">GetFloat</a> (std::string_view key, float defaultValue=0.0)</td></tr>
-<tr class="memdesc:adffbbaafeecfb566c8d4e591215483ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the float at the given key.  <a href="classfrc_1_1Preferences.html#adffbbaafeecfb566c8d4e591215483ca">More...</a><br /></td></tr>
-<tr class="separator:adffbbaafeecfb566c8d4e591215483ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a094eb4c6ec9beea6acce80969ff35101"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#a094eb4c6ec9beea6acce80969ff35101">GetBoolean</a> (std::string_view key, bool defaultValue=false)</td></tr>
-<tr class="memdesc:a094eb4c6ec9beea6acce80969ff35101"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the boolean at the given key.  <a href="classfrc_1_1Preferences.html#a094eb4c6ec9beea6acce80969ff35101">More...</a><br /></td></tr>
-<tr class="separator:a094eb4c6ec9beea6acce80969ff35101"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82975168aeff1b1cf614dbc59a90967e"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#a82975168aeff1b1cf614dbc59a90967e">GetLong</a> (std::string_view key, int64_t defaultValue=0)</td></tr>
-<tr class="memdesc:a82975168aeff1b1cf614dbc59a90967e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the long (int64_t) at the given key.  <a href="classfrc_1_1Preferences.html#a82975168aeff1b1cf614dbc59a90967e">More...</a><br /></td></tr>
-<tr class="separator:a82975168aeff1b1cf614dbc59a90967e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af800f69bd503468fdc0300a05a9a1d05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#af800f69bd503468fdc0300a05a9a1d05">SetString</a> (std::string_view key, std::string_view <a class="el" href="classvalue.html">value</a>)</td></tr>
-<tr class="memdesc:af800f69bd503468fdc0300a05a9a1d05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts the given string into the preferences table.  <a href="classfrc_1_1Preferences.html#af800f69bd503468fdc0300a05a9a1d05">More...</a><br /></td></tr>
-<tr class="separator:af800f69bd503468fdc0300a05a9a1d05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af789e0fa77e54759165b53608a9a88e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#af789e0fa77e54759165b53608a9a88e1">PutString</a> (std::string_view key, std::string_view <a class="el" href="classvalue.html">value</a>)</td></tr>
-<tr class="memdesc:af789e0fa77e54759165b53608a9a88e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts the given string into the preferences table.  <a href="classfrc_1_1Preferences.html#af789e0fa77e54759165b53608a9a88e1">More...</a><br /></td></tr>
-<tr class="separator:af789e0fa77e54759165b53608a9a88e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4feaa0b3d3a6ea0ba30a255827218cfb"><td class="memItemLeft" align="right" valign="top"><a id="a4feaa0b3d3a6ea0ba30a255827218cfb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#a4feaa0b3d3a6ea0ba30a255827218cfb">InitString</a> (std::string_view key, std::string_view <a class="el" href="classvalue.html">value</a>)</td></tr>
-<tr class="memdesc:a4feaa0b3d3a6ea0ba30a255827218cfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts the given string into the preferences table if it doesn't already exist. <br /></td></tr>
-<tr class="separator:a4feaa0b3d3a6ea0ba30a255827218cfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad76b22d5dcc868de1dde933943fe584e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#ad76b22d5dcc868de1dde933943fe584e">SetInt</a> (std::string_view key, int <a class="el" href="classvalue.html">value</a>)</td></tr>
-<tr class="memdesc:ad76b22d5dcc868de1dde933943fe584e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts the given int into the preferences table.  <a href="classfrc_1_1Preferences.html#ad76b22d5dcc868de1dde933943fe584e">More...</a><br /></td></tr>
-<tr class="separator:ad76b22d5dcc868de1dde933943fe584e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f499a4e76e458b9a8012727e966d1ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#a6f499a4e76e458b9a8012727e966d1ec">PutInt</a> (std::string_view key, int <a class="el" href="classvalue.html">value</a>)</td></tr>
-<tr class="memdesc:a6f499a4e76e458b9a8012727e966d1ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts the given int into the preferences table.  <a href="classfrc_1_1Preferences.html#a6f499a4e76e458b9a8012727e966d1ec">More...</a><br /></td></tr>
-<tr class="separator:a6f499a4e76e458b9a8012727e966d1ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e4d72d09d59b8274ec004dc7bae0d72"><td class="memItemLeft" align="right" valign="top"><a id="a3e4d72d09d59b8274ec004dc7bae0d72"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#a3e4d72d09d59b8274ec004dc7bae0d72">InitInt</a> (std::string_view key, int <a class="el" href="classvalue.html">value</a>)</td></tr>
-<tr class="memdesc:a3e4d72d09d59b8274ec004dc7bae0d72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts the given int into the preferences table if it doesn't already exist. <br /></td></tr>
-<tr class="separator:a3e4d72d09d59b8274ec004dc7bae0d72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f34d16942152ae9b606092061c0d260"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#a3f34d16942152ae9b606092061c0d260">SetDouble</a> (std::string_view key, double <a class="el" href="classvalue.html">value</a>)</td></tr>
-<tr class="memdesc:a3f34d16942152ae9b606092061c0d260"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts the given double into the preferences table.  <a href="classfrc_1_1Preferences.html#a3f34d16942152ae9b606092061c0d260">More...</a><br /></td></tr>
-<tr class="separator:a3f34d16942152ae9b606092061c0d260"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fc3c348cc4987252e4e031fb5151b3e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#a6fc3c348cc4987252e4e031fb5151b3e">PutDouble</a> (std::string_view key, double <a class="el" href="classvalue.html">value</a>)</td></tr>
-<tr class="memdesc:a6fc3c348cc4987252e4e031fb5151b3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts the given double into the preferences table.  <a href="classfrc_1_1Preferences.html#a6fc3c348cc4987252e4e031fb5151b3e">More...</a><br /></td></tr>
-<tr class="separator:a6fc3c348cc4987252e4e031fb5151b3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27dd3dee16f1768a5080ef41b0ce0575"><td class="memItemLeft" align="right" valign="top"><a id="a27dd3dee16f1768a5080ef41b0ce0575"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#a27dd3dee16f1768a5080ef41b0ce0575">InitDouble</a> (std::string_view key, double <a class="el" href="classvalue.html">value</a>)</td></tr>
-<tr class="memdesc:a27dd3dee16f1768a5080ef41b0ce0575"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts the given double into the preferences table if it doesn't already exist. <br /></td></tr>
-<tr class="separator:a27dd3dee16f1768a5080ef41b0ce0575"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab988f35a6916597beb956e2fa96810a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#ab988f35a6916597beb956e2fa96810a4">SetFloat</a> (std::string_view key, float <a class="el" href="classvalue.html">value</a>)</td></tr>
-<tr class="memdesc:ab988f35a6916597beb956e2fa96810a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts the given float into the preferences table.  <a href="classfrc_1_1Preferences.html#ab988f35a6916597beb956e2fa96810a4">More...</a><br /></td></tr>
-<tr class="separator:ab988f35a6916597beb956e2fa96810a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23ea2fc848bef98e718ccec4ef378ea7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#a23ea2fc848bef98e718ccec4ef378ea7">PutFloat</a> (std::string_view key, float <a class="el" href="classvalue.html">value</a>)</td></tr>
-<tr class="memdesc:a23ea2fc848bef98e718ccec4ef378ea7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts the given float into the preferences table.  <a href="classfrc_1_1Preferences.html#a23ea2fc848bef98e718ccec4ef378ea7">More...</a><br /></td></tr>
-<tr class="separator:a23ea2fc848bef98e718ccec4ef378ea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0bf9a0604fb9f2719006fb3f66873d6"><td class="memItemLeft" align="right" valign="top"><a id="ae0bf9a0604fb9f2719006fb3f66873d6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#ae0bf9a0604fb9f2719006fb3f66873d6">InitFloat</a> (std::string_view key, float <a class="el" href="classvalue.html">value</a>)</td></tr>
-<tr class="memdesc:ae0bf9a0604fb9f2719006fb3f66873d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts the given float into the preferences table if it doesn't already exist. <br /></td></tr>
-<tr class="separator:ae0bf9a0604fb9f2719006fb3f66873d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb9cd19994fdfbad710a47dd18feff65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#acb9cd19994fdfbad710a47dd18feff65">SetBoolean</a> (std::string_view key, bool <a class="el" href="classvalue.html">value</a>)</td></tr>
-<tr class="memdesc:acb9cd19994fdfbad710a47dd18feff65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts the given boolean into the preferences table.  <a href="classfrc_1_1Preferences.html#acb9cd19994fdfbad710a47dd18feff65">More...</a><br /></td></tr>
-<tr class="separator:acb9cd19994fdfbad710a47dd18feff65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a954be2a7faa4875df27cf92bfa24b92c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#a954be2a7faa4875df27cf92bfa24b92c">PutBoolean</a> (std::string_view key, bool <a class="el" href="classvalue.html">value</a>)</td></tr>
-<tr class="memdesc:a954be2a7faa4875df27cf92bfa24b92c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts the given boolean into the preferences table.  <a href="classfrc_1_1Preferences.html#a954be2a7faa4875df27cf92bfa24b92c">More...</a><br /></td></tr>
-<tr class="separator:a954be2a7faa4875df27cf92bfa24b92c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4841b46769708bc485d450b62875020"><td class="memItemLeft" align="right" valign="top"><a id="ac4841b46769708bc485d450b62875020"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#ac4841b46769708bc485d450b62875020">InitBoolean</a> (std::string_view key, bool <a class="el" href="classvalue.html">value</a>)</td></tr>
-<tr class="memdesc:ac4841b46769708bc485d450b62875020"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts the given boolean into the preferences table if it doesn't already exist. <br /></td></tr>
-<tr class="separator:ac4841b46769708bc485d450b62875020"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04e798523ecbb654aeb8fbbd08f06b0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#a04e798523ecbb654aeb8fbbd08f06b0e">SetLong</a> (std::string_view key, int64_t <a class="el" href="classvalue.html">value</a>)</td></tr>
-<tr class="memdesc:a04e798523ecbb654aeb8fbbd08f06b0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts the given long (int64_t) into the preferences table.  <a href="classfrc_1_1Preferences.html#a04e798523ecbb654aeb8fbbd08f06b0e">More...</a><br /></td></tr>
-<tr class="separator:a04e798523ecbb654aeb8fbbd08f06b0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9911cf57368b94913e3f99ef2911b671"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#a9911cf57368b94913e3f99ef2911b671">PutLong</a> (std::string_view key, int64_t <a class="el" href="classvalue.html">value</a>)</td></tr>
-<tr class="memdesc:a9911cf57368b94913e3f99ef2911b671"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts the given long (int64_t) into the preferences table.  <a href="classfrc_1_1Preferences.html#a9911cf57368b94913e3f99ef2911b671">More...</a><br /></td></tr>
-<tr class="separator:a9911cf57368b94913e3f99ef2911b671"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac08422c2f6e9acc4a7216976451224c6"><td class="memItemLeft" align="right" valign="top"><a id="ac08422c2f6e9acc4a7216976451224c6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#ac08422c2f6e9acc4a7216976451224c6">InitLong</a> (std::string_view key, int64_t <a class="el" href="classvalue.html">value</a>)</td></tr>
-<tr class="memdesc:ac08422c2f6e9acc4a7216976451224c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts the given long into the preferences table if it doesn't already exist. <br /></td></tr>
-<tr class="separator:ac08422c2f6e9acc4a7216976451224c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21e12e7f7fe52729b617bee4255d9570"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#a21e12e7f7fe52729b617bee4255d9570">ContainsKey</a> (std::string_view key)</td></tr>
-<tr class="memdesc:a21e12e7f7fe52729b617bee4255d9570"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether or not there is a key with the given name.  <a href="classfrc_1_1Preferences.html#a21e12e7f7fe52729b617bee4255d9570">More...</a><br /></td></tr>
-<tr class="separator:a21e12e7f7fe52729b617bee4255d9570"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a157d36df43b00bc9f1be202bbab1903d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#a157d36df43b00bc9f1be202bbab1903d">Remove</a> (std::string_view key)</td></tr>
-<tr class="memdesc:a157d36df43b00bc9f1be202bbab1903d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a preference.  <a href="classfrc_1_1Preferences.html#a157d36df43b00bc9f1be202bbab1903d">More...</a><br /></td></tr>
-<tr class="separator:a157d36df43b00bc9f1be202bbab1903d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79e38f5e9c28495aeeee7e7d35f8eea9"><td class="memItemLeft" align="right" valign="top"><a id="a79e38f5e9c28495aeeee7e7d35f8eea9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#a79e38f5e9c28495aeeee7e7d35f8eea9">RemoveAll</a> ()</td></tr>
-<tr class="memdesc:a79e38f5e9c28495aeeee7e7d35f8eea9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all preferences. <br /></td></tr>
-<tr class="separator:a79e38f5e9c28495aeeee7e7d35f8eea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a84dfc9bddaa8350739dac760cbc80a19"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classfrc_1_1Preferences.html">Preferences</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#a84dfc9bddaa8350739dac760cbc80a19">GetInstance</a> ()</td></tr>
 <tr class="memdesc:a84dfc9bddaa8350739dac760cbc80a19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the one and only <a class="el" href="classfrc_1_1Preferences.html">Preferences</a> object.  <a href="classfrc_1_1Preferences.html#a84dfc9bddaa8350739dac760cbc80a19">More...</a><br /></td></tr>
 <tr class="separator:a84dfc9bddaa8350739dac760cbc80a19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a9c4e2a3c9ba2bb2f166d0cc57f203a56"><td class="memItemLeft" align="right" valign="top"><a id="a9c4e2a3c9ba2bb2f166d0cc57f203a56"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Preferences</b> (<a class="el" href="classfrc_1_1Preferences.html">Preferences</a> &amp;&amp;)=default</td></tr>
-<tr class="separator:a9c4e2a3c9ba2bb2f166d0cc57f203a56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ce25987bcfcc6a7d8b3c5308b41b310"><td class="memItemLeft" align="right" valign="top"><a id="a0ce25987bcfcc6a7d8b3c5308b41b310"></a>
-<a class="el" href="classfrc_1_1Preferences.html">Preferences</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classfrc_1_1Preferences.html">Preferences</a> &amp;&amp;)=default</td></tr>
-<tr class="separator:a0ce25987bcfcc6a7d8b3c5308b41b310"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95c3f151bd285712ce40eebba1839a87"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#a95c3f151bd285712ce40eebba1839a87">GetKeys</a> ()</td></tr>
+<tr class="memdesc:a95c3f151bd285712ce40eebba1839a87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a vector of all the keys.  <a href="classfrc_1_1Preferences.html#a95c3f151bd285712ce40eebba1839a87">More...</a><br /></td></tr>
+<tr class="separator:a95c3f151bd285712ce40eebba1839a87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7981a44f41fbd7d23bb96fecfbf0a42"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#ad7981a44f41fbd7d23bb96fecfbf0a42">GetString</a> (std::string_view key, std::string_view defaultValue=&quot;&quot;)</td></tr>
+<tr class="memdesc:ad7981a44f41fbd7d23bb96fecfbf0a42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the string at the given key.  <a href="classfrc_1_1Preferences.html#ad7981a44f41fbd7d23bb96fecfbf0a42">More...</a><br /></td></tr>
+<tr class="separator:ad7981a44f41fbd7d23bb96fecfbf0a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab797970a7d2cbb3999193a08f8047197"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#ab797970a7d2cbb3999193a08f8047197">GetInt</a> (std::string_view key, int defaultValue=0)</td></tr>
+<tr class="memdesc:ab797970a7d2cbb3999193a08f8047197"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the int at the given key.  <a href="classfrc_1_1Preferences.html#ab797970a7d2cbb3999193a08f8047197">More...</a><br /></td></tr>
+<tr class="separator:ab797970a7d2cbb3999193a08f8047197"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeacaad84ba3f41d6c10fe925faa5da33"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#aeacaad84ba3f41d6c10fe925faa5da33">GetDouble</a> (std::string_view key, double defaultValue=0.0)</td></tr>
+<tr class="memdesc:aeacaad84ba3f41d6c10fe925faa5da33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the double at the given key.  <a href="classfrc_1_1Preferences.html#aeacaad84ba3f41d6c10fe925faa5da33">More...</a><br /></td></tr>
+<tr class="separator:aeacaad84ba3f41d6c10fe925faa5da33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69de3e263be9d52d73ebc06fbaedcbb1"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#a69de3e263be9d52d73ebc06fbaedcbb1">GetFloat</a> (std::string_view key, float defaultValue=0.0)</td></tr>
+<tr class="memdesc:a69de3e263be9d52d73ebc06fbaedcbb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the float at the given key.  <a href="classfrc_1_1Preferences.html#a69de3e263be9d52d73ebc06fbaedcbb1">More...</a><br /></td></tr>
+<tr class="separator:a69de3e263be9d52d73ebc06fbaedcbb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc200116b87a5e96fe4f5644f8fe510c"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#abc200116b87a5e96fe4f5644f8fe510c">GetBoolean</a> (std::string_view key, bool defaultValue=false)</td></tr>
+<tr class="memdesc:abc200116b87a5e96fe4f5644f8fe510c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the boolean at the given key.  <a href="classfrc_1_1Preferences.html#abc200116b87a5e96fe4f5644f8fe510c">More...</a><br /></td></tr>
+<tr class="separator:abc200116b87a5e96fe4f5644f8fe510c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4075b4f784f5a68b50110f6faf05a758"><td class="memItemLeft" align="right" valign="top">static int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#a4075b4f784f5a68b50110f6faf05a758">GetLong</a> (std::string_view key, int64_t defaultValue=0)</td></tr>
+<tr class="memdesc:a4075b4f784f5a68b50110f6faf05a758"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the long (int64_t) at the given key.  <a href="classfrc_1_1Preferences.html#a4075b4f784f5a68b50110f6faf05a758">More...</a><br /></td></tr>
+<tr class="separator:a4075b4f784f5a68b50110f6faf05a758"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09f1a87e91e158828f42f38d8e53c82c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#a09f1a87e91e158828f42f38d8e53c82c">SetString</a> (std::string_view key, std::string_view <a class="el" href="classvalue.html">value</a>)</td></tr>
+<tr class="memdesc:a09f1a87e91e158828f42f38d8e53c82c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts the given string into the preferences table.  <a href="classfrc_1_1Preferences.html#a09f1a87e91e158828f42f38d8e53c82c">More...</a><br /></td></tr>
+<tr class="separator:a09f1a87e91e158828f42f38d8e53c82c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a122cc662d0771563a341de2ce0176efc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#a122cc662d0771563a341de2ce0176efc">PutString</a> (std::string_view key, std::string_view <a class="el" href="classvalue.html">value</a>)</td></tr>
+<tr class="memdesc:a122cc662d0771563a341de2ce0176efc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts the given string into the preferences table.  <a href="classfrc_1_1Preferences.html#a122cc662d0771563a341de2ce0176efc">More...</a><br /></td></tr>
+<tr class="separator:a122cc662d0771563a341de2ce0176efc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ec32e8dd5cdc6bdd81db29fbeee414c"><td class="memItemLeft" align="right" valign="top"><a id="a5ec32e8dd5cdc6bdd81db29fbeee414c"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#a5ec32e8dd5cdc6bdd81db29fbeee414c">InitString</a> (std::string_view key, std::string_view <a class="el" href="classvalue.html">value</a>)</td></tr>
+<tr class="memdesc:a5ec32e8dd5cdc6bdd81db29fbeee414c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts the given string into the preferences table if it doesn't already exist. <br /></td></tr>
+<tr class="separator:a5ec32e8dd5cdc6bdd81db29fbeee414c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23b560dbbd609f38a9e85307a79dce99"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#a23b560dbbd609f38a9e85307a79dce99">SetInt</a> (std::string_view key, int <a class="el" href="classvalue.html">value</a>)</td></tr>
+<tr class="memdesc:a23b560dbbd609f38a9e85307a79dce99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts the given int into the preferences table.  <a href="classfrc_1_1Preferences.html#a23b560dbbd609f38a9e85307a79dce99">More...</a><br /></td></tr>
+<tr class="separator:a23b560dbbd609f38a9e85307a79dce99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02b7ea888d62651fb971cfbc71f71eca"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#a02b7ea888d62651fb971cfbc71f71eca">PutInt</a> (std::string_view key, int <a class="el" href="classvalue.html">value</a>)</td></tr>
+<tr class="memdesc:a02b7ea888d62651fb971cfbc71f71eca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts the given int into the preferences table.  <a href="classfrc_1_1Preferences.html#a02b7ea888d62651fb971cfbc71f71eca">More...</a><br /></td></tr>
+<tr class="separator:a02b7ea888d62651fb971cfbc71f71eca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac04912e0fd4ce3275ae277ca9c38a576"><td class="memItemLeft" align="right" valign="top"><a id="ac04912e0fd4ce3275ae277ca9c38a576"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#ac04912e0fd4ce3275ae277ca9c38a576">InitInt</a> (std::string_view key, int <a class="el" href="classvalue.html">value</a>)</td></tr>
+<tr class="memdesc:ac04912e0fd4ce3275ae277ca9c38a576"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts the given int into the preferences table if it doesn't already exist. <br /></td></tr>
+<tr class="separator:ac04912e0fd4ce3275ae277ca9c38a576"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12df3f7d7ebd6669938fc685a7d0f815"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#a12df3f7d7ebd6669938fc685a7d0f815">SetDouble</a> (std::string_view key, double <a class="el" href="classvalue.html">value</a>)</td></tr>
+<tr class="memdesc:a12df3f7d7ebd6669938fc685a7d0f815"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts the given double into the preferences table.  <a href="classfrc_1_1Preferences.html#a12df3f7d7ebd6669938fc685a7d0f815">More...</a><br /></td></tr>
+<tr class="separator:a12df3f7d7ebd6669938fc685a7d0f815"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80e99846f55f8d38e2e00bcdc969b775"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#a80e99846f55f8d38e2e00bcdc969b775">PutDouble</a> (std::string_view key, double <a class="el" href="classvalue.html">value</a>)</td></tr>
+<tr class="memdesc:a80e99846f55f8d38e2e00bcdc969b775"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts the given double into the preferences table.  <a href="classfrc_1_1Preferences.html#a80e99846f55f8d38e2e00bcdc969b775">More...</a><br /></td></tr>
+<tr class="separator:a80e99846f55f8d38e2e00bcdc969b775"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1eb8b858ccccd7f9d25c92a0a5e2924"><td class="memItemLeft" align="right" valign="top"><a id="ab1eb8b858ccccd7f9d25c92a0a5e2924"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#ab1eb8b858ccccd7f9d25c92a0a5e2924">InitDouble</a> (std::string_view key, double <a class="el" href="classvalue.html">value</a>)</td></tr>
+<tr class="memdesc:ab1eb8b858ccccd7f9d25c92a0a5e2924"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts the given double into the preferences table if it doesn't already exist. <br /></td></tr>
+<tr class="separator:ab1eb8b858ccccd7f9d25c92a0a5e2924"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a678143d109b68b0fa1f0dcf417a31694"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#a678143d109b68b0fa1f0dcf417a31694">SetFloat</a> (std::string_view key, float <a class="el" href="classvalue.html">value</a>)</td></tr>
+<tr class="memdesc:a678143d109b68b0fa1f0dcf417a31694"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts the given float into the preferences table.  <a href="classfrc_1_1Preferences.html#a678143d109b68b0fa1f0dcf417a31694">More...</a><br /></td></tr>
+<tr class="separator:a678143d109b68b0fa1f0dcf417a31694"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6be9dbcc66561eb5f0887dfa9f0344e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#ac6be9dbcc66561eb5f0887dfa9f0344e">PutFloat</a> (std::string_view key, float <a class="el" href="classvalue.html">value</a>)</td></tr>
+<tr class="memdesc:ac6be9dbcc66561eb5f0887dfa9f0344e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts the given float into the preferences table.  <a href="classfrc_1_1Preferences.html#ac6be9dbcc66561eb5f0887dfa9f0344e">More...</a><br /></td></tr>
+<tr class="separator:ac6be9dbcc66561eb5f0887dfa9f0344e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c7dd84229f85e6d69b5e19a2d25f421"><td class="memItemLeft" align="right" valign="top"><a id="a0c7dd84229f85e6d69b5e19a2d25f421"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#a0c7dd84229f85e6d69b5e19a2d25f421">InitFloat</a> (std::string_view key, float <a class="el" href="classvalue.html">value</a>)</td></tr>
+<tr class="memdesc:a0c7dd84229f85e6d69b5e19a2d25f421"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts the given float into the preferences table if it doesn't already exist. <br /></td></tr>
+<tr class="separator:a0c7dd84229f85e6d69b5e19a2d25f421"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37169b21a65fd46c1342cde1ea22fa49"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#a37169b21a65fd46c1342cde1ea22fa49">SetBoolean</a> (std::string_view key, bool <a class="el" href="classvalue.html">value</a>)</td></tr>
+<tr class="memdesc:a37169b21a65fd46c1342cde1ea22fa49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts the given boolean into the preferences table.  <a href="classfrc_1_1Preferences.html#a37169b21a65fd46c1342cde1ea22fa49">More...</a><br /></td></tr>
+<tr class="separator:a37169b21a65fd46c1342cde1ea22fa49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58d37492789b39e1b231b71069be34ec"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#a58d37492789b39e1b231b71069be34ec">PutBoolean</a> (std::string_view key, bool <a class="el" href="classvalue.html">value</a>)</td></tr>
+<tr class="memdesc:a58d37492789b39e1b231b71069be34ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts the given boolean into the preferences table.  <a href="classfrc_1_1Preferences.html#a58d37492789b39e1b231b71069be34ec">More...</a><br /></td></tr>
+<tr class="separator:a58d37492789b39e1b231b71069be34ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6144526a62c3eab7016800324dae5a95"><td class="memItemLeft" align="right" valign="top"><a id="a6144526a62c3eab7016800324dae5a95"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#a6144526a62c3eab7016800324dae5a95">InitBoolean</a> (std::string_view key, bool <a class="el" href="classvalue.html">value</a>)</td></tr>
+<tr class="memdesc:a6144526a62c3eab7016800324dae5a95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts the given boolean into the preferences table if it doesn't already exist. <br /></td></tr>
+<tr class="separator:a6144526a62c3eab7016800324dae5a95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa856928fda66ad94f2e7e72bd0b14b7a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#aa856928fda66ad94f2e7e72bd0b14b7a">SetLong</a> (std::string_view key, int64_t <a class="el" href="classvalue.html">value</a>)</td></tr>
+<tr class="memdesc:aa856928fda66ad94f2e7e72bd0b14b7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts the given long (int64_t) into the preferences table.  <a href="classfrc_1_1Preferences.html#aa856928fda66ad94f2e7e72bd0b14b7a">More...</a><br /></td></tr>
+<tr class="separator:aa856928fda66ad94f2e7e72bd0b14b7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad401b343559be2db0dcdeb90c260b841"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#ad401b343559be2db0dcdeb90c260b841">PutLong</a> (std::string_view key, int64_t <a class="el" href="classvalue.html">value</a>)</td></tr>
+<tr class="memdesc:ad401b343559be2db0dcdeb90c260b841"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts the given long (int64_t) into the preferences table.  <a href="classfrc_1_1Preferences.html#ad401b343559be2db0dcdeb90c260b841">More...</a><br /></td></tr>
+<tr class="separator:ad401b343559be2db0dcdeb90c260b841"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22672af0f9b44918d1c321ad87b2f6a1"><td class="memItemLeft" align="right" valign="top"><a id="a22672af0f9b44918d1c321ad87b2f6a1"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#a22672af0f9b44918d1c321ad87b2f6a1">InitLong</a> (std::string_view key, int64_t <a class="el" href="classvalue.html">value</a>)</td></tr>
+<tr class="memdesc:a22672af0f9b44918d1c321ad87b2f6a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts the given long into the preferences table if it doesn't already exist. <br /></td></tr>
+<tr class="separator:a22672af0f9b44918d1c321ad87b2f6a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6596c7c27937cb7c03724780c78ea5ac"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#a6596c7c27937cb7c03724780c78ea5ac">ContainsKey</a> (std::string_view key)</td></tr>
+<tr class="memdesc:a6596c7c27937cb7c03724780c78ea5ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether or not there is a key with the given name.  <a href="classfrc_1_1Preferences.html#a6596c7c27937cb7c03724780c78ea5ac">More...</a><br /></td></tr>
+<tr class="separator:a6596c7c27937cb7c03724780c78ea5ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe5715c006538261186817f1e3cbd1bb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#afe5715c006538261186817f1e3cbd1bb">Remove</a> (std::string_view key)</td></tr>
+<tr class="memdesc:afe5715c006538261186817f1e3cbd1bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a preference.  <a href="classfrc_1_1Preferences.html#afe5715c006538261186817f1e3cbd1bb">More...</a><br /></td></tr>
+<tr class="separator:afe5715c006538261186817f1e3cbd1bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c1967faf43b9f3e6f09dd8eaf29fe21"><td class="memItemLeft" align="right" valign="top"><a id="a9c1967faf43b9f3e6f09dd8eaf29fe21"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Preferences.html#a9c1967faf43b9f3e6f09dd8eaf29fe21">RemoveAll</a> ()</td></tr>
+<tr class="memdesc:a9c1967faf43b9f3e6f09dd8eaf29fe21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all preferences. <br /></td></tr>
+<tr class="separator:a9c1967faf43b9f3e6f09dd8eaf29fe21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The preferences class provides a relatively simple way to save important values to the roboRIO to access the next time the roboRIO is booted. </p>
@@ -219,20 +205,28 @@ Protected Member Functions</h2></td></tr>
 <p>This class is thread safe.</p>
 <p>This will also interact with <a class="el" href="">NetworkTable</a> by creating a table called "Preferences" with all the key-value pairs. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a21e12e7f7fe52729b617bee4255d9570"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21e12e7f7fe52729b617bee4255d9570">&#9670;&nbsp;</a></span>ContainsKey()</h2>
+<a id="a6596c7c27937cb7c03724780c78ea5ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6596c7c27937cb7c03724780c78ea5ac">&#9670;&nbsp;</a></span>ContainsKey()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool frc::Preferences::ContainsKey </td>
+          <td class="memname">static bool frc::Preferences::ContainsKey </td>
           <td>(</td>
           <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>key</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Returns whether or not there is a key with the given name. </p>
@@ -246,14 +240,17 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a094eb4c6ec9beea6acce80969ff35101"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a094eb4c6ec9beea6acce80969ff35101">&#9670;&nbsp;</a></span>GetBoolean()</h2>
+<a id="abc200116b87a5e96fe4f5644f8fe510c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc200116b87a5e96fe4f5644f8fe510c">&#9670;&nbsp;</a></span>GetBoolean()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool frc::Preferences::GetBoolean </td>
+          <td class="memname">static bool frc::Preferences::GetBoolean </td>
           <td>(</td>
           <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>key</em>, </td>
@@ -270,6 +267,11 @@ Protected Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Returns the boolean at the given key. </p>
@@ -285,14 +287,17 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ab8b666dca73a0d79c49c61d41191256a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab8b666dca73a0d79c49c61d41191256a">&#9670;&nbsp;</a></span>GetDouble()</h2>
+<a id="aeacaad84ba3f41d6c10fe925faa5da33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeacaad84ba3f41d6c10fe925faa5da33">&#9670;&nbsp;</a></span>GetDouble()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double frc::Preferences::GetDouble </td>
+          <td class="memname">static double frc::Preferences::GetDouble </td>
           <td>(</td>
           <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>key</em>, </td>
@@ -309,6 +314,11 @@ Protected Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Returns the double at the given key. </p>
@@ -324,14 +334,17 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="adffbbaafeecfb566c8d4e591215483ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adffbbaafeecfb566c8d4e591215483ca">&#9670;&nbsp;</a></span>GetFloat()</h2>
+<a id="a69de3e263be9d52d73ebc06fbaedcbb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69de3e263be9d52d73ebc06fbaedcbb1">&#9670;&nbsp;</a></span>GetFloat()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float frc::Preferences::GetFloat </td>
+          <td class="memname">static float frc::Preferences::GetFloat </td>
           <td>(</td>
           <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>key</em>, </td>
@@ -348,6 +361,11 @@ Protected Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Returns the float at the given key. </p>
@@ -388,17 +406,21 @@ Protected Member Functions</h2></td></tr>
 
 <p>Get the one and only <a class="el" href="classfrc_1_1Preferences.html">Preferences</a> object. </p>
 <dl class="section return"><dt>Returns</dt><dd>pointer to the <a class="el" href="classfrc_1_1Preferences.html">Preferences</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000023">Deprecated:</a></b></dt><dd>Use the static methods </dd></dl>
 
 </div>
 </div>
-<a id="af19df2dd1ac620a488253353f70934d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af19df2dd1ac620a488253353f70934d1">&#9670;&nbsp;</a></span>GetInt()</h2>
+<a id="ab797970a7d2cbb3999193a08f8047197"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab797970a7d2cbb3999193a08f8047197">&#9670;&nbsp;</a></span>GetInt()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int frc::Preferences::GetInt </td>
+          <td class="memname">static int frc::Preferences::GetInt </td>
           <td>(</td>
           <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>key</em>, </td>
@@ -415,6 +437,11 @@ Protected Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Returns the int at the given key. </p>
@@ -430,19 +457,27 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a780149fcc701c47e1b1bd93f66306ff3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a780149fcc701c47e1b1bd93f66306ff3">&#9670;&nbsp;</a></span>GetKeys()</h2>
+<a id="a95c3f151bd285712ce40eebba1839a87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95c3f151bd285712ce40eebba1839a87">&#9670;&nbsp;</a></span>GetKeys()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;std::string&gt; frc::Preferences::GetKeys </td>
+          <td class="memname">static std::vector&lt;std::string&gt; frc::Preferences::GetKeys </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Returns a vector of all the keys. </p>
@@ -450,14 +485,17 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a82975168aeff1b1cf614dbc59a90967e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a82975168aeff1b1cf614dbc59a90967e">&#9670;&nbsp;</a></span>GetLong()</h2>
+<a id="a4075b4f784f5a68b50110f6faf05a758"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4075b4f784f5a68b50110f6faf05a758">&#9670;&nbsp;</a></span>GetLong()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int64_t frc::Preferences::GetLong </td>
+          <td class="memname">static int64_t frc::Preferences::GetLong </td>
           <td>(</td>
           <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>key</em>, </td>
@@ -474,6 +512,11 @@ Protected Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Returns the long (int64_t) at the given key. </p>
@@ -489,14 +532,17 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a2f3a580733a87f330d4d8a22faab244c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f3a580733a87f330d4d8a22faab244c">&#9670;&nbsp;</a></span>GetString()</h2>
+<a id="ad7981a44f41fbd7d23bb96fecfbf0a42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7981a44f41fbd7d23bb96fecfbf0a42">&#9670;&nbsp;</a></span>GetString()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string frc::Preferences::GetString </td>
+          <td class="memname">static std::string frc::Preferences::GetString </td>
           <td>(</td>
           <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>key</em>, </td>
@@ -513,6 +559,11 @@ Protected Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Returns the string at the given key. </p>
@@ -528,14 +579,17 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a954be2a7faa4875df27cf92bfa24b92c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a954be2a7faa4875df27cf92bfa24b92c">&#9670;&nbsp;</a></span>PutBoolean()</h2>
+<a id="a58d37492789b39e1b231b71069be34ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58d37492789b39e1b231b71069be34ec">&#9670;&nbsp;</a></span>PutBoolean()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void frc::Preferences::PutBoolean </td>
+          <td class="memname">static void frc::Preferences::PutBoolean </td>
           <td>(</td>
           <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>key</em>, </td>
@@ -552,6 +606,11 @@ Protected Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Puts the given boolean into the preferences table. </p>
@@ -566,14 +625,17 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a6fc3c348cc4987252e4e031fb5151b3e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6fc3c348cc4987252e4e031fb5151b3e">&#9670;&nbsp;</a></span>PutDouble()</h2>
+<a id="a80e99846f55f8d38e2e00bcdc969b775"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80e99846f55f8d38e2e00bcdc969b775">&#9670;&nbsp;</a></span>PutDouble()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void frc::Preferences::PutDouble </td>
+          <td class="memname">static void frc::Preferences::PutDouble </td>
           <td>(</td>
           <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>key</em>, </td>
@@ -590,6 +652,11 @@ Protected Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Puts the given double into the preferences table. </p>
@@ -604,14 +671,17 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a23ea2fc848bef98e718ccec4ef378ea7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23ea2fc848bef98e718ccec4ef378ea7">&#9670;&nbsp;</a></span>PutFloat()</h2>
+<a id="ac6be9dbcc66561eb5f0887dfa9f0344e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6be9dbcc66561eb5f0887dfa9f0344e">&#9670;&nbsp;</a></span>PutFloat()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void frc::Preferences::PutFloat </td>
+          <td class="memname">static void frc::Preferences::PutFloat </td>
           <td>(</td>
           <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>key</em>, </td>
@@ -628,6 +698,11 @@ Protected Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Puts the given float into the preferences table. </p>
@@ -642,14 +717,17 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a6f499a4e76e458b9a8012727e966d1ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f499a4e76e458b9a8012727e966d1ec">&#9670;&nbsp;</a></span>PutInt()</h2>
+<a id="a02b7ea888d62651fb971cfbc71f71eca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02b7ea888d62651fb971cfbc71f71eca">&#9670;&nbsp;</a></span>PutInt()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void frc::Preferences::PutInt </td>
+          <td class="memname">static void frc::Preferences::PutInt </td>
           <td>(</td>
           <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>key</em>, </td>
@@ -666,6 +744,11 @@ Protected Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Puts the given int into the preferences table. </p>
@@ -680,14 +763,17 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a9911cf57368b94913e3f99ef2911b671"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9911cf57368b94913e3f99ef2911b671">&#9670;&nbsp;</a></span>PutLong()</h2>
+<a id="ad401b343559be2db0dcdeb90c260b841"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad401b343559be2db0dcdeb90c260b841">&#9670;&nbsp;</a></span>PutLong()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void frc::Preferences::PutLong </td>
+          <td class="memname">static void frc::Preferences::PutLong </td>
           <td>(</td>
           <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>key</em>, </td>
@@ -704,6 +790,11 @@ Protected Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Puts the given long (int64_t) into the preferences table. </p>
@@ -718,14 +809,17 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af789e0fa77e54759165b53608a9a88e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af789e0fa77e54759165b53608a9a88e1">&#9670;&nbsp;</a></span>PutString()</h2>
+<a id="a122cc662d0771563a341de2ce0176efc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a122cc662d0771563a341de2ce0176efc">&#9670;&nbsp;</a></span>PutString()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void frc::Preferences::PutString </td>
+          <td class="memname">static void frc::Preferences::PutString </td>
           <td>(</td>
           <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>key</em>, </td>
@@ -742,6 +836,11 @@ Protected Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Puts the given string into the preferences table. </p>
@@ -756,20 +855,28 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a157d36df43b00bc9f1be202bbab1903d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a157d36df43b00bc9f1be202bbab1903d">&#9670;&nbsp;</a></span>Remove()</h2>
+<a id="afe5715c006538261186817f1e3cbd1bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe5715c006538261186817f1e3cbd1bb">&#9670;&nbsp;</a></span>Remove()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void frc::Preferences::Remove </td>
+          <td class="memname">static void frc::Preferences::Remove </td>
           <td>(</td>
           <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>key</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Remove a preference. </p>
@@ -782,14 +889,17 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="acb9cd19994fdfbad710a47dd18feff65"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb9cd19994fdfbad710a47dd18feff65">&#9670;&nbsp;</a></span>SetBoolean()</h2>
+<a id="a37169b21a65fd46c1342cde1ea22fa49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37169b21a65fd46c1342cde1ea22fa49">&#9670;&nbsp;</a></span>SetBoolean()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void frc::Preferences::SetBoolean </td>
+          <td class="memname">static void frc::Preferences::SetBoolean </td>
           <td>(</td>
           <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>key</em>, </td>
@@ -806,6 +916,11 @@ Protected Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Puts the given boolean into the preferences table. </p>
@@ -820,14 +935,17 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a3f34d16942152ae9b606092061c0d260"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f34d16942152ae9b606092061c0d260">&#9670;&nbsp;</a></span>SetDouble()</h2>
+<a id="a12df3f7d7ebd6669938fc685a7d0f815"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12df3f7d7ebd6669938fc685a7d0f815">&#9670;&nbsp;</a></span>SetDouble()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void frc::Preferences::SetDouble </td>
+          <td class="memname">static void frc::Preferences::SetDouble </td>
           <td>(</td>
           <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>key</em>, </td>
@@ -844,6 +962,11 @@ Protected Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Puts the given double into the preferences table. </p>
@@ -858,14 +981,17 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ab988f35a6916597beb956e2fa96810a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab988f35a6916597beb956e2fa96810a4">&#9670;&nbsp;</a></span>SetFloat()</h2>
+<a id="a678143d109b68b0fa1f0dcf417a31694"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a678143d109b68b0fa1f0dcf417a31694">&#9670;&nbsp;</a></span>SetFloat()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void frc::Preferences::SetFloat </td>
+          <td class="memname">static void frc::Preferences::SetFloat </td>
           <td>(</td>
           <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>key</em>, </td>
@@ -882,6 +1008,11 @@ Protected Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Puts the given float into the preferences table. </p>
@@ -896,14 +1027,17 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad76b22d5dcc868de1dde933943fe584e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad76b22d5dcc868de1dde933943fe584e">&#9670;&nbsp;</a></span>SetInt()</h2>
+<a id="a23b560dbbd609f38a9e85307a79dce99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23b560dbbd609f38a9e85307a79dce99">&#9670;&nbsp;</a></span>SetInt()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void frc::Preferences::SetInt </td>
+          <td class="memname">static void frc::Preferences::SetInt </td>
           <td>(</td>
           <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>key</em>, </td>
@@ -920,6 +1054,11 @@ Protected Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Puts the given int into the preferences table. </p>
@@ -934,14 +1073,17 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a04e798523ecbb654aeb8fbbd08f06b0e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04e798523ecbb654aeb8fbbd08f06b0e">&#9670;&nbsp;</a></span>SetLong()</h2>
+<a id="aa856928fda66ad94f2e7e72bd0b14b7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa856928fda66ad94f2e7e72bd0b14b7a">&#9670;&nbsp;</a></span>SetLong()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void frc::Preferences::SetLong </td>
+          <td class="memname">static void frc::Preferences::SetLong </td>
           <td>(</td>
           <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>key</em>, </td>
@@ -958,6 +1100,11 @@ Protected Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Puts the given long (int64_t) into the preferences table. </p>
@@ -972,14 +1119,17 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af800f69bd503468fdc0300a05a9a1d05"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af800f69bd503468fdc0300a05a9a1d05">&#9670;&nbsp;</a></span>SetString()</h2>
+<a id="a09f1a87e91e158828f42f38d8e53c82c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09f1a87e91e158828f42f38d8e53c82c">&#9670;&nbsp;</a></span>SetString()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void frc::Preferences::SetString </td>
+          <td class="memname">static void frc::Preferences::SetString </td>
           <td>(</td>
           <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>key</em>, </td>
@@ -996,6 +1146,11 @@ Protected Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Puts the given string into the preferences table. </p>
@@ -1019,7 +1174,7 @@ Protected Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1Preferences.html">Preferences</a></li>
-    <li class="footer">Generated on Tue Jun 15 2021 03:10:22 for WPILibC++ by
+    <li class="footer">Generated on Wed Jun 16 2021 06:08:01 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

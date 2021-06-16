@@ -1,5 +1,6 @@
 var classfrc_1_1SmartDashboard =
 [
+    [ "SmartDashboard", "classfrc_1_1SmartDashboard.html#a19c77aedec277a9e313968f58cec6d16", null ],
     [ "ClearFlags", "classfrc_1_1SmartDashboard.html#abbd84c4abd15b32de6a10388f74d7527", null ],
     [ "ClearPersistent", "classfrc_1_1SmartDashboard.html#a7b57b5b29062e43b6e54a2378acb4912", null ],
     [ "ContainsKey", "classfrc_1_1SmartDashboard.html#a8f4407586f602f5396e2016f6742e4f1", null ],

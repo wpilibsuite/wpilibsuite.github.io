@@ -1,13 +1,13 @@
 var searchData=
 [
-  ['waitcommand_5041',['WaitCommand',['../classfrc2_1_1WaitCommand.html',1,'frc2::WaitCommand'],['../classfrc_1_1WaitCommand.html',1,'frc::WaitCommand']]],
+  ['waitcommand_5041',['WaitCommand',['../classfrc_1_1WaitCommand.html',1,'frc::WaitCommand'],['../classfrc2_1_1WaitCommand.html',1,'frc2::WaitCommand']]],
   ['waitforchildren_5042',['WaitForChildren',['../classfrc_1_1WaitForChildren.html',1,'frc']]],
   ['waituntilcommand_5043',['WaitUntilCommand',['../classfrc2_1_1WaitUntilCommand.html',1,'frc2::WaitUntilCommand'],['../classfrc_1_1WaitUntilCommand.html',1,'frc::WaitUntilCommand']]],
   ['watchdog_5044',['Watchdog',['../classfrc_1_1Watchdog.html',1,'frc']]],
   ['websocket_5045',['WebSocket',['../classwpi_1_1WebSocket.html',1,'wpi']]],
   ['websocketserver_5046',['WebSocketServer',['../classwpi_1_1WebSocketServer.html',1,'wpi']]],
   ['websocketserverhelper_5047',['WebSocketServerHelper',['../classwpi_1_1WebSocketServerHelper.html',1,'wpi']]],
-  ['wheelspeeds_5048',['WheelSpeeds',['../structfrc_1_1DifferentialDrive_1_1WheelSpeeds.html',1,'frc::DifferentialDrive::WheelSpeeds'],['../structfrc_1_1MecanumDrive_1_1WheelSpeeds.html',1,'frc::MecanumDrive::WheelSpeeds'],['../structfrc_1_1KilloughDrive_1_1WheelSpeeds.html',1,'frc::KilloughDrive::WheelSpeeds']]],
+  ['wheelspeeds_5048',['WheelSpeeds',['../structfrc_1_1MecanumDrive_1_1WheelSpeeds.html',1,'frc::MecanumDrive::WheelSpeeds'],['../structfrc_1_1DifferentialDrive_1_1WheelSpeeds.html',1,'frc::DifferentialDrive::WheelSpeeds'],['../structfrc_1_1KilloughDrive_1_1WheelSpeeds.html',1,'frc::KilloughDrive::WheelSpeeds']]],
   ['widgettype_5049',['WidgetType',['../classfrc_1_1WidgetType.html',1,'frc']]],
   ['width_5fchecker_5050',['width_checker',['../classwidth__checker.html',1,'']]],
   ['workerthread_5051',['WorkerThread',['../classwpi_1_1WorkerThread.html',1,'wpi']]],

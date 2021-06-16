@@ -1,9 +1,5 @@
 var NAVTREEINDEX10 =
 {
-"classfrc_1_1ElevatorFeedforward.html#a3c3ea34e0f20d0b58ce0fa73cb92106f":[5,0,5,60,5],
-"classfrc_1_1ElevatorFeedforward.html#a3f6ca39b02dc06ea6009cf905ac96a7a":[5,0,5,60,11],
-"classfrc_1_1ElevatorFeedforward.html#a4ec4bcf9525053c6921af2f42822e09a":[5,0,5,60,10],
-"classfrc_1_1ElevatorFeedforward.html#a5eef769a83b9b8dbda7b605444f03d9c":[5,0,5,60,6],
 "classfrc_1_1ElevatorFeedforward.html#a5f612929d669d64809f670557b194a66":[5,0,5,60,13],
 "classfrc_1_1ElevatorFeedforward.html#a73d47e21726e5018c8af98aab1a8029c":[5,0,5,60,8],
 "classfrc_1_1ElevatorFeedforward.html#a90f21d5596abd4f4530c03bea8e20ada":[5,0,5,60,1],
@@ -249,5 +245,9 @@ var NAVTREEINDEX10 =
 "classfrc_1_1Joystick.html#a6a2052cc04f070d7ebc933c1895751e8":[5,0,5,75,32],
 "classfrc_1_1Joystick.html#a7bd2084eb3c995a8696666037b2640fe":[5,0,5,75,2],
 "classfrc_1_1Joystick.html#a7ddb12ad58e6c6639795d119e787633d":[5,0,5,75,19],
-"classfrc_1_1Joystick.html#a80ae72780369e15abb601fe976a3274d":[5,0,5,75,8]
+"classfrc_1_1Joystick.html#a80ae72780369e15abb601fe976a3274d":[5,0,5,75,8],
+"classfrc_1_1Joystick.html#a8446bec782e1db910d4fe7fef8fd91cc":[5,0,5,75,22],
+"classfrc_1_1Joystick.html#a86e2971cd0f21cb4ec0594279830fb70":[5,0,5,75,10],
+"classfrc_1_1Joystick.html#a8cb0f38310cf9fdd0f5ef7915e9f61f3":[5,0,5,75,12],
+"classfrc_1_1Joystick.html#a8da655d8c056e00ef787373e22fc707e":[5,0,5,75,31]
 };

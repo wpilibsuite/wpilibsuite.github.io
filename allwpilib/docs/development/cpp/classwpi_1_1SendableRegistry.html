@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-123-g26ff937</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-124-g362066a</span>
    </div>
   </td>
  </tr>
@@ -92,7 +92,6 @@ $(document).ready(function(){initNavTree('classwpi_1_1SendableRegistry.html','')
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
-<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classwpi_1_1SendableRegistry-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -108,7 +107,7 @@ $(document).ready(function(){initNavTree('classwpi_1_1SendableRegistry.html','')
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1SendableRegistry_1_1CallbackData.html">CallbackData</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data passed to <a class="el" href="classwpi_1_1SendableRegistry.html#ac7e39492eb8dce2a75bfc79d96e1fbf2" title="Iterates over LiveWindow-enabled objects in the registry.">ForeachLiveWindow()</a> callback function.  <a href="structwpi_1_1SendableRegistry_1_1CallbackData.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data passed to <a class="el" href="classwpi_1_1SendableRegistry.html#acdfbcda30cc4a9426b44431fab8cf76f" title="Iterates over LiveWindow-enabled objects in the registry.">ForeachLiveWindow()</a> callback function.  <a href="structwpi_1_1SendableRegistry_1_1CallbackData.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -117,125 +116,116 @@ Public Types</h2></td></tr>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>UID</b> = size_t</td></tr>
 <tr class="separator:a23d07149568824b882e8884c81f111b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a09b5dca0dcf54906f144da8edd49128a"><td class="memItemLeft" align="right" valign="top"><a id="a09b5dca0dcf54906f144da8edd49128a"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SendableRegistry</b> (const <a class="el" href="classwpi_1_1SendableRegistry.html">SendableRegistry</a> &amp;)=delete</td></tr>
-<tr class="separator:a09b5dca0dcf54906f144da8edd49128a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd6c45dbe9f2cfc9a4cc0525eb7b2ed0"><td class="memItemLeft" align="right" valign="top"><a id="acd6c45dbe9f2cfc9a4cc0525eb7b2ed0"></a>
-<a class="el" href="classwpi_1_1SendableRegistry.html">SendableRegistry</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classwpi_1_1SendableRegistry.html">SendableRegistry</a> &amp;)=delete</td></tr>
-<tr class="separator:acd6c45dbe9f2cfc9a4cc0525eb7b2ed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac76ec01e95a1fba5993e9849ec573fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#aac76ec01e95a1fba5993e9849ec573fa">SetLiveWindowBuilderFactory</a> (std::function&lt; std::unique_ptr&lt; <a class="el" href="classwpi_1_1SendableBuilder.html">SendableBuilder</a> &gt;()&gt; factory)</td></tr>
-<tr class="memdesc:aac76ec01e95a1fba5993e9849ec573fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the factory for LiveWindow builders.  <a href="classwpi_1_1SendableRegistry.html#aac76ec01e95a1fba5993e9849ec573fa">More...</a><br /></td></tr>
-<tr class="separator:aac76ec01e95a1fba5993e9849ec573fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48bf0c8092c10afaabb10de2291e9e6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#a48bf0c8092c10afaabb10de2291e9e6e">Add</a> (<a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *sendable, std::string_view name)</td></tr>
-<tr class="memdesc:a48bf0c8092c10afaabb10de2291e9e6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an object to the registry.  <a href="classwpi_1_1SendableRegistry.html#a48bf0c8092c10afaabb10de2291e9e6e">More...</a><br /></td></tr>
-<tr class="separator:a48bf0c8092c10afaabb10de2291e9e6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae3ae88b8ea5e13d234574b27b4bd834"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#aae3ae88b8ea5e13d234574b27b4bd834">Add</a> (<a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *sendable, std::string_view moduleType, int channel)</td></tr>
-<tr class="memdesc:aae3ae88b8ea5e13d234574b27b4bd834"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an object to the registry.  <a href="classwpi_1_1SendableRegistry.html#aae3ae88b8ea5e13d234574b27b4bd834">More...</a><br /></td></tr>
-<tr class="separator:aae3ae88b8ea5e13d234574b27b4bd834"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e2be766f48f404dcc6c7316d41ad96b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#a1e2be766f48f404dcc6c7316d41ad96b">Add</a> (<a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *sendable, std::string_view moduleType, int moduleNumber, int channel)</td></tr>
-<tr class="memdesc:a1e2be766f48f404dcc6c7316d41ad96b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an object to the registry.  <a href="classwpi_1_1SendableRegistry.html#a1e2be766f48f404dcc6c7316d41ad96b">More...</a><br /></td></tr>
-<tr class="separator:a1e2be766f48f404dcc6c7316d41ad96b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad272c965bc68e1dd2fe9c1b3b0a94e33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#ad272c965bc68e1dd2fe9c1b3b0a94e33">Add</a> (<a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *sendable, std::string_view subsystem, std::string_view name)</td></tr>
-<tr class="memdesc:ad272c965bc68e1dd2fe9c1b3b0a94e33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an object to the registry.  <a href="classwpi_1_1SendableRegistry.html#ad272c965bc68e1dd2fe9c1b3b0a94e33">More...</a><br /></td></tr>
-<tr class="separator:ad272c965bc68e1dd2fe9c1b3b0a94e33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab775279a1c7dc1ab48c3733a2c09b941"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#ab775279a1c7dc1ab48c3733a2c09b941">AddLW</a> (<a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *sendable, std::string_view name)</td></tr>
-<tr class="memdesc:ab775279a1c7dc1ab48c3733a2c09b941"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an object to the registry and LiveWindow.  <a href="classwpi_1_1SendableRegistry.html#ab775279a1c7dc1ab48c3733a2c09b941">More...</a><br /></td></tr>
-<tr class="separator:ab775279a1c7dc1ab48c3733a2c09b941"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad677cbf0bb28b51d6092b06d1583f481"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#ad677cbf0bb28b51d6092b06d1583f481">AddLW</a> (<a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *sendable, std::string_view moduleType, int channel)</td></tr>
-<tr class="memdesc:ad677cbf0bb28b51d6092b06d1583f481"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an object to the registry and LiveWindow.  <a href="classwpi_1_1SendableRegistry.html#ad677cbf0bb28b51d6092b06d1583f481">More...</a><br /></td></tr>
-<tr class="separator:ad677cbf0bb28b51d6092b06d1583f481"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8677848331587442b75d08c9f65f3d30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#a8677848331587442b75d08c9f65f3d30">AddLW</a> (<a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *sendable, std::string_view moduleType, int moduleNumber, int channel)</td></tr>
-<tr class="memdesc:a8677848331587442b75d08c9f65f3d30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an object to the registry and LiveWindow.  <a href="classwpi_1_1SendableRegistry.html#a8677848331587442b75d08c9f65f3d30">More...</a><br /></td></tr>
-<tr class="separator:a8677848331587442b75d08c9f65f3d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94c7890b1f322ca4c583f159b4687d4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#a94c7890b1f322ca4c583f159b4687d4e">AddLW</a> (<a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *sendable, std::string_view subsystem, std::string_view name)</td></tr>
-<tr class="memdesc:a94c7890b1f322ca4c583f159b4687d4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an object to the registry and LiveWindow.  <a href="classwpi_1_1SendableRegistry.html#a94c7890b1f322ca4c583f159b4687d4e">More...</a><br /></td></tr>
-<tr class="separator:a94c7890b1f322ca4c583f159b4687d4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ec4046f218a62c6b3583666ce6d4040"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#a7ec4046f218a62c6b3583666ce6d4040">AddChild</a> (<a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *parent, <a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *child)</td></tr>
-<tr class="memdesc:a7ec4046f218a62c6b3583666ce6d4040"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a child object to an object.  <a href="classwpi_1_1SendableRegistry.html#a7ec4046f218a62c6b3583666ce6d4040">More...</a><br /></td></tr>
-<tr class="separator:a7ec4046f218a62c6b3583666ce6d4040"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea3b5584c3258512ec74b3906b4f68d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#aea3b5584c3258512ec74b3906b4f68d6">AddChild</a> (<a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *parent, void *child)</td></tr>
-<tr class="memdesc:aea3b5584c3258512ec74b3906b4f68d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a child object to an object.  <a href="classwpi_1_1SendableRegistry.html#aea3b5584c3258512ec74b3906b4f68d6">More...</a><br /></td></tr>
-<tr class="separator:aea3b5584c3258512ec74b3906b4f68d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af20a17a5f1d5879340ea1a7f0254b3d2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#af20a17a5f1d5879340ea1a7f0254b3d2">Remove</a> (<a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *sendable)</td></tr>
-<tr class="memdesc:af20a17a5f1d5879340ea1a7f0254b3d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes an object from the registry.  <a href="classwpi_1_1SendableRegistry.html#af20a17a5f1d5879340ea1a7f0254b3d2">More...</a><br /></td></tr>
-<tr class="separator:af20a17a5f1d5879340ea1a7f0254b3d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad93675e4fddaa67cb33314ab8afe4576"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#ad93675e4fddaa67cb33314ab8afe4576">Move</a> (<a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *to, <a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *from)</td></tr>
-<tr class="memdesc:ad93675e4fddaa67cb33314ab8afe4576"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves an object in the registry (for use in move constructors/assignments).  <a href="classwpi_1_1SendableRegistry.html#ad93675e4fddaa67cb33314ab8afe4576">More...</a><br /></td></tr>
-<tr class="separator:ad93675e4fddaa67cb33314ab8afe4576"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a224596d84d2df1dabd51d3de215a0aa6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#a224596d84d2df1dabd51d3de215a0aa6">Contains</a> (const <a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *sendable) const</td></tr>
-<tr class="memdesc:a224596d84d2df1dabd51d3de215a0aa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if an object is in the registry.  <a href="classwpi_1_1SendableRegistry.html#a224596d84d2df1dabd51d3de215a0aa6">More...</a><br /></td></tr>
-<tr class="separator:a224596d84d2df1dabd51d3de215a0aa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26f66eb4baed9218329e9d29a772c5e7"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#a26f66eb4baed9218329e9d29a772c5e7">GetName</a> (const <a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *sendable) const</td></tr>
-<tr class="memdesc:a26f66eb4baed9218329e9d29a772c5e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the name of an object.  <a href="classwpi_1_1SendableRegistry.html#a26f66eb4baed9218329e9d29a772c5e7">More...</a><br /></td></tr>
-<tr class="separator:a26f66eb4baed9218329e9d29a772c5e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11d51263cbbd534f53c4cc65c3e18ff0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#a11d51263cbbd534f53c4cc65c3e18ff0">SetName</a> (<a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *sendable, std::string_view name)</td></tr>
-<tr class="memdesc:a11d51263cbbd534f53c4cc65c3e18ff0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name of an object.  <a href="classwpi_1_1SendableRegistry.html#a11d51263cbbd534f53c4cc65c3e18ff0">More...</a><br /></td></tr>
-<tr class="separator:a11d51263cbbd534f53c4cc65c3e18ff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54bcd7dffd7f0c51eee6ca17af1d6a53"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#a54bcd7dffd7f0c51eee6ca17af1d6a53">SetName</a> (<a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *sendable, std::string_view moduleType, int channel)</td></tr>
-<tr class="memdesc:a54bcd7dffd7f0c51eee6ca17af1d6a53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name of an object with a channel number.  <a href="classwpi_1_1SendableRegistry.html#a54bcd7dffd7f0c51eee6ca17af1d6a53">More...</a><br /></td></tr>
-<tr class="separator:a54bcd7dffd7f0c51eee6ca17af1d6a53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22c3b5e09762c6d3098afd0b093ff2e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#a22c3b5e09762c6d3098afd0b093ff2e9">SetName</a> (<a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *sendable, std::string_view moduleType, int moduleNumber, int channel)</td></tr>
-<tr class="memdesc:a22c3b5e09762c6d3098afd0b093ff2e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name of an object with a module and channel number.  <a href="classwpi_1_1SendableRegistry.html#a22c3b5e09762c6d3098afd0b093ff2e9">More...</a><br /></td></tr>
-<tr class="separator:a22c3b5e09762c6d3098afd0b093ff2e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f7567d8e284c3545ae1811b13a9f68d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#a1f7567d8e284c3545ae1811b13a9f68d">SetName</a> (<a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *sendable, std::string_view subsystem, std::string_view name)</td></tr>
-<tr class="memdesc:a1f7567d8e284c3545ae1811b13a9f68d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets both the subsystem name and device name of an object.  <a href="classwpi_1_1SendableRegistry.html#a1f7567d8e284c3545ae1811b13a9f68d">More...</a><br /></td></tr>
-<tr class="separator:a1f7567d8e284c3545ae1811b13a9f68d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9d3ae8fbeafd93d4ad3c3e772709415"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#ae9d3ae8fbeafd93d4ad3c3e772709415">GetSubsystem</a> (const <a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *sendable) const</td></tr>
-<tr class="memdesc:ae9d3ae8fbeafd93d4ad3c3e772709415"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the subsystem name of an object.  <a href="classwpi_1_1SendableRegistry.html#ae9d3ae8fbeafd93d4ad3c3e772709415">More...</a><br /></td></tr>
-<tr class="separator:ae9d3ae8fbeafd93d4ad3c3e772709415"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab899e4776fcccee01998d2be5a1e8ac2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#ab899e4776fcccee01998d2be5a1e8ac2">SetSubsystem</a> (<a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *sendable, std::string_view subsystem)</td></tr>
-<tr class="memdesc:ab899e4776fcccee01998d2be5a1e8ac2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the subsystem name of an object.  <a href="classwpi_1_1SendableRegistry.html#ab899e4776fcccee01998d2be5a1e8ac2">More...</a><br /></td></tr>
-<tr class="separator:ab899e4776fcccee01998d2be5a1e8ac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6874532a2150bea1bee6d04b78f4ada1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#a6874532a2150bea1bee6d04b78f4ada1">GetDataHandle</a> ()</td></tr>
-<tr class="memdesc:a6874532a2150bea1bee6d04b78f4ada1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a unique handle for setting/getting data with <a class="el" href="classwpi_1_1SendableRegistry.html#a29703742e1fc02afb6f4224988e2234e" title="Associates arbitrary data with an object in the registry.">SetData()</a> and <a class="el" href="classwpi_1_1SendableRegistry.html#aad5c8ad34d1ca1f7cc7391bdd427ee1b" title="Gets arbitrary data associated with an object in the registry.">GetData()</a>.  <a href="classwpi_1_1SendableRegistry.html#a6874532a2150bea1bee6d04b78f4ada1">More...</a><br /></td></tr>
-<tr class="separator:a6874532a2150bea1bee6d04b78f4ada1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29703742e1fc02afb6f4224988e2234e"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#a29703742e1fc02afb6f4224988e2234e">SetData</a> (<a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *sendable, int handle, std::shared_ptr&lt; void &gt; <a class="el" href="structdata.html">data</a>)</td></tr>
-<tr class="memdesc:a29703742e1fc02afb6f4224988e2234e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Associates arbitrary data with an object in the registry.  <a href="classwpi_1_1SendableRegistry.html#a29703742e1fc02afb6f4224988e2234e">More...</a><br /></td></tr>
-<tr class="separator:a29703742e1fc02afb6f4224988e2234e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad5c8ad34d1ca1f7cc7391bdd427ee1b"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#aad5c8ad34d1ca1f7cc7391bdd427ee1b">GetData</a> (<a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *sendable, int handle)</td></tr>
-<tr class="memdesc:aad5c8ad34d1ca1f7cc7391bdd427ee1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets arbitrary data associated with an object in the registry.  <a href="classwpi_1_1SendableRegistry.html#aad5c8ad34d1ca1f7cc7391bdd427ee1b">More...</a><br /></td></tr>
-<tr class="separator:aad5c8ad34d1ca1f7cc7391bdd427ee1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af040497bb939a7f8e59f4fcd67a616c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#af040497bb939a7f8e59f4fcd67a616c0">EnableLiveWindow</a> (<a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *sendable)</td></tr>
-<tr class="memdesc:af040497bb939a7f8e59f4fcd67a616c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables LiveWindow for an object.  <a href="classwpi_1_1SendableRegistry.html#af040497bb939a7f8e59f4fcd67a616c0">More...</a><br /></td></tr>
-<tr class="separator:af040497bb939a7f8e59f4fcd67a616c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f5626ec43a63b23c9033ef292aa74c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#a4f5626ec43a63b23c9033ef292aa74c2">DisableLiveWindow</a> (<a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *sendable)</td></tr>
-<tr class="memdesc:a4f5626ec43a63b23c9033ef292aa74c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disables LiveWindow for an object.  <a href="classwpi_1_1SendableRegistry.html#a4f5626ec43a63b23c9033ef292aa74c2">More...</a><br /></td></tr>
-<tr class="separator:a4f5626ec43a63b23c9033ef292aa74c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c8f4b0e17373af8534f6a8ae0432b70"><td class="memItemLeft" align="right" valign="top">UID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#a3c8f4b0e17373af8534f6a8ae0432b70">GetUniqueId</a> (<a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *sendable)</td></tr>
-<tr class="memdesc:a3c8f4b0e17373af8534f6a8ae0432b70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get unique id for an object.  <a href="classwpi_1_1SendableRegistry.html#a3c8f4b0e17373af8534f6a8ae0432b70">More...</a><br /></td></tr>
-<tr class="separator:a3c8f4b0e17373af8534f6a8ae0432b70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab38eebdcab55f273b4eee7816888cf56"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#ab38eebdcab55f273b4eee7816888cf56">GetSendable</a> (UID uid)</td></tr>
-<tr class="memdesc:ab38eebdcab55f273b4eee7816888cf56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get sendable object for a given unique id.  <a href="classwpi_1_1SendableRegistry.html#ab38eebdcab55f273b4eee7816888cf56">More...</a><br /></td></tr>
-<tr class="separator:ab38eebdcab55f273b4eee7816888cf56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4dc7a153a81c37dec9eeea606614263"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#ad4dc7a153a81c37dec9eeea606614263">Publish</a> (UID sendableUid, std::unique_ptr&lt; <a class="el" href="classwpi_1_1SendableBuilder.html">SendableBuilder</a> &gt; builder)</td></tr>
-<tr class="memdesc:ad4dc7a153a81c37dec9eeea606614263"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publishes an object in the registry.  <a href="classwpi_1_1SendableRegistry.html#ad4dc7a153a81c37dec9eeea606614263">More...</a><br /></td></tr>
-<tr class="separator:ad4dc7a153a81c37dec9eeea606614263"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a686c5f73cbbc1874727f7e544fa8c661"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#a686c5f73cbbc1874727f7e544fa8c661">Update</a> (UID sendableUid)</td></tr>
-<tr class="memdesc:a686c5f73cbbc1874727f7e544fa8c661"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates published information from an object.  <a href="classwpi_1_1SendableRegistry.html#a686c5f73cbbc1874727f7e544fa8c661">More...</a><br /></td></tr>
-<tr class="separator:a686c5f73cbbc1874727f7e544fa8c661"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7e39492eb8dce2a75bfc79d96e1fbf2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#ac7e39492eb8dce2a75bfc79d96e1fbf2">ForeachLiveWindow</a> (int dataHandle, <a class="el" href="classwpi_1_1function__ref.html">wpi::function_ref</a>&lt; void(<a class="el" href="structwpi_1_1SendableRegistry_1_1CallbackData.html">CallbackData</a> &amp;cbdata)&gt; callback) const</td></tr>
-<tr class="memdesc:ac7e39492eb8dce2a75bfc79d96e1fbf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterates over LiveWindow-enabled objects in the registry.  <a href="classwpi_1_1SendableRegistry.html#ac7e39492eb8dce2a75bfc79d96e1fbf2">More...</a><br /></td></tr>
-<tr class="separator:ac7e39492eb8dce2a75bfc79d96e1fbf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ad3776f42aef697b5988edda7bf17d4c2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classwpi_1_1SendableRegistry.html">SendableRegistry</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#ad3776f42aef697b5988edda7bf17d4c2">GetInstance</a> ()</td></tr>
-<tr class="memdesc:ad3776f42aef697b5988edda7bf17d4c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets an instance of the <a class="el" href="classwpi_1_1SendableRegistry.html" title="The SendableRegistry class is the public interface for registering sensors and actuators for use on d...">SendableRegistry</a> class.  <a href="classwpi_1_1SendableRegistry.html#ad3776f42aef697b5988edda7bf17d4c2">More...</a><br /></td></tr>
-<tr class="separator:ad3776f42aef697b5988edda7bf17d4c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc172aebc668bf9ec32d309b5e2361bd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#afc172aebc668bf9ec32d309b5e2361bd">SetLiveWindowBuilderFactory</a> (std::function&lt; std::unique_ptr&lt; <a class="el" href="classwpi_1_1SendableBuilder.html">SendableBuilder</a> &gt;()&gt; factory)</td></tr>
+<tr class="memdesc:afc172aebc668bf9ec32d309b5e2361bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the factory for LiveWindow builders.  <a href="classwpi_1_1SendableRegistry.html#afc172aebc668bf9ec32d309b5e2361bd">More...</a><br /></td></tr>
+<tr class="separator:afc172aebc668bf9ec32d309b5e2361bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d07042fc7ece10e3db64d48c0061457"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#a9d07042fc7ece10e3db64d48c0061457">Add</a> (<a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *sendable, std::string_view name)</td></tr>
+<tr class="memdesc:a9d07042fc7ece10e3db64d48c0061457"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an object to the registry.  <a href="classwpi_1_1SendableRegistry.html#a9d07042fc7ece10e3db64d48c0061457">More...</a><br /></td></tr>
+<tr class="separator:a9d07042fc7ece10e3db64d48c0061457"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a562eb25bed5a3d1fa5c34a9d6084e682"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#a562eb25bed5a3d1fa5c34a9d6084e682">Add</a> (<a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *sendable, std::string_view moduleType, int channel)</td></tr>
+<tr class="memdesc:a562eb25bed5a3d1fa5c34a9d6084e682"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an object to the registry.  <a href="classwpi_1_1SendableRegistry.html#a562eb25bed5a3d1fa5c34a9d6084e682">More...</a><br /></td></tr>
+<tr class="separator:a562eb25bed5a3d1fa5c34a9d6084e682"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3730b99c18ef7fb478f70b32958101c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#af3730b99c18ef7fb478f70b32958101c">Add</a> (<a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *sendable, std::string_view moduleType, int moduleNumber, int channel)</td></tr>
+<tr class="memdesc:af3730b99c18ef7fb478f70b32958101c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an object to the registry.  <a href="classwpi_1_1SendableRegistry.html#af3730b99c18ef7fb478f70b32958101c">More...</a><br /></td></tr>
+<tr class="separator:af3730b99c18ef7fb478f70b32958101c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68e55f48e11057d5f6f118f767d24f81"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#a68e55f48e11057d5f6f118f767d24f81">Add</a> (<a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *sendable, std::string_view subsystem, std::string_view name)</td></tr>
+<tr class="memdesc:a68e55f48e11057d5f6f118f767d24f81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an object to the registry.  <a href="classwpi_1_1SendableRegistry.html#a68e55f48e11057d5f6f118f767d24f81">More...</a><br /></td></tr>
+<tr class="separator:a68e55f48e11057d5f6f118f767d24f81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c7b26f016d8d25989062cc97f47f398"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#a9c7b26f016d8d25989062cc97f47f398">AddLW</a> (<a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *sendable, std::string_view name)</td></tr>
+<tr class="memdesc:a9c7b26f016d8d25989062cc97f47f398"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an object to the registry and LiveWindow.  <a href="classwpi_1_1SendableRegistry.html#a9c7b26f016d8d25989062cc97f47f398">More...</a><br /></td></tr>
+<tr class="separator:a9c7b26f016d8d25989062cc97f47f398"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd8cfe6f217cf77744d1e3f16f228192"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#abd8cfe6f217cf77744d1e3f16f228192">AddLW</a> (<a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *sendable, std::string_view moduleType, int channel)</td></tr>
+<tr class="memdesc:abd8cfe6f217cf77744d1e3f16f228192"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an object to the registry and LiveWindow.  <a href="classwpi_1_1SendableRegistry.html#abd8cfe6f217cf77744d1e3f16f228192">More...</a><br /></td></tr>
+<tr class="separator:abd8cfe6f217cf77744d1e3f16f228192"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea92a492072d3af35adc68fbb1785edc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#aea92a492072d3af35adc68fbb1785edc">AddLW</a> (<a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *sendable, std::string_view moduleType, int moduleNumber, int channel)</td></tr>
+<tr class="memdesc:aea92a492072d3af35adc68fbb1785edc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an object to the registry and LiveWindow.  <a href="classwpi_1_1SendableRegistry.html#aea92a492072d3af35adc68fbb1785edc">More...</a><br /></td></tr>
+<tr class="separator:aea92a492072d3af35adc68fbb1785edc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa30e815ad4767c63585e1b72d92827b2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#aa30e815ad4767c63585e1b72d92827b2">AddLW</a> (<a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *sendable, std::string_view subsystem, std::string_view name)</td></tr>
+<tr class="memdesc:aa30e815ad4767c63585e1b72d92827b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an object to the registry and LiveWindow.  <a href="classwpi_1_1SendableRegistry.html#aa30e815ad4767c63585e1b72d92827b2">More...</a><br /></td></tr>
+<tr class="separator:aa30e815ad4767c63585e1b72d92827b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2afd88e07f863cb483d4dd27ae7248f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#ac2afd88e07f863cb483d4dd27ae7248f">AddChild</a> (<a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *parent, <a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *child)</td></tr>
+<tr class="memdesc:ac2afd88e07f863cb483d4dd27ae7248f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a child object to an object.  <a href="classwpi_1_1SendableRegistry.html#ac2afd88e07f863cb483d4dd27ae7248f">More...</a><br /></td></tr>
+<tr class="separator:ac2afd88e07f863cb483d4dd27ae7248f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab909bdef1b2cf3318eac7fe845e7fd28"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#ab909bdef1b2cf3318eac7fe845e7fd28">AddChild</a> (<a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *parent, void *child)</td></tr>
+<tr class="memdesc:ab909bdef1b2cf3318eac7fe845e7fd28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a child object to an object.  <a href="classwpi_1_1SendableRegistry.html#ab909bdef1b2cf3318eac7fe845e7fd28">More...</a><br /></td></tr>
+<tr class="separator:ab909bdef1b2cf3318eac7fe845e7fd28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3ff207641b1c389f03b4ecb126f0873"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#ad3ff207641b1c389f03b4ecb126f0873">Remove</a> (<a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *sendable)</td></tr>
+<tr class="memdesc:ad3ff207641b1c389f03b4ecb126f0873"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes an object from the registry.  <a href="classwpi_1_1SendableRegistry.html#ad3ff207641b1c389f03b4ecb126f0873">More...</a><br /></td></tr>
+<tr class="separator:ad3ff207641b1c389f03b4ecb126f0873"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e79d382b741753dd3d143fbae03bccf"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#a8e79d382b741753dd3d143fbae03bccf">Move</a> (<a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *to, <a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *from)</td></tr>
+<tr class="memdesc:a8e79d382b741753dd3d143fbae03bccf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves an object in the registry (for use in move constructors/assignments).  <a href="classwpi_1_1SendableRegistry.html#a8e79d382b741753dd3d143fbae03bccf">More...</a><br /></td></tr>
+<tr class="separator:a8e79d382b741753dd3d143fbae03bccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc98db4c7985ecd4689d5381e44622e3"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#adc98db4c7985ecd4689d5381e44622e3">Contains</a> (const <a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *sendable)</td></tr>
+<tr class="memdesc:adc98db4c7985ecd4689d5381e44622e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if an object is in the registry.  <a href="classwpi_1_1SendableRegistry.html#adc98db4c7985ecd4689d5381e44622e3">More...</a><br /></td></tr>
+<tr class="separator:adc98db4c7985ecd4689d5381e44622e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a7ee8ac942d74550df792117c156c3c"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#a0a7ee8ac942d74550df792117c156c3c">GetName</a> (const <a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *sendable)</td></tr>
+<tr class="memdesc:a0a7ee8ac942d74550df792117c156c3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the name of an object.  <a href="classwpi_1_1SendableRegistry.html#a0a7ee8ac942d74550df792117c156c3c">More...</a><br /></td></tr>
+<tr class="separator:a0a7ee8ac942d74550df792117c156c3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4048e865587f2fe2b9f8b9ce32c5a9bf"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#a4048e865587f2fe2b9f8b9ce32c5a9bf">SetName</a> (<a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *sendable, std::string_view name)</td></tr>
+<tr class="memdesc:a4048e865587f2fe2b9f8b9ce32c5a9bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name of an object.  <a href="classwpi_1_1SendableRegistry.html#a4048e865587f2fe2b9f8b9ce32c5a9bf">More...</a><br /></td></tr>
+<tr class="separator:a4048e865587f2fe2b9f8b9ce32c5a9bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb0e1efcf9c9843f713297d70c77506e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#abb0e1efcf9c9843f713297d70c77506e">SetName</a> (<a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *sendable, std::string_view moduleType, int channel)</td></tr>
+<tr class="memdesc:abb0e1efcf9c9843f713297d70c77506e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name of an object with a channel number.  <a href="classwpi_1_1SendableRegistry.html#abb0e1efcf9c9843f713297d70c77506e">More...</a><br /></td></tr>
+<tr class="separator:abb0e1efcf9c9843f713297d70c77506e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b28ce156cc266401dd1cecbc8ca0519"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#a7b28ce156cc266401dd1cecbc8ca0519">SetName</a> (<a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *sendable, std::string_view moduleType, int moduleNumber, int channel)</td></tr>
+<tr class="memdesc:a7b28ce156cc266401dd1cecbc8ca0519"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name of an object with a module and channel number.  <a href="classwpi_1_1SendableRegistry.html#a7b28ce156cc266401dd1cecbc8ca0519">More...</a><br /></td></tr>
+<tr class="separator:a7b28ce156cc266401dd1cecbc8ca0519"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c31c5267960d505366cc9cb0963ed86"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#a6c31c5267960d505366cc9cb0963ed86">SetName</a> (<a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *sendable, std::string_view subsystem, std::string_view name)</td></tr>
+<tr class="memdesc:a6c31c5267960d505366cc9cb0963ed86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets both the subsystem name and device name of an object.  <a href="classwpi_1_1SendableRegistry.html#a6c31c5267960d505366cc9cb0963ed86">More...</a><br /></td></tr>
+<tr class="separator:a6c31c5267960d505366cc9cb0963ed86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43c045eb913718f9758ad78fe59e8697"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#a43c045eb913718f9758ad78fe59e8697">GetSubsystem</a> (const <a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *sendable)</td></tr>
+<tr class="memdesc:a43c045eb913718f9758ad78fe59e8697"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the subsystem name of an object.  <a href="classwpi_1_1SendableRegistry.html#a43c045eb913718f9758ad78fe59e8697">More...</a><br /></td></tr>
+<tr class="separator:a43c045eb913718f9758ad78fe59e8697"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4576e94034731e6336a6d921a838b81b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#a4576e94034731e6336a6d921a838b81b">SetSubsystem</a> (<a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *sendable, std::string_view subsystem)</td></tr>
+<tr class="memdesc:a4576e94034731e6336a6d921a838b81b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the subsystem name of an object.  <a href="classwpi_1_1SendableRegistry.html#a4576e94034731e6336a6d921a838b81b">More...</a><br /></td></tr>
+<tr class="separator:a4576e94034731e6336a6d921a838b81b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab735743b300c6491181faf80a2a29c63"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#ab735743b300c6491181faf80a2a29c63">GetDataHandle</a> ()</td></tr>
+<tr class="memdesc:ab735743b300c6491181faf80a2a29c63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a unique handle for setting/getting data with <a class="el" href="classwpi_1_1SendableRegistry.html#a1b358b34a33e870556ee1652dbe171bd" title="Associates arbitrary data with an object in the registry.">SetData()</a> and <a class="el" href="classwpi_1_1SendableRegistry.html#afca70ccee242af3b5e8967f3bcbbc8dc" title="Gets arbitrary data associated with an object in the registry.">GetData()</a>.  <a href="classwpi_1_1SendableRegistry.html#ab735743b300c6491181faf80a2a29c63">More...</a><br /></td></tr>
+<tr class="separator:ab735743b300c6491181faf80a2a29c63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b358b34a33e870556ee1652dbe171bd"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#a1b358b34a33e870556ee1652dbe171bd">SetData</a> (<a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *sendable, int handle, std::shared_ptr&lt; void &gt; <a class="el" href="structdata.html">data</a>)</td></tr>
+<tr class="memdesc:a1b358b34a33e870556ee1652dbe171bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Associates arbitrary data with an object in the registry.  <a href="classwpi_1_1SendableRegistry.html#a1b358b34a33e870556ee1652dbe171bd">More...</a><br /></td></tr>
+<tr class="separator:a1b358b34a33e870556ee1652dbe171bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afca70ccee242af3b5e8967f3bcbbc8dc"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#afca70ccee242af3b5e8967f3bcbbc8dc">GetData</a> (<a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *sendable, int handle)</td></tr>
+<tr class="memdesc:afca70ccee242af3b5e8967f3bcbbc8dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets arbitrary data associated with an object in the registry.  <a href="classwpi_1_1SendableRegistry.html#afca70ccee242af3b5e8967f3bcbbc8dc">More...</a><br /></td></tr>
+<tr class="separator:afca70ccee242af3b5e8967f3bcbbc8dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a311af222eeb9f16dca29a81ce1aab05c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#a311af222eeb9f16dca29a81ce1aab05c">EnableLiveWindow</a> (<a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *sendable)</td></tr>
+<tr class="memdesc:a311af222eeb9f16dca29a81ce1aab05c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables LiveWindow for an object.  <a href="classwpi_1_1SendableRegistry.html#a311af222eeb9f16dca29a81ce1aab05c">More...</a><br /></td></tr>
+<tr class="separator:a311af222eeb9f16dca29a81ce1aab05c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3ea94494f84a9f2a4f1d253a74ab1cb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#af3ea94494f84a9f2a4f1d253a74ab1cb">DisableLiveWindow</a> (<a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *sendable)</td></tr>
+<tr class="memdesc:af3ea94494f84a9f2a4f1d253a74ab1cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disables LiveWindow for an object.  <a href="classwpi_1_1SendableRegistry.html#af3ea94494f84a9f2a4f1d253a74ab1cb">More...</a><br /></td></tr>
+<tr class="separator:af3ea94494f84a9f2a4f1d253a74ab1cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5775eb81b6ac5152dae8c58809018f59"><td class="memItemLeft" align="right" valign="top">static UID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#a5775eb81b6ac5152dae8c58809018f59">GetUniqueId</a> (<a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *sendable)</td></tr>
+<tr class="memdesc:a5775eb81b6ac5152dae8c58809018f59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get unique id for an object.  <a href="classwpi_1_1SendableRegistry.html#a5775eb81b6ac5152dae8c58809018f59">More...</a><br /></td></tr>
+<tr class="separator:a5775eb81b6ac5152dae8c58809018f59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a2366599f685f6db68ce86dd705ff9a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#a0a2366599f685f6db68ce86dd705ff9a">GetSendable</a> (UID uid)</td></tr>
+<tr class="memdesc:a0a2366599f685f6db68ce86dd705ff9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get sendable object for a given unique id.  <a href="classwpi_1_1SendableRegistry.html#a0a2366599f685f6db68ce86dd705ff9a">More...</a><br /></td></tr>
+<tr class="separator:a0a2366599f685f6db68ce86dd705ff9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fb252615eb5209ea1de12185f077d19"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#a7fb252615eb5209ea1de12185f077d19">Publish</a> (UID sendableUid, std::unique_ptr&lt; <a class="el" href="classwpi_1_1SendableBuilder.html">SendableBuilder</a> &gt; builder)</td></tr>
+<tr class="memdesc:a7fb252615eb5209ea1de12185f077d19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publishes an object in the registry.  <a href="classwpi_1_1SendableRegistry.html#a7fb252615eb5209ea1de12185f077d19">More...</a><br /></td></tr>
+<tr class="separator:a7fb252615eb5209ea1de12185f077d19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a876aa04d9d281df48ff32330f38f2c33"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#a876aa04d9d281df48ff32330f38f2c33">Update</a> (UID sendableUid)</td></tr>
+<tr class="memdesc:a876aa04d9d281df48ff32330f38f2c33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates published information from an object.  <a href="classwpi_1_1SendableRegistry.html#a876aa04d9d281df48ff32330f38f2c33">More...</a><br /></td></tr>
+<tr class="separator:a876aa04d9d281df48ff32330f38f2c33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdfbcda30cc4a9426b44431fab8cf76f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableRegistry.html#acdfbcda30cc4a9426b44431fab8cf76f">ForeachLiveWindow</a> (int dataHandle, <a class="el" href="classwpi_1_1function__ref.html">wpi::function_ref</a>&lt; void(<a class="el" href="structwpi_1_1SendableRegistry_1_1CallbackData.html">CallbackData</a> &amp;cbdata)&gt; callback)</td></tr>
+<tr class="memdesc:acdfbcda30cc4a9426b44431fab8cf76f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterates over LiveWindow-enabled objects in the registry.  <a href="classwpi_1_1SendableRegistry.html#acdfbcda30cc4a9426b44431fab8cf76f">More...</a><br /></td></tr>
+<tr class="separator:acdfbcda30cc4a9426b44431fab8cf76f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="classwpi_1_1SendableRegistry.html" title="The SendableRegistry class is the public interface for registering sensors and actuators for use on d...">SendableRegistry</a> class is the public interface for registering sensors and actuators for use on dashboards and LiveWindow. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="aae3ae88b8ea5e13d234574b27b4bd834"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae3ae88b8ea5e13d234574b27b4bd834">&#9670;&nbsp;</a></span>Add() <span class="overload">[1/4]</span></h2>
+<a id="a562eb25bed5a3d1fa5c34a9d6084e682"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a562eb25bed5a3d1fa5c34a9d6084e682">&#9670;&nbsp;</a></span>Add() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void wpi::SendableRegistry::Add </td>
+          <td class="memname">static void wpi::SendableRegistry::Add </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *&#160;</td>
           <td class="paramname"><em>sendable</em>, </td>
@@ -258,6 +248,11 @@ Static Public Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Adds an object to the registry. </p>
@@ -272,14 +267,17 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a1e2be766f48f404dcc6c7316d41ad96b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e2be766f48f404dcc6c7316d41ad96b">&#9670;&nbsp;</a></span>Add() <span class="overload">[2/4]</span></h2>
+<a id="af3730b99c18ef7fb478f70b32958101c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3730b99c18ef7fb478f70b32958101c">&#9670;&nbsp;</a></span>Add() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void wpi::SendableRegistry::Add </td>
+          <td class="memname">static void wpi::SendableRegistry::Add </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *&#160;</td>
           <td class="paramname"><em>sendable</em>, </td>
@@ -308,6 +306,11 @@ Static Public Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Adds an object to the registry. </p>
@@ -323,14 +326,17 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a48bf0c8092c10afaabb10de2291e9e6e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a48bf0c8092c10afaabb10de2291e9e6e">&#9670;&nbsp;</a></span>Add() <span class="overload">[3/4]</span></h2>
+<a id="a9d07042fc7ece10e3db64d48c0061457"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d07042fc7ece10e3db64d48c0061457">&#9670;&nbsp;</a></span>Add() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void wpi::SendableRegistry::Add </td>
+          <td class="memname">static void wpi::SendableRegistry::Add </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *&#160;</td>
           <td class="paramname"><em>sendable</em>, </td>
@@ -347,6 +353,11 @@ Static Public Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Adds an object to the registry. </p>
@@ -360,14 +371,17 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad272c965bc68e1dd2fe9c1b3b0a94e33"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad272c965bc68e1dd2fe9c1b3b0a94e33">&#9670;&nbsp;</a></span>Add() <span class="overload">[4/4]</span></h2>
+<a id="a68e55f48e11057d5f6f118f767d24f81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68e55f48e11057d5f6f118f767d24f81">&#9670;&nbsp;</a></span>Add() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void wpi::SendableRegistry::Add </td>
+          <td class="memname">static void wpi::SendableRegistry::Add </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *&#160;</td>
           <td class="paramname"><em>sendable</em>, </td>
@@ -390,6 +404,11 @@ Static Public Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Adds an object to the registry. </p>
@@ -404,14 +423,17 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a7ec4046f218a62c6b3583666ce6d4040"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ec4046f218a62c6b3583666ce6d4040">&#9670;&nbsp;</a></span>AddChild() <span class="overload">[1/2]</span></h2>
+<a id="ac2afd88e07f863cb483d4dd27ae7248f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2afd88e07f863cb483d4dd27ae7248f">&#9670;&nbsp;</a></span>AddChild() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void wpi::SendableRegistry::AddChild </td>
+          <td class="memname">static void wpi::SendableRegistry::AddChild </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *&#160;</td>
           <td class="paramname"><em>parent</em>, </td>
@@ -428,6 +450,11 @@ Static Public Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Adds a child object to an object. </p>
@@ -442,14 +469,17 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aea3b5584c3258512ec74b3906b4f68d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aea3b5584c3258512ec74b3906b4f68d6">&#9670;&nbsp;</a></span>AddChild() <span class="overload">[2/2]</span></h2>
+<a id="ab909bdef1b2cf3318eac7fe845e7fd28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab909bdef1b2cf3318eac7fe845e7fd28">&#9670;&nbsp;</a></span>AddChild() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void wpi::SendableRegistry::AddChild </td>
+          <td class="memname">static void wpi::SendableRegistry::AddChild </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *&#160;</td>
           <td class="paramname"><em>parent</em>, </td>
@@ -466,6 +496,11 @@ Static Public Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Adds a child object to an object. </p>
@@ -480,14 +515,17 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad677cbf0bb28b51d6092b06d1583f481"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad677cbf0bb28b51d6092b06d1583f481">&#9670;&nbsp;</a></span>AddLW() <span class="overload">[1/4]</span></h2>
+<a id="abd8cfe6f217cf77744d1e3f16f228192"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd8cfe6f217cf77744d1e3f16f228192">&#9670;&nbsp;</a></span>AddLW() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void wpi::SendableRegistry::AddLW </td>
+          <td class="memname">static void wpi::SendableRegistry::AddLW </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *&#160;</td>
           <td class="paramname"><em>sendable</em>, </td>
@@ -510,6 +548,11 @@ Static Public Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Adds an object to the registry and LiveWindow. </p>
@@ -524,14 +567,17 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a8677848331587442b75d08c9f65f3d30"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8677848331587442b75d08c9f65f3d30">&#9670;&nbsp;</a></span>AddLW() <span class="overload">[2/4]</span></h2>
+<a id="aea92a492072d3af35adc68fbb1785edc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea92a492072d3af35adc68fbb1785edc">&#9670;&nbsp;</a></span>AddLW() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void wpi::SendableRegistry::AddLW </td>
+          <td class="memname">static void wpi::SendableRegistry::AddLW </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *&#160;</td>
           <td class="paramname"><em>sendable</em>, </td>
@@ -560,6 +606,11 @@ Static Public Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Adds an object to the registry and LiveWindow. </p>
@@ -575,14 +626,17 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ab775279a1c7dc1ab48c3733a2c09b941"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab775279a1c7dc1ab48c3733a2c09b941">&#9670;&nbsp;</a></span>AddLW() <span class="overload">[3/4]</span></h2>
+<a id="a9c7b26f016d8d25989062cc97f47f398"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c7b26f016d8d25989062cc97f47f398">&#9670;&nbsp;</a></span>AddLW() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void wpi::SendableRegistry::AddLW </td>
+          <td class="memname">static void wpi::SendableRegistry::AddLW </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *&#160;</td>
           <td class="paramname"><em>sendable</em>, </td>
@@ -599,6 +653,11 @@ Static Public Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Adds an object to the registry and LiveWindow. </p>
@@ -612,14 +671,17 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a94c7890b1f322ca4c583f159b4687d4e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a94c7890b1f322ca4c583f159b4687d4e">&#9670;&nbsp;</a></span>AddLW() <span class="overload">[4/4]</span></h2>
+<a id="aa30e815ad4767c63585e1b72d92827b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa30e815ad4767c63585e1b72d92827b2">&#9670;&nbsp;</a></span>AddLW() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void wpi::SendableRegistry::AddLW </td>
+          <td class="memname">static void wpi::SendableRegistry::AddLW </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *&#160;</td>
           <td class="paramname"><em>sendable</em>, </td>
@@ -642,6 +704,11 @@ Static Public Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Adds an object to the registry and LiveWindow. </p>
@@ -656,20 +723,28 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a224596d84d2df1dabd51d3de215a0aa6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a224596d84d2df1dabd51d3de215a0aa6">&#9670;&nbsp;</a></span>Contains()</h2>
+<a id="adc98db4c7985ecd4689d5381e44622e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc98db4c7985ecd4689d5381e44622e3">&#9670;&nbsp;</a></span>Contains()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool wpi::SendableRegistry::Contains </td>
+          <td class="memname">static bool wpi::SendableRegistry::Contains </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *&#160;</td>
           <td class="paramname"><em>sendable</em></td><td>)</td>
-          <td> const</td>
+          <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Determines if an object is in the registry. </p>
@@ -683,20 +758,28 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a4f5626ec43a63b23c9033ef292aa74c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f5626ec43a63b23c9033ef292aa74c2">&#9670;&nbsp;</a></span>DisableLiveWindow()</h2>
+<a id="af3ea94494f84a9f2a4f1d253a74ab1cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3ea94494f84a9f2a4f1d253a74ab1cb">&#9670;&nbsp;</a></span>DisableLiveWindow()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void wpi::SendableRegistry::DisableLiveWindow </td>
+          <td class="memname">static void wpi::SendableRegistry::DisableLiveWindow </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *&#160;</td>
           <td class="paramname"><em>sendable</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Disables LiveWindow for an object. </p>
@@ -709,20 +792,28 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af040497bb939a7f8e59f4fcd67a616c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af040497bb939a7f8e59f4fcd67a616c0">&#9670;&nbsp;</a></span>EnableLiveWindow()</h2>
+<a id="a311af222eeb9f16dca29a81ce1aab05c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a311af222eeb9f16dca29a81ce1aab05c">&#9670;&nbsp;</a></span>EnableLiveWindow()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void wpi::SendableRegistry::EnableLiveWindow </td>
+          <td class="memname">static void wpi::SendableRegistry::EnableLiveWindow </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *&#160;</td>
           <td class="paramname"><em>sendable</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Enables LiveWindow for an object. </p>
@@ -735,14 +826,17 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac7e39492eb8dce2a75bfc79d96e1fbf2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7e39492eb8dce2a75bfc79d96e1fbf2">&#9670;&nbsp;</a></span>ForeachLiveWindow()</h2>
+<a id="acdfbcda30cc4a9426b44431fab8cf76f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdfbcda30cc4a9426b44431fab8cf76f">&#9670;&nbsp;</a></span>ForeachLiveWindow()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void wpi::SendableRegistry::ForeachLiveWindow </td>
+          <td class="memname">static void wpi::SendableRegistry::ForeachLiveWindow </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>dataHandle</em>, </td>
@@ -756,9 +850,14 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const</td>
+          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Iterates over LiveWindow-enabled objects in the registry. </p>
@@ -773,14 +872,17 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aad5c8ad34d1ca1f7cc7391bdd427ee1b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad5c8ad34d1ca1f7cc7391bdd427ee1b">&#9670;&nbsp;</a></span>GetData()</h2>
+<a id="afca70ccee242af3b5e8967f3bcbbc8dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afca70ccee242af3b5e8967f3bcbbc8dc">&#9670;&nbsp;</a></span>GetData()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::shared_ptr&lt;void&gt; wpi::SendableRegistry::GetData </td>
+          <td class="memname">static std::shared_ptr&lt;void&gt; wpi::SendableRegistry::GetData </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *&#160;</td>
           <td class="paramname"><em>sendable</em>, </td>
@@ -797,13 +899,18 @@ Static Public Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Gets arbitrary data associated with an object in the registry. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sendable</td><td>object </td></tr>
-    <tr><td class="paramname">handle</td><td>data handle returned by <a class="el" href="classwpi_1_1SendableRegistry.html#a6874532a2150bea1bee6d04b78f4ada1" title="Gets a unique handle for setting/getting data with SetData() and GetData().">GetDataHandle()</a> </td></tr>
+    <tr><td class="paramname">handle</td><td>data handle returned by <a class="el" href="classwpi_1_1SendableRegistry.html#ab735743b300c6491181faf80a2a29c63" title="Gets a unique handle for setting/getting data with SetData() and GetData().">GetDataHandle()</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -811,28 +918,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a6874532a2150bea1bee6d04b78f4ada1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6874532a2150bea1bee6d04b78f4ada1">&#9670;&nbsp;</a></span>GetDataHandle()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int wpi::SendableRegistry::GetDataHandle </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Gets a unique handle for setting/getting data with <a class="el" href="classwpi_1_1SendableRegistry.html#a29703742e1fc02afb6f4224988e2234e" title="Associates arbitrary data with an object in the registry.">SetData()</a> and <a class="el" href="classwpi_1_1SendableRegistry.html#aad5c8ad34d1ca1f7cc7391bdd427ee1b" title="Gets arbitrary data associated with an object in the registry.">GetData()</a>. </p>
-<dl class="section return"><dt>Returns</dt><dd>Handle </dd></dl>
-
-</div>
-</div>
-<a id="ad3776f42aef697b5988edda7bf17d4c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3776f42aef697b5988edda7bf17d4c2">&#9670;&nbsp;</a></span>GetInstance()</h2>
+<a id="ab735743b300c6491181faf80a2a29c63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab735743b300c6491181faf80a2a29c63">&#9670;&nbsp;</a></span>GetDataHandle()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -841,7 +928,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="classwpi_1_1SendableRegistry.html">SendableRegistry</a>&amp; wpi::SendableRegistry::GetInstance </td>
+          <td class="memname">static int wpi::SendableRegistry::GetDataHandle </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -854,25 +941,33 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Gets an instance of the <a class="el" href="classwpi_1_1SendableRegistry.html" title="The SendableRegistry class is the public interface for registering sensors and actuators for use on d...">SendableRegistry</a> class. </p>
-<p>This is a singleton to guarantee that there is only a single instance regardless of how many times GetInstance is called. </p>
+<p>Gets a unique handle for setting/getting data with <a class="el" href="classwpi_1_1SendableRegistry.html#a1b358b34a33e870556ee1652dbe171bd" title="Associates arbitrary data with an object in the registry.">SetData()</a> and <a class="el" href="classwpi_1_1SendableRegistry.html#afca70ccee242af3b5e8967f3bcbbc8dc" title="Gets arbitrary data associated with an object in the registry.">GetData()</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>Handle </dd></dl>
 
 </div>
 </div>
-<a id="a26f66eb4baed9218329e9d29a772c5e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a26f66eb4baed9218329e9d29a772c5e7">&#9670;&nbsp;</a></span>GetName()</h2>
+<a id="a0a7ee8ac942d74550df792117c156c3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a7ee8ac942d74550df792117c156c3c">&#9670;&nbsp;</a></span>GetName()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string wpi::SendableRegistry::GetName </td>
+          <td class="memname">static std::string wpi::SendableRegistry::GetName </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *&#160;</td>
           <td class="paramname"><em>sendable</em></td><td>)</td>
-          <td> const</td>
+          <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Gets the name of an object. </p>
@@ -886,20 +981,28 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ab38eebdcab55f273b4eee7816888cf56"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab38eebdcab55f273b4eee7816888cf56">&#9670;&nbsp;</a></span>GetSendable()</h2>
+<a id="a0a2366599f685f6db68ce86dd705ff9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a2366599f685f6db68ce86dd705ff9a">&#9670;&nbsp;</a></span>GetSendable()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classwpi_1_1Sendable.html">Sendable</a>* wpi::SendableRegistry::GetSendable </td>
+          <td class="memname">static <a class="el" href="classwpi_1_1Sendable.html">Sendable</a>* wpi::SendableRegistry::GetSendable </td>
           <td>(</td>
           <td class="paramtype">UID&#160;</td>
           <td class="paramname"><em>uid</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Get sendable object for a given unique id. </p>
@@ -913,20 +1016,28 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae9d3ae8fbeafd93d4ad3c3e772709415"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae9d3ae8fbeafd93d4ad3c3e772709415">&#9670;&nbsp;</a></span>GetSubsystem()</h2>
+<a id="a43c045eb913718f9758ad78fe59e8697"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43c045eb913718f9758ad78fe59e8697">&#9670;&nbsp;</a></span>GetSubsystem()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string wpi::SendableRegistry::GetSubsystem </td>
+          <td class="memname">static std::string wpi::SendableRegistry::GetSubsystem </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *&#160;</td>
           <td class="paramname"><em>sendable</em></td><td>)</td>
-          <td> const</td>
+          <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Gets the subsystem name of an object. </p>
@@ -940,20 +1051,28 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a3c8f4b0e17373af8534f6a8ae0432b70"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c8f4b0e17373af8534f6a8ae0432b70">&#9670;&nbsp;</a></span>GetUniqueId()</h2>
+<a id="a5775eb81b6ac5152dae8c58809018f59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5775eb81b6ac5152dae8c58809018f59">&#9670;&nbsp;</a></span>GetUniqueId()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">UID wpi::SendableRegistry::GetUniqueId </td>
+          <td class="memname">static UID wpi::SendableRegistry::GetUniqueId </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *&#160;</td>
           <td class="paramname"><em>sendable</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Get unique id for an object. </p>
@@ -968,14 +1087,17 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad93675e4fddaa67cb33314ab8afe4576"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad93675e4fddaa67cb33314ab8afe4576">&#9670;&nbsp;</a></span>Move()</h2>
+<a id="a8e79d382b741753dd3d143fbae03bccf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e79d382b741753dd3d143fbae03bccf">&#9670;&nbsp;</a></span>Move()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void wpi::SendableRegistry::Move </td>
+          <td class="memname">static void wpi::SendableRegistry::Move </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *&#160;</td>
           <td class="paramname"><em>to</em>, </td>
@@ -992,6 +1114,11 @@ Static Public Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Moves an object in the registry (for use in move constructors/assignments). </p>
@@ -1005,14 +1132,17 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad4dc7a153a81c37dec9eeea606614263"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4dc7a153a81c37dec9eeea606614263">&#9670;&nbsp;</a></span>Publish()</h2>
+<a id="a7fb252615eb5209ea1de12185f077d19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fb252615eb5209ea1de12185f077d19">&#9670;&nbsp;</a></span>Publish()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void wpi::SendableRegistry::Publish </td>
+          <td class="memname">static void wpi::SendableRegistry::Publish </td>
           <td>(</td>
           <td class="paramtype">UID&#160;</td>
           <td class="paramname"><em>sendableUid</em>, </td>
@@ -1029,6 +1159,11 @@ Static Public Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Publishes an object in the registry. </p>
@@ -1042,20 +1177,28 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af20a17a5f1d5879340ea1a7f0254b3d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af20a17a5f1d5879340ea1a7f0254b3d2">&#9670;&nbsp;</a></span>Remove()</h2>
+<a id="ad3ff207641b1c389f03b4ecb126f0873"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3ff207641b1c389f03b4ecb126f0873">&#9670;&nbsp;</a></span>Remove()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool wpi::SendableRegistry::Remove </td>
+          <td class="memname">static bool wpi::SendableRegistry::Remove </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *&#160;</td>
           <td class="paramname"><em>sendable</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Removes an object from the registry. </p>
@@ -1069,14 +1212,17 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a29703742e1fc02afb6f4224988e2234e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a29703742e1fc02afb6f4224988e2234e">&#9670;&nbsp;</a></span>SetData()</h2>
+<a id="a1b358b34a33e870556ee1652dbe171bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b358b34a33e870556ee1652dbe171bd">&#9670;&nbsp;</a></span>SetData()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::shared_ptr&lt;void&gt; wpi::SendableRegistry::SetData </td>
+          <td class="memname">static std::shared_ptr&lt;void&gt; wpi::SendableRegistry::SetData </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *&#160;</td>
           <td class="paramname"><em>sendable</em>, </td>
@@ -1099,13 +1245,18 @@ Static Public Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Associates arbitrary data with an object in the registry. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sendable</td><td>object </td></tr>
-    <tr><td class="paramname">handle</td><td>data handle returned by <a class="el" href="classwpi_1_1SendableRegistry.html#a6874532a2150bea1bee6d04b78f4ada1" title="Gets a unique handle for setting/getting data with SetData() and GetData().">GetDataHandle()</a> </td></tr>
+    <tr><td class="paramname">handle</td><td>data handle returned by <a class="el" href="classwpi_1_1SendableRegistry.html#ab735743b300c6491181faf80a2a29c63" title="Gets a unique handle for setting/getting data with SetData() and GetData().">GetDataHandle()</a> </td></tr>
     <tr><td class="paramname">data</td><td>data to set </td></tr>
   </table>
   </dd>
@@ -1114,20 +1265,28 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aac76ec01e95a1fba5993e9849ec573fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac76ec01e95a1fba5993e9849ec573fa">&#9670;&nbsp;</a></span>SetLiveWindowBuilderFactory()</h2>
+<a id="afc172aebc668bf9ec32d309b5e2361bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc172aebc668bf9ec32d309b5e2361bd">&#9670;&nbsp;</a></span>SetLiveWindowBuilderFactory()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void wpi::SendableRegistry::SetLiveWindowBuilderFactory </td>
+          <td class="memname">static void wpi::SendableRegistry::SetLiveWindowBuilderFactory </td>
           <td>(</td>
           <td class="paramtype">std::function&lt; std::unique_ptr&lt; <a class="el" href="classwpi_1_1SendableBuilder.html">SendableBuilder</a> &gt;()&gt;&#160;</td>
           <td class="paramname"><em>factory</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Sets the factory for LiveWindow builders. </p>
@@ -1140,14 +1299,17 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a54bcd7dffd7f0c51eee6ca17af1d6a53"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54bcd7dffd7f0c51eee6ca17af1d6a53">&#9670;&nbsp;</a></span>SetName() <span class="overload">[1/4]</span></h2>
+<a id="abb0e1efcf9c9843f713297d70c77506e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb0e1efcf9c9843f713297d70c77506e">&#9670;&nbsp;</a></span>SetName() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void wpi::SendableRegistry::SetName </td>
+          <td class="memname">static void wpi::SendableRegistry::SetName </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *&#160;</td>
           <td class="paramname"><em>sendable</em>, </td>
@@ -1170,6 +1332,11 @@ Static Public Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Sets the name of an object with a channel number. </p>
@@ -1184,14 +1351,17 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a22c3b5e09762c6d3098afd0b093ff2e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a22c3b5e09762c6d3098afd0b093ff2e9">&#9670;&nbsp;</a></span>SetName() <span class="overload">[2/4]</span></h2>
+<a id="a7b28ce156cc266401dd1cecbc8ca0519"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b28ce156cc266401dd1cecbc8ca0519">&#9670;&nbsp;</a></span>SetName() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void wpi::SendableRegistry::SetName </td>
+          <td class="memname">static void wpi::SendableRegistry::SetName </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *&#160;</td>
           <td class="paramname"><em>sendable</em>, </td>
@@ -1220,6 +1390,11 @@ Static Public Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Sets the name of an object with a module and channel number. </p>
@@ -1235,14 +1410,17 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a11d51263cbbd534f53c4cc65c3e18ff0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11d51263cbbd534f53c4cc65c3e18ff0">&#9670;&nbsp;</a></span>SetName() <span class="overload">[3/4]</span></h2>
+<a id="a4048e865587f2fe2b9f8b9ce32c5a9bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4048e865587f2fe2b9f8b9ce32c5a9bf">&#9670;&nbsp;</a></span>SetName() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void wpi::SendableRegistry::SetName </td>
+          <td class="memname">static void wpi::SendableRegistry::SetName </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *&#160;</td>
           <td class="paramname"><em>sendable</em>, </td>
@@ -1259,6 +1437,11 @@ Static Public Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Sets the name of an object. </p>
@@ -1272,14 +1455,17 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a1f7567d8e284c3545ae1811b13a9f68d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f7567d8e284c3545ae1811b13a9f68d">&#9670;&nbsp;</a></span>SetName() <span class="overload">[4/4]</span></h2>
+<a id="a6c31c5267960d505366cc9cb0963ed86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c31c5267960d505366cc9cb0963ed86">&#9670;&nbsp;</a></span>SetName() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void wpi::SendableRegistry::SetName </td>
+          <td class="memname">static void wpi::SendableRegistry::SetName </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *&#160;</td>
           <td class="paramname"><em>sendable</em>, </td>
@@ -1302,6 +1488,11 @@ Static Public Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Sets both the subsystem name and device name of an object. </p>
@@ -1316,14 +1507,17 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ab899e4776fcccee01998d2be5a1e8ac2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab899e4776fcccee01998d2be5a1e8ac2">&#9670;&nbsp;</a></span>SetSubsystem()</h2>
+<a id="a4576e94034731e6336a6d921a838b81b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4576e94034731e6336a6d921a838b81b">&#9670;&nbsp;</a></span>SetSubsystem()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void wpi::SendableRegistry::SetSubsystem </td>
+          <td class="memname">static void wpi::SendableRegistry::SetSubsystem </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classwpi_1_1Sendable.html">Sendable</a> *&#160;</td>
           <td class="paramname"><em>sendable</em>, </td>
@@ -1340,6 +1534,11 @@ Static Public Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Sets the subsystem name of an object. </p>
@@ -1353,20 +1552,28 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a686c5f73cbbc1874727f7e544fa8c661"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a686c5f73cbbc1874727f7e544fa8c661">&#9670;&nbsp;</a></span>Update()</h2>
+<a id="a876aa04d9d281df48ff32330f38f2c33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a876aa04d9d281df48ff32330f38f2c33">&#9670;&nbsp;</a></span>Update()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void wpi::SendableRegistry::Update </td>
+          <td class="memname">static void wpi::SendableRegistry::Update </td>
           <td>(</td>
           <td class="paramtype">UID&#160;</td>
           <td class="paramname"><em>sendableUid</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Updates published information from an object. </p>
@@ -1388,7 +1595,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>wpi</b></li><li class="navelem"><a class="el" href="classwpi_1_1SendableRegistry.html">SendableRegistry</a></li>
-    <li class="footer">Generated on Tue Jun 15 2021 03:10:24 for WPILibC++ by
+    <li class="footer">Generated on Wed Jun 16 2021 06:08:03 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

@@ -1,16 +1,5 @@
 var NAVTREEINDEX34 =
 {
-"group__hal__addressable.html":[3,0,20],
-"group__hal__analogaccumulator.html":[3,0,1],
-"group__hal__analogaccumulator.html#ga49942774a1f141aa4d723156b8cc9111":[3,0,1,6],
-"group__hal__analogaccumulator.html#ga8c5a1fd3000f7f27d343919db5ddc507":[3,0,1,1],
-"group__hal__analogaccumulator.html#ga9a058b98f3c06ea3bc2a828d1ea74967":[3,0,1,2],
-"group__hal__analogaccumulator.html#ga9a5528a2b18433d484fcbe9ab973d801":[3,0,1,0],
-"group__hal__analogaccumulator.html#gab81e29001988d21132fc721327705b6c":[3,0,1,4],
-"group__hal__analogaccumulator.html#gad029abe7187603b18cfde046be0a7443":[3,0,1,3],
-"group__hal__analogaccumulator.html#gae4ca24c50905b8258a5838357c5aadc7":[3,0,1,7],
-"group__hal__analogaccumulator.html#gaf81d827fb12cada06a52ce6978455354":[3,0,1,5],
-"group__hal__analoggyro.html":[3,0,21],
 "group__hal__analoggyro.html#ga1413de42a70face20125ce03d84e7792":[3,0,21,2],
 "group__hal__analoggyro.html#ga34ab7e0949f288b61ba057137c41c24f":[3,0,21,5],
 "group__hal__analoggyro.html#ga3fc6d1d16c47945442a78d378af91ede":[3,0,21,0],
@@ -249,5 +238,16 @@ var NAVTREEINDEX34 =
 "group__hal__extensions.html#ga6da0c5ba6c9d8e33b632a6e70126f819":[3,0,7,1],
 "group__hal__extensions.html#gaddbe76c774e63f8df76a20e1878957d3":[3,0,7,2],
 "group__hal__i2c.html":[3,0,5],
-"group__hal__i2c.html#ga59ae1919da9b0b9038bba926dde92ea2":[3,0,5,1]
+"group__hal__i2c.html#ga59ae1919da9b0b9038bba926dde92ea2":[3,0,5,1],
+"group__hal__i2c.html#ga66cbc3cf5998ddf89f4ce87af4c7f693":[3,0,5,2],
+"group__hal__i2c.html#gab07e50c33a94b181892f12c1dd028a92":[3,0,5,0],
+"group__hal__i2c.html#gad4d63e38400272b82a60062289f5db6a":[3,0,5,4],
+"group__hal__i2c.html#gaf2ff125465e59df8a1e139e82426e8eb":[3,0,5,3],
+"group__hal__interrupts.html":[3,0,23],
+"group__hal__interrupts.html#ga35f98945b469afacbfcec081b98a1a1a":[3,0,23,2],
+"group__hal__interrupts.html#ga42d553aed65587375963d441cb48d6e0":[3,0,23,5],
+"group__hal__interrupts.html#ga67f157be25831233951cb239c837d098":[3,0,23,4],
+"group__hal__interrupts.html#ga7a03ed9b7bbb6eb87a74434595147f65":[3,0,23,0],
+"group__hal__interrupts.html#ga96e6618288cfac532a31049cda0d48c0":[3,0,23,6],
+"group__hal__interrupts.html#ga9bd2cfe22ac6a8cf7cdc1dc163728e1d":[3,0,23,7]
 };

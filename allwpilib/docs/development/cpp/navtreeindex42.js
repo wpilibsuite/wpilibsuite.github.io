@@ -1,16 +1,5 @@
 var NAVTREEINDEX42 =
 {
-"structwpi_1_1detail_1_1is__compatible__type.html":[5,0,11,0,35],
-"structwpi_1_1detail_1_1is__complete.html":[5,0,11,0,36],
-"structwpi_1_1detail_1_1is__complete_3_01T_00_01decltype_07sizeof_07T_08_08_4.html":[5,0,11,0,37],
-"structwpi_1_1detail_1_1is__complete__type.html":[5,0,11,0,38],
-"structwpi_1_1detail_1_1is__complete__type_3_01T_00_01decltype_07void_07sizeof_07T_08_08_08_4.html":[5,0,11,0,39],
-"structwpi_1_1detail_1_1is__container.html":[5,0,11,0,40],
-"structwpi_1_1detail_1_1is__container.html#a47094cf96344c31d54875dd441531d20":[5,0,11,0,40,0],
-"structwpi_1_1detail_1_1is__container__element__type__compatible.html":[5,0,11,0,41],
-"structwpi_1_1detail_1_1is__container__element__type__compatible_3_01T_00_01E_00_01typename_01std98f2d63071a84767c6383eb7eb6269d8.html":[5,0,11,0,42],
-"structwpi_1_1detail_1_1is__json.html":[5,0,11,0,43],
-"structwpi_1_1detail_1_1is__json_3_01json_01_4.html":[5,0,11,0,44],
 "structwpi_1_1detail_1_1is__json__nested__type.html":[5,0,11,0,45],
 "structwpi_1_1detail_1_1is__json__nested__type.html#a729c2fcc5aa92c4f5806e38d46f70d60":[5,0,11,0,45,0],
 "structwpi_1_1detail_1_1is__span.html":[5,0,11,0,46],
@@ -249,5 +238,16 @@ var NAVTREEINDEX42 =
 "wpilibOldCommands_2src_2main_2native_2include_2frc_2commands_2PIDCommand_8h_source.html":[6,0,5,1,5],
 "wpilibOldCommands_2src_2main_2native_2include_2frc_2commands_2PIDSubsystem_8h_source.html":[6,0,5,1,6],
 "wpilibOldCommands_2src_2main_2native_2include_2frc_2commands_2PrintCommand_8h_source.html":[6,0,5,1,7],
-"wpilibOldCommands_2src_2main_2native_2include_2frc_2commands_2Subsystem_8h_source.html":[6,0,5,1,10]
+"wpilibOldCommands_2src_2main_2native_2include_2frc_2commands_2Subsystem_8h_source.html":[6,0,5,1,10],
+"wpilibOldCommands_2src_2main_2native_2include_2frc_2commands_2WaitCommand_8h_source.html":[6,0,5,1,12],
+"wpilibOldCommands_2src_2main_2native_2include_2frc_2commands_2WaitUntilCommand_8h_source.html":[6,0,5,1,14],
+"wpilibc_2src_2main_2native_2include_2frc_2AddressableLED_8h_source.html":[6,0,4,9],
+"wpilibc_2src_2main_2native_2include_2frc_2AnalogGyro_8h_source.html":[6,0,4,16],
+"wpilibc_2src_2main_2native_2include_2frc_2AnalogInput_8h_source.html":[6,0,4,17],
+"wpilibc_2src_2main_2native_2include_2frc_2AnalogOutput_8h_source.html":[6,0,4,18],
+"wpilibc_2src_2main_2native_2include_2frc_2AnalogTrigger_8h_source.html":[6,0,4,20],
+"wpilibc_2src_2main_2native_2include_2frc_2CAN_8h_source.html":[6,0,4,25],
+"wpilibc_2src_2main_2native_2include_2frc_2Counter_8h_source.html":[6,0,4,27],
+"wpilibc_2src_2main_2native_2include_2frc_2DMA_8h_source.html":[6,0,4,33],
+"wpilibc_2src_2main_2native_2include_2frc_2DriverStation_8h_source.html":[6,0,4,36]
 };

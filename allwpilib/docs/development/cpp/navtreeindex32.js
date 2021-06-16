@@ -1,16 +1,5 @@
 var NAVTREEINDEX32 =
 {
-"classwpi_1_1uv_1_1Loop.html#af413796e1712dab77a89cbc7f93993d7":[5,0,11,7,14,9],
-"classwpi_1_1uv_1_1Loop.html#afa1120ad9868d41958506fe7f1038253":[5,0,11,7,14,17],
-"classwpi_1_1uv_1_1NetworkStream.html":[5,0,11,7,15],
-"classwpi_1_1uv_1_1NetworkStream.html#a0dfb668d8b261db9637ad1e2e15331b1":[5,0,11,7,15,6],
-"classwpi_1_1uv_1_1NetworkStream.html#a26727319946cb40266082cedb297f4d0":[5,0,11,7,15,3],
-"classwpi_1_1uv_1_1NetworkStream.html#a2ff6aa3370184bb63ec3d23b60616fdf":[5,0,11,7,15,8],
-"classwpi_1_1uv_1_1NetworkStream.html#a4a7a29bef221a5008468fdb6184ffdd7":[5,0,11,7,15,9],
-"classwpi_1_1uv_1_1NetworkStream.html#a5fd304821845fd3efc8706ce4957d13b":[5,0,11,7,15,7],
-"classwpi_1_1uv_1_1NetworkStream.html#acf68a9bdf8dcd62de526dfffdd34c300":[5,0,11,7,15,5],
-"classwpi_1_1uv_1_1NetworkStream.html#ad7091b9d2b9fe10feb0cc099c688d42d":[5,0,11,7,15,2],
-"classwpi_1_1uv_1_1NetworkStream.html#ae4572a8f72bda6409327299c6dcb95c2":[5,0,11,7,15,4],
 "classwpi_1_1uv_1_1NetworkStream.html#af4bcf087ed12ab45556f4cd928db518e":[5,0,11,7,15,1],
 "classwpi_1_1uv_1_1NetworkStream.html#af8b14188a2ac94fca62a84b9aad44182":[5,0,11,7,15,0],
 "classwpi_1_1uv_1_1NetworkStreamImpl.html":[5,0,11,7,16],
@@ -249,5 +238,16 @@ var NAVTREEINDEX32 =
 "classwpi_1_1uv_1_1Udp.html#af33188f525207759d9170eeaeca61c48":[5,0,11,7,33,34],
 "classwpi_1_1uv_1_1Udp.html#af50cdbe7c2f27a1a438f292dfd23261c":[5,0,11,7,33,9],
 "classwpi_1_1uv_1_1Udp.html#af85a09b885231a171f69f26664672803":[5,0,11,7,33,29],
-"classwpi_1_1uv_1_1UdpSendReq.html":[5,0,11,7,34]
+"classwpi_1_1uv_1_1UdpSendReq.html":[5,0,11,7,34],
+"classwpi_1_1uv_1_1UdpSendReq.html#a30159d9d595a504972692395b9dae8a6":[5,0,11,7,34,0],
+"classwpi_1_1uv_1_1UdpSendReq.html#a5eed824a2a6c72d5349a424197995f50":[5,0,11,7,34,1],
+"classwpi_1_1uv_1_1UdpSendReq.html#aa478fe23322fe450488030887ee0a4b3":[5,0,11,7,34,2],
+"classwpi_1_1uv_1_1WorkReq.html":[5,0,11,7,35],
+"classwpi_1_1uv_1_1WorkReq.html#a099d63016a38b0c6ea32e139c9ea6a05":[5,0,11,7,35,2],
+"classwpi_1_1uv_1_1WorkReq.html#a4e26b02d36e01ecbd5ef2df2a38e5cb8":[5,0,11,7,35,1],
+"classwpi_1_1uv_1_1WorkReq.html#a9a3c0574d457253db39a8f3bcbc95de4":[5,0,11,7,35,0],
+"classwpi_1_1uv_1_1WorkReq.html#af19e969cec3f7b34e1dc732d41a0745c":[5,0,11,7,35,3],
+"classwpi_1_1uv_1_1WriteReq.html":[5,0,11,7,36],
+"classwpi_1_1uv_1_1WriteReq.html#aac7dbfa66ead54b050671497733ee1d0":[5,0,11,7,36,0],
+"classwpi_1_1uv_1_1WriteReq.html#ac0eca65c6414b446d9337613d5b783a9":[5,0,11,7,36,1]
 };
