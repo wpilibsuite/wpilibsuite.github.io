@@ -9,5 +9,5 @@ var searchData=
   ['prepare_7687',['prepare',['../classwpi_1_1uv_1_1Prepare.html#a5e77569b6e0ff8ec6d08dda287b02b3f',1,'wpi::uv::Prepare']]],
   ['primitive_5fiterator_7688',['primitive_iterator',['../structwpi_1_1detail_1_1internal__iterator.html#a0b089e9e27dfe2ec92c298e945bf928d',1,'wpi::detail::internal_iterator']]],
   ['productid_7689',['productId',['../structcs_1_1UsbCameraInfo.html#a89e975415e6d1a12c82eb1e40c6eb1cd',1,'cs::UsbCameraInfo']]],
-  ['protocol_5fversion_7690',['protocol_version',['../structNT__ConnectionInfo.html#a9f03cd89f577238b63383e66c80818ed',1,'NT_ConnectionInfo::protocol_version()'],['../structnt_1_1ConnectionInfo.html#a273236525633a820193505cd4529cf70',1,'nt::ConnectionInfo::protocol_version()']]]
+  ['protocol_5fversion_7690',['protocol_version',['../structnt_1_1ConnectionInfo.html#a273236525633a820193505cd4529cf70',1,'nt::ConnectionInfo::protocol_version()'],['../structNT__ConnectionInfo.html#a9f03cd89f577238b63383e66c80818ed',1,'NT_ConnectionInfo::protocol_version()']]]
 ];

@@ -12,7 +12,7 @@ var searchData=
   ['hal_5fvalue_4222',['HAL_Value',['../structHAL__Value.html',1,'']]],
   ['halsim_5fnotifierinfo_4223',['HALSIM_NotifierInfo',['../structHALSIM__NotifierInfo.html',1,'']]],
   ['handle_4224',['handle',['../classbasic__format__arg_1_1handle.html',1,'basic_format_arg&lt; Context &gt;::handle'],['../classwpi_1_1uv_1_1Handle.html',1,'wpi::uv::Handle']]],
-  ['handlebase_4225',['HandleBase',['../classwpi_1_1DebugEpochBase_1_1HandleBase.html',1,'wpi::DebugEpochBase::HandleBase'],['../classhal_1_1HandleBase.html',1,'hal::HandleBase']]],
+  ['handlebase_4225',['HandleBase',['../classhal_1_1HandleBase.html',1,'hal::HandleBase'],['../classwpi_1_1DebugEpochBase_1_1HandleBase.html',1,'wpi::DebugEpochBase::HandleBase']]],
   ['handleimpl_4226',['HandleImpl',['../classwpi_1_1uv_1_1HandleImpl.html',1,'wpi::uv']]],
   ['handleimpl_3c_20async_3c_20t_2e_2e_2e_20_3e_2c_20uv_5fasync_5ft_20_3e_4227',['HandleImpl&lt; Async&lt; T... &gt;, uv_async_t &gt;',['../classwpi_1_1uv_1_1HandleImpl.html',1,'wpi::uv']]],
   ['handleimpl_3c_20async_3c_3e_2c_20uv_5fasync_5ft_20_3e_4228',['HandleImpl&lt; Async&lt;&gt;, uv_async_t &gt;',['../classwpi_1_1uv_1_1HandleImpl.html',1,'wpi::uv']]],

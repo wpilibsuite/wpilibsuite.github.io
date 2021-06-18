@@ -14,7 +14,7 @@ var searchData=
   ['jglobal_4395',['JGlobal',['../classwpi_1_1java_1_1JGlobal.html',1,'wpi::java']]],
   ['jlocal_4396',['JLocal',['../classwpi_1_1java_1_1JLocal.html',1,'wpi::java']]],
   ['joystick_4397',['Joystick',['../classfrc_1_1Joystick.html',1,'frc']]],
-  ['joystickbutton_4398',['JoystickButton',['../classfrc_1_1JoystickButton.html',1,'frc::JoystickButton'],['../classfrc2_1_1JoystickButton.html',1,'frc2::JoystickButton']]],
+  ['joystickbutton_4398',['JoystickButton',['../classfrc2_1_1JoystickButton.html',1,'frc2::JoystickButton'],['../classfrc_1_1JoystickButton.html',1,'frc::JoystickButton']]],
   ['joysticksim_4399',['JoystickSim',['../classfrc_1_1sim_1_1JoystickSim.html',1,'frc::sim']]],
   ['jsingletoncallbackmanager_4400',['JSingletonCallbackManager',['../classwpi_1_1java_1_1JSingletonCallbackManager.html',1,'wpi::java']]],
   ['json_4401',['json',['../classwpi_1_1json.html',1,'wpi']]],

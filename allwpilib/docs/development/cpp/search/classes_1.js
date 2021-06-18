@@ -41,7 +41,7 @@ var searchData=
   ['buffered_5ffile_3955',['buffered_file',['../classbuffered__file.html',1,'']]],
   ['builtinaccelerometer_3956',['BuiltInAccelerometer',['../classfrc_1_1BuiltInAccelerometer.html',1,'frc']]],
   ['builtinaccelerometersim_3957',['BuiltInAccelerometerSim',['../classfrc_1_1sim_1_1BuiltInAccelerometerSim.html',1,'frc::sim']]],
-  ['button_3958',['Button',['../classfrc_1_1Button.html',1,'frc::Button'],['../classfrc2_1_1Button.html',1,'frc2::Button']]],
+  ['button_3958',['Button',['../classfrc2_1_1Button.html',1,'frc2::Button'],['../classfrc_1_1Button.html',1,'frc::Button']]],
   ['buttonscheduler_3959',['ButtonScheduler',['../classfrc_1_1ButtonScheduler.html',1,'frc']]],
   ['bytes_3960',['bytes',['../classbytes.html',1,'']]]
 ];

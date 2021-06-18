@@ -1,4 +1,4 @@
 var structwpi_1_1RoundUpToPowerOfTwo =
 [
-    [ "Val", "structwpi_1_1RoundUpToPowerOfTwo.html#a1cf1d7464890b0550a96e89ac101f732a6cd7bc115cd1944bec376d5ac198ed6d", null ]
+    [ "Val", "structwpi_1_1RoundUpToPowerOfTwo.html#a5d5376fa8a2209625fa0de209d8efd03a6cd7bc115cd1944bec376d5ac198ed6d", null ]
 ];

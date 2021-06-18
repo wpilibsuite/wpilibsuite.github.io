@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1-127-g49c71f9</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-1-128-g9832fcf</span>
    </div>
   </td>
  </tr>
@@ -94,40 +94,40 @@ $(document).ready(function(){initNavTree('deprecated.html',''); initResizable();
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><dl class="reflist">
-<dt>Member <a class="el" href="classfrc_1_1SendableChooser.html#ab01426bbcb86a824bd0e9af426b47ba0">frc::SendableChooser&lt; T &gt;::AddObject</a>  (std::string_view name, T object)</dt>
-<dd><a class="anchor" id="_deprecated000014"></a>use <a class="el" href="classfrc_1_1SendableChooser.html#aaa1f52d5ecc0929bffcefb2801b1c3cf" title="Adds the given object to the list of options.">AddOption(std::string_view name, T object)</a> instead. </dd>
+<dt>Member <a class="el" href="classfrc_1_1SPI.html#aa12a3a1bf689e0bfdb7452d89af5124e">frc::SPI::StartAutoRate</a>  (double period)</dt>
+<dd><a class="anchor" id="_deprecated000014"></a>use unit-safe <a class="el" href="classfrc_1_1SPI.html#a7d77b758daa0cc642fcd08482b70f07d" title="Start running the automatic SPI transfer engine at a periodic rate.">StartAutoRate(units::second_t period)</a> instead. </dd>
 <dt>Class <a class="el" href="classfrc_1_1PIDInterface.html">frc::PIDInterface</a>  </dt>
 <dd><a class="anchor" id="_deprecated000027"></a>All APIs which use this have been deprecated.  </dd>
 <dt>Class <a class="el" href="classfrc_1_1PIDController.html">frc::PIDController</a>  </dt>
 <dd><a class="anchor" id="_deprecated000026"></a>Use <a class="el" href="classfrc2_1_1PIDController.html" title="Implements a PID control loop.">frc2::PIDController</a> class instead.  </dd>
 <dt>Class <a class="el" href="classfrc_1_1PIDBase.html">frc::PIDBase</a>  </dt>
 <dd><a class="anchor" id="_deprecated000025"></a>All APIs which use this have been deprecated.  </dd>
-<dt>Member <a class="el" href="classfrc_1_1IterativeRobotBase.html#adaad67b57154bd85fef26a742d9c66b2">frc::IterativeRobotBase::IterativeRobotBase</a>  (double period)</dt>
-<dd><a class="anchor" id="_deprecated000024"></a>Use <a class="el" href="classfrc_1_1IterativeRobotBase.html#afee5b7301bc0f4579d76f840a18f2cca" title="Constructor for IterativeRobotBase.">IterativeRobotBase(units::second_t period)</a> with unit-safety instead  </dd>
 <dt>Member <a class="el" href="classfrc_1_1Preferences.html#a84dfc9bddaa8350739dac760cbc80a19">frc::Preferences::GetInstance</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000023"></a>Use the static methods  </dd>
-<dt>Member <a class="el" href="classfrc_1_1TimedRobot.html#a70890d7283a8afc101de444e99b6fb7a">frc::TimedRobot::TimedRobot</a>  (double period)</dt>
-<dd><a class="anchor" id="_deprecated000022"></a>use unit safe constructor instead. <a class="el" href="classfrc_1_1TimedRobot.html" title="TimedRobot implements the IterativeRobotBase robot program framework.">TimedRobot</a>(units::second_t period = kDefaultPeriod) </dd>
-<dt>" </dt>
-<dd><a class="anchor" id="_deprecated000021"></a>Use SetMinRate() in favor of this method. This takes unscaled periods and SetMinRate() scales using value from SetDistancePerPulse(). </dd>
-<dt>Member <a class="el" href="classfrc_1_1SPI.html#aa071c1d8e6c6c9995db38dd9c1dd03b4">frc::SPI::InitAccumulator</a>  (double period, int cmd, int xferSize, int validMask, int validValue, int dataShift, int dataSize, bool isSigned, bool bigEndian)</dt>
-<dd><a class="anchor" id="_deprecated000020"></a>Use unit-safe version instead. <a class="el" href="classfrc_1_1SPI.html#af2bda94cf34d6e5905efa5d54c726510" title="Initialize the accumulator.">InitAccumulator(units::second_t period, int cmd, int xferSize, int validMask, int validValue, int dataShift, int dataSize, bool isSigned, bool bigEndian)</a> </dd>
-<dt>Member <a class="el" href="classfrc_1_1SPI.html#aa12a3a1bf689e0bfdb7452d89af5124e">frc::SPI::StartAutoRate</a>  (double period)</dt>
-<dd><a class="anchor" id="_deprecated000019"></a>use unit-safe <a class="el" href="classfrc_1_1SPI.html#a7d77b758daa0cc642fcd08482b70f07d" title="Start running the automatic SPI transfer engine at a periodic rate.">StartAutoRate(units::second_t period)</a> instead. </dd>
-<dt>Member <a class="el" href="classfrc_1_1SPI.html#aaa51bf86f6f5fb142af12f767192a225">frc::SPI::SetSampleDataOnRising</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000018"></a>Use <a class="el" href="classfrc_1_1SPI.html#ab78a7f35b03ccc3d62b656d5430a5eb9" title="Configure that the data is stable on the leading edge and the data changes on the trailing edge.">SetSampleDataOnLeadingEdge()</a> instead. </dd>
-<dt>Member <a class="el" href="classfrc_1_1SPI.html#a13df61aff07325c9ea6768ef161db5be">frc::SPI::SetSampleDataOnFalling</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000017"></a>Use <a class="el" href="classfrc_1_1SPI.html#ab4cc05f9f0c8ae3ce16757ce4b1c4a80" title="Configure that the data is stable on the trailing edge and the data changes on the leading edge.">SetSampleDataOnTrailingEdge()</a> instead. </dd>
-<dt>Member <a class="el" href="classfrc_1_1DriverStation.html#ab8aad79200fa541f5f8c0088550fabc3">frc::DriverStation::GetInstance</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000016"></a>Use the static methods  </dd>
+<dd><a class="anchor" id="_deprecated000024"></a>Use the static methods  </dd>
+<dt>Member <a class="el" href="classfrc_1_1LiveWindow.html#ab1d14ba99d478ccabccffa8ee23a1261">frc::LiveWindow::GetInstance</a>  ()</dt>
+<dd><a class="anchor" id="_deprecated000023"></a>Use the static methods unless guaranteeing <a class="el" href="classfrc_1_1LiveWindow.html" title="The LiveWindow class is the public interface for putting sensors and actuators on the LiveWindow.">LiveWindow</a> is instantiated  </dd>
+<dt>Member <a class="el" href="classfrc_1_1IterativeRobotBase.html#adaad67b57154bd85fef26a742d9c66b2">frc::IterativeRobotBase::IterativeRobotBase</a>  (double period)</dt>
+<dd><a class="anchor" id="_deprecated000022"></a>Use <a class="el" href="classfrc_1_1IterativeRobotBase.html#afee5b7301bc0f4579d76f840a18f2cca" title="Constructor for IterativeRobotBase.">IterativeRobotBase(units::second_t period)</a> with unit-safety instead  </dd>
+<dt>Class <a class="el" href="classfrc_1_1Controller.html">frc::Controller</a>  </dt>
+<dd><a class="anchor" id="_deprecated000021"></a>Only used by the deprecated <a class="el" href="classfrc_1_1PIDController.html" title="Class implements a PID Control Loop.">PIDController</a>  </dd>
 <dt>Member <a class="el" href="classfrc_1_1SendableChooser.html#a6d0bcabbab460e10f846abe03865641e">frc::SendableChooser&lt; T &gt;::AddDefault</a>  (std::string_view name, T object)</dt>
-<dd><a class="anchor" id="_deprecated000015"></a>use <a class="el" href="classfrc_1_1SendableChooser.html#a347cd324e81176fa4e32f2a0f7a77158" title="Add the given object to the list of options and marks it as the default.">SetDefaultOption(std::string_view name, T object)</a> instead. </dd>
+<dd><a class="anchor" id="_deprecated000020"></a>use <a class="el" href="classfrc_1_1SendableChooser.html#a347cd324e81176fa4e32f2a0f7a77158" title="Add the given object to the list of options and marks it as the default.">SetDefaultOption(std::string_view name, T object)</a> instead. </dd>
+<dt>Member <a class="el" href="classfrc_1_1SendableChooser.html#ab01426bbcb86a824bd0e9af426b47ba0">frc::SendableChooser&lt; T &gt;::AddObject</a>  (std::string_view name, T object)</dt>
+<dd><a class="anchor" id="_deprecated000019"></a>use <a class="el" href="classfrc_1_1SendableChooser.html#aaa1f52d5ecc0929bffcefb2801b1c3cf" title="Adds the given object to the list of options.">AddOption(std::string_view name, T object)</a> instead. </dd>
+<dt>Member <a class="el" href="classfrc_1_1TimedRobot.html#a70890d7283a8afc101de444e99b6fb7a">frc::TimedRobot::TimedRobot</a>  (double period)</dt>
+<dd><a class="anchor" id="_deprecated000018"></a>use unit safe constructor instead. <a class="el" href="classfrc_1_1TimedRobot.html" title="TimedRobot implements the IterativeRobotBase robot program framework.">TimedRobot</a>(units::second_t period = kDefaultPeriod) </dd>
+<dt>Member <a class="el" href="classfrc_1_1DriverStation.html#ab8aad79200fa541f5f8c0088550fabc3">frc::DriverStation::GetInstance</a>  ()</dt>
+<dd><a class="anchor" id="_deprecated000017"></a>Use the static methods  </dd>
+<dt>" </dt>
+<dd><a class="anchor" id="_deprecated000016"></a>Use SetMinRate() in favor of this method. This takes unscaled periods and SetMinRate() scales using value from SetDistancePerPulse(). </dd>
+<dt>Member <a class="el" href="classfrc_1_1SPI.html#aa071c1d8e6c6c9995db38dd9c1dd03b4">frc::SPI::InitAccumulator</a>  (double period, int cmd, int xferSize, int validMask, int validValue, int dataShift, int dataSize, bool isSigned, bool bigEndian)</dt>
+<dd><a class="anchor" id="_deprecated000015"></a>Use unit-safe version instead. <a class="el" href="classfrc_1_1SPI.html#af2bda94cf34d6e5905efa5d54c726510" title="Initialize the accumulator.">InitAccumulator(units::second_t period, int cmd, int xferSize, int validMask, int validValue, int dataShift, int dataSize, bool isSigned, bool bigEndian)</a> </dd>
 <dt>Member <a class="el" href="classwpi_1_1SendableHelper.html#ad914b3555af5651aaaa3d8b1cec83b91">wpi::SendableHelper&lt; Derived &gt;::GetName</a>  () const</dt>
 <dd><a class="anchor" id="_deprecated000001"></a>use <a class="el" href="classwpi_1_1SendableRegistry.html#a0a7ee8ac942d74550df792117c156c3c" title="Gets the name of an object.">SendableRegistry::GetName()</a> </dd>
-<dt>Class <a class="el" href="classfrc_1_1Controller.html">frc::Controller</a>  </dt>
-<dd><a class="anchor" id="_deprecated000013"></a>Only used by the deprecated <a class="el" href="classfrc_1_1PIDController.html" title="Class implements a PID Control Loop.">PIDController</a>  </dd>
-<dt>Member <a class="el" href="classfrc_1_1LiveWindow.html#ab1d14ba99d478ccabccffa8ee23a1261">frc::LiveWindow::GetInstance</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000012"></a>Use the static methods unless guaranteeing <a class="el" href="classfrc_1_1LiveWindow.html" title="The LiveWindow class is the public interface for putting sensors and actuators on the LiveWindow.">LiveWindow</a> is instantiated  </dd>
+<dt>Member <a class="el" href="classfrc_1_1SPI.html#aaa51bf86f6f5fb142af12f767192a225">frc::SPI::SetSampleDataOnRising</a>  ()</dt>
+<dd><a class="anchor" id="_deprecated000013"></a>Use <a class="el" href="classfrc_1_1SPI.html#ab78a7f35b03ccc3d62b656d5430a5eb9" title="Configure that the data is stable on the leading edge and the data changes on the trailing edge.">SetSampleDataOnLeadingEdge()</a> instead. </dd>
+<dt>Member <a class="el" href="classfrc_1_1SPI.html#a13df61aff07325c9ea6768ef161db5be">frc::SPI::SetSampleDataOnFalling</a>  ()</dt>
+<dd><a class="anchor" id="_deprecated000012"></a>Use <a class="el" href="classfrc_1_1SPI.html#ab4cc05f9f0c8ae3ce16757ce4b1c4a80" title="Configure that the data is stable on the trailing edge and the data changes on the leading edge.">SetSampleDataOnTrailingEdge()</a> instead. </dd>
 <dt>Member <a class="el" href="classfrc_1_1CameraServer.html#aa164416827096a45eb9e4fd14f2a3e61">frc::CameraServer::SetSize</a>  (int size)</dt>
 <dd><a class="anchor" id="_deprecated000011"></a>Use SetResolution on the UsbCamera returned by <a class="el" href="classfrc_1_1CameraServer.html#a0eb9f7657053544a951403086f178f2e" title="Start automatically capturing images to send to the dashboard.">StartAutomaticCapture()</a> instead.  </dd>
 <dt>Member <a class="el" href="classfrc_1_1CameraServer.html#af95e7dc8a84506763a0e7c4b22f48728">frc::CameraServer::GetInstance</a>  ()</dt>
@@ -155,7 +155,7 @@ $(document).ready(function(){initNavTree('deprecated.html',''); initResizable();
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Jun 16 2021 20:26:08 for WPILibC++ by
+    <li class="footer">Generated on Fri Jun 18 2021 06:05:08 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

@@ -73,7 +73,7 @@ var searchData=
   ['connectioninfo_4031',['ConnectionInfo',['../structnt_1_1ConnectionInfo.html',1,'nt']]],
   ['connectionnotification_4032',['ConnectionNotification',['../classnt_1_1ConnectionNotification.html',1,'nt']]],
   ['connectreq_4033',['ConnectReq',['../classwpi_1_1uv_1_1ConnectReq.html',1,'wpi::uv']]],
-  ['const_5fiterator_4034',['const_iterator',['../classwpi_1_1circular__buffer_1_1const__iterator.html',1,'wpi::circular_buffer&lt; T &gt;::const_iterator'],['../classwpi_1_1static__circular__buffer_1_1const__iterator.html',1,'wpi::static_circular_buffer&lt; T, N &gt;::const_iterator']]],
+  ['const_5fiterator_4034',['const_iterator',['../classwpi_1_1static__circular__buffer_1_1const__iterator.html',1,'wpi::static_circular_buffer&lt; T, N &gt;::const_iterator'],['../classwpi_1_1circular__buffer_1_1const__iterator.html',1,'wpi::circular_buffer&lt; T &gt;::const_iterator']]],
   ['const_5fpointer_5for_5fconst_5fref_4035',['const_pointer_or_const_ref',['../structwpi_1_1const__pointer__or__const__ref.html',1,'wpi']]],
   ['const_5fpointer_5for_5fconst_5fref_3c_20t_2c_20typename_20std_3a_3aenable_5fif_3c_20std_3a_3ais_5fpointer_3c_20t_20_3e_3a_3avalue_20_3e_3a_3atype_20_3e_4036',['const_pointer_or_const_ref&lt; T, typename std::enable_if&lt; std::is_pointer&lt; T &gt;::value &gt;::type &gt;',['../structwpi_1_1const__pointer__or__const__ref_3_01T_00_01typename_01std_1_1enable__if_3_01std_1_1ibca72b4ab5e379ddf9016754e0f4f852.html',1,'wpi']]],
   ['constantlog2_4037',['ConstantLog2',['../structwpi_1_1detail_1_1ConstantLog2.html',1,'wpi::detail']]],

@@ -6,7 +6,7 @@ var searchData=
   ['named_5farg_5fvalue_4485',['named_arg_value',['../structnamed__arg__value.html',1,'']]],
   ['named_5farg_5fvalue_3c_20char_5ftype_20_3e_4486',['named_arg_value&lt; char_type &gt;',['../structnamed__arg__value.html',1,'']]],
   ['networkacceptor_4487',['NetworkAcceptor',['../classwpi_1_1NetworkAcceptor.html',1,'wpi']]],
-  ['networkbutton_4488',['NetworkButton',['../classfrc_1_1NetworkButton.html',1,'frc::NetworkButton'],['../classfrc2_1_1NetworkButton.html',1,'frc2::NetworkButton']]],
+  ['networkbutton_4488',['NetworkButton',['../classfrc2_1_1NetworkButton.html',1,'frc2::NetworkButton'],['../classfrc_1_1NetworkButton.html',1,'frc::NetworkButton']]],
   ['networkstream_4489',['NetworkStream',['../classwpi_1_1NetworkStream.html',1,'wpi::NetworkStream'],['../classwpi_1_1uv_1_1NetworkStream.html',1,'wpi::uv::NetworkStream']]],
   ['networkstreamimpl_4490',['NetworkStreamImpl',['../classwpi_1_1uv_1_1NetworkStreamImpl.html',1,'wpi::uv']]],
   ['networkstreamimpl_3c_20pipe_2c_20uv_5fpipe_5ft_20_3e_4491',['NetworkStreamImpl&lt; Pipe, uv_pipe_t &gt;',['../classwpi_1_1uv_1_1NetworkStreamImpl.html',1,'wpi::uv']]],
