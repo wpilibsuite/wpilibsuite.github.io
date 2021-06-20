@@ -16,7 +16,7 @@ var classfrc2_1_1PIDController =
     [ "GetPositionError", "classfrc2_1_1PIDController.html#a79c8087174ae806ff1cbe1e6a820ad5c", null ],
     [ "GetSetpoint", "classfrc2_1_1PIDController.html#a7ab9fb9348845bbb14ca19cd88c52694", null ],
     [ "GetVelocityError", "classfrc2_1_1PIDController.html#a9c91e3e65b6b1ac739881ba31e3caf38", null ],
-    [ "InitSendable", "classfrc2_1_1PIDController.html#a13dc01dfc597298df4afd564c40042e7", null ],
+    [ "InitSendable", "classfrc2_1_1PIDController.html#a4ad92de9d1f769b437e80b0702a4e27e", null ],
     [ "IsContinuousInputEnabled", "classfrc2_1_1PIDController.html#af3799e4042fc11b0056936e5df989f09", null ],
     [ "operator=", "classfrc2_1_1PIDController.html#a90ae786b592b4613472beaabdff882df", null ],
     [ "operator=", "classfrc2_1_1PIDController.html#acf7aa674a20bab9aab90da1a1a6dad6e", null ],

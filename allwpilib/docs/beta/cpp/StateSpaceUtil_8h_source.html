@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -109,7 +109,7 @@ $(document).ready(function(){initNavTree('StateSpaceUtil_8h_source.html',''); in
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;Eigen/src/Eigenvalues/EigenSolver.h&quot;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;frc/geometry/Pose2d.h&quot;</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacefrc.html">frc</a> {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span>frc {</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span>detail {</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">int</span> Rows, <span class="keywordtype">int</span> Cols, <span class="keyword">typename</span> Matrix, <span class="keyword">typename</span> T, <span class="keyword">typename</span>... Ts&gt;</div>
@@ -183,7 +183,7 @@ $(document).ready(function(){initNavTree('StateSpaceUtil_8h_source.html',''); in
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">int</span> Rows, <span class="keywordtype">int</span> Cols, <span class="keyword">typename</span>... Ts,</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;          <span class="keyword">typename</span> =</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;              std::enable_if_t&lt;std::conjunction_v&lt;std::is_same&lt;double, Ts&gt;...&gt;&gt;&gt;</div>
-<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="namespacefrc.html#a42a7f1c2bef6d2daeddbc1a07a3f24ca">   99</a></span>&#160;Eigen::Matrix&lt;double, Rows, Cols&gt; <a class="code" href="namespacefrc.html#a42a7f1c2bef6d2daeddbc1a07a3f24ca">MakeMatrix</a>(Ts... elems) {</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;Eigen::Matrix&lt;double, Rows, Cols&gt; MakeMatrix(Ts... elems) {</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  static_assert(</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      <span class="keyword">sizeof</span>...(elems) == Rows * Cols,</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      <span class="stringliteral">&quot;Number of provided elements doesn&#39;t match matrix dimensionality&quot;</span>);</div>
@@ -195,7 +195,7 @@ $(document).ready(function(){initNavTree('StateSpaceUtil_8h_source.html',''); in
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Ts, <span class="keyword">typename</span> = std::enable_if_t&lt;</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                              std::conjunction_v&lt;std::is_same&lt;double, Ts&gt;...&gt;&gt;&gt;</div>
-<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="namespacefrc.html#a3eadd8473fc84e9c0a6fc5663c41f04b">  123</a></span>&#160;Eigen::Matrix&lt;double, <span class="keyword">sizeof</span>...(Ts), <span class="keyword">sizeof</span>...(Ts)&gt; <a class="code" href="namespacefrc.html#a3eadd8473fc84e9c0a6fc5663c41f04b">MakeCostMatrix</a>(</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;Eigen::Matrix&lt;double, <span class="keyword">sizeof</span>...(Ts), <span class="keyword">sizeof</span>...(Ts)&gt; MakeCostMatrix(</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    Ts... costs) {</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  Eigen::DiagonalMatrix&lt;double, <span class="keyword">sizeof</span>...(Ts)&gt; result;</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  detail::CostMatrixImpl(result.diagonal(), costs...);</div>
@@ -204,7 +204,7 @@ $(document).ready(function(){initNavTree('StateSpaceUtil_8h_source.html',''); in
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Ts, <span class="keyword">typename</span> = std::enable_if_t&lt;</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                              std::conjunction_v&lt;std::is_same&lt;double, Ts&gt;...&gt;&gt;&gt;</div>
-<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="namespacefrc.html#a97f46ffa0575e8aa2b2f08e7a8a1e2d7">  144</a></span>&#160;Eigen::Matrix&lt;double, <span class="keyword">sizeof</span>...(Ts), <span class="keyword">sizeof</span>...(Ts)&gt; <a class="code" href="namespacefrc.html#a97f46ffa0575e8aa2b2f08e7a8a1e2d7">MakeCovMatrix</a>(</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;Eigen::Matrix&lt;double, <span class="keyword">sizeof</span>...(Ts), <span class="keyword">sizeof</span>...(Ts)&gt; MakeCovMatrix(</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    Ts... stdDevs) {</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  Eigen::DiagonalMatrix&lt;double, <span class="keyword">sizeof</span>...(Ts)&gt; result;</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  detail::CovMatrixImpl(result.diagonal(), stdDevs...);</div>
@@ -212,7 +212,7 @@ $(document).ready(function(){initNavTree('StateSpaceUtil_8h_source.html',''); in
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;}</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> N&gt;</div>
-<div class="line"><a name="l00164"></a><span class="lineno"><a class="line" href="namespacefrc.html#a5464eb1dbe9a0ac057c6e4f8f74d3060">  164</a></span>&#160;Eigen::Matrix&lt;double, N, N&gt; <a class="code" href="namespacefrc.html#a3eadd8473fc84e9c0a6fc5663c41f04b">MakeCostMatrix</a>(<span class="keyword">const</span> std::array&lt;double, N&gt;&amp; costs) {</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;Eigen::Matrix&lt;double, N, N&gt; MakeCostMatrix(<span class="keyword">const</span> std::array&lt;double, N&gt;&amp; costs) {</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  Eigen::DiagonalMatrix&lt;double, N&gt; result;</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  <span class="keyword">auto</span>&amp; diag = result.diagonal();</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; N; ++i) {</div>
@@ -222,7 +222,7 @@ $(document).ready(function(){initNavTree('StateSpaceUtil_8h_source.html',''); in
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;}</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> N&gt;</div>
-<div class="line"><a name="l00186"></a><span class="lineno"><a class="line" href="namespacefrc.html#ac94b609031d0704a42618afedd68103a">  186</a></span>&#160;Eigen::Matrix&lt;double, N, N&gt; <a class="code" href="namespacefrc.html#a97f46ffa0575e8aa2b2f08e7a8a1e2d7">MakeCovMatrix</a>(</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;Eigen::Matrix&lt;double, N, N&gt; MakeCovMatrix(</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <span class="keyword">const</span> std::array&lt;double, N&gt;&amp; stdDevs) {</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  Eigen::DiagonalMatrix&lt;double, N&gt; result;</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  <span class="keyword">auto</span>&amp; diag = result.diagonal();</div>
@@ -241,7 +241,7 @@ $(document).ready(function(){initNavTree('StateSpaceUtil_8h_source.html',''); in
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;}</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160; </div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">int</span> N&gt;</div>
-<div class="line"><a name="l00213"></a><span class="lineno"><a class="line" href="namespacefrc.html#af1184d40df922509d5dd68cb6747cb1f">  213</a></span>&#160;Eigen::Matrix&lt;double, N, 1&gt; MakeWhiteNoiseVector(</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;Eigen::Matrix&lt;double, N, 1&gt; MakeWhiteNoiseVector(</div>
 <div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="keyword">const</span> std::array&lt;double, N&gt;&amp; stdDevs) {</div>
 <div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;  std::random_device rd;</div>
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  std::mt19937 gen{rd()};</div>
@@ -260,12 +260,12 @@ $(document).ready(function(){initNavTree('StateSpaceUtil_8h_source.html',''); in
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  <span class="keywordflow">return</span> result;</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;}</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160; </div>
-<div class="line"><a name="l00239"></a><span class="lineno"><a class="line" href="namespacefrc.html#a533bfec8c7fdeb6905533817ec027165">  239</a></span>&#160;Eigen::Matrix&lt;double, 3, 1&gt; <a class="code" href="namespacefrc.html#a533bfec8c7fdeb6905533817ec027165">PoseTo3dVector</a>(<span class="keyword">const</span> <a class="code" href="classfrc_1_1Pose2d.html">Pose2d</a>&amp; pose);</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;Eigen::Matrix&lt;double, 3, 1&gt; PoseTo3dVector(<span class="keyword">const</span> Pose2d&amp; pose);</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160; </div>
-<div class="line"><a name="l00248"></a><span class="lineno"><a class="line" href="namespacefrc.html#a93ce222c083c60ac1c140dfe1c0e721c">  248</a></span>&#160;Eigen::Matrix&lt;double, 4, 1&gt; <a class="code" href="namespacefrc.html#a93ce222c083c60ac1c140dfe1c0e721c">PoseTo4dVector</a>(<span class="keyword">const</span> <a class="code" href="classfrc_1_1Pose2d.html">Pose2d</a>&amp; pose);</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;Eigen::Matrix&lt;double, 4, 1&gt; PoseTo4dVector(<span class="keyword">const</span> Pose2d&amp; pose);</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160; </div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">int</span> States, <span class="keywordtype">int</span> Inputs&gt;</div>
-<div class="line"><a name="l00261"></a><span class="lineno"><a class="line" href="namespacefrc.html#a08cf48f6116958b58d6479809625bf56">  261</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="namespacefrc.html#a08cf48f6116958b58d6479809625bf56">IsStabilizable</a>(<span class="keyword">const</span> Eigen::Matrix&lt;double, States, States&gt;&amp; A,</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="keywordtype">bool</span> IsStabilizable(<span class="keyword">const</span> Eigen::Matrix&lt;double, States, States&gt;&amp; A,</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;                    <span class="keyword">const</span> Eigen::Matrix&lt;double, States, Inputs&gt;&amp; B) {</div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  <span class="keywordflow">return</span> detail::IsStabilizableImpl&lt;States, Inputs&gt;(A, B);</div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;}</div>
@@ -282,10 +282,10 @@ $(document).ready(function(){initNavTree('StateSpaceUtil_8h_source.html',''); in
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="keywordtype">bool</span> IsStabilizable&lt;2, 1&gt;(<span class="keyword">const</span> Eigen::Matrix&lt;double, 2, 2&gt;&amp; A,</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;                          <span class="keyword">const</span> Eigen::Matrix&lt;double, 2, 1&gt;&amp; B);</div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160; </div>
-<div class="line"><a name="l00285"></a><span class="lineno"><a class="line" href="namespacefrc.html#a840a3e2d50426d3f737aee75fca6d190">  285</a></span>&#160;Eigen::Matrix&lt;double, 3, 1&gt; <a class="code" href="namespacefrc.html#a840a3e2d50426d3f737aee75fca6d190">PoseToVector</a>(<span class="keyword">const</span> <a class="code" href="classfrc_1_1Pose2d.html">Pose2d</a>&amp; pose);</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;Eigen::Matrix&lt;double, 3, 1&gt; PoseToVector(<span class="keyword">const</span> Pose2d&amp; pose);</div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160; </div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">int</span> Inputs&gt;</div>
-<div class="line"><a name="l00294"></a><span class="lineno"><a class="line" href="namespacefrc.html#a6bc2b9696a88e7eea61ced90dd78aa1e">  294</a></span>&#160;Eigen::Matrix&lt;double, Inputs, 1&gt; <a class="code" href="namespacefrc.html#a6bc2b9696a88e7eea61ced90dd78aa1e">ClampInputMaxMagnitude</a>(</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;Eigen::Matrix&lt;double, Inputs, 1&gt; ClampInputMaxMagnitude(</div>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <span class="keyword">const</span> Eigen::Matrix&lt;double, Inputs, 1&gt;&amp; u,</div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <span class="keyword">const</span> Eigen::Matrix&lt;double, Inputs, 1&gt;&amp; umin,</div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <span class="keyword">const</span> Eigen::Matrix&lt;double, Inputs, 1&gt;&amp; umax) {</div>
@@ -297,7 +297,7 @@ $(document).ready(function(){initNavTree('StateSpaceUtil_8h_source.html',''); in
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;}</div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160; </div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">int</span> Inputs&gt;</div>
-<div class="line"><a name="l00315"></a><span class="lineno"><a class="line" href="namespacefrc.html#a47787513557bf5b704572dad39fb6289">  315</a></span>&#160;Eigen::Matrix&lt;double, Inputs, 1&gt; <a class="code" href="namespacefrc.html#a47787513557bf5b704572dad39fb6289">NormalizeInputVector</a>(</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;Eigen::Matrix&lt;double, Inputs, 1&gt; NormalizeInputVector(</div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    <span class="keyword">const</span> Eigen::Matrix&lt;double, Inputs, 1&gt;&amp; u, <span class="keywordtype">double</span> maxMagnitude) {</div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;  <span class="keywordtype">double</span> maxValue = u.template lpNorm&lt;Eigen::Infinity&gt;();</div>
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160; </div>
@@ -309,22 +309,11 @@ $(document).ready(function(){initNavTree('StateSpaceUtil_8h_source.html',''); in
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;}  <span class="comment">// namespace frc</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespacefrc_html_a47787513557bf5b704572dad39fb6289"><div class="ttname"><a href="namespacefrc.html#a47787513557bf5b704572dad39fb6289">frc::NormalizeInputVector</a></div><div class="ttdeci">Eigen::Matrix&lt; double, Inputs, 1 &gt; NormalizeInputVector(const Eigen::Matrix&lt; double, Inputs, 1 &gt; &amp;u, double maxMagnitude)</div><div class="ttdoc">Normalize all inputs if any excedes the maximum magnitude.</div><div class="ttdef"><b>Definition:</b> StateSpaceUtil.h:315</div></div>
-<div class="ttc" id="anamespacefrc_html_a42a7f1c2bef6d2daeddbc1a07a3f24ca"><div class="ttname"><a href="namespacefrc.html#a42a7f1c2bef6d2daeddbc1a07a3f24ca">frc::MakeMatrix</a></div><div class="ttdeci">Eigen::Matrix&lt; double, Rows, Cols &gt; MakeMatrix(Ts... elems)</div><div class="ttdoc">Creates a matrix from the given list of elements.</div><div class="ttdef"><b>Definition:</b> StateSpaceUtil.h:99</div></div>
-<div class="ttc" id="anamespacefrc_html_a08cf48f6116958b58d6479809625bf56"><div class="ttname"><a href="namespacefrc.html#a08cf48f6116958b58d6479809625bf56">frc::IsStabilizable</a></div><div class="ttdeci">bool IsStabilizable(const Eigen::Matrix&lt; double, States, States &gt; &amp;A, const Eigen::Matrix&lt; double, States, Inputs &gt; &amp;B)</div><div class="ttdoc">Returns true if (A, B) is a stabilizable pair.</div><div class="ttdef"><b>Definition:</b> StateSpaceUtil.h:261</div></div>
-<div class="ttc" id="anamespacefrc_html_a840a3e2d50426d3f737aee75fca6d190"><div class="ttname"><a href="namespacefrc.html#a840a3e2d50426d3f737aee75fca6d190">frc::PoseToVector</a></div><div class="ttdeci">Eigen::Matrix&lt; double, 3, 1 &gt; PoseToVector(const Pose2d &amp;pose)</div><div class="ttdoc">Converts a Pose2d into a vector of [x, y, theta].</div></div>
-<div class="ttc" id="anamespacefrc_html_a533bfec8c7fdeb6905533817ec027165"><div class="ttname"><a href="namespacefrc.html#a533bfec8c7fdeb6905533817ec027165">frc::PoseTo3dVector</a></div><div class="ttdeci">Eigen::Matrix&lt; double, 3, 1 &gt; PoseTo3dVector(const Pose2d &amp;pose)</div><div class="ttdoc">Converts a Pose2d into a vector of [x, y, theta].</div></div>
-<div class="ttc" id="anamespacefrc_html_a6bc2b9696a88e7eea61ced90dd78aa1e"><div class="ttname"><a href="namespacefrc.html#a6bc2b9696a88e7eea61ced90dd78aa1e">frc::ClampInputMaxMagnitude</a></div><div class="ttdeci">Eigen::Matrix&lt; double, Inputs, 1 &gt; ClampInputMaxMagnitude(const Eigen::Matrix&lt; double, Inputs, 1 &gt; &amp;u, const Eigen::Matrix&lt; double, Inputs, 1 &gt; &amp;umin, const Eigen::Matrix&lt; double, Inputs, 1 &gt; &amp;umax)</div><div class="ttdoc">Clamps input vector between system's minimum and maximum allowable input.</div><div class="ttdef"><b>Definition:</b> StateSpaceUtil.h:294</div></div>
-<div class="ttc" id="aclassfrc_1_1Pose2d_html"><div class="ttname"><a href="classfrc_1_1Pose2d.html">frc::Pose2d</a></div><div class="ttdoc">Represents a 2d pose containing translational and rotational elements.</div><div class="ttdef"><b>Definition:</b> Pose2d.h:20</div></div>
-<div class="ttc" id="anamespacefrc_html_a3eadd8473fc84e9c0a6fc5663c41f04b"><div class="ttname"><a href="namespacefrc.html#a3eadd8473fc84e9c0a6fc5663c41f04b">frc::MakeCostMatrix</a></div><div class="ttdeci">Eigen::Matrix&lt; double, sizeof...(Ts), sizeof...(Ts)&gt; MakeCostMatrix(Ts... costs)</div><div class="ttdoc">Creates a cost matrix from the given vector for use with LQR.</div><div class="ttdef"><b>Definition:</b> StateSpaceUtil.h:123</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> CameraServer.h:18</div></div>
-<div class="ttc" id="anamespacefrc_html_a97f46ffa0575e8aa2b2f08e7a8a1e2d7"><div class="ttname"><a href="namespacefrc.html#a97f46ffa0575e8aa2b2f08e7a8a1e2d7">frc::MakeCovMatrix</a></div><div class="ttdeci">Eigen::Matrix&lt; double, sizeof...(Ts), sizeof...(Ts)&gt; MakeCovMatrix(Ts... stdDevs)</div><div class="ttdoc">Creates a covariance matrix from the given vector for use with Kalman filters.</div><div class="ttdef"><b>Definition:</b> StateSpaceUtil.h:144</div></div>
-<div class="ttc" id="anamespacefrc_html_a93ce222c083c60ac1c140dfe1c0e721c"><div class="ttname"><a href="namespacefrc.html#a93ce222c083c60ac1c140dfe1c0e721c">frc::PoseTo4dVector</a></div><div class="ttdeci">Eigen::Matrix&lt; double, 4, 1 &gt; PoseTo4dVector(const Pose2d &amp;pose)</div><div class="ttdoc">Converts a Pose2d into a vector of [x, y, std::cos(theta), std::sin(theta)].</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><b>StateSpaceUtil.h</b></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:30 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:06 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -160,10 +160,10 @@ $(document).ready(function(){initNavTree('hal_2src_2main_2native_2include_2hal_2
 <div class="line"><a name="l00193"></a><span class="lineno"><a class="line" href="group__hal__serialport.html#ga40907488b04e763afa0cbb17444faae4">  193</a></span>&#160;int32_t <a class="code" href="group__hal__serialport.html#ga40907488b04e763afa0cbb17444faae4">HAL_GetSerialBytesReceived</a>(HAL_SerialPortHandle handle,</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;                                   int32_t* status);</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
-<div class="line"><a name="l00206"></a><span class="lineno"><a class="line" href="group__hal__serialport.html#ga128dd0ce9d90b16cd1eb16f080d5db84">  206</a></span>&#160;int32_t <a class="code" href="group__hal__serialport.html#ga128dd0ce9d90b16cd1eb16f080d5db84">HAL_ReadSerial</a>(HAL_SerialPortHandle handle, <span class="keywordtype">char</span>* buffer, int32_t count,</div>
+<div class="line"><a name="l00206"></a><span class="lineno"><a class="line" href="group__hal__serialport.html#ga128dd0ce9d90b16cd1eb16f080d5db84">  206</a></span>&#160;int32_t <a class="code" href="group__hal__serialport.html#ga128dd0ce9d90b16cd1eb16f080d5db84">HAL_ReadSerial</a>(HAL_SerialPortHandle handle, <span class="keywordtype">char</span>* <a class="code" href="classbuffer.html">buffer</a>, int32_t count,</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;                       int32_t* status);</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160; </div>
-<div class="line"><a name="l00217"></a><span class="lineno"><a class="line" href="group__hal__serialport.html#ga5eb24f060c01f778eaa200d5becc4b0c">  217</a></span>&#160;int32_t <a class="code" href="group__hal__serialport.html#ga5eb24f060c01f778eaa200d5becc4b0c">HAL_WriteSerial</a>(HAL_SerialPortHandle handle, <span class="keyword">const</span> <span class="keywordtype">char</span>* buffer,</div>
+<div class="line"><a name="l00217"></a><span class="lineno"><a class="line" href="group__hal__serialport.html#ga5eb24f060c01f778eaa200d5becc4b0c">  217</a></span>&#160;int32_t <a class="code" href="group__hal__serialport.html#ga5eb24f060c01f778eaa200d5becc4b0c">HAL_WriteSerial</a>(HAL_SerialPortHandle handle, <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="classbuffer.html">buffer</a>,</div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;                        int32_t count, int32_t* status);</div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160; </div>
 <div class="line"><a name="l00225"></a><span class="lineno"><a class="line" href="group__hal__serialport.html#ga44158b47d770a7de455e3fa13b2b14d7">  225</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__hal__serialport.html#ga44158b47d770a7de455e3fa13b2b14d7">HAL_FlushSerial</a>(HAL_SerialPortHandle handle, int32_t* status);</div>
@@ -182,6 +182,7 @@ $(document).ready(function(){initNavTree('hal_2src_2main_2native_2include_2hal_2
 <div class="ttc" id="agroup__hal__serialport_html_ga9ff7874b14fd399a0306e7d93fac3961"><div class="ttname"><a href="group__hal__serialport.html#ga9ff7874b14fd399a0306e7d93fac3961">HAL_SetSerialWriteMode</a></div><div class="ttdeci">void HAL_SetSerialWriteMode(HAL_SerialPortHandle handle, int32_t mode, int32_t *status)</div><div class="ttdoc">Sets the write mode on a serial port.</div></div>
 <div class="ttc" id="agroup__hal__serialport_html_ga51a28d7e9c4befe140468afb9dfb2b77"><div class="ttname"><a href="group__hal__serialport.html#ga51a28d7e9c4befe140468afb9dfb2b77">HAL_CloseSerial</a></div><div class="ttdeci">void HAL_CloseSerial(HAL_SerialPortHandle handle, int32_t *status)</div><div class="ttdoc">Closes a serial port.</div></div>
 <div class="ttc" id="agroup__hal__serialport_html_ga1474b8fbb2bb329c8ef77e2e60217423"><div class="ttname"><a href="group__hal__serialport.html#ga1474b8fbb2bb329c8ef77e2e60217423">HAL_SetSerialParity</a></div><div class="ttdeci">void HAL_SetSerialParity(HAL_SerialPortHandle handle, int32_t parity, int32_t *status)</div><div class="ttdoc">Sets the number of parity bits on a serial port.</div></div>
+<div class="ttc" id="aclassbuffer_html"><div class="ttname"><a href="classbuffer.html">buffer</a></div><div class="ttdoc">\rst A contiguous memory buffer with an optional growing ability.</div><div class="ttdef"><b>Definition:</b> core.h:732</div></div>
 <div class="ttc" id="agroup__hal__serialport_html_ga246b0a38411bdf75e54cf898ad539673"><div class="ttname"><a href="group__hal__serialport.html#ga246b0a38411bdf75e54cf898ad539673">HAL_SetSerialWriteBufferSize</a></div><div class="ttdeci">void HAL_SetSerialWriteBufferSize(HAL_SerialPortHandle handle, int32_t size, int32_t *status)</div><div class="ttdoc">Sets the size of the write buffer.</div></div>
 <div class="ttc" id="agroup__hal__serialport_html_ga920509fb1c9c760920968a352f0c4cd4"><div class="ttname"><a href="group__hal__serialport.html#ga920509fb1c9c760920968a352f0c4cd4">HAL_SetSerialBaudRate</a></div><div class="ttdeci">void HAL_SetSerialBaudRate(HAL_SerialPortHandle handle, int32_t baud, int32_t *status)</div><div class="ttdoc">Sets the baud rate of a serial port.</div></div>
 <div class="ttc" id="agroup__hal__serialport_html_gac96d7ee243777b36907298dcb575d766"><div class="ttname"><a href="group__hal__serialport.html#gac96d7ee243777b36907298dcb575d766">HAL_ClearSerial</a></div><div class="ttdeci">void HAL_ClearSerial(HAL_SerialPortHandle handle, int32_t *status)</div><div class="ttdoc">Clears the receive buffer of the serial port.</div></div>
@@ -201,7 +202,7 @@ $(document).ready(function(){initNavTree('hal_2src_2main_2native_2include_2hal_2
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_7dfa5b6b9262a4050979ee23e0eb392d.html">hal</a></li><li class="navelem"><b>SerialPort.h</b></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:29 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:05 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

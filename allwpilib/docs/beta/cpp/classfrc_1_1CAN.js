@@ -2,7 +2,7 @@ var classfrc_1_1CAN =
 [
     [ "CAN", "classfrc_1_1CAN.html#ace7dcd959db462b7a241baad4fb6bc70", null ],
     [ "CAN", "classfrc_1_1CAN.html#a569d5d0ceb33272cff5a79bcd1fb1af0", null ],
-    [ "~CAN", "classfrc_1_1CAN.html#ae1d790a85815e5967964e0a68caacaa4", null ],
+    [ "~CAN", "classfrc_1_1CAN.html#a387df75d5ece022ac04b1b4a7bab9cd9", null ],
     [ "CAN", "classfrc_1_1CAN.html#a3f9c20e615efcc7bb40f1c77e36feaa7", null ],
     [ "operator=", "classfrc_1_1CAN.html#ac9c312972addc9413c6749894a56a2b4", null ],
     [ "ReadPacketLatest", "classfrc_1_1CAN.html#a3df8026d53920eb5f68d3066a0c938ee", null ],

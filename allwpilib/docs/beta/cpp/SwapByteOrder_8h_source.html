@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -120,40 +120,40 @@ $(document).ready(function(){initNavTree('SwapByteOrder_8h_source.html',''); ini
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">namespace </span>wpi {</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span>sys {</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">inline</span> uint16_t SwapByteOrder_16(uint16_t value) {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">inline</span> uint16_t SwapByteOrder_16(uint16_t <a class="code" href="classvalue.html">value</a>) {</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#if defined(_MSC_VER) &amp;&amp; !defined(_DEBUG)</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="comment">// The DLL version of the runtime lacks these functions (bug!?), but in a</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="comment">// release build they&#39;re replaced with BSWAP instructions anyway.</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordflow">return</span> _byteswap_ushort(value);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordflow">return</span> _byteswap_ushort(<a class="code" href="classvalue.html">value</a>);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  uint16_t Hi = value &lt;&lt; 8;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  uint16_t Lo = value &gt;&gt; 8;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  uint16_t Hi = <a class="code" href="classvalue.html">value</a> &lt;&lt; 8;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  uint16_t Lo = <a class="code" href="classvalue.html">value</a> &gt;&gt; 8;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordflow">return</span> Hi | Lo;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">inline</span> uint32_t SwapByteOrder_32(uint32_t value) {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">inline</span> uint32_t SwapByteOrder_32(uint32_t <a class="code" href="classvalue.html">value</a>) {</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#if defined(__llvm__) || (LLVM_GNUC_PREREQ(4, 3, 0) &amp;&amp; !defined(__ICC))</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordflow">return</span> __builtin_bswap32(value);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordflow">return</span> __builtin_bswap32(<a class="code" href="classvalue.html">value</a>);</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#elif defined(_MSC_VER) &amp;&amp; !defined(_DEBUG)</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordflow">return</span> _byteswap_ulong(value);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordflow">return</span> _byteswap_ulong(<a class="code" href="classvalue.html">value</a>);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  uint32_t Byte0 = value &amp; 0x000000FF;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  uint32_t Byte1 = value &amp; 0x0000FF00;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  uint32_t Byte2 = value &amp; 0x00FF0000;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  uint32_t Byte3 = value &amp; 0xFF000000;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  uint32_t Byte0 = <a class="code" href="classvalue.html">value</a> &amp; 0x000000FF;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  uint32_t Byte1 = <a class="code" href="classvalue.html">value</a> &amp; 0x0000FF00;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  uint32_t Byte2 = <a class="code" href="classvalue.html">value</a> &amp; 0x00FF0000;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  uint32_t Byte3 = <a class="code" href="classvalue.html">value</a> &amp; 0xFF000000;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordflow">return</span> (Byte0 &lt;&lt; 24) | (Byte1 &lt;&lt; 8) | (Byte2 &gt;&gt; 8) | (Byte3 &gt;&gt; 24);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">inline</span> uint64_t SwapByteOrder_64(uint64_t value) {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">inline</span> uint64_t SwapByteOrder_64(uint64_t <a class="code" href="classvalue.html">value</a>) {</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#if defined(__llvm__) || (LLVM_GNUC_PREREQ(4, 3, 0) &amp;&amp; !defined(__ICC))</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordflow">return</span> __builtin_bswap64(value);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordflow">return</span> __builtin_bswap64(<a class="code" href="classvalue.html">value</a>);</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#elif defined(_MSC_VER) &amp;&amp; !defined(_DEBUG)</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordflow">return</span> _byteswap_uint64(value);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordflow">return</span> _byteswap_uint64(<a class="code" href="classvalue.html">value</a>);</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  uint64_t Hi = SwapByteOrder_32(uint32_t(value));</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  uint32_t Lo = SwapByteOrder_32(uint32_t(value &gt;&gt; 32));</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  uint64_t Hi = SwapByteOrder_32(uint32_t(<a class="code" href="classvalue.html">value</a>));</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  uint32_t Lo = SwapByteOrder_32(uint32_t(<a class="code" href="classvalue.html">value</a> &gt;&gt; 32));</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordflow">return</span> (Hi &lt;&lt; 32) | Lo;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
@@ -216,11 +216,12 @@ $(document).ready(function(){initNavTree('SwapByteOrder_8h_source.html',''); ini
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1099</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><b>SwapByteOrder.h</b></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:31 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:07 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

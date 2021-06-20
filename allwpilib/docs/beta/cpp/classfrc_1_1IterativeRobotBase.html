@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -92,7 +92,6 @@ $(document).ready(function(){initNavTree('classfrc_1_1IterativeRobotBase.html','
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classfrc_1_1IterativeRobotBase-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">frc::IterativeRobotBase Class Reference</div>  </div>
@@ -109,9 +108,8 @@ Inheritance diagram for frc::IterativeRobotBase:</div>
  <div class="center">
   <img src="classfrc_1_1IterativeRobotBase.png" usemap="#frc::IterativeRobotBase_map" alt=""/>
   <map id="frc::IterativeRobotBase_map" name="frc::IterativeRobotBase_map">
-<area href="classfrc_1_1RobotBase.html" title="Implement a Robot Program framework." alt="frc::RobotBase" shape="rect" coords="74,0,213,24"/>
-<area href="classfrc_1_1IterativeRobot.html" title="IterativeRobot implements the IterativeRobotBase robot program framework." alt="frc::IterativeRobot" shape="rect" coords="0,112,139,136"/>
-<area href="classfrc_1_1TimedRobot.html" title="TimedRobot implements the IterativeRobotBase robot program framework." alt="frc::TimedRobot" shape="rect" coords="149,112,288,136"/>
+<area href="classfrc_1_1RobotBase.html" title="Implement a Robot Program framework." alt="frc::RobotBase" shape="rect" coords="0,0,139,24"/>
+<area href="classfrc_1_1TimedRobot.html" title="TimedRobot implements the IterativeRobotBase robot program framework." alt="frc::TimedRobot" shape="rect" coords="0,112,139,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -156,6 +154,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af55ae3692aeddcb8f9d3e54a5d5b9474"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1IterativeRobotBase.html#af55ae3692aeddcb8f9d3e54a5d5b9474">SetNetworkTablesFlushEnabled</a> (bool enabled)</td></tr>
 <tr class="memdesc:af55ae3692aeddcb8f9d3e54a5d5b9474"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables flushing NetworkTables every loop iteration.  <a href="classfrc_1_1IterativeRobotBase.html#af55ae3692aeddcb8f9d3e54a5d5b9474">More...</a><br /></td></tr>
 <tr class="separator:af55ae3692aeddcb8f9d3e54a5d5b9474"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aead36ef3891548d84322a593ddb5d049"><td class="memItemLeft" align="right" valign="top"><a id="aead36ef3891548d84322a593ddb5d049"></a>
+units::second_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1IterativeRobotBase.html#aead36ef3891548d84322a593ddb5d049">GetPeriod</a> () const</td></tr>
+<tr class="memdesc:aead36ef3891548d84322a593ddb5d049"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets time period between calls to Periodic() functions. <br /></td></tr>
+<tr class="separator:aead36ef3891548d84322a593ddb5d049"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adaad67b57154bd85fef26a742d9c66b2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1IterativeRobotBase.html#adaad67b57154bd85fef26a742d9c66b2">IterativeRobotBase</a> (double period)</td></tr>
 <tr class="memdesc:adaad67b57154bd85fef26a742d9c66b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="classfrc_1_1IterativeRobotBase.html" title="IterativeRobotBase implements a specific type of robot program framework, extending the RobotBase cla...">IterativeRobotBase</a>.  <a href="classfrc_1_1IterativeRobotBase.html#adaad67b57154bd85fef26a742d9c66b2">More...</a><br /></td></tr>
 <tr class="separator:adaad67b57154bd85fef26a742d9c66b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -209,22 +211,12 @@ Protected Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>LoopFunc</b> ()</td></tr>
 <tr class="separator:a87620f299b086feb73d6625896978396"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classfrc_1_1RobotBase"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classfrc_1_1RobotBase')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classfrc_1_1RobotBase.html">frc::RobotBase</a></td></tr>
-<tr class="memitem:a6d784fbb8c42afb37bf07150338698ad inherit pro_methods_classfrc_1_1RobotBase"><td class="memItemLeft" align="right" valign="top"><a id="a6d784fbb8c42afb37bf07150338698ad"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>RobotBase</b> (<a class="el" href="classfrc_1_1RobotBase.html">RobotBase</a> &amp;&amp;) noexcept</td></tr>
-<tr class="separator:a6d784fbb8c42afb37bf07150338698ad inherit pro_methods_classfrc_1_1RobotBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94d5e0a11cd1e184d225ec6d93d9ad3b inherit pro_methods_classfrc_1_1RobotBase"><td class="memItemLeft" align="right" valign="top"><a id="a94d5e0a11cd1e184d225ec6d93d9ad3b"></a>
-<a class="el" href="classfrc_1_1RobotBase.html">RobotBase</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classfrc_1_1RobotBase.html">RobotBase</a> &amp;&amp;) noexcept</td></tr>
-<tr class="separator:a94d5e0a11cd1e184d225ec6d93d9ad3b inherit pro_methods_classfrc_1_1RobotBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:aa7478f701102965c2102a36613b0df11"><td class="memItemLeft" align="right" valign="top"><a id="aa7478f701102965c2102a36613b0df11"></a>
-units::second_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_period</b></td></tr>
-<tr class="separator:aa7478f701102965c2102a36613b0df11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_classfrc_1_1RobotBase"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classfrc_1_1RobotBase')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classfrc_1_1RobotBase.html">frc::RobotBase</a></td></tr>
-<tr class="memitem:a9bd4f2f9f7813be018679b28a12917ed inherit pro_attribs_classfrc_1_1RobotBase"><td class="memItemLeft" align="right" valign="top"><a id="a9bd4f2f9f7813be018679b28a12917ed"></a>
-<a class="el" href="classfrc_1_1DriverStation.html">DriverStation</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_ds</b></td></tr>
-<tr class="separator:a9bd4f2f9f7813be018679b28a12917ed inherit pro_attribs_classfrc_1_1RobotBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af57ab954142a0b6019cf12c922d4c731 inherit pro_methods_classfrc_1_1RobotBase"><td class="memItemLeft" align="right" valign="top"><a id="af57ab954142a0b6019cf12c922d4c731"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>RobotBase</b> (<a class="el" href="classfrc_1_1RobotBase.html">RobotBase</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:af57ab954142a0b6019cf12c922d4c731 inherit pro_methods_classfrc_1_1RobotBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54ccd56df06bbc8da6774c30eee77dcc inherit pro_methods_classfrc_1_1RobotBase"><td class="memItemLeft" align="right" valign="top"><a id="a54ccd56df06bbc8da6774c30eee77dcc"></a>
+<a class="el" href="classfrc_1_1RobotBase.html">RobotBase</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classfrc_1_1RobotBase.html">RobotBase</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:a54ccd56df06bbc8da6774c30eee77dcc inherit pro_methods_classfrc_1_1RobotBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -294,7 +286,7 @@ static std::thread::id&#160;</td><td class="memItemRight" valign="bottom"><b>m_t
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000031">Deprecated:</a></b></dt><dd>Use <a class="el" href="classfrc_1_1IterativeRobotBase.html#afee5b7301bc0f4579d76f840a18f2cca" title="Constructor for IterativeRobotBase.">IterativeRobotBase(units::second_t period)</a> with unit-safety instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000022">Deprecated:</a></b></dt><dd>Use <a class="el" href="classfrc_1_1IterativeRobotBase.html#afee5b7301bc0f4579d76f840a18f2cca" title="Constructor for IterativeRobotBase.">IterativeRobotBase(units::second_t period)</a> with unit-safety instead </dd></dl>
 
 </div>
 </div>
@@ -705,8 +697,8 @@ static std::thread::id&#160;</td><td class="memItemRight" valign="bottom"><b>m_t
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1IterativeRobotBase.html">IterativeRobotBase</a></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:32 for WPILibC++ by
+    <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1IterativeRobotBase.html">IterativeRobotBase</a></li>
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:08 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

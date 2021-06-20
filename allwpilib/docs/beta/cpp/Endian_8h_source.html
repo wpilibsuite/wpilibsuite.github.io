@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -133,9 +133,10 @@ $(document).ready(function(){initNavTree('Endian_8h_source.html',''); initResiza
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">namespace </span>detail {</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">// value is either alignment, or alignof(T) if alignment is 0.</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> T, <span class="keywordtype">int</span> alignment&gt;</div>
 <div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="structwpi_1_1support_1_1detail_1_1PickAlignment.html">   43</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structwpi_1_1support_1_1detail_1_1PickAlignment.html">PickAlignment</a> {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; <span class="keyword">enum</span> { value = alignment == 0 ? <span class="keyword">alignof</span>(T) : alignment };</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; <span class="keyword">enum</span> { <a class="code" href="classvalue.html">value</a> = alignment == 0 ? <span class="keyword">alignof</span>(T) : alignment };</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;} <span class="comment">// end namespace detail</span></div>
@@ -153,17 +154,17 @@ $(document).ready(function(){initNavTree('Endian_8h_source.html',''); initResiza
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> value_type&gt;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">inline</span> value_type byte_swap(value_type value, endianness endian) {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">inline</span> value_type byte_swap(value_type <a class="code" href="classvalue.html">value</a>, endianness endian) {</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordflow">if</span> ((endian != native) &amp;&amp; (endian != system_endianness()))</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    sys::swapByteOrder(value);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordflow">return</span> value;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    sys::swapByteOrder(<a class="code" href="classvalue.html">value</a>);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classvalue.html">value</a>;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> value_type, endianness endian&gt;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">inline</span> value_type byte_swap(value_type value) {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">inline</span> value_type byte_swap(value_type <a class="code" href="classvalue.html">value</a>) {</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordflow">if</span> constexpr ((endian != native) &amp;&amp; (endian != system_endianness()))</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    sys::swapByteOrder(value);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  return value;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    sys::swapByteOrder(<a class="code" href="classvalue.html">value</a>);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  return <a class="code" href="classvalue.html">value</a>;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;template &lt;typename value_type, std::<span class="keywordtype">size_t</span> alignment&gt;</div>
@@ -206,21 +207,21 @@ $(document).ready(function(){initNavTree('Endian_8h_source.html',''); initResiza
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;}</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> value_type, std::<span class="keywordtype">size_t</span> alignment&gt;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> write(<span class="keywordtype">void</span> *memory, value_type value, endianness endian) {</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  value = byte_swap&lt;value_type&gt;(value, endian);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> write(<span class="keywordtype">void</span> *memory, value_type <a class="code" href="classvalue.html">value</a>, endianness endian) {</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <a class="code" href="classvalue.html">value</a> = byte_swap&lt;value_type&gt;(<a class="code" href="classvalue.html">value</a>, endian);</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  memcpy(LLVM_ASSUME_ALIGNED(</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;             memory, (detail::PickAlignment&lt;value_type, alignment&gt;::value)),</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;         &amp;value, <span class="keyword">sizeof</span>(value_type));</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;         &amp;<a class="code" href="classvalue.html">value</a>, <span class="keyword">sizeof</span>(value_type));</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> value_type,</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;         endianness endian,</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;         std::size_t alignment&gt;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> write(<span class="keywordtype">void</span> *memory, value_type value) {</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  value = byte_swap&lt;value_type, endian&gt;(value);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> write(<span class="keywordtype">void</span> *memory, value_type <a class="code" href="classvalue.html">value</a>) {</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <a class="code" href="classvalue.html">value</a> = byte_swap&lt;value_type, endian&gt;(<a class="code" href="classvalue.html">value</a>);</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  memcpy(LLVM_ASSUME_ALIGNED(</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;             memory, (detail::PickAlignment&lt;value_type, alignment&gt;::value)),</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;         &amp;value, <span class="keyword">sizeof</span>(value_type));</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;         &amp;<a class="code" href="classvalue.html">value</a>, <span class="keyword">sizeof</span>(value_type));</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;}</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> value_type, endianness endian, std::<span class="keywordtype">size_t</span> alignment&gt;</div>
@@ -256,11 +257,11 @@ $(document).ready(function(){initNavTree('Endian_8h_source.html',''); initResiza
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;}</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> value_type, endianness endian, std::<span class="keywordtype">size_t</span> alignment&gt;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> writeAtBitAlignment(<span class="keywordtype">void</span> *memory, value_type value,</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> writeAtBitAlignment(<span class="keywordtype">void</span> *memory, value_type <a class="code" href="classvalue.html">value</a>,</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                                uint64_t startBit) {</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  assert(startBit &lt; 8);</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  <span class="keywordflow">if</span> (startBit == 0)</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    write&lt;value_type, endian, alignment&gt;(memory, value);</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    write&lt;value_type, endian, alignment&gt;(memory, <a class="code" href="classvalue.html">value</a>);</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="comment">// Read two values and shift the result into them.</span></div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    value_type val[2];</div>
@@ -276,7 +277,7 @@ $(document).ready(function(){initNavTree('Endian_8h_source.html',''); initResiza
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    val[0] &amp;= ((std::make_unsigned_t&lt;value_type&gt;)1 &lt;&lt; startBit) - 1;</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    std::make_unsigned_t&lt;value_type&gt; numBitsFirstVal =</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        (<span class="keyword">sizeof</span>(value_type) * 8) - startBit;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    std::make_unsigned_t&lt;value_type&gt; lowerVal = value;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    std::make_unsigned_t&lt;value_type&gt; lowerVal = <a class="code" href="classvalue.html">value</a>;</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keywordflow">if</span> (startBit &gt; 0) {</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;      <span class="comment">// Mask off the upper bits in the new value that are not going to go into</span></div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;      <span class="comment">// the lower value. This avoids a left shift of a negative value, which</span></div>
@@ -291,7 +292,7 @@ $(document).ready(function(){initNavTree('Endian_8h_source.html',''); initResiza
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="comment">// we want to replace.</span></div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    val[1] &amp;= ~(((std::make_unsigned_t&lt;value_type&gt;)1 &lt;&lt; startBit) - 1);</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="comment">// Next shift the bits that go into the upper value into position.</span></div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    std::make_unsigned_t&lt;value_type&gt; upperVal = value &gt;&gt; numBitsFirstVal;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    std::make_unsigned_t&lt;value_type&gt; upperVal = <a class="code" href="classvalue.html">value</a> &gt;&gt; numBitsFirstVal;</div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="comment">// Mask off upper bits after right shift in case of signed type.</span></div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    upperVal &amp;= ((std::make_unsigned_t&lt;value_type&gt;)1 &lt;&lt; startBit) - 1;</div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    val[1] |= upperVal;</div>
@@ -521,14 +522,15 @@ $(document).ready(function(){initNavTree('Endian_8h_source.html',''); initResiza
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astructwpi_1_1support_1_1detail_1_1packed__endian__specific__integral_html"><div class="ttname"><a href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral.html">wpi::support::detail::packed_endian_specific_integral</a></div><div class="ttdef"><b>Definition:</b> Endian.h:230</div></div>
-<div class="ttc" id="astructwpi_1_1support_1_1detail_1_1PickAlignment_html"><div class="ttname"><a href="structwpi_1_1support_1_1detail_1_1PickAlignment.html">wpi::support::detail::PickAlignment</a></div><div class="ttdoc">::value is either alignment, or alignof(T) if alignment is 0.</div><div class="ttdef"><b>Definition:</b> Endian.h:43</div></div>
+<div class="ttc" id="astructwpi_1_1support_1_1detail_1_1PickAlignment_html"><div class="ttname"><a href="structwpi_1_1support_1_1detail_1_1PickAlignment.html">wpi::support::detail::PickAlignment</a></div><div class="ttdef"><b>Definition:</b> Endian.h:43</div></div>
+<div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1099</div></div>
 <div class="ttc" id="astructwpi_1_1AlignedCharArray_html"><div class="ttname"><a href="structwpi_1_1AlignedCharArray.html">wpi::AlignedCharArray</a></div><div class="ttdef"><b>Definition:</b> AlignOf.h:36</div></div>
 <div class="ttc" id="astructwpi_1_1support_1_1detail_1_1packed__endian__specific__integral_1_1ref_html"><div class="ttname"><a href="structwpi_1_1support_1_1detail_1_1packed__endian__specific__integral_1_1ref.html">wpi::support::detail::packed_endian_specific_integral::ref</a></div><div class="ttdef"><b>Definition:</b> Endian.h:270</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><b>Endian.h</b></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:30 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:06 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

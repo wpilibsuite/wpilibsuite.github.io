@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -133,15 +133,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a29400155a3c87ab2fa2b1b88adc39d29"><td class="memItemLeft" align="right" valign="top"><a id="a29400155a3c87ab2fa2b1b88adc39d29"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Option</b> (const std::string &amp;arg)</td></tr>
 <tr class="separator:a29400155a3c87ab2fa2b1b88adc39d29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7efae804203f2cfb05727da4bba3ecdc"><td class="memItemLeft" align="right" valign="top"><a id="a7efae804203f2cfb05727da4bba3ecdc"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Option</b> (<a class="el" href="classwpi_1_1StringRef.html">StringRef</a> arg)</td></tr>
-<tr class="separator:a7efae804203f2cfb05727da4bba3ecdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ceb68889610d87caf1d476f61d2a6e4"><td class="memItemLeft" align="right" valign="top"><a id="a8ceb68889610d87caf1d476f61d2a6e4"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Option</b> (std::string_view arg)</td></tr>
+<tr class="separator:a8ceb68889610d87caf1d476f61d2a6e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae885a9118fa80badbcc6105c708cba38"><td class="memItemLeft" align="right" valign="top"><a id="ae885a9118fa80badbcc6105c708cba38"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Option</b> (const <a class="el" href="classwpi_1_1SmallVectorImpl.html">SmallVectorImpl</a>&lt; char &gt; &amp;arg)</td></tr>
 <tr class="separator:ae885a9118fa80badbcc6105c708cba38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55315bd31940cc543bad0c5373a70b3b"><td class="memItemLeft" align="right" valign="top"><a id="a55315bd31940cc543bad0c5373a70b3b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Option</b> (const <a class="el" href="classwpi_1_1Twine.html">Twine</a> &amp;arg)</td></tr>
-<tr class="separator:a55315bd31940cc543bad0c5373a70b3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada4c7e2e17f8938688fbc57107047a84"><td class="memItemLeft" align="right" valign="top"><a id="ada4c7e2e17f8938688fbc57107047a84"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Option</b> (Type type)</td></tr>
 <tr class="separator:ada4c7e2e17f8938688fbc57107047a84"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,46 +151,46 @@ Type&#160;</td><td class="memItemRight" valign="bottom"><b>m_type</b> = kArg</td
 <tr class="memitem:ae3b132f27bd319778ddacb9192b02d0f"><td class="memItemLeft" align="right" valign="top"><a id="ae3b132f27bd319778ddacb9192b02d0f"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_strData</b></td></tr>
 <tr class="separator:ae3b132f27bd319778ddacb9192b02d0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a323d13c4c4baaae3825f9eddb1572dc2"><td class="memItemLeft" ><a id="a323d13c4c4baaae3825f9eddb1572dc2"></a>
+<tr class="memitem:af1b3e3bbae804404aa15d7aed015823f"><td class="memItemLeft" ><a id="af1b3e3bbae804404aa15d7aed015823f"></a>
 union {</td></tr>
-<tr class="memitem:a7b137fce535d96f44cfb4c119acd2065"><td class="memItemLeft" >
+<tr class="memitem:a275e46f949be2ae52b72858e06b2e15e"><td class="memItemLeft" >
 &#160;&#160;&#160;const char *&#160;&#160;&#160;<b>str</b></td></tr>
-<tr class="separator:a7b137fce535d96f44cfb4c119acd2065"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeeccb7d5a6b1e64a30340d20ea61f160"><td class="memItemLeft" >
+<tr class="separator:a275e46f949be2ae52b72858e06b2e15e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5981a830943156c0e0bba5a407458367"><td class="memItemLeft" >
 &#160;&#160;&#160;uv_uid_t&#160;&#160;&#160;<b>uid</b></td></tr>
-<tr class="separator:aeeccb7d5a6b1e64a30340d20ea61f160"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a427839955bf86af8e1ac9728198960ad"><td class="memItemLeft" >
+<tr class="separator:a5981a830943156c0e0bba5a407458367"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66e7ef9e4e5be3d2f179fb8058f51540"><td class="memItemLeft" >
 &#160;&#160;&#160;uv_gid_t&#160;&#160;&#160;<b>gid</b></td></tr>
-<tr class="separator:a427839955bf86af8e1ac9728198960ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91ec8765a0fd2864b0132ed6ecd1ecd4"><td class="memItemLeft" >
+<tr class="separator:a66e7ef9e4e5be3d2f179fb8058f51540"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5d4c7a057763306a24cd5e3e69d177c"><td class="memItemLeft" >
 &#160;&#160;&#160;unsigned int&#160;&#160;&#160;<b>flags</b></td></tr>
-<tr class="separator:a91ec8765a0fd2864b0132ed6ecd1ecd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4056e8e776d03105a1333e37dabc139e"><td class="memItemLeft" >
+<tr class="separator:af5d4c7a057763306a24cd5e3e69d177c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0451d44fd14ad5b814e1622dcff9a20"><td class="memItemLeft" >
 &#160;&#160;&#160;struct {</td></tr>
-<tr class="memitem:ac269d3f01cba2f69e2f0656a8410e3d3"><td class="memItemLeft" >
+<tr class="memitem:af0133105f128656cf57c5c70530f28a7"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;size_t&#160;&#160;&#160;<b>index</b></td></tr>
-<tr class="separator:ac269d3f01cba2f69e2f0656a8410e3d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1c0e03f5cf0d1af38d25837150379d3"><td class="memItemLeft" ><a id="ab1c0e03f5cf0d1af38d25837150379d3"></a>
+<tr class="separator:af0133105f128656cf57c5c70530f28a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4c5ec354ad9ae277fe474e5d67278cb"><td class="memItemLeft" ><a id="aa4c5ec354ad9ae277fe474e5d67278cb"></a>
 &#160;&#160;&#160;&#160;&#160;&#160;union {</td></tr>
-<tr class="memitem:a3da7fd89e7ce63ce16e7c6dbf2ba6e98"><td class="memItemLeft" >
+<tr class="memitem:abebb14815d9220b12a0c4f5383888766"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;int&#160;&#160;&#160;<b>fd</b></td></tr>
-<tr class="separator:a3da7fd89e7ce63ce16e7c6dbf2ba6e98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a082800c487954bb4a80c02ec16bd52f6"><td class="memItemLeft" >
+<tr class="separator:abebb14815d9220b12a0c4f5383888766"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a171388ddc71235ff3ce7431c80b0450c"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<a class="el" href="classwpi_1_1uv_1_1Pipe.html">Pipe</a> *&#160;&#160;&#160;<b>pipe</b></td></tr>
-<tr class="separator:a082800c487954bb4a80c02ec16bd52f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1c0e03f5cf0d1af38d25837150379d3"><td class="memItemLeft" valign="top">&#160;&#160;&#160;&#160;&#160;&#160;}&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:ab1c0e03f5cf0d1af38d25837150379d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1966fc8bd7c7b2509537a4b6974016a2"><td class="memItemLeft" >
+<tr class="separator:a171388ddc71235ff3ce7431c80b0450c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4c5ec354ad9ae277fe474e5d67278cb"><td class="memItemLeft" valign="top">&#160;&#160;&#160;&#160;&#160;&#160;}&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:aa4c5ec354ad9ae277fe474e5d67278cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a404bf17b056693e4eb95abc7769178a6"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;unsigned int&#160;&#160;&#160;<b>flags</b></td></tr>
-<tr class="separator:a1966fc8bd7c7b2509537a4b6974016a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4056e8e776d03105a1333e37dabc139e"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>stdio</b></td></tr>
-<tr class="separator:a4056e8e776d03105a1333e37dabc139e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a323d13c4c4baaae3825f9eddb1572dc2"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>m_data</b></td></tr>
-<tr class="separator:a323d13c4c4baaae3825f9eddb1572dc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a404bf17b056693e4eb95abc7769178a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0451d44fd14ad5b814e1622dcff9a20"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<b>stdio</b></td></tr>
+<tr class="separator:ac0451d44fd14ad5b814e1622dcff9a20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1b3e3bbae804404aa15d7aed015823f"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>m_data</b></td></tr>
+<tr class="separator:af1b3e3bbae804404aa15d7aed015823f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Structure for Spawn() option temporaries. </p>
-<p>This is a reference type similar to <a class="el" href="classwpi_1_1StringRef.html" title="StringRef - Represent a constant reference to a string, i.e.">StringRef</a>, so if this value is stored outside of a temporary, be careful about overwriting what it points to. </p>
+<p>This is a reference type, so if this value is stored outside of a temporary, be careful about overwriting what it points to. </p>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>wpi/uv/<a class="el" href="Process_8h_source.html">Process.h</a></li>
 </ul>
@@ -203,7 +200,7 @@ union {</td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>wpi</b></li><li class="navelem"><b>uv</b></li><li class="navelem"><a class="el" href="classwpi_1_1uv_1_1Process.html">Process</a></li><li class="navelem"><a class="el" href="structwpi_1_1uv_1_1Process_1_1Option.html">Option</a></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:35 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:11 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -90,36 +90,23 @@ $(document).ready(function(){initNavTree('group__hal__interrupts.html',''); init
 
 <div class="header">
   <div class="summary">
-<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Interrupts Functions<div class="ingroups"><a class="el" href="group__hal__capi.html">WPILib HAL API</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:gabf0c260f930ab695f63fd64dcc0f83b3"><td class="memItemLeft" align="right" valign="top"><a id="gabf0c260f930ab695f63fd64dcc0f83b3"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_InterruptHandlerFunction</b>) (uint32_t interruptAssertedMask, void *param)</td></tr>
-<tr class="separator:gabf0c260f930ab695f63fd64dcc0f83b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga60e1deb622cbc12ad28a17673b5c1e64"><td class="memItemLeft" align="right" valign="top">HAL_InterruptHandle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__interrupts.html#ga60e1deb622cbc12ad28a17673b5c1e64">HAL_InitializeInterrupts</a> (HAL_Bool watcher, int32_t *status)</td></tr>
-<tr class="memdesc:ga60e1deb622cbc12ad28a17673b5c1e64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes an interrupt.  <a href="group__hal__interrupts.html#ga60e1deb622cbc12ad28a17673b5c1e64">More...</a><br /></td></tr>
-<tr class="separator:ga60e1deb622cbc12ad28a17673b5c1e64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga820bced156fd7a81fd632b98a5df52a3"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__interrupts.html#ga820bced156fd7a81fd632b98a5df52a3">HAL_CleanInterrupts</a> (HAL_InterruptHandle interruptHandle, int32_t *status)</td></tr>
-<tr class="memdesc:ga820bced156fd7a81fd632b98a5df52a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees an interrupt.  <a href="group__hal__interrupts.html#ga820bced156fd7a81fd632b98a5df52a3">More...</a><br /></td></tr>
-<tr class="separator:ga820bced156fd7a81fd632b98a5df52a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab85a7a97fabeb4b1af9abe6292f83170"><td class="memItemLeft" align="right" valign="top">HAL_InterruptHandle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__interrupts.html#gab85a7a97fabeb4b1af9abe6292f83170">HAL_InitializeInterrupts</a> (int32_t *status)</td></tr>
+<tr class="memdesc:gab85a7a97fabeb4b1af9abe6292f83170"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes an interrupt.  <a href="group__hal__interrupts.html#gab85a7a97fabeb4b1af9abe6292f83170">More...</a><br /></td></tr>
+<tr class="separator:gab85a7a97fabeb4b1af9abe6292f83170"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7a03ed9b7bbb6eb87a74434595147f65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__interrupts.html#ga7a03ed9b7bbb6eb87a74434595147f65">HAL_CleanInterrupts</a> (HAL_InterruptHandle interruptHandle)</td></tr>
+<tr class="memdesc:ga7a03ed9b7bbb6eb87a74434595147f65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees an interrupt.  <a href="group__hal__interrupts.html#ga7a03ed9b7bbb6eb87a74434595147f65">More...</a><br /></td></tr>
+<tr class="separator:ga7a03ed9b7bbb6eb87a74434595147f65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9bd2cfe22ac6a8cf7cdc1dc163728e1d"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__interrupts.html#ga9bd2cfe22ac6a8cf7cdc1dc163728e1d">HAL_WaitForInterrupt</a> (HAL_InterruptHandle interruptHandle, double timeout, HAL_Bool ignorePrevious, int32_t *status)</td></tr>
 <tr class="memdesc:ga9bd2cfe22ac6a8cf7cdc1dc163728e1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">In synchronous mode, waits for the defined interrupt to occur.  <a href="group__hal__interrupts.html#ga9bd2cfe22ac6a8cf7cdc1dc163728e1d">More...</a><br /></td></tr>
 <tr class="separator:ga9bd2cfe22ac6a8cf7cdc1dc163728e1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab0ebc1a5040f6e60aed2151937acf909"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__interrupts.html#gab0ebc1a5040f6e60aed2151937acf909">HAL_EnableInterrupts</a> (HAL_InterruptHandle interruptHandle, int32_t *status)</td></tr>
-<tr class="memdesc:gab0ebc1a5040f6e60aed2151937acf909"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables interrupts to occur on this input.  <a href="group__hal__interrupts.html#gab0ebc1a5040f6e60aed2151937acf909">More...</a><br /></td></tr>
-<tr class="separator:gab0ebc1a5040f6e60aed2151937acf909"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6e805c5a33bbae8cb990cd2d61bfc8a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__interrupts.html#ga6e805c5a33bbae8cb990cd2d61bfc8a6">HAL_DisableInterrupts</a> (HAL_InterruptHandle interruptHandle, int32_t *status)</td></tr>
-<tr class="memdesc:ga6e805c5a33bbae8cb990cd2d61bfc8a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disables interrupts without without deallocating structures.  <a href="group__hal__interrupts.html#ga6e805c5a33bbae8cb990cd2d61bfc8a6">More...</a><br /></td></tr>
-<tr class="separator:ga6e805c5a33bbae8cb990cd2d61bfc8a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabcd95895a76e956a3b19e0d72b46ea9f"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__interrupts.html#gabcd95895a76e956a3b19e0d72b46ea9f">HAL_ReadInterruptRisingTimestamp</a> (HAL_InterruptHandle interruptHandle, int32_t *status)</td></tr>
 <tr class="memdesc:gabcd95895a76e956a3b19e0d72b46ea9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the timestamp for the rising interrupt that occurred most recently.  <a href="group__hal__interrupts.html#gabcd95895a76e956a3b19e0d72b46ea9f">More...</a><br /></td></tr>
 <tr class="separator:gabcd95895a76e956a3b19e0d72b46ea9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,12 +116,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ga42d553aed65587375963d441cb48d6e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__interrupts.html#ga42d553aed65587375963d441cb48d6e0">HAL_RequestInterrupts</a> (HAL_InterruptHandle interruptHandle, HAL_Handle digitalSourceHandle, HAL_AnalogTriggerType analogTriggerType, int32_t *status)</td></tr>
 <tr class="memdesc:ga42d553aed65587375963d441cb48d6e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requests interrupts on a specific digital source.  <a href="group__hal__interrupts.html#ga42d553aed65587375963d441cb48d6e0">More...</a><br /></td></tr>
 <tr class="separator:ga42d553aed65587375963d441cb48d6e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac9efc74031d89662676ebde134e2b730"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__interrupts.html#gac9efc74031d89662676ebde134e2b730">HAL_AttachInterruptHandler</a> (HAL_InterruptHandle interruptHandle, HAL_InterruptHandlerFunction handler, void *param, int32_t *status)</td></tr>
-<tr class="memdesc:gac9efc74031d89662676ebde134e2b730"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attaches an asynchronous interrupt handler to the interrupt.  <a href="group__hal__interrupts.html#gac9efc74031d89662676ebde134e2b730">More...</a><br /></td></tr>
-<tr class="separator:gac9efc74031d89662676ebde134e2b730"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae62617c3db17f2d4004649b229d109f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__interrupts.html#gae62617c3db17f2d4004649b229d109f9">HAL_AttachInterruptHandlerThreaded</a> (HAL_InterruptHandle interruptHandle, HAL_InterruptHandlerFunction handler, void *param, int32_t *status)</td></tr>
-<tr class="memdesc:gae62617c3db17f2d4004649b229d109f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attaches an asynchronous interrupt handler to the interrupt.  <a href="group__hal__interrupts.html#gae62617c3db17f2d4004649b229d109f9">More...</a><br /></td></tr>
-<tr class="separator:gae62617c3db17f2d4004649b229d109f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga96e6618288cfac532a31049cda0d48c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__interrupts.html#ga96e6618288cfac532a31049cda0d48c0">HAL_SetInterruptUpSourceEdge</a> (HAL_InterruptHandle interruptHandle, HAL_Bool risingEdge, HAL_Bool fallingEdge, int32_t *status)</td></tr>
 <tr class="memdesc:ga96e6618288cfac532a31049cda0d48c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the edges to trigger the interrupt on.  <a href="group__hal__interrupts.html#ga96e6618288cfac532a31049cda0d48c0">More...</a><br /></td></tr>
 <tr class="separator:ga96e6618288cfac532a31049cda0d48c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -144,130 +125,18 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gac9efc74031d89662676ebde134e2b730"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac9efc74031d89662676ebde134e2b730">&#9670;&nbsp;</a></span>HAL_AttachInterruptHandler()</h2>
+<a id="ga7a03ed9b7bbb6eb87a74434595147f65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7a03ed9b7bbb6eb87a74434595147f65">&#9670;&nbsp;</a></span>HAL_CleanInterrupts()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void HAL_AttachInterruptHandler </td>
+          <td class="memname">void HAL_CleanInterrupts </td>
           <td>(</td>
           <td class="paramtype">HAL_InterruptHandle&#160;</td>
-          <td class="paramname"><em>interruptHandle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>interruptHandle</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">HAL_InterruptHandlerFunction&#160;</td>
-          <td class="paramname"><em>handler</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>param</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int32_t *&#160;</td>
-          <td class="paramname"><em>status</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Attaches an asynchronous interrupt handler to the interrupt. </p>
-<p>This interrupt gets called directly on the FPGA interrupt thread, so will block other interrupts while running.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">interruptHandle</td><td>the interrupt handle </td></tr>
-    <tr><td class="paramname">handler</td><td>the handler function for the interrupt to call </td></tr>
-    <tr><td class="paramname">param</td><td>a parameter to be passed to the handler </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="gae62617c3db17f2d4004649b229d109f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae62617c3db17f2d4004649b229d109f9">&#9670;&nbsp;</a></span>HAL_AttachInterruptHandlerThreaded()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void HAL_AttachInterruptHandlerThreaded </td>
-          <td>(</td>
-          <td class="paramtype">HAL_InterruptHandle&#160;</td>
-          <td class="paramname"><em>interruptHandle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">HAL_InterruptHandlerFunction&#160;</td>
-          <td class="paramname"><em>handler</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>param</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int32_t *&#160;</td>
-          <td class="paramname"><em>status</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Attaches an asynchronous interrupt handler to the interrupt. </p>
-<p>This interrupt gets called on a thread specific to the interrupt, so will not block other interrupts.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">interruptHandle</td><td>the interrupt handle </td></tr>
-    <tr><td class="paramname">handler</td><td>the handler function for the interrupt to call </td></tr>
-    <tr><td class="paramname">param</td><td>a parameter to be passed to the handler </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ga820bced156fd7a81fd632b98a5df52a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga820bced156fd7a81fd632b98a5df52a3">&#9670;&nbsp;</a></span>HAL_CleanInterrupts()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void* HAL_CleanInterrupts </td>
-          <td>(</td>
-          <td class="paramtype">HAL_InterruptHandle&#160;</td>
-          <td class="paramname"><em>interruptHandle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int32_t *&#160;</td>
-          <td class="paramname"><em>status</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -279,85 +148,11 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the param passed to the interrupt, or nullptr if one wasn't passed. </dd></dl>
 
 </div>
 </div>
-<a id="ga6e805c5a33bbae8cb990cd2d61bfc8a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6e805c5a33bbae8cb990cd2d61bfc8a6">&#9670;&nbsp;</a></span>HAL_DisableInterrupts()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void HAL_DisableInterrupts </td>
-          <td>(</td>
-          <td class="paramtype">HAL_InterruptHandle&#160;</td>
-          <td class="paramname"><em>interruptHandle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int32_t *&#160;</td>
-          <td class="paramname"><em>status</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Disables interrupts without without deallocating structures. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">interruptHandle</td><td>the interrupt handle </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="gab0ebc1a5040f6e60aed2151937acf909"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab0ebc1a5040f6e60aed2151937acf909">&#9670;&nbsp;</a></span>HAL_EnableInterrupts()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void HAL_EnableInterrupts </td>
-          <td>(</td>
-          <td class="paramtype">HAL_InterruptHandle&#160;</td>
-          <td class="paramname"><em>interruptHandle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int32_t *&#160;</td>
-          <td class="paramname"><em>status</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Enables interrupts to occur on this input. </p>
-<p>Interrupts are disabled when the RequestInterrupt call is made. This gives time to do the setup of the other options before starting to field interrupts.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">interruptHandle</td><td>the interrupt handle </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ga60e1deb622cbc12ad28a17673b5c1e64"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga60e1deb622cbc12ad28a17673b5c1e64">&#9670;&nbsp;</a></span>HAL_InitializeInterrupts()</h2>
+<a id="gab85a7a97fabeb4b1af9abe6292f83170"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab85a7a97fabeb4b1af9abe6292f83170">&#9670;&nbsp;</a></span>HAL_InitializeInterrupts()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -365,19 +160,9 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">HAL_InterruptHandle HAL_InitializeInterrupts </td>
           <td>(</td>
-          <td class="paramtype">HAL_Bool&#160;</td>
-          <td class="paramname"><em>watcher</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">int32_t *&#160;</td>
-          <td class="paramname"><em>status</em>&#160;</td>
-        </tr>
-        <tr>
+          <td class="paramname"><em>status</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -548,7 +333,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">interruptHandle</td><td>the interrupt handle </td></tr>
-    <tr><td class="paramname">digitalSourceHandle</td><td>the digital source handle (either a HAL_AnalogTriggerHandle of a HAL_DigitalHandle) </td></tr>
+    <tr><td class="paramname">digitalSourceHandle</td><td>the digital source handle (either a HAL_AnalogTriggerHandle or a HAL_DigitalHandle) </td></tr>
     <tr><td class="paramname">analogTriggerType</td><td>the trigger type if the source is an AnalogTrigger </td></tr>
   </table>
   </dd>
@@ -663,7 +448,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun May 9 2021 20:37:31 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:07 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

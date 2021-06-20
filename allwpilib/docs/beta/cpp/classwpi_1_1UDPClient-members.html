@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -100,14 +100,14 @@ $(document).ready(function(){initNavTree('classwpi_1_1UDPClient.html',''); initR
   <tr bgcolor="#f0f0f0"><td class="entry"><b>operator=</b>(UDPClient &amp;&amp;other) (defined in <a class="el" href="classwpi_1_1UDPClient.html">wpi::UDPClient</a>)</td><td class="entry"><a class="el" href="classwpi_1_1UDPClient.html">wpi::UDPClient</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>receive</b>(uint8_t *data_received, int receive_len) (defined in <a class="el" href="classwpi_1_1UDPClient.html">wpi::UDPClient</a>)</td><td class="entry"><a class="el" href="classwpi_1_1UDPClient.html">wpi::UDPClient</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>receive</b>(uint8_t *data_received, int receive_len, SmallVectorImpl&lt; char &gt; *addr_received, int *port_received) (defined in <a class="el" href="classwpi_1_1UDPClient.html">wpi::UDPClient</a>)</td><td class="entry"><a class="el" href="classwpi_1_1UDPClient.html">wpi::UDPClient</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>send</b>(ArrayRef&lt; uint8_t &gt; data, const Twine &amp;server, int port) (defined in <a class="el" href="classwpi_1_1UDPClient.html">wpi::UDPClient</a>)</td><td class="entry"><a class="el" href="classwpi_1_1UDPClient.html">wpi::UDPClient</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>send</b>(StringRef data, const Twine &amp;server, int port) (defined in <a class="el" href="classwpi_1_1UDPClient.html">wpi::UDPClient</a>)</td><td class="entry"><a class="el" href="classwpi_1_1UDPClient.html">wpi::UDPClient</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>send</b>(span&lt; const uint8_t &gt; data, std::string_view server, int port) (defined in <a class="el" href="classwpi_1_1UDPClient.html">wpi::UDPClient</a>)</td><td class="entry"><a class="el" href="classwpi_1_1UDPClient.html">wpi::UDPClient</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>send</b>(std::string_view data, std::string_view server, int port) (defined in <a class="el" href="classwpi_1_1UDPClient.html">wpi::UDPClient</a>)</td><td class="entry"><a class="el" href="classwpi_1_1UDPClient.html">wpi::UDPClient</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>set_timeout</b>(double timeout) (defined in <a class="el" href="classwpi_1_1UDPClient.html">wpi::UDPClient</a>)</td><td class="entry"><a class="el" href="classwpi_1_1UDPClient.html">wpi::UDPClient</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>shutdown</b>() (defined in <a class="el" href="classwpi_1_1UDPClient.html">wpi::UDPClient</a>)</td><td class="entry"><a class="el" href="classwpi_1_1UDPClient.html">wpi::UDPClient</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>start</b>() (defined in <a class="el" href="classwpi_1_1UDPClient.html">wpi::UDPClient</a>)</td><td class="entry"><a class="el" href="classwpi_1_1UDPClient.html">wpi::UDPClient</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>start</b>(int port) (defined in <a class="el" href="classwpi_1_1UDPClient.html">wpi::UDPClient</a>)</td><td class="entry"><a class="el" href="classwpi_1_1UDPClient.html">wpi::UDPClient</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>UDPClient</b>(Logger &amp;logger) (defined in <a class="el" href="classwpi_1_1UDPClient.html">wpi::UDPClient</a>)</td><td class="entry"><a class="el" href="classwpi_1_1UDPClient.html">wpi::UDPClient</a></td><td class="entry"><span class="mlabel">explicit</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>UDPClient</b>(const Twine &amp;address, Logger &amp;logger) (defined in <a class="el" href="classwpi_1_1UDPClient.html">wpi::UDPClient</a>)</td><td class="entry"><a class="el" href="classwpi_1_1UDPClient.html">wpi::UDPClient</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>UDPClient</b>(std::string_view address, Logger &amp;logger) (defined in <a class="el" href="classwpi_1_1UDPClient.html">wpi::UDPClient</a>)</td><td class="entry"><a class="el" href="classwpi_1_1UDPClient.html">wpi::UDPClient</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>UDPClient</b>(const UDPClient &amp;other)=delete (defined in <a class="el" href="classwpi_1_1UDPClient.html">wpi::UDPClient</a>)</td><td class="entry"><a class="el" href="classwpi_1_1UDPClient.html">wpi::UDPClient</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>UDPClient</b>(UDPClient &amp;&amp;other) (defined in <a class="el" href="classwpi_1_1UDPClient.html">wpi::UDPClient</a>)</td><td class="entry"><a class="el" href="classwpi_1_1UDPClient.html">wpi::UDPClient</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>~UDPClient</b>() (defined in <a class="el" href="classwpi_1_1UDPClient.html">wpi::UDPClient</a>)</td><td class="entry"><a class="el" href="classwpi_1_1UDPClient.html">wpi::UDPClient</a></td><td class="entry"></td></tr>
@@ -116,7 +116,7 @@ $(document).ready(function(){initNavTree('classwpi_1_1UDPClient.html',''); initR
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun May 9 2021 20:37:34 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:11 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

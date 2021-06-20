@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -104,88 +104,84 @@ $(document).ready(function(){initNavTree('DigitalGlitchFilter_8h_source.html',''
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;array&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;wpi/mutex.h&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;frc/DigitalSource.h&quot;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;frc/ErrorBase.h&quot;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;frc/smartdashboard/Sendable.h&quot;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;frc/smartdashboard/SendableHelper.h&quot;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacefrc.html">frc</a> {</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">class </span>Encoder;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">class </span>Counter;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classfrc_1_1DigitalGlitchFilter.html">   30</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1DigitalGlitchFilter.html">DigitalGlitchFilter</a> : <span class="keyword">public</span> <a class="code" href="classfrc_1_1ErrorBase.html">ErrorBase</a>,</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                            <span class="keyword">public</span> <a class="code" href="classfrc_1_1Sendable.html">Sendable</a>,</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                            <span class="keyword">public</span> <a class="code" href="classfrc_1_1SendableHelper.html">SendableHelper</a>&lt;DigitalGlitchFilter&gt; {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <a class="code" href="classfrc_1_1DigitalGlitchFilter.html">DigitalGlitchFilter</a>();</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  ~<a class="code" href="classfrc_1_1DigitalGlitchFilter.html">DigitalGlitchFilter</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="classfrc_1_1DigitalGlitchFilter.html">DigitalGlitchFilter</a>(<a class="code" href="classfrc_1_1DigitalGlitchFilter.html">DigitalGlitchFilter</a>&amp;&amp; rhs);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <a class="code" href="classfrc_1_1DigitalGlitchFilter.html">DigitalGlitchFilter</a>&amp; operator=(<a class="code" href="classfrc_1_1DigitalGlitchFilter.html">DigitalGlitchFilter</a>&amp;&amp; rhs);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classfrc_1_1DigitalGlitchFilter.html#af6163362ebbf2cffa51ed17ff3e77c47">   45</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1DigitalGlitchFilter.html#af6163362ebbf2cffa51ed17ff3e77c47">Add</a>(<a class="code" href="classfrc_1_1DigitalSource.html">DigitalSource</a>* input);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classfrc_1_1DigitalGlitchFilter.html#afe7165369b512c79b432e69fd90f01ff">   52</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1DigitalGlitchFilter.html#afe7165369b512c79b432e69fd90f01ff">Add</a>(<a class="code" href="classfrc_1_1Encoder.html">Encoder</a>* input);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classfrc_1_1DigitalGlitchFilter.html#a6ed21dfa19928c4eaed50b852f91373f">   59</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1DigitalGlitchFilter.html#a6ed21dfa19928c4eaed50b852f91373f">Add</a>(<a class="code" href="classfrc_1_1Counter.html">Counter</a>* input);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classfrc_1_1DigitalGlitchFilter.html#a45ac8e992c60675b85b24841ffc959fe">   69</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1DigitalGlitchFilter.html#a45ac8e992c60675b85b24841ffc959fe">Remove</a>(<a class="code" href="classfrc_1_1DigitalSource.html">DigitalSource</a>* input);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="classfrc_1_1DigitalGlitchFilter.html#a3db9857165402e727ed5ff775f827778">   79</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1DigitalGlitchFilter.html#a3db9857165402e727ed5ff775f827778">Remove</a>(<a class="code" href="classfrc_1_1Encoder.html">Encoder</a>* input);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classfrc_1_1DigitalGlitchFilter.html#a69e5aa30d826eae45636027c146b0f7d">   89</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1DigitalGlitchFilter.html#a69e5aa30d826eae45636027c146b0f7d">Remove</a>(<a class="code" href="classfrc_1_1Counter.html">Counter</a>* input);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="classfrc_1_1DigitalGlitchFilter.html#a4f3f02b7b2adaab025a3af9062c37985">   96</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1DigitalGlitchFilter.html#a4f3f02b7b2adaab025a3af9062c37985">SetPeriodCycles</a>(<span class="keywordtype">int</span> fpgaCycles);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="classfrc_1_1DigitalGlitchFilter.html#a17c36c706e056b87e7c997586c1b9c07">  103</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1DigitalGlitchFilter.html#a17c36c706e056b87e7c997586c1b9c07">SetPeriodNanoSeconds</a>(uint64_t nanoseconds);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="classfrc_1_1DigitalGlitchFilter.html#a9f86a67e0cfeb93bc375e57c754a97a4">  110</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classfrc_1_1DigitalGlitchFilter.html#a9f86a67e0cfeb93bc375e57c754a97a4">GetPeriodCycles</a>();</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
-<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="classfrc_1_1DigitalGlitchFilter.html#abaf845355f9610b539e714ea5ab4feb3">  117</a></span>&#160;  uint64_t <a class="code" href="classfrc_1_1DigitalGlitchFilter.html#abaf845355f9610b539e714ea5ab4feb3">GetPeriodNanoSeconds</a>();</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;wpi/sendable/Sendable.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;wpi/sendable/SendableHelper.h&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;frc/DigitalSource.h&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span>frc {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">class </span>Encoder;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">class </span>Counter;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classfrc_1_1DigitalGlitchFilter.html">   29</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1DigitalGlitchFilter.html">DigitalGlitchFilter</a> : <span class="keyword">public</span> <a class="code" href="classwpi_1_1Sendable.html">wpi::Sendable</a>,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                            <span class="keyword">public</span> <a class="code" href="classwpi_1_1SendableHelper.html">wpi::SendableHelper</a>&lt;DigitalGlitchFilter&gt; {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <a class="code" href="classfrc_1_1DigitalGlitchFilter.html">DigitalGlitchFilter</a>();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  ~<a class="code" href="classfrc_1_1DigitalGlitchFilter.html">DigitalGlitchFilter</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <a class="code" href="classfrc_1_1DigitalGlitchFilter.html">DigitalGlitchFilter</a>(<a class="code" href="classfrc_1_1DigitalGlitchFilter.html">DigitalGlitchFilter</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <a class="code" href="classfrc_1_1DigitalGlitchFilter.html">DigitalGlitchFilter</a>&amp; operator=(<a class="code" href="classfrc_1_1DigitalGlitchFilter.html">DigitalGlitchFilter</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classfrc_1_1DigitalGlitchFilter.html#af6163362ebbf2cffa51ed17ff3e77c47">   43</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1DigitalGlitchFilter.html#af6163362ebbf2cffa51ed17ff3e77c47">Add</a>(<a class="code" href="classfrc_1_1DigitalSource.html">DigitalSource</a>* input);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classfrc_1_1DigitalGlitchFilter.html#afe7165369b512c79b432e69fd90f01ff">   50</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1DigitalGlitchFilter.html#afe7165369b512c79b432e69fd90f01ff">Add</a>(<a class="code" href="classfrc_1_1Encoder.html">Encoder</a>* input);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classfrc_1_1DigitalGlitchFilter.html#a6ed21dfa19928c4eaed50b852f91373f">   57</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1DigitalGlitchFilter.html#a6ed21dfa19928c4eaed50b852f91373f">Add</a>(<a class="code" href="classfrc_1_1Counter.html">Counter</a>* input);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classfrc_1_1DigitalGlitchFilter.html#a45ac8e992c60675b85b24841ffc959fe">   67</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1DigitalGlitchFilter.html#a45ac8e992c60675b85b24841ffc959fe">Remove</a>(<a class="code" href="classfrc_1_1DigitalSource.html">DigitalSource</a>* input);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classfrc_1_1DigitalGlitchFilter.html#a3db9857165402e727ed5ff775f827778">   77</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1DigitalGlitchFilter.html#a3db9857165402e727ed5ff775f827778">Remove</a>(<a class="code" href="classfrc_1_1Encoder.html">Encoder</a>* input);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="classfrc_1_1DigitalGlitchFilter.html#a69e5aa30d826eae45636027c146b0f7d">   87</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1DigitalGlitchFilter.html#a69e5aa30d826eae45636027c146b0f7d">Remove</a>(<a class="code" href="classfrc_1_1Counter.html">Counter</a>* input);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="classfrc_1_1DigitalGlitchFilter.html#a4f3f02b7b2adaab025a3af9062c37985">   94</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1DigitalGlitchFilter.html#a4f3f02b7b2adaab025a3af9062c37985">SetPeriodCycles</a>(<span class="keywordtype">int</span> fpgaCycles);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="classfrc_1_1DigitalGlitchFilter.html#a17c36c706e056b87e7c997586c1b9c07">  101</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1DigitalGlitchFilter.html#a17c36c706e056b87e7c997586c1b9c07">SetPeriodNanoSeconds</a>(uint64_t nanoseconds);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="classfrc_1_1DigitalGlitchFilter.html#a9f86a67e0cfeb93bc375e57c754a97a4">  108</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classfrc_1_1DigitalGlitchFilter.html#a9f86a67e0cfeb93bc375e57c754a97a4">GetPeriodCycles</a>();</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="classfrc_1_1DigitalGlitchFilter.html#abaf845355f9610b539e714ea5ab4feb3">  115</a></span>&#160;  uint64_t <a class="code" href="classfrc_1_1DigitalGlitchFilter.html#abaf845355f9610b539e714ea5ab4feb3">GetPeriodNanoSeconds</a>();</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="classfrc_1_1DigitalGlitchFilter.html#a2081022a91b7708c64cb7915283f8ec7">  117</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1DigitalGlitchFilter.html#a2081022a91b7708c64cb7915283f8ec7">InitSendable</a>(<a class="code" href="classwpi_1_1SendableBuilder.html">wpi::SendableBuilder</a>&amp; builder) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
-<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="classfrc_1_1DigitalGlitchFilter.html#a70d47ce23f846109ea8f73103b517cb4">  119</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1DigitalGlitchFilter.html#a70d47ce23f846109ea8f73103b517cb4">InitSendable</a>(<a class="code" href="classfrc_1_1SendableBuilder.html">SendableBuilder</a>&amp; builder) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="comment">// Sets the filter for the input to be the requested index. A value of 0</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <span class="comment">// disables the filter, and the filter value must be between 1 and 3,</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <span class="comment">// inclusive.</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="keywordtype">void</span> DoAdd(<a class="code" href="classfrc_1_1DigitalSource.html">DigitalSource</a>* input, <span class="keywordtype">int</span> requested_index);</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <span class="keywordtype">int</span> m_channelIndex = -1;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <span class="keyword">static</span> wpi::mutex m_mutex;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <span class="keyword">static</span> std::array&lt;bool, 3&gt; m_filterAllocated;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;};</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="comment">// Sets the filter for the input to be the requested index. A value of 0</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <span class="comment">// disables the filter, and the filter value must be between 1 and 3,</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="comment">// inclusive.</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <span class="keywordtype">void</span> DoAdd(<a class="code" href="classfrc_1_1DigitalSource.html">DigitalSource</a>* input, <span class="keywordtype">int</span> requested_index);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="keywordtype">int</span> m_channelIndex = -1;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="keyword">static</span> wpi::mutex m_mutex;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <span class="keyword">static</span> std::array&lt;bool, 3&gt; m_filterAllocated;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;};</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;}  <span class="comment">// namespace frc</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassfrc_1_1DigitalGlitchFilter_html_a69e5aa30d826eae45636027c146b0f7d"><div class="ttname"><a href="classfrc_1_1DigitalGlitchFilter.html#a69e5aa30d826eae45636027c146b0f7d">frc::DigitalGlitchFilter::Remove</a></div><div class="ttdeci">void Remove(Counter *input)</div><div class="ttdoc">Removes a counter from this filter.</div></div>
+<div class="ttc" id="aclasswpi_1_1SendableBuilder_html"><div class="ttname"><a href="classwpi_1_1SendableBuilder.html">wpi::SendableBuilder</a></div><div class="ttdef"><b>Definition:</b> SendableBuilder.h:18</div></div>
 <div class="ttc" id="aclassfrc_1_1DigitalGlitchFilter_html_af6163362ebbf2cffa51ed17ff3e77c47"><div class="ttname"><a href="classfrc_1_1DigitalGlitchFilter.html#af6163362ebbf2cffa51ed17ff3e77c47">frc::DigitalGlitchFilter::Add</a></div><div class="ttdeci">void Add(DigitalSource *input)</div><div class="ttdoc">Assigns the DigitalSource to this glitch filter.</div></div>
 <div class="ttc" id="aclassfrc_1_1DigitalGlitchFilter_html_a4f3f02b7b2adaab025a3af9062c37985"><div class="ttname"><a href="classfrc_1_1DigitalGlitchFilter.html#a4f3f02b7b2adaab025a3af9062c37985">frc::DigitalGlitchFilter::SetPeriodCycles</a></div><div class="ttdeci">void SetPeriodCycles(int fpgaCycles)</div><div class="ttdoc">Sets the number of cycles that the input must not change state for.</div></div>
 <div class="ttc" id="aclassfrc_1_1DigitalGlitchFilter_html_afe7165369b512c79b432e69fd90f01ff"><div class="ttname"><a href="classfrc_1_1DigitalGlitchFilter.html#afe7165369b512c79b432e69fd90f01ff">frc::DigitalGlitchFilter::Add</a></div><div class="ttdeci">void Add(Encoder *input)</div><div class="ttdoc">Assigns the Encoder to this glitch filter.</div></div>
+<div class="ttc" id="aclasswpi_1_1Sendable_html"><div class="ttname"><a href="classwpi_1_1Sendable.html">wpi::Sendable</a></div><div class="ttdoc">Interface for Sendable objects.</div><div class="ttdef"><b>Definition:</b> Sendable.h:14</div></div>
+<div class="ttc" id="aclassfrc_1_1DigitalGlitchFilter_html_a2081022a91b7708c64cb7915283f8ec7"><div class="ttname"><a href="classfrc_1_1DigitalGlitchFilter.html#a2081022a91b7708c64cb7915283f8ec7">frc::DigitalGlitchFilter::InitSendable</a></div><div class="ttdeci">void InitSendable(wpi::SendableBuilder &amp;builder) override</div><div class="ttdoc">Initializes this Sendable object.</div></div>
 <div class="ttc" id="aclassfrc_1_1DigitalGlitchFilter_html_a45ac8e992c60675b85b24841ffc959fe"><div class="ttname"><a href="classfrc_1_1DigitalGlitchFilter.html#a45ac8e992c60675b85b24841ffc959fe">frc::DigitalGlitchFilter::Remove</a></div><div class="ttdeci">void Remove(DigitalSource *input)</div><div class="ttdoc">Removes a digital input from this filter.</div></div>
+<div class="ttc" id="aclasswpi_1_1SendableHelper_html"><div class="ttname"><a href="classwpi_1_1SendableHelper.html">wpi::SendableHelper</a></div><div class="ttdoc">A helper class for use with objects that add themselves to SendableRegistry.</div><div class="ttdef"><b>Definition:</b> SendableHelper.h:24</div></div>
 <div class="ttc" id="aclassfrc_1_1DigitalGlitchFilter_html_a3db9857165402e727ed5ff775f827778"><div class="ttname"><a href="classfrc_1_1DigitalGlitchFilter.html#a3db9857165402e727ed5ff775f827778">frc::DigitalGlitchFilter::Remove</a></div><div class="ttdeci">void Remove(Encoder *input)</div><div class="ttdoc">Removes an encoder from this filter.</div></div>
-<div class="ttc" id="aclassfrc_1_1ErrorBase_html"><div class="ttname"><a href="classfrc_1_1ErrorBase.html">frc::ErrorBase</a></div><div class="ttdoc">Base class for most objects.</div><div class="ttdef"><b>Definition:</b> ErrorBase.h:99</div></div>
 <div class="ttc" id="aclassfrc_1_1DigitalGlitchFilter_html_a9f86a67e0cfeb93bc375e57c754a97a4"><div class="ttname"><a href="classfrc_1_1DigitalGlitchFilter.html#a9f86a67e0cfeb93bc375e57c754a97a4">frc::DigitalGlitchFilter::GetPeriodCycles</a></div><div class="ttdeci">int GetPeriodCycles()</div><div class="ttdoc">Gets the number of cycles that the input must not change state for.</div></div>
-<div class="ttc" id="aclassfrc_1_1DigitalGlitchFilter_html"><div class="ttname"><a href="classfrc_1_1DigitalGlitchFilter.html">frc::DigitalGlitchFilter</a></div><div class="ttdoc">Class to enable glitch filtering on a set of digital inputs.</div><div class="ttdef"><b>Definition:</b> DigitalGlitchFilter.h:32</div></div>
-<div class="ttc" id="aclassfrc_1_1Sendable_html"><div class="ttname"><a href="classfrc_1_1Sendable.html">frc::Sendable</a></div><div class="ttdoc">Interface for Sendable objects.</div><div class="ttdef"><b>Definition:</b> Sendable.h:14</div></div>
+<div class="ttc" id="aclassfrc_1_1DigitalGlitchFilter_html"><div class="ttname"><a href="classfrc_1_1DigitalGlitchFilter.html">frc::DigitalGlitchFilter</a></div><div class="ttdoc">Class to enable glitch filtering on a set of digital inputs.</div><div class="ttdef"><b>Definition:</b> DigitalGlitchFilter.h:30</div></div>
 <div class="ttc" id="aclassfrc_1_1DigitalGlitchFilter_html_a17c36c706e056b87e7c997586c1b9c07"><div class="ttname"><a href="classfrc_1_1DigitalGlitchFilter.html#a17c36c706e056b87e7c997586c1b9c07">frc::DigitalGlitchFilter::SetPeriodNanoSeconds</a></div><div class="ttdeci">void SetPeriodNanoSeconds(uint64_t nanoseconds)</div><div class="ttdoc">Sets the number of nanoseconds that the input must not change state for.</div></div>
-<div class="ttc" id="aclassfrc_1_1Encoder_html"><div class="ttname"><a href="classfrc_1_1Encoder.html">frc::Encoder</a></div><div class="ttdoc">Class to read quad encoders.</div><div class="ttdef"><b>Definition:</b> Encoder.h:45</div></div>
+<div class="ttc" id="aclassfrc_1_1Encoder_html"><div class="ttname"><a href="classfrc_1_1Encoder.html">frc::Encoder</a></div><div class="ttdoc">Class to read quad encoders.</div><div class="ttdef"><b>Definition:</b> Encoder.h:40</div></div>
 <div class="ttc" id="aclassfrc_1_1DigitalGlitchFilter_html_abaf845355f9610b539e714ea5ab4feb3"><div class="ttname"><a href="classfrc_1_1DigitalGlitchFilter.html#abaf845355f9610b539e714ea5ab4feb3">frc::DigitalGlitchFilter::GetPeriodNanoSeconds</a></div><div class="ttdeci">uint64_t GetPeriodNanoSeconds()</div><div class="ttdoc">Gets the number of nanoseconds that the input must not change state for.</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> CameraServer.h:18</div></div>
-<div class="ttc" id="aclassfrc_1_1Counter_html"><div class="ttname"><a href="classfrc_1_1Counter.html">frc::Counter</a></div><div class="ttdoc">Class for counting the number of ticks on a digital input channel.</div><div class="ttdef"><b>Definition:</b> Counter.h:37</div></div>
-<div class="ttc" id="aclassfrc_1_1DigitalGlitchFilter_html_a70d47ce23f846109ea8f73103b517cb4"><div class="ttname"><a href="classfrc_1_1DigitalGlitchFilter.html#a70d47ce23f846109ea8f73103b517cb4">frc::DigitalGlitchFilter::InitSendable</a></div><div class="ttdeci">void InitSendable(SendableBuilder &amp;builder) override</div><div class="ttdoc">Initializes this Sendable object.</div></div>
+<div class="ttc" id="aclassfrc_1_1Counter_html"><div class="ttname"><a href="classfrc_1_1Counter.html">frc::Counter</a></div><div class="ttdoc">Class for counting the number of ticks on a digital input channel.</div><div class="ttdef"><b>Definition:</b> Counter.h:35</div></div>
 <div class="ttc" id="aclassfrc_1_1DigitalSource_html"><div class="ttname"><a href="classfrc_1_1DigitalSource.html">frc::DigitalSource</a></div><div class="ttdoc">DigitalSource Interface.</div><div class="ttdef"><b>Definition:</b> DigitalSource.h:22</div></div>
-<div class="ttc" id="aclassfrc_1_1SendableHelper_html"><div class="ttname"><a href="classfrc_1_1SendableHelper.html">frc::SendableHelper</a></div><div class="ttdoc">A helper class for use with objects that add themselves to SendableRegistry.</div><div class="ttdef"><b>Definition:</b> SendableHelper.h:25</div></div>
-<div class="ttc" id="aclassfrc_1_1SendableBuilder_html"><div class="ttname"><a href="classfrc_1_1SendableBuilder.html">frc::SendableBuilder</a></div><div class="ttdef"><b>Definition:</b> SendableBuilder.h:21</div></div>
 <div class="ttc" id="aclassfrc_1_1DigitalGlitchFilter_html_a6ed21dfa19928c4eaed50b852f91373f"><div class="ttname"><a href="classfrc_1_1DigitalGlitchFilter.html#a6ed21dfa19928c4eaed50b852f91373f">frc::DigitalGlitchFilter::Add</a></div><div class="ttdeci">void Add(Counter *input)</div><div class="ttdoc">Assigns the Counter to this glitch filter.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><b>DigitalGlitchFilter.h</b></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:30 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:05 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -99,20 +99,20 @@ $(document).ready(function(){initNavTree('AngleStatistics_8h_source.html',''); i
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;wpi/math&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;wpi/numbers&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;Eigen/Core&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;frc/MathUtil.h&quot;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacefrc.html">frc</a> {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span>frc {</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">int</span> States&gt;</div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="namespacefrc.html#ac11e2e1a8ea8ca146068546af83b9ef5">   23</a></span>&#160;Eigen::Matrix&lt;double, States, 1&gt; <a class="code" href="namespacefrc.html#ac11e2e1a8ea8ca146068546af83b9ef5">AngleResidual</a>(</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;Eigen::Matrix&lt;double, States, 1&gt; AngleResidual(</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">const</span> Eigen::Matrix&lt;double, States, 1&gt;&amp; a,</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">const</span> Eigen::Matrix&lt;double, States, 1&gt;&amp; b, <span class="keywordtype">int</span> angleStateIdx) {</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  Eigen::Matrix&lt;double, States, 1&gt; ret = a - b;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  ret[angleStateIdx] =</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      <a class="code" href="namespacefrc.html#a42e1ee7c08ceffcf70e362e24988833d">AngleModulus</a>(units::radian_t{ret[angleStateIdx]}).to&lt;double&gt;();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      AngleModulus(units::radian_t{ret[angleStateIdx]}).to&lt;double&gt;();</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordflow">return</span> ret;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
@@ -120,19 +120,19 @@ $(document).ready(function(){initNavTree('AngleStatistics_8h_source.html',''); i
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;std::function&lt;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    Eigen::Matrix&lt;double, States, 1&gt;(<span class="keyword">const</span> Eigen::Matrix&lt;double, States, 1&gt;&amp;,</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                                     <span class="keyword">const</span> Eigen::Matrix&lt;double, States, 1&gt;&amp;)&gt;</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="namespacefrc.html#af78ee6c1817033e5ed35afaf0430287c">   42</a></span>&#160;<a class="code" href="namespacefrc.html#ac11e2e1a8ea8ca146068546af83b9ef5">AngleResidual</a>(<span class="keywordtype">int</span> angleStateIdx) {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;AngleResidual(<span class="keywordtype">int</span> angleStateIdx) {</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordflow">return</span> [=](<span class="keyword">auto</span> a, <span class="keyword">auto</span> b) {</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">return</span> AngleResidual&lt;States&gt;(a, b, angleStateIdx);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  };</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">int</span> States&gt;</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="namespacefrc.html#a2118bce93638381478e1bb8a053fe931">   57</a></span>&#160;Eigen::Matrix&lt;double, States, 1&gt; <a class="code" href="namespacefrc.html#a2118bce93638381478e1bb8a053fe931">AngleAdd</a>(</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;Eigen::Matrix&lt;double, States, 1&gt; AngleAdd(</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">const</span> Eigen::Matrix&lt;double, States, 1&gt;&amp; a,</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">const</span> Eigen::Matrix&lt;double, States, 1&gt;&amp; b, <span class="keywordtype">int</span> angleStateIdx) {</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  Eigen::Matrix&lt;double, States, 1&gt; ret = a + b;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  ret[angleStateIdx] =</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <a class="code" href="namespacefrc.html#aa026a3c3f3053fcafb58c6be2fa589fa">InputModulus</a>(ret[angleStateIdx], -wpi::math::pi, wpi::math::pi);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      InputModulus(ret[angleStateIdx], -wpi::numbers::pi, wpi::numbers::pi);</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordflow">return</span> ret;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
@@ -140,12 +140,12 @@ $(document).ready(function(){initNavTree('AngleStatistics_8h_source.html',''); i
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;std::function&lt;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    Eigen::Matrix&lt;double, States, 1&gt;(<span class="keyword">const</span> Eigen::Matrix&lt;double, States, 1&gt;&amp;,</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                                     <span class="keyword">const</span> Eigen::Matrix&lt;double, States, 1&gt;&amp;)&gt;</div>
-<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="namespacefrc.html#ac823a21582eed0ce9b3d7c261acd191b">   76</a></span>&#160;<a class="code" href="namespacefrc.html#a2118bce93638381478e1bb8a053fe931">AngleAdd</a>(<span class="keywordtype">int</span> angleStateIdx) {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;AngleAdd(<span class="keywordtype">int</span> angleStateIdx) {</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordflow">return</span> [=](<span class="keyword">auto</span> a, <span class="keyword">auto</span> b) { <span class="keywordflow">return</span> AngleAdd&lt;States&gt;(a, b, angleStateIdx); };</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">int</span> CovDim, <span class="keywordtype">int</span> States&gt;</div>
-<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="namespacefrc.html#ac2f4feb1eedd3215ac2b81d33c37a3ed">   89</a></span>&#160;Eigen::Matrix&lt;double, CovDim, 1&gt; <a class="code" href="namespacefrc.html#ac2f4feb1eedd3215ac2b81d33c37a3ed">AngleMean</a>(</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;Eigen::Matrix&lt;double, CovDim, 1&gt; AngleMean(</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keyword">const</span> Eigen::Matrix&lt;double, CovDim, 2 * States + 1&gt;&amp; sigmas,</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keyword">const</span> Eigen::Matrix&lt;double, 2 * States + 1, 1&gt;&amp; Wm, <span class="keywordtype">int</span> angleStatesIdx) {</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordtype">double</span> sumSin = sigmas.row(angleStatesIdx)</div>
@@ -164,7 +164,7 @@ $(document).ready(function(){initNavTree('AngleStatistics_8h_source.html',''); i
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;std::function&lt;Eigen::Matrix&lt;double, CovDim, 1&gt;(</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keyword">const</span> Eigen::Matrix&lt;double, CovDim, 2 * States + 1&gt;&amp;,</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keyword">const</span> Eigen::Matrix&lt;double, 2 * States + 1, 1&gt;&amp;)&gt;</div>
-<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="namespacefrc.html#a3979cb04f11eb6fa34f8dd3f301ef605">  114</a></span>&#160;<a class="code" href="namespacefrc.html#ac2f4feb1eedd3215ac2b81d33c37a3ed">AngleMean</a>(<span class="keywordtype">int</span> angleStateIdx) {</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;AngleMean(<span class="keywordtype">int</span> angleStateIdx) {</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="keywordflow">return</span> [=](<span class="keyword">auto</span> sigmas, <span class="keyword">auto</span> Wm) {</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordflow">return</span> AngleMean&lt;CovDim, States&gt;(sigmas, Wm, angleStateIdx);</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  };</div>
@@ -173,17 +173,11 @@ $(document).ready(function(){initNavTree('AngleStatistics_8h_source.html',''); i
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}  <span class="comment">// namespace frc</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespacefrc_html_ac2f4feb1eedd3215ac2b81d33c37a3ed"><div class="ttname"><a href="namespacefrc.html#ac2f4feb1eedd3215ac2b81d33c37a3ed">frc::AngleMean</a></div><div class="ttdeci">Eigen::Matrix&lt; double, CovDim, 1 &gt; AngleMean(const Eigen::Matrix&lt; double, CovDim, 2 *States+1 &gt; &amp;sigmas, const Eigen::Matrix&lt; double, 2 *States+1, 1 &gt; &amp;Wm, int angleStatesIdx)</div><div class="ttdoc">Computes the mean of sigmas with the weights Wm while computing a special angle mean for a select row...</div><div class="ttdef"><b>Definition:</b> AngleStatistics.h:89</div></div>
-<div class="ttc" id="anamespacefrc_html_aa026a3c3f3053fcafb58c6be2fa589fa"><div class="ttname"><a href="namespacefrc.html#aa026a3c3f3053fcafb58c6be2fa589fa">frc::InputModulus</a></div><div class="ttdeci">constexpr T InputModulus(T input, T minimumInput, T maximumInput)</div><div class="ttdoc">Returns modulus of input.</div><div class="ttdef"><b>Definition:</b> MathUtil.h:21</div></div>
-<div class="ttc" id="anamespacefrc_html_ac11e2e1a8ea8ca146068546af83b9ef5"><div class="ttname"><a href="namespacefrc.html#ac11e2e1a8ea8ca146068546af83b9ef5">frc::AngleResidual</a></div><div class="ttdeci">Eigen::Matrix&lt; double, States, 1 &gt; AngleResidual(const Eigen::Matrix&lt; double, States, 1 &gt; &amp;a, const Eigen::Matrix&lt; double, States, 1 &gt; &amp;b, int angleStateIdx)</div><div class="ttdoc">Subtracts a and b while normalizing the resulting value in the selected row as if it were an angle.</div><div class="ttdef"><b>Definition:</b> AngleStatistics.h:23</div></div>
-<div class="ttc" id="anamespacefrc_html_a2118bce93638381478e1bb8a053fe931"><div class="ttname"><a href="namespacefrc.html#a2118bce93638381478e1bb8a053fe931">frc::AngleAdd</a></div><div class="ttdeci">Eigen::Matrix&lt; double, States, 1 &gt; AngleAdd(const Eigen::Matrix&lt; double, States, 1 &gt; &amp;a, const Eigen::Matrix&lt; double, States, 1 &gt; &amp;b, int angleStateIdx)</div><div class="ttdoc">Adds a and b while normalizing the resulting value in the selected row as an angle.</div><div class="ttdef"><b>Definition:</b> AngleStatistics.h:57</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> CameraServer.h:18</div></div>
-<div class="ttc" id="anamespacefrc_html_a42e1ee7c08ceffcf70e362e24988833d"><div class="ttname"><a href="namespacefrc.html#a42e1ee7c08ceffcf70e362e24988833d">frc::AngleModulus</a></div><div class="ttdeci">constexpr units::radian_t AngleModulus(units::radian_t angle)</div><div class="ttdoc">Wraps an angle to the range -pi to pi radians (-180 to 180 degrees).</div><div class="ttdef"><b>Definition:</b> MathUtil.h:40</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_7b4a0634315f7993a48b0e5d4ddcc644.html">estimator</a></li><li class="navelem"><b>AngleStatistics.h</b></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:30 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:06 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

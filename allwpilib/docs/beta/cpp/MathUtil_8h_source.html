@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -99,14 +99,14 @@ $(document).ready(function(){initNavTree('MathUtil_8h_source.html',''); initResi
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;wpi/math&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;wpi/numbers&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;units/angle.h&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacefrc.html">frc</a> {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>frc {</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="namespacefrc.html#aa026a3c3f3053fcafb58c6be2fa589fa">   21</a></span>&#160;constexpr T <a class="code" href="namespacefrc.html#aa026a3c3f3053fcafb58c6be2fa589fa">InputModulus</a>(T input, T minimumInput, T maximumInput) {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;constexpr T InputModulus(T input, T minimumInput, T maximumInput) {</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  T modulus = maximumInput - minimumInput;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="comment">// Wrap input if it&#39;s above the maximum input</span></div>
@@ -120,22 +120,20 @@ $(document).ready(function(){initNavTree('MathUtil_8h_source.html',''); initResi
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordflow">return</span> input;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="namespacefrc.html#a42e1ee7c08ceffcf70e362e24988833d">   40</a></span>&#160;constexpr units::radian_t <a class="code" href="namespacefrc.html#a42e1ee7c08ceffcf70e362e24988833d">AngleModulus</a>(units::radian_t angle) {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordflow">return</span> InputModulus&lt;units::radian_t&gt;(angle, units::radian_t{-wpi::math::pi},</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                                       units::radian_t{wpi::math::pi});</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;constexpr units::radian_t AngleModulus(units::radian_t angle) {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordflow">return</span> InputModulus&lt;units::radian_t&gt;(angle,</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                                       units::radian_t{-wpi::numbers::pi},</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                                       units::radian_t{wpi::numbers::pi});</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}  <span class="comment">// namespace frc</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespacefrc_html_aa026a3c3f3053fcafb58c6be2fa589fa"><div class="ttname"><a href="namespacefrc.html#aa026a3c3f3053fcafb58c6be2fa589fa">frc::InputModulus</a></div><div class="ttdeci">constexpr T InputModulus(T input, T minimumInput, T maximumInput)</div><div class="ttdoc">Returns modulus of input.</div><div class="ttdef"><b>Definition:</b> MathUtil.h:21</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> CameraServer.h:18</div></div>
-<div class="ttc" id="anamespacefrc_html_a42e1ee7c08ceffcf70e362e24988833d"><div class="ttname"><a href="namespacefrc.html#a42e1ee7c08ceffcf70e362e24988833d">frc::AngleModulus</a></div><div class="ttdeci">constexpr units::radian_t AngleModulus(units::radian_t angle)</div><div class="ttdoc">Wraps an angle to the range -pi to pi radians (-180 to 180 degrees).</div><div class="ttdef"><b>Definition:</b> MathUtil.h:40</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><b>MathUtil.h</b></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:30 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:06 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

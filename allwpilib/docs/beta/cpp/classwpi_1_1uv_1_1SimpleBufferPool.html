@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -121,9 +121,9 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="classwpi_1_1uv_1_1Buffer.html">Buffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1uv_1_1SimpleBufferPool.html#a02904cac6d769a954eff53c8f5bfc986">operator()</a> ()</td></tr>
 <tr class="memdesc:a02904cac6d769a954eff53c8f5bfc986"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a buffer. <br /></td></tr>
 <tr class="separator:a02904cac6d769a954eff53c8f5bfc986"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a955080bb90f861d10bf51ecefac3972a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1uv_1_1SimpleBufferPool.html#a955080bb90f861d10bf51ecefac3972a">Release</a> (<a class="el" href="classwpi_1_1MutableArrayRef.html">MutableArrayRef</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">Buffer</a> &gt; bufs)</td></tr>
-<tr class="memdesc:a955080bb90f861d10bf51ecefac3972a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release allocated buffers back into the pool.  <a href="classwpi_1_1uv_1_1SimpleBufferPool.html#a955080bb90f861d10bf51ecefac3972a">More...</a><br /></td></tr>
-<tr class="separator:a955080bb90f861d10bf51ecefac3972a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a290f49dc7584544870199c7a59771a53"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1uv_1_1SimpleBufferPool.html#a290f49dc7584544870199c7a59771a53">Release</a> (<a class="el" href="classwpi_1_1span.html">span</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">Buffer</a> &gt; bufs)</td></tr>
+<tr class="memdesc:a290f49dc7584544870199c7a59771a53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release allocated buffers back into the pool.  <a href="classwpi_1_1uv_1_1SimpleBufferPool.html#a290f49dc7584544870199c7a59771a53">More...</a><br /></td></tr>
+<tr class="separator:a290f49dc7584544870199c7a59771a53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b4e0ba2915b50773cb0a8957ab50882"><td class="memItemLeft" align="right" valign="top"><a id="a4b4e0ba2915b50773cb0a8957ab50882"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1uv_1_1SimpleBufferPool.html#a4b4e0ba2915b50773cb0a8957ab50882">Clear</a> ()</td></tr>
 <tr class="memdesc:a4b4e0ba2915b50773cb0a8957ab50882"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the pool, releasing all buffers. <br /></td></tr>
@@ -182,8 +182,8 @@ template&lt;size_t DEPTH = 4&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a955080bb90f861d10bf51ecefac3972a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a955080bb90f861d10bf51ecefac3972a">&#9670;&nbsp;</a></span>Release()</h2>
+<a id="a290f49dc7584544870199c7a59771a53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a290f49dc7584544870199c7a59771a53">&#9670;&nbsp;</a></span>Release()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -196,7 +196,7 @@ template&lt;size_t DEPTH = 4&gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classwpi_1_1uv_1_1SimpleBufferPool.html">wpi::uv::SimpleBufferPool</a>&lt; DEPTH &gt;::Release </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1MutableArrayRef.html">MutableArrayRef</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">Buffer</a> &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">span</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">Buffer</a> &gt;&#160;</td>
           <td class="paramname"><em>bufs</em></td><td>)</td>
           <td></td>
         </tr>
@@ -222,7 +222,7 @@ template&lt;size_t DEPTH = 4&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>wpi</b></li><li class="navelem"><b>uv</b></li><li class="navelem"><a class="el" href="classwpi_1_1uv_1_1SimpleBufferPool.html">SimpleBufferPool</a></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:35 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:11 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

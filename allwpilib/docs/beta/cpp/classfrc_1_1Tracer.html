@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -116,9 +116,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Tracer.html#a10e77dcf5901f3d282b8cc5ac5d6721f">ClearEpochs</a> ()</td></tr>
 <tr class="memdesc:a10e77dcf5901f3d282b8cc5ac5d6721f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears all epochs. <br /></td></tr>
 <tr class="separator:a10e77dcf5901f3d282b8cc5ac5d6721f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7988e470eb2d877afc1083f746ba7342"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Tracer.html#a7988e470eb2d877afc1083f746ba7342">AddEpoch</a> (<a class="el" href="classwpi_1_1StringRef.html">wpi::StringRef</a> epochName)</td></tr>
-<tr class="memdesc:a7988e470eb2d877afc1083f746ba7342"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds time since last epoch to the list printed by <a class="el" href="classfrc_1_1Tracer.html#aef00dedf464031fbae3612d99c257131" title="Prints list of epochs added so far and their times to the DriverStation.">PrintEpochs()</a>.  <a href="classfrc_1_1Tracer.html#a7988e470eb2d877afc1083f746ba7342">More...</a><br /></td></tr>
-<tr class="separator:a7988e470eb2d877afc1083f746ba7342"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c72ac3ae4669a740bf4f2fd5eedf0d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Tracer.html#a0c72ac3ae4669a740bf4f2fd5eedf0d0">AddEpoch</a> (std::string_view epochName)</td></tr>
+<tr class="memdesc:a0c72ac3ae4669a740bf4f2fd5eedf0d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds time since last epoch to the list printed by <a class="el" href="classfrc_1_1Tracer.html#aef00dedf464031fbae3612d99c257131" title="Prints list of epochs added so far and their times to the DriverStation.">PrintEpochs()</a>.  <a href="classfrc_1_1Tracer.html#a0c72ac3ae4669a740bf4f2fd5eedf0d0">More...</a><br /></td></tr>
+<tr class="separator:a0c72ac3ae4669a740bf4f2fd5eedf0d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef00dedf464031fbae3612d99c257131"><td class="memItemLeft" align="right" valign="top"><a id="aef00dedf464031fbae3612d99c257131"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Tracer.html#aef00dedf464031fbae3612d99c257131">PrintEpochs</a> ()</td></tr>
 <tr class="memdesc:aef00dedf464031fbae3612d99c257131"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints list of epochs added so far and their times to the <a class="el" href="classfrc_1_1DriverStation.html" title="Provide access to the network communication data to / from the Driver Station.">DriverStation</a>. <br /></td></tr>
@@ -129,11 +129,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class for keeping track of how much time it takes for different parts of code to execute. </p>
-<p>This is done with epochs, that are added to calls to <a class="el" href="classfrc_1_1Tracer.html#a7988e470eb2d877afc1083f746ba7342" title="Adds time since last epoch to the list printed by PrintEpochs().">AddEpoch()</a> and can be printed with a call to <a class="el" href="classfrc_1_1Tracer.html#aef00dedf464031fbae3612d99c257131" title="Prints list of epochs added so far and their times to the DriverStation.">PrintEpochs()</a>.</p>
+<p>This is done with epochs, that are added to calls to <a class="el" href="classfrc_1_1Tracer.html#a0c72ac3ae4669a740bf4f2fd5eedf0d0" title="Adds time since last epoch to the list printed by PrintEpochs().">AddEpoch()</a> and can be printed with a call to <a class="el" href="classfrc_1_1Tracer.html#aef00dedf464031fbae3612d99c257131" title="Prints list of epochs added so far and their times to the DriverStation.">PrintEpochs()</a>.</p>
 <p>Epochs are a way to partition the time elapsed so that when overruns occur, one can determine which parts of an operation consumed the most time. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a7988e470eb2d877afc1083f746ba7342"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7988e470eb2d877afc1083f746ba7342">&#9670;&nbsp;</a></span>AddEpoch()</h2>
+<a id="a0c72ac3ae4669a740bf4f2fd5eedf0d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c72ac3ae4669a740bf4f2fd5eedf0d0">&#9670;&nbsp;</a></span>AddEpoch()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -141,7 +141,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         <tr>
           <td class="memname">void frc::Tracer::AddEpoch </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1StringRef.html">wpi::StringRef</a>&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>epochName</em></td><td>)</td>
           <td></td>
         </tr>
@@ -193,8 +193,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1Tracer.html">Tracer</a></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:32 for WPILibC++ by
+    <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1Tracer.html">Tracer</a></li>
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:09 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

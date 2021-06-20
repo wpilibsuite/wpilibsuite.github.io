@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -356,7 +356,7 @@ $(document).ready(function(){initNavTree('SmallVector_8h_source.html',''); initR
 <div class="line"><a name="l00302"></a><span class="lineno"><a class="line" href="classwpi_1_1SmallVectorTemplateBase_3_01T_00_01true_01_4.html#a5be1d5a7e0a645d15b38ce3ef9ca9946">  302</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classwpi_1_1SmallVectorTemplateBase_3_01T_00_01true_01_4.html#a5be1d5a7e0a645d15b38ce3ef9ca9946">uninitialized_copy</a>(</div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;      T1 *I, T1 *E, T2 *Dest,</div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;      <span class="keyword">typename</span> std::enable_if&lt;std::is_same&lt;<span class="keyword">typename</span> std::remove_const&lt;T1&gt;::type,</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;                                           T2&gt;::value&gt;::type * = <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;                                           T2&gt;::<a class="code" href="classvalue.html">value</a>&gt;::type * = <span class="keyword">nullptr</span>) {</div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="comment">// Use memcpy for PODs iterated by pointers (which includes SmallVector</span></div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <span class="comment">// iterators): std::uninitialized_copy optimizes to memmove, but we can</span></div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="comment">// use memcpy here. Note that I and E are iterators and thus might be</span></div>
@@ -390,7 +390,7 @@ $(document).ready(function(){initNavTree('SmallVector_8h_source.html',''); initR
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;<span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;  <span class="comment">// Default ctor - Initialize to empty.</span></div>
 <div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;  <span class="keyword">explicit</span> SmallVectorImpl(<span class="keywordtype">unsigned</span> N)</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;      : SmallVectorTemplateBase&lt;T, isPodLike&lt;T&gt;::value&gt;(N) {}</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;      : SmallVectorTemplateBase&lt;T, isPodLike&lt;T&gt;::<a class="code" href="classvalue.html">value</a>&gt;(N) {}</div>
 <div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160; </div>
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;  SmallVectorImpl(<span class="keyword">const</span> SmallVectorImpl &amp;) = <span class="keyword">delete</span>;</div>
@@ -448,7 +448,7 @@ $(document).ready(function(){initNavTree('SmallVector_8h_source.html',''); initR
 <div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> in_iter,</div>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;            <span class="keyword">typename</span> = <span class="keyword">typename</span> std::enable_if&lt;std::is_convertible&lt;</div>
 <div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;                <span class="keyword">typename</span> std::iterator_traits&lt;in_iter&gt;::iterator_category,</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;                std::input_iterator_tag&gt;::value&gt;::type&gt;</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;                std::input_iterator_tag&gt;<a class="code" href="classvalue.html">::value</a>&gt;::type&gt;</div>
 <div class="line"><a name="l00403"></a><span class="lineno"><a class="line" href="classwpi_1_1SmallVectorImpl.html#a4dad2e14e08cfed58a451cb8380304a4">  403</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classwpi_1_1SmallVectorImpl.html#a4dad2e14e08cfed58a451cb8380304a4">append</a>(in_iter in_start, in_iter in_end) {</div>
 <div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    size_type NumInputs = std::distance(in_start, in_end);</div>
 <div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    <span class="comment">// Grow allocated space if needed.</span></div>
@@ -488,7 +488,7 @@ $(document).ready(function(){initNavTree('SmallVector_8h_source.html',''); initR
 <div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> in_iter,</div>
 <div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;            <span class="keyword">typename</span> = <span class="keyword">typename</span> std::enable_if&lt;std::is_convertible&lt;</div>
 <div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;                <span class="keyword">typename</span> std::iterator_traits&lt;in_iter&gt;::iterator_category,</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;                std::input_iterator_tag&gt;::value&gt;::type&gt;</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;                std::input_iterator_tag&gt;<a class="code" href="classvalue.html">::value</a>&gt;::type&gt;</div>
 <div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;  <span class="keywordtype">void</span> assign(in_iter in_start, in_iter in_end) {</div>
 <div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;    clear();</div>
 <div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;    append(in_start, in_end);</div>
@@ -645,7 +645,7 @@ $(document).ready(function(){initNavTree('SmallVector_8h_source.html',''); initR
 <div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> ItTy,</div>
 <div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;            <span class="keyword">typename</span> = <span class="keyword">typename</span> std::enable_if&lt;std::is_convertible&lt;</div>
 <div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;                <span class="keyword">typename</span> std::iterator_traits&lt;ItTy&gt;::iterator_category,</div>
-<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;                std::input_iterator_tag&gt;::value&gt;::type&gt;</div>
+<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;                std::input_iterator_tag&gt;<a class="code" href="classvalue.html">::value</a>&gt;::type&gt;</div>
 <div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;  iterator insert(iterator I, ItTy From, ItTy To) {</div>
 <div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;    <span class="comment">// Convert iterator to elt# to avoid invalidating iterator when we reserve()</span></div>
 <div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;    <span class="keywordtype">size_t</span> InsertElt = I - this-&gt;begin();</div>
@@ -719,13 +719,13 @@ $(document).ready(function(){initNavTree('SmallVector_8h_source.html',''); initR
 <div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160; </div>
 <div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;  <span class="keywordtype">bool</span> operator==(const SmallVectorImpl &amp;RHS)<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;    <span class="keywordflow">if</span> (this-&gt;size() != RHS.size()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;    <span class="keywordflow">return</span> std::equal(this-&gt;begin(), this-&gt;end(), RHS.<a class="code" href="classwpi_1_1sys_1_1path_1_1const__iterator.html#a88c072843122519fd4f3547f2a0ab178">begin</a>());</div>
+<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;    <span class="keywordflow">return</span> std::equal(this-&gt;begin(), this-&gt;end(), RHS.begin());</div>
 <div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;  }</div>
 <div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;  <span class="keywordtype">bool</span> operator!=(<span class="keyword">const</span> SmallVectorImpl &amp;RHS)<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;    <span class="keywordflow">return</span> !(*<span class="keyword">this</span> == RHS);</div>
 <div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;  }</div>
 <div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160; </div>
-<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="namespacewpi_1_1detail.html#ae0ba1341aee62171fc05eed5b2d973f2">operator&lt;</a>(<span class="keyword">const</span> SmallVectorImpl &amp;RHS)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;  <span class="keywordtype">bool</span> operator&lt;(<span class="keyword">const</span> SmallVectorImpl &amp;RHS)<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;    <span class="keywordflow">return</span> std::lexicographical_compare(this-&gt;begin(), this-&gt;end(),</div>
 <div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;                                        RHS.begin(), RHS.end());</div>
 <div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;  }</div>
@@ -905,7 +905,7 @@ $(document).ready(function(){initNavTree('SmallVector_8h_source.html',''); initR
 <div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> ItTy,</div>
 <div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;            <span class="keyword">typename</span> = <span class="keyword">typename</span> std::enable_if&lt;std::is_convertible&lt;</div>
 <div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;                <span class="keyword">typename</span> std::iterator_traits&lt;ItTy&gt;::iterator_category,</div>
-<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;                std::input_iterator_tag&gt;::value&gt;::type&gt;</div>
+<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;                std::input_iterator_tag&gt;<a class="code" href="classvalue.html">::value</a>&gt;::type&gt;</div>
 <div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;  <a class="code" href="classwpi_1_1SmallVector.html">SmallVector</a>(ItTy S, ItTy E) : <a class="code" href="classwpi_1_1SmallVectorImpl.html">SmallVectorImpl&lt;T&gt;</a>(N) {</div>
 <div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;    this-&gt;append(S, E);</div>
 <div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;  }</div>
@@ -985,9 +985,10 @@ $(document).ready(function(){initNavTree('SmallVector_8h_source.html',''); initR
 <div class="ttc" id="aclasswpi_1_1SmallVectorTemplateCommon_html_a2871c9040cf926eef1a5e7f952dbc408"><div class="ttname"><a href="classwpi_1_1SmallVectorTemplateCommon.html#a2871c9040cf926eef1a5e7f952dbc408">wpi::SmallVectorTemplateCommon::resetToSmall</a></div><div class="ttdeci">void resetToSmall()</div><div class="ttdoc">Put this vector in a state of being small.</div><div class="ttdef"><b>Definition:</b> SmallVector.h:116</div></div>
 <div class="ttc" id="aclasswpi_1_1SmallVectorTemplateBase_3_01T_00_01true_01_4_html_ad05819adc6821e304e3e9ae2b5388bc0"><div class="ttname"><a href="classwpi_1_1SmallVectorTemplateBase_3_01T_00_01true_01_4.html#ad05819adc6821e304e3e9ae2b5388bc0">wpi::SmallVectorTemplateBase&lt; T, true &gt;::uninitialized_copy</a></div><div class="ttdeci">static void uninitialized_copy(It1 I, It1 E, It2 Dest)</div><div class="ttdoc">Copy the range [I, E) onto the uninitialized memory starting with &quot;Dest&quot;, constructing elements into ...</div><div class="ttdef"><b>Definition:</b> SmallVector.h:294</div></div>
 <div class="ttc" id="aclasswpi_1_1SmallVectorTemplateBase_3_01T_00_01true_01_4_html_a5be1d5a7e0a645d15b38ce3ef9ca9946"><div class="ttname"><a href="classwpi_1_1SmallVectorTemplateBase_3_01T_00_01true_01_4.html#a5be1d5a7e0a645d15b38ce3ef9ca9946">wpi::SmallVectorTemplateBase&lt; T, true &gt;::uninitialized_copy</a></div><div class="ttdeci">static void uninitialized_copy(T1 *I, T1 *E, T2 *Dest, typename std::enable_if&lt; std::is_same&lt; typename std::remove_const&lt; T1 &gt;::type, T2 &gt;::value &gt;::type *=nullptr)</div><div class="ttdoc">Copy the range [I, E) onto the uninitialized memory starting with &quot;Dest&quot;, constructing elements into ...</div><div class="ttdef"><b>Definition:</b> SmallVector.h:302</div></div>
+<div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1099</div></div>
 <div class="ttc" id="aclasswpi_1_1SmallVectorTemplateBase_html_a09d88ee0240540df3fb19ce2232c55d5"><div class="ttname"><a href="classwpi_1_1SmallVectorTemplateBase.html#a09d88ee0240540df3fb19ce2232c55d5">wpi::SmallVectorTemplateBase::uninitialized_move</a></div><div class="ttdeci">static void uninitialized_move(It1 I, It1 E, It2 Dest)</div><div class="ttdoc">Move the range [I, E) into the uninitialized memory starting with &quot;Dest&quot;, constructing elements as ne...</div><div class="ttdef"><b>Definition:</b> SmallVector.h:209</div></div>
 <div class="ttc" id="aclasswpi_1_1SmallVectorTemplateCommon_html"><div class="ttname"><a href="classwpi_1_1SmallVectorTemplateCommon.html">wpi::SmallVectorTemplateCommon</a></div><div class="ttdoc">This is the part of SmallVectorTemplateBase which does not depend on whether the type T is a POD.</div><div class="ttdef"><b>Definition:</b> SmallVector.h:92</div></div>
-<div class="ttc" id="aclasswpi_1_1SmallVectorImpl_html"><div class="ttname"><a href="classwpi_1_1SmallVectorImpl.html">wpi::SmallVectorImpl</a></div><div class="ttdoc">This class consists of common code factored out of the SmallVector class to reduce code duplication b...</div><div class="ttdef"><b>Definition:</b> sha1.h:31</div></div>
+<div class="ttc" id="aclasswpi_1_1SmallVectorImpl_html"><div class="ttname"><a href="classwpi_1_1SmallVectorImpl.html">wpi::SmallVectorImpl</a></div><div class="ttdoc">This class consists of common code factored out of the SmallVector class to reduce code duplication b...</div><div class="ttdef"><b>Definition:</b> Base64.h:14</div></div>
 <div class="ttc" id="aclasswpi_1_1SmallVectorBase_html_a122197c35d81153116836ebc575eb75e"><div class="ttname"><a href="classwpi_1_1SmallVectorBase.html#a122197c35d81153116836ebc575eb75e">wpi::SmallVectorBase::grow_pod</a></div><div class="ttdeci">void grow_pod(void *FirstEl, size_t MinCapacity, size_t TSize)</div><div class="ttdoc">This is an implementation of the grow() method which only works on POD-like data types and is out of ...</div></div>
 <div class="ttc" id="aclasswpi_1_1SmallVectorImpl_html_ae0932ee9e9c857ba10836ad4ef74541f"><div class="ttname"><a href="classwpi_1_1SmallVectorImpl.html#ae0932ee9e9c857ba10836ad4ef74541f">wpi::SmallVectorImpl::append</a></div><div class="ttdeci">void append(size_type NumInputs, const T &amp;Elt)</div><div class="ttdoc">Add the specified range to the end of the SmallVector.</div><div class="ttdef"><b>Definition:</b> SmallVector.h:415</div></div>
 <div class="ttc" id="astructwpi_1_1AlignedCharArrayUnion_html"><div class="ttname"><a href="structwpi_1_1AlignedCharArrayUnion.html">wpi::AlignedCharArrayUnion</a></div><div class="ttdoc">This union template exposes a suitably aligned and sized character array member which can hold elemen...</div><div class="ttdef"><b>Definition:</b> AlignOf.h:142</div></div>
@@ -995,7 +996,6 @@ $(document).ready(function(){initNavTree('SmallVector_8h_source.html',''); initR
 <div class="ttc" id="aclasswpi_1_1iterator__range_html"><div class="ttname"><a href="classwpi_1_1iterator__range.html">wpi::iterator_range</a></div><div class="ttdoc">A range adaptor for a pair of iterators.</div><div class="ttdef"><b>Definition:</b> iterator_range.h:32</div></div>
 <div class="ttc" id="aMemAlloc_8h_html"><div class="ttname"><a href="MemAlloc_8h.html">MemAlloc.h</a></div></div>
 <div class="ttc" id="aclasswpi_1_1SmallVectorTemplateCommon_html_a407d9019bf8ff07d493b57e89924ebb0"><div class="ttname"><a href="classwpi_1_1SmallVectorTemplateCommon.html#a407d9019bf8ff07d493b57e89924ebb0">wpi::SmallVectorTemplateCommon::data</a></div><div class="ttdeci">pointer data()</div><div class="ttdoc">Return a pointer to the vector's buffer, even if empty().</div><div class="ttdef"><b>Definition:</b> SmallVector.h:158</div></div>
-<div class="ttc" id="anamespacewpi_1_1detail_html_ae0ba1341aee62171fc05eed5b2d973f2"><div class="ttname"><a href="namespacewpi_1_1detail.html#ae0ba1341aee62171fc05eed5b2d973f2">wpi::detail::operator&lt;</a></div><div class="ttdeci">bool operator&lt;(const value_t lhs, const value_t rhs) noexcept</div><div class="ttdoc">comparison operator for JSON types</div><div class="ttdef"><b>Definition:</b> json.h:724</div></div>
 <div class="ttc" id="aclasswpi_1_1SmallVectorBase_html"><div class="ttname"><a href="classwpi_1_1SmallVectorBase.html">wpi::SmallVectorBase</a></div><div class="ttdoc">This is all the non-templated stuff common to all SmallVectors.</div><div class="ttdef"><b>Definition:</b> SmallVector.h:46</div></div>
 <div class="ttc" id="aclasswpi_1_1SmallVectorTemplateCommon_html_a40139f0869af5595338d800d5a428396"><div class="ttname"><a href="classwpi_1_1SmallVectorTemplateCommon.html#a40139f0869af5595338d800d5a428396">wpi::SmallVectorTemplateCommon::data</a></div><div class="ttdeci">const_pointer data() const</div><div class="ttdoc">Return a pointer to the vector's buffer, even if empty().</div><div class="ttdef"><b>Definition:</b> SmallVector.h:160</div></div>
 <div class="ttc" id="aclasswpi_1_1SmallVectorTemplateBase_html"><div class="ttname"><a href="classwpi_1_1SmallVectorTemplateBase.html">wpi::SmallVectorTemplateBase</a></div><div class="ttdoc">SmallVectorTemplateBase&lt;isPodLike = false&gt; - This is where we put method implementations that are des...</div><div class="ttdef"><b>Definition:</b> SmallVector.h:195</div></div>
@@ -1003,7 +1003,6 @@ $(document).ready(function(){initNavTree('SmallVector_8h_source.html',''); initR
 <div class="ttc" id="aiterator__range_8h_html"><div class="ttname"><a href="iterator__range_8h.html">iterator_range.h</a></div></div>
 <div class="ttc" id="aclasswpi_1_1SmallVectorTemplateCommon_html_a7f840f36785d9897e4188b3b22b245f1"><div class="ttname"><a href="classwpi_1_1SmallVectorTemplateCommon.html#a7f840f36785d9897e4188b3b22b245f1">wpi::SmallVectorTemplateCommon::isSmall</a></div><div class="ttdeci">bool isSmall() const</div><div class="ttdoc">Return true if this is a smallvector which has not had dynamic memory allocated for it.</div><div class="ttdef"><b>Definition:</b> SmallVector.h:113</div></div>
 <div class="ttc" id="astructwpi_1_1SmallVectorStorage_html"><div class="ttname"><a href="structwpi_1_1SmallVectorStorage.html">wpi::SmallVectorStorage</a></div><div class="ttdoc">Storage for the SmallVector elements.</div><div class="ttdef"><b>Definition:</b> SmallVector.h:838</div></div>
-<div class="ttc" id="aclasswpi_1_1sys_1_1path_1_1const__iterator_html_a88c072843122519fd4f3547f2a0ab178"><div class="ttname"><a href="classwpi_1_1sys_1_1path_1_1const__iterator.html#a88c072843122519fd4f3547f2a0ab178">wpi::sys::path::const_iterator::begin</a></div><div class="ttdeci">friend const_iterator begin(StringRef path, Style style)</div><div class="ttdoc">Get begin iterator over path.</div></div>
 <div class="ttc" id="aclasswpi_1_1SmallVectorTemplateBase_3_01T_00_01true_01_4_html_a94a91563b4c127280cfa16e8ee38c2b1"><div class="ttname"><a href="classwpi_1_1SmallVectorTemplateBase_3_01T_00_01true_01_4.html#a94a91563b4c127280cfa16e8ee38c2b1">wpi::SmallVectorTemplateBase&lt; T, true &gt;::grow</a></div><div class="ttdeci">void grow(size_t MinSize=0)</div><div class="ttdoc">Double the size of the allocated memory, guaranteeing space for at least one more element or MinSize ...</div><div class="ttdef"><b>Definition:</b> SmallVector.h:316</div></div>
 <div class="ttc" id="aclasswpi_1_1SmallVectorImpl_html_a4dad2e14e08cfed58a451cb8380304a4"><div class="ttname"><a href="classwpi_1_1SmallVectorImpl.html#a4dad2e14e08cfed58a451cb8380304a4">wpi::SmallVectorImpl::append</a></div><div class="ttdeci">void append(in_iter in_start, in_iter in_end)</div><div class="ttdoc">Add the specified range to the end of the SmallVector.</div><div class="ttdef"><b>Definition:</b> SmallVector.h:403</div></div>
 <div class="ttc" id="aclasswpi_1_1SmallVector_html"><div class="ttname"><a href="classwpi_1_1SmallVector.html">wpi::SmallVector</a></div><div class="ttdoc">This is a 'vector' (really, a variable-sized array), optimized for the case when the array is small.</div><div class="ttdef"><b>Definition:</b> SmallVector.h:856</div></div>
@@ -1014,7 +1013,7 @@ $(document).ready(function(){initNavTree('SmallVector_8h_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><b>SmallVector.h</b></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:31 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:07 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

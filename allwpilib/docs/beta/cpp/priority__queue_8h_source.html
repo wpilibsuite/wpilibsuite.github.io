@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -158,13 +158,13 @@ $(document).ready(function(){initNavTree('priority__queue_8h_source.html',''); i
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  const_reference top()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> c.front(); }</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">void</span> push(<span class="keyword">const</span> value_type&amp; value) {</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    c.push_back(value);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">void</span> push(<span class="keyword">const</span> value_type&amp; <a class="code" href="classvalue.html">value</a>) {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    c.push_back(<a class="code" href="classvalue.html">value</a>);</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    std::push_heap(c.begin(), c.end(), comp);</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  }</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordtype">void</span> push(value_type&amp;&amp; value) {</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    c.push_back(std::move(value));</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordtype">void</span> push(value_type&amp;&amp; <a class="code" href="classvalue.html">value</a>) {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    c.push_back(std::move(<a class="code" href="classvalue.html">value</a>));</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    std::push_heap(c.begin(), c.end(), comp);</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  }</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
@@ -181,8 +181,8 @@ $(document).ready(function(){initNavTree('priority__queue_8h_source.html',''); i
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">return</span> ret;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  }</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordtype">bool</span> remove(<span class="keyword">const</span> T&amp; value) {</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keyword">auto</span> it = std::find(c.begin(), c.end(), value);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordtype">bool</span> remove(<span class="keyword">const</span> T&amp; <a class="code" href="classvalue.html">value</a>) {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keyword">auto</span> it = std::find(c.begin(), c.end(), <a class="code" href="classvalue.html">value</a>);</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">if</span> (it != this-&gt;c.end()) {</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      c.erase(it);</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      std::make_heap(c.begin(), c.end(), comp);</div>
@@ -203,11 +203,12 @@ $(document).ready(function(){initNavTree('priority__queue_8h_source.html',''); i
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclasswpi_1_1priority__queue_html"><div class="ttname"><a href="classwpi_1_1priority__queue.html">wpi::priority_queue</a></div><div class="ttdoc">This class is the same as std::priority_queue with two changes:</div><div class="ttdef"><b>Definition:</b> priority_queue.h:25</div></div>
+<div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1099</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><b>priority_queue.h</b></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:31 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:07 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

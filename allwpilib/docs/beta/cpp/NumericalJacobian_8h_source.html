@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -101,10 +101,10 @@ $(document).ready(function(){initNavTree('NumericalJacobian_8h_source.html','');
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;Eigen/Core&quot;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacefrc.html">frc</a> {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>frc {</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">int</span> Rows, <span class="keywordtype">int</span> Cols, <span class="keyword">typename</span> F&gt;</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="namespacefrc.html#a3c68fe32c5c08f1ae28571767df3dff3">   20</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="namespacefrc.html#a3c68fe32c5c08f1ae28571767df3dff3">NumericalJacobian</a>(F&amp;&amp; f, <span class="keyword">const</span> Eigen::Matrix&lt;double, Cols, 1&gt;&amp; x) {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">auto</span> NumericalJacobian(F&amp;&amp; f, <span class="keyword">const</span> Eigen::Matrix&lt;double, Cols, 1&gt;&amp; x) {</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  constexpr <span class="keywordtype">double</span> kEpsilon = 1e-5;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  Eigen::Matrix&lt;double, Rows, Cols&gt; result;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  result.setZero();</div>
@@ -122,7 +122,7 @@ $(document).ready(function(){initNavTree('NumericalJacobian_8h_source.html','');
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">int</span> Rows, <span class="keywordtype">int</span> States, <span class="keywordtype">int</span> Inputs, <span class="keyword">typename</span> F, <span class="keyword">typename</span>... Args&gt;</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="namespacefrc.html#af2fa623b84713efc1ded4a40d059d143">   50</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="namespacefrc.html#af2fa623b84713efc1ded4a40d059d143">NumericalJacobianX</a>(F&amp;&amp; f, <span class="keyword">const</span> Eigen::Matrix&lt;double, States, 1&gt;&amp; x,</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">auto</span> NumericalJacobianX(F&amp;&amp; f, <span class="keyword">const</span> Eigen::Matrix&lt;double, States, 1&gt;&amp; x,</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                        <span class="keyword">const</span> Eigen::Matrix&lt;double, Inputs, 1&gt;&amp; u,</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                        Args&amp;&amp;... args) {</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordflow">return</span> NumericalJacobian&lt;Rows, States&gt;(</div>
@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('NumericalJacobian_8h_source.html','');
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">int</span> Rows, <span class="keywordtype">int</span> States, <span class="keywordtype">int</span> Inputs, <span class="keyword">typename</span> F, <span class="keyword">typename</span>... Args&gt;</div>
-<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="namespacefrc.html#a2db1f99cc14e6b233f29ab13f11ef66a">   70</a></span>&#160;<span class="keyword">auto</span> <a class="code" href="namespacefrc.html#a2db1f99cc14e6b233f29ab13f11ef66a">NumericalJacobianU</a>(F&amp;&amp; f, <span class="keyword">const</span> Eigen::Matrix&lt;double, States, 1&gt;&amp; x,</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">auto</span> NumericalJacobianU(F&amp;&amp; f, <span class="keyword">const</span> Eigen::Matrix&lt;double, States, 1&gt;&amp; x,</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                        <span class="keyword">const</span> Eigen::Matrix&lt;double, Inputs, 1&gt;&amp; u,</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                        Args&amp;&amp;... args) {</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordflow">return</span> NumericalJacobian&lt;Rows, Inputs&gt;(</div>
@@ -140,15 +140,11 @@ $(document).ready(function(){initNavTree('NumericalJacobian_8h_source.html','');
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}  <span class="comment">// namespace frc</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespacefrc_html_a2db1f99cc14e6b233f29ab13f11ef66a"><div class="ttname"><a href="namespacefrc.html#a2db1f99cc14e6b233f29ab13f11ef66a">frc::NumericalJacobianU</a></div><div class="ttdeci">auto NumericalJacobianU(F &amp;&amp;f, const Eigen::Matrix&lt; double, States, 1 &gt; &amp;x, const Eigen::Matrix&lt; double, Inputs, 1 &gt; &amp;u, Args &amp;&amp;... args)</div><div class="ttdoc">Returns numerical Jacobian with respect to u for f(x, u, ...).</div><div class="ttdef"><b>Definition:</b> NumericalJacobian.h:70</div></div>
-<div class="ttc" id="anamespacefrc_html_af2fa623b84713efc1ded4a40d059d143"><div class="ttname"><a href="namespacefrc.html#af2fa623b84713efc1ded4a40d059d143">frc::NumericalJacobianX</a></div><div class="ttdeci">auto NumericalJacobianX(F &amp;&amp;f, const Eigen::Matrix&lt; double, States, 1 &gt; &amp;x, const Eigen::Matrix&lt; double, Inputs, 1 &gt; &amp;u, Args &amp;&amp;... args)</div><div class="ttdoc">Returns numerical Jacobian with respect to x for f(x, u, ...).</div><div class="ttdef"><b>Definition:</b> NumericalJacobian.h:50</div></div>
-<div class="ttc" id="anamespacefrc_html_a3c68fe32c5c08f1ae28571767df3dff3"><div class="ttname"><a href="namespacefrc.html#a3c68fe32c5c08f1ae28571767df3dff3">frc::NumericalJacobian</a></div><div class="ttdeci">auto NumericalJacobian(F &amp;&amp;f, const Eigen::Matrix&lt; double, Cols, 1 &gt; &amp;x)</div><div class="ttdoc">Returns numerical Jacobian with respect to x for f(x).</div><div class="ttdef"><b>Definition:</b> NumericalJacobian.h:20</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> CameraServer.h:18</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_6a6d4dbfd7def32c812c83ce511abb63.html">system</a></li><li class="navelem"><b>NumericalJacobian.h</b></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:30 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:06 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

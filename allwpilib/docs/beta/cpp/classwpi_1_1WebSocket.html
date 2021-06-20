@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -160,93 +160,114 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="classwpi_1_1uv_1_1Stream.html">uv::Stream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#a252eade72c7d564bf98db49e6cc21781">GetStream</a> () const</td></tr>
 <tr class="memdesc:a252eade72c7d564bf98db49e6cc21781"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the underlying stream. <br /></td></tr>
 <tr class="separator:a252eade72c7d564bf98db49e6cc21781"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5f5e50175ee621600b90275bae7666b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1StringRef.html">StringRef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#aa5f5e50175ee621600b90275bae7666b">GetProtocol</a> () const</td></tr>
-<tr class="memdesc:aa5f5e50175ee621600b90275bae7666b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the selected sub-protocol.  <a href="classwpi_1_1WebSocket.html#aa5f5e50175ee621600b90275bae7666b">More...</a><br /></td></tr>
-<tr class="separator:aa5f5e50175ee621600b90275bae7666b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafc1614792abba79f234f6fcaaa9f0d0"><td class="memItemLeft" align="right" valign="top">std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#aafc1614792abba79f234f6fcaaa9f0d0">GetProtocol</a> () const</td></tr>
+<tr class="memdesc:aafc1614792abba79f234f6fcaaa9f0d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the selected sub-protocol.  <a href="classwpi_1_1WebSocket.html#aafc1614792abba79f234f6fcaaa9f0d0">More...</a><br /></td></tr>
+<tr class="separator:aafc1614792abba79f234f6fcaaa9f0d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8ed71cfabb44f5ccfdd9069d6958444"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#ad8ed71cfabb44f5ccfdd9069d6958444">SetMaxMessageSize</a> (size_t size)</td></tr>
 <tr class="memdesc:ad8ed71cfabb44f5ccfdd9069d6958444"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the maximum message size.  <a href="classwpi_1_1WebSocket.html#ad8ed71cfabb44f5ccfdd9069d6958444">More...</a><br /></td></tr>
 <tr class="separator:ad8ed71cfabb44f5ccfdd9069d6958444"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9eb36dee2f7319a43cd4a794cf635262"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#a9eb36dee2f7319a43cd4a794cf635262">SetCombineFragments</a> (bool combine)</td></tr>
 <tr class="memdesc:a9eb36dee2f7319a43cd4a794cf635262"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether or not fragmented frames should be combined.  <a href="classwpi_1_1WebSocket.html#a9eb36dee2f7319a43cd4a794cf635262">More...</a><br /></td></tr>
 <tr class="separator:a9eb36dee2f7319a43cd4a794cf635262"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a770066cc88ebe260b5a5299efbc09c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#a7a770066cc88ebe260b5a5299efbc09c">Close</a> (uint16_t code=1005, const <a class="el" href="classwpi_1_1Twine.html">Twine</a> &amp;reason=<a class="el" href="classwpi_1_1Twine.html">Twine</a>{})</td></tr>
-<tr class="memdesc:a7a770066cc88ebe260b5a5299efbc09c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initiate a closing handshake.  <a href="classwpi_1_1WebSocket.html#a7a770066cc88ebe260b5a5299efbc09c">More...</a><br /></td></tr>
-<tr class="separator:a7a770066cc88ebe260b5a5299efbc09c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3d28d21dddc2d51766d4badabe529e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#aa3d28d21dddc2d51766d4badabe529e3">SendText</a> (<a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt; data, std::function&lt; void(<a class="el" href="classwpi_1_1MutableArrayRef.html">MutableArrayRef</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;, <a class="el" href="classwpi_1_1uv_1_1Error.html">uv::Error</a>)&gt; callback)</td></tr>
-<tr class="memdesc:aa3d28d21dddc2d51766d4badabe529e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a text message.  <a href="classwpi_1_1WebSocket.html#aa3d28d21dddc2d51766d4badabe529e3">More...</a><br /></td></tr>
-<tr class="separator:aa3d28d21dddc2d51766d4badabe529e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11262130f8c963b946deed2dd49305f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#a11262130f8c963b946deed2dd49305f6">SendBinary</a> (<a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt; data, std::function&lt; void(<a class="el" href="classwpi_1_1MutableArrayRef.html">MutableArrayRef</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;, <a class="el" href="classwpi_1_1uv_1_1Error.html">uv::Error</a>)&gt; callback)</td></tr>
-<tr class="memdesc:a11262130f8c963b946deed2dd49305f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a binary message.  <a href="classwpi_1_1WebSocket.html#a11262130f8c963b946deed2dd49305f6">More...</a><br /></td></tr>
-<tr class="separator:a11262130f8c963b946deed2dd49305f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a777d1eb588be57ef851cadb00c3716ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#a777d1eb588be57ef851cadb00c3716ad">SendTextFragment</a> (<a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt; data, std::function&lt; void(<a class="el" href="classwpi_1_1MutableArrayRef.html">MutableArrayRef</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;, <a class="el" href="classwpi_1_1uv_1_1Error.html">uv::Error</a>)&gt; callback)</td></tr>
-<tr class="memdesc:a777d1eb588be57ef851cadb00c3716ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a text message fragment.  <a href="classwpi_1_1WebSocket.html#a777d1eb588be57ef851cadb00c3716ad">More...</a><br /></td></tr>
-<tr class="separator:a777d1eb588be57ef851cadb00c3716ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac960ee6371f6f1e70e0e99978c06c8d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#ac960ee6371f6f1e70e0e99978c06c8d5">SendBinaryFragment</a> (<a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt; data, std::function&lt; void(<a class="el" href="classwpi_1_1MutableArrayRef.html">MutableArrayRef</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;, <a class="el" href="classwpi_1_1uv_1_1Error.html">uv::Error</a>)&gt; callback)</td></tr>
-<tr class="memdesc:ac960ee6371f6f1e70e0e99978c06c8d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a text message fragment.  <a href="classwpi_1_1WebSocket.html#ac960ee6371f6f1e70e0e99978c06c8d5">More...</a><br /></td></tr>
-<tr class="separator:ac960ee6371f6f1e70e0e99978c06c8d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1378c8d5d8ed092ec925327dab4ae094"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#a1378c8d5d8ed092ec925327dab4ae094">SendFragment</a> (<a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt; data, bool fin, std::function&lt; void(<a class="el" href="classwpi_1_1MutableArrayRef.html">MutableArrayRef</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;, <a class="el" href="classwpi_1_1uv_1_1Error.html">uv::Error</a>)&gt; callback)</td></tr>
-<tr class="memdesc:a1378c8d5d8ed092ec925327dab4ae094"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a continuation frame.  <a href="classwpi_1_1WebSocket.html#a1378c8d5d8ed092ec925327dab4ae094">More...</a><br /></td></tr>
-<tr class="separator:a1378c8d5d8ed092ec925327dab4ae094"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80946a893e0ff08763281d9743c845f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#a80946a893e0ff08763281d9743c845f3">Close</a> (uint16_t code=1005, std::string_view reason={})</td></tr>
+<tr class="memdesc:a80946a893e0ff08763281d9743c845f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initiate a closing handshake.  <a href="classwpi_1_1WebSocket.html#a80946a893e0ff08763281d9743c845f3">More...</a><br /></td></tr>
+<tr class="separator:a80946a893e0ff08763281d9743c845f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fe94e6f86968013c66154b1d0b30280"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#a6fe94e6f86968013c66154b1d0b30280">SendText</a> (<a class="el" href="classwpi_1_1span.html">span</a>&lt; const <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt; <a class="el" href="structdata.html">data</a>, std::function&lt; void(<a class="el" href="classwpi_1_1span.html">span</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;, <a class="el" href="classwpi_1_1uv_1_1Error.html">uv::Error</a>)&gt; callback)</td></tr>
+<tr class="memdesc:a6fe94e6f86968013c66154b1d0b30280"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a text message.  <a href="classwpi_1_1WebSocket.html#a6fe94e6f86968013c66154b1d0b30280">More...</a><br /></td></tr>
+<tr class="separator:a6fe94e6f86968013c66154b1d0b30280"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74f624f9239298bc0be74cd670d28aea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#a74f624f9239298bc0be74cd670d28aea">SendText</a> (std::initializer_list&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt; <a class="el" href="structdata.html">data</a>, std::function&lt; void(<a class="el" href="classwpi_1_1span.html">span</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;, <a class="el" href="classwpi_1_1uv_1_1Error.html">uv::Error</a>)&gt; callback)</td></tr>
+<tr class="memdesc:a74f624f9239298bc0be74cd670d28aea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a text message.  <a href="classwpi_1_1WebSocket.html#a74f624f9239298bc0be74cd670d28aea">More...</a><br /></td></tr>
+<tr class="separator:a74f624f9239298bc0be74cd670d28aea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0eec9ac27351f759b323b20652e5687"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#ad0eec9ac27351f759b323b20652e5687">SendBinary</a> (<a class="el" href="classwpi_1_1span.html">span</a>&lt; const <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt; <a class="el" href="structdata.html">data</a>, std::function&lt; void(<a class="el" href="classwpi_1_1span.html">span</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;, <a class="el" href="classwpi_1_1uv_1_1Error.html">uv::Error</a>)&gt; callback)</td></tr>
+<tr class="memdesc:ad0eec9ac27351f759b323b20652e5687"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a binary message.  <a href="classwpi_1_1WebSocket.html#ad0eec9ac27351f759b323b20652e5687">More...</a><br /></td></tr>
+<tr class="separator:ad0eec9ac27351f759b323b20652e5687"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a954fef2a6812d200335ef8dad320bc08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#a954fef2a6812d200335ef8dad320bc08">SendBinary</a> (std::initializer_list&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt; <a class="el" href="structdata.html">data</a>, std::function&lt; void(<a class="el" href="classwpi_1_1span.html">span</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;, <a class="el" href="classwpi_1_1uv_1_1Error.html">uv::Error</a>)&gt; callback)</td></tr>
+<tr class="memdesc:a954fef2a6812d200335ef8dad320bc08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a binary message.  <a href="classwpi_1_1WebSocket.html#a954fef2a6812d200335ef8dad320bc08">More...</a><br /></td></tr>
+<tr class="separator:a954fef2a6812d200335ef8dad320bc08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb1261b571664005a4701ead5ffbdb24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#abb1261b571664005a4701ead5ffbdb24">SendTextFragment</a> (<a class="el" href="classwpi_1_1span.html">span</a>&lt; const <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt; <a class="el" href="structdata.html">data</a>, std::function&lt; void(<a class="el" href="classwpi_1_1span.html">span</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;, <a class="el" href="classwpi_1_1uv_1_1Error.html">uv::Error</a>)&gt; callback)</td></tr>
+<tr class="memdesc:abb1261b571664005a4701ead5ffbdb24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a text message fragment.  <a href="classwpi_1_1WebSocket.html#abb1261b571664005a4701ead5ffbdb24">More...</a><br /></td></tr>
+<tr class="separator:abb1261b571664005a4701ead5ffbdb24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a572ec44b95085a164cdbc1523548571e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#a572ec44b95085a164cdbc1523548571e">SendTextFragment</a> (std::initializer_list&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt; <a class="el" href="structdata.html">data</a>, std::function&lt; void(<a class="el" href="classwpi_1_1span.html">span</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;, <a class="el" href="classwpi_1_1uv_1_1Error.html">uv::Error</a>)&gt; callback)</td></tr>
+<tr class="memdesc:a572ec44b95085a164cdbc1523548571e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a text message fragment.  <a href="classwpi_1_1WebSocket.html#a572ec44b95085a164cdbc1523548571e">More...</a><br /></td></tr>
+<tr class="separator:a572ec44b95085a164cdbc1523548571e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae71d41437d66c4091e74d6d139dbd248"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#ae71d41437d66c4091e74d6d139dbd248">SendBinaryFragment</a> (<a class="el" href="classwpi_1_1span.html">span</a>&lt; const <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt; <a class="el" href="structdata.html">data</a>, std::function&lt; void(<a class="el" href="classwpi_1_1span.html">span</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;, <a class="el" href="classwpi_1_1uv_1_1Error.html">uv::Error</a>)&gt; callback)</td></tr>
+<tr class="memdesc:ae71d41437d66c4091e74d6d139dbd248"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a text message fragment.  <a href="classwpi_1_1WebSocket.html#ae71d41437d66c4091e74d6d139dbd248">More...</a><br /></td></tr>
+<tr class="separator:ae71d41437d66c4091e74d6d139dbd248"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b4b7b7a56ba42eab078fc9c6e54a0d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#a8b4b7b7a56ba42eab078fc9c6e54a0d0">SendBinaryFragment</a> (std::initializer_list&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt; <a class="el" href="structdata.html">data</a>, std::function&lt; void(<a class="el" href="classwpi_1_1span.html">span</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;, <a class="el" href="classwpi_1_1uv_1_1Error.html">uv::Error</a>)&gt; callback)</td></tr>
+<tr class="memdesc:a8b4b7b7a56ba42eab078fc9c6e54a0d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a text message fragment.  <a href="classwpi_1_1WebSocket.html#a8b4b7b7a56ba42eab078fc9c6e54a0d0">More...</a><br /></td></tr>
+<tr class="separator:a8b4b7b7a56ba42eab078fc9c6e54a0d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a941b63f575d25a66760311116efabffd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#a941b63f575d25a66760311116efabffd">SendFragment</a> (<a class="el" href="classwpi_1_1span.html">span</a>&lt; const <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt; <a class="el" href="structdata.html">data</a>, bool fin, std::function&lt; void(<a class="el" href="classwpi_1_1span.html">span</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;, <a class="el" href="classwpi_1_1uv_1_1Error.html">uv::Error</a>)&gt; callback)</td></tr>
+<tr class="memdesc:a941b63f575d25a66760311116efabffd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a continuation frame.  <a href="classwpi_1_1WebSocket.html#a941b63f575d25a66760311116efabffd">More...</a><br /></td></tr>
+<tr class="separator:a941b63f575d25a66760311116efabffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ebbaebd1175cc731da65b6dbbd47ad3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#a4ebbaebd1175cc731da65b6dbbd47ad3">SendFragment</a> (std::initializer_list&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt; <a class="el" href="structdata.html">data</a>, bool fin, std::function&lt; void(<a class="el" href="classwpi_1_1span.html">span</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;, <a class="el" href="classwpi_1_1uv_1_1Error.html">uv::Error</a>)&gt; callback)</td></tr>
+<tr class="memdesc:a4ebbaebd1175cc731da65b6dbbd47ad3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a continuation frame.  <a href="classwpi_1_1WebSocket.html#a4ebbaebd1175cc731da65b6dbbd47ad3">More...</a><br /></td></tr>
+<tr class="separator:a4ebbaebd1175cc731da65b6dbbd47ad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a391836465db2a677ce8ac0b3ec2d46d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#a391836465db2a677ce8ac0b3ec2d46d7">SendPing</a> (std::function&lt; void(<a class="el" href="classwpi_1_1uv_1_1Error.html">uv::Error</a>)&gt; callback=nullptr)</td></tr>
 <tr class="memdesc:a391836465db2a677ce8ac0b3ec2d46d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a ping frame with no data.  <a href="classwpi_1_1WebSocket.html#a391836465db2a677ce8ac0b3ec2d46d7">More...</a><br /></td></tr>
 <tr class="separator:a391836465db2a677ce8ac0b3ec2d46d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a664efd9c5117f7a8f190e7c1a8d6cc3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#a664efd9c5117f7a8f190e7c1a8d6cc3a">SendPing</a> (<a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt; data, std::function&lt; void(<a class="el" href="classwpi_1_1MutableArrayRef.html">MutableArrayRef</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;, <a class="el" href="classwpi_1_1uv_1_1Error.html">uv::Error</a>)&gt; callback)</td></tr>
-<tr class="memdesc:a664efd9c5117f7a8f190e7c1a8d6cc3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a ping frame.  <a href="classwpi_1_1WebSocket.html#a664efd9c5117f7a8f190e7c1a8d6cc3a">More...</a><br /></td></tr>
-<tr class="separator:a664efd9c5117f7a8f190e7c1a8d6cc3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a472335979b62b751987792be99484e67"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#a472335979b62b751987792be99484e67">SendPing</a> (<a class="el" href="classwpi_1_1span.html">span</a>&lt; const <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt; <a class="el" href="structdata.html">data</a>, std::function&lt; void(<a class="el" href="classwpi_1_1span.html">span</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;, <a class="el" href="classwpi_1_1uv_1_1Error.html">uv::Error</a>)&gt; callback)</td></tr>
+<tr class="memdesc:a472335979b62b751987792be99484e67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a ping frame.  <a href="classwpi_1_1WebSocket.html#a472335979b62b751987792be99484e67">More...</a><br /></td></tr>
+<tr class="separator:a472335979b62b751987792be99484e67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a774ca01c91d08263827c7dba1925d691"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#a774ca01c91d08263827c7dba1925d691">SendPing</a> (std::initializer_list&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt; <a class="el" href="structdata.html">data</a>, std::function&lt; void(<a class="el" href="classwpi_1_1span.html">span</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;, <a class="el" href="classwpi_1_1uv_1_1Error.html">uv::Error</a>)&gt; callback)</td></tr>
+<tr class="memdesc:a774ca01c91d08263827c7dba1925d691"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a ping frame.  <a href="classwpi_1_1WebSocket.html#a774ca01c91d08263827c7dba1925d691">More...</a><br /></td></tr>
+<tr class="separator:a774ca01c91d08263827c7dba1925d691"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b5c346536bbef572f97fc179bdc06fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#a8b5c346536bbef572f97fc179bdc06fa">SendPong</a> (std::function&lt; void(<a class="el" href="classwpi_1_1uv_1_1Error.html">uv::Error</a>)&gt; callback=nullptr)</td></tr>
 <tr class="memdesc:a8b5c346536bbef572f97fc179bdc06fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a pong frame with no data.  <a href="classwpi_1_1WebSocket.html#a8b5c346536bbef572f97fc179bdc06fa">More...</a><br /></td></tr>
 <tr class="separator:a8b5c346536bbef572f97fc179bdc06fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c2c942aaee936872c7ff8389cb500e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#a7c2c942aaee936872c7ff8389cb500e5">SendPong</a> (<a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt; data, std::function&lt; void(<a class="el" href="classwpi_1_1MutableArrayRef.html">MutableArrayRef</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;, <a class="el" href="classwpi_1_1uv_1_1Error.html">uv::Error</a>)&gt; callback)</td></tr>
-<tr class="memdesc:a7c2c942aaee936872c7ff8389cb500e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a pong frame.  <a href="classwpi_1_1WebSocket.html#a7c2c942aaee936872c7ff8389cb500e5">More...</a><br /></td></tr>
-<tr class="separator:a7c2c942aaee936872c7ff8389cb500e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedd8b5a552ff957cdd0655fa6b3cd334"><td class="memItemLeft" align="right" valign="top"><a id="aedd8b5a552ff957cdd0655fa6b3cd334"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#aedd8b5a552ff957cdd0655fa6b3cd334">Fail</a> (uint16_t code=1002, const <a class="el" href="classwpi_1_1Twine.html">Twine</a> &amp;reason=&quot;protocol error&quot;)</td></tr>
-<tr class="memdesc:aedd8b5a552ff957cdd0655fa6b3cd334"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fail the connection. <br /></td></tr>
-<tr class="separator:aedd8b5a552ff957cdd0655fa6b3cd334"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae735e86cfeab6b7ccf41b6b656bccec7"><td class="memItemLeft" align="right" valign="top"><a id="ae735e86cfeab6b7ccf41b6b656bccec7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#ae735e86cfeab6b7ccf41b6b656bccec7">Terminate</a> (uint16_t code=1006, const <a class="el" href="classwpi_1_1Twine.html">Twine</a> &amp;reason=&quot;terminated&quot;)</td></tr>
-<tr class="memdesc:ae735e86cfeab6b7ccf41b6b656bccec7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forcibly close the connection. <br /></td></tr>
-<tr class="separator:ae735e86cfeab6b7ccf41b6b656bccec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a2d7d4a21e9bf648342befcaa5c2587"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#a6a2d7d4a21e9bf648342befcaa5c2587">SendPong</a> (<a class="el" href="classwpi_1_1span.html">span</a>&lt; const <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt; <a class="el" href="structdata.html">data</a>, std::function&lt; void(<a class="el" href="classwpi_1_1span.html">span</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;, <a class="el" href="classwpi_1_1uv_1_1Error.html">uv::Error</a>)&gt; callback)</td></tr>
+<tr class="memdesc:a6a2d7d4a21e9bf648342befcaa5c2587"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a pong frame.  <a href="classwpi_1_1WebSocket.html#a6a2d7d4a21e9bf648342befcaa5c2587">More...</a><br /></td></tr>
+<tr class="separator:a6a2d7d4a21e9bf648342befcaa5c2587"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17224f8d6ff96488135f607a4451fa2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#a17224f8d6ff96488135f607a4451fa2d">SendPong</a> (std::initializer_list&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt; <a class="el" href="structdata.html">data</a>, std::function&lt; void(<a class="el" href="classwpi_1_1span.html">span</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;, <a class="el" href="classwpi_1_1uv_1_1Error.html">uv::Error</a>)&gt; callback)</td></tr>
+<tr class="memdesc:a17224f8d6ff96488135f607a4451fa2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send a pong frame.  <a href="classwpi_1_1WebSocket.html#a17224f8d6ff96488135f607a4451fa2d">More...</a><br /></td></tr>
+<tr class="separator:a17224f8d6ff96488135f607a4451fa2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37e7be645e18430de3c1466d236437c3"><td class="memItemLeft" align="right" valign="top"><a id="a37e7be645e18430de3c1466d236437c3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#a37e7be645e18430de3c1466d236437c3">Fail</a> (uint16_t code=1002, std::string_view reason=&quot;protocol error&quot;)</td></tr>
+<tr class="memdesc:a37e7be645e18430de3c1466d236437c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fail the connection. <br /></td></tr>
+<tr class="separator:a37e7be645e18430de3c1466d236437c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7d2b14ca14d8b5e7fa29fda1fc974ad"><td class="memItemLeft" align="right" valign="top"><a id="af7d2b14ca14d8b5e7fa29fda1fc974ad"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#af7d2b14ca14d8b5e7fa29fda1fc974ad">Terminate</a> (uint16_t code=1006, std::string_view reason=&quot;terminated&quot;)</td></tr>
+<tr class="memdesc:af7d2b14ca14d8b5e7fa29fda1fc974ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forcibly close the connection. <br /></td></tr>
+<tr class="separator:af7d2b14ca14d8b5e7fa29fda1fc974ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad54ae19d2f21dadb224d8ad09001bff"><td class="memTemplParams" colspan="2">template&lt;typename T  = void&gt; </td></tr>
 <tr class="memitem:aad54ae19d2f21dadb224d8ad09001bff"><td class="memTemplItemLeft" align="right" valign="top">std::shared_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#aad54ae19d2f21dadb224d8ad09001bff">GetData</a> () const</td></tr>
 <tr class="memdesc:aad54ae19d2f21dadb224d8ad09001bff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets user-defined data.  <a href="classwpi_1_1WebSocket.html#aad54ae19d2f21dadb224d8ad09001bff">More...</a><br /></td></tr>
 <tr class="separator:aad54ae19d2f21dadb224d8ad09001bff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae601d5e644d628ebb9295d86b007bd0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#aae601d5e644d628ebb9295d86b007bd0">SetData</a> (std::shared_ptr&lt; void &gt; data)</td></tr>
+<tr class="memitem:aae601d5e644d628ebb9295d86b007bd0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#aae601d5e644d628ebb9295d86b007bd0">SetData</a> (std::shared_ptr&lt; void &gt; <a class="el" href="structdata.html">data</a>)</td></tr>
 <tr class="memdesc:aae601d5e644d628ebb9295d86b007bd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets user-defined data.  <a href="classwpi_1_1WebSocket.html#aae601d5e644d628ebb9295d86b007bd0">More...</a><br /></td></tr>
 <tr class="separator:aae601d5e644d628ebb9295d86b007bd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a7ff17e0461202b9816c4d5e1b1f82a74"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classwpi_1_1WebSocket.html">WebSocket</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#a7ff17e0461202b9816c4d5e1b1f82a74">CreateClient</a> (<a class="el" href="classwpi_1_1uv_1_1Stream.html">uv::Stream</a> &amp;stream, const <a class="el" href="classwpi_1_1Twine.html">Twine</a> &amp;uri, const <a class="el" href="classwpi_1_1Twine.html">Twine</a> &amp;host, <a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt; <a class="el" href="classwpi_1_1StringRef.html">StringRef</a> &gt; protocols=<a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt; <a class="el" href="classwpi_1_1StringRef.html">StringRef</a> &gt;{}, const <a class="el" href="structwpi_1_1WebSocket_1_1ClientOptions.html">ClientOptions</a> &amp;options=<a class="el" href="structwpi_1_1WebSocket_1_1ClientOptions.html">ClientOptions</a>{})</td></tr>
-<tr class="memdesc:a7ff17e0461202b9816c4d5e1b1f82a74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a client connection by performing the initial client handshake.  <a href="classwpi_1_1WebSocket.html#a7ff17e0461202b9816c4d5e1b1f82a74">More...</a><br /></td></tr>
-<tr class="separator:a7ff17e0461202b9816c4d5e1b1f82a74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4099cea5a56fea8926e35523457f5ef"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classwpi_1_1WebSocket.html">WebSocket</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#ac4099cea5a56fea8926e35523457f5ef">CreateClient</a> (<a class="el" href="classwpi_1_1uv_1_1Stream.html">uv::Stream</a> &amp;stream, const <a class="el" href="classwpi_1_1Twine.html">Twine</a> &amp;uri, const <a class="el" href="classwpi_1_1Twine.html">Twine</a> &amp;host, std::initializer_list&lt; <a class="el" href="classwpi_1_1StringRef.html">StringRef</a> &gt; protocols, const <a class="el" href="structwpi_1_1WebSocket_1_1ClientOptions.html">ClientOptions</a> &amp;options=<a class="el" href="structwpi_1_1WebSocket_1_1ClientOptions.html">ClientOptions</a>{})</td></tr>
-<tr class="memdesc:ac4099cea5a56fea8926e35523457f5ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a client connection by performing the initial client handshake.  <a href="classwpi_1_1WebSocket.html#ac4099cea5a56fea8926e35523457f5ef">More...</a><br /></td></tr>
-<tr class="separator:ac4099cea5a56fea8926e35523457f5ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65d9ffc1b728426d15e9fae3fa4ba514"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classwpi_1_1WebSocket.html">WebSocket</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#a65d9ffc1b728426d15e9fae3fa4ba514">CreateServer</a> (<a class="el" href="classwpi_1_1uv_1_1Stream.html">uv::Stream</a> &amp;stream, <a class="el" href="classwpi_1_1StringRef.html">StringRef</a> key, <a class="el" href="classwpi_1_1StringRef.html">StringRef</a> version, <a class="el" href="classwpi_1_1StringRef.html">StringRef</a> protocol=<a class="el" href="classwpi_1_1StringRef.html">StringRef</a>{})</td></tr>
-<tr class="memdesc:a65d9ffc1b728426d15e9fae3fa4ba514"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a server connection by performing the initial server side handshake.  <a href="classwpi_1_1WebSocket.html#a65d9ffc1b728426d15e9fae3fa4ba514">More...</a><br /></td></tr>
-<tr class="separator:a65d9ffc1b728426d15e9fae3fa4ba514"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39405da10127c3c1edc0d79b680fa878"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classwpi_1_1WebSocket.html">WebSocket</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#a39405da10127c3c1edc0d79b680fa878">CreateClient</a> (<a class="el" href="classwpi_1_1uv_1_1Stream.html">uv::Stream</a> &amp;stream, std::string_view uri, std::string_view host, <a class="el" href="classwpi_1_1span.html">span</a>&lt; const std::string_view &gt; protocols={}, const <a class="el" href="structwpi_1_1WebSocket_1_1ClientOptions.html">ClientOptions</a> &amp;options={})</td></tr>
+<tr class="memdesc:a39405da10127c3c1edc0d79b680fa878"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a client connection by performing the initial client handshake.  <a href="classwpi_1_1WebSocket.html#a39405da10127c3c1edc0d79b680fa878">More...</a><br /></td></tr>
+<tr class="separator:a39405da10127c3c1edc0d79b680fa878"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa9bd1a96cc368fa1e37e317e7412a7f"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classwpi_1_1WebSocket.html">WebSocket</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#aaa9bd1a96cc368fa1e37e317e7412a7f">CreateClient</a> (<a class="el" href="classwpi_1_1uv_1_1Stream.html">uv::Stream</a> &amp;stream, std::string_view uri, std::string_view host, std::initializer_list&lt; std::string_view &gt; protocols, const <a class="el" href="structwpi_1_1WebSocket_1_1ClientOptions.html">ClientOptions</a> &amp;options={})</td></tr>
+<tr class="memdesc:aaa9bd1a96cc368fa1e37e317e7412a7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a client connection by performing the initial client handshake.  <a href="classwpi_1_1WebSocket.html#aaa9bd1a96cc368fa1e37e317e7412a7f">More...</a><br /></td></tr>
+<tr class="separator:aaa9bd1a96cc368fa1e37e317e7412a7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42906ab16c3ed8b8ab1983afb3a454af"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classwpi_1_1WebSocket.html">WebSocket</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#a42906ab16c3ed8b8ab1983afb3a454af">CreateServer</a> (<a class="el" href="classwpi_1_1uv_1_1Stream.html">uv::Stream</a> &amp;stream, std::string_view key, std::string_view version, std::string_view protocol={})</td></tr>
+<tr class="memdesc:a42906ab16c3ed8b8ab1983afb3a454af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a server connection by performing the initial server side handshake.  <a href="classwpi_1_1WebSocket.html#a42906ab16c3ed8b8ab1983afb3a454af">More...</a><br /></td></tr>
+<tr class="separator:a42906ab16c3ed8b8ab1983afb3a454af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ad8f20e9f4e80d5272a7390f49f53edb3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1sig_1_1SignalBase.html">sig::Signal</a>&lt; <a class="el" href="classwpi_1_1StringRef.html">StringRef</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#ad8f20e9f4e80d5272a7390f49f53edb3">open</a></td></tr>
-<tr class="memdesc:ad8f20e9f4e80d5272a7390f49f53edb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open event.  <a href="classwpi_1_1WebSocket.html#ad8f20e9f4e80d5272a7390f49f53edb3">More...</a><br /></td></tr>
-<tr class="separator:ad8f20e9f4e80d5272a7390f49f53edb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5a6125824bc37e9e01df17a9c8ebd40"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1sig_1_1SignalBase.html">sig::Signal</a>&lt; uint16_t, <a class="el" href="classwpi_1_1StringRef.html">StringRef</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#ac5a6125824bc37e9e01df17a9c8ebd40">closed</a></td></tr>
-<tr class="memdesc:ac5a6125824bc37e9e01df17a9c8ebd40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close event.  <a href="classwpi_1_1WebSocket.html#ac5a6125824bc37e9e01df17a9c8ebd40">More...</a><br /></td></tr>
-<tr class="separator:ac5a6125824bc37e9e01df17a9c8ebd40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdd7c9e1831c72cc392feccd5b35ce60"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1sig_1_1SignalBase.html">sig::Signal</a>&lt; <a class="el" href="classwpi_1_1StringRef.html">StringRef</a>, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#afdd7c9e1831c72cc392feccd5b35ce60">text</a></td></tr>
-<tr class="memdesc:afdd7c9e1831c72cc392feccd5b35ce60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Text message event.  <a href="classwpi_1_1WebSocket.html#afdd7c9e1831c72cc392feccd5b35ce60">More...</a><br /></td></tr>
-<tr class="separator:afdd7c9e1831c72cc392feccd5b35ce60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acae994158a0eeab8b4c42ee065215375"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1sig_1_1SignalBase.html">sig::Signal</a>&lt; <a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt; uint8_t &gt;, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#acae994158a0eeab8b4c42ee065215375">binary</a></td></tr>
-<tr class="memdesc:acae994158a0eeab8b4c42ee065215375"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binary message event.  <a href="classwpi_1_1WebSocket.html#acae994158a0eeab8b4c42ee065215375">More...</a><br /></td></tr>
-<tr class="separator:acae994158a0eeab8b4c42ee065215375"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad01689cece596b4a1a2f6c7af5518f28"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1sig_1_1SignalBase.html">sig::Signal</a>&lt; <a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt; uint8_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#ad01689cece596b4a1a2f6c7af5518f28">ping</a></td></tr>
-<tr class="memdesc:ad01689cece596b4a1a2f6c7af5518f28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ping event.  <a href="classwpi_1_1WebSocket.html#ad01689cece596b4a1a2f6c7af5518f28">More...</a><br /></td></tr>
-<tr class="separator:ad01689cece596b4a1a2f6c7af5518f28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e9219ec46fb6d026ba1e33f6190c05c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1sig_1_1SignalBase.html">sig::Signal</a>&lt; <a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt; uint8_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#a4e9219ec46fb6d026ba1e33f6190c05c">pong</a></td></tr>
-<tr class="memdesc:a4e9219ec46fb6d026ba1e33f6190c05c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pong event.  <a href="classwpi_1_1WebSocket.html#a4e9219ec46fb6d026ba1e33f6190c05c">More...</a><br /></td></tr>
-<tr class="separator:a4e9219ec46fb6d026ba1e33f6190c05c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43ecb040198b66d0d88a4250d56085a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1sig_1_1SignalBase.html">sig::Signal</a>&lt; std::string_view &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#a43ecb040198b66d0d88a4250d56085a4">open</a></td></tr>
+<tr class="memdesc:a43ecb040198b66d0d88a4250d56085a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open event.  <a href="classwpi_1_1WebSocket.html#a43ecb040198b66d0d88a4250d56085a4">More...</a><br /></td></tr>
+<tr class="separator:a43ecb040198b66d0d88a4250d56085a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1daec0484f6f3034717912142e3cc7e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1sig_1_1SignalBase.html">sig::Signal</a>&lt; uint16_t, std::string_view &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#a1daec0484f6f3034717912142e3cc7e1">closed</a></td></tr>
+<tr class="memdesc:a1daec0484f6f3034717912142e3cc7e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close event.  <a href="classwpi_1_1WebSocket.html#a1daec0484f6f3034717912142e3cc7e1">More...</a><br /></td></tr>
+<tr class="separator:a1daec0484f6f3034717912142e3cc7e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52a220899cf024226a920822171780f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1sig_1_1SignalBase.html">sig::Signal</a>&lt; std::string_view, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#a52a220899cf024226a920822171780f0">text</a></td></tr>
+<tr class="memdesc:a52a220899cf024226a920822171780f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Text message event.  <a href="classwpi_1_1WebSocket.html#a52a220899cf024226a920822171780f0">More...</a><br /></td></tr>
+<tr class="separator:a52a220899cf024226a920822171780f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e9429c99b4487994d6e4b0d0052b863"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1sig_1_1SignalBase.html">sig::Signal</a>&lt; <a class="el" href="classwpi_1_1span.html">span</a>&lt; const uint8_t &gt;, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#a2e9429c99b4487994d6e4b0d0052b863">binary</a></td></tr>
+<tr class="memdesc:a2e9429c99b4487994d6e4b0d0052b863"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binary message event.  <a href="classwpi_1_1WebSocket.html#a2e9429c99b4487994d6e4b0d0052b863">More...</a><br /></td></tr>
+<tr class="separator:a2e9429c99b4487994d6e4b0d0052b863"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0206ee21dc8765fe3648d1a6a1a54ea5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1sig_1_1SignalBase.html">sig::Signal</a>&lt; <a class="el" href="classwpi_1_1span.html">span</a>&lt; const uint8_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#a0206ee21dc8765fe3648d1a6a1a54ea5">ping</a></td></tr>
+<tr class="memdesc:a0206ee21dc8765fe3648d1a6a1a54ea5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ping event.  <a href="classwpi_1_1WebSocket.html#a0206ee21dc8765fe3648d1a6a1a54ea5">More...</a><br /></td></tr>
+<tr class="separator:a0206ee21dc8765fe3648d1a6a1a54ea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf7938b5b72c64df87f0db631933c372"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1sig_1_1SignalBase.html">sig::Signal</a>&lt; <a class="el" href="classwpi_1_1span.html">span</a>&lt; const uint8_t &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1WebSocket.html#adf7938b5b72c64df87f0db631933c372">pong</a></td></tr>
+<tr class="memdesc:adf7938b5b72c64df87f0db631933c372"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pong event.  <a href="classwpi_1_1WebSocket.html#adf7938b5b72c64df87f0db631933c372">More...</a><br /></td></tr>
+<tr class="separator:adf7938b5b72c64df87f0db631933c372"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>RFC 6455 compliant <a class="el" href="classwpi_1_1WebSocket.html" title="RFC 6455 compliant WebSocket client and server implementation.">WebSocket</a> client and server implementation. </p>
@@ -280,8 +301,8 @@ Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a7a770066cc88ebe260b5a5299efbc09c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a770066cc88ebe260b5a5299efbc09c">&#9670;&nbsp;</a></span>Close()</h2>
+<a id="a80946a893e0ff08763281d9743c845f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80946a893e0ff08763281d9743c845f3">&#9670;&nbsp;</a></span>Close()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -295,8 +316,8 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1Twine.html">Twine</a> &amp;&#160;</td>
-          <td class="paramname"><em>reason</em> = <code><a class="el" href="classwpi_1_1Twine.html">Twine</a>{}</code>&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>reason</em> = <code>{}</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -317,8 +338,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a7ff17e0461202b9816c4d5e1b1f82a74"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ff17e0461202b9816c4d5e1b1f82a74">&#9670;&nbsp;</a></span>CreateClient() <span class="overload">[1/2]</span></h2>
+<a id="a39405da10127c3c1edc0d79b680fa878"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39405da10127c3c1edc0d79b680fa878">&#9670;&nbsp;</a></span>CreateClient() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -335,26 +356,26 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1Twine.html">Twine</a> &amp;&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>uri</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1Twine.html">Twine</a> &amp;&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>host</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt; <a class="el" href="classwpi_1_1StringRef.html">StringRef</a> &gt;&#160;</td>
-          <td class="paramname"><em>protocols</em> = <code><a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt;&#160;<a class="el" href="classwpi_1_1StringRef.html">StringRef</a>&#160;&gt;{}</code>, </td>
+          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">span</a>&lt; const std::string_view &gt;&#160;</td>
+          <td class="paramname"><em>protocols</em> = <code>{}</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="structwpi_1_1WebSocket_1_1ClientOptions.html">ClientOptions</a> &amp;&#160;</td>
-          <td class="paramname"><em>options</em> = <code><a class="el" href="structwpi_1_1WebSocket_1_1ClientOptions.html">ClientOptions</a>{}</code>&#160;</td>
+          <td class="paramname"><em>options</em> = <code>{}</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -383,8 +404,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ac4099cea5a56fea8926e35523457f5ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac4099cea5a56fea8926e35523457f5ef">&#9670;&nbsp;</a></span>CreateClient() <span class="overload">[2/2]</span></h2>
+<a id="aaa9bd1a96cc368fa1e37e317e7412a7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa9bd1a96cc368fa1e37e317e7412a7f">&#9670;&nbsp;</a></span>CreateClient() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -401,26 +422,26 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1Twine.html">Twine</a> &amp;&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>uri</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1Twine.html">Twine</a> &amp;&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>host</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::initializer_list&lt; <a class="el" href="classwpi_1_1StringRef.html">StringRef</a> &gt;&#160;</td>
+          <td class="paramtype">std::initializer_list&lt; std::string_view &gt;&#160;</td>
           <td class="paramname"><em>protocols</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="structwpi_1_1WebSocket_1_1ClientOptions.html">ClientOptions</a> &amp;&#160;</td>
-          <td class="paramname"><em>options</em> = <code><a class="el" href="structwpi_1_1WebSocket_1_1ClientOptions.html">ClientOptions</a>{}</code>&#160;</td>
+          <td class="paramname"><em>options</em> = <code>{}</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -449,8 +470,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a65d9ffc1b728426d15e9fae3fa4ba514"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65d9ffc1b728426d15e9fae3fa4ba514">&#9670;&nbsp;</a></span>CreateServer()</h2>
+<a id="a42906ab16c3ed8b8ab1983afb3a454af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42906ab16c3ed8b8ab1983afb3a454af">&#9670;&nbsp;</a></span>CreateServer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -467,20 +488,20 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1StringRef.html">StringRef</a>&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1StringRef.html">StringRef</a>&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>version</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1StringRef.html">StringRef</a>&#160;</td>
-          <td class="paramname"><em>protocol</em> = <code><a class="el" href="classwpi_1_1StringRef.html">StringRef</a>{}</code>&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>protocol</em> = <code>{}</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -538,8 +559,8 @@ template&lt;typename T  = void&gt; </div>
 
 </div>
 </div>
-<a id="aa5f5e50175ee621600b90275bae7666b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa5f5e50175ee621600b90275bae7666b">&#9670;&nbsp;</a></span>GetProtocol()</h2>
+<a id="aafc1614792abba79f234f6fcaaa9f0d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafc1614792abba79f234f6fcaaa9f0d0">&#9670;&nbsp;</a></span>GetProtocol()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -548,7 +569,7 @@ template&lt;typename T  = void&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classwpi_1_1StringRef.html">StringRef</a> wpi::WebSocket::GetProtocol </td>
+          <td class="memname">std::string_view wpi::WebSocket::GetProtocol </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -562,7 +583,7 @@ template&lt;typename T  = void&gt; </div>
 </div><div class="memdoc">
 
 <p>Get the selected sub-protocol. </p>
-<p>Only valid in or after the <a class="el" href="classwpi_1_1WebSocket.html#ad8f20e9f4e80d5272a7390f49f53edb3" title="Open event.">open()</a> event. </p>
+<p>Only valid in or after the <a class="el" href="classwpi_1_1WebSocket.html#a43ecb040198b66d0d88a4250d56085a4" title="Open event.">open()</a> event. </p>
 
 </div>
 </div>
@@ -594,8 +615,8 @@ template&lt;typename T  = void&gt; </div>
 
 </div>
 </div>
-<a id="a11262130f8c963b946deed2dd49305f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11262130f8c963b946deed2dd49305f6">&#9670;&nbsp;</a></span>SendBinary()</h2>
+<a id="ad0eec9ac27351f759b323b20652e5687"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0eec9ac27351f759b323b20652e5687">&#9670;&nbsp;</a></span>SendBinary() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -606,13 +627,13 @@ template&lt;typename T  = void&gt; </div>
         <tr>
           <td class="memname">void wpi::WebSocket::SendBinary </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">span</a>&lt; const <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;&#160;</td>
           <td class="paramname"><em>data</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::function&lt; void(<a class="el" href="classwpi_1_1MutableArrayRef.html">MutableArrayRef</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;, <a class="el" href="classwpi_1_1uv_1_1Error.html">uv::Error</a>)&gt;&#160;</td>
+          <td class="paramtype">std::function&lt; void(<a class="el" href="classwpi_1_1span.html">span</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;, <a class="el" href="classwpi_1_1uv_1_1Error.html">uv::Error</a>)&gt;&#160;</td>
           <td class="paramname"><em>callback</em>&#160;</td>
         </tr>
         <tr>
@@ -639,8 +660,53 @@ template&lt;typename T  = void&gt; </div>
 
 </div>
 </div>
-<a id="ac960ee6371f6f1e70e0e99978c06c8d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac960ee6371f6f1e70e0e99978c06c8d5">&#9670;&nbsp;</a></span>SendBinaryFragment()</h2>
+<a id="a954fef2a6812d200335ef8dad320bc08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a954fef2a6812d200335ef8dad320bc08">&#9670;&nbsp;</a></span>SendBinary() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wpi::WebSocket::SendBinary </td>
+          <td>(</td>
+          <td class="paramtype">std::initializer_list&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; void(<a class="el" href="classwpi_1_1span.html">span</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;, <a class="el" href="classwpi_1_1uv_1_1Error.html">uv::Error</a>)&gt;&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Send a binary message. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>Data to send </td></tr>
+    <tr><td class="paramname">callback</td><td>Callback which is invoked when the write completes. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae71d41437d66c4091e74d6d139dbd248"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae71d41437d66c4091e74d6d139dbd248">&#9670;&nbsp;</a></span>SendBinaryFragment() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -651,13 +717,13 @@ template&lt;typename T  = void&gt; </div>
         <tr>
           <td class="memname">void wpi::WebSocket::SendBinaryFragment </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">span</a>&lt; const <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;&#160;</td>
           <td class="paramname"><em>data</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::function&lt; void(<a class="el" href="classwpi_1_1MutableArrayRef.html">MutableArrayRef</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;, <a class="el" href="classwpi_1_1uv_1_1Error.html">uv::Error</a>)&gt;&#160;</td>
+          <td class="paramtype">std::function&lt; void(<a class="el" href="classwpi_1_1span.html">span</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;, <a class="el" href="classwpi_1_1uv_1_1Error.html">uv::Error</a>)&gt;&#160;</td>
           <td class="paramname"><em>callback</em>&#160;</td>
         </tr>
         <tr>
@@ -674,7 +740,7 @@ template&lt;typename T  = void&gt; </div>
 </div><div class="memdoc">
 
 <p>Send a text message fragment. </p>
-<p>This must be followed by one or more <a class="el" href="classwpi_1_1WebSocket.html#a1378c8d5d8ed092ec925327dab4ae094" title="Send a continuation frame.">SendFragment()</a> calls, where the last one has fin=True, to complete the message. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>This must be followed by one or more <a class="el" href="classwpi_1_1WebSocket.html#a941b63f575d25a66760311116efabffd" title="Send a continuation frame.">SendFragment()</a> calls, where the last one has fin=True, to complete the message. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">data</td><td>Data to send </td></tr>
     <tr><td class="paramname">callback</td><td>Callback which is invoked when the write completes. </td></tr>
@@ -684,8 +750,53 @@ template&lt;typename T  = void&gt; </div>
 
 </div>
 </div>
-<a id="a1378c8d5d8ed092ec925327dab4ae094"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1378c8d5d8ed092ec925327dab4ae094">&#9670;&nbsp;</a></span>SendFragment()</h2>
+<a id="a8b4b7b7a56ba42eab078fc9c6e54a0d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b4b7b7a56ba42eab078fc9c6e54a0d0">&#9670;&nbsp;</a></span>SendBinaryFragment() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wpi::WebSocket::SendBinaryFragment </td>
+          <td>(</td>
+          <td class="paramtype">std::initializer_list&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; void(<a class="el" href="classwpi_1_1span.html">span</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;, <a class="el" href="classwpi_1_1uv_1_1Error.html">uv::Error</a>)&gt;&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Send a text message fragment. </p>
+<p>This must be followed by one or more <a class="el" href="classwpi_1_1WebSocket.html#a941b63f575d25a66760311116efabffd" title="Send a continuation frame.">SendFragment()</a> calls, where the last one has fin=True, to complete the message. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>Data to send </td></tr>
+    <tr><td class="paramname">callback</td><td>Callback which is invoked when the write completes. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a941b63f575d25a66760311116efabffd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a941b63f575d25a66760311116efabffd">&#9670;&nbsp;</a></span>SendFragment() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -696,7 +807,7 @@ template&lt;typename T  = void&gt; </div>
         <tr>
           <td class="memname">void wpi::WebSocket::SendFragment </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">span</a>&lt; const <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;&#160;</td>
           <td class="paramname"><em>data</em>, </td>
         </tr>
         <tr>
@@ -708,7 +819,7 @@ template&lt;typename T  = void&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::function&lt; void(<a class="el" href="classwpi_1_1MutableArrayRef.html">MutableArrayRef</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;, <a class="el" href="classwpi_1_1uv_1_1Error.html">uv::Error</a>)&gt;&#160;</td>
+          <td class="paramtype">std::function&lt; void(<a class="el" href="classwpi_1_1span.html">span</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;, <a class="el" href="classwpi_1_1uv_1_1Error.html">uv::Error</a>)&gt;&#160;</td>
           <td class="paramname"><em>callback</em>&#160;</td>
         </tr>
         <tr>
@@ -725,7 +836,7 @@ template&lt;typename T  = void&gt; </div>
 </div><div class="memdoc">
 
 <p>Send a continuation frame. </p>
-<p>This is used to send additional parts of a message started with <a class="el" href="classwpi_1_1WebSocket.html#a777d1eb588be57ef851cadb00c3716ad" title="Send a text message fragment.">SendTextFragment()</a> or <a class="el" href="classwpi_1_1WebSocket.html#ac960ee6371f6f1e70e0e99978c06c8d5" title="Send a text message fragment.">SendBinaryFragment()</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>This is used to send additional parts of a message started with <a class="el" href="classwpi_1_1WebSocket.html#abb1261b571664005a4701ead5ffbdb24" title="Send a text message fragment.">SendTextFragment()</a> or <a class="el" href="classwpi_1_1WebSocket.html#ae71d41437d66c4091e74d6d139dbd248" title="Send a text message fragment.">SendBinaryFragment()</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">data</td><td>Data to send </td></tr>
     <tr><td class="paramname">fin</td><td>Set to true if this is the final fragment of the message </td></tr>
@@ -736,8 +847,60 @@ template&lt;typename T  = void&gt; </div>
 
 </div>
 </div>
-<a id="a664efd9c5117f7a8f190e7c1a8d6cc3a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a664efd9c5117f7a8f190e7c1a8d6cc3a">&#9670;&nbsp;</a></span>SendPing() <span class="overload">[1/2]</span></h2>
+<a id="a4ebbaebd1175cc731da65b6dbbd47ad3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ebbaebd1175cc731da65b6dbbd47ad3">&#9670;&nbsp;</a></span>SendFragment() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wpi::WebSocket::SendFragment </td>
+          <td>(</td>
+          <td class="paramtype">std::initializer_list&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>fin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; void(<a class="el" href="classwpi_1_1span.html">span</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;, <a class="el" href="classwpi_1_1uv_1_1Error.html">uv::Error</a>)&gt;&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Send a continuation frame. </p>
+<p>This is used to send additional parts of a message started with <a class="el" href="classwpi_1_1WebSocket.html#abb1261b571664005a4701ead5ffbdb24" title="Send a text message fragment.">SendTextFragment()</a> or <a class="el" href="classwpi_1_1WebSocket.html#ae71d41437d66c4091e74d6d139dbd248" title="Send a text message fragment.">SendBinaryFragment()</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>Data to send </td></tr>
+    <tr><td class="paramname">fin</td><td>Set to true if this is the final fragment of the message </td></tr>
+    <tr><td class="paramname">callback</td><td>Callback which is invoked when the write completes. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a472335979b62b751987792be99484e67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a472335979b62b751987792be99484e67">&#9670;&nbsp;</a></span>SendPing() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -748,13 +911,13 @@ template&lt;typename T  = void&gt; </div>
         <tr>
           <td class="memname">void wpi::WebSocket::SendPing </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">span</a>&lt; const <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;&#160;</td>
           <td class="paramname"><em>data</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::function&lt; void(<a class="el" href="classwpi_1_1MutableArrayRef.html">MutableArrayRef</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;, <a class="el" href="classwpi_1_1uv_1_1Error.html">uv::Error</a>)&gt;&#160;</td>
+          <td class="paramtype">std::function&lt; void(<a class="el" href="classwpi_1_1span.html">span</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;, <a class="el" href="classwpi_1_1uv_1_1Error.html">uv::Error</a>)&gt;&#160;</td>
           <td class="paramname"><em>callback</em>&#160;</td>
         </tr>
         <tr>
@@ -782,7 +945,7 @@ template&lt;typename T  = void&gt; </div>
 </div>
 </div>
 <a id="a391836465db2a677ce8ac0b3ec2d46d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a391836465db2a677ce8ac0b3ec2d46d7">&#9670;&nbsp;</a></span>SendPing() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a391836465db2a677ce8ac0b3ec2d46d7">&#9670;&nbsp;</a></span>SendPing() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -815,8 +978,53 @@ template&lt;typename T  = void&gt; </div>
 
 </div>
 </div>
-<a id="a7c2c942aaee936872c7ff8389cb500e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c2c942aaee936872c7ff8389cb500e5">&#9670;&nbsp;</a></span>SendPong() <span class="overload">[1/2]</span></h2>
+<a id="a774ca01c91d08263827c7dba1925d691"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a774ca01c91d08263827c7dba1925d691">&#9670;&nbsp;</a></span>SendPing() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wpi::WebSocket::SendPing </td>
+          <td>(</td>
+          <td class="paramtype">std::initializer_list&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; void(<a class="el" href="classwpi_1_1span.html">span</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;, <a class="el" href="classwpi_1_1uv_1_1Error.html">uv::Error</a>)&gt;&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Send a ping frame. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>Data to send in the ping frame </td></tr>
+    <tr><td class="paramname">callback</td><td>Callback which is invoked when the ping frame write completes. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6a2d7d4a21e9bf648342befcaa5c2587"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a2d7d4a21e9bf648342befcaa5c2587">&#9670;&nbsp;</a></span>SendPong() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -827,13 +1035,13 @@ template&lt;typename T  = void&gt; </div>
         <tr>
           <td class="memname">void wpi::WebSocket::SendPong </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">span</a>&lt; const <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;&#160;</td>
           <td class="paramname"><em>data</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::function&lt; void(<a class="el" href="classwpi_1_1MutableArrayRef.html">MutableArrayRef</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;, <a class="el" href="classwpi_1_1uv_1_1Error.html">uv::Error</a>)&gt;&#160;</td>
+          <td class="paramtype">std::function&lt; void(<a class="el" href="classwpi_1_1span.html">span</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;, <a class="el" href="classwpi_1_1uv_1_1Error.html">uv::Error</a>)&gt;&#160;</td>
           <td class="paramname"><em>callback</em>&#160;</td>
         </tr>
         <tr>
@@ -861,7 +1069,7 @@ template&lt;typename T  = void&gt; </div>
 </div>
 </div>
 <a id="a8b5c346536bbef572f97fc179bdc06fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b5c346536bbef572f97fc179bdc06fa">&#9670;&nbsp;</a></span>SendPong() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b5c346536bbef572f97fc179bdc06fa">&#9670;&nbsp;</a></span>SendPong() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -894,8 +1102,53 @@ template&lt;typename T  = void&gt; </div>
 
 </div>
 </div>
-<a id="aa3d28d21dddc2d51766d4badabe529e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3d28d21dddc2d51766d4badabe529e3">&#9670;&nbsp;</a></span>SendText()</h2>
+<a id="a17224f8d6ff96488135f607a4451fa2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17224f8d6ff96488135f607a4451fa2d">&#9670;&nbsp;</a></span>SendPong() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wpi::WebSocket::SendPong </td>
+          <td>(</td>
+          <td class="paramtype">std::initializer_list&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; void(<a class="el" href="classwpi_1_1span.html">span</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;, <a class="el" href="classwpi_1_1uv_1_1Error.html">uv::Error</a>)&gt;&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Send a pong frame. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>Data to send in the pong frame </td></tr>
+    <tr><td class="paramname">callback</td><td>Callback which is invoked when the pong frame write completes. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6fe94e6f86968013c66154b1d0b30280"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fe94e6f86968013c66154b1d0b30280">&#9670;&nbsp;</a></span>SendText() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -906,13 +1159,13 @@ template&lt;typename T  = void&gt; </div>
         <tr>
           <td class="memname">void wpi::WebSocket::SendText </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">span</a>&lt; const <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;&#160;</td>
           <td class="paramname"><em>data</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::function&lt; void(<a class="el" href="classwpi_1_1MutableArrayRef.html">MutableArrayRef</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;, <a class="el" href="classwpi_1_1uv_1_1Error.html">uv::Error</a>)&gt;&#160;</td>
+          <td class="paramtype">std::function&lt; void(<a class="el" href="classwpi_1_1span.html">span</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;, <a class="el" href="classwpi_1_1uv_1_1Error.html">uv::Error</a>)&gt;&#160;</td>
           <td class="paramname"><em>callback</em>&#160;</td>
         </tr>
         <tr>
@@ -939,8 +1192,53 @@ template&lt;typename T  = void&gt; </div>
 
 </div>
 </div>
-<a id="a777d1eb588be57ef851cadb00c3716ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a777d1eb588be57ef851cadb00c3716ad">&#9670;&nbsp;</a></span>SendTextFragment()</h2>
+<a id="a74f624f9239298bc0be74cd670d28aea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74f624f9239298bc0be74cd670d28aea">&#9670;&nbsp;</a></span>SendText() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wpi::WebSocket::SendText </td>
+          <td>(</td>
+          <td class="paramtype">std::initializer_list&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; void(<a class="el" href="classwpi_1_1span.html">span</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;, <a class="el" href="classwpi_1_1uv_1_1Error.html">uv::Error</a>)&gt;&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Send a text message. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>UTF-8 encoded data to send </td></tr>
+    <tr><td class="paramname">callback</td><td>Callback which is invoked when the write completes. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abb1261b571664005a4701ead5ffbdb24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb1261b571664005a4701ead5ffbdb24">&#9670;&nbsp;</a></span>SendTextFragment() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -951,13 +1249,13 @@ template&lt;typename T  = void&gt; </div>
         <tr>
           <td class="memname">void wpi::WebSocket::SendTextFragment </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">span</a>&lt; const <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;&#160;</td>
           <td class="paramname"><em>data</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::function&lt; void(<a class="el" href="classwpi_1_1MutableArrayRef.html">MutableArrayRef</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;, <a class="el" href="classwpi_1_1uv_1_1Error.html">uv::Error</a>)&gt;&#160;</td>
+          <td class="paramtype">std::function&lt; void(<a class="el" href="classwpi_1_1span.html">span</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;, <a class="el" href="classwpi_1_1uv_1_1Error.html">uv::Error</a>)&gt;&#160;</td>
           <td class="paramname"><em>callback</em>&#160;</td>
         </tr>
         <tr>
@@ -974,7 +1272,52 @@ template&lt;typename T  = void&gt; </div>
 </div><div class="memdoc">
 
 <p>Send a text message fragment. </p>
-<p>This must be followed by one or more <a class="el" href="classwpi_1_1WebSocket.html#a1378c8d5d8ed092ec925327dab4ae094" title="Send a continuation frame.">SendFragment()</a> calls, where the last one has fin=True, to complete the message. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>This must be followed by one or more <a class="el" href="classwpi_1_1WebSocket.html#a941b63f575d25a66760311116efabffd" title="Send a continuation frame.">SendFragment()</a> calls, where the last one has fin=True, to complete the message. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>UTF-8 encoded data to send </td></tr>
+    <tr><td class="paramname">callback</td><td>Callback which is invoked when the write completes. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a572ec44b95085a164cdbc1523548571e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a572ec44b95085a164cdbc1523548571e">&#9670;&nbsp;</a></span>SendTextFragment() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wpi::WebSocket::SendTextFragment </td>
+          <td>(</td>
+          <td class="paramtype">std::initializer_list&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; void(<a class="el" href="classwpi_1_1span.html">span</a>&lt; <a class="el" href="classwpi_1_1uv_1_1Buffer.html">uv::Buffer</a> &gt;, <a class="el" href="classwpi_1_1uv_1_1Error.html">uv::Error</a>)&gt;&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Send a text message fragment. </p>
+<p>This must be followed by one or more <a class="el" href="classwpi_1_1WebSocket.html#a941b63f575d25a66760311116efabffd" title="Send a continuation frame.">SendFragment()</a> calls, where the last one has fin=True, to complete the message. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">data</td><td>UTF-8 encoded data to send </td></tr>
     <tr><td class="paramname">callback</td><td>Callback which is invoked when the write completes. </td></tr>
@@ -1087,14 +1430,14 @@ template&lt;typename T  = void&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="acae994158a0eeab8b4c42ee065215375"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acae994158a0eeab8b4c42ee065215375">&#9670;&nbsp;</a></span>binary</h2>
+<a id="a2e9429c99b4487994d6e4b0d0052b863"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e9429c99b4487994d6e4b0d0052b863">&#9670;&nbsp;</a></span>binary</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classwpi_1_1sig_1_1SignalBase.html">sig::Signal</a>&lt;<a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt;uint8_t&gt;, bool&gt; wpi::WebSocket::binary</td>
+          <td class="memname"><a class="el" href="classwpi_1_1sig_1_1SignalBase.html">sig::Signal</a>&lt;<a class="el" href="classwpi_1_1span.html">span</a>&lt;const uint8_t&gt;, bool&gt; wpi::WebSocket::binary</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1104,14 +1447,14 @@ template&lt;typename T  = void&gt; </div>
 
 </div>
 </div>
-<a id="ac5a6125824bc37e9e01df17a9c8ebd40"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5a6125824bc37e9e01df17a9c8ebd40">&#9670;&nbsp;</a></span>closed</h2>
+<a id="a1daec0484f6f3034717912142e3cc7e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1daec0484f6f3034717912142e3cc7e1">&#9670;&nbsp;</a></span>closed</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classwpi_1_1sig_1_1SignalBase.html">sig::Signal</a>&lt;uint16_t, <a class="el" href="classwpi_1_1StringRef.html">StringRef</a>&gt; wpi::WebSocket::closed</td>
+          <td class="memname"><a class="el" href="classwpi_1_1sig_1_1SignalBase.html">sig::Signal</a>&lt;uint16_t, std::string_view&gt; wpi::WebSocket::closed</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1121,14 +1464,14 @@ template&lt;typename T  = void&gt; </div>
 
 </div>
 </div>
-<a id="ad8f20e9f4e80d5272a7390f49f53edb3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8f20e9f4e80d5272a7390f49f53edb3">&#9670;&nbsp;</a></span>open</h2>
+<a id="a43ecb040198b66d0d88a4250d56085a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43ecb040198b66d0d88a4250d56085a4">&#9670;&nbsp;</a></span>open</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classwpi_1_1sig_1_1SignalBase.html">sig::Signal</a>&lt;<a class="el" href="classwpi_1_1StringRef.html">StringRef</a>&gt; wpi::WebSocket::open</td>
+          <td class="memname"><a class="el" href="classwpi_1_1sig_1_1SignalBase.html">sig::Signal</a>&lt;std::string_view&gt; wpi::WebSocket::open</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1138,14 +1481,14 @@ template&lt;typename T  = void&gt; </div>
 
 </div>
 </div>
-<a id="ad01689cece596b4a1a2f6c7af5518f28"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad01689cece596b4a1a2f6c7af5518f28">&#9670;&nbsp;</a></span>ping</h2>
+<a id="a0206ee21dc8765fe3648d1a6a1a54ea5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0206ee21dc8765fe3648d1a6a1a54ea5">&#9670;&nbsp;</a></span>ping</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classwpi_1_1sig_1_1SignalBase.html">sig::Signal</a>&lt;<a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt;uint8_t&gt; &gt; wpi::WebSocket::ping</td>
+          <td class="memname"><a class="el" href="classwpi_1_1sig_1_1SignalBase.html">sig::Signal</a>&lt;<a class="el" href="classwpi_1_1span.html">span</a>&lt;const uint8_t&gt; &gt; wpi::WebSocket::ping</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1155,14 +1498,14 @@ template&lt;typename T  = void&gt; </div>
 
 </div>
 </div>
-<a id="a4e9219ec46fb6d026ba1e33f6190c05c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e9219ec46fb6d026ba1e33f6190c05c">&#9670;&nbsp;</a></span>pong</h2>
+<a id="adf7938b5b72c64df87f0db631933c372"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf7938b5b72c64df87f0db631933c372">&#9670;&nbsp;</a></span>pong</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classwpi_1_1sig_1_1SignalBase.html">sig::Signal</a>&lt;<a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt;uint8_t&gt; &gt; wpi::WebSocket::pong</td>
+          <td class="memname"><a class="el" href="classwpi_1_1sig_1_1SignalBase.html">sig::Signal</a>&lt;<a class="el" href="classwpi_1_1span.html">span</a>&lt;const uint8_t&gt; &gt; wpi::WebSocket::pong</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1172,14 +1515,14 @@ template&lt;typename T  = void&gt; </div>
 
 </div>
 </div>
-<a id="afdd7c9e1831c72cc392feccd5b35ce60"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afdd7c9e1831c72cc392feccd5b35ce60">&#9670;&nbsp;</a></span>text</h2>
+<a id="a52a220899cf024226a920822171780f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52a220899cf024226a920822171780f0">&#9670;&nbsp;</a></span>text</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classwpi_1_1sig_1_1SignalBase.html">sig::Signal</a>&lt;<a class="el" href="classwpi_1_1StringRef.html">StringRef</a>, bool&gt; wpi::WebSocket::text</td>
+          <td class="memname"><a class="el" href="classwpi_1_1sig_1_1SignalBase.html">sig::Signal</a>&lt;std::string_view, bool&gt; wpi::WebSocket::text</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1198,7 +1541,7 @@ template&lt;typename T  = void&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>wpi</b></li><li class="navelem"><a class="el" href="classwpi_1_1WebSocket.html">WebSocket</a></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:34 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:11 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

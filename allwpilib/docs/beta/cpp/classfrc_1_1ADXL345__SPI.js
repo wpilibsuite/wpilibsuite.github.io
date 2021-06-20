@@ -31,7 +31,7 @@ var classfrc_1_1ADXL345__SPI =
     [ "GetX", "classfrc_1_1ADXL345__SPI.html#a2d3efc5ae387f747c8153114c9bf29b5", null ],
     [ "GetY", "classfrc_1_1ADXL345__SPI.html#ae1ad3f4e2160751d2509de4c3a5bf6ce", null ],
     [ "GetZ", "classfrc_1_1ADXL345__SPI.html#a5bb9c7836be8dcf473c578cba84c7b33", null ],
-    [ "InitSendable", "classfrc_1_1ADXL345__SPI.html#af03e3dc5d96052c2cad71212a43eea9f", null ],
+    [ "InitSendable", "classfrc_1_1ADXL345__SPI.html#abe83a316f21899aee4a689ad7131f184", null ],
     [ "operator=", "classfrc_1_1ADXL345__SPI.html#ae23006a154e967a693e1fe69e051c877", null ],
     [ "SetRange", "classfrc_1_1ADXL345__SPI.html#a364f57e34a903119d1ec36c81224583c", null ],
     [ "kDataFormatRegister", "classfrc_1_1ADXL345__SPI.html#ac189ab77603d5b67104998985fb04bf1", null ],

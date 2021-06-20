@@ -15,7 +15,7 @@ var classfrc_1_1ADXL362 =
     [ "GetX", "classfrc_1_1ADXL362.html#adccbc9394d06e348e6bab87e146c1682", null ],
     [ "GetY", "classfrc_1_1ADXL362.html#ab96761c8f7311b3b99cdf9a470ac799f", null ],
     [ "GetZ", "classfrc_1_1ADXL362.html#ac647de3a6e4cbb2545f80ce144cb5413", null ],
-    [ "InitSendable", "classfrc_1_1ADXL362.html#aa2a3edcfc6905a6d16f037aff946af93", null ],
+    [ "InitSendable", "classfrc_1_1ADXL362.html#af22475679b0bc3549caeb7476a473fea", null ],
     [ "operator=", "classfrc_1_1ADXL362.html#abf2968409e3ba34f72c9f7ec2bebe4e6", null ],
     [ "SetRange", "classfrc_1_1ADXL362.html#a7bfffe958cd49f5220b104ac748f450c", null ]
 ];

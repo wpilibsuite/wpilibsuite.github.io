@@ -7,11 +7,10 @@ var classfrc_1_1NidecBrushless =
     [ "Enable", "classfrc_1_1NidecBrushless.html#ac5f8191405126d7cd44668392929bf5a", null ],
     [ "Get", "classfrc_1_1NidecBrushless.html#a204be39f9fd6ac3e08477c5dcc71041a", null ],
     [ "GetChannel", "classfrc_1_1NidecBrushless.html#aca6932e35b07c862f0bee47a90f4cf49", null ],
-    [ "GetDescription", "classfrc_1_1NidecBrushless.html#a42cb35146ef7afe276eba11c64df5e58", null ],
+    [ "GetDescription", "classfrc_1_1NidecBrushless.html#aa63664919d6c5c6638ef0b83a07c5fa6", null ],
     [ "GetInverted", "classfrc_1_1NidecBrushless.html#adbfd4b9f2ed0a9556d303fd3aab18631", null ],
-    [ "InitSendable", "classfrc_1_1NidecBrushless.html#afec023f45c2fcff132679f2a2061fdba", null ],
+    [ "InitSendable", "classfrc_1_1NidecBrushless.html#a822e493f3c3894a0fc53e38d0274fe33", null ],
     [ "operator=", "classfrc_1_1NidecBrushless.html#afee137a7c221e61b622c92ba173a6d4b", null ],
-    [ "PIDWrite", "classfrc_1_1NidecBrushless.html#a3b2224ab431ddf00f91e1ecee74d3ad6", null ],
     [ "Set", "classfrc_1_1NidecBrushless.html#ad0fbeb8d79bbb8930b413b571abf255b", null ],
     [ "SetInverted", "classfrc_1_1NidecBrushless.html#afe6ecb3d622f3b410043eabae0a1efe8", null ],
     [ "StopMotor", "classfrc_1_1NidecBrushless.html#a2ff988ba4a5488c8da0ba2237fc26c3c", null ]

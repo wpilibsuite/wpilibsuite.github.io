@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -99,12 +99,23 @@ $(document).ready(function(){initNavTree('classwpi_1_1math_1_1MathShared.html','
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a00ba260a2b9ebf8af8f1d0bdedb15e46"><td class="memItemLeft" align="right" valign="top"><a id="a00ba260a2b9ebf8af8f1d0bdedb15e46"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ReportError</b> (const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;error)=0</td></tr>
-<tr class="separator:a00ba260a2b9ebf8af8f1d0bdedb15e46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7de7457fbb1d3618b3917ff86357b6a"><td class="memItemLeft" align="right" valign="top"><a id="ac7de7457fbb1d3618b3917ff86357b6a"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ReportErrorV</b> (fmt::string_view format, fmt::format_args args)=0</td></tr>
+<tr class="separator:ac7de7457fbb1d3618b3917ff86357b6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab57c968ef429f680a7583d07ba7b4c6a"><td class="memItemLeft" align="right" valign="top"><a id="ab57c968ef429f680a7583d07ba7b4c6a"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ReportWarningV</b> (fmt::string_view format, fmt::format_args args)=0</td></tr>
+<tr class="separator:ab57c968ef429f680a7583d07ba7b4c6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5ee9b92df99dc3fec6e40857e94a389"><td class="memItemLeft" align="right" valign="top"><a id="ab5ee9b92df99dc3fec6e40857e94a389"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ReportUsage</b> (MathUsageId id, int count)=0</td></tr>
 <tr class="separator:ab5ee9b92df99dc3fec6e40857e94a389"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba31778a8886cb3d90741c1158f9badf"><td class="memTemplParams" colspan="2"><a id="aba31778a8886cb3d90741c1158f9badf"></a>
+template&lt;typename S , typename... Args&gt; </td></tr>
+<tr class="memitem:aba31778a8886cb3d90741c1158f9badf"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ReportError</b> (const S &amp;format, Args &amp;&amp;... args)</td></tr>
+<tr class="separator:aba31778a8886cb3d90741c1158f9badf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9ba46be898511512f59461bcfa545d4"><td class="memTemplParams" colspan="2"><a id="af9ba46be898511512f59461bcfa545d4"></a>
+template&lt;typename S , typename... Args&gt; </td></tr>
+<tr class="memitem:af9ba46be898511512f59461bcfa545d4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ReportWarning</b> (const S &amp;format, Args &amp;&amp;... args)</td></tr>
+<tr class="separator:af9ba46be898511512f59461bcfa545d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>wpimath/<a class="el" href="MathShared_8h_source.html">MathShared.h</a></li>
@@ -115,7 +126,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ReportUsage</
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>wpi</b></li><li class="navelem"><b>math</b></li><li class="navelem"><a class="el" href="classwpi_1_1math_1_1MathShared.html">MathShared</a></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:34 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:11 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

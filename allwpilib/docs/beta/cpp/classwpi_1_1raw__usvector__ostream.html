@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -120,10 +120,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aeee782c40173966d4c745cc3a2b439b7"><td class="memItemLeft" align="right" valign="top"><a id="aeee782c40173966d4c745cc3a2b439b7"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>flush</b> ()=delete</td></tr>
 <tr class="separator:aeee782c40173966d4c745cc3a2b439b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1fb58f6861587fbb2aaf448bc8716510"><td class="memItemLeft" align="right" valign="top"><a id="a1fb58f6861587fbb2aaf448bc8716510"></a>
-<a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__usvector__ostream.html#a1fb58f6861587fbb2aaf448bc8716510">array</a> ()</td></tr>
-<tr class="memdesc:a1fb58f6861587fbb2aaf448bc8716510"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an <a class="el" href="classwpi_1_1ArrayRef.html" title="ArrayRef - Represent a constant reference to an array (0 or more elements consecutively in memory),...">ArrayRef</a> for the vector contents. <br /></td></tr>
-<tr class="separator:a1fb58f6861587fbb2aaf448bc8716510"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92dc6e86c173109636d6c50ef4adac55"><td class="memItemLeft" align="right" valign="top"><a id="a92dc6e86c173109636d6c50ef4adac55"></a>
+<a class="el" href="classwpi_1_1span.html">span</a>&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__usvector__ostream.html#a92dc6e86c173109636d6c50ef4adac55">array</a> ()</td></tr>
+<tr class="memdesc:a92dc6e86c173109636d6c50ef4adac55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an span for the vector contents. <br /></td></tr>
+<tr class="separator:a92dc6e86c173109636d6c50ef4adac55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f41ebf0e957601e8c1a510f6ba3a2c8"><td class="memItemLeft" align="right" valign="top"><a id="a3f41ebf0e957601e8c1a510f6ba3a2c8"></a>
+<a class="el" href="classwpi_1_1span.html">span</a>&lt; const uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>array</b> () const</td></tr>
+<tr class="separator:a3f41ebf0e957601e8c1a510f6ba3a2c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classwpi_1_1raw__pwrite__stream"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classwpi_1_1raw__pwrite__stream')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classwpi_1_1raw__pwrite__stream.html">wpi::raw_pwrite_stream</a></td></tr>
 <tr class="memitem:a04c0b5833185421348f79194220f9c5a inherit pub_methods_classwpi_1_1raw__pwrite__stream"><td class="memItemLeft" align="right" valign="top"><a id="a04c0b5833185421348f79194220f9c5a"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>raw_pwrite_stream</b> (bool Unbuffered=false)</td></tr>
@@ -174,12 +177,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>flush</b> ()</td></tr
 <tr class="memitem:ac6345c3374cc51fb881fb2a4a823339b inherit pub_methods_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top"><a id="ac6345c3374cc51fb881fb2a4a823339b"></a>
 <a class="el" href="classwpi_1_1raw__ostream.html">raw_ostream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (signed char C)</td></tr>
 <tr class="separator:ac6345c3374cc51fb881fb2a4a823339b inherit pub_methods_classwpi_1_1raw__ostream"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ae9af0b4ed3080114cbe33139a0f11d inherit pub_methods_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top"><a id="a4ae9af0b4ed3080114cbe33139a0f11d"></a>
-<a class="el" href="classwpi_1_1raw__ostream.html">raw_ostream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (<a class="el" href="classwpi_1_1ArrayRef.html">ArrayRef</a>&lt; uint8_t &gt; Arr)</td></tr>
-<tr class="separator:a4ae9af0b4ed3080114cbe33139a0f11d inherit pub_methods_classwpi_1_1raw__ostream"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f2d59c9872168a4a24ab71e16e4cf08 inherit pub_methods_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top"><a id="a8f2d59c9872168a4a24ab71e16e4cf08"></a>
-<a class="el" href="classwpi_1_1raw__ostream.html">raw_ostream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (<a class="el" href="classwpi_1_1StringRef.html">StringRef</a> Str)</td></tr>
-<tr class="separator:a8f2d59c9872168a4a24ab71e16e4cf08 inherit pub_methods_classwpi_1_1raw__ostream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a618c9cac586380816118c80260dc8406 inherit pub_methods_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top"><a id="a618c9cac586380816118c80260dc8406"></a>
+<a class="el" href="classwpi_1_1raw__ostream.html">raw_ostream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (<a class="el" href="classwpi_1_1span.html">span</a>&lt; const uint8_t &gt; Arr)</td></tr>
+<tr class="separator:a618c9cac586380816118c80260dc8406 inherit pub_methods_classwpi_1_1raw__ostream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3a34ef51cff26d4ea21f24253e936f6 inherit pub_methods_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top"><a id="ac3a34ef51cff26d4ea21f24253e936f6"></a>
+<a class="el" href="classwpi_1_1raw__ostream.html">raw_ostream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (std::string_view Str)</td></tr>
+<tr class="separator:ac3a34ef51cff26d4ea21f24253e936f6 inherit pub_methods_classwpi_1_1raw__ostream"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bbf4a72398bbefc2c7ecc3a7998ee0e inherit pub_methods_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top"><a id="a6bbf4a72398bbefc2c7ecc3a7998ee0e"></a>
 <a class="el" href="classwpi_1_1raw__ostream.html">raw_ostream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (const char *Str)</td></tr>
 <tr class="separator:a6bbf4a72398bbefc2c7ecc3a7998ee0e inherit pub_methods_classwpi_1_1raw__ostream"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -195,39 +198,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>flush</b> ()</td></tr
 <tr class="memitem:affd5dd23f539bc4b15d03cfa1f7e8c35 inherit pub_methods_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top"><a id="affd5dd23f539bc4b15d03cfa1f7e8c35"></a>
 <a class="el" href="classwpi_1_1raw__ostream.html">raw_ostream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (const <a class="el" href="classwpi_1_1SmallVectorImpl.html">SmallVectorImpl</a>&lt; uint8_t &gt; &amp;Arr)</td></tr>
 <tr class="separator:affd5dd23f539bc4b15d03cfa1f7e8c35 inherit pub_methods_classwpi_1_1raw__ostream"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e7e9f8e124d460b2ad7b6e3c517fc74 inherit pub_methods_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top"><a id="a3e7e9f8e124d460b2ad7b6e3c517fc74"></a>
-<a class="el" href="classwpi_1_1raw__ostream.html">raw_ostream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (unsigned long N)</td></tr>
-<tr class="separator:a3e7e9f8e124d460b2ad7b6e3c517fc74 inherit pub_methods_classwpi_1_1raw__ostream"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abdde12a6dd45fb6e7c3ae139e1e1e550 inherit pub_methods_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top"><a id="abdde12a6dd45fb6e7c3ae139e1e1e550"></a>
-<a class="el" href="classwpi_1_1raw__ostream.html">raw_ostream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (long N)</td></tr>
-<tr class="separator:abdde12a6dd45fb6e7c3ae139e1e1e550 inherit pub_methods_classwpi_1_1raw__ostream"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1d8819c5084cf2e720e97bffc87c212 inherit pub_methods_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top"><a id="ad1d8819c5084cf2e720e97bffc87c212"></a>
-<a class="el" href="classwpi_1_1raw__ostream.html">raw_ostream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (unsigned long long N)</td></tr>
-<tr class="separator:ad1d8819c5084cf2e720e97bffc87c212 inherit pub_methods_classwpi_1_1raw__ostream"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76cbba1cf6c523ee83e68935830ab2c7 inherit pub_methods_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top"><a id="a76cbba1cf6c523ee83e68935830ab2c7"></a>
-<a class="el" href="classwpi_1_1raw__ostream.html">raw_ostream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (long long N)</td></tr>
-<tr class="separator:a76cbba1cf6c523ee83e68935830ab2c7 inherit pub_methods_classwpi_1_1raw__ostream"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6398fa37d2e1565ff9388769dac0b084 inherit pub_methods_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top"><a id="a6398fa37d2e1565ff9388769dac0b084"></a>
-<a class="el" href="classwpi_1_1raw__ostream.html">raw_ostream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (const void *P)</td></tr>
-<tr class="separator:a6398fa37d2e1565ff9388769dac0b084 inherit pub_methods_classwpi_1_1raw__ostream"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4748cba41aa86e5695c6b1ef988751c inherit pub_methods_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top"><a id="aa4748cba41aa86e5695c6b1ef988751c"></a>
-<a class="el" href="classwpi_1_1raw__ostream.html">raw_ostream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (unsigned int N)</td></tr>
-<tr class="separator:aa4748cba41aa86e5695c6b1ef988751c inherit pub_methods_classwpi_1_1raw__ostream"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13cc473bf78549e636a2b2e192ea6979 inherit pub_methods_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top"><a id="a13cc473bf78549e636a2b2e192ea6979"></a>
-<a class="el" href="classwpi_1_1raw__ostream.html">raw_ostream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (int N)</td></tr>
-<tr class="separator:a13cc473bf78549e636a2b2e192ea6979 inherit pub_methods_classwpi_1_1raw__ostream"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2859687c887634062ef96c0b42af0a02 inherit pub_methods_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top"><a id="a2859687c887634062ef96c0b42af0a02"></a>
-<a class="el" href="classwpi_1_1raw__ostream.html">raw_ostream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (double N)</td></tr>
-<tr class="separator:a2859687c887634062ef96c0b42af0a02 inherit pub_methods_classwpi_1_1raw__ostream"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a920ad30b4d1848483292456e3caf56 inherit pub_methods_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top"><a id="a6a920ad30b4d1848483292456e3caf56"></a>
-<a class="el" href="classwpi_1_1raw__ostream.html">raw_ostream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__ostream.html#a6a920ad30b4d1848483292456e3caf56">write_hex</a> (unsigned long long N)</td></tr>
-<tr class="memdesc:a6a920ad30b4d1848483292456e3caf56 inherit pub_methods_classwpi_1_1raw__ostream"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output <code>N</code> in hexadecimal, without any prefix or padding. <br /></td></tr>
-<tr class="separator:a6a920ad30b4d1848483292456e3caf56 inherit pub_methods_classwpi_1_1raw__ostream"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedc61d955c39d530ebe686c43830f6e4 inherit pub_methods_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top"><a id="aedc61d955c39d530ebe686c43830f6e4"></a>
-<a class="el" href="classwpi_1_1raw__ostream.html">raw_ostream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__ostream.html#aedc61d955c39d530ebe686c43830f6e4">write_escaped</a> (<a class="el" href="classwpi_1_1StringRef.html">StringRef</a> Str, bool UseHexEscapes=false)</td></tr>
-<tr class="memdesc:aedc61d955c39d530ebe686c43830f6e4 inherit pub_methods_classwpi_1_1raw__ostream"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output <code>Str</code>, turning '\', '\t', '<br  />
+<tr class="memitem:aa02e120049256926c5259c6bd5bf747f inherit pub_methods_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top"><a id="aa02e120049256926c5259c6bd5bf747f"></a>
+<a class="el" href="classwpi_1_1raw__ostream.html">raw_ostream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__ostream.html#aa02e120049256926c5259c6bd5bf747f">write_escaped</a> (std::string_view Str, bool UseHexEscapes=false)</td></tr>
+<tr class="memdesc:aa02e120049256926c5259c6bd5bf747f inherit pub_methods_classwpi_1_1raw__ostream"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output <code>Str</code>, turning '\', '\t', '<br  />
 ', '"', and anything that doesn't satisfy wpi::isPrint into an escape sequence. <br /></td></tr>
-<tr class="separator:aedc61d955c39d530ebe686c43830f6e4 inherit pub_methods_classwpi_1_1raw__ostream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:aa02e120049256926c5259c6bd5bf747f inherit pub_methods_classwpi_1_1raw__ostream"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39c261144fe58a03f84f81ca8bbc1ca8 inherit pub_methods_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top"><a id="a39c261144fe58a03f84f81ca8bbc1ca8"></a>
 <a class="el" href="classwpi_1_1raw__ostream.html">raw_ostream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>write</b> (unsigned char C)</td></tr>
 <tr class="separator:a39c261144fe58a03f84f81ca8bbc1ca8 inherit pub_methods_classwpi_1_1raw__ostream"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -237,18 +212,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>flush</b> ()</td></tr
 <tr class="memitem:a65a8dbf6296efae74e59e5d97a0ece8f inherit pub_methods_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top"><a id="a65a8dbf6296efae74e59e5d97a0ece8f"></a>
 <a class="el" href="classwpi_1_1raw__ostream.html">raw_ostream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>write</b> (const uint8_t *Ptr, size_t Size)</td></tr>
 <tr class="separator:a65a8dbf6296efae74e59e5d97a0ece8f inherit pub_methods_classwpi_1_1raw__ostream"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab336769de8e878c01898e660bd7d9444 inherit pub_methods_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top"><a id="ab336769de8e878c01898e660bd7d9444"></a>
-<a class="el" href="classwpi_1_1raw__ostream.html">raw_ostream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (const <a class="el" href="classwpi_1_1format__object__base.html">format_object_base</a> &amp;Fmt)</td></tr>
-<tr class="separator:ab336769de8e878c01898e660bd7d9444 inherit pub_methods_classwpi_1_1raw__ostream"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4df49a84aebb34a2baafd83f9d9cead inherit pub_methods_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top"><a id="ab4df49a84aebb34a2baafd83f9d9cead"></a>
-<a class="el" href="classwpi_1_1raw__ostream.html">raw_ostream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (const <a class="el" href="classwpi_1_1FormattedString.html">FormattedString</a> &amp;)</td></tr>
-<tr class="separator:ab4df49a84aebb34a2baafd83f9d9cead inherit pub_methods_classwpi_1_1raw__ostream"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfe317953a1b2b909a0a5b220bc5bda7 inherit pub_methods_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top"><a id="acfe317953a1b2b909a0a5b220bc5bda7"></a>
-<a class="el" href="classwpi_1_1raw__ostream.html">raw_ostream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (const <a class="el" href="classwpi_1_1FormattedNumber.html">FormattedNumber</a> &amp;)</td></tr>
-<tr class="separator:acfe317953a1b2b909a0a5b220bc5bda7 inherit pub_methods_classwpi_1_1raw__ostream"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab166e5bc4b895dbcb36cc6c7e283a7d1 inherit pub_methods_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top"><a id="ab166e5bc4b895dbcb36cc6c7e283a7d1"></a>
-<a class="el" href="classwpi_1_1raw__ostream.html">raw_ostream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (const <a class="el" href="classwpi_1_1FormattedBytes.html">FormattedBytes</a> &amp;)</td></tr>
-<tr class="separator:ab166e5bc4b895dbcb36cc6c7e283a7d1 inherit pub_methods_classwpi_1_1raw__ostream"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3b8f5eb3087fd9217c2c2d51fbe32ac inherit pub_methods_classwpi_1_1raw__ostream"><td class="memItemLeft" align="right" valign="top"><a id="ac3b8f5eb3087fd9217c2c2d51fbe32ac"></a>
 <a class="el" href="classwpi_1_1raw__ostream.html">raw_ostream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1raw__ostream.html#ac3b8f5eb3087fd9217c2c2d51fbe32ac">indent</a> (unsigned NumSpaces)</td></tr>
 <tr class="memdesc:ac3b8f5eb3087fd9217c2c2d51fbe32ac inherit pub_methods_classwpi_1_1raw__ostream"><td class="mdescLeft">&#160;</td><td class="mdescRight">indent - Insert 'NumSpaces' spaces. <br /></td></tr>
@@ -353,7 +316,7 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>wpi</b></li><li class="navelem"><a class="el" href="classwpi_1_1raw__usvector__ostream.html">raw_usvector_ostream</a></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:34 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:11 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

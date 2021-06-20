@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -115,7 +115,7 @@ template&lt;class BasicJsonType , class CompatibleObjectType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr auto <a class="el" href="structwpi_1_1detail_1_1is__compatible__object__type.html">wpi::detail::is_compatible_object_type</a>&lt; BasicJsonType, CompatibleObjectType &gt;::value</td>
+          <td class="memname">constexpr auto <a class="el" href="structwpi_1_1detail_1_1is__compatible__object__type.html">wpi::detail::is_compatible_object_type</a>&lt; BasicJsonType, CompatibleObjectType &gt;::<a class="el" href="classvalue.html">value</a></td>
         </tr>
       </table>
   </td>
@@ -127,8 +127,8 @@ template&lt;class BasicJsonType , class CompatibleObjectType &gt; </div>
 <b>Initial value:</b><div class="fragment"><div class="line">= is_compatible_object_type_impl &lt;</div>
 <div class="line">                                  std::conjunction&lt;std::negation&lt;std::is_same&lt;void, CompatibleObjectType&gt;&gt;,</div>
 <div class="line">                                  has_mapped_type&lt;CompatibleObjectType&gt;,</div>
-<div class="line">                                  has_key_type&lt;CompatibleObjectType&gt;&gt;::value,</div>
-<div class="line">                                  <span class="keyword">typename</span> BasicJsonType::object_t, CompatibleObjectType &gt;::value</div>
+<div class="line">                                  has_key_type&lt;CompatibleObjectType&gt;&gt;<a class="code" href="classvalue.html">::value</a>,</div>
+<div class="line">                                  <span class="keyword">typename</span> BasicJsonType::object_t, CompatibleObjectType &gt;<a class="code" href="classvalue.html">::value</a></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -137,11 +137,12 @@ template&lt;class BasicJsonType , class CompatibleObjectType &gt; </div>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1099</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>wpi</b></li><li class="navelem"><a class="el" href="namespacewpi_1_1detail.html">detail</a></li><li class="navelem"><a class="el" href="structwpi_1_1detail_1_1is__compatible__object__type.html">is_compatible_object_type</a></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:34 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:11 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

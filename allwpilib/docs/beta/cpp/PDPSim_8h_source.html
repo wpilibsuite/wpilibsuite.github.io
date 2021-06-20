@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -103,7 +103,7 @@ $(document).ready(function(){initNavTree('PDPSim_8h_source.html',''); initResiza
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;frc/simulation/CallbackStore.h&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacefrc.html">frc</a> {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>frc {</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span>PowerDistributionPanel;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
@@ -161,7 +161,7 @@ $(document).ready(function(){initNavTree('PDPSim_8h_source.html',''); initResiza
 <div class="ttc" id="aclassfrc_1_1sim_1_1PDPSim_html_a0871e06044cfc3feb8aec63f6aa25aff"><div class="ttname"><a href="classfrc_1_1sim_1_1PDPSim.html#a0871e06044cfc3feb8aec63f6aa25aff">frc::sim::PDPSim::SetVoltage</a></div><div class="ttdeci">void SetVoltage(double voltage)</div><div class="ttdoc">Set the PDP voltage.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1PDPSim_html_acd8e1ca1da9b58d12f21f324bc897355"><div class="ttname"><a href="classfrc_1_1sim_1_1PDPSim.html#acd8e1ca1da9b58d12f21f324bc897355">frc::sim::PDPSim::SetInitialized</a></div><div class="ttdeci">void SetInitialized(bool initialized)</div><div class="ttdoc">Define whether the PDP has been initialized.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1PDPSim_html_a3ab02f196d266c3c92be5c0f7f5b570a"><div class="ttname"><a href="classfrc_1_1sim_1_1PDPSim.html#a3ab02f196d266c3c92be5c0f7f5b570a">frc::sim::PDPSim::ResetData</a></div><div class="ttdeci">void ResetData()</div><div class="ttdoc">Reset all PDP simulation data.</div></div>
-<div class="ttc" id="aclassfrc_1_1PowerDistributionPanel_html"><div class="ttname"><a href="classfrc_1_1PowerDistributionPanel.html">frc::PowerDistributionPanel</a></div><div class="ttdoc">Class for getting voltage, current, temperature, power and energy from the CAN PDP.</div><div class="ttdef"><b>Definition:</b> PowerDistributionPanel.h:23</div></div>
+<div class="ttc" id="aclassfrc_1_1PowerDistributionPanel_html"><div class="ttname"><a href="classfrc_1_1PowerDistributionPanel.html">frc::PowerDistributionPanel</a></div><div class="ttdoc">Class for getting voltage, current, temperature, power and energy from the CAN PDP.</div><div class="ttdef"><b>Definition:</b> PowerDistributionPanel.h:19</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1PDPSim_html_aac31715a2efef52e98a6cc997486cdc0"><div class="ttname"><a href="classfrc_1_1sim_1_1PDPSim.html#aac31715a2efef52e98a6cc997486cdc0">frc::sim::PDPSim::GetCurrent</a></div><div class="ttdeci">double GetCurrent(int channel) const</div><div class="ttdoc">Read the current in one of the PDP channels.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1PDPSim_html_a3018edd8511f636adc03c7e86f5a3fb6"><div class="ttname"><a href="classfrc_1_1sim_1_1PDPSim.html#a3018edd8511f636adc03c7e86f5a3fb6">frc::sim::PDPSim::PDPSim</a></div><div class="ttdeci">PDPSim(int module=0)</div><div class="ttdoc">Constructs from a PDP module number (CAN ID).</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1PDPSim_html_a77c120229fb935ec9e8139509a0e23e6"><div class="ttname"><a href="classfrc_1_1sim_1_1PDPSim.html#a77c120229fb935ec9e8139509a0e23e6">frc::sim::PDPSim::PDPSim</a></div><div class="ttdeci">PDPSim(const PowerDistributionPanel &amp;pdp)</div><div class="ttdoc">Constructs from a PowerDistributionPanel object.</div></div>
@@ -169,7 +169,6 @@ $(document).ready(function(){initNavTree('PDPSim_8h_source.html',''); initResiza
 <div class="ttc" id="aclassfrc_1_1sim_1_1PDPSim_html_ae3bd94f1e94527eaaa6ffe944fc6368a"><div class="ttname"><a href="classfrc_1_1sim_1_1PDPSim.html#ae3bd94f1e94527eaaa6ffe944fc6368a">frc::sim::PDPSim::RegisterCurrentCallback</a></div><div class="ttdeci">std::unique_ptr&lt; CallbackStore &gt; RegisterCurrentCallback(int channel, NotifyCallback callback, bool initialNotify)</div><div class="ttdoc">Register a callback to be run whenever the current of a specific channel changes.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1PDPSim_html_ad91a72756beb7d4ecbdb520a4014cdb9"><div class="ttname"><a href="classfrc_1_1sim_1_1PDPSim.html#ad91a72756beb7d4ecbdb520a4014cdb9">frc::sim::PDPSim::RegisterTemperatureCallback</a></div><div class="ttdeci">std::unique_ptr&lt; CallbackStore &gt; RegisterTemperatureCallback(NotifyCallback callback, bool initialNotify)</div><div class="ttdoc">Register a callback to be run whenever the PDP temperature changes.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1PDPSim_html_a3fb5b6e1334a09a295fa63b0bb54c885"><div class="ttname"><a href="classfrc_1_1sim_1_1PDPSim.html#a3fb5b6e1334a09a295fa63b0bb54c885">frc::sim::PDPSim::RegisterVoltageCallback</a></div><div class="ttdeci">std::unique_ptr&lt; CallbackStore &gt; RegisterVoltageCallback(NotifyCallback callback, bool initialNotify)</div><div class="ttdoc">Register a callback to be run whenever the PDP voltage changes.</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> CameraServer.h:18</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1PDPSim_html_a97c1f97920c0049a49eb2e755e345a56"><div class="ttname"><a href="classfrc_1_1sim_1_1PDPSim.html#a97c1f97920c0049a49eb2e755e345a56">frc::sim::PDPSim::SetAllCurrents</a></div><div class="ttdeci">void SetAllCurrents(const double *currents)</div><div class="ttdoc">Change the current in all of the PDP channels.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1PDPSim_html_a78b8909fccdbdb59e952a8410d6b8312"><div class="ttname"><a href="classfrc_1_1sim_1_1PDPSim.html#a78b8909fccdbdb59e952a8410d6b8312">frc::sim::PDPSim::SetTemperature</a></div><div class="ttdeci">void SetTemperature(double temperature)</div><div class="ttdoc">Define the PDP temperature.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1PDPSim_html"><div class="ttname"><a href="classfrc_1_1sim_1_1PDPSim.html">frc::sim::PDPSim</a></div><div class="ttdoc">Class to control a simulated Power Distribution Panel (PDP).</div><div class="ttdef"><b>Definition:</b> PDPSim.h:20</div></div>
@@ -180,7 +179,7 @@ $(document).ready(function(){initNavTree('PDPSim_8h_source.html',''); initResiza
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_297dc702852f645e4b9e531dac2da27d.html">simulation</a></li><li class="navelem"><b>PDPSim.h</b></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:30 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:05 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

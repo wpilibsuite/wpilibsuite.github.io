@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -98,9 +98,9 @@ $(document).ready(function(){initNavTree('group__hal__pwm.html',''); initResizab
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gae100a60782ec99d03463db1fb573f8b7"><td class="memItemLeft" align="right" valign="top">HAL_DigitalHandle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__pwm.html#gae100a60782ec99d03463db1fb573f8b7">HAL_InitializePWMPort</a> (HAL_PortHandle portHandle, int32_t *status)</td></tr>
-<tr class="memdesc:gae100a60782ec99d03463db1fb573f8b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a PWM port.  <a href="group__hal__pwm.html#gae100a60782ec99d03463db1fb573f8b7">More...</a><br /></td></tr>
-<tr class="separator:gae100a60782ec99d03463db1fb573f8b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabc14e1d74c60212d1da9aaf5b7cbc9a9"><td class="memItemLeft" align="right" valign="top">HAL_DigitalHandle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__pwm.html#gabc14e1d74c60212d1da9aaf5b7cbc9a9">HAL_InitializePWMPort</a> (HAL_PortHandle portHandle, const char *allocationLocation, int32_t *status)</td></tr>
+<tr class="memdesc:gabc14e1d74c60212d1da9aaf5b7cbc9a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a PWM port.  <a href="group__hal__pwm.html#gabc14e1d74c60212d1da9aaf5b7cbc9a9">More...</a><br /></td></tr>
+<tr class="separator:gabc14e1d74c60212d1da9aaf5b7cbc9a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab4d5a2dee26ab203f94c91288a47c7fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__pwm.html#gab4d5a2dee26ab203f94c91288a47c7fc">HAL_FreePWMPort</a> (HAL_DigitalHandle pwmPortHandle, int32_t *status)</td></tr>
 <tr class="memdesc:gab4d5a2dee26ab203f94c91288a47c7fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees a PWM port.  <a href="group__hal__pwm.html#gab4d5a2dee26ab203f94c91288a47c7fc">More...</a><br /></td></tr>
 <tr class="separator:gab4d5a2dee26ab203f94c91288a47c7fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -122,7 +122,7 @@ Functions</h2></td></tr>
 <tr class="memitem:gaddbb9336957cd263eec26ffdded00aba"><td class="memItemLeft" align="right" valign="top">HAL_Bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__pwm.html#gaddbb9336957cd263eec26ffdded00aba">HAL_GetPWMEliminateDeadband</a> (HAL_DigitalHandle pwmPortHandle, int32_t *status)</td></tr>
 <tr class="memdesc:gaddbb9336957cd263eec26ffdded00aba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current eliminate deadband value.  <a href="group__hal__pwm.html#gaddbb9336957cd263eec26ffdded00aba">More...</a><br /></td></tr>
 <tr class="separator:gaddbb9336957cd263eec26ffdded00aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga492c89bd51e02164ffe4359a1715e6ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__pwm.html#ga492c89bd51e02164ffe4359a1715e6ca">HAL_SetPWMRaw</a> (HAL_DigitalHandle pwmPortHandle, int32_t value, int32_t *status)</td></tr>
+<tr class="memitem:ga492c89bd51e02164ffe4359a1715e6ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__pwm.html#ga492c89bd51e02164ffe4359a1715e6ca">HAL_SetPWMRaw</a> (HAL_DigitalHandle pwmPortHandle, int32_t <a class="el" href="classvalue.html">value</a>, int32_t *status)</td></tr>
 <tr class="memdesc:ga492c89bd51e02164ffe4359a1715e6ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a PWM channel to the desired value.  <a href="group__hal__pwm.html#ga492c89bd51e02164ffe4359a1715e6ca">More...</a><br /></td></tr>
 <tr class="separator:ga492c89bd51e02164ffe4359a1715e6ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga05367c5cdfc35e8b78700ce0a8ce8661"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__pwm.html#ga05367c5cdfc35e8b78700ce0a8ce8661">HAL_SetPWMSpeed</a> (HAL_DigitalHandle pwmPortHandle, double speed, int32_t *status)</td></tr>
@@ -487,8 +487,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gae100a60782ec99d03463db1fb573f8b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae100a60782ec99d03463db1fb573f8b7">&#9670;&nbsp;</a></span>HAL_InitializePWMPort()</h2>
+<a id="gabc14e1d74c60212d1da9aaf5b7cbc9a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabc14e1d74c60212d1da9aaf5b7cbc9a9">&#9670;&nbsp;</a></span>HAL_InitializePWMPort()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -498,6 +498,12 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">HAL_PortHandle&#160;</td>
           <td class="paramname"><em>portHandle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>allocationLocation</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -517,6 +523,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">portHandle</td><td>the port to initialize </td></tr>
+    <tr><td class="paramname">allocationLocation</td><td>the location where the allocation is occuring (can be null) </td></tr>
   </table>
   </dd>
 </dl>
@@ -965,7 +972,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun May 9 2021 20:37:31 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:07 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

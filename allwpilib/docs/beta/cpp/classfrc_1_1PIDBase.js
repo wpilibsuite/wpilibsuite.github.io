@@ -16,7 +16,7 @@ var classfrc_1_1PIDBase =
     [ "GetP", "classfrc_1_1PIDBase.html#a1948ea7dac99c0267805550a25dfc3d6", null ],
     [ "GetPIDSourceType", "classfrc_1_1PIDBase.html#abfc7bf4860946eb3ab01ea3ac3fc9819", null ],
     [ "GetSetpoint", "classfrc_1_1PIDBase.html#a730de0cdead4d8d1bc96cef20e3388b0", null ],
-    [ "InitSendable", "classfrc_1_1PIDBase.html#af1b5f4f73d58f907ce8cdebbc1f7fa10", null ],
+    [ "InitSendable", "classfrc_1_1PIDBase.html#ae6161c9cf7426ae84775a74b80f4545c", null ],
     [ "OnTarget", "classfrc_1_1PIDBase.html#a92d645590cf1ce8a4e91c738d70bbaac", null ],
     [ "PIDWrite", "classfrc_1_1PIDBase.html#ab7dbcc1384cf1f1c723f89e86d6e4e6e", null ],
     [ "Reset", "classfrc_1_1PIDBase.html#a8efc7a08da5b5c4bbc0ac19ae70f9820", null ],

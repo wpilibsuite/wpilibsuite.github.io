@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -141,9 +141,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a11c5e95da0d4587da151d02c6a470e6b"><td class="memItemLeft" align="right" valign="top"><a id="a11c5e95da0d4587da151d02c6a470e6b"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>StringMap</b> (unsigned InitialSize)</td></tr>
 <tr class="separator:a11c5e95da0d4587da151d02c6a470e6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeae3f11fce11895b163a789bf588c286"><td class="memItemLeft" align="right" valign="top"><a id="aeae3f11fce11895b163a789bf588c286"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>StringMap</b> (std::initializer_list&lt; std::pair&lt; <a class="el" href="classwpi_1_1StringRef.html">StringRef</a>, ValueTy &gt;&gt; List)</td></tr>
-<tr class="separator:aeae3f11fce11895b163a789bf588c286"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf8908fb6c25fbd645142a17d7b22ada"><td class="memItemLeft" align="right" valign="top"><a id="acf8908fb6c25fbd645142a17d7b22ada"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>StringMap</b> (std::initializer_list&lt; std::pair&lt; std::string_view, ValueTy &gt;&gt; List)</td></tr>
+<tr class="separator:acf8908fb6c25fbd645142a17d7b22ada"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8fc9f401847d41e998793e12f8a753e6"><td class="memItemLeft" align="right" valign="top"><a id="a8fc9f401847d41e998793e12f8a753e6"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>StringMap</b> (<a class="el" href="classwpi_1_1StringMap.html">StringMap</a> &amp;&amp;RHS)</td></tr>
 <tr class="separator:a8fc9f401847d41e998793e12f8a753e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -168,34 +168,34 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7ae95979d58f7bc0270efffffd8f555b"><td class="memItemLeft" align="right" valign="top"><a id="a7ae95979d58f7bc0270efffffd8f555b"></a>
 <a class="el" href="classwpi_1_1iterator__range.html">iterator_range</a>&lt; <a class="el" href="classwpi_1_1StringMapKeyIterator.html">StringMapKeyIterator</a>&lt; ValueTy &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>keys</b> () const</td></tr>
 <tr class="separator:a7ae95979d58f7bc0270efffffd8f555b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53c8293898d7514f15976677bf0170ad"><td class="memItemLeft" align="right" valign="top"><a id="a53c8293898d7514f15976677bf0170ad"></a>
-<a class="el" href="classwpi_1_1StringMapIterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>find</b> (<a class="el" href="classwpi_1_1StringRef.html">StringRef</a> Key)</td></tr>
-<tr class="separator:a53c8293898d7514f15976677bf0170ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0749ec77cf81b058789a0160a739399"><td class="memItemLeft" align="right" valign="top"><a id="ae0749ec77cf81b058789a0160a739399"></a>
-<a class="el" href="classwpi_1_1StringMapConstIterator.html">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>find</b> (<a class="el" href="classwpi_1_1StringRef.html">StringRef</a> Key) const</td></tr>
-<tr class="separator:ae0749ec77cf81b058789a0160a739399"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a294a3332dd4741ef4faa6732599a4757"><td class="memItemLeft" align="right" valign="top"><a id="a294a3332dd4741ef4faa6732599a4757"></a>
-ValueTy&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1StringMap.html#a294a3332dd4741ef4faa6732599a4757">lookup</a> (<a class="el" href="classwpi_1_1StringRef.html">StringRef</a> Key) const</td></tr>
-<tr class="memdesc:a294a3332dd4741ef4faa6732599a4757"><td class="mdescLeft">&#160;</td><td class="mdescRight">lookup - Return the entry for the specified key, or a default constructed value if no such entry exists. <br /></td></tr>
-<tr class="separator:a294a3332dd4741ef4faa6732599a4757"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4f4adbd742da10dac0a15c62193135f"><td class="memItemLeft" align="right" valign="top"><a id="ae4f4adbd742da10dac0a15c62193135f"></a>
-ValueTy &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1StringMap.html#ae4f4adbd742da10dac0a15c62193135f">operator[]</a> (<a class="el" href="classwpi_1_1StringRef.html">StringRef</a> Key)</td></tr>
-<tr class="memdesc:ae4f4adbd742da10dac0a15c62193135f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lookup the ValueTy for the <code>Key</code>, or create a default constructed value if the key is not in the map. <br /></td></tr>
-<tr class="separator:ae4f4adbd742da10dac0a15c62193135f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ad52e808d717f6f72a75cc31d7998a3"><td class="memItemLeft" align="right" valign="top"><a id="a2ad52e808d717f6f72a75cc31d7998a3"></a>
-size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1StringMap.html#a2ad52e808d717f6f72a75cc31d7998a3">count</a> (<a class="el" href="classwpi_1_1StringRef.html">StringRef</a> Key) const</td></tr>
-<tr class="memdesc:a2ad52e808d717f6f72a75cc31d7998a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">count - Return 1 if the element is in the map, 0 otherwise. <br /></td></tr>
-<tr class="separator:a2ad52e808d717f6f72a75cc31d7998a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa22876640c093203d9b555ed6a2280e2"><td class="memItemLeft" align="right" valign="top"><a id="aa22876640c093203d9b555ed6a2280e2"></a>
+<a class="el" href="classwpi_1_1StringMapIterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>find</b> (std::string_view Key)</td></tr>
+<tr class="separator:aa22876640c093203d9b555ed6a2280e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d9235b24077229e0b3570e2d4ff6460"><td class="memItemLeft" align="right" valign="top"><a id="a3d9235b24077229e0b3570e2d4ff6460"></a>
+<a class="el" href="classwpi_1_1StringMapConstIterator.html">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>find</b> (std::string_view Key) const</td></tr>
+<tr class="separator:a3d9235b24077229e0b3570e2d4ff6460"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23d970e8c58667f3810a714a3f03df83"><td class="memItemLeft" align="right" valign="top"><a id="a23d970e8c58667f3810a714a3f03df83"></a>
+ValueTy&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1StringMap.html#a23d970e8c58667f3810a714a3f03df83">lookup</a> (std::string_view Key) const</td></tr>
+<tr class="memdesc:a23d970e8c58667f3810a714a3f03df83"><td class="mdescLeft">&#160;</td><td class="mdescRight">lookup - Return the entry for the specified key, or a default constructed value if no such entry exists. <br /></td></tr>
+<tr class="separator:a23d970e8c58667f3810a714a3f03df83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94dab033752348c0f0a21367f6e2d59e"><td class="memItemLeft" align="right" valign="top"><a id="a94dab033752348c0f0a21367f6e2d59e"></a>
+ValueTy &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1StringMap.html#a94dab033752348c0f0a21367f6e2d59e">operator[]</a> (std::string_view Key)</td></tr>
+<tr class="memdesc:a94dab033752348c0f0a21367f6e2d59e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lookup the ValueTy for the <code>Key</code>, or create a default constructed value if the key is not in the map. <br /></td></tr>
+<tr class="separator:a94dab033752348c0f0a21367f6e2d59e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a3857363aa67a624573601a708c29b0"><td class="memItemLeft" align="right" valign="top"><a id="a0a3857363aa67a624573601a708c29b0"></a>
+size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1StringMap.html#a0a3857363aa67a624573601a708c29b0">count</a> (std::string_view Key) const</td></tr>
+<tr class="memdesc:a0a3857363aa67a624573601a708c29b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">count - Return 1 if the element is in the map, 0 otherwise. <br /></td></tr>
+<tr class="separator:a0a3857363aa67a624573601a708c29b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4758ddddb13fcc2799785ef68ee3e104"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1StringMap.html#a4758ddddb13fcc2799785ef68ee3e104">insert</a> (<a class="el" href="classwpi_1_1StringMapEntry.html">MapEntryTy</a> *KeyValue)</td></tr>
 <tr class="memdesc:a4758ddddb13fcc2799785ef68ee3e104"><td class="mdescLeft">&#160;</td><td class="mdescRight">insert - Insert the specified key/value pair into the map.  <a href="classwpi_1_1StringMap.html#a4758ddddb13fcc2799785ef68ee3e104">More...</a><br /></td></tr>
 <tr class="separator:a4758ddddb13fcc2799785ef68ee3e104"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3a8b5ced341f9cfbfd532c6e25be2d4"><td class="memItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="classwpi_1_1StringMapIterator.html">iterator</a>, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1StringMap.html#ac3a8b5ced341f9cfbfd532c6e25be2d4">insert</a> (std::pair&lt; <a class="el" href="classwpi_1_1StringRef.html">StringRef</a>, ValueTy &gt; KV)</td></tr>
-<tr class="memdesc:ac3a8b5ced341f9cfbfd532c6e25be2d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">insert - Inserts the specified key/value pair into the map if the key isn't already in the map.  <a href="classwpi_1_1StringMap.html#ac3a8b5ced341f9cfbfd532c6e25be2d4">More...</a><br /></td></tr>
-<tr class="separator:ac3a8b5ced341f9cfbfd532c6e25be2d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab09a9e2721fc781774817c1d10bb7601"><td class="memTemplParams" colspan="2">template&lt;typename... ArgsTy&gt; </td></tr>
-<tr class="memitem:ab09a9e2721fc781774817c1d10bb7601"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="classwpi_1_1StringMapIterator.html">iterator</a>, bool &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwpi_1_1StringMap.html#ab09a9e2721fc781774817c1d10bb7601">try_emplace</a> (<a class="el" href="classwpi_1_1StringRef.html">StringRef</a> Key, ArgsTy &amp;&amp;... Args)</td></tr>
-<tr class="memdesc:ab09a9e2721fc781774817c1d10bb7601"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emplace a new element for the specified key into the map if the key isn't already in the map.  <a href="classwpi_1_1StringMap.html#ab09a9e2721fc781774817c1d10bb7601">More...</a><br /></td></tr>
-<tr class="separator:ab09a9e2721fc781774817c1d10bb7601"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d9e233c160f8ef4e10b148b27281fc0"><td class="memItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="classwpi_1_1StringMapIterator.html">iterator</a>, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1StringMap.html#a1d9e233c160f8ef4e10b148b27281fc0">insert</a> (std::pair&lt; std::string_view, ValueTy &gt; KV)</td></tr>
+<tr class="memdesc:a1d9e233c160f8ef4e10b148b27281fc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">insert - Inserts the specified key/value pair into the map if the key isn't already in the map.  <a href="classwpi_1_1StringMap.html#a1d9e233c160f8ef4e10b148b27281fc0">More...</a><br /></td></tr>
+<tr class="separator:a1d9e233c160f8ef4e10b148b27281fc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a148853d4018986bdc1fe31c5866002ee"><td class="memTemplParams" colspan="2">template&lt;typename... ArgsTy&gt; </td></tr>
+<tr class="memitem:a148853d4018986bdc1fe31c5866002ee"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="classwpi_1_1StringMapIterator.html">iterator</a>, bool &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwpi_1_1StringMap.html#a148853d4018986bdc1fe31c5866002ee">try_emplace</a> (std::string_view Key, ArgsTy &amp;&amp;... Args)</td></tr>
+<tr class="memdesc:a148853d4018986bdc1fe31c5866002ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emplace a new element for the specified key into the map if the key isn't already in the map.  <a href="classwpi_1_1StringMap.html#a148853d4018986bdc1fe31c5866002ee">More...</a><br /></td></tr>
+<tr class="separator:a148853d4018986bdc1fe31c5866002ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d8b0c604b9d8910a7d9a63a7d55d248"><td class="memItemLeft" align="right" valign="top"><a id="a3d8b0c604b9d8910a7d9a63a7d55d248"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> ()</td></tr>
 <tr class="separator:a3d8b0c604b9d8910a7d9a63a7d55d248"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -205,9 +205,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> ()</td></tr
 <tr class="memitem:ac8d2dddf99f7e371e159150b4f96d1a8"><td class="memItemLeft" align="right" valign="top"><a id="ac8d2dddf99f7e371e159150b4f96d1a8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>erase</b> (<a class="el" href="classwpi_1_1StringMapIterator.html">iterator</a> I)</td></tr>
 <tr class="separator:ac8d2dddf99f7e371e159150b4f96d1a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecffa099f6a6a0835cb15fd5ef09eed1"><td class="memItemLeft" align="right" valign="top"><a id="aecffa099f6a6a0835cb15fd5ef09eed1"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>erase</b> (<a class="el" href="classwpi_1_1StringRef.html">StringRef</a> Key)</td></tr>
-<tr class="separator:aecffa099f6a6a0835cb15fd5ef09eed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8bd27eb9b59a8ba7cdfd0ff9e63a713"><td class="memItemLeft" align="right" valign="top"><a id="ae8bd27eb9b59a8ba7cdfd0ff9e63a713"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>erase</b> (std::string_view Key)</td></tr>
+<tr class="separator:ae8bd27eb9b59a8ba7cdfd0ff9e63a713"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classwpi_1_1StringMapImpl"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classwpi_1_1StringMapImpl')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classwpi_1_1StringMapImpl.html">wpi::StringMapImpl</a></td></tr>
 <tr class="memitem:af12b401894d2fc1ca2259bb75107492a inherit pub_methods_classwpi_1_1StringMapImpl"><td class="memItemLeft" align="right" valign="top"><a id="af12b401894d2fc1ca2259bb75107492a"></a>
 unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>getNumBuckets</b> () const</td></tr>
@@ -244,18 +244,18 @@ static <a class="el" href="classwpi_1_1StringMapEntryBase.html">StringMapEntryBa
 <tr class="memitem:a7f835d2ac20a25dc58ff82e2b29ab919 inherit pro_methods_classwpi_1_1StringMapImpl"><td class="memItemLeft" align="right" valign="top"><a id="a7f835d2ac20a25dc58ff82e2b29ab919"></a>
 unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>RehashTable</b> (unsigned BucketNo=0)</td></tr>
 <tr class="separator:a7f835d2ac20a25dc58ff82e2b29ab919 inherit pro_methods_classwpi_1_1StringMapImpl"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefecb8c8e9aa7403e94b8b501b940f21 inherit pro_methods_classwpi_1_1StringMapImpl"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1StringMapImpl.html#aefecb8c8e9aa7403e94b8b501b940f21">LookupBucketFor</a> (<a class="el" href="classwpi_1_1StringRef.html">StringRef</a> Key)</td></tr>
-<tr class="memdesc:aefecb8c8e9aa7403e94b8b501b940f21 inherit pro_methods_classwpi_1_1StringMapImpl"><td class="mdescLeft">&#160;</td><td class="mdescRight">LookupBucketFor - Look up the bucket that the specified string should end up in.  <a href="classwpi_1_1StringMapImpl.html#aefecb8c8e9aa7403e94b8b501b940f21">More...</a><br /></td></tr>
-<tr class="separator:aefecb8c8e9aa7403e94b8b501b940f21 inherit pro_methods_classwpi_1_1StringMapImpl"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade196cff2dc3c4ae0c6a5c852b795c45 inherit pro_methods_classwpi_1_1StringMapImpl"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1StringMapImpl.html#ade196cff2dc3c4ae0c6a5c852b795c45">FindKey</a> (<a class="el" href="classwpi_1_1StringRef.html">StringRef</a> Key) const</td></tr>
-<tr class="memdesc:ade196cff2dc3c4ae0c6a5c852b795c45 inherit pro_methods_classwpi_1_1StringMapImpl"><td class="mdescLeft">&#160;</td><td class="mdescRight">FindKey - Look up the bucket that contains the specified key.  <a href="classwpi_1_1StringMapImpl.html#ade196cff2dc3c4ae0c6a5c852b795c45">More...</a><br /></td></tr>
-<tr class="separator:ade196cff2dc3c4ae0c6a5c852b795c45 inherit pro_methods_classwpi_1_1StringMapImpl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c5bea908ffaeaf17711b1c3864e8c8a inherit pro_methods_classwpi_1_1StringMapImpl"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1StringMapImpl.html#a7c5bea908ffaeaf17711b1c3864e8c8a">LookupBucketFor</a> (std::string_view Key)</td></tr>
+<tr class="memdesc:a7c5bea908ffaeaf17711b1c3864e8c8a inherit pro_methods_classwpi_1_1StringMapImpl"><td class="mdescLeft">&#160;</td><td class="mdescRight">LookupBucketFor - Look up the bucket that the specified string should end up in.  <a href="classwpi_1_1StringMapImpl.html#a7c5bea908ffaeaf17711b1c3864e8c8a">More...</a><br /></td></tr>
+<tr class="separator:a7c5bea908ffaeaf17711b1c3864e8c8a inherit pro_methods_classwpi_1_1StringMapImpl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65555b392a351e5ada97641a186d339d inherit pro_methods_classwpi_1_1StringMapImpl"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1StringMapImpl.html#a65555b392a351e5ada97641a186d339d">FindKey</a> (std::string_view Key) const</td></tr>
+<tr class="memdesc:a65555b392a351e5ada97641a186d339d inherit pro_methods_classwpi_1_1StringMapImpl"><td class="mdescLeft">&#160;</td><td class="mdescRight">FindKey - Look up the bucket that contains the specified key.  <a href="classwpi_1_1StringMapImpl.html#a65555b392a351e5ada97641a186d339d">More...</a><br /></td></tr>
+<tr class="separator:a65555b392a351e5ada97641a186d339d inherit pro_methods_classwpi_1_1StringMapImpl"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae27f17956939c49c4fc02714e954661b inherit pro_methods_classwpi_1_1StringMapImpl"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1StringMapImpl.html#ae27f17956939c49c4fc02714e954661b">RemoveKey</a> (<a class="el" href="classwpi_1_1StringMapEntryBase.html">StringMapEntryBase</a> *V)</td></tr>
 <tr class="memdesc:ae27f17956939c49c4fc02714e954661b inherit pro_methods_classwpi_1_1StringMapImpl"><td class="mdescLeft">&#160;</td><td class="mdescRight">RemoveKey - Remove the specified <a class="el" href="classwpi_1_1StringMapEntry.html" title="StringMapEntry - This is used to represent one value that is inserted into a StringMap.">StringMapEntry</a> from the table, but do not delete it.  <a href="classwpi_1_1StringMapImpl.html#ae27f17956939c49c4fc02714e954661b">More...</a><br /></td></tr>
 <tr class="separator:ae27f17956939c49c4fc02714e954661b inherit pro_methods_classwpi_1_1StringMapImpl"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79aa068ba63e92ae18dd09df04cdae49 inherit pro_methods_classwpi_1_1StringMapImpl"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1StringMapEntryBase.html">StringMapEntryBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1StringMapImpl.html#a79aa068ba63e92ae18dd09df04cdae49">RemoveKey</a> (<a class="el" href="classwpi_1_1StringRef.html">StringRef</a> Key)</td></tr>
-<tr class="memdesc:a79aa068ba63e92ae18dd09df04cdae49 inherit pro_methods_classwpi_1_1StringMapImpl"><td class="mdescLeft">&#160;</td><td class="mdescRight">RemoveKey - Remove the <a class="el" href="classwpi_1_1StringMapEntry.html" title="StringMapEntry - This is used to represent one value that is inserted into a StringMap.">StringMapEntry</a> for the specified key from the table, returning it.  <a href="classwpi_1_1StringMapImpl.html#a79aa068ba63e92ae18dd09df04cdae49">More...</a><br /></td></tr>
-<tr class="separator:a79aa068ba63e92ae18dd09df04cdae49 inherit pro_methods_classwpi_1_1StringMapImpl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0824233576829bde3e6e9ff3b2ced1a2 inherit pro_methods_classwpi_1_1StringMapImpl"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1StringMapEntryBase.html">StringMapEntryBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1StringMapImpl.html#a0824233576829bde3e6e9ff3b2ced1a2">RemoveKey</a> (std::string_view Key)</td></tr>
+<tr class="memdesc:a0824233576829bde3e6e9ff3b2ced1a2 inherit pro_methods_classwpi_1_1StringMapImpl"><td class="mdescLeft">&#160;</td><td class="mdescRight">RemoveKey - Remove the <a class="el" href="classwpi_1_1StringMapEntry.html" title="StringMapEntry - This is used to represent one value that is inserted into a StringMap.">StringMapEntry</a> for the specified key from the table, returning it.  <a href="classwpi_1_1StringMapImpl.html#a0824233576829bde3e6e9ff3b2ced1a2">More...</a><br /></td></tr>
+<tr class="separator:a0824233576829bde3e6e9ff3b2ced1a2 inherit pro_methods_classwpi_1_1StringMapImpl"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74cb0b18356cd3e10f345ddd200c14a6 inherit pro_methods_classwpi_1_1StringMapImpl"><td class="memItemLeft" align="right" valign="top"><a id="a74cb0b18356cd3e10f345ddd200c14a6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1StringMapImpl.html#a74cb0b18356cd3e10f345ddd200c14a6">init</a> (unsigned Size)</td></tr>
 <tr class="memdesc:a74cb0b18356cd3e10f345ddd200c14a6 inherit pro_methods_classwpi_1_1StringMapImpl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate the table with the specified number of buckets and otherwise setup the map as empty. <br /></td></tr>
@@ -315,8 +315,8 @@ template&lt;typename ValueTy &gt; </div>
 
 </div>
 </div>
-<a id="ac3a8b5ced341f9cfbfd532c6e25be2d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3a8b5ced341f9cfbfd532c6e25be2d4">&#9670;&nbsp;</a></span>insert() <span class="overload">[2/2]</span></h2>
+<a id="a1d9e233c160f8ef4e10b148b27281fc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d9e233c160f8ef4e10b148b27281fc0">&#9670;&nbsp;</a></span>insert() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -329,7 +329,7 @@ template&lt;typename ValueTy &gt; </div>
         <tr>
           <td class="memname">std::pair&lt;<a class="el" href="classwpi_1_1StringMapIterator.html">iterator</a>, bool&gt; <a class="el" href="classwpi_1_1StringMap.html">wpi::StringMap</a>&lt; ValueTy &gt;::insert </td>
           <td>(</td>
-          <td class="paramtype">std::pair&lt; <a class="el" href="classwpi_1_1StringRef.html">StringRef</a>, ValueTy &gt;&#160;</td>
+          <td class="paramtype">std::pair&lt; std::string_view, ValueTy &gt;&#160;</td>
           <td class="paramname"><em>KV</em></td><td>)</td>
           <td></td>
         </tr>
@@ -377,8 +377,8 @@ template&lt;typename ValueTy &gt; </div>
 
 </div>
 </div>
-<a id="ab09a9e2721fc781774817c1d10bb7601"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab09a9e2721fc781774817c1d10bb7601">&#9670;&nbsp;</a></span>try_emplace()</h2>
+<a id="a148853d4018986bdc1fe31c5866002ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a148853d4018986bdc1fe31c5866002ee">&#9670;&nbsp;</a></span>try_emplace()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -393,7 +393,7 @@ template&lt;typename... ArgsTy&gt; </div>
         <tr>
           <td class="memname">std::pair&lt;<a class="el" href="classwpi_1_1StringMapIterator.html">iterator</a>, bool&gt; <a class="el" href="classwpi_1_1StringMap.html">wpi::StringMap</a>&lt; ValueTy &gt;::try_emplace </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1StringRef.html">StringRef</a>&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>Key</em>, </td>
         </tr>
         <tr>
@@ -429,7 +429,7 @@ template&lt;typename... ArgsTy&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>wpi</b></li><li class="navelem"><a class="el" href="classwpi_1_1StringMap.html">StringMap</a></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:34 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:11 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

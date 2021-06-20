@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -99,67 +99,67 @@ $(document).ready(function(){initNavTree('AnalogTriggerOutput_8h_source.html',''
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;frc/DigitalSource.h&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;frc/smartdashboard/Sendable.h&quot;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;frc/smartdashboard/SendableHelper.h&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacefrc.html">frc</a> {</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span>AnalogTrigger;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogTriggerOutput.html">   46</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1AnalogTriggerOutput.html">AnalogTriggerOutput</a> : <span class="keyword">public</span> <a class="code" href="classfrc_1_1DigitalSource.html">DigitalSource</a>,</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                            <span class="keyword">public</span> <a class="code" href="classfrc_1_1Sendable.html">Sendable</a>,</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                            <span class="keyword">public</span> <a class="code" href="classfrc_1_1SendableHelper.html">SendableHelper</a>&lt;AnalogTriggerOutput&gt; {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classfrc_1_1AnalogTrigger.html">AnalogTrigger</a>;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogTriggerOutput.html#ab58738384a31d8a9a910aaa9abf92b5b">   57</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1AnalogTriggerOutput.html#ab58738384a31d8a9a910aaa9abf92b5b">Get</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="comment">// DigitalSource interface</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogTriggerOutput.html#a7dca83a1f3d4c07c9c643869963b56b2">   63</a></span>&#160;<span class="comment"></span>  HAL_Handle <a class="code" href="classfrc_1_1AnalogTriggerOutput.html#a7dca83a1f3d4c07c9c643869963b56b2">GetPortHandleForRouting</a>() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogTriggerOutput.html#aba1aa9dd1dd204e21d2e7b5fbf5c05a7">   68</a></span>&#160;  AnalogTriggerType <a class="code" href="classfrc_1_1AnalogTriggerOutput.html#aba1aa9dd1dd204e21d2e7b5fbf5c05a7">GetAnalogTriggerTypeForRouting</a>() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogTriggerOutput.html#a69265335b7be774b23a2d59e05ad17bd">   73</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1AnalogTriggerOutput.html#a69265335b7be774b23a2d59e05ad17bd">IsAnalogTrigger</a>() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogTriggerOutput.html#ab3989cac7c4fac7979b0d10376f21f76">   78</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classfrc_1_1AnalogTriggerOutput.html#ab3989cac7c4fac7979b0d10376f21f76">GetChannel</a>() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogTriggerOutput.html#a2a7156757d300d058dd942274cab21d2">   80</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1AnalogTriggerOutput.html#a2a7156757d300d058dd942274cab21d2">InitSendable</a>(<a class="code" href="classfrc_1_1SendableBuilder.html">SendableBuilder</a>&amp; builder) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogTriggerOutput.html#a11d4d8d796a58b120464256fdb455bd1">   94</a></span>&#160;  <a class="code" href="classfrc_1_1AnalogTriggerOutput.html#a11d4d8d796a58b120464256fdb455bd1">AnalogTriggerOutput</a>(<span class="keyword">const</span> <a class="code" href="classfrc_1_1AnalogTrigger.html">AnalogTrigger</a>&amp; trigger,</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                      AnalogTriggerType outputType);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="comment">// Uses pointer rather than smart pointer because a user can not construct</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="comment">// an AnalogTriggerOutput themselves and because the AnalogTriggerOutput</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="comment">// should always be in scope at the same time as an AnalogTrigger.</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keyword">const</span> <a class="code" href="classfrc_1_1AnalogTrigger.html">AnalogTrigger</a>* m_trigger;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  AnalogTriggerType m_outputType;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;};</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;wpi/sendable/Sendable.h&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;wpi/sendable/SendableHelper.h&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;frc/DigitalSource.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span>frc {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span>AnalogTrigger;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogTriggerOutput.html">   47</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1AnalogTriggerOutput.html">AnalogTriggerOutput</a> : <span class="keyword">public</span> <a class="code" href="classfrc_1_1DigitalSource.html">DigitalSource</a>,</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                            <span class="keyword">public</span> <a class="code" href="classwpi_1_1Sendable.html">wpi::Sendable</a>,</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                            <span class="keyword">public</span> <a class="code" href="classwpi_1_1SendableHelper.html">wpi::SendableHelper</a>&lt;AnalogTriggerOutput&gt; {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classfrc_1_1AnalogTrigger.html">AnalogTrigger</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogTriggerOutput.html#ab58738384a31d8a9a910aaa9abf92b5b">   58</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1AnalogTriggerOutput.html#ab58738384a31d8a9a910aaa9abf92b5b">Get</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="comment">// DigitalSource interface</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogTriggerOutput.html#a7dca83a1f3d4c07c9c643869963b56b2">   64</a></span>&#160;<span class="comment"></span>  HAL_Handle <a class="code" href="classfrc_1_1AnalogTriggerOutput.html#a7dca83a1f3d4c07c9c643869963b56b2">GetPortHandleForRouting</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogTriggerOutput.html#aba1aa9dd1dd204e21d2e7b5fbf5c05a7">   69</a></span>&#160;  AnalogTriggerType <a class="code" href="classfrc_1_1AnalogTriggerOutput.html#aba1aa9dd1dd204e21d2e7b5fbf5c05a7">GetAnalogTriggerTypeForRouting</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogTriggerOutput.html#a69265335b7be774b23a2d59e05ad17bd">   74</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1AnalogTriggerOutput.html#a69265335b7be774b23a2d59e05ad17bd">IsAnalogTrigger</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogTriggerOutput.html#ab3989cac7c4fac7979b0d10376f21f76">   79</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="classfrc_1_1AnalogTriggerOutput.html#ab3989cac7c4fac7979b0d10376f21f76">GetChannel</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogTriggerOutput.html#a9ede5f6a6d9c3a2811902c47e9345441">   81</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1AnalogTriggerOutput.html#a9ede5f6a6d9c3a2811902c47e9345441">InitSendable</a>(<a class="code" href="classwpi_1_1SendableBuilder.html">wpi::SendableBuilder</a>&amp; builder) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="classfrc_1_1AnalogTriggerOutput.html#a11d4d8d796a58b120464256fdb455bd1">   95</a></span>&#160;  <a class="code" href="classfrc_1_1AnalogTriggerOutput.html#a11d4d8d796a58b120464256fdb455bd1">AnalogTriggerOutput</a>(<span class="keyword">const</span> <a class="code" href="classfrc_1_1AnalogTrigger.html">AnalogTrigger</a>&amp; trigger,</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                      AnalogTriggerType outputType);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="comment">// Uses pointer rather than smart pointer because a user can not construct</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="comment">// an AnalogTriggerOutput themselves and because the AnalogTriggerOutput</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="comment">// should always be in scope at the same time as an AnalogTrigger.</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keyword">const</span> <a class="code" href="classfrc_1_1AnalogTrigger.html">AnalogTrigger</a>* m_trigger;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  AnalogTriggerType m_outputType;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;};</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}  <span class="comment">// namespace frc</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassfrc_1_1AnalogTriggerOutput_html"><div class="ttname"><a href="classfrc_1_1AnalogTriggerOutput.html">frc::AnalogTriggerOutput</a></div><div class="ttdoc">Class to represent a specific output from an analog trigger.</div><div class="ttdef"><b>Definition:</b> AnalogTriggerOutput.h:48</div></div>
+<div class="ttc" id="aclassfrc_1_1AnalogTriggerOutput_html"><div class="ttname"><a href="classfrc_1_1AnalogTriggerOutput.html">frc::AnalogTriggerOutput</a></div><div class="ttdoc">Class to represent a specific output from an analog trigger.</div><div class="ttdef"><b>Definition:</b> AnalogTriggerOutput.h:49</div></div>
 <div class="ttc" id="aclassfrc_1_1AnalogTriggerOutput_html_ab3989cac7c4fac7979b0d10376f21f76"><div class="ttname"><a href="classfrc_1_1AnalogTriggerOutput.html#ab3989cac7c4fac7979b0d10376f21f76">frc::AnalogTriggerOutput::GetChannel</a></div><div class="ttdeci">int GetChannel() const override</div></div>
-<div class="ttc" id="aclassfrc_1_1AnalogTrigger_html"><div class="ttname"><a href="classfrc_1_1AnalogTrigger.html">frc::AnalogTrigger</a></div><div class="ttdef"><b>Definition:</b> AnalogTrigger.h:24</div></div>
-<div class="ttc" id="aclassfrc_1_1AnalogTriggerOutput_html_a2a7156757d300d058dd942274cab21d2"><div class="ttname"><a href="classfrc_1_1AnalogTriggerOutput.html#a2a7156757d300d058dd942274cab21d2">frc::AnalogTriggerOutput::InitSendable</a></div><div class="ttdeci">void InitSendable(SendableBuilder &amp;builder) override</div><div class="ttdoc">Initializes this Sendable object.</div></div>
+<div class="ttc" id="aclasswpi_1_1SendableBuilder_html"><div class="ttname"><a href="classwpi_1_1SendableBuilder.html">wpi::SendableBuilder</a></div><div class="ttdef"><b>Definition:</b> SendableBuilder.h:18</div></div>
+<div class="ttc" id="aclasswpi_1_1Sendable_html"><div class="ttname"><a href="classwpi_1_1Sendable.html">wpi::Sendable</a></div><div class="ttdoc">Interface for Sendable objects.</div><div class="ttdef"><b>Definition:</b> Sendable.h:14</div></div>
+<div class="ttc" id="aclassfrc_1_1AnalogTrigger_html"><div class="ttname"><a href="classfrc_1_1AnalogTrigger.html">frc::AnalogTrigger</a></div><div class="ttdef"><b>Definition:</b> AnalogTrigger.h:21</div></div>
 <div class="ttc" id="aclassfrc_1_1AnalogTriggerOutput_html_a11d4d8d796a58b120464256fdb455bd1"><div class="ttname"><a href="classfrc_1_1AnalogTriggerOutput.html#a11d4d8d796a58b120464256fdb455bd1">frc::AnalogTriggerOutput::AnalogTriggerOutput</a></div><div class="ttdeci">AnalogTriggerOutput(const AnalogTrigger &amp;trigger, AnalogTriggerType outputType)</div><div class="ttdoc">Create an object that represents one of the four outputs from an analog trigger.</div></div>
 <div class="ttc" id="aclassfrc_1_1AnalogTriggerOutput_html_ab58738384a31d8a9a910aaa9abf92b5b"><div class="ttname"><a href="classfrc_1_1AnalogTriggerOutput.html#ab58738384a31d8a9a910aaa9abf92b5b">frc::AnalogTriggerOutput::Get</a></div><div class="ttdeci">bool Get() const</div><div class="ttdoc">Get the state of the analog trigger output.</div></div>
 <div class="ttc" id="aclassfrc_1_1AnalogTriggerOutput_html_a69265335b7be774b23a2d59e05ad17bd"><div class="ttname"><a href="classfrc_1_1AnalogTriggerOutput.html#a69265335b7be774b23a2d59e05ad17bd">frc::AnalogTriggerOutput::IsAnalogTrigger</a></div><div class="ttdeci">bool IsAnalogTrigger() const override</div><div class="ttdoc">Is source an AnalogTrigger.</div></div>
-<div class="ttc" id="aclassfrc_1_1Sendable_html"><div class="ttname"><a href="classfrc_1_1Sendable.html">frc::Sendable</a></div><div class="ttdoc">Interface for Sendable objects.</div><div class="ttdef"><b>Definition:</b> Sendable.h:14</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> CameraServer.h:18</div></div>
+<div class="ttc" id="aclasswpi_1_1SendableHelper_html"><div class="ttname"><a href="classwpi_1_1SendableHelper.html">wpi::SendableHelper</a></div><div class="ttdoc">A helper class for use with objects that add themselves to SendableRegistry.</div><div class="ttdef"><b>Definition:</b> SendableHelper.h:24</div></div>
 <div class="ttc" id="aclassfrc_1_1DigitalSource_html"><div class="ttname"><a href="classfrc_1_1DigitalSource.html">frc::DigitalSource</a></div><div class="ttdoc">DigitalSource Interface.</div><div class="ttdef"><b>Definition:</b> DigitalSource.h:22</div></div>
 <div class="ttc" id="aclassfrc_1_1AnalogTriggerOutput_html_aba1aa9dd1dd204e21d2e7b5fbf5c05a7"><div class="ttname"><a href="classfrc_1_1AnalogTriggerOutput.html#aba1aa9dd1dd204e21d2e7b5fbf5c05a7">frc::AnalogTriggerOutput::GetAnalogTriggerTypeForRouting</a></div><div class="ttdeci">AnalogTriggerType GetAnalogTriggerTypeForRouting() const override</div></div>
-<div class="ttc" id="aclassfrc_1_1SendableHelper_html"><div class="ttname"><a href="classfrc_1_1SendableHelper.html">frc::SendableHelper</a></div><div class="ttdoc">A helper class for use with objects that add themselves to SendableRegistry.</div><div class="ttdef"><b>Definition:</b> SendableHelper.h:25</div></div>
-<div class="ttc" id="aclassfrc_1_1SendableBuilder_html"><div class="ttname"><a href="classfrc_1_1SendableBuilder.html">frc::SendableBuilder</a></div><div class="ttdef"><b>Definition:</b> SendableBuilder.h:21</div></div>
+<div class="ttc" id="aclassfrc_1_1AnalogTriggerOutput_html_a9ede5f6a6d9c3a2811902c47e9345441"><div class="ttname"><a href="classfrc_1_1AnalogTriggerOutput.html#a9ede5f6a6d9c3a2811902c47e9345441">frc::AnalogTriggerOutput::InitSendable</a></div><div class="ttdeci">void InitSendable(wpi::SendableBuilder &amp;builder) override</div><div class="ttdoc">Initializes this Sendable object.</div></div>
 <div class="ttc" id="aclassfrc_1_1AnalogTriggerOutput_html_a7dca83a1f3d4c07c9c643869963b56b2"><div class="ttname"><a href="classfrc_1_1AnalogTriggerOutput.html#a7dca83a1f3d4c07c9c643869963b56b2">frc::AnalogTriggerOutput::GetPortHandleForRouting</a></div><div class="ttdeci">HAL_Handle GetPortHandleForRouting() const override</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><b>AnalogTriggerOutput.h</b></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:30 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:05 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

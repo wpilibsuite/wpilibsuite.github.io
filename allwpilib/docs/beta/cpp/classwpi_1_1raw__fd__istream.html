@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -108,9 +108,9 @@ Inheritance diagram for wpi::raw_fd_istream:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0d735be3a904069eb9e82a1ca75ab776"><td class="memItemLeft" align="right" valign="top"><a id="a0d735be3a904069eb9e82a1ca75ab776"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>raw_fd_istream</b> (const <a class="el" href="classwpi_1_1Twine.html">Twine</a> &amp;filename, std::error_code &amp;ec, size_t bufSize=4096)</td></tr>
-<tr class="separator:a0d735be3a904069eb9e82a1ca75ab776"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55b833f99f968bf9651058d4695c7d6d"><td class="memItemLeft" align="right" valign="top"><a id="a55b833f99f968bf9651058d4695c7d6d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>raw_fd_istream</b> (std::string_view filename, std::error_code &amp;ec, size_t bufSize=4096)</td></tr>
+<tr class="separator:a55b833f99f968bf9651058d4695c7d6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee0102384dfa3d65220ee11b24f47597"><td class="memItemLeft" align="right" valign="top"><a id="aee0102384dfa3d65220ee11b24f47597"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>raw_fd_istream</b> (int fd, bool shouldClose, size_t bufSize=4096)</td></tr>
 <tr class="separator:aee0102384dfa3d65220ee11b24f47597"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -131,10 +131,10 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>in_avail</b> () con
 <a class="el" href="classwpi_1_1raw__istream.html">raw_istream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> (signed char &amp;c)</td></tr>
 <tr class="separator:a3ff8582034b2f3e2f06740092414b37e inherit pub_methods_classwpi_1_1raw__istream"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9f2a429aed808d7525af5f710e8d9dc inherit pub_methods_classwpi_1_1raw__istream"><td class="memItemLeft" align="right" valign="top"><a id="ae9f2a429aed808d7525af5f710e8d9dc"></a>
-<a class="el" href="classwpi_1_1raw__istream.html">raw_istream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> (void *data, size_t len)</td></tr>
+<a class="el" href="classwpi_1_1raw__istream.html">raw_istream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> (void *<a class="el" href="structdata.html">data</a>, size_t len)</td></tr>
 <tr class="separator:ae9f2a429aed808d7525af5f710e8d9dc inherit pub_methods_classwpi_1_1raw__istream"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25757be9fa4f1f83c4ff1c8af242aa1d inherit pub_methods_classwpi_1_1raw__istream"><td class="memItemLeft" align="right" valign="top"><a id="a25757be9fa4f1f83c4ff1c8af242aa1d"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>readsome</b> (void *data, size_t len)</td></tr>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>readsome</b> (void *<a class="el" href="structdata.html">data</a>, size_t len)</td></tr>
 <tr class="separator:a25757be9fa4f1f83c4ff1c8af242aa1d inherit pub_methods_classwpi_1_1raw__istream"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6211ba463f0f610b256a1d3055e5e09b inherit pub_methods_classwpi_1_1raw__istream"><td class="memItemLeft" align="right" valign="top"><a id="a6211ba463f0f610b256a1d3055e5e09b"></a>
 <a class="el" href="classwpi_1_1raw__istream.html">raw_istream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>readinto</b> (<a class="el" href="classwpi_1_1SmallVectorImpl.html">SmallVectorImpl</a>&lt; char &gt; &amp;buf, size_t len)</td></tr>
@@ -151,9 +151,9 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>readsome</b> (void 
 <tr class="memitem:a5af8e8bea494a8f9ac8707b018db9c90 inherit pub_methods_classwpi_1_1raw__istream"><td class="memItemLeft" align="right" valign="top"><a id="a5af8e8bea494a8f9ac8707b018db9c90"></a>
 <a class="el" href="classwpi_1_1raw__istream.html">raw_istream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>readinto</b> (std::string &amp;buf, size_t len)</td></tr>
 <tr class="separator:a5af8e8bea494a8f9ac8707b018db9c90 inherit pub_methods_classwpi_1_1raw__istream"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a119a337d359746d77d35c62a7962d5d1 inherit pub_methods_classwpi_1_1raw__istream"><td class="memItemLeft" align="right" valign="top"><a id="a119a337d359746d77d35c62a7962d5d1"></a>
-<a class="el" href="classwpi_1_1StringRef.html">StringRef</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getline</b> (<a class="el" href="classwpi_1_1SmallVectorImpl.html">SmallVectorImpl</a>&lt; char &gt; &amp;buf, int maxLen)</td></tr>
-<tr class="separator:a119a337d359746d77d35c62a7962d5d1 inherit pub_methods_classwpi_1_1raw__istream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4aceb2d1f0d66f2ff13e8aed8c3df0ac inherit pub_methods_classwpi_1_1raw__istream"><td class="memItemLeft" align="right" valign="top"><a id="a4aceb2d1f0d66f2ff13e8aed8c3df0ac"></a>
+std::string_view&#160;</td><td class="memItemRight" valign="bottom"><b>getline</b> (<a class="el" href="classwpi_1_1SmallVectorImpl.html">SmallVectorImpl</a>&lt; char &gt; &amp;buf, int maxLen)</td></tr>
+<tr class="separator:a4aceb2d1f0d66f2ff13e8aed8c3df0ac inherit pub_methods_classwpi_1_1raw__istream"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe8c2058c3999d30f915d13098392efa inherit pub_methods_classwpi_1_1raw__istream"><td class="memItemLeft" align="right" valign="top"><a id="afe8c2058c3999d30f915d13098392efa"></a>
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>read_count</b> () const</td></tr>
 <tr class="separator:afe8c2058c3999d30f915d13098392efa inherit pub_methods_classwpi_1_1raw__istream"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -189,7 +189,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>set_read_count</b> (s
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>wpi</b></li><li class="navelem"><a class="el" href="classwpi_1_1raw__fd__istream.html">raw_fd_istream</a></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:34 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:11 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

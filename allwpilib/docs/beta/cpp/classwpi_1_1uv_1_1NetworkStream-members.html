@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -115,7 +115,7 @@ $(document).ready(function(){initNavTree('classwpi_1_1uv_1_1NetworkStream.html',
   <tr class="even"><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Handle.html#a2717ad050c76a1b7f30ecb4b6590c447">GetRawHandle</a>() const noexcept</td><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Handle.html">wpi::uv::Handle</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Stream.html#a30715b0edb0ce29e9e7c5cae71f847de">GetRawStream</a>() const noexcept</td><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Stream.html">wpi::uv::Stream</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Handle.html#abb60b23d01d10e0391358407c2a25948">GetType</a>() const noexcept</td><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Handle.html">wpi::uv::Handle</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Handle.html#a166fe8e4d5ac708d097f9bf05fa4adaa">GetTypeName</a>() const noexcept</td><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Handle.html">wpi::uv::Handle</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Handle.html#a31a2f5256e99fbc665d353282c80c458">GetTypeName</a>() const noexcept</td><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Handle.html">wpi::uv::Handle</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Stream.html#a97b74fd75c1b2bea07a5ed879558fc08">GetWriteQueueSize</a>() const noexcept</td><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Stream.html">wpi::uv::Stream</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>Handle</b>(const Handle &amp;)=delete (defined in <a class="el" href="classwpi_1_1uv_1_1Handle.html">wpi::uv::Handle</a>)</td><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Handle.html">wpi::uv::Handle</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>Handle</b>(Handle &amp;&amp;)=delete (defined in <a class="el" href="classwpi_1_1uv_1_1Handle.html">wpi::uv::Handle</a>)</td><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Handle.html">wpi::uv::Handle</a></td><td class="entry"></td></tr>
@@ -149,21 +149,21 @@ $(document).ready(function(){initNavTree('classwpi_1_1uv_1_1NetworkStream.html',
   <tr class="even"><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Stream.html#abdc5852aa5766358a932e2ee25f55603">StartRead</a>()</td><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Stream.html">wpi::uv::Stream</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Stream.html#a3da94ae8479b77552e23ca6b3b359b65">StopRead</a>()</td><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Stream.html">wpi::uv::Stream</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>Stream</b>(uv_stream_t *uv_stream) (defined in <a class="el" href="classwpi_1_1uv_1_1Stream.html">wpi::uv::Stream</a>)</td><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Stream.html">wpi::uv::Stream</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">explicit</span><span class="mlabel">protected</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Stream.html#ae9b36fd5142f9f15dcd6a7e151e9428a">TryWrite</a>(ArrayRef&lt; Buffer &gt; bufs)</td><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Stream.html">wpi::uv::Stream</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Stream.html#af62a62892dd2b8d10f5058cfca994f20">TryWrite</a>(span&lt; const Buffer &gt; bufs)</td><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Stream.html">wpi::uv::Stream</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Stream.html#a9468da7d168f36fdf1ed85bc1f81ee58">TryWrite</a>(std::initializer_list&lt; Buffer &gt; bufs)</td><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Stream.html">wpi::uv::Stream</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>Type</b> typedef (defined in <a class="el" href="classwpi_1_1uv_1_1Handle.html">wpi::uv::Handle</a>)</td><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Handle.html">wpi::uv::Handle</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Handle.html#aa21a674b31c3042249e6f04319a62814">Unreference</a>() noexcept</td><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Handle.html">wpi::uv::Handle</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Stream.html#aa321ae003a82ce4259fb4a588a043846">Write</a>(ArrayRef&lt; Buffer &gt; bufs, const std::shared_ptr&lt; WriteReq &gt; &amp;req)</td><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Stream.html">wpi::uv::Stream</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Stream.html#a0f4ff53bfe689a8208f4bdd1681d38b1">Write</a>(span&lt; const Buffer &gt; bufs, const std::shared_ptr&lt; WriteReq &gt; &amp;req)</td><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Stream.html">wpi::uv::Stream</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Stream.html#a9309aefa81bdf09611e04ef519ae2608">Write</a>(std::initializer_list&lt; Buffer &gt; bufs, const std::shared_ptr&lt; WriteReq &gt; &amp;req)</td><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Stream.html">wpi::uv::Stream</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Stream.html#a65741c31397d22fcaba12398a279130a">Write</a>(ArrayRef&lt; Buffer &gt; bufs, std::function&lt; void(MutableArrayRef&lt; Buffer &gt;, Error)&gt; callback)</td><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Stream.html">wpi::uv::Stream</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Stream.html#a18541d62397097c7977cec6d69b17896">Write</a>(std::initializer_list&lt; Buffer &gt; bufs, std::function&lt; void(MutableArrayRef&lt; Buffer &gt;, Error)&gt; callback)</td><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Stream.html">wpi::uv::Stream</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Stream.html#a82a351e26eb6183a40f6a67601807fe6">Write</a>(span&lt; const Buffer &gt; bufs, std::function&lt; void(span&lt; Buffer &gt;, Error)&gt; callback)</td><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Stream.html">wpi::uv::Stream</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Stream.html#aaf6ccf4c72b8db143020682366acd92c">Write</a>(std::initializer_list&lt; Buffer &gt; bufs, std::function&lt; void(span&lt; Buffer &gt;, Error)&gt; callback)</td><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Stream.html">wpi::uv::Stream</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>~Handle</b>() noexcept (defined in <a class="el" href="classwpi_1_1uv_1_1Handle.html">wpi::uv::Handle</a>)</td><td class="entry"><a class="el" href="classwpi_1_1uv_1_1Handle.html">wpi::uv::Handle</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun May 9 2021 20:37:35 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:11 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

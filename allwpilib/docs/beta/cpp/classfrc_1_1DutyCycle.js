@@ -11,7 +11,7 @@ var classfrc_1_1DutyCycle =
     [ "GetOutputRaw", "classfrc_1_1DutyCycle.html#ab106328df2b825d5d77e2097cf9bd85a", null ],
     [ "GetOutputScaleFactor", "classfrc_1_1DutyCycle.html#ac5de1c5bd282d9f9d3b802a2cfb2b115", null ],
     [ "GetSourceChannel", "classfrc_1_1DutyCycle.html#aae652968ffd978f134c3e7bfaa058cc5", null ],
-    [ "InitSendable", "classfrc_1_1DutyCycle.html#a0e54e906d2f570ab0e8d1b81b2047325", null ],
+    [ "InitSendable", "classfrc_1_1DutyCycle.html#ae69325a01a00be25654ec842a3616dd4", null ],
     [ "operator=", "classfrc_1_1DutyCycle.html#a568188a511e98dc490bb9f1095b9302e", null ],
     [ "AnalogTrigger", "classfrc_1_1DutyCycle.html#aaae5addbdfb60c5f834f1cd08e59dadd", null ],
     [ "DMA", "classfrc_1_1DutyCycle.html#a8dd886aeff72fdd847a45f3bee3810b1", null ],

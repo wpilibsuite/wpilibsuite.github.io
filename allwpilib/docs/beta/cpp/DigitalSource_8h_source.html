@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -101,18 +101,18 @@ $(document).ready(function(){initNavTree('DigitalSource_8h_source.html',''); ini
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;hal/Types.h&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;frc/InterruptableSensorBase.h&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;frc/AnalogTriggerType.h&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacefrc.html">frc</a> {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>frc {</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classfrc_1_1DigitalSource.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1DigitalSource.html">DigitalSource</a> : <span class="keyword">public</span> <a class="code" href="classfrc_1_1InterruptableSensorBase.html">InterruptableSensorBase</a> {</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classfrc_1_1DigitalSource.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1DigitalSource.html">DigitalSource</a> {</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <a class="code" href="classfrc_1_1DigitalSource.html">DigitalSource</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <a class="code" href="classfrc_1_1DigitalSource.html">DigitalSource</a>(<a class="code" href="classfrc_1_1DigitalSource.html">DigitalSource</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <a class="code" href="classfrc_1_1DigitalSource.html">DigitalSource</a>&amp; operator=(<a class="code" href="classfrc_1_1DigitalSource.html">DigitalSource</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  HAL_Handle GetPortHandleForRouting() <span class="keyword">const override</span> = 0;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  AnalogTriggerType GetAnalogTriggerTypeForRouting() <span class="keyword">const override</span> = 0;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keyword">virtual</span> HAL_Handle GetPortHandleForRouting() <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">virtual</span> AnalogTriggerType GetAnalogTriggerTypeForRouting() <span class="keyword">const</span> = 0;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> IsAnalogTrigger() <span class="keyword">const</span> = 0;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">int</span> GetChannel() <span class="keyword">const</span> = 0;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
@@ -120,14 +120,12 @@ $(document).ready(function(){initNavTree('DigitalSource_8h_source.html',''); ini
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}  <span class="comment">// namespace frc</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassfrc_1_1InterruptableSensorBase_html"><div class="ttname"><a href="classfrc_1_1InterruptableSensorBase.html">frc::InterruptableSensorBase</a></div><div class="ttdef"><b>Definition:</b> InterruptableSensorBase.h:17</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> CameraServer.h:18</div></div>
 <div class="ttc" id="aclassfrc_1_1DigitalSource_html"><div class="ttname"><a href="classfrc_1_1DigitalSource.html">frc::DigitalSource</a></div><div class="ttdoc">DigitalSource Interface.</div><div class="ttdef"><b>Definition:</b> DigitalSource.h:22</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><b>DigitalSource.h</b></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:30 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:05 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

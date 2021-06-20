@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -99,13 +99,13 @@ $(document).ready(function(){initNavTree('group__ntcore__rpc__cfunc.html',''); i
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga5b9ab2c7ec2ecfa65bd8e38a3e2058cc"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__rpc__cfunc.html#ga5b9ab2c7ec2ecfa65bd8e38a3e2058cc">NT_RpcCallback</a>) (void *data, const struct <a class="el" href="structNT__RpcAnswer.html">NT_RpcAnswer</a> *call)</td></tr>
+<tr class="memitem:ga5b9ab2c7ec2ecfa65bd8e38a3e2058cc"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__rpc__cfunc.html#ga5b9ab2c7ec2ecfa65bd8e38a3e2058cc">NT_RpcCallback</a>) (void *<a class="el" href="structdata.html">data</a>, const struct <a class="el" href="structNT__RpcAnswer.html">NT_RpcAnswer</a> *call)</td></tr>
 <tr class="memdesc:ga5b9ab2c7ec2ecfa65bd8e38a3e2058cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remote Procedure Call (RPC) callback function.  <a href="group__ntcore__rpc__cfunc.html#ga5b9ab2c7ec2ecfa65bd8e38a3e2058cc">More...</a><br /></td></tr>
 <tr class="separator:ga5b9ab2c7ec2ecfa65bd8e38a3e2058cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gaab91bc59f5a82124864f78d80ab99784"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__rpc__cfunc.html#gaab91bc59f5a82124864f78d80ab99784">NT_CreateRpc</a> (NT_Entry entry, const char *def, size_t def_len, void *data, <a class="el" href="group__ntcore__rpc__cfunc.html#ga5b9ab2c7ec2ecfa65bd8e38a3e2058cc">NT_RpcCallback</a> callback)</td></tr>
+<tr class="memitem:gaab91bc59f5a82124864f78d80ab99784"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__rpc__cfunc.html#gaab91bc59f5a82124864f78d80ab99784">NT_CreateRpc</a> (NT_Entry entry, const char *def, size_t def_len, void *<a class="el" href="structdata.html">data</a>, <a class="el" href="group__ntcore__rpc__cfunc.html#ga5b9ab2c7ec2ecfa65bd8e38a3e2058cc">NT_RpcCallback</a> callback)</td></tr>
 <tr class="memdesc:gaab91bc59f5a82124864f78d80ab99784"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a callback-based RPC entry point.  <a href="group__ntcore__rpc__cfunc.html#gaab91bc59f5a82124864f78d80ab99784">More...</a><br /></td></tr>
 <tr class="separator:gaab91bc59f5a82124864f78d80ab99784"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf8d942f44d38f62131351d570d80be6a"><td class="memItemLeft" align="right" valign="top">NT_RpcCallPoller&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__rpc__cfunc.html#gaf8d942f44d38f62131351d570d80be6a">NT_CreateRpcCallPoller</a> (NT_Inst inst)</td></tr>
@@ -166,7 +166,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* NT_RpcCallback) (void *data, const struct <a class="el" href="structNT__RpcAnswer.html">NT_RpcAnswer</a> *call)</td>
+          <td class="memname">typedef void(* NT_RpcCallback) (void *<a class="el" href="structdata.html">data</a>, const struct <a class="el" href="structNT__RpcAnswer.html">NT_RpcAnswer</a> *call)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -940,7 +940,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun May 9 2021 20:37:31 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:07 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -135,8 +135,8 @@ $(document).ready(function(){initNavTree('SimDeviceSim_8h_source.html',''); init
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordflow">return</span> HALSIM_EnumerateSimValues(</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        m_handle, &amp;callback,</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        [](<span class="keyword">const</span> <span class="keywordtype">char</span>* name, <span class="keywordtype">void</span>* param, HAL_SimValueHandle handle,</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;           <span class="keywordtype">int</span> direction, <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structHAL__Value.html">HAL_Value</a>* value) {</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;          std::invoke(*<span class="keyword">static_cast&lt;</span>F*<span class="keyword">&gt;</span>(param), name, handle, direction, value);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;           <span class="keywordtype">int</span> direction, <span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="structHAL__Value.html">HAL_Value</a>* <a class="code" href="classvalue.html">value</a>) {</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;          std::invoke(*<span class="keyword">static_cast&lt;</span>F*<span class="keyword">&gt;</span>(param), name, handle, direction, <a class="code" href="classvalue.html">value</a>);</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        });</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  }</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
@@ -159,6 +159,7 @@ $(document).ready(function(){initNavTree('SimDeviceSim_8h_source.html',''); init
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;}  <span class="comment">// namespace frc::sim</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1099</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1SimDeviceSim_html_aff4befa701db1ab1a842b67615162baf"><div class="ttname"><a href="classfrc_1_1sim_1_1SimDeviceSim.html#aff4befa701db1ab1a842b67615162baf">frc::sim::SimDeviceSim::GetValue</a></div><div class="ttdeci">hal::SimValue GetValue(const char *name) const</div><div class="ttdoc">Get the property object with the given name.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1SimDeviceSim_html_a9e5472335ba75fdebf3fcfbbf057807e"><div class="ttname"><a href="classfrc_1_1sim_1_1SimDeviceSim.html#a9e5472335ba75fdebf3fcfbbf057807e">frc::sim::SimDeviceSim::GetDouble</a></div><div class="ttdeci">hal::SimDouble GetDouble(const char *name) const</div><div class="ttdoc">Get the property object with the given name.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1SimDeviceSim_html_a44ba81e2cb7d5d85f734f2c40582d16c"><div class="ttname"><a href="classfrc_1_1sim_1_1SimDeviceSim.html#a44ba81e2cb7d5d85f734f2c40582d16c">frc::sim::SimDeviceSim::EnumerateValues</a></div><div class="ttdeci">void EnumerateValues(F callback) const</div><div class="ttdoc">Get all properties.</div><div class="ttdef"><b>Definition:</b> SimDeviceSim.h:109</div></div>
@@ -178,7 +179,7 @@ $(document).ready(function(){initNavTree('SimDeviceSim_8h_source.html',''); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_297dc702852f645e4b9e531dac2da27d.html">simulation</a></li><li class="navelem"><b>SimDeviceSim.h</b></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:30 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:05 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

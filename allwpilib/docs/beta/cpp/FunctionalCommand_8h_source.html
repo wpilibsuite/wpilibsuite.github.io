@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('FunctionalCommand_8h_source.html','');
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;functional&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;initializer_list&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;wpi/ArrayRef.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;wpi/span.h&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;frc2/command/CommandBase.h&quot;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;frc2/command/CommandHelper.h&quot;</span></div>
@@ -116,11 +116,11 @@ $(document).ready(function(){initNavTree('FunctionalCommand_8h_source.html','');
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                    std::function&lt;<span class="keywordtype">bool</span>()&gt; isFinished,</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                    std::initializer_list&lt;Subsystem*&gt; requirements);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classfrc2_1_1FunctionalCommand.html#ac4e1f4d1bf5b48435f6abec0905954fe">   51</a></span>&#160;  <a class="code" href="classfrc2_1_1FunctionalCommand.html#ac4e1f4d1bf5b48435f6abec0905954fe">FunctionalCommand</a>(std::function&lt;<span class="keywordtype">void</span>()&gt; onInit,</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classfrc2_1_1FunctionalCommand.html#a88c75cc578446939867468cbfce22ee5">   51</a></span>&#160;  <a class="code" href="classfrc2_1_1FunctionalCommand.html#a88c75cc578446939867468cbfce22ee5">FunctionalCommand</a>(std::function&lt;<span class="keywordtype">void</span>()&gt; onInit,</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                    std::function&lt;<span class="keywordtype">void</span>()&gt; onExecute,</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                    std::function&lt;<span class="keywordtype">void</span>(<span class="keywordtype">bool</span>)&gt; onEnd,</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                    std::function&lt;<span class="keywordtype">bool</span>()&gt; isFinished,</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                    <a class="code" href="classwpi_1_1ArrayRef.html">wpi::ArrayRef&lt;Subsystem*&gt;</a> requirements = {});</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                    <a class="code" href="classwpi_1_1span.html">wpi::span&lt;Subsystem* const&gt;</a> requirements = {});</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="code" href="classfrc2_1_1FunctionalCommand.html#a49f12b2387bbe0b7f12e3257eb01f105">FunctionalCommand</a>(<a class="code" href="classfrc2_1_1FunctionalCommand.html">FunctionalCommand</a>&amp;&amp; other) = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
@@ -144,19 +144,19 @@ $(document).ready(function(){initNavTree('FunctionalCommand_8h_source.html','');
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassfrc2_1_1FunctionalCommand_html_a786530ab32d0a24a0ddabcea3550e688"><div class="ttname"><a href="classfrc2_1_1FunctionalCommand.html#a786530ab32d0a24a0ddabcea3550e688">frc2::FunctionalCommand::Initialize</a></div><div class="ttdeci">void Initialize() override</div><div class="ttdoc">The initial subroutine of a command.</div></div>
-<div class="ttc" id="aclasswpi_1_1ArrayRef_html"><div class="ttname"><a href="classwpi_1_1ArrayRef.html">wpi::ArrayRef</a></div><div class="ttdoc">ArrayRef - Represent a constant reference to an array (0 or more elements consecutively in memory),...</div><div class="ttdef"><b>Definition:</b> ArrayRef.h:42</div></div>
 <div class="ttc" id="aclassfrc2_1_1FunctionalCommand_html_ab6be430545b3bc2550fcbb08b53aebda"><div class="ttname"><a href="classfrc2_1_1FunctionalCommand.html#ab6be430545b3bc2550fcbb08b53aebda">frc2::FunctionalCommand::IsFinished</a></div><div class="ttdeci">bool IsFinished() override</div><div class="ttdoc">Whether the command has finished.</div></div>
 <div class="ttc" id="aclassfrc2_1_1FunctionalCommand_html_af1237610f8bbbbb64dc555d8b8d793d4"><div class="ttname"><a href="classfrc2_1_1FunctionalCommand.html#af1237610f8bbbbb64dc555d8b8d793d4">frc2::FunctionalCommand::Execute</a></div><div class="ttdeci">void Execute() override</div><div class="ttdoc">The main body of a command.</div></div>
 <div class="ttc" id="aclassfrc2_1_1FunctionalCommand_html_a0f30f4a2486af6f0d0fb3a81c41cda90"><div class="ttname"><a href="classfrc2_1_1FunctionalCommand.html#a0f30f4a2486af6f0d0fb3a81c41cda90">frc2::FunctionalCommand::End</a></div><div class="ttdeci">void End(bool interrupted) override</div><div class="ttdoc">The action to take when the command ends.</div></div>
-<div class="ttc" id="aclassfrc2_1_1FunctionalCommand_html_ac4e1f4d1bf5b48435f6abec0905954fe"><div class="ttname"><a href="classfrc2_1_1FunctionalCommand.html#ac4e1f4d1bf5b48435f6abec0905954fe">frc2::FunctionalCommand::FunctionalCommand</a></div><div class="ttdeci">FunctionalCommand(std::function&lt; void()&gt; onInit, std::function&lt; void()&gt; onExecute, std::function&lt; void(bool)&gt; onEnd, std::function&lt; bool()&gt; isFinished, wpi::ArrayRef&lt; Subsystem * &gt; requirements={})</div><div class="ttdoc">Creates a new FunctionalCommand.</div></div>
+<div class="ttc" id="aclasswpi_1_1span_html"><div class="ttname"><a href="classwpi_1_1span.html">wpi::span</a></div><div class="ttdef"><b>Definition:</b> span.h:29</div></div>
 <div class="ttc" id="aclassfrc2_1_1CommandHelper_html"><div class="ttname"><a href="classfrc2_1_1CommandHelper.html">frc2::CommandHelper</a></div><div class="ttdoc">CRTP implementation to allow polymorphic decorator functions in Command.</div><div class="ttdef"><b>Definition:</b> CommandHelper.h:23</div></div>
+<div class="ttc" id="aclassfrc2_1_1FunctionalCommand_html_a88c75cc578446939867468cbfce22ee5"><div class="ttname"><a href="classfrc2_1_1FunctionalCommand.html#a88c75cc578446939867468cbfce22ee5">frc2::FunctionalCommand::FunctionalCommand</a></div><div class="ttdeci">FunctionalCommand(std::function&lt; void()&gt; onInit, std::function&lt; void()&gt; onExecute, std::function&lt; void(bool)&gt; onEnd, std::function&lt; bool()&gt; isFinished, wpi::span&lt; Subsystem *const &gt; requirements={})</div><div class="ttdoc">Creates a new FunctionalCommand.</div></div>
 <div class="ttc" id="aclassfrc2_1_1FunctionalCommand_html"><div class="ttname"><a href="classfrc2_1_1FunctionalCommand.html">frc2::FunctionalCommand</a></div><div class="ttdoc">A command that allows the user to pass in functions for each of the basic command methods through the...</div><div class="ttdef"><b>Definition:</b> FunctionalCommand.h:23</div></div>
 <div class="ttc" id="aclassfrc2_1_1FunctionalCommand_html_a49f12b2387bbe0b7f12e3257eb01f105"><div class="ttname"><a href="classfrc2_1_1FunctionalCommand.html#a49f12b2387bbe0b7f12e3257eb01f105">frc2::FunctionalCommand::FunctionalCommand</a></div><div class="ttdeci">FunctionalCommand(std::function&lt; void()&gt; onInit, std::function&lt; void()&gt; onExecute, std::function&lt; void(bool)&gt; onEnd, std::function&lt; bool()&gt; isFinished, std::initializer_list&lt; Subsystem * &gt; requirements)</div><div class="ttdoc">Creates a new FunctionalCommand.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e7d5d1c9c07b3d6a0a849f7ca2bfcaa9.html">frc2</a></li><li class="navelem"><a class="el" href="dir_25d5854705192c92d2d003534c71255a.html">command</a></li><li class="navelem"><b>FunctionalCommand.h</b></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:30 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:06 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

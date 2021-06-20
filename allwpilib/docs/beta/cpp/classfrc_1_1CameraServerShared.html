@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -108,18 +108,30 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ReportAxisCam
 <tr class="memitem:acf4c5ac98cb56ea368a7a5eaed088605"><td class="memItemLeft" align="right" valign="top"><a id="acf4c5ac98cb56ea368a7a5eaed088605"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ReportVideoServer</b> (int id)=0</td></tr>
 <tr class="separator:acf4c5ac98cb56ea368a7a5eaed088605"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5e4e6f08e35db2e388af876212f0eec"><td class="memItemLeft" align="right" valign="top"><a id="ae5e4e6f08e35db2e388af876212f0eec"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCameraServerError</b> (const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;error)=0</td></tr>
-<tr class="separator:ae5e4e6f08e35db2e388af876212f0eec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cad8356f4e765fb906b8248e8da88c1"><td class="memItemLeft" align="right" valign="top"><a id="a6cad8356f4e765fb906b8248e8da88c1"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetVisionRunnerError</b> (const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;error)=0</td></tr>
-<tr class="separator:a6cad8356f4e765fb906b8248e8da88c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f55fd0015be70f1c5dfecf77174ed91"><td class="memItemLeft" align="right" valign="top"><a id="a2f55fd0015be70f1c5dfecf77174ed91"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ReportDriverStationError</b> (const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;error)=0</td></tr>
-<tr class="separator:a2f55fd0015be70f1c5dfecf77174ed91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a55200c966195336e9f403ce1972f8b"><td class="memItemLeft" align="right" valign="top"><a id="a6a55200c966195336e9f403ce1972f8b"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCameraServerErrorV</b> (fmt::string_view format, fmt::format_args args)=0</td></tr>
+<tr class="separator:a6a55200c966195336e9f403ce1972f8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a160778f34d2b35ffe5d0ffba53ece6f0"><td class="memItemLeft" align="right" valign="top"><a id="a160778f34d2b35ffe5d0ffba53ece6f0"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetVisionRunnerErrorV</b> (fmt::string_view format, fmt::format_args args)=0</td></tr>
+<tr class="separator:a160778f34d2b35ffe5d0ffba53ece6f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6778a07717ba1ee701385f4f4b993eed"><td class="memItemLeft" align="right" valign="top"><a id="a6778a07717ba1ee701385f4f4b993eed"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ReportDriverStationErrorV</b> (fmt::string_view format, fmt::format_args args)=0</td></tr>
+<tr class="separator:a6778a07717ba1ee701385f4f4b993eed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b59ac9e08ba9cdf0db3a58eb8f85511"><td class="memItemLeft" align="right" valign="top"><a id="a6b59ac9e08ba9cdf0db3a58eb8f85511"></a>
 virtual std::pair&lt; std::thread::id, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetRobotMainThreadId</b> () const =0</td></tr>
 <tr class="separator:a6b59ac9e08ba9cdf0db3a58eb8f85511"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb9d7719c22ddfcfe80575281f102d99"><td class="memTemplParams" colspan="2"><a id="afb9d7719c22ddfcfe80575281f102d99"></a>
+template&lt;typename S , typename... Args&gt; </td></tr>
+<tr class="memitem:afb9d7719c22ddfcfe80575281f102d99"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SetCameraServerError</b> (const S &amp;format, Args &amp;&amp;... args)</td></tr>
+<tr class="separator:afb9d7719c22ddfcfe80575281f102d99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad65a3b56dde3181dd7f81bfb3329a772"><td class="memTemplParams" colspan="2"><a id="ad65a3b56dde3181dd7f81bfb3329a772"></a>
+template&lt;typename S , typename... Args&gt; </td></tr>
+<tr class="memitem:ad65a3b56dde3181dd7f81bfb3329a772"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SetVisionRunnerError</b> (const S &amp;format, Args &amp;&amp;... args)</td></tr>
+<tr class="separator:ad65a3b56dde3181dd7f81bfb3329a772"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a112e7dc4294b719d0886786149246778"><td class="memTemplParams" colspan="2"><a id="a112e7dc4294b719d0886786149246778"></a>
+template&lt;typename S , typename... Args&gt; </td></tr>
+<tr class="memitem:a112e7dc4294b719d0886786149246778"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ReportDriverStationError</b> (const S &amp;format, Args &amp;&amp;... args)</td></tr>
+<tr class="separator:a112e7dc4294b719d0886786149246778"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>cameraserver/<a class="el" href="CameraServerShared_8h_source.html">CameraServerShared.h</a></li>
@@ -129,8 +141,8 @@ virtual std::pair&lt; std::thread::id, bool &gt;&#160;</td><td class="memItemRig
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1CameraServerShared.html">CameraServerShared</a></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:31 for WPILibC++ by
+    <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1CameraServerShared.html">CameraServerShared</a></li>
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:08 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

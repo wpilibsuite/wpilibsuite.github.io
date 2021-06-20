@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -102,15 +102,6 @@ $(document).ready(function(){initNavTree('classfrc_1_1SerialPort.html',''); init
  <a href="classfrc_1_1SerialPort.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2SerialPort_8h_source.html">frc/SerialPort.h</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for frc::SerialPort:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="classfrc_1_1SerialPort.png" usemap="#frc::SerialPort_map" alt=""/>
-  <map id="frc::SerialPort_map" name="frc::SerialPort_map">
-<area href="classfrc_1_1ErrorBase.html" title="Base class for most objects." alt="frc::ErrorBase" shape="rect" coords="0,0,92,24"/>
-  </map>
-</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -155,9 +146,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a58eb39901d0cd1128ff4e6a488308fec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SerialPort.html#a58eb39901d0cd1128ff4e6a488308fec">SerialPort</a> (int baudRate, Port port=kOnboard, int dataBits=8, Parity parity=kParity_None, StopBits stopBits=kStopBits_One)</td></tr>
 <tr class="memdesc:a58eb39901d0cd1128ff4e6a488308fec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an instance of a Serial Port class.  <a href="classfrc_1_1SerialPort.html#a58eb39901d0cd1128ff4e6a488308fec">More...</a><br /></td></tr>
 <tr class="separator:a58eb39901d0cd1128ff4e6a488308fec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad791a80ef8179e33327b268d6d5efcce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SerialPort.html#ad791a80ef8179e33327b268d6d5efcce">SerialPort</a> (int baudRate, const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;portName, Port port=kOnboard, int dataBits=8, Parity parity=kParity_None, StopBits stopBits=kStopBits_One)</td></tr>
-<tr class="memdesc:ad791a80ef8179e33327b268d6d5efcce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an instance of a Serial Port class.  <a href="classfrc_1_1SerialPort.html#ad791a80ef8179e33327b268d6d5efcce">More...</a><br /></td></tr>
-<tr class="separator:ad791a80ef8179e33327b268d6d5efcce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fa11e3df8369bdafacb70d12cf16293"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SerialPort.html#a1fa11e3df8369bdafacb70d12cf16293">SerialPort</a> (int baudRate, std::string_view portName, Port port=kOnboard, int dataBits=8, Parity parity=kParity_None, StopBits stopBits=kStopBits_One)</td></tr>
+<tr class="memdesc:a1fa11e3df8369bdafacb70d12cf16293"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an instance of a Serial Port class.  <a href="classfrc_1_1SerialPort.html#a1fa11e3df8369bdafacb70d12cf16293">More...</a><br /></td></tr>
+<tr class="separator:a1fa11e3df8369bdafacb70d12cf16293"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02adbf989d2f912c9969fc3428782736"><td class="memItemLeft" align="right" valign="top"><a id="a02adbf989d2f912c9969fc3428782736"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>SerialPort</b> (<a class="el" href="classfrc_1_1SerialPort.html">SerialPort</a> &amp;&amp;rhs)=default</td></tr>
 <tr class="separator:a02adbf989d2f912c9969fc3428782736"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -177,18 +168,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:aea8d505cc6bb908fda4837aff3fdc26f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SerialPort.html#aea8d505cc6bb908fda4837aff3fdc26f">GetBytesReceived</a> ()</td></tr>
 <tr class="memdesc:aea8d505cc6bb908fda4837aff3fdc26f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of bytes currently available to read from the serial port.  <a href="classfrc_1_1SerialPort.html#aea8d505cc6bb908fda4837aff3fdc26f">More...</a><br /></td></tr>
 <tr class="separator:aea8d505cc6bb908fda4837aff3fdc26f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aede9ea5b583db9decf993a38f2487648"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SerialPort.html#aede9ea5b583db9decf993a38f2487648">Read</a> (char *buffer, int count)</td></tr>
+<tr class="memitem:aede9ea5b583db9decf993a38f2487648"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SerialPort.html#aede9ea5b583db9decf993a38f2487648">Read</a> (char *<a class="el" href="classbuffer.html">buffer</a>, int count)</td></tr>
 <tr class="memdesc:aede9ea5b583db9decf993a38f2487648"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read raw bytes out of the buffer.  <a href="classfrc_1_1SerialPort.html#aede9ea5b583db9decf993a38f2487648">More...</a><br /></td></tr>
 <tr class="separator:aede9ea5b583db9decf993a38f2487648"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c725f9011fb3c484fb0c90a0d6a8fc0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SerialPort.html#a8c725f9011fb3c484fb0c90a0d6a8fc0">Write</a> (const char *buffer, int count)</td></tr>
+<tr class="memitem:a8c725f9011fb3c484fb0c90a0d6a8fc0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SerialPort.html#a8c725f9011fb3c484fb0c90a0d6a8fc0">Write</a> (const char *<a class="el" href="classbuffer.html">buffer</a>, int count)</td></tr>
 <tr class="memdesc:a8c725f9011fb3c484fb0c90a0d6a8fc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write raw bytes to the buffer.  <a href="classfrc_1_1SerialPort.html#a8c725f9011fb3c484fb0c90a0d6a8fc0">More...</a><br /></td></tr>
 <tr class="separator:a8c725f9011fb3c484fb0c90a0d6a8fc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16e03862c3424d9d67b629332a054bfe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SerialPort.html#a16e03862c3424d9d67b629332a054bfe">Write</a> (<a class="el" href="classwpi_1_1StringRef.html">wpi::StringRef</a> buffer)</td></tr>
-<tr class="memdesc:a16e03862c3424d9d67b629332a054bfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write raw bytes to the buffer.  <a href="classfrc_1_1SerialPort.html#a16e03862c3424d9d67b629332a054bfe">More...</a><br /></td></tr>
-<tr class="separator:a16e03862c3424d9d67b629332a054bfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a52d5b1c53f3edae2052550a2eef771"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SerialPort.html#a1a52d5b1c53f3edae2052550a2eef771">SetTimeout</a> (double timeout)</td></tr>
-<tr class="memdesc:a1a52d5b1c53f3edae2052550a2eef771"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the timeout of the serial port.  <a href="classfrc_1_1SerialPort.html#a1a52d5b1c53f3edae2052550a2eef771">More...</a><br /></td></tr>
-<tr class="separator:a1a52d5b1c53f3edae2052550a2eef771"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4b6be1e50efd9500c9cb72a729797fb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SerialPort.html#aa4b6be1e50efd9500c9cb72a729797fb">Write</a> (std::string_view <a class="el" href="classbuffer.html">buffer</a>)</td></tr>
+<tr class="memdesc:aa4b6be1e50efd9500c9cb72a729797fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write raw bytes to the buffer.  <a href="classfrc_1_1SerialPort.html#aa4b6be1e50efd9500c9cb72a729797fb">More...</a><br /></td></tr>
+<tr class="separator:aa4b6be1e50efd9500c9cb72a729797fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2f41da3f7852a7097d61ff997143a85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SerialPort.html#ab2f41da3f7852a7097d61ff997143a85">SetTimeout</a> (units::second_t timeout)</td></tr>
+<tr class="memdesc:ab2f41da3f7852a7097d61ff997143a85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the timeout of the serial port.  <a href="classfrc_1_1SerialPort.html#ab2f41da3f7852a7097d61ff997143a85">More...</a><br /></td></tr>
+<tr class="separator:ab2f41da3f7852a7097d61ff997143a85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c8c8495405ddcdb925111a1c7d2666c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SerialPort.html#a2c8c8495405ddcdb925111a1c7d2666c">SetReadBufferSize</a> (int size)</td></tr>
 <tr class="memdesc:a2c8c8495405ddcdb925111a1c7d2666c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify the size of the input buffer.  <a href="classfrc_1_1SerialPort.html#a2c8c8495405ddcdb925111a1c7d2666c">More...</a><br /></td></tr>
 <tr class="separator:a2c8c8495405ddcdb925111a1c7d2666c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -204,76 +195,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:ac8b4115a7231812d3893894e2f6e9a48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SerialPort.html#ac8b4115a7231812d3893894e2f6e9a48">Reset</a> ()</td></tr>
 <tr class="memdesc:ac8b4115a7231812d3893894e2f6e9a48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the serial port driver to a known state.  <a href="classfrc_1_1SerialPort.html#ac8b4115a7231812d3893894e2f6e9a48">More...</a><br /></td></tr>
 <tr class="separator:ac8b4115a7231812d3893894e2f6e9a48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classfrc_1_1ErrorBase"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classfrc_1_1ErrorBase')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classfrc_1_1ErrorBase.html">frc::ErrorBase</a></td></tr>
-<tr class="memitem:a20b420f5e3cf670a021d27a1419f23e3 inherit pub_methods_classfrc_1_1ErrorBase"><td class="memItemLeft" align="right" valign="top"><a id="a20b420f5e3cf670a021d27a1419f23e3"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ErrorBase</b> (const <a class="el" href="classfrc_1_1ErrorBase.html">ErrorBase</a> &amp;)=default</td></tr>
-<tr class="separator:a20b420f5e3cf670a021d27a1419f23e3 inherit pub_methods_classfrc_1_1ErrorBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c3462f6e6b2860cce59ec3733031753 inherit pub_methods_classfrc_1_1ErrorBase"><td class="memItemLeft" align="right" valign="top"><a id="a3c3462f6e6b2860cce59ec3733031753"></a>
-<a class="el" href="classfrc_1_1ErrorBase.html">ErrorBase</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classfrc_1_1ErrorBase.html">ErrorBase</a> &amp;)=default</td></tr>
-<tr class="separator:a3c3462f6e6b2860cce59ec3733031753 inherit pub_methods_classfrc_1_1ErrorBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a230e50b0499f3f7d85516acb5a90aef1 inherit pub_methods_classfrc_1_1ErrorBase"><td class="memItemLeft" align="right" valign="top"><a id="a230e50b0499f3f7d85516acb5a90aef1"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ErrorBase</b> (<a class="el" href="classfrc_1_1ErrorBase.html">ErrorBase</a> &amp;&amp;)=default</td></tr>
-<tr class="separator:a230e50b0499f3f7d85516acb5a90aef1 inherit pub_methods_classfrc_1_1ErrorBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2494bdf75abee14185ba553ef7088b0e inherit pub_methods_classfrc_1_1ErrorBase"><td class="memItemLeft" align="right" valign="top"><a id="a2494bdf75abee14185ba553ef7088b0e"></a>
-<a class="el" href="classfrc_1_1ErrorBase.html">ErrorBase</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classfrc_1_1ErrorBase.html">ErrorBase</a> &amp;&amp;)=default</td></tr>
-<tr class="separator:a2494bdf75abee14185ba553ef7088b0e inherit pub_methods_classfrc_1_1ErrorBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a806377f4c2605e9115a8ea532c0dd3c8 inherit pub_methods_classfrc_1_1ErrorBase"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classfrc_1_1Error.html">Error</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1ErrorBase.html#a806377f4c2605e9115a8ea532c0dd3c8">GetError</a> ()</td></tr>
-<tr class="memdesc:a806377f4c2605e9115a8ea532c0dd3c8 inherit pub_methods_classfrc_1_1ErrorBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the current error.  <a href="classfrc_1_1ErrorBase.html#a806377f4c2605e9115a8ea532c0dd3c8">More...</a><br /></td></tr>
-<tr class="separator:a806377f4c2605e9115a8ea532c0dd3c8 inherit pub_methods_classfrc_1_1ErrorBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a736cd97d0691c1c80e4d8f601a411c inherit pub_methods_classfrc_1_1ErrorBase"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="classfrc_1_1Error.html">Error</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1ErrorBase.html#a1a736cd97d0691c1c80e4d8f601a411c">GetError</a> () const</td></tr>
-<tr class="memdesc:a1a736cd97d0691c1c80e4d8f601a411c inherit pub_methods_classfrc_1_1ErrorBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the current error.  <a href="classfrc_1_1ErrorBase.html#a1a736cd97d0691c1c80e4d8f601a411c">More...</a><br /></td></tr>
-<tr class="separator:a1a736cd97d0691c1c80e4d8f601a411c inherit pub_methods_classfrc_1_1ErrorBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0bd9696195813962245fc3713da1377 inherit pub_methods_classfrc_1_1ErrorBase"><td class="memItemLeft" align="right" valign="top"><a id="ad0bd9696195813962245fc3713da1377"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1ErrorBase.html#ad0bd9696195813962245fc3713da1377">ClearError</a> () const</td></tr>
-<tr class="memdesc:ad0bd9696195813962245fc3713da1377 inherit pub_methods_classfrc_1_1ErrorBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the current error information associated with this sensor. <br /></td></tr>
-<tr class="separator:ad0bd9696195813962245fc3713da1377 inherit pub_methods_classfrc_1_1ErrorBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acea8f8352b569ea09cf167f3f40507a4 inherit pub_methods_classfrc_1_1ErrorBase"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1ErrorBase.html#acea8f8352b569ea09cf167f3f40507a4">SetErrnoError</a> (const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;contextMessage, <a class="el" href="classwpi_1_1StringRef.html">wpi::StringRef</a> filename, <a class="el" href="classwpi_1_1StringRef.html">wpi::StringRef</a> function, int lineNumber) const</td></tr>
-<tr class="memdesc:acea8f8352b569ea09cf167f3f40507a4 inherit pub_methods_classfrc_1_1ErrorBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set error information associated with a C library call that set an error to the "errno" global variable.  <a href="classfrc_1_1ErrorBase.html#acea8f8352b569ea09cf167f3f40507a4">More...</a><br /></td></tr>
-<tr class="separator:acea8f8352b569ea09cf167f3f40507a4 inherit pub_methods_classfrc_1_1ErrorBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae810980e0c2426a466dbd896cde7a67f inherit pub_methods_classfrc_1_1ErrorBase"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1ErrorBase.html#ae810980e0c2426a466dbd896cde7a67f">SetImaqError</a> (int success, const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;contextMessage, <a class="el" href="classwpi_1_1StringRef.html">wpi::StringRef</a> filename, <a class="el" href="classwpi_1_1StringRef.html">wpi::StringRef</a> function, int lineNumber) const</td></tr>
-<tr class="memdesc:ae810980e0c2426a466dbd896cde7a67f inherit pub_methods_classfrc_1_1ErrorBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current error information associated from the nivision Imaq API.  <a href="classfrc_1_1ErrorBase.html#ae810980e0c2426a466dbd896cde7a67f">More...</a><br /></td></tr>
-<tr class="separator:ae810980e0c2426a466dbd896cde7a67f inherit pub_methods_classfrc_1_1ErrorBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67496968088533675b7a20c36b5541ef inherit pub_methods_classfrc_1_1ErrorBase"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1ErrorBase.html#a67496968088533675b7a20c36b5541ef">SetError</a> (Error::Code code, const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;contextMessage, <a class="el" href="classwpi_1_1StringRef.html">wpi::StringRef</a> filename, <a class="el" href="classwpi_1_1StringRef.html">wpi::StringRef</a> function, int lineNumber) const</td></tr>
-<tr class="memdesc:a67496968088533675b7a20c36b5541ef inherit pub_methods_classfrc_1_1ErrorBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current error information associated with this sensor.  <a href="classfrc_1_1ErrorBase.html#a67496968088533675b7a20c36b5541ef">More...</a><br /></td></tr>
-<tr class="separator:a67496968088533675b7a20c36b5541ef inherit pub_methods_classfrc_1_1ErrorBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a395048216ca292e739a5704d3cbe0e4e inherit pub_methods_classfrc_1_1ErrorBase"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1ErrorBase.html#a395048216ca292e739a5704d3cbe0e4e">SetErrorRange</a> (Error::Code code, int32_t minRange, int32_t maxRange, int32_t requestedValue, const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;contextMessage, <a class="el" href="classwpi_1_1StringRef.html">wpi::StringRef</a> filename, <a class="el" href="classwpi_1_1StringRef.html">wpi::StringRef</a> function, int lineNumber) const</td></tr>
-<tr class="memdesc:a395048216ca292e739a5704d3cbe0e4e inherit pub_methods_classfrc_1_1ErrorBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current error information associated with this sensor.  <a href="classfrc_1_1ErrorBase.html#a395048216ca292e739a5704d3cbe0e4e">More...</a><br /></td></tr>
-<tr class="separator:a395048216ca292e739a5704d3cbe0e4e inherit pub_methods_classfrc_1_1ErrorBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8847082633c2fc2bc01cc2c671d6bc75 inherit pub_methods_classfrc_1_1ErrorBase"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1ErrorBase.html#a8847082633c2fc2bc01cc2c671d6bc75">SetWPIError</a> (const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;errorMessage, Error::Code code, const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;contextMessage, <a class="el" href="classwpi_1_1StringRef.html">wpi::StringRef</a> filename, <a class="el" href="classwpi_1_1StringRef.html">wpi::StringRef</a> function, int lineNumber) const</td></tr>
-<tr class="memdesc:a8847082633c2fc2bc01cc2c671d6bc75 inherit pub_methods_classfrc_1_1ErrorBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current error information associated with this sensor.  <a href="classfrc_1_1ErrorBase.html#a8847082633c2fc2bc01cc2c671d6bc75">More...</a><br /></td></tr>
-<tr class="separator:a8847082633c2fc2bc01cc2c671d6bc75 inherit pub_methods_classfrc_1_1ErrorBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe86447021d6cf8c3c54c8767834eb09 inherit pub_methods_classfrc_1_1ErrorBase"><td class="memItemLeft" align="right" valign="top"><a id="afe86447021d6cf8c3c54c8767834eb09"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>CloneError</b> (const <a class="el" href="classfrc_1_1ErrorBase.html">ErrorBase</a> &amp;rhs) const</td></tr>
-<tr class="separator:afe86447021d6cf8c3c54c8767834eb09 inherit pub_methods_classfrc_1_1ErrorBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34db26ef4dad32beae378e4bb3c4f182 inherit pub_methods_classfrc_1_1ErrorBase"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1ErrorBase.html#a34db26ef4dad32beae378e4bb3c4f182">StatusIsFatal</a> () const</td></tr>
-<tr class="memdesc:a34db26ef4dad32beae378e4bb3c4f182 inherit pub_methods_classfrc_1_1ErrorBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the current error code represents a fatal error.  <a href="classfrc_1_1ErrorBase.html#a34db26ef4dad32beae378e4bb3c4f182">More...</a><br /></td></tr>
-<tr class="separator:a34db26ef4dad32beae378e4bb3c4f182 inherit pub_methods_classfrc_1_1ErrorBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ab67823d0cf73b2a658e48e3d24fb39 inherit pub_methods_classfrc_1_1ErrorBase"><td class="memItemLeft" align="right" valign="top"><a id="a2ab67823d0cf73b2a658e48e3d24fb39"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1ErrorBase.html#a2ab67823d0cf73b2a658e48e3d24fb39">ClearGlobalErrors</a> ()</td></tr>
-<tr class="memdesc:a2ab67823d0cf73b2a658e48e3d24fb39 inherit pub_methods_classfrc_1_1ErrorBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear global errors. <br /></td></tr>
-<tr class="separator:a2ab67823d0cf73b2a658e48e3d24fb39 inherit pub_methods_classfrc_1_1ErrorBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_static_methods_classfrc_1_1ErrorBase"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classfrc_1_1ErrorBase')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classfrc_1_1ErrorBase.html">frc::ErrorBase</a></td></tr>
-<tr class="memitem:af84e37119ebf0ee9cc0d202ce8d9cc84 inherit pub_static_methods_classfrc_1_1ErrorBase"><td class="memItemLeft" align="right" valign="top"><a id="af84e37119ebf0ee9cc0d202ce8d9cc84"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>SetGlobalError</b> (Error::Code code, const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;contextMessage, <a class="el" href="classwpi_1_1StringRef.html">wpi::StringRef</a> filename, <a class="el" href="classwpi_1_1StringRef.html">wpi::StringRef</a> function, int lineNumber)</td></tr>
-<tr class="separator:af84e37119ebf0ee9cc0d202ce8d9cc84 inherit pub_static_methods_classfrc_1_1ErrorBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2dd86f9842538d16cbbe0b512aedccd0 inherit pub_static_methods_classfrc_1_1ErrorBase"><td class="memItemLeft" align="right" valign="top"><a id="a2dd86f9842538d16cbbe0b512aedccd0"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>SetGlobalWPIError</b> (const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;errorMessage, const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;contextMessage, <a class="el" href="classwpi_1_1StringRef.html">wpi::StringRef</a> filename, <a class="el" href="classwpi_1_1StringRef.html">wpi::StringRef</a> function, int lineNumber)</td></tr>
-<tr class="separator:a2dd86f9842538d16cbbe0b512aedccd0 inherit pub_static_methods_classfrc_1_1ErrorBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44ef32546d4eba113a5b0dbcc4fc3560 inherit pub_static_methods_classfrc_1_1ErrorBase"><td class="memItemLeft" align="right" valign="top"><a id="a44ef32546d4eba113a5b0dbcc4fc3560"></a>
-static <a class="el" href="classfrc_1_1Error.html">Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1ErrorBase.html#a44ef32546d4eba113a5b0dbcc4fc3560">GetGlobalError</a> ()</td></tr>
-<tr class="memdesc:a44ef32546d4eba113a5b0dbcc4fc3560 inherit pub_static_methods_classfrc_1_1ErrorBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the last global error. <br /></td></tr>
-<tr class="separator:a44ef32546d4eba113a5b0dbcc4fc3560 inherit pub_static_methods_classfrc_1_1ErrorBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04d20efff05851a767ffb48805929ee9 inherit pub_static_methods_classfrc_1_1ErrorBase"><td class="memItemLeft" align="right" valign="top"><a id="a04d20efff05851a767ffb48805929ee9"></a>
-static std::vector&lt; <a class="el" href="classfrc_1_1Error.html">Error</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1ErrorBase.html#a04d20efff05851a767ffb48805929ee9">GetGlobalErrors</a> ()</td></tr>
-<tr class="memdesc:a04d20efff05851a767ffb48805929ee9 inherit pub_static_methods_classfrc_1_1ErrorBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve all global errors. <br /></td></tr>
-<tr class="separator:a04d20efff05851a767ffb48805929ee9 inherit pub_static_methods_classfrc_1_1ErrorBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_classfrc_1_1ErrorBase"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classfrc_1_1ErrorBase')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classfrc_1_1ErrorBase.html">frc::ErrorBase</a></td></tr>
-<tr class="memitem:a37ea09ba2389bcd5b0cb96e9feccaa6a inherit pro_attribs_classfrc_1_1ErrorBase"><td class="memItemLeft" align="right" valign="top"><a id="a37ea09ba2389bcd5b0cb96e9feccaa6a"></a>
-<a class="el" href="classfrc_1_1Error.html">Error</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_error</b></td></tr>
-<tr class="separator:a37ea09ba2389bcd5b0cb96e9feccaa6a inherit pro_attribs_classfrc_1_1ErrorBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Driver for the RS-232 serial port on the roboRIO. </p>
@@ -346,8 +267,8 @@ static std::vector&lt; <a class="el" href="classfrc_1_1Error.html">Error</a> &gt
 
 </div>
 </div>
-<a id="ad791a80ef8179e33327b268d6d5efcce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad791a80ef8179e33327b268d6d5efcce">&#9670;&nbsp;</a></span>SerialPort() <span class="overload">[2/2]</span></h2>
+<a id="a1fa11e3df8369bdafacb70d12cf16293"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fa11e3df8369bdafacb70d12cf16293">&#9670;&nbsp;</a></span>SerialPort() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -361,7 +282,7 @@ static std::vector&lt; <a class="el" href="classfrc_1_1Error.html">Error</a> &gt
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>portName</em>, </td>
         </tr>
         <tr>
@@ -587,8 +508,8 @@ static std::vector&lt; <a class="el" href="classfrc_1_1Error.html">Error</a> &gt
 
 </div>
 </div>
-<a id="a1a52d5b1c53f3edae2052550a2eef771"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a52d5b1c53f3edae2052550a2eef771">&#9670;&nbsp;</a></span>SetTimeout()</h2>
+<a id="ab2f41da3f7852a7097d61ff997143a85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2f41da3f7852a7097d61ff997143a85">&#9670;&nbsp;</a></span>SetTimeout()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -596,7 +517,7 @@ static std::vector&lt; <a class="el" href="classfrc_1_1Error.html">Error</a> &gt
         <tr>
           <td class="memname">void frc::SerialPort::SetTimeout </td>
           <td>(</td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">units::second_t&#160;</td>
           <td class="paramname"><em>timeout</em></td><td>)</td>
           <td></td>
         </tr>
@@ -607,7 +528,7 @@ static std::vector&lt; <a class="el" href="classfrc_1_1Error.html">Error</a> &gt
 <p>This defines the timeout for transactions with the hardware. It will affect reads and very large writes.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">timeout</td><td>The number of seconds to to wait for I/O. </td></tr>
+    <tr><td class="paramname">timeout</td><td>The time to wait for I/O. </td></tr>
   </table>
   </dd>
 </dl>
@@ -707,8 +628,8 @@ static std::vector&lt; <a class="el" href="classfrc_1_1Error.html">Error</a> &gt
 
 </div>
 </div>
-<a id="a16e03862c3424d9d67b629332a054bfe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16e03862c3424d9d67b629332a054bfe">&#9670;&nbsp;</a></span>Write() <span class="overload">[2/2]</span></h2>
+<a id="aa4b6be1e50efd9500c9cb72a729797fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4b6be1e50efd9500c9cb72a729797fb">&#9670;&nbsp;</a></span>Write() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -716,7 +637,7 @@ static std::vector&lt; <a class="el" href="classfrc_1_1Error.html">Error</a> &gt
         <tr>
           <td class="memname">int frc::SerialPort::Write </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1StringRef.html">wpi::StringRef</a>&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>buffer</em></td><td>)</td>
           <td></td>
         </tr>
@@ -727,7 +648,7 @@ static std::vector&lt; <a class="el" href="classfrc_1_1Error.html">Error</a> &gt
 <p>Use Write({data, len}) to get a buffer that is shorter than the length of the string.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">buffer</td><td>StringRef to the buffer to read the bytes from. </td></tr>
+    <tr><td class="paramname">buffer</td><td>the buffer to read the bytes from. </td></tr>
   </table>
   </dd>
 </dl>
@@ -743,8 +664,8 @@ static std::vector&lt; <a class="el" href="classfrc_1_1Error.html">Error</a> &gt
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1SerialPort.html">SerialPort</a></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:32 for WPILibC++ by
+    <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1SerialPort.html">SerialPort</a></li>
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:09 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

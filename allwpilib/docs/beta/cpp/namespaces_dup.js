@@ -1,7 +1,9 @@
 var namespaces_dup =
 [
     [ "cs", "namespacecs.html", null ],
-    [ "frc", "namespacefrc.html", "namespacefrc" ],
+    [ "frc", null, [
+      [ "filesystem", "namespacefrc_1_1filesystem.html", null ]
+    ] ],
     [ "hal", "namespacehal.html", null ],
     [ "nt", "namespacent.html", "namespacent" ],
     [ "wpi", null, [

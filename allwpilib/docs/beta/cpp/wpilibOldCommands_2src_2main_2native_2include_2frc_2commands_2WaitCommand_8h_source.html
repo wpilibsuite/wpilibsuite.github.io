@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -99,38 +99,38 @@ $(document).ready(function(){initNavTree('wpilibOldCommands_2src_2main_2native_2
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;wpi/Twine.h&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;string_view&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;frc/commands/TimedCommand.h&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;units/time.h&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacefrc.html">frc</a> {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;frc/commands/TimedCommand.h&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classfrc_1_1WaitCommand.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1WaitCommand.html">WaitCommand</a> : <span class="keyword">public</span> <a class="code" href="classfrc_1_1TimedCommand.html">TimedCommand</a> {</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classfrc_1_1WaitCommand.html#a10a19a873b7306f29ea75777d6b39eaf">   21</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc_1_1WaitCommand.html#a10a19a873b7306f29ea75777d6b39eaf">WaitCommand</a>(<span class="keywordtype">double</span> timeout);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classfrc_1_1WaitCommand.html#a4c5e894f178c29225ae610411c2dcfc3">   28</a></span>&#160;  <a class="code" href="classfrc_1_1WaitCommand.html#a4c5e894f178c29225ae610411c2dcfc3">WaitCommand</a>(<span class="keyword">const</span> <a class="code" href="classwpi_1_1Twine.html">wpi::Twine</a>&amp; name, <span class="keywordtype">double</span> timeout);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  ~<a class="code" href="classfrc_1_1WaitCommand.html">WaitCommand</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span>frc {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classfrc_1_1WaitCommand.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1WaitCommand.html">WaitCommand</a> : <span class="keyword">public</span> <a class="code" href="classfrc_1_1TimedCommand.html">TimedCommand</a> {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classfrc_1_1WaitCommand.html#ad8209c6a324ec7569847172672ef42de">   23</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc_1_1WaitCommand.html#ad8209c6a324ec7569847172672ef42de">WaitCommand</a>(units::second_t timeout);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classfrc_1_1WaitCommand.html#a4ddc7e3831dde0c9a695155a2daaf8ae">   30</a></span>&#160;  <a class="code" href="classfrc_1_1WaitCommand.html#a4ddc7e3831dde0c9a695155a2daaf8ae">WaitCommand</a>(std::string_view name, units::second_t timeout);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <a class="code" href="classfrc_1_1WaitCommand.html#a10a19a873b7306f29ea75777d6b39eaf">WaitCommand</a>(<a class="code" href="classfrc_1_1WaitCommand.html">WaitCommand</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <a class="code" href="classfrc_1_1WaitCommand.html">WaitCommand</a>&amp; operator=(<a class="code" href="classfrc_1_1WaitCommand.html">WaitCommand</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;};</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  ~<a class="code" href="classfrc_1_1WaitCommand.html">WaitCommand</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <a class="code" href="classfrc_1_1WaitCommand.html#ad8209c6a324ec7569847172672ef42de">WaitCommand</a>(<a class="code" href="classfrc_1_1WaitCommand.html">WaitCommand</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <a class="code" href="classfrc_1_1WaitCommand.html">WaitCommand</a>&amp; operator=(<a class="code" href="classfrc_1_1WaitCommand.html">WaitCommand</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;};</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}  <span class="comment">// namespace frc</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassfrc_1_1WaitCommand_html_a10a19a873b7306f29ea75777d6b39eaf"><div class="ttname"><a href="classfrc_1_1WaitCommand.html#a10a19a873b7306f29ea75777d6b39eaf">frc::WaitCommand::WaitCommand</a></div><div class="ttdeci">WaitCommand(double timeout)</div><div class="ttdoc">Creates a new WaitCommand with the given name and timeout.</div></div>
-<div class="ttc" id="aclassfrc_1_1WaitCommand_html_a4c5e894f178c29225ae610411c2dcfc3"><div class="ttname"><a href="classfrc_1_1WaitCommand.html#a4c5e894f178c29225ae610411c2dcfc3">frc::WaitCommand::WaitCommand</a></div><div class="ttdeci">WaitCommand(const wpi::Twine &amp;name, double timeout)</div><div class="ttdoc">Creates a new WaitCommand with the given timeout.</div></div>
-<div class="ttc" id="aclassfrc_1_1TimedCommand_html"><div class="ttname"><a href="classfrc_1_1TimedCommand.html">frc::TimedCommand</a></div><div class="ttdoc">A TimedCommand will wait for a timeout before finishing.</div><div class="ttdef"><b>Definition:</b> TimedCommand.h:18</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> CameraServer.h:18</div></div>
-<div class="ttc" id="aclasswpi_1_1Twine_html"><div class="ttname"><a href="classwpi_1_1Twine.html">wpi::Twine</a></div><div class="ttdoc">Twine - A lightweight data structure for efficiently representing the concatenation of temporary valu...</div><div class="ttdef"><b>Definition:</b> Twine.h:85</div></div>
-<div class="ttc" id="aclassfrc_1_1WaitCommand_html"><div class="ttname"><a href="classfrc_1_1WaitCommand.html">frc::WaitCommand</a></div><div class="ttdef"><b>Definition:</b> WaitCommand.h:13</div></div>
+<div class="ttc" id="aclassfrc_1_1WaitCommand_html_a4ddc7e3831dde0c9a695155a2daaf8ae"><div class="ttname"><a href="classfrc_1_1WaitCommand.html#a4ddc7e3831dde0c9a695155a2daaf8ae">frc::WaitCommand::WaitCommand</a></div><div class="ttdeci">WaitCommand(std::string_view name, units::second_t timeout)</div><div class="ttdoc">Creates a new WaitCommand with the given timeout.</div></div>
+<div class="ttc" id="aclassfrc_1_1TimedCommand_html"><div class="ttname"><a href="classfrc_1_1TimedCommand.html">frc::TimedCommand</a></div><div class="ttdoc">A TimedCommand will wait for a timeout before finishing.</div><div class="ttdef"><b>Definition:</b> TimedCommand.h:20</div></div>
+<div class="ttc" id="aclassfrc_1_1WaitCommand_html_ad8209c6a324ec7569847172672ef42de"><div class="ttname"><a href="classfrc_1_1WaitCommand.html#ad8209c6a324ec7569847172672ef42de">frc::WaitCommand::WaitCommand</a></div><div class="ttdeci">WaitCommand(units::second_t timeout)</div><div class="ttdoc">Creates a new WaitCommand with the given name and timeout.</div></div>
+<div class="ttc" id="aclassfrc_1_1WaitCommand_html"><div class="ttname"><a href="classfrc_1_1WaitCommand.html">frc::WaitCommand</a></div><div class="ttdef"><b>Definition:</b> WaitCommand.h:15</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_bb1991b688e3fae464f82f03a0e274c4.html">frc</a></li><li class="navelem"><a class="el" href="dir_4ab5eeb5ed54f6cf3cf8c80dd363976a.html">commands</a></li><li class="navelem"><b>WaitCommand.h</b></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:30 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:06 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

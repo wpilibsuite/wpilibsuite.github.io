@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -98,9 +98,6 @@ $(document).ready(function(){initNavTree('group__hal__i2c.html',''); initResizab
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gadc160e0691b080d4ba30a071f64df025"><td class="memItemLeft" align="right" valign="top"><a id="gadc160e0691b080d4ba30a071f64df025"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_ENUM</b> (HAL_I2CPort)</td></tr>
-<tr class="separator:gadc160e0691b080d4ba30a071f64df025"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga59ae1919da9b0b9038bba926dde92ea2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__i2c.html#ga59ae1919da9b0b9038bba926dde92ea2">HAL_InitializeI2C</a> (HAL_I2CPort port, int32_t *status)</td></tr>
 <tr class="memdesc:ga59ae1919da9b0b9038bba926dde92ea2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the I2C port.  <a href="group__hal__i2c.html#ga59ae1919da9b0b9038bba926dde92ea2">More...</a><br /></td></tr>
 <tr class="separator:ga59ae1919da9b0b9038bba926dde92ea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -110,12 +107,15 @@ Functions</h2></td></tr>
 <tr class="memitem:gad4d63e38400272b82a60062289f5db6a"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__i2c.html#gad4d63e38400272b82a60062289f5db6a">HAL_WriteI2C</a> (HAL_I2CPort port, int32_t deviceAddress, const uint8_t *dataToSend, int32_t sendSize)</td></tr>
 <tr class="memdesc:gad4d63e38400272b82a60062289f5db6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes a write transaction with the device.  <a href="group__hal__i2c.html#gad4d63e38400272b82a60062289f5db6a">More...</a><br /></td></tr>
 <tr class="separator:gad4d63e38400272b82a60062289f5db6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga66cbc3cf5998ddf89f4ce87af4c7f693"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__i2c.html#ga66cbc3cf5998ddf89f4ce87af4c7f693">HAL_ReadI2C</a> (HAL_I2CPort port, int32_t deviceAddress, uint8_t *buffer, int32_t count)</td></tr>
+<tr class="memitem:ga66cbc3cf5998ddf89f4ce87af4c7f693"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__i2c.html#ga66cbc3cf5998ddf89f4ce87af4c7f693">HAL_ReadI2C</a> (HAL_I2CPort port, int32_t deviceAddress, uint8_t *<a class="el" href="classbuffer.html">buffer</a>, int32_t count)</td></tr>
 <tr class="memdesc:ga66cbc3cf5998ddf89f4ce87af4c7f693"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes a read transaction with the device.  <a href="group__hal__i2c.html#ga66cbc3cf5998ddf89f4ce87af4c7f693">More...</a><br /></td></tr>
 <tr class="separator:ga66cbc3cf5998ddf89f4ce87af4c7f693"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab07e50c33a94b181892f12c1dd028a92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__i2c.html#gab07e50c33a94b181892f12c1dd028a92">HAL_CloseI2C</a> (HAL_I2CPort port)</td></tr>
 <tr class="memdesc:gab07e50c33a94b181892f12c1dd028a92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes an I2C port.  <a href="group__hal__i2c.html#gab07e50c33a94b181892f12c1dd028a92">More...</a><br /></td></tr>
 <tr class="separator:gab07e50c33a94b181892f12c1dd028a92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadc160e0691b080d4ba30a071f64df025"><td class="memItemLeft" align="right" valign="top"><a id="gadc160e0691b080d4ba30a071f64df025"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_ENUM</b> (HAL_I2CPort)</td></tr>
+<tr class="separator:gadc160e0691b080d4ba30a071f64df025"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Function Documentation</h2>
@@ -358,7 +358,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun May 9 2021 20:37:31 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:07 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

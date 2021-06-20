@@ -2,7 +2,6 @@ var classwpi_1_1static__circular__buffer =
 [
     [ "const_iterator", "classwpi_1_1static__circular__buffer_1_1const__iterator.html", "classwpi_1_1static__circular__buffer_1_1const__iterator" ],
     [ "iterator", "classwpi_1_1static__circular__buffer_1_1iterator.html", "classwpi_1_1static__circular__buffer_1_1iterator" ],
-    [ "static_circular_buffer", "classwpi_1_1static__circular__buffer.html#ab8b76a0cbe659063622c3a37cb653d08", null ],
     [ "back", "classwpi_1_1static__circular__buffer.html#ab7dc0e848fb391fa2630f5f81bf151e1", null ],
     [ "back", "classwpi_1_1static__circular__buffer.html#ad35795c06b4d1f2a8d2fbfec6424afb3", null ],
     [ "begin", "classwpi_1_1static__circular__buffer.html#a87d29945505ef3016eb39cd49e50f0b0", null ],

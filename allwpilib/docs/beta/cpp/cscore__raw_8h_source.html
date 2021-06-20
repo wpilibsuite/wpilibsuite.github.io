@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -106,8 +106,8 @@ $(document).ready(function(){initNavTree('cscore__raw_8h_source.html',''); initR
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;cscore_oo.h&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="structCS__RawFrame.html">   17</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structCS__RawFrame.html">CS_RawFrame</a> {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keywordtype">char</span>* data;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="structCS__RawFrame.html">   17</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structCS__RawFrame.html">CS_RawFrame</a> {  <span class="comment">// NOLINT</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keywordtype">char</span>* <a class="code" href="structdata.html">data</a>;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keywordtype">int</span> dataLength;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keywordtype">int</span> pixelFormat;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  <span class="keywordtype">int</span> width;</div>
@@ -129,8 +129,8 @@ $(document).ready(function(){initNavTree('cscore__raw_8h_source.html',''); initR
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;CS_Sink CS_CreateRawSink(<span class="keyword">const</span> <span class="keywordtype">char</span>* name, CS_Status* status);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;CS_Sink CS_CreateRawSinkCallback(<span class="keyword">const</span> <span class="keywordtype">char</span>* name, <span class="keywordtype">void</span>* data,</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                 <span class="keywordtype">void</span> (*processFrame)(<span class="keywordtype">void</span>* data,</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;CS_Sink CS_CreateRawSinkCallback(<span class="keyword">const</span> <span class="keywordtype">char</span>* name, <span class="keywordtype">void</span>* <a class="code" href="structdata.html">data</a>,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                 <span class="keywordtype">void</span> (*processFrame)(<span class="keywordtype">void</span>* <a class="code" href="structdata.html">data</a>,</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                                                      uint64_t time),</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                                 CS_Status* status);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
@@ -148,7 +148,7 @@ $(document).ready(function(){initNavTree('cscore__raw_8h_source.html',''); initR
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">struct </span>RawFrame : <span class="keyword">public</span> <a class="code" href="structCS__RawFrame.html">CS_RawFrame</a> {</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  RawFrame() {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    data = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="structdata.html">data</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    dataLength = 0;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    pixelFormat = CS_PIXFMT_UNKNOWN;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    width = 0;</div>
@@ -159,11 +159,11 @@ $(document).ready(function(){initNavTree('cscore__raw_8h_source.html',''); initR
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  ~RawFrame() { CS_FreeRawFrameData(<span class="keyword">this</span>); }</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;};</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;CS_Source CreateRawSource(<span class="keyword">const</span> <a class="code" href="classwpi_1_1Twine.html">wpi::Twine</a>&amp; name, <span class="keyword">const</span> VideoMode&amp; mode,</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;CS_Source CreateRawSource(std::string_view name, <span class="keyword">const</span> VideoMode&amp; mode,</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                          CS_Status* status);</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;CS_Sink CreateRawSink(<span class="keyword">const</span> <a class="code" href="classwpi_1_1Twine.html">wpi::Twine</a>&amp; name, CS_Status* status);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;CS_Sink CreateRawSinkCallback(<span class="keyword">const</span> <a class="code" href="classwpi_1_1Twine.html">wpi::Twine</a>&amp; name,</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;CS_Sink CreateRawSink(std::string_view name, CS_Status* status);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;CS_Sink CreateRawSinkCallback(std::string_view name,</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                              std::function&lt;<span class="keywordtype">void</span>(uint64_t time)&gt; processFrame,</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                              CS_Status* status);</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
@@ -177,9 +177,9 @@ $(document).ready(function(){initNavTree('cscore__raw_8h_source.html',''); initR
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  RawSource() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  RawSource(<span class="keyword">const</span> <a class="code" href="classwpi_1_1Twine.html">wpi::Twine</a>&amp; name, <span class="keyword">const</span> VideoMode&amp; mode);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  RawSource(std::string_view name, <span class="keyword">const</span> VideoMode&amp; mode);</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  RawSource(<span class="keyword">const</span> <a class="code" href="classwpi_1_1Twine.html">wpi::Twine</a>&amp; name, VideoMode::PixelFormat pixelFormat,</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  RawSource(std::string_view name, VideoMode::PixelFormat pixelFormat,</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            <span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height, <span class="keywordtype">int</span> fps);</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; <span class="keyword">protected</span>:</div>
@@ -190,9 +190,9 @@ $(document).ready(function(){initNavTree('cscore__raw_8h_source.html',''); initR
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  RawSink() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  <span class="keyword">explicit</span> RawSink(<span class="keyword">const</span> <a class="code" href="classwpi_1_1Twine.html">wpi::Twine</a>&amp; name);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  <span class="keyword">explicit</span> RawSink(std::string_view name);</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  RawSink(<span class="keyword">const</span> <a class="code" href="classwpi_1_1Twine.html">wpi::Twine</a>&amp; name,</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  RawSink(std::string_view name,</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;          std::function&lt;<span class="keywordtype">void</span>(uint64_t time)&gt; processFrame);</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; <span class="keyword">protected</span>:</div>
@@ -201,11 +201,11 @@ $(document).ready(function(){initNavTree('cscore__raw_8h_source.html',''); initR
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  uint64_t GrabFrameNoTimeout(RawFrame&amp; image) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;};</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="keyword">inline</span> RawSource::RawSource(<span class="keyword">const</span> <a class="code" href="classwpi_1_1Twine.html">wpi::Twine</a>&amp; name, <span class="keyword">const</span> VideoMode&amp; mode) {</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="keyword">inline</span> RawSource::RawSource(std::string_view name, <span class="keyword">const</span> VideoMode&amp; mode) {</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  m_handle = CreateRawSource(name, mode, &amp;m_status);</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;}</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="keyword">inline</span> RawSource::RawSource(<span class="keyword">const</span> <a class="code" href="classwpi_1_1Twine.html">wpi::Twine</a>&amp; name,</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="keyword">inline</span> RawSource::RawSource(std::string_view name,</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;                            VideoMode::PixelFormat format, <span class="keywordtype">int</span> width,</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                            <span class="keywordtype">int</span> height, <span class="keywordtype">int</span> fps) {</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  m_handle =</div>
@@ -217,11 +217,11 @@ $(document).ready(function(){initNavTree('cscore__raw_8h_source.html',''); initR
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  PutSourceFrame(m_handle, image, &amp;m_status);</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;}</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160; </div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="keyword">inline</span> RawSink::RawSink(<span class="keyword">const</span> <a class="code" href="classwpi_1_1Twine.html">wpi::Twine</a>&amp; name) {</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="keyword">inline</span> RawSink::RawSink(std::string_view name) {</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;  m_handle = CreateRawSink(name, &amp;m_status);</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;}</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160; </div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="keyword">inline</span> RawSink::RawSink(<span class="keyword">const</span> <a class="code" href="classwpi_1_1Twine.html">wpi::Twine</a>&amp; name,</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="keyword">inline</span> RawSink::RawSink(std::string_view name,</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;                        std::function&lt;<span class="keywordtype">void</span>(uint64_t time)&gt; processFrame) {</div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;  m_handle = CreateRawSinkCallback(name, processFrame, &amp;m_status);</div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;}</div>
@@ -243,15 +243,15 @@ $(document).ready(function(){initNavTree('cscore__raw_8h_source.html',''); initR
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<span class="preprocessor">#endif  // CSCORE_CSCORE_RAW_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="astructdata_html"><div class="ttname"><a href="structdata.html">data</a></div><div class="ttdef"><b>Definition:</b> format.h:917</div></div>
 <div class="ttc" id="astructCS__VideoMode_html"><div class="ttname"><a href="structCS__VideoMode.html">CS_VideoMode</a></div><div class="ttdoc">Video mode.</div><div class="ttdef"><b>Definition:</b> cscore_c.h:102</div></div>
-<div class="ttc" id="anamespacecs_html"><div class="ttname"><a href="namespacecs.html">cs</a></div><div class="ttdoc">CameraServer (cscore) namespace.</div><div class="ttdef"><b>Definition:</b> cscore_oo.h:15</div></div>
+<div class="ttc" id="anamespacecs_html"><div class="ttname"><a href="namespacecs.html">cs</a></div><div class="ttdoc">CameraServer (cscore) namespace.</div><div class="ttdef"><b>Definition:</b> cscore_oo.h:18</div></div>
 <div class="ttc" id="astructCS__RawFrame_html"><div class="ttname"><a href="structCS__RawFrame.html">CS_RawFrame</a></div><div class="ttdoc">Raw Frame.</div><div class="ttdef"><b>Definition:</b> cscore_raw.h:17</div></div>
-<div class="ttc" id="aclasswpi_1_1Twine_html"><div class="ttname"><a href="classwpi_1_1Twine.html">wpi::Twine</a></div><div class="ttdoc">Twine - A lightweight data structure for efficiently representing the concatenation of temporary valu...</div><div class="ttdef"><b>Definition:</b> Twine.h:85</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>cscore_raw.h</b></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:29 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:05 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

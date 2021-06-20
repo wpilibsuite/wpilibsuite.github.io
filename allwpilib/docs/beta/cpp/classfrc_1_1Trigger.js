@@ -7,7 +7,7 @@ var classfrc_1_1Trigger =
     [ "CancelWhenActive", "classfrc_1_1Trigger.html#ac86a84a81b238e8561f99c82570d6a83", null ],
     [ "Get", "classfrc_1_1Trigger.html#a27335b12fe9df2e4216dddc6fd7421b0", null ],
     [ "Grab", "classfrc_1_1Trigger.html#ad418dbce1bfb56a1aabc70f0f1ceb61c", null ],
-    [ "InitSendable", "classfrc_1_1Trigger.html#a6cb30eeee7252bc1b41102101fa20270", null ],
+    [ "InitSendable", "classfrc_1_1Trigger.html#a314800317cd973ce88a0ccf691d69dfb", null ],
     [ "operator=", "classfrc_1_1Trigger.html#a3a2758b2a0ba267e88fff186cafc0a84", null ],
     [ "operator=", "classfrc_1_1Trigger.html#a36b259fa313e3cbde549a67761fe4b94", null ],
     [ "ToggleWhenActive", "classfrc_1_1Trigger.html#aae688ac0d1cf809e5e88e2c6596c1248", null ],

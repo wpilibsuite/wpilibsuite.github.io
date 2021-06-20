@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -103,7 +103,7 @@ $(document).ready(function(){initNavTree('PWMSim_8h_source.html',''); initResiza
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;frc/simulation/CallbackStore.h&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacefrc.html">frc</a> {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>frc {</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span>PWM;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
@@ -167,7 +167,7 @@ $(document).ready(function(){initNavTree('PWMSim_8h_source.html',''); initResiza
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassfrc_1_1sim_1_1PWMSim_html_afbe5297dce4abd7d32a67da484b2eeba"><div class="ttname"><a href="classfrc_1_1sim_1_1PWMSim.html#afbe5297dce4abd7d32a67da484b2eeba">frc::sim::PWMSim::SetZeroLatch</a></div><div class="ttdeci">void SetZeroLatch(bool zeroLatch)</div><div class="ttdoc">Define whether the PWM has been zero latched.</div></div>
-<div class="ttc" id="aclassfrc_1_1PWM_html"><div class="ttname"><a href="classfrc_1_1PWM.html">frc::PWM</a></div><div class="ttdoc">Class implements the PWM generation in the FPGA.</div><div class="ttdef"><b>Definition:</b> PWM.h:37</div></div>
+<div class="ttc" id="aclassfrc_1_1PWM_html"><div class="ttname"><a href="classfrc_1_1PWM.html">frc::PWM</a></div><div class="ttdoc">Class implements the PWM generation in the FPGA.</div><div class="ttdef"><b>Definition:</b> PWM.h:34</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1PWMSim_html_aa620acfaac27f8aa094668cde4012442"><div class="ttname"><a href="classfrc_1_1sim_1_1PWMSim.html#aa620acfaac27f8aa094668cde4012442">frc::sim::PWMSim::RegisterRawValueCallback</a></div><div class="ttdeci">std::unique_ptr&lt; CallbackStore &gt; RegisterRawValueCallback(NotifyCallback callback, bool initialNotify)</div><div class="ttdoc">Register a callback to be run when the PWM raw value changes.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1PWMSim_html_ab600c0422b2fe91a094fa5402d1028eb"><div class="ttname"><a href="classfrc_1_1sim_1_1PWMSim.html#ab600c0422b2fe91a094fa5402d1028eb">frc::sim::PWMSim::SetRawValue</a></div><div class="ttdeci">void SetRawValue(int rawValue)</div><div class="ttdoc">Set the PWM raw value.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1PWMSim_html_aece0a3a4e22286280385572258c5e308"><div class="ttname"><a href="classfrc_1_1sim_1_1PWMSim.html#aece0a3a4e22286280385572258c5e308">frc::sim::PWMSim::SetSpeed</a></div><div class="ttdeci">void SetSpeed(double speed)</div><div class="ttdoc">Set the PWM speed.</div></div>
@@ -187,14 +187,13 @@ $(document).ready(function(){initNavTree('PWMSim_8h_source.html',''); initResiza
 <div class="ttc" id="aclassfrc_1_1sim_1_1PWMSim_html_a647a638ec93285bf3c3c8565f544bfaf"><div class="ttname"><a href="classfrc_1_1sim_1_1PWMSim.html#a647a638ec93285bf3c3c8565f544bfaf">frc::sim::PWMSim::GetRawValue</a></div><div class="ttdeci">int GetRawValue() const</div><div class="ttdoc">Get the PWM raw value.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1PWMSim_html_a9c384210775c26ad79825bcff1168c71"><div class="ttname"><a href="classfrc_1_1sim_1_1PWMSim.html#a9c384210775c26ad79825bcff1168c71">frc::sim::PWMSim::GetPeriodScale</a></div><div class="ttdeci">int GetPeriodScale() const</div><div class="ttdoc">Get the PWM period scale.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1PWMSim_html_a6f480a1405b4a7286a73ef908802f4da"><div class="ttname"><a href="classfrc_1_1sim_1_1PWMSim.html#a6f480a1405b4a7286a73ef908802f4da">frc::sim::PWMSim::RegisterInitializedCallback</a></div><div class="ttdeci">std::unique_ptr&lt; CallbackStore &gt; RegisterInitializedCallback(NotifyCallback callback, bool initialNotify)</div><div class="ttdoc">Register a callback to be run when the PWM is initialized.</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> CameraServer.h:18</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1PWMSim_html_a3ee4bdd367a3bcdce2e275569dacbb0f"><div class="ttname"><a href="classfrc_1_1sim_1_1PWMSim.html#a3ee4bdd367a3bcdce2e275569dacbb0f">frc::sim::PWMSim::GetPosition</a></div><div class="ttdeci">double GetPosition() const</div><div class="ttdoc">Get the PWM position.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1PWMSim_html_a4f1610eb00be3bc8bca2c0455535afca"><div class="ttname"><a href="classfrc_1_1sim_1_1PWMSim.html#a4f1610eb00be3bc8bca2c0455535afca">frc::sim::PWMSim::RegisterSpeedCallback</a></div><div class="ttdeci">std::unique_ptr&lt; CallbackStore &gt; RegisterSpeedCallback(NotifyCallback callback, bool initialNotify)</div><div class="ttdoc">Register a callback to be run when the PWM speed changes.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_297dc702852f645e4b9e531dac2da27d.html">simulation</a></li><li class="navelem"><b>PWMSim.h</b></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:30 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:05 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

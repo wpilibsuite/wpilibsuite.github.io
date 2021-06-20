@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -101,29 +101,24 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;thread&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacefrc.html">frc</a> {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>frc {</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="namespacefrc.html#a2369a95f34fca0109c8aa3c25e9fa50b">   20</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="namespacefrc.html#a2369a95f34fca0109c8aa3c25e9fa50b">GetThreadPriority</a>(std::thread&amp; thread, <span class="keywordtype">bool</span>* isRealTime);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keywordtype">int</span> GetThreadPriority(std::thread&amp; thread, <span class="keywordtype">bool</span>* isRealTime);</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="namespacefrc.html#a240ecbfe0ad32ce081c017bdf344813f">   30</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="namespacefrc.html#a240ecbfe0ad32ce081c017bdf344813f">GetCurrentThreadPriority</a>(<span class="keywordtype">bool</span>* isRealTime);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keywordtype">int</span> GetCurrentThreadPriority(<span class="keywordtype">bool</span>* isRealTime);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="namespacefrc.html#adbae7ad2ff20f360025c771a43aa3ea4">   43</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="namespacefrc.html#adbae7ad2ff20f360025c771a43aa3ea4">SetThreadPriority</a>(std::thread&amp; thread, <span class="keywordtype">bool</span> realTime, <span class="keywordtype">int</span> priority);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">bool</span> SetThreadPriority(std::thread&amp; thread, <span class="keywordtype">bool</span> realTime, <span class="keywordtype">int</span> priority);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="namespacefrc.html#a2d171ed3c8f73f2a5fd711b761dac0f5">   55</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="namespacefrc.html#a2d171ed3c8f73f2a5fd711b761dac0f5">SetCurrentThreadPriority</a>(<span class="keywordtype">bool</span> realTime, <span class="keywordtype">int</span> priority);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keywordtype">bool</span> SetCurrentThreadPriority(<span class="keywordtype">bool</span> realTime, <span class="keywordtype">int</span> priority);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}  <span class="comment">// namespace frc</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespacefrc_html_a2369a95f34fca0109c8aa3c25e9fa50b"><div class="ttname"><a href="namespacefrc.html#a2369a95f34fca0109c8aa3c25e9fa50b">frc::GetThreadPriority</a></div><div class="ttdeci">int GetThreadPriority(std::thread &amp;thread, bool *isRealTime)</div><div class="ttdoc">Get the thread priority for the specified thread.</div></div>
-<div class="ttc" id="anamespacefrc_html_a2d171ed3c8f73f2a5fd711b761dac0f5"><div class="ttname"><a href="namespacefrc.html#a2d171ed3c8f73f2a5fd711b761dac0f5">frc::SetCurrentThreadPriority</a></div><div class="ttdeci">bool SetCurrentThreadPriority(bool realTime, int priority)</div><div class="ttdoc">Sets the thread priority for the current thread.</div></div>
-<div class="ttc" id="anamespacefrc_html_adbae7ad2ff20f360025c771a43aa3ea4"><div class="ttname"><a href="namespacefrc.html#adbae7ad2ff20f360025c771a43aa3ea4">frc::SetThreadPriority</a></div><div class="ttdeci">bool SetThreadPriority(std::thread &amp;thread, bool realTime, int priority)</div><div class="ttdoc">Sets the thread priority for the specified thread.</div></div>
-<div class="ttc" id="anamespacefrc_html_a240ecbfe0ad32ce081c017bdf344813f"><div class="ttname"><a href="namespacefrc.html#a240ecbfe0ad32ce081c017bdf344813f">frc::GetCurrentThreadPriority</a></div><div class="ttdeci">int GetCurrentThreadPriority(bool *isRealTime)</div><div class="ttdoc">Get the thread priority for the current thread.</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> CameraServer.h:18</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><b>Threads.h</b></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:30 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:05 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

@@ -10,10 +10,10 @@ var dir_297dc702852f645e4b9e531dac2da27d =
     [ "BatterySim.h", "BatterySim_8h_source.html", null ],
     [ "BuiltInAccelerometerSim.h", "BuiltInAccelerometerSim_8h_source.html", null ],
     [ "CallbackStore.h", "CallbackStore_8h_source.html", null ],
+    [ "CTREPCMSim.h", "CTREPCMSim_8h_source.html", null ],
     [ "DifferentialDrivetrainSim.h", "DifferentialDrivetrainSim_8h_source.html", null ],
     [ "DigitalPWMSim.h", "DigitalPWMSim_8h_source.html", null ],
     [ "DIOSim.h", "DIOSim_8h_source.html", null ],
-    [ "DoubleSolenoidSim.h", "DoubleSolenoidSim_8h_source.html", null ],
     [ "DriverStationSim.h", "DriverStationSim_8h_source.html", null ],
     [ "DutyCycleEncoderSim.h", "DutyCycleEncoderSim_8h_source.html", null ],
     [ "DutyCycleSim.h", "DutyCycleSim_8h_source.html", null ],
@@ -23,7 +23,6 @@ var dir_297dc702852f645e4b9e531dac2da27d =
     [ "GenericHIDSim.h", "GenericHIDSim_8h_source.html", null ],
     [ "JoystickSim.h", "JoystickSim_8h_source.html", null ],
     [ "LinearSystemSim.h", "LinearSystemSim_8h_source.html", null ],
-    [ "PCMSim.h", "PCMSim_8h_source.html", null ],
     [ "PDPSim.h", "PDPSim_8h_source.html", null ],
     [ "PWMSim.h", "PWMSim_8h_source.html", null ],
     [ "RelaySim.h", "RelaySim_8h_source.html", null ],
@@ -31,7 +30,6 @@ var dir_297dc702852f645e4b9e531dac2da27d =
     [ "SimDeviceSim.h", "SimDeviceSim_8h_source.html", null ],
     [ "SimHooks.h", "SimHooks_8h_source.html", null ],
     [ "SingleJointedArmSim.h", "SingleJointedArmSim_8h_source.html", null ],
-    [ "SolenoidSim.h", "SolenoidSim_8h_source.html", null ],
     [ "SPIAccelerometerSim.h", "SPIAccelerometerSim_8h_source.html", null ],
     [ "XboxControllerSim.h", "XboxControllerSim_8h_source.html", null ]
 ];

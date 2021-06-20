@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -105,8 +105,8 @@ $(document).ready(function(){initNavTree('Pipe_8h_source.html',''); initResizabl
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;functional&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;wpi/Twine.h&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;string_view&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;wpi/uv/NetworkStream.h&quot;</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span>wpi::uv {</div>
@@ -138,70 +138,70 @@ $(document).ready(function(){initNavTree('Pipe_8h_source.html',''); initResizabl
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
 <div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1Pipe.html#a2d054e32744ceea7be43d77604c4a1d9">  112</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classwpi_1_1uv_1_1Pipe.html#a2d054e32744ceea7be43d77604c4a1d9">Open</a>(uv_file file) { Invoke(&amp;uv_pipe_open, <a class="code" href="classwpi_1_1uv_1_1NetworkStreamImpl.html#af921b36c022830fe7ac472ace83ec284">GetRaw</a>(), file); }</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
-<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1Pipe.html#a8519527d4127dfdf3b2e187ccdcdadf5">  122</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classwpi_1_1uv_1_1Pipe.html#a8519527d4127dfdf3b2e187ccdcdadf5">Bind</a>(<span class="keyword">const</span> <a class="code" href="classwpi_1_1Twine.html">Twine</a>&amp; name);</div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1Pipe.html#aaa3dc37e2ac7715502b7310ddcf031e8">  122</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classwpi_1_1uv_1_1Pipe.html#aaa3dc37e2ac7715502b7310ddcf031e8">Bind</a>(std::string_view name);</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
-<div class="line"><a name="l00138"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1Pipe.html#a59a63c236ae0e09cc78c31ea87240915">  138</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classwpi_1_1uv_1_1Pipe.html#a59a63c236ae0e09cc78c31ea87240915">Connect</a>(<span class="keyword">const</span> <a class="code" href="classwpi_1_1Twine.html">Twine</a>&amp; name, <span class="keyword">const</span> std::shared_ptr&lt;PipeConnectReq&gt;&amp; req);</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
-<div class="line"><a name="l00152"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1Pipe.html#ab527cd55727dcdb40f81bf686c49c770">  152</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classwpi_1_1uv_1_1Pipe.html#ab527cd55727dcdb40f81bf686c49c770">Connect</a>(<span class="keyword">const</span> <a class="code" href="classwpi_1_1Twine.html">Twine</a>&amp; name, std::function&lt;<span class="keywordtype">void</span>()&gt; callback);</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
-<div class="line"><a name="l00158"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1Pipe.html#a3754cee808adedd86a6154dc2b324c12">  158</a></span>&#160;  std::string <a class="code" href="classwpi_1_1uv_1_1Pipe.html#a3754cee808adedd86a6154dc2b324c12">GetSock</a>();</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
-<div class="line"><a name="l00165"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1Pipe.html#a4e37a8fc86886889bc8952658e4e1756">  165</a></span>&#160;  std::string <a class="code" href="classwpi_1_1uv_1_1Pipe.html#a4e37a8fc86886889bc8952658e4e1756">GetPeer</a>();</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
-<div class="line"><a name="l00173"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1Pipe.html#a8eae874dd02bbb2d37304a999944baca">  173</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classwpi_1_1uv_1_1Pipe.html#a8eae874dd02bbb2d37304a999944baca">SetPendingInstances</a>(<span class="keywordtype">int</span> count) {</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    uv_pipe_pending_instances(<a class="code" href="classwpi_1_1uv_1_1NetworkStreamImpl.html#af921b36c022830fe7ac472ace83ec284">GetRaw</a>(), count);</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  }</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
-<div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1Pipe.html#af566c1969c5193062752aa4acdbd8bf2">  183</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classwpi_1_1uv_1_1Pipe.html#af566c1969c5193062752aa4acdbd8bf2">Chmod</a>(<span class="keywordtype">int</span> flags) { Invoke(&amp;uv_pipe_chmod, <a class="code" href="classwpi_1_1uv_1_1NetworkStreamImpl.html#af921b36c022830fe7ac472ace83ec284">GetRaw</a>(), flags); }</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  <a class="code" href="classwpi_1_1uv_1_1Pipe.html">Pipe</a>* DoAccept() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  <span class="keyword">struct </span>ReuseData {</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    std::function&lt;void()&gt; callback;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="keywordtype">bool</span> ipc;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  };</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  std::unique_ptr&lt;ReuseData&gt; m_reuseData;</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;};</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
-<div class="line"><a name="l00198"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1PipeConnectReq.html">  198</a></span>&#160;<span class="keyword">class </span><a class="code" href="classwpi_1_1uv_1_1PipeConnectReq.html">PipeConnectReq</a> : <span class="keyword">public</span> <a class="code" href="classwpi_1_1uv_1_1ConnectReq.html">ConnectReq</a> {</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  <a class="code" href="classwpi_1_1uv_1_1Pipe.html">Pipe</a>&amp; GetStream()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">static_cast&lt;</span><a class="code" href="classwpi_1_1uv_1_1Pipe.html">Pipe</a>*<span class="keyword">&gt;</span>(&amp;ConnectReq::GetStream());</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  }</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;};</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160; </div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;}  <span class="comment">// namespace wpi::uv</span></div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160; </div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="preprocessor">#endif  // WPIUTIL_WPI_UV_PIPE_H_</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1Pipe.html#a6ba30bebd03e4bc39a36e0c1d9e37b70">  138</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classwpi_1_1uv_1_1Pipe.html#a6ba30bebd03e4bc39a36e0c1d9e37b70">Connect</a>(std::string_view name,</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;               <span class="keyword">const</span> std::shared_ptr&lt;PipeConnectReq&gt;&amp; req);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
+<div class="line"><a name="l00153"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1Pipe.html#af7d64ecc16b6980ab19258bbcd0e62c7">  153</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classwpi_1_1uv_1_1Pipe.html#af7d64ecc16b6980ab19258bbcd0e62c7">Connect</a>(std::string_view name, std::function&lt;<span class="keywordtype">void</span>()&gt; callback);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1Pipe.html#a3754cee808adedd86a6154dc2b324c12">  159</a></span>&#160;  std::string <a class="code" href="classwpi_1_1uv_1_1Pipe.html#a3754cee808adedd86a6154dc2b324c12">GetSock</a>();</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
+<div class="line"><a name="l00166"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1Pipe.html#a4e37a8fc86886889bc8952658e4e1756">  166</a></span>&#160;  std::string <a class="code" href="classwpi_1_1uv_1_1Pipe.html#a4e37a8fc86886889bc8952658e4e1756">GetPeer</a>();</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
+<div class="line"><a name="l00174"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1Pipe.html#a8eae874dd02bbb2d37304a999944baca">  174</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classwpi_1_1uv_1_1Pipe.html#a8eae874dd02bbb2d37304a999944baca">SetPendingInstances</a>(<span class="keywordtype">int</span> count) {</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    uv_pipe_pending_instances(<a class="code" href="classwpi_1_1uv_1_1NetworkStreamImpl.html#af921b36c022830fe7ac472ace83ec284">GetRaw</a>(), count);</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  }</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
+<div class="line"><a name="l00184"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1Pipe.html#af566c1969c5193062752aa4acdbd8bf2">  184</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classwpi_1_1uv_1_1Pipe.html#af566c1969c5193062752aa4acdbd8bf2">Chmod</a>(<span class="keywordtype">int</span> flags) { Invoke(&amp;uv_pipe_chmod, <a class="code" href="classwpi_1_1uv_1_1NetworkStreamImpl.html#af921b36c022830fe7ac472ace83ec284">GetRaw</a>(), flags); }</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  <a class="code" href="classwpi_1_1uv_1_1Pipe.html">Pipe</a>* DoAccept() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  <span class="keyword">struct </span>ReuseData {</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    std::function&lt;void()&gt; callback;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keywordtype">bool</span> ipc;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  };</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  std::unique_ptr&lt;ReuseData&gt; m_reuseData;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;};</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
+<div class="line"><a name="l00199"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1PipeConnectReq.html">  199</a></span>&#160;<span class="keyword">class </span><a class="code" href="classwpi_1_1uv_1_1PipeConnectReq.html">PipeConnectReq</a> : <span class="keyword">public</span> <a class="code" href="classwpi_1_1uv_1_1ConnectReq.html">ConnectReq</a> {</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  <a class="code" href="classwpi_1_1uv_1_1Pipe.html">Pipe</a>&amp; GetStream()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">static_cast&lt;</span><a class="code" href="classwpi_1_1uv_1_1Pipe.html">Pipe</a>*<span class="keyword">&gt;</span>(&amp;ConnectReq::GetStream());</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  }</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;};</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160; </div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;}  <span class="comment">// namespace wpi::uv</span></div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="preprocessor">#endif  // WPIUTIL_WPI_UV_PIPE_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclasswpi_1_1uv_1_1Pipe_html_a2d054e32744ceea7be43d77604c4a1d9"><div class="ttname"><a href="classwpi_1_1uv_1_1Pipe.html#a2d054e32744ceea7be43d77604c4a1d9">wpi::uv::Pipe::Open</a></div><div class="ttdeci">void Open(uv_file file)</div><div class="ttdoc">Open an existing file descriptor or HANDLE as a pipe.</div><div class="ttdef"><b>Definition:</b> Pipe.h:112</div></div>
-<div class="ttc" id="aclasswpi_1_1uv_1_1Pipe_html_af566c1969c5193062752aa4acdbd8bf2"><div class="ttname"><a href="classwpi_1_1uv_1_1Pipe.html#af566c1969c5193062752aa4acdbd8bf2">wpi::uv::Pipe::Chmod</a></div><div class="ttdeci">void Chmod(int flags)</div><div class="ttdoc">Alters pipe permissions, allowing it to be accessed from processes run by different users.</div><div class="ttdef"><b>Definition:</b> Pipe.h:183</div></div>
+<div class="ttc" id="aclasswpi_1_1uv_1_1Pipe_html_af566c1969c5193062752aa4acdbd8bf2"><div class="ttname"><a href="classwpi_1_1uv_1_1Pipe.html#af566c1969c5193062752aa4acdbd8bf2">wpi::uv::Pipe::Chmod</a></div><div class="ttdeci">void Chmod(int flags)</div><div class="ttdoc">Alters pipe permissions, allowing it to be accessed from processes run by different users.</div><div class="ttdef"><b>Definition:</b> Pipe.h:184</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1ConnectReq_html"><div class="ttname"><a href="classwpi_1_1uv_1_1ConnectReq.html">wpi::uv::ConnectReq</a></div><div class="ttdoc">Connection request.</div><div class="ttdef"><b>Definition:</b> NetworkStream.h:24</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1Pipe_html_a61ab865c72745d72f89d8a00c9ff24aa"><div class="ttname"><a href="classwpi_1_1uv_1_1Pipe.html#a61ab865c72745d72f89d8a00c9ff24aa">wpi::uv::Pipe::Create</a></div><div class="ttdeci">static std::shared_ptr&lt; Pipe &gt; Create(const std::shared_ptr&lt; Loop &gt; &amp;loop, bool ipc=false)</div><div class="ttdoc">Create a pipe handle.</div><div class="ttdef"><b>Definition:</b> Pipe.h:50</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1Pipe_html_ae92bb2345c6bc844372ef55f6b4ee1d7"><div class="ttname"><a href="classwpi_1_1uv_1_1Pipe.html#ae92bb2345c6bc844372ef55f6b4ee1d7">wpi::uv::Pipe::Create</a></div><div class="ttdeci">static std::shared_ptr&lt; Pipe &gt; Create(Loop &amp;loop, bool ipc=false)</div><div class="ttdoc">Create a pipe handle.</div></div>
-<div class="ttc" id="aclasswpi_1_1uv_1_1PipeConnectReq_html"><div class="ttname"><a href="classwpi_1_1uv_1_1PipeConnectReq.html">wpi::uv::PipeConnectReq</a></div><div class="ttdoc">Pipe connection request.</div><div class="ttdef"><b>Definition:</b> Pipe.h:198</div></div>
+<div class="ttc" id="aclasswpi_1_1uv_1_1PipeConnectReq_html"><div class="ttname"><a href="classwpi_1_1uv_1_1PipeConnectReq.html">wpi::uv::PipeConnectReq</a></div><div class="ttdoc">Pipe connection request.</div><div class="ttdef"><b>Definition:</b> Pipe.h:199</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1NetworkStreamImpl_html"><div class="ttname"><a href="classwpi_1_1uv_1_1NetworkStreamImpl.html">wpi::uv::NetworkStreamImpl</a></div><div class="ttdef"><b>Definition:</b> NetworkStream.h:127</div></div>
-<div class="ttc" id="aclasswpi_1_1uv_1_1Pipe_html_ab527cd55727dcdb40f81bf686c49c770"><div class="ttname"><a href="classwpi_1_1uv_1_1Pipe.html#ab527cd55727dcdb40f81bf686c49c770">wpi::uv::Pipe::Connect</a></div><div class="ttdeci">void Connect(const Twine &amp;name, std::function&lt; void()&gt; callback)</div><div class="ttdoc">Connect to the Unix domain socket or the named pipe.</div></div>
+<div class="ttc" id="aclasswpi_1_1uv_1_1Pipe_html_aaa3dc37e2ac7715502b7310ddcf031e8"><div class="ttname"><a href="classwpi_1_1uv_1_1Pipe.html#aaa3dc37e2ac7715502b7310ddcf031e8">wpi::uv::Pipe::Bind</a></div><div class="ttdeci">void Bind(std::string_view name)</div><div class="ttdoc">Bind the pipe to a file path (Unix) or a name (Windows).</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1NetworkStream_html_af4bcf087ed12ab45556f4cd928db518e"><div class="ttname"><a href="classwpi_1_1uv_1_1NetworkStream.html#af4bcf087ed12ab45556f4cd928db518e">wpi::uv::NetworkStream::Accept</a></div><div class="ttdeci">std::shared_ptr&lt; NetworkStream &gt; Accept()</div><div class="ttdoc">Accept incoming connection.</div><div class="ttdef"><b>Definition:</b> NetworkStream.h:91</div></div>
-<div class="ttc" id="aclasswpi_1_1uv_1_1Pipe_html_a59a63c236ae0e09cc78c31ea87240915"><div class="ttname"><a href="classwpi_1_1uv_1_1Pipe.html#a59a63c236ae0e09cc78c31ea87240915">wpi::uv::Pipe::Connect</a></div><div class="ttdeci">void Connect(const Twine &amp;name, const std::shared_ptr&lt; PipeConnectReq &gt; &amp;req)</div><div class="ttdoc">Connect to the Unix domain socket or the named pipe.</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1Pipe_html_a3754cee808adedd86a6154dc2b324c12"><div class="ttname"><a href="classwpi_1_1uv_1_1Pipe.html#a3754cee808adedd86a6154dc2b324c12">wpi::uv::Pipe::GetSock</a></div><div class="ttdeci">std::string GetSock()</div><div class="ttdoc">Get the name of the Unix domain socket or the named pipe.</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1Pipe_html_a4e37a8fc86886889bc8952658e4e1756"><div class="ttname"><a href="classwpi_1_1uv_1_1Pipe.html#a4e37a8fc86886889bc8952658e4e1756">wpi::uv::Pipe::GetPeer</a></div><div class="ttdeci">std::string GetPeer()</div><div class="ttdoc">Get the name of the Unix domain socket or the named pipe to which the handle is connected.</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1Pipe_html_aeab8ae2286ad6da657fad595c4235f92"><div class="ttname"><a href="classwpi_1_1uv_1_1Pipe.html#aeab8ae2286ad6da657fad595c4235f92">wpi::uv::Pipe::Reuse</a></div><div class="ttdeci">void Reuse(std::function&lt; void()&gt; callback, bool ipc=false)</div><div class="ttdoc">Reuse this handle.</div></div>
+<div class="ttc" id="aclasswpi_1_1uv_1_1Pipe_html_a6ba30bebd03e4bc39a36e0c1d9e37b70"><div class="ttname"><a href="classwpi_1_1uv_1_1Pipe.html#a6ba30bebd03e4bc39a36e0c1d9e37b70">wpi::uv::Pipe::Connect</a></div><div class="ttdeci">void Connect(std::string_view name, const std::shared_ptr&lt; PipeConnectReq &gt; &amp;req)</div><div class="ttdoc">Connect to the Unix domain socket or the named pipe.</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1NetworkStreamImpl_html_af921b36c022830fe7ac472ace83ec284"><div class="ttname"><a href="classwpi_1_1uv_1_1NetworkStreamImpl.html#af921b36c022830fe7ac472ace83ec284">wpi::uv::NetworkStreamImpl&lt; Pipe, uv_pipe_t &gt;::GetRaw</a></div><div class="ttdeci">uv_pipe_t * GetRaw() const noexcept</div><div class="ttdoc">Get the underlying handle data structure.</div><div class="ttdef"><b>Definition:</b> NetworkStream.h:142</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1Pipe_html"><div class="ttname"><a href="classwpi_1_1uv_1_1Pipe.html">wpi::uv::Pipe</a></div><div class="ttdoc">Pipe handle.</div><div class="ttdef"><b>Definition:</b> Pipe.h:27</div></div>
-<div class="ttc" id="aclasswpi_1_1uv_1_1Pipe_html_a8eae874dd02bbb2d37304a999944baca"><div class="ttname"><a href="classwpi_1_1uv_1_1Pipe.html#a8eae874dd02bbb2d37304a999944baca">wpi::uv::Pipe::SetPendingInstances</a></div><div class="ttdeci">void SetPendingInstances(int count)</div><div class="ttdoc">Set the number of pending pipe instance handles when the pipe server is waiting for connections.</div><div class="ttdef"><b>Definition:</b> Pipe.h:173</div></div>
+<div class="ttc" id="aclasswpi_1_1uv_1_1Pipe_html_a8eae874dd02bbb2d37304a999944baca"><div class="ttname"><a href="classwpi_1_1uv_1_1Pipe.html#a8eae874dd02bbb2d37304a999944baca">wpi::uv::Pipe::SetPendingInstances</a></div><div class="ttdeci">void SetPendingInstances(int count)</div><div class="ttdoc">Set the number of pending pipe instance handles when the pipe server is waiting for connections.</div><div class="ttdef"><b>Definition:</b> Pipe.h:174</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1Pipe_html_a4e27e85fc55c8eba3fddced0a2c01a9e"><div class="ttname"><a href="classwpi_1_1uv_1_1Pipe.html#a4e27e85fc55c8eba3fddced0a2c01a9e">wpi::uv::Pipe::Accept</a></div><div class="ttdeci">std::shared_ptr&lt; Pipe &gt; Accept()</div><div class="ttdoc">Accept incoming connection.</div></div>
-<div class="ttc" id="aclasswpi_1_1uv_1_1Pipe_html_a8519527d4127dfdf3b2e187ccdcdadf5"><div class="ttname"><a href="classwpi_1_1uv_1_1Pipe.html#a8519527d4127dfdf3b2e187ccdcdadf5">wpi::uv::Pipe::Bind</a></div><div class="ttdeci">void Bind(const Twine &amp;name)</div><div class="ttdoc">Bind the pipe to a file path (Unix) or a name (Windows).</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1Loop_html"><div class="ttname"><a href="classwpi_1_1uv_1_1Loop.html">wpi::uv::Loop</a></div><div class="ttdoc">Event loop.</div><div class="ttdef"><b>Definition:</b> Loop.h:35</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1Pipe_html_afa3933df2db81521c11f9310e58fe6e8"><div class="ttname"><a href="classwpi_1_1uv_1_1Pipe.html#afa3933df2db81521c11f9310e58fe6e8">wpi::uv::Pipe::Accept</a></div><div class="ttdeci">bool Accept(const std::shared_ptr&lt; Pipe &gt; &amp;client)</div><div class="ttdoc">Accept incoming connection.</div><div class="ttdef"><b>Definition:</b> Pipe.h:100</div></div>
-<div class="ttc" id="aclasswpi_1_1Twine_html"><div class="ttname"><a href="classwpi_1_1Twine.html">wpi::Twine</a></div><div class="ttdoc">Twine - A lightweight data structure for efficiently representing the concatenation of temporary valu...</div><div class="ttdef"><b>Definition:</b> Twine.h:85</div></div>
+<div class="ttc" id="aclasswpi_1_1uv_1_1Pipe_html_af7d64ecc16b6980ab19258bbcd0e62c7"><div class="ttname"><a href="classwpi_1_1uv_1_1Pipe.html#af7d64ecc16b6980ab19258bbcd0e62c7">wpi::uv::Pipe::Connect</a></div><div class="ttdeci">void Connect(std::string_view name, std::function&lt; void()&gt; callback)</div><div class="ttdoc">Connect to the Unix domain socket or the named pipe.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><a class="el" href="dir_25302867c2307ab8d43a1b1d664c1ea4.html">uv</a></li><li class="navelem"><b>Pipe.h</b></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:31 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:07 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

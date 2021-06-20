@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -114,10 +114,10 @@ Inheritance diagram for wpi::StringMapImpl:</div>
 <area href="classwpi_1_1StringMap.html" alt="wpi::StringMap&lt; NT_Entry &gt;" shape="rect" coords="371,112,732,136"/>
 <area href="classwpi_1_1StringMap.html" alt="wpi::StringMap&lt; std::chrono::nanoseconds &gt;" shape="rect" coords="371,168,732,192"/>
 <area href="classwpi_1_1StringMap.html" alt="wpi::StringMap&lt; std::shared_ptr&lt; nt::Value &gt; &gt;" shape="rect" coords="371,224,732,248"/>
-<area href="classwpi_1_1StringMap.html" alt="wpi::StringMap&lt; std::unique_ptr&lt; frc::MechanismObject2d &gt; &gt;" shape="rect" coords="371,280,732,304"/>
-<area href="classwpi_1_1StringMap.html" alt="wpi::StringMap&lt; std::unique_ptr&lt; frc::MechanismRoot2d &gt; &gt;" shape="rect" coords="371,336,732,360"/>
-<area href="classwpi_1_1StringMap.html" alt="wpi::StringMap&lt; T &gt;" shape="rect" coords="371,392,732,416"/>
-<area href="classwpi_1_1StringMap.html" alt="wpi::StringMap&lt; wpi::StringRef &gt;" shape="rect" coords="371,448,732,472"/>
+<area href="classwpi_1_1StringMap.html" alt="wpi::StringMap&lt; std::string_view &gt;" shape="rect" coords="371,280,732,304"/>
+<area href="classwpi_1_1StringMap.html" alt="wpi::StringMap&lt; std::unique_ptr&lt; frc::MechanismObject2d &gt; &gt;" shape="rect" coords="371,336,732,360"/>
+<area href="classwpi_1_1StringMap.html" alt="wpi::StringMap&lt; std::unique_ptr&lt; frc::MechanismRoot2d &gt; &gt;" shape="rect" coords="371,392,732,416"/>
+<area href="classwpi_1_1StringMap.html" alt="wpi::StringMap&lt; T &gt;" shape="rect" coords="371,448,732,472"/>
 <area href="classwpi_1_1StringMap.html" title="StringMap - This is an unconventional map that is specialized for handling keys that are &quot;strings&quot;,..." alt="wpi::StringMap&lt; ValueTy &gt;" shape="rect" coords="371,504,732,528"/>
   </map>
 </div></div>
@@ -160,18 +160,18 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a7f835d2ac20a25dc58ff82e2b29ab919"><td class="memItemLeft" align="right" valign="top"><a id="a7f835d2ac20a25dc58ff82e2b29ab919"></a>
 unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>RehashTable</b> (unsigned BucketNo=0)</td></tr>
 <tr class="separator:a7f835d2ac20a25dc58ff82e2b29ab919"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefecb8c8e9aa7403e94b8b501b940f21"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1StringMapImpl.html#aefecb8c8e9aa7403e94b8b501b940f21">LookupBucketFor</a> (<a class="el" href="classwpi_1_1StringRef.html">StringRef</a> Key)</td></tr>
-<tr class="memdesc:aefecb8c8e9aa7403e94b8b501b940f21"><td class="mdescLeft">&#160;</td><td class="mdescRight">LookupBucketFor - Look up the bucket that the specified string should end up in.  <a href="classwpi_1_1StringMapImpl.html#aefecb8c8e9aa7403e94b8b501b940f21">More...</a><br /></td></tr>
-<tr class="separator:aefecb8c8e9aa7403e94b8b501b940f21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade196cff2dc3c4ae0c6a5c852b795c45"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1StringMapImpl.html#ade196cff2dc3c4ae0c6a5c852b795c45">FindKey</a> (<a class="el" href="classwpi_1_1StringRef.html">StringRef</a> Key) const</td></tr>
-<tr class="memdesc:ade196cff2dc3c4ae0c6a5c852b795c45"><td class="mdescLeft">&#160;</td><td class="mdescRight">FindKey - Look up the bucket that contains the specified key.  <a href="classwpi_1_1StringMapImpl.html#ade196cff2dc3c4ae0c6a5c852b795c45">More...</a><br /></td></tr>
-<tr class="separator:ade196cff2dc3c4ae0c6a5c852b795c45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c5bea908ffaeaf17711b1c3864e8c8a"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1StringMapImpl.html#a7c5bea908ffaeaf17711b1c3864e8c8a">LookupBucketFor</a> (std::string_view Key)</td></tr>
+<tr class="memdesc:a7c5bea908ffaeaf17711b1c3864e8c8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">LookupBucketFor - Look up the bucket that the specified string should end up in.  <a href="classwpi_1_1StringMapImpl.html#a7c5bea908ffaeaf17711b1c3864e8c8a">More...</a><br /></td></tr>
+<tr class="separator:a7c5bea908ffaeaf17711b1c3864e8c8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65555b392a351e5ada97641a186d339d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1StringMapImpl.html#a65555b392a351e5ada97641a186d339d">FindKey</a> (std::string_view Key) const</td></tr>
+<tr class="memdesc:a65555b392a351e5ada97641a186d339d"><td class="mdescLeft">&#160;</td><td class="mdescRight">FindKey - Look up the bucket that contains the specified key.  <a href="classwpi_1_1StringMapImpl.html#a65555b392a351e5ada97641a186d339d">More...</a><br /></td></tr>
+<tr class="separator:a65555b392a351e5ada97641a186d339d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae27f17956939c49c4fc02714e954661b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1StringMapImpl.html#ae27f17956939c49c4fc02714e954661b">RemoveKey</a> (<a class="el" href="classwpi_1_1StringMapEntryBase.html">StringMapEntryBase</a> *V)</td></tr>
 <tr class="memdesc:ae27f17956939c49c4fc02714e954661b"><td class="mdescLeft">&#160;</td><td class="mdescRight">RemoveKey - Remove the specified <a class="el" href="classwpi_1_1StringMapEntry.html" title="StringMapEntry - This is used to represent one value that is inserted into a StringMap.">StringMapEntry</a> from the table, but do not delete it.  <a href="classwpi_1_1StringMapImpl.html#ae27f17956939c49c4fc02714e954661b">More...</a><br /></td></tr>
 <tr class="separator:ae27f17956939c49c4fc02714e954661b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79aa068ba63e92ae18dd09df04cdae49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1StringMapEntryBase.html">StringMapEntryBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1StringMapImpl.html#a79aa068ba63e92ae18dd09df04cdae49">RemoveKey</a> (<a class="el" href="classwpi_1_1StringRef.html">StringRef</a> Key)</td></tr>
-<tr class="memdesc:a79aa068ba63e92ae18dd09df04cdae49"><td class="mdescLeft">&#160;</td><td class="mdescRight">RemoveKey - Remove the <a class="el" href="classwpi_1_1StringMapEntry.html" title="StringMapEntry - This is used to represent one value that is inserted into a StringMap.">StringMapEntry</a> for the specified key from the table, returning it.  <a href="classwpi_1_1StringMapImpl.html#a79aa068ba63e92ae18dd09df04cdae49">More...</a><br /></td></tr>
-<tr class="separator:a79aa068ba63e92ae18dd09df04cdae49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0824233576829bde3e6e9ff3b2ced1a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1StringMapEntryBase.html">StringMapEntryBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1StringMapImpl.html#a0824233576829bde3e6e9ff3b2ced1a2">RemoveKey</a> (std::string_view Key)</td></tr>
+<tr class="memdesc:a0824233576829bde3e6e9ff3b2ced1a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">RemoveKey - Remove the <a class="el" href="classwpi_1_1StringMapEntry.html" title="StringMapEntry - This is used to represent one value that is inserted into a StringMap.">StringMapEntry</a> for the specified key from the table, returning it.  <a href="classwpi_1_1StringMapImpl.html#a0824233576829bde3e6e9ff3b2ced1a2">More...</a><br /></td></tr>
+<tr class="separator:a0824233576829bde3e6e9ff3b2ced1a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74cb0b18356cd3e10f345ddd200c14a6"><td class="memItemLeft" align="right" valign="top"><a id="a74cb0b18356cd3e10f345ddd200c14a6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1StringMapImpl.html#a74cb0b18356cd3e10f345ddd200c14a6">init</a> (unsigned Size)</td></tr>
 <tr class="memdesc:a74cb0b18356cd3e10f345ddd200c14a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate the table with the specified number of buckets and otherwise setup the map as empty. <br /></td></tr>
@@ -198,8 +198,8 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>ItemSize</b></td>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classwpi_1_1StringMapImpl.html" title="StringMapImpl - This is the base class of StringMap that is shared among all of its instantiations.">StringMapImpl</a> - This is the base class of <a class="el" href="classwpi_1_1StringMap.html" title="StringMap - This is an unconventional map that is specialized for handling keys that are &quot;strings&quot;,...">StringMap</a> that is shared among all of its instantiations. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ade196cff2dc3c4ae0c6a5c852b795c45"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade196cff2dc3c4ae0c6a5c852b795c45">&#9670;&nbsp;</a></span>FindKey()</h2>
+<a id="a65555b392a351e5ada97641a186d339d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65555b392a351e5ada97641a186d339d">&#9670;&nbsp;</a></span>FindKey()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -210,7 +210,7 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>ItemSize</b></td>
         <tr>
           <td class="memname">int wpi::StringMapImpl::FindKey </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1StringRef.html">StringRef</a>&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>Key</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -227,8 +227,8 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>ItemSize</b></td>
 
 </div>
 </div>
-<a id="aefecb8c8e9aa7403e94b8b501b940f21"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aefecb8c8e9aa7403e94b8b501b940f21">&#9670;&nbsp;</a></span>LookupBucketFor()</h2>
+<a id="a7c5bea908ffaeaf17711b1c3864e8c8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c5bea908ffaeaf17711b1c3864e8c8a">&#9670;&nbsp;</a></span>LookupBucketFor()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -239,7 +239,7 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>ItemSize</b></td>
         <tr>
           <td class="memname">unsigned wpi::StringMapImpl::LookupBucketFor </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1StringRef.html">StringRef</a>&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>Key</em></td><td>)</td>
           <td></td>
         </tr>
@@ -256,8 +256,37 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>ItemSize</b></td>
 
 </div>
 </div>
+<a id="a0824233576829bde3e6e9ff3b2ced1a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0824233576829bde3e6e9ff3b2ced1a2">&#9670;&nbsp;</a></span>RemoveKey() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwpi_1_1StringMapEntryBase.html">StringMapEntryBase</a>* wpi::StringMapImpl::RemoveKey </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>Key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>RemoveKey - Remove the <a class="el" href="classwpi_1_1StringMapEntry.html" title="StringMapEntry - This is used to represent one value that is inserted into a StringMap.">StringMapEntry</a> for the specified key from the table, returning it. </p>
+<p>If the key is not in the table, this returns null. </p>
+
+</div>
+</div>
 <a id="ae27f17956939c49c4fc02714e954661b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae27f17956939c49c4fc02714e954661b">&#9670;&nbsp;</a></span>RemoveKey() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae27f17956939c49c4fc02714e954661b">&#9670;&nbsp;</a></span>RemoveKey() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -285,35 +314,6 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>ItemSize</b></td>
 
 </div>
 </div>
-<a id="a79aa068ba63e92ae18dd09df04cdae49"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79aa068ba63e92ae18dd09df04cdae49">&#9670;&nbsp;</a></span>RemoveKey() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classwpi_1_1StringMapEntryBase.html">StringMapEntryBase</a>* wpi::StringMapImpl::RemoveKey </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1StringRef.html">StringRef</a>&#160;</td>
-          <td class="paramname"><em>Key</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>RemoveKey - Remove the <a class="el" href="classwpi_1_1StringMapEntry.html" title="StringMapEntry - This is used to represent one value that is inserted into a StringMap.">StringMapEntry</a> for the specified key from the table, returning it. </p>
-<p>If the key is not in the table, this returns null. </p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>wpi/<a class="el" href="StringMap_8h_source.html">StringMap.h</a></li>
 </ul>
@@ -323,7 +323,7 @@ unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>ItemSize</b></td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>wpi</b></li><li class="navelem"><a class="el" href="classwpi_1_1StringMapImpl.html">StringMapImpl</a></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:34 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:11 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -115,19 +115,19 @@ Inheritance diagram for frc::MechanismRoot2d:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af1b400b9fd05e0eb1d1ce5d5f01e4996"><td class="memItemLeft" align="right" valign="top"><a id="af1b400b9fd05e0eb1d1ce5d5f01e4996"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>MechanismRoot2d</b> (const <a class="el" href="classwpi_1_1Twine.html">wpi::Twine</a> &amp;name, double x, double y, const private_init &amp;)</td></tr>
-<tr class="separator:af1b400b9fd05e0eb1d1ce5d5f01e4996"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29d03ee138b423a7add68ad387ea130f"><td class="memItemLeft" align="right" valign="top"><a id="a29d03ee138b423a7add68ad387ea130f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>MechanismRoot2d</b> (std::string_view name, double x, double y, const private_init &amp;)</td></tr>
+<tr class="separator:a29d03ee138b423a7add68ad387ea130f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7416fee1be419b5ff33e8157954e64d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1MechanismRoot2d.html#a7416fee1be419b5ff33e8157954e64d0">SetPosition</a> (double x, double y)</td></tr>
 <tr class="memdesc:a7416fee1be419b5ff33e8157954e64d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the root's position.  <a href="classfrc_1_1MechanismRoot2d.html#a7416fee1be419b5ff33e8157954e64d0">More...</a><br /></td></tr>
 <tr class="separator:a7416fee1be419b5ff33e8157954e64d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15b8234551090c8cc21e932fb706d7c5"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1MechanismRoot2d.html#a15b8234551090c8cc21e932fb706d7c5">GetName</a> () const</td></tr>
 <tr class="memdesc:a15b8234551090c8cc21e932fb706d7c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the object's name.  <a href="classfrc_1_1MechanismRoot2d.html#a15b8234551090c8cc21e932fb706d7c5">More...</a><br /></td></tr>
 <tr class="separator:a15b8234551090c8cc21e932fb706d7c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a786464f0e430f628b247848129bf15ce"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args, typename  = std::enable_if_t&lt;std::is_convertible_v&lt;T*, MechanismObject2d*&gt;&gt;&gt; </td></tr>
-<tr class="memitem:a786464f0e430f628b247848129bf15ce"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classfrc_1_1MechanismRoot2d.html#a786464f0e430f628b247848129bf15ce">Append</a> (<a class="el" href="classwpi_1_1StringRef.html">wpi::StringRef</a> name, Args &amp;&amp;... args)</td></tr>
-<tr class="memdesc:a786464f0e430f628b247848129bf15ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append a Mechanism object that is based on this one.  <a href="classfrc_1_1MechanismRoot2d.html#a786464f0e430f628b247848129bf15ce">More...</a><br /></td></tr>
-<tr class="separator:a786464f0e430f628b247848129bf15ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9004d100d148e531b2f9ab466be17550"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args, typename  = std::enable_if_t&lt;std::is_convertible_v&lt;T*, MechanismObject2d*&gt;&gt;&gt; </td></tr>
+<tr class="memitem:a9004d100d148e531b2f9ab466be17550"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classfrc_1_1MechanismRoot2d.html#a9004d100d148e531b2f9ab466be17550">Append</a> (std::string_view name, Args &amp;&amp;... args)</td></tr>
+<tr class="memdesc:a9004d100d148e531b2f9ab466be17550"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append a Mechanism object that is based on this one.  <a href="classfrc_1_1MechanismRoot2d.html#a9004d100d148e531b2f9ab466be17550">More...</a><br /></td></tr>
+<tr class="separator:a9004d100d148e531b2f9ab466be17550"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -137,10 +137,10 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Mechanism2d</b></td>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Root <a class="el" href="classfrc_1_1Mechanism2d.html" title="Visual 2D representation of arms, elevators, and general mechanisms; through a node-based API.">Mechanism2d</a> node. </p>
-<p>Do not create objects of this class directly! Obtain pointers from the <a class="el" href="classfrc_1_1Mechanism2d.html#a85d560d0ead685ec2ec0b8c0471a3fd9" title="Get or create a root in this Mechanism2d with the given name and position.">Mechanism2d.GetRoot()</a> factory method. </p>
+<p>Do not create objects of this class directly! Obtain pointers from the <a class="el" href="classfrc_1_1Mechanism2d.html#a9b3df028271a014f173f7453714ddb0d" title="Get or create a root in this Mechanism2d with the given name and position.">Mechanism2d.GetRoot()</a> factory method. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a786464f0e430f628b247848129bf15ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a786464f0e430f628b247848129bf15ce">&#9670;&nbsp;</a></span>Append()</h2>
+<a id="a9004d100d148e531b2f9ab466be17550"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9004d100d148e531b2f9ab466be17550">&#9670;&nbsp;</a></span>Append()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -261,8 +261,8 @@ template&lt;typename T , typename... Args, typename  = std::enable_if_t&lt;std::
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1MechanismRoot2d.html">MechanismRoot2d</a></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:32 for WPILibC++ by
+    <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1MechanismRoot2d.html">MechanismRoot2d</a></li>
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:09 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('TrajectoryGenerator_8h_source.html',''
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;frc/trajectory/constraint/DifferentialDriveKinematicsConstraint.h&quot;</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;frc/trajectory/constraint/TrajectoryConstraint.h&quot;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacefrc.html">frc</a> {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span>frc {</div>
 <div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classfrc_1_1TrajectoryGenerator.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1TrajectoryGenerator.html">TrajectoryGenerator</a> {</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">using</span> PoseWithCurvature = std::pair&lt;Pose2d, units::curvature_t&gt;;</div>
@@ -174,16 +174,15 @@ $(document).ready(function(){initNavTree('TrajectoryGenerator_8h_source.html',''
 <div class="ttc" id="aclassfrc_1_1TrajectoryGenerator_html_a4a2b8900988d66af4275707dd6431305"><div class="ttname"><a href="classfrc_1_1TrajectoryGenerator.html#a4a2b8900988d66af4275707dd6431305">frc::TrajectoryGenerator::SetErrorHandler</a></div><div class="ttdeci">static void SetErrorHandler(std::function&lt; void(const char *)&gt; func)</div><div class="ttdoc">Set error reporting function.</div><div class="ttdef"><b>Definition:</b> TrajectoryGenerator.h:120</div></div>
 <div class="ttc" id="aclassfrc_1_1TrajectoryGenerator_html_ae5fbeb9bd74ba7e1507323ada88d8aa0"><div class="ttname"><a href="classfrc_1_1TrajectoryGenerator.html#ae5fbeb9bd74ba7e1507323ada88d8aa0">frc::TrajectoryGenerator::GenerateTrajectory</a></div><div class="ttdeci">static Trajectory GenerateTrajectory(Spline&lt; 3 &gt;::ControlVector initial, const std::vector&lt; Translation2d &gt; &amp;interiorWaypoints, Spline&lt; 3 &gt;::ControlVector end, const TrajectoryConfig &amp;config)</div><div class="ttdoc">Generates a trajectory from the given control vectors and config.</div></div>
 <div class="ttc" id="aclassfrc_1_1Pose2d_html"><div class="ttname"><a href="classfrc_1_1Pose2d.html">frc::Pose2d</a></div><div class="ttdoc">Represents a 2d pose containing translational and rotational elements.</div><div class="ttdef"><b>Definition:</b> Pose2d.h:20</div></div>
-<div class="ttc" id="aclassfrc_1_1SplineParameterizer_html_a24c6a2ffc2e326196bd59a1a1a94e22b"><div class="ttname"><a href="classfrc_1_1SplineParameterizer.html#a24c6a2ffc2e326196bd59a1a1a94e22b">frc::SplineParameterizer::Parameterize</a></div><div class="ttdeci">static std::vector&lt; PoseWithCurvature &gt; Parameterize(const Spline&lt; Dim &gt; &amp;spline, double t0=0.0, double t1=1.0)</div><div class="ttdoc">Parameterizes the spline.</div><div class="ttdef"><b>Definition:</b> SplineParameterizer.h:72</div></div>
+<div class="ttc" id="aclassfrc_1_1SplineParameterizer_html_a24c6a2ffc2e326196bd59a1a1a94e22b"><div class="ttname"><a href="classfrc_1_1SplineParameterizer.html#a24c6a2ffc2e326196bd59a1a1a94e22b">frc::SplineParameterizer::Parameterize</a></div><div class="ttdeci">static std::vector&lt; PoseWithCurvature &gt; Parameterize(const Spline&lt; Dim &gt; &amp;spline, double t0=0.0, double t1=1.0)</div><div class="ttdoc">Parameterizes the spline.</div><div class="ttdef"><b>Definition:</b> SplineParameterizer.h:70</div></div>
 <div class="ttc" id="aclassfrc_1_1Trajectory_html"><div class="ttname"><a href="classfrc_1_1Trajectory.html">frc::Trajectory</a></div><div class="ttdoc">Represents a time-parameterized trajectory.</div><div class="ttdef"><b>Definition:</b> Trajectory.h:26</div></div>
 <div class="ttc" id="aclassfrc_1_1TrajectoryGenerator_html_aa544c0abe35efb5088b21f1cb1d510b4"><div class="ttname"><a href="classfrc_1_1TrajectoryGenerator.html#aa544c0abe35efb5088b21f1cb1d510b4">frc::TrajectoryGenerator::SplinePointsFromSplines</a></div><div class="ttdeci">static std::vector&lt; PoseWithCurvature &gt; SplinePointsFromSplines(const std::vector&lt; Spline &gt; &amp;splines)</div><div class="ttdoc">Generate spline points from a vector of splines by parameterizing the splines.</div><div class="ttdef"><b>Definition:</b> TrajectoryGenerator.h:94</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> CameraServer.h:18</div></div>
 <div class="ttc" id="aclassfrc_1_1TrajectoryConfig_html"><div class="ttname"><a href="classfrc_1_1TrajectoryConfig.html">frc::TrajectoryConfig</a></div><div class="ttdoc">Represents the configuration for generating a trajectory.</div><div class="ttdef"><b>Definition:</b> TrajectoryConfig.h:32</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_b42dbd3ffe797209985ac3b5870ef1e5.html">trajectory</a></li><li class="navelem"><b>TrajectoryGenerator.h</b></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:30 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:06 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

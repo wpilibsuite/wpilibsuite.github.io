@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -100,16 +100,16 @@ $(document).ready(function(){initNavTree('Tracer_8h_source.html',''); initResiza
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;chrono&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;hal/cpp/fpga_clock.h&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;wpi/StringMap.h&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;wpi/StringRef.h&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;string_view&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;hal/cpp/fpga_clock.h&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;wpi/StringMap.h&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span>wpi {</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span>raw_ostream;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}  <span class="comment">// namespace wpi</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacefrc.html">frc</a> {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span>frc {</div>
 <div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classfrc_1_1Tracer.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1Tracer.html">Tracer</a> {</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classfrc_1_1Tracer.html#a2c9812bd1855880443a087dff060bed9">   31</a></span>&#160;  <a class="code" href="classfrc_1_1Tracer.html#a2c9812bd1855880443a087dff060bed9">Tracer</a>();</div>
@@ -118,7 +118,7 @@ $(document).ready(function(){initNavTree('Tracer_8h_source.html',''); initResiza
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
 <div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classfrc_1_1Tracer.html#a10e77dcf5901f3d282b8cc5ac5d6721f">   41</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Tracer.html#a10e77dcf5901f3d282b8cc5ac5d6721f">ClearEpochs</a>();</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classfrc_1_1Tracer.html#a7988e470eb2d877afc1083f746ba7342">   51</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Tracer.html#a7988e470eb2d877afc1083f746ba7342">AddEpoch</a>(<a class="code" href="classwpi_1_1StringRef.html">wpi::StringRef</a> epochName);</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classfrc_1_1Tracer.html#a0c72ac3ae4669a740bf4f2fd5eedf0d0">   51</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Tracer.html#a0c72ac3ae4669a740bf4f2fd5eedf0d0">AddEpoch</a>(std::string_view epochName);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
 <div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classfrc_1_1Tracer.html#aef00dedf464031fbae3612d99c257131">   56</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1Tracer.html#aef00dedf464031fbae3612d99c257131">PrintEpochs</a>();</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
@@ -135,22 +135,20 @@ $(document).ready(function(){initNavTree('Tracer_8h_source.html',''); initResiza
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}  <span class="comment">// namespace frc</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassfrc_1_1Tracer_html_a7988e470eb2d877afc1083f746ba7342"><div class="ttname"><a href="classfrc_1_1Tracer.html#a7988e470eb2d877afc1083f746ba7342">frc::Tracer::AddEpoch</a></div><div class="ttdeci">void AddEpoch(wpi::StringRef epochName)</div><div class="ttdoc">Adds time since last epoch to the list printed by PrintEpochs().</div></div>
 <div class="ttc" id="aclassfrc_1_1Tracer_html_a2c9812bd1855880443a087dff060bed9"><div class="ttname"><a href="classfrc_1_1Tracer.html#a2c9812bd1855880443a087dff060bed9">frc::Tracer::Tracer</a></div><div class="ttdeci">Tracer()</div><div class="ttdoc">Constructs a Tracer instance.</div></div>
+<div class="ttc" id="aclassfrc_1_1Tracer_html_a0c72ac3ae4669a740bf4f2fd5eedf0d0"><div class="ttname"><a href="classfrc_1_1Tracer.html#a0c72ac3ae4669a740bf4f2fd5eedf0d0">frc::Tracer::AddEpoch</a></div><div class="ttdeci">void AddEpoch(std::string_view epochName)</div><div class="ttdoc">Adds time since last epoch to the list printed by PrintEpochs().</div></div>
 <div class="ttc" id="aclassfrc_1_1Tracer_html_a175df77a5b2f4c64a5e0be780e055878"><div class="ttname"><a href="classfrc_1_1Tracer.html#a175df77a5b2f4c64a5e0be780e055878">frc::Tracer::ResetTimer</a></div><div class="ttdeci">void ResetTimer()</div><div class="ttdoc">Restarts the epoch timer.</div></div>
 <div class="ttc" id="aclassfrc_1_1Tracer_html_a337a87c6f2cdf409fc39c770a521eb78"><div class="ttname"><a href="classfrc_1_1Tracer.html#a337a87c6f2cdf409fc39c770a521eb78">frc::Tracer::PrintEpochs</a></div><div class="ttdeci">void PrintEpochs(wpi::raw_ostream &amp;os)</div><div class="ttdoc">Prints list of epochs added so far and their times to a stream.</div></div>
-<div class="ttc" id="aclasswpi_1_1StringRef_html"><div class="ttname"><a href="classwpi_1_1StringRef.html">wpi::StringRef</a></div><div class="ttdoc">StringRef - Represent a constant reference to a string, i.e.</div><div class="ttdef"><b>Definition:</b> StringRef.h:49</div></div>
 <div class="ttc" id="aclassfrc_1_1Tracer_html_a10e77dcf5901f3d282b8cc5ac5d6721f"><div class="ttname"><a href="classfrc_1_1Tracer.html#a10e77dcf5901f3d282b8cc5ac5d6721f">frc::Tracer::ClearEpochs</a></div><div class="ttdeci">void ClearEpochs()</div><div class="ttdoc">Clears all epochs.</div></div>
 <div class="ttc" id="aclassfrc_1_1Tracer_html"><div class="ttname"><a href="classfrc_1_1Tracer.html">frc::Tracer</a></div><div class="ttdoc">A class for keeping track of how much time it takes for different parts of code to execute.</div><div class="ttdef"><b>Definition:</b> Tracer.h:26</div></div>
 <div class="ttc" id="aclasswpi_1_1StringMap_html"><div class="ttname"><a href="classwpi_1_1StringMap.html">wpi::StringMap&lt; std::chrono::nanoseconds &gt;</a></div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> CameraServer.h:18</div></div>
-<div class="ttc" id="aclasswpi_1_1raw__ostream_html"><div class="ttname"><a href="classwpi_1_1raw__ostream.html">wpi::raw_ostream</a></div><div class="ttdoc">This class implements an extremely fast bulk output stream that can only output to a stream.</div><div class="ttdef"><b>Definition:</b> raw_ostream.h:47</div></div>
+<div class="ttc" id="aclasswpi_1_1raw__ostream_html"><div class="ttname"><a href="classwpi_1_1raw__ostream.html">wpi::raw_ostream</a></div><div class="ttdoc">This class implements an extremely fast bulk output stream that can only output to a stream.</div><div class="ttdef"><b>Definition:</b> raw_ostream.h:40</div></div>
 <div class="ttc" id="aclassfrc_1_1Tracer_html_aef00dedf464031fbae3612d99c257131"><div class="ttname"><a href="classfrc_1_1Tracer.html#aef00dedf464031fbae3612d99c257131">frc::Tracer::PrintEpochs</a></div><div class="ttdeci">void PrintEpochs()</div><div class="ttdoc">Prints list of epochs added so far and their times to the DriverStation.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><b>Tracer.h</b></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:30 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:06 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

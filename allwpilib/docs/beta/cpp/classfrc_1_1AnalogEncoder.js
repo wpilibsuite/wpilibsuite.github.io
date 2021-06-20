@@ -11,7 +11,7 @@ var classfrc_1_1AnalogEncoder =
     [ "GetDistance", "classfrc_1_1AnalogEncoder.html#a7146c2f374a71abd11b3a6472d58966a", null ],
     [ "GetDistancePerRotation", "classfrc_1_1AnalogEncoder.html#adf859e72f1fa9f2e289ffdb68151b6c3", null ],
     [ "GetPositionOffset", "classfrc_1_1AnalogEncoder.html#a6e08681d120ef7dd4846756686ff4e12", null ],
-    [ "InitSendable", "classfrc_1_1AnalogEncoder.html#a9c04ccc83a905bb81445b5e93401dfc3", null ],
+    [ "InitSendable", "classfrc_1_1AnalogEncoder.html#a2b1ad07a1964d98410db741fa59d8be6", null ],
     [ "operator=", "classfrc_1_1AnalogEncoder.html#a8c466d5b53056f4ad90b9e1e44fb1aae", null ],
     [ "Reset", "classfrc_1_1AnalogEncoder.html#add6d795e550e21d06805ef416e3ddfef", null ],
     [ "SetDistancePerRotation", "classfrc_1_1AnalogEncoder.html#a815f5db558e67bba33ecff5943465a52", null ]

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>WPILibC++: frc/Jaguar.h Source File</title>
+<title>WPILibC++: frc/motorcontrol/Jaguar.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -99,11 +99,11 @@ $(document).ready(function(){initNavTree('Jaguar_8h_source.html',''); initResiza
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;frc/PWMSpeedController.h&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;frc/motorcontrol/PWMMotorController.h&quot;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacefrc.html">frc</a> {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>frc {</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classfrc_1_1Jaguar.html">   27</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1Jaguar.html">Jaguar</a> : <span class="keyword">public</span> <a class="code" href="classfrc_1_1PWMSpeedController.html">PWMSpeedController</a> {</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classfrc_1_1Jaguar.html">   27</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1Jaguar.html">Jaguar</a> : <span class="keyword">public</span> <a class="code" href="classfrc_1_1PWMMotorController.html">PWMMotorController</a> {</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classfrc_1_1Jaguar.html#a5363bd3b68d97c7be78154721f709612">   35</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc_1_1Jaguar.html#a5363bd3b68d97c7be78154721f709612">Jaguar</a>(<span class="keywordtype">int</span> channel);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
@@ -114,15 +114,14 @@ $(document).ready(function(){initNavTree('Jaguar_8h_source.html',''); initResiza
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}  <span class="comment">// namespace frc</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassfrc_1_1Jaguar_html"><div class="ttname"><a href="classfrc_1_1Jaguar.html">frc::Jaguar</a></div><div class="ttdoc">Luminary Micro / Vex Robotics Jaguar Speed Controller with PWM control.</div><div class="ttdef"><b>Definition:</b> Jaguar.h:27</div></div>
-<div class="ttc" id="aclassfrc_1_1PWMSpeedController_html"><div class="ttname"><a href="classfrc_1_1PWMSpeedController.html">frc::PWMSpeedController</a></div><div class="ttdoc">Common base class for all PWM Speed Controllers.</div><div class="ttdef"><b>Definition:</b> PWMSpeedController.h:15</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> CameraServer.h:18</div></div>
+<div class="ttc" id="aclassfrc_1_1Jaguar_html"><div class="ttname"><a href="classfrc_1_1Jaguar.html">frc::Jaguar</a></div><div class="ttdoc">Luminary Micro / Vex Robotics Jaguar Motor Controller with PWM control.</div><div class="ttdef"><b>Definition:</b> Jaguar.h:27</div></div>
+<div class="ttc" id="aclassfrc_1_1PWMMotorController_html"><div class="ttname"><a href="classfrc_1_1PWMMotorController.html">frc::PWMMotorController</a></div><div class="ttdoc">Common base class for all PWM Motor Controllers.</div><div class="ttdef"><b>Definition:</b> PWMMotorController.h:26</div></div>
 <div class="ttc" id="aclassfrc_1_1Jaguar_html_a5363bd3b68d97c7be78154721f709612"><div class="ttname"><a href="classfrc_1_1Jaguar.html#a5363bd3b68d97c7be78154721f709612">frc::Jaguar::Jaguar</a></div><div class="ttdeci">Jaguar(int channel)</div><div class="ttdoc">Constructor for a Jaguar connected via PWM.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><b>Jaguar.h</b></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:30 for WPILibC++ by
+    <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_d0a9c1f552287e8d1bf6d4228ef74d88.html">motorcontrol</a></li><li class="navelem"><b>Jaguar.h</b></li>
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:05 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

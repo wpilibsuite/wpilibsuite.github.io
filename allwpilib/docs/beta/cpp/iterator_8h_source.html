@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -123,9 +123,9 @@ $(document).ready(function(){initNavTree('iterator_8h_source.html',''); initResi
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">protected</span>:</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keyword">enum</span> {</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    IsRandomAccess = std::is_base_of&lt;std::random_access_iterator_tag,</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                                     IteratorCategoryT&gt;::value,</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                                     IteratorCategoryT&gt;<a class="code" href="classvalue.html">::value</a>,</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    IsBidirectional = std::is_base_of&lt;std::bidirectional_iterator_tag,</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                                      IteratorCategoryT&gt;::value,</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                                      IteratorCategoryT&gt;<a class="code" href="classvalue.html">::value</a>,</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  };</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
 <div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="classwpi_1_1iterator__facade__base_1_1ReferenceProxy.html">   84</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classwpi_1_1iterator__facade__base_1_1ReferenceProxy.html">ReferenceProxy</a> {</div>
@@ -239,11 +239,11 @@ $(document).ready(function(){initNavTree('iterator_8h_source.html',''); initResi
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        <span class="keyword">typename</span> std::iterator_traits&lt;WrappedIteratorT&gt;::difference_type,</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="keyword">typename</span> PointerT = <span class="keyword">typename</span> std::conditional&lt;</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        std::is_same&lt;T, <span class="keyword">typename</span> std::iterator_traits&lt;</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                            WrappedIteratorT&gt;::value_type&gt;::value,</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                            WrappedIteratorT&gt;::value_type&gt;<a class="code" href="classvalue.html">::value</a>,</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        <span class="keyword">typename</span> std::iterator_traits&lt;WrappedIteratorT&gt;::pointer, T *&gt;::type,</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keyword">typename</span> ReferenceT = <span class="keyword">typename</span> std::conditional&lt;</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        std::is_same&lt;T, <span class="keyword">typename</span> std::iterator_traits&lt;</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;                            WrappedIteratorT&gt;::value_type&gt;::value,</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;                            WrappedIteratorT&gt;::value_type&gt;<a class="code" href="classvalue.html">::value</a>,</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        <span class="keyword">typename</span> std::iterator_traits&lt;WrappedIteratorT&gt;::reference, T &amp;&gt;::type&gt;</div>
 <div class="line"><a name="l00206"></a><span class="lineno"><a class="line" href="classwpi_1_1iterator__adaptor__base.html">  206</a></span>&#160;<span class="keyword">class </span><a class="code" href="classwpi_1_1iterator__adaptor__base.html">iterator_adaptor_base</a></div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    : <span class="keyword">public</span> <a class="code" href="classwpi_1_1iterator__facade__base.html">iterator_facade_base</a>&lt;DerivedT, IteratorCategoryT, T,</div>
@@ -372,6 +372,7 @@ $(document).ready(function(){initNavTree('iterator_8h_source.html',''); initResi
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;<span class="preprocessor">#endif // LLVM_ADT_ITERATOR_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1099</div></div>
 <div class="ttc" id="aclasswpi_1_1iterator__adaptor__base_html"><div class="ttname"><a href="classwpi_1_1iterator__adaptor__base.html">wpi::iterator_adaptor_base</a></div><div class="ttdoc">CRTP base class for adapting an iterator to a different type.</div><div class="ttdef"><b>Definition:</b> iterator.h:208</div></div>
 <div class="ttc" id="aclasswpi_1_1pointer__iterator_html"><div class="ttname"><a href="classwpi_1_1pointer__iterator.html">wpi::pointer_iterator</a></div><div class="ttdef"><b>Definition:</b> iterator.h:315</div></div>
 <div class="ttc" id="aclasswpi_1_1iterator__range_html"><div class="ttname"><a href="classwpi_1_1iterator__range.html">wpi::iterator_range</a></div><div class="ttdoc">A range adaptor for a pair of iterators.</div><div class="ttdef"><b>Definition:</b> iterator_range.h:32</div></div>
@@ -384,7 +385,7 @@ $(document).ready(function(){initNavTree('iterator_8h_source.html',''); initResi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><b>iterator.h</b></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:30 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:07 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

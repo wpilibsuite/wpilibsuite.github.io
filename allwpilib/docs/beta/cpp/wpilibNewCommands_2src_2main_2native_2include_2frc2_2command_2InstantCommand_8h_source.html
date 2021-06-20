@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('wpilibNewCommands_2src_2main_2native_2
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;functional&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;initializer_list&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;wpi/ArrayRef.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;wpi/span.h&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;frc2/command/CommandBase.h&quot;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;frc2/command/CommandHelper.h&quot;</span></div>
@@ -113,8 +113,8 @@ $(document).ready(function(){initNavTree('wpilibNewCommands_2src_2main_2native_2
 <div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classfrc2_1_1InstantCommand.html#a0527c93fc6d34adb5d57ce424a8fb1c4">   30</a></span>&#160;  <a class="code" href="classfrc2_1_1InstantCommand.html#a0527c93fc6d34adb5d57ce424a8fb1c4">InstantCommand</a>(std::function&lt;<span class="keywordtype">void</span>()&gt; toRun,</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                 std::initializer_list&lt;Subsystem*&gt; requirements);</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classfrc2_1_1InstantCommand.html#a88c6a76d599d9f2581e3e92e6fc04995">   40</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc2_1_1InstantCommand.html#a88c6a76d599d9f2581e3e92e6fc04995">InstantCommand</a>(std::function&lt;<span class="keywordtype">void</span>()&gt; toRun,</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                          <a class="code" href="classwpi_1_1ArrayRef.html">wpi::ArrayRef&lt;Subsystem*&gt;</a> requirements = {});</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classfrc2_1_1InstantCommand.html#a14aa3c33fad6aa59a43b7871d9e32787">   40</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc2_1_1InstantCommand.html#a14aa3c33fad6aa59a43b7871d9e32787">InstantCommand</a>(std::function&lt;<span class="keywordtype">void</span>()&gt; toRun,</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                          <a class="code" href="classwpi_1_1span.html">wpi::span&lt;Subsystem* const&gt;</a> requirements = {});</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <a class="code" href="classfrc2_1_1InstantCommand.html#a1f2fd0bb6fa03676cc9ceed0fd49f86a">InstantCommand</a>(<a class="code" href="classfrc2_1_1InstantCommand.html">InstantCommand</a>&amp;&amp; other) = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
@@ -134,17 +134,17 @@ $(document).ready(function(){initNavTree('wpilibNewCommands_2src_2main_2native_2
 </div><!-- doc-content -->
 <div class="ttc" id="aclassfrc2_1_1InstantCommand_html_a3f5e930c8f0a9487860eb1f491ad70dd"><div class="ttname"><a href="classfrc2_1_1InstantCommand.html#a3f5e930c8f0a9487860eb1f491ad70dd">frc2::InstantCommand::IsFinished</a></div><div class="ttdeci">bool IsFinished() final</div><div class="ttdoc">Whether the command has finished.</div></div>
 <div class="ttc" id="aclassfrc2_1_1InstantCommand_html"><div class="ttname"><a href="classfrc2_1_1InstantCommand.html">frc2::InstantCommand</a></div><div class="ttdoc">A Command that runs instantly; it will initialize, execute once, and end on the same iteration of the...</div><div class="ttdef"><b>Definition:</b> InstantCommand.h:21</div></div>
-<div class="ttc" id="aclasswpi_1_1ArrayRef_html"><div class="ttname"><a href="classwpi_1_1ArrayRef.html">wpi::ArrayRef</a></div><div class="ttdoc">ArrayRef - Represent a constant reference to an array (0 or more elements consecutively in memory),...</div><div class="ttdef"><b>Definition:</b> ArrayRef.h:42</div></div>
+<div class="ttc" id="aclasswpi_1_1span_html"><div class="ttname"><a href="classwpi_1_1span.html">wpi::span</a></div><div class="ttdef"><b>Definition:</b> span.h:29</div></div>
 <div class="ttc" id="aclassfrc2_1_1InstantCommand_html_a0527c93fc6d34adb5d57ce424a8fb1c4"><div class="ttname"><a href="classfrc2_1_1InstantCommand.html#a0527c93fc6d34adb5d57ce424a8fb1c4">frc2::InstantCommand::InstantCommand</a></div><div class="ttdeci">InstantCommand(std::function&lt; void()&gt; toRun, std::initializer_list&lt; Subsystem * &gt; requirements)</div><div class="ttdoc">Creates a new InstantCommand that runs the given Runnable with the given requirements.</div></div>
 <div class="ttc" id="aclassfrc2_1_1InstantCommand_html_a009ca218e11e13ddd11f02b11443f294"><div class="ttname"><a href="classfrc2_1_1InstantCommand.html#a009ca218e11e13ddd11f02b11443f294">frc2::InstantCommand::Initialize</a></div><div class="ttdeci">void Initialize() override</div><div class="ttdoc">The initial subroutine of a command.</div></div>
 <div class="ttc" id="aclassfrc2_1_1CommandHelper_html"><div class="ttname"><a href="classfrc2_1_1CommandHelper.html">frc2::CommandHelper</a></div><div class="ttdoc">CRTP implementation to allow polymorphic decorator functions in Command.</div><div class="ttdef"><b>Definition:</b> CommandHelper.h:23</div></div>
 <div class="ttc" id="aclassfrc2_1_1InstantCommand_html_a1f2fd0bb6fa03676cc9ceed0fd49f86a"><div class="ttname"><a href="classfrc2_1_1InstantCommand.html#a1f2fd0bb6fa03676cc9ceed0fd49f86a">frc2::InstantCommand::InstantCommand</a></div><div class="ttdeci">InstantCommand()</div><div class="ttdoc">Creates a new InstantCommand with a Runnable that does nothing.</div></div>
-<div class="ttc" id="aclassfrc2_1_1InstantCommand_html_a88c6a76d599d9f2581e3e92e6fc04995"><div class="ttname"><a href="classfrc2_1_1InstantCommand.html#a88c6a76d599d9f2581e3e92e6fc04995">frc2::InstantCommand::InstantCommand</a></div><div class="ttdeci">InstantCommand(std::function&lt; void()&gt; toRun, wpi::ArrayRef&lt; Subsystem * &gt; requirements={})</div><div class="ttdoc">Creates a new InstantCommand that runs the given Runnable with the given requirements.</div></div>
+<div class="ttc" id="aclassfrc2_1_1InstantCommand_html_a14aa3c33fad6aa59a43b7871d9e32787"><div class="ttname"><a href="classfrc2_1_1InstantCommand.html#a14aa3c33fad6aa59a43b7871d9e32787">frc2::InstantCommand::InstantCommand</a></div><div class="ttdeci">InstantCommand(std::function&lt; void()&gt; toRun, wpi::span&lt; Subsystem *const &gt; requirements={})</div><div class="ttdoc">Creates a new InstantCommand that runs the given Runnable with the given requirements.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e7d5d1c9c07b3d6a0a849f7ca2bfcaa9.html">frc2</a></li><li class="navelem"><a class="el" href="dir_25d5854705192c92d2d003534c71255a.html">command</a></li><li class="navelem"><b>InstantCommand.h</b></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:30 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:06 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

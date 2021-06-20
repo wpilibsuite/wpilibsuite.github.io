@@ -11,7 +11,7 @@ var classwpi_1_1NetworkStream =
     [ "NetworkStream", "classwpi_1_1NetworkStream.html#a5f5d4c9e200d0d1886e8917268f51ec3", null ],
     [ "close", "classwpi_1_1NetworkStream.html#a0716a44183fb71cdc3fbf5935fd34965", null ],
     [ "getNativeHandle", "classwpi_1_1NetworkStream.html#a02323cbf4911263abc7b2be582ccdb07", null ],
-    [ "getPeerIP", "classwpi_1_1NetworkStream.html#a1b466ba832615acde977c9cc05a36422", null ],
+    [ "getPeerIP", "classwpi_1_1NetworkStream.html#a5adf45fde49d89e6bedebb728caf0d4f", null ],
     [ "getPeerPort", "classwpi_1_1NetworkStream.html#af5a0a6e0611a0284fc38f9a4b0f09618", null ],
     [ "operator=", "classwpi_1_1NetworkStream.html#a8aa15c7ee38940fe2bd6b305a709e9c6", null ],
     [ "receive", "classwpi_1_1NetworkStream.html#ac504198f94f5e045f41913df05cbe882", null ],

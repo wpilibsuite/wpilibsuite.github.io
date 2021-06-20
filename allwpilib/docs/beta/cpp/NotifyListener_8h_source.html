@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -102,13 +102,13 @@ $(document).ready(function(){initNavTree('NotifyListener_8h_source.html',''); in
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;hal/Value.h&quot;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">typedef</span> void (*HAL_NotifyCallback)(<span class="keyword">const</span> <span class="keywordtype">char</span>* name, <span class="keywordtype">void</span>* param,</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;                                   <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structHAL__Value.html">HAL_Value</a>* value);</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;                                   <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structHAL__Value.html">HAL_Value</a>* <a class="code" href="classvalue.html">value</a>);</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">typedef</span> void (*HAL_BufferCallback)(<span class="keyword">const</span> <span class="keywordtype">char</span>* name, <span class="keywordtype">void</span>* param,</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;                                   <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* buffer, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> count);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;                                   <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* <a class="code" href="classbuffer.html">buffer</a>, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> count);</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">typedef</span> void (*HAL_ConstBufferCallback)(<span class="keyword">const</span> <span class="keywordtype">char</span>* name, <span class="keywordtype">void</span>* param,</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                                        <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* buffer,</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                                        <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* <a class="code" href="classbuffer.html">buffer</a>,</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                                        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> count);</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
@@ -132,13 +132,15 @@ $(document).ready(function(){initNavTree('NotifyListener_8h_source.html',''); in
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1099</div></div>
 <div class="ttc" id="anamespacehal_html"><div class="ttname"><a href="namespacehal.html">hal</a></div><div class="ttdoc">WPILib Hardware Abstraction Layer (HAL) namespace.</div><div class="ttdef"><b>Definition:</b> fpga_clock.h:10</div></div>
+<div class="ttc" id="aclassbuffer_html"><div class="ttname"><a href="classbuffer.html">buffer</a></div><div class="ttdoc">\rst A contiguous memory buffer with an optional growing ability.</div><div class="ttdef"><b>Definition:</b> core.h:732</div></div>
 <div class="ttc" id="astructHAL__Value_html"><div class="ttname"><a href="structHAL__Value.html">HAL_Value</a></div><div class="ttdoc">HAL Entry Value.</div><div class="ttdef"><b>Definition:</b> Value.h:20</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_7dfa5b6b9262a4050979ee23e0eb392d.html">hal</a></li><li class="navelem"><a class="el" href="dir_03b7d37b9dc08ca478f4c25141f731ae.html">simulation</a></li><li class="navelem"><b>NotifyListener.h</b></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:30 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:05 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

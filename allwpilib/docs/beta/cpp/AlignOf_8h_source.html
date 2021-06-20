@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('AlignOf_8h_source.html',''); initResiz
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> Alignment, std::<span class="keywordtype">size_t</span> Size&gt;</div>
 <div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="structwpi_1_1AlignedCharArray.html">   36</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structwpi_1_1AlignedCharArray.html">AlignedCharArray</a> {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keyword">alignas</span>(Alignment) <span class="keywordtype">char</span> buffer[Size];</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keyword">alignas</span>(Alignment) <span class="keywordtype">char</span> <a class="code" href="classbuffer.html">buffer</a>[Size];</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#else // _MSC_VER</span></div>
@@ -140,7 +140,7 @@ $(document).ready(function(){initNavTree('AlignOf_8h_source.html',''); initResiz
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">struct </span><a class="code" href="structwpi_1_1AlignedCharArray.html">AlignedCharArray</a>&lt;1, Size&gt; {</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keyword">union </span>{</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">char</span> aligned;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">char</span> buffer[Size];</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">char</span> <a class="code" href="classbuffer.html">buffer</a>[Size];</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  };</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;};</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
@@ -148,7 +148,7 @@ $(document).ready(function(){initNavTree('AlignOf_8h_source.html',''); initResiz
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">struct </span>AlignedCharArray&lt;2, Size&gt; {</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keyword">union </span>{</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">short</span> aligned;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">char</span> buffer[Size];</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">char</span> <a class="code" href="classbuffer.html">buffer</a>[Size];</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  };</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;};</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
@@ -156,7 +156,7 @@ $(document).ready(function(){initNavTree('AlignOf_8h_source.html',''); initResiz
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">struct </span>AlignedCharArray&lt;4, Size&gt; {</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keyword">union </span>{</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">int</span> aligned;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">char</span> buffer[Size];</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">char</span> <a class="code" href="classbuffer.html">buffer</a>[Size];</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  };</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;};</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
@@ -164,7 +164,7 @@ $(document).ready(function(){initNavTree('AlignOf_8h_source.html',''); initResiz
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">struct </span>AlignedCharArray&lt;8, Size&gt; {</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keyword">union </span>{</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">double</span> aligned;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">char</span> buffer[Size];</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">char</span> <a class="code" href="classbuffer.html">buffer</a>[Size];</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  };</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;};</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
@@ -226,13 +226,14 @@ $(document).ready(function(){initNavTree('AlignOf_8h_source.html',''); initResiz
 </div><!-- doc-content -->
 <div class="ttc" id="aclasswpi_1_1detail_1_1AlignerImpl_html"><div class="ttname"><a href="classwpi_1_1detail_1_1AlignerImpl.html">wpi::detail::AlignerImpl</a></div><div class="ttdef"><b>Definition:</b> AlignOf.h:110</div></div>
 <div class="ttc" id="astructwpi_1_1AlignedCharArray_html"><div class="ttname"><a href="structwpi_1_1AlignedCharArray.html">wpi::AlignedCharArray</a></div><div class="ttdef"><b>Definition:</b> AlignOf.h:36</div></div>
+<div class="ttc" id="aclassbuffer_html"><div class="ttname"><a href="classbuffer.html">buffer</a></div><div class="ttdoc">\rst A contiguous memory buffer with an optional growing ability.</div><div class="ttdef"><b>Definition:</b> core.h:732</div></div>
 <div class="ttc" id="astructwpi_1_1AlignedCharArrayUnion_html"><div class="ttname"><a href="structwpi_1_1AlignedCharArrayUnion.html">wpi::AlignedCharArrayUnion</a></div><div class="ttdoc">This union template exposes a suitably aligned and sized character array member which can hold elemen...</div><div class="ttdef"><b>Definition:</b> AlignOf.h:142</div></div>
 <div class="ttc" id="aunionwpi_1_1detail_1_1SizerImpl_html"><div class="ttname"><a href="unionwpi_1_1detail_1_1SizerImpl.html">wpi::detail::SizerImpl</a></div><div class="ttdef"><b>Definition:</b> AlignOf.h:120</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><b>AlignOf.h</b></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:30 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:06 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -103,7 +103,7 @@ $(document).ready(function(){initNavTree('DigitalPWMSim_8h_source.html',''); ini
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;frc/simulation/CallbackStore.h&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacefrc.html">frc</a> {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>frc {</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span>DigitalOutput;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
@@ -151,7 +151,7 @@ $(document).ready(function(){initNavTree('DigitalPWMSim_8h_source.html',''); ini
 </div><!-- doc-content -->
 <div class="ttc" id="aclassfrc_1_1sim_1_1DigitalPWMSim_html_a0e86f7e03ba68d8decd0ee1f95f37d38"><div class="ttname"><a href="classfrc_1_1sim_1_1DigitalPWMSim.html#a0e86f7e03ba68d8decd0ee1f95f37d38">frc::sim::DigitalPWMSim::DigitalPWMSim</a></div><div class="ttdeci">DigitalPWMSim(const DigitalOutput &amp;digitalOutput)</div><div class="ttdoc">Constructs from a DigitalOutput object.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1DigitalPWMSim_html_a713a1b76b71e65f882722e462e5c004b"><div class="ttname"><a href="classfrc_1_1sim_1_1DigitalPWMSim.html#a713a1b76b71e65f882722e462e5c004b">frc::sim::DigitalPWMSim::CreateForChannel</a></div><div class="ttdeci">static DigitalPWMSim CreateForChannel(int channel)</div><div class="ttdoc">Creates an DigitalPWMSim for a digital I/O channel.</div></div>
-<div class="ttc" id="aclassfrc_1_1DigitalOutput_html"><div class="ttname"><a href="classfrc_1_1DigitalOutput.html">frc::DigitalOutput</a></div><div class="ttdoc">Class to write to digital outputs.</div><div class="ttdef"><b>Definition:</b> DigitalOutput.h:26</div></div>
+<div class="ttc" id="aclassfrc_1_1DigitalOutput_html"><div class="ttname"><a href="classfrc_1_1DigitalOutput.html">frc::DigitalOutput</a></div><div class="ttdoc">Class to write to digital outputs.</div><div class="ttdef"><b>Definition:</b> DigitalOutput.h:24</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1DigitalPWMSim_html_ad267a1d1308d5d24c1765e2f9f45e224"><div class="ttname"><a href="classfrc_1_1sim_1_1DigitalPWMSim.html#ad267a1d1308d5d24c1765e2f9f45e224">frc::sim::DigitalPWMSim::SetInitialized</a></div><div class="ttdeci">void SetInitialized(bool initialized)</div><div class="ttdoc">Define whether this PWM output has been initialized.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1DigitalPWMSim_html_ab136ce2350886ad60f77aa7fb133f4ec"><div class="ttname"><a href="classfrc_1_1sim_1_1DigitalPWMSim.html#ab136ce2350886ad60f77aa7fb133f4ec">frc::sim::DigitalPWMSim::RegisterPinCallback</a></div><div class="ttdeci">std::unique_ptr&lt; CallbackStore &gt; RegisterPinCallback(NotifyCallback callback, bool initialNotify)</div><div class="ttdoc">Register a callback to be run whenever the pin changes.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1DigitalPWMSim_html"><div class="ttname"><a href="classfrc_1_1sim_1_1DigitalPWMSim.html">frc::sim::DigitalPWMSim</a></div><div class="ttdoc">Class to control a simulated digital PWM output.</div><div class="ttdef"><b>Definition:</b> DigitalPWMSim.h:23</div></div>
@@ -160,7 +160,6 @@ $(document).ready(function(){initNavTree('DigitalPWMSim_8h_source.html',''); ini
 <div class="ttc" id="aclassfrc_1_1sim_1_1DigitalPWMSim_html_a327b41dc3f1d37a2c3cdcd23ee1478e5"><div class="ttname"><a href="classfrc_1_1sim_1_1DigitalPWMSim.html#a327b41dc3f1d37a2c3cdcd23ee1478e5">frc::sim::DigitalPWMSim::ResetData</a></div><div class="ttdeci">void ResetData()</div><div class="ttdoc">Reset all simulation data.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1DigitalPWMSim_html_af9d898145f2d20d5cdcd3bae7cb03845"><div class="ttname"><a href="classfrc_1_1sim_1_1DigitalPWMSim.html#af9d898145f2d20d5cdcd3bae7cb03845">frc::sim::DigitalPWMSim::GetPin</a></div><div class="ttdeci">int GetPin() const</div><div class="ttdoc">Check the pin number.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1DigitalPWMSim_html_a6ab892ce6cedd96baa8d6b7fce86da42"><div class="ttname"><a href="classfrc_1_1sim_1_1DigitalPWMSim.html#a6ab892ce6cedd96baa8d6b7fce86da42">frc::sim::DigitalPWMSim::RegisterInitializedCallback</a></div><div class="ttdeci">std::unique_ptr&lt; CallbackStore &gt; RegisterInitializedCallback(NotifyCallback callback, bool initialNotify)</div><div class="ttdoc">Register a callback to be run when this PWM output is initialized.</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> CameraServer.h:18</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1DigitalPWMSim_html_a6a66f66a4e6dd1729d0f654498c3a3ac"><div class="ttname"><a href="classfrc_1_1sim_1_1DigitalPWMSim.html#a6a66f66a4e6dd1729d0f654498c3a3ac">frc::sim::DigitalPWMSim::SetPin</a></div><div class="ttdeci">void SetPin(int pin)</div><div class="ttdoc">Change the pin number.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1DigitalPWMSim_html_a635b7398322fbb86c9b9d34a960b920f"><div class="ttname"><a href="classfrc_1_1sim_1_1DigitalPWMSim.html#a635b7398322fbb86c9b9d34a960b920f">frc::sim::DigitalPWMSim::RegisterDutyCycleCallback</a></div><div class="ttdeci">std::unique_ptr&lt; CallbackStore &gt; RegisterDutyCycleCallback(NotifyCallback callback, bool initialNotify)</div><div class="ttdoc">Register a callback to be run whenever the duty cycle value changes.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1DigitalPWMSim_html_a5196c36967302afc747b4391113f0b9d"><div class="ttname"><a href="classfrc_1_1sim_1_1DigitalPWMSim.html#a5196c36967302afc747b4391113f0b9d">frc::sim::DigitalPWMSim::SetDutyCycle</a></div><div class="ttdeci">void SetDutyCycle(double dutyCycle)</div><div class="ttdoc">Set the duty cycle value of this PWM output.</div></div>
@@ -169,7 +168,7 @@ $(document).ready(function(){initNavTree('DigitalPWMSim_8h_source.html',''); ini
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_297dc702852f645e4b9e531dac2da27d.html">simulation</a></li><li class="navelem"><b>DigitalPWMSim.h</b></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:30 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:05 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

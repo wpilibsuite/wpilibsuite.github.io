@@ -15,7 +15,7 @@ var classfrc_1_1DutyCycleEncoder =
     [ "GetFPGAIndex", "classfrc_1_1DutyCycleEncoder.html#a924aaa44c53a6ad8174a21687dff781a", null ],
     [ "GetFrequency", "classfrc_1_1DutyCycleEncoder.html#a7e3bdba84ed3c3643b6c3311e480fb91", null ],
     [ "GetSourceChannel", "classfrc_1_1DutyCycleEncoder.html#a82ff91f628934d5a849f51302fdd18e6", null ],
-    [ "InitSendable", "classfrc_1_1DutyCycleEncoder.html#a526b99ad8422849c02992e0ed59867c6", null ],
+    [ "InitSendable", "classfrc_1_1DutyCycleEncoder.html#aa0e1961e47a8f19f5166a7f32fa565d2", null ],
     [ "IsConnected", "classfrc_1_1DutyCycleEncoder.html#a3b613a97453957b3c63b6415e95fdc69", null ],
     [ "operator=", "classfrc_1_1DutyCycleEncoder.html#ab9920718a4b509bf2c829c97212e0dca", null ],
     [ "Reset", "classfrc_1_1DutyCycleEncoder.html#ac749c7d3591e4a79f044d7763cf9fd72", null ],

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['parse_5ferror_7825',['parse_error',['../classwpi_1_1json.html#a6417f576804e4c69795c765d38553226',1,'wpi::json']]],
-  ['parser_5fcallback_5ft_7826',['parser_callback_t',['../classwpi_1_1json.html#ad117db0d938e5069fedb0a9b556205d7',1,'wpi::json']]],
-  ['pointer_7827',['pointer',['../classwpi_1_1detail_1_1iter__impl.html#af04d1baf5c0a74b6f3ab98a51cb53e17',1,'wpi::detail::iter_impl::pointer()'],['../classwpi_1_1json.html#a8465dffcce83948ce7a985b358ccbd90',1,'wpi::json::pointer()']]]
+  ['reference_7747',['reference',['../classwpi_1_1detail_1_1iter__impl.html#a76ecd28b1f59bc9a8d51da343a8cd478',1,'wpi::detail::iter_impl::reference()'],['../classwpi_1_1detail_1_1json__reverse__iterator.html#adddbf249e1ee32fac4a42619d176fe40',1,'wpi::detail::json_reverse_iterator::reference()'],['../classwpi_1_1json.html#a282bda7cef193047a712238e474aabe5',1,'wpi::json::reference()']]],
+  ['reverse_5fiterator_7748',['reverse_iterator',['../classwpi_1_1json.html#ab4ce73d6b0dce090042aaa1623fccf6f',1,'wpi::json']]]
 ];

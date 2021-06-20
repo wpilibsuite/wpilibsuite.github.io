@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -111,9 +111,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a335108442d9bed20e79c1ee385729784"><td class="memItemLeft" align="right" valign="top"><a id="a335108442d9bed20e79c1ee385729784"></a>
 <a class="el" href="classwpi_1_1PortForwarder.html">PortForwarder</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classwpi_1_1PortForwarder.html">PortForwarder</a> &amp;)=delete</td></tr>
 <tr class="separator:a335108442d9bed20e79c1ee385729784"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3419b2b4c65b8e82c6b885b58b21b47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1PortForwarder.html#aa3419b2b4c65b8e82c6b885b58b21b47">Add</a> (unsigned int port, const <a class="el" href="classwpi_1_1Twine.html">Twine</a> &amp;remoteHost, unsigned int remotePort)</td></tr>
-<tr class="memdesc:aa3419b2b4c65b8e82c6b885b58b21b47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward a local TCP port to a remote host and port.  <a href="classwpi_1_1PortForwarder.html#aa3419b2b4c65b8e82c6b885b58b21b47">More...</a><br /></td></tr>
-<tr class="separator:aa3419b2b4c65b8e82c6b885b58b21b47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a255fdc5125d14e3987a91f58767d3f62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1PortForwarder.html#a255fdc5125d14e3987a91f58767d3f62">Add</a> (unsigned int port, std::string_view remoteHost, unsigned int remotePort)</td></tr>
+<tr class="memdesc:a255fdc5125d14e3987a91f58767d3f62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward a local TCP port to a remote host and port.  <a href="classwpi_1_1PortForwarder.html#a255fdc5125d14e3987a91f58767d3f62">More...</a><br /></td></tr>
+<tr class="separator:a255fdc5125d14e3987a91f58767d3f62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7714761ade7f7d9f7158d3990ec3739"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1PortForwarder.html#ab7714761ade7f7d9f7158d3990ec3739">Remove</a> (unsigned int port)</td></tr>
 <tr class="memdesc:ab7714761ade7f7d9f7158d3990ec3739"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop TCP forwarding on a port.  <a href="classwpi_1_1PortForwarder.html#ab7714761ade7f7d9f7158d3990ec3739">More...</a><br /></td></tr>
 <tr class="separator:ab7714761ade7f7d9f7158d3990ec3739"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,8 +128,8 @@ Static Public Member Functions</h2></td></tr>
 <div class="textblock"><p>Forward ports to another host. </p>
 <p>This is primarily useful for accessing Ethernet-connected devices from a computer tethered to the RoboRIO USB port. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa3419b2b4c65b8e82c6b885b58b21b47"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3419b2b4c65b8e82c6b885b58b21b47">&#9670;&nbsp;</a></span>Add()</h2>
+<a id="a255fdc5125d14e3987a91f58767d3f62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a255fdc5125d14e3987a91f58767d3f62">&#9670;&nbsp;</a></span>Add()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -143,7 +143,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1Twine.html">Twine</a> &amp;&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>remoteHost</em>, </td>
         </tr>
         <tr>
@@ -236,7 +236,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>wpi</b></li><li class="navelem"><a class="el" href="classwpi_1_1PortForwarder.html">PortForwarder</a></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:34 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:11 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -90,6 +90,7 @@ $(document).ready(function(){initNavTree('classfrc_1_1DMASample.html',''); initR
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classfrc_1_1DMASample-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -102,15 +103,23 @@ Inheritance diagram for frc::DMASample:</div>
  <div class="center">
   <img src="classfrc_1_1DMASample.png" usemap="#frc::DMASample_map" alt=""/>
   <map id="frc::DMASample_map" name="frc::DMASample_map">
-<area href="structHAL__DMASample.html" alt="HAL_DMASample" shape="rect" coords="0,0,114,24"/>
+<area href="structHAL__DMASample.html" title="Buffer for containing all DMA data for a specific sample." alt="HAL_DMASample" shape="rect" coords="0,0,114,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:aab30444580b2b22ccec0e9331620ac28"><td class="memItemLeft" align="right" valign="top"><a id="aab30444580b2b22ccec0e9331620ac28"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>DMAReadStatus</b> { <b>kOk</b> = HAL_DMA_OK, 
+<b>kTimeout</b> = HAL_DMA_TIMEOUT, 
+<b>kError</b> = HAL_DMA_ERROR
+ }</td></tr>
+<tr class="separator:aab30444580b2b22ccec0e9331620ac28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aafd8c3bc2643dcdb8406b837ecb09123"><td class="memItemLeft" align="right" valign="top"><a id="aafd8c3bc2643dcdb8406b837ecb09123"></a>
-HAL_DMAReadStatus&#160;</td><td class="memItemRight" valign="bottom"><b>Update</b> (const <a class="el" href="classfrc_1_1DMA.html">DMA</a> *dma, units::second_t timeout, int32_t *remaining, int32_t *status)</td></tr>
-<tr class="separator:aafd8c3bc2643dcdb8406b837ecb09123"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae92c6f7dcded5a91decd19850cc937ac"><td class="memItemLeft" align="right" valign="top"><a id="ae92c6f7dcded5a91decd19850cc937ac"></a>
+DMAReadStatus&#160;</td><td class="memItemRight" valign="bottom"><b>Update</b> (const <a class="el" href="classfrc_1_1DMA.html">DMA</a> *dma, units::second_t timeout, int32_t *remaining, int32_t *status)</td></tr>
+<tr class="separator:ae92c6f7dcded5a91decd19850cc937ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c6f59fff1141c027557d183b365ec1c"><td class="memItemLeft" align="right" valign="top"><a id="a3c6f59fff1141c027557d183b365ec1c"></a>
 uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetTime</b> () const</td></tr>
 <tr class="separator:a3c6f59fff1141c027557d183b365ec1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -148,7 +157,7 @@ int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetAveragedAnalogI
 double&#160;</td><td class="memItemRight" valign="bottom"><b>GetAveragedAnalogInputVoltage</b> (const <a class="el" href="classfrc_1_1AnalogInput.html">AnalogInput</a> *analogInput, int32_t *status)</td></tr>
 <tr class="separator:a19921e60ea1c11cbb246d709b81ef866"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ea3025fc5a55acbddb8e9b09cc54eaf"><td class="memItemLeft" align="right" valign="top"><a id="a1ea3025fc5a55acbddb8e9b09cc54eaf"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>GetAnalogAccumulator</b> (const <a class="el" href="classfrc_1_1AnalogInput.html">AnalogInput</a> *analogInput, int64_t *count, int64_t *value, int32_t *status) const</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>GetAnalogAccumulator</b> (const <a class="el" href="classfrc_1_1AnalogInput.html">AnalogInput</a> *analogInput, int64_t *count, int64_t *<a class="el" href="classvalue.html">value</a>, int32_t *status) const</td></tr>
 <tr class="separator:a1ea3025fc5a55acbddb8e9b09cc54eaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e8b7b69b4245687f5b3fc3f5dd9a63f"><td class="memItemLeft" align="right" valign="top"><a id="a9e8b7b69b4245687f5b3fc3f5dd9a63f"></a>
 int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetDutyCycleOutputRaw</b> (const <a class="el" href="classfrc_1_1DutyCycle.html">DutyCycle</a> *dutyCycle, int32_t *status) const</td></tr>
@@ -184,8 +193,8 @@ uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>triggerChannels</b
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1DMASample.html">DMASample</a></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:32 for WPILibC++ by
+    <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1DMASample.html">DMASample</a></li>
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:08 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

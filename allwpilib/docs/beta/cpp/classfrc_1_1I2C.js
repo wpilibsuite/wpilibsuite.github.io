@@ -5,7 +5,7 @@ var classfrc_1_1I2C =
       [ "kMXP", "classfrc_1_1I2C.html#ae90c40da73cf515c2554ef94064d842bac5d820a851c008128bc77f30e30557cc", null ]
     ] ],
     [ "I2C", "classfrc_1_1I2C.html#a30f1cc701e7d7a800d5768a7aed15390", null ],
-    [ "~I2C", "classfrc_1_1I2C.html#a3b8555621c1c331a954e9c0f841ac6e1", null ],
+    [ "~I2C", "classfrc_1_1I2C.html#a9dcd155e32f03385ba919ecb94de7e8b", null ],
     [ "I2C", "classfrc_1_1I2C.html#a079d1856c8237fb28eaddcf1e04678ba", null ],
     [ "AddressOnly", "classfrc_1_1I2C.html#ae4f7bf1a00834ba2bb85a692163b75b5", null ],
     [ "operator=", "classfrc_1_1I2C.html#ad4a886ad370eb4055cf6fd9d08070308", null ],

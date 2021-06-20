@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -105,10 +105,10 @@ $(document).ready(function(){initNavTree('Handle_8h_source.html',''); initResiza
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;cstdlib&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;functional&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;utility&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;wpi/Signal.h&quot;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;wpi/StringRef.h&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;string_view&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;utility&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;wpi/Signal.h&quot;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;wpi/uv/Buffer.h&quot;</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;wpi/uv/Error.h&quot;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;wpi/uv/Loop.h&quot;</span></div>
@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('Handle_8h_source.html',''); initResiza
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
 <div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1Handle.html#abb60b23d01d10e0391358407c2a25948">   48</a></span>&#160;  Type <a class="code" href="classwpi_1_1uv_1_1Handle.html#abb60b23d01d10e0391358407c2a25948">GetType</a>() const noexcept { <span class="keywordflow">return</span> m_uv_handle-&gt;type; }</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1Handle.html#a166fe8e4d5ac708d097f9bf05fa4adaa">   53</a></span>&#160;  <a class="code" href="classwpi_1_1StringRef.html">StringRef</a> <a class="code" href="classwpi_1_1uv_1_1Handle.html#a166fe8e4d5ac708d097f9bf05fa4adaa">GetTypeName</a>() const noexcept {</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1Handle.html#a31a2f5256e99fbc665d353282c80c458">   53</a></span>&#160;  std::string_view <a class="code" href="classwpi_1_1uv_1_1Handle.html#a31a2f5256e99fbc665d353282c80c458">GetTypeName</a>() const noexcept {</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">return</span> uv_handle_type_name(m_uv_handle-&gt;type);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  }</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
@@ -176,7 +176,7 @@ $(document).ready(function(){initNavTree('Handle_8h_source.html',''); initResiza
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <span class="keywordflow">return</span> std::static_pointer_cast&lt;T&gt;(m_data);</div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;  }</div>
 <div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160; </div>
-<div class="line"><a name="l00219"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1Handle.html#a38888e2dc9c4622b0b63552a093a91f0">  219</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classwpi_1_1uv_1_1Handle.html#a38888e2dc9c4622b0b63552a093a91f0">SetData</a>(std::shared_ptr&lt;void&gt; data) { m_data = std::move(data); }</div>
+<div class="line"><a name="l00219"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1Handle.html#a38888e2dc9c4622b0b63552a093a91f0">  219</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classwpi_1_1uv_1_1Handle.html#a38888e2dc9c4622b0b63552a093a91f0">SetData</a>(std::shared_ptr&lt;void&gt; <a class="code" href="structdata.html">data</a>) { m_data = std::move(<a class="code" href="structdata.html">data</a>); }</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160; </div>
 <div class="line"><a name="l00224"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1Handle.html#adfa326501ab92f8134abe4dc9ed402a2">  224</a></span>&#160;  <a class="code" href="classwpi_1_1sig_1_1SignalBase.html">sig::Signal&lt;Error&gt;</a> <a class="code" href="classwpi_1_1uv_1_1Handle.html#adfa326501ab92f8134abe4dc9ed402a2">error</a>;</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160; </div>
@@ -241,9 +241,11 @@ $(document).ready(function(){initNavTree('Handle_8h_source.html',''); initResiza
 </div><!-- doc-content -->
 <div class="ttc" id="aclasswpi_1_1uv_1_1Handle_html_a356c4f2fc7d439ea6528719a3efa62f3"><div class="ttname"><a href="classwpi_1_1uv_1_1Handle.html#a356c4f2fc7d439ea6528719a3efa62f3">wpi::uv::Handle::GetData</a></div><div class="ttdeci">std::shared_ptr&lt; T &gt; GetData() const</div><div class="ttdoc">Gets user-defined data.</div><div class="ttdef"><b>Definition:</b> Handle.h:211</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1HandleImpl_html_aa3d5c5609d796ae8d1bc2ee060a7e0de"><div class="ttname"><a href="classwpi_1_1uv_1_1HandleImpl.html#aa3d5c5609d796ae8d1bc2ee060a7e0de">wpi::uv::HandleImpl::GetRaw</a></div><div class="ttdeci">U * GetRaw() const noexcept</div><div class="ttdoc">Get the underlying handle data structure.</div><div class="ttdef"><b>Definition:</b> Handle.h:287</div></div>
+<div class="ttc" id="aclasswpi_1_1uv_1_1Handle_html_a31a2f5256e99fbc665d353282c80c458"><div class="ttname"><a href="classwpi_1_1uv_1_1Handle.html#a31a2f5256e99fbc665d353282c80c458">wpi::uv::Handle::GetTypeName</a></div><div class="ttdeci">std::string_view GetTypeName() const noexcept</div><div class="ttdoc">Get the name of the type of the handle.</div><div class="ttdef"><b>Definition:</b> Handle.h:53</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1Handle_html_aa21a674b31c3042249e6f04319a62814"><div class="ttname"><a href="classwpi_1_1uv_1_1Handle.html#aa21a674b31c3042249e6f04319a62814">wpi::uv::Handle::Unreference</a></div><div class="ttdeci">void Unreference() noexcept</div><div class="ttdoc">Unreference the given handle.</div><div class="ttdef"><b>Definition:</b> Handle.h:156</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1Handle_html_a252a8eab32475eba2dfbed4ebf761328"><div class="ttname"><a href="classwpi_1_1uv_1_1Handle.html#a252a8eab32475eba2dfbed4ebf761328">wpi::uv::Handle::FreeBuf</a></div><div class="ttdeci">void FreeBuf(Buffer &amp;buf) const noexcept</div><div class="ttdoc">Free a buffer.</div><div class="ttdef"><b>Definition:</b> Handle.h:204</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1Handle_html_a042b865e1a760587ccd4910db3810b6e"><div class="ttname"><a href="classwpi_1_1uv_1_1Handle.html#a042b865e1a760587ccd4910db3810b6e">wpi::uv::Handle::SetBufferAllocator</a></div><div class="ttdeci">void SetBufferAllocator(std::function&lt; Buffer(size_t)&gt; alloc, std::function&lt; void(Buffer &amp;)&gt; dealloc)</div><div class="ttdoc">Set the functions used for allocating and releasing buffers.</div><div class="ttdef"><b>Definition:</b> Handle.h:192</div></div>
+<div class="ttc" id="astructdata_html"><div class="ttname"><a href="structdata.html">data</a></div><div class="ttdef"><b>Definition:</b> format.h:917</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1Handle_html_ad6fbea1549b19ab018be1b6d4ced9241"><div class="ttname"><a href="classwpi_1_1uv_1_1Handle.html#ad6fbea1549b19ab018be1b6d4ced9241">wpi::uv::Handle::HasReference</a></div><div class="ttdeci">bool HasReference() const noexcept</div><div class="ttdoc">Check if the given handle is referenced.</div><div class="ttdef"><b>Definition:</b> Handle.h:162</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1Handle_html_a04619ad5ac31d78d8c8a1d1c182e2e7a"><div class="ttname"><a href="classwpi_1_1uv_1_1Handle.html#a04619ad5ac31d78d8c8a1d1c182e2e7a">wpi::uv::Handle::IsLoopClosing</a></div><div class="ttdeci">bool IsLoopClosing() const noexcept</div><div class="ttdoc">Get the loop closing status.</div><div class="ttdef"><b>Definition:</b> Handle.h:140</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1Handle_html_abb60b23d01d10e0391358407c2a25948"><div class="ttname"><a href="classwpi_1_1uv_1_1Handle.html#abb60b23d01d10e0391358407c2a25948">wpi::uv::Handle::GetType</a></div><div class="ttdeci">Type GetType() const noexcept</div><div class="ttdoc">Get the type of the handle.</div><div class="ttdef"><b>Definition:</b> Handle.h:48</div></div>
@@ -254,7 +256,6 @@ $(document).ready(function(){initNavTree('Handle_8h_source.html',''); initResiza
 <div class="ttc" id="aclasswpi_1_1uv_1_1Handle_html_aeddc7852528508c19acc27a849b34255"><div class="ttname"><a href="classwpi_1_1uv_1_1Handle.html#aeddc7852528508c19acc27a849b34255">wpi::uv::Handle::RawSize</a></div><div class="ttdeci">size_t RawSize() const noexcept</div><div class="ttdoc">Return the size of the underlying handle type.</div><div class="ttdef"><b>Definition:</b> Handle.h:168</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1Handle_html_ab829c35f25bfa5257b3178852c807c65"><div class="ttname"><a href="classwpi_1_1uv_1_1Handle.html#ab829c35f25bfa5257b3178852c807c65">wpi::uv::Handle::closed</a></div><div class="ttdeci">sig::Signal closed</div><div class="ttdoc">Closed signal.</div><div class="ttdef"><b>Definition:</b> Handle.h:229</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1Handle_html_a3ca72664bb4f606fb214e1fe23261bbf"><div class="ttname"><a href="classwpi_1_1uv_1_1Handle.html#a3ca72664bb4f606fb214e1fe23261bbf">wpi::uv::Handle::ReportError</a></div><div class="ttdeci">void ReportError(int err) const</div><div class="ttdoc">Report an error.</div><div class="ttdef"><b>Definition:</b> Handle.h:235</div></div>
-<div class="ttc" id="aclasswpi_1_1StringRef_html"><div class="ttname"><a href="classwpi_1_1StringRef.html">wpi::StringRef</a></div><div class="ttdoc">StringRef - Represent a constant reference to a string, i.e.</div><div class="ttdef"><b>Definition:</b> StringRef.h:49</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1HandleImpl_html"><div class="ttname"><a href="classwpi_1_1uv_1_1HandleImpl.html">wpi::uv::HandleImpl</a></div><div class="ttdoc">Handle.</div><div class="ttdef"><b>Definition:</b> Handle.h:272</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1Handle_html_adfa326501ab92f8134abe4dc9ed402a2"><div class="ttname"><a href="classwpi_1_1uv_1_1Handle.html#adfa326501ab92f8134abe4dc9ed402a2">wpi::uv::Handle::error</a></div><div class="ttdeci">sig::Signal&lt; Error &gt; error</div><div class="ttdoc">Error signal.</div><div class="ttdef"><b>Definition:</b> Handle.h:224</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1Handle_html_a786031563e9f1cb5acc9a354971e690b"><div class="ttname"><a href="classwpi_1_1uv_1_1Handle.html#a786031563e9f1cb5acc9a354971e690b">wpi::uv::Handle::Close</a></div><div class="ttdeci">void Close() noexcept</div><div class="ttdoc">Request handle to be closed.</div></div>
@@ -263,7 +264,6 @@ $(document).ready(function(){initNavTree('Handle_8h_source.html',''); initResiza
 <div class="ttc" id="aclasswpi_1_1uv_1_1Handle_html_ac6f0b8997806d9479f5cb900d238b860"><div class="ttname"><a href="classwpi_1_1uv_1_1Handle.html#ac6f0b8997806d9479f5cb900d238b860">wpi::uv::Handle::Reference</a></div><div class="ttdeci">void Reference() noexcept</div><div class="ttdoc">Reference the given handle.</div><div class="ttdef"><b>Definition:</b> Handle.h:148</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1Loop_html"><div class="ttname"><a href="classwpi_1_1uv_1_1Loop.html">wpi::uv::Loop</a></div><div class="ttdoc">Event loop.</div><div class="ttdef"><b>Definition:</b> Loop.h:35</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1Handle_html_a38888e2dc9c4622b0b63552a093a91f0"><div class="ttname"><a href="classwpi_1_1uv_1_1Handle.html#a38888e2dc9c4622b0b63552a093a91f0">wpi::uv::Handle::SetData</a></div><div class="ttdeci">void SetData(std::shared_ptr&lt; void &gt; data)</div><div class="ttdoc">Sets user-defined data.</div><div class="ttdef"><b>Definition:</b> Handle.h:219</div></div>
-<div class="ttc" id="aclasswpi_1_1uv_1_1Handle_html_a166fe8e4d5ac708d097f9bf05fa4adaa"><div class="ttname"><a href="classwpi_1_1uv_1_1Handle.html#a166fe8e4d5ac708d097f9bf05fa4adaa">wpi::uv::Handle::GetTypeName</a></div><div class="ttdeci">StringRef GetTypeName() const noexcept</div><div class="ttdoc">Get the name of the type of the handle.</div><div class="ttdef"><b>Definition:</b> Handle.h:53</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1Handle_html_a7ff9bb4689b14ad6c2103b5b2720da79"><div class="ttname"><a href="classwpi_1_1uv_1_1Handle.html#a7ff9bb4689b14ad6c2103b5b2720da79">wpi::uv::Handle::IsActive</a></div><div class="ttdeci">bool IsActive() const noexcept</div><div class="ttdoc">Check if the handle is active.</div><div class="ttdef"><b>Definition:</b> Handle.h:94</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1Handle_html_acada4a358c3a8b7cada331dc29077abd"><div class="ttname"><a href="classwpi_1_1uv_1_1Handle.html#acada4a358c3a8b7cada331dc29077abd">wpi::uv::Handle::IsClosing</a></div><div class="ttdeci">bool IsClosing() const noexcept</div><div class="ttdoc">Check if a handle is closing or closed.</div><div class="ttdef"><b>Definition:</b> Handle.h:104</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1Handle_html_a780fc5df466862c6e749b0e02c694190"><div class="ttname"><a href="classwpi_1_1uv_1_1Handle.html#a780fc5df466862c6e749b0e02c694190">wpi::uv::Handle::GetLoopRef</a></div><div class="ttdeci">Loop &amp; GetLoopRef() const noexcept</div><div class="ttdoc">Get the loop where this handle runs.</div><div class="ttdef"><b>Definition:</b> Handle.h:71</div></div>
@@ -272,7 +272,7 @@ $(document).ready(function(){initNavTree('Handle_8h_source.html',''); initResiza
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><a class="el" href="dir_25302867c2307ab8d43a1b1d664c1ea4.html">uv</a></li><li class="navelem"><b>Handle.h</b></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:31 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:07 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

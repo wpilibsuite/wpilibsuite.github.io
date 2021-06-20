@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -100,9 +100,9 @@ $(document).ready(function(){initNavTree('ShuffleboardLayout_8h_source.html','')
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;networktables/NetworkTable.h&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;wpi/Twine.h&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;string_view&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;networktables/NetworkTable.h&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;frc/shuffleboard/ShuffleboardComponent.h&quot;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;frc/shuffleboard/ShuffleboardContainer.h&quot;</span></div>
@@ -112,13 +112,13 @@ $(document).ready(function(){initNavTree('ShuffleboardLayout_8h_source.html','')
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#pragma warning(disable : 4250)</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacefrc.html">frc</a> {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span>frc {</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classfrc_1_1ShuffleboardLayout.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1ShuffleboardLayout.html">ShuffleboardLayout</a> : <span class="keyword">public</span> <a class="code" href="classfrc_1_1ShuffleboardComponent.html">ShuffleboardComponent</a>&lt;ShuffleboardLayout&gt;,</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                           <span class="keyword">public</span> <a class="code" href="classfrc_1_1ShuffleboardContainer.html">ShuffleboardContainer</a> {</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <a class="code" href="classfrc_1_1ShuffleboardLayout.html">ShuffleboardLayout</a>(<a class="code" href="classfrc_1_1ShuffleboardContainer.html">ShuffleboardContainer</a>&amp; parent, <span class="keyword">const</span> <a class="code" href="classwpi_1_1Twine.html">wpi::Twine</a>&amp; name,</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                     <span class="keyword">const</span> <a class="code" href="classwpi_1_1Twine.html">wpi::Twine</a>&amp; type);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <a class="code" href="classfrc_1_1ShuffleboardLayout.html">ShuffleboardLayout</a>(<a class="code" href="classfrc_1_1ShuffleboardContainer.html">ShuffleboardContainer</a>&amp; parent, std::string_view name,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                     std::string_view type);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classfrc_1_1ShuffleboardLayout.html#a4ee3cf30be9e446c6d87016df9c54257">   32</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1ShuffleboardLayout.html#a4ee3cf30be9e446c6d87016df9c54257">BuildInto</a>(std::shared_ptr&lt;nt::NetworkTable&gt; parentTable,</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                 std::shared_ptr&lt;nt::NetworkTable&gt; metaTable) <span class="keyword">override</span>;</div>
@@ -134,14 +134,12 @@ $(document).ready(function(){initNavTree('ShuffleboardLayout_8h_source.html','')
 <div class="ttc" id="aclassfrc_1_1ShuffleboardLayout_html"><div class="ttname"><a href="classfrc_1_1ShuffleboardLayout.html">frc::ShuffleboardLayout</a></div><div class="ttdoc">A layout in a Shuffleboard tab.</div><div class="ttdef"><b>Definition:</b> ShuffleboardLayout.h:27</div></div>
 <div class="ttc" id="aclassfrc_1_1ShuffleboardComponent_html"><div class="ttname"><a href="classfrc_1_1ShuffleboardComponent.html">frc::ShuffleboardComponent</a></div><div class="ttdoc">A generic component in Shuffleboard.</div><div class="ttdef"><b>Definition:</b> ShuffleboardComponent.h:27</div></div>
 <div class="ttc" id="aclassfrc_1_1ShuffleboardContainer_html"><div class="ttname"><a href="classfrc_1_1ShuffleboardContainer.html">frc::ShuffleboardContainer</a></div><div class="ttdoc">Common interface for objects that can contain shuffleboard components.</div><div class="ttdef"><b>Definition:</b> ShuffleboardContainer.h:42</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> CameraServer.h:18</div></div>
-<div class="ttc" id="aclasswpi_1_1Twine_html"><div class="ttname"><a href="classwpi_1_1Twine.html">wpi::Twine</a></div><div class="ttdoc">Twine - A lightweight data structure for efficiently representing the concatenation of temporary valu...</div><div class="ttdef"><b>Definition:</b> Twine.h:85</div></div>
 <div class="ttc" id="aclassfrc_1_1ShuffleboardLayout_html_a4ee3cf30be9e446c6d87016df9c54257"><div class="ttname"><a href="classfrc_1_1ShuffleboardLayout.html#a4ee3cf30be9e446c6d87016df9c54257">frc::ShuffleboardLayout::BuildInto</a></div><div class="ttdeci">void BuildInto(std::shared_ptr&lt; nt::NetworkTable &gt; parentTable, std::shared_ptr&lt; nt::NetworkTable &gt; metaTable) override</div><div class="ttdoc">Builds the entries for this value.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_dca1c19c73302e87d1cbe8eae641dd78.html">shuffleboard</a></li><li class="navelem"><b>ShuffleboardLayout.h</b></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:30 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:05 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

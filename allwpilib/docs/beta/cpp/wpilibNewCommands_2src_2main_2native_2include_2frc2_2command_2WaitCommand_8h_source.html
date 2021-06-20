@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -99,9 +99,9 @@ $(document).ready(function(){initNavTree('wpilibNewCommands_2src_2main_2native_2
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;units/time.h&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;frc2/Timer.h&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;frc/Timer.h&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;units/time.h&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;frc2/command/CommandBase.h&quot;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;frc2/command/CommandHelper.h&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('wpilibNewCommands_2src_2main_2native_2
 <div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classfrc2_1_1WaitCommand.html#adb6d3bc95589c41459430b42fe82ec3e">   39</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc2_1_1WaitCommand.html#adb6d3bc95589c41459430b42fe82ec3e">RunsWhenDisabled</a>() <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="classfrc2_1_1Timer.html">Timer</a> m_timer;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="classfrc_1_1Timer.html">frc::Timer</a> m_timer;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  units::second_t m_duration;</div>
@@ -133,8 +133,8 @@ $(document).ready(function(){initNavTree('wpilibNewCommands_2src_2main_2native_2
 </div><!-- doc-content -->
 <div class="ttc" id="aclassfrc2_1_1WaitCommand_html_a1aafd2d800798a63a3b9f3a9d5883abb"><div class="ttname"><a href="classfrc2_1_1WaitCommand.html#a1aafd2d800798a63a3b9f3a9d5883abb">frc2::WaitCommand::WaitCommand</a></div><div class="ttdeci">WaitCommand(units::second_t duration)</div><div class="ttdoc">Creates a new WaitCommand.</div></div>
 <div class="ttc" id="aclassfrc2_1_1WaitCommand_html_ac038be140c6c3b1b78eb7dc6ae6c2fab"><div class="ttname"><a href="classfrc2_1_1WaitCommand.html#ac038be140c6c3b1b78eb7dc6ae6c2fab">frc2::WaitCommand::End</a></div><div class="ttdeci">void End(bool interrupted) override</div><div class="ttdoc">The action to take when the command ends.</div></div>
-<div class="ttc" id="aclassfrc2_1_1Timer_html"><div class="ttname"><a href="classfrc2_1_1Timer.html">frc2::Timer</a></div><div class="ttdoc">A wrapper for the frc::Timer class that returns unit-typed values.</div><div class="ttdef"><b>Definition:</b> Timer.h:34</div></div>
 <div class="ttc" id="aclassfrc2_1_1WaitCommand_html_adb6d3bc95589c41459430b42fe82ec3e"><div class="ttname"><a href="classfrc2_1_1WaitCommand.html#adb6d3bc95589c41459430b42fe82ec3e">frc2::WaitCommand::RunsWhenDisabled</a></div><div class="ttdeci">bool RunsWhenDisabled() const override</div><div class="ttdoc">Whether the given command should run when the robot is disabled.</div></div>
+<div class="ttc" id="aclassfrc_1_1Timer_html"><div class="ttname"><a href="classfrc_1_1Timer.html">frc::Timer</a></div><div class="ttdoc">A wrapper for the frc::Timer class that returns unit-typed values.</div><div class="ttdef"><b>Definition:</b> Timer.h:33</div></div>
 <div class="ttc" id="aclassfrc2_1_1WaitCommand_html_ae2b0fab9a6fccd00c9c7f1543511b462"><div class="ttname"><a href="classfrc2_1_1WaitCommand.html#ae2b0fab9a6fccd00c9c7f1543511b462">frc2::WaitCommand::Initialize</a></div><div class="ttdeci">void Initialize() override</div><div class="ttdoc">The initial subroutine of a command.</div></div>
 <div class="ttc" id="aclassfrc2_1_1CommandHelper_html"><div class="ttname"><a href="classfrc2_1_1CommandHelper.html">frc2::CommandHelper</a></div><div class="ttdoc">CRTP implementation to allow polymorphic decorator functions in Command.</div><div class="ttdef"><b>Definition:</b> CommandHelper.h:23</div></div>
 <div class="ttc" id="aclassfrc2_1_1WaitCommand_html"><div class="ttname"><a href="classfrc2_1_1WaitCommand.html">frc2::WaitCommand</a></div><div class="ttdoc">A command that does nothing but takes a specified amount of time to finish.</div><div class="ttdef"><b>Definition:</b> WaitCommand.h:19</div></div>
@@ -143,7 +143,7 @@ $(document).ready(function(){initNavTree('wpilibNewCommands_2src_2main_2native_2
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e7d5d1c9c07b3d6a0a849f7ca2bfcaa9.html">frc2</a></li><li class="navelem"><a class="el" href="dir_25d5854705192c92d2d003534c71255a.html">command</a></li><li class="navelem"><b>WaitCommand.h</b></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:30 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:06 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

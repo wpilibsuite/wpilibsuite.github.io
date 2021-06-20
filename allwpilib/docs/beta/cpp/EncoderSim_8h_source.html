@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -103,7 +103,7 @@ $(document).ready(function(){initNavTree('EncoderSim_8h_source.html',''); initRe
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;frc/simulation/CallbackStore.h&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacefrc.html">frc</a> {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>frc {</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span>Encoder;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
@@ -222,11 +222,10 @@ $(document).ready(function(){initNavTree('EncoderSim_8h_source.html',''); initRe
 <div class="ttc" id="aclassfrc_1_1sim_1_1EncoderSim_html_ad00a7b409c8aec23c9a17be243a5ab9b"><div class="ttname"><a href="classfrc_1_1sim_1_1EncoderSim.html#ad00a7b409c8aec23c9a17be243a5ab9b">frc::sim::EncoderSim::SetDistance</a></div><div class="ttdeci">void SetDistance(double distance)</div><div class="ttdoc">Change the encoder distance.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1EncoderSim_html_af9348ed72b9c92568f8e77c55b50d082"><div class="ttname"><a href="classfrc_1_1sim_1_1EncoderSim.html#af9348ed72b9c92568f8e77c55b50d082">frc::sim::EncoderSim::SetDistancePerPulse</a></div><div class="ttdeci">void SetDistancePerPulse(double distancePerPulse)</div><div class="ttdoc">Change the encoder distance per pulse.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1EncoderSim_html_aea8c3d8d22cbfe9872fbbcf4c95390f4"><div class="ttname"><a href="classfrc_1_1sim_1_1EncoderSim.html#aea8c3d8d22cbfe9872fbbcf4c95390f4">frc::sim::EncoderSim::RegisterDirectionCallback</a></div><div class="ttdeci">std::unique_ptr&lt; CallbackStore &gt; RegisterDirectionCallback(NotifyCallback callback, bool initialNotify)</div><div class="ttdoc">Register a callback on the direction of the encoder.</div></div>
-<div class="ttc" id="aclassfrc_1_1Encoder_html"><div class="ttname"><a href="classfrc_1_1Encoder.html">frc::Encoder</a></div><div class="ttdoc">Class to read quad encoders.</div><div class="ttdef"><b>Definition:</b> Encoder.h:45</div></div>
+<div class="ttc" id="aclassfrc_1_1Encoder_html"><div class="ttname"><a href="classfrc_1_1Encoder.html">frc::Encoder</a></div><div class="ttdoc">Class to read quad encoders.</div><div class="ttdef"><b>Definition:</b> Encoder.h:40</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1EncoderSim_html_a6d80d11d1c8b3aaefcf3acab43e9469e"><div class="ttname"><a href="classfrc_1_1sim_1_1EncoderSim.html#a6d80d11d1c8b3aaefcf3acab43e9469e">frc::sim::EncoderSim::RegisterMaxPeriodCallback</a></div><div class="ttdeci">std::unique_ptr&lt; CallbackStore &gt; RegisterMaxPeriodCallback(NotifyCallback callback, bool initialNotify)</div><div class="ttdoc">Register a callback to be run whenever the max period of the encoder is changed.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1EncoderSim_html_af17574135222df1ee72cc4cfc0acf61a"><div class="ttname"><a href="classfrc_1_1sim_1_1EncoderSim.html#af17574135222df1ee72cc4cfc0acf61a">frc::sim::EncoderSim::RegisterResetCallback</a></div><div class="ttdeci">std::unique_ptr&lt; CallbackStore &gt; RegisterResetCallback(NotifyCallback callback, bool initialNotify)</div><div class="ttdoc">Register a callback to be called whenever the encoder is reset.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1EncoderSim_html_a59955e804091e6775a67cd17aadf6f83"><div class="ttname"><a href="classfrc_1_1sim_1_1EncoderSim.html#a59955e804091e6775a67cd17aadf6f83">frc::sim::EncoderSim::SetDirection</a></div><div class="ttdeci">void SetDirection(bool direction)</div><div class="ttdoc">Set the direction of the encoder.</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> CameraServer.h:18</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1EncoderSim_html_afb74926b61099a4d812a13a9d41d166f"><div class="ttname"><a href="classfrc_1_1sim_1_1EncoderSim.html#afb74926b61099a4d812a13a9d41d166f">frc::sim::EncoderSim::CreateForIndex</a></div><div class="ttdeci">static EncoderSim CreateForIndex(int index)</div><div class="ttdoc">Creates an EncoderSim for a simulated index.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1EncoderSim_html_ab7a91f1dab48c999b3736d88d21e1e7e"><div class="ttname"><a href="classfrc_1_1sim_1_1EncoderSim.html#ab7a91f1dab48c999b3736d88d21e1e7e">frc::sim::EncoderSim::GetReverseDirection</a></div><div class="ttdeci">bool GetReverseDirection() const</div><div class="ttdoc">Get the reverse direction of the encoder.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1EncoderSim_html_a7992a26f538bf7a0626a034e6945d5a3"><div class="ttname"><a href="classfrc_1_1sim_1_1EncoderSim.html#a7992a26f538bf7a0626a034e6945d5a3">frc::sim::EncoderSim::SetMaxPeriod</a></div><div class="ttdeci">void SetMaxPeriod(double maxPeriod)</div><div class="ttdoc">Change the max period of the encoder.</div></div>
@@ -241,7 +240,7 @@ $(document).ready(function(){initNavTree('EncoderSim_8h_source.html',''); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_297dc702852f645e4b9e531dac2da27d.html">simulation</a></li><li class="navelem"><b>EncoderSim.h</b></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:30 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:05 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

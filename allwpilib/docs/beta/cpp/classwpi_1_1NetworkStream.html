@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -119,17 +119,17 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a83864fd9d427fc98c687e4aae8b01325"><td class="memItemLeft" align="right" valign="top"><a id="a83864fd9d427fc98c687e4aae8b01325"></a>
-virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><b>send</b> (const char *buffer, size_t len, Error *err)=0</td></tr>
+virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><b>send</b> (const char *<a class="el" href="classbuffer.html">buffer</a>, size_t len, Error *err)=0</td></tr>
 <tr class="separator:a83864fd9d427fc98c687e4aae8b01325"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac504198f94f5e045f41913df05cbe882"><td class="memItemLeft" align="right" valign="top"><a id="ac504198f94f5e045f41913df05cbe882"></a>
-virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><b>receive</b> (char *buffer, size_t len, Error *err, int timeout=0)=0</td></tr>
+virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><b>receive</b> (char *<a class="el" href="classbuffer.html">buffer</a>, size_t len, Error *err, int timeout=0)=0</td></tr>
 <tr class="separator:ac504198f94f5e045f41913df05cbe882"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0716a44183fb71cdc3fbf5935fd34965"><td class="memItemLeft" align="right" valign="top"><a id="a0716a44183fb71cdc3fbf5935fd34965"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>close</b> ()=0</td></tr>
 <tr class="separator:a0716a44183fb71cdc3fbf5935fd34965"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b466ba832615acde977c9cc05a36422"><td class="memItemLeft" align="right" valign="top"><a id="a1b466ba832615acde977c9cc05a36422"></a>
-virtual <a class="el" href="classwpi_1_1StringRef.html">StringRef</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getPeerIP</b> () const =0</td></tr>
-<tr class="separator:a1b466ba832615acde977c9cc05a36422"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5adf45fde49d89e6bedebb728caf0d4f"><td class="memItemLeft" align="right" valign="top"><a id="a5adf45fde49d89e6bedebb728caf0d4f"></a>
+virtual std::string_view&#160;</td><td class="memItemRight" valign="bottom"><b>getPeerIP</b> () const =0</td></tr>
+<tr class="separator:a5adf45fde49d89e6bedebb728caf0d4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5a0a6e0611a0284fc38f9a4b0f09618"><td class="memItemLeft" align="right" valign="top"><a id="af5a0a6e0611a0284fc38f9a4b0f09618"></a>
 virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>getPeerPort</b> () const =0</td></tr>
 <tr class="separator:af5a0a6e0611a0284fc38f9a4b0f09618"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -158,7 +158,7 @@ virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>getNativeHandl
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>wpi</b></li><li class="navelem"><a class="el" href="classwpi_1_1NetworkStream.html">NetworkStream</a></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:34 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:10 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

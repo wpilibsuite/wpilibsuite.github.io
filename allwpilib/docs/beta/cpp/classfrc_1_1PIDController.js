@@ -7,7 +7,7 @@ var classfrc_1_1PIDController =
     [ "~PIDController", "classfrc_1_1PIDController.html#a272716c61e58ca462d2eca66c18c8681", null ],
     [ "Disable", "classfrc_1_1PIDController.html#a7606cc8d5fd39f4060e3a2f69b79676d", null ],
     [ "Enable", "classfrc_1_1PIDController.html#a809e222e0ecafd641b32847930645caa", null ],
-    [ "InitSendable", "classfrc_1_1PIDController.html#a8b68dc4157dd543cdb06bced614543e2", null ],
+    [ "InitSendable", "classfrc_1_1PIDController.html#aab0d4629d5b2ec23b6ce9e5ae233e5f6", null ],
     [ "IsEnabled", "classfrc_1_1PIDController.html#a566852be9bee63632a3a3c1722a2638e", null ],
     [ "Reset", "classfrc_1_1PIDController.html#a3b7642aed6f1bd94982004dacc9408a5", null ],
     [ "SetEnabled", "classfrc_1_1PIDController.html#aeaa05d10406e1716cf3d6ae7346d08bd", null ]

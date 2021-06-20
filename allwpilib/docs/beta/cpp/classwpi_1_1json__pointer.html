@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -101,9 +101,9 @@ $(document).ready(function(){initNavTree('classwpi_1_1json__pointer.html',''); i
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab97252fd52bc78d5ff6f2dad9b3c10ec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1json__pointer.html#ab97252fd52bc78d5ff6f2dad9b3c10ec">json_pointer</a> (const <a class="el" href="classwpi_1_1Twine.html">Twine</a> &amp;s={})</td></tr>
-<tr class="memdesc:ab97252fd52bc78d5ff6f2dad9b3c10ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">create JSON pointer  <a href="classwpi_1_1json__pointer.html#ab97252fd52bc78d5ff6f2dad9b3c10ec">More...</a><br /></td></tr>
-<tr class="separator:ab97252fd52bc78d5ff6f2dad9b3c10ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd47b000050922ffa44ba4e6360e3154"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1json__pointer.html#afd47b000050922ffa44ba4e6360e3154">json_pointer</a> (std::string_view s={})</td></tr>
+<tr class="memdesc:afd47b000050922ffa44ba4e6360e3154"><td class="mdescLeft">&#160;</td><td class="mdescRight">create JSON pointer  <a href="classwpi_1_1json__pointer.html#afd47b000050922ffa44ba4e6360e3154">More...</a><br /></td></tr>
+<tr class="separator:afd47b000050922ffa44ba4e6360e3154"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13e3a0b9e71a8091df6b117a2abd649e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1json__pointer.html#a13e3a0b9e71a8091df6b117a2abd649e">to_string</a> () const noexcept</td></tr>
 <tr class="memdesc:a13e3a0b9e71a8091df6b117a2abd649e"><td class="mdescLeft">&#160;</td><td class="mdescRight">return a string representation of the JSON pointer  <a href="classwpi_1_1json__pointer.html#a13e3a0b9e71a8091df6b117a2abd649e">More...</a><br /></td></tr>
 <tr class="separator:a13e3a0b9e71a8091df6b117a2abd649e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -113,8 +113,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ac964a92b13c19de2908fe12d8e436087"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1json__pointer.html#ac964a92b13c19de2908fe12d8e436087">array_index</a> (const <a class="el" href="classwpi_1_1Twine.html">Twine</a> &amp;s)</td></tr>
-<tr class="separator:ac964a92b13c19de2908fe12d8e436087"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a114a68ad1629d4564a43f2d22dd55b53"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1json__pointer.html#a114a68ad1629d4564a43f2d22dd55b53">array_index</a> (std::string_view s)</td></tr>
+<tr class="separator:a114a68ad1629d4564a43f2d22dd55b53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -132,8 +132,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (<a cl
 <tr class="separator:a6779edcf28e6f018a3bbb29c0b4b5e1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ab97252fd52bc78d5ff6f2dad9b3c10ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab97252fd52bc78d5ff6f2dad9b3c10ec">&#9670;&nbsp;</a></span>json_pointer()</h2>
+<a id="afd47b000050922ffa44ba4e6360e3154"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd47b000050922ffa44ba4e6360e3154">&#9670;&nbsp;</a></span>json_pointer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -144,7 +144,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (<a cl
         <tr>
           <td class="memname">wpi::json_pointer::json_pointer </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1Twine.html">Twine</a> &amp;&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>s</em> = <code>{}</code></td><td>)</td>
           <td></td>
         </tr>
@@ -177,8 +177,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (<a cl
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac964a92b13c19de2908fe12d8e436087"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac964a92b13c19de2908fe12d8e436087">&#9670;&nbsp;</a></span>array_index()</h2>
+<a id="a114a68ad1629d4564a43f2d22dd55b53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a114a68ad1629d4564a43f2d22dd55b53">&#9670;&nbsp;</a></span>array_index()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -189,7 +189,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (<a cl
         <tr>
           <td class="memname">static int wpi::json_pointer::array_index </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classwpi_1_1Twine.html">Twine</a> &amp;&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>s</em></td><td>)</td>
           <td></td>
         </tr>
@@ -240,7 +240,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (<a cl
 </div><div class="memdoc">
 
 <p>return a string representation of the JSON pointer </p>
-<dl class="section invariant"><dt>Invariant</dt><dd>For each JSON pointer <code>ptr</code>, it holds: <div class="fragment"><div class="line">ptr == <a class="code" href="classwpi_1_1json__pointer.html#ab97252fd52bc78d5ff6f2dad9b3c10ec">json_pointer</a>(ptr.to_string());</div>
+<dl class="section invariant"><dt>Invariant</dt><dd>For each JSON pointer <code>ptr</code>, it holds: <div class="fragment"><div class="line">ptr == <a class="code" href="classwpi_1_1json__pointer.html#afd47b000050922ffa44ba4e6360e3154">json_pointer</a>(ptr.to_string());</div>
 </div><!-- fragment --></dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>a string representation of the JSON pointer</dd></dl>
 <p>@liveexample{The example shows the result of <code>to_string</code>., json_pointer__to_string}</p>
@@ -272,7 +272,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (<a cl
 </div><div class="memdoc">
 
 <p>return a string representation of the JSON pointer </p>
-<dl class="section invariant"><dt>Invariant</dt><dd>For each JSON pointer <code>ptr</code>, it holds: <div class="fragment"><div class="line">ptr == <a class="code" href="classwpi_1_1json__pointer.html#ab97252fd52bc78d5ff6f2dad9b3c10ec">json_pointer</a>(ptr.to_string());</div>
+<dl class="section invariant"><dt>Invariant</dt><dd>For each JSON pointer <code>ptr</code>, it holds: <div class="fragment"><div class="line">ptr == <a class="code" href="classwpi_1_1json__pointer.html#afd47b000050922ffa44ba4e6360e3154">json_pointer</a>(ptr.to_string());</div>
 </div><!-- fragment --></dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>a string representation of the JSON pointer</dd></dl>
 <p>@liveexample{The example shows the result of <code>to_string</code>., json_pointer__to_string}</p>
@@ -285,12 +285,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (<a cl
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclasswpi_1_1json__pointer_html_ab97252fd52bc78d5ff6f2dad9b3c10ec"><div class="ttname"><a href="classwpi_1_1json__pointer.html#ab97252fd52bc78d5ff6f2dad9b3c10ec">wpi::json_pointer::json_pointer</a></div><div class="ttdeci">json_pointer(const Twine &amp;s={})</div><div class="ttdoc">create JSON pointer</div><div class="ttdef"><b>Definition:</b> json.h:2351</div></div>
+<div class="ttc" id="aclasswpi_1_1json__pointer_html_afd47b000050922ffa44ba4e6360e3154"><div class="ttname"><a href="classwpi_1_1json__pointer.html#afd47b000050922ffa44ba4e6360e3154">wpi::json_pointer::json_pointer</a></div><div class="ttdeci">json_pointer(std::string_view s={})</div><div class="ttdoc">create JSON pointer</div><div class="ttdef"><b>Definition:</b> json.h:2351</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>wpi</b></li><li class="navelem"><a class="el" href="classwpi_1_1json__pointer.html">json_pointer</a></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:34 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:10 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

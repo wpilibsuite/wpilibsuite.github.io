@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -99,8 +99,8 @@ $(document).ready(function(){initNavTree('ProxyScheduleCommand_8h_source.html','
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;wpi/ArrayRef.h&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;wpi/SmallVector.h&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;wpi/SmallVector.h&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;wpi/span.h&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;frc2/command/CommandBase.h&quot;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;frc2/command/CommandHelper.h&quot;</span></div>
@@ -110,31 +110,34 @@ $(document).ready(function(){initNavTree('ProxyScheduleCommand_8h_source.html','
 <div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classfrc2_1_1ProxyScheduleCommand.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc2_1_1ProxyScheduleCommand.html">ProxyScheduleCommand</a></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    : <span class="keyword">public</span> <a class="code" href="classfrc2_1_1CommandHelper.html">CommandHelper</a>&lt;CommandBase, ProxyScheduleCommand&gt; {</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classfrc2_1_1ProxyScheduleCommand.html#a8095edd978587792842d76eda81ec7c0">   30</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc2_1_1ProxyScheduleCommand.html#a8095edd978587792842d76eda81ec7c0">ProxyScheduleCommand</a>(<a class="code" href="classwpi_1_1ArrayRef.html">wpi::ArrayRef&lt;Command*&gt;</a> toSchedule);</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classfrc2_1_1ProxyScheduleCommand.html#afb82482ffd565a6340ce170d86604813">   30</a></span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc2_1_1ProxyScheduleCommand.html#afb82482ffd565a6340ce170d86604813">ProxyScheduleCommand</a>(<a class="code" href="classwpi_1_1span.html">wpi::span&lt;Command* const&gt;</a> toSchedule);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <a class="code" href="classfrc2_1_1ProxyScheduleCommand.html#a8095edd978587792842d76eda81ec7c0">ProxyScheduleCommand</a>(<a class="code" href="classfrc2_1_1ProxyScheduleCommand.html">ProxyScheduleCommand</a>&amp;&amp; other) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc2_1_1ProxyScheduleCommand.html#afb82482ffd565a6340ce170d86604813">ProxyScheduleCommand</a>(<a class="code" href="classfrc2_1_1Command.html">Command</a>* toSchedule);</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <a class="code" href="classfrc2_1_1ProxyScheduleCommand.html#a8095edd978587792842d76eda81ec7c0">ProxyScheduleCommand</a>(<span class="keyword">const</span> <a class="code" href="classfrc2_1_1ProxyScheduleCommand.html">ProxyScheduleCommand</a>&amp; other) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <a class="code" href="classfrc2_1_1ProxyScheduleCommand.html#afb82482ffd565a6340ce170d86604813">ProxyScheduleCommand</a>(<a class="code" href="classfrc2_1_1ProxyScheduleCommand.html">ProxyScheduleCommand</a>&amp;&amp; other) = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classfrc2_1_1ProxyScheduleCommand.html#aa0350faddfc7086907a2b27c70de637f">   36</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc2_1_1ProxyScheduleCommand.html#aa0350faddfc7086907a2b27c70de637f">Initialize</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <a class="code" href="classfrc2_1_1ProxyScheduleCommand.html#afb82482ffd565a6340ce170d86604813">ProxyScheduleCommand</a>(<span class="keyword">const</span> <a class="code" href="classfrc2_1_1ProxyScheduleCommand.html">ProxyScheduleCommand</a>&amp; other) = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classfrc2_1_1ProxyScheduleCommand.html#ad82bd0277ba41a28ba2cb9c2e6ddd8fe">   38</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc2_1_1ProxyScheduleCommand.html#ad82bd0277ba41a28ba2cb9c2e6ddd8fe">End</a>(<span class="keywordtype">bool</span> interrupted) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classfrc2_1_1ProxyScheduleCommand.html#aa0350faddfc7086907a2b27c70de637f">   38</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc2_1_1ProxyScheduleCommand.html#aa0350faddfc7086907a2b27c70de637f">Initialize</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classfrc2_1_1ProxyScheduleCommand.html#a7b6a981f5fd1c32472f9837cc931bd0f">   40</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc2_1_1ProxyScheduleCommand.html#a7b6a981f5fd1c32472f9837cc931bd0f">Execute</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classfrc2_1_1ProxyScheduleCommand.html#ad82bd0277ba41a28ba2cb9c2e6ddd8fe">   40</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc2_1_1ProxyScheduleCommand.html#ad82bd0277ba41a28ba2cb9c2e6ddd8fe">End</a>(<span class="keywordtype">bool</span> interrupted) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classfrc2_1_1ProxyScheduleCommand.html#a35c27dca5b43be379a2e93a90160f9ee">   42</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc2_1_1ProxyScheduleCommand.html#a35c27dca5b43be379a2e93a90160f9ee">IsFinished</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classfrc2_1_1ProxyScheduleCommand.html#a7b6a981f5fd1c32472f9837cc931bd0f">   42</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc2_1_1ProxyScheduleCommand.html#a7b6a981f5fd1c32472f9837cc931bd0f">Execute</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="classwpi_1_1SmallVector.html">wpi::SmallVector&lt;Command*, 4&gt;</a> m_toSchedule;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">bool</span> m_finished{<span class="keyword">false</span>};</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;};</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}  <span class="comment">// namespace frc2</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classfrc2_1_1ProxyScheduleCommand.html#a35c27dca5b43be379a2e93a90160f9ee">   44</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc2_1_1ProxyScheduleCommand.html#a35c27dca5b43be379a2e93a90160f9ee">IsFinished</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <a class="code" href="classwpi_1_1SmallVector.html">wpi::SmallVector&lt;Command*, 4&gt;</a> m_toSchedule;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordtype">bool</span> m_finished{<span class="keyword">false</span>};</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}  <span class="comment">// namespace frc2</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclasswpi_1_1ArrayRef_html"><div class="ttname"><a href="classwpi_1_1ArrayRef.html">wpi::ArrayRef</a></div><div class="ttdoc">ArrayRef - Represent a constant reference to an array (0 or more elements consecutively in memory),...</div><div class="ttdef"><b>Definition:</b> ArrayRef.h:42</div></div>
+<div class="ttc" id="aclassfrc2_1_1ProxyScheduleCommand_html_afb82482ffd565a6340ce170d86604813"><div class="ttname"><a href="classfrc2_1_1ProxyScheduleCommand.html#afb82482ffd565a6340ce170d86604813">frc2::ProxyScheduleCommand::ProxyScheduleCommand</a></div><div class="ttdeci">ProxyScheduleCommand(wpi::span&lt; Command *const &gt; toSchedule)</div><div class="ttdoc">Creates a new ProxyScheduleCommand that schedules the given commands when initialized,...</div></div>
 <div class="ttc" id="aclassfrc2_1_1ProxyScheduleCommand_html_a7b6a981f5fd1c32472f9837cc931bd0f"><div class="ttname"><a href="classfrc2_1_1ProxyScheduleCommand.html#a7b6a981f5fd1c32472f9837cc931bd0f">frc2::ProxyScheduleCommand::Execute</a></div><div class="ttdeci">void Execute() override</div><div class="ttdoc">The main body of a command.</div></div>
-<div class="ttc" id="aclassfrc2_1_1ProxyScheduleCommand_html_a8095edd978587792842d76eda81ec7c0"><div class="ttname"><a href="classfrc2_1_1ProxyScheduleCommand.html#a8095edd978587792842d76eda81ec7c0">frc2::ProxyScheduleCommand::ProxyScheduleCommand</a></div><div class="ttdeci">ProxyScheduleCommand(wpi::ArrayRef&lt; Command * &gt; toSchedule)</div><div class="ttdoc">Creates a new ProxyScheduleCommand that schedules the given commands when initialized,...</div></div>
 <div class="ttc" id="aclassfrc2_1_1ProxyScheduleCommand_html_aa0350faddfc7086907a2b27c70de637f"><div class="ttname"><a href="classfrc2_1_1ProxyScheduleCommand.html#aa0350faddfc7086907a2b27c70de637f">frc2::ProxyScheduleCommand::Initialize</a></div><div class="ttdeci">void Initialize() override</div><div class="ttdoc">The initial subroutine of a command.</div></div>
+<div class="ttc" id="aclassfrc2_1_1Command_html"><div class="ttname"><a href="classfrc2_1_1Command.html">frc2::Command</a></div><div class="ttdoc">A state machine representing a complete action to be performed by the robot.</div><div class="ttdef"><b>Definition:</b> Command.h:48</div></div>
+<div class="ttc" id="aclasswpi_1_1span_html"><div class="ttname"><a href="classwpi_1_1span.html">wpi::span</a></div><div class="ttdef"><b>Definition:</b> span.h:29</div></div>
 <div class="ttc" id="aclassfrc2_1_1ProxyScheduleCommand_html_ad82bd0277ba41a28ba2cb9c2e6ddd8fe"><div class="ttname"><a href="classfrc2_1_1ProxyScheduleCommand.html#ad82bd0277ba41a28ba2cb9c2e6ddd8fe">frc2::ProxyScheduleCommand::End</a></div><div class="ttdeci">void End(bool interrupted) override</div><div class="ttdoc">The action to take when the command ends.</div></div>
 <div class="ttc" id="aclassfrc2_1_1ProxyScheduleCommand_html"><div class="ttname"><a href="classfrc2_1_1ProxyScheduleCommand.html">frc2::ProxyScheduleCommand</a></div><div class="ttdoc">Schedules the given commands when this command is initialized, and ends when all the commands are no ...</div><div class="ttdef"><b>Definition:</b> ProxyScheduleCommand.h:22</div></div>
 <div class="ttc" id="aclassfrc2_1_1CommandHelper_html"><div class="ttname"><a href="classfrc2_1_1CommandHelper.html">frc2::CommandHelper</a></div><div class="ttdoc">CRTP implementation to allow polymorphic decorator functions in Command.</div><div class="ttdef"><b>Definition:</b> CommandHelper.h:23</div></div>
@@ -144,7 +147,7 @@ $(document).ready(function(){initNavTree('ProxyScheduleCommand_8h_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e7d5d1c9c07b3d6a0a849f7ca2bfcaa9.html">frc2</a></li><li class="navelem"><a class="el" href="dir_25d5854705192c92d2d003534c71255a.html">command</a></li><li class="navelem"><b>ProxyScheduleCommand.h</b></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:30 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:06 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

@@ -8,6 +8,7 @@ var classfrc_1_1IterativeRobotBase =
     [ "AutonomousPeriodic", "classfrc_1_1IterativeRobotBase.html#aee2a71a8f3b959f39dbc2a0c546543d3", null ],
     [ "DisabledInit", "classfrc_1_1IterativeRobotBase.html#aa53a5965b9a01622d221020d2b6b6a8c", null ],
     [ "DisabledPeriodic", "classfrc_1_1IterativeRobotBase.html#aa1c0335b4c558340a2e624ab2db8c092", null ],
+    [ "GetPeriod", "classfrc_1_1IterativeRobotBase.html#aead36ef3891548d84322a593ddb5d049", null ],
     [ "LoopFunc", "classfrc_1_1IterativeRobotBase.html#a87620f299b086feb73d6625896978396", null ],
     [ "operator=", "classfrc_1_1IterativeRobotBase.html#a62b2d372439cf1ccae8e31fc1622ba59", null ],
     [ "RobotInit", "classfrc_1_1IterativeRobotBase.html#a08618f13dbf3d1f1fa98f56406da52c6", null ],
@@ -18,6 +19,5 @@ var classfrc_1_1IterativeRobotBase =
     [ "TeleopInit", "classfrc_1_1IterativeRobotBase.html#a3e3798e0ac3ed99fb63a747bfc0622c0", null ],
     [ "TeleopPeriodic", "classfrc_1_1IterativeRobotBase.html#a2e6f6bc04d6c62c9fa33bc12a21c74d5", null ],
     [ "TestInit", "classfrc_1_1IterativeRobotBase.html#a0c5042b873bd000d8258f146456eb9dd", null ],
-    [ "TestPeriodic", "classfrc_1_1IterativeRobotBase.html#a379bededf5d908e76fc6b2b19010e3ab", null ],
-    [ "m_period", "classfrc_1_1IterativeRobotBase.html#aa7478f701102965c2102a36613b0df11", null ]
+    [ "TestPeriodic", "classfrc_1_1IterativeRobotBase.html#a379bededf5d908e76fc6b2b19010e3ab", null ]
 ];

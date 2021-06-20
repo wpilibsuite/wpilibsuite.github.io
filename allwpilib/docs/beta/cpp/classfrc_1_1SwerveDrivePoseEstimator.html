@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -97,7 +97,7 @@ $(document).ready(function(){initNavTree('classfrc_1_1SwerveDrivePoseEstimator.h
 </div><!--header-->
 <div class="contents">
 
-<p>This class wraps an Unscented Kalman <a class="el" href="classfrc_1_1Filter.html" title="Interface for filters.">Filter</a> to fuse latency-compensated vision measurements with swerve drive encoder velocity measurements.  
+<p>This class wraps an Unscented Kalman Filter to fuse latency-compensated vision measurements with swerve drive encoder velocity measurements.  
  <a href="classfrc_1_1SwerveDrivePoseEstimator.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="SwerveDrivePoseEstimator_8h_source.html">frc/estimator/SwerveDrivePoseEstimator.h</a>&gt;</code></p>
@@ -111,31 +111,31 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:abc069c79c0503a5713593eda54af6245"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the robot's position on the field.  <a href="classfrc_1_1SwerveDrivePoseEstimator.html#abc069c79c0503a5713593eda54af6245">More...</a><br /></td></tr>
 <tr class="separator:abc069c79c0503a5713593eda54af6245"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa43500d257dd6e01c810ffd6992e2a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1Pose2d.html">Pose2d</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SwerveDrivePoseEstimator.html#afa43500d257dd6e01c810ffd6992e2a9">GetEstimatedPosition</a> () const</td></tr>
-<tr class="memdesc:afa43500d257dd6e01c810ffd6992e2a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the pose of the robot at the current time as estimated by the Extended Kalman <a class="el" href="classfrc_1_1Filter.html" title="Interface for filters.">Filter</a>.  <a href="classfrc_1_1SwerveDrivePoseEstimator.html#afa43500d257dd6e01c810ffd6992e2a9">More...</a><br /></td></tr>
+<tr class="memdesc:afa43500d257dd6e01c810ffd6992e2a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the pose of the robot at the current time as estimated by the Extended Kalman Filter.  <a href="classfrc_1_1SwerveDrivePoseEstimator.html#afa43500d257dd6e01c810ffd6992e2a9">More...</a><br /></td></tr>
 <tr class="separator:afa43500d257dd6e01c810ffd6992e2a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa839fb27ac13f391e5f9314e154b8f51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SwerveDrivePoseEstimator.html#aa839fb27ac13f391e5f9314e154b8f51">SetVisionMeasurementStdDevs</a> (const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, 3 &gt; &amp;visionMeasurementStdDevs)</td></tr>
 <tr class="memdesc:aa839fb27ac13f391e5f9314e154b8f51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the pose estimator's trust of global measurements.  <a href="classfrc_1_1SwerveDrivePoseEstimator.html#aa839fb27ac13f391e5f9314e154b8f51">More...</a><br /></td></tr>
 <tr class="separator:aa839fb27ac13f391e5f9314e154b8f51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2ad6ac96725e2e2732032d9fdcdc5d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SwerveDrivePoseEstimator.html#af2ad6ac96725e2e2732032d9fdcdc5d7">AddVisionMeasurement</a> (const <a class="el" href="classfrc_1_1Pose2d.html">Pose2d</a> &amp;visionRobotPose, units::second_t timestamp)</td></tr>
-<tr class="memdesc:af2ad6ac96725e2e2732032d9fdcdc5d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a vision measurement to the Unscented Kalman <a class="el" href="classfrc_1_1Filter.html" title="Interface for filters.">Filter</a>.  <a href="classfrc_1_1SwerveDrivePoseEstimator.html#af2ad6ac96725e2e2732032d9fdcdc5d7">More...</a><br /></td></tr>
+<tr class="memdesc:af2ad6ac96725e2e2732032d9fdcdc5d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a vision measurement to the Unscented Kalman Filter.  <a href="classfrc_1_1SwerveDrivePoseEstimator.html#af2ad6ac96725e2e2732032d9fdcdc5d7">More...</a><br /></td></tr>
 <tr class="separator:af2ad6ac96725e2e2732032d9fdcdc5d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b964991242b8c03fc9010cc8001b5b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SwerveDrivePoseEstimator.html#a0b964991242b8c03fc9010cc8001b5b8">AddVisionMeasurement</a> (const <a class="el" href="classfrc_1_1Pose2d.html">Pose2d</a> &amp;visionRobotPose, units::second_t timestamp, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, 3 &gt; &amp;visionMeasurementStdDevs)</td></tr>
-<tr class="memdesc:a0b964991242b8c03fc9010cc8001b5b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a vision measurement to the Unscented Kalman <a class="el" href="classfrc_1_1Filter.html" title="Interface for filters.">Filter</a>.  <a href="classfrc_1_1SwerveDrivePoseEstimator.html#a0b964991242b8c03fc9010cc8001b5b8">More...</a><br /></td></tr>
+<tr class="memdesc:a0b964991242b8c03fc9010cc8001b5b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a vision measurement to the Unscented Kalman Filter.  <a href="classfrc_1_1SwerveDrivePoseEstimator.html#a0b964991242b8c03fc9010cc8001b5b8">More...</a><br /></td></tr>
 <tr class="separator:a0b964991242b8c03fc9010cc8001b5b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1505962f9ffb09955be3b1a406426967"><td class="memTemplParams" colspan="2">template&lt;typename... ModuleState&gt; </td></tr>
 <tr class="memitem:a1505962f9ffb09955be3b1a406426967"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1Pose2d.html">Pose2d</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classfrc_1_1SwerveDrivePoseEstimator.html#a1505962f9ffb09955be3b1a406426967">Update</a> (const <a class="el" href="classfrc_1_1Rotation2d.html">Rotation2d</a> &amp;gyroAngle, ModuleState &amp;&amp;... moduleStates)</td></tr>
-<tr class="memdesc:a1505962f9ffb09955be3b1a406426967"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the the Unscented Kalman <a class="el" href="classfrc_1_1Filter.html" title="Interface for filters.">Filter</a> using only wheel encoder information.  <a href="classfrc_1_1SwerveDrivePoseEstimator.html#a1505962f9ffb09955be3b1a406426967">More...</a><br /></td></tr>
+<tr class="memdesc:a1505962f9ffb09955be3b1a406426967"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the the Unscented Kalman Filter using only wheel encoder information.  <a href="classfrc_1_1SwerveDrivePoseEstimator.html#a1505962f9ffb09955be3b1a406426967">More...</a><br /></td></tr>
 <tr class="separator:a1505962f9ffb09955be3b1a406426967"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d05916ae9eef2597fd43f2be06f8980"><td class="memTemplParams" colspan="2">template&lt;typename... ModuleState&gt; </td></tr>
 <tr class="memitem:a1d05916ae9eef2597fd43f2be06f8980"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1Pose2d.html">Pose2d</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classfrc_1_1SwerveDrivePoseEstimator.html#a1d05916ae9eef2597fd43f2be06f8980">UpdateWithTime</a> (units::second_t currentTime, const <a class="el" href="classfrc_1_1Rotation2d.html">Rotation2d</a> &amp;gyroAngle, ModuleState &amp;&amp;... moduleStates)</td></tr>
-<tr class="memdesc:a1d05916ae9eef2597fd43f2be06f8980"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the the Unscented Kalman <a class="el" href="classfrc_1_1Filter.html" title="Interface for filters.">Filter</a> using only wheel encoder information.  <a href="classfrc_1_1SwerveDrivePoseEstimator.html#a1d05916ae9eef2597fd43f2be06f8980">More...</a><br /></td></tr>
+<tr class="memdesc:a1d05916ae9eef2597fd43f2be06f8980"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the the Unscented Kalman Filter using only wheel encoder information.  <a href="classfrc_1_1SwerveDrivePoseEstimator.html#a1d05916ae9eef2597fd43f2be06f8980">More...</a><br /></td></tr>
 <tr class="separator:a1d05916ae9eef2597fd43f2be06f8980"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;size_t NumModules&gt;<br />
 class frc::SwerveDrivePoseEstimator&lt; NumModules &gt;</h3>
 
-<p>This class wraps an Unscented Kalman <a class="el" href="classfrc_1_1Filter.html" title="Interface for filters.">Filter</a> to fuse latency-compensated vision measurements with swerve drive encoder velocity measurements. </p>
+<p>This class wraps an Unscented Kalman Filter to fuse latency-compensated vision measurements with swerve drive encoder velocity measurements. </p>
 <p>It will correct for noisy measurements and encoder drift. It is intended to be an easy but more accurate drop-in for <a class="el" href="classfrc_1_1SwerveDriveOdometry.html" title="Class for swerve drive odometry.">SwerveDriveOdometry</a>.</p>
 <p><a class="el" href="classfrc_1_1SwerveDrivePoseEstimator.html#a1505962f9ffb09955be3b1a406426967" title="Updates the the Unscented Kalman Filter using only wheel encoder information.">Update()</a> should be called every robot loop. If your loops are faster or slower than the default of 0.02s, then you should change the nominal delta time by specifying it in the constructor.</p>
 <p><a class="el" href="classfrc_1_1SwerveDrivePoseEstimator.html#af2ad6ac96725e2e2732032d9fdcdc5d7" title="Add a vision measurement to the Unscented Kalman Filter.">AddVisionMeasurement()</a> can be called as infrequently as you want; if you never call it, then this class will behave mostly like regular encoder odometry.</p>
@@ -263,13 +263,13 @@ template&lt;size_t NumModules&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Add a vision measurement to the Unscented Kalman <a class="el" href="classfrc_1_1Filter.html" title="Interface for filters.">Filter</a>. </p>
+<p>Add a vision measurement to the Unscented Kalman Filter. </p>
 <p>This will correct the odometry pose estimate while still accounting for measurement noise.</p>
 <p>This method can be called as infrequently as you want, as long as you are calling <a class="el" href="classfrc_1_1SwerveDrivePoseEstimator.html#a1505962f9ffb09955be3b1a406426967" title="Updates the the Unscented Kalman Filter using only wheel encoder information.">Update()</a> every loop.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">visionRobotPose</td><td>The pose of the robot as measured by the vision camera. </td></tr>
-    <tr><td class="paramname">timestamp</td><td>The timestamp of the vision measurement in seconds. Note that if you don't use your own time source by calling <a class="el" href="classfrc_1_1SwerveDrivePoseEstimator.html#a1d05916ae9eef2597fd43f2be06f8980" title="Updates the the Unscented Kalman Filter using only wheel encoder information.">UpdateWithTime()</a> then you must use a timestamp with an epoch since FPGA startup (i.e. the epoch of this timestamp is the same epoch as <a class="el" href="classfrc_1_1Timer.html#a35aa65e2046982979c224fa98fe0d051" title="Return the FPGA system clock time in seconds.">Timer::GetFPGATimestamp</a>.) This means that you should use <a class="el" href="classfrc_1_1Timer.html#a35aa65e2046982979c224fa98fe0d051" title="Return the FPGA system clock time in seconds.">Timer::GetFPGATimestamp</a> as your time source or sync the epochs. </td></tr>
+    <tr><td class="paramname">timestamp</td><td>The timestamp of the vision measurement in seconds. Note that if you don't use your own time source by calling <a class="el" href="classfrc_1_1SwerveDrivePoseEstimator.html#a1d05916ae9eef2597fd43f2be06f8980" title="Updates the the Unscented Kalman Filter using only wheel encoder information.">UpdateWithTime()</a> then you must use a timestamp with an epoch since FPGA startup (i.e. the epoch of this timestamp is the same epoch as <a class="el" href="classfrc_1_1Timer.html#a1a0b1c162a033bbf4d7053eee550745c" title="Return the FPGA system clock time in seconds.">Timer::GetFPGATimestamp</a>.) This means that you should use <a class="el" href="classfrc_1_1Timer.html#a1a0b1c162a033bbf4d7053eee550745c" title="Return the FPGA system clock time in seconds.">Timer::GetFPGATimestamp</a> as your time source or sync the epochs. </td></tr>
   </table>
   </dd>
 </dl>
@@ -318,14 +318,14 @@ template&lt;size_t NumModules&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Adds a vision measurement to the Unscented Kalman <a class="el" href="classfrc_1_1Filter.html" title="Interface for filters.">Filter</a>. </p>
+<p>Adds a vision measurement to the Unscented Kalman Filter. </p>
 <p>This will correct the odometry pose estimate while still accounting for measurement noise.</p>
 <p>This method can be called as infrequently as you want, as long as you are calling <a class="el" href="classfrc_1_1SwerveDrivePoseEstimator.html#a1505962f9ffb09955be3b1a406426967" title="Updates the the Unscented Kalman Filter using only wheel encoder information.">Update()</a> every loop.</p>
 <p>Note that the vision measurement standard deviations passed into this method will continue to apply to future measurements until a subsequent call to <a class="el" href="classfrc_1_1SwerveDrivePoseEstimator.html#aa839fb27ac13f391e5f9314e154b8f51" title="Sets the pose estimator&#39;s trust of global measurements.">SetVisionMeasurementStdDevs()</a> or this method.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">visionRobotPose</td><td>The pose of the robot as measured by the vision camera. </td></tr>
-    <tr><td class="paramname">timestamp</td><td>The timestamp of the vision measurement in seconds. Note that if you don't use your own time source by calling <a class="el" href="classfrc_1_1SwerveDrivePoseEstimator.html#a1d05916ae9eef2597fd43f2be06f8980" title="Updates the the Unscented Kalman Filter using only wheel encoder information.">UpdateWithTime()</a>, then you must use a timestamp with an epoch since FPGA startup (i.e. the epoch of this timestamp is the same epoch as <a class="el" href="classfrc2_1_1Timer.html#afe535587db8c1d9d8b3f03703a13282b" title="Return the FPGA system clock time in seconds.">frc2::Timer::GetFPGATimestamp()</a>. This means that you should use <a class="el" href="classfrc2_1_1Timer.html#afe535587db8c1d9d8b3f03703a13282b" title="Return the FPGA system clock time in seconds.">frc2::Timer::GetFPGATimestamp()</a> as your time source in this case. </td></tr>
+    <tr><td class="paramname">timestamp</td><td>The timestamp of the vision measurement in seconds. Note that if you don't use your own time source by calling <a class="el" href="classfrc_1_1SwerveDrivePoseEstimator.html#a1d05916ae9eef2597fd43f2be06f8980" title="Updates the the Unscented Kalman Filter using only wheel encoder information.">UpdateWithTime()</a>, then you must use a timestamp with an epoch since FPGA startup (i.e. the epoch of this timestamp is the same epoch as <a class="el" href="classfrc_1_1Timer.html#a1a0b1c162a033bbf4d7053eee550745c" title="Return the FPGA system clock time in seconds.">frc::Timer::GetFPGATimestamp()</a>. This means that you should use <a class="el" href="classfrc_1_1Timer.html#a1a0b1c162a033bbf4d7053eee550745c" title="Return the FPGA system clock time in seconds.">frc::Timer::GetFPGATimestamp()</a> as your time source in this case. </td></tr>
     <tr><td class="paramname">visionMeasurementStdDevs</td><td>Standard deviations of the vision measurements. Increase these numbers to trust global measurements from vision less. This matrix is in the form [x, y, theta]^T, with units in meters and radians. </td></tr>
   </table>
   </dd>
@@ -358,7 +358,7 @@ template&lt;size_t NumModules&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Gets the pose of the robot at the current time as estimated by the Extended Kalman <a class="el" href="classfrc_1_1Filter.html" title="Interface for filters.">Filter</a>. </p>
+<p>Gets the pose of the robot at the current time as estimated by the Extended Kalman Filter. </p>
 <dl class="section return"><dt>Returns</dt><dd>The estimated robot pose in meters. </dd></dl>
 
 </div>
@@ -487,7 +487,7 @@ template&lt;typename... ModuleState&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Updates the the Unscented Kalman <a class="el" href="classfrc_1_1Filter.html" title="Interface for filters.">Filter</a> using only wheel encoder information. </p>
+<p>Updates the the Unscented Kalman Filter using only wheel encoder information. </p>
 <p>This should be called every loop, and the correct loop period must be passed into the constructor of this class.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -544,7 +544,7 @@ template&lt;typename... ModuleState&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Updates the the Unscented Kalman <a class="el" href="classfrc_1_1Filter.html" title="Interface for filters.">Filter</a> using only wheel encoder information. </p>
+<p>Updates the the Unscented Kalman Filter using only wheel encoder information. </p>
 <p>This should be called every loop, and the correct loop period must be passed into the constructor of this class.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -566,8 +566,8 @@ template&lt;typename... ModuleState&gt; </div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1SwerveDrivePoseEstimator.html">SwerveDrivePoseEstimator</a></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:32 for WPILibC++ by
+    <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1SwerveDrivePoseEstimator.html">SwerveDrivePoseEstimator</a></li>
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:09 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

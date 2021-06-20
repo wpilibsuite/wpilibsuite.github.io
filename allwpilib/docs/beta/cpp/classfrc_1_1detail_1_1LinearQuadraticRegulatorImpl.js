@@ -3,6 +3,7 @@ var classfrc_1_1detail_1_1LinearQuadraticRegulatorImpl =
     [ "LinearQuadraticRegulatorImpl", "classfrc_1_1detail_1_1LinearQuadraticRegulatorImpl.html#a9e04bab9215fd029fb6e7a2f3dfc9942", null ],
     [ "LinearQuadraticRegulatorImpl", "classfrc_1_1detail_1_1LinearQuadraticRegulatorImpl.html#a8d1df8c1f568e44b40289a7cff19c9c8", null ],
     [ "LinearQuadraticRegulatorImpl", "classfrc_1_1detail_1_1LinearQuadraticRegulatorImpl.html#a1f0623a25a1e1720d0bc9537bc9cef63", null ],
+    [ "LinearQuadraticRegulatorImpl", "classfrc_1_1detail_1_1LinearQuadraticRegulatorImpl.html#a3da074cb9c32fe1eff58d7e9f2a76eda", null ],
     [ "LinearQuadraticRegulatorImpl", "classfrc_1_1detail_1_1LinearQuadraticRegulatorImpl.html#ae7285f66a89d875a70d7dee89ebb878d", null ],
     [ "Calculate", "classfrc_1_1detail_1_1LinearQuadraticRegulatorImpl.html#a74cb3afe2de72d0a1eac26e5790a6cf5", null ],
     [ "Calculate", "classfrc_1_1detail_1_1LinearQuadraticRegulatorImpl.html#ad374c3137e2df90f85ef031ad81c2ad2", null ],

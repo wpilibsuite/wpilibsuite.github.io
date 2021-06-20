@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -93,7 +93,6 @@ $(document).ready(function(){initNavTree('classfrc_1_1RobotBase.html',''); initR
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
 <a href="classfrc_1_1RobotBase-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -111,9 +110,8 @@ Inheritance diagram for frc::RobotBase:</div>
  <div class="center">
   <img src="classfrc_1_1RobotBase.png" usemap="#frc::RobotBase_map" alt=""/>
   <map id="frc::RobotBase_map" name="frc::RobotBase_map">
-<area href="classfrc_1_1IterativeRobotBase.html" title="IterativeRobotBase implements a specific type of robot program framework, extending the RobotBase cla..." alt="frc::IterativeRobotBase" shape="rect" coords="74,56,213,80"/>
-<area href="classfrc_1_1IterativeRobot.html" title="IterativeRobot implements the IterativeRobotBase robot program framework." alt="frc::IterativeRobot" shape="rect" coords="0,112,139,136"/>
-<area href="classfrc_1_1TimedRobot.html" title="TimedRobot implements the IterativeRobotBase robot program framework." alt="frc::TimedRobot" shape="rect" coords="149,112,288,136"/>
+<area href="classfrc_1_1IterativeRobotBase.html" title="IterativeRobotBase implements a specific type of robot program framework, extending the RobotBase cla..." alt="frc::IterativeRobotBase" shape="rect" coords="0,56,139,80"/>
+<area href="classfrc_1_1TimedRobot.html" title="TimedRobot implements the IterativeRobotBase robot program framework." alt="frc::TimedRobot" shape="rect" coords="0,112,139,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -168,18 +166,12 @@ static std::thread::id&#160;</td><td class="memItemRight" valign="bottom"><a cla
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a6d784fbb8c42afb37bf07150338698ad"><td class="memItemLeft" align="right" valign="top"><a id="a6d784fbb8c42afb37bf07150338698ad"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>RobotBase</b> (<a class="el" href="classfrc_1_1RobotBase.html">RobotBase</a> &amp;&amp;) noexcept</td></tr>
-<tr class="separator:a6d784fbb8c42afb37bf07150338698ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94d5e0a11cd1e184d225ec6d93d9ad3b"><td class="memItemLeft" align="right" valign="top"><a id="a94d5e0a11cd1e184d225ec6d93d9ad3b"></a>
-<a class="el" href="classfrc_1_1RobotBase.html">RobotBase</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classfrc_1_1RobotBase.html">RobotBase</a> &amp;&amp;) noexcept</td></tr>
-<tr class="separator:a94d5e0a11cd1e184d225ec6d93d9ad3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a9bd4f2f9f7813be018679b28a12917ed"><td class="memItemLeft" align="right" valign="top"><a id="a9bd4f2f9f7813be018679b28a12917ed"></a>
-<a class="el" href="classfrc_1_1DriverStation.html">DriverStation</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_ds</b></td></tr>
-<tr class="separator:a9bd4f2f9f7813be018679b28a12917ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af57ab954142a0b6019cf12c922d4c731"><td class="memItemLeft" align="right" valign="top"><a id="af57ab954142a0b6019cf12c922d4c731"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>RobotBase</b> (<a class="el" href="classfrc_1_1RobotBase.html">RobotBase</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:af57ab954142a0b6019cf12c922d4c731"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54ccd56df06bbc8da6774c30eee77dcc"><td class="memItemLeft" align="right" valign="top"><a id="a54ccd56df06bbc8da6774c30eee77dcc"></a>
+<a class="el" href="classfrc_1_1RobotBase.html">RobotBase</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classfrc_1_1RobotBase.html">RobotBase</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:a54ccd56df06bbc8da6774c30eee77dcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
 Static Protected Attributes</h2></td></tr>
@@ -437,8 +429,8 @@ static std::thread::id&#160;</td><td class="memItemRight" valign="bottom"><b>m_t
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1RobotBase.html">RobotBase</a></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:32 for WPILibC++ by
+    <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1RobotBase.html">RobotBase</a></li>
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:09 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

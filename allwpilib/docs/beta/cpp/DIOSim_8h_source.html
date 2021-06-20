@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -103,7 +103,7 @@ $(document).ready(function(){initNavTree('DIOSim_8h_source.html',''); initResiza
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;frc/simulation/CallbackStore.h&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacefrc.html">frc</a> {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>frc {</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span>DigitalInput;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span>DigitalOutput;</div>
@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('DIOSim_8h_source.html',''); initResiza
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
 <div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1DIOSim.html#a7a17bc18ada5e1f697644033a5646e71">   84</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1sim_1_1DIOSim.html#a7a17bc18ada5e1f697644033a5646e71">GetValue</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1DIOSim.html#a81da22aaa191c0f9bc0322124e39d047">   91</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1sim_1_1DIOSim.html#a81da22aaa191c0f9bc0322124e39d047">SetValue</a>(<span class="keywordtype">bool</span> value);</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1DIOSim.html#a81da22aaa191c0f9bc0322124e39d047">   91</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1sim_1_1DIOSim.html#a81da22aaa191c0f9bc0322124e39d047">SetValue</a>(<span class="keywordtype">bool</span> <a class="code" href="classvalue.html">value</a>);</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
 <div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1DIOSim.html#abd7c36fa30342485e3e56ef42e30c739">  100</a></span>&#160;  [[nodiscard]] std::unique_ptr&lt;CallbackStore&gt; <a class="code" href="classfrc_1_1sim_1_1DIOSim.html#abd7c36fa30342485e3e56ef42e30c739">RegisterPulseLengthCallback</a>(</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
@@ -166,9 +166,10 @@ $(document).ready(function(){initNavTree('DIOSim_8h_source.html',''); initResiza
 <div class="ttc" id="aclassfrc_1_1sim_1_1DIOSim_html_a069e0f3db57d21e079fd9a4edf482a67"><div class="ttname"><a href="classfrc_1_1sim_1_1DIOSim.html#a069e0f3db57d21e079fd9a4edf482a67">frc::sim::DIOSim::DIOSim</a></div><div class="ttdeci">DIOSim(const DigitalOutput &amp;output)</div><div class="ttdoc">Constructs from a DigitalOutput object.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1DIOSim_html_a7a17bc18ada5e1f697644033a5646e71"><div class="ttname"><a href="classfrc_1_1sim_1_1DIOSim.html#a7a17bc18ada5e1f697644033a5646e71">frc::sim::DIOSim::GetValue</a></div><div class="ttdeci">bool GetValue() const</div><div class="ttdoc">Read the value of the DIO port.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1DIOSim_html_a81da22aaa191c0f9bc0322124e39d047"><div class="ttname"><a href="classfrc_1_1sim_1_1DIOSim.html#a81da22aaa191c0f9bc0322124e39d047">frc::sim::DIOSim::SetValue</a></div><div class="ttdeci">void SetValue(bool value)</div><div class="ttdoc">Change the DIO value.</div></div>
+<div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1099</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1DIOSim_html_af0f0551743a2d3372cc948d55d826bf3"><div class="ttname"><a href="classfrc_1_1sim_1_1DIOSim.html#af0f0551743a2d3372cc948d55d826bf3">frc::sim::DIOSim::GetFilterIndex</a></div><div class="ttdeci">int GetFilterIndex() const</div><div class="ttdoc">Read the filter index.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1DIOSim_html_aea8bd0b91b3cee3e28c64cc8c6a9c5e9"><div class="ttname"><a href="classfrc_1_1sim_1_1DIOSim.html#aea8bd0b91b3cee3e28c64cc8c6a9c5e9">frc::sim::DIOSim::GetInitialized</a></div><div class="ttdeci">bool GetInitialized() const</div><div class="ttdoc">Check whether this DIO has been initialized.</div></div>
-<div class="ttc" id="aclassfrc_1_1DigitalOutput_html"><div class="ttname"><a href="classfrc_1_1DigitalOutput.html">frc::DigitalOutput</a></div><div class="ttdoc">Class to write to digital outputs.</div><div class="ttdef"><b>Definition:</b> DigitalOutput.h:26</div></div>
+<div class="ttc" id="aclassfrc_1_1DigitalOutput_html"><div class="ttname"><a href="classfrc_1_1DigitalOutput.html">frc::DigitalOutput</a></div><div class="ttdoc">Class to write to digital outputs.</div><div class="ttdef"><b>Definition:</b> DigitalOutput.h:24</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1DIOSim_html_a38751aad86714701c9b382b747f469bd"><div class="ttname"><a href="classfrc_1_1sim_1_1DIOSim.html#a38751aad86714701c9b382b747f469bd">frc::sim::DIOSim::GetPulseLength</a></div><div class="ttdeci">double GetPulseLength() const</div><div class="ttdoc">Read the pulse length.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1DIOSim_html_a7270df851c8ff8519f9d45fbe2d5f7b4"><div class="ttname"><a href="classfrc_1_1sim_1_1DIOSim.html#a7270df851c8ff8519f9d45fbe2d5f7b4">frc::sim::DIOSim::ResetData</a></div><div class="ttdeci">void ResetData()</div><div class="ttdoc">Reset all simulation data of this object.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1DIOSim_html_a1f8e35e32465fcb27f2437cdc54ba453"><div class="ttname"><a href="classfrc_1_1sim_1_1DIOSim.html#a1f8e35e32465fcb27f2437cdc54ba453">frc::sim::DIOSim::SetPulseLength</a></div><div class="ttdeci">void SetPulseLength(double pulseLength)</div><div class="ttdoc">Change the pulse length of this DIO port.</div></div>
@@ -181,7 +182,6 @@ $(document).ready(function(){initNavTree('DIOSim_8h_source.html',''); initResiza
 <div class="ttc" id="aclassfrc_1_1sim_1_1DIOSim_html_aaf5a30a56d62e2eef77b9778de607f16"><div class="ttname"><a href="classfrc_1_1sim_1_1DIOSim.html#aaf5a30a56d62e2eef77b9778de607f16">frc::sim::DIOSim::RegisterValueCallback</a></div><div class="ttdeci">std::unique_ptr&lt; CallbackStore &gt; RegisterValueCallback(NotifyCallback callback, bool initialNotify)</div><div class="ttdoc">Register a callback to be run whenever the DIO value changes.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1DIOSim_html"><div class="ttname"><a href="classfrc_1_1sim_1_1DIOSim.html">frc::sim::DIOSim</a></div><div class="ttdoc">Class to control a simulated digital input or output.</div><div class="ttdef"><b>Definition:</b> DIOSim.h:21</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1DIOSim_html_ac870e7b578a2aa866f42a5e5df2099f3"><div class="ttname"><a href="classfrc_1_1sim_1_1DIOSim.html#ac870e7b578a2aa866f42a5e5df2099f3">frc::sim::DIOSim::SetFilterIndex</a></div><div class="ttdeci">void SetFilterIndex(int filterIndex)</div><div class="ttdoc">Change the filter index of this DIO port.</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> CameraServer.h:18</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1DIOSim_html_a98147ea8b296d79b3490924817637a40"><div class="ttname"><a href="classfrc_1_1sim_1_1DIOSim.html#a98147ea8b296d79b3490924817637a40">frc::sim::DIOSim::RegisterFilterIndexCallback</a></div><div class="ttdeci">std::unique_ptr&lt; CallbackStore &gt; RegisterFilterIndexCallback(NotifyCallback callback, bool initialNotify)</div><div class="ttdoc">Register a callback to be run whenever the filter index changes.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1DIOSim_html_a59f22f1b4e381af9bbaba918b819f539"><div class="ttname"><a href="classfrc_1_1sim_1_1DIOSim.html#a59f22f1b4e381af9bbaba918b819f539">frc::sim::DIOSim::DIOSim</a></div><div class="ttdeci">DIOSim(int channel)</div><div class="ttdoc">Constructs from an digital I/O channel number.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1DIOSim_html_aa2456fac0402cf39088aafcbd358c9a7"><div class="ttname"><a href="classfrc_1_1sim_1_1DIOSim.html#aa2456fac0402cf39088aafcbd358c9a7">frc::sim::DIOSim::GetIsInput</a></div><div class="ttdeci">bool GetIsInput() const</div><div class="ttdoc">Check whether this DIO port is currently an Input.</div></div>
@@ -189,7 +189,7 @@ $(document).ready(function(){initNavTree('DIOSim_8h_source.html',''); initResiza
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_297dc702852f645e4b9e531dac2da27d.html">simulation</a></li><li class="navelem"><b>DIOSim.h</b></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:30 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:05 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

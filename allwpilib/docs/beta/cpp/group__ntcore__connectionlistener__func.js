@@ -1,7 +1,6 @@
 var group__ntcore__connectionlistener__func =
 [
     [ "ConnectionListenerCallback", "group__ntcore__connectionlistener__func.html#gaa88729f7f2563d47a4371de5e5c8badc", null ],
-    [ "AddConnectionListener", "group__ntcore__connectionlistener__func.html#ga571a1886fc9d876eb857f866bbe9c4ef", null ],
     [ "AddConnectionListener", "group__ntcore__connectionlistener__func.html#gaf15e7dfa175ea46f2c0ff728a53c8723", null ],
     [ "AddPolledConnectionListener", "group__ntcore__connectionlistener__func.html#gaf40981b49ae44aa901af719afed08e2c", null ],
     [ "CancelPollConnectionListener", "group__ntcore__connectionlistener__func.html#gaf3f2e2a96f87a11c85b8110810cdca01", null ],

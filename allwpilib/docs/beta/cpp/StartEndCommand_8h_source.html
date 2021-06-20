@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('StartEndCommand_8h_source.html',''); i
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;functional&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;initializer_list&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;wpi/ArrayRef.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;wpi/span.h&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;frc2/command/CommandBase.h&quot;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;frc2/command/CommandHelper.h&quot;</span></div>
@@ -113,8 +113,8 @@ $(document).ready(function(){initNavTree('StartEndCommand_8h_source.html',''); i
 <div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classfrc2_1_1StartEndCommand.html#aebb9817faf7b9aae81d7b837767d1f70">   33</a></span>&#160;  <a class="code" href="classfrc2_1_1StartEndCommand.html#aebb9817faf7b9aae81d7b837767d1f70">StartEndCommand</a>(std::function&lt;<span class="keywordtype">void</span>()&gt; onInit, std::function&lt;<span class="keywordtype">void</span>()&gt; onEnd,</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                  std::initializer_list&lt;Subsystem*&gt; requirements);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classfrc2_1_1StartEndCommand.html#a1a991f02619d04a1aaf78d3605d2eed0">   44</a></span>&#160;  <a class="code" href="classfrc2_1_1StartEndCommand.html#a1a991f02619d04a1aaf78d3605d2eed0">StartEndCommand</a>(std::function&lt;<span class="keywordtype">void</span>()&gt; onInit, std::function&lt;<span class="keywordtype">void</span>()&gt; onEnd,</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                  <a class="code" href="classwpi_1_1ArrayRef.html">wpi::ArrayRef&lt;Subsystem*&gt;</a> requirements = {});</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classfrc2_1_1StartEndCommand.html#aff99dcd6ddaec39071d7a030a8634e77">   44</a></span>&#160;  <a class="code" href="classfrc2_1_1StartEndCommand.html#aff99dcd6ddaec39071d7a030a8634e77">StartEndCommand</a>(std::function&lt;<span class="keywordtype">void</span>()&gt; onInit, std::function&lt;<span class="keywordtype">void</span>()&gt; onEnd,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                  <a class="code" href="classwpi_1_1span.html">wpi::span&lt;Subsystem* const&gt;</a> requirements = {});</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <a class="code" href="classfrc2_1_1StartEndCommand.html#aebb9817faf7b9aae81d7b837767d1f70">StartEndCommand</a>(<a class="code" href="classfrc2_1_1StartEndCommand.html">StartEndCommand</a>&amp;&amp; other) = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
@@ -131,18 +131,18 @@ $(document).ready(function(){initNavTree('StartEndCommand_8h_source.html',''); i
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}  <span class="comment">// namespace frc2</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclasswpi_1_1ArrayRef_html"><div class="ttname"><a href="classwpi_1_1ArrayRef.html">wpi::ArrayRef</a></div><div class="ttdoc">ArrayRef - Represent a constant reference to an array (0 or more elements consecutively in memory),...</div><div class="ttdef"><b>Definition:</b> ArrayRef.h:42</div></div>
-<div class="ttc" id="aclassfrc2_1_1StartEndCommand_html_a1a991f02619d04a1aaf78d3605d2eed0"><div class="ttname"><a href="classfrc2_1_1StartEndCommand.html#a1a991f02619d04a1aaf78d3605d2eed0">frc2::StartEndCommand::StartEndCommand</a></div><div class="ttdeci">StartEndCommand(std::function&lt; void()&gt; onInit, std::function&lt; void()&gt; onEnd, wpi::ArrayRef&lt; Subsystem * &gt; requirements={})</div><div class="ttdoc">Creates a new StartEndCommand.</div></div>
+<div class="ttc" id="aclasswpi_1_1span_html"><div class="ttname"><a href="classwpi_1_1span.html">wpi::span</a></div><div class="ttdef"><b>Definition:</b> span.h:29</div></div>
 <div class="ttc" id="aclassfrc2_1_1StartEndCommand_html_ab05582d72287b2857a0d304f4704c7a5"><div class="ttname"><a href="classfrc2_1_1StartEndCommand.html#ab05582d72287b2857a0d304f4704c7a5">frc2::StartEndCommand::Initialize</a></div><div class="ttdeci">void Initialize() override</div><div class="ttdoc">The initial subroutine of a command.</div></div>
 <div class="ttc" id="aclassfrc2_1_1CommandHelper_html"><div class="ttname"><a href="classfrc2_1_1CommandHelper.html">frc2::CommandHelper</a></div><div class="ttdoc">CRTP implementation to allow polymorphic decorator functions in Command.</div><div class="ttdef"><b>Definition:</b> CommandHelper.h:23</div></div>
 <div class="ttc" id="aclassfrc2_1_1StartEndCommand_html_a77aa9d5f7ee2b2470fc276ecbd3a19dc"><div class="ttname"><a href="classfrc2_1_1StartEndCommand.html#a77aa9d5f7ee2b2470fc276ecbd3a19dc">frc2::StartEndCommand::End</a></div><div class="ttdeci">void End(bool interrupted) override</div><div class="ttdoc">The action to take when the command ends.</div></div>
 <div class="ttc" id="aclassfrc2_1_1StartEndCommand_html"><div class="ttname"><a href="classfrc2_1_1StartEndCommand.html">frc2::StartEndCommand</a></div><div class="ttdoc">A command that runs a given runnable when it is initialized, and another runnable when it ends.</div><div class="ttdef"><b>Definition:</b> StartEndCommand.h:23</div></div>
 <div class="ttc" id="aclassfrc2_1_1StartEndCommand_html_aebb9817faf7b9aae81d7b837767d1f70"><div class="ttname"><a href="classfrc2_1_1StartEndCommand.html#aebb9817faf7b9aae81d7b837767d1f70">frc2::StartEndCommand::StartEndCommand</a></div><div class="ttdeci">StartEndCommand(std::function&lt; void()&gt; onInit, std::function&lt; void()&gt; onEnd, std::initializer_list&lt; Subsystem * &gt; requirements)</div><div class="ttdoc">Creates a new StartEndCommand.</div></div>
+<div class="ttc" id="aclassfrc2_1_1StartEndCommand_html_aff99dcd6ddaec39071d7a030a8634e77"><div class="ttname"><a href="classfrc2_1_1StartEndCommand.html#aff99dcd6ddaec39071d7a030a8634e77">frc2::StartEndCommand::StartEndCommand</a></div><div class="ttdeci">StartEndCommand(std::function&lt; void()&gt; onInit, std::function&lt; void()&gt; onEnd, wpi::span&lt; Subsystem *const &gt; requirements={})</div><div class="ttdoc">Creates a new StartEndCommand.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e7d5d1c9c07b3d6a0a849f7ca2bfcaa9.html">frc2</a></li><li class="navelem"><a class="el" href="dir_25d5854705192c92d2d003534c71255a.html">command</a></li><li class="navelem"><b>StartEndCommand.h</b></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:30 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:06 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

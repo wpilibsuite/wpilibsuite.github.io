@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -105,7 +105,7 @@ $(document).ready(function(){initNavTree('RectangularRegionConstraint_8h_source.
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;frc/geometry/Translation2d.h&quot;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;frc/trajectory/constraint/TrajectoryConstraint.h&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacefrc.html">frc</a> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span>frc {</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Constraint, <span class="keyword">typename</span> = std::enable_if_t&lt;std::is_base_of_v&lt;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                                   TrajectoryConstraint, Constraint&gt;&gt;&gt;</div>
 <div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classfrc_1_1RectangularRegionConstraint.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1RectangularRegionConstraint.html">RectangularRegionConstraint</a> : <span class="keyword">public</span> <a class="code" href="classfrc_1_1TrajectoryConstraint.html">TrajectoryConstraint</a> {</div>
@@ -159,17 +159,16 @@ $(document).ready(function(){initNavTree('RectangularRegionConstraint_8h_source.
 <div class="ttc" id="aclassfrc_1_1Translation2d_html_aa656d3bc0edaef7499db07c53840e028"><div class="ttname"><a href="classfrc_1_1Translation2d.html#aa656d3bc0edaef7499db07c53840e028">frc::Translation2d::X</a></div><div class="ttdeci">units::meter_t X() const</div><div class="ttdoc">Returns the X component of the translation.</div><div class="ttdef"><b>Definition:</b> Translation2d.h:66</div></div>
 <div class="ttc" id="aclassfrc_1_1Translation2d_html"><div class="ttname"><a href="classfrc_1_1Translation2d.html">frc::Translation2d</a></div><div class="ttdoc">Represents a translation in 2d space.</div><div class="ttdef"><b>Definition:</b> Translation2d.h:24</div></div>
 <div class="ttc" id="aclassfrc_1_1TrajectoryConstraint_html"><div class="ttname"><a href="classfrc_1_1TrajectoryConstraint.html">frc::TrajectoryConstraint</a></div><div class="ttdoc">An interface for defining user-defined velocity and acceleration constraints while generating traject...</div><div class="ttdef"><b>Definition:</b> TrajectoryConstraint.h:20</div></div>
-<div class="ttc" id="aclassfrc_1_1Pose2d_html_a24e0ea6b41a5b36ce9fbedb2bd774047"><div class="ttname"><a href="classfrc_1_1Pose2d.html#a24e0ea6b41a5b36ce9fbedb2bd774047">frc::Pose2d::X</a></div><div class="ttdeci">units::meter_t X() const</div><div class="ttdoc">Returns the X component of the pose's translation.</div><div class="ttdef"><b>Definition:</b> Pose2d.h:108</div></div>
+<div class="ttc" id="aclassfrc_1_1Pose2d_html_a24e0ea6b41a5b36ce9fbedb2bd774047"><div class="ttname"><a href="classfrc_1_1Pose2d.html#a24e0ea6b41a5b36ce9fbedb2bd774047">frc::Pose2d::X</a></div><div class="ttdeci">units::meter_t X() const</div><div class="ttdoc">Returns the X component of the pose's translation.</div><div class="ttdef"><b>Definition:</b> Pose2d.h:96</div></div>
 <div class="ttc" id="aclassfrc_1_1Pose2d_html"><div class="ttname"><a href="classfrc_1_1Pose2d.html">frc::Pose2d</a></div><div class="ttdoc">Represents a 2d pose containing translational and rotational elements.</div><div class="ttdef"><b>Definition:</b> Pose2d.h:20</div></div>
 <div class="ttc" id="aclassfrc_1_1RectangularRegionConstraint_html_ad303013e4d229c7d707f45fccdcb961d"><div class="ttname"><a href="classfrc_1_1RectangularRegionConstraint.html#ad303013e4d229c7d707f45fccdcb961d">frc::RectangularRegionConstraint::RectangularRegionConstraint</a></div><div class="ttdeci">RectangularRegionConstraint(const Translation2d &amp;bottomLeftPoint, const Translation2d &amp;topRightPoint, const Constraint &amp;constraint)</div><div class="ttdoc">Constructs a new RectangularRegionConstraint.</div><div class="ttdef"><b>Definition:</b> RectangularRegionConstraint.h:31</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdoc">WPILib FRC namespace.</div><div class="ttdef"><b>Definition:</b> CameraServer.h:18</div></div>
 <div class="ttc" id="aclassfrc_1_1Translation2d_html_a6cf391feb31627ca0b90f5e5ba520be6"><div class="ttname"><a href="classfrc_1_1Translation2d.html#a6cf391feb31627ca0b90f5e5ba520be6">frc::Translation2d::Y</a></div><div class="ttdeci">units::meter_t Y() const</div><div class="ttdoc">Returns the Y component of the translation.</div><div class="ttdef"><b>Definition:</b> Translation2d.h:73</div></div>
-<div class="ttc" id="aclassfrc_1_1Pose2d_html_ad4cf5b44f1623e2b6d62323834a6a996"><div class="ttname"><a href="classfrc_1_1Pose2d.html#ad4cf5b44f1623e2b6d62323834a6a996">frc::Pose2d::Y</a></div><div class="ttdeci">units::meter_t Y() const</div><div class="ttdoc">Returns the Y component of the pose's translation.</div><div class="ttdef"><b>Definition:</b> Pose2d.h:115</div></div>
+<div class="ttc" id="aclassfrc_1_1Pose2d_html_ad4cf5b44f1623e2b6d62323834a6a996"><div class="ttname"><a href="classfrc_1_1Pose2d.html#ad4cf5b44f1623e2b6d62323834a6a996">frc::Pose2d::Y</a></div><div class="ttdeci">units::meter_t Y() const</div><div class="ttdoc">Returns the Y component of the pose's translation.</div><div class="ttdef"><b>Definition:</b> Pose2d.h:103</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_b42dbd3ffe797209985ac3b5870ef1e5.html">trajectory</a></li><li class="navelem"><a class="el" href="dir_13bd6880487aa1c996ba50003d654919.html">constraint</a></li><li class="navelem"><b>RectangularRegionConstraint.h</b></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:30 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:06 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

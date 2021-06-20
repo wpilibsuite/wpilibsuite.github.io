@@ -9,7 +9,7 @@ var classfrc_1_1DigitalOutput =
     [ "GetAnalogTriggerTypeForRouting", "classfrc_1_1DigitalOutput.html#a8459d86f55608ec6a74cdd56be90066b", null ],
     [ "GetChannel", "classfrc_1_1DigitalOutput.html#ad129e9ebb15898ca3a080b001a6ace5c", null ],
     [ "GetPortHandleForRouting", "classfrc_1_1DigitalOutput.html#a8cfc528910f0c46a329fe3fbb1ac61d6", null ],
-    [ "InitSendable", "classfrc_1_1DigitalOutput.html#a806fd70bd68d5e2a3b116e5ec2257d3e", null ],
+    [ "InitSendable", "classfrc_1_1DigitalOutput.html#ae317122c4d13e9391befb8412e1c52eb", null ],
     [ "IsAnalogTrigger", "classfrc_1_1DigitalOutput.html#a06c37af889913c6de0d4894298dd4ed3", null ],
     [ "IsPulsing", "classfrc_1_1DigitalOutput.html#a816ad772b0e9c5acb24946e980533f9d", null ],
     [ "operator=", "classfrc_1_1DigitalOutput.html#a2b7123582c3b3d2078bb9d8e34d8f40c", null ],

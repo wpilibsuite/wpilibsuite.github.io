@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-1</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2</span>
    </div>
   </td>
  </tr>
@@ -136,14 +136,16 @@ $(document).ready(function(){initNavTree('PerpetualCommand_8h_source.html',''); 
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
 <div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classfrc2_1_1PerpetualCommand.html#af279748cd35c30b7cab5a59607d565b3">   66</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc2_1_1PerpetualCommand.html#af279748cd35c30b7cab5a59607d565b3">End</a>(<span class="keywordtype">bool</span> interrupted) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  std::unique_ptr&lt;Command&gt; m_command;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;};</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}  <span class="comment">// namespace frc2</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#ifdef _WIN32</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#pragma warning(pop)</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classfrc2_1_1PerpetualCommand.html#a04d5b01d258361c73094bd60defa5928">   68</a></span>&#160;  <a class="code" href="classfrc2_1_1PerpetualCommand.html">PerpetualCommand</a> <a class="code" href="classfrc2_1_1PerpetualCommand.html#a04d5b01d258361c73094bd60defa5928">Perpetually</a>() &amp;&amp; <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  std::unique_ptr&lt;Command&gt; m_command;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;};</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}  <span class="comment">// namespace frc2</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#ifdef _WIN32</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#pragma warning(pop)</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassfrc2_1_1PerpetualCommand_html"><div class="ttname"><a href="classfrc2_1_1PerpetualCommand.html">frc2::PerpetualCommand</a></div><div class="ttdoc">A command that runs another command in perpetuity, ignoring that command's end conditions.</div><div class="ttdef"><b>Definition:</b> PerpetualCommand.h:30</div></div>
@@ -151,14 +153,15 @@ $(document).ready(function(){initNavTree('PerpetualCommand_8h_source.html',''); 
 <div class="ttc" id="aclassfrc2_1_1PerpetualCommand_html_a0659fc8ee5260da19b37ea609baabf8a"><div class="ttname"><a href="classfrc2_1_1PerpetualCommand.html#a0659fc8ee5260da19b37ea609baabf8a">frc2::PerpetualCommand::PerpetualCommand</a></div><div class="ttdeci">PerpetualCommand(std::unique_ptr&lt; Command &gt; &amp;&amp;command)</div><div class="ttdoc">Creates a new PerpetualCommand.</div></div>
 <div class="ttc" id="aclassfrc2_1_1PerpetualCommand_html_a3ea349d850d61bbc67aa4827e69b166d"><div class="ttname"><a href="classfrc2_1_1PerpetualCommand.html#a3ea349d850d61bbc67aa4827e69b166d">frc2::PerpetualCommand::PerpetualCommand</a></div><div class="ttdeci">PerpetualCommand(T &amp;&amp;command)</div><div class="ttdoc">Creates a new PerpetualCommand.</div><div class="ttdef"><b>Definition:</b> PerpetualCommand.h:50</div></div>
 <div class="ttc" id="aclassfrc2_1_1PerpetualCommand_html_af279748cd35c30b7cab5a59607d565b3"><div class="ttname"><a href="classfrc2_1_1PerpetualCommand.html#af279748cd35c30b7cab5a59607d565b3">frc2::PerpetualCommand::End</a></div><div class="ttdeci">void End(bool interrupted) override</div><div class="ttdoc">The action to take when the command ends.</div></div>
-<div class="ttc" id="aclassfrc2_1_1Command_html"><div class="ttname"><a href="classfrc2_1_1Command.html">frc2::Command</a></div><div class="ttdoc">A state machine representing a complete action to be performed by the robot.</div><div class="ttdef"><b>Definition:</b> Command.h:49</div></div>
+<div class="ttc" id="aclassfrc2_1_1Command_html"><div class="ttname"><a href="classfrc2_1_1Command.html">frc2::Command</a></div><div class="ttdoc">A state machine representing a complete action to be performed by the robot.</div><div class="ttdef"><b>Definition:</b> Command.h:48</div></div>
 <div class="ttc" id="aclassfrc2_1_1PerpetualCommand_html_aa6d8afce0ec941199f95a886c4a2c312"><div class="ttname"><a href="classfrc2_1_1PerpetualCommand.html#aa6d8afce0ec941199f95a886c4a2c312">frc2::PerpetualCommand::Execute</a></div><div class="ttdeci">void Execute() override</div><div class="ttdoc">The main body of a command.</div></div>
 <div class="ttc" id="aclassfrc2_1_1CommandHelper_html"><div class="ttname"><a href="classfrc2_1_1CommandHelper.html">frc2::CommandHelper</a></div><div class="ttdoc">CRTP implementation to allow polymorphic decorator functions in Command.</div><div class="ttdef"><b>Definition:</b> CommandHelper.h:23</div></div>
+<div class="ttc" id="aclassfrc2_1_1PerpetualCommand_html_a04d5b01d258361c73094bd60defa5928"><div class="ttname"><a href="classfrc2_1_1PerpetualCommand.html#a04d5b01d258361c73094bd60defa5928">frc2::PerpetualCommand::Perpetually</a></div><div class="ttdeci">PerpetualCommand Perpetually() &amp;&amp;override</div><div class="ttdoc">Decorates this command to run perpetually, ignoring its ordinary end conditions.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e7d5d1c9c07b3d6a0a849f7ca2bfcaa9.html">frc2</a></li><li class="navelem"><a class="el" href="dir_25d5854705192c92d2d003534c71255a.html">command</a></li><li class="navelem"><b>PerpetualCommand.h</b></li>
-    <li class="footer">Generated on Sun May 9 2021 20:37:30 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 20 2021 04:12:06 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>
