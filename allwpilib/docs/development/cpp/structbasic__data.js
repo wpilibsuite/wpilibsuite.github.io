@@ -1,7 +1,6 @@
 var structbasic__data =
 [
-    [ "digit_pair", "structbasic__data.html#a614f320a2ea20b1b4219704af25dac00", null ],
-    [ "digits", "structbasic__data.html#a55fc6835d9908da04401977257735f88", null ],
+    [ "digits", "structbasic__data.html#a77b5a9400242639f76162742087d955d", null ],
     [ "hex_digits", "structbasic__data.html#a1915cc272d079f0335fcf7e558c8a495", null ],
     [ "left_padding_shifts", "structbasic__data.html#aacea3b25006121bce42ebf36a4578ccb", null ],
     [ "log10_2_significand", "structbasic__data.html#a9e30f7176a169465975ba94e47fc6337", null ],

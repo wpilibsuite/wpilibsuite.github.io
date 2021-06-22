@@ -1,9 +1,5 @@
 var NAVTREEINDEX13 =
 {
-"classfrc_1_1PWMTalonSRX.html":[5,0,5,132],
-"classfrc_1_1PWMTalonSRX.html#a505a88898d09d3ac0367a352f1053384":[5,0,5,132,1],
-"classfrc_1_1PWMTalonSRX.html#a6f2439d87d2e630ecaed33d348dad880":[5,0,5,132,2],
-"classfrc_1_1PWMTalonSRX.html#ad5265576b66fd3326868b2b5b4bf6e5e":[5,0,5,132,0],
 "classfrc_1_1PWMVenom.html":[5,0,5,133],
 "classfrc_1_1PWMVenom.html#a4d1d70e332b581098085a00b2e4fc413":[5,0,5,133,2],
 "classfrc_1_1PWMVenom.html#ab3ccf358a5fc1348b06cb764fe30002c":[5,0,5,133,0],
@@ -249,5 +245,9 @@ var NAVTREEINDEX13 =
 "classfrc_1_1RobotController.html#a9213b2476cf7dda939f46f6d0531ab9d":[5,0,5,142,11],
 "classfrc_1_1RobotController.html#aa07847090b60fb2b73f9254039169353":[5,0,5,142,16],
 "classfrc_1_1RobotController.html#aa9fcd2d4897c882cbd6a579880ed2f60":[5,0,5,142,20],
-"classfrc_1_1RobotController.html#aad5f225c9ef5df7e9cabf7f691f8985d":[5,0,5,142,7]
+"classfrc_1_1RobotController.html#aad5f225c9ef5df7e9cabf7f691f8985d":[5,0,5,142,7],
+"classfrc_1_1RobotController.html#ab8f84f32622befd0794899c3c5d1987c":[5,0,5,142,3],
+"classfrc_1_1RobotController.html#aba9416b78890766d8aa07c6156f5715d":[5,0,5,142,17],
+"classfrc_1_1RobotController.html#ad22f7c38cb7b6306f04d313c4800a7c4":[5,0,5,142,8],
+"classfrc_1_1RobotController.html#aeb594692d2cbedfa03ee5c3dc93aec6c":[5,0,5,142,5]
 };

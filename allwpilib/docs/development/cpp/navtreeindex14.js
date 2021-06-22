@@ -1,9 +1,5 @@
 var NAVTREEINDEX14 =
 {
-"classfrc_1_1RobotController.html#ab8f84f32622befd0794899c3c5d1987c":[5,0,5,142,3],
-"classfrc_1_1RobotController.html#aba9416b78890766d8aa07c6156f5715d":[5,0,5,142,17],
-"classfrc_1_1RobotController.html#ad22f7c38cb7b6306f04d313c4800a7c4":[5,0,5,142,8],
-"classfrc_1_1RobotController.html#aeb594692d2cbedfa03ee5c3dc93aec6c":[5,0,5,142,5],
 "classfrc_1_1RobotController.html#aec16c910e71082e60486c23061dbfadb":[5,0,5,142,4],
 "classfrc_1_1RobotController.html#afd09dd41cc6a49b7de04c3af063b23ba":[5,0,5,142,15],
 "classfrc_1_1RobotDriveBase.html":[5,0,5,143],
@@ -249,5 +245,9 @@ var NAVTREEINDEX14 =
 "classfrc_1_1SerialPort.html#ac863fb1cd3a134f359434e58033d7138a974c8233ca9235c180a916ed4b024bb6":[5,0,5,155,2,2],
 "classfrc_1_1SerialPort.html#ac863fb1cd3a134f359434e58033d7138ac6365a01b2bafa8f4b11242c7c3d39fc":[5,0,5,155,2,3],
 "classfrc_1_1SerialPort.html#ac8b4115a7231812d3893894e2f6e9a48":[5,0,5,155,15],
-"classfrc_1_1SerialPort.html#ae41ae9052fa46947e3eb7a947cbda664":[5,0,5,155,1]
+"classfrc_1_1SerialPort.html#ae41ae9052fa46947e3eb7a947cbda664":[5,0,5,155,1],
+"classfrc_1_1SerialPort.html#ae41ae9052fa46947e3eb7a947cbda664a0fe623f9ade3a670f818b307b7f07c0b":[5,0,5,155,1,4],
+"classfrc_1_1SerialPort.html#ae41ae9052fa46947e3eb7a947cbda664a1336846c102d88435b194fdf34f6249c":[5,0,5,155,1,0],
+"classfrc_1_1SerialPort.html#ae41ae9052fa46947e3eb7a947cbda664a27c2c2d9f6d9ebb69c8401b51ed01210":[5,0,5,155,1,3],
+"classfrc_1_1SerialPort.html#ae41ae9052fa46947e3eb7a947cbda664a9eab113fab83b5557c222b813f0c5052":[5,0,5,155,1,2]
 };
