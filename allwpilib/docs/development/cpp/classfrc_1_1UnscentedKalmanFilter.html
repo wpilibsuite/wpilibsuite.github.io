@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-2-4-g2067d7e</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2-7-g53b4891</span>
    </div>
   </td>
  </tr>
@@ -425,7 +425,7 @@ template&lt;int Rows&gt; </div>
     <tr><td class="paramname">u</td><td>Same control input used in the predict step. </td></tr>
     <tr><td class="paramname">y</td><td>Measurement vector. </td></tr>
     <tr><td class="paramname">h</td><td>A vector-valued function of x and u that returns the measurement vector. </td></tr>
-    <tr><td class="paramname">R</td><td>Measurement noise covariance matrix. </td></tr>
+    <tr><td class="paramname">R</td><td>Measurement noise covariance matrix (continuous-time). </td></tr>
   </table>
   </dd>
 </dl>
@@ -513,7 +513,7 @@ template&lt;int Rows&gt; </div>
     <tr><td class="paramname">u</td><td>Same control input used in the predict step. </td></tr>
     <tr><td class="paramname">y</td><td>Measurement vector. </td></tr>
     <tr><td class="paramname">h</td><td>A vector-valued function of x and u that returns the measurement vector. </td></tr>
-    <tr><td class="paramname">R</td><td>Measurement noise covariance matrix. </td></tr>
+    <tr><td class="paramname">R</td><td>Measurement noise covariance matrix (continuous-time). </td></tr>
     <tr><td class="paramname">meanFuncY</td><td>A function that computes the mean of 2 * States + 1 measurement vectors using a given set of weights. </td></tr>
     <tr><td class="paramname">residualFuncY</td><td>A function that computes the residual of two measurement vectors (i.e. it subtracts them.) </td></tr>
     <tr><td class="paramname">residualFuncX</td><td>A function that computes the residual of two state vectors (i.e. it subtracts them.) </td></tr>
@@ -782,7 +782,7 @@ template&lt;int States, int Inputs, int Outputs&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1UnscentedKalmanFilter.html">UnscentedKalmanFilter</a></li>
-    <li class="footer">Generated on Tue Jun 22 2021 13:35:48 for WPILibC++ by
+    <li class="footer">Generated on Thu Jun 24 2021 05:00:23 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>
