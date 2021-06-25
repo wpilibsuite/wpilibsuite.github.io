@@ -1,9 +1,5 @@
 var NAVTREEINDEX11 =
 {
-"classfrc_1_1Joystick.html#a900dc7eeab035c4151fc5ebc88006487":[5,0,5,75,33],
-"classfrc_1_1Joystick.html#a93df8f506da8175b8b26070d063655ba":[5,0,5,75,28],
-"classfrc_1_1Joystick.html#a986446219fb0dc5bdde10c1f37b97513":[5,0,5,75,20],
-"classfrc_1_1Joystick.html#aa1736feefead176e8843f463608e9a7c":[5,0,5,75,6],
 "classfrc_1_1Joystick.html#aaa3652f52c28d71b2a372a79b74bf35b":[5,0,5,75,4],
 "classfrc_1_1Joystick.html#aad454d6d34e1a45ddd49f56b4ff835e4":[5,0,5,75,9],
 "classfrc_1_1Joystick.html#ab9e402a6429034621c81584deaa9dc8e":[5,0,5,75,29],
@@ -249,5 +245,9 @@ var NAVTREEINDEX11 =
 "classfrc_1_1MerweScaledSigmaPoints.html#a2a376a61a41f7e2cd5bae21588aa7560":[5,0,5,105,0],
 "classfrc_1_1MerweScaledSigmaPoints.html#a49f3dcf4e9152d25279ca737ab0bd521":[5,0,5,105,5],
 "classfrc_1_1MerweScaledSigmaPoints.html#a539ed39d0c09683d022e072796696cf0":[5,0,5,105,4],
-"classfrc_1_1MerweScaledSigmaPoints.html#a7e4bd5990975d8d226f92460094ef071":[5,0,5,105,6]
+"classfrc_1_1MerweScaledSigmaPoints.html#a7e4bd5990975d8d226f92460094ef071":[5,0,5,105,6],
+"classfrc_1_1MerweScaledSigmaPoints.html#ab725ba8e1238a46ed8a537efd562ce4f":[5,0,5,105,3],
+"classfrc_1_1MerweScaledSigmaPoints.html#ae70b5e9545215f123368f4670b29b253":[5,0,5,105,2],
+"classfrc_1_1MotorController.html":[5,0,5,106],
+"classfrc_1_1MotorControllerGroup.html":[5,0,5,107]
 };

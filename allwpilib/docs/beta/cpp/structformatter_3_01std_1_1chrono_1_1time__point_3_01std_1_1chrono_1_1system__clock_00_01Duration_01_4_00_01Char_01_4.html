@@ -91,6 +91,7 @@ $(document).ready(function(){initNavTree('structformatter_3_01std_1_1chrono_1_1t
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="structformatter_3_01std_1_1chrono_1_1time__point_3_01std_1_1chrono_1_1system__clock_00_01Duration_01_4_00_01Char_01_4-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">formatter&lt; std::chrono::time_point&lt; std::chrono::system_clock, Duration &gt;, Char &gt; Struct Template Reference</div>  </div>
@@ -108,6 +109,10 @@ Inheritance diagram for formatter&lt; std::chrono::time_point&lt; std::chrono::s
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a77575b6aa0596de28a0ed1518ca1721b"><td class="memTemplParams" colspan="2"><a id="a77575b6aa0596de28a0ed1518ca1721b"></a>
+template&lt;typename ParseContext &gt; </td></tr>
+<tr class="memitem:a77575b6aa0596de28a0ed1518ca1721b"><td class="memTemplItemLeft" align="right" valign="top">FMT_CONSTEXPR auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>parse</b> (ParseContext &amp;ctx) -&gt; decltype(ctx.begin())</td></tr>
+<tr class="separator:a77575b6aa0596de28a0ed1518ca1721b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0e7df1351cc1c6f9a760c12bf9d31b0"><td class="memTemplParams" colspan="2"><a id="aa0e7df1351cc1c6f9a760c12bf9d31b0"></a>
 template&lt;typename FormatContext &gt; </td></tr>
 <tr class="memitem:aa0e7df1351cc1c6f9a760c12bf9d31b0"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>format</b> (std::chrono::time_point&lt; std::chrono::system_clock &gt; val, FormatContext &amp;ctx) -&gt; decltype(ctx.out())</td></tr>
@@ -122,6 +127,11 @@ template&lt;typename FormatContext &gt; </td></tr>
 <tr class="memitem:a0222d68c5e1ca97550eecb6cf60abed0 inherit pub_methods_structformatter_3_01std_1_1tm_00_01Char_01_4"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>format</b> (const std::tm &amp;tm, FormatContext &amp;ctx) const -&gt; decltype(ctx.out())</td></tr>
 <tr class="separator:a0222d68c5e1ca97550eecb6cf60abed0 inherit pub_methods_structformatter_3_01std_1_1tm_00_01Char_01_4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a74cf6a3e93faecdab0c9bb311658177e"><td class="memItemLeft" align="right" valign="top">static constexpr Char&#160;</td><td class="memItemRight" valign="bottom"><b>default_specs</b> []</td></tr>
+<tr class="separator:a74cf6a3e93faecdab0c9bb311658177e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_attribs_structformatter_3_01std_1_1tm_00_01Char_01_4"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_structformatter_3_01std_1_1tm_00_01Char_01_4')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="structformatter_3_01std_1_1tm_00_01Char_01_4.html">formatter&lt; std::tm, Char &gt;</a></td></tr>
@@ -129,6 +139,34 @@ Additional Inherited Members</h2></td></tr>
 <a class="el" href="classbasic__string__view.html">basic_string_view</a>&lt; Char &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>specs</b></td></tr>
 <tr class="separator:a57c0d36c7943de87688eeae9c3bd0b28 inherit pub_attribs_structformatter_3_01std_1_1tm_00_01Char_01_4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a74cf6a3e93faecdab0c9bb311658177e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74cf6a3e93faecdab0c9bb311658177e">&#9670;&nbsp;</a></span>default_specs</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Char , typename Duration &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr Char <a class="el" href="structformatter.html">formatter</a>&lt; std::chrono::time_point&lt; std::chrono::system_clock, Duration &gt;, Char &gt;::default_specs</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {<span class="charliteral">&#39;%&#39;</span>, <span class="charliteral">&#39;Y&#39;</span>, <span class="charliteral">&#39;-&#39;</span>, <span class="charliteral">&#39;%&#39;</span>, <span class="charliteral">&#39;m&#39;</span>, <span class="charliteral">&#39;-&#39;</span>,</div>
+<div class="line">                                           <span class="charliteral">&#39;%&#39;</span>, <span class="charliteral">&#39;d&#39;</span>, <span class="charliteral">&#39; &#39;</span>, <span class="charliteral">&#39;%&#39;</span>, <span class="charliteral">&#39;H&#39;</span>, <span class="charliteral">&#39;:&#39;</span>,</div>
+<div class="line">                                           <span class="charliteral">&#39;%&#39;</span>, <span class="charliteral">&#39;M&#39;</span>, <span class="charliteral">&#39;:&#39;</span>, <span class="charliteral">&#39;%&#39;</span>, <span class="charliteral">&#39;S&#39;</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>/home/runner/work/allwpilib/allwpilib/wpiutil/src/main/native/fmtlib/include/fmt/<a class="el" href="chrono_8h_source.html">chrono.h</a></li>
 </ul>
@@ -138,7 +176,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structformatter_3_01std_1_1chrono_1_1time__point_3_01std_1_1chrono_1_1system__clock_00_01Duration_01_4_00_01Char_01_4.html">formatter&lt; std::chrono::time_point&lt; std::chrono::system_clock, Duration &gt;, Char &gt;</a></li>
-    <li class="footer">Generated on Sun Jun 20 2021 04:12:08 for WPILibC++ by
+    <li class="footer">Generated on Fri Jun 25 2021 21:23:30 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

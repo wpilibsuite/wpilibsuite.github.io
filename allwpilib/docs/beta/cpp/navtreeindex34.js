@@ -1,5 +1,7 @@
 var NAVTREEINDEX34 =
 {
+"group__hal__analogaccumulator.html#gab81e29001988d21132fc721327705b6c":[3,0,1,4],
+"group__hal__analogaccumulator.html#gad029abe7187603b18cfde046be0a7443":[3,0,1,3],
 "group__hal__analogaccumulator.html#gae4ca24c50905b8258a5838357c5aadc7":[3,0,1,7],
 "group__hal__analogaccumulator.html#gaf81d827fb12cada06a52ce6978455354":[3,0,1,5],
 "group__hal__analoggyro.html":[3,0,21],
@@ -247,7 +249,5 @@ var NAVTREEINDEX34 =
 "group__hal__i2c.html#gad4d63e38400272b82a60062289f5db6a":[3,0,0,4],
 "group__hal__i2c.html#gaf2ff125465e59df8a1e139e82426e8eb":[3,0,0,3],
 "group__hal__interrupts.html":[3,0,12],
-"group__hal__interrupts.html#ga35f98945b469afacbfcec081b98a1a1a":[3,0,12,2],
-"group__hal__interrupts.html#ga42d553aed65587375963d441cb48d6e0":[3,0,12,5],
-"group__hal__interrupts.html#ga67f157be25831233951cb239c837d098":[3,0,12,4]
+"group__hal__interrupts.html#ga35f98945b469afacbfcec081b98a1a1a":[3,0,12,2]
 };

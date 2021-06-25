@@ -194,7 +194,6 @@ var hierarchy =
     [ "char_t_impl< S, typename >", "structchar__t__impl.html", null ],
     [ "char_t_impl< S, enable_if_t< is_string< S >::value > >", "structchar__t__impl_3_01S_00_01enable__if__t_3_01is__string_3_01S_01_4_1_1value_01_4_01_4.html", null ],
     [ "frc::ChassisSpeeds", "structfrc_1_1ChassisSpeeds.html", null ],
-    [ "chrono_format_checker", "structchrono__format__checker.html", null ],
     [ "chrono_formatter< FormatContext, OutputIt, Rep, Period >", "structchrono__formatter.html", null ],
     [ "wpi::circular_buffer< T >", "classwpi_1_1circular__buffer.html", null ],
     [ "wpi::circular_buffer< double >", "classwpi_1_1circular__buffer.html", null ],
@@ -555,7 +554,6 @@ var hierarchy =
     [ "format_string_checker< Char, ErrorHandler, Args >", "classformat__string__checker.html", null ],
     [ "format_to_n_result< OutputIt >", "structformat__to__n__result.html", null ],
     [ "formatter< T, Char, Enable >", "structformatter.html", null ],
-    [ "formatter< arg_join< It, Sentinel, Char >, Char >", "structformatter_3_01arg__join_3_01It_00_01Sentinel_00_01Char_01_4_00_01Char_01_4.html", null ],
     [ "formatter< basic_string_view< Char >, Char >", "structformatter.html", [
       [ "detail::fallback_formatter< T, Char, enable_if_t< is_streamable< T, Char >::value > >", "structdetail_1_1fallback__formatter_3_01T_00_01Char_00_01enable__if__t_3_01is__streamable_3_01T_70fb5240ebb5f83009cdb1627fa42087.html", null ],
       [ "formatter< Char[N], Char >", "structformatter_3_01Char_0fN_0e_00_01Char_01_4.html", null ]
@@ -566,6 +564,7 @@ var hierarchy =
     ] ],
     [ "formatter< detail::bigint >", "structformatter_3_01detail_1_1bigint_01_4.html", null ],
     [ "fmt::formatter< Eigen::Matrix< double, Rows, Cols, Args... > >", "structfmt_1_1formatter_3_01Eigen_1_1Matrix_3_01double_00_01Rows_00_01Cols_00_01Args_8_8_8_01_4_01_4.html", null ],
+    [ "formatter< join_view< It, Sentinel, Char >, Char >", "structformatter_3_01join__view_3_01It_00_01Sentinel_00_01Char_01_4_00_01Char_01_4.html", null ],
     [ "formatter< std::chrono::duration< Rep, Period >, Char >", "structformatter_3_01std_1_1chrono_1_1duration_3_01Rep_00_01Period_01_4_00_01Char_01_4.html", null ],
     [ "formatter< std::error_code, Char >", "structformatter_3_01std_1_1error__code_00_01Char_01_4.html", null ],
     [ "formatter< std::tm, Char >", "structformatter_3_01std_1_1tm_00_01Char_01_4.html", [
@@ -573,15 +572,14 @@ var hierarchy =
     ] ],
     [ "formatter< T, Char, enable_if_t< detail::type_constant< T, Char >::value !=detail::type::custom_type > >", "structformatter_3_01T_00_01Char_00_01enable__if__t_3_01detail_1_1type__constant_3_01T_00_01Char_67602321fdfe0eb9cff36125517f1a34.html", null ],
     [ "formatter< T, Char, enable_if_t< fmt::is_range< T, Char >::value &&(has_formatter< detail::value_type< T >, format_context >::value||detail::has_fallback_formatter< detail::value_type< T >, Char >::value) > >", "structformatter_3_01T_00_01Char_00_01enable__if__t_3_01fmt_1_1is__range_3_01T_00_01Char_01_4_1_10b84b1e37f4e188cd6eeee02f697acfd.html", null ],
-    [ "formatter< tuple_arg_join< Char, T... >, Char >", "structformatter_3_01tuple__arg__join_3_01Char_00_01T_8_8_8_01_4_00_01Char_01_4.html", null ],
+    [ "formatter< tuple_join_view< Char, T... >, Char >", "structformatter_3_01tuple__join__view_3_01Char_00_01T_8_8_8_01_4_00_01Char_01_4.html", null ],
     [ "formatter< TupleT, Char, enable_if_t< fmt::is_tuple_like< TupleT >::value > >", "structformatter_3_01TupleT_00_01Char_00_01enable__if__t_3_01fmt_1_1is__tuple__like_3_01TupleT_01_4_1_1value_01_4_01_4.html", null ],
     [ "fmt::formatter< units::unit_t< Units, T, NonLinearScale > >", "structfmt_1_1formatter_3_01units_1_1unit__t_3_01Units_00_01T_00_01NonLinearScale_01_4_01_4.html", null ],
-    [ "formatting_base< Char >", "structformatting__base.html", [
-      [ "formatting_range< Char, Enable >", "structformatting__range.html", null ],
-      [ "formatting_range< Char >", "structformatting__range.html", null ],
-      [ "formatting_tuple< Char, Enable >", "structformatting__tuple.html", null ],
-      [ "formatting_tuple< Char >", "structformatting__tuple.html", null ]
-    ] ],
+    [ "formatter< weekday >", "structformatter_3_01weekday_01_4.html", null ],
+    [ "formatting_range< Char, Enable >", "structformatting__range.html", null ],
+    [ "formatting_range< Char >", "structformatting__range.html", null ],
+    [ "formatting_tuple< Char, Enable >", "structformatting__tuple.html", null ],
+    [ "formatting_tuple< Char >", "structformatting__tuple.html", null ],
     [ "detail::fp", "classdetail_1_1fp.html", null ],
     [ "hal::fpga_clock", "classhal_1_1fpga__clock.html", null ],
     [ "wpi::detail::from_json_fn", "structwpi_1_1detail_1_1from__json__fn.html", null ],
@@ -720,8 +718,11 @@ var hierarchy =
     [ "wpi::detail::IsPointerLike< T * >", "structwpi_1_1detail_1_1IsPointerLike_3_01T_01_5_01_4.html", null ],
     [ "wpi::detail::iter_impl< BasicJsonType >", "classwpi_1_1detail_1_1iter__impl.html", null ],
     [ "wpi::detail::iteration_proxy< IteratorType >", "classwpi_1_1detail_1_1iteration__proxy.html", null ],
+    [ "wpi::static_circular_buffer< T, N >::iterator", "classwpi_1_1static__circular__buffer_1_1iterator.html", null ],
     [ "iterator", null, [
-      [ "ghc::filesystem::path", "classghc_1_1filesystem_1_1path.html", null ],
+      [ "ghc::filesystem::path", "classghc_1_1filesystem_1_1path.html", null ]
+    ] ],
+    [ "iterator", null, [
       [ "wpi::iterator_facade_base< DerivedT, typename std::iterator_traits< WrappedIteratorT >::iterator_category, typename std::iterator_traits< WrappedIteratorT >::value_type, typename std::iterator_traits< WrappedIteratorT >::difference_type, typename std::conditional< std::is_same< typename std::iterator_traits< WrappedIteratorT >::value_type, typename std::iterator_traits< WrappedIteratorT >::value_type >::value, typename std::iterator_traits< WrappedIteratorT >::pointer, typename std::iterator_traits< WrappedIteratorT >::value_type * >::type, typename std::conditional< std::is_same< typename std::iterator_traits< WrappedIteratorT >::value_type, typename std::iterator_traits< WrappedIteratorT >::value_type >::value, typename std::iterator_traits< WrappedIteratorT >::reference, typename std::iterator_traits< WrappedIteratorT >::value_type & >::type >", "classwpi_1_1iterator__facade__base.html", [
         [ "wpi::iterator_adaptor_base< DerivedT, WrappedIteratorT, IteratorCategoryT, T, DifferenceTypeT, PointerT, ReferenceT >", "classwpi_1_1iterator__adaptor__base.html", null ]
       ] ],
@@ -734,7 +735,6 @@ var hierarchy =
       [ "wpi::iterator_facade_base< DerivedT, IteratorCategoryT, T, DifferenceTypeT, PointerT, ReferenceT >", "classwpi_1_1iterator__facade__base.html", null ]
     ] ],
     [ "wpi::circular_buffer< T >::iterator", "classwpi_1_1circular__buffer_1_1iterator.html", null ],
-    [ "wpi::static_circular_buffer< T, N >::iterator", "classwpi_1_1static__circular__buffer_1_1iterator.html", null ],
     [ "iterator_facade_base< pointee_iterator< WrappedIteratorT, typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type, std::iterator_traits< WrappedIteratorT >::iterator_category, typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type, typename std::iterator_traits< WrappedIteratorT >::difference_type, typename std::conditional< std::is_same< typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type, typename std::iterator_traits< WrappedIteratorT >::value_type >::value, typename std::iterator_traits< WrappedIteratorT >::pointer, typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type * >::type, typename std::conditional< std::is_same< typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type, typename std::iterator_traits< WrappedIteratorT >::value_type >::value, typename std::iterator_traits< WrappedIteratorT >::reference, typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type & >::type >", null, [
       [ "wpi::iterator_adaptor_base< pointee_iterator< WrappedIteratorT, typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type >, WrappedIteratorT, std::iterator_traits< WrappedIteratorT >::iterator_category, typename std::remove_reference< decltype(**std::declval< WrappedIteratorT >())>::type >", "classwpi_1_1iterator__adaptor__base.html", [
         [ "wpi::pointee_iterator< WrappedIteratorT, T >", "structwpi_1_1pointee__iterator.html", null ]
@@ -893,6 +893,10 @@ var hierarchy =
     [ "NT_String", "structNT__String.html", null ],
     [ "NT_Value", "structNT__Value.html", null ],
     [ "detail::null< T >", "structdetail_1_1null.html", null ],
+    [ "null_chrono_spec_handler< Derived >", "structnull__chrono__spec__handler.html", null ],
+    [ "null_chrono_spec_handler< chrono_format_checker >", "structnull__chrono__spec__handler.html", [
+      [ "chrono_format_checker", "structchrono__format__checker.html", null ]
+    ] ],
     [ "wpi::NullDeleter< T >", "structwpi_1_1NullDeleter.html", null ],
     [ "wpi::sig::detail::NullMutex", "structwpi_1_1sig_1_1detail_1_1NullMutex.html", null ],
     [ "wpi::object_creator< C >", "structwpi_1_1object__creator.html", null ],
@@ -1534,15 +1538,14 @@ var hierarchy =
     ] ],
     [ "frc::SplineHelper", "classfrc_1_1SplineHelper.html", null ],
     [ "frc::SplineParameterizer", "classfrc_1_1SplineParameterizer.html", null ],
-    [ "frc::TrapezoidProfile< Distance >::State", "classfrc_1_1TrapezoidProfile_1_1State.html", null ],
     [ "frc::Trajectory::State", "structfrc_1_1Trajectory_1_1State.html", null ],
+    [ "frc::TrapezoidProfile< Distance >::State", "classfrc_1_1TrapezoidProfile_1_1State.html", null ],
     [ "frc::sim::DifferentialDrivetrainSim::State", "classfrc_1_1sim_1_1DifferentialDrivetrainSim_1_1State.html", null ],
     [ "wpi::static_circular_buffer< T, N >", "classwpi_1_1static__circular__buffer.html", null ],
     [ "wpi::detail::static_const< T >", "structwpi_1_1detail_1_1static__const.html", null ],
     [ "std_string_view< T >", "structstd__string__view.html", null ],
     [ "string_value< Char >", "structstring__value.html", null ],
     [ "string_value< char_type >", "structstring__value.html", null ],
-    [ "detail::stringifier", "structdetail_1_1stringifier.html", null ],
     [ "wpi::StringMapConstIterator< ValueTy >", "classwpi_1_1StringMapConstIterator.html", null ],
     [ "wpi::StringMapEntry< ValueTy >", "classwpi_1_1StringMapEntry.html", null ],
     [ "wpi::StringMapEntryBase", "classwpi_1_1StringMapEntryBase.html", null ],
@@ -1572,6 +1575,7 @@ var hierarchy =
     ] ],
     [ "wpi::TCPConnector", "classwpi_1_1TCPConnector.html", null ],
     [ "text_style", "classtext__style.html", null ],
+    [ "thousands_sep_result< Char >", "structthousands__sep__result.html", null ],
     [ "wpi::ThreadSafeRefCountedBase< Derived >", "classwpi_1_1ThreadSafeRefCountedBase.html", null ],
     [ "frc::Timer", "classfrc_1_1Timer.html", null ],
     [ "wpi::detail::to_json_fn", "structwpi_1_1detail_1_1to__json__fn.html", null ],
@@ -1688,8 +1692,8 @@ var hierarchy =
       [ "named_arg< Char, T >", "structnamed__arg.html", null ]
     ] ],
     [ "view", null, [
-      [ "arg_join< It, Sentinel, Char >", "structarg__join.html", null ],
-      [ "tuple_arg_join< Char, T >", "structtuple__arg__join.html", null ]
+      [ "join_view< It, Sentinel, Char >", "structjoin__view.html", null ],
+      [ "tuple_join_view< Char, T >", "structtuple__join__view.html", null ]
     ] ],
     [ "detail::range_to_view< T, enable_if_t<!has_const_begin_end< T >::value &&has_mutable_begin_end< T >::value > >::view_t", "structdetail_1_1range__to__view_3_01T_00_01enable__if__t_3_9has__const__begin__end_3_01T_01_4_1_1cf1f6c31b1fc849c7f6ab73440db946.html", null ],
     [ "detail::range_to_view< T, enable_if_t< has_const_begin_end< T >::value > >::view_t", "structdetail_1_1range__to__view_3_01T_00_01enable__if__t_3_01has__const__begin__end_3_01T_01_4_1_1value_01_4_01_4_1_1view__t.html", null ],
@@ -1700,8 +1704,9 @@ var hierarchy =
     [ "wpi::sig::trait::detail::voider<... >", "structwpi_1_1sig_1_1trait_1_1detail_1_1voider.html", null ],
     [ "frc::Watchdog", "classfrc_1_1Watchdog.html", null ],
     [ "wpi::WebSocketServerHelper", "classwpi_1_1WebSocketServerHelper.html", null ],
-    [ "frc::DifferentialDrive::WheelSpeeds", "structfrc_1_1DifferentialDrive_1_1WheelSpeeds.html", null ],
+    [ "weekday", "classweekday.html", null ],
     [ "frc::KilloughDrive::WheelSpeeds", "structfrc_1_1KilloughDrive_1_1WheelSpeeds.html", null ],
+    [ "frc::DifferentialDrive::WheelSpeeds", "structfrc_1_1DifferentialDrive_1_1WheelSpeeds.html", null ],
     [ "frc::MecanumDrive::WheelSpeeds", "structfrc_1_1MecanumDrive_1_1WheelSpeeds.html", null ],
     [ "frc::WidgetType", "classfrc_1_1WidgetType.html", null ],
     [ "width_checker< ErrorHandler >", "classwidth__checker.html", null ],

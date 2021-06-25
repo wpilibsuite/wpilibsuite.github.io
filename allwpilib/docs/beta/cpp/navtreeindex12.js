@@ -1,9 +1,5 @@
 var NAVTREEINDEX12 =
 {
-"classfrc_1_1MerweScaledSigmaPoints.html#ab725ba8e1238a46ed8a537efd562ce4f":[5,0,5,105,3],
-"classfrc_1_1MerweScaledSigmaPoints.html#ae70b5e9545215f123368f4670b29b253":[5,0,5,105,2],
-"classfrc_1_1MotorController.html":[5,0,5,106],
-"classfrc_1_1MotorControllerGroup.html":[5,0,5,107],
 "classfrc_1_1MotorControllerGroup.html#a0666a9ab6022a9c6c6a7b31c23b5216a":[5,0,5,107,4],
 "classfrc_1_1MotorControllerGroup.html#a1018f6fa8af739eb2527ab5edbdca8b2":[5,0,5,107,10],
 "classfrc_1_1MotorControllerGroup.html#a786f25a7ac1363d4c4b59a41eeef2c2b":[5,0,5,107,0],
@@ -249,5 +245,9 @@ var NAVTREEINDEX12 =
 "classfrc_1_1PWMTalonFX.html":[5,0,5,131],
 "classfrc_1_1PWMTalonFX.html#a3cc943b481c12332668b0221fe84a03a":[5,0,5,131,2],
 "classfrc_1_1PWMTalonFX.html#a5d603daefdd3efee0350225fa05d7192":[5,0,5,131,0],
-"classfrc_1_1PWMTalonFX.html#a63522b8c230e840248e277b425551c81":[5,0,5,131,1]
+"classfrc_1_1PWMTalonFX.html#a63522b8c230e840248e277b425551c81":[5,0,5,131,1],
+"classfrc_1_1PWMTalonSRX.html":[5,0,5,132],
+"classfrc_1_1PWMTalonSRX.html#a505a88898d09d3ac0367a352f1053384":[5,0,5,132,1],
+"classfrc_1_1PWMTalonSRX.html#a6f2439d87d2e630ecaed33d348dad880":[5,0,5,132,2],
+"classfrc_1_1PWMTalonSRX.html#ad5265576b66fd3326868b2b5b4bf6e5e":[5,0,5,132,0]
 };

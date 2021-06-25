@@ -12,5 +12,5 @@ var dir_37137cfaace3bfc79a7a3aee825a2892 =
     [ "ostream.h", "ostream_8h_source.html", null ],
     [ "printf.h", "printf_8h_source.html", null ],
     [ "ranges.h", "ranges_8h_source.html", null ],
-    [ "wchar.h", "wchar_8h_source.html", null ]
+    [ "xchar.h", "xchar_8h_source.html", null ]
 ];
