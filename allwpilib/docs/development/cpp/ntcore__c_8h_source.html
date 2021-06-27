@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-2-7-g53b4891</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2-1-ga371235</span>
    </div>
   </td>
  </tr>
@@ -284,7 +284,7 @@ $(document).ready(function(){initNavTree('ntcore__c_8h_source.html',''); initRes
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160; </div>
 <div class="line"><a name="l00258"></a><span class="lineno"><a class="line" href="structNT__LogMessage.html#a0fcdc62e2927be09f6d25da3946e84a4">  258</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="structNT__LogMessage.html#a0fcdc62e2927be09f6d25da3946e84a4">level</a>;</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160; </div>
-<div class="line"><a name="l00261"></a><span class="lineno"><a class="line" href="structNT__LogMessage.html#a45b1bd2a57012283a32f7e56fbc543b1">  261</a></span>&#160;  <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="structNT__LogMessage.html#a45b1bd2a57012283a32f7e56fbc543b1">filename</a>;</div>
+<div class="line"><a name="l00261"></a><span class="lineno"><a class="line" href="structNT__LogMessage.html#a12e640934b547aa39fc27ff46225151d">  261</a></span>&#160;  <span class="keywordtype">char</span>* <a class="code" href="structNT__LogMessage.html#a12e640934b547aa39fc27ff46225151d">filename</a>;</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160; </div>
 <div class="line"><a name="l00264"></a><span class="lineno"><a class="line" href="structNT__LogMessage.html#af7c8c2ce49f205df7460f415cb7842af">  264</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="structNT__LogMessage.html#af7c8c2ce49f205df7460f415cb7842af">line</a>;</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160; </div>
@@ -687,7 +687,6 @@ $(document).ready(function(){initNavTree('ntcore__c_8h_source.html',''); initRes
 <div class="ttc" id="agroup__ntcore__table__cfunc_html_ga9e66176df0aedf317d5071a267d709fa"><div class="ttname"><a href="group__ntcore__table__cfunc.html#ga9e66176df0aedf317d5071a267d709fa">NT_DeleteEntry</a></div><div class="ttdeci">void NT_DeleteEntry(NT_Entry entry)</div><div class="ttdoc">Delete Entry.</div></div>
 <div class="ttc" id="agroup__ntcore__rpc__cfunc_html_ga25915112fcb5e7adba02b130629e6093"><div class="ttname"><a href="group__ntcore__rpc__cfunc.html#ga25915112fcb5e7adba02b130629e6093">NT_DestroyRpcCallPoller</a></div><div class="ttdeci">void NT_DestroyRpcCallPoller(NT_RpcCallPoller poller)</div><div class="ttdoc">Destroy a RPC call poller.</div></div>
 <div class="ttc" id="agroup__ntcore__table__cfunc_html_gad65815be3b90693fa5515454abab4b99"><div class="ttname"><a href="group__ntcore__table__cfunc.html#gad65815be3b90693fa5515454abab4b99">NT_GetEntryInfo</a></div><div class="ttdeci">struct NT_EntryInfo * NT_GetEntryInfo(NT_Inst inst, const char *prefix, size_t prefix_len, unsigned int types, size_t *count)</div><div class="ttdoc">Get Entry Information.</div></div>
-<div class="ttc" id="astructNT__LogMessage_html_a45b1bd2a57012283a32f7e56fbc543b1"><div class="ttname"><a href="structNT__LogMessage.html#a45b1bd2a57012283a32f7e56fbc543b1">NT_LogMessage::filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdoc">The filename of the source file that generated the message.</div><div class="ttdef"><b>Definition:</b> ntcore_c.h:261</div></div>
 <div class="ttc" id="agroup__ntcore__entrylistener__cfunc_html_ga0f53b9b19acf632b141c25865034ce1d"><div class="ttname"><a href="group__ntcore__entrylistener__cfunc.html#ga0f53b9b19acf632b141c25865034ce1d">NT_PollEntryListener</a></div><div class="ttdeci">struct NT_EntryNotification * NT_PollEntryListener(NT_EntryListenerPoller poller, size_t *len)</div><div class="ttdoc">Get the next entry listener event.</div></div>
 <div class="ttc" id="agroup__ntcore__network__cfunc_html_ga96c81880381677551aa73a1aceb2a781"><div class="ttname"><a href="group__ntcore__network__cfunc.html#ga96c81880381677551aa73a1aceb2a781">NT_Flush</a></div><div class="ttdeci">void NT_Flush(NT_Inst inst)</div><div class="ttdoc">Flush Entries.</div></div>
 <div class="ttc" id="astructNT__EntryInfo_html_ab7e7b505dfb034ff66d24598763b8812"><div class="ttname"><a href="structNT__EntryInfo.html#ab7e7b505dfb034ff66d24598763b8812">NT_EntryInfo::flags</a></div><div class="ttdeci">unsigned int flags</div><div class="ttdoc">Entry flags.</div><div class="ttdef"><b>Definition:</b> ntcore_c.h:155</div></div>
@@ -791,6 +790,7 @@ $(document).ready(function(){initNavTree('ntcore__c_8h_source.html',''); initRes
 <div class="ttc" id="agroup__ntcore__rpc__cfunc_html_ga13dac0f3caf774a54c727ddb1ad20c9f"><div class="ttname"><a href="group__ntcore__rpc__cfunc.html#ga13dac0f3caf774a54c727ddb1ad20c9f">NT_CancelRpcResult</a></div><div class="ttdeci">void NT_CancelRpcResult(NT_Entry entry, NT_RpcCall call)</div><div class="ttdoc">Ignore the result of a RPC call.</div></div>
 <div class="ttc" id="agroup__ntcore__valuesetters__cfunc_html_ga6b4b5303883bf3d784fc7aa8922ab8ad"><div class="ttname"><a href="group__ntcore__valuesetters__cfunc.html#ga6b4b5303883bf3d784fc7aa8922ab8ad">NT_SetEntryBooleanArray</a></div><div class="ttdeci">NT_Bool NT_SetEntryBooleanArray(NT_Entry entry, uint64_t time, const int *arr, size_t size, NT_Bool force)</div><div class="ttdoc">Set Entry Boolean Array Sets an entry boolean array.</div></div>
 <div class="ttc" id="agroup__ntcore__network__cfunc_html_ga8fb5ea9a9ffed003672aed2b27ede459"><div class="ttname"><a href="group__ntcore__network__cfunc.html#ga8fb5ea9a9ffed003672aed2b27ede459">NT_SetServerTeam</a></div><div class="ttdeci">void NT_SetServerTeam(NT_Inst inst, unsigned int team, unsigned int port)</div><div class="ttdoc">Sets server addresses and port for client (without restarting client).</div></div>
+<div class="ttc" id="astructNT__LogMessage_html_a12e640934b547aa39fc27ff46225151d"><div class="ttname"><a href="structNT__LogMessage.html#a12e640934b547aa39fc27ff46225151d">NT_LogMessage::filename</a></div><div class="ttdeci">char * filename</div><div class="ttdoc">The filename of the source file that generated the message.</div><div class="ttdef"><b>Definition:</b> ntcore_c.h:261</div></div>
 <div class="ttc" id="agroup__ntcore__utility__cfunc_html_ga61fc33bc14ee480cfcd318f04aebfac6"><div class="ttname"><a href="group__ntcore__utility__cfunc.html#ga61fc33bc14ee480cfcd318f04aebfac6">NT_DisposeRpcAnswer</a></div><div class="ttdeci">void NT_DisposeRpcAnswer(struct NT_RpcAnswer *answer)</div><div class="ttdoc">Disposes a Rpc Answer structure.</div></div>
 <div class="ttc" id="agroup__ntcore__rpc__cfunc_html_ga83136a784573ddf15f5966e44ed841b2"><div class="ttname"><a href="group__ntcore__rpc__cfunc.html#ga83136a784573ddf15f5966e44ed841b2">NT_PackRpcDefinition</a></div><div class="ttdeci">char * NT_PackRpcDefinition(const struct NT_RpcDefinition *def, size_t *packed_len)</div><div class="ttdoc">Pack a RPC version 1 definition.</div></div>
 <div class="ttc" id="agroup__ntcore__utility__cfunc_html_ga450a48403c69d964e8e2ab1152b02925"><div class="ttname"><a href="group__ntcore__utility__cfunc.html#ga450a48403c69d964e8e2ab1152b02925">NT_DisposeRpcDefinition</a></div><div class="ttdeci">void NT_DisposeRpcDefinition(struct NT_RpcDefinition *def)</div><div class="ttdoc">Disposes a Rpc Definition structure.</div></div>
@@ -868,7 +868,7 @@ $(document).ready(function(){initNavTree('ntcore__c_8h_source.html',''); initRes
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>ntcore_c.h</b></li>
-    <li class="footer">Generated on Thu Jun 24 2021 05:00:20 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 27 2021 05:49:37 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

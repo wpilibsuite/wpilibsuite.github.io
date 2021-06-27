@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-2-7-g53b4891</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2-1-ga371235</span>
    </div>
   </td>
  </tr>
@@ -276,11 +276,11 @@ $(document).ready(function(){initNavTree('ntcore__cpp_8h_source.html',''); initR
 <div class="line"><a name="l00243"></a><span class="lineno"><a class="line" href="classnt_1_1LogMessage.html">  243</a></span>&#160;<span class="keyword">class </span><a class="code" href="classnt_1_1LogMessage.html">LogMessage</a> {</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160; <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;  <a class="code" href="classnt_1_1LogMessage.html">LogMessage</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  <a class="code" href="classnt_1_1LogMessage.html">LogMessage</a>(NT_Logger logger_, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> level_, <span class="keyword">const</span> <span class="keywordtype">char</span>* filename_,</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  <a class="code" href="classnt_1_1LogMessage.html">LogMessage</a>(NT_Logger logger_, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> level_, std::string_view filename_,</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;             <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> line_, std::string_view message_)</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;      : <a class="code" href="classnt_1_1LogMessage.html#ac4884dfa6ea7878728496ff7bbd4a121">logger</a>(logger_),</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        <a class="code" href="classnt_1_1LogMessage.html#a8ab3099aaa618a873dbbd1e7bb6b7be2">level</a>(level_),</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        <a class="code" href="classnt_1_1LogMessage.html#aa04b8267dc0f36b64017b809a07f4da1">filename</a>(filename_),</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        <a class="code" href="classnt_1_1LogMessage.html#afef337ab85256e7e83e6cc17c325c3c2">filename</a>(filename_),</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        <a class="code" href="classnt_1_1LogMessage.html#a2c13ded725b69ba9de32078807712685">line</a>(line_),</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        <a class="code" href="classnt_1_1LogMessage.html#ac96f427a1107c0f4076f549c06ebb40b">message</a>(message_) {}</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160; </div>
@@ -288,7 +288,7 @@ $(document).ready(function(){initNavTree('ntcore__cpp_8h_source.html',''); initR
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160; </div>
 <div class="line"><a name="l00258"></a><span class="lineno"><a class="line" href="classnt_1_1LogMessage.html#a8ab3099aaa618a873dbbd1e7bb6b7be2">  258</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classnt_1_1LogMessage.html#a8ab3099aaa618a873dbbd1e7bb6b7be2">level</a>{0};</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160; </div>
-<div class="line"><a name="l00261"></a><span class="lineno"><a class="line" href="classnt_1_1LogMessage.html#aa04b8267dc0f36b64017b809a07f4da1">  261</a></span>&#160;  <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="classnt_1_1LogMessage.html#aa04b8267dc0f36b64017b809a07f4da1">filename</a>{<span class="stringliteral">&quot;&quot;</span>};</div>
+<div class="line"><a name="l00261"></a><span class="lineno"><a class="line" href="classnt_1_1LogMessage.html#afef337ab85256e7e83e6cc17c325c3c2">  261</a></span>&#160;  std::string <a class="code" href="classnt_1_1LogMessage.html#afef337ab85256e7e83e6cc17c325c3c2">filename</a>;</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160; </div>
 <div class="line"><a name="l00264"></a><span class="lineno"><a class="line" href="classnt_1_1LogMessage.html#a2c13ded725b69ba9de32078807712685">  264</a></span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="classnt_1_1LogMessage.html#a2c13ded725b69ba9de32078807712685">line</a>{0};</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160; </div>
@@ -298,7 +298,7 @@ $(document).ready(function(){initNavTree('ntcore__cpp_8h_source.html',''); initR
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="keyword">using</span> std::swap;</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    swap(first.logger, second.<a class="code" href="classnt_1_1LogMessage.html#ac4884dfa6ea7878728496ff7bbd4a121">logger</a>);</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    swap(first.level, second.<a class="code" href="classnt_1_1LogMessage.html#a8ab3099aaa618a873dbbd1e7bb6b7be2">level</a>);</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    swap(first.filename, second.<a class="code" href="classnt_1_1LogMessage.html#aa04b8267dc0f36b64017b809a07f4da1">filename</a>);</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    swap(first.filename, second.<a class="code" href="classnt_1_1LogMessage.html#afef337ab85256e7e83e6cc17c325c3c2">filename</a>);</div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    swap(first.line, second.<a class="code" href="classnt_1_1LogMessage.html#a2c13ded725b69ba9de32078807712685">line</a>);</div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    swap(first.message, second.<a class="code" href="classnt_1_1LogMessage.html#ac96f427a1107c0f4076f549c06ebb40b">message</a>);</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;  }</div>
@@ -573,6 +573,7 @@ $(document).ready(function(){initNavTree('ntcore__cpp_8h_source.html',''); initR
 <div class="ttc" id="agroup__ntcore__network__func_html_gaa38fc766351355cea1971b238827998f"><div class="ttname"><a href="group__ntcore__network__func.html#gaa38fc766351355cea1971b238827998f">nt::SetUpdateRate</a></div><div class="ttdeci">void SetUpdateRate(NT_Inst inst, double interval)</div><div class="ttdoc">Set the periodic update rate.</div></div>
 <div class="ttc" id="astructnt_1_1EntryInfo_html_ab48ca918a22d2c3e839f1913f8ce9cdf"><div class="ttname"><a href="structnt_1_1EntryInfo.html#ab48ca918a22d2c3e839f1913f8ce9cdf">nt::EntryInfo::flags</a></div><div class="ttdeci">unsigned int flags</div><div class="ttdoc">Entry flags.</div><div class="ttdef"><b>Definition:</b> ntcore_cpp.h:46</div></div>
 <div class="ttc" id="agroup__ntcore__entrylistener__func_html_gab81f6bd8aba5c2516edbecb434f10d1d"><div class="ttname"><a href="group__ntcore__entrylistener__func.html#gab81f6bd8aba5c2516edbecb434f10d1d">nt::WaitForEntryListenerQueue</a></div><div class="ttdeci">bool WaitForEntryListenerQueue(NT_Inst inst, double timeout)</div><div class="ttdoc">Wait for the entry listener queue to be empty.</div></div>
+<div class="ttc" id="aclassnt_1_1LogMessage_html_afef337ab85256e7e83e6cc17c325c3c2"><div class="ttname"><a href="classnt_1_1LogMessage.html#afef337ab85256e7e83e6cc17c325c3c2">nt::LogMessage::filename</a></div><div class="ttdeci">std::string filename</div><div class="ttdoc">The filename of the source file that generated the message.</div><div class="ttdef"><b>Definition:</b> ntcore_cpp.h:261</div></div>
 <div class="ttc" id="agroup__ntcore__instance__func_html_ga0ea94aca9e31be49b1d47671af7f56fc"><div class="ttname"><a href="group__ntcore__instance__func.html#ga0ea94aca9e31be49b1d47671af7f56fc">nt::GetInstanceFromHandle</a></div><div class="ttdeci">NT_Inst GetInstanceFromHandle(NT_Handle handle)</div><div class="ttdoc">Get instance handle from another handle.</div></div>
 <div class="ttc" id="agroup__ntcore__network__func_html_ga26f9dae0d32d2ed028e917e8cc318f46"><div class="ttname"><a href="group__ntcore__network__func.html#ga26f9dae0d32d2ed028e917e8cc318f46">nt::SetNetworkIdentity</a></div><div class="ttdeci">void SetNetworkIdentity(NT_Inst inst, std::string_view name)</div><div class="ttdoc">Set the network identity of this node.</div></div>
 <div class="ttc" id="aclassnt_1_1EntryNotification_html_a9e0c9af5ad0f935ea8a9a9e81ead1d57"><div class="ttname"><a href="classnt_1_1EntryNotification.html#a9e0c9af5ad0f935ea8a9a9e81ead1d57">nt::EntryNotification::flags</a></div><div class="ttdeci">unsigned int flags</div><div class="ttdoc">Update flags.</div><div class="ttdef"><b>Definition:</b> ntcore_cpp.h:204</div></div>
@@ -615,7 +616,6 @@ $(document).ready(function(){initNavTree('ntcore__cpp_8h_source.html',''); initR
 <div class="ttc" id="agroup__ntcore__network__func_html_gabeb06b9740c43e70829775328079aa49"><div class="ttname"><a href="group__ntcore__network__func.html#gabeb06b9740c43e70829775328079aa49">nt::StartDSClient</a></div><div class="ttdeci">void StartDSClient(NT_Inst inst, unsigned int port)</div><div class="ttdoc">Starts requesting server address from Driver Station.</div></div>
 <div class="ttc" id="agroup__ntcore__rpc__func_html_ga9c55a1b444299139d377bb382719fcb2"><div class="ttname"><a href="group__ntcore__rpc__func.html#ga9c55a1b444299139d377bb382719fcb2">nt::CallRpc</a></div><div class="ttdeci">NT_RpcCall CallRpc(NT_Entry entry, std::string_view params)</div><div class="ttdoc">Call a RPC function.</div></div>
 <div class="ttc" id="aclassnt_1_1ConnectionNotification_html"><div class="ttname"><a href="classnt_1_1ConnectionNotification.html">nt::ConnectionNotification</a></div><div class="ttdoc">NetworkTables Connection Notification.</div><div class="ttdef"><b>Definition:</b> ntcore_cpp.h:217</div></div>
-<div class="ttc" id="aclassnt_1_1LogMessage_html_aa04b8267dc0f36b64017b809a07f4da1"><div class="ttname"><a href="classnt_1_1LogMessage.html#aa04b8267dc0f36b64017b809a07f4da1">nt::LogMessage::filename</a></div><div class="ttdeci">const char * filename</div><div class="ttdoc">The filename of the source file that generated the message.</div><div class="ttdef"><b>Definition:</b> ntcore_cpp.h:261</div></div>
 <div class="ttc" id="aclasswpi_1_1span_html"><div class="ttname"><a href="classwpi_1_1span.html">wpi::span</a></div><div class="ttdef"><b>Definition:</b> span.h:29</div></div>
 <div class="ttc" id="aclassnt_1_1RpcAnswer_html_a99a1533f73a240d94d079e389aa0e480"><div class="ttname"><a href="classnt_1_1RpcAnswer.html#a99a1533f73a240d94d079e389aa0e480">nt::RpcAnswer::entry</a></div><div class="ttdeci">NT_Entry entry</div><div class="ttdoc">Entry handle.</div><div class="ttdef"><b>Definition:</b> ntcore_cpp.h:138</div></div>
 <div class="ttc" id="agroup__ntcore__connectionlistener__func_html_gaa88729f7f2563d47a4371de5e5c8badc"><div class="ttname"><a href="group__ntcore__connectionlistener__func.html#gaa88729f7f2563d47a4371de5e5c8badc">nt::ConnectionListenerCallback</a></div><div class="ttdeci">std::function&lt; void(NT_ConnectionListener, bool, const ConnectionInfo &amp;)&gt; ConnectionListenerCallback</div><div class="ttdoc">Connection listener callback function.</div><div class="ttdef"><b>Definition:</b> ntcore_cpp.h:669</div></div>
@@ -667,7 +667,7 @@ $(document).ready(function(){initNavTree('ntcore__cpp_8h_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>ntcore_cpp.h</b></li>
-    <li class="footer">Generated on Thu Jun 24 2021 05:00:20 for WPILibC++ by
+    <li class="footer">Generated on Sun Jun 27 2021 05:49:37 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

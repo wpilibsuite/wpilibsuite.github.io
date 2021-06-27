@@ -80,7 +80,7 @@ var group__ntcore__c__api =
       [ "listener", "structNT__ConnectionNotification.html#a94cc2f3b8a74683859f14f9d5a9c1ea1", null ]
     ] ],
     [ "NT_LogMessage", "structNT__LogMessage.html", [
-      [ "filename", "structNT__LogMessage.html#a45b1bd2a57012283a32f7e56fbc543b1", null ],
+      [ "filename", "structNT__LogMessage.html#a12e640934b547aa39fc27ff46225151d", null ],
       [ "level", "structNT__LogMessage.html#a0fcdc62e2927be09f6d25da3946e84a4", null ],
       [ "line", "structNT__LogMessage.html#af7c8c2ce49f205df7460f415cb7842af", null ],
       [ "logger", "structNT__LogMessage.html#aa8431f76d15e80d1fac24dc791aac454", null ],
