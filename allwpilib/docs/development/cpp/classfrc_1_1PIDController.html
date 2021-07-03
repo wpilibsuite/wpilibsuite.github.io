@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-2-2-gd29acc9</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2-3-g39373c6</span>
    </div>
   </td>
  </tr>
@@ -239,9 +239,16 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memitem:a92d645590cf1ce8a4e91c738d70bbaac inherit pub_methods_classfrc_1_1PIDBase"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1PIDBase.html#a92d645590cf1ce8a4e91c738d70bbaac">OnTarget</a> () const</td></tr>
 <tr class="memdesc:a92d645590cf1ce8a4e91c738d70bbaac inherit pub_methods_classfrc_1_1PIDBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the error is within the percentage of the total input range, determined by SetTolerance.  <a href="classfrc_1_1PIDBase.html#a92d645590cf1ce8a4e91c738d70bbaac">More...</a><br /></td></tr>
 <tr class="separator:a92d645590cf1ce8a4e91c738d70bbaac inherit pub_methods_classfrc_1_1PIDBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8efc7a08da5b5c4bbc0ac19ae70f9820 inherit pub_methods_classfrc_1_1PIDBase"><td class="memItemLeft" align="right" valign="top"><a id="a8efc7a08da5b5c4bbc0ac19ae70f9820"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1PIDBase.html#a8efc7a08da5b5c4bbc0ac19ae70f9820">Reset</a> () override</td></tr>
+<tr class="memdesc:a8efc7a08da5b5c4bbc0ac19ae70f9820 inherit pub_methods_classfrc_1_1PIDBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the previous error, the integral term, and disable the controller. <br /></td></tr>
+<tr class="separator:a8efc7a08da5b5c4bbc0ac19ae70f9820 inherit pub_methods_classfrc_1_1PIDBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7dbcc1384cf1f1c723f89e86d6e4e6e inherit pub_methods_classfrc_1_1PIDBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1PIDBase.html#ab7dbcc1384cf1f1c723f89e86d6e4e6e">PIDWrite</a> (double output) override</td></tr>
 <tr class="memdesc:ab7dbcc1384cf1f1c723f89e86d6e4e6e inherit pub_methods_classfrc_1_1PIDBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Passes the output directly to <a class="el" href="classfrc_1_1PIDBase.html#a7aa61f9f4a17c0185d04294123b104b8" title="Set the setpoint for the PIDBase.">SetSetpoint()</a>.  <a href="classfrc_1_1PIDBase.html#ab7dbcc1384cf1f1c723f89e86d6e4e6e">More...</a><br /></td></tr>
 <tr class="separator:ab7dbcc1384cf1f1c723f89e86d6e4e6e inherit pub_methods_classfrc_1_1PIDBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6161c9cf7426ae84775a74b80f4545c inherit pub_methods_classfrc_1_1PIDBase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1PIDBase.html#ae6161c9cf7426ae84775a74b80f4545c">InitSendable</a> (<a class="el" href="classwpi_1_1SendableBuilder.html">wpi::SendableBuilder</a> &amp;builder) override</td></tr>
+<tr class="memdesc:ae6161c9cf7426ae84775a74b80f4545c inherit pub_methods_classfrc_1_1PIDBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes this Sendable object.  <a href="classfrc_1_1PIDBase.html#ae6161c9cf7426ae84775a74b80f4545c">More...</a><br /></td></tr>
+<tr class="separator:ae6161c9cf7426ae84775a74b80f4545c inherit pub_methods_classfrc_1_1PIDBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classfrc_1_1PIDInterface"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classfrc_1_1PIDInterface')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classfrc_1_1PIDInterface.html">frc::PIDInterface</a></td></tr>
 <tr class="memitem:a5b312741bc600cc08d34bbc21b34d5d2 inherit pub_methods_classfrc_1_1PIDInterface"><td class="memItemLeft" align="right" valign="top"><a id="a5b312741bc600cc08d34bbc21b34d5d2"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>PIDInterface</b> (<a class="el" href="classfrc_1_1PIDInterface.html">PIDInterface</a> &amp;&amp;)=default</td></tr>
@@ -334,7 +341,7 @@ wpi::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>m_pidWriteMutex
 <div class="textblock"><p>Class implements a PID Control Loop. </p>
 <p>Creates a separate thread which reads the given <a class="el" href="classfrc_1_1PIDSource.html" title="PIDSource interface is a generic sensor source for the PID class.">PIDSource</a> and takes care of the integral calculations, as well as writing the given <a class="el" href="classfrc_1_1PIDOutput.html" title="PIDOutput interface is a generic output for the PID class.">PIDOutput</a>.</p>
 <p>This feedback controller runs in discrete time, so time deltas are not used in the integral and derivative calculations. Therefore, the sample rate affects the controller's behavior for a given set of PID constants.</p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000026">Deprecated:</a></b></dt><dd>Use <a class="el" href="classfrc2_1_1PIDController.html" title="Implements a PID control loop.">frc2::PIDController</a> class instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000025">Deprecated:</a></b></dt><dd>Use <a class="el" href="classfrc2_1_1PIDController.html" title="Implements a PID control loop.">frc2::PIDController</a> class instead. </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4b03f27d0feaa310560e4311e09eaccc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4b03f27d0feaa310560e4311e09eaccc">&#9670;&nbsp;</a></span>PIDController() <span class="overload">[1/4]</span></h2>
@@ -641,7 +648,7 @@ wpi::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>m_pidWriteMutex
   </dd>
 </dl>
 
-<p>Reimplemented from <a class="el" href="classfrc_1_1PIDBase.html#ae6161c9cf7426ae84775a74b80f4545c">frc::PIDBase</a>.</p>
+<p>Implements <a class="el" href="classwpi_1_1Sendable.html#a02dfae73ea50b297f05151eafdc2efe6">wpi::Sendable</a>.</p>
 
 </div>
 </div>
@@ -654,7 +661,7 @@ wpi::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>m_pidWriteMutex
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1PIDController.html">PIDController</a></li>
-    <li class="footer">Generated on Sun Jun 27 2021 05:51:13 for WPILibC++ by
+    <li class="footer">Generated on Sat Jul 3 2021 02:08:27 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

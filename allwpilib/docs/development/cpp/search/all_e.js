@@ -13,7 +13,7 @@ var searchData=
   ['networkacceptor_2237',['NetworkAcceptor',['../classwpi_1_1NetworkAcceptor.html',1,'wpi']]],
   ['networkbutton_2238',['NetworkButton',['../classfrc2_1_1NetworkButton.html',1,'frc2::NetworkButton'],['../classfrc_1_1NetworkButton.html',1,'frc::NetworkButton'],['../classfrc2_1_1NetworkButton.html#a5c3c855024d386dd1f81acfe069af0d2',1,'frc2::NetworkButton::NetworkButton(nt::NetworkTableEntry entry)'],['../classfrc2_1_1NetworkButton.html#af9ceeb4113235520d75232c86b2bccd5',1,'frc2::NetworkButton::NetworkButton(std::shared_ptr&lt; nt::NetworkTable &gt; table, std::string_view field)'],['../classfrc2_1_1NetworkButton.html#a86402fa51b2995c7d1351f55c0a49ae7',1,'frc2::NetworkButton::NetworkButton(std::string_view table, std::string_view field)']]],
   ['networkmode_2239',['NetworkMode',['../classnt_1_1NetworkTableInstance.html#a13cc5d54545b54712b5470065f953c52',1,'nt::NetworkTableInstance']]],
-  ['networkstream_2240',['NetworkStream',['../classwpi_1_1NetworkStream.html',1,'wpi::NetworkStream'],['../classwpi_1_1uv_1_1NetworkStream.html',1,'wpi::uv::NetworkStream']]],
+  ['networkstream_2240',['NetworkStream',['../classwpi_1_1uv_1_1NetworkStream.html',1,'wpi::uv::NetworkStream'],['../classwpi_1_1NetworkStream.html',1,'wpi::NetworkStream']]],
   ['networkstreamimpl_2241',['NetworkStreamImpl',['../classwpi_1_1uv_1_1NetworkStreamImpl.html',1,'wpi::uv']]],
   ['networkstreamimpl_3c_20pipe_2c_20uv_5fpipe_5ft_20_3e_2242',['NetworkStreamImpl&lt; Pipe, uv_pipe_t &gt;',['../classwpi_1_1uv_1_1NetworkStreamImpl.html',1,'wpi::uv']]],
   ['networkstreamimpl_3c_20tcp_2c_20uv_5ftcp_5ft_20_3e_2243',['NetworkStreamImpl&lt; Tcp, uv_tcp_t &gt;',['../classwpi_1_1uv_1_1NetworkStreamImpl.html',1,'wpi::uv']]],

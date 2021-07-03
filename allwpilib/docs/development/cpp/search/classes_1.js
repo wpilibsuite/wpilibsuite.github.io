@@ -33,7 +33,7 @@ var searchData=
   ['bigint_3948',['bigint',['../classdetail_1_1bigint.html',1,'detail']]],
   ['bits_3949',['bits',['../structdetail_1_1bits.html',1,'detail']]],
   ['boundaries_3950',['boundaries',['../structdetail_1_1boundaries.html',1,'detail']]],
-  ['buffer_3951',['buffer',['../classbuffer.html',1,'buffer&lt; T &gt;'],['../classwpi_1_1uv_1_1Buffer.html',1,'wpi::uv::Buffer']]],
+  ['buffer_3951',['Buffer',['../classwpi_1_1uv_1_1Buffer.html',1,'wpi::uv::Buffer'],['../classbuffer.html',1,'buffer&lt; T &gt;']]],
   ['buffer_3c_20char_20_3e_3952',['buffer&lt; char &gt;',['../classbuffer.html',1,'buffer&lt; char &gt;'],['../classbuffer.html',1,'buffer&lt; Char &gt;']]],
   ['buffer_3c_20container_3a_3avalue_5ftype_20_3e_3953',['buffer&lt; Container::value_type &gt;',['../classbuffer.html',1,'']]],
   ['buffer_5fostream_3954',['buffer_ostream',['../classwpi_1_1buffer__ostream.html',1,'wpi']]],

@@ -7,7 +7,7 @@ var searchData=
   ['named_5farg_5fvalue_3c_20char_5ftype_20_3e_4488',['named_arg_value&lt; char_type &gt;',['../structnamed__arg__value.html',1,'']]],
   ['networkacceptor_4489',['NetworkAcceptor',['../classwpi_1_1NetworkAcceptor.html',1,'wpi']]],
   ['networkbutton_4490',['NetworkButton',['../classfrc2_1_1NetworkButton.html',1,'frc2::NetworkButton'],['../classfrc_1_1NetworkButton.html',1,'frc::NetworkButton']]],
-  ['networkstream_4491',['NetworkStream',['../classwpi_1_1NetworkStream.html',1,'wpi::NetworkStream'],['../classwpi_1_1uv_1_1NetworkStream.html',1,'wpi::uv::NetworkStream']]],
+  ['networkstream_4491',['NetworkStream',['../classwpi_1_1uv_1_1NetworkStream.html',1,'wpi::uv::NetworkStream'],['../classwpi_1_1NetworkStream.html',1,'wpi::NetworkStream']]],
   ['networkstreamimpl_4492',['NetworkStreamImpl',['../classwpi_1_1uv_1_1NetworkStreamImpl.html',1,'wpi::uv']]],
   ['networkstreamimpl_3c_20pipe_2c_20uv_5fpipe_5ft_20_3e_4493',['NetworkStreamImpl&lt; Pipe, uv_pipe_t &gt;',['../classwpi_1_1uv_1_1NetworkStreamImpl.html',1,'wpi::uv']]],
   ['networkstreamimpl_3c_20tcp_2c_20uv_5ftcp_5ft_20_3e_4494',['NetworkStreamImpl&lt; Tcp, uv_tcp_t &gt;',['../classwpi_1_1uv_1_1NetworkStreamImpl.html',1,'wpi::uv']]],
