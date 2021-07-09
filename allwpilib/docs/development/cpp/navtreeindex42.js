@@ -1,5 +1,8 @@
 var NAVTREEINDEX42 =
 {
+"structwpi_1_1detail_1_1is__compatible__integer__type.html#ae403ccd4846850c899bc734aba703a84":[5,0,11,0,29,0],
+"structwpi_1_1detail_1_1is__compatible__integer__type__impl.html":[5,0,11,0,30],
+"structwpi_1_1detail_1_1is__compatible__integer__type__impl_3_01true_00_01RealIntegerType_00_01CompatibleNumberIntegerType_01_4.html":[5,0,11,0,31],
 "structwpi_1_1detail_1_1is__compatible__integer__type__impl_3_01true_00_01RealIntegerType_00_01CompatibleNumberIntegerType_01_4.html#a5a66d173796f602eba4acb4fb22e6305":[5,0,11,0,31,1],
 "structwpi_1_1detail_1_1is__compatible__integer__type__impl_3_01true_00_01RealIntegerType_00_01CompatibleNumberIntegerType_01_4.html#a6c8e0955c6fbaf9ed2e9a2731c12aa3f":[5,0,11,0,31,2],
 "structwpi_1_1detail_1_1is__compatible__integer__type__impl_3_01true_00_01RealIntegerType_00_01CompatibleNumberIntegerType_01_4.html#af717aa5d563d191d3faebb3308b9002e":[5,0,11,0,31,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX42 =
 "wpilibNewCommands_2src_2main_2native_2include_2frc2_2command_2button_2Trigger_8h_source.html":[6,0,7,0,0,4],
 "wpilibOldCommands_2src_2main_2native_2include_2frc_2PIDController_8h_source.html":[6,0,5,3],
 "wpilibOldCommands_2src_2main_2native_2include_2frc_2buttons_2Button_8h_source.html":[6,0,5,0,0],
-"wpilibOldCommands_2src_2main_2native_2include_2frc_2buttons_2JoystickButton_8h_source.html":[6,0,5,0,5],
-"wpilibOldCommands_2src_2main_2native_2include_2frc_2buttons_2NetworkButton_8h_source.html":[6,0,5,0,6],
-"wpilibOldCommands_2src_2main_2native_2include_2frc_2buttons_2POVButton_8h_source.html":[6,0,5,0,7],
-"wpilibOldCommands_2src_2main_2native_2include_2frc_2buttons_2Trigger_8h_source.html":[6,0,5,0,11]
+"wpilibOldCommands_2src_2main_2native_2include_2frc_2buttons_2JoystickButton_8h_source.html":[6,0,5,0,5]
 };

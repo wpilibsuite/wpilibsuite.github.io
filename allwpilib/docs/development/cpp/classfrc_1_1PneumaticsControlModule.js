@@ -3,7 +3,7 @@ var classfrc_1_1PneumaticsControlModule =
     [ "PneumaticsControlModule", "classfrc_1_1PneumaticsControlModule.html#a5b94c8aa2d38563cc6d69af42cd801fa", null ],
     [ "PneumaticsControlModule", "classfrc_1_1PneumaticsControlModule.html#a9c070f882b279d4984796b225b6362d0", null ],
     [ "~PneumaticsControlModule", "classfrc_1_1PneumaticsControlModule.html#a6e9f821769727b29a2b106b88a3c27a4", null ],
-    [ "PneumaticsControlModule", "classfrc_1_1PneumaticsControlModule.html#aefbf18afa663c3434589086625d2630a", null ],
+    [ "CheckAndReserveSolenoids", "classfrc_1_1PneumaticsControlModule.html#aff106c9fa67f0bb0291339a0711e0997", null ],
     [ "CheckSolenoidChannel", "classfrc_1_1PneumaticsControlModule.html#a67dd12503e9ba9842b37a166cea9d89b", null ],
     [ "ClearAllStickyFaults", "classfrc_1_1PneumaticsControlModule.html#af465e2daf9bf72006f55486117d5ef22", null ],
     [ "FireOneShot", "classfrc_1_1PneumaticsControlModule.html#a14bf3c6437e23765136da7b383d0fd26", null ],
@@ -22,8 +22,9 @@ var classfrc_1_1PneumaticsControlModule =
     [ "GetSolenoids", "classfrc_1_1PneumaticsControlModule.html#ab6b23c1c20d3c1f9bac79e46afe3262a", null ],
     [ "GetSolenoidVoltageFault", "classfrc_1_1PneumaticsControlModule.html#a93f91a6ca2c1657e5b090bed1499dac8", null ],
     [ "GetSolenoidVoltageStickyFault", "classfrc_1_1PneumaticsControlModule.html#ab1663d65c62343a4bbb5ca40b574a935", null ],
-    [ "operator=", "classfrc_1_1PneumaticsControlModule.html#a66eac4d94ade38333672f94c6a58e8eb", null ],
+    [ "InitSendable", "classfrc_1_1PneumaticsControlModule.html#a37664c79ddf0ff0feb5ce7a387263ae9", null ],
     [ "SetClosedLoopControl", "classfrc_1_1PneumaticsControlModule.html#a2dfdc809bde333699a220c284f273813", null ],
     [ "SetOneShotDuration", "classfrc_1_1PneumaticsControlModule.html#adfd89a2e0cfba6527ba39acc1dd87302", null ],
-    [ "SetSolenoids", "classfrc_1_1PneumaticsControlModule.html#aaf56a0ad3683ad5a65df4ce44deff83a", null ]
+    [ "SetSolenoids", "classfrc_1_1PneumaticsControlModule.html#aaf56a0ad3683ad5a65df4ce44deff83a", null ],
+    [ "UnreserveSolenoids", "classfrc_1_1PneumaticsControlModule.html#a3d9d39bf7400e779de8802a56d888c0a", null ]
 ];

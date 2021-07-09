@@ -1,5 +1,8 @@
 var NAVTREEINDEX38 =
 {
+"structarg__mapper.html#ae16b3fe5a156d3eeb1c3d449d4dacfe9":[5,0,18,30],
+"structarg__mapper.html#af5853d60163b4b86174e807d454c9a42":[5,0,18,28],
+"structarg__mapper.html#af96190fb2e6bceab02e3d2d28aaef3c8":[5,0,18,6],
 "structarg__ref.html":[5,0,19],
 "structarg__ref.html#a0e72409c45db9ee32d02bbbba429460e":[5,0,19,3],
 "structarg__ref.html#a32de917114fc98e7b79e776064efe2bc":[5,0,19,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX38 =
 "structdetail_1_1has__const__begin__end.html":[5,0,1,15],
 "structdetail_1_1has__const__begin__end_3_01T_00_01void__t_3_01decltype_07detail_1_1range__begin_27094f48719c379b9775948340277c3e.html":[5,0,1,16],
 "structdetail_1_1has__member__fn__begin__end__t.html":[5,0,1,17],
-"structdetail_1_1has__member__fn__begin__end__t_3_01T_00_01void__t_3_01decltype_07std_1_1declval_7bfaf74b5a50caef111e70a0e029c9dc.html":[5,0,1,18],
-"structdetail_1_1has__mutable__begin__end.html":[5,0,1,19],
-"structdetail_1_1has__mutable__begin__end_3_01T_00_01void__t_3_01decltype_07detail_1_1range__begi169586f4f2ce3d97cec0d8f88181ab72.html":[5,0,1,20],
-"structdetail_1_1integer__sequence.html":[5,0,1,21]
+"structdetail_1_1has__member__fn__begin__end__t_3_01T_00_01void__t_3_01decltype_07std_1_1declval_7bfaf74b5a50caef111e70a0e029c9dc.html":[5,0,1,18]
 };

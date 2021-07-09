@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-2-6-g6ddef1c</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2-7-gc154e52</span>
    </div>
   </td>
  </tr>
@@ -119,8 +119,12 @@ $(document).ready(function(){initNavTree('PneumaticsBase_8h_source.html',''); in
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> SetOneShotDuration(<span class="keywordtype">int</span> index, units::second_t duration) = 0;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> CheckSolenoidChannel(<span class="keywordtype">int</span> channel) <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;};</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">int</span> CheckAndReserveSolenoids(<span class="keywordtype">int</span> mask) = 0;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> UnreserveSolenoids(<span class="keywordtype">int</span> mask) = 0;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;};</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}  <span class="comment">// namespace frc</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclassfrc_1_1PneumaticsBase_html"><div class="ttname"><a href="classfrc_1_1PneumaticsBase.html">frc::PneumaticsBase</a></div><div class="ttdef"><b>Definition:</b> PneumaticsBase.h:10</div></div>
@@ -128,7 +132,7 @@ $(document).ready(function(){initNavTree('PneumaticsBase_8h_source.html',''); in
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><b>PneumaticsBase.h</b></li>
-    <li class="footer">Generated on Fri Jul 9 2021 04:44:37 for WPILibC++ by
+    <li class="footer">Generated on Fri Jul 9 2021 22:13:23 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

@@ -1,5 +1,8 @@
 var NAVTREEINDEX32 =
 {
+"classwpi_1_1uv_1_1NetworkStream.html":[5,0,11,7,15],
+"classwpi_1_1uv_1_1NetworkStream.html#a0dfb668d8b261db9637ad1e2e15331b1":[5,0,11,7,15,6],
+"classwpi_1_1uv_1_1NetworkStream.html#a26727319946cb40266082cedb297f4d0":[5,0,11,7,15,3],
 "classwpi_1_1uv_1_1NetworkStream.html#a2ff6aa3370184bb63ec3d23b60616fdf":[5,0,11,7,15,8],
 "classwpi_1_1uv_1_1NetworkStream.html#a4a7a29bef221a5008468fdb6184ffdd7":[5,0,11,7,15,9],
 "classwpi_1_1uv_1_1NetworkStream.html#a5fd304821845fd3efc8706ce4957d13b":[5,0,11,7,15,7],
@@ -246,8 +249,5 @@ var NAVTREEINDEX32 =
 "classwpi_1_1uv_1_1Udp.html#af85a09b885231a171f69f26664672803":[5,0,11,7,33,29],
 "classwpi_1_1uv_1_1UdpSendReq.html":[5,0,11,7,34],
 "classwpi_1_1uv_1_1UdpSendReq.html#a30159d9d595a504972692395b9dae8a6":[5,0,11,7,34,0],
-"classwpi_1_1uv_1_1UdpSendReq.html#a5eed824a2a6c72d5349a424197995f50":[5,0,11,7,34,1],
-"classwpi_1_1uv_1_1UdpSendReq.html#aa478fe23322fe450488030887ee0a4b3":[5,0,11,7,34,2],
-"classwpi_1_1uv_1_1WorkReq.html":[5,0,11,7,35],
-"classwpi_1_1uv_1_1WorkReq.html#a099d63016a38b0c6ea32e139c9ea6a05":[5,0,11,7,35,2]
+"classwpi_1_1uv_1_1UdpSendReq.html#a5eed824a2a6c72d5349a424197995f50":[5,0,11,7,34,1]
 };
