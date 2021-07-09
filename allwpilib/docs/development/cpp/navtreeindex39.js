@@ -1,7 +1,5 @@
 var NAVTREEINDEX39 =
 {
-"structdetail_1_1has__mutable__begin__end_3_01T_00_01void__t_3_01decltype_07detail_1_1range__begi169586f4f2ce3d97cec0d8f88181ab72.html":[5,0,1,20],
-"structdetail_1_1integer__sequence.html":[5,0,1,21],
 "structdetail_1_1integer__sequence.html#a1e9cebfb38d47d4b627fa41af03c1cea":[5,0,1,21,1],
 "structdetail_1_1integer__sequence.html#ad1483b15cf25402cf653f8ec3b485241":[5,0,1,21,0],
 "structdetail_1_1is__compiled__string.html":[5,0,1,22],
@@ -249,5 +247,7 @@ var NAVTREEINDEX39 =
 "structfrc_1_1SwerveModuleState.html#ab8c668b9aaea89c1ce37502c09c18c0c":[5,0,5,183,1],
 "structfrc_1_1TrajectoryConstraint_1_1MinMax.html":[5,0,5,193,0],
 "structfrc_1_1TrajectoryConstraint_1_1MinMax.html#a7ffbb771bf63970d5aec016d38f4bd8b":[5,0,5,193,0,1],
-"structfrc_1_1TrajectoryConstraint_1_1MinMax.html#a8c026d38680f80b6f7cee6070b02afb3":[5,0,5,193,0,0]
+"structfrc_1_1TrajectoryConstraint_1_1MinMax.html#a8c026d38680f80b6f7cee6070b02afb3":[5,0,5,193,0,0],
+"structfrc_1_1Trajectory_1_1State.html":[5,0,5,191,0],
+"structfrc_1_1Trajectory_1_1State.html#a39de4bdb853c7885f92bb6a037ddddee":[5,0,5,191,0,5]
 };

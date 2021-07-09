@@ -84,10 +84,8 @@ var NAVTREEINDEX33 =
 "drake__assert_8h_source.html":[6,0,2,0,0],
 "drake__assertion__error_8h_source.html":[6,0,2,0,1],
 "drake__copyable_8h.html":[6,0,2,0,2],
-"drake__copyable_8h.html#a3ee22789c29a46dddd6a7fd2b982731c":[6,0,2,0,2,3],
-"drake__copyable_8h.html#a72477cb663f3735d4e3574d4371b8708":[6,0,2,0,2,2],
-"drake__copyable_8h.html#a8d60a299683340853a6c62040721c9a0":[6,0,2,0,2,0],
-"drake__copyable_8h.html#ae6322b9e40935343a422cbdfb41e310e":[6,0,2,0,2,1],
+"drake__copyable_8h.html#a3ee22789c29a46dddd6a7fd2b982731c":[6,0,2,0,2,1],
+"drake__copyable_8h.html#ae6322b9e40935343a422cbdfb41e310e":[6,0,2,0,2,0],
 "drake__copyable_8h_source.html":[6,0,2,0,2],
 "drake__throw_8h.html":[6,0,2,0,3],
 "drake__throw_8h.html#a4d9c29b101212c8a886c7f4f1a8b71ca":[6,0,2,0,3,0],
@@ -249,5 +247,7 @@ var NAVTREEINDEX33 =
 "group__hal__analogaccumulator.html#ga49942774a1f141aa4d723156b8cc9111":[3,0,10,6],
 "group__hal__analogaccumulator.html#ga8c5a1fd3000f7f27d343919db5ddc507":[3,0,10,1],
 "group__hal__analogaccumulator.html#ga9a058b98f3c06ea3bc2a828d1ea74967":[3,0,10,2],
-"group__hal__analogaccumulator.html#ga9a5528a2b18433d484fcbe9ab973d801":[3,0,10,0]
+"group__hal__analogaccumulator.html#ga9a5528a2b18433d484fcbe9ab973d801":[3,0,10,0],
+"group__hal__analogaccumulator.html#gab81e29001988d21132fc721327705b6c":[3,0,10,4],
+"group__hal__analogaccumulator.html#gad029abe7187603b18cfde046be0a7443":[3,0,10,3]
 };

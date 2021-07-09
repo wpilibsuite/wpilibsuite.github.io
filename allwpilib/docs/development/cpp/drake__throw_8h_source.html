@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-2-3-g39373c6</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2-4-ga4233e1</span>
    </div>
   </td>
  </tr>
@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('drake__throw_8h_source.html',''); init
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#define DRAKE_THROW_UNLESS(condition)                                        \</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="drake__throw_8h.html#a4d9c29b101212c8a886c7f4f1a8b71ca">   24</a></span>&#160;<span class="preprocessor">  do {                                                                       \</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">    typedef ::drake::assert::ConditionTraits&lt;                                \</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">        typename std::remove_cv&lt;decltype(condition)&gt;::type&gt; Trait;           \</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">        typename std::remove_cv_t&lt;decltype(condition)&gt;&gt; Trait;               \</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">    static_assert(Trait::is_valid, &quot;Condition should be bool-convertible.&quot;); \</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">    if (!Trait::Evaluate(condition)) {                                       \</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">      ::drake::internal::Throw(#condition, __func__, __FILE__, __LINE__);    \</span></div>
@@ -124,7 +124,7 @@ $(document).ready(function(){initNavTree('drake__throw_8h_source.html',''); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3096fa119feaaf68acf7be783be3d79f.html">drake</a></li><li class="navelem"><a class="el" href="dir_533b608e0d491fadd970e32351d4ba56.html">common</a></li><li class="navelem"><a class="el" href="drake__throw_8h.html">drake_throw.h</a></li>
-    <li class="footer">Generated on Sat Jul 3 2021 02:08:24 for WPILibC++ by
+    <li class="footer">Generated on Fri Jul 9 2021 03:38:13 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

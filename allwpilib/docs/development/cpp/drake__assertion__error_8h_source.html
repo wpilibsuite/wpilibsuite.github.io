@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-2-3-g39373c6</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2-4-ga4233e1</span>
    </div>
   </td>
  </tr>
@@ -101,6 +101,8 @@ $(document).ready(function(){initNavTree('drake__assertion__error_8h_source.html
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span>drake {</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>internal {</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// This is what DRAKE_ASSERT and DRAKE_DEMAND throw when our assertions are</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// configured to throw.</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classdrake_1_1internal_1_1assertion__error.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="classdrake_1_1internal_1_1assertion__error.html">assertion_error</a> : <span class="keyword">public</span> std::runtime_error {</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classdrake_1_1internal_1_1assertion__error.html">assertion_error</a>(<span class="keyword">const</span> std::string&amp; what_arg)</div>
@@ -111,12 +113,12 @@ $(document).ready(function(){initNavTree('drake__assertion__error_8h_source.html
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}  <span class="comment">// namespace drake</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassdrake_1_1internal_1_1assertion__error_html"><div class="ttname"><a href="classdrake_1_1internal_1_1assertion__error.html">drake::internal::assertion_error</a></div><div class="ttdoc">This is what DRAKE_ASSERT and DRAKE_DEMAND throw when our assertions are configured to throw.</div><div class="ttdef"><b>Definition:</b> drake_assertion_error.h:11</div></div>
+<div class="ttc" id="aclassdrake_1_1internal_1_1assertion__error_html"><div class="ttname"><a href="classdrake_1_1internal_1_1assertion__error.html">drake::internal::assertion_error</a></div><div class="ttdef"><b>Definition:</b> drake_assertion_error.h:11</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3096fa119feaaf68acf7be783be3d79f.html">drake</a></li><li class="navelem"><a class="el" href="dir_533b608e0d491fadd970e32351d4ba56.html">common</a></li><li class="navelem"><b>drake_assertion_error.h</b></li>
-    <li class="footer">Generated on Sat Jul 3 2021 02:08:24 for WPILibC++ by
+    <li class="footer">Generated on Fri Jul 9 2021 03:38:13 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

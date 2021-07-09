@@ -1,7 +1,5 @@
 var NAVTREEINDEX41 =
 {
-"structwpi_1_1DenseMapInfo_3_01short_01_4.html#a00902e7d36376fce2cf9d1617511d3ac":[5,0,11,36,0],
-"structwpi_1_1DenseMapInfo_3_01short_01_4.html#a1df0b4809996384336f826296bdda98c":[5,0,11,36,1],
 "structwpi_1_1DenseMapInfo_3_01short_01_4.html#a66033567b7aa09443fa5199754c0db6f":[5,0,11,36,2],
 "structwpi_1_1DenseMapInfo_3_01short_01_4.html#a82e516946c00b5f7f51a5881c6269ac4":[5,0,11,36,3],
 "structwpi_1_1DenseMapInfo_3_01span_3_01T_01_4_01_4.html":[5,0,11,37],
@@ -249,5 +247,7 @@ var NAVTREEINDEX41 =
 "structwpi_1_1detail_1_1is__compatible__complete__type.html":[5,0,11,0,28],
 "structwpi_1_1detail_1_1is__compatible__complete__type.html#aac96773b1c6fe23e4205dba3d08df0ad":[5,0,11,0,28,0],
 "structwpi_1_1detail_1_1is__compatible__integer__type.html":[5,0,11,0,29],
-"structwpi_1_1detail_1_1is__compatible__integer__type.html#ae403ccd4846850c899bc734aba703a84":[5,0,11,0,29,0]
+"structwpi_1_1detail_1_1is__compatible__integer__type.html#ae403ccd4846850c899bc734aba703a84":[5,0,11,0,29,0],
+"structwpi_1_1detail_1_1is__compatible__integer__type__impl.html":[5,0,11,0,30],
+"structwpi_1_1detail_1_1is__compatible__integer__type__impl_3_01true_00_01RealIntegerType_00_01CompatibleNumberIntegerType_01_4.html":[5,0,11,0,31]
 };
