@@ -119,8 +119,6 @@ var NAVTREEINDEX39 =
 "structfmt_1_1formatter_3_01Eigen_1_1Matrix_3_01double_00_01Rows_00_01Cols_00_01Args_8_8_8_01_4_01_4.html#abbd4f91ac3a5a117d0d2edf04410c2f3":[5,0,4,0,0],
 "structfmt_1_1formatter_3_01Eigen_1_1Matrix_3_01double_00_01Rows_00_01Cols_00_01Args_8_8_8_01_4_01_4.html#afb8f8983bf0c299e73fb2d7bb52ddb32":[5,0,4,0,1],
 "structfmt_1_1formatter_3_01units_1_1unit__t_3_01Units_00_01T_00_01NonLinearScale_01_4_01_4.html":[5,0,4,1],
-"structfmt_1_1formatter_3_01units_1_1unit__t_3_01Units_00_01T_00_01NonLinearScale_01_4_01_4.html#a6e730908f58b9659cfe959b2fd578cf6":[5,0,4,1,2],
-"structfmt_1_1formatter_3_01units_1_1unit__t_3_01Units_00_01T_00_01NonLinearScale_01_4_01_4.html#ac108ea3e36ebc15a699bb9daa3f5c7a1":[5,0,4,1,1],
 "structfmt_1_1formatter_3_01units_1_1unit__t_3_01Units_00_01T_00_01NonLinearScale_01_4_01_4.html#afeadbd0eb097cea47511cd18bee6ad49":[5,0,4,1,0],
 "structformat__decimal__result.html":[5,0,66],
 "structformat__decimal__result.html#a37bde482b0196d21330e2264453f711a":[5,0,66,1],
@@ -249,5 +247,7 @@ var NAVTREEINDEX39 =
 "structfrc_1_1SwerveModuleState.html#a686b128ca4f86f83788ef08024523fa8":[5,0,5,183,2],
 "structfrc_1_1SwerveModuleState.html#ab8c668b9aaea89c1ce37502c09c18c0c":[5,0,5,183,1],
 "structfrc_1_1TrajectoryConstraint_1_1MinMax.html":[5,0,5,193,0],
-"structfrc_1_1TrajectoryConstraint_1_1MinMax.html#a7ffbb771bf63970d5aec016d38f4bd8b":[5,0,5,193,0,1]
+"structfrc_1_1TrajectoryConstraint_1_1MinMax.html#a7ffbb771bf63970d5aec016d38f4bd8b":[5,0,5,193,0,1],
+"structfrc_1_1TrajectoryConstraint_1_1MinMax.html#a8c026d38680f80b6f7cee6070b02afb3":[5,0,5,193,0,0],
+"structfrc_1_1Trajectory_1_1State.html":[5,0,5,191,0]
 };

@@ -553,6 +553,9 @@ var hierarchy =
     [ "format_string_checker< Char, ErrorHandler, Args >", "classformat__string__checker.html", null ],
     [ "format_to_n_result< OutputIt >", "structformat__to__n__result.html", null ],
     [ "formatter< T, Char, Enable >", "structformatter.html", null ],
+    [ "formatter", null, [
+      [ "fmt::formatter< units::unit_t< Units, T, NonLinearScale > >", "structfmt_1_1formatter_3_01units_1_1unit__t_3_01Units_00_01T_00_01NonLinearScale_01_4_01_4.html", null ]
+    ] ],
     [ "formatter< basic_string_view< Char >, Char >", "structformatter.html", [
       [ "detail::fallback_formatter< T, Char, enable_if_t< is_streamable< T, Char >::value > >", "structdetail_1_1fallback__formatter_3_01T_00_01Char_00_01enable__if__t_3_01is__streamable_3_01T_70fb5240ebb5f83009cdb1627fa42087.html", null ],
       [ "formatter< Char[N], Char >", "structformatter_3_01Char_0fN_0e_00_01Char_01_4.html", null ]
@@ -573,7 +576,6 @@ var hierarchy =
     [ "formatter< T, Char, enable_if_t< fmt::is_range< T, Char >::value &&(has_formatter< detail::value_type< T >, format_context >::value||detail::has_fallback_formatter< detail::value_type< T >, Char >::value) > >", "structformatter_3_01T_00_01Char_00_01enable__if__t_3_01fmt_1_1is__range_3_01T_00_01Char_01_4_1_10b84b1e37f4e188cd6eeee02f697acfd.html", null ],
     [ "formatter< tuple_join_view< Char, T... >, Char >", "structformatter_3_01tuple__join__view_3_01Char_00_01T_8_8_8_01_4_00_01Char_01_4.html", null ],
     [ "formatter< TupleT, Char, enable_if_t< fmt::is_tuple_like< TupleT >::value > >", "structformatter_3_01TupleT_00_01Char_00_01enable__if__t_3_01fmt_1_1is__tuple__like_3_01TupleT_01_4_1_1value_01_4_01_4.html", null ],
-    [ "fmt::formatter< units::unit_t< Units, T, NonLinearScale > >", "structfmt_1_1formatter_3_01units_1_1unit__t_3_01Units_00_01T_00_01NonLinearScale_01_4_01_4.html", null ],
     [ "formatter< weekday >", "structformatter_3_01weekday_01_4.html", null ],
     [ "formatting_range< Char, Enable >", "structformatting__range.html", null ],
     [ "formatting_range< Char >", "structformatting__range.html", null ],
@@ -1539,9 +1541,9 @@ var hierarchy =
     ] ],
     [ "frc::SplineHelper", "classfrc_1_1SplineHelper.html", null ],
     [ "frc::SplineParameterizer", "classfrc_1_1SplineParameterizer.html", null ],
+    [ "frc::sim::DifferentialDrivetrainSim::State", "classfrc_1_1sim_1_1DifferentialDrivetrainSim_1_1State.html", null ],
     [ "frc::Trajectory::State", "structfrc_1_1Trajectory_1_1State.html", null ],
     [ "frc::TrapezoidProfile< Distance >::State", "classfrc_1_1TrapezoidProfile_1_1State.html", null ],
-    [ "frc::sim::DifferentialDrivetrainSim::State", "classfrc_1_1sim_1_1DifferentialDrivetrainSim_1_1State.html", null ],
     [ "wpi::static_circular_buffer< T, N >", "classwpi_1_1static__circular__buffer.html", null ],
     [ "wpi::detail::static_const< T >", "structwpi_1_1detail_1_1static__const.html", null ],
     [ "std_string_view< T >", "structstd__string__view.html", null ],
@@ -1668,8 +1670,8 @@ var hierarchy =
     [ "uv_buf_t", null, [
       [ "wpi::uv::Buffer", "classwpi_1_1uv_1_1Buffer.html", null ]
     ] ],
-    [ "nt::Value", "classnt_1_1Value.html", null ],
     [ "arg_ref< Char >::value", "unionarg__ref_1_1value.html", null ],
+    [ "nt::Value", "classnt_1_1Value.html", null ],
     [ "value< Context >", "classvalue.html", null ],
     [ "detail::counting_iterator::value_type", "structdetail_1_1counting__iterator_1_1value__type.html", null ],
     [ "frc::Vector2d", "structfrc_1_1Vector2d.html", null ],
@@ -1689,12 +1691,12 @@ var hierarchy =
         [ "cs::UsbCamera", "classcs_1_1UsbCamera.html", null ]
       ] ]
     ] ],
+    [ "view", "structview.html", [
+      [ "named_arg< Char, T >", "structnamed__arg.html", null ]
+    ] ],
     [ "view", null, [
       [ "join_view< It, Sentinel, Char >", "structjoin__view.html", null ],
       [ "tuple_join_view< Char, T >", "structtuple__join__view.html", null ]
-    ] ],
-    [ "view", "structview.html", [
-      [ "named_arg< Char, T >", "structnamed__arg.html", null ]
     ] ],
     [ "detail::range_to_view< T, enable_if_t<!has_const_begin_end< T >::value &&has_mutable_begin_end< T >::value > >::view_t", "structdetail_1_1range__to__view_3_01T_00_01enable__if__t_3_9has__const__begin__end_3_01T_01_4_1_1cf1f6c31b1fc849c7f6ab73440db946.html", null ],
     [ "detail::range_to_view< T, enable_if_t< has_const_begin_end< T >::value > >::view_t", "structdetail_1_1range__to__view_3_01T_00_01enable__if__t_3_01has__const__begin__end_3_01T_01_4_1_1value_01_4_01_4_1_1view__t.html", null ],

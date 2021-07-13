@@ -105,10 +105,10 @@ var NAVTREEINDEX =
 "namespacemembers_type.html",
 "structarg__mapper.html#ae16b3fe5a156d3eeb1c3d449d4dacfe9",
 "structdetail_1_1has__mutable__begin__end.html",
-"structfrc_1_1TrajectoryConstraint_1_1MinMax.html#a8c026d38680f80b6f7cee6070b02afb3",
-"structwpi_1_1DenseMapInfo_3_01short_01_4.html",
-"structwpi_1_1detail_1_1is__compatible__integer__type.html#ae403ccd4846850c899bc734aba703a84",
-"wpilibOldCommands_2src_2main_2native_2include_2frc_2buttons_2NetworkButton_8h_source.html"
+"structfrc_1_1Trajectory_1_1State.html#a39de4bdb853c7885f92bb6a037ddddee",
+"structwpi_1_1DenseMapInfo_3_01short_01_4.html#a1df0b4809996384336f826296bdda98c",
+"structwpi_1_1detail_1_1is__compatible__integer__type__impl_3_01true_00_01RealIntegerType_00_01CompatibleNumberIntegerType_01_4.html",
+"wpilibOldCommands_2src_2main_2native_2include_2frc_2buttons_2Trigger_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

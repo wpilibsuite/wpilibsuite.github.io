@@ -1,7 +1,5 @@
 var NAVTREEINDEX40 =
 {
-"structfrc_1_1TrajectoryConstraint_1_1MinMax.html#a8c026d38680f80b6f7cee6070b02afb3":[5,0,5,193,0,0],
-"structfrc_1_1Trajectory_1_1State.html":[5,0,5,191,0],
 "structfrc_1_1Trajectory_1_1State.html#a39de4bdb853c7885f92bb6a037ddddee":[5,0,5,191,0,5],
 "structfrc_1_1Trajectory_1_1State.html#a479e2d7059f93e95469348dbde773268":[5,0,5,191,0,0],
 "structfrc_1_1Trajectory_1_1State.html#a4c937c0b44ec69c1be69394b2a5d137c":[5,0,5,191,0,7],
@@ -249,5 +247,7 @@ var NAVTREEINDEX40 =
 "structwpi_1_1DenseMapInfo_3_01long_01long_01_4.html#a13f02f4da98d1843ff2816fa98db989f":[5,0,11,33,2],
 "structwpi_1_1DenseMapInfo_3_01long_01long_01_4.html#a5a4c3f2080ebb912dd67c2a65a0e62c1":[5,0,11,33,3],
 "structwpi_1_1DenseMapInfo_3_01long_01long_01_4.html#a64257ef2bf518c1ca3bb6747d7b53872":[5,0,11,33,1],
-"structwpi_1_1DenseMapInfo_3_01long_01long_01_4.html#ae97e61fe090dca917606d546d63c2a23":[5,0,11,33,0]
+"structwpi_1_1DenseMapInfo_3_01long_01long_01_4.html#ae97e61fe090dca917606d546d63c2a23":[5,0,11,33,0],
+"structwpi_1_1DenseMapInfo_3_01short_01_4.html":[5,0,11,36],
+"structwpi_1_1DenseMapInfo_3_01short_01_4.html#a00902e7d36376fce2cf9d1617511d3ac":[5,0,11,36,0]
 };
