@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-2-15-g1daadb8</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2-16-ge4dc390</span>
    </div>
   </td>
  </tr>
@@ -237,7 +237,7 @@ $(document).ready(function(){initNavTree('xchar_8h_source.html',''); initResizab
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                              <span class="keyword">const</span> S&amp; format_str, Args&amp;&amp;... args) -&gt;</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keyword">typename</span> buffer_context&lt;Char&gt;::iterator {</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span>&amp; vargs = fmt::make_args_checked&lt;Args...&gt;(format_str, args...);</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  detail::vformat_to(buf, to_string_view(format_str), vargs);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  detail::vformat_to(buf, to_string_view(format_str), vargs, {});</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  <span class="keywordflow">return</span> detail::buffer_appender&lt;Char&gt;(buf);</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;}</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
@@ -328,25 +328,25 @@ $(document).ready(function(){initNavTree('xchar_8h_source.html',''); initResizab
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="preprocessor">#endif  // FMT_WCHAR_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassformat__arg__store_html"><div class="ttname"><a href="classformat__arg__store.html">format_arg_store</a></div><div class="ttdoc">\rst An array of references to arguments.</div><div class="ttdef"><b>Definition:</b> core.h:1675</div></div>
+<div class="ttc" id="aclassformat__arg__store_html"><div class="ttname"><a href="classformat__arg__store.html">format_arg_store</a></div><div class="ttdoc">\rst An array of references to arguments.</div><div class="ttdef"><b>Definition:</b> core.h:1664</div></div>
 <div class="ttc" id="aclassbasic__memory__buffer_html"><div class="ttname"><a href="classbasic__memory__buffer.html">basic_memory_buffer&lt; wchar_t &gt;</a></div></div>
-<div class="ttc" id="astructis__char_html"><div class="ttname"><a href="structis__char.html">is_char</a></div><div class="ttdoc">Specifies if T is a character type.</div><div class="ttdef"><b>Definition:</b> core.h:525</div></div>
-<div class="ttc" id="aclassbuffer_html_afe9e285085f454beed44b59317dd922a"><div class="ttname"><a href="classbuffer.html#afe9e285085f454beed44b59317dd922a">buffer::data</a></div><div class="ttdeci">auto data() FMT_NOEXCEPT -&gt; T *</div><div class="ttdoc">Returns a pointer to the buffer data.</div><div class="ttdef"><b>Definition:</b> core.h:808</div></div>
-<div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1131</div></div>
-<div class="ttc" id="aclassbasic__string__view_html"><div class="ttname"><a href="classbasic__string__view.html">basic_string_view</a></div><div class="ttdoc">An implementation of std::basic_string_view for pre-C++17.</div><div class="ttdef"><b>Definition:</b> core.h:429</div></div>
-<div class="ttc" id="astructformat__to__n__result_html"><div class="ttname"><a href="structformat__to__n__result.html">format_to_n_result</a></div><div class="ttdef"><b>Definition:</b> core.h:2922</div></div>
-<div class="ttc" id="aclassbuffer_html"><div class="ttname"><a href="classbuffer.html">buffer</a></div><div class="ttdoc">\rst A contiguous memory buffer with an optional growing ability.</div><div class="ttdef"><b>Definition:</b> core.h:760</div></div>
+<div class="ttc" id="astructis__char_html"><div class="ttname"><a href="structis__char.html">is_char</a></div><div class="ttdoc">Specifies if T is a character type.</div><div class="ttdef"><b>Definition:</b> core.h:532</div></div>
+<div class="ttc" id="aclassbuffer_html_afe9e285085f454beed44b59317dd922a"><div class="ttname"><a href="classbuffer.html#afe9e285085f454beed44b59317dd922a">buffer::data</a></div><div class="ttdeci">auto data() FMT_NOEXCEPT -&gt; T *</div><div class="ttdoc">Returns a pointer to the buffer data.</div><div class="ttdef"><b>Definition:</b> core.h:797</div></div>
+<div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1120</div></div>
+<div class="ttc" id="aclassbasic__string__view_html"><div class="ttname"><a href="classbasic__string__view.html">basic_string_view</a></div><div class="ttdoc">An implementation of std::basic_string_view for pre-C++17.</div><div class="ttdef"><b>Definition:</b> core.h:436</div></div>
+<div class="ttc" id="astructformat__to__n__result_html"><div class="ttname"><a href="structformat__to__n__result.html">format_to_n_result</a></div><div class="ttdef"><b>Definition:</b> core.h:2918</div></div>
+<div class="ttc" id="aclassbuffer_html"><div class="ttname"><a href="classbuffer.html">buffer</a></div><div class="ttdoc">\rst A contiguous memory buffer with an optional growing ability.</div><div class="ttdef"><b>Definition:</b> core.h:749</div></div>
 <div class="ttc" id="astructdetail_1_1is__locale_html"><div class="ttname"><a href="structdetail_1_1is__locale.html">detail::is_locale</a></div><div class="ttdef"><b>Definition:</b> format.h:590</div></div>
-<div class="ttc" id="aclassbasic__format__args_html"><div class="ttname"><a href="classbasic__format__args.html">basic_format_args</a></div><div class="ttdoc">\rst A view of a collection of formatting arguments.</div><div class="ttdef"><b>Definition:</b> core.h:700</div></div>
-<div class="ttc" id="aclassbasic__format__string_html"><div class="ttname"><a href="classbasic__format__string.html">basic_format_string</a></div><div class="ttdef"><b>Definition:</b> core.h:2831</div></div>
-<div class="ttc" id="aclassbasic__format__parse__context_html"><div class="ttname"><a href="classbasic__format__parse__context.html">basic_format_parse_context</a></div><div class="ttdoc">\rst Parsing context consisting of a format string range being parsed and an argument counter for aut...</div><div class="ttdef"><b>Definition:</b> core.h:631</div></div>
-<div class="ttc" id="astructjoin__view_html"><div class="ttname"><a href="structjoin__view.html">join_view</a></div><div class="ttdef"><b>Definition:</b> format.h:2494</div></div>
-<div class="ttc" id="aclassbasic__format__context_html"><div class="ttname"><a href="classbasic__format__context.html">basic_format_context</a></div><div class="ttdef"><b>Definition:</b> core.h:1593</div></div>
+<div class="ttc" id="aclassbasic__format__args_html"><div class="ttname"><a href="classbasic__format__args.html">basic_format_args</a></div><div class="ttdoc">\rst A view of a collection of formatting arguments.</div><div class="ttdef"><b>Definition:</b> core.h:689</div></div>
+<div class="ttc" id="aclassbasic__format__string_html"><div class="ttname"><a href="classbasic__format__string.html">basic_format_string</a></div><div class="ttdef"><b>Definition:</b> core.h:2827</div></div>
+<div class="ttc" id="aclassbasic__format__parse__context_html"><div class="ttname"><a href="classbasic__format__parse__context.html">basic_format_parse_context</a></div><div class="ttdoc">\rst Parsing context consisting of a format string range being parsed and an argument counter for aut...</div><div class="ttdef"><b>Definition:</b> core.h:620</div></div>
+<div class="ttc" id="astructjoin__view_html"><div class="ttname"><a href="structjoin__view.html">join_view</a></div><div class="ttdef"><b>Definition:</b> format.h:2497</div></div>
+<div class="ttc" id="aclassbasic__format__context_html"><div class="ttname"><a href="classbasic__format__context.html">basic_format_context</a></div><div class="ttdef"><b>Definition:</b> core.h:1582</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_07f1050b175e2d01c230e5cadf135f7c.html">fmtlib</a></li><li class="navelem"><a class="el" href="dir_f186fa79a3895d81ef02af9fef546a30.html">include</a></li><li class="navelem"><a class="el" href="dir_37137cfaace3bfc79a7a3aee825a2892.html">fmt</a></li><li class="navelem"><b>xchar.h</b></li>
-    <li class="footer">Generated on Sun Jul 11 2021 14:44:42 for WPILibC++ by
+    <li class="footer">Generated on Tue Jul 13 2021 18:40:57 for WPILibC++ by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>
