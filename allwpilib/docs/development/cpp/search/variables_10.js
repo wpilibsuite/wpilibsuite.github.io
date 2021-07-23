@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['text_7709',['text',['../classwpi_1_1WebSocket.html#a52a220899cf024226a920822171780f0',1,'wpi::WebSocket']]],
-  ['timeout_7710',['timeout',['../classwpi_1_1uv_1_1Timer.html#a7739213e3b4ad87d1ca35f24b692c821',1,'wpi::uv::Timer']]],
-  ['type_7711',['type',['../structwpi_1_1http__parser.html#a3244a64bfe382e8c206b5ab655e36fcf',1,'wpi::http_parser::type()'],['../structnt_1_1EntryInfo.html#a8ee614320db7604ef386027aa51b0986',1,'nt::EntryInfo::type()'],['../structNT__EntryInfo.html#a8eae63ecf683e9131bf1b6676164044d',1,'NT_EntryInfo::type()']]]
+  ['text_7617',['text',['../classwpi_1_1WebSocket.html#a52a220899cf024226a920822171780f0',1,'wpi::WebSocket']]],
+  ['timeout_7618',['timeout',['../classwpi_1_1uv_1_1Timer.html#a7739213e3b4ad87d1ca35f24b692c821',1,'wpi::uv::Timer']]],
+  ['type_7619',['type',['../structwpi_1_1http__parser.html#a3244a64bfe382e8c206b5ab655e36fcf',1,'wpi::http_parser::type()'],['../structnt_1_1EntryInfo.html#a8ee614320db7604ef386027aa51b0986',1,'nt::EntryInfo::type()'],['../structNT__EntryInfo.html#a8eae63ecf683e9131bf1b6676164044d',1,'NT_EntryInfo::type()']]]
 ];

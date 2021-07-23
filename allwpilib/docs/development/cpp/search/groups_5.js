@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['httpcamera_20source_20functions_7870',['HttpCamera Source Functions',['../group__cscore__httpcamera__cfunc.html',1,'']]],
-  ['httpcamera_20source_20functions_7871',['HttpCamera Source Functions',['../group__cscore__httpcamera__func.html',1,'']]]
+  ['httpcamera_20source_20functions_7773',['HttpCamera Source Functions',['../group__cscore__httpcamera__cfunc.html',1,'(Global Namespace)'],['../group__cscore__httpcamera__func.html',1,'(Global Namespace)']]]
 ];

@@ -8,6 +8,7 @@ var classbuffer =
     [ "buffer", "classbuffer.html#aef0776a0b899bf6fd19d7daa5ebb0e59", null ],
     [ "buffer", "classbuffer.html#a399f45355c545a4ca30006a71b9f8f17", null ],
     [ "append", "classbuffer.html#a144ad707b324a714fbe334896f90ba28", null ],
+    [ "append", "classbuffer.html#a144ad707b324a714fbe334896f90ba28", null ],
     [ "begin", "classbuffer.html#afaa67849c70ebcc79a606c30109d4cbf", null ],
     [ "begin", "classbuffer.html#a638c05d24e320c79ce982c7f6ca0b737", null ],
     [ "capacity", "classbuffer.html#ad1dde4f6deedf8ff95d73a3a5cf16a88", null ],

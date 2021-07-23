@@ -28,7 +28,6 @@ var dir_1224104d412225b996ab6dfa83431a88 =
     [ "fs.h", "fs_8h_source.html", null ],
     [ "function_ref.h", "function__ref_8h_source.html", null ],
     [ "FunctionExtras.h", "FunctionExtras_8h.html", [
-      [ "unique_function", "classwpi_1_1unique__function.html", null ],
       [ "unique_function< ReturnT(ParamTs...)>", "classwpi_1_1unique__function_3_01ReturnT_07ParamTs_8_8_8_08_4.html", "classwpi_1_1unique__function_3_01ReturnT_07ParamTs_8_8_8_08_4" ],
       [ "OutOfLineStorageT", "structwpi_1_1unique__function_3_01ReturnT_07ParamTs_8_8_8_08_4_1_1StorageUnionT_1_1OutOfLineStorageT.html", "structwpi_1_1unique__function_3_01ReturnT_07ParamTs_8_8_8_08_4_1_1StorageUnionT_1_1OutOfLineStorageT" ]
     ] ],

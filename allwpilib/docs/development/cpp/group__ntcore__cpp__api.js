@@ -62,7 +62,6 @@ var group__ntcore__cpp__api =
       [ "swap", "classnt_1_1RpcCall.html#a5d014a3352a970fe9dbde9c40682c0f3", null ]
     ] ],
     [ "NetworkTableInstance", "classnt_1_1NetworkTableInstance.html", [
-      [ "kDefaultPort", "classnt_1_1NetworkTableInstance.html#af56ddafde46f621c04efb9de04eb4a47a56a06549716972d3b062cb7cccaed979", null ],
       [ "LogLevel", "classnt_1_1NetworkTableInstance.html#a88dfe5b82924f347c572cdada2707150", [
         [ "kLogCritical", "classnt_1_1NetworkTableInstance.html#a88dfe5b82924f347c572cdada2707150ad8346f55c62557dffb78007a3e8d450d", null ],
         [ "kLogError", "classnt_1_1NetworkTableInstance.html#a88dfe5b82924f347c572cdada2707150a5239b1f499019c007f9d4d00036d6765", null ],
