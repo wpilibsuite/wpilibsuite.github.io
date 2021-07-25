@@ -1,6 +1,5 @@
 var NAVTREEINDEX20 =
 {
-"classfrc_1_1sim_1_1AddressableLEDSim.html#a80b0933cb5800a08f561208bc0c53fe1":[5,0,5,1,25,5],
 "classfrc_1_1sim_1_1AddressableLEDSim.html#a85faa616f286f07f465da0128c7522fc":[5,0,5,1,25,17],
 "classfrc_1_1sim_1_1AddressableLEDSim.html#a9092c0c1a2595c8d431543a522748e7d":[5,0,5,1,25,7],
 "classfrc_1_1sim_1_1AddressableLEDSim.html#a9b888085345151548c884427d38f3c9c":[5,0,5,1,25,6],
@@ -249,5 +248,6 @@ var NAVTREEINDEX20 =
 "classfrc_1_1sim_1_1DriverStationSim.html#a9c6c393d5f60cbb1fe22f105f43e366a":[5,0,5,1,14,39],
 "classfrc_1_1sim_1_1DriverStationSim.html#aa2961b5d769e1bf68321dcfe443b42bd":[5,0,5,1,14,7],
 "classfrc_1_1sim_1_1DriverStationSim.html#aa31a4be28f075020d0a3705f15a1035d":[5,0,5,1,14,34],
-"classfrc_1_1sim_1_1DriverStationSim.html#aa5bf69e29117eaf624802c97acd1fc67":[5,0,5,1,14,33]
+"classfrc_1_1sim_1_1DriverStationSim.html#aa5bf69e29117eaf624802c97acd1fc67":[5,0,5,1,14,33],
+"classfrc_1_1sim_1_1DriverStationSim.html#aa5d7e52ecf0b322220dcab42d38ba874":[5,0,5,1,14,17]
 };

@@ -1,6 +1,5 @@
 var NAVTREEINDEX5 =
 {
-"classcs_1_1VideoCamera.html#ac1e730756361d382f4b2cacbcd9d55af":[3,6,2,4],
 "classcs_1_1VideoCamera.html#ad23d645013813023e3f44bd74181c730":[3,6,2,9],
 "classcs_1_1VideoCamera.html#adaa26f5f88023688b31453df12c44511":[3,6,2,1],
 "classcs_1_1VideoCamera.html#ae20cf9ed652f3002e3d8bbde3780467b":[3,6,2,7],
@@ -249,5 +248,6 @@ var NAVTREEINDEX5 =
 "classes.html":[5,1],
 "classfixed__buffer__traits.html":[5,0,63],
 "classfixed__buffer__traits.html#ab698b6022e95ad5bb37894026c5c35c2":[5,0,63,0],
-"classfixed__buffer__traits.html#ae2c26decc1ebe05e23bc9b892e0ea91d":[5,0,63,2]
+"classfixed__buffer__traits.html#ae2c26decc1ebe05e23bc9b892e0ea91d":[5,0,63,2],
+"classfixed__buffer__traits.html#af046ca12a717f896e1cfd05ffbc547cc":[5,0,63,1]
 };

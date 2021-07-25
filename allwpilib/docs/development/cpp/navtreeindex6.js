@@ -1,6 +1,5 @@
 var NAVTREEINDEX6 =
 {
-"classfixed__buffer__traits.html#af046ca12a717f896e1cfd05ffbc547cc":[5,0,63,1],
 "classformat__arg__store.html":[5,0,65],
 "classformat__arg__store.html#a191fd70a63bba0bbc4b0735c1d25a39c":[5,0,65,0],
 "classformat__arg__store.html#ab8e9e33cc7b78829001a86ef6110ebb6":[5,0,65,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX6 =
 "classfrc2_1_1PIDController.html#af3799e4042fc11b0056936e5df989f09":[5,0,6,0,17],
 "classfrc2_1_1PIDSubsystem.html":[5,0,6,16],
 "classfrc2_1_1PIDSubsystem.html#a185f89219de0dbc8c5b476e6cf2bfcfd":[5,0,6,16,6],
-"classfrc2_1_1PIDSubsystem.html#a22d7490c91d98ae187d812c5c1fbce37":[5,0,6,16,10]
+"classfrc2_1_1PIDSubsystem.html#a22d7490c91d98ae187d812c5c1fbce37":[5,0,6,16,10],
+"classfrc2_1_1PIDSubsystem.html#a3668bf3dcfb529c00075210c23809187":[5,0,6,16,2]
 };

@@ -1,6 +1,5 @@
 var NAVTREEINDEX37 =
 {
-"functions_func_r.html":[5,3,1,18],
 "functions_func_s.html":[5,3,1,19],
 "functions_func_t.html":[5,3,1,20],
 "functions_func_u.html":[5,3,1,21],
@@ -27,8 +26,8 @@ var NAVTREEINDEX37 =
 "functions_type.html":[5,3,3],
 "functions_u.html":[5,3,0,21],
 "functions_v.html":[5,3,0,22],
-"functions_vars.html":[5,3,2,0],
 "functions_vars.html":[5,3,2],
+"functions_vars.html":[5,3,2,0],
 "functions_vars_b.html":[5,3,2,1],
 "functions_vars_c.html":[5,3,2,2],
 "functions_vars_d.html":[5,3,2,3],
@@ -249,5 +248,6 @@ var NAVTREEINDEX37 =
 "group__hal__analoggyro.html#gabb9894fce3ebfed40aab914a56f58e85":[3,0,7,6],
 "group__hal__analoggyro.html#gad77a6766f3cba425b3c6d78b06a111eb":[3,0,7,8],
 "group__hal__analoggyro.html#gadc7a11e59c368c174d79abe8fdeaea5e":[3,0,7,9],
-"group__hal__analoginput.html":[3,0,30]
+"group__hal__analoginput.html":[3,0,30],
+"group__hal__analoginput.html#ga02f152b2f03f34e45343791b307d0452":[3,0,30,3]
 };

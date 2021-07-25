@@ -1,6 +1,5 @@
 var NAVTREEINDEX3 =
 {
-"SimHooks_8h.html#a03b8ef2ff9bd8ec92b5587d3b4565e75":[4,0,7,3,44],
 "SimHooks_8h.html#a2ca4241f51e886e406cd29d83ce92d7f":[4,0,7,3,41],
 "SimHooks_8h.html#a4abd9bb464b200a28c77b1f85d91fa42":[4,0,7,3,45],
 "SimHooks_8h.html#a5932dea02aade394f32c12fd192b85b2":[4,0,7,3,38],
@@ -34,7 +33,7 @@ var NAVTREEINDEX3 =
 "SpanExtras_8h_source.html":[6,0,11,75],
 "Spark_8h_source.html":[6,0,5,3,12],
 "SpeedControllerGroup_8h_source.html":[6,0,5,63],
-"SpeedController_8h.html#a3e1e63234243bd1c57fd61d0c7ea88ec":[4,0,7,287],
+"SpeedController_8h.html#a3e1e63234243bd1c57fd61d0c7ea88ec":[4,0,7,286],
 "SpeedController_8h_source.html":[6,0,5,62],
 "SplineHelper_8h_source.html":[6,0,4,6,3],
 "SplineParameterizer_8h_source.html":[6,0,4,6,4],
@@ -155,7 +154,7 @@ var NAVTREEINDEX3 =
 "SwerveControllerCommand_8h_source.html":[6,0,7,0,31],
 "SwerveDriveKinematicsConstraint_8h_source.html":[6,0,4,8,0,7],
 "SwerveDriveKinematics_8h_source.html":[6,0,4,5,7],
-"SwerveDriveKinematics_8inc.html#acf032b8adc55f3de1e6828f68f86b409":[4,0,7,280],
+"SwerveDriveKinematics_8inc.html#acf032b8adc55f3de1e6828f68f86b409":[4,0,7,279],
 "SwerveDriveOdometry_8h_source.html":[6,0,4,5,8],
 "SwerveDrivePoseEstimator_8h_source.html":[6,0,4,1,7],
 "SwerveModuleState_8h_source.html":[6,0,4,5,9],
@@ -176,11 +175,11 @@ var NAVTREEINDEX3 =
 "TrajectoryGenerator_8h_source.html":[6,0,4,8,3],
 "TrajectoryParameterizer_8h_source.html":[6,0,4,8,4],
 "TrajectoryUtil_8h_source.html":[6,0,4,8,5],
-"Trajectory_8h.html#a02df1da63fa9177c21fa970fb4e8d8b7":[4,0,7,283],
+"Trajectory_8h.html#a02df1da63fa9177c21fa970fb4e8d8b7":[4,0,7,282],
 "Trajectory_8h.html#ab5d5470f8f7c882f55220e26439d8816":[4,0,7,238],
 "Trajectory_8h_source.html":[6,0,4,8,1],
 "Transform2d_8h_source.html":[6,0,4,4,2],
-"Translation2d_8h.html#a30e4272be62fc5da02fb5e848f4ca5ed":[4,0,7,284],
+"Translation2d_8h.html#a30e4272be62fc5da02fb5e848f4ca5ed":[4,0,7,283],
 "Translation2d_8h.html#acc629ca8c0aaeba2ecfa9522a1409d48":[4,0,7,239],
 "Translation2d_8h_source.html":[6,0,4,4,3],
 "TrapezoidProfileCommand_8h_source.html":[6,0,7,0,32],
@@ -200,7 +199,7 @@ var NAVTREEINDEX3 =
 "UnsafeDIO_8h.html#aba1632c233f536c0db420b9fe349daca":[4,0,11,0,0],
 "UnsafeDIO_8h_source.html":[6,0,8,0,2],
 "UnscentedKalmanFilter_8h_source.html":[6,0,4,1,8],
-"UnscentedTransform_8h.html#a87ce4ca979366ae46ffa1316cae50bb7":[4,0,7,285],
+"UnscentedTransform_8h.html#a87ce4ca979366ae46ffa1316cae50bb7":[4,0,7,284],
 "UnscentedTransform_8h_source.html":[6,0,4,1,9],
 "UrlParser_8h_source.html":[6,0,11,89],
 "Value_8h_source.html":[6,0,8,44],
@@ -249,5 +248,6 @@ var NAVTREEINDEX3 =
 "classappender.html#a10bb45bcdd3b9bd0512105f1144ac5e4":[5,0,13,3],
 "classappender.html#a508ba48c811da80b774dd5f0dbfd439a":[5,0,13,1],
 "classappender.html#a618ca4f10a702eaf2f4dbb3c01d47aca":[5,0,13,2],
-"classappender.html#a9f6efa22ca3010a96f3e69cdfb305b2c":[5,0,13,0]
+"classappender.html#a9f6efa22ca3010a96f3e69cdfb305b2c":[5,0,13,0],
+"classappender.html#aaf95c197690d6afcf71924ad22379be6":[5,0,13,4]
 };

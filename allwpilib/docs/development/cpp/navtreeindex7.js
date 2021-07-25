@@ -1,6 +1,5 @@
 var NAVTREEINDEX7 =
 {
-"classfrc2_1_1PIDSubsystem.html#a3668bf3dcfb529c00075210c23809187":[5,0,6,16,2],
 "classfrc2_1_1PIDSubsystem.html#a682a32890b742eb9b43cbb2adb656997":[5,0,6,16,9],
 "classfrc2_1_1PIDSubsystem.html#a76daf61316bc7f627cd7779b006f0834":[5,0,6,16,3],
 "classfrc2_1_1PIDSubsystem.html#a99c42caaa509009866c23857b0e43ebd":[5,0,6,16,5],
@@ -249,5 +248,6 @@ var NAVTREEINDEX7 =
 "classfrc_1_1ADXL345__I2C.html#a0c9409813f7dbe0746ca9c8a4b7fc2d7":[5,0,5,135,16],
 "classfrc_1_1ADXL345__I2C.html#a0cd0c56e51cbe9713a27b421fc84ca17":[5,0,5,135,14],
 "classfrc_1_1ADXL345__I2C.html#a0ed23df38e595e5103b7ad638284c554":[5,0,5,135,15],
-"classfrc_1_1ADXL345__I2C.html#a18870eec0e140e5d6f34baacb51590ce":[5,0,5,135,7]
+"classfrc_1_1ADXL345__I2C.html#a18870eec0e140e5d6f34baacb51590ce":[5,0,5,135,7],
+"classfrc_1_1ADXL345__I2C.html#a1eb123f8d1b3dc4e120bcc51e5fde860":[5,0,5,135,3]
 };

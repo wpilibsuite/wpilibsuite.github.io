@@ -1,6 +1,5 @@
 var NAVTREEINDEX12 =
 {
-"classfrc_1_1DriverStation.html#afbb94a8c73d56b28ad5af32e409e24e7":[5,0,5,123,12],
 "classfrc_1_1DriverStation.html#afde31e2b2d9a9946db4f1ec93a1701b9":[5,0,5,123,20],
 "classfrc_1_1DutyCycle.html":[5,0,5,74],
 "classfrc_1_1DutyCycle.html#a2b07b46a529ced2f3c0aad1671d08282":[5,0,5,74,3],
@@ -249,5 +248,6 @@ var NAVTREEINDEX12 =
 "classfrc_1_1IterativeRobotBase.html#a08618f13dbf3d1f1fa98f56406da52c6":[5,0,5,102,11],
 "classfrc_1_1IterativeRobotBase.html#a0c5042b873bd000d8258f146456eb9dd":[5,0,5,102,18],
 "classfrc_1_1IterativeRobotBase.html#a18d45c31d09c13f77ed8c857da2f4897":[5,0,5,102,12],
-"classfrc_1_1IterativeRobotBase.html#a2e6f6bc04d6c62c9fa33bc12a21c74d5":[5,0,5,102,17]
+"classfrc_1_1IterativeRobotBase.html#a2e6f6bc04d6c62c9fa33bc12a21c74d5":[5,0,5,102,17],
+"classfrc_1_1IterativeRobotBase.html#a379bededf5d908e76fc6b2b19010e3ab":[5,0,5,102,19]
 };

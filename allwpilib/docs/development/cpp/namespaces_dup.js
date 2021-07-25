@@ -613,7 +613,6 @@ var namespaces_dup =
       [ "RK4", "NumericalIntegration_8h.html#a362829981d16ca01c86bb52d3df6118b", null ],
       [ "RKDP", "NumericalIntegration_8h.html#af81b951f5d542b8247edd00243513ec8", null ],
       [ "RKF45", "NumericalIntegration_8h.html#a1825219cb68950f7b141fabc3fd0904b", null ],
-      [ "RungeKuttaTimeVarying", "NumericalIntegration_8h.html#a425ade41a4f9d2e4bb0618915c9937d4", null ],
       [ "RunHALInitialization", "RobotBase_8h.html#a8d83e7ec5a444cd625593917680b750c", null ],
       [ "SetCurrentThreadPriority", "wpilibc_2src_2main_2native_2include_2frc_2Threads_8h.html#a2d171ed3c8f73f2a5fd711b761dac0f5", null ],
       [ "SetThreadPriority", "wpilibc_2src_2main_2native_2include_2frc_2Threads_8h.html#adbae7ad2ff20f360025c771a43aa3ea4", null ],

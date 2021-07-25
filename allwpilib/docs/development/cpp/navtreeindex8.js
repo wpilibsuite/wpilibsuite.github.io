@@ -1,6 +1,5 @@
 var NAVTREEINDEX8 =
 {
-"classfrc_1_1ADXL345__I2C.html#a1eb123f8d1b3dc4e120bcc51e5fde860":[5,0,5,135,3],
 "classfrc_1_1ADXL345__I2C.html#a1eb123f8d1b3dc4e120bcc51e5fde860a224e069a37ef0b80f102b61c52d379fa":[5,0,5,135,3,3],
 "classfrc_1_1ADXL345__I2C.html#a1eb123f8d1b3dc4e120bcc51e5fde860a34018bf78380feee7dcf7f479b07af67":[5,0,5,135,3,1],
 "classfrc_1_1ADXL345__I2C.html#a1eb123f8d1b3dc4e120bcc51e5fde860a3de241ad5d1d7d63d4b9b5d0bdf3c1b5":[5,0,5,135,3,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX8 =
 "classfrc_1_1AnalogTrigger.html#a0faf8b6659b7313a28e203418b2775da":[5,0,5,72,13],
 "classfrc_1_1AnalogTrigger.html#a17372b905213830e41cb39b95eb43fbc":[5,0,5,72,8],
 "classfrc_1_1AnalogTrigger.html#a1a672771823b9fbf9c5a7c83dc589cf2":[5,0,5,72,9],
-"classfrc_1_1AnalogTrigger.html#a3791c47af10652791607b0cb8b73e186":[5,0,5,72,12]
+"classfrc_1_1AnalogTrigger.html#a3791c47af10652791607b0cb8b73e186":[5,0,5,72,12],
+"classfrc_1_1AnalogTrigger.html#a639996c23e1762e1619badc1b29133aa":[5,0,5,72,5]
 };

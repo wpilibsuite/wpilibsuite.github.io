@@ -1,6 +1,5 @@
 var NAVTREEINDEX28 =
 {
-"classwpi_1_1SmallString.html#a8a86ed91cdab01097a3c0988bfa8bbe1":[5,0,11,130,11],
 "classwpi_1_1SmallString.html#a9243be897f21d6af5f28ce323f6da5d1":[5,0,11,130,9],
 "classwpi_1_1SmallString.html#a97e331c07ce7f92a97f6ebb5de9fbee8":[5,0,11,130,23],
 "classwpi_1_1SmallString.html#a993d0bae9aa5fc63f655f0e5f122b3a5":[5,0,11,130,19],
@@ -249,5 +248,6 @@ var NAVTREEINDEX28 =
 "classwpi_1_1ThreadSafeRefCountedBase.html#a94d76dbcfbc48b6719da0b9b3972c48b":[5,0,11,118,2],
 "classwpi_1_1ThreadSafeRefCountedBase.html#af6ecd1ac4c143d644b611a6894af5026":[5,0,11,118,0],
 "classwpi_1_1UDPClient.html":[5,0,11,50],
-"classwpi_1_1UDPClient.html#a228132664971beff51bb99cd81187be0":[5,0,11,50,2]
+"classwpi_1_1UDPClient.html#a228132664971beff51bb99cd81187be0":[5,0,11,50,2],
+"classwpi_1_1UDPClient.html#a23103cc547c083ec02fe9a2e31bc6cf6":[5,0,11,50,12]
 };

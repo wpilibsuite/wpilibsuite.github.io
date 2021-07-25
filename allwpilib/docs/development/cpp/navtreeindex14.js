@@ -1,6 +1,5 @@
 var NAVTREEINDEX14 =
 {
-"classfrc_1_1MecanumDrivePoseEstimator.html":[5,0,5,69],
 "classfrc_1_1MecanumDrivePoseEstimator.html#a09d595a66bbb8e8779e204003de430f1":[5,0,5,69,5],
 "classfrc_1_1MecanumDrivePoseEstimator.html#a0f8251909256df2c00a750881ed4aee4":[5,0,5,69,6],
 "classfrc_1_1MecanumDrivePoseEstimator.html#a17b01865794677d966567bd5eb947935":[5,0,5,69,4],
@@ -249,5 +248,6 @@ var NAVTREEINDEX14 =
 "classfrc_1_1POVButton.html#a8e39c924b3cf1dfd1f91d57e4be1f916":[5,0,5,209,4],
 "classfrc_1_1POVButton.html#adf1cdc6927ea5d5c61ed14608ac96e49":[5,0,5,209,2],
 "classfrc_1_1PWM.html":[5,0,5,101],
-"classfrc_1_1PWM.html#a01390604df9af3793d58a0e9e9fd4f01":[5,0,5,101,16]
+"classfrc_1_1PWM.html#a01390604df9af3793d58a0e9e9fd4f01":[5,0,5,101,16],
+"classfrc_1_1PWM.html#a0a923a04eec01c5fb4abef602557cfc3":[5,0,5,101,11]
 };

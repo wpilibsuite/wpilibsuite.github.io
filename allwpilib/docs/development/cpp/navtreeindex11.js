@@ -1,6 +1,5 @@
 var NAVTREEINDEX11 =
 {
-"classfrc_1_1CounterBase.html#ac49861297aab49bb027022337a266ea6":[5,0,5,166,10],
 "classfrc_1_1CounterBase.html#add0bb1951e4b1cae772c34a911e3e99b":[5,0,5,166,2],
 "classfrc_1_1CounterBase.html#af246833332d671337fff0394423f05d2":[5,0,5,166,3],
 "classfrc_1_1CubicHermiteSpline.html":[5,0,5,51],
@@ -249,5 +248,6 @@ var NAVTREEINDEX11 =
 "classfrc_1_1DriverStation.html#adc7f51ddd1110dec980743c817a4e3e8":[5,0,5,123,19],
 "classfrc_1_1DriverStation.html#ae3a74b38ab9b75c54b009a1c03f85b8b":[5,0,5,123,24],
 "classfrc_1_1DriverStation.html#ae95b20dbb78d92dfd36b4f8d93f5ce2b":[5,0,5,123,46],
-"classfrc_1_1DriverStation.html#af9d228441507eabb554b15a83eec32e3":[5,0,5,123,35]
+"classfrc_1_1DriverStation.html#af9d228441507eabb554b15a83eec32e3":[5,0,5,123,35],
+"classfrc_1_1DriverStation.html#afbb94a8c73d56b28ad5af32e409e24e7":[5,0,5,123,12]
 };

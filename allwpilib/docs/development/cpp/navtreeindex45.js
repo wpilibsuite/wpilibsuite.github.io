@@ -1,6 +1,5 @@
 var NAVTREEINDEX45 =
 {
-"structfrc_1_1ChassisSpeeds.html#ae30530e339a3257a21f68aec2f6aee5a":[5,0,5,41,0],
 "structfrc_1_1DifferentialDriveWheelSpeeds.html":[5,0,5,46],
 "structfrc_1_1DifferentialDriveWheelSpeeds.html#a1936fbb4670627a049bccc42ea8af0be":[5,0,5,46,1],
 "structfrc_1_1DifferentialDriveWheelSpeeds.html#aabb78b11d42e39142a4accb224ddb7f1":[5,0,5,46,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX45 =
 "structwpi_1_1DenseMapInfo_3_01PointerIntPair_3_01PointerTy_00_01IntBits_00_01IntType_01_4_01_4.html":[5,0,11,111],
 "structwpi_1_1DenseMapInfo_3_01PointerIntPair_3_01PointerTy_00_01IntBits_00_01IntType_01_4_01_4.html#a1acf92505de011d9ed45b3da4ea00bd1":[5,0,11,111,2],
 "structwpi_1_1DenseMapInfo_3_01PointerIntPair_3_01PointerTy_00_01IntBits_00_01IntType_01_4_01_4.html#a1cefdfe148903820fb6f94d2a54e06d0":[5,0,11,111,3],
-"structwpi_1_1DenseMapInfo_3_01PointerIntPair_3_01PointerTy_00_01IntBits_00_01IntType_01_4_01_4.html#a2f759dea970e7542d4786687d56011ec":[5,0,11,111,1]
+"structwpi_1_1DenseMapInfo_3_01PointerIntPair_3_01PointerTy_00_01IntBits_00_01IntType_01_4_01_4.html#a2f759dea970e7542d4786687d56011ec":[5,0,11,111,1],
+"structwpi_1_1DenseMapInfo_3_01PointerIntPair_3_01PointerTy_00_01IntBits_00_01IntType_01_4_01_4.html#abdfa39293344d439b86e7eef8a651559":[5,0,11,111,0]
 };

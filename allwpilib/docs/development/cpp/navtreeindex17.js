@@ -1,6 +1,5 @@
 var NAVTREEINDEX17 =
 {
-"classfrc_1_1SensorUtil.html":[5,0,5,139],
 "classfrc_1_1SensorUtil.html#a099c3fbe2ab9c2d3fd8b89b069b52527":[5,0,5,139,7],
 "classfrc_1_1SensorUtil.html#a0dc2c39819ee4355b9dd7b1fc933445a":[5,0,5,139,4],
 "classfrc_1_1SensorUtil.html#a25df178a8bdef462fd0c589433f0cfdf":[5,0,5,139,12],
@@ -249,5 +248,6 @@ var NAVTREEINDEX17 =
 "classfrc_1_1Solenoid.html#a2de33f14859ab5a2824baadc27c22c6a":[5,0,5,78,4],
 "classfrc_1_1Solenoid.html#a492d0b0e1c8f0252c74d412972d77763":[5,0,5,78,9],
 "classfrc_1_1Solenoid.html#a4d3ab0a50505de46f11db82e2fb6da77":[5,0,5,78,0],
-"classfrc_1_1Solenoid.html#a60b4342d9bddc7bf5745918622a08290":[5,0,5,78,12]
+"classfrc_1_1Solenoid.html#a60b4342d9bddc7bf5745918622a08290":[5,0,5,78,12],
+"classfrc_1_1Solenoid.html#a7bad65cf487982ff560263eab0addc80":[5,0,5,78,8]
 };

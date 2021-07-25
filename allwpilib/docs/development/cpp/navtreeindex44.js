@@ -1,6 +1,5 @@
 var NAVTREEINDEX44 =
 {
-"structdetail_1_1dragonbox_1_1cache__accessor_3_01double_01_4.html#a0e5b419d37e746cb7f44d38a61883a9a":[5,0,1,0,3,4],
 "structdetail_1_1dragonbox_1_1cache__accessor_3_01double_01_4.html#a21e3884e68a4eff09d7ca3b764c77505":[5,0,1,0,3,3],
 "structdetail_1_1dragonbox_1_1cache__accessor_3_01double_01_4.html#a22059df243d8683972817ba0361b9935":[5,0,1,0,3,7],
 "structdetail_1_1dragonbox_1_1cache__accessor_3_01double_01_4.html#a226093a94aa467e386878dabd05f3f97":[5,0,1,0,3,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX44 =
 "structfrc_1_1ChassisSpeeds.html":[5,0,5,41],
 "structfrc_1_1ChassisSpeeds.html#a01659f3eea6569ee27d4db843d6f5be5":[5,0,5,41,2],
 "structfrc_1_1ChassisSpeeds.html#a1b2ecdc4d2884220274eed58c67fd9dc":[5,0,5,41,3],
-"structfrc_1_1ChassisSpeeds.html#a512d3d4511e399adc63651fbf8ee18bf":[5,0,5,41,1]
+"structfrc_1_1ChassisSpeeds.html#a512d3d4511e399adc63651fbf8ee18bf":[5,0,5,41,1],
+"structfrc_1_1ChassisSpeeds.html#ae30530e339a3257a21f68aec2f6aee5a":[5,0,5,41,0]
 };

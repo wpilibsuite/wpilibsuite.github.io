@@ -1,6 +1,5 @@
 var NAVTREEINDEX41 =
 {
-"group__ntcore__typedgetters__cfunc.html#ga7ffa611ac1b899c70dfbfe30e09291ff":[3,2,9,1,2],
 "group__ntcore__typedgetters__cfunc.html#ga92ad3d4575d004d051798ca49b0a01dc":[3,2,9,1,13],
 "group__ntcore__typedgetters__cfunc.html#gaabea79578421e6342b9c23406f680823":[3,2,9,1,9],
 "group__ntcore__typedgetters__cfunc.html#gab120380be861101d44e36d03849e900d":[3,2,9,1,12],
@@ -29,8 +28,8 @@ var NAVTREEINDEX41 =
 "group__ntcore__utility__cfunc.html#gaeed743779ac03356d76f3489cfd98012":[3,2,7,6],
 "group__ntcore__utility__cfunc.html#gaeef9d0e4e266cd4d91632566debdf911":[3,2,7,7],
 "group__ntcore__utility__func.html":[3,1,7],
-"group__ntcore__utility__func.html#ga9e57c1308e76272f160b24b18b3ee254":[3,1,7,0],
 "group__ntcore__utility__func.html#ga9e57c1308e76272f160b24b18b3ee254":[4,0,12,70],
+"group__ntcore__utility__func.html#ga9e57c1308e76272f160b24b18b3ee254":[3,1,7,0],
 "group__ntcore__valuesetters__cfunc.html":[3,2,9,3],
 "group__ntcore__valuesetters__cfunc.html#ga0cb0f1870887cbab71cd712fe0b2f22a":[3,2,9,3,5],
 "group__ntcore__valuesetters__cfunc.html#ga4241b3336dd976d05d3b679efd68f213":[3,2,9,3,0],
@@ -116,8 +115,8 @@ var NAVTREEINDEX41 =
 "iterator__range_8h.html#a4910dff5043051d7289e9027e5945e66":[6,0,11,38,2],
 "iterator__range_8h.html#a4c5d16e42b960b9186d08d96e4d3a440":[4,0,16,365],
 "iterator__range_8h.html#a4c5d16e42b960b9186d08d96e4d3a440":[6,0,11,38,3],
-"iterator__range_8h.html#afb625790b1f092e587f989ad80a110c1":[4,0,16,272],
 "iterator__range_8h.html#afb625790b1f092e587f989ad80a110c1":[6,0,11,38,1],
+"iterator__range_8h.html#afb625790b1f092e587f989ad80a110c1":[4,0,16,272],
 "iterator__range_8h_source.html":[6,0,11,38],
 "jni__util_8h_source.html":[6,0,11,39],
 "json_8h.html#a1992aabda94aacf77e489a7df2fe4325":[4,0,15,10],
@@ -249,5 +248,6 @@ var NAVTREEINDEX41 =
 "namespacewpi_1_1detail.html#af7eb0a21968e2b1f34c5fe775368a425":[4,0,16,0,93],
 "namespacewpi_1_1detail.html#afe0837f80c2797e20e43f5cf9d1f5174":[4,0,16,0,80],
 "namespacewpi_1_1java.html":[4,0,16,3],
-"namespacewpi_1_1java.html#a03d617c196aeee2778c8b22699dd4acb":[4,0,16,3,19]
+"namespacewpi_1_1java.html#a03d617c196aeee2778c8b22699dd4acb":[4,0,16,3,19],
+"namespacewpi_1_1java.html#a4f1058b45861b4abda3c9a43fa80e0fc":[4,0,16,3,11]
 };

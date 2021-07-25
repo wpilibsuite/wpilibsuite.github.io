@@ -1,6 +1,5 @@
 var NAVTREEINDEX29 =
 {
-"classwpi_1_1UDPClient.html#a23103cc547c083ec02fe9a2e31bc6cf6":[5,0,11,50,12],
 "classwpi_1_1UDPClient.html#a4e3a48744d427a72a56cb01d1633f31b":[5,0,11,50,11],
 "classwpi_1_1UDPClient.html#a61b42504b49a8a73ea36fb31ed9a45bb":[5,0,11,50,1],
 "classwpi_1_1UDPClient.html#a6796644123d036b92550ab8e037d7b68":[5,0,11,50,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX29 =
 "classwpi_1_1detail_1_1WorkerThreadThread.html":[5,0,11,0,76],
 "classwpi_1_1detail_1_1WorkerThreadThread.html#a0a575b39105806fc177758459cfd8504":[5,0,11,0,76,1],
 "classwpi_1_1detail_1_1WorkerThreadThread.html#a0e7f2c0d5271b0c7a9df0ed39498588d":[5,0,11,0,76,3],
-"classwpi_1_1detail_1_1WorkerThreadThread.html#a60eddfde8b2a48148cc4d19a1121fb69":[5,0,11,0,76,2]
+"classwpi_1_1detail_1_1WorkerThreadThread.html#a60eddfde8b2a48148cc4d19a1121fb69":[5,0,11,0,76,2],
+"classwpi_1_1detail_1_1WorkerThreadThread.html#a83af2185561e609142cf1495fa4ae909":[5,0,11,0,76,0]
 };
