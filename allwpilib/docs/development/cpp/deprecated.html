@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-2-22-g50af74c</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2-24-gd7b8aa5</span>
    </div>
   </td>
  </tr>
@@ -100,14 +100,14 @@ $(document).ready(function(){initNavTree('deprecated.html',''); initResizable();
 <dd><a class="anchor" id="_deprecated000011"></a>Use SetResolution on the UsbCamera returned by <a class="el" href="classfrc_1_1CameraServer.html#a0eb9f7657053544a951403086f178f2e" title="Start automatically capturing images to send to the dashboard.">StartAutomaticCapture()</a> instead.  </dd>
 <dt>Class <a class="el" href="classfrc_1_1Controller.html">frc::Controller</a>  </dt>
 <dd><a class="anchor" id="_deprecated000024"></a>Only used by the deprecated <a class="el" href="classfrc_1_1PIDController.html" title="Class implements a PID Control Loop.">PIDController</a>  </dd>
+<dt>Class <a class="el" href="classfrc_1_1PIDBase.html">frc::PIDBase</a>  </dt>
+<dd><a class="anchor" id="_deprecated000026"></a>All APIs which use this have been deprecated.  </dd>
 <dt>Member <a class="el" href="classfrc_1_1DriverStation.html#ab8aad79200fa541f5f8c0088550fabc3">frc::DriverStation::GetInstance</a>  ()</dt>
 <dd><a class="anchor" id="_deprecated000017"></a>Use the static methods  </dd>
 <dt>Member <a class="el" href="classfrc_1_1IterativeRobotBase.html#adaad67b57154bd85fef26a742d9c66b2">frc::IterativeRobotBase::IterativeRobotBase</a>  (double period)</dt>
 <dd><a class="anchor" id="_deprecated000015"></a>Use <a class="el" href="classfrc_1_1IterativeRobotBase.html#afee5b7301bc0f4579d76f840a18f2cca" title="Constructor for IterativeRobotBase.">IterativeRobotBase(units::second_t period)</a> with unit-safety instead  </dd>
 <dt>Member <a class="el" href="classfrc_1_1LiveWindow.html#ab1d14ba99d478ccabccffa8ee23a1261">frc::LiveWindow::GetInstance</a>  ()</dt>
 <dd><a class="anchor" id="_deprecated000014"></a>Use the static methods unless guaranteeing <a class="el" href="classfrc_1_1LiveWindow.html" title="The LiveWindow class is the public interface for putting sensors and actuators on the LiveWindow.">LiveWindow</a> is instantiated  </dd>
-<dt>Class <a class="el" href="classfrc_1_1PIDBase.html">frc::PIDBase</a>  </dt>
-<dd><a class="anchor" id="_deprecated000026"></a>All APIs which use this have been deprecated.  </dd>
 <dt>Class <a class="el" href="classfrc_1_1PIDController.html">frc::PIDController</a>  </dt>
 <dd><a class="anchor" id="_deprecated000025"></a>Use <a class="el" href="classfrc2_1_1PIDController.html" title="Implements a PID control loop.">frc2::PIDController</a> class instead.  </dd>
 <dt>Class <a class="el" href="classfrc_1_1PIDInterface.html">frc::PIDInterface</a>  </dt>
@@ -128,22 +128,22 @@ $(document).ready(function(){initNavTree('deprecated.html',''); initResizable();
 <dd><a class="anchor" id="_deprecated000022"></a>use unit-safe <a class="el" href="classfrc_1_1SPI.html#a7d77b758daa0cc642fcd08482b70f07d" title="Start running the automatic SPI transfer engine at a periodic rate.">StartAutoRate(units::second_t period)</a> instead. </dd>
 <dt>Member <a class="el" href="classfrc_1_1TimedRobot.html#a70890d7283a8afc101de444e99b6fb7a">frc::TimedRobot::TimedRobot</a>  (double period)</dt>
 <dd><a class="anchor" id="_deprecated000019"></a>use unit safe constructor instead. <a class="el" href="classfrc_1_1TimedRobot.html" title="TimedRobot implements the IterativeRobotBase robot program framework.">TimedRobot</a>(units::second_t period = kDefaultPeriod) </dd>
-<dt>Member <a class="el" href="classwpi_1_1SendableHelper.html#a3e272258586ef98d2c1b8f6be76a1663">wpi::SendableHelper&lt; Derived &gt;::AddChild</a>  (void *child)</dt>
-<dd><a class="anchor" id="_deprecated000007"></a>use <a class="el" href="classwpi_1_1SendableRegistry.html#ac2afd88e07f863cb483d4dd27ae7248f" title="Adds a child object to an object.">SendableRegistry::AddChild()</a> </dd>
 <dt>Member <a class="el" href="classwpi_1_1SendableHelper.html#a7ce2af28692ec77440d09ab8c2d36425">wpi::SendableHelper&lt; Derived &gt;::AddChild</a>  (std::shared_ptr&lt; Sendable &gt; child)</dt>
 <dd><a class="anchor" id="_deprecated000006"></a>use <a class="el" href="classwpi_1_1SendableRegistry.html#ac2afd88e07f863cb483d4dd27ae7248f" title="Adds a child object to an object.">SendableRegistry::AddChild()</a> </dd>
+<dt>Member <a class="el" href="classwpi_1_1SendableHelper.html#a3e272258586ef98d2c1b8f6be76a1663">wpi::SendableHelper&lt; Derived &gt;::AddChild</a>  (void *child)</dt>
+<dd><a class="anchor" id="_deprecated000007"></a>use <a class="el" href="classwpi_1_1SendableRegistry.html#ac2afd88e07f863cb483d4dd27ae7248f" title="Adds a child object to an object.">SendableRegistry::AddChild()</a> </dd>
 <dt>Member <a class="el" href="classwpi_1_1SendableHelper.html#ad914b3555af5651aaaa3d8b1cec83b91">wpi::SendableHelper&lt; Derived &gt;::GetName</a>  () const</dt>
 <dd><a class="anchor" id="_deprecated000001"></a>use <a class="el" href="classwpi_1_1SendableRegistry.html#a0a7ee8ac942d74550df792117c156c3c" title="Gets the name of an object.">SendableRegistry::GetName()</a> </dd>
 <dt>Member <a class="el" href="classwpi_1_1SendableHelper.html#ae661490f5da84e30594380eeb5d4952b">wpi::SendableHelper&lt; Derived &gt;::GetSubsystem</a>  () const</dt>
 <dd><a class="anchor" id="_deprecated000004"></a>use <a class="el" href="classwpi_1_1SendableRegistry.html#a43c045eb913718f9758ad78fe59e8697" title="Gets the subsystem name of an object.">SendableRegistry::GetSubsystem()</a>. </dd>
+<dt>Member <a class="el" href="classwpi_1_1SendableHelper.html#ab2953192a91f457768c3d879599ee924">wpi::SendableHelper&lt; Derived &gt;::SetName</a>  (std::string_view moduleType, int moduleNumber, int channel)</dt>
+<dd><a class="anchor" id="_deprecated000009"></a>use <a class="el" href="classwpi_1_1SendableRegistry.html#a4048e865587f2fe2b9f8b9ce32c5a9bf" title="Sets the name of an object.">SendableRegistry::SetName()</a> </dd>
 <dt>Member <a class="el" href="classwpi_1_1SendableHelper.html#a4cc45e3b86841263aaf59223ffeb3c88">wpi::SendableHelper&lt; Derived &gt;::SetName</a>  (std::string_view moduleType, int channel)</dt>
 <dd><a class="anchor" id="_deprecated000008"></a>use <a class="el" href="classwpi_1_1SendableRegistry.html#a4048e865587f2fe2b9f8b9ce32c5a9bf" title="Sets the name of an object.">SendableRegistry::SetName()</a> </dd>
 <dt>Member <a class="el" href="classwpi_1_1SendableHelper.html#a75eba171de041df5ccdd8118287f9511">wpi::SendableHelper&lt; Derived &gt;::SetName</a>  (std::string_view subsystem, std::string_view name)</dt>
 <dd><a class="anchor" id="_deprecated000003"></a>use <a class="el" href="classwpi_1_1SendableRegistry.html#a4048e865587f2fe2b9f8b9ce32c5a9bf" title="Sets the name of an object.">SendableRegistry::SetName()</a> </dd>
 <dt>Member <a class="el" href="classwpi_1_1SendableHelper.html#ab63e9f45842f45bfe5332041be0ef215">wpi::SendableHelper&lt; Derived &gt;::SetName</a>  (std::string_view name)</dt>
 <dd><a class="anchor" id="_deprecated000002"></a>use <a class="el" href="classwpi_1_1SendableRegistry.html#a4048e865587f2fe2b9f8b9ce32c5a9bf" title="Sets the name of an object.">SendableRegistry::SetName()</a> </dd>
-<dt>Member <a class="el" href="classwpi_1_1SendableHelper.html#ab2953192a91f457768c3d879599ee924">wpi::SendableHelper&lt; Derived &gt;::SetName</a>  (std::string_view moduleType, int moduleNumber, int channel)</dt>
-<dd><a class="anchor" id="_deprecated000009"></a>use <a class="el" href="classwpi_1_1SendableRegistry.html#a4048e865587f2fe2b9f8b9ce32c5a9bf" title="Sets the name of an object.">SendableRegistry::SetName()</a> </dd>
 <dt>Member <a class="el" href="classwpi_1_1SendableHelper.html#a11434f29c9ef91c9975969fb88212482">wpi::SendableHelper&lt; Derived &gt;::SetSubsystem</a>  (std::string_view subsystem)</dt>
 <dd><a class="anchor" id="_deprecated000005"></a>use <a class="el" href="classwpi_1_1SendableRegistry.html#a4576e94034731e6336a6d921a838b81b" title="Sets the subsystem name of an object.">SendableRegistry::SetSubsystem()</a></dd>
 </dl>
@@ -153,7 +153,7 @@ $(document).ready(function(){initNavTree('deprecated.html',''); initResizable();
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Jul 25 2021 14:45:21 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Jul 26 2021 14:32:12 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
