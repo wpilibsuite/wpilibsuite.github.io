@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-2-25-g85748f2</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2-26-g3838cc4</span>
    </div>
   </td>
  </tr>
@@ -244,7 +244,7 @@ Static Public Member Functions</h2></td></tr>
     <tr><td class="paramname">driveMotor</td><td>A <a class="el" href="classfrc_1_1DCMotor.html">DCMotor</a> representing the left side of the drivetrain. </td></tr>
     <tr><td class="paramname">gearingRatio</td><td>The gearingRatio ratio of the left side, as output over input. This must be the same ratio as the ratio used to identify or create the drivetrainPlant. </td></tr>
     <tr><td class="paramname">wheelRadiusMeters</td><td>The radius of the wheels on the drivetrain, in meters. </td></tr>
-    <tr><td class="paramname">measurementStdDevs</td><td>Standard deviations for measurements, in the form [x, y, heading, left velocity, right velocity, left distance, right distance]^T. Can be omitted if no noise is desired. <a class="el" href="classfrc_1_1Gyro.html" title="Interface for yaw rate gyros.">Gyro</a> standard deviations of 0.0001 radians, velocity standard deviations of 0.05 m/s, and position measurement standard deviations of 0.005 meters are a reasonable starting point. </td></tr>
+    <tr><td class="paramname">measurementStdDevs</td><td>Standard deviations for measurements, in the form [x, y, heading, left velocity, right velocity, left distance, right distance]ᵀ. Can be omitted if no noise is desired. <a class="el" href="classfrc_1_1Gyro.html" title="Interface for yaw rate gyros.">Gyro</a> standard deviations of 0.0001 radians, velocity standard deviations of 0.05 m/s, and position measurement standard deviations of 0.005 meters are a reasonable starting point. </td></tr>
   </table>
   </dd>
 </dl>
@@ -316,7 +316,7 @@ Static Public Member Functions</h2></td></tr>
     <tr><td class="paramname">mass</td><td>The mass of the drivebase. </td></tr>
     <tr><td class="paramname">wheelRadius</td><td>The radius of the wheels on the drivetrain. </td></tr>
     <tr><td class="paramname">trackWidth</td><td>The robot's track width, or distance between left and right wheels. </td></tr>
-    <tr><td class="paramname">measurementStdDevs</td><td>Standard deviations for measurements, in the form [x, y, heading, left velocity, right velocity, left distance, right distance]^T. Can be omitted if no noise is desired. <a class="el" href="classfrc_1_1Gyro.html" title="Interface for yaw rate gyros.">Gyro</a> standard deviations of 0.0001 radians, velocity standard deviations of 0.05 m/s, and position measurement standard deviations of 0.005 meters are a reasonable starting point. </td></tr>
+    <tr><td class="paramname">measurementStdDevs</td><td>Standard deviations for measurements, in the form [x, y, heading, left velocity, right velocity, left distance, right distance]ᵀ. Can be omitted if no noise is desired. <a class="el" href="classfrc_1_1Gyro.html" title="Interface for yaw rate gyros.">Gyro</a> standard deviations of 0.0001 radians, velocity standard deviations of 0.05 m/s, and position measurement standard deviations of 0.005 meters are a reasonable starting point. </td></tr>
   </table>
   </dd>
 </dl>
@@ -405,7 +405,7 @@ Static Public Member Functions</h2></td></tr>
     <tr><td class="paramname">motor</td><td>The motors installed in the bot. </td></tr>
     <tr><td class="paramname">gearing</td><td>The gearing reduction used. </td></tr>
     <tr><td class="paramname">wheelSize</td><td>The wheel size. </td></tr>
-    <tr><td class="paramname">measurementStdDevs</td><td>Standard deviations for measurements, in the form [x, y, heading, left velocity, right velocity, left distance, right distance]^T. Can be omitted if no noise is desired. <a class="el" href="classfrc_1_1Gyro.html" title="Interface for yaw rate gyros.">Gyro</a> standard deviations of 0.0001 radians, velocity standard deviations of 0.05 m/s, and position measurement standard deviations of 0.005 meters are a reasonable starting point. </td></tr>
+    <tr><td class="paramname">measurementStdDevs</td><td>Standard deviations for measurements, in the form [x, y, heading, left velocity, right velocity, left distance, right distance]ᵀ. Can be omitted if no noise is desired. <a class="el" href="classfrc_1_1Gyro.html" title="Interface for yaw rate gyros.">Gyro</a> standard deviations of 0.0001 radians, velocity standard deviations of 0.05 m/s, and position measurement standard deviations of 0.005 meters are a reasonable starting point. </td></tr>
   </table>
   </dd>
 </dl>
@@ -471,7 +471,7 @@ Static Public Member Functions</h2></td></tr>
     <tr><td class="paramname">gearing</td><td>The gearing reduction used. </td></tr>
     <tr><td class="paramname">wheelSize</td><td>The wheel size. </td></tr>
     <tr><td class="paramname">J</td><td>The moment of inertia of the drivebase. This can be calculated using frc-characterization. </td></tr>
-    <tr><td class="paramname">measurementStdDevs</td><td>Standard deviations for measurements, in the form [x, y, heading, left velocity, right velocity, left distance, right distance]^T. Can be omitted if no noise is desired. <a class="el" href="classfrc_1_1Gyro.html" title="Interface for yaw rate gyros.">Gyro</a> standard deviations of 0.0001 radians, velocity standard deviations of 0.05 m/s, and position measurement standard deviations of 0.005 meters are a reasonable starting point. </td></tr>
+    <tr><td class="paramname">measurementStdDevs</td><td>Standard deviations for measurements, in the form [x, y, heading, left velocity, right velocity, left distance, right distance]ᵀ. Can be omitted if no noise is desired. <a class="el" href="classfrc_1_1Gyro.html" title="Interface for yaw rate gyros.">Gyro</a> standard deviations of 0.0001 radians, velocity standard deviations of 0.05 m/s, and position measurement standard deviations of 0.005 meters are a reasonable starting point. </td></tr>
   </table>
   </dd>
 </dl>
@@ -762,7 +762,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>frc</b></li><li class="navelem"><b>sim</b></li><li class="navelem"><a class="el" href="classfrc_1_1sim_1_1DifferentialDrivetrainSim.html">DifferentialDrivetrainSim</a></li>
-    <li class="footer">Generated on Thu Jul 29 2021 04:54:19 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Jul 30 2021 05:45:10 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

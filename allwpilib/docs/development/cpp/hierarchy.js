@@ -109,10 +109,10 @@ var hierarchy =
       [ "basic_memory_buffer< wchar_t >", "classbasic__memory__buffer.html", null ],
       [ "basic_memory_buffer< T, SIZE, Allocator >", "classbasic__memory__buffer.html", null ]
     ] ],
-    [ "buffer< Char >", "classbuffer.html", null ],
     [ "buffer< char >", "classbuffer.html", [
       [ "counting_buffer< T >", "classcounting__buffer.html", null ]
     ] ],
+    [ "buffer< Char >", "classbuffer.html", null ],
     [ "buffer< Container::value_type >", "classbuffer.html", [
       [ "iterator_buffer< std::back_insert_iterator< Container >, enable_if_t< is_contiguous< Container >::value, typename Container::value_type > >", "classiterator__buffer_3_01std_1_1back__insert__iterator_3_01Container_01_4_00_01enable__if__t_3_35791268f9463b30b303085098f291bc.html", null ]
     ] ],

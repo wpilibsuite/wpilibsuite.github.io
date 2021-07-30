@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-2-25-g85748f2</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2-26-g3838cc4</span>
    </div>
   </td>
  </tr>
@@ -100,12 +100,12 @@ $(document).ready(function(){initNavTree('structwpi_1_1PointerIntPairInfo.html',
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a4d6df6c329cf3b6a1418b72c9decf17a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: uintptr_t { <a class="el" href="structwpi_1_1PointerIntPairInfo.html#a4d6df6c329cf3b6a1418b72c9decf17aad4d8412a6a5e67595910d32fca3085b6">PointerBitMask</a>
-, <a class="el" href="structwpi_1_1PointerIntPairInfo.html#a4d6df6c329cf3b6a1418b72c9decf17aaee7e35cc4962c7d9880e52e54bd841da">IntShift</a> = (uintptr_t)PtrTraits::NumLowBitsAvailable - IntBits
-, <a class="el" href="structwpi_1_1PointerIntPairInfo.html#a4d6df6c329cf3b6a1418b72c9decf17aae4401b6d48b3c6159d5eec1e5c867169">IntMask</a> = (uintptr_t)(((intptr_t)1 &lt;&lt; IntBits) - 1)
+<tr class="memitem:a8f2266dfc71f87a18a6b653691e5b743"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">: uintptr_t { <a class="el" href="structwpi_1_1PointerIntPairInfo.html#a8f2266dfc71f87a18a6b653691e5b743ad4d8412a6a5e67595910d32fca3085b6">PointerBitMask</a>
+, <a class="el" href="structwpi_1_1PointerIntPairInfo.html#a8f2266dfc71f87a18a6b653691e5b743aee7e35cc4962c7d9880e52e54bd841da">IntShift</a> = (uintptr_t)PtrTraits::NumLowBitsAvailable - IntBits
+, <a class="el" href="structwpi_1_1PointerIntPairInfo.html#a8f2266dfc71f87a18a6b653691e5b743ae4401b6d48b3c6159d5eec1e5c867169">IntMask</a> = (uintptr_t)(((intptr_t)1 &lt;&lt; IntBits) - 1)
 , <b>ShiftedIntMask</b> = (uintptr_t)(IntMask &lt;&lt; IntShift)
  }</td></tr>
-<tr class="separator:a4d6df6c329cf3b6a1418b72c9decf17a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a8f2266dfc71f87a18a6b653691e5b743"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -123,8 +123,8 @@ static intptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>updateInt<
 <tr class="separator:afa13d415e0727c7c5eb37b8b957d3eb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="a4d6df6c329cf3b6a1418b72c9decf17a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d6df6c329cf3b6a1418b72c9decf17a">&#9670;&nbsp;</a></span>anonymous enum</h2>
+<a id="a8f2266dfc71f87a18a6b653691e5b743"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f2266dfc71f87a18a6b653691e5b743">&#9670;&nbsp;</a></span>anonymous enum</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -137,11 +137,11 @@ template&lt;typename PointerT , unsigned IntBits, typename PtrTraits &gt; </div>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a4d6df6c329cf3b6a1418b72c9decf17aad4d8412a6a5e67595910d32fca3085b6"></a>PointerBitMask&#160;</td><td class="fielddoc"><p>PointerBitMask - The bits that come from the pointer. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a8f2266dfc71f87a18a6b653691e5b743ad4d8412a6a5e67595910d32fca3085b6"></a>PointerBitMask&#160;</td><td class="fielddoc"><p>PointerBitMask - The bits that come from the pointer. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a4d6df6c329cf3b6a1418b72c9decf17aaee7e35cc4962c7d9880e52e54bd841da"></a>IntShift&#160;</td><td class="fielddoc"><p>IntShift - The number of low bits that we reserve for other uses, and keep zero. </p>
+<tr><td class="fieldname"><a id="a8f2266dfc71f87a18a6b653691e5b743aee7e35cc4962c7d9880e52e54bd841da"></a>IntShift&#160;</td><td class="fielddoc"><p>IntShift - The number of low bits that we reserve for other uses, and keep zero. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a4d6df6c329cf3b6a1418b72c9decf17aae4401b6d48b3c6159d5eec1e5c867169"></a>IntMask&#160;</td><td class="fielddoc"><p>IntMask - This is the unshifted mask for valid bits of the int type. </p>
+<tr><td class="fieldname"><a id="a8f2266dfc71f87a18a6b653691e5b743ae4401b6d48b3c6159d5eec1e5c867169"></a>IntMask&#160;</td><td class="fielddoc"><p>IntMask - This is the unshifted mask for valid bits of the int type. </p>
 </td></tr>
 </table>
 
@@ -156,7 +156,7 @@ template&lt;typename PointerT , unsigned IntBits, typename PtrTraits &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>wpi</b></li><li class="navelem"><a class="el" href="structwpi_1_1PointerIntPairInfo.html">PointerIntPairInfo</a></li>
-    <li class="footer">Generated on Thu Jul 29 2021 04:54:20 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Jul 30 2021 05:45:10 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

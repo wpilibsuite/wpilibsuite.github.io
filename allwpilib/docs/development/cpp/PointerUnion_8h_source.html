@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-2-25-g85748f2</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2-26-g3838cc4</span>
    </div>
   </td>
  </tr>
@@ -254,7 +254,7 @@ $(document).ready(function(){initNavTree('PointerUnion_8h_source.html',''); init
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;}</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> PT1, <span class="keyword">typename</span> PT2&gt;</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="namespacewpi_1_1detail.html#ae0ba1341aee62171fc05eed5b2d973f2">operator&lt;</a>(PointerUnion&lt;PT1, PT2&gt; lhs, PointerUnion&lt;PT1, PT2&gt; rhs) {</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="keywordtype">bool</span> operator&lt;(PointerUnion&lt;PT1, PT2&gt; lhs, PointerUnion&lt;PT1, PT2&gt; rhs) {</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;  <span class="keywordflow">return</span> lhs.getOpaqueValue() &lt; rhs.getOpaqueValue();</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;}</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
@@ -541,7 +541,6 @@ $(document).ready(function(){initNavTree('PointerUnion_8h_source.html',''); init
 <div class="ttc" id="aclasswpi_1_1PointerUnion_html_a500bc509f47b5dab1a1f0d060564940a"><div class="ttname"><a href="classwpi_1_1PointerUnion.html#a500bc509f47b5dab1a1f0d060564940a">wpi::PointerUnion::getAddrOfPtr1</a></div><div class="ttdeci">PT1 * getAddrOfPtr1()</div><div class="ttdoc">If the union is set to the first pointer type get an address pointing to it.</div><div class="ttdef"><b>Definition:</b> PointerUnion.h:156</div></div>
 <div class="ttc" id="aclasswpi_1_1PointerUnion_html_abac6b009768b5b75ce6e646400e77839"><div class="ttname"><a href="classwpi_1_1PointerUnion.html#abac6b009768b5b75ce6e646400e77839">wpi::PointerUnion::getAddrOfPtr1</a></div><div class="ttdeci">PT1 const  * getAddrOfPtr1() const</div><div class="ttdoc">If the union is set to the first pointer type get an address pointing to it.</div><div class="ttdef"><b>Definition:</b> PointerUnion.h:150</div></div>
 <div class="ttc" id="aclasswpi_1_1PointerUnion_html_aedaf22ea52594ef8e35e6ffe9a1f76a5"><div class="ttname"><a href="classwpi_1_1PointerUnion.html#aedaf22ea52594ef8e35e6ffe9a1f76a5">wpi::PointerUnion::get</a></div><div class="ttdeci">T get() const</div><div class="ttdoc">Returns the value of the specified pointer type.</div><div class="ttdef"><b>Definition:</b> PointerUnion.h:135</div></div>
-<div class="ttc" id="anamespacewpi_1_1detail_html_ae0ba1341aee62171fc05eed5b2d973f2"><div class="ttname"><a href="namespacewpi_1_1detail.html#ae0ba1341aee62171fc05eed5b2d973f2">wpi::detail::operator&lt;</a></div><div class="ttdeci">bool operator&lt;(const value_t lhs, const value_t rhs) noexcept</div><div class="ttdoc">comparison operator for JSON types</div><div class="ttdef"><b>Definition:</b> json.h:725</div></div>
 <div class="ttc" id="astructwpi_1_1DenseMapInfo_html"><div class="ttname"><a href="structwpi_1_1DenseMapInfo.html">wpi::DenseMapInfo</a></div><div class="ttdef"><b>Definition:</b> DenseMapInfo.h:29</div></div>
 <div class="ttc" id="astructwpi_1_1PointerLikeTypeTraits_html"><div class="ttname"><a href="structwpi_1_1PointerLikeTypeTraits.html">wpi::PointerLikeTypeTraits</a></div><div class="ttdoc">A traits type that is used to handle pointer types and things that are just wrappers for pointers as ...</div><div class="ttdef"><b>Definition:</b> PointerLikeTypeTraits.h:26</div></div>
 <div class="ttc" id="astructwpi_1_1PointerUnionTypeSelectorReturn_html"><div class="ttname"><a href="structwpi_1_1PointerUnionTypeSelectorReturn.html">wpi::PointerUnionTypeSelectorReturn</a></div><div class="ttdef"><b>Definition:</b> PointerUnion.h:27</div></div>
@@ -552,7 +551,7 @@ $(document).ready(function(){initNavTree('PointerUnion_8h_source.html',''); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><b>PointerUnion.h</b></li>
-    <li class="footer">Generated on Thu Jul 29 2021 04:54:17 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Jul 30 2021 05:45:07 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

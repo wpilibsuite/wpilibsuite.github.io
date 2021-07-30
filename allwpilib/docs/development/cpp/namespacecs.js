@@ -1,5 +1,7 @@
 var namespacecs =
 [
+    [ "RawCvSource", "classcs_1_1RawCvSource.html", "classcs_1_1RawCvSource" ],
+    [ "RawCvSink", "classcs_1_1RawCvSink.html", "classcs_1_1RawCvSink" ],
     [ "VideoProperty", "classcs_1_1VideoProperty.html", "classcs_1_1VideoProperty" ],
     [ "VideoSource", "classcs_1_1VideoSource.html", "classcs_1_1VideoSource" ],
     [ "VideoCamera", "classcs_1_1VideoCamera.html", "classcs_1_1VideoCamera" ],
@@ -12,8 +14,6 @@ var namespacecs =
     [ "ImageSink", "classcs_1_1ImageSink.html", "classcs_1_1ImageSink" ],
     [ "VideoEvent", "classcs_1_1VideoEvent.html", "classcs_1_1VideoEvent" ],
     [ "VideoListener", "classcs_1_1VideoListener.html", "classcs_1_1VideoListener" ],
-    [ "RawCvSource", "classcs_1_1RawCvSource.html", "classcs_1_1RawCvSource" ],
-    [ "RawCvSink", "classcs_1_1RawCvSink.html", "classcs_1_1RawCvSink" ],
     [ "UsbCameraInfo", "structcs_1_1UsbCameraInfo.html", "structcs_1_1UsbCameraInfo" ],
     [ "VideoMode", "structcs_1_1VideoMode.html", "structcs_1_1VideoMode" ],
     [ "RawEvent", "structcs_1_1RawEvent.html", "structcs_1_1RawEvent" ],
