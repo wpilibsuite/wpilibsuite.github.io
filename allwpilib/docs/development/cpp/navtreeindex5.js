@@ -1,7 +1,5 @@
 var NAVTREEINDEX5 =
 {
-"classcs_1_1VideoCamera.html#ad23d645013813023e3f44bd74181c730":[3,5,2,9],
-"classcs_1_1VideoCamera.html#adaa26f5f88023688b31453df12c44511":[3,5,2,1],
 "classcs_1_1VideoCamera.html#ae20cf9ed652f3002e3d8bbde3780467b":[3,5,2,7],
 "classcs_1_1VideoCamera.html#ae69e023351826887120c793b4e878d25":[3,5,2,0],
 "classcs_1_1VideoCamera.html#ae69e023351826887120c793b4e878d25a02d7962ea716ff8d107cfb004b3a43d6":[3,5,2,0,1],
@@ -249,5 +247,7 @@ var NAVTREEINDEX5 =
 "classfixed__buffer__traits.html":[5,0,63],
 "classfixed__buffer__traits.html#ab698b6022e95ad5bb37894026c5c35c2":[5,0,63,0],
 "classfixed__buffer__traits.html#ae2c26decc1ebe05e23bc9b892e0ea91d":[5,0,63,2],
-"classfixed__buffer__traits.html#af046ca12a717f896e1cfd05ffbc547cc":[5,0,63,1]
+"classfixed__buffer__traits.html#af046ca12a717f896e1cfd05ffbc547cc":[5,0,63,1],
+"classformat__arg__store.html":[5,0,65],
+"classformat__arg__store.html#a191fd70a63bba0bbc4b0735c1d25a39c":[5,0,65,0]
 };

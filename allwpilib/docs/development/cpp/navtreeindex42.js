@@ -1,5 +1,7 @@
 var NAVTREEINDEX42 =
 {
+"namespacewpi_1_1java.html#a03d617c196aeee2778c8b22699dd4acb":[4,0,16,3,19],
+"namespacewpi_1_1java.html#a4f1058b45861b4abda3c9a43fa80e0fc":[4,0,16,3,11],
 "namespacewpi_1_1java.html#a5f408e0ceb0dd41758e6b43649847bfc":[4,0,16,3,16],
 "namespacewpi_1_1java.html#a6cbe25ac3d8be6df498bc791b999f143":[4,0,16,3,12],
 "namespacewpi_1_1java.html#a70b85e53225cfdd4f6e038b20f922737":[4,0,16,3,20],
@@ -247,7 +249,5 @@ var NAVTREEINDEX42 =
 "structarg__data_3_01T_00_01Char_00_01NUM__ARGS_00_010_01_4.html":[5,0,16],
 "structarg__data_3_01T_00_01Char_00_01NUM__ARGS_00_010_01_4.html#a315911f9a475b6b715be0917b70e5d8e":[5,0,16,2],
 "structarg__data_3_01T_00_01Char_00_01NUM__ARGS_00_010_01_4.html#a6db93b990a99e7883708546c122dbb1d":[5,0,16,1],
-"structarg__data_3_01T_00_01Char_00_01NUM__ARGS_00_010_01_4.html#acff1969edf3d2a2bd25f7ffb99079ffd":[5,0,16,3],
-"structarg__data_3_01T_00_01Char_00_01NUM__ARGS_00_010_01_4.html#ada261be8a267069cabe5c056e43caaf4":[5,0,16,0],
-"structarg__formatter.html":[5,0,17]
+"structarg__data_3_01T_00_01Char_00_01NUM__ARGS_00_010_01_4.html#acff1969edf3d2a2bd25f7ffb99079ffd":[5,0,16,3]
 };

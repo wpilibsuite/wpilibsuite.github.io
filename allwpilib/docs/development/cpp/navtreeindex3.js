@@ -1,7 +1,5 @@
 var NAVTREEINDEX3 =
 {
-"SimHooks_8h.html#a2ca4241f51e886e406cd29d83ce92d7f":[4,0,7,3,41],
-"SimHooks_8h.html#a4abd9bb464b200a28c77b1f85d91fa42":[4,0,7,3,45],
 "SimHooks_8h.html#a5932dea02aade394f32c12fd192b85b2":[4,0,7,3,38],
 "SimHooks_8h.html#a6c4655aad02426d0f219581402046ba4":[4,0,7,3,46],
 "SimHooks_8h.html#a6d129478a208812555603fddaadbde65":[4,0,7,3,43],
@@ -249,5 +247,7 @@ var NAVTREEINDEX3 =
 "classappender.html#a508ba48c811da80b774dd5f0dbfd439a":[5,0,13,1],
 "classappender.html#a618ca4f10a702eaf2f4dbb3c01d47aca":[5,0,13,2],
 "classappender.html#a9f6efa22ca3010a96f3e69cdfb305b2c":[5,0,13,0],
-"classappender.html#aaf95c197690d6afcf71924ad22379be6":[5,0,13,4]
+"classappender.html#aaf95c197690d6afcf71924ad22379be6":[5,0,13,4],
+"classarg__converter.html":[5,0,14],
+"classarg__converter.html#a2efa84e846af53bd07ef607cdad09a4f":[5,0,14,0]
 };

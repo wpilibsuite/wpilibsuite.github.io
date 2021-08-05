@@ -1,7 +1,5 @@
 var NAVTREEINDEX7 =
 {
-"classfrc2_1_1PIDSubsystem.html#a682a32890b742eb9b43cbb2adb656997":[5,0,6,4,9],
-"classfrc2_1_1PIDSubsystem.html#a76daf61316bc7f627cd7779b006f0834":[5,0,6,4,3],
 "classfrc2_1_1PIDSubsystem.html#a99c42caaa509009866c23857b0e43ebd":[5,0,6,4,5],
 "classfrc2_1_1PIDSubsystem.html#a9d964985879992fd705a2a85c7a59aea":[5,0,6,4,0],
 "classfrc2_1_1PIDSubsystem.html#abf36af4af41831b283accd6b752ff20c":[5,0,6,4,11],
@@ -243,11 +241,13 @@ var NAVTREEINDEX7 =
 "classfrc2_1_1WaitUntilCommand.html#a6897adef259fbfac9e5dd2a3247ea29f":[5,0,6,39,0],
 "classfrc2_1_1WaitUntilCommand.html#ae3dec8d56168b0a73d3225fb7d94ce3b":[5,0,6,39,3],
 "classfrc2_1_1WaitUntilCommand.html#af45da729901f0e5652559de052ee4f00":[5,0,6,39,4],
-"classfrc_1_1ADXL345__I2C.html":[5,0,5,121],
-"classfrc_1_1ADXL345__I2C.html#a09e062fb683272a061e8df4355b8b53f":[5,0,5,121,20],
-"classfrc_1_1ADXL345__I2C.html#a0c9409813f7dbe0746ca9c8a4b7fc2d7":[5,0,5,121,16],
-"classfrc_1_1ADXL345__I2C.html#a0cd0c56e51cbe9713a27b421fc84ca17":[5,0,5,121,14],
-"classfrc_1_1ADXL345__I2C.html#a0ed23df38e595e5103b7ad638284c554":[5,0,5,121,15],
-"classfrc_1_1ADXL345__I2C.html#a18870eec0e140e5d6f34baacb51590ce":[5,0,5,121,7],
-"classfrc_1_1ADXL345__I2C.html#a1eb123f8d1b3dc4e120bcc51e5fde860":[5,0,5,121,3]
+"classfrc_1_1ADXL345__I2C.html":[5,0,5,122],
+"classfrc_1_1ADXL345__I2C.html#a09e062fb683272a061e8df4355b8b53f":[5,0,5,122,20],
+"classfrc_1_1ADXL345__I2C.html#a0c9409813f7dbe0746ca9c8a4b7fc2d7":[5,0,5,122,16],
+"classfrc_1_1ADXL345__I2C.html#a0cd0c56e51cbe9713a27b421fc84ca17":[5,0,5,122,14],
+"classfrc_1_1ADXL345__I2C.html#a0ed23df38e595e5103b7ad638284c554":[5,0,5,122,15],
+"classfrc_1_1ADXL345__I2C.html#a18870eec0e140e5d6f34baacb51590ce":[5,0,5,122,7],
+"classfrc_1_1ADXL345__I2C.html#a1eb123f8d1b3dc4e120bcc51e5fde860":[5,0,5,122,3],
+"classfrc_1_1ADXL345__I2C.html#a1eb123f8d1b3dc4e120bcc51e5fde860a224e069a37ef0b80f102b61c52d379fa":[5,0,5,122,3,3],
+"classfrc_1_1ADXL345__I2C.html#a1eb123f8d1b3dc4e120bcc51e5fde860a34018bf78380feee7dcf7f479b07af67":[5,0,5,122,3,1]
 };

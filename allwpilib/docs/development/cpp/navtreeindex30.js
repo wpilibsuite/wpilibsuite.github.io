@@ -1,7 +1,5 @@
 var NAVTREEINDEX30 =
 {
-"classwpi_1_1detail_1_1WorkerThreadThread.html#ad84eebb89f7b5b8ff91d8287fa58ea0f":[5,0,11,0,12,4],
-"classwpi_1_1detail_1_1exception.html":[5,0,11,0,40],
 "classwpi_1_1detail_1_1exception.html#a43ffe36cef21dcb2c10521b3e69b36d1":[5,0,11,0,40,0],
 "classwpi_1_1detail_1_1exception.html#a796612b2e2ba258c5dcd9118eec4941f":[5,0,11,0,40,1],
 "classwpi_1_1detail_1_1exception.html#ac4fcb2e58a8f952c1eb5c0f82f285270":[5,0,11,0,40,2],
@@ -249,5 +247,7 @@ var NAVTREEINDEX30 =
 "classwpi_1_1java_1_1JStringRef.html#ad01b117f49e7bdc5a60cba1ea9e91ba3":[5,0,11,3,5,0],
 "classwpi_1_1java_1_1detail_1_1JArrayRefBase.html":[5,0,11,3,0,2],
 "classwpi_1_1java_1_1detail_1_1JArrayRefBase.html#a071a6d9317510cbbdf5c58d4cb699615":[5,0,11,3,0,2,9],
-"classwpi_1_1java_1_1detail_1_1JArrayRefBase.html#a1281e2c6f617262e86210ab95fff2813":[5,0,11,3,0,2,4]
+"classwpi_1_1java_1_1detail_1_1JArrayRefBase.html#a1281e2c6f617262e86210ab95fff2813":[5,0,11,3,0,2,4],
+"classwpi_1_1java_1_1detail_1_1JArrayRefBase.html#a18f2c50f13a2878bb57dc928ef660676":[5,0,11,3,0,2,13],
+"classwpi_1_1java_1_1detail_1_1JArrayRefBase.html#a1b81de03d7c4f0c4c45a3742b3086288":[5,0,11,3,0,2,6]
 };

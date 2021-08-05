@@ -1,7 +1,5 @@
 var NAVTREEINDEX32 =
 {
-"classwpi_1_1priority__queue.html#a7d4b7f8e4f4eef923f8538aaa866a7bc":[5,0,11,71,13],
-"classwpi_1_1priority__queue.html#a8d65db0a9a68dfaf729c51396f4e000e":[5,0,11,71,6],
 "classwpi_1_1priority__queue.html#a8f4c545cc128fae328e513f715c419b8":[5,0,11,71,12],
 "classwpi_1_1priority__queue.html#a968021e6b9e0564846b2dd7bd5fd9f7a":[5,0,11,71,19],
 "classwpi_1_1priority__queue.html#a9c2cd56d8ba85d1a6884c364ab303e53":[5,0,11,71,4],
@@ -249,5 +247,7 @@ var NAVTREEINDEX32 =
 "classwpi_1_1sig_1_1SignalBase.html#ab1d805837f31051ac2e333c18985bab6":[5,0,11,5,5,12],
 "classwpi_1_1sig_1_1SignalBase.html#ac97a79d8a0596bc8c208b2022ea3f0e8":[5,0,11,5,5,5],
 "classwpi_1_1sig_1_1SignalBase.html#acfd29b0873a2c65d53e4c20f8191b74c":[5,0,11,5,5,8],
-"classwpi_1_1sig_1_1SignalBase.html#ae135de16b3264f790ed5e9ba28ea7c99":[5,0,11,5,5,17]
+"classwpi_1_1sig_1_1SignalBase.html#ae135de16b3264f790ed5e9ba28ea7c99":[5,0,11,5,5,17],
+"classwpi_1_1sig_1_1SignalBase.html#af280113ad513ed486a3baed7798ccd4d":[5,0,11,5,5,18],
+"classwpi_1_1sig_1_1detail_1_1Slot.html":[5,0,11,5,0,2]
 };

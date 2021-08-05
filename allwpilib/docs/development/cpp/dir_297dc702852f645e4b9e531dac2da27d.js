@@ -23,7 +23,7 @@ var dir_297dc702852f645e4b9e531dac2da27d =
     [ "GenericHIDSim.h", "GenericHIDSim_8h_source.html", null ],
     [ "JoystickSim.h", "JoystickSim_8h_source.html", null ],
     [ "LinearSystemSim.h", "LinearSystemSim_8h_source.html", null ],
-    [ "PDPSim.h", "PDPSim_8h_source.html", null ],
+    [ "PowerDistributionSim.h", "PowerDistributionSim_8h_source.html", null ],
     [ "PWMSim.h", "PWMSim_8h_source.html", null ],
     [ "RelaySim.h", "RelaySim_8h_source.html", null ],
     [ "RoboRioSim.h", "RoboRioSim_8h_source.html", null ],

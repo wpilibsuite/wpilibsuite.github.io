@@ -861,7 +861,6 @@ var hierarchy =
       [ "wpi::detail::DenseMapPair< KeyT, ValueT >", "structwpi_1_1detail_1_1DenseMapPair.html", null ]
     ] ],
     [ "ghc::filesystem::path_helper_base< char_type >", "classghc_1_1filesystem_1_1path__helper__base.html", null ],
-    [ "frc::sim::PDPSim", "classfrc_1_1sim_1_1PDPSim.html", null ],
     [ "wpi::support::detail::PickAlignment< T, alignment >", "structwpi_1_1support_1_1detail_1_1PickAlignment.html", null ],
     [ "frc::PIDInterface", "classfrc_1_1PIDInterface.html", [
       [ "frc::PIDBase", "classfrc_1_1PIDBase.html", [
@@ -911,6 +910,7 @@ var hierarchy =
     [ "wpi::detail::PopulationCounter< T, 8 >", "structwpi_1_1detail_1_1PopulationCounter_3_01T_00_018_01_4.html", null ],
     [ "wpi::PortForwarder", "classwpi_1_1PortForwarder.html", null ],
     [ "frc::Pose2d", "classfrc_1_1Pose2d.html", null ],
+    [ "frc::sim::PowerDistributionSim", "classfrc_1_1sim_1_1PowerDistributionSim.html", null ],
     [ "precision_checker< ErrorHandler >", "classprecision__checker.html", null ],
     [ "frc::Preferences", "classfrc_1_1Preferences.html", null ],
     [ "wpi::detail::primitive_iterator_t", "classwpi_1_1detail_1_1primitive__iterator__t.html", null ],
@@ -1072,7 +1072,7 @@ var hierarchy =
       ] ],
       [ "frc::PWMMotorController", "classfrc_1_1PWMMotorController.html", null ],
       [ "frc::PneumaticsControlModule", "classfrc_1_1PneumaticsControlModule.html", null ],
-      [ "frc::PowerDistributionPanel", "classfrc_1_1PowerDistributionPanel.html", null ],
+      [ "frc::PowerDistribution", "classfrc_1_1PowerDistribution.html", null ],
       [ "frc::ProfiledPIDController< Distance >", "classfrc_1_1ProfiledPIDController.html", null ],
       [ "frc::Relay", "classfrc_1_1Relay.html", null ],
       [ "frc::SendableCameraWrapper", "classfrc_1_1SendableCameraWrapper.html", null ],
@@ -1212,8 +1212,8 @@ var hierarchy =
     [ "wpi::SendableHelper< PneumaticsControlModule >", "classwpi_1_1SendableHelper.html", [
       [ "frc::PneumaticsControlModule", "classfrc_1_1PneumaticsControlModule.html", null ]
     ] ],
-    [ "wpi::SendableHelper< PowerDistributionPanel >", "classwpi_1_1SendableHelper.html", [
-      [ "frc::PowerDistributionPanel", "classfrc_1_1PowerDistributionPanel.html", null ]
+    [ "wpi::SendableHelper< PowerDistribution >", "classwpi_1_1SendableHelper.html", [
+      [ "frc::PowerDistribution", "classfrc_1_1PowerDistribution.html", null ]
     ] ],
     [ "wpi::SendableHelper< ProfiledPIDController< Distance > >", "classwpi_1_1SendableHelper.html", [
       [ "frc::ProfiledPIDController< Distance >", "classfrc_1_1ProfiledPIDController.html", null ]
