@@ -1,5 +1,9 @@
 var NAVTREEINDEX45 =
 {
+"structfrc_1_1CANStatus.html#ae5d05a3f96ec8e166c58eae28b7d4249":[5,0,5,144,3],
+"structfrc_1_1ChassisSpeeds.html":[5,0,5,29],
+"structfrc_1_1ChassisSpeeds.html#a01659f3eea6569ee27d4db843d6f5be5":[5,0,5,29,2],
+"structfrc_1_1ChassisSpeeds.html#a1b2ecdc4d2884220274eed58c67fd9dc":[5,0,5,29,3],
 "structfrc_1_1ChassisSpeeds.html#a512d3d4511e399adc63651fbf8ee18bf":[5,0,5,29,1],
 "structfrc_1_1ChassisSpeeds.html#ae30530e339a3257a21f68aec2f6aee5a":[5,0,5,29,0],
 "structfrc_1_1DifferentialDriveWheelSpeeds.html":[5,0,5,23],
@@ -245,9 +249,5 @@ var NAVTREEINDEX45 =
 "structwpi_1_1CallbackThread_1_1Poller.html#a53ba327b773143a084803f709d13150b":[5,0,11,55,0,0],
 "structwpi_1_1CallbackThread_1_1Poller.html#a88426de62dfad205c04747c52595c3a0":[5,0,11,55,0,4],
 "structwpi_1_1CallbackThread_1_1Poller.html#a981d05b774f9a1e755579508f4a3e546":[5,0,11,55,0,1],
-"structwpi_1_1CallbackThread_1_1Poller.html#ad60592b664c738ccdd0f112319edc6df":[5,0,11,55,0,5],
-"structwpi_1_1DenseMapInfo.html":[5,0,11,23],
-"structwpi_1_1DenseMapInfo_3_01PointerIntPair_3_01PointerTy_00_01IntBits_00_01IntType_01_4_01_4.html":[5,0,11,116],
-"structwpi_1_1DenseMapInfo_3_01PointerIntPair_3_01PointerTy_00_01IntBits_00_01IntType_01_4_01_4.html#a1acf92505de011d9ed45b3da4ea00bd1":[5,0,11,116,2],
-"structwpi_1_1DenseMapInfo_3_01PointerIntPair_3_01PointerTy_00_01IntBits_00_01IntType_01_4_01_4.html#a1cefdfe148903820fb6f94d2a54e06d0":[5,0,11,116,3]
+"structwpi_1_1CallbackThread_1_1Poller.html#ad60592b664c738ccdd0f112319edc6df":[5,0,11,55,0,5]
 };

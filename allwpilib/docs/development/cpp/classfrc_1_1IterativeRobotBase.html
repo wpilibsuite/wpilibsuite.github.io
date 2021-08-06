@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-2-31-g94e0db7</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2-32-gfb2ee8e</span>
    </div>
   </td>
  </tr>
@@ -151,6 +151,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a379bededf5d908e76fc6b2b19010e3ab"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1IterativeRobotBase.html#a379bededf5d908e76fc6b2b19010e3ab">TestPeriodic</a> ()</td></tr>
 <tr class="memdesc:a379bededf5d908e76fc6b2b19010e3ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Periodic code for test mode should go here.  <a href="classfrc_1_1IterativeRobotBase.html#a379bededf5d908e76fc6b2b19010e3ab">More...</a><br /></td></tr>
 <tr class="separator:a379bededf5d908e76fc6b2b19010e3ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e37576017ae0ef5be38745b5af1819e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1IterativeRobotBase.html#a6e37576017ae0ef5be38745b5af1819e">DisabledExit</a> ()</td></tr>
+<tr class="memdesc:a6e37576017ae0ef5be38745b5af1819e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exit code for disabled mode should go here.  <a href="classfrc_1_1IterativeRobotBase.html#a6e37576017ae0ef5be38745b5af1819e">More...</a><br /></td></tr>
+<tr class="separator:a6e37576017ae0ef5be38745b5af1819e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addbb0445808f84a9a50587ee27fc5dd5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1IterativeRobotBase.html#addbb0445808f84a9a50587ee27fc5dd5">AutonomousExit</a> ()</td></tr>
+<tr class="memdesc:addbb0445808f84a9a50587ee27fc5dd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exit code for autonomous mode should go here.  <a href="classfrc_1_1IterativeRobotBase.html#addbb0445808f84a9a50587ee27fc5dd5">More...</a><br /></td></tr>
+<tr class="separator:addbb0445808f84a9a50587ee27fc5dd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a872774b94df96b454d83e8b22b441153"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1IterativeRobotBase.html#a872774b94df96b454d83e8b22b441153">TeleopExit</a> ()</td></tr>
+<tr class="memdesc:a872774b94df96b454d83e8b22b441153"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exit code for teleop mode should go here.  <a href="classfrc_1_1IterativeRobotBase.html#a872774b94df96b454d83e8b22b441153">More...</a><br /></td></tr>
+<tr class="separator:a872774b94df96b454d83e8b22b441153"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33ae4492bb02e1574a13b5dee5bcfb7b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1IterativeRobotBase.html#a33ae4492bb02e1574a13b5dee5bcfb7b">TestExit</a> ()</td></tr>
+<tr class="memdesc:a33ae4492bb02e1574a13b5dee5bcfb7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exit code for test mode should go here.  <a href="classfrc_1_1IterativeRobotBase.html#a33ae4492bb02e1574a13b5dee5bcfb7b">More...</a><br /></td></tr>
+<tr class="separator:a33ae4492bb02e1574a13b5dee5bcfb7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af55ae3692aeddcb8f9d3e54a5d5b9474"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1IterativeRobotBase.html#af55ae3692aeddcb8f9d3e54a5d5b9474">SetNetworkTablesFlushEnabled</a> (bool enabled)</td></tr>
 <tr class="memdesc:af55ae3692aeddcb8f9d3e54a5d5b9474"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables flushing NetworkTables every loop iteration.  <a href="classfrc_1_1IterativeRobotBase.html#af55ae3692aeddcb8f9d3e54a5d5b9474">More...</a><br /></td></tr>
 <tr class="separator:af55ae3692aeddcb8f9d3e54a5d5b9474"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -241,18 +253,27 @@ static std::thread::id&#160;</td><td class="memItemRight" valign="bottom"><b>m_t
 <p>The <a class="el" href="classfrc_1_1IterativeRobotBase.html" title="IterativeRobotBase implements a specific type of robot program framework, extending the RobotBase cla...">IterativeRobotBase</a> class does not implement StartCompetition(), so it should not be used by teams directly.</p>
 <p>This class provides the following functions which are called by the main loop, StartCompetition(), at the appropriate times:</p>
 <p><a class="el" href="classfrc_1_1IterativeRobotBase.html#a08618f13dbf3d1f1fa98f56406da52c6" title="Robot-wide initialization code should go here.">RobotInit()</a> &ndash; provide for initialization at robot power-on</p>
-<p>Init() functions &ndash; each of the following functions is called once when the appropriate mode is entered:</p><ul>
-<li><a class="el" href="classfrc_1_1IterativeRobotBase.html#aa53a5965b9a01622d221020d2b6b6a8c" title="Initialization code for disabled mode should go here.">DisabledInit()</a> &ndash; called each and every time disabled is entered from another mode</li>
-<li><a class="el" href="classfrc_1_1IterativeRobotBase.html#ac9eeeb4ab51bb054d12bca1b398bc352" title="Initialization code for autonomous mode should go here.">AutonomousInit()</a> &ndash; called each and every time autonomous is entered from another mode</li>
-<li><a class="el" href="classfrc_1_1IterativeRobotBase.html#a3e3798e0ac3ed99fb63a747bfc0622c0" title="Initialization code for teleop mode should go here.">TeleopInit()</a> &ndash; called each and every time teleop is entered from another mode</li>
+<p>Init() functions &ndash; each of the following functions is called once when the appropriate mode is entered:</p>
+<ul>
+<li><a class="el" href="classfrc_1_1IterativeRobotBase.html#aa53a5965b9a01622d221020d2b6b6a8c" title="Initialization code for disabled mode should go here.">DisabledInit()</a> &ndash; called each and every time disabled is entered from another mode </li>
+<li><a class="el" href="classfrc_1_1IterativeRobotBase.html#ac9eeeb4ab51bb054d12bca1b398bc352" title="Initialization code for autonomous mode should go here.">AutonomousInit()</a> &ndash; called each and every time autonomous is entered from another mode </li>
+<li><a class="el" href="classfrc_1_1IterativeRobotBase.html#a3e3798e0ac3ed99fb63a747bfc0622c0" title="Initialization code for teleop mode should go here.">TeleopInit()</a> &ndash; called each and every time teleop is entered from another mode </li>
 <li><a class="el" href="classfrc_1_1IterativeRobotBase.html#a0c5042b873bd000d8258f146456eb9dd" title="Initialization code for test mode should go here.">TestInit()</a> &ndash; called each and every time test is entered from another mode</li>
 </ul>
-<p>Periodic() functions &ndash; each of these functions is called on an interval:</p><ul>
-<li><a class="el" href="classfrc_1_1IterativeRobotBase.html#a18d45c31d09c13f77ed8c857da2f4897" title="Periodic code for all modes should go here.">RobotPeriodic()</a></li>
-<li><a class="el" href="classfrc_1_1IterativeRobotBase.html#aa1c0335b4c558340a2e624ab2db8c092" title="Periodic code for disabled mode should go here.">DisabledPeriodic()</a></li>
-<li><a class="el" href="classfrc_1_1IterativeRobotBase.html#aee2a71a8f3b959f39dbc2a0c546543d3" title="Periodic code for autonomous mode should go here.">AutonomousPeriodic()</a></li>
-<li><a class="el" href="classfrc_1_1IterativeRobotBase.html#a2e6f6bc04d6c62c9fa33bc12a21c74d5" title="Periodic code for teleop mode should go here.">TeleopPeriodic()</a></li>
-<li><a class="el" href="classfrc_1_1IterativeRobotBase.html#a379bededf5d908e76fc6b2b19010e3ab" title="Periodic code for test mode should go here.">TestPeriodic()</a> </li>
+<p>Periodic() functions &ndash; each of these functions is called on an interval:</p>
+<ul>
+<li><a class="el" href="classfrc_1_1IterativeRobotBase.html#a18d45c31d09c13f77ed8c857da2f4897" title="Periodic code for all modes should go here.">RobotPeriodic()</a> </li>
+<li><a class="el" href="classfrc_1_1IterativeRobotBase.html#aa1c0335b4c558340a2e624ab2db8c092" title="Periodic code for disabled mode should go here.">DisabledPeriodic()</a> </li>
+<li><a class="el" href="classfrc_1_1IterativeRobotBase.html#aee2a71a8f3b959f39dbc2a0c546543d3" title="Periodic code for autonomous mode should go here.">AutonomousPeriodic()</a> </li>
+<li><a class="el" href="classfrc_1_1IterativeRobotBase.html#a2e6f6bc04d6c62c9fa33bc12a21c74d5" title="Periodic code for teleop mode should go here.">TeleopPeriodic()</a> </li>
+<li><a class="el" href="classfrc_1_1IterativeRobotBase.html#a379bededf5d908e76fc6b2b19010e3ab" title="Periodic code for test mode should go here.">TestPeriodic()</a></li>
+</ul>
+<p>Exit() functions &ndash; each of the following functions is called once when the appropriate mode is exited:</p>
+<ul>
+<li><a class="el" href="classfrc_1_1IterativeRobotBase.html#a6e37576017ae0ef5be38745b5af1819e" title="Exit code for disabled mode should go here.">DisabledExit()</a> &ndash; called each and every time disabled is exited </li>
+<li><a class="el" href="classfrc_1_1IterativeRobotBase.html#addbb0445808f84a9a50587ee27fc5dd5" title="Exit code for autonomous mode should go here.">AutonomousExit()</a> &ndash; called each and every time autonomous is exited </li>
+<li><a class="el" href="classfrc_1_1IterativeRobotBase.html#a872774b94df96b454d83e8b22b441153" title="Exit code for teleop mode should go here.">TeleopExit()</a> &ndash; called each and every time teleop is exited </li>
+<li><a class="el" href="classfrc_1_1IterativeRobotBase.html#a33ae4492bb02e1574a13b5dee5bcfb7b" title="Exit code for test mode should go here.">TestExit()</a> &ndash; called each and every time test is exited </li>
 </ul>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="adaad67b57154bd85fef26a742d9c66b2"></a>
@@ -325,6 +346,34 @@ static std::thread::id&#160;</td><td class="memItemRight" valign="bottom"><b>m_t
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="addbb0445808f84a9a50587ee27fc5dd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addbb0445808f84a9a50587ee27fc5dd5">&#9670;&nbsp;</a></span>AutonomousExit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void frc::IterativeRobotBase::AutonomousExit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Exit code for autonomous mode should go here. </p>
+<p>Users should override this method for code which will be called each time the robot exits autonomous mode. </p>
+
+</div>
+</div>
 <a id="ac9eeeb4ab51bb054d12bca1b398bc352"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac9eeeb4ab51bb054d12bca1b398bc352">&#9670;&nbsp;</a></span>AutonomousInit()</h2>
 
@@ -378,6 +427,34 @@ static std::thread::id&#160;</td><td class="memItemRight" valign="bottom"><b>m_t
 
 <p>Periodic code for autonomous mode should go here. </p>
 <p>Users should override this method for code which will be called each time a new packet is received from the driver station and the robot is in autonomous mode. </p>
+
+</div>
+</div>
+<a id="a6e37576017ae0ef5be38745b5af1819e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e37576017ae0ef5be38745b5af1819e">&#9670;&nbsp;</a></span>DisabledExit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void frc::IterativeRobotBase::DisabledExit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Exit code for disabled mode should go here. </p>
+<p>Users should override this method for code which will be called each time the robot exits disabled mode. </p>
 
 </div>
 </div>
@@ -577,6 +654,34 @@ static std::thread::id&#160;</td><td class="memItemRight" valign="bottom"><b>m_t
 
 </div>
 </div>
+<a id="a872774b94df96b454d83e8b22b441153"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a872774b94df96b454d83e8b22b441153">&#9670;&nbsp;</a></span>TeleopExit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void frc::IterativeRobotBase::TeleopExit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Exit code for teleop mode should go here. </p>
+<p>Users should override this method for code which will be called each time the robot exits teleop mode. </p>
+
+</div>
+</div>
 <a id="a3e3798e0ac3ed99fb63a747bfc0622c0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3e3798e0ac3ed99fb63a747bfc0622c0">&#9670;&nbsp;</a></span>TeleopInit()</h2>
 
@@ -630,6 +735,34 @@ static std::thread::id&#160;</td><td class="memItemRight" valign="bottom"><b>m_t
 
 <p>Periodic code for teleop mode should go here. </p>
 <p>Users should override this method for code which will be called each time a new packet is received from the driver station and the robot is in teleop mode. </p>
+
+</div>
+</div>
+<a id="a33ae4492bb02e1574a13b5dee5bcfb7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33ae4492bb02e1574a13b5dee5bcfb7b">&#9670;&nbsp;</a></span>TestExit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void frc::IterativeRobotBase::TestExit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Exit code for test mode should go here. </p>
+<p>Users should override this method for code which will be called each time the robot exits test mode. </p>
 
 </div>
 </div>
@@ -698,7 +831,7 @@ static std::thread::id&#160;</td><td class="memItemRight" valign="bottom"><b>m_t
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1IterativeRobotBase.html">IterativeRobotBase</a></li>
-    <li class="footer">Generated on Fri Aug 6 2021 02:07:06 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Aug 6 2021 02:10:22 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

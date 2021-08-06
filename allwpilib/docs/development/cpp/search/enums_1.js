@@ -1,14 +1,14 @@
 var searchData=
 [
-  ['connectionstrategy_7666',['ConnectionStrategy',['../classcs_1_1VideoSource.html#aabe77bb50ae58dda47bd32b83237b8b3',1,'cs::VideoSource']]],
-  ['cs_5fconnectionstrategy_7667',['CS_ConnectionStrategy',['../group__cscore__c__api.html#ga4a0bad578a21faca1701631a0d491875',1,'cscore_c.h']]],
-  ['cs_5feventkind_7668',['CS_EventKind',['../group__cscore__c__api.html#ga21079bb71b0c5fdd9c190902e81475c3',1,'cscore_c.h']]],
-  ['cs_5fhttpcamerakind_7669',['CS_HttpCameraKind',['../group__cscore__c__api.html#ga61ab6e0263fe88aa1da0e21fc25a5a4a',1,'cscore_c.h']]],
-  ['cs_5floglevel_7670',['CS_LogLevel',['../group__cscore__c__api.html#ga387389ba85dfc7a8d8d1f4c714e0c8ab',1,'cscore_c.h']]],
-  ['cs_5fpixelformat_7671',['CS_PixelFormat',['../group__cscore__c__api.html#ga889cbcd56e14e2bd223cc9c84d4da2c4',1,'cscore_c.h']]],
-  ['cs_5fpropertykind_7672',['CS_PropertyKind',['../group__cscore__c__api.html#ga748df10eca5adcbc533b0fe788daf22e',1,'cscore_c.h']]],
-  ['cs_5fsinkkind_7673',['CS_SinkKind',['../group__cscore__c__api.html#gac4d8e712e12b167a7038c76f195bab10',1,'cscore_c.h']]],
-  ['cs_5fsourcekind_7674',['CS_SourceKind',['../group__cscore__c__api.html#gac837e2c01d7df4368ee75df217d82406',1,'cscore_c.h']]],
-  ['cs_5fstatusvalue_7675',['CS_StatusValue',['../group__cscore__c__api.html#gafd2b8be5bc92a0a85ec51d40af1d1322',1,'cscore_c.h']]],
-  ['cs_5ftelemetrykind_7676',['CS_TelemetryKind',['../group__cscore__c__api.html#gaaaab82f52d0ca0b385c9d2c198be5483',1,'cscore_c.h']]]
+  ['connectionstrategy_7675',['ConnectionStrategy',['../classcs_1_1VideoSource.html#aabe77bb50ae58dda47bd32b83237b8b3',1,'cs::VideoSource']]],
+  ['cs_5fconnectionstrategy_7676',['CS_ConnectionStrategy',['../group__cscore__c__api.html#ga4a0bad578a21faca1701631a0d491875',1,'cscore_c.h']]],
+  ['cs_5feventkind_7677',['CS_EventKind',['../group__cscore__c__api.html#ga21079bb71b0c5fdd9c190902e81475c3',1,'cscore_c.h']]],
+  ['cs_5fhttpcamerakind_7678',['CS_HttpCameraKind',['../group__cscore__c__api.html#ga61ab6e0263fe88aa1da0e21fc25a5a4a',1,'cscore_c.h']]],
+  ['cs_5floglevel_7679',['CS_LogLevel',['../group__cscore__c__api.html#ga387389ba85dfc7a8d8d1f4c714e0c8ab',1,'cscore_c.h']]],
+  ['cs_5fpixelformat_7680',['CS_PixelFormat',['../group__cscore__c__api.html#ga889cbcd56e14e2bd223cc9c84d4da2c4',1,'cscore_c.h']]],
+  ['cs_5fpropertykind_7681',['CS_PropertyKind',['../group__cscore__c__api.html#ga748df10eca5adcbc533b0fe788daf22e',1,'cscore_c.h']]],
+  ['cs_5fsinkkind_7682',['CS_SinkKind',['../group__cscore__c__api.html#gac4d8e712e12b167a7038c76f195bab10',1,'cscore_c.h']]],
+  ['cs_5fsourcekind_7683',['CS_SourceKind',['../group__cscore__c__api.html#gac837e2c01d7df4368ee75df217d82406',1,'cscore_c.h']]],
+  ['cs_5fstatusvalue_7684',['CS_StatusValue',['../group__cscore__c__api.html#gafd2b8be5bc92a0a85ec51d40af1d1322',1,'cscore_c.h']]],
+  ['cs_5ftelemetrykind_7685',['CS_TelemetryKind',['../group__cscore__c__api.html#gaaaab82f52d0ca0b385c9d2c198be5483',1,'cscore_c.h']]]
 ];

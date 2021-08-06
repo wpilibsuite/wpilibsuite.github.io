@@ -1,5 +1,9 @@
 var NAVTREEINDEX37 =
 {
+"functions_func_q.html":[5,3,1,17],
+"functions_func_r.html":[5,3,1,18],
+"functions_func_s.html":[5,3,1,19],
+"functions_func_t.html":[5,3,1,20],
 "functions_func_u.html":[5,3,1,21],
 "functions_func_v.html":[5,3,1,22],
 "functions_func_w.html":[5,3,1,23],
@@ -245,9 +249,5 @@ var NAVTREEINDEX37 =
 "group__hal__analoggyro.html#gaae38fd1e3f5f1651a652126749664336":[3,0,26,1],
 "group__hal__analoggyro.html#gabb9894fce3ebfed40aab914a56f58e85":[3,0,26,6],
 "group__hal__analoggyro.html#gad77a6766f3cba425b3c6d78b06a111eb":[3,0,26,8],
-"group__hal__analoggyro.html#gadc7a11e59c368c174d79abe8fdeaea5e":[3,0,26,9],
-"group__hal__analoginput.html":[3,0,19],
-"group__hal__analoginput.html#ga02f152b2f03f34e45343791b307d0452":[3,0,19,3],
-"group__hal__analoginput.html#ga0f6a90fde07eda6f64d27edff7e6746a":[3,0,19,17],
-"group__hal__analoginput.html#ga3217a276a5295f6f9d13fa205edff47b":[3,0,19,11]
+"group__hal__analoggyro.html#gadc7a11e59c368c174d79abe8fdeaea5e":[3,0,26,9]
 };

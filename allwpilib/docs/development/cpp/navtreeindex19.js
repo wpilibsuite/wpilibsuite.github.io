@@ -1,5 +1,9 @@
 var NAVTREEINDEX19 =
 {
+"classfrc_1_1TrapezoidProfile.html#a29cd78db84b3d1e13fb77d3d239603aa":[5,0,5,32,13],
+"classfrc_1_1TrapezoidProfile.html#a2e377ae87db0b7b214e5d6495504d54d":[5,0,5,32,5],
+"classfrc_1_1TrapezoidProfile.html#a46219e2ac843cc76b4149a76ffeb8d00":[5,0,5,32,8],
+"classfrc_1_1TrapezoidProfile.html#a4dbc029bf12b177b39ab6c9f5edcbc92":[5,0,5,32,10],
 "classfrc_1_1TrapezoidProfile.html#a61e00f74ff2a34dcd978f20764981603":[5,0,5,32,14],
 "classfrc_1_1TrapezoidProfile.html#a87056359e1f4ed9bf3136338861f3e49":[5,0,5,32,4],
 "classfrc_1_1TrapezoidProfile.html#a961d1d386882d1d99c9407147d47146d":[5,0,5,32,7],
@@ -245,9 +249,5 @@ var NAVTREEINDEX19 =
 "classfrc_1_1sim_1_1AddressableLEDSim.html#a59ad3f5d28a76c37e3d86a09ce4f50c8":[5,0,5,1,14,1],
 "classfrc_1_1sim_1_1AddressableLEDSim.html#a677d2eae01e58cf836e91e7a2083c1a6":[5,0,5,1,14,18],
 "classfrc_1_1sim_1_1AddressableLEDSim.html#a679529728eca949ec440dd72e6224ae9":[5,0,5,1,14,16],
-"classfrc_1_1sim_1_1AddressableLEDSim.html#a69973297d0d339501dc402ea23163085":[5,0,5,1,14,2],
-"classfrc_1_1sim_1_1AddressableLEDSim.html#a787bb982b7d57d2b6a5346485cac8f16":[5,0,5,1,14,9],
-"classfrc_1_1sim_1_1AddressableLEDSim.html#a80b0933cb5800a08f561208bc0c53fe1":[5,0,5,1,14,5],
-"classfrc_1_1sim_1_1AddressableLEDSim.html#a85faa616f286f07f465da0128c7522fc":[5,0,5,1,14,17],
-"classfrc_1_1sim_1_1AddressableLEDSim.html#a9092c0c1a2595c8d431543a522748e7d":[5,0,5,1,14,7]
+"classfrc_1_1sim_1_1AddressableLEDSim.html#a69973297d0d339501dc402ea23163085":[5,0,5,1,14,2]
 };

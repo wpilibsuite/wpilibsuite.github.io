@@ -1,5 +1,9 @@
 var NAVTREEINDEX46 =
 {
+"structwpi_1_1DenseMapInfo.html":[5,0,11,23],
+"structwpi_1_1DenseMapInfo_3_01PointerIntPair_3_01PointerTy_00_01IntBits_00_01IntType_01_4_01_4.html":[5,0,11,116],
+"structwpi_1_1DenseMapInfo_3_01PointerIntPair_3_01PointerTy_00_01IntBits_00_01IntType_01_4_01_4.html#a1acf92505de011d9ed45b3da4ea00bd1":[5,0,11,116,2],
+"structwpi_1_1DenseMapInfo_3_01PointerIntPair_3_01PointerTy_00_01IntBits_00_01IntType_01_4_01_4.html#a1cefdfe148903820fb6f94d2a54e06d0":[5,0,11,116,3],
 "structwpi_1_1DenseMapInfo_3_01PointerIntPair_3_01PointerTy_00_01IntBits_00_01IntType_01_4_01_4.html#a2f759dea970e7542d4786687d56011ec":[5,0,11,116,1],
 "structwpi_1_1DenseMapInfo_3_01PointerIntPair_3_01PointerTy_00_01IntBits_00_01IntType_01_4_01_4.html#abdfa39293344d439b86e7eef8a651559":[5,0,11,116,0],
 "structwpi_1_1DenseMapInfo_3_01PointerIntPair_3_01PointerTy_00_01IntBits_00_01IntType_01_4_01_4.html#abfb6b3726fb3f4f9e9273ac6884bd9b8":[5,0,11,116,4],
@@ -245,9 +249,5 @@ var NAVTREEINDEX46 =
 "structwpi_1_1detail_1_1external__constructor_3_01value__t_1_1number__float_01_4.html":[5,0,11,0,50],
 "structwpi_1_1detail_1_1external__constructor_3_01value__t_1_1number__float_01_4.html#ade20c96043865b405ef55e8da4f7cf2c":[5,0,11,0,50,0],
 "structwpi_1_1detail_1_1external__constructor_3_01value__t_1_1number__integer_01_4.html":[5,0,11,0,52],
-"structwpi_1_1detail_1_1external__constructor_3_01value__t_1_1number__integer_01_4.html#a31fc611bbb9e923b10f82ff2482cf4d1":[5,0,11,0,52,0],
-"structwpi_1_1detail_1_1external__constructor_3_01value__t_1_1number__unsigned_01_4.html":[5,0,11,0,51],
-"structwpi_1_1detail_1_1external__constructor_3_01value__t_1_1number__unsigned_01_4.html#ac1d11300dd0a7c5e7242812fe70024d4":[5,0,11,0,51,0],
-"structwpi_1_1detail_1_1external__constructor_3_01value__t_1_1object_01_4.html":[5,0,11,0,54],
-"structwpi_1_1detail_1_1external__constructor_3_01value__t_1_1object_01_4.html#a06e51385f6e14976dd5a52fdef39b4ff":[5,0,11,0,54,1]
+"structwpi_1_1detail_1_1external__constructor_3_01value__t_1_1number__integer_01_4.html#a31fc611bbb9e923b10f82ff2482cf4d1":[5,0,11,0,52,0]
 };
