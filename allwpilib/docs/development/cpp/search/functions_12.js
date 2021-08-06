@@ -38,7 +38,7 @@ var searchData=
   ['registercompressoroncallback_6670',['RegisterCompressorOnCallback',['../classfrc_1_1sim_1_1CTREPCMSim.html#ad95782c620da7e0750195950d6ffc84c',1,'frc::sim::CTREPCMSim']]],
   ['registercountcallback_6671',['RegisterCountCallback',['../classfrc_1_1sim_1_1EncoderSim.html#a46b5d7cc7d682f18761b0d8565ed5104',1,'frc::sim::EncoderSim']]],
   ['registercurrentcallback_6672',['RegisterCurrentCallback',['../classfrc_1_1sim_1_1PowerDistributionSim.html#a2cb2479671c495e0cacc715f32954340',1,'frc::sim::PowerDistributionSim']]],
-  ['registerdatacallback_6673',['RegisterDataCallback',['../classfrc_1_1sim_1_1AddressableLEDSim.html#a56d3698cff3c84b295dff2a62a1a05e1',1,'frc::sim::AddressableLEDSim']]],
+  ['registerdatacallback_6673',['RegisterDataCallback',['../classfrc_1_1sim_1_1AddressableLEDSim.html#a787bb982b7d57d2b6a5346485cac8f16',1,'frc::sim::AddressableLEDSim']]],
   ['registerdirectioncallback_6674',['RegisterDirectionCallback',['../classfrc_1_1sim_1_1EncoderSim.html#aea8c3d8d22cbfe9872fbbcf4c95390f4',1,'frc::sim::EncoderSim']]],
   ['registerdistanceperpulsecallback_6675',['RegisterDistancePerPulseCallback',['../classfrc_1_1sim_1_1EncoderSim.html#ad8d38296f08b9c7170e49cc984523395',1,'frc::sim::EncoderSim']]],
   ['registerdsattachedcallback_6676',['RegisterDsAttachedCallback',['../classfrc_1_1sim_1_1DriverStationSim.html#a5c66f5728f99554069582c2000dfb594',1,'frc::sim::DriverStationSim']]],

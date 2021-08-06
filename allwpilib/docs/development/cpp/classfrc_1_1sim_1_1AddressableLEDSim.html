@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-2-30-gb253246</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2-31-g94e0db7</span>
    </div>
   </td>
  </tr>
@@ -148,9 +148,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a677d2eae01e58cf836e91e7a2083c1a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1AddressableLEDSim.html#a677d2eae01e58cf836e91e7a2083c1a6">SetRunning</a> (bool running)</td></tr>
 <tr class="memdesc:a677d2eae01e58cf836e91e7a2083c1a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change whether the LEDs are active.  <a href="classfrc_1_1sim_1_1AddressableLEDSim.html#a677d2eae01e58cf836e91e7a2083c1a6">More...</a><br /></td></tr>
 <tr class="separator:a677d2eae01e58cf836e91e7a2083c1a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56d3698cff3c84b295dff2a62a1a05e1"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classfrc_1_1sim_1_1CallbackStore.html">CallbackStore</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1AddressableLEDSim.html#a56d3698cff3c84b295dff2a62a1a05e1">RegisterDataCallback</a> (NotifyCallback callback, bool initialNotify)</td></tr>
-<tr class="memdesc:a56d3698cff3c84b295dff2a62a1a05e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a callback on the LED data.  <a href="classfrc_1_1sim_1_1AddressableLEDSim.html#a56d3698cff3c84b295dff2a62a1a05e1">More...</a><br /></td></tr>
-<tr class="separator:a56d3698cff3c84b295dff2a62a1a05e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a787bb982b7d57d2b6a5346485cac8f16"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classfrc_1_1sim_1_1CallbackStore.html">CallbackStore</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1AddressableLEDSim.html#a787bb982b7d57d2b6a5346485cac8f16">RegisterDataCallback</a> (ConstBufferCallback callback, bool initialNotify)</td></tr>
+<tr class="memdesc:a787bb982b7d57d2b6a5346485cac8f16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a callback on the LED data.  <a href="classfrc_1_1sim_1_1AddressableLEDSim.html#a787bb982b7d57d2b6a5346485cac8f16">More...</a><br /></td></tr>
+<tr class="separator:a787bb982b7d57d2b6a5346485cac8f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a539e6ff6c5ac2cc67398f66bd12d098a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1AddressableLEDSim.html#a539e6ff6c5ac2cc67398f66bd12d098a">GetData</a> (struct <a class="el" href="structHAL__AddressableLEDData.html">HAL_AddressableLEDData</a> *<a class="el" href="structdata.html">data</a>) const</td></tr>
 <tr class="memdesc:a539e6ff6c5ac2cc67398f66bd12d098a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the LED data.  <a href="classfrc_1_1sim_1_1AddressableLEDSim.html#a539e6ff6c5ac2cc67398f66bd12d098a">More...</a><br /></td></tr>
 <tr class="separator:a539e6ff6c5ac2cc67398f66bd12d098a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -389,8 +389,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a56d3698cff3c84b295dff2a62a1a05e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a56d3698cff3c84b295dff2a62a1a05e1">&#9670;&nbsp;</a></span>RegisterDataCallback()</h2>
+<a id="a787bb982b7d57d2b6a5346485cac8f16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a787bb982b7d57d2b6a5346485cac8f16">&#9670;&nbsp;</a></span>RegisterDataCallback()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -398,7 +398,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">std::unique_ptr&lt;<a class="el" href="classfrc_1_1sim_1_1CallbackStore.html">CallbackStore</a>&gt; frc::sim::AddressableLEDSim::RegisterDataCallback </td>
           <td>(</td>
-          <td class="paramtype">NotifyCallback&#160;</td>
+          <td class="paramtype">ConstBufferCallback&#160;</td>
           <td class="paramname"><em>callback</em>, </td>
         </tr>
         <tr>
@@ -728,7 +728,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>frc</b></li><li class="navelem"><b>sim</b></li><li class="navelem"><a class="el" href="classfrc_1_1sim_1_1AddressableLEDSim.html">AddressableLEDSim</a></li>
-    <li class="footer">Generated on Fri Aug 6 2021 01:06:42 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Aug 6 2021 02:07:08 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

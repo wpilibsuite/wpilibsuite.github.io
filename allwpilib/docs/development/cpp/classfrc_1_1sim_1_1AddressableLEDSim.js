@@ -9,7 +9,7 @@ var classfrc_1_1sim_1_1AddressableLEDSim =
     [ "GetLength", "classfrc_1_1sim_1_1AddressableLEDSim.html#a9b888085345151548c884427d38f3c9c", null ],
     [ "GetOutputPort", "classfrc_1_1sim_1_1AddressableLEDSim.html#a9092c0c1a2595c8d431543a522748e7d", null ],
     [ "GetRunning", "classfrc_1_1sim_1_1AddressableLEDSim.html#add43ad0316ecfd74dc85d461363e5fc6", null ],
-    [ "RegisterDataCallback", "classfrc_1_1sim_1_1AddressableLEDSim.html#a56d3698cff3c84b295dff2a62a1a05e1", null ],
+    [ "RegisterDataCallback", "classfrc_1_1sim_1_1AddressableLEDSim.html#a787bb982b7d57d2b6a5346485cac8f16", null ],
     [ "RegisterInitializedCallback", "classfrc_1_1sim_1_1AddressableLEDSim.html#a037db0753adc735525a5f35e9a7c7f21", null ],
     [ "RegisterLengthCallback", "classfrc_1_1sim_1_1AddressableLEDSim.html#adde85e3a7122f8a3baf7083202a1933c", null ],
     [ "RegisterOutputPortCallback", "classfrc_1_1sim_1_1AddressableLEDSim.html#a3b75dc03449fb7e9cb86b23d75ccd72f", null ],
