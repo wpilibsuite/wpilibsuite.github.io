@@ -14,6 +14,8 @@ var classfrc_1_1RobotBase =
     [ "IsOperatorControlEnabled", "classfrc_1_1RobotBase.html#a442f6703ea6236dc05d12e877cbf638b", null ],
     [ "IsReal", "classfrc_1_1RobotBase.html#a2c1dab1c96a32013a136e38030097abd", null ],
     [ "IsSimulation", "classfrc_1_1RobotBase.html#a307a770aa58d89e1f1cc8e7970cceb84", null ],
+    [ "IsTeleop", "classfrc_1_1RobotBase.html#abb315455cf2315e223523882454ca1c7", null ],
+    [ "IsTeleopEnabled", "classfrc_1_1RobotBase.html#aeb6120060634dacb79883a3f76154e20", null ],
     [ "IsTest", "classfrc_1_1RobotBase.html#a4e10653232959cf9c2fee095c916cf2b", null ],
     [ "operator=", "classfrc_1_1RobotBase.html#a54ccd56df06bbc8da6774c30eee77dcc", null ],
     [ "StartCompetition", "classfrc_1_1RobotBase.html#ab90e4c11b23579f3f711f873e9c4ce16", null ],

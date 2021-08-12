@@ -321,6 +321,7 @@ var hierarchy =
     [ "frc::DMA", "classfrc_1_1DMA.html", null ],
     [ "frc::DriverStation", "classfrc_1_1DriverStation.html", null ],
     [ "frc::sim::DriverStationSim", "classfrc_1_1sim_1_1DriverStationSim.html", null ],
+    [ "frc::DSControlWord", "classfrc_1_1DSControlWord.html", null ],
     [ "frc::sim::DutyCycleEncoderSim", "classfrc_1_1sim_1_1DutyCycleEncoderSim.html", null ],
     [ "frc::sim::DutyCycleSim", "classfrc_1_1sim_1_1DutyCycleSim.html", null ],
     [ "detail::dynamic_arg_list", "classdetail_1_1dynamic__arg__list.html", null ],

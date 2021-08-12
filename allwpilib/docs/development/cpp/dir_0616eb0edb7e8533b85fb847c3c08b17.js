@@ -36,6 +36,7 @@ var dir_0616eb0edb7e8533b85fb847c3c08b17 =
     [ "DMASample.h", "DMASample_8h_source.html", null ],
     [ "DoubleSolenoid.h", "DoubleSolenoid_8h_source.html", null ],
     [ "DriverStation.h", "wpilibc_2src_2main_2native_2include_2frc_2DriverStation_8h_source.html", null ],
+    [ "DSControlWord.h", "DSControlWord_8h_source.html", null ],
     [ "DutyCycle.h", "wpilibc_2src_2main_2native_2include_2frc_2DutyCycle_8h_source.html", null ],
     [ "DutyCycleEncoder.h", "DutyCycleEncoder_8h_source.html", null ],
     [ "Encoder.h", "wpilibc_2src_2main_2native_2include_2frc_2Encoder_8h_source.html", null ],

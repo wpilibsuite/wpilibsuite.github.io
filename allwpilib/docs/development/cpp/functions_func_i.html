@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-2-38-geb790a7</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2-41-g25f6f47</span>
    </div>
   </td>
  </tr>
@@ -228,7 +228,7 @@ $(document).ready(function(){initNavTree('functions_func_i.html',''); initResiza
 , <a class="el" href="classfrc_1_1Subsystem.html#ae15724ae90278588777eba6cbed925fe">frc::Subsystem</a>
 , <a class="el" href="classfrc_1_1Trigger.html#a314800317cd973ce88a0ccf691d69dfb">frc::Trigger</a>
 , <a class="el" href="classfrc_1_1Ultrasonic.html#a0226d94c06e4205c9675d73422843538">frc::Ultrasonic</a>
-, <a class="el" href="classnt_1_1NTSendable.html#a8dc9969c212f79d2c11623cadf723b63">nt::NTSendable</a>
+, <a class="el" href="classnt_1_1NTSendable.html#a10a7a46bc2123e0a330620c64592b059">nt::NTSendable</a>
 , <a class="el" href="classwpi_1_1Sendable.html#a02dfae73ea50b297f05151eafdc2efe6">wpi::Sendable</a>
 </li>
 <li>InitString()
@@ -239,7 +239,7 @@ $(document).ready(function(){initNavTree('functions_func_i.html',''); initResiza
 </li>
 <li>insert()
 : <a class="el" href="classwpi_1_1DenseMapBase.html#a6b57477019413fa3b1b8c0b5c6f90bce">wpi::DenseMapBase&lt; DerivedT, KeyT, ValueT, KeyInfoT, BucketT &gt;</a>
-, <a class="el" href="classwpi_1_1json.html#a0c858a7dca57415d571aef2fdcca05c6">wpi::json</a>
+, <a class="el" href="classwpi_1_1json.html#a5bc6b436fd18fc96f4c14395b945842a">wpi::json</a>
 , <a class="el" href="classwpi_1_1SmallPtrSetImpl.html#a3c330902feadde42b6218e7ee93632c5">wpi::SmallPtrSetImpl&lt; PtrType &gt;</a>
 , <a class="el" href="classwpi_1_1SmallSet.html#af2ff35f93b6854478af69fcf382fd09f">wpi::SmallSet&lt; T, N, C &gt;</a>
 , <a class="el" href="classwpi_1_1StringMap.html#a4758ddddb13fcc2799785ef68ee3e104">wpi::StringMap&lt; ValueTy &gt;</a>
@@ -253,6 +253,9 @@ $(document).ready(function(){initNavTree('functions_func_i.html',''); initResiza
 <li>InstantCommand()
 : <a class="el" href="classfrc2_1_1InstantCommand.html#a1f2fd0bb6fa03676cc9ceed0fd49f86a">frc2::InstantCommand</a>
 , <a class="el" href="classfrc_1_1InstantCommand.html#a5ec29a47ec60965bfd068c3274fb7628">frc::InstantCommand</a>
+</li>
+<li>InTeleop()
+: <a class="el" href="classfrc_1_1DriverStation.html#ab4404a646c2184d3721052dc8d71f5e6">frc::DriverStation</a>
 </li>
 <li>Interpolate()
 : <a class="el" href="structfrc_1_1Trajectory_1_1State.html#a479e2d7059f93e95469348dbde773268">frc::Trajectory::State</a>
@@ -337,10 +340,12 @@ $(document).ready(function(){initNavTree('functions_func_i.html',''); initResiza
 </li>
 <li>IsAutonomous()
 : <a class="el" href="classfrc_1_1DriverStation.html#aaa787ec876e11e0dd13b2287ead9144a">frc::DriverStation</a>
+, <a class="el" href="classfrc_1_1DSControlWord.html#a5096cc9fa17a73256744de5d02610bb4">frc::DSControlWord</a>
 , <a class="el" href="classfrc_1_1RobotBase.html#ae5e2a210367c7237ff41ec65c4ea35b4">frc::RobotBase</a>
 </li>
 <li>IsAutonomousEnabled()
 : <a class="el" href="classfrc_1_1DriverStation.html#a65a99a20988dc3b1c013c4898a81df85">frc::DriverStation</a>
+, <a class="el" href="classfrc_1_1DSControlWord.html#ab90e80005df58ec9bca9b8d57e6b2c95">frc::DSControlWord</a>
 , <a class="el" href="classfrc_1_1RobotBase.html#aad77f461c170076a2f2f5477f1d62354">frc::RobotBase</a>
 </li>
 <li>IsBodyFinal()
@@ -378,6 +383,7 @@ $(document).ready(function(){initNavTree('functions_func_i.html',''); initResiza
 </li>
 <li>IsDisabled()
 : <a class="el" href="classfrc_1_1DriverStation.html#a4b570879263c7ecc6b88e0255019fd24">frc::DriverStation</a>
+, <a class="el" href="classfrc_1_1DSControlWord.html#ad92a03504e312d1f52fc5a36d5e6b02a">frc::DSControlWord</a>
 , <a class="el" href="classfrc_1_1RobotBase.html#ade497eb4c64bf1f8c8b5946a9e7d5ca6">frc::RobotBase</a>
 , <a class="el" href="classfrc_1_1Solenoid.html#a7bad65cf487982ff560263eab0addc80">frc::Solenoid</a>
 </li>
@@ -389,17 +395,20 @@ $(document).ready(function(){initNavTree('functions_func_i.html',''); initResiza
 </li>
 <li>IsDSAttached()
 : <a class="el" href="classfrc_1_1DriverStation.html#a3be44e9505e4457dbc339a8f5df78ba9">frc::DriverStation</a>
+, <a class="el" href="classfrc_1_1DSControlWord.html#ab6ce2a2d3d79167622712fac380e6cd0">frc::DSControlWord</a>
 </li>
 <li>IsEnabled()
 : <a class="el" href="classcs_1_1VideoSource.html#aa62f3221a3d208883b997f0f54440a23">cs::VideoSource</a>
 , <a class="el" href="classfrc2_1_1PIDSubsystem.html#a185f89219de0dbc8c5b476e6cf2bfcfd">frc2::PIDSubsystem</a>
 , <a class="el" href="classfrc2_1_1ProfiledPIDSubsystem.html#a12ec9a4e10ccd744429364433cc5641e">frc2::ProfiledPIDSubsystem&lt; Distance &gt;</a>
 , <a class="el" href="classfrc_1_1DriverStation.html#a91be10d2d3cb68d5e3e383b5eda00485">frc::DriverStation</a>
+, <a class="el" href="classfrc_1_1DSControlWord.html#a0089b2b27203a3db69cd7bb768acee13">frc::DSControlWord</a>
 , <a class="el" href="classfrc_1_1PIDController.html#a566852be9bee63632a3a3c1722a2638e">frc::PIDController</a>
 , <a class="el" href="classfrc_1_1RobotBase.html#aae83dcda11146ce65a0825cd38001d58">frc::RobotBase</a>
 </li>
 <li>IsEStopped()
 : <a class="el" href="classfrc_1_1DriverStation.html#adb5db10557fbfc15771a64b0666777de">frc::DriverStation</a>
+, <a class="el" href="classfrc_1_1DSControlWord.html#a24067bf9f775b45219bff394c043e279">frc::DSControlWord</a>
 </li>
 <li>IsExpired()
 : <a class="el" href="classfrc_1_1Watchdog.html#a6fd1c5ad30040101b26a62261e3d029e">frc::Watchdog</a>
@@ -433,6 +442,7 @@ $(document).ready(function(){initNavTree('functions_func_i.html',''); initResiza
 </li>
 <li>IsFMSAttached()
 : <a class="el" href="classfrc_1_1DriverStation.html#af9d228441507eabb554b15a83eec32e3">frc::DriverStation</a>
+, <a class="el" href="classfrc_1_1DSControlWord.html#a0b466eb915eac9f2de1e8c0a13ffba51">frc::DSControlWord</a>
 </li>
 <li>IsFwdSolenoidDisabled()
 : <a class="el" href="classfrc_1_1DoubleSolenoid.html#a090d9ea97a7f6e6769fbdd07ad1b0401">frc::DoubleSolenoid</a>
@@ -548,8 +558,19 @@ $(document).ready(function(){initNavTree('functions_func_i.html',''); initResiza
 <li>IsSysActive()
 : <a class="el" href="classfrc_1_1RobotController.html#a04c9086414c10f72fdafcdeb81c4d911">frc::RobotController</a>
 </li>
+<li>IsTeleop()
+: <a class="el" href="classfrc_1_1DriverStation.html#a8ccd52aeecfeedfa4c5b3152c722c73e">frc::DriverStation</a>
+, <a class="el" href="classfrc_1_1DSControlWord.html#a07116825b82d706cfa604bcec54853ba">frc::DSControlWord</a>
+, <a class="el" href="classfrc_1_1RobotBase.html#abb315455cf2315e223523882454ca1c7">frc::RobotBase</a>
+</li>
+<li>IsTeleopEnabled()
+: <a class="el" href="classfrc_1_1DriverStation.html#a4569055a17be6d13e353e22a6e72bf22">frc::DriverStation</a>
+, <a class="el" href="classfrc_1_1DSControlWord.html#ada9e8c177e5cfeb9503d5a049283ef8b">frc::DSControlWord</a>
+, <a class="el" href="classfrc_1_1RobotBase.html#aeb6120060634dacb79883a3f76154e20">frc::RobotBase</a>
+</li>
 <li>IsTest()
 : <a class="el" href="classfrc_1_1DriverStation.html#a4857bcaa88562d60a1ddbca1b36bca36">frc::DriverStation</a>
+, <a class="el" href="classfrc_1_1DSControlWord.html#a5012e4e7159b92b02561a364f5dc42a8">frc::DSControlWord</a>
 , <a class="el" href="classfrc_1_1RobotBase.html#a4e10653232959cf9c2fee095c916cf2b">frc::RobotBase</a>
 </li>
 <li>IsTimedOut()
@@ -589,7 +610,7 @@ $(document).ready(function(){initNavTree('functions_func_i.html',''); initResiza
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Aug 12 2021 01:06:48 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Aug 12 2021 06:07:20 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

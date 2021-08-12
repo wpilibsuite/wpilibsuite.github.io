@@ -284,6 +284,7 @@ var annotated_dup =
       [ "Watchdog", "classfrc_1_1Watchdog.html", "classfrc_1_1Watchdog" ],
       [ "ADXL362", "classfrc_1_1ADXL362.html", "classfrc_1_1ADXL362" ],
       [ "AnalogGyro", "classfrc_1_1AnalogGyro.html", "classfrc_1_1AnalogGyro" ],
+      [ "DSControlWord", "classfrc_1_1DSControlWord.html", "classfrc_1_1DSControlWord" ],
       [ "CANData", "structfrc_1_1CANData.html", "structfrc_1_1CANData" ],
       [ "CAN", "classfrc_1_1CAN.html", "classfrc_1_1CAN" ],
       [ "Notifier", "classfrc_1_1Notifier.html", "classfrc_1_1Notifier" ],
