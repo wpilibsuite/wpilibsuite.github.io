@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-2-41-g25f6f47</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2-43-g192d251</span>
    </div>
   </td>
  </tr>
@@ -94,11 +94,11 @@ $(document).ready(function(){initNavTree('classfrc_1_1GenericHID.html',''); init
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classfrc_1_1GenericHID-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">frc::GenericHID Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">frc::GenericHID Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="classfrc_1_1GenericHID.html" title="GenericHID Interface.">GenericHID</a> Interface.  
+<p>Handle input from standard HID devices connected to the Driver Station.  
  <a href="classfrc_1_1GenericHID.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="GenericHID_8h_source.html">frc/GenericHID.h</a>&gt;</code></p>
@@ -109,7 +109,8 @@ Inheritance diagram for frc::GenericHID:</div>
   <img src="classfrc_1_1GenericHID.png" usemap="#frc::GenericHID_map" alt=""/>
   <map id="frc::GenericHID_map" name="frc::GenericHID_map">
 <area href="classfrc_1_1Joystick.html" title="Handle input from standard Joysticks connected to the Driver Station." alt="frc::Joystick" shape="rect" coords="0,56,119,80"/>
-<area href="classfrc_1_1XboxController.html" title="Handle input from Xbox 360 or Xbox One controllers connected to the Driver Station." alt="frc::XboxController" shape="rect" coords="129,56,248,80"/>
+<area href="classfrc_1_1PS4Controller.html" title="Handle input from PS4 controllers connected to the Driver Station." alt="frc::PS4Controller" shape="rect" coords="129,56,248,80"/>
+<area href="classfrc_1_1XboxController.html" title="Handle input from Xbox 360 or Xbox One controllers connected to the Driver Station." alt="frc::XboxController" shape="rect" coords="258,56,377,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -144,10 +145,6 @@ Public Types</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:aaa9446493203d96f2406fbcbb4cf0dd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a328438a24329d5577fbbc03f667981d0"><td class="memItemLeft" align="right" valign="top"><a id="a328438a24329d5577fbbc03f667981d0"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>JoystickHand</b> { <b>kLeftHand</b> = 0
-, <b>kRightHand</b> = 1
- }</td></tr>
-<tr class="separator:a328438a24329d5577fbbc03f667981d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -160,12 +157,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afab7c1fcd65064cb2680f02e61ac1e17"><td class="memItemLeft" align="right" valign="top"><a id="afab7c1fcd65064cb2680f02e61ac1e17"></a>
 <a class="el" href="classfrc_1_1GenericHID.html">GenericHID</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classfrc_1_1GenericHID.html">GenericHID</a> &amp;&amp;)=default</td></tr>
 <tr class="separator:afab7c1fcd65064cb2680f02e61ac1e17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cb034f1110d17c645fe2aa96710b953"><td class="memItemLeft" align="right" valign="top"><a id="a3cb034f1110d17c645fe2aa96710b953"></a>
-virtual double&#160;</td><td class="memItemRight" valign="bottom"><b>GetX</b> (JoystickHand hand=kRightHand) const =0</td></tr>
-<tr class="separator:a3cb034f1110d17c645fe2aa96710b953"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d17a27c893edc536d90aa695d75826f"><td class="memItemLeft" align="right" valign="top"><a id="a8d17a27c893edc536d90aa695d75826f"></a>
-virtual double&#160;</td><td class="memItemRight" valign="bottom"><b>GetY</b> (JoystickHand hand=kRightHand) const =0</td></tr>
-<tr class="separator:a8d17a27c893edc536d90aa695d75826f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a384c325f21ba4190b789aa8559b6b07b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1GenericHID.html#a384c325f21ba4190b789aa8559b6b07b">GetRawButton</a> (int button) const</td></tr>
 <tr class="memdesc:a384c325f21ba4190b789aa8559b6b07b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the button value (starting at button 1).  <a href="classfrc_1_1GenericHID.html#a384c325f21ba4190b789aa8559b6b07b">More...</a><br /></td></tr>
 <tr class="separator:a384c325f21ba4190b789aa8559b6b07b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -216,7 +207,8 @@ virtual double&#160;</td><td class="memItemRight" valign="bottom"><b>GetY</b> (J
 <tr class="separator:ae3b4d14307e1af5e8cc44e2d631ce7f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="classfrc_1_1GenericHID.html" title="GenericHID Interface.">GenericHID</a> Interface. </p>
+<div class="textblock"><p>Handle input from standard HID devices connected to the Driver Station. </p>
+<p>This class handles standard input that comes from the Driver Station. Each time a value is requested the most recent value is returned. There is a single class instance for each device and the mapping of ports to hardware buttons depends on the code in the Driver Station. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ae59fa53ad800be21b65b19fe7690497e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae59fa53ad800be21b65b19fe7690497e">&#9670;&nbsp;</a></span>GetAxisCount()</h2>
@@ -631,7 +623,7 @@ virtual double&#160;</td><td class="memItemRight" valign="bottom"><b>GetY</b> (J
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1GenericHID.html">GenericHID</a></li>
-    <li class="footer">Generated on Thu Aug 12 2021 06:07:17 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Aug 14 2021 17:03:42 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

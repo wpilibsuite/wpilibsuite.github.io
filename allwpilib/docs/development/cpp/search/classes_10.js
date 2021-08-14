@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['quintichermitespline_4545',['QuinticHermiteSpline',['../classfrc_1_1QuinticHermiteSpline.html',1,'frc']]]
+  ['quintichermitespline_4630',['QuinticHermiteSpline',['../classfrc_1_1QuinticHermiteSpline.html',1,'frc']]]
 ];

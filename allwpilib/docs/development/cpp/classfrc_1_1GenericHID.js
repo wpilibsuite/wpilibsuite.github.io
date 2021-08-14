@@ -19,10 +19,6 @@ var classfrc_1_1GenericHID =
       [ "kHIDFlight", "classfrc_1_1GenericHID.html#aaa9446493203d96f2406fbcbb4cf0dd6a8bfc6afc5ad17b95ed129bdd4a257e6f", null ],
       [ "kHID1stPerson", "classfrc_1_1GenericHID.html#aaa9446493203d96f2406fbcbb4cf0dd6a4d67f828195939cb43ef1e7ba83ad716", null ]
     ] ],
-    [ "JoystickHand", "classfrc_1_1GenericHID.html#a328438a24329d5577fbbc03f667981d0", [
-      [ "kLeftHand", "classfrc_1_1GenericHID.html#a328438a24329d5577fbbc03f667981d0a44b02c2577c6f80e5511a759f6cbd92c", null ],
-      [ "kRightHand", "classfrc_1_1GenericHID.html#a328438a24329d5577fbbc03f667981d0ae1f61fc9c03ebbee47d692b49f24289b", null ]
-    ] ],
     [ "RumbleType", "classfrc_1_1GenericHID.html#a5517fc779168c17f938be2e875976c66", [
       [ "kLeftRumble", "classfrc_1_1GenericHID.html#a5517fc779168c17f938be2e875976c66a9ec47ccba29b7f56ee3f37b1cfce7439", null ],
       [ "kRightRumble", "classfrc_1_1GenericHID.html#a5517fc779168c17f938be2e875976c66ac65d4f8c303600df135e7b2075410069", null ]
@@ -42,8 +38,6 @@ var classfrc_1_1GenericHID =
     [ "GetRawButtonPressed", "classfrc_1_1GenericHID.html#ac4ac34bf315cc917cb4919acd9f566b0", null ],
     [ "GetRawButtonReleased", "classfrc_1_1GenericHID.html#aef42e713c5357b67e7b7376ab97f241f", null ],
     [ "GetType", "classfrc_1_1GenericHID.html#a079b71bdfeb5e9099caede4a269df5d1", null ],
-    [ "GetX", "classfrc_1_1GenericHID.html#a3cb034f1110d17c645fe2aa96710b953", null ],
-    [ "GetY", "classfrc_1_1GenericHID.html#a8d17a27c893edc536d90aa695d75826f", null ],
     [ "IsConnected", "classfrc_1_1GenericHID.html#a8b8d0a37ee370b75dc71a194d54e737b", null ],
     [ "operator=", "classfrc_1_1GenericHID.html#afab7c1fcd65064cb2680f02e61ac1e17", null ],
     [ "SetOutput", "classfrc_1_1GenericHID.html#aa48f1d4afd2d2727bf7d8dcd02692a5a", null ],

@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-2-41-g25f6f47</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2-43-g192d251</span>
    </div>
   </td>
  </tr>
@@ -107,40 +107,35 @@ $(document).ready(function(){initNavTree('GenericHID_8h_source.html',''); initRe
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span>DriverStation;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classfrc_1_1GenericHID.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1GenericHID.html">GenericHID</a> {</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keyword">enum</span> RumbleType { kLeftRumble, kRightRumble };</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keyword">enum</span> HIDType {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    kUnknown = -1,</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    kXInputUnknown = 0,</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    kXInputGamepad = 1,</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    kXInputWheel = 2,</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    kXInputArcadeStick = 3,</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    kXInputFlightStick = 4,</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    kXInputDancePad = 5,</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    kXInputGuitar = 6,</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    kXInputGuitar2 = 7,</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    kXInputDrumKit = 8,</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    kXInputGuitar3 = 11,</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    kXInputArcadePad = 19,</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    kHIDJoystick = 20,</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    kHIDGamepad = 21,</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    kHIDDriving = 22,</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    kHIDFlight = 23,</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    kHID1stPerson = 24</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  };</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">enum</span> JoystickHand { kLeftHand = 0, kRightHand = 1 };</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc_1_1GenericHID.html">GenericHID</a>(<span class="keywordtype">int</span> port);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classfrc_1_1GenericHID.html">GenericHID</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classfrc_1_1GenericHID.html">   23</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfrc_1_1GenericHID.html">GenericHID</a> {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keyword">enum</span> RumbleType { kLeftRumble, kRightRumble };</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">enum</span> HIDType {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    kUnknown = -1,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    kXInputUnknown = 0,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    kXInputGamepad = 1,</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    kXInputWheel = 2,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    kXInputArcadeStick = 3,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    kXInputFlightStick = 4,</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    kXInputDancePad = 5,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    kXInputGuitar = 6,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    kXInputGuitar2 = 7,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    kXInputDrumKit = 8,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    kXInputGuitar3 = 11,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    kXInputArcadePad = 19,</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    kHIDJoystick = 20,</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    kHIDGamepad = 21,</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    kHIDDriving = 22,</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    kHIDFlight = 23,</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    kHID1stPerson = 24</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  };</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <a class="code" href="classfrc_1_1GenericHID.html">GenericHID</a>(<a class="code" href="classfrc_1_1GenericHID.html">GenericHID</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <a class="code" href="classfrc_1_1GenericHID.html">GenericHID</a>&amp; operator=(<a class="code" href="classfrc_1_1GenericHID.html">GenericHID</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="classfrc_1_1GenericHID.html">GenericHID</a>(<span class="keywordtype">int</span> port);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classfrc_1_1GenericHID.html">GenericHID</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">double</span> GetX(JoystickHand hand = kRightHand) <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">double</span> GetY(JoystickHand hand = kRightHand) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <a class="code" href="classfrc_1_1GenericHID.html">GenericHID</a>(<a class="code" href="classfrc_1_1GenericHID.html">GenericHID</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <a class="code" href="classfrc_1_1GenericHID.html">GenericHID</a>&amp; operator=(<a class="code" href="classfrc_1_1GenericHID.html">GenericHID</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
 <div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classfrc_1_1GenericHID.html#a384c325f21ba4190b789aa8559b6b07b">   66</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classfrc_1_1GenericHID.html#a384c325f21ba4190b789aa8559b6b07b">GetRawButton</a>(<span class="keywordtype">int</span> button) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
@@ -182,7 +177,7 @@ $(document).ready(function(){initNavTree('GenericHID_8h_source.html',''); initRe
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;};</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;}  <span class="comment">// namespace frc</span></div>
-<div class="ttc" id="aclassfrc_1_1GenericHID_html"><div class="ttname"><a href="classfrc_1_1GenericHID.html">frc::GenericHID</a></div><div class="ttdoc">GenericHID Interface.</div><div class="ttdef"><b>Definition:</b> GenericHID.h:18</div></div>
+<div class="ttc" id="aclassfrc_1_1GenericHID_html"><div class="ttname"><a href="classfrc_1_1GenericHID.html">frc::GenericHID</a></div><div class="ttdoc">Handle input from standard HID devices connected to the Driver Station.</div><div class="ttdef"><b>Definition:</b> GenericHID.h:23</div></div>
 <div class="ttc" id="aclassfrc_1_1GenericHID_html_a00262fe3969d9638fc7f030207581a79"><div class="ttname"><a href="classfrc_1_1GenericHID.html#a00262fe3969d9638fc7f030207581a79">frc::GenericHID::GetRawAxis</a></div><div class="ttdeci">double GetRawAxis(int axis) const</div><div class="ttdoc">Get the value of the axis.</div></div>
 <div class="ttc" id="aclassfrc_1_1GenericHID_html_a079b71bdfeb5e9099caede4a269df5d1"><div class="ttname"><a href="classfrc_1_1GenericHID.html#a079b71bdfeb5e9099caede4a269df5d1">frc::GenericHID::GetType</a></div><div class="ttdeci">GenericHID::HIDType GetType() const</div><div class="ttdoc">Get the type of the HID.</div></div>
 <div class="ttc" id="aclassfrc_1_1GenericHID_html_a2fafc600a5cf100f363d8bef7c1d9e30"><div class="ttname"><a href="classfrc_1_1GenericHID.html#a2fafc600a5cf100f363d8bef7c1d9e30">frc::GenericHID::GetAxisType</a></div><div class="ttdeci">int GetAxisType(int axis) const</div><div class="ttdoc">Get the axis type of a joystick axis.</div></div>
@@ -206,7 +201,7 @@ $(document).ready(function(){initNavTree('GenericHID_8h_source.html',''); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><b>GenericHID.h</b></li>
-    <li class="footer">Generated on Thu Aug 12 2021 06:07:14 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Aug 14 2021 17:03:39 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

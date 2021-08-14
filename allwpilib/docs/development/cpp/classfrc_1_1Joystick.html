@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-2-41-g25f6f47</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2-43-g192d251</span>
    </div>
   </td>
  </tr>
@@ -109,7 +109,7 @@ Inheritance diagram for frc::Joystick:</div>
  <div class="center">
   <img src="classfrc_1_1Joystick.png" usemap="#frc::Joystick_map" alt=""/>
   <map id="frc::Joystick_map" name="frc::Joystick_map">
-<area href="classfrc_1_1GenericHID.html" title="GenericHID Interface." alt="frc::GenericHID" shape="rect" coords="0,0,100,24"/>
+<area href="classfrc_1_1GenericHID.html" title="Handle input from standard HID devices connected to the Driver Station." alt="frc::GenericHID" shape="rect" coords="0,0,100,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -159,10 +159,6 @@ Public Types</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:aaa9446493203d96f2406fbcbb4cf0dd6 inherit pub_types_classfrc_1_1GenericHID"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a328438a24329d5577fbbc03f667981d0 inherit pub_types_classfrc_1_1GenericHID"><td class="memItemLeft" align="right" valign="top"><a id="a328438a24329d5577fbbc03f667981d0"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>JoystickHand</b> { <b>kLeftHand</b> = 0
-, <b>kRightHand</b> = 1
- }</td></tr>
-<tr class="separator:a328438a24329d5577fbbc03f667981d0 inherit pub_types_classfrc_1_1GenericHID"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -205,12 +201,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aad454d6d34e1a45ddd49f56b4ff835e4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Joystick.html#aad454d6d34e1a45ddd49f56b4ff835e4">GetThrottleChannel</a> () const</td></tr>
 <tr class="memdesc:aad454d6d34e1a45ddd49f56b4ff835e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the channel currently associated with the throttle axis.  <a href="classfrc_1_1Joystick.html#aad454d6d34e1a45ddd49f56b4ff835e4">More...</a><br /></td></tr>
 <tr class="separator:aad454d6d34e1a45ddd49f56b4ff835e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21ba28600cb62995c6f6dc0079a4c10f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Joystick.html#a21ba28600cb62995c6f6dc0079a4c10f">GetX</a> (JoystickHand hand=kRightHand) const override</td></tr>
-<tr class="memdesc:a21ba28600cb62995c6f6dc0079a4c10f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the X value of the joystick.  <a href="classfrc_1_1Joystick.html#a21ba28600cb62995c6f6dc0079a4c10f">More...</a><br /></td></tr>
-<tr class="separator:a21ba28600cb62995c6f6dc0079a4c10f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a986446219fb0dc5bdde10c1f37b97513"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Joystick.html#a986446219fb0dc5bdde10c1f37b97513">GetY</a> (JoystickHand hand=kRightHand) const override</td></tr>
-<tr class="memdesc:a986446219fb0dc5bdde10c1f37b97513"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Y value of the joystick.  <a href="classfrc_1_1Joystick.html#a986446219fb0dc5bdde10c1f37b97513">More...</a><br /></td></tr>
-<tr class="separator:a986446219fb0dc5bdde10c1f37b97513"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a776cc3cb9a641ea4b940a4f55a3cd16a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Joystick.html#a776cc3cb9a641ea4b940a4f55a3cd16a">GetX</a> () const</td></tr>
+<tr class="memdesc:a776cc3cb9a641ea4b940a4f55a3cd16a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the X value of the current joystick.  <a href="classfrc_1_1Joystick.html#a776cc3cb9a641ea4b940a4f55a3cd16a">More...</a><br /></td></tr>
+<tr class="separator:a776cc3cb9a641ea4b940a4f55a3cd16a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa504480f35bcf53bee3108aa29139636"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Joystick.html#aa504480f35bcf53bee3108aa29139636">GetY</a> () const</td></tr>
+<tr class="memdesc:aa504480f35bcf53bee3108aa29139636"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Y value of the current joystick.  <a href="classfrc_1_1Joystick.html#aa504480f35bcf53bee3108aa29139636">More...</a><br /></td></tr>
+<tr class="separator:aa504480f35bcf53bee3108aa29139636"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8446bec782e1db910d4fe7fef8fd91cc"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Joystick.html#a8446bec782e1db910d4fe7fef8fd91cc">GetZ</a> () const</td></tr>
 <tr class="memdesc:a8446bec782e1db910d4fe7fef8fd91cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Z value of the current joystick.  <a href="classfrc_1_1Joystick.html#a8446bec782e1db910d4fe7fef8fd91cc">More...</a><br /></td></tr>
 <tr class="separator:a8446bec782e1db910d4fe7fef8fd91cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -626,40 +622,23 @@ static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>kDefa
 
 </div>
 </div>
-<a id="a21ba28600cb62995c6f6dc0079a4c10f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21ba28600cb62995c6f6dc0079a4c10f">&#9670;&nbsp;</a></span>GetX()</h2>
+<a id="a776cc3cb9a641ea4b940a4f55a3cd16a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a776cc3cb9a641ea4b940a4f55a3cd16a">&#9670;&nbsp;</a></span>GetX()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">double frc::Joystick::GetX </td>
           <td>(</td>
-          <td class="paramtype">JoystickHand&#160;</td>
-          <td class="paramname"><em>hand</em> = <code>kRightHand</code></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Get the X value of the joystick. </p>
-<p>This depends on the mapping of the joystick connected to the current port.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">hand</td><td>This parameter is ignored for the <a class="el" href="classfrc_1_1Joystick.html" title="Handle input from standard Joysticks connected to the Driver Station.">Joystick</a> class and is only here to complete the <a class="el" href="classfrc_1_1GenericHID.html" title="GenericHID Interface.">GenericHID</a> interface. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="classfrc_1_1GenericHID.html">frc::GenericHID</a>.</p>
+<p>Get the X value of the current joystick. </p>
+<p>This depends on the mapping of the joystick connected to the current port. </p>
 
 </div>
 </div>
@@ -683,40 +662,23 @@ static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>kDefa
 
 </div>
 </div>
-<a id="a986446219fb0dc5bdde10c1f37b97513"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a986446219fb0dc5bdde10c1f37b97513">&#9670;&nbsp;</a></span>GetY()</h2>
+<a id="aa504480f35bcf53bee3108aa29139636"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa504480f35bcf53bee3108aa29139636">&#9670;&nbsp;</a></span>GetY()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">double frc::Joystick::GetY </td>
           <td>(</td>
-          <td class="paramtype">JoystickHand&#160;</td>
-          <td class="paramname"><em>hand</em> = <code>kRightHand</code></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Get the Y value of the joystick. </p>
-<p>This depends on the mapping of the joystick connected to the current port.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">hand</td><td>This parameter is ignored for the <a class="el" href="classfrc_1_1Joystick.html" title="Handle input from standard Joysticks connected to the Driver Station.">Joystick</a> class and is only here to complete the <a class="el" href="classfrc_1_1GenericHID.html" title="GenericHID Interface.">GenericHID</a> interface. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="classfrc_1_1GenericHID.html">frc::GenericHID</a>.</p>
+<p>Get the Y value of the current joystick. </p>
+<p>This depends on the mapping of the joystick connected to the current port. </p>
 
 </div>
 </div>
@@ -923,7 +885,7 @@ static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>kDefa
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1Joystick.html">Joystick</a></li>
-    <li class="footer">Generated on Thu Aug 12 2021 06:07:17 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Aug 14 2021 17:03:41 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

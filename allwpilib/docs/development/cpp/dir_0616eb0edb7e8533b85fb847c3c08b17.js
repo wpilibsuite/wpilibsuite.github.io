@@ -52,6 +52,7 @@ var dir_0616eb0edb7e8533b85fb847c3c08b17 =
     [ "PneumaticsControlModule.h", "PneumaticsControlModule_8h_source.html", null ],
     [ "PowerDistribution.h", "wpilibc_2src_2main_2native_2include_2frc_2PowerDistribution_8h_source.html", null ],
     [ "Preferences.h", "Preferences_8h_source.html", null ],
+    [ "PS4Controller.h", "PS4Controller_8h_source.html", null ],
     [ "PWM.h", "wpilibc_2src_2main_2native_2include_2frc_2PWM_8h_source.html", null ],
     [ "Relay.h", "wpilibc_2src_2main_2native_2include_2frc_2Relay_8h_source.html", null ],
     [ "Resource.h", "Resource_8h_source.html", null ],

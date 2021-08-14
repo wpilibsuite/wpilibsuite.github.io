@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-2-41-g25f6f47</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2-43-g192d251</span>
    </div>
   </td>
  </tr>
@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('classfrc_1_1XboxController.html',''); 
 
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classfrc_1_1XboxController-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -108,73 +108,16 @@ Inheritance diagram for frc::XboxController:</div>
  <div class="center">
   <img src="classfrc_1_1XboxController.png" usemap="#frc::XboxController_map" alt=""/>
   <map id="frc::XboxController_map" name="frc::XboxController_map">
-<area href="classfrc_1_1GenericHID.html" title="GenericHID Interface." alt="frc::GenericHID" shape="rect" coords="0,0,119,24"/>
+<area href="classfrc_1_1GenericHID.html" title="Handle input from standard HID devices connected to the Driver Station." alt="frc::GenericHID" shape="rect" coords="0,0,119,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a1034633d4be2db9277b3864efa55b99b"><td class="memItemLeft" align="right" valign="top"><a id="a1034633d4be2db9277b3864efa55b99b"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>Button</b> { <br />
-&#160;&#160;<b>kBumperLeft</b> = 5
-, <b>kBumperRight</b> = 6
-, <b>kStickLeft</b> = 9
-, <b>kStickRight</b> = 10
-, <br />
-&#160;&#160;<b>kA</b> = 1
-, <b>kB</b> = 2
-, <b>kX</b> = 3
-, <b>kY</b> = 4
-, <br />
-&#160;&#160;<b>kBack</b> = 7
-, <b>kStart</b> = 8
-<br />
- }</td></tr>
-<tr class="separator:a1034633d4be2db9277b3864efa55b99b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41e2176c6bd725d8a8d2b0307768fcf1"><td class="memItemLeft" align="right" valign="top"><a id="a41e2176c6bd725d8a8d2b0307768fcf1"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>Axis</b> { <br />
-&#160;&#160;<b>kLeftX</b> = 0
-, <b>kRightX</b> = 4
-, <b>kLeftY</b> = 1
-, <b>kRightY</b> = 5
-, <br />
-&#160;&#160;<b>kLeftTrigger</b> = 2
-, <b>kRightTrigger</b> = 3
-<br />
- }</td></tr>
-<tr class="separator:a41e2176c6bd725d8a8d2b0307768fcf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_types_classfrc_1_1GenericHID"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classfrc_1_1GenericHID')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classfrc_1_1GenericHID.html">frc::GenericHID</a></td></tr>
-<tr class="memitem:a5517fc779168c17f938be2e875976c66 inherit pub_types_classfrc_1_1GenericHID"><td class="memItemLeft" align="right" valign="top"><a id="a5517fc779168c17f938be2e875976c66"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>RumbleType</b> { <b>kLeftRumble</b>
-, <b>kRightRumble</b>
- }</td></tr>
-<tr class="separator:a5517fc779168c17f938be2e875976c66 inherit pub_types_classfrc_1_1GenericHID"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa9446493203d96f2406fbcbb4cf0dd6 inherit pub_types_classfrc_1_1GenericHID"><td class="memItemLeft" align="right" valign="top"><a id="aaa9446493203d96f2406fbcbb4cf0dd6"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>HIDType</b> { <br />
-&#160;&#160;<b>kUnknown</b> = -1
-, <b>kXInputUnknown</b> = 0
-, <b>kXInputGamepad</b> = 1
-, <b>kXInputWheel</b> = 2
-, <br />
-&#160;&#160;<b>kXInputArcadeStick</b> = 3
-, <b>kXInputFlightStick</b> = 4
-, <b>kXInputDancePad</b> = 5
-, <b>kXInputGuitar</b> = 6
-, <br />
-&#160;&#160;<b>kXInputGuitar2</b> = 7
-, <b>kXInputDrumKit</b> = 8
-, <b>kXInputGuitar3</b> = 11
-, <b>kXInputArcadePad</b> = 19
-, <br />
-&#160;&#160;<b>kHIDJoystick</b> = 20
-, <b>kHIDGamepad</b> = 21
-, <b>kHIDDriving</b> = 22
-, <b>kHIDFlight</b> = 23
-, <br />
-&#160;&#160;<b>kHID1stPerson</b> = 24
-<br />
- }</td></tr>
-<tr class="separator:aaa9446493203d96f2406fbcbb4cf0dd6 inherit pub_types_classfrc_1_1GenericHID"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a328438a24329d5577fbbc03f667981d0 inherit pub_types_classfrc_1_1GenericHID"><td class="memItemLeft" align="right" valign="top"><a id="a328438a24329d5577fbbc03f667981d0"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>JoystickHand</b> { <b>kLeftHand</b> = 0
-, <b>kRightHand</b> = 1
- }</td></tr>
-<tr class="separator:a328438a24329d5577fbbc03f667981d0 inherit pub_types_classfrc_1_1GenericHID"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfrc_1_1XboxController_1_1Axis.html">Axis</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfrc_1_1XboxController_1_1Button.html">Button</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -187,33 +130,76 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a16cc1608cea96379235dad26e80c0958"><td class="memItemLeft" align="right" valign="top"><a id="a16cc1608cea96379235dad26e80c0958"></a>
 <a class="el" href="classfrc_1_1XboxController.html">XboxController</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classfrc_1_1XboxController.html">XboxController</a> &amp;&amp;)=default</td></tr>
 <tr class="separator:a16cc1608cea96379235dad26e80c0958"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b028151286ab89569bf2371066b6a61"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1XboxController.html#a2b028151286ab89569bf2371066b6a61">GetX</a> (JoystickHand hand) const override</td></tr>
-<tr class="memdesc:a2b028151286ab89569bf2371066b6a61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the X axis value of the controller.  <a href="classfrc_1_1XboxController.html#a2b028151286ab89569bf2371066b6a61">More...</a><br /></td></tr>
-<tr class="separator:a2b028151286ab89569bf2371066b6a61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5551498fd21cf54bb6918a2703a933fa"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1XboxController.html#a5551498fd21cf54bb6918a2703a933fa">GetY</a> (JoystickHand hand) const override</td></tr>
-<tr class="memdesc:a5551498fd21cf54bb6918a2703a933fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Y axis value of the controller.  <a href="classfrc_1_1XboxController.html#a5551498fd21cf54bb6918a2703a933fa">More...</a><br /></td></tr>
-<tr class="separator:a5551498fd21cf54bb6918a2703a933fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a946f0e945ca7f82d0b9ffebbd04af368"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1XboxController.html#a946f0e945ca7f82d0b9ffebbd04af368">GetTriggerAxis</a> (JoystickHand hand) const</td></tr>
-<tr class="memdesc:a946f0e945ca7f82d0b9ffebbd04af368"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the trigger axis value of the controller.  <a href="classfrc_1_1XboxController.html#a946f0e945ca7f82d0b9ffebbd04af368">More...</a><br /></td></tr>
-<tr class="separator:a946f0e945ca7f82d0b9ffebbd04af368"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a501dd2f27fd8d5d749ea9229816765ca"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1XboxController.html#a501dd2f27fd8d5d749ea9229816765ca">GetBumper</a> (JoystickHand hand) const</td></tr>
-<tr class="memdesc:a501dd2f27fd8d5d749ea9229816765ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the value of the bumper button on the controller.  <a href="classfrc_1_1XboxController.html#a501dd2f27fd8d5d749ea9229816765ca">More...</a><br /></td></tr>
-<tr class="separator:a501dd2f27fd8d5d749ea9229816765ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8eac576fb4a05e180300c523e1cf3779"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1XboxController.html#a8eac576fb4a05e180300c523e1cf3779">GetBumperPressed</a> (JoystickHand hand)</td></tr>
-<tr class="memdesc:a8eac576fb4a05e180300c523e1cf3779"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the bumper was pressed since the last check.  <a href="classfrc_1_1XboxController.html#a8eac576fb4a05e180300c523e1cf3779">More...</a><br /></td></tr>
-<tr class="separator:a8eac576fb4a05e180300c523e1cf3779"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7bb93e671d04304d68b3d00e939721d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1XboxController.html#ac7bb93e671d04304d68b3d00e939721d">GetBumperReleased</a> (JoystickHand hand)</td></tr>
-<tr class="memdesc:ac7bb93e671d04304d68b3d00e939721d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the bumper was released since the last check.  <a href="classfrc_1_1XboxController.html#ac7bb93e671d04304d68b3d00e939721d">More...</a><br /></td></tr>
-<tr class="separator:ac7bb93e671d04304d68b3d00e939721d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2e3fcacf58d80774c4708d4b70c5040"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1XboxController.html#af2e3fcacf58d80774c4708d4b70c5040">GetStickButton</a> (JoystickHand hand) const</td></tr>
-<tr class="memdesc:af2e3fcacf58d80774c4708d4b70c5040"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the value of the stick button on the controller.  <a href="classfrc_1_1XboxController.html#af2e3fcacf58d80774c4708d4b70c5040">More...</a><br /></td></tr>
-<tr class="separator:af2e3fcacf58d80774c4708d4b70c5040"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50834596a13e600156c2aed0a03de90b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1XboxController.html#a50834596a13e600156c2aed0a03de90b">GetStickButtonPressed</a> (JoystickHand hand)</td></tr>
-<tr class="memdesc:a50834596a13e600156c2aed0a03de90b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the stick button was pressed since the last check.  <a href="classfrc_1_1XboxController.html#a50834596a13e600156c2aed0a03de90b">More...</a><br /></td></tr>
-<tr class="separator:a50834596a13e600156c2aed0a03de90b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cc45462107fe6eaba85cf7e9a3ac428"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1XboxController.html#a0cc45462107fe6eaba85cf7e9a3ac428">GetStickButtonReleased</a> (JoystickHand hand)</td></tr>
-<tr class="memdesc:a0cc45462107fe6eaba85cf7e9a3ac428"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the stick button was released since the last check.  <a href="classfrc_1_1XboxController.html#a0cc45462107fe6eaba85cf7e9a3ac428">More...</a><br /></td></tr>
-<tr class="separator:a0cc45462107fe6eaba85cf7e9a3ac428"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1777fda15750d5687692bd3252dcb50a"><td class="memItemLeft" align="right" valign="top"><a id="a1777fda15750d5687692bd3252dcb50a"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1XboxController.html#a1777fda15750d5687692bd3252dcb50a">GetLeftX</a> () const</td></tr>
+<tr class="memdesc:a1777fda15750d5687692bd3252dcb50a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the X axis value of left side of the controller. <br /></td></tr>
+<tr class="separator:a1777fda15750d5687692bd3252dcb50a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe7baad27848159826492310ad09aa5a"><td class="memItemLeft" align="right" valign="top"><a id="afe7baad27848159826492310ad09aa5a"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1XboxController.html#afe7baad27848159826492310ad09aa5a">GetRightX</a> () const</td></tr>
+<tr class="memdesc:afe7baad27848159826492310ad09aa5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the X axis value of right side of the controller. <br /></td></tr>
+<tr class="separator:afe7baad27848159826492310ad09aa5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54c38fc2a35db1d47a6f8dda3a24979e"><td class="memItemLeft" align="right" valign="top"><a id="a54c38fc2a35db1d47a6f8dda3a24979e"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1XboxController.html#a54c38fc2a35db1d47a6f8dda3a24979e">GetLeftY</a> () const</td></tr>
+<tr class="memdesc:a54c38fc2a35db1d47a6f8dda3a24979e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Y axis value of left side of the controller. <br /></td></tr>
+<tr class="separator:a54c38fc2a35db1d47a6f8dda3a24979e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac331d9a9d4ee69ec4ae337894f517208"><td class="memItemLeft" align="right" valign="top"><a id="ac331d9a9d4ee69ec4ae337894f517208"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1XboxController.html#ac331d9a9d4ee69ec4ae337894f517208">GetRightY</a> () const</td></tr>
+<tr class="memdesc:ac331d9a9d4ee69ec4ae337894f517208"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Y axis value of right side of the controller. <br /></td></tr>
+<tr class="separator:ac331d9a9d4ee69ec4ae337894f517208"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66900dbe211afeb1d4236819e17bd161"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1XboxController.html#a66900dbe211afeb1d4236819e17bd161">GetLeftTriggerAxis</a> () const</td></tr>
+<tr class="memdesc:a66900dbe211afeb1d4236819e17bd161"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the left trigger (LT) axis value of the controller.  <a href="classfrc_1_1XboxController.html#a66900dbe211afeb1d4236819e17bd161">More...</a><br /></td></tr>
+<tr class="separator:a66900dbe211afeb1d4236819e17bd161"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee892c02ab94dce74de7d9dfbfcd7d52"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1XboxController.html#aee892c02ab94dce74de7d9dfbfcd7d52">GetRightTriggerAxis</a> () const</td></tr>
+<tr class="memdesc:aee892c02ab94dce74de7d9dfbfcd7d52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the right trigger (RT) axis value of the controller.  <a href="classfrc_1_1XboxController.html#aee892c02ab94dce74de7d9dfbfcd7d52">More...</a><br /></td></tr>
+<tr class="separator:aee892c02ab94dce74de7d9dfbfcd7d52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a249f1242629306ce8f050e316eacfa8a"><td class="memItemLeft" align="right" valign="top"><a id="a249f1242629306ce8f050e316eacfa8a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1XboxController.html#a249f1242629306ce8f050e316eacfa8a">GetLeftBumper</a> () const</td></tr>
+<tr class="memdesc:a249f1242629306ce8f050e316eacfa8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the value of the left bumper (LB) button on the controller. <br /></td></tr>
+<tr class="separator:a249f1242629306ce8f050e316eacfa8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7be97832a1d914b2f330b41ccb676e48"><td class="memItemLeft" align="right" valign="top"><a id="a7be97832a1d914b2f330b41ccb676e48"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1XboxController.html#a7be97832a1d914b2f330b41ccb676e48">GetRightBumper</a> () const</td></tr>
+<tr class="memdesc:a7be97832a1d914b2f330b41ccb676e48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the value of the right bumper (RB) button on the controller. <br /></td></tr>
+<tr class="separator:a7be97832a1d914b2f330b41ccb676e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b1a9a4c0ef639c80b33713a01d69e26"><td class="memItemLeft" align="right" valign="top"><a id="a7b1a9a4c0ef639c80b33713a01d69e26"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1XboxController.html#a7b1a9a4c0ef639c80b33713a01d69e26">GetLeftBumperPressed</a> ()</td></tr>
+<tr class="memdesc:a7b1a9a4c0ef639c80b33713a01d69e26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the left bumper (LB) was pressed since the last check. <br /></td></tr>
+<tr class="separator:a7b1a9a4c0ef639c80b33713a01d69e26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae21998f09f9e00f4121d8edcd4b17a1b"><td class="memItemLeft" align="right" valign="top"><a id="ae21998f09f9e00f4121d8edcd4b17a1b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1XboxController.html#ae21998f09f9e00f4121d8edcd4b17a1b">GetRightBumperPressed</a> ()</td></tr>
+<tr class="memdesc:ae21998f09f9e00f4121d8edcd4b17a1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the right bumper (RB) was pressed since the last check. <br /></td></tr>
+<tr class="separator:ae21998f09f9e00f4121d8edcd4b17a1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8989050aa4253e77495e43a3f4a5bc08"><td class="memItemLeft" align="right" valign="top"><a id="a8989050aa4253e77495e43a3f4a5bc08"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1XboxController.html#a8989050aa4253e77495e43a3f4a5bc08">GetLeftBumperReleased</a> ()</td></tr>
+<tr class="memdesc:a8989050aa4253e77495e43a3f4a5bc08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the left bumper (LB) was released since the last check. <br /></td></tr>
+<tr class="separator:a8989050aa4253e77495e43a3f4a5bc08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41f89472c534fdd1e613967655be2fae"><td class="memItemLeft" align="right" valign="top"><a id="a41f89472c534fdd1e613967655be2fae"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1XboxController.html#a41f89472c534fdd1e613967655be2fae">GetRightBumperReleased</a> ()</td></tr>
+<tr class="memdesc:a41f89472c534fdd1e613967655be2fae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the right bumper (RB) was released since the last check. <br /></td></tr>
+<tr class="separator:a41f89472c534fdd1e613967655be2fae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31652b7a1a21c6a2b59ddf6fbe1d89a8"><td class="memItemLeft" align="right" valign="top"><a id="a31652b7a1a21c6a2b59ddf6fbe1d89a8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1XboxController.html#a31652b7a1a21c6a2b59ddf6fbe1d89a8">GetLeftStickButton</a> () const</td></tr>
+<tr class="memdesc:a31652b7a1a21c6a2b59ddf6fbe1d89a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the value of the left stick button (LSB) on the controller. <br /></td></tr>
+<tr class="separator:a31652b7a1a21c6a2b59ddf6fbe1d89a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6041dcbc4d653828075f65be5351689"><td class="memItemLeft" align="right" valign="top"><a id="ae6041dcbc4d653828075f65be5351689"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1XboxController.html#ae6041dcbc4d653828075f65be5351689">GetRightStickButton</a> () const</td></tr>
+<tr class="memdesc:ae6041dcbc4d653828075f65be5351689"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the value of the right stick button (RSB) on the controller. <br /></td></tr>
+<tr class="separator:ae6041dcbc4d653828075f65be5351689"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add8b52165345c5686cfc8d355a8c14df"><td class="memItemLeft" align="right" valign="top"><a id="add8b52165345c5686cfc8d355a8c14df"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1XboxController.html#add8b52165345c5686cfc8d355a8c14df">GetLeftStickButtonPressed</a> ()</td></tr>
+<tr class="memdesc:add8b52165345c5686cfc8d355a8c14df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the left stick button (LSB) was pressed since the last check. <br /></td></tr>
+<tr class="separator:add8b52165345c5686cfc8d355a8c14df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f275bb6cf22680241d123b6c6b4da4b"><td class="memItemLeft" align="right" valign="top"><a id="a9f275bb6cf22680241d123b6c6b4da4b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1XboxController.html#a9f275bb6cf22680241d123b6c6b4da4b">GetRightStickButtonPressed</a> ()</td></tr>
+<tr class="memdesc:a9f275bb6cf22680241d123b6c6b4da4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the right stick button (RSB) was pressed since the last check. <br /></td></tr>
+<tr class="separator:a9f275bb6cf22680241d123b6c6b4da4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae73eab652e64f8cdd76dbcd794b58e64"><td class="memItemLeft" align="right" valign="top"><a id="ae73eab652e64f8cdd76dbcd794b58e64"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1XboxController.html#ae73eab652e64f8cdd76dbcd794b58e64">GetLeftStickButtonReleased</a> ()</td></tr>
+<tr class="memdesc:ae73eab652e64f8cdd76dbcd794b58e64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the left stick button (LSB) was released since the last check. <br /></td></tr>
+<tr class="separator:ae73eab652e64f8cdd76dbcd794b58e64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1eaf9af804da81afab836cacc5a5b1d"><td class="memItemLeft" align="right" valign="top"><a id="ae1eaf9af804da81afab836cacc5a5b1d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1XboxController.html#ae1eaf9af804da81afab836cacc5a5b1d">GetRightStickButtonReleased</a> ()</td></tr>
+<tr class="memdesc:ae1eaf9af804da81afab836cacc5a5b1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the right stick button (RSB) was released since the last check. <br /></td></tr>
+<tr class="separator:ae1eaf9af804da81afab836cacc5a5b1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bd1ad7e87475764f51fd765917a0a70"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1XboxController.html#a1bd1ad7e87475764f51fd765917a0a70">GetAButton</a> () const</td></tr>
 <tr class="memdesc:a1bd1ad7e87475764f51fd765917a0a70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the value of the A button on the controller.  <a href="classfrc_1_1XboxController.html#a1bd1ad7e87475764f51fd765917a0a70">More...</a><br /></td></tr>
 <tr class="separator:a1bd1ad7e87475764f51fd765917a0a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -326,6 +312,39 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae3b4d14307e1af5e8cc44e2d631ce7f0 inherit pub_methods_classfrc_1_1GenericHID"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1GenericHID.html#ae3b4d14307e1af5e8cc44e2d631ce7f0">SetRumble</a> (RumbleType type, double <a class="el" href="classvalue.html">value</a>)</td></tr>
 <tr class="memdesc:ae3b4d14307e1af5e8cc44e2d631ce7f0 inherit pub_methods_classfrc_1_1GenericHID"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the rumble output for the HID.  <a href="classfrc_1_1GenericHID.html#ae3b4d14307e1af5e8cc44e2d631ce7f0">More...</a><br /></td></tr>
 <tr class="separator:ae3b4d14307e1af5e8cc44e2d631ce7f0 inherit pub_methods_classfrc_1_1GenericHID"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_classfrc_1_1GenericHID"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classfrc_1_1GenericHID')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classfrc_1_1GenericHID.html">frc::GenericHID</a></td></tr>
+<tr class="memitem:a5517fc779168c17f938be2e875976c66 inherit pub_types_classfrc_1_1GenericHID"><td class="memItemLeft" align="right" valign="top"><a id="a5517fc779168c17f938be2e875976c66"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>RumbleType</b> { <b>kLeftRumble</b>
+, <b>kRightRumble</b>
+ }</td></tr>
+<tr class="separator:a5517fc779168c17f938be2e875976c66 inherit pub_types_classfrc_1_1GenericHID"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa9446493203d96f2406fbcbb4cf0dd6 inherit pub_types_classfrc_1_1GenericHID"><td class="memItemLeft" align="right" valign="top"><a id="aaa9446493203d96f2406fbcbb4cf0dd6"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>HIDType</b> { <br />
+&#160;&#160;<b>kUnknown</b> = -1
+, <b>kXInputUnknown</b> = 0
+, <b>kXInputGamepad</b> = 1
+, <b>kXInputWheel</b> = 2
+, <br />
+&#160;&#160;<b>kXInputArcadeStick</b> = 3
+, <b>kXInputFlightStick</b> = 4
+, <b>kXInputDancePad</b> = 5
+, <b>kXInputGuitar</b> = 6
+, <br />
+&#160;&#160;<b>kXInputGuitar2</b> = 7
+, <b>kXInputDrumKit</b> = 8
+, <b>kXInputGuitar3</b> = 11
+, <b>kXInputArcadePad</b> = 19
+, <br />
+&#160;&#160;<b>kHIDJoystick</b> = 20
+, <b>kHIDGamepad</b> = 21
+, <b>kHIDDriving</b> = 22
+, <b>kHIDFlight</b> = 23
+, <br />
+&#160;&#160;<b>kHID1stPerson</b> = 24
+<br />
+ }</td></tr>
+<tr class="separator:aaa9446493203d96f2406fbcbb4cf0dd6 inherit pub_types_classfrc_1_1GenericHID"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Handle input from Xbox 360 or Xbox One controllers connected to the Driver Station. </p>
@@ -547,83 +566,43 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a501dd2f27fd8d5d749ea9229816765ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a501dd2f27fd8d5d749ea9229816765ca">&#9670;&nbsp;</a></span>GetBumper()</h2>
+<a id="a66900dbe211afeb1d4236819e17bd161"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66900dbe211afeb1d4236819e17bd161">&#9670;&nbsp;</a></span>GetLeftTriggerAxis()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool frc::XboxController::GetBumper </td>
+          <td class="memname">double frc::XboxController::GetLeftTriggerAxis </td>
           <td>(</td>
-          <td class="paramtype">JoystickHand&#160;</td>
-          <td class="paramname"><em>hand</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Read the value of the bumper button on the controller. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">hand</td><td>Side of controller whose value should be returned. </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Get the left trigger (LT) axis value of the controller. </p>
+<p>Note that this axis is bound to the range of [0, 1] as opposed to the usual [-1, 1]. </p>
 
 </div>
 </div>
-<a id="a8eac576fb4a05e180300c523e1cf3779"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8eac576fb4a05e180300c523e1cf3779">&#9670;&nbsp;</a></span>GetBumperPressed()</h2>
+<a id="aee892c02ab94dce74de7d9dfbfcd7d52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee892c02ab94dce74de7d9dfbfcd7d52">&#9670;&nbsp;</a></span>GetRightTriggerAxis()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool frc::XboxController::GetBumperPressed </td>
+          <td class="memname">double frc::XboxController::GetRightTriggerAxis </td>
           <td>(</td>
-          <td class="paramtype">JoystickHand&#160;</td>
-          <td class="paramname"><em>hand</em></td><td>)</td>
-          <td></td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Whether the bumper was pressed since the last check. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">hand</td><td>Side of controller whose value should be returned. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Whether the button was pressed since the last check. </dd></dl>
-
-</div>
-</div>
-<a id="ac7bb93e671d04304d68b3d00e939721d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7bb93e671d04304d68b3d00e939721d">&#9670;&nbsp;</a></span>GetBumperReleased()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool frc::XboxController::GetBumperReleased </td>
-          <td>(</td>
-          <td class="paramtype">JoystickHand&#160;</td>
-          <td class="paramname"><em>hand</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Whether the bumper was released since the last check. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">hand</td><td>Side of controller whose value should be returned. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Whether the button was released since the last check. </dd></dl>
+<p>Get the right trigger (RT) axis value of the controller. </p>
+<p>Note that this axis is bound to the range of [0, 1] as opposed to the usual [-1, 1]. </p>
 
 </div>
 </div>
@@ -643,12 +622,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Read the value of the start button on the controller. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">hand</td><td>Side of controller whose value should be returned. </td></tr>
-  </table>
-  </dd>
-</dl>
 <dl class="section return"><dt>Returns</dt><dd>The state of the button. </dd></dl>
 
 </div>
@@ -690,149 +663,6 @@ Public Member Functions</h2></td></tr>
 
 <p>Whether the start button was released since the last check. </p>
 <dl class="section return"><dt>Returns</dt><dd>Whether the button was released since the last check. </dd></dl>
-
-</div>
-</div>
-<a id="af2e3fcacf58d80774c4708d4b70c5040"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2e3fcacf58d80774c4708d4b70c5040">&#9670;&nbsp;</a></span>GetStickButton()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool frc::XboxController::GetStickButton </td>
-          <td>(</td>
-          <td class="paramtype">JoystickHand&#160;</td>
-          <td class="paramname"><em>hand</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Read the value of the stick button on the controller. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">hand</td><td>Side of controller whose value should be returned. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The state of the button. </dd></dl>
-
-</div>
-</div>
-<a id="a50834596a13e600156c2aed0a03de90b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a50834596a13e600156c2aed0a03de90b">&#9670;&nbsp;</a></span>GetStickButtonPressed()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool frc::XboxController::GetStickButtonPressed </td>
-          <td>(</td>
-          <td class="paramtype">JoystickHand&#160;</td>
-          <td class="paramname"><em>hand</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Whether the stick button was pressed since the last check. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">hand</td><td>Side of controller whose value should be returned. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Whether the button was pressed since the last check. </dd></dl>
-
-</div>
-</div>
-<a id="a0cc45462107fe6eaba85cf7e9a3ac428"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0cc45462107fe6eaba85cf7e9a3ac428">&#9670;&nbsp;</a></span>GetStickButtonReleased()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool frc::XboxController::GetStickButtonReleased </td>
-          <td>(</td>
-          <td class="paramtype">JoystickHand&#160;</td>
-          <td class="paramname"><em>hand</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Whether the stick button was released since the last check. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">hand</td><td>Side of controller whose value should be returned. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Whether the button was released since the last check. </dd></dl>
-
-</div>
-</div>
-<a id="a946f0e945ca7f82d0b9ffebbd04af368"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a946f0e945ca7f82d0b9ffebbd04af368">&#9670;&nbsp;</a></span>GetTriggerAxis()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double frc::XboxController::GetTriggerAxis </td>
-          <td>(</td>
-          <td class="paramtype">JoystickHand&#160;</td>
-          <td class="paramname"><em>hand</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the trigger axis value of the controller. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">hand</td><td>Side of controller whose value should be returned. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a2b028151286ab89569bf2371066b6a61"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b028151286ab89569bf2371066b6a61">&#9670;&nbsp;</a></span>GetX()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double frc::XboxController::GetX </td>
-          <td>(</td>
-          <td class="paramtype">JoystickHand&#160;</td>
-          <td class="paramname"><em>hand</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get the X axis value of the controller. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">hand</td><td>Side of controller whose value should be returned. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="classfrc_1_1GenericHID.html">frc::GenericHID</a>.</p>
 
 </div>
 </div>
@@ -893,42 +723,6 @@ Public Member Functions</h2></td></tr>
 
 <p>Whether the X button was released since the last check. </p>
 <dl class="section return"><dt>Returns</dt><dd>Whether the button was released since the last check. </dd></dl>
-
-</div>
-</div>
-<a id="a5551498fd21cf54bb6918a2703a933fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5551498fd21cf54bb6918a2703a933fa">&#9670;&nbsp;</a></span>GetY()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double frc::XboxController::GetY </td>
-          <td>(</td>
-          <td class="paramtype">JoystickHand&#160;</td>
-          <td class="paramname"><em>hand</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get the Y axis value of the controller. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">hand</td><td>Side of controller whose value should be returned. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="classfrc_1_1GenericHID.html">frc::GenericHID</a>.</p>
 
 </div>
 </div>
@@ -1001,7 +795,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1XboxController.html">XboxController</a></li>
-    <li class="footer">Generated on Thu Aug 12 2021 06:07:17 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Aug 14 2021 17:03:41 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

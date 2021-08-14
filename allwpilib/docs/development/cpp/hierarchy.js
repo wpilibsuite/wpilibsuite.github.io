@@ -52,6 +52,8 @@ var hierarchy =
     [ "wpi::uv::AsyncFunction< T >", "classwpi_1_1uv_1_1AsyncFunction.html", null ],
     [ "frc::AsynchronousInterrupt", "classfrc_1_1AsynchronousInterrupt.html", null ],
     [ "auto_id", "structauto__id.html", null ],
+    [ "frc::PS4Controller::Axis", "structfrc_1_1PS4Controller_1_1Axis.html", null ],
+    [ "frc::XboxController::Axis", "structfrc_1_1XboxController_1_1Axis.html", null ],
     [ "std::back_insert_iterator", null, [
       [ "appender", "classappender.html", null ]
     ] ],
@@ -109,10 +111,10 @@ var hierarchy =
       [ "basic_memory_buffer< wchar_t >", "classbasic__memory__buffer.html", null ],
       [ "basic_memory_buffer< T, SIZE, Allocator >", "classbasic__memory__buffer.html", null ]
     ] ],
+    [ "buffer< Char >", "classbuffer.html", null ],
     [ "buffer< char >", "classbuffer.html", [
       [ "counting_buffer< T >", "classcounting__buffer.html", null ]
     ] ],
-    [ "buffer< Char >", "classbuffer.html", null ],
     [ "buffer< Container::value_type >", "classbuffer.html", [
       [ "iterator_buffer< std::back_insert_iterator< Container >, enable_if_t< is_contiguous< Container >::value, typename Container::value_type > >", "classiterator__buffer_3_01std_1_1back__insert__iterator_3_01Container_01_4_00_01enable__if__t_3_35791268f9463b30b303085098f291bc.html", null ]
     ] ],
@@ -121,6 +123,8 @@ var hierarchy =
     ] ],
     [ "buffered_file", "classbuffered__file.html", null ],
     [ "frc::sim::BuiltInAccelerometerSim", "classfrc_1_1sim_1_1BuiltInAccelerometerSim.html", null ],
+    [ "frc::PS4Controller::Button", "structfrc_1_1PS4Controller_1_1Button.html", null ],
+    [ "frc::XboxController::Button", "structfrc_1_1XboxController_1_1Button.html", null ],
     [ "frc::ButtonScheduler", "classfrc_1_1ButtonScheduler.html", [
       [ "frc::CancelButtonScheduler", "classfrc_1_1CancelButtonScheduler.html", null ],
       [ "frc::HeldButtonScheduler", "classfrc_1_1HeldButtonScheduler.html", null ],
@@ -544,10 +548,12 @@ var hierarchy =
     [ "wpi::detail::FutureThen< void, void >", "structwpi_1_1detail_1_1FutureThen_3_01void_00_01void_01_4.html", null ],
     [ "frc::GenericHID", "classfrc_1_1GenericHID.html", [
       [ "frc::Joystick", "classfrc_1_1Joystick.html", null ],
+      [ "frc::PS4Controller", "classfrc_1_1PS4Controller.html", null ],
       [ "frc::XboxController", "classfrc_1_1XboxController.html", null ]
     ] ],
     [ "frc::sim::GenericHIDSim", "classfrc_1_1sim_1_1GenericHIDSim.html", [
       [ "frc::sim::JoystickSim", "classfrc_1_1sim_1_1JoystickSim.html", null ],
+      [ "frc::sim::PS4ControllerSim", "classfrc_1_1sim_1_1PS4ControllerSim.html", null ],
       [ "frc::sim::XboxControllerSim", "classfrc_1_1sim_1_1XboxControllerSim.html", null ]
     ] ],
     [ "get_cstring< Char >", "structget__cstring.html", null ],
