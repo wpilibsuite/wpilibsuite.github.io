@@ -1,5 +1,13 @@
 var NAVTREEINDEX44 =
 {
+"structchrono__formatter.html#a44b0403d855f7902f0d9c1a1e9fbbec0":[5,0,43,13],
+"structchrono__formatter.html#a4c08d0bec5d2e1dcf1c11d4f3382d2c3":[5,0,43,11],
+"structchrono__formatter.html#a5086b5fc5d58220ea7122150d18369df":[5,0,43,44],
+"structchrono__formatter.html#a50d1e0a3f44c4376fc36913e626be09c":[5,0,43,29],
+"structchrono__formatter.html#a56a07b8708d21bfc5bec1d1faf83d380":[5,0,43,30],
+"structchrono__formatter.html#a5db473c78a51a0ee53907d9f931ecd91":[5,0,43,15],
+"structchrono__formatter.html#a626ff75f0c491833594170b091533d4a":[5,0,43,18],
+"structchrono__formatter.html#a6b87424e33cfac3cd1ab97ab457fda7c":[5,0,43,26],
 "structchrono__formatter.html#a6f677762e639dbd9cf7a6c54dff68bd0":[5,0,43,10],
 "structchrono__formatter.html#a77d009d92809b334402daea95f6ffa67":[5,0,43,43],
 "structchrono__formatter.html#a787102f1c12877eb30f83657dbf51bd7":[5,0,43,5],
@@ -241,13 +249,5 @@ var NAVTREEINDEX44 =
 "structdragonbox_1_1float__info_3_01float_01_4.html":[5,0,2,1],
 "structdragonbox_1_1float__info_3_01float_01_4.html#a050120fb38fc21225d1aac294606f954":[5,0,2,1,21],
 "structdragonbox_1_1float__info_3_01float_01_4.html#a0d97103726219426839dc2ff332cf868":[5,0,2,1,15],
-"structdragonbox_1_1float__info_3_01float_01_4.html#a0feb6e51ee9519e41770c62e6ea2caa7":[5,0,2,1,14],
-"structdragonbox_1_1float__info_3_01float_01_4.html#a1eeea07196580b65b134245b398adc7c":[5,0,2,1,12],
-"structdragonbox_1_1float__info_3_01float_01_4.html#a23199cc4122ef595aec875b43a046096":[5,0,2,1,17],
-"structdragonbox_1_1float__info_3_01float_01_4.html#a39fd203a4a8dc11e9648171e5c8818b3":[5,0,2,1,5],
-"structdragonbox_1_1float__info_3_01float_01_4.html#a48c8e3febe9ce4ca83905039fea6df4e":[5,0,2,1,1],
-"structdragonbox_1_1float__info_3_01float_01_4.html#a51f7cf5ed43cd1e1f274c70cb7681383":[5,0,2,1,0],
-"structdragonbox_1_1float__info_3_01float_01_4.html#a56d2cdd591650948a048d912da0f815e":[5,0,2,1,16],
-"structdragonbox_1_1float__info_3_01float_01_4.html#a5ea44d2775a38156bb883f67d47ebda1":[5,0,2,1,11],
-"structdragonbox_1_1float__info_3_01float_01_4.html#a7790a4fa1c9594933be5491ff35e8739":[5,0,2,1,6]
+"structdragonbox_1_1float__info_3_01float_01_4.html#a0feb6e51ee9519e41770c62e6ea2caa7":[5,0,2,1,14]
 };

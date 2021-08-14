@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-2-44-g5d9ae3c</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2-45-g10cc8b8</span>
    </div>
   </td>
  </tr>
@@ -90,7 +90,9 @@ $(document).ready(function(){initNavTree('classfrc_1_1PowerDistribution.html',''
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="classfrc_1_1PowerDistribution-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">frc::PowerDistribution Class Reference</div>  </div>
@@ -112,14 +114,22 @@ Inheritance diagram for frc::PowerDistribution:</div>
   </map>
 </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a3f8cf3a17c7112e56bec6ebcb44147d6"><td class="memItemLeft" align="right" valign="top"><a id="a3f8cf3a17c7112e56bec6ebcb44147d6"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>ModuleType</b> { <b>kAutomatic</b> = 0
+, <b>kCTRE</b> = 1
+, <b>kRev</b> = 2
+ }</td></tr>
+<tr class="separator:a3f8cf3a17c7112e56bec6ebcb44147d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a4a3f400b44e9daa078c69cecba077d42"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1PowerDistribution.html#a4a3f400b44e9daa078c69cecba077d42">PowerDistribution</a> ()</td></tr>
 <tr class="memdesc:a4a3f400b44e9daa078c69cecba077d42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classfrc_1_1PowerDistribution.html" title="Class for getting voltage, current, temperature, power and energy from the CAN PDP.">PowerDistribution</a>.  <a href="classfrc_1_1PowerDistribution.html#a4a3f400b44e9daa078c69cecba077d42">More...</a><br /></td></tr>
 <tr class="separator:a4a3f400b44e9daa078c69cecba077d42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78115750cdd9a3a619e004acaabfa39d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1PowerDistribution.html#a78115750cdd9a3a619e004acaabfa39d">PowerDistribution</a> (int module)</td></tr>
-<tr class="memdesc:a78115750cdd9a3a619e004acaabfa39d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classfrc_1_1PowerDistribution.html" title="Class for getting voltage, current, temperature, power and energy from the CAN PDP.">PowerDistribution</a>.  <a href="classfrc_1_1PowerDistribution.html#a78115750cdd9a3a619e004acaabfa39d">More...</a><br /></td></tr>
-<tr class="separator:a78115750cdd9a3a619e004acaabfa39d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a1e3a4c48298f8d236654e400b2bd4c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1PowerDistribution.html#a6a1e3a4c48298f8d236654e400b2bd4c">PowerDistribution</a> (int module, ModuleType moduleType)</td></tr>
+<tr class="memdesc:a6a1e3a4c48298f8d236654e400b2bd4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classfrc_1_1PowerDistribution.html" title="Class for getting voltage, current, temperature, power and energy from the CAN PDP.">PowerDistribution</a>.  <a href="classfrc_1_1PowerDistribution.html#a6a1e3a4c48298f8d236654e400b2bd4c">More...</a><br /></td></tr>
+<tr class="separator:a6a1e3a4c48298f8d236654e400b2bd4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49e7043a1349d367db8a32db43b2919b"><td class="memItemLeft" align="right" valign="top"><a id="a49e7043a1349d367db8a32db43b2919b"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>PowerDistribution</b> (<a class="el" href="classfrc_1_1PowerDistribution.html">PowerDistribution</a> &amp;&amp;)=default</td></tr>
 <tr class="separator:a49e7043a1349d367db8a32db43b2919b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -155,6 +165,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1PowerDistribution.html#aaf0ab6ab2077aa492e0f6137e9fb304c">GetModule</a> () const</td></tr>
 <tr class="memdesc:aaf0ab6ab2077aa492e0f6137e9fb304c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets module number (<a class="el" href="classfrc_1_1CAN.html" title="High level class for interfacing with CAN devices conforming to the standard CAN spec.">CAN</a> ID). <br /></td></tr>
 <tr class="separator:aaf0ab6ab2077aa492e0f6137e9fb304c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab555e8f6c84f1157a96020ad9f1a58c4"><td class="memItemLeft" align="right" valign="top"><a id="ab555e8f6c84f1157a96020ad9f1a58c4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetSwitchableChannel</b> () const</td></tr>
+<tr class="separator:ab555e8f6c84f1157a96020ad9f1a58c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a217c4bf63b3b7102c5a963e2b7abcb8a"><td class="memItemLeft" align="right" valign="top"><a id="a217c4bf63b3b7102c5a963e2b7abcb8a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSwitchableChannel</b> (bool enabled)</td></tr>
+<tr class="separator:a217c4bf63b3b7102c5a963e2b7abcb8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace26051828996ca044b5e5604702888d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1PowerDistribution.html#ace26051828996ca044b5e5604702888d">InitSendable</a> (<a class="el" href="classwpi_1_1SendableBuilder.html">wpi::SendableBuilder</a> &amp;builder) override</td></tr>
 <tr class="memdesc:ace26051828996ca044b5e5604702888d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes this Sendable object.  <a href="classfrc_1_1PowerDistribution.html#ace26051828996ca044b5e5604702888d">More...</a><br /></td></tr>
 <tr class="separator:ace26051828996ca044b5e5604702888d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -186,6 +202,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <tr class="memitem:a11434f29c9ef91c9975969fb88212482 inherit pub_methods_classwpi_1_1SendableHelper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1SendableHelper.html#a11434f29c9ef91c9975969fb88212482">SetSubsystem</a> (std::string_view subsystem)</td></tr>
 <tr class="memdesc:a11434f29c9ef91c9975969fb88212482 inherit pub_methods_classwpi_1_1SendableHelper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the subsystem name of this Sendable object.  <a href="classwpi_1_1SendableHelper.html#a11434f29c9ef91c9975969fb88212482">More...</a><br /></td></tr>
 <tr class="separator:a11434f29c9ef91c9975969fb88212482 inherit pub_methods_classwpi_1_1SendableHelper"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a99a61eb339f18e9c576c40034248f8f0"><td class="memItemLeft" align="right" valign="top"><a id="a99a61eb339f18e9c576c40034248f8f0"></a>
+static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>kDefaultModule</b> = -1</td></tr>
+<tr class="separator:a99a61eb339f18e9c576c40034248f8f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -222,38 +244,41 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Constructs a <a class="el" href="classfrc_1_1PowerDistribution.html" title="Class for getting voltage, current, temperature, power and energy from the CAN PDP.">PowerDistribution</a>. </p>
-<p>Uses the default <a class="el" href="classfrc_1_1CAN.html" title="High level class for interfacing with CAN devices conforming to the standard CAN spec.">CAN</a> ID (0). </p>
+<p>Uses the default <a class="el" href="classfrc_1_1CAN.html" title="High level class for interfacing with CAN devices conforming to the standard CAN spec.">CAN</a> ID. </p>
 
 </div>
 </div>
-<a id="a78115750cdd9a3a619e004acaabfa39d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a78115750cdd9a3a619e004acaabfa39d">&#9670;&nbsp;</a></span>PowerDistribution() <span class="overload">[2/2]</span></h2>
+<a id="a6a1e3a4c48298f8d236654e400b2bd4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a1e3a4c48298f8d236654e400b2bd4c">&#9670;&nbsp;</a></span>PowerDistribution() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">frc::PowerDistribution::PowerDistribution </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>module</em></td><td>)</td>
+          <td class="paramname"><em>module</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">ModuleType&#160;</td>
+          <td class="paramname"><em>moduleType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Constructs a <a class="el" href="classfrc_1_1PowerDistribution.html" title="Class for getting voltage, current, temperature, power and energy from the CAN PDP.">PowerDistribution</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">module</td><td>The <a class="el" href="classfrc_1_1CAN.html" title="High level class for interfacing with CAN devices conforming to the standard CAN spec.">CAN</a> ID of the PDP </td></tr>
+    <tr><td class="paramname">moduleType</td><td>The type of module </td></tr>
   </table>
   </dd>
 </dl>
@@ -447,7 +472,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1PowerDistribution.html">PowerDistribution</a></li>
-    <li class="footer">Generated on Sat Aug 14 2021 18:44:55 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Aug 14 2021 18:46:40 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

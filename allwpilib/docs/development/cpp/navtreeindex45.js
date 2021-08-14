@@ -1,5 +1,13 @@
 var NAVTREEINDEX45 =
 {
+"structdragonbox_1_1float__info_3_01float_01_4.html#a1eeea07196580b65b134245b398adc7c":[5,0,2,1,12],
+"structdragonbox_1_1float__info_3_01float_01_4.html#a23199cc4122ef595aec875b43a046096":[5,0,2,1,17],
+"structdragonbox_1_1float__info_3_01float_01_4.html#a39fd203a4a8dc11e9648171e5c8818b3":[5,0,2,1,5],
+"structdragonbox_1_1float__info_3_01float_01_4.html#a48c8e3febe9ce4ca83905039fea6df4e":[5,0,2,1,1],
+"structdragonbox_1_1float__info_3_01float_01_4.html#a51f7cf5ed43cd1e1f274c70cb7681383":[5,0,2,1,0],
+"structdragonbox_1_1float__info_3_01float_01_4.html#a56d2cdd591650948a048d912da0f815e":[5,0,2,1,16],
+"structdragonbox_1_1float__info_3_01float_01_4.html#a5ea44d2775a38156bb883f67d47ebda1":[5,0,2,1,11],
+"structdragonbox_1_1float__info_3_01float_01_4.html#a7790a4fa1c9594933be5491ff35e8739":[5,0,2,1,6],
 "structdragonbox_1_1float__info_3_01float_01_4.html#a867ab6075017eaf3e671b9a9b28c7e60":[5,0,2,1,4],
 "structdragonbox_1_1float__info_3_01float_01_4.html#a8841e713f9fc7d0c37b3a5bb187c468c":[5,0,2,1,7],
 "structdragonbox_1_1float__info_3_01float_01_4.html#a911eab5205c78be0e2e0a1567a1d2b3b":[5,0,2,1,3],
@@ -241,13 +249,5 @@ var NAVTREEINDEX45 =
 "structget__cstring.html":[5,0,88],
 "structget__cstring.html#a07a2e965b47df8d2e8ed0a257f3f80d0":[5,0,88,1],
 "structget__cstring.html#a26ba394da6f7559a879f72a4dd3d5469":[5,0,88,0],
-"structghc_1_1filesystem_1_1space__info.html":[5,0,7,0,4],
-"structghc_1_1filesystem_1_1space__info.html#a95b7c53cc1fb574e962dadbb43b4061f":[5,0,7,0,4,2],
-"structghc_1_1filesystem_1_1space__info.html#ab682b53b57105c671314ac6da837cf3e":[5,0,7,0,4,0],
-"structghc_1_1filesystem_1_1space__info.html#ae3aaec720c16cab46c72d253be7dca9d":[5,0,7,0,4,1],
-"structhal_1_1DIOSetProxy.html":[5,0,8,3],
-"structhal_1_1DIOSetProxy.html#a02f1e61d6d9426b60543504689ec1698":[5,0,8,3,1],
-"structhal_1_1DIOSetProxy.html#a256b0940f2a2ce34db9ab1ddea836c9d":[5,0,8,3,5],
-"structhal_1_1DIOSetProxy.html#a388429ec7dfcecc1835cf453ca9aad4c":[5,0,8,3,7],
-"structhal_1_1DIOSetProxy.html#a50686b1970ed96094f0a16fe08288d82":[5,0,8,3,9]
+"structghc_1_1filesystem_1_1space__info.html":[5,0,7,0,4]
 };

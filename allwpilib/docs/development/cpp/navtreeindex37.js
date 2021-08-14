@@ -1,5 +1,8 @@
 var NAVTREEINDEX37 =
 {
+"format-inl_8h.html#a912bee0567ce268e70a504450145315b":[4,0,2,74],
+"format-inl_8h.html#a955ad02ade4f07084391a60ed80701bf":[4,0,2,102],
+"format-inl_8h.html#a9ca325072ed20c855fe1595b28d9d5c8":[4,0,2,1,11],
 "format-inl_8h.html#a9fc2fb80666f3b16561c5e76c6339d5d":[4,0,2,1,18],
 "format-inl_8h.html#aa603b042d25caa96cdd2e68d95948651":[4,0,2,113],
 "format-inl_8h.html#aad69d2373aa047bdd9e81494bf3da5ae":[4,0,2,0,0],
@@ -246,8 +249,5 @@ var NAVTREEINDEX37 =
 "group__cscore__opencv__sink__func.html#ga83320efbe394e078b7e4c4ccc9b600d4":[4,0,1,62],
 "group__cscore__opencv__sink__func.html#ga8392dc18d3bc6729f936918d19192773":[4,0,1,110],
 "group__cscore__opencv__sink__func.html#gad9baaf722e614acb0b7d75e3455ef743":[4,0,1,61],
-"group__cscore__opencv__source__cfunc.html":[3,6,7],
-"group__cscore__opencv__source__func.html":[3,7,6],
-"group__cscore__opencv__source__func.html#ga1d6122c193bc08a1589285ffd208d5b7":[4,0,1,115],
-"group__cscore__opencv__source__func.html#ga207bb29e83232d91bacaf5a4c2fab121":[4,0,1,118]
+"group__cscore__opencv__source__cfunc.html":[3,6,7]
 };

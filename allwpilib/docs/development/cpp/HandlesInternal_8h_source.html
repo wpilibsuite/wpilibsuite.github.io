@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-2-44-g5d9ae3c</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2-45-g10cc8b8</span>
    </div>
   </td>
  </tr>
@@ -156,101 +156,102 @@ $(document).ready(function(){initNavTree('HandlesInternal_8h_source.html',''); i
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  DMA = 22,</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  AddressableLED = 23,</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  CTREPCM = 24,</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  CTREPDP = 25</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;};</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="namespacehal.html#aa824c02dcbbe7fc687592d258125cd27">   79</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> int16_t <a class="code" href="namespacehal.html#aa824c02dcbbe7fc687592d258125cd27">getHandleIndex</a>(HAL_Handle handle) {</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="comment">// mask and return last 16 bits</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>int16_t<span class="keyword">&gt;</span>(handle &amp; 0xffff);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="namespacehal.html#a7ad49bca178b45691f84dedd641d2fc1">   90</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <a class="code" href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9">HAL_HandleEnum</a> <a class="code" href="namespacehal.html#a7ad49bca178b45691f84dedd641d2fc1">getHandleType</a>(HAL_Handle handle) {</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="comment">// mask first 8 bits and cast to enum</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><a class="code" href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9">HAL_HandleEnum</a><span class="keyword">&gt;</span>((handle &gt;&gt; 24) &amp; 0xff);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="namespacehal.html#a49c55731c73dca723cc5ff27dcfb6ba6">  102</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="namespacehal.html#a49c55731c73dca723cc5ff27dcfb6ba6">isHandleType</a>(HAL_Handle handle, <a class="code" href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9">HAL_HandleEnum</a> handleType) {</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordflow">return</span> handleType == <a class="code" href="namespacehal.html#a7ad49bca178b45691f84dedd641d2fc1">getHandleType</a>(handle);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="namespacehal.html#a02472d7f1ea49f5e871a3b8fcc0e1a41">  115</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="namespacehal.html#a02472d7f1ea49f5e871a3b8fcc0e1a41">isHandleCorrectVersion</a>(HAL_Handle handle, int16_t version) {</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="keywordflow">return</span> (((handle &amp; 0xFF0000) &gt;&gt; 16) &amp; version) == version;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;}</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
-<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="namespacehal.html#afbf5817bf5e1c8a4c8d0684f3bb2c2b6">  130</a></span>&#160;<span class="keyword">inline</span> int16_t <a class="code" href="namespacehal.html#afbf5817bf5e1c8a4c8d0684f3bb2c2b6">getHandleTypedIndex</a>(HAL_Handle handle, <a class="code" href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9">HAL_HandleEnum</a> enumType,</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                                   int16_t version) {</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <span class="keywordflow">if</span> (!<a class="code" href="namespacehal.html#a49c55731c73dca723cc5ff27dcfb6ba6">isHandleType</a>(handle, enumType)) {</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordflow">return</span> InvalidHandleIndex;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  }</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor">#if !defined(__FRC_ROBORIO__)</span></div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <span class="keywordflow">if</span> (!<a class="code" href="namespacehal.html#a02472d7f1ea49f5e871a3b8fcc0e1a41">isHandleCorrectVersion</a>(handle, version)) {</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keywordflow">return</span> InvalidHandleIndex;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  }</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="namespacehal.html#aa824c02dcbbe7fc687592d258125cd27">getHandleIndex</a>(handle);</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;}</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="comment">/* specialized functions for Port handle</span></div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="comment"> * Port Handle Data Layout</span></div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="comment"> * Bits 0-7:   Channel Number</span></div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="comment"> * Bits 8-15:  Module Number</span></div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="comment"> * Bits 16-23: Unused</span></div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="comment"> * Bits 24-30: Handle Type</span></div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="comment"> * Bit 31:     1 if handle error, 0 if no error</span></div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="comment">// using a 16 bit value so we can store 0-255 and still report error</span></div>
-<div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="namespacehal.html#abda8f141e53785a3eb6b21731b4a1389">  159</a></span>&#160;<span class="comment"></span><span class="keyword">inline</span> int16_t <a class="code" href="namespacehal.html#abda8f141e53785a3eb6b21731b4a1389">getPortHandleChannel</a>(HAL_PortHandle handle) {</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  <span class="keywordflow">if</span> (!<a class="code" href="namespacehal.html#a49c55731c73dca723cc5ff27dcfb6ba6">isHandleType</a>(handle, HAL_HandleEnum::Port)) {</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordflow">return</span> InvalidHandleIndex;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  }</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(handle &amp; 0xff);</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;}</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="comment">// using a 16 bit value so we can store 0-255 and still report error</span></div>
-<div class="line"><a name="l00173"></a><span class="lineno"><a class="line" href="namespacehal.html#a3d30f3a339e2682c13cee115ed96931e">  173</a></span>&#160;<span class="comment"></span><span class="keyword">inline</span> int16_t <a class="code" href="namespacehal.html#a3d30f3a339e2682c13cee115ed96931e">getPortHandleModule</a>(HAL_PortHandle handle) {</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  <span class="keywordflow">if</span> (!<a class="code" href="namespacehal.html#a49c55731c73dca723cc5ff27dcfb6ba6">isHandleType</a>(handle, HAL_HandleEnum::Port)) {</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="keywordflow">return</span> InvalidHandleIndex;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  }</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>((handle &gt;&gt; 8) &amp; 0xff);</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;}</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160; </div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="comment">// using a 16 bit value so we can store 0-255 and still report error</span></div>
-<div class="line"><a name="l00187"></a><span class="lineno"><a class="line" href="namespacehal.html#ad84dad1b1cf4fb4185ceb4eb6fe282ea">  187</a></span>&#160;<span class="comment"></span><span class="keyword">inline</span> int16_t <a class="code" href="namespacehal.html#ad84dad1b1cf4fb4185ceb4eb6fe282ea">getPortHandleSPIEnable</a>(HAL_PortHandle handle) {</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  <span class="keywordflow">if</span> (!<a class="code" href="namespacehal.html#a49c55731c73dca723cc5ff27dcfb6ba6">isHandleType</a>(handle, HAL_HandleEnum::Port)) {</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="keywordflow">return</span> InvalidHandleIndex;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  }</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>((handle &gt;&gt; 16) &amp; 0xff);</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;}</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
-<div class="line"><a name="l00201"></a><span class="lineno"><a class="line" href="namespacehal.html#a6ebb354330e8415469e51cb52c615ac5">  201</a></span>&#160;HAL_PortHandle <a class="code" href="namespacehal.html#a6ebb354330e8415469e51cb52c615ac5">createPortHandle</a>(uint8_t channel, uint8_t module);</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
-<div class="line"><a name="l00209"></a><span class="lineno"><a class="line" href="namespacehal.html#abd9e6fe86aa997774ce9cd678f6b2786">  209</a></span>&#160;HAL_PortHandle <a class="code" href="namespacehal.html#abd9e6fe86aa997774ce9cd678f6b2786">createPortHandleForSPI</a>(uint8_t channel);</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160; </div>
-<div class="line"><a name="l00221"></a><span class="lineno"><a class="line" href="namespacehal.html#a39c5c5e666bd856368820ba66b28e8f9">  221</a></span>&#160;HAL_Handle <a class="code" href="namespacehal.html#a39c5c5e666bd856368820ba66b28e8f9">createHandle</a>(int16_t index, <a class="code" href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9">HAL_HandleEnum</a> handleType,</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                        int16_t version);</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;}  <span class="comment">// namespace hal</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  CTREPDP = 25,</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  REVPDH = 26</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;};</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="namespacehal.html#aa824c02dcbbe7fc687592d258125cd27">   80</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> int16_t <a class="code" href="namespacehal.html#aa824c02dcbbe7fc687592d258125cd27">getHandleIndex</a>(HAL_Handle handle) {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="comment">// mask and return last 16 bits</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>int16_t<span class="keyword">&gt;</span>(handle &amp; 0xffff);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="namespacehal.html#a7ad49bca178b45691f84dedd641d2fc1">   91</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <a class="code" href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9">HAL_HandleEnum</a> <a class="code" href="namespacehal.html#a7ad49bca178b45691f84dedd641d2fc1">getHandleType</a>(HAL_Handle handle) {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="comment">// mask first 8 bits and cast to enum</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><a class="code" href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9">HAL_HandleEnum</a><span class="keyword">&gt;</span>((handle &gt;&gt; 24) &amp; 0xff);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="namespacehal.html#a49c55731c73dca723cc5ff27dcfb6ba6">  103</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="namespacehal.html#a49c55731c73dca723cc5ff27dcfb6ba6">isHandleType</a>(HAL_Handle handle, <a class="code" href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9">HAL_HandleEnum</a> handleType) {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keywordflow">return</span> handleType == <a class="code" href="namespacehal.html#a7ad49bca178b45691f84dedd641d2fc1">getHandleType</a>(handle);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="namespacehal.html#a02472d7f1ea49f5e871a3b8fcc0e1a41">  116</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="namespacehal.html#a02472d7f1ea49f5e871a3b8fcc0e1a41">isHandleCorrectVersion</a>(HAL_Handle handle, int16_t version) {</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keywordflow">return</span> (((handle &amp; 0xFF0000) &gt;&gt; 16) &amp; version) == version;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;}</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="namespacehal.html#afbf5817bf5e1c8a4c8d0684f3bb2c2b6">  131</a></span>&#160;<span class="keyword">inline</span> int16_t <a class="code" href="namespacehal.html#afbf5817bf5e1c8a4c8d0684f3bb2c2b6">getHandleTypedIndex</a>(HAL_Handle handle, <a class="code" href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9">HAL_HandleEnum</a> enumType,</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                                   int16_t version) {</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <span class="keywordflow">if</span> (!<a class="code" href="namespacehal.html#a49c55731c73dca723cc5ff27dcfb6ba6">isHandleType</a>(handle, enumType)) {</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordflow">return</span> InvalidHandleIndex;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  }</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="preprocessor">#if !defined(__FRC_ROBORIO__)</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  <span class="keywordflow">if</span> (!<a class="code" href="namespacehal.html#a02472d7f1ea49f5e871a3b8fcc0e1a41">isHandleCorrectVersion</a>(handle, version)) {</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keywordflow">return</span> InvalidHandleIndex;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  }</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="namespacehal.html#aa824c02dcbbe7fc687592d258125cd27">getHandleIndex</a>(handle);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;}</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="comment">/* specialized functions for Port handle</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="comment"> * Port Handle Data Layout</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="comment"> * Bits 0-7:   Channel Number</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="comment"> * Bits 8-15:  Module Number</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="comment"> * Bits 16-23: Unused</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="comment"> * Bits 24-30: Handle Type</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="comment"> * Bit 31:     1 if handle error, 0 if no error</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="comment">// using a 16 bit value so we can store 0-255 and still report error</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno"><a class="line" href="namespacehal.html#abda8f141e53785a3eb6b21731b4a1389">  160</a></span>&#160;<span class="comment"></span><span class="keyword">inline</span> int16_t <a class="code" href="namespacehal.html#abda8f141e53785a3eb6b21731b4a1389">getPortHandleChannel</a>(HAL_PortHandle handle) {</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  <span class="keywordflow">if</span> (!<a class="code" href="namespacehal.html#a49c55731c73dca723cc5ff27dcfb6ba6">isHandleType</a>(handle, HAL_HandleEnum::Port)) {</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="keywordflow">return</span> InvalidHandleIndex;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  }</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(handle &amp; 0xff);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;}</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="comment">// using a 16 bit value so we can store 0-255 and still report error</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno"><a class="line" href="namespacehal.html#a3d30f3a339e2682c13cee115ed96931e">  174</a></span>&#160;<span class="comment"></span><span class="keyword">inline</span> int16_t <a class="code" href="namespacehal.html#a3d30f3a339e2682c13cee115ed96931e">getPortHandleModule</a>(HAL_PortHandle handle) {</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  <span class="keywordflow">if</span> (!<a class="code" href="namespacehal.html#a49c55731c73dca723cc5ff27dcfb6ba6">isHandleType</a>(handle, HAL_HandleEnum::Port)) {</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keywordflow">return</span> InvalidHandleIndex;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  }</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>((handle &gt;&gt; 8) &amp; 0xff);</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;}</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; </div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="comment">// using a 16 bit value so we can store 0-255 and still report error</span></div>
+<div class="line"><a name="l00188"></a><span class="lineno"><a class="line" href="namespacehal.html#ad84dad1b1cf4fb4185ceb4eb6fe282ea">  188</a></span>&#160;<span class="comment"></span><span class="keyword">inline</span> int16_t <a class="code" href="namespacehal.html#ad84dad1b1cf4fb4185ceb4eb6fe282ea">getPortHandleSPIEnable</a>(HAL_PortHandle handle) {</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  <span class="keywordflow">if</span> (!<a class="code" href="namespacehal.html#a49c55731c73dca723cc5ff27dcfb6ba6">isHandleType</a>(handle, HAL_HandleEnum::Port)) {</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="keywordflow">return</span> InvalidHandleIndex;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  }</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>((handle &gt;&gt; 16) &amp; 0xff);</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;}</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
+<div class="line"><a name="l00202"></a><span class="lineno"><a class="line" href="namespacehal.html#a6ebb354330e8415469e51cb52c615ac5">  202</a></span>&#160;HAL_PortHandle <a class="code" href="namespacehal.html#a6ebb354330e8415469e51cb52c615ac5">createPortHandle</a>(uint8_t channel, uint8_t module);</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160; </div>
+<div class="line"><a name="l00210"></a><span class="lineno"><a class="line" href="namespacehal.html#abd9e6fe86aa997774ce9cd678f6b2786">  210</a></span>&#160;HAL_PortHandle <a class="code" href="namespacehal.html#abd9e6fe86aa997774ce9cd678f6b2786">createPortHandleForSPI</a>(uint8_t channel);</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160; </div>
+<div class="line"><a name="l00222"></a><span class="lineno"><a class="line" href="namespacehal.html#a39c5c5e666bd856368820ba66b28e8f9">  222</a></span>&#160;HAL_Handle <a class="code" href="namespacehal.html#a39c5c5e666bd856368820ba66b28e8f9">createHandle</a>(int16_t index, <a class="code" href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9">HAL_HandleEnum</a> handleType,</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                        int16_t version);</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;}  <span class="comment">// namespace hal</span></div>
 <div class="ttc" id="aclasshal_1_1HandleBase_html"><div class="ttname"><a href="classhal_1_1HandleBase.html">hal::HandleBase</a></div><div class="ttdoc">Base for all HAL Handles.</div><div class="ttdef"><b>Definition:</b> HandlesInternal.h:26</div></div>
 <div class="ttc" id="anamespacehal_html"><div class="ttname"><a href="namespacehal.html">hal</a></div><div class="ttdoc">WPILib Hardware Abstraction Layer (HAL) namespace.</div><div class="ttdef"><b>Definition:</b> SimCallbackRegistry.h:16</div></div>
-<div class="ttc" id="anamespacehal_html_a02472d7f1ea49f5e871a3b8fcc0e1a41"><div class="ttname"><a href="namespacehal.html#a02472d7f1ea49f5e871a3b8fcc0e1a41">hal::isHandleCorrectVersion</a></div><div class="ttdeci">static bool isHandleCorrectVersion(HAL_Handle handle, int16_t version)</div><div class="ttdoc">Get if the version of the handle is correct.</div><div class="ttdef"><b>Definition:</b> HandlesInternal.h:115</div></div>
+<div class="ttc" id="anamespacehal_html_a02472d7f1ea49f5e871a3b8fcc0e1a41"><div class="ttname"><a href="namespacehal.html#a02472d7f1ea49f5e871a3b8fcc0e1a41">hal::isHandleCorrectVersion</a></div><div class="ttdeci">static bool isHandleCorrectVersion(HAL_Handle handle, int16_t version)</div><div class="ttdoc">Get if the version of the handle is correct.</div><div class="ttdef"><b>Definition:</b> HandlesInternal.h:116</div></div>
 <div class="ttc" id="anamespacehal_html_a2e846f89b7ea1bed682347804f2c9cc9"><div class="ttname"><a href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9">hal::HAL_HandleEnum</a></div><div class="ttdeci">HAL_HandleEnum</div><div class="ttdoc">Enum of HAL handle types.</div><div class="ttdef"><b>Definition:</b> HandlesInternal.h:44</div></div>
 <div class="ttc" id="anamespacehal_html_a39c5c5e666bd856368820ba66b28e8f9"><div class="ttname"><a href="namespacehal.html#a39c5c5e666bd856368820ba66b28e8f9">hal::createHandle</a></div><div class="ttdeci">HAL_Handle createHandle(int16_t index, HAL_HandleEnum handleType, int16_t version)</div><div class="ttdoc">Create a handle for a specific index, type and version.</div></div>
-<div class="ttc" id="anamespacehal_html_a3d30f3a339e2682c13cee115ed96931e"><div class="ttname"><a href="namespacehal.html#a3d30f3a339e2682c13cee115ed96931e">hal::getPortHandleModule</a></div><div class="ttdeci">int16_t getPortHandleModule(HAL_PortHandle handle)</div><div class="ttdoc">Gets the port module of a port handle.</div><div class="ttdef"><b>Definition:</b> HandlesInternal.h:173</div></div>
-<div class="ttc" id="anamespacehal_html_a49c55731c73dca723cc5ff27dcfb6ba6"><div class="ttname"><a href="namespacehal.html#a49c55731c73dca723cc5ff27dcfb6ba6">hal::isHandleType</a></div><div class="ttdeci">static bool isHandleType(HAL_Handle handle, HAL_HandleEnum handleType)</div><div class="ttdoc">Get if the handle is a specific type.</div><div class="ttdef"><b>Definition:</b> HandlesInternal.h:102</div></div>
+<div class="ttc" id="anamespacehal_html_a3d30f3a339e2682c13cee115ed96931e"><div class="ttname"><a href="namespacehal.html#a3d30f3a339e2682c13cee115ed96931e">hal::getPortHandleModule</a></div><div class="ttdeci">int16_t getPortHandleModule(HAL_PortHandle handle)</div><div class="ttdoc">Gets the port module of a port handle.</div><div class="ttdef"><b>Definition:</b> HandlesInternal.h:174</div></div>
+<div class="ttc" id="anamespacehal_html_a49c55731c73dca723cc5ff27dcfb6ba6"><div class="ttname"><a href="namespacehal.html#a49c55731c73dca723cc5ff27dcfb6ba6">hal::isHandleType</a></div><div class="ttdeci">static bool isHandleType(HAL_Handle handle, HAL_HandleEnum handleType)</div><div class="ttdoc">Get if the handle is a specific type.</div><div class="ttdef"><b>Definition:</b> HandlesInternal.h:103</div></div>
 <div class="ttc" id="anamespacehal_html_a6ebb354330e8415469e51cb52c615ac5"><div class="ttname"><a href="namespacehal.html#a6ebb354330e8415469e51cb52c615ac5">hal::createPortHandle</a></div><div class="ttdeci">HAL_PortHandle createPortHandle(uint8_t channel, uint8_t module)</div><div class="ttdoc">Create a port handle.</div></div>
-<div class="ttc" id="anamespacehal_html_a7ad49bca178b45691f84dedd641d2fc1"><div class="ttname"><a href="namespacehal.html#a7ad49bca178b45691f84dedd641d2fc1">hal::getHandleType</a></div><div class="ttdeci">static HAL_HandleEnum getHandleType(HAL_Handle handle)</div><div class="ttdoc">Get the handle type from a handle.</div><div class="ttdef"><b>Definition:</b> HandlesInternal.h:90</div></div>
-<div class="ttc" id="anamespacehal_html_aa824c02dcbbe7fc687592d258125cd27"><div class="ttname"><a href="namespacehal.html#aa824c02dcbbe7fc687592d258125cd27">hal::getHandleIndex</a></div><div class="ttdeci">static int16_t getHandleIndex(HAL_Handle handle)</div><div class="ttdoc">Get the handle index from a handle.</div><div class="ttdef"><b>Definition:</b> HandlesInternal.h:79</div></div>
+<div class="ttc" id="anamespacehal_html_a7ad49bca178b45691f84dedd641d2fc1"><div class="ttname"><a href="namespacehal.html#a7ad49bca178b45691f84dedd641d2fc1">hal::getHandleType</a></div><div class="ttdeci">static HAL_HandleEnum getHandleType(HAL_Handle handle)</div><div class="ttdoc">Get the handle type from a handle.</div><div class="ttdef"><b>Definition:</b> HandlesInternal.h:91</div></div>
+<div class="ttc" id="anamespacehal_html_aa824c02dcbbe7fc687592d258125cd27"><div class="ttname"><a href="namespacehal.html#aa824c02dcbbe7fc687592d258125cd27">hal::getHandleIndex</a></div><div class="ttdeci">static int16_t getHandleIndex(HAL_Handle handle)</div><div class="ttdoc">Get the handle index from a handle.</div><div class="ttdef"><b>Definition:</b> HandlesInternal.h:80</div></div>
 <div class="ttc" id="anamespacehal_html_abd9e6fe86aa997774ce9cd678f6b2786"><div class="ttname"><a href="namespacehal.html#abd9e6fe86aa997774ce9cd678f6b2786">hal::createPortHandleForSPI</a></div><div class="ttdeci">HAL_PortHandle createPortHandleForSPI(uint8_t channel)</div><div class="ttdoc">Create a port handle for SPI.</div></div>
-<div class="ttc" id="anamespacehal_html_abda8f141e53785a3eb6b21731b4a1389"><div class="ttname"><a href="namespacehal.html#abda8f141e53785a3eb6b21731b4a1389">hal::getPortHandleChannel</a></div><div class="ttdeci">int16_t getPortHandleChannel(HAL_PortHandle handle)</div><div class="ttdoc">Gets the port channel of a port handle.</div><div class="ttdef"><b>Definition:</b> HandlesInternal.h:159</div></div>
-<div class="ttc" id="anamespacehal_html_ad84dad1b1cf4fb4185ceb4eb6fe282ea"><div class="ttname"><a href="namespacehal.html#ad84dad1b1cf4fb4185ceb4eb6fe282ea">hal::getPortHandleSPIEnable</a></div><div class="ttdeci">int16_t getPortHandleSPIEnable(HAL_PortHandle handle)</div><div class="ttdoc">Gets the SPI channel of a port handle.</div><div class="ttdef"><b>Definition:</b> HandlesInternal.h:187</div></div>
-<div class="ttc" id="anamespacehal_html_afbf5817bf5e1c8a4c8d0684f3bb2c2b6"><div class="ttname"><a href="namespacehal.html#afbf5817bf5e1c8a4c8d0684f3bb2c2b6">hal::getHandleTypedIndex</a></div><div class="ttdeci">int16_t getHandleTypedIndex(HAL_Handle handle, HAL_HandleEnum enumType, int16_t version)</div><div class="ttdoc">Get if the handle is a correct type and version.</div><div class="ttdef"><b>Definition:</b> HandlesInternal.h:130</div></div>
+<div class="ttc" id="anamespacehal_html_abda8f141e53785a3eb6b21731b4a1389"><div class="ttname"><a href="namespacehal.html#abda8f141e53785a3eb6b21731b4a1389">hal::getPortHandleChannel</a></div><div class="ttdeci">int16_t getPortHandleChannel(HAL_PortHandle handle)</div><div class="ttdoc">Gets the port channel of a port handle.</div><div class="ttdef"><b>Definition:</b> HandlesInternal.h:160</div></div>
+<div class="ttc" id="anamespacehal_html_ad84dad1b1cf4fb4185ceb4eb6fe282ea"><div class="ttname"><a href="namespacehal.html#ad84dad1b1cf4fb4185ceb4eb6fe282ea">hal::getPortHandleSPIEnable</a></div><div class="ttdeci">int16_t getPortHandleSPIEnable(HAL_PortHandle handle)</div><div class="ttdoc">Gets the SPI channel of a port handle.</div><div class="ttdef"><b>Definition:</b> HandlesInternal.h:188</div></div>
+<div class="ttc" id="anamespacehal_html_afbf5817bf5e1c8a4c8d0684f3bb2c2b6"><div class="ttname"><a href="namespacehal.html#afbf5817bf5e1c8a4c8d0684f3bb2c2b6">hal::getHandleTypedIndex</a></div><div class="ttdeci">int16_t getHandleTypedIndex(HAL_Handle handle, HAL_HandleEnum enumType, int16_t version)</div><div class="ttdoc">Get if the handle is a correct type and version.</div><div class="ttdef"><b>Definition:</b> HandlesInternal.h:131</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_7dfa5b6b9262a4050979ee23e0eb392d.html">hal</a></li><li class="navelem"><a class="el" href="dir_02fb1de250452f44c80739865561dc94.html">handles</a></li><li class="navelem"><b>HandlesInternal.h</b></li>
-    <li class="footer">Generated on Sat Aug 14 2021 18:44:52 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Aug 14 2021 18:46:38 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

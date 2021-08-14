@@ -1,5 +1,8 @@
 var NAVTREEINDEX19 =
 {
+"classfrc_1_1Timer.html#a2246466fd584658798fd452cb1dba1d0":[5,0,5,94,0],
+"classfrc_1_1Timer.html#a2b06d439e8435cdc9a4060886b775ce5":[5,0,5,94,1],
+"classfrc_1_1Timer.html#a334848b687247ccecb17094498d413db":[5,0,5,94,5],
 "classfrc_1_1Timer.html#a3f2deb1a8f4fbaa7ba147706a38c4cd7":[5,0,5,94,8],
 "classfrc_1_1Timer.html#a5950fe350497fb7040832120fe836ac7":[5,0,5,94,12],
 "classfrc_1_1Timer.html#a79c185032dcc8dd906bab83262b349c6":[5,0,5,94,7],
@@ -246,8 +249,5 @@ var NAVTREEINDEX19 =
 "classfrc_1_1XboxController.html#a0cc20db6870fcd4fb2da1e92f74f4a97":[5,0,5,90,9],
 "classfrc_1_1XboxController.html#a0ff5bed58ba05a14be2f6a17036fcebc":[5,0,5,90,33],
 "classfrc_1_1XboxController.html#a1505e5968793bf7c73aef62d911e8dd6":[5,0,5,90,12],
-"classfrc_1_1XboxController.html#a16cc1608cea96379235dad26e80c0958":[5,0,5,90,41],
-"classfrc_1_1XboxController.html#a1777fda15750d5687692bd3252dcb50a":[5,0,5,90,21],
-"classfrc_1_1XboxController.html#a1bd1ad7e87475764f51fd765917a0a70":[5,0,5,90,5],
-"classfrc_1_1XboxController.html#a249f1242629306ce8f050e316eacfa8a":[5,0,5,90,14]
+"classfrc_1_1XboxController.html#a16cc1608cea96379235dad26e80c0958":[5,0,5,90,41]
 };
