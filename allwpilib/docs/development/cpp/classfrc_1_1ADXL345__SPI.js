@@ -28,6 +28,7 @@ var classfrc_1_1ADXL345__SPI =
     [ "ADXL345_SPI", "classfrc_1_1ADXL345__SPI.html#aeb301cbe0c73fe3d1df413ce0152ae86", null ],
     [ "GetAcceleration", "classfrc_1_1ADXL345__SPI.html#a35c1c2a35ef8ece479f4e88513ba3204", null ],
     [ "GetAccelerations", "classfrc_1_1ADXL345__SPI.html#a4f0575061e3426648b18ef8d04379ab9", null ],
+    [ "GetSpiPort", "classfrc_1_1ADXL345__SPI.html#a3d86f0ce9585b96e12cec82e42defb1a", null ],
     [ "GetX", "classfrc_1_1ADXL345__SPI.html#a2d3efc5ae387f747c8153114c9bf29b5", null ],
     [ "GetY", "classfrc_1_1ADXL345__SPI.html#ae1ad3f4e2160751d2509de4c3a5bf6ce", null ],
     [ "GetZ", "classfrc_1_1ADXL345__SPI.html#a5bb9c7836be8dcf473c578cba84c7b33", null ],

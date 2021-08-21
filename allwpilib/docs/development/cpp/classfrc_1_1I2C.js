@@ -8,6 +8,8 @@ var classfrc_1_1I2C =
     [ "~I2C", "classfrc_1_1I2C.html#a9dcd155e32f03385ba919ecb94de7e8b", null ],
     [ "I2C", "classfrc_1_1I2C.html#a079d1856c8237fb28eaddcf1e04678ba", null ],
     [ "AddressOnly", "classfrc_1_1I2C.html#ae4f7bf1a00834ba2bb85a692163b75b5", null ],
+    [ "GetDeviceAddress", "classfrc_1_1I2C.html#abebc850ab962c181da28ea98dc28b07b", null ],
+    [ "GetPort", "classfrc_1_1I2C.html#ad60c2916f331a09430c4297bdc3d8e5c", null ],
     [ "operator=", "classfrc_1_1I2C.html#ad4a886ad370eb4055cf6fd9d08070308", null ],
     [ "Read", "classfrc_1_1I2C.html#a329494a29c39976524e6414575515718", null ],
     [ "ReadOnly", "classfrc_1_1I2C.html#a3471fcb05700376340aeca8f6dc7e749", null ],

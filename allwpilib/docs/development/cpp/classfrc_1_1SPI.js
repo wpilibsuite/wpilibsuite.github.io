@@ -22,6 +22,7 @@ var classfrc_1_1SPI =
     [ "GetAccumulatorOutput", "classfrc_1_1SPI.html#af29b8a57f73536ce03f1e9f68623f332", null ],
     [ "GetAccumulatorValue", "classfrc_1_1SPI.html#ad75723cb2e4d98b60979295a2e2aaaf4", null ],
     [ "GetAutoDroppedCount", "classfrc_1_1SPI.html#aeb4b59232167132f9b2ca13eb5d497b6", null ],
+    [ "GetPort", "classfrc_1_1SPI.html#a7617b06086fc6b86ca87873a25326581", null ],
     [ "InitAccumulator", "classfrc_1_1SPI.html#aa071c1d8e6c6c9995db38dd9c1dd03b4", null ],
     [ "InitAccumulator", "classfrc_1_1SPI.html#af2bda94cf34d6e5905efa5d54c726510", null ],
     [ "InitAuto", "classfrc_1_1SPI.html#ade47943406f4534df47293166dd2dae6", null ],

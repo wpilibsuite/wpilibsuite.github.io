@@ -12,6 +12,7 @@ var classfrc_1_1ADXL362 =
     [ "ADXL362", "classfrc_1_1ADXL362.html#ac6e3ef4c4ce6a92c52cc7080bfbd70cd", null ],
     [ "GetAcceleration", "classfrc_1_1ADXL362.html#a576efa6e1202829d3ea1c7bd38f3b1d5", null ],
     [ "GetAccelerations", "classfrc_1_1ADXL362.html#a528915902e84d76625f5a74a13579be9", null ],
+    [ "GetSpiPort", "classfrc_1_1ADXL362.html#ae28e1be3c24934fc03b3b6f7eaf66ed4", null ],
     [ "GetX", "classfrc_1_1ADXL362.html#adccbc9394d06e348e6bab87e146c1682", null ],
     [ "GetY", "classfrc_1_1ADXL362.html#ab96761c8f7311b3b99cdf9a470ac799f", null ],
     [ "GetZ", "classfrc_1_1ADXL362.html#ac647de3a6e4cbb2545f80ce144cb5413", null ],

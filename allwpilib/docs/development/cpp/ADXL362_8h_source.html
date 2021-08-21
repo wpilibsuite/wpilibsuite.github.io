@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-2-46-gb903173</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2-50-g2edd510</span>
    </div>
   </td>
  </tr>
@@ -129,29 +129,31 @@ $(document).ready(function(){initNavTree('ADXL362_8h_source.html',''); initResiz
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <a class="code" href="classfrc_1_1ADXL362.html#afdcdc5482a3d9ab7588f12967e43262d">ADXL362</a>(<a class="code" href="classfrc_1_1ADXL362.html">ADXL362</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <a class="code" href="classfrc_1_1ADXL362.html">ADXL362</a>&amp; operator=(<a class="code" href="classfrc_1_1ADXL362.html">ADXL362</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="comment">// Accelerometer interface</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classfrc_1_1ADXL362.html#a7bfffe958cd49f5220b104ac748f450c">   54</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1ADXL362.html#a7bfffe958cd49f5220b104ac748f450c">SetRange</a>(Range range) <span class="keyword">final</span>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classfrc_1_1ADXL362.html#adccbc9394d06e348e6bab87e146c1682">   55</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classfrc_1_1ADXL362.html#adccbc9394d06e348e6bab87e146c1682">GetX</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classfrc_1_1ADXL362.html#ab96761c8f7311b3b99cdf9a470ac799f">   56</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classfrc_1_1ADXL362.html#ab96761c8f7311b3b99cdf9a470ac799f">GetY</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classfrc_1_1ADXL362.html#ac647de3a6e4cbb2545f80ce144cb5413">   57</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classfrc_1_1ADXL362.html#ac647de3a6e4cbb2545f80ce144cb5413">GetZ</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classfrc_1_1ADXL362.html#a576efa6e1202829d3ea1c7bd38f3b1d5">   65</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="classfrc_1_1ADXL362.html#a576efa6e1202829d3ea1c7bd38f3b1d5">GetAcceleration</a>(Axes axis);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classfrc_1_1ADXL362.html#a528915902e84d76625f5a74a13579be9">   73</a></span>&#160;  <span class="keyword">virtual</span> <a class="code" href="structfrc_1_1ADXL362_1_1AllAxes.html">AllAxes</a> <a class="code" href="classfrc_1_1ADXL362.html#a528915902e84d76625f5a74a13579be9">GetAccelerations</a>();</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="classfrc_1_1ADXL362.html#af22475679b0bc3549caeb7476a473fea">   75</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1ADXL362.html#af22475679b0bc3549caeb7476a473fea">InitSendable</a>(<a class="code" href="classnt_1_1NTSendableBuilder.html">nt::NTSendableBuilder</a>&amp; builder) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  SPI::Port GetSpiPort() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="comment">// Accelerometer interface</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classfrc_1_1ADXL362.html#a7bfffe958cd49f5220b104ac748f450c">   56</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1ADXL362.html#a7bfffe958cd49f5220b104ac748f450c">SetRange</a>(Range range) <span class="keyword">final</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classfrc_1_1ADXL362.html#adccbc9394d06e348e6bab87e146c1682">   57</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classfrc_1_1ADXL362.html#adccbc9394d06e348e6bab87e146c1682">GetX</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classfrc_1_1ADXL362.html#ab96761c8f7311b3b99cdf9a470ac799f">   58</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classfrc_1_1ADXL362.html#ab96761c8f7311b3b99cdf9a470ac799f">GetY</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classfrc_1_1ADXL362.html#ac647de3a6e4cbb2545f80ce144cb5413">   59</a></span>&#160;  <span class="keywordtype">double</span> <a class="code" href="classfrc_1_1ADXL362.html#ac647de3a6e4cbb2545f80ce144cb5413">GetZ</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classfrc_1_1ADXL362.html#a576efa6e1202829d3ea1c7bd38f3b1d5">   67</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="classfrc_1_1ADXL362.html#a576efa6e1202829d3ea1c7bd38f3b1d5">GetAcceleration</a>(Axes axis);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="classfrc_1_1ADXL362.html#a528915902e84d76625f5a74a13579be9">   75</a></span>&#160;  <span class="keyword">virtual</span> <a class="code" href="structfrc_1_1ADXL362_1_1AllAxes.html">AllAxes</a> <a class="code" href="classfrc_1_1ADXL362.html#a528915902e84d76625f5a74a13579be9">GetAccelerations</a>();</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <a class="code" href="classfrc_1_1SPI.html">SPI</a> m_spi;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  hal::SimDevice m_simDevice;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  hal::SimEnum m_simRange;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  hal::SimDouble m_simX;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  hal::SimDouble m_simY;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  hal::SimDouble m_simZ;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordtype">double</span> m_gsPerLSB = 0.001;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;};</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classfrc_1_1ADXL362.html#af22475679b0bc3549caeb7476a473fea">   77</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classfrc_1_1ADXL362.html#af22475679b0bc3549caeb7476a473fea">InitSendable</a>(<a class="code" href="classnt_1_1NTSendableBuilder.html">nt::NTSendableBuilder</a>&amp; builder) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <a class="code" href="classfrc_1_1SPI.html">SPI</a> m_spi;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  hal::SimDevice m_simDevice;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  hal::SimEnum m_simRange;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  hal::SimDouble m_simX;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  hal::SimDouble m_simY;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  hal::SimDouble m_simZ;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordtype">double</span> m_gsPerLSB = 0.001;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;};</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}  <span class="comment">// namespace frc</span></div>
 <div class="ttc" id="aclassfrc_1_1ADXL362_html"><div class="ttname"><a href="classfrc_1_1ADXL362.html">frc::ADXL362</a></div><div class="ttdoc">ADXL362 SPI Accelerometer.</div><div class="ttdef"><b>Definition:</b> ADXL362.h:23</div></div>
 <div class="ttc" id="aclassfrc_1_1ADXL362_html_a02b41b69dd5badb38f59ef6c8fa67114"><div class="ttname"><a href="classfrc_1_1ADXL362.html#a02b41b69dd5badb38f59ef6c8fa67114">frc::ADXL362::ADXL362</a></div><div class="ttdeci">ADXL362(SPI::Port port, Range range=kRange_2G)</div><div class="ttdoc">Constructor.</div></div>
 <div class="ttc" id="aclassfrc_1_1ADXL362_html_a528915902e84d76625f5a74a13579be9"><div class="ttname"><a href="classfrc_1_1ADXL362.html#a528915902e84d76625f5a74a13579be9">frc::ADXL362::GetAccelerations</a></div><div class="ttdeci">virtual AllAxes GetAccelerations()</div><div class="ttdoc">Get the acceleration of all axes in Gs.</div></div>
@@ -174,7 +176,7 @@ $(document).ready(function(){initNavTree('ADXL362_8h_source.html',''); initResiz
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><b>ADXL362.h</b></li>
-    <li class="footer">Generated on Fri Aug 20 2021 03:33:47 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Aug 21 2021 06:22:15 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

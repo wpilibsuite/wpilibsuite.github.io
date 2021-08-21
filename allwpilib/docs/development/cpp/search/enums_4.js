@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['loglevel_7873',['LogLevel',['../classnt_1_1NetworkTableInstance.html#a88dfe5b82924f347c572cdada2707150',1,'nt::NetworkTableInstance']]]
+  ['loglevel_7882',['LogLevel',['../classnt_1_1NetworkTableInstance.html#a88dfe5b82924f347c572cdada2707150',1,'nt::NetworkTableInstance']]]
 ];

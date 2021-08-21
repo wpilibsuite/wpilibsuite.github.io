@@ -99,6 +99,7 @@ var annotated_dup =
         [ "RecordingController", "classfrc_1_1detail_1_1RecordingController.html", "classfrc_1_1detail_1_1RecordingController" ]
       ] ],
       [ "sim", null, [
+        [ "ADXL362Sim", "classfrc_1_1sim_1_1ADXL362Sim.html", "classfrc_1_1sim_1_1ADXL362Sim" ],
         [ "JoystickSim", "classfrc_1_1sim_1_1JoystickSim.html", "classfrc_1_1sim_1_1JoystickSim" ],
         [ "DifferentialDrivetrainSim", "classfrc_1_1sim_1_1DifferentialDrivetrainSim.html", "classfrc_1_1sim_1_1DifferentialDrivetrainSim" ],
         [ "PWMSim", "classfrc_1_1sim_1_1PWMSim.html", "classfrc_1_1sim_1_1PWMSim" ],
@@ -108,6 +109,7 @@ var annotated_dup =
         [ "AnalogOutputSim", "classfrc_1_1sim_1_1AnalogOutputSim.html", "classfrc_1_1sim_1_1AnalogOutputSim" ],
         [ "SPIAccelerometerSim", "classfrc_1_1sim_1_1SPIAccelerometerSim.html", "classfrc_1_1sim_1_1SPIAccelerometerSim" ],
         [ "PS4ControllerSim", "classfrc_1_1sim_1_1PS4ControllerSim.html", "classfrc_1_1sim_1_1PS4ControllerSim" ],
+        [ "ADXL345Sim", "classfrc_1_1sim_1_1ADXL345Sim.html", "classfrc_1_1sim_1_1ADXL345Sim" ],
         [ "PowerDistributionSim", "classfrc_1_1sim_1_1PowerDistributionSim.html", "classfrc_1_1sim_1_1PowerDistributionSim" ],
         [ "AnalogGyroSim", "classfrc_1_1sim_1_1AnalogGyroSim.html", "classfrc_1_1sim_1_1AnalogGyroSim" ],
         [ "SingleJointedArmSim", "classfrc_1_1sim_1_1SingleJointedArmSim.html", "classfrc_1_1sim_1_1SingleJointedArmSim" ],
@@ -125,6 +127,7 @@ var annotated_dup =
         [ "AnalogInputSim", "classfrc_1_1sim_1_1AnalogInputSim.html", "classfrc_1_1sim_1_1AnalogInputSim" ],
         [ "AnalogEncoderSim", "classfrc_1_1sim_1_1AnalogEncoderSim.html", "classfrc_1_1sim_1_1AnalogEncoderSim" ],
         [ "DIOSim", "classfrc_1_1sim_1_1DIOSim.html", "classfrc_1_1sim_1_1DIOSim" ],
+        [ "UltrasonicSim", "classfrc_1_1sim_1_1UltrasonicSim.html", "classfrc_1_1sim_1_1UltrasonicSim" ],
         [ "BatterySim", "classfrc_1_1sim_1_1BatterySim.html", "classfrc_1_1sim_1_1BatterySim" ],
         [ "XboxControllerSim", "classfrc_1_1sim_1_1XboxControllerSim.html", "classfrc_1_1sim_1_1XboxControllerSim" ],
         [ "GenericHIDSim", "classfrc_1_1sim_1_1GenericHIDSim.html", "classfrc_1_1sim_1_1GenericHIDSim" ],

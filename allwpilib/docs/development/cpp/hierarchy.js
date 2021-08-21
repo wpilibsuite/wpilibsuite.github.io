@@ -14,6 +14,8 @@ var hierarchy =
     [ "frc::AddressableLED", "classfrc_1_1AddressableLED.html", null ],
     [ "frc::sim::AddressableLEDSim", "classfrc_1_1sim_1_1AddressableLEDSim.html", null ],
     [ "wpi::adl_serializer< typename, typename >", "structwpi_1_1adl__serializer.html", null ],
+    [ "frc::sim::ADXL345Sim", "classfrc_1_1sim_1_1ADXL345Sim.html", null ],
+    [ "frc::sim::ADXL362Sim", "classfrc_1_1sim_1_1ADXL362Sim.html", null ],
     [ "frc::sim::ADXRS450_GyroSim", "classfrc_1_1sim_1_1ADXRS450__GyroSim.html", null ],
     [ "wpi::AlignedCharArray< Alignment, Size >", "structwpi_1_1AlignedCharArray.html", [
       [ "wpi::AlignedCharArrayUnion< wpi::detail::DenseMapPair< KeyT, ValueT >[4], LargeRep >", "structwpi_1_1AlignedCharArrayUnion.html", null ],
@@ -111,10 +113,10 @@ var hierarchy =
       [ "basic_memory_buffer< wchar_t >", "classbasic__memory__buffer.html", null ],
       [ "basic_memory_buffer< T, SIZE, Allocator >", "classbasic__memory__buffer.html", null ]
     ] ],
-    [ "buffer< Char >", "classbuffer.html", null ],
     [ "buffer< char >", "classbuffer.html", [
       [ "counting_buffer< T >", "classcounting__buffer.html", null ]
     ] ],
+    [ "buffer< Char >", "classbuffer.html", null ],
     [ "buffer< Container::value_type >", "classbuffer.html", [
       [ "iterator_buffer< std::back_insert_iterator< Container >, enable_if_t< is_contiguous< Container >::value, typename Container::value_type > >", "classiterator__buffer_3_01std_1_1back__insert__iterator_3_01Container_01_4_00_01enable__if__t_3_35791268f9463b30b303085098f291bc.html", null ]
     ] ],
@@ -1558,6 +1560,7 @@ var hierarchy =
     [ "wpi::UidVector< std::shared_ptr< wpi::CallbackThread::Poller >, 64 >", "classwpi_1_1UidVector.html", null ],
     [ "wpi::impl::UidVectorIterator< It >", "classwpi_1_1impl_1_1UidVectorIterator.html", null ],
     [ "detail::uint128_wrapper", "structdetail_1_1uint128__wrapper.html", null ],
+    [ "frc::sim::UltrasonicSim", "classfrc_1_1sim_1_1UltrasonicSim.html", null ],
     [ "unformattable", "structunformattable.html", null ],
     [ "wpi::unique_function< FunctionT >", "classwpi_1_1unique__function.html", null ],
     [ "wpi::unique_function< ReturnT(ParamTs...)>", "classwpi_1_1unique__function_3_01ReturnT_07ParamTs_8_8_8_08_4.html", null ],
