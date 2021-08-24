@@ -6,6 +6,7 @@ var classfrc_1_1Transform2d =
     [ "Inverse", "classfrc_1_1Transform2d.html#a8c0add79817a34f71a10808c51c4e8f1", null ],
     [ "operator!=", "classfrc_1_1Transform2d.html#a4b4f1c481967b41b56a1225858013a7b", null ],
     [ "operator*", "classfrc_1_1Transform2d.html#addd8e78df9632f6b74301ea798aac22c", null ],
+    [ "operator+", "classfrc_1_1Transform2d.html#ade4943169fbbc538c2cdf23c5cc8cfac", null ],
     [ "operator==", "classfrc_1_1Transform2d.html#ac3b3aa856dd66518d58400a97fdb0570", null ],
     [ "Rotation", "classfrc_1_1Transform2d.html#a717846c2ddae29c633df61104d7c28b5", null ],
     [ "Translation", "classfrc_1_1Transform2d.html#ae45d559b585bd06f450b0dcc624e666d", null ],
