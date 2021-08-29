@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-2-51-ge0c6cd3</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2-53-gc8fc715</span>
    </div>
   </td>
  </tr>
@@ -115,6 +115,14 @@ Functions</h2></td></tr>
 <tr class="memitem:ac5a3f9960d318c26e9a2f4640382ca60"><td class="memItemLeft" align="right" valign="top"><a id="ac5a3f9960d318c26e9a2f4640382ca60"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>drake::internal::Throw</b> (const char *condition, const char *func, const char *file, int line)</td></tr>
 <tr class="separator:ac5a3f9960d318c26e9a2f4640382ca60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0a61006fcffbc9a5e297b73f0aa3485"><td class="memTemplParams" colspan="2"><a id="ad0a61006fcffbc9a5e297b73f0aa3485"></a>
+template&lt;bool &gt; </td></tr>
+<tr class="memitem:ad0a61006fcffbc9a5e297b73f0aa3485"><td class="memTemplItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>drake::internal::DrakeThrowUnlessWasUsedWithRawPointer</b> ()</td></tr>
+<tr class="separator:ad0a61006fcffbc9a5e297b73f0aa3485"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac00c42e310af8ab61ae959ff202f9fac"><td class="memItemLeft" align="right" valign="top"><a id="ac00c42e310af8ab61ae959ff202f9fac"></a>
+template&lt;&gt; </td></tr>
+<tr class="memitem:ac00c42e310af8ab61ae959ff202f9fac"><td class="memTemplItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>drake::internal::DrakeThrowUnlessWasUsedWithRawPointer&lt; true &gt;</b> ()</td></tr>
+<tr class="separator:ac00c42e310af8ab61ae959ff202f9fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides a convenient wrapper to throw an exception when a condition is unmet. </p>
@@ -139,12 +147,17 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>drake::internal::Thro
 <div class="line">    typedef ::drake::assert::ConditionTraits&lt;                                \</div>
 <div class="line">        typename std::remove_cv_t&lt;decltype(condition)&gt;&gt; Trait;               \</div>
 <div class="line">    static_assert(Trait::is_valid, <span class="stringliteral">&quot;Condition should be bool-convertible.&quot;</span>); \</div>
+<div class="line">    ::drake::internal::DrakeThrowUnlessWasUsedWithRawPointer&lt;                \</div>
+<div class="line">        std::is_pointer_v&lt;decltype(condition)&gt;&gt;();                           \</div>
 <div class="line">    if (!Trait::Evaluate(condition)) {                                       \</div>
 <div class="line">      ::drake::internal::Throw(#condition, __func__, __FILE__, __LINE__);    \</div>
 <div class="line">    }                                                                        \</div>
 <div class="line">  } <span class="keywordflow">while</span> (0)</div>
 </div><!-- fragment -->
 <p>Evaluates <code>condition</code> and iff the value is false will throw an exception with a message showing at least the condition text, function name, file, and line. </p>
+<p>The condition must not be a pointer, where we'd implicitly rely on its nullness. Instead, always write out "!= nullptr" to be precise.</p>
+<p>Correct: <code>DRAKE_THROW_UNLESS(foo != nullptr);</code> Incorrect: <code><a class="el" href="drake__throw_8h.html#a4d9c29b101212c8a886c7f4f1a8b71ca" title="Evaluates condition and iff the value is false will throw an exception with a message showing at leas...">DRAKE_THROW_UNLESS(foo)</a>;</code></p>
+<p>Because this macro is intended to provide a useful exception message to users, we should err on the side of extra detail about the failure. The meaning of "foo" isolated within error message text does not make it clear that a null pointer is the proximate cause of the problem. </p>
 
 </div>
 </div>
@@ -154,7 +167,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>drake::internal::Thro
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3096fa119feaaf68acf7be783be3d79f.html">drake</a></li><li class="navelem"><a class="el" href="dir_533b608e0d491fadd970e32351d4ba56.html">common</a></li><li class="navelem"><a class="el" href="drake__throw_8h.html">drake_throw.h</a></li>
-    <li class="footer">Generated on Tue Aug 24 2021 03:24:41 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Aug 29 2021 03:51:55 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

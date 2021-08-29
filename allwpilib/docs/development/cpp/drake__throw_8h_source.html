@@ -33,7 +33,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-2-51-ge0c6cd3</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2-53-gc8fc715</span>
    </div>
   </td>
  </tr>
@@ -105,18 +105,30 @@ $(document).ready(function(){initNavTree('drake__throw_8h_source.html',''); init
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// Throw an error message.</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;[[noreturn]] <span class="keywordtype">void</span> Throw(<span class="keyword">const</span> <span class="keywordtype">char</span>* condition, <span class="keyword">const</span> <span class="keywordtype">char</span>* func,</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">char</span>* file, <span class="keywordtype">int</span> line);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}  <span class="comment">// namespace internal</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}  <span class="comment">// namespace drake</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="drake__throw_8h.html#a4d9c29b101212c8a886c7f4f1a8b71ca">   23</a></span>&#160;<span class="preprocessor">#define DRAKE_THROW_UNLESS(condition)                                        \</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">  do {                                                                       \</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">    typedef ::drake::assert::ConditionTraits&lt;                                \</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">        typename std::remove_cv_t&lt;decltype(condition)&gt;&gt; Trait;               \</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">    static_assert(Trait::is_valid, &quot;Condition should be bool-convertible.&quot;</span>); \</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    if (!Trait::Evaluate(condition)) {                                       \</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;      ::drake::internal::Throw(#condition, __func__, __FILE__, __LINE__);    \</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }                                                                        \</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  } while (0)</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">template</span> &lt;<span class="keywordtype">bool</span>&gt;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;constexpr <span class="keywordtype">void</span> DrakeThrowUnlessWasUsedWithRawPointer() {}</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">template</span>&lt;&gt;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;[[deprecated(<span class="stringliteral">&quot;\nDRAKE DEPRECATED: When using DRAKE_THROW_UNLESS on a raw&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="stringliteral">&quot; pointer, always write out DRAKE_THROW_UNLESS(foo != nullptr), do not write&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="stringliteral">&quot; DRAKE_THROW_UNLESS(foo) and rely on implicit pointer-to-bool conversion.&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="stringliteral">&quot;\nThe deprecated code will be removed from Drake on or after 2021-12-01.&quot;</span>)]]</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;constexpr <span class="keywordtype">void</span> DrakeThrowUnlessWasUsedWithRawPointer&lt;true&gt;() {}</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}  <span class="comment">// namespace internal</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}  <span class="comment">// namespace drake</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="drake__throw_8h.html#a4d9c29b101212c8a886c7f4f1a8b71ca">   44</a></span>&#160;<span class="preprocessor">#define DRAKE_THROW_UNLESS(condition)                                        \</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">  do {                                                                       \</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">    typedef ::drake::assert::ConditionTraits&lt;                                \</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">        typename std::remove_cv_t&lt;decltype(condition)&gt;&gt; Trait;               \</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">    static_assert(Trait::is_valid, &quot;Condition should be bool-convertible.&quot;</span>); \</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    ::drake::internal::DrakeThrowUnlessWasUsedWithRawPointer&lt;                \</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        std::is_pointer_v&lt;decltype(condition)&gt;&gt;();                           \</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    if (!Trait::Evaluate(condition)) {                                       \</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      ::drake::internal::Throw(#condition, __func__, __FILE__, __LINE__);    \</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }                                                                        \</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  } while (0)</div>
 <div class="ttc" id="adrake__assert_8h_html"><div class="ttname"><a href="drake__assert_8h.html">drake_assert.h</a></div><div class="ttdoc">Provides Drake's assertion implementation.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -124,7 +136,7 @@ $(document).ready(function(){initNavTree('drake__throw_8h_source.html',''); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3096fa119feaaf68acf7be783be3d79f.html">drake</a></li><li class="navelem"><a class="el" href="dir_533b608e0d491fadd970e32351d4ba56.html">common</a></li><li class="navelem"><a class="el" href="drake__throw_8h.html">drake_throw.h</a></li>
-    <li class="footer">Generated on Tue Aug 24 2021 03:24:40 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Aug 29 2021 03:51:54 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

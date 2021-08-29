@@ -209,6 +209,8 @@ var namespaces_dup =
         [ "assertion_error", "classdrake_1_1internal_1_1assertion__error.html", "classdrake_1_1internal_1_1assertion__error" ],
         [ "Abort", "drake__assert_8h.html#a1555b594d10aad05d02addac282d35ec", null ],
         [ "AssertionFailed", "drake__assert_8h.html#abffd0ad8e5a39757c70d2e40443f4f59", null ],
+        [ "DrakeThrowUnlessWasUsedWithRawPointer", "drake__throw_8h.html#ad0a61006fcffbc9a5e297b73f0aa3485", null ],
+        [ "DrakeThrowUnlessWasUsedWithRawPointer< true >", "drake__throw_8h.html#ac00c42e310af8ab61ae959ff202f9fac", null ],
         [ "Throw", "drake__throw_8h.html#ac5a3f9960d318c26e9a2f4640382ca60", null ]
       ] ],
       [ "math", null, [
