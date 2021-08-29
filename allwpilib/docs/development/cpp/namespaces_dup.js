@@ -577,6 +577,7 @@ var namespaces_dup =
       [ "AngleModulus", "MathUtil_8h.html#a42e1ee7c08ceffcf70e362e24988833d", null ],
       [ "AngleResidual", "AngleStatistics_8h.html#ac11e2e1a8ea8ca146068546af83b9ef5", null ],
       [ "AngleResidual", "AngleStatistics_8h.html#af78ee6c1817033e5ed35afaf0430287c", null ],
+      [ "ApplyDeadband", "MathUtil_8h.html#a3de30f3c55f8c413ff0a3a1210622523", null ],
       [ "ClampInputMaxMagnitude", "StateSpaceUtil_8h.html#a6bc2b9696a88e7eea61ced90dd78aa1e", null ],
       [ "DiscretizeA", "Discretization_8h.html#acbcc27ca7c9f88e13d7c4da520d4a6cb", null ],
       [ "DiscretizeAB", "Discretization_8h.html#ab0e1ca87aa1e11ff912712afe34f8803", null ],
