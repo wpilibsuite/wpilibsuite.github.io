@@ -24,6 +24,7 @@
 </script>
 <script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="theme.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -31,9 +32,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-2-57-g960b6e5</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2-58-ge4c7091</span>
    </div>
   </td>
  </tr>
@@ -228,7 +230,7 @@ $(document).ready(function(){initNavTree('functions_func_i.html',''); initResiza
 , <a class="el" href="classfrc_1_1Subsystem.html#ae15724ae90278588777eba6cbed925fe">frc::Subsystem</a>
 , <a class="el" href="classfrc_1_1Trigger.html#a314800317cd973ce88a0ccf691d69dfb">frc::Trigger</a>
 , <a class="el" href="classfrc_1_1Ultrasonic.html#a0226d94c06e4205c9675d73422843538">frc::Ultrasonic</a>
-, <a class="el" href="classnt_1_1NTSendable.html#a10a7a46bc2123e0a330620c64592b059">nt::NTSendable</a>
+, <a class="el" href="classnt_1_1NTSendable.html#a8dc9969c212f79d2c11623cadf723b63">nt::NTSendable</a>
 , <a class="el" href="classwpi_1_1Sendable.html#a02dfae73ea50b297f05151eafdc2efe6">wpi::Sendable</a>
 </li>
 <li>InitString()
@@ -239,10 +241,10 @@ $(document).ready(function(){initNavTree('functions_func_i.html',''); initResiza
 </li>
 <li>insert()
 : <a class="el" href="classwpi_1_1DenseMapBase.html#a6b57477019413fa3b1b8c0b5c6f90bce">wpi::DenseMapBase&lt; DerivedT, KeyT, ValueT, KeyInfoT, BucketT &gt;</a>
-, <a class="el" href="classwpi_1_1json.html#a5bc6b436fd18fc96f4c14395b945842a">wpi::json</a>
+, <a class="el" href="classwpi_1_1json.html#aaa5801010d74c3fe827c3b6d1fe7c074">wpi::json</a>
 , <a class="el" href="classwpi_1_1SmallPtrSetImpl.html#a3c330902feadde42b6218e7ee93632c5">wpi::SmallPtrSetImpl&lt; PtrType &gt;</a>
 , <a class="el" href="classwpi_1_1SmallSet.html#af2ff35f93b6854478af69fcf382fd09f">wpi::SmallSet&lt; T, N, C &gt;</a>
-, <a class="el" href="classwpi_1_1StringMap.html#a4758ddddb13fcc2799785ef68ee3e104">wpi::StringMap&lt; ValueTy &gt;</a>
+, <a class="el" href="classwpi_1_1StringMap.html#a1d9e233c160f8ef4e10b148b27281fc0">wpi::StringMap&lt; ValueTy &gt;</a>
 </li>
 <li>insert_as()
 : <a class="el" href="classwpi_1_1DenseMapBase.html#a47a74b64df10b78fb515eabfe32ff520">wpi::DenseMapBase&lt; DerivedT, KeyT, ValueT, KeyInfoT, BucketT &gt;</a>
@@ -252,7 +254,7 @@ $(document).ready(function(){initNavTree('functions_func_i.html',''); initResiza
 </li>
 <li>InstantCommand()
 : <a class="el" href="classfrc2_1_1InstantCommand.html#a1f2fd0bb6fa03676cc9ceed0fd49f86a">frc2::InstantCommand</a>
-, <a class="el" href="classfrc_1_1InstantCommand.html#a5ec29a47ec60965bfd068c3274fb7628">frc::InstantCommand</a>
+, <a class="el" href="classfrc_1_1InstantCommand.html#a08195f4ecfe139e48fe4803a46209f20">frc::InstantCommand</a>
 </li>
 <li>InTeleop()
 : <a class="el" href="classfrc_1_1DriverStation.html#ab4404a646c2184d3721052dc8d71f5e6">frc::DriverStation</a>
@@ -541,7 +543,7 @@ $(document).ready(function(){initNavTree('functions_func_i.html',''); initResiza
 </li>
 <li>IsScheduled()
 : <a class="el" href="classfrc2_1_1Command.html#a03316d8a51ffcb8262e6f751ae42a494">frc2::Command</a>
-, <a class="el" href="classfrc2_1_1CommandScheduler.html#a7a5dbc8fcac9c6828ffd39ffcf5aa240">frc2::CommandScheduler</a>
+, <a class="el" href="classfrc2_1_1CommandScheduler.html#a508ffa7f0fc5ceea855316d3a191a1f2">frc2::CommandScheduler</a>
 </li>
 <li>IsSimulation()
 : <a class="el" href="classfrc_1_1RobotBase.html#a307a770aa58d89e1f1cc8e7970cceb84">frc::RobotBase</a>
@@ -610,7 +612,7 @@ $(document).ready(function(){initNavTree('functions_func_i.html',''); initResiza
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Aug 29 2021 05:45:24 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Sep 3 2021 05:01:31 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

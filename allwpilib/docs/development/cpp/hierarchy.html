@@ -24,6 +24,7 @@
 </script>
 <script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="theme.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -31,9 +32,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-2-57-g960b6e5</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2-58-ge4c7091</span>
    </div>
   </td>
  </tr>
@@ -191,9 +193,9 @@ $(document).ready(function(){initNavTree('hierarchy.html',''); initResizable(); 
 <tr id="row_67_0_" class="even" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classbasic__memory__buffer.html" target="_self">basic_memory_buffer&lt; bigit, bigits_capacity &gt;</a></td><td class="desc"></td></tr>
 <tr id="row_67_1_" class="even" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classbasic__memory__buffer.html" target="_self">basic_memory_buffer&lt; wchar_t &gt;</a></td><td class="desc"></td></tr>
 <tr id="row_67_2_" class="even" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classbasic__memory__buffer.html" target="_self">basic_memory_buffer&lt; T, SIZE, Allocator &gt;</a></td><td class="desc">\rst A dynamically growing memory buffer for trivially copyable/constructible types with the first <code>SIZE</code> elements stored in the object itself </td></tr>
-<tr id="row_68_" class="even"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_68_" class="arrow" onclick="toggleFolder('68_')">&#9658;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classbuffer.html" target="_self">buffer&lt; char &gt;</a></td><td class="desc"></td></tr>
-<tr id="row_68_0_" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classcounting__buffer.html" target="_self">counting_buffer&lt; T &gt;</a></td><td class="desc"></td></tr>
-<tr id="row_69_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classbuffer.html" target="_self">buffer&lt; Char &gt;</a></td><td class="desc"></td></tr>
+<tr id="row_68_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classbuffer.html" target="_self">buffer&lt; Char &gt;</a></td><td class="desc"></td></tr>
+<tr id="row_69_"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_69_" class="arrow" onclick="toggleFolder('69_')">&#9658;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classbuffer.html" target="_self">buffer&lt; char &gt;</a></td><td class="desc"></td></tr>
+<tr id="row_69_0_" class="even" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classcounting__buffer.html" target="_self">counting_buffer&lt; T &gt;</a></td><td class="desc"></td></tr>
 <tr id="row_70_" class="even"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_70_" class="arrow" onclick="toggleFolder('70_')">&#9658;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classbuffer.html" target="_self">buffer&lt; Container::value_type &gt;</a></td><td class="desc"></td></tr>
 <tr id="row_70_0_" style="display:none;"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classiterator__buffer_3_01std_1_1back__insert__iterator_3_01Container_01_4_00_01enable__if__t_3_35791268f9463b30b303085098f291bc.html" target="_self">iterator_buffer&lt; std::back_insert_iterator&lt; Container &gt;, enable_if_t&lt; is_contiguous&lt; Container &gt;::value, typename Container::value_type &gt; &gt;</a></td><td class="desc"></td></tr>
 <tr id="row_71_"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_71_" class="arrow" onclick="toggleFolder('71_')">&#9658;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structbuffer__traits.html" target="_self">buffer_traits</a></td><td class="desc"></td></tr>
@@ -1444,7 +1446,7 @@ $(document).ready(function(){initNavTree('hierarchy.html',''); initResizable(); 
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Aug 29 2021 05:45:24 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Sep 3 2021 05:01:31 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

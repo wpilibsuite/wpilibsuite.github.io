@@ -6,21 +6,21 @@ var namespacehal =
       [ "UnsafeGetDIOMutex", "UnsafeDIO_8h.html#a64164878e7f0f717973e598c0b829dbb", null ]
     ] ],
     [ "impl", null, [
-      [ "SimCallbackRegistryBase", "classhal_1_1impl_1_1SimCallbackRegistryBase.html", "classhal_1_1impl_1_1SimCallbackRegistryBase" ],
-      [ "SimDataValueBase", "classhal_1_1impl_1_1SimDataValueBase.html", "classhal_1_1impl_1_1SimDataValueBase" ]
+      [ "SimDataValueBase", "classhal_1_1impl_1_1SimDataValueBase.html", "classhal_1_1impl_1_1SimDataValueBase" ],
+      [ "SimCallbackRegistryBase", "classhal_1_1impl_1_1SimCallbackRegistryBase.html", "classhal_1_1impl_1_1SimCallbackRegistryBase" ]
     ] ],
-    [ "SimCallbackRegistry", "classhal_1_1SimCallbackRegistry.html", "classhal_1_1SimCallbackRegistry" ],
     [ "SimDataValue", "classhal_1_1SimDataValue.html", "classhal_1_1SimDataValue" ],
-    [ "DIOSetProxy", "structhal_1_1DIOSetProxy.html", "structhal_1_1DIOSetProxy" ],
-    [ "SerialHelper", "classhal_1_1SerialHelper.html", "classhal_1_1SerialHelper" ],
-    [ "fpga_clock", "classhal_1_1fpga__clock.html", "classhal_1_1fpga__clock" ],
+    [ "SimCallbackRegistry", "classhal_1_1SimCallbackRegistry.html", "classhal_1_1SimCallbackRegistry" ],
     [ "LimitedHandleResource", "classhal_1_1LimitedHandleResource.html", "classhal_1_1LimitedHandleResource" ],
-    [ "IndexedClassedHandleResource", "classhal_1_1IndexedClassedHandleResource.html", "classhal_1_1IndexedClassedHandleResource" ],
     [ "HandleBase", "classhal_1_1HandleBase.html", "classhal_1_1HandleBase" ],
-    [ "DigitalHandleResource", "classhal_1_1DigitalHandleResource.html", "classhal_1_1DigitalHandleResource" ],
-    [ "UnlimitedHandleResource", "classhal_1_1UnlimitedHandleResource.html", "classhal_1_1UnlimitedHandleResource" ],
-    [ "LimitedClassedHandleResource", "classhal_1_1LimitedClassedHandleResource.html", "classhal_1_1LimitedClassedHandleResource" ],
     [ "IndexedHandleResource", "classhal_1_1IndexedHandleResource.html", "classhal_1_1IndexedHandleResource" ],
+    [ "IndexedClassedHandleResource", "classhal_1_1IndexedClassedHandleResource.html", "classhal_1_1IndexedClassedHandleResource" ],
+    [ "DigitalHandleResource", "classhal_1_1DigitalHandleResource.html", "classhal_1_1DigitalHandleResource" ],
+    [ "LimitedClassedHandleResource", "classhal_1_1LimitedClassedHandleResource.html", "classhal_1_1LimitedClassedHandleResource" ],
+    [ "UnlimitedHandleResource", "classhal_1_1UnlimitedHandleResource.html", "classhal_1_1UnlimitedHandleResource" ],
+    [ "SerialHelper", "classhal_1_1SerialHelper.html", "classhal_1_1SerialHelper" ],
+    [ "DIOSetProxy", "structhal_1_1DIOSetProxy.html", "structhal_1_1DIOSetProxy" ],
+    [ "fpga_clock", "classhal_1_1fpga__clock.html", "classhal_1_1fpga__clock" ],
     [ "HAL_HandleEnum", "namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9", [
       [ "Undefined", "namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9aec0fc0100c4fc1ce4eea230c3dc10360", null ],
       [ "DIO", "namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9a920d269f8e1a33f6426ba979ccdfb289", null ],
