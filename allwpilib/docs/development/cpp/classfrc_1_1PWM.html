@@ -35,7 +35,7 @@
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-2-65-g7810f66</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2-66-g5a4f75c</span>
    </div>
   </td>
  </tr>
@@ -169,7 +169,7 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetZeroLatch</b> ()</td></tr>
 <tr class="separator:ac6fba19d9fb79e42d37d97bd6072238e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fbd272cb13a4f5e96f8284704fcbd3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1PWM.html#a3fbd272cb13a4f5e96f8284704fcbd3f">EnableDeadbandElimination</a> (bool eliminateDeadband)</td></tr>
-<tr class="memdesc:a3fbd272cb13a4f5e96f8284704fcbd3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optionally eliminate the deadband from a speed controller.  <a href="classfrc_1_1PWM.html#a3fbd272cb13a4f5e96f8284704fcbd3f">More...</a><br /></td></tr>
+<tr class="memdesc:a3fbd272cb13a4f5e96f8284704fcbd3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optionally eliminate the deadband from a motor controller.  <a href="classfrc_1_1PWM.html#a3fbd272cb13a4f5e96f8284704fcbd3f">More...</a><br /></td></tr>
 <tr class="separator:a3fbd272cb13a4f5e96f8284704fcbd3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6961fb56ca5018388836707e568b94e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1PWM.html#ad6961fb56ca5018388836707e568b94e">SetBounds</a> (double max, double deadbandMax, double center, double deadbandMin, double min)</td></tr>
 <tr class="memdesc:ad6961fb56ca5018388836707e568b94e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the bounds on the <a class="el" href="classfrc_1_1PWM.html" title="Class implements the PWM generation in the FPGA.">PWM</a> pulse widths.  <a href="classfrc_1_1PWM.html#ad6961fb56ca5018388836707e568b94e">More...</a><br /></td></tr>
@@ -371,7 +371,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DMA</b></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Optionally eliminate the deadband from a speed controller. </p>
+<p>Optionally eliminate the deadband from a motor controller. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">eliminateDeadband</td><td>If true, set the motor curve on the speed controller to eliminate the deadband in the middle of the range. Otherwise, keep the full range without modifying any values. </td></tr>
@@ -525,7 +525,7 @@ SetMinNegativePwm() called.</dd></dl>
 </div><div class="memdoc">
 
 <p>Get the <a class="el" href="classfrc_1_1PWM.html" title="Class implements the PWM generation in the FPGA.">PWM</a> value in terms of speed. </p>
-<p>This is intended to be used by speed controllers.</p>
+<p>This is intended to be used by motor controllers.</p>
 <dl class="section pre"><dt>Precondition</dt><dd>SetMaxPositivePwm() called. </dd>
 <dd>
 SetMinPositivePwm() called. </dd>
@@ -845,7 +845,7 @@ SetMinNegativePwm() called.</dd></dl>
 </div><div class="memdoc">
 
 <p>Set the <a class="el" href="classfrc_1_1PWM.html" title="Class implements the PWM generation in the FPGA.">PWM</a> value based on a speed. </p>
-<p>This is intended to be used by speed controllers.</p>
+<p>This is intended to be used by motor controllers.</p>
 <dl class="section pre"><dt>Precondition</dt><dd>SetMaxPositivePwm() called. </dd>
 <dd>
 SetMinPositivePwm() called. </dd>
@@ -857,7 +857,7 @@ SetMaxNegativePwm() called. </dd>
 SetMinNegativePwm() called.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">speed</td><td>The speed to set the speed controller between -1.0 and 1.0. </td></tr>
+    <tr><td class="paramname">speed</td><td>The speed to set the motor controller between -1.0 and 1.0. </td></tr>
   </table>
   </dd>
 </dl>
@@ -873,7 +873,7 @@ SetMinNegativePwm() called.</dd></dl>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1PWM.html">PWM</a></li>
-    <li class="footer">Generated on Wed Sep 8 2021 23:26:38 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Sep 9 2021 05:11:13 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
