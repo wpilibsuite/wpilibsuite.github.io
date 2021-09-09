@@ -100,9 +100,9 @@
 <span class="sourceLineNo">088</span><a id="line.88">  }</a>
 <span class="sourceLineNo">089</span><a id="line.89"></a>
 <span class="sourceLineNo">090</span><a id="line.90">  /**</a>
-<span class="sourceLineNo">091</span><a id="line.91">   * Optionally eliminate the deadband from a speed controller.</a>
+<span class="sourceLineNo">091</span><a id="line.91">   * Optionally eliminate the deadband from a motor controller.</a>
 <span class="sourceLineNo">092</span><a id="line.92">   *</a>
-<span class="sourceLineNo">093</span><a id="line.93">   * @param eliminateDeadband If true, set the motor curve for the speed controller to eliminate the</a>
+<span class="sourceLineNo">093</span><a id="line.93">   * @param eliminateDeadband If true, set the motor curve for the motor controller to eliminate the</a>
 <span class="sourceLineNo">094</span><a id="line.94">   *     deadband in the middle of the range. Otherwise, keep the full range without modifying any</a>
 <span class="sourceLineNo">095</span><a id="line.95">   *     values.</a>
 <span class="sourceLineNo">096</span><a id="line.96">   */</a>
@@ -175,9 +175,9 @@
 <span class="sourceLineNo">163</span><a id="line.163">  /**</a>
 <span class="sourceLineNo">164</span><a id="line.164">   * Set the PWM value based on a speed.</a>
 <span class="sourceLineNo">165</span><a id="line.165">   *</a>
-<span class="sourceLineNo">166</span><a id="line.166">   * &lt;p&gt;This is intended to be used by speed controllers.</a>
+<span class="sourceLineNo">166</span><a id="line.166">   * &lt;p&gt;This is intended to be used by motor controllers.</a>
 <span class="sourceLineNo">167</span><a id="line.167">   *</a>
-<span class="sourceLineNo">168</span><a id="line.168">   * @param speed The speed to set the speed controller between -1.0 and 1.0.</a>
+<span class="sourceLineNo">168</span><a id="line.168">   * @param speed The speed to set the motor controller between -1.0 and 1.0.</a>
 <span class="sourceLineNo">169</span><a id="line.169">   * @pre SetMaxPositivePwm() called.</a>
 <span class="sourceLineNo">170</span><a id="line.170">   * @pre SetMinPositivePwm() called.</a>
 <span class="sourceLineNo">171</span><a id="line.171">   * @pre SetCenterPwm() called.</a>
@@ -191,7 +191,7 @@
 <span class="sourceLineNo">179</span><a id="line.179">  /**</a>
 <span class="sourceLineNo">180</span><a id="line.180">   * Get the PWM value in terms of speed.</a>
 <span class="sourceLineNo">181</span><a id="line.181">   *</a>
-<span class="sourceLineNo">182</span><a id="line.182">   * &lt;p&gt;This is intended to be used by speed controllers.</a>
+<span class="sourceLineNo">182</span><a id="line.182">   * &lt;p&gt;This is intended to be used by motor controllers.</a>
 <span class="sourceLineNo">183</span><a id="line.183">   *</a>
 <span class="sourceLineNo">184</span><a id="line.184">   * @return The most recently set speed between -1.0 and 1.0.</a>
 <span class="sourceLineNo">185</span><a id="line.185">   * @pre SetMaxPositivePwm() called.</a>
