@@ -78,74 +78,75 @@
 <span class="sourceLineNo">066</span><a id="line.66"></a>
 <span class="sourceLineNo">067</span><a id="line.67">    m_keepRunning.set(true);</a>
 <span class="sourceLineNo">068</span><a id="line.68">    m_thread = new Thread(this::threadMain);</a>
-<span class="sourceLineNo">069</span><a id="line.69">  }</a>
-<span class="sourceLineNo">070</span><a id="line.70"></a>
-<span class="sourceLineNo">071</span><a id="line.71">  /** Disables interrupt callbacks. Does nothing if already disabled. */</a>
-<span class="sourceLineNo">072</span><a id="line.72">  public void disable() {</a>
-<span class="sourceLineNo">073</span><a id="line.73">    m_keepRunning.set(false);</a>
-<span class="sourceLineNo">074</span><a id="line.74">    m_interrupt.wakeupWaitingInterrupt();</a>
-<span class="sourceLineNo">075</span><a id="line.75">    if (m_thread != null) {</a>
-<span class="sourceLineNo">076</span><a id="line.76">      if (m_thread.isAlive()) {</a>
-<span class="sourceLineNo">077</span><a id="line.77">        try {</a>
-<span class="sourceLineNo">078</span><a id="line.78">          m_thread.interrupt();</a>
-<span class="sourceLineNo">079</span><a id="line.79">          m_thread.join();</a>
-<span class="sourceLineNo">080</span><a id="line.80">        } catch (InterruptedException ex) {</a>
-<span class="sourceLineNo">081</span><a id="line.81">          Thread.currentThread().interrupt();</a>
-<span class="sourceLineNo">082</span><a id="line.82">        }</a>
-<span class="sourceLineNo">083</span><a id="line.83">      }</a>
-<span class="sourceLineNo">084</span><a id="line.84">      m_thread = null;</a>
-<span class="sourceLineNo">085</span><a id="line.85">    }</a>
-<span class="sourceLineNo">086</span><a id="line.86">  }</a>
-<span class="sourceLineNo">087</span><a id="line.87"></a>
-<span class="sourceLineNo">088</span><a id="line.88">  /**</a>
-<span class="sourceLineNo">089</span><a id="line.89">   * Set which edges to trigger the interrupt on.</a>
-<span class="sourceLineNo">090</span><a id="line.90">   *</a>
-<span class="sourceLineNo">091</span><a id="line.91">   * @param risingEdge Trigger on rising edge</a>
-<span class="sourceLineNo">092</span><a id="line.92">   * @param fallingEdge Trigger on falling edge</a>
-<span class="sourceLineNo">093</span><a id="line.93">   */</a>
-<span class="sourceLineNo">094</span><a id="line.94">  public void setInterruptEdges(boolean risingEdge, boolean fallingEdge) {</a>
-<span class="sourceLineNo">095</span><a id="line.95">    m_interrupt.setInterruptEdges(risingEdge, fallingEdge);</a>
-<span class="sourceLineNo">096</span><a id="line.96">  }</a>
-<span class="sourceLineNo">097</span><a id="line.97"></a>
-<span class="sourceLineNo">098</span><a id="line.98">  /**</a>
-<span class="sourceLineNo">099</span><a id="line.99">   * Get the timestamp of the last rising edge.</a>
-<span class="sourceLineNo">100</span><a id="line.100">   *</a>
-<span class="sourceLineNo">101</span><a id="line.101">   * &lt;p&gt;This function does not require the interrupt to be enabled to work.</a>
-<span class="sourceLineNo">102</span><a id="line.102">   *</a>
-<span class="sourceLineNo">103</span><a id="line.103">   * &lt;p&gt;This only works if rising edge was configured using setInterruptEdges.</a>
-<span class="sourceLineNo">104</span><a id="line.104">   *</a>
-<span class="sourceLineNo">105</span><a id="line.105">   * @return the timestamp in seconds relative to getFPGATime</a>
-<span class="sourceLineNo">106</span><a id="line.106">   */</a>
-<span class="sourceLineNo">107</span><a id="line.107">  public double getRisingTimestamp() {</a>
-<span class="sourceLineNo">108</span><a id="line.108">    return m_interrupt.getRisingTimestamp();</a>
-<span class="sourceLineNo">109</span><a id="line.109">  }</a>
-<span class="sourceLineNo">110</span><a id="line.110"></a>
-<span class="sourceLineNo">111</span><a id="line.111">  /**</a>
-<span class="sourceLineNo">112</span><a id="line.112">   * Get the timestamp of the last falling edge.</a>
-<span class="sourceLineNo">113</span><a id="line.113">   *</a>
-<span class="sourceLineNo">114</span><a id="line.114">   * &lt;p&gt;This function does not require the interrupt to be enabled to work.</a>
-<span class="sourceLineNo">115</span><a id="line.115">   *</a>
-<span class="sourceLineNo">116</span><a id="line.116">   * &lt;p&gt;This only works if falling edge was configured using setInterruptEdges.</a>
-<span class="sourceLineNo">117</span><a id="line.117">   *</a>
-<span class="sourceLineNo">118</span><a id="line.118">   * @return the timestamp in seconds relative to getFPGATime</a>
-<span class="sourceLineNo">119</span><a id="line.119">   */</a>
-<span class="sourceLineNo">120</span><a id="line.120">  public double getFallingTimestamp() {</a>
-<span class="sourceLineNo">121</span><a id="line.121">    return m_interrupt.getFallingTimestamp();</a>
-<span class="sourceLineNo">122</span><a id="line.122">  }</a>
-<span class="sourceLineNo">123</span><a id="line.123"></a>
-<span class="sourceLineNo">124</span><a id="line.124">  private void threadMain() {</a>
-<span class="sourceLineNo">125</span><a id="line.125">    while (m_keepRunning.get()) {</a>
-<span class="sourceLineNo">126</span><a id="line.126">      var result = m_interrupt.waitForInterruptRaw(10, false);</a>
-<span class="sourceLineNo">127</span><a id="line.127">      if (!m_keepRunning.get()) {</a>
-<span class="sourceLineNo">128</span><a id="line.128">        break;</a>
-<span class="sourceLineNo">129</span><a id="line.129">      }</a>
-<span class="sourceLineNo">130</span><a id="line.130">      if (result == 0) {</a>
-<span class="sourceLineNo">131</span><a id="line.131">        continue;</a>
-<span class="sourceLineNo">132</span><a id="line.132">      }</a>
-<span class="sourceLineNo">133</span><a id="line.133">      m_callback.accept((result &amp; 0x1) != 0, (result &amp; 0x100) != 0);</a>
-<span class="sourceLineNo">134</span><a id="line.134">    }</a>
-<span class="sourceLineNo">135</span><a id="line.135">  }</a>
-<span class="sourceLineNo">136</span><a id="line.136">}</a>
+<span class="sourceLineNo">069</span><a id="line.69">    m_thread.start();</a>
+<span class="sourceLineNo">070</span><a id="line.70">  }</a>
+<span class="sourceLineNo">071</span><a id="line.71"></a>
+<span class="sourceLineNo">072</span><a id="line.72">  /** Disables interrupt callbacks. Does nothing if already disabled. */</a>
+<span class="sourceLineNo">073</span><a id="line.73">  public void disable() {</a>
+<span class="sourceLineNo">074</span><a id="line.74">    m_keepRunning.set(false);</a>
+<span class="sourceLineNo">075</span><a id="line.75">    m_interrupt.wakeupWaitingInterrupt();</a>
+<span class="sourceLineNo">076</span><a id="line.76">    if (m_thread != null) {</a>
+<span class="sourceLineNo">077</span><a id="line.77">      if (m_thread.isAlive()) {</a>
+<span class="sourceLineNo">078</span><a id="line.78">        try {</a>
+<span class="sourceLineNo">079</span><a id="line.79">          m_thread.interrupt();</a>
+<span class="sourceLineNo">080</span><a id="line.80">          m_thread.join();</a>
+<span class="sourceLineNo">081</span><a id="line.81">        } catch (InterruptedException ex) {</a>
+<span class="sourceLineNo">082</span><a id="line.82">          Thread.currentThread().interrupt();</a>
+<span class="sourceLineNo">083</span><a id="line.83">        }</a>
+<span class="sourceLineNo">084</span><a id="line.84">      }</a>
+<span class="sourceLineNo">085</span><a id="line.85">      m_thread = null;</a>
+<span class="sourceLineNo">086</span><a id="line.86">    }</a>
+<span class="sourceLineNo">087</span><a id="line.87">  }</a>
+<span class="sourceLineNo">088</span><a id="line.88"></a>
+<span class="sourceLineNo">089</span><a id="line.89">  /**</a>
+<span class="sourceLineNo">090</span><a id="line.90">   * Set which edges to trigger the interrupt on.</a>
+<span class="sourceLineNo">091</span><a id="line.91">   *</a>
+<span class="sourceLineNo">092</span><a id="line.92">   * @param risingEdge Trigger on rising edge</a>
+<span class="sourceLineNo">093</span><a id="line.93">   * @param fallingEdge Trigger on falling edge</a>
+<span class="sourceLineNo">094</span><a id="line.94">   */</a>
+<span class="sourceLineNo">095</span><a id="line.95">  public void setInterruptEdges(boolean risingEdge, boolean fallingEdge) {</a>
+<span class="sourceLineNo">096</span><a id="line.96">    m_interrupt.setInterruptEdges(risingEdge, fallingEdge);</a>
+<span class="sourceLineNo">097</span><a id="line.97">  }</a>
+<span class="sourceLineNo">098</span><a id="line.98"></a>
+<span class="sourceLineNo">099</span><a id="line.99">  /**</a>
+<span class="sourceLineNo">100</span><a id="line.100">   * Get the timestamp of the last rising edge.</a>
+<span class="sourceLineNo">101</span><a id="line.101">   *</a>
+<span class="sourceLineNo">102</span><a id="line.102">   * &lt;p&gt;This function does not require the interrupt to be enabled to work.</a>
+<span class="sourceLineNo">103</span><a id="line.103">   *</a>
+<span class="sourceLineNo">104</span><a id="line.104">   * &lt;p&gt;This only works if rising edge was configured using setInterruptEdges.</a>
+<span class="sourceLineNo">105</span><a id="line.105">   *</a>
+<span class="sourceLineNo">106</span><a id="line.106">   * @return the timestamp in seconds relative to getFPGATime</a>
+<span class="sourceLineNo">107</span><a id="line.107">   */</a>
+<span class="sourceLineNo">108</span><a id="line.108">  public double getRisingTimestamp() {</a>
+<span class="sourceLineNo">109</span><a id="line.109">    return m_interrupt.getRisingTimestamp();</a>
+<span class="sourceLineNo">110</span><a id="line.110">  }</a>
+<span class="sourceLineNo">111</span><a id="line.111"></a>
+<span class="sourceLineNo">112</span><a id="line.112">  /**</a>
+<span class="sourceLineNo">113</span><a id="line.113">   * Get the timestamp of the last falling edge.</a>
+<span class="sourceLineNo">114</span><a id="line.114">   *</a>
+<span class="sourceLineNo">115</span><a id="line.115">   * &lt;p&gt;This function does not require the interrupt to be enabled to work.</a>
+<span class="sourceLineNo">116</span><a id="line.116">   *</a>
+<span class="sourceLineNo">117</span><a id="line.117">   * &lt;p&gt;This only works if falling edge was configured using setInterruptEdges.</a>
+<span class="sourceLineNo">118</span><a id="line.118">   *</a>
+<span class="sourceLineNo">119</span><a id="line.119">   * @return the timestamp in seconds relative to getFPGATime</a>
+<span class="sourceLineNo">120</span><a id="line.120">   */</a>
+<span class="sourceLineNo">121</span><a id="line.121">  public double getFallingTimestamp() {</a>
+<span class="sourceLineNo">122</span><a id="line.122">    return m_interrupt.getFallingTimestamp();</a>
+<span class="sourceLineNo">123</span><a id="line.123">  }</a>
+<span class="sourceLineNo">124</span><a id="line.124"></a>
+<span class="sourceLineNo">125</span><a id="line.125">  private void threadMain() {</a>
+<span class="sourceLineNo">126</span><a id="line.126">    while (m_keepRunning.get()) {</a>
+<span class="sourceLineNo">127</span><a id="line.127">      var result = m_interrupt.waitForInterruptRaw(10, false);</a>
+<span class="sourceLineNo">128</span><a id="line.128">      if (!m_keepRunning.get()) {</a>
+<span class="sourceLineNo">129</span><a id="line.129">        break;</a>
+<span class="sourceLineNo">130</span><a id="line.130">      }</a>
+<span class="sourceLineNo">131</span><a id="line.131">      if (result == 0) {</a>
+<span class="sourceLineNo">132</span><a id="line.132">        continue;</a>
+<span class="sourceLineNo">133</span><a id="line.133">      }</a>
+<span class="sourceLineNo">134</span><a id="line.134">      m_callback.accept((result &amp; 0x1) != 0, (result &amp; 0x100) != 0);</a>
+<span class="sourceLineNo">135</span><a id="line.135">    }</a>
+<span class="sourceLineNo">136</span><a id="line.136">  }</a>
+<span class="sourceLineNo">137</span><a id="line.137">}</a>
 
 
 
