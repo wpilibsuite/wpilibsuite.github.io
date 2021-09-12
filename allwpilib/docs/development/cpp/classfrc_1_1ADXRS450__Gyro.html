@@ -35,7 +35,7 @@
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">WPILibC++
-   &#160;<span id="projectnumber">2022.0.0-alpha-2-73-gd8e0b6c</span>
+   &#160;<span id="projectnumber">2022.0.0-alpha-2-74-ge7048c8</span>
    </div>
   </td>
  </tr>
@@ -119,10 +119,10 @@ Inheritance diagram for frc::ADXRS450_Gyro:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af475580220a2e02ebdd3c02a4c43e774"><td class="memItemLeft" align="right" valign="top"><a id="af475580220a2e02ebdd3c02a4c43e774"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1ADXRS450__Gyro.html#af475580220a2e02ebdd3c02a4c43e774">ADXRS450_Gyro</a> ()</td></tr>
-<tr class="memdesc:af475580220a2e02ebdd3c02a4c43e774"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classfrc_1_1Gyro.html" title="Interface for yaw rate gyros.">Gyro</a> constructor on onboard CS0. <br /></td></tr>
+<tr class="memdesc:af475580220a2e02ebdd3c02a4c43e774"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gyro constructor on onboard CS0. <br /></td></tr>
 <tr class="separator:af475580220a2e02ebdd3c02a4c43e774"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6389885a2e8e4cf7f2df9593731117a3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1ADXRS450__Gyro.html#a6389885a2e8e4cf7f2df9593731117a3">ADXRS450_Gyro</a> (SPI::Port port)</td></tr>
-<tr class="memdesc:a6389885a2e8e4cf7f2df9593731117a3"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classfrc_1_1Gyro.html" title="Interface for yaw rate gyros.">Gyro</a> constructor on the specified <a class="el" href="classfrc_1_1SPI.html" title="SPI bus interface class.">SPI</a> port.  <a href="classfrc_1_1ADXRS450__Gyro.html#a6389885a2e8e4cf7f2df9593731117a3">More...</a><br /></td></tr>
+<tr class="memdesc:a6389885a2e8e4cf7f2df9593731117a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gyro constructor on the specified <a class="el" href="classfrc_1_1SPI.html" title="SPI bus interface class.">SPI</a> port.  <a href="classfrc_1_1ADXRS450__Gyro.html#a6389885a2e8e4cf7f2df9593731117a3">More...</a><br /></td></tr>
 <tr class="separator:a6389885a2e8e4cf7f2df9593731117a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afecdc9df87ead925bc99e0b3e0493a40"><td class="memItemLeft" align="right" valign="top"><a id="afecdc9df87ead925bc99e0b3e0493a40"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>ADXRS450_Gyro</b> (<a class="el" href="classfrc_1_1ADXRS450__Gyro.html">ADXRS450_Gyro</a> &amp;&amp;)=default</td></tr>
@@ -205,8 +205,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Use a rate gyro to return the robots heading relative to a starting position. </p>
-<p>The <a class="el" href="classfrc_1_1Gyro.html" title="Interface for yaw rate gyros.">Gyro</a> class tracks the robots heading based on the starting position. As the robot rotates the new heading is computed by integrating the rate of rotation returned by the sensor. When the class is instantiated, it does a short calibration routine where it samples the gyro while at rest to determine the default offset. This is subtracted from each sample to determine the heading.</p>
-<p>This class is for the digital ADXRS450 gyro sensor that connects via <a class="el" href="classfrc_1_1SPI.html" title="SPI bus interface class.">SPI</a>. Only one instance of an ADXRS <a class="el" href="classfrc_1_1Gyro.html" title="Interface for yaw rate gyros.">Gyro</a> is supported. </p>
+<p>The Gyro class tracks the robots heading based on the starting position. As the robot rotates the new heading is computed by integrating the rate of rotation returned by the sensor. When the class is instantiated, it does a short calibration routine where it samples the gyro while at rest to determine the default offset. This is subtracted from each sample to determine the heading.</p>
+<p>This class is for the digital ADXRS450 gyro sensor that connects via <a class="el" href="classfrc_1_1SPI.html" title="SPI bus interface class.">SPI</a>. Only one instance of an ADXRS Gyro is supported. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6389885a2e8e4cf7f2df9593731117a3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6389885a2e8e4cf7f2df9593731117a3">&#9670;&nbsp;</a></span>ADXRS450_Gyro()</h2>
@@ -232,7 +232,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="classfrc_1_1Gyro.html" title="Interface for yaw rate gyros.">Gyro</a> constructor on the specified <a class="el" href="classfrc_1_1SPI.html" title="SPI bus interface class.">SPI</a> port. </p>
+<p>Gyro constructor on the specified <a class="el" href="classfrc_1_1SPI.html" title="SPI bus interface class.">SPI</a> port. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">port</td><td>The <a class="el" href="classfrc_1_1SPI.html" title="SPI bus interface class.">SPI</a> port the gyro is attached to. </td></tr>
@@ -431,7 +431,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1ADXRS450__Gyro.html">ADXRS450_Gyro</a></li>
-    <li class="footer">Generated on Sat Sep 11 2021 16:23:27 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Sep 12 2021 22:21:00 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
