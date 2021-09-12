@@ -1,12 +1,6 @@
 var group__hal__dma =
 [
-    [ "HAL_DMASample", "structHAL__DMASample.html", [
-      [ "captureSize", "structHAL__DMASample.html#af6b614251f68cd8bfebd5416a884b712", null ],
-      [ "channelOffsets", "structHAL__DMASample.html#a62aebb716df39c2402a5c84dbc64ca74", null ],
-      [ "readBuffer", "structHAL__DMASample.html#a8a3bc3bcf128247b72b280bae7cb1d5c", null ],
-      [ "timeStamp", "structHAL__DMASample.html#a70ba9eb9744d01adf7ea9033237f5140", null ],
-      [ "triggerChannels", "structHAL__DMASample.html#a7dfb6df674ecdd01cf2a406bf6685abc", null ]
-    ] ],
+    [ "HAL_DMASample", "structHAL__DMASample.html", null ],
     [ "HAL_AddDMAAnalogAccumulator", "group__hal__dma.html#gaa2a66aa2e718c944c99e4643a9ecddb3", null ],
     [ "HAL_AddDMAAnalogInput", "group__hal__dma.html#gaf05a725b20714ea5137ca6ac894a0639", null ],
     [ "HAL_AddDMAAveragedAnalogInput", "group__hal__dma.html#gaa381abf1529763b360d843ee9062f846", null ],
@@ -20,7 +14,7 @@ var group__hal__dma =
     [ "HAL_ClearDMASensors", "group__hal__dma.html#gaa0ab069f65fbd2ac87ff2f9bcaedac13", null ],
     [ "HAL_ENUM", "group__hal__dma.html#gacb9f489dfdc755b4e1ecf41d5c36c352", null ],
     [ "HAL_FreeDMA", "group__hal__dma.html#gaf93f82cd4ab2647de5aaae3d8d3f906c", null ],
-    [ "HAL_GetDMADirectPointer", "group__hal__dma.html#gac43877756b6657e5cad0431a8d6f9b81", null ],
+    [ "HAL_GetDMADirectPointer", "group__hal__dma.html#ga4889f04b29858a621b208c119df35828", null ],
     [ "HAL_GetDMASampleAnalogAccumulator", "group__hal__dma.html#ga7e9c4bca7a6b283a08f7fd71b8517d05", null ],
     [ "HAL_GetDMASampleAnalogInputRaw", "group__hal__dma.html#ga75c44e5b385000d5d7b14b9e51e6fba1", null ],
     [ "HAL_GetDMASampleAveragedAnalogInputRaw", "group__hal__dma.html#ga2848621b4a34626dfdfacd3b3dd9c361", null ],

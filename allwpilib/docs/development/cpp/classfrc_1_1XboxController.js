@@ -1,10 +1,8 @@
 var classfrc_1_1XboxController =
 [
-    [ "Axis", "structfrc_1_1XboxController_1_1Axis.html", "structfrc_1_1XboxController_1_1Axis" ],
-    [ "Button", "structfrc_1_1XboxController_1_1Button.html", "structfrc_1_1XboxController_1_1Button" ],
+    [ "Axis", "structfrc_1_1XboxController_1_1Axis.html", null ],
+    [ "Button", "structfrc_1_1XboxController_1_1Button.html", null ],
     [ "XboxController", "classfrc_1_1XboxController.html#a879dbba9de63acca156dc2184fccab88", null ],
-    [ "~XboxController", "classfrc_1_1XboxController.html#a9478d06e07e01e7b6bf7301b73d8c3e4", null ],
-    [ "XboxController", "classfrc_1_1XboxController.html#a51be4ced5d222649f900de435badbbc0", null ],
     [ "GetAButton", "classfrc_1_1XboxController.html#a1bd1ad7e87475764f51fd765917a0a70", null ],
     [ "GetAButtonPressed", "classfrc_1_1XboxController.html#ac68847e4f82d5ac78026b8212d06b693", null ],
     [ "GetAButtonReleased", "classfrc_1_1XboxController.html#a4462c05823456c74ccc4f6f78caf6631", null ],
@@ -40,6 +38,5 @@ var classfrc_1_1XboxController =
     [ "GetXButtonReleased", "classfrc_1_1XboxController.html#a7b20d7e717a02d2af0f1d790253a3fc1", null ],
     [ "GetYButton", "classfrc_1_1XboxController.html#aa21a91dcde95248df8bc633c0e22601c", null ],
     [ "GetYButtonPressed", "classfrc_1_1XboxController.html#afc1acfc3f13bc56134a450d31e20dc9d", null ],
-    [ "GetYButtonReleased", "classfrc_1_1XboxController.html#a686efc14d81cd4f80887d2a1a27c4448", null ],
-    [ "operator=", "classfrc_1_1XboxController.html#a16cc1608cea96379235dad26e80c0958", null ]
+    [ "GetYButtonReleased", "classfrc_1_1XboxController.html#a686efc14d81cd4f80887d2a1a27c4448", null ]
 ];

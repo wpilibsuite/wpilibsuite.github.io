@@ -1,10 +1,8 @@
 var classfrc_1_1PS4Controller =
 [
-    [ "Axis", "structfrc_1_1PS4Controller_1_1Axis.html", "structfrc_1_1PS4Controller_1_1Axis" ],
-    [ "Button", "structfrc_1_1PS4Controller_1_1Button.html", "structfrc_1_1PS4Controller_1_1Button" ],
+    [ "Axis", "structfrc_1_1PS4Controller_1_1Axis.html", null ],
+    [ "Button", "structfrc_1_1PS4Controller_1_1Button.html", null ],
     [ "PS4Controller", "classfrc_1_1PS4Controller.html#a8da5815a438fe4d07fec619a772aa7f3", null ],
-    [ "~PS4Controller", "classfrc_1_1PS4Controller.html#aebefb3596dc57d82b8a3d861fcdb6b0e", null ],
-    [ "PS4Controller", "classfrc_1_1PS4Controller.html#adfce9851e9901945d05fd250dd8bf538", null ],
     [ "GetCircleButton", "classfrc_1_1PS4Controller.html#a83437f884958564d68d489fab5473f87", null ],
     [ "GetCircleButtonPressed", "classfrc_1_1PS4Controller.html#a972fcfc6aeea1d18f82b50153d1c820d", null ],
     [ "GetCircleButtonReleased", "classfrc_1_1PS4Controller.html#af3da77ad531c2cd1fe2240da224d634c", null ],
@@ -52,6 +50,5 @@ var classfrc_1_1PS4Controller =
     [ "GetTouchpadReleased", "classfrc_1_1PS4Controller.html#a9f724e3c97ced244da7482ce2bd3561b", null ],
     [ "GetTriangleButton", "classfrc_1_1PS4Controller.html#a9176bb3c32e62bc6847395c4ffafffc0", null ],
     [ "GetTriangleButtonPressed", "classfrc_1_1PS4Controller.html#aab587418eda3bd7c9e6dca7e19f8369e", null ],
-    [ "GetTriangleButtonReleased", "classfrc_1_1PS4Controller.html#a94f7910d08e289a733d36d677d24c21d", null ],
-    [ "operator=", "classfrc_1_1PS4Controller.html#a1d5e3c2b00dfa5c087e7b07e9d646441", null ]
+    [ "GetTriangleButtonReleased", "classfrc_1_1PS4Controller.html#a94f7910d08e289a733d36d677d24c21d", null ]
 ];

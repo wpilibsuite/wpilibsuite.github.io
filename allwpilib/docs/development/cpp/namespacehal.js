@@ -1,26 +1,21 @@
 var namespacehal =
 [
-    [ "detail", null, [
-      [ "ComputeDigitalMask", "UnsafeDIO_8h.html#aba1632c233f536c0db420b9fe349daca", null ],
-      [ "UnsafeGetDigialSystem", "UnsafeDIO_8h.html#a80915d5d70c8959da650585bb868e7dc", null ],
-      [ "UnsafeGetDIOMutex", "UnsafeDIO_8h.html#a64164878e7f0f717973e598c0b829dbb", null ]
-    ] ],
     [ "impl", null, [
-      [ "SimDataValueBase", "classhal_1_1impl_1_1SimDataValueBase.html", "classhal_1_1impl_1_1SimDataValueBase" ],
-      [ "SimCallbackRegistryBase", "classhal_1_1impl_1_1SimCallbackRegistryBase.html", "classhal_1_1impl_1_1SimCallbackRegistryBase" ]
+      [ "SimCallbackRegistryBase", "classhal_1_1impl_1_1SimCallbackRegistryBase.html", null ],
+      [ "SimDataValueBase", "classhal_1_1impl_1_1SimDataValueBase.html", null ]
     ] ],
-    [ "SimDataValue", "classhal_1_1SimDataValue.html", "classhal_1_1SimDataValue" ],
-    [ "SimCallbackRegistry", "classhal_1_1SimCallbackRegistry.html", "classhal_1_1SimCallbackRegistry" ],
-    [ "LimitedHandleResource", "classhal_1_1LimitedHandleResource.html", "classhal_1_1LimitedHandleResource" ],
-    [ "HandleBase", "classhal_1_1HandleBase.html", "classhal_1_1HandleBase" ],
-    [ "IndexedHandleResource", "classhal_1_1IndexedHandleResource.html", "classhal_1_1IndexedHandleResource" ],
-    [ "IndexedClassedHandleResource", "classhal_1_1IndexedClassedHandleResource.html", "classhal_1_1IndexedClassedHandleResource" ],
-    [ "DigitalHandleResource", "classhal_1_1DigitalHandleResource.html", "classhal_1_1DigitalHandleResource" ],
-    [ "LimitedClassedHandleResource", "classhal_1_1LimitedClassedHandleResource.html", "classhal_1_1LimitedClassedHandleResource" ],
-    [ "UnlimitedHandleResource", "classhal_1_1UnlimitedHandleResource.html", "classhal_1_1UnlimitedHandleResource" ],
+    [ "DigitalHandleResource", "classhal_1_1DigitalHandleResource.html", null ],
+    [ "DIOSetProxy", "structhal_1_1DIOSetProxy.html", null ],
+    [ "fpga_clock", "classhal_1_1fpga__clock.html", null ],
+    [ "HandleBase", "classhal_1_1HandleBase.html", null ],
+    [ "IndexedClassedHandleResource", "classhal_1_1IndexedClassedHandleResource.html", null ],
+    [ "IndexedHandleResource", "classhal_1_1IndexedHandleResource.html", null ],
+    [ "LimitedClassedHandleResource", "classhal_1_1LimitedClassedHandleResource.html", null ],
+    [ "LimitedHandleResource", "classhal_1_1LimitedHandleResource.html", null ],
     [ "SerialHelper", "classhal_1_1SerialHelper.html", "classhal_1_1SerialHelper" ],
-    [ "DIOSetProxy", "structhal_1_1DIOSetProxy.html", "structhal_1_1DIOSetProxy" ],
-    [ "fpga_clock", "classhal_1_1fpga__clock.html", "classhal_1_1fpga__clock" ],
+    [ "SimCallbackRegistry", "classhal_1_1SimCallbackRegistry.html", null ],
+    [ "SimDataValue", "classhal_1_1SimDataValue.html", null ],
+    [ "UnlimitedHandleResource", "classhal_1_1UnlimitedHandleResource.html", null ],
     [ "HAL_HandleEnum", "namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9", [
       [ "Undefined", "namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9aec0fc0100c4fc1ce4eea230c3dc10360", null ],
       [ "DIO", "namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9a920d269f8e1a33f6426ba979ccdfb289", null ],
@@ -61,6 +56,5 @@ var namespacehal =
     [ "getPortHandleSPIEnable", "namespacehal.html#ad84dad1b1cf4fb4185ceb4eb6fe282ea", null ],
     [ "isHandleCorrectVersion", "namespacehal.html#a02472d7f1ea49f5e871a3b8fcc0e1a41", null ],
     [ "isHandleType", "namespacehal.html#a49c55731c73dca723cc5ff27dcfb6ba6", null ],
-    [ "UnsafeManipulateDIO", "namespacehal.html#a8fafafcab9f6d02c41abd00fffa19734", null ],
-    [ "InvalidHandleIndex", "namespacehal.html#a3d0b58d1c8b9d63821d271d822d68f10", null ]
+    [ "UnsafeManipulateDIO", "namespacehal.html#a8fafafcab9f6d02c41abd00fffa19734", null ]
 ];

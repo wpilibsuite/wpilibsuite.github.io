@@ -1,8 +1,6 @@
 var classfrc_1_1RobotController =
 [
-    [ "RobotController", "classfrc_1_1RobotController.html#a5456e9704430bc4446e65e2f891e429a", null ],
     [ "GetBatteryVoltage", "classfrc_1_1RobotController.html#a4b1e42e825583c82664a4ecc5d81b83f", null ],
-    [ "GetCANStatus", "classfrc_1_1RobotController.html#a58e7b24ddd479303b64d2b9ccff255a9", null ],
     [ "GetCurrent3V3", "classfrc_1_1RobotController.html#ab8f84f32622befd0794899c3c5d1987c", null ],
     [ "GetCurrent5V", "classfrc_1_1RobotController.html#aec16c910e71082e60486c23061dbfadb", null ],
     [ "GetCurrent6V", "classfrc_1_1RobotController.html#aeb594692d2cbedfa03ee5c3dc93aec6c", null ],

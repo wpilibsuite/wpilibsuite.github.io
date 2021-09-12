@@ -1,30 +1,4 @@
 var classfrc_1_1PneumaticsControlModule =
 [
-    [ "PneumaticsControlModule", "classfrc_1_1PneumaticsControlModule.html#a5b94c8aa2d38563cc6d69af42cd801fa", null ],
-    [ "PneumaticsControlModule", "classfrc_1_1PneumaticsControlModule.html#a9c070f882b279d4984796b225b6362d0", null ],
-    [ "~PneumaticsControlModule", "classfrc_1_1PneumaticsControlModule.html#a6e9f821769727b29a2b106b88a3c27a4", null ],
-    [ "CheckAndReserveSolenoids", "classfrc_1_1PneumaticsControlModule.html#aff106c9fa67f0bb0291339a0711e0997", null ],
-    [ "CheckSolenoidChannel", "classfrc_1_1PneumaticsControlModule.html#a67dd12503e9ba9842b37a166cea9d89b", null ],
-    [ "ClearAllStickyFaults", "classfrc_1_1PneumaticsControlModule.html#af465e2daf9bf72006f55486117d5ef22", null ],
-    [ "FireOneShot", "classfrc_1_1PneumaticsControlModule.html#a14bf3c6437e23765136da7b383d0fd26", null ],
-    [ "GetClosedLoopControl", "classfrc_1_1PneumaticsControlModule.html#aa770d264029313d62625ea95c2547a30", null ],
-    [ "GetCompressor", "classfrc_1_1PneumaticsControlModule.html#a9501a0add6ac69cc4342abb17ef68bc5", null ],
-    [ "GetCompressorCurrent", "classfrc_1_1PneumaticsControlModule.html#aa94abacf7e452d21e8bcd7f11895195b", null ],
-    [ "GetCompressorCurrentTooHighFault", "classfrc_1_1PneumaticsControlModule.html#a835fb4dcff8bb731abb958b8969ec3fb", null ],
-    [ "GetCompressorCurrentTooHighStickyFault", "classfrc_1_1PneumaticsControlModule.html#a697b0c43db7bc1854f716b325359a9b6", null ],
-    [ "GetCompressorNotConnectedFault", "classfrc_1_1PneumaticsControlModule.html#a20d8d0ce0daf281068cce82e381e14f9", null ],
-    [ "GetCompressorNotConnectedStickyFault", "classfrc_1_1PneumaticsControlModule.html#abbef1d4ef4b2cb969175c679be43969f", null ],
-    [ "GetCompressorShortedFault", "classfrc_1_1PneumaticsControlModule.html#af1d7bab5757bca48551c9db30efcdc43", null ],
-    [ "GetCompressorShortedStickyFault", "classfrc_1_1PneumaticsControlModule.html#a546dd30fa6d168a5d5e215fdc8d79dc9", null ],
-    [ "GetModuleNumber", "classfrc_1_1PneumaticsControlModule.html#a6960fa8d5f358f78e4ce77997166adf6", null ],
-    [ "GetPressureSwitch", "classfrc_1_1PneumaticsControlModule.html#acc7b7f8173f742893c97447ff57418a2", null ],
-    [ "GetSolenoidDisabledList", "classfrc_1_1PneumaticsControlModule.html#a039f2c403abfcf14f41d9ba0a4826415", null ],
-    [ "GetSolenoids", "classfrc_1_1PneumaticsControlModule.html#ab6b23c1c20d3c1f9bac79e46afe3262a", null ],
-    [ "GetSolenoidVoltageFault", "classfrc_1_1PneumaticsControlModule.html#a93f91a6ca2c1657e5b090bed1499dac8", null ],
-    [ "GetSolenoidVoltageStickyFault", "classfrc_1_1PneumaticsControlModule.html#ab1663d65c62343a4bbb5ca40b574a935", null ],
-    [ "InitSendable", "classfrc_1_1PneumaticsControlModule.html#a37664c79ddf0ff0feb5ce7a387263ae9", null ],
-    [ "SetClosedLoopControl", "classfrc_1_1PneumaticsControlModule.html#a2dfdc809bde333699a220c284f273813", null ],
-    [ "SetOneShotDuration", "classfrc_1_1PneumaticsControlModule.html#adfd89a2e0cfba6527ba39acc1dd87302", null ],
-    [ "SetSolenoids", "classfrc_1_1PneumaticsControlModule.html#aaf56a0ad3683ad5a65df4ce44deff83a", null ],
-    [ "UnreserveSolenoids", "classfrc_1_1PneumaticsControlModule.html#a3d9d39bf7400e779de8802a56d888c0a", null ]
+    [ "InitSendable", "classfrc_1_1PneumaticsControlModule.html#a37664c79ddf0ff0feb5ce7a387263ae9", null ]
 ];

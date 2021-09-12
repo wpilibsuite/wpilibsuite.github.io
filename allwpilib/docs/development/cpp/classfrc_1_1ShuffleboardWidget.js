@@ -1,7 +1,6 @@
 var classfrc_1_1ShuffleboardWidget =
 [
-    [ "ShuffleboardWidget", "classfrc_1_1ShuffleboardWidget.html#a04814af656327dc23189ee3d204f3e81", null ],
-    [ "WithWidget", "classfrc_1_1ShuffleboardWidget.html#a66111ebec3f0251b390b21cbdbc42f32", null ],
-    [ "WithWidget", "classfrc_1_1ShuffleboardWidget.html#ab78be6213a4a5b08d2bb0624bc51eda8", null ],
-    [ "WithWidget", "classfrc_1_1ShuffleboardWidget.html#af0a482782f7e52b1daa11d60ae7f7cde", null ]
+    [ "WithWidget", "classfrc_1_1ShuffleboardWidget.html#a16502e7504e78429cd955f596ef6ad47", null ],
+    [ "WithWidget", "classfrc_1_1ShuffleboardWidget.html#a3133939b570fcb91fcfe2b2bebe36ca1", null ],
+    [ "WithWidget", "classfrc_1_1ShuffleboardWidget.html#af5c675b3f8fcba017a7681631e0d9882", null ]
 ];

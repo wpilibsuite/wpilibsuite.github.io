@@ -8,7 +8,7 @@ var classfrc_1_1sim_1_1SimDeviceSim =
     [ "GetBoolean", "classfrc_1_1sim_1_1SimDeviceSim.html#a97619ca047f1e1f0ab1d4d40b9704ceb", null ],
     [ "GetDouble", "classfrc_1_1sim_1_1SimDeviceSim.html#a9e5472335ba75fdebf3fcfbbf057807e", null ],
     [ "GetEnum", "classfrc_1_1sim_1_1SimDeviceSim.html#a36890a9316d06926396e5fca3533ea62", null ],
-    [ "GetEnumOptions", "classfrc_1_1sim_1_1SimDeviceSim.html#ab2ee494d961140157fddb1fc4d3a4b1c", null ],
+    [ "GetEnumOptions", "classfrc_1_1sim_1_1SimDeviceSim.html#a1856fefe55fed85df1b7360342de94a4", null ],
     [ "GetInt", "classfrc_1_1sim_1_1SimDeviceSim.html#a0a27eebfe3e1bc419ead2d8b086a0e96", null ],
     [ "GetLong", "classfrc_1_1sim_1_1SimDeviceSim.html#aa050c996a5b79ee76bd1c7229ce582b2", null ],
     [ "GetValue", "classfrc_1_1sim_1_1SimDeviceSim.html#aff4befa701db1ab1a842b67615162baf", null ],

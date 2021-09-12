@@ -1,10 +1,9 @@
 var classwpi_1_1WebSocketServerHelper =
 [
     [ "WebSocketServerHelper", "classwpi_1_1WebSocketServerHelper.html#a0d589909a11f4074ef0c3ca1500e471e", null ],
-    [ "Accept", "classwpi_1_1WebSocketServerHelper.html#a56d483d5df327ba37cc29cbfb4fe7cf3", null ],
-    [ "IsUpgrade", "classwpi_1_1WebSocketServerHelper.html#ad56aa07e47599910ef87e405aa74ea3e", null ],
+    [ "Accept", "classwpi_1_1WebSocketServerHelper.html#a37b38fe280e4508f7aff9b3078574bd4", null ],
     [ "IsWebsocket", "classwpi_1_1WebSocketServerHelper.html#a665d4e09f2780ae54a33d6e2057e9be2", null ],
-    [ "MatchProtocol", "classwpi_1_1WebSocketServerHelper.html#a51b648529d3c063ae2c878cf4945f1ef", null ],
-    [ "MatchProtocol", "classwpi_1_1WebSocketServerHelper.html#aefc5d43858f6c00b33748310204c2db5", null ],
+    [ "MatchProtocol", "classwpi_1_1WebSocketServerHelper.html#a79f37efec51013f64bb96bc20c57dbd3", null ],
+    [ "MatchProtocol", "classwpi_1_1WebSocketServerHelper.html#aa906d8958653789a61047ca76f20056c", null ],
     [ "upgrade", "classwpi_1_1WebSocketServerHelper.html#a025a9715a7bfb52043a282b116e60e52", null ]
 ];

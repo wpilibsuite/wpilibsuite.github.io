@@ -6,8 +6,8 @@ var group__ntcore__logger__cfunc =
     [ "NT_CancelPollLogger", "group__ntcore__logger__cfunc.html#gab43666f384d6e2a149f93e18e3402cbb", null ],
     [ "NT_CreateLoggerPoller", "group__ntcore__logger__cfunc.html#gab73de0e404687276b238f4a028606a49", null ],
     [ "NT_DestroyLoggerPoller", "group__ntcore__logger__cfunc.html#ga52f5816a793c4327333f6aebfbf541ba", null ],
-    [ "NT_PollLogger", "group__ntcore__logger__cfunc.html#ga01ae637d780a30b7e491fe0f1ab367de", null ],
-    [ "NT_PollLoggerTimeout", "group__ntcore__logger__cfunc.html#ga0d59625cf5b269e5690dcc2ff7197ac7", null ],
+    [ "NT_PollLogger", "group__ntcore__logger__cfunc.html#ga2159876879ab57462a026faabf0f3372", null ],
+    [ "NT_PollLoggerTimeout", "group__ntcore__logger__cfunc.html#ga182f51cc8196a89fce36dd2565814aef", null ],
     [ "NT_RemoveLogger", "group__ntcore__logger__cfunc.html#gaaaf0d1c5efd341c80fb2ced526b53adf", null ],
     [ "NT_WaitForLoggerQueue", "group__ntcore__logger__cfunc.html#gabe1855920ae23107016f7c8b9917a6c0", null ]
 ];

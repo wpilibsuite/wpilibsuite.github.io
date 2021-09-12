@@ -74,6 +74,5 @@ var classnt_1_1NetworkTableEntry =
     [ "SetString", "classnt_1_1NetworkTableEntry.html#a518a90dd9aca358fb8f8bfff709c4132", null ],
     [ "SetStringArray", "classnt_1_1NetworkTableEntry.html#ac23374d6cd453233ed2e6731427ef0a1", null ],
     [ "SetStringArray", "classnt_1_1NetworkTableEntry.html#a48fc4f1132a902e64cfb8fd119727615", null ],
-    [ "SetValue", "classnt_1_1NetworkTableEntry.html#a724c000a87563b6ddaa421cca4290f63", null ],
-    [ "m_handle", "classnt_1_1NetworkTableEntry.html#aa572f030d9cbd67bbdf320d0c0be807f", null ]
+    [ "SetValue", "classnt_1_1NetworkTableEntry.html#a724c000a87563b6ddaa421cca4290f63", null ]
 ];

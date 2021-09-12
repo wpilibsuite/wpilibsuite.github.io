@@ -8,8 +8,8 @@ var classfrc_1_1Transform2d =
     [ "operator*", "classfrc_1_1Transform2d.html#addd8e78df9632f6b74301ea798aac22c", null ],
     [ "operator+", "classfrc_1_1Transform2d.html#ade4943169fbbc538c2cdf23c5cc8cfac", null ],
     [ "operator==", "classfrc_1_1Transform2d.html#ac3b3aa856dd66518d58400a97fdb0570", null ],
-    [ "Rotation", "classfrc_1_1Transform2d.html#a717846c2ddae29c633df61104d7c28b5", null ],
-    [ "Translation", "classfrc_1_1Transform2d.html#ae45d559b585bd06f450b0dcc624e666d", null ],
+    [ "Rotation", "classfrc_1_1Transform2d.html#a0f1c9df01d08bdf6b3a8504e7891b474", null ],
+    [ "Translation", "classfrc_1_1Transform2d.html#acc40b3955bd8a9a0e377cc74faf12d57", null ],
     [ "X", "classfrc_1_1Transform2d.html#af47c250046801c97283e65436a2f1f99", null ],
     [ "Y", "classfrc_1_1Transform2d.html#abeda522b613f95f2d6a5f1451ca2f801", null ]
 ];

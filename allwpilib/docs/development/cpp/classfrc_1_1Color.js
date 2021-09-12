@@ -1,10 +1,7 @@
 var classfrc_1_1Color =
 [
-    [ "Color", "classfrc_1_1Color.html#a24089a998315ee2405cf7903a6eaf091", null ],
     [ "Color", "classfrc_1_1Color.html#a3f3ec4679fae082def6223159d3cecf8", null ],
     [ "FromHSV", "classfrc_1_1Color.html#a40b1bce5f8bfe492a05a53ef1bb00e45", null ],
-    [ "blue", "classfrc_1_1Color.html#a6a854a122a16594ccc9040e25503170b", null ],
-    [ "green", "classfrc_1_1Color.html#a15b96eac9f0faaf19041c5310e6ac09d", null ],
     [ "kAliceBlue", "classfrc_1_1Color.html#a18dad0d21fe3b7b4bc42d5ac28288149", null ],
     [ "kAntiqueWhite", "classfrc_1_1Color.html#a3c898b9dd99300497698fe316ab78564", null ],
     [ "kAqua", "classfrc_1_1Color.html#ad7e48596b338b87c2a866b601833a773", null ],
@@ -147,6 +144,5 @@ var classfrc_1_1Color =
     [ "kWhite", "classfrc_1_1Color.html#ab10d1508b55d3537d82e8d9c98256876", null ],
     [ "kWhiteSmoke", "classfrc_1_1Color.html#af6ba165959832d505eba67741ed18992", null ],
     [ "kYellow", "classfrc_1_1Color.html#add60f6046faa81ae83c9ee96b7585589", null ],
-    [ "kYellowGreen", "classfrc_1_1Color.html#a0147bb5c141a9f87d792cb523464ddec", null ],
-    [ "red", "classfrc_1_1Color.html#a6290b5dcd4c34a0f6a43b2e3372dc31a", null ]
+    [ "kYellowGreen", "classfrc_1_1Color.html#a0147bb5c141a9f87d792cb523464ddec", null ]
 ];

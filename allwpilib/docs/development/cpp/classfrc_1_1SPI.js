@@ -1,15 +1,6 @@
 var classfrc_1_1SPI =
 [
-    [ "Port", "classfrc_1_1SPI.html#ad5a4b71c1c453570e8b23d489e15fc03", [
-      [ "kOnboardCS0", "classfrc_1_1SPI.html#ad5a4b71c1c453570e8b23d489e15fc03a4ac014e03bb4ddbe11166bdfcd546321", null ],
-      [ "kOnboardCS1", "classfrc_1_1SPI.html#ad5a4b71c1c453570e8b23d489e15fc03a1ae02875949f6f4228c6e24c8c81d714", null ],
-      [ "kOnboardCS2", "classfrc_1_1SPI.html#ad5a4b71c1c453570e8b23d489e15fc03a0ee6bed8203c27706362f5e3bca0a623", null ],
-      [ "kOnboardCS3", "classfrc_1_1SPI.html#ad5a4b71c1c453570e8b23d489e15fc03a5da24aa07b80bcf54bb81f42df9f9990", null ],
-      [ "kMXP", "classfrc_1_1SPI.html#ad5a4b71c1c453570e8b23d489e15fc03a9d8be8ebdbc8ea8279da408640bf216e", null ]
-    ] ],
     [ "SPI", "classfrc_1_1SPI.html#a584d5d8c0aa471413e933164c69b4c60", null ],
-    [ "~SPI", "classfrc_1_1SPI.html#ade227dccb960c0ba23a6e34532e33415", null ],
-    [ "SPI", "classfrc_1_1SPI.html#aa2817c775463cc19be7aaa12a4f6cc96", null ],
     [ "ConfigureAutoStall", "classfrc_1_1SPI.html#afed70a1e9bbc2f355c759623cad415f9", null ],
     [ "ForceAutoRead", "classfrc_1_1SPI.html#a45a82d68cd8f7a0523a95a01566ef626", null ],
     [ "FreeAccumulator", "classfrc_1_1SPI.html#a50f17234e771c6eb5d154972237cb1e1", null ],
@@ -22,11 +13,9 @@ var classfrc_1_1SPI =
     [ "GetAccumulatorOutput", "classfrc_1_1SPI.html#af29b8a57f73536ce03f1e9f68623f332", null ],
     [ "GetAccumulatorValue", "classfrc_1_1SPI.html#ad75723cb2e4d98b60979295a2e2aaaf4", null ],
     [ "GetAutoDroppedCount", "classfrc_1_1SPI.html#aeb4b59232167132f9b2ca13eb5d497b6", null ],
-    [ "GetPort", "classfrc_1_1SPI.html#a7617b06086fc6b86ca87873a25326581", null ],
     [ "InitAccumulator", "classfrc_1_1SPI.html#aa071c1d8e6c6c9995db38dd9c1dd03b4", null ],
     [ "InitAccumulator", "classfrc_1_1SPI.html#af2bda94cf34d6e5905efa5d54c726510", null ],
     [ "InitAuto", "classfrc_1_1SPI.html#ade47943406f4534df47293166dd2dae6", null ],
-    [ "operator=", "classfrc_1_1SPI.html#aac108a7fc3f77fc32402a3fc831067bd", null ],
     [ "Read", "classfrc_1_1SPI.html#a2e0c839fc5c3a24b236e3e0d5cb2e01d", null ],
     [ "ReadAutoReceivedData", "classfrc_1_1SPI.html#ae108111a963f8730bf3e77a5f72b3907", null ],
     [ "ResetAccumulator", "classfrc_1_1SPI.html#a5f3c8d773e8e3bdae420ca14b29dc6e4", null ],
@@ -50,9 +39,5 @@ var classfrc_1_1SPI =
     [ "StartAutoTrigger", "classfrc_1_1SPI.html#ae4cc2d423113bc64d1cb9f8b0cce3f52", null ],
     [ "StopAuto", "classfrc_1_1SPI.html#a24b13f7560a76642a2cb312041421423", null ],
     [ "Transaction", "classfrc_1_1SPI.html#a901a0fc2729722899b1d099e09b9795f", null ],
-    [ "Write", "classfrc_1_1SPI.html#ace18201bd33d2a624fa476c75e06cc08", null ],
-    [ "m_clockIdleHigh", "classfrc_1_1SPI.html#a3bc45eeb309686cee22a8f2c2a64f4b4", null ],
-    [ "m_msbFirst", "classfrc_1_1SPI.html#a8c929d9c35610d128efd52ee1fa7b587", null ],
-    [ "m_port", "classfrc_1_1SPI.html#abd07a4e13cc08e18815b0878ef4f52dc", null ],
-    [ "m_sampleOnTrailing", "classfrc_1_1SPI.html#acf98bc487b9bae08ebd5b9319c2fded3", null ]
+    [ "Write", "classfrc_1_1SPI.html#ace18201bd33d2a624fa476c75e06cc08", null ]
 ];

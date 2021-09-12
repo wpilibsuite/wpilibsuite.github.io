@@ -1,43 +1,11 @@
 var group__hal__driverstation =
 [
-    [ "HAL_ControlWord", "structHAL__ControlWord.html", [
-      [ "autonomous", "structHAL__ControlWord.html#a4a273dcb5f45cda0a11e4ce588d038b6", null ],
-      [ "control_reserved", "structHAL__ControlWord.html#aa5146867026c3bc59f2805818df7fa5b", null ],
-      [ "dsAttached", "structHAL__ControlWord.html#a14079d1fc217fef5ad140d2404a76999", null ],
-      [ "enabled", "structHAL__ControlWord.html#a06e6392394544a408e752435488bd354", null ],
-      [ "eStop", "structHAL__ControlWord.html#a30ca7c15a8ac6cc3c32290f03f95eda2", null ],
-      [ "fmsAttached", "structHAL__ControlWord.html#aa7bceb7e1043daf93f3d0bd303738246", null ],
-      [ "test", "structHAL__ControlWord.html#a9b255b89bcc7e8424ca3e10f90fd80c4", null ]
-    ] ],
-    [ "HAL_JoystickAxes", "structHAL__JoystickAxes.html", [
-      [ "axes", "structHAL__JoystickAxes.html#ae17b86ab52dea8557afcde52a10af779", null ],
-      [ "count", "structHAL__JoystickAxes.html#ac0601f26133aad58e9ef4dadf146de6d", null ]
-    ] ],
-    [ "HAL_JoystickPOVs", "structHAL__JoystickPOVs.html", [
-      [ "count", "structHAL__JoystickPOVs.html#a72965ba8cbcd5aad88057d326c1879ba", null ],
-      [ "povs", "structHAL__JoystickPOVs.html#adc41b7cdd2e3dd216f919c7659e42d1e", null ]
-    ] ],
-    [ "HAL_JoystickButtons", "structHAL__JoystickButtons.html", [
-      [ "buttons", "structHAL__JoystickButtons.html#a38ec62e88472f4c7918af189d4043cd4", null ],
-      [ "count", "structHAL__JoystickButtons.html#ad2aeabb6cc9c523c765132c1749e82fd", null ]
-    ] ],
-    [ "HAL_JoystickDescriptor", "structHAL__JoystickDescriptor.html", [
-      [ "axisCount", "structHAL__JoystickDescriptor.html#a62e581da1088320d7a96e3ca402c86f0", null ],
-      [ "axisTypes", "structHAL__JoystickDescriptor.html#a45192fc1fc352d02822cacd9f15bdc21", null ],
-      [ "buttonCount", "structHAL__JoystickDescriptor.html#a99849a0f6e37c8c119f1d911384c5d2e", null ],
-      [ "isXbox", "structHAL__JoystickDescriptor.html#afc9f2c48582c93f9569c641da3d14802", null ],
-      [ "name", "structHAL__JoystickDescriptor.html#a76ad44b8f42ab4487fcd0ad29cb3552a", null ],
-      [ "povCount", "structHAL__JoystickDescriptor.html#a1f06f84bae0b1781aa239419432911e0", null ],
-      [ "type", "structHAL__JoystickDescriptor.html#a15fc9338bfe07981f2fc19424b229223", null ]
-    ] ],
-    [ "HAL_MatchInfo", "structHAL__MatchInfo.html", [
-      [ "eventName", "structHAL__MatchInfo.html#a5dc3c78c6fb994cfd6c6b2af23e17411", null ],
-      [ "gameSpecificMessage", "structHAL__MatchInfo.html#a3dbf012b7751ad8c60dadb8d56535266", null ],
-      [ "gameSpecificMessageSize", "structHAL__MatchInfo.html#a30af18172023d942abbba136df00a3c1", null ],
-      [ "matchNumber", "structHAL__MatchInfo.html#a6c7a7828a352d1597a975cc5ddcd7e85", null ],
-      [ "matchType", "structHAL__MatchInfo.html#ac3865133373b573e8826a3bc15fa7de6", null ],
-      [ "replayNumber", "structHAL__MatchInfo.html#af51a5019e4855d652c759b1462fa9ad6", null ]
-    ] ],
+    [ "HAL_ControlWord", "structHAL__ControlWord.html", null ],
+    [ "HAL_JoystickAxes", "structHAL__JoystickAxes.html", null ],
+    [ "HAL_JoystickPOVs", "structHAL__JoystickPOVs.html", null ],
+    [ "HAL_JoystickButtons", "structHAL__JoystickButtons.html", null ],
+    [ "HAL_JoystickDescriptor", "structHAL__JoystickDescriptor.html", null ],
+    [ "HAL_MatchInfo", "structHAL__MatchInfo.html", null ],
     [ "HAL_FreeJoystickName", "group__hal__driverstation.html#ga90161d733fb0dc23b514c438ebc57706", null ],
     [ "HAL_GetAllianceStation", "group__hal__driverstation.html#ga10e5c8ea5a1b890126167e9d352e9e0a", null ],
     [ "HAL_GetControlWord", "group__hal__driverstation.html#ga4eea37e55b0d07dd9e2490004bab5ed4", null ],
@@ -46,7 +14,7 @@ var group__hal__driverstation =
     [ "HAL_GetJoystickButtons", "group__hal__driverstation.html#ga7b599cd8d6b568304e86ab35d8e48c24", null ],
     [ "HAL_GetJoystickDescriptor", "group__hal__driverstation.html#ga724c32729cbe5a7f61407be2547eb811", null ],
     [ "HAL_GetJoystickIsXbox", "group__hal__driverstation.html#gaaf27b87cae4d0e24f033acadd35875f4", null ],
-    [ "HAL_GetJoystickName", "group__hal__driverstation.html#ga5eabdb6903512828d7e00bff9c50e3bb", null ],
+    [ "HAL_GetJoystickName", "group__hal__driverstation.html#ga7b7f9ea326fc113ee99a66e67887010b", null ],
     [ "HAL_GetJoystickPOVs", "group__hal__driverstation.html#ga803d78b2f8eafa4ed110379de40fd90f", null ],
     [ "HAL_GetJoystickType", "group__hal__driverstation.html#gae7bc0e73dbfe813600b03ace2065ff6c", null ],
     [ "HAL_GetMatchInfo", "group__hal__driverstation.html#gab232af731f21e411c3fddb457011799e", null ],
