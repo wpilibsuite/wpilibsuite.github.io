@@ -42,6 +42,7 @@ var group__hal__capi =
     [ "HAL_GetLastError", "group__hal__capi.html#ga2ea598e34dbff1801813f053a0296127", null ],
     [ "HAL_GetPort", "group__hal__capi.html#ga1a4017232c3d7f86712544dfdd9d5dca", null ],
     [ "HAL_GetPortWithModule", "group__hal__capi.html#gae581c7334cf37b57b6b12d3e9113ab74", null ],
+    [ "HAL_GetRuntimeType", "group__hal__capi.html#ga8ffc0f5069623bdac62037716ba23156", null ],
     [ "HAL_GetSystemActive", "group__hal__capi.html#ga5aaf51b826034ad48b05e02e3736b687", null ],
     [ "HAL_Initialize", "group__hal__capi.html#gad72b2804c3cb301e53d90f0e61f2137f", null ],
     [ "HAL_Shutdown", "group__hal__capi.html#gafccf269a24459a444068863528a7c963", null ],

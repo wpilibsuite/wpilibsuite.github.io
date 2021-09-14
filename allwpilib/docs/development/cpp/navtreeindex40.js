@@ -1,5 +1,9 @@
 var NAVTREEINDEX40 =
 {
+"group__ntcore__utility__cfunc.html#ga318f92316feef67a743ae1a5a0aa1c3c":[3,1,7,13],
+"group__ntcore__utility__cfunc.html#ga450a48403c69d964e8e2ab1152b02925":[3,1,7,12],
+"group__ntcore__utility__cfunc.html#ga540661ffa87f4823209688cd5581f896":[3,1,7,0],
+"group__ntcore__utility__cfunc.html#ga5416499ba52778f1d9ac97bdff80bb34":[3,1,7,2],
 "group__ntcore__utility__cfunc.html#ga54b3029e8c81551f1f69bf7d03ebbbb1":[3,1,7,3],
 "group__ntcore__utility__cfunc.html#ga560d63022a5d123bb7d3739a9ce80403":[3,1,7,11],
 "group__ntcore__utility__cfunc.html#ga61fc33bc14ee480cfcd318f04aebfac6":[3,1,7,10],
@@ -231,10 +235,10 @@ var NAVTREEINDEX40 =
 "structcustom__value.html":[5,0,53],
 "structdata.html":[5,0,54],
 "structdefault__arg__formatter.html":[5,0,55],
-"structdetail_1_1accumulator.html":[5,0,1,1],
 "structdetail_1_1accumulator.html":[4,0,1,1],
-"structdetail_1_1bits.html":[4,0,1,3],
+"structdetail_1_1accumulator.html":[5,0,1,1],
 "structdetail_1_1bits.html":[5,0,1,3],
+"structdetail_1_1bits.html":[4,0,1,3],
 "structdetail_1_1boundaries.html":[4,0,1,4],
 "structdetail_1_1boundaries.html":[5,0,1,4],
 "structdetail_1_1conditional__helper.html":[4,0,1,6],
@@ -245,9 +249,5 @@ var NAVTREEINDEX40 =
 "structdetail_1_1counting__iterator_1_1value__type.html":[4,0,1,8,0],
 "structdetail_1_1dragonbox_1_1cache__accessor.html":[5,0,1,0,0],
 "structdetail_1_1dragonbox_1_1cache__accessor.html":[4,0,1,0,0],
-"structdetail_1_1dragonbox_1_1cache__accessor_3_01double_01_4.html":[4,0,1,0,1],
-"structdetail_1_1dragonbox_1_1cache__accessor_3_01double_01_4.html":[5,0,1,0,1],
-"structdetail_1_1dragonbox_1_1cache__accessor_3_01float_01_4.html":[5,0,1,0,2],
-"structdetail_1_1dragonbox_1_1cache__accessor_3_01float_01_4.html":[4,0,1,0,2],
-"structdetail_1_1dragonbox_1_1divtest__table__entry.html":[4,0,1,0,3]
+"structdetail_1_1dragonbox_1_1cache__accessor_3_01double_01_4.html":[5,0,1,0,1]
 };

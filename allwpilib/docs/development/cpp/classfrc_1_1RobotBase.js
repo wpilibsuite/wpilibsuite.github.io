@@ -1,6 +1,7 @@
 var classfrc_1_1RobotBase =
 [
     [ "RobotBase", "classfrc_1_1RobotBase.html#a1da594bfb434873d127c55c1f4117004", null ],
+    [ "GetRuntimeType", "classfrc_1_1RobotBase.html#abd85d1b2ba146df890185e3372f90df2", null ],
     [ "GetThreadId", "classfrc_1_1RobotBase.html#a8f20ff1baf57e7adf720c641ed1f576c", null ],
     [ "IsAutonomous", "classfrc_1_1RobotBase.html#ae5e2a210367c7237ff41ec65c4ea35b4", null ],
     [ "IsAutonomousEnabled", "classfrc_1_1RobotBase.html#aad77f461c170076a2f2f5477f1d62354", null ],
