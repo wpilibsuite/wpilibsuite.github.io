@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.0.0-alpha-2-81-g40c7645</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.0.0-alpha-2-83-g0d4f08a</span>
    </div>
   </td>
  </tr>
@@ -713,7 +713,7 @@ $(document).ready(function(){initNavTree('filesystem_8hpp_source.html',''); init
 <div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span>GHC_FS_API <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> path&amp; lhs, <span class="keyword">const</span> path&amp; rhs) <span class="keyword">noexcept</span>;</div>
 <div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>GHC_FS_API <span class="keywordtype">bool</span> operator!=(<span class="keyword">const</span> path&amp; lhs, <span class="keyword">const</span> path&amp; rhs) <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>GHC_FS_API <span class="keywordtype">bool</span> operator&lt;(<span class="keyword">const</span> path&amp; lhs, <span class="keyword">const</span> path&amp; rhs) <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>GHC_FS_API <span class="keywordtype">bool</span> <a class="code hl_function" href="namespacewpi_1_1detail.html#ae0ba1341aee62171fc05eed5b2d973f2">operator&lt;</a>(<span class="keyword">const</span> path&amp; lhs, <span class="keyword">const</span> path&amp; rhs) <span class="keyword">noexcept</span>;</div>
 <div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>GHC_FS_API <span class="keywordtype">bool</span> operator&lt;=(<span class="keyword">const</span> path&amp; lhs, <span class="keyword">const</span> path&amp; rhs) <span class="keyword">noexcept</span>;</div>
 <div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>GHC_FS_API <span class="keywordtype">bool</span> operator&gt;(<span class="keyword">const</span> path&amp; lhs, <span class="keyword">const</span> path&amp; rhs) <span class="keyword">noexcept</span>;</div>
 <div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>GHC_FS_API <span class="keywordtype">bool</span> operator&gt;=(<span class="keyword">const</span> path&amp; lhs, <span class="keyword">const</span> path&amp; rhs) <span class="keyword">noexcept</span>;</div>
@@ -3479,7 +3479,7 @@ $(document).ready(function(){initNavTree('filesystem_8hpp_source.html',''); init
 <div class="line"><a id="l03386" name="l03386"></a><span class="lineno"> 3386</span>    <span class="keywordflow">return</span> !(lhs == rhs);</div>
 <div class="line"><a id="l03387" name="l03387"></a><span class="lineno"> 3387</span>}</div>
 <div class="line"><a id="l03388" name="l03388"></a><span class="lineno"> 3388</span> </div>
-<div class="line"><a id="l03389" name="l03389"></a><span class="lineno"> 3389</span>GHC_INLINE <span class="keywordtype">bool</span> operator&lt;(<span class="keyword">const</span> path&amp; lhs, <span class="keyword">const</span> path&amp; rhs) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l03389" name="l03389"></a><span class="lineno"> 3389</span>GHC_INLINE <span class="keywordtype">bool</span> <a class="code hl_function" href="namespacewpi_1_1detail.html#ae0ba1341aee62171fc05eed5b2d973f2">operator&lt;</a>(<span class="keyword">const</span> path&amp; lhs, <span class="keyword">const</span> path&amp; rhs) <span class="keyword">noexcept</span></div>
 <div class="line"><a id="l03390" name="l03390"></a><span class="lineno"> 3390</span>{</div>
 <div class="line"><a id="l03391" name="l03391"></a><span class="lineno"> 3391</span>    <span class="keywordflow">return</span> lhs.compare(rhs) &lt; 0;</div>
 <div class="line"><a id="l03392" name="l03392"></a><span class="lineno"> 3392</span>}</div>
@@ -6053,6 +6053,7 @@ $(document).ready(function(){initNavTree('filesystem_8hpp_source.html',''); init
 <div class="ttc" id="aclassghc_1_1filesystem_1_1recursive__directory__iterator_html"><div class="ttname"><a href="classghc_1_1filesystem_1_1recursive__directory__iterator.html">ghc::filesystem::recursive_directory_iterator</a></div><div class="ttdef"><b>Definition:</b> filesystem.hpp:971</div></div>
 <div class="ttc" id="aclassghc_1_1filesystem_1_1u8arguments_html"><div class="ttname"><a href="classghc_1_1filesystem_1_1u8arguments.html">ghc::filesystem::u8arguments</a></div><div class="ttdef"><b>Definition:</b> filesystem.hpp:1250</div></div>
 <div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1120</div></div>
+<div class="ttc" id="anamespacewpi_1_1detail_html_ae0ba1341aee62171fc05eed5b2d973f2"><div class="ttname"><a href="namespacewpi_1_1detail.html#ae0ba1341aee62171fc05eed5b2d973f2">wpi::detail::operator&lt;</a></div><div class="ttdeci">bool operator&lt;(const value_t lhs, const value_t rhs) noexcept</div><div class="ttdoc">comparison operator for JSON types</div><div class="ttdef"><b>Definition:</b> json.h:725</div></div>
 <div class="ttc" id="astructghc_1_1filesystem_1_1space__info_html"><div class="ttname"><a href="structghc_1_1filesystem_1_1space__info.html">ghc::filesystem::space_info</a></div><div class="ttdef"><b>Definition:</b> filesystem.hpp:698</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -6060,7 +6061,7 @@ $(document).ready(function(){initNavTree('filesystem_8hpp_source.html',''); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><a class="el" href="dir_1e83498808adc8ad9629ea2e4946666a.html">ghc</a></li><li class="navelem"><b>filesystem.hpp</b></li>
-    <li class="footer">Generated on Thu Sep 16 2021 04:38:45 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Thu Sep 16 2021 16:35:29 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

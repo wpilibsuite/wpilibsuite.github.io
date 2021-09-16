@@ -46,7 +46,7 @@ var searchData=
   ['logging_20functions_43',['Logging Functions',['../group__cscore__logging__cfunc.html',1,'(Global Namespace)'],['../group__cscore__logging__func.html',1,'(Global Namespace)']]],
   ['loglevel_44',['LogLevel',['../classnt_1_1NetworkTableInstance.html#a88dfe5b82924f347c572cdada2707150',1,'nt::NetworkTableInstance']]],
   ['logmessage_45',['LogMessage',['../classnt_1_1LogMessage.html',1,'nt']]],
-  ['lookup_46',['lookup',['../classwpi_1_1StringMap.html#a23d970e8c58667f3810a714a3f03df83',1,'wpi::StringMap::lookup()'],['../classwpi_1_1DenseMapBase.html#aa7b535e6773c800e3e257618fda8e57f',1,'wpi::DenseMapBase::lookup()']]],
+  ['lookup_46',['lookup',['../classwpi_1_1DenseMapBase.html#aa7b535e6773c800e3e257618fda8e57f',1,'wpi::DenseMapBase::lookup()'],['../classwpi_1_1StringMap.html#a23d970e8c58667f3810a714a3f03df83',1,'wpi::StringMap::lookup()']]],
   ['lookupbucketfor_47',['LookupBucketFor',['../classwpi_1_1StringMapImpl.html#a7c5bea908ffaeaf17711b1c3864e8c8a',1,'wpi::StringMapImpl']]],
   ['loop_48',['Loop',['../classwpi_1_1uv_1_1Loop.html',1,'wpi::uv']]]
 ];

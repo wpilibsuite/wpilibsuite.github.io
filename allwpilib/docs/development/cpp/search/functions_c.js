@@ -13,6 +13,6 @@ var searchData=
   ['loadentries_10',['LoadEntries',['../classnt_1_1NetworkTableInstance.html#a2e719996c8a6ebd3793cf6e65dfef372',1,'nt::NetworkTableInstance::LoadEntries()'],['../classnt_1_1NetworkTable.html#ab50c9f3d0678bb4013508ebd39907f39',1,'nt::NetworkTable::LoadEntries()'],['../group__ntcore__file__func.html#ga252af9a49f87c33bd0351b8da60c1176',1,'nt::LoadEntries()']]],
   ['loadpersistent_11',['LoadPersistent',['../classnt_1_1NetworkTableInstance.html#ad2a2954180fd0f4567a4da0530d12450',1,'nt::NetworkTableInstance::LoadPersistent()'],['../group__ntcore__file__func.html#gab1fe20b0b7372e4a79075cf5d783ffdb',1,'nt::LoadPersistent()']]],
   ['log_12',['Log',['../classfrc_1_1Pose2d.html#a230f05ea41c4fa44ff24622638aa20c7',1,'frc::Pose2d']]],
-  ['lookup_13',['lookup',['../classwpi_1_1StringMap.html#a23d970e8c58667f3810a714a3f03df83',1,'wpi::StringMap::lookup()'],['../classwpi_1_1DenseMapBase.html#aa7b535e6773c800e3e257618fda8e57f',1,'wpi::DenseMapBase::lookup()']]],
+  ['lookup_13',['lookup',['../classwpi_1_1DenseMapBase.html#aa7b535e6773c800e3e257618fda8e57f',1,'wpi::DenseMapBase::lookup()'],['../classwpi_1_1StringMap.html#a23d970e8c58667f3810a714a3f03df83',1,'wpi::StringMap::lookup()']]],
   ['lookupbucketfor_14',['LookupBucketFor',['../classwpi_1_1StringMapImpl.html#a7c5bea908ffaeaf17711b1c3864e8c8a',1,'wpi::StringMapImpl']]]
 ];
