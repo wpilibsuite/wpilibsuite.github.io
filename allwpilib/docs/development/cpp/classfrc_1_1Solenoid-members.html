@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.0.0-alpha-2-83-g0d4f08a</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.0.0-alpha-2-85-g60ede67</span>
    </div>
   </td>
  </tr>
@@ -113,20 +113,19 @@ $(document).ready(function(){initNavTree('classfrc_1_1Solenoid.html',''); initRe
   <tr class="odd"><td class="entry"><a class="el" href="classwpi_1_1SendableHelper.html#ab2953192a91f457768c3d879599ee924">SetName</a>(std::string_view moduleType, int moduleNumber, int channel)</td><td class="entry"><a class="el" href="classwpi_1_1SendableHelper.html">wpi::SendableHelper&lt; Solenoid &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1Solenoid.html#a1f65b6d1b6fe29af2982073ccc7499c0">SetPulseDuration</a>(units::second_t duration)</td><td class="entry"><a class="el" href="classfrc_1_1Solenoid.html">frc::Solenoid</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classwpi_1_1SendableHelper.html#a11434f29c9ef91c9975969fb88212482">SetSubsystem</a>(std::string_view subsystem)</td><td class="entry"><a class="el" href="classwpi_1_1SendableHelper.html">wpi::SendableHelper&lt; Solenoid &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>Solenoid</b>(PneumaticsBase &amp;module, int channel) (defined in <a class="el" href="classfrc_1_1Solenoid.html">frc::Solenoid</a>)</td><td class="entry"><a class="el" href="classfrc_1_1Solenoid.html">frc::Solenoid</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>Solenoid</b>(PneumaticsBase *module, int channel) (defined in <a class="el" href="classfrc_1_1Solenoid.html">frc::Solenoid</a>)</td><td class="entry"><a class="el" href="classfrc_1_1Solenoid.html">frc::Solenoid</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>Solenoid</b>(std::shared_ptr&lt; PneumaticsBase &gt; module, int channel) (defined in <a class="el" href="classfrc_1_1Solenoid.html">frc::Solenoid</a>)</td><td class="entry"><a class="el" href="classfrc_1_1Solenoid.html">frc::Solenoid</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>Solenoid</b>(Solenoid &amp;&amp;)=default (defined in <a class="el" href="classfrc_1_1Solenoid.html">frc::Solenoid</a>)</td><td class="entry"><a class="el" href="classfrc_1_1Solenoid.html">frc::Solenoid</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1Solenoid.html#a60b4342d9bddc7bf5745918622a08290">StartPulse</a>()</td><td class="entry"><a class="el" href="classfrc_1_1Solenoid.html">frc::Solenoid</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classfrc_1_1Solenoid.html#a0825354d6291aeb0a89f9b33d75a8a24">Toggle</a>()</td><td class="entry"><a class="el" href="classfrc_1_1Solenoid.html">frc::Solenoid</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>~Sendable</b>()=default (defined in <a class="el" href="classwpi_1_1Sendable.html">wpi::Sendable</a>)</td><td class="entry"><a class="el" href="classwpi_1_1Sendable.html">wpi::Sendable</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>~Solenoid</b>() override (defined in <a class="el" href="classfrc_1_1Solenoid.html">frc::Solenoid</a>)</td><td class="entry"><a class="el" href="classfrc_1_1Solenoid.html">frc::Solenoid</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1Solenoid.html#ab1b5a4867367886cd0d29cc0a6819187">Solenoid</a>(int module, PneumaticsModuleType moduleType, int channel)</td><td class="entry"><a class="el" href="classfrc_1_1Solenoid.html">frc::Solenoid</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classfrc_1_1Solenoid.html#a2f4004b909846d0e4ddb982fd9aedfb6">Solenoid</a>(PneumaticsModuleType moduleType, int channel)</td><td class="entry"><a class="el" href="classfrc_1_1Solenoid.html">frc::Solenoid</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>Solenoid</b>(Solenoid &amp;&amp;)=default (defined in <a class="el" href="classfrc_1_1Solenoid.html">frc::Solenoid</a>)</td><td class="entry"><a class="el" href="classfrc_1_1Solenoid.html">frc::Solenoid</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classfrc_1_1Solenoid.html#a60b4342d9bddc7bf5745918622a08290">StartPulse</a>()</td><td class="entry"><a class="el" href="classfrc_1_1Solenoid.html">frc::Solenoid</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classfrc_1_1Solenoid.html#a0825354d6291aeb0a89f9b33d75a8a24">Toggle</a>()</td><td class="entry"><a class="el" href="classfrc_1_1Solenoid.html">frc::Solenoid</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>~Sendable</b>()=default (defined in <a class="el" href="classwpi_1_1Sendable.html">wpi::Sendable</a>)</td><td class="entry"><a class="el" href="classwpi_1_1Sendable.html">wpi::Sendable</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>~Solenoid</b>() override (defined in <a class="el" href="classfrc_1_1Solenoid.html">frc::Solenoid</a>)</td><td class="entry"><a class="el" href="classfrc_1_1Solenoid.html">frc::Solenoid</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Sep 16 2021 16:35:31 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Sep 17 2021 01:52:28 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

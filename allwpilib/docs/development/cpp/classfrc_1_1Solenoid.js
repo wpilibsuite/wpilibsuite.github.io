@@ -1,5 +1,7 @@
 var classfrc_1_1Solenoid =
 [
+    [ "Solenoid", "classfrc_1_1Solenoid.html#ab1b5a4867367886cd0d29cc0a6819187", null ],
+    [ "Solenoid", "classfrc_1_1Solenoid.html#a2f4004b909846d0e4ddb982fd9aedfb6", null ],
     [ "Get", "classfrc_1_1Solenoid.html#aabf7b34baf6fda4f6f87f79d62c20f66", null ],
     [ "GetChannel", "classfrc_1_1Solenoid.html#a955bc01fb6844349295b0cce5555527f", null ],
     [ "InitSendable", "classfrc_1_1Solenoid.html#a8e613bd951dac05fdb9c7e435eb96108", null ],

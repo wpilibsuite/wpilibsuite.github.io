@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.0.0-alpha-2-83-g0d4f08a</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.0.0-alpha-2-85-g60ede67</span>
    </div>
   </td>
  </tr>
@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('classfrc_1_1Solenoid.html',''); initRe
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="classfrc_1_1Solenoid.html" title="Solenoid class for running high voltage Digital Output (PCM).">Solenoid</a> class for running high voltage Digital Output (PCM).  
+<p><a class="el" href="classfrc_1_1Solenoid.html" title="Solenoid class for running high voltage Digital Output on a pneumatics module.">Solenoid</a> class for running high voltage Digital Output on a pneumatics module.  
  <a href="classfrc_1_1Solenoid.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="Solenoid_8h_source.html">frc/Solenoid.h</a>&gt;</code></p>
@@ -115,15 +115,12 @@ Inheritance diagram for frc::Solenoid:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4d3ab0a50505de46f11db82e2fb6da77"><td class="memItemLeft" align="right" valign="top"><a id="a4d3ab0a50505de46f11db82e2fb6da77" name="a4d3ab0a50505de46f11db82e2fb6da77"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Solenoid</b> (<a class="el" href="classfrc_1_1PneumaticsBase.html">PneumaticsBase</a> &amp;module, int channel)</td></tr>
-<tr class="separator:a4d3ab0a50505de46f11db82e2fb6da77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af621d2aa566764cc9bcc596ed761fac6"><td class="memItemLeft" align="right" valign="top"><a id="af621d2aa566764cc9bcc596ed761fac6" name="af621d2aa566764cc9bcc596ed761fac6"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Solenoid</b> (<a class="el" href="classfrc_1_1PneumaticsBase.html">PneumaticsBase</a> *module, int channel)</td></tr>
-<tr class="separator:af621d2aa566764cc9bcc596ed761fac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a234e6eaf1d710f51df6406ac0107a18d"><td class="memItemLeft" align="right" valign="top"><a id="a234e6eaf1d710f51df6406ac0107a18d" name="a234e6eaf1d710f51df6406ac0107a18d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Solenoid</b> (std::shared_ptr&lt; <a class="el" href="classfrc_1_1PneumaticsBase.html">PneumaticsBase</a> &gt; module, int channel)</td></tr>
-<tr class="separator:a234e6eaf1d710f51df6406ac0107a18d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1b5a4867367886cd0d29cc0a6819187"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Solenoid.html#ab1b5a4867367886cd0d29cc0a6819187">Solenoid</a> (int module, PneumaticsModuleType moduleType, int channel)</td></tr>
+<tr class="memdesc:ab1b5a4867367886cd0d29cc0a6819187"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a solenoid for a specified module and type.  <a href="classfrc_1_1Solenoid.html#ab1b5a4867367886cd0d29cc0a6819187">More...</a><br /></td></tr>
+<tr class="separator:ab1b5a4867367886cd0d29cc0a6819187"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f4004b909846d0e4ddb982fd9aedfb6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1Solenoid.html#a2f4004b909846d0e4ddb982fd9aedfb6">Solenoid</a> (PneumaticsModuleType moduleType, int channel)</td></tr>
+<tr class="memdesc:a2f4004b909846d0e4ddb982fd9aedfb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a solenoid for a default module and specified type.  <a href="classfrc_1_1Solenoid.html#a2f4004b909846d0e4ddb982fd9aedfb6">More...</a><br /></td></tr>
+<tr class="separator:a2f4004b909846d0e4ddb982fd9aedfb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2de33f14859ab5a2824baadc27c22c6a"><td class="memItemLeft" align="right" valign="top"><a id="a2de33f14859ab5a2824baadc27c22c6a" name="a2de33f14859ab5a2824baadc27c22c6a"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Solenoid</b> (<a class="el" href="classfrc_1_1Solenoid.html">Solenoid</a> &amp;&amp;)=default</td></tr>
 <tr class="separator:a2de33f14859ab5a2824baadc27c22c6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -201,9 +198,91 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a3e272258586ef98d2c1b8f6be76a1663 inherit pro_methods_classwpi_1_1SendableHelper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p ><a class="el" href="classfrc_1_1Solenoid.html" title="Solenoid class for running high voltage Digital Output (PCM).">Solenoid</a> class for running high voltage Digital Output (PCM). </p>
-<p >The <a class="el" href="classfrc_1_1Solenoid.html" title="Solenoid class for running high voltage Digital Output (PCM).">Solenoid</a> class is typically used for pneumatics solenoids, but could be used for any device within the current spec of the PCM. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<div class="textblock"><p ><a class="el" href="classfrc_1_1Solenoid.html" title="Solenoid class for running high voltage Digital Output on a pneumatics module.">Solenoid</a> class for running high voltage Digital Output on a pneumatics module. </p>
+<p >The <a class="el" href="classfrc_1_1Solenoid.html" title="Solenoid class for running high voltage Digital Output on a pneumatics module.">Solenoid</a> class is typically used for pneumatics solenoids, but could be used for any device within the current spec of the module. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ab1b5a4867367886cd0d29cc0a6819187" name="ab1b5a4867367886cd0d29cc0a6819187"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1b5a4867367886cd0d29cc0a6819187">&#9670;&nbsp;</a></span>Solenoid() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">frc::Solenoid::Solenoid </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>module</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">PneumaticsModuleType&#160;</td>
+          <td class="paramname"><em>moduleType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>channel</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructs a solenoid for a specified module and type. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">module</td><td>The module ID to use. </td></tr>
+    <tr><td class="paramname">moduleType</td><td>The module type to use. </td></tr>
+    <tr><td class="paramname">channel</td><td>The channel the solenoid is on. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2f4004b909846d0e4ddb982fd9aedfb6" name="a2f4004b909846d0e4ddb982fd9aedfb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f4004b909846d0e4ddb982fd9aedfb6">&#9670;&nbsp;</a></span>Solenoid() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">frc::Solenoid::Solenoid </td>
+          <td>(</td>
+          <td class="paramtype">PneumaticsModuleType&#160;</td>
+          <td class="paramname"><em>moduleType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>channel</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructs a solenoid for a default module and specified type. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">moduleType</td><td>The module type to use. </td></tr>
+    <tr><td class="paramname">channel</td><td>The channel the solenoid is on. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="aabf7b34baf6fda4f6f87f79d62c20f66" name="aabf7b34baf6fda4f6f87f79d62c20f66"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aabf7b34baf6fda4f6f87f79d62c20f66">&#9670;&nbsp;</a></span>Get()</h2>
 
@@ -401,7 +480,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1Solenoid.html">Solenoid</a></li>
-    <li class="footer">Generated on Thu Sep 16 2021 16:35:31 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Sep 17 2021 01:52:28 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

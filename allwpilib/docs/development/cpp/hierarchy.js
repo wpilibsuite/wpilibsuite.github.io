@@ -1036,6 +1036,7 @@ var hierarchy =
         [ "frc::WaitForChildren", "classfrc_1_1WaitForChildren.html", null ],
         [ "frc::WaitUntilCommand", "classfrc_1_1WaitUntilCommand.html", null ]
       ] ],
+      [ "frc::Compressor", "classfrc_1_1Compressor.html", null ],
       [ "frc::Counter", "classfrc_1_1Counter.html", null ],
       [ "frc::DifferentialDrive", "classfrc_1_1DifferentialDrive.html", null ],
       [ "frc::DigitalGlitchFilter", "classfrc_1_1DigitalGlitchFilter.html", null ],
@@ -1054,7 +1055,6 @@ var hierarchy =
         [ "frc::Servo", "classfrc_1_1Servo.html", null ]
       ] ],
       [ "frc::PWMMotorController", "classfrc_1_1PWMMotorController.html", null ],
-      [ "frc::PneumaticsControlModule", "classfrc_1_1PneumaticsControlModule.html", null ],
       [ "frc::PowerDistribution", "classfrc_1_1PowerDistribution.html", null ],
       [ "frc::ProfiledPIDController< Distance >", "classfrc_1_1ProfiledPIDController.html", null ],
       [ "frc::Relay", "classfrc_1_1Relay.html", null ],
@@ -1139,6 +1139,9 @@ var hierarchy =
     [ "wpi::SendableHelper< CommandScheduler >", "classwpi_1_1SendableHelper.html", [
       [ "frc2::CommandScheduler", "classfrc2_1_1CommandScheduler.html", null ]
     ] ],
+    [ "wpi::SendableHelper< Compressor >", "classwpi_1_1SendableHelper.html", [
+      [ "frc::Compressor", "classfrc_1_1Compressor.html", null ]
+    ] ],
     [ "wpi::SendableHelper< Counter >", "classwpi_1_1SendableHelper.html", [
       [ "frc::Counter", "classfrc_1_1Counter.html", null ]
     ] ],
@@ -1189,9 +1192,6 @@ var hierarchy =
     ] ],
     [ "wpi::SendableHelper< PIDController >", "classwpi_1_1SendableHelper.html", [
       [ "frc2::PIDController", "classfrc2_1_1PIDController.html", null ]
-    ] ],
-    [ "wpi::SendableHelper< PneumaticsControlModule >", "classwpi_1_1SendableHelper.html", [
-      [ "frc::PneumaticsControlModule", "classfrc_1_1PneumaticsControlModule.html", null ]
     ] ],
     [ "wpi::SendableHelper< PowerDistribution >", "classwpi_1_1SendableHelper.html", [
       [ "frc::PowerDistribution", "classfrc_1_1PowerDistribution.html", null ]

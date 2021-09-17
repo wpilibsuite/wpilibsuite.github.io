@@ -1,5 +1,7 @@
 var classfrc_1_1DoubleSolenoid =
 [
+    [ "DoubleSolenoid", "classfrc_1_1DoubleSolenoid.html#ab7f1c7cb3cf187178799c9127efd8ed7", null ],
+    [ "DoubleSolenoid", "classfrc_1_1DoubleSolenoid.html#a4843c9c07b4c0ab955136269960bef2f", null ],
     [ "Get", "classfrc_1_1DoubleSolenoid.html#aa5743c88d07c37e5137ccbde13e53f43", null ],
     [ "GetFwdChannel", "classfrc_1_1DoubleSolenoid.html#ab3c04f238871212ccbb4e5310876cb52", null ],
     [ "GetRevChannel", "classfrc_1_1DoubleSolenoid.html#aed301265eb12da821fcbf904b3c31452", null ],

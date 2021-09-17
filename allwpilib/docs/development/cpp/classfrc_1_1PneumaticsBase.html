@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.0.0-alpha-2-83-g0d4f08a</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.0.0-alpha-2-85-g60ede67</span>
    </div>
   </td>
  </tr>
@@ -93,6 +93,7 @@ $(document).ready(function(){initNavTree('classfrc_1_1PneumaticsBase.html',''); 
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classfrc_1_1PneumaticsBase-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">frc::PneumaticsBase Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
@@ -109,6 +110,21 @@ Inheritance diagram for frc::PneumaticsBase:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ae7ef8d78b0df4e32d58871c42d45495f"><td class="memItemLeft" align="right" valign="top"><a id="ae7ef8d78b0df4e32d58871c42d45495f" name="ae7ef8d78b0df4e32d58871c42d45495f"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetCompressor</b> () const =0</td></tr>
+<tr class="separator:ae7ef8d78b0df4e32d58871c42d45495f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2a09a4dbdee2797cd66fd2b28e95d2c"><td class="memItemLeft" align="right" valign="top"><a id="af2a09a4dbdee2797cd66fd2b28e95d2c" name="af2a09a4dbdee2797cd66fd2b28e95d2c"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetPressureSwitch</b> () const =0</td></tr>
+<tr class="separator:af2a09a4dbdee2797cd66fd2b28e95d2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3be738bd8d81296d11eaa2a1c0f3be3"><td class="memItemLeft" align="right" valign="top"><a id="ad3be738bd8d81296d11eaa2a1c0f3be3" name="ad3be738bd8d81296d11eaa2a1c0f3be3"></a>
+virtual double&#160;</td><td class="memItemRight" valign="bottom"><b>GetCompressorCurrent</b> () const =0</td></tr>
+<tr class="separator:ad3be738bd8d81296d11eaa2a1c0f3be3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdd186887338e1253f8bcce0283b2e8a"><td class="memItemLeft" align="right" valign="top"><a id="acdd186887338e1253f8bcce0283b2e8a" name="acdd186887338e1253f8bcce0283b2e8a"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetClosedLoopControl</b> (bool on)=0</td></tr>
+<tr class="separator:acdd186887338e1253f8bcce0283b2e8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0644cfbffd43d75fe995c72af4952cc"><td class="memItemLeft" align="right" valign="top"><a id="ad0644cfbffd43d75fe995c72af4952cc" name="ad0644cfbffd43d75fe995c72af4952cc"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetClosedLoopControl</b> () const =0</td></tr>
+<tr class="separator:ad0644cfbffd43d75fe995c72af4952cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b5fdac79320553254cabc15118e1298"><td class="memItemLeft" align="right" valign="top"><a id="a0b5fdac79320553254cabc15118e1298" name="a0b5fdac79320553254cabc15118e1298"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSolenoids</b> (int mask, int values)=0</td></tr>
 <tr class="separator:a0b5fdac79320553254cabc15118e1298"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -136,6 +152,30 @@ virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>CheckAndReserv
 <tr class="memitem:a8c095dfe8120c1a1e08abba7d0d863d5"><td class="memItemLeft" align="right" valign="top"><a id="a8c095dfe8120c1a1e08abba7d0d863d5" name="a8c095dfe8120c1a1e08abba7d0d863d5"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>UnreserveSolenoids</b> (int mask)=0</td></tr>
 <tr class="separator:a8c095dfe8120c1a1e08abba7d0d863d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6b84ef772e5313bd67178616f257b08"><td class="memItemLeft" align="right" valign="top"><a id="ac6b84ef772e5313bd67178616f257b08" name="ac6b84ef772e5313bd67178616f257b08"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>ReserveCompressor</b> ()=0</td></tr>
+<tr class="separator:ac6b84ef772e5313bd67178616f257b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f31953cb4f841ffb3a2c7458587ad8d"><td class="memItemLeft" align="right" valign="top"><a id="a6f31953cb4f841ffb3a2c7458587ad8d" name="a6f31953cb4f841ffb3a2c7458587ad8d"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>UnreserveCompressor</b> ()=0</td></tr>
+<tr class="separator:a6f31953cb4f841ffb3a2c7458587ad8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a133fe2675cd72936a6f59dc2fa4803b0"><td class="memItemLeft" align="right" valign="top"><a id="a133fe2675cd72936a6f59dc2fa4803b0" name="a133fe2675cd72936a6f59dc2fa4803b0"></a>
+virtual <a class="el" href="classfrc_1_1Solenoid.html">Solenoid</a>&#160;</td><td class="memItemRight" valign="bottom"><b>MakeSolenoid</b> (int channel)=0</td></tr>
+<tr class="separator:a133fe2675cd72936a6f59dc2fa4803b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04d30e25a22b0520683f3399f9550dd0"><td class="memItemLeft" align="right" valign="top"><a id="a04d30e25a22b0520683f3399f9550dd0" name="a04d30e25a22b0520683f3399f9550dd0"></a>
+virtual <a class="el" href="classfrc_1_1DoubleSolenoid.html">DoubleSolenoid</a>&#160;</td><td class="memItemRight" valign="bottom"><b>MakeDoubleSolenoid</b> (int forwardChannel, int reverseChannel)=0</td></tr>
+<tr class="separator:a04d30e25a22b0520683f3399f9550dd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b0da19a21229f4773cd6896b93e14f9"><td class="memItemLeft" align="right" valign="top"><a id="a5b0da19a21229f4773cd6896b93e14f9" name="a5b0da19a21229f4773cd6896b93e14f9"></a>
+virtual <a class="el" href="classfrc_1_1Compressor.html">Compressor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>MakeCompressor</b> ()=0</td></tr>
+<tr class="separator:a5b0da19a21229f4773cd6896b93e14f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a26e6de07746aec386608010ce0fe324d"><td class="memItemLeft" align="right" valign="top"><a id="a26e6de07746aec386608010ce0fe324d" name="a26e6de07746aec386608010ce0fe324d"></a>
+static std::shared_ptr&lt; <a class="el" href="classfrc_1_1PneumaticsBase.html">PneumaticsBase</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetForType</b> (int module, PneumaticsModuleType moduleType)</td></tr>
+<tr class="separator:a26e6de07746aec386608010ce0fe324d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cea877694232acecab5f4d1a195263c"><td class="memItemLeft" align="right" valign="top"><a id="a6cea877694232acecab5f4d1a195263c" name="a6cea877694232acecab5f4d1a195263c"></a>
+static int&#160;</td><td class="memItemRight" valign="bottom"><b>GetDefaultForType</b> (PneumaticsModuleType moduleType)</td></tr>
+<tr class="separator:a6cea877694232acecab5f4d1a195263c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>frc/<a class="el" href="PneumaticsBase_8h_source.html">PneumaticsBase.h</a></li>
@@ -146,7 +186,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>UnreserveSole
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1PneumaticsBase.html">PneumaticsBase</a></li>
-    <li class="footer">Generated on Thu Sep 16 2021 16:35:30 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Sep 17 2021 01:52:28 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
