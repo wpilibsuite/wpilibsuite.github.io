@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.0.0-alpha-2-89-g161e211</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.0.0-alpha-2-93-g5c88685</span>
    </div>
   </td>
  </tr>
@@ -101,24 +101,24 @@ $(document).ready(function(){initNavTree('structfrc_1_1KalmanFilterLatencyCompen
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a96b64dd217aa9be578ff9e75249edc14"><td class="memItemLeft" align="right" valign="top"><a id="a96b64dd217aa9be578ff9e75249edc14" name="a96b64dd217aa9be578ff9e75249edc14"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ObserverSnapshot</b> (const KalmanFilterType &amp;observer, const Eigen::Matrix&lt; double, Inputs, 1 &gt; &amp;u, const Eigen::Matrix&lt; double, Outputs, 1 &gt; &amp;localY)</td></tr>
-<tr class="separator:a96b64dd217aa9be578ff9e75249edc14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0936b0f556ea5a4987d643558434e497"><td class="memItemLeft" align="right" valign="top"><a id="a0936b0f556ea5a4987d643558434e497" name="a0936b0f556ea5a4987d643558434e497"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ObserverSnapshot</b> (const KalmanFilterType &amp;observer, const Eigen::Vector&lt; double, Inputs &gt; &amp;u, const Eigen::Vector&lt; double, Outputs &gt; &amp;localY)</td></tr>
+<tr class="separator:a0936b0f556ea5a4987d643558434e497"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a0ed7161ff9a4afeddfe12fdeefa5fc89"><td class="memItemLeft" align="right" valign="top"><a id="a0ed7161ff9a4afeddfe12fdeefa5fc89" name="a0ed7161ff9a4afeddfe12fdeefa5fc89"></a>
-Eigen::Matrix&lt; double, States, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>xHat</b></td></tr>
-<tr class="separator:a0ed7161ff9a4afeddfe12fdeefa5fc89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33a0e2fecb2eb2d073998674e03f11f7"><td class="memItemLeft" align="right" valign="top"><a id="a33a0e2fecb2eb2d073998674e03f11f7" name="a33a0e2fecb2eb2d073998674e03f11f7"></a>
+Eigen::Vector&lt; double, States &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>xHat</b></td></tr>
+<tr class="separator:a33a0e2fecb2eb2d073998674e03f11f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab65633f70e5a6237d228485dd6a352aa"><td class="memItemLeft" align="right" valign="top"><a id="ab65633f70e5a6237d228485dd6a352aa" name="ab65633f70e5a6237d228485dd6a352aa"></a>
 Eigen::Matrix&lt; double, States, States &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>errorCovariances</b></td></tr>
 <tr class="separator:ab65633f70e5a6237d228485dd6a352aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af97a2fa7d9e411cfc82e7341766a4213"><td class="memItemLeft" align="right" valign="top"><a id="af97a2fa7d9e411cfc82e7341766a4213" name="af97a2fa7d9e411cfc82e7341766a4213"></a>
-Eigen::Matrix&lt; double, Inputs, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>inputs</b></td></tr>
-<tr class="separator:af97a2fa7d9e411cfc82e7341766a4213"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab992866efdb6456c1946d8a14fd26cd"><td class="memItemLeft" align="right" valign="top"><a id="aab992866efdb6456c1946d8a14fd26cd" name="aab992866efdb6456c1946d8a14fd26cd"></a>
-Eigen::Matrix&lt; double, Outputs, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>localMeasurements</b></td></tr>
-<tr class="separator:aab992866efdb6456c1946d8a14fd26cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad43ef25a230266161ba32704749f9546"><td class="memItemLeft" align="right" valign="top"><a id="ad43ef25a230266161ba32704749f9546" name="ad43ef25a230266161ba32704749f9546"></a>
+Eigen::Vector&lt; double, Inputs &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>inputs</b></td></tr>
+<tr class="separator:ad43ef25a230266161ba32704749f9546"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90a462bdcdd63add843cddffbd3692ae"><td class="memItemLeft" align="right" valign="top"><a id="a90a462bdcdd63add843cddffbd3692ae" name="a90a462bdcdd63add843cddffbd3692ae"></a>
+Eigen::Vector&lt; double, Outputs &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>localMeasurements</b></td></tr>
+<tr class="separator:a90a462bdcdd63add843cddffbd3692ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>frc/estimator/<a class="el" href="KalmanFilterLatencyCompensator_8h_source.html">KalmanFilterLatencyCompensator.h</a></li>
@@ -129,7 +129,7 @@ Eigen::Matrix&lt; double, Outputs, 1 &gt;&#160;</td><td class="memItemRight" val
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1KalmanFilterLatencyCompensator.html">KalmanFilterLatencyCompensator</a></li><li class="navelem"><a class="el" href="structfrc_1_1KalmanFilterLatencyCompensator_1_1ObserverSnapshot.html">ObserverSnapshot</a></li>
-    <li class="footer">Generated on Fri Sep 17 2021 19:12:58 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Sep 17 2021 19:16:02 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

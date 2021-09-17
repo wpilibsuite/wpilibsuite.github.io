@@ -85,6 +85,7 @@ var dir_1224104d412225b996ab6dfa83431a88 =
     [ "StringExtras.h", "StringExtras_8h_source.html", null ],
     [ "StringMap.h", "StringMap_8h_source.html", null ],
     [ "SwapByteOrder.h", "SwapByteOrder_8h_source.html", null ],
+    [ "SymbolExports.h", "SymbolExports_8h_source.html", null ],
     [ "TCPAcceptor.h", "TCPAcceptor_8h_source.html", null ],
     [ "TCPConnector.h", "TCPConnector_8h_source.html", null ],
     [ "TCPStream.h", "TCPStream_8h_source.html", null ],

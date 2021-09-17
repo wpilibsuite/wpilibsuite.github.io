@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.0.0-alpha-2-89-g161e211</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.0.0-alpha-2-93-g5c88685</span>
    </div>
   </td>
  </tr>
@@ -182,11 +182,11 @@ $(document).ready(function(){initNavTree('SwerveDriveKinematics_8h_source.html',
 <div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span> </div>
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="preprocessor">#include &quot;SwerveDriveKinematics.inc&quot;</span></div>
 <div class="ttc" id="aclassfrc_1_1SwerveDriveKinematics_html"><div class="ttname"><a href="classfrc_1_1SwerveDriveKinematics.html">frc::SwerveDriveKinematics</a></div><div class="ttdoc">Helper class that converts a chassis velocity (dx, dy, and dtheta components) into individual module ...</div><div class="ttdef"><b>Definition:</b> SwerveDriveKinematics.h:44</div></div>
-<div class="ttc" id="aclassfrc_1_1SwerveDriveKinematics_html_a1b8939ecc3902e895b0489b9eec7e78c"><div class="ttname"><a href="classfrc_1_1SwerveDriveKinematics.html#a1b8939ecc3902e895b0489b9eec7e78c">frc::SwerveDriveKinematics::ToChassisSpeeds</a></div><div class="ttdeci">ChassisSpeeds ToChassisSpeeds(ModuleStates &amp;&amp;... wheelStates) const</div><div class="ttdoc">Performs forward kinematics to return the resulting chassis state from the given module states.</div><div class="ttdef"><b>Definition:</b> SwerveDriveKinematics.inc:60</div></div>
-<div class="ttc" id="aclassfrc_1_1SwerveDriveKinematics_html_a672ce4d8bb476e29b67d757f46eb14dc"><div class="ttname"><a href="classfrc_1_1SwerveDriveKinematics.html#a672ce4d8bb476e29b67d757f46eb14dc">frc::SwerveDriveKinematics::NormalizeWheelSpeeds</a></div><div class="ttdeci">static void NormalizeWheelSpeeds(wpi::array&lt; SwerveModuleState, NumModules &gt; *moduleStates, units::meters_per_second_t attainableMaxSpeed)</div><div class="ttdoc">Normalizes the wheel speeds using some max attainable speed.</div><div class="ttdef"><b>Definition:</b> SwerveDriveKinematics.inc:93</div></div>
+<div class="ttc" id="aclassfrc_1_1SwerveDriveKinematics_html_a1b8939ecc3902e895b0489b9eec7e78c"><div class="ttname"><a href="classfrc_1_1SwerveDriveKinematics.html#a1b8939ecc3902e895b0489b9eec7e78c">frc::SwerveDriveKinematics::ToChassisSpeeds</a></div><div class="ttdeci">ChassisSpeeds ToChassisSpeeds(ModuleStates &amp;&amp;... wheelStates) const</div><div class="ttdoc">Performs forward kinematics to return the resulting chassis state from the given module states.</div><div class="ttdef"><b>Definition:</b> SwerveDriveKinematics.inc:59</div></div>
+<div class="ttc" id="aclassfrc_1_1SwerveDriveKinematics_html_a672ce4d8bb476e29b67d757f46eb14dc"><div class="ttname"><a href="classfrc_1_1SwerveDriveKinematics.html#a672ce4d8bb476e29b67d757f46eb14dc">frc::SwerveDriveKinematics::NormalizeWheelSpeeds</a></div><div class="ttdeci">static void NormalizeWheelSpeeds(wpi::array&lt; SwerveModuleState, NumModules &gt; *moduleStates, units::meters_per_second_t attainableMaxSpeed)</div><div class="ttdoc">Normalizes the wheel speeds using some max attainable speed.</div><div class="ttdef"><b>Definition:</b> SwerveDriveKinematics.inc:92</div></div>
 <div class="ttc" id="aclassfrc_1_1SwerveDriveKinematics_html_ab3e7aa018b138375414924e0493b73cd"><div class="ttname"><a href="classfrc_1_1SwerveDriveKinematics.html#ab3e7aa018b138375414924e0493b73cd">frc::SwerveDriveKinematics::SwerveDriveKinematics</a></div><div class="ttdeci">SwerveDriveKinematics(Translation2d wheel, Wheels &amp;&amp;... wheels)</div><div class="ttdoc">Constructs a swerve drive kinematics object.</div><div class="ttdef"><b>Definition:</b> SwerveDriveKinematics.h:58</div></div>
 <div class="ttc" id="aclassfrc_1_1SwerveDriveKinematics_html_ac7815723eede9892d0669a216be0f39d"><div class="ttname"><a href="classfrc_1_1SwerveDriveKinematics.html#ac7815723eede9892d0669a216be0f39d">frc::SwerveDriveKinematics::ToSwerveModuleStates</a></div><div class="ttdeci">wpi::array&lt; SwerveModuleState, NumModules &gt; ToSwerveModuleStates(const ChassisSpeeds &amp;chassisSpeeds, const Translation2d &amp;centerOfRotation=Translation2d()) const</div><div class="ttdoc">Performs inverse kinematics to return the module states from a desired chassis velocity.</div><div class="ttdef"><b>Definition:</b> SwerveDriveKinematics.inc:20</div></div>
-<div class="ttc" id="aclassfrc_1_1Translation2d_html"><div class="ttname"><a href="classfrc_1_1Translation2d.html">frc::Translation2d</a></div><div class="ttdoc">Represents a translation in 2d space.</div><div class="ttdef"><b>Definition:</b> Translation2d.h:24</div></div>
+<div class="ttc" id="aclassfrc_1_1Translation2d_html"><div class="ttname"><a href="classfrc_1_1Translation2d.html">frc::Translation2d</a></div><div class="ttdoc">Represents a translation in 2d space.</div><div class="ttdef"><b>Definition:</b> Translation2d.h:26</div></div>
 <div class="ttc" id="aclasswpi_1_1array_html"><div class="ttname"><a href="classwpi_1_1array.html">wpi::array</a></div><div class="ttdoc">This class is a wrapper around std::array that does compile time size checking.</div><div class="ttdef"><b>Definition:</b> array.h:25</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -194,7 +194,7 @@ $(document).ready(function(){initNavTree('SwerveDriveKinematics_8h_source.html',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_d2a0b1acc90a71e3394af07d8da08800.html">kinematics</a></li><li class="navelem"><b>SwerveDriveKinematics.h</b></li>
-    <li class="footer">Generated on Fri Sep 17 2021 19:12:56 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Sep 17 2021 19:16:00 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

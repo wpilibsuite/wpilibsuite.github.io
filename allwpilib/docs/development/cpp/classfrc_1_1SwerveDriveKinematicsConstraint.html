@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.0.0-alpha-2-89-g161e211</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.0.0-alpha-2-93-g5c88685</span>
    </div>
   </td>
  </tr>
@@ -114,8 +114,8 @@ Inheritance diagram for frc::SwerveDriveKinematicsConstraint&lt; NumModules &gt;
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac50c6a6145879d2241dc8aa0b19ff5e4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SwerveDriveKinematicsConstraint.html#ac50c6a6145879d2241dc8aa0b19ff5e4">SwerveDriveKinematicsConstraint</a> (const <a class="el" href="classfrc_1_1SwerveDriveKinematics.html">frc::SwerveDriveKinematics</a>&lt; NumModules &gt; &amp;kinematics, units::meters_per_second_t maxSpeed)</td></tr>
-<tr class="memdesc:ac50c6a6145879d2241dc8aa0b19ff5e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class that enforces constraints on the swerve drive kinematics.  <a href="classfrc_1_1SwerveDriveKinematicsConstraint.html#ac50c6a6145879d2241dc8aa0b19ff5e4">More...</a><br /></td></tr>
+<tr class="memitem:ac50c6a6145879d2241dc8aa0b19ff5e4"><td class="memItemLeft" align="right" valign="top"><a id="ac50c6a6145879d2241dc8aa0b19ff5e4" name="ac50c6a6145879d2241dc8aa0b19ff5e4"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SwerveDriveKinematicsConstraint</b> (const <a class="el" href="classfrc_1_1SwerveDriveKinematics.html">frc::SwerveDriveKinematics</a>&lt; NumModules &gt; &amp;kinematics, units::meters_per_second_t maxSpeed)</td></tr>
 <tr class="separator:ac50c6a6145879d2241dc8aa0b19ff5e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acccc5dc6fa0c198dc454c04cd16279c3"><td class="memItemLeft" align="right" valign="top">units::meters_per_second_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1SwerveDriveKinematicsConstraint.html#acccc5dc6fa0c198dc454c04cd16279c3">MaxVelocity</a> (const <a class="el" href="classfrc_1_1Pose2d.html">Pose2d</a> &amp;pose, units::curvature_t curvature, units::meters_per_second_t velocity) const override</td></tr>
 <tr class="memdesc:acccc5dc6fa0c198dc454c04cd16279c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the max velocity given the current pose and curvature.  <a href="classfrc_1_1SwerveDriveKinematicsConstraint.html#acccc5dc6fa0c198dc454c04cd16279c3">More...</a><br /></td></tr>
@@ -141,41 +141,7 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><div class="compoundTemplParams">template&lt;size_t NumModules&gt;<br />
 class frc::SwerveDriveKinematicsConstraint&lt; NumModules &gt;</div><p >A class that enforces constraints on the swerve drive kinematics. </p>
 <p >This can be used to ensure that the trajectory is constructed so that the commanded velocities of the wheels stay below a certain limit. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ac50c6a6145879d2241dc8aa0b19ff5e4" name="ac50c6a6145879d2241dc8aa0b19ff5e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac50c6a6145879d2241dc8aa0b19ff5e4">&#9670;&nbsp;</a></span>SwerveDriveKinematicsConstraint()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;size_t NumModules&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classfrc_1_1SwerveDriveKinematicsConstraint.html">frc::SwerveDriveKinematicsConstraint</a>&lt; NumModules &gt;::<a class="el" href="classfrc_1_1SwerveDriveKinematicsConstraint.html">SwerveDriveKinematicsConstraint</a> </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classfrc_1_1SwerveDriveKinematics.html">frc::SwerveDriveKinematics</a>&lt; NumModules &gt; &amp;&#160;</td>
-          <td class="paramname"><em>kinematics</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">units::meters_per_second_t&#160;</td>
-          <td class="paramname"><em>maxSpeed</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>A class that enforces constraints on the swerve drive kinematics. </p>
-<p >This can be used to ensure that the trajectory is constructed so that the commanded velocities of the wheels stay below a certain limit. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="acccc5dc6fa0c198dc454c04cd16279c3" name="acccc5dc6fa0c198dc454c04cd16279c3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acccc5dc6fa0c198dc454c04cd16279c3">&#9670;&nbsp;</a></span>MaxVelocity()</h2>
 
@@ -300,7 +266,7 @@ template&lt;size_t NumModules&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1SwerveDriveKinematicsConstraint.html">SwerveDriveKinematicsConstraint</a></li>
-    <li class="footer">Generated on Fri Sep 17 2021 19:12:58 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Sep 17 2021 19:16:03 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

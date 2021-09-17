@@ -1,6 +1,5 @@
 var NAVTREEINDEX40 =
 {
-"group__ntcore__table__func.html#ga32288247f346760be7d38e005146b0ef":[3,2,1,3],
 "group__ntcore__table__func.html#ga4072d1b4344f0844664021c371c9e3e5":[3,2,1,2],
 "group__ntcore__table__func.html#ga6e0720e30da1c87d3479d4b94bef8138":[3,2,1,10],
 "group__ntcore__table__func.html#ga70a9d991624ff61e0d293d3fbd23fa22":[3,2,1,4],
@@ -82,8 +81,8 @@ var NAVTREEINDEX40 =
 "is__approx__equal__abstol_8h_source.html":[6,0,2,0,4],
 "iterator_8h_source.html":[6,0,11,37],
 "iterator__range_8h.html":[6,0,11,38],
-"iterator__range_8h.html#aacc327c9a551f61642d9a6ef107c4593":[4,0,11,197],
 "iterator__range_8h.html#aacc327c9a551f61642d9a6ef107c4593":[6,0,11,38,1],
+"iterator__range_8h.html#aacc327c9a551f61642d9a6ef107c4593":[4,0,11,197],
 "iterator__range_8h_source.html":[6,0,11,38],
 "jni__util_8h_source.html":[6,0,11,39],
 "json_8h_source.html":[6,0,11,40],
@@ -249,5 +248,6 @@ var NAVTREEINDEX40 =
 "structchar__t__impl.html":[5,0,40],
 "structchar__t__impl_3_01S_00_01enable__if__t_3_01is__string_3_01S_01_4_1_1value_01_4_01_4.html":[5,0,41],
 "structchrono__format__checker.html":[5,0,42],
-"structchrono__formatter.html":[5,0,43]
+"structchrono__formatter.html":[5,0,43],
+"structcolor__type.html":[5,0,44]
 };

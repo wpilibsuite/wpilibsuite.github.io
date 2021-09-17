@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.0.0-alpha-2-89-g161e211</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.0.0-alpha-2-93-g5c88685</span>
    </div>
   </td>
  </tr>
@@ -112,20 +112,20 @@ Public Member Functions</h2></td></tr>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>NumSigmas</b> ()</td></tr>
 <tr class="memdesc:a15c06c71c78144ba7d589bdbdfccf404"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns number of sigma points for each variable in the state x. <br /></td></tr>
 <tr class="separator:a15c06c71c78144ba7d589bdbdfccf404"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a454640e3a8d86a0a7c5110bd0c0508a0"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix&lt; double, States, 2 *States+1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1MerweScaledSigmaPoints.html#a454640e3a8d86a0a7c5110bd0c0508a0">SigmaPoints</a> (const Eigen::Matrix&lt; double, States, 1 &gt; &amp;x, const Eigen::Matrix&lt; double, States, States &gt; &amp;P)</td></tr>
-<tr class="memdesc:a454640e3a8d86a0a7c5110bd0c0508a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the sigma points for an unscented Kalman filter given the mean (x) and covariance(P) of the filter.  <a href="classfrc_1_1MerweScaledSigmaPoints.html#a454640e3a8d86a0a7c5110bd0c0508a0">More...</a><br /></td></tr>
-<tr class="separator:a454640e3a8d86a0a7c5110bd0c0508a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade81a06274059f3432d544db5caf4445"><td class="memItemLeft" align="right" valign="top"><a id="ade81a06274059f3432d544db5caf4445" name="ade81a06274059f3432d544db5caf4445"></a>
-const Eigen::Matrix&lt; double, 2 *States+1, 1 &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>Wm</b> () const</td></tr>
-<tr class="memdesc:ade81a06274059f3432d544db5caf4445"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the weight for each sigma point for the mean. <br /></td></tr>
-<tr class="separator:ade81a06274059f3432d544db5caf4445"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ca0a2d65f0443c01718733781dc6027"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix&lt; double, States, 2 *States+1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1MerweScaledSigmaPoints.html#a3ca0a2d65f0443c01718733781dc6027">SigmaPoints</a> (const Eigen::Vector&lt; double, States &gt; &amp;x, const Eigen::Matrix&lt; double, States, States &gt; &amp;P)</td></tr>
+<tr class="memdesc:a3ca0a2d65f0443c01718733781dc6027"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the sigma points for an unscented Kalman filter given the mean (x) and covariance(P) of the filter.  <a href="classfrc_1_1MerweScaledSigmaPoints.html#a3ca0a2d65f0443c01718733781dc6027">More...</a><br /></td></tr>
+<tr class="separator:a3ca0a2d65f0443c01718733781dc6027"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90ebf79cc56a140b928504b576b0006f"><td class="memItemLeft" align="right" valign="top"><a id="a90ebf79cc56a140b928504b576b0006f" name="a90ebf79cc56a140b928504b576b0006f"></a>
+const Eigen::Vector&lt; double, 2 *States+1 &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>Wm</b> () const</td></tr>
+<tr class="memdesc:a90ebf79cc56a140b928504b576b0006f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the weight for each sigma point for the mean. <br /></td></tr>
+<tr class="separator:a90ebf79cc56a140b928504b576b0006f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e4bd5990975d8d226f92460094ef071"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1MerweScaledSigmaPoints.html#a7e4bd5990975d8d226f92460094ef071">Wm</a> (int i) const</td></tr>
 <tr class="memdesc:a7e4bd5990975d8d226f92460094ef071"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an element of the weight for each sigma point for the mean.  <a href="classfrc_1_1MerweScaledSigmaPoints.html#a7e4bd5990975d8d226f92460094ef071">More...</a><br /></td></tr>
 <tr class="separator:a7e4bd5990975d8d226f92460094ef071"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a523e6f734bf9aa63c27528046810c70f"><td class="memItemLeft" align="right" valign="top"><a id="a523e6f734bf9aa63c27528046810c70f" name="a523e6f734bf9aa63c27528046810c70f"></a>
-const Eigen::Matrix&lt; double, 2 *States+1, 1 &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>Wc</b> () const</td></tr>
-<tr class="memdesc:a523e6f734bf9aa63c27528046810c70f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the weight for each sigma point for the covariance. <br /></td></tr>
-<tr class="separator:a523e6f734bf9aa63c27528046810c70f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a9c07099095aa4558c0adfa94d22e4c"><td class="memItemLeft" align="right" valign="top"><a id="a2a9c07099095aa4558c0adfa94d22e4c" name="a2a9c07099095aa4558c0adfa94d22e4c"></a>
+const Eigen::Vector&lt; double, 2 *States+1 &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>Wc</b> () const</td></tr>
+<tr class="memdesc:a2a9c07099095aa4558c0adfa94d22e4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the weight for each sigma point for the covariance. <br /></td></tr>
+<tr class="separator:a2a9c07099095aa4558c0adfa94d22e4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a539ed39d0c09683d022e072796696cf0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1MerweScaledSigmaPoints.html#a539ed39d0c09683d022e072796696cf0">Wc</a> (int i) const</td></tr>
 <tr class="memdesc:a539ed39d0c09683d022e072796696cf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an element of the weight for each sigma point for the covariance.  <a href="classfrc_1_1MerweScaledSigmaPoints.html#a539ed39d0c09683d022e072796696cf0">More...</a><br /></td></tr>
 <tr class="separator:a539ed39d0c09683d022e072796696cf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -198,8 +198,8 @@ template&lt;int States&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a454640e3a8d86a0a7c5110bd0c0508a0" name="a454640e3a8d86a0a7c5110bd0c0508a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a454640e3a8d86a0a7c5110bd0c0508a0">&#9670;&nbsp;</a></span>SigmaPoints()</h2>
+<a id="a3ca0a2d65f0443c01718733781dc6027" name="a3ca0a2d65f0443c01718733781dc6027"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ca0a2d65f0443c01718733781dc6027">&#9670;&nbsp;</a></span>SigmaPoints()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -212,7 +212,7 @@ template&lt;int States&gt; </div>
         <tr>
           <td class="memname">Eigen::Matrix&lt; double, States, 2 *States+1 &gt; <a class="el" href="classfrc_1_1MerweScaledSigmaPoints.html">frc::MerweScaledSigmaPoints</a>&lt; States &gt;::SigmaPoints </td>
           <td>(</td>
-          <td class="paramtype">const Eigen::Matrix&lt; double, States, 1 &gt; &amp;&#160;</td>
+          <td class="paramtype">const Eigen::Vector&lt; double, States &gt; &amp;&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
@@ -327,7 +327,7 @@ template&lt;int States&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1MerweScaledSigmaPoints.html">MerweScaledSigmaPoints</a></li>
-    <li class="footer">Generated on Fri Sep 17 2021 19:12:58 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Sep 17 2021 19:16:02 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

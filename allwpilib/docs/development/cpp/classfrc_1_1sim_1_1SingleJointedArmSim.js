@@ -9,7 +9,7 @@ var classfrc_1_1sim_1_1SingleJointedArmSim =
     [ "HasHitLowerLimit", "classfrc_1_1sim_1_1SingleJointedArmSim.html#acc330cff8accec3e3f49cce7f2630d39", null ],
     [ "HasHitUpperLimit", "classfrc_1_1sim_1_1SingleJointedArmSim.html#ab76373eedc02d97dca02cc5017a5abae", null ],
     [ "SetInputVoltage", "classfrc_1_1sim_1_1SingleJointedArmSim.html#af8157c4879cd1a27a2048ea729f6f365", null ],
-    [ "UpdateX", "classfrc_1_1sim_1_1SingleJointedArmSim.html#a780c5c2994d0a16b89d7b0c582d247f6", null ],
+    [ "UpdateX", "classfrc_1_1sim_1_1SingleJointedArmSim.html#a8e8acefe09e951103116c3f937128bb3", null ],
     [ "WouldHitLowerLimit", "classfrc_1_1sim_1_1SingleJointedArmSim.html#a0a809cf9543fc9c601df912cdfd2a13d", null ],
     [ "WouldHitUpperLimit", "classfrc_1_1sim_1_1SingleJointedArmSim.html#abc446d399e9fd57573c731bade2e5ae4", null ]
 ];

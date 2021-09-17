@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.0.0-alpha-2-89-g161e211</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.0.0-alpha-2-93-g5c88685</span>
    </div>
   </td>
  </tr>
@@ -116,14 +116,14 @@ $(document).ready(function(){initNavTree('KalmanFilterLatencyCompensator_8h_sour
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="classfrc_1_1KalmanFilterLatencyCompensator.html">   20</a></span><span class="keyword">class </span><a class="code hl_class" href="classfrc_1_1KalmanFilterLatencyCompensator.html">KalmanFilterLatencyCompensator</a> {</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> <span class="keyword">public</span>:</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="structfrc_1_1KalmanFilterLatencyCompensator_1_1ObserverSnapshot.html">   22</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="structfrc_1_1KalmanFilterLatencyCompensator_1_1ObserverSnapshot.html">ObserverSnapshot</a> {</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    Eigen::Matrix&lt;double, States, 1&gt; xHat;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    Eigen::Vector&lt;double, States&gt; xHat;</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    Eigen::Matrix&lt;double, States, States&gt; errorCovariances;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    Eigen::Matrix&lt;double, Inputs, 1&gt; inputs;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    Eigen::Matrix&lt;double, Outputs, 1&gt; localMeasurements;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    Eigen::Vector&lt;double, Inputs&gt; inputs;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    Eigen::Vector&lt;double, Outputs&gt; localMeasurements;</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <a class="code hl_struct" href="structfrc_1_1KalmanFilterLatencyCompensator_1_1ObserverSnapshot.html">ObserverSnapshot</a>(<span class="keyword">const</span> KalmanFilterType&amp; observer,</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                     <span class="keyword">const</span> Eigen::Matrix&lt;double, Inputs, 1&gt;&amp; u,</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                     <span class="keyword">const</span> Eigen::Matrix&lt;double, Outputs, 1&gt;&amp; localY)</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                     <span class="keyword">const</span> Eigen::Vector&lt;double, Inputs&gt;&amp; u,</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                     <span class="keyword">const</span> Eigen::Vector&lt;double, Outputs&gt;&amp; localY)</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        : xHat(observer.Xhat()),</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>          errorCovariances(observer.P()),</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>          inputs(u),</div>
@@ -132,9 +132,9 @@ $(document).ready(function(){initNavTree('KalmanFilterLatencyCompensator_8h_sour
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classfrc_1_1KalmanFilterLatencyCompensator.html#a2fd858c67952d32c89d6b35f0d241ab1">   40</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1KalmanFilterLatencyCompensator.html#a2fd858c67952d32c89d6b35f0d241ab1">Reset</a>() { m_pastObserverSnapshots.clear(); }</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="classfrc_1_1KalmanFilterLatencyCompensator.html#a15bf928c83978a449fbc78731c4de97b">   50</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1KalmanFilterLatencyCompensator.html#a15bf928c83978a449fbc78731c4de97b">AddObserverState</a>(<span class="keyword">const</span> KalmanFilterType&amp; observer,</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                        Eigen::Matrix&lt;double, Inputs, 1&gt; u,</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                        Eigen::Matrix&lt;double, Outputs, 1&gt; localY,</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="classfrc_1_1KalmanFilterLatencyCompensator.html#afef84fb6a12305d76a60d40550aaa870">   50</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1KalmanFilterLatencyCompensator.html#afef84fb6a12305d76a60d40550aaa870">AddObserverState</a>(<span class="keyword">const</span> KalmanFilterType&amp; observer,</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                        Eigen::Vector&lt;double, Inputs&gt; u,</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                        Eigen::Vector&lt;double, Outputs&gt; localY,</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                        units::second_t timestamp) {</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="comment">// Add the new state into the vector.</span></div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    m_pastObserverSnapshots.emplace_back(timestamp,</div>
@@ -147,11 +147,11 @@ $(document).ready(function(){initNavTree('KalmanFilterLatencyCompensator_8h_sour
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  }</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  <span class="keyword">template</span> &lt;<span class="keywordtype">int</span> Rows&gt;</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="classfrc_1_1KalmanFilterLatencyCompensator.html#a92a3c5d41f1b05c68add95b6d77faec9">   76</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1KalmanFilterLatencyCompensator.html#a92a3c5d41f1b05c68add95b6d77faec9">ApplyPastGlobalMeasurement</a>(</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="classfrc_1_1KalmanFilterLatencyCompensator.html#a5214515852510e16d2195261a784b13c">   76</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1KalmanFilterLatencyCompensator.html#a5214515852510e16d2195261a784b13c">ApplyPastGlobalMeasurement</a>(</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>      KalmanFilterType* observer, units::second_t nominalDt,</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>      Eigen::Matrix&lt;double, Rows, 1&gt; y,</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>      std::function&lt;<span class="keywordtype">void</span>(<span class="keyword">const</span> Eigen::Matrix&lt;double, Inputs, 1&gt;&amp; u,</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                         <span class="keyword">const</span> Eigen::Matrix&lt;double, Rows, 1&gt;&amp; y)&gt;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>      Eigen::Vector&lt;double, Rows&gt; y,</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>      std::function&lt;<span class="keywordtype">void</span>(<span class="keyword">const</span> Eigen::Vector&lt;double, Inputs&gt;&amp; u,</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                         <span class="keyword">const</span> Eigen::Vector&lt;double, Rows&gt;&amp; y)&gt;</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>          globalMeasurementCorrect,</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>      units::second_t timestamp) {</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordflow">if</span> (m_pastObserverSnapshots.size() == 0) {</div>
@@ -223,9 +223,9 @@ $(document).ready(function(){initNavTree('KalmanFilterLatencyCompensator_8h_sour
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>};</div>
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>}  <span class="comment">// namespace frc</span></div>
 <div class="ttc" id="aclassfrc_1_1KalmanFilterLatencyCompensator_html"><div class="ttname"><a href="classfrc_1_1KalmanFilterLatencyCompensator.html">frc::KalmanFilterLatencyCompensator</a></div><div class="ttdef"><b>Definition:</b> KalmanFilterLatencyCompensator.h:20</div></div>
-<div class="ttc" id="aclassfrc_1_1KalmanFilterLatencyCompensator_html_a15bf928c83978a449fbc78731c4de97b"><div class="ttname"><a href="classfrc_1_1KalmanFilterLatencyCompensator.html#a15bf928c83978a449fbc78731c4de97b">frc::KalmanFilterLatencyCompensator::AddObserverState</a></div><div class="ttdeci">void AddObserverState(const KalmanFilterType &amp;observer, Eigen::Matrix&lt; double, Inputs, 1 &gt; u, Eigen::Matrix&lt; double, Outputs, 1 &gt; localY, units::second_t timestamp)</div><div class="ttdoc">Add past observer states to the observer snapshots list.</div><div class="ttdef"><b>Definition:</b> KalmanFilterLatencyCompensator.h:50</div></div>
 <div class="ttc" id="aclassfrc_1_1KalmanFilterLatencyCompensator_html_a2fd858c67952d32c89d6b35f0d241ab1"><div class="ttname"><a href="classfrc_1_1KalmanFilterLatencyCompensator.html#a2fd858c67952d32c89d6b35f0d241ab1">frc::KalmanFilterLatencyCompensator::Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdoc">Clears the observer snapshot buffer.</div><div class="ttdef"><b>Definition:</b> KalmanFilterLatencyCompensator.h:40</div></div>
-<div class="ttc" id="aclassfrc_1_1KalmanFilterLatencyCompensator_html_a92a3c5d41f1b05c68add95b6d77faec9"><div class="ttname"><a href="classfrc_1_1KalmanFilterLatencyCompensator.html#a92a3c5d41f1b05c68add95b6d77faec9">frc::KalmanFilterLatencyCompensator::ApplyPastGlobalMeasurement</a></div><div class="ttdeci">void ApplyPastGlobalMeasurement(KalmanFilterType *observer, units::second_t nominalDt, Eigen::Matrix&lt; double, Rows, 1 &gt; y, std::function&lt; void(const Eigen::Matrix&lt; double, Inputs, 1 &gt; &amp;u, const Eigen::Matrix&lt; double, Rows, 1 &gt; &amp;y)&gt; globalMeasurementCorrect, units::second_t timestamp)</div><div class="ttdoc">Add past global measurements (such as from vision)to the estimator.</div><div class="ttdef"><b>Definition:</b> KalmanFilterLatencyCompensator.h:76</div></div>
+<div class="ttc" id="aclassfrc_1_1KalmanFilterLatencyCompensator_html_a5214515852510e16d2195261a784b13c"><div class="ttname"><a href="classfrc_1_1KalmanFilterLatencyCompensator.html#a5214515852510e16d2195261a784b13c">frc::KalmanFilterLatencyCompensator::ApplyPastGlobalMeasurement</a></div><div class="ttdeci">void ApplyPastGlobalMeasurement(KalmanFilterType *observer, units::second_t nominalDt, Eigen::Vector&lt; double, Rows &gt; y, std::function&lt; void(const Eigen::Vector&lt; double, Inputs &gt; &amp;u, const Eigen::Vector&lt; double, Rows &gt; &amp;y)&gt; globalMeasurementCorrect, units::second_t timestamp)</div><div class="ttdoc">Add past global measurements (such as from vision)to the estimator.</div><div class="ttdef"><b>Definition:</b> KalmanFilterLatencyCompensator.h:76</div></div>
+<div class="ttc" id="aclassfrc_1_1KalmanFilterLatencyCompensator_html_afef84fb6a12305d76a60d40550aaa870"><div class="ttname"><a href="classfrc_1_1KalmanFilterLatencyCompensator.html#afef84fb6a12305d76a60d40550aaa870">frc::KalmanFilterLatencyCompensator::AddObserverState</a></div><div class="ttdeci">void AddObserverState(const KalmanFilterType &amp;observer, Eigen::Vector&lt; double, Inputs &gt; u, Eigen::Vector&lt; double, Outputs &gt; localY, units::second_t timestamp)</div><div class="ttdoc">Add past observer states to the observer snapshots list.</div><div class="ttdef"><b>Definition:</b> KalmanFilterLatencyCompensator.h:50</div></div>
 <div class="ttc" id="astructfrc_1_1KalmanFilterLatencyCompensator_1_1ObserverSnapshot_html"><div class="ttname"><a href="structfrc_1_1KalmanFilterLatencyCompensator_1_1ObserverSnapshot.html">frc::KalmanFilterLatencyCompensator::ObserverSnapshot</a></div><div class="ttdef"><b>Definition:</b> KalmanFilterLatencyCompensator.h:22</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -233,7 +233,7 @@ $(document).ready(function(){initNavTree('KalmanFilterLatencyCompensator_8h_sour
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_7b4a0634315f7993a48b0e5d4ddcc644.html">estimator</a></li><li class="navelem"><b>KalmanFilterLatencyCompensator.h</b></li>
-    <li class="footer">Generated on Fri Sep 17 2021 19:12:56 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Sep 17 2021 19:16:00 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

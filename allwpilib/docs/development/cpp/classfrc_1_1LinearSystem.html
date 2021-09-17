@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.0.0-alpha-2-89-g161e211</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.0.0-alpha-2-93-g5c88685</span>
    </div>
   </td>
  </tr>
@@ -148,12 +148,12 @@ const Eigen::Matrix&lt; double, Outputs, Inputs &gt; &amp;&#160;</td><td class="
 <tr class="memitem:a105ed66d9f877bf8eee27920d35c2936"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1LinearSystem.html#a105ed66d9f877bf8eee27920d35c2936">D</a> (int i, int j) const</td></tr>
 <tr class="memdesc:a105ed66d9f877bf8eee27920d35c2936"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an element of the feedthrough matrix D.  <a href="classfrc_1_1LinearSystem.html#a105ed66d9f877bf8eee27920d35c2936">More...</a><br /></td></tr>
 <tr class="separator:a105ed66d9f877bf8eee27920d35c2936"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67f7a1e8e7dc7cefc709b4583807cd98"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix&lt; double, States, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1LinearSystem.html#a67f7a1e8e7dc7cefc709b4583807cd98">CalculateX</a> (const Eigen::Matrix&lt; double, States, 1 &gt; &amp;x, const Eigen::Matrix&lt; double, Inputs, 1 &gt; &amp;clampedU, units::second_t dt) const</td></tr>
-<tr class="memdesc:a67f7a1e8e7dc7cefc709b4583807cd98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the new x given the old x and the control input.  <a href="classfrc_1_1LinearSystem.html#a67f7a1e8e7dc7cefc709b4583807cd98">More...</a><br /></td></tr>
-<tr class="separator:a67f7a1e8e7dc7cefc709b4583807cd98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc0bcd90c3847a0da8bac67882761800"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix&lt; double, Outputs, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1LinearSystem.html#acc0bcd90c3847a0da8bac67882761800">CalculateY</a> (const Eigen::Matrix&lt; double, States, 1 &gt; &amp;x, const Eigen::Matrix&lt; double, Inputs, 1 &gt; &amp;clampedU) const</td></tr>
-<tr class="memdesc:acc0bcd90c3847a0da8bac67882761800"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the new y given the control input.  <a href="classfrc_1_1LinearSystem.html#acc0bcd90c3847a0da8bac67882761800">More...</a><br /></td></tr>
-<tr class="separator:acc0bcd90c3847a0da8bac67882761800"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae448ba12f562526cb75b9b62ed5ee033"><td class="memItemLeft" align="right" valign="top">Eigen::Vector&lt; double, States &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1LinearSystem.html#ae448ba12f562526cb75b9b62ed5ee033">CalculateX</a> (const Eigen::Vector&lt; double, States &gt; &amp;x, const Eigen::Vector&lt; double, Inputs &gt; &amp;clampedU, units::second_t dt) const</td></tr>
+<tr class="memdesc:ae448ba12f562526cb75b9b62ed5ee033"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the new x given the old x and the control input.  <a href="classfrc_1_1LinearSystem.html#ae448ba12f562526cb75b9b62ed5ee033">More...</a><br /></td></tr>
+<tr class="separator:ae448ba12f562526cb75b9b62ed5ee033"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad39d31b47b2fc715d7a2fe6e51fef373"><td class="memItemLeft" align="right" valign="top">Eigen::Vector&lt; double, Outputs &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1LinearSystem.html#ad39d31b47b2fc715d7a2fe6e51fef373">CalculateY</a> (const Eigen::Vector&lt; double, States &gt; &amp;x, const Eigen::Vector&lt; double, Inputs &gt; &amp;clampedU) const</td></tr>
+<tr class="memdesc:ad39d31b47b2fc715d7a2fe6e51fef373"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the new y given the control input.  <a href="classfrc_1_1LinearSystem.html#ad39d31b47b2fc715d7a2fe6e51fef373">More...</a><br /></td></tr>
+<tr class="separator:ad39d31b47b2fc715d7a2fe6e51fef373"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;int States, int Inputs, int Outputs&gt;<br />
@@ -364,8 +364,8 @@ template&lt;int States, int Inputs, int Outputs&gt; </div>
 
 </div>
 </div>
-<a id="a67f7a1e8e7dc7cefc709b4583807cd98" name="a67f7a1e8e7dc7cefc709b4583807cd98"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a67f7a1e8e7dc7cefc709b4583807cd98">&#9670;&nbsp;</a></span>CalculateX()</h2>
+<a id="ae448ba12f562526cb75b9b62ed5ee033" name="ae448ba12f562526cb75b9b62ed5ee033"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae448ba12f562526cb75b9b62ed5ee033">&#9670;&nbsp;</a></span>CalculateX()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -376,15 +376,15 @@ template&lt;int States, int Inputs, int Outputs&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Eigen::Matrix&lt; double, States, 1 &gt; <a class="el" href="classfrc_1_1LinearSystem.html">frc::LinearSystem</a>&lt; States, Inputs, Outputs &gt;::CalculateX </td>
+          <td class="memname">Eigen::Vector&lt; double, States &gt; <a class="el" href="classfrc_1_1LinearSystem.html">frc::LinearSystem</a>&lt; States, Inputs, Outputs &gt;::CalculateX </td>
           <td>(</td>
-          <td class="paramtype">const Eigen::Matrix&lt; double, States, 1 &gt; &amp;&#160;</td>
+          <td class="paramtype">const Eigen::Vector&lt; double, States &gt; &amp;&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const Eigen::Matrix&lt; double, Inputs, 1 &gt; &amp;&#160;</td>
+          <td class="paramtype">const Eigen::Vector&lt; double, Inputs &gt; &amp;&#160;</td>
           <td class="paramname"><em>clampedU</em>, </td>
         </tr>
         <tr>
@@ -419,8 +419,8 @@ template&lt;int States, int Inputs, int Outputs&gt; </div>
 
 </div>
 </div>
-<a id="acc0bcd90c3847a0da8bac67882761800" name="acc0bcd90c3847a0da8bac67882761800"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc0bcd90c3847a0da8bac67882761800">&#9670;&nbsp;</a></span>CalculateY()</h2>
+<a id="ad39d31b47b2fc715d7a2fe6e51fef373" name="ad39d31b47b2fc715d7a2fe6e51fef373"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad39d31b47b2fc715d7a2fe6e51fef373">&#9670;&nbsp;</a></span>CalculateY()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -431,15 +431,15 @@ template&lt;int States, int Inputs, int Outputs&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Eigen::Matrix&lt; double, Outputs, 1 &gt; <a class="el" href="classfrc_1_1LinearSystem.html">frc::LinearSystem</a>&lt; States, Inputs, Outputs &gt;::CalculateY </td>
+          <td class="memname">Eigen::Vector&lt; double, Outputs &gt; <a class="el" href="classfrc_1_1LinearSystem.html">frc::LinearSystem</a>&lt; States, Inputs, Outputs &gt;::CalculateY </td>
           <td>(</td>
-          <td class="paramtype">const Eigen::Matrix&lt; double, States, 1 &gt; &amp;&#160;</td>
+          <td class="paramtype">const Eigen::Vector&lt; double, States &gt; &amp;&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const Eigen::Matrix&lt; double, Inputs, 1 &gt; &amp;&#160;</td>
+          <td class="paramtype">const Eigen::Vector&lt; double, Inputs &gt; &amp;&#160;</td>
           <td class="paramname"><em>clampedU</em>&#160;</td>
         </tr>
         <tr>
@@ -523,7 +523,7 @@ template&lt;int States, int Inputs, int Outputs&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1LinearSystem.html">LinearSystem</a></li>
-    <li class="footer">Generated on Fri Sep 17 2021 19:12:58 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Sep 17 2021 19:16:02 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
