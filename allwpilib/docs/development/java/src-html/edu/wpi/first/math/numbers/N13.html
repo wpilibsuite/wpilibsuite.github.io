@@ -10,40 +10,37 @@
 <body class="source">
 <main role="main">
 <div class="sourceContainer">
-<pre><span class="sourceLineNo">001</span><a id="line.1">/*----------------------------------------------------------------------------*/</a>
-<span class="sourceLineNo">002</span><a id="line.2">/* Copyright (c) 2019 FIRST. All Rights Reserved.                             */</a>
-<span class="sourceLineNo">003</span><a id="line.3">/* Open Source Software - may be modified and shared by FRC teams. The code   */</a>
-<span class="sourceLineNo">004</span><a id="line.4">/* must be accompanied by the FIRST BSD license file in the root directory of */</a>
-<span class="sourceLineNo">005</span><a id="line.5">/* the project.                                                               */</a>
-<span class="sourceLineNo">006</span><a id="line.6">/*----------------------------------------------------------------------------*/</a>
-<span class="sourceLineNo">007</span><a id="line.7"></a>
-<span class="sourceLineNo">008</span><a id="line.8">package edu.wpi.first.math.numbers;</a>
+<pre><span class="sourceLineNo">001</span><a id="line.1">// Copyright (c) FIRST and other WPILib contributors.</a>
+<span class="sourceLineNo">002</span><a id="line.2">// Open Source Software; you can modify and/or share it under the terms of</a>
+<span class="sourceLineNo">003</span><a id="line.3">// the WPILib BSD license file in the root directory of this project.</a>
+<span class="sourceLineNo">004</span><a id="line.4"></a>
+<span class="sourceLineNo">005</span><a id="line.5">package edu.wpi.first.math.numbers;</a>
+<span class="sourceLineNo">006</span><a id="line.6"></a>
+<span class="sourceLineNo">007</span><a id="line.7">import edu.wpi.first.math.Nat;</a>
+<span class="sourceLineNo">008</span><a id="line.8">import edu.wpi.first.math.Num;</a>
 <span class="sourceLineNo">009</span><a id="line.9"></a>
-<span class="sourceLineNo">010</span><a id="line.10">import edu.wpi.first.math.Nat;</a>
-<span class="sourceLineNo">011</span><a id="line.11">import edu.wpi.first.math.Num;</a>
-<span class="sourceLineNo">012</span><a id="line.12"></a>
-<span class="sourceLineNo">013</span><a id="line.13">/**</a>
-<span class="sourceLineNo">014</span><a id="line.14"> * A class representing the number 13.</a>
-<span class="sourceLineNo">015</span><a id="line.15">*/</a>
-<span class="sourceLineNo">016</span><a id="line.16">public final class N13 extends Num implements Nat&lt;N13&gt; {</a>
-<span class="sourceLineNo">017</span><a id="line.17">  private N13() {</a>
-<span class="sourceLineNo">018</span><a id="line.18">  }</a>
-<span class="sourceLineNo">019</span><a id="line.19"></a>
-<span class="sourceLineNo">020</span><a id="line.20">  /**</a>
-<span class="sourceLineNo">021</span><a id="line.21">   * The integer this class represents.</a>
-<span class="sourceLineNo">022</span><a id="line.22">   *</a>
-<span class="sourceLineNo">023</span><a id="line.23">   * @return The literal number 13.</a>
-<span class="sourceLineNo">024</span><a id="line.24">  */</a>
-<span class="sourceLineNo">025</span><a id="line.25">  @Override</a>
-<span class="sourceLineNo">026</span><a id="line.26">  public int getNum() {</a>
-<span class="sourceLineNo">027</span><a id="line.27">    return 13;</a>
-<span class="sourceLineNo">028</span><a id="line.28">  }</a>
-<span class="sourceLineNo">029</span><a id="line.29"></a>
-<span class="sourceLineNo">030</span><a id="line.30">  /**</a>
-<span class="sourceLineNo">031</span><a id="line.31">   * The singleton instance of this class.</a>
-<span class="sourceLineNo">032</span><a id="line.32">  */</a>
-<span class="sourceLineNo">033</span><a id="line.33">  public static final N13 instance = new N13();</a>
-<span class="sourceLineNo">034</span><a id="line.34">}</a>
+<span class="sourceLineNo">010</span><a id="line.10">/**</a>
+<span class="sourceLineNo">011</span><a id="line.11"> * A class representing the number 13.</a>
+<span class="sourceLineNo">012</span><a id="line.12">*/</a>
+<span class="sourceLineNo">013</span><a id="line.13">public final class N13 extends Num implements Nat&lt;N13&gt; {</a>
+<span class="sourceLineNo">014</span><a id="line.14">  private N13() {</a>
+<span class="sourceLineNo">015</span><a id="line.15">  }</a>
+<span class="sourceLineNo">016</span><a id="line.16"></a>
+<span class="sourceLineNo">017</span><a id="line.17">  /**</a>
+<span class="sourceLineNo">018</span><a id="line.18">   * The integer this class represents.</a>
+<span class="sourceLineNo">019</span><a id="line.19">   *</a>
+<span class="sourceLineNo">020</span><a id="line.20">   * @return The literal number 13.</a>
+<span class="sourceLineNo">021</span><a id="line.21">  */</a>
+<span class="sourceLineNo">022</span><a id="line.22">  @Override</a>
+<span class="sourceLineNo">023</span><a id="line.23">  public int getNum() {</a>
+<span class="sourceLineNo">024</span><a id="line.24">    return 13;</a>
+<span class="sourceLineNo">025</span><a id="line.25">  }</a>
+<span class="sourceLineNo">026</span><a id="line.26"></a>
+<span class="sourceLineNo">027</span><a id="line.27">  /**</a>
+<span class="sourceLineNo">028</span><a id="line.28">   * The singleton instance of this class.</a>
+<span class="sourceLineNo">029</span><a id="line.29">  */</a>
+<span class="sourceLineNo">030</span><a id="line.30">  public static final N13 instance = new N13();</a>
+<span class="sourceLineNo">031</span><a id="line.31">}</a>
 
 
 
