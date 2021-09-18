@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.0.0-alpha-2-94-gfe59e4b</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.0.0-alpha-2-97-g4f5e0c9</span>
    </div>
   </td>
  </tr>
@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('classfrc_1_1MechanismRoot2d.html','');
 </div><!--header-->
 <div class="contents">
 
-<p>Root <a class="el" href="classfrc_1_1Mechanism2d.html" title="Visual 2D representation of arms, elevators, and general mechanisms; through a node-based API.">Mechanism2d</a> node.  
+<p>Root <a class="el" href="classfrc_1_1Mechanism2d.html" title="Visual 2D representation of arms, elevators, and general mechanisms through a node-based API.">Mechanism2d</a> node.  
  <a href="classfrc_1_1MechanismRoot2d.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="MechanismRoot2d_8h_source.html">frc/smartdashboard/MechanismRoot2d.h</a>&gt;</code></p>
@@ -137,8 +137,10 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Mechanism2d</b></td>
 <tr class="separator:af2157e93dd3038076fb4f928e737c69d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Root <a class="el" href="classfrc_1_1Mechanism2d.html" title="Visual 2D representation of arms, elevators, and general mechanisms; through a node-based API.">Mechanism2d</a> node. </p>
-<p >Do not create objects of this class directly! Obtain pointers from the <a class="el" href="classfrc_1_1Mechanism2d.html#a5096844c9b404a5b6222eb6f9d11f90b" title="Get or create a root in this Mechanism2d with the given name and position.">Mechanism2d.GetRoot()</a> factory method. </p>
+<div class="textblock"><p >Root <a class="el" href="classfrc_1_1Mechanism2d.html" title="Visual 2D representation of arms, elevators, and general mechanisms through a node-based API.">Mechanism2d</a> node. </p>
+<p >A root is the anchor point of other nodes (such as ligaments).</p>
+<p >Do not create objects of this class directly! Obtain pointers from the <a class="el" href="classfrc_1_1Mechanism2d.html#a5096844c9b404a5b6222eb6f9d11f90b" title="Get or create a root in this Mechanism2d with the given name and position.">Mechanism2d.GetRoot()</a> factory method.</p>
+<p >Append other nodes by using <a class="el" href="classfrc_1_1MechanismRoot2d.html#a354a97b9e66b6ed690f2844ea99fb076" title="Append a Mechanism object that is based on this one.">Append()</a>. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a354a97b9e66b6ed690f2844ea99fb076" name="a354a97b9e66b6ed690f2844ea99fb076"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a354a97b9e66b6ed690f2844ea99fb076">&#9670;&nbsp;</a></span>Append()</h2>
@@ -260,7 +262,7 @@ template&lt;typename T , typename... Args, typename  = std::enable_if_t&lt;std::
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1MechanismRoot2d.html">MechanismRoot2d</a></li>
-    <li class="footer">Generated on Sat Sep 18 2021 05:53:49 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Sep 18 2021 05:58:01 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
