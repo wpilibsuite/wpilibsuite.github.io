@@ -29,6 +29,7 @@ var dir_0616eb0edb7e8533b85fb847c3c08b17 =
     [ "Controller.h", "Controller_8h_source.html", null ],
     [ "Counter.h", "wpilibc_2src_2main_2native_2include_2frc_2Counter_8h_source.html", null ],
     [ "CounterBase.h", "CounterBase_8h_source.html", null ],
+    [ "Debouncer.h", "Debouncer_8h_source.html", null ],
     [ "DigitalGlitchFilter.h", "DigitalGlitchFilter_8h_source.html", null ],
     [ "DigitalInput.h", "DigitalInput_8h_source.html", null ],
     [ "DigitalOutput.h", "DigitalOutput_8h_source.html", null ],

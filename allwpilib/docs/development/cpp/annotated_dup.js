@@ -176,6 +176,7 @@ var annotated_dup =
       [ "CounterBase", "classfrc_1_1CounterBase.html", null ],
       [ "CubicHermiteSpline", "classfrc_1_1CubicHermiteSpline.html", "classfrc_1_1CubicHermiteSpline" ],
       [ "DCMotor", "classfrc_1_1DCMotor.html", "classfrc_1_1DCMotor" ],
+      [ "Debouncer", "classfrc_1_1Debouncer.html", "classfrc_1_1Debouncer" ],
       [ "DifferentialDrive", "classfrc_1_1DifferentialDrive.html", "classfrc_1_1DifferentialDrive" ],
       [ "DifferentialDriveKinematics", "classfrc_1_1DifferentialDriveKinematics.html", "classfrc_1_1DifferentialDriveKinematics" ],
       [ "DifferentialDriveKinematicsConstraint", "classfrc_1_1DifferentialDriveKinematicsConstraint.html", "classfrc_1_1DifferentialDriveKinematicsConstraint" ],

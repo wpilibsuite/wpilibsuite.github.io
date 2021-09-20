@@ -264,6 +264,7 @@ var hierarchy =
     [ "custom_formatter< Char >", "structcustom__formatter.html", null ],
     [ "custom_value< Context >", "structcustom__value.html", null ],
     [ "frc::DCMotor", "classfrc_1_1DCMotor.html", null ],
+    [ "frc::Debouncer", "classfrc_1_1Debouncer.html", null ],
     [ "wpi::DebugEpochBase", "classwpi_1_1DebugEpochBase.html", [
       [ "wpi::DenseMapBase< DenseMap< KeyT, ValueT, DenseMapInfo< KeyT >, wpi::detail::DenseMapPair< KeyT, ValueT > >, KeyT, ValueT, DenseMapInfo< KeyT >, wpi::detail::DenseMapPair< KeyT, ValueT > >", "classwpi_1_1DenseMapBase.html", [
         [ "wpi::DenseMap< KeyT, ValueT, KeyInfoT, BucketT >", "classwpi_1_1DenseMap.html", null ]
