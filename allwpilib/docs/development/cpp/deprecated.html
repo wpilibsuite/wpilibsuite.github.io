@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.0.0-alpha-2-105-g202ca5e</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.0.0-alpha-2-106-g59c8942</span>
    </div>
   </td>
  </tr>
@@ -116,11 +116,11 @@ $(document).ready(function(){initNavTree('deprecated.html',''); initResizable();
 <dt>Member <a class="el" href="classfrc_1_1LiveWindow.html#ad5201c8a5477624e00f6d4d09bc8fee0">frc::LiveWindow::GetInstance</a>  ()</dt>
 <dd><a class="anchor" id="_deprecated000018"></a>Use the static methods unless guaranteeing <a class="el" href="classfrc_1_1LiveWindow.html" title="The LiveWindow class is the public interface for putting sensors and actuators on the LiveWindow.">LiveWindow</a> is instantiated  </dd>
 <dt>Class <a class="el" href="classfrc_1_1PIDBase.html">frc::PIDBase</a>  </dt>
-<dd><a class="anchor" id="_deprecated000034"></a>All APIs which use this have been deprecated.  </dd>
+<dd><a class="anchor" id="_deprecated000035"></a>All APIs which use this have been deprecated.  </dd>
 <dt>Class <a class="el" href="classfrc_1_1PIDController.html">frc::PIDController</a>  </dt>
-<dd><a class="anchor" id="_deprecated000033"></a>Use <a class="el" href="classfrc2_1_1PIDController.html" title="Implements a PID control loop.">frc2::PIDController</a> class instead.  </dd>
+<dd><a class="anchor" id="_deprecated000034"></a>Use <a class="el" href="classfrc2_1_1PIDController.html" title="Implements a PID control loop.">frc2::PIDController</a> class instead.  </dd>
 <dt>Class <a class="el" href="classfrc_1_1PIDInterface.html">frc::PIDInterface</a>  </dt>
-<dd><a class="anchor" id="_deprecated000032"></a>All APIs which use this have been deprecated.  </dd>
+<dd><a class="anchor" id="_deprecated000033"></a>All APIs which use this have been deprecated.  </dd>
 <dt>Member <a class="el" href="classfrc_1_1Preferences.html#a515f50bbde384332273c6f4011fbb349">frc::Preferences::GetInstance</a>  ()</dt>
 <dd><a class="anchor" id="_deprecated000019"></a>Use the static methods  </dd>
 <dt>Member <a class="el" href="classfrc_1_1RobotBase.html#ac9693ec00691571f9825d96c0ec86128">frc::RobotBase::IsOperatorControl</a>  () const</dt>
@@ -130,9 +130,9 @@ $(document).ready(function(){initNavTree('deprecated.html',''); initResizable();
 <dt>Member <a class="el" href="classfrc_1_1RobotDriveBase.html#ad88dd6640af8d27a012e9940f1d64fda">frc::RobotDriveBase::ApplyDeadband</a>  (double number, double deadband)</dt>
 <dd><a class="anchor" id="_deprecated000029"></a>Use <a class="el" href="classfrc_1_1RobotDriveBase.html#ad88dd6640af8d27a012e9940f1d64fda" title="Returns 0.0 if the given value is within the specified range around zero.">ApplyDeadband()</a> in <a class="el" href="MathUtil_8h_source.html">frc/MathUtil.h</a>.  </dd>
 <dt>Member <a class="el" href="classfrc_1_1SendableChooser.html#a6d0bcabbab460e10f846abe03865641e">frc::SendableChooser&lt; T &gt;::AddDefault</a>  (std::string_view name, T object)</dt>
-<dd><a class="anchor" id="_deprecated000031"></a>use <a class="el" href="classfrc_1_1SendableChooser.html#a347cd324e81176fa4e32f2a0f7a77158" title="Add the given object to the list of options and marks it as the default.">SetDefaultOption(std::string_view name, T object)</a> instead. </dd>
+<dd><a class="anchor" id="_deprecated000032"></a>use <a class="el" href="classfrc_1_1SendableChooser.html#a347cd324e81176fa4e32f2a0f7a77158" title="Add the given object to the list of options and marks it as the default.">SetDefaultOption(std::string_view name, T object)</a> instead. </dd>
 <dt>Member <a class="el" href="classfrc_1_1SendableChooser.html#ab01426bbcb86a824bd0e9af426b47ba0">frc::SendableChooser&lt; T &gt;::AddObject</a>  (std::string_view name, T object)</dt>
-<dd><a class="anchor" id="_deprecated000030"></a>use <a class="el" href="classfrc_1_1SendableChooser.html#aaa1f52d5ecc0929bffcefb2801b1c3cf" title="Adds the given object to the list of options.">AddOption(std::string_view name, T object)</a> instead. </dd>
+<dd><a class="anchor" id="_deprecated000031"></a>use <a class="el" href="classfrc_1_1SendableChooser.html#aaa1f52d5ecc0929bffcefb2801b1c3cf" title="Adds the given object to the list of options.">AddOption(std::string_view name, T object)</a> instead. </dd>
 <dt>Member <a class="el" href="classfrc_1_1SPI.html#aa071c1d8e6c6c9995db38dd9c1dd03b4">frc::SPI::InitAccumulator</a>  (double period, int cmd, int xferSize, int validMask, int validValue, int dataShift, int dataSize, bool isSigned, bool bigEndian)</dt>
 <dd><a class="anchor" id="_deprecated000024"></a>Use unit-safe version instead. InitAccumulator(units::second_t period, int cmd, int xferSize, int validMask, int validValue, int dataShift, int dataSize, bool isSigned, bool bigEndian) </dd>
 <dt>Member <a class="el" href="classfrc_1_1SPI.html#a13df61aff07325c9ea6768ef161db5be">frc::SPI::SetSampleDataOnFalling</a>  ()</dt>
@@ -143,10 +143,12 @@ $(document).ready(function(){initNavTree('deprecated.html',''); initResizable();
 <dd><a class="anchor" id="_deprecated000023"></a>use unit-safe <a class="el" href="classfrc_1_1SPI.html#a7d77b758daa0cc642fcd08482b70f07d" title="Start running the automatic SPI transfer engine at a periodic rate.">StartAutoRate(units::second_t period)</a> instead. </dd>
 <dt>Member <a class="el" href="classfrc_1_1TimedRobot.html#a70890d7283a8afc101de444e99b6fb7a">frc::TimedRobot::TimedRobot</a>  (double period)</dt>
 <dd><a class="anchor" id="_deprecated000020"></a>use unit safe constructor instead. <a class="el" href="classfrc_1_1TimedRobot.html" title="TimedRobot implements the IterativeRobotBase robot program framework.">TimedRobot</a>(units::second_t period = kDefaultPeriod) </dd>
-<dt>Member <a class="el" href="classwpi_1_1SendableHelper.html#a3e272258586ef98d2c1b8f6be76a1663">wpi::SendableHelper&lt; Derived &gt;::AddChild</a>  (void *child)</dt>
-<dd><a class="anchor" id="_deprecated000007"></a>use <a class="el" href="classwpi_1_1SendableRegistry.html#ac2afd88e07f863cb483d4dd27ae7248f" title="Adds a child object to an object.">SendableRegistry::AddChild()</a> </dd>
+<dt>Member <a class="el" href="classfrc_1_1Timer.html#a0a2478b711ccf54ee0dc208cd7078c3d">frc::Timer::HasPeriodPassed</a>  (units::second_t period)</dt>
+<dd><a class="anchor" id="_deprecated000030"></a>Use <a class="el" href="classfrc_1_1Timer.html#a1ee15601a96a9539926848ab7bc33611" title="Check if the period specified has passed and if it has, advance the start time by that period.">AdvanceIfElapsed()</a> instead.  </dd>
 <dt>Member <a class="el" href="classwpi_1_1SendableHelper.html#a7ce2af28692ec77440d09ab8c2d36425">wpi::SendableHelper&lt; Derived &gt;::AddChild</a>  (std::shared_ptr&lt; Sendable &gt; child)</dt>
 <dd><a class="anchor" id="_deprecated000006"></a>use <a class="el" href="classwpi_1_1SendableRegistry.html#ac2afd88e07f863cb483d4dd27ae7248f" title="Adds a child object to an object.">SendableRegistry::AddChild()</a> </dd>
+<dt>Member <a class="el" href="classwpi_1_1SendableHelper.html#a3e272258586ef98d2c1b8f6be76a1663">wpi::SendableHelper&lt; Derived &gt;::AddChild</a>  (void *child)</dt>
+<dd><a class="anchor" id="_deprecated000007"></a>use <a class="el" href="classwpi_1_1SendableRegistry.html#ac2afd88e07f863cb483d4dd27ae7248f" title="Adds a child object to an object.">SendableRegistry::AddChild()</a> </dd>
 <dt>Member <a class="el" href="classwpi_1_1SendableHelper.html#ad914b3555af5651aaaa3d8b1cec83b91">wpi::SendableHelper&lt; Derived &gt;::GetName</a>  () const</dt>
 <dd><a class="anchor" id="_deprecated000001"></a>use <a class="el" href="classwpi_1_1SendableRegistry.html#a0a7ee8ac942d74550df792117c156c3c" title="Gets the name of an object.">SendableRegistry::GetName()</a> </dd>
 <dt>Member <a class="el" href="classwpi_1_1SendableHelper.html#ae661490f5da84e30594380eeb5d4952b">wpi::SendableHelper&lt; Derived &gt;::GetSubsystem</a>  () const</dt>
@@ -168,7 +170,7 @@ $(document).ready(function(){initNavTree('deprecated.html',''); initResizable();
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Sep 22 2021 17:06:45 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Wed Sep 22 2021 20:04:31 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
