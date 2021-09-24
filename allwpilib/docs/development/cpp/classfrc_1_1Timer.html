@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.0.0-alpha-2-109-g3b8d3bb</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.0.0-alpha-2-110-gb65fce8</span>
    </div>
   </td>
  </tr>
@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('classfrc_1_1Timer.html',''); initResiz
 </div><!--header-->
 <div class="contents">
 
-<p>A wrapper for the <a class="el" href="classfrc_1_1Timer.html" title="A wrapper for the frc::Timer class that returns unit-typed values.">frc::Timer</a> class that returns unit-typed values.  
+<p>A timer class.  
  <a href="classfrc_1_1Timer.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2Timer_8h_source.html">frc/Timer.h</a>&gt;</code></p>
@@ -153,7 +153,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a79c185032dcc8dd906bab83262b349c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >A wrapper for the <a class="el" href="classfrc_1_1Timer.html" title="A wrapper for the frc::Timer class that returns unit-typed values.">frc::Timer</a> class that returns unit-typed values. </p>
+<div class="textblock"><p >A timer class. </p>
+<p >Note that if the user calls frc::sim::RestartTiming(), they should also reset the timer so <a class="el" href="classfrc_1_1Timer.html#a334848b687247ccecb17094498d413db" title="Get the current time from the timer.">Get()</a> won't return a negative duration. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2246466fd584658798fd452cb1dba1d0" name="a2246466fd584658798fd452cb1dba1d0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2246466fd584658798fd452cb1dba1d0">&#9670;&nbsp;</a></span>Timer()</h2>
@@ -410,7 +411,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1Timer.html">Timer</a></li>
-    <li class="footer">Generated on Thu Sep 23 2021 01:32:52 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Sep 24 2021 23:03:58 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
