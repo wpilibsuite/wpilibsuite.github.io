@@ -360,20 +360,20 @@
 <span class="sourceLineNo">348</span><a id="line.348">    m_runMutex.unlock();</a>
 <span class="sourceLineNo">349</span><a id="line.349"></a>
 <span class="sourceLineNo">350</span><a id="line.350">    if (isReal()) {</a>
-<span class="sourceLineNo">351</span><a id="line.351">      try {</a>
-<span class="sourceLineNo">352</span><a id="line.352">        final File file = new File("/tmp/frc_versions/FRC_Lib_Version.ini");</a>
-<span class="sourceLineNo">353</span><a id="line.353"></a>
-<span class="sourceLineNo">354</span><a id="line.354">        if (file.exists()) {</a>
-<span class="sourceLineNo">355</span><a id="line.355">          file.delete();</a>
-<span class="sourceLineNo">356</span><a id="line.356">        }</a>
-<span class="sourceLineNo">357</span><a id="line.357"></a>
-<span class="sourceLineNo">358</span><a id="line.358">        file.createNewFile();</a>
-<span class="sourceLineNo">359</span><a id="line.359"></a>
-<span class="sourceLineNo">360</span><a id="line.360">        try (OutputStream output = Files.newOutputStream(file.toPath())) {</a>
-<span class="sourceLineNo">361</span><a id="line.361">          output.write("Java ".getBytes(StandardCharsets.UTF_8));</a>
-<span class="sourceLineNo">362</span><a id="line.362">          output.write(WPILibVersion.Version.getBytes(StandardCharsets.UTF_8));</a>
-<span class="sourceLineNo">363</span><a id="line.363">        }</a>
-<span class="sourceLineNo">364</span><a id="line.364"></a>
+<span class="sourceLineNo">351</span><a id="line.351">      final File file = new File("/tmp/frc_versions/FRC_Lib_Version.ini");</a>
+<span class="sourceLineNo">352</span><a id="line.352">      try {</a>
+<span class="sourceLineNo">353</span><a id="line.353">        if (file.exists() &amp;&amp; !file.delete()) {</a>
+<span class="sourceLineNo">354</span><a id="line.354">          throw new IOException("Failed to delete FRC_Lib_Version.ini");</a>
+<span class="sourceLineNo">355</span><a id="line.355">        }</a>
+<span class="sourceLineNo">356</span><a id="line.356"></a>
+<span class="sourceLineNo">357</span><a id="line.357">        if (!file.createNewFile()) {</a>
+<span class="sourceLineNo">358</span><a id="line.358">          throw new IOException("Failed to create new FRC_Lib_Version.ini");</a>
+<span class="sourceLineNo">359</span><a id="line.359">        }</a>
+<span class="sourceLineNo">360</span><a id="line.360"></a>
+<span class="sourceLineNo">361</span><a id="line.361">        try (OutputStream output = Files.newOutputStream(file.toPath())) {</a>
+<span class="sourceLineNo">362</span><a id="line.362">          output.write("Java ".getBytes(StandardCharsets.UTF_8));</a>
+<span class="sourceLineNo">363</span><a id="line.363">          output.write(WPILibVersion.Version.getBytes(StandardCharsets.UTF_8));</a>
+<span class="sourceLineNo">364</span><a id="line.364">        }</a>
 <span class="sourceLineNo">365</span><a id="line.365">      } catch (IOException ex) {</a>
 <span class="sourceLineNo">366</span><a id="line.366">        DriverStation.reportError(</a>
 <span class="sourceLineNo">367</span><a id="line.367">            "Could not write FRC_Lib_Version.ini: " + ex.toString(), ex.getStackTrace());</a>

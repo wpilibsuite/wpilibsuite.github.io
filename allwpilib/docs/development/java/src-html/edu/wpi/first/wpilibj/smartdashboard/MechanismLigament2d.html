@@ -140,7 +140,7 @@
 <span class="sourceLineNo">128</span><a id="line.128">  }</a>
 <span class="sourceLineNo">129</span><a id="line.129"></a>
 <span class="sourceLineNo">130</span><a id="line.130">  @Override</a>
-<span class="sourceLineNo">131</span><a id="line.131">  protected void updateEntries(NetworkTable table) {</a>
+<span class="sourceLineNo">131</span><a id="line.131">  protected synchronized void updateEntries(NetworkTable table) {</a>
 <span class="sourceLineNo">132</span><a id="line.132">    table.getEntry(".type").setString("line");</a>
 <span class="sourceLineNo">133</span><a id="line.133">    m_angleEntry = table.getEntry("angle");</a>
 <span class="sourceLineNo">134</span><a id="line.134">    m_lengthEntry = table.getEntry("length");</a>

@@ -88,7 +88,7 @@
 <span class="sourceLineNo">076</span><a id="line.76">   */</a>
 <span class="sourceLineNo">077</span><a id="line.77">  public synchronized FieldObject2d getObject(String name) {</a>
 <span class="sourceLineNo">078</span><a id="line.78">    for (FieldObject2d obj : m_objects) {</a>
-<span class="sourceLineNo">079</span><a id="line.79">      if (obj.m_name == name) {</a>
+<span class="sourceLineNo">079</span><a id="line.79">      if (obj.m_name.equals(name)) {</a>
 <span class="sourceLineNo">080</span><a id="line.80">        return obj;</a>
 <span class="sourceLineNo">081</span><a id="line.81">      }</a>
 <span class="sourceLineNo">082</span><a id="line.82">    }</a>
@@ -114,9 +114,9 @@
 <span class="sourceLineNo">102</span><a id="line.102">  @Override</a>
 <span class="sourceLineNo">103</span><a id="line.103">  public void initSendable(NTSendableBuilder builder) {</a>
 <span class="sourceLineNo">104</span><a id="line.104">    builder.setSmartDashboardType("Field2d");</a>
-<span class="sourceLineNo">105</span><a id="line.105">    m_table = builder.getTable();</a>
-<span class="sourceLineNo">106</span><a id="line.106"></a>
-<span class="sourceLineNo">107</span><a id="line.107">    synchronized (this) {</a>
+<span class="sourceLineNo">105</span><a id="line.105"></a>
+<span class="sourceLineNo">106</span><a id="line.106">    synchronized (this) {</a>
+<span class="sourceLineNo">107</span><a id="line.107">      m_table = builder.getTable();</a>
 <span class="sourceLineNo">108</span><a id="line.108">      for (FieldObject2d obj : m_objects) {</a>
 <span class="sourceLineNo">109</span><a id="line.109">        synchronized (obj) {</a>
 <span class="sourceLineNo">110</span><a id="line.110">          obj.m_entry = m_table.getEntry(obj.m_name);</a>
