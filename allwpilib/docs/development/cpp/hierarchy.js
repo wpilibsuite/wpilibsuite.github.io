@@ -967,7 +967,9 @@ var hierarchy =
     [ "frc::sim::RoboRioSim", "classfrc_1_1sim_1_1RoboRioSim.html", null ],
     [ "frc::RobotBase", "classfrc_1_1RobotBase.html", [
       [ "frc::IterativeRobotBase", "classfrc_1_1IterativeRobotBase.html", [
-        [ "frc::TimedRobot", "classfrc_1_1TimedRobot.html", null ]
+        [ "frc::TimedRobot", "classfrc_1_1TimedRobot.html", [
+          [ "frc::TimesliceRobot", "classfrc_1_1TimesliceRobot.html", null ]
+        ] ]
       ] ]
     ] ],
     [ "frc::RobotController", "classfrc_1_1RobotController.html", null ],

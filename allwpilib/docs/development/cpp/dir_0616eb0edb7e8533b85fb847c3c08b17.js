@@ -75,6 +75,7 @@ var dir_0616eb0edb7e8533b85fb847c3c08b17 =
     [ "Threads.h", "wpilibc_2src_2main_2native_2include_2frc_2Threads_8h_source.html", null ],
     [ "TimedRobot.h", "TimedRobot_8h_source.html", null ],
     [ "Timer.h", "wpilibc_2src_2main_2native_2include_2frc_2Timer_8h_source.html", null ],
+    [ "TimesliceRobot.h", "TimesliceRobot_8h_source.html", null ],
     [ "Tracer.h", "Tracer_8h_source.html", null ],
     [ "Ultrasonic.h", "Ultrasonic_8h_source.html", null ],
     [ "Watchdog.h", "Watchdog_8h_source.html", null ],

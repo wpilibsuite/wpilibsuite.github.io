@@ -1,5 +1,12 @@
 var NAVTREEINDEX40 =
 {
+"group__ntcore__table__cfunc.html#ga9a5302bf89cadf3811ea821cfcd18bad":[3,1,1,7],
+"group__ntcore__table__cfunc.html#ga9b93b7fe70e3b0484654b16fd6e9e1f1":[3,1,1,13],
+"group__ntcore__table__cfunc.html#ga9e66176df0aedf317d5071a267d709fa":[3,1,1,1],
+"group__ntcore__table__cfunc.html#gaac09a2e4f4e87f328eae51b9397ac18c":[3,1,1,2],
+"group__ntcore__table__cfunc.html#gacb909b2a4d714213d5af0ca27723760f":[3,1,1,5],
+"group__ntcore__table__cfunc.html#gad3c56c028bc02e677f51a97ed14e91a5":[3,1,1,12],
+"group__ntcore__table__cfunc.html#gaf95c0f8c14601e44cfc96da0749d9711":[3,1,1,8],
 "group__ntcore__table__cfunc.html#gafce13bfbcc1dcf58bde987c2488971a5":[3,1,1,3],
 "group__ntcore__table__func.html":[3,2,1],
 "group__ntcore__table__func.html#ga03d0a723385257cf6bd2cfb81f896b59":[3,2,1,1],
@@ -90,8 +97,8 @@ var NAVTREEINDEX40 =
 "is__approx__equal__abstol_8h_source.html":[6,0,2,0,4],
 "iterator_8h_source.html":[6,0,11,37],
 "iterator__range_8h.html":[6,0,11,38],
-"iterator__range_8h.html#aacc327c9a551f61642d9a6ef107c4593":[4,0,11,197],
 "iterator__range_8h.html#aacc327c9a551f61642d9a6ef107c4593":[6,0,11,38,1],
+"iterator__range_8h.html#aacc327c9a551f61642d9a6ef107c4593":[4,0,11,197],
 "iterator__range_8h_source.html":[6,0,11,38],
 "jni__util_8h_source.html":[6,0,11,39],
 "json_8h_source.html":[6,0,11,40],
@@ -242,12 +249,5 @@ var NAVTREEINDEX40 =
 "structNT__String.html#a1d7946763b33ed97c9f12a34793695c1":[3,1,10,0],
 "structNT__String.html#a2807632705eb3aa7224cff827f3fb001":[3,1,10,1],
 "structNT__Value.html":[3,1,11],
-"structansi__color__escape.html":[5,0,12],
-"structarg__data.html":[5,0,15],
-"structarg__data_3_01T_00_01Char_00_01NUM__ARGS_00_010_01_4.html":[5,0,16],
-"structarg__formatter.html":[5,0,17],
-"structarg__mapper.html":[5,0,18],
-"structarg__ref.html":[5,0,19],
-"structauto__id.html":[5,0,20],
-"structbasic__data.html":[5,0,22]
+"structansi__color__escape.html":[5,0,12]
 };

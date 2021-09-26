@@ -326,6 +326,7 @@ var annotated_dup =
       [ "TimedCommand", "classfrc_1_1TimedCommand.html", "classfrc_1_1TimedCommand" ],
       [ "TimedRobot", "classfrc_1_1TimedRobot.html", "classfrc_1_1TimedRobot" ],
       [ "Timer", "classfrc_1_1Timer.html", "classfrc_1_1Timer" ],
+      [ "TimesliceRobot", "classfrc_1_1TimesliceRobot.html", "classfrc_1_1TimesliceRobot" ],
       [ "ToggleButtonScheduler", "classfrc_1_1ToggleButtonScheduler.html", null ],
       [ "Tracer", "classfrc_1_1Tracer.html", "classfrc_1_1Tracer" ],
       [ "Trajectory", "classfrc_1_1Trajectory.html", "classfrc_1_1Trajectory" ],
