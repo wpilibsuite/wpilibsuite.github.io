@@ -6,7 +6,6 @@ var classfrc_1_1AsynchronousInterrupt =
     [ "AsynchronousInterrupt", "classfrc_1_1AsynchronousInterrupt.html#a9fba7e6f7f76d51bb60752be8bc4abcc", null ],
     [ "AsynchronousInterrupt", "classfrc_1_1AsynchronousInterrupt.html#a903d8cad0fc1338d96e2a3931d4974d3", null ],
     [ "AsynchronousInterrupt", "classfrc_1_1AsynchronousInterrupt.html#ae2c37f854947f414a2bb5a9688ad9233", null ],
-    [ "~AsynchronousInterrupt", "classfrc_1_1AsynchronousInterrupt.html#a25e6e36fe7af95204d0694d2912ff677", null ],
     [ "Disable", "classfrc_1_1AsynchronousInterrupt.html#a627ae4c2426aee36686ff384fedf4496", null ],
     [ "Enable", "classfrc_1_1AsynchronousInterrupt.html#ac103d447e8628cc467f828b6c793389a", null ],
     [ "GetFallingTimestamp", "classfrc_1_1AsynchronousInterrupt.html#ae4be083edecc23fb8deae8f4fffbcc66", null ],

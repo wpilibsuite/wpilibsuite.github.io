@@ -1,6 +1,5 @@
 var classfrc2_1_1SubsystemBase =
 [
-    [ "SubsystemBase", "classfrc2_1_1SubsystemBase.html#aea0b551d3153e1b6e54d46c6d63b1be8", null ],
     [ "AddChild", "classfrc2_1_1SubsystemBase.html#a464068a3dce23c11110e8d3e26346262", null ],
     [ "GetName", "classfrc2_1_1SubsystemBase.html#ace9a0ee1ee647c28bfb213c39468a06c", null ],
     [ "GetSubsystem", "classfrc2_1_1SubsystemBase.html#a4ebb92a7ecae884542de95e64b8b7bc1", null ],

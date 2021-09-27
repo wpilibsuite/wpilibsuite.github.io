@@ -1,13 +1,10 @@
 var classwpi_1_1uv_1_1Stream =
 [
-    [ "Stream", "classwpi_1_1uv_1_1Stream.html#a6da235efd35483448b1343507bcb67aa", null ],
-    [ "GetRawStream", "classwpi_1_1uv_1_1Stream.html#a30715b0edb0ce29e9e7c5cae71f847de", null ],
+    [ "GetRawStream", "classwpi_1_1uv_1_1Stream.html#acfaafcb41393021d5fe752c54fc6a462", null ],
     [ "GetWriteQueueSize", "classwpi_1_1uv_1_1Stream.html#a97b74fd75c1b2bea07a5ed879558fc08", null ],
     [ "IsReadable", "classwpi_1_1uv_1_1Stream.html#a2ed522ab2a1f436499d11f5e8a07ae73", null ],
     [ "IsWritable", "classwpi_1_1uv_1_1Stream.html#acc5ecbcbd901ece08ca138c9ae5b073a", null ],
     [ "SetBlocking", "classwpi_1_1uv_1_1Stream.html#a6d3f6a457575453a4a337b0b1424acce", null ],
-    [ "shared_from_this", "classwpi_1_1uv_1_1Stream.html#a9474b304cfcc82aa2d4cc431ea6797d8", null ],
-    [ "shared_from_this", "classwpi_1_1uv_1_1Stream.html#af17e47acb843a587e1891c699b1df465", null ],
     [ "Shutdown", "classwpi_1_1uv_1_1Stream.html#ae28bd111b25aab636ad3048cdd162907", null ],
     [ "Shutdown", "classwpi_1_1uv_1_1Stream.html#a68e5f26d1aa9f41ff7ac58f8c6232d18", null ],
     [ "StartRead", "classwpi_1_1uv_1_1Stream.html#abdc5852aa5766358a932e2ee25f55603", null ],

@@ -1,10 +1,5 @@
 var classwpi_1_1HttpParser =
 [
-    [ "Type", "classwpi_1_1HttpParser.html#a6918117bdaaaee040dd421de4c4dfb28", [
-      [ "kRequest", "classwpi_1_1HttpParser.html#a6918117bdaaaee040dd421de4c4dfb28a20030a7b7d69f1916e6a2c1099b24585", null ],
-      [ "kResponse", "classwpi_1_1HttpParser.html#a6918117bdaaaee040dd421de4c4dfb28a3c40ca4df56bd2136585dc6c61b5f6a0", null ],
-      [ "kBoth", "classwpi_1_1HttpParser.html#a6918117bdaaaee040dd421de4c4dfb28a9e7ca1c38610f6d5234f9ea7e81ba28f", null ]
-    ] ],
     [ "HttpParser", "classwpi_1_1HttpParser.html#a472c21ee8af570a441801a241cd0090f", null ],
     [ "Abort", "classwpi_1_1HttpParser.html#a91f629b40db8a8fda9b20de97fde32c7", null ],
     [ "Execute", "classwpi_1_1HttpParser.html#a6b1a24906e1e0cf478335de3c5943d7e", null ],

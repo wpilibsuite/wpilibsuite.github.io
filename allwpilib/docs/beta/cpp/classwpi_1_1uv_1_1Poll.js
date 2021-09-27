@@ -1,11 +1,9 @@
 var classwpi_1_1uv_1_1Poll =
 [
-    [ "Poll", "classwpi_1_1uv_1_1Poll.html#a98c301352513523077c67b191cff8970", null ],
-    [ "~Poll", "classwpi_1_1uv_1_1Poll.html#a36d490c8083cc43d5ce152db69356d5d", null ],
-    [ "Create", "classwpi_1_1uv_1_1Poll.html#a94a4ca86498a64a5d4f20b9ba1a1298d", null ],
-    [ "Create", "classwpi_1_1uv_1_1Poll.html#ac4c388d1491b49d9e56605d2918437d2", null ],
-    [ "CreateSocket", "classwpi_1_1uv_1_1Poll.html#ac6f1b0f2c92b410c97edc46e743ed71b", null ],
-    [ "CreateSocket", "classwpi_1_1uv_1_1Poll.html#a5193bdcb8d1304ad6f6e8873cb6159b8", null ],
+    [ "Create", "classwpi_1_1uv_1_1Poll.html#ab4227cc36db573c32e93e6ce39aeade7", null ],
+    [ "Create", "classwpi_1_1uv_1_1Poll.html#ac1530f00c49d96ee5d4a5ecfd5ecb635", null ],
+    [ "CreateSocket", "classwpi_1_1uv_1_1Poll.html#aa7c3ff495b8d0a29539739de772565bc", null ],
+    [ "CreateSocket", "classwpi_1_1uv_1_1Poll.html#a584b5a23bcffb0df2c7b1a72a50f3e1d", null ],
     [ "Reuse", "classwpi_1_1uv_1_1Poll.html#acad3bb9b01719fbb60f204af5d16fbd3", null ],
     [ "ReuseSocket", "classwpi_1_1uv_1_1Poll.html#a738c9ffab912692235348f1c03d0f3f2", null ],
     [ "Start", "classwpi_1_1uv_1_1Poll.html#a395e1e6865729f009287dee0edeb19e4", null ],

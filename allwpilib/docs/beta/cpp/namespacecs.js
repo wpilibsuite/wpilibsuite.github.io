@@ -7,14 +7,14 @@ var namespacecs =
     [ "MjpegServer", "classcs_1_1MjpegServer.html", "classcs_1_1MjpegServer" ],
     [ "RawCvSink", "classcs_1_1RawCvSink.html", "classcs_1_1RawCvSink" ],
     [ "RawCvSource", "classcs_1_1RawCvSource.html", "classcs_1_1RawCvSource" ],
-    [ "RawEvent", "structcs_1_1RawEvent.html", "structcs_1_1RawEvent" ],
+    [ "RawEvent", "structcs_1_1RawEvent.html", null ],
     [ "UsbCamera", "classcs_1_1UsbCamera.html", "classcs_1_1UsbCamera" ],
     [ "UsbCameraInfo", "structcs_1_1UsbCameraInfo.html", "structcs_1_1UsbCameraInfo" ],
     [ "VideoCamera", "classcs_1_1VideoCamera.html", "classcs_1_1VideoCamera" ],
     [ "VideoEvent", "classcs_1_1VideoEvent.html", "classcs_1_1VideoEvent" ],
     [ "VideoListener", "classcs_1_1VideoListener.html", "classcs_1_1VideoListener" ],
-    [ "VideoMode", "structcs_1_1VideoMode.html", "structcs_1_1VideoMode" ],
-    [ "VideoProperty", "classcs_1_1VideoProperty.html", "classcs_1_1VideoProperty" ],
+    [ "VideoMode", "structcs_1_1VideoMode.html", null ],
+    [ "VideoProperty", "classcs_1_1VideoProperty.html", null ],
     [ "VideoSink", "classcs_1_1VideoSink.html", "classcs_1_1VideoSink" ],
     [ "VideoSource", "classcs_1_1VideoSource.html", "classcs_1_1VideoSource" ]
 ];

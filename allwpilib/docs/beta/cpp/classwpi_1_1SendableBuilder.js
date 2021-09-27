@@ -4,7 +4,6 @@ var classwpi_1_1SendableBuilder =
       [ "kUnknown", "classwpi_1_1SendableBuilder.html#ac497f0c4267f959542834b9dab7613afa5e69b29f6f99ec21a70caa7fb1dd5e7e", null ],
       [ "kNetworkTables", "classwpi_1_1SendableBuilder.html#ac497f0c4267f959542834b9dab7613afa0b1ac04201930ec1d4a500b938c658ab", null ]
     ] ],
-    [ "~SendableBuilder", "classwpi_1_1SendableBuilder.html#a316af590e3085fd678b01c7b416441d0", null ],
     [ "AddBooleanArrayProperty", "classwpi_1_1SendableBuilder.html#a1ee147b695aeb8a150cf758baaa443ea", null ],
     [ "AddBooleanProperty", "classwpi_1_1SendableBuilder.html#a8ffd2bbd39213eb0b7a1ebadcd6079d0", null ],
     [ "AddDoubleArrayProperty", "classwpi_1_1SendableBuilder.html#a0f01ef0d54c00c699ce55183af1ac09f", null ],

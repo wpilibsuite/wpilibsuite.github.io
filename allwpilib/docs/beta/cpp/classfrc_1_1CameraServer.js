@@ -15,7 +15,7 @@ var classfrc_1_1CameraServer =
     [ "AddServer", "classfrc_1_1CameraServer.html#a58f056f3a70cdc00f44f0c6a4371aec2", null ],
     [ "AddServer", "classfrc_1_1CameraServer.html#a366a42365db3b2b80108aa7f66a71a0c", null ],
     [ "AddSwitchedCamera", "classfrc_1_1CameraServer.html#a610a66783f7b900ffb183ca2d75953ec", null ],
-    [ "GetInstance", "classfrc_1_1CameraServer.html#af95e7dc8a84506763a0e7c4b22f48728", null ],
+    [ "GetInstance", "classfrc_1_1CameraServer.html#a042b8f65f2fcfe1a753db8239fbb9070", null ],
     [ "GetServer", "classfrc_1_1CameraServer.html#aed7ae0275f068c641f8c48d73c362b6c", null ],
     [ "GetServer", "classfrc_1_1CameraServer.html#a6cb21420afd03361abe164ea1cb15bf6", null ],
     [ "GetVideo", "classfrc_1_1CameraServer.html#ad2a3815b50372fd962b9c8d844c01bad", null ],
@@ -29,9 +29,5 @@ var classfrc_1_1CameraServer =
     [ "StartAutomaticCapture", "classfrc_1_1CameraServer.html#a0f2ede76f073a394decafabef9072a31", null ],
     [ "StartAutomaticCapture", "classfrc_1_1CameraServer.html#aa924e55df147ad1ec1984a2788b5b9fa", null ],
     [ "StartAutomaticCapture", "classfrc_1_1CameraServer.html#acb48c7abfe69a40f819ded9ed3adf446", null ],
-    [ "StartAutomaticCapture", "classfrc_1_1CameraServer.html#aafa53d876b218ccdadad61d80a95fcb1", null ],
-    [ "kBasePort", "classfrc_1_1CameraServer.html#a94ad1047b2af0a2d27f2db2d95a68bb1", null ],
-    [ "kSize160x120", "classfrc_1_1CameraServer.html#a9e7e3166bfea1cb80e1fa00b40cd85ab", null ],
-    [ "kSize320x240", "classfrc_1_1CameraServer.html#a94ec5cb0631002669048a9262bd42d0b", null ],
-    [ "kSize640x480", "classfrc_1_1CameraServer.html#ab7c055c3bc5d13ccffe13a11260b1f8f", null ]
+    [ "StartAutomaticCapture", "classfrc_1_1CameraServer.html#aafa53d876b218ccdadad61d80a95fcb1", null ]
 ];

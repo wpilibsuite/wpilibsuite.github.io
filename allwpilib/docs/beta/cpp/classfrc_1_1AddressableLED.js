@@ -2,7 +2,6 @@ var classfrc_1_1AddressableLED =
 [
     [ "LEDData", "classfrc_1_1AddressableLED_1_1LEDData.html", "classfrc_1_1AddressableLED_1_1LEDData" ],
     [ "AddressableLED", "classfrc_1_1AddressableLED.html#a736c95e5161301622c7d4a49c07ac432", null ],
-    [ "~AddressableLED", "classfrc_1_1AddressableLED.html#af1f1735de349efc22ed8d19a88376085", null ],
     [ "SetBitTiming", "classfrc_1_1AddressableLED.html#a6ad3614d52a0be79634bad7ab5bfc81f", null ],
     [ "SetData", "classfrc_1_1AddressableLED.html#a302c78623cdf1078b734ea9ce4f4f795", null ],
     [ "SetData", "classfrc_1_1AddressableLED.html#aeb1d0585d5dff98ef2c7d45c1a536c7d", null ],

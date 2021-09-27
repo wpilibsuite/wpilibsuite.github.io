@@ -1,29 +1,19 @@
 var classfrc_1_1Encoder =
 [
-    [ "IndexingType", "classfrc_1_1Encoder.html#a23f70f8b42b9f30f4e95b7ad446f6485", [
-      [ "kResetWhileHigh", "classfrc_1_1Encoder.html#a23f70f8b42b9f30f4e95b7ad446f6485ae106540db05b5e796e8fb10272051773", null ],
-      [ "kResetWhileLow", "classfrc_1_1Encoder.html#a23f70f8b42b9f30f4e95b7ad446f6485ad53d0ddd6ef383c34eb29b4d20c80196", null ],
-      [ "kResetOnFallingEdge", "classfrc_1_1Encoder.html#a23f70f8b42b9f30f4e95b7ad446f6485aced0c731b1c0e139416ceff6a4385b47", null ],
-      [ "kResetOnRisingEdge", "classfrc_1_1Encoder.html#a23f70f8b42b9f30f4e95b7ad446f6485aa3f0a3fb4eb893975726257603f3d615", null ]
-    ] ],
     [ "Encoder", "classfrc_1_1Encoder.html#a2a61404972945d0e2c5df5c5b4825fbf", null ],
     [ "Encoder", "classfrc_1_1Encoder.html#a3755cf5bfbedf7d2c3f335bc82c6a23e", null ],
     [ "Encoder", "classfrc_1_1Encoder.html#ace3c40c3a84de5c457558ad3e05df078", null ],
-    [ "Encoder", "classfrc_1_1Encoder.html#a3d647e1bd015f107df20ad8894e71e0a", null ],
-    [ "~Encoder", "classfrc_1_1Encoder.html#a827228398ca5eb056ecdfa66254e74f4", null ],
-    [ "Encoder", "classfrc_1_1Encoder.html#af87282d6297fec69d6bb051a53420520", null ],
     [ "Get", "classfrc_1_1Encoder.html#a82c56aba2a077c0aecdd33d9711adb52", null ],
     [ "GetDirection", "classfrc_1_1Encoder.html#a6b691fce6c5ee8ad06f0507c2bd093ce", null ],
     [ "GetDistance", "classfrc_1_1Encoder.html#ad7348793b02487256a1b5506254f079e", null ],
     [ "GetDistancePerPulse", "classfrc_1_1Encoder.html#af22ed59784d03a7d3abb4b94ea0df0f9", null ],
     [ "GetEncodingScale", "classfrc_1_1Encoder.html#a8a0dfef7b7cb0f4b7bcfa48590bb0ea1", null ],
-    [ "GetFPGAIndex", "classfrc_1_1Encoder.html#a0401c6f152c243e06108f42d0daf25f2", null ],
     [ "GetPeriod", "classfrc_1_1Encoder.html#af32f12dabd0175b8966aba92523d79b2", null ],
     [ "GetRate", "classfrc_1_1Encoder.html#aa1416f313ea0a6685161d00010079018", null ],
     [ "GetRaw", "classfrc_1_1Encoder.html#a1b7e07c44c8e26fde4d62e4606cb86d2", null ],
     [ "GetSamplesToAverage", "classfrc_1_1Encoder.html#aac2f1cbfe45db68a215a60c695bae80f", null ],
+    [ "GetStopped", "classfrc_1_1Encoder.html#afc108813c67e3bffae125679d5583e6e", null ],
     [ "InitSendable", "classfrc_1_1Encoder.html#a94e09e2c03861d44885d1cdab756ddff", null ],
-    [ "operator=", "classfrc_1_1Encoder.html#a2b202913c07885452ab03c248745fce6", null ],
     [ "Reset", "classfrc_1_1Encoder.html#a981f675176708a1580d7f48779de56e4", null ],
     [ "SetDistancePerPulse", "classfrc_1_1Encoder.html#ac50921f87e0e3cc4785a4b1e157da433", null ],
     [ "SetIndexSource", "classfrc_1_1Encoder.html#a3fe013532d791113feb16bb9e2355f3a", null ],
@@ -31,8 +21,5 @@ var classfrc_1_1Encoder =
     [ "SetMinRate", "classfrc_1_1Encoder.html#a7e5580dcbcffc3a0b3482cf9956347a9", null ],
     [ "SetReverseDirection", "classfrc_1_1Encoder.html#a857308bfbf8d3cc0fbff20b976200b0c", null ],
     [ "SetSamplesToAverage", "classfrc_1_1Encoder.html#aac1bc3f37c27c15bf048b504b921d3db", null ],
-    [ "SetSimDevice", "classfrc_1_1Encoder.html#aaa0a1b07f1426dd0e4efafe68adef283", null ],
-    [ "DigitalGlitchFilter", "classfrc_1_1Encoder.html#a5346e4d7f11fc8ec50a4c2c993fec75f", null ],
-    [ "DMA", "classfrc_1_1Encoder.html#a8dd886aeff72fdd847a45f3bee3810b1", null ],
-    [ "DMASample", "classfrc_1_1Encoder.html#a7175b380706a21e8d366205206e52773", null ]
+    [ "SetSimDevice", "classfrc_1_1Encoder.html#aaa0a1b07f1426dd0e4efafe68adef283", null ]
 ];

@@ -1,6 +1,5 @@
 var classnt_1_1NetworkTableInstance =
 [
-    [ "kDefaultPort", "classnt_1_1NetworkTableInstance.html#ad33bfaa6b9aaa3bfea9e5aafea8393d5a56a06549716972d3b062cb7cccaed979", null ],
     [ "LogLevel", "classnt_1_1NetworkTableInstance.html#a88dfe5b82924f347c572cdada2707150", [
       [ "kLogCritical", "classnt_1_1NetworkTableInstance.html#a88dfe5b82924f347c572cdada2707150ad8346f55c62557dffb78007a3e8d450d", null ],
       [ "kLogError", "classnt_1_1NetworkTableInstance.html#a88dfe5b82924f347c572cdada2707150a5239b1f499019c007f9d4d00036d6765", null ],
@@ -36,7 +35,7 @@ var classnt_1_1NetworkTableInstance =
     [ "GetEntryInfo", "classnt_1_1NetworkTableInstance.html#aeb1007a80b2725a525dc963984dbe6af", null ],
     [ "GetHandle", "classnt_1_1NetworkTableInstance.html#a553f753c4ddd32c6e8c875f997936f4f", null ],
     [ "GetNetworkMode", "classnt_1_1NetworkTableInstance.html#a53729757adbb20394e13f64d7e38fe1e", null ],
-    [ "GetTable", "classnt_1_1NetworkTableInstance.html#a9e243fe9dbce188d2bf392536bca2861", null ],
+    [ "GetTable", "classnt_1_1NetworkTableInstance.html#a9ff8c68eddac070d825193d3253b612c", null ],
     [ "IsConnected", "classnt_1_1NetworkTableInstance.html#a1dd171401cb72e7e4a5073840584ecb6", null ],
     [ "LoadEntries", "classnt_1_1NetworkTableInstance.html#a2e719996c8a6ebd3793cf6e65dfef372", null ],
     [ "LoadPersistent", "classnt_1_1NetworkTableInstance.html#ad2a2954180fd0f4567a4da0530d12450", null ],
@@ -50,13 +49,13 @@ var classnt_1_1NetworkTableInstance =
     [ "SavePersistent", "classnt_1_1NetworkTableInstance.html#ad0dd14529a1474df429c5d502ab135b1", null ],
     [ "SetNetworkIdentity", "classnt_1_1NetworkTableInstance.html#a3602e21183a54109cfe223514a9ec369", null ],
     [ "SetServer", "classnt_1_1NetworkTableInstance.html#ac2696d5bf7c58db8fe90f310ca7211be", null ],
-    [ "SetServer", "classnt_1_1NetworkTableInstance.html#a3ef436d8cc6a835595276de845b1ca58", null ],
+    [ "SetServer", "classnt_1_1NetworkTableInstance.html#a0f10003d42a9e2ba3dfe97bd6a35235b", null ],
     [ "SetServer", "classnt_1_1NetworkTableInstance.html#a6aed9131b2f0cca655e72af6f50fdcde", null ],
     [ "SetServerTeam", "classnt_1_1NetworkTableInstance.html#a9dee18833d1d25de28773507a13b6f63", null ],
     [ "SetUpdateRate", "classnt_1_1NetworkTableInstance.html#a8962efa788ed290e65665d3a6f627ea8", null ],
     [ "StartClient", "classnt_1_1NetworkTableInstance.html#a854f73644e3cba3b67d8a07ce71657cd", null ],
     [ "StartClient", "classnt_1_1NetworkTableInstance.html#ad7fff110cc9faab6ffb2917a305030fd", null ],
-    [ "StartClient", "classnt_1_1NetworkTableInstance.html#acec229a28b6cf913b5284b54dbc1f32c", null ],
+    [ "StartClient", "classnt_1_1NetworkTableInstance.html#adbabd597270de728466600289af0fed3", null ],
     [ "StartClient", "classnt_1_1NetworkTableInstance.html#ae1a560d462af9b6a7c92ea77e45c65f6", null ],
     [ "StartClientTeam", "classnt_1_1NetworkTableInstance.html#a262186f1bb98cdec1087f524493f6764", null ],
     [ "StartDSClient", "classnt_1_1NetworkTableInstance.html#a1cdbcfc6aa5e893afdbbeb437a56bdee", null ],

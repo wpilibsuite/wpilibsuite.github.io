@@ -10,9 +10,9 @@ var classfrc_1_1Pose2d =
     [ "operator-", "classfrc_1_1Pose2d.html#a08e349adffdba4f7a2fc1f9861b8040d", null ],
     [ "operator==", "classfrc_1_1Pose2d.html#a5fae46630528c38f60c221e481fb5f34", null ],
     [ "RelativeTo", "classfrc_1_1Pose2d.html#ab922c422989dfa732d5059b6ef787e91", null ],
-    [ "Rotation", "classfrc_1_1Pose2d.html#a7e855bba46f3a0f83e098527a7588398", null ],
+    [ "Rotation", "classfrc_1_1Pose2d.html#ab58cd85d929e96cbc40360409196921c", null ],
     [ "TransformBy", "classfrc_1_1Pose2d.html#a272dfc4cba966ee7eca6333b5d4cda09", null ],
-    [ "Translation", "classfrc_1_1Pose2d.html#a34567f895c51347ab7a412629491bccc", null ],
+    [ "Translation", "classfrc_1_1Pose2d.html#a94d982c067ee1e27a817e25a966805a6", null ],
     [ "X", "classfrc_1_1Pose2d.html#a24e0ea6b41a5b36ce9fbedb2bd774047", null ],
     [ "Y", "classfrc_1_1Pose2d.html#ad4cf5b44f1623e2b6d62323834a6a996", null ]
 ];

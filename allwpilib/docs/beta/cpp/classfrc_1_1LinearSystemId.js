@@ -1,13 +1,11 @@
 var classfrc_1_1LinearSystemId =
 [
-    [ "Acceleration_t", "classfrc_1_1LinearSystemId.html#a51c8f481c2d224b0dc56733a636dd4ac", null ],
-    [ "Velocity_t", "classfrc_1_1LinearSystemId.html#a7ac5852330ccb899e2fca03610259715", null ],
-    [ "DrivetrainVelocitySystem", "classfrc_1_1LinearSystemId.html#ae2e76a7e62120b3c4d09e6ed6a1530cb", null ],
-    [ "ElevatorSystem", "classfrc_1_1LinearSystemId.html#aaf89109692f4c594dc1f9132f904e191", null ],
-    [ "FlywheelSystem", "classfrc_1_1LinearSystemId.html#a225265f6ef0b6db54c95f9a42db0e10b", null ],
-    [ "IdentifyDrivetrainSystem", "classfrc_1_1LinearSystemId.html#a5e32d1d2708a55570aedbd1f5871c01d", null ],
-    [ "IdentifyDrivetrainSystem", "classfrc_1_1LinearSystemId.html#a4d1b0dd06307c7956fd84361f80c0b85", null ],
-    [ "IdentifyPositionSystem", "classfrc_1_1LinearSystemId.html#a21e94c56d387f6cf17d62a671c1b90bc", null ],
-    [ "IdentifyVelocitySystem", "classfrc_1_1LinearSystemId.html#a4c25cc196bc235afe55a3408e8d1bfe9", null ],
-    [ "SingleJointedArmSystem", "classfrc_1_1LinearSystemId.html#ac75cc825e18cd8b15113954b14469842", null ]
+    [ "DrivetrainVelocitySystem", "classfrc_1_1LinearSystemId.html#a307ffa3928fd91d869d7d4a2c69a156c", null ],
+    [ "ElevatorSystem", "classfrc_1_1LinearSystemId.html#a9c705d691b32e7aa8767dcd196b4bc80", null ],
+    [ "FlywheelSystem", "classfrc_1_1LinearSystemId.html#ae88f743980122d1e2c19ea4dd2c72edc", null ],
+    [ "IdentifyDrivetrainSystem", "classfrc_1_1LinearSystemId.html#a683b6de8c6a77b64329f0184b8f2bff2", null ],
+    [ "IdentifyDrivetrainSystem", "classfrc_1_1LinearSystemId.html#aa9880b786f4fe79178de1696f2a1a4ef", null ],
+    [ "IdentifyPositionSystem", "classfrc_1_1LinearSystemId.html#a9dfa2cb9de19595c5eb43d2842e00689", null ],
+    [ "IdentifyVelocitySystem", "classfrc_1_1LinearSystemId.html#a3f641ec6fbde2870ef410bc4a6275f48", null ],
+    [ "SingleJointedArmSystem", "classfrc_1_1LinearSystemId.html#a7e753e0d585deea31f230afaae6a6105", null ]
 ];

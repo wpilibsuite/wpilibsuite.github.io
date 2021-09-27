@@ -1,6 +1,5 @@
 var structnt_1_1EntryInfo =
 [
-    [ "swap", "structnt_1_1EntryInfo.html#a7311eaf43798609406870ba7d538ab67", null ],
     [ "entry", "structnt_1_1EntryInfo.html#ab7167b08836d591d9b01c93a63e8171a", null ],
     [ "flags", "structnt_1_1EntryInfo.html#ab48ca918a22d2c3e839f1913f8ce9cdf", null ],
     [ "last_change", "structnt_1_1EntryInfo.html#a03347bec53dd93082cd08efdcb50a571", null ],

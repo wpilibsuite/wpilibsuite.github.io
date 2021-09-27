@@ -1,21 +1,10 @@
 var classfrc_1_1DriverStation =
 [
-    [ "Alliance", "classfrc_1_1DriverStation.html#a5461226aab199d7e2fb0657cd2d81f58", [
-      [ "kRed", "classfrc_1_1DriverStation.html#a5461226aab199d7e2fb0657cd2d81f58a5da9a84ca70520011400bfa49e306a9d", null ],
-      [ "kBlue", "classfrc_1_1DriverStation.html#a5461226aab199d7e2fb0657cd2d81f58a42a734d9d3155f5969ade5b7681feb17", null ],
-      [ "kInvalid", "classfrc_1_1DriverStation.html#a5461226aab199d7e2fb0657cd2d81f58ace7ff78f7a39c61fdd25c7457108a314", null ]
-    ] ],
-    [ "MatchType", "classfrc_1_1DriverStation.html#a9213f6e23391b910d010820e16005352", [
-      [ "kNone", "classfrc_1_1DriverStation.html#a9213f6e23391b910d010820e16005352afea5f76f360e22893dc25f5709aadc63", null ],
-      [ "kPractice", "classfrc_1_1DriverStation.html#a9213f6e23391b910d010820e16005352a3ca8714d8429361152f9bd7dd7cba6d8", null ],
-      [ "kQualification", "classfrc_1_1DriverStation.html#a9213f6e23391b910d010820e16005352a36d814fe8f34840d39a2bf861b066e8c", null ],
-      [ "kElimination", "classfrc_1_1DriverStation.html#a9213f6e23391b910d010820e16005352a6ef6356038c94bcedf70efebf56127ce", null ]
-    ] ],
     [ "GetAlliance", "classfrc_1_1DriverStation.html#a08806a56ef8bf4e86ac48ba861093629", null ],
     [ "GetBatteryVoltage", "classfrc_1_1DriverStation.html#ad732bb08931c8a83fb5e59b8337003b0", null ],
     [ "GetEventName", "classfrc_1_1DriverStation.html#a3f96120f4127ae36efe3b4794ce593ed", null ],
     [ "GetGameSpecificMessage", "classfrc_1_1DriverStation.html#a0f1d2865a6db25d3e3b58c3d2e644f06", null ],
-    [ "GetInstance", "classfrc_1_1DriverStation.html#ab8aad79200fa541f5f8c0088550fabc3", null ],
+    [ "GetInstance", "classfrc_1_1DriverStation.html#adff237bb09b51fec1273b575e80c20d8", null ],
     [ "GetJoystickAxisType", "classfrc_1_1DriverStation.html#ab6ed31c5d97db6be7c372833382cd54f", null ],
     [ "GetJoystickIsXbox", "classfrc_1_1DriverStation.html#a8fe80d2df35c2fcf8e41c68e4c13d7ca", null ],
     [ "GetJoystickName", "classfrc_1_1DriverStation.html#a444531d8418dddc2a94a98fbc30d73a3", null ],
@@ -37,6 +26,7 @@ var classfrc_1_1DriverStation =
     [ "InAutonomous", "classfrc_1_1DriverStation.html#a5681a68e268dbe63d6b610ce80337bf4", null ],
     [ "InDisabled", "classfrc_1_1DriverStation.html#a7b24f8c140c5c5196be1ae596859d21e", null ],
     [ "InOperatorControl", "classfrc_1_1DriverStation.html#a484f3cf97334dd77fca574f5064fe49d", null ],
+    [ "InTeleop", "classfrc_1_1DriverStation.html#ab4404a646c2184d3721052dc8d71f5e6", null ],
     [ "InTest", "classfrc_1_1DriverStation.html#ac98420c7c614991b9279a50562580379", null ],
     [ "IsAutonomous", "classfrc_1_1DriverStation.html#aaa787ec876e11e0dd13b2287ead9144a", null ],
     [ "IsAutonomousEnabled", "classfrc_1_1DriverStation.html#a65a99a20988dc3b1c013c4898a81df85", null ],
@@ -50,10 +40,11 @@ var classfrc_1_1DriverStation =
     [ "IsNewControlData", "classfrc_1_1DriverStation.html#a6b8e41806640b8cdd13861bef92a6c1a", null ],
     [ "IsOperatorControl", "classfrc_1_1DriverStation.html#a76dbfee86d1a717cef4c9bd35c0f61d7", null ],
     [ "IsOperatorControlEnabled", "classfrc_1_1DriverStation.html#ab53352b4cc74bca7936b48a824d56a71", null ],
+    [ "IsTeleop", "classfrc_1_1DriverStation.html#a8ccd52aeecfeedfa4c5b3152c722c73e", null ],
+    [ "IsTeleopEnabled", "classfrc_1_1DriverStation.html#a4569055a17be6d13e353e22a6e72bf22", null ],
     [ "IsTest", "classfrc_1_1DriverStation.html#a4857bcaa88562d60a1ddbca1b36bca36", null ],
     [ "SilenceJoystickConnectionWarning", "classfrc_1_1DriverStation.html#ad92dee0301f96316ffd2a28a22ab9e54", null ],
     [ "WaitForData", "classfrc_1_1DriverStation.html#a17926a2d9ecf8fd16a2c8fb5eafe9080", null ],
     [ "WaitForData", "classfrc_1_1DriverStation.html#a77dc9aa0e52c50dea3dfd2bbf066ec97", null ],
-    [ "WakeupWaitForData", "classfrc_1_1DriverStation.html#a1b91ad93ca0de7be7e2d4d3723257e6f", null ],
-    [ "kJoystickPorts", "classfrc_1_1DriverStation.html#ae95b20dbb78d92dfd36b4f8d93f5ce2b", null ]
+    [ "WakeupWaitForData", "classfrc_1_1DriverStation.html#a1b91ad93ca0de7be7e2d4d3723257e6f", null ]
 ];

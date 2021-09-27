@@ -1,6 +1,8 @@
 var dir_297dc702852f645e4b9e531dac2da27d =
 [
     [ "AddressableLEDSim.h", "AddressableLEDSim_8h_source.html", null ],
+    [ "ADXL345Sim.h", "ADXL345Sim_8h_source.html", null ],
+    [ "ADXL362Sim.h", "ADXL362Sim_8h_source.html", null ],
     [ "ADXRS450_GyroSim.h", "ADXRS450__GyroSim_8h_source.html", null ],
     [ "AnalogEncoderSim.h", "AnalogEncoderSim_8h_source.html", null ],
     [ "AnalogGyroSim.h", "AnalogGyroSim_8h_source.html", null ],
@@ -23,7 +25,8 @@ var dir_297dc702852f645e4b9e531dac2da27d =
     [ "GenericHIDSim.h", "GenericHIDSim_8h_source.html", null ],
     [ "JoystickSim.h", "JoystickSim_8h_source.html", null ],
     [ "LinearSystemSim.h", "LinearSystemSim_8h_source.html", null ],
-    [ "PDPSim.h", "PDPSim_8h_source.html", null ],
+    [ "PowerDistributionSim.h", "PowerDistributionSim_8h_source.html", null ],
+    [ "PS4ControllerSim.h", "PS4ControllerSim_8h_source.html", null ],
     [ "PWMSim.h", "PWMSim_8h_source.html", null ],
     [ "RelaySim.h", "RelaySim_8h_source.html", null ],
     [ "RoboRioSim.h", "RoboRioSim_8h_source.html", null ],
@@ -31,5 +34,6 @@ var dir_297dc702852f645e4b9e531dac2da27d =
     [ "SimHooks.h", "SimHooks_8h_source.html", null ],
     [ "SingleJointedArmSim.h", "SingleJointedArmSim_8h_source.html", null ],
     [ "SPIAccelerometerSim.h", "SPIAccelerometerSim_8h_source.html", null ],
+    [ "UltrasonicSim.h", "UltrasonicSim_8h_source.html", null ],
     [ "XboxControllerSim.h", "XboxControllerSim_8h_source.html", null ]
 ];

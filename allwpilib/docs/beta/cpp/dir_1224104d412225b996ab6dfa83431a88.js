@@ -28,9 +28,8 @@ var dir_1224104d412225b996ab6dfa83431a88 =
     [ "fs.h", "fs_8h_source.html", null ],
     [ "function_ref.h", "function__ref_8h_source.html", null ],
     [ "FunctionExtras.h", "FunctionExtras_8h.html", [
-      [ "unique_function", "classwpi_1_1unique__function.html", null ],
-      [ "unique_function< ReturnT(ParamTs...)>", "classwpi_1_1unique__function_3_01ReturnT_07ParamTs_8_8_8_08_4.html", "classwpi_1_1unique__function_3_01ReturnT_07ParamTs_8_8_8_08_4" ],
-      [ "OutOfLineStorageT", "structwpi_1_1unique__function_3_01ReturnT_07ParamTs_8_8_8_08_4_1_1StorageUnionT_1_1OutOfLineStorageT.html", "structwpi_1_1unique__function_3_01ReturnT_07ParamTs_8_8_8_08_4_1_1StorageUnionT_1_1OutOfLineStorageT" ]
+      [ "wpi::unique_function< ReturnT(ParamTs...)>", "classwpi_1_1unique__function_3_01ReturnT_07ParamTs_8_8_8_08_4.html", null ],
+      [ "wpi::unique_function< ReturnT(ParamTs...)>::StorageUnionT::OutOfLineStorageT", "structwpi_1_1unique__function_3_01ReturnT_07ParamTs_8_8_8_08_4_1_1StorageUnionT_1_1OutOfLineStorageT.html", null ]
     ] ],
     [ "future.h", "future_8h_source.html", null ],
     [ "Hashing.h", "Hashing_8h_source.html", null ],
@@ -50,7 +49,7 @@ var dir_1224104d412225b996ab6dfa83431a88 =
     [ "ManagedStatic.h", "ManagedStatic_8h_source.html", null ],
     [ "MapVector.h", "MapVector_8h_source.html", null ],
     [ "MathExtras.h", "MathExtras_8h_source.html", null ],
-    [ "MemAlloc.h", "MemAlloc_8h.html", "MemAlloc_8h" ],
+    [ "MemAlloc.h", "MemAlloc_8h.html", null ],
     [ "MimeTypes.h", "MimeTypes_8h_source.html", null ],
     [ "mutex.h", "mutex_8h_source.html", null ],
     [ "NetworkAcceptor.h", "NetworkAcceptor_8h_source.html", null ],
@@ -86,6 +85,7 @@ var dir_1224104d412225b996ab6dfa83431a88 =
     [ "StringExtras.h", "StringExtras_8h_source.html", null ],
     [ "StringMap.h", "StringMap_8h_source.html", null ],
     [ "SwapByteOrder.h", "SwapByteOrder_8h_source.html", null ],
+    [ "SymbolExports.h", "SymbolExports_8h_source.html", null ],
     [ "TCPAcceptor.h", "TCPAcceptor_8h_source.html", null ],
     [ "TCPConnector.h", "TCPConnector_8h_source.html", null ],
     [ "TCPStream.h", "TCPStream_8h_source.html", null ],
@@ -95,7 +95,7 @@ var dir_1224104d412225b996ab6dfa83431a88 =
     [ "UidVector.h", "UidVector_8h_source.html", null ],
     [ "UrlParser.h", "UrlParser_8h_source.html", null ],
     [ "VersionTuple.h", "VersionTuple_8h.html", [
-      [ "VersionTuple", "classwpi_1_1VersionTuple.html", "classwpi_1_1VersionTuple" ]
+      [ "wpi::VersionTuple", "classwpi_1_1VersionTuple.html", "classwpi_1_1VersionTuple" ]
     ] ],
     [ "WebSocket.h", "WebSocket_8h_source.html", null ],
     [ "WebSocketServer.h", "WebSocketServer_8h_source.html", null ],

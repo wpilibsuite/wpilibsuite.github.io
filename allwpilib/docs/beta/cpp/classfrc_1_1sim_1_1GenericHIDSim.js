@@ -15,6 +15,5 @@ var classfrc_1_1sim_1_1GenericHIDSim =
     [ "SetPOVCount", "classfrc_1_1sim_1_1GenericHIDSim.html#abd1bf586dcd6cd0c72e791211f07fad0", null ],
     [ "SetRawAxis", "classfrc_1_1sim_1_1GenericHIDSim.html#aaf8bd426f1931bda1daa5c2feb14c9f7", null ],
     [ "SetRawButton", "classfrc_1_1sim_1_1GenericHIDSim.html#a42deac0815dc2fb3967c636c0695349c", null ],
-    [ "SetType", "classfrc_1_1sim_1_1GenericHIDSim.html#a8d568347fc2e9ee472ad20872ffb9cad", null ],
-    [ "m_port", "classfrc_1_1sim_1_1GenericHIDSim.html#af0d24f353d1890d03ff68ae1f71330ae", null ]
+    [ "SetType", "classfrc_1_1sim_1_1GenericHIDSim.html#a8d568347fc2e9ee472ad20872ffb9cad", null ]
 ];

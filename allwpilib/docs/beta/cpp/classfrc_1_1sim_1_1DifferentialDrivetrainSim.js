@@ -1,15 +1,14 @@
 var classfrc_1_1sim_1_1DifferentialDrivetrainSim =
 [
-    [ "KitbotGearing", "classfrc_1_1sim_1_1DifferentialDrivetrainSim_1_1KitbotGearing.html", "classfrc_1_1sim_1_1DifferentialDrivetrainSim_1_1KitbotGearing" ],
-    [ "KitbotMotor", "classfrc_1_1sim_1_1DifferentialDrivetrainSim_1_1KitbotMotor.html", "classfrc_1_1sim_1_1DifferentialDrivetrainSim_1_1KitbotMotor" ],
-    [ "KitbotWheelSize", "classfrc_1_1sim_1_1DifferentialDrivetrainSim_1_1KitbotWheelSize.html", "classfrc_1_1sim_1_1DifferentialDrivetrainSim_1_1KitbotWheelSize" ],
-    [ "State", "classfrc_1_1sim_1_1DifferentialDrivetrainSim_1_1State.html", "classfrc_1_1sim_1_1DifferentialDrivetrainSim_1_1State" ],
+    [ "KitbotGearing", "classfrc_1_1sim_1_1DifferentialDrivetrainSim_1_1KitbotGearing.html", null ],
+    [ "KitbotMotor", "classfrc_1_1sim_1_1DifferentialDrivetrainSim_1_1KitbotMotor.html", null ],
+    [ "KitbotWheelSize", "classfrc_1_1sim_1_1DifferentialDrivetrainSim_1_1KitbotWheelSize.html", null ],
+    [ "State", "classfrc_1_1sim_1_1DifferentialDrivetrainSim_1_1State.html", null ],
     [ "DifferentialDrivetrainSim", "classfrc_1_1sim_1_1DifferentialDrivetrainSim.html#af783414d0b6f57f46f2fd539e6395df4", null ],
     [ "DifferentialDrivetrainSim", "classfrc_1_1sim_1_1DifferentialDrivetrainSim.html#a0302a3b4cc9ac4322d22d3703e2f33e3", null ],
-    [ "ClampInput", "classfrc_1_1sim_1_1DifferentialDrivetrainSim.html#a51cf5881c381ed3df8aeebb068fa56c6", null ],
+    [ "ClampInput", "classfrc_1_1sim_1_1DifferentialDrivetrainSim.html#ac3a3ac1bb3bcf76217f2a2721931695b", null ],
     [ "CreateKitbotSim", "classfrc_1_1sim_1_1DifferentialDrivetrainSim.html#a55667f49b1fa0d90c777b3c9a7590333", null ],
     [ "CreateKitbotSim", "classfrc_1_1sim_1_1DifferentialDrivetrainSim.html#aee3b0c948e0fd5c6069d0c5414270898", null ],
-    [ "Dynamics", "classfrc_1_1sim_1_1DifferentialDrivetrainSim.html#adac2bc6333cb1b55051c5c6c810a83fb", null ],
     [ "GetCurrentDraw", "classfrc_1_1sim_1_1DifferentialDrivetrainSim.html#a020300fd572de4f7b4b7d8953b853fb4", null ],
     [ "GetGearing", "classfrc_1_1sim_1_1DifferentialDrivetrainSim.html#ada02b3e17b4353563468ce53dd376746", null ],
     [ "GetHeading", "classfrc_1_1sim_1_1DifferentialDrivetrainSim.html#af8c7b04f7f35139a8534eba5e5bad7ec", null ],
@@ -23,6 +22,6 @@ var classfrc_1_1sim_1_1DifferentialDrivetrainSim =
     [ "SetGearing", "classfrc_1_1sim_1_1DifferentialDrivetrainSim.html#a3737c63d134d7f50fb3ae1699c5f3bab", null ],
     [ "SetInputs", "classfrc_1_1sim_1_1DifferentialDrivetrainSim.html#ade833f4304b92adf5c80027f5325e4b6", null ],
     [ "SetPose", "classfrc_1_1sim_1_1DifferentialDrivetrainSim.html#aa42de7657f2eee937be7640c0980e773", null ],
-    [ "SetState", "classfrc_1_1sim_1_1DifferentialDrivetrainSim.html#a53d31a4a65ecca25e73d532d285ff5bd", null ],
+    [ "SetState", "classfrc_1_1sim_1_1DifferentialDrivetrainSim.html#a67cb3f48ed22951f79ff241ea94e6c09", null ],
     [ "Update", "classfrc_1_1sim_1_1DifferentialDrivetrainSim.html#a108d0f3ace07bb2d37c5121dc655194d", null ]
 ];

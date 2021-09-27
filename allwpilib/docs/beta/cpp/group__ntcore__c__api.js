@@ -14,22 +14,7 @@ var group__ntcore__c__api =
       [ "len", "structNT__String.html#a1d7946763b33ed97c9f12a34793695c1", null ],
       [ "str", "structNT__String.html#a2807632705eb3aa7224cff827f3fb001", null ]
     ] ],
-    [ "NT_Value", "structNT__Value.html", [
-      [ "arr", "structNT__Value.html#aec85a7da81866a1e38efcdcfa33249f7", null ],
-      [ "arr", "structNT__Value.html#a585c8bbb8b307eaf70d47e91285b60e8", null ],
-      [ "arr", "structNT__Value.html#a478ad5dcb928252836bfea3489751991", null ],
-      [ "arr_boolean", "structNT__Value.html#a180d965aa627c3277b35e3791717672c", null ],
-      [ "arr_double", "structNT__Value.html#a175fa11ac7e2dae2f80b16cd8e246e23", null ],
-      [ "arr_string", "structNT__Value.html#aaa1209c02f9894aef302c329b44bcba7", null ],
-      [ "data", "structNT__Value.html#aafef06228b31371e9a60bd93025b796a", null ],
-      [ "last_change", "structNT__Value.html#abf83749e6dcf2eda3867a904e8ac8c80", null ],
-      [ "size", "structNT__Value.html#ae8a4e621562c50054b6759e43323dc7f", null ],
-      [ "type", "structNT__Value.html#a068c2a61fb025e5502658f99a189c842", null ],
-      [ "v_boolean", "structNT__Value.html#ad57d2f0aaa820d67e013218183b9a329", null ],
-      [ "v_double", "structNT__Value.html#ab4fee8c0729e8886dac8bb6a2ba13854", null ],
-      [ "v_raw", "structNT__Value.html#a71b27798d67c53e6635d7c38997e3d31", null ],
-      [ "v_string", "structNT__Value.html#a640ba6c5b32013f1a5e09597e4b77470", null ]
-    ] ],
+    [ "NT_Value", "structNT__Value.html", null ],
     [ "NT_EntryInfo", "structNT__EntryInfo.html", [
       [ "entry", "structNT__EntryInfo.html#a968524217feeaf2fb56d2cacf5cbde2e", null ],
       [ "flags", "structNT__EntryInfo.html#ab7e7b505dfb034ff66d24598763b8812", null ],
@@ -44,29 +29,10 @@ var group__ntcore__c__api =
       [ "remote_ip", "structNT__ConnectionInfo.html#a30da15ce52b23bbbc867a201548e1d48", null ],
       [ "remote_port", "structNT__ConnectionInfo.html#a62e6f419f8918e0e3c72aa2a627685e1", null ]
     ] ],
-    [ "NT_RpcParamDef", "structNT__RpcParamDef.html", [
-      [ "def_value", "structNT__RpcParamDef.html#a5c5fff00fad8fd8f203ac701d36de1b5", null ],
-      [ "name", "structNT__RpcParamDef.html#ae8e98442adf69612868ea66f3eeb6160", null ]
-    ] ],
-    [ "NT_RpcResultDef", "structNT__RpcResultDef.html", [
-      [ "name", "structNT__RpcResultDef.html#a62336ded4b4ab687033d2a8cc20c3046", null ],
-      [ "type", "structNT__RpcResultDef.html#a00736f2d6b25a1de5e45eaa0331f62c4", null ]
-    ] ],
-    [ "NT_RpcDefinition", "structNT__RpcDefinition.html", [
-      [ "name", "structNT__RpcDefinition.html#a756e9d2c5f8dbcea4c383733e515c828", null ],
-      [ "num_params", "structNT__RpcDefinition.html#abbf49673dadfd947de0d864fe18ce43a", null ],
-      [ "num_results", "structNT__RpcDefinition.html#a6a1b6d4fa0bbe5a182054655fcdfd339", null ],
-      [ "params", "structNT__RpcDefinition.html#ad5f48bece658fa4249a06d15b7cc0d56", null ],
-      [ "results", "structNT__RpcDefinition.html#ae90e219e44b7ca32810897b66f7f8f05", null ],
-      [ "version", "structNT__RpcDefinition.html#ac72ea4a0eb3fea8e4ab74e86789e9d8f", null ]
-    ] ],
-    [ "NT_RpcAnswer", "structNT__RpcAnswer.html", [
-      [ "call", "structNT__RpcAnswer.html#aedc5312ddaa0e8c9e1046ae2ef3664e7", null ],
-      [ "conn", "structNT__RpcAnswer.html#ad502f88254b28fbf6e45b91e2d08981b", null ],
-      [ "entry", "structNT__RpcAnswer.html#ae89ccb4735201c054dea36a6f6e8aadf", null ],
-      [ "name", "structNT__RpcAnswer.html#ab4bb3fc841224a6b5ac572ccabc9ff63", null ],
-      [ "params", "structNT__RpcAnswer.html#af1689a56ef1471ceddb48a8a099d4662", null ]
-    ] ],
+    [ "NT_RpcParamDef", "structNT__RpcParamDef.html", null ],
+    [ "NT_RpcResultDef", "structNT__RpcResultDef.html", null ],
+    [ "NT_RpcDefinition", "structNT__RpcDefinition.html", null ],
+    [ "NT_RpcAnswer", "structNT__RpcAnswer.html", null ],
     [ "NT_EntryNotification", "structNT__EntryNotification.html", [
       [ "entry", "structNT__EntryNotification.html#af1127cfc472c444761c27723e4df8389", null ],
       [ "flags", "structNT__EntryNotification.html#ac22a071e4cb9648cdd894dfda1ade6ff", null ],
@@ -80,7 +46,7 @@ var group__ntcore__c__api =
       [ "listener", "structNT__ConnectionNotification.html#a94cc2f3b8a74683859f14f9d5a9c1ea1", null ]
     ] ],
     [ "NT_LogMessage", "structNT__LogMessage.html", [
-      [ "filename", "structNT__LogMessage.html#a45b1bd2a57012283a32f7e56fbc543b1", null ],
+      [ "filename", "structNT__LogMessage.html#a12e640934b547aa39fc27ff46225151d", null ],
       [ "level", "structNT__LogMessage.html#a0fcdc62e2927be09f6d25da3946e84a4", null ],
       [ "line", "structNT__LogMessage.html#af7c8c2ce49f205df7460f415cb7842af", null ],
       [ "logger", "structNT__LogMessage.html#aa8431f76d15e80d1fac24dc791aac454", null ],

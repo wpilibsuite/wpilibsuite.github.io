@@ -5,7 +5,7 @@ var classfrc_1_1Shuffleboard =
     [ "ClearRecordingFileNameFormat", "classfrc_1_1Shuffleboard.html#ad2c9a24d42a9af896484d6c86bb11c7a", null ],
     [ "DisableActuatorWidgets", "classfrc_1_1Shuffleboard.html#abf7d073ac43eadf771a0ddb0798badd1", null ],
     [ "EnableActuatorWidgets", "classfrc_1_1Shuffleboard.html#a809ca18b657c08273a7a282997f3437e", null ],
-    [ "GetTab", "classfrc_1_1Shuffleboard.html#ae563aff74c8f143e8f80e1650c37d001", null ],
+    [ "GetTab", "classfrc_1_1Shuffleboard.html#a2ea58d4b33df9a5665c3fcaea6eaecd7", null ],
     [ "SelectTab", "classfrc_1_1Shuffleboard.html#a236723565aece950c4d7cffe23e5dc79", null ],
     [ "SelectTab", "classfrc_1_1Shuffleboard.html#a50bf9fe6514999fabd8f84229bfa3cb5", null ],
     [ "SetRecordingFileNameFormat", "classfrc_1_1Shuffleboard.html#a196b5a5897e3682469eb5d49e4908d34", null ],
