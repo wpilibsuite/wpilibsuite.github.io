@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-1-3-gcc31079</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-2-2-g7b3f622</span>
    </div>
   </td>
  </tr>
@@ -100,67 +100,67 @@ $(document).ready(function(){initNavTree('deprecated.html',''); initResizable();
 <dt>Member <a class="el" href="classfrc_1_1CameraServer.html#aa164416827096a45eb9e4fd14f2a3e61">frc::CameraServer::SetSize</a>  (int size)</dt>
 <dd><a class="anchor" id="_deprecated000011"></a>Use SetResolution on the UsbCamera returned by <a class="el" href="classfrc_1_1CameraServer.html#a0eb9f7657053544a951403086f178f2e" title="Start automatically capturing images to send to the dashboard.">StartAutomaticCapture()</a> instead.  </dd>
 <dt>Class <a class="el" href="classfrc_1_1Controller.html">frc::Controller</a>  </dt>
-<dd><a class="anchor" id="_deprecated000017"></a>Only used by the deprecated <a class="el" href="classfrc_1_1PIDController.html" title="Class implements a PID Control Loop.">PIDController</a>  </dd>
+<dd><a class="anchor" id="_deprecated000029"></a>Only used by the deprecated <a class="el" href="classfrc_1_1PIDController.html" title="Class implements a PID Control Loop.">PIDController</a>  </dd>
 <dt>Member <a class="el" href="classfrc_1_1DriverStation.html#adff237bb09b51fec1273b575e80c20d8">frc::DriverStation::GetInstance</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000013"></a>Use the static methods  </dd>
+<dd><a class="anchor" id="_deprecated000024"></a>Use the static methods  </dd>
 <dt>Member <a class="el" href="classfrc_1_1DriverStation.html#a484f3cf97334dd77fca574f5064fe49d">frc::DriverStation::InOperatorControl</a>  (bool entering)</dt>
-<dd><a class="anchor" id="_deprecated000016"></a>Use <a class="el" href="classfrc_1_1DriverStation.html#ab4404a646c2184d3721052dc8d71f5e6" title="Only to be used to tell the Driver Station what code you claim to be executing for diagnostic purpose...">InTeleop()</a> instead.  </dd>
+<dd><a class="anchor" id="_deprecated000027"></a>Use <a class="el" href="classfrc_1_1DriverStation.html#ab4404a646c2184d3721052dc8d71f5e6" title="Only to be used to tell the Driver Station what code you claim to be executing for diagnostic purpose...">InTeleop()</a> instead.  </dd>
 <dt>Member <a class="el" href="classfrc_1_1DriverStation.html#a76dbfee86d1a717cef4c9bd35c0f61d7">frc::DriverStation::IsOperatorControl</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000014"></a>Use <a class="el" href="classfrc_1_1DriverStation.html#a8ccd52aeecfeedfa4c5b3152c722c73e" title="Check if the DS is commanding teleop mode.">IsTeleop()</a> instead.  </dd>
+<dd><a class="anchor" id="_deprecated000025"></a>Use <a class="el" href="classfrc_1_1DriverStation.html#a8ccd52aeecfeedfa4c5b3152c722c73e" title="Check if the DS is commanding teleop mode.">IsTeleop()</a> instead.  </dd>
 <dt>Member <a class="el" href="classfrc_1_1DriverStation.html#ab53352b4cc74bca7936b48a824d56a71">frc::DriverStation::IsOperatorControlEnabled</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000015"></a>Use <a class="el" href="classfrc_1_1DriverStation.html#a4569055a17be6d13e353e22a6e72bf22" title="Check if the DS is commanding teleop mode and if it has enabled the robot.">IsTeleopEnabled()</a> instead.  </dd>
+<dd><a class="anchor" id="_deprecated000026"></a>Use <a class="el" href="classfrc_1_1DriverStation.html#a4569055a17be6d13e353e22a6e72bf22" title="Check if the DS is commanding teleop mode and if it has enabled the robot.">IsTeleopEnabled()</a> instead.  </dd>
 <dt>Member <a class="el" href="classfrc_1_1Encoder.html#afc108813c67e3bffae125679d5583e6e">frc::Encoder::GetStopped</a>  () const override</dt>
-<dd><a class="anchor" id="_deprecated000027"></a>Use <a class="el" href="classfrc_1_1Encoder.html#a7e5580dcbcffc3a0b3482cf9956347a9" title="Set the minimum rate of the device before the hardware reports it stopped.">SetMinRate()</a> in favor of this method. This takes unscaled periods and <a class="el" href="classfrc_1_1Encoder.html#a7e5580dcbcffc3a0b3482cf9956347a9" title="Set the minimum rate of the device before the hardware reports it stopped.">SetMinRate()</a> scales using value from <a class="el" href="classfrc_1_1Encoder.html#ac50921f87e0e3cc4785a4b1e157da433" title="Set the distance per pulse for this encoder.">SetDistancePerPulse()</a>. </dd>
+<dd><a class="anchor" id="_deprecated000023"></a>Use <a class="el" href="classfrc_1_1Encoder.html#a7e5580dcbcffc3a0b3482cf9956347a9" title="Set the minimum rate of the device before the hardware reports it stopped.">SetMinRate()</a> in favor of this method. This takes unscaled periods and <a class="el" href="classfrc_1_1Encoder.html#a7e5580dcbcffc3a0b3482cf9956347a9" title="Set the minimum rate of the device before the hardware reports it stopped.">SetMinRate()</a> scales using value from <a class="el" href="classfrc_1_1Encoder.html#ac50921f87e0e3cc4785a4b1e157da433" title="Set the distance per pulse for this encoder.">SetDistancePerPulse()</a>. </dd>
 <dt>Member <a class="el" href="classfrc_1_1IterativeRobotBase.html#adaad67b57154bd85fef26a742d9c66b2">frc::IterativeRobotBase::IterativeRobotBase</a>  (double period)</dt>
-<dd><a class="anchor" id="_deprecated000028"></a>Use <a class="el" href="classfrc_1_1IterativeRobotBase.html#afee5b7301bc0f4579d76f840a18f2cca" title="Constructor for IterativeRobotBase.">IterativeRobotBase(units::second_t period)</a> with unit-safety instead  </dd>
+<dd><a class="anchor" id="_deprecated000016"></a>Use <a class="el" href="classfrc_1_1IterativeRobotBase.html#afee5b7301bc0f4579d76f840a18f2cca" title="Constructor for IterativeRobotBase.">IterativeRobotBase(units::second_t period)</a> with unit-safety instead  </dd>
 <dt>Member <a class="el" href="classfrc_1_1LiveWindow.html#ad5201c8a5477624e00f6d4d09bc8fee0">frc::LiveWindow::GetInstance</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000018"></a>Use the static methods unless guaranteeing <a class="el" href="classfrc_1_1LiveWindow.html" title="The LiveWindow class is the public interface for putting sensors and actuators on the LiveWindow.">LiveWindow</a> is instantiated  </dd>
+<dd><a class="anchor" id="_deprecated000032"></a>Use the static methods unless guaranteeing <a class="el" href="classfrc_1_1LiveWindow.html" title="The LiveWindow class is the public interface for putting sensors and actuators on the LiveWindow.">LiveWindow</a> is instantiated  </dd>
 <dt>Class <a class="el" href="classfrc_1_1PIDBase.html">frc::PIDBase</a>  </dt>
-<dd><a class="anchor" id="_deprecated000035"></a>All APIs which use this have been deprecated.  </dd>
+<dd><a class="anchor" id="_deprecated000033"></a>All APIs which use this have been deprecated.  </dd>
 <dt>Class <a class="el" href="classfrc_1_1PIDController.html">frc::PIDController</a>  </dt>
 <dd><a class="anchor" id="_deprecated000034"></a>Use <a class="el" href="classfrc2_1_1PIDController.html" title="Implements a PID control loop.">frc2::PIDController</a> class instead.  </dd>
 <dt>Class <a class="el" href="classfrc_1_1PIDInterface.html">frc::PIDInterface</a>  </dt>
-<dd><a class="anchor" id="_deprecated000033"></a>All APIs which use this have been deprecated.  </dd>
+<dd><a class="anchor" id="_deprecated000035"></a>All APIs which use this have been deprecated.  </dd>
 <dt>Member <a class="el" href="classfrc_1_1Preferences.html#a515f50bbde384332273c6f4011fbb349">frc::Preferences::GetInstance</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000019"></a>Use the static methods  </dd>
+<dd><a class="anchor" id="_deprecated000015"></a>Use the static methods  </dd>
 <dt>Member <a class="el" href="classfrc_1_1RobotBase.html#ac9693ec00691571f9825d96c0ec86128">frc::RobotBase::IsOperatorControl</a>  () const</dt>
-<dd><a class="anchor" id="_deprecated000025"></a>Use <a class="el" href="classfrc_1_1RobotBase.html#abb315455cf2315e223523882454ca1c7" title="Determine if the robot is currently in Operator Control mode.">IsTeleop()</a> instead.  </dd>
+<dd><a class="anchor" id="_deprecated000013"></a>Use <a class="el" href="classfrc_1_1RobotBase.html#abb315455cf2315e223523882454ca1c7" title="Determine if the robot is currently in Operator Control mode.">IsTeleop()</a> instead.  </dd>
 <dt>Member <a class="el" href="classfrc_1_1RobotBase.html#a442f6703ea6236dc05d12e877cbf638b">frc::RobotBase::IsOperatorControlEnabled</a>  () const</dt>
-<dd><a class="anchor" id="_deprecated000026"></a>Use <a class="el" href="classfrc_1_1RobotBase.html#aeb6120060634dacb79883a3f76154e20" title="Determine if the robot is current in Operator Control mode and enabled.">IsTeleopEnabled()</a> instead.  </dd>
+<dd><a class="anchor" id="_deprecated000014"></a>Use <a class="el" href="classfrc_1_1RobotBase.html#aeb6120060634dacb79883a3f76154e20" title="Determine if the robot is current in Operator Control mode and enabled.">IsTeleopEnabled()</a> instead.  </dd>
 <dt>Member <a class="el" href="classfrc_1_1RobotDriveBase.html#ad88dd6640af8d27a012e9940f1d64fda">frc::RobotDriveBase::ApplyDeadband</a>  (double number, double deadband)</dt>
-<dd><a class="anchor" id="_deprecated000029"></a>Use <a class="el" href="classfrc_1_1RobotDriveBase.html#ad88dd6640af8d27a012e9940f1d64fda" title="Returns 0.0 if the given value is within the specified range around zero.">ApplyDeadband()</a> in <a class="el" href="MathUtil_8h_source.html">frc/MathUtil.h</a>.  </dd>
+<dd><a class="anchor" id="_deprecated000028"></a>Use <a class="el" href="classfrc_1_1RobotDriveBase.html#ad88dd6640af8d27a012e9940f1d64fda" title="Returns 0.0 if the given value is within the specified range around zero.">ApplyDeadband()</a> in <a class="el" href="MathUtil_8h_source.html">frc/MathUtil.h</a>.  </dd>
 <dt>Member <a class="el" href="classfrc_1_1SendableChooser.html#a6d0bcabbab460e10f846abe03865641e">frc::SendableChooser&lt; T &gt;::AddDefault</a>  (std::string_view name, T object)</dt>
-<dd><a class="anchor" id="_deprecated000032"></a>use <a class="el" href="classfrc_1_1SendableChooser.html#a347cd324e81176fa4e32f2a0f7a77158" title="Add the given object to the list of options and marks it as the default.">SetDefaultOption(std::string_view name, T object)</a> instead. </dd>
+<dd><a class="anchor" id="_deprecated000031"></a>use <a class="el" href="classfrc_1_1SendableChooser.html#a347cd324e81176fa4e32f2a0f7a77158" title="Add the given object to the list of options and marks it as the default.">SetDefaultOption(std::string_view name, T object)</a> instead. </dd>
 <dt>Member <a class="el" href="classfrc_1_1SendableChooser.html#ab01426bbcb86a824bd0e9af426b47ba0">frc::SendableChooser&lt; T &gt;::AddObject</a>  (std::string_view name, T object)</dt>
-<dd><a class="anchor" id="_deprecated000031"></a>use <a class="el" href="classfrc_1_1SendableChooser.html#aaa1f52d5ecc0929bffcefb2801b1c3cf" title="Adds the given object to the list of options.">AddOption(std::string_view name, T object)</a> instead. </dd>
+<dd><a class="anchor" id="_deprecated000030"></a>use <a class="el" href="classfrc_1_1SendableChooser.html#aaa1f52d5ecc0929bffcefb2801b1c3cf" title="Adds the given object to the list of options.">AddOption(std::string_view name, T object)</a> instead. </dd>
 <dt>Member <a class="el" href="classfrc_1_1SPI.html#aa071c1d8e6c6c9995db38dd9c1dd03b4">frc::SPI::InitAccumulator</a>  (double period, int cmd, int xferSize, int validMask, int validValue, int dataShift, int dataSize, bool isSigned, bool bigEndian)</dt>
-<dd><a class="anchor" id="_deprecated000024"></a>Use unit-safe version instead. InitAccumulator(units::second_t period, int cmd, int xferSize, int validMask, int validValue, int dataShift, int dataSize, bool isSigned, bool bigEndian) </dd>
+<dd><a class="anchor" id="_deprecated000022"></a>Use unit-safe version instead. InitAccumulator(units::second_t period, int cmd, int xferSize, int validMask, int validValue, int dataShift, int dataSize, bool isSigned, bool bigEndian) </dd>
 <dt>Member <a class="el" href="classfrc_1_1SPI.html#a13df61aff07325c9ea6768ef161db5be">frc::SPI::SetSampleDataOnFalling</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000021"></a>Use <a class="el" href="classfrc_1_1SPI.html#ab4cc05f9f0c8ae3ce16757ce4b1c4a80" title="Configure that the data is stable on the trailing edge and the data changes on the leading edge.">SetSampleDataOnTrailingEdge()</a> instead. </dd>
+<dd><a class="anchor" id="_deprecated000019"></a>Use <a class="el" href="classfrc_1_1SPI.html#ab4cc05f9f0c8ae3ce16757ce4b1c4a80" title="Configure that the data is stable on the trailing edge and the data changes on the leading edge.">SetSampleDataOnTrailingEdge()</a> instead. </dd>
 <dt>Member <a class="el" href="classfrc_1_1SPI.html#aaa51bf86f6f5fb142af12f767192a225">frc::SPI::SetSampleDataOnRising</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000022"></a>Use <a class="el" href="classfrc_1_1SPI.html#ab78a7f35b03ccc3d62b656d5430a5eb9" title="Configure that the data is stable on the leading edge and the data changes on the trailing edge.">SetSampleDataOnLeadingEdge()</a> instead. </dd>
+<dd><a class="anchor" id="_deprecated000020"></a>Use <a class="el" href="classfrc_1_1SPI.html#ab78a7f35b03ccc3d62b656d5430a5eb9" title="Configure that the data is stable on the leading edge and the data changes on the trailing edge.">SetSampleDataOnLeadingEdge()</a> instead. </dd>
 <dt>Member <a class="el" href="classfrc_1_1SPI.html#aa12a3a1bf689e0bfdb7452d89af5124e">frc::SPI::StartAutoRate</a>  (double period)</dt>
-<dd><a class="anchor" id="_deprecated000023"></a>use unit-safe <a class="el" href="classfrc_1_1SPI.html#a7d77b758daa0cc642fcd08482b70f07d" title="Start running the automatic SPI transfer engine at a periodic rate.">StartAutoRate(units::second_t period)</a> instead. </dd>
+<dd><a class="anchor" id="_deprecated000021"></a>use unit-safe <a class="el" href="classfrc_1_1SPI.html#a7d77b758daa0cc642fcd08482b70f07d" title="Start running the automatic SPI transfer engine at a periodic rate.">StartAutoRate(units::second_t period)</a> instead. </dd>
 <dt>Member <a class="el" href="classfrc_1_1TimedRobot.html#a70890d7283a8afc101de444e99b6fb7a">frc::TimedRobot::TimedRobot</a>  (double period)</dt>
-<dd><a class="anchor" id="_deprecated000020"></a>use unit safe constructor instead. <a class="el" href="classfrc_1_1TimedRobot.html" title="TimedRobot implements the IterativeRobotBase robot program framework.">TimedRobot</a>(units::second_t period = kDefaultPeriod) </dd>
+<dd><a class="anchor" id="_deprecated000017"></a>use unit safe constructor instead. <a class="el" href="classfrc_1_1TimedRobot.html" title="TimedRobot implements the IterativeRobotBase robot program framework.">TimedRobot</a>(units::second_t period = kDefaultPeriod) </dd>
 <dt>Member <a class="el" href="classfrc_1_1Timer.html#a0a2478b711ccf54ee0dc208cd7078c3d">frc::Timer::HasPeriodPassed</a>  (units::second_t period)</dt>
-<dd><a class="anchor" id="_deprecated000030"></a>Use <a class="el" href="classfrc_1_1Timer.html#a1ee15601a96a9539926848ab7bc33611" title="Check if the period specified has passed and if it has, advance the start time by that period.">AdvanceIfElapsed()</a> instead.  </dd>
-<dt>Member <a class="el" href="classwpi_1_1SendableHelper.html#a7ce2af28692ec77440d09ab8c2d36425">wpi::SendableHelper&lt; Derived &gt;::AddChild</a>  (std::shared_ptr&lt; Sendable &gt; child)</dt>
-<dd><a class="anchor" id="_deprecated000006"></a>use <a class="el" href="classwpi_1_1SendableRegistry.html#ac2afd88e07f863cb483d4dd27ae7248f" title="Adds a child object to an object.">SendableRegistry::AddChild()</a> </dd>
+<dd><a class="anchor" id="_deprecated000018"></a>Use <a class="el" href="classfrc_1_1Timer.html#a1ee15601a96a9539926848ab7bc33611" title="Check if the period specified has passed and if it has, advance the start time by that period.">AdvanceIfElapsed()</a> instead.  </dd>
 <dt>Member <a class="el" href="classwpi_1_1SendableHelper.html#a3e272258586ef98d2c1b8f6be76a1663">wpi::SendableHelper&lt; Derived &gt;::AddChild</a>  (void *child)</dt>
 <dd><a class="anchor" id="_deprecated000007"></a>use <a class="el" href="classwpi_1_1SendableRegistry.html#ac2afd88e07f863cb483d4dd27ae7248f" title="Adds a child object to an object.">SendableRegistry::AddChild()</a> </dd>
+<dt>Member <a class="el" href="classwpi_1_1SendableHelper.html#a7ce2af28692ec77440d09ab8c2d36425">wpi::SendableHelper&lt; Derived &gt;::AddChild</a>  (std::shared_ptr&lt; Sendable &gt; child)</dt>
+<dd><a class="anchor" id="_deprecated000006"></a>use <a class="el" href="classwpi_1_1SendableRegistry.html#ac2afd88e07f863cb483d4dd27ae7248f" title="Adds a child object to an object.">SendableRegistry::AddChild()</a> </dd>
 <dt>Member <a class="el" href="classwpi_1_1SendableHelper.html#ad914b3555af5651aaaa3d8b1cec83b91">wpi::SendableHelper&lt; Derived &gt;::GetName</a>  () const</dt>
 <dd><a class="anchor" id="_deprecated000001"></a>use <a class="el" href="classwpi_1_1SendableRegistry.html#a0a7ee8ac942d74550df792117c156c3c" title="Gets the name of an object.">SendableRegistry::GetName()</a> </dd>
 <dt>Member <a class="el" href="classwpi_1_1SendableHelper.html#ae661490f5da84e30594380eeb5d4952b">wpi::SendableHelper&lt; Derived &gt;::GetSubsystem</a>  () const</dt>
 <dd><a class="anchor" id="_deprecated000004"></a>use <a class="el" href="classwpi_1_1SendableRegistry.html#a43c045eb913718f9758ad78fe59e8697" title="Gets the subsystem name of an object.">SendableRegistry::GetSubsystem()</a>. </dd>
-<dt>Member <a class="el" href="classwpi_1_1SendableHelper.html#ab63e9f45842f45bfe5332041be0ef215">wpi::SendableHelper&lt; Derived &gt;::SetName</a>  (std::string_view name)</dt>
-<dd><a class="anchor" id="_deprecated000002"></a>use <a class="el" href="classwpi_1_1SendableRegistry.html#a4048e865587f2fe2b9f8b9ce32c5a9bf" title="Sets the name of an object.">SendableRegistry::SetName()</a> </dd>
-<dt>Member <a class="el" href="classwpi_1_1SendableHelper.html#a75eba171de041df5ccdd8118287f9511">wpi::SendableHelper&lt; Derived &gt;::SetName</a>  (std::string_view subsystem, std::string_view name)</dt>
-<dd><a class="anchor" id="_deprecated000003"></a>use <a class="el" href="classwpi_1_1SendableRegistry.html#a4048e865587f2fe2b9f8b9ce32c5a9bf" title="Sets the name of an object.">SendableRegistry::SetName()</a> </dd>
-<dt>Member <a class="el" href="classwpi_1_1SendableHelper.html#a4cc45e3b86841263aaf59223ffeb3c88">wpi::SendableHelper&lt; Derived &gt;::SetName</a>  (std::string_view moduleType, int channel)</dt>
-<dd><a class="anchor" id="_deprecated000008"></a>use <a class="el" href="classwpi_1_1SendableRegistry.html#a4048e865587f2fe2b9f8b9ce32c5a9bf" title="Sets the name of an object.">SendableRegistry::SetName()</a> </dd>
 <dt>Member <a class="el" href="classwpi_1_1SendableHelper.html#ab2953192a91f457768c3d879599ee924">wpi::SendableHelper&lt; Derived &gt;::SetName</a>  (std::string_view moduleType, int moduleNumber, int channel)</dt>
 <dd><a class="anchor" id="_deprecated000009"></a>use <a class="el" href="classwpi_1_1SendableRegistry.html#a4048e865587f2fe2b9f8b9ce32c5a9bf" title="Sets the name of an object.">SendableRegistry::SetName()</a> </dd>
+<dt>Member <a class="el" href="classwpi_1_1SendableHelper.html#a4cc45e3b86841263aaf59223ffeb3c88">wpi::SendableHelper&lt; Derived &gt;::SetName</a>  (std::string_view moduleType, int channel)</dt>
+<dd><a class="anchor" id="_deprecated000008"></a>use <a class="el" href="classwpi_1_1SendableRegistry.html#a4048e865587f2fe2b9f8b9ce32c5a9bf" title="Sets the name of an object.">SendableRegistry::SetName()</a> </dd>
+<dt>Member <a class="el" href="classwpi_1_1SendableHelper.html#a75eba171de041df5ccdd8118287f9511">wpi::SendableHelper&lt; Derived &gt;::SetName</a>  (std::string_view subsystem, std::string_view name)</dt>
+<dd><a class="anchor" id="_deprecated000003"></a>use <a class="el" href="classwpi_1_1SendableRegistry.html#a4048e865587f2fe2b9f8b9ce32c5a9bf" title="Sets the name of an object.">SendableRegistry::SetName()</a> </dd>
+<dt>Member <a class="el" href="classwpi_1_1SendableHelper.html#ab63e9f45842f45bfe5332041be0ef215">wpi::SendableHelper&lt; Derived &gt;::SetName</a>  (std::string_view name)</dt>
+<dd><a class="anchor" id="_deprecated000002"></a>use <a class="el" href="classwpi_1_1SendableRegistry.html#a4048e865587f2fe2b9f8b9ce32c5a9bf" title="Sets the name of an object.">SendableRegistry::SetName()</a> </dd>
 <dt>Member <a class="el" href="classwpi_1_1SendableHelper.html#a11434f29c9ef91c9975969fb88212482">wpi::SendableHelper&lt; Derived &gt;::SetSubsystem</a>  (std::string_view subsystem)</dt>
 <dd><a class="anchor" id="_deprecated000005"></a>use <a class="el" href="classwpi_1_1SendableRegistry.html#a4576e94034731e6336a6d921a838b81b" title="Sets the subsystem name of an object.">SendableRegistry::SetSubsystem()</a></dd>
 </dl>
@@ -170,7 +170,7 @@ $(document).ready(function(){initNavTree('deprecated.html',''); initResizable();
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Oct 4 2021 16:52:22 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Oct 10 2021 22:56:00 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
