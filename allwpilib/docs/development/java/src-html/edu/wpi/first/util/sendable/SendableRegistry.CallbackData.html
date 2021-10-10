@@ -506,26 +506,23 @@
 <span class="sourceLineNo">494</span><a id="line.494">          if (cause != null) {</a>
 <span class="sourceLineNo">495</span><a id="line.495">            throwable = cause;</a>
 <span class="sourceLineNo">496</span><a id="line.496">          }</a>
-<span class="sourceLineNo">497</span><a id="line.497">          System.out.println(</a>
-<span class="sourceLineNo">498</span><a id="line.498">              "Unhandled exception calling LiveWindow for "</a>
-<span class="sourceLineNo">499</span><a id="line.499">                  + comp.m_name</a>
-<span class="sourceLineNo">500</span><a id="line.500">                  + ": "</a>
-<span class="sourceLineNo">501</span><a id="line.501">                  + throwable.toString());</a>
-<span class="sourceLineNo">502</span><a id="line.502">          comp.m_liveWindow = false;</a>
-<span class="sourceLineNo">503</span><a id="line.503">        }</a>
-<span class="sourceLineNo">504</span><a id="line.504">        if (cbdata.data != null) {</a>
-<span class="sourceLineNo">505</span><a id="line.505">          if (comp.m_data == null) {</a>
-<span class="sourceLineNo">506</span><a id="line.506">            comp.m_data = new Object[dataHandle + 1];</a>
-<span class="sourceLineNo">507</span><a id="line.507">          } else if (dataHandle &gt;= comp.m_data.length) {</a>
-<span class="sourceLineNo">508</span><a id="line.508">            comp.m_data = Arrays.copyOf(comp.m_data, dataHandle + 1);</a>
-<span class="sourceLineNo">509</span><a id="line.509">          }</a>
-<span class="sourceLineNo">510</span><a id="line.510">          comp.m_data[dataHandle] = cbdata.data;</a>
-<span class="sourceLineNo">511</span><a id="line.511">        }</a>
-<span class="sourceLineNo">512</span><a id="line.512">      }</a>
-<span class="sourceLineNo">513</span><a id="line.513">    }</a>
-<span class="sourceLineNo">514</span><a id="line.514">    foreachComponents.clear();</a>
-<span class="sourceLineNo">515</span><a id="line.515">  }</a>
-<span class="sourceLineNo">516</span><a id="line.516">}</a>
+<span class="sourceLineNo">497</span><a id="line.497">          System.err.println("Unhandled exception calling LiveWindow for " + comp.m_name + ": ");</a>
+<span class="sourceLineNo">498</span><a id="line.498">          throwable.printStackTrace();</a>
+<span class="sourceLineNo">499</span><a id="line.499">          comp.m_liveWindow = false;</a>
+<span class="sourceLineNo">500</span><a id="line.500">        }</a>
+<span class="sourceLineNo">501</span><a id="line.501">        if (cbdata.data != null) {</a>
+<span class="sourceLineNo">502</span><a id="line.502">          if (comp.m_data == null) {</a>
+<span class="sourceLineNo">503</span><a id="line.503">            comp.m_data = new Object[dataHandle + 1];</a>
+<span class="sourceLineNo">504</span><a id="line.504">          } else if (dataHandle &gt;= comp.m_data.length) {</a>
+<span class="sourceLineNo">505</span><a id="line.505">            comp.m_data = Arrays.copyOf(comp.m_data, dataHandle + 1);</a>
+<span class="sourceLineNo">506</span><a id="line.506">          }</a>
+<span class="sourceLineNo">507</span><a id="line.507">          comp.m_data[dataHandle] = cbdata.data;</a>
+<span class="sourceLineNo">508</span><a id="line.508">        }</a>
+<span class="sourceLineNo">509</span><a id="line.509">      }</a>
+<span class="sourceLineNo">510</span><a id="line.510">    }</a>
+<span class="sourceLineNo">511</span><a id="line.511">    foreachComponents.clear();</a>
+<span class="sourceLineNo">512</span><a id="line.512">  }</a>
+<span class="sourceLineNo">513</span><a id="line.513">}</a>
 
 
 
