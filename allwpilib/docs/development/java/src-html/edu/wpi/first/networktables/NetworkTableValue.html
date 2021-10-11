@@ -490,34 +490,48 @@
 <span class="sourceLineNo">478</span><a id="line.478">    return Objects.hash(m_type, m_value);</a>
 <span class="sourceLineNo">479</span><a id="line.479">  }</a>
 <span class="sourceLineNo">480</span><a id="line.480"></a>
-<span class="sourceLineNo">481</span><a id="line.481">  static boolean[] toNative(Boolean[] arr) {</a>
-<span class="sourceLineNo">482</span><a id="line.482">    boolean[] out = new boolean[arr.length];</a>
-<span class="sourceLineNo">483</span><a id="line.483">    System.arraycopy(arr, 0, out, 0, arr.length);</a>
-<span class="sourceLineNo">484</span><a id="line.484">    return out;</a>
-<span class="sourceLineNo">485</span><a id="line.485">  }</a>
-<span class="sourceLineNo">486</span><a id="line.486"></a>
-<span class="sourceLineNo">487</span><a id="line.487">  static double[] toNative(Number[] arr) {</a>
-<span class="sourceLineNo">488</span><a id="line.488">    double[] out = new double[arr.length];</a>
-<span class="sourceLineNo">489</span><a id="line.489">    System.arraycopy(arr, 0, out, 0, arr.length);</a>
-<span class="sourceLineNo">490</span><a id="line.490">    return out;</a>
-<span class="sourceLineNo">491</span><a id="line.491">  }</a>
-<span class="sourceLineNo">492</span><a id="line.492"></a>
-<span class="sourceLineNo">493</span><a id="line.493">  static Boolean[] fromNative(boolean[] arr) {</a>
-<span class="sourceLineNo">494</span><a id="line.494">    Boolean[] out = new Boolean[arr.length];</a>
-<span class="sourceLineNo">495</span><a id="line.495">    System.arraycopy(arr, 0, out, 0, arr.length);</a>
-<span class="sourceLineNo">496</span><a id="line.496">    return out;</a>
-<span class="sourceLineNo">497</span><a id="line.497">  }</a>
-<span class="sourceLineNo">498</span><a id="line.498"></a>
-<span class="sourceLineNo">499</span><a id="line.499">  static Double[] fromNative(double[] arr) {</a>
-<span class="sourceLineNo">500</span><a id="line.500">    Double[] out = new Double[arr.length];</a>
-<span class="sourceLineNo">501</span><a id="line.501">    System.arraycopy(arr, 0, out, 0, arr.length);</a>
-<span class="sourceLineNo">502</span><a id="line.502">    return out;</a>
-<span class="sourceLineNo">503</span><a id="line.503">  }</a>
-<span class="sourceLineNo">504</span><a id="line.504"></a>
-<span class="sourceLineNo">505</span><a id="line.505">  private NetworkTableType m_type;</a>
-<span class="sourceLineNo">506</span><a id="line.506">  private Object m_value;</a>
-<span class="sourceLineNo">507</span><a id="line.507">  private long m_time;</a>
-<span class="sourceLineNo">508</span><a id="line.508">}</a>
+<span class="sourceLineNo">481</span><a id="line.481">  // arraycopy() doesn't know how to unwrap boxed values; this is a false positive in PMD</a>
+<span class="sourceLineNo">482</span><a id="line.482">  // (see https://sourceforge.net/p/pmd/bugs/804/)</a>
+<span class="sourceLineNo">483</span><a id="line.483">  @SuppressWarnings("PMD.AvoidArrayLoops")</a>
+<span class="sourceLineNo">484</span><a id="line.484">  static boolean[] toNative(Boolean[] arr) {</a>
+<span class="sourceLineNo">485</span><a id="line.485">    boolean[] out = new boolean[arr.length];</a>
+<span class="sourceLineNo">486</span><a id="line.486">    for (int i = 0; i &lt; arr.length; i++) {</a>
+<span class="sourceLineNo">487</span><a id="line.487">      out[i] = arr[i];</a>
+<span class="sourceLineNo">488</span><a id="line.488">    }</a>
+<span class="sourceLineNo">489</span><a id="line.489">    return out;</a>
+<span class="sourceLineNo">490</span><a id="line.490">  }</a>
+<span class="sourceLineNo">491</span><a id="line.491"></a>
+<span class="sourceLineNo">492</span><a id="line.492">  @SuppressWarnings("PMD.AvoidArrayLoops")</a>
+<span class="sourceLineNo">493</span><a id="line.493">  static double[] toNative(Number[] arr) {</a>
+<span class="sourceLineNo">494</span><a id="line.494">    double[] out = new double[arr.length];</a>
+<span class="sourceLineNo">495</span><a id="line.495">    for (int i = 0; i &lt; arr.length; i++) {</a>
+<span class="sourceLineNo">496</span><a id="line.496">      out[i] = arr[i].doubleValue();</a>
+<span class="sourceLineNo">497</span><a id="line.497">    }</a>
+<span class="sourceLineNo">498</span><a id="line.498">    return out;</a>
+<span class="sourceLineNo">499</span><a id="line.499">  }</a>
+<span class="sourceLineNo">500</span><a id="line.500"></a>
+<span class="sourceLineNo">501</span><a id="line.501">  @SuppressWarnings("PMD.AvoidArrayLoops")</a>
+<span class="sourceLineNo">502</span><a id="line.502">  static Boolean[] fromNative(boolean[] arr) {</a>
+<span class="sourceLineNo">503</span><a id="line.503">    Boolean[] out = new Boolean[arr.length];</a>
+<span class="sourceLineNo">504</span><a id="line.504">    for (int i = 0; i &lt; arr.length; i++) {</a>
+<span class="sourceLineNo">505</span><a id="line.505">      out[i] = arr[i];</a>
+<span class="sourceLineNo">506</span><a id="line.506">    }</a>
+<span class="sourceLineNo">507</span><a id="line.507">    return out;</a>
+<span class="sourceLineNo">508</span><a id="line.508">  }</a>
+<span class="sourceLineNo">509</span><a id="line.509"></a>
+<span class="sourceLineNo">510</span><a id="line.510">  @SuppressWarnings("PMD.AvoidArrayLoops")</a>
+<span class="sourceLineNo">511</span><a id="line.511">  static Double[] fromNative(double[] arr) {</a>
+<span class="sourceLineNo">512</span><a id="line.512">    Double[] out = new Double[arr.length];</a>
+<span class="sourceLineNo">513</span><a id="line.513">    for (int i = 0; i &lt; arr.length; i++) {</a>
+<span class="sourceLineNo">514</span><a id="line.514">      out[i] = arr[i];</a>
+<span class="sourceLineNo">515</span><a id="line.515">    }</a>
+<span class="sourceLineNo">516</span><a id="line.516">    return out;</a>
+<span class="sourceLineNo">517</span><a id="line.517">  }</a>
+<span class="sourceLineNo">518</span><a id="line.518"></a>
+<span class="sourceLineNo">519</span><a id="line.519">  private NetworkTableType m_type;</a>
+<span class="sourceLineNo">520</span><a id="line.520">  private Object m_value;</a>
+<span class="sourceLineNo">521</span><a id="line.521">  private long m_time;</a>
+<span class="sourceLineNo">522</span><a id="line.522">}</a>
 
 
 
