@@ -867,7 +867,8 @@ var hierarchy =
       [ "frc::PIDSubsystem", "classfrc_1_1PIDSubsystem.html", null ]
     ] ],
     [ "frc::PneumaticsBase", "classfrc_1_1PneumaticsBase.html", [
-      [ "frc::PneumaticsControlModule", "classfrc_1_1PneumaticsControlModule.html", null ]
+      [ "frc::PneumaticsControlModule", "classfrc_1_1PneumaticsControlModule.html", null ],
+      [ "frc::PneumaticsHub", "classfrc_1_1PneumaticsHub.html", null ]
     ] ],
     [ "wpi::PointerIntPair< PointerTy, IntBits, IntType, PtrTraits, Info >", "classwpi_1_1PointerIntPair.html", null ],
     [ "wpi::PointerIntPair< void *, 1, bool, PointerUnionUIntTraits< InnerUnion, PT3 > >", "classwpi_1_1PointerIntPair.html", null ],
@@ -963,6 +964,7 @@ var hierarchy =
     [ "std::reverse_iterator", null, [
       [ "wpi::detail::json_reverse_iterator< Base >", "classwpi_1_1detail_1_1json__reverse__iterator.html", null ]
     ] ],
+    [ "frc::sim::REVPHSim", "classfrc_1_1sim_1_1REVPHSim.html", null ],
     [ "rgb", "structrgb.html", null ],
     [ "frc::sim::RoboRioSim", "classfrc_1_1sim_1_1RoboRioSim.html", null ],
     [ "frc::RobotBase", "classfrc_1_1RobotBase.html", [

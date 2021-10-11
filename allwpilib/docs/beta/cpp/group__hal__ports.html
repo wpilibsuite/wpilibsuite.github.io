@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-2</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3</span>
    </div>
   </td>
  </tr>
@@ -159,6 +159,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ga8ad2cd6abe4675136390e68c1fd362d9"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__ports.html#ga8ad2cd6abe4675136390e68c1fd362d9">HAL_GetNumREVPDHChannels</a> (void)</td></tr>
 <tr class="memdesc:ga8ad2cd6abe4675136390e68c1fd362d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the number of PDH channels in the current system.  <a href="group__hal__ports.html#ga8ad2cd6abe4675136390e68c1fd362d9">More...</a><br /></td></tr>
 <tr class="separator:ga8ad2cd6abe4675136390e68c1fd362d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga87f828d3d50de55f38f12e66ee1681af"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__ports.html#ga87f828d3d50de55f38f12e66ee1681af">HAL_GetNumREVPHModules</a> (void)</td></tr>
+<tr class="memdesc:ga87f828d3d50de55f38f12e66ee1681af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the number of PH modules in the current system.  <a href="group__hal__ports.html#ga87f828d3d50de55f38f12e66ee1681af">More...</a><br /></td></tr>
+<tr class="separator:ga87f828d3d50de55f38f12e66ee1681af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacb1a057d0c6cbbfd1c7329b13bd1d4ea"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__ports.html#gacb1a057d0c6cbbfd1c7329b13bd1d4ea">HAL_GetNumREVPHChannels</a> (void)</td></tr>
+<tr class="memdesc:gacb1a057d0c6cbbfd1c7329b13bd1d4ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the number of PH channels in the current system.  <a href="group__hal__ports.html#gacb1a057d0c6cbbfd1c7329b13bd1d4ea">More...</a><br /></td></tr>
+<tr class="separator:gacb1a057d0c6cbbfd1c7329b13bd1d4ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1094cd5deeb4607c8c8420f027004d28"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__ports.html#ga1094cd5deeb4607c8c8420f027004d28">HAL_GetNumDutyCycles</a> (void)</td></tr>
 <tr class="memdesc:ga1094cd5deeb4607c8c8420f027004d28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the number of duty cycle inputs in the current system.  <a href="group__hal__ports.html#ga1094cd5deeb4607c8c8420f027004d28">More...</a><br /></td></tr>
 <tr class="separator:ga1094cd5deeb4607c8c8420f027004d28"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -630,12 +636,54 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="gacb1a057d0c6cbbfd1c7329b13bd1d4ea" name="gacb1a057d0c6cbbfd1c7329b13bd1d4ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacb1a057d0c6cbbfd1c7329b13bd1d4ea">&#9670;&nbsp;</a></span>HAL_GetNumREVPHChannels()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t HAL_GetNumREVPHChannels </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the number of PH channels in the current system. </p>
+<dl class="section return"><dt>Returns</dt><dd>the number of PH channels </dd></dl>
+
+</div>
+</div>
+<a id="ga87f828d3d50de55f38f12e66ee1681af" name="ga87f828d3d50de55f38f12e66ee1681af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga87f828d3d50de55f38f12e66ee1681af">&#9670;&nbsp;</a></span>HAL_GetNumREVPHModules()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t HAL_GetNumREVPHModules </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the number of PH modules in the current system. </p>
+<dl class="section return"><dt>Returns</dt><dd>the number of PH modules </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Oct 5 2021 01:54:30 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Mon Oct 11 2021 03:11:20 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

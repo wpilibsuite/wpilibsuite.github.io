@@ -43,7 +43,8 @@ var namespacehal =
       [ "AddressableLED", "namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9ae21208902b69a2005c5aac085887b0b9", null ],
       [ "CTREPCM", "namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9a22912d4fe610d46be1769655dfdc08a6", null ],
       [ "CTREPDP", "namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9a42f9d82c942ac83c70dea32c6da8461b", null ],
-      [ "REVPDH", "namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9a0edbf6e8f762d9da7dcff85e8cf46db7", null ]
+      [ "REVPDH", "namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9a0edbf6e8f762d9da7dcff85e8cf46db7", null ],
+      [ "REVPH", "namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9ab7b6b98a2e5cc91c86e6341e27c46d3a", null ]
     ] ],
     [ "createHandle", "namespacehal.html#a39c5c5e666bd856368820ba66b28e8f9", null ],
     [ "createPortHandle", "namespacehal.html#a6ebb354330e8415469e51cb52c615ac5", null ],

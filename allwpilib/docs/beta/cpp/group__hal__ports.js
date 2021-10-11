@@ -21,5 +21,7 @@ var group__hal__ports =
     [ "HAL_GetNumRelayChannels", "group__hal__ports.html#ga7867d08ba3d3418edcc7c4c2a72d9ca5", null ],
     [ "HAL_GetNumRelayHeaders", "group__hal__ports.html#gaade8717fd75e3de39ff698b246a7f595", null ],
     [ "HAL_GetNumREVPDHChannels", "group__hal__ports.html#ga8ad2cd6abe4675136390e68c1fd362d9", null ],
-    [ "HAL_GetNumREVPDHModules", "group__hal__ports.html#gafca4607854bbe0c598d7e59d22e625ed", null ]
+    [ "HAL_GetNumREVPDHModules", "group__hal__ports.html#gafca4607854bbe0c598d7e59d22e625ed", null ],
+    [ "HAL_GetNumREVPHChannels", "group__hal__ports.html#gacb1a057d0c6cbbfd1c7329b13bd1d4ea", null ],
+    [ "HAL_GetNumREVPHModules", "group__hal__ports.html#ga87f828d3d50de55f38f12e66ee1681af", null ]
 ];
