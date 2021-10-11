@@ -52,6 +52,7 @@ var dir_0616eb0edb7e8533b85fb847c3c08b17 =
     [ "Notifier.h", "wpilibc_2src_2main_2native_2include_2frc_2Notifier_8h_source.html", null ],
     [ "PneumaticsBase.h", "PneumaticsBase_8h_source.html", null ],
     [ "PneumaticsControlModule.h", "PneumaticsControlModule_8h_source.html", null ],
+    [ "PneumaticsHub.h", "PneumaticsHub_8h_source.html", null ],
     [ "PneumaticsModuleType.h", "PneumaticsModuleType_8h_source.html", null ],
     [ "PowerDistribution.h", "wpilibc_2src_2main_2native_2include_2frc_2PowerDistribution_8h_source.html", null ],
     [ "Preferences.h", "Preferences_8h_source.html", null ],

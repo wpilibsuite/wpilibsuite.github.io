@@ -229,7 +229,7 @@ var NAVTREEINDEX0 =
 "PIDOutput_8h_source.html":[6,0,5,5],
 "PIDSource_8h_source.html":[6,0,5,6],
 "PS4ControllerSim_8h_source.html":[6,0,6,5,26],
-"PS4Controller_8h_source.html":[6,0,6,55],
+"PS4Controller_8h_source.html":[6,0,6,56],
 "PWMData_8h_source.html":[6,0,8,2,18],
 "PWMMotorController_8h_source.html":[6,0,6,3,5],
 "PWMSim_8h_source.html":[6,0,6,5,27],
@@ -245,9 +245,9 @@ var NAVTREEINDEX0 =
 "Pipe_8h_source.html":[6,0,11,3,12],
 "PneumaticsBase_8h_source.html":[6,0,6,50],
 "PneumaticsControlModule_8h_source.html":[6,0,6,51],
-"PneumaticsModuleType_8h_source.html":[6,0,6,52],
+"PneumaticsHub_8h_source.html":[6,0,6,52],
+"PneumaticsModuleType_8h_source.html":[6,0,6,53],
 "PointerIntPair_8h_source.html":[6,0,11,54],
 "PointerLikeTypeTraits_8h_source.html":[6,0,11,55],
-"PointerUnion_8h_source.html":[6,0,11,56],
-"Poll_8h_source.html":[6,0,11,3,13]
+"PointerUnion_8h_source.html":[6,0,11,56]
 };

@@ -14,6 +14,7 @@ var group__hal__capi =
     [ "Serial Port Functions", "group__hal__serialport.html", "group__hal__serialport" ],
     [ "Accelerometer Functions", "group__hal__accelerometer.html", "group__hal__accelerometer" ],
     [ "Interrupts Functions", "group__hal__interrupts.html", "group__hal__interrupts" ],
+    [ "REV PH Functions", "group__hal__rev__ph.html", null ],
     [ "PWM Output Functions", "group__hal__pwm.html", "group__hal__pwm" ],
     [ "Counter Functions", "group__hal__counter.html", "group__hal__counter" ],
     [ "SPI Functions", "group__hal__spi.html", "group__hal__spi" ],

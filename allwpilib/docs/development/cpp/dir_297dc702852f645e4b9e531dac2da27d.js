@@ -29,6 +29,7 @@ var dir_297dc702852f645e4b9e531dac2da27d =
     [ "PS4ControllerSim.h", "PS4ControllerSim_8h_source.html", null ],
     [ "PWMSim.h", "PWMSim_8h_source.html", null ],
     [ "RelaySim.h", "RelaySim_8h_source.html", null ],
+    [ "REVPHSim.h", "REVPHSim_8h_source.html", null ],
     [ "RoboRioSim.h", "RoboRioSim_8h_source.html", null ],
     [ "SimDeviceSim.h", "SimDeviceSim_8h_source.html", null ],
     [ "SimHooks.h", "SimHooks_8h_source.html", null ],
