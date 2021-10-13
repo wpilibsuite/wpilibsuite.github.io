@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-7-g6d3dd99</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-8-g61996c2</span>
    </div>
   </td>
  </tr>
@@ -129,6 +129,9 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>ListenerData</b> = T
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a80ec13f5f816bde9013825acd25af294"><td class="memItemLeft" align="right" valign="top"><a id="a80ec13f5f816bde9013825acd25af294" name="a80ec13f5f816bde9013825acd25af294"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CallbackThread</b> (std::function&lt; void()&gt; on_start, std::function&lt; void()&gt; on_exit)</td></tr>
+<tr class="separator:a80ec13f5f816bde9013825acd25af294"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad951f2fb7746b1048f494e5fefdcef88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1CallbackThread.html#ad951f2fb7746b1048f494e5fefdcef88">Main</a> () override</td></tr>
 <tr class="separator:ad951f2fb7746b1048f494e5fefdcef88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa58146672dbf8d33cd129dad5eea6e41"><td class="memTemplParams" colspan="2"><a id="aa58146672dbf8d33cd129dad5eea6e41" name="aa58146672dbf8d33cd129dad5eea6e41"></a>
@@ -150,6 +153,12 @@ wpi::condition_variable&#160;</td><td class="memItemRight" valign="bottom"><b>m_
 <tr class="memitem:aef8d66cf9d2d23224c766c7272b7f344"><td class="memItemLeft" align="right" valign="top"><a id="aef8d66cf9d2d23224c766c7272b7f344" name="aef8d66cf9d2d23224c766c7272b7f344"></a>
 <a class="el" href="classwpi_1_1UidVector.html">wpi::UidVector</a>&lt; std::shared_ptr&lt; <a class="el" href="structwpi_1_1CallbackThread_1_1Poller.html">Poller</a> &gt;, 64 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_pollers</b></td></tr>
 <tr class="separator:aef8d66cf9d2d23224c766c7272b7f344"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6643573f02baf4605b1dbb2edbfe2b3d"><td class="memItemLeft" align="right" valign="top"><a id="a6643573f02baf4605b1dbb2edbfe2b3d" name="a6643573f02baf4605b1dbb2edbfe2b3d"></a>
+std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_on_start</b></td></tr>
+<tr class="separator:a6643573f02baf4605b1dbb2edbfe2b3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6eab816a8268b8328f4086d77b76749"><td class="memItemLeft" align="right" valign="top"><a id="ac6eab816a8268b8328f4086d77b76749" name="ac6eab816a8268b8328f4086d77b76749"></a>
+std::function&lt; void()&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_on_exit</b></td></tr>
+<tr class="separator:ac6eab816a8268b8328f4086d77b76749"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classwpi_1_1SafeThread"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classwpi_1_1SafeThread')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classwpi_1_1SafeThread.html">wpi::SafeThread</a></td></tr>
 <tr class="memitem:a7b61d8719e659dbb558ea1506832294c inherit pub_attribs_classwpi_1_1SafeThread"><td class="memItemLeft" align="right" valign="top"><a id="a7b61d8719e659dbb558ea1506832294c" name="a7b61d8719e659dbb558ea1506832294c"></a>
 wpi::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>m_mutex</b></td></tr>
@@ -200,7 +209,7 @@ template&lt;typename Derived , typename TUserInfo , typename TListenerData , typ
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>wpi</b></li><li class="navelem"><a class="el" href="classwpi_1_1CallbackThread.html">CallbackThread</a></li>
-    <li class="footer">Generated on Wed Oct 13 2021 14:49:59 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Wed Oct 13 2021 15:49:23 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
