@@ -510,11 +510,44 @@
 <span class="sourceLineNo">498</span><a id="line.498">    RoboRioDataJNI.setUserFaults3V3(userFaults3V3);</a>
 <span class="sourceLineNo">499</span><a id="line.499">  }</a>
 <span class="sourceLineNo">500</span><a id="line.500"></a>
-<span class="sourceLineNo">501</span><a id="line.501">  /** Reset all simulation data. */</a>
-<span class="sourceLineNo">502</span><a id="line.502">  public static void resetData() {</a>
-<span class="sourceLineNo">503</span><a id="line.503">    RoboRioDataJNI.resetData();</a>
-<span class="sourceLineNo">504</span><a id="line.504">  }</a>
-<span class="sourceLineNo">505</span><a id="line.505">}</a>
+<span class="sourceLineNo">501</span><a id="line.501">  /**</a>
+<span class="sourceLineNo">502</span><a id="line.502">   * Register a callback to be run whenever the Brownout voltage changes.</a>
+<span class="sourceLineNo">503</span><a id="line.503">   *</a>
+<span class="sourceLineNo">504</span><a id="line.504">   * @param callback the callback</a>
+<span class="sourceLineNo">505</span><a id="line.505">   * @param initialNotify whether to call the callback with the initial state</a>
+<span class="sourceLineNo">506</span><a id="line.506">   * @return the {@link CallbackStore} object associated with this callback. Save a reference to</a>
+<span class="sourceLineNo">507</span><a id="line.507">   *     this object so GC doesn't cancel the callback.</a>
+<span class="sourceLineNo">508</span><a id="line.508">   */</a>
+<span class="sourceLineNo">509</span><a id="line.509">  public static CallbackStore registerBrownoutVoltageCallback(</a>
+<span class="sourceLineNo">510</span><a id="line.510">      NotifyCallback callback, boolean initialNotify) {</a>
+<span class="sourceLineNo">511</span><a id="line.511">    int uid = RoboRioDataJNI.registerBrownoutVoltageCallback(callback, initialNotify);</a>
+<span class="sourceLineNo">512</span><a id="line.512">    return new CallbackStore(uid, RoboRioDataJNI::cancelBrownoutVoltageCallback);</a>
+<span class="sourceLineNo">513</span><a id="line.513">  }</a>
+<span class="sourceLineNo">514</span><a id="line.514"></a>
+<span class="sourceLineNo">515</span><a id="line.515">  /**</a>
+<span class="sourceLineNo">516</span><a id="line.516">   * Measure the Brownout voltage.</a>
+<span class="sourceLineNo">517</span><a id="line.517">   *</a>
+<span class="sourceLineNo">518</span><a id="line.518">   * @return the Brownout voltage</a>
+<span class="sourceLineNo">519</span><a id="line.519">   */</a>
+<span class="sourceLineNo">520</span><a id="line.520">  public static double getBrownoutVoltage() {</a>
+<span class="sourceLineNo">521</span><a id="line.521">    return RoboRioDataJNI.getBrownoutVoltage();</a>
+<span class="sourceLineNo">522</span><a id="line.522">  }</a>
+<span class="sourceLineNo">523</span><a id="line.523"></a>
+<span class="sourceLineNo">524</span><a id="line.524">  /**</a>
+<span class="sourceLineNo">525</span><a id="line.525">   * Define the Brownout voltage.</a>
+<span class="sourceLineNo">526</span><a id="line.526">   *</a>
+<span class="sourceLineNo">527</span><a id="line.527">   * @param vInVoltage the new voltage</a>
+<span class="sourceLineNo">528</span><a id="line.528">   */</a>
+<span class="sourceLineNo">529</span><a id="line.529">  @SuppressWarnings("ParameterName")</a>
+<span class="sourceLineNo">530</span><a id="line.530">  public static void setBrownoutVoltage(double vInVoltage) {</a>
+<span class="sourceLineNo">531</span><a id="line.531">    RoboRioDataJNI.setBrownoutVoltage(vInVoltage);</a>
+<span class="sourceLineNo">532</span><a id="line.532">  }</a>
+<span class="sourceLineNo">533</span><a id="line.533"></a>
+<span class="sourceLineNo">534</span><a id="line.534">  /** Reset all simulation data. */</a>
+<span class="sourceLineNo">535</span><a id="line.535">  public static void resetData() {</a>
+<span class="sourceLineNo">536</span><a id="line.536">    RoboRioDataJNI.resetData();</a>
+<span class="sourceLineNo">537</span><a id="line.537">  }</a>
+<span class="sourceLineNo">538</span><a id="line.538">}</a>
 
 
 
