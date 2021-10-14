@@ -1,5 +1,6 @@
 var group__hal__power =
 [
+    [ "HAL_GetBrownoutVoltage", "group__hal__power.html#ga6d5cb1a44dbe17802df0b78f8e19bb91", null ],
     [ "HAL_GetUserActive3V3", "group__hal__power.html#ga7bde6a4fc8b7c730b82deea2f50c676e", null ],
     [ "HAL_GetUserActive5V", "group__hal__power.html#ga5edc3b2140ad16d76545f5a2251843ae", null ],
     [ "HAL_GetUserActive6V", "group__hal__power.html#gacada32aa380cfd0ca54e02ff07a1eb18", null ],
@@ -13,5 +14,6 @@ var group__hal__power =
     [ "HAL_GetUserVoltage5V", "group__hal__power.html#gab793b44ece04e698052bfd5f1fd331fe", null ],
     [ "HAL_GetUserVoltage6V", "group__hal__power.html#gaeaab98fe6d1da541a512d5556d76b8d3", null ],
     [ "HAL_GetVinCurrent", "group__hal__power.html#ga3bafe80920775c542d1dc0eada80c548", null ],
-    [ "HAL_GetVinVoltage", "group__hal__power.html#gacf5db6b772849a98cd84ed9131d17a89", null ]
+    [ "HAL_GetVinVoltage", "group__hal__power.html#gacf5db6b772849a98cd84ed9131d17a89", null ],
+    [ "HAL_SetBrownoutVoltage", "group__hal__power.html#gafc5775e59e572ceae3430a2e3fe5214d", null ]
 ];

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-9-g9cd4bc4</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-11-g67df469</span>
    </div>
   </td>
  </tr>
@@ -240,6 +240,15 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a5c4a7fc75029dfa327caf186a4b469b7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1RoboRioSim.html#a5c4a7fc75029dfa327caf186a4b469b7">SetUserFaults3V3</a> (int userFaults3V3)</td></tr>
 <tr class="memdesc:a5c4a7fc75029dfa327caf186a4b469b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the 3.3V rail number of faults.  <a href="classfrc_1_1sim_1_1RoboRioSim.html#a5c4a7fc75029dfa327caf186a4b469b7">More...</a><br /></td></tr>
 <tr class="separator:a5c4a7fc75029dfa327caf186a4b469b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a538a191872c8bdef5835ce8b009ffc48"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="classfrc_1_1sim_1_1CallbackStore.html">CallbackStore</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1RoboRioSim.html#a538a191872c8bdef5835ce8b009ffc48">RegisterBrownoutVoltageCallback</a> (NotifyCallback callback, bool initialNotify)</td></tr>
+<tr class="memdesc:a538a191872c8bdef5835ce8b009ffc48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a callback to be run whenever the brownout voltage changes.  <a href="classfrc_1_1sim_1_1RoboRioSim.html#a538a191872c8bdef5835ce8b009ffc48">More...</a><br /></td></tr>
+<tr class="separator:a538a191872c8bdef5835ce8b009ffc48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89cbac9c11388c8760fe345b7c604196"><td class="memItemLeft" align="right" valign="top">static units::volt_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1RoboRioSim.html#a89cbac9c11388c8760fe345b7c604196">GetBrownoutVoltage</a> ()</td></tr>
+<tr class="memdesc:a89cbac9c11388c8760fe345b7c604196"><td class="mdescLeft">&#160;</td><td class="mdescRight">Measure the brownout voltage.  <a href="classfrc_1_1sim_1_1RoboRioSim.html#a89cbac9c11388c8760fe345b7c604196">More...</a><br /></td></tr>
+<tr class="separator:a89cbac9c11388c8760fe345b7c604196"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac67e5ef68909dba195ec800b6ac66c15"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1RoboRioSim.html#ac67e5ef68909dba195ec800b6ac66c15">SetBrownoutVoltage</a> (units::volt_t brownoutVoltage)</td></tr>
+<tr class="memdesc:ac67e5ef68909dba195ec800b6ac66c15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define the brownout voltage.  <a href="classfrc_1_1sim_1_1RoboRioSim.html#ac67e5ef68909dba195ec800b6ac66c15">More...</a><br /></td></tr>
+<tr class="separator:ac67e5ef68909dba195ec800b6ac66c15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b3ecab62f5d4b647e5d3c5af688f34c"><td class="memItemLeft" align="right" valign="top"><a id="a3b3ecab62f5d4b647e5d3c5af688f34c" name="a3b3ecab62f5d4b647e5d3c5af688f34c"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetData</b> ()</td></tr>
 <tr class="memdesc:a3b3ecab62f5d4b647e5d3c5af688f34c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset all simulation data. <br /></td></tr>
@@ -248,6 +257,34 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetData</b> 
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >A utility class to control a simulated RoboRIO. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a89cbac9c11388c8760fe345b7c604196" name="a89cbac9c11388c8760fe345b7c604196"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89cbac9c11388c8760fe345b7c604196">&#9670;&nbsp;</a></span>GetBrownoutVoltage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static units::volt_t frc::sim::RoboRioSim::GetBrownoutVoltage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Measure the brownout voltage. </p>
+<dl class="section return"><dt>Returns</dt><dd>the brownout voltage </dd></dl>
+
+</div>
+</div>
 <a id="ac53b500164a9b2db9e26ed95cf17e25e" name="ac53b500164a9b2db9e26ed95cf17e25e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac53b500164a9b2db9e26ed95cf17e25e">&#9670;&nbsp;</a></span>GetFPGAButton()</h2>
 
@@ -665,6 +702,52 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetData</b> 
 
 <p>Measure the Vin voltage. </p>
 <dl class="section return"><dt>Returns</dt><dd>the Vin voltage </dd></dl>
+
+</div>
+</div>
+<a id="a538a191872c8bdef5835ce8b009ffc48" name="a538a191872c8bdef5835ce8b009ffc48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a538a191872c8bdef5835ce8b009ffc48">&#9670;&nbsp;</a></span>RegisterBrownoutVoltageCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::unique_ptr&lt; <a class="el" href="classfrc_1_1sim_1_1CallbackStore.html">CallbackStore</a> &gt; frc::sim::RoboRioSim::RegisterBrownoutVoltageCallback </td>
+          <td>(</td>
+          <td class="paramtype">NotifyCallback&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>initialNotify</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Register a callback to be run whenever the brownout voltage changes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>the callback </td></tr>
+    <tr><td class="paramname">initialNotify</td><td>whether to call the callback with the initial state </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the <a class="el" href="classfrc_1_1sim_1_1CallbackStore.html" title="Manages simulation callbacks; each object is associated with a callback.">CallbackStore</a> object associated with this callback </dd></dl>
 
 </div>
 </div>
@@ -1358,6 +1441,40 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetData</b> 
 
 </div>
 </div>
+<a id="ac67e5ef68909dba195ec800b6ac66c15" name="ac67e5ef68909dba195ec800b6ac66c15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac67e5ef68909dba195ec800b6ac66c15">&#9670;&nbsp;</a></span>SetBrownoutVoltage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void frc::sim::RoboRioSim::SetBrownoutVoltage </td>
+          <td>(</td>
+          <td class="paramtype">units::volt_t&#160;</td>
+          <td class="paramname"><em>brownoutVoltage</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Define the brownout voltage. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vInVoltage</td><td>the new voltage </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a3460b2c0baf344a9b1da9113d67ad72e" name="a3460b2c0baf344a9b1da9113d67ad72e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3460b2c0baf344a9b1da9113d67ad72e">&#9670;&nbsp;</a></span>SetFPGAButton()</h2>
 
@@ -1877,7 +1994,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetData</b> 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>frc</b></li><li class="navelem"><b>sim</b></li><li class="navelem"><a class="el" href="classfrc_1_1sim_1_1RoboRioSim.html">RoboRioSim</a></li>
-    <li class="footer">Generated on Wed Oct 13 2021 17:41:55 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Thu Oct 14 2021 02:20:52 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

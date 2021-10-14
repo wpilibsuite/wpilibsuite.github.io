@@ -1,6 +1,8 @@
 var classfrc_1_1RobotController =
 [
     [ "GetBatteryVoltage", "classfrc_1_1RobotController.html#a4b1e42e825583c82664a4ecc5d81b83f", null ],
+    [ "GetBrownoutVoltage", "classfrc_1_1RobotController.html#a921d7fbfc4de347b75a6d95dde2d7ed5", null ],
+    [ "GetCANStatus", "classfrc_1_1RobotController.html#a58e7b24ddd479303b64d2b9ccff255a9", null ],
     [ "GetCurrent3V3", "classfrc_1_1RobotController.html#ab8f84f32622befd0794899c3c5d1987c", null ],
     [ "GetCurrent5V", "classfrc_1_1RobotController.html#aec16c910e71082e60486c23061dbfadb", null ],
     [ "GetCurrent6V", "classfrc_1_1RobotController.html#aeb594692d2cbedfa03ee5c3dc93aec6c", null ],
@@ -20,5 +22,6 @@ var classfrc_1_1RobotController =
     [ "GetVoltage5V", "classfrc_1_1RobotController.html#a4d79bd84a083bc771e87730044387f4e", null ],
     [ "GetVoltage6V", "classfrc_1_1RobotController.html#aa9fcd2d4897c882cbd6a579880ed2f60", null ],
     [ "IsBrownedOut", "classfrc_1_1RobotController.html#a62f692be0358add2a277a4611b7f0765", null ],
-    [ "IsSysActive", "classfrc_1_1RobotController.html#a04c9086414c10f72fdafcdeb81c4d911", null ]
+    [ "IsSysActive", "classfrc_1_1RobotController.html#a04c9086414c10f72fdafcdeb81c4d911", null ],
+    [ "SetBrownoutVoltage", "classfrc_1_1RobotController.html#a1bcefa0bfa7e4dea6b37244dced1bd5a", null ]
 ];

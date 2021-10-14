@@ -1,5 +1,6 @@
 var classfrc_1_1sim_1_1RoboRioSim =
 [
+    [ "GetBrownoutVoltage", "classfrc_1_1sim_1_1RoboRioSim.html#a89cbac9c11388c8760fe345b7c604196", null ],
     [ "GetFPGAButton", "classfrc_1_1sim_1_1RoboRioSim.html#ac53b500164a9b2db9e26ed95cf17e25e", null ],
     [ "GetUserActive3V3", "classfrc_1_1sim_1_1RoboRioSim.html#a6a6ffc4e8878022a711a0991f6b95939", null ],
     [ "GetUserActive5V", "classfrc_1_1sim_1_1RoboRioSim.html#a4df20929ebe793b8716cbb9bd06d04b6", null ],
@@ -15,6 +16,7 @@ var classfrc_1_1sim_1_1RoboRioSim =
     [ "GetUserVoltage6V", "classfrc_1_1sim_1_1RoboRioSim.html#a6dc027cd31c0865a7f1bb1aa0d53b742", null ],
     [ "GetVInCurrent", "classfrc_1_1sim_1_1RoboRioSim.html#a6db0c608f590aa97dd34f9dd2cc90260", null ],
     [ "GetVInVoltage", "classfrc_1_1sim_1_1RoboRioSim.html#a739fc1287ed86f066b917419986d0672", null ],
+    [ "RegisterBrownoutVoltageCallback", "classfrc_1_1sim_1_1RoboRioSim.html#a538a191872c8bdef5835ce8b009ffc48", null ],
     [ "RegisterFPGAButtonCallback", "classfrc_1_1sim_1_1RoboRioSim.html#a50bf0eda9c29481f0a73e250a0159bdc", null ],
     [ "RegisterUserActive3V3Callback", "classfrc_1_1sim_1_1RoboRioSim.html#aad1025fa6022631dc8acb851678a8b04", null ],
     [ "RegisterUserActive5VCallback", "classfrc_1_1sim_1_1RoboRioSim.html#aacc6640f2197474ea6c6f2c392b7d9a5", null ],
@@ -31,6 +33,7 @@ var classfrc_1_1sim_1_1RoboRioSim =
     [ "RegisterVInCurrentCallback", "classfrc_1_1sim_1_1RoboRioSim.html#a12f94943f7936dbc7b1642dbd4a4e00e", null ],
     [ "RegisterVInVoltageCallback", "classfrc_1_1sim_1_1RoboRioSim.html#acd1e83fe32d0d2a5372d82a4bccf73f2", null ],
     [ "ResetData", "classfrc_1_1sim_1_1RoboRioSim.html#a3b3ecab62f5d4b647e5d3c5af688f34c", null ],
+    [ "SetBrownoutVoltage", "classfrc_1_1sim_1_1RoboRioSim.html#ac67e5ef68909dba195ec800b6ac66c15", null ],
     [ "SetFPGAButton", "classfrc_1_1sim_1_1RoboRioSim.html#a3460b2c0baf344a9b1da9113d67ad72e", null ],
     [ "SetUserActive3V3", "classfrc_1_1sim_1_1RoboRioSim.html#a1ade18aa705dd5a13f5896063b65c541", null ],
     [ "SetUserActive5V", "classfrc_1_1sim_1_1RoboRioSim.html#ab8dc5ec395f1a070123449d9efed8496", null ],

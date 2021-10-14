@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-9-g9cd4bc4</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-11-g67df469</span>
    </div>
   </td>
  </tr>
@@ -163,8 +163,14 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a9213b2476cf7dda939f46f6d0531ab9d"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1RobotController.html#a9213b2476cf7dda939f46f6d0531ab9d">GetFaultCount6V</a> ()</td></tr>
 <tr class="memdesc:a9213b2476cf7dda939f46f6d0531ab9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the count of the total current faults on the 6V rail since the controller has booted.  <a href="classfrc_1_1RobotController.html#a9213b2476cf7dda939f46f6d0531ab9d">More...</a><br /></td></tr>
 <tr class="separator:a9213b2476cf7dda939f46f6d0531ab9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58e7b24ddd479303b64d2b9ccff255a9"><td class="memItemLeft" align="right" valign="top"><a id="a58e7b24ddd479303b64d2b9ccff255a9" name="a58e7b24ddd479303b64d2b9ccff255a9"></a>
-static <a class="el" href="structfrc_1_1CANStatus.html">CANStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetCANStatus</b> ()</td></tr>
+<tr class="memitem:a921d7fbfc4de347b75a6d95dde2d7ed5"><td class="memItemLeft" align="right" valign="top">static units::volt_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1RobotController.html#a921d7fbfc4de347b75a6d95dde2d7ed5">GetBrownoutVoltage</a> ()</td></tr>
+<tr class="memdesc:a921d7fbfc4de347b75a6d95dde2d7ed5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current brownout voltage seting.  <a href="classfrc_1_1RobotController.html#a921d7fbfc4de347b75a6d95dde2d7ed5">More...</a><br /></td></tr>
+<tr class="separator:a921d7fbfc4de347b75a6d95dde2d7ed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bcefa0bfa7e4dea6b37244dced1bd5a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1RobotController.html#a1bcefa0bfa7e4dea6b37244dced1bd5a">SetBrownoutVoltage</a> (units::volt_t brownoutVoltage)</td></tr>
+<tr class="memdesc:a1bcefa0bfa7e4dea6b37244dced1bd5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the voltage the roborio will brownout and disable all outputs.  <a href="classfrc_1_1RobotController.html#a1bcefa0bfa7e4dea6b37244dced1bd5a">More...</a><br /></td></tr>
+<tr class="separator:a1bcefa0bfa7e4dea6b37244dced1bd5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58e7b24ddd479303b64d2b9ccff255a9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structfrc_1_1CANStatus.html">CANStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1RobotController.html#a58e7b24ddd479303b64d2b9ccff255a9">GetCANStatus</a> ()</td></tr>
+<tr class="memdesc:a58e7b24ddd479303b64d2b9ccff255a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current status of the <a class="el" href="classfrc_1_1CAN.html" title="High level class for interfacing with CAN devices conforming to the standard CAN spec.">CAN</a> bus.  <a href="classfrc_1_1RobotController.html#a58e7b24ddd479303b64d2b9ccff255a9">More...</a><br /></td></tr>
 <tr class="separator:a58e7b24ddd479303b64d2b9ccff255a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -193,6 +199,62 @@ static <a class="el" href="structfrc_1_1CANStatus.html">CANStatus</a>&#160;</td>
 
 <p>Read the battery voltage. </p>
 <dl class="section return"><dt>Returns</dt><dd>The battery voltage in Volts. </dd></dl>
+
+</div>
+</div>
+<a id="a921d7fbfc4de347b75a6d95dde2d7ed5" name="a921d7fbfc4de347b75a6d95dde2d7ed5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a921d7fbfc4de347b75a6d95dde2d7ed5">&#9670;&nbsp;</a></span>GetBrownoutVoltage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static units::volt_t frc::RobotController::GetBrownoutVoltage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the current brownout voltage seting. </p>
+<dl class="section return"><dt>Returns</dt><dd>The brownout voltage </dd></dl>
+
+</div>
+</div>
+<a id="a58e7b24ddd479303b64d2b9ccff255a9" name="a58e7b24ddd479303b64d2b9ccff255a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58e7b24ddd479303b64d2b9ccff255a9">&#9670;&nbsp;</a></span>GetCANStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="structfrc_1_1CANStatus.html">CANStatus</a> frc::RobotController::GetCANStatus </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the current status of the <a class="el" href="classfrc_1_1CAN.html" title="High level class for interfacing with CAN devices conforming to the standard CAN spec.">CAN</a> bus. </p>
+<dl class="section return"><dt>Returns</dt><dd>The status of the <a class="el" href="classfrc_1_1CAN.html" title="High level class for interfacing with CAN devices conforming to the standard CAN spec.">CAN</a> bus </dd></dl>
 
 </div>
 </div>
@@ -762,6 +824,41 @@ static <a class="el" href="structfrc_1_1CANStatus.html">CANStatus</a>&#160;</td>
 
 </div>
 </div>
+<a id="a1bcefa0bfa7e4dea6b37244dced1bd5a" name="a1bcefa0bfa7e4dea6b37244dced1bd5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bcefa0bfa7e4dea6b37244dced1bd5a">&#9670;&nbsp;</a></span>SetBrownoutVoltage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void frc::RobotController::SetBrownoutVoltage </td>
+          <td>(</td>
+          <td class="paramtype">units::volt_t&#160;</td>
+          <td class="paramname"><em>brownoutVoltage</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the voltage the roborio will brownout and disable all outputs. </p>
+<p >Note that this only does anything on the roboRIO 2. On the roboRIO it is a no-op.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">brownoutVoltage</td><td>The brownout voltage </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>frc/<a class="el" href="RobotController_8h_source.html">RobotController.h</a></li>
 </ul>
@@ -771,7 +868,7 @@ static <a class="el" href="structfrc_1_1CANStatus.html">CANStatus</a>&#160;</td>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1RobotController.html">RobotController</a></li>
-    <li class="footer">Generated on Wed Oct 13 2021 17:41:54 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Thu Oct 14 2021 02:20:52 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
