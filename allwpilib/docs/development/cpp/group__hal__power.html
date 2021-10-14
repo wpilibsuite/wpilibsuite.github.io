@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-11-g67df469</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-13-g4ad3a54</span>
    </div>
   </td>
  </tr>
@@ -142,10 +142,10 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga54bbd26b5af42f7ee1978681128fbddf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the fault count for the 3V3 rail.  <a href="group__hal__power.html#ga54bbd26b5af42f7ee1978681128fbddf">More...</a><br /></td></tr>
 <tr class="separator:ga54bbd26b5af42f7ee1978681128fbddf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6d5cb1a44dbe17802df0b78f8e19bb91"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__power.html#ga6d5cb1a44dbe17802df0b78f8e19bb91">HAL_GetBrownoutVoltage</a> (int32_t *status)</td></tr>
-<tr class="memdesc:ga6d5cb1a44dbe17802df0b78f8e19bb91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current brownout voltage seting.  <a href="group__hal__power.html#ga6d5cb1a44dbe17802df0b78f8e19bb91">More...</a><br /></td></tr>
+<tr class="memdesc:ga6d5cb1a44dbe17802df0b78f8e19bb91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current brownout voltage setting.  <a href="group__hal__power.html#ga6d5cb1a44dbe17802df0b78f8e19bb91">More...</a><br /></td></tr>
 <tr class="separator:ga6d5cb1a44dbe17802df0b78f8e19bb91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafc5775e59e572ceae3430a2e3fe5214d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__power.html#gafc5775e59e572ceae3430a2e3fe5214d">HAL_SetBrownoutVoltage</a> (double voltage, int32_t *status)</td></tr>
-<tr class="memdesc:gafc5775e59e572ceae3430a2e3fe5214d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the voltage the roborio will brownout and disable all outputs.  <a href="group__hal__power.html#gafc5775e59e572ceae3430a2e3fe5214d">More...</a><br /></td></tr>
+<tr class="memdesc:gafc5775e59e572ceae3430a2e3fe5214d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the voltage the roboRIO will brownout and disable all outputs.  <a href="group__hal__power.html#gafc5775e59e572ceae3430a2e3fe5214d">More...</a><br /></td></tr>
 <tr class="separator:gafc5775e59e572ceae3430a2e3fe5214d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -166,8 +166,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the current brownout voltage seting. </p>
-<p >Note that this only does anything on the roboRIO 2. On the roboRIO it is a no-op.</p>
+<p>Get the current brownout voltage setting. </p>
 <dl class="section return"><dt>Returns</dt><dd>The brownout voltage </dd></dl>
 
 </div>
@@ -492,10 +491,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set the voltage the roborio will brownout and disable all outputs. </p>
+<p>Set the voltage the roboRIO will brownout and disable all outputs. </p>
+<p >Note that this only does anything on the roboRIO 2. On the roboRIO it is a no-op.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">brownoutVoltage</td><td>The brownout voltage </td></tr>
+    <tr><td class="paramname">voltage</td><td>The brownout voltage </td></tr>
   </table>
   </dd>
 </dl>
@@ -507,7 +507,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Oct 14 2021 02:20:50 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Thu Oct 14 2021 14:31:49 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
