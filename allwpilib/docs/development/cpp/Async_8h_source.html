@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-13-g4ad3a54</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-14-g4647d09</span>
    </div>
   </td>
  </tr>
@@ -138,7 +138,7 @@ $(document).ready(function(){initNavTree('Async_8h_source.html',''); initResizab
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1Async.html#a6358281ceacfc12a21a00f2e64340128">   63</a></span>  <span class="keyword">static</span> std::shared_ptr&lt;Async&gt; <a class="code hl_function" href="classwpi_1_1uv_1_1Async.html#a6358281ceacfc12a21a00f2e64340128">Create</a>(<span class="keyword">const</span> std::shared_ptr&lt;Loop&gt;&amp; loop) {</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keyword">auto</span> h = std::make_shared&lt;Async&gt;(loop, private_init{});</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordtype">int</span> err =</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        uv_async_init(loop-&gt;GetRaw(), h-&gt;GetRaw(), [](uv_async_t* handle) {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        uv_async_init(loop-&gt;GetRaw(), h-&gt;GetRaw(), [](<a class="code hl_struct" href="structuv__async__s.html">uv_async_t</a>* handle) {</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>          auto&amp; h = *static_cast&lt;Async*&gt;(handle-&gt;data);</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>          std::scoped_lock lock(h.m_mutex);</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>          for (auto&amp;&amp; v : h.m_data) {</div>
@@ -223,13 +223,14 @@ $(document).ready(function(){initNavTree('Async_8h_source.html',''); initResizab
 <div class="ttc" id="aclasswpi_1_1uv_1_1HandleImpl_html"><div class="ttname"><a href="classwpi_1_1uv_1_1HandleImpl.html">wpi::uv::HandleImpl</a></div><div class="ttdoc">Handle.</div><div class="ttdef"><b>Definition:</b> Handle.h:272</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1Handle_html_a786031563e9f1cb5acc9a354971e690b"><div class="ttname"><a href="classwpi_1_1uv_1_1Handle.html#a786031563e9f1cb5acc9a354971e690b">wpi::uv::Handle::Close</a></div><div class="ttdeci">void Close() noexcept</div><div class="ttdoc">Request handle to be closed.</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1Loop_html"><div class="ttname"><a href="classwpi_1_1uv_1_1Loop.html">wpi::uv::Loop</a></div><div class="ttdoc">Event loop.</div><div class="ttdef"><b>Definition:</b> Loop.h:35</div></div>
+<div class="ttc" id="astructuv__async__s_html"><div class="ttname"><a href="structuv__async__s.html">uv_async_s</a></div><div class="ttdef"><b>Definition:</b> uv.h:777</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><a class="el" href="dir_25302867c2307ab8d43a1b1d664c1ea4.html">uv</a></li><li class="navelem"><b>Async.h</b></li>
-    <li class="footer">Generated on Thu Oct 14 2021 14:31:49 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Oct 15 2021 01:13:00 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

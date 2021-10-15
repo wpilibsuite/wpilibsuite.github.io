@@ -19,7 +19,7 @@ var classfrc_1_1PIDBase =
     [ "OnTarget", "classfrc_1_1PIDBase.html#a92d645590cf1ce8a4e91c738d70bbaac", null ],
     [ "PIDWrite", "classfrc_1_1PIDBase.html#ab7dbcc1384cf1f1c723f89e86d6e4e6e", null ],
     [ "Reset", "classfrc_1_1PIDBase.html#a8efc7a08da5b5c4bbc0ac19ae70f9820", null ],
-    [ "SetAbsoluteTolerance", "classfrc_1_1PIDBase.html#a092c2d75083db0d20e470ab25b8e485e", null ],
+    [ "SetAbsoluteTolerance", "classfrc_1_1PIDBase.html#a08c0fc5c6a7a207a4d3c62cc899ed361", null ],
     [ "SetContinuous", "classfrc_1_1PIDBase.html#aefdb6e5960e82c2764c816bb0fc3ad51", null ],
     [ "SetD", "classfrc_1_1PIDBase.html#a42548a6ac2bf8ec4eba3a05cb2095fdb", null ],
     [ "SetF", "classfrc_1_1PIDBase.html#a58001c4cf4d0aca736d6cc94913e94ae", null ],
@@ -27,11 +27,11 @@ var classfrc_1_1PIDBase =
     [ "SetInputRange", "classfrc_1_1PIDBase.html#a9adce3f56674fd4c08aa25aafcad8371", null ],
     [ "SetOutputRange", "classfrc_1_1PIDBase.html#a53efef202cd2ab28afcfd27ddb793af4", null ],
     [ "SetP", "classfrc_1_1PIDBase.html#ae763f94701d6d24792c0313dc376bf4e", null ],
-    [ "SetPercentTolerance", "classfrc_1_1PIDBase.html#ae0da7cbe8a2a52450ce8323cc95b54ce", null ],
+    [ "SetPercentTolerance", "classfrc_1_1PIDBase.html#ae7662661b5471f6a0b28f1b3ce889b1f", null ],
     [ "SetPID", "classfrc_1_1PIDBase.html#acf0e73c7d7f04ac8c574e95fffa31816", null ],
     [ "SetPID", "classfrc_1_1PIDBase.html#a015124922c8e78a2830b25b651a915e9", null ],
     [ "SetPIDSourceType", "classfrc_1_1PIDBase.html#af0b78753bbfb56f2694cb78191cce13f", null ],
     [ "SetSetpoint", "classfrc_1_1PIDBase.html#a7aa61f9f4a17c0185d04294123b104b8", null ],
     [ "SetTolerance", "classfrc_1_1PIDBase.html#aa45b3fd09b92484da6d24e5eb73a1aaf", null ],
-    [ "SetToleranceBuffer", "classfrc_1_1PIDBase.html#a2c44bceff6031c670718eea93a13bfab", null ]
+    [ "SetToleranceBuffer", "classfrc_1_1PIDBase.html#a8efb877379e48e0151403cbd6c29c6ed", null ]
 ];

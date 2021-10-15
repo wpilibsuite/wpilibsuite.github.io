@@ -10,7 +10,7 @@ var classfrc_1_1sim_1_1DutyCycleSim =
     [ "RegisterInitializedCallback", "classfrc_1_1sim_1_1DutyCycleSim.html#ae33e3be01711a2f12902749cd71d903f", null ],
     [ "RegisterOutputCallback", "classfrc_1_1sim_1_1DutyCycleSim.html#a93de5dcf685b046b15c90c04628ebd1e", null ],
     [ "ResetData", "classfrc_1_1sim_1_1DutyCycleSim.html#aa4e2d439ceb4d3e2037cc519cd29b89e", null ],
-    [ "SetFrequency", "classfrc_1_1sim_1_1DutyCycleSim.html#a189083e6be0b4c6d5ba6faf72249fad9", null ],
+    [ "SetFrequency", "classfrc_1_1sim_1_1DutyCycleSim.html#a49740f8aec5cbd54adac2799dd11747a", null ],
     [ "SetInitialized", "classfrc_1_1sim_1_1DutyCycleSim.html#a43cc1ff8d7e940887356a67376dbd8fc", null ],
-    [ "SetOutput", "classfrc_1_1sim_1_1DutyCycleSim.html#a41eb9373b689e208724ac98eb8136a69", null ]
+    [ "SetOutput", "classfrc_1_1sim_1_1DutyCycleSim.html#ac892248182cf622ffde1c43113e00f6b", null ]
 ];

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-13-g4ad3a54</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-14-g4647d09</span>
    </div>
   </td>
  </tr>
@@ -170,7 +170,7 @@ $(document).ready(function(){initNavTree('Loop_8h_source.html',''); initResizabl
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1Loop.html#a1ecaf36e65ead41cb190d890ec03f093">  202</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1uv_1_1Loop.html#a1ecaf36e65ead41cb190d890ec03f093">Fork</a>();</div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> </div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1Loop.html#a519d89cd71880a2434594c655be5a3ef">  209</a></span>  uv_loop_t* <a class="code hl_function" href="classwpi_1_1uv_1_1Loop.html#a519d89cd71880a2434594c655be5a3ef">GetRaw</a>() const noexcept { <span class="keywordflow">return</span> m_loop; }</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1Loop.html#a519d89cd71880a2434594c655be5a3ef">  209</a></span>  <a class="code hl_struct" href="structuv__loop__s.html">uv_loop_t</a>* <a class="code hl_function" href="classwpi_1_1uv_1_1Loop.html#a519d89cd71880a2434594c655be5a3ef">GetRaw</a>() const noexcept { <span class="keywordflow">return</span> m_loop; }</div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
 <div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T = <span class="keywordtype">void</span>&gt;</div>
 <div class="line"><a id="l00216" name="l00216"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1Loop.html#a2e738d450e8d6c8087ef4982a7dbb951">  216</a></span>  std::shared_ptr&lt;T&gt; <a class="code hl_function" href="classwpi_1_1uv_1_1Loop.html#a2e738d450e8d6c8087ef4982a7dbb951">GetData</a>()<span class="keyword"> const </span>{</div>
@@ -187,8 +187,8 @@ $(document).ready(function(){initNavTree('Loop_8h_source.html',''); initResizabl
 <div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span> </div>
 <div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span> <span class="keyword">private</span>:</div>
 <div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>  std::shared_ptr&lt;void&gt; m_data;</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>  uv_loop_t* m_loop;</div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>  uv_loop_t m_loopStruct;</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>  <a class="code hl_struct" href="structuv__loop__s.html">uv_loop_t</a>* m_loop;</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>  <a class="code hl_struct" href="structuv__loop__s.html">uv_loop_t</a> m_loopStruct;</div>
 <div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>  std::atomic&lt;std::thread::id&gt; m_tid;</div>
 <div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>};</div>
 <div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span> </div>
@@ -218,13 +218,14 @@ $(document).ready(function(){initNavTree('Loop_8h_source.html',''); initResizabl
 <div class="ttc" id="aclasswpi_1_1uv_1_1Loop_html_aecde1d29bb84fe26990fcdeb4b72f3ac"><div class="ttname"><a href="classwpi_1_1uv_1_1Loop.html#aecde1d29bb84fe26990fcdeb4b72f3ac">wpi::uv::Loop::error</a></div><div class="ttdeci">sig::Signal&lt; Error &gt; error</div><div class="ttdoc">Error signal.</div><div class="ttdef"><b>Definition:</b> Loop.h:235</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1Loop_html_af72905fa513c4e2b266ee34cc7c76a85"><div class="ttname"><a href="classwpi_1_1uv_1_1Loop.html#af72905fa513c4e2b266ee34cc7c76a85">wpi::uv::Loop::GetTimeout</a></div><div class="ttdeci">std::pair&lt; bool, Time &gt; GetTimeout() const noexcept</div><div class="ttdoc">Get the poll timeout.</div><div class="ttdef"><b>Definition:</b> Loop.h:137</div></div>
 <div class="ttc" id="astructdata_html"><div class="ttname"><a href="structdata.html">data</a></div><div class="ttdef"><b>Definition:</b> format.h:897</div></div>
+<div class="ttc" id="astructuv__loop__s_html"><div class="ttname"><a href="structuv__loop__s.html">uv_loop_s</a></div><div class="ttdef"><b>Definition:</b> uv.h:1644</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><a class="el" href="dir_25302867c2307ab8d43a1b1d664c1ea4.html">uv</a></li><li class="navelem"><b>Loop.h</b></li>
-    <li class="footer">Generated on Thu Oct 14 2021 14:31:49 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Oct 15 2021 01:13:00 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

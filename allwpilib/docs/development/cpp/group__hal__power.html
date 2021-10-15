@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-13-g4ad3a54</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-14-g4647d09</span>
    </div>
   </td>
  </tr>
@@ -167,6 +167,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the current brownout voltage setting. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>The brownout voltage </dd></dl>
 
 </div>
@@ -188,6 +194,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the active state of the 3V3 rail. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the rail is active, otherwise false </dd></dl>
 
 </div>
@@ -209,6 +221,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the active state of the 5V rail. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the rail is active, otherwise false </dd></dl>
 
 </div>
@@ -230,6 +248,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the active state of the 6V rail. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the rail is active, otherwise false </dd></dl>
 
 </div>
@@ -251,6 +275,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the 3V3 rail current. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>the 3V3 rail current (amps) </dd></dl>
 
 </div>
@@ -272,6 +302,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the 5V rail current. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>the 5V rail current (amps) </dd></dl>
 
 </div>
@@ -293,6 +329,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the 6V rail current. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>the 6V rail current (amps) </dd></dl>
 
 </div>
@@ -314,6 +356,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the fault count for the 3V3 rail. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>the number of 3V3 fault counts </dd></dl>
 
 </div>
@@ -335,6 +383,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the fault count for the 5V rail. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>the number of 5V fault counts </dd></dl>
 
 </div>
@@ -356,6 +410,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the fault count for the 6V rail. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>the number of 6V fault counts </dd></dl>
 
 </div>
@@ -377,6 +437,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the 3V3 rail voltage. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>the 3V3 rail voltage (volts) </dd></dl>
 
 </div>
@@ -398,6 +464,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the 5V rail voltage. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>the 5V rail voltage (volts) </dd></dl>
 
 </div>
@@ -419,6 +491,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the 6V rail voltage. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>the 6V rail voltage (volts) </dd></dl>
 
 </div>
@@ -440,6 +518,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the roboRIO input current. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>the input current (amps) </dd></dl>
 
 </div>
@@ -461,6 +545,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the roboRIO input voltage. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>the input voltage (volts) </dd></dl>
 
 </div>
@@ -495,7 +585,8 @@ Functions</h2></td></tr>
 <p >Note that this only does anything on the roboRIO 2. On the roboRIO it is a no-op.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">voltage</td><td>The brownout voltage </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">voltage</td><td>The brownout voltage </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
   </table>
   </dd>
 </dl>
@@ -507,7 +598,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Oct 14 2021 14:31:49 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Oct 15 2021 01:13:00 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -1,0 +1,4 @@
+var structEigen_1_1internal_1_1traits_3_01Ref_3_01__PlainObjectType_00_01__Options_00_01__StrideType_01_4_01_4 =
+[
+    [ "match", "structEigen_1_1internal_1_1traits_3_01Ref_3_01__PlainObjectType_00_01__Options_00_01__StrideType_01_4_01_4_1_1match.html", null ]
+];

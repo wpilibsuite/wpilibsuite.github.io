@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-13-g4ad3a54</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-14-g4647d09</span>
    </div>
   </td>
  </tr>
@@ -161,11 +161,11 @@ Functions</h2></td></tr>
 <tr class="memitem:ga40e8b7453be701bac6544f51045fb13a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__pd.html#ga40e8b7453be701bac6544f51045fb13a">HAL_ClearPowerDistributionStickyFaults</a> (HAL_PowerDistributionHandle handle, int32_t *status)</td></tr>
 <tr class="memdesc:ga40e8b7453be701bac6544f51045fb13a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears any PowerDistribution sticky faults.  <a href="group__hal__pd.html#ga40e8b7453be701bac6544f51045fb13a">More...</a><br /></td></tr>
 <tr class="separator:ga40e8b7453be701bac6544f51045fb13a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaefd97007da78dedab4354cc249c34aa4"><td class="memItemLeft" align="right" valign="top"><a id="gaefd97007da78dedab4354cc249c34aa4" name="gaefd97007da78dedab4354cc249c34aa4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_SetPowerDistributionSwitchableChannel</b> (HAL_PowerDistributionHandle handle, HAL_Bool enabled, int32_t *status)</td></tr>
+<tr class="memitem:gaefd97007da78dedab4354cc249c34aa4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__pd.html#gaefd97007da78dedab4354cc249c34aa4">HAL_SetPowerDistributionSwitchableChannel</a> (HAL_PowerDistributionHandle handle, HAL_Bool enabled, int32_t *status)</td></tr>
+<tr class="memdesc:gaefd97007da78dedab4354cc249c34aa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Power on/off switchable channel.  <a href="group__hal__pd.html#gaefd97007da78dedab4354cc249c34aa4">More...</a><br /></td></tr>
 <tr class="separator:gaefd97007da78dedab4354cc249c34aa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8453cf973fcd7a93abdd9a726ef45946"><td class="memItemLeft" align="right" valign="top"><a id="ga8453cf973fcd7a93abdd9a726ef45946" name="ga8453cf973fcd7a93abdd9a726ef45946"></a>
-HAL_Bool&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetPowerDistributionSwitchableChannel</b> (HAL_PowerDistributionHandle handle, int32_t *status)</td></tr>
+<tr class="memitem:ga8453cf973fcd7a93abdd9a726ef45946"><td class="memItemLeft" align="right" valign="top">HAL_Bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__pd.html#ga8453cf973fcd7a93abdd9a726ef45946">HAL_GetPowerDistributionSwitchableChannel</a> (HAL_PowerDistributionHandle handle, int32_t *status)</td></tr>
+<tr class="memdesc:ga8453cf973fcd7a93abdd9a726ef45946"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if switchable channel is powered on.  <a href="group__hal__pd.html#ga8453cf973fcd7a93abdd9a726ef45946">More...</a><br /></td></tr>
 <tr class="separator:ga8453cf973fcd7a93abdd9a726ef45946"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -238,7 +238,8 @@ HAL_Bool&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetPowerDistr
 <p>Checks if a PowerDistribution module is valid. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">channel</td><td>the module to check </td></tr>
+    <tr><td class="paramname">module</td><td>the module to check </td></tr>
+    <tr><td class="paramname">type</td><td>the type of module </td></tr>
   </table>
   </dd>
 </dl>
@@ -301,7 +302,8 @@ HAL_Bool&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetPowerDistr
 <p>Clears any PowerDistribution sticky faults. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the module handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the module handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -350,9 +352,10 @@ HAL_Bool&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetPowerDistr
 <p >The array must be large enough to hold all channels.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the module handle </td></tr>
-    <tr><td class="paramname">currents</td><td>the currents (output) </td></tr>
-    <tr><td class="paramname">currentsLength</td><td>the length of the currents array </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the module handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">currents</td><td>the currents </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">currentsLength</td><td>the length of the currents array </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -394,8 +397,9 @@ HAL_Bool&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetPowerDistr
 <p>Gets the current of a specific PowerDistribution channel. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">module</td><td>the module </td></tr>
-    <tr><td class="paramname">channel</td><td>the channel </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the module handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">channel</td><td>the channel </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -432,7 +436,8 @@ HAL_Bool&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetPowerDistr
 <p>Gets the module number for a specific handle. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the module handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the module handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -469,11 +474,50 @@ HAL_Bool&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetPowerDistr
 <p>Gets the number of channels for this handle. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>number of channels </dd></dl>
+
+</div>
+</div>
+<a id="ga8453cf973fcd7a93abdd9a726ef45946" name="ga8453cf973fcd7a93abdd9a726ef45946"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8453cf973fcd7a93abdd9a726ef45946">&#9670;&nbsp;</a></span>HAL_GetPowerDistributionSwitchableChannel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HAL_Bool HAL_GetPowerDistributionSwitchableChannel </td>
+          <td>(</td>
+          <td class="paramtype">HAL_PowerDistributionHandle&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t *&#160;</td>
+          <td class="paramname"><em>status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns true if switchable channel is powered on. </p>
+<p >This is a REV PDH-specific function. This function will no-op on CTRE PDP.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the module handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -506,7 +550,8 @@ HAL_Bool&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetPowerDistr
 <p>Gets the temperature of the PowerDistribution. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the module handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the module handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -543,7 +588,8 @@ HAL_Bool&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetPowerDistr
 <p>Gets the total current of the PowerDistribution. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the module handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the module handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -580,7 +626,8 @@ HAL_Bool&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetPowerDistr
 <p>Gets the total energy of the PowerDistribution. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the module handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the module handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -617,7 +664,8 @@ HAL_Bool&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetPowerDistr
 <p>Gets the total power of the PowerDistribution. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the module handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the module handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -652,6 +700,13 @@ HAL_Bool&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetPowerDistr
 </div><div class="memdoc">
 
 <p>Gets the type of PowerDistribution module. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the module handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>the type of module </dd></dl>
 
 </div>
@@ -685,7 +740,8 @@ HAL_Bool&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetPowerDistr
 <p>Gets the PowerDistribution input voltage. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the module handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the module handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -734,8 +790,10 @@ HAL_Bool&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetPowerDistr
 <p>Initializes a Power Distribution Panel. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">module</td><td>the module number to initialize </td></tr>
-    <tr><td class="paramname">type</td><td>the type of module to intialize </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">moduleNumber</td><td>the module number to initialize </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>the type of module to intialize </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">allocationLocation</td><td>the location where the allocation is occuring </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -772,7 +830,53 @@ HAL_Bool&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetPowerDistr
 <p>Resets the PowerDistribution accumulated energy. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the module handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the module handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gaefd97007da78dedab4354cc249c34aa4" name="gaefd97007da78dedab4354cc249c34aa4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaefd97007da78dedab4354cc249c34aa4">&#9670;&nbsp;</a></span>HAL_SetPowerDistributionSwitchableChannel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HAL_SetPowerDistributionSwitchableChannel </td>
+          <td>(</td>
+          <td class="paramtype">HAL_PowerDistributionHandle&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">HAL_Bool&#160;</td>
+          <td class="paramname"><em>enabled</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t *&#160;</td>
+          <td class="paramname"><em>status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Power on/off switchable channel. </p>
+<p >This is a REV PDH-specific function. This function will no-op on CTRE PDP.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the module handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enabled</td><td>true to turn on switchable channel </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -784,7 +888,7 @@ HAL_Bool&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetPowerDistr
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Oct 14 2021 14:31:49 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Oct 15 2021 01:13:00 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

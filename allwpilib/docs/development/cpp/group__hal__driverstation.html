@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-13-g4ad3a54</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-14-g4647d09</span>
    </div>
   </td>
  </tr>
@@ -319,7 +319,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_ReleaseDSMutex</b
 <p>Gets the current alliance station ID. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
   </table>
   </dd>
 </dl>
@@ -499,7 +499,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_ReleaseDSMutex</b
 <p>Retrieves the Joystick Descriptor for particular slot. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">desc</td><td>[out] descriptor (data transfer object) to fill in. desc is filled in regardless of success. In other words, if descriptor is not available, desc is filled in with default values matching the init-values in Java and C++ Driverstation for when caller requests a too-large joystick index.</td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">joystickNum</td><td>the joystick number </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">desc</td><td>descriptor (data transfer object) to fill in. desc is filled in regardless of success. In other words, if descriptor is not available, desc is filled in with default values matching the init-values in Java and C++ Driver Station for when caller requests a too-large joystick index. </td></tr>
   </table>
   </dd>
 </dl>
@@ -648,7 +649,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_ReleaseDSMutex</b
 <p>Gets info about a specific match. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">info</td><td>the match info (output) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">info</td><td>the match info (output) </td></tr>
   </table>
   </dd>
 </dl>
@@ -678,7 +679,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_ReleaseDSMutex</b
 <p >The Practice Match function of the DS approximates the behavior seen on the field.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
   </table>
   </dd>
 </dl>
@@ -923,7 +924,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_ReleaseDSMutex</b
     <tr><td class="paramname">isLVCode</td><td>true for a LV error code, false for a standard error code </td></tr>
     <tr><td class="paramname">details</td><td>the details of the error </td></tr>
     <tr><td class="paramname">location</td><td>the file location of the errror </td></tr>
-    <tr><td class="paramname">callstack</td><td>the callstack of the error </td></tr>
+    <tr><td class="paramname">callStack</td><td>the callstack of the error </td></tr>
     <tr><td class="paramname">printMsg</td><td>true to print the error message to stdout as well as to the DS </td></tr>
   </table>
   </dd>
@@ -1024,7 +1025,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_ReleaseDSMutex</b
 <p >If timeout is &lt;= 0, this will wait forever. Otherwise, it will wait until either a new packet, or the timeout time has passed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">timeout</td><td>timeout in seconds </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td>timeout in seconds </td></tr>
   </table>
   </dd>
 </dl>
@@ -1037,7 +1038,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_ReleaseDSMutex</b
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Oct 14 2021 14:31:49 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Oct 15 2021 01:13:00 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

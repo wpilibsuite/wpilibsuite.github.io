@@ -1,6 +1,13 @@
 var searchData=
 [
-  ['object_5ft_0',['object_t',['../classwpi_1_1json.html#a5eaf3f4fbf3c4648c70050db480358d6',1,'wpi::json']]],
-  ['other_5ferror_1',['other_error',['../classwpi_1_1json.html#aa02bbed26190f697f5d5cdd24ecb36c0',1,'wpi::json']]],
-  ['out_5fof_5frange_2',['out_of_range',['../classwpi_1_1json.html#aab36cadf0a02394d11bf493b3d95e272',1,'wpi::json']]]
+  ['illuminance_5funit_0',['illuminance_unit',['../namespaceunits_1_1category.html#a58394ebe6d7b2f0e0224e15b9f6a2637',1,'units::category']]],
+  ['impedance_5funit_1',['impedance_unit',['../namespaceunits_1_1category.html#a30f314570cbe9c1c415d1f5d49ff1418',1,'units::category']]],
+  ['index_2',['Index',['../classEigen_1_1internal_1_1UpperBidiagonalization.html#adcb14f3919a3dcc9977ba6b8105087fe',1,'Eigen::internal::UpperBidiagonalization::Index()'],['../namespaceEigen.html#a62e77e0933482dafde8fe197d9a2cfde',1,'Eigen::Index()'],['../classEigen_1_1VectorwiseOp.html#a4907c654e5810edd98e4162093b19532',1,'Eigen::VectorwiseOp::Index()'],['../classEigen_1_1TranspositionsBase.html#a3f5f06118b419e8e6ccbe49ed5b4c91f',1,'Eigen::TranspositionsBase::Index()'],['../classEigen_1_1Stride.html#a96c2dfb0ce43fd8e19adcdf6094f5f63',1,'Eigen::Stride::Index()'],['../structEigen_1_1EigenBase.html#a554f30542cc2316add4b1ea0a492ff02',1,'Eigen::EigenBase::Index()'],['../classEigen_1_1ComplexSchur.html#a652104d13723a5b1db2937866a034557',1,'Eigen::ComplexSchur::Index()'],['../classEigen_1_1Tridiagonalization.html#a7bd1f9fccec1e93b77a2214b2d30aae9',1,'Eigen::Tridiagonalization::Index()'],['../classEigen_1_1GeneralizedEigenSolver.html#a46a0ff3841059479ec314e56a5645302',1,'Eigen::GeneralizedEigenSolver::Index()'],['../classEigen_1_1RealSchur.html#a8bd4653e2d9569a44ecc95e746422d3f',1,'Eigen::RealSchur::Index()'],['../classEigen_1_1RealQZ.html#a6201e534e901b5f4e66f72c176b534a3',1,'Eigen::RealQZ::Index()'],['../classEigen_1_1HessenbergDecomposition.html#a8e287ac222f53e2c8ce82faa43e95ac6',1,'Eigen::HessenbergDecomposition::Index()'],['../classEigen_1_1EigenSolver.html#a5bff6a6bc0efac67d52c60c2c3deb9ee',1,'Eigen::EigenSolver::Index()'],['../classEigen_1_1ComplexEigenSolver.html#abc0218d8b902af0d6c759bfc0a8a8d74',1,'Eigen::ComplexEigenSolver::Index()'],['../classEigen_1_1SelfAdjointEigenSolver.html#a8a59ab7734b6eae2754fd78bc7c3a360',1,'Eigen::SelfAdjointEigenSolver::Index()'],['../classEigen_1_1SVDBase.html#a6229a37997eca1072b52cca5ee7a2bec',1,'Eigen::SVDBase::Index()']]],
+  ['inductance_5funit_3',['inductance_unit',['../namespaceunits_1_1category.html#ad2faf0f8cb76762e1534a8f35884f8ec',1,'units::category']]],
+  ['initializer_5flist_5ft_4',['initializer_list_t',['../classwpi_1_1json.html#a655be789ab627f2f210f5e7055de9bb5',1,'wpi::json']]],
+  ['inneriterator_5',['InnerIterator',['../classEigen_1_1DenseBase.html#a4dc102b445d8fb48a28dfcd22323f649',1,'Eigen::DenseBase']]],
+  ['invalid_5fiterator_6',['invalid_iterator',['../classwpi_1_1json.html#a55c7d760ee62cfbaa68f89f69c9f923d',1,'wpi::json']]],
+  ['inverse_7',['inverse',['../group__UnitManipulators.html#ga18b87c9f4576fb72ddc0b2a516a42d41',1,'units']]],
+  ['iterator_8',['iterator',['../classwpi_1_1json.html#ac6f2508a98ce0de7aa0b2b74f3eb9e03',1,'wpi::json']]],
+  ['iterator_5fcategory_9',['iterator_category',['../classwpi_1_1detail_1_1iter__impl.html#ae9c39727735455db8221734ee74d721f',1,'wpi::detail::iter_impl']]]
 ];

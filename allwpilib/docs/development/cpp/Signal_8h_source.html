@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-13-g4ad3a54</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-14-g4647d09</span>
    </div>
   </td>
  </tr>
@@ -620,168 +620,168 @@ $(document).ready(function(){initNavTree('Signal_8h_source.html',''); initResiza
 <div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span>        <span class="keywordflow">if</span> (!m_block &amp;&amp; m_func) m_func(std::forward&lt;A&gt;(a)...);</div>
 <div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>    }</div>
 <div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span> </div>
-<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Callable&gt;</div>
-<div class="line"><a id="l00587" name="l00587"></a><span class="lineno"><a class="line" href="classwpi_1_1sig_1_1SignalBase.html#acfd29b0873a2c65d53e4c20f8191b74c">  587</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1sig_1_1SignalBase.html#acfd29b0873a2c65d53e4c20f8191b74c">connect</a>(Callable &amp;&amp; c) {</div>
-<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>        <span class="keywordflow">if</span> (!m_func) {</div>
-<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span>          m_func = std::forward&lt;Callable&gt;(c);</div>
-<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span>          <span class="keyword">using</span> slot_t = <a class="code hl_class" href="classwpi_1_1sig_1_1detail_1_1Slot.html">detail::Slot&lt;Callable, arg_list&gt;</a>;</div>
-<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span>          <span class="keyword">auto</span> s = std::make_shared&lt;slot_t&gt;(std::forward&lt;Callable&gt;(c));</div>
-<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>          add_slot(s);</div>
-<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>        }</div>
-<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span>    }</div>
-<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span> </div>
-<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Callable&gt;</div>
-<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span>    std::enable_if_t&lt;trait::is_callable_v&lt;arg_list, Callable&gt;, <a class="code hl_class" href="classwpi_1_1sig_1_1Connection.html">Connection</a>&gt;</div>
-<div class="line"><a id="l00609" name="l00609"></a><span class="lineno"><a class="line" href="classwpi_1_1sig_1_1SignalBase.html#aabf983ff3b1f0d4de1e14bec2348adfe">  609</a></span>    <a class="code hl_function" href="classwpi_1_1sig_1_1SignalBase.html#aabf983ff3b1f0d4de1e14bec2348adfe">connect_connection</a>(Callable &amp;&amp; c) {</div>
-<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>        <span class="keyword">using</span> slot_t = <a class="code hl_class" href="classwpi_1_1sig_1_1detail_1_1Slot.html">detail::Slot&lt;Callable, arg_list&gt;</a>;</div>
-<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span>        <span class="keyword">auto</span> s = std::make_shared&lt;slot_t&gt;(std::forward&lt;Callable&gt;(c));</div>
-<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>        add_slot(s);</div>
-<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="classwpi_1_1sig_1_1Connection.html">Connection</a>(s);</div>
-<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span>    }</div>
-<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span> </div>
-<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Callable&gt;</div>
-<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>    std::enable_if_t&lt;trait::is_callable_v&lt;ext_arg_list, Callable&gt;, <a class="code hl_class" href="classwpi_1_1sig_1_1Connection.html">Connection</a>&gt;</div>
-<div class="line"><a id="l00627" name="l00627"></a><span class="lineno"><a class="line" href="classwpi_1_1sig_1_1SignalBase.html#aaa7319146c3688ca4db4e918ea8ed11f">  627</a></span>    <a class="code hl_function" href="classwpi_1_1sig_1_1SignalBase.html#aaa7319146c3688ca4db4e918ea8ed11f">connect_extended</a>(Callable &amp;&amp; c) {</div>
-<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span>        <span class="keyword">using</span> slot_t = <a class="code hl_class" href="classwpi_1_1sig_1_1detail_1_1Slot.html">detail::Slot&lt;Callable, ext_arg_list&gt;</a>;</div>
-<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>        <span class="keyword">auto</span> s = std::make_shared&lt;slot_t&gt;(std::forward&lt;Callable&gt;(c));</div>
-<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span>        s-&gt;conn = <a class="code hl_class" href="classwpi_1_1sig_1_1Connection.html">Connection</a>(s);</div>
-<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span>        add_slot(s);</div>
-<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="classwpi_1_1sig_1_1Connection.html">Connection</a>(s);</div>
-<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span>    }</div>
-<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span> </div>
-<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Pmf, <span class="keyword">typename</span> Ptr&gt;</div>
-<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span>    std::enable_if_t&lt;trait::is_callable_v&lt;arg_list, Pmf, Ptr&gt; &amp;&amp;</div>
-<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span>                     !trait::is_weak_ptr_compatible_v&lt;Ptr&gt;, <a class="code hl_class" href="classwpi_1_1sig_1_1Connection.html">Connection</a>&gt;</div>
-<div class="line"><a id="l00645" name="l00645"></a><span class="lineno"><a class="line" href="classwpi_1_1sig_1_1SignalBase.html#acd009f3f422b28fb1939a7be7f02bf7d">  645</a></span>    <a class="code hl_function" href="classwpi_1_1sig_1_1SignalBase.html#acd009f3f422b28fb1939a7be7f02bf7d">connect</a>(Pmf &amp;&amp; pmf, Ptr &amp;&amp; ptr) {</div>
-<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>        <span class="keyword">using</span> slot_t = <a class="code hl_class" href="classwpi_1_1sig_1_1detail_1_1Slot.html">detail::Slot&lt;Pmf, Ptr, arg_list&gt;</a>;</div>
-<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>        <span class="keyword">auto</span> s = std::make_shared&lt;slot_t&gt;(std::forward&lt;Pmf&gt;(pmf), std::forward&lt;Ptr&gt;(ptr));</div>
-<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>        add_slot(s);</div>
-<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="classwpi_1_1sig_1_1Connection.html">Connection</a>(s);</div>
-<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span>    }</div>
-<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span> </div>
-<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Pmf, <span class="keyword">typename</span> Ptr&gt;</div>
-<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>    std::enable_if_t&lt;trait::is_callable_v&lt;ext_arg_list, Pmf, Ptr&gt; &amp;&amp;</div>
-<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span>                     !trait::is_weak_ptr_compatible_v&lt;Ptr&gt;, <a class="code hl_class" href="classwpi_1_1sig_1_1Connection.html">Connection</a>&gt;</div>
-<div class="line"><a id="l00662" name="l00662"></a><span class="lineno"><a class="line" href="classwpi_1_1sig_1_1SignalBase.html#a110efc4cf146f4f15ff485a97b2e89eb">  662</a></span>    <a class="code hl_function" href="classwpi_1_1sig_1_1SignalBase.html#a110efc4cf146f4f15ff485a97b2e89eb">connect_extended</a>(Pmf &amp;&amp; pmf, Ptr &amp;&amp; ptr) {</div>
-<div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span>        <span class="keyword">using</span> slot_t = <a class="code hl_class" href="classwpi_1_1sig_1_1detail_1_1Slot.html">detail::Slot&lt;Pmf, Ptr, ext_arg_list&gt;</a>;</div>
-<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span>        <span class="keyword">auto</span> s = std::make_shared&lt;slot_t&gt;(std::forward&lt;Pmf&gt;(pmf), std::forward&lt;Ptr&gt;(ptr));</div>
-<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span>        s-&gt;conn = <a class="code hl_class" href="classwpi_1_1sig_1_1Connection.html">Connection</a>(s);</div>
-<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span>        add_slot(s);</div>
-<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="classwpi_1_1sig_1_1Connection.html">Connection</a>(s);</div>
-<div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span>    }</div>
-<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span> </div>
-<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Pmf, <span class="keyword">typename</span> Ptr&gt;</div>
-<div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span>    std::enable_if_t&lt;!trait::is_callable_v&lt;arg_list, Pmf&gt; &amp;&amp;</div>
-<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span>                     trait::is_weak_ptr_compatible_v&lt;Ptr&gt;, <a class="code hl_class" href="classwpi_1_1sig_1_1Connection.html">Connection</a>&gt;</div>
-<div class="line"><a id="l00689" name="l00689"></a><span class="lineno"><a class="line" href="classwpi_1_1sig_1_1SignalBase.html#a35636ab993f64e2e4af77132e2eea9bf">  689</a></span>    <a class="code hl_function" href="classwpi_1_1sig_1_1SignalBase.html#a35636ab993f64e2e4af77132e2eea9bf">connect</a>(Pmf &amp;&amp; pmf, Ptr &amp;&amp; ptr) {</div>
-<div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span>        <span class="keyword">using</span> trait::to_weak;</div>
-<div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span>        <span class="keyword">auto</span> w = to_weak(std::forward&lt;Ptr&gt;(ptr));</div>
-<div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span>        <span class="keyword">using</span> slot_t = <a class="code hl_class" href="classwpi_1_1sig_1_1detail_1_1SlotPmfTracked.html">detail::SlotPmfTracked</a>&lt;Pmf, <span class="keyword">decltype</span>(w), <a class="code hl_struct" href="structwpi_1_1sig_1_1trait_1_1typelist.html">arg_list</a>&gt;;</div>
-<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span>        <span class="keyword">auto</span> s = std::make_shared&lt;slot_t&gt;(std::forward&lt;Pmf&gt;(pmf), w);</div>
-<div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span>        add_slot(s);</div>
-<div class="line"><a id="l00695" name="l00695"></a><span class="lineno">  695</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="classwpi_1_1sig_1_1Connection.html">Connection</a>(s);</div>
-<div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span>    }</div>
-<div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span> </div>
-<div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Callable, <span class="keyword">typename</span> Trackable&gt;</div>
-<div class="line"><a id="l00715" name="l00715"></a><span class="lineno">  715</span>    std::enable_if_t&lt;trait::is_callable_v&lt;arg_list, Callable&gt; &amp;&amp;</div>
-<div class="line"><a id="l00716" name="l00716"></a><span class="lineno">  716</span>                     trait::is_weak_ptr_compatible_v&lt;Trackable&gt;, <a class="code hl_class" href="classwpi_1_1sig_1_1Connection.html">Connection</a>&gt;</div>
-<div class="line"><a id="l00717" name="l00717"></a><span class="lineno"><a class="line" href="classwpi_1_1sig_1_1SignalBase.html#a039919a6f4f91e1265ee5b8ef46275ea">  717</a></span>    <a class="code hl_function" href="classwpi_1_1sig_1_1SignalBase.html#a039919a6f4f91e1265ee5b8ef46275ea">connect</a>(Callable &amp;&amp; c, Trackable &amp;&amp; ptr) {</div>
-<div class="line"><a id="l00718" name="l00718"></a><span class="lineno">  718</span>        <span class="keyword">using</span> trait::to_weak;</div>
-<div class="line"><a id="l00719" name="l00719"></a><span class="lineno">  719</span>        <span class="keyword">auto</span> w = to_weak(std::forward&lt;Trackable&gt;(ptr));</div>
-<div class="line"><a id="l00720" name="l00720"></a><span class="lineno">  720</span>        <span class="keyword">using</span> slot_t = <a class="code hl_class" href="classwpi_1_1sig_1_1detail_1_1SlotTracked.html">detail::SlotTracked</a>&lt;Callable, <span class="keyword">decltype</span>(w), <a class="code hl_struct" href="structwpi_1_1sig_1_1trait_1_1typelist.html">arg_list</a>&gt;;</div>
-<div class="line"><a id="l00721" name="l00721"></a><span class="lineno">  721</span>        <span class="keyword">auto</span> s = std::make_shared&lt;slot_t&gt;(std::forward&lt;Callable&gt;(c), w);</div>
-<div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span>        add_slot(s);</div>
-<div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="classwpi_1_1sig_1_1Connection.html">Connection</a>(s);</div>
-<div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span>    }</div>
-<div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span> </div>
-<div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span>... CallArgs&gt;</div>
-<div class="line"><a id="l00731" name="l00731"></a><span class="lineno"><a class="line" href="classwpi_1_1sig_1_1SignalBase.html#a75bb02598c21a2510da1737e890e708b">  731</a></span>    <a class="code hl_class" href="classwpi_1_1sig_1_1ScopedConnection.html">ScopedConnection</a> <a class="code hl_function" href="classwpi_1_1sig_1_1SignalBase.html#a75bb02598c21a2510da1737e890e708b">connect_scoped</a>(CallArgs &amp;&amp; ...args) {</div>
-<div class="line"><a id="l00732" name="l00732"></a><span class="lineno">  732</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classwpi_1_1sig_1_1SignalBase.html#aabf983ff3b1f0d4de1e14bec2348adfe">connect_connection</a>(std::forward&lt;CallArgs&gt;(args)...);</div>
-<div class="line"><a id="l00733" name="l00733"></a><span class="lineno">  733</span>    }</div>
-<div class="line"><a id="l00734" name="l00734"></a><span class="lineno">  734</span> </div>
-<div class="line"><a id="l00739" name="l00739"></a><span class="lineno"><a class="line" href="classwpi_1_1sig_1_1SignalBase.html#a331c1b93ddd776347441febf33a7b516">  739</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1sig_1_1SignalBase.html#a331c1b93ddd776347441febf33a7b516">disconnect_all</a>() {</div>
-<div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span>        lock_type lock(m_mutex);</div>
-<div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span>        clear();</div>
-<div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span>    }</div>
-<div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span> </div>
-<div class="line"><a id="l00748" name="l00748"></a><span class="lineno"><a class="line" href="classwpi_1_1sig_1_1SignalBase.html#a4a00152704e119bbf67c66bb847b2989">  748</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1sig_1_1SignalBase.html#a4a00152704e119bbf67c66bb847b2989">block</a>() noexcept {</div>
-<div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span>        m_block.store(<span class="keyword">true</span>);</div>
-<div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span>    }</div>
-<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span> </div>
-<div class="line"><a id="l00756" name="l00756"></a><span class="lineno"><a class="line" href="classwpi_1_1sig_1_1SignalBase.html#a672251f4437ca9702d252e0a83f5071c">  756</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1sig_1_1SignalBase.html#a672251f4437ca9702d252e0a83f5071c">unblock</a>() noexcept {</div>
-<div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span>        m_block.store(<span class="keyword">false</span>);</div>
-<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span>    }</div>
-<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span> </div>
-<div class="line"><a id="l00763" name="l00763"></a><span class="lineno"><a class="line" href="classwpi_1_1sig_1_1SignalBase.html#a496d87b30720859705c6c90c990ea358">  763</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classwpi_1_1sig_1_1SignalBase.html#a496d87b30720859705c6c90c990ea358">blocked</a>() const noexcept {</div>
-<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span>        <span class="keywordflow">return</span> m_block.load();</div>
-<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span>    }</div>
-<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span> </div>
-<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> S&gt;</div>
-<div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span>    <span class="keywordtype">void</span> add_slot(S &amp;s) {</div>
-<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span>        lock_type lock(m_mutex);</div>
-<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span>        <span class="keywordflow">if</span> (!m_func) {</div>
-<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span>          <span class="comment">// nothing stored</span></div>
-<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span>          m_func = CallSlots(*<span class="keyword">this</span>);</div>
-<div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span>          <span class="keyword">auto</span> slots = m_func.template target&lt;CallSlots&gt;();</div>
-<div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span>          s-&gt;next = slots-&gt;m_slots;</div>
-<div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span>          slots-&gt;m_slots = s;</div>
-<div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<span class="keyword">auto</span> call_slots = m_func.template target&lt;CallSlots&gt;()) {</div>
-<div class="line"><a id="l00778" name="l00778"></a><span class="lineno">  778</span>          <span class="comment">// already CallSlots</span></div>
-<div class="line"><a id="l00779" name="l00779"></a><span class="lineno">  779</span>          s-&gt;next = call_slots-&gt;m_slots;</div>
-<div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span>          call_slots-&gt;m_slots = s;</div>
-<div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span>          <span class="comment">// was normal std::function, need to move it into a call slot</span></div>
-<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span>          <span class="keyword">using</span> slot_t = detail::Slot&lt;std::function&lt;void(T...)&gt;, arg_list&gt;;</div>
-<div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span>          <span class="keyword">auto</span> s2 = std::make_shared&lt;slot_t&gt;(</div>
-<div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span>              std::forward&lt;std::function&lt;<span class="keywordtype">void</span>(T...)&gt;&gt;(m_func));</div>
-<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span>          m_func = CallSlots(*<span class="keyword">this</span>);</div>
-<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span>          <span class="keyword">auto</span> slots = m_func.template target&lt;CallSlots&gt;();</div>
-<div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span>          s2-&gt;next = slots-&gt;m_slots;</div>
-<div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span>          s-&gt;next = s2;</div>
-<div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span>          slots-&gt;m_slots = s;</div>
-<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span>        }</div>
-<div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span>    }</div>
-<div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span> </div>
-<div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span>    <span class="keywordtype">void</span> clear() {</div>
-<div class="line"><a id="l00795" name="l00795"></a><span class="lineno">  795</span>        m_func = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00796" name="l00796"></a><span class="lineno">  796</span>    }</div>
-<div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span> </div>
-<div class="line"><a id="l00798" name="l00798"></a><span class="lineno">  798</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span>    std::function&lt;void(T...)&gt; m_func;</div>
-<div class="line"><a id="l00800" name="l00800"></a><span class="lineno">  800</span>    <span class="keyword">mutable</span> Lockable m_mutex;</div>
-<div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span>    std::atomic&lt;bool&gt; m_block;</div>
-<div class="line"><a id="l00802" name="l00802"></a><span class="lineno">  802</span>};</div>
-<div class="line"><a id="l00803" name="l00803"></a><span class="lineno">  803</span> </div>
-<div class="line"><a id="l00809" name="l00809"></a><span class="lineno">  809</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span>... T&gt;</div>
-<div class="line"><a id="l00810" name="l00810"></a><span class="lineno">  810</span><span class="keyword">using</span> Signal = SignalBase&lt;detail::NullMutex, T...&gt;;</div>
-<div class="line"><a id="l00811" name="l00811"></a><span class="lineno">  811</span> </div>
-<div class="line"><a id="l00821" name="l00821"></a><span class="lineno">  821</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span>... T&gt;</div>
-<div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span><span class="keyword">using</span> Signal_mt = SignalBase&lt;mutex, T...&gt;;</div>
-<div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span> </div>
-<div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span>... T&gt;</div>
-<div class="line"><a id="l00830" name="l00830"></a><span class="lineno">  830</span><span class="keyword">using</span> Signal_r = SignalBase&lt;recursive_mutex, T...&gt;;</div>
-<div class="line"><a id="l00831" name="l00831"></a><span class="lineno">  831</span> </div>
-<div class="line"><a id="l00832" name="l00832"></a><span class="lineno">  832</span>}  <span class="comment">// namespace sig</span></div>
-<div class="line"><a id="l00833" name="l00833"></a><span class="lineno">  833</span>}  <span class="comment">// namespace wpi</span></div>
+<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Callable&gt;</div>
+<div class="line"><a id="l00586" name="l00586"></a><span class="lineno"><a class="line" href="classwpi_1_1sig_1_1SignalBase.html#acfd29b0873a2c65d53e4c20f8191b74c">  586</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1sig_1_1SignalBase.html#acfd29b0873a2c65d53e4c20f8191b74c">connect</a>(Callable &amp;&amp; c) {</div>
+<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span>        <span class="keywordflow">if</span> (!m_func) {</div>
+<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>          m_func = std::forward&lt;Callable&gt;(c);</div>
+<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>          <span class="keyword">using</span> slot_t = <a class="code hl_class" href="classwpi_1_1sig_1_1detail_1_1Slot.html">detail::Slot&lt;Callable, arg_list&gt;</a>;</div>
+<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span>          <span class="keyword">auto</span> s = std::make_shared&lt;slot_t&gt;(std::forward&lt;Callable&gt;(c));</div>
+<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span>          add_slot(s);</div>
+<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>        }</div>
+<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>    }</div>
+<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span> </div>
+<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Callable&gt;</div>
+<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span>    std::enable_if_t&lt;trait::is_callable_v&lt;arg_list, Callable&gt;, <a class="code hl_class" href="classwpi_1_1sig_1_1Connection.html">Connection</a>&gt;</div>
+<div class="line"><a id="l00608" name="l00608"></a><span class="lineno"><a class="line" href="classwpi_1_1sig_1_1SignalBase.html#aabf983ff3b1f0d4de1e14bec2348adfe">  608</a></span>    <a class="code hl_function" href="classwpi_1_1sig_1_1SignalBase.html#aabf983ff3b1f0d4de1e14bec2348adfe">connect_connection</a>(Callable &amp;&amp; c) {</div>
+<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>        <span class="keyword">using</span> slot_t = <a class="code hl_class" href="classwpi_1_1sig_1_1detail_1_1Slot.html">detail::Slot&lt;Callable, arg_list&gt;</a>;</div>
+<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>        <span class="keyword">auto</span> s = std::make_shared&lt;slot_t&gt;(std::forward&lt;Callable&gt;(c));</div>
+<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span>        add_slot(s);</div>
+<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="classwpi_1_1sig_1_1Connection.html">Connection</a>(s);</div>
+<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>    }</div>
+<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span> </div>
+<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Callable&gt;</div>
+<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>    std::enable_if_t&lt;trait::is_callable_v&lt;ext_arg_list, Callable&gt;, <a class="code hl_class" href="classwpi_1_1sig_1_1Connection.html">Connection</a>&gt;</div>
+<div class="line"><a id="l00626" name="l00626"></a><span class="lineno"><a class="line" href="classwpi_1_1sig_1_1SignalBase.html#aaa7319146c3688ca4db4e918ea8ed11f">  626</a></span>    <a class="code hl_function" href="classwpi_1_1sig_1_1SignalBase.html#aaa7319146c3688ca4db4e918ea8ed11f">connect_extended</a>(Callable &amp;&amp; c) {</div>
+<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span>        <span class="keyword">using</span> slot_t = <a class="code hl_class" href="classwpi_1_1sig_1_1detail_1_1Slot.html">detail::Slot&lt;Callable, ext_arg_list&gt;</a>;</div>
+<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span>        <span class="keyword">auto</span> s = std::make_shared&lt;slot_t&gt;(std::forward&lt;Callable&gt;(c));</div>
+<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span>        s-&gt;conn = <a class="code hl_class" href="classwpi_1_1sig_1_1Connection.html">Connection</a>(s);</div>
+<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span>        add_slot(s);</div>
+<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="classwpi_1_1sig_1_1Connection.html">Connection</a>(s);</div>
+<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span>    }</div>
+<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span> </div>
+<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Pmf, <span class="keyword">typename</span> Ptr&gt;</div>
+<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>    std::enable_if_t&lt;trait::is_callable_v&lt;arg_list, Pmf, Ptr&gt; &amp;&amp;</div>
+<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span>                     !trait::is_weak_ptr_compatible_v&lt;Ptr&gt;, <a class="code hl_class" href="classwpi_1_1sig_1_1Connection.html">Connection</a>&gt;</div>
+<div class="line"><a id="l00644" name="l00644"></a><span class="lineno"><a class="line" href="classwpi_1_1sig_1_1SignalBase.html#acd009f3f422b28fb1939a7be7f02bf7d">  644</a></span>    <a class="code hl_function" href="classwpi_1_1sig_1_1SignalBase.html#acd009f3f422b28fb1939a7be7f02bf7d">connect</a>(Pmf &amp;&amp; pmf, Ptr &amp;&amp; ptr) {</div>
+<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>        <span class="keyword">using</span> slot_t = <a class="code hl_class" href="classwpi_1_1sig_1_1detail_1_1Slot.html">detail::Slot&lt;Pmf, Ptr, arg_list&gt;</a>;</div>
+<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>        <span class="keyword">auto</span> s = std::make_shared&lt;slot_t&gt;(std::forward&lt;Pmf&gt;(pmf), std::forward&lt;Ptr&gt;(ptr));</div>
+<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>        add_slot(s);</div>
+<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="classwpi_1_1sig_1_1Connection.html">Connection</a>(s);</div>
+<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span>    }</div>
+<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span> </div>
+<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Pmf, <span class="keyword">typename</span> Ptr&gt;</div>
+<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>    std::enable_if_t&lt;trait::is_callable_v&lt;ext_arg_list, Pmf, Ptr&gt; &amp;&amp;</div>
+<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>                     !trait::is_weak_ptr_compatible_v&lt;Ptr&gt;, <a class="code hl_class" href="classwpi_1_1sig_1_1Connection.html">Connection</a>&gt;</div>
+<div class="line"><a id="l00661" name="l00661"></a><span class="lineno"><a class="line" href="classwpi_1_1sig_1_1SignalBase.html#a110efc4cf146f4f15ff485a97b2e89eb">  661</a></span>    <a class="code hl_function" href="classwpi_1_1sig_1_1SignalBase.html#a110efc4cf146f4f15ff485a97b2e89eb">connect_extended</a>(Pmf &amp;&amp; pmf, Ptr &amp;&amp; ptr) {</div>
+<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span>        <span class="keyword">using</span> slot_t = <a class="code hl_class" href="classwpi_1_1sig_1_1detail_1_1Slot.html">detail::Slot&lt;Pmf, Ptr, ext_arg_list&gt;</a>;</div>
+<div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span>        <span class="keyword">auto</span> s = std::make_shared&lt;slot_t&gt;(std::forward&lt;Pmf&gt;(pmf), std::forward&lt;Ptr&gt;(ptr));</div>
+<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span>        s-&gt;conn = <a class="code hl_class" href="classwpi_1_1sig_1_1Connection.html">Connection</a>(s);</div>
+<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span>        add_slot(s);</div>
+<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="classwpi_1_1sig_1_1Connection.html">Connection</a>(s);</div>
+<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span>    }</div>
+<div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span> </div>
+<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Pmf, <span class="keyword">typename</span> Ptr&gt;</div>
+<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>    std::enable_if_t&lt;!trait::is_callable_v&lt;arg_list, Pmf&gt; &amp;&amp;</div>
+<div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span>                     trait::is_weak_ptr_compatible_v&lt;Ptr&gt;, <a class="code hl_class" href="classwpi_1_1sig_1_1Connection.html">Connection</a>&gt;</div>
+<div class="line"><a id="l00688" name="l00688"></a><span class="lineno"><a class="line" href="classwpi_1_1sig_1_1SignalBase.html#a35636ab993f64e2e4af77132e2eea9bf">  688</a></span>    <a class="code hl_function" href="classwpi_1_1sig_1_1SignalBase.html#a35636ab993f64e2e4af77132e2eea9bf">connect</a>(Pmf &amp;&amp; pmf, Ptr &amp;&amp; ptr) {</div>
+<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span>        <span class="keyword">using</span> trait::to_weak;</div>
+<div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span>        <span class="keyword">auto</span> w = to_weak(std::forward&lt;Ptr&gt;(ptr));</div>
+<div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span>        <span class="keyword">using</span> slot_t = <a class="code hl_class" href="classwpi_1_1sig_1_1detail_1_1SlotPmfTracked.html">detail::SlotPmfTracked</a>&lt;Pmf, <span class="keyword">decltype</span>(w), <a class="code hl_struct" href="structwpi_1_1sig_1_1trait_1_1typelist.html">arg_list</a>&gt;;</div>
+<div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span>        <span class="keyword">auto</span> s = std::make_shared&lt;slot_t&gt;(std::forward&lt;Pmf&gt;(pmf), w);</div>
+<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span>        add_slot(s);</div>
+<div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="classwpi_1_1sig_1_1Connection.html">Connection</a>(s);</div>
+<div class="line"><a id="l00695" name="l00695"></a><span class="lineno">  695</span>    }</div>
+<div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span> </div>
+<div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Callable, <span class="keyword">typename</span> Trackable&gt;</div>
+<div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span>    std::enable_if_t&lt;trait::is_callable_v&lt;arg_list, Callable&gt; &amp;&amp;</div>
+<div class="line"><a id="l00715" name="l00715"></a><span class="lineno">  715</span>                     trait::is_weak_ptr_compatible_v&lt;Trackable&gt;, <a class="code hl_class" href="classwpi_1_1sig_1_1Connection.html">Connection</a>&gt;</div>
+<div class="line"><a id="l00716" name="l00716"></a><span class="lineno"><a class="line" href="classwpi_1_1sig_1_1SignalBase.html#a039919a6f4f91e1265ee5b8ef46275ea">  716</a></span>    <a class="code hl_function" href="classwpi_1_1sig_1_1SignalBase.html#a039919a6f4f91e1265ee5b8ef46275ea">connect</a>(Callable &amp;&amp; c, Trackable &amp;&amp; ptr) {</div>
+<div class="line"><a id="l00717" name="l00717"></a><span class="lineno">  717</span>        <span class="keyword">using</span> trait::to_weak;</div>
+<div class="line"><a id="l00718" name="l00718"></a><span class="lineno">  718</span>        <span class="keyword">auto</span> w = to_weak(std::forward&lt;Trackable&gt;(ptr));</div>
+<div class="line"><a id="l00719" name="l00719"></a><span class="lineno">  719</span>        <span class="keyword">using</span> slot_t = <a class="code hl_class" href="classwpi_1_1sig_1_1detail_1_1SlotTracked.html">detail::SlotTracked</a>&lt;Callable, <span class="keyword">decltype</span>(w), <a class="code hl_struct" href="structwpi_1_1sig_1_1trait_1_1typelist.html">arg_list</a>&gt;;</div>
+<div class="line"><a id="l00720" name="l00720"></a><span class="lineno">  720</span>        <span class="keyword">auto</span> s = std::make_shared&lt;slot_t&gt;(std::forward&lt;Callable&gt;(c), w);</div>
+<div class="line"><a id="l00721" name="l00721"></a><span class="lineno">  721</span>        add_slot(s);</div>
+<div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span>        <span class="keywordflow">return</span> <a class="code hl_class" href="classwpi_1_1sig_1_1Connection.html">Connection</a>(s);</div>
+<div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span>    }</div>
+<div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span> </div>
+<div class="line"><a id="l00729" name="l00729"></a><span class="lineno">  729</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span>... CallArgs&gt;</div>
+<div class="line"><a id="l00730" name="l00730"></a><span class="lineno"><a class="line" href="classwpi_1_1sig_1_1SignalBase.html#a75bb02598c21a2510da1737e890e708b">  730</a></span>    <a class="code hl_class" href="classwpi_1_1sig_1_1ScopedConnection.html">ScopedConnection</a> <a class="code hl_function" href="classwpi_1_1sig_1_1SignalBase.html#a75bb02598c21a2510da1737e890e708b">connect_scoped</a>(CallArgs &amp;&amp; ...args) {</div>
+<div class="line"><a id="l00731" name="l00731"></a><span class="lineno">  731</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="classwpi_1_1sig_1_1SignalBase.html#aabf983ff3b1f0d4de1e14bec2348adfe">connect_connection</a>(std::forward&lt;CallArgs&gt;(args)...);</div>
+<div class="line"><a id="l00732" name="l00732"></a><span class="lineno">  732</span>    }</div>
+<div class="line"><a id="l00733" name="l00733"></a><span class="lineno">  733</span> </div>
+<div class="line"><a id="l00738" name="l00738"></a><span class="lineno"><a class="line" href="classwpi_1_1sig_1_1SignalBase.html#a331c1b93ddd776347441febf33a7b516">  738</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1sig_1_1SignalBase.html#a331c1b93ddd776347441febf33a7b516">disconnect_all</a>() {</div>
+<div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span>        lock_type lock(m_mutex);</div>
+<div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span>        clear();</div>
+<div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span>    }</div>
+<div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span> </div>
+<div class="line"><a id="l00747" name="l00747"></a><span class="lineno"><a class="line" href="classwpi_1_1sig_1_1SignalBase.html#a4a00152704e119bbf67c66bb847b2989">  747</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1sig_1_1SignalBase.html#a4a00152704e119bbf67c66bb847b2989">block</a>() noexcept {</div>
+<div class="line"><a id="l00748" name="l00748"></a><span class="lineno">  748</span>        m_block.store(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span>    }</div>
+<div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span> </div>
+<div class="line"><a id="l00755" name="l00755"></a><span class="lineno"><a class="line" href="classwpi_1_1sig_1_1SignalBase.html#a672251f4437ca9702d252e0a83f5071c">  755</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1sig_1_1SignalBase.html#a672251f4437ca9702d252e0a83f5071c">unblock</a>() noexcept {</div>
+<div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span>        m_block.store(<span class="keyword">false</span>);</div>
+<div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span>    }</div>
+<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span> </div>
+<div class="line"><a id="l00762" name="l00762"></a><span class="lineno"><a class="line" href="classwpi_1_1sig_1_1SignalBase.html#a496d87b30720859705c6c90c990ea358">  762</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classwpi_1_1sig_1_1SignalBase.html#a496d87b30720859705c6c90c990ea358">blocked</a>() const noexcept {</div>
+<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span>        <span class="keywordflow">return</span> m_block.load();</div>
+<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span>    }</div>
+<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span> </div>
+<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> S&gt;</div>
+<div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span>    <span class="keywordtype">void</span> add_slot(S &amp;s) {</div>
+<div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span>        lock_type lock(m_mutex);</div>
+<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span>        <span class="keywordflow">if</span> (!m_func) {</div>
+<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span>          <span class="comment">// nothing stored</span></div>
+<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span>          m_func = CallSlots(*<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span>          <span class="keyword">auto</span> slots = m_func.template target&lt;CallSlots&gt;();</div>
+<div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span>          s-&gt;next = slots-&gt;m_slots;</div>
+<div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span>          slots-&gt;m_slots = s;</div>
+<div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<span class="keyword">auto</span> call_slots = m_func.template target&lt;CallSlots&gt;()) {</div>
+<div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span>          <span class="comment">// already CallSlots</span></div>
+<div class="line"><a id="l00778" name="l00778"></a><span class="lineno">  778</span>          s-&gt;next = call_slots-&gt;m_slots;</div>
+<div class="line"><a id="l00779" name="l00779"></a><span class="lineno">  779</span>          call_slots-&gt;m_slots = s;</div>
+<div class="line"><a id="l00780" name="l00780"></a><span class="lineno">  780</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span>          <span class="comment">// was normal std::function, need to move it into a call slot</span></div>
+<div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span>          <span class="keyword">using</span> slot_t = detail::Slot&lt;std::function&lt;void(T...)&gt;, arg_list&gt;;</div>
+<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span>          <span class="keyword">auto</span> s2 = std::make_shared&lt;slot_t&gt;(</div>
+<div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span>              std::forward&lt;std::function&lt;<span class="keywordtype">void</span>(T...)&gt;&gt;(m_func));</div>
+<div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span>          m_func = CallSlots(*<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span>          <span class="keyword">auto</span> slots = m_func.template target&lt;CallSlots&gt;();</div>
+<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span>          s2-&gt;next = slots-&gt;m_slots;</div>
+<div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span>          s-&gt;next = s2;</div>
+<div class="line"><a id="l00789" name="l00789"></a><span class="lineno">  789</span>          slots-&gt;m_slots = s;</div>
+<div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span>        }</div>
+<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span>    }</div>
+<div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span> </div>
+<div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span>    <span class="keywordtype">void</span> clear() {</div>
+<div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span>        m_func = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00795" name="l00795"></a><span class="lineno">  795</span>    }</div>
+<div class="line"><a id="l00796" name="l00796"></a><span class="lineno">  796</span> </div>
+<div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00798" name="l00798"></a><span class="lineno">  798</span>    std::function&lt;void(T...)&gt; m_func;</div>
+<div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span>    <span class="keyword">mutable</span> Lockable m_mutex;</div>
+<div class="line"><a id="l00800" name="l00800"></a><span class="lineno">  800</span>    std::atomic&lt;bool&gt; m_block;</div>
+<div class="line"><a id="l00801" name="l00801"></a><span class="lineno">  801</span>};</div>
+<div class="line"><a id="l00802" name="l00802"></a><span class="lineno">  802</span> </div>
+<div class="line"><a id="l00808" name="l00808"></a><span class="lineno">  808</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span>... T&gt;</div>
+<div class="line"><a id="l00809" name="l00809"></a><span class="lineno">  809</span><span class="keyword">using</span> Signal = SignalBase&lt;detail::NullMutex, T...&gt;;</div>
+<div class="line"><a id="l00810" name="l00810"></a><span class="lineno">  810</span> </div>
+<div class="line"><a id="l00820" name="l00820"></a><span class="lineno">  820</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span>... T&gt;</div>
+<div class="line"><a id="l00821" name="l00821"></a><span class="lineno">  821</span><span class="keyword">using</span> Signal_mt = SignalBase&lt;mutex, T...&gt;;</div>
+<div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span> </div>
+<div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span>... T&gt;</div>
+<div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span><span class="keyword">using</span> Signal_r = SignalBase&lt;recursive_mutex, T...&gt;;</div>
+<div class="line"><a id="l00830" name="l00830"></a><span class="lineno">  830</span> </div>
+<div class="line"><a id="l00831" name="l00831"></a><span class="lineno">  831</span>}  <span class="comment">// namespace sig</span></div>
+<div class="line"><a id="l00832" name="l00832"></a><span class="lineno">  832</span>}  <span class="comment">// namespace wpi</span></div>
 <div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1120</div></div>
 <div class="ttc" id="aclasswpi_1_1sig_1_1ConnectionBlocker_html"><div class="ttname"><a href="classwpi_1_1sig_1_1ConnectionBlocker.html">wpi::sig::ConnectionBlocker</a></div><div class="ttdoc">ConnectionBlocker is a RAII object that blocks a connection until destruction.</div><div class="ttdef"><b>Definition:</b> Signal.h:154</div></div>
 <div class="ttc" id="aclasswpi_1_1sig_1_1Connection_html"><div class="ttname"><a href="classwpi_1_1sig_1_1Connection.html">wpi::sig::Connection</a></div><div class="ttdoc">A Connection object allows interaction with an ongoing slot connection.</div><div class="ttdef"><b>Definition:</b> Signal.h:198</div></div>
 <div class="ttc" id="aclasswpi_1_1sig_1_1ScopedConnection_html"><div class="ttname"><a href="classwpi_1_1sig_1_1ScopedConnection.html">wpi::sig::ScopedConnection</a></div><div class="ttdoc">ScopedConnection is a RAII version of Connection It disconnects the slot from the signal upon destruc...</div><div class="ttdef"><b>Definition:</b> Signal.h:257</div></div>
 <div class="ttc" id="aclasswpi_1_1sig_1_1SignalBase_html"><div class="ttname"><a href="classwpi_1_1sig_1_1SignalBase.html">wpi::sig::SignalBase</a></div><div class="ttdoc">SignalBase is an implementation of the observer pattern, through the use of an emitting object and sl...</div><div class="ttdef"><b>Definition:</b> Signal.h:495</div></div>
-<div class="ttc" id="aclasswpi_1_1sig_1_1SignalBase_html_a039919a6f4f91e1265ee5b8ef46275ea"><div class="ttname"><a href="classwpi_1_1sig_1_1SignalBase.html#a039919a6f4f91e1265ee5b8ef46275ea">wpi::sig::SignalBase::connect</a></div><div class="ttdeci">std::enable_if_t&lt; trait::is_callable_v&lt; arg_list, Callable &gt; &amp;&amp;trait::is_weak_ptr_compatible_v&lt; Trackable &gt;, Connection &gt; connect(Callable &amp;&amp;c, Trackable &amp;&amp;ptr)</div><div class="ttdoc">Overload of connect for lifetime object tracking and automatic disconnection.</div><div class="ttdef"><b>Definition:</b> Signal.h:717</div></div>
-<div class="ttc" id="aclasswpi_1_1sig_1_1SignalBase_html_a110efc4cf146f4f15ff485a97b2e89eb"><div class="ttname"><a href="classwpi_1_1sig_1_1SignalBase.html#a110efc4cf146f4f15ff485a97b2e89eb">wpi::sig::SignalBase::connect_extended</a></div><div class="ttdeci">std::enable_if_t&lt; trait::is_callable_v&lt; ext_arg_list, Pmf, Ptr &gt; &amp;&amp;!trait::is_weak_ptr_compatible_v&lt; Ptr &gt;, Connection &gt; connect_extended(Pmf &amp;&amp;pmf, Ptr &amp;&amp;ptr)</div><div class="ttdoc">Overload of connect for pointer over member functions and.</div><div class="ttdef"><b>Definition:</b> Signal.h:662</div></div>
-<div class="ttc" id="aclasswpi_1_1sig_1_1SignalBase_html_a331c1b93ddd776347441febf33a7b516"><div class="ttname"><a href="classwpi_1_1sig_1_1SignalBase.html#a331c1b93ddd776347441febf33a7b516">wpi::sig::SignalBase::disconnect_all</a></div><div class="ttdeci">void disconnect_all()</div><div class="ttdoc">Disconnects all the slots Safety: Thread safety depends on locking policy.</div><div class="ttdef"><b>Definition:</b> Signal.h:739</div></div>
-<div class="ttc" id="aclasswpi_1_1sig_1_1SignalBase_html_a35636ab993f64e2e4af77132e2eea9bf"><div class="ttname"><a href="classwpi_1_1sig_1_1SignalBase.html#a35636ab993f64e2e4af77132e2eea9bf">wpi::sig::SignalBase::connect</a></div><div class="ttdeci">std::enable_if_t&lt;!trait::is_callable_v&lt; arg_list, Pmf &gt; &amp;&amp;trait::is_weak_ptr_compatible_v&lt; Ptr &gt;, Connection &gt; connect(Pmf &amp;&amp;pmf, Ptr &amp;&amp;ptr)</div><div class="ttdoc">Overload of connect for lifetime object tracking and automatic disconnection.</div><div class="ttdef"><b>Definition:</b> Signal.h:689</div></div>
-<div class="ttc" id="aclasswpi_1_1sig_1_1SignalBase_html_a496d87b30720859705c6c90c990ea358"><div class="ttname"><a href="classwpi_1_1sig_1_1SignalBase.html#a496d87b30720859705c6c90c990ea358">wpi::sig::SignalBase::blocked</a></div><div class="ttdeci">bool blocked() const noexcept</div><div class="ttdoc">Tests blocking state of signal emission.</div><div class="ttdef"><b>Definition:</b> Signal.h:763</div></div>
-<div class="ttc" id="aclasswpi_1_1sig_1_1SignalBase_html_a4a00152704e119bbf67c66bb847b2989"><div class="ttname"><a href="classwpi_1_1sig_1_1SignalBase.html#a4a00152704e119bbf67c66bb847b2989">wpi::sig::SignalBase::block</a></div><div class="ttdeci">void block() noexcept</div><div class="ttdoc">Blocks signal emission Safety: thread safe.</div><div class="ttdef"><b>Definition:</b> Signal.h:748</div></div>
-<div class="ttc" id="aclasswpi_1_1sig_1_1SignalBase_html_a672251f4437ca9702d252e0a83f5071c"><div class="ttname"><a href="classwpi_1_1sig_1_1SignalBase.html#a672251f4437ca9702d252e0a83f5071c">wpi::sig::SignalBase::unblock</a></div><div class="ttdeci">void unblock() noexcept</div><div class="ttdoc">Unblocks signal emission Safety: thread safe.</div><div class="ttdef"><b>Definition:</b> Signal.h:756</div></div>
-<div class="ttc" id="aclasswpi_1_1sig_1_1SignalBase_html_a75bb02598c21a2510da1737e890e708b"><div class="ttname"><a href="classwpi_1_1sig_1_1SignalBase.html#a75bb02598c21a2510da1737e890e708b">wpi::sig::SignalBase::connect_scoped</a></div><div class="ttdeci">ScopedConnection connect_scoped(CallArgs &amp;&amp;...args)</div><div class="ttdoc">Creates a connection whose duration is tied to the return object Use the same semantics as connect.</div><div class="ttdef"><b>Definition:</b> Signal.h:731</div></div>
-<div class="ttc" id="aclasswpi_1_1sig_1_1SignalBase_html_aaa7319146c3688ca4db4e918ea8ed11f"><div class="ttname"><a href="classwpi_1_1sig_1_1SignalBase.html#aaa7319146c3688ca4db4e918ea8ed11f">wpi::sig::SignalBase::connect_extended</a></div><div class="ttdeci">std::enable_if_t&lt; trait::is_callable_v&lt; ext_arg_list, Callable &gt;, Connection &gt; connect_extended(Callable &amp;&amp;c)</div><div class="ttdoc">Connect a callable with an additional Connection argument.</div><div class="ttdef"><b>Definition:</b> Signal.h:627</div></div>
-<div class="ttc" id="aclasswpi_1_1sig_1_1SignalBase_html_aabf983ff3b1f0d4de1e14bec2348adfe"><div class="ttname"><a href="classwpi_1_1sig_1_1SignalBase.html#aabf983ff3b1f0d4de1e14bec2348adfe">wpi::sig::SignalBase::connect_connection</a></div><div class="ttdeci">std::enable_if_t&lt; trait::is_callable_v&lt; arg_list, Callable &gt;, Connection &gt; connect_connection(Callable &amp;&amp;c)</div><div class="ttdoc">Connect a callable of compatible arguments, returning a Connection.</div><div class="ttdef"><b>Definition:</b> Signal.h:609</div></div>
-<div class="ttc" id="aclasswpi_1_1sig_1_1SignalBase_html_acd009f3f422b28fb1939a7be7f02bf7d"><div class="ttname"><a href="classwpi_1_1sig_1_1SignalBase.html#acd009f3f422b28fb1939a7be7f02bf7d">wpi::sig::SignalBase::connect</a></div><div class="ttdeci">std::enable_if_t&lt; trait::is_callable_v&lt; arg_list, Pmf, Ptr &gt; &amp;&amp;!trait::is_weak_ptr_compatible_v&lt; Ptr &gt;, Connection &gt; connect(Pmf &amp;&amp;pmf, Ptr &amp;&amp;ptr)</div><div class="ttdoc">Overload of connect for pointers over member functions.</div><div class="ttdef"><b>Definition:</b> Signal.h:645</div></div>
-<div class="ttc" id="aclasswpi_1_1sig_1_1SignalBase_html_acfd29b0873a2c65d53e4c20f8191b74c"><div class="ttname"><a href="classwpi_1_1sig_1_1SignalBase.html#acfd29b0873a2c65d53e4c20f8191b74c">wpi::sig::SignalBase::connect</a></div><div class="ttdeci">void connect(Callable &amp;&amp;c)</div><div class="ttdoc">Connect a callable of compatible arguments.</div><div class="ttdef"><b>Definition:</b> Signal.h:587</div></div>
+<div class="ttc" id="aclasswpi_1_1sig_1_1SignalBase_html_a039919a6f4f91e1265ee5b8ef46275ea"><div class="ttname"><a href="classwpi_1_1sig_1_1SignalBase.html#a039919a6f4f91e1265ee5b8ef46275ea">wpi::sig::SignalBase::connect</a></div><div class="ttdeci">std::enable_if_t&lt; trait::is_callable_v&lt; arg_list, Callable &gt; &amp;&amp;trait::is_weak_ptr_compatible_v&lt; Trackable &gt;, Connection &gt; connect(Callable &amp;&amp;c, Trackable &amp;&amp;ptr)</div><div class="ttdoc">Overload of connect for lifetime object tracking and automatic disconnection.</div><div class="ttdef"><b>Definition:</b> Signal.h:716</div></div>
+<div class="ttc" id="aclasswpi_1_1sig_1_1SignalBase_html_a110efc4cf146f4f15ff485a97b2e89eb"><div class="ttname"><a href="classwpi_1_1sig_1_1SignalBase.html#a110efc4cf146f4f15ff485a97b2e89eb">wpi::sig::SignalBase::connect_extended</a></div><div class="ttdeci">std::enable_if_t&lt; trait::is_callable_v&lt; ext_arg_list, Pmf, Ptr &gt; &amp;&amp;!trait::is_weak_ptr_compatible_v&lt; Ptr &gt;, Connection &gt; connect_extended(Pmf &amp;&amp;pmf, Ptr &amp;&amp;ptr)</div><div class="ttdoc">Overload of connect for pointer over member functions and.</div><div class="ttdef"><b>Definition:</b> Signal.h:661</div></div>
+<div class="ttc" id="aclasswpi_1_1sig_1_1SignalBase_html_a331c1b93ddd776347441febf33a7b516"><div class="ttname"><a href="classwpi_1_1sig_1_1SignalBase.html#a331c1b93ddd776347441febf33a7b516">wpi::sig::SignalBase::disconnect_all</a></div><div class="ttdeci">void disconnect_all()</div><div class="ttdoc">Disconnects all the slots Safety: Thread safety depends on locking policy.</div><div class="ttdef"><b>Definition:</b> Signal.h:738</div></div>
+<div class="ttc" id="aclasswpi_1_1sig_1_1SignalBase_html_a35636ab993f64e2e4af77132e2eea9bf"><div class="ttname"><a href="classwpi_1_1sig_1_1SignalBase.html#a35636ab993f64e2e4af77132e2eea9bf">wpi::sig::SignalBase::connect</a></div><div class="ttdeci">std::enable_if_t&lt;!trait::is_callable_v&lt; arg_list, Pmf &gt; &amp;&amp;trait::is_weak_ptr_compatible_v&lt; Ptr &gt;, Connection &gt; connect(Pmf &amp;&amp;pmf, Ptr &amp;&amp;ptr)</div><div class="ttdoc">Overload of connect for lifetime object tracking and automatic disconnection.</div><div class="ttdef"><b>Definition:</b> Signal.h:688</div></div>
+<div class="ttc" id="aclasswpi_1_1sig_1_1SignalBase_html_a496d87b30720859705c6c90c990ea358"><div class="ttname"><a href="classwpi_1_1sig_1_1SignalBase.html#a496d87b30720859705c6c90c990ea358">wpi::sig::SignalBase::blocked</a></div><div class="ttdeci">bool blocked() const noexcept</div><div class="ttdoc">Tests blocking state of signal emission.</div><div class="ttdef"><b>Definition:</b> Signal.h:762</div></div>
+<div class="ttc" id="aclasswpi_1_1sig_1_1SignalBase_html_a4a00152704e119bbf67c66bb847b2989"><div class="ttname"><a href="classwpi_1_1sig_1_1SignalBase.html#a4a00152704e119bbf67c66bb847b2989">wpi::sig::SignalBase::block</a></div><div class="ttdeci">void block() noexcept</div><div class="ttdoc">Blocks signal emission Safety: thread safe.</div><div class="ttdef"><b>Definition:</b> Signal.h:747</div></div>
+<div class="ttc" id="aclasswpi_1_1sig_1_1SignalBase_html_a672251f4437ca9702d252e0a83f5071c"><div class="ttname"><a href="classwpi_1_1sig_1_1SignalBase.html#a672251f4437ca9702d252e0a83f5071c">wpi::sig::SignalBase::unblock</a></div><div class="ttdeci">void unblock() noexcept</div><div class="ttdoc">Unblocks signal emission Safety: thread safe.</div><div class="ttdef"><b>Definition:</b> Signal.h:755</div></div>
+<div class="ttc" id="aclasswpi_1_1sig_1_1SignalBase_html_a75bb02598c21a2510da1737e890e708b"><div class="ttname"><a href="classwpi_1_1sig_1_1SignalBase.html#a75bb02598c21a2510da1737e890e708b">wpi::sig::SignalBase::connect_scoped</a></div><div class="ttdeci">ScopedConnection connect_scoped(CallArgs &amp;&amp;...args)</div><div class="ttdoc">Creates a connection whose duration is tied to the return object Use the same semantics as connect.</div><div class="ttdef"><b>Definition:</b> Signal.h:730</div></div>
+<div class="ttc" id="aclasswpi_1_1sig_1_1SignalBase_html_aaa7319146c3688ca4db4e918ea8ed11f"><div class="ttname"><a href="classwpi_1_1sig_1_1SignalBase.html#aaa7319146c3688ca4db4e918ea8ed11f">wpi::sig::SignalBase::connect_extended</a></div><div class="ttdeci">std::enable_if_t&lt; trait::is_callable_v&lt; ext_arg_list, Callable &gt;, Connection &gt; connect_extended(Callable &amp;&amp;c)</div><div class="ttdoc">Connect a callable with an additional Connection argument.</div><div class="ttdef"><b>Definition:</b> Signal.h:626</div></div>
+<div class="ttc" id="aclasswpi_1_1sig_1_1SignalBase_html_aabf983ff3b1f0d4de1e14bec2348adfe"><div class="ttname"><a href="classwpi_1_1sig_1_1SignalBase.html#aabf983ff3b1f0d4de1e14bec2348adfe">wpi::sig::SignalBase::connect_connection</a></div><div class="ttdeci">std::enable_if_t&lt; trait::is_callable_v&lt; arg_list, Callable &gt;, Connection &gt; connect_connection(Callable &amp;&amp;c)</div><div class="ttdoc">Connect a callable of compatible arguments, returning a Connection.</div><div class="ttdef"><b>Definition:</b> Signal.h:608</div></div>
+<div class="ttc" id="aclasswpi_1_1sig_1_1SignalBase_html_acd009f3f422b28fb1939a7be7f02bf7d"><div class="ttname"><a href="classwpi_1_1sig_1_1SignalBase.html#acd009f3f422b28fb1939a7be7f02bf7d">wpi::sig::SignalBase::connect</a></div><div class="ttdeci">std::enable_if_t&lt; trait::is_callable_v&lt; arg_list, Pmf, Ptr &gt; &amp;&amp;!trait::is_weak_ptr_compatible_v&lt; Ptr &gt;, Connection &gt; connect(Pmf &amp;&amp;pmf, Ptr &amp;&amp;ptr)</div><div class="ttdoc">Overload of connect for pointers over member functions.</div><div class="ttdef"><b>Definition:</b> Signal.h:644</div></div>
+<div class="ttc" id="aclasswpi_1_1sig_1_1SignalBase_html_acfd29b0873a2c65d53e4c20f8191b74c"><div class="ttname"><a href="classwpi_1_1sig_1_1SignalBase.html#acfd29b0873a2c65d53e4c20f8191b74c">wpi::sig::SignalBase::connect</a></div><div class="ttdeci">void connect(Callable &amp;&amp;c)</div><div class="ttdoc">Connect a callable of compatible arguments.</div><div class="ttdef"><b>Definition:</b> Signal.h:586</div></div>
 <div class="ttc" id="aclasswpi_1_1sig_1_1SignalBase_html_ae135de16b3264f790ed5e9ba28ea7c99"><div class="ttname"><a href="classwpi_1_1sig_1_1SignalBase.html#ae135de16b3264f790ed5e9ba28ea7c99">wpi::sig::SignalBase::operator()</a></div><div class="ttdeci">void operator()(A &amp;&amp;... a) const</div><div class="ttdoc">Emit a signal.</div><div class="ttdef"><b>Definition:</b> Signal.h:571</div></div>
 <div class="ttc" id="aclasswpi_1_1sig_1_1detail_1_1SlotBase_html"><div class="ttname"><a href="classwpi_1_1sig_1_1detail_1_1SlotBase.html">wpi::sig::detail::SlotBase</a></div><div class="ttdef"><b>Definition:</b> Signal.h:300</div></div>
 <div class="ttc" id="aclasswpi_1_1sig_1_1detail_1_1SlotPmfTracked_html"><div class="ttname"><a href="classwpi_1_1sig_1_1detail_1_1SlotPmfTracked.html">wpi::sig::detail::SlotPmfTracked</a></div><div class="ttdef"><b>Definition:</b> Signal.h:432</div></div>
@@ -800,7 +800,7 @@ $(document).ready(function(){initNavTree('Signal_8h_source.html',''); initResiza
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><b>Signal.h</b></li>
-    <li class="footer">Generated on Thu Oct 14 2021 14:31:49 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Oct 15 2021 01:13:00 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

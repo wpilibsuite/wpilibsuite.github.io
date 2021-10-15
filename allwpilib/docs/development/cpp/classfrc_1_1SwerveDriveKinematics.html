@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-13-g4ad3a54</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-14-g4647d09</span>
    </div>
   </td>
  </tr>
@@ -183,7 +183,8 @@ template&lt;typename... Wheels&gt; </div>
 <p >This takes in a variable number of wheel locations as Translation2ds. The order in which you pass in the wheel locations is the same order that you will receive the module states when performing inverse kinematics. It is also expected that you pass in the module states in the same order when calling the forward kinematics methods.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">wheels</td><td>The locations of the wheels relative to the physical center of the robot. </td></tr>
+    <tr><td class="paramname">wheel</td><td>The location of the first wheel relative to the physical center of the robot. </td></tr>
+    <tr><td class="paramname">wheels</td><td>The locations of the other wheels relative to the physical center of the robot. </td></tr>
   </table>
   </dd>
 </dl>
@@ -339,7 +340,7 @@ template&lt;size_t NumModules&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>An array containing the module states. Use caution because these module states are not normalized. Sometimes, a user input may cause one of the module speeds to go above the attainable max velocity. Use the &lt;NormalizeWheelSpeeds&gt; function to rectify this issue. In addition, you can leverage the power of C++17 to directly assign the module states to variables:</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>An array containing the module states. Use caution because these module states are not normalized. Sometimes, a user input may cause one of the module speeds to go above the attainable max velocity. Use the NormalizeWheelSpeeds(wpi::array&lt;SwerveModuleState, NumModules&gt;*, units::meters_per_second_t) function to rectify this issue. In addition, you can leverage the power of C++17 to directly assign the module states to variables:</dd></dl>
 <div class="fragment"><div class="line"><span class="keyword">auto</span> [fl, fr, bl, br] = kinematics.ToSwerveModuleStates(chassisSpeeds);</div>
 </div><!-- fragment --> 
 </div>
@@ -354,7 +355,7 @@ template&lt;size_t NumModules&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1SwerveDriveKinematics.html">SwerveDriveKinematics</a></li>
-    <li class="footer">Generated on Thu Oct 14 2021 14:31:51 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Oct 15 2021 01:13:07 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-13-g4ad3a54</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-14-g4647d09</span>
    </div>
   </td>
  </tr>
@@ -103,11 +103,11 @@ $(document).ready(function(){initNavTree('classfrc_1_1LinearSystemId.html',''); 
 Public Types</h2></td></tr>
 <tr class="memitem:a7ac5852330ccb899e2fca03610259715"><td class="memTemplParams" colspan="2"><a id="a7ac5852330ccb899e2fca03610259715" name="a7ac5852330ccb899e2fca03610259715"></a>
 template&lt;typename Distance &gt; </td></tr>
-<tr class="memitem:a7ac5852330ccb899e2fca03610259715"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Velocity_t</b> = units::unit_t&lt; units::compound_unit&lt; Distance, units::inverse&lt; units::seconds &gt; &gt; &gt;</td></tr>
+<tr class="memitem:a7ac5852330ccb899e2fca03610259715"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Velocity_t</b> = <a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; <a class="el" href="group__UnitTypes.html#ga36d8b8cf508bd5ac7854d15f6eaf2d7c">units::compound_unit</a>&lt; Distance, <a class="el" href="group__UnitManipulators.html#ga18b87c9f4576fb72ddc0b2a516a42d41">units::inverse</a>&lt; units::seconds &gt; &gt; &gt;</td></tr>
 <tr class="separator:a7ac5852330ccb899e2fca03610259715"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51c8f481c2d224b0dc56733a636dd4ac"><td class="memTemplParams" colspan="2"><a id="a51c8f481c2d224b0dc56733a636dd4ac" name="a51c8f481c2d224b0dc56733a636dd4ac"></a>
 template&lt;typename Distance &gt; </td></tr>
-<tr class="memitem:a51c8f481c2d224b0dc56733a636dd4ac"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Acceleration_t</b> = units::unit_t&lt; units::compound_unit&lt; units::compound_unit&lt; Distance, units::inverse&lt; units::seconds &gt; &gt;, units::inverse&lt; units::seconds &gt; &gt; &gt;</td></tr>
+<tr class="memitem:a51c8f481c2d224b0dc56733a636dd4ac"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Acceleration_t</b> = <a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; <a class="el" href="group__UnitTypes.html#ga36d8b8cf508bd5ac7854d15f6eaf2d7c">units::compound_unit</a>&lt; <a class="el" href="group__UnitTypes.html#ga36d8b8cf508bd5ac7854d15f6eaf2d7c">units::compound_unit</a>&lt; Distance, <a class="el" href="group__UnitManipulators.html#ga18b87c9f4576fb72ddc0b2a516a42d41">units::inverse</a>&lt; units::seconds &gt; &gt;, <a class="el" href="group__UnitManipulators.html#ga18b87c9f4576fb72ddc0b2a516a42d41">units::inverse</a>&lt; units::seconds &gt; &gt; &gt;</td></tr>
 <tr class="separator:a51c8f481c2d224b0dc56733a636dd4ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
@@ -119,11 +119,11 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:a7e753e0d585deea31f230afaae6a6105"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs the state-space model for a single-jointed arm.  <a href="classfrc_1_1LinearSystemId.html#a7e753e0d585deea31f230afaae6a6105">More...</a><br /></td></tr>
 <tr class="separator:a7e753e0d585deea31f230afaae6a6105"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f641ec6fbde2870ef410bc4a6275f48"><td class="memTemplParams" colspan="2">template&lt;typename Distance , typename  = std::enable_if_t&lt;                                   std::is_same_v&lt;units::meter, Distance&gt; ||                                   std::is_same_v&lt;units::radian, Distance&gt;&gt;&gt; </td></tr>
-<tr class="memitem:a3f641ec6fbde2870ef410bc4a6275f48"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classfrc_1_1LinearSystem.html">LinearSystem</a>&lt; 1, 1, 1 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classfrc_1_1LinearSystemId.html#a3f641ec6fbde2870ef410bc4a6275f48">IdentifyVelocitySystem</a> (decltype(1_V/Velocity_t&lt; Distance &gt;(1)) kV, decltype(1_V/Acceleration_t&lt; Distance &gt;(1)) kA)</td></tr>
+<tr class="memitem:a3f641ec6fbde2870ef410bc4a6275f48"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classfrc_1_1LinearSystem.html">LinearSystem</a>&lt; 1, 1, 1 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classfrc_1_1LinearSystemId.html#a3f641ec6fbde2870ef410bc4a6275f48">IdentifyVelocitySystem</a> (decltype(1_V/<a class="el" href="classunits_1_1unit__t.html">Velocity_t</a>&lt; Distance &gt;(1)) kV, decltype(1_V/<a class="el" href="classunits_1_1unit__t.html">Acceleration_t</a>&lt; Distance &gt;(1)) kA)</td></tr>
 <tr class="memdesc:a3f641ec6fbde2870ef410bc4a6275f48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs the state-space model for a 1 DOF velocity-only system from system identification data.  <a href="classfrc_1_1LinearSystemId.html#a3f641ec6fbde2870ef410bc4a6275f48">More...</a><br /></td></tr>
 <tr class="separator:a3f641ec6fbde2870ef410bc4a6275f48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9dfa2cb9de19595c5eb43d2842e00689"><td class="memTemplParams" colspan="2">template&lt;typename Distance , typename  = std::enable_if_t&lt;                                   std::is_same_v&lt;units::meter, Distance&gt; ||                                   std::is_same_v&lt;units::radian, Distance&gt;&gt;&gt; </td></tr>
-<tr class="memitem:a9dfa2cb9de19595c5eb43d2842e00689"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classfrc_1_1LinearSystem.html">LinearSystem</a>&lt; 2, 1, 1 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classfrc_1_1LinearSystemId.html#a9dfa2cb9de19595c5eb43d2842e00689">IdentifyPositionSystem</a> (decltype(1_V/Velocity_t&lt; Distance &gt;(1)) kV, decltype(1_V/Acceleration_t&lt; Distance &gt;(1)) kA)</td></tr>
+<tr class="memitem:a9dfa2cb9de19595c5eb43d2842e00689"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classfrc_1_1LinearSystem.html">LinearSystem</a>&lt; 2, 1, 1 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classfrc_1_1LinearSystemId.html#a9dfa2cb9de19595c5eb43d2842e00689">IdentifyPositionSystem</a> (decltype(1_V/<a class="el" href="classunits_1_1unit__t.html">Velocity_t</a>&lt; Distance &gt;(1)) kV, decltype(1_V/<a class="el" href="classunits_1_1unit__t.html">Acceleration_t</a>&lt; Distance &gt;(1)) kA)</td></tr>
 <tr class="memdesc:a9dfa2cb9de19595c5eb43d2842e00689"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs the state-space model for a 1 DOF position system from system identification data.  <a href="classfrc_1_1LinearSystemId.html#a9dfa2cb9de19595c5eb43d2842e00689">More...</a><br /></td></tr>
 <tr class="separator:a9dfa2cb9de19595c5eb43d2842e00689"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a683b6de8c6a77b64329f0184b8f2bff2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classfrc_1_1LinearSystem.html">LinearSystem</a>&lt; 2, 2, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1LinearSystemId.html#a683b6de8c6a77b64329f0184b8f2bff2">IdentifyDrivetrainSystem</a> (decltype(1_V/1_mps) kVlinear, decltype(1_V/1_mps_sq) kAlinear, decltype(1_V/1_mps) kVangular, decltype(1_V/1_mps_sq) kAangular)</td></tr>
@@ -468,13 +468,13 @@ template&lt;typename Distance , typename  = std::enable_if_t&lt;                
         <tr>
           <td class="memname">static <a class="el" href="classfrc_1_1LinearSystem.html">LinearSystem</a>&lt; 2, 1, 1 &gt; frc::LinearSystemId::IdentifyPositionSystem </td>
           <td>(</td>
-          <td class="paramtype">decltype(1_V/Velocity_t&lt; Distance &gt;(1))&#160;</td>
+          <td class="paramtype">decltype(1_V/<a class="el" href="classunits_1_1unit__t.html">Velocity_t</a>&lt; Distance &gt;(1))&#160;</td>
           <td class="paramname"><em>kV</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">decltype(1_V/Acceleration_t&lt; Distance &gt;(1))&#160;</td>
+          <td class="paramtype">decltype(1_V/<a class="el" href="classunits_1_1unit__t.html">Acceleration_t</a>&lt; Distance &gt;(1))&#160;</td>
           <td class="paramname"><em>kA</em>&#160;</td>
         </tr>
         <tr>
@@ -519,13 +519,13 @@ template&lt;typename Distance , typename  = std::enable_if_t&lt;                
         <tr>
           <td class="memname">static <a class="el" href="classfrc_1_1LinearSystem.html">LinearSystem</a>&lt; 1, 1, 1 &gt; frc::LinearSystemId::IdentifyVelocitySystem </td>
           <td>(</td>
-          <td class="paramtype">decltype(1_V/Velocity_t&lt; Distance &gt;(1))&#160;</td>
+          <td class="paramtype">decltype(1_V/<a class="el" href="classunits_1_1unit__t.html">Velocity_t</a>&lt; Distance &gt;(1))&#160;</td>
           <td class="paramname"><em>kV</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">decltype(1_V/Acceleration_t&lt; Distance &gt;(1))&#160;</td>
+          <td class="paramtype">decltype(1_V/<a class="el" href="classunits_1_1unit__t.html">Acceleration_t</a>&lt; Distance &gt;(1))&#160;</td>
           <td class="paramname"><em>kA</em>&#160;</td>
         </tr>
         <tr>
@@ -618,7 +618,7 @@ template&lt;typename Distance , typename  = std::enable_if_t&lt;                
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1LinearSystemId.html">LinearSystemId</a></li>
-    <li class="footer">Generated on Thu Oct 14 2021 14:31:50 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Oct 15 2021 01:13:07 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

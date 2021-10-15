@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-13-g4ad3a54</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-14-g4647d09</span>
    </div>
   </td>
  </tr>
@@ -251,9 +251,11 @@ Functions</h2></td></tr>
 <p >Returns an array of entry handles. The results are optionally filtered by string prefix and entry type to only return a subset of all entries.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">inst</td><td>NetworkTable instance </td></tr>
     <tr><td class="paramname">prefix</td><td>entry name required prefix; only entries whose name starts with this string are returned </td></tr>
     <tr><td class="paramname">prefix_len</td><td>length of prefix in bytes </td></tr>
     <tr><td class="paramname">types</td><td>bitmask of NT_Type values; 0 is treated specially as a "don't care" </td></tr>
+    <tr><td class="paramname">count</td><td>stores number of entry handles returned </td></tr>
   </table>
   </dd>
 </dl>
@@ -724,7 +726,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Oct 14 2021 14:31:49 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Oct 15 2021 01:13:00 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

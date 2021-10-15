@@ -75,7 +75,7 @@ var group__ntcore__cpp__api =
       [ "NetworkTableInstance", "classnt_1_1NetworkTableInstance.html#a2fd93ee4d03aa7c2cc88a5930170f488", null ],
       [ "AddConnectionListener", "classnt_1_1NetworkTableInstance.html#a2864d23f95e78b7edb45a575961fcd9d", null ],
       [ "AddEntryListener", "classnt_1_1NetworkTableInstance.html#a00d8045fdac68c976072cfec2dbfe416", null ],
-      [ "AddLogger", "classnt_1_1NetworkTableInstance.html#ab9fa7791669d7042b1400d3a69c65a33", null ],
+      [ "AddLogger", "classnt_1_1NetworkTableInstance.html#a39e38354186352eb5351ae671108de5c", null ],
       [ "Create", "classnt_1_1NetworkTableInstance.html#a16c8cf8b39eaaa5684b6ca6e36a76f68", null ],
       [ "DeleteAllEntries", "classnt_1_1NetworkTableInstance.html#a22b34c327e0da33ab16b53c1994d7cf7", null ],
       [ "Destroy", "classnt_1_1NetworkTableInstance.html#ae2415aa85f185e31fd0c136544aa0764", null ],
@@ -255,12 +255,12 @@ var group__ntcore__cpp__api =
     [ "nt::NetworkTableValue", "group__ntcore__cpp__api.html#ga2bdfee8c11f9a4cfb1951cc824428725", null ],
     [ "nt::TableEntryListener", "group__ntcore__cpp__api.html#ga2803a8887ee10b29350d4cd1301937fc", null ],
     [ "nt::TableListener", "group__ntcore__cpp__api.html#gabefa1316ff1efa7c7bf48d855a8a7ea3", [
-      [ "nt::EntryListenerFlags::kImmediate", "group__ntcore__cpp__api.html#gga887cc6740f34496c468e67b81a017b6eaa637552032d3e89f0db0e302122b691d", null ],
-      [ "nt::EntryListenerFlags::kLocal", "group__ntcore__cpp__api.html#gga887cc6740f34496c468e67b81a017b6eaa4fd4805f919234abe0f9a8750d3eebe", null ],
-      [ "nt::EntryListenerFlags::kNew", "group__ntcore__cpp__api.html#gga887cc6740f34496c468e67b81a017b6eaeb1c99cf2cfb3074c4d21f3297b81167", null ],
-      [ "nt::EntryListenerFlags::kDelete", "group__ntcore__cpp__api.html#gga887cc6740f34496c468e67b81a017b6eab598151d1b91de678e6b01cf3eb58ff9", null ],
-      [ "nt::EntryListenerFlags::kUpdate", "group__ntcore__cpp__api.html#gga887cc6740f34496c468e67b81a017b6ea0ccb0be5fa05a46c301a4f70d2a036cd", null ],
-      [ "nt::EntryListenerFlags::kFlags", "group__ntcore__cpp__api.html#gga887cc6740f34496c468e67b81a017b6eafc5104febfc8a08878f3b5b589298a18", null ]
+      [ "nt::EntryListenerFlags::kImmediate", "group__ntcore__cpp__api.html#gga18cdbe0a76922ec319acdb027ee88f29aa637552032d3e89f0db0e302122b691d", null ],
+      [ "nt::EntryListenerFlags::kLocal", "group__ntcore__cpp__api.html#gga18cdbe0a76922ec319acdb027ee88f29aa4fd4805f919234abe0f9a8750d3eebe", null ],
+      [ "nt::EntryListenerFlags::kNew", "group__ntcore__cpp__api.html#gga18cdbe0a76922ec319acdb027ee88f29aeb1c99cf2cfb3074c4d21f3297b81167", null ],
+      [ "nt::EntryListenerFlags::kDelete", "group__ntcore__cpp__api.html#gga18cdbe0a76922ec319acdb027ee88f29ab598151d1b91de678e6b01cf3eb58ff9", null ],
+      [ "nt::EntryListenerFlags::kUpdate", "group__ntcore__cpp__api.html#gga18cdbe0a76922ec319acdb027ee88f29a0ccb0be5fa05a46c301a4f70d2a036cd", null ],
+      [ "nt::EntryListenerFlags::kFlags", "group__ntcore__cpp__api.html#gga18cdbe0a76922ec319acdb027ee88f29afc5104febfc8a08878f3b5b589298a18", null ]
     ] ],
     [ "nt::NetworkTableType", "group__ntcore__cpp__api.html#ga6389efeaed0733f40baa02cd3070a15c", null ]
 ];

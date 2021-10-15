@@ -1,7 +1,7 @@
 var classfrc_1_1AnalogTrigger =
 [
     [ "AnalogTrigger", "classfrc_1_1AnalogTrigger.html#af891ee0b6a52a7d868e421a711713402", null ],
-    [ "AnalogTrigger", "classfrc_1_1AnalogTrigger.html#ad9cbec302e351273de733b7784ae870a", null ],
+    [ "AnalogTrigger", "classfrc_1_1AnalogTrigger.html#a2a93d7fb9c14d3fcfca9f5f5f4788395", null ],
     [ "AnalogTrigger", "classfrc_1_1AnalogTrigger.html#a6ceba2c9c23d159011995a6b137a0205", null ],
     [ "CreateOutput", "classfrc_1_1AnalogTrigger.html#ab60dc531aca1b3eb3e73390501038e2c", null ],
     [ "GetIndex", "classfrc_1_1AnalogTrigger.html#a6fa1adb6bea2c16913e2db2bd69692c7", null ],

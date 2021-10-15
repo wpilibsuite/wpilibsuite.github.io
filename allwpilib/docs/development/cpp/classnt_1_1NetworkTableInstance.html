@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-13-g4ad3a54</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-14-g4647d09</span>
    </div>
   </td>
  </tr>
@@ -135,10 +135,10 @@ Public Types</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a88dfe5b82924f347c572cdada2707150"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logging levels (as used by SetLogger()). <br /></td></tr>
 <tr class="separator:a88dfe5b82924f347c572cdada2707150"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cdef3036d1405c82c05dfc30cdcb23b"><td class="memItemLeft" align="right" valign="top"><a id="a6cdef3036d1405c82c05dfc30cdcb23b" name="a6cdef3036d1405c82c05dfc30cdcb23b"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>kDefaultPort</b> = NT_DEFAULT_PORT
+<tr class="memitem:ada914328a79d8fe7f9c9a8ceea3d5fbe"><td class="memItemLeft" align="right" valign="top"><a id="ada914328a79d8fe7f9c9a8ceea3d5fbe" name="ada914328a79d8fe7f9c9a8ceea3d5fbe"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>kDefaultPort</b> = NT_DEFAULT_PORT
  }</td></tr>
-<tr class="memdesc:a6cdef3036d1405c82c05dfc30cdcb23b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default port that network tables operates on. <br /></td></tr>
-<tr class="separator:a6cdef3036d1405c82c05dfc30cdcb23b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:ada914328a79d8fe7f9c9a8ceea3d5fbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">The default port that network tables operates on. <br /></td></tr>
+<tr class="separator:ada914328a79d8fe7f9c9a8ceea3d5fbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -300,9 +300,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a7d5282662e5be28b164d932a9cdf8e81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Logger Functions</h2></td></tr>
-<tr class="memitem:ab9fa7791669d7042b1400d3a69c65a33"><td class="memItemLeft" align="right" valign="top">NT_Logger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1NetworkTableInstance.html#ab9fa7791669d7042b1400d3a69c65a33">AddLogger</a> (std::function&lt; void(const <a class="el" href="classnt_1_1LogMessage.html">LogMessage</a> &amp;msg)&gt; func, unsigned int min_level, unsigned int max_level)</td></tr>
-<tr class="memdesc:ab9fa7791669d7042b1400d3a69c65a33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add logger callback function.  <a href="classnt_1_1NetworkTableInstance.html#ab9fa7791669d7042b1400d3a69c65a33">More...</a><br /></td></tr>
-<tr class="separator:ab9fa7791669d7042b1400d3a69c65a33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39e38354186352eb5351ae671108de5c"><td class="memItemLeft" align="right" valign="top">NT_Logger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1NetworkTableInstance.html#a39e38354186352eb5351ae671108de5c">AddLogger</a> (std::function&lt; void(const <a class="el" href="classnt_1_1LogMessage.html">LogMessage</a> &amp;msg)&gt; func, unsigned int minLevel, unsigned int maxLevel)</td></tr>
+<tr class="memdesc:a39e38354186352eb5351ae671108de5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add logger callback function.  <a href="classnt_1_1NetworkTableInstance.html#a39e38354186352eb5351ae671108de5c">More...</a><br /></td></tr>
+<tr class="separator:a39e38354186352eb5351ae671108de5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7289d0e9b5d0ff28b7b33bc257670880"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1NetworkTableInstance.html#a7289d0e9b5d0ff28b7b33bc257670880">WaitForLoggerQueue</a> (double timeout)</td></tr>
 <tr class="memdesc:a7289d0e9b5d0ff28b7b33bc257670880"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for the incoming log event queue to be empty.  <a href="classnt_1_1NetworkTableInstance.html#a7289d0e9b5d0ff28b7b33bc257670880">More...</a><br /></td></tr>
 <tr class="separator:a7289d0e9b5d0ff28b7b33bc257670880"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -361,7 +361,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Construct from native handle. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>Native handle </td></tr>
+    <tr><td class="paramname">inst</td><td>Native handle </td></tr>
   </table>
   </dd>
 </dl>
@@ -452,8 +452,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ab9fa7791669d7042b1400d3a69c65a33" name="ab9fa7791669d7042b1400d3a69c65a33"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab9fa7791669d7042b1400d3a69c65a33">&#9670;&nbsp;</a></span>AddLogger()</h2>
+<a id="a39e38354186352eb5351ae671108de5c" name="a39e38354186352eb5351ae671108de5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39e38354186352eb5351ae671108de5c">&#9670;&nbsp;</a></span>AddLogger()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -471,13 +471,13 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>min_level</em>, </td>
+          <td class="paramname"><em>minLevel</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>max_level</em>&#160;</td>
+          <td class="paramname"><em>maxLevel</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1986,7 +1986,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacent.html">nt</a></li><li class="navelem"><a class="el" href="classnt_1_1NetworkTableInstance.html">NetworkTableInstance</a></li>
-    <li class="footer">Generated on Thu Oct 14 2021 14:31:51 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Oct 15 2021 01:13:08 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

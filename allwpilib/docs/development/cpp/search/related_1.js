@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['fg_0',['fg',['../classtext__style.html#a997e6e620a49e3f2a459f74249305136',1,'text_style']]]
+  ['eigen_5fmsvc10_5fworkaround_5fbinaryop_5freturn_5ftype_0',['EIGEN_MSVC10_WORKAROUND_BINARYOP_RETURN_TYPE',['../classEigen_1_1ArrayBase.html#ad3145bcf2d528f7374169e106c49f53b',1,'Eigen::ArrayBase::EIGEN_MSVC10_WORKAROUND_BINARYOP_RETURN_TYPE()'],['../classEigen_1_1ArrayBase.html#ad3145bcf2d528f7374169e106c49f53b',1,'Eigen::ArrayBase::EIGEN_MSVC10_WORKAROUND_BINARYOP_RETURN_TYPE()']]]
 ];

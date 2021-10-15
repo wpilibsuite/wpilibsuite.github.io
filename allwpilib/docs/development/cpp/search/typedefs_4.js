@@ -1,5 +1,12 @@
 var searchData=
 [
-  ['entrylistenercallback_0',['EntryListenerCallback',['../group__ntcore__entrylistener__func.html#ga8778e05d0047e7aae6cbb59680fa1742',1,'nt']]],
-  ['exception_1',['exception',['../classwpi_1_1json.html#a6927e8ad798af1f7f4b89a6d94bed66e',1,'wpi::json']]]
+  ['eigenvaluesreturntype_0',['EigenvaluesReturnType',['../classEigen_1_1SelfAdjointView.html#a8ae92703d920130b38a383f8b165146c',1,'Eigen::SelfAdjointView']]],
+  ['eigenvaluetype_1',['EigenvalueType',['../classEigen_1_1ComplexEigenSolver.html#ad3a663b1ff5200a098dabbbf9b7162b1',1,'Eigen::ComplexEigenSolver::EigenvalueType()'],['../classEigen_1_1EigenSolver.html#adc446bcb60572758fa64515f2825db62',1,'Eigen::EigenSolver::EigenvalueType()'],['../classEigen_1_1GeneralizedEigenSolver.html#ad59af178acc401f1bc4e330ef80f286d',1,'Eigen::GeneralizedEigenSolver::EigenvalueType()']]],
+  ['eigenvectorstype_2',['EigenvectorsType',['../classEigen_1_1EigenSolver.html#aa140354e2f7d5ce34c6488c39e19f2c2',1,'Eigen::EigenSolver::EigenvectorsType()'],['../classEigen_1_1GeneralizedEigenSolver.html#afffec018dbb2d87b4c09b6acecbb79cd',1,'Eigen::GeneralizedEigenSolver::EigenvectorsType()']]],
+  ['eigenvectortype_3',['EigenvectorType',['../classEigen_1_1ComplexEigenSolver.html#a67cd4d20590abfd86b2639c4c8ea3dd6',1,'Eigen::ComplexEigenSolver']]],
+  ['energy_5funit_4',['energy_unit',['../namespaceunits_1_1category.html#a5238ec9e9d4935062dd25ea1be9ab7f7',1,'units::category']]],
+  ['entrylistenercallback_5',['EntryListenerCallback',['../group__ntcore__entrylistener__func.html#ga8778e05d0047e7aae6cbb59680fa1742',1,'nt']]],
+  ['exa_6',['exa',['../group__UnitManipulators.html#gace72ca1410a8c171eafe012f152e8926',1,'units']]],
+  ['exbi_7',['exbi',['../group__UnitManipulators.html#ga2b89e0d3d6d3b496db4c067b8cf38707',1,'units']]],
+  ['exception_8',['exception',['../classwpi_1_1json.html#a6927e8ad798af1f7f4b89a6d94bed66e',1,'wpi::json']]]
 ];

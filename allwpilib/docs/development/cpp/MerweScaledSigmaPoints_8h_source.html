@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-13-g4ad3a54</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-14-g4647d09</span>
    </div>
   </td>
  </tr>
@@ -120,14 +120,14 @@ $(document).ready(function(){initNavTree('MerweScaledSigmaPoints_8h_source.html'
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="classfrc_1_1MerweScaledSigmaPoints.html#a15c06c71c78144ba7d589bdbdfccf404">   51</a></span>  <span class="keywordtype">int</span> <a class="code hl_function" href="classfrc_1_1MerweScaledSigmaPoints.html#a15c06c71c78144ba7d589bdbdfccf404">NumSigmas</a>() { <span class="keywordflow">return</span> 2 * States + 1; }</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="classfrc_1_1MerweScaledSigmaPoints.html#a3ca0a2d65f0443c01718733781dc6027">   65</a></span>  Eigen::Matrix&lt;double, States, 2 * States + 1&gt; <a class="code hl_function" href="classfrc_1_1MerweScaledSigmaPoints.html#a3ca0a2d65f0443c01718733781dc6027">SigmaPoints</a>(</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="classfrc_1_1MerweScaledSigmaPoints.html#a3ca0a2d65f0443c01718733781dc6027">   65</a></span>  <a class="code hl_class" href="classEigen_1_1Matrix.html">Eigen::Matrix&lt;double, States, 2 * States + 1&gt;</a> <a class="code hl_function" href="classfrc_1_1MerweScaledSigmaPoints.html#a3ca0a2d65f0443c01718733781dc6027">SigmaPoints</a>(</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>      <span class="keyword">const</span> Eigen::Vector&lt;double, States&gt;&amp; x,</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>      <span class="keyword">const</span> Eigen::Matrix&lt;double, States, States&gt;&amp; P) {</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>      <span class="keyword">const</span> <a class="code hl_class" href="classEigen_1_1Matrix.html">Eigen::Matrix&lt;double, States, States&gt;</a>&amp; P) {</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keywordtype">double</span> lambda = std::pow(m_alpha, 2) * (States + m_kappa) - States;</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    Eigen::Matrix&lt;double, States, States&gt; U =</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <a class="code hl_class" href="classEigen_1_1Matrix.html">Eigen::Matrix&lt;double, States, States&gt;</a> U =</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        ((lambda + States) * P).llt().matrixL();</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    Eigen::Matrix&lt;double, States, 2 * States + 1&gt; sigmas;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <a class="code hl_class" href="classEigen_1_1Matrix.html">Eigen::Matrix&lt;double, States, 2 * States + 1&gt;</a> sigmas;</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    sigmas.template block&lt;States, 1&gt;(0, 0) = x;</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> k = 0; k &lt; States; ++k) {</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>      sigmas.template block&lt;States, 1&gt;(0, k + 1) =</div>
@@ -166,6 +166,7 @@ $(document).ready(function(){initNavTree('MerweScaledSigmaPoints_8h_source.html'
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>};</div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>}  <span class="comment">// namespace frc</span></div>
+<div class="ttc" id="aclassEigen_1_1Matrix_html"><div class="ttname"><a href="classEigen_1_1Matrix.html">Eigen::Matrix</a></div><div class="ttdoc">The matrix class, also used for vectors and row-vectors.</div><div class="ttdef"><b>Definition:</b> Matrix.h:180</div></div>
 <div class="ttc" id="aclassfrc_1_1MerweScaledSigmaPoints_html"><div class="ttname"><a href="classfrc_1_1MerweScaledSigmaPoints.html">frc::MerweScaledSigmaPoints</a></div><div class="ttdoc">Generates sigma points and weights according to Van der Merwe's 2004 dissertation[1] for the Unscente...</div><div class="ttdef"><b>Definition:</b> MerweScaledSigmaPoints.h:29</div></div>
 <div class="ttc" id="aclassfrc_1_1MerweScaledSigmaPoints_html_a15c06c71c78144ba7d589bdbdfccf404"><div class="ttname"><a href="classfrc_1_1MerweScaledSigmaPoints.html#a15c06c71c78144ba7d589bdbdfccf404">frc::MerweScaledSigmaPoints::NumSigmas</a></div><div class="ttdeci">int NumSigmas()</div><div class="ttdoc">Returns number of sigma points for each variable in the state x.</div><div class="ttdef"><b>Definition:</b> MerweScaledSigmaPoints.h:51</div></div>
 <div class="ttc" id="aclassfrc_1_1MerweScaledSigmaPoints_html_a2a376a61a41f7e2cd5bae21588aa7560"><div class="ttname"><a href="classfrc_1_1MerweScaledSigmaPoints.html#a2a376a61a41f7e2cd5bae21588aa7560">frc::MerweScaledSigmaPoints::MerweScaledSigmaPoints</a></div><div class="ttdeci">MerweScaledSigmaPoints(double alpha=1e-3, double beta=2, int kappa=3 - States)</div><div class="ttdoc">Constructs a generator for Van der Merwe scaled sigma points.</div><div class="ttdef"><b>Definition:</b> MerweScaledSigmaPoints.h:40</div></div>
@@ -180,7 +181,7 @@ $(document).ready(function(){initNavTree('MerweScaledSigmaPoints_8h_source.html'
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_7b4a0634315f7993a48b0e5d4ddcc644.html">estimator</a></li><li class="navelem"><b>MerweScaledSigmaPoints.h</b></li>
-    <li class="footer">Generated on Thu Oct 14 2021 14:31:48 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Oct 15 2021 01:12:59 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

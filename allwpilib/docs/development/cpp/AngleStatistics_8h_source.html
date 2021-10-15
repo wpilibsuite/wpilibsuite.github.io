@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-13-g4ad3a54</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-14-g4647d09</span>
    </div>
   </td>
  </tr>
@@ -145,23 +145,23 @@ $(document).ready(function(){initNavTree('AngleStatistics_8h_source.html',''); i
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span> CovDim, <span class="keywordtype">int</span> States&gt;</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>Eigen::Vector&lt;double, CovDim&gt; AngleMean(</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keyword">const</span> Eigen::Matrix&lt;double, CovDim, 2 * States + 1&gt;&amp; sigmas,</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keyword">const</span> <a class="code hl_class" href="classEigen_1_1Matrix.html">Eigen::Matrix&lt;double, CovDim, 2 * States + 1&gt;</a>&amp; sigmas,</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keyword">const</span> Eigen::Vector&lt;double, 2 * States + 1&gt;&amp; Wm, <span class="keywordtype">int</span> angleStatesIdx) {</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  <span class="keywordtype">double</span> sumSin = sigmas.row(angleStatesIdx)</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                      .unaryExpr([](<span class="keyword">auto</span> it) { <span class="keywordflow">return</span> std::sin(it); })</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                      .unaryExpr([](<span class="keyword">auto</span> it) { <span class="keywordflow">return</span> <a class="code hl_function" href="group__UnitMath.html#gaf0a50351f8f51550d00e9831b60e1850">std::sin</a>(it); })</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                      .sum();</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  <span class="keywordtype">double</span> sumCos = sigmas.row(angleStatesIdx)</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                      .unaryExpr([](<span class="keyword">auto</span> it) { <span class="keywordflow">return</span> std::cos(it); })</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>                      .unaryExpr([](<span class="keyword">auto</span> it) { <span class="keywordflow">return</span> <a class="code hl_function" href="group__UnitMath.html#gac2aeac09538ac3f95fff947c12522faa">std::cos</a>(it); })</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                      .sum();</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  Eigen::Vector&lt;double, CovDim&gt; ret = sigmas * Wm;</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  ret[angleStatesIdx] = std::atan2(sumSin, sumCos);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  ret[angleStatesIdx] = <a class="code hl_function" href="group__UnitMath.html#ga845823260245af2abc83d2cf47f6e74b">std::atan2</a>(sumSin, sumCos);</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  <span class="keywordflow">return</span> ret;</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>}</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span> CovDim, <span class="keywordtype">int</span> States&gt;</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>std::function&lt;Eigen::Vector&lt;double, CovDim&gt;(</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="keyword">const</span> Eigen::Matrix&lt;double, CovDim, 2 * States + 1&gt;&amp;,</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="keyword">const</span> <a class="code hl_class" href="classEigen_1_1Matrix.html">Eigen::Matrix&lt;double, CovDim, 2 * States + 1&gt;</a>&amp;,</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    <span class="keyword">const</span> Eigen::Vector&lt;double, 2 * States + 1&gt;&amp;)&gt;</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>AngleMean(<span class="keywordtype">int</span> angleStateIdx) {</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  <span class="keywordflow">return</span> [=](<span class="keyword">auto</span> sigmas, <span class="keyword">auto</span> Wm) {</div>
@@ -170,13 +170,17 @@ $(document).ready(function(){initNavTree('AngleStatistics_8h_source.html',''); i
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>}</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>}  <span class="comment">// namespace frc</span></div>
+<div class="ttc" id="aclassEigen_1_1Matrix_html"><div class="ttname"><a href="classEigen_1_1Matrix.html">Eigen::Matrix</a></div><div class="ttdoc">The matrix class, also used for vectors and row-vectors.</div><div class="ttdef"><b>Definition:</b> Matrix.h:180</div></div>
+<div class="ttc" id="agroup__UnitMath_html_ga845823260245af2abc83d2cf47f6e74b"><div class="ttname"><a href="group__UnitMath.html#ga845823260245af2abc83d2cf47f6e74b">units::math::atan2</a></div><div class="ttdeci">angle::radian_t atan2(const Y y, const X x) noexcept</div><div class="ttdoc">Compute arc tangent with two parameters.</div><div class="ttdef"><b>Definition:</b> math.h:179</div></div>
+<div class="ttc" id="agroup__UnitMath_html_gac2aeac09538ac3f95fff947c12522faa"><div class="ttname"><a href="group__UnitMath.html#gac2aeac09538ac3f95fff947c12522faa">units::math::cos</a></div><div class="ttdeci">dimensionless::scalar_t cos(const AngleUnit angle) noexcept</div><div class="ttdoc">Compute cosine.</div><div class="ttdef"><b>Definition:</b> math.h:61</div></div>
+<div class="ttc" id="agroup__UnitMath_html_gaf0a50351f8f51550d00e9831b60e1850"><div class="ttname"><a href="group__UnitMath.html#gaf0a50351f8f51550d00e9831b60e1850">units::math::sin</a></div><div class="ttdeci">dimensionless::scalar_t sin(const AngleUnit angle) noexcept</div><div class="ttdoc">Compute sine.</div><div class="ttdef"><b>Definition:</b> math.h:81</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_7b4a0634315f7993a48b0e5d4ddcc644.html">estimator</a></li><li class="navelem"><b>AngleStatistics.h</b></li>
-    <li class="footer">Generated on Thu Oct 14 2021 14:31:48 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Oct 15 2021 01:12:58 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -23,7 +23,7 @@ var classnt_1_1NetworkTableInstance =
     [ "NetworkTableInstance", "classnt_1_1NetworkTableInstance.html#a2fd93ee4d03aa7c2cc88a5930170f488", null ],
     [ "AddConnectionListener", "classnt_1_1NetworkTableInstance.html#a2864d23f95e78b7edb45a575961fcd9d", null ],
     [ "AddEntryListener", "classnt_1_1NetworkTableInstance.html#a00d8045fdac68c976072cfec2dbfe416", null ],
-    [ "AddLogger", "classnt_1_1NetworkTableInstance.html#ab9fa7791669d7042b1400d3a69c65a33", null ],
+    [ "AddLogger", "classnt_1_1NetworkTableInstance.html#a39e38354186352eb5351ae671108de5c", null ],
     [ "Create", "classnt_1_1NetworkTableInstance.html#a16c8cf8b39eaaa5684b6ca6e36a76f68", null ],
     [ "DeleteAllEntries", "classnt_1_1NetworkTableInstance.html#a22b34c327e0da33ab16b53c1994d7cf7", null ],
     [ "Destroy", "classnt_1_1NetworkTableInstance.html#ae2415aa85f185e31fd0c136544aa0764", null ],

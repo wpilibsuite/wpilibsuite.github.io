@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-13-g4ad3a54</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-14-g4647d09</span>
    </div>
   </td>
  </tr>
@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('Trajectory_8h_source.html',''); initRe
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <a class="code hl_class" href="classfrc_1_1Pose2d.html">Pose2d</a> pose;</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="comment">// The curvature at that point of the trajectory.</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    units::curvature_t curvature{0.0};</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <a class="code hl_class" href="classunits_1_1unit__t.html">units::curvature_t</a> curvature{0.0};</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="structfrc_1_1Trajectory_1_1State.html#a56a220476e07a8e18fa0b01344408fa3">   55</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="structfrc_1_1Trajectory_1_1State.html#a56a220476e07a8e18fa0b01344408fa3">operator==</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structfrc_1_1Trajectory_1_1State.html">State</a>&amp; other) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
@@ -193,6 +193,7 @@ $(document).ready(function(){initNavTree('Trajectory_8h_source.html',''); initRe
 <div class="ttc" id="aclassfrc_1_1Trajectory_html_af317c5d052e653165ef4567d038b6517"><div class="ttname"><a href="classfrc_1_1Trajectory.html#af317c5d052e653165ef4567d038b6517">frc::Trajectory::InitialPose</a></div><div class="ttdeci">Pose2d InitialPose() const</div><div class="ttdoc">Returns the initial pose of the trajectory.</div><div class="ttdef"><b>Definition:</b> Trajectory.h:139</div></div>
 <div class="ttc" id="aclassfrc_1_1Trajectory_html_af637c0e4a03118c11a4b5d22aff79821"><div class="ttname"><a href="classfrc_1_1Trajectory.html#af637c0e4a03118c11a4b5d22aff79821">frc::Trajectory::States</a></div><div class="ttdeci">const std::vector&lt; State &gt; &amp; States() const</div><div class="ttdoc">Return the states of the trajectory.</div><div class="ttdef"><b>Definition:</b> Trajectory.h:93</div></div>
 <div class="ttc" id="aclassfrc_1_1Transform2d_html"><div class="ttname"><a href="classfrc_1_1Transform2d.html">frc::Transform2d</a></div><div class="ttdoc">Represents a transformation for a Pose2d.</div><div class="ttdef"><b>Definition:</b> Transform2d.h:18</div></div>
+<div class="ttc" id="aclassunits_1_1unit__t_html"><div class="ttname"><a href="classunits_1_1unit__t.html">units::unit_t&lt; units::compound_unit&lt; units::radians, units::inverse&lt; units::meters &gt; &gt; &gt;</a></div></div>
 <div class="ttc" id="aclasswpi_1_1json_html"><div class="ttname"><a href="classwpi_1_1json.html">wpi::json</a></div><div class="ttdoc">a class to store JSON values</div><div class="ttdef"><b>Definition:</b> json.h:2656</div></div>
 <div class="ttc" id="astructfrc_1_1Trajectory_1_1State_html"><div class="ttname"><a href="structfrc_1_1Trajectory_1_1State.html">frc::Trajectory::State</a></div><div class="ttdoc">Represents one point on the trajectory.</div><div class="ttdef"><b>Definition:</b> Trajectory.h:33</div></div>
 <div class="ttc" id="astructfrc_1_1Trajectory_1_1State_html_a479e2d7059f93e95469348dbde773268"><div class="ttname"><a href="structfrc_1_1Trajectory_1_1State.html#a479e2d7059f93e95469348dbde773268">frc::Trajectory::State::Interpolate</a></div><div class="ttdeci">State Interpolate(State endValue, double i) const</div><div class="ttdoc">Interpolates between two States.</div></div>
@@ -204,7 +205,7 @@ $(document).ready(function(){initNavTree('Trajectory_8h_source.html',''); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_b42dbd3ffe797209985ac3b5870ef1e5.html">trajectory</a></li><li class="navelem"><b>Trajectory.h</b></li>
-    <li class="footer">Generated on Thu Oct 14 2021 14:31:48 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Oct 15 2021 01:12:59 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

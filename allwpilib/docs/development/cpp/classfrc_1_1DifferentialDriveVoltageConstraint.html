@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-13-g4ad3a54</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-14-g4647d09</span>
    </div>
   </td>
  </tr>
@@ -117,10 +117,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1670e6436ffdac13516fb89d2ef41fbf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1DifferentialDriveVoltageConstraint.html#a1670e6436ffdac13516fb89d2ef41fbf">DifferentialDriveVoltageConstraint</a> (const <a class="el" href="classfrc_1_1SimpleMotorFeedforward.html">SimpleMotorFeedforward</a>&lt; units::meter &gt; &amp;feedforward, const <a class="el" href="classfrc_1_1DifferentialDriveKinematics.html">DifferentialDriveKinematics</a> &amp;kinematics, units::volt_t maxVoltage)</td></tr>
 <tr class="memdesc:a1670e6436ffdac13516fb89d2ef41fbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="classfrc_1_1DifferentialDriveVoltageConstraint.html" title="A class that enforces constraints on differential drive voltage expenditure based on the motor dynami...">DifferentialDriveVoltageConstraint</a>.  <a href="classfrc_1_1DifferentialDriveVoltageConstraint.html#a1670e6436ffdac13516fb89d2ef41fbf">More...</a><br /></td></tr>
 <tr class="separator:a1670e6436ffdac13516fb89d2ef41fbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d16338c17ab61701e65d21998117f34"><td class="memItemLeft" align="right" valign="top">units::meters_per_second_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1DifferentialDriveVoltageConstraint.html#a3d16338c17ab61701e65d21998117f34">MaxVelocity</a> (const <a class="el" href="classfrc_1_1Pose2d.html">Pose2d</a> &amp;pose, units::curvature_t curvature, units::meters_per_second_t velocity) const override</td></tr>
+<tr class="memitem:a3d16338c17ab61701e65d21998117f34"><td class="memItemLeft" align="right" valign="top">units::meters_per_second_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1DifferentialDriveVoltageConstraint.html#a3d16338c17ab61701e65d21998117f34">MaxVelocity</a> (const <a class="el" href="classfrc_1_1Pose2d.html">Pose2d</a> &amp;pose, <a class="el" href="classunits_1_1unit__t.html">units::curvature_t</a> curvature, units::meters_per_second_t velocity) const override</td></tr>
 <tr class="memdesc:a3d16338c17ab61701e65d21998117f34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the max velocity given the current pose and curvature.  <a href="classfrc_1_1DifferentialDriveVoltageConstraint.html#a3d16338c17ab61701e65d21998117f34">More...</a><br /></td></tr>
 <tr class="separator:a3d16338c17ab61701e65d21998117f34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa195e96a6d2f4396d21319347be74722"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structfrc_1_1TrajectoryConstraint_1_1MinMax.html">MinMax</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1DifferentialDriveVoltageConstraint.html#aa195e96a6d2f4396d21319347be74722">MinMaxAcceleration</a> (const <a class="el" href="classfrc_1_1Pose2d.html">Pose2d</a> &amp;pose, units::curvature_t curvature, units::meters_per_second_t speed) const override</td></tr>
+<tr class="memitem:aa195e96a6d2f4396d21319347be74722"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structfrc_1_1TrajectoryConstraint_1_1MinMax.html">MinMax</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1DifferentialDriveVoltageConstraint.html#aa195e96a6d2f4396d21319347be74722">MinMaxAcceleration</a> (const <a class="el" href="classfrc_1_1Pose2d.html">Pose2d</a> &amp;pose, <a class="el" href="classunits_1_1unit__t.html">units::curvature_t</a> curvature, units::meters_per_second_t speed) const override</td></tr>
 <tr class="memdesc:aa195e96a6d2f4396d21319347be74722"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the minimum and maximum allowable acceleration for the trajectory given pose, curvature, and speed.  <a href="classfrc_1_1DifferentialDriveVoltageConstraint.html#aa195e96a6d2f4396d21319347be74722">More...</a><br /></td></tr>
 <tr class="separator:aa195e96a6d2f4396d21319347be74722"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classfrc_1_1TrajectoryConstraint"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classfrc_1_1TrajectoryConstraint')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classfrc_1_1TrajectoryConstraint.html">frc::TrajectoryConstraint</a></td></tr>
@@ -204,7 +204,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">units::curvature_t&#160;</td>
+          <td class="paramtype"><a class="el" href="classunits_1_1unit__t.html">units::curvature_t</a>&#160;</td>
           <td class="paramname"><em>curvature</em>, </td>
         </tr>
         <tr>
@@ -259,7 +259,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">units::curvature_t&#160;</td>
+          <td class="paramtype"><a class="el" href="classunits_1_1unit__t.html">units::curvature_t</a>&#160;</td>
           <td class="paramname"><em>curvature</em>, </td>
         </tr>
         <tr>
@@ -305,7 +305,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1DifferentialDriveVoltageConstraint.html">DifferentialDriveVoltageConstraint</a></li>
-    <li class="footer">Generated on Thu Oct 14 2021 14:31:50 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Oct 15 2021 01:13:06 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

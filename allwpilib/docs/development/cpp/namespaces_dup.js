@@ -68,9 +68,11 @@ var namespaces_dup =
       ] ],
       [ "never_destroyed", "classdrake_1_1never__destroyed.html", "classdrake_1_1never__destroyed" ]
     ] ],
+    [ "Eigen", "namespaceEigen.html", "namespaceEigen" ],
     [ "fmt", null, [
-      [ "formatter< Eigen::Matrix< double, Rows, Cols, Args... > >", "structfmt_1_1formatter_3_01Eigen_1_1Matrix_3_01double_00_01Rows_00_01Cols_00_01Args_8_8_8_01_4_01_4.html", null ],
-      [ "formatter< units::unit_t< Units, T, NonLinearScale > >", "structfmt_1_1formatter_3_01units_1_1unit__t_3_01Units_00_01T_00_01NonLinearScale_01_4_01_4.html", null ]
+      [ "formatter< Eigen::Matrix< double, Rows, Cols, Args... > >", "structfmt_1_1formatter_3_01Eigen_1_1Matrix_3_01double_00_01Rows_00_01Cols_00_01Args_8_8_8_01_4_01_4.html", "structfmt_1_1formatter_3_01Eigen_1_1Matrix_3_01double_00_01Rows_00_01Cols_00_01Args_8_8_8_01_4_01_4" ],
+      [ "formatter< units::dimensionless::dB_t >", "structfmt_1_1formatter_3_01units_1_1dimensionless_1_1dB__t_01_4.html", null ],
+      [ "formatter< units::unit_t< Units, T, NonLinearScale > >", "structfmt_1_1formatter_3_01units_1_1unit__t_3_01Units_00_01T_00_01NonLinearScale_01_4_01_4.html", "structfmt_1_1formatter_3_01units_1_1unit__t_3_01Units_00_01T_00_01NonLinearScale_01_4_01_4" ]
     ] ],
     [ "frc", null, [
       [ "detail", null, [
@@ -407,14 +409,28 @@ var namespaces_dup =
     [ "hal", "namespacehal.html", "namespacehal" ],
     [ "nt", "namespacent.html", "namespacent" ],
     [ "std", null, [
+      [ "deque< T, EIGEN_ALIGNED_ALLOCATOR< T > >", "classstd_1_1deque_3_01T_00_01EIGEN__ALIGNED__ALLOCATOR_3_01T_01_4_01_4.html", null ],
       [ "hash< wpi::json >", "structstd_1_1hash_3_01wpi_1_1json_01_4.html", "structstd_1_1hash_3_01wpi_1_1json_01_4" ],
       [ "is_error_code_enum< wpi::errc >", "structstd_1_1is__error__code__enum_3_01wpi_1_1errc_01_4.html", null ],
       [ "less< ::wpi::detail::value_t >", "structstd_1_1less_3_01_1_1wpi_1_1detail_1_1value__t_01_4.html", "structstd_1_1less_3_01_1_1wpi_1_1detail_1_1value__t_01_4" ],
+      [ "list< T, EIGEN_ALIGNED_ALLOCATOR< T > >", "classstd_1_1list_3_01T_00_01EIGEN__ALIGNED__ALLOCATOR_3_01T_01_4_01_4.html", null ],
+      [ "numeric_limits< const Eigen::bfloat16 >", "structstd_1_1numeric__limits_3_01const_01Eigen_1_1bfloat16_01_4.html", null ],
+      [ "numeric_limits< const Eigen::half >", "structstd_1_1numeric__limits_3_01const_01Eigen_1_1half_01_4.html", null ],
+      [ "numeric_limits< const volatile Eigen::bfloat16 >", "structstd_1_1numeric__limits_3_01const_01volatile_01Eigen_1_1bfloat16_01_4.html", null ],
+      [ "numeric_limits< const volatile Eigen::half >", "structstd_1_1numeric__limits_3_01const_01volatile_01Eigen_1_1half_01_4.html", null ],
+      [ "numeric_limits< Eigen::AutoDiffScalar< T & > >", "classstd_1_1numeric__limits_3_01Eigen_1_1AutoDiffScalar_3_01T_01_6_01_4_01_4.html", null ],
+      [ "numeric_limits< Eigen::AutoDiffScalar< T > >", "classstd_1_1numeric__limits_3_01Eigen_1_1AutoDiffScalar_3_01T_01_4_01_4.html", null ],
+      [ "numeric_limits< Eigen::bfloat16 >", "structstd_1_1numeric__limits_3_01Eigen_1_1bfloat16_01_4.html", null ],
+      [ "numeric_limits< Eigen::half >", "structstd_1_1numeric__limits_3_01Eigen_1_1half_01_4.html", null ],
+      [ "numeric_limits< volatile Eigen::bfloat16 >", "structstd_1_1numeric__limits_3_01volatile_01Eigen_1_1bfloat16_01_4.html", null ],
+      [ "numeric_limits< volatile Eigen::half >", "structstd_1_1numeric__limits_3_01volatile_01Eigen_1_1half_01_4.html", null ],
       [ "tuple_element< I, wpi::array< T, N > >", "structstd_1_1tuple__element_3_01I_00_01wpi_1_1array_3_01T_00_01N_01_4_01_4.html", null ],
       [ "tuple_element< I, wpi::span< ElementType, Extent > >", "classstd_1_1tuple__element_3_01I_00_01wpi_1_1span_3_01ElementType_00_01Extent_01_4_01_4.html", null ],
       [ "tuple_size< wpi::array< T, N > >", "structstd_1_1tuple__size_3_01wpi_1_1array_3_01T_00_01N_01_4_01_4.html", null ],
-      [ "tuple_size< wpi::span< ElementType, Extent > >", "classstd_1_1tuple__size_3_01wpi_1_1span_3_01ElementType_00_01Extent_01_4_01_4.html", null ]
+      [ "tuple_size< wpi::span< ElementType, Extent > >", "classstd_1_1tuple__size_3_01wpi_1_1span_3_01ElementType_00_01Extent_01_4_01_4.html", null ],
+      [ "vector< T, EIGEN_ALIGNED_ALLOCATOR< T > >", "classstd_1_1vector_3_01T_00_01EIGEN__ALIGNED__ALLOCATOR_3_01T_01_4_01_4.html", null ]
     ] ],
+    [ "units", "namespaceunits.html", "namespaceunits" ],
     [ "wpi", null, [
       [ "detail", "namespacewpi_1_1detail.html", "namespacewpi_1_1detail" ],
       [ "hashing", null, [
@@ -691,7 +707,7 @@ var namespaces_dup =
       [ "TCPStream", "classwpi_1_1TCPStream.html", null ],
       [ "ThreadSafeRefCountedBase", "classwpi_1_1ThreadSafeRefCountedBase.html", null ],
       [ "UDPClient", "classwpi_1_1UDPClient.html", null ],
-      [ "UidVector", "classwpi_1_1UidVector.html", null ],
+      [ "UidVector", "classwpi_1_1UidVector.html", "classwpi_1_1UidVector" ],
       [ "unique_function", "classwpi_1_1unique__function.html", null ],
       [ "unique_function< ReturnT(ParamTs...)>", "classwpi_1_1unique__function_3_01ReturnT_07ParamTs_8_8_8_08_4.html", null ],
       [ "UrlParser", "classwpi_1_1UrlParser.html", "classwpi_1_1UrlParser" ],

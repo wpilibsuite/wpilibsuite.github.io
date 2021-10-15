@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-13-g4ad3a54</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-14-g4647d09</span>
    </div>
   </td>
  </tr>
@@ -211,9 +211,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga90870d91c61183d070b6064020e8a0c8"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__capi.html#ga90870d91c61183d070b6064020e8a0c8">HAL_GetFPGATime</a> (int32_t *status)</td></tr>
 <tr class="memdesc:ga90870d91c61183d070b6064020e8a0c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the microsecond-resolution timer on the FPGA.  <a href="group__hal__capi.html#ga90870d91c61183d070b6064020e8a0c8">More...</a><br /></td></tr>
 <tr class="separator:ga90870d91c61183d070b6064020e8a0c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga285eaaf1e64b3d11ff692eec2454cfe4"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__capi.html#ga285eaaf1e64b3d11ff692eec2454cfe4">HAL_ExpandFPGATime</a> (uint32_t unexpanded_lower, int32_t *status)</td></tr>
-<tr class="memdesc:ga285eaaf1e64b3d11ff692eec2454cfe4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given an 32 bit FPGA time, expand it to the nearest likely 64 bit FPGA time.  <a href="group__hal__capi.html#ga285eaaf1e64b3d11ff692eec2454cfe4">More...</a><br /></td></tr>
-<tr class="separator:ga285eaaf1e64b3d11ff692eec2454cfe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7fda7ce97de711c9dfc5bb8bed9a79ed"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__capi.html#ga7fda7ce97de711c9dfc5bb8bed9a79ed">HAL_ExpandFPGATime</a> (uint32_t unexpandedLower, int32_t *status)</td></tr>
+<tr class="memdesc:ga7fda7ce97de711c9dfc5bb8bed9a79ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given an 32 bit FPGA time, expand it to the nearest likely 64 bit FPGA time.  <a href="group__hal__capi.html#ga7fda7ce97de711c9dfc5bb8bed9a79ed">More...</a><br /></td></tr>
+<tr class="separator:ga7fda7ce97de711c9dfc5bb8bed9a79ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad72b2804c3cb301e53d90f0e61f2137f"><td class="memItemLeft" align="right" valign="top">HAL_Bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__capi.html#gad72b2804c3cb301e53d90f0e61f2137f">HAL_Initialize</a> (int32_t timeout, int32_t mode)</td></tr>
 <tr class="memdesc:gad72b2804c3cb301e53d90f0e61f2137f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call this to start up HAL.  <a href="group__hal__capi.html#gad72b2804c3cb301e53d90f0e61f2137f">More...</a><br /></td></tr>
 <tr class="separator:gad72b2804c3cb301e53d90f0e61f2137f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -230,8 +230,8 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p >Hardware Abstraction Layer to hardware or simulator. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga285eaaf1e64b3d11ff692eec2454cfe4" name="ga285eaaf1e64b3d11ff692eec2454cfe4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga285eaaf1e64b3d11ff692eec2454cfe4">&#9670;&nbsp;</a></span>HAL_ExpandFPGATime()</h2>
+<a id="ga7fda7ce97de711c9dfc5bb8bed9a79ed" name="ga7fda7ce97de711c9dfc5bb8bed9a79ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7fda7ce97de711c9dfc5bb8bed9a79ed">&#9670;&nbsp;</a></span>HAL_ExpandFPGATime()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -240,7 +240,7 @@ Functions</h2></td></tr>
           <td class="memname">uint64_t HAL_ExpandFPGATime </td>
           <td>(</td>
           <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>unexpanded_lower</em>, </td>
+          <td class="paramname"><em>unexpandedLower</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -258,6 +258,13 @@ Functions</h2></td></tr>
 
 <p>Given an 32 bit FPGA time, expand it to the nearest likely 64 bit FPGA time. </p>
 <p >Note: This is making the assumption that the timestamp being converted is always in the past. If you call this with a future timestamp, it probably will make it in the past. If you wait over 70 minutes between capturing the bottom 32 bits of the timestamp and expanding it, you will be off by multiples of 1&lt;&lt;32 microseconds.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">unexpandedLower</td><td>32 bit FPGA time </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>The current time in microseconds according to the FPGA (since FPGA reset) as a 64 bit number. </dd></dl>
 
 </div>
@@ -279,6 +286,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets if the system is in a browned out state. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the system is in a low voltage brown out, false otherwise </dd></dl>
 
 </div>
@@ -327,6 +340,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the state of the "USER" button on the roboRIO. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the button is currently pressed down </dd></dl>
 
 </div>
@@ -349,6 +368,12 @@ Functions</h2></td></tr>
 
 <p>Returns the FPGA Revision number. </p>
 <p >The format of the revision is 3 numbers. The 12 most significant bits are the Major Revision. the next 8 bits are the Minor Revision. The 12 least significant bits are the Build Number.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>FPGA Revision number. </dd></dl>
 
 </div>
@@ -370,6 +395,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Reads the microsecond-resolution timer on the FPGA. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>The current time in microseconds according to the FPGA (since FPGA reset). </dd></dl>
 
 </div>
@@ -392,6 +423,12 @@ Functions</h2></td></tr>
 
 <p>Returns the FPGA Version number. </p>
 <p >For now, expect this to be competition year.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>FPGA Version number. </dd></dl>
 
 </div>
@@ -416,7 +453,7 @@ Functions</h2></td></tr>
 <p >If passed HAL_USE_LAST_ERROR, the last error set on the thread will be returned.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">code</td><td>the status code, set to the error status code if input is HAL_USE_LAST_ERROR </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the status code, set to the error status code if input is HAL_USE_LAST_ERROR </td></tr>
   </table>
   </dd>
 </dl>
@@ -530,6 +567,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets if the system outputs are currently active. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the system outputs are active, false if disabled </dd></dl>
 
 </div>
@@ -645,7 +688,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Oct 14 2021 14:31:49 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Oct 15 2021 01:13:00 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

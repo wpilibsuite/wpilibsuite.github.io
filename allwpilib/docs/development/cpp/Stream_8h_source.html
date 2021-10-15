@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-13-g4ad3a54</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-14-g4647d09</span>
    </div>
   </td>
  </tr>
@@ -195,8 +195,8 @@ $(document).ready(function(){initNavTree('Stream_8h_source.html',''); initResiza
 <div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classwpi_1_1uv_1_1Stream.html#acfaafcb41393021d5fe752c54fc6a462">GetRawStream</a>()-&gt;write_queue_size;</div>
 <div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>  }</div>
 <div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span> </div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1Stream.html#acfaafcb41393021d5fe752c54fc6a462">  256</a></span>  uv_stream_t* <a class="code hl_function" href="classwpi_1_1uv_1_1Stream.html#acfaafcb41393021d5fe752c54fc6a462">GetRawStream</a>() const noexcept {</div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    <span class="keywordflow">return</span> <span class="keyword">reinterpret_cast&lt;</span>uv_stream_t*<span class="keyword">&gt;</span>(<a class="code hl_function" href="classwpi_1_1uv_1_1Handle.html#a63b0b759eb6a2c4852d1acdc2d730562">GetRawHandle</a>());</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1Stream.html#acfaafcb41393021d5fe752c54fc6a462">  256</a></span>  <a class="code hl_struct" href="structuv__stream__s.html">uv_stream_t</a>* <a class="code hl_function" href="classwpi_1_1uv_1_1Stream.html#acfaafcb41393021d5fe752c54fc6a462">GetRawStream</a>() const noexcept {</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    <span class="keywordflow">return</span> <span class="keyword">reinterpret_cast&lt;</span><a class="code hl_struct" href="structuv__stream__s.html">uv_stream_t</a>*<span class="keyword">&gt;</span>(<a class="code hl_function" href="classwpi_1_1uv_1_1Handle.html#a63b0b759eb6a2c4852d1acdc2d730562">GetRawHandle</a>());</div>
 <div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>  }</div>
 <div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span> </div>
 <div class="line"><a id="l00263" name="l00263"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1Stream.html#afe1706a2f573ebfc36505f6a7c705455">  263</a></span>  <a class="code hl_class" href="classwpi_1_1sig_1_1SignalBase.html">sig::Signal&lt;Buffer&amp;, size_t&gt;</a> <a class="code hl_variable" href="classwpi_1_1uv_1_1Stream.html#afe1706a2f573ebfc36505f6a7c705455">data</a>;</div>
@@ -204,8 +204,8 @@ $(document).ready(function(){initNavTree('Stream_8h_source.html',''); initResiza
 <div class="line"><a id="l00268" name="l00268"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1Stream.html#a1c5573b9dd06096ee2f5608850515a18">  268</a></span>  <a class="code hl_class" href="classwpi_1_1sig_1_1SignalBase.html">sig::Signal&lt;&gt;</a> <a class="code hl_variable" href="classwpi_1_1uv_1_1Stream.html#a1c5573b9dd06096ee2f5608850515a18">end</a>;</div>
 <div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span> </div>
 <div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span> <span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>  <span class="keyword">explicit</span> <a class="code hl_class" href="classwpi_1_1uv_1_1Stream.html">Stream</a>(uv_stream_t* uv_stream)</div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>      : <a class="code hl_class" href="classwpi_1_1uv_1_1Handle.html">Handle</a>{reinterpret_cast&lt;uv_handle_t*&gt;(uv_stream)} {}</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>  <span class="keyword">explicit</span> <a class="code hl_class" href="classwpi_1_1uv_1_1Stream.html">Stream</a>(<a class="code hl_struct" href="structuv__stream__s.html">uv_stream_t</a>* uv_stream)</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>      : <a class="code hl_class" href="classwpi_1_1uv_1_1Handle.html">Handle</a>{reinterpret_cast&lt;<a class="code hl_struct" href="structuv__handle__s.html">uv_handle_t</a>*&gt;(uv_stream)} {}</div>
 <div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>};</div>
 <div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span> </div>
 <div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> U&gt;</div>
@@ -224,7 +224,7 @@ $(document).ready(function(){initNavTree('Stream_8h_source.html',''); initResiza
 <div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>  }</div>
 <div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span> </div>
 <div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span> <span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>  <a class="code hl_class" href="classwpi_1_1uv_1_1StreamImpl.html">StreamImpl</a>() : <a class="code hl_class" href="classwpi_1_1uv_1_1Stream.html">Stream</a>{static_cast&lt;uv_stream_t*&gt;(std::malloc(sizeof(U)))} {}</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>  <a class="code hl_class" href="classwpi_1_1uv_1_1StreamImpl.html">StreamImpl</a>() : <a class="code hl_class" href="classwpi_1_1uv_1_1Stream.html">Stream</a>{static_cast&lt;<a class="code hl_struct" href="structuv__stream__s.html">uv_stream_t</a>*&gt;(std::malloc(sizeof(U)))} {}</div>
 <div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>};</div>
 <div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span> </div>
 <div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>}  <span class="comment">// namespace wpi::uv</span></div>
@@ -261,13 +261,15 @@ $(document).ready(function(){initNavTree('Stream_8h_source.html',''); initResiza
 <div class="ttc" id="aclasswpi_1_1uv_1_1Stream_html_afe1706a2f573ebfc36505f6a7c705455"><div class="ttname"><a href="classwpi_1_1uv_1_1Stream.html#afe1706a2f573ebfc36505f6a7c705455">wpi::uv::Stream::data</a></div><div class="ttdeci">sig::Signal&lt; Buffer &amp;, size_t &gt; data</div><div class="ttdoc">Signal generated when data was read on a stream.</div><div class="ttdef"><b>Definition:</b> Stream.h:263</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1WriteReq_html"><div class="ttname"><a href="classwpi_1_1uv_1_1WriteReq.html">wpi::uv::WriteReq</a></div><div class="ttdoc">Write request.</div><div class="ttdef"><b>Definition:</b> Stream.h:45</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1WriteReq_html_ad4cdcf0281979b0c0f3673ab49947e16"><div class="ttname"><a href="classwpi_1_1uv_1_1WriteReq.html#ad4cdcf0281979b0c0f3673ab49947e16">wpi::uv::WriteReq::finish</a></div><div class="ttdeci">sig::Signal&lt; Error &gt; finish</div><div class="ttdoc">Write completed signal.</div><div class="ttdef"><b>Definition:</b> Stream.h:57</div></div>
+<div class="ttc" id="astructuv__handle__s_html"><div class="ttname"><a href="structuv__handle__s.html">uv_handle_s</a></div><div class="ttdef"><b>Definition:</b> uv.h:421</div></div>
+<div class="ttc" id="astructuv__stream__s_html"><div class="ttname"><a href="structuv__stream__s.html">uv_stream_s</a></div><div class="ttdef"><b>Definition:</b> uv.h:471</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><a class="el" href="dir_25302867c2307ab8d43a1b1d664c1ea4.html">uv</a></li><li class="navelem"><b>Stream.h</b></li>
-    <li class="footer">Generated on Thu Oct 14 2021 14:31:49 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Oct 15 2021 01:13:00 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

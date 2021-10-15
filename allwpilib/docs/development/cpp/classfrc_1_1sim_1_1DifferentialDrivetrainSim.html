@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-13-g4ad3a54</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-14-g4647d09</span>
    </div>
   </td>
  </tr>
@@ -121,7 +121,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a0302a3b4cc9ac4322d22d3703e2f33e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a SimDrivetrain.  <a href="classfrc_1_1sim_1_1DifferentialDrivetrainSim.html#a0302a3b4cc9ac4322d22d3703e2f33e3">More...</a><br /></td></tr>
 <tr class="separator:a0302a3b4cc9ac4322d22d3703e2f33e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3a3ac1bb3bcf76217f2a2721931695b"><td class="memItemLeft" align="right" valign="top">Eigen::Vector&lt; double, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1DifferentialDrivetrainSim.html#ac3a3ac1bb3bcf76217f2a2721931695b">ClampInput</a> (const Eigen::Vector&lt; double, 2 &gt; &amp;u)</td></tr>
-<tr class="memdesc:ac3a3ac1bb3bcf76217f2a2721931695b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clamp the input vector such that no element exceeds the given voltage.  <a href="classfrc_1_1sim_1_1DifferentialDrivetrainSim.html#ac3a3ac1bb3bcf76217f2a2721931695b">More...</a><br /></td></tr>
+<tr class="memdesc:ac3a3ac1bb3bcf76217f2a2721931695b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clamp the input vector such that no element exceeds the battery voltage.  <a href="classfrc_1_1sim_1_1DifferentialDrivetrainSim.html#ac3a3ac1bb3bcf76217f2a2721931695b">More...</a><br /></td></tr>
 <tr class="separator:ac3a3ac1bb3bcf76217f2a2721931695b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade833f4304b92adf5c80027f5325e4b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1DifferentialDrivetrainSim.html#ade833f4304b92adf5c80027f5325e4b6">SetInputs</a> (units::volt_t leftVoltage, units::volt_t rightVoltage)</td></tr>
 <tr class="memdesc:ade833f4304b92adf5c80027f5325e4b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the applied voltage to the drivetrain.  <a href="classfrc_1_1sim_1_1DifferentialDrivetrainSim.html#ade833f4304b92adf5c80027f5325e4b6">More...</a><br /></td></tr>
@@ -240,11 +240,11 @@ Static Public Member Functions</h2></td></tr>
 <p>Create a SimDrivetrain. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">drivetrainPlant</td><td>The <a class="el" href="classfrc_1_1LinearSystem.html" title="A plant defined using state-space notation.">LinearSystem</a> representing the robot's drivetrain. This system can be created with LinearSystemId::createDrivetrainVelocitySystem or LinearSystemId::identifyDrivetrainSystem. </td></tr>
+    <tr><td class="paramname">plant</td><td>The <a class="el" href="classfrc_1_1LinearSystem.html" title="A plant defined using state-space notation.">LinearSystem</a> representing the robot's drivetrain. This system can be created with <a class="el" href="classfrc_1_1LinearSystemId.html#a307ffa3928fd91d869d7d4a2c69a156c" title="Constructs the state-space model for a drivetrain.">LinearSystemId::DrivetrainVelocitySystem()</a> or <a class="el" href="classfrc_1_1LinearSystemId.html#a683b6de8c6a77b64329f0184b8f2bff2" title="Constructs the state-space model for a 2 DOF drivetrain velocity system from system identification da...">LinearSystemId::IdentifyDrivetrainSystem()</a>. </td></tr>
     <tr><td class="paramname">trackWidth</td><td>The robot's track width. </td></tr>
-    <tr><td class="paramname">driveMotor</td><td>A <a class="el" href="classfrc_1_1DCMotor.html">DCMotor</a> representing the left side of the drivetrain. </td></tr>
-    <tr><td class="paramname">gearingRatio</td><td>The gearingRatio ratio of the left side, as output over input. This must be the same ratio as the ratio used to identify or create the drivetrainPlant. </td></tr>
-    <tr><td class="paramname">wheelRadiusMeters</td><td>The radius of the wheels on the drivetrain, in meters. </td></tr>
+    <tr><td class="paramname">driveMotor</td><td>A <a class="el" href="classfrc_1_1DCMotor.html" title="Holds the constants for a DC motor.">DCMotor</a> representing the left side of the drivetrain. </td></tr>
+    <tr><td class="paramname">gearingRatio</td><td>The gearingRatio ratio of the left side, as output over input. This must be the same ratio as the ratio used to identify or create the plant. </td></tr>
+    <tr><td class="paramname">wheelRadius</td><td>The radius of the wheels on the drivetrain, in meters. </td></tr>
     <tr><td class="paramname">measurementStdDevs</td><td>Standard deviations for measurements, in the form [x, y, heading, left velocity, right velocity, left distance, right distance]ᵀ. Can be omitted if no noise is desired. <a class="el" href="classfrc_1_1Gyro.html" title="Interface for yaw rate gyros.">Gyro</a> standard deviations of 0.0001 radians, velocity standard deviations of 0.05 m/s, and position measurement standard deviations of 0.005 meters are a reasonable starting point. </td></tr>
   </table>
   </dd>
@@ -311,8 +311,8 @@ Static Public Member Functions</h2></td></tr>
 <p>Create a SimDrivetrain. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">driveMotor</td><td>A <a class="el" href="classfrc_1_1DCMotor.html">DCMotor</a> representing the left side of the drivetrain. </td></tr>
-    <tr><td class="paramname">gearing</td><td>The gearing on the drive between motor and wheel, as output over input. This must be the same ratio as the ratio used to identify or create the drivetrainPlant. </td></tr>
+    <tr><td class="paramname">driveMotor</td><td>A <a class="el" href="classfrc_1_1DCMotor.html" title="Holds the constants for a DC motor.">DCMotor</a> representing the left side of the drivetrain. </td></tr>
+    <tr><td class="paramname">gearing</td><td>The gearing on the drive between motor and wheel, as output over input. This must be the same ratio as the ratio used to identify or create the plant. </td></tr>
     <tr><td class="paramname">J</td><td>The moment of inertia of the drivetrain about its center. </td></tr>
     <tr><td class="paramname">mass</td><td>The mass of the drivebase. </td></tr>
     <tr><td class="paramname">wheelRadius</td><td>The radius of the wheels on the drivetrain. </td></tr>
@@ -341,12 +341,11 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Clamp the input vector such that no element exceeds the given voltage. </p>
+<p>Clamp the input vector such that no element exceeds the battery voltage. </p>
 <p >If any does, the relative magnitudes of the input will be maintained.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">u</td><td>The input vector. </td></tr>
-    <tr><td class="paramname">maxVoltage</td><td>The maximum voltage. </td></tr>
   </table>
   </dd>
 </dl>
@@ -747,7 +746,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Updates the simulation. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">dt</td><td>The time that's passed since the last <a class="el" href="">update(double)</a> call. </td></tr>
+    <tr><td class="paramname">dt</td><td>The time that's passed since the last <a class="el" href="classfrc_1_1sim_1_1DifferentialDrivetrainSim.html#a108d0f3ace07bb2d37c5121dc655194d" title="Updates the simulation.">Update(units::second_t)</a> call. </td></tr>
   </table>
   </dd>
 </dl>
@@ -763,7 +762,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>frc</b></li><li class="navelem"><b>sim</b></li><li class="navelem"><a class="el" href="classfrc_1_1sim_1_1DifferentialDrivetrainSim.html">DifferentialDrivetrainSim</a></li>
-    <li class="footer">Generated on Thu Oct 14 2021 14:31:51 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Oct 15 2021 01:13:08 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

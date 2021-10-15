@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-13-g4ad3a54</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-14-g4647d09</span>
    </div>
   </td>
  </tr>
@@ -200,7 +200,7 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">gyroAngle</td><td>The current gyro angle. </td></tr>
-    <tr><td class="paramname">initialPoseMeters</td><td>The starting pose estimate. </td></tr>
+    <tr><td class="paramname">initialPose</td><td>The starting pose estimate. </td></tr>
     <tr><td class="paramname">kinematics</td><td>A correctly-configured kinematics object for your drivetrain. </td></tr>
     <tr><td class="paramname">stateStdDevs</td><td>Standard deviations of model states. Increase these numbers to trust your model's state estimates less. This matrix is in the form [x, y, theta]ᵀ, with units in meters and radians. </td></tr>
     <tr><td class="paramname">localMeasurementStdDevs</td><td>Standard deviations of the encoder and gyro measurements. Increase these numbers to trust sensor readings from encoders and gyros less. This matrix is in the form [theta], with units in radians. </td></tr>
@@ -358,7 +358,7 @@ Public Member Functions</h2></td></tr>
 <p >The gyroscope angle does not need to be reset in the user's robot code. The library automatically takes care of offsetting the gyro angle.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">poseMeters</td><td>The position on the field that your robot is at. </td></tr>
+    <tr><td class="paramname">pose</td><td>The position on the field that your robot is at. </td></tr>
     <tr><td class="paramname">gyroAngle</td><td>The angle reported by the gyroscope. </td></tr>
   </table>
   </dd>
@@ -468,7 +468,7 @@ Public Member Functions</h2></td></tr>
 <p >This should be called every loop, and the correct loop period must be passed into the constructor of this class.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">currentTimeSeconds</td><td>Time at which this method was called, in seconds. </td></tr>
+    <tr><td class="paramname">currentTime</td><td>Time at which this method was called, in seconds. </td></tr>
     <tr><td class="paramname">gyroAngle</td><td>The current gyroscope angle. </td></tr>
     <tr><td class="paramname">wheelSpeeds</td><td>The current speeds of the mecanum drive wheels. </td></tr>
   </table>
@@ -487,7 +487,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1MecanumDrivePoseEstimator.html">MecanumDrivePoseEstimator</a></li>
-    <li class="footer">Generated on Thu Oct 14 2021 14:31:50 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Oct 15 2021 01:13:07 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

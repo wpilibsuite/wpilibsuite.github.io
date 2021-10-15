@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-13-g4ad3a54</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-14-g4647d09</span>
    </div>
   </td>
  </tr>
@@ -117,74 +117,76 @@ $(document).ready(function(){initNavTree('SwerveDriveKinematics_8h_source.html',
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">template</span> &lt;<span class="keywordtype">size_t</span> NumModules&gt;</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classfrc_1_1SwerveDriveKinematics.html">   44</a></span><span class="keyword">class </span><a class="code hl_class" href="classfrc_1_1SwerveDriveKinematics.html">SwerveDriveKinematics</a> {</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Wheels&gt;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="classfrc_1_1SwerveDriveKinematics.html#ab3e7aa018b138375414924e0493b73cd">   58</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classfrc_1_1SwerveDriveKinematics.html#ab3e7aa018b138375414924e0493b73cd">SwerveDriveKinematics</a>(<a class="code hl_class" href="classfrc_1_1Translation2d.html">Translation2d</a> wheel, Wheels&amp;&amp;... wheels)</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>      : m_modules{wheel, wheels...} {</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keyword">static_assert</span>(<span class="keyword">sizeof</span>...(wheels) &gt;= 1,</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                  <span class="stringliteral">&quot;A swerve drive requires at least two modules&quot;</span>);</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; NumModules; i++) {</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>      <span class="comment">// clang-format off</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>      m_inverseKinematics.template block&lt;2, 3&gt;(i * 2, 0) &lt;&lt;</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        1, 0, (-m_modules[i].Y()).<span class="keyword">template</span> to&lt;double&gt;(),</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        0, 1, (+m_modules[i].X()).<span class="keyword">template</span> to&lt;double&gt;();</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>      <span class="comment">// clang-format on</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    }</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    m_forwardKinematics = m_inverseKinematics.householderQr();</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Wheels&gt;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="classfrc_1_1SwerveDriveKinematics.html#ab3e7aa018b138375414924e0493b73cd">   60</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classfrc_1_1SwerveDriveKinematics.html#ab3e7aa018b138375414924e0493b73cd">SwerveDriveKinematics</a>(<a class="code hl_class" href="classfrc_1_1Translation2d.html">Translation2d</a> wheel, Wheels&amp;&amp;... wheels)</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>      : m_modules{wheel, wheels...} {</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keyword">static_assert</span>(<span class="keyword">sizeof</span>...(wheels) &gt;= 1,</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                  <span class="stringliteral">&quot;A swerve drive requires at least two modules&quot;</span>);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; NumModules; i++) {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>      <span class="comment">// clang-format off</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>      m_inverseKinematics.template block&lt;2, 3&gt;(i * 2, 0) &lt;&lt;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        1, 0, (-m_modules[i].Y()).<span class="keyword">template</span> to&lt;double&gt;(),</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        0, 1, (+m_modules[i].X()).<span class="keyword">template</span> to&lt;double&gt;();</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>      <span class="comment">// clang-format on</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    }</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    wpi::math::MathSharedStore::ReportUsage(</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        wpi::math::MathUsageId::kKinematics_SwerveDrive, 1);</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  }</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classfrc_1_1SwerveDriveKinematics.html#ab3e7aa018b138375414924e0493b73cd">SwerveDriveKinematics</a>(</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>      <span class="keyword">const</span> <a class="code hl_class" href="classwpi_1_1array.html">wpi::array&lt;Translation2d, NumModules&gt;</a>&amp; wheels)</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>      : m_modules{wheels} {</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; NumModules; i++) {</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>      <span class="comment">// clang-format off</span></div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>      m_inverseKinematics.template block&lt;2, 3&gt;(i * 2, 0) &lt;&lt;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        1, 0, (-m_modules[i].Y()).<span class="keyword">template</span> to&lt;double&gt;(),</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        0, 1, (+m_modules[i].X()).<span class="keyword">template</span> to&lt;double&gt;();</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>      <span class="comment">// clang-format on</span></div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    }</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    m_forwardKinematics = m_inverseKinematics.householderQr();</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    m_forwardKinematics = m_inverseKinematics.householderQr();</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    wpi::math::MathSharedStore::ReportUsage(</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        wpi::math::MathUsageId::kKinematics_SwerveDrive, 1);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  }</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classfrc_1_1SwerveDriveKinematics.html#ab3e7aa018b138375414924e0493b73cd">SwerveDriveKinematics</a>(</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>      <span class="keyword">const</span> <a class="code hl_class" href="classwpi_1_1array.html">wpi::array&lt;Translation2d, NumModules&gt;</a>&amp; wheels)</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>      : m_modules{wheels} {</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; NumModules; i++) {</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>      <span class="comment">// clang-format off</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>      m_inverseKinematics.template block&lt;2, 3&gt;(i * 2, 0) &lt;&lt;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        1, 0, (-m_modules[i].Y()).<span class="keyword">template</span> to&lt;double&gt;(),</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        0, 1, (+m_modules[i].X()).<span class="keyword">template</span> to&lt;double&gt;();</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>      <span class="comment">// clang-format on</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    }</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    wpi::math::MathSharedStore::ReportUsage(</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        wpi::math::MathUsageId::kKinematics_SwerveDrive, 1);</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  }</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  <a class="code hl_function" href="classfrc_1_1SwerveDriveKinematics.html#ab3e7aa018b138375414924e0493b73cd">SwerveDriveKinematics</a>(<span class="keyword">const</span> <a class="code hl_function" href="classfrc_1_1SwerveDriveKinematics.html#ab3e7aa018b138375414924e0493b73cd">SwerveDriveKinematics</a>&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    m_forwardKinematics = m_inverseKinematics.householderQr();</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    wpi::math::MathSharedStore::ReportUsage(</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        wpi::math::MathUsageId::kKinematics_SwerveDrive, 1);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  }</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>  <a class="code hl_class" href="classwpi_1_1array.html">wpi::array&lt;SwerveModuleState, NumModules&gt;</a> <a class="code hl_function" href="classfrc_1_1SwerveDriveKinematics.html#ac7815723eede9892d0669a216be0f39d">ToSwerveModuleStates</a>(</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>      <span class="keyword">const</span> ChassisSpeeds&amp; chassisSpeeds,</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>      <span class="keyword">const</span> Translation2d&amp; centerOfRotation = Translation2d()) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span>... ModuleStates&gt;</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>  ChassisSpeeds <a class="code hl_function" href="classfrc_1_1SwerveDriveKinematics.html#a1b8939ecc3902e895b0489b9eec7e78c">ToChassisSpeeds</a>(ModuleStates&amp;&amp;... wheelStates) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>  ChassisSpeeds <a class="code hl_function" href="classfrc_1_1SwerveDriveKinematics.html#a1b8939ecc3902e895b0489b9eec7e78c">ToChassisSpeeds</a>(</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>      <a class="code hl_class" href="classwpi_1_1array.html">wpi::array&lt;SwerveModuleState, NumModules&gt;</a> moduleStates) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1SwerveDriveKinematics.html#a672ce4d8bb476e29b67d757f46eb14dc">NormalizeWheelSpeeds</a>(</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>      <a class="code hl_class" href="classwpi_1_1array.html">wpi::array&lt;SwerveModuleState, NumModules&gt;</a>* moduleStates,</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>      units::meters_per_second_t attainableMaxSpeed);</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>  <span class="keyword">mutable</span> Eigen::Matrix&lt;double, NumModules * 2, 3&gt; m_inverseKinematics;</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>  Eigen::HouseholderQR&lt;Eigen::Matrix&lt;double, NumModules * 2, 3&gt;&gt;</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>      m_forwardKinematics;</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>  <a class="code hl_class" href="classwpi_1_1array.html">wpi::array&lt;Translation2d, NumModules&gt;</a> m_modules;</div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span> </div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>  <span class="keyword">mutable</span> Translation2d m_previousCoR;</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>};</div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>}  <span class="comment">// namespace frc</span></div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span> </div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="preprocessor">#include &quot;SwerveDriveKinematics.inc&quot;</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  <a class="code hl_function" href="classfrc_1_1SwerveDriveKinematics.html#ab3e7aa018b138375414924e0493b73cd">SwerveDriveKinematics</a>(<span class="keyword">const</span> <a class="code hl_function" href="classfrc_1_1SwerveDriveKinematics.html#ab3e7aa018b138375414924e0493b73cd">SwerveDriveKinematics</a>&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>  <a class="code hl_class" href="classwpi_1_1array.html">wpi::array&lt;SwerveModuleState, NumModules&gt;</a> <a class="code hl_function" href="classfrc_1_1SwerveDriveKinematics.html#ac7815723eede9892d0669a216be0f39d">ToSwerveModuleStates</a>(</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>      <span class="keyword">const</span> ChassisSpeeds&amp; chassisSpeeds,</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>      <span class="keyword">const</span> Translation2d&amp; centerOfRotation = Translation2d()) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span>... ModuleStates&gt;</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>  ChassisSpeeds <a class="code hl_function" href="classfrc_1_1SwerveDriveKinematics.html#a1b8939ecc3902e895b0489b9eec7e78c">ToChassisSpeeds</a>(ModuleStates&amp;&amp;... wheelStates) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>  ChassisSpeeds <a class="code hl_function" href="classfrc_1_1SwerveDriveKinematics.html#a1b8939ecc3902e895b0489b9eec7e78c">ToChassisSpeeds</a>(</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>      <a class="code hl_class" href="classwpi_1_1array.html">wpi::array&lt;SwerveModuleState, NumModules&gt;</a> moduleStates) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1SwerveDriveKinematics.html#a672ce4d8bb476e29b67d757f46eb14dc">NormalizeWheelSpeeds</a>(</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>      <a class="code hl_class" href="classwpi_1_1array.html">wpi::array&lt;SwerveModuleState, NumModules&gt;</a>* moduleStates,</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>      units::meters_per_second_t attainableMaxSpeed);</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span> </div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>  <span class="keyword">mutable</span> <a class="code hl_class" href="classEigen_1_1Matrix.html">Eigen::Matrix&lt;double, NumModules * 2, 3&gt;</a> m_inverseKinematics;</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>  <a class="code hl_class" href="classEigen_1_1HouseholderQR.html">Eigen::HouseholderQR&lt;Eigen::Matrix&lt;double, NumModules * 2, 3&gt;</a>&gt;</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>      m_forwardKinematics;</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>  <a class="code hl_class" href="classwpi_1_1array.html">wpi::array&lt;Translation2d, NumModules&gt;</a> m_modules;</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> </div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>  <span class="keyword">mutable</span> Translation2d m_previousCoR;</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>};</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span> </div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span><span class="preprocessor">#include &quot;SwerveDriveKinematics.inc&quot;</span></div>
+<div class="ttc" id="aclassEigen_1_1HouseholderQR_html"><div class="ttname"><a href="classEigen_1_1HouseholderQR.html">Eigen::HouseholderQR</a></div><div class="ttdoc">Householder QR decomposition of a matrix.</div><div class="ttdef"><b>Definition:</b> HouseholderQR.h:58</div></div>
+<div class="ttc" id="aclassEigen_1_1Matrix_html"><div class="ttname"><a href="classEigen_1_1Matrix.html">Eigen::Matrix</a></div><div class="ttdoc">The matrix class, also used for vectors and row-vectors.</div><div class="ttdef"><b>Definition:</b> Matrix.h:180</div></div>
 <div class="ttc" id="aclassfrc_1_1SwerveDriveKinematics_html"><div class="ttname"><a href="classfrc_1_1SwerveDriveKinematics.html">frc::SwerveDriveKinematics</a></div><div class="ttdoc">Helper class that converts a chassis velocity (dx, dy, and dtheta components) into individual module ...</div><div class="ttdef"><b>Definition:</b> SwerveDriveKinematics.h:44</div></div>
 <div class="ttc" id="aclassfrc_1_1SwerveDriveKinematics_html_a1b8939ecc3902e895b0489b9eec7e78c"><div class="ttname"><a href="classfrc_1_1SwerveDriveKinematics.html#a1b8939ecc3902e895b0489b9eec7e78c">frc::SwerveDriveKinematics::ToChassisSpeeds</a></div><div class="ttdeci">ChassisSpeeds ToChassisSpeeds(ModuleStates &amp;&amp;... wheelStates) const</div><div class="ttdoc">Performs forward kinematics to return the resulting chassis state from the given module states.</div><div class="ttdef"><b>Definition:</b> SwerveDriveKinematics.inc:59</div></div>
 <div class="ttc" id="aclassfrc_1_1SwerveDriveKinematics_html_a672ce4d8bb476e29b67d757f46eb14dc"><div class="ttname"><a href="classfrc_1_1SwerveDriveKinematics.html#a672ce4d8bb476e29b67d757f46eb14dc">frc::SwerveDriveKinematics::NormalizeWheelSpeeds</a></div><div class="ttdeci">static void NormalizeWheelSpeeds(wpi::array&lt; SwerveModuleState, NumModules &gt; *moduleStates, units::meters_per_second_t attainableMaxSpeed)</div><div class="ttdoc">Normalizes the wheel speeds using some max attainable speed.</div><div class="ttdef"><b>Definition:</b> SwerveDriveKinematics.inc:92</div></div>
-<div class="ttc" id="aclassfrc_1_1SwerveDriveKinematics_html_ab3e7aa018b138375414924e0493b73cd"><div class="ttname"><a href="classfrc_1_1SwerveDriveKinematics.html#ab3e7aa018b138375414924e0493b73cd">frc::SwerveDriveKinematics::SwerveDriveKinematics</a></div><div class="ttdeci">SwerveDriveKinematics(Translation2d wheel, Wheels &amp;&amp;... wheels)</div><div class="ttdoc">Constructs a swerve drive kinematics object.</div><div class="ttdef"><b>Definition:</b> SwerveDriveKinematics.h:58</div></div>
+<div class="ttc" id="aclassfrc_1_1SwerveDriveKinematics_html_ab3e7aa018b138375414924e0493b73cd"><div class="ttname"><a href="classfrc_1_1SwerveDriveKinematics.html#ab3e7aa018b138375414924e0493b73cd">frc::SwerveDriveKinematics::SwerveDriveKinematics</a></div><div class="ttdeci">SwerveDriveKinematics(Translation2d wheel, Wheels &amp;&amp;... wheels)</div><div class="ttdoc">Constructs a swerve drive kinematics object.</div><div class="ttdef"><b>Definition:</b> SwerveDriveKinematics.h:60</div></div>
 <div class="ttc" id="aclassfrc_1_1SwerveDriveKinematics_html_ac7815723eede9892d0669a216be0f39d"><div class="ttname"><a href="classfrc_1_1SwerveDriveKinematics.html#ac7815723eede9892d0669a216be0f39d">frc::SwerveDriveKinematics::ToSwerveModuleStates</a></div><div class="ttdeci">wpi::array&lt; SwerveModuleState, NumModules &gt; ToSwerveModuleStates(const ChassisSpeeds &amp;chassisSpeeds, const Translation2d &amp;centerOfRotation=Translation2d()) const</div><div class="ttdoc">Performs inverse kinematics to return the module states from a desired chassis velocity.</div><div class="ttdef"><b>Definition:</b> SwerveDriveKinematics.inc:20</div></div>
 <div class="ttc" id="aclassfrc_1_1Translation2d_html"><div class="ttname"><a href="classfrc_1_1Translation2d.html">frc::Translation2d</a></div><div class="ttdoc">Represents a translation in 2d space.</div><div class="ttdef"><b>Definition:</b> Translation2d.h:26</div></div>
 <div class="ttc" id="aclasswpi_1_1array_html"><div class="ttname"><a href="classwpi_1_1array.html">wpi::array</a></div><div class="ttdoc">This class is a wrapper around std::array that does compile time size checking.</div><div class="ttdef"><b>Definition:</b> array.h:25</div></div>
@@ -194,7 +196,7 @@ $(document).ready(function(){initNavTree('SwerveDriveKinematics_8h_source.html',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_d2a0b1acc90a71e3394af07d8da08800.html">kinematics</a></li><li class="navelem"><b>SwerveDriveKinematics.h</b></li>
-    <li class="footer">Generated on Thu Oct 14 2021 14:31:48 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Oct 15 2021 01:12:59 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

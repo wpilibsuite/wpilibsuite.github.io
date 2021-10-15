@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-13-g4ad3a54</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-14-g4647d09</span>
    </div>
   </td>
  </tr>
@@ -1276,21 +1276,21 @@ $(document).ready(function(){initNavTree('format_8h_source.html',''); initResiza
 <div class="line"><a id="l01226" name="l01226"></a><span class="lineno"> 1226</span> </div>
 <div class="line"><a id="l01227" name="l01227"></a><span class="lineno"> 1227</span><span class="comment">// Writes the exponent exp in the form &quot;[+-]d{2,3}&quot; to buffer.</span></div>
 <div class="line"><a id="l01228" name="l01228"></a><span class="lineno"> 1228</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Char, <span class="keyword">typename</span> It&gt;</div>
-<div class="line"><a id="l01229" name="l01229"></a><span class="lineno"> 1229</span><span class="keyword">auto</span> write_exponent(<span class="keywordtype">int</span> exp, It it) -&gt; It {</div>
-<div class="line"><a id="l01230" name="l01230"></a><span class="lineno"> 1230</span>  FMT_ASSERT(-10000 &lt; exp &amp;&amp; exp &lt; 10000, <span class="stringliteral">&quot;exponent out of range&quot;</span>);</div>
-<div class="line"><a id="l01231" name="l01231"></a><span class="lineno"> 1231</span>  <span class="keywordflow">if</span> (exp &lt; 0) {</div>
+<div class="line"><a id="l01229" name="l01229"></a><span class="lineno"> 1229</span><span class="keyword">auto</span> write_exponent(<span class="keywordtype">int</span> <a class="code hl_function" href="group__UnitMath.html#ga37ffdd257c05eb6916d62bfbbc0890e2">exp</a>, It it) -&gt; It {</div>
+<div class="line"><a id="l01230" name="l01230"></a><span class="lineno"> 1230</span>  FMT_ASSERT(-10000 &lt; <a class="code hl_function" href="group__UnitMath.html#ga37ffdd257c05eb6916d62bfbbc0890e2">exp</a> &amp;&amp; <a class="code hl_function" href="group__UnitMath.html#ga37ffdd257c05eb6916d62bfbbc0890e2">exp</a> &lt; 10000, <span class="stringliteral">&quot;exponent out of range&quot;</span>);</div>
+<div class="line"><a id="l01231" name="l01231"></a><span class="lineno"> 1231</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="group__UnitMath.html#ga37ffdd257c05eb6916d62bfbbc0890e2">exp</a> &lt; 0) {</div>
 <div class="line"><a id="l01232" name="l01232"></a><span class="lineno"> 1232</span>    *it++ = <span class="keyword">static_cast&lt;</span>Char<span class="keyword">&gt;</span>(<span class="charliteral">&#39;-&#39;</span>);</div>
-<div class="line"><a id="l01233" name="l01233"></a><span class="lineno"> 1233</span>    exp = -exp;</div>
+<div class="line"><a id="l01233" name="l01233"></a><span class="lineno"> 1233</span>    <a class="code hl_function" href="group__UnitMath.html#ga37ffdd257c05eb6916d62bfbbc0890e2">exp</a> = -<a class="code hl_function" href="group__UnitMath.html#ga37ffdd257c05eb6916d62bfbbc0890e2">exp</a>;</div>
 <div class="line"><a id="l01234" name="l01234"></a><span class="lineno"> 1234</span>  } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l01235" name="l01235"></a><span class="lineno"> 1235</span>    *it++ = <span class="keyword">static_cast&lt;</span>Char<span class="keyword">&gt;</span>(<span class="charliteral">&#39;+&#39;</span>);</div>
 <div class="line"><a id="l01236" name="l01236"></a><span class="lineno"> 1236</span>  }</div>
-<div class="line"><a id="l01237" name="l01237"></a><span class="lineno"> 1237</span>  <span class="keywordflow">if</span> (exp &gt;= 100) {</div>
-<div class="line"><a id="l01238" name="l01238"></a><span class="lineno"> 1238</span>    <span class="keyword">const</span> <span class="keywordtype">char</span>* top = data::digits[exp / 100];</div>
-<div class="line"><a id="l01239" name="l01239"></a><span class="lineno"> 1239</span>    <span class="keywordflow">if</span> (exp &gt;= 1000) *it++ = <span class="keyword">static_cast&lt;</span>Char<span class="keyword">&gt;</span>(top[0]);</div>
+<div class="line"><a id="l01237" name="l01237"></a><span class="lineno"> 1237</span>  <span class="keywordflow">if</span> (<a class="code hl_function" href="group__UnitMath.html#ga37ffdd257c05eb6916d62bfbbc0890e2">exp</a> &gt;= 100) {</div>
+<div class="line"><a id="l01238" name="l01238"></a><span class="lineno"> 1238</span>    <span class="keyword">const</span> <span class="keywordtype">char</span>* top = data::digits[<a class="code hl_function" href="group__UnitMath.html#ga37ffdd257c05eb6916d62bfbbc0890e2">exp</a> / 100];</div>
+<div class="line"><a id="l01239" name="l01239"></a><span class="lineno"> 1239</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="group__UnitMath.html#ga37ffdd257c05eb6916d62bfbbc0890e2">exp</a> &gt;= 1000) *it++ = <span class="keyword">static_cast&lt;</span>Char<span class="keyword">&gt;</span>(top[0]);</div>
 <div class="line"><a id="l01240" name="l01240"></a><span class="lineno"> 1240</span>    *it++ = <span class="keyword">static_cast&lt;</span>Char<span class="keyword">&gt;</span>(top[1]);</div>
-<div class="line"><a id="l01241" name="l01241"></a><span class="lineno"> 1241</span>    exp %= 100;</div>
+<div class="line"><a id="l01241" name="l01241"></a><span class="lineno"> 1241</span>    <a class="code hl_function" href="group__UnitMath.html#ga37ffdd257c05eb6916d62bfbbc0890e2">exp</a> %= 100;</div>
 <div class="line"><a id="l01242" name="l01242"></a><span class="lineno"> 1242</span>  }</div>
-<div class="line"><a id="l01243" name="l01243"></a><span class="lineno"> 1243</span>  <span class="keyword">const</span> <span class="keywordtype">char</span>* d = data::digits[exp];</div>
+<div class="line"><a id="l01243" name="l01243"></a><span class="lineno"> 1243</span>  <span class="keyword">const</span> <span class="keywordtype">char</span>* d = data::digits[<a class="code hl_function" href="group__UnitMath.html#ga37ffdd257c05eb6916d62bfbbc0890e2">exp</a>];</div>
 <div class="line"><a id="l01244" name="l01244"></a><span class="lineno"> 1244</span>  *it++ = <span class="keyword">static_cast&lt;</span>Char<span class="keyword">&gt;</span>(d[0]);</div>
 <div class="line"><a id="l01245" name="l01245"></a><span class="lineno"> 1245</span>  *it++ = <span class="keyword">static_cast&lt;</span>Char<span class="keyword">&gt;</span>(d[1]);</div>
 <div class="line"><a id="l01246" name="l01246"></a><span class="lineno"> 1246</span>  <span class="keywordflow">return</span> it;</div>
@@ -1765,11 +1765,11 @@ $(document).ready(function(){initNavTree('format_8h_source.html',''); initResiza
 <div class="line"><a id="l01715" name="l01715"></a><span class="lineno"> 1715</span>                           : base_iterator(out, write(reserve(out, size)));</div>
 <div class="line"><a id="l01716" name="l01716"></a><span class="lineno"> 1716</span>  }</div>
 <div class="line"><a id="l01717" name="l01717"></a><span class="lineno"> 1717</span> </div>
-<div class="line"><a id="l01718" name="l01718"></a><span class="lineno"> 1718</span>  <span class="keywordtype">int</span> exp = fp.exponent + significand_size;</div>
+<div class="line"><a id="l01718" name="l01718"></a><span class="lineno"> 1718</span>  <span class="keywordtype">int</span> <a class="code hl_function" href="group__UnitMath.html#ga37ffdd257c05eb6916d62bfbbc0890e2">exp</a> = fp.exponent + significand_size;</div>
 <div class="line"><a id="l01719" name="l01719"></a><span class="lineno"> 1719</span>  <span class="keywordflow">if</span> (fp.exponent &gt;= 0) {</div>
 <div class="line"><a id="l01720" name="l01720"></a><span class="lineno"> 1720</span>    <span class="comment">// 1234e5 -&gt; 123400000[.0+]</span></div>
 <div class="line"><a id="l01721" name="l01721"></a><span class="lineno"> 1721</span>    size += to_unsigned(fp.exponent);</div>
-<div class="line"><a id="l01722" name="l01722"></a><span class="lineno"> 1722</span>    <span class="keywordtype">int</span> num_zeros = fspecs.precision - exp;</div>
+<div class="line"><a id="l01722" name="l01722"></a><span class="lineno"> 1722</span>    <span class="keywordtype">int</span> num_zeros = fspecs.precision - <a class="code hl_function" href="group__UnitMath.html#ga37ffdd257c05eb6916d62bfbbc0890e2">exp</a>;</div>
 <div class="line"><a id="l01723" name="l01723"></a><span class="lineno"> 1723</span><span class="preprocessor">#ifdef FMT_FUZZ</span></div>
 <div class="line"><a id="l01724" name="l01724"></a><span class="lineno"> 1724</span>    <span class="keywordflow">if</span> (num_zeros &gt; 5000)</div>
 <div class="line"><a id="l01725" name="l01725"></a><span class="lineno"> 1725</span>      <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;fuzz mode - avoiding excessive cpu use&quot;</span>);</div>
@@ -1786,19 +1786,19 @@ $(document).ready(function(){initNavTree('format_8h_source.html',''); initResiza
 <div class="line"><a id="l01736" name="l01736"></a><span class="lineno"> 1736</span>      *it++ = decimal_point;</div>
 <div class="line"><a id="l01737" name="l01737"></a><span class="lineno"> 1737</span>      <span class="keywordflow">return</span> num_zeros &gt; 0 ? detail::fill_n(it, num_zeros, zero) : it;</div>
 <div class="line"><a id="l01738" name="l01738"></a><span class="lineno"> 1738</span>    });</div>
-<div class="line"><a id="l01739" name="l01739"></a><span class="lineno"> 1739</span>  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (exp &gt; 0) {</div>
+<div class="line"><a id="l01739" name="l01739"></a><span class="lineno"> 1739</span>  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_function" href="group__UnitMath.html#ga37ffdd257c05eb6916d62bfbbc0890e2">exp</a> &gt; 0) {</div>
 <div class="line"><a id="l01740" name="l01740"></a><span class="lineno"> 1740</span>    <span class="comment">// 1234e-2 -&gt; 12.34[0+]</span></div>
 <div class="line"><a id="l01741" name="l01741"></a><span class="lineno"> 1741</span>    <span class="keywordtype">int</span> num_zeros = fspecs.showpoint ? fspecs.precision - significand_size : 0;</div>
 <div class="line"><a id="l01742" name="l01742"></a><span class="lineno"> 1742</span>    size += 1 + to_unsigned(num_zeros &gt; 0 ? num_zeros : 0);</div>
 <div class="line"><a id="l01743" name="l01743"></a><span class="lineno"> 1743</span>    <span class="keywordflow">return</span> write_padded&lt;align::right&gt;(out, specs, size, [&amp;](iterator it) {</div>
 <div class="line"><a id="l01744" name="l01744"></a><span class="lineno"> 1744</span>      <span class="keywordflow">if</span> (sign) *it++ = <span class="keyword">static_cast&lt;</span>Char<span class="keyword">&gt;</span>(data::signs[sign]);</div>
-<div class="line"><a id="l01745" name="l01745"></a><span class="lineno"> 1745</span>      it = write_significand(it, significand, significand_size, exp,</div>
+<div class="line"><a id="l01745" name="l01745"></a><span class="lineno"> 1745</span>      it = write_significand(it, significand, significand_size, <a class="code hl_function" href="group__UnitMath.html#ga37ffdd257c05eb6916d62bfbbc0890e2">exp</a>,</div>
 <div class="line"><a id="l01746" name="l01746"></a><span class="lineno"> 1746</span>                             decimal_point);</div>
 <div class="line"><a id="l01747" name="l01747"></a><span class="lineno"> 1747</span>      <span class="keywordflow">return</span> num_zeros &gt; 0 ? detail::fill_n(it, num_zeros, zero) : it;</div>
 <div class="line"><a id="l01748" name="l01748"></a><span class="lineno"> 1748</span>    });</div>
 <div class="line"><a id="l01749" name="l01749"></a><span class="lineno"> 1749</span>  }</div>
 <div class="line"><a id="l01750" name="l01750"></a><span class="lineno"> 1750</span>  <span class="comment">// 1234e-6 -&gt; 0.001234</span></div>
-<div class="line"><a id="l01751" name="l01751"></a><span class="lineno"> 1751</span>  <span class="keywordtype">int</span> num_zeros = -exp;</div>
+<div class="line"><a id="l01751" name="l01751"></a><span class="lineno"> 1751</span>  <span class="keywordtype">int</span> num_zeros = -<a class="code hl_function" href="group__UnitMath.html#ga37ffdd257c05eb6916d62bfbbc0890e2">exp</a>;</div>
 <div class="line"><a id="l01752" name="l01752"></a><span class="lineno"> 1752</span>  <span class="keywordflow">if</span> (significand_size == 0 &amp;&amp; fspecs.precision &gt;= 0 &amp;&amp;</div>
 <div class="line"><a id="l01753" name="l01753"></a><span class="lineno"> 1753</span>      fspecs.precision &lt; num_zeros) {</div>
 <div class="line"><a id="l01754" name="l01754"></a><span class="lineno"> 1754</span>    num_zeros = fspecs.precision;</div>
@@ -1856,11 +1856,11 @@ $(document).ready(function(){initNavTree('format_8h_source.html',''); initResiza
 <div class="line"><a id="l01806" name="l01806"></a><span class="lineno"> 1806</span>  }</div>
 <div class="line"><a id="l01807" name="l01807"></a><span class="lineno"> 1807</span>  <span class="keywordflow">if</span> (const_check(std::is_same&lt;T, float&gt;())) fspecs.binary32 = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l01808" name="l01808"></a><span class="lineno"> 1808</span>  fspecs.use_grisu = is_fast_float&lt;T&gt;();</div>
-<div class="line"><a id="l01809" name="l01809"></a><span class="lineno"> 1809</span>  <span class="keywordtype">int</span> exp = format_float(promote_float(<a class="code hl_class" href="classvalue.html">value</a>), precision, fspecs, <a class="code hl_class" href="classbuffer.html">buffer</a>);</div>
+<div class="line"><a id="l01809" name="l01809"></a><span class="lineno"> 1809</span>  <span class="keywordtype">int</span> <a class="code hl_function" href="group__UnitMath.html#ga37ffdd257c05eb6916d62bfbbc0890e2">exp</a> = format_float(promote_float(<a class="code hl_class" href="classvalue.html">value</a>), precision, fspecs, <a class="code hl_class" href="classbuffer.html">buffer</a>);</div>
 <div class="line"><a id="l01810" name="l01810"></a><span class="lineno"> 1810</span>  fspecs.precision = precision;</div>
 <div class="line"><a id="l01811" name="l01811"></a><span class="lineno"> 1811</span>  Char point =</div>
 <div class="line"><a id="l01812" name="l01812"></a><span class="lineno"> 1812</span>      fspecs.locale ? decimal_point&lt;Char&gt;(loc) : static_cast&lt;Char&gt;(<span class="stringliteral">&#39;.&#39;</span>);</div>
-<div class="line"><a id="l01813" name="l01813"></a><span class="lineno"> 1813</span>  <span class="keyword">auto</span> fp = <a class="code hl_struct" href="structbig__decimal__fp.html">big_decimal_fp</a>{<a class="code hl_class" href="classbuffer.html">buffer</a>.<a class="code hl_function" href="classbuffer.html#afe9e285085f454beed44b59317dd922a">data</a>(), <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code hl_class" href="classbuffer.html">buffer</a>.<a class="code hl_function" href="classbuffer.html#a1ccd7d3743b46a47819fb49f1c625b3e">size</a>()), exp};</div>
+<div class="line"><a id="l01813" name="l01813"></a><span class="lineno"> 1813</span>  <span class="keyword">auto</span> fp = <a class="code hl_struct" href="structbig__decimal__fp.html">big_decimal_fp</a>{<a class="code hl_class" href="classbuffer.html">buffer</a>.<a class="code hl_function" href="classbuffer.html#afe9e285085f454beed44b59317dd922a">data</a>(), <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(<a class="code hl_class" href="classbuffer.html">buffer</a>.<a class="code hl_function" href="classbuffer.html#a1ccd7d3743b46a47819fb49f1c625b3e">size</a>()), <a class="code hl_function" href="group__UnitMath.html#ga37ffdd257c05eb6916d62bfbbc0890e2">exp</a>};</div>
 <div class="line"><a id="l01814" name="l01814"></a><span class="lineno"> 1814</span>  <span class="keywordflow">return</span> write_float(out, fp, specs, fspecs, point);</div>
 <div class="line"><a id="l01815" name="l01815"></a><span class="lineno"> 1815</span>}</div>
 <div class="line"><a id="l01816" name="l01816"></a><span class="lineno"> 1816</span> </div>
@@ -2801,6 +2801,7 @@ $(document).ready(function(){initNavTree('format_8h_source.html',''); initResiza
 <div class="ttc" id="aclassutf8__to__utf16_html"><div class="ttname"><a href="classutf8__to__utf16.html">utf8_to_utf16</a></div><div class="ttdef"><b>Definition:</b> format.h:1140</div></div>
 <div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1120</div></div>
 <div class="ttc" id="aclasswidth__checker_html"><div class="ttname"><a href="classwidth__checker.html">width_checker</a></div><div class="ttdef"><b>Definition:</b> format.h:2015</div></div>
+<div class="ttc" id="agroup__UnitMath_html_ga37ffdd257c05eb6916d62bfbbc0890e2"><div class="ttname"><a href="group__UnitMath.html#ga37ffdd257c05eb6916d62bfbbc0890e2">units::math::exp</a></div><div class="ttdeci">dimensionless::scalar_t exp(const ScalarUnit x) noexcept</div><div class="ttdoc">Compute exponential function.</div><div class="ttdef"><b>Definition:</b> math.h:332</div></div>
 <div class="ttc" id="astructarg__formatter_html"><div class="ttname"><a href="structarg__formatter.html">arg_formatter</a></div><div class="ttdef"><b>Definition:</b> format.h:1979</div></div>
 <div class="ttc" id="astructarg__ref_html"><div class="ttname"><a href="structarg__ref.html">arg_ref</a></div><div class="ttdef"><b>Definition:</b> core.h:1924</div></div>
 <div class="ttc" id="astructauto__id_html"><div class="ttname"><a href="structauto__id.html">auto_id</a></div><div class="ttdef"><b>Definition:</b> core.h:1957</div></div>
@@ -2839,7 +2840,7 @@ $(document).ready(function(){initNavTree('format_8h_source.html',''); initResiza
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_07f1050b175e2d01c230e5cadf135f7c.html">fmtlib</a></li><li class="navelem"><a class="el" href="dir_f186fa79a3895d81ef02af9fef546a30.html">include</a></li><li class="navelem"><a class="el" href="dir_37137cfaace3bfc79a7a3aee825a2892.html">fmt</a></li><li class="navelem"><b>format.h</b></li>
-    <li class="footer">Generated on Thu Oct 14 2021 14:31:48 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Oct 15 2021 01:12:59 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

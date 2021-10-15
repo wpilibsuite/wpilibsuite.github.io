@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-13-g4ad3a54</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-14-g4647d09</span>
    </div>
   </td>
  </tr>
@@ -107,33 +107,33 @@ $(document).ready(function(){initNavTree('hal_2src_2main_2native_2include_2hal_2
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="group__hal__dutycycle.html#ga865ad4b78e206155778194c53864532a">   29</a></span>HAL_DutyCycleHandle <a class="code hl_function" href="group__hal__dutycycle.html#ga865ad4b78e206155778194c53864532a">HAL_InitializeDutyCycle</a>(HAL_Handle digitalSourceHandle,</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                                            HAL_AnalogTriggerType triggerType,</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                                            int32_t* status);</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="group__hal__dutycycle.html#ga749fddc16c0a0e1fb3264d1dc0c51b68">   38</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group__hal__dutycycle.html#ga749fddc16c0a0e1fb3264d1dc0c51b68">HAL_FreeDutyCycle</a>(HAL_DutyCycleHandle dutyCycleHandle);</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="group__hal__dutycycle.html#gaad02f940114dda3b4d133e2f2a461ed4">   46</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group__hal__dutycycle.html#gaad02f940114dda3b4d133e2f2a461ed4">HAL_SetDutyCycleSimDevice</a>(HAL_DutyCycleHandle handle,</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                               HAL_SimDeviceHandle device);</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="group__hal__dutycycle.html#gab44e1f3fef711037c935565e6b3a45c0">   55</a></span>int32_t <a class="code hl_function" href="group__hal__dutycycle.html#gab44e1f3fef711037c935565e6b3a45c0">HAL_GetDutyCycleFrequency</a>(HAL_DutyCycleHandle dutyCycleHandle,</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                                  int32_t* status);</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="group__hal__dutycycle.html#ga3303e61c5f9e30dcd87b267d93e253dc">   66</a></span><span class="keywordtype">double</span> <a class="code hl_function" href="group__hal__dutycycle.html#ga3303e61c5f9e30dcd87b267d93e253dc">HAL_GetDutyCycleOutput</a>(HAL_DutyCycleHandle dutyCycleHandle,</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                              int32_t* status);</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="group__hal__dutycycle.html#gac6ee0f5f0df7b6949be45b715b07667e">   78</a></span>int32_t <a class="code hl_function" href="group__hal__dutycycle.html#gac6ee0f5f0df7b6949be45b715b07667e">HAL_GetDutyCycleOutputRaw</a>(HAL_DutyCycleHandle dutyCycleHandle,</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                                  int32_t* status);</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="group__hal__dutycycle.html#ga86097e61efe8ea0b69abec9fd6834b0f">   91</a></span>int32_t <a class="code hl_function" href="group__hal__dutycycle.html#ga86097e61efe8ea0b69abec9fd6834b0f">HAL_GetDutyCycleOutputScaleFactor</a>(HAL_DutyCycleHandle dutyCycleHandle,</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                                          int32_t* status);</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="group__hal__dutycycle.html#ga38fedf88c5a13aaf2c8a087f56a551e2">  100</a></span>int32_t <a class="code hl_function" href="group__hal__dutycycle.html#ga38fedf88c5a13aaf2c8a087f56a551e2">HAL_GetDutyCycleFPGAIndex</a>(HAL_DutyCycleHandle dutyCycleHandle,</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                                  int32_t* status);</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>}  <span class="comment">// extern &quot;C&quot;</span></div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="group__hal__dutycycle.html#ga865ad4b78e206155778194c53864532a">   31</a></span>HAL_DutyCycleHandle <a class="code hl_function" href="group__hal__dutycycle.html#ga865ad4b78e206155778194c53864532a">HAL_InitializeDutyCycle</a>(HAL_Handle digitalSourceHandle,</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                                            HAL_AnalogTriggerType triggerType,</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                                            int32_t* status);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="group__hal__dutycycle.html#ga749fddc16c0a0e1fb3264d1dc0c51b68">   40</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group__hal__dutycycle.html#ga749fddc16c0a0e1fb3264d1dc0c51b68">HAL_FreeDutyCycle</a>(HAL_DutyCycleHandle dutyCycleHandle);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="group__hal__dutycycle.html#gaad02f940114dda3b4d133e2f2a461ed4">   48</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group__hal__dutycycle.html#gaad02f940114dda3b4d133e2f2a461ed4">HAL_SetDutyCycleSimDevice</a>(HAL_DutyCycleHandle handle,</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                               HAL_SimDeviceHandle device);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="group__hal__dutycycle.html#gab44e1f3fef711037c935565e6b3a45c0">   58</a></span>int32_t <a class="code hl_function" href="group__hal__dutycycle.html#gab44e1f3fef711037c935565e6b3a45c0">HAL_GetDutyCycleFrequency</a>(HAL_DutyCycleHandle dutyCycleHandle,</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                                  int32_t* status);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="group__hal__dutycycle.html#ga3303e61c5f9e30dcd87b267d93e253dc">   70</a></span><span class="keywordtype">double</span> <a class="code hl_function" href="group__hal__dutycycle.html#ga3303e61c5f9e30dcd87b267d93e253dc">HAL_GetDutyCycleOutput</a>(HAL_DutyCycleHandle dutyCycleHandle,</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                              int32_t* status);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="group__hal__dutycycle.html#gac6ee0f5f0df7b6949be45b715b07667e">   83</a></span>int32_t <a class="code hl_function" href="group__hal__dutycycle.html#gac6ee0f5f0df7b6949be45b715b07667e">HAL_GetDutyCycleOutputRaw</a>(HAL_DutyCycleHandle dutyCycleHandle,</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                                  int32_t* status);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="group__hal__dutycycle.html#ga86097e61efe8ea0b69abec9fd6834b0f">   97</a></span>int32_t <a class="code hl_function" href="group__hal__dutycycle.html#ga86097e61efe8ea0b69abec9fd6834b0f">HAL_GetDutyCycleOutputScaleFactor</a>(HAL_DutyCycleHandle dutyCycleHandle,</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                                          int32_t* status);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="group__hal__dutycycle.html#ga38fedf88c5a13aaf2c8a087f56a551e2">  107</a></span>int32_t <a class="code hl_function" href="group__hal__dutycycle.html#ga38fedf88c5a13aaf2c8a087f56a551e2">HAL_GetDutyCycleFPGAIndex</a>(HAL_DutyCycleHandle dutyCycleHandle,</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                                  int32_t* status);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>}  <span class="comment">// extern &quot;C&quot;</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="agroup__hal__dutycycle_html_ga3303e61c5f9e30dcd87b267d93e253dc"><div class="ttname"><a href="group__hal__dutycycle.html#ga3303e61c5f9e30dcd87b267d93e253dc">HAL_GetDutyCycleOutput</a></div><div class="ttdeci">double HAL_GetDutyCycleOutput(HAL_DutyCycleHandle dutyCycleHandle, int32_t *status)</div><div class="ttdoc">Get the output ratio of the duty cycle signal.</div></div>
 <div class="ttc" id="agroup__hal__dutycycle_html_ga38fedf88c5a13aaf2c8a087f56a551e2"><div class="ttname"><a href="group__hal__dutycycle.html#ga38fedf88c5a13aaf2c8a087f56a551e2">HAL_GetDutyCycleFPGAIndex</a></div><div class="ttdeci">int32_t HAL_GetDutyCycleFPGAIndex(HAL_DutyCycleHandle dutyCycleHandle, int32_t *status)</div><div class="ttdoc">Get the FPGA index for the DutyCycle.</div></div>
 <div class="ttc" id="agroup__hal__dutycycle_html_ga749fddc16c0a0e1fb3264d1dc0c51b68"><div class="ttname"><a href="group__hal__dutycycle.html#ga749fddc16c0a0e1fb3264d1dc0c51b68">HAL_FreeDutyCycle</a></div><div class="ttdeci">void HAL_FreeDutyCycle(HAL_DutyCycleHandle dutyCycleHandle)</div><div class="ttdoc">Free a DutyCycle.</div></div>
@@ -148,7 +148,7 @@ $(document).ready(function(){initNavTree('hal_2src_2main_2native_2include_2hal_2
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_7dfa5b6b9262a4050979ee23e0eb392d.html">hal</a></li><li class="navelem"><b>DutyCycle.h</b></li>
-    <li class="footer">Generated on Thu Oct 14 2021 14:31:48 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Oct 15 2021 01:12:49 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

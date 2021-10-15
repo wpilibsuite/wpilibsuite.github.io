@@ -31,7 +31,7 @@ var classfrc_1_1Command =
     [ "IsParented", "classfrc_1_1Command.html#ad66e97b0447e36aec3e4370a20fa5e4a", null ],
     [ "IsRunning", "classfrc_1_1Command.html#a5f6d91da111c81e554759c66b2aa5ee6", null ],
     [ "IsTimedOut", "classfrc_1_1Command.html#ae0a347b105cc5e7a0bff6ea07a9100ec", null ],
-    [ "Requires", "classfrc_1_1Command.html#a51cce76d54be5915afaa78c647254f4e", null ],
+    [ "Requires", "classfrc_1_1Command.html#ad5633c00c38027e8c978b40caf4fb9d5", null ],
     [ "Run", "classfrc_1_1Command.html#a6a57e379abe8b0a358342c6394be78e7", null ],
     [ "SetInterruptible", "classfrc_1_1Command.html#ab657ac42c885ee9e5b7fff126b732f2c", null ],
     [ "SetName", "classfrc_1_1Command.html#a1638cf5b828dfe9dc58556ee82bead9a", null ],

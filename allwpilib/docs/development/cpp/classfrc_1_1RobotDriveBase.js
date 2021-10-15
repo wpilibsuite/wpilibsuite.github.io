@@ -9,7 +9,7 @@ var classfrc_1_1RobotDriveBase =
       [ "kRight", "classfrc_1_1RobotDriveBase.html#a91bbe6376ee340272ae36ea20b608754a2e9ff3c98bdf920a7cb9314b38beb007", null ],
       [ "kBack", "classfrc_1_1RobotDriveBase.html#a91bbe6376ee340272ae36ea20b608754aef2d7e716b69e79e5d4843838a5c5e79", null ]
     ] ],
-    [ "ApplyDeadband", "classfrc_1_1RobotDriveBase.html#ad88dd6640af8d27a012e9940f1d64fda", null ],
+    [ "ApplyDeadband", "classfrc_1_1RobotDriveBase.html#ad34521ec9f278ec4625c0c0e313fafa1", null ],
     [ "FeedWatchdog", "classfrc_1_1RobotDriveBase.html#ac407bc60830a0d639de96bdc53d58a0f", null ],
     [ "Normalize", "classfrc_1_1RobotDriveBase.html#aaa50f4e60de47a159179570acf64cb68", null ],
     [ "SetDeadband", "classfrc_1_1RobotDriveBase.html#a66ca9d336c81659405045bf064490cfe", null ],

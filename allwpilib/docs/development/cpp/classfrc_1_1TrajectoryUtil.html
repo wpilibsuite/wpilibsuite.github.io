@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-13-g4ad3a54</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-14-g4647d09</span>
    </div>
   </td>
  </tr>
@@ -109,13 +109,13 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a09371a143df1577b48adf5ce83e36020"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1TrajectoryUtil.html#a09371a143df1577b48adf5ce83e36020">SerializeTrajectory</a> (const <a class="el" href="classfrc_1_1Trajectory.html">Trajectory</a> &amp;trajectory)</td></tr>
 <tr class="memdesc:a09371a143df1577b48adf5ce83e36020"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deserializes a <a class="el" href="classfrc_1_1Trajectory.html" title="Represents a time-parameterized trajectory.">Trajectory</a> from PathWeaver-style JSON.  <a href="classfrc_1_1TrajectoryUtil.html#a09371a143df1577b48adf5ce83e36020">More...</a><br /></td></tr>
 <tr class="separator:a09371a143df1577b48adf5ce83e36020"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4767852a305abc46b6c3e8ed3e2e5e95"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classfrc_1_1Trajectory.html">Trajectory</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1TrajectoryUtil.html#a4767852a305abc46b6c3e8ed3e2e5e95">DeserializeTrajectory</a> (std::string_view json_str)</td></tr>
-<tr class="memdesc:a4767852a305abc46b6c3e8ed3e2e5e95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes a <a class="el" href="classfrc_1_1Trajectory.html" title="Represents a time-parameterized trajectory.">Trajectory</a> to PathWeaver-style JSON.  <a href="classfrc_1_1TrajectoryUtil.html#a4767852a305abc46b6c3e8ed3e2e5e95">More...</a><br /></td></tr>
-<tr class="separator:a4767852a305abc46b6c3e8ed3e2e5e95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb182ac16c33321567484f08de9c8b5d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classfrc_1_1Trajectory.html">Trajectory</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1TrajectoryUtil.html#acb182ac16c33321567484f08de9c8b5d">DeserializeTrajectory</a> (std::string_view jsonStr)</td></tr>
+<tr class="memdesc:acb182ac16c33321567484f08de9c8b5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes a <a class="el" href="classfrc_1_1Trajectory.html" title="Represents a time-parameterized trajectory.">Trajectory</a> to PathWeaver-style JSON.  <a href="classfrc_1_1TrajectoryUtil.html#acb182ac16c33321567484f08de9c8b5d">More...</a><br /></td></tr>
+<tr class="separator:acb182ac16c33321567484f08de9c8b5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a4767852a305abc46b6c3e8ed3e2e5e95" name="a4767852a305abc46b6c3e8ed3e2e5e95"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4767852a305abc46b6c3e8ed3e2e5e95">&#9670;&nbsp;</a></span>DeserializeTrajectory()</h2>
+<a id="acb182ac16c33321567484f08de9c8b5d" name="acb182ac16c33321567484f08de9c8b5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb182ac16c33321567484f08de9c8b5d">&#9670;&nbsp;</a></span>DeserializeTrajectory()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -127,7 +127,7 @@ Static Public Member Functions</h2></td></tr>
           <td class="memname">static <a class="el" href="classfrc_1_1Trajectory.html">Trajectory</a> frc::TrajectoryUtil::DeserializeTrajectory </td>
           <td>(</td>
           <td class="paramtype">std::string_view&#160;</td>
-          <td class="paramname"><em>json_str</em></td><td>)</td>
+          <td class="paramname"><em>jsonStr</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -141,11 +141,11 @@ Static Public Member Functions</h2></td></tr>
 <p>Serializes a <a class="el" href="classfrc_1_1Trajectory.html" title="Represents a time-parameterized trajectory.">Trajectory</a> to PathWeaver-style JSON. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">trajectory</td><td>the trajectory to export</td></tr>
+    <tr><td class="paramname">jsonStr</td><td>the string containing the serialized JSON</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the string containing the serialized JSON </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the trajectory represented by the JSON </dd></dl>
 
 </div>
 </div>
@@ -211,11 +211,11 @@ Static Public Member Functions</h2></td></tr>
 <p>Deserializes a <a class="el" href="classfrc_1_1Trajectory.html" title="Represents a time-parameterized trajectory.">Trajectory</a> from PathWeaver-style JSON. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">json</td><td>the string containing the serialized JSON</td></tr>
+    <tr><td class="paramname">trajectory</td><td>the trajectory to export</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the trajectory represented by the JSON </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the string containing the serialized JSON </dd></dl>
 
 </div>
 </div>
@@ -257,11 +257,10 @@ Static Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">trajectory</td><td>the trajectory to export </td></tr>
-    <tr><td class="paramname">path</td><td>the path of the file to export to</td></tr>
+    <tr><td class="paramname">path</td><td>the path of the file to export to </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The interpolated state. </dd></dl>
 
 </div>
 </div>
@@ -274,7 +273,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1TrajectoryUtil.html">TrajectoryUtil</a></li>
-    <li class="footer">Generated on Thu Oct 14 2021 14:31:51 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Oct 15 2021 01:13:07 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

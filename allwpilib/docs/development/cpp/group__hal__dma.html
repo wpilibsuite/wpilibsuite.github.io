@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-13-g4ad3a54</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-14-g4647d09</span>
    </div>
   </td>
  </tr>
@@ -245,8 +245,9 @@ Functions</h2></td></tr>
 <p >This can only be called if DMA is not started.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the dma handle </td></tr>
-    <tr><td class="paramname">aInHandle</td><td>the analog input to add </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the dma handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aInHandle</td><td>the analog input to add </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -289,8 +290,9 @@ Functions</h2></td></tr>
 <p >This can only be called if DMA is not started.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the dma handle </td></tr>
-    <tr><td class="paramname">aInHandle</td><td>the analog input to add </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the dma handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aInHandle</td><td>the analog input to add </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -333,8 +335,9 @@ Functions</h2></td></tr>
 <p >This can only be called if DMA is not started.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the dma handle </td></tr>
-    <tr><td class="paramname">aInHandle</td><td>the analog input to add </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the dma handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aInHandle</td><td>the analog input to add </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -377,8 +380,9 @@ Functions</h2></td></tr>
 <p >This can only be called if DMA is not started.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the dma handle </td></tr>
-    <tr><td class="paramname">counterHandle</td><td>the counter to add </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the dma handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">counterHandle</td><td>the counter to add </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -420,8 +424,9 @@ Functions</h2></td></tr>
 <p>Adds timer data for an counter to be collected by DMA. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the dma handle </td></tr>
-    <tr><td class="paramname">counterHandle</td><td>the counter to add </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the dma handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">counterHandle</td><td>the counter to add </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -464,8 +469,9 @@ Functions</h2></td></tr>
 <p >This can only be called if DMA is not started.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the dma handle </td></tr>
-    <tr><td class="paramname">digitalSourceHandle</td><td>the digital source to add </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the dma handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">digitalSourceHandle</td><td>the digital source to add </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -508,8 +514,9 @@ Functions</h2></td></tr>
 <p >This can only be called if DMA is not started.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the dma handle </td></tr>
-    <tr><td class="paramname">dutyCycleHandle</td><td>the duty cycle input to add </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the dma handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dutyCycleHandle</td><td>the duty cycle input to add </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -552,8 +559,9 @@ Functions</h2></td></tr>
 <p >This can only be called if DMA is not started.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the dma handle </td></tr>
-    <tr><td class="paramname">encoderHandle</td><td>the encoder to add </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the dma handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">encoderHandle</td><td>the encoder to add </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -596,8 +604,9 @@ Functions</h2></td></tr>
 <p >This can only be called if DMA is not started.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the dma handle </td></tr>
-    <tr><td class="paramname">encoderHandle</td><td>the encoder to add </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the dma handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">encoderHandle</td><td>the encoder to add </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -634,7 +643,8 @@ Functions</h2></td></tr>
 <p >This can only be called if DMA is not started.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the dma handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the dma handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -671,7 +681,8 @@ Functions</h2></td></tr>
 <p >This can only be called if DMA is not started.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the dma handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the dma handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -778,10 +789,11 @@ Functions</h2></td></tr>
 <p>Returns the analog accumulator data for an analog input from the sample. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">dmaSample</td><td>the sample to read from </td></tr>
-    <tr><td class="paramname">aInHandle</td><td>the analog input handle </td></tr>
-    <tr><td class="paramname">count</td><td>the accumulator count </td></tr>
-    <tr><td class="paramname">value</td><td>the accumulator value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dmaSample</td><td>the sample to read from </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aInHandle</td><td>the analog input handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">count</td><td>the accumulator count </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>the accumulator value </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -824,8 +836,9 @@ Functions</h2></td></tr>
 <p >This can be scaled with HAL_GetAnalogValueToVolts to match GetVoltage().</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">dmaSample</td><td>the sample to read from </td></tr>
-    <tr><td class="paramname">aInHandle</td><td>the analog input handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dmaSample</td><td>the sample to read from </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aInHandle</td><td>the analog input handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -869,8 +882,9 @@ Functions</h2></td></tr>
 <p >This can be scaled with HAL_GetAnalogValueToVolts to match GetAveragedVoltage().</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">dmaSample</td><td>the sample to read from </td></tr>
-    <tr><td class="paramname">aInHandle</td><td>the analog input handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dmaSample</td><td>the sample to read from </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aInHandle</td><td>the analog input handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -913,8 +927,9 @@ Functions</h2></td></tr>
 <p>Returns the distance data for an counter from the sample. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">dmaSample</td><td>the sample to read from </td></tr>
-    <tr><td class="paramname">counterHandle</td><td>the counter handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dmaSample</td><td>the sample to read from </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">counterHandle</td><td>the counter handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -957,8 +972,9 @@ Functions</h2></td></tr>
 <p>Returns the period data for an counter from the sample. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">dmaSample</td><td>the sample to read from </td></tr>
-    <tr><td class="paramname">counterHandle</td><td>the counter handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dmaSample</td><td>the sample to read from </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">counterHandle</td><td>the counter handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1001,8 +1017,9 @@ Functions</h2></td></tr>
 <p>Returns the state of a digital source from the sample. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">dmaSample</td><td>the sample to read from </td></tr>
-    <tr><td class="paramname">dSourceHandle</td><td>the digital source handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dmaSample</td><td>the sample to read from </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dSourceHandle</td><td>the digital source handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1046,8 +1063,9 @@ Functions</h2></td></tr>
 <p >Use HAL_GetDutyCycleOutputScaleFactor to scale this to a percentage.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">dmaSample</td><td>the sample to read from </td></tr>
-    <tr><td class="paramname">dutyCycleHandle</td><td>the duty cycle handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dmaSample</td><td>the sample to read from </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dutyCycleHandle</td><td>the duty cycle handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1091,8 +1109,9 @@ Functions</h2></td></tr>
 <p >This can be scaled with DistancePerPulse and DecodingScaleFactor to match the result of GetRate()</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">dmaSample</td><td>the sample to read from </td></tr>
-    <tr><td class="paramname">encoderHandle</td><td>the encoder handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dmaSample</td><td>the sample to read from </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">encoderHandle</td><td>the encoder handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1136,8 +1155,9 @@ Functions</h2></td></tr>
 <p >This can be scaled with DistancePerPulse and DecodingScaleFactor to match the result of GetDistance()</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">dmaSample</td><td>the sample to read from </td></tr>
-    <tr><td class="paramname">encoderHandle</td><td>the encoder handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dmaSample</td><td>the sample to read from </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">encoderHandle</td><td>the encoder handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1175,7 +1195,8 @@ Functions</h2></td></tr>
 <p >This is in the same time domain as <a class="el" href="group__hal__capi.html#ga90870d91c61183d070b6064020e8a0c8" title="Reads the microsecond-resolution timer on the FPGA.">HAL_GetFPGATime()</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">dmaSample</td><td>the sample to read from </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dmaSample</td><td>the sample to read from </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1200,6 +1221,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Initializes an object for peforming DMA transfers. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>the created dma handle </dd></dl>
 
 </div>
@@ -1251,10 +1278,11 @@ Functions</h2></td></tr>
 <p>Reads a DMA sample from the queue. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the dma handle </td></tr>
-    <tr><td class="paramname">dmaSample</td><td>the sample object to place data into </td></tr>
-    <tr><td class="paramname">timeoutSeconds</td><td>the time to wait for data to be queued before timing out </td></tr>
-    <tr><td class="paramname">remainingOut</td><td>the number of samples remaining in the queue </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the dma handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dmaSample</td><td>the sample object to place data into </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeoutSeconds</td><td>the time to wait for data to be queued before timing out </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">remainingOut</td><td>the number of samples remaining in the queue </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1310,7 +1338,11 @@ Functions</h2></td></tr>
 <p >See HAL_ReadDMA for full documentation.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the dma handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dmaPointer</td><td>direct DMA pointer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dmaSample</td><td>the sample object to place data into </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeoutSeconds</td><td>the time to wait for data to be queued before timing out </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">remainingOut</td><td>the number of samples remaining in the queue </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1373,11 +1405,12 @@ Functions</h2></td></tr>
 <p >This can only be called if DMA is not started.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the dma handle </td></tr>
-    <tr><td class="paramname">digitalSourceHandle</td><td>the digital source handle (either a HAL_AnalogTriggerHandle or a HAL_DigitalHandle) </td></tr>
-    <tr><td class="paramname">analogTriggerType</td><td>the analog trigger type if the source is an analog trigger </td></tr>
-    <tr><td class="paramname">risingEdge</td><td>true to trigger on rising </td></tr>
-    <tr><td class="paramname">fallingEdge</td><td>true to trigger on falling </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the dma handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">digitalSourceHandle</td><td>the digital source handle (either a HAL_AnalogTriggerHandle or a HAL_DigitalHandle) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">analogTriggerType</td><td>the analog trigger type if the source is an analog trigger </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rising</td><td>true to trigger on rising edge </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">falling</td><td>true to trigger on falling edge </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1421,8 +1454,9 @@ Functions</h2></td></tr>
 <p >This can only be called while DMA is running.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the dma handle </td></tr>
-    <tr><td class="paramname">pause</td><td>true to pause transfers, false to resume. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the dma handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pause</td><td>true to pause transfers, false to resume. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1467,8 +1501,9 @@ Functions</h2></td></tr>
 <p >This can only be called if DMA is not started.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the dma handle </td></tr>
-    <tr><td class="paramname">periodSeconds</td><td>the period to trigger in seconds </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the dma handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">periodSeconds</td><td>the period to trigger in seconds </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1514,8 +1549,9 @@ Functions</h2></td></tr>
 <p >This can only be called if DMA is not started.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the dma handle </td></tr>
-    <tr><td class="paramname">cycles</td><td>the period to trigger in FPGA cycles </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the dma handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cycles</td><td>the period to trigger in FPGA cycles </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1557,8 +1593,9 @@ Functions</h2></td></tr>
 <p>Starts DMA Collection. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the dma handle </td></tr>
-    <tr><td class="paramname">queueDepth</td><td>the number of objects to be able to queue </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the dma handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">queueDepth</td><td>the number of objects to be able to queue </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1594,7 +1631,8 @@ Functions</h2></td></tr>
 <p>Stops DMA Collection. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the dma handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the dma handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1606,7 +1644,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Oct 14 2021 14:31:49 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Oct 15 2021 01:13:00 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

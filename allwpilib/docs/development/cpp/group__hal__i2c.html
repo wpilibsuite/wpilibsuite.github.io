@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-13-g4ad3a54</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-14-g4647d09</span>
    </div>
   </td>
  </tr>
@@ -176,7 +176,8 @@ Functions</h2></td></tr>
 <p >Opens the port if necessary and saves the handle. If opening the MXP port, also sets up the channel functions appropriately.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">port</td><td>The port to open, 0 for the on-board, 1 for the MXP. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>The port to open, 0 for the on-board, 1 for the MXP. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -226,7 +227,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">port</td><td>The I2C port, 0 for the on-board, 1 for the MXP. </td></tr>
-    <tr><td class="paramname">registerAddress</td><td>The register to read first in the transaction. </td></tr>
+    <tr><td class="paramname">deviceAddress</td><td>The register to read first in the transaction. </td></tr>
     <tr><td class="paramname">count</td><td>The number of bytes to read in the transaction. </td></tr>
     <tr><td class="paramname">buffer</td><td>A pointer to the array of bytes to store the data read from the device. </td></tr>
   </table>
@@ -291,6 +292,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">port</td><td>The I2C port, 0 for the on-board, 1 for the MXP. </td></tr>
+    <tr><td class="paramname">deviceAddress</td><td>The address of the register on the device to be read/written. </td></tr>
     <tr><td class="paramname">dataToSend</td><td>Buffer of data to send as part of the transaction. </td></tr>
     <tr><td class="paramname">sendSize</td><td>Number of bytes to send as part of the transaction. </td></tr>
     <tr><td class="paramname">dataReceived</td><td>Buffer to read data into. </td></tr>
@@ -345,8 +347,9 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">port</td><td>The I2C port, 0 for the on-board, 1 for the MXP. </td></tr>
-    <tr><td class="paramname">registerAddress</td><td>The address of the register on the device to be written. </td></tr>
-    <tr><td class="paramname">data</td><td>The byte to write to the register on the device. </td></tr>
+    <tr><td class="paramname">deviceAddress</td><td>The address of the register on the device to be written. </td></tr>
+    <tr><td class="paramname">dataToSend</td><td>The byte to write to the register on the device. </td></tr>
+    <tr><td class="paramname">sendSize</td><td>Number of bytes to send. </td></tr>
   </table>
   </dd>
 </dl>
@@ -359,7 +362,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Oct 14 2021 14:31:49 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Oct 15 2021 01:13:00 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

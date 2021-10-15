@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-13-g4ad3a54</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-14-g4647d09</span>
    </div>
   </td>
  </tr>
@@ -598,14 +598,14 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_clockIdleHigh</b> =
 </div><div class="memdoc">
 
 <p>Initialize the accumulator. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000022">Deprecated:</a></b></dt><dd>Use unit-safe version instead. InitAccumulator(units::second_t period, int cmd, int xferSize, int validMask, int validValue, int dataShift, int dataSize, bool isSigned, bool bigEndian)</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000046">Deprecated:</a></b></dt><dd>Use unit-safe version instead. InitAccumulator(units::second_t period, int cmd, int xferSize, int validMask, int validValue, int dataShift, int dataSize, bool isSigned, bool bigEndian)</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">period</td><td>Time between reads </td></tr>
     <tr><td class="paramname">cmd</td><td><a class="el" href="classfrc_1_1SPI.html" title="SPI bus interface class.">SPI</a> command to send to request data </td></tr>
     <tr><td class="paramname">xferSize</td><td><a class="el" href="classfrc_1_1SPI.html" title="SPI bus interface class.">SPI</a> transfer size, in bytes </td></tr>
     <tr><td class="paramname">validMask</td><td>Mask to apply to received data for validity checking </td></tr>
-    <tr><td class="paramname">validData</td><td>After valid_mask is applied, required matching value for validity checking </td></tr>
+    <tr><td class="paramname">validValue</td><td>After valid_mask is applied, required matching value for validity checking </td></tr>
     <tr><td class="paramname">dataShift</td><td>Bit shift to apply to received data to get actual data value </td></tr>
     <tr><td class="paramname">dataSize</td><td>Size (in bits) of data field </td></tr>
     <tr><td class="paramname">isSigned</td><td>Is data field signed? </td></tr>
@@ -691,7 +691,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_clockIdleHigh</b> =
     <tr><td class="paramname">cmd</td><td><a class="el" href="classfrc_1_1SPI.html" title="SPI bus interface class.">SPI</a> command to send to request data </td></tr>
     <tr><td class="paramname">xferSize</td><td><a class="el" href="classfrc_1_1SPI.html" title="SPI bus interface class.">SPI</a> transfer size, in bytes </td></tr>
     <tr><td class="paramname">validMask</td><td>Mask to apply to received data for validity checking </td></tr>
-    <tr><td class="paramname">validData</td><td>After valid_mask is applied, required matching value for validity checking </td></tr>
+    <tr><td class="paramname">validValue</td><td>After valid_mask is applied, required matching value for validity checking </td></tr>
     <tr><td class="paramname">dataShift</td><td>Bit shift to apply to received data to get actual data value </td></tr>
     <tr><td class="paramname">dataSize</td><td>Size (in bits) of data field </td></tr>
     <tr><td class="paramname">isSigned</td><td>Is data field signed? </td></tr>
@@ -775,6 +775,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_clockIdleHigh</b> =
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">initiate</td><td>If true, this function pushes "0" into the transmit buffer and initiates a transfer. If false, this function assumes that data is already in the receive FIFO from a previous write. </td></tr>
+    <tr><td class="paramname">dataReceived</td><td>Buffer to receive data from the device </td></tr>
+    <tr><td class="paramname">size</td><td>The length of the transaction, in bytes </td></tr>
   </table>
   </dd>
 </dl>
@@ -992,7 +994,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_clockIdleHigh</b> =
 </div><div class="memdoc">
 
 <p>Configure that the data is stable on the falling edge and the data changes on the rising edge. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000019">Deprecated:</a></b></dt><dd>Use <a class="el" href="classfrc_1_1SPI.html#ab4cc05f9f0c8ae3ce16757ce4b1c4a80" title="Configure that the data is stable on the trailing edge and the data changes on the leading edge.">SetSampleDataOnTrailingEdge()</a> instead.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000043">Deprecated:</a></b></dt><dd>Use <a class="el" href="classfrc_1_1SPI.html#ab4cc05f9f0c8ae3ce16757ce4b1c4a80" title="Configure that the data is stable on the trailing edge and the data changes on the leading edge.">SetSampleDataOnTrailingEdge()</a> instead.</dd></dl>
 
 </div>
 </div>
@@ -1012,7 +1014,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_clockIdleHigh</b> =
 </div><div class="memdoc">
 
 <p>Configure that the data is stable on the rising edge and the data changes on the falling edge. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000020">Deprecated:</a></b></dt><dd>Use <a class="el" href="classfrc_1_1SPI.html#ab78a7f35b03ccc3d62b656d5430a5eb9" title="Configure that the data is stable on the leading edge and the data changes on the trailing edge.">SetSampleDataOnLeadingEdge()</a> instead.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000044">Deprecated:</a></b></dt><dd>Use <a class="el" href="classfrc_1_1SPI.html#ab78a7f35b03ccc3d62b656d5430a5eb9" title="Configure that the data is stable on the leading edge and the data changes on the trailing edge.">SetSampleDataOnLeadingEdge()</a> instead.</dd></dl>
 
 </div>
 </div>
@@ -1034,7 +1036,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_clockIdleHigh</b> =
 
 <p>Start running the automatic <a class="el" href="classfrc_1_1SPI.html" title="SPI bus interface class.">SPI</a> transfer engine at a periodic rate. </p>
 <p ><a class="el" href="classfrc_1_1SPI.html#ade47943406f4534df47293166dd2dae6" title="Initialize automatic SPI transfer engine.">InitAuto()</a> and <a class="el" href="classfrc_1_1SPI.html#a744aac37ffe2f9f81a770492970aee96" title="Set the data to be transmitted by the engine.">SetAutoTransmitData()</a> must be called before calling this function.</p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000021">Deprecated:</a></b></dt><dd>use unit-safe <a class="el" href="classfrc_1_1SPI.html#a7d77b758daa0cc642fcd08482b70f07d" title="Start running the automatic SPI transfer engine at a periodic rate.">StartAutoRate(units::second_t period)</a> instead.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000045">Deprecated:</a></b></dt><dd>use unit-safe <a class="el" href="classfrc_1_1SPI.html#a7d77b758daa0cc642fcd08482b70f07d" title="Start running the automatic SPI transfer engine at a periodic rate.">StartAutoRate(units::second_t period)</a> instead.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">period</td><td>period between transfers, in seconds (us resolution) </td></tr>
@@ -1217,7 +1219,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_clockIdleHigh</b> =
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1SPI.html">SPI</a></li>
-    <li class="footer">Generated on Thu Oct 14 2021 14:31:51 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Oct 15 2021 01:13:07 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

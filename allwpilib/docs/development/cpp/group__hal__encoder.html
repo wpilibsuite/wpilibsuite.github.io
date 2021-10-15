@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-13-g4ad3a54</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-14-g4647d09</span>
    </div>
   </td>
  </tr>
@@ -208,7 +208,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetEncoderPerio
 <p>Frees an encoder. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">encoderHandle</td><td>the encoder handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">encoderHandle</td><td>the encoder handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -245,7 +246,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetEncoderPerio
 <p >This is scaled by the value passed duing initialization to encodingType.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">encoderHandle</td><td>the encoder handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">encoderHandle</td><td>the encoder handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -283,7 +285,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetEncoderPerio
 <p >This is used to perform the scaling from raw to type scaled values.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">encoderHandle</td><td>the encoder handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">encoderHandle</td><td>the encoder handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -320,7 +323,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetEncoderPerio
 <p>Gets the last direction the encoder value changed. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">encoderHandle</td><td>the encoder handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">encoderHandle</td><td>the encoder handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -358,7 +362,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetEncoderPerio
 <p >This is the encoder count scaled by the distance per pulse set for the encoder.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">encoderHandle</td><td>the encoder handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">encoderHandle</td><td>the encoder handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -395,7 +400,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetEncoderPerio
 <p>Gets the user set distance per pulse of the encoder. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">encoderHandle</td><td>the encoder handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">encoderHandle</td><td>the encoder handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -433,7 +439,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetEncoderPerio
 <p >This is set by the value passed during initialization to encodingType.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">encoderHandle</td><td>the encoder handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">encoderHandle</td><td>the encoder handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -470,7 +477,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetEncoderPerio
 <p>Gets the encoding type of the encoder. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">encoderHandle</td><td>the encoder handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">encoderHandle</td><td>the encoder handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -507,7 +515,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetEncoderPerio
 <p>Gets the FPGA index of the encoder. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">encoderHandle</td><td>the encoder handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">encoderHandle</td><td>the encoder handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -545,7 +554,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetEncoderPerio
 <p >This is the encoder period scaled by the distance per pulse set for the encoder.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">encoderHandle</td><td>the encoder handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">encoderHandle</td><td>the encoder handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -583,7 +593,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetEncoderPerio
 <p >This is not scaled by any values.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">encoderHandle</td><td>the encoder handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">encoderHandle</td><td>the encoder handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -620,7 +631,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetEncoderPerio
 <p>Gets the current samples to average value. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">encoderHandle</td><td>the encoder handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">encoderHandle</td><td>the encoder handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -658,7 +670,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetEncoderPerio
 <p >Determines if the clocked input is stopped based on the MaxPeriod value set using the SetMaxPeriod method. If the clock exceeds the MaxPeriod, then the device (and encoder) are assumed to be stopped and it returns true.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">encoderHandle</td><td>the encoder handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">encoderHandle</td><td>the encoder handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -725,12 +738,13 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetEncoderPerio
 <p>Initializes an encoder. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">digitalSourceHandleA</td><td>the A source (either a HAL_DigitalHandle or a HAL_AnalogTriggerHandle) </td></tr>
-    <tr><td class="paramname">analogTriggerTypeA</td><td>the analog trigger type of the A source if it is an analog trigger </td></tr>
-    <tr><td class="paramname">digitalSourceHandleB</td><td>the B source (either a HAL_DigitalHandle or a HAL_AnalogTriggerHandle) </td></tr>
-    <tr><td class="paramname">analogTriggerTypeB</td><td>the analog trigger type of the B source if it is an analog trigger </td></tr>
-    <tr><td class="paramname">reverseDirection</td><td>true to reverse the counting direction from standard, otherwise false </td></tr>
-    <tr><td class="paramname">encodingType</td><td>the encoding type </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">digitalSourceHandleA</td><td>the A source (either a HAL_DigitalHandle or a HAL_AnalogTriggerHandle) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">analogTriggerTypeA</td><td>the analog trigger type of the A source if it is an analog trigger </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">digitalSourceHandleB</td><td>the B source (either a HAL_DigitalHandle or a HAL_AnalogTriggerHandle) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">analogTriggerTypeB</td><td>the analog trigger type of the B source if it is an analog trigger </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">reverseDirection</td><td>true to reverse the counting direction from standard, otherwise false </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">encodingType</td><td>the encoding type </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -768,11 +782,11 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetEncoderPerio
 <p >Read the value at this instant. It may still be running, so it reflects the current value. Next time it is read, it might have a different value.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">encoderHandle</td><td>the encoder handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">encoderHandle</td><td>the encoder handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the current encoder value </dd></dl>
 
 </div>
 </div>
@@ -812,8 +826,9 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetEncoderPerio
 <p >This is used as a scaling factor for the rate and distance calls.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">encoderHandle</td><td>the encoder handle </td></tr>
-    <tr><td class="paramname">distancePerPulse</td><td>the distance traveled per encoder pulse (units user defined) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">encoderHandle</td><td>the encoder handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">distancePerPulse</td><td>the distance traveled per encoder pulse (units user defined) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -868,10 +883,11 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetEncoderPerio
 <p >The index pulse can be used to cause an encoder to reset based on an external input.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">encoderHandle</td><td>the encoder handle </td></tr>
-    <tr><td class="paramname">digitalSourceHandle</td><td>the index source handle (either a HAL_AnalogTriggerHandle or a HAL_DigitalHandle) </td></tr>
-    <tr><td class="paramname">analogTriggerType</td><td>the analog trigger type if the source is an analog trigger </td></tr>
-    <tr><td class="paramname">type</td><td>the index triggering type </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">encoderHandle</td><td>the encoder handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">digitalSourceHandle</td><td>the index source handle (either a HAL_AnalogTriggerHandle or a HAL_DigitalHandle) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">analogTriggerType</td><td>the analog trigger type if the source is an analog trigger </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>the index triggering type </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -914,8 +930,9 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetEncoderPerio
 <p >Sets the maximum period where the device is considered moving. This value is used to determine the "stopped" state of the encoder using the HAL_GetEncoderStopped method.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">encoderHandle</td><td>the encoder handle </td></tr>
-    <tr><td class="paramname">maxPeriod</td><td>the maximum period where the counted device is considered moving in seconds </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">encoderHandle</td><td>the encoder handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">maxPeriod</td><td>the maximum period where the counted device is considered moving in seconds </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -958,8 +975,9 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetEncoderPerio
 <p >Units need to match what is set by HAL_SetEncoderDistancePerPulse, with time as seconds.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">encoderHandle</td><td>the encoder handle </td></tr>
-    <tr><td class="paramname">minRate</td><td>the minimum rate to be considered moving (units are determined by the units passed to HAL_SetEncoderDistancePerPulse, time value is seconds) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">encoderHandle</td><td>the encoder handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">minRate</td><td>the minimum rate to be considered moving (units are determined by the units passed to HAL_SetEncoderDistancePerPulse, time value is seconds) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1002,8 +1020,9 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetEncoderPerio
 <p >Note that this is not a toggle. It is an absolute set.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">encoderHandle</td><td>the encoder handle </td></tr>
-    <tr><td class="paramname">reverseDirection</td><td>true to reverse the direction, false to not. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">encoderHandle</td><td>the encoder handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">reverseDirection</td><td>true to reverse the direction, false to not. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1045,8 +1064,9 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetEncoderPerio
 <p>Sets the number of encoder samples to average when calculating encoder rate. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">encoderHandle</td><td>the encoder handle </td></tr>
-    <tr><td class="paramname">samplesToAverage</td><td>the number of samples to average </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">encoderHandle</td><td>the encoder handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">samplesToAverage</td><td>the number of samples to average </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1095,7 +1115,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetEncoderPerio
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Oct 14 2021 14:31:49 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Oct 15 2021 01:13:00 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

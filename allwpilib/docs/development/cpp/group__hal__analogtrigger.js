@@ -10,6 +10,7 @@ var group__hal__analogtrigger =
     [ "HAL_InitializeAnalogTriggerDutyCycle", "group__hal__analogtrigger.html#ga9fe0a3c2cec720b7b9020f3becfd5686", null ],
     [ "HAL_SetAnalogTriggerAveraged", "group__hal__analogtrigger.html#gad811e95017f04dd86e6585f4e5709052", null ],
     [ "HAL_SetAnalogTriggerFiltered", "group__hal__analogtrigger.html#ga5416ba50d2c46ecbc8d3ca2d08ef9573", null ],
+    [ "HAL_SetAnalogTriggerLimitsDutyCycle", "group__hal__analogtrigger.html#ga48627e2947670c867be01bbce213e9dc", null ],
     [ "HAL_SetAnalogTriggerLimitsRaw", "group__hal__analogtrigger.html#ga69e4c7e259fdd1a79a6ac3c04edb89c5", null ],
     [ "HAL_SetAnalogTriggerLimitsVoltage", "group__hal__analogtrigger.html#gaa62452966fdb8fd997b6c565474edbdb", null ]
 ];

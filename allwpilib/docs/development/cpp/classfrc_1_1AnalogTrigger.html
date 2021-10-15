@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-13-g4ad3a54</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-14-g4647d09</span>
    </div>
   </td>
  </tr>
@@ -114,9 +114,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af891ee0b6a52a7d868e421a711713402"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1AnalogTrigger.html#af891ee0b6a52a7d868e421a711713402">AnalogTrigger</a> (int channel)</td></tr>
 <tr class="memdesc:af891ee0b6a52a7d868e421a711713402"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for an analog trigger given a channel number.  <a href="classfrc_1_1AnalogTrigger.html#af891ee0b6a52a7d868e421a711713402">More...</a><br /></td></tr>
 <tr class="separator:af891ee0b6a52a7d868e421a711713402"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9cbec302e351273de733b7784ae870a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1AnalogTrigger.html#ad9cbec302e351273de733b7784ae870a">AnalogTrigger</a> (<a class="el" href="classfrc_1_1AnalogInput.html">AnalogInput</a> *channel)</td></tr>
-<tr class="memdesc:ad9cbec302e351273de733b7784ae870a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an analog trigger given an analog input.  <a href="classfrc_1_1AnalogTrigger.html#ad9cbec302e351273de733b7784ae870a">More...</a><br /></td></tr>
-<tr class="separator:ad9cbec302e351273de733b7784ae870a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a93d7fb9c14d3fcfca9f5f5f4788395"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1AnalogTrigger.html#a2a93d7fb9c14d3fcfca9f5f5f4788395">AnalogTrigger</a> (<a class="el" href="classfrc_1_1AnalogInput.html">AnalogInput</a> *input)</td></tr>
+<tr class="memdesc:a2a93d7fb9c14d3fcfca9f5f5f4788395"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an analog trigger given an analog input.  <a href="classfrc_1_1AnalogTrigger.html#a2a93d7fb9c14d3fcfca9f5f5f4788395">More...</a><br /></td></tr>
+<tr class="separator:a2a93d7fb9c14d3fcfca9f5f5f4788395"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ceba2c9c23d159011995a6b137a0205"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1AnalogTrigger.html#a6ceba2c9c23d159011995a6b137a0205">AnalogTrigger</a> (<a class="el" href="classfrc_1_1DutyCycle.html">DutyCycle</a> *dutyCycle)</td></tr>
 <tr class="memdesc:a6ceba2c9c23d159011995a6b137a0205"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an analog trigger given a duty cycle input.  <a href="classfrc_1_1AnalogTrigger.html#a6ceba2c9c23d159011995a6b137a0205">More...</a><br /></td></tr>
 <tr class="separator:a6ceba2c9c23d159011995a6b137a0205"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -242,8 +242,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="ad9cbec302e351273de733b7784ae870a" name="ad9cbec302e351273de733b7784ae870a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9cbec302e351273de733b7784ae870a">&#9670;&nbsp;</a></span>AnalogTrigger() <span class="overload">[2/3]</span></h2>
+<a id="a2a93d7fb9c14d3fcfca9f5f5f4788395" name="a2a93d7fb9c14d3fcfca9f5f5f4788395"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a93d7fb9c14d3fcfca9f5f5f4788395">&#9670;&nbsp;</a></span>AnalogTrigger() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -255,7 +255,7 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">frc::AnalogTrigger::AnalogTrigger </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classfrc_1_1AnalogInput.html">AnalogInput</a> *&#160;</td>
-          <td class="paramname"><em>channel</em></td><td>)</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -270,7 +270,7 @@ Additional Inherited Members</h2></td></tr>
 <p >This should be used in the case of sharing an analog channel between the trigger and an analog input object.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">channel</td><td>The pointer to the existing <a class="el" href="classfrc_1_1AnalogInput.html" title="Analog input class.">AnalogInput</a> object </td></tr>
+    <tr><td class="paramname">input</td><td>The pointer to the existing <a class="el" href="classfrc_1_1AnalogInput.html" title="Analog input class.">AnalogInput</a> object </td></tr>
   </table>
   </dd>
 </dl>
@@ -304,7 +304,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Construct an analog trigger given a duty cycle input. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">channel</td><td>The pointer to the existing <a class="el" href="classfrc_1_1DutyCycle.html" title="Class to read a duty cycle PWM input.">DutyCycle</a> object </td></tr>
+    <tr><td class="paramname">dutyCycle</td><td>The pointer to the existing <a class="el" href="classfrc_1_1DutyCycle.html" title="Class to read a duty cycle PWM input.">DutyCycle</a> object </td></tr>
   </table>
   </dd>
 </dl>
@@ -617,7 +617,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1AnalogTrigger.html">AnalogTrigger</a></li>
-    <li class="footer">Generated on Thu Oct 14 2021 14:31:50 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Oct 15 2021 01:13:06 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

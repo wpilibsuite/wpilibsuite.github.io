@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-13-g4ad3a54</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-14-g4647d09</span>
    </div>
   </td>
  </tr>
@@ -194,7 +194,8 @@ Functions</h2></td></tr>
 <p>Clears the receive buffer of the serial port. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the serial port handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the serial port handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
   </table>
   </dd>
 </dl>
@@ -230,7 +231,8 @@ Functions</h2></td></tr>
 <p>Closes a serial port. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the serial port handle to close </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the serial port handle to close </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
   </table>
   </dd>
 </dl>
@@ -266,7 +268,8 @@ Functions</h2></td></tr>
 <p>Disables a termination character for reads. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the serial port handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the serial port handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
   </table>
   </dd>
 </dl>
@@ -309,8 +312,9 @@ Functions</h2></td></tr>
 <p >By default this is disabled.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the serial port handle </td></tr>
-    <tr><td class="paramname">terminator</td><td>the termination character to set </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the serial port handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">terminator</td><td>the termination character to set </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
   </table>
   </dd>
 </dl>
@@ -346,7 +350,8 @@ Functions</h2></td></tr>
 <p>Flushes the serial write buffer out to the port. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the serial port handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the serial port handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
   </table>
   </dd>
 </dl>
@@ -382,7 +387,8 @@ Functions</h2></td></tr>
 <p>Gets the number of bytes currently in the read buffer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the serial port handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the serial port handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
   </table>
   </dd>
 </dl>
@@ -419,7 +425,8 @@ Functions</h2></td></tr>
 <p>Gets the raw serial port file descriptor from a handle. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the serial port handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the serial port handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
   </table>
   </dd>
 </dl>
@@ -457,7 +464,8 @@ Functions</h2></td></tr>
 <p >The channels are either the onboard RS232, the mxp uart, or 2 USB ports. The top port is USB1, the bottom port is USB2.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">port</td><td>the serial port to initialize </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>the serial port to initialize </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
   </table>
   </dd>
 </dl>
@@ -500,8 +508,9 @@ Functions</h2></td></tr>
 <p >This name is the /dev name for a specific port. Note these are not always consistent between roboRIO reboots.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">port</td><td>the serial port to initialize </td></tr>
-    <tr><td class="paramname">portName</td><td>the dev port name </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>the serial port to initialize </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">portName</td><td>the dev port name </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
   </table>
   </dd>
 </dl>
@@ -550,8 +559,10 @@ Functions</h2></td></tr>
 <p >Will wait for either timeout (if set), the termination char (if set), or the count to be full. Whichever one comes first.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the serial port handle </td></tr>
-    <tr><td class="paramname">count</td><td>the number of bytes maximum to read </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the serial port handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">buffer</td><td>the buffer in which to store bytes read </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">count</td><td>the number of bytes maximum to read </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
   </table>
   </dd>
 </dl>
@@ -595,8 +606,9 @@ Functions</h2></td></tr>
 <p >Any value between 0 and 0xFFFFFFFF may be used. Default is 9600.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the serial port handle </td></tr>
-    <tr><td class="paramname">baud</td><td>the baud rate to set </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the serial port handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">baud</td><td>the baud rate to set </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
   </table>
   </dd>
 </dl>
@@ -639,8 +651,9 @@ Functions</h2></td></tr>
 <p >Defaults to 8.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the serial port handle </td></tr>
-    <tr><td class="paramname">bits</td><td>the number of data bits (5-8) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the serial port handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bits</td><td>the number of data bits (5-8) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
   </table>
   </dd>
 </dl>
@@ -683,8 +696,9 @@ Functions</h2></td></tr>
 <p >Valid values are: 0: None (default) 1: XON-XOFF 2: RTS-CTS 3: DTR-DSR</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the serial port handle </td></tr>
-    <tr><td class="paramname">flow</td><td>the mode to set (see remarks for valid values) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the serial port handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">flow</td><td>the mode to set (see remarks for valid values) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
   </table>
   </dd>
 </dl>
@@ -727,8 +741,9 @@ Functions</h2></td></tr>
 <p >Valid values are: 0: None (default) 1: Odd 2: Even 3: Mark - Means exists and always 1 4: Space - Means exists and always 0</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the serial port handle </td></tr>
-    <tr><td class="paramname">parity</td><td>the parity bit mode (see remarks for valid values) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the serial port handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">parity</td><td>the parity bit mode (see remarks for valid values) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
   </table>
   </dd>
 </dl>
@@ -770,8 +785,9 @@ Functions</h2></td></tr>
 <p>Sets the size of the read buffer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the serial port handle </td></tr>
-    <tr><td class="paramname">size</td><td>the read buffer size </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the serial port handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>the read buffer size </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
   </table>
   </dd>
 </dl>
@@ -814,8 +830,9 @@ Functions</h2></td></tr>
 <p >Valid values are: 10: One stop bit (default) 15: One and a half stop bits 20: Two stop bits</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the serial port handle </td></tr>
-    <tr><td class="paramname">stopBits</td><td>the stop bit value (see remarks for valid values) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the serial port handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">stopBits</td><td>the stop bit value (see remarks for valid values) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
   </table>
   </dd>
 </dl>
@@ -857,8 +874,9 @@ Functions</h2></td></tr>
 <p>Sets the minimum serial read timeout of a port. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the serial port handle </td></tr>
-    <tr><td class="paramname">timeout</td><td>the timeout in milliseconds </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the serial port handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td>the timeout in milliseconds </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
   </table>
   </dd>
 </dl>
@@ -900,8 +918,9 @@ Functions</h2></td></tr>
 <p>Sets the size of the write buffer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the serial port handle </td></tr>
-    <tr><td class="paramname">size</td><td>the write buffer size </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the serial port handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>the write buffer size </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
   </table>
   </dd>
 </dl>
@@ -944,8 +963,9 @@ Functions</h2></td></tr>
 <p >Valid values are: 1: Flush on access 2: Flush when full (default)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the serial port handle </td></tr>
-    <tr><td class="paramname">mode</td><td>the mode to set (see remarks for valid values) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the serial port handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>the mode to set (see remarks for valid values) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
   </table>
   </dd>
 </dl>
@@ -993,9 +1013,10 @@ Functions</h2></td></tr>
 <p>Writes data to the serial port. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the serial port handle </td></tr>
-    <tr><td class="paramname">buffer</td><td>the buffer to write </td></tr>
-    <tr><td class="paramname">count</td><td>the number of bytes to write from the buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the serial port handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buffer</td><td>the buffer to write </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">count</td><td>the number of bytes to write from the buffer </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
   </table>
   </dd>
 </dl>
@@ -1008,7 +1029,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Oct 14 2021 14:31:49 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Oct 15 2021 01:13:00 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

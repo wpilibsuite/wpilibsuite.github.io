@@ -15,7 +15,7 @@ var dir_7dfa5b6b9262a4050979ee23e0eb392d =
     [ "CANAPI.h", "CANAPI_8h_source.html", null ],
     [ "CANAPITypes.h", "CANAPITypes_8h_source.html", null ],
     [ "ChipObject.h", "ChipObject_8h_source.html", null ],
-    [ "Constants.h", "Constants_8h_source.html", null ],
+    [ "Constants.h", "hal_2src_2main_2native_2include_2hal_2Constants_8h_source.html", null ],
     [ "Counter.h", "hal_2src_2main_2native_2include_2hal_2Counter_8h_source.html", null ],
     [ "CTREPCM.h", "CTREPCM_8h_source.html", null ],
     [ "DIO.h", "DIO_8h_source.html", null ],
