@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-14-g4647d09</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-15-g6229d8d</span>
    </div>
   </td>
  </tr>
@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('group__ntcore__rpc__cfunc.html',''); i
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga5b9ab2c7ec2ecfa65bd8e38a3e2058cc"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__rpc__cfunc.html#ga5b9ab2c7ec2ecfa65bd8e38a3e2058cc">NT_RpcCallback</a>) (void *<a class="el" href="structdata.html">data</a>, const struct <a class="el" href="structNT__RpcAnswer.html">NT_RpcAnswer</a> *call)</td></tr>
+<tr class="memitem:ga5b9ab2c7ec2ecfa65bd8e38a3e2058cc"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__rpc__cfunc.html#ga5b9ab2c7ec2ecfa65bd8e38a3e2058cc">NT_RpcCallback</a>) (void *<a class="el" href="structdata.html">data</a>, const struct <a class="el" href="struct_n_t___rpc_answer.html">NT_RpcAnswer</a> *call)</td></tr>
 <tr class="memdesc:ga5b9ab2c7ec2ecfa65bd8e38a3e2058cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remote Procedure Call (RPC) callback function.  <a href="group__ntcore__rpc__cfunc.html#ga5b9ab2c7ec2ecfa65bd8e38a3e2058cc">More...</a><br /></td></tr>
 <tr class="separator:ga5b9ab2c7ec2ecfa65bd8e38a3e2058cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -118,10 +118,10 @@ Functions</h2></td></tr>
 <tr class="memitem:ga878ff7a7b432fd6c0b8eee764ee4120a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__rpc__cfunc.html#ga878ff7a7b432fd6c0b8eee764ee4120a">NT_CreatePolledRpc</a> (NT_Entry entry, const char *def, size_t def_len, NT_RpcCallPoller poller)</td></tr>
 <tr class="memdesc:ga878ff7a7b432fd6c0b8eee764ee4120a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a polled RPC entry point.  <a href="group__ntcore__rpc__cfunc.html#ga878ff7a7b432fd6c0b8eee764ee4120a">More...</a><br /></td></tr>
 <tr class="separator:ga878ff7a7b432fd6c0b8eee764ee4120a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf81a6ed942f7075539e0ca68160334b3"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structNT__RpcAnswer.html">NT_RpcAnswer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__rpc__cfunc.html#gaf81a6ed942f7075539e0ca68160334b3">NT_PollRpc</a> (NT_RpcCallPoller poller, size_t *len)</td></tr>
+<tr class="memitem:gaf81a6ed942f7075539e0ca68160334b3"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_n_t___rpc_answer.html">NT_RpcAnswer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__rpc__cfunc.html#gaf81a6ed942f7075539e0ca68160334b3">NT_PollRpc</a> (NT_RpcCallPoller poller, size_t *len)</td></tr>
 <tr class="memdesc:gaf81a6ed942f7075539e0ca68160334b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the next incoming RPC call.  <a href="group__ntcore__rpc__cfunc.html#gaf81a6ed942f7075539e0ca68160334b3">More...</a><br /></td></tr>
 <tr class="separator:gaf81a6ed942f7075539e0ca68160334b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaee96a7584ff2e31f7ccc09dadda62a28"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structNT__RpcAnswer.html">NT_RpcAnswer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__rpc__cfunc.html#gaee96a7584ff2e31f7ccc09dadda62a28">NT_PollRpcTimeout</a> (NT_RpcCallPoller poller, size_t *len, double timeout, <a class="el" href="group__ntcore__c__api.html#ga3d0c2962b4afea3fff6d34d2b9995ff0">NT_Bool</a> *timed_out)</td></tr>
+<tr class="memitem:gaee96a7584ff2e31f7ccc09dadda62a28"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_n_t___rpc_answer.html">NT_RpcAnswer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__rpc__cfunc.html#gaee96a7584ff2e31f7ccc09dadda62a28">NT_PollRpcTimeout</a> (NT_RpcCallPoller poller, size_t *len, double timeout, <a class="el" href="group__ntcore__c__api.html#ga3d0c2962b4afea3fff6d34d2b9995ff0">NT_Bool</a> *timed_out)</td></tr>
 <tr class="memdesc:gaee96a7584ff2e31f7ccc09dadda62a28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the next incoming RPC call.  <a href="group__ntcore__rpc__cfunc.html#gaee96a7584ff2e31f7ccc09dadda62a28">More...</a><br /></td></tr>
 <tr class="separator:gaee96a7584ff2e31f7ccc09dadda62a28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad1a48a36a7bf37cf3f00ae26bd8dc4ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__rpc__cfunc.html#gad1a48a36a7bf37cf3f00ae26bd8dc4ea">NT_CancelPollRpc</a> (NT_RpcCallPoller poller)</td></tr>
@@ -145,16 +145,16 @@ Functions</h2></td></tr>
 <tr class="memitem:ga13dac0f3caf774a54c727ddb1ad20c9f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__rpc__cfunc.html#ga13dac0f3caf774a54c727ddb1ad20c9f">NT_CancelRpcResult</a> (NT_Entry entry, NT_RpcCall call)</td></tr>
 <tr class="memdesc:ga13dac0f3caf774a54c727ddb1ad20c9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ignore the result of a RPC call.  <a href="group__ntcore__rpc__cfunc.html#ga13dac0f3caf774a54c727ddb1ad20c9f">More...</a><br /></td></tr>
 <tr class="separator:ga13dac0f3caf774a54c727ddb1ad20c9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2c4a7216b6faa7307ccb8ea608272ba3"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__rpc__cfunc.html#ga2c4a7216b6faa7307ccb8ea608272ba3">NT_PackRpcDefinition</a> (const struct <a class="el" href="structNT__RpcDefinition.html">NT_RpcDefinition</a> *def, size_t *packed_len)</td></tr>
+<tr class="memitem:ga2c4a7216b6faa7307ccb8ea608272ba3"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__rpc__cfunc.html#ga2c4a7216b6faa7307ccb8ea608272ba3">NT_PackRpcDefinition</a> (const struct <a class="el" href="struct_n_t___rpc_definition.html">NT_RpcDefinition</a> *def, size_t *packed_len)</td></tr>
 <tr class="memdesc:ga2c4a7216b6faa7307ccb8ea608272ba3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pack a RPC version 1 definition.  <a href="group__ntcore__rpc__cfunc.html#ga2c4a7216b6faa7307ccb8ea608272ba3">More...</a><br /></td></tr>
 <tr class="separator:ga2c4a7216b6faa7307ccb8ea608272ba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf32669d9df431ba49db556212f1acea3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#ga3d0c2962b4afea3fff6d34d2b9995ff0">NT_Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__rpc__cfunc.html#gaf32669d9df431ba49db556212f1acea3">NT_UnpackRpcDefinition</a> (const char *packed, size_t packed_len, struct <a class="el" href="structNT__RpcDefinition.html">NT_RpcDefinition</a> *def)</td></tr>
+<tr class="memitem:gaf32669d9df431ba49db556212f1acea3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#ga3d0c2962b4afea3fff6d34d2b9995ff0">NT_Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__rpc__cfunc.html#gaf32669d9df431ba49db556212f1acea3">NT_UnpackRpcDefinition</a> (const char *packed, size_t packed_len, struct <a class="el" href="struct_n_t___rpc_definition.html">NT_RpcDefinition</a> *def)</td></tr>
 <tr class="memdesc:gaf32669d9df431ba49db556212f1acea3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unpack a RPC version 1 definition.  <a href="group__ntcore__rpc__cfunc.html#gaf32669d9df431ba49db556212f1acea3">More...</a><br /></td></tr>
 <tr class="separator:gaf32669d9df431ba49db556212f1acea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf8c6d78b5a2d745aafe348e0a7ab6a98"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__rpc__cfunc.html#gaf8c6d78b5a2d745aafe348e0a7ab6a98">NT_PackRpcValues</a> (const struct <a class="el" href="structNT__Value.html">NT_Value</a> **values, size_t values_len, size_t *packed_len)</td></tr>
+<tr class="memitem:gaf8c6d78b5a2d745aafe348e0a7ab6a98"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__rpc__cfunc.html#gaf8c6d78b5a2d745aafe348e0a7ab6a98">NT_PackRpcValues</a> (const struct <a class="el" href="struct_n_t___value.html">NT_Value</a> **values, size_t values_len, size_t *packed_len)</td></tr>
 <tr class="memdesc:gaf8c6d78b5a2d745aafe348e0a7ab6a98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pack RPC values as required for RPC version 1 definition messages.  <a href="group__ntcore__rpc__cfunc.html#gaf8c6d78b5a2d745aafe348e0a7ab6a98">More...</a><br /></td></tr>
 <tr class="separator:gaf8c6d78b5a2d745aafe348e0a7ab6a98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5f1bf3f90885ffaac1bb08f828f10f36"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structNT__Value.html">NT_Value</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__rpc__cfunc.html#ga5f1bf3f90885ffaac1bb08f828f10f36">NT_UnpackRpcValues</a> (const char *packed, size_t packed_len, const enum <a class="el" href="group__ntcore__c__api.html#ga85e32a7c652ecd10ca642d78ec21e46a">NT_Type</a> *types, size_t types_len)</td></tr>
+<tr class="memitem:ga5f1bf3f90885ffaac1bb08f828f10f36"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_n_t___value.html">NT_Value</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__rpc__cfunc.html#ga5f1bf3f90885ffaac1bb08f828f10f36">NT_UnpackRpcValues</a> (const char *packed, size_t packed_len, const enum <a class="el" href="group__ntcore__c__api.html#ga85e32a7c652ecd10ca642d78ec21e46a">NT_Type</a> *types, size_t types_len)</td></tr>
 <tr class="memdesc:ga5f1bf3f90885ffaac1bb08f828f10f36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unpack RPC values as required for RPC version 1 definition messages.  <a href="group__ntcore__rpc__cfunc.html#ga5f1bf3f90885ffaac1bb08f828f10f36">More...</a><br /></td></tr>
 <tr class="separator:ga5f1bf3f90885ffaac1bb08f828f10f36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -167,7 +167,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* NT_RpcCallback) (void *<a class="el" href="structdata.html">data</a>, const struct <a class="el" href="structNT__RpcAnswer.html">NT_RpcAnswer</a> *call)</td>
+          <td class="memname">typedef void(* NT_RpcCallback) (void *<a class="el" href="structdata.html">data</a>, const struct <a class="el" href="struct_n_t___rpc_answer.html">NT_RpcAnswer</a> *call)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -580,7 +580,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">char * NT_PackRpcDefinition </td>
           <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structNT__RpcDefinition.html">NT_RpcDefinition</a> *&#160;</td>
+          <td class="paramtype">const struct <a class="el" href="struct_n_t___rpc_definition.html">NT_RpcDefinition</a> *&#160;</td>
           <td class="paramname"><em>def</em>, </td>
         </tr>
         <tr>
@@ -618,7 +618,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">char * NT_PackRpcValues </td>
           <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structNT__Value.html">NT_Value</a> **&#160;</td>
+          <td class="paramtype">const struct <a class="el" href="struct_n_t___value.html">NT_Value</a> **&#160;</td>
           <td class="paramname"><em>values</em>, </td>
         </tr>
         <tr>
@@ -661,7 +661,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="structNT__RpcAnswer.html">NT_RpcAnswer</a> * NT_PollRpc </td>
+          <td class="memname">struct <a class="el" href="struct_n_t___rpc_answer.html">NT_RpcAnswer</a> * NT_PollRpc </td>
           <td>(</td>
           <td class="paramtype">NT_RpcCallPoller&#160;</td>
           <td class="paramname"><em>poller</em>, </td>
@@ -700,7 +700,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="structNT__RpcAnswer.html">NT_RpcAnswer</a> * NT_PollRpcTimeout </td>
+          <td class="memname">struct <a class="el" href="struct_n_t___rpc_answer.html">NT_RpcAnswer</a> * NT_PollRpcTimeout </td>
           <td>(</td>
           <td class="paramtype">NT_RpcCallPoller&#160;</td>
           <td class="paramname"><em>poller</em>, </td>
@@ -785,11 +785,11 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Post RPC response (return value) for a polled RPC. </p>
-<p >The rpc and call parameters should come from the <a class="el" href="structNT__RpcAnswer.html" title="NetworkTables RPC Call Data.">NT_RpcAnswer</a> returned by <a class="el" href="group__ntcore__rpc__cfunc.html#gaf81a6ed942f7075539e0ca68160334b3" title="Get the next incoming RPC call.">NT_PollRpc()</a>.</p>
+<p >The rpc and call parameters should come from the <a class="el" href="struct_n_t___rpc_answer.html" title="NetworkTables RPC Call Data.">NT_RpcAnswer</a> returned by <a class="el" href="group__ntcore__rpc__cfunc.html#gaf81a6ed942f7075539e0ca68160334b3" title="Get the next incoming RPC call.">NT_PollRpc()</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">entry</td><td>entry handle of RPC entry (from <a class="el" href="structNT__RpcAnswer.html" title="NetworkTables RPC Call Data.">NT_RpcAnswer</a>) </td></tr>
-    <tr><td class="paramname">call</td><td>RPC call handle (from <a class="el" href="structNT__RpcAnswer.html" title="NetworkTables RPC Call Data.">NT_RpcAnswer</a>) </td></tr>
+    <tr><td class="paramname">entry</td><td>entry handle of RPC entry (from <a class="el" href="struct_n_t___rpc_answer.html" title="NetworkTables RPC Call Data.">NT_RpcAnswer</a>) </td></tr>
+    <tr><td class="paramname">call</td><td>RPC call handle (from <a class="el" href="struct_n_t___rpc_answer.html" title="NetworkTables RPC Call Data.">NT_RpcAnswer</a>) </td></tr>
     <tr><td class="paramname">result</td><td>result raw data that will be provided to remote caller </td></tr>
     <tr><td class="paramname">result_len</td><td>length of result in bytes </td></tr>
   </table>
@@ -820,7 +820,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structNT__RpcDefinition.html">NT_RpcDefinition</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="struct_n_t___rpc_definition.html">NT_RpcDefinition</a> *&#160;</td>
           <td class="paramname"><em>def</em>&#160;</td>
         </tr>
         <tr>
@@ -852,7 +852,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="structNT__Value.html">NT_Value</a> ** NT_UnpackRpcValues </td>
+          <td class="memname">struct <a class="el" href="struct_n_t___value.html">NT_Value</a> ** NT_UnpackRpcValues </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>packed</em>, </td>
@@ -893,7 +893,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Array of <a class="el" href="structNT__Value.html" title="NetworkTables Entry Value.">NT_Value</a>'s. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Array of <a class="el" href="struct_n_t___value.html" title="NetworkTables Entry Value.">NT_Value</a>'s. </dd></dl>
 
 </div>
 </div>
@@ -941,7 +941,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Oct 15 2021 01:13:00 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Oct 15 2021 07:41:05 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

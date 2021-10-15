@@ -1,21 +1,21 @@
 var namespacehal =
 [
     [ "impl", null, [
-      [ "SimCallbackRegistryBase", "classhal_1_1impl_1_1SimCallbackRegistryBase.html", null ],
-      [ "SimDataValueBase", "classhal_1_1impl_1_1SimDataValueBase.html", null ]
+      [ "SimCallbackRegistryBase", "classhal_1_1impl_1_1_sim_callback_registry_base.html", null ],
+      [ "SimDataValueBase", "classhal_1_1impl_1_1_sim_data_value_base.html", null ]
     ] ],
-    [ "DigitalHandleResource", "classhal_1_1DigitalHandleResource.html", null ],
-    [ "DIOSetProxy", "structhal_1_1DIOSetProxy.html", null ],
+    [ "DigitalHandleResource", "classhal_1_1_digital_handle_resource.html", null ],
+    [ "DIOSetProxy", "structhal_1_1_d_i_o_set_proxy.html", null ],
     [ "fpga_clock", "classhal_1_1fpga__clock.html", null ],
-    [ "HandleBase", "classhal_1_1HandleBase.html", null ],
-    [ "IndexedClassedHandleResource", "classhal_1_1IndexedClassedHandleResource.html", null ],
-    [ "IndexedHandleResource", "classhal_1_1IndexedHandleResource.html", null ],
-    [ "LimitedClassedHandleResource", "classhal_1_1LimitedClassedHandleResource.html", null ],
-    [ "LimitedHandleResource", "classhal_1_1LimitedHandleResource.html", null ],
-    [ "SerialHelper", "classhal_1_1SerialHelper.html", "classhal_1_1SerialHelper" ],
-    [ "SimCallbackRegistry", "classhal_1_1SimCallbackRegistry.html", null ],
-    [ "SimDataValue", "classhal_1_1SimDataValue.html", null ],
-    [ "UnlimitedHandleResource", "classhal_1_1UnlimitedHandleResource.html", null ],
+    [ "HandleBase", "classhal_1_1_handle_base.html", null ],
+    [ "IndexedClassedHandleResource", "classhal_1_1_indexed_classed_handle_resource.html", null ],
+    [ "IndexedHandleResource", "classhal_1_1_indexed_handle_resource.html", null ],
+    [ "LimitedClassedHandleResource", "classhal_1_1_limited_classed_handle_resource.html", null ],
+    [ "LimitedHandleResource", "classhal_1_1_limited_handle_resource.html", null ],
+    [ "SerialHelper", "classhal_1_1_serial_helper.html", "classhal_1_1_serial_helper" ],
+    [ "SimCallbackRegistry", "classhal_1_1_sim_callback_registry.html", null ],
+    [ "SimDataValue", "classhal_1_1_sim_data_value.html", null ],
+    [ "UnlimitedHandleResource", "classhal_1_1_unlimited_handle_resource.html", null ],
     [ "HAL_HandleEnum", "namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9", [
       [ "Undefined", "namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9aec0fc0100c4fc1ce4eea230c3dc10360", null ],
       [ "DIO", "namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9a920d269f8e1a33f6426ba979ccdfb289", null ],

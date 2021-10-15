@@ -1,14 +1,5 @@
 var NAVTREEINDEX50 =
 {
-"group__hal__extensions.html#ga6ce4155f2dd5888c57dafecb43ad299a":[3,0,32,3],
-"group__hal__extensions.html#ga6da0c5ba6c9d8e33b632a6e70126f819":[3,0,32,1],
-"group__hal__extensions.html#gaddbe76c774e63f8df76a20e1878957d3":[3,0,32,2],
-"group__hal__i2c.html":[3,0,22],
-"group__hal__i2c.html#ga59ae1919da9b0b9038bba926dde92ea2":[3,0,22,1],
-"group__hal__i2c.html#ga66cbc3cf5998ddf89f4ce87af4c7f693":[3,0,22,2],
-"group__hal__i2c.html#gab07e50c33a94b181892f12c1dd028a92":[3,0,22,0],
-"group__hal__i2c.html#gad4d63e38400272b82a60062289f5db6a":[3,0,22,4],
-"group__hal__i2c.html#gaf2ff125465e59df8a1e139e82426e8eb":[3,0,22,3],
 "group__hal__interrupts.html":[3,0,13],
 "group__hal__interrupts.html#ga35f98945b469afacbfcec081b98a1a1a":[3,0,13,2],
 "group__hal__interrupts.html#ga42d553aed65587375963d441cb48d6e0":[3,0,13,5],
@@ -249,5 +240,14 @@ var NAVTREEINDEX50 =
 "group__ntcore__entrylistener__cfunc.html#gacc828ac553654287bcc856135f79fdcd":[3,2,2,0],
 "group__ntcore__entrylistener__cfunc.html#gae68cb63307c20fff54246ca54354affa":[3,2,2,1],
 "group__ntcore__entrylistener__cfunc.html#gae6c121996834835d616dca95dd1f4a7c":[3,2,2,6],
-"group__ntcore__entrylistener__func.html":[3,1,2]
+"group__ntcore__entrylistener__func.html":[3,1,2],
+"group__ntcore__entrylistener__func.html#ga1a6be4e3e2330ea4c1107b62d9b9af53":[3,1,2,1],
+"group__ntcore__entrylistener__func.html#ga287d4e9d1343d3e01282453232235967":[3,1,2,9],
+"group__ntcore__entrylistener__func.html#ga28cc419f2ba20e0efd0b911ba28e4d15":[3,1,2,7],
+"group__ntcore__entrylistener__func.html#ga2c45289a438275d2e556b20c09b5ebee":[3,1,2,5],
+"group__ntcore__entrylistener__func.html#ga5c0fbbdc39ba24c58ab8fb5cdc573f5a":[3,1,2,4],
+"group__ntcore__entrylistener__func.html#ga694f8f8b8b137b51286db56ac9be9720":[3,1,2,2],
+"group__ntcore__entrylistener__func.html#ga8778e05d0047e7aae6cbb59680fa1742":[3,1,2,0],
+"group__ntcore__entrylistener__func.html#ga9099d76a06adaf12f90969551520183f":[3,1,2,10],
+"group__ntcore__entrylistener__func.html#ga92fc7fa2cf9b8d88accf4fc23846af98":[3,1,2,3]
 };

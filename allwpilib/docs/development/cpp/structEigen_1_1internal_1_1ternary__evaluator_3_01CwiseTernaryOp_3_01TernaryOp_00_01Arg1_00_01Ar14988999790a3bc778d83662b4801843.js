@@ -1,4 +1,0 @@
-var structEigen_1_1internal_1_1ternary__evaluator_3_01CwiseTernaryOp_3_01TernaryOp_00_01Arg1_00_01Ar14988999790a3bc778d83662b4801843 =
-[
-    [ "Data", "structEigen_1_1internal_1_1ternary__evaluator_3_01CwiseTernaryOp_3_01TernaryOp_00_01Arg1_00_01Ar73e58b3ae6ff2af53f905ead0bd1be4a.html", null ]
-];

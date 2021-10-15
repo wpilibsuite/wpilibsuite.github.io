@@ -1,11 +1,11 @@
 var group__hal__driverstation =
 [
-    [ "HAL_ControlWord", "structHAL__ControlWord.html", null ],
-    [ "HAL_JoystickAxes", "structHAL__JoystickAxes.html", null ],
-    [ "HAL_JoystickPOVs", "structHAL__JoystickPOVs.html", null ],
-    [ "HAL_JoystickButtons", "structHAL__JoystickButtons.html", null ],
-    [ "HAL_JoystickDescriptor", "structHAL__JoystickDescriptor.html", null ],
-    [ "HAL_MatchInfo", "structHAL__MatchInfo.html", null ],
+    [ "HAL_ControlWord", "struct_h_a_l___control_word.html", null ],
+    [ "HAL_JoystickAxes", "struct_h_a_l___joystick_axes.html", null ],
+    [ "HAL_JoystickPOVs", "struct_h_a_l___joystick_p_o_vs.html", null ],
+    [ "HAL_JoystickButtons", "struct_h_a_l___joystick_buttons.html", null ],
+    [ "HAL_JoystickDescriptor", "struct_h_a_l___joystick_descriptor.html", null ],
+    [ "HAL_MatchInfo", "struct_h_a_l___match_info.html", null ],
     [ "HAL_FreeJoystickName", "group__hal__driverstation.html#ga90161d733fb0dc23b514c438ebc57706", null ],
     [ "HAL_GetAllianceStation", "group__hal__driverstation.html#ga10e5c8ea5a1b890126167e9d352e9e0a", null ],
     [ "HAL_GetControlWord", "group__hal__driverstation.html#ga4eea37e55b0d07dd9e2490004bab5ed4", null ],

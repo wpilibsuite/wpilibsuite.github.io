@@ -1,7 +1,0 @@
-var classEigen_1_1Map_3_01Transpositions_3_01SizeAtCompileTime_00_01MaxSizeAtCompileTime_00_01__Stor791ee41d5b47f4ee71609b600f85e4ea =
-[
-    [ "indices", "classEigen_1_1Map_3_01Transpositions_3_01SizeAtCompileTime_00_01MaxSizeAtCompileTime_00_01__Stor791ee41d5b47f4ee71609b600f85e4ea.html#a71dfa454894a1c10c136491492c286e2", null ],
-    [ "indices", "classEigen_1_1Map_3_01Transpositions_3_01SizeAtCompileTime_00_01MaxSizeAtCompileTime_00_01__Stor791ee41d5b47f4ee71609b600f85e4ea.html#ab64cf576c2c232f222f71d5c4b120343", null ],
-    [ "operator=", "classEigen_1_1Map_3_01Transpositions_3_01SizeAtCompileTime_00_01MaxSizeAtCompileTime_00_01__Stor791ee41d5b47f4ee71609b600f85e4ea.html#a3613bafeda37e7d402adc7a381a9dcc0", null ],
-    [ "operator=", "classEigen_1_1Map_3_01Transpositions_3_01SizeAtCompileTime_00_01MaxSizeAtCompileTime_00_01__Stor791ee41d5b47f4ee71609b600f85e4ea.html#aca5d74ea7ff4f4b99cc3867d76de03dc", null ]
-];

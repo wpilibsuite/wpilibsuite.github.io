@@ -1,14 +1,14 @@
 var searchData=
 [
   ['capacitance_5funit_0',['capacitance_unit',['../namespaceunits_1_1category.html#aefb7c3b9cef2446d8ed0dec7c1c5946d',1,'units::category']]],
-  ['centi_1',['centi',['../group__UnitManipulators.html#gae6350c0e152ef3ab427bb8465e151bcd',1,'units']]],
+  ['centi_1',['centi',['../group___unit_manipulators.html#gae6350c0e152ef3ab427bb8465e151bcd',1,'units']]],
   ['char_5ftype_2',['char_type',['../classbasic__format__context.html#a71fea7d34edb618df612644dfd02a896',1,'basic_format_context']]],
   ['charge_5funit_3',['charge_unit',['../namespaceunits_1_1category.html#a7b714d031ee06290551c9c85824f2794',1,'units::category']]],
-  ['coeffvectortype_4',['CoeffVectorType',['../classEigen_1_1HessenbergDecomposition.html#a567f99f3770365777b67bf9832b6fac1',1,'Eigen::HessenbergDecomposition']]],
-  ['complexmatrixtype_5',['ComplexMatrixType',['../classEigen_1_1ComplexSchur.html#af61fe57877d51cfb50178f78534042f0',1,'Eigen::ComplexSchur']]],
-  ['complexscalar_6',['ComplexScalar',['../classEigen_1_1ComplexEigenSolver.html#a3604c99a69fac3bee42c88cb2b589143',1,'Eigen::ComplexEigenSolver::ComplexScalar()'],['../classEigen_1_1EigenSolver.html#a4d0b2a773357d0a6ec98e026f04002ed',1,'Eigen::EigenSolver::ComplexScalar()'],['../classEigen_1_1GeneralizedEigenSolver.html#abdec07af91db1345bb4c74066e3d0ea7',1,'Eigen::GeneralizedEigenSolver::ComplexScalar()'],['../classEigen_1_1ComplexSchur.html#ae1a4713b53f821867fbad617e426832a',1,'Eigen::ComplexSchur::ComplexScalar()']]],
-  ['complexvectortype_7',['ComplexVectorType',['../classEigen_1_1GeneralizedEigenSolver.html#acfd144329aca76882069da2fc5d53ef5',1,'Eigen::GeneralizedEigenSolver']]],
-  ['compound_5funit_8',['compound_unit',['../group__UnitTypes.html#ga36d8b8cf508bd5ac7854d15f6eaf2d7c',1,'units']]],
+  ['coeffvectortype_4',['CoeffVectorType',['../class_eigen_1_1_hessenberg_decomposition.html#a567f99f3770365777b67bf9832b6fac1',1,'Eigen::HessenbergDecomposition']]],
+  ['complexmatrixtype_5',['ComplexMatrixType',['../class_eigen_1_1_complex_schur.html#af61fe57877d51cfb50178f78534042f0',1,'Eigen::ComplexSchur']]],
+  ['complexscalar_6',['ComplexScalar',['../class_eigen_1_1_complex_eigen_solver.html#a3604c99a69fac3bee42c88cb2b589143',1,'Eigen::ComplexEigenSolver::ComplexScalar()'],['../class_eigen_1_1_eigen_solver.html#a4d0b2a773357d0a6ec98e026f04002ed',1,'Eigen::EigenSolver::ComplexScalar()'],['../class_eigen_1_1_generalized_eigen_solver.html#abdec07af91db1345bb4c74066e3d0ea7',1,'Eigen::GeneralizedEigenSolver::ComplexScalar()'],['../class_eigen_1_1_complex_schur.html#ae1a4713b53f821867fbad617e426832a',1,'Eigen::ComplexSchur::ComplexScalar()']]],
+  ['complexvectortype_7',['ComplexVectorType',['../class_eigen_1_1_generalized_eigen_solver.html#acfd144329aca76882069da2fc5d53ef5',1,'Eigen::GeneralizedEigenSolver']]],
+  ['compound_5funit_8',['compound_unit',['../group___unit_types.html#ga36d8b8cf508bd5ac7854d15f6eaf2d7c',1,'units']]],
   ['concentration_5funit_9',['concentration_unit',['../namespaceunits_1_1category.html#a4c238e66131241671b3411bf2fef3e24',1,'units::category']]],
   ['conductance_5funit_10',['conductance_unit',['../namespaceunits_1_1category.html#af0a2f6b0c5ebbf2075293ac5b88ef028',1,'units::category']]],
   ['connectionlistenercallback_11',['ConnectionListenerCallback',['../group__ntcore__connectionlistener__func.html#gaa88729f7f2563d47a4371de5e5c8badc',1,'nt']]],
@@ -18,6 +18,6 @@ var searchData=
   ['const_5freverse_5fiterator_15',['const_reverse_iterator',['../classwpi_1_1json.html#aea1cd2eb43fe15219aa95c2f807ff65a',1,'wpi::json']]],
   ['cs_5fusbcamerainfo_16',['CS_UsbCameraInfo',['../group__cscore__c__api.html#gadc1c443f3f1387d53adf6fce897454c6',1,'cscore_c.h']]],
   ['cs_5fvideomode_17',['CS_VideoMode',['../group__cscore__c__api.html#ga6757c2391f3f39186e95837a9b4a0e03',1,'cscore_c.h']]],
-  ['cubed_18',['cubed',['../group__UnitManipulators.html#ga4278ee8cb796f22534570134325a4d52',1,'units']]],
+  ['cubed_18',['cubed',['../group___unit_manipulators.html#ga4278ee8cb796f22534570134325a4d52',1,'units']]],
   ['current_5funit_19',['current_unit',['../namespaceunits_1_1category.html#a7971715c2d5773789399530a700c10b5',1,'units::category']]]
 ];

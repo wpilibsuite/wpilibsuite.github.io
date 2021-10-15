@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-14-g4647d09</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-15-g6229d8d</span>
    </div>
   </td>
  </tr>
@@ -135,7 +135,7 @@ const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>Eigen::
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p >These are the possible bits which can be OR'ed to constitute the flags of a matrix or expression. </p>
 <p >It is important to note that these flags are a purely compile-time notion. They are a compile-time property of an expression type, implemented as enum's. They are not stored in memory at runtime, and they do not incur any runtime overhead.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classEigen_1_1DenseBase.html#abe6133e07ff4a782c99abd7ee83bdfa6a7392c9b2ad41ba3c16fdc5306c04d581" title="This stores expression Flags flags which may or may not be inherited by new expressions constructed f...">MatrixBase::Flags</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_eigen_1_1_dense_base.html#abe6133e07ff4a782c99abd7ee83bdfa6a7392c9b2ad41ba3c16fdc5306c04d581" title="This stores expression Flags flags which may or may not be inherited by new expressions constructed f...">MatrixBase::Flags</a> </dd></dl>
 <h2 class="groupheader">Variable Documentation</h2>
 <a id="gac5795adacd266512a26890973503ed88" name="gac5795adacd266512a26890973503ed88"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gac5795adacd266512a26890973503ed88">&#9670;&nbsp;</a></span>AlignedBit</h2>
@@ -168,10 +168,10 @@ const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>Eigen::
 
 <p>Means that the underlying coefficients can be accessed through pointers to the sparse (un)compressed storage format, that is, the expression provides: </p>
 <div class="fragment"><div class="line"><span class="keyword">inline</span> <span class="keyword">const</span> Scalar* valuePtr() <span class="keyword">const</span>;</div>
-<div class="line"><span class="keyword">inline</span> <span class="keyword">const</span> <a class="code hl_typedef" href="namespaceEigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a>* innerIndexPtr() <span class="keyword">const</span>;</div>
-<div class="line"><span class="keyword">inline</span> <span class="keyword">const</span> <a class="code hl_typedef" href="namespaceEigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a>* outerIndexPtr() <span class="keyword">const</span>;</div>
-<div class="line"><span class="keyword">inline</span> <span class="keyword">const</span> <a class="code hl_typedef" href="namespaceEigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a>* innerNonZeroPtr() <span class="keyword">const</span>;</div>
-<div class="ttc" id="anamespaceEigen_html_a62e77e0933482dafde8fe197d9a2cfde"><div class="ttname"><a href="namespaceEigen.html#a62e77e0933482dafde8fe197d9a2cfde">Eigen::Index</a></div><div class="ttdeci">EIGEN_DEFAULT_DENSE_INDEX_TYPE Index</div><div class="ttdoc">The Index type as used for the API.</div><div class="ttdef"><b>Definition:</b> Meta.h:74</div></div>
+<div class="line"><span class="keyword">inline</span> <span class="keyword">const</span> <a class="code hl_typedef" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a>* innerIndexPtr() <span class="keyword">const</span>;</div>
+<div class="line"><span class="keyword">inline</span> <span class="keyword">const</span> <a class="code hl_typedef" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a>* outerIndexPtr() <span class="keyword">const</span>;</div>
+<div class="line"><span class="keyword">inline</span> <span class="keyword">const</span> <a class="code hl_typedef" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a>* innerNonZeroPtr() <span class="keyword">const</span>;</div>
+<div class="ttc" id="anamespace_eigen_html_a62e77e0933482dafde8fe197d9a2cfde"><div class="ttname"><a href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Eigen::Index</a></div><div class="ttdeci">EIGEN_DEFAULT_DENSE_INDEX_TYPE Index</div><div class="ttdoc">The Index type as used for the API.</div><div class="ttdef"><b>Definition:</b> Meta.h:74</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -188,7 +188,7 @@ const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>Eigen::
 </div><div class="memdoc">
 
 <p>Means that the underlying array of coefficients can be directly accessed as a plain strided array. </p>
-<p >The memory layout of the array of coefficients must be exactly the natural one suggested by rows(), cols(), outerStride(), innerStride(), and the RowMajorBit. This rules out expressions such as <a class="el" href="classEigen_1_1Diagonal.html" title="Expression of a diagonal/subdiagonal/superdiagonal in a matrix.">Diagonal</a>, whose coefficients, though referencable, do not have such a regular memory layout.</p>
+<p >The memory layout of the array of coefficients must be exactly the natural one suggested by rows(), cols(), outerStride(), innerStride(), and the RowMajorBit. This rules out expressions such as <a class="el" href="class_eigen_1_1_diagonal.html" title="Expression of a diagonal/subdiagonal/superdiagonal in a matrix.">Diagonal</a>, whose coefficients, though referencable, do not have such a regular memory layout.</p>
 <p >See the comment on LvalueBit for an explanation of how LvalueBit and DirectAccessBit are mutually orthogonal. </p>
 
 </div>
@@ -223,7 +223,7 @@ const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>Eigen::
 <p>Short version: means the expression can be seen as 1D vector. </p>
 <p >Long version: means that one can access the coefficients of this expression by coeff(int), and coeffRef(int) in the case of a lvalue expression. These index-based access methods are guaranteed to not have to do any runtime computation of a (row, col)-pair from the index, so that it is guaranteed that whenever it is available, index-based access is at least as fast as (row,col)-based access. Expressions for which that isn't possible don't have the LinearAccessBit.</p>
 <p >If both PacketAccessBit and LinearAccessBit are set, then the packets of this expression can be accessed by packet(int), and writePacket(int) in the case of a lvalue expression.</p>
-<p >Typically, all vector expressions have the LinearAccessBit, but there is one exception: <a class="el" href="classEigen_1_1Product.html" title="Expression of the product of two arbitrary matrices or vectors.">Product</a> expressions don't have it, because it would be troublesome for vectorization, even when the <a class="el" href="classEigen_1_1Product.html" title="Expression of the product of two arbitrary matrices or vectors.">Product</a> is a vector expression. Thus, vector <a class="el" href="classEigen_1_1Product.html" title="Expression of the product of two arbitrary matrices or vectors.">Product</a> expressions allow index-based coefficient access but not index-based packet access, so they don't have the LinearAccessBit. </p>
+<p >Typically, all vector expressions have the LinearAccessBit, but there is one exception: <a class="el" href="class_eigen_1_1_product.html" title="Expression of the product of two arbitrary matrices or vectors.">Product</a> expressions don't have it, because it would be troublesome for vectorization, even when the <a class="el" href="class_eigen_1_1_product.html" title="Expression of the product of two arbitrary matrices or vectors.">Product</a> is a vector expression. Thus, vector <a class="el" href="class_eigen_1_1_product.html" title="Expression of the product of two arbitrary matrices or vectors.">Product</a> expressions allow index-based coefficient access but not index-based packet access, so they don't have the LinearAccessBit. </p>
 
 </div>
 </div>
@@ -306,7 +306,7 @@ const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>Eigen::
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Oct 15 2021 01:13:01 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Oct 15 2021 07:41:05 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -1,7 +1,7 @@
 var searchData=
 [
   ['computationinfo_0',['ComputationInfo',['../group__enums.html#ga85fad7b87587764e5cf6b513a9e0ee5e',1,'Eigen']]],
-  ['connectionstrategy_1',['ConnectionStrategy',['../classcs_1_1VideoSource.html#aabe77bb50ae58dda47bd32b83237b8b3',1,'cs::VideoSource']]],
+  ['connectionstrategy_1',['ConnectionStrategy',['../classcs_1_1_video_source.html#aabe77bb50ae58dda47bd32b83237b8b3',1,'cs::VideoSource']]],
   ['cs_5fconnectionstrategy_2',['CS_ConnectionStrategy',['../group__cscore__c__api.html#ga4a0bad578a21faca1701631a0d491875',1,'cscore_c.h']]],
   ['cs_5feventkind_3',['CS_EventKind',['../group__cscore__c__api.html#ga21079bb71b0c5fdd9c190902e81475c3',1,'cscore_c.h']]],
   ['cs_5fhttpcamerakind_4',['CS_HttpCameraKind',['../group__cscore__c__api.html#ga61ab6e0263fe88aa1da0e21fc25a5a4a',1,'cscore_c.h']]],

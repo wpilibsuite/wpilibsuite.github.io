@@ -4,7 +4,7 @@ var searchData=
   ['can_20api_20functions_1',['CAN API Functions',['../group__hal__canapi.html',1,'']]],
   ['can_20stream_20functions_2',['CAN Stream Functions',['../group__hal__canstream.html',1,'']]],
   ['client_2fserver_20functions_3',['Client/Server Functions',['../group__ntcore__network__cfunc.html',1,'(Global Namespace)'],['../group__ntcore__network__func.html',1,'(Global Namespace)']]],
-  ['compile_2dtime_20unit_20manipulators_4',['Compile-time Unit Manipulators',['../group__CompileTimeUnitManipulators.html',1,'']]],
+  ['compile_2dtime_20unit_20manipulators_4',['Compile-time Unit Manipulators',['../group___compile_time_unit_manipulators.html',1,'']]],
   ['connection_20listener_20functions_5',['Connection Listener Functions',['../group__ntcore__connectionlistener__cfunc.html',1,'(Global Namespace)'],['../group__ntcore__connectionlistener__func.html',1,'(Global Namespace)']]],
   ['constants_20functions_6',['Constants Functions',['../group__hal__constants.html',1,'']]],
   ['counter_20functions_7',['Counter Functions',['../group__hal__counter.html',1,'']]],

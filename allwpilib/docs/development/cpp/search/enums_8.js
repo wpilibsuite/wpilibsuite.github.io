@@ -1,7 +1,7 @@
 var searchData=
 [
   ['nanpropagationoptions_0',['NaNPropagationOptions',['../group__enums.html#ga7f4e3f96895bdb325eab1a0b651e211f',1,'Eigen']]],
-  ['networkmode_1',['NetworkMode',['../classnt_1_1NetworkTableInstance.html#a13cc5d54545b54712b5470065f953c52',1,'nt::NetworkTableInstance']]],
+  ['networkmode_1',['NetworkMode',['../classnt_1_1_network_table_instance.html#a13cc5d54545b54712b5470065f953c52',1,'nt::NetworkTableInstance']]],
   ['networktabletype_2',['NetworkTableType',['../group__ntcore__cpp__api.html#ga6389efeaed0733f40baa02cd3070a15c',1,'nt']]],
   ['nt_5fentryflags_3',['NT_EntryFlags',['../group__ntcore__c__api.html#ga3cca2867677bf312d4d8df4aa48a09d7',1,'ntcore_c.h']]],
   ['nt_5floglevel_4',['NT_LogLevel',['../group__ntcore__c__api.html#ga5a37c1408d3bd3090edcfd497c00acbe',1,'ntcore_c.h']]],

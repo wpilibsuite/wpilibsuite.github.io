@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['nano_0',['nano',['../group__UnitManipulators.html#gae66a8996b06be0e044209702a4ff9aac',1,'units']]],
+  ['nano_0',['nano',['../group___unit_manipulators.html#gae66a8996b06be0e044209702a4ff9aac',1,'units']]],
   ['networktablevalue_1',['NetworkTableValue',['../group__ntcore__cpp__api.html#ga2bdfee8c11f9a4cfb1951cc824428725',1,'nt']]],
   ['non_5flinear_5fscale_5ftype_2',['non_linear_scale_type',['../classunits_1_1unit__t.html#adb3e922bd9478c385843ee44a7607e14',1,'units::unit_t']]],
   ['nt_5fbool_3',['NT_Bool',['../group__ntcore__c__api.html#ga3d0c2962b4afea3fff6d34d2b9995ff0',1,'ntcore_c.h']]],

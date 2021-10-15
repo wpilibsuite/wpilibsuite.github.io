@@ -1,8 +1,0 @@
-var classEigen_1_1Map_3_01PermutationMatrix_3_01SizeAtCompileTime_00_01MaxSizeAtCompileTime_00_01__S612b1e75ea633e086cdce74f2566f005 =
-[
-    [ "indices", "classEigen_1_1Map_3_01PermutationMatrix_3_01SizeAtCompileTime_00_01MaxSizeAtCompileTime_00_01__S612b1e75ea633e086cdce74f2566f005.html#a4c0e4267a5b90bc28e43599edca7d403", null ],
-    [ "indices", "classEigen_1_1Map_3_01PermutationMatrix_3_01SizeAtCompileTime_00_01MaxSizeAtCompileTime_00_01__S612b1e75ea633e086cdce74f2566f005.html#af194db74eb44c00fe67029f52ce05c67", null ],
-    [ "operator=", "classEigen_1_1Map_3_01PermutationMatrix_3_01SizeAtCompileTime_00_01MaxSizeAtCompileTime_00_01__S612b1e75ea633e086cdce74f2566f005.html#a022b666816fbb688c7154e0d27528cce", null ],
-    [ "operator=", "classEigen_1_1Map_3_01PermutationMatrix_3_01SizeAtCompileTime_00_01MaxSizeAtCompileTime_00_01__S612b1e75ea633e086cdce74f2566f005.html#abef42a5c672f19fc778b189cb90b078c", null ],
-    [ "operator=", "classEigen_1_1Map_3_01PermutationMatrix_3_01SizeAtCompileTime_00_01MaxSizeAtCompileTime_00_01__S612b1e75ea633e086cdce74f2566f005.html#a0b46324c6ab7996ce53ba2bec53c5b42", null ]
-];
