@@ -1984,6 +1984,8 @@ var annotated_dup =
       [ "SmartDashboard", "classfrc_1_1_smart_dashboard.html", "classfrc_1_1_smart_dashboard" ],
       [ "Solenoid", "classfrc_1_1_solenoid.html", "classfrc_1_1_solenoid" ],
       [ "Spark", "classfrc_1_1_spark.html", "classfrc_1_1_spark" ],
+      [ "SpeedController", "classfrc_1_1_speed_controller.html", "classfrc_1_1_speed_controller" ],
+      [ "SpeedControllerGroup", "classfrc_1_1_speed_controller_group.html", "classfrc_1_1_speed_controller_group" ],
       [ "SPI", "classfrc_1_1_s_p_i.html", "classfrc_1_1_s_p_i" ],
       [ "Spline", "classfrc_1_1_spline.html", "classfrc_1_1_spline" ],
       [ "SplineHelper", "classfrc_1_1_spline_helper.html", "classfrc_1_1_spline_helper" ],

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-16-g0e631ad</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-17-g9e6db17</span>
    </div>
   </td>
  </tr>
@@ -157,7 +157,7 @@ $(document).ready(function(){initNavTree('deprecated.html',''); initResizable();
 <dd><a class="anchor" id="_deprecated000049"></a>Use <a class="el" href="classfrc_1_1_driver_station.html#a8ccd52aeecfeedfa4c5b3152c722c73e" title="Check if the DS is commanding teleop mode.">IsTeleop()</a> instead.  </dd>
 <dt>Member <a class="el" href="classfrc_1_1_driver_station.html#ab53352b4cc74bca7936b48a824d56a71">frc::DriverStation::IsOperatorControlEnabled</a>  ()</dt>
 <dd><a class="anchor" id="_deprecated000050"></a>Use <a class="el" href="classfrc_1_1_driver_station.html#a4569055a17be6d13e353e22a6e72bf22" title="Check if the DS is commanding teleop mode and if it has enabled the robot.">IsTeleopEnabled()</a> instead.  </dd>
-<dt>Member <a class="el" href="classfrc_1_1_encoder.html#afc108813c67e3bffae125679d5583e6e">frc::Encoder::GetStopped</a>  () const override</dt>
+<dt>Member <a class="el" href="classfrc_1_1_encoder.html#ab2314f41314a2961ed2034f3dab63bab">frc::Encoder::SetMaxPeriod</a>  (units::second_t maxPeriod) override</dt>
 <dd><a class="anchor" id="_deprecated000047"></a>Use <a class="el" href="classfrc_1_1_encoder.html#a7e5580dcbcffc3a0b3482cf9956347a9" title="Set the minimum rate of the device before the hardware reports it stopped.">SetMinRate()</a> in favor of this method. This takes unscaled periods and <a class="el" href="classfrc_1_1_encoder.html#a7e5580dcbcffc3a0b3482cf9956347a9" title="Set the minimum rate of the device before the hardware reports it stopped.">SetMinRate()</a> scales using value from <a class="el" href="classfrc_1_1_encoder.html#ac50921f87e0e3cc4785a4b1e157da433" title="Set the distance per pulse for this encoder.">SetDistancePerPulse()</a>. </dd>
 <dt>Member <a class="el" href="classfrc_1_1_iterative_robot_base.html#adaad67b57154bd85fef26a742d9c66b2">frc::IterativeRobotBase::IterativeRobotBase</a>  (double period)</dt>
 <dd><a class="anchor" id="_deprecated000040"></a>Use <a class="el" href="classfrc_1_1_iterative_robot_base.html#afee5b7301bc0f4579d76f840a18f2cca" title="Constructor for IterativeRobotBase.">IterativeRobotBase(units::second_t period)</a> with unit-safety instead  </dd>
@@ -218,7 +218,7 @@ $(document).ready(function(){initNavTree('deprecated.html',''); initResizable();
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Oct 18 2021 16:12:28 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Oct 19 2021 04:32:23 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

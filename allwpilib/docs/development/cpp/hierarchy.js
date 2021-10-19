@@ -2820,6 +2820,7 @@ var hierarchy =
       [ "frc::Relay", "classfrc_1_1_relay.html", null ],
       [ "frc::SendableCameraWrapper", "classfrc_1_1_sendable_camera_wrapper.html", null ],
       [ "frc::Solenoid", "classfrc_1_1_solenoid.html", null ],
+      [ "frc::SpeedControllerGroup", "classfrc_1_1_speed_controller_group.html", null ],
       [ "frc::Subsystem", "classfrc_1_1_subsystem.html", [
         [ "frc::PIDSubsystem", "classfrc_1_1_p_i_d_subsystem.html", null ]
       ] ],
@@ -2980,6 +2981,9 @@ var hierarchy =
     [ "wpi::SendableHelper< Solenoid >", "classwpi_1_1_sendable_helper.html", [
       [ "frc::Solenoid", "classfrc_1_1_solenoid.html", null ]
     ] ],
+    [ "wpi::SendableHelper< SpeedControllerGroup >", "classwpi_1_1_sendable_helper.html", [
+      [ "frc::SpeedControllerGroup", "classfrc_1_1_speed_controller_group.html", null ]
+    ] ],
     [ "wpi::SendableHelper< Subsystem >", "classwpi_1_1_sendable_helper.html", [
       [ "frc::Subsystem", "classfrc_1_1_subsystem.html", null ]
     ] ],
@@ -3124,11 +3128,12 @@ var hierarchy =
     [ "specs_setter< ParseContext::char_type >", "classspecs__setter.html", [
       [ "dynamic_specs_handler< ParseContext >", "classdynamic__specs__handler.html", null ]
     ] ],
-    [ "SpeedController", null, [
+    [ "frc::SpeedController", "classfrc_1_1_speed_controller.html", [
       [ "frc::MotorController", "classfrc_1_1_motor_controller.html", [
         [ "frc::MotorControllerGroup", "classfrc_1_1_motor_controller_group.html", null ],
         [ "frc::NidecBrushless", "classfrc_1_1_nidec_brushless.html", null ],
-        [ "frc::PWMMotorController", "classfrc_1_1_p_w_m_motor_controller.html", null ]
+        [ "frc::PWMMotorController", "classfrc_1_1_p_w_m_motor_controller.html", null ],
+        [ "frc::SpeedControllerGroup", "classfrc_1_1_speed_controller_group.html", null ]
       ] ]
     ] ],
     [ "frc::SPI", "classfrc_1_1_s_p_i.html", null ],

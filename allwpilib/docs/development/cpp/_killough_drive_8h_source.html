@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-16-g0e631ad</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-17-g9e6db17</span>
    </div>
   </td>
  </tr>
@@ -138,11 +138,11 @@ $(document).ready(function(){initNavTree('_killough_drive_8h_source.html',''); i
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keywordtype">double</span> back = 0.0;</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  };</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="classfrc_1_1_killough_drive.html#adea3cb7726b060064c5e482a7851be2e">   83</a></span>  <a class="code hl_function" href="classfrc_1_1_killough_drive.html#adea3cb7726b060064c5e482a7851be2e">KilloughDrive</a>(SpeedController&amp; leftMotor, SpeedController&amp; rightMotor,</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                SpeedController&amp; backMotor);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="classfrc_1_1_killough_drive.html#adea3cb7726b060064c5e482a7851be2e">   83</a></span>  <a class="code hl_function" href="classfrc_1_1_killough_drive.html#adea3cb7726b060064c5e482a7851be2e">KilloughDrive</a>(<a class="code hl_class" href="classfrc_1_1_speed_controller.html">SpeedController</a>&amp; leftMotor, <a class="code hl_class" href="classfrc_1_1_speed_controller.html">SpeedController</a>&amp; rightMotor,</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                <a class="code hl_class" href="classfrc_1_1_speed_controller.html">SpeedController</a>&amp; backMotor);</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="classfrc_1_1_killough_drive.html#a8d0aede16c565d25f9ab925760af9d6d">  101</a></span>  <a class="code hl_function" href="classfrc_1_1_killough_drive.html#a8d0aede16c565d25f9ab925760af9d6d">KilloughDrive</a>(SpeedController&amp; leftMotor, SpeedController&amp; rightMotor,</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                SpeedController&amp; backMotor, <span class="keywordtype">double</span> leftMotorAngle,</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="classfrc_1_1_killough_drive.html#a8d0aede16c565d25f9ab925760af9d6d">  101</a></span>  <a class="code hl_function" href="classfrc_1_1_killough_drive.html#a8d0aede16c565d25f9ab925760af9d6d">KilloughDrive</a>(<a class="code hl_class" href="classfrc_1_1_speed_controller.html">SpeedController</a>&amp; leftMotor, <a class="code hl_class" href="classfrc_1_1_speed_controller.html">SpeedController</a>&amp; rightMotor,</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                <a class="code hl_class" href="classfrc_1_1_speed_controller.html">SpeedController</a>&amp; backMotor, <span class="keywordtype">double</span> leftMotorAngle,</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>                <span class="keywordtype">double</span> rightMotorAngle, <span class="keywordtype">double</span> backMotorAngle);</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>  <a class="code hl_class" href="classfrc_1_1_killough_drive.html">~KilloughDrive</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
@@ -164,9 +164,9 @@ $(document).ready(function(){initNavTree('_killough_drive_8h_source.html',''); i
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno"><a class="line" href="classfrc_1_1_killough_drive.html#a13c88df87ebcff1449b1ec60088e0041">  164</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_killough_drive.html#a13c88df87ebcff1449b1ec60088e0041">InitSendable</a>(<a class="code hl_class" href="classwpi_1_1_sendable_builder.html">wpi::SendableBuilder</a>&amp; builder) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>  SpeedController* m_leftMotor;</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>  SpeedController* m_rightMotor;</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>  SpeedController* m_backMotor;</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>  <a class="code hl_class" href="classfrc_1_1_speed_controller.html">SpeedController</a>* m_leftMotor;</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>  <a class="code hl_class" href="classfrc_1_1_speed_controller.html">SpeedController</a>* m_rightMotor;</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>  <a class="code hl_class" href="classfrc_1_1_speed_controller.html">SpeedController</a>* m_backMotor;</div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span> </div>
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>  <a class="code hl_struct" href="structfrc_1_1_vector2d.html">Vector2d</a> m_leftVec;</div>
 <div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>  <a class="code hl_struct" href="structfrc_1_1_vector2d.html">Vector2d</a> m_rightVec;</div>
@@ -192,6 +192,7 @@ $(document).ready(function(){initNavTree('_killough_drive_8h_source.html',''); i
 <div class="ttc" id="aclassfrc_1_1_killough_drive_html_a8ee2eff3194584b379017f7ba800669a"><div class="ttname"><a href="classfrc_1_1_killough_drive.html#a8ee2eff3194584b379017f7ba800669a">frc::KilloughDrive::DriveCartesian</a></div><div class="ttdeci">void DriveCartesian(double ySpeed, double xSpeed, double zRotation, double gyroAngle=0.0)</div><div class="ttdoc">Drive method for Killough platform.</div></div>
 <div class="ttc" id="aclassfrc_1_1_killough_drive_html_adea3cb7726b060064c5e482a7851be2e"><div class="ttname"><a href="classfrc_1_1_killough_drive.html#adea3cb7726b060064c5e482a7851be2e">frc::KilloughDrive::KilloughDrive</a></div><div class="ttdeci">KilloughDrive(SpeedController &amp;leftMotor, SpeedController &amp;rightMotor, SpeedController &amp;backMotor)</div><div class="ttdoc">Construct a Killough drive with the given motors and default motor angles.</div></div>
 <div class="ttc" id="aclassfrc_1_1_robot_drive_base_html"><div class="ttname"><a href="classfrc_1_1_robot_drive_base.html">frc::RobotDriveBase</a></div><div class="ttdoc">Common base class for drive platforms.</div><div class="ttdef"><b>Definition:</b> RobotDriveBase.h:20</div></div>
+<div class="ttc" id="aclassfrc_1_1_speed_controller_html"><div class="ttname"><a href="classfrc_1_1_speed_controller.html">frc::SpeedController</a></div><div class="ttdoc">Interface for speed controlling devices.</div><div class="ttdef"><b>Definition:</b> SpeedController.h:15</div></div>
 <div class="ttc" id="aclasswpi_1_1_sendable_builder_html"><div class="ttname"><a href="classwpi_1_1_sendable_builder.html">wpi::SendableBuilder</a></div><div class="ttdef"><b>Definition:</b> SendableBuilder.h:18</div></div>
 <div class="ttc" id="aclasswpi_1_1_sendable_helper_html"><div class="ttname"><a href="classwpi_1_1_sendable_helper.html">wpi::SendableHelper</a></div><div class="ttdoc">A helper class for use with objects that add themselves to SendableRegistry.</div><div class="ttdef"><b>Definition:</b> SendableHelper.h:24</div></div>
 <div class="ttc" id="aclasswpi_1_1_sendable_html"><div class="ttname"><a href="classwpi_1_1_sendable.html">wpi::Sendable</a></div><div class="ttdoc">Interface for Sendable objects.</div><div class="ttdef"><b>Definition:</b> Sendable.h:16</div></div>
@@ -203,7 +204,7 @@ $(document).ready(function(){initNavTree('_killough_drive_8h_source.html',''); i
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_fcdce402877842ae45be332f822e2127.html">drive</a></li><li class="navelem"><b>KilloughDrive.h</b></li>
-    <li class="footer">Generated on Mon Oct 18 2021 16:12:20 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Oct 19 2021 04:32:15 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

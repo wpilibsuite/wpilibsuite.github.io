@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-16-g0e631ad</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-17-g9e6db17</span>
    </div>
   </td>
  </tr>
@@ -112,6 +112,7 @@ Inheritance diagram for frc::NidecBrushless:</div>
 <area href="classfrc_1_1_motor_safety.html" title="This base class runs a watchdog timer and calls the subclass&#39;s StopMotor() function if the timeout ex..." alt="frc::MotorSafety" shape="rect" coords="250,56,490,80"/>
 <area href="classwpi_1_1_sendable.html" title="Interface for Sendable objects." alt="wpi::Sendable" shape="rect" coords="500,56,740,80"/>
 <area href="classwpi_1_1_sendable_helper.html" alt="wpi::SendableHelper&lt; NidecBrushless &gt;" shape="rect" coords="750,56,990,80"/>
+<area href="classfrc_1_1_speed_controller.html" title="Interface for speed controlling devices." alt="frc::SpeedController" shape="rect" coords="0,0,240,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -132,11 +133,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a204be39f9fd6ac3e08477c5dcc71041a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_nidec_brushless.html#a204be39f9fd6ac3e08477c5dcc71041a">Get</a> () const override</td></tr>
 <tr class="memdesc:a204be39f9fd6ac3e08477c5dcc71041a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the recently set value of the <a class="el" href="classfrc_1_1_p_w_m.html" title="Class implements the PWM generation in the FPGA.">PWM</a>.  <a href="classfrc_1_1_nidec_brushless.html#a204be39f9fd6ac3e08477c5dcc71041a">More...</a><br /></td></tr>
 <tr class="separator:a204be39f9fd6ac3e08477c5dcc71041a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe6ecb3d622f3b410043eabae0a1efe8"><td class="memItemLeft" align="right" valign="top"><a id="afe6ecb3d622f3b410043eabae0a1efe8" name="afe6ecb3d622f3b410043eabae0a1efe8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetInverted</b> (bool isInverted) override</td></tr>
+<tr class="memitem:afe6ecb3d622f3b410043eabae0a1efe8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_nidec_brushless.html#afe6ecb3d622f3b410043eabae0a1efe8">SetInverted</a> (bool isInverted) override</td></tr>
+<tr class="memdesc:afe6ecb3d622f3b410043eabae0a1efe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Common interface for inverting direction of a speed controller.  <a href="classfrc_1_1_nidec_brushless.html#afe6ecb3d622f3b410043eabae0a1efe8">More...</a><br /></td></tr>
 <tr class="separator:afe6ecb3d622f3b410043eabae0a1efe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbfd4b9f2ed0a9556d303fd3aab18631"><td class="memItemLeft" align="right" valign="top"><a id="adbfd4b9f2ed0a9556d303fd3aab18631" name="adbfd4b9f2ed0a9556d303fd3aab18631"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetInverted</b> () const override</td></tr>
+<tr class="memitem:adbfd4b9f2ed0a9556d303fd3aab18631"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_nidec_brushless.html#adbfd4b9f2ed0a9556d303fd3aab18631">GetInverted</a> () const override</td></tr>
+<tr class="memdesc:adbfd4b9f2ed0a9556d303fd3aab18631"><td class="mdescLeft">&#160;</td><td class="mdescRight">Common interface for returning the inversion state of a speed controller.  <a href="classfrc_1_1_nidec_brushless.html#adbfd4b9f2ed0a9556d303fd3aab18631">More...</a><br /></td></tr>
 <tr class="separator:adbfd4b9f2ed0a9556d303fd3aab18631"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae396f15c6cf40a360c82a35fc99bfa93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_nidec_brushless.html#ae396f15c6cf40a360c82a35fc99bfa93">Disable</a> () override</td></tr>
 <tr class="memdesc:ae396f15c6cf40a360c82a35fc99bfa93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable the motor.  <a href="classfrc_1_1_nidec_brushless.html#ae396f15c6cf40a360c82a35fc99bfa93">More...</a><br /></td></tr>
@@ -154,6 +155,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetInverted</b> () co
 <tr class="memitem:a822e493f3c3894a0fc53e38d0274fe33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_nidec_brushless.html#a822e493f3c3894a0fc53e38d0274fe33">InitSendable</a> (<a class="el" href="classwpi_1_1_sendable_builder.html">wpi::SendableBuilder</a> &amp;builder) override</td></tr>
 <tr class="memdesc:a822e493f3c3894a0fc53e38d0274fe33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes this Sendable object.  <a href="classfrc_1_1_nidec_brushless.html#a822e493f3c3894a0fc53e38d0274fe33">More...</a><br /></td></tr>
 <tr class="separator:a822e493f3c3894a0fc53e38d0274fe33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classfrc_1_1_speed_controller"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classfrc_1_1_speed_controller')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classfrc_1_1_speed_controller.html">frc::SpeedController</a></td></tr>
+<tr class="memitem:a8252b1dbd027218c7966b15d0f9faff7 inherit pub_methods_classfrc_1_1_speed_controller"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_speed_controller.html#a8252b1dbd027218c7966b15d0f9faff7">SetVoltage</a> (units::volt_t output)</td></tr>
+<tr class="memdesc:a8252b1dbd027218c7966b15d0f9faff7 inherit pub_methods_classfrc_1_1_speed_controller"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the voltage output of the <a class="el" href="classfrc_1_1_speed_controller.html" title="Interface for speed controlling devices.">SpeedController</a>.  <a href="classfrc_1_1_speed_controller.html#a8252b1dbd027218c7966b15d0f9faff7">More...</a><br /></td></tr>
+<tr class="separator:a8252b1dbd027218c7966b15d0f9faff7 inherit pub_methods_classfrc_1_1_speed_controller"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classfrc_1_1_motor_safety"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classfrc_1_1_motor_safety')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classfrc_1_1_motor_safety.html">frc::MotorSafety</a></td></tr>
 <tr class="memitem:ac9a6ed8e2bf1f658264dd499be9efcc1 inherit pub_methods_classfrc_1_1_motor_safety"><td class="memItemLeft" align="right" valign="top"><a id="ac9a6ed8e2bf1f658264dd499be9efcc1" name="ac9a6ed8e2bf1f658264dd499be9efcc1"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>MotorSafety</b> (<a class="el" href="classfrc_1_1_motor_safety.html">MotorSafety</a> &amp;&amp;rhs)</td></tr>
@@ -290,13 +295,15 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Disable the motor. </p>
 <p >The <a class="el" href="classfrc_1_1_nidec_brushless.html#ac5f8191405126d7cd44668392929bf5a" title="Re-enable the motor after Disable() has been called.">Enable()</a> function must be called to re-enable the motor. </p>
+
+<p>Implements <a class="el" href="classfrc_1_1_speed_controller.html#a707b81e11fb0258c9ce7d969a6cdb60a">frc::SpeedController</a>.</p>
 
 </div>
 </div>
@@ -338,13 +345,15 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Get the recently set value of the <a class="el" href="classfrc_1_1_p_w_m.html" title="Class implements the PWM generation in the FPGA.">PWM</a>. </p>
 <dl class="section return"><dt>Returns</dt><dd>The most recently set value for the <a class="el" href="classfrc_1_1_p_w_m.html" title="Class implements the PWM generation in the FPGA.">PWM</a> between -1.0 and 1.0. </dd></dl>
+
+<p>Implements <a class="el" href="classfrc_1_1_speed_controller.html#a6af00a4289ba5a5e42cabd3d9a310300">frc::SpeedController</a>.</p>
 
 </div>
 </div>
@@ -392,6 +401,36 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="classfrc_1_1_motor_safety.html">frc::MotorSafety</a>.</p>
+
+</div>
+</div>
+<a id="adbfd4b9f2ed0a9556d303fd3aab18631" name="adbfd4b9f2ed0a9556d303fd3aab18631"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbfd4b9f2ed0a9556d303fd3aab18631">&#9670;&nbsp;</a></span>GetInverted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool frc::NidecBrushless::GetInverted </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Common interface for returning the inversion state of a speed controller. </p>
+<dl class="section return"><dt>Returns</dt><dd>isInverted The state of inversion, true is inverted. </dd></dl>
+
+<p>Implements <a class="el" href="classfrc_1_1_speed_controller.html#ae717573b01e70fda23468bbf4c843d05">frc::SpeedController</a>.</p>
 
 </div>
 </div>
@@ -450,7 +489,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -463,6 +502,44 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p>Implements <a class="el" href="classfrc_1_1_speed_controller.html#a3f0cefeb5a3ab00111b472bfaaf55ab7">frc::SpeedController</a>.</p>
+
+</div>
+</div>
+<a id="afe6ecb3d622f3b410043eabae0a1efe8" name="afe6ecb3d622f3b410043eabae0a1efe8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe6ecb3d622f3b410043eabae0a1efe8">&#9670;&nbsp;</a></span>SetInverted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void frc::NidecBrushless::SetInverted </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isInverted</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Common interface for inverting direction of a speed controller. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">isInverted</td><td>The state of inversion, true is inverted. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classfrc_1_1_speed_controller.html#abe6f8c159ce44424201ec2f108261223">frc::SpeedController</a>.</p>
 
 </div>
 </div>
@@ -502,7 +579,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1_nidec_brushless.html">NidecBrushless</a></li>
-    <li class="footer">Generated on Mon Oct 18 2021 16:12:33 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Oct 19 2021 04:32:28 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
