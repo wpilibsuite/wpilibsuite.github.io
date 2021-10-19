@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-17-g9e6db17</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-19-ge56d6de</span>
    </div>
   </td>
  </tr>
@@ -293,21 +293,45 @@ $(document).ready(function(){initNavTree('_stable_norm_8h_source.html',''); init
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>}</div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>} <span class="comment">// end namespace internal</span></div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="comment"></span> </div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="comment">/** \returns the \em l2 norm of \c *this avoiding underflow and overflow.</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="comment">  * This version use a blockwise two passes algorithm:</span></div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span><span class="comment">  *  1 - find the absolute largest coefficient \c s</span></div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="comment">  *  2 - compute \f$ s \Vert \frac{*this}{s} \Vert \f$ in a standard way</span></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="comment">  * For architecture/scalar types supporting vectorization, this version</span></div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span><span class="comment">  * is faster than blueNorm(). Otherwise the blueNorm() is much faster.</span></div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="comment">  * \sa norm(), blueNorm(), hypotNorm()</span></div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Derived&gt;</div>
 <div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span><span class="keyword">inline</span> <span class="keyword">typename</span> NumTraits&lt;typename internal::traits&lt;Derived&gt;::Scalar&gt;::Real</div>
 <div class="line"><a id="l00213" name="l00213"></a><span class="lineno"><a class="line" href="class_eigen_1_1_matrix_base.html#a624431d9543dacf9aef2bee325a0686f">  213</a></span><a class="code hl_function" href="class_eigen_1_1_matrix_base.html#a624431d9543dacf9aef2bee325a0686f">MatrixBase&lt;Derived&gt;::stableNorm</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>  <span class="keywordflow">return</span> internal::stable_norm_impl(derived());</div>
 <div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>}</div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> </div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span><span class="comment"></span> </div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span><span class="comment">/** \returns the \em l2 norm of \c *this using the Blue&#39;s algorithm.</span></div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span><span class="comment">  * A Portable Fortran Program to Find the Euclidean Norm of a Vector,</span></div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span><span class="comment">  * ACM TOMS, Vol 4, Issue 1, 1978.</span></div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span><span class="comment">  * For architecture/scalar types without vectorization, this version</span></div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span><span class="comment">  * is much faster than stableNorm(). Otherwise the stableNorm() is faster.</span></div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span><span class="comment">  * \sa norm(), stableNorm(), hypotNorm()</span></div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Derived&gt;</div>
 <div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span><span class="keyword">inline</span> <span class="keyword">typename</span> <a class="code hl_class" href="struct_eigen_1_1_num_traits.html">NumTraits&lt;typename internal::traits&lt;Derived&gt;::Scalar</a>&gt;::Real</div>
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno"><a class="line" href="class_eigen_1_1_matrix_base.html#a4a3ac99e4cd767a110c84421dda22ab1">  229</a></span><a class="code hl_function" href="class_eigen_1_1_matrix_base.html#a4a3ac99e4cd767a110c84421dda22ab1">MatrixBase&lt;Derived&gt;::blueNorm</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>  <span class="keywordflow">return</span> internal::blueNorm_impl(*<span class="keyword">this</span>);</div>
 <div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>}</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span> </div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span><span class="comment"></span> </div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span><span class="comment">/** \returns the \em l2 norm of \c *this avoiding undeflow and overflow.</span></div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span><span class="comment">  * This version use a concatenation of hypot() calls, and it is very slow.</span></div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span><span class="comment">  * \sa norm(), stableNorm()</span></div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Derived&gt;</div>
 <div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span><span class="keyword">inline</span> <span class="keyword">typename</span> <a class="code hl_class" href="struct_eigen_1_1_num_traits.html">NumTraits&lt;typename internal::traits&lt;Derived&gt;::Scalar</a>&gt;::Real</div>
 <div class="line"><a id="l00241" name="l00241"></a><span class="lineno"><a class="line" href="class_eigen_1_1_matrix_base.html#a54e11547512ffc3b211cc0ee6caba98c">  241</a></span><a class="code hl_function" href="class_eigen_1_1_matrix_base.html#a54e11547512ffc3b211cc0ee6caba98c">MatrixBase&lt;Derived&gt;::hypotNorm</a>()<span class="keyword"> const</span></div>
@@ -338,7 +362,7 @@ $(document).ready(function(){initNavTree('_stable_norm_8h_source.html',''); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_bfb2597c438c4234fbdcce568a9e650d.html">eigeninclude</a></li><li class="navelem"><a class="el" href="dir_81addad79085c513f45446cf62836735.html">Eigen</a></li><li class="navelem"><a class="el" href="dir_e429501dd9edb337aeb96d684aa3b6ff.html">src</a></li><li class="navelem"><a class="el" href="dir_09ad905ad0d1f25ba5be966168b2edef.html">Core</a></li><li class="navelem"><b>StableNorm.h</b></li>
-    <li class="footer">Generated on Tue Oct 19 2021 04:32:19 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Oct 19 2021 04:42:43 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

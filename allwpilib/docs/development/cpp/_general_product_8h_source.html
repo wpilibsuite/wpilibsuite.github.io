@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-17-g9e6db17</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-19-ge56d6de</span>
    </div>
   </td>
  </tr>
@@ -481,7 +481,13 @@ $(document).ready(function(){initNavTree('_general_product_8h_source.html',''); 
 <div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span><span class="comment">/***************************************************************************</span></div>
 <div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span><span class="comment">* Implementation of matrix base methods</span></div>
 <div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span><span class="comment">***************************************************************************/</span></div>
-<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span> </div>
+<div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span><span class="comment"></span> </div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span><span class="comment">/** \returns the matrix product of \c *this and \a other.</span></div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span><span class="comment">  * \note If instead of the matrix product you want the coefficient-wise product, see Cwise::operator*().</span></div>
+<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span><span class="comment">  * \sa lazyProduct(), operator*=(const MatrixBase&amp;), Cwise::operator*()</span></div>
+<div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Derived&gt;</div>
 <div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> OtherDerived&gt;</div>
 <div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE</div>
@@ -513,7 +519,18 @@ $(document).ready(function(){initNavTree('_general_product_8h_source.html',''); 
 <div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span> </div>
 <div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span>  <span class="keywordflow">return</span> <a class="code hl_class" href="class_eigen_1_1_product.html">Product&lt;Derived, OtherDerived&gt;</a>(derived(), other.derived());</div>
 <div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span>}</div>
-<div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span> </div>
+<div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span><span class="comment"></span> </div>
+<div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span><span class="comment">/** \returns an expression of the matrix product of \c *this and \a other without implicit evaluation.</span></div>
+<div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span><span class="comment">  * The returned product will behave like any other expressions: the coefficients of the product will be</span></div>
+<div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span><span class="comment">  * computed once at a time as requested. This might be useful in some extremely rare cases when only</span></div>
+<div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span><span class="comment">  * a small and no coherent fraction of the result&#39;s coefficients have to be computed.</span></div>
+<div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span><span class="comment">  * \warning This version of the matrix product can be much much slower. So use it only if you know</span></div>
+<div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span><span class="comment">  * what you are doing and that you measured a true speed improvement.</span></div>
+<div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span><span class="comment">  * \sa operator*(const MatrixBase&amp;)</span></div>
+<div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Derived&gt;</div>
 <div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> OtherDerived&gt;</div>
 <div class="line"><a id="l00440" name="l00440"></a><span class="lineno">  440</span>EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE</div>
@@ -577,7 +594,7 @@ $(document).ready(function(){initNavTree('_general_product_8h_source.html',''); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_bfb2597c438c4234fbdcce568a9e650d.html">eigeninclude</a></li><li class="navelem"><a class="el" href="dir_81addad79085c513f45446cf62836735.html">Eigen</a></li><li class="navelem"><a class="el" href="dir_e429501dd9edb337aeb96d684aa3b6ff.html">src</a></li><li class="navelem"><a class="el" href="dir_09ad905ad0d1f25ba5be966168b2edef.html">Core</a></li><li class="navelem"><b>GeneralProduct.h</b></li>
-    <li class="footer">Generated on Tue Oct 19 2021 04:32:17 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Oct 19 2021 04:42:41 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

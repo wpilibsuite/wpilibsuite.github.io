@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-17-g9e6db17</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-19-ge56d6de</span>
    </div>
   </td>
  </tr>
@@ -109,7 +109,12 @@ $(document).ready(function(){initNavTree('_unary_functors_8h_source.html',''); i
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_eigen.html">Eigen</a> {</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span>internal {</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"></span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">  * \brief Template functor to compute the opposite of a scalar</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">  * \sa class CwiseUnaryOp, MatrixBase::operator-</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__opposite__op.html">   22</a></span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar&gt; <span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__opposite__op.html">scalar_opposite_op</a> {</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  EIGEN_EMPTY_STRUCT_CTOR(<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__opposite__op.html">scalar_opposite_op</a>)</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE <span class="keyword">const</span> Scalar operator() (<span class="keyword">const</span> Scalar&amp; a)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> -a; }</div>
@@ -123,7 +128,12 @@ $(document).ready(function(){initNavTree('_unary_functors_8h_source.html',''); i
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    Cost = <a class="code hl_class" href="struct_eigen_1_1_num_traits.html">NumTraits&lt;Scalar&gt;::AddCost</a>,</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    PacketAccess = <a class="code hl_struct" href="struct_eigen_1_1internal_1_1packet__traits.html">packet_traits&lt;Scalar&gt;::HasNegate</a> };</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>};</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment"></span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">  * \brief Template functor to compute the absolute value of a scalar</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">  * \sa class CwiseUnaryOp, Cwise::abs</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__abs__op.html">   41</a></span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar&gt; <span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__abs__op.html">scalar_abs_op</a> {</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  EIGEN_EMPTY_STRUCT_CTOR(<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__abs__op.html">scalar_abs_op</a>)</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <span class="keyword">typedef</span> <span class="keyword">typename</span> NumTraits&lt;Scalar&gt;::Real result_type;</div>
@@ -140,7 +150,12 @@ $(document).ready(function(){initNavTree('_unary_functors_8h_source.html',''); i
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    PacketAccess = <a class="code hl_struct" href="struct_eigen_1_1internal_1_1packet__traits.html">packet_traits&lt;Scalar&gt;::HasAbs</a></div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  };</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>};</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment"></span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">  * \brief Template functor to compute the score of a scalar, to chose a pivot</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">  * \sa class CwiseUnaryOp</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__score__coeff__op.html">   63</a></span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar&gt; <span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__score__coeff__op.html">scalar_score_coeff_op</a> : <a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__abs__op.html">scalar_abs_op</a>&lt;Scalar&gt;</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>{</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="keyword">typedef</span> <span class="keywordtype">void</span> Score_is_abs;</div>
@@ -163,7 +178,12 @@ $(document).ready(function(){initNavTree('_unary_functors_8h_source.html',''); i
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scal&gt;</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE <span class="keyword">const</span> result_type operator() (<span class="keyword">const</span> Scal&amp;, <span class="keyword">const</span> result_type&amp; a)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> a; }</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>};</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment"></span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment">  * \brief Template functor to compute the squared absolute value of a scalar</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment">  * \sa class CwiseUnaryOp, Cwise::abs2</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__abs2__op.html">   91</a></span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar&gt; <span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__abs2__op.html">scalar_abs2_op</a> {</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  EIGEN_EMPTY_STRUCT_CTOR(<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__abs2__op.html">scalar_abs2_op</a>)</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  <span class="keyword">typedef</span> <span class="keyword">typename</span> NumTraits&lt;Scalar&gt;::Real result_type;</div>
@@ -176,7 +196,12 @@ $(document).ready(function(){initNavTree('_unary_functors_8h_source.html',''); i
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar&gt;</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1functor__traits_3_01scalar__abs2__op_3_01_scalar_01_4_01_4.html">  101</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1functor__traits.html">functor_traits</a>&lt;<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__abs2__op.html">scalar_abs2_op</a>&lt;Scalar&gt; &gt;</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>{ <span class="keyword">enum</span> { Cost = <a class="code hl_class" href="struct_eigen_1_1_num_traits.html">NumTraits&lt;Scalar&gt;::MulCost</a>, PacketAccess = <a class="code hl_struct" href="struct_eigen_1_1internal_1_1packet__traits.html">packet_traits&lt;Scalar&gt;::HasAbs2</a> }; };</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment"></span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="comment">  * \brief Template functor to compute the conjugate of a complex value</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment">  * \sa class CwiseUnaryOp, MatrixBase::conjugate()</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__conjugate__op.html">  109</a></span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar&gt; <span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__conjugate__op.html">scalar_conjugate_op</a> {</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  EIGEN_EMPTY_STRUCT_CTOR(<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__conjugate__op.html">scalar_conjugate_op</a>)</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>  EIGEN_DEVICE_FUNC</div>
@@ -200,7 +225,12 @@ $(document).ready(function(){initNavTree('_unary_functors_8h_source.html',''); i
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    PacketAccess = <a class="code hl_struct" href="struct_eigen_1_1internal_1_1packet__traits.html">packet_traits&lt;Scalar&gt;::HasConj</a></div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>  };</div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>};</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="comment"></span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="comment">  * \brief Template functor to compute the phase angle of a complex</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="comment">  * \sa class CwiseUnaryOp, Cwise::arg</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__arg__op.html">  138</a></span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar&gt; <span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__arg__op.html">scalar_arg_op</a> {</div>
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>  EIGEN_EMPTY_STRUCT_CTOR(<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__arg__op.html">scalar_arg_op</a>)</div>
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>  <span class="keyword">typedef</span> <span class="keyword">typename</span> NumTraits&lt;Scalar&gt;::Real result_type;</div>
@@ -216,7 +246,12 @@ $(document).ready(function(){initNavTree('_unary_functors_8h_source.html',''); i
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    Cost = <a class="code hl_class" href="struct_eigen_1_1_num_traits.html">NumTraits&lt;Scalar&gt;::IsComplex</a> ? 5 * <a class="code hl_class" href="struct_eigen_1_1_num_traits.html">NumTraits&lt;Scalar&gt;::MulCost</a> : <a class="code hl_class" href="struct_eigen_1_1_num_traits.html">NumTraits&lt;Scalar&gt;::AddCost</a>,</div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    PacketAccess = <a class="code hl_struct" href="struct_eigen_1_1internal_1_1packet__traits.html">packet_traits&lt;Scalar&gt;::HasArg</a></div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>  };</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>};</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>};<span class="comment"></span></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="comment">  * \brief Template functor to cast a scalar to another type</span></div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="comment">  * \sa class CwiseUnaryOp, MatrixBase::cast()</span></div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar, <span class="keyword">typename</span> NewType&gt;</div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__cast__op.html">  160</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__cast__op.html">scalar_cast_op</a> {</div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>  EIGEN_EMPTY_STRUCT_CTOR(<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__cast__op.html">scalar_cast_op</a>)</div>
@@ -226,7 +261,12 @@ $(document).ready(function(){initNavTree('_unary_functors_8h_source.html',''); i
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar, <span class="keyword">typename</span> NewType&gt;</div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1functor__traits_3_01scalar__cast__op_3_01_scalar_00_01_new_type_01_4_01_4.html">  166</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1functor__traits.html">functor_traits</a>&lt;<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__cast__op.html">scalar_cast_op</a>&lt;Scalar,NewType&gt; &gt;</div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>{ <span class="keyword">enum</span> { Cost = <a class="code hl_struct" href="struct_eigen_1_1internal_1_1is__same.html">is_same&lt;Scalar, NewType&gt;::value</a> ? 0 : <a class="code hl_class" href="struct_eigen_1_1_num_traits.html">NumTraits&lt;NewType&gt;::AddCost</a>, PacketAccess = <span class="keyword">false</span> }; };</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="comment"></span> </div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="comment">  * \brief Template functor to arithmetically shift a scalar right by a number of bits</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="comment">  * \sa class CwiseUnaryOp, MatrixBase::shift_right()</span></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar, <span class="keywordtype">int</span> N&gt;</div>
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__shift__right__op.html">  175</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__shift__right__op.html">scalar_shift_right_op</a> {</div>
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>  EIGEN_EMPTY_STRUCT_CTOR(<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__shift__right__op.html">scalar_shift_right_op</a>)</div>
@@ -240,7 +280,12 @@ $(document).ready(function(){initNavTree('_unary_functors_8h_source.html',''); i
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar, <span class="keywordtype">int</span> N&gt;</div>
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1functor__traits_3_01scalar__shift__right__op_3_01_scalar_00_01_n_01_4_01_4.html">  185</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1functor__traits.html">functor_traits</a>&lt;<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__shift__right__op.html">scalar_shift_right_op</a>&lt;Scalar,N&gt; &gt;</div>
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>{ <span class="keyword">enum</span> { Cost = <a class="code hl_class" href="struct_eigen_1_1_num_traits.html">NumTraits&lt;Scalar&gt;::AddCost</a>, PacketAccess = <a class="code hl_struct" href="struct_eigen_1_1internal_1_1packet__traits.html">packet_traits&lt;Scalar&gt;::HasShift</a> }; };</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span> </div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span><span class="comment"></span> </div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><span class="comment">  * \brief Template functor to logically shift a scalar left by a number of bits</span></div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span><span class="comment">  * \sa class CwiseUnaryOp, MatrixBase::shift_left()</span></div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar, <span class="keywordtype">int</span> N&gt;</div>
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__shift__left__op.html">  194</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__shift__left__op.html">scalar_shift_left_op</a> {</div>
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>  EIGEN_EMPTY_STRUCT_CTOR(<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__shift__left__op.html">scalar_shift_left_op</a>)</div>
@@ -254,7 +299,12 @@ $(document).ready(function(){initNavTree('_unary_functors_8h_source.html',''); i
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar, <span class="keywordtype">int</span> N&gt;</div>
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1functor__traits_3_01scalar__shift__left__op_3_01_scalar_00_01_n_01_4_01_4.html">  204</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1functor__traits.html">functor_traits</a>&lt;<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__shift__left__op.html">scalar_shift_left_op</a>&lt;Scalar,N&gt; &gt;</div>
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>{ <span class="keyword">enum</span> { Cost = <a class="code hl_class" href="struct_eigen_1_1_num_traits.html">NumTraits&lt;Scalar&gt;::AddCost</a>, PacketAccess = <a class="code hl_struct" href="struct_eigen_1_1internal_1_1packet__traits.html">packet_traits&lt;Scalar&gt;::HasShift</a> }; };</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> </div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="comment"></span> </div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="comment">  * \brief Template functor to extract the real part of a complex</span></div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span><span class="comment">  * \sa class CwiseUnaryOp, MatrixBase::real()</span></div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar&gt;</div>
 <div class="line"><a id="l00213" name="l00213"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__real__op.html">  213</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__real__op.html">scalar_real_op</a> {</div>
 <div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>  EIGEN_EMPTY_STRUCT_CTOR(<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__real__op.html">scalar_real_op</a>)</div>
@@ -265,7 +315,12 @@ $(document).ready(function(){initNavTree('_unary_functors_8h_source.html',''); i
 <div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar&gt;</div>
 <div class="line"><a id="l00220" name="l00220"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1functor__traits_3_01scalar__real__op_3_01_scalar_01_4_01_4.html">  220</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1functor__traits.html">functor_traits</a>&lt;<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__real__op.html">scalar_real_op</a>&lt;Scalar&gt; &gt;</div>
 <div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>{ <span class="keyword">enum</span> { Cost = 0, PacketAccess = <span class="keyword">false</span> }; };</div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span> </div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span><span class="comment"></span> </div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span><span class="comment">  * \brief Template functor to extract the imaginary part of a complex</span></div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span><span class="comment">  * \sa class CwiseUnaryOp, MatrixBase::imag()</span></div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar&gt;</div>
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__imag__op.html">  229</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__imag__op.html">scalar_imag_op</a> {</div>
 <div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>  EIGEN_EMPTY_STRUCT_CTOR(<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__imag__op.html">scalar_imag_op</a>)</div>
@@ -276,7 +331,12 @@ $(document).ready(function(){initNavTree('_unary_functors_8h_source.html',''); i
 <div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar&gt;</div>
 <div class="line"><a id="l00236" name="l00236"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1functor__traits_3_01scalar__imag__op_3_01_scalar_01_4_01_4.html">  236</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1functor__traits.html">functor_traits</a>&lt;<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__imag__op.html">scalar_imag_op</a>&lt;Scalar&gt; &gt;</div>
 <div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>{ <span class="keyword">enum</span> { Cost = 0, PacketAccess = <span class="keyword">false</span> }; };</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span> </div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span><span class="comment"></span> </div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span><span class="comment">  * \brief Template functor to extract the real part of a complex as a reference</span></div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span><span class="comment">  * \sa class CwiseUnaryOp, MatrixBase::real()</span></div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar&gt;</div>
 <div class="line"><a id="l00245" name="l00245"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__real__ref__op.html">  245</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__real__ref__op.html">scalar_real_ref_op</a> {</div>
 <div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>  EIGEN_EMPTY_STRUCT_CTOR(<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__real__ref__op.html">scalar_real_ref_op</a>)</div>
@@ -287,7 +347,12 @@ $(document).ready(function(){initNavTree('_unary_functors_8h_source.html',''); i
 <div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar&gt;</div>
 <div class="line"><a id="l00252" name="l00252"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1functor__traits_3_01scalar__real__ref__op_3_01_scalar_01_4_01_4.html">  252</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1functor__traits.html">functor_traits</a>&lt;<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__real__ref__op.html">scalar_real_ref_op</a>&lt;Scalar&gt; &gt;</div>
 <div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>{ <span class="keyword">enum</span> { Cost = 0, PacketAccess = <span class="keyword">false</span> }; };</div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span> </div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span><span class="comment"></span> </div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span><span class="comment">  * \brief Template functor to extract the imaginary part of a complex as a reference</span></div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span><span class="comment">  * \sa class CwiseUnaryOp, MatrixBase::imag()</span></div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar&gt;</div>
 <div class="line"><a id="l00261" name="l00261"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__imag__ref__op.html">  261</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__imag__ref__op.html">scalar_imag_ref_op</a> {</div>
 <div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>  EIGEN_EMPTY_STRUCT_CTOR(<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__imag__ref__op.html">scalar_imag_ref_op</a>)</div>
@@ -298,7 +363,13 @@ $(document).ready(function(){initNavTree('_unary_functors_8h_source.html',''); i
 <div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar&gt;</div>
 <div class="line"><a id="l00268" name="l00268"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1functor__traits_3_01scalar__imag__ref__op_3_01_scalar_01_4_01_4.html">  268</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1functor__traits.html">functor_traits</a>&lt;<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__imag__ref__op.html">scalar_imag_ref_op</a>&lt;Scalar&gt; &gt;</div>
 <div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>{ <span class="keyword">enum</span> { Cost = 0, PacketAccess = <span class="keyword">false</span> }; };</div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span> </div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span><span class="comment"></span> </div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span><span class="comment">  * \brief Template functor to compute the exponential of a scalar</span></div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span><span class="comment">  * \sa class CwiseUnaryOp, Cwise::exp()</span></div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00277" name="l00277"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__exp__op.html">  277</a></span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar&gt; <span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__exp__op.html">scalar_exp_op</a> {</div>
 <div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>  EIGEN_EMPTY_STRUCT_CTOR(<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__exp__op.html">scalar_exp_op</a>)</div>
 <div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>  EIGEN_DEVICE_FUNC <span class="keyword">inline</span> <span class="keyword">const</span> Scalar operator() (<span class="keyword">const</span> Scalar&amp; a)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="group___unit_math.html#ga37ffdd257c05eb6916d62bfbbc0890e2">numext::exp</a>(a); }</div>
@@ -332,7 +403,13 @@ $(document).ready(function(){initNavTree('_unary_functors_8h_source.html',''); i
 <div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>  };</div>
 <div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>};</div>
-<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span> </div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span><span class="comment"></span> </div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span><span class="comment">  * \brief Template functor to compute the exponential of a scalar - 1.</span></div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span><span class="comment">  * \sa class CwiseUnaryOp, ArrayBase::expm1()</span></div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00317" name="l00317"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__expm1__op.html">  317</a></span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar&gt; <span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__expm1__op.html">scalar_expm1_op</a> {</div>
 <div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>  EIGEN_EMPTY_STRUCT_CTOR(<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__expm1__op.html">scalar_expm1_op</a>)</div>
 <div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>  EIGEN_DEVICE_FUNC <span class="keyword">inline</span> <span class="keyword">const</span> Scalar operator() (<span class="keyword">const</span> Scalar&amp; a)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="group___unit_math.html#ga9aee32f9e268b7135c66fc1fb887f44a">numext::expm1</a>(a); }</div>
@@ -346,7 +423,13 @@ $(document).ready(function(){initNavTree('_unary_functors_8h_source.html',''); i
 <div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>    Cost = <a class="code hl_struct" href="struct_eigen_1_1internal_1_1functor__traits.html">functor_traits&lt;scalar_exp_op&lt;Scalar&gt;</a> &gt;::Cost <span class="comment">// TODO measure cost of expm1</span></div>
 <div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>  };</div>
 <div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>};</div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span> </div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span><span class="comment"></span> </div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span><span class="comment">  * \brief Template functor to compute the logarithm of a scalar</span></div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span><span class="comment">  * \sa class CwiseUnaryOp, ArrayBase::log()</span></div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00337" name="l00337"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__log__op.html">  337</a></span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar&gt; <span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__log__op.html">scalar_log_op</a> {</div>
 <div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>  EIGEN_EMPTY_STRUCT_CTOR(<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__log__op.html">scalar_log_op</a>)</div>
 <div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>  EIGEN_DEVICE_FUNC <span class="keyword">inline</span> <span class="keyword">const</span> Scalar operator() (<span class="keyword">const</span> Scalar&amp; a)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="group___unit_math.html#gaed3e6783dc5ab1dda006913aa53f17c8">numext::log</a>(a); }</div>
@@ -371,7 +454,13 @@ $(document).ready(function(){initNavTree('_unary_functors_8h_source.html',''); i
 <div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>     : <span class="keyword">sizeof</span>(Scalar)==4 ? 40 : 85)</div>
 <div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>  };</div>
 <div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>};</div>
-<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span> </div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span><span class="comment"></span> </div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span><span class="comment">  * \brief Template functor to compute the logarithm of 1 plus a scalar value</span></div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span><span class="comment">  * \sa class CwiseUnaryOp, ArrayBase::log1p()</span></div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00368" name="l00368"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__log1p__op.html">  368</a></span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar&gt; <span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__log1p__op.html">scalar_log1p_op</a> {</div>
 <div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>  EIGEN_EMPTY_STRUCT_CTOR(<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__log1p__op.html">scalar_log1p_op</a>)</div>
 <div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>  EIGEN_DEVICE_FUNC <span class="keyword">inline</span> <span class="keyword">const</span> Scalar operator() (<span class="keyword">const</span> Scalar&amp; a)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="group___unit_math.html#gaef69e3da7b1cf820853dc8bb5043e1e7">numext::log1p</a>(a); }</div>
@@ -385,7 +474,13 @@ $(document).ready(function(){initNavTree('_unary_functors_8h_source.html',''); i
 <div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>    Cost = <a class="code hl_struct" href="struct_eigen_1_1internal_1_1functor__traits.html">functor_traits&lt;scalar_log_op&lt;Scalar&gt;</a> &gt;::Cost <span class="comment">// TODO measure cost of log1p</span></div>
 <div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>  };</div>
 <div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>};</div>
-<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span> </div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span><span class="comment"></span> </div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span><span class="comment">  * \brief Template functor to compute the base-10 logarithm of a scalar</span></div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span><span class="comment">  * \sa class CwiseUnaryOp, Cwise::log10()</span></div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00388" name="l00388"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__log10__op.html">  388</a></span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar&gt; <span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__log10__op.html">scalar_log10_op</a> {</div>
 <div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span>  EIGEN_EMPTY_STRUCT_CTOR(<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__log10__op.html">scalar_log10_op</a>)</div>
 <div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span>  EIGEN_DEVICE_FUNC <span class="keyword">inline</span> <span class="keyword">const</span> Scalar operator() (<span class="keyword">const</span> Scalar&amp; a)<span class="keyword"> const </span>{ EIGEN_USING_STD(<a class="code hl_function" href="group___unit_math.html#gaf02e920d1b57574f1c8ae3974d1e3c80">log10</a>) <span class="keywordflow">return</span> <a class="code hl_function" href="group___unit_math.html#gaf02e920d1b57574f1c8ae3974d1e3c80">log10</a>(a); }</div>
@@ -395,7 +490,13 @@ $(document).ready(function(){initNavTree('_unary_functors_8h_source.html',''); i
 <div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar&gt;</div>
 <div class="line"><a id="l00395" name="l00395"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1functor__traits_3_01scalar__log10__op_3_01_scalar_01_4_01_4.html">  395</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1functor__traits.html">functor_traits</a>&lt;<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__log10__op.html">scalar_log10_op</a>&lt;Scalar&gt; &gt;</div>
 <div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>{ <span class="keyword">enum</span> { Cost = 5 * <a class="code hl_class" href="struct_eigen_1_1_num_traits.html">NumTraits&lt;Scalar&gt;::MulCost</a>, PacketAccess = <a class="code hl_struct" href="struct_eigen_1_1internal_1_1packet__traits.html">packet_traits&lt;Scalar&gt;::HasLog10</a> }; };</div>
-<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span> </div>
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span><span class="comment"></span> </div>
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span><span class="comment">  * \brief Template functor to compute the base-2 logarithm of a scalar</span></div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span><span class="comment">  * \sa class CwiseUnaryOp, Cwise::log2()</span></div>
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00404" name="l00404"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__log2__op.html">  404</a></span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar&gt; <span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__log2__op.html">scalar_log2_op</a> {</div>
 <div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>  EIGEN_EMPTY_STRUCT_CTOR(<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__log2__op.html">scalar_log2_op</a>)</div>
 <div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span>  EIGEN_DEVICE_FUNC <span class="keyword">inline</span> <span class="keyword">const</span> Scalar operator() (<span class="keyword">const</span> Scalar&amp; a)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> Scalar(EIGEN_LOG2E) * <a class="code hl_function" href="group___unit_math.html#gaed3e6783dc5ab1dda006913aa53f17c8">numext::log</a>(a); }</div>
@@ -405,7 +506,11 @@ $(document).ready(function(){initNavTree('_unary_functors_8h_source.html',''); i
 <div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar&gt;</div>
 <div class="line"><a id="l00411" name="l00411"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1functor__traits_3_01scalar__log2__op_3_01_scalar_01_4_01_4.html">  411</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1functor__traits.html">functor_traits</a>&lt;<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__log2__op.html">scalar_log2_op</a>&lt;Scalar&gt; &gt;</div>
 <div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>{ <span class="keyword">enum</span> { Cost = 5 * <a class="code hl_class" href="struct_eigen_1_1_num_traits.html">NumTraits&lt;Scalar&gt;::MulCost</a>, PacketAccess = <a class="code hl_struct" href="struct_eigen_1_1internal_1_1packet__traits.html">packet_traits&lt;Scalar&gt;::HasLog</a> }; };</div>
-<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span> </div>
+<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span><span class="comment"></span> </div>
+<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span><span class="comment">  * \brief Template functor to compute the square root of a scalar</span></div>
+<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span><span class="comment">  * \sa class CwiseUnaryOp, Cwise::sqrt()</span></div>
+<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00418" name="l00418"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__sqrt__op.html">  418</a></span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar&gt; <span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__sqrt__op.html">scalar_sqrt_op</a> {</div>
 <div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>  EIGEN_EMPTY_STRUCT_CTOR(<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__sqrt__op.html">scalar_sqrt_op</a>)</div>
 <div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>  EIGEN_DEVICE_FUNC <span class="keyword">inline</span> <span class="keyword">const</span> Scalar operator() (<span class="keyword">const</span> Scalar&amp; a)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="group___unit_math.html#gae52f60a9e2a9e7ad1018a846bcf49140">numext::sqrt</a>(a); }</div>
@@ -440,7 +545,11 @@ $(document).ready(function(){initNavTree('_unary_functors_8h_source.html',''); i
 <div class="line"><a id="l00449" name="l00449"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1functor__traits_3_01scalar__sqrt__op_3_01bool_01_4_01_4.html">  449</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1functor__traits.html">functor_traits</a>&lt;<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__sqrt__op.html">scalar_sqrt_op</a>&lt;bool&gt; &gt; {</div>
 <div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span>  <span class="keyword">enum</span> { Cost = 1, PacketAccess = <a class="code hl_struct" href="struct_eigen_1_1internal_1_1packet__traits.html">packet_traits&lt;bool&gt;::Vectorizable</a> };</div>
 <div class="line"><a id="l00451" name="l00451"></a><span class="lineno">  451</span>};</div>
-<div class="line"><a id="l00452" name="l00452"></a><span class="lineno">  452</span> </div>
+<div class="line"><a id="l00452" name="l00452"></a><span class="lineno">  452</span><span class="comment"></span> </div>
+<div class="line"><a id="l00453" name="l00453"></a><span class="lineno">  453</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00454" name="l00454"></a><span class="lineno">  454</span><span class="comment">  * \brief Template functor to compute the reciprocal square root of a scalar</span></div>
+<div class="line"><a id="l00455" name="l00455"></a><span class="lineno">  455</span><span class="comment">  * \sa class CwiseUnaryOp, Cwise::rsqrt()</span></div>
+<div class="line"><a id="l00456" name="l00456"></a><span class="lineno">  456</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00457" name="l00457"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__rsqrt__op.html">  457</a></span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar&gt; <span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__rsqrt__op.html">scalar_rsqrt_op</a> {</div>
 <div class="line"><a id="l00458" name="l00458"></a><span class="lineno">  458</span>  EIGEN_EMPTY_STRUCT_CTOR(<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__rsqrt__op.html">scalar_rsqrt_op</a>)</div>
 <div class="line"><a id="l00459" name="l00459"></a><span class="lineno">  459</span>  EIGEN_DEVICE_FUNC <span class="keyword">inline</span> <span class="keyword">const</span> Scalar operator() (<span class="keyword">const</span> Scalar&amp; a)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> numext::rsqrt(a); }</div>
@@ -455,7 +564,11 @@ $(document).ready(function(){initNavTree('_unary_functors_8h_source.html',''); i
 <div class="line"><a id="l00468" name="l00468"></a><span class="lineno">  468</span>    PacketAccess = <a class="code hl_struct" href="struct_eigen_1_1internal_1_1packet__traits.html">packet_traits&lt;Scalar&gt;::HasRsqrt</a></div>
 <div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span>  };</div>
 <div class="line"><a id="l00470" name="l00470"></a><span class="lineno">  470</span>};</div>
-<div class="line"><a id="l00471" name="l00471"></a><span class="lineno">  471</span> </div>
+<div class="line"><a id="l00471" name="l00471"></a><span class="lineno">  471</span><span class="comment"></span> </div>
+<div class="line"><a id="l00472" name="l00472"></a><span class="lineno">  472</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00473" name="l00473"></a><span class="lineno">  473</span><span class="comment">  * \brief Template functor to compute the cosine of a scalar</span></div>
+<div class="line"><a id="l00474" name="l00474"></a><span class="lineno">  474</span><span class="comment">  * \sa class CwiseUnaryOp, ArrayBase::cos()</span></div>
+<div class="line"><a id="l00475" name="l00475"></a><span class="lineno">  475</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00476" name="l00476"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__cos__op.html">  476</a></span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar&gt; <span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__cos__op.html">scalar_cos_op</a> {</div>
 <div class="line"><a id="l00477" name="l00477"></a><span class="lineno">  477</span>  EIGEN_EMPTY_STRUCT_CTOR(<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__cos__op.html">scalar_cos_op</a>)</div>
 <div class="line"><a id="l00478" name="l00478"></a><span class="lineno">  478</span>  EIGEN_DEVICE_FUNC <span class="keyword">inline</span> Scalar operator() (<span class="keyword">const</span> Scalar&amp; a)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="group___unit_math.html#gac2aeac09538ac3f95fff947c12522faa">numext::cos</a>(a); }</div>
@@ -470,7 +583,11 @@ $(document).ready(function(){initNavTree('_unary_functors_8h_source.html',''); i
 <div class="line"><a id="l00487" name="l00487"></a><span class="lineno">  487</span>    PacketAccess = <a class="code hl_struct" href="struct_eigen_1_1internal_1_1packet__traits.html">packet_traits&lt;Scalar&gt;::HasCos</a></div>
 <div class="line"><a id="l00488" name="l00488"></a><span class="lineno">  488</span>  };</div>
 <div class="line"><a id="l00489" name="l00489"></a><span class="lineno">  489</span>};</div>
-<div class="line"><a id="l00490" name="l00490"></a><span class="lineno">  490</span> </div>
+<div class="line"><a id="l00490" name="l00490"></a><span class="lineno">  490</span><span class="comment"></span> </div>
+<div class="line"><a id="l00491" name="l00491"></a><span class="lineno">  491</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00492" name="l00492"></a><span class="lineno">  492</span><span class="comment">  * \brief Template functor to compute the sine of a scalar</span></div>
+<div class="line"><a id="l00493" name="l00493"></a><span class="lineno">  493</span><span class="comment">  * \sa class CwiseUnaryOp, ArrayBase::sin()</span></div>
+<div class="line"><a id="l00494" name="l00494"></a><span class="lineno">  494</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00495" name="l00495"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__sin__op.html">  495</a></span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar&gt; <span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__sin__op.html">scalar_sin_op</a> {</div>
 <div class="line"><a id="l00496" name="l00496"></a><span class="lineno">  496</span>  EIGEN_EMPTY_STRUCT_CTOR(<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__sin__op.html">scalar_sin_op</a>)</div>
 <div class="line"><a id="l00497" name="l00497"></a><span class="lineno">  497</span>  EIGEN_DEVICE_FUNC <span class="keyword">inline</span> <span class="keyword">const</span> Scalar operator() (<span class="keyword">const</span> Scalar&amp; a)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="group___unit_math.html#gaf0a50351f8f51550d00e9831b60e1850">numext::sin</a>(a); }</div>
@@ -486,7 +603,11 @@ $(document).ready(function(){initNavTree('_unary_functors_8h_source.html',''); i
 <div class="line"><a id="l00507" name="l00507"></a><span class="lineno">  507</span>  };</div>
 <div class="line"><a id="l00508" name="l00508"></a><span class="lineno">  508</span>};</div>
 <div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span> </div>
-<div class="line"><a id="l00510" name="l00510"></a><span class="lineno">  510</span> </div>
+<div class="line"><a id="l00510" name="l00510"></a><span class="lineno">  510</span><span class="comment"></span> </div>
+<div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00512" name="l00512"></a><span class="lineno">  512</span><span class="comment">  * \brief Template functor to compute the tan of a scalar</span></div>
+<div class="line"><a id="l00513" name="l00513"></a><span class="lineno">  513</span><span class="comment">  * \sa class CwiseUnaryOp, ArrayBase::tan()</span></div>
+<div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00515" name="l00515"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__tan__op.html">  515</a></span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar&gt; <span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__tan__op.html">scalar_tan_op</a> {</div>
 <div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span>  EIGEN_EMPTY_STRUCT_CTOR(<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__tan__op.html">scalar_tan_op</a>)</div>
 <div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span>  EIGEN_DEVICE_FUNC <span class="keyword">inline</span> <span class="keyword">const</span> Scalar operator() (<span class="keyword">const</span> Scalar&amp; a)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="group___unit_math.html#ga4a0bd68dee584d4b0b12c49bec0706c1">numext::tan</a>(a); }</div>
@@ -501,7 +622,11 @@ $(document).ready(function(){initNavTree('_unary_functors_8h_source.html',''); i
 <div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span>    PacketAccess = <a class="code hl_struct" href="struct_eigen_1_1internal_1_1packet__traits.html">packet_traits&lt;Scalar&gt;::HasTan</a></div>
 <div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span>  };</div>
 <div class="line"><a id="l00528" name="l00528"></a><span class="lineno">  528</span>};</div>
-<div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span> </div>
+<div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span><span class="comment"></span> </div>
+<div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span><span class="comment">  * \brief Template functor to compute the arc cosine of a scalar</span></div>
+<div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span><span class="comment">  * \sa class CwiseUnaryOp, ArrayBase::acos()</span></div>
+<div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00534" name="l00534"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__acos__op.html">  534</a></span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar&gt; <span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__acos__op.html">scalar_acos_op</a> {</div>
 <div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span>  EIGEN_EMPTY_STRUCT_CTOR(<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__acos__op.html">scalar_acos_op</a>)</div>
 <div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span>  EIGEN_DEVICE_FUNC <span class="keyword">inline</span> <span class="keyword">const</span> Scalar operator() (<span class="keyword">const</span> Scalar&amp; a)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="group___unit_math.html#ga83597409663ca3af0892acf87844af49">numext::acos</a>(a); }</div>
@@ -516,7 +641,11 @@ $(document).ready(function(){initNavTree('_unary_functors_8h_source.html',''); i
 <div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span>    PacketAccess = <a class="code hl_struct" href="struct_eigen_1_1internal_1_1packet__traits.html">packet_traits&lt;Scalar&gt;::HasACos</a></div>
 <div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span>  };</div>
 <div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span>};</div>
-<div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span> </div>
+<div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span><span class="comment"></span> </div>
+<div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span><span class="comment">  * \brief Template functor to compute the arc sine of a scalar</span></div>
+<div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span><span class="comment">  * \sa class CwiseUnaryOp, ArrayBase::asin()</span></div>
+<div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00553" name="l00553"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__asin__op.html">  553</a></span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar&gt; <span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__asin__op.html">scalar_asin_op</a> {</div>
 <div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span>  EIGEN_EMPTY_STRUCT_CTOR(<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__asin__op.html">scalar_asin_op</a>)</div>
 <div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span>  EIGEN_DEVICE_FUNC <span class="keyword">inline</span> <span class="keyword">const</span> Scalar operator() (<span class="keyword">const</span> Scalar&amp; a)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="group___unit_math.html#ga6070806b3322a08af3ee934731ddcc31">numext::asin</a>(a); }</div>
@@ -532,7 +661,11 @@ $(document).ready(function(){initNavTree('_unary_functors_8h_source.html',''); i
 <div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span>  };</div>
 <div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span>};</div>
 <div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span> </div>
-<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span> </div>
+<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span><span class="comment"></span> </div>
+<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span><span class="comment">  * \brief Template functor to compute the atan of a scalar</span></div>
+<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span><span class="comment">  * \sa class CwiseUnaryOp, ArrayBase::atan()</span></div>
+<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00573" name="l00573"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__atan__op.html">  573</a></span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar&gt; <span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__atan__op.html">scalar_atan_op</a> {</div>
 <div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span>  EIGEN_EMPTY_STRUCT_CTOR(<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__atan__op.html">scalar_atan_op</a>)</div>
 <div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span>  EIGEN_DEVICE_FUNC <span class="keyword">inline</span> <span class="keyword">const</span> Scalar operator() (<span class="keyword">const</span> Scalar&amp; a)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="group___unit_math.html#gab8c42d9f521a8909fe92caeb674c30bb">numext::atan</a>(a); }</div>
@@ -547,7 +680,11 @@ $(document).ready(function(){initNavTree('_unary_functors_8h_source.html',''); i
 <div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>    PacketAccess = <a class="code hl_struct" href="struct_eigen_1_1internal_1_1packet__traits.html">packet_traits&lt;Scalar&gt;::HasATan</a></div>
 <div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>  };</div>
 <div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>};</div>
-<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span> </div>
+<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span><span class="comment"></span> </div>
+<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span><span class="comment">  * \brief Template functor to compute the tanh of a scalar</span></div>
+<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span><span class="comment">  * \sa class CwiseUnaryOp, ArrayBase::tanh()</span></div>
+<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Scalar&gt;</div>
 <div class="line"><a id="l00593" name="l00593"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__tanh__op.html">  593</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__tanh__op.html">scalar_tanh_op</a> {</div>
 <div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>  EIGEN_EMPTY_STRUCT_CTOR(<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__tanh__op.html">scalar_tanh_op</a>)</div>
@@ -581,7 +718,11 @@ $(document).ready(function(){initNavTree('_unary_functors_8h_source.html',''); i
 <div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>  };</div>
 <div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>};</div>
 <div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span> </div>
-<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span><span class="preprocessor">#if EIGEN_HAS_CXX11_MATH</span></div>
+<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span><span class="preprocessor">#if EIGEN_HAS_CXX11_MATH</span><span class="comment"></span></div>
+<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span><span class="comment">  * \brief Template functor to compute the atanh of a scalar</span></div>
+<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span><span class="comment">  * \sa class CwiseUnaryOp, ArrayBase::atanh()</span></div>
+<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Scalar&gt;</div>
 <div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span><span class="keyword">struct </span>scalar_atanh_op {</div>
 <div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span>  EIGEN_EMPTY_STRUCT_CTOR(scalar_atanh_op)</div>
@@ -593,7 +734,11 @@ $(document).ready(function(){initNavTree('_unary_functors_8h_source.html',''); i
 <div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span>  <span class="keyword">enum</span> { Cost = 5 * NumTraits&lt;Scalar&gt;::MulCost, PacketAccess = <span class="keyword">false</span> };</div>
 <div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>};</div>
 <div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span> </div>
+<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span><span class="comment"></span> </div>
+<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span><span class="comment">  * \brief Template functor to compute the sinh of a scalar</span></div>
+<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span><span class="comment">  * \sa class CwiseUnaryOp, ArrayBase::sinh()</span></div>
+<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00646" name="l00646"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__sinh__op.html">  646</a></span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar&gt; <span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__sinh__op.html">scalar_sinh_op</a> {</div>
 <div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>  EIGEN_EMPTY_STRUCT_CTOR(<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__sinh__op.html">scalar_sinh_op</a>)</div>
 <div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>  EIGEN_DEVICE_FUNC <span class="keyword">inline</span> <span class="keyword">const</span> Scalar operator() (<span class="keyword">const</span> Scalar&amp; a)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="group___unit_math.html#ga38584a9aa9ecbcf455f1a75b23fc8495">numext::sinh</a>(a); }</div>
@@ -609,7 +754,11 @@ $(document).ready(function(){initNavTree('_unary_functors_8h_source.html',''); i
 <div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span>  };</div>
 <div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>};</div>
 <div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span> </div>
-<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span><span class="preprocessor">#if EIGEN_HAS_CXX11_MATH</span></div>
+<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span><span class="preprocessor">#if EIGEN_HAS_CXX11_MATH</span><span class="comment"></span></div>
+<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span><span class="comment">  * \brief Template functor to compute the asinh of a scalar</span></div>
+<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span><span class="comment">  * \sa class CwiseUnaryOp, ArrayBase::asinh()</span></div>
+<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Scalar&gt;</div>
 <div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span><span class="keyword">struct </span>scalar_asinh_op {</div>
 <div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span>  EIGEN_EMPTY_STRUCT_CTOR(scalar_asinh_op)</div>
@@ -621,7 +770,11 @@ $(document).ready(function(){initNavTree('_unary_functors_8h_source.html',''); i
 <div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span>  <span class="keyword">enum</span> { Cost = 5 * NumTraits&lt;Scalar&gt;::MulCost, PacketAccess = <span class="keyword">false</span> };</div>
 <div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span>};</div>
 <div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span> </div>
+<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span><span class="comment"></span> </div>
+<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span><span class="comment">  * \brief Template functor to compute the cosh of a scalar</span></div>
+<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span><span class="comment">  * \sa class CwiseUnaryOp, ArrayBase::cosh()</span></div>
+<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00682" name="l00682"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__cosh__op.html">  682</a></span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar&gt; <span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__cosh__op.html">scalar_cosh_op</a> {</div>
 <div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span>  EIGEN_EMPTY_STRUCT_CTOR(<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__cosh__op.html">scalar_cosh_op</a>)</div>
 <div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span>  EIGEN_DEVICE_FUNC <span class="keyword">inline</span> <span class="keyword">const</span> Scalar operator() (<span class="keyword">const</span> Scalar&amp; a)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="group___unit_math.html#gab0c26f165fe864ceb9f2af667b3cb66d">numext::cosh</a>(a); }</div>
@@ -637,7 +790,11 @@ $(document).ready(function(){initNavTree('_unary_functors_8h_source.html',''); i
 <div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span>  };</div>
 <div class="line"><a id="l00695" name="l00695"></a><span class="lineno">  695</span>};</div>
 <div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span> </div>
-<div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span><span class="preprocessor">#if EIGEN_HAS_CXX11_MATH</span></div>
+<div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span><span class="preprocessor">#if EIGEN_HAS_CXX11_MATH</span><span class="comment"></span></div>
+<div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span><span class="comment">  * \brief Template functor to compute the acosh of a scalar</span></div>
+<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span><span class="comment">  * \sa class CwiseUnaryOp, ArrayBase::acosh()</span></div>
+<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Scalar&gt;</div>
 <div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span><span class="keyword">struct </span>scalar_acosh_op {</div>
 <div class="line"><a id="l00704" name="l00704"></a><span class="lineno">  704</span>  EIGEN_EMPTY_STRUCT_CTOR(scalar_acosh_op)</div>
@@ -649,7 +806,11 @@ $(document).ready(function(){initNavTree('_unary_functors_8h_source.html',''); i
 <div class="line"><a id="l00710" name="l00710"></a><span class="lineno">  710</span>  <span class="keyword">enum</span> { Cost = 5 * NumTraits&lt;Scalar&gt;::MulCost, PacketAccess = <span class="keyword">false</span> };</div>
 <div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span>};</div>
 <div class="line"><a id="l00712" name="l00712"></a><span class="lineno">  712</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span> </div>
+<div class="line"><a id="l00713" name="l00713"></a><span class="lineno">  713</span><span class="comment"></span> </div>
+<div class="line"><a id="l00714" name="l00714"></a><span class="lineno">  714</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00715" name="l00715"></a><span class="lineno">  715</span><span class="comment">  * \brief Template functor to compute the inverse of a scalar</span></div>
+<div class="line"><a id="l00716" name="l00716"></a><span class="lineno">  716</span><span class="comment">  * \sa class CwiseUnaryOp, Cwise::inverse()</span></div>
+<div class="line"><a id="l00717" name="l00717"></a><span class="lineno">  717</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00718" name="l00718"></a><span class="lineno">  718</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar&gt;</div>
 <div class="line"><a id="l00719" name="l00719"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__inverse__op.html">  719</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__inverse__op.html">scalar_inverse_op</a> {</div>
 <div class="line"><a id="l00720" name="l00720"></a><span class="lineno">  720</span>  EIGEN_EMPTY_STRUCT_CTOR(<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__inverse__op.html">scalar_inverse_op</a>)</div>
@@ -665,7 +826,11 @@ $(document).ready(function(){initNavTree('_unary_functors_8h_source.html',''); i
 <div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span>    Cost = <a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__div__cost.html">scalar_div_cost&lt;Scalar, PacketAccess&gt;::value</a></div>
 <div class="line"><a id="l00731" name="l00731"></a><span class="lineno">  731</span>  };</div>
 <div class="line"><a id="l00732" name="l00732"></a><span class="lineno">  732</span>};</div>
-<div class="line"><a id="l00733" name="l00733"></a><span class="lineno">  733</span> </div>
+<div class="line"><a id="l00733" name="l00733"></a><span class="lineno">  733</span><span class="comment"></span> </div>
+<div class="line"><a id="l00734" name="l00734"></a><span class="lineno">  734</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00735" name="l00735"></a><span class="lineno">  735</span><span class="comment">  * \brief Template functor to compute the square of a scalar</span></div>
+<div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span><span class="comment">  * \sa class CwiseUnaryOp, Cwise::square()</span></div>
+<div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar&gt;</div>
 <div class="line"><a id="l00739" name="l00739"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__square__op.html">  739</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__square__op.html">scalar_square_op</a> {</div>
 <div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span>  EIGEN_EMPTY_STRUCT_CTOR(<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__square__op.html">scalar_square_op</a>)</div>
@@ -690,7 +855,11 @@ $(document).ready(function(){initNavTree('_unary_functors_8h_source.html',''); i
 <div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span><span class="keyword">template</span>&lt;&gt;</div>
 <div class="line"><a id="l00760" name="l00760"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1functor__traits_3_01scalar__square__op_3_01bool_01_4_01_4.html">  760</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1functor__traits.html">functor_traits</a>&lt;<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__square__op.html">scalar_square_op</a>&lt;bool&gt; &gt;</div>
 <div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span>{ <span class="keyword">enum</span> { Cost = 0, PacketAccess = <a class="code hl_struct" href="struct_eigen_1_1internal_1_1packet__traits.html">packet_traits&lt;bool&gt;::Vectorizable</a> }; };</div>
-<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span> </div>
+<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span><span class="comment"></span> </div>
+<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span><span class="comment">  * \brief Template functor to compute the cube of a scalar</span></div>
+<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span><span class="comment">  * \sa class CwiseUnaryOp, Cwise::cube()</span></div>
+<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar&gt;</div>
 <div class="line"><a id="l00768" name="l00768"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__cube__op.html">  768</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__cube__op.html">scalar_cube_op</a> {</div>
 <div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span>  EIGEN_EMPTY_STRUCT_CTOR(<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__cube__op.html">scalar_cube_op</a>)</div>
@@ -715,7 +884,11 @@ $(document).ready(function(){initNavTree('_unary_functors_8h_source.html',''); i
 <div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span><span class="keyword">template</span>&lt;&gt;</div>
 <div class="line"><a id="l00789" name="l00789"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1functor__traits_3_01scalar__cube__op_3_01bool_01_4_01_4.html">  789</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1functor__traits.html">functor_traits</a>&lt;<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__cube__op.html">scalar_cube_op</a>&lt;bool&gt; &gt;</div>
 <div class="line"><a id="l00790" name="l00790"></a><span class="lineno">  790</span>{ <span class="keyword">enum</span> { Cost = 0, PacketAccess = <a class="code hl_struct" href="struct_eigen_1_1internal_1_1packet__traits.html">packet_traits&lt;bool&gt;::Vectorizable</a> }; };</div>
-<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span> </div>
+<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span><span class="comment"></span> </div>
+<div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span><span class="comment">  * \brief Template functor to compute the rounded value of a scalar</span></div>
+<div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span><span class="comment">  * \sa class CwiseUnaryOp, ArrayBase::round()</span></div>
+<div class="line"><a id="l00795" name="l00795"></a><span class="lineno">  795</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00796" name="l00796"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__round__op.html">  796</a></span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar&gt; <span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__round__op.html">scalar_round_op</a> {</div>
 <div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span>  EIGEN_EMPTY_STRUCT_CTOR(<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__round__op.html">scalar_round_op</a>)</div>
 <div class="line"><a id="l00798" name="l00798"></a><span class="lineno">  798</span>  EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE <span class="keyword">const</span> Scalar operator() (<span class="keyword">const</span> Scalar&amp; a)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="group___unit_math.html#ga3e417de9376e1fc58cd07a8465c7e9c6">numext::round</a>(a); }</div>
@@ -730,7 +903,11 @@ $(document).ready(function(){initNavTree('_unary_functors_8h_source.html',''); i
 <div class="line"><a id="l00807" name="l00807"></a><span class="lineno">  807</span>    PacketAccess = <a class="code hl_struct" href="struct_eigen_1_1internal_1_1packet__traits.html">packet_traits&lt;Scalar&gt;::HasRound</a></div>
 <div class="line"><a id="l00808" name="l00808"></a><span class="lineno">  808</span>  };</div>
 <div class="line"><a id="l00809" name="l00809"></a><span class="lineno">  809</span>};</div>
-<div class="line"><a id="l00810" name="l00810"></a><span class="lineno">  810</span> </div>
+<div class="line"><a id="l00810" name="l00810"></a><span class="lineno">  810</span><span class="comment"></span> </div>
+<div class="line"><a id="l00811" name="l00811"></a><span class="lineno">  811</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00812" name="l00812"></a><span class="lineno">  812</span><span class="comment">  * \brief Template functor to compute the floor of a scalar</span></div>
+<div class="line"><a id="l00813" name="l00813"></a><span class="lineno">  813</span><span class="comment">  * \sa class CwiseUnaryOp, ArrayBase::floor()</span></div>
+<div class="line"><a id="l00814" name="l00814"></a><span class="lineno">  814</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00815" name="l00815"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__floor__op.html">  815</a></span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar&gt; <span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__floor__op.html">scalar_floor_op</a> {</div>
 <div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span>  EIGEN_EMPTY_STRUCT_CTOR(<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__floor__op.html">scalar_floor_op</a>)</div>
 <div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span>  EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE <span class="keyword">const</span> Scalar operator() (<span class="keyword">const</span> Scalar&amp; a)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="group___unit_math.html#gad7fa514c186141cb9d3fcf824fd41a37">numext::floor</a>(a); }</div>
@@ -745,7 +922,11 @@ $(document).ready(function(){initNavTree('_unary_functors_8h_source.html',''); i
 <div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span>    PacketAccess = <a class="code hl_struct" href="struct_eigen_1_1internal_1_1packet__traits.html">packet_traits&lt;Scalar&gt;::HasFloor</a></div>
 <div class="line"><a id="l00827" name="l00827"></a><span class="lineno">  827</span>  };</div>
 <div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span>};</div>
-<div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span> </div>
+<div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span><span class="comment"></span> </div>
+<div class="line"><a id="l00830" name="l00830"></a><span class="lineno">  830</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00831" name="l00831"></a><span class="lineno">  831</span><span class="comment">  * \brief Template functor to compute the rounded (with current rounding mode)  value of a scalar</span></div>
+<div class="line"><a id="l00832" name="l00832"></a><span class="lineno">  832</span><span class="comment">  * \sa class CwiseUnaryOp, ArrayBase::rint()</span></div>
+<div class="line"><a id="l00833" name="l00833"></a><span class="lineno">  833</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00834" name="l00834"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__rint__op.html">  834</a></span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar&gt; <span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__rint__op.html">scalar_rint_op</a> {</div>
 <div class="line"><a id="l00835" name="l00835"></a><span class="lineno">  835</span>  EIGEN_EMPTY_STRUCT_CTOR(<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__rint__op.html">scalar_rint_op</a>)</div>
 <div class="line"><a id="l00836" name="l00836"></a><span class="lineno">  836</span>  EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE <span class="keyword">const</span> Scalar operator() (<span class="keyword">const</span> Scalar&amp; a)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> numext::rint(a); }</div>
@@ -760,7 +941,11 @@ $(document).ready(function(){initNavTree('_unary_functors_8h_source.html',''); i
 <div class="line"><a id="l00845" name="l00845"></a><span class="lineno">  845</span>    PacketAccess = <a class="code hl_struct" href="struct_eigen_1_1internal_1_1packet__traits.html">packet_traits&lt;Scalar&gt;::HasRint</a></div>
 <div class="line"><a id="l00846" name="l00846"></a><span class="lineno">  846</span>  };</div>
 <div class="line"><a id="l00847" name="l00847"></a><span class="lineno">  847</span>};</div>
-<div class="line"><a id="l00848" name="l00848"></a><span class="lineno">  848</span> </div>
+<div class="line"><a id="l00848" name="l00848"></a><span class="lineno">  848</span><span class="comment"></span> </div>
+<div class="line"><a id="l00849" name="l00849"></a><span class="lineno">  849</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00850" name="l00850"></a><span class="lineno">  850</span><span class="comment">  * \brief Template functor to compute the ceil of a scalar</span></div>
+<div class="line"><a id="l00851" name="l00851"></a><span class="lineno">  851</span><span class="comment">  * \sa class CwiseUnaryOp, ArrayBase::ceil()</span></div>
+<div class="line"><a id="l00852" name="l00852"></a><span class="lineno">  852</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00853" name="l00853"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__ceil__op.html">  853</a></span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar&gt; <span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__ceil__op.html">scalar_ceil_op</a> {</div>
 <div class="line"><a id="l00854" name="l00854"></a><span class="lineno">  854</span>  EIGEN_EMPTY_STRUCT_CTOR(<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__ceil__op.html">scalar_ceil_op</a>)</div>
 <div class="line"><a id="l00855" name="l00855"></a><span class="lineno">  855</span>  EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE <span class="keyword">const</span> Scalar operator() (<span class="keyword">const</span> Scalar&amp; a)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_function" href="group___unit_math.html#gafeea9aa149ff1d941ed830ec389bf7f4">numext::ceil</a>(a); }</div>
@@ -775,7 +960,11 @@ $(document).ready(function(){initNavTree('_unary_functors_8h_source.html',''); i
 <div class="line"><a id="l00864" name="l00864"></a><span class="lineno">  864</span>    PacketAccess = <a class="code hl_struct" href="struct_eigen_1_1internal_1_1packet__traits.html">packet_traits&lt;Scalar&gt;::HasCeil</a></div>
 <div class="line"><a id="l00865" name="l00865"></a><span class="lineno">  865</span>  };</div>
 <div class="line"><a id="l00866" name="l00866"></a><span class="lineno">  866</span>};</div>
-<div class="line"><a id="l00867" name="l00867"></a><span class="lineno">  867</span> </div>
+<div class="line"><a id="l00867" name="l00867"></a><span class="lineno">  867</span><span class="comment"></span> </div>
+<div class="line"><a id="l00868" name="l00868"></a><span class="lineno">  868</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00869" name="l00869"></a><span class="lineno">  869</span><span class="comment">  * \brief Template functor to compute whether a scalar is NaN</span></div>
+<div class="line"><a id="l00870" name="l00870"></a><span class="lineno">  870</span><span class="comment">  * \sa class CwiseUnaryOp, ArrayBase::isnan()</span></div>
+<div class="line"><a id="l00871" name="l00871"></a><span class="lineno">  871</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00872" name="l00872"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__isnan__op.html">  872</a></span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar&gt; <span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__isnan__op.html">scalar_isnan_op</a> {</div>
 <div class="line"><a id="l00873" name="l00873"></a><span class="lineno">  873</span>  EIGEN_EMPTY_STRUCT_CTOR(<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__isnan__op.html">scalar_isnan_op</a>)</div>
 <div class="line"><a id="l00874" name="l00874"></a><span class="lineno">  874</span>  <span class="keyword">typedef</span> <span class="keywordtype">bool</span> result_type;</div>
@@ -795,7 +984,11 @@ $(document).ready(function(){initNavTree('_unary_functors_8h_source.html',''); i
 <div class="line"><a id="l00888" name="l00888"></a><span class="lineno">  888</span>    PacketAccess = <span class="keyword">false</span></div>
 <div class="line"><a id="l00889" name="l00889"></a><span class="lineno">  889</span>  };</div>
 <div class="line"><a id="l00890" name="l00890"></a><span class="lineno">  890</span>};</div>
-<div class="line"><a id="l00891" name="l00891"></a><span class="lineno">  891</span> </div>
+<div class="line"><a id="l00891" name="l00891"></a><span class="lineno">  891</span><span class="comment"></span> </div>
+<div class="line"><a id="l00892" name="l00892"></a><span class="lineno">  892</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00893" name="l00893"></a><span class="lineno">  893</span><span class="comment">  * \brief Template functor to check whether a scalar is +/-inf</span></div>
+<div class="line"><a id="l00894" name="l00894"></a><span class="lineno">  894</span><span class="comment">  * \sa class CwiseUnaryOp, ArrayBase::isinf()</span></div>
+<div class="line"><a id="l00895" name="l00895"></a><span class="lineno">  895</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00896" name="l00896"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__isinf__op.html">  896</a></span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar&gt; <span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__isinf__op.html">scalar_isinf_op</a> {</div>
 <div class="line"><a id="l00897" name="l00897"></a><span class="lineno">  897</span>  EIGEN_EMPTY_STRUCT_CTOR(<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__isinf__op.html">scalar_isinf_op</a>)</div>
 <div class="line"><a id="l00898" name="l00898"></a><span class="lineno">  898</span>  <span class="keyword">typedef</span> <span class="keywordtype">bool</span> result_type;</div>
@@ -815,7 +1008,11 @@ $(document).ready(function(){initNavTree('_unary_functors_8h_source.html',''); i
 <div class="line"><a id="l00912" name="l00912"></a><span class="lineno">  912</span>    PacketAccess = <span class="keyword">false</span></div>
 <div class="line"><a id="l00913" name="l00913"></a><span class="lineno">  913</span>  };</div>
 <div class="line"><a id="l00914" name="l00914"></a><span class="lineno">  914</span>};</div>
-<div class="line"><a id="l00915" name="l00915"></a><span class="lineno">  915</span> </div>
+<div class="line"><a id="l00915" name="l00915"></a><span class="lineno">  915</span><span class="comment"></span> </div>
+<div class="line"><a id="l00916" name="l00916"></a><span class="lineno">  916</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00917" name="l00917"></a><span class="lineno">  917</span><span class="comment">  * \brief Template functor to check whether a scalar has a finite value</span></div>
+<div class="line"><a id="l00918" name="l00918"></a><span class="lineno">  918</span><span class="comment">  * \sa class CwiseUnaryOp, ArrayBase::isfinite()</span></div>
+<div class="line"><a id="l00919" name="l00919"></a><span class="lineno">  919</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00920" name="l00920"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__isfinite__op.html">  920</a></span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar&gt; <span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__isfinite__op.html">scalar_isfinite_op</a> {</div>
 <div class="line"><a id="l00921" name="l00921"></a><span class="lineno">  921</span>  EIGEN_EMPTY_STRUCT_CTOR(<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__isfinite__op.html">scalar_isfinite_op</a>)</div>
 <div class="line"><a id="l00922" name="l00922"></a><span class="lineno">  922</span>  <span class="keyword">typedef</span> <span class="keywordtype">bool</span> result_type;</div>
@@ -835,7 +1032,12 @@ $(document).ready(function(){initNavTree('_unary_functors_8h_source.html',''); i
 <div class="line"><a id="l00936" name="l00936"></a><span class="lineno">  936</span>    PacketAccess = <span class="keyword">false</span></div>
 <div class="line"><a id="l00937" name="l00937"></a><span class="lineno">  937</span>  };</div>
 <div class="line"><a id="l00938" name="l00938"></a><span class="lineno">  938</span>};</div>
-<div class="line"><a id="l00939" name="l00939"></a><span class="lineno">  939</span> </div>
+<div class="line"><a id="l00939" name="l00939"></a><span class="lineno">  939</span><span class="comment"></span> </div>
+<div class="line"><a id="l00940" name="l00940"></a><span class="lineno">  940</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00941" name="l00941"></a><span class="lineno">  941</span><span class="comment">  * \brief Template functor to compute the logical not of a boolean</span></div>
+<div class="line"><a id="l00942" name="l00942"></a><span class="lineno">  942</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00943" name="l00943"></a><span class="lineno">  943</span><span class="comment">  * \sa class CwiseUnaryOp, ArrayBase::operator!</span></div>
+<div class="line"><a id="l00944" name="l00944"></a><span class="lineno">  944</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00945" name="l00945"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__boolean__not__op.html">  945</a></span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar&gt; <span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__boolean__not__op.html">scalar_boolean_not_op</a> {</div>
 <div class="line"><a id="l00946" name="l00946"></a><span class="lineno">  946</span>  EIGEN_EMPTY_STRUCT_CTOR(<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__boolean__not__op.html">scalar_boolean_not_op</a>)</div>
 <div class="line"><a id="l00947" name="l00947"></a><span class="lineno">  947</span>  EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE <span class="keywordtype">bool</span> operator() (<span class="keyword">const</span> <span class="keywordtype">bool</span>&amp; a)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> !a; }</div>
@@ -847,7 +1049,11 @@ $(document).ready(function(){initNavTree('_unary_functors_8h_source.html',''); i
 <div class="line"><a id="l00953" name="l00953"></a><span class="lineno">  953</span>    PacketAccess = <span class="keyword">false</span></div>
 <div class="line"><a id="l00954" name="l00954"></a><span class="lineno">  954</span>  };</div>
 <div class="line"><a id="l00955" name="l00955"></a><span class="lineno">  955</span>};</div>
-<div class="line"><a id="l00956" name="l00956"></a><span class="lineno">  956</span> </div>
+<div class="line"><a id="l00956" name="l00956"></a><span class="lineno">  956</span><span class="comment"></span> </div>
+<div class="line"><a id="l00957" name="l00957"></a><span class="lineno">  957</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00958" name="l00958"></a><span class="lineno">  958</span><span class="comment">  * \brief Template functor to compute the signum of a scalar</span></div>
+<div class="line"><a id="l00959" name="l00959"></a><span class="lineno">  959</span><span class="comment">  * \sa class CwiseUnaryOp, Cwise::sign()</span></div>
+<div class="line"><a id="l00960" name="l00960"></a><span class="lineno">  960</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00961" name="l00961"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__sign__op.html">  961</a></span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar,<span class="keywordtype">bool</span> is_complex=(NumTraits&lt;Scalar&gt;::IsComplex!=0), <span class="keywordtype">bool</span> is_<span class="keywordtype">int</span>eger=(NumTraits&lt;Scalar&gt;::IsInteger!=0) &gt; <span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__sign__op.html">scalar_sign_op</a>;</div>
 <div class="line"><a id="l00962" name="l00962"></a><span class="lineno">  962</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar&gt;</div>
 <div class="line"><a id="l00963" name="l00963"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__sign__op_3_01_scalar_00_01false_00_01true_01_4.html">  963</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__sign__op.html">scalar_sign_op</a>&lt;Scalar, false, true&gt; {</div>
@@ -899,7 +1105,11 @@ $(document).ready(function(){initNavTree('_unary_functors_8h_source.html',''); i
 <div class="line"><a id="l01009" name="l01009"></a><span class="lineno"> 1009</span>    PacketAccess = <a class="code hl_struct" href="struct_eigen_1_1internal_1_1packet__traits.html">packet_traits&lt;Scalar&gt;::HasSign</a></div>
 <div class="line"><a id="l01010" name="l01010"></a><span class="lineno"> 1010</span>  };</div>
 <div class="line"><a id="l01011" name="l01011"></a><span class="lineno"> 1011</span>};</div>
-<div class="line"><a id="l01012" name="l01012"></a><span class="lineno"> 1012</span> </div>
+<div class="line"><a id="l01012" name="l01012"></a><span class="lineno"> 1012</span><span class="comment"></span> </div>
+<div class="line"><a id="l01013" name="l01013"></a><span class="lineno"> 1013</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l01014" name="l01014"></a><span class="lineno"> 1014</span><span class="comment">  * \brief Template functor to compute the logistic function of a scalar</span></div>
+<div class="line"><a id="l01015" name="l01015"></a><span class="lineno"> 1015</span><span class="comment">  * \sa class CwiseUnaryOp, ArrayBase::logistic()</span></div>
+<div class="line"><a id="l01016" name="l01016"></a><span class="lineno"> 1016</span><span class="comment">  */</span></div>
 <div class="line"><a id="l01017" name="l01017"></a><span class="lineno"> 1017</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a id="l01018" name="l01018"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__logistic__op.html"> 1018</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__logistic__op.html">scalar_logistic_op</a> {</div>
 <div class="line"><a id="l01019" name="l01019"></a><span class="lineno"> 1019</span>  EIGEN_EMPTY_STRUCT_CTOR(<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__logistic__op.html">scalar_logistic_op</a>)</div>
@@ -914,7 +1124,18 @@ $(document).ready(function(){initNavTree('_unary_functors_8h_source.html',''); i
 <div class="line"><a id="l01028" name="l01028"></a><span class="lineno"> 1028</span>  }</div>
 <div class="line"><a id="l01029" name="l01029"></a><span class="lineno"> 1029</span>};</div>
 <div class="line"><a id="l01030" name="l01030"></a><span class="lineno"> 1030</span> </div>
-<div class="line"><a id="l01031" name="l01031"></a><span class="lineno"> 1031</span><span class="preprocessor">#ifndef EIGEN_GPU_COMPILE_PHASE</span></div>
+<div class="line"><a id="l01031" name="l01031"></a><span class="lineno"> 1031</span><span class="preprocessor">#ifndef EIGEN_GPU_COMPILE_PHASE</span><span class="comment"></span></div>
+<div class="line"><a id="l01032" name="l01032"></a><span class="lineno"> 1032</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l01033" name="l01033"></a><span class="lineno"> 1033</span><span class="comment">  * \brief Template specialization of the logistic function for float.</span></div>
+<div class="line"><a id="l01034" name="l01034"></a><span class="lineno"> 1034</span><span class="comment">  *</span></div>
+<div class="line"><a id="l01035" name="l01035"></a><span class="lineno"> 1035</span><span class="comment">  *  Uses just a 9/10-degree rational interpolant which</span></div>
+<div class="line"><a id="l01036" name="l01036"></a><span class="lineno"> 1036</span><span class="comment">  *  interpolates 1/(1+exp(-x)) - 0.5 up to a couple of ulps in the range</span></div>
+<div class="line"><a id="l01037" name="l01037"></a><span class="lineno"> 1037</span><span class="comment">  *  [-9, 18]. Below -9 we use the more accurate approximation</span></div>
+<div class="line"><a id="l01038" name="l01038"></a><span class="lineno"> 1038</span><span class="comment">  *  1/(1+exp(-x)) ~= exp(x), and above 18 the logistic function is 1 withing</span></div>
+<div class="line"><a id="l01039" name="l01039"></a><span class="lineno"> 1039</span><span class="comment">  *  one ulp. The shifted logistic is interpolated because it was easier to</span></div>
+<div class="line"><a id="l01040" name="l01040"></a><span class="lineno"> 1040</span><span class="comment">  *  make the fit converge.</span></div>
+<div class="line"><a id="l01041" name="l01041"></a><span class="lineno"> 1041</span><span class="comment">  *</span></div>
+<div class="line"><a id="l01042" name="l01042"></a><span class="lineno"> 1042</span><span class="comment">  */</span></div>
 <div class="line"><a id="l01043" name="l01043"></a><span class="lineno"> 1043</span><span class="keyword">template</span> &lt;&gt;</div>
 <div class="line"><a id="l01044" name="l01044"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__logistic__op_3_01float_01_4.html"> 1044</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__logistic__op.html">scalar_logistic_op</a>&lt;float&gt; {</div>
 <div class="line"><a id="l01045" name="l01045"></a><span class="lineno"> 1045</span>  EIGEN_EMPTY_STRUCT_CTOR(<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__logistic__op.html">scalar_logistic_op</a>)</div>
@@ -1083,7 +1304,7 @@ $(document).ready(function(){initNavTree('_unary_functors_8h_source.html',''); i
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_bfb2597c438c4234fbdcce568a9e650d.html">eigeninclude</a></li><li class="navelem"><a class="el" href="dir_81addad79085c513f45446cf62836735.html">Eigen</a></li><li class="navelem"><a class="el" href="dir_e429501dd9edb337aeb96d684aa3b6ff.html">src</a></li><li class="navelem"><a class="el" href="dir_09ad905ad0d1f25ba5be966168b2edef.html">Core</a></li><li class="navelem"><a class="el" href="dir_06e33d5e654e97c667c1e8dbac1ecc46.html">functors</a></li><li class="navelem"><b>UnaryFunctors.h</b></li>
-    <li class="footer">Generated on Tue Oct 19 2021 04:32:17 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Oct 19 2021 04:42:41 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

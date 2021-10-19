@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-17-g9e6db17</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-19-ge56d6de</span>
    </div>
   </td>
  </tr>
@@ -108,7 +108,18 @@ $(document).ready(function(){initNavTree('_comma_initializer_8h_source.html','')
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define EIGEN_COMMAINITIALIZER_H</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_eigen.html">Eigen</a> { </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"></span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">/** \class CommaInitializer</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">  * \ingroup Core_Module</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">  * \brief Helper class used by the comma initializer operator</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">  * This class is internally used to implement the comma initializer feature. It is</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">  * the return type of MatrixBase::operator&lt;&lt;, and most of the time this is the only</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">  * way it is used.</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">  * \sa \blank \ref MatrixBaseCommaInitRef &quot;MatrixBase::operator&lt;&lt;&quot;, CommaInitializer::finished()</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> XprType&gt;</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="struct_eigen_1_1_comma_initializer.html">   28</a></span><span class="keyword">struct </span><a class="code hl_class" href="struct_eigen_1_1_comma_initializer.html">CommaInitializer</a></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>{</div>
@@ -194,7 +205,14 @@ $(document).ready(function(){initNavTree('_comma_initializer_8h_source.html','')
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  {</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <a class="code hl_function" href="struct_eigen_1_1_comma_initializer.html#a87dd22a8aa63222a264d263a254255b1">finished</a>();</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>  }</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="comment"></span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="comment">  /** \returns the built matrix once all its coefficients have been set.</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="comment">    * Calling finished is 100% optional. Its purpose is to write expressions</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="comment">    * like this:</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment">    * \code</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment">    * quaternion.fromRotationMatrix((Matrix3f() &lt;&lt; axis0, axis1, axis2).finished());</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="comment">    * \endcode</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment">    */</span></div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>  EIGEN_DEVICE_FUNC</div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="struct_eigen_1_1_comma_initializer.html#a87dd22a8aa63222a264d263a254255b1">  121</a></span>  <span class="keyword">inline</span> XprType&amp; <a class="code hl_function" href="struct_eigen_1_1_comma_initializer.html#a87dd22a8aa63222a264d263a254255b1">finished</a>() {</div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>      eigen_assert(((m_row+m_currentBlockRows) == m_xpr.rows() || m_xpr.cols() == 0)</div>
@@ -208,13 +226,27 @@ $(document).ready(function(){initNavTree('_comma_initializer_8h_source.html','')
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>  <a class="code hl_typedef" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> m_col;              <span class="comment">// current col id</span></div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>  <a class="code hl_typedef" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> m_currentBlockRows; <span class="comment">// current block height</span></div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>};</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="comment"></span> </div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="comment">/** \anchor MatrixBaseCommaInitRef</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="comment">  * Convenient operator to set the coefficients of a matrix.</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="comment">  * The coefficients must be provided in a row major order and exactly match</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="comment">  * the size of the matrix. Otherwise an assertion is raised.</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="comment">  * Example: \include MatrixBase_set.cpp</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="comment">  * Output: \verbinclude MatrixBase_set.out</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="comment">  * </span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="comment">  * \note According the c++ standard, the argument expressions of this comma initializer are evaluated in arbitrary order.</span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="comment">  * \sa CommaInitializer::finished(), class CommaInitializer</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Derived&gt;</div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno"><a class="line" href="class_eigen_1_1_dense_base.html#ae55fbfa5630cabf2a9cba1248581bc66">  148</a></span>EIGEN_DEVICE_FUNC <span class="keyword">inline</span> <a class="code hl_class" href="struct_eigen_1_1_comma_initializer.html">CommaInitializer&lt;Derived&gt;</a> <a class="code hl_function" href="class_eigen_1_1_dense_base.html#ae55fbfa5630cabf2a9cba1248581bc66">DenseBase&lt;Derived&gt;::operator&lt;&lt; </a>(<span class="keyword">const</span> <a class="code hl_typedef" href="class_eigen_1_1_dense_base.html#a5feed465b3a8e60c47e73ecce83e39a2">Scalar</a>&amp; s)</div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>{</div>
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>  <span class="keywordflow">return</span> <a class="code hl_class" href="struct_eigen_1_1_comma_initializer.html">CommaInitializer&lt;Derived&gt;</a>(*<span class="keyword">static_cast&lt;</span>Derived*<span class="keyword">&gt;</span>(<span class="keyword">this</span>), s);</div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>}</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="comment"></span> </div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="comment">/** \sa operator&lt;&lt;(const Scalar&amp;) */</span></div>
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Derived&gt;</div>
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> OtherDerived&gt;</div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno"><a class="line" href="class_eigen_1_1_dense_base.html#ad0054eb99270d11e4b2f57ade70f0c1d">  156</a></span>EIGEN_DEVICE_FUNC <span class="keyword">inline</span> <a class="code hl_class" href="struct_eigen_1_1_comma_initializer.html">CommaInitializer&lt;Derived&gt;</a></div>
@@ -239,7 +271,7 @@ $(document).ready(function(){initNavTree('_comma_initializer_8h_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_bfb2597c438c4234fbdcce568a9e650d.html">eigeninclude</a></li><li class="navelem"><a class="el" href="dir_81addad79085c513f45446cf62836735.html">Eigen</a></li><li class="navelem"><a class="el" href="dir_e429501dd9edb337aeb96d684aa3b6ff.html">src</a></li><li class="navelem"><a class="el" href="dir_09ad905ad0d1f25ba5be966168b2edef.html">Core</a></li><li class="navelem"><b>CommaInitializer.h</b></li>
-    <li class="footer">Generated on Tue Oct 19 2021 04:32:16 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Oct 19 2021 04:42:41 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

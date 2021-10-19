@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-17-g9e6db17</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-19-ge56d6de</span>
    </div>
   </td>
  </tr>
@@ -162,7 +162,45 @@ $(document).ready(function(){initNavTree('_indexed_view_8h_source.html',''); ini
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> XprType, <span class="keyword">typename</span> RowIndices, <span class="keyword">typename</span> ColIndices, <span class="keyword">typename</span> StorageKind&gt;</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="keyword">class </span><a class="code hl_class" href="class_eigen_1_1_indexed_view_impl.html">IndexedViewImpl</a>;</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment"></span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">/** \class IndexedView</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">  * \ingroup Core_Module</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">  * \brief Expression of a non-sequential sub-matrix defined by arbitrary sequences of row and column indices</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment">  * \tparam XprType the type of the expression in which we are taking the intersections of sub-rows and sub-columns</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment">  * \tparam RowIndices the type of the object defining the sequence of row indices</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment">  * \tparam ColIndices the type of the object defining the sequence of column indices</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">  * This class represents an expression of a sub-matrix (or sub-vector) defined as the intersection</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment">  * of sub-sets of rows and columns, that are themself defined by generic sequences of row indices \f$ \{r_0,r_1,..r_{m-1}\} \f$</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment">  * and column indices \f$ \{c_0,c_1,..c_{n-1} \}\f$. Let \f$ A \f$  be the nested matrix, then the resulting matrix \f$ B \f$ has \c m</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment">  * rows and \c n columns, and its entries are given by: \f$ B(i,j) = A(r_i,c_j) \f$.</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">  * The \c RowIndices and \c ColIndices types must be compatible with the following API:</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">  * \code</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment">  * &lt;integral type&gt; operator[](Index) const;</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment">  * Index size() const;</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment">  * \endcode</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment">  * Typical supported types thus include:</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment">  *  - std::vector&lt;int&gt;</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="comment">  *  - std::valarray&lt;int&gt;</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="comment">  *  - std::array&lt;int&gt;</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment">  *  - Plain C arrays: int[N]</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment">  *  - Eigen::ArrayXi</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment">  *  - decltype(ArrayXi::LinSpaced(...))</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment">  *  - Any view/expressions of the previous types</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="comment">  *  - Eigen::ArithmeticSequence</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment">  *  - Eigen::internal::AllRange      (helper for Eigen::all)</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment">  *  - Eigen::internal::SingleRange  (helper for single index)</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment">  *  - etc.</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment">  * In typical usages of %Eigen, this class should never be used directly. It is the return type of</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment">  * DenseBase::operator()(const RowIndices&amp;, const ColIndices&amp;).</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="comment">  * \sa class Block</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> XprType, <span class="keyword">typename</span> RowIndices, <span class="keyword">typename</span> ColIndices&gt;</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="class_eigen_1_1_indexed_view.html">  109</a></span><span class="keyword">class </span><a class="code hl_class" href="class_eigen_1_1_indexed_view.html">IndexedView</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_eigen_1_1_indexed_view_impl.html">IndexedViewImpl</a>&lt;XprType, RowIndices, ColIndices, typename internal::traits&lt;XprType&gt;::StorageKind&gt;</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>{</div>
@@ -178,19 +216,25 @@ $(document).ready(function(){initNavTree('_indexed_view_8h_source.html',''); ini
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>  <a class="code hl_class" href="class_eigen_1_1_indexed_view.html">IndexedView</a>(XprType&amp; xpr, <span class="keyword">const</span> T0&amp; <a class="code hl_function" href="class_eigen_1_1_indexed_view.html#a111af48fc1feadaa734c2321dd6def19">rowIndices</a>, <span class="keyword">const</span> T1&amp; <a class="code hl_function" href="class_eigen_1_1_indexed_view.html#a5f2adba009f83eaa778b3f2fe0051287">colIndices</a>)</div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    : m_xpr(xpr), m_rowIndices(<a class="code hl_function" href="class_eigen_1_1_indexed_view.html#a111af48fc1feadaa734c2321dd6def19">rowIndices</a>), m_colIndices(<a class="code hl_function" href="class_eigen_1_1_indexed_view.html#a5f2adba009f83eaa778b3f2fe0051287">colIndices</a>)</div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>  {}</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="comment"></span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="comment">  /** \returns number of rows */</span></div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="class_eigen_1_1_indexed_view.html#ae0d840059e7753d58f3de53da7d04ce0">  125</a></span>  <a class="code hl_typedef" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> <a class="code hl_function" href="class_eigen_1_1_indexed_view.html#ae0d840059e7753d58f3de53da7d04ce0">rows</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> internal::size(m_rowIndices); }</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="comment"></span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="comment">  /** \returns number of columns */</span></div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="class_eigen_1_1_indexed_view.html#a6d5f355dd721df6d39482a04e5ffd44d">  128</a></span>  <a class="code hl_typedef" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> <a class="code hl_function" href="class_eigen_1_1_indexed_view.html#a6d5f355dd721df6d39482a04e5ffd44d">cols</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> internal::size(m_colIndices); }</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="comment"></span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="comment">  /** \returns the nested expression */</span></div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>  <span class="keyword">const</span> <span class="keyword">typename</span> internal::remove_all&lt;XprType&gt;::type&amp;</div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="class_eigen_1_1_indexed_view.html#adce77031ea75ef0a91b9dfce9034c92a">  132</a></span>  <a class="code hl_function" href="class_eigen_1_1_indexed_view.html#adce77031ea75ef0a91b9dfce9034c92a">nestedExpression</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_xpr; }</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="comment"></span> </div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="comment">  /** \returns the nested expression */</span></div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>  <span class="keyword">typename</span> internal::remove_reference&lt;XprType&gt;::type&amp;</div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno"><a class="line" href="class_eigen_1_1_indexed_view.html#a73c506f06b05eaba6f11e1a586ae8b2e">  136</a></span>  <a class="code hl_function" href="class_eigen_1_1_indexed_view.html#a73c506f06b05eaba6f11e1a586ae8b2e">nestedExpression</a>() { <span class="keywordflow">return</span> m_xpr; }</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="comment"></span> </div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="comment">  /** \returns a const reference to the object storing/generating the row indices */</span></div>
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="class_eigen_1_1_indexed_view.html#a111af48fc1feadaa734c2321dd6def19">  139</a></span>  <span class="keyword">const</span> RowIndices&amp; <a class="code hl_function" href="class_eigen_1_1_indexed_view.html#a111af48fc1feadaa734c2321dd6def19">rowIndices</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_rowIndices; }</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="comment"></span> </div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="comment">  /** \returns a const reference to the object storing/generating the column indices */</span></div>
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno"><a class="line" href="class_eigen_1_1_indexed_view.html#a5f2adba009f83eaa778b3f2fe0051287">  142</a></span>  <span class="keyword">const</span> ColIndices&amp; <a class="code hl_function" href="class_eigen_1_1_indexed_view.html#a5f2adba009f83eaa778b3f2fe0051287">colIndices</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_colIndices; }</div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="keyword">protected</span>:</div>
@@ -325,7 +369,7 @@ $(document).ready(function(){initNavTree('_indexed_view_8h_source.html',''); ini
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_bfb2597c438c4234fbdcce568a9e650d.html">eigeninclude</a></li><li class="navelem"><a class="el" href="dir_81addad79085c513f45446cf62836735.html">Eigen</a></li><li class="navelem"><a class="el" href="dir_e429501dd9edb337aeb96d684aa3b6ff.html">src</a></li><li class="navelem"><a class="el" href="dir_09ad905ad0d1f25ba5be966168b2edef.html">Core</a></li><li class="navelem"><b>IndexedView.h</b></li>
-    <li class="footer">Generated on Tue Oct 19 2021 04:32:17 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Oct 19 2021 04:42:41 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

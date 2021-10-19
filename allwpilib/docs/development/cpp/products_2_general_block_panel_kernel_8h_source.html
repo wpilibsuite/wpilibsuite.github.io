@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-17-g9e6db17</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-19-ge56d6de</span>
    </div>
   </td>
  </tr>
@@ -120,7 +120,8 @@ $(document).ready(function(){initNavTree('products_2_general_block_panel_kernel_
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> _LhsScalar, <span class="keyword">typename</span> _RhsScalar, <span class="keywordtype">bool</span> _ConjLhs=false, <span class="keywordtype">bool</span> _ConjRhs=false, <span class="keywordtype">int</span> Arch=Architecture::Target, <span class="keywordtype">int</span> _PacketSize=GEBPPacketFull&gt;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">class </span>gebp_traits;</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"></span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">/** \internal \returns b if a&lt;=0, and returns a otherwise. */</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">inline</span> std::ptrdiff_t manage_caching_sizes_helper(std::ptrdiff_t a, std::ptrdiff_t b)</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>{</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  <span class="keywordflow">return</span> a&lt;=0 ? b : a;</div>
@@ -161,7 +162,8 @@ $(document).ready(function(){initNavTree('products_2_general_block_panel_kernel_
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">#undef EIGEN_SET_DEFAULT_L1_CACHE_SIZE</span></div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="preprocessor">#undef EIGEN_SET_DEFAULT_L2_CACHE_SIZE</span></div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="preprocessor">#undef EIGEN_SET_DEFAULT_L3_CACHE_SIZE</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment"></span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">/** \internal */</span></div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1_cache_sizes.html">   71</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1_cache_sizes.html">CacheSizes</a> {</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  <a class="code hl_struct" href="struct_eigen_1_1internal_1_1_cache_sizes.html">CacheSizes</a>(): m_l1(-1),m_l2(-1),m_l3(-1) {</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="namespace_eigen.html#a2669f89ff38296a38e6d973552eb4e33">l1CacheSize</a>, <a class="code hl_function" href="namespace_eigen.html#a2cfc0330ba567d63a496be1cac8427ae">l2CacheSize</a>, <a class="code hl_function" href="namespace_eigen.html#ae2efa4852ea90c2d47b7dcec5b40ba2b">l3CacheSize</a>;</div>
@@ -175,7 +177,8 @@ $(document).ready(function(){initNavTree('products_2_general_block_panel_kernel_
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  std::ptrdiff_t m_l2;</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  std::ptrdiff_t m_l3;</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>};</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment"></span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">/** \internal */</span></div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="keyword">inline</span> <span class="keywordtype">void</span> manage_caching_sizes(Action action, std::ptrdiff_t* l1, std::ptrdiff_t* l2, std::ptrdiff_t* l3)</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>{</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  <span class="keyword">static</span> <a class="code hl_struct" href="struct_eigen_1_1internal_1_1_cache_sizes.html">CacheSizes</a> m_cacheSizes;</div>
@@ -411,7 +414,23 @@ $(document).ready(function(){initNavTree('products_2_general_block_panel_kernel_
 <div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>}</div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span> </div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span><span class="comment"></span> </div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span><span class="comment">/** \brief Computes the blocking parameters for a m x k times k x n matrix product</span></div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span><span class="comment">  * \param[in,out] k Input: the third dimension of the product. Output: the blocking size along the same dimension.</span></div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span><span class="comment">  * \param[in,out] m Input: the number of rows of the left hand side. Output: the blocking size along the same dimension.</span></div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span><span class="comment">  * \param[in,out] n Input: the number of columns of the right hand side. Output: the blocking size along the same dimension.</span></div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span><span class="comment">  * Given a m x k times k x n matrix product of scalar types \c LhsScalar and \c RhsScalar,</span></div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span><span class="comment">  * this function computes the blocking size parameters along the respective dimensions</span></div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span><span class="comment">  * for matrix products and related algorithms.</span></div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span><span class="comment">  * The blocking size parameters may be evaluated:</span></div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span><span class="comment">  *   - either by a heuristic based on cache sizes;</span></div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span><span class="comment">  *   - or using fixed prescribed values (for testing purposes).</span></div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span><span class="comment">  * \sa setCpuCacheSizes */</span></div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span> </div>
 <div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> LhsScalar, <span class="keyword">typename</span> RhsScalar, <span class="keywordtype">int</span> KcFactor, <span class="keyword">typename</span> Index&gt;</div>
 <div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span><span class="keywordtype">void</span> computeProductBlockingSizes(<a class="code hl_typedef" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a>&amp; k, <a class="code hl_typedef" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a>&amp; m, <a class="code hl_typedef" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a>&amp; n, <a class="code hl_typedef" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> num_threads = 1)</div>
 <div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>{</div>
@@ -2678,28 +2697,40 @@ $(document).ready(function(){initNavTree('products_2_general_block_panel_kernel_
 <div class="line"><a id="l02601" name="l02601"></a><span class="lineno"> 2601</span>};</div>
 <div class="line"><a id="l02602" name="l02602"></a><span class="lineno"> 2602</span> </div>
 <div class="line"><a id="l02603" name="l02603"></a><span class="lineno"> 2603</span>} <span class="comment">// end namespace internal</span></div>
-<div class="line"><a id="l02604" name="l02604"></a><span class="lineno"> 2604</span> </div>
+<div class="line"><a id="l02604" name="l02604"></a><span class="lineno"> 2604</span><span class="comment"></span> </div>
+<div class="line"><a id="l02605" name="l02605"></a><span class="lineno"> 2605</span><span class="comment">/** \returns the currently set level 1 cpu cache size (in bytes) used to estimate the ideal blocking size parameters.</span></div>
+<div class="line"><a id="l02606" name="l02606"></a><span class="lineno"> 2606</span><span class="comment">  * \sa setCpuCacheSize */</span></div>
 <div class="line"><a id="l02607" name="l02607"></a><span class="lineno"><a class="line" href="namespace_eigen.html#a2669f89ff38296a38e6d973552eb4e33"> 2607</a></span><span class="keyword">inline</span> std::ptrdiff_t <a class="code hl_function" href="namespace_eigen.html#a2669f89ff38296a38e6d973552eb4e33">l1CacheSize</a>()</div>
 <div class="line"><a id="l02608" name="l02608"></a><span class="lineno"> 2608</span>{</div>
 <div class="line"><a id="l02609" name="l02609"></a><span class="lineno"> 2609</span>  std::ptrdiff_t l1, l2, l3;</div>
 <div class="line"><a id="l02610" name="l02610"></a><span class="lineno"> 2610</span>  internal::manage_caching_sizes(GetAction, &amp;l1, &amp;l2, &amp;l3);</div>
 <div class="line"><a id="l02611" name="l02611"></a><span class="lineno"> 2611</span>  <span class="keywordflow">return</span> l1;</div>
 <div class="line"><a id="l02612" name="l02612"></a><span class="lineno"> 2612</span>}</div>
-<div class="line"><a id="l02613" name="l02613"></a><span class="lineno"> 2613</span> </div>
+<div class="line"><a id="l02613" name="l02613"></a><span class="lineno"> 2613</span><span class="comment"></span> </div>
+<div class="line"><a id="l02614" name="l02614"></a><span class="lineno"> 2614</span><span class="comment">/** \returns the currently set level 2 cpu cache size (in bytes) used to estimate the ideal blocking size parameters.</span></div>
+<div class="line"><a id="l02615" name="l02615"></a><span class="lineno"> 2615</span><span class="comment">  * \sa setCpuCacheSize */</span></div>
 <div class="line"><a id="l02616" name="l02616"></a><span class="lineno"><a class="line" href="namespace_eigen.html#a2cfc0330ba567d63a496be1cac8427ae"> 2616</a></span><span class="keyword">inline</span> std::ptrdiff_t <a class="code hl_function" href="namespace_eigen.html#a2cfc0330ba567d63a496be1cac8427ae">l2CacheSize</a>()</div>
 <div class="line"><a id="l02617" name="l02617"></a><span class="lineno"> 2617</span>{</div>
 <div class="line"><a id="l02618" name="l02618"></a><span class="lineno"> 2618</span>  std::ptrdiff_t l1, l2, l3;</div>
 <div class="line"><a id="l02619" name="l02619"></a><span class="lineno"> 2619</span>  internal::manage_caching_sizes(GetAction, &amp;l1, &amp;l2, &amp;l3);</div>
 <div class="line"><a id="l02620" name="l02620"></a><span class="lineno"> 2620</span>  <span class="keywordflow">return</span> l2;</div>
 <div class="line"><a id="l02621" name="l02621"></a><span class="lineno"> 2621</span>}</div>
-<div class="line"><a id="l02622" name="l02622"></a><span class="lineno"> 2622</span> </div>
+<div class="line"><a id="l02622" name="l02622"></a><span class="lineno"> 2622</span><span class="comment"></span> </div>
+<div class="line"><a id="l02623" name="l02623"></a><span class="lineno"> 2623</span><span class="comment">/** \returns the currently set level 3 cpu cache size (in bytes) used to estimate the ideal blocking size paramete\</span></div>
+<div class="line"><a id="l02624" name="l02624"></a><span class="lineno"> 2624</span><span class="comment">rs.                                                                                                                </span></div>
+<div class="line"><a id="l02625" name="l02625"></a><span class="lineno"> 2625</span><span class="comment">* \sa setCpuCacheSize */</span></div>
 <div class="line"><a id="l02626" name="l02626"></a><span class="lineno"><a class="line" href="namespace_eigen.html#ae2efa4852ea90c2d47b7dcec5b40ba2b"> 2626</a></span><span class="keyword">inline</span> std::ptrdiff_t <a class="code hl_function" href="namespace_eigen.html#ae2efa4852ea90c2d47b7dcec5b40ba2b">l3CacheSize</a>()</div>
 <div class="line"><a id="l02627" name="l02627"></a><span class="lineno"> 2627</span>{</div>
 <div class="line"><a id="l02628" name="l02628"></a><span class="lineno"> 2628</span>  std::ptrdiff_t l1, l2, l3;</div>
 <div class="line"><a id="l02629" name="l02629"></a><span class="lineno"> 2629</span>  internal::manage_caching_sizes(GetAction, &amp;l1, &amp;l2, &amp;l3);</div>
 <div class="line"><a id="l02630" name="l02630"></a><span class="lineno"> 2630</span>  <span class="keywordflow">return</span> l3;</div>
 <div class="line"><a id="l02631" name="l02631"></a><span class="lineno"> 2631</span>}</div>
-<div class="line"><a id="l02632" name="l02632"></a><span class="lineno"> 2632</span> </div>
+<div class="line"><a id="l02632" name="l02632"></a><span class="lineno"> 2632</span><span class="comment"></span> </div>
+<div class="line"><a id="l02633" name="l02633"></a><span class="lineno"> 2633</span><span class="comment">/** Set the cpu L1 and L2 cache sizes (in bytes).</span></div>
+<div class="line"><a id="l02634" name="l02634"></a><span class="lineno"> 2634</span><span class="comment">  * These values are use to adjust the size of the blocks</span></div>
+<div class="line"><a id="l02635" name="l02635"></a><span class="lineno"> 2635</span><span class="comment">  * for the algorithms working per blocks.</span></div>
+<div class="line"><a id="l02636" name="l02636"></a><span class="lineno"> 2636</span><span class="comment">  *</span></div>
+<div class="line"><a id="l02637" name="l02637"></a><span class="lineno"> 2637</span><span class="comment">  * \sa computeProductBlockingSizes */</span></div>
 <div class="line"><a id="l02638" name="l02638"></a><span class="lineno"><a class="line" href="namespace_eigen.html#ae64421554aa0a4bf9258bafe3170102b"> 2638</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="namespace_eigen.html#ae64421554aa0a4bf9258bafe3170102b">setCpuCacheSizes</a>(std::ptrdiff_t l1, std::ptrdiff_t l2, std::ptrdiff_t l3)</div>
 <div class="line"><a id="l02639" name="l02639"></a><span class="lineno"> 2639</span>{</div>
 <div class="line"><a id="l02640" name="l02640"></a><span class="lineno"> 2640</span>  internal::manage_caching_sizes(SetAction, &amp;l1, &amp;l2, &amp;l3);</div>
@@ -2748,7 +2779,7 @@ $(document).ready(function(){initNavTree('products_2_general_block_panel_kernel_
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_bfb2597c438c4234fbdcce568a9e650d.html">eigeninclude</a></li><li class="navelem"><a class="el" href="dir_81addad79085c513f45446cf62836735.html">Eigen</a></li><li class="navelem"><a class="el" href="dir_e429501dd9edb337aeb96d684aa3b6ff.html">src</a></li><li class="navelem"><a class="el" href="dir_09ad905ad0d1f25ba5be966168b2edef.html">Core</a></li><li class="navelem"><a class="el" href="dir_c2964fe9ae415fe9be3f602f097e9266.html">products</a></li><li class="navelem"><b>GeneralBlockPanelKernel.h</b></li>
-    <li class="footer">Generated on Tue Oct 19 2021 04:32:18 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Oct 19 2021 04:42:42 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

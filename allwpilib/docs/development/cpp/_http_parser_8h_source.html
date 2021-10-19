@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-17-g9e6db17</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-19-ge56d6de</span>
    </div>
   </td>
  </tr>
@@ -110,7 +110,12 @@ $(document).ready(function(){initNavTree('_http_parser_8h_source.html',''); init
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;wpi/http_parser.h&quot;</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">namespace </span>wpi {</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"></span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> * HTTP protocol parser.  Performs incremental parsing with callbacks for each</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> * part of the HTTP protocol.  As this is incremental, it&#39;s suitable for use</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> * with event based frameworks that provide arbitrary chunks of data.</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="classwpi_1_1_http_parser.html">   23</a></span><span class="keyword">class </span><a class="code hl_class" href="classwpi_1_1_http_parser.html">HttpParser</a> {</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> <span class="keyword">public</span>:</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <span class="keyword">enum</span> Type {</div>
@@ -118,65 +123,186 @@ $(document).ready(function(){initNavTree('_http_parser_8h_source.html',''); init
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    kResponse = HTTP_RESPONSE,</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    kBoth = HTTP_BOTH</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  };</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment"></span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">   * Returns the library version. Bits 16-23 contain the major version number,</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">   * bits 8-15 the minor version number and bits 0-7 the patch level.</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="classwpi_1_1_http_parser.html#a26923629cb825ff70f633da293cf9855">   35</a></span>  <span class="keyword">static</span> uint32_t <a class="code hl_function" href="classwpi_1_1_http_parser.html#a26923629cb825ff70f633da293cf9855">GetParserVersion</a>();</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment"></span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">   * Constructor.</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">   * @param type Type of parser (request or response or both)</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classwpi_1_1_http_parser.html#a472c21ee8af570a441801a241cd0090f">   41</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classwpi_1_1_http_parser.html#a472c21ee8af570a441801a241cd0090f">HttpParser</a>(Type type);</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment"></span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">   * Reset the parser to initial state.</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">   * This allows reusing the same parser object from request to request.</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">   * @param type Type of parser (request or response or both)</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classwpi_1_1_http_parser.html#a7e673e7d951845493dea1545a1ef4789">   48</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1_http_parser.html#a7e673e7d951845493dea1545a1ef4789">Reset</a>(Type type);</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment"></span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">   * Set the maximum accepted length for URLs, field names, and field values.</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">   * The default is 1024.</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">   * @param len maximum length</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="classwpi_1_1_http_parser.html#a1fbfdcfb6dc27aebb6536d3bbc909419">   55</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1_http_parser.html#a1fbfdcfb6dc27aebb6536d3bbc909419">SetMaxLength</a>(<span class="keywordtype">size_t</span> len) { m_maxLength = len; }</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment"></span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">   * Executes the parser.  An empty input is treated as EOF.</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">   * @param in input data</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">   * @return Trailing input data after the parse.</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="classwpi_1_1_http_parser.html#a6b1a24906e1e0cf478335de3c5943d7e">   62</a></span>  std::string_view <a class="code hl_function" href="classwpi_1_1_http_parser.html#a6b1a24906e1e0cf478335de3c5943d7e">Execute</a>(std::string_view in) {</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    in.remove_prefix(</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        http_parser_execute(&amp;m_parser, &amp;m_settings, in.data(), in.size()));</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordflow">return</span> in;</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  }</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment"></span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">   * Get HTTP major version.</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="classwpi_1_1_http_parser.html#a87ef1ce31fd93d4f57a1a25a9b2f09ff">   71</a></span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classwpi_1_1_http_parser.html#a87ef1ce31fd93d4f57a1a25a9b2f09ff">GetMajor</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_parser.<a class="code hl_variable" href="structwpi_1_1http__parser.html#a98ecfc0b870f5735a08bec3b2cf19651">http_major</a>; }</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment"></span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">   * Get HTTP minor version.</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="classwpi_1_1_http_parser.html#ac4e772cc0e21362753cc63fe6a35290a">   76</a></span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classwpi_1_1_http_parser.html#ac4e772cc0e21362753cc63fe6a35290a">GetMinor</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_parser.http_minor; }</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment"></span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">   * Get HTTP status code.  Valid only on responses.  Valid in and after</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment">   * the OnStatus() callback has been called.</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="classwpi_1_1_http_parser.html#aeff70d5741a505b13476b0a52e951dd9">   82</a></span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_function" href="classwpi_1_1_http_parser.html#aeff70d5741a505b13476b0a52e951dd9">GetStatusCode</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_parser.status_code; }</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment"></span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">   * Get HTTP method.  Valid only on requests.</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="classwpi_1_1_http_parser.html#a39ceb22125f7bf81158d1f56f0455c90">   87</a></span>  http_method <a class="code hl_function" href="classwpi_1_1_http_parser.html#a39ceb22125f7bf81158d1f56f0455c90">GetMethod</a>()<span class="keyword"> const </span>{</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>http_method<span class="keyword">&gt;</span>(m_parser.method);</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  }</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment"></span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="comment">   * Determine if an error occurred.</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="comment">   * @return False if no error.</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="classwpi_1_1_http_parser.html#a4dc0f900a9f7a9123a547a7fa246a3c0">   95</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classwpi_1_1_http_parser.html#a4dc0f900a9f7a9123a547a7fa246a3c0">HasError</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_parser.http_errno != HPE_OK; }</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment"></span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="comment">   * Get error number.</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="classwpi_1_1_http_parser.html#a820c1cee5fadad27bb63e614ee3745f1">  100</a></span>  http_errno <a class="code hl_function" href="classwpi_1_1_http_parser.html#a820c1cee5fadad27bb63e614ee3745f1">GetError</a>()<span class="keyword"> const </span>{</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>http_errno<span class="keyword">&gt;</span>(m_parser.http_errno);</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  }</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment"></span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="comment">   * Abort the parse.  Call this from a callback handler to indicate an error.</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="comment">   * This will result in GetError() returning one of the callback-related</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment">   * errors (e.g. HPE_CB_message_begin).</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="classwpi_1_1_http_parser.html#a91f629b40db8a8fda9b20de97fde32c7">  109</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1_http_parser.html#a91f629b40db8a8fda9b20de97fde32c7">Abort</a>() { m_aborted = <span class="keyword">true</span>; }</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment"></span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="comment">   * Determine if an upgrade header was present and the parser has exited</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="comment">   * because of that.  Should be checked when Execute() returns in addition to</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="comment">   * checking GetError().</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="comment">   * @return True if upgrade header, false otherwise.</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="classwpi_1_1_http_parser.html#a183cb0231f97e1e5673dd855ef83a240">  117</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classwpi_1_1_http_parser.html#a183cb0231f97e1e5673dd855ef83a240">IsUpgrade</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_parser.upgrade; }</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="comment"></span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="comment">   * If this returns false in the headersComplete or messageComplete</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="comment">   * callback, then this should be the last message on the connection.</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="comment">   * If you are the server, respond with the &quot;Connection: close&quot; header.</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="comment">   * If you are the client, close the connection.</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="classwpi_1_1_http_parser.html#af5f6d192b763f11c21d3011faef5e853">  125</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classwpi_1_1_http_parser.html#af5f6d192b763f11c21d3011faef5e853">ShouldKeepAlive</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> http_should_keep_alive(&amp;m_parser); }</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="comment"></span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="comment">   * Pause the parser.</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="comment">   * @param paused True to pause, false to unpause.</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="classwpi_1_1_http_parser.html#af775e0a7aaf0287420fdb60b2b5b39e1">  131</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1_http_parser.html#af775e0a7aaf0287420fdb60b2b5b39e1">Pause</a>(<span class="keywordtype">bool</span> paused) { http_parser_pause(&amp;m_parser, paused); }</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="comment"></span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="comment">   * Checks if this is the final chunk of the body.</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno"><a class="line" href="classwpi_1_1_http_parser.html#af6548a8349e4e71b309f505441bbadcd">  136</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classwpi_1_1_http_parser.html#af6548a8349e4e71b309f505441bbadcd">IsBodyFinal</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> http_body_is_final(&amp;m_parser); }</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="comment"></span> </div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="comment">   * Get URL.  Valid in and after the url callback has been called.</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="classwpi_1_1_http_parser.html#a99f1b5b1e34d3d72db161cea5de491f6">  141</a></span>  std::string_view <a class="code hl_function" href="classwpi_1_1_http_parser.html#a99f1b5b1e34d3d72db161cea5de491f6">GetUrl</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_urlBuf.str(); }</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="comment"></span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="comment">   * Message begin callback.</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno"><a class="line" href="classwpi_1_1_http_parser.html#acdd80c106ba77bfe430151b3a9db78fc">  146</a></span>  <a class="code hl_class" href="classwpi_1_1sig_1_1_signal_base.html">sig::Signal&lt;&gt;</a> <a class="code hl_variable" href="classwpi_1_1_http_parser.html#acdd80c106ba77bfe430151b3a9db78fc">messageBegin</a>;</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="comment"></span> </div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="comment">   * URL callback.</span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="comment">   * The parameter to the callback is the complete URL string.</span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno"><a class="line" href="classwpi_1_1_http_parser.html#a2e61cb22e5a8131f3165b98c1ea48c9c">  153</a></span>  <a class="code hl_class" href="classwpi_1_1sig_1_1_signal_base.html">sig::Signal&lt;std::string_view&gt;</a> <a class="code hl_variable" href="classwpi_1_1_http_parser.html#a2e61cb22e5a8131f3165b98c1ea48c9c">url</a>;</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="comment"></span> </div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="comment">   * Status callback.</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="comment">   * The parameter to the callback is the complete status string.</span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span><span class="comment">   * GetStatusCode() can be used to get the numeric status code.</span></div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno"><a class="line" href="classwpi_1_1_http_parser.html#a6f8debf6f29b0b06693695bdd2a92069">  161</a></span>  <a class="code hl_class" href="classwpi_1_1sig_1_1_signal_base.html">sig::Signal&lt;std::string_view&gt;</a> <a class="code hl_variable" href="classwpi_1_1_http_parser.html#a6f8debf6f29b0b06693695bdd2a92069">status</a>;</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span><span class="comment"></span> </div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="comment">   * Header field callback.</span></div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span><span class="comment">   * The parameters to the callback are the field name and field value.</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno"><a class="line" href="classwpi_1_1_http_parser.html#a977fcd2f8557aeb23d316b509e153862">  168</a></span>  <a class="code hl_class" href="classwpi_1_1sig_1_1_signal_base.html">sig::Signal&lt;std::string_view, std::string_view&gt;</a> <a class="code hl_variable" href="classwpi_1_1_http_parser.html#a977fcd2f8557aeb23d316b509e153862">header</a>;</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="comment"></span> </div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="comment">   * Headers complete callback.</span></div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="comment">   * The parameter to the callback is whether the connection should be kept</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span><span class="comment">   * alive.  If this is false, then this should be the last message on the</span></div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span><span class="comment">   * connection.  If you are the server, respond with the &quot;Connection: close&quot;</span></div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span><span class="comment">   * header.  If you are the client, close the connection.</span></div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00178" name="l00178"></a><span class="lineno"><a class="line" href="classwpi_1_1_http_parser.html#aed967c7329aa7ac3f51fb492f60669e0">  178</a></span>  <a class="code hl_class" href="classwpi_1_1sig_1_1_signal_base.html">sig::Signal&lt;bool&gt;</a> <a class="code hl_variable" href="classwpi_1_1_http_parser.html#aed967c7329aa7ac3f51fb492f60669e0">headersComplete</a>;</div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span> </div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="comment"></span> </div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span><span class="comment">   * Body data callback.</span></div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><span class="comment">   * The parameters to the callback is the data chunk and whether this is the</span></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="comment">   * final chunk of data in the message.  Note this callback will be called</span></div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span><span class="comment">   * multiple times arbitrarily (e.g. it&#39;s possible that it may be called with</span></div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="comment">   * just a few characters at a time).</span></div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno"><a class="line" href="classwpi_1_1_http_parser.html#a189323dbef344f96eda2b57980d73fd1">  188</a></span>  <a class="code hl_class" href="classwpi_1_1sig_1_1_signal_base.html">sig::Signal&lt;std::string_view, bool&gt;</a> <a class="code hl_variable" href="classwpi_1_1_http_parser.html#a189323dbef344f96eda2b57980d73fd1">body</a>;</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><span class="comment"></span> </div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span><span class="comment">   * Headers complete callback.</span></div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="comment">   * The parameter to the callback is whether the connection should be kept</span></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span><span class="comment">   * alive.  If this is false, then this should be the last message on the</span></div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span><span class="comment">   * connection.  If you are the server, respond with the &quot;Connection: close&quot;</span></div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><span class="comment">   * header.  If you are the client, close the connection.</span></div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno"><a class="line" href="classwpi_1_1_http_parser.html#a8022236defcd5a438407436116e5c129">  198</a></span>  <a class="code hl_class" href="classwpi_1_1sig_1_1_signal_base.html">sig::Signal&lt;bool&gt;</a> <a class="code hl_variable" href="classwpi_1_1_http_parser.html#a8022236defcd5a438407436116e5c129">messageComplete</a>;</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> </div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span><span class="comment"></span> </div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="comment">   * Chunk header callback.</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span><span class="comment">   * The parameter to the callback is the chunk size.</span></div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno"><a class="line" href="classwpi_1_1_http_parser.html#ae00a1262adec52569cb7e68d76d530f5">  205</a></span>  <a class="code hl_class" href="classwpi_1_1sig_1_1_signal_base.html">sig::Signal&lt;uint64_t&gt;</a> <a class="code hl_variable" href="classwpi_1_1_http_parser.html#ae00a1262adec52569cb7e68d76d530f5">chunkHeader</a>;</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> </div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="comment"></span> </div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="comment">   * Chunk complete callback.</span></div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno"><a class="line" href="classwpi_1_1_http_parser.html#aa5b8bf75738110c364d1e36b47ed3a67">  210</a></span>  <a class="code hl_class" href="classwpi_1_1sig_1_1_signal_base.html">sig::Signal&lt;&gt;</a> <a class="code hl_variable" href="classwpi_1_1_http_parser.html#aa5b8bf75738110c364d1e36b47ed3a67">chunkComplete</a>;</div>
 <div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span> </div>
 <div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span> <span class="keyword">private</span>:</div>
@@ -233,7 +359,7 @@ $(document).ready(function(){initNavTree('_http_parser_8h_source.html',''); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><b>HttpParser.h</b></li>
-    <li class="footer">Generated on Tue Oct 19 2021 04:32:23 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Oct 19 2021 04:42:46 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

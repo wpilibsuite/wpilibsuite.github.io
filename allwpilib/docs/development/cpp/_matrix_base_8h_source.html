@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-17-g9e6db17</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-19-ge56d6de</span>
    </div>
   </td>
  </tr>
@@ -108,7 +108,39 @@ $(document).ready(function(){initNavTree('_matrix_base_8h_source.html',''); init
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define EIGEN_MATRIXBASE_H</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_eigen.html">Eigen</a> {</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"></span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">/** \class MatrixBase</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">  * \ingroup Core_Module</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">  * \brief Base class for all dense matrices, vectors, and expressions</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">  * This class is the base that is inherited by all matrix, vector, and related expression</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">  * types. Most of the Eigen API is contained in this class, and its base classes. Other important</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">  * classes for the Eigen API are Matrix, and VectorwiseOp.</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">  * Note that some methods are defined in other modules such as the \ref LU_Module LU module</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">  * for all functions related to matrix inversions.</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">  * \tparam Derived is the derived type, e.g. a matrix type, or an expression, etc.</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">  * When writing a function taking Eigen objects as argument, if you want your function</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">  * to take as argument any matrix, vector, or expression, just let it take a</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">  * MatrixBase argument. As an example, here is a function printFirstRow which, given</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">  * a matrix, vector, or expression \a x, prints the first row of \a x.</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">  * \code</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">    template&lt;typename Derived&gt;</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">    void printFirstRow(const Eigen::MatrixBase&lt;Derived&gt;&amp; x)</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">    {</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">      cout &lt;&lt; x.row(0) &lt;&lt; endl;</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">    }</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">  * \endcode</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">  * This class can be extended with the help of the plugin mechanism described on the page</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">  * \ref TopicCustomizing_Plugins by defining the preprocessor symbol \c EIGEN_MATRIXBASE_PLUGIN.</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">  * \sa \blank \ref TopicClassHierarchy</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="class_eigen_1_1_matrix_base.html">   48</a></span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Derived&gt; <span class="keyword">class </span><a class="code hl_class" href="class_eigen_1_1_matrix_base.html">MatrixBase</a></div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  : <span class="keyword">public</span> <a class="code hl_class" href="class_eigen_1_1_dense_base.html">DenseBase</a>&lt;Derived&gt;</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>{</div>
@@ -154,24 +186,32 @@ $(document).ready(function(){initNavTree('_matrix_base_8h_source.html',''); init
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="preprocessor">#ifndef EIGEN_PARSED_BY_DOXYGEN</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="preprocessor">#ifndef EIGEN_PARSED_BY_DOXYGEN</span><span class="comment"></span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment">    /** type of the equivalent square matrix */</span></div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="keyword">typedef</span> <a class="code hl_class" href="class_eigen_1_1_matrix.html">Matrix</a>&lt;<a class="code hl_typedef" href="class_eigen_1_1_dense_base.html#a5feed465b3a8e60c47e73ecce83e39a2">Scalar</a>,EIGEN_SIZE_MAX(<a class="code hl_enumvalue" href="class_eigen_1_1_dense_base.html#abe6133e07ff4a782c99abd7ee83bdfa6adb37c78ebbf15aa20b65c3b70415a1ab">RowsAtCompileTime</a>,<a class="code hl_enumvalue" href="class_eigen_1_1_dense_base.html#abe6133e07ff4a782c99abd7ee83bdfa6a787f85fd67ee5985917eb2cef6e70441">ColsAtCompileTime</a>),</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="class_eigen_1_1_matrix_base.html#a3cf75a9110a1a28c493e124c8a7fcade">   96</a></span>                          EIGEN_SIZE_MAX(<a class="code hl_enumvalue" href="class_eigen_1_1_dense_base.html#abe6133e07ff4a782c99abd7ee83bdfa6adb37c78ebbf15aa20b65c3b70415a1ab">RowsAtCompileTime</a>,<a class="code hl_enumvalue" href="class_eigen_1_1_dense_base.html#abe6133e07ff4a782c99abd7ee83bdfa6a787f85fd67ee5985917eb2cef6e70441">ColsAtCompileTime</a>)&gt; <a class="code hl_typedef" href="class_eigen_1_1_matrix_base.html#a3cf75a9110a1a28c493e124c8a7fcade">SquareMatrixType</a>;</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="preprocessor">#endif </span><span class="comment">// not EIGEN_PARSED_BY_DOXYGEN</span></div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="comment"></span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment">    /** \returns the size of the main diagonal, which is min(rows(),cols()).</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment">      * \sa rows(), cols(), SizeAtCompileTime. */</span></div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    EIGEN_DEVICE_FUNC</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="class_eigen_1_1_matrix_base.html#a3bcb5338f3ba8a1a5609bd1802a9bc95">  102</a></span>    <span class="keyword">inline</span> <a class="code hl_typedef" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> <a class="code hl_function" href="class_eigen_1_1_matrix_base.html#a3bcb5338f3ba8a1a5609bd1802a9bc95">diagonalSize</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> (numext::mini)(rows(),cols()); }</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="keyword">typedef</span> <span class="keyword">typename</span> <a class="code hl_typedef" href="class_eigen_1_1_dense_base.html#ad871c3bef0abfc3673a6963d8201be21">Base::PlainObject</a> PlainObject;</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="preprocessor">#ifndef EIGEN_PARSED_BY_DOXYGEN</span></div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="keyword">typedef</span> <a class="code hl_class" href="class_eigen_1_1_cwise_nullary_op.html">CwiseNullaryOp&lt;internal::scalar_constant_op&lt;Scalar&gt;</a>,PlainObject&gt; ConstantReturnType;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="preprocessor">#ifndef EIGEN_PARSED_BY_DOXYGEN</span><span class="comment"></span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment">    /** \internal Represents a matrix with all coefficients equal to one another*/</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="keyword">typedef</span> <a class="code hl_class" href="class_eigen_1_1_cwise_nullary_op.html">CwiseNullaryOp&lt;internal::scalar_constant_op&lt;Scalar&gt;</a>,PlainObject&gt; ConstantReturnType;<span class="comment"></span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="comment">    /** \internal the return type of MatrixBase::adjoint() */</span></div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="keyword">typedef</span> <span class="keyword">typename</span> <a class="code hl_struct" href="struct_eigen_1_1internal_1_1conditional.html">internal::conditional&lt;NumTraits&lt;Scalar&gt;::IsComplex</a>,</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                        <a class="code hl_class" href="class_eigen_1_1_cwise_unary_op.html">CwiseUnaryOp&lt;internal::scalar_conjugate_op&lt;Scalar&gt;</a>, ConstTransposeReturnType&gt;,</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>                        ConstTransposeReturnType</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>                     &gt;::type AdjointReturnType;</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="keyword">typedef</span> <a class="code hl_class" href="class_eigen_1_1_matrix.html">Matrix&lt;std::complex&lt;RealScalar&gt;</a>, <a class="code hl_struct" href="struct_eigen_1_1internal_1_1traits.html">internal::traits&lt;Derived&gt;::ColsAtCompileTime</a>, 1, <a class="code hl_enumvalue" href="group__enums.html#ggaacded1a18ae58b0f554751f6cdf9eb13a0103672ae41005ab03b4176c765afd62">ColMajor</a>&gt; EigenvaluesReturnType;</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="keyword">typedef</span> <a class="code hl_class" href="class_eigen_1_1_cwise_nullary_op.html">CwiseNullaryOp&lt;internal::scalar_identity_op&lt;Scalar&gt;</a>,PlainObject&gt; IdentityReturnType;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>                     &gt;::type AdjointReturnType;<span class="comment"></span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="comment">    /** \internal Return type of eigenvalues() */</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="keyword">typedef</span> <a class="code hl_class" href="class_eigen_1_1_matrix.html">Matrix&lt;std::complex&lt;RealScalar&gt;</a>, <a class="code hl_struct" href="struct_eigen_1_1internal_1_1traits.html">internal::traits&lt;Derived&gt;::ColsAtCompileTime</a>, 1, <a class="code hl_enumvalue" href="group__enums.html#ggaacded1a18ae58b0f554751f6cdf9eb13a0103672ae41005ab03b4176c765afd62">ColMajor</a>&gt; EigenvaluesReturnType;<span class="comment"></span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment">    /** \internal the return type of identity */</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="keyword">typedef</span> <a class="code hl_class" href="class_eigen_1_1_cwise_nullary_op.html">CwiseNullaryOp&lt;internal::scalar_identity_op&lt;Scalar&gt;</a>,PlainObject&gt; IdentityReturnType;<span class="comment"></span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="comment">    /** \internal the return type of unit vectors */</span></div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="keyword">typedef</span> <a class="code hl_class" href="class_eigen_1_1_block.html">Block&lt;const CwiseNullaryOp&lt;internal::scalar_identity_op&lt;Scalar&gt;</a>, <a class="code hl_typedef" href="class_eigen_1_1_matrix_base.html#a3cf75a9110a1a28c493e124c8a7fcade">SquareMatrixType</a>&gt;,</div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>                  <a class="code hl_struct" href="struct_eigen_1_1internal_1_1traits.html">internal::traits&lt;Derived&gt;::RowsAtCompileTime</a>,</div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>                  <a class="code hl_struct" href="struct_eigen_1_1internal_1_1traits.html">internal::traits&lt;Derived&gt;::ColsAtCompileTime</a>&gt; BasisReturnType;</div>
@@ -187,7 +227,10 @@ $(document).ready(function(){initNavTree('_matrix_base_8h_source.html',''); init
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="preprocessor">#   endif</span></div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="preprocessor">#undef EIGEN_CURRENT_STORAGE_BASE_CLASS</span></div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="preprocessor">#undef EIGEN_DOC_UNARY_ADDONS</span></div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="comment"></span> </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="comment">    /** Special case of the template operator=, in order to prevent the compiler</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="comment">      * from generating a default operator= (issue hit with g++ 4.1)</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="comment">      */</span></div>
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE</div>
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    Derived&amp; <a class="code hl_function" href="class_eigen_1_1_matrix_base.html#a706a4dd1ee54786e9210de1a4bf02600">operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_matrix_base.html">MatrixBase</a>&amp; other);</div>
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
@@ -334,11 +377,19 @@ $(document).ready(function(){initNavTree('_matrix_base_8h_source.html',''); init
 <div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_eigen_1_1_matrix_base.html#aefdc8e4e4c156fdd79a21479e75dcd8a">isOrthogonal</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_matrix_base.html">MatrixBase&lt;OtherDerived&gt;</a>&amp; other,</div>
 <div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>                      <span class="keyword">const</span> RealScalar&amp; prec = <a class="code hl_class" href="struct_eigen_1_1_num_traits.html">NumTraits&lt;Scalar&gt;::dummy_precision</a>()) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_eigen_1_1_matrix_base.html#a8a7ee34ce202cac3eeea9cf20c9e4833">isUnitary</a>(<span class="keyword">const</span> RealScalar&amp; prec = <a class="code hl_class" href="struct_eigen_1_1_num_traits.html">NumTraits&lt;Scalar&gt;::dummy_precision</a>()) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span> </div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span><span class="comment"></span> </div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span><span class="comment">    /** \returns true if each coefficients of \c *this and \a other are all exactly equal.</span></div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span><span class="comment">      * \warning When using floating point scalar values you probably should rather use a</span></div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span><span class="comment">      *          fuzzy comparison such as isApprox()</span></div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span><span class="comment">      * \sa isApprox(), operator!= */</span></div>
 <div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> OtherDerived&gt;</div>
 <div class="line"><a id="l00290" name="l00290"></a><span class="lineno"><a class="line" href="class_eigen_1_1_matrix_base.html#a0f555511cb0f8ccbbb0e6c597c4cf412">  290</a></span>    EIGEN_DEVICE_FUNC <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_eigen_1_1_matrix_base.html#a0f555511cb0f8ccbbb0e6c597c4cf412">operator==</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_matrix_base.html">MatrixBase&lt;OtherDerived&gt;</a>&amp; other)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span><span class="keyword">    </span>{ <span class="keywordflow">return</span> cwiseEqual(other).all(); }</div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span> </div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span><span class="comment"></span> </div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span><span class="comment">    /** \returns true if at least one pair of coefficients of \c *this and \a other are not exactly equal to each other.</span></div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span><span class="comment">      * \warning When using floating point scalar values you probably should rather use a</span></div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span><span class="comment">      *          fuzzy comparison such as isApprox()</span></div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span><span class="comment">      * \sa isApprox(), operator== */</span></div>
 <div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> OtherDerived&gt;</div>
 <div class="line"><a id="l00298" name="l00298"></a><span class="lineno"><a class="line" href="class_eigen_1_1_matrix_base.html#a932a37b58d2bad69849a3a8809aaffac">  298</a></span>    EIGEN_DEVICE_FUNC <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="class_eigen_1_1_matrix_base.html#a932a37b58d2bad69849a3a8809aaffac">operator!=</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_matrix_base.html">MatrixBase&lt;OtherDerived&gt;</a>&amp; other)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span><span class="keyword">    </span>{ <span class="keywordflow">return</span> cwiseNotEqual(other).any(); }</div>
@@ -358,11 +409,16 @@ $(document).ready(function(){initNavTree('_matrix_base_8h_source.html',''); init
 <div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span> </div>
 <div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>    EIGEN_DEVICE_FUNC MatrixBase&lt;Derived&gt;&amp; matrix() { <span class="keywordflow">return</span> *<span class="keyword">this</span>; }</div>
 <div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>    EIGEN_DEVICE_FUNC <span class="keyword">const</span> MatrixBase&lt;Derived&gt;&amp; matrix()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> *<span class="keyword">this</span>; }</div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span> </div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno"><a class="line" href="class_eigen_1_1_matrix_base.html#a6bd01a3c94daf864579f14510aa320f8">  319</a></span>    EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE <a class="code hl_class" href="class_eigen_1_1_array_wrapper.html">ArrayWrapper&lt;Derived&gt;</a> <a class="code hl_function" href="class_eigen_1_1_matrix_base.html#a6bd01a3c94daf864579f14510aa320f8">array</a>() { <span class="keywordflow">return</span> <a class="code hl_class" href="class_eigen_1_1_array_wrapper.html">ArrayWrapper&lt;Derived&gt;</a>(derived()); }</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span><span class="comment"></span> </div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span><span class="comment">    /** \returns an \link Eigen::ArrayBase Array \endlink expression of this matrix</span></div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span><span class="comment">      * \sa ArrayBase::matrix() */</span></div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno"><a class="line" href="class_eigen_1_1_matrix_base.html#a6bd01a3c94daf864579f14510aa320f8">  319</a></span>    EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE <a class="code hl_class" href="class_eigen_1_1_array_wrapper.html">ArrayWrapper&lt;Derived&gt;</a> <a class="code hl_function" href="class_eigen_1_1_matrix_base.html#a6bd01a3c94daf864579f14510aa320f8">array</a>() { <span class="keywordflow">return</span> <a class="code hl_class" href="class_eigen_1_1_array_wrapper.html">ArrayWrapper&lt;Derived&gt;</a>(derived()); }<span class="comment"></span></div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span><span class="comment">    /** \returns a const \link Eigen::ArrayBase Array \endlink expression of this matrix</span></div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span><span class="comment">      * \sa ArrayBase::matrix() */</span></div>
 <div class="line"><a id="l00322" name="l00322"></a><span class="lineno"><a class="line" href="class_eigen_1_1_matrix_base.html#a16e8d97540c7563696ba7131f2dc6318">  322</a></span>    EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE <span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_array_wrapper.html">ArrayWrapper&lt;const Derived&gt;</a> <a class="code hl_function" href="class_eigen_1_1_matrix_base.html#a16e8d97540c7563696ba7131f2dc6318">array</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_class" href="class_eigen_1_1_array_wrapper.html">ArrayWrapper&lt;const Derived&gt;</a>(derived()); }</div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span> </div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span> </div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span><span class="comment"></span> </div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span><span class="comment">/////////// LU module ///////////</span></div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span><span class="comment"></span> </div>
 <div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>    <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_full_piv_l_u.html">FullPivLU&lt;PlainObject&gt;</a> <a class="code hl_function" href="class_eigen_1_1_matrix_base.html#a25da97d31acab0ee5d9d13bdbb0569da">fullPivLu</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>    <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_partial_piv_l_u.html">PartialPivLU&lt;PlainObject&gt;</a> <a class="code hl_function" href="class_eigen_1_1_matrix_base.html#a6199d8aaf26c1b8ac3097fdfa7733a1e">partialPivLu</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span> </div>
@@ -388,28 +444,34 @@ $(document).ready(function(){initNavTree('_matrix_base_8h_source.html',''); init
 <div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span> </div>
 <div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>    EIGEN_DEVICE_FUNC</div>
 <div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>    Scalar <a class="code hl_function" href="class_eigen_1_1_matrix_base.html#add0789a9cbd9bf1cc71048eaa75a1abb">determinant</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span> </div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span> </div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span><span class="comment"></span> </div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span><span class="comment">/////////// Cholesky module ///////////</span></div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span><span class="comment"></span> </div>
 <div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>    <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_l_l_t.html">LLT&lt;PlainObject&gt;</a>  <a class="code hl_function" href="class_eigen_1_1_matrix_base.html#a90c45f7a30265df792d5aeaddead2635">llt</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>    <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_l_d_l_t.html">LDLT&lt;PlainObject&gt;</a> <a class="code hl_function" href="class_eigen_1_1_matrix_base.html#a0ecf058a0727a4cab8b42d79e95072e1">ldlt</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span> </div>
-<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span> </div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span><span class="comment"></span> </div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span><span class="comment">/////////// QR module ///////////</span></div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span><span class="comment"></span> </div>
 <div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>    <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_householder_q_r.html">HouseholderQR&lt;PlainObject&gt;</a> <a class="code hl_function" href="class_eigen_1_1_matrix_base.html#a9a9377aab1cea26db5f25bab7e682f8f">householderQr</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>    <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_col_piv_householder_q_r.html">ColPivHouseholderQR&lt;PlainObject&gt;</a> <a class="code hl_function" href="class_eigen_1_1_matrix_base.html#adee8c19c833245bbb00a591dce68e8a4">colPivHouseholderQr</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span>    <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_full_piv_householder_q_r.html">FullPivHouseholderQR&lt;PlainObject&gt;</a> <a class="code hl_function" href="class_eigen_1_1_matrix_base.html#a863bc0e06b641a089508eabec6835ab2">fullPivHouseholderQr</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>    <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_complete_orthogonal_decomposition.html">CompleteOrthogonalDecomposition&lt;PlainObject&gt;</a> <a class="code hl_function" href="class_eigen_1_1_matrix_base.html#ae90b6846f05bd30b8d52b66e427e3e09">completeOrthogonalDecomposition</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span> </div>
-<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span> </div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span><span class="comment"></span> </div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span><span class="comment">/////////// Eigenvalues module ///////////</span></div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span><span class="comment"></span> </div>
 <div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>    <span class="keyword">inline</span> EigenvaluesReturnType <a class="code hl_function" href="class_eigen_1_1_matrix_base.html#a30430fa3d5b4e74d312fd4f502ac984d">eigenvalues</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>    <span class="keyword">inline</span> RealScalar <a class="code hl_function" href="class_eigen_1_1_matrix_base.html#a0ff9bc0b9bea2d0822a2bf3192783102">operatorNorm</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span> </div>
-<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span> </div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span><span class="comment"></span> </div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span><span class="comment">/////////// SVD module ///////////</span></div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span><span class="comment"></span> </div>
 <div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>    <span class="keyword">inline</span> <a class="code hl_class" href="class_eigen_1_1_jacobi_s_v_d.html">JacobiSVD&lt;PlainObject&gt;</a> <a class="code hl_function" href="class_eigen_1_1_matrix_base.html#a5745dca9c54390633b434e54a1d1eedd">jacobiSvd</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> computationOptions = 0) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>    <span class="keyword">inline</span> <a class="code hl_class" href="class_eigen_1_1_b_d_c_s_v_d.html">BDCSVD&lt;PlainObject&gt;</a>    <a class="code hl_function" href="class_eigen_1_1_matrix_base.html#ae171b74b5d530846ee0836135ffcf837">bdcSvd</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> computationOptions = 0) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span> </div>
-<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span> </div>
-<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span><span class="preprocessor">    #ifndef EIGEN_PARSED_BY_DOXYGEN</span></div>
-<div class="line"><a id="l00378" name="l00378"></a><span class="lineno"><a class="line" href="struct_eigen_1_1_matrix_base_1_1cross__product__return__type.html">  378</a></span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> OtherDerived&gt; <span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1_matrix_base_1_1cross__product__return__type.html">cross_product_return_type</a> {</div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span><span class="comment"></span> </div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span><span class="comment">/////////// Geometry module ///////////</span></div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span><span class="comment"></span> </div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span><span class="preprocessor">    #ifndef EIGEN_PARSED_BY_DOXYGEN</span><span class="comment"></span></div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span><span class="comment">    /// \internal helper struct to form the return type of the cross product</span></div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno"><a class="line" href="struct_eigen_1_1_matrix_base_1_1cross__product__return__type.html">  378</a></span><span class="comment"></span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> OtherDerived&gt; <span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1_matrix_base_1_1cross__product__return__type.html">cross_product_return_type</a> {</div>
 <div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>      <span class="keyword">typedef</span> <span class="keyword">typename</span> <a class="code hl_class" href="struct_eigen_1_1_scalar_binary_op_traits.html">ScalarBinaryOpTraits&lt;typename internal::traits&lt;Derived&gt;::Scalar</a>,<span class="keyword">typename</span> <a class="code hl_struct" href="struct_eigen_1_1internal_1_1traits.html">internal::traits&lt;OtherDerived&gt;::Scalar</a>&gt;::ReturnType Scalar;</div>
 <div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>      <span class="keyword">typedef</span> <a class="code hl_class" href="class_eigen_1_1_matrix.html">Matrix&lt;Scalar,MatrixBase::RowsAtCompileTime,MatrixBase::ColsAtCompileTime&gt;</a> <a class="code hl_class" href="class_eigen_1_1_matrix.html">type</a>;</div>
 <div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>    };</div>
@@ -449,8 +511,9 @@ $(document).ready(function(){initNavTree('_matrix_base_8h_source.html',''); init
 <div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span>    <span class="keyword">typedef</span> EIGEN_EXPR_BINARYOP_SCALAR_RETURN_TYPE(ConstStartMinusOne,Scalar,quotient) HNormalizedReturnType;</div>
 <div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>    EIGEN_DEVICE_FUNC</div>
 <div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>    <span class="keyword">inline</span> <span class="keyword">const</span> HNormalizedReturnType hnormalized() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span> </div>
-<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span> </div>
+<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span><span class="comment"></span> </div>
+<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span><span class="comment">////////// Householder module ///////////</span></div>
+<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span><span class="comment"></span> </div>
 <div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>    EIGEN_DEVICE_FUNC</div>
 <div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_eigen_1_1_matrix_base.html#a0cc21daad8d10938c9db48c556a24003">makeHouseholderInPlace</a>(Scalar&amp; tau, RealScalar&amp; beta);</div>
 <div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> EssentialPart&gt;</div>
@@ -467,33 +530,37 @@ $(document).ready(function(){initNavTree('_matrix_base_8h_source.html',''); init
 <div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_eigen_1_1_matrix_base.html#adab847f7a3a4329e2caa3f49763ac993">applyHouseholderOnTheRight</a>(<span class="keyword">const</span> EssentialPart&amp; essential,</div>
 <div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span>                                    <span class="keyword">const</span> Scalar&amp; tau,</div>
 <div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span>                                    Scalar* workspace);</div>
-<div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span> </div>
-<div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span> </div>
+<div class="line"><a id="l00437" name="l00437"></a><span class="lineno">  437</span><span class="comment"></span> </div>
+<div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span><span class="comment">///////// Jacobi module /////////</span></div>
+<div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span><span class="comment"></span> </div>
 <div class="line"><a id="l00440" name="l00440"></a><span class="lineno">  440</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> OtherScalar&gt;</div>
 <div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span>    EIGEN_DEVICE_FUNC</div>
 <div class="line"><a id="l00442" name="l00442"></a><span class="lineno">  442</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_eigen_1_1_matrix_base.html#a3a08ad41e81d8ad4a37b5d5c7490e765">applyOnTheLeft</a>(<a class="code hl_typedef" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> p, <a class="code hl_typedef" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> q, <span class="keyword">const</span> JacobiRotation&lt;OtherScalar&gt;&amp; j);</div>
 <div class="line"><a id="l00443" name="l00443"></a><span class="lineno">  443</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> OtherScalar&gt;</div>
 <div class="line"><a id="l00444" name="l00444"></a><span class="lineno">  444</span>    EIGEN_DEVICE_FUNC</div>
 <div class="line"><a id="l00445" name="l00445"></a><span class="lineno">  445</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_eigen_1_1_matrix_base.html#a45d91752925d2757fc8058a293b15462">applyOnTheRight</a>(<a class="code hl_typedef" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> p, <a class="code hl_typedef" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> q, <span class="keyword">const</span> JacobiRotation&lt;OtherScalar&gt;&amp; j);</div>
-<div class="line"><a id="l00446" name="l00446"></a><span class="lineno">  446</span> </div>
-<div class="line"><a id="l00448" name="l00448"></a><span class="lineno">  448</span> </div>
+<div class="line"><a id="l00446" name="l00446"></a><span class="lineno">  446</span><span class="comment"></span> </div>
+<div class="line"><a id="l00447" name="l00447"></a><span class="lineno">  447</span><span class="comment">///////// SparseCore module /////////</span></div>
+<div class="line"><a id="l00448" name="l00448"></a><span class="lineno">  448</span><span class="comment"></span> </div>
 <div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> OtherDerived&gt;</div>
 <div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span>    EIGEN_STRONG_INLINE <span class="keyword">const</span> <span class="keyword">typename</span> SparseMatrixBase&lt;OtherDerived&gt;::template CwiseProductDenseReturnType&lt;Derived&gt;::Type</div>
 <div class="line"><a id="l00451" name="l00451"></a><span class="lineno">  451</span>    cwiseProduct(<span class="keyword">const</span> SparseMatrixBase&lt;OtherDerived&gt; &amp;other)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00452" name="l00452"></a><span class="lineno">  452</span><span class="keyword">    </span>{</div>
 <div class="line"><a id="l00453" name="l00453"></a><span class="lineno">  453</span>      <span class="keywordflow">return</span> other.cwiseProduct(derived());</div>
 <div class="line"><a id="l00454" name="l00454"></a><span class="lineno">  454</span>    }</div>
-<div class="line"><a id="l00455" name="l00455"></a><span class="lineno">  455</span> </div>
-<div class="line"><a id="l00457" name="l00457"></a><span class="lineno">  457</span> </div>
+<div class="line"><a id="l00455" name="l00455"></a><span class="lineno">  455</span><span class="comment"></span> </div>
+<div class="line"><a id="l00456" name="l00456"></a><span class="lineno">  456</span><span class="comment">///////// MatrixFunctions module /////////</span></div>
+<div class="line"><a id="l00457" name="l00457"></a><span class="lineno">  457</span><span class="comment"></span> </div>
 <div class="line"><a id="l00458" name="l00458"></a><span class="lineno">  458</span>    <span class="keyword">typedef</span> <span class="keyword">typename</span> internal::stem_function&lt;Scalar&gt;::type StemFunction;</div>
 <div class="line"><a id="l00459" name="l00459"></a><span class="lineno">  459</span><span class="preprocessor">#define EIGEN_MATRIX_FUNCTION(ReturnType, Name, Description) \</span></div>
-<div class="line"><a id="l00460" name="l00460"></a><span class="lineno">  460</span><span class="preprocessor"> \</span></div>
+<div class="line"><a id="l00460" name="l00460"></a><span class="lineno">  460</span><span class="preprocessor"></span><span class="comment">    /** \returns an expression of the matrix Description of \c *this. \brief This function requires the &lt;a href=&quot;unsupported/group__MatrixFunctions__Module.html&quot;&gt; unsupported MatrixFunctions module&lt;/a&gt;. To compute the coefficient-wise Description use ArrayBase::##Name . */</span><span class="preprocessor"> \</span></div>
 <div class="line"><a id="l00461" name="l00461"></a><span class="lineno">  461</span><span class="preprocessor">    const ReturnType&lt;Derived&gt; Name() const;</span></div>
 <div class="line"><a id="l00462" name="l00462"></a><span class="lineno">  462</span><span class="preprocessor">#define EIGEN_MATRIX_FUNCTION_1(ReturnType, Name, Description, Argument) \</span></div>
-<div class="line"><a id="l00463" name="l00463"></a><span class="lineno">  463</span><span class="preprocessor"> \</span></div>
+<div class="line"><a id="l00463" name="l00463"></a><span class="lineno">  463</span><span class="preprocessor"></span><span class="comment">    /** \returns an expression of the matrix Description of \c *this. \brief This function requires the &lt;a href=&quot;unsupported/group__MatrixFunctions__Module.html&quot;&gt; unsupported MatrixFunctions module&lt;/a&gt;. To compute the coefficient-wise Description use ArrayBase::##Name . */</span><span class="preprocessor"> \</span></div>
 <div class="line"><a id="l00464" name="l00464"></a><span class="lineno">  464</span><span class="preprocessor">    const ReturnType&lt;Derived&gt; Name(Argument) const;</span></div>
 <div class="line"><a id="l00465" name="l00465"></a><span class="lineno">  465</span> </div>
-<div class="line"><a id="l00466" name="l00466"></a><span class="lineno">  466</span>    EIGEN_MATRIX_FUNCTION(MatrixExponentialReturnValue, exp, exponential)</div>
+<div class="line"><a id="l00466" name="l00466"></a><span class="lineno">  466</span>    EIGEN_MATRIX_FUNCTION(MatrixExponentialReturnValue, exp, exponential)<span class="comment"></span></div>
+<div class="line"><a id="l00467" name="l00467"></a><span class="lineno">  467</span><span class="comment">    /** \brief Helper function for the &lt;a href=&quot;unsupported/group__MatrixFunctions__Module.html&quot;&gt; unsupported MatrixFunctions module&lt;/a&gt;.*/</span></div>
 <div class="line"><a id="l00468" name="l00468"></a><span class="lineno">  468</span>    <span class="keyword">const</span> MatrixFunctionReturnValue&lt;Derived&gt; <a class="code hl_function" href="class_eigen_1_1_matrix_base.html#a104a1b8e719b93822ad4331248edc447">matrixFunction</a>(StemFunction f) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span>    EIGEN_MATRIX_FUNCTION(MatrixFunctionReturnValue, <a class="code hl_function" href="group___unit_math.html#gab0c26f165fe864ceb9f2af667b3cb66d">cosh</a>, hyperbolic cosine)</div>
 <div class="line"><a id="l00470" name="l00470"></a><span class="lineno">  470</span>    EIGEN_MATRIX_FUNCTION(MatrixFunctionReturnValue, <a class="code hl_function" href="group___unit_math.html#ga38584a9aa9ecbcf455f1a75b23fc8495">sinh</a>, hyperbolic sine)</div>
@@ -530,7 +597,14 @@ $(document).ready(function(){initNavTree('_matrix_base_8h_source.html',''); init
 <div class="line"><a id="l00501" name="l00501"></a><span class="lineno">  501</span><span class="comment">/***************************************************************************</span></div>
 <div class="line"><a id="l00502" name="l00502"></a><span class="lineno">  502</span><span class="comment">* Implementation of matrix base methods</span></div>
 <div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span><span class="comment">***************************************************************************/</span></div>
-<div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span> </div>
+<div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span><span class="comment"></span> </div>
+<div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span><span class="comment">/** replaces \c *this by \c *this * \a other.</span></div>
+<div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00507" name="l00507"></a><span class="lineno">  507</span><span class="comment">  * \returns a reference to \c *this</span></div>
+<div class="line"><a id="l00508" name="l00508"></a><span class="lineno">  508</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00509" name="l00509"></a><span class="lineno">  509</span><span class="comment">  * Example: \include MatrixBase_applyOnTheRight.cpp</span></div>
+<div class="line"><a id="l00510" name="l00510"></a><span class="lineno">  510</span><span class="comment">  * Output: \verbinclude MatrixBase_applyOnTheRight.out</span></div>
+<div class="line"><a id="l00511" name="l00511"></a><span class="lineno">  511</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00512" name="l00512"></a><span class="lineno">  512</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Derived&gt;</div>
 <div class="line"><a id="l00513" name="l00513"></a><span class="lineno">  513</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> OtherDerived&gt;</div>
 <div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span><span class="keyword">inline</span> Derived&amp;</div>
@@ -539,14 +613,24 @@ $(document).ready(function(){initNavTree('_matrix_base_8h_source.html',''); init
 <div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span>  other.<a class="code hl_function" href="struct_eigen_1_1_eigen_base.html#ab4cf3e6bb046a94a46b69b857bd3dbc9">derived</a>().applyThisOnTheRight(derived());</div>
 <div class="line"><a id="l00518" name="l00518"></a><span class="lineno">  518</span>  <span class="keywordflow">return</span> derived();</div>
 <div class="line"><a id="l00519" name="l00519"></a><span class="lineno">  519</span>}</div>
-<div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span> </div>
+<div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span><span class="comment"></span> </div>
+<div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span><span class="comment">/** replaces \c *this by \c *this * \a other. It is equivalent to MatrixBase::operator*=().</span></div>
+<div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span><span class="comment">  * Example: \include MatrixBase_applyOnTheRight.cpp</span></div>
+<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span><span class="comment">  * Output: \verbinclude MatrixBase_applyOnTheRight.out</span></div>
+<div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Derived&gt;</div>
 <div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> OtherDerived&gt;</div>
 <div class="line"><a id="l00528" name="l00528"></a><span class="lineno"><a class="line" href="class_eigen_1_1_matrix_base.html#a45d91752925d2757fc8058a293b15462">  528</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_eigen_1_1_matrix_base.html#a45d91752925d2757fc8058a293b15462">MatrixBase&lt;Derived&gt;::applyOnTheRight</a>(<span class="keyword">const</span> <a class="code hl_class" href="struct_eigen_1_1_eigen_base.html">EigenBase&lt;OtherDerived&gt;</a> &amp;other)</div>
 <div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span>{</div>
 <div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span>  other.<a class="code hl_function" href="struct_eigen_1_1_eigen_base.html#ab4cf3e6bb046a94a46b69b857bd3dbc9">derived</a>().applyThisOnTheRight(derived());</div>
 <div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span>}</div>
-<div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span> </div>
+<div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span><span class="comment"></span> </div>
+<div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span><span class="comment">/** replaces \c *this by \a other * \c *this.</span></div>
+<div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span><span class="comment">  * Example: \include MatrixBase_applyOnTheLeft.cpp</span></div>
+<div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span><span class="comment">  * Output: \verbinclude MatrixBase_applyOnTheLeft.out</span></div>
+<div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Derived&gt;</div>
 <div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> OtherDerived&gt;</div>
 <div class="line"><a id="l00540" name="l00540"></a><span class="lineno"><a class="line" href="class_eigen_1_1_matrix_base.html#a3a08ad41e81d8ad4a37b5d5c7490e765">  540</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_eigen_1_1_matrix_base.html#a3a08ad41e81d8ad4a37b5d5c7490e765">MatrixBase&lt;Derived&gt;::applyOnTheLeft</a>(<span class="keyword">const</span> <a class="code hl_class" href="struct_eigen_1_1_eigen_base.html">EigenBase&lt;OtherDerived&gt;</a> &amp;other)</div>
@@ -703,7 +787,7 @@ $(document).ready(function(){initNavTree('_matrix_base_8h_source.html',''); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_bfb2597c438c4234fbdcce568a9e650d.html">eigeninclude</a></li><li class="navelem"><a class="el" href="dir_81addad79085c513f45446cf62836735.html">Eigen</a></li><li class="navelem"><a class="el" href="dir_e429501dd9edb337aeb96d684aa3b6ff.html">src</a></li><li class="navelem"><a class="el" href="dir_09ad905ad0d1f25ba5be966168b2edef.html">Core</a></li><li class="navelem"><b>MatrixBase.h</b></li>
-    <li class="footer">Generated on Tue Oct 19 2021 04:32:17 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Oct 19 2021 04:42:42 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

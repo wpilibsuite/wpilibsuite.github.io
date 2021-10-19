@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-17-g9e6db17</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-19-ge56d6de</span>
    </div>
   </td>
  </tr>
@@ -118,7 +118,12 @@ $(document).ready(function(){initNavTree('_binary_functors_8h_source.html',''); 
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <span class="keyword">typedef</span> Arg1 first_argument_type;</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <span class="keyword">typedef</span> Arg2 second_argument_type;</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>};</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment"></span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">  * \brief Template functor to compute the sum of two scalars</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">  * \sa class CwiseBinaryOp, MatrixBase::operator+, class VectorwiseOp, DenseBase::sum()</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> LhsScalar,<span class="keyword">typename</span> RhsScalar&gt;</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__sum__op.html">   32</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__sum__op.html">scalar_sum_op</a> : <a class="code hl_struct" href="struct_eigen_1_1internal_1_1binary__op__base.html">binary_op_base</a>&lt;LhsScalar,RhsScalar&gt;</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>{</div>
@@ -151,7 +156,12 @@ $(document).ready(function(){initNavTree('_binary_functors_8h_source.html',''); 
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="keyword">template</span>&lt;&gt;</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE <span class="keywordtype">bool</span> <a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__sum__op.html">scalar_sum_op&lt;bool,bool&gt;::operator() </a>(<span class="keyword">const</span> <span class="keywordtype">bool</span>&amp; a, <span class="keyword">const</span> <span class="keywordtype">bool</span>&amp; b)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> a || b; }</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment"></span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">  * \brief Template functor to compute the product of two scalars</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">  * \sa class CwiseBinaryOp, Cwise::operator*(), class VectorwiseOp, MatrixBase::redux()</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> LhsScalar,<span class="keyword">typename</span> RhsScalar&gt;</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__product__op.html">   70</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__product__op.html">scalar_product_op</a>  : <a class="code hl_struct" href="struct_eigen_1_1internal_1_1binary__op__base.html">binary_op_base</a>&lt;LhsScalar,RhsScalar&gt;</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>{</div>
@@ -183,7 +193,12 @@ $(document).ready(function(){initNavTree('_binary_functors_8h_source.html',''); 
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="keyword">template</span>&lt;&gt;</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE <span class="keywordtype">bool</span> <a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__product__op.html">scalar_product_op&lt;bool,bool&gt;::operator() </a>(<span class="keyword">const</span> <span class="keywordtype">bool</span>&amp; a, <span class="keyword">const</span> <span class="keywordtype">bool</span>&amp; b)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> a &amp;&amp; b; }</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment"></span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="comment">  * \brief Template functor to compute the conjugate product of two scalars</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment">  * This is a short cut for conj(x) * y which is needed for optimization purpose; in Eigen2 support mode, this becomes x * conj(y)</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> LhsScalar,<span class="keyword">typename</span> RhsScalar&gt;</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__conj__product__op.html">  107</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__conj__product__op.html">scalar_conj_product_op</a>  : <a class="code hl_struct" href="struct_eigen_1_1internal_1_1binary__op__base.html">binary_op_base</a>&lt;LhsScalar,RhsScalar&gt;</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>{</div>
@@ -209,7 +224,12 @@ $(document).ready(function(){initNavTree('_binary_functors_8h_source.html',''); 
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    PacketAccess = <a class="code hl_struct" href="struct_eigen_1_1internal_1_1is__same.html">internal::is_same&lt;LhsScalar, RhsScalar&gt;::value</a> &amp;&amp; <a class="code hl_struct" href="struct_eigen_1_1internal_1_1packet__traits.html">packet_traits&lt;LhsScalar&gt;::HasMul</a></div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>  };</div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>};</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="comment"></span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="comment">  * \brief Template functor to compute the min of two scalars</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="comment">  * \sa class CwiseBinaryOp, MatrixBase::cwiseMin, class VectorwiseOp, MatrixBase::minCoeff()</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> LhsScalar,<span class="keyword">typename</span> RhsScalar, <span class="keywordtype">int</span> NaNPropagation&gt;</div>
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__min__op.html">  138</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__min__op.html">scalar_min_op</a> : <a class="code hl_struct" href="struct_eigen_1_1internal_1_1binary__op__base.html">binary_op_base</a>&lt;LhsScalar,RhsScalar&gt;</div>
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>{</div>
@@ -237,7 +257,12 @@ $(document).ready(function(){initNavTree('_binary_functors_8h_source.html',''); 
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    PacketAccess = <a class="code hl_struct" href="struct_eigen_1_1internal_1_1is__same.html">internal::is_same&lt;LhsScalar, RhsScalar&gt;::value</a> &amp;&amp; <a class="code hl_struct" href="struct_eigen_1_1internal_1_1packet__traits.html">packet_traits&lt;LhsScalar&gt;::HasMin</a></div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>  };</div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>};</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="comment"></span> </div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span><span class="comment">  * \brief Template functor to compute the max of two scalars</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="comment">  * \sa class CwiseBinaryOp, MatrixBase::cwiseMax, class VectorwiseOp, MatrixBase::maxCoeff()</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> LhsScalar,<span class="keyword">typename</span> RhsScalar, <span class="keywordtype">int</span> NaNPropagation&gt;</div>
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__max__op.html">  171</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__max__op.html">scalar_max_op</a> : <a class="code hl_struct" href="struct_eigen_1_1internal_1_1binary__op__base.html">binary_op_base</a>&lt;LhsScalar,RhsScalar&gt;</div>
 <div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>{</div>
@@ -265,7 +290,11 @@ $(document).ready(function(){initNavTree('_binary_functors_8h_source.html',''); 
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    PacketAccess = <a class="code hl_struct" href="struct_eigen_1_1internal_1_1is__same.html">internal::is_same&lt;LhsScalar, RhsScalar&gt;::value</a> &amp;&amp; <a class="code hl_struct" href="struct_eigen_1_1internal_1_1packet__traits.html">packet_traits&lt;LhsScalar&gt;::HasMax</a></div>
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>  };</div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>};</div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="comment"></span> </div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span><span class="comment">  * \brief Template functors for comparison of two scalars</span></div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="comment">  * \todo Implement packet-comparisons</span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__cmp__op.html">  202</a></span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> LhsScalar, <span class="keyword">typename</span> RhsScalar, ComparisonName cmp&gt; <span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__cmp__op.html">scalar_cmp_op</a>;</div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> </div>
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> LhsScalar, <span class="keyword">typename</span> RhsScalar, ComparisonName cmp&gt;</div>
@@ -331,7 +360,12 @@ $(document).ready(function(){initNavTree('_binary_functors_8h_source.html',''); 
 <div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>  EIGEN_EMPTY_STRUCT_CTOR(<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__cmp__op.html">scalar_cmp_op</a>)</div>
 <div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>  EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE <span class="keywordtype">bool</span> operator()(<span class="keyword">const</span> LhsScalar&amp; a, <span class="keyword">const</span> RhsScalar&amp; b)<span class="keyword"> const </span>{<span class="keywordflow">return</span> a!=b;}</div>
 <div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>};</div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span> </div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span><span class="comment"></span> </div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span><span class="comment">  * \brief Template functor to compute the hypot of two \b positive \b and \b real scalars</span></div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span><span class="comment">  * \sa MatrixBase::stableNorm(), class Redux</span></div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar&gt;</div>
 <div class="line"><a id="l00274" name="l00274"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__hypot__op_3_01_scalar_00_01_scalar_01_4.html">  274</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__hypot__op.html">scalar_hypot_op</a>&lt;Scalar,Scalar&gt; : <a class="code hl_struct" href="struct_eigen_1_1internal_1_1binary__op__base.html">binary_op_base</a>&lt;Scalar,Scalar&gt;</div>
 <div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>{</div>
@@ -357,7 +391,11 @@ $(document).ready(function(){initNavTree('_binary_functors_8h_source.html',''); 
 <div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>    PacketAccess = <span class="keyword">false</span></div>
 <div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>  };</div>
 <div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>};</div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span> </div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span><span class="comment"></span> </div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span><span class="comment">  * \brief Template functor to compute the pow of two scalars</span></div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span><span class="comment">  * See the specification of pow in https://en.cppreference.com/w/cpp/numeric/math/pow</span></div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar, <span class="keyword">typename</span> Exponent&gt;</div>
 <div class="line"><a id="l00304" name="l00304"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__pow__op.html">  304</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__pow__op.html">scalar_pow_op</a>  : <a class="code hl_struct" href="struct_eigen_1_1internal_1_1binary__op__base.html">binary_op_base</a>&lt;Scalar,Exponent&gt;</div>
 <div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>{</div>
@@ -397,7 +435,12 @@ $(document).ready(function(){initNavTree('_binary_functors_8h_source.html',''); 
 <div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>};</div>
 <div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span> </div>
 <div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span><span class="comment">//---------- non associative binary functors ----------</span></div>
-<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span> </div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span><span class="comment"></span> </div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span><span class="comment">  * \brief Template functor to compute the difference of two scalars</span></div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span><span class="comment">  * \sa class CwiseBinaryOp, MatrixBase::operator-</span></div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> LhsScalar,<span class="keyword">typename</span> RhsScalar&gt;</div>
 <div class="line"><a id="l00349" name="l00349"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__difference__op.html">  349</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__difference__op.html">scalar_difference_op</a> : <a class="code hl_struct" href="struct_eigen_1_1internal_1_1binary__op__base.html">binary_op_base</a>&lt;LhsScalar,RhsScalar&gt;</div>
 <div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span>{</div>
@@ -421,7 +464,12 @@ $(document).ready(function(){initNavTree('_binary_functors_8h_source.html',''); 
 <div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>    PacketAccess = <a class="code hl_struct" href="struct_eigen_1_1internal_1_1is__same.html">is_same&lt;LhsScalar,RhsScalar&gt;::value</a> &amp;&amp; <a class="code hl_struct" href="struct_eigen_1_1internal_1_1packet__traits.html">packet_traits&lt;LhsScalar&gt;::HasSub</a> &amp;&amp; <a class="code hl_struct" href="struct_eigen_1_1internal_1_1packet__traits.html">packet_traits&lt;RhsScalar&gt;::HasSub</a></div>
 <div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>  };</div>
 <div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>};</div>
-<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span> </div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span><span class="comment"></span> </div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span><span class="comment">  * \brief Template functor to compute the quotient of two scalars</span></div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span><span class="comment">  * \sa class CwiseBinaryOp, Cwise::operator/()</span></div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> LhsScalar,<span class="keyword">typename</span> RhsScalar&gt;</div>
 <div class="line"><a id="l00378" name="l00378"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__quotient__op.html">  378</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__quotient__op.html">scalar_quotient_op</a>  : <a class="code hl_struct" href="struct_eigen_1_1internal_1_1binary__op__base.html">binary_op_base</a>&lt;LhsScalar,RhsScalar&gt;</div>
 <div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>{</div>
@@ -448,7 +496,12 @@ $(document).ready(function(){initNavTree('_binary_functors_8h_source.html',''); 
 <div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>};</div>
 <div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span> </div>
 <div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span> </div>
-<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span> </div>
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span><span class="comment"></span> </div>
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span><span class="comment">  * \brief Template functor to compute the and of two booleans</span></div>
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span><span class="comment">  * \sa class CwiseBinaryOp, ArrayBase::operator&amp;&amp;</span></div>
+<div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00409" name="l00409"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__boolean__and__op.html">  409</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__boolean__and__op.html">scalar_boolean_and_op</a> {</div>
 <div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>  EIGEN_EMPTY_STRUCT_CTOR(<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__boolean__and__op.html">scalar_boolean_and_op</a>)</div>
 <div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>  EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE <span class="keywordtype">bool</span> operator() (<span class="keyword">const</span> <span class="keywordtype">bool</span>&amp; a, <span class="keyword">const</span> <span class="keywordtype">bool</span>&amp; b)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> a &amp;&amp; b; }</div>
@@ -462,7 +515,12 @@ $(document).ready(function(){initNavTree('_binary_functors_8h_source.html',''); 
 <div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>    PacketAccess = <span class="keyword">true</span></div>
 <div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span>  };</div>
 <div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span>};</div>
-<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span> </div>
+<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span><span class="comment"></span> </div>
+<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span><span class="comment">  * \brief Template functor to compute the or of two booleans</span></div>
+<div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span><span class="comment">  * \sa class CwiseBinaryOp, ArrayBase::operator||</span></div>
+<div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00428" name="l00428"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__boolean__or__op.html">  428</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__boolean__or__op.html">scalar_boolean_or_op</a> {</div>
 <div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span>  EIGEN_EMPTY_STRUCT_CTOR(<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__boolean__or__op.html">scalar_boolean_or_op</a>)</div>
 <div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span>  EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE <span class="keywordtype">bool</span> operator() (<span class="keyword">const</span> <span class="keywordtype">bool</span>&amp; a, <span class="keyword">const</span> <span class="keywordtype">bool</span>&amp; b)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> a || b; }</div>
@@ -476,7 +534,12 @@ $(document).ready(function(){initNavTree('_binary_functors_8h_source.html',''); 
 <div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span>    PacketAccess = <span class="keyword">true</span></div>
 <div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span>  };</div>
 <div class="line"><a id="l00440" name="l00440"></a><span class="lineno">  440</span>};</div>
-<div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span> </div>
+<div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span><span class="comment"></span> </div>
+<div class="line"><a id="l00442" name="l00442"></a><span class="lineno">  442</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00443" name="l00443"></a><span class="lineno">  443</span><span class="comment"> * \brief Template functor to compute the xor of two booleans</span></div>
+<div class="line"><a id="l00444" name="l00444"></a><span class="lineno">  444</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00445" name="l00445"></a><span class="lineno">  445</span><span class="comment"> * \sa class CwiseBinaryOp, ArrayBase::operator^</span></div>
+<div class="line"><a id="l00446" name="l00446"></a><span class="lineno">  446</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00447" name="l00447"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__boolean__xor__op.html">  447</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__boolean__xor__op.html">scalar_boolean_xor_op</a> {</div>
 <div class="line"><a id="l00448" name="l00448"></a><span class="lineno">  448</span>  EIGEN_EMPTY_STRUCT_CTOR(<a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__boolean__xor__op.html">scalar_boolean_xor_op</a>)</div>
 <div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span>  EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE <span class="keywordtype">bool</span> operator() (<span class="keyword">const</span> <span class="keywordtype">bool</span>&amp; a, <span class="keyword">const</span> <span class="keywordtype">bool</span>&amp; b)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> a ^ b; }</div>
@@ -490,7 +553,12 @@ $(document).ready(function(){initNavTree('_binary_functors_8h_source.html',''); 
 <div class="line"><a id="l00457" name="l00457"></a><span class="lineno">  457</span>    PacketAccess = <span class="keyword">true</span></div>
 <div class="line"><a id="l00458" name="l00458"></a><span class="lineno">  458</span>  };</div>
 <div class="line"><a id="l00459" name="l00459"></a><span class="lineno">  459</span>};</div>
-<div class="line"><a id="l00460" name="l00460"></a><span class="lineno">  460</span> </div>
+<div class="line"><a id="l00460" name="l00460"></a><span class="lineno">  460</span><span class="comment"></span> </div>
+<div class="line"><a id="l00461" name="l00461"></a><span class="lineno">  461</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00462" name="l00462"></a><span class="lineno">  462</span><span class="comment">  * \brief Template functor to compute the absolute difference of two scalars</span></div>
+<div class="line"><a id="l00463" name="l00463"></a><span class="lineno">  463</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00464" name="l00464"></a><span class="lineno">  464</span><span class="comment">  * \sa class CwiseBinaryOp, MatrixBase::absolute_difference</span></div>
+<div class="line"><a id="l00465" name="l00465"></a><span class="lineno">  465</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00466" name="l00466"></a><span class="lineno">  466</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> LhsScalar,<span class="keyword">typename</span> RhsScalar&gt;</div>
 <div class="line"><a id="l00467" name="l00467"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1scalar__absolute__difference__op.html">  467</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__absolute__difference__op.html">scalar_absolute_difference_op</a> : <a class="code hl_struct" href="struct_eigen_1_1internal_1_1binary__op__base.html">binary_op_base</a>&lt;LhsScalar,RhsScalar&gt;</div>
 <div class="line"><a id="l00468" name="l00468"></a><span class="lineno">  468</span>{</div>
@@ -599,7 +667,7 @@ $(document).ready(function(){initNavTree('_binary_functors_8h_source.html',''); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_bfb2597c438c4234fbdcce568a9e650d.html">eigeninclude</a></li><li class="navelem"><a class="el" href="dir_81addad79085c513f45446cf62836735.html">Eigen</a></li><li class="navelem"><a class="el" href="dir_e429501dd9edb337aeb96d684aa3b6ff.html">src</a></li><li class="navelem"><a class="el" href="dir_09ad905ad0d1f25ba5be966168b2edef.html">Core</a></li><li class="navelem"><a class="el" href="dir_06e33d5e654e97c667c1e8dbac1ecc46.html">functors</a></li><li class="navelem"><b>BinaryFunctors.h</b></li>
-    <li class="footer">Generated on Tue Oct 19 2021 04:32:17 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Oct 19 2021 04:42:41 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

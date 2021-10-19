@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-17-g9e6db17</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-19-ge56d6de</span>
    </div>
   </td>
  </tr>
@@ -135,7 +135,40 @@ $(document).ready(function(){initNavTree('_partial_piv_l_u_8h_source.html',''); 
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>};</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>} <span class="comment">// end namespace internal</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment"></span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">/** \ingroup LU_Module</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">  * \class PartialPivLU</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">  * \brief LU decomposition of a matrix with partial pivoting, and related features</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">  * \tparam _MatrixType the type of the matrix of which we are computing the LU decomposition</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">  * This class represents a LU decomposition of a \b square \b invertible matrix, with partial pivoting: the matrix A</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">  * is decomposed as A = PLU where L is unit-lower-triangular, U is upper-triangular, and P</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">  * is a permutation matrix.</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">  * Typically, partial pivoting LU decomposition is only considered numerically stable for square invertible</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">  * matrices. Thus LAPACK&#39;s dgesv and dgesvx require the matrix to be square and invertible. The present class</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">  * does the same. It will assert that the matrix is square, but it won&#39;t (actually it can&#39;t) check that the</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">  * matrix is invertible: it is your task to check that you only use this decomposition on invertible matrices.</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">  * The guaranteed safe alternative, working for all matrices, is the full pivoting LU decomposition, provided</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">  * by class FullPivLU.</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">  * This is \b not a rank-revealing LU decomposition. Many features are intentionally absent from this class,</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">  * such as rank computation. If you need these features, use class FullPivLU.</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">  * This LU decomposition is suitable to invert invertible matrices. It is what MatrixBase::inverse() uses</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">  * in the general case.</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">  * On the other hand, it is \b not suitable to determine whether a given matrix is invertible.</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">  * The data of the LU decomposition can be directly accessed through the methods matrixLU(), permutationP().</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">  * This class supports the \link InplaceDecomposition inplace decomposition \endlink mechanism.</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">  * \sa MatrixBase::partialPivLu(), MatrixBase::determinant(), MatrixBase::inverse(), MatrixBase::computeInverse(), class FullPivLU</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="class_eigen_1_1_partial_piv_l_u.html">   76</a></span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> _MatrixType&gt; <span class="keyword">class </span><a class="code hl_class" href="class_eigen_1_1_partial_piv_l_u.html">PartialPivLU</a></div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  : <span class="keyword">public</span> <a class="code hl_class" href="class_eigen_1_1_solver_base.html">SolverBase</a>&lt;PartialPivLU&lt;_MatrixType&gt; &gt;</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>{</div>
@@ -153,14 +186,40 @@ $(document).ready(function(){initNavTree('_partial_piv_l_u_8h_source.html',''); 
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keyword">typedef</span> <a class="code hl_class" href="class_eigen_1_1_permutation_matrix.html">PermutationMatrix&lt;RowsAtCompileTime, MaxRowsAtCompileTime&gt;</a> <a class="code hl_class" href="class_eigen_1_1_permutation_matrix.html">PermutationType</a>;</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keyword">typedef</span> <a class="code hl_class" href="class_eigen_1_1_transpositions.html">Transpositions&lt;RowsAtCompileTime, MaxRowsAtCompileTime&gt;</a> <a class="code hl_class" href="class_eigen_1_1_transpositions.html">TranspositionType</a>;</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keyword">typedef</span> <span class="keyword">typename</span> MatrixType::PlainObject PlainObject;</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="comment"></span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment">    /**</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment">      * \brief Default Constructor.</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment">      *</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment">      * The default constructor is useful in cases in which the user intends to</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="comment">      * perform decompositions via PartialPivLU::compute(const MatrixType&amp;).</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment">      */</span></div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <a class="code hl_function" href="class_eigen_1_1_partial_piv_l_u.html#a5c04818d354f94a98786d8a44cb709c6">PartialPivLU</a>();</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment"></span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="comment">    /** \brief Default Constructor with memory preallocation</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment">      *</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment">      * Like the default constructor but with preallocation of the internal data</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="comment">      * according to the specified problem \a size.</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="comment">      * \sa PartialPivLU()</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment">      */</span></div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="keyword">explicit</span> <a class="code hl_function" href="class_eigen_1_1_partial_piv_l_u.html#a5c04818d354f94a98786d8a44cb709c6">PartialPivLU</a>(<a class="code hl_typedef" href="struct_eigen_1_1_eigen_base.html#a554f30542cc2316add4b1ea0a492ff02">Index</a> <a class="code hl_function" href="struct_eigen_1_1_eigen_base.html#a9f40726259520d7e9c5ce58d19d62e79">size</a>);</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="comment"></span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment">    /** Constructor.</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="comment">      *</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="comment">      * \param matrix the matrix of which to compute the LU decomposition.</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="comment">      *</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="comment">      * \warning The matrix should have full rank (e.g. if it&#39;s square, it should be invertible).</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="comment">      * If you need to deal with non-full rank, use class FullPivLU instead.</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment">      */</span></div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> InputType&gt;</div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <span class="keyword">explicit</span> <a class="code hl_function" href="class_eigen_1_1_partial_piv_l_u.html#a5c04818d354f94a98786d8a44cb709c6">PartialPivLU</a>(<span class="keyword">const</span> <a class="code hl_class" href="struct_eigen_1_1_eigen_base.html">EigenBase&lt;InputType&gt;</a>&amp; matrix);</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment"></span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="comment">    /** Constructor for \link InplaceDecomposition inplace decomposition \endlink</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="comment">      *</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="comment">      * \param matrix the matrix of which to compute the LU decomposition.</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="comment">      *</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="comment">      * \warning The matrix should have full rank (e.g. if it&#39;s square, it should be invertible).</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="comment">      * If you need to deal with non-full rank, use class FullPivLU instead.</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="comment">      */</span></div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> InputType&gt;</div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <span class="keyword">explicit</span> <a class="code hl_function" href="class_eigen_1_1_partial_piv_l_u.html#a5c04818d354f94a98786d8a44cb709c6">PartialPivLU</a>(<a class="code hl_class" href="struct_eigen_1_1_eigen_base.html">EigenBase&lt;InputType&gt;</a>&amp; matrix);</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
@@ -170,37 +229,85 @@ $(document).ready(function(){initNavTree('_partial_piv_l_u_8h_source.html',''); 
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>      compute();</div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>      <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    }</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="comment"></span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="comment">    /** \returns the LU decomposition matrix: the upper-triangular part is U, the</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="comment">      * unit-lower-triangular part is L (at least for square matrices; in the non-square</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="comment">      * case, special care is needed, see the documentation of class FullPivLU).</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="comment">      *</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="comment">      * \sa matrixL(), matrixU()</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="comment">      */</span></div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno"><a class="line" href="class_eigen_1_1_partial_piv_l_u.html#a7550e6f9b8bbed1c0d9238d616c0d364">  143</a></span>    <span class="keyword">inline</span> <span class="keyword">const</span> MatrixType&amp; <a class="code hl_function" href="class_eigen_1_1_partial_piv_l_u.html#a7550e6f9b8bbed1c0d9238d616c0d364">matrixLU</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="keyword">    </span>{</div>
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>      eigen_assert(m_isInitialized &amp;&amp; <span class="stringliteral">&quot;PartialPivLU is not initialized.&quot;</span>);</div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>      <span class="keywordflow">return</span> m_lu;</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    }</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span><span class="comment"></span> </div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="comment">    /** \returns the permutation matrix P.</span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="comment">      */</span></div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="class_eigen_1_1_partial_piv_l_u.html#a331c643f74610e5cdc122dec159a98e3">  151</a></span>    <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_permutation_matrix.html">PermutationType</a>&amp; <a class="code hl_function" href="class_eigen_1_1_partial_piv_l_u.html#a331c643f74610e5cdc122dec159a98e3">permutationP</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="keyword">    </span>{</div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>      eigen_assert(m_isInitialized &amp;&amp; <span class="stringliteral">&quot;PartialPivLU is not initialized.&quot;</span>);</div>
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>      <span class="keywordflow">return</span> m_p;</div>
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    }</div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="preprocessor">    #ifdef EIGEN_PARSED_BY_DOXYGEN</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="preprocessor">    #ifdef EIGEN_PARSED_BY_DOXYGEN</span><span class="comment"></span></div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="comment">    /** This method returns the solution x to the equation Ax=b, where A is the matrix of which</span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span><span class="comment">      * *this is the LU decomposition.</span></div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="comment">      *</span></div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span><span class="comment">      * \param b the right-hand-side of the equation to solve. Can be a vector or a matrix,</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span><span class="comment">      *          the only requirement in order for the equation to make sense is that</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><span class="comment">      *          b.rows()==A.rows(), where A is the matrix of which *this is the LU decomposition.</span></div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="comment">      *</span></div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="comment">      * \returns the solution.</span></div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span><span class="comment">      *</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span><span class="comment">      * Example: \include PartialPivLU_solve.cpp</span></div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="comment">      * Output: \verbinclude PartialPivLU_solve.out</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="comment">      *</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="comment">      * Since this PartialPivLU class assumes anyway that the matrix A is invertible, the solution</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="comment">      * theoretically exists and is unique regardless of b.</span></div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="comment">      *</span></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="comment">      * \sa TriangularView::solve(), inverse(), computeInverse()</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span><span class="comment">      */</span></div>
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Rhs&gt;</div>
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_solve.html">Solve&lt;PartialPivLU, Rhs&gt;</a></div>
 <div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    <a class="code hl_function" href="class_eigen_1_1_solver_base.html#a943c352b597e3cd4744d5c11bfd77520">solve</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_matrix_base.html">MatrixBase&lt;Rhs&gt;</a>&amp; b) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="preprocessor">    #endif</span></div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span> </div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="comment"></span> </div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span><span class="comment">    /** \returns an estimate of the reciprocal condition number of the matrix of which \c *this is</span></div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span><span class="comment">        the LU decomposition.</span></div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span><span class="comment">      */</span></div>
 <div class="line"><a id="l00183" name="l00183"></a><span class="lineno"><a class="line" href="class_eigen_1_1_partial_piv_l_u.html#a472b46d5d9ff7c328e1dccc13805f690">  183</a></span>    <span class="keyword">inline</span> RealScalar <a class="code hl_function" href="class_eigen_1_1_partial_piv_l_u.html#a472b46d5d9ff7c328e1dccc13805f690">rcond</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="keyword">    </span>{</div>
 <div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>      eigen_assert(m_isInitialized &amp;&amp; <span class="stringliteral">&quot;PartialPivLU is not initialized.&quot;</span>);</div>
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>      <span class="keywordflow">return</span> internal::rcond_estimate_helper(m_l1_norm, *<span class="keyword">this</span>);</div>
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    }</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span> </div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span><span class="comment"></span> </div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><span class="comment">    /** \returns the inverse of the matrix of which *this is the LU decomposition.</span></div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="comment">      *</span></div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span><span class="comment">      * \warning The matrix being decomposed here is assumed to be invertible. If you need to check for</span></div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span><span class="comment">      *          invertibility, use class FullPivLU instead.</span></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="comment">      *</span></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span><span class="comment">      * \sa MatrixBase::inverse(), LU::inverse()</span></div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span><span class="comment">      */</span></div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno"><a class="line" href="class_eigen_1_1_partial_piv_l_u.html#a251cf261b4ad7b8a4407d0c1762b4d7b">  196</a></span>    <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_inverse.html">Inverse&lt;PartialPivLU&gt;</a> <a class="code hl_function" href="class_eigen_1_1_partial_piv_l_u.html#a251cf261b4ad7b8a4407d0c1762b4d7b">inverse</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="keyword">    </span>{</div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>      eigen_assert(m_isInitialized &amp;&amp; <span class="stringliteral">&quot;PartialPivLU is not initialized.&quot;</span>);</div>
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>      <span class="keywordflow">return</span> <a class="code hl_class" href="class_eigen_1_1_inverse.html">Inverse&lt;PartialPivLU&gt;</a>(*<span class="keyword">this</span>);</div>
 <div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    }</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> </div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="comment"></span> </div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="comment">    /** \returns the determinant of the matrix of which</span></div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span><span class="comment">      * *this is the LU decomposition. It has only linear complexity</span></div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="comment">      * (that is, O(n) where n is the dimension of the square matrix)</span></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="comment">      * as the LU decomposition has already been computed.</span></div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="comment">      *</span></div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span><span class="comment">      * \note For fixed-size matrices of size up to 4, MatrixBase::determinant() offers</span></div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="comment">      *       optimized paths.</span></div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="comment">      *</span></div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span><span class="comment">      * \warning a determinant can be very big or small, so for matrices</span></div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span><span class="comment">      * of large enough dimension, there is a risk of overflow/underflow.</span></div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span><span class="comment">      *</span></div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span><span class="comment">      * \sa MatrixBase::determinant()</span></div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span><span class="comment">      */</span></div>
 <div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>    Scalar <a class="code hl_function" href="class_eigen_1_1_partial_piv_l_u.html#a54c3d39c9b46ff485a8d2140b9b23193">determinant</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span> </div>
 <div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>    MatrixType <a class="code hl_function" href="class_eigen_1_1_partial_piv_l_u.html#aba7f1ee83537b0d240ebf206503a4920">reconstructedMatrix</a>() <span class="keyword">const</span>;</div>
@@ -318,7 +425,8 @@ $(document).ready(function(){initNavTree('_partial_piv_l_u_8h_source.html',''); 
 <div class="line"><a id="l00329" name="l00329"></a><span class="lineno"><a class="line" href="class_eigen_1_1_matrix_base.html#afb312afbfe960cbda67811552d876fae">  329</a></span>}</div>
 <div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span> </div>
 <div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span><span class="keyword">namespace </span>internal {</div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span> </div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span><span class="comment"></span> </div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span><span class="comment">/** \internal This is the blocked version of fullpivlu_unblocked() */</span></div>
 <div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar, <span class="keywordtype">int</span> StorageOrder, <span class="keyword">typename</span> PivIndex, <span class="keywordtype">int</span> SizeAtCompileTime=Dynamic&gt;</div>
 <div class="line"><a id="l00335" name="l00335"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1partial__lu__impl.html">  335</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1partial__lu__impl.html">partial_lu_impl</a></div>
 <div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>{</div>
@@ -332,7 +440,17 @@ $(document).ready(function(){initNavTree('_partial_piv_l_u_8h_source.html',''); 
 <div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>  <span class="keyword">typedef</span> <a class="code hl_class" href="class_eigen_1_1_ref.html">Ref&lt;MatrixType&gt;</a> <a class="code hl_class" href="class_eigen_1_1_ref.html">MatrixTypeRef</a>;</div>
 <div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>  <span class="keyword">typedef</span> <a class="code hl_class" href="class_eigen_1_1_ref.html">Ref&lt;Matrix&lt;Scalar, Dynamic, Dynamic, StorageOrder&gt;</a> &gt; <a class="code hl_class" href="class_eigen_1_1_ref.html">BlockType</a>;</div>
 <div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>  <span class="keyword">typedef</span> <span class="keyword">typename</span> MatrixType::RealScalar RealScalar;</div>
-<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span> </div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span><span class="comment"></span> </div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span><span class="comment">  /** \internal performs the LU decomposition in-place of the matrix \a lu</span></div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span><span class="comment">    * using an unblocked algorithm.</span></div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span><span class="comment">    *</span></div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span><span class="comment">    * In addition, this function returns the row transpositions in the</span></div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span><span class="comment">    * vector \a row_transpositions which must have a size equal to the number</span></div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span><span class="comment">    * of columns of the matrix \a lu, and an integer \a nb_transpositions</span></div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span><span class="comment">    * which returns the actual number of transpositions.</span></div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span><span class="comment">    *</span></div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span><span class="comment">    * \returns The index of the first pivot which is exactly zero if any, or a negative number otherwise.</span></div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span><span class="comment">    */</span></div>
 <div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>  <span class="keyword">static</span> <a class="code hl_typedef" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> unblocked_lu(<a class="code hl_class" href="class_eigen_1_1_ref.html">MatrixTypeRef</a>&amp; lu, PivIndex* row_transpositions, PivIndex&amp; nb_transpositions)</div>
 <div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>  {</div>
 <div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>    <span class="keyword">typedef</span> <a class="code hl_struct" href="struct_eigen_1_1internal_1_1scalar__score__coeff__op.html">scalar_score_coeff_op&lt;Scalar&gt;</a> Scoring;</div>
@@ -389,7 +507,22 @@ $(document).ready(function(){initNavTree('_partial_piv_l_u_8h_source.html',''); 
 <div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span> </div>
 <div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>    <span class="keywordflow">return</span> first_zero_pivot;</div>
 <div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span>  }</div>
-<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span> </div>
+<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span><span class="comment"></span> </div>
+<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span><span class="comment">  /** \internal performs the LU decomposition in-place of the matrix represented</span></div>
+<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span><span class="comment">    * by the variables \a rows, \a cols, \a lu_data, and \a lu_stride using a</span></div>
+<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span><span class="comment">    * recursive, blocked algorithm.</span></div>
+<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span><span class="comment">    *</span></div>
+<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span><span class="comment">    * In addition, this function returns the row transpositions in the</span></div>
+<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span><span class="comment">    * vector \a row_transpositions which must have a size equal to the number</span></div>
+<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span><span class="comment">    * of columns of the matrix \a lu, and an integer \a nb_transpositions</span></div>
+<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span><span class="comment">    * which returns the actual number of transpositions.</span></div>
+<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span><span class="comment">    *</span></div>
+<div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span><span class="comment">    * \returns The index of the first pivot which is exactly zero if any, or a negative number otherwise.</span></div>
+<div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span><span class="comment">    *</span></div>
+<div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span><span class="comment">    * \note This very low level interface using pointers, etc. is to:</span></div>
+<div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span><span class="comment">    *   1 - reduce the number of instantiations to the strict minimum</span></div>
+<div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span><span class="comment">    *   2 - avoid infinite recursion of the instantiations with Block&lt;Block&lt;Block&lt;...&gt; &gt; &gt;</span></div>
+<div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span><span class="comment">    */</span></div>
 <div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span>  <span class="keyword">static</span> <a class="code hl_typedef" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> blocked_lu(<a class="code hl_typedef" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> rows, <a class="code hl_typedef" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> cols, Scalar* lu_data, <a class="code hl_typedef" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> luStride, PivIndex* row_transpositions, PivIndex&amp; nb_transpositions, <a class="code hl_typedef" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> maxBlockSize=256)</div>
 <div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span>  {</div>
 <div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span>    <a class="code hl_class" href="class_eigen_1_1_ref.html">MatrixTypeRef</a> lu = MatrixType::Map(lu_data,rows, cols, <a class="code hl_class" href="class_eigen_1_1_outer_stride.html">OuterStride&lt;&gt;</a>(luStride));</div>
@@ -461,7 +594,9 @@ $(document).ready(function(){initNavTree('_partial_piv_l_u_8h_source.html',''); 
 <div class="line"><a id="l00498" name="l00498"></a><span class="lineno">  498</span>    <span class="keywordflow">return</span> first_zero_pivot;</div>
 <div class="line"><a id="l00499" name="l00499"></a><span class="lineno">  499</span>  }</div>
 <div class="line"><a id="l00500" name="l00500"></a><span class="lineno">  500</span>};</div>
-<div class="line"><a id="l00501" name="l00501"></a><span class="lineno">  501</span> </div>
+<div class="line"><a id="l00501" name="l00501"></a><span class="lineno">  501</span><span class="comment"></span> </div>
+<div class="line"><a id="l00502" name="l00502"></a><span class="lineno">  502</span><span class="comment">/** \internal performs the LU decomposition with partial pivoting in-place.</span></div>
+<div class="line"><a id="l00503" name="l00503"></a><span class="lineno">  503</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00504" name="l00504"></a><span class="lineno">  504</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> MatrixType, <span class="keyword">typename</span> TranspositionType&gt;</div>
 <div class="line"><a id="l00505" name="l00505"></a><span class="lineno">  505</span><span class="keywordtype">void</span> partial_lu_inplace(MatrixType&amp; lu, TranspositionType&amp; row_transpositions, <span class="keyword">typename</span> TranspositionType::StorageIndex&amp; nb_transpositions)</div>
 <div class="line"><a id="l00506" name="l00506"></a><span class="lineno">  506</span>{</div>
@@ -515,7 +650,10 @@ $(document).ready(function(){initNavTree('_partial_piv_l_u_8h_source.html',''); 
 <div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span>  eigen_assert(m_isInitialized &amp;&amp; <span class="stringliteral">&quot;PartialPivLU is not initialized.&quot;</span>);</div>
 <div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span>  <span class="keywordflow">return</span> Scalar(m_det_p) * m_lu.diagonal().prod();</div>
 <div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span>}</div>
-<div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span> </div>
+<div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span><span class="comment"></span> </div>
+<div class="line"><a id="l00558" name="l00558"></a><span class="lineno">  558</span><span class="comment">/** \returns the matrix represented by the decomposition,</span></div>
+<div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span><span class="comment"> * i.e., it returns the product: P^{-1} L U.</span></div>
+<div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span><span class="comment"> * This function is provided for debug purpose. */</span></div>
 <div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> MatrixType&gt;</div>
 <div class="line"><a id="l00562" name="l00562"></a><span class="lineno"><a class="line" href="class_eigen_1_1_partial_piv_l_u.html#aba7f1ee83537b0d240ebf206503a4920">  562</a></span>MatrixType <a class="code hl_function" href="class_eigen_1_1_partial_piv_l_u.html#aba7f1ee83537b0d240ebf206503a4920">PartialPivLU&lt;MatrixType&gt;::reconstructedMatrix</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span><span class="keyword"></span>{</div>
@@ -548,14 +686,28 @@ $(document).ready(function(){initNavTree('_partial_piv_l_u_8h_source.html',''); 
 <div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>} <span class="comment">// end namespace internal</span></div>
 <div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span> </div>
 <div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span><span class="comment">/******** MatrixBase methods *******/</span></div>
-<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span> </div>
+<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span><span class="comment"></span> </div>
+<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span><span class="comment">/** \lu_module</span></div>
+<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span><span class="comment">  * \return the partial-pivoting LU decomposition of \c *this.</span></div>
+<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span><span class="comment">  * \sa class PartialPivLU</span></div>
+<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Derived&gt;</div>
 <div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span><span class="keyword">inline</span> <span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_partial_piv_l_u.html">PartialPivLU&lt;typename MatrixBase&lt;Derived&gt;::PlainObject</a>&gt;</div>
 <div class="line"><a id="l00602" name="l00602"></a><span class="lineno"><a class="line" href="class_eigen_1_1_matrix_base.html#a6199d8aaf26c1b8ac3097fdfa7733a1e">  602</a></span><a class="code hl_function" href="class_eigen_1_1_matrix_base.html#a6199d8aaf26c1b8ac3097fdfa7733a1e">MatrixBase&lt;Derived&gt;::partialPivLu</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span>  <span class="keywordflow">return</span> <a class="code hl_class" href="class_eigen_1_1_partial_piv_l_u.html">PartialPivLU&lt;PlainObject&gt;</a>(eval());</div>
 <div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span>}</div>
-<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span> </div>
+<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span><span class="comment"></span> </div>
+<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span><span class="comment">/** \lu_module</span></div>
+<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span><span class="comment">  * Synonym of partialPivLu().</span></div>
+<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span><span class="comment">  * \return the partial-pivoting LU decomposition of \c *this.</span></div>
+<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span><span class="comment">  * \sa class PartialPivLU</span></div>
+<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Derived&gt;</div>
 <div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span><span class="keyword">inline</span> <span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_partial_piv_l_u.html">PartialPivLU&lt;typename MatrixBase&lt;Derived&gt;::PlainObject</a>&gt;</div>
 <div class="line"><a id="l00617" name="l00617"></a><span class="lineno"><a class="line" href="class_eigen_1_1_matrix_base.html#afb312afbfe960cbda67811552d876fae">  617</a></span><a class="code hl_function" href="class_eigen_1_1_matrix_base.html#afb312afbfe960cbda67811552d876fae">MatrixBase&lt;Derived&gt;::lu</a>()<span class="keyword"> const</span></div>
@@ -612,7 +764,7 @@ $(document).ready(function(){initNavTree('_partial_piv_l_u_8h_source.html',''); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_bfb2597c438c4234fbdcce568a9e650d.html">eigeninclude</a></li><li class="navelem"><a class="el" href="dir_81addad79085c513f45446cf62836735.html">Eigen</a></li><li class="navelem"><a class="el" href="dir_e429501dd9edb337aeb96d684aa3b6ff.html">src</a></li><li class="navelem"><a class="el" href="dir_36d21f4cec19c025b0e75439ee3a1f45.html">LU</a></li><li class="navelem"><b>PartialPivLU.h</b></li>
-    <li class="footer">Generated on Tue Oct 19 2021 04:32:21 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Oct 19 2021 04:42:44 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

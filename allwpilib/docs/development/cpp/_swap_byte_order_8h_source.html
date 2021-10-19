@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-17-g9e6db17</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-19-ge56d6de</span>
    </div>
   </td>
  </tr>
@@ -120,8 +120,10 @@ $(document).ready(function(){initNavTree('_swap_byte_order_8h_source.html',''); 
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">namespace </span>wpi {</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">namespace </span>sys {</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">inline</span> uint16_t SwapByteOrder_16(uint16_t <a class="code hl_class" href="classvalue.html">value</a>) {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"></span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">/// SwapByteOrder_16 - This function returns a byte-swapped representation of</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">/// the 16-bit argument.</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment"></span><span class="keyword">inline</span> uint16_t SwapByteOrder_16(uint16_t <a class="code hl_class" href="classvalue.html">value</a>) {</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#if defined(_MSC_VER) &amp;&amp; !defined(_DEBUG)</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  <span class="comment">// The DLL version of the runtime lacks these functions (bug!?), but in a</span></div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <span class="comment">// release build they&#39;re replaced with BSWAP instructions anyway.</span></div>
@@ -132,8 +134,10 @@ $(document).ready(function(){initNavTree('_swap_byte_order_8h_source.html',''); 
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keywordflow">return</span> Hi | Lo;</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>}</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword">inline</span> uint32_t SwapByteOrder_32(uint32_t <a class="code hl_class" href="classvalue.html">value</a>) {</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment"></span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">/// SwapByteOrder_32 - This function returns a byte-swapped representation of</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">/// the 32-bit argument.</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment"></span><span class="keyword">inline</span> uint32_t SwapByteOrder_32(uint32_t <a class="code hl_class" href="classvalue.html">value</a>) {</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">#if defined(__llvm__) || (LLVM_GNUC_PREREQ(4, 3, 0) &amp;&amp; !defined(__ICC))</span></div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <span class="keywordflow">return</span> __builtin_bswap32(<a class="code hl_class" href="classvalue.html">value</a>);</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#elif defined(_MSC_VER) &amp;&amp; !defined(_DEBUG)</span></div>
@@ -146,8 +150,10 @@ $(document).ready(function(){initNavTree('_swap_byte_order_8h_source.html',''); 
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <span class="keywordflow">return</span> (Byte0 &lt;&lt; 24) | (Byte1 &lt;&lt; 8) | (Byte2 &gt;&gt; 8) | (Byte3 &gt;&gt; 24);</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>}</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="keyword">inline</span> uint64_t SwapByteOrder_64(uint64_t <a class="code hl_class" href="classvalue.html">value</a>) {</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment"></span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">/// SwapByteOrder_64 - This function returns a byte-swapped representation of</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">/// the 64-bit argument.</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment"></span><span class="keyword">inline</span> uint64_t SwapByteOrder_64(uint64_t <a class="code hl_class" href="classvalue.html">value</a>) {</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">#if defined(__llvm__) || (LLVM_GNUC_PREREQ(4, 3, 0) &amp;&amp; !defined(__ICC))</span></div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  <span class="keywordflow">return</span> __builtin_bswap64(<a class="code hl_class" href="classvalue.html">value</a>);</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">#elif defined(_MSC_VER) &amp;&amp; !defined(_DEBUG)</span></div>
@@ -222,7 +228,7 @@ $(document).ready(function(){initNavTree('_swap_byte_order_8h_source.html',''); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><b>SwapByteOrder.h</b></li>
-    <li class="footer">Generated on Tue Oct 19 2021 04:32:23 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Oct 19 2021 04:42:46 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-17-g9e6db17</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-19-ge56d6de</span>
    </div>
   </td>
  </tr>
@@ -105,14 +105,30 @@ $(document).ready(function(){initNavTree('_discretization_8h_source.html',''); i
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;unsupported/Eigen/MatrixFunctions&quot;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span>frc {</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"></span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> * Discretizes the given continuous A matrix.</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> * @param contA Continuous system matrix.</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> * @param dt    Discretization timestep.</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> * @param discA Storage for discrete system matrix.</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span> States&gt;</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keywordtype">void</span> DiscretizeA(<span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_matrix.html">Eigen::Matrix&lt;double, States, States&gt;</a>&amp; contA,</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                 units::second_t dt,</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>                 <a class="code hl_class" href="class_eigen_1_1_matrix.html">Eigen::Matrix&lt;double, States, States&gt;</a>* discA) {</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  *discA = (contA * dt.to&lt;<span class="keywordtype">double</span>&gt;()).exp();</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>}</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment"></span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment"> * Discretizes the given continuous A and B matrices.</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment"> * @param contA Continuous system matrix.</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment"> * @param contB Continuous input matrix.</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment"> * @param dt    Discretization timestep.</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment"> * @param discA Storage for discrete system matrix.</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment"> * @param discB Storage for discrete input matrix.</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span> States, <span class="keywordtype">int</span> Inputs&gt;</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keywordtype">void</span> DiscretizeAB(<span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_matrix.html">Eigen::Matrix&lt;double, States, States&gt;</a>&amp; contA,</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                  <span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_matrix.html">Eigen::Matrix&lt;double, States, Inputs&gt;</a>&amp; contB,</div>
@@ -130,7 +146,16 @@ $(document).ready(function(){initNavTree('_discretization_8h_source.html',''); i
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  *discA = Mdisc.template block&lt;States, States&gt;(0, 0);</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  *discB = Mdisc.template block&lt;States, Inputs&gt;(0, States);</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>}</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment"></span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment"> * Discretizes the given continuous A and Q matrices.</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment"> * @param contA Continuous system matrix.</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment"> * @param contQ Continuous process noise covariance matrix.</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment"> * @param dt    Discretization timestep.</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment"> * @param discA Storage for discrete system matrix.</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment"> * @param discQ Storage for discrete process noise covariance matrix.</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span> States&gt;</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="keywordtype">void</span> DiscretizeAQ(<span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_matrix.html">Eigen::Matrix&lt;double, States, States&gt;</a>&amp; contA,</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                  <span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_matrix.html">Eigen::Matrix&lt;double, States, States&gt;</a>&amp; contQ,</div>
@@ -164,7 +189,25 @@ $(document).ready(function(){initNavTree('_discretization_8h_source.html',''); i
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  <span class="comment">// Make discrete Q symmetric if it isn&#39;t already</span></div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  *discQ = (Q + Q.transpose()) / 2.0;</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>}</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment"></span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="comment"> * Discretizes the given continuous A and Q matrices.</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment"> * Rather than solving a 2N x 2N matrix exponential like in DiscretizeAQ()</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment"> * (which is expensive), we take advantage of the structure of the block matrix</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="comment"> * of A and Q.</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment"> * 1) The exponential of A*t, which is only N x N, is relatively cheap.</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="comment"> * 2) The upper-right quarter of the 2N x 2N matrix, which we can approximate</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="comment"> *    using a taylor series to several terms and still be substantially cheaper</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment"> *    than taking the big exponential.</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="comment"> * @param contA Continuous system matrix.</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment"> * @param contQ Continuous process noise covariance matrix.</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="comment"> * @param dt    Discretization timestep.</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="comment"> * @param discA Storage for discrete system matrix.</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="comment"> * @param discQ Storage for discrete process noise covariance matrix.</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span> States&gt;</div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="keywordtype">void</span> DiscretizeAQTaylor(<span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_matrix.html">Eigen::Matrix&lt;double, States, States&gt;</a>&amp; contA,</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>                        <span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_matrix.html">Eigen::Matrix&lt;double, States, States&gt;</a>&amp; contQ,</div>
@@ -198,7 +241,14 @@ $(document).ready(function(){initNavTree('_discretization_8h_source.html',''); i
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>  <span class="comment">// Make discrete Q symmetric if it isn&#39;t already</span></div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>  *discQ = (Q + Q.transpose()) / 2.0;</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>}</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span><span class="comment"></span> </div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="comment"> * Returns a discretized version of the provided continuous measurement noise</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="comment"> * covariance matrix.</span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="comment"> * @param R  Continuous measurement noise covariance matrix.</span></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="comment"> * @param dt Discretization timestep.</span></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span> Outputs&gt;</div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><a class="code hl_class" href="class_eigen_1_1_matrix.html">Eigen::Matrix&lt;double, Outputs, Outputs&gt;</a> DiscretizeR(</div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    <span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_matrix.html">Eigen::Matrix&lt;double, Outputs, Outputs&gt;</a>&amp; R, units::second_t dt) {</div>
@@ -214,7 +264,7 @@ $(document).ready(function(){initNavTree('_discretization_8h_source.html',''); i
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_6a6d4dbfd7def32c812c83ce511abb63.html">system</a></li><li class="navelem"><b>Discretization.h</b></li>
-    <li class="footer">Generated on Tue Oct 19 2021 04:32:22 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Oct 19 2021 04:42:45 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

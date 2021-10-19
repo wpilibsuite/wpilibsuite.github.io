@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-17-g9e6db17</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-19-ge56d6de</span>
    </div>
   </td>
  </tr>
@@ -109,7 +109,20 @@ $(document).ready(function(){initNavTree('_matrix_power_8h_source.html',''); ini
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_eigen.html">Eigen</a> {</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> MatrixType&gt; <span class="keyword">class </span>MatrixPower;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"></span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> * \ingroup MatrixFunctions_Module</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> * \brief Proxy for the matrix power of some matrix.</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"> * \tparam MatrixType  type of the base, a matrix.</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"> * This class holds the arguments to the matrix power until it is</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment"> * assigned or evaluated for some other reason (so the argument</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment"> * should not be changed in the meantime). It is the return type of</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"> * MatrixPower::operator() and related functions and most of the</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment"> * time this is the only way it is used.</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">/* TODO This class is only used by MatrixPower, so it should be nested</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment"> * into MatrixPower, like MatrixPower::ReturnValue. However, my</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment"> * compiler complained about unused template parameter in the</span></div>
@@ -123,10 +136,21 @@ $(document).ready(function(){initNavTree('_matrix_power_8h_source.html',''); ini
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>{</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <span class="keyword">public</span>:</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">typedef</span> <span class="keyword">typename</span> MatrixType::RealScalar RealScalar;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment"></span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">    /**</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">     * \brief Constructor.</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">     * \param[in] pow  %MatrixPower storing the base.</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">     * \param[in] p    scalar, the exponent of the matrix power.</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">     */</span></div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="class_eigen_1_1_matrix_power_parentheses_return_value.html#ae3a02d943a31427a6dc8c1f60f3367d7">   50</a></span>    <a class="code hl_function" href="class_eigen_1_1_matrix_power_parentheses_return_value.html#ae3a02d943a31427a6dc8c1f60f3367d7">MatrixPowerParenthesesReturnValue</a>(<a class="code hl_class" href="class_eigen_1_1_matrix_power.html">MatrixPower&lt;MatrixType&gt;</a>&amp; pow, RealScalar p) : m_pow(pow), m_p(p)</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    { }</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment"></span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">    /**</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">     * \brief Compute the matrix power.</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">     * \param[out] result</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">     */</span></div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> ResultType&gt;</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="class_eigen_1_1_matrix_power_parentheses_return_value.html#af91430ff248b714158cfba4301cc0e2b">   59</a></span>    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_eigen_1_1_matrix_power_parentheses_return_value.html#af91430ff248b714158cfba4301cc0e2b">evalTo</a>(ResultType&amp; result)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="keyword">    </span>{ m_pow.compute(result, m_p); }</div>
@@ -138,7 +162,22 @@ $(document).ready(function(){initNavTree('_matrix_power_8h_source.html',''); ini
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    MatrixPower&lt;MatrixType&gt;&amp; m_pow;</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keyword">const</span> RealScalar m_p;</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>};</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment"></span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment"> * \ingroup MatrixFunctions_Module</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment"> * \brief Class for computing matrix powers.</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment"> * \tparam MatrixType  type of the base, expected to be an instantiation</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment"> * of the Matrix class template.</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment"> * This class is capable of computing triangular real/complex matrices</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment"> * raised to a power in the interval \f$ (-1, 1) \f$.</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment"> * \note Currently this class is only used by MatrixPower. One may</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment"> * insist that this be nested into MatrixPower. This class is here to</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment"> * facilitate future development of triangular matrix functions.</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> MatrixType&gt;</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="class_eigen_1_1_matrix_power_atomic.html">   86</a></span><span class="keyword">class </span><a class="code hl_class" href="class_eigen_1_1_matrix_power_atomic.html">MatrixPowerAtomic</a> : <a class="code hl_class" href="class_eigen_1_1internal_1_1noncopyable.html">internal::noncopyable</a></div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>{</div>
@@ -164,9 +203,26 @@ $(document).ready(function(){initNavTree('_matrix_power_8h_source.html',''); ini
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="keyword">static</span> ComplexScalar computeSuperDiag(<span class="keyword">const</span> ComplexScalar&amp;, <span class="keyword">const</span> ComplexScalar&amp;, RealScalar p);</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="keyword">static</span> RealScalar computeSuperDiag(RealScalar, RealScalar, RealScalar p);</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  <span class="keyword">public</span>:<span class="comment"></span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="comment">    /**</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="comment">     * \brief Constructor.</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="comment">     * \param[in] T  the base of the matrix power.</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="comment">     * \param[in] p  the exponent of the matrix power, should be in</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment">     * \f$ (-1, 1) \f$.</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="comment">     * The class stores a reference to T, so it should not be changed</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment">     * (or destroyed) before evaluation. Only the upper triangular</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="comment">     * part of T is read.</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="comment">     */</span></div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <a class="code hl_function" href="class_eigen_1_1_matrix_power_atomic.html#ac0ec5f8d6c203cd9b53e2c95e01037d4">MatrixPowerAtomic</a>(<span class="keyword">const</span> MatrixType&amp; T, RealScalar p);</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="comment"></span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="comment">    /**</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="comment">     * \brief Compute the matrix power.</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="comment">     * \param[out] res  \f$ A^p \f$ where A and p are specified in the</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="comment">     * constructor.</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="comment">     */</span></div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_eigen_1_1_matrix_power_atomic.html#ac3cdfb54a5b60079d068784534cbc174">compute</a>(<a class="code hl_class" href="class_eigen_1_1_block.html">ResultType</a>&amp; res) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>};</div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
@@ -353,7 +409,26 @@ $(document).ready(function(){initNavTree('_matrix_power_8h_source.html',''); ini
 <div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>  RealScalar w = <a class="code hl_function" href="group___unit_math.html#gaef69e3da7b1cf820853dc8bb5043e1e7">numext::log1p</a>((curr-prev)/prev)/RealScalar(2);</div>
 <div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>  <span class="keywordflow">return</span> 2 * <a class="code hl_function" href="group___unit_math.html#ga37ffdd257c05eb6916d62bfbbc0890e2">exp</a>(p * (<a class="code hl_function" href="group___unit_math.html#gaed3e6783dc5ab1dda006913aa53f17c8">log</a>(curr) + <a class="code hl_function" href="group___unit_math.html#gaed3e6783dc5ab1dda006913aa53f17c8">log</a>(prev)) / 2) * <a class="code hl_function" href="group___unit_math.html#ga38584a9aa9ecbcf455f1a75b23fc8495">sinh</a>(p * w) / (curr - prev);</div>
 <div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>}</div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span> </div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span><span class="comment"></span> </div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span><span class="comment"> * \ingroup MatrixFunctions_Module</span></div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span><span class="comment"> * \brief Class for computing matrix powers.</span></div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span><span class="comment"> * \tparam MatrixType  type of the base, expected to be an instantiation</span></div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span><span class="comment"> * of the Matrix class template.</span></div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span><span class="comment"> * This class is capable of computing real/complex matrices raised to</span></div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span><span class="comment"> * an arbitrary real power. Meanwhile, it saves the result of Schur</span></div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span><span class="comment"> * decomposition if an non-integral power has even been calculated.</span></div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span><span class="comment"> * Therefore, if you want to compute multiple (&gt;= 2) matrix powers</span></div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span><span class="comment"> * for the same matrix, using the class directly is more efficient than</span></div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span><span class="comment"> * calling MatrixBase::pow().</span></div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span><span class="comment"> * Example:</span></div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span><span class="comment"> * \include MatrixPower_optimal.cpp</span></div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span><span class="comment"> * Output: \verbinclude MatrixPower_optimal.out</span></div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> MatrixType&gt;</div>
 <div class="line"><a id="l00337" name="l00337"></a><span class="lineno"><a class="line" href="class_eigen_1_1_matrix_power.html">  337</a></span><span class="keyword">class </span><a class="code hl_class" href="class_eigen_1_1_matrix_power.html">MatrixPower</a> : <a class="code hl_class" href="class_eigen_1_1internal_1_1noncopyable.html">internal::noncopyable</a></div>
 <div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>{</div>
@@ -361,17 +436,39 @@ $(document).ready(function(){initNavTree('_matrix_power_8h_source.html',''); ini
 <div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>    <span class="keyword">typedef</span> <span class="keyword">typename</span> MatrixType::Scalar Scalar;</div>
 <div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>    <span class="keyword">typedef</span> <span class="keyword">typename</span> MatrixType::RealScalar RealScalar;</div>
 <div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span> </div>
-<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>  <span class="keyword">public</span>:<span class="comment"></span></div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span><span class="comment">    /**</span></div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span><span class="comment">     * \brief Constructor.</span></div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span><span class="comment">     * \param[in] A  the base of the matrix power.</span></div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span><span class="comment">     * The class stores a reference to A, so it should not be changed</span></div>
+<div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span><span class="comment">     * (or destroyed) before evaluation.</span></div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span><span class="comment">     */</span></div>
 <div class="line"><a id="l00352" name="l00352"></a><span class="lineno"><a class="line" href="class_eigen_1_1_matrix_power.html#a5eb445525601510413b53cd347c44716">  352</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="class_eigen_1_1_matrix_power.html#a5eb445525601510413b53cd347c44716">MatrixPower</a>(<span class="keyword">const</span> MatrixType&amp; A) :</div>
 <div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>      m_A(A),</div>
 <div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>      m_conditionNumber(0),</div>
 <div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>      m_rank(A.cols()),</div>
 <div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>      m_nulls(0)</div>
 <div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>    { eigen_assert(A.rows() == A.cols()); }</div>
-<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span> </div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span><span class="comment"></span> </div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span><span class="comment">    /**</span></div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span><span class="comment">     * \brief Returns the matrix power.</span></div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span><span class="comment">     * \param[in] p  exponent, a real scalar.</span></div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span><span class="comment">     * \return The expression \f$ A^p \f$, where A is specified in the</span></div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span><span class="comment">     * constructor.</span></div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span><span class="comment">     */</span></div>
 <div class="line"><a id="l00366" name="l00366"></a><span class="lineno"><a class="line" href="class_eigen_1_1_matrix_power.html#a97ae57c831001e267e5fdadfe325d641">  366</a></span>    <span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_matrix_power_parentheses_return_value.html">MatrixPowerParenthesesReturnValue&lt;MatrixType&gt;</a> <a class="code hl_function" href="class_eigen_1_1_matrix_power.html#a97ae57c831001e267e5fdadfe325d641">operator()</a>(RealScalar p)</div>
 <div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>    { <span class="keywordflow">return</span> <a class="code hl_class" href="class_eigen_1_1_matrix_power_parentheses_return_value.html">MatrixPowerParenthesesReturnValue&lt;MatrixType&gt;</a>(*<span class="keyword">this</span>, p); }</div>
-<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span> </div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span><span class="comment"></span> </div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span><span class="comment">    /**</span></div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span><span class="comment">     * \brief Compute the matrix power.</span></div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span><span class="comment">     * \param[in]  p    exponent, a real scalar.</span></div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span><span class="comment">     * \param[out] res  \f$ A^p \f$ where A is specified in the</span></div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span><span class="comment">     * constructor.</span></div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span><span class="comment">     */</span></div>
 <div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> ResultType&gt;</div>
 <div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_eigen_1_1_matrix_power.html#aa1258393dc13acd6e401e000f99b915f">compute</a>(ResultType&amp; res, RealScalar p);</div>
 <div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>    </div>
@@ -382,23 +479,45 @@ $(document).ready(function(){initNavTree('_matrix_power_8h_source.html',''); ini
 <div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>    <span class="keyword">typedef</span> std::complex&lt;RealScalar&gt; ComplexScalar;</div>
 <div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span>    <span class="keyword">typedef</span> Matrix&lt;ComplexScalar, <a class="code hl_variable" href="namespace_eigen.html#ad81fa7195215a0ce30017dfac309f0b2">Dynamic</a>, <a class="code hl_variable" href="namespace_eigen.html#ad81fa7195215a0ce30017dfac309f0b2">Dynamic</a>, 0,</div>
 <div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span>              MatrixType::RowsAtCompileTime, MatrixType::ColsAtCompileTime&gt; ComplexMatrix;</div>
-<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span> </div>
+<div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span><span class="comment"></span> </div>
+<div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span><span class="comment">    /** \brief Reference to the base of matrix power. */</span></div>
 <div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span>    <span class="keyword">typename</span> MatrixType::Nested m_A;</div>
-<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span> </div>
+<div class="line"><a id="l00389" name="l00389"></a><span class="lineno">  389</span><span class="comment"></span> </div>
+<div class="line"><a id="l00390" name="l00390"></a><span class="lineno">  390</span><span class="comment">    /** \brief Temporary storage. */</span></div>
 <div class="line"><a id="l00391" name="l00391"></a><span class="lineno">  391</span>    MatrixType m_tmp;</div>
-<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span> </div>
+<div class="line"><a id="l00392" name="l00392"></a><span class="lineno">  392</span><span class="comment"></span> </div>
+<div class="line"><a id="l00393" name="l00393"></a><span class="lineno">  393</span><span class="comment">    /** \brief Store the result of Schur decomposition. */</span></div>
 <div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>    ComplexMatrix m_T, m_U;</div>
-<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>    </div>
+<div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span>    <span class="comment"></span></div>
+<div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span><span class="comment">    /** \brief Store fractional power of m_T. */</span></div>
 <div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span>    ComplexMatrix m_fT;</div>
-<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span> </div>
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span><span class="comment"></span> </div>
+<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span><span class="comment">    /**</span></div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span><span class="comment">     * \brief Condition number of m_A.</span></div>
+<div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span><span class="comment">     * It is initialized as 0 to avoid performing unnecessary Schur</span></div>
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span><span class="comment">     * decomposition, which is the bottleneck.</span></div>
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span><span class="comment">     */</span></div>
 <div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span>    RealScalar m_conditionNumber;</div>
-<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span> </div>
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span><span class="comment"></span> </div>
+<div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span><span class="comment">    /** \brief Rank of m_A. */</span></div>
 <div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span>    <a class="code hl_typedef" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> m_rank;</div>
-<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>    </div>
+<div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>    <span class="comment"></span></div>
+<div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span><span class="comment">    /** \brief Rank deficiency of m_A. */</span></div>
 <div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>    <a class="code hl_typedef" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> m_nulls;</div>
-<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span> </div>
+<div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span><span class="comment"></span> </div>
+<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span><span class="comment">    /**</span></div>
+<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span><span class="comment">     * \brief Split p into integral part and fractional part.</span></div>
+<div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span><span class="comment">     * \param[in]  p        The exponent.</span></div>
+<div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span><span class="comment">     * \param[out] p        The fractional part ranging in \f$ (-1, 1) \f$.</span></div>
+<div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span><span class="comment">     * \param[out] intpart  The integral part.</span></div>
+<div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span><span class="comment">     * Only if the fractional part is nonzero, it calls initialize().</span></div>
+<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span><span class="comment">     */</span></div>
 <div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span>    <span class="keywordtype">void</span> split(RealScalar&amp; p, RealScalar&amp; intpart);</div>
-<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span> </div>
+<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span><span class="comment"></span> </div>
+<div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span><span class="comment">    /** \brief Perform Schur decomposition for fractional power. */</span></div>
 <div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span>    <span class="keywordtype">void</span> initialize();</div>
 <div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span> </div>
 <div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> ResultType&gt;</div>
@@ -555,17 +674,42 @@ $(document).ready(function(){initNavTree('_matrix_power_8h_source.html',''); ini
 <div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span>    <span class="keyword">const</span> ComplexMatrix&amp; T,</div>
 <div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span>    <span class="keyword">const</span> ComplexMatrix&amp; U)</div>
 <div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span>{ res.noalias() = (U * (T.template triangularView&lt;Upper&gt;() * U.adjoint())).real(); }</div>
-<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span> </div>
+<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span><span class="comment"></span> </div>
+<div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span><span class="comment"> * \ingroup MatrixFunctions_Module</span></div>
+<div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span><span class="comment"> * \brief Proxy for the matrix power of some matrix (expression).</span></div>
+<div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span><span class="comment"> * \tparam Derived  type of the base, a matrix (expression).</span></div>
+<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span><span class="comment"> * This class holds the arguments to the matrix power until it is</span></div>
+<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span><span class="comment"> * assigned or evaluated for some other reason (so the argument</span></div>
+<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span><span class="comment"> * should not be changed in the meantime). It is the return type of</span></div>
+<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span><span class="comment"> * MatrixBase::pow() and related functions and most of the</span></div>
+<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span><span class="comment"> * time this is the only way it is used.</span></div>
+<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Derived&gt;</div>
 <div class="line"><a id="l00596" name="l00596"></a><span class="lineno"><a class="line" href="class_eigen_1_1_matrix_power_return_value.html">  596</a></span><span class="keyword">class </span><a class="code hl_class" href="class_eigen_1_1_matrix_power_return_value.html">MatrixPowerReturnValue</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_eigen_1_1_return_by_value.html">ReturnByValue</a>&lt; MatrixPowerReturnValue&lt;Derived&gt; &gt;</div>
 <div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span>{</div>
 <div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>  <span class="keyword">public</span>:</div>
 <div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>    <span class="keyword">typedef</span> <span class="keyword">typename</span> Derived::PlainObject PlainObject;</div>
 <div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>    <span class="keyword">typedef</span> <span class="keyword">typename</span> Derived::RealScalar RealScalar;</div>
-<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span> </div>
+<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span><span class="comment"></span> </div>
+<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span><span class="comment">    /**</span></div>
+<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span><span class="comment">     * \brief Constructor.</span></div>
+<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span><span class="comment">     * \param[in] A  %Matrix (expression), the base of the matrix power.</span></div>
+<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span><span class="comment">     * \param[in] p  real scalar, the exponent of the matrix power.</span></div>
+<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span><span class="comment">     */</span></div>
 <div class="line"><a id="l00608" name="l00608"></a><span class="lineno"><a class="line" href="class_eigen_1_1_matrix_power_return_value.html#a3067e09b352f967a23bb2a9c50afee88">  608</a></span>    <a class="code hl_function" href="class_eigen_1_1_matrix_power_return_value.html#a3067e09b352f967a23bb2a9c50afee88">MatrixPowerReturnValue</a>(<span class="keyword">const</span> Derived&amp; A, RealScalar p) : m_A(A), m_p(p)</div>
 <div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>    { }</div>
-<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span> </div>
+<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span><span class="comment"></span> </div>
+<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span><span class="comment">    /**</span></div>
+<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span><span class="comment">     * \brief Compute the matrix power.</span></div>
+<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span><span class="comment">     * \param[out] result  \f$ A^p \f$ where \p A and \p p are as in the</span></div>
+<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span><span class="comment">     * constructor.</span></div>
+<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span><span class="comment">     */</span></div>
 <div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> ResultType&gt;</div>
 <div class="line"><a id="l00618" name="l00618"></a><span class="lineno"><a class="line" href="class_eigen_1_1_matrix_power_return_value.html#a5f15ad16576debad4d4cc0798ff63172">  618</a></span>    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_eigen_1_1_matrix_power_return_value.html#a5f15ad16576debad4d4cc0798ff63172">evalTo</a>(ResultType&amp; result)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span><span class="keyword">    </span>{ <a class="code hl_class" href="class_eigen_1_1_matrix_power.html">MatrixPower&lt;PlainObject&gt;</a>(m_A.eval()).<a class="code hl_function" href="class_eigen_1_1_matrix_power.html#aa1258393dc13acd6e401e000f99b915f">compute</a>(result, m_p); }</div>
@@ -577,17 +721,45 @@ $(document).ready(function(){initNavTree('_matrix_power_8h_source.html',''); ini
 <div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>    <span class="keyword">const</span> Derived&amp; m_A;</div>
 <div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>    <span class="keyword">const</span> RealScalar m_p;</div>
 <div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span>};</div>
-<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span> </div>
+<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span><span class="comment"></span> </div>
+<div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span><span class="comment"> * \ingroup MatrixFunctions_Module</span></div>
+<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span><span class="comment"> * \brief Proxy for the matrix power of some matrix (expression).</span></div>
+<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span><span class="comment"> * \tparam Derived  type of the base, a matrix (expression).</span></div>
+<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span><span class="comment"> * This class holds the arguments to the matrix power until it is</span></div>
+<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span><span class="comment"> * assigned or evaluated for some other reason (so the argument</span></div>
+<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span><span class="comment"> * should not be changed in the meantime). It is the return type of</span></div>
+<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span><span class="comment"> * MatrixBase::pow() and related functions and most of the</span></div>
+<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span><span class="comment"> * time this is the only way it is used.</span></div>
+<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Derived&gt;</div>
 <div class="line"><a id="l00643" name="l00643"></a><span class="lineno"><a class="line" href="class_eigen_1_1_matrix_complex_power_return_value.html">  643</a></span><span class="keyword">class </span><a class="code hl_class" href="class_eigen_1_1_matrix_complex_power_return_value.html">MatrixComplexPowerReturnValue</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_eigen_1_1_return_by_value.html">ReturnByValue</a>&lt; MatrixComplexPowerReturnValue&lt;Derived&gt; &gt;</div>
 <div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span>{</div>
 <div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span>  <span class="keyword">public</span>:</div>
 <div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>    <span class="keyword">typedef</span> <span class="keyword">typename</span> Derived::PlainObject PlainObject;</div>
 <div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span>    <span class="keyword">typedef</span> <span class="keyword">typename</span> std::complex&lt;typename Derived::RealScalar&gt; ComplexScalar;</div>
-<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span> </div>
+<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span><span class="comment"></span> </div>
+<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span><span class="comment">    /**</span></div>
+<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span><span class="comment">     * \brief Constructor.</span></div>
+<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span><span class="comment">     * \param[in] A  %Matrix (expression), the base of the matrix power.</span></div>
+<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span><span class="comment">     * \param[in] p  complex scalar, the exponent of the matrix power.</span></div>
+<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span><span class="comment">     */</span></div>
 <div class="line"><a id="l00655" name="l00655"></a><span class="lineno"><a class="line" href="class_eigen_1_1_matrix_complex_power_return_value.html#a3e5903e22f70e9deb07c3967ae52fd54">  655</a></span>    <a class="code hl_function" href="class_eigen_1_1_matrix_complex_power_return_value.html#a3e5903e22f70e9deb07c3967ae52fd54">MatrixComplexPowerReturnValue</a>(<span class="keyword">const</span> Derived&amp; A, <span class="keyword">const</span> ComplexScalar&amp; p) : m_A(A), m_p(p)</div>
 <div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>    { }</div>
-<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span> </div>
+<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span><span class="comment"></span> </div>
+<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span><span class="comment">    /**</span></div>
+<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span><span class="comment">     * \brief Compute the matrix power.</span></div>
+<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span><span class="comment">     * Because \p p is complex, \f$ A^p \f$ is simply evaluated as \f$</span></div>
+<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span><span class="comment">     * \exp(p \log(A)) \f$.</span></div>
+<div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span><span class="comment">     *</span></div>
+<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span><span class="comment">     * \param[out] result  \f$ A^p \f$ where \p A and \p p are as in the</span></div>
+<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span><span class="comment">     * constructor.</span></div>
+<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span><span class="comment">     */</span></div>
 <div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> ResultType&gt;</div>
 <div class="line"><a id="l00668" name="l00668"></a><span class="lineno"><a class="line" href="class_eigen_1_1_matrix_complex_power_return_value.html#ac7a7947bc6cad6554d31b08b847bc6dd">  668</a></span>    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_eigen_1_1_matrix_complex_power_return_value.html#ac7a7947bc6cad6554d31b08b847bc6dd">evalTo</a>(ResultType&amp; result)<span class="keyword"> const</span></div>
 <div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span><span class="keyword">    </span>{ result = (m_p * m_A.log()).exp(); }</div>
@@ -667,7 +839,7 @@ $(document).ready(function(){initNavTree('_matrix_power_8h_source.html',''); ini
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_bfb2597c438c4234fbdcce568a9e650d.html">eigeninclude</a></li><li class="navelem"><a class="el" href="dir_8d88b5e29642bf3e01d1d9dce17c023a.html">unsupported</a></li><li class="navelem"><a class="el" href="dir_010c3e3a40e37c997b67f323a97cca10.html">Eigen</a></li><li class="navelem"><a class="el" href="dir_9b7741f913b8f37fb991582c962ee416.html">src</a></li><li class="navelem"><a class="el" href="dir_aef29257d7f58b415a57453d3f3c9140.html">MatrixFunctions</a></li><li class="navelem"><b>MatrixPower.h</b></li>
-    <li class="footer">Generated on Tue Oct 19 2021 04:32:22 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Oct 19 2021 04:42:45 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

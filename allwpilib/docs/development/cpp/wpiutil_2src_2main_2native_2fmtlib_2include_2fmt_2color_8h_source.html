@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-17-g9e6db17</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-19-ge56d6de</span>
    </div>
   </td>
  </tr>
@@ -327,7 +327,8 @@ $(document).ready(function(){initNavTree('wpiutil_2src_2main_2native_2fmtlib_2in
 <div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>};</div>
 <div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span> </div>
 <div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>FMT_END_DETAIL_NAMESPACE</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span> </div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span><span class="comment"></span> </div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span><span class="comment">/** A text style consisting of foreground and background colors and emphasis. */</span></div>
 <div class="line"><a id="l00236" name="l00236"></a><span class="lineno"><a class="line" href="classtext__style.html">  236</a></span><span class="keyword">class </span><a class="code hl_class" href="classtext__style.html">text_style</a> {</div>
 <div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span> <span class="keyword">public</span>:</div>
 <div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>  FMT_CONSTEXPR <a class="code hl_class" href="classtext__style.html">text_style</a>(emphasis em = emphasis()) FMT_NOEXCEPT</div>
@@ -448,11 +449,13 @@ $(document).ready(function(){initNavTree('wpiutil_2src_2main_2native_2fmtlib_2in
 <div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>  <span class="keywordtype">bool</span> set_background_color;</div>
 <div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>  emphasis ems;</div>
 <div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>};</div>
-<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span> </div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span><span class="comment"></span> </div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span><span class="comment">/** Creates a text style from the foreground (text) color. */</span></div>
 <div class="line"><a id="l00358" name="l00358"></a><span class="lineno"><a class="line" href="classtext__style.html#a997e6e620a49e3f2a459f74249305136">  358</a></span>FMT_CONSTEXPR <span class="keyword">inline</span> <a class="code hl_class" href="classtext__style.html">text_style</a> fg(detail::color_type foreground) FMT_NOEXCEPT {</div>
 <div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span>  <span class="keywordflow">return</span> <a class="code hl_class" href="classtext__style.html">text_style</a>(<span class="keyword">true</span>, foreground);</div>
 <div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>}</div>
-<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span> </div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span><span class="comment"></span> </div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span><span class="comment">/** Creates a text style from the background color. */</span></div>
 <div class="line"><a id="l00363" name="l00363"></a><span class="lineno"><a class="line" href="classtext__style.html#a0e774baca51b1026d9e413e49789f6bd">  363</a></span>FMT_CONSTEXPR <span class="keyword">inline</span> <a class="code hl_class" href="classtext__style.html">text_style</a> bg(detail::color_type background) FMT_NOEXCEPT {</div>
 <div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>  <span class="keywordflow">return</span> <a class="code hl_class" href="classtext__style.html">text_style</a>(<span class="keyword">false</span>, background);</div>
 <div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>}</div>
@@ -614,7 +617,18 @@ $(document).ready(function(){initNavTree('wpiutil_2src_2main_2native_2fmtlib_2in
 <div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span>  buf.push_back(Char(0));</div>
 <div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span>  detail::fputs(buf.data(), f);</div>
 <div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>}</div>
-<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span> </div>
+<div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span><span class="comment"></span> </div>
+<div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span><span class="comment">  \rst</span></div>
+<div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span><span class="comment">  Formats a string and prints it to the specified file stream using ANSI</span></div>
+<div class="line"><a id="l00528" name="l00528"></a><span class="lineno">  528</span><span class="comment">  escape sequences to specify text formatting.</span></div>
+<div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span><span class="comment"></span> </div>
+<div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span><span class="comment">  **Example**::</span></div>
+<div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span><span class="comment"></span> </div>
+<div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span><span class="comment">    fmt::print(fmt::emphasis::bold | fg(fmt::color::red),</span></div>
+<div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span><span class="comment">               &quot;Elapsed time: {0:.2f} seconds&quot;, 1.23);</span></div>
+<div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span><span class="comment">  \endrst</span></div>
+<div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> S, <span class="keyword">typename</span>... Args,</div>
 <div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span>          FMT_ENABLE_IF(detail::is_string&lt;S&gt;::value)&gt;</div>
 <div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span><span class="keywordtype">void</span> print(std::FILE* f, <span class="keyword">const</span> <a class="code hl_class" href="classtext__style.html">text_style</a>&amp; ts, <span class="keyword">const</span> S&amp; format_str,</div>
@@ -622,7 +636,18 @@ $(document).ready(function(){initNavTree('wpiutil_2src_2main_2native_2fmtlib_2in
 <div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span>  vprint(f, ts, format_str,</div>
 <div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span>         fmt::make_args_checked&lt;Args...&gt;(format_str, args...));</div>
 <div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span>}</div>
-<div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span> </div>
+<div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span><span class="comment"></span> </div>
+<div class="line"><a id="l00544" name="l00544"></a><span class="lineno">  544</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span><span class="comment">  \rst</span></div>
+<div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span><span class="comment">  Formats a string and prints it to stdout using ANSI escape sequences to</span></div>
+<div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span><span class="comment">  specify text formatting.</span></div>
+<div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span><span class="comment"></span> </div>
+<div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span><span class="comment">  **Example**::</span></div>
+<div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span><span class="comment"></span> </div>
+<div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span><span class="comment">    fmt::print(fmt::emphasis::bold | fg(fmt::color::red),</span></div>
+<div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span><span class="comment">               &quot;Elapsed time: {0:.2f} seconds&quot;, 1.23);</span></div>
+<div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span><span class="comment">  \endrst</span></div>
+<div class="line"><a id="l00554" name="l00554"></a><span class="lineno">  554</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00555" name="l00555"></a><span class="lineno">  555</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> S, <span class="keyword">typename</span>... Args,</div>
 <div class="line"><a id="l00556" name="l00556"></a><span class="lineno">  556</span>          FMT_ENABLE_IF(detail::is_string&lt;S&gt;::value)&gt;</div>
 <div class="line"><a id="l00557" name="l00557"></a><span class="lineno">  557</span><span class="keywordtype">void</span> print(<span class="keyword">const</span> <a class="code hl_class" href="classtext__style.html">text_style</a>&amp; ts, <span class="keyword">const</span> S&amp; format_str, <span class="keyword">const</span> Args&amp;... args) {</div>
@@ -637,14 +662,29 @@ $(document).ready(function(){initNavTree('wpiutil_2src_2main_2native_2fmtlib_2in
 <div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span>  detail::vformat_to(buf, ts, to_string_view(format_str), args);</div>
 <div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span>  <span class="keywordflow">return</span> fmt::to_string(buf);</div>
 <div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span>}</div>
-<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span> </div>
+<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span><span class="comment"></span> </div>
+<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span><span class="comment">  \rst</span></div>
+<div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span><span class="comment">  Formats arguments and returns the result as a string using ANSI</span></div>
+<div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span><span class="comment">  escape sequences to specify text formatting.</span></div>
+<div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span><span class="comment"></span> </div>
+<div class="line"><a id="l00575" name="l00575"></a><span class="lineno">  575</span><span class="comment">  **Example**::</span></div>
+<div class="line"><a id="l00576" name="l00576"></a><span class="lineno">  576</span><span class="comment"></span> </div>
+<div class="line"><a id="l00577" name="l00577"></a><span class="lineno">  577</span><span class="comment">    #include &lt;fmt/color.h&gt;</span></div>
+<div class="line"><a id="l00578" name="l00578"></a><span class="lineno">  578</span><span class="comment">    std::string message = fmt::format(fmt::emphasis::bold | fg(fmt::color::red),</span></div>
+<div class="line"><a id="l00579" name="l00579"></a><span class="lineno">  579</span><span class="comment">                                      &quot;The answer is {}&quot;, 42);</span></div>
+<div class="line"><a id="l00580" name="l00580"></a><span class="lineno">  580</span><span class="comment">  \endrst</span></div>
+<div class="line"><a id="l00581" name="l00581"></a><span class="lineno">  581</span><span class="comment">*/</span></div>
 <div class="line"><a id="l00582" name="l00582"></a><span class="lineno">  582</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> S, <span class="keyword">typename</span>... Args, <span class="keyword">typename</span> Char = char_t&lt;S&gt;&gt;</div>
 <div class="line"><a id="l00583" name="l00583"></a><span class="lineno">  583</span><span class="keyword">inline</span> std::basic_string&lt;Char&gt; format(<span class="keyword">const</span> <a class="code hl_class" href="classtext__style.html">text_style</a>&amp; ts, <span class="keyword">const</span> S&amp; format_str,</div>
 <div class="line"><a id="l00584" name="l00584"></a><span class="lineno">  584</span>                                      <span class="keyword">const</span> Args&amp;... args) {</div>
 <div class="line"><a id="l00585" name="l00585"></a><span class="lineno">  585</span>  <span class="keywordflow">return</span> fmt::vformat(ts, to_string_view(format_str),</div>
 <div class="line"><a id="l00586" name="l00586"></a><span class="lineno">  586</span>                      fmt::make_args_checked&lt;Args...&gt;(format_str, args...));</div>
 <div class="line"><a id="l00587" name="l00587"></a><span class="lineno">  587</span>}</div>
-<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span> </div>
+<div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span><span class="comment"></span> </div>
+<div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span><span class="comment">  Formats a string with the given text_style and writes the output to ``out``.</span></div>
+<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> OutputIt, <span class="keyword">typename</span> Char,</div>
 <div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span>          FMT_ENABLE_IF(detail::is_output_iterator&lt;OutputIt, Char&gt;::value)&gt;</div>
 <div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span>OutputIt vformat_to(</div>
@@ -654,7 +694,19 @@ $(document).ready(function(){initNavTree('wpiutil_2src_2main_2native_2fmtlib_2in
 <div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span>  detail::vformat_to(buf, ts, format_str, args);</div>
 <div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span>  <span class="keywordflow">return</span> detail::get_iterator(buf);</div>
 <div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>}</div>
-<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span> </div>
+<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span><span class="comment"></span> </div>
+<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span><span class="comment">  \rst</span></div>
+<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span><span class="comment">  Formats arguments with the given text_style, writes the result to the output</span></div>
+<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span><span class="comment">  iterator ``out`` and returns the iterator past the end of the output range.</span></div>
+<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span><span class="comment"></span> </div>
+<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span><span class="comment">  **Example**::</span></div>
+<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span><span class="comment"></span> </div>
+<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span><span class="comment">    std::vector&lt;char&gt; out;</span></div>
+<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span><span class="comment">    fmt::format_to(std::back_inserter(out),</span></div>
+<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span><span class="comment">                   fmt::emphasis::bold | fg(fmt::color::red), &quot;{}&quot;, 42);</span></div>
+<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span><span class="comment">  \endrst</span></div>
+<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span><span class="comment">*/</span></div>
 <div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> OutputIt, <span class="keyword">typename</span> S, <span class="keyword">typename</span>... Args,</div>
 <div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span>          <span class="keywordtype">bool</span> enable = detail::is_output_iterator&lt;OutputIt, char_t&lt;S&gt;&gt;<a class="code hl_class" href="classvalue.html">::value</a>&amp;&amp;</div>
 <div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span>              detail::is_string&lt;S&gt;::value&gt;</div>
@@ -691,7 +743,7 @@ $(document).ready(function(){initNavTree('wpiutil_2src_2main_2native_2fmtlib_2in
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_07f1050b175e2d01c230e5cadf135f7c.html">fmtlib</a></li><li class="navelem"><a class="el" href="dir_f186fa79a3895d81ef02af9fef546a30.html">include</a></li><li class="navelem"><a class="el" href="dir_37137cfaace3bfc79a7a3aee825a2892.html">fmt</a></li><li class="navelem"><b>color.h</b></li>
-    <li class="footer">Generated on Tue Oct 19 2021 04:32:22 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Oct 19 2021 04:42:45 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-17-g9e6db17</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-19-ge56d6de</span>
    </div>
   </td>
  </tr>
@@ -129,9 +129,20 @@ $(document).ready(function(){initNavTree('_kalman_filter_latency_compensator_8h_
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>          inputs(u),</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>          localMeasurements(localY) {}</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  };</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment"></span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">   * Clears the observer snapshot buffer.</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classfrc_1_1_kalman_filter_latency_compensator.html#a2fd858c67952d32c89d6b35f0d241ab1">   40</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_kalman_filter_latency_compensator.html#a2fd858c67952d32c89d6b35f0d241ab1">Reset</a>() { m_pastObserverSnapshots.clear(); }</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment"></span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">   * Add past observer states to the observer snapshots list.</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">   * @param observer  The observer.</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">   * @param u         The input at the timestamp.</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">   * @param localY    The local output at the timestamp</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">   * @param timestamp The timesnap of the state.</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="classfrc_1_1_kalman_filter_latency_compensator.html#afef84fb6a12305d76a60d40550aaa870">   50</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_kalman_filter_latency_compensator.html#afef84fb6a12305d76a60d40550aaa870">AddObserverState</a>(<span class="keyword">const</span> KalmanFilterType&amp; observer,</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                        Eigen::Vector&lt;double, Inputs&gt; u,</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                        Eigen::Vector&lt;double, Outputs&gt; localY,</div>
@@ -145,7 +156,18 @@ $(document).ready(function(){initNavTree('_kalman_filter_latency_compensator_8h_
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>      m_pastObserverSnapshots.erase(m_pastObserverSnapshots.begin());</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    }</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  }</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment"></span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">   * Add past global measurements (such as from vision)to the estimator.</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">   * @param observer                 The observer to apply the past global</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">   *                                 measurement.</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">   * @param nominalDt                The nominal timestep.</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">   * @param y                        The measurement.</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">   * @param globalMeasurementCorrect The function take calls correct() on the</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">   *                                 observer.</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">   * @param timestamp                The timestamp of the measurement.</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  <span class="keyword">template</span> &lt;<span class="keywordtype">int</span> Rows&gt;</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="classfrc_1_1_kalman_filter_latency_compensator.html#a5214515852510e16d2195261a784b13c">   76</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_kalman_filter_latency_compensator.html#a5214515852510e16d2195261a784b13c">ApplyPastGlobalMeasurement</a>(</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>      KalmanFilterType* observer, units::second_t nominalDt,</div>
@@ -235,7 +257,7 @@ $(document).ready(function(){initNavTree('_kalman_filter_latency_compensator_8h_
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_7b4a0634315f7993a48b0e5d4ddcc644.html">estimator</a></li><li class="navelem"><b>KalmanFilterLatencyCompensator.h</b></li>
-    <li class="footer">Generated on Tue Oct 19 2021 04:32:22 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Oct 19 2021 04:42:45 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

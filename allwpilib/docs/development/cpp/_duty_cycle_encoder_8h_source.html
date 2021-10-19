@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-17-g9e6db17</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-19-ge56d6de</span>
    </div>
   </td>
  </tr>
@@ -114,47 +114,149 @@ $(document).ready(function(){initNavTree('_duty_cycle_encoder_8h_source.html',''
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">namespace </span>frc {</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">class </span>DutyCycle;</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">class </span>DigitalSource;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"></span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"> * Class for supporting duty cycle/PWM encoders, such as the US Digital MA3 with</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"> * PWM Output, the CTRE Mag Encoder, the Rev Hex Encoder, and the AM Mag</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment"> * Encoder.</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="classfrc_1_1_duty_cycle_encoder.html">   27</a></span><span class="keyword">class </span><a class="code hl_class" href="classfrc_1_1_duty_cycle_encoder.html">DutyCycleEncoder</a> : <span class="keyword">public</span> <a class="code hl_class" href="classwpi_1_1_sendable.html">wpi::Sendable</a>,</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                         <span class="keyword">public</span> <a class="code hl_class" href="classwpi_1_1_sendable_helper.html">wpi::SendableHelper</a>&lt;DutyCycleEncoder&gt; {</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> <span class="keyword">public</span>:<span class="comment"></span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">   * Construct a new DutyCycleEncoder on a specific channel.</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">   * @param channel the channel to attach to</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="classfrc_1_1_duty_cycle_encoder.html#af2521e7124e017d4bb5f9d82ea574e35">   35</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classfrc_1_1_duty_cycle_encoder.html#af2521e7124e017d4bb5f9d82ea574e35">DutyCycleEncoder</a>(<span class="keywordtype">int</span> channel);</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment"></span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">   * Construct a new DutyCycleEncoder attached to an existing DutyCycle object.</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">   * @param dutyCycle the duty cycle to attach to</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classfrc_1_1_duty_cycle_encoder.html#a11caeef810f4cdf16b4a0a6a3836c5ca">   42</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classfrc_1_1_duty_cycle_encoder.html#a11caeef810f4cdf16b4a0a6a3836c5ca">DutyCycleEncoder</a>(<a class="code hl_class" href="classfrc_1_1_duty_cycle.html">DutyCycle</a>&amp; dutyCycle);</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment"></span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">   * Construct a new DutyCycleEncoder attached to an existing DutyCycle object.</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">   * @param dutyCycle the duty cycle to attach to</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classfrc_1_1_duty_cycle_encoder.html#a22a21c119f5f7f4c4cbe9810cb40ac9a">   49</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classfrc_1_1_duty_cycle_encoder.html#a22a21c119f5f7f4c4cbe9810cb40ac9a">DutyCycleEncoder</a>(<a class="code hl_class" href="classfrc_1_1_duty_cycle.html">DutyCycle</a>* dutyCycle);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment"></span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">   * Construct a new DutyCycleEncoder attached to an existing DutyCycle object.</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">   * @param dutyCycle the duty cycle to attach to</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classfrc_1_1_duty_cycle_encoder.html#a9a8175dd49bf125b4cb4f5470392a237">   56</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classfrc_1_1_duty_cycle_encoder.html#a9a8175dd49bf125b4cb4f5470392a237">DutyCycleEncoder</a>(std::shared_ptr&lt;DutyCycle&gt; dutyCycle);</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment"></span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">   * Construct a new DutyCycleEncoder attached to a DigitalSource object.</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">   * @param digitalSource the digital source to attach to</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="classfrc_1_1_duty_cycle_encoder.html#a510264a3bb1c89a93c733e623b6082f8">   63</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classfrc_1_1_duty_cycle_encoder.html#a510264a3bb1c89a93c733e623b6082f8">DutyCycleEncoder</a>(<a class="code hl_class" href="classfrc_1_1_digital_source.html">DigitalSource</a>&amp; digitalSource);</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment"></span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">   * Construct a new DutyCycleEncoder attached to a DigitalSource object.</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">   * @param digitalSource the digital source to attach to</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="classfrc_1_1_duty_cycle_encoder.html#a5a4011f1ec7e2fc4e2b25e2eea0061b9">   70</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classfrc_1_1_duty_cycle_encoder.html#a5a4011f1ec7e2fc4e2b25e2eea0061b9">DutyCycleEncoder</a>(<a class="code hl_class" href="classfrc_1_1_digital_source.html">DigitalSource</a>* digitalSource);</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment"></span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">   * Construct a new DutyCycleEncoder attached to a DigitalSource object.</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment">   * @param digitalSource the digital source to attach to</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="classfrc_1_1_duty_cycle_encoder.html#a033273e6b99813f6109674680a229cfd">   77</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classfrc_1_1_duty_cycle_encoder.html#a033273e6b99813f6109674680a229cfd">DutyCycleEncoder</a>(std::shared_ptr&lt;DigitalSource&gt; digitalSource);</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  <a class="code hl_class" href="classfrc_1_1_duty_cycle_encoder.html">~DutyCycleEncoder</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  <a class="code hl_function" href="classfrc_1_1_duty_cycle_encoder.html#af2521e7124e017d4bb5f9d82ea574e35">DutyCycleEncoder</a>(<a class="code hl_class" href="classfrc_1_1_duty_cycle_encoder.html">DutyCycleEncoder</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  <a class="code hl_class" href="classfrc_1_1_duty_cycle_encoder.html">DutyCycleEncoder</a>&amp; operator=(<a class="code hl_class" href="classfrc_1_1_duty_cycle_encoder.html">DutyCycleEncoder</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment"></span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">   * Get the frequency in Hz of the duty cycle signal from the encoder.</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment">   * @return duty cycle frequency in Hz</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="classfrc_1_1_duty_cycle_encoder.html#a7e3bdba84ed3c3643b6c3311e480fb91">   89</a></span>  <span class="keywordtype">int</span> <a class="code hl_function" href="classfrc_1_1_duty_cycle_encoder.html#a7e3bdba84ed3c3643b6c3311e480fb91">GetFrequency</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment"></span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="comment">   * Get if the sensor is connected</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment">   * This uses the duty cycle frequency to determine if the sensor is connected.</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment">   * By default, a value of 100 Hz is used as the threshold, and this value can</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment">   * be changed with SetConnectedFrequencyThreshold.</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="comment">   * @return true if the sensor is connected</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="classfrc_1_1_duty_cycle_encoder.html#a3b613a97453957b3c63b6415e95fdc69">  100</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classfrc_1_1_duty_cycle_encoder.html#a3b613a97453957b3c63b6415e95fdc69">IsConnected</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment"></span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment">   * Change the frequency threshold for detecting connection used by</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment">   * IsConnected.</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="comment">   * @param frequency the minimum frequency in Hz.</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="classfrc_1_1_duty_cycle_encoder.html#aeb80ad8d4a22b2aed01700b52e537f1d">  108</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_duty_cycle_encoder.html#aeb80ad8d4a22b2aed01700b52e537f1d">SetConnectedFrequencyThreshold</a>(<span class="keywordtype">int</span> frequency);</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="comment"></span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="comment">   * Reset the Encoder distance to zero.</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="classfrc_1_1_duty_cycle_encoder.html#ac749c7d3591e4a79f044d7763cf9fd72">  113</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_duty_cycle_encoder.html#ac749c7d3591e4a79f044d7763cf9fd72">Reset</a>();</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="comment"></span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment">   * Get the encoder value since the last reset.</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="comment">   * This is reported in rotations since the last reset.</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="comment">   * @return the encoder value in rotations</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="classfrc_1_1_duty_cycle_encoder.html#aa902217541586c9305c55a15ae169b8c">  122</a></span>  units::turn_t <a class="code hl_function" href="classfrc_1_1_duty_cycle_encoder.html#aa902217541586c9305c55a15ae169b8c">Get</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="comment"></span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="comment">   * Set the distance per rotation of the encoder. This sets the multiplier used</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="comment">   * to determine the distance driven based on the rotation value from the</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="comment">   * encoder. Set this value based on the how far the mechanism travels in 1</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="comment">   * rotation of the encoder, and factor in gearing reductions following the</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="comment">   * encoder shaft. This distance can be in any units you like, linear or</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="comment">   * angular.</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="comment">   * @param distancePerRotation the distance per rotation of the encoder</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="classfrc_1_1_duty_cycle_encoder.html#a897dbd042c23299243fed139745178ae">  134</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_duty_cycle_encoder.html#a897dbd042c23299243fed139745178ae">SetDistancePerRotation</a>(<span class="keywordtype">double</span> distancePerRotation);</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="comment"></span> </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="comment">   * Get the distance per rotation for this encoder.</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="comment">   * @return The scale factor that will be used to convert rotation to useful</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="comment">   * units.</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno"><a class="line" href="classfrc_1_1_duty_cycle_encoder.html#a66c33804bb43a906ea9ae65fccb4e752">  142</a></span>  <span class="keywordtype">double</span> <a class="code hl_function" href="classfrc_1_1_duty_cycle_encoder.html#a66c33804bb43a906ea9ae65fccb4e752">GetDistancePerRotation</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="comment"></span> </div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="comment">   * Get the distance the sensor has driven since the last reset as scaled by</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="comment">   * the value from SetDistancePerRotation.</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span><span class="comment">   * @return The distance driven since the last reset</span></div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno"><a class="line" href="classfrc_1_1_duty_cycle_encoder.html#a245498d3e1770a72137bd65a784868ab">  150</a></span>  <span class="keywordtype">double</span> <a class="code hl_function" href="classfrc_1_1_duty_cycle_encoder.html#a245498d3e1770a72137bd65a784868ab">GetDistance</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="comment"></span> </div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="comment">   * Get the FPGA index for the DutyCycleEncoder.</span></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="comment">   * @return the FPGA index</span></div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno"><a class="line" href="classfrc_1_1_duty_cycle_encoder.html#a924aaa44c53a6ad8174a21687dff781a">  157</a></span>  <span class="keywordtype">int</span> <a class="code hl_function" href="classfrc_1_1_duty_cycle_encoder.html#a924aaa44c53a6ad8174a21687dff781a">GetFPGAIndex</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="comment"></span> </div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="comment">   * Get the channel of the source.</span></div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span><span class="comment">   * @return the source channel</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno"><a class="line" href="classfrc_1_1_duty_cycle_encoder.html#a82ff91f628934d5a849f51302fdd18e6">  164</a></span>  <span class="keywordtype">int</span> <a class="code hl_function" href="classfrc_1_1_duty_cycle_encoder.html#a82ff91f628934d5a849f51302fdd18e6">GetSourceChannel</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno"><a class="line" href="classfrc_1_1_duty_cycle_encoder.html#aa0e1961e47a8f19f5166a7f32fa565d2">  166</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_duty_cycle_encoder.html#aa0e1961e47a8f19f5166a7f32fa565d2">InitSendable</a>(<a class="code hl_class" href="classwpi_1_1_sendable_builder.html">wpi::SendableBuilder</a>&amp; builder) <span class="keyword">override</span>;</div>
@@ -206,7 +308,7 @@ $(document).ready(function(){initNavTree('_duty_cycle_encoder_8h_source.html',''
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><b>DutyCycleEncoder.h</b></li>
-    <li class="footer">Generated on Tue Oct 19 2021 04:32:15 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Oct 19 2021 04:42:39 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

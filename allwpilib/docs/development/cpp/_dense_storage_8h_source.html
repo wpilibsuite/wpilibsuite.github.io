@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-17-g9e6db17</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-19-ge56d6de</span>
    </div>
   </td>
  </tr>
@@ -129,7 +129,11 @@ $(document).ready(function(){initNavTree('_dense_storage_8h_source.html',''); in
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  EIGEN_STATIC_ASSERT(Size * <span class="keyword">sizeof</span>(T) &lt;= EIGEN_STACK_ALLOCATION_LIMIT, OBJECT_ALLOCATED_ON_STACK_IS_TOO_BIG);</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">  #endif</span></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>}</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment"></span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">  * Static array. If the MatrixOrArrayOptions require auto-alignment, the array will be automatically aligned:</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">  * to 16 bytes boundary if the total size is a multiple of 16 bytes.</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keywordtype">int</span> Size, <span class="keywordtype">int</span> MatrixOrArrayOptions,</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>          <span class="keywordtype">int</span> Alignment = (MatrixOrArrayOptions&amp;<a class="code hl_enumvalue" href="group__enums.html#ggaacded1a18ae58b0f554751f6cdf9eb13a56908522e51443a0aa0567f879c2e78a">DontAlign</a>) ? 0</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                        : compute_default_alignment&lt;T,Size&gt;::value &gt;</div>
@@ -280,7 +284,19 @@ $(document).ready(function(){initNavTree('_dense_storage_8h_source.html',''); in
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>};</div>
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>} <span class="comment">// end namespace internal</span></div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span> </div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span><span class="comment"></span> </div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span><span class="comment">  * \class DenseStorage</span></div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span><span class="comment">  * \ingroup Core_Module</span></div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="comment">  * \brief Stores the data of a matrix</span></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span><span class="comment">  * This class stores the data of fixed-size, dynamic-size or mixed matrices</span></div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="comment">  * in a way as compact as possible.</span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="comment">  * \sa Matrix</span></div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keywordtype">int</span> Size, <span class="keywordtype">int</span> _Rows, <span class="keywordtype">int</span> _Cols, <span class="keywordtype">int</span> _Options&gt; <span class="keyword">class </span><a class="code hl_class" href="class_eigen_1_1_dense_storage.html">DenseStorage</a>;</div>
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> </div>
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="comment">// purely fixed-size matrix</span></div>
@@ -759,7 +775,7 @@ $(document).ready(function(){initNavTree('_dense_storage_8h_source.html',''); in
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_bfb2597c438c4234fbdcce568a9e650d.html">eigeninclude</a></li><li class="navelem"><a class="el" href="dir_81addad79085c513f45446cf62836735.html">Eigen</a></li><li class="navelem"><a class="el" href="dir_e429501dd9edb337aeb96d684aa3b6ff.html">src</a></li><li class="navelem"><a class="el" href="dir_09ad905ad0d1f25ba5be966168b2edef.html">Core</a></li><li class="navelem"><b>DenseStorage.h</b></li>
-    <li class="footer">Generated on Tue Oct 19 2021 04:32:17 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Oct 19 2021 04:42:41 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

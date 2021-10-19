@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-17-g9e6db17</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-19-ge56d6de</span>
    </div>
   </td>
  </tr>
@@ -108,15 +108,35 @@ $(document).ready(function(){initNavTree('_jacobi_8h_source.html',''); initResiz
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define EIGEN_JACOBI_H</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_eigen.html">Eigen</a> {</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"></span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">/** \ingroup Jacobi_Module</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">  * \jacobi_module</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">  * \class JacobiRotation</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">  * \brief Rotation given by a cosine-sine pair.</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">  * This class represents a Jacobi or Givens rotation.</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">  * This is a 2D rotation in the plane \c J of angle \f$ \theta \f$ defined by</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">  * its cosine \c c and sine \c s as follow:</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">  * \f$ J = \left ( \begin{array}{cc} c &amp; \overline s \\ -s  &amp; \overline c \end{array} \right ) \f$</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">  * You can apply the respective counter-clockwise rotation to a column vector \c v by</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">  * applying its adjoint on the left: \f$ v = J^* v \f$ that translates to the following Eigen code:</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">  * \code</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">  * v.applyOnTheLeft(J.adjoint());</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">  * \endcode</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">  * \sa MatrixBase::applyOnTheLeft(), MatrixBase::applyOnTheRight()</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_eigen_1_1_jacobi_rotation.html">   34</a></span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar&gt; <span class="keyword">class </span><a class="code hl_class" href="class_eigen_1_1_jacobi_rotation.html">JacobiRotation</a></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>{</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="keyword">public</span>:</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">typedef</span> <span class="keyword">typename</span> NumTraits&lt;Scalar&gt;::Real RealScalar;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment"></span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">    /** Default constructor without any initialization. */</span></div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    EIGEN_DEVICE_FUNC</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="class_eigen_1_1_jacobi_rotation.html#a9f1779d96696779574df6989d05e47cc">   41</a></span>    <a class="code hl_function" href="class_eigen_1_1_jacobi_rotation.html#a9f1779d96696779574df6989d05e47cc">JacobiRotation</a>() {}</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment"></span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">    /** Construct a planar rotation from a cosine-sine pair (\a c, \c s). */</span></div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    EIGEN_DEVICE_FUNC</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="class_eigen_1_1_jacobi_rotation.html#ac919e031415b573fdbe2fc4f93458ae9">   45</a></span>    <a class="code hl_function" href="class_eigen_1_1_jacobi_rotation.html#ac919e031415b573fdbe2fc4f93458ae9">JacobiRotation</a>(<span class="keyword">const</span> Scalar&amp; c, <span class="keyword">const</span> Scalar&amp; s) : m_c(c), m_s(s) {}</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
@@ -124,7 +144,8 @@ $(document).ready(function(){initNavTree('_jacobi_8h_source.html',''); initResiz
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    EIGEN_DEVICE_FUNC Scalar c()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_c; }</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    EIGEN_DEVICE_FUNC Scalar&amp; s() { <span class="keywordflow">return</span> m_s; }</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    EIGEN_DEVICE_FUNC Scalar s()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_s; }</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment"></span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">    /** Concatenates two planar rotation */</span></div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    EIGEN_DEVICE_FUNC</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="class_eigen_1_1_jacobi_rotation.html#a8ac3f971009d7937d64091c0de10c445">   54</a></span>    <a class="code hl_class" href="class_eigen_1_1_jacobi_rotation.html">JacobiRotation</a> <a class="code hl_function" href="class_eigen_1_1_jacobi_rotation.html#a8ac3f971009d7937d64091c0de10c445">operator*</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_jacobi_rotation.html">JacobiRotation</a>&amp; other)</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    {</div>
@@ -132,10 +153,12 @@ $(document).ready(function(){initNavTree('_jacobi_8h_source.html',''); initResiz
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>      <span class="keywordflow">return</span> <a class="code hl_function" href="class_eigen_1_1_jacobi_rotation.html#a9f1779d96696779574df6989d05e47cc">JacobiRotation</a>(m_c * other.m_c - conj(m_s) * other.m_s,</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                            conj(m_c * conj(other.m_s) + conj(m_s) * conj(other.m_c)));</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    }</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment"></span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">    /** Returns the transposed transformation */</span></div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    EIGEN_DEVICE_FUNC</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="class_eigen_1_1_jacobi_rotation.html#a3ad513485f7426761ab80fc845f9946e">   63</a></span>    <a class="code hl_class" href="class_eigen_1_1_jacobi_rotation.html">JacobiRotation</a> <a class="code hl_function" href="class_eigen_1_1_jacobi_rotation.html#a3ad513485f7426761ab80fc845f9946e">transpose</a>()<span class="keyword"> const </span>{ <span class="keyword">using</span> numext::conj; <span class="keywordflow">return</span> <a class="code hl_function" href="class_eigen_1_1_jacobi_rotation.html#a9f1779d96696779574df6989d05e47cc">JacobiRotation</a>(m_c, -conj(m_s)); }</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment"></span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">    /** Returns the adjoint transformation */</span></div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    EIGEN_DEVICE_FUNC</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="class_eigen_1_1_jacobi_rotation.html#aaca0173b23a021238ab2a5f0d0003dfd">   67</a></span>    <a class="code hl_class" href="class_eigen_1_1_jacobi_rotation.html">JacobiRotation</a> <a class="code hl_function" href="class_eigen_1_1_jacobi_rotation.html#aaca0173b23a021238ab2a5f0d0003dfd">adjoint</a>()<span class="keyword"> const </span>{ <span class="keyword">using</span> numext::conj; <span class="keywordflow">return</span> <a class="code hl_function" href="class_eigen_1_1_jacobi_rotation.html#a9f1779d96696779574df6989d05e47cc">JacobiRotation</a>(conj(m_c), -m_s); }</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
@@ -156,7 +179,12 @@ $(document).ready(function(){initNavTree('_jacobi_8h_source.html',''); initResiz
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    Scalar m_c, m_s;</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>};</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment"></span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment">/** Makes \c *this as a Jacobi rotation \a J such that applying \a J on both the right and left sides of the selfadjoint 2x2 matrix</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment">  * \f$ B = \left ( \begin{array}{cc} x &amp; y \\ \overline y &amp; z \end{array} \right )\f$ yields a diagonal matrix \f$ A = J^* B J \f$</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment">  * \sa MatrixBase::makeJacobi(const MatrixBase&lt;Derived&gt;&amp;, Index, Index), MatrixBase::applyOnTheLeft(), MatrixBase::applyOnTheRight()</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar&gt;</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>EIGEN_DEVICE_FUNC</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="class_eigen_1_1_jacobi_rotation.html#a86497b11507e5e68fe531a1ab3ee9b1a">   94</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="class_eigen_1_1_jacobi_rotation.html#aeeadfa824f68fbe4e083d3c1c28294a3">JacobiRotation&lt;Scalar&gt;::makeJacobi</a>(<span class="keyword">const</span> RealScalar&amp; x, <span class="keyword">const</span> Scalar&amp; y, <span class="keyword">const</span> RealScalar&amp; z)</div>
@@ -191,7 +219,16 @@ $(document).ready(function(){initNavTree('_jacobi_8h_source.html',''); initResiz
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>  }</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>}</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="comment"></span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="comment">/** Makes \c *this as a Jacobi rotation \c J such that applying \a J on both the right and left sides of the 2x2 selfadjoint matrix</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="comment">  * \f$ B = \left ( \begin{array}{cc} \text{this}_{pp} &amp; \text{this}_{pq} \\ (\text{this}_{pq})^* &amp; \text{this}_{qq} \end{array} \right )\f$ yields</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="comment">  * a diagonal matrix \f$ A = J^* B J \f$</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="comment">  * Example: \include Jacobi_makeJacobi.cpp</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="comment">  * Output: \verbinclude Jacobi_makeJacobi.out</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="comment">  * \sa JacobiRotation::makeJacobi(RealScalar, Scalar, RealScalar), MatrixBase::applyOnTheLeft(), MatrixBase::applyOnTheRight()</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar&gt;</div>
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Derived&gt;</div>
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>EIGEN_DEVICE_FUNC</div>
@@ -199,7 +236,23 @@ $(document).ready(function(){initNavTree('_jacobi_8h_source.html',''); initResiz
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>{</div>
 <div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>  <span class="keywordflow">return</span> makeJacobi(numext::real(m.coeff(p,p)), m.coeff(p,q), numext::real(m.coeff(q,q)));</div>
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>}</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="comment"></span> </div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="comment">/** Makes \c *this as a Givens rotation \c G such that applying \f$ G^* \f$ to the left of the vector</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="comment">  * \f$ V = \left ( \begin{array}{c} p \\ q \end{array} \right )\f$ yields:</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="comment">  * \f$ G^* V = \left ( \begin{array}{c} r \\ 0 \end{array} \right )\f$.</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span><span class="comment">  * The value of \a r is returned if \a r is not null (the default is null).</span></div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="comment">  * Also note that G is built such that the cosine is always real.</span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="comment">  * Example: \include Jacobi_makeGivens.cpp</span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="comment">  * Output: \verbinclude Jacobi_makeGivens.out</span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="comment">  * This function implements the continuous Givens rotation generation algorithm</span></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="comment">  * found in Anderson (2000), Discontinuous Plane Rotations and the Symmetric Eigenvalue Problem.</span></div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="comment">  * LAPACK Working Note 150, University of Tennessee, UT-CS-00-454, December 4, 2000.</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="comment">  * \sa MatrixBase::applyOnTheLeft(), MatrixBase::applyOnTheRight()</span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Scalar&gt;</div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>EIGEN_DEVICE_FUNC</div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno"><a class="line" href="class_eigen_1_1_jacobi_rotation.html#a15fb3e9c4378fb87e318b23c7a43b584">  162</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_eigen_1_1_jacobi_rotation.html#a15fb3e9c4378fb87e318b23c7a43b584">JacobiRotation&lt;Scalar&gt;::makeGivens</a>(<span class="keyword">const</span> Scalar&amp; p, <span class="keyword">const</span> Scalar&amp; q, Scalar* r)</div>
@@ -314,12 +367,24 @@ $(document).ready(function(){initNavTree('_jacobi_8h_source.html',''); initResiz
 <div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span><span class="comment">*   Implementation of MatrixBase methods</span></div>
 <div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span><span class="comment">****************************************************************************************/</span></div>
 <div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span> </div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span><span class="keyword">namespace </span>internal {</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span><span class="keyword">namespace </span>internal {<span class="comment"></span></div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span><span class="comment">/** \jacobi_module</span></div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span><span class="comment">  * Applies the clock wise 2D rotation \a j to the set of 2D vectors of coordinates \a x and \a y:</span></div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span><span class="comment">  * \f$ \left ( \begin{array}{cc} x \\ y \end{array} \right )  =  J \left ( \begin{array}{cc} x \\ y \end{array} \right ) \f$</span></div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span><span class="comment">  * \sa MatrixBase::applyOnTheLeft(), MatrixBase::applyOnTheRight()</span></div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> VectorX, <span class="keyword">typename</span> VectorY, <span class="keyword">typename</span> OtherScalar&gt;</div>
 <div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>EIGEN_DEVICE_FUNC</div>
 <div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span><span class="keywordtype">void</span> apply_rotation_in_the_plane(DenseBase&lt;VectorX&gt;&amp; xpr_x, DenseBase&lt;VectorY&gt;&amp; xpr_y, <span class="keyword">const</span> JacobiRotation&lt;OtherScalar&gt;&amp; j);</div>
 <div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>}</div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span> </div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span><span class="comment"></span> </div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span><span class="comment">/** \jacobi_module</span></div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span><span class="comment">  * Applies the rotation in the plane \a j to the rows \a p and \a q of \c *this, i.e., it computes B = J * B,</span></div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span><span class="comment">  * with \f$ B = \left ( \begin{array}{cc} \text{*this.row}(p) \\ \text{*this.row}(q) \end{array} \right ) \f$.</span></div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span><span class="comment">  * \sa class JacobiRotation, MatrixBase::applyOnTheRight(), internal::apply_rotation_in_the_plane()</span></div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Derived&gt;</div>
 <div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> OtherScalar&gt;</div>
 <div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>EIGEN_DEVICE_FUNC</div>
@@ -329,7 +394,13 @@ $(document).ready(function(){initNavTree('_jacobi_8h_source.html',''); initResiz
 <div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>  RowXpr y(this-&gt;row(q));</div>
 <div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>  internal::apply_rotation_in_the_plane(x, y, j);</div>
 <div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>}</div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span> </div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span><span class="comment"></span> </div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span><span class="comment">/** \ingroup Jacobi_Module</span></div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span><span class="comment">  * Applies the rotation in the plane \a j to the columns \a p and \a q of \c *this, i.e., it computes B = B * J</span></div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span><span class="comment">  * with \f$ B = \left ( \begin{array}{cc} \text{*this.col}(p) &amp; \text{*this.col}(q) \end{array} \right ) \f$.</span></div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span><span class="comment">  * \sa class JacobiRotation, MatrixBase::applyOnTheLeft(), internal::apply_rotation_in_the_plane()</span></div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Derived&gt;</div>
 <div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> OtherScalar&gt;</div>
 <div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>EIGEN_DEVICE_FUNC</div>
@@ -536,7 +607,7 @@ $(document).ready(function(){initNavTree('_jacobi_8h_source.html',''); initResiz
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_bfb2597c438c4234fbdcce568a9e650d.html">eigeninclude</a></li><li class="navelem"><a class="el" href="dir_81addad79085c513f45446cf62836735.html">Eigen</a></li><li class="navelem"><a class="el" href="dir_e429501dd9edb337aeb96d684aa3b6ff.html">src</a></li><li class="navelem"><a class="el" href="dir_2efb9bc560d4c9a6f4b4f0236575fb97.html">Jacobi</a></li><li class="navelem"><b>Jacobi.h</b></li>
-    <li class="footer">Generated on Tue Oct 19 2021 04:32:20 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Oct 19 2021 04:42:44 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

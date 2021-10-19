@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-17-g9e6db17</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-19-ge56d6de</span>
    </div>
   </td>
  </tr>
@@ -109,24 +109,99 @@ $(document).ready(function(){initNavTree('_ramsete_controller_8h_source.html',''
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;units/velocity.h&quot;</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span>frc {</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"></span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> * Ramsete is a nonlinear time-varying feedback controller for unicycle models</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> * that drives the model to a desired pose along a two-dimensional trajectory.</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> * Why would we need a nonlinear control law in addition to the linear ones we</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> * have used so far like PID? If we use the original approach with PID</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"> * controllers for left and right position and velocity states, the controllers</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"> * only deal with the local pose. If the robot deviates from the path, there is</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"> * no way for the controllers to correct and the robot may not reach the desired</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment"> * global pose. This is due to multiple endpoints existing for the robot which</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment"> * have the same encoder path arc lengths.</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment"> * Instead of using wheel path arc lengths (which are in the robot&#39;s local</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment"> * coordinate frame), nonlinear controllers like pure pursuit and Ramsete use</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment"> * global pose. The controller uses this extra information to guide a linear</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment"> * reference tracker like the PID controllers back in by adjusting the</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment"> * references of the PID controllers.</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment"> * The paper &quot;Control of Wheeled Mobile Robots: An Experimental Overview&quot;</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment"> * describes a nonlinear controller for a wheeled vehicle with unicycle-like</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment"> * kinematics; a global pose consisting of x, y, and theta; and a desired pose</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment"> * consisting of x_d, y_d, and theta_d. We call it Ramsete because that&#39;s the</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment"> * acronym for the title of the book it came from in Italian (&quot;Robotica</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment"> * Articolata e Mobile per i SErvizi e le TEcnologie&quot;).</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment"> * See &lt;https://file.tavsys.net/control/controls-engineering-in-frc.pdf&gt; section</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment"> * on Ramsete unicycle controller for a derivation and analysis.</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classfrc_1_1_ramsete_controller.html">   44</a></span><span class="keyword">class </span>WPILIB_DLLEXPORT <a class="code hl_class" href="classfrc_1_1_ramsete_controller.html">RamseteController</a> {</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> <span class="keyword">public</span>:<span class="comment"></span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">   * Construct a Ramsete unicycle controller.</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">   * @param b    Tuning parameter (b &gt; 0) for which larger values make</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">   *             convergence more aggressive like a proportional term.</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">   * @param zeta Tuning parameter (0 &lt; zeta &lt; 1) for which larger values provide</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">   *             more damping in response.</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classfrc_1_1_ramsete_controller.html#af24022176ddf106b0d3d16e05afb87eb">   54</a></span>  <a class="code hl_function" href="classfrc_1_1_ramsete_controller.html#af24022176ddf106b0d3d16e05afb87eb">RamseteController</a>(<span class="keywordtype">double</span> b, <span class="keywordtype">double</span> zeta);</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment"></span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">   * Construct a Ramsete unicycle controller. The default arguments for</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">   * b and zeta of 2.0 and 0.7 have been well-tested to produce desirable</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">   * results.</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classfrc_1_1_ramsete_controller.html#ac94eb03a7a9bef652585a38e340e8a44">   61</a></span>  <a class="code hl_function" href="classfrc_1_1_ramsete_controller.html#ac94eb03a7a9bef652585a38e340e8a44">RamseteController</a>() : <a class="code hl_class" href="classfrc_1_1_ramsete_controller.html">RamseteController</a>(2.0, 0.7) {}</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment"></span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">   * Returns true if the pose error is within tolerance of the reference.</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="classfrc_1_1_ramsete_controller.html#ae4a19b7ff30553eb75a611effd613cff">   66</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classfrc_1_1_ramsete_controller.html#ae4a19b7ff30553eb75a611effd613cff">AtReference</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment"></span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">   * Sets the pose error which is considered tolerable for use with</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">   * AtReference().</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">   * @param poseTolerance Pose error which is tolerable.</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="classfrc_1_1_ramsete_controller.html#a6944e8405adcaabd342529a133de3b9a">   74</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_ramsete_controller.html#a6944e8405adcaabd342529a133de3b9a">SetTolerance</a>(<span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_pose2d.html">Pose2d</a>&amp; poseTolerance);</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment"></span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment">   * Returns the next output of the Ramsete controller.</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">   * The reference pose, linear velocity, and angular velocity should come from</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment">   * a drivetrain trajectory.</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment">   * @param currentPose        The current pose.</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment">   * @param poseRef            The desired pose.</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">   * @param linearVelocityRef  The desired linear velocity.</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">   * @param angularVelocityRef The desired angular velocity.</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="classfrc_1_1_ramsete_controller.html#a7bc8f15fdd48087405107ab044eb53b3">   87</a></span>  <a class="code hl_struct" href="structfrc_1_1_chassis_speeds.html">ChassisSpeeds</a> <a class="code hl_function" href="classfrc_1_1_ramsete_controller.html#a7bc8f15fdd48087405107ab044eb53b3">Calculate</a>(<span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_pose2d.html">Pose2d</a>&amp; currentPose, <span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_pose2d.html">Pose2d</a>&amp; poseRef,</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>                          units::meters_per_second_t linearVelocityRef,</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                          units::radians_per_second_t angularVelocityRef);</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment"></span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="comment">   * Returns the next output of the Ramsete controller.</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment">   * The reference pose, linear velocity, and angular velocity should come from</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment">   * a drivetrain trajectory.</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment">   * @param currentPose  The current pose.</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="comment">   * @param desiredState The desired pose, linear velocity, and angular velocity</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment">   *                     from a trajectory.</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="classfrc_1_1_ramsete_controller.html#a2c792284f64f78e1fc521ee2deff8826">  101</a></span>  <a class="code hl_struct" href="structfrc_1_1_chassis_speeds.html">ChassisSpeeds</a> <a class="code hl_function" href="classfrc_1_1_ramsete_controller.html#a2c792284f64f78e1fc521ee2deff8826">Calculate</a>(<span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_pose2d.html">Pose2d</a>&amp; currentPose,</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                          <span class="keyword">const</span> <a class="code hl_struct" href="structfrc_1_1_trajectory_1_1_state.html">Trajectory::State</a>&amp; desiredState);</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment"></span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="comment">   * Enables and disables the controller for troubleshooting purposes.</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment">   * @param enabled If the controller is enabled or not.</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="classfrc_1_1_ramsete_controller.html#a38aac1cfffed34b94081609b1299b203">  109</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_ramsete_controller.html#a38aac1cfffed34b94081609b1299b203">SetEnabled</a>(<span class="keywordtype">bool</span> enabled);</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> <span class="keyword">private</span>:</div>
@@ -156,7 +231,7 @@ $(document).ready(function(){initNavTree('_ramsete_controller_8h_source.html',''
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_901369ca5399cfb92b9538222311796d.html">controller</a></li><li class="navelem"><b>RamseteController.h</b></li>
-    <li class="footer">Generated on Tue Oct 19 2021 04:32:22 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Oct 19 2021 04:42:45 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

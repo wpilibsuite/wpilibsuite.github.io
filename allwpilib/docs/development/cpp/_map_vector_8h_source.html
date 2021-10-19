@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-17-g9e6db17</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-19-ge56d6de</span>
    </div>
   </td>
  </tr>
@@ -124,8 +124,11 @@ $(document).ready(function(){initNavTree('_map_vector_8h_source.html',''); initR
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">namespace </span>wpi {</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> KeyT, <span class="keyword">typename</span> ValueT,</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment"></span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">/// This class implements a map that also provides access to all stored values</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">/// in a deterministic order. The values are kept in a std::vector and the</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">/// mapping is done with DenseMap from Keys to indexes in that vector.</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment"></span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> KeyT, <span class="keyword">typename</span> ValueT,</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>         <span class="keyword">typename</span> MapType = DenseMap&lt;KeyT, unsigned&gt;,</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>         <span class="keyword">typename</span> VectorType = std::vector&lt;std::pair&lt;KeyT, ValueT&gt;&gt;&gt;</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classwpi_1_1_map_vector.html">   38</a></span><span class="keyword">class </span><a class="code hl_class" href="classwpi_1_1_map_vector.html">MapVector</a> {</div>
@@ -144,15 +147,18 @@ $(document).ready(function(){initNavTree('_map_vector_8h_source.html',''); initR
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keyword">using</span> const_iterator = <span class="keyword">typename</span> VectorType::const_iterator;</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <span class="keyword">using</span> reverse_iterator = <span class="keyword">typename</span> VectorType::reverse_iterator;</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <span class="keyword">using</span> const_reverse_iterator = <span class="keyword">typename</span> VectorType::const_reverse_iterator;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classwpi_1_1_map_vector.html#afd334d21ad6eba4e8380da7b9949662c">   56</a></span>  VectorType <a class="code hl_function" href="classwpi_1_1_map_vector.html#afd334d21ad6eba4e8380da7b9949662c">takeVector</a>() {</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment"></span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">  /// Clear the MapVector and return the underlying vector.</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classwpi_1_1_map_vector.html#afd334d21ad6eba4e8380da7b9949662c">   56</a></span><span class="comment"></span>  VectorType <a class="code hl_function" href="classwpi_1_1_map_vector.html#afd334d21ad6eba4e8380da7b9949662c">takeVector</a>() {</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    Map.clear();</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordflow">return</span> std::move(Vector);</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  }</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  size_type size()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> Vector.size(); }</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="classwpi_1_1_map_vector.html#a48e9463c95d7c79238d153969df6b170">   65</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1_map_vector.html#a48e9463c95d7c79238d153969df6b170">reserve</a>(size_type NumEntries) {</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment"></span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">  /// Grow the MapVector so that it can contain at least \p NumEntries items</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">  /// before resizing again.</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="classwpi_1_1_map_vector.html#a48e9463c95d7c79238d153969df6b170">   65</a></span><span class="comment"></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1_map_vector.html#a48e9463c95d7c79238d153969df6b170">reserve</a>(size_type NumEntries) {</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    Map.reserve(NumEntries);</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    Vector.reserve(NumEntries);</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  }</div>
@@ -246,14 +252,22 @@ $(document).ready(function(){initNavTree('_map_vector_8h_source.html',''); initR
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    <span class="keywordflow">return</span> Pos == Map.end()? Vector.end() :</div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>                            (Vector.begin() + Pos-&gt;second);</div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>  }</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno"><a class="line" href="classwpi_1_1_map_vector.html#a7d5997f5399756914e809bd4cf3cc978">  161</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1_map_vector.html#a7d5997f5399756914e809bd4cf3cc978">pop_back</a>() {</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span><span class="comment"></span> </div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="comment">  /// Remove the last element from the vector.</span></div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno"><a class="line" href="classwpi_1_1_map_vector.html#a7d5997f5399756914e809bd4cf3cc978">  161</a></span><span class="comment"></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1_map_vector.html#a7d5997f5399756914e809bd4cf3cc978">pop_back</a>() {</div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    <span class="keyword">typename</span> MapType::iterator Pos = Map.find(Vector.back().first);</div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    Map.erase(Pos);</div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    Vector.pop_back();</div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>  }</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno"><a class="line" href="classwpi_1_1_map_vector.html#a8db7083cef2b213bac0e70ce64494dd4">  174</a></span>  <span class="keyword">typename</span> VectorType::iterator <a class="code hl_function" href="classwpi_1_1_map_vector.html#a8db7083cef2b213bac0e70ce64494dd4">erase</a>(<span class="keyword">typename</span> VectorType::iterator Iterator) {</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span><span class="comment"></span> </div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span><span class="comment">  /// Remove the element given by Iterator.</span></div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="comment">  ///</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="comment">  /// Returns an iterator to the element following the one which was removed,</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="comment">  /// which may be end().</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="comment">  ///</span></div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="comment">  /// \note This is a deceivingly expensive operation (linear time).  It&#39;s</span></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="comment">  /// usually better to use \a remove_if() if possible.</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno"><a class="line" href="classwpi_1_1_map_vector.html#a8db7083cef2b213bac0e70ce64494dd4">  174</a></span><span class="comment"></span>  <span class="keyword">typename</span> VectorType::iterator <a class="code hl_function" href="classwpi_1_1_map_vector.html#a8db7083cef2b213bac0e70ce64494dd4">erase</a>(<span class="keyword">typename</span> VectorType::iterator Iterator) {</div>
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    Map.erase(Iterator-&gt;first);</div>
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    <span class="keyword">auto</span> Next = Vector.erase(Iterator);</div>
 <div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    <span class="keywordflow">if</span> (Next == Vector.end())</div>
@@ -268,16 +282,23 @@ $(document).ready(function(){initNavTree('_map_vector_8h_source.html',''); initR
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    }</div>
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    <span class="keywordflow">return</span> Next;</div>
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>  }</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno"><a class="line" href="classwpi_1_1_map_vector.html#a00eebbfe5aa5808f2c91c41476cfad40">  193</a></span>  size_type <a class="code hl_function" href="classwpi_1_1_map_vector.html#a00eebbfe5aa5808f2c91c41476cfad40">erase</a>(<span class="keyword">const</span> KeyT &amp;Key) {</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><span class="comment"></span> </div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="comment">  /// Remove all elements with the key value Key.</span></div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span><span class="comment">  ///</span></div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span><span class="comment">  /// Returns the number of elements removed.</span></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno"><a class="line" href="classwpi_1_1_map_vector.html#a00eebbfe5aa5808f2c91c41476cfad40">  193</a></span><span class="comment"></span>  size_type <a class="code hl_function" href="classwpi_1_1_map_vector.html#a00eebbfe5aa5808f2c91c41476cfad40">erase</a>(<span class="keyword">const</span> KeyT &amp;Key) {</div>
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    <span class="keyword">auto</span> Iterator = find(Key);</div>
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    <span class="keywordflow">if</span> (Iterator == end())</div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>      <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    <a class="code hl_function" href="classwpi_1_1_map_vector.html#a8db7083cef2b213bac0e70ce64494dd4">erase</a>(Iterator);</div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    <span class="keywordflow">return</span> 1;</div>
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>  }</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno"><a class="line" href="classwpi_1_1_map_vector.html#aefdd521763fa4d16f54f38731ee489cc">  205</a></span>  <span class="keyword">template</span> &lt;<span class="keyword">class</span> Predicate&gt; <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1_map_vector.html#aefdd521763fa4d16f54f38731ee489cc">remove_if</a>(Predicate Pred);</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="comment"></span> </div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="comment">  /// Remove the elements that match the predicate.</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="comment">  ///</span></div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span><span class="comment">  /// Erase all elements that match \c Pred in a single pass.  Takes linear</span></div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="comment">  /// time.</span></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno"><a class="line" href="classwpi_1_1_map_vector.html#aefdd521763fa4d16f54f38731ee489cc">  205</a></span><span class="comment"></span>  <span class="keyword">template</span> &lt;<span class="keyword">class</span> Predicate&gt; <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1_map_vector.html#aefdd521763fa4d16f54f38731ee489cc">remove_if</a>(Predicate Pred);</div>
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>};</div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span> </div>
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> KeyT, <span class="keyword">typename</span> ValueT, <span class="keyword">typename</span> MapType, <span class="keyword">typename</span> VectorType&gt;</div>
@@ -301,8 +322,10 @@ $(document).ready(function(){initNavTree('_map_vector_8h_source.html',''); initR
 <div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>  <span class="comment">// Erase trailing entries in the vector.</span></div>
 <div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>  Vector.erase(O, Vector.end());</div>
 <div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>}</div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> KeyT, <span class="keyword">typename</span> ValueT, <span class="keywordtype">unsigned</span> N&gt;</div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span><span class="comment"></span> </div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span><span class="comment">/// A MapVector that performs no allocations if smaller than a certain</span></div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span><span class="comment">/// size.</span></div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span><span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> KeyT, <span class="keyword">typename</span> ValueT, <span class="keywordtype">unsigned</span> N&gt;</div>
 <div class="line"><a id="l00233" name="l00233"></a><span class="lineno"><a class="line" href="structwpi_1_1_small_map_vector.html">  233</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structwpi_1_1_small_map_vector.html">SmallMapVector</a></div>
 <div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    : <a class="code hl_class" href="classwpi_1_1_map_vector.html">MapVector</a>&lt;KeyT, ValueT, SmallDenseMap&lt;KeyT, unsigned, N&gt;,</div>
 <div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>                SmallVector&lt;std::pair&lt;KeyT, ValueT&gt;, N&gt;&gt; {</div>
@@ -325,7 +348,7 @@ $(document).ready(function(){initNavTree('_map_vector_8h_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><b>MapVector.h</b></li>
-    <li class="footer">Generated on Tue Oct 19 2021 04:32:23 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Oct 19 2021 04:42:46 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

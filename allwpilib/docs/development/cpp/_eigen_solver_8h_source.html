@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-17-g9e6db17</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-19-ge56d6de</span>
    </div>
   </td>
  </tr>
@@ -110,11 +110,58 @@ $(document).ready(function(){initNavTree('_eigen_solver_8h_source.html',''); ini
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;./RealSchur.h&quot;</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_eigen.html">Eigen</a> { </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"></span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">/** \eigenvalues_module \ingroup Eigenvalues_Module</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">  * \class EigenSolver</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">  * \brief Computes eigenvalues and eigenvectors of general matrices</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">  * \tparam _MatrixType the type of the matrix of which we are computing the</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">  * eigendecomposition; this is expected to be an instantiation of the Matrix</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">  * class template. Currently, only real matrices are supported.</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">  * The eigenvalues and eigenvectors of a matrix \f$ A \f$ are scalars</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">  * \f$ \lambda \f$ and vectors \f$ v \f$ such that \f$ Av = \lambda v \f$.  If</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">  * \f$ D \f$ is a diagonal matrix with the eigenvalues on the diagonal, and</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">  * \f$ V \f$ is a matrix with the eigenvectors as its columns, then \f$ A V =</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">  * V D \f$. The matrix \f$ V \f$ is almost always invertible, in which case we</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">  * have \f$ A = V D V^{-1} \f$. This is called the eigendecomposition.</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">  * The eigenvalues and eigenvectors of a matrix may be complex, even when the</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">  * matrix is real. However, we can choose real matrices \f$ V \f$ and \f$ D</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">  * \f$ satisfying \f$ A V = V D \f$, just like the eigendecomposition, if the</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">  * matrix \f$ D \f$ is not required to be diagonal, but if it is allowed to</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">  * have blocks of the form</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">  * \f[ \begin{bmatrix} u &amp; v \\ -v &amp; u \end{bmatrix} \f]</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">  * (where \f$ u \f$ and \f$ v \f$ are real numbers) on the diagonal.  These</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">  * blocks correspond to complex eigenvalue pairs \f$ u \pm iv \f$. We call</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">  * this variant of the eigendecomposition the pseudo-eigendecomposition.</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">  * Call the function compute() to compute the eigenvalues and eigenvectors of</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">  * a given matrix. Alternatively, you can use the </span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">  * EigenSolver(const MatrixType&amp;, bool) constructor which computes the</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">  * eigenvalues and eigenvectors at construction time. Once the eigenvalue and</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">  * eigenvectors are computed, they can be retrieved with the eigenvalues() and</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">  * eigenvectors() functions. The pseudoEigenvalueMatrix() and</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">  * pseudoEigenvectors() methods allow the construction of the</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">  * pseudo-eigendecomposition.</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">  * The documentation for EigenSolver(const MatrixType&amp;, bool) contains an</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">  * example of the typical use of this class.</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">  * \note The implementation is adapted from</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">  * &lt;a href=&quot;http://math.nist.gov/javanumerics/jama/&quot;&gt;JAMA&lt;/a&gt; (public domain).</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">  * Their code is based on EISPACK.</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">  * \sa MatrixBase::eigenvalues(), class ComplexEigenSolver, class SelfAdjointEigenSolver</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="class_eigen_1_1_eigen_solver.html">   64</a></span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> _MatrixType&gt; <span class="keyword">class </span><a class="code hl_class" href="class_eigen_1_1_eigen_solver.html">EigenSolver</a></div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>{</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment"></span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">    /** \brief Synonym for the template parameter \p _MatrixType. */</span></div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="class_eigen_1_1_eigen_solver.html#a83acd180404ddaac8a678fa65a6b632b">   69</a></span>    <span class="keyword">typedef</span> _MatrixType <a class="code hl_typedef" href="class_eigen_1_1_eigen_solver.html#a83acd180404ddaac8a678fa65a6b632b">MatrixType</a>;</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keyword">enum</span> {</div>
@@ -124,19 +171,49 @@ $(document).ready(function(){initNavTree('_eigen_solver_8h_source.html',''); ini
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>      MaxRowsAtCompileTime = MatrixType::MaxRowsAtCompileTime,</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>      MaxColsAtCompileTime = MatrixType::MaxColsAtCompileTime</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    };</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment"></span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">    /** \brief Scalar type for matrices of type #MatrixType. */</span></div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="class_eigen_1_1_eigen_solver.html#a017d49fe0d59874b70a2fcf35e5aa373">   80</a></span>    <span class="keyword">typedef</span> <span class="keyword">typename</span> MatrixType::Scalar <a class="code hl_typedef" href="class_eigen_1_1_eigen_solver.html#a017d49fe0d59874b70a2fcf35e5aa373">Scalar</a>;</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keyword">typedef</span> <span class="keyword">typename</span> NumTraits&lt;Scalar&gt;::Real RealScalar;</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="class_eigen_1_1_eigen_solver.html#a5bff6a6bc0efac67d52c60c2c3deb9ee">   82</a></span>    <span class="keyword">typedef</span> <a class="code hl_typedef" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Eigen::Index</a> <a class="code hl_typedef" href="class_eigen_1_1_eigen_solver.html#a5bff6a6bc0efac67d52c60c2c3deb9ee">Index</a>; </div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="class_eigen_1_1_eigen_solver.html#a5bff6a6bc0efac67d52c60c2c3deb9ee">   82</a></span>    <span class="keyword">typedef</span> <a class="code hl_typedef" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Eigen::Index</a> <a class="code hl_typedef" href="class_eigen_1_1_eigen_solver.html#a5bff6a6bc0efac67d52c60c2c3deb9ee">Index</a>; <span class="comment">///&lt; \deprecated since Eigen 3.3</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment"></span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">    /** \brief Complex scalar type for #MatrixType. </span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">      *</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment">      * This is \c std::complex&lt;Scalar&gt; if #Scalar is real (e.g.,</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment">      * \c float or \c double) and just \c Scalar if #Scalar is</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment">      * complex.</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment">      */</span></div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="class_eigen_1_1_eigen_solver.html#a4d0b2a773357d0a6ec98e026f04002ed">   90</a></span>    <span class="keyword">typedef</span> std::complex&lt;RealScalar&gt; <a class="code hl_typedef" href="class_eigen_1_1_eigen_solver.html#a4d0b2a773357d0a6ec98e026f04002ed">ComplexScalar</a>;</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment"></span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="comment">    /** \brief Type for vector of eigenvalues as returned by eigenvalues(). </span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="comment">      *</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment">      * This is a column vector with entries of type #ComplexScalar.</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment">      * The length of the vector is the size of #MatrixType.</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment">      */</span></div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="class_eigen_1_1_eigen_solver.html#adc446bcb60572758fa64515f2825db62">   97</a></span>    <span class="keyword">typedef</span> <a class="code hl_class" href="class_eigen_1_1_matrix.html">Matrix&lt;ComplexScalar, ColsAtCompileTime, 1, Options &amp; ~RowMajor, MaxColsAtCompileTime, 1&gt;</a> <a class="code hl_typedef" href="class_eigen_1_1_eigen_solver.html#adc446bcb60572758fa64515f2825db62">EigenvalueType</a>;</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="comment"></span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment">    /** \brief Type for matrix of eigenvectors as returned by eigenvectors(). </span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment">      *</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment">      * This is a square matrix with entries of type #ComplexScalar. </span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="comment">      * The size is the same as the size of #MatrixType.</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment">      */</span></div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="class_eigen_1_1_eigen_solver.html#aa140354e2f7d5ce34c6488c39e19f2c2">  104</a></span>    <span class="keyword">typedef</span> <a class="code hl_class" href="class_eigen_1_1_matrix.html">Matrix&lt;ComplexScalar, RowsAtCompileTime, ColsAtCompileTime, Options, MaxRowsAtCompileTime, MaxColsAtCompileTime&gt;</a> <a class="code hl_typedef" href="class_eigen_1_1_eigen_solver.html#aa140354e2f7d5ce34c6488c39e19f2c2">EigenvectorsType</a>;</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="comment"></span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="comment">    /** \brief Default constructor.</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment">      *</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="comment">      * The default constructor is useful in cases in which the user intends to</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="comment">      * perform decompositions via EigenSolver::compute(const MatrixType&amp;, bool).</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment">      *</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="comment">      * \sa compute() for an example.</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="comment">      */</span></div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="class_eigen_1_1_eigen_solver.html#a3af22d721a6401365881b2ef252d26aa">  113</a></span>    <a class="code hl_function" href="class_eigen_1_1_eigen_solver.html#a3af22d721a6401365881b2ef252d26aa">EigenSolver</a>() : m_eivec(), m_eivalues(), m_isInitialized(false), m_eigenvectorsOk(false), m_realSchur(), m_matT(), m_tmp() {}</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="comment"></span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="comment">    /** \brief Default constructor with memory preallocation</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment">      *</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment">      * Like the default constructor but with preallocation of the internal data</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="comment">      * according to the specified problem \a size.</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment">      * \sa EigenSolver()</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="comment">      */</span></div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="class_eigen_1_1_eigen_solver.html#aa4edf56ecc178b277b75c13a2ca1089f">  121</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="class_eigen_1_1_eigen_solver.html#aa4edf56ecc178b277b75c13a2ca1089f">EigenSolver</a>(<a class="code hl_typedef" href="class_eigen_1_1_eigen_solver.html#a5bff6a6bc0efac67d52c60c2c3deb9ee">Index</a> size)</div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>      : m_eivec(size, size),</div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        m_eivalues(size),</div>
@@ -146,7 +223,22 @@ $(document).ready(function(){initNavTree('_eigen_solver_8h_source.html',''); ini
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        m_matT(size, size), </div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        m_tmp(size)</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    {}</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="comment"></span> </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="comment">    /** \brief Constructor; computes eigendecomposition of given matrix. </span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="comment">      * </span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="comment">      * \param[in]  matrix  Square matrix whose eigendecomposition is to be computed.</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="comment">      * \param[in]  computeEigenvectors  If true, both the eigenvectors and the</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="comment">      *    eigenvalues are computed; if false, only the eigenvalues are</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="comment">      *    computed. </span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="comment">      *</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="comment">      * This constructor calls compute() to compute the eigenvalues</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="comment">      * and eigenvectors.</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="comment">      *</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="comment">      * Example: \include EigenSolver_EigenSolver_MatrixType.cpp</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="comment">      * Output: \verbinclude EigenSolver_EigenSolver_MatrixType.out</span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="comment">      *</span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="comment">      * \sa compute()</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="comment">      */</span></div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> InputType&gt;</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno"><a class="line" href="class_eigen_1_1_eigen_solver.html#a7e8ab3d89ea525af5f27f1a8e805fae1">  147</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="class_eigen_1_1_eigen_solver.html#a7e8ab3d89ea525af5f27f1a8e805fae1">EigenSolver</a>(<span class="keyword">const</span> <a class="code hl_class" href="struct_eigen_1_1_eigen_base.html">EigenBase&lt;InputType&gt;</a>&amp; matrix, <span class="keywordtype">bool</span> computeEigenvectors = <span class="keyword">true</span>)</div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>      : m_eivec(matrix.rows(), matrix.cols()),</div>
@@ -159,39 +251,143 @@ $(document).ready(function(){initNavTree('_eigen_solver_8h_source.html',''); ini
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    {</div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>      <a class="code hl_function" href="class_eigen_1_1_eigen_solver.html#aff5c2bd7843aacdcd59b9cbe420752ff">compute</a>(matrix.<a class="code hl_function" href="struct_eigen_1_1_eigen_base.html#ab4cf3e6bb046a94a46b69b857bd3dbc9">derived</a>(), computeEigenvectors);</div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    }</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="comment"></span> </div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span><span class="comment">    /** \brief Returns the eigenvectors of given matrix. </span></div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="comment">      *</span></div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span><span class="comment">      * \returns  %Matrix whose columns are the (possibly complex) eigenvectors.</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span><span class="comment">      *</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><span class="comment">      * \pre Either the constructor </span></div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="comment">      * EigenSolver(const MatrixType&amp;,bool) or the member function</span></div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="comment">      * compute(const MatrixType&amp;, bool) has been called before, and</span></div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span><span class="comment">      * \p computeEigenvectors was set to true (the default).</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span><span class="comment">      *</span></div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="comment">      * Column \f$ k \f$ of the returned matrix is an eigenvector corresponding</span></div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="comment">      * to eigenvalue number \f$ k \f$ as returned by eigenvalues().  The</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="comment">      * eigenvectors are normalized to have (Euclidean) norm equal to one. The</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="comment">      * matrix returned by this function is the matrix \f$ V \f$ in the</span></div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="comment">      * eigendecomposition \f$ A = V D V^{-1} \f$, if it exists.</span></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="comment">      *</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span><span class="comment">      * Example: \include EigenSolver_eigenvectors.cpp</span></div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span><span class="comment">      * Output: \verbinclude EigenSolver_eigenvectors.out</span></div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span><span class="comment">      *</span></div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="comment">      * \sa eigenvalues(), pseudoEigenvectors()</span></div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="comment">      */</span></div>
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    <a class="code hl_typedef" href="class_eigen_1_1_eigen_solver.html#aa140354e2f7d5ce34c6488c39e19f2c2">EigenvectorsType</a> <a class="code hl_function" href="class_eigen_1_1_eigen_solver.html#a66288022802172e3ee059283b26201d7">eigenvectors</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span><span class="comment"></span> </div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span><span class="comment">    /** \brief Returns the pseudo-eigenvectors of given matrix. </span></div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span><span class="comment">      *</span></div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><span class="comment">      * \returns  Const reference to matrix whose columns are the pseudo-eigenvectors.</span></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="comment">      *</span></div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span><span class="comment">      * \pre Either the constructor </span></div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="comment">      * EigenSolver(const MatrixType&amp;,bool) or the member function</span></div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span><span class="comment">      * compute(const MatrixType&amp;, bool) has been called before, and</span></div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span><span class="comment">      * \p computeEigenvectors was set to true (the default).</span></div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><span class="comment">      *</span></div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="comment">      * The real matrix \f$ V \f$ returned by this function and the</span></div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span><span class="comment">      * block-diagonal matrix \f$ D \f$ returned by pseudoEigenvalueMatrix()</span></div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span><span class="comment">      * satisfy \f$ AV = VD \f$.</span></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="comment">      *</span></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span><span class="comment">      * Example: \include EigenSolver_pseudoEigenvectors.cpp</span></div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span><span class="comment">      * Output: \verbinclude EigenSolver_pseudoEigenvectors.out</span></div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><span class="comment">      *</span></div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="comment">      * \sa pseudoEigenvalueMatrix(), eigenvectors()</span></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="comment">      */</span></div>
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno"><a class="line" href="class_eigen_1_1_eigen_solver.html#a8e933fb058e8f5f0d7e25d64ffc9b152">  199</a></span>    <span class="keyword">const</span> <a class="code hl_typedef" href="class_eigen_1_1_eigen_solver.html#a83acd180404ddaac8a678fa65a6b632b">MatrixType</a>&amp; <a class="code hl_function" href="class_eigen_1_1_eigen_solver.html#a8e933fb058e8f5f0d7e25d64ffc9b152">pseudoEigenvectors</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="keyword">    </span>{</div>
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>      eigen_assert(m_isInitialized &amp;&amp; <span class="stringliteral">&quot;EigenSolver is not initialized.&quot;</span>);</div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>      eigen_assert(m_eigenvectorsOk &amp;&amp; <span class="stringliteral">&quot;The eigenvectors have not been computed together with the eigenvalues.&quot;</span>);</div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>      <span class="keywordflow">return</span> m_eivec;</div>
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    }</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> </div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="comment"></span> </div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="comment">    /** \brief Returns the block-diagonal matrix in the pseudo-eigendecomposition.</span></div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span><span class="comment">      *</span></div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="comment">      * \returns  A block-diagonal matrix.</span></div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="comment">      *</span></div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span><span class="comment">      * \pre Either the constructor </span></div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span><span class="comment">      * EigenSolver(const MatrixType&amp;,bool) or the member function</span></div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span><span class="comment">      * compute(const MatrixType&amp;, bool) has been called before.</span></div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span><span class="comment">      *</span></div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span><span class="comment">      * The matrix \f$ D \f$ returned by this function is real and</span></div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span><span class="comment">      * block-diagonal. The blocks on the diagonal are either 1-by-1 or 2-by-2</span></div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span><span class="comment">      * blocks of the form</span></div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span><span class="comment">      * \f$ \begin{bmatrix} u &amp; v \\ -v &amp; u \end{bmatrix} \f$.</span></div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span><span class="comment">      * These blocks are not sorted in any particular order.</span></div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span><span class="comment">      * The matrix \f$ D \f$ and the matrix \f$ V \f$ returned by</span></div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span><span class="comment">      * pseudoEigenvectors() satisfy \f$ AV = VD \f$.</span></div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span><span class="comment">      *</span></div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span><span class="comment">      * \sa pseudoEigenvectors() for an example, eigenvalues()</span></div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span><span class="comment">      */</span></div>
 <div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>    <a class="code hl_typedef" href="class_eigen_1_1_eigen_solver.html#a83acd180404ddaac8a678fa65a6b632b">MatrixType</a> <a class="code hl_function" href="class_eigen_1_1_eigen_solver.html#a4979eafe0aeef06b19ada7fa5e19db17">pseudoEigenvalueMatrix</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span> </div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span><span class="comment"></span> </div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span><span class="comment">    /** \brief Returns the eigenvalues of given matrix. </span></div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span><span class="comment">      *</span></div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span><span class="comment">      * \returns A const reference to the column vector containing the eigenvalues.</span></div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span><span class="comment">      *</span></div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span><span class="comment">      * \pre Either the constructor </span></div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span><span class="comment">      * EigenSolver(const MatrixType&amp;,bool) or the member function</span></div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span><span class="comment">      * compute(const MatrixType&amp;, bool) has been called before.</span></div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span><span class="comment">      *</span></div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span><span class="comment">      * The eigenvalues are repeated according to their algebraic multiplicity,</span></div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span><span class="comment">      * so there are as many eigenvalues as rows in the matrix. The eigenvalues </span></div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span><span class="comment">      * are not sorted in any particular order.</span></div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span><span class="comment">      *</span></div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span><span class="comment">      * Example: \include EigenSolver_eigenvalues.cpp</span></div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span><span class="comment">      * Output: \verbinclude EigenSolver_eigenvalues.out</span></div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span><span class="comment">      *</span></div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span><span class="comment">      * \sa eigenvectors(), pseudoEigenvalueMatrix(),</span></div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span><span class="comment">      *     MatrixBase::eigenvalues()</span></div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span><span class="comment">      */</span></div>
 <div class="line"><a id="l00244" name="l00244"></a><span class="lineno"><a class="line" href="class_eigen_1_1_eigen_solver.html#ae33fb99005024f07005ab1e409413c5f">  244</a></span>    <span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_matrix.html">EigenvalueType</a>&amp; <a class="code hl_function" href="class_eigen_1_1_eigen_solver.html#ae33fb99005024f07005ab1e409413c5f">eigenvalues</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span><span class="keyword">    </span>{</div>
 <div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>      eigen_assert(m_isInitialized &amp;&amp; <span class="stringliteral">&quot;EigenSolver is not initialized.&quot;</span>);</div>
 <div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>      <span class="keywordflow">return</span> m_eivalues;</div>
 <div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    }</div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span> </div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span><span class="comment"></span> </div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span><span class="comment">    /** \brief Computes eigendecomposition of given matrix. </span></div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span><span class="comment">      * </span></div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span><span class="comment">      * \param[in]  matrix  Square matrix whose eigendecomposition is to be computed.</span></div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span><span class="comment">      * \param[in]  computeEigenvectors  If true, both the eigenvectors and the</span></div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span><span class="comment">      *    eigenvalues are computed; if false, only the eigenvalues are</span></div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span><span class="comment">      *    computed. </span></div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span><span class="comment">      * \returns    Reference to \c *this</span></div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span><span class="comment">      *</span></div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span><span class="comment">      * This function computes the eigenvalues of the real matrix \p matrix.</span></div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span><span class="comment">      * The eigenvalues() function can be used to retrieve them.  If </span></div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span><span class="comment">      * \p computeEigenvectors is true, then the eigenvectors are also computed</span></div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span><span class="comment">      * and can be retrieved by calling eigenvectors().</span></div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span><span class="comment">      *</span></div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span><span class="comment">      * The matrix is first reduced to real Schur form using the RealSchur</span></div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span><span class="comment">      * class. The Schur decomposition is then used to compute the eigenvalues</span></div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span><span class="comment">      * and eigenvectors.</span></div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span><span class="comment">      *</span></div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span><span class="comment">      * The cost of the computation is dominated by the cost of the</span></div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span><span class="comment">      * Schur decomposition, which is very approximately \f$ 25n^3 \f$</span></div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span><span class="comment">      * (where \f$ n \f$ is the size of the matrix) if \p computeEigenvectors </span></div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span><span class="comment">      * is true, and \f$ 10n^3 \f$ if \p computeEigenvectors is false.</span></div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span><span class="comment">      *</span></div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span><span class="comment">      * This method reuses of the allocated data in the EigenSolver object.</span></div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span><span class="comment">      *</span></div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span><span class="comment">      * Example: \include EigenSolver_compute.cpp</span></div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span><span class="comment">      * Output: \verbinclude EigenSolver_compute.out</span></div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span><span class="comment">      */</span></div>
 <div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> InputType&gt;</div>
 <div class="line"><a id="l00278" name="l00278"></a><span class="lineno"><a class="line" href="class_eigen_1_1_eigen_solver.html#aff5c2bd7843aacdcd59b9cbe420752ff">  278</a></span>    <a class="code hl_class" href="class_eigen_1_1_eigen_solver.html">EigenSolver</a>&amp; <a class="code hl_function" href="class_eigen_1_1_eigen_solver.html#aff5c2bd7843aacdcd59b9cbe420752ff">compute</a>(<span class="keyword">const</span> <a class="code hl_class" href="struct_eigen_1_1_eigen_base.html">EigenBase&lt;InputType&gt;</a>&amp; matrix, <span class="keywordtype">bool</span> computeEigenvectors = <span class="keyword">true</span>);</div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span> </div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span><span class="comment"></span> </div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span><span class="comment">    /** \returns NumericalIssue if the input contains INF or NaN values or overflow occurred. Returns Success otherwise. */</span></div>
 <div class="line"><a id="l00281" name="l00281"></a><span class="lineno"><a class="line" href="class_eigen_1_1_eigen_solver.html#ac4af54fadc33abcdd1778c87bfbf005b">  281</a></span>    <a class="code hl_enumeration" href="group__enums.html#ga85fad7b87587764e5cf6b513a9e0ee5e">ComputationInfo</a> <a class="code hl_function" href="class_eigen_1_1_eigen_solver.html#ac4af54fadc33abcdd1778c87bfbf005b">info</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span><span class="keyword">    </span>{</div>
 <div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>      eigen_assert(m_isInitialized &amp;&amp; <span class="stringliteral">&quot;EigenSolver is not initialized.&quot;</span>);</div>
 <div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>      <span class="keywordflow">return</span> m_info;</div>
 <div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>    }</div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span> </div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span><span class="comment"></span> </div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span><span class="comment">    /** \brief Sets the maximum number of iterations allowed. */</span></div>
 <div class="line"><a id="l00288" name="l00288"></a><span class="lineno"><a class="line" href="class_eigen_1_1_eigen_solver.html#a41c8825768d4df7b058a714589cbf430">  288</a></span>    <a class="code hl_class" href="class_eigen_1_1_eigen_solver.html">EigenSolver</a>&amp; <a class="code hl_function" href="class_eigen_1_1_eigen_solver.html#a41c8825768d4df7b058a714589cbf430">setMaxIterations</a>(<a class="code hl_typedef" href="class_eigen_1_1_eigen_solver.html#a5bff6a6bc0efac67d52c60c2c3deb9ee">Index</a> maxIters)</div>
 <div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>    {</div>
 <div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>      m_realSchur.setMaxIterations(maxIters);</div>
 <div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>      <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>    }</div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span> </div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span><span class="comment"></span> </div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span><span class="comment">    /** \brief Returns the maximum number of iterations. */</span></div>
 <div class="line"><a id="l00295" name="l00295"></a><span class="lineno"><a class="line" href="class_eigen_1_1_eigen_solver.html#aa7668af4bcb47cd92cfe10640589d88f">  295</a></span>    <a class="code hl_typedef" href="class_eigen_1_1_eigen_solver.html#a5bff6a6bc0efac67d52c60c2c3deb9ee">Index</a> <a class="code hl_function" href="class_eigen_1_1_eigen_solver.html#aa7668af4bcb47cd92cfe10640589d88f">getMaxIterations</a>()</div>
 <div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>    {</div>
 <div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>      <span class="keywordflow">return</span> m_realSchur.getMaxIterations();</div>
@@ -558,7 +754,7 @@ $(document).ready(function(){initNavTree('_eigen_solver_8h_source.html',''); ini
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_bfb2597c438c4234fbdcce568a9e650d.html">eigeninclude</a></li><li class="navelem"><a class="el" href="dir_81addad79085c513f45446cf62836735.html">Eigen</a></li><li class="navelem"><a class="el" href="dir_e429501dd9edb337aeb96d684aa3b6ff.html">src</a></li><li class="navelem"><a class="el" href="dir_1244edeb24a934186c26a6bc002e8475.html">Eigenvalues</a></li><li class="navelem"><b>EigenSolver.h</b></li>
-    <li class="footer">Generated on Tue Oct 19 2021 04:32:20 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Oct 19 2021 04:42:44 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

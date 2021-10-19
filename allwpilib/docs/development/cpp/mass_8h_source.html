@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-17-g9e6db17</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-19-ge56d6de</span>
    </div>
   </td>
  </tr>
@@ -124,20 +124,28 @@ $(document).ready(function(){initNavTree('mass_8h_source.html',''); initResizabl
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &quot;units/base.h&quot;</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceunits.html">units</a> {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceunits.html">units</a> {<span class="comment"></span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="namespaceunits_1_1mass.html">   33</a></span><span class="comment"> * @namespace units::mass</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment"> * @brief namespace for unit types and containers representing mass values</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment"> * @details The SI unit for mass is `kilograms`, and the corresponding</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment"> *          `base_unit` category is `mass_unit`.</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment"> * @anchor massContainers</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment"> * @sa See unit_t for more information on unit type containers.</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#if !defined(DISABLE_PREDEFINED_UNITS) || defined(ENABLE_PREDEFINED_MASS_UNITS)</span></div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>UNIT_ADD_WITH_METRIC_PREFIXES(</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    mass, gram, grams, g, unit&lt;std::ratio&lt;1, 1000&gt;, <a class="code hl_struct" href="structunits_1_1base__unit.html">units::category::mass_unit</a>&gt;)</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>UNIT_ADD(mass, metric_ton, metric_tons, t, unit&lt;std::ratio&lt;1000&gt;, kilograms&gt;)</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    mass, gram, grams, g, <a class="code hl_struct" href="structunits_1_1unit.html">unit</a>&lt;std::ratio&lt;1, 1000&gt;, <a class="code hl_struct" href="structunits_1_1base__unit.html">units::category::mass_unit</a>&gt;)</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>UNIT_ADD(mass, metric_ton, metric_tons, t, <a class="code hl_struct" href="structunits_1_1unit.html">unit</a>&lt;std::ratio&lt;1000&gt;, kilograms&gt;)</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>UNIT_ADD(mass, pound, pounds, lb,</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>         unit&lt;std::ratio&lt;45359237, 100000000&gt;, kilograms&gt;)</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>UNIT_ADD(mass, long_ton, long_tons, ln_t, unit&lt;std::ratio&lt;2240&gt;, pounds&gt;)</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>UNIT_ADD(mass, short_ton, short_tons, sh_t, unit&lt;std::ratio&lt;2000&gt;, pounds&gt;)</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>UNIT_ADD(mass, stone, stone, st, unit&lt;std::ratio&lt;14&gt;, pounds&gt;)</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>UNIT_ADD(mass, ounce, ounces, oz, unit&lt;std::ratio&lt;1, 16&gt;, pounds&gt;)</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>UNIT_ADD(mass, carat, carats, ct, unit&lt;std::ratio&lt;200&gt;, milligrams&gt;)</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>         <a class="code hl_struct" href="structunits_1_1unit.html">unit</a>&lt;std::ratio&lt;45359237, 100000000&gt;, kilograms&gt;)</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>UNIT_ADD(mass, long_ton, long_tons, ln_t, <a class="code hl_struct" href="structunits_1_1unit.html">unit</a>&lt;std::ratio&lt;2240&gt;, pounds&gt;)</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>UNIT_ADD(mass, short_ton, short_tons, sh_t, <a class="code hl_struct" href="structunits_1_1unit.html">unit</a>&lt;std::ratio&lt;2000&gt;, pounds&gt;)</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>UNIT_ADD(mass, stone, stone, st, <a class="code hl_struct" href="structunits_1_1unit.html">unit</a>&lt;std::ratio&lt;14&gt;, pounds&gt;)</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>UNIT_ADD(mass, ounce, ounces, oz, <a class="code hl_struct" href="structunits_1_1unit.html">unit</a>&lt;std::ratio&lt;1, 16&gt;, pounds&gt;)</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>UNIT_ADD(mass, carat, carats, ct, <a class="code hl_struct" href="structunits_1_1unit.html">unit</a>&lt;std::ratio&lt;200&gt;, milligrams&gt;)</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>UNIT_ADD(mass, slug, slugs, slug,</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>         unit&lt;std::ratio&lt;145939029, 10000000&gt;, kilograms&gt;)</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>         <a class="code hl_struct" href="structunits_1_1unit.html">unit</a>&lt;std::ratio&lt;145939029, 10000000&gt;, kilograms&gt;)</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>UNIT_ADD_CATEGORY_TRAIT(mass)</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="preprocessor">#endif</span></div>
@@ -146,13 +154,14 @@ $(document).ready(function(){initNavTree('mass_8h_source.html',''); initResizabl
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>}  <span class="comment">// namespace units</span></div>
 <div class="ttc" id="anamespaceunits_html"><div class="ttname"><a href="namespaceunits.html">units</a></div><div class="ttdoc">Unit Conversion Library namespace.</div><div class="ttdef"><b>Definition:</b> temperature.h:31</div></div>
 <div class="ttc" id="astructunits_1_1base__unit_html"><div class="ttname"><a href="structunits_1_1base__unit.html">units::base_unit</a></div><div class="ttdoc">Class representing SI base unit types.</div><div class="ttdef"><b>Definition:</b> base.h:752</div></div>
+<div class="ttc" id="astructunits_1_1unit_html"><div class="ttname"><a href="structunits_1_1unit.html">units::unit</a></div><div class="ttdoc">Type representing an arbitrary unit.</div><div class="ttdef"><b>Definition:</b> base.h:878</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_8398b3b11a49d1b73baf320477e5bcca.html">units</a></li><li class="navelem"><b>mass.h</b></li>
-    <li class="footer">Generated on Tue Oct 19 2021 04:32:22 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Oct 19 2021 04:42:45 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

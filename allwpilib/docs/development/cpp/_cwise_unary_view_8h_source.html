@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-17-g9e6db17</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-19-ge56d6de</span>
    </div>
   </td>
  </tr>
@@ -136,7 +136,20 @@ $(document).ready(function(){initNavTree('_cwise_unary_view_8h_source.html','');
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> ViewOp, <span class="keyword">typename</span> MatrixType, <span class="keyword">typename</span> StorageKind&gt;</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">class </span><a class="code hl_class" href="class_eigen_1_1_cwise_unary_view_impl.html">CwiseUnaryViewImpl</a>;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment"></span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">/** \class CwiseUnaryView</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">  * \ingroup Core_Module</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">  * \brief Generic lvalue expression of a coefficient-wise unary operator of a matrix or a vector</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">  * \tparam ViewOp template functor implementing the view</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">  * \tparam MatrixType the type of the matrix we are applying the unary operator</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">  * This class represents a lvalue expression of a generic unary view operator of a matrix or a vector.</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">  * It is the return type of real() and imag(), and most of the time this is the only way it is used.</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">  * \sa MatrixBase::unaryViewExpr(const CustomUnaryOp &amp;) const, class CwiseUnaryOp</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> ViewOp, <span class="keyword">typename</span> MatrixType&gt;</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="class_eigen_1_1_cwise_unary_view.html">   58</a></span><span class="keyword">class </span><a class="code hl_class" href="class_eigen_1_1_cwise_unary_view.html">CwiseUnaryView</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_eigen_1_1_cwise_unary_view_impl.html">CwiseUnaryViewImpl</a>&lt;ViewOp, MatrixType, typename internal::traits&lt;MatrixType&gt;::StorageKind&gt;</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>{</div>
@@ -156,12 +169,15 @@ $(document).ready(function(){initNavTree('_cwise_unary_view_8h_source.html','');
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <a class="code hl_typedef" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> rows() <span class="keyword">const</span> EIGEN_NOEXCEPT { <span class="keywordflow">return</span> m_matrix.rows(); }</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE EIGEN_CONSTEXPR</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <a class="code hl_typedef" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> cols() <span class="keyword">const</span> EIGEN_NOEXCEPT { <span class="keywordflow">return</span> m_matrix.cols(); }</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment"></span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment">    /** \returns the functor representing unary operation */</span></div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="class_eigen_1_1_cwise_unary_view.html#a4d75355ad31c2cf47eb8ffc31d99e732">   78</a></span>    EIGEN_DEVICE_FUNC <span class="keyword">const</span> ViewOp&amp; <a class="code hl_function" href="class_eigen_1_1_cwise_unary_view.html#a4d75355ad31c2cf47eb8ffc31d99e732">functor</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_functor; }</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment"></span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment">    /** \returns the nested expression */</span></div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    EIGEN_DEVICE_FUNC <span class="keyword">const</span> <span class="keyword">typename</span> internal::remove_all&lt;MatrixTypeNested&gt;::type&amp;</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="class_eigen_1_1_cwise_unary_view.html#a0a30de69008874fdb8802c82078215d3">   82</a></span>    <a class="code hl_function" href="class_eigen_1_1_cwise_unary_view.html#a0a30de69008874fdb8802c82078215d3">nestedExpression</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_matrix; }</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment"></span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">    /** \returns the nested expression */</span></div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    EIGEN_DEVICE_FUNC <span class="keyword">typename</span> internal::remove_reference&lt;MatrixTypeNested&gt;::type&amp;</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="class_eigen_1_1_cwise_unary_view.html#aeac6b109a90bfb1c8ebd1ad444a89b0a">   86</a></span>    <a class="code hl_function" href="class_eigen_1_1_cwise_unary_view.html#aeac6b109a90bfb1c8ebd1ad444a89b0a">nestedExpression</a>() { <span class="keywordflow">return</span> m_matrix; }</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
@@ -237,7 +253,7 @@ $(document).ready(function(){initNavTree('_cwise_unary_view_8h_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_bfb2597c438c4234fbdcce568a9e650d.html">eigeninclude</a></li><li class="navelem"><a class="el" href="dir_81addad79085c513f45446cf62836735.html">Eigen</a></li><li class="navelem"><a class="el" href="dir_e429501dd9edb337aeb96d684aa3b6ff.html">src</a></li><li class="navelem"><a class="el" href="dir_09ad905ad0d1f25ba5be966168b2edef.html">Core</a></li><li class="navelem"><b>CwiseUnaryView.h</b></li>
-    <li class="footer">Generated on Tue Oct 19 2021 04:32:17 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Oct 19 2021 04:42:41 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

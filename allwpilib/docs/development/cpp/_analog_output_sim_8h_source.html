@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-17-g9e6db17</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-19-ge56d6de</span>
    </div>
   </td>
  </tr>
@@ -109,27 +109,77 @@ $(document).ready(function(){initNavTree('_analog_output_sim_8h_source.html','')
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">class </span>AnalogOutput;</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span>sim {</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"></span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> * Class to control a simulated analog output.</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_analog_output_sim.html">   20</a></span><span class="keyword">class </span><a class="code hl_class" href="classfrc_1_1sim_1_1_analog_output_sim.html">AnalogOutputSim</a> {</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> <span class="keyword">public</span>:<span class="comment"></span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">   * Constructs from an AnalogOutput object.</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">   * @param analogOutput AnalogOutput to simulate</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_analog_output_sim.html#afe79cc784a21660f20fa8ca319a1e617">   27</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classfrc_1_1sim_1_1_analog_output_sim.html#afe79cc784a21660f20fa8ca319a1e617">AnalogOutputSim</a>(<span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_analog_output.html">AnalogOutput</a>&amp; analogOutput);</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment"></span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">   * Constructs from an analog output channel number.</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">   * @param channel Channel number</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_analog_output_sim.html#ae63cbaedc5832041972ffa5cf5dba374">   34</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classfrc_1_1sim_1_1_analog_output_sim.html#ae63cbaedc5832041972ffa5cf5dba374">AnalogOutputSim</a>(<span class="keywordtype">int</span> channel);</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment"></span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">   * Register a callback to be run whenever the voltage changes.</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">   * @param callback the callback</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">   * @param initialNotify whether to call the callback with the initial state</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">   * @return the CallbackStore object associated with this callback</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_analog_output_sim.html#a8bdc56ec7432b094449ed10cd322dd2b">   43</a></span>  [[nodiscard]] std::unique_ptr&lt;CallbackStore&gt; <a class="code hl_function" href="classfrc_1_1sim_1_1_analog_output_sim.html#a8bdc56ec7432b094449ed10cd322dd2b">RegisterVoltageCallback</a>(</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>      NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment"></span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">   * Read the analog output voltage.</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">   * @return the voltage on this analog output</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_analog_output_sim.html#a6780d5fb01b729fca65881ecdf6ab903">   51</a></span>  <span class="keywordtype">double</span> <a class="code hl_function" href="classfrc_1_1sim_1_1_analog_output_sim.html#a6780d5fb01b729fca65881ecdf6ab903">GetVoltage</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment"></span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">   * Set the analog output voltage.</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">   * @param voltage the new voltage on this analog output</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_analog_output_sim.html#a5ffbf82d3dc25ddb1abba24e6a6642df">   58</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1sim_1_1_analog_output_sim.html#a5ffbf82d3dc25ddb1abba24e6a6642df">SetVoltage</a>(<span class="keywordtype">double</span> voltage);</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment"></span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">   * Register a callback to be run when this analog output is initialized.</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">   * @param callback the callback</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">   * @param initialNotify whether to run the callback with the initial state</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">   * @return the CallbackStore object associated with this callback</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_analog_output_sim.html#a622674ebe7f80400359efda2ab7fc9aa">   67</a></span>  [[nodiscard]] std::unique_ptr&lt;CallbackStore&gt; <a class="code hl_function" href="classfrc_1_1sim_1_1_analog_output_sim.html#a622674ebe7f80400359efda2ab7fc9aa">RegisterInitializedCallback</a>(</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>      NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment"></span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">   * Check whether this analog output has been initialized.</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">   * @return true if initialized</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_analog_output_sim.html#af7ad999cfbce41ae7a6d3a35105dff3a">   75</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classfrc_1_1sim_1_1_analog_output_sim.html#af7ad999cfbce41ae7a6d3a35105dff3a">GetInitialized</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment"></span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">   * Define whether this analog output has been initialized.</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment">   * @param initialized whether this object is initialized</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_analog_output_sim.html#a6bdf6ce3d4cac33d131b4ce05ce79a1c">   82</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1sim_1_1_analog_output_sim.html#a6bdf6ce3d4cac33d131b4ce05ce79a1c">SetInitialized</a>(<span class="keywordtype">bool</span> initialized);</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment"></span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">   * Reset all simulation data on this object.</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_analog_output_sim.html#a63d8e42958f5d3293c3e922a48defadb">   87</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1sim_1_1_analog_output_sim.html#a63d8e42958f5d3293c3e922a48defadb">ResetData</a>();</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> <span class="keyword">private</span>:</div>
@@ -154,7 +204,7 @@ $(document).ready(function(){initNavTree('_analog_output_sim_8h_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_297dc702852f645e4b9e531dac2da27d.html">simulation</a></li><li class="navelem"><b>AnalogOutputSim.h</b></li>
-    <li class="footer">Generated on Tue Oct 19 2021 04:32:15 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Oct 19 2021 04:42:40 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

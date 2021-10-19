@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-17-g9e6db17</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-19-ge56d6de</span>
    </div>
   </td>
  </tr>
@@ -106,7 +106,13 @@ $(document).ready(function(){initNavTree('_unsafe_d_i_o_8h_source.html',''); ini
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;hal/Types.h&quot;</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacehal.html">hal</a> {</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"></span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> * Proxy class for directly manipulating the DIO pins.</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> * This class is not copyable or movable, and should never be used</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> * outside of the UnsafeManipulateDIO callback.</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="structhal_1_1_d_i_o_set_proxy.html">   20</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structhal_1_1_d_i_o_set_proxy.html">DIOSetProxy</a> {</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <a class="code hl_struct" href="structhal_1_1_d_i_o_set_proxy.html">DIOSetProxy</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structhal_1_1_d_i_o_set_proxy.html">DIOSetProxy</a>&amp;) = <span class="keyword">delete</span>;</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <a class="code hl_struct" href="structhal_1_1_d_i_o_set_proxy.html">DIOSetProxy</a>(<a class="code hl_struct" href="structhal_1_1_d_i_o_set_proxy.html">DIOSetProxy</a>&amp;&amp;) = <span class="keyword">delete</span>;</div>
@@ -140,7 +146,18 @@ $(document).ready(function(){initNavTree('_unsafe_d_i_o_8h_source.html',''); ini
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>tDIO* UnsafeGetDigialSystem();</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>int32_t ComputeDigitalMask(HAL_DigitalHandle handle, int32_t* status);</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>}  <span class="comment">// namespace detail</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment"></span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment"> * Unsafe digital output set function</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment"> * This function can be used to perform fast and determinstically set digital</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment"> * outputs. This function holds the DIO lock, so calling anyting other then</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment"> * functions on the Proxy object passed as a parameter can deadlock your</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment"> * program.</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment"> * @param[in] handle the HAL digital handle of the pin to toggle.</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment"> * @param[out] status status check</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment"> * @param[in] func   A functor taking a ref to a DIOSetProxy object.</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Functor&gt;</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="namespacehal.html#a8fafafcab9f6d02c41abd00fffa19734">   66</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="namespacehal.html#a8fafafcab9f6d02c41abd00fffa19734">UnsafeManipulateDIO</a>(HAL_DigitalHandle handle, int32_t* status,</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                         Functor func) {</div>
@@ -180,7 +197,7 @@ $(document).ready(function(){initNavTree('_unsafe_d_i_o_8h_source.html',''); ini
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_7dfa5b6b9262a4050979ee23e0eb392d.html">hal</a></li><li class="navelem"><a class="el" href="dir_250d0927aef2f62e0ee93f975aa5151b.html">cpp</a></li><li class="navelem"><b>UnsafeDIO.h</b></li>
-    <li class="footer">Generated on Tue Oct 19 2021 04:32:14 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Oct 19 2021 04:42:39 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

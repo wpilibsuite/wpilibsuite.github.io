@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-17-g9e6db17</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-19-ge56d6de</span>
    </div>
   </td>
  </tr>
@@ -245,7 +245,12 @@ $(document).ready(function(){initNavTree('_forward_declarations_8h_source.html',
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Lhs, <span class="keyword">typename</span> Rhs&gt; <span class="keyword">struct </span>product_type;</div>
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="struct_eigen_1_1internal_1_1_enable_if.html">  151</a></span><span class="keyword">template</span>&lt;<span class="keywordtype">bool</span>&gt; <span class="keyword">struct </span><a class="code hl_struct" href="struct_eigen_1_1internal_1_1_enable_if.html">EnableIf</a>;</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="comment"></span> </div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="comment">/** \internal</span></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="comment">  * \class product_evaluator</span></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="comment">  * Products need their own evaluator with more template arguments allowing for</span></div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="comment">  * easier partial template specializations.</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="keyword">template</span>&lt; <span class="keyword">typename</span> T,</div>
 <div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>          <span class="keywordtype">int</span> ProductTag = <a class="code hl_struct" href="struct_eigen_1_1internal_1_1product__type.html">internal::product_type&lt;typename T::Lhs,typename T::Rhs&gt;::ret</a>,</div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>          <span class="keyword">typename</span> LhsShape = <span class="keyword">typename</span> evaluator_traits&lt;typename T::Lhs&gt;::Shape,</div>
@@ -565,7 +570,7 @@ $(document).ready(function(){initNavTree('_forward_declarations_8h_source.html',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_bfb2597c438c4234fbdcce568a9e650d.html">eigeninclude</a></li><li class="navelem"><a class="el" href="dir_81addad79085c513f45446cf62836735.html">Eigen</a></li><li class="navelem"><a class="el" href="dir_e429501dd9edb337aeb96d684aa3b6ff.html">src</a></li><li class="navelem"><a class="el" href="dir_09ad905ad0d1f25ba5be966168b2edef.html">Core</a></li><li class="navelem"><a class="el" href="dir_0e042f599448b2c33df19dc2eb4b18db.html">util</a></li><li class="navelem"><b>ForwardDeclarations.h</b></li>
-    <li class="footer">Generated on Tue Oct 19 2021 04:32:20 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Oct 19 2021 04:42:43 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

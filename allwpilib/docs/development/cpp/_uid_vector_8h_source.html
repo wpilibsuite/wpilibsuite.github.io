@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-17-g9e6db17</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-19-ge56d6de</span>
    </div>
   </td>
  </tr>
@@ -155,7 +155,16 @@ $(document).ready(function(){initNavTree('_uid_vector_8h_source.html',''); initR
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  It m_end;</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>};</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}  <span class="comment">// namespace impl</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment"></span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment"> * Vector which provides an integrated freelist for removal and reuse of</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment"> * individual elements.</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment"> * @tparam T element type; must be default-constructible and evaluate in</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment"> *           boolean context to false when &quot;empty&quot;</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment"> * @tparam reuse_threshold how many free elements to store up before starting</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment"> *                         to recycle them</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>template &lt;typename T, typename std::vector&lt;T&gt;::size_type reuse_threshold&gt;</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="classwpi_1_1_uid_vector.html">   73</a></span><span class="keyword">class </span><a class="code hl_class" href="classwpi_1_1_uid_vector.html">UidVector</a> {</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> <span class="keyword">public</span>:</div>
@@ -192,7 +201,11 @@ $(document).ready(function(){initNavTree('_uid_vector_8h_source.html',''); initR
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    ++m_active_count;</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="keywordflow">return</span> uid;</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  }</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="comment"></span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment">   * Removes the identified element by replacing it with a default-constructed</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="comment">   * one. The element is added to the freelist for later reuse.</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="classwpi_1_1_uid_vector.html#ac4de018ba22f1217f8e1aa110f3a250d">  113</a></span>  T <a class="code hl_function" href="classwpi_1_1_uid_vector.html#ac4de018ba22f1217f8e1aa110f3a250d">erase</a>(size_type uid) {</div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <span class="keywordflow">if</span> (uid &gt;= m_vector.size() || !m_vector[uid]) {</div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>      <span class="keywordflow">return</span> T();</div>
@@ -203,7 +216,10 @@ $(document).ready(function(){initNavTree('_uid_vector_8h_source.html',''); initR
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    --m_active_count;</div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    <span class="keywordflow">return</span> rv;</div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>  }</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="comment"></span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="comment">   * Removes all elements.</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno"><a class="line" href="classwpi_1_1_uid_vector.html#a1d11ee045aee34d3c301a83f73c79d73">  127</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1_uid_vector.html#a1d11ee045aee34d3c301a83f73c79d73">clear</a>() noexcept {</div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    m_vector.clear();</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    m_free.clear();</div>
@@ -247,7 +263,7 @@ $(document).ready(function(){initNavTree('_uid_vector_8h_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><b>UidVector.h</b></li>
-    <li class="footer">Generated on Tue Oct 19 2021 04:32:23 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Oct 19 2021 04:42:46 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

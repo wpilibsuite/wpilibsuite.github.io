@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-17-g9e6db17</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-19-ge56d6de</span>
    </div>
   </td>
  </tr>
@@ -115,10 +115,66 @@ $(document).ready(function(){initNavTree('_linear_filter_8h_source.html',''); in
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &quot;wpimath/MathShared.h&quot;</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">namespace </span>frc {</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"></span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"> * This class implements a linear, digital filter. All types of FIR and IIR</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment"> * filters are supported. Static factory methods are provided to create commonly</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment"> * used types of filters.</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment"> * Filters are of the form:&lt;br&gt;</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment"> *  y[n] = (b0 x[n] + b1 x[n-1] + … + bP x[n-P]) -</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment"> *         (a0 y[n-1] + a2 y[n-2] + … + aQ y[n-Q])</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment"> * Where:&lt;br&gt;</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment"> *  y[n] is the output at time &quot;n&quot;&lt;br&gt;</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment"> *  x[n] is the input at time &quot;n&quot;&lt;br&gt;</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment"> *  y[n-1] is the output from the LAST time step (&quot;n-1&quot;)&lt;br&gt;</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment"> *  x[n-1] is the input from the LAST time step (&quot;n-1&quot;)&lt;br&gt;</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment"> *  b0 … bP are the &quot;feedforward&quot; (FIR) gains&lt;br&gt;</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment"> *  a0 … aQ are the &quot;feedback&quot; (IIR) gains&lt;br&gt;</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment"> * IMPORTANT! Note the &quot;-&quot; sign in front of the feedback term! This is a common</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment"> *            convention in signal processing.</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment"> * What can linear filters do? Basically, they can filter, or diminish, the</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment"> * effects of undesirable input frequencies. High frequencies, or rapid changes,</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment"> * can be indicative of sensor noise or be otherwise undesirable. A &quot;low pass&quot;</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment"> * filter smooths out the signal, reducing the impact of these high frequency</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment"> * components.  Likewise, a &quot;high pass&quot; filter gets rid of slow-moving signal</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment"> * components, letting you detect large changes more easily.</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment"> * Example FRC applications of filters:</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment"> *  - Getting rid of noise from an analog sensor input (note: the roboRIO&#39;s FPGA</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment"> *    can do this faster in hardware)</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment"> *  - Smoothing out joystick input to prevent the wheels from slipping or the</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment"> *    robot from tipping</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment"> *  - Smoothing motor commands so that unnecessary strain isn&#39;t put on</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment"> *    electrical or mechanical components</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment"> *  - If you use clever gains, you can make a PID controller out of this class!</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment"> * For more on filters, we highly recommend the following articles:&lt;br&gt;</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment"> * https://en.wikipedia.org/wiki/Linear_filter&lt;br&gt;</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment"> * https://en.wikipedia.org/wiki/Iir_filter&lt;br&gt;</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment"> * https://en.wikipedia.org/wiki/Fir_filter&lt;br&gt;</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment"> * Note 1: Calculate() should be called by the user on a known, regular period.</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment"> * You can use a Notifier for this or do it &quot;inline&quot; with code in a</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment"> * periodic function.</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment"> * Note 2: For ALL filters, gains are necessarily a function of frequency. If</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment"> * you make a filter that works well for you at, say, 100Hz, you will most</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment"> * definitely need to adjust the gains if you then want to run it at 200Hz!</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment"> * Combining this with Note 1 - the impetus is on YOU as a developer to make</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment"> * sure Calculate() gets called at the desired, constant frequency!</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="classfrc_1_1_linear_filter.html">   74</a></span><span class="keyword">class </span><a class="code hl_class" href="classfrc_1_1_linear_filter.html">LinearFilter</a> {</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> <span class="keyword">public</span>:<span class="comment"></span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment">   * Create a linear FIR or IIR filter.</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">   * @param ffGains The &quot;feedforward&quot; or FIR gains.</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment">   * @param fbGains The &quot;feedback&quot; or IIR gains.</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="classfrc_1_1_linear_filter.html#aea766a0ce1bd742f5884cbd82a839924">   82</a></span>  <a class="code hl_function" href="classfrc_1_1_linear_filter.html#aea766a0ce1bd742f5884cbd82a839924">LinearFilter</a>(<a class="code hl_class" href="classwpi_1_1span.html">wpi::span&lt;const double&gt;</a> ffGains, <a class="code hl_class" href="classwpi_1_1span.html">wpi::span&lt;const double&gt;</a> fbGains)</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>      : m_inputs(ffGains.size()),</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        m_outputs(fbGains.size()),</div>
@@ -136,24 +192,67 @@ $(document).ready(function(){initNavTree('_linear_filter_8h_source.html',''); in
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    wpi::math::MathSharedStore::ReportUsage(</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        wpi::math::MathUsageId::kFilter_Linear, 1);</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  }</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment"></span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment">   * Create a linear FIR or IIR filter.</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment">   * @param ffGains The &quot;feedforward&quot; or FIR gains.</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment">   * @param fbGains The &quot;feedback&quot; or IIR gains.</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="classfrc_1_1_linear_filter.html#ad9e2fcd1f28f1b9e40582c500d4ca6bb">  106</a></span>  <a class="code hl_function" href="classfrc_1_1_linear_filter.html#ad9e2fcd1f28f1b9e40582c500d4ca6bb">LinearFilter</a>(std::initializer_list&lt;double&gt; ffGains,</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>               std::initializer_list&lt;double&gt; fbGains)</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>      : <a class="code hl_class" href="classfrc_1_1_linear_filter.html">LinearFilter</a>({ffGains.begin(), ffGains.end()},</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>                     {fbGains.begin(), fbGains.end()}) {}</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>  <span class="comment">// Static methods to create commonly used filters</span></div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="classfrc_1_1_linear_filter.html#afdd3ea779ffc816aabef3c922f4652ac">  126</a></span><span class="comment"></span>  <span class="keyword">static</span> <a class="code hl_class" href="classfrc_1_1_linear_filter.html">LinearFilter&lt;T&gt;</a> <a class="code hl_function" href="classfrc_1_1_linear_filter.html#afdd3ea779ffc816aabef3c922f4652ac">SinglePoleIIR</a>(<span class="keywordtype">double</span> timeConstant,</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>  <span class="comment">// Static methods to create commonly used filters</span><span class="comment"></span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="comment">   * Creates a one-pole IIR low-pass filter of the form:&lt;br&gt;</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="comment">   *   y[n] = (1 - gain) x[n] + gain y[n-1]&lt;br&gt;</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="comment">   * where gain = e&lt;sup&gt;-dt / T&lt;/sup&gt;, T is the time constant in seconds</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment">   * Note: T = 1 / (2 pi f) where f is the cutoff frequency in Hz, the frequency</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="comment">   * above which the input starts to attenuate.</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="comment">   * This filter is stable for time constants greater than zero.</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="comment">   * @param timeConstant The discrete-time time constant in seconds.</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="comment">   * @param period       The period in seconds between samples taken by the</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="comment">   *                     user.</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="classfrc_1_1_linear_filter.html#afdd3ea779ffc816aabef3c922f4652ac">  126</a></span>  <span class="keyword">static</span> <a class="code hl_class" href="classfrc_1_1_linear_filter.html">LinearFilter&lt;T&gt;</a> <a class="code hl_function" href="classfrc_1_1_linear_filter.html#afdd3ea779ffc816aabef3c922f4652ac">SinglePoleIIR</a>(<span class="keywordtype">double</span> timeConstant,</div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>                                       units::second_t period) {</div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <span class="keywordtype">double</span> gain = <a class="code hl_function" href="group___unit_math.html#ga37ffdd257c05eb6916d62bfbbc0890e2">std::exp</a>(-period.to&lt;<span class="keywordtype">double</span>&gt;() / timeConstant);</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classfrc_1_1_linear_filter.html#aea766a0ce1bd742f5884cbd82a839924">LinearFilter</a>({1.0 - gain}, {-gain});</div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>  }</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="comment"></span> </div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="comment">   * Creates a first-order high-pass filter of the form:&lt;br&gt;</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="comment">   *   y[n] = gain x[n] + (-gain) x[n-1] + gain y[n-1]&lt;br&gt;</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="comment">   * where gain = e&lt;sup&gt;-dt / T&lt;/sup&gt;, T is the time constant in seconds</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="comment">   * Note: T = 1 / (2 pi f) where f is the cutoff frequency in Hz, the frequency</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="comment">   * below which the input starts to attenuate.</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="comment">   * This filter is stable for time constants greater than zero.</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="comment">   * @param timeConstant The discrete-time time constant in seconds.</span></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="comment">   * @param period       The period in seconds between samples taken by the</span></div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="comment">   *                     user.</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno"><a class="line" href="classfrc_1_1_linear_filter.html#a5c4a4c49c259b7664b663606b42ec4e1">  146</a></span>  <span class="keyword">static</span> <a class="code hl_class" href="classfrc_1_1_linear_filter.html">LinearFilter&lt;T&gt;</a> <a class="code hl_function" href="classfrc_1_1_linear_filter.html#a5c4a4c49c259b7664b663606b42ec4e1">HighPass</a>(<span class="keywordtype">double</span> timeConstant, units::second_t period) {</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    <span class="keywordtype">double</span> gain = <a class="code hl_function" href="group___unit_math.html#ga37ffdd257c05eb6916d62bfbbc0890e2">std::exp</a>(-period.to&lt;<span class="keywordtype">double</span>&gt;() / timeConstant);</div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classfrc_1_1_linear_filter.html#aea766a0ce1bd742f5884cbd82a839924">LinearFilter</a>({gain, -gain}, {-gain});</div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>  }</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="comment"></span> </div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="comment">   * Creates a K-tap FIR moving average filter of the form:&lt;br&gt;</span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="comment">   *   y[n] = 1/k (x[k] + x[k-1] + … + x[0])</span></div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="comment">   * This filter is always stable.</span></div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="comment">   * @param taps The number of samples to average over. Higher = smoother but</span></div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="comment">   *             slower</span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="classfrc_1_1_linear_filter.html#a82095916400744938dcd6a4103925743">  160</a></span>  <span class="keyword">static</span> <a class="code hl_class" href="classfrc_1_1_linear_filter.html">LinearFilter&lt;T&gt;</a> <a class="code hl_function" href="classfrc_1_1_linear_filter.html#a82095916400744938dcd6a4103925743">MovingAverage</a>(<span class="keywordtype">int</span> taps) {</div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    <span class="keywordflow">if</span> (taps &lt;= 0) {</div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>      <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Number of taps must be greater than zero.&quot;</span>);</div>
@@ -162,7 +261,24 @@ $(document).ready(function(){initNavTree('_linear_filter_8h_source.html',''); in
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    std::vector&lt;double&gt; gains(taps, 1.0 / taps);</div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classfrc_1_1_linear_filter.html#aea766a0ce1bd742f5884cbd82a839924">LinearFilter</a>(gains, {});</div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>  }</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span><span class="comment"></span> </div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="comment">   * Creates a backward finite difference filter that computes the nth</span></div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span><span class="comment">   * derivative of the input given the specified number of samples.</span></div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="comment">   * For example, a first derivative filter that uses two samples and a sample</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span><span class="comment">   * period of 20 ms would be</span></div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span><span class="comment">   * &lt;pre&gt;&lt;code&gt;</span></div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span><span class="comment">   * LinearFilter&lt;double&gt;::BackwardFiniteDifference&lt;1, 2&gt;(20_ms);</span></div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="comment">   * &lt;/code&gt;&lt;/pre&gt;</span></div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span><span class="comment">   * @tparam Derivative The order of the derivative to compute.</span></div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span><span class="comment">   * @tparam Samples    The number of samples to use to compute the given</span></div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span><span class="comment">   *                    derivative. This must be one more than the order of</span></div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><span class="comment">   *                    derivative or higher.</span></div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="comment">   * @param period      The period in seconds between samples taken by the user.</span></div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>  <span class="keyword">template</span> &lt;<span class="keywordtype">int</span> Derivative, <span class="keywordtype">int</span> Samples&gt;</div>
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno"><a class="line" href="classfrc_1_1_linear_filter.html#ad81074659881872d4202922096e4d710">  187</a></span>  <span class="keyword">static</span> <span class="keyword">auto</span> <a class="code hl_function" href="classfrc_1_1_linear_filter.html#ad81074659881872d4202922096e4d710">BackwardFiniteDifference</a>(units::second_t period) {</div>
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    <span class="comment">// See</span></div>
@@ -215,12 +331,22 @@ $(document).ready(function(){initNavTree('_linear_filter_8h_source.html',''); in
 <div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span> </div>
 <div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classfrc_1_1_linear_filter.html#aea766a0ce1bd742f5884cbd82a839924">LinearFilter</a>(gains, {});</div>
 <div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>  }</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span> </div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span><span class="comment"></span> </div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span><span class="comment">   * Reset the filter state.</span></div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00242" name="l00242"></a><span class="lineno"><a class="line" href="classfrc_1_1_linear_filter.html#ac197e7d5cea0a24d9729cc63bc0f122f">  242</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_linear_filter.html#ac197e7d5cea0a24d9729cc63bc0f122f">Reset</a>() {</div>
 <div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    std::fill(m_inputs.begin(), m_inputs.end(), T{0.0});</div>
 <div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    std::fill(m_outputs.begin(), m_outputs.end(), T{0.0});</div>
 <div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>  }</div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span> </div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span><span class="comment"></span> </div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span><span class="comment">   * Calculates the next value of the filter.</span></div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span><span class="comment">   * @param input Current input value.</span></div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span><span class="comment">   * @return The filtered value at this step</span></div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00254" name="l00254"></a><span class="lineno"><a class="line" href="classfrc_1_1_linear_filter.html#a4ce233ce452caec0f7489ddbb12ca980">  254</a></span>  T <a class="code hl_function" href="classfrc_1_1_linear_filter.html#a4ce233ce452caec0f7489ddbb12ca980">Calculate</a>(T input) {</div>
 <div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>    T retVal{0.0};</div>
 <div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span> </div>
@@ -250,7 +376,12 @@ $(document).ready(function(){initNavTree('_linear_filter_8h_source.html',''); in
 <div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>  <a class="code hl_class" href="classwpi_1_1circular__buffer.html">wpi::circular_buffer&lt;T&gt;</a> m_outputs;</div>
 <div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>  std::vector&lt;double&gt; m_inputGains;</div>
 <div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>  std::vector&lt;double&gt; m_outputGains;</div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span> </div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span><span class="comment"></span> </div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span><span class="comment">   * Factorial of n.</span></div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span><span class="comment">   * @param n Argument of which to take factorial.</span></div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">int</span> Factorial(<span class="keywordtype">int</span> n) {</div>
 <div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>    <span class="keywordflow">if</span> (n &lt; 2) {</div>
 <div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>      <span class="keywordflow">return</span> 1;</div>
@@ -280,7 +411,7 @@ $(document).ready(function(){initNavTree('_linear_filter_8h_source.html',''); in
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_11fa3620b13e96ccc6d4bbc9ccdbdb01.html">filter</a></li><li class="navelem"><b>LinearFilter.h</b></li>
-    <li class="footer">Generated on Tue Oct 19 2021 04:32:22 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Oct 19 2021 04:42:45 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

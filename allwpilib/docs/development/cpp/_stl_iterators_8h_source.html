@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-17-g9e6db17</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-19-ge56d6de</span>
    </div>
   </td>
  </tr>
@@ -495,40 +495,58 @@ $(document).ready(function(){initNavTree('_stl_iterators_8h_source.html',''); in
 <div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span> </div>
 <div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>} <span class="comment">// namespace internal</span></div>
 <div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span> </div>
-<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span> </div>
+<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span><span class="comment"></span> </div>
+<div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span><span class="comment">/** returns an iterator to the first element of the 1D vector or array</span></div>
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span><span class="comment">  * \only_for_vectors</span></div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span><span class="comment">  * \sa end(), cbegin()</span></div>
+<div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Derived&gt;</div>
 <div class="line"><a id="l00408" name="l00408"></a><span class="lineno"><a class="line" href="class_eigen_1_1_dense_base.html#a57591454af931f9dffa71c9da28d5641">  408</a></span><span class="keyword">inline</span> <span class="keyword">typename</span> <a class="code hl_struct" href="struct_eigen_1_1internal_1_1true__type.html">DenseBase&lt;Derived&gt;::iterator</a> <a class="code hl_function" href="class_eigen_1_1_dense_base.html#a57591454af931f9dffa71c9da28d5641">DenseBase&lt;Derived&gt;::begin</a>()</div>
 <div class="line"><a id="l00409" name="l00409"></a><span class="lineno">  409</span>{</div>
 <div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>  EIGEN_STATIC_ASSERT_VECTOR_ONLY(Derived);</div>
 <div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>  <span class="keywordflow">return</span> <a class="code hl_struct" href="struct_eigen_1_1internal_1_1true__type.html">iterator</a>(derived(), 0);</div>
 <div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>}</div>
-<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span> </div>
+<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span><span class="comment"></span> </div>
+<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span><span class="comment">/** const version of begin() */</span></div>
 <div class="line"><a id="l00415" name="l00415"></a><span class="lineno">  415</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Derived&gt;</div>
 <div class="line"><a id="l00416" name="l00416"></a><span class="lineno"><a class="line" href="class_eigen_1_1_dense_base.html#ad9368ce70b06167ec5fc19398d329f5e">  416</a></span><span class="keyword">inline</span> <span class="keyword">typename</span> <a class="code hl_struct" href="struct_eigen_1_1internal_1_1true__type.html">DenseBase&lt;Derived&gt;::const_iterator</a> <a class="code hl_function" href="class_eigen_1_1_dense_base.html#a57591454af931f9dffa71c9da28d5641">DenseBase&lt;Derived&gt;::begin</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>  <span class="keywordflow">return</span> cbegin();</div>
 <div class="line"><a id="l00419" name="l00419"></a><span class="lineno">  419</span>}</div>
-<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span> </div>
+<div class="line"><a id="l00420" name="l00420"></a><span class="lineno">  420</span><span class="comment"></span> </div>
+<div class="line"><a id="l00421" name="l00421"></a><span class="lineno">  421</span><span class="comment">/** returns a read-only const_iterator to the first element of the 1D vector or array</span></div>
+<div class="line"><a id="l00422" name="l00422"></a><span class="lineno">  422</span><span class="comment">  * \only_for_vectors</span></div>
+<div class="line"><a id="l00423" name="l00423"></a><span class="lineno">  423</span><span class="comment">  * \sa cend(), begin()</span></div>
+<div class="line"><a id="l00424" name="l00424"></a><span class="lineno">  424</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Derived&gt;</div>
 <div class="line"><a id="l00426" name="l00426"></a><span class="lineno"><a class="line" href="class_eigen_1_1_dense_base.html#ae9a3dfd9b826ba3103de0128576fb15b">  426</a></span><span class="keyword">inline</span> <span class="keyword">typename</span> <a class="code hl_struct" href="struct_eigen_1_1internal_1_1true__type.html">DenseBase&lt;Derived&gt;::const_iterator</a> <a class="code hl_function" href="class_eigen_1_1_dense_base.html#ae9a3dfd9b826ba3103de0128576fb15b">DenseBase&lt;Derived&gt;::cbegin</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span>  EIGEN_STATIC_ASSERT_VECTOR_ONLY(Derived);</div>
 <div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span>  <span class="keywordflow">return</span> <a class="code hl_struct" href="struct_eigen_1_1internal_1_1true__type.html">const_iterator</a>(derived(), 0);</div>
 <div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span>}</div>
-<div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span> </div>
+<div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span><span class="comment"></span> </div>
+<div class="line"><a id="l00432" name="l00432"></a><span class="lineno">  432</span><span class="comment">/** returns an iterator to the element following the last element of the 1D vector or array</span></div>
+<div class="line"><a id="l00433" name="l00433"></a><span class="lineno">  433</span><span class="comment">  * \only_for_vectors</span></div>
+<div class="line"><a id="l00434" name="l00434"></a><span class="lineno">  434</span><span class="comment">  * \sa begin(), cend()</span></div>
+<div class="line"><a id="l00435" name="l00435"></a><span class="lineno">  435</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00436" name="l00436"></a><span class="lineno">  436</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Derived&gt;</div>
 <div class="line"><a id="l00437" name="l00437"></a><span class="lineno"><a class="line" href="class_eigen_1_1_dense_base.html#ae71d079e16d91360d10066b316b48485">  437</a></span><span class="keyword">inline</span> <span class="keyword">typename</span> <a class="code hl_struct" href="struct_eigen_1_1internal_1_1true__type.html">DenseBase&lt;Derived&gt;::iterator</a> <a class="code hl_function" href="class_eigen_1_1_dense_base.html#ae71d079e16d91360d10066b316b48485">DenseBase&lt;Derived&gt;::end</a>()</div>
 <div class="line"><a id="l00438" name="l00438"></a><span class="lineno">  438</span>{</div>
 <div class="line"><a id="l00439" name="l00439"></a><span class="lineno">  439</span>  EIGEN_STATIC_ASSERT_VECTOR_ONLY(Derived);</div>
 <div class="line"><a id="l00440" name="l00440"></a><span class="lineno">  440</span>  <span class="keywordflow">return</span> <a class="code hl_struct" href="struct_eigen_1_1internal_1_1true__type.html">iterator</a>(derived(), size());</div>
 <div class="line"><a id="l00441" name="l00441"></a><span class="lineno">  441</span>}</div>
-<div class="line"><a id="l00442" name="l00442"></a><span class="lineno">  442</span> </div>
+<div class="line"><a id="l00442" name="l00442"></a><span class="lineno">  442</span><span class="comment"></span> </div>
+<div class="line"><a id="l00443" name="l00443"></a><span class="lineno">  443</span><span class="comment">/** const version of end() */</span></div>
 <div class="line"><a id="l00444" name="l00444"></a><span class="lineno">  444</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Derived&gt;</div>
 <div class="line"><a id="l00445" name="l00445"></a><span class="lineno"><a class="line" href="class_eigen_1_1_dense_base.html#ab34773522e43bfb02e9cf652d7b5dd60">  445</a></span><span class="keyword">inline</span> <span class="keyword">typename</span> <a class="code hl_struct" href="struct_eigen_1_1internal_1_1true__type.html">DenseBase&lt;Derived&gt;::const_iterator</a> <a class="code hl_function" href="class_eigen_1_1_dense_base.html#ae71d079e16d91360d10066b316b48485">DenseBase&lt;Derived&gt;::end</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00446" name="l00446"></a><span class="lineno">  446</span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00447" name="l00447"></a><span class="lineno">  447</span>  <span class="keywordflow">return</span> cend();</div>
 <div class="line"><a id="l00448" name="l00448"></a><span class="lineno">  448</span>}</div>
-<div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span> </div>
+<div class="line"><a id="l00449" name="l00449"></a><span class="lineno">  449</span><span class="comment"></span> </div>
+<div class="line"><a id="l00450" name="l00450"></a><span class="lineno">  450</span><span class="comment">/** returns a read-only const_iterator to the element following the last element of the 1D vector or array</span></div>
+<div class="line"><a id="l00451" name="l00451"></a><span class="lineno">  451</span><span class="comment">  * \only_for_vectors</span></div>
+<div class="line"><a id="l00452" name="l00452"></a><span class="lineno">  452</span><span class="comment">  * \sa begin(), cend()</span></div>
+<div class="line"><a id="l00453" name="l00453"></a><span class="lineno">  453</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00454" name="l00454"></a><span class="lineno">  454</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Derived&gt;</div>
 <div class="line"><a id="l00455" name="l00455"></a><span class="lineno"><a class="line" href="class_eigen_1_1_dense_base.html#aeb3b76f02986c2af2521d07164b5ffde">  455</a></span><span class="keyword">inline</span> <span class="keyword">typename</span> <a class="code hl_struct" href="struct_eigen_1_1internal_1_1true__type.html">DenseBase&lt;Derived&gt;::const_iterator</a> <a class="code hl_function" href="class_eigen_1_1_dense_base.html#aeb3b76f02986c2af2521d07164b5ffde">DenseBase&lt;Derived&gt;::cend</a>()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00456" name="l00456"></a><span class="lineno">  456</span><span class="keyword"></span>{</div>
@@ -566,7 +584,7 @@ $(document).ready(function(){initNavTree('_stl_iterators_8h_source.html',''); in
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_bfb2597c438c4234fbdcce568a9e650d.html">eigeninclude</a></li><li class="navelem"><a class="el" href="dir_81addad79085c513f45446cf62836735.html">Eigen</a></li><li class="navelem"><a class="el" href="dir_e429501dd9edb337aeb96d684aa3b6ff.html">src</a></li><li class="navelem"><a class="el" href="dir_09ad905ad0d1f25ba5be966168b2edef.html">Core</a></li><li class="navelem"><b>StlIterators.h</b></li>
-    <li class="footer">Generated on Tue Oct 19 2021 04:32:19 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Oct 19 2021 04:42:43 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

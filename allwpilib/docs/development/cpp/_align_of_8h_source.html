@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-17-g9e6db17</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-19-ge56d6de</span>
    </div>
   </td>
  </tr>
@@ -114,8 +114,17 @@ $(document).ready(function(){initNavTree('_align_of_8h_source.html',''); initRes
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;cstddef&gt;</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">namespace </span>wpi {</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"></span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">/// \struct AlignedCharArray</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">/// Helper for building an aligned character array type.</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">///</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">/// This template is used to explicitly build up a collection of aligned</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">/// character array types. We have to build these up using a macro and explicit</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">/// specialization to cope with MSVC (at least till 2015) where only an</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">/// integer literal can be used to specify an alignment constraint. Once built</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">/// up here, we can then begin to indirect between these using normal C++</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">/// template parameters.</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment"></span> </div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">// MSVC requires special handling here.</span></div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#ifndef _MSC_VER</span></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
@@ -125,8 +134,9 @@ $(document).ready(function(){initNavTree('_align_of_8h_source.html',''); initRes
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>};</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#else </span><span class="comment">// _MSC_VER</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> Alignment, std::<span class="keywordtype">size_t</span> Size&gt;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment"></span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">/// Create a type with an aligned char buffer.</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment"></span><span class="keyword">template</span>&lt;std::<span class="keywordtype">size_t</span> Alignment, std::<span class="keywordtype">size_t</span> Size&gt;</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword">struct </span><a class="code hl_struct" href="structwpi_1_1_aligned_char_array.html">AlignedCharArray</a>;</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">// We provide special variations of this template for the most common</span></div>
@@ -209,8 +219,15 @@ $(document).ready(function(){initNavTree('_align_of_8h_source.html',''); initRes
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>       arr9[<span class="keyword">sizeof</span>(T9)], arr10[<span class="keyword">sizeof</span>(T10)];</div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>};</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>} <span class="comment">// end namespace detail</span></div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T1,</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="comment"></span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="comment">/// This union template exposes a suitably aligned and sized character</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="comment">/// array member which can hold elements of any of up to ten types.</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="comment">///</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="comment">/// These types may be arrays, structs, or any other types. The goal is to</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="comment">/// expose a char array buffer member which can be used as suitable storage for</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="comment">/// a placement new of any of these types. Support for more than ten types can</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="comment">/// be added at the cost of more boilerplate.</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T1,</div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>          <span class="keyword">typename</span> T2 = char, <span class="keyword">typename</span> T3 = char, <span class="keyword">typename</span> T4 = char,</div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>          <span class="keyword">typename</span> T5 = char, <span class="keyword">typename</span> T6 = char, <span class="keyword">typename</span> T7 = char,</div>
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>          <span class="keyword">typename</span> T8 = char, <span class="keyword">typename</span> T9 = char, <span class="keyword">typename</span> T10 = <span class="keywordtype">char</span>&gt;</div>
@@ -234,7 +251,7 @@ $(document).ready(function(){initNavTree('_align_of_8h_source.html',''); initRes
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><b>AlignOf.h</b></li>
-    <li class="footer">Generated on Tue Oct 19 2021 04:32:22 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Oct 19 2021 04:42:46 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

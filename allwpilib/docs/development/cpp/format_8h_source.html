@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-17-g9e6db17</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-19-ge56d6de</span>
    </div>
   </td>
  </tr>
@@ -693,7 +693,28 @@ $(document).ready(function(){initNavTree('format_8h_source.html',''); initResiza
 <div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span><span class="comment">// The number of characters to store in the basic_memory_buffer object itself</span></div>
 <div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span><span class="comment">// to avoid dynamic memory allocation.</span></div>
 <div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span><span class="keyword">enum</span> { inline_buffer_size = 500 };</div>
-<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span> </div>
+<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span><span class="comment"></span> </div>
+<div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span><span class="comment">  \rst</span></div>
+<div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span><span class="comment">  A dynamically growing memory buffer for trivially copyable/constructible types</span></div>
+<div class="line"><a id="l00604" name="l00604"></a><span class="lineno">  604</span><span class="comment">  with the first ``SIZE`` elements stored in the object itself.</span></div>
+<div class="line"><a id="l00605" name="l00605"></a><span class="lineno">  605</span><span class="comment"></span> </div>
+<div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span><span class="comment">  You can use the ``memory_buffer`` type alias for ``char`` instead.</span></div>
+<div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span><span class="comment"></span> </div>
+<div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span><span class="comment">  **Example**::</span></div>
+<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span><span class="comment"></span> </div>
+<div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span><span class="comment">     fmt::memory_buffer out;</span></div>
+<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span><span class="comment">     format_to(out, &quot;The answer is {}.&quot;, 42);</span></div>
+<div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span><span class="comment"></span> </div>
+<div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span><span class="comment">  This will append the following output to the ``out`` object:</span></div>
+<div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span><span class="comment"></span> </div>
+<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span><span class="comment">  .. code-block:: none</span></div>
+<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span><span class="comment"></span> </div>
+<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span><span class="comment">     The answer is 42.</span></div>
+<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span><span class="comment"></span> </div>
+<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span><span class="comment">  The output can be converted to an ``std::string`` with ``to_string(out)``.</span></div>
+<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span><span class="comment">  \endrst</span></div>
+<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keywordtype">size_t</span> SIZE = inline_buffer_size,</div>
 <div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span>          <span class="keyword">typename</span> Allocator = std::allocator&lt;T&gt;&gt;</div>
 <div class="line"><a id="l00624" name="l00624"></a><span class="lineno"><a class="line" href="classbasic__memory__buffer.html">  624</a></span><span class="keyword">class </span><a class="code hl_class" href="classbasic__memory__buffer.html">basic_memory_buffer</a> final : <span class="keyword">public</span> detail::buffer&lt;T&gt; {</div>
@@ -741,9 +762,20 @@ $(document).ready(function(){initNavTree('format_8h_source.html',''); initResiza
 <div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span>    this-&gt;<a class="code hl_function" href="classbasic__memory__buffer.html#ace559ab6ee7eb3db94c00bdac30149e7">resize</a>(size);</div>
 <div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span>  }</div>
 <div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span> </div>
-<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span> <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span> <span class="keyword">public</span>:<span class="comment"></span></div>
+<div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span><span class="comment">    \rst</span></div>
+<div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span><span class="comment">    Constructs a :class:`fmt::basic_memory_buffer` object moving the content</span></div>
+<div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span><span class="comment">    of the other object to it.</span></div>
+<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span><span class="comment">    \endrst</span></div>
+<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00676" name="l00676"></a><span class="lineno"><a class="line" href="classbasic__memory__buffer.html#ae3e8292ba2764ec68bb113cdc6c45b63">  676</a></span>  <a class="code hl_function" href="classbasic__memory__buffer.html#ae3e8292ba2764ec68bb113cdc6c45b63">basic_memory_buffer</a>(<a class="code hl_class" href="classbasic__memory__buffer.html">basic_memory_buffer</a>&amp;&amp; other) FMT_NOEXCEPT { move(other); }</div>
-<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span> </div>
+<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span><span class="comment"></span> </div>
+<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span><span class="comment">    \rst</span></div>
+<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span><span class="comment">    Moves the content of the other ``basic_memory_buffer`` object to this one.</span></div>
+<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span><span class="comment">    \endrst</span></div>
+<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00683" name="l00683"></a><span class="lineno"><a class="line" href="classbasic__memory__buffer.html#aa43d5ed58c2fb20f45feefc287fc2864">  683</a></span>  <span class="keyword">auto</span> <a class="code hl_function" href="classbasic__memory__buffer.html#aa43d5ed58c2fb20f45feefc287fc2864">operator=</a>(<a class="code hl_class" href="classbasic__memory__buffer.html">basic_memory_buffer</a>&amp;&amp; other) FMT_NOEXCEPT</div>
 <div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span>      -&gt; <a class="code hl_class" href="classbasic__memory__buffer.html">basic_memory_buffer</a>&amp; {</div>
 <div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span>    FMT_ASSERT(<span class="keyword">this</span> != &amp;other, <span class="stringliteral">&quot;&quot;</span>);</div>
@@ -754,9 +786,14 @@ $(document).ready(function(){initNavTree('format_8h_source.html',''); initResiza
 <div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span> </div>
 <div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span>  <span class="comment">// Returns a copy of the allocator associated with this buffer.</span></div>
 <div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span>  <span class="keyword">auto</span> get_allocator() const -&gt; Allocator { <span class="keywordflow">return</span> alloc_; }</div>
-<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span> </div>
+<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span><span class="comment"></span> </div>
+<div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00695" name="l00695"></a><span class="lineno">  695</span><span class="comment">    Resizes the buffer to contain *count* elements. If T is a POD type new</span></div>
+<div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span><span class="comment">    elements may not be initialized.</span></div>
+<div class="line"><a id="l00697" name="l00697"></a><span class="lineno">  697</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00698" name="l00698"></a><span class="lineno"><a class="line" href="classbasic__memory__buffer.html#ace559ab6ee7eb3db94c00bdac30149e7">  698</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classbasic__memory__buffer.html#ace559ab6ee7eb3db94c00bdac30149e7">resize</a>(<span class="keywordtype">size_t</span> count) { this-&gt;try_resize(count); }</div>
-<div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span> </div>
+<div class="line"><a id="l00699" name="l00699"></a><span class="lineno">  699</span><span class="comment"></span> </div>
+<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span><span class="comment">  /** Increases the buffer capacity to *new_capacity*. */</span></div>
 <div class="line"><a id="l00701" name="l00701"></a><span class="lineno"><a class="line" href="classbasic__memory__buffer.html#a27f096451ed4e6738d3a33161fda3e90">  701</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classbasic__memory__buffer.html#a27f096451ed4e6738d3a33161fda3e90">reserve</a>(<span class="keywordtype">size_t</span> new_capacity) { this-&gt;try_reserve(new_capacity); }</div>
 <div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span> </div>
 <div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span>  <span class="comment">// Directly append data into the buffer</span></div>
@@ -801,7 +838,8 @@ $(document).ready(function(){initNavTree('format_8h_source.html',''); initResiza
 <div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span><span class="keyword">namespace </span>detail {</div>
 <div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span>FMT_API <span class="keywordtype">void</span> print(std::FILE*, <a class="code hl_class" href="classbasic__string__view.html">string_view</a>);</div>
 <div class="line"><a id="l00744" name="l00744"></a><span class="lineno">  744</span>}</div>
-<div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span> </div>
+<div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span><span class="comment"></span> </div>
+<div class="line"><a id="l00746" name="l00746"></a><span class="lineno">  746</span><span class="comment">/** A formatting error such as invalid format string. */</span></div>
 <div class="line"><a id="l00747" name="l00747"></a><span class="lineno">  747</span>FMT_CLASS_API</div>
 <div class="line"><a id="l00748" name="l00748"></a><span class="lineno"><a class="line" href="classformat__error.html">  748</a></span><span class="keyword">class </span>FMT_API <a class="code hl_class" href="classformat__error.html">format_error</a> : <span class="keyword">public</span> std::runtime_error {</div>
 <div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span> <span class="keyword">public</span>:</div>
@@ -814,7 +852,15 @@ $(document).ready(function(){initNavTree('format_8h_source.html',''); initResiza
 <div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span>  <a class="code hl_class" href="classformat__error.html">format_error</a>&amp; operator=(<a class="code hl_class" href="classformat__error.html">format_error</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
 <div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span>  <a class="code hl_class" href="classformat__error.html">~format_error</a>() FMT_NOEXCEPT FMT_OVERRIDE FMT_MSC_DEFAULT;</div>
 <div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span>};</div>
-<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span> </div>
+<div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span><span class="comment"></span> </div>
+<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span><span class="comment">  \rst</span></div>
+<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span><span class="comment">  Constructs a `~fmt::format_arg_store` object that contains references</span></div>
+<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span><span class="comment">  to arguments and can be implicitly converted to `~fmt::format_args`.</span></div>
+<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span><span class="comment">  If ``fmt`` is a compile-time string then `make_args_checked` checks</span></div>
+<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span><span class="comment">  its validity at compile time.</span></div>
+<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span><span class="comment">  \endrst</span></div>
+<div class="line"><a id="l00767" name="l00767"></a><span class="lineno">  767</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00768" name="l00768"></a><span class="lineno">  768</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span>... Args, <span class="keyword">typename</span> S, <span class="keyword">typename</span> Char = char_t&lt;S&gt;&gt;</div>
 <div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span>FMT_INLINE <span class="keyword">auto</span> make_args_checked(<span class="keyword">const</span> S&amp; fmt,</div>
 <div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span>                                  <span class="keyword">const</span> remove_reference_t&lt;Args&gt;&amp;... args)</div>
@@ -2191,7 +2237,17 @@ $(document).ready(function(){initNavTree('format_8h_source.html',''); initResiza
 <div class="line"><a id="l02141" name="l02141"></a><span class="lineno"> 2141</span><span class="preprocessor">    };                                                                     \</span></div>
 <div class="line"><a id="l02142" name="l02142"></a><span class="lineno"> 2142</span><span class="preprocessor">    return FMT_COMPILE_STRING();                                           \</span></div>
 <div class="line"><a id="l02143" name="l02143"></a><span class="lineno"> 2143</span><span class="preprocessor">  }()</span></div>
-<div class="line"><a id="l02144" name="l02144"></a><span class="lineno"> 2144</span> </div>
+<div class="line"><a id="l02144" name="l02144"></a><span class="lineno"> 2144</span><span class="comment"></span> </div>
+<div class="line"><a id="l02145" name="l02145"></a><span class="lineno"> 2145</span><span class="comment">/**</span></div>
+<div class="line"><a id="l02146" name="l02146"></a><span class="lineno"> 2146</span><span class="comment">  \rst</span></div>
+<div class="line"><a id="l02147" name="l02147"></a><span class="lineno"> 2147</span><span class="comment">  Constructs a compile-time format string from a string literal *s*.</span></div>
+<div class="line"><a id="l02148" name="l02148"></a><span class="lineno"> 2148</span><span class="comment"></span> </div>
+<div class="line"><a id="l02149" name="l02149"></a><span class="lineno"> 2149</span><span class="comment">  **Example**::</span></div>
+<div class="line"><a id="l02150" name="l02150"></a><span class="lineno"> 2150</span><span class="comment"></span> </div>
+<div class="line"><a id="l02151" name="l02151"></a><span class="lineno"> 2151</span><span class="comment">    // A compile-time error because &#39;d&#39; is an invalid specifier for strings.</span></div>
+<div class="line"><a id="l02152" name="l02152"></a><span class="lineno"> 2152</span><span class="comment">    std::string s = fmt::format(FMT_STRING(&quot;{:d}&quot;), &quot;foo&quot;);</span></div>
+<div class="line"><a id="l02153" name="l02153"></a><span class="lineno"> 2153</span><span class="comment">  \endrst</span></div>
+<div class="line"><a id="l02154" name="l02154"></a><span class="lineno"> 2154</span><span class="comment"> */</span></div>
 <div class="line"><a id="l02155" name="l02155"></a><span class="lineno"> 2155</span><span class="preprocessor">#define FMT_STRING(s) FMT_STRING_IMPL(s, fmt::compile_string, )</span></div>
 <div class="line"><a id="l02156" name="l02156"></a><span class="lineno"> 2156</span> </div>
 <div class="line"><a id="l02157" name="l02157"></a><span class="lineno"> 2157</span><span class="preprocessor">#if FMT_USE_USER_DEFINED_LITERALS</span></div>
@@ -2261,13 +2317,46 @@ $(document).ready(function(){initNavTree('format_8h_source.html',''); initResiza
 <div class="line"><a id="l02221" name="l02221"></a><span class="lineno"> 2221</span> </div>
 <div class="line"><a id="l02222" name="l02222"></a><span class="lineno"> 2222</span>FMT_API <span class="keyword">auto</span> vsystem_error(<span class="keywordtype">int</span> error_code, <a class="code hl_class" href="classbasic__string__view.html">string_view</a> format_str,</div>
 <div class="line"><a id="l02223" name="l02223"></a><span class="lineno"> 2223</span>                           <a class="code hl_class" href="classbasic__format__args.html">format_args</a> args) -&gt; std::system_error;</div>
-<div class="line"><a id="l02224" name="l02224"></a><span class="lineno"> 2224</span> </div>
+<div class="line"><a id="l02224" name="l02224"></a><span class="lineno"> 2224</span><span class="comment"></span> </div>
+<div class="line"><a id="l02225" name="l02225"></a><span class="lineno"> 2225</span><span class="comment">/**</span></div>
+<div class="line"><a id="l02226" name="l02226"></a><span class="lineno"> 2226</span><span class="comment"> \rst</span></div>
+<div class="line"><a id="l02227" name="l02227"></a><span class="lineno"> 2227</span><span class="comment"> Constructs :class:`std::system_error` with a message formatted with</span></div>
+<div class="line"><a id="l02228" name="l02228"></a><span class="lineno"> 2228</span><span class="comment"> ``fmt::format(fmt, args...)``.</span></div>
+<div class="line"><a id="l02229" name="l02229"></a><span class="lineno"> 2229</span><span class="comment">  *error_code* is a system error code as given by ``errno``.</span></div>
+<div class="line"><a id="l02230" name="l02230"></a><span class="lineno"> 2230</span><span class="comment"></span> </div>
+<div class="line"><a id="l02231" name="l02231"></a><span class="lineno"> 2231</span><span class="comment"> **Example**::</span></div>
+<div class="line"><a id="l02232" name="l02232"></a><span class="lineno"> 2232</span><span class="comment"></span> </div>
+<div class="line"><a id="l02233" name="l02233"></a><span class="lineno"> 2233</span><span class="comment">   // This throws std::system_error with the description</span></div>
+<div class="line"><a id="l02234" name="l02234"></a><span class="lineno"> 2234</span><span class="comment">   //   cannot open file &#39;madeup&#39;: No such file or directory</span></div>
+<div class="line"><a id="l02235" name="l02235"></a><span class="lineno"> 2235</span><span class="comment">   // or similar (system message may vary).</span></div>
+<div class="line"><a id="l02236" name="l02236"></a><span class="lineno"> 2236</span><span class="comment">   const char* filename = &quot;madeup&quot;;</span></div>
+<div class="line"><a id="l02237" name="l02237"></a><span class="lineno"> 2237</span><span class="comment">   std::FILE* file = std::fopen(filename, &quot;r&quot;);</span></div>
+<div class="line"><a id="l02238" name="l02238"></a><span class="lineno"> 2238</span><span class="comment">   if (!file)</span></div>
+<div class="line"><a id="l02239" name="l02239"></a><span class="lineno"> 2239</span><span class="comment">     throw fmt::system_error(errno, &quot;cannot open file &#39;{}&#39;&quot;, filename);</span></div>
+<div class="line"><a id="l02240" name="l02240"></a><span class="lineno"> 2240</span><span class="comment"> \endrst</span></div>
+<div class="line"><a id="l02241" name="l02241"></a><span class="lineno"> 2241</span><span class="comment">*/</span></div>
 <div class="line"><a id="l02242" name="l02242"></a><span class="lineno"> 2242</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span>... T&gt;</div>
 <div class="line"><a id="l02243" name="l02243"></a><span class="lineno"> 2243</span><span class="keyword">auto</span> system_error(<span class="keywordtype">int</span> error_code, <a class="code hl_class" href="classbasic__format__string.html">format_string&lt;T...&gt;</a> fmt, T&amp;&amp;... args)</div>
 <div class="line"><a id="l02244" name="l02244"></a><span class="lineno"> 2244</span>    -&gt; std::system_error {</div>
 <div class="line"><a id="l02245" name="l02245"></a><span class="lineno"> 2245</span>  <span class="keywordflow">return</span> vsystem_error(error_code, fmt, fmt::make_format_args(args...));</div>
 <div class="line"><a id="l02246" name="l02246"></a><span class="lineno"> 2246</span>}</div>
-<div class="line"><a id="l02247" name="l02247"></a><span class="lineno"> 2247</span> </div>
+<div class="line"><a id="l02247" name="l02247"></a><span class="lineno"> 2247</span><span class="comment"></span> </div>
+<div class="line"><a id="l02248" name="l02248"></a><span class="lineno"> 2248</span><span class="comment">/**</span></div>
+<div class="line"><a id="l02249" name="l02249"></a><span class="lineno"> 2249</span><span class="comment">  \rst</span></div>
+<div class="line"><a id="l02250" name="l02250"></a><span class="lineno"> 2250</span><span class="comment">  Formats an error message for an error returned by an operating system or a</span></div>
+<div class="line"><a id="l02251" name="l02251"></a><span class="lineno"> 2251</span><span class="comment">  language runtime, for example a file opening error, and writes it to *out*.</span></div>
+<div class="line"><a id="l02252" name="l02252"></a><span class="lineno"> 2252</span><span class="comment">  The format is the same as the one used by ``std::system_error(ec, message)``</span></div>
+<div class="line"><a id="l02253" name="l02253"></a><span class="lineno"> 2253</span><span class="comment">  where ``ec`` is ``std::error_code(error_code, std::generic_category()})``.</span></div>
+<div class="line"><a id="l02254" name="l02254"></a><span class="lineno"> 2254</span><span class="comment">  It is implementation-defined but normally looks like:</span></div>
+<div class="line"><a id="l02255" name="l02255"></a><span class="lineno"> 2255</span><span class="comment"></span> </div>
+<div class="line"><a id="l02256" name="l02256"></a><span class="lineno"> 2256</span><span class="comment">  .. parsed-literal::</span></div>
+<div class="line"><a id="l02257" name="l02257"></a><span class="lineno"> 2257</span><span class="comment">     *&lt;message&gt;*: *&lt;system-message&gt;*</span></div>
+<div class="line"><a id="l02258" name="l02258"></a><span class="lineno"> 2258</span><span class="comment"></span> </div>
+<div class="line"><a id="l02259" name="l02259"></a><span class="lineno"> 2259</span><span class="comment">  where *&lt;message&gt;* is the passed message and *&lt;system-message&gt;* is the system</span></div>
+<div class="line"><a id="l02260" name="l02260"></a><span class="lineno"> 2260</span><span class="comment">  message corresponding to the error code.</span></div>
+<div class="line"><a id="l02261" name="l02261"></a><span class="lineno"> 2261</span><span class="comment">  *error_code* is a system error code as given by ``errno``.</span></div>
+<div class="line"><a id="l02262" name="l02262"></a><span class="lineno"> 2262</span><span class="comment">  \endrst</span></div>
+<div class="line"><a id="l02263" name="l02263"></a><span class="lineno"> 2263</span><span class="comment"> */</span></div>
 <div class="line"><a id="l02264" name="l02264"></a><span class="lineno"> 2264</span>FMT_API <span class="keywordtype">void</span> format_system_error(detail::buffer&lt;char&gt;&amp; out, <span class="keywordtype">int</span> error_code,</div>
 <div class="line"><a id="l02265" name="l02265"></a><span class="lineno"> 2265</span>                                 <span class="keyword">const</span> <span class="keywordtype">char</span>* message) FMT_NOEXCEPT;</div>
 <div class="line"><a id="l02266" name="l02266"></a><span class="lineno"> 2266</span> </div>
@@ -2275,7 +2364,8 @@ $(document).ready(function(){initNavTree('format_8h_source.html',''); initResiza
 <div class="line"><a id="l02268" name="l02268"></a><span class="lineno"> 2268</span><span class="comment">// Can be used to report errors from destructors.</span></div>
 <div class="line"><a id="l02269" name="l02269"></a><span class="lineno"> 2269</span>FMT_API <span class="keywordtype">void</span> report_system_error(<span class="keywordtype">int</span> error_code,</div>
 <div class="line"><a id="l02270" name="l02270"></a><span class="lineno"> 2270</span>                                 <span class="keyword">const</span> <span class="keywordtype">char</span>* message) FMT_NOEXCEPT;</div>
-<div class="line"><a id="l02271" name="l02271"></a><span class="lineno"> 2271</span> </div>
+<div class="line"><a id="l02271" name="l02271"></a><span class="lineno"> 2271</span><span class="comment"></span> </div>
+<div class="line"><a id="l02272" name="l02272"></a><span class="lineno"> 2272</span><span class="comment">/** Fast integer formatter. */</span></div>
 <div class="line"><a id="l02273" name="l02273"></a><span class="lineno"><a class="line" href="classformat__int.html"> 2273</a></span><span class="keyword">class </span><a class="code hl_class" href="classformat__int.html">format_int</a> {</div>
 <div class="line"><a id="l02274" name="l02274"></a><span class="lineno"> 2274</span> <span class="keyword">private</span>:</div>
 <div class="line"><a id="l02275" name="l02275"></a><span class="lineno"> 2275</span>  <span class="comment">// Buffer should be large enough to hold all digits (digits10 + 1),</span></div>
@@ -2306,18 +2396,32 @@ $(document).ready(function(){initNavTree('format_8h_source.html',''); initResiza
 <div class="line"><a id="l02300" name="l02300"></a><span class="lineno"> 2300</span>  <span class="keyword">explicit</span> <a class="code hl_class" href="classformat__int.html">format_int</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code hl_class" href="classvalue.html">value</a>) : str_(format_unsigned(<a class="code hl_class" href="classvalue.html">value</a>)) {}</div>
 <div class="line"><a id="l02301" name="l02301"></a><span class="lineno"> 2301</span>  <span class="keyword">explicit</span> <a class="code hl_class" href="classformat__int.html">format_int</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code hl_class" href="classvalue.html">value</a>)</div>
 <div class="line"><a id="l02302" name="l02302"></a><span class="lineno"> 2302</span>      : str_(format_unsigned(<a class="code hl_class" href="classvalue.html">value</a>)) {}</div>
-<div class="line"><a id="l02303" name="l02303"></a><span class="lineno"> 2303</span> </div>
+<div class="line"><a id="l02303" name="l02303"></a><span class="lineno"> 2303</span><span class="comment"></span> </div>
+<div class="line"><a id="l02304" name="l02304"></a><span class="lineno"> 2304</span><span class="comment">  /** Returns the number of characters written to the output buffer. */</span></div>
 <div class="line"><a id="l02305" name="l02305"></a><span class="lineno"><a class="line" href="classformat__int.html#a2f1870d4b535ead8699717fdcb25e997"> 2305</a></span>  <span class="keyword">auto</span> <a class="code hl_function" href="classformat__int.html#a2f1870d4b535ead8699717fdcb25e997">size</a>() const -&gt; <span class="keywordtype">size_t</span> {</div>
 <div class="line"><a id="l02306" name="l02306"></a><span class="lineno"> 2306</span>    <span class="keywordflow">return</span> detail::to_unsigned(buffer_ - str_ + buffer_size - 1);</div>
 <div class="line"><a id="l02307" name="l02307"></a><span class="lineno"> 2307</span>  }</div>
-<div class="line"><a id="l02308" name="l02308"></a><span class="lineno"> 2308</span> </div>
+<div class="line"><a id="l02308" name="l02308"></a><span class="lineno"> 2308</span><span class="comment"></span> </div>
+<div class="line"><a id="l02309" name="l02309"></a><span class="lineno"> 2309</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l02310" name="l02310"></a><span class="lineno"> 2310</span><span class="comment">    Returns a pointer to the output buffer content. No terminating null</span></div>
+<div class="line"><a id="l02311" name="l02311"></a><span class="lineno"> 2311</span><span class="comment">    character is appended.</span></div>
+<div class="line"><a id="l02312" name="l02312"></a><span class="lineno"> 2312</span><span class="comment">   */</span></div>
 <div class="line"><a id="l02313" name="l02313"></a><span class="lineno"><a class="line" href="classformat__int.html#ac8f7ea8ed9a0d5bdfa5cb0661e8851b8"> 2313</a></span>  <span class="keyword">auto</span> <a class="code hl_function" href="classformat__int.html#ac8f7ea8ed9a0d5bdfa5cb0661e8851b8">data</a>() const -&gt; const <span class="keywordtype">char</span>* { <span class="keywordflow">return</span> str_; }</div>
-<div class="line"><a id="l02314" name="l02314"></a><span class="lineno"> 2314</span> </div>
+<div class="line"><a id="l02314" name="l02314"></a><span class="lineno"> 2314</span><span class="comment"></span> </div>
+<div class="line"><a id="l02315" name="l02315"></a><span class="lineno"> 2315</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l02316" name="l02316"></a><span class="lineno"> 2316</span><span class="comment">    Returns a pointer to the output buffer content with terminating null</span></div>
+<div class="line"><a id="l02317" name="l02317"></a><span class="lineno"> 2317</span><span class="comment">    character appended.</span></div>
+<div class="line"><a id="l02318" name="l02318"></a><span class="lineno"> 2318</span><span class="comment">   */</span></div>
 <div class="line"><a id="l02319" name="l02319"></a><span class="lineno"><a class="line" href="classformat__int.html#aadfe4e08e0007018df9c78863ad13d23"> 2319</a></span>  <span class="keyword">auto</span> <a class="code hl_function" href="classformat__int.html#aadfe4e08e0007018df9c78863ad13d23">c_str</a>() const -&gt; const <span class="keywordtype">char</span>* {</div>
 <div class="line"><a id="l02320" name="l02320"></a><span class="lineno"> 2320</span>    buffer_[buffer_size - 1] = <span class="charliteral">&#39;\0&#39;</span>;</div>
 <div class="line"><a id="l02321" name="l02321"></a><span class="lineno"> 2321</span>    <span class="keywordflow">return</span> str_;</div>
 <div class="line"><a id="l02322" name="l02322"></a><span class="lineno"> 2322</span>  }</div>
-<div class="line"><a id="l02323" name="l02323"></a><span class="lineno"> 2323</span> </div>
+<div class="line"><a id="l02323" name="l02323"></a><span class="lineno"> 2323</span><span class="comment"></span> </div>
+<div class="line"><a id="l02324" name="l02324"></a><span class="lineno"> 2324</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l02325" name="l02325"></a><span class="lineno"> 2325</span><span class="comment">    \rst</span></div>
+<div class="line"><a id="l02326" name="l02326"></a><span class="lineno"> 2326</span><span class="comment">    Returns the content of the output buffer as an ``std::string``.</span></div>
+<div class="line"><a id="l02327" name="l02327"></a><span class="lineno"> 2327</span><span class="comment">    \endrst</span></div>
+<div class="line"><a id="l02328" name="l02328"></a><span class="lineno"> 2328</span><span class="comment">   */</span></div>
 <div class="line"><a id="l02329" name="l02329"></a><span class="lineno"><a class="line" href="classformat__int.html#a0f1b5493b06b98edb747737ba864f86f"> 2329</a></span>  <span class="keyword">auto</span> <a class="code hl_function" href="classformat__int.html#a0f1b5493b06b98edb747737ba864f86f">str</a>() const -&gt; std::<span class="keywordtype">string</span> { <span class="keywordflow">return</span> std::string(str_, <a class="code hl_function" href="classformat__int.html#a2f1870d4b535ead8699717fdcb25e997">size</a>()); }</div>
 <div class="line"><a id="l02330" name="l02330"></a><span class="lineno"> 2330</span>};</div>
 <div class="line"><a id="l02331" name="l02331"></a><span class="lineno"> 2331</span> </div>
@@ -2430,7 +2534,16 @@ $(document).ready(function(){initNavTree('format_8h_source.html',''); initResiza
 <div class="line"><a id="l02438" name="l02438"></a><span class="lineno"> 2438</span>    <span class="keywordflow">return</span> detail::write&lt;Char&gt;(ctx.out(), val, specs_, ctx.locale());</div>
 <div class="line"><a id="l02439" name="l02439"></a><span class="lineno"> 2439</span>  }</div>
 <div class="line"><a id="l02440" name="l02440"></a><span class="lineno"> 2440</span>};</div>
-<div class="line"><a id="l02441" name="l02441"></a><span class="lineno"> 2441</span> </div>
+<div class="line"><a id="l02441" name="l02441"></a><span class="lineno"> 2441</span><span class="comment"></span> </div>
+<div class="line"><a id="l02442" name="l02442"></a><span class="lineno"> 2442</span><span class="comment">/**</span></div>
+<div class="line"><a id="l02443" name="l02443"></a><span class="lineno"> 2443</span><span class="comment">  \rst</span></div>
+<div class="line"><a id="l02444" name="l02444"></a><span class="lineno"> 2444</span><span class="comment">  Converts ``p`` to ``const void*`` for pointer formatting.</span></div>
+<div class="line"><a id="l02445" name="l02445"></a><span class="lineno"> 2445</span><span class="comment"></span> </div>
+<div class="line"><a id="l02446" name="l02446"></a><span class="lineno"> 2446</span><span class="comment">  **Example**::</span></div>
+<div class="line"><a id="l02447" name="l02447"></a><span class="lineno"> 2447</span><span class="comment"></span> </div>
+<div class="line"><a id="l02448" name="l02448"></a><span class="lineno"> 2448</span><span class="comment">    auto s = fmt::format(&quot;{}&quot;, fmt::ptr(p));</span></div>
+<div class="line"><a id="l02449" name="l02449"></a><span class="lineno"> 2449</span><span class="comment">  \endrst</span></div>
+<div class="line"><a id="l02450" name="l02450"></a><span class="lineno"> 2450</span><span class="comment"> */</span></div>
 <div class="line"><a id="l02451" name="l02451"></a><span class="lineno"> 2451</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="keyword">auto</span> ptr(T p) -&gt; <span class="keyword">const</span> <span class="keywordtype">void</span>* {</div>
 <div class="line"><a id="l02452" name="l02452"></a><span class="lineno"> 2452</span>  <span class="keyword">static_assert</span>(std::is_pointer&lt;T&gt;::value, <span class="stringliteral">&quot;&quot;</span>);</div>
 <div class="line"><a id="l02453" name="l02453"></a><span class="lineno"> 2453</span>  <span class="keywordflow">return</span> detail::bit_cast&lt;const void*&gt;(p);</div>
@@ -2536,18 +2649,49 @@ $(document).ready(function(){initNavTree('format_8h_source.html',''); initResiza
 <div class="line"><a id="l02553" name="l02553"></a><span class="lineno"> 2553</span>    <span class="keywordflow">return</span> out;</div>
 <div class="line"><a id="l02554" name="l02554"></a><span class="lineno"> 2554</span>  }</div>
 <div class="line"><a id="l02555" name="l02555"></a><span class="lineno"> 2555</span>};</div>
-<div class="line"><a id="l02556" name="l02556"></a><span class="lineno"> 2556</span> </div>
+<div class="line"><a id="l02556" name="l02556"></a><span class="lineno"> 2556</span><span class="comment"></span> </div>
+<div class="line"><a id="l02557" name="l02557"></a><span class="lineno"> 2557</span><span class="comment">/**</span></div>
+<div class="line"><a id="l02558" name="l02558"></a><span class="lineno"> 2558</span><span class="comment">  Returns an object that formats the iterator range `[begin, end)` with</span></div>
+<div class="line"><a id="l02559" name="l02559"></a><span class="lineno"> 2559</span><span class="comment">  elements separated by `sep`.</span></div>
+<div class="line"><a id="l02560" name="l02560"></a><span class="lineno"> 2560</span><span class="comment"> */</span></div>
 <div class="line"><a id="l02561" name="l02561"></a><span class="lineno"> 2561</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> It, <span class="keyword">typename</span> Sentinel&gt;</div>
 <div class="line"><a id="l02562" name="l02562"></a><span class="lineno"> 2562</span><span class="keyword">auto</span> join(It begin, Sentinel end, <a class="code hl_class" href="classbasic__string__view.html">string_view</a> sep) -&gt; <a class="code hl_struct" href="structjoin__view.html">join_view&lt;It, Sentinel&gt;</a> {</div>
 <div class="line"><a id="l02563" name="l02563"></a><span class="lineno"> 2563</span>  <span class="keywordflow">return</span> {begin, end, sep};</div>
 <div class="line"><a id="l02564" name="l02564"></a><span class="lineno"> 2564</span>}</div>
-<div class="line"><a id="l02565" name="l02565"></a><span class="lineno"> 2565</span> </div>
+<div class="line"><a id="l02565" name="l02565"></a><span class="lineno"> 2565</span><span class="comment"></span> </div>
+<div class="line"><a id="l02566" name="l02566"></a><span class="lineno"> 2566</span><span class="comment">/**</span></div>
+<div class="line"><a id="l02567" name="l02567"></a><span class="lineno"> 2567</span><span class="comment">  \rst</span></div>
+<div class="line"><a id="l02568" name="l02568"></a><span class="lineno"> 2568</span><span class="comment">  Returns an object that formats `range` with elements separated by `sep`.</span></div>
+<div class="line"><a id="l02569" name="l02569"></a><span class="lineno"> 2569</span><span class="comment"></span> </div>
+<div class="line"><a id="l02570" name="l02570"></a><span class="lineno"> 2570</span><span class="comment">  **Example**::</span></div>
+<div class="line"><a id="l02571" name="l02571"></a><span class="lineno"> 2571</span><span class="comment"></span> </div>
+<div class="line"><a id="l02572" name="l02572"></a><span class="lineno"> 2572</span><span class="comment">    std::vector&lt;int&gt; v = {1, 2, 3};</span></div>
+<div class="line"><a id="l02573" name="l02573"></a><span class="lineno"> 2573</span><span class="comment">    fmt::print(&quot;{}&quot;, fmt::join(v, &quot;, &quot;));</span></div>
+<div class="line"><a id="l02574" name="l02574"></a><span class="lineno"> 2574</span><span class="comment">    // Output: &quot;1, 2, 3&quot;</span></div>
+<div class="line"><a id="l02575" name="l02575"></a><span class="lineno"> 2575</span><span class="comment"></span> </div>
+<div class="line"><a id="l02576" name="l02576"></a><span class="lineno"> 2576</span><span class="comment">  ``fmt::join`` applies passed format specifiers to the range elements::</span></div>
+<div class="line"><a id="l02577" name="l02577"></a><span class="lineno"> 2577</span><span class="comment"></span> </div>
+<div class="line"><a id="l02578" name="l02578"></a><span class="lineno"> 2578</span><span class="comment">    fmt::print(&quot;{:02}&quot;, fmt::join(v, &quot;, &quot;));</span></div>
+<div class="line"><a id="l02579" name="l02579"></a><span class="lineno"> 2579</span><span class="comment">    // Output: &quot;01, 02, 03&quot;</span></div>
+<div class="line"><a id="l02580" name="l02580"></a><span class="lineno"> 2580</span><span class="comment">  \endrst</span></div>
+<div class="line"><a id="l02581" name="l02581"></a><span class="lineno"> 2581</span><span class="comment"> */</span></div>
 <div class="line"><a id="l02582" name="l02582"></a><span class="lineno"> 2582</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Range&gt;</div>
 <div class="line"><a id="l02583" name="l02583"></a><span class="lineno"> 2583</span><span class="keyword">auto</span> join(Range&amp;&amp; range, <a class="code hl_class" href="classbasic__string__view.html">string_view</a> sep)</div>
 <div class="line"><a id="l02584" name="l02584"></a><span class="lineno"> 2584</span>    -&gt; <a class="code hl_struct" href="structjoin__view.html">join_view&lt;detail::iterator_t&lt;Range&gt;</a>, detail::sentinel_t&lt;Range&gt;&gt; {</div>
 <div class="line"><a id="l02585" name="l02585"></a><span class="lineno"> 2585</span>  <span class="keywordflow">return</span> join(std::begin(range), std::end(range), sep);</div>
 <div class="line"><a id="l02586" name="l02586"></a><span class="lineno"> 2586</span>}</div>
-<div class="line"><a id="l02587" name="l02587"></a><span class="lineno"> 2587</span> </div>
+<div class="line"><a id="l02587" name="l02587"></a><span class="lineno"> 2587</span><span class="comment"></span> </div>
+<div class="line"><a id="l02588" name="l02588"></a><span class="lineno"> 2588</span><span class="comment">/**</span></div>
+<div class="line"><a id="l02589" name="l02589"></a><span class="lineno"> 2589</span><span class="comment">  \rst</span></div>
+<div class="line"><a id="l02590" name="l02590"></a><span class="lineno"> 2590</span><span class="comment">  Converts *value* to ``std::string`` using the default format for type *T*.</span></div>
+<div class="line"><a id="l02591" name="l02591"></a><span class="lineno"> 2591</span><span class="comment"></span> </div>
+<div class="line"><a id="l02592" name="l02592"></a><span class="lineno"> 2592</span><span class="comment">  **Example**::</span></div>
+<div class="line"><a id="l02593" name="l02593"></a><span class="lineno"> 2593</span><span class="comment"></span> </div>
+<div class="line"><a id="l02594" name="l02594"></a><span class="lineno"> 2594</span><span class="comment">    #include &lt;fmt/format.h&gt;</span></div>
+<div class="line"><a id="l02595" name="l02595"></a><span class="lineno"> 2595</span><span class="comment"></span> </div>
+<div class="line"><a id="l02596" name="l02596"></a><span class="lineno"> 2596</span><span class="comment">    std::string answer = fmt::to_string(42);</span></div>
+<div class="line"><a id="l02597" name="l02597"></a><span class="lineno"> 2597</span><span class="comment">  \endrst</span></div>
+<div class="line"><a id="l02598" name="l02598"></a><span class="lineno"> 2598</span><span class="comment"> */</span></div>
 <div class="line"><a id="l02599" name="l02599"></a><span class="lineno"> 2599</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, FMT_ENABLE_IF(!std::is_<span class="keywordtype">int</span>egral&lt;T&gt;::value)&gt;</div>
 <div class="line"><a id="l02600" name="l02600"></a><span class="lineno"> 2600</span><span class="keyword">inline</span> <span class="keyword">auto</span> to_string(<span class="keyword">const</span> T&amp; <a class="code hl_class" href="classvalue.html">value</a>) -&gt; std::string {</div>
 <div class="line"><a id="l02601" name="l02601"></a><span class="lineno"> 2601</span>  <span class="keyword">auto</span> result = std::string();</div>
@@ -2684,7 +2828,17 @@ $(document).ready(function(){initNavTree('format_8h_source.html',''); initResiza
 <div class="line"><a id="l02732" name="l02732"></a><span class="lineno"> 2732</span>FMT_END_DETAIL_NAMESPACE</div>
 <div class="line"><a id="l02733" name="l02733"></a><span class="lineno"> 2733</span> </div>
 <div class="line"><a id="l02734" name="l02734"></a><span class="lineno"> 2734</span><span class="preprocessor">#if FMT_USE_USER_DEFINED_LITERALS</span></div>
-<div class="line"><a id="l02735" name="l02735"></a><span class="lineno"> 2735</span><span class="keyword">inline</span> <span class="keyword">namespace </span>literals {</div>
+<div class="line"><a id="l02735" name="l02735"></a><span class="lineno"> 2735</span><span class="keyword">inline</span> <span class="keyword">namespace </span>literals {<span class="comment"></span></div>
+<div class="line"><a id="l02736" name="l02736"></a><span class="lineno"> 2736</span><span class="comment">/**</span></div>
+<div class="line"><a id="l02737" name="l02737"></a><span class="lineno"> 2737</span><span class="comment">  \rst</span></div>
+<div class="line"><a id="l02738" name="l02738"></a><span class="lineno"> 2738</span><span class="comment">  User-defined literal equivalent of :func:`fmt::arg`.</span></div>
+<div class="line"><a id="l02739" name="l02739"></a><span class="lineno"> 2739</span><span class="comment"></span> </div>
+<div class="line"><a id="l02740" name="l02740"></a><span class="lineno"> 2740</span><span class="comment">  **Example**::</span></div>
+<div class="line"><a id="l02741" name="l02741"></a><span class="lineno"> 2741</span><span class="comment"></span> </div>
+<div class="line"><a id="l02742" name="l02742"></a><span class="lineno"> 2742</span><span class="comment">    using namespace fmt::literals;</span></div>
+<div class="line"><a id="l02743" name="l02743"></a><span class="lineno"> 2743</span><span class="comment">    fmt::print(&quot;Elapsed time: {s:.2f} seconds&quot;, &quot;s&quot;_a=1.23);</span></div>
+<div class="line"><a id="l02744" name="l02744"></a><span class="lineno"> 2744</span><span class="comment">  \endrst</span></div>
+<div class="line"><a id="l02745" name="l02745"></a><span class="lineno"> 2745</span><span class="comment"> */</span></div>
 <div class="line"><a id="l02746" name="l02746"></a><span class="lineno"> 2746</span><span class="preprocessor">#  if FMT_USE_NONTYPE_TEMPLATE_PARAMETERS</span></div>
 <div class="line"><a id="l02747" name="l02747"></a><span class="lineno"> 2747</span><span class="keyword">template</span> &lt;detail_exported::fixed_<span class="keywordtype">string</span> Str&gt;</div>
 <div class="line"><a id="l02748" name="l02748"></a><span class="lineno"> 2748</span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <span class="keyword">operator</span><span class="stringliteral">&quot;&quot;</span>_a()</div>
@@ -2697,7 +2851,17 @@ $(document).ready(function(){initNavTree('format_8h_source.html',''); initResiza
 <div class="line"><a id="l02755" name="l02755"></a><span class="lineno"> 2755</span>  <span class="keywordflow">return</span> {s};</div>
 <div class="line"><a id="l02756" name="l02756"></a><span class="lineno"> 2756</span>}</div>
 <div class="line"><a id="l02757" name="l02757"></a><span class="lineno"> 2757</span><span class="preprocessor">#  endif</span></div>
-<div class="line"><a id="l02758" name="l02758"></a><span class="lineno"> 2758</span> </div>
+<div class="line"><a id="l02758" name="l02758"></a><span class="lineno"> 2758</span><span class="comment"></span> </div>
+<div class="line"><a id="l02759" name="l02759"></a><span class="lineno"> 2759</span><span class="comment">/**</span></div>
+<div class="line"><a id="l02760" name="l02760"></a><span class="lineno"> 2760</span><span class="comment">  \rst</span></div>
+<div class="line"><a id="l02761" name="l02761"></a><span class="lineno"> 2761</span><span class="comment">  User-defined literal equivalent of :func:`fmt::format`.</span></div>
+<div class="line"><a id="l02762" name="l02762"></a><span class="lineno"> 2762</span><span class="comment"></span> </div>
+<div class="line"><a id="l02763" name="l02763"></a><span class="lineno"> 2763</span><span class="comment">  **Example**::</span></div>
+<div class="line"><a id="l02764" name="l02764"></a><span class="lineno"> 2764</span><span class="comment"></span> </div>
+<div class="line"><a id="l02765" name="l02765"></a><span class="lineno"> 2765</span><span class="comment">    using namespace fmt::literals;</span></div>
+<div class="line"><a id="l02766" name="l02766"></a><span class="lineno"> 2766</span><span class="comment">    std::string message = &quot;The answer is {}&quot;_format(42);</span></div>
+<div class="line"><a id="l02767" name="l02767"></a><span class="lineno"> 2767</span><span class="comment">  \endrst</span></div>
+<div class="line"><a id="l02768" name="l02768"></a><span class="lineno"> 2768</span><span class="comment"> */</span></div>
 <div class="line"><a id="l02769" name="l02769"></a><span class="lineno"> 2769</span><span class="keyword">constexpr</span> <span class="keyword">auto</span> <span class="keyword">operator</span><span class="stringliteral">&quot;&quot;</span> _format(<span class="keyword">const</span> <span class="keywordtype">char</span>* s, <span class="keywordtype">size_t</span> n)</div>
 <div class="line"><a id="l02770" name="l02770"></a><span class="lineno"> 2770</span>    -&gt; detail::udl_formatter&lt;char&gt; {</div>
 <div class="line"><a id="l02771" name="l02771"></a><span class="lineno"> 2771</span>  <span class="keywordflow">return</span> {{s, n}};</div>
@@ -2840,7 +3004,7 @@ $(document).ready(function(){initNavTree('format_8h_source.html',''); initResiza
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_07f1050b175e2d01c230e5cadf135f7c.html">fmtlib</a></li><li class="navelem"><a class="el" href="dir_f186fa79a3895d81ef02af9fef546a30.html">include</a></li><li class="navelem"><a class="el" href="dir_37137cfaace3bfc79a7a3aee825a2892.html">fmt</a></li><li class="navelem"><b>format.h</b></li>
-    <li class="footer">Generated on Tue Oct 19 2021 04:32:22 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Oct 19 2021 04:42:45 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

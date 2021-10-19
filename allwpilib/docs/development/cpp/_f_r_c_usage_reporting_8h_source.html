@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-17-g9e6db17</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-19-ge56d6de</span>
    </div>
   </td>
  </tr>
@@ -103,11 +103,29 @@ $(document).ready(function(){initNavTree('_f_r_c_usage_reporting_8h_source.html'
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">// ifdef&#39;s definition is to allow for default parameters in C++.</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifdef __cplusplus</span><span class="comment"></span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> * Reports a hardware usage to the HAL.</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> * @param resource       the used resource</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> * @param instanceNumber the instance of the resource</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> * @param context        a user specified context index</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> * @param feature        a user specified feature string</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> * @return               the index of the added value in NetComm</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>int64_t HAL_Report(int32_t resource, int32_t instanceNumber,</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>                   int32_t context = 0, <span class="keyword">const</span> <span class="keywordtype">char</span>* feature = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"></span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment"> * Reports a hardware usage to the HAL.</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"> * @param resource       the used resource</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment"> * @param instanceNumber the instance of the resource</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment"> * @param context        a user specified context index</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment"> * @param feature        a user specified feature string</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment"> * @return               the index of the added value in NetComm</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>int64_t HAL_Report(int32_t resource, int32_t instanceNumber, int32_t context,</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>                   <span class="keyword">const</span> <span class="keywordtype">char</span>* feature);</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#endif</span></div>
@@ -281,7 +299,7 @@ $(document).ready(function(){initNavTree('_f_r_c_usage_reporting_8h_source.html'
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_c6e2d0887a78731b55ec560dc12beac1.html">build</a></li><li class="navelem"><a class="el" href="dir_76f1c1a65f60cf3eef88a30397b5bbe2.html">generated</a></li><li class="navelem"><a class="el" href="dir_b1e1a68146d7de36fa8cdde1a3e15f18.html">headers</a></li><li class="navelem"><a class="el" href="dir_7b6cbfacdbfafe5c313ab8032ed72cf6.html">hal</a></li><li class="navelem"><b>FRCUsageReporting.h</b></li>
-    <li class="footer">Generated on Tue Oct 19 2021 04:32:14 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Oct 19 2021 04:42:39 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

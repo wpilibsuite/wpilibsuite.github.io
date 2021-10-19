@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-17-g9e6db17</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-19-ge56d6de</span>
    </div>
   </td>
  </tr>
@@ -106,20 +106,48 @@ $(document).ready(function(){initNavTree('_twist2d_8h_source.html',''); initResi
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;units/length.h&quot;</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;units/math.h&quot;</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">namespace </span>frc {</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="structfrc_1_1_twist2d.html">   21</a></span><span class="keyword">struct </span>WPILIB_DLLEXPORT <a class="code hl_struct" href="structfrc_1_1_twist2d.html">Twist2d</a> {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">namespace </span>frc {<span class="comment"></span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> * A change in distance along arc since the last pose update. We can use ideas</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> * from differential calculus to create new Pose2ds from a Twist2d and vise</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> * versa.</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> * A Twist can be used to represent a difference between two poses.</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="structfrc_1_1_twist2d.html">   21</a></span><span class="keyword">struct </span>WPILIB_DLLEXPORT <a class="code hl_struct" href="structfrc_1_1_twist2d.html">Twist2d</a> {<span class="comment"></span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">   * Linear &quot;dx&quot; component</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="structfrc_1_1_twist2d.html#a4acc8a01db2e750d002d3f5983a2004c">   25</a></span>  units::meter_t dx = 0_m;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment"></span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">   * Linear &quot;dy&quot; component</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="structfrc_1_1_twist2d.html#a06ddc654fc87ce93744e4b85325667b0">   30</a></span>  units::meter_t dy = 0_m;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment"></span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">   * Angular &quot;dtheta&quot; component (radians)</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="structfrc_1_1_twist2d.html#a935ef5e155342a9392c41470839d4a93">   35</a></span>  units::radian_t dtheta = 0_rad;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment"></span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">   * Checks equality between this Twist2d and another object.</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">   * @param other The other object.</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">   * @return Whether the two objects are equal.</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="structfrc_1_1_twist2d.html#aa11987fb55e2191bce89ce8781d3896a">   43</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="structfrc_1_1_twist2d.html#aa11987fb55e2191bce89ce8781d3896a">operator==</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structfrc_1_1_twist2d.html">Twist2d</a>&amp; other)<span class="keyword"> const </span>{</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="group___unit_math.html#ga1dd8baba0276c51feeb892983d41ef47">units::math::abs</a>(dx - other.<a class="code hl_variable" href="structfrc_1_1_twist2d.html#a4acc8a01db2e750d002d3f5983a2004c">dx</a>) &lt; 1E-9_m &amp;&amp;</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>           <a class="code hl_function" href="group___unit_math.html#ga1dd8baba0276c51feeb892983d41ef47">units::math::abs</a>(dy - other.<a class="code hl_variable" href="structfrc_1_1_twist2d.html#a06ddc654fc87ce93744e4b85325667b0">dy</a>) &lt; 1E-9_m &amp;&amp;</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>           <a class="code hl_function" href="group___unit_math.html#ga1dd8baba0276c51feeb892983d41ef47">units::math::abs</a>(dtheta - other.<a class="code hl_variable" href="structfrc_1_1_twist2d.html#a935ef5e155342a9392c41470839d4a93">dtheta</a>) &lt; 1E-9_rad;</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  }</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment"></span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">   * Checks inequality between this Twist2d and another object.</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">   * @param other The other object.</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">   * @return Whether the two objects are not equal.</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="structfrc_1_1_twist2d.html#a8017e149cd1036161c34aefe733e0076">   55</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="structfrc_1_1_twist2d.html#a8017e149cd1036161c34aefe733e0076">operator!=</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structfrc_1_1_twist2d.html">Twist2d</a>&amp; other)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> !operator==(other); }</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>};</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>}  <span class="comment">// namespace frc</span></div>
@@ -136,7 +164,7 @@ $(document).ready(function(){initNavTree('_twist2d_8h_source.html',''); initResi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_9cba4c2fd20eab804c2f7cd73063f328.html">geometry</a></li><li class="navelem"><b>Twist2d.h</b></li>
-    <li class="footer">Generated on Tue Oct 19 2021 04:32:22 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Oct 19 2021 04:42:45 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

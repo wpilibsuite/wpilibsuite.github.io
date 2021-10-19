@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-17-g9e6db17</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-19-ge56d6de</span>
    </div>
   </td>
  </tr>
@@ -137,8 +137,9 @@ $(document).ready(function(){initNavTree('_small_vector_8h_source.html',''); ini
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#include &lt;utility&gt;</span></div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">namespace </span>wpi {</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classwpi_1_1_small_vector_base.html">   46</a></span><span class="keyword">class </span><a class="code hl_class" href="classwpi_1_1_small_vector_base.html">SmallVectorBase</a> {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment"></span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">/// This is all the non-templated stuff common to all SmallVectors.</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classwpi_1_1_small_vector_base.html">   46</a></span><span class="comment"></span><span class="keyword">class </span><a class="code hl_class" href="classwpi_1_1_small_vector_base.html">SmallVectorBase</a> {</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">protected</span>:</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <span class="keywordtype">void</span> *BeginX;</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <span class="keywordtype">unsigned</span> Size = 0, Capacity;</div>
@@ -146,8 +147,10 @@ $(document).ready(function(){initNavTree('_small_vector_8h_source.html',''); ini
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <a class="code hl_class" href="classwpi_1_1_small_vector_base.html">SmallVectorBase</a>() = <span class="keyword">delete</span>;</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <a class="code hl_class" href="classwpi_1_1_small_vector_base.html">SmallVectorBase</a>(<span class="keywordtype">void</span> *FirstEl, <span class="keywordtype">size_t</span> Capacity)</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>      : BeginX(FirstEl), Capacity(<span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span><span class="keyword">&gt;</span>(Capacity)) {}</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classwpi_1_1_small_vector_base.html#a122197c35d81153116836ebc575eb75e">   57</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1_small_vector_base.html#a122197c35d81153116836ebc575eb75e">grow_pod</a>(<span class="keywordtype">void</span> *FirstEl, <span class="keywordtype">size_t</span> MinCapacity, <span class="keywordtype">size_t</span> TSize);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment"></span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">  /// This is an implementation of the grow() method which only works</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">  /// on POD-like data types and is out of line to reduce code duplication.</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classwpi_1_1_small_vector_base.html#a122197c35d81153116836ebc575eb75e">   57</a></span><span class="comment"></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1_small_vector_base.html#a122197c35d81153116836ebc575eb75e">grow_pod</a>(<span class="keywordtype">void</span> *FirstEl, <span class="keywordtype">size_t</span> MinCapacity, <span class="keywordtype">size_t</span> TSize);</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  LLVM_ATTRIBUTE_ALWAYS_INLINE</div>
@@ -156,21 +159,37 @@ $(document).ready(function(){initNavTree('_small_vector_8h_source.html',''); ini
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <span class="keywordtype">size_t</span> capacity()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> Capacity; }</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  LLVM_NODISCARD <span class="keywordtype">bool</span> empty()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> !Size; }</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="classwpi_1_1_small_vector_base.html#adc0a148799a86f4c1569e5d364d2f30e">   76</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1_small_vector_base.html#adc0a148799a86f4c1569e5d364d2f30e">set_size</a>(<span class="keywordtype">size_t</span> Size) {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment"></span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">  /// Set the array size to \p N, which the current array must have enough</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">  /// capacity for.</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">  ///</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">  /// This does not construct or destroy any elements in the vector.</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">  ///</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">  /// Clients can use this in conjunction with capacity() to write past the end</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">  /// of the buffer when they know that more elements are available, and only</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">  /// update the size later. This avoids the cost of value initializing elements</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment">  /// which will only be overwritten.</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="classwpi_1_1_small_vector_base.html#adc0a148799a86f4c1569e5d364d2f30e">   76</a></span><span class="comment"></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1_small_vector_base.html#adc0a148799a86f4c1569e5d364d2f30e">set_size</a>(<span class="keywordtype">size_t</span> Size) {</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    assert(Size &lt;= capacity());</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    this-&gt;Size = <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span><span class="keyword">&gt;</span>(Size);</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  }</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>};</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="structwpi_1_1_small_vector_alignment_and_size.html">   83</a></span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T, <span class="keyword">typename</span> = <span class="keywordtype">void</span>&gt; <span class="keyword">struct </span><a class="code hl_struct" href="structwpi_1_1_small_vector_alignment_and_size.html">SmallVectorAlignmentAndSize</a> {</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment"></span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment">/// Figure out the offset of the first element.</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="structwpi_1_1_small_vector_alignment_and_size.html">   83</a></span><span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T, <span class="keyword">typename</span> = <span class="keywordtype">void</span>&gt; <span class="keyword">struct </span><a class="code hl_struct" href="structwpi_1_1_small_vector_alignment_and_size.html">SmallVectorAlignmentAndSize</a> {</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  <a class="code hl_struct" href="structwpi_1_1_aligned_char_array_union.html">AlignedCharArrayUnion&lt;SmallVectorBase&gt;</a> Base;</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  <a class="code hl_struct" href="structwpi_1_1_aligned_char_array_union.html">AlignedCharArrayUnion&lt;T&gt;</a> FirstEl;</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>};</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> = <span class="keywordtype">void</span>&gt;</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="classwpi_1_1_small_vector_template_common.html">   92</a></span><span class="keyword">class </span><a class="code hl_class" href="classwpi_1_1_small_vector_template_common.html">SmallVectorTemplateCommon</a> : <span class="keyword">public</span> <a class="code hl_class" href="classwpi_1_1_small_vector_base.html">SmallVectorBase</a> {</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  <span class="keywordtype">void</span> *getFirstEl()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment"></span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment">/// This is the part of SmallVectorTemplateBase which does not depend on whether</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment">/// the type T is a POD. The extra dummy template argument is used by ArrayRef</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment">/// to avoid unnecessarily requiring T to be complete.</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> = <span class="keywordtype">void</span>&gt;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="classwpi_1_1_small_vector_template_common.html">   92</a></span><span class="keyword">class </span><a class="code hl_class" href="classwpi_1_1_small_vector_template_common.html">SmallVectorTemplateCommon</a> : <span class="keyword">public</span> <a class="code hl_class" href="classwpi_1_1_small_vector_base.html">SmallVectorBase</a> {<span class="comment"></span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="comment">  /// Find the address of the first element.  For this pointer math to be valid</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment">  /// with small-size of 0 for T with lots of alignment, it&#39;s important that</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment">  /// SmallVectorStorage is properly-aligned even for small-size of 0.</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment"></span>  <span class="keywordtype">void</span> *getFirstEl()<span class="keyword"> const </span>{</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keywordflow">return</span> <span class="keyword">const_cast&lt;</span><span class="keywordtype">void</span> *<span class="keyword">&gt;</span>(<span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span><span class="keywordtype">void</span> *<span class="keyword">&gt;</span>(</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        <span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span><span class="keywordtype">char</span> *<span class="keyword">&gt;</span>(<span class="keyword">this</span>) +</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        offsetof(<a class="code hl_struct" href="structwpi_1_1_small_vector_alignment_and_size.html">SmallVectorAlignmentAndSize&lt;T&gt;</a>, FirstEl)));</div>
@@ -184,10 +203,13 @@ $(document).ready(function(){initNavTree('_small_vector_8h_source.html',''); ini
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  <span class="keywordtype">void</span> grow_pod(<span class="keywordtype">size_t</span> MinCapacity, <span class="keywordtype">size_t</span> TSize) {</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <a class="code hl_function" href="classwpi_1_1_small_vector_base.html#a122197c35d81153116836ebc575eb75e">SmallVectorBase::grow_pod</a>(getFirstEl(), MinCapacity, TSize);</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  }</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="classwpi_1_1_small_vector_template_common.html#a7f840f36785d9897e4188b3b22b245f1">  113</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classwpi_1_1_small_vector_template_common.html#a7f840f36785d9897e4188b3b22b245f1">isSmall</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> BeginX == getFirstEl(); }</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="classwpi_1_1_small_vector_template_common.html#a2871c9040cf926eef1a5e7f952dbc408">  116</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1_small_vector_template_common.html#a2871c9040cf926eef1a5e7f952dbc408">resetToSmall</a>() {</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment"></span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="comment">  /// Return true if this is a smallvector which has not had dynamic</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="comment">  /// memory allocated for it.</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="classwpi_1_1_small_vector_template_common.html#a7f840f36785d9897e4188b3b22b245f1">  113</a></span><span class="comment"></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classwpi_1_1_small_vector_template_common.html#a7f840f36785d9897e4188b3b22b245f1">isSmall</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> BeginX == getFirstEl(); }</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="comment"></span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="comment">  /// Put this vector in a state of being small.</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="classwpi_1_1_small_vector_template_common.html#a2871c9040cf926eef1a5e7f952dbc408">  116</a></span><span class="comment"></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1_small_vector_template_common.html#a2871c9040cf926eef1a5e7f952dbc408">resetToSmall</a>() {</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    BeginX = getFirstEl();</div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    Size = Capacity = 0; <span class="comment">// FIXME: Setting Capacity to 0 is suspect.</span></div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>  }</div>
@@ -227,9 +249,11 @@ $(document).ready(function(){initNavTree('_small_vector_8h_source.html',''); ini
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>  size_type max_size()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> size_type(-1) / <span class="keyword">sizeof</span>(T); }</div>
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>  <span class="keywordtype">size_t</span> capacity_in_bytes()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> capacity() * <span class="keyword">sizeof</span>(T); }</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno"><a class="line" href="classwpi_1_1_small_vector_template_common.html#a407d9019bf8ff07d493b57e89924ebb0">  158</a></span>  pointer <a class="code hl_function" href="classwpi_1_1_small_vector_template_common.html#a407d9019bf8ff07d493b57e89924ebb0">data</a>() { <span class="keywordflow">return</span> pointer(begin()); }</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="classwpi_1_1_small_vector_template_common.html#a40139f0869af5595338d800d5a428396">  160</a></span>  const_pointer <a class="code hl_function" href="classwpi_1_1_small_vector_template_common.html#a40139f0869af5595338d800d5a428396">data</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> const_pointer(begin()); }</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="comment"></span> </div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="comment">  /// Return a pointer to the vector&#39;s buffer, even if empty().</span></div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno"><a class="line" href="classwpi_1_1_small_vector_template_common.html#a407d9019bf8ff07d493b57e89924ebb0">  158</a></span><span class="comment"></span>  pointer <a class="code hl_function" href="classwpi_1_1_small_vector_template_common.html#a407d9019bf8ff07d493b57e89924ebb0">data</a>() { <span class="keywordflow">return</span> pointer(begin()); }<span class="comment"></span></div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span><span class="comment">  /// Return a pointer to the vector&#39;s buffer, even if empty().</span></div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="classwpi_1_1_small_vector_template_common.html#a40139f0869af5595338d800d5a428396">  160</a></span><span class="comment"></span>  const_pointer <a class="code hl_function" href="classwpi_1_1_small_vector_template_common.html#a40139f0869af5595338d800d5a428396">data</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> const_pointer(begin()); }</div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>  LLVM_ATTRIBUTE_ALWAYS_INLINE</div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>  reference operator[](size_type idx) {</div>
@@ -260,8 +284,10 @@ $(document).ready(function(){initNavTree('_small_vector_8h_source.html',''); ini
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    <span class="keywordflow">return</span> end()[-1];</div>
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>  }</div>
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>};</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span> </div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>template &lt;typename T, bool = isPodLike&lt;T&gt;::value&gt;</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span><span class="comment"></span> </div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span><span class="comment">/// SmallVectorTemplateBase&lt;isPodLike = false&gt; - This is where we put method</span></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="comment">/// implementations that are designed to work with non-POD-like T&#39;s.</span></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span><span class="comment"></span>template &lt;typename T, bool = isPodLike&lt;T&gt;::value&gt;</div>
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno"><a class="line" href="classwpi_1_1_small_vector_template_base.html">  195</a></span><span class="keyword">class </span><a class="code hl_class" href="classwpi_1_1_small_vector_template_base.html">SmallVectorTemplateBase</a> : <span class="keyword">public</span> <a class="code hl_class" href="classwpi_1_1_small_vector_template_common.html">SmallVectorTemplateCommon</a>&lt;T&gt; {</div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><span class="keyword">protected</span>:</div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>  <a class="code hl_class" href="classwpi_1_1_small_vector_template_base.html">SmallVectorTemplateBase</a>(<span class="keywordtype">size_t</span> Size) : <a class="code hl_class" href="classwpi_1_1_small_vector_template_common.html">SmallVectorTemplateCommon&lt;T&gt;</a>(Size) {}</div>
@@ -272,19 +298,26 @@ $(document).ready(function(){initNavTree('_small_vector_8h_source.html',''); ini
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>      E-&gt;~T();</div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    }</div>
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>  }</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> </div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> It1, <span class="keyword">typename</span> It2&gt;</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="comment"></span> </div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="comment">  /// Move the range [I, E) into the uninitialized memory starting with &quot;Dest&quot;,</span></div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span><span class="comment">  /// constructing elements as needed.</span></div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="comment"></span>  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> It1, <span class="keyword">typename</span> It2&gt;</div>
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno"><a class="line" href="classwpi_1_1_small_vector_template_base.html#a09d88ee0240540df3fb19ce2232c55d5">  209</a></span>  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1_small_vector_template_base.html#a09d88ee0240540df3fb19ce2232c55d5">uninitialized_move</a>(It1 I, It1 E, It2 Dest) {</div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    std::uninitialized_copy(std::make_move_iterator(I),</div>
 <div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>                            std::make_move_iterator(E), Dest);</div>
 <div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>  }</div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span> </div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> It1, <span class="keyword">typename</span> It2&gt;</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span><span class="comment"></span> </div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span><span class="comment">  /// Copy the range [I, E) onto the uninitialized memory starting with &quot;Dest&quot;,</span></div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span><span class="comment">  /// constructing elements as needed.</span></div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span><span class="comment"></span>  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> It1, <span class="keyword">typename</span> It2&gt;</div>
 <div class="line"><a id="l00217" name="l00217"></a><span class="lineno"><a class="line" href="classwpi_1_1_small_vector_template_base.html#a4ceaef7fbd0aae25a65c79246624c0b9">  217</a></span>  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1_small_vector_template_base.html#a4ceaef7fbd0aae25a65c79246624c0b9">uninitialized_copy</a>(It1 I, It1 E, It2 Dest) {</div>
 <div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>    std::uninitialized_copy(I, E, Dest);</div>
 <div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>  }</div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span> </div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1_small_vector_template_base.html#a65451fde7e77a376736bccadfae71847">grow</a>(<span class="keywordtype">size_t</span> MinSize = 0);</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span><span class="comment"></span> </div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span><span class="comment">  /// Grow the allocated memory (without initializing new elements), doubling</span></div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span><span class="comment">  /// the size of the allocated memory. Guarantees space for at least one more</span></div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span><span class="comment">  /// element, or MinSize more elements if specified.</span></div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span><span class="comment"></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1_small_vector_template_base.html#a65451fde7e77a376736bccadfae71847">grow</a>(<span class="keywordtype">size_t</span> MinSize = 0);</div>
 <div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span> </div>
 <div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>  <span class="keywordtype">void</span> push_back(<span class="keyword">const</span> T &amp;Elt) {</div>
@@ -332,28 +365,36 @@ $(document).ready(function(){initNavTree('_small_vector_8h_source.html',''); ini
 <div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>  this-&gt;Capacity = <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span><span class="keyword">&gt;</span>(NewCapacity);</div>
 <div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>}</div>
 <div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span> </div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span> </div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span><span class="comment"></span> </div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span><span class="comment">/// SmallVectorTemplateBase&lt;isPodLike = true&gt; - This is where we put method</span></div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span><span class="comment">/// implementations that are designed to work with POD-like T&#39;s.</span></div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span><span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a id="l00276" name="l00276"></a><span class="lineno"><a class="line" href="classwpi_1_1_small_vector_template_base_3_01_t_00_01true_01_4.html">  276</a></span><span class="keyword">class </span><a class="code hl_class" href="classwpi_1_1_small_vector_template_base.html">SmallVectorTemplateBase</a>&lt;T, true&gt; : <span class="keyword">public</span> <a class="code hl_class" href="classwpi_1_1_small_vector_template_common.html">SmallVectorTemplateCommon</a>&lt;T&gt; {</div>
 <div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span><span class="keyword">protected</span>:</div>
 <div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>  <a class="code hl_class" href="classwpi_1_1_small_vector_template_base.html">SmallVectorTemplateBase</a>(<span class="keywordtype">size_t</span> Size) : <a class="code hl_class" href="classwpi_1_1_small_vector_template_common.html">SmallVectorTemplateCommon&lt;T&gt;</a>(Size) {}</div>
 <div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span> </div>
 <div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>  <span class="comment">// No need to do a destroy loop for POD&#39;s.</span></div>
 <div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> destroy_range(T *, T *) {}</div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span> </div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> It1, <span class="keyword">typename</span> It2&gt;</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span><span class="comment"></span> </div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span><span class="comment">  /// Move the range [I, E) onto the uninitialized memory</span></div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span><span class="comment">  /// starting with &quot;Dest&quot;, constructing elements into it as needed.</span></div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span><span class="comment"></span>  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> It1, <span class="keyword">typename</span> It2&gt;</div>
 <div class="line"><a id="l00286" name="l00286"></a><span class="lineno"><a class="line" href="classwpi_1_1_small_vector_template_base_3_01_t_00_01true_01_4.html#ae262c6b58f35977a04e6413da24654a2">  286</a></span>  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1_small_vector_template_base_3_01_t_00_01true_01_4.html#ae262c6b58f35977a04e6413da24654a2">uninitialized_move</a>(It1 I, It1 E, It2 Dest) {</div>
 <div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>    <span class="comment">// Just do a copy.</span></div>
 <div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>    <a class="code hl_function" href="classwpi_1_1_small_vector_template_base.html#a4ceaef7fbd0aae25a65c79246624c0b9">uninitialized_copy</a>(I, E, Dest);</div>
 <div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>  }</div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span> </div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> It1, <span class="keyword">typename</span> It2&gt;</div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span><span class="comment"></span> </div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span><span class="comment">  /// Copy the range [I, E) onto the uninitialized memory</span></div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span><span class="comment">  /// starting with &quot;Dest&quot;, constructing elements into it as needed.</span></div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span><span class="comment"></span>  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> It1, <span class="keyword">typename</span> It2&gt;</div>
 <div class="line"><a id="l00294" name="l00294"></a><span class="lineno"><a class="line" href="classwpi_1_1_small_vector_template_base_3_01_t_00_01true_01_4.html#ad05819adc6821e304e3e9ae2b5388bc0">  294</a></span>  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1_small_vector_template_base_3_01_t_00_01true_01_4.html#ad05819adc6821e304e3e9ae2b5388bc0">uninitialized_copy</a>(It1 I, It1 E, It2 Dest) {</div>
 <div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>    <span class="comment">// Arbitrary iterator types; just use the basic implementation.</span></div>
 <div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>    std::uninitialized_copy(I, E, Dest);</div>
 <div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>  }</div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span> </div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T1, <span class="keyword">typename</span> T2&gt;</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span><span class="comment"></span> </div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span><span class="comment">  /// Copy the range [I, E) onto the uninitialized memory</span></div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span><span class="comment">  /// starting with &quot;Dest&quot;, constructing elements into it as needed.</span></div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span><span class="comment"></span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T1, <span class="keyword">typename</span> T2&gt;</div>
 <div class="line"><a id="l00302" name="l00302"></a><span class="lineno"><a class="line" href="classwpi_1_1_small_vector_template_base_3_01_t_00_01true_01_4.html#a5be1d5a7e0a645d15b38ce3ef9ca9946">  302</a></span>  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1_small_vector_template_base_3_01_t_00_01true_01_4.html#a5be1d5a7e0a645d15b38ce3ef9ca9946">uninitialized_copy</a>(</div>
 <div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>      T1 *I, T1 *E, T2 *Dest,</div>
 <div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>      <span class="keyword">typename</span> std::enable_if&lt;std::is_same&lt;<span class="keyword">typename</span> std::remove_const&lt;T1&gt;::type,</div>
@@ -365,8 +406,10 @@ $(document).ready(function(){initNavTree('_small_vector_8h_source.html',''); ini
 <div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>    <span class="keywordflow">if</span> (I != E)</div>
 <div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>      memcpy(<span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">void</span> *<span class="keyword">&gt;</span>(Dest), I, (E - I) * <span class="keyword">sizeof</span>(T));</div>
 <div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>  }</div>
-<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span> </div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno"><a class="line" href="classwpi_1_1_small_vector_template_base_3_01_t_00_01true_01_4.html#a94a91563b4c127280cfa16e8ee38c2b1">  316</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1_small_vector_template_base_3_01_t_00_01true_01_4.html#a94a91563b4c127280cfa16e8ee38c2b1">grow</a>(<span class="keywordtype">size_t</span> MinSize = 0) { this-&gt;grow_pod(MinSize, <span class="keyword">sizeof</span>(T)); }</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span><span class="comment"></span> </div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span><span class="comment">  /// Double the size of the allocated memory, guaranteeing space for at</span></div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span><span class="comment">  /// least one more element or MinSize if specified.</span></div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno"><a class="line" href="classwpi_1_1_small_vector_template_base_3_01_t_00_01true_01_4.html#a94a91563b4c127280cfa16e8ee38c2b1">  316</a></span><span class="comment"></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1_small_vector_template_base_3_01_t_00_01true_01_4.html#a94a91563b4c127280cfa16e8ee38c2b1">grow</a>(<span class="keywordtype">size_t</span> MinSize = 0) { this-&gt;grow_pod(MinSize, <span class="keyword">sizeof</span>(T)); }</div>
 <div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span> </div>
 <div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>  <span class="keywordtype">void</span> push_back(<span class="keyword">const</span> T &amp;Elt) {</div>
@@ -378,8 +421,10 @@ $(document).ready(function(){initNavTree('_small_vector_8h_source.html',''); ini
 <div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span> </div>
 <div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>  <span class="keywordtype">void</span> pop_back() { this-&gt;<a class="code hl_function" href="classwpi_1_1_small_vector_base.html#adc0a148799a86f4c1569e5d364d2f30e">set_size</a>(this-&gt;size() - 1); }</div>
 <div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>};</div>
-<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span> </div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span><span class="comment"></span> </div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span><span class="comment">/// This class consists of common code factored out of the SmallVector class to</span></div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span><span class="comment">/// reduce code duplication based on the SmallVector &#39;N&#39; template parameter.</span></div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span><span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a id="l00332" name="l00332"></a><span class="lineno"><a class="line" href="classwpi_1_1_small_vector_impl.html">  332</a></span><span class="keyword">class </span><a class="code hl_class" href="classwpi_1_1_small_vector_impl.html">SmallVectorImpl</a> : <span class="keyword">public</span> <a class="code hl_class" href="classwpi_1_1_small_vector_template_base.html">SmallVectorTemplateBase</a>&lt;T&gt; {</div>
 <div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>  <span class="keyword">using</span> <a class="code hl_class" href="classwpi_1_1_small_vector_template_base.html">SuperClass</a> = <a class="code hl_class" href="classwpi_1_1_small_vector_template_base.html">SmallVectorTemplateBase&lt;T&gt;</a>;</div>
 <div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span> </div>
@@ -445,8 +490,9 @@ $(document).ready(function(){initNavTree('_small_vector_8h_source.html',''); ini
 <div class="line"><a id="l00394" name="l00394"></a><span class="lineno">  394</span>  }</div>
 <div class="line"><a id="l00395" name="l00395"></a><span class="lineno">  395</span> </div>
 <div class="line"><a id="l00396" name="l00396"></a><span class="lineno">  396</span>  <span class="keywordtype">void</span> swap(<a class="code hl_class" href="classwpi_1_1_small_vector_impl.html">SmallVectorImpl</a> &amp;RHS);</div>
-<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span> </div>
-<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> in_iter,</div>
+<div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span><span class="comment"></span> </div>
+<div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span><span class="comment">  /// Add the specified range to the end of the SmallVector.</span></div>
+<div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span><span class="comment"></span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> in_iter,</div>
 <div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span>            <span class="keyword">typename</span> = <span class="keyword">typename</span> std::enable_if&lt;std::is_convertible&lt;</div>
 <div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span>                <span class="keyword">typename</span> std::iterator_traits&lt;in_iter&gt;::iterator_category,</div>
 <div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span>                std::input_iterator_tag&gt;<a class="code hl_class" href="classvalue.html">::value</a>&gt;::type&gt;</div>
@@ -460,8 +506,9 @@ $(document).ready(function(){initNavTree('_small_vector_8h_source.html',''); ini
 <div class="line"><a id="l00410" name="l00410"></a><span class="lineno">  410</span>    this-&gt;<a class="code hl_function" href="classwpi_1_1_small_vector_template_base.html#a4ceaef7fbd0aae25a65c79246624c0b9">uninitialized_copy</a>(in_start, in_end, this-&gt;end());</div>
 <div class="line"><a id="l00411" name="l00411"></a><span class="lineno">  411</span>    this-&gt;<a class="code hl_function" href="classwpi_1_1_small_vector_base.html#adc0a148799a86f4c1569e5d364d2f30e">set_size</a>(this-&gt;size() + NumInputs);</div>
 <div class="line"><a id="l00412" name="l00412"></a><span class="lineno">  412</span>  }</div>
-<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span> </div>
-<div class="line"><a id="l00415" name="l00415"></a><span class="lineno"><a class="line" href="classwpi_1_1_small_vector_impl.html#ae0932ee9e9c857ba10836ad4ef74541f">  415</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1_small_vector_impl.html#ae0932ee9e9c857ba10836ad4ef74541f">append</a>(size_type NumInputs, <span class="keyword">const</span> T &amp;Elt) {</div>
+<div class="line"><a id="l00413" name="l00413"></a><span class="lineno">  413</span><span class="comment"></span> </div>
+<div class="line"><a id="l00414" name="l00414"></a><span class="lineno">  414</span><span class="comment">  /// Add the specified range to the end of the SmallVector.</span></div>
+<div class="line"><a id="l00415" name="l00415"></a><span class="lineno"><a class="line" href="classwpi_1_1_small_vector_impl.html#ae0932ee9e9c857ba10836ad4ef74541f">  415</a></span><span class="comment"></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1_small_vector_impl.html#ae0932ee9e9c857ba10836ad4ef74541f">append</a>(size_type NumInputs, <span class="keyword">const</span> T &amp;Elt) {</div>
 <div class="line"><a id="l00416" name="l00416"></a><span class="lineno">  416</span>    <span class="comment">// Grow allocated space if needed.</span></div>
 <div class="line"><a id="l00417" name="l00417"></a><span class="lineno">  417</span>    <span class="keywordflow">if</span> (NumInputs &gt; this-&gt;capacity() - this-&gt;size())</div>
 <div class="line"><a id="l00418" name="l00418"></a><span class="lineno">  418</span>      this-&gt;<a class="code hl_function" href="classwpi_1_1_small_vector_template_base.html#a65451fde7e77a376736bccadfae71847">grow</a>(this-&gt;size()+NumInputs);</div>
@@ -880,15 +927,28 @@ $(document).ready(function(){initNavTree('_small_vector_8h_source.html',''); ini
 <div class="line"><a id="l00831" name="l00831"></a><span class="lineno">  831</span>  RHS.clear();</div>
 <div class="line"><a id="l00832" name="l00832"></a><span class="lineno">  832</span>  <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><a id="l00833" name="l00833"></a><span class="lineno">  833</span>}</div>
-<div class="line"><a id="l00834" name="l00834"></a><span class="lineno">  834</span> </div>
-<div class="line"><a id="l00837" name="l00837"></a><span class="lineno">  837</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keywordtype">unsigned</span> N&gt;</div>
+<div class="line"><a id="l00834" name="l00834"></a><span class="lineno">  834</span><span class="comment"></span> </div>
+<div class="line"><a id="l00835" name="l00835"></a><span class="lineno">  835</span><span class="comment">/// Storage for the SmallVector elements.  This is specialized for the N=0 case</span></div>
+<div class="line"><a id="l00836" name="l00836"></a><span class="lineno">  836</span><span class="comment">/// to avoid allocating unnecessary storage.</span></div>
+<div class="line"><a id="l00837" name="l00837"></a><span class="lineno">  837</span><span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keywordtype">unsigned</span> N&gt;</div>
 <div class="line"><a id="l00838" name="l00838"></a><span class="lineno"><a class="line" href="structwpi_1_1_small_vector_storage.html">  838</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structwpi_1_1_small_vector_storage.html">SmallVectorStorage</a> {</div>
 <div class="line"><a id="l00839" name="l00839"></a><span class="lineno">  839</span>  <a class="code hl_struct" href="structwpi_1_1_aligned_char_array_union.html">AlignedCharArrayUnion&lt;T&gt;</a> InlineElts[N];</div>
 <div class="line"><a id="l00840" name="l00840"></a><span class="lineno">  840</span>};</div>
-<div class="line"><a id="l00841" name="l00841"></a><span class="lineno">  841</span> </div>
-<div class="line"><a id="l00845" name="l00845"></a><span class="lineno"><a class="line" href="structwpi_1_1_small_vector_storage_3_01_t_00_010_01_4.html">  845</a></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="keyword">struct </span><span class="keyword">alignas</span>(alignof(T)) <a class="code hl_struct" href="structwpi_1_1_small_vector_storage.html">SmallVectorStorage</a>&lt;T, 0&gt; {};</div>
-<div class="line"><a id="l00846" name="l00846"></a><span class="lineno">  846</span> </div>
-<div class="line"><a id="l00855" name="l00855"></a><span class="lineno">  855</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keywordtype">unsigned</span> N&gt;</div>
+<div class="line"><a id="l00841" name="l00841"></a><span class="lineno">  841</span><span class="comment"></span> </div>
+<div class="line"><a id="l00842" name="l00842"></a><span class="lineno">  842</span><span class="comment">/// We need the storage to be properly aligned even for small-size of 0 so that</span></div>
+<div class="line"><a id="l00843" name="l00843"></a><span class="lineno">  843</span><span class="comment">/// the pointer math in \a SmallVectorTemplateCommon::getFirstEl() is</span></div>
+<div class="line"><a id="l00844" name="l00844"></a><span class="lineno">  844</span><span class="comment">/// well-defined.</span></div>
+<div class="line"><a id="l00845" name="l00845"></a><span class="lineno"><a class="line" href="structwpi_1_1_small_vector_storage_3_01_t_00_010_01_4.html">  845</a></span><span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="keyword">struct </span><span class="keyword">alignas</span>(alignof(T)) <a class="code hl_struct" href="structwpi_1_1_small_vector_storage.html">SmallVectorStorage</a>&lt;T, 0&gt; {};</div>
+<div class="line"><a id="l00846" name="l00846"></a><span class="lineno">  846</span><span class="comment"></span> </div>
+<div class="line"><a id="l00847" name="l00847"></a><span class="lineno">  847</span><span class="comment">/// This is a &#39;vector&#39; (really, a variable-sized array), optimized</span></div>
+<div class="line"><a id="l00848" name="l00848"></a><span class="lineno">  848</span><span class="comment">/// for the case when the array is small.  It contains some number of elements</span></div>
+<div class="line"><a id="l00849" name="l00849"></a><span class="lineno">  849</span><span class="comment">/// in-place, which allows it to avoid heap allocation when the actual number of</span></div>
+<div class="line"><a id="l00850" name="l00850"></a><span class="lineno">  850</span><span class="comment">/// elements is below that threshold.  This allows normal &quot;small&quot; cases to be</span></div>
+<div class="line"><a id="l00851" name="l00851"></a><span class="lineno">  851</span><span class="comment">/// fast without losing generality for large inputs.</span></div>
+<div class="line"><a id="l00852" name="l00852"></a><span class="lineno">  852</span><span class="comment">///</span></div>
+<div class="line"><a id="l00853" name="l00853"></a><span class="lineno">  853</span><span class="comment">/// Note that this does not attempt to be exception safe.</span></div>
+<div class="line"><a id="l00854" name="l00854"></a><span class="lineno">  854</span><span class="comment">///</span></div>
+<div class="line"><a id="l00855" name="l00855"></a><span class="lineno">  855</span><span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keywordtype">unsigned</span> N&gt;</div>
 <div class="line"><a id="l00856" name="l00856"></a><span class="lineno"><a class="line" href="classwpi_1_1_small_vector.html">  856</a></span><span class="keyword">class </span><a class="code hl_class" href="classwpi_1_1_small_vector.html">SmallVector</a> : <span class="keyword">public</span> <a class="code hl_class" href="classwpi_1_1_small_vector_impl.html">SmallVectorImpl</a>&lt;T&gt;, <a class="code hl_struct" href="structwpi_1_1_small_vector_storage.html">SmallVectorStorage</a>&lt;T, N&gt; {</div>
 <div class="line"><a id="l00857" name="l00857"></a><span class="lineno">  857</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00858" name="l00858"></a><span class="lineno">  858</span>  <a class="code hl_class" href="classwpi_1_1_small_vector.html">SmallVector</a>() : <a class="code hl_class" href="classwpi_1_1_small_vector_impl.html">SmallVectorImpl&lt;T&gt;</a>(N) {}</div>
@@ -965,14 +1025,16 @@ $(document).ready(function(){initNavTree('_small_vector_8h_source.html',''); ini
 <div class="line"><a id="l00929" name="l00929"></a><span class="lineno">  929</span>} <span class="comment">// end namespace wpi</span></div>
 <div class="line"><a id="l00930" name="l00930"></a><span class="lineno">  930</span> </div>
 <div class="line"><a id="l00931" name="l00931"></a><span class="lineno">  931</span><span class="keyword">namespace </span>std {</div>
-<div class="line"><a id="l00932" name="l00932"></a><span class="lineno">  932</span> </div>
-<div class="line"><a id="l00934" name="l00934"></a><span class="lineno">  934</span>  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00932" name="l00932"></a><span class="lineno">  932</span><span class="comment"></span> </div>
+<div class="line"><a id="l00933" name="l00933"></a><span class="lineno">  933</span><span class="comment">  /// Implement std::swap in terms of SmallVector swap.</span></div>
+<div class="line"><a id="l00934" name="l00934"></a><span class="lineno">  934</span><span class="comment"></span>  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a id="l00935" name="l00935"></a><span class="lineno">  935</span>  <span class="keyword">inline</span> <span class="keywordtype">void</span></div>
 <div class="line"><a id="l00936" name="l00936"></a><span class="lineno">  936</span>  swap(<a class="code hl_class" href="classwpi_1_1_small_vector_impl.html">wpi::SmallVectorImpl&lt;T&gt;</a> &amp;LHS, <a class="code hl_class" href="classwpi_1_1_small_vector_impl.html">wpi::SmallVectorImpl&lt;T&gt;</a> &amp;RHS) {</div>
 <div class="line"><a id="l00937" name="l00937"></a><span class="lineno">  937</span>    LHS.swap(RHS);</div>
 <div class="line"><a id="l00938" name="l00938"></a><span class="lineno">  938</span>  }</div>
-<div class="line"><a id="l00939" name="l00939"></a><span class="lineno">  939</span> </div>
-<div class="line"><a id="l00941" name="l00941"></a><span class="lineno">  941</span>  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keywordtype">unsigned</span> N&gt;</div>
+<div class="line"><a id="l00939" name="l00939"></a><span class="lineno">  939</span><span class="comment"></span> </div>
+<div class="line"><a id="l00940" name="l00940"></a><span class="lineno">  940</span><span class="comment">  /// Implement std::swap in terms of SmallVector swap.</span></div>
+<div class="line"><a id="l00941" name="l00941"></a><span class="lineno">  941</span><span class="comment"></span>  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keywordtype">unsigned</span> N&gt;</div>
 <div class="line"><a id="l00942" name="l00942"></a><span class="lineno">  942</span>  <span class="keyword">inline</span> <span class="keywordtype">void</span></div>
 <div class="line"><a id="l00943" name="l00943"></a><span class="lineno">  943</span>  swap(<a class="code hl_class" href="classwpi_1_1_small_vector.html">wpi::SmallVector&lt;T, N&gt;</a> &amp;LHS, <a class="code hl_class" href="classwpi_1_1_small_vector.html">wpi::SmallVector&lt;T, N&gt;</a> &amp;RHS) {</div>
 <div class="line"><a id="l00944" name="l00944"></a><span class="lineno">  944</span>    LHS.swap(RHS);</div>
@@ -1015,7 +1077,7 @@ $(document).ready(function(){initNavTree('_small_vector_8h_source.html',''); ini
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><b>SmallVector.h</b></li>
-    <li class="footer">Generated on Tue Oct 19 2021 04:32:23 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Oct 19 2021 04:42:46 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

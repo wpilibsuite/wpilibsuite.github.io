@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-17-g9e6db17</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-19-ge56d6de</span>
    </div>
   </td>
  </tr>
@@ -148,7 +148,21 @@ $(document).ready(function(){initNavTree('_product_8h_source.html',''); initResi
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>};</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>} <span class="comment">// end namespace internal</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment"></span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">/** \class Product</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">  * \ingroup Core_Module</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">  * \brief Expression of the product of two arbitrary matrices or vectors</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">  * \tparam _Lhs the type of the left-hand side expression</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">  * \tparam _Rhs the type of the right-hand side expression</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">  * This class represents an expression of the product of two arbitrary matrices.</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">  * The other template parameters are:</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">  * \tparam Option     can be DefaultProduct, AliasFreeProduct, or LazyProduct</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> _Lhs, <span class="keyword">typename</span> _Rhs, <span class="keywordtype">int</span> Option&gt;</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="class_eigen_1_1_product.html">   71</a></span><span class="keyword">class </span><a class="code hl_class" href="class_eigen_1_1_product.html">Product</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_eigen_1_1_product_impl.html">ProductImpl</a>&lt;_Lhs,_Rhs,Option,</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                                   typename internal::product_promote_storage_type&lt;typename internal::traits&lt;_Lhs&gt;::StorageKind,</div>
@@ -202,7 +216,8 @@ $(document).ready(function(){initNavTree('_product_8h_source.html',''); initResi
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="class_eigen_1_1internal_1_1dense__product__base.html">  120</a></span><span class="keyword">class </span><a class="code hl_class" href="class_eigen_1_1internal_1_1dense__product__base.html">dense_product_base</a></div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> : <span class="keyword">public</span> <a class="code hl_struct" href="struct_eigen_1_1internal_1_1dense__xpr__base.html">internal::dense_xpr_base</a>&lt;Product&lt;Lhs,Rhs,Option&gt; &gt;::type</div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>{};</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="comment"></span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="comment">/** Conversion to scalar for inner-products */</span></div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Lhs, <span class="keyword">typename</span> Rhs, <span class="keywordtype">int</span> Option&gt;</div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="class_eigen_1_1internal_1_1dense__product__base_3_01_lhs_00_01_rhs_00_01_option_00_01_inner_product_01_4.html">  126</a></span><span class="keyword">class </span><a class="code hl_class" href="class_eigen_1_1internal_1_1dense__product__base.html">dense_product_base</a>&lt;Lhs, Rhs, Option, InnerProduct&gt;</div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> : <span class="keyword">public</span> <a class="code hl_struct" href="struct_eigen_1_1internal_1_1dense__xpr__base.html">internal::dense_xpr_base</a>&lt;Product&lt;Lhs,Rhs,Option&gt; &gt;::type</div>
@@ -295,7 +310,7 @@ $(document).ready(function(){initNavTree('_product_8h_source.html',''); initResi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_bfb2597c438c4234fbdcce568a9e650d.html">eigeninclude</a></li><li class="navelem"><a class="el" href="dir_81addad79085c513f45446cf62836735.html">Eigen</a></li><li class="navelem"><a class="el" href="dir_e429501dd9edb337aeb96d684aa3b6ff.html">src</a></li><li class="navelem"><a class="el" href="dir_09ad905ad0d1f25ba5be966168b2edef.html">Core</a></li><li class="navelem"><b>Product.h</b></li>
-    <li class="footer">Generated on Tue Oct 19 2021 04:32:18 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Oct 19 2021 04:42:42 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

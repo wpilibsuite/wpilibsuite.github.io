@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-17-g9e6db17</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3-19-ge56d6de</span>
    </div>
   </td>
  </tr>
@@ -141,7 +141,21 @@ $(document).ready(function(){initNavTree('_reverse_8h_source.html',''); initResi
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>};</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>} <span class="comment">// end namespace internal</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment"></span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">/** \class Reverse</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">  * \ingroup Core_Module</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">  * \brief Expression of the reverse of a vector or matrix</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">  * \tparam MatrixType the type of the object of which we are taking the reverse</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">  * \tparam Direction defines the direction of the reverse operation, can be Vertical, Horizontal, or BothDirections</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">  * This class represents an expression of the reverse of a vector.</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">  * It is the return type of MatrixBase::reverse() and VectorwiseOp::reverse()</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">  * and most of the time this is the only way it is used.</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">  * \sa MatrixBase::reverse(), VectorwiseOp::reverse()</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="class_eigen_1_1_reverse.html">   63</a></span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> MatrixType, <span class="keywordtype">int</span> Direction&gt; <span class="keyword">class </span><a class="code hl_class" href="class_eigen_1_1_reverse.html">Reverse</a></div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  : <span class="keyword">public</span> <a class="code hl_struct" href="struct_eigen_1_1internal_1_1dense__xpr__base.html">internal::dense_xpr_base</a>&lt; Reverse&lt;MatrixType, Direction&gt; &gt;::type</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>{</div>
@@ -190,7 +204,13 @@ $(document).ready(function(){initNavTree('_reverse_8h_source.html',''); initResi
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>  <span class="keyword">protected</span>:</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="keyword">typename</span> MatrixType::Nested m_matrix;</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>};</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="comment"></span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="comment">/** \returns an expression of the reverse of *this.</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="comment">  * Example: \include MatrixBase_reverse.cpp</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="comment">  * Output: \verbinclude MatrixBase_reverse.out</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment">  */</span></div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Derived&gt;</div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>EIGEN_DEVICE_FUNC <span class="keyword">inline</span> <span class="keyword">typename</span> <a class="code hl_class" href="class_eigen_1_1_reverse.html">DenseBase&lt;Derived&gt;::ReverseReturnType</a></div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="class_eigen_1_1_dense_base.html#acde1eef3a99bbbb4ac694ca55b1764c8">  120</a></span><a class="code hl_function" href="class_eigen_1_1_dense_base.html#acde1eef3a99bbbb4ac694ca55b1764c8">DenseBase&lt;Derived&gt;::reverse</a>()</div>
@@ -200,7 +220,19 @@ $(document).ready(function(){initNavTree('_reverse_8h_source.html',''); initResi
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="comment">//reverse const overload moved DenseBase.h due to a CUDA compiler bug</span></div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="comment"></span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="comment">/** This is the &quot;in place&quot; version of reverse: it reverses \c *this.</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="comment">  * In most cases it is probably better to simply use the reversed expression</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="comment">  * of a matrix. However, when reversing the matrix data itself is really needed,</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="comment">  * then this &quot;in-place&quot; version is probably the right choice because it provides</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="comment">  * the following additional benefits:</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="comment">  *  - less error prone: doing the same operation with .reverse() requires special care:</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="comment">  *    \code m = m.reverse().eval(); \endcode</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="comment">  *  - this API enables reverse operations without the need for a temporary</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="comment">  *  - it allows future optimizations (cache friendliness, etc.)</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="comment">  * \sa VectorwiseOp::reverseInPlace(), reverse() */</span></div>
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> Derived&gt;</div>
 <div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="class_eigen_1_1_dense_base.html#a11014cd4565501e332bdd38c0028f736">  141</a></span>EIGEN_DEVICE_FUNC <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_eigen_1_1_dense_base.html#a11014cd4565501e332bdd38c0028f736">DenseBase&lt;Derived&gt;::reverseInPlace</a>()</div>
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>{</div>
@@ -258,7 +290,18 @@ $(document).ready(function(){initNavTree('_reverse_8h_source.html',''); initResi
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>};</div>
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>} <span class="comment">// end namespace internal</span></div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="comment"></span> </div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="comment">/** This is the &quot;in place&quot; version of VectorwiseOp::reverse: it reverses each column or row of \c *this.</span></div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="comment">  * In most cases it is probably better to simply use the reversed expression</span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="comment">  * of a matrix. However, when reversing the matrix data itself is really needed,</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="comment">  * then this &quot;in-place&quot; version is probably the right choice because it provides</span></div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span><span class="comment">  * the following additional benefits:</span></div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="comment">  *  - less error prone: doing the same operation with .reverse() requires special care:</span></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="comment">  *    \code m = m.reverse().eval(); \endcode</span></div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="comment">  *  - this API enables reverse operations without the need for a temporary</span></div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span><span class="comment">  *</span></div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="comment">  * \sa DenseBase::reverseInPlace(), reverse() */</span></div>
 <div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> ExpressionType, <span class="keywordtype">int</span> Direction&gt;</div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno"><a class="line" href="class_eigen_1_1_vectorwise_op.html#a2bd419527acce58e9e813a5af654b81c">  210</a></span>EIGEN_DEVICE_FUNC <span class="keywordtype">void</span> <a class="code hl_function" href="class_eigen_1_1_vectorwise_op.html#a2bd419527acce58e9e813a5af654b81c">VectorwiseOp&lt;ExpressionType,Direction&gt;::reverseInPlace</a>()</div>
 <div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>{</div>
@@ -293,7 +336,7 @@ $(document).ready(function(){initNavTree('_reverse_8h_source.html',''); initResi
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_bfb2597c438c4234fbdcce568a9e650d.html">eigeninclude</a></li><li class="navelem"><a class="el" href="dir_81addad79085c513f45446cf62836735.html">Eigen</a></li><li class="navelem"><a class="el" href="dir_e429501dd9edb337aeb96d684aa3b6ff.html">src</a></li><li class="navelem"><a class="el" href="dir_09ad905ad0d1f25ba5be966168b2edef.html">Core</a></li><li class="navelem"><b>Reverse.h</b></li>
-    <li class="footer">Generated on Tue Oct 19 2021 04:32:19 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Oct 19 2021 04:42:43 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
