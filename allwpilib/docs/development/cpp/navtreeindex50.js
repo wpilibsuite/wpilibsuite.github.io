@@ -1,5 +1,7 @@
 var NAVTREEINDEX50 =
 {
+"group__hal__driverstation.html#ga803d78b2f8eafa4ed110379de40fd90f":[3,0,0,15],
+"group__hal__driverstation.html#ga90161d733fb0dc23b514c438ebc57706":[3,0,0,6],
 "group__hal__driverstation.html#ga953a31253de78dd59fba77b9387a2da2":[3,0,0,25],
 "group__hal__driverstation.html#ga9812dec72ca0e96bff68369d107cb12a":[3,0,0,23],
 "group__hal__driverstation.html#ga9abd3bfc937e917a7b7174894b1ef5aa":[3,0,0,29],
@@ -247,7 +249,5 @@ var NAVTREEINDEX50 =
 "group__ntcore__c__api.html#ga5a37c1408d3bd3090edcfd497c00acbe":[3,2,24],
 "group__ntcore__c__api.html#ga625cf01c8aa4a321d9a4790033fc3846":[3,2,25],
 "group__ntcore__c__api.html#ga85e32a7c652ecd10ca642d78ec21e46a":[3,2,27],
-"group__ntcore__c__api.html#gaca5ac35ca784df4518df6fec4c3f82ad":[3,2,21],
-"group__ntcore__c__api.html#gad85a24a4cc529c300483f712ffccf6be":[3,2,26],
-"group__ntcore__connectionlistener__cfunc.html":[3,2,3]
+"group__ntcore__c__api.html#gaca5ac35ca784df4518df6fec4c3f82ad":[3,2,21]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX51 =
 {
+"group__ntcore__c__api.html#gad85a24a4cc529c300483f712ffccf6be":[3,2,26],
+"group__ntcore__connectionlistener__cfunc.html":[3,2,3],
 "group__ntcore__connectionlistener__cfunc.html#ga02b07a837bac69fc086f1c21c0aedaea":[3,2,3,4],
 "group__ntcore__connectionlistener__cfunc.html#ga0689545a1b4f59bf3a87aa3c758d3bfb":[3,2,3,5],
 "group__ntcore__connectionlistener__cfunc.html#ga282378649f6a456e676c7a62a84441f8":[3,2,3,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX51 =
 "group__ntcore__typedgetters__cfunc.html#gafb09ff2210ccef872da2b2667b990096":[3,2,9,1,13],
 "group__ntcore__utility__cfunc.html":[3,2,7],
 "group__ntcore__utility__cfunc.html#ga0fd423cd0d8bd810ac2f93bb03688784":[3,2,7,16],
-"group__ntcore__utility__cfunc.html#ga20f8444d4db738f7734050ff402dbe72":[3,2,7,15],
-"group__ntcore__utility__cfunc.html#ga28656328928d31d24d2169b371f3001c":[3,2,7,4],
-"group__ntcore__utility__cfunc.html#ga2e357f638ce86385617f8153217fb8a9":[3,2,7,9]
+"group__ntcore__utility__cfunc.html#ga20f8444d4db738f7734050ff402dbe72":[3,2,7,15]
 };

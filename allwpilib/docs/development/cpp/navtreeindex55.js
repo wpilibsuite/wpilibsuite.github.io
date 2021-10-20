@@ -1,5 +1,7 @@
 var NAVTREEINDEX55 =
 {
+"struct_eigen_1_1internal_1_1apply__rotation__in__the__plane__selector.html":[5,0,4,2,30],
+"struct_eigen_1_1internal_1_1apply__rotation__in__the__plane__selector_3_01_scalar_00_01_other_scbca20de4cedcca0c18dc0bba81af1524.html":[4,0,4,3,31],
 "struct_eigen_1_1internal_1_1apply__rotation__in__the__plane__selector_3_01_scalar_00_01_other_scbca20de4cedcca0c18dc0bba81af1524.html":[5,0,4,2,31],
 "struct_eigen_1_1internal_1_1arg__default__impl.html":[4,0,4,3,32],
 "struct_eigen_1_1internal_1_1arg__default__impl.html":[5,0,4,2,32],
@@ -247,7 +249,5 @@ var NAVTREEINDEX55 =
 "struct_eigen_1_1internal_1_1copy__using__evaluator__innervec___complete_unrolling.html":[5,0,4,2,189],
 "struct_eigen_1_1internal_1_1copy__using__evaluator__innervec___complete_unrolling_3_01_kernel_00_01_stop_00_01_stop_01_4.html":[4,0,4,3,190],
 "struct_eigen_1_1internal_1_1copy__using__evaluator__innervec___complete_unrolling_3_01_kernel_00_01_stop_00_01_stop_01_4.html":[5,0,4,2,190],
-"struct_eigen_1_1internal_1_1copy__using__evaluator__innervec___inner_unrolling.html":[4,0,4,3,191],
-"struct_eigen_1_1internal_1_1copy__using__evaluator__innervec___inner_unrolling.html":[5,0,4,2,191],
-"struct_eigen_1_1internal_1_1copy__using__evaluator__innervec___inner_unrolling_3_01_kernel_00_01f9638de23111656da8d7300be7918511.html":[4,0,4,3,192]
+"struct_eigen_1_1internal_1_1copy__using__evaluator__innervec___inner_unrolling.html":[4,0,4,3,191]
 };

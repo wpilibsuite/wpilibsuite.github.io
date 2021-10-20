@@ -1,5 +1,7 @@
 var NAVTREEINDEX63 =
 {
+"struct_eigen_1_1internal_1_1storage__kind__to__shape_3_01_diagonal_shape_01_4.html":[5,0,4,2,1140],
+"struct_eigen_1_1internal_1_1storage__kind__to__shape_3_01_permutation_storage_01_4.html":[4,0,4,3,1141],
 "struct_eigen_1_1internal_1_1storage__kind__to__shape_3_01_permutation_storage_01_4.html":[5,0,4,2,1141],
 "struct_eigen_1_1internal_1_1storage__kind__to__shape_3_01_solver_storage_01_4.html":[4,0,4,3,1142],
 "struct_eigen_1_1internal_1_1storage__kind__to__shape_3_01_solver_storage_01_4.html":[5,0,4,2,1142],
@@ -247,7 +249,5 @@ var NAVTREEINDEX63 =
 "struct_eigen_1_1internal_1_1trmv__selector_3_01_mode_00_01_col_major_01_4.html":[5,0,4,2,1271],
 "struct_eigen_1_1internal_1_1trmv__selector_3_01_mode_00_01_row_major_01_4.html":[4,0,4,3,1272],
 "struct_eigen_1_1internal_1_1trmv__selector_3_01_mode_00_01_row_major_01_4.html":[5,0,4,2,1272],
-"struct_eigen_1_1internal_1_1true__type.html":[4,0,4,3,1274],
-"struct_eigen_1_1internal_1_1true__type.html":[5,0,4,2,1274],
-"struct_eigen_1_1internal_1_1type__casting__traits.html":[5,0,4,2,1275]
+"struct_eigen_1_1internal_1_1true__type.html":[4,0,4,3,1274]
 };

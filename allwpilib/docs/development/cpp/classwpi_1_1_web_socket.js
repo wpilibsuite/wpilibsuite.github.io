@@ -37,6 +37,7 @@ var classwpi_1_1_web_socket =
     [ "SetCombineFragments", "classwpi_1_1_web_socket.html#a9eb36dee2f7319a43cd4a794cf635262", null ],
     [ "SetData", "classwpi_1_1_web_socket.html#aae601d5e644d628ebb9295d86b007bd0", null ],
     [ "SetMaxMessageSize", "classwpi_1_1_web_socket.html#ad8ed71cfabb44f5ccfdd9069d6958444", null ],
+    [ "Shutdown", "classwpi_1_1_web_socket.html#a05c555e1888a64b4b42643809a860c30", null ],
     [ "Terminate", "classwpi_1_1_web_socket.html#af7d2b14ca14d8b5e7fa29fda1fc974ad", null ],
     [ "binary", "classwpi_1_1_web_socket.html#a2e9429c99b4487994d6e4b0d0052b863", null ],
     [ "closed", "classwpi_1_1_web_socket.html#a1daec0484f6f3034717912142e3cc7e1", null ],

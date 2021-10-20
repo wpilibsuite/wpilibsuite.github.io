@@ -1,5 +1,7 @@
 var NAVTREEINDEX54 =
 {
+"struct_eigen_1_1_vectorwise_op_1_1_return_type.html":[4,0,4,213,4],
+"struct_eigen_1_1aligned__allocator_1_1rebind.html":[4,0,4,6,0],
 "struct_eigen_1_1aligned__allocator_1_1rebind.html":[5,0,4,5,0],
 "struct_eigen_1_1aligned__allocator__indirection_1_1rebind.html":[4,0,4,7,0],
 "struct_eigen_1_1aligned__allocator__indirection_1_1rebind.html":[5,0,4,6,0],
@@ -21,8 +23,8 @@ var NAVTREEINDEX54 =
 "struct_eigen_1_1half__impl_1_1____half__raw.html":[4,0,4,1,0],
 "struct_eigen_1_1half__impl_1_1half__base.html":[5,0,4,1,2],
 "struct_eigen_1_1half__impl_1_1half__base.html":[4,0,4,1,2],
-"struct_eigen_1_1internal_1_1_all_range.html":[5,0,4,2,25],
 "struct_eigen_1_1internal_1_1_all_range.html":[4,0,4,3,25],
+"struct_eigen_1_1internal_1_1_all_range.html":[5,0,4,2,25],
 "struct_eigen_1_1internal_1_1_assignment.html":[4,0,4,3,52],
 "struct_eigen_1_1internal_1_1_assignment.html":[5,0,4,2,52],
 "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_cwise_binary_op_3_01internal_1_1eb29cc77263dc530639098c389efc225.html":[4,0,4,3,53],
@@ -69,14 +71,14 @@ var NAVTREEINDEX54 =
 "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_src_xpr_type_00_01_functor_00_01_triangular2_dense_01_4.html":[5,0,4,2,73],
 "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_src_xpr_type_00_01_functor_00_01_triangular2_triangular_01_4.html":[5,0,4,2,74],
 "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_src_xpr_type_00_01_functor_00_01_triangular2_triangular_01_4.html":[4,0,4,3,74],
-"struct_eigen_1_1internal_1_1_assignment_kind.html":[5,0,4,2,76],
 "struct_eigen_1_1internal_1_1_assignment_kind.html":[4,0,4,3,76],
-"struct_eigen_1_1internal_1_1_assignment_kind_3_01_dense_shape_00_01_band_shape_01_4.html":[4,0,4,3,77],
+"struct_eigen_1_1internal_1_1_assignment_kind.html":[5,0,4,2,76],
 "struct_eigen_1_1internal_1_1_assignment_kind_3_01_dense_shape_00_01_band_shape_01_4.html":[5,0,4,2,77],
+"struct_eigen_1_1internal_1_1_assignment_kind_3_01_dense_shape_00_01_band_shape_01_4.html":[4,0,4,3,77],
 "struct_eigen_1_1internal_1_1_assignment_kind_3_01_dense_shape_00_01_dense_shape_01_4.html":[5,0,4,2,78],
 "struct_eigen_1_1internal_1_1_assignment_kind_3_01_dense_shape_00_01_dense_shape_01_4.html":[4,0,4,3,78],
-"struct_eigen_1_1internal_1_1_assignment_kind_3_01_dense_shape_00_01_diagonal_shape_01_4.html":[4,0,4,3,79],
 "struct_eigen_1_1internal_1_1_assignment_kind_3_01_dense_shape_00_01_diagonal_shape_01_4.html":[5,0,4,2,79],
+"struct_eigen_1_1internal_1_1_assignment_kind_3_01_dense_shape_00_01_diagonal_shape_01_4.html":[4,0,4,3,79],
 "struct_eigen_1_1internal_1_1_assignment_kind_3_01_dense_shape_00_01_permutation_shape_01_4.html":[5,0,4,2,80],
 "struct_eigen_1_1internal_1_1_assignment_kind_3_01_dense_shape_00_01_permutation_shape_01_4.html":[4,0,4,3,80],
 "struct_eigen_1_1internal_1_1_assignment_kind_3_01_dense_shape_00_01_triangular_shape_01_4.html":[4,0,4,3,81],
@@ -247,7 +249,5 @@ var NAVTREEINDEX54 =
 "struct_eigen_1_1internal_1_1any__unroller_3_01_derived_00_010_00_01_rows_01_4.html":[4,0,4,3,28],
 "struct_eigen_1_1internal_1_1any__unroller_3_01_derived_00_01_dynamic_00_01_rows_01_4.html":[5,0,4,2,29],
 "struct_eigen_1_1internal_1_1any__unroller_3_01_derived_00_01_dynamic_00_01_rows_01_4.html":[4,0,4,3,29],
-"struct_eigen_1_1internal_1_1apply__rotation__in__the__plane__selector.html":[4,0,4,3,30],
-"struct_eigen_1_1internal_1_1apply__rotation__in__the__plane__selector.html":[5,0,4,2,30],
-"struct_eigen_1_1internal_1_1apply__rotation__in__the__plane__selector_3_01_scalar_00_01_other_scbca20de4cedcca0c18dc0bba81af1524.html":[4,0,4,3,31]
+"struct_eigen_1_1internal_1_1apply__rotation__in__the__plane__selector.html":[4,0,4,3,30]
 };
