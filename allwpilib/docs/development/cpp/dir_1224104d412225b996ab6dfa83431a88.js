@@ -44,6 +44,7 @@ var dir_1224104d412225b996ab6dfa83431a88 =
     [ "iterator_range.h", "iterator__range_8h.html", "iterator__range_8h" ],
     [ "jni_util.h", "jni__util_8h_source.html", null ],
     [ "json.h", "json_8h_source.html", null ],
+    [ "json_serializer.h", "json__serializer_8h_source.html", null ],
     [ "leb128.h", "leb128_8h_source.html", null ],
     [ "Logger.h", "_logger_8h_source.html", null ],
     [ "ManagedStatic.h", "_managed_static_8h_source.html", null ],

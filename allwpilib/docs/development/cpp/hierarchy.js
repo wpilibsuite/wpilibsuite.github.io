@@ -2999,6 +2999,7 @@ var hierarchy =
     [ "wpi::SendableRegistry", "classwpi_1_1_sendable_registry.html", null ],
     [ "frc::SensorUtil", "classfrc_1_1_sensor_util.html", null ],
     [ "hal::SerialHelper", "classhal_1_1_serial_helper.html", null ],
+    [ "wpi::json::serializer", "classwpi_1_1json_1_1serializer.html", null ],
     [ "frc::SerialPort", "classfrc_1_1_serial_port.html", null ],
     [ "wpi::WebSocketServer::ServerOptions", "structwpi_1_1_web_socket_server_1_1_server_options.html", null ],
     [ "Eigen::internal::generic_product_impl< Lhs, Rhs, DenseShape, DenseShape, OuterProduct >::set", "struct_eigen_1_1internal_1_1generic__product__impl_3_01_lhs_00_01_rhs_00_01_dense_shape_00_01_de53b08926de0225703046b27d8aadeb7a.html", null ],

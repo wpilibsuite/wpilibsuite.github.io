@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-3-g8cb294a</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-5-ge94397a</span>
    </div>
   </td>
  </tr>
@@ -208,7 +208,7 @@ $(document).ready(function(){initNavTree('_tcp_8h_source.html',''); initResizabl
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1_tcp.html#a934d8a5993cc87ab47fa87368d03fd42">  112</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1uv_1_1_tcp.html#a934d8a5993cc87ab47fa87368d03fd42">Open</a>(uv_os_sock_t sock) { Invoke(&amp;uv_tcp_open, <a class="code hl_function" href="classwpi_1_1uv_1_1_network_stream_impl.html#a0e1ffd085ad94b2ac4b018cebfd0e1d1">GetRaw</a>(), sock); }</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="comment"></span> </div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="comment">   * Enable/Disable Nagle&#39;s algorithm.</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="comment">   * Enable no delay operation (turns off Nagle&#39;s algorithm).</span></div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment">   * @param enable True to enable it, false otherwise.</span></div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment">   * @return True in case of success, false otherwise.</span></div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="comment">   */</span></div>
@@ -466,7 +466,7 @@ $(document).ready(function(){initNavTree('_tcp_8h_source.html',''); initResizabl
 <div class="ttc" id="aclasswpi_1_1uv_1_1_tcp_html_a1477fe9b526430ff5338018c9d1779ef"><div class="ttname"><a href="classwpi_1_1uv_1_1_tcp.html#a1477fe9b526430ff5338018c9d1779ef">wpi::uv::Tcp::Create</a></div><div class="ttdeci">static std::shared_ptr&lt; Tcp &gt; Create(Loop &amp;loop, unsigned int flags=AF_UNSPEC)</div><div class="ttdoc">Create a TCP handle.</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1_tcp_html_a163c3892951d94fb8bacd1fc1f490d5f"><div class="ttname"><a href="classwpi_1_1uv_1_1_tcp.html#a163c3892951d94fb8bacd1fc1f490d5f">wpi::uv::Tcp::Connect6</a></div><div class="ttdeci">void Connect6(std::string_view ip, unsigned int port, const std::shared_ptr&lt; TcpConnectReq &gt; &amp;req)</div><div class="ttdoc">Establish an IPv6 TCP connection.</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1_tcp_html_a3fbc4bc5a730f4a9fa7e9a8dd77daaea"><div class="ttname"><a href="classwpi_1_1uv_1_1_tcp.html#a3fbc4bc5a730f4a9fa7e9a8dd77daaea">wpi::uv::Tcp::Bind</a></div><div class="ttdeci">void Bind(std::string_view ip, unsigned int port, unsigned int flags=0)</div><div class="ttdoc">Bind the handle to an IPv4 address and port.</div></div>
-<div class="ttc" id="aclasswpi_1_1uv_1_1_tcp_html_a4b39ec455511fd2d83afd2f80051e53c"><div class="ttname"><a href="classwpi_1_1uv_1_1_tcp.html#a4b39ec455511fd2d83afd2f80051e53c">wpi::uv::Tcp::SetNoDelay</a></div><div class="ttdeci">bool SetNoDelay(bool enable)</div><div class="ttdoc">Enable/Disable Nagle's algorithm.</div><div class="ttdef"><b>Definition:</b> Tcp.h:119</div></div>
+<div class="ttc" id="aclasswpi_1_1uv_1_1_tcp_html_a4b39ec455511fd2d83afd2f80051e53c"><div class="ttname"><a href="classwpi_1_1uv_1_1_tcp.html#a4b39ec455511fd2d83afd2f80051e53c">wpi::uv::Tcp::SetNoDelay</a></div><div class="ttdeci">bool SetNoDelay(bool enable)</div><div class="ttdoc">Enable no delay operation (turns off Nagle's algorithm).</div><div class="ttdef"><b>Definition:</b> Tcp.h:119</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1_tcp_html_a4b8404e1377aa25933e417d4c9e73a7a"><div class="ttname"><a href="classwpi_1_1uv_1_1_tcp.html#a4b8404e1377aa25933e417d4c9e73a7a">wpi::uv::Tcp::SetSimultaneousAccepts</a></div><div class="ttdeci">bool SetSimultaneousAccepts(bool enable)</div><div class="ttdoc">Enable/Disable simultaneous asynchronous accept requests.</div><div class="ttdef"><b>Definition:</b> Tcp.h:147</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1_tcp_html_a5885bf7c4e0cb330589d06a5c9090e3d"><div class="ttname"><a href="classwpi_1_1uv_1_1_tcp.html#a5885bf7c4e0cb330589d06a5c9090e3d">wpi::uv::Tcp::Accept</a></div><div class="ttdeci">bool Accept(const std::shared_ptr&lt; Tcp &gt; &amp;client)</div><div class="ttdoc">Accept incoming connection.</div><div class="ttdef"><b>Definition:</b> Tcp.h:100</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1_tcp_html_a7067f3321811f28b95cace3cac35e323"><div class="ttname"><a href="classwpi_1_1uv_1_1_tcp.html#a7067f3321811f28b95cace3cac35e323">wpi::uv::Tcp::Connect</a></div><div class="ttdeci">void Connect(std::string_view ip, unsigned int port, std::function&lt; void()&gt; callback)</div><div class="ttdoc">Establish an IPv4 TCP connection.</div></div>
@@ -489,7 +489,7 @@ $(document).ready(function(){initNavTree('_tcp_8h_source.html',''); initResizabl
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><a class="el" href="dir_25302867c2307ab8d43a1b1d664c1ea4.html">uv</a></li><li class="navelem"><b>Tcp.h</b></li>
-    <li class="footer">Generated on Wed Oct 20 2021 15:48:56 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Wed Oct 20 2021 18:20:41 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

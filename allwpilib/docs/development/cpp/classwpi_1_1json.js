@@ -1,5 +1,6 @@
 var classwpi_1_1json =
 [
+    [ "serializer", "classwpi_1_1json_1_1serializer.html", "classwpi_1_1json_1_1serializer" ],
     [ "allocator_type", "classwpi_1_1json.html#a0977fc0c16c2d2b69cd7b0e4613dbfed", null ],
     [ "array_t", "classwpi_1_1json.html#a12095ab10e9bed9fe0b30aadcd829460", null ],
     [ "const_iterator", "classwpi_1_1json.html#a74348c2a8325d68c265d359e5dd60c95", null ],
