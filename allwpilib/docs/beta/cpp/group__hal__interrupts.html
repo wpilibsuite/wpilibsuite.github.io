@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
    </div>
   </td>
  </tr>
@@ -171,7 +171,7 @@ Functions</h2></td></tr>
 <p>Initializes an interrupt. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">watcher</td><td>true for synchronous interrupts, false for asynchronous </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -209,7 +209,8 @@ Functions</h2></td></tr>
 <p >This is in the same time domain as <a class="el" href="group__hal__capi.html#ga90870d91c61183d070b6064020e8a0c8" title="Reads the microsecond-resolution timer on the FPGA.">HAL_GetFPGATime()</a>. It only contains the bottom 32 bits of the timestamp. If your robot has been running for over 1 hour, you will need to fill in the upper 32 bits yourself.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">interruptHandle</td><td>the interrupt handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">interruptHandle</td><td>the interrupt handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -247,7 +248,8 @@ Functions</h2></td></tr>
 <p >This is in the same time domain as <a class="el" href="group__hal__capi.html#ga90870d91c61183d070b6064020e8a0c8" title="Reads the microsecond-resolution timer on the FPGA.">HAL_GetFPGATime()</a>. It only contains the bottom 32 bits of the timestamp. If your robot has been running for over 1 hour, you will need to fill in the upper 32 bits yourself.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">interruptHandle</td><td>the interrupt handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">interruptHandle</td><td>the interrupt handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -285,7 +287,8 @@ Functions</h2></td></tr>
 <p >This will release both rising and falling waiters.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">interruptHandle</td><td>the interrupt handle to release </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">interruptHandle</td><td>the interrupt handle to release </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -333,9 +336,10 @@ Functions</h2></td></tr>
 <p>Requests interrupts on a specific digital source. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">interruptHandle</td><td>the interrupt handle </td></tr>
-    <tr><td class="paramname">digitalSourceHandle</td><td>the digital source handle (either a HAL_AnalogTriggerHandle or a HAL_DigitalHandle) </td></tr>
-    <tr><td class="paramname">analogTriggerType</td><td>the trigger type if the source is an AnalogTrigger </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">interruptHandle</td><td>the interrupt handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">digitalSourceHandle</td><td>the digital source handle (either a HAL_AnalogTriggerHandle or a HAL_DigitalHandle) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">analogTriggerType</td><td>the trigger type if the source is an AnalogTrigger </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -384,9 +388,10 @@ Functions</h2></td></tr>
 <p >Note that both edges triggered is a valid configuration.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">interruptHandle</td><td>the interrupt handle </td></tr>
-    <tr><td class="paramname">risingEdge</td><td>true for triggering on rising edge </td></tr>
-    <tr><td class="paramname">fallingEdge</td><td>true for triggering on falling edge </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">interruptHandle</td><td>the interrupt handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">risingEdge</td><td>true for triggering on rising edge </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fallingEdge</td><td>true for triggering on falling edge </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -434,9 +439,10 @@ Functions</h2></td></tr>
 <p>In synchronous mode, waits for the defined interrupt to occur. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">interruptHandle</td><td>the interrupt handle </td></tr>
-    <tr><td class="paramname">timeout</td><td>timeout in seconds </td></tr>
-    <tr><td class="paramname">ignorePrevious</td><td>if true, ignore interrupts that happened before waitForInterrupt was called </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">interruptHandle</td><td>the interrupt handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td>timeout in seconds </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ignorePrevious</td><td>if true, ignore interrupts that happened before waitForInterrupt was called </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -449,7 +455,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Oct 11 2021 03:11:20 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Wed Oct 20 2021 01:08:44 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

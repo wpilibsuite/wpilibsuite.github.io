@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
    </div>
   </td>
  </tr>
@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('group__ntcore__logger__func.html','');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga8171c7719887be8c60df6fbbf8408399"><td class="memItemLeft" align="right" valign="top">NT_Logger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__logger__func.html#ga8171c7719887be8c60df6fbbf8408399">nt::AddLogger</a> (NT_Inst inst, std::function&lt; void(const <a class="el" href="classnt_1_1LogMessage.html">LogMessage</a> &amp;msg)&gt; func, unsigned int min_level, unsigned int max_level)</td></tr>
+<tr class="memitem:ga8171c7719887be8c60df6fbbf8408399"><td class="memItemLeft" align="right" valign="top">NT_Logger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__logger__func.html#ga8171c7719887be8c60df6fbbf8408399">nt::AddLogger</a> (NT_Inst inst, std::function&lt; void(const <a class="el" href="classnt_1_1_log_message.html">LogMessage</a> &amp;msg)&gt; func, unsigned int min_level, unsigned int max_level)</td></tr>
 <tr class="memdesc:ga8171c7719887be8c60df6fbbf8408399"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add logger callback function.  <a href="group__ntcore__logger__func.html#ga8171c7719887be8c60df6fbbf8408399">More...</a><br /></td></tr>
 <tr class="separator:ga8171c7719887be8c60df6fbbf8408399"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0941bdeffbe679fa463f30c674e4a203"><td class="memItemLeft" align="right" valign="top">NT_LoggerPoller&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__logger__func.html#ga0941bdeffbe679fa463f30c674e4a203">nt::CreateLoggerPoller</a> (NT_Inst inst)</td></tr>
@@ -111,10 +111,10 @@ Functions</h2></td></tr>
 <tr class="memitem:ga875a42e5559a9fb660855de570fa9445"><td class="memItemLeft" align="right" valign="top">NT_Logger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__logger__func.html#ga875a42e5559a9fb660855de570fa9445">nt::AddPolledLogger</a> (NT_LoggerPoller poller, unsigned int min_level, unsigned int max_level)</td></tr>
 <tr class="memdesc:ga875a42e5559a9fb660855de570fa9445"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the log level for a log poller.  <a href="group__ntcore__logger__func.html#ga875a42e5559a9fb660855de570fa9445">More...</a><br /></td></tr>
 <tr class="separator:ga875a42e5559a9fb660855de570fa9445"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga819f35e5e2864fefe1b676d1326f48f3"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classnt_1_1LogMessage.html">LogMessage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__logger__func.html#ga819f35e5e2864fefe1b676d1326f48f3">nt::PollLogger</a> (NT_LoggerPoller poller)</td></tr>
+<tr class="memitem:ga819f35e5e2864fefe1b676d1326f48f3"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classnt_1_1_log_message.html">LogMessage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__logger__func.html#ga819f35e5e2864fefe1b676d1326f48f3">nt::PollLogger</a> (NT_LoggerPoller poller)</td></tr>
 <tr class="memdesc:ga819f35e5e2864fefe1b676d1326f48f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the next log event.  <a href="group__ntcore__logger__func.html#ga819f35e5e2864fefe1b676d1326f48f3">More...</a><br /></td></tr>
 <tr class="separator:ga819f35e5e2864fefe1b676d1326f48f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga19be84b6634ca50e6d317fc3fae728c3"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classnt_1_1LogMessage.html">LogMessage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__logger__func.html#ga19be84b6634ca50e6d317fc3fae728c3">nt::PollLogger</a> (NT_LoggerPoller poller, double timeout, bool *timed_out)</td></tr>
+<tr class="memitem:ga19be84b6634ca50e6d317fc3fae728c3"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classnt_1_1_log_message.html">LogMessage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__logger__func.html#ga19be84b6634ca50e6d317fc3fae728c3">nt::PollLogger</a> (NT_LoggerPoller poller, double timeout, bool *timed_out)</td></tr>
 <tr class="memdesc:ga19be84b6634ca50e6d317fc3fae728c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the next log event.  <a href="group__ntcore__logger__func.html#ga19be84b6634ca50e6d317fc3fae728c3">More...</a><br /></td></tr>
 <tr class="separator:ga19be84b6634ca50e6d317fc3fae728c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga94afbd1ea3e48f43afef327cb5edc1e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ntcore__logger__func.html#ga94afbd1ea3e48f43afef327cb5edc1e6">nt::CancelPollLogger</a> (NT_LoggerPoller poller)</td></tr>
@@ -144,7 +144,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::function&lt; void(const <a class="el" href="classnt_1_1LogMessage.html">LogMessage</a> &amp;msg)&gt;&#160;</td>
+          <td class="paramtype">std::function&lt; void(const <a class="el" href="classnt_1_1_log_message.html">LogMessage</a> &amp;msg)&gt;&#160;</td>
           <td class="paramname"><em>func</em>, </td>
         </tr>
         <tr>
@@ -317,7 +317,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; <a class="el" href="classnt_1_1LogMessage.html">LogMessage</a> &gt; nt::PollLogger </td>
+          <td class="memname">std::vector&lt; <a class="el" href="classnt_1_1_log_message.html">LogMessage</a> &gt; nt::PollLogger </td>
           <td>(</td>
           <td class="paramtype">NT_LoggerPoller&#160;</td>
           <td class="paramname"><em>poller</em></td><td>)</td>
@@ -345,7 +345,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; <a class="el" href="classnt_1_1LogMessage.html">LogMessage</a> &gt; nt::PollLogger </td>
+          <td class="memname">std::vector&lt; <a class="el" href="classnt_1_1_log_message.html">LogMessage</a> &gt; nt::PollLogger </td>
           <td>(</td>
           <td class="paramtype">NT_LoggerPoller&#160;</td>
           <td class="paramname"><em>poller</em>, </td>
@@ -454,7 +454,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Oct 11 2021 03:11:20 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Wed Oct 20 2021 01:08:44 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

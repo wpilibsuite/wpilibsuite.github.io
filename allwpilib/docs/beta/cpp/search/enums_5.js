@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['motortype_0',['MotorType',['../classfrc_1_1RobotDriveBase.html#a91bbe6376ee340272ae36ea20b608754',1,'frc::RobotDriveBase']]]
+  ['hal_5fhandleenum_0',['HAL_HandleEnum',['../namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9',1,'hal']]]
 ];

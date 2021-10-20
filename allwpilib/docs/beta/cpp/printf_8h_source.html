@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
    </div>
   </td>
  </tr>
@@ -130,7 +130,13 @@ $(document).ready(function(){initNavTree('printf_8h_source.html',''); initResiza
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <span class="keyword">using</span> <a class="code hl_class" href="classbasic__format__arg.html">format_arg</a> = <a class="code hl_class" href="classbasic__format__arg.html">basic_format_arg&lt;basic_printf_context&gt;</a>;</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <span class="keyword">using</span> <a class="code hl_class" href="classbasic__printf__parse__context.html">parse_context_type</a> = <a class="code hl_class" href="classbasic__printf__parse__context.html">basic_printf_parse_context&lt;Char&gt;</a>;</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="keyword">using</span> <a class="code hl_struct" href="structprintf__formatter.html">formatter_type</a> = <a class="code hl_struct" href="structprintf__formatter.html">printf_formatter&lt;T&gt;</a>;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment"></span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">    \rst</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">    Constructs a ``printf_context`` object. References to the arguments are</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">    stored in the context object so make sure they have appropriate lifetimes.</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">    \endrst</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classbasic__printf__context.html#adfdcf4066bb737766d1d1905f7b3e320">   44</a></span>  <a class="code hl_function" href="classbasic__printf__context.html#adfdcf4066bb737766d1d1905f7b3e320">basic_printf_context</a>(OutputIt out,</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                       <a class="code hl_class" href="classbasic__format__args.html">basic_format_args&lt;basic_printf_context&gt;</a> args)</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>      : out_(out), args_(args) {}</div>
@@ -357,12 +363,14 @@ $(document).ready(function(){initNavTree('printf_8h_source.html',''); initResiza
 <div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>  OutputIt operator()(T <a class="code hl_class" href="classvalue.html">value</a>) {</div>
 <div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>    <span class="keywordflow">return</span> base::operator()(<a class="code hl_class" href="classvalue.html">value</a>);</div>
 <div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>  }</div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span> </div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span><span class="comment"></span> </div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span><span class="comment">  /** Formats a null-terminated C string. */</span></div>
 <div class="line"><a id="l00272" name="l00272"></a><span class="lineno"><a class="line" href="classprintf__arg__formatter.html#a0ee64afba0825732d80e28c63992c10f">  272</a></span>  OutputIt <a class="code hl_function" href="classprintf__arg__formatter.html#a0ee64afba0825732d80e28c63992c10f">operator()</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_class" href="classvalue.html">value</a>) {</div>
 <div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>    <span class="keywordflow">if</span> (<a class="code hl_class" href="classvalue.html">value</a>) <span class="keywordflow">return</span> base::operator()(<a class="code hl_class" href="classvalue.html">value</a>);</div>
 <div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>    <span class="keywordflow">return</span> write_null_pointer(this-&gt;specs.type != <span class="charliteral">&#39;p&#39;</span>);</div>
 <div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>  }</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span> </div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span><span class="comment"></span> </div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span><span class="comment">  /** Formats a null-terminated wide C string. */</span></div>
 <div class="line"><a id="l00278" name="l00278"></a><span class="lineno"><a class="line" href="classprintf__arg__formatter.html#a48d4afbaf5a4d0e6e0d0e26fe7a902c0">  278</a></span>  OutputIt <a class="code hl_function" href="classprintf__arg__formatter.html#a48d4afbaf5a4d0e6e0d0e26fe7a902c0">operator()</a>(<span class="keyword">const</span> <span class="keywordtype">wchar_t</span>* <a class="code hl_class" href="classvalue.html">value</a>) {</div>
 <div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>    <span class="keywordflow">if</span> (<a class="code hl_class" href="classvalue.html">value</a>) <span class="keywordflow">return</span> base::operator()(<a class="code hl_class" href="classvalue.html">value</a>);</div>
 <div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    <span class="keywordflow">return</span> write_null_pointer(this-&gt;specs.type != <span class="charliteral">&#39;p&#39;</span>);</div>
@@ -371,11 +379,13 @@ $(document).ready(function(){initNavTree('printf_8h_source.html',''); initResiza
 <div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>  OutputIt operator()(<a class="code hl_class" href="classbasic__string__view.html">basic_string_view&lt;Char&gt;</a> <a class="code hl_class" href="classvalue.html">value</a>) {</div>
 <div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>    <span class="keywordflow">return</span> base::operator()(<a class="code hl_class" href="classvalue.html">value</a>);</div>
 <div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>  }</div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span> </div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span><span class="comment"></span> </div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span><span class="comment">  /** Formats a pointer. */</span></div>
 <div class="line"><a id="l00288" name="l00288"></a><span class="lineno"><a class="line" href="classprintf__arg__formatter.html#a06c4c8137ac92b3a196c9ca4a6361a0b">  288</a></span>  OutputIt <a class="code hl_function" href="classprintf__arg__formatter.html#a06c4c8137ac92b3a196c9ca4a6361a0b">operator()</a>(<span class="keyword">const</span> <span class="keywordtype">void</span>* <a class="code hl_class" href="classvalue.html">value</a>) {</div>
 <div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>    <span class="keywordflow">return</span> <a class="code hl_class" href="classvalue.html">value</a> ? base::operator()(<a class="code hl_class" href="classvalue.html">value</a>) : write_null_pointer();</div>
 <div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>  }</div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span> </div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span><span class="comment"></span> </div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span><span class="comment">  /** Formats an argument of a custom (user-defined) type. */</span></div>
 <div class="line"><a id="l00293" name="l00293"></a><span class="lineno"><a class="line" href="classprintf__arg__formatter.html#af500a78738619292860f14983044a7d4">  293</a></span>  OutputIt <a class="code hl_function" href="classprintf__arg__formatter.html#af500a78738619292860f14983044a7d4">operator()</a>(<span class="keyword">typename</span> <a class="code hl_class" href="classbasic__format__arg_1_1handle.html">basic_format_arg&lt;context_type&gt;::handle</a> handle) {</div>
 <div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>    <span class="keyword">auto</span> parse_ctx =</div>
 <div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>        <a class="code hl_class" href="classbasic__printf__parse__context.html">basic_printf_parse_context&lt;Char&gt;</a>(<a class="code hl_class" href="classbasic__string__view.html">basic_string_view&lt;Char&gt;</a>());</div>
@@ -611,13 +621,25 @@ $(document).ready(function(){initNavTree('printf_8h_source.html',''); initResiza
 <div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span> </div>
 <div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span><span class="keyword">using</span> <a class="code hl_class" href="classbasic__format__args.html">printf_args</a> = <a class="code hl_class" href="classbasic__format__args.html">basic_format_args&lt;printf_context&gt;</a>;</div>
 <div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span><span class="keyword">using</span> <a class="code hl_class" href="classbasic__format__args.html">wprintf_args</a> = <a class="code hl_class" href="classbasic__format__args.html">basic_format_args&lt;wprintf_context&gt;</a>;</div>
-<div class="line"><a id="l00528" name="l00528"></a><span class="lineno">  528</span> </div>
+<div class="line"><a id="l00528" name="l00528"></a><span class="lineno">  528</span><span class="comment"></span> </div>
+<div class="line"><a id="l00529" name="l00529"></a><span class="lineno">  529</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00530" name="l00530"></a><span class="lineno">  530</span><span class="comment">  \rst</span></div>
+<div class="line"><a id="l00531" name="l00531"></a><span class="lineno">  531</span><span class="comment">  Constructs an `~fmt::format_arg_store` object that contains references to</span></div>
+<div class="line"><a id="l00532" name="l00532"></a><span class="lineno">  532</span><span class="comment">  arguments and can be implicitly converted to `~fmt::printf_args`.</span></div>
+<div class="line"><a id="l00533" name="l00533"></a><span class="lineno">  533</span><span class="comment">  \endrst</span></div>
+<div class="line"><a id="l00534" name="l00534"></a><span class="lineno">  534</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00535" name="l00535"></a><span class="lineno">  535</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span>... T&gt;</div>
 <div class="line"><a id="l00536" name="l00536"></a><span class="lineno">  536</span><span class="keyword">inline</span> <span class="keyword">auto</span> make_printf_args(<span class="keyword">const</span> T&amp;... args)</div>
 <div class="line"><a id="l00537" name="l00537"></a><span class="lineno">  537</span>    -&gt; <a class="code hl_class" href="classformat__arg__store.html">format_arg_store</a>&lt;<a class="code hl_class" href="classbasic__printf__context.html">printf_context</a>, T...&gt; {</div>
 <div class="line"><a id="l00538" name="l00538"></a><span class="lineno">  538</span>  <span class="keywordflow">return</span> {args...};</div>
 <div class="line"><a id="l00539" name="l00539"></a><span class="lineno">  539</span>}</div>
-<div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span> </div>
+<div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span><span class="comment"></span> </div>
+<div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span><span class="comment">  \rst</span></div>
+<div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span><span class="comment">  Constructs an `~fmt::format_arg_store` object that contains references to</span></div>
+<div class="line"><a id="l00544" name="l00544"></a><span class="lineno">  544</span><span class="comment">  arguments and can be implicitly converted to `~fmt::wprintf_args`.</span></div>
+<div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span><span class="comment">  \endrst</span></div>
+<div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span>... T&gt;</div>
 <div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span><span class="keyword">inline</span> <span class="keyword">auto</span> make_wprintf_args(<span class="keyword">const</span> T&amp;... args)</div>
 <div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span>    -&gt; <a class="code hl_class" href="classformat__arg__store.html">format_arg_store</a>&lt;<a class="code hl_class" href="classbasic__printf__context.html">wprintf_context</a>, T...&gt; {</div>
@@ -633,7 +655,16 @@ $(document).ready(function(){initNavTree('printf_8h_source.html',''); initResiza
 <div class="line"><a id="l00559" name="l00559"></a><span class="lineno">  559</span>  vprintf(<a class="code hl_class" href="classbuffer.html">buffer</a>, to_string_view(fmt), args);</div>
 <div class="line"><a id="l00560" name="l00560"></a><span class="lineno">  560</span>  <span class="keywordflow">return</span> to_string(<a class="code hl_class" href="classbuffer.html">buffer</a>);</div>
 <div class="line"><a id="l00561" name="l00561"></a><span class="lineno">  561</span>}</div>
-<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span> </div>
+<div class="line"><a id="l00562" name="l00562"></a><span class="lineno">  562</span><span class="comment"></span> </div>
+<div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span><span class="comment">  \rst</span></div>
+<div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span><span class="comment">  Formats arguments and returns the result as a string.</span></div>
+<div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span><span class="comment"></span> </div>
+<div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span><span class="comment">  **Example**::</span></div>
+<div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span><span class="comment"></span> </div>
+<div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span><span class="comment">    std::string message = fmt::sprintf(&quot;The answer is %d&quot;, 42);</span></div>
+<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span><span class="comment">  \endrst</span></div>
+<div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span><span class="comment">*/</span></div>
 <div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> S, <span class="keyword">typename</span>... T,</div>
 <div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span>          <span class="keyword">typename</span> Char = enable_if_t&lt;detail::is_string&lt;S&gt;::value, char_t&lt;S&gt;&gt;&gt;</div>
 <div class="line"><a id="l00574" name="l00574"></a><span class="lineno">  574</span><span class="keyword">inline</span> <span class="keyword">auto</span> sprintf(<span class="keyword">const</span> S&amp; fmt, <span class="keyword">const</span> T&amp;... args) -&gt; std::basic_string&lt;Char&gt; {</div>
@@ -653,7 +684,16 @@ $(document).ready(function(){initNavTree('printf_8h_source.html',''); initResiza
 <div class="line"><a id="l00588" name="l00588"></a><span class="lineno">  588</span>             ? -1</div>
 <div class="line"><a id="l00589" name="l00589"></a><span class="lineno">  589</span>             : <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(size);</div>
 <div class="line"><a id="l00590" name="l00590"></a><span class="lineno">  590</span>}</div>
-<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span> </div>
+<div class="line"><a id="l00591" name="l00591"></a><span class="lineno">  591</span><span class="comment"></span> </div>
+<div class="line"><a id="l00592" name="l00592"></a><span class="lineno">  592</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00593" name="l00593"></a><span class="lineno">  593</span><span class="comment">  \rst</span></div>
+<div class="line"><a id="l00594" name="l00594"></a><span class="lineno">  594</span><span class="comment">  Prints formatted data to the file *f*.</span></div>
+<div class="line"><a id="l00595" name="l00595"></a><span class="lineno">  595</span><span class="comment"></span> </div>
+<div class="line"><a id="l00596" name="l00596"></a><span class="lineno">  596</span><span class="comment">  **Example**::</span></div>
+<div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span><span class="comment"></span> </div>
+<div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span><span class="comment">    fmt::fprintf(stderr, &quot;Don&#39;t %s!&quot;, &quot;panic&quot;);</span></div>
+<div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span><span class="comment">  \endrst</span></div>
+<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> S, <span class="keyword">typename</span>... T, <span class="keyword">typename</span> Char = char_t&lt;S&gt;&gt;</div>
 <div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span><span class="keyword">inline</span> <span class="keyword">auto</span> fprintf(std::FILE* f, <span class="keyword">const</span> S&amp; fmt, <span class="keyword">const</span> T&amp;... args) -&gt; <span class="keywordtype">int</span> {</div>
 <div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span>  <span class="keyword">using</span> context = <a class="code hl_class" href="classbasic__printf__context.html">basic_printf_context_t&lt;Char&gt;</a>;</div>
@@ -668,7 +708,16 @@ $(document).ready(function(){initNavTree('printf_8h_source.html',''); initResiza
 <div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span>    -&gt; <span class="keywordtype">int</span> {</div>
 <div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span>  <span class="keywordflow">return</span> vfprintf(stdout, to_string_view(fmt), args);</div>
 <div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span>}</div>
-<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span> </div>
+<div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span><span class="comment"></span> </div>
+<div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span><span class="comment">  \rst</span></div>
+<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span><span class="comment">  Prints formatted data to ``stdout``.</span></div>
+<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span><span class="comment"></span> </div>
+<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span><span class="comment">  **Example**::</span></div>
+<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span><span class="comment"></span> </div>
+<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span><span class="comment">    fmt::printf(&quot;Elapsed time: %.2f seconds&quot;, 1.23);</span></div>
+<div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span><span class="comment">  \endrst</span></div>
+<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> S, <span class="keyword">typename</span>... T, FMT_ENABLE_IF(detail::is_string&lt;S&gt;::value)&gt;</div>
 <div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span><span class="keyword">inline</span> <span class="keyword">auto</span> printf(<span class="keyword">const</span> S&amp; fmt, <span class="keyword">const</span> T&amp;... args) -&gt; <span class="keywordtype">int</span> {</div>
 <div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span>  <span class="keywordflow">return</span> vprintf(</div>
@@ -738,7 +787,7 @@ $(document).ready(function(){initNavTree('printf_8h_source.html',''); initResiza
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_07f1050b175e2d01c230e5cadf135f7c.html">fmtlib</a></li><li class="navelem"><a class="el" href="dir_f186fa79a3895d81ef02af9fef546a30.html">include</a></li><li class="navelem"><a class="el" href="dir_37137cfaace3bfc79a7a3aee825a2892.html">fmt</a></li><li class="navelem"><b>printf.h</b></li>
-    <li class="footer">Generated on Mon Oct 11 2021 03:11:19 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Wed Oct 20 2021 01:08:43 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
    </div>
   </td>
  </tr>
@@ -168,7 +168,8 @@ Functions</h2></td></tr>
 <p >This happens by calculating the average value of the gyro over 5 seconds, and setting that as the center. Note that this call blocks for 5 seconds to perform this.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the gyro handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the gyro handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -230,7 +231,8 @@ Functions</h2></td></tr>
 <p>Gets the gyro angle in degrees. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the gyro handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the gyro handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -268,7 +270,8 @@ Functions</h2></td></tr>
 <p >Can be used to not repeat a calibration but reconstruct the gyro object.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the gyro handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the gyro handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -306,7 +309,8 @@ Functions</h2></td></tr>
 <p >Can be used to not repeat a calibration but reconstruct the gyro object.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the gyro handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the gyro handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -343,7 +347,8 @@ Functions</h2></td></tr>
 <p>Gets the gyro rate in degrees/second. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the gyro handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the gyro handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -386,8 +391,9 @@ Functions</h2></td></tr>
 <p>Initializes an analog gyro. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>handle to the analog port </td></tr>
-    <tr><td class="paramname">allocationLocation</td><td>the location where the allocation is occuring (can be null) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>handle to the analog port </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">allocationLocation</td><td>the location where the allocation is occuring (can be null) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
   </table>
   </dd>
 </dl>
@@ -424,7 +430,8 @@ Functions</h2></td></tr>
 <p>Resets the analog gyro value to 0. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the gyro handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the gyro handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
   </table>
   </dd>
 </dl>
@@ -466,8 +473,9 @@ Functions</h2></td></tr>
 <p>Sets the deadband of the analog gyro. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the gyro handle </td></tr>
-    <tr><td class="paramname">volts</td><td>the voltage deadband </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the gyro handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">volts</td><td>the voltage deadband </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -522,10 +530,11 @@ Functions</h2></td></tr>
 <p >This is meant to be used if you want to reuse the values from a previous calibration.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the gyro handle </td></tr>
-    <tr><td class="paramname">voltsPerDegreePerSecond</td><td>the gyro volts scaling </td></tr>
-    <tr><td class="paramname">offset</td><td>the gyro offset </td></tr>
-    <tr><td class="paramname">center</td><td>the gyro center </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the gyro handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">voltsPerDegreePerSecond</td><td>the gyro volts scaling </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">offset</td><td>the gyro offset </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">center</td><td>the gyro center </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
   </table>
   </dd>
 </dl>
@@ -567,8 +576,9 @@ Functions</h2></td></tr>
 <p>Sets the analog gyro volts per degrees per second scaling. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the gyro handle </td></tr>
-    <tr><td class="paramname">voltsPerDegreePerSecond</td><td>the gyro volts scaling </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the gyro handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">voltsPerDegreePerSecond</td><td>the gyro volts scaling </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
   </table>
   </dd>
 </dl>
@@ -604,7 +614,8 @@ Functions</h2></td></tr>
 <p>Sets up an analog gyro with the proper offsets and settings for the KOP analog gyro. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">handle</td><td>the gyro handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>the gyro handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
   </table>
   </dd>
 </dl>
@@ -616,7 +627,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Oct 11 2021 03:11:20 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Wed Oct 20 2021 01:08:44 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

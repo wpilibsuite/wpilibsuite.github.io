@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
    </div>
   </td>
  </tr>
@@ -215,7 +215,8 @@ Functions</h2></td></tr>
 <p>Frees a PWM port. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pwmPortHandle</td><td>the pwm handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pwmPortHandle</td><td>the pwm handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -282,12 +283,13 @@ Functions</h2></td></tr>
 <p >Values are in raw FPGA units. These units have the potential to change for any FPGA release.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pwmPortHandle</td><td>the PWM handle </td></tr>
-    <tr><td class="paramname">maxPwm</td><td>the maximum PWM value </td></tr>
-    <tr><td class="paramname">deadbandMaxPwm</td><td>the high range of the center deadband </td></tr>
-    <tr><td class="paramname">centerPwm</td><td>the center PWM value </td></tr>
-    <tr><td class="paramname">deadbandMinPwm</td><td>the low range of the center deadband </td></tr>
-    <tr><td class="paramname">minPwm</td><td>the minimum PWM value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pwmPortHandle</td><td>the PWM handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">maxPwm</td><td>the maximum PWM value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">deadbandMaxPwm</td><td>the high range of the center deadband </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">centerPwm</td><td>the center PWM value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">deadbandMinPwm</td><td>the low range of the center deadband </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">minPwm</td><td>the minimum PWM value </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -312,6 +314,12 @@ Functions</h2></td></tr>
 
 <p>Gets the pwm starting cycle time. </p>
 <p >This time is relative to the FPGA time.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>the pwm cycle start time </dd></dl>
 
 </div>
@@ -345,7 +353,8 @@ Functions</h2></td></tr>
 <p>Gets the current eliminate deadband value. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pwmPortHandle</td><td>the PWM handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pwmPortHandle</td><td>the PWM handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -370,6 +379,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the loop timing of the PWM system. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section return"><dt>Returns</dt><dd>the loop time </dd></dl>
 
 </div>
@@ -404,7 +419,8 @@ Functions</h2></td></tr>
 <p >The values range from 0 to 1.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pwmPortHandle</td><td>the PWM handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pwmPortHandle</td><td>the PWM handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -442,7 +458,8 @@ Functions</h2></td></tr>
 <p >The values are in raw FPGA units, and have the potential to change with any FPGA release.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pwmPortHandle</td><td>the PWM handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pwmPortHandle</td><td>the PWM handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -480,7 +497,8 @@ Functions</h2></td></tr>
 <p >The values range from -1 to 1.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pwmPortHandle</td><td>the PWM handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pwmPortHandle</td><td>the PWM handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -523,8 +541,9 @@ Functions</h2></td></tr>
 <p>Initializes a PWM port. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">portHandle</td><td>the port to initialize </td></tr>
-    <tr><td class="paramname">allocationLocation</td><td>the location where the allocation is occuring (can be null) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">portHandle</td><td>the port to initialize </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">allocationLocation</td><td>the location where the allocation is occuring (can be null) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -561,7 +580,8 @@ Functions</h2></td></tr>
 <p>Forces a PWM signal to go to 0 temporarily. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pwmPortHandle</td><td>the PWM handle. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pwmPortHandle</td><td>the PWM handle. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -628,12 +648,13 @@ Functions</h2></td></tr>
 <p >All values are in milliseconds.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pwmPortHandle</td><td>the PWM handle </td></tr>
-    <tr><td class="paramname">maxPwm</td><td>the maximum PWM value </td></tr>
-    <tr><td class="paramname">deadbandMaxPwm</td><td>the high range of the center deadband </td></tr>
-    <tr><td class="paramname">centerPwm</td><td>the center PWM value </td></tr>
-    <tr><td class="paramname">deadbandMinPwm</td><td>the low range of the center deadband </td></tr>
-    <tr><td class="paramname">minPwm</td><td>the minimum PWM value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pwmPortHandle</td><td>the PWM handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">maxPwm</td><td>the maximum PWM value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">deadbandMaxPwm</td><td>the high range of the center deadband </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">centerPwm</td><td>the center PWM value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">deadbandMinPwm</td><td>the low range of the center deadband </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">minPwm</td><td>the minimum PWM value </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -701,12 +722,13 @@ Functions</h2></td></tr>
 <p >Values are in raw FPGA units.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pwmPortHandle</td><td>the PWM handle </td></tr>
-    <tr><td class="paramname">maxPwm</td><td>the maximum PWM value </td></tr>
-    <tr><td class="paramname">deadbandMaxPwm</td><td>the high range of the center deadband </td></tr>
-    <tr><td class="paramname">centerPwm</td><td>the center PWM value </td></tr>
-    <tr><td class="paramname">deadbandMinPwm</td><td>the low range of the center deadband </td></tr>
-    <tr><td class="paramname">minPwm</td><td>the minimum PWM value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pwmPortHandle</td><td>the PWM handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">maxPwm</td><td>the maximum PWM value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">deadbandMaxPwm</td><td>the high range of the center deadband </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">centerPwm</td><td>the center PWM value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">deadbandMinPwm</td><td>the low range of the center deadband </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">minPwm</td><td>the minimum PWM value </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -743,7 +765,8 @@ Functions</h2></td></tr>
 <p >The channel is disabled until the next time it is set. Note this is different from just setting a 0 speed, as this will actively stop all signaling on the channel.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pwmPortHandle</td><td>the PWM handle. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pwmPortHandle</td><td>the PWM handle. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -785,8 +808,9 @@ Functions</h2></td></tr>
 <p>Sets if the FPGA should output the center value if the input value is within the deadband. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pwmPortHandle</td><td>the PWM handle </td></tr>
-    <tr><td class="paramname">eliminateDeadband</td><td>true to eliminate deadband, otherwise false </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pwmPortHandle</td><td>the PWM handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">eliminateDeadband</td><td>true to eliminate deadband, otherwise false </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -828,8 +852,9 @@ Functions</h2></td></tr>
 <p>Sets how how often the PWM signal is squelched, thus scaling the period. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pwmPortHandle</td><td>the PWM handle. </td></tr>
-    <tr><td class="paramname">squelchMask</td><td>the 2-bit mask of outputs to squelch </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pwmPortHandle</td><td>the PWM handle. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">squelchMask</td><td>the 2-bit mask of outputs to squelch </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -872,8 +897,9 @@ Functions</h2></td></tr>
 <p >The values range from 0 to 1 and the period is controlled by the PWM Period and MinHigh registers.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pwmPortHandle</td><td>the PWM handle </td></tr>
-    <tr><td class="paramname">value</td><td>the positional PWM value to set </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pwmPortHandle</td><td>the PWM handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">position</td><td>the positional PWM value to set </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -916,8 +942,9 @@ Functions</h2></td></tr>
 <p >The values are in raw FPGA units, and have the potential to change with any FPGA release.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pwmPortHandle</td><td>the PWM handle </td></tr>
-    <tr><td class="paramname">value</td><td>the PWM value to set </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pwmPortHandle</td><td>the PWM handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>the PWM value to set </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -960,8 +987,9 @@ Functions</h2></td></tr>
 <p >The values range from -1 to 1 and the period is controlled by the PWM Period and MinHigh registers.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pwmPortHandle</td><td>the PWM handle </td></tr>
-    <tr><td class="paramname">value</td><td>the scaled PWM value to set </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pwmPortHandle</td><td>the PWM handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">speed</td><td>the scaled PWM value to set </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -973,7 +1001,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Oct 11 2021 03:11:20 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Wed Oct 20 2021 01:08:44 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

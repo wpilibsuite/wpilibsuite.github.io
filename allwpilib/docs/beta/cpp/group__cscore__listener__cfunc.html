@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
    </div>
   </td>
  </tr>
@@ -106,7 +106,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>CS_SetListenerOnStart
 void&#160;</td><td class="memItemRight" valign="bottom"><b>CS_SetListenerOnExit</b> (void(*onExit)(void *<a class="el" href="structdata.html">data</a>), void *<a class="el" href="structdata.html">data</a>)</td></tr>
 <tr class="separator:ga4cbd1deafda979fdfc21112cd6abe9f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga99a8dd6069f7f3f96aa923c5cc1a809b"><td class="memItemLeft" align="right" valign="top"><a id="ga99a8dd6069f7f3f96aa923c5cc1a809b" name="ga99a8dd6069f7f3f96aa923c5cc1a809b"></a>
-CS_Listener&#160;</td><td class="memItemRight" valign="bottom"><b>CS_AddListener</b> (void *<a class="el" href="structdata.html">data</a>, void(*callback)(void *<a class="el" href="structdata.html">data</a>, const struct <a class="el" href="structCS__Event.html">CS_Event</a> *event), int eventMask, CS_Bool immediateNotify, CS_Status *status)</td></tr>
+CS_Listener&#160;</td><td class="memItemRight" valign="bottom"><b>CS_AddListener</b> (void *<a class="el" href="structdata.html">data</a>, void(*callback)(void *<a class="el" href="structdata.html">data</a>, const struct <a class="el" href="struct_c_s___event.html">CS_Event</a> *event), int eventMask, CS_Bool immediateNotify, CS_Status *status)</td></tr>
 <tr class="separator:ga99a8dd6069f7f3f96aa923c5cc1a809b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6abb2e33f17c5dc953be4926d74a2c12"><td class="memItemLeft" align="right" valign="top"><a id="ga6abb2e33f17c5dc953be4926d74a2c12" name="ga6abb2e33f17c5dc953be4926d74a2c12"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>CS_RemoveListener</b> (CS_Listener handle, CS_Status *status)</td></tr>
@@ -121,13 +121,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>CS_DestroyListenerPol
 CS_Listener&#160;</td><td class="memItemRight" valign="bottom"><b>CS_AddPolledListener</b> (CS_ListenerPoller poller, int eventMask, CS_Bool immediateNotify, CS_Status *status)</td></tr>
 <tr class="separator:ga044bf78b743ee16be34a230262e518e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac4c88f2fc6e89278983bcc367cbcad8a"><td class="memItemLeft" align="right" valign="top"><a id="gac4c88f2fc6e89278983bcc367cbcad8a" name="gac4c88f2fc6e89278983bcc367cbcad8a"></a>
-struct <a class="el" href="structCS__Event.html">CS_Event</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>CS_PollListener</b> (CS_ListenerPoller poller, int *count)</td></tr>
+struct <a class="el" href="struct_c_s___event.html">CS_Event</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>CS_PollListener</b> (CS_ListenerPoller poller, int *count)</td></tr>
 <tr class="separator:gac4c88f2fc6e89278983bcc367cbcad8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga84212a407b428588d8e6095323ee4582"><td class="memItemLeft" align="right" valign="top"><a id="ga84212a407b428588d8e6095323ee4582" name="ga84212a407b428588d8e6095323ee4582"></a>
-struct <a class="el" href="structCS__Event.html">CS_Event</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>CS_PollListenerTimeout</b> (CS_ListenerPoller poller, int *count, double timeout, CS_Bool *timedOut)</td></tr>
+struct <a class="el" href="struct_c_s___event.html">CS_Event</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>CS_PollListenerTimeout</b> (CS_ListenerPoller poller, int *count, double timeout, CS_Bool *timedOut)</td></tr>
 <tr class="separator:ga84212a407b428588d8e6095323ee4582"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae8a62cbc77e6edf13f778491cff0a2fd"><td class="memItemLeft" align="right" valign="top"><a id="gae8a62cbc77e6edf13f778491cff0a2fd" name="gae8a62cbc77e6edf13f778491cff0a2fd"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>CS_FreeEvents</b> (struct <a class="el" href="structCS__Event.html">CS_Event</a> *arr, int count)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CS_FreeEvents</b> (struct <a class="el" href="struct_c_s___event.html">CS_Event</a> *arr, int count)</td></tr>
 <tr class="separator:gae8a62cbc77e6edf13f778491cff0a2fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga748a935102fab2b693d49682cff0913b"><td class="memItemLeft" align="right" valign="top"><a id="ga748a935102fab2b693d49682cff0913b" name="ga748a935102fab2b693d49682cff0913b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>CS_CancelPollListener</b> (CS_ListenerPoller poller)</td></tr>
@@ -139,7 +139,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>CS_CancelPollListener
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Oct 11 2021 03:11:20 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Wed Oct 20 2021 01:08:44 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

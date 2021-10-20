@@ -4,11 +4,12 @@ var searchData=
   ['can_20api_20functions_1',['CAN API Functions',['../group__hal__canapi.html',1,'']]],
   ['can_20stream_20functions_2',['CAN Stream Functions',['../group__hal__canstream.html',1,'']]],
   ['client_2fserver_20functions_3',['Client/Server Functions',['../group__ntcore__network__cfunc.html',1,'(Global Namespace)'],['../group__ntcore__network__func.html',1,'(Global Namespace)']]],
-  ['connection_20listener_20functions_4',['Connection Listener Functions',['../group__ntcore__connectionlistener__cfunc.html',1,'(Global Namespace)'],['../group__ntcore__connectionlistener__func.html',1,'(Global Namespace)']]],
-  ['constants_20functions_5',['Constants Functions',['../group__hal__constants.html',1,'']]],
-  ['counter_20functions_6',['Counter Functions',['../group__hal__counter.html',1,'']]],
-  ['cscore_20c_20api_7',['cscore C API',['../group__cscore__c__api.html',1,'']]],
-  ['cscore_20c_2b_2b_20function_20api_8',['cscore C++ function API',['../group__cscore__cpp__api.html',1,'']]],
-  ['cscore_20c_2b_2b_20object_2doriented_20api_9',['cscore C++ object-oriented API',['../group__cscore__oo.html',1,'']]],
-  ['ctre_20pcm_20functions_10',['CTRE PCM Functions',['../group__hal__ctre__pcm.html',1,'']]]
+  ['compile_2dtime_20unit_20manipulators_4',['Compile-time Unit Manipulators',['../group___compile_time_unit_manipulators.html',1,'']]],
+  ['connection_20listener_20functions_5',['Connection Listener Functions',['../group__ntcore__connectionlistener__cfunc.html',1,'(Global Namespace)'],['../group__ntcore__connectionlistener__func.html',1,'(Global Namespace)']]],
+  ['constants_20functions_6',['Constants Functions',['../group__hal__constants.html',1,'']]],
+  ['counter_20functions_7',['Counter Functions',['../group__hal__counter.html',1,'']]],
+  ['cscore_20c_20api_8',['cscore C API',['../group__cscore__c__api.html',1,'']]],
+  ['cscore_20c_2b_2b_20function_20api_9',['cscore C++ function API',['../group__cscore__cpp__api.html',1,'']]],
+  ['cscore_20c_2b_2b_20object_2doriented_20api_10',['cscore C++ object-oriented API',['../group__cscore__oo.html',1,'']]],
+  ['ctre_20pcm_20functions_11',['CTRE PCM Functions',['../group__hal__ctre__pcm.html',1,'']]]
 ];

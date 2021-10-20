@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
    </div>
   </td>
  </tr>
@@ -204,7 +204,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetCounterPerio
 <p>Disables the down counting source to the counter. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">counterHandle</td><td>the counter handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">counterHandle</td><td>the counter handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -240,7 +241,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetCounterPerio
 <p>Disables the up counting source to the counter. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">counterHandle</td><td>the counter handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">counterHandle</td><td>the counter handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -276,7 +278,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetCounterPerio
 <p>Frees a counter. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">counterHandle</td><td>the counter handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">counterHandle</td><td>the counter handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -313,7 +316,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetCounterPerio
 <p >Reads the value at this instant. It may still be running, so it reflects the current value. Next time it is read, it might have a different value.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">counterHandle</td><td>the counter handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">counterHandle</td><td>the counter handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -350,7 +354,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetCounterPerio
 <p>Gets the last direction the counter value changed. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">counterHandle</td><td>the counter handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">counterHandle</td><td>the counter handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -388,7 +393,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetCounterPerio
 <p >Perform averaging to account for mechanical imperfections or as oversampling to increase resolution.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">counterHandle</td><td>the counter handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">counterHandle</td><td>the counter handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -426,7 +432,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetCounterPerio
 <p >Determine if the clocked input is stopped based on the MaxPeriod value set using the SetMaxPeriod method. If the clock exceeds the MaxPeriod, then the device (and counter) are assumed to be stopped and it returns true.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">counterHandle</td><td>the counter handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">counterHandle</td><td>the counter handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -469,8 +476,9 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetCounterPerio
 <p>Initializes a counter. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">mode</td><td>the counter mode </td></tr>
-    <tr><td class="paramname">index</td><td>the compressor index (output) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>the counter mode </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>the compressor index (output) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -508,7 +516,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetCounterPerio
 <p >Sets the counter value to zero. This does not effect the running state of the counter, just sets the current value to zero.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">counterHandle</td><td>the counter handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">counterHandle</td><td>the counter handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -550,8 +559,9 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetCounterPerio
 <p>Sets the average sample size of a counter. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">counterHandle</td><td>the counter handle </td></tr>
-    <tr><td class="paramname">size</td><td>the size of samples to average </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">counterHandle</td><td>the counter handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>the size of samples to average </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -599,9 +609,10 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetCounterPerio
 <p>Sets the source object that causes the counter to count down. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">counterHandle</td><td>the counter handle </td></tr>
-    <tr><td class="paramname">digitalSourceHandle</td><td>the digital source handle (either a HAL_AnalogTriggerHandle or a HAL_DigitalHandle) </td></tr>
-    <tr><td class="paramname">analogTriggerType</td><td>the analog trigger type if the source is an analog trigger </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">counterHandle</td><td>the counter handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">digitalSourceHandle</td><td>the digital source handle (either a HAL_AnalogTriggerHandle or a HAL_DigitalHandle) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">analogTriggerType</td><td>the analog trigger type if the source is an analog trigger </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -650,9 +661,10 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetCounterPerio
 <p >Note that both are allowed to be set true at the same time without issues.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">counterHandle</td><td>the counter handle </td></tr>
-    <tr><td class="paramname">risingEdge</td><td>true to trigger on rising </td></tr>
-    <tr><td class="paramname">fallingEdge</td><td>true to trigger on falling </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">counterHandle</td><td>the counter handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">risingEdge</td><td>true to trigger on rising </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fallingEdge</td><td>true to trigger on falling </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -689,7 +701,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetCounterPerio
 <p >The direction is determined by the B input, with counting happening with the A input.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">counterHandle</td><td>the counter handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">counterHandle</td><td>the counter handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -732,8 +745,9 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetCounterPerio
 <p >Sets the maximum period where the device is considered moving. This value is used to determine the "stopped" state of the counter using the HAL_GetCounterStopped method.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">counterHandle</td><td>the counter handle </td></tr>
-    <tr><td class="paramname">maxPeriod</td><td>the maximum period where the counted device is considered moving in seconds </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">counterHandle</td><td>the counter handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">maxPeriod</td><td>the maximum period where the counted device is considered moving in seconds </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -776,8 +790,9 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetCounterPerio
 <p >This mode is most useful for direction sensitive gear tooth sensors.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">counterHandle</td><td>the counter handle </td></tr>
-    <tr><td class="paramname">threshold</td><td>The pulse length beyond which the counter counts the opposite direction (seconds) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">counterHandle</td><td>the counter handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">threshold</td><td>The pulse length beyond which the counter counts the opposite direction (seconds) </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -820,8 +835,9 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetCounterPerio
 <p >This allows counters to change the direction they are counting in the case of 1X and 2X quadrature encoding only. Any other counter mode isn't supported.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">counterHandle</td><td>the counter handle </td></tr>
-    <tr><td class="paramname">reverseDirection</td><td>true if the value counted should be negated. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">counterHandle</td><td>the counter handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">reverseDirection</td><td>true if the value counted should be negated. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -864,8 +880,9 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetCounterPerio
 <p >Perform averaging to account for mechanical imperfections or as oversampling to increase resolution.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">counterHandle</td><td>the counter handle </td></tr>
-    <tr><td class="paramname">samplesToAverage</td><td>The number of samples to average from 1 to 127 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">counterHandle</td><td>the counter handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">samplesToAverage</td><td>The number of samples to average from 1 to 127 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -908,8 +925,9 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetCounterPerio
 <p >The counter counts up based on the time the input is triggered. High or Low depends on the highSemiPeriod parameter.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">counterHandle</td><td>the counter handle </td></tr>
-    <tr><td class="paramname">highSemiPeriod</td><td>true for counting when the input is high, false for low </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">counterHandle</td><td>the counter handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">highSemiPeriod</td><td>true for counting when the input is high, false for low </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -955,8 +973,9 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetCounterPerio
 <p >You will never see 0 samples output (except when there have been no events since an FPGA reset) and you will likely not see the stopped bit become true (since it is updated at the end of an average and there are no samples to average).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">counterHandle</td><td>the counter handle </td></tr>
-    <tr><td class="paramname">enabled</td><td>true to enable counter updating with no samples </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">counterHandle</td><td>the counter handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enabled</td><td>true to enable counter updating with no samples </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -993,7 +1012,8 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetCounterPerio
 <p >Up and down counts are sourced independently from two inputs.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">counterHandle</td><td>the counter handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">counterHandle</td><td>the counter handle </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1041,9 +1061,10 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetCounterPerio
 <p>Sets the source object that causes the counter to count up. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">counterHandle</td><td>the counter handle </td></tr>
-    <tr><td class="paramname">digitalSourceHandle</td><td>the digital source handle (either a HAL_AnalogTriggerHandle or a HAL_DigitalHandle) </td></tr>
-    <tr><td class="paramname">analogTriggerType</td><td>the analog trigger type if the source is an analog trigger </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">counterHandle</td><td>the counter handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">digitalSourceHandle</td><td>the digital source handle (either a HAL_AnalogTriggerHandle or a HAL_DigitalHandle) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">analogTriggerType</td><td>the analog trigger type if the source is an analog trigger </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1092,9 +1113,10 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetCounterPerio
 <p >Note that both are allowed to be set true at the same time without issues.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">counterHandle</td><td>the counter handle </td></tr>
-    <tr><td class="paramname">risingEdge</td><td>true to trigger on rising </td></tr>
-    <tr><td class="paramname">fallingEdge</td><td>true to trigger on falling </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">counterHandle</td><td>the counter handle </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">risingEdge</td><td>true to trigger on rising </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fallingEdge</td><td>true to trigger on falling </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>Error status variable. 0 on success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1106,7 +1128,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetCounterPerio
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Oct 11 2021 03:11:20 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Wed Oct 20 2021 01:08:44 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

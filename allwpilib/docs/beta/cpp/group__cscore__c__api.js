@@ -17,9 +17,9 @@ var group__cscore__c__api =
     [ "Logging Functions", "group__cscore__logging__cfunc.html", null ],
     [ "Library Shutdown Function", "group__cscore__shutdown__cfunc.html", null ],
     [ "Utility Functions", "group__cscore__utility__cfunc.html", null ],
-    [ "CS_VideoMode", "structCS__VideoMode.html", null ],
-    [ "CS_Event", "structCS__Event.html", null ],
-    [ "CS_UsbCameraInfo", "structCS__UsbCameraInfo.html", null ],
+    [ "CS_VideoMode", "struct_c_s___video_mode.html", null ],
+    [ "CS_Event", "struct_c_s___event.html", null ],
+    [ "CS_UsbCameraInfo", "struct_c_s___usb_camera_info.html", null ],
     [ "CS_UsbCameraInfo", "group__cscore__c__api.html#gadc1c443f3f1387d53adf6fce897454c6", null ],
     [ "CS_VideoMode", "group__cscore__c__api.html#ga6757c2391f3f39186e95837a9b4a0e03", null ],
     [ "CS_ConnectionStrategy", "group__cscore__c__api.html#ga4a0bad578a21faca1701631a0d491875", [

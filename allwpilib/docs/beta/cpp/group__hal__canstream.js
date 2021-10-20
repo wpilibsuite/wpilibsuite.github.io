@@ -1,6 +1,6 @@
 var group__hal__canstream =
 [
-    [ "HAL_CANStreamMessage", "structHAL__CANStreamMessage.html", null ],
+    [ "HAL_CANStreamMessage", "struct_h_a_l___c_a_n_stream_message.html", null ],
     [ "HAL_CAN_CloseStreamSession", "group__hal__canstream.html#ga48d0cea1a576cab6bf5ef6a5ed80e8b7", null ],
     [ "HAL_CAN_GetCANStatus", "group__hal__canstream.html#ga5a6f90593fb69b215c6814448ad9507c", null ],
     [ "HAL_CAN_OpenStreamSession", "group__hal__canstream.html#ga7e7c6cefe96ee066a2a572d4a755228c", null ],

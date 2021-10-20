@@ -1,6 +1,6 @@
 var group__hal__dma =
 [
-    [ "HAL_DMASample", "structHAL__DMASample.html", null ],
+    [ "HAL_DMASample", "struct_h_a_l___d_m_a_sample.html", null ],
     [ "HAL_AddDMAAnalogAccumulator", "group__hal__dma.html#gaa2a66aa2e718c944c99e4643a9ecddb3", null ],
     [ "HAL_AddDMAAnalogInput", "group__hal__dma.html#gaf05a725b20714ea5137ca6ac894a0639", null ],
     [ "HAL_AddDMAAveragedAnalogInput", "group__hal__dma.html#gaa381abf1529763b360d843ee9062f846", null ],

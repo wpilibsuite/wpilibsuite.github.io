@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['loglevel_0',['LogLevel',['../classnt_1_1NetworkTableInstance.html#a88dfe5b82924f347c572cdada2707150',1,'nt::NetworkTableInstance']]]
+  ['flags_0',['Flags',['../classnt_1_1_network_table_entry.html#ac8b068af2c558727aaee4451b3e0b739',1,'nt::NetworkTableEntry']]]
 ];

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
    </div>
   </td>
  </tr>
@@ -149,17 +149,17 @@ $(document).ready(function(){initNavTree('raw__istream_8h_source.html',''); init
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordflow">return</span> m_read_count;</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  }</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <a class="code hl_class" href="classwpi_1_1raw__istream.html">raw_istream</a>&amp; readinto(<a class="code hl_class" href="classwpi_1_1SmallVectorImpl.html">SmallVectorImpl&lt;char&gt;</a>&amp; buf, <span class="keywordtype">size_t</span> len) {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <a class="code hl_class" href="classwpi_1_1raw__istream.html">raw_istream</a>&amp; readinto(<a class="code hl_class" href="classwpi_1_1_small_vector_impl.html">SmallVectorImpl&lt;char&gt;</a>&amp; buf, <span class="keywordtype">size_t</span> len) {</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordtype">size_t</span> old_size = buf.size();</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    buf.<a class="code hl_function" href="classwpi_1_1SmallVectorImpl.html#a4dad2e14e08cfed58a451cb8380304a4">append</a>(len, 0);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    buf.<a class="code hl_function" href="classwpi_1_1_small_vector_impl.html#a4dad2e14e08cfed58a451cb8380304a4">append</a>(len, 0);</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    read_impl(&amp;buf[old_size], len);</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    buf.resize(old_size + m_read_count);</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  }</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <a class="code hl_class" href="classwpi_1_1raw__istream.html">raw_istream</a>&amp; readinto(<a class="code hl_class" href="classwpi_1_1SmallVectorImpl.html">SmallVectorImpl&lt;uint8_t&gt;</a>&amp; buf, <span class="keywordtype">size_t</span> len) {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <a class="code hl_class" href="classwpi_1_1raw__istream.html">raw_istream</a>&amp; readinto(<a class="code hl_class" href="classwpi_1_1_small_vector_impl.html">SmallVectorImpl&lt;uint8_t&gt;</a>&amp; buf, <span class="keywordtype">size_t</span> len) {</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordtype">size_t</span> old_size = buf.size();</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    buf.<a class="code hl_function" href="classwpi_1_1SmallVectorImpl.html#a4dad2e14e08cfed58a451cb8380304a4">append</a>(len, 0);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    buf.<a class="code hl_function" href="classwpi_1_1_small_vector_impl.html#a4dad2e14e08cfed58a451cb8380304a4">append</a>(len, 0);</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    read_impl(&amp;buf[old_size], len);</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    buf.resize(old_size + m_read_count);</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
@@ -195,7 +195,7 @@ $(document).ready(function(){initNavTree('raw__istream_8h_source.html',''); init
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  <span class="comment">// @param buf Buffer for output</span></div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  <span class="comment">// @param maxLen Maximum length</span></div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  <span class="comment">// @return Line</span></div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  std::string_view getline(<a class="code hl_class" href="classwpi_1_1SmallVectorImpl.html">SmallVectorImpl&lt;char&gt;</a>&amp; buf, <span class="keywordtype">int</span> maxLen);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  std::string_view getline(<a class="code hl_class" href="classwpi_1_1_small_vector_impl.html">SmallVectorImpl&lt;char&gt;</a>&amp; buf, <span class="keywordtype">int</span> maxLen);</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> close() = 0;</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
@@ -270,8 +270,8 @@ $(document).ready(function(){initNavTree('raw__istream_8h_source.html',''); init
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>}  <span class="comment">// namespace wpi</span></div>
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span><span class="preprocessor">#endif  </span><span class="comment">// WPIUTIL_WPI_RAW_ISTREAM_H_</span></div>
-<div class="ttc" id="aclasswpi_1_1SmallVectorImpl_html"><div class="ttname"><a href="classwpi_1_1SmallVectorImpl.html">wpi::SmallVectorImpl</a></div><div class="ttdoc">This class consists of common code factored out of the SmallVector class to reduce code duplication b...</div><div class="ttdef"><b>Definition:</b> SmallVector.h:332</div></div>
-<div class="ttc" id="aclasswpi_1_1SmallVectorImpl_html_a4dad2e14e08cfed58a451cb8380304a4"><div class="ttname"><a href="classwpi_1_1SmallVectorImpl.html#a4dad2e14e08cfed58a451cb8380304a4">wpi::SmallVectorImpl::append</a></div><div class="ttdeci">void append(in_iter in_start, in_iter in_end)</div><div class="ttdoc">Add the specified range to the end of the SmallVector.</div><div class="ttdef"><b>Definition:</b> SmallVector.h:403</div></div>
+<div class="ttc" id="aclasswpi_1_1_small_vector_impl_html"><div class="ttname"><a href="classwpi_1_1_small_vector_impl.html">wpi::SmallVectorImpl</a></div><div class="ttdoc">This class consists of common code factored out of the SmallVector class to reduce code duplication b...</div><div class="ttdef"><b>Definition:</b> SmallVector.h:332</div></div>
+<div class="ttc" id="aclasswpi_1_1_small_vector_impl_html_a4dad2e14e08cfed58a451cb8380304a4"><div class="ttname"><a href="classwpi_1_1_small_vector_impl.html#a4dad2e14e08cfed58a451cb8380304a4">wpi::SmallVectorImpl::append</a></div><div class="ttdeci">void append(in_iter in_start, in_iter in_end)</div><div class="ttdoc">Add the specified range to the end of the SmallVector.</div><div class="ttdef"><b>Definition:</b> SmallVector.h:403</div></div>
 <div class="ttc" id="aclasswpi_1_1raw__fd__istream_html"><div class="ttname"><a href="classwpi_1_1raw__fd__istream.html">wpi::raw_fd_istream</a></div><div class="ttdef"><b>Definition:</b> raw_istream.h:154</div></div>
 <div class="ttc" id="aclasswpi_1_1raw__istream_html"><div class="ttname"><a href="classwpi_1_1raw__istream.html">wpi::raw_istream</a></div><div class="ttdef"><b>Definition:</b> raw_istream.h:22</div></div>
 <div class="ttc" id="aclasswpi_1_1raw__mem__istream_html"><div class="ttname"><a href="classwpi_1_1raw__mem__istream.html">wpi::raw_mem_istream</a></div><div class="ttdef"><b>Definition:</b> raw_istream.h:131</div></div>
@@ -283,7 +283,7 @@ $(document).ready(function(){initNavTree('raw__istream_8h_source.html',''); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><b>raw_istream.h</b></li>
-    <li class="footer">Generated on Mon Oct 11 2021 03:11:19 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Wed Oct 20 2021 01:08:44 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

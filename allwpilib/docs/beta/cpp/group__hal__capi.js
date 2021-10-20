@@ -33,7 +33,7 @@ var group__hal__capi =
     [ "Analog Trigger Functions", "group__hal__analogtrigger.html", "group__hal__analogtrigger" ],
     [ "Power Functions", "group__hal__power.html", "group__hal__power" ],
     [ "Simulator Extensions", "group__hal__extensions.html", "group__hal__extensions" ],
-    [ "HAL_ExpandFPGATime", "group__hal__capi.html#ga285eaaf1e64b3d11ff692eec2454cfe4", null ],
+    [ "HAL_ExpandFPGATime", "group__hal__capi.html#ga7fda7ce97de711c9dfc5bb8bed9a79ed", null ],
     [ "HAL_GetBrownedOut", "group__hal__capi.html#gaa08f0d857909be9eb98cdb71189eca0c", null ],
     [ "HAL_GetErrorMessage", "group__hal__capi.html#ga886a0688d44a47eb593961e851d58a1c", null ],
     [ "HAL_GetFPGAButton", "group__hal__capi.html#ga24551a662a649f5abbab9ac468bfe44f", null ],

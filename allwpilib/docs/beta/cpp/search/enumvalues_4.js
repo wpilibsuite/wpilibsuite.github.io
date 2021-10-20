@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['failed_0',['FAILED',['../classwpi_1_1WebSocket.html#a767b9ee610b2638448e936302cd3b1b3a9d850e9667a5ed87f9755a566fdd08e7',1,'wpi::WebSocket']]]
+  ['eigenvaluesonly_0',['EigenvaluesOnly',['../group__enums.html#ggae3e239fb70022eb8747994cf5d68b4a9afd06633f270207c373875fd7ca03e906',1,'Eigen']]]
 ];

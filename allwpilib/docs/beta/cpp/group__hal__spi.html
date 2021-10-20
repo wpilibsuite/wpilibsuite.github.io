@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
    </div>
   </td>
  </tr>
@@ -241,10 +241,11 @@ Functions</h2></td></tr>
 <p>Configure the Auto SPI Stall time between reads. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">port</td><td>The number of the port to use. 0-3 for Onboard CS0-CS2, 4 for MXP. </td></tr>
-    <tr><td class="paramname">csToSclkTicks</td><td>the number of ticks to wait before asserting the cs pin </td></tr>
-    <tr><td class="paramname">stallTicks</td><td>the number of ticks to stall for </td></tr>
-    <tr><td class="paramname">pow2BytesPerRead</td><td>the number of bytes to read before stalling </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>The number of the port to use. 0-3 for Onboard CS0-CS2, 4 for MXP. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">csToSclkTicks</td><td>the number of ticks to wait before asserting the cs pin </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">stallTicks</td><td>the number of ticks to stall for </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pow2BytesPerRead</td><td>the number of bytes to read before stalling </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
   </table>
   </dd>
 </dl>
@@ -280,7 +281,8 @@ Functions</h2></td></tr>
 <p>Immediately forces an SPI read to happen. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">port</td><td>The number of the port to use. 0-3 for Onboard CS0-CS2, 4 for MXP. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>The number of the port to use. 0-3 for Onboard CS0-CS2, 4 for MXP. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
   </table>
   </dd>
 </dl>
@@ -316,7 +318,8 @@ Functions</h2></td></tr>
 <p>Frees an SPI automatic accumulator. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">port</td><td>The number of the port to use. 0-3 for Onboard CS0-CS2, 4 for MXP. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>The number of the port to use. 0-3 for Onboard CS0-CS2, 4 for MXP. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
   </table>
   </dd>
 </dl>
@@ -352,7 +355,8 @@ Functions</h2></td></tr>
 <p>Gets the count of how many SPI accumulations have been missed. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">port</td><td>The number of the port to use. 0-3 for Onboard CS0-CS2, 4 for MXP. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>The number of the port to use. 0-3 for Onboard CS0-CS2, 4 for MXP. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
   </table>
   </dd>
 </dl>
@@ -418,7 +422,8 @@ Functions</h2></td></tr>
 <p >If opening the MXP port, also sets up the channel functions appropriately.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">port</td><td>The number of the port to use. 0-3 for Onboard CS0-CS3, 4 for MXP </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>The number of the port to use. 0-3 for Onboard CS0-CS3, 4 for MXP </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
   </table>
   </dd>
 </dl>
@@ -460,8 +465,9 @@ Functions</h2></td></tr>
 <p>Initializes the SPI automatic accumulator. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">port</td><td>The number of the port to use. 0-3 for Onboard CS0-CS2, 4 for MXP. </td></tr>
-    <tr><td class="paramname">bufferSize</td><td>The accumulator buffer size. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>The number of the port to use. 0-3 for Onboard CS0-CS2, 4 for MXP. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bufferSize</td><td>The accumulator buffer size. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
   </table>
   </dd>
 </dl>
@@ -563,10 +569,11 @@ Functions</h2></td></tr>
 <p >Each received data sequence consists of a timestamp followed by the received data bytes, one byte per word (in the least significant byte). The length of each received data sequence is the same as the combined dataSize + zeroSize set in HAL_SetSPIAutoTransmitData.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">port</td><td>The number of the port to use. 0-3 for Onboard CS0-CS2, 4 for MXP. </td></tr>
-    <tr><td class="paramname">buffer</td><td>The buffer to store the data into. </td></tr>
-    <tr><td class="paramname">numToRead</td><td>The number of words to read. </td></tr>
-    <tr><td class="paramname">timeout</td><td>The read timeout (in seconds). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>The number of the port to use. 0-3 for Onboard CS0-CS2, 4 for MXP. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">buffer</td><td>The buffer to store the data into. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">numToRead</td><td>The number of words to read. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout</td><td>The read timeout (in seconds). </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
   </table>
   </dd>
 </dl>
@@ -621,10 +628,11 @@ Functions</h2></td></tr>
 <p>Sets the data to be transmitted to the device to initiate a read. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">port</td><td>The number of the port to use. 0-3 for Onboard CS0-CS2, 4 for MXP. </td></tr>
-    <tr><td class="paramname">dataToSend</td><td>Pointer to the data to send (Gets copied for continue use, so no need to keep alive). </td></tr>
-    <tr><td class="paramname">dataSize</td><td>The length of the data to send. </td></tr>
-    <tr><td class="paramname">zeroSize</td><td>The number of zeros to send after the data. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>The number of the port to use. 0-3 for Onboard CS0-CS2, 4 for MXP. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataToSend</td><td>Pointer to the data to send (Gets copied for continue use, so no need to keep alive). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataSize</td><td>The length of the data to send. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">zeroSize</td><td>The number of zeros to send after the data. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
   </table>
   </dd>
 </dl>
@@ -660,7 +668,8 @@ Functions</h2></td></tr>
 <p>Sets the CS Active high for a SPI port. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">port</td><td>The number of the port to use. 0-3 for Onboard CS0-CS2, 4 for MXP </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>The number of the port to use. 0-3 for Onboard CS0-CS2, 4 for MXP </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
   </table>
   </dd>
 </dl>
@@ -696,7 +705,8 @@ Functions</h2></td></tr>
 <p>Sets the CS Active low for a SPI port. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">port</td><td>The number of the port to use. 0-3 for Onboard CS0-CS2, 4 for MXP </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>The number of the port to use. 0-3 for Onboard CS0-CS2, 4 for MXP </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
   </table>
   </dd>
 </dl>
@@ -863,8 +873,9 @@ Functions</h2></td></tr>
 <p>Sets the period for automatic SPI accumulation. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">port</td><td>The number of the port to use. 0-3 for Onboard CS0-CS2, 4 for MXP. </td></tr>
-    <tr><td class="paramname">period</td><td>The accumlation period (seconds). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>The number of the port to use. 0-3 for Onboard CS0-CS2, 4 for MXP. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">period</td><td>The accumlation period (seconds). </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
   </table>
   </dd>
 </dl>
@@ -925,11 +936,12 @@ Functions</h2></td></tr>
 <p >Note that triggering on both rising and falling edges is a valid configuration.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">port</td><td>The number of the port to use. 0-3 for Onboard CS0-CS2, 4 for MXP. </td></tr>
-    <tr><td class="paramname">digitalSourceHandle</td><td>The trigger source to use (Either HAL_AnalogTriggerHandle or HAL_DigitalHandle). </td></tr>
-    <tr><td class="paramname">analogTriggerType</td><td>The analog trigger type, if the source is an analog trigger. </td></tr>
-    <tr><td class="paramname">triggerRising</td><td>Trigger on the rising edge if true. </td></tr>
-    <tr><td class="paramname">triggerFalling</td><td>Trigger on the falling edge if true. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>The number of the port to use. 0-3 for Onboard CS0-CS2, 4 for MXP. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">digitalSourceHandle</td><td>The trigger source to use (Either HAL_AnalogTriggerHandle or HAL_DigitalHandle). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">analogTriggerType</td><td>The analog trigger type, if the source is an analog trigger. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">triggerRising</td><td>Trigger on the rising edge if true. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">triggerFalling</td><td>Trigger on the falling edge if true. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
   </table>
   </dd>
 </dl>
@@ -965,7 +977,8 @@ Functions</h2></td></tr>
 <p>Stops an automatic SPI accumlation. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">port</td><td>The number of the port to use. 0-3 for Onboard CS0-CS2, 4 for MXP. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>The number of the port to use. 0-3 for Onboard CS0-CS2, 4 for MXP. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">status</td><td>the error code, or 0 for success </td></tr>
   </table>
   </dd>
 </dl>
@@ -1062,7 +1075,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">port</td><td>The number of the port to use. 0-3 for Onboard CS0-CS2, 4 for MXP </td></tr>
-    <tr><td class="paramname">datToSend</td><td>The data to write to the register on the device. </td></tr>
+    <tr><td class="paramname">dataToSend</td><td>The data to write to the register on the device. </td></tr>
     <tr><td class="paramname">sendSize</td><td>The number of bytes to be written </td></tr>
   </table>
   </dd>
@@ -1076,7 +1089,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Oct 11 2021 03:11:20 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Wed Oct 20 2021 01:08:44 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

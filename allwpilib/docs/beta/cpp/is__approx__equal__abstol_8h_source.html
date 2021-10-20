@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-alpha-3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
    </div>
   </td>
  </tr>
@@ -101,21 +101,39 @@ $(document).ready(function(){initNavTree('is__approx__equal__abstol_8h_source.ht
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;Eigen/Core&gt;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span>drake {</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> DerivedA, <span class="keyword">typename</span> DerivedB&gt;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keywordtype">bool</span> is_approx_equal_abstol(<span class="keyword">const</span> Eigen::MatrixBase&lt;DerivedA&gt;&amp; m1,</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>                            <span class="keyword">const</span> Eigen::MatrixBase&lt;DerivedB&gt;&amp; m2,</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"></span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">/// Returns true if and only if the two matrices are equal to within a certain</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">/// absolute elementwise @p tolerance.  Special values (infinities, NaN, etc.)</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">/// do not compare as equal elements.</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> DerivedA, <span class="keyword">typename</span> DerivedB&gt;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keywordtype">bool</span> is_approx_equal_abstol(<span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_matrix_base.html">Eigen::MatrixBase&lt;DerivedA&gt;</a>&amp; m1,</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>                            <span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_matrix_base.html">Eigen::MatrixBase&lt;DerivedB&gt;</a>&amp; m2,</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>                            <span class="keywordtype">double</span> tolerance) {</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  <span class="keywordflow">return</span> (</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>      (m1.rows() == m2.rows()) &amp;&amp;</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>      (m1.cols() == m2.cols()) &amp;&amp;</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>      ((m1 - m2).template lpNorm&lt;Eigen::Infinity&gt;() &lt;= tolerance));</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>}</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> DerivedA, <span class="keyword">typename</span> DerivedB&gt;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"></span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">/// Returns true if and only if a simple greedy search reveals a permutation</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">/// of the columns of m2 to make the matrix equal to m1 to within a certain</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">/// absolute elementwise @p tolerance. E.g., there exists a P such that</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">/// &lt;pre&gt;</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">///    forall i,j,  |m1 - m2*P|_{i,j} &lt;= tolerance</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">///    where P is a permutation matrix:</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">///       P(i,j)={0,1}, sum_i P(i,j)=1, sum_j P(i,j)=1.</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">/// &lt;/pre&gt;</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">/// Note: Returns false for matrices of different sizes.</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">/// Note: The current implementation is O(n^2) in the number of columns.</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">/// Note: In marginal cases (with similar but not identical columns) this</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">/// algorithm can fail to find a permutation P even if it exists because it</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">/// accepts the first column match (m1(i),m2(j)) and removes m2(j) from the</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">/// pool. It is possible that other columns of m2 would also match m1(i) but</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">/// that m2(j) is the only match possible for a later column of m1.</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> DerivedA, <span class="keyword">typename</span> DerivedB&gt;</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keywordtype">bool</span> IsApproxEqualAbsTolWithPermutedColumns(</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">const</span> Eigen::MatrixBase&lt;DerivedA&gt;&amp; m1,</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">const</span> Eigen::MatrixBase&lt;DerivedB&gt;&amp; m2, <span class="keywordtype">double</span> tolerance) {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_matrix_base.html">Eigen::MatrixBase&lt;DerivedA&gt;</a>&amp; m1,</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_matrix_base.html">Eigen::MatrixBase&lt;DerivedB&gt;</a>&amp; m2, <span class="keywordtype">double</span> tolerance) {</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <span class="keywordflow">if</span> ((m1.cols() != m2.cols()) || (m1.rows() != m2.rows())) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  std::vector&lt;bool&gt; available(m2.cols());</div>
@@ -138,13 +156,14 @@ $(document).ready(function(){initNavTree('is__approx__equal__abstol_8h_source.ht
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>}  <span class="comment">// namespace drake</span></div>
+<div class="ttc" id="aclass_eigen_1_1_matrix_base_html"><div class="ttname"><a href="class_eigen_1_1_matrix_base.html">Eigen::MatrixBase</a></div><div class="ttdoc">Base class for all dense matrices, vectors, and expressions.</div><div class="ttdef"><b>Definition:</b> MatrixBase.h:50</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3096fa119feaaf68acf7be783be3d79f.html">drake</a></li><li class="navelem"><a class="el" href="dir_533b608e0d491fadd970e32351d4ba56.html">common</a></li><li class="navelem"><b>is_approx_equal_abstol.h</b></li>
-    <li class="footer">Generated on Mon Oct 11 2021 03:11:18 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Wed Oct 20 2021 01:08:42 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

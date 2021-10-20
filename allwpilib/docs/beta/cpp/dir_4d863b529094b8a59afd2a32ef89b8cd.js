@@ -9,6 +9,6 @@ var dir_4d863b529094b8a59afd2a32ef89b8cd =
     [ "spline", "dir_d71b639942242251bb415aa2ae346d4f.html", "dir_d71b639942242251bb415aa2ae346d4f" ],
     [ "system", "dir_6a6d4dbfd7def32c812c83ce511abb63.html", "dir_6a6d4dbfd7def32c812c83ce511abb63" ],
     [ "trajectory", "dir_b42dbd3ffe797209985ac3b5870ef1e5.html", "dir_b42dbd3ffe797209985ac3b5870ef1e5" ],
-    [ "MathUtil.h", "MathUtil_8h_source.html", null ],
-    [ "StateSpaceUtil.h", "StateSpaceUtil_8h_source.html", null ]
+    [ "MathUtil.h", "_math_util_8h_source.html", null ],
+    [ "StateSpaceUtil.h", "_state_space_util_8h_source.html", null ]
 ];
