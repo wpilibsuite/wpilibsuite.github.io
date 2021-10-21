@@ -710,6 +710,7 @@ var namespaces_dup =
       [ "ThreadSafeRefCountedBase", "classwpi_1_1_thread_safe_ref_counted_base.html", null ],
       [ "UDPClient", "classwpi_1_1_u_d_p_client.html", null ],
       [ "UidVector", "classwpi_1_1_uid_vector.html", "classwpi_1_1_uid_vector" ],
+      [ "Uleb128Reader", "classwpi_1_1_uleb128_reader.html", "classwpi_1_1_uleb128_reader" ],
       [ "unique_function", "classwpi_1_1unique__function.html", null ],
       [ "unique_function< ReturnT(ParamTs...)>", "classwpi_1_1unique__function_3_01_return_t_07_param_ts_8_8_8_08_4.html", null ],
       [ "UrlParser", "classwpi_1_1_url_parser.html", "classwpi_1_1_url_parser" ],

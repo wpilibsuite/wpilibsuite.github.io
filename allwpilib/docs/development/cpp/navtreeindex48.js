@@ -1,5 +1,9 @@
 var NAVTREEINDEX48 =
 {
+"discrete__algebraic__riccati__equation_8h_source.html":[6,0,2,1,0],
+"drake__assert_8h.html":[6,0,2,0,0],
+"drake__assert_8h_source.html":[6,0,2,0,0],
+"drake__assertion__error_8h_source.html":[6,0,2,0,1],
 "drake__copyable_8h.html":[6,0,2,0,2],
 "drake__copyable_8h.html#a3ee22789c29a46dddd6a7fd2b982731c":[6,0,2,0,2,1],
 "drake__copyable_8h.html#ae6322b9e40935343a422cbdfb41e310e":[6,0,2,0,2,0],
@@ -20,8 +24,8 @@ var NAVTREEINDEX48 =
 "frequency_8h_source.html":[6,0,12,19],
 "fs_8h_source.html":[6,0,14,25],
 "function__ref_8h_source.html":[6,0,14,26],
-"functions.html":[5,3,0],
 "functions.html":[5,3,0,0],
+"functions.html":[5,3,0],
 "functions_a.html":[5,3,0,1],
 "functions_b.html":[5,3,0,2],
 "functions_c.html":[5,3,0,3],
@@ -30,8 +34,8 @@ var NAVTREEINDEX48 =
 "functions_enum.html":[5,3,4],
 "functions_eval.html":[5,3,5],
 "functions_f.html":[5,3,0,6],
-"functions_func.html":[5,3,1],
 "functions_func.html":[5,3,1,0],
+"functions_func.html":[5,3,1],
 "functions_func_a.html":[5,3,1,1],
 "functions_func_b.html":[5,3,1,2],
 "functions_func_c.html":[5,3,1,3],
@@ -245,9 +249,5 @@ var NAVTREEINDEX48 =
 "group__enums.html#gae3e239fb70022eb8747994cf5d68b4a9":[3,17,3],
 "group__enums.html#gaee59a86102f150923b0cac6d4ff05107":[3,17,9],
 "group__enums.html#gga39e3366ff5554d731e7dc8bb642f83cda2424988b6fca98be70b595632753ba81":[3,17,10,6],
-"group__enums.html#gga39e3366ff5554d731e7dc8bb642f83cda2ef430bff6cc12c2d1e0ef01b95f7ff3":[3,17,10,2],
-"group__enums.html#gga39e3366ff5554d731e7dc8bb642f83cda7b37877e0b9b0df28c9c2b669a633265":[3,17,10,7],
-"group__enums.html#gga39e3366ff5554d731e7dc8bb642f83cda8f40b928c10a71ba03e5f75ad2a72fda":[3,17,10,4],
-"group__enums.html#gga39e3366ff5554d731e7dc8bb642f83cdac4dc554a61510151ddd5bafaf6040223":[3,17,10,3],
-"group__enums.html#gga39e3366ff5554d731e7dc8bb642f83cdacf9ccb2016f8b9c0f3268f05a1e75821":[3,17,10,8]
+"group__enums.html#gga39e3366ff5554d731e7dc8bb642f83cda2ef430bff6cc12c2d1e0ef01b95f7ff3":[3,17,10,2]
 };

@@ -1,5 +1,9 @@
 var NAVTREEINDEX50 =
 {
+"group__hal__dma.html#gafedcea65ab948106f8f5b9461585ff3a":[3,0,7,25],
+"group__hal__driverstation.html":[3,0,0],
+"group__hal__driverstation.html#ga00603ecd30baaa0d0712488161a83f38":[3,0,0,10],
+"group__hal__driverstation.html#ga10e5c8ea5a1b890126167e9d352e9e0a":[3,0,0,7],
 "group__hal__driverstation.html#ga13435855e61c724e9708bdd90baee155":[3,0,0,28],
 "group__hal__driverstation.html#ga14a875e969edf0b14cfd47b4bf5520f7":[3,0,0,31],
 "group__hal__driverstation.html#ga17675749678926c6ecd3c62fb4da298c":[3,0,0,9],
@@ -245,9 +249,5 @@ var NAVTREEINDEX50 =
 "group__hal__spi.html#ga9e3235810dce4e090c20a2a0e58ea29a":[3,0,17,2],
 "group__hal__spi.html#gaa20dfef106257122f9b915c93bd28d3b":[3,0,17,15],
 "group__hal__spi.html#gabd5cc8f827417c02b25e9d21466684b5":[3,0,17,13],
-"group__hal__spi.html#gaccf64c2bb95259438ad2c750de5d5482":[3,0,17,17],
-"group__hal__spi.html#gad60d88465ec0e71d9252ad00d8a7ab27":[3,0,17,4],
-"group__hal__spi.html#gaeab0c9497b31c83f83e526df6f0c6758":[3,0,17,16],
-"group__hal__spi.html#gaead28e2b911d96f42c567ddcb2386224":[3,0,17,14],
-"group__hal__spi.html#gaef73b829767ac068975ce5d2c93e3b27":[3,0,17,11]
+"group__hal__spi.html#gaccf64c2bb95259438ad2c750de5d5482":[3,0,17,17]
 };

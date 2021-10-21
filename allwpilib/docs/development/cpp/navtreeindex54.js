@@ -1,5 +1,9 @@
 var NAVTREEINDEX54 =
 {
+"struct_eigen_1_1_sparse.html":[4,0,4,187],
+"struct_eigen_1_1_sparse.html":[5,0,4,186],
+"struct_eigen_1_1_sparse_shape.html":[4,0,4,189],
+"struct_eigen_1_1_sparse_shape.html":[5,0,4,188],
 "struct_eigen_1_1_transpositions_shape.html":[5,0,4,201],
 "struct_eigen_1_1_transpositions_shape.html":[4,0,4,202],
 "struct_eigen_1_1_transpositions_storage.html":[4,0,4,203],
@@ -66,8 +70,8 @@ var NAVTREEINDEX54 =
 "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_product_3_01_lhs_00_01_rhs_00_01bb8efed27d47832b53496ca7f6c9254b.html":[4,0,4,3,62],
 "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_product_3_01_lhs_00_01_rhs_00_01d12e529af555eafd2223434170111bd1.html":[5,0,4,2,64],
 "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_product_3_01_lhs_00_01_rhs_00_01d12e529af555eafd2223434170111bd1.html":[4,0,4,3,64],
-"struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_product_3_01_lhs_00_01_rhs_00_01efc05729801ac09d27a309f4f0923f27.html":[5,0,4,2,60],
 "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_product_3_01_lhs_00_01_rhs_00_01efc05729801ac09d27a309f4f0923f27.html":[4,0,4,3,60],
+"struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_product_3_01_lhs_00_01_rhs_00_01efc05729801ac09d27a309f4f0923f27.html":[5,0,4,2,60],
 "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_solve_3_01_cwise_unary_op_3_01in7a0cdfc0a6924bfcd9bc281e374a4ff8.html":[5,0,4,2,66],
 "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_solve_3_01_cwise_unary_op_3_01in7a0cdfc0a6924bfcd9bc281e374a4ff8.html":[4,0,4,3,66],
 "struct_eigen_1_1internal_1_1_assignment_3_01_dst_xpr_type_00_01_solve_3_01_dec_type_00_01_rhs_ty3ce26f5f592c582be15e9bcd7c0c0744.html":[5,0,4,2,67],
@@ -245,9 +249,5 @@ var NAVTREEINDEX54 =
 "struct_eigen_1_1internal_1_1add__const__on__value__type__if__arithmetic.html":[5,0,4,2,18],
 "struct_eigen_1_1internal_1_1add__const__on__value__type__if__arithmetic.html":[4,0,4,3,18],
 "struct_eigen_1_1internal_1_1aligned__storage.html":[5,0,4,2,20],
-"struct_eigen_1_1internal_1_1aligned__storage.html":[4,0,4,3,20],
-"struct_eigen_1_1internal_1_1aligned__storage_1_1type.html":[5,0,4,2,20,0],
-"struct_eigen_1_1internal_1_1aligned__storage_1_1type.html":[4,0,4,3,20,0],
-"struct_eigen_1_1internal_1_1all__t.html":[4,0,4,3,21],
-"struct_eigen_1_1internal_1_1all__t.html":[5,0,4,2,21]
+"struct_eigen_1_1internal_1_1aligned__storage.html":[4,0,4,3,20]
 };

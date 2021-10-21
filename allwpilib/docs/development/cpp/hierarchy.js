@@ -3790,6 +3790,7 @@ var hierarchy =
     [ "wpi::UidVector< T, reuse_threshold >", "classwpi_1_1_uid_vector.html", null ],
     [ "wpi::impl::UidVectorIterator< It >", "classwpi_1_1impl_1_1_uid_vector_iterator.html", null ],
     [ "detail::uint128_wrapper", "structdetail_1_1uint128__wrapper.html", null ],
+    [ "wpi::Uleb128Reader", "classwpi_1_1_uleb128_reader.html", null ],
     [ "frc::sim::UltrasonicSim", "classfrc_1_1sim_1_1_ultrasonic_sim.html", null ],
     [ "Eigen::internal::unaligned_dense_assignment_loop< IsAligned >", "struct_eigen_1_1internal_1_1unaligned__dense__assignment__loop.html", null ],
     [ "Eigen::internal::unaligned_dense_assignment_loop< false >", "struct_eigen_1_1internal_1_1unaligned__dense__assignment__loop_3_01false_01_4.html", null ],
