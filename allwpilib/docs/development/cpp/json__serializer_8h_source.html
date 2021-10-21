@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-6-g649a50b</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-8-g75fa1fb</span>
    </div>
   </td>
  </tr>
@@ -131,30 +131,30 @@ $(document).ready(function(){initNavTree('json__serializer_8h_source.html',''); 
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &lt;clocale&gt;</span> <span class="comment">// lconv, localeconv</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &lt;cmath&gt;</span>  <span class="comment">// labs, isfinite, isnan, signbit, ldexp</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#include &lt;locale&gt;</span> <span class="comment">// locale</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#include &lt;type_traits&gt;</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#include &quot;wpi/raw_ostream.h&quot;</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">namespace </span>wpi {</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classwpi_1_1json_1_1serializer.html">   45</a></span><span class="keyword">class </span><a class="code hl_class" href="classwpi_1_1json_1_1serializer.html">json::serializer</a></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>{</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> uint8_t UTF8_ACCEPT = 0;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> uint8_t UTF8_REJECT = 1;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <span class="keyword">public</span>:<span class="comment"></span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">    /*!</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">    @param[in] s  output stream to serialize to</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">    @param[in] ichar  indentation character to use</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#include &lt;type_traits&gt;</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#include &quot;wpi/raw_ostream.h&quot;</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">namespace </span>wpi {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classwpi_1_1json_1_1serializer.html">   44</a></span><span class="keyword">class </span><a class="code hl_class" href="classwpi_1_1json_1_1serializer.html">json::serializer</a></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>{</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> uint8_t UTF8_ACCEPT = 0;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> uint8_t UTF8_REJECT = 1;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <span class="keyword">public</span>:<span class="comment"></span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">    /*!</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">    @param[in] s  output stream to serialize to</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">    @param[in] ichar  indentation character to use</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">    @param[in] indent_init_len  initial length of indentation string buffer</span></div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">    */</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="classwpi_1_1json_1_1serializer.html#aa4039cc6d3888a6e7cecb7083c3fe27d">   55</a></span>    <a class="code hl_function" href="classwpi_1_1json_1_1serializer.html#aa4039cc6d3888a6e7cecb7083c3fe27d">serializer</a>(<a class="code hl_class" href="classwpi_1_1raw__ostream.html">raw_ostream</a>&amp; s, <span class="keyword">const</span> <span class="keywordtype">char</span> ichar)</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        : o(s), loc(std::localeconv()), indent_char(ichar),</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>          indent_string(512, indent_char)</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="classwpi_1_1json_1_1serializer.html#abdcdd0fce25d0954a3fbcf8cfe783b9a">   55</a></span>    <a class="code hl_function" href="classwpi_1_1json_1_1serializer.html#abdcdd0fce25d0954a3fbcf8cfe783b9a">serializer</a>(<a class="code hl_class" href="classwpi_1_1raw__ostream.html">raw_ostream</a>&amp; s, <span class="keyword">const</span> <span class="keywordtype">char</span> ichar, <span class="keywordtype">size_t</span> indent_init_len = 512)</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        : o(s), indent_char(ichar),</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>          indent_string(indent_init_len, indent_char)</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    {}</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="comment">// delete because of pointer members</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <a class="code hl_function" href="classwpi_1_1json_1_1serializer.html#aa4039cc6d3888a6e7cecb7083c3fe27d">serializer</a>(<span class="keyword">const</span> <a class="code hl_class" href="classwpi_1_1json_1_1serializer.html">serializer</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <a class="code hl_function" href="classwpi_1_1json_1_1serializer.html#abdcdd0fce25d0954a3fbcf8cfe783b9a">serializer</a>(<span class="keyword">const</span> <a class="code hl_class" href="classwpi_1_1json_1_1serializer.html">serializer</a>&amp;) = <span class="keyword">delete</span>;</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <a class="code hl_class" href="classwpi_1_1json_1_1serializer.html">serializer</a>&amp; operator=(<span class="keyword">const</span> <a class="code hl_class" href="classwpi_1_1json_1_1serializer.html">serializer</a>&amp;) = <span class="keyword">delete</span>;</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment"></span> </div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">    /*!</span></div>
@@ -294,21 +294,18 @@ $(document).ready(function(){initNavTree('json__serializer_8h_source.html',''); 
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="comment">    /// a (hopefully) large enough character buffer</span></div>
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span><span class="comment"></span>    std::array&lt;char, 64&gt; number_buffer{{}};</div>
 <div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="comment"></span> </div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="comment">    /// the locale</span></div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="comment"></span>    <span class="keyword">const</span> std::lconv* loc = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span><span class="comment"></span> </div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="comment">    /// the indentation character</span></div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="comment"></span>    <span class="keyword">const</span> <span class="keywordtype">char</span> indent_char;<span class="comment"></span></div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="comment">    /// the indentation string</span></div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span><span class="comment"></span>    std::string indent_string;</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>};</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span> </div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>}  <span class="comment">// namespace wpi</span></div>
-<div class="ttc" id="aclasswpi_1_1json_1_1serializer_html"><div class="ttname"><a href="classwpi_1_1json_1_1serializer.html">wpi::json::serializer</a></div><div class="ttdef"><b>Definition:</b> json_serializer.h:46</div></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="comment">    /// the indentation character</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="comment"></span>    <span class="keyword">const</span> <span class="keywordtype">char</span> indent_char;<span class="comment"></span></div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span><span class="comment">    /// the indentation string</span></div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="comment"></span>    std::string indent_string;</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>};</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> </div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>}  <span class="comment">// namespace wpi</span></div>
+<div class="ttc" id="aclasswpi_1_1json_1_1serializer_html"><div class="ttname"><a href="classwpi_1_1json_1_1serializer.html">wpi::json::serializer</a></div><div class="ttdef"><b>Definition:</b> json_serializer.h:45</div></div>
 <div class="ttc" id="aclasswpi_1_1json_1_1serializer_html_a30c945ed2845a4231e9a2185423c0c53"><div class="ttname"><a href="classwpi_1_1json_1_1serializer.html#a30c945ed2845a4231e9a2185423c0c53">wpi::json::serializer::dump</a></div><div class="ttdeci">void dump(const json &amp;val, const bool pretty_print, const bool ensure_ascii, const unsigned int indent_step, const unsigned int current_indent=0)</div><div class="ttdoc">internal implementation of the serialization function</div></div>
 <div class="ttc" id="aclasswpi_1_1json_1_1serializer_html_a3d36179b277d7ddaf0e79bb30b166a86"><div class="ttname"><a href="classwpi_1_1json_1_1serializer.html#a3d36179b277d7ddaf0e79bb30b166a86">wpi::json::serializer::dump_escaped</a></div><div class="ttdeci">void dump_escaped(std::string_view s, const bool ensure_ascii)</div><div class="ttdoc">dump escaped string</div></div>
-<div class="ttc" id="aclasswpi_1_1json_1_1serializer_html_aa4039cc6d3888a6e7cecb7083c3fe27d"><div class="ttname"><a href="classwpi_1_1json_1_1serializer.html#aa4039cc6d3888a6e7cecb7083c3fe27d">wpi::json::serializer::serializer</a></div><div class="ttdeci">serializer(raw_ostream &amp;s, const char ichar)</div><div class="ttdef"><b>Definition:</b> json_serializer.h:55</div></div>
 <div class="ttc" id="aclasswpi_1_1json_1_1serializer_html_ab566bb1a99a1d43f367a8d55ca5ca7df"><div class="ttname"><a href="classwpi_1_1json_1_1serializer.html#ab566bb1a99a1d43f367a8d55ca5ca7df">wpi::json::serializer::decode</a></div><div class="ttdeci">static uint8_t decode(uint8_t &amp;state, uint32_t &amp;codep, const uint8_t byte) noexcept</div><div class="ttdoc">check whether a string is UTF-8 encoded</div></div>
+<div class="ttc" id="aclasswpi_1_1json_1_1serializer_html_abdcdd0fce25d0954a3fbcf8cfe783b9a"><div class="ttname"><a href="classwpi_1_1json_1_1serializer.html#abdcdd0fce25d0954a3fbcf8cfe783b9a">wpi::json::serializer::serializer</a></div><div class="ttdeci">serializer(raw_ostream &amp;s, const char ichar, size_t indent_init_len=512)</div><div class="ttdef"><b>Definition:</b> json_serializer.h:55</div></div>
 <div class="ttc" id="aclasswpi_1_1json_1_1serializer_html_aceca15f08649aaac5a009843308864cd"><div class="ttname"><a href="classwpi_1_1json_1_1serializer.html#aceca15f08649aaac5a009843308864cd">wpi::json::serializer::dump_integer</a></div><div class="ttdeci">void dump_integer(NumberType x)</div><div class="ttdoc">dump an integer</div><div class="ttdef"><b>Definition:</b> json_serializer.h:128</div></div>
 <div class="ttc" id="aclasswpi_1_1json_1_1serializer_html_ae4222aa9df8cf1e65c0166cc46939638"><div class="ttname"><a href="classwpi_1_1json_1_1serializer.html#ae4222aa9df8cf1e65c0166cc46939638">wpi::json::serializer::dump_float</a></div><div class="ttdeci">void dump_float(double x)</div><div class="ttdoc">dump a floating-point number</div></div>
 <div class="ttc" id="aclasswpi_1_1json_html"><div class="ttname"><a href="classwpi_1_1json.html">wpi::json</a></div><div class="ttdoc">a class to store JSON values</div><div class="ttdef"><b>Definition:</b> json.h:2656</div></div>
@@ -319,7 +316,7 @@ $(document).ready(function(){initNavTree('json__serializer_8h_source.html',''); 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><b>json_serializer.h</b></li>
-    <li class="footer">Generated on Thu Oct 21 2021 01:53:06 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Thu Oct 21 2021 04:12:00 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

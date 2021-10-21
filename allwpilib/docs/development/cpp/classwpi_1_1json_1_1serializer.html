@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-6-g649a50b</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-8-g75fa1fb</span>
    </div>
   </td>
  </tr>
@@ -101,8 +101,8 @@ $(document).ready(function(){initNavTree('classwpi_1_1json_1_1serializer.html','
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa4039cc6d3888a6e7cecb7083c3fe27d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1json_1_1serializer.html#aa4039cc6d3888a6e7cecb7083c3fe27d">serializer</a> (<a class="el" href="classwpi_1_1raw__ostream.html">raw_ostream</a> &amp;s, const char ichar)</td></tr>
-<tr class="separator:aa4039cc6d3888a6e7cecb7083c3fe27d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdcdd0fce25d0954a3fbcf8cfe783b9a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1json_1_1serializer.html#abdcdd0fce25d0954a3fbcf8cfe783b9a">serializer</a> (<a class="el" href="classwpi_1_1raw__ostream.html">raw_ostream</a> &amp;s, const char ichar, size_t indent_init_len=512)</td></tr>
+<tr class="separator:abdcdd0fce25d0954a3fbcf8cfe783b9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14d3409b8f4484dcb94f1f887d68be02"><td class="memItemLeft" align="right" valign="top"><a id="a14d3409b8f4484dcb94f1f887d68be02" name="a14d3409b8f4484dcb94f1f887d68be02"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>serializer</b> (const <a class="el" href="classwpi_1_1json_1_1serializer.html">serializer</a> &amp;)=delete</td></tr>
 <tr class="separator:a14d3409b8f4484dcb94f1f887d68be02"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,8 +138,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:ab566bb1a99a1d43f367a8d55ca5ca7df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aa4039cc6d3888a6e7cecb7083c3fe27d" name="aa4039cc6d3888a6e7cecb7083c3fe27d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa4039cc6d3888a6e7cecb7083c3fe27d">&#9670;&nbsp;</a></span>serializer()</h2>
+<a id="abdcdd0fce25d0954a3fbcf8cfe783b9a" name="abdcdd0fce25d0954a3fbcf8cfe783b9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdcdd0fce25d0954a3fbcf8cfe783b9a">&#9670;&nbsp;</a></span>serializer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -157,7 +157,13 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const char&#160;</td>
-          <td class="paramname"><em>ichar</em>&#160;</td>
+          <td class="paramname"><em>ichar</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>indent_init_len</em> = <code>512</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -175,6 +181,7 @@ Static Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">s</td><td>output stream to serialize to </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">ichar</td><td>indentation character to use </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">indent_init_len</td><td>initial length of indentation string buffer </td></tr>
   </table>
   </dd>
 </dl>
@@ -421,7 +428,7 @@ template&lt;typename NumberType , detail::enable_if_t&lt; std::is_same&lt; Numbe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>wpi</b></li><li class="navelem"><a class="el" href="classwpi_1_1json.html">json</a></li><li class="navelem"><a class="el" href="classwpi_1_1json_1_1serializer.html">serializer</a></li>
-    <li class="footer">Generated on Thu Oct 21 2021 01:53:14 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Thu Oct 21 2021 04:12:07 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

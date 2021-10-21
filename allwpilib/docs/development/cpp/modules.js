@@ -1,6 +1,12 @@
 var modules =
 [
     [ "WPILib HAL API", "group__hal__capi.html", "group__hal__capi" ],
+    [ "Configuration Options", "group__config.html", "group__config" ],
+    [ "Tags and Common Elements", "group__common.html", "group__common" ],
+    [ "Write API", "group__writer.html", "group__writer" ],
+    [ "Reader API", "group__reader.html", "group__reader" ],
+    [ "Expect API", "group__expect.html", "group__expect" ],
+    [ "Node API", "group__node.html", "group__node" ],
     [ "ntcore C++ API", "group__ntcore__cpp__handle__api.html", "group__ntcore__cpp__handle__api" ],
     [ "ntcore C API", "group__ntcore__c__api.html", "group__ntcore__c__api" ],
     [ "ntcore C++ object-oriented API", "group__ntcore__cpp__api.html", "group__ntcore__cpp__api" ],

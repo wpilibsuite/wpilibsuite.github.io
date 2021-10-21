@@ -52,6 +52,7 @@ var dir_1224104d412225b996ab6dfa83431a88 =
     [ "MathExtras.h", "_math_extras_8h_source.html", null ],
     [ "MemAlloc.h", "_mem_alloc_8h.html", null ],
     [ "MimeTypes.h", "_mime_types_8h_source.html", null ],
+    [ "mpack.h", "mpack_8h.html", "mpack_8h" ],
     [ "mutex.h", "mutex_8h_source.html", null ],
     [ "NetworkAcceptor.h", "_network_acceptor_8h_source.html", null ],
     [ "NetworkStream.h", "_network_stream_8h_source.html", null ],

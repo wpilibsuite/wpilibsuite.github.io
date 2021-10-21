@@ -57,7 +57,11 @@ var NAVTREE =
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
       [ "File Members", "globals.html", [
-        [ "All", "globals.html", null ],
+        [ "All", "globals.html", "globals_dup" ],
+        [ "Functions", "globals_func.html", "globals_func" ],
+        [ "Typedefs", "globals_type.html", null ],
+        [ "Enumerations", "globals_enum.html", null ],
+        [ "Enumerator", "globals_eval.html", null ],
         [ "Macros", "globals_defs.html", null ]
       ] ]
     ] ]
@@ -115,27 +119,28 @@ var NAVTREEINDEX =
 "classwpi_1_1uv_1_1_loop.html#a2f18ae60dbee49200bc6df1d942fd66b",
 "classwpi_1_1uv_1_1_tcp.html#a163c3892951d94fb8bacd1fc1f490d5f",
 "discrete__algebraic__riccati__equation_8h_source.html",
-"group__enums.html#gga39e3366ff5554d731e7dc8bb642f83cda7b37877e0b9b0df28c9c2b669a633265",
-"group__hal__dma.html#gafedcea65ab948106f8f5b9461585ff3a",
-"group__hal__spi.html#gad60d88465ec0e71d9252ad00d8a7ab27",
-"group__ntcore__typedgetters__cfunc.html#ga05bd5041b421e183d2ab5e2be08d4607",
-"namespaceunits_1_1category.html#a5cd8f8c2ecd2fa4688f326c4bc7a20fc",
-"struct_eigen_1_1_sparse.html",
-"struct_eigen_1_1internal_1_1aligned__storage_1_1type.html",
-"struct_eigen_1_1internal_1_1constructor__without__unaligned__array__assert.html",
-"struct_eigen_1_1internal_1_1fast__accurate__exp2_3_01float_01_4.html",
-"struct_eigen_1_1internal_1_1gemv__packet__cond_3_01_g_e_m_v_packet_half_00_01_t1_00_01_t2_00_01_t3_01_4.html",
-"struct_eigen_1_1internal_1_1is__arithmetic_3_01char_01_4.html",
-"struct_eigen_1_1internal_1_1meta__floor__log2_3_01n_00_01lower_00_01upper_00_01meta__floor__log2__bogus_01_4.html",
-"struct_eigen_1_1internal_1_1product__type__selector_3_011_00_01_n_00_011_01_4.html",
-"struct_eigen_1_1internal_1_1scalar__bessel__k1__op.html",
-"struct_eigen_1_1internal_1_1sqrt__impl.html",
-"struct_eigen_1_1internal_1_1triangular__solver__unroller_3_01_lhs_00_01_rhs_00_01_mode_00_01_loo770c06e8f4c15ef547184369307ea3d8.html",
-"struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet1cf_01_4.html",
-"structdetail_1_1range__to__view_3_01_t_00_01enable__if__t_3_9has__const__begin__end_3_01_t_01_4_f652c0eeba6644f05ccec8d962321faf.html",
-"structstd__string__view.html",
-"structwpi_1_1detail_1_1_is_pointer_like.html",
-"wpilib_new_commands_2src_2main_2native_2include_2frc2_2command_2button_2_joystick_button_8h_source.html"
+"group__common.html#gga22f03cf1240d5a917e1b3e7be8ab327eaade66ddfcf1133c0ac00015ab26bd2b4",
+"group__flags.html#gaa34e83bae46a8eeae4e69ebe3aaecbed",
+"group__hal__encoder.html#gae37a7e58f0cd174f549c2db25935c9ee",
+"group__node.html#ga88b570192e47f589bc49cca2e88583b4",
+"group__ntcore__table__cfunc.html#ga4d4e95c13b6b13920af6db25cfc36931",
+"mutex_8h_source.html",
+"products_2_general_block_panel_kernel_8h_source.html",
+"struct_eigen_1_1internal_1_1_assignment_kind_3_01_dense_shape_00_01_permutation_shape_01_4.html",
+"struct_eigen_1_1internal_1_1bitwise__helper_3_01_t_00_01typename_01internal_1_1enable__if_3_01is511f9b17390a86cf8902d79021239f89.html",
+"struct_eigen_1_1internal_1_1determinant__impl_3_01_derived_00_012_01_4.html",
+"struct_eigen_1_1internal_1_1functor__traits_3_01scalar__expm1__op_3_01_scalar_01_4_01_4.html",
+"struct_eigen_1_1internal_1_1get__factor.html",
+"struct_eigen_1_1internal_1_1is_much_smaller_than__object__selector_3_01_derived_00_01_other_derived_00_01true_01_4.html",
+"struct_eigen_1_1internal_1_1packet__traits_3_01uint16__t_01_4.html",
+"struct_eigen_1_1internal_1_1random__retval.html",
+"struct_eigen_1_1internal_1_1scalar__fuzzy__impl.html",
+"struct_eigen_1_1internal_1_1traits_3_01_hessenberg_decomposition_matrix_h_return_type_3_01_matrix_type_01_4_01_4.html",
+"struct_eigen_1_1internal_1_1type__casting__traits_3_01numext_1_1int64__t_00_01numext_1_1int64__t_01_4.html",
+"struct_h_a_l___joystick_buttons.html",
+"structfrc_1_1_mecanum_drive_wheel_speeds.html#ab8214c04b8a3dad8bfdedbd1ab245c7b",
+"structuv__write__s.html",
+"structwpi_1_1detail_1_1priority__tag.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

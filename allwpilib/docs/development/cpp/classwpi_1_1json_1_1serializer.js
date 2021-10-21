@@ -1,6 +1,6 @@
 var classwpi_1_1json_1_1serializer =
 [
-    [ "serializer", "classwpi_1_1json_1_1serializer.html#aa4039cc6d3888a6e7cecb7083c3fe27d", null ],
+    [ "serializer", "classwpi_1_1json_1_1serializer.html#abdcdd0fce25d0954a3fbcf8cfe783b9a", null ],
     [ "decode", "classwpi_1_1json_1_1serializer.html#ab566bb1a99a1d43f367a8d55ca5ca7df", null ],
     [ "dump", "classwpi_1_1json_1_1serializer.html#a30c945ed2845a4231e9a2185423c0c53", null ],
     [ "dump_escaped", "classwpi_1_1json_1_1serializer.html#a3d36179b277d7ddaf0e79bb30b166a86", null ],
