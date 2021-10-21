@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-8-g75fa1fb</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-9-gac2f44d</span>
    </div>
   </td>
  </tr>
@@ -165,9 +165,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a807bbf6646a5d8374896cf9d33c28889"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1uv_1_1_loop.html#a807bbf6646a5d8374896cf9d33c28889">UpdateTime</a> () noexcept</td></tr>
 <tr class="memdesc:a807bbf6646a5d8374896cf9d33c28889"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the event loop’s concept of <em>now</em>.  <a href="classwpi_1_1uv_1_1_loop.html#a807bbf6646a5d8374896cf9d33c28889">More...</a><br /></td></tr>
 <tr class="separator:a807bbf6646a5d8374896cf9d33c28889"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad372f53c9e0627a3d84ca87e42fd2a0b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1uv_1_1_loop.html#ad372f53c9e0627a3d84ca87e42fd2a0b">Walk</a> (std::function&lt; void(<a class="el" href="classwpi_1_1uv_1_1_handle.html">Handle</a> &amp;)&gt; callback)</td></tr>
-<tr class="memdesc:ad372f53c9e0627a3d84ca87e42fd2a0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Walk the list of handles.  <a href="classwpi_1_1uv_1_1_loop.html#ad372f53c9e0627a3d84ca87e42fd2a0b">More...</a><br /></td></tr>
-<tr class="separator:ad372f53c9e0627a3d84ca87e42fd2a0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9e8f230eda495879496f6de522ab945"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1uv_1_1_loop.html#ab9e8f230eda495879496f6de522ab945">Walk</a> (<a class="el" href="classwpi_1_1function__ref.html">function_ref</a>&lt; void(<a class="el" href="classwpi_1_1uv_1_1_handle.html">Handle</a> &amp;)&gt; callback)</td></tr>
+<tr class="memdesc:ab9e8f230eda495879496f6de522ab945"><td class="mdescLeft">&#160;</td><td class="mdescRight">Walk the list of handles.  <a href="classwpi_1_1uv_1_1_loop.html#ab9e8f230eda495879496f6de522ab945">More...</a><br /></td></tr>
+<tr class="separator:ab9e8f230eda495879496f6de522ab945"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ecaf36e65ead41cb190d890ec03f093"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1uv_1_1_loop.html#a1ecaf36e65ead41cb190d890ec03f093">Fork</a> ()</td></tr>
 <tr class="memdesc:a1ecaf36e65ead41cb190d890ec03f093"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reinitialize any kernel state necessary in the child process after a fork(2) system call.  <a href="classwpi_1_1uv_1_1_loop.html#a1ecaf36e65ead41cb190d890ec03f093">More...</a><br /></td></tr>
 <tr class="separator:a1ecaf36e65ead41cb190d890ec03f093"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -671,8 +671,8 @@ template&lt;typename T  = void&gt; </div>
 
 </div>
 </div>
-<a id="ad372f53c9e0627a3d84ca87e42fd2a0b" name="ad372f53c9e0627a3d84ca87e42fd2a0b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad372f53c9e0627a3d84ca87e42fd2a0b">&#9670;&nbsp;</a></span>Walk()</h2>
+<a id="ab9e8f230eda495879496f6de522ab945" name="ab9e8f230eda495879496f6de522ab945"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9e8f230eda495879496f6de522ab945">&#9670;&nbsp;</a></span>Walk()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -680,7 +680,7 @@ template&lt;typename T  = void&gt; </div>
         <tr>
           <td class="memname">void wpi::uv::Loop::Walk </td>
           <td>(</td>
-          <td class="paramtype">std::function&lt; void(<a class="el" href="classwpi_1_1uv_1_1_handle.html">Handle</a> &amp;)&gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classwpi_1_1function__ref.html">function_ref</a>&lt; void(<a class="el" href="classwpi_1_1uv_1_1_handle.html">Handle</a> &amp;)&gt;&#160;</td>
           <td class="paramname"><em>callback</em></td><td>)</td>
           <td></td>
         </tr>
@@ -707,7 +707,7 @@ template&lt;typename T  = void&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>wpi</b></li><li class="navelem"><b>uv</b></li><li class="navelem"><a class="el" href="classwpi_1_1uv_1_1_loop.html">Loop</a></li>
-    <li class="footer">Generated on Thu Oct 21 2021 04:12:07 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Thu Oct 21 2021 06:28:11 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -16,6 +16,6 @@ var classwpi_1_1uv_1_1_loop =
     [ "SetData", "classwpi_1_1uv_1_1_loop.html#a8707c857c85c26bb43a7b191be52402d", null ],
     [ "Stop", "classwpi_1_1uv_1_1_loop.html#ab6d8d53040e38622b199105146632773", null ],
     [ "UpdateTime", "classwpi_1_1uv_1_1_loop.html#a807bbf6646a5d8374896cf9d33c28889", null ],
-    [ "Walk", "classwpi_1_1uv_1_1_loop.html#ad372f53c9e0627a3d84ca87e42fd2a0b", null ],
+    [ "Walk", "classwpi_1_1uv_1_1_loop.html#ab9e8f230eda495879496f6de522ab945", null ],
     [ "error", "classwpi_1_1uv_1_1_loop.html#aecde1d29bb84fe26990fcdeb4b72f3ac", null ]
 ];
