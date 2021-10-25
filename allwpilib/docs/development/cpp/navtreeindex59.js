@@ -1,5 +1,9 @@
 var NAVTREEINDEX59 =
 {
+"struct_eigen_1_1internal_1_1functor__traits_3_01scalar__difference__op_3_01_lhs_scalar_00_01_rhs_scalar_01_4_01_4.html":[4,0,4,3,367],
+"struct_eigen_1_1internal_1_1functor__traits_3_01scalar__exp__op_3_01_scalar_01_4_01_4.html":[4,0,4,3,368],
+"struct_eigen_1_1internal_1_1functor__traits_3_01scalar__exp__op_3_01_scalar_01_4_01_4.html":[5,0,4,2,368],
+"struct_eigen_1_1internal_1_1functor__traits_3_01scalar__expm1__op_3_01_scalar_01_4_01_4.html":[5,0,4,2,369],
 "struct_eigen_1_1internal_1_1functor__traits_3_01scalar__expm1__op_3_01_scalar_01_4_01_4.html":[4,0,4,3,369],
 "struct_eigen_1_1internal_1_1functor__traits_3_01scalar__floor__op_3_01_scalar_01_4_01_4.html":[5,0,4,2,370],
 "struct_eigen_1_1internal_1_1functor__traits_3_01scalar__floor__op_3_01_scalar_01_4_01_4.html":[4,0,4,3,370],
@@ -245,9 +249,5 @@ var NAVTREEINDEX59 =
 "struct_eigen_1_1internal_1_1get__compile__time__incr_3_01_single_range_01_4.html":[4,0,4,3,497],
 "struct_eigen_1_1internal_1_1get__compiletime__reshape__order.html":[5,0,4,2,498],
 "struct_eigen_1_1internal_1_1get__compiletime__reshape__order.html":[4,0,4,3,498],
-"struct_eigen_1_1internal_1_1get__compiletime__reshape__size.html":[5,0,4,2,499],
-"struct_eigen_1_1internal_1_1get__compiletime__reshape__size.html":[4,0,4,3,499],
-"struct_eigen_1_1internal_1_1get__compiletime__reshape__size_3_01_auto_size__t_00_01_other_size_00_01_total_size_01_4.html":[5,0,4,2,500],
-"struct_eigen_1_1internal_1_1get__compiletime__reshape__size_3_01_auto_size__t_00_01_other_size_00_01_total_size_01_4.html":[4,0,4,3,500],
-"struct_eigen_1_1internal_1_1get__factor.html":[5,0,4,2,501]
+"struct_eigen_1_1internal_1_1get__compiletime__reshape__size.html":[5,0,4,2,499]
 };

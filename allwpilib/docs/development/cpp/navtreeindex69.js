@@ -1,5 +1,9 @@
 var NAVTREEINDEX69 =
 {
+"structuv__udp__s.html":[5,0,241],
+"structuv__udp__send__s.html":[5,0,242],
+"structuv__utsname__s.html":[5,0,243],
+"structuv__work__s.html":[5,0,244],
 "structuv__write__s.html":[5,0,245],
 "structview.html":[5,0,247],
 "structwpi_1_1_align_to.html":[5,0,13,15],
@@ -245,9 +249,5 @@ var NAVTREEINDEX69 =
 "structwpi_1_1detail_1_1is__span.html":[4,0,13,0,46],
 "structwpi_1_1detail_1_1is__span.html":[5,0,13,0,46],
 "structwpi_1_1detail_1_1is__span_3_01span_3_01_t_00_01_s_01_4_01_4.html":[5,0,13,0,47],
-"structwpi_1_1detail_1_1is__span_3_01span_3_01_t_00_01_s_01_4_01_4.html":[4,0,13,0,47],
-"structwpi_1_1detail_1_1is__std__array.html":[5,0,13,0,48],
-"structwpi_1_1detail_1_1is__std__array.html":[4,0,13,0,48],
-"structwpi_1_1detail_1_1is__std__array_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4.html":[5,0,13,0,49],
-"structwpi_1_1detail_1_1is__std__array_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4.html":[4,0,13,0,49]
+"structwpi_1_1detail_1_1is__span_3_01span_3_01_t_00_01_s_01_4_01_4.html":[4,0,13,0,47]
 };

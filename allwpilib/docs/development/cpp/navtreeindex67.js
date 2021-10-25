@@ -1,5 +1,9 @@
 var NAVTREEINDEX67 =
 {
+"struct_h_a_l___c_a_n_stream_message.html":[3,0,27,0],
+"struct_h_a_l___control_word.html":[3,0,0,0],
+"struct_h_a_l___d_m_a_sample.html":[3,0,7,0],
+"struct_h_a_l___joystick_axes.html":[3,0,0,1],
 "struct_h_a_l___joystick_buttons.html":[3,0,0,3],
 "struct_h_a_l___joystick_descriptor.html":[3,0,0,4],
 "struct_h_a_l___joystick_p_o_vs.html":[3,0,0,2],
@@ -148,16 +152,16 @@ var NAVTREEINDEX67 =
 "structdetail_1_1range__to__view_3_01_t_00_01enable__if__t_3_01has__const__begin__end_3_01_t_01_4_1_1value_01_4_01_4.html":[5,0,1,37],
 "structdetail_1_1range__to__view_3_01_t_00_01enable__if__t_3_01has__const__begin__end_3_01_t_01_4_1_1value_01_4_01_4_1_1view__t.html":[5,0,1,37,0],
 "structdetail_1_1range__to__view_3_01_t_00_01enable__if__t_3_01has__const__begin__end_3_01_t_01_4_1_1value_01_4_01_4_1_1view__t.html":[4,0,1,37,0],
-"structdetail_1_1range__to__view_3_01_t_00_01enable__if__t_3_9has__const__begin__end_3_01_t_01_4_02cc276889d7570dd56de7fd1b0cb211.html":[4,0,1,38],
 "structdetail_1_1range__to__view_3_01_t_00_01enable__if__t_3_9has__const__begin__end_3_01_t_01_4_02cc276889d7570dd56de7fd1b0cb211.html":[5,0,1,38],
-"structdetail_1_1range__to__view_3_01_t_00_01enable__if__t_3_9has__const__begin__end_3_01_t_01_4_f652c0eeba6644f05ccec8d962321faf.html":[4,0,1,38,0],
+"structdetail_1_1range__to__view_3_01_t_00_01enable__if__t_3_9has__const__begin__end_3_01_t_01_4_02cc276889d7570dd56de7fd1b0cb211.html":[4,0,1,38],
 "structdetail_1_1range__to__view_3_01_t_00_01enable__if__t_3_9has__const__begin__end_3_01_t_01_4_f652c0eeba6644f05ccec8d962321faf.html":[5,0,1,38,0],
+"structdetail_1_1range__to__view_3_01_t_00_01enable__if__t_3_9has__const__begin__end_3_01_t_01_4_f652c0eeba6644f05ccec8d962321faf.html":[4,0,1,38,0],
 "structdetail_1_1test__stream.html":[5,0,1,39],
 "structdetail_1_1test__stream.html":[4,0,1,39],
 "structdetail_1_1uint128__wrapper.html":[5,0,1,44],
 "structdetail_1_1uint128__wrapper.html":[4,0,1,44],
-"structdragonbox_1_1decimal__fp.html":[4,0,2,0],
 "structdragonbox_1_1decimal__fp.html":[5,0,2,0],
+"structdragonbox_1_1decimal__fp.html":[4,0,2,0],
 "structdragonbox_1_1float__info.html":[4,0,2,1],
 "structdragonbox_1_1float__info.html":[5,0,2,1],
 "structdragonbox_1_1float__info_3_01double_01_4.html":[4,0,2,2],
@@ -245,9 +249,5 @@ var NAVTREEINDEX67 =
 "structfrc_1_1_mecanum_drive_wheel_speeds.html":[5,0,6,102],
 "structfrc_1_1_mecanum_drive_wheel_speeds.html":[4,0,6,103],
 "structfrc_1_1_mecanum_drive_wheel_speeds.html#a36b5e6e56ef4e66174bc3ba11a1930b3":[4,0,6,103,0],
-"structfrc_1_1_mecanum_drive_wheel_speeds.html#a36b5e6e56ef4e66174bc3ba11a1930b3":[5,0,6,102,0],
-"structfrc_1_1_mecanum_drive_wheel_speeds.html#a5b8f638a24ec54fe78fb67d4b35057b5":[4,0,6,103,2],
-"structfrc_1_1_mecanum_drive_wheel_speeds.html#a5b8f638a24ec54fe78fb67d4b35057b5":[5,0,6,102,2],
-"structfrc_1_1_mecanum_drive_wheel_speeds.html#a92579ff848d96a3434f69117c5b079c0":[4,0,6,103,1],
-"structfrc_1_1_mecanum_drive_wheel_speeds.html#a92579ff848d96a3434f69117c5b079c0":[5,0,6,102,1]
+"structfrc_1_1_mecanum_drive_wheel_speeds.html#a36b5e6e56ef4e66174bc3ba11a1930b3":[5,0,6,102,0]
 };

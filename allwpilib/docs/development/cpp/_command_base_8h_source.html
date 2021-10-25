@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-13-g737b57e</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-14-g6bc1db4</span>
    </div>
   </td>
  </tr>
@@ -120,68 +120,88 @@ $(document).ready(function(){initNavTree('_command_base_8h_source.html',''); ini
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>                    <span class="keyword">public</span> <a class="code hl_class" href="classwpi_1_1_sendable_helper.html">wpi::SendableHelper</a>&lt;CommandBase&gt; {</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> <span class="keyword">public</span>:<span class="comment"></span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">   * Adds the specified requirements to the command.</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">   * Adds the specified Subsystem requirements to the command.</span></div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">   * @param requirements the requirements to add</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">   * @param requirements the Subsystem requirements to add</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_base.html#a64f050689acd13a075633d78786d5aaf">   31</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc2_1_1_command_base.html#a64f050689acd13a075633d78786d5aaf">AddRequirements</a>(std::initializer_list&lt;Subsystem*&gt; requirements);</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment"></span> </div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">   * Adds the specified requirements to the command.</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">   * Adds the specified Subsystem requirements to the command.</span></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">   * @param requirements the requirements to add</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">   * @param requirements the Subsystem requirements to add</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_base.html#ab35d893f3c42a882dbafbcbccce1396a">   38</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc2_1_1_command_base.html#ab35d893f3c42a882dbafbcbccce1396a">AddRequirements</a>(<a class="code hl_class" href="classwpi_1_1span.html">wpi::span&lt;Subsystem* const&gt;</a> requirements);</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc2_1_1_command_base.html#a64f050689acd13a075633d78786d5aaf">AddRequirements</a>(<a class="code hl_class" href="classwpi_1_1_small_set.html">wpi::SmallSet&lt;Subsystem*, 4&gt;</a> requirements);</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_base.html#a575a63113a31811b0234b0aeefca4dff">   42</a></span>  <a class="code hl_class" href="classwpi_1_1_small_set.html">wpi::SmallSet&lt;Subsystem*, 4&gt;</a> <a class="code hl_function" href="classfrc2_1_1_command_base.html#a575a63113a31811b0234b0aeefca4dff">GetRequirements</a>() <span class="keyword">const override</span>;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment"></span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">   * Sets the name of this Command.</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">   * @param name name</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_base.html#a75fa3f1baf64ecde0a946e4da4bbee18">   49</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc2_1_1_command_base.html#a75fa3f1baf64ecde0a946e4da4bbee18">SetName</a>(std::string_view name);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment"></span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">   * Gets the name of this Command.</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">   * @return Name</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_base.html#a9bcb764f5f464d52f3d175fd80790916">   56</a></span>  std::string <a class="code hl_function" href="classfrc2_1_1_command_base.html#a9bcb764f5f464d52f3d175fd80790916">GetName</a>() <span class="keyword">const override</span>;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment"></span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">   * Gets the subsystem name of this Command.</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">   * @return Subsystem name</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_base.html#acd23702bf1d4155eda6c071e1aa9bdaf">   63</a></span>  std::string <a class="code hl_function" href="classfrc2_1_1_command_base.html#acd23702bf1d4155eda6c071e1aa9bdaf">GetSubsystem</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment"></span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">   * Sets the subsystem name of this Command.</span></div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">   * @param subsystem subsystem name</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_base.html#ae03b1c6ce3a67b2ba0b401e6f5fdb18b">   70</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc2_1_1_command_base.html#ae03b1c6ce3a67b2ba0b401e6f5fdb18b">SetSubsystem</a>(std::string_view subsystem);</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_base.html#a805d7e700007025500de08d88d53a1e8">   72</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc2_1_1_command_base.html#a805d7e700007025500de08d88d53a1e8">InitSendable</a>(<a class="code hl_class" href="classwpi_1_1_sendable_builder.html">wpi::SendableBuilder</a>&amp; builder) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> <span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  <a class="code hl_class" href="classfrc2_1_1_command_base.html">CommandBase</a>();</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  <a class="code hl_class" href="classwpi_1_1_small_set.html">wpi::SmallSet&lt;Subsystem*, 4&gt;</a> m_requirements;</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>};</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>}  <span class="comment">// namespace frc2</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment"></span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">   * Adds the specified Subsystem requirements to the command.</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">   * @param requirements the Subsystem requirements to add</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_base.html#a58db2748d46a01b31a1afa748aa398fc">   45</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc2_1_1_command_base.html#a58db2748d46a01b31a1afa748aa398fc">AddRequirements</a>(<a class="code hl_class" href="classwpi_1_1_small_set.html">wpi::SmallSet&lt;Subsystem*, 4&gt;</a> requirements);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment"></span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">   * Adds the specified Subsystem requirement to the command.</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">   * @param requirement the Subsystem requirement to add</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_base.html#a9158db92e0150fedddc904f28f628849">   52</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc2_1_1_command_base.html#a9158db92e0150fedddc904f28f628849">AddRequirements</a>(<a class="code hl_class" href="classfrc2_1_1_subsystem.html">Subsystem</a>* requirement);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment"></span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">   * Gets the Subsystem requirements of the command.</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">   * @return the Command&#39;s Subsystem requirements</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_base.html#a575a63113a31811b0234b0aeefca4dff">   59</a></span>  <a class="code hl_class" href="classwpi_1_1_small_set.html">wpi::SmallSet&lt;Subsystem*, 4&gt;</a> <a class="code hl_function" href="classfrc2_1_1_command_base.html#a575a63113a31811b0234b0aeefca4dff">GetRequirements</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment"></span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">   * Sets the name of this Command.</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">   * @param name name</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_base.html#a75fa3f1baf64ecde0a946e4da4bbee18">   66</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc2_1_1_command_base.html#a75fa3f1baf64ecde0a946e4da4bbee18">SetName</a>(std::string_view name);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment"></span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">   * Gets the name of this Command.</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">   * @return Name</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_base.html#a9bcb764f5f464d52f3d175fd80790916">   73</a></span>  std::string <a class="code hl_function" href="classfrc2_1_1_command_base.html#a9bcb764f5f464d52f3d175fd80790916">GetName</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment"></span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment">   * Gets the subsystem name of this Command.</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">   * @return Subsystem name</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_base.html#acd23702bf1d4155eda6c071e1aa9bdaf">   80</a></span>  std::string <a class="code hl_function" href="classfrc2_1_1_command_base.html#acd23702bf1d4155eda6c071e1aa9bdaf">GetSubsystem</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment"></span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment">   * Sets the subsystem name of this Command.</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">   * @param subsystem subsystem name</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_base.html#ae03b1c6ce3a67b2ba0b401e6f5fdb18b">   87</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc2_1_1_command_base.html#ae03b1c6ce3a67b2ba0b401e6f5fdb18b">SetSubsystem</a>(std::string_view subsystem);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="classfrc2_1_1_command_base.html#a805d7e700007025500de08d88d53a1e8">   89</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc2_1_1_command_base.html#a805d7e700007025500de08d88d53a1e8">InitSendable</a>(<a class="code hl_class" href="classwpi_1_1_sendable_builder.html">wpi::SendableBuilder</a>&amp; builder) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  <a class="code hl_class" href="classfrc2_1_1_command_base.html">CommandBase</a>();</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  <a class="code hl_class" href="classwpi_1_1_small_set.html">wpi::SmallSet&lt;Subsystem*, 4&gt;</a> m_requirements;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>};</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>}  <span class="comment">// namespace frc2</span></div>
 <div class="ttc" id="aclassfrc2_1_1_command_base_html"><div class="ttname"><a href="classfrc2_1_1_command_base.html">frc2::CommandBase</a></div><div class="ttdoc">A Sendable base class for Commands.</div><div class="ttdef"><b>Definition:</b> CommandBase.h:24</div></div>
-<div class="ttc" id="aclassfrc2_1_1_command_base_html_a575a63113a31811b0234b0aeefca4dff"><div class="ttname"><a href="classfrc2_1_1_command_base.html#a575a63113a31811b0234b0aeefca4dff">frc2::CommandBase::GetRequirements</a></div><div class="ttdeci">wpi::SmallSet&lt; Subsystem *, 4 &gt; GetRequirements() const override</div><div class="ttdoc">Specifies the set of subsystems used by this command.</div></div>
-<div class="ttc" id="aclassfrc2_1_1_command_base_html_a64f050689acd13a075633d78786d5aaf"><div class="ttname"><a href="classfrc2_1_1_command_base.html#a64f050689acd13a075633d78786d5aaf">frc2::CommandBase::AddRequirements</a></div><div class="ttdeci">void AddRequirements(std::initializer_list&lt; Subsystem * &gt; requirements)</div><div class="ttdoc">Adds the specified requirements to the command.</div></div>
+<div class="ttc" id="aclassfrc2_1_1_command_base_html_a575a63113a31811b0234b0aeefca4dff"><div class="ttname"><a href="classfrc2_1_1_command_base.html#a575a63113a31811b0234b0aeefca4dff">frc2::CommandBase::GetRequirements</a></div><div class="ttdeci">wpi::SmallSet&lt; Subsystem *, 4 &gt; GetRequirements() const override</div><div class="ttdoc">Gets the Subsystem requirements of the command.</div></div>
+<div class="ttc" id="aclassfrc2_1_1_command_base_html_a58db2748d46a01b31a1afa748aa398fc"><div class="ttname"><a href="classfrc2_1_1_command_base.html#a58db2748d46a01b31a1afa748aa398fc">frc2::CommandBase::AddRequirements</a></div><div class="ttdeci">void AddRequirements(wpi::SmallSet&lt; Subsystem *, 4 &gt; requirements)</div><div class="ttdoc">Adds the specified Subsystem requirements to the command.</div></div>
+<div class="ttc" id="aclassfrc2_1_1_command_base_html_a64f050689acd13a075633d78786d5aaf"><div class="ttname"><a href="classfrc2_1_1_command_base.html#a64f050689acd13a075633d78786d5aaf">frc2::CommandBase::AddRequirements</a></div><div class="ttdeci">void AddRequirements(std::initializer_list&lt; Subsystem * &gt; requirements)</div><div class="ttdoc">Adds the specified Subsystem requirements to the command.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_base_html_a75fa3f1baf64ecde0a946e4da4bbee18"><div class="ttname"><a href="classfrc2_1_1_command_base.html#a75fa3f1baf64ecde0a946e4da4bbee18">frc2::CommandBase::SetName</a></div><div class="ttdeci">void SetName(std::string_view name)</div><div class="ttdoc">Sets the name of this Command.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_base_html_a805d7e700007025500de08d88d53a1e8"><div class="ttname"><a href="classfrc2_1_1_command_base.html#a805d7e700007025500de08d88d53a1e8">frc2::CommandBase::InitSendable</a></div><div class="ttdeci">void InitSendable(wpi::SendableBuilder &amp;builder) override</div><div class="ttdoc">Initializes this Sendable object.</div></div>
+<div class="ttc" id="aclassfrc2_1_1_command_base_html_a9158db92e0150fedddc904f28f628849"><div class="ttname"><a href="classfrc2_1_1_command_base.html#a9158db92e0150fedddc904f28f628849">frc2::CommandBase::AddRequirements</a></div><div class="ttdeci">void AddRequirements(Subsystem *requirement)</div><div class="ttdoc">Adds the specified Subsystem requirement to the command.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_base_html_a9bcb764f5f464d52f3d175fd80790916"><div class="ttname"><a href="classfrc2_1_1_command_base.html#a9bcb764f5f464d52f3d175fd80790916">frc2::CommandBase::GetName</a></div><div class="ttdeci">std::string GetName() const override</div><div class="ttdoc">Gets the name of this Command.</div></div>
-<div class="ttc" id="aclassfrc2_1_1_command_base_html_ab35d893f3c42a882dbafbcbccce1396a"><div class="ttname"><a href="classfrc2_1_1_command_base.html#ab35d893f3c42a882dbafbcbccce1396a">frc2::CommandBase::AddRequirements</a></div><div class="ttdeci">void AddRequirements(wpi::span&lt; Subsystem *const &gt; requirements)</div><div class="ttdoc">Adds the specified requirements to the command.</div></div>
+<div class="ttc" id="aclassfrc2_1_1_command_base_html_ab35d893f3c42a882dbafbcbccce1396a"><div class="ttname"><a href="classfrc2_1_1_command_base.html#ab35d893f3c42a882dbafbcbccce1396a">frc2::CommandBase::AddRequirements</a></div><div class="ttdeci">void AddRequirements(wpi::span&lt; Subsystem *const &gt; requirements)</div><div class="ttdoc">Adds the specified Subsystem requirements to the command.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_base_html_acd23702bf1d4155eda6c071e1aa9bdaf"><div class="ttname"><a href="classfrc2_1_1_command_base.html#acd23702bf1d4155eda6c071e1aa9bdaf">frc2::CommandBase::GetSubsystem</a></div><div class="ttdeci">std::string GetSubsystem() const</div><div class="ttdoc">Gets the subsystem name of this Command.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_base_html_ae03b1c6ce3a67b2ba0b401e6f5fdb18b"><div class="ttname"><a href="classfrc2_1_1_command_base.html#ae03b1c6ce3a67b2ba0b401e6f5fdb18b">frc2::CommandBase::SetSubsystem</a></div><div class="ttdeci">void SetSubsystem(std::string_view subsystem)</div><div class="ttdoc">Sets the subsystem name of this Command.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_html"><div class="ttname"><a href="classfrc2_1_1_command.html">frc2::Command</a></div><div class="ttdoc">A state machine representing a complete action to be performed by the robot.</div><div class="ttdef"><b>Definition:</b> Command.h:48</div></div>
+<div class="ttc" id="aclassfrc2_1_1_subsystem_html"><div class="ttname"><a href="classfrc2_1_1_subsystem.html">frc2::Subsystem</a></div><div class="ttdoc">A robot subsystem.</div><div class="ttdef"><b>Definition:</b> Subsystem.h:36</div></div>
 <div class="ttc" id="aclasswpi_1_1_sendable_builder_html"><div class="ttname"><a href="classwpi_1_1_sendable_builder.html">wpi::SendableBuilder</a></div><div class="ttdef"><b>Definition:</b> SendableBuilder.h:18</div></div>
 <div class="ttc" id="aclasswpi_1_1_sendable_helper_html"><div class="ttname"><a href="classwpi_1_1_sendable_helper.html">wpi::SendableHelper</a></div><div class="ttdoc">A helper class for use with objects that add themselves to SendableRegistry.</div><div class="ttdef"><b>Definition:</b> SendableHelper.h:24</div></div>
 <div class="ttc" id="aclasswpi_1_1_sendable_html"><div class="ttname"><a href="classwpi_1_1_sendable.html">wpi::Sendable</a></div><div class="ttdoc">Interface for Sendable objects.</div><div class="ttdef"><b>Definition:</b> Sendable.h:16</div></div>
@@ -193,7 +213,7 @@ $(document).ready(function(){initNavTree('_command_base_8h_source.html',''); ini
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_e7d5d1c9c07b3d6a0a849f7ca2bfcaa9.html">frc2</a></li><li class="navelem"><a class="el" href="dir_25d5854705192c92d2d003534c71255a.html">command</a></li><li class="navelem"><b>CommandBase.h</b></li>
-    <li class="footer">Generated on Sat Oct 23 2021 06:04:41 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Mon Oct 25 2021 16:00:16 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
