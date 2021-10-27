@@ -1,5 +1,6 @@
 var NAVTREEINDEX59 =
 {
+"struct_eigen_1_1internal_1_1functor__traits_3_01scalar__cmp__op_3_01_lhs_scalar_00_01_rhs_scalar_00_01cmp_01_4_01_4.html":[5,0,4,2,359],
 "struct_eigen_1_1internal_1_1functor__traits_3_01scalar__cmp__op_3_01_lhs_scalar_00_01_rhs_scalar_00_01cmp_01_4_01_4.html":[4,0,4,3,359],
 "struct_eigen_1_1internal_1_1functor__traits_3_01scalar__conj__product__op_3_01_lhs_scalar_00_01_rhs_scalar_01_4_01_4.html":[4,0,4,3,360],
 "struct_eigen_1_1internal_1_1functor__traits_3_01scalar__conj__product__op_3_01_lhs_scalar_00_01_rhs_scalar_01_4_01_4.html":[5,0,4,2,360],
@@ -248,6 +249,5 @@ var NAVTREEINDEX59 =
 "struct_eigen_1_1internal_1_1generic__product__impl_3_01_transpose_3_01_lhs_01_4_00_01_rhs_00_01_287c8e613c7656c0ce6593799fd7b329.html":[4,0,4,3,488],
 "struct_eigen_1_1internal_1_1generic__product__impl_3_01_transpose_3_01_lhs_01_4_00_01_rhs_00_01_287c8e613c7656c0ce6593799fd7b329.html":[5,0,4,2,488],
 "struct_eigen_1_1internal_1_1generic__product__impl__base.html":[5,0,4,2,489],
-"struct_eigen_1_1internal_1_1generic__product__impl__base.html":[4,0,4,3,489],
-"struct_eigen_1_1internal_1_1generic__xpr__base.html":[5,0,4,2,491]
+"struct_eigen_1_1internal_1_1generic__product__impl__base.html":[4,0,4,3,489]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX51 =
 {
+"group__hal__dutycycle.html#gac6ee0f5f0df7b6949be45b715b07667e":[3,0,8,4],
 "group__hal__encoder.html":[3,0,28],
 "group__hal__encoder.html#ga0ea6b8f3d4fdb98320b69ed80bbd118a":[3,0,28,22],
 "group__hal__encoder.html#ga14a91a7307c5e25108f12fe90199f745":[3,0,28,15],
@@ -248,6 +249,5 @@ var NAVTREEINDEX51 =
 "group__node.html#ga38538087fb67888dfb77682580fb5086":[3,6,23],
 "group__node.html#ga3c572f76b9b6870eaa765e3acb6954c1":[3,6,15],
 "group__node.html#ga3cb51d3adfadc336a2ac28605a939a83":[3,6,74],
-"group__node.html#ga3d5e8f4732b9e7db24cf9f4581b13356":[3,6,61],
-"group__node.html#ga3e42c40a9a8ae59d231e623d180a42d8":[3,6,76]
+"group__node.html#ga3d5e8f4732b9e7db24cf9f4581b13356":[3,6,61]
 };
