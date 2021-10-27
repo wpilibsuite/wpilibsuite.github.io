@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-14-g6bc1db4</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-17-gd1842ea</span>
    </div>
   </td>
  </tr>
@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('classfrc_1_1_asynchronous_interrupt.ht
 </div><!--header-->
 <div class="contents">
 
-<p>Class for handling asynchronous interrupts.  
+<p>Class for handling asynchronous interrupts using a callback thread.  
  <a href="classfrc_1_1_asynchronous_interrupt.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_asynchronous_interrupt_8h_source.html">frc/AsynchronousInterrupt.h</a>&gt;</code></p>
@@ -143,10 +143,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae4be083edecc23fb8deae8f4fffbcc66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Class for handling asynchronous interrupts. </p>
+<div class="textblock"><p >Class for handling asynchronous interrupts using a callback thread. </p>
 <p >By default, interrupts will occur on rising edge. Callbacks are disabled by default, and <a class="el" href="classfrc_1_1_asynchronous_interrupt.html#ac103d447e8628cc467f828b6c793389a" title="Enables interrupt callbacks.">Enable()</a> must be called before they will occur.</p>
 <p >Both rising and falling edges can be indicated in one callback if both a rising and falling edge occurred since the previous callback.</p>
-<p >Synchronous interrupts are handled by the <a class="el" href="classfrc_1_1_synchronous_interrupt.html" title="Class for handling ssynchronous interrupts.">SynchronousInterrupt</a> class. </p>
+<p >Synchronous (blocking) interrupts are handled by the <a class="el" href="classfrc_1_1_synchronous_interrupt.html" title="Class for handling synchronous (blocking) interrupts.">SynchronousInterrupt</a> class. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1ce5704519ae1f20555718b1541a3f2f" name="a1ce5704519ae1f20555718b1541a3f2f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1ce5704519ae1f20555718b1541a3f2f">&#9670;&nbsp;</a></span>AsynchronousInterrupt() <span class="overload">[1/6]</span></h2>
@@ -176,7 +176,14 @@ Public Member Functions</h2></td></tr>
 
 <p>Construct an Asynchronous Interrupt from a Digital Source. </p>
 <p >At construction, the interrupt will trigger on the rising edge.</p>
-<p >The first bool in the callback is rising, the second is falling. </p>
+<p >The first bool in the callback indicates the rising edge triggered the interrupt, the second bool is falling edge.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>the <a class="el" href="classfrc_1_1_digital_source.html" title="DigitalSource Interface.">DigitalSource</a> the interrupts are triggered from </td></tr>
+    <tr><td class="paramname">callback</td><td>the callback function to call when the interrupt is triggered </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -208,7 +215,14 @@ Public Member Functions</h2></td></tr>
 
 <p>Construct an Asynchronous Interrupt from a Digital Source. </p>
 <p >At construction, the interrupt will trigger on the rising edge.</p>
-<p >The first bool in the callback is rising, the 2nd is falling. </p>
+<p >The first bool in the callback indicates the rising edge triggered the interrupt, the second bool is falling edge.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>the <a class="el" href="classfrc_1_1_digital_source.html" title="DigitalSource Interface.">DigitalSource</a> the interrupts are triggered from </td></tr>
+    <tr><td class="paramname">callback</td><td>the callback function to call when the interrupt is triggered </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -240,7 +254,14 @@ Public Member Functions</h2></td></tr>
 
 <p>Construct an Asynchronous Interrupt from a Digital Source. </p>
 <p >At construction, the interrupt will trigger on the rising edge.</p>
-<p >The first bool in the callback is rising, the 2nd is falling. </p>
+<p >The first bool in the callback indicates the rising edge triggered the interrupt, the second bool is falling edge.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>the <a class="el" href="classfrc_1_1_digital_source.html" title="DigitalSource Interface.">DigitalSource</a> the interrupts are triggered from </td></tr>
+    <tr><td class="paramname">callback</td><td>the callback function to call when the interrupt is triggered </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -294,7 +315,15 @@ template&lt;typename Callable , typename Arg , typename... Args&gt; </div>
 
 <p>Construct an Asynchronous Interrupt from a Digital Source. </p>
 <p >At construction, the interrupt will trigger on the rising edge.</p>
-<p >The first bool in the callback is rising, the 2nd is falling. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>the <a class="el" href="classfrc_1_1_digital_source.html" title="DigitalSource Interface.">DigitalSource</a> the interrupts are triggered from </td></tr>
+    <tr><td class="paramname">f</td><td>the callback function to call when the interrupt is triggered </td></tr>
+    <tr><td class="paramname">arg</td><td>the first argument, interrupt was triggered on rising edge </td></tr>
+    <tr><td class="paramname">args</td><td>the remaing arguments, interrupt was triggered on falling edge </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -348,7 +377,15 @@ template&lt;typename Callable , typename Arg , typename... Args&gt; </div>
 
 <p>Construct an Asynchronous Interrupt from a Digital Source. </p>
 <p >At construction, the interrupt will trigger on the rising edge.</p>
-<p >The first bool in the callback is rising, the 2nd is falling. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>the <a class="el" href="classfrc_1_1_digital_source.html" title="DigitalSource Interface.">DigitalSource</a> the interrupts are triggered from </td></tr>
+    <tr><td class="paramname">f</td><td>the callback function to call when the interrupt is triggered </td></tr>
+    <tr><td class="paramname">arg</td><td>the first argument, interrupt was triggered on rising edge </td></tr>
+    <tr><td class="paramname">args</td><td>the remaing arguments, interrupt was triggered on falling edge </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -402,7 +439,15 @@ template&lt;typename Callable , typename Arg , typename... Args&gt; </div>
 
 <p>Construct an Asynchronous Interrupt from a Digital Source. </p>
 <p >At construction, the interrupt will trigger on the rising edge.</p>
-<p >The first bool in the callback is rising, the 2nd is falling. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>the <a class="el" href="classfrc_1_1_digital_source.html" title="DigitalSource Interface.">DigitalSource</a> the interrupts are triggered from </td></tr>
+    <tr><td class="paramname">f</td><td>the callback function to call when the interrupt is triggered </td></tr>
+    <tr><td class="paramname">arg</td><td>the first argument, interrupt was triggered on rising edge </td></tr>
+    <tr><td class="paramname">args</td><td>the remaing arguments, interrupt was triggered on falling edge </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -464,7 +509,7 @@ template&lt;typename Callable , typename Arg , typename... Args&gt; </div>
 
 <p>Get the timestamp of the last falling edge. </p>
 <p >This function does not require the interrupt to be enabled to work.</p>
-<p >This only works if falling edge was configured using SetInterruptEdges. </p><dl class="section return"><dt>Returns</dt><dd>the timestamp in seconds relative to getFPGATime </dd></dl>
+<p >This only works if falling edge was configured using SetInterruptEdges. </p><dl class="section return"><dt>Returns</dt><dd>the timestamp in seconds relative to GetFPGATime </dd></dl>
 
 </div>
 </div>
@@ -485,7 +530,7 @@ template&lt;typename Callable , typename Arg , typename... Args&gt; </div>
 
 <p>Get the timestamp of the last rising edge. </p>
 <p >This function does not require the interrupt to be enabled to work.</p>
-<p >This only works if rising edge was configured using SetInterruptEdges. </p><dl class="section return"><dt>Returns</dt><dd>the timestamp in seconds relative to getFPGATime </dd></dl>
+<p >This only works if rising edge was configured using SetInterruptEdges. </p><dl class="section return"><dt>Returns</dt><dd>the timestamp in seconds relative to GetFPGATime </dd></dl>
 
 </div>
 </div>
@@ -535,7 +580,7 @@ template&lt;typename Callable , typename Arg , typename... Args&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1_asynchronous_interrupt.html">AsynchronousInterrupt</a></li>
-    <li class="footer">Generated on Mon Oct 25 2021 16:00:31 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Wed Oct 27 2021 06:38:28 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

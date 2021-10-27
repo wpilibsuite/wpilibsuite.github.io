@@ -569,6 +569,7 @@ var namespaces_dup =
       [ "DenseMapInfo< unsigned long long >", "structwpi_1_1_dense_map_info_3_01unsigned_01long_01long_01_4.html", null ],
       [ "DenseMapInfo< unsigned short >", "structwpi_1_1_dense_map_info_3_01unsigned_01short_01_4.html", null ],
       [ "DenseMapIterator", "classwpi_1_1_dense_map_iterator.html", null ],
+      [ "DsClient", "classwpi_1_1_ds_client.html", null ],
       [ "empty_array_t", "structwpi_1_1empty__array__t.html", null ],
       [ "EventLoopRunner", "classwpi_1_1_event_loop_runner.html", "classwpi_1_1_event_loop_runner" ],
       [ "function_ref", "classwpi_1_1function__ref.html", null ],

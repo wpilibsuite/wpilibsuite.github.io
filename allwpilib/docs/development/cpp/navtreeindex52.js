@@ -1,5 +1,8 @@
 var NAVTREEINDEX52 =
 {
+"group__node.html#ga79ce259dfafd0d3f30e7e43f1ece7cac":[3,6,54],
+"group__node.html#ga7ab1b150555b1c54b4c83c6bd71d6225":[3,6,18],
+"group__node.html#ga7beb8942f1d779d6fd688a4db84a3358":[3,6,34],
 "group__node.html#ga7f0d41beaee320fa02dc3d7434171fef":[3,6,19],
 "group__node.html#ga80458993ae88f7bbb3b26a8fa8ec4a49":[3,6,75],
 "group__node.html#ga831f47fdd6223dce326fe0f8ecc943d4":[3,6,7],
@@ -246,8 +249,5 @@ var NAVTREEINDEX52 =
 "group__ntcore__setdefault__cfunc.html#ga263ed0ded4943913b0e1f6a33f09123f":[3,8,9,2,4],
 "group__ntcore__setdefault__cfunc.html#ga4178d36c33edc72f8fb34d9035c7ccb8":[3,8,9,2,3],
 "group__ntcore__setdefault__cfunc.html#ga4d5af0daf5ffbc6866929dd5a6f4a572":[3,8,9,2,0],
-"group__ntcore__setdefault__cfunc.html#ga549a3cd4b6a70946e7c50b22347129b9":[3,8,9,2,5],
-"group__ntcore__setdefault__cfunc.html#gaadcd435edea069ea9f25509435324288":[3,8,9,2,6],
-"group__ntcore__setdefault__cfunc.html#gab8c94073294e42f18de8504642e0f2d9":[3,8,9,2,1],
-"group__ntcore__setdefault__cfunc.html#gaf7f6e4e0605a280b9408039fcc9d31fa":[3,8,9,2,2]
+"group__ntcore__setdefault__cfunc.html#ga549a3cd4b6a70946e7c50b22347129b9":[3,8,9,2,5]
 };

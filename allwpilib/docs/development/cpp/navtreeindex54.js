@@ -1,10 +1,13 @@
 var NAVTREEINDEX54 =
 {
+"math_8h_source.html":[6,0,12,29],
+"md__home_runner_work_allwpilib_allwpilib__l_i_c_e_n_s_e.html":[0],
+"modules.html":[3],
 "moment__of__inertia_8h_source.html":[6,0,12,30],
-"mpack_8h.html":[6,0,14,49],
-"mpack_8h.html#a0bedafb777bdc6adbb33c01141e4c2c7":[6,0,14,49,0],
-"mpack_8h_source.html":[6,0,14,49],
-"mutex_8h_source.html":[6,0,14,50],
+"mpack_8h.html":[6,0,14,50],
+"mpack_8h.html#a0bedafb777bdc6adbb33c01141e4c2c7":[6,0,14,50,0],
+"mpack_8h_source.html":[6,0,14,50],
+"mutex_8h_source.html":[6,0,14,51],
 "namespace_eigen.html":[4,0,4],
 "namespace_eigen.html#a06808a853a9baa38b23a5368e7491abd":[4,0,4,261],
 "namespace_eigen.html#a2669f89ff38296a38e6d973552eb4e33":[4,0,4,229],
@@ -241,13 +244,10 @@ var NAVTREEINDEX54 =
 "namespacewpi_1_1java.html#adcf8f55412f9e2f279bbeda3abb9c41b":[4,0,13,3,13],
 "namespacewpi_1_1java.html#afd8252e0c11698f82fa6a139a9b69268":[4,0,13,3,16],
 "never__destroyed_8h_source.html":[6,0,2,0,5],
-"nodiscard_8h_source.html":[6,0,14,53],
+"nodiscard_8h_source.html":[6,0,14,54],
 "ntcore_8h_source.html":[6,0,23],
 "ntcore__c_8h_source.html":[6,0,24],
 "ntcore__cpp_8h_source.html":[6,0,25],
 "ntcore__test_8h_source.html":[6,0,26],
-"os_8h_source.html":[6,0,4,0,0,8],
-"ostream_8h_source.html":[6,0,4,0,0,9],
-"pages.html":[],
-"posix_8h_source.html":[6,0,10,0,0,5]
+"os_8h_source.html":[6,0,4,0,0,8]
 };

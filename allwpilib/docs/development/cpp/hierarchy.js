@@ -895,6 +895,7 @@ var hierarchy =
     [ "Eigen::internal::enable_if_ref< T, Derived >", "struct_eigen_1_1internal_1_1enable__if__ref.html", null ],
     [ "Eigen::internal::enable_if_ref< Ref< T >, Derived >", "struct_eigen_1_1internal_1_1enable__if__ref_3_01_ref_3_01_t_01_4_00_01_derived_01_4.html", null ],
     [ "std::enable_shared_from_this", null, [
+      [ "wpi::DsClient", "classwpi_1_1_ds_client.html", null ],
       [ "wpi::HttpWebSocketServerConnection< Derived >", "classwpi_1_1_http_web_socket_server_connection.html", null ],
       [ "wpi::WebSocket", "classwpi_1_1_web_socket.html", null ],
       [ "wpi::WebSocketServer", "classwpi_1_1_web_socket_server.html", null ],

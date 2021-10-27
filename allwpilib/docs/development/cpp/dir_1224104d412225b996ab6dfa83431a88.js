@@ -19,6 +19,7 @@ var dir_1224104d412225b996ab6dfa83431a88 =
     [ "DenseMap.h", "_dense_map_8h_source.html", null ],
     [ "DenseMapInfo.h", "_dense_map_info_8h_source.html", null ],
     [ "deprecated.h", "deprecated_8h_source.html", null ],
+    [ "DsClient.h", "_ds_client_8h_source.html", null ],
     [ "Endian.h", "_endian_8h_source.html", null ],
     [ "EpochTracker.h", "_epoch_tracker_8h_source.html", null ],
     [ "Errc.h", "_errc_8h_source.html", null ],
