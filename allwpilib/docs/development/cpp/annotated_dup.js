@@ -2457,6 +2457,7 @@ var annotated_dup =
       [ "object_creator", "structwpi_1_1object__creator.html", null ],
       [ "object_deleter", "structwpi_1_1object__deleter.html", null ],
       [ "object_deleter< T[N]>", "structwpi_1_1object__deleter_3_01_t_0f_n_0e_4.html", null ],
+      [ "ParallelTcpConnector", "classwpi_1_1_parallel_tcp_connector.html", "classwpi_1_1_parallel_tcp_connector" ],
       [ "pointee_iterator", "structwpi_1_1pointee__iterator.html", null ],
       [ "pointer_iterator", "classwpi_1_1pointer__iterator.html", null ],
       [ "PointerIntPair", "classwpi_1_1_pointer_int_pair.html", null ],

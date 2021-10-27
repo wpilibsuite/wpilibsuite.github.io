@@ -59,6 +59,7 @@ var dir_1224104d412225b996ab6dfa83431a88 =
     [ "NetworkStream.h", "_network_stream_8h_source.html", null ],
     [ "nodiscard.h", "nodiscard_8h_source.html", null ],
     [ "NullDeleter.h", "_null_deleter_8h_source.html", null ],
+    [ "ParallelTcpConnector.h", "_parallel_tcp_connector_8h_source.html", null ],
     [ "PointerIntPair.h", "_pointer_int_pair_8h_source.html", null ],
     [ "PointerLikeTypeTraits.h", "_pointer_like_type_traits_8h_source.html", null ],
     [ "PointerUnion.h", "_pointer_union_8h_source.html", null ],

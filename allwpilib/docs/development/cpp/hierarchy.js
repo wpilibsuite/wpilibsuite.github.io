@@ -897,6 +897,7 @@ var hierarchy =
     [ "std::enable_shared_from_this", null, [
       [ "wpi::DsClient", "classwpi_1_1_ds_client.html", null ],
       [ "wpi::HttpWebSocketServerConnection< Derived >", "classwpi_1_1_http_web_socket_server_connection.html", null ],
+      [ "wpi::ParallelTcpConnector", "classwpi_1_1_parallel_tcp_connector.html", null ],
       [ "wpi::WebSocket", "classwpi_1_1_web_socket.html", null ],
       [ "wpi::WebSocketServer", "classwpi_1_1_web_socket_server.html", null ],
       [ "wpi::uv::Handle", "classwpi_1_1uv_1_1_handle.html", [
