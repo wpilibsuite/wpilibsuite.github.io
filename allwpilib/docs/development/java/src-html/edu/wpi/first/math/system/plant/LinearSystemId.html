@@ -145,8 +145,8 @@
 <span class="sourceLineNo">133</span><a id="line.133"></a>
 <span class="sourceLineNo">134</span><a id="line.134">  /**</a>
 <span class="sourceLineNo">135</span><a id="line.135">   * Identify a velocity system from it's kV (volts/(unit/sec)) and kA (volts/(unit/sec^2). These</a>
-<span class="sourceLineNo">136</span><a id="line.136">   * constants cam be found using frc-characterization. The states of the system are [velocity],</a>
-<span class="sourceLineNo">137</span><a id="line.137">   * inputs are [voltage], and outputs are [velocity].</a>
+<span class="sourceLineNo">136</span><a id="line.136">   * constants cam be found using SysId. The states of the system are [velocity], inputs are</a>
+<span class="sourceLineNo">137</span><a id="line.137">   * [voltage], and outputs are [velocity].</a>
 <span class="sourceLineNo">138</span><a id="line.138">   *</a>
 <span class="sourceLineNo">139</span><a id="line.139">   * &lt;p&gt;The distance unit you choose MUST be an SI unit (i.e. meters or radians). You can use the</a>
 <span class="sourceLineNo">140</span><a id="line.140">   * {@link edu.wpi.first.math.util.Units} class for converting between unit types.</a>
@@ -154,105 +154,101 @@
 <span class="sourceLineNo">142</span><a id="line.142">   * @param kV The velocity gain, in volts per (units per second)</a>
 <span class="sourceLineNo">143</span><a id="line.143">   * @param kA The acceleration gain, in volts per (units per second squared)</a>
 <span class="sourceLineNo">144</span><a id="line.144">   * @return A LinearSystem representing the given characterized constants.</a>
-<span class="sourceLineNo">145</span><a id="line.145">   * @see &lt;a href="https://github.com/wpilibsuite/frc-characterization"&gt;</a>
-<span class="sourceLineNo">146</span><a id="line.146">   *     https://github.com/wpilibsuite/frc-characterization&lt;/a&gt;</a>
-<span class="sourceLineNo">147</span><a id="line.147">   */</a>
-<span class="sourceLineNo">148</span><a id="line.148">  @SuppressWarnings("ParameterName")</a>
-<span class="sourceLineNo">149</span><a id="line.149">  public static LinearSystem&lt;N1, N1, N1&gt; identifyVelocitySystem(double kV, double kA) {</a>
-<span class="sourceLineNo">150</span><a id="line.150">    return new LinearSystem&lt;&gt;(</a>
-<span class="sourceLineNo">151</span><a id="line.151">        VecBuilder.fill(-kV / kA),</a>
-<span class="sourceLineNo">152</span><a id="line.152">        VecBuilder.fill(1.0 / kA),</a>
-<span class="sourceLineNo">153</span><a id="line.153">        VecBuilder.fill(1.0),</a>
-<span class="sourceLineNo">154</span><a id="line.154">        VecBuilder.fill(0.0));</a>
-<span class="sourceLineNo">155</span><a id="line.155">  }</a>
-<span class="sourceLineNo">156</span><a id="line.156"></a>
-<span class="sourceLineNo">157</span><a id="line.157">  /**</a>
-<span class="sourceLineNo">158</span><a id="line.158">   * Identify a position system from it's kV (volts/(unit/sec)) and kA (volts/(unit/sec^2). These</a>
-<span class="sourceLineNo">159</span><a id="line.159">   * constants cam be found using frc-characterization. The states of the system are [position,</a>
-<span class="sourceLineNo">160</span><a id="line.160">   * velocity]ᵀ, inputs are [voltage], and outputs are [position].</a>
-<span class="sourceLineNo">161</span><a id="line.161">   *</a>
-<span class="sourceLineNo">162</span><a id="line.162">   * &lt;p&gt;The distance unit you choose MUST be an SI unit (i.e. meters or radians). You can use the</a>
-<span class="sourceLineNo">163</span><a id="line.163">   * {@link edu.wpi.first.math.util.Units} class for converting between unit types.</a>
-<span class="sourceLineNo">164</span><a id="line.164">   *</a>
-<span class="sourceLineNo">165</span><a id="line.165">   * @param kV The velocity gain, in volts per (units per second)</a>
-<span class="sourceLineNo">166</span><a id="line.166">   * @param kA The acceleration gain, in volts per (units per second squared)</a>
-<span class="sourceLineNo">167</span><a id="line.167">   * @return A LinearSystem representing the given characterized constants.</a>
-<span class="sourceLineNo">168</span><a id="line.168">   * @see &lt;a href="https://github.com/wpilibsuite/frc-characterization"&gt;</a>
-<span class="sourceLineNo">169</span><a id="line.169">   *     https://github.com/wpilibsuite/frc-characterization&lt;/a&gt;</a>
-<span class="sourceLineNo">170</span><a id="line.170">   */</a>
-<span class="sourceLineNo">171</span><a id="line.171">  @SuppressWarnings("ParameterName")</a>
-<span class="sourceLineNo">172</span><a id="line.172">  public static LinearSystem&lt;N2, N1, N1&gt; identifyPositionSystem(double kV, double kA) {</a>
-<span class="sourceLineNo">173</span><a id="line.173">    return new LinearSystem&lt;&gt;(</a>
-<span class="sourceLineNo">174</span><a id="line.174">        Matrix.mat(Nat.N2(), Nat.N2()).fill(0.0, 1.0, 0.0, -kV / kA),</a>
-<span class="sourceLineNo">175</span><a id="line.175">        VecBuilder.fill(0.0, 1.0 / kA),</a>
-<span class="sourceLineNo">176</span><a id="line.176">        Matrix.mat(Nat.N1(), Nat.N2()).fill(1.0, 0.0),</a>
-<span class="sourceLineNo">177</span><a id="line.177">        VecBuilder.fill(0.0));</a>
-<span class="sourceLineNo">178</span><a id="line.178">  }</a>
-<span class="sourceLineNo">179</span><a id="line.179"></a>
-<span class="sourceLineNo">180</span><a id="line.180">  /**</a>
-<span class="sourceLineNo">181</span><a id="line.181">   * Identify a standard differential drive drivetrain, given the drivetrain's kV and kA in both</a>
-<span class="sourceLineNo">182</span><a id="line.182">   * linear (volts/(meter/sec) and volts/(meter/sec^2)) and angular (volts/(meter/sec) and</a>
-<span class="sourceLineNo">183</span><a id="line.183">   * volts/(meter/sec^2)) cases. This can be found using frc-characterization. The states of the</a>
-<span class="sourceLineNo">184</span><a id="line.184">   * system are [left velocity, right velocity]ᵀ, inputs are [left voltage, right voltage]ᵀ, and</a>
-<span class="sourceLineNo">185</span><a id="line.185">   * outputs are [left velocity, right velocity]ᵀ.</a>
-<span class="sourceLineNo">186</span><a id="line.186">   *</a>
-<span class="sourceLineNo">187</span><a id="line.187">   * @param kVLinear The linear velocity gain, volts per (meter per second).</a>
-<span class="sourceLineNo">188</span><a id="line.188">   * @param kALinear The linear acceleration gain, volts per (meter per second squared).</a>
-<span class="sourceLineNo">189</span><a id="line.189">   * @param kVAngular The angular velocity gain, volts per (meter per second).</a>
-<span class="sourceLineNo">190</span><a id="line.190">   * @param kAAngular The angular acceleration gain, volts per (meter per second squared).</a>
-<span class="sourceLineNo">191</span><a id="line.191">   * @return A LinearSystem representing the given characterized constants.</a>
-<span class="sourceLineNo">192</span><a id="line.192">   * @see &lt;a href="https://github.com/wpilibsuite/frc-characterization"&gt;</a>
-<span class="sourceLineNo">193</span><a id="line.193">   *     https://github.com/wpilibsuite/frc-characterization&lt;/a&gt;</a>
-<span class="sourceLineNo">194</span><a id="line.194">   */</a>
-<span class="sourceLineNo">195</span><a id="line.195">  @SuppressWarnings("ParameterName")</a>
-<span class="sourceLineNo">196</span><a id="line.196">  public static LinearSystem&lt;N2, N2, N2&gt; identifyDrivetrainSystem(</a>
-<span class="sourceLineNo">197</span><a id="line.197">      double kVLinear, double kALinear, double kVAngular, double kAAngular) {</a>
-<span class="sourceLineNo">198</span><a id="line.198">    final double A1 = 0.5 * -(kVLinear / kALinear + kVAngular / kAAngular);</a>
-<span class="sourceLineNo">199</span><a id="line.199">    final double A2 = 0.5 * -(kVLinear / kALinear - kVAngular / kAAngular);</a>
-<span class="sourceLineNo">200</span><a id="line.200">    final double B1 = 0.5 * (1.0 / kALinear + 1.0 / kAAngular);</a>
-<span class="sourceLineNo">201</span><a id="line.201">    final double B2 = 0.5 * (1.0 / kALinear - 1.0 / kAAngular);</a>
-<span class="sourceLineNo">202</span><a id="line.202"></a>
-<span class="sourceLineNo">203</span><a id="line.203">    return new LinearSystem&lt;&gt;(</a>
-<span class="sourceLineNo">204</span><a id="line.204">        Matrix.mat(Nat.N2(), Nat.N2()).fill(A1, A2, A2, A1),</a>
-<span class="sourceLineNo">205</span><a id="line.205">        Matrix.mat(Nat.N2(), Nat.N2()).fill(B1, B2, B2, B1),</a>
-<span class="sourceLineNo">206</span><a id="line.206">        Matrix.mat(Nat.N2(), Nat.N2()).fill(1, 0, 0, 1),</a>
-<span class="sourceLineNo">207</span><a id="line.207">        Matrix.mat(Nat.N2(), Nat.N2()).fill(0, 0, 0, 0));</a>
-<span class="sourceLineNo">208</span><a id="line.208">  }</a>
-<span class="sourceLineNo">209</span><a id="line.209"></a>
-<span class="sourceLineNo">210</span><a id="line.210">  /**</a>
-<span class="sourceLineNo">211</span><a id="line.211">   * Identify a standard differential drive drivetrain, given the drivetrain's kV and kA in both</a>
-<span class="sourceLineNo">212</span><a id="line.212">   * linear (volts/(meter/sec) and volts/(meter/sec^2)) and angular (volts/(radian/sec) and</a>
-<span class="sourceLineNo">213</span><a id="line.213">   * volts/(radian/sec^2)) cases. This can be found using frc-characterization. The states of the</a>
-<span class="sourceLineNo">214</span><a id="line.214">   * system are [left velocity, right velocity]ᵀ, inputs are [left voltage, right voltage]ᵀ, and</a>
-<span class="sourceLineNo">215</span><a id="line.215">   * outputs are [left velocity, right velocity]ᵀ.</a>
-<span class="sourceLineNo">216</span><a id="line.216">   *</a>
-<span class="sourceLineNo">217</span><a id="line.217">   * @param kVLinear The linear velocity gain, volts per (meter per second).</a>
-<span class="sourceLineNo">218</span><a id="line.218">   * @param kALinear The linear acceleration gain, volts per (meter per second squared).</a>
-<span class="sourceLineNo">219</span><a id="line.219">   * @param kVAngular The angular velocity gain, volts per (radians per second).</a>
-<span class="sourceLineNo">220</span><a id="line.220">   * @param kAAngular The angular acceleration gain, volts per (radians per second squared).</a>
-<span class="sourceLineNo">221</span><a id="line.221">   * @param trackwidth The width of the drivetrain in meters.</a>
-<span class="sourceLineNo">222</span><a id="line.222">   * @return A LinearSystem representing the given characterized constants.</a>
-<span class="sourceLineNo">223</span><a id="line.223">   * @see &lt;a href="https://github.com/wpilibsuite/frc-characterization"&gt;</a>
-<span class="sourceLineNo">224</span><a id="line.224">   *     https://github.com/wpilibsuite/frc-characterization&lt;/a&gt;</a>
-<span class="sourceLineNo">225</span><a id="line.225">   */</a>
-<span class="sourceLineNo">226</span><a id="line.226">  @SuppressWarnings("ParameterName")</a>
-<span class="sourceLineNo">227</span><a id="line.227">  public static LinearSystem&lt;N2, N2, N2&gt; identifyDrivetrainSystem(</a>
-<span class="sourceLineNo">228</span><a id="line.228">      double kVLinear, double kALinear, double kVAngular, double kAAngular, double trackwidth) {</a>
-<span class="sourceLineNo">229</span><a id="line.229">    // We want to find a factor to include in Kv,angular that will convert</a>
-<span class="sourceLineNo">230</span><a id="line.230">    // `u = Kv,angular omega` to `u = Kv,angular v`.</a>
-<span class="sourceLineNo">231</span><a id="line.231">    //</a>
-<span class="sourceLineNo">232</span><a id="line.232">    // v = omega r</a>
-<span class="sourceLineNo">233</span><a id="line.233">    // omega = v/r</a>
-<span class="sourceLineNo">234</span><a id="line.234">    // omega = 1/r v</a>
-<span class="sourceLineNo">235</span><a id="line.235">    // omega = 1/(trackwidth/2) v</a>
-<span class="sourceLineNo">236</span><a id="line.236">    // omega = 2/trackwidth v</a>
-<span class="sourceLineNo">237</span><a id="line.237">    //</a>
-<span class="sourceLineNo">238</span><a id="line.238">    // So multiplying by 2/trackwidth converts the angular gains from V/(rad/s)</a>
-<span class="sourceLineNo">239</span><a id="line.239">    // to V/m/s).</a>
-<span class="sourceLineNo">240</span><a id="line.240">    return identifyDrivetrainSystem(</a>
-<span class="sourceLineNo">241</span><a id="line.241">        kVLinear, kALinear, kVAngular * 2.0 / trackwidth, kAAngular * 2.0 / trackwidth);</a>
-<span class="sourceLineNo">242</span><a id="line.242">  }</a>
-<span class="sourceLineNo">243</span><a id="line.243">}</a>
+<span class="sourceLineNo">145</span><a id="line.145">   * @see &lt;a href="https://github.com/wpilibsuite/sysid"&gt;https://github.com/wpilibsuite/sysid&lt;/a&gt;</a>
+<span class="sourceLineNo">146</span><a id="line.146">   */</a>
+<span class="sourceLineNo">147</span><a id="line.147">  @SuppressWarnings("ParameterName")</a>
+<span class="sourceLineNo">148</span><a id="line.148">  public static LinearSystem&lt;N1, N1, N1&gt; identifyVelocitySystem(double kV, double kA) {</a>
+<span class="sourceLineNo">149</span><a id="line.149">    return new LinearSystem&lt;&gt;(</a>
+<span class="sourceLineNo">150</span><a id="line.150">        VecBuilder.fill(-kV / kA),</a>
+<span class="sourceLineNo">151</span><a id="line.151">        VecBuilder.fill(1.0 / kA),</a>
+<span class="sourceLineNo">152</span><a id="line.152">        VecBuilder.fill(1.0),</a>
+<span class="sourceLineNo">153</span><a id="line.153">        VecBuilder.fill(0.0));</a>
+<span class="sourceLineNo">154</span><a id="line.154">  }</a>
+<span class="sourceLineNo">155</span><a id="line.155"></a>
+<span class="sourceLineNo">156</span><a id="line.156">  /**</a>
+<span class="sourceLineNo">157</span><a id="line.157">   * Identify a position system from it's kV (volts/(unit/sec)) and kA (volts/(unit/sec^2). These</a>
+<span class="sourceLineNo">158</span><a id="line.158">   * constants cam be found using SysId. The states of the system are [position, velocity]ᵀ, inputs</a>
+<span class="sourceLineNo">159</span><a id="line.159">   * are [voltage], and outputs are [position].</a>
+<span class="sourceLineNo">160</span><a id="line.160">   *</a>
+<span class="sourceLineNo">161</span><a id="line.161">   * &lt;p&gt;The distance unit you choose MUST be an SI unit (i.e. meters or radians). You can use the</a>
+<span class="sourceLineNo">162</span><a id="line.162">   * {@link edu.wpi.first.math.util.Units} class for converting between unit types.</a>
+<span class="sourceLineNo">163</span><a id="line.163">   *</a>
+<span class="sourceLineNo">164</span><a id="line.164">   * @param kV The velocity gain, in volts per (units per second)</a>
+<span class="sourceLineNo">165</span><a id="line.165">   * @param kA The acceleration gain, in volts per (units per second squared)</a>
+<span class="sourceLineNo">166</span><a id="line.166">   * @return A LinearSystem representing the given characterized constants.</a>
+<span class="sourceLineNo">167</span><a id="line.167">   * @see &lt;a href="https://github.com/wpilibsuite/sysid"&gt;https://github.com/wpilibsuite/sysid&lt;/a&gt;</a>
+<span class="sourceLineNo">168</span><a id="line.168">   */</a>
+<span class="sourceLineNo">169</span><a id="line.169">  @SuppressWarnings("ParameterName")</a>
+<span class="sourceLineNo">170</span><a id="line.170">  public static LinearSystem&lt;N2, N1, N1&gt; identifyPositionSystem(double kV, double kA) {</a>
+<span class="sourceLineNo">171</span><a id="line.171">    return new LinearSystem&lt;&gt;(</a>
+<span class="sourceLineNo">172</span><a id="line.172">        Matrix.mat(Nat.N2(), Nat.N2()).fill(0.0, 1.0, 0.0, -kV / kA),</a>
+<span class="sourceLineNo">173</span><a id="line.173">        VecBuilder.fill(0.0, 1.0 / kA),</a>
+<span class="sourceLineNo">174</span><a id="line.174">        Matrix.mat(Nat.N1(), Nat.N2()).fill(1.0, 0.0),</a>
+<span class="sourceLineNo">175</span><a id="line.175">        VecBuilder.fill(0.0));</a>
+<span class="sourceLineNo">176</span><a id="line.176">  }</a>
+<span class="sourceLineNo">177</span><a id="line.177"></a>
+<span class="sourceLineNo">178</span><a id="line.178">  /**</a>
+<span class="sourceLineNo">179</span><a id="line.179">   * Identify a standard differential drive drivetrain, given the drivetrain's kV and kA in both</a>
+<span class="sourceLineNo">180</span><a id="line.180">   * linear (volts/(meter/sec) and volts/(meter/sec^2)) and angular (volts/(meter/sec) and</a>
+<span class="sourceLineNo">181</span><a id="line.181">   * volts/(meter/sec^2)) cases. This can be found using SysId. The states of the system are [left</a>
+<span class="sourceLineNo">182</span><a id="line.182">   * velocity, right velocity]ᵀ, inputs are [left voltage, right voltage]ᵀ, and outputs are [left</a>
+<span class="sourceLineNo">183</span><a id="line.183">   * velocity, right velocity]ᵀ.</a>
+<span class="sourceLineNo">184</span><a id="line.184">   *</a>
+<span class="sourceLineNo">185</span><a id="line.185">   * @param kVLinear The linear velocity gain, volts per (meter per second).</a>
+<span class="sourceLineNo">186</span><a id="line.186">   * @param kALinear The linear acceleration gain, volts per (meter per second squared).</a>
+<span class="sourceLineNo">187</span><a id="line.187">   * @param kVAngular The angular velocity gain, volts per (meter per second).</a>
+<span class="sourceLineNo">188</span><a id="line.188">   * @param kAAngular The angular acceleration gain, volts per (meter per second squared).</a>
+<span class="sourceLineNo">189</span><a id="line.189">   * @return A LinearSystem representing the given characterized constants.</a>
+<span class="sourceLineNo">190</span><a id="line.190">   * @see &lt;a href="https://github.com/wpilibsuite/sysid"&gt;https://github.com/wpilibsuite/sysid&lt;/a&gt;</a>
+<span class="sourceLineNo">191</span><a id="line.191">   */</a>
+<span class="sourceLineNo">192</span><a id="line.192">  @SuppressWarnings("ParameterName")</a>
+<span class="sourceLineNo">193</span><a id="line.193">  public static LinearSystem&lt;N2, N2, N2&gt; identifyDrivetrainSystem(</a>
+<span class="sourceLineNo">194</span><a id="line.194">      double kVLinear, double kALinear, double kVAngular, double kAAngular) {</a>
+<span class="sourceLineNo">195</span><a id="line.195">    final double A1 = 0.5 * -(kVLinear / kALinear + kVAngular / kAAngular);</a>
+<span class="sourceLineNo">196</span><a id="line.196">    final double A2 = 0.5 * -(kVLinear / kALinear - kVAngular / kAAngular);</a>
+<span class="sourceLineNo">197</span><a id="line.197">    final double B1 = 0.5 * (1.0 / kALinear + 1.0 / kAAngular);</a>
+<span class="sourceLineNo">198</span><a id="line.198">    final double B2 = 0.5 * (1.0 / kALinear - 1.0 / kAAngular);</a>
+<span class="sourceLineNo">199</span><a id="line.199"></a>
+<span class="sourceLineNo">200</span><a id="line.200">    return new LinearSystem&lt;&gt;(</a>
+<span class="sourceLineNo">201</span><a id="line.201">        Matrix.mat(Nat.N2(), Nat.N2()).fill(A1, A2, A2, A1),</a>
+<span class="sourceLineNo">202</span><a id="line.202">        Matrix.mat(Nat.N2(), Nat.N2()).fill(B1, B2, B2, B1),</a>
+<span class="sourceLineNo">203</span><a id="line.203">        Matrix.mat(Nat.N2(), Nat.N2()).fill(1, 0, 0, 1),</a>
+<span class="sourceLineNo">204</span><a id="line.204">        Matrix.mat(Nat.N2(), Nat.N2()).fill(0, 0, 0, 0));</a>
+<span class="sourceLineNo">205</span><a id="line.205">  }</a>
+<span class="sourceLineNo">206</span><a id="line.206"></a>
+<span class="sourceLineNo">207</span><a id="line.207">  /**</a>
+<span class="sourceLineNo">208</span><a id="line.208">   * Identify a standard differential drive drivetrain, given the drivetrain's kV and kA in both</a>
+<span class="sourceLineNo">209</span><a id="line.209">   * linear (volts/(meter/sec) and volts/(meter/sec^2)) and angular (volts/(radian/sec) and</a>
+<span class="sourceLineNo">210</span><a id="line.210">   * volts/(radian/sec^2)) cases. This can be found using SysId. The states of the system are [left</a>
+<span class="sourceLineNo">211</span><a id="line.211">   * velocity, right velocity]ᵀ, inputs are [left voltage, right voltage]ᵀ, and outputs are [left</a>
+<span class="sourceLineNo">212</span><a id="line.212">   * velocity, right velocity]ᵀ.</a>
+<span class="sourceLineNo">213</span><a id="line.213">   *</a>
+<span class="sourceLineNo">214</span><a id="line.214">   * @param kVLinear The linear velocity gain, volts per (meter per second).</a>
+<span class="sourceLineNo">215</span><a id="line.215">   * @param kALinear The linear acceleration gain, volts per (meter per second squared).</a>
+<span class="sourceLineNo">216</span><a id="line.216">   * @param kVAngular The angular velocity gain, volts per (radians per second).</a>
+<span class="sourceLineNo">217</span><a id="line.217">   * @param kAAngular The angular acceleration gain, volts per (radians per second squared).</a>
+<span class="sourceLineNo">218</span><a id="line.218">   * @param trackwidth The width of the drivetrain in meters.</a>
+<span class="sourceLineNo">219</span><a id="line.219">   * @return A LinearSystem representing the given characterized constants.</a>
+<span class="sourceLineNo">220</span><a id="line.220">   * @see &lt;a href="https://github.com/wpilibsuite/sysid"&gt;https://github.com/wpilibsuite/sysid&lt;/a&gt;</a>
+<span class="sourceLineNo">221</span><a id="line.221">   */</a>
+<span class="sourceLineNo">222</span><a id="line.222">  @SuppressWarnings("ParameterName")</a>
+<span class="sourceLineNo">223</span><a id="line.223">  public static LinearSystem&lt;N2, N2, N2&gt; identifyDrivetrainSystem(</a>
+<span class="sourceLineNo">224</span><a id="line.224">      double kVLinear, double kALinear, double kVAngular, double kAAngular, double trackwidth) {</a>
+<span class="sourceLineNo">225</span><a id="line.225">    // We want to find a factor to include in Kv,angular that will convert</a>
+<span class="sourceLineNo">226</span><a id="line.226">    // `u = Kv,angular omega` to `u = Kv,angular v`.</a>
+<span class="sourceLineNo">227</span><a id="line.227">    //</a>
+<span class="sourceLineNo">228</span><a id="line.228">    // v = omega r</a>
+<span class="sourceLineNo">229</span><a id="line.229">    // omega = v/r</a>
+<span class="sourceLineNo">230</span><a id="line.230">    // omega = 1/r v</a>
+<span class="sourceLineNo">231</span><a id="line.231">    // omega = 1/(trackwidth/2) v</a>
+<span class="sourceLineNo">232</span><a id="line.232">    // omega = 2/trackwidth v</a>
+<span class="sourceLineNo">233</span><a id="line.233">    //</a>
+<span class="sourceLineNo">234</span><a id="line.234">    // So multiplying by 2/trackwidth converts the angular gains from V/(rad/s)</a>
+<span class="sourceLineNo">235</span><a id="line.235">    // to V/m/s).</a>
+<span class="sourceLineNo">236</span><a id="line.236">    return identifyDrivetrainSystem(</a>
+<span class="sourceLineNo">237</span><a id="line.237">        kVLinear, kALinear, kVAngular * 2.0 / trackwidth, kAAngular * 2.0 / trackwidth);</a>
+<span class="sourceLineNo">238</span><a id="line.238">  }</a>
+<span class="sourceLineNo">239</span><a id="line.239">}</a>
 
 
 
