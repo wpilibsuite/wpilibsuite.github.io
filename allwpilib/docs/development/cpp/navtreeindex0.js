@@ -234,7 +234,6 @@ var NAVTREEINDEX0 =
 "_integral_constant_8h_source.html":[6,0,3,0,0,1,3,6],
 "_internal_button_8h_source.html":[6,0,6,0,4],
 "_interrupts_8h_source.html":[6,0,9,30],
-"_intrusive_ref_cnt_ptr_8h_source.html":[6,0,14,37],
 "_inverse_8h_source.html":[6,0,3,0,0,1,36],
 "_inverse_impl_8h_source.html":[6,0,3,0,0,5,3],
 "_inverse_size4_8h_source.html":[6,0,3,0,0,5,0,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX0 =
 "_kernel_8h_source.html":[6,0,3,0,0,6,1],
 "_killough_drive_8h_source.html":[6,0,7,0,1],
 "_l_d_l_t_8h_source.html":[6,0,3,0,0,0,0],
-"_l_l_t_8h_source.html":[6,0,3,0,0,0,1]
+"_l_l_t_8h_source.html":[6,0,3,0,0,0,1],
+"_layout_type_8h_source.html":[6,0,7,4,3]
 };

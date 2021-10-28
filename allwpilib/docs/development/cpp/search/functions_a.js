@@ -1,8 +1,8 @@
 var searchData=
 [
   ['jacobirotation_0',['JacobiRotation',['../class_eigen_1_1_jacobi_rotation.html#ac919e031415b573fdbe2fc4f93458ae9',1,'Eigen::JacobiRotation::JacobiRotation(const Scalar &amp;c, const Scalar &amp;s)'],['../class_eigen_1_1_jacobi_rotation.html#a9f1779d96696779574df6989d05e47cc',1,'Eigen::JacobiRotation::JacobiRotation()']]],
-  ['jacobisvd_1',['jacobiSvd',['../class_eigen_1_1_matrix_base.html#a5745dca9c54390633b434e54a1d1eedd',1,'Eigen::MatrixBase']]],
-  ['jacobisvd_2',['JacobiSVD',['../class_eigen_1_1_jacobi_s_v_d.html#a55315ab9cd060019a5ad07be798ff3b9',1,'Eigen::JacobiSVD::JacobiSVD()'],['../class_eigen_1_1_jacobi_s_v_d.html#a5d9ea7c8f361337727260efd77ee03ac',1,'Eigen::JacobiSVD::JacobiSVD(Index rows, Index cols, unsigned int computationOptions=0)'],['../class_eigen_1_1_jacobi_s_v_d.html#abfd1dd454a6e3edec7feecd97c818a78',1,'Eigen::JacobiSVD::JacobiSVD(const MatrixType &amp;matrix, unsigned int computationOptions=0)']]],
+  ['jacobisvd_1',['JacobiSVD',['../class_eigen_1_1_jacobi_s_v_d.html#a55315ab9cd060019a5ad07be798ff3b9',1,'Eigen::JacobiSVD::JacobiSVD()'],['../class_eigen_1_1_jacobi_s_v_d.html#a5d9ea7c8f361337727260efd77ee03ac',1,'Eigen::JacobiSVD::JacobiSVD(Index rows, Index cols, unsigned int computationOptions=0)'],['../class_eigen_1_1_jacobi_s_v_d.html#abfd1dd454a6e3edec7feecd97c818a78',1,'Eigen::JacobiSVD::JacobiSVD(const MatrixType &amp;matrix, unsigned int computationOptions=0)']]],
+  ['jacobisvd_2',['jacobiSvd',['../class_eigen_1_1_matrix_base.html#a5745dca9c54390633b434e54a1d1eedd',1,'Eigen::MatrixBase']]],
   ['jaguar_3',['Jaguar',['../classfrc_1_1_jaguar.html#a5363bd3b68d97c7be78154721f709612',1,'frc::Jaguar']]],
   ['joystick_4',['Joystick',['../classfrc_1_1_joystick.html#a7bd2084eb3c995a8696666037b2640fe',1,'frc::Joystick']]],
   ['joystickbutton_5',['JoystickButton',['../classfrc2_1_1_joystick_button.html#ae52639eb827320ed8bdd6dcdd71873ab',1,'frc2::JoystickButton']]],
