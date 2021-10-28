@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-23-g8d04606</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-24-g187f50a</span>
    </div>
   </td>
  </tr>
@@ -206,8 +206,14 @@ Static Public Member Functions</h2></td></tr>
     <tr><td class="paramname">m</td><td>Drivetrain mass. </td></tr>
     <tr><td class="paramname">r</td><td>Wheel radius. </td></tr>
     <tr><td class="paramname">rb</td><td>Robot radius. </td></tr>
-    <tr><td class="paramname">G</td><td>Gear ratio from motor to wheel. </td></tr>
     <tr><td class="paramname">J</td><td>Moment of inertia. </td></tr>
+    <tr><td class="paramname">G</td><td>Gear ratio from motor to wheel. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::domain_error</td><td>if m &lt;= 0, r &lt;= 0, rb &lt;= 0, J &lt;= 0, or G &lt;= 0. </td></tr>
   </table>
   </dd>
 </dl>
@@ -271,6 +277,12 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::domain_error</td><td>if m &lt;= 0, r &lt;= 0, or G &lt;= 0. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -321,6 +333,12 @@ Static Public Member Functions</h2></td></tr>
     <tr><td class="paramname">motor</td><td>Instance of <a class="el" href="classfrc_1_1_d_c_motor.html" title="Holds the constants for a DC motor.">DCMotor</a>. </td></tr>
     <tr><td class="paramname">J</td><td>Moment of inertia. </td></tr>
     <tr><td class="paramname">G</td><td>Gear ratio from motor to carriage. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::domain_error</td><td>if J &lt;= 0 or G &lt;= 0. </td></tr>
   </table>
   </dd>
 </dl>
@@ -381,6 +399,12 @@ Static Public Member Functions</h2></td></tr>
     <tr><td class="paramname">kAlinear</td><td>The linear acceleration gain in volts per (meter per second squared). </td></tr>
     <tr><td class="paramname">kVangular</td><td>The angular velocity gain in volts per (meter per second). </td></tr>
     <tr><td class="paramname">kAangular</td><td>The angular acceleration gain in volts per (meter per second squared). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">domain_error</td><td>if kVlinear &lt;= 0, kAlinear &lt;= 0, kVangular &lt;= 0, or kAangular &lt;= 0. </td></tr>
   </table>
   </dd>
 </dl>
@@ -451,6 +475,12 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">domain_error</td><td>if kVlinear &lt;= 0, kAlinear &lt;= 0, kVangular &lt;= 0, kAangular &lt;= 0, or trackwidth &lt;= 0. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -502,6 +532,12 @@ template&lt;typename Distance , typename  = std::enable_if_t&lt;                
   </table>
   </dd>
 </dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::domain_error</td><td>if kV &lt;= 0 or kA &lt;= 0. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -550,6 +586,12 @@ template&lt;typename Distance , typename  = std::enable_if_t&lt;                
   <table class="params">
     <tr><td class="paramname">kV</td><td>The velocity gain, in volt seconds per distance. </td></tr>
     <tr><td class="paramname">kA</td><td>The acceleration gain, in volt seconds^2 per distance. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::domain_error</td><td>if kV &lt;= 0 or kA &lt;= 0. </td></tr>
   </table>
   </dd>
 </dl>
@@ -606,6 +648,12 @@ template&lt;typename Distance , typename  = std::enable_if_t&lt;                
   </table>
   </dd>
 </dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::domain_error</td><td>if J &lt;= 0 or G &lt;= 0. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -618,7 +666,7 @@ template&lt;typename Distance , typename  = std::enable_if_t&lt;                
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1_linear_system_id.html">LinearSystemId</a></li>
-    <li class="footer">Generated on Wed Oct 27 2021 13:43:29 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Thu Oct 28 2021 03:22:20 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
