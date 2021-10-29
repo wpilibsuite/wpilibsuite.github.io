@@ -2286,8 +2286,8 @@ var hierarchy =
     [ "Eigen::internal::pminmax_impl< PropagateNaN >", "struct_eigen_1_1internal_1_1pminmax__impl_3_01_propagate_na_n_01_4.html", null ],
     [ "Eigen::internal::pminmax_impl< PropagateNumbers >", "struct_eigen_1_1internal_1_1pminmax__impl_3_01_propagate_numbers_01_4.html", null ],
     [ "frc::PneumaticsBase", "classfrc_1_1_pneumatics_base.html", [
-      [ "frc::PneumaticsControlModule", "classfrc_1_1_pneumatics_control_module.html", null ],
-      [ "frc::PneumaticsHub", "classfrc_1_1_pneumatics_hub.html", null ]
+      [ "frc::PneumaticHub", "classfrc_1_1_pneumatic_hub.html", null ],
+      [ "frc::PneumaticsControlModule", "classfrc_1_1_pneumatics_control_module.html", null ]
     ] ],
     [ "Eigen::internal::pointer_based_stl_iterator< XprType >", "class_eigen_1_1internal_1_1pointer__based__stl__iterator.html", null ],
     [ "wpi::PointerIntPair< PointerTy, IntBits, IntType, PtrTraits, Info >", "classwpi_1_1_pointer_int_pair.html", null ],

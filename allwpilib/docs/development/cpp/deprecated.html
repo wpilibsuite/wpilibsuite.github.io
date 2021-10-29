@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-26-g796d03d</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-29-gb209039</span>
    </div>
   </td>
  </tr>
@@ -148,27 +148,27 @@ $(document).ready(function(){initNavTree('deprecated.html',''); initResizable();
 <dt>Member <a class="el" href="classfrc_1_1_camera_server.html#aa164416827096a45eb9e4fd14f2a3e61">frc::CameraServer::SetSize</a>  (int size)</dt>
 <dd><a class="anchor" id="_deprecated000027"></a>Use SetResolution on the UsbCamera returned by <a class="el" href="classfrc_1_1_camera_server.html#a0eb9f7657053544a951403086f178f2e" title="Start automatically capturing images to send to the dashboard.">StartAutomaticCapture()</a> instead.  </dd>
 <dt>Class <a class="el" href="classfrc_1_1_controller.html">frc::Controller</a>  </dt>
-<dd><a class="anchor" id="_deprecated000069"></a>Only used by the deprecated <a class="el" href="classfrc_1_1_p_i_d_controller.html" title="Class implements a PID Control Loop.">PIDController</a>  </dd>
+<dd><a class="anchor" id="_deprecated000071"></a>Only used by the deprecated <a class="el" href="classfrc_1_1_p_i_d_controller.html" title="Class implements a PID Control Loop.">PIDController</a>  </dd>
 <dt>Member <a class="el" href="classfrc_1_1_driver_station.html#adff237bb09b51fec1273b575e80c20d8">frc::DriverStation::GetInstance</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000064"></a>Use the static methods  </dd>
+<dd><a class="anchor" id="_deprecated000066"></a>Use the static methods  </dd>
 <dt>Member <a class="el" href="classfrc_1_1_driver_station.html#a484f3cf97334dd77fca574f5064fe49d">frc::DriverStation::InOperatorControl</a>  (bool entering)</dt>
-<dd><a class="anchor" id="_deprecated000067"></a>Use <a class="el" href="classfrc_1_1_driver_station.html#ab4404a646c2184d3721052dc8d71f5e6" title="Only to be used to tell the Driver Station what code you claim to be executing for diagnostic purpose...">InTeleop()</a> instead.  </dd>
+<dd><a class="anchor" id="_deprecated000069"></a>Use <a class="el" href="classfrc_1_1_driver_station.html#ab4404a646c2184d3721052dc8d71f5e6" title="Only to be used to tell the Driver Station what code you claim to be executing for diagnostic purpose...">InTeleop()</a> instead.  </dd>
 <dt>Member <a class="el" href="classfrc_1_1_driver_station.html#a76dbfee86d1a717cef4c9bd35c0f61d7">frc::DriverStation::IsOperatorControl</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000065"></a>Use <a class="el" href="classfrc_1_1_driver_station.html#a8ccd52aeecfeedfa4c5b3152c722c73e" title="Check if the DS is commanding teleop mode.">IsTeleop()</a> instead.  </dd>
+<dd><a class="anchor" id="_deprecated000067"></a>Use <a class="el" href="classfrc_1_1_driver_station.html#a8ccd52aeecfeedfa4c5b3152c722c73e" title="Check if the DS is commanding teleop mode.">IsTeleop()</a> instead.  </dd>
 <dt>Member <a class="el" href="classfrc_1_1_driver_station.html#ab53352b4cc74bca7936b48a824d56a71">frc::DriverStation::IsOperatorControlEnabled</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000066"></a>Use <a class="el" href="classfrc_1_1_driver_station.html#a4569055a17be6d13e353e22a6e72bf22" title="Check if the DS is commanding teleop mode and if it has enabled the robot.">IsTeleopEnabled()</a> instead.  </dd>
+<dd><a class="anchor" id="_deprecated000068"></a>Use <a class="el" href="classfrc_1_1_driver_station.html#a4569055a17be6d13e353e22a6e72bf22" title="Check if the DS is commanding teleop mode and if it has enabled the robot.">IsTeleopEnabled()</a> instead.  </dd>
 <dt>Member <a class="el" href="classfrc_1_1_encoder.html#ab2314f41314a2961ed2034f3dab63bab">frc::Encoder::SetMaxPeriod</a>  (units::second_t maxPeriod) override</dt>
-<dd><a class="anchor" id="_deprecated000063"></a>Use <a class="el" href="classfrc_1_1_encoder.html#a7e5580dcbcffc3a0b3482cf9956347a9" title="Set the minimum rate of the device before the hardware reports it stopped.">SetMinRate()</a> in favor of this method. This takes unscaled periods and <a class="el" href="classfrc_1_1_encoder.html#a7e5580dcbcffc3a0b3482cf9956347a9" title="Set the minimum rate of the device before the hardware reports it stopped.">SetMinRate()</a> scales using value from <a class="el" href="classfrc_1_1_encoder.html#ac50921f87e0e3cc4785a4b1e157da433" title="Set the distance per pulse for this encoder.">SetDistancePerPulse()</a>. </dd>
+<dd><a class="anchor" id="_deprecated000065"></a>Use <a class="el" href="classfrc_1_1_encoder.html#a7e5580dcbcffc3a0b3482cf9956347a9" title="Set the minimum rate of the device before the hardware reports it stopped.">SetMinRate()</a> in favor of this method. This takes unscaled periods and <a class="el" href="classfrc_1_1_encoder.html#a7e5580dcbcffc3a0b3482cf9956347a9" title="Set the minimum rate of the device before the hardware reports it stopped.">SetMinRate()</a> scales using value from <a class="el" href="classfrc_1_1_encoder.html#ac50921f87e0e3cc4785a4b1e157da433" title="Set the distance per pulse for this encoder.">SetDistancePerPulse()</a>. </dd>
 <dt>Member <a class="el" href="classfrc_1_1_iterative_robot_base.html#adaad67b57154bd85fef26a742d9c66b2">frc::IterativeRobotBase::IterativeRobotBase</a>  (double period)</dt>
 <dd><a class="anchor" id="_deprecated000056"></a>Use <a class="el" href="classfrc_1_1_iterative_robot_base.html#afee5b7301bc0f4579d76f840a18f2cca" title="Constructor for IterativeRobotBase.">IterativeRobotBase(units::second_t period)</a> with unit-safety instead  </dd>
 <dt>Member <a class="el" href="classfrc_1_1_live_window.html#ad5201c8a5477624e00f6d4d09bc8fee0">frc::LiveWindow::GetInstance</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000072"></a>Use the static methods unless guaranteeing <a class="el" href="classfrc_1_1_live_window.html" title="The LiveWindow class is the public interface for putting sensors and actuators on the LiveWindow.">LiveWindow</a> is instantiated  </dd>
+<dd><a class="anchor" id="_deprecated000074"></a>Use the static methods unless guaranteeing <a class="el" href="classfrc_1_1_live_window.html" title="The LiveWindow class is the public interface for putting sensors and actuators on the LiveWindow.">LiveWindow</a> is instantiated  </dd>
 <dt>Class <a class="el" href="classfrc_1_1_p_i_d_base.html">frc::PIDBase</a>  </dt>
-<dd><a class="anchor" id="_deprecated000073"></a>All APIs which use this have been deprecated.  </dd>
-<dt>Class <a class="el" href="classfrc_1_1_p_i_d_controller.html">frc::PIDController</a>  </dt>
-<dd><a class="anchor" id="_deprecated000074"></a>Use <a class="el" href="classfrc2_1_1_p_i_d_controller.html" title="Implements a PID control loop.">frc2::PIDController</a> class instead.  </dd>
-<dt>Class <a class="el" href="classfrc_1_1_p_i_d_interface.html">frc::PIDInterface</a>  </dt>
 <dd><a class="anchor" id="_deprecated000075"></a>All APIs which use this have been deprecated.  </dd>
+<dt>Class <a class="el" href="classfrc_1_1_p_i_d_controller.html">frc::PIDController</a>  </dt>
+<dd><a class="anchor" id="_deprecated000076"></a>Use <a class="el" href="classfrc2_1_1_p_i_d_controller.html" title="Implements a PID control loop.">frc2::PIDController</a> class instead.  </dd>
+<dt>Class <a class="el" href="classfrc_1_1_p_i_d_interface.html">frc::PIDInterface</a>  </dt>
+<dd><a class="anchor" id="_deprecated000077"></a>All APIs which use this have been deprecated.  </dd>
 <dt>Member <a class="el" href="classfrc_1_1_preferences.html#a515f50bbde384332273c6f4011fbb349">frc::Preferences::GetInstance</a>  ()</dt>
 <dd><a class="anchor" id="_deprecated000055"></a>Use the static methods  </dd>
 <dt>Member <a class="el" href="classfrc_1_1_robot_base.html#ac9693ec00691571f9825d96c0ec86128">frc::RobotBase::IsOperatorControl</a>  () const</dt>
@@ -176,11 +176,15 @@ $(document).ready(function(){initNavTree('deprecated.html',''); initResizable();
 <dt>Member <a class="el" href="classfrc_1_1_robot_base.html#a442f6703ea6236dc05d12e877cbf638b">frc::RobotBase::IsOperatorControlEnabled</a>  () const</dt>
 <dd><a class="anchor" id="_deprecated000054"></a>Use <a class="el" href="classfrc_1_1_robot_base.html#aeb6120060634dacb79883a3f76154e20" title="Determine if the robot is current in Operator Control mode and enabled.">IsTeleopEnabled()</a> instead.  </dd>
 <dt>Member <a class="el" href="classfrc_1_1_robot_drive_base.html#ad34521ec9f278ec4625c0c0e313fafa1">frc::RobotDriveBase::ApplyDeadband</a>  (double value, double deadband)</dt>
-<dd><a class="anchor" id="_deprecated000068"></a>Use <a class="el" href="classfrc_1_1_robot_drive_base.html#ad34521ec9f278ec4625c0c0e313fafa1" title="Returns 0.0 if the given value is within the specified range around zero.">ApplyDeadband()</a> in <a class="el" href="_math_util_8h_source.html">frc/MathUtil.h</a>.  </dd>
+<dd><a class="anchor" id="_deprecated000070"></a>Use <a class="el" href="classfrc_1_1_robot_drive_base.html#ad34521ec9f278ec4625c0c0e313fafa1" title="Returns 0.0 if the given value is within the specified range around zero.">ApplyDeadband()</a> in <a class="el" href="_math_util_8h_source.html">frc/MathUtil.h</a>.  </dd>
 <dt>Member <a class="el" href="classfrc_1_1_sendable_chooser.html#a6d0bcabbab460e10f846abe03865641e">frc::SendableChooser&lt; T &gt;::AddDefault</a>  (std::string_view name, T object)</dt>
-<dd><a class="anchor" id="_deprecated000071"></a>use <a class="el" href="classfrc_1_1_sendable_chooser.html#a347cd324e81176fa4e32f2a0f7a77158" title="Add the given object to the list of options and marks it as the default.">SetDefaultOption(std::string_view name, T object)</a> instead. </dd>
+<dd><a class="anchor" id="_deprecated000073"></a>use <a class="el" href="classfrc_1_1_sendable_chooser.html#a347cd324e81176fa4e32f2a0f7a77158" title="Add the given object to the list of options and marks it as the default.">SetDefaultOption(std::string_view name, T object)</a> instead. </dd>
 <dt>Member <a class="el" href="classfrc_1_1_sendable_chooser.html#ab01426bbcb86a824bd0e9af426b47ba0">frc::SendableChooser&lt; T &gt;::AddObject</a>  (std::string_view name, T object)</dt>
-<dd><a class="anchor" id="_deprecated000070"></a>use <a class="el" href="classfrc_1_1_sendable_chooser.html#aaa1f52d5ecc0929bffcefb2801b1c3cf" title="Adds the given object to the list of options.">AddOption(std::string_view name, T object)</a> instead. </dd>
+<dd><a class="anchor" id="_deprecated000072"></a>use <a class="el" href="classfrc_1_1_sendable_chooser.html#aaa1f52d5ecc0929bffcefb2801b1c3cf" title="Adds the given object to the list of options.">AddOption(std::string_view name, T object)</a> instead. </dd>
+<dt>Class <a class="el" href="classfrc_1_1_speed_controller.html">frc::SpeedController</a>  </dt>
+<dd><a class="anchor" id="_deprecated000063"></a>Use <a class="el" href="classfrc_1_1_motor_controller.html" title="Interface for motor controlling devices.">MotorController</a>.  </dd>
+<dt>Class <a class="el" href="classfrc_1_1_speed_controller_group.html">frc::SpeedControllerGroup</a>  </dt>
+<dd><a class="anchor" id="_deprecated000064"></a>Use <a class="el" href="classfrc_1_1_motor_controller_group.html" title="Allows multiple MotorController objects to be linked together.">MotorControllerGroup</a>.  </dd>
 <dt>Member <a class="el" href="classfrc_1_1_s_p_i.html#aa071c1d8e6c6c9995db38dd9c1dd03b4">frc::SPI::InitAccumulator</a>  (double period, int cmd, int xferSize, int validMask, int validValue, int dataShift, int dataSize, bool isSigned, bool bigEndian)</dt>
 <dd><a class="anchor" id="_deprecated000062"></a>Use unit-safe version instead. InitAccumulator(units::second_t period, int cmd, int xferSize, int validMask, int validValue, int dataShift, int dataSize, bool isSigned, bool bigEndian) </dd>
 <dt>Member <a class="el" href="classfrc_1_1_s_p_i.html#a13df61aff07325c9ea6768ef161db5be">frc::SPI::SetSampleDataOnFalling</a>  ()</dt>
@@ -250,7 +254,7 @@ $(document).ready(function(){initNavTree('deprecated.html',''); initResizable();
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Oct 28 2021 07:21:46 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Oct 29 2021 07:04:45 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
