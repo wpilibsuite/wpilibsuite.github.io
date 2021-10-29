@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-31-ga939cd9</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-32-g2cb171f</span>
    </div>
   </td>
  </tr>
@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('_p_w_m_motor_controller_8h_source.html
   <div class="headertitle"><div class="title">PWMMotorController.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
+<a href="_p_w_m_motor_controller_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Open Source Software; you can modify and/or share it under the terms of</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// the WPILib BSD license file in the root directory of this project.</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
@@ -103,15 +103,15 @@ $(document).ready(function(){initNavTree('_p_w_m_motor_controller_8h_source.html
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;string_view&gt;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;wpi/sendable/Sendable.h&gt;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;wpi/sendable/SendableHelper.h&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;<a class="code" href="_sendable_8h.html">wpi/sendable/Sendable.h</a>&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;<a class="code" href="_sendable_helper_8h.html">wpi/sendable/SendableHelper.h</a>&gt;</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;frc/MotorSafety.h&quot;</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;frc/PWM.h&quot;</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;frc/motorcontrol/MotorController.h&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="_motor_safety_8h.html">frc/MotorSafety.h</a>&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="wpilibc_2src_2main_2native_2include_2frc_2_p_w_m_8h.html">frc/PWM.h</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="_motor_controller_8h.html">frc/motorcontrol/MotorController.h</a>&quot;</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">namespace </span>frc {</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">class </span>DMA;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacefrc.html">frc</a> {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">class </span><a class="code hl_enumvalue" href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9a33fd5f6391f2f0cb4c91179d7f521949">DMA</a>;</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"></span> </div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">/**</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> * Common base class for all PWM Motor Controllers.</span></div>
@@ -121,10 +121,10 @@ $(document).ready(function(){initNavTree('_p_w_m_motor_controller_8h_source.html
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                           <span class="keyword">public</span> <a class="code hl_class" href="classwpi_1_1_sendable.html">wpi::Sendable</a>,</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                           <span class="keyword">public</span> <a class="code hl_class" href="classwpi_1_1_sendable_helper.html">wpi::SendableHelper</a>&lt;PWMMotorController&gt; {</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="classfrc_1_1_d_m_a.html">DMA</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classfrc_1_1_p_w_m_motor_controller.html#a8dd886aeff72fdd847a45f3bee3810b1">   28</a></span>  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="classfrc_1_1_d_m_a.html">DMA</a>;</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <a class="code hl_class" href="classfrc_1_1_p_w_m_motor_controller.html">PWMMotorController</a>(<a class="code hl_class" href="classfrc_1_1_p_w_m_motor_controller.html">PWMMotorController</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  <a class="code hl_class" href="classfrc_1_1_p_w_m_motor_controller.html">PWMMotorController</a>&amp; operator=(<a class="code hl_class" href="classfrc_1_1_p_w_m_motor_controller.html">PWMMotorController</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="classfrc_1_1_p_w_m_motor_controller.html#abe44af44fba50c21985a23bab6f9ce43">   30</a></span>  <a class="code hl_function" href="classfrc_1_1_p_w_m_motor_controller.html#abe44af44fba50c21985a23bab6f9ce43">PWMMotorController</a>(<a class="code hl_class" href="classfrc_1_1_p_w_m_motor_controller.html">PWMMotorController</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classfrc_1_1_p_w_m_motor_controller.html#a4b20765140d822cc39bd7168dc8a80f7">   31</a></span>  <a class="code hl_class" href="classfrc_1_1_p_w_m_motor_controller.html">PWMMotorController</a>&amp; <a class="code hl_function" href="classfrc_1_1_p_w_m_motor_controller.html#a4b20765140d822cc39bd7168dc8a80f7">operator=</a>(<a class="code hl_class" href="classfrc_1_1_p_w_m_motor_controller.html">PWMMotorController</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment"></span> </div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">   * Set the PWM value.</span></div>
@@ -152,10 +152,10 @@ $(document).ready(function(){initNavTree('_p_w_m_motor_controller_8h_source.html
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classfrc_1_1_p_w_m_motor_controller.html#a0910c229495436a8dc94dcbd478c0bae">   56</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_p_w_m_motor_controller.html#a0910c229495436a8dc94dcbd478c0bae">Disable</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <span class="comment">// MotorSafety interface</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <span class="keywordtype">void</span> StopMotor() <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  std::string GetDescription() <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classfrc_1_1_p_w_m_motor_controller.html#a7d268832fe2fc1a6a5dde3f27095a026">   59</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_p_w_m_motor_controller.html#a7d268832fe2fc1a6a5dde3f27095a026">StopMotor</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="classfrc_1_1_p_w_m_motor_controller.html#adce0f524fe91c63a0deaa64144457b47">   60</a></span>  std::string <a class="code hl_function" href="classfrc_1_1_p_w_m_motor_controller.html#adce0f524fe91c63a0deaa64144457b47">GetDescription</a>() <span class="keyword">const override</span>;</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  <span class="keywordtype">int</span> GetChannel() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="classfrc_1_1_p_w_m_motor_controller.html#afa39100c2ad5b9d491e79d44d03c90ff">   62</a></span>  <span class="keywordtype">int</span> <a class="code hl_function" href="classfrc_1_1_p_w_m_motor_controller.html#afa39100c2ad5b9d491e79d44d03c90ff">GetChannel</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> <span class="keyword">protected</span>:<span class="comment"></span></div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">  /**</span></div>
@@ -165,19 +165,23 @@ $(document).ready(function(){initNavTree('_p_w_m_motor_controller_8h_source.html
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">   * @param channel The PWM channel that the controller is attached to. 0-9 are</span></div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">   *                on-board, 10-19 are on the MXP port</span></div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="classfrc_1_1_p_w_m_motor_controller.html#a23586a3111a6b7114bbaa6df952c9c92">   72</a></span>  <a class="code hl_function" href="classfrc_1_1_p_w_m_motor_controller.html#a23586a3111a6b7114bbaa6df952c9c92">PWMMotorController</a>(std::string_view name, <span class="keywordtype">int</span> channel);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="classfrc_1_1_p_w_m_motor_controller.html#a23586a3111a6b7114bbaa6df952c9c92">   72</a></span>  <a class="code hl_function" href="classfrc_1_1_p_w_m_motor_controller.html#a23586a3111a6b7114bbaa6df952c9c92">PWMMotorController</a>(<a class="code hl_typedef" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> <a class="code hl_enumvalue" href="core_8h.html#a7fc0249f0f8ba720115d2430f5b86cbaab068931cc450442b63f5b3d276ea4297">name</a>, <span class="keywordtype">int</span> channel);</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="classfrc_1_1_p_w_m_motor_controller.html#a1f6523c097b787e6a2d4108cd5a4226c">   74</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_p_w_m_motor_controller.html#a1f6523c097b787e6a2d4108cd5a4226c">InitSendable</a>(<a class="code hl_class" href="classwpi_1_1_sendable_builder.html">wpi::SendableBuilder</a>&amp; builder) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  <a class="code hl_class" href="classfrc_1_1_p_w_m.html">PWM</a> m_pwm;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="classfrc_1_1_p_w_m_motor_controller.html#a9761802323fed0791245f1e91af3aff3">   76</a></span>  <a class="code hl_class" href="classfrc_1_1_p_w_m.html">PWM</a> <a class="code hl_variable" href="classfrc_1_1_p_w_m_motor_controller.html#a9761802323fed0791245f1e91af3aff3">m_pwm</a>;</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> <span class="keyword">private</span>:</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  <span class="keywordtype">bool</span> m_isInverted = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  <a class="code hl_class" href="classfrc_1_1_p_w_m.html">PWM</a>* GetPwm() { <span class="keywordflow">return</span> &amp;m_pwm; }</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  <a class="code hl_class" href="classfrc_1_1_p_w_m.html">PWM</a>* GetPwm() { <span class="keywordflow">return</span> &amp;<a class="code hl_variable" href="classfrc_1_1_p_w_m_motor_controller.html#a9761802323fed0791245f1e91af3aff3">m_pwm</a>; }</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>};</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>}  <span class="comment">// namespace frc</span></div>
+<div class="ttc" id="a_motor_controller_8h_html"><div class="ttname"><a href="_motor_controller_8h.html">MotorController.h</a></div></div>
+<div class="ttc" id="a_motor_safety_8h_html"><div class="ttname"><a href="_motor_safety_8h.html">MotorSafety.h</a></div></div>
+<div class="ttc" id="a_sendable_8h_html"><div class="ttname"><a href="_sendable_8h.html">Sendable.h</a></div></div>
+<div class="ttc" id="a_sendable_helper_8h_html"><div class="ttname"><a href="_sendable_helper_8h.html">SendableHelper.h</a></div></div>
 <div class="ttc" id="aclassfrc_1_1_d_m_a_html"><div class="ttname"><a href="classfrc_1_1_d_m_a.html">frc::DMA</a></div><div class="ttdef"><b>Definition:</b> DMA.h:20</div></div>
 <div class="ttc" id="aclassfrc_1_1_motor_controller_html"><div class="ttname"><a href="classfrc_1_1_motor_controller.html">frc::MotorController</a></div><div class="ttdoc">Interface for motor controlling devices.</div><div class="ttdef"><b>Definition:</b> MotorController.h:27</div></div>
 <div class="ttc" id="aclassfrc_1_1_motor_safety_html"><div class="ttname"><a href="classfrc_1_1_motor_safety.html">frc::MotorSafety</a></div><div class="ttdoc">This base class runs a watchdog timer and calls the subclass's StopMotor() function if the timeout ex...</div><div class="ttdef"><b>Definition:</b> MotorSafety.h:22</div></div>
@@ -187,20 +191,31 @@ $(document).ready(function(){initNavTree('_p_w_m_motor_controller_8h_source.html
 <div class="ttc" id="aclassfrc_1_1_p_w_m_motor_controller_html_a1f6523c097b787e6a2d4108cd5a4226c"><div class="ttname"><a href="classfrc_1_1_p_w_m_motor_controller.html#a1f6523c097b787e6a2d4108cd5a4226c">frc::PWMMotorController::InitSendable</a></div><div class="ttdeci">void InitSendable(wpi::SendableBuilder &amp;builder) override</div><div class="ttdoc">Initializes this Sendable object.</div></div>
 <div class="ttc" id="aclassfrc_1_1_p_w_m_motor_controller_html_a23586a3111a6b7114bbaa6df952c9c92"><div class="ttname"><a href="classfrc_1_1_p_w_m_motor_controller.html#a23586a3111a6b7114bbaa6df952c9c92">frc::PWMMotorController::PWMMotorController</a></div><div class="ttdeci">PWMMotorController(std::string_view name, int channel)</div><div class="ttdoc">Constructor for a PWM Motor Controller connected via PWM.</div></div>
 <div class="ttc" id="aclassfrc_1_1_p_w_m_motor_controller_html_a3274a2293ee6990bcd15cc0dd8f33282"><div class="ttname"><a href="classfrc_1_1_p_w_m_motor_controller.html#a3274a2293ee6990bcd15cc0dd8f33282">frc::PWMMotorController::GetInverted</a></div><div class="ttdeci">bool GetInverted() const override</div><div class="ttdoc">Common interface for returning the inversion state of a speed controller.</div></div>
+<div class="ttc" id="aclassfrc_1_1_p_w_m_motor_controller_html_a4b20765140d822cc39bd7168dc8a80f7"><div class="ttname"><a href="classfrc_1_1_p_w_m_motor_controller.html#a4b20765140d822cc39bd7168dc8a80f7">frc::PWMMotorController::operator=</a></div><div class="ttdeci">PWMMotorController &amp; operator=(PWMMotorController &amp;&amp;)=default</div></div>
+<div class="ttc" id="aclassfrc_1_1_p_w_m_motor_controller_html_a7d268832fe2fc1a6a5dde3f27095a026"><div class="ttname"><a href="classfrc_1_1_p_w_m_motor_controller.html#a7d268832fe2fc1a6a5dde3f27095a026">frc::PWMMotorController::StopMotor</a></div><div class="ttdeci">void StopMotor() override</div></div>
+<div class="ttc" id="aclassfrc_1_1_p_w_m_motor_controller_html_a9761802323fed0791245f1e91af3aff3"><div class="ttname"><a href="classfrc_1_1_p_w_m_motor_controller.html#a9761802323fed0791245f1e91af3aff3">frc::PWMMotorController::m_pwm</a></div><div class="ttdeci">PWM m_pwm</div><div class="ttdef"><b>Definition:</b> PWMMotorController.h:76</div></div>
 <div class="ttc" id="aclassfrc_1_1_p_w_m_motor_controller_html_aad5957bc21f8549f5f6cbc9c1bd5afaf"><div class="ttname"><a href="classfrc_1_1_p_w_m_motor_controller.html#aad5957bc21f8549f5f6cbc9c1bd5afaf">frc::PWMMotorController::Set</a></div><div class="ttdeci">void Set(double value) override</div><div class="ttdoc">Set the PWM value.</div></div>
 <div class="ttc" id="aclassfrc_1_1_p_w_m_motor_controller_html_abdf28e68ae00418333a3ece09627a037"><div class="ttname"><a href="classfrc_1_1_p_w_m_motor_controller.html#abdf28e68ae00418333a3ece09627a037">frc::PWMMotorController::Get</a></div><div class="ttdeci">double Get() const override</div><div class="ttdoc">Get the recently set value of the PWM.</div></div>
+<div class="ttc" id="aclassfrc_1_1_p_w_m_motor_controller_html_abe44af44fba50c21985a23bab6f9ce43"><div class="ttname"><a href="classfrc_1_1_p_w_m_motor_controller.html#abe44af44fba50c21985a23bab6f9ce43">frc::PWMMotorController::PWMMotorController</a></div><div class="ttdeci">PWMMotorController(PWMMotorController &amp;&amp;)=default</div></div>
+<div class="ttc" id="aclassfrc_1_1_p_w_m_motor_controller_html_adce0f524fe91c63a0deaa64144457b47"><div class="ttname"><a href="classfrc_1_1_p_w_m_motor_controller.html#adce0f524fe91c63a0deaa64144457b47">frc::PWMMotorController::GetDescription</a></div><div class="ttdeci">std::string GetDescription() const override</div></div>
+<div class="ttc" id="aclassfrc_1_1_p_w_m_motor_controller_html_afa39100c2ad5b9d491e79d44d03c90ff"><div class="ttname"><a href="classfrc_1_1_p_w_m_motor_controller.html#afa39100c2ad5b9d491e79d44d03c90ff">frc::PWMMotorController::GetChannel</a></div><div class="ttdeci">int GetChannel() const</div></div>
 <div class="ttc" id="aclassfrc_1_1_p_w_m_motor_controller_html_afcc5f0358caacf37c8eb817368a37df7"><div class="ttname"><a href="classfrc_1_1_p_w_m_motor_controller.html#afcc5f0358caacf37c8eb817368a37df7">frc::PWMMotorController::SetInverted</a></div><div class="ttdeci">void SetInverted(bool isInverted) override</div><div class="ttdoc">Common interface for inverting direction of a speed controller.</div></div>
 <div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1120</div></div>
 <div class="ttc" id="aclasswpi_1_1_sendable_builder_html"><div class="ttname"><a href="classwpi_1_1_sendable_builder.html">wpi::SendableBuilder</a></div><div class="ttdef"><b>Definition:</b> SendableBuilder.h:18</div></div>
 <div class="ttc" id="aclasswpi_1_1_sendable_helper_html"><div class="ttname"><a href="classwpi_1_1_sendable_helper.html">wpi::SendableHelper</a></div><div class="ttdoc">A helper class for use with objects that add themselves to SendableRegistry.</div><div class="ttdef"><b>Definition:</b> SendableHelper.h:24</div></div>
 <div class="ttc" id="aclasswpi_1_1_sendable_html"><div class="ttname"><a href="classwpi_1_1_sendable.html">wpi::Sendable</a></div><div class="ttdoc">Interface for Sendable objects.</div><div class="ttdef"><b>Definition:</b> Sendable.h:16</div></div>
+<div class="ttc" id="acore_8h_html_a204ca715c2febee035464fa53dfc50c4"><div class="ttname"><a href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">string_view</a></div><div class="ttdeci">basic_string_view&lt; char &gt; string_view</div><div class="ttdef"><b>Definition:</b> core.h:529</div></div>
+<div class="ttc" id="acore_8h_html_a7fc0249f0f8ba720115d2430f5b86cbaab068931cc450442b63f5b3d276ea4297"><div class="ttname"><a href="core_8h.html#a7fc0249f0f8ba720115d2430f5b86cbaab068931cc450442b63f5b3d276ea4297">arg_id_kind::name</a></div><div class="ttdeci">@ name</div></div>
+<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> CameraServerShared.h:13</div></div>
+<div class="ttc" id="anamespacehal_html_a2e846f89b7ea1bed682347804f2c9cc9a33fd5f6391f2f0cb4c91179d7f521949"><div class="ttname"><a href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9a33fd5f6391f2f0cb4c91179d7f521949">hal::HAL_HandleEnum::DMA</a></div><div class="ttdeci">@ DMA</div></div>
+<div class="ttc" id="awpilibc_2src_2main_2native_2include_2frc_2_p_w_m_8h_html"><div class="ttname"><a href="wpilibc_2src_2main_2native_2include_2frc_2_p_w_m_8h.html">PWM.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_d0a9c1f552287e8d1bf6d4228ef74d88.html">motorcontrol</a></li><li class="navelem"><b>PWMMotorController.h</b></li>
-    <li class="footer">Generated on Fri Oct 29 2021 07:12:14 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_d0a9c1f552287e8d1bf6d4228ef74d88.html">motorcontrol</a></li><li class="navelem"><a class="el" href="_p_w_m_motor_controller_8h.html">PWMMotorController.h</a></li>
+    <li class="footer">Generated on Fri Oct 29 2021 22:09:51 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

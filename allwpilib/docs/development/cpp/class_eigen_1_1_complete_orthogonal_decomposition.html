@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-31-ga939cd9</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-32-g2cb171f</span>
    </div>
   </td>
  </tr>
@@ -120,61 +120,46 @@ Inheritance diagram for Eigen::CompleteOrthogonalDecomposition&lt; _MatrixType &
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a9bd069b31030a09d8eea517bce887ed7"><td class="memItemLeft" align="right" valign="top"><a id="a9bd069b31030a09d8eea517bce887ed7" name="a9bd069b31030a09d8eea517bce887ed7"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>MaxRowsAtCompileTime</b> = MatrixType::MaxRowsAtCompileTime
-, <b>MaxColsAtCompileTime</b> = MatrixType::MaxColsAtCompileTime
+<tr class="memitem:a9bd069b31030a09d8eea517bce887ed7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a9bd069b31030a09d8eea517bce887ed7a347b9cc470d20d062af8c413b2f4393d">MaxRowsAtCompileTime</a> = MatrixType::MaxRowsAtCompileTime
+, <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a9bd069b31030a09d8eea517bce887ed7a6fca406d299a35ff209a555a14645fff">MaxColsAtCompileTime</a> = MatrixType::MaxColsAtCompileTime
  }</td></tr>
 <tr class="separator:a9bd069b31030a09d8eea517bce887ed7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8eba7b5263a0241cb477b3531f5ef609"><td class="memItemLeft" align="right" valign="top"><a id="a8eba7b5263a0241cb477b3531f5ef609" name="a8eba7b5263a0241cb477b3531f5ef609"></a>
-typedef _MatrixType&#160;</td><td class="memItemRight" valign="bottom"><b>MatrixType</b></td></tr>
+<tr class="memitem:a8eba7b5263a0241cb477b3531f5ef609"><td class="memItemLeft" align="right" valign="top">typedef _MatrixType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a8eba7b5263a0241cb477b3531f5ef609">MatrixType</a></td></tr>
 <tr class="separator:a8eba7b5263a0241cb477b3531f5ef609"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85bccf325c729d89c371938eb482ec6b"><td class="memItemLeft" align="right" valign="top"><a id="a85bccf325c729d89c371938eb482ec6b" name="a85bccf325c729d89c371938eb482ec6b"></a>
-typedef <a class="el" href="class_eigen_1_1_solver_base.html">SolverBase</a>&lt; <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">CompleteOrthogonalDecomposition</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Base</b></td></tr>
+<tr class="memitem:a85bccf325c729d89c371938eb482ec6b"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_eigen_1_1_solver_base.html">SolverBase</a>&lt; <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">CompleteOrthogonalDecomposition</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a85bccf325c729d89c371938eb482ec6b">Base</a></td></tr>
 <tr class="separator:a85bccf325c729d89c371938eb482ec6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca5b63fffae26e0e1eaa38d63b575038"><td class="memItemLeft" align="right" valign="top"><a id="aca5b63fffae26e0e1eaa38d63b575038" name="aca5b63fffae26e0e1eaa38d63b575038"></a>
-typedef <a class="el" href="struct_eigen_1_1internal_1_1plain__diag__type.html">internal::plain_diag_type</a>&lt; MatrixType &gt;::type&#160;</td><td class="memItemRight" valign="bottom"><b>HCoeffsType</b></td></tr>
+<tr class="memitem:aca5b63fffae26e0e1eaa38d63b575038"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_eigen_1_1internal_1_1plain__diag__type.html">internal::plain_diag_type</a>&lt; <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a8eba7b5263a0241cb477b3531f5ef609">MatrixType</a> &gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#aca5b63fffae26e0e1eaa38d63b575038">HCoeffsType</a></td></tr>
 <tr class="separator:aca5b63fffae26e0e1eaa38d63b575038"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae60d0d820677d67b73258322bcae0a2d"><td class="memItemLeft" align="right" valign="top"><a id="ae60d0d820677d67b73258322bcae0a2d" name="ae60d0d820677d67b73258322bcae0a2d"></a>
-typedef <a class="el" href="class_eigen_1_1_permutation_matrix.html">PermutationMatrix</a>&lt; ColsAtCompileTime, MaxColsAtCompileTime &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>PermutationType</b></td></tr>
+<tr class="memitem:ae60d0d820677d67b73258322bcae0a2d"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_eigen_1_1_permutation_matrix.html">PermutationMatrix</a>&lt; <a class="el" href="class_eigen_1_1_solver_base.html#a036fa401af8734baa7827e4fe718e38ca6783746e5b80618fac0144caed7a2e2c">ColsAtCompileTime</a>, <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a9bd069b31030a09d8eea517bce887ed7a6fca406d299a35ff209a555a14645fff">MaxColsAtCompileTime</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#ae60d0d820677d67b73258322bcae0a2d">PermutationType</a></td></tr>
 <tr class="separator:ae60d0d820677d67b73258322bcae0a2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a849a0c16c10e62b1ec93aeccf3f0ec5e"><td class="memItemLeft" align="right" valign="top"><a id="a849a0c16c10e62b1ec93aeccf3f0ec5e" name="a849a0c16c10e62b1ec93aeccf3f0ec5e"></a>
-typedef <a class="el" href="struct_eigen_1_1internal_1_1plain__row__type.html">internal::plain_row_type</a>&lt; MatrixType, <a class="el" href="struct_eigen_1_1_eigen_base.html#a554f30542cc2316add4b1ea0a492ff02">Index</a> &gt;::type&#160;</td><td class="memItemRight" valign="bottom"><b>IntRowVectorType</b></td></tr>
+<tr class="memitem:a849a0c16c10e62b1ec93aeccf3f0ec5e"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_eigen_1_1internal_1_1plain__row__type.html">internal::plain_row_type</a>&lt; <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a8eba7b5263a0241cb477b3531f5ef609">MatrixType</a>, <a class="el" href="struct_eigen_1_1_eigen_base.html#a554f30542cc2316add4b1ea0a492ff02">Index</a> &gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a849a0c16c10e62b1ec93aeccf3f0ec5e">IntRowVectorType</a></td></tr>
 <tr class="separator:a849a0c16c10e62b1ec93aeccf3f0ec5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7034cb4035db5e3d7c538c27c3d15212"><td class="memItemLeft" align="right" valign="top"><a id="a7034cb4035db5e3d7c538c27c3d15212" name="a7034cb4035db5e3d7c538c27c3d15212"></a>
-typedef <a class="el" href="struct_eigen_1_1internal_1_1plain__row__type.html">internal::plain_row_type</a>&lt; MatrixType &gt;::type&#160;</td><td class="memItemRight" valign="bottom"><b>RowVectorType</b></td></tr>
+<tr class="memitem:a7034cb4035db5e3d7c538c27c3d15212"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_eigen_1_1internal_1_1plain__row__type.html">internal::plain_row_type</a>&lt; <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a8eba7b5263a0241cb477b3531f5ef609">MatrixType</a> &gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a7034cb4035db5e3d7c538c27c3d15212">RowVectorType</a></td></tr>
 <tr class="separator:a7034cb4035db5e3d7c538c27c3d15212"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa25ccab13d91beeef80252cb466c1f04"><td class="memItemLeft" align="right" valign="top"><a id="aa25ccab13d91beeef80252cb466c1f04" name="aa25ccab13d91beeef80252cb466c1f04"></a>
-typedef <a class="el" href="struct_eigen_1_1internal_1_1plain__row__type.html">internal::plain_row_type</a>&lt; MatrixType, RealScalar &gt;::type&#160;</td><td class="memItemRight" valign="bottom"><b>RealRowVectorType</b></td></tr>
+<tr class="memitem:aa25ccab13d91beeef80252cb466c1f04"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_eigen_1_1internal_1_1plain__row__type.html">internal::plain_row_type</a>&lt; <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a8eba7b5263a0241cb477b3531f5ef609">MatrixType</a>, RealScalar &gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#aa25ccab13d91beeef80252cb466c1f04">RealRowVectorType</a></td></tr>
 <tr class="separator:aa25ccab13d91beeef80252cb466c1f04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d4e0e44ac23ad8baf0f91e91b982dec"><td class="memItemLeft" align="right" valign="top"><a id="a9d4e0e44ac23ad8baf0f91e91b982dec" name="a9d4e0e44ac23ad8baf0f91e91b982dec"></a>
-typedef <a class="el" href="class_eigen_1_1_householder_sequence.html">HouseholderSequence</a>&lt; MatrixType, typename <a class="el" href="struct_eigen_1_1internal_1_1remove__all.html">internal::remove_all</a>&lt; typename HCoeffsType::ConjugateReturnType &gt;::type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>HouseholderSequenceType</b></td></tr>
+<tr class="memitem:a9d4e0e44ac23ad8baf0f91e91b982dec"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_eigen_1_1_householder_sequence.html">HouseholderSequence</a>&lt; <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a8eba7b5263a0241cb477b3531f5ef609">MatrixType</a>, typename <a class="el" href="struct_eigen_1_1internal_1_1remove__all.html">internal::remove_all</a>&lt; typename <a class="el" href="_common_cwise_unary_ops_8h.html#a21123c01c5afb9e6d99998f52bf07020">HCoeffsType::ConjugateReturnType</a> &gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a9d4e0e44ac23ad8baf0f91e91b982dec">HouseholderSequenceType</a></td></tr>
 <tr class="separator:a9d4e0e44ac23ad8baf0f91e91b982dec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4db9c08da38e11bd598ed743061966b1"><td class="memItemLeft" align="right" valign="top"><a id="a4db9c08da38e11bd598ed743061966b1" name="a4db9c08da38e11bd598ed743061966b1"></a>
-typedef MatrixType::PlainObject&#160;</td><td class="memItemRight" valign="bottom"><b>PlainObject</b></td></tr>
+<tr class="memitem:a4db9c08da38e11bd598ed743061966b1"><td class="memItemLeft" align="right" valign="top">typedef MatrixType::PlainObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a4db9c08da38e11bd598ed743061966b1">PlainObject</a></td></tr>
 <tr class="separator:a4db9c08da38e11bd598ed743061966b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_class_eigen_1_1_solver_base"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_eigen_1_1_solver_base')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_eigen_1_1_solver_base.html">Eigen::SolverBase&lt; CompleteOrthogonalDecomposition&lt; _MatrixType &gt; &gt;</a></td></tr>
-<tr class="memitem:a036fa401af8734baa7827e4fe718e38c inherit pub_types_class_eigen_1_1_solver_base"><td class="memItemLeft" align="right" valign="top"><a id="a036fa401af8734baa7827e4fe718e38c" name="a036fa401af8734baa7827e4fe718e38c"></a>enum &#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="memitem:a036fa401af8734baa7827e4fe718e38c inherit pub_types_class_eigen_1_1_solver_base"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:a036fa401af8734baa7827e4fe718e38c inherit pub_types_class_eigen_1_1_solver_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12798f4bbad57ef378b087801ab90cfe inherit pub_types_class_eigen_1_1_solver_base"><td class="memItemLeft" align="right" valign="top"><a id="a12798f4bbad57ef378b087801ab90cfe" name="a12798f4bbad57ef378b087801ab90cfe"></a>
-typedef <a class="el" href="struct_eigen_1_1_eigen_base.html">EigenBase</a>&lt; <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">CompleteOrthogonalDecomposition</a>&lt; _MatrixType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Base</b></td></tr>
+<tr class="memitem:a12798f4bbad57ef378b087801ab90cfe inherit pub_types_class_eigen_1_1_solver_base"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_eigen_1_1_eigen_base.html">EigenBase</a>&lt; <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">CompleteOrthogonalDecomposition</a>&lt; _MatrixType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_solver_base.html#a12798f4bbad57ef378b087801ab90cfe">Base</a></td></tr>
 <tr class="separator:a12798f4bbad57ef378b087801ab90cfe inherit pub_types_class_eigen_1_1_solver_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08184e3c085cce33f80b5a37376d52ab inherit pub_types_class_eigen_1_1_solver_base"><td class="memItemLeft" align="right" valign="top"><a id="a08184e3c085cce33f80b5a37376d52ab" name="a08184e3c085cce33f80b5a37376d52ab"></a>
-typedef <a class="el" href="struct_eigen_1_1internal_1_1traits.html">internal::traits</a>&lt; <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">CompleteOrthogonalDecomposition</a>&lt; _MatrixType &gt; &gt;::Scalar&#160;</td><td class="memItemRight" valign="bottom"><b>Scalar</b></td></tr>
+<tr class="memitem:a08184e3c085cce33f80b5a37376d52ab inherit pub_types_class_eigen_1_1_solver_base"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_eigen_1_1internal_1_1traits.html">internal::traits</a>&lt; <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">CompleteOrthogonalDecomposition</a>&lt; _MatrixType &gt; &gt;::<a class="el" href="class_eigen_1_1_solver_base.html#a08184e3c085cce33f80b5a37376d52ab">Scalar</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_solver_base.html#a08184e3c085cce33f80b5a37376d52ab">Scalar</a></td></tr>
 <tr class="separator:a08184e3c085cce33f80b5a37376d52ab inherit pub_types_class_eigen_1_1_solver_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8013b6454a87289d3e1cd138615af3d3 inherit pub_types_class_eigen_1_1_solver_base"><td class="memItemLeft" align="right" valign="top"><a id="a8013b6454a87289d3e1cd138615af3d3" name="a8013b6454a87289d3e1cd138615af3d3"></a>
-typedef Scalar&#160;</td><td class="memItemRight" valign="bottom"><b>CoeffReturnType</b></td></tr>
+<tr class="memitem:a8013b6454a87289d3e1cd138615af3d3 inherit pub_types_class_eigen_1_1_solver_base"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_eigen_1_1_solver_base.html#a08184e3c085cce33f80b5a37376d52ab">Scalar</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_solver_base.html#a8013b6454a87289d3e1cd138615af3d3">CoeffReturnType</a></td></tr>
 <tr class="separator:a8013b6454a87289d3e1cd138615af3d3 inherit pub_types_class_eigen_1_1_solver_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a194a213b4d83301053e02289671d7c5d inherit pub_types_class_eigen_1_1_solver_base"><td class="memItemLeft" align="right" valign="top"><a id="a194a213b4d83301053e02289671d7c5d" name="a194a213b4d83301053e02289671d7c5d"></a>
-typedef <a class="el" href="struct_eigen_1_1internal_1_1add__const.html">internal::add_const</a>&lt; <a class="el" href="class_eigen_1_1_transpose.html">Transpose</a>&lt; constDerived &gt; &gt;::type&#160;</td><td class="memItemRight" valign="bottom"><b>ConstTransposeReturnType</b></td></tr>
+<tr class="memitem:a194a213b4d83301053e02289671d7c5d inherit pub_types_class_eigen_1_1_solver_base"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_eigen_1_1internal_1_1add__const.html">internal::add_const</a>&lt; <a class="el" href="class_eigen_1_1_transpose.html">Transpose</a>&lt; constDerived &gt; &gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_solver_base.html#a194a213b4d83301053e02289671d7c5d">ConstTransposeReturnType</a></td></tr>
 <tr class="separator:a194a213b4d83301053e02289671d7c5d inherit pub_types_class_eigen_1_1_solver_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b0c648dad6ec8129374f2b816c04c39 inherit pub_types_class_eigen_1_1_solver_base"><td class="memItemLeft" align="right" valign="top"><a id="a1b0c648dad6ec8129374f2b816c04c39" name="a1b0c648dad6ec8129374f2b816c04c39"></a>
-typedef <a class="el" href="struct_eigen_1_1internal_1_1conditional.html">internal::conditional</a>&lt; <a class="el" href="struct_eigen_1_1_num_traits.html">NumTraits</a>&lt; Scalar &gt;::IsComplex, <a class="el" href="class_eigen_1_1_cwise_unary_op.html">CwiseUnaryOp</a>&lt; <a class="el" href="struct_eigen_1_1internal_1_1scalar__conjugate__op.html">internal::scalar_conjugate_op</a>&lt; Scalar &gt;, <a class="el" href="class_eigen_1_1_diagonal.html">ConstTransposeReturnType</a> &gt;, <a class="el" href="class_eigen_1_1_diagonal.html">ConstTransposeReturnType</a> &gt;::type&#160;</td><td class="memItemRight" valign="bottom"><b>AdjointReturnType</b></td></tr>
+<tr class="memitem:a1b0c648dad6ec8129374f2b816c04c39 inherit pub_types_class_eigen_1_1_solver_base"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_eigen_1_1internal_1_1conditional.html">internal::conditional</a>&lt; <a class="el" href="struct_eigen_1_1_num_traits.html">NumTraits</a>&lt; <a class="el" href="class_eigen_1_1_solver_base.html#a08184e3c085cce33f80b5a37376d52ab">Scalar</a> &gt;::IsComplex, <a class="el" href="class_eigen_1_1_cwise_unary_op.html">CwiseUnaryOp</a>&lt; <a class="el" href="struct_eigen_1_1internal_1_1scalar__conjugate__op.html">internal::scalar_conjugate_op</a>&lt; <a class="el" href="class_eigen_1_1_solver_base.html#a08184e3c085cce33f80b5a37376d52ab">Scalar</a> &gt;, <a class="el" href="class_eigen_1_1_solver_base.html#a194a213b4d83301053e02289671d7c5d">ConstTransposeReturnType</a> &gt;, <a class="el" href="class_eigen_1_1_solver_base.html#a194a213b4d83301053e02289671d7c5d">ConstTransposeReturnType</a> &gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_solver_base.html#a1b0c648dad6ec8129374f2b816c04c39">AdjointReturnType</a></td></tr>
 <tr class="separator:a1b0c648dad6ec8129374f2b816c04c39 inherit pub_types_class_eigen_1_1_solver_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_struct_eigen_1_1_eigen_base"><td colspan="2" onclick="javascript:toggleInherit('pub_types_struct_eigen_1_1_eigen_base')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="struct_eigen_1_1_eigen_base.html">Eigen::EigenBase&lt; Derived &gt;</a></td></tr>
 <tr class="memitem:a554f30542cc2316add4b1ea0a492ff02 inherit pub_types_struct_eigen_1_1_eigen_base"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Eigen::Index</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1_eigen_base.html#a554f30542cc2316add4b1ea0a492ff02">Index</a></td></tr>
 <tr class="memdesc:a554f30542cc2316add4b1ea0a492ff02 inherit pub_types_struct_eigen_1_1_eigen_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">The interface type of indices.  <a href="struct_eigen_1_1_eigen_base.html#a554f30542cc2316add4b1ea0a492ff02">More...</a><br /></td></tr>
 <tr class="separator:a554f30542cc2316add4b1ea0a492ff02 inherit pub_types_struct_eigen_1_1_eigen_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95ff992a5c4c5debb41f6ae2f639e1f3 inherit pub_types_struct_eigen_1_1_eigen_base"><td class="memItemLeft" align="right" valign="top"><a id="a95ff992a5c4c5debb41f6ae2f639e1f3" name="a95ff992a5c4c5debb41f6ae2f639e1f3"></a>
-typedef <a class="el" href="struct_eigen_1_1internal_1_1traits.html">internal::traits</a>&lt; Derived &gt;::StorageKind&#160;</td><td class="memItemRight" valign="bottom"><b>StorageKind</b></td></tr>
+<tr class="memitem:a95ff992a5c4c5debb41f6ae2f639e1f3 inherit pub_types_struct_eigen_1_1_eigen_base"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_eigen_1_1internal_1_1traits.html">internal::traits</a>&lt; Derived &gt;::<a class="el" href="struct_eigen_1_1_eigen_base.html#a95ff992a5c4c5debb41f6ae2f639e1f3">StorageKind</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1_eigen_base.html#a95ff992a5c4c5debb41f6ae2f639e1f3">StorageKind</a></td></tr>
 <tr class="separator:a95ff992a5c4c5debb41f6ae2f639e1f3 inherit pub_types_struct_eigen_1_1_eigen_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -182,7 +167,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7ba33814fd3fdc62f6179cdcd655c679"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a7ba33814fd3fdc62f6179cdcd655c679">CompleteOrthogonalDecomposition</a> ()</td></tr>
 <tr class="memdesc:a7ba33814fd3fdc62f6179cdcd655c679"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default Constructor.  <a href="class_eigen_1_1_complete_orthogonal_decomposition.html#a7ba33814fd3fdc62f6179cdcd655c679">More...</a><br /></td></tr>
 <tr class="separator:a7ba33814fd3fdc62f6179cdcd655c679"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6c282dd7452ebe754024edb71bebd09"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#aa6c282dd7452ebe754024edb71bebd09">CompleteOrthogonalDecomposition</a> (<a class="el" href="struct_eigen_1_1_eigen_base.html#a554f30542cc2316add4b1ea0a492ff02">Index</a> rows, <a class="el" href="struct_eigen_1_1_eigen_base.html#a554f30542cc2316add4b1ea0a492ff02">Index</a> cols)</td></tr>
+<tr class="memitem:aa6c282dd7452ebe754024edb71bebd09"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#aa6c282dd7452ebe754024edb71bebd09">CompleteOrthogonalDecomposition</a> (<a class="el" href="struct_eigen_1_1_eigen_base.html#a554f30542cc2316add4b1ea0a492ff02">Index</a> <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#ae49c60b9b4d7f74dc79a94bf20a14142">rows</a>, <a class="el" href="struct_eigen_1_1_eigen_base.html#a554f30542cc2316add4b1ea0a492ff02">Index</a> <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a41e9ee4b8bd05c9021fd066169e1d76c">cols</a>)</td></tr>
 <tr class="memdesc:aa6c282dd7452ebe754024edb71bebd09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default Constructor with memory preallocation.  <a href="class_eigen_1_1_complete_orthogonal_decomposition.html#aa6c282dd7452ebe754024edb71bebd09">More...</a><br /></td></tr>
 <tr class="separator:aa6c282dd7452ebe754024edb71bebd09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcfaf7a395f853247c23bb52b1ffb1cc"><td class="memTemplParams" colspan="2">template&lt;typename InputType &gt; </td></tr>
@@ -193,22 +178,20 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a082295ba2aac35a8b8b9e2d46e1d7ce4"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a082295ba2aac35a8b8b9e2d46e1d7ce4">CompleteOrthogonalDecomposition</a> (<a class="el" href="struct_eigen_1_1_eigen_base.html">EigenBase</a>&lt; InputType &gt; &amp;matrix)</td></tr>
 <tr class="memdesc:a082295ba2aac35a8b8b9e2d46e1d7ce4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a complete orthogonal decomposition from a given matrix.  <a href="class_eigen_1_1_complete_orthogonal_decomposition.html#a082295ba2aac35a8b8b9e2d46e1d7ce4">More...</a><br /></td></tr>
 <tr class="separator:a082295ba2aac35a8b8b9e2d46e1d7ce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac95b93ddad59c6e57d06fcd4737b27e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_eigen_1_1_householder_sequence.html">HouseholderSequenceType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#ac95b93ddad59c6e57d06fcd4737b27e1">householderQ</a> (void) const</td></tr>
+<tr class="memitem:ac95b93ddad59c6e57d06fcd4737b27e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a9d4e0e44ac23ad8baf0f91e91b982dec">HouseholderSequenceType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#ac95b93ddad59c6e57d06fcd4737b27e1">householderQ</a> (void) const</td></tr>
 <tr class="separator:ac95b93ddad59c6e57d06fcd4737b27e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a179e996df71ef165bad8f4bc5d79e24d"><td class="memItemLeft" align="right" valign="top"><a id="a179e996df71ef165bad8f4bc5d79e24d" name="a179e996df71ef165bad8f4bc5d79e24d"></a>
-<a class="el" href="class_eigen_1_1_householder_sequence.html">HouseholderSequenceType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>matrixQ</b> (void) const</td></tr>
+<tr class="memitem:a179e996df71ef165bad8f4bc5d79e24d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a9d4e0e44ac23ad8baf0f91e91b982dec">HouseholderSequenceType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a179e996df71ef165bad8f4bc5d79e24d">matrixQ</a> (void) const</td></tr>
 <tr class="separator:a179e996df71ef165bad8f4bc5d79e24d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4cd178f13aefe5189d4beeb3eb1c5897"><td class="memItemLeft" align="right" valign="top">MatrixType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a4cd178f13aefe5189d4beeb3eb1c5897">matrixZ</a> () const</td></tr>
+<tr class="memitem:a4cd178f13aefe5189d4beeb3eb1c5897"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a8eba7b5263a0241cb477b3531f5ef609">MatrixType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a4cd178f13aefe5189d4beeb3eb1c5897">matrixZ</a> () const</td></tr>
 <tr class="separator:a4cd178f13aefe5189d4beeb3eb1c5897"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a934dbf891cab4af606755b60cd20b8ba"><td class="memItemLeft" align="right" valign="top">const MatrixType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a934dbf891cab4af606755b60cd20b8ba">matrixQTZ</a> () const</td></tr>
+<tr class="memitem:a934dbf891cab4af606755b60cd20b8ba"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a8eba7b5263a0241cb477b3531f5ef609">MatrixType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a934dbf891cab4af606755b60cd20b8ba">matrixQTZ</a> () const</td></tr>
 <tr class="separator:a934dbf891cab4af606755b60cd20b8ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe168bb2ae3352ee069ef7caf9b70438"><td class="memItemLeft" align="right" valign="top">const MatrixType &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#abe168bb2ae3352ee069ef7caf9b70438">matrixT</a> () const</td></tr>
+<tr class="memitem:abe168bb2ae3352ee069ef7caf9b70438"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a8eba7b5263a0241cb477b3531f5ef609">MatrixType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#abe168bb2ae3352ee069ef7caf9b70438">matrixT</a> () const</td></tr>
 <tr class="separator:abe168bb2ae3352ee069ef7caf9b70438"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36dcdb91c491eb2a0b2669ea00d2c186"><td class="memTemplParams" colspan="2"><a id="a36dcdb91c491eb2a0b2669ea00d2c186" name="a36dcdb91c491eb2a0b2669ea00d2c186"></a>
-template&lt;typename InputType &gt; </td></tr>
-<tr class="memitem:a36dcdb91c491eb2a0b2669ea00d2c186"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">CompleteOrthogonalDecomposition</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>compute</b> (const <a class="el" href="struct_eigen_1_1_eigen_base.html">EigenBase</a>&lt; InputType &gt; &amp;matrix)</td></tr>
+<tr class="memitem:a36dcdb91c491eb2a0b2669ea00d2c186"><td class="memTemplParams" colspan="2">template&lt;typename InputType &gt; </td></tr>
+<tr class="memitem:a36dcdb91c491eb2a0b2669ea00d2c186"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">CompleteOrthogonalDecomposition</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a36dcdb91c491eb2a0b2669ea00d2c186">compute</a> (const <a class="el" href="struct_eigen_1_1_eigen_base.html">EigenBase</a>&lt; InputType &gt; &amp;matrix)</td></tr>
 <tr class="separator:a36dcdb91c491eb2a0b2669ea00d2c186"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9d1a1743a602e2bc6f19ad4c206b025"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_eigen_1_1_permutation_matrix.html">PermutationType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#ab9d1a1743a602e2bc6f19ad4c206b025">colsPermutation</a> () const</td></tr>
+<tr class="memitem:ab9d1a1743a602e2bc6f19ad4c206b025"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#ae60d0d820677d67b73258322bcae0a2d">PermutationType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#ab9d1a1743a602e2bc6f19ad4c206b025">colsPermutation</a> () const</td></tr>
 <tr class="separator:ab9d1a1743a602e2bc6f19ad4c206b025"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac040c34ce3fb2b68d3f57adc0c29d526"><td class="memItemLeft" align="right" valign="top">MatrixType::RealScalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#ac040c34ce3fb2b68d3f57adc0c29d526">absDeterminant</a> () const</td></tr>
 <tr class="separator:ac040c34ce3fb2b68d3f57adc0c29d526"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -226,20 +209,18 @@ template&lt;typename InputType &gt; </td></tr>
 <tr class="separator:a7c4f24f868295349a3bb99e5f217b069"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b96674ccbf42c073127363afe8f90d7"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_eigen_1_1_inverse.html">Inverse</a>&lt; <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">CompleteOrthogonalDecomposition</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a0b96674ccbf42c073127363afe8f90d7">pseudoInverse</a> () const</td></tr>
 <tr class="separator:a0b96674ccbf42c073127363afe8f90d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae49c60b9b4d7f74dc79a94bf20a14142"><td class="memItemLeft" align="right" valign="top"><a id="ae49c60b9b4d7f74dc79a94bf20a14142" name="ae49c60b9b4d7f74dc79a94bf20a14142"></a>
-<a class="el" href="struct_eigen_1_1_eigen_base.html#a554f30542cc2316add4b1ea0a492ff02">Index</a>&#160;</td><td class="memItemRight" valign="bottom"><b>rows</b> () const</td></tr>
+<tr class="memitem:ae49c60b9b4d7f74dc79a94bf20a14142"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_eigen_1_1_eigen_base.html#a554f30542cc2316add4b1ea0a492ff02">Index</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#ae49c60b9b4d7f74dc79a94bf20a14142">rows</a> () const</td></tr>
 <tr class="separator:ae49c60b9b4d7f74dc79a94bf20a14142"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41e9ee4b8bd05c9021fd066169e1d76c"><td class="memItemLeft" align="right" valign="top"><a id="a41e9ee4b8bd05c9021fd066169e1d76c" name="a41e9ee4b8bd05c9021fd066169e1d76c"></a>
-<a class="el" href="struct_eigen_1_1_eigen_base.html#a554f30542cc2316add4b1ea0a492ff02">Index</a>&#160;</td><td class="memItemRight" valign="bottom"><b>cols</b> () const</td></tr>
+<tr class="memitem:a41e9ee4b8bd05c9021fd066169e1d76c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_eigen_1_1_eigen_base.html#a554f30542cc2316add4b1ea0a492ff02">Index</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a41e9ee4b8bd05c9021fd066169e1d76c">cols</a> () const</td></tr>
 <tr class="separator:a41e9ee4b8bd05c9021fd066169e1d76c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4d12c50bafad3abaad0278746fd1ca6"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_eigen_1_1internal_1_1true__type.html">HCoeffsType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#ac4d12c50bafad3abaad0278746fd1ca6">hCoeffs</a> () const</td></tr>
+<tr class="memitem:ac4d12c50bafad3abaad0278746fd1ca6"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#aca5b63fffae26e0e1eaa38d63b575038">HCoeffsType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#ac4d12c50bafad3abaad0278746fd1ca6">hCoeffs</a> () const</td></tr>
 <tr class="separator:ac4d12c50bafad3abaad0278746fd1ca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fba4374f44aa1fcc3619e175dfd4bc8"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_eigen_1_1internal_1_1true__type.html">HCoeffsType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a0fba4374f44aa1fcc3619e175dfd4bc8">zCoeffs</a> () const</td></tr>
+<tr class="memitem:a0fba4374f44aa1fcc3619e175dfd4bc8"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#aca5b63fffae26e0e1eaa38d63b575038">HCoeffsType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a0fba4374f44aa1fcc3619e175dfd4bc8">zCoeffs</a> () const</td></tr>
 <tr class="separator:a0fba4374f44aa1fcc3619e175dfd4bc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad60b1167378ca456fbc80687b6da081e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">CompleteOrthogonalDecomposition</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#ad60b1167378ca456fbc80687b6da081e">setThreshold</a> (const RealScalar &amp;<a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a3909f07268496c0f08f1b57331d91075">threshold</a>)</td></tr>
 <tr class="memdesc:ad60b1167378ca456fbc80687b6da081e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows to prescribe a threshold to be used by certain methods, such as <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#af348f64b26f8467a020062c22b748806">rank()</a>, who need to determine when pivots are to be considered nonzero.  <a href="class_eigen_1_1_complete_orthogonal_decomposition.html#ad60b1167378ca456fbc80687b6da081e">More...</a><br /></td></tr>
 <tr class="separator:ad60b1167378ca456fbc80687b6da081e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f48bb341bd6f05790bf3ae22e7279ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">CompleteOrthogonalDecomposition</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a3f48bb341bd6f05790bf3ae22e7279ba">setThreshold</a> (Default_t)</td></tr>
+<tr class="memitem:a3f48bb341bd6f05790bf3ae22e7279ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">CompleteOrthogonalDecomposition</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a3f48bb341bd6f05790bf3ae22e7279ba">setThreshold</a> (<a class="el" href="namespace_eigen.html#a644c9489710c76e32bd3a9b15d83ca43">Default_t</a>)</td></tr>
 <tr class="memdesc:a3f48bb341bd6f05790bf3ae22e7279ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows to come back to the default behavior, letting <a class="el" href="namespace_eigen.html" title="Namespace containing all symbols from the Eigen library.">Eigen</a> use its default formula for determining the threshold.  <a href="class_eigen_1_1_complete_orthogonal_decomposition.html#a3f48bb341bd6f05790bf3ae22e7279ba">More...</a><br /></td></tr>
 <tr class="separator:a3f48bb341bd6f05790bf3ae22e7279ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3909f07268496c0f08f1b57331d91075"><td class="memItemLeft" align="right" valign="top">RealScalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a3909f07268496c0f08f1b57331d91075">threshold</a> () const</td></tr>
@@ -252,114 +233,97 @@ template&lt;typename InputType &gt; </td></tr>
 <tr class="memitem:a1f5c45f78848cfdbb96963cefbbb3274"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__enums.html#ga85fad7b87587764e5cf6b513a9e0ee5e">ComputationInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a1f5c45f78848cfdbb96963cefbbb3274">info</a> () const</td></tr>
 <tr class="memdesc:a1f5c45f78848cfdbb96963cefbbb3274"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports whether the complete orthogonal decomposition was successful.  <a href="class_eigen_1_1_complete_orthogonal_decomposition.html#a1f5c45f78848cfdbb96963cefbbb3274">More...</a><br /></td></tr>
 <tr class="separator:a1f5c45f78848cfdbb96963cefbbb3274"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b6db285a30edd61d7ea2690062f4a93"><td class="memTemplParams" colspan="2"><a id="a6b6db285a30edd61d7ea2690062f4a93" name="a6b6db285a30edd61d7ea2690062f4a93"></a>
-template&lt;typename RhsType , typename DstType &gt; </td></tr>
-<tr class="memitem:a6b6db285a30edd61d7ea2690062f4a93"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>_solve_impl</b> (const RhsType &amp;rhs, DstType &amp;dst) const</td></tr>
+<tr class="memitem:a6b6db285a30edd61d7ea2690062f4a93"><td class="memTemplParams" colspan="2">template&lt;typename RhsType , typename DstType &gt; </td></tr>
+<tr class="memitem:a6b6db285a30edd61d7ea2690062f4a93"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a6b6db285a30edd61d7ea2690062f4a93">_solve_impl</a> (const RhsType &amp;rhs, DstType &amp;dst) const</td></tr>
 <tr class="separator:a6b6db285a30edd61d7ea2690062f4a93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e26ab43d0debd6a86e27d47443ffa3e"><td class="memTemplParams" colspan="2"><a id="a9e26ab43d0debd6a86e27d47443ffa3e" name="a9e26ab43d0debd6a86e27d47443ffa3e"></a>
-template&lt;bool Conjugate, typename RhsType , typename DstType &gt; </td></tr>
-<tr class="memitem:a9e26ab43d0debd6a86e27d47443ffa3e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>_solve_impl_transposed</b> (const RhsType &amp;rhs, DstType &amp;dst) const</td></tr>
+<tr class="memitem:a9e26ab43d0debd6a86e27d47443ffa3e"><td class="memTemplParams" colspan="2">template&lt;bool Conjugate, typename RhsType , typename DstType &gt; </td></tr>
+<tr class="memitem:a9e26ab43d0debd6a86e27d47443ffa3e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a9e26ab43d0debd6a86e27d47443ffa3e">_solve_impl_transposed</a> (const RhsType &amp;rhs, DstType &amp;dst) const</td></tr>
 <tr class="separator:a9e26ab43d0debd6a86e27d47443ffa3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_eigen_1_1_solver_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_eigen_1_1_solver_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_eigen_1_1_solver_base.html">Eigen::SolverBase&lt; CompleteOrthogonalDecomposition&lt; _MatrixType &gt; &gt;</a></td></tr>
-<tr class="memitem:a4d5e5baddfba3790ab1a5f247dcc4dc1 inherit pub_methods_class_eigen_1_1_solver_base"><td class="memItemLeft" align="right" valign="top"><a id="a4d5e5baddfba3790ab1a5f247dcc4dc1" name="a4d5e5baddfba3790ab1a5f247dcc4dc1"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SolverBase</b> ()</td></tr>
-<tr class="memdesc:a4d5e5baddfba3790ab1a5f247dcc4dc1 inherit pub_methods_class_eigen_1_1_solver_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. <br /></td></tr>
+<tr class="memitem:a4d5e5baddfba3790ab1a5f247dcc4dc1 inherit pub_methods_class_eigen_1_1_solver_base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_solver_base.html#a4d5e5baddfba3790ab1a5f247dcc4dc1">SolverBase</a> ()</td></tr>
+<tr class="memdesc:a4d5e5baddfba3790ab1a5f247dcc4dc1 inherit pub_methods_class_eigen_1_1_solver_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="class_eigen_1_1_solver_base.html#a4d5e5baddfba3790ab1a5f247dcc4dc1">More...</a><br /></td></tr>
 <tr class="separator:a4d5e5baddfba3790ab1a5f247dcc4dc1 inherit pub_methods_class_eigen_1_1_solver_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a9bb1cec6324ffd4016319e9ae94477 inherit pub_methods_class_eigen_1_1_solver_base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_solver_base.html#a5a9bb1cec6324ffd4016319e9ae94477">~SolverBase</a> ()</td></tr>
+<tr class="separator:a5a9bb1cec6324ffd4016319e9ae94477 inherit pub_methods_class_eigen_1_1_solver_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a943c352b597e3cd4744d5c11bfd77520 inherit pub_methods_class_eigen_1_1_solver_base"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_eigen_1_1_solve.html">Solve</a>&lt; <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">CompleteOrthogonalDecomposition</a>&lt; _MatrixType &gt;, Rhs &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_solver_base.html#a943c352b597e3cd4744d5c11bfd77520">solve</a> (const <a class="el" href="class_eigen_1_1_matrix_base.html">MatrixBase</a>&lt; Rhs &gt; &amp;b) const</td></tr>
 <tr class="separator:a943c352b597e3cd4744d5c11bfd77520 inherit pub_methods_class_eigen_1_1_solver_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a732e75b5132bb4db3775916927b0e86c inherit pub_methods_class_eigen_1_1_solver_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_eigen_1_1_diagonal.html">ConstTransposeReturnType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_solver_base.html#a732e75b5132bb4db3775916927b0e86c">transpose</a> () const</td></tr>
+<tr class="memitem:a732e75b5132bb4db3775916927b0e86c inherit pub_methods_class_eigen_1_1_solver_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_eigen_1_1_solver_base.html#a194a213b4d83301053e02289671d7c5d">ConstTransposeReturnType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_solver_base.html#a732e75b5132bb4db3775916927b0e86c">transpose</a> () const</td></tr>
 <tr class="separator:a732e75b5132bb4db3775916927b0e86c inherit pub_methods_class_eigen_1_1_solver_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05a3686a89888681c8e0c2bcab6d1ce5 inherit pub_methods_class_eigen_1_1_solver_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_eigen_1_1internal_1_1true__type.html">AdjointReturnType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_solver_base.html#a05a3686a89888681c8e0c2bcab6d1ce5">adjoint</a> () const</td></tr>
+<tr class="memitem:a05a3686a89888681c8e0c2bcab6d1ce5 inherit pub_methods_class_eigen_1_1_solver_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_eigen_1_1_solver_base.html#a1b0c648dad6ec8129374f2b816c04c39">AdjointReturnType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_solver_base.html#a05a3686a89888681c8e0c2bcab6d1ce5">adjoint</a> () const</td></tr>
 <tr class="separator:a05a3686a89888681c8e0c2bcab6d1ce5 inherit pub_methods_class_eigen_1_1_solver_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4cf3e6bb046a94a46b69b857bd3dbc9 inherit pub_methods_class_eigen_1_1_solver_base"><td class="memItemLeft" align="right" valign="top">EIGEN_DEVICE_FUNC <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">CompleteOrthogonalDecomposition</a>&lt; _MatrixType &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_solver_base.html#ab4cf3e6bb046a94a46b69b857bd3dbc9">derived</a> ()</td></tr>
+<tr class="memitem:ab4cf3e6bb046a94a46b69b857bd3dbc9 inherit pub_methods_class_eigen_1_1_solver_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_macros_8h.html#a9efec3cfd22b9a33bead9c6718d128da">EIGEN_DEVICE_FUNC</a> <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">CompleteOrthogonalDecomposition</a>&lt; _MatrixType &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_solver_base.html#ab4cf3e6bb046a94a46b69b857bd3dbc9">derived</a> ()</td></tr>
 <tr class="separator:ab4cf3e6bb046a94a46b69b857bd3dbc9 inherit pub_methods_class_eigen_1_1_solver_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80808d9477b4dddab2613a5d8764d79e inherit pub_methods_class_eigen_1_1_solver_base"><td class="memItemLeft" align="right" valign="top">EIGEN_DEVICE_FUNC const <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">CompleteOrthogonalDecomposition</a>&lt; _MatrixType &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_solver_base.html#a80808d9477b4dddab2613a5d8764d79e">derived</a> () const</td></tr>
+<tr class="memitem:a80808d9477b4dddab2613a5d8764d79e inherit pub_methods_class_eigen_1_1_solver_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_macros_8h.html#a9efec3cfd22b9a33bead9c6718d128da">EIGEN_DEVICE_FUNC</a> const <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">CompleteOrthogonalDecomposition</a>&lt; _MatrixType &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_solver_base.html#a80808d9477b4dddab2613a5d8764d79e">derived</a> () const</td></tr>
 <tr class="separator:a80808d9477b4dddab2613a5d8764d79e inherit pub_methods_class_eigen_1_1_solver_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_struct_eigen_1_1_eigen_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_struct_eigen_1_1_eigen_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="struct_eigen_1_1_eigen_base.html">Eigen::EigenBase&lt; Derived &gt;</a></td></tr>
-<tr class="memitem:ab4cf3e6bb046a94a46b69b857bd3dbc9 inherit pub_methods_struct_eigen_1_1_eigen_base"><td class="memItemLeft" align="right" valign="top">EIGEN_DEVICE_FUNC Derived &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1_eigen_base.html#ab4cf3e6bb046a94a46b69b857bd3dbc9">derived</a> ()</td></tr>
+<tr class="memitem:ab4cf3e6bb046a94a46b69b857bd3dbc9 inherit pub_methods_struct_eigen_1_1_eigen_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_macros_8h.html#a9efec3cfd22b9a33bead9c6718d128da">EIGEN_DEVICE_FUNC</a> Derived &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1_eigen_base.html#ab4cf3e6bb046a94a46b69b857bd3dbc9">derived</a> ()</td></tr>
 <tr class="separator:ab4cf3e6bb046a94a46b69b857bd3dbc9 inherit pub_methods_struct_eigen_1_1_eigen_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80808d9477b4dddab2613a5d8764d79e inherit pub_methods_struct_eigen_1_1_eigen_base"><td class="memItemLeft" align="right" valign="top">EIGEN_DEVICE_FUNC const Derived &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1_eigen_base.html#a80808d9477b4dddab2613a5d8764d79e">derived</a> () const</td></tr>
+<tr class="memitem:a80808d9477b4dddab2613a5d8764d79e inherit pub_methods_struct_eigen_1_1_eigen_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_macros_8h.html#a9efec3cfd22b9a33bead9c6718d128da">EIGEN_DEVICE_FUNC</a> const Derived &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1_eigen_base.html#a80808d9477b4dddab2613a5d8764d79e">derived</a> () const</td></tr>
 <tr class="separator:a80808d9477b4dddab2613a5d8764d79e inherit pub_methods_struct_eigen_1_1_eigen_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23248b545ee580f3ddb8150cd3d032a3 inherit pub_methods_struct_eigen_1_1_eigen_base"><td class="memItemLeft" align="right" valign="top"><a id="a23248b545ee580f3ddb8150cd3d032a3" name="a23248b545ee580f3ddb8150cd3d032a3"></a>
-EIGEN_DEVICE_FUNC Derived &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>const_cast_derived</b> () const</td></tr>
+<tr class="memitem:a23248b545ee580f3ddb8150cd3d032a3 inherit pub_methods_struct_eigen_1_1_eigen_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_macros_8h.html#a9efec3cfd22b9a33bead9c6718d128da">EIGEN_DEVICE_FUNC</a> Derived &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1_eigen_base.html#a23248b545ee580f3ddb8150cd3d032a3">const_cast_derived</a> () const</td></tr>
 <tr class="separator:a23248b545ee580f3ddb8150cd3d032a3 inherit pub_methods_struct_eigen_1_1_eigen_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf0796214cde38991fd56c07f0765829 inherit pub_methods_struct_eigen_1_1_eigen_base"><td class="memItemLeft" align="right" valign="top"><a id="abf0796214cde38991fd56c07f0765829" name="abf0796214cde38991fd56c07f0765829"></a>
-EIGEN_DEVICE_FUNC const Derived &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>const_derived</b> () const</td></tr>
+<tr class="memitem:abf0796214cde38991fd56c07f0765829 inherit pub_methods_struct_eigen_1_1_eigen_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_macros_8h.html#a9efec3cfd22b9a33bead9c6718d128da">EIGEN_DEVICE_FUNC</a> const Derived &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1_eigen_base.html#abf0796214cde38991fd56c07f0765829">const_derived</a> () const</td></tr>
 <tr class="separator:abf0796214cde38991fd56c07f0765829 inherit pub_methods_struct_eigen_1_1_eigen_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1d12fdb3361e150427e1fd94ebb1f14 inherit pub_methods_struct_eigen_1_1_eigen_base"><td class="memItemLeft" align="right" valign="top">EIGEN_DEVICE_FUNC EIGEN_CONSTEXPR <a class="el" href="struct_eigen_1_1_eigen_base.html#a554f30542cc2316add4b1ea0a492ff02">Index</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1_eigen_base.html#af1d12fdb3361e150427e1fd94ebb1f14">rows</a> () const EIGEN_NOEXCEPT</td></tr>
+<tr class="memitem:af1d12fdb3361e150427e1fd94ebb1f14 inherit pub_methods_struct_eigen_1_1_eigen_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_macros_8h.html#a9efec3cfd22b9a33bead9c6718d128da">EIGEN_DEVICE_FUNC</a> <a class="el" href="_macros_8h.html#a62a0d46d3d76fff438aec3b57f29c90c">EIGEN_CONSTEXPR</a> <a class="el" href="struct_eigen_1_1_eigen_base.html#a554f30542cc2316add4b1ea0a492ff02">Index</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1_eigen_base.html#af1d12fdb3361e150427e1fd94ebb1f14">rows</a> () const <a class="el" href="_macros_8h.html#a532c42c61426cc18d84097e29577acf8">EIGEN_NOEXCEPT</a></td></tr>
 <tr class="separator:af1d12fdb3361e150427e1fd94ebb1f14 inherit pub_methods_struct_eigen_1_1_eigen_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50c19c45f15acdfe1cb66ab5e879b8e3 inherit pub_methods_struct_eigen_1_1_eigen_base"><td class="memItemLeft" align="right" valign="top">EIGEN_DEVICE_FUNC EIGEN_CONSTEXPR <a class="el" href="struct_eigen_1_1_eigen_base.html#a554f30542cc2316add4b1ea0a492ff02">Index</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1_eigen_base.html#a50c19c45f15acdfe1cb66ab5e879b8e3">cols</a> () const EIGEN_NOEXCEPT</td></tr>
+<tr class="memitem:a50c19c45f15acdfe1cb66ab5e879b8e3 inherit pub_methods_struct_eigen_1_1_eigen_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_macros_8h.html#a9efec3cfd22b9a33bead9c6718d128da">EIGEN_DEVICE_FUNC</a> <a class="el" href="_macros_8h.html#a62a0d46d3d76fff438aec3b57f29c90c">EIGEN_CONSTEXPR</a> <a class="el" href="struct_eigen_1_1_eigen_base.html#a554f30542cc2316add4b1ea0a492ff02">Index</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1_eigen_base.html#a50c19c45f15acdfe1cb66ab5e879b8e3">cols</a> () const <a class="el" href="_macros_8h.html#a532c42c61426cc18d84097e29577acf8">EIGEN_NOEXCEPT</a></td></tr>
 <tr class="separator:a50c19c45f15acdfe1cb66ab5e879b8e3 inherit pub_methods_struct_eigen_1_1_eigen_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f40726259520d7e9c5ce58d19d62e79 inherit pub_methods_struct_eigen_1_1_eigen_base"><td class="memItemLeft" align="right" valign="top">EIGEN_DEVICE_FUNC EIGEN_CONSTEXPR <a class="el" href="struct_eigen_1_1_eigen_base.html#a554f30542cc2316add4b1ea0a492ff02">Index</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1_eigen_base.html#a9f40726259520d7e9c5ce58d19d62e79">size</a> () const EIGEN_NOEXCEPT</td></tr>
+<tr class="memitem:a9f40726259520d7e9c5ce58d19d62e79 inherit pub_methods_struct_eigen_1_1_eigen_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_macros_8h.html#a9efec3cfd22b9a33bead9c6718d128da">EIGEN_DEVICE_FUNC</a> <a class="el" href="_macros_8h.html#a62a0d46d3d76fff438aec3b57f29c90c">EIGEN_CONSTEXPR</a> <a class="el" href="struct_eigen_1_1_eigen_base.html#a554f30542cc2316add4b1ea0a492ff02">Index</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1_eigen_base.html#a9f40726259520d7e9c5ce58d19d62e79">size</a> () const <a class="el" href="_macros_8h.html#a532c42c61426cc18d84097e29577acf8">EIGEN_NOEXCEPT</a></td></tr>
 <tr class="separator:a9f40726259520d7e9c5ce58d19d62e79 inherit pub_methods_struct_eigen_1_1_eigen_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a991b21b79bb613171a53271933c53cab inherit pub_methods_struct_eigen_1_1_eigen_base"><td class="memTemplParams" colspan="2"><a id="a991b21b79bb613171a53271933c53cab" name="a991b21b79bb613171a53271933c53cab"></a>
-template&lt;typename Dest &gt; </td></tr>
-<tr class="memitem:a991b21b79bb613171a53271933c53cab inherit pub_methods_struct_eigen_1_1_eigen_base"><td class="memTemplItemLeft" align="right" valign="top">EIGEN_DEVICE_FUNC void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>evalTo</b> (Dest &amp;dst) const</td></tr>
+<tr class="memitem:a991b21b79bb613171a53271933c53cab inherit pub_methods_struct_eigen_1_1_eigen_base"><td class="memTemplParams" colspan="2">template&lt;typename Dest &gt; </td></tr>
+<tr class="memitem:a991b21b79bb613171a53271933c53cab inherit pub_methods_struct_eigen_1_1_eigen_base"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="_macros_8h.html#a9efec3cfd22b9a33bead9c6718d128da">EIGEN_DEVICE_FUNC</a> void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1_eigen_base.html#a991b21b79bb613171a53271933c53cab">evalTo</a> (Dest &amp;dst) const</td></tr>
 <tr class="separator:a991b21b79bb613171a53271933c53cab inherit pub_methods_struct_eigen_1_1_eigen_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4300dbb47b34596d8ce6b2361c07b52 inherit pub_methods_struct_eigen_1_1_eigen_base"><td class="memTemplParams" colspan="2"><a id="ad4300dbb47b34596d8ce6b2361c07b52" name="ad4300dbb47b34596d8ce6b2361c07b52"></a>
-template&lt;typename Dest &gt; </td></tr>
-<tr class="memitem:ad4300dbb47b34596d8ce6b2361c07b52 inherit pub_methods_struct_eigen_1_1_eigen_base"><td class="memTemplItemLeft" align="right" valign="top">EIGEN_DEVICE_FUNC void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>addTo</b> (Dest &amp;dst) const</td></tr>
+<tr class="memitem:ad4300dbb47b34596d8ce6b2361c07b52 inherit pub_methods_struct_eigen_1_1_eigen_base"><td class="memTemplParams" colspan="2">template&lt;typename Dest &gt; </td></tr>
+<tr class="memitem:ad4300dbb47b34596d8ce6b2361c07b52 inherit pub_methods_struct_eigen_1_1_eigen_base"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="_macros_8h.html#a9efec3cfd22b9a33bead9c6718d128da">EIGEN_DEVICE_FUNC</a> void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1_eigen_base.html#ad4300dbb47b34596d8ce6b2361c07b52">addTo</a> (Dest &amp;dst) const</td></tr>
 <tr class="separator:ad4300dbb47b34596d8ce6b2361c07b52 inherit pub_methods_struct_eigen_1_1_eigen_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a677a970c7d063d7033180dd9dbb53565 inherit pub_methods_struct_eigen_1_1_eigen_base"><td class="memTemplParams" colspan="2"><a id="a677a970c7d063d7033180dd9dbb53565" name="a677a970c7d063d7033180dd9dbb53565"></a>
-template&lt;typename Dest &gt; </td></tr>
-<tr class="memitem:a677a970c7d063d7033180dd9dbb53565 inherit pub_methods_struct_eigen_1_1_eigen_base"><td class="memTemplItemLeft" align="right" valign="top">EIGEN_DEVICE_FUNC void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>subTo</b> (Dest &amp;dst) const</td></tr>
+<tr class="memitem:a677a970c7d063d7033180dd9dbb53565 inherit pub_methods_struct_eigen_1_1_eigen_base"><td class="memTemplParams" colspan="2">template&lt;typename Dest &gt; </td></tr>
+<tr class="memitem:a677a970c7d063d7033180dd9dbb53565 inherit pub_methods_struct_eigen_1_1_eigen_base"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="_macros_8h.html#a9efec3cfd22b9a33bead9c6718d128da">EIGEN_DEVICE_FUNC</a> void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1_eigen_base.html#a677a970c7d063d7033180dd9dbb53565">subTo</a> (Dest &amp;dst) const</td></tr>
 <tr class="separator:a677a970c7d063d7033180dd9dbb53565 inherit pub_methods_struct_eigen_1_1_eigen_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabee6205996703a37df914e379472653 inherit pub_methods_struct_eigen_1_1_eigen_base"><td class="memTemplParams" colspan="2"><a id="aabee6205996703a37df914e379472653" name="aabee6205996703a37df914e379472653"></a>
-template&lt;typename Dest &gt; </td></tr>
-<tr class="memitem:aabee6205996703a37df914e379472653 inherit pub_methods_struct_eigen_1_1_eigen_base"><td class="memTemplItemLeft" align="right" valign="top">EIGEN_DEVICE_FUNC void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>applyThisOnTheRight</b> (Dest &amp;dst) const</td></tr>
+<tr class="memitem:aabee6205996703a37df914e379472653 inherit pub_methods_struct_eigen_1_1_eigen_base"><td class="memTemplParams" colspan="2">template&lt;typename Dest &gt; </td></tr>
+<tr class="memitem:aabee6205996703a37df914e379472653 inherit pub_methods_struct_eigen_1_1_eigen_base"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="_macros_8h.html#a9efec3cfd22b9a33bead9c6718d128da">EIGEN_DEVICE_FUNC</a> void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1_eigen_base.html#aabee6205996703a37df914e379472653">applyThisOnTheRight</a> (Dest &amp;dst) const</td></tr>
 <tr class="separator:aabee6205996703a37df914e379472653 inherit pub_methods_struct_eigen_1_1_eigen_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8a579c4f982dddd2a01489fe66b73c9 inherit pub_methods_struct_eigen_1_1_eigen_base"><td class="memTemplParams" colspan="2"><a id="ac8a579c4f982dddd2a01489fe66b73c9" name="ac8a579c4f982dddd2a01489fe66b73c9"></a>
-template&lt;typename Dest &gt; </td></tr>
-<tr class="memitem:ac8a579c4f982dddd2a01489fe66b73c9 inherit pub_methods_struct_eigen_1_1_eigen_base"><td class="memTemplItemLeft" align="right" valign="top">EIGEN_DEVICE_FUNC void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>applyThisOnTheLeft</b> (Dest &amp;dst) const</td></tr>
+<tr class="memitem:ac8a579c4f982dddd2a01489fe66b73c9 inherit pub_methods_struct_eigen_1_1_eigen_base"><td class="memTemplParams" colspan="2">template&lt;typename Dest &gt; </td></tr>
+<tr class="memitem:ac8a579c4f982dddd2a01489fe66b73c9 inherit pub_methods_struct_eigen_1_1_eigen_base"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="_macros_8h.html#a9efec3cfd22b9a33bead9c6718d128da">EIGEN_DEVICE_FUNC</a> void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1_eigen_base.html#ac8a579c4f982dddd2a01489fe66b73c9">applyThisOnTheLeft</a> (Dest &amp;dst) const</td></tr>
 <tr class="separator:ac8a579c4f982dddd2a01489fe66b73c9 inherit pub_methods_struct_eigen_1_1_eigen_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:aef1341be975536d1ffbfdcecfbfd6ea9"><td class="memTemplParams" colspan="2"><a id="aef1341be975536d1ffbfdcecfbfd6ea9" name="aef1341be975536d1ffbfdcecfbfd6ea9"></a>
-template&lt;bool Transpose_, typename Rhs &gt; </td></tr>
-<tr class="memitem:aef1341be975536d1ffbfdcecfbfd6ea9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>_check_solve_assertion</b> (const Rhs &amp;b) const</td></tr>
+<tr class="memitem:aef1341be975536d1ffbfdcecfbfd6ea9"><td class="memTemplParams" colspan="2">template&lt;bool Transpose_, typename Rhs &gt; </td></tr>
+<tr class="memitem:aef1341be975536d1ffbfdcecfbfd6ea9"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#aef1341be975536d1ffbfdcecfbfd6ea9">_check_solve_assertion</a> (const Rhs &amp;b) const</td></tr>
 <tr class="separator:aef1341be975536d1ffbfdcecfbfd6ea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb0b963d7d8f96492904e8eda03efbf5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#adb0b963d7d8f96492904e8eda03efbf5">computeInPlace</a> ()</td></tr>
 <tr class="memdesc:adb0b963d7d8f96492904e8eda03efbf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs the complete orthogonal decomposition of the given matrix <em>matrix</em>.  <a href="class_eigen_1_1_complete_orthogonal_decomposition.html#adb0b963d7d8f96492904e8eda03efbf5">More...</a><br /></td></tr>
 <tr class="separator:adb0b963d7d8f96492904e8eda03efbf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afedd1ee41b8490b70fd1fefdd21f8c80"><td class="memTemplParams" colspan="2"><a id="afedd1ee41b8490b70fd1fefdd21f8c80" name="afedd1ee41b8490b70fd1fefdd21f8c80"></a>
-template&lt;bool Conjugate, typename Rhs &gt; </td></tr>
-<tr class="memitem:afedd1ee41b8490b70fd1fefdd21f8c80"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>applyZOnTheLeftInPlace</b> (Rhs &amp;rhs) const</td></tr>
-<tr class="memdesc:afedd1ee41b8490b70fd1fefdd21f8c80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overwrites <b>rhs</b> with \( \mathbf{Z} * \mathbf{rhs} \) or \( \mathbf{\overline Z} * \mathbf{rhs} \) if <code><a class="el" href="class_eigen_1_1_conjugate.html">Conjugate</a></code> is set to <code>true</code>. <br /></td></tr>
+<tr class="memitem:afedd1ee41b8490b70fd1fefdd21f8c80"><td class="memTemplParams" colspan="2">template&lt;bool Conjugate, typename Rhs &gt; </td></tr>
+<tr class="memitem:afedd1ee41b8490b70fd1fefdd21f8c80"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#afedd1ee41b8490b70fd1fefdd21f8c80">applyZOnTheLeftInPlace</a> (Rhs &amp;rhs) const</td></tr>
+<tr class="memdesc:afedd1ee41b8490b70fd1fefdd21f8c80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overwrites <b>rhs</b> with \( \mathbf{Z} * \mathbf{rhs} \) or \( \mathbf{\overline Z} * \mathbf{rhs} \) if <code><a class="el" href="class_eigen_1_1_conjugate.html">Conjugate</a></code> is set to <code>true</code>.  <a href="class_eigen_1_1_complete_orthogonal_decomposition.html#afedd1ee41b8490b70fd1fefdd21f8c80">More...</a><br /></td></tr>
 <tr class="separator:afedd1ee41b8490b70fd1fefdd21f8c80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a89641e0b4ea92c515405f2a31e6abe"><td class="memTemplParams" colspan="2"><a id="a0a89641e0b4ea92c515405f2a31e6abe" name="a0a89641e0b4ea92c515405f2a31e6abe"></a>
-template&lt;typename Rhs &gt; </td></tr>
-<tr class="memitem:a0a89641e0b4ea92c515405f2a31e6abe"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>applyZAdjointOnTheLeftInPlace</b> (Rhs &amp;rhs) const</td></tr>
-<tr class="memdesc:a0a89641e0b4ea92c515405f2a31e6abe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overwrites <b>rhs</b> with \( \mathbf{Z}^* * \mathbf{rhs} \). <br /></td></tr>
+<tr class="memitem:a0a89641e0b4ea92c515405f2a31e6abe"><td class="memTemplParams" colspan="2">template&lt;typename Rhs &gt; </td></tr>
+<tr class="memitem:a0a89641e0b4ea92c515405f2a31e6abe"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a0a89641e0b4ea92c515405f2a31e6abe">applyZAdjointOnTheLeftInPlace</a> (Rhs &amp;rhs) const</td></tr>
+<tr class="memdesc:a0a89641e0b4ea92c515405f2a31e6abe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overwrites <b>rhs</b> with \( \mathbf{Z}^* * \mathbf{rhs} \).  <a href="class_eigen_1_1_complete_orthogonal_decomposition.html#a0a89641e0b4ea92c515405f2a31e6abe">More...</a><br /></td></tr>
 <tr class="separator:a0a89641e0b4ea92c515405f2a31e6abe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_eigen_1_1_solver_base"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_eigen_1_1_solver_base')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_eigen_1_1_solver_base.html">Eigen::SolverBase&lt; CompleteOrthogonalDecomposition&lt; _MatrixType &gt; &gt;</a></td></tr>
-<tr class="memitem:ac0bf165255e731b5c8a254dbfe5545c9 inherit pro_methods_class_eigen_1_1_solver_base"><td class="memItemLeft" align="right" valign="top"><a id="ac0bf165255e731b5c8a254dbfe5545c9" name="ac0bf165255e731b5c8a254dbfe5545c9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>_check_solve_assertion</b> (const Rhs &amp;b) const</td></tr>
+<tr class="memitem:ac0bf165255e731b5c8a254dbfe5545c9 inherit pro_methods_class_eigen_1_1_solver_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_solver_base.html#ac0bf165255e731b5c8a254dbfe5545c9">_check_solve_assertion</a> (const Rhs &amp;b) const</td></tr>
 <tr class="separator:ac0bf165255e731b5c8a254dbfe5545c9 inherit pro_methods_class_eigen_1_1_solver_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-methods" name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>
-<tr class="memitem:a5e066e98d76f6bb2231f16676d18c877"><td class="memItemLeft" align="right" valign="top"><a id="a5e066e98d76f6bb2231f16676d18c877" name="a5e066e98d76f6bb2231f16676d18c877"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>check_template_parameters</b> ()</td></tr>
+<tr class="memitem:a5e066e98d76f6bb2231f16676d18c877"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a5e066e98d76f6bb2231f16676d18c877">check_template_parameters</a> ()</td></tr>
 <tr class="separator:a5e066e98d76f6bb2231f16676d18c877"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a7e53f3ce1fc2d8244a64c18855ab2641"><td class="memItemLeft" align="right" valign="top"><a id="a7e53f3ce1fc2d8244a64c18855ab2641" name="a7e53f3ce1fc2d8244a64c18855ab2641"></a>
-<a class="el" href="class_eigen_1_1_col_piv_householder_q_r.html">ColPivHouseholderQR</a>&lt; MatrixType &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_cpqr</b></td></tr>
+<tr class="memitem:a7e53f3ce1fc2d8244a64c18855ab2641"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_eigen_1_1_col_piv_householder_q_r.html">ColPivHouseholderQR</a>&lt; <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a8eba7b5263a0241cb477b3531f5ef609">MatrixType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a7e53f3ce1fc2d8244a64c18855ab2641">m_cpqr</a></td></tr>
 <tr class="separator:a7e53f3ce1fc2d8244a64c18855ab2641"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84daf778398c92d7c0856564069897b4"><td class="memItemLeft" align="right" valign="top"><a id="a84daf778398c92d7c0856564069897b4" name="a84daf778398c92d7c0856564069897b4"></a>
-<a class="el" href="struct_eigen_1_1internal_1_1true__type.html">HCoeffsType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_zCoeffs</b></td></tr>
+<tr class="memitem:a84daf778398c92d7c0856564069897b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#aca5b63fffae26e0e1eaa38d63b575038">HCoeffsType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a84daf778398c92d7c0856564069897b4">m_zCoeffs</a></td></tr>
 <tr class="separator:a84daf778398c92d7c0856564069897b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a953bdfff5e3e3bdeeb3263b83eef4475"><td class="memItemLeft" align="right" valign="top"><a id="a953bdfff5e3e3bdeeb3263b83eef4475" name="a953bdfff5e3e3bdeeb3263b83eef4475"></a>
-<a class="el" href="struct_eigen_1_1internal_1_1true__type.html">RowVectorType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_temp</b></td></tr>
+<tr class="memitem:a953bdfff5e3e3bdeeb3263b83eef4475"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a7034cb4035db5e3d7c538c27c3d15212">RowVectorType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a953bdfff5e3e3bdeeb3263b83eef4475">m_temp</a></td></tr>
 <tr class="separator:a953bdfff5e3e3bdeeb3263b83eef4475"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:aa074c5ef6323eb648d501dd6beb67d2b"><td class="memTemplParams" colspan="2"><a id="aa074c5ef6323eb648d501dd6beb67d2b" name="aa074c5ef6323eb648d501dd6beb67d2b"></a>
-template&lt;typename Derived &gt; </td></tr>
-<tr class="memitem:aa074c5ef6323eb648d501dd6beb67d2b"><td class="memTemplItemLeft" align="right" valign="top">struct&#160;</td><td class="memTemplItemRight" valign="bottom"><b>internal::solve_assertion</b></td></tr>
+<tr class="memitem:aa074c5ef6323eb648d501dd6beb67d2b"><td class="memTemplParams" colspan="2">template&lt;typename Derived &gt; </td></tr>
+<tr class="memitem:aa074c5ef6323eb648d501dd6beb67d2b"><td class="memTemplItemLeft" align="right" valign="top">struct&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#aa074c5ef6323eb648d501dd6beb67d2b">internal::solve_assertion</a></td></tr>
 <tr class="separator:aa074c5ef6323eb648d501dd6beb67d2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -377,7 +341,173 @@ class Eigen::CompleteOrthogonalDecomposition&lt; _MatrixType &gt;</div><p >Compl
 <p> by using Householder transformations. Here, <b>P</b> is a permutation matrix, <b>Q</b> and <b>Z</b> are unitary matrices and <b>T</b> an upper triangular matrix of size rank-by-rank. <b>A</b> may be rank deficient.</p>
 <p >This class supports the <a class="el" href="">inplace decomposition </a> mechanism.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_eigen_1_1_matrix_base.html#ae90b6846f05bd30b8d52b66e427e3e09">MatrixBase::completeOrthogonalDecomposition()</a> </dd></dl>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a85bccf325c729d89c371938eb482ec6b" name="a85bccf325c729d89c371938eb482ec6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85bccf325c729d89c371938eb482ec6b">&#9670;&nbsp;</a></span>Base</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _MatrixType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="class_eigen_1_1_solver_base.html">SolverBase</a>&lt;<a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">CompleteOrthogonalDecomposition</a>&gt; <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">Eigen::CompleteOrthogonalDecomposition</a>&lt; _MatrixType &gt;::<a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a85bccf325c729d89c371938eb482ec6b">Base</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aca5b63fffae26e0e1eaa38d63b575038" name="aca5b63fffae26e0e1eaa38d63b575038"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca5b63fffae26e0e1eaa38d63b575038">&#9670;&nbsp;</a></span>HCoeffsType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _MatrixType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="struct_eigen_1_1internal_1_1plain__diag__type.html">internal::plain_diag_type</a>&lt;<a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a8eba7b5263a0241cb477b3531f5ef609">MatrixType</a>&gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a> <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">Eigen::CompleteOrthogonalDecomposition</a>&lt; _MatrixType &gt;::<a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#aca5b63fffae26e0e1eaa38d63b575038">HCoeffsType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9d4e0e44ac23ad8baf0f91e91b982dec" name="a9d4e0e44ac23ad8baf0f91e91b982dec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d4e0e44ac23ad8baf0f91e91b982dec">&#9670;&nbsp;</a></span>HouseholderSequenceType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _MatrixType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="class_eigen_1_1_householder_sequence.html">HouseholderSequence</a>&lt; <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a8eba7b5263a0241cb477b3531f5ef609">MatrixType</a>, typename <a class="el" href="struct_eigen_1_1internal_1_1remove__all.html">internal::remove_all</a>&lt; typename <a class="el" href="_common_cwise_unary_ops_8h.html#a21123c01c5afb9e6d99998f52bf07020">HCoeffsType::ConjugateReturnType</a>&gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>&gt; <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">Eigen::CompleteOrthogonalDecomposition</a>&lt; _MatrixType &gt;::<a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a9d4e0e44ac23ad8baf0f91e91b982dec">HouseholderSequenceType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a849a0c16c10e62b1ec93aeccf3f0ec5e" name="a849a0c16c10e62b1ec93aeccf3f0ec5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a849a0c16c10e62b1ec93aeccf3f0ec5e">&#9670;&nbsp;</a></span>IntRowVectorType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _MatrixType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="struct_eigen_1_1internal_1_1plain__row__type.html">internal::plain_row_type</a>&lt;<a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a8eba7b5263a0241cb477b3531f5ef609">MatrixType</a>,<a class="el" href="struct_eigen_1_1_eigen_base.html#a554f30542cc2316add4b1ea0a492ff02">Index</a>&gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a> <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">Eigen::CompleteOrthogonalDecomposition</a>&lt; _MatrixType &gt;::<a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a849a0c16c10e62b1ec93aeccf3f0ec5e">IntRowVectorType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8eba7b5263a0241cb477b3531f5ef609" name="a8eba7b5263a0241cb477b3531f5ef609"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8eba7b5263a0241cb477b3531f5ef609">&#9670;&nbsp;</a></span>MatrixType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _MatrixType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef _MatrixType <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">Eigen::CompleteOrthogonalDecomposition</a>&lt; _MatrixType &gt;::<a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a8eba7b5263a0241cb477b3531f5ef609">MatrixType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae60d0d820677d67b73258322bcae0a2d" name="ae60d0d820677d67b73258322bcae0a2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae60d0d820677d67b73258322bcae0a2d">&#9670;&nbsp;</a></span>PermutationType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _MatrixType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="class_eigen_1_1_permutation_matrix.html">PermutationMatrix</a>&lt;<a class="el" href="class_eigen_1_1_solver_base.html#a036fa401af8734baa7827e4fe718e38ca6783746e5b80618fac0144caed7a2e2c">ColsAtCompileTime</a>, <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a9bd069b31030a09d8eea517bce887ed7a6fca406d299a35ff209a555a14645fff">MaxColsAtCompileTime</a>&gt; <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">Eigen::CompleteOrthogonalDecomposition</a>&lt; _MatrixType &gt;::<a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#ae60d0d820677d67b73258322bcae0a2d">PermutationType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4db9c08da38e11bd598ed743061966b1" name="a4db9c08da38e11bd598ed743061966b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4db9c08da38e11bd598ed743061966b1">&#9670;&nbsp;</a></span>PlainObject</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _MatrixType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef MatrixType::PlainObject <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">Eigen::CompleteOrthogonalDecomposition</a>&lt; _MatrixType &gt;::<a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a4db9c08da38e11bd598ed743061966b1">PlainObject</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa25ccab13d91beeef80252cb466c1f04" name="aa25ccab13d91beeef80252cb466c1f04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa25ccab13d91beeef80252cb466c1f04">&#9670;&nbsp;</a></span>RealRowVectorType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _MatrixType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="struct_eigen_1_1internal_1_1plain__row__type.html">internal::plain_row_type</a>&lt;<a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a8eba7b5263a0241cb477b3531f5ef609">MatrixType</a>,RealScalar&gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a> <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">Eigen::CompleteOrthogonalDecomposition</a>&lt; _MatrixType &gt;::<a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#aa25ccab13d91beeef80252cb466c1f04">RealRowVectorType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7034cb4035db5e3d7c538c27c3d15212" name="a7034cb4035db5e3d7c538c27c3d15212"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7034cb4035db5e3d7c538c27c3d15212">&#9670;&nbsp;</a></span>RowVectorType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _MatrixType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="struct_eigen_1_1internal_1_1plain__row__type.html">internal::plain_row_type</a>&lt;<a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a8eba7b5263a0241cb477b3531f5ef609">MatrixType</a>&gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a> <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">Eigen::CompleteOrthogonalDecomposition</a>&lt; _MatrixType &gt;::<a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a7034cb4035db5e3d7c538c27c3d15212">RowVectorType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a9bd069b31030a09d8eea517bce887ed7" name="a9bd069b31030a09d8eea517bce887ed7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bd069b31030a09d8eea517bce887ed7">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _MatrixType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a9bd069b31030a09d8eea517bce887ed7a347b9cc470d20d062af8c413b2f4393d" name="a9bd069b31030a09d8eea517bce887ed7a347b9cc470d20d062af8c413b2f4393d"></a>MaxRowsAtCompileTime&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9bd069b31030a09d8eea517bce887ed7a6fca406d299a35ff209a555a14645fff" name="a9bd069b31030a09d8eea517bce887ed7a6fca406d299a35ff209a555a14645fff"></a>MaxColsAtCompileTime&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7ba33814fd3fdc62f6179cdcd655c679" name="a7ba33814fd3fdc62f6179cdcd655c679"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7ba33814fd3fdc62f6179cdcd655c679">&#9670;&nbsp;</a></span>CompleteOrthogonalDecomposition() <span class="overload">[1/4]</span></h2>
 
@@ -478,12 +608,13 @@ template&lt;typename InputType &gt; </div>
 </div><div class="memdoc">
 
 <p>Constructs a complete orthogonal decomposition from a given matrix. </p>
-<p >This constructor computes the complete orthogonal decomposition of the matrix <em>matrix</em> by calling the method compute(). The default threshold for rank determination will be used. It is a short cut for:</p>
+<p >This constructor computes the complete orthogonal decomposition of the matrix <em>matrix</em> by calling the method <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a36dcdb91c491eb2a0b2669ea00d2c186">compute()</a>. The default threshold for rank determination will be used. It is a short cut for:</p>
 <div class="fragment"><div class="line">CompleteOrthogonalDecomposition&lt;MatrixType&gt; cod(matrix.rows(),</div>
 <div class="line">                                                matrix.cols());</div>
-<div class="line">cod.setThreshold(Default);</div>
+<div class="line">cod.setThreshold(<a class="code hl_enumvalue" href="namespace_eigen.html#a644c9489710c76e32bd3a9b15d83ca43af9d7e49f0799ab145f0a4f6ea7e82b95">Default</a>);</div>
 <div class="line">cod.compute(matrix);</div>
-</div><!-- fragment --><dl class="section see"><dt>See also</dt><dd>compute() </dd></dl>
+<div class="ttc" id="anamespace_eigen_html_a644c9489710c76e32bd3a9b15d83ca43af9d7e49f0799ab145f0a4f6ea7e82b95"><div class="ttname"><a href="namespace_eigen.html#a644c9489710c76e32bd3a9b15d83ca43af9d7e49f0799ab145f0a4f6ea7e82b95">Eigen::Default</a></div><div class="ttdeci">@ Default</div><div class="ttdef"><b>Definition:</b> Constants.h:362</div></div>
+</div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a36dcdb91c491eb2a0b2669ea00d2c186">compute()</a> </dd></dl>
 
 </div>
 </div>
@@ -522,16 +653,110 @@ template&lt;typename InputType &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aef1341be975536d1ffbfdcecfbfd6ea9" name="aef1341be975536d1ffbfdcecfbfd6ea9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef1341be975536d1ffbfdcecfbfd6ea9">&#9670;&nbsp;</a></span>_check_solve_assertion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _MatrixType &gt; </div>
+<div class="memtemplate">
+template&lt;bool Transpose_, typename Rhs &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">Eigen::CompleteOrthogonalDecomposition</a>&lt; _MatrixType &gt;::_check_solve_assertion </td>
+          <td>(</td>
+          <td class="paramtype">const Rhs &amp;&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6b6db285a30edd61d7ea2690062f4a93" name="a6b6db285a30edd61d7ea2690062f4a93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b6db285a30edd61d7ea2690062f4a93">&#9670;&nbsp;</a></span>_solve_impl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _MatrixType &gt; </div>
+<div class="memtemplate">
+template&lt;typename RhsType , typename DstType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">Eigen::CompleteOrthogonalDecomposition</a>&lt; _MatrixType &gt;::_solve_impl </td>
+          <td>(</td>
+          <td class="paramtype">const RhsType &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DstType &amp;&#160;</td>
+          <td class="paramname"><em>dst</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9e26ab43d0debd6a86e27d47443ffa3e" name="a9e26ab43d0debd6a86e27d47443ffa3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e26ab43d0debd6a86e27d47443ffa3e">&#9670;&nbsp;</a></span>_solve_impl_transposed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _MatrixType &gt; </div>
+<div class="memtemplate">
+template&lt;bool Conjugate, typename RhsType , typename DstType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">Eigen::CompleteOrthogonalDecomposition</a>&lt; _MatrixType &gt;::_solve_impl_transposed </td>
+          <td>(</td>
+          <td class="paramtype">const RhsType &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DstType &amp;&#160;</td>
+          <td class="paramname"><em>dst</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ac040c34ce3fb2b68d3f57adc0c29d526" name="ac040c34ce3fb2b68d3f57adc0c29d526"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac040c34ce3fb2b68d3f57adc0c29d526">&#9670;&nbsp;</a></span>absDeterminant()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename MatrixType &gt; </div>
+template&lt;typename <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a8eba7b5263a0241cb477b3531f5ef609">MatrixType</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">MatrixType::RealScalar <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">Eigen::CompleteOrthogonalDecomposition</a>&lt; MatrixType &gt;::absDeterminant</td>
+          <td class="memname">MatrixType::RealScalar <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">Eigen::CompleteOrthogonalDecomposition</a>&lt; <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a8eba7b5263a0241cb477b3531f5ef609">MatrixType</a> &gt;::absDeterminant</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -539,6 +764,124 @@ template&lt;typename MatrixType &gt; </div>
 <dl class="section note"><dt>Note</dt><dd>This is only for square matrices.</dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>a determinant can be very big or small, so for matrices of large enough dimension, there is a risk of overflow/underflow. One way to work around that is to use <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#ad59d6dc78dab52a0038ac372b4a72c0d">logAbsDeterminant()</a> instead.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#ad59d6dc78dab52a0038ac372b4a72c0d">logAbsDeterminant()</a>, <a class="el" href="class_eigen_1_1_matrix_base.html#add0789a9cbd9bf1cc71048eaa75a1abb" title="\lu_module">MatrixBase::determinant()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a0a89641e0b4ea92c515405f2a31e6abe" name="a0a89641e0b4ea92c515405f2a31e6abe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a89641e0b4ea92c515405f2a31e6abe">&#9670;&nbsp;</a></span>applyZAdjointOnTheLeftInPlace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a8eba7b5263a0241cb477b3531f5ef609">MatrixType</a> &gt; </div>
+<div class="memtemplate">
+template&lt;typename Rhs &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">Eigen::CompleteOrthogonalDecomposition</a>&lt; <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a8eba7b5263a0241cb477b3531f5ef609">MatrixType</a> &gt;::applyZAdjointOnTheLeftInPlace </td>
+          <td>(</td>
+          <td class="paramtype">Rhs &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Overwrites <b>rhs</b> with \( \mathbf{Z}^* * \mathbf{rhs} \). </p>
+
+</div>
+</div>
+<a id="afedd1ee41b8490b70fd1fefdd21f8c80" name="afedd1ee41b8490b70fd1fefdd21f8c80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afedd1ee41b8490b70fd1fefdd21f8c80">&#9670;&nbsp;</a></span>applyZOnTheLeftInPlace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a8eba7b5263a0241cb477b3531f5ef609">MatrixType</a> &gt; </div>
+<div class="memtemplate">
+template&lt;bool Conjugate, typename Rhs &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">Eigen::CompleteOrthogonalDecomposition</a>&lt; <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a8eba7b5263a0241cb477b3531f5ef609">MatrixType</a> &gt;::applyZOnTheLeftInPlace </td>
+          <td>(</td>
+          <td class="paramtype">Rhs &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Overwrites <b>rhs</b> with \( \mathbf{Z} * \mathbf{rhs} \) or \( \mathbf{\overline Z} * \mathbf{rhs} \) if <code><a class="el" href="class_eigen_1_1_conjugate.html">Conjugate</a></code> is set to <code>true</code>. </p>
+
+</div>
+</div>
+<a id="a5e066e98d76f6bb2231f16676d18c877" name="a5e066e98d76f6bb2231f16676d18c877"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e066e98d76f6bb2231f16676d18c877">&#9670;&nbsp;</a></span>check_template_parameters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _MatrixType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">Eigen::CompleteOrthogonalDecomposition</a>&lt; _MatrixType &gt;::check_template_parameters </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a41e9ee4b8bd05c9021fd066169e1d76c" name="a41e9ee4b8bd05c9021fd066169e1d76c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41e9ee4b8bd05c9021fd066169e1d76c">&#9670;&nbsp;</a></span>cols()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _MatrixType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_eigen_1_1_eigen_base.html#a554f30542cc2316add4b1ea0a492ff02">Index</a> <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">Eigen::CompleteOrthogonalDecomposition</a>&lt; _MatrixType &gt;::cols </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -554,7 +897,7 @@ template&lt;typename _MatrixType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="class_eigen_1_1_permutation_matrix.html">PermutationType</a> &amp; <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">Eigen::CompleteOrthogonalDecomposition</a>&lt; _MatrixType &gt;::colsPermutation </td>
+          <td class="memname">const <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#ae60d0d820677d67b73258322bcae0a2d">PermutationType</a> &amp; <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">Eigen::CompleteOrthogonalDecomposition</a>&lt; _MatrixType &gt;::colsPermutation </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -570,19 +913,49 @@ template&lt;typename _MatrixType &gt; </div>
 
 </div>
 </div>
+<a id="a36dcdb91c491eb2a0b2669ea00d2c186" name="a36dcdb91c491eb2a0b2669ea00d2c186"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36dcdb91c491eb2a0b2669ea00d2c186">&#9670;&nbsp;</a></span>compute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _MatrixType &gt; </div>
+<div class="memtemplate">
+template&lt;typename InputType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">CompleteOrthogonalDecomposition</a> &amp; <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">Eigen::CompleteOrthogonalDecomposition</a>&lt; _MatrixType &gt;::compute </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_eigen_1_1_eigen_base.html">EigenBase</a>&lt; InputType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>matrix</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="adb0b963d7d8f96492904e8eda03efbf5" name="adb0b963d7d8f96492904e8eda03efbf5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adb0b963d7d8f96492904e8eda03efbf5">&#9670;&nbsp;</a></span>computeInPlace()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename MatrixType &gt; </div>
+template&lt;typename <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a8eba7b5263a0241cb477b3531f5ef609">MatrixType</a> &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">Eigen::CompleteOrthogonalDecomposition</a>&lt; MatrixType &gt;::computeInPlace</td>
+          <td class="memname">void <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">Eigen::CompleteOrthogonalDecomposition</a>&lt; <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a8eba7b5263a0241cb477b3531f5ef609">MatrixType</a> &gt;::computeInPlace</td>
         </tr>
       </table>
   </td>
@@ -639,7 +1012,7 @@ template&lt;typename _MatrixType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="struct_eigen_1_1internal_1_1true__type.html">HCoeffsType</a> &amp; <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">Eigen::CompleteOrthogonalDecomposition</a>&lt; _MatrixType &gt;::hCoeffs </td>
+          <td class="memname">const <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#aca5b63fffae26e0e1eaa38d63b575038">HCoeffsType</a> &amp; <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">Eigen::CompleteOrthogonalDecomposition</a>&lt; _MatrixType &gt;::hCoeffs </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -662,10 +1035,10 @@ template&lt;typename _MatrixType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename MatrixType &gt; </div>
+template&lt;typename <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a8eba7b5263a0241cb477b3531f5ef609">MatrixType</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">CompleteOrthogonalDecomposition</a>&lt; MatrixType &gt;::<a class="el" href="class_eigen_1_1_householder_sequence.html">HouseholderSequenceType</a> <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">Eigen::CompleteOrthogonalDecomposition</a>&lt; MatrixType &gt;::householderQ </td>
+          <td class="memname"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">CompleteOrthogonalDecomposition</a>&lt; <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a8eba7b5263a0241cb477b3531f5ef609">MatrixType</a> &gt;::<a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a9d4e0e44ac23ad8baf0f91e91b982dec">HouseholderSequenceType</a> <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">Eigen::CompleteOrthogonalDecomposition</a>&lt; <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a8eba7b5263a0241cb477b3531f5ef609">MatrixType</a> &gt;::householderQ </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -801,10 +1174,10 @@ template&lt;typename _MatrixType &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename MatrixType &gt; </div>
+template&lt;typename <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a8eba7b5263a0241cb477b3531f5ef609">MatrixType</a> &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">MatrixType::RealScalar <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">Eigen::CompleteOrthogonalDecomposition</a>&lt; MatrixType &gt;::logAbsDeterminant</td>
+          <td class="memname">MatrixType::RealScalar <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">Eigen::CompleteOrthogonalDecomposition</a>&lt; <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a8eba7b5263a0241cb477b3531f5ef609">MatrixType</a> &gt;::logAbsDeterminant</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -813,6 +1186,34 @@ template&lt;typename MatrixType &gt; </div>
 <dd>
 This method is useful to work around the risk of overflow/underflow that's inherent to determinant computation.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#ac040c34ce3fb2b68d3f57adc0c29d526">absDeterminant()</a>, <a class="el" href="class_eigen_1_1_matrix_base.html#add0789a9cbd9bf1cc71048eaa75a1abb" title="\lu_module">MatrixBase::determinant()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a179e996df71ef165bad8f4bc5d79e24d" name="a179e996df71ef165bad8f4bc5d79e24d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a179e996df71ef165bad8f4bc5d79e24d">&#9670;&nbsp;</a></span>matrixQ()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _MatrixType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a9d4e0e44ac23ad8baf0f91e91b982dec">HouseholderSequenceType</a> <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">Eigen::CompleteOrthogonalDecomposition</a>&lt; _MatrixType &gt;::matrixQ </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -828,7 +1229,7 @@ template&lt;typename _MatrixType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const MatrixType &amp; <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">Eigen::CompleteOrthogonalDecomposition</a>&lt; _MatrixType &gt;::matrixQTZ </td>
+          <td class="memname">const <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a8eba7b5263a0241cb477b3531f5ef609">MatrixType</a> &amp; <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">Eigen::CompleteOrthogonalDecomposition</a>&lt; _MatrixType &gt;::matrixQTZ </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -856,7 +1257,7 @@ template&lt;typename _MatrixType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const MatrixType &amp; <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">Eigen::CompleteOrthogonalDecomposition</a>&lt; _MatrixType &gt;::matrixT </td>
+          <td class="memname">const <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a8eba7b5263a0241cb477b3531f5ef609">MatrixType</a> &amp; <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">Eigen::CompleteOrthogonalDecomposition</a>&lt; _MatrixType &gt;::matrixT </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -869,7 +1270,8 @@ template&lt;typename _MatrixType &gt; </div>
 </table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>a reference to the matrix where the complete orthogonal decomposition is stored. </dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd>The strict lower part and <div class="fragment"><div class="line">cols() - <a class="code hl_function" href="class_eigen_1_1_complete_orthogonal_decomposition.html#af348f64b26f8467a020062c22b748806">rank</a>() </div>
+<dl class="section warning"><dt>Warning</dt><dd>The strict lower part and <div class="fragment"><div class="line"><a class="code hl_function" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a41e9ee4b8bd05c9021fd066169e1d76c">cols</a>() - <a class="code hl_function" href="class_eigen_1_1_complete_orthogonal_decomposition.html#af348f64b26f8467a020062c22b748806">rank</a>() </div>
+<div class="ttc" id="aclass_eigen_1_1_complete_orthogonal_decomposition_html_a41e9ee4b8bd05c9021fd066169e1d76c"><div class="ttname"><a href="class_eigen_1_1_complete_orthogonal_decomposition.html#a41e9ee4b8bd05c9021fd066169e1d76c">Eigen::CompleteOrthogonalDecomposition::cols</a></div><div class="ttdeci">Index cols() const</div><div class="ttdef"><b>Definition:</b> CompleteOrthogonalDecomposition.h:285</div></div>
 <div class="ttc" id="aclass_eigen_1_1_complete_orthogonal_decomposition_html_af348f64b26f8467a020062c22b748806"><div class="ttname"><a href="class_eigen_1_1_complete_orthogonal_decomposition.html#af348f64b26f8467a020062c22b748806">Eigen::CompleteOrthogonalDecomposition::rank</a></div><div class="ttdeci">Index rank() const</div><div class="ttdef"><b>Definition:</b> CompleteOrthogonalDecomposition.h:235</div></div>
 </div><!-- fragment --> right columns of this matrix contains internal values. Only the upper triangular part should be referenced. To get it, use <div class="fragment"><div class="line"><a class="code hl_function" href="class_eigen_1_1_complete_orthogonal_decomposition.html#abe168bb2ae3352ee069ef7caf9b70438">matrixT</a>().template triangularView&lt;Upper&gt;() </div>
 <div class="ttc" id="aclass_eigen_1_1_complete_orthogonal_decomposition_html_abe168bb2ae3352ee069ef7caf9b70438"><div class="ttname"><a href="class_eigen_1_1_complete_orthogonal_decomposition.html#abe168bb2ae3352ee069ef7caf9b70438">Eigen::CompleteOrthogonalDecomposition::matrixT</a></div><div class="ttdeci">const MatrixType &amp; matrixT() const</div><div class="ttdef"><b>Definition:</b> CompleteOrthogonalDecomposition.h:183</div></div>
@@ -890,7 +1292,7 @@ template&lt;typename _MatrixType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">MatrixType <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">Eigen::CompleteOrthogonalDecomposition</a>&lt; _MatrixType &gt;::matrixZ </td>
+          <td class="memname"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a8eba7b5263a0241cb477b3531f5ef609">MatrixType</a> <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">Eigen::CompleteOrthogonalDecomposition</a>&lt; _MatrixType &gt;::matrixZ </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1021,6 +1423,33 @@ template&lt;typename _MatrixType &gt; </div>
 
 </div>
 </div>
+<a id="ae49c60b9b4d7f74dc79a94bf20a14142" name="ae49c60b9b4d7f74dc79a94bf20a14142"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae49c60b9b4d7f74dc79a94bf20a14142">&#9670;&nbsp;</a></span>rows()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _MatrixType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_eigen_1_1_eigen_base.html#a554f30542cc2316add4b1ea0a492ff02">Index</a> <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">Eigen::CompleteOrthogonalDecomposition</a>&lt; _MatrixType &gt;::rows </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ad60b1167378ca456fbc80687b6da081e" name="ad60b1167378ca456fbc80687b6da081e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad60b1167378ca456fbc80687b6da081e">&#9670;&nbsp;</a></span>setThreshold() <span class="overload">[1/2]</span></h2>
 
@@ -1048,7 +1477,7 @@ template&lt;typename _MatrixType &gt; </div>
 </div><div class="memdoc">
 
 <p>Allows to prescribe a threshold to be used by certain methods, such as <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#af348f64b26f8467a020062c22b748806">rank()</a>, who need to determine when pivots are to be considered nonzero. </p>
-<p >Most be called before calling compute().</p>
+<p >Most be called before calling <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a36dcdb91c491eb2a0b2669ea00d2c186">compute()</a>.</p>
 <p >When it needs to get the threshold value, <a class="el" href="namespace_eigen.html" title="Namespace containing all symbols from the Eigen library.">Eigen</a> calls <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a3909f07268496c0f08f1b57331d91075" title="Returns the threshold that will be used by certain methods such as rank().">threshold()</a>. By default, this uses a formula to automatically determine a reasonable threshold. Once you have called the present method <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#ad60b1167378ca456fbc80687b6da081e" title="Allows to prescribe a threshold to be used by certain methods, such as rank(), who need to determine ...">setThreshold(const RealScalar&amp;)</a>, your value is used instead.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1075,7 +1504,7 @@ template&lt;typename _MatrixType &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">CompleteOrthogonalDecomposition</a> &amp; <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">Eigen::CompleteOrthogonalDecomposition</a>&lt; _MatrixType &gt;::setThreshold </td>
           <td>(</td>
-          <td class="paramtype">Default_t&#160;</td>
+          <td class="paramtype"><a class="el" href="namespace_eigen.html#a644c9489710c76e32bd3a9b15d83ca43">Default_t</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -1088,7 +1517,7 @@ template&lt;typename _MatrixType &gt; </div>
 </div><div class="memdoc">
 
 <p>Allows to come back to the default behavior, letting <a class="el" href="namespace_eigen.html" title="Namespace containing all symbols from the Eigen library.">Eigen</a> use its default formula for determining the threshold. </p>
-<p >You should pass the special object Eigen::Default as parameter here. </p><div class="fragment"><div class="line">qr.setThreshold(Eigen::Default); </div>
+<p >You should pass the special object <a class="el" href="namespace_eigen.html#a644c9489710c76e32bd3a9b15d83ca43af9d7e49f0799ab145f0a4f6ea7e82b95">Eigen::Default</a> as parameter here. </p><div class="fragment"><div class="line">qr.setThreshold(<a class="code hl_enumvalue" href="namespace_eigen.html#a644c9489710c76e32bd3a9b15d83ca43af9d7e49f0799ab145f0a4f6ea7e82b95">Eigen::Default</a>); </div>
 </div><!-- fragment --><p >See the documentation of <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#ad60b1167378ca456fbc80687b6da081e" title="Allows to prescribe a threshold to be used by certain methods, such as rank(), who need to determine ...">setThreshold(const RealScalar&amp;)</a>. </p>
 
 </div>
@@ -1135,7 +1564,7 @@ template&lt;typename _MatrixType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="struct_eigen_1_1internal_1_1true__type.html">HCoeffsType</a> &amp; <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">Eigen::CompleteOrthogonalDecomposition</a>&lt; _MatrixType &gt;::zCoeffs </td>
+          <td class="memname">const <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#aca5b63fffae26e0e1eaa38d63b575038">HCoeffsType</a> &amp; <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">Eigen::CompleteOrthogonalDecomposition</a>&lt; _MatrixType &gt;::zCoeffs </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1152,6 +1581,106 @@ template&lt;typename _MatrixType &gt; </div>
 
 </div>
 </div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="aa074c5ef6323eb648d501dd6beb67d2b" name="aa074c5ef6323eb648d501dd6beb67d2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa074c5ef6323eb648d501dd6beb67d2b">&#9670;&nbsp;</a></span>internal::solve_assertion</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _MatrixType &gt; </div>
+<div class="memtemplate">
+template&lt;typename Derived &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend struct <a class="el" href="struct_eigen_1_1internal_1_1solve__assertion.html">internal::solve_assertion</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a7e53f3ce1fc2d8244a64c18855ab2641" name="a7e53f3ce1fc2d8244a64c18855ab2641"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e53f3ce1fc2d8244a64c18855ab2641">&#9670;&nbsp;</a></span>m_cpqr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _MatrixType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_eigen_1_1_col_piv_householder_q_r.html">ColPivHouseholderQR</a>&lt;<a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a8eba7b5263a0241cb477b3531f5ef609">MatrixType</a>&gt; <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">Eigen::CompleteOrthogonalDecomposition</a>&lt; _MatrixType &gt;::m_cpqr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a953bdfff5e3e3bdeeb3263b83eef4475" name="a953bdfff5e3e3bdeeb3263b83eef4475"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a953bdfff5e3e3bdeeb3263b83eef4475">&#9670;&nbsp;</a></span>m_temp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _MatrixType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#a7034cb4035db5e3d7c538c27c3d15212">RowVectorType</a> <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">Eigen::CompleteOrthogonalDecomposition</a>&lt; _MatrixType &gt;::m_temp</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a84daf778398c92d7c0856564069897b4" name="a84daf778398c92d7c0856564069897b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84daf778398c92d7c0856564069897b4">&#9670;&nbsp;</a></span>m_zCoeffs</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _MatrixType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html#aca5b63fffae26e0e1eaa38d63b575038">HCoeffsType</a> <a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">Eigen::CompleteOrthogonalDecomposition</a>&lt; _MatrixType &gt;::m_zCoeffs</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/eigeninclude/Eigen/src/QR/<a class="el" href="_complete_orthogonal_decomposition_8h_source.html">CompleteOrthogonalDecomposition.h</a></li>
 </ul>
@@ -1161,7 +1690,7 @@ template&lt;typename _MatrixType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_eigen.html">Eigen</a></li><li class="navelem"><a class="el" href="class_eigen_1_1_complete_orthogonal_decomposition.html">CompleteOrthogonalDecomposition</a></li>
-    <li class="footer">Generated on Fri Oct 29 2021 07:12:24 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Oct 29 2021 22:10:02 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

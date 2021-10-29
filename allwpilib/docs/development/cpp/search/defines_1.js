@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['mpack_5famalgamated_0',['MPACK_AMALGAMATED',['../mpack_8h.html#a0bedafb777bdc6adbb33c01141e4c2c7',1,'mpack.h']]]
+  ['bf16_5fpacket_5ffunction_0',['BF16_PACKET_FUNCTION',['../_b_float16_8h.html#ad923620544f9ce521ef582e6b4e88f77',1,'BFloat16.h']]]
 ];

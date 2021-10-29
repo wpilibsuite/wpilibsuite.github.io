@@ -1,4 +1,12 @@
 var struct_eigen_1_1internal_1_1ternary__evaluator_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_daf42d21bcfee99cfa54e03ffa9506fc =
 [
-    [ "Data", "struct_eigen_1_1internal_1_1ternary__evaluator_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_8eba744208381e51778bcc517b7240fe.html", null ]
+    [ "Data", "struct_eigen_1_1internal_1_1ternary__evaluator_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_8eba744208381e51778bcc517b7240fe.html", "struct_eigen_1_1internal_1_1ternary__evaluator_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_8eba744208381e51778bcc517b7240fe" ],
+    [ "CoeffReturnType", "struct_eigen_1_1internal_1_1ternary__evaluator_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_daf42d21bcfee99cfa54e03ffa9506fc.html#a73724cae680d9ce3cdbe1dd4427274e6", null ],
+    [ "XprType", "struct_eigen_1_1internal_1_1ternary__evaluator_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_daf42d21bcfee99cfa54e03ffa9506fc.html#a0caf670eb51af4cb632e03e3b7a910f9", null ],
+    [ "ternary_evaluator", "struct_eigen_1_1internal_1_1ternary__evaluator_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_daf42d21bcfee99cfa54e03ffa9506fc.html#acb941aa37cc621f7b42688de3d8d4e1a", null ],
+    [ "coeff", "struct_eigen_1_1internal_1_1ternary__evaluator_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_daf42d21bcfee99cfa54e03ffa9506fc.html#a7ec7e52d6ed5e486486635ad5a6d225c", null ],
+    [ "coeff", "struct_eigen_1_1internal_1_1ternary__evaluator_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_daf42d21bcfee99cfa54e03ffa9506fc.html#ae175d06ff8ac72ab3d03fd2299658bd9", null ],
+    [ "packet", "struct_eigen_1_1internal_1_1ternary__evaluator_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_daf42d21bcfee99cfa54e03ffa9506fc.html#a201e2597c52d6d1f569cd4e84e31a072", null ],
+    [ "packet", "struct_eigen_1_1internal_1_1ternary__evaluator_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_daf42d21bcfee99cfa54e03ffa9506fc.html#a38c0c9565d1cfb1c66329ccd12ea3b77", null ],
+    [ "m_d", "struct_eigen_1_1internal_1_1ternary__evaluator_3_01_cwise_ternary_op_3_01_ternary_op_00_01_arg1_daf42d21bcfee99cfa54e03ffa9506fc.html#ac6d3ac67d186c304d9f64515dbe6cfcb", null ]
 ];

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-31-ga939cd9</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-32-g2cb171f</span>
    </div>
   </td>
  </tr>
@@ -112,9 +112,10 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:abc13b1161ac63b07b5e496ec67acbf82"><td class="memItemLeft" align="right" valign="top"><a id="abc13b1161ac63b07b5e496ec67acbf82" name="abc13b1161ac63b07b5e496ec67acbf82"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Trajectory</b> (const std::vector&lt; <a class="el" href="structfrc_1_1_trajectory_1_1_state.html">State</a> &gt; &amp;states)</td></tr>
-<tr class="memdesc:abc13b1161ac63b07b5e496ec67acbf82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a trajectory from a vector of states. <br /></td></tr>
+<tr class="memitem:aa252fefe54b7a988ba429eae605d2457"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_trajectory.html#aa252fefe54b7a988ba429eae605d2457">Trajectory</a> ()=default</td></tr>
+<tr class="separator:aa252fefe54b7a988ba429eae605d2457"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc13b1161ac63b07b5e496ec67acbf82"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_trajectory.html#abc13b1161ac63b07b5e496ec67acbf82">Trajectory</a> (const std::vector&lt; <a class="el" href="structfrc_1_1_trajectory_1_1_state.html">State</a> &gt; &amp;states)</td></tr>
+<tr class="memdesc:abc13b1161ac63b07b5e496ec67acbf82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a trajectory from a vector of states.  <a href="classfrc_1_1_trajectory.html#abc13b1161ac63b07b5e496ec67acbf82">More...</a><br /></td></tr>
 <tr class="separator:abc13b1161ac63b07b5e496ec67acbf82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b9e02ec02ce417cb1833b3f1640d4e3"><td class="memItemLeft" align="right" valign="top">units::second_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_trajectory.html#a6b9e02ec02ce417cb1833b3f1640d4e3">TotalTime</a> () const</td></tr>
 <tr class="memdesc:a6b9e02ec02ce417cb1833b3f1640d4e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the overall duration of the trajectory.  <a href="classfrc_1_1_trajectory.html#a6b9e02ec02ce417cb1833b3f1640d4e3">More...</a><br /></td></tr>
@@ -147,7 +148,61 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Represents a time-parameterized trajectory. </p>
 <p >The trajectory contains of various States that represent the pose, curvature, time elapsed, velocity, and acceleration at that point. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aa252fefe54b7a988ba429eae605d2457" name="aa252fefe54b7a988ba429eae605d2457"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa252fefe54b7a988ba429eae605d2457">&#9670;&nbsp;</a></span>Trajectory() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">frc::Trajectory::Trajectory </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abc13b1161ac63b07b5e496ec67acbf82" name="abc13b1161ac63b07b5e496ec67acbf82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc13b1161ac63b07b5e496ec67acbf82">&#9670;&nbsp;</a></span>Trajectory() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">frc::Trajectory::Trajectory </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="structfrc_1_1_trajectory_1_1_state.html">State</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>states</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a trajectory from a vector of states. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="af317c5d052e653165ef4567d038b6517" name="af317c5d052e653165ef4567d038b6517"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af317c5d052e653165ef4567d038b6517">&#9670;&nbsp;</a></span>InitialPose()</h2>
 
@@ -183,7 +238,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool frc::Trajectory::operator!= </td>
+          <td class="memname">bool <a class="el" href="_array_cwise_unary_ops_8h.html#aa198852a6b380257ea3e34c8f7e6e250">frc::Trajectory::operator!</a>= </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classfrc_1_1_trajectory.html">Trajectory</a> &amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
@@ -405,8 +460,8 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1_trajectory.html">Trajectory</a></li>
-    <li class="footer">Generated on Fri Oct 29 2021 07:12:29 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_trajectory.html">Trajectory</a></li>
+    <li class="footer">Generated on Fri Oct 29 2021 22:10:08 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

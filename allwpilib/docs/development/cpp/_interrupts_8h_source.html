@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-31-ga939cd9</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-32-g2cb171f</span>
    </div>
   </td>
  </tr>
@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('_interrupts_8h_source.html',''); initR
   <div class="headertitle"><div class="title">Interrupts.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
+<a href="_interrupts_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Open Source Software; you can modify and/or share it under the terms of</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// the WPILib BSD license file in the root directory of this project.</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
@@ -102,8 +102,8 @@ $(document).ready(function(){initNavTree('_interrupts_8h_source.html',''); initR
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;hal/AnalogTrigger.h&quot;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;hal/Types.h&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="hal_2src_2main_2native_2include_2hal_2_analog_trigger_8h.html">hal/AnalogTrigger.h</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="_types_8h.html">hal/Types.h</a>&quot;</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"></span> </div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">/**</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> * @defgroup hal_interrupts Interrupts Functions</span></div>
@@ -121,14 +121,14 @@ $(document).ready(function(){initNavTree('_interrupts_8h_source.html',''); initR
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment"> * @param[out] status Error status variable. 0 on success.</span></div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment"> * @return the created interrupt handle</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="group__hal__interrupts.html#gab85a7a97fabeb4b1af9abe6292f83170">   28</a></span>HAL_InterruptHandle <a class="code hl_function" href="group__hal__interrupts.html#gab85a7a97fabeb4b1af9abe6292f83170">HAL_InitializeInterrupts</a>(int32_t* status);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="group__hal__interrupts.html#gab85a7a97fabeb4b1af9abe6292f83170">   28</a></span><a class="code hl_typedef" href="group__hal__types.html#gad56eeacbd7408c10e6dcaa84c774a319">HAL_InterruptHandle</a> <a class="code hl_function" href="group__hal__interrupts.html#gab85a7a97fabeb4b1af9abe6292f83170">HAL_InitializeInterrupts</a>(<a class="code hl_variable" href="namespace_eigen_1_1numext.html#ae4642fe9b8f3d42e634712b1d5e2fffe">int32_t</a>* <a class="code hl_function" href="namespaceghc_1_1filesystem.html#a00bcaee548f274868a8b45b7c8547bae">status</a>);</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment"></span> </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">/**</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment"> * Frees an interrupt.</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment"> * @param interruptHandle the interrupt handle</span></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="group__hal__interrupts.html#ga7a03ed9b7bbb6eb87a74434595147f65">   35</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group__hal__interrupts.html#ga7a03ed9b7bbb6eb87a74434595147f65">HAL_CleanInterrupts</a>(HAL_InterruptHandle interruptHandle);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="group__hal__interrupts.html#ga7a03ed9b7bbb6eb87a74434595147f65">   35</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group__hal__interrupts.html#ga7a03ed9b7bbb6eb87a74434595147f65">HAL_CleanInterrupts</a>(<a class="code hl_typedef" href="group__hal__types.html#gad56eeacbd7408c10e6dcaa84c774a319">HAL_InterruptHandle</a> interruptHandle);</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment"></span> </div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">/**</span></div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment"> * In synchronous mode, waits for the defined interrupt to occur.</span></div>
@@ -140,9 +140,9 @@ $(document).ready(function(){initNavTree('_interrupts_8h_source.html',''); initR
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment"> * @param[out] status         Error status variable. 0 on success.</span></div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment"> * @return the mask of interrupts that fired</span></div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="group__hal__interrupts.html#ga9bd2cfe22ac6a8cf7cdc1dc163728e1d">   47</a></span>int64_t <a class="code hl_function" href="group__hal__interrupts.html#ga9bd2cfe22ac6a8cf7cdc1dc163728e1d">HAL_WaitForInterrupt</a>(HAL_InterruptHandle interruptHandle,</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                             <span class="keywordtype">double</span> timeout, HAL_Bool ignorePrevious,</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                             int32_t* status);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="group__hal__interrupts.html#ga9bd2cfe22ac6a8cf7cdc1dc163728e1d">   47</a></span><a class="code hl_variable" href="namespace_eigen_1_1numext.html#a26035668345422b5f30be2124b0b6f6e">int64_t</a> <a class="code hl_function" href="group__hal__interrupts.html#ga9bd2cfe22ac6a8cf7cdc1dc163728e1d">HAL_WaitForInterrupt</a>(<a class="code hl_typedef" href="group__hal__types.html#gad56eeacbd7408c10e6dcaa84c774a319">HAL_InterruptHandle</a> interruptHandle,</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                             <span class="keywordtype">double</span> timeout, <a class="code hl_typedef" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a> ignorePrevious,</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                             <a class="code hl_variable" href="namespace_eigen_1_1numext.html#ae4642fe9b8f3d42e634712b1d5e2fffe">int32_t</a>* <a class="code hl_function" href="namespaceghc_1_1filesystem.html#a00bcaee548f274868a8b45b7c8547bae">status</a>);</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment"></span> </div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">/**</span></div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment"> * Returns the timestamp for the rising interrupt that occurred most recently.</span></div>
@@ -155,8 +155,8 @@ $(document).ready(function(){initNavTree('_interrupts_8h_source.html',''); initR
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment"> * @param[out] status         Error status variable. 0 on success.</span></div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment"> * @return timestamp in microseconds since FPGA Initialization</span></div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="group__hal__interrupts.html#gabcd95895a76e956a3b19e0d72b46ea9f">   62</a></span>int64_t <a class="code hl_function" href="group__hal__interrupts.html#gabcd95895a76e956a3b19e0d72b46ea9f">HAL_ReadInterruptRisingTimestamp</a>(HAL_InterruptHandle interruptHandle,</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                                         int32_t* status);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="group__hal__interrupts.html#gabcd95895a76e956a3b19e0d72b46ea9f">   62</a></span><a class="code hl_variable" href="namespace_eigen_1_1numext.html#a26035668345422b5f30be2124b0b6f6e">int64_t</a> <a class="code hl_function" href="group__hal__interrupts.html#gabcd95895a76e956a3b19e0d72b46ea9f">HAL_ReadInterruptRisingTimestamp</a>(<a class="code hl_typedef" href="group__hal__types.html#gad56eeacbd7408c10e6dcaa84c774a319">HAL_InterruptHandle</a> interruptHandle,</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                                         <a class="code hl_variable" href="namespace_eigen_1_1numext.html#ae4642fe9b8f3d42e634712b1d5e2fffe">int32_t</a>* <a class="code hl_function" href="namespaceghc_1_1filesystem.html#a00bcaee548f274868a8b45b7c8547bae">status</a>);</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment"></span> </div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">/**</span></div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment"> * Returns the timestamp for the falling interrupt that occurred most recently.</span></div>
@@ -169,8 +169,8 @@ $(document).ready(function(){initNavTree('_interrupts_8h_source.html',''); initR
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment"> * @param[out] status         Error status variable. 0 on success.</span></div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment"> * @return timestamp in microseconds since FPGA Initialization</span></div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="group__hal__interrupts.html#ga35f98945b469afacbfcec081b98a1a1a">   76</a></span>int64_t <a class="code hl_function" href="group__hal__interrupts.html#ga35f98945b469afacbfcec081b98a1a1a">HAL_ReadInterruptFallingTimestamp</a>(HAL_InterruptHandle interruptHandle,</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                                          int32_t* status);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="group__hal__interrupts.html#ga35f98945b469afacbfcec081b98a1a1a">   76</a></span><a class="code hl_variable" href="namespace_eigen_1_1numext.html#a26035668345422b5f30be2124b0b6f6e">int64_t</a> <a class="code hl_function" href="group__hal__interrupts.html#ga35f98945b469afacbfcec081b98a1a1a">HAL_ReadInterruptFallingTimestamp</a>(<a class="code hl_typedef" href="group__hal__types.html#gad56eeacbd7408c10e6dcaa84c774a319">HAL_InterruptHandle</a> interruptHandle,</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                                          <a class="code hl_variable" href="namespace_eigen_1_1numext.html#ae4642fe9b8f3d42e634712b1d5e2fffe">int32_t</a>* <a class="code hl_function" href="namespaceghc_1_1filesystem.html#a00bcaee548f274868a8b45b7c8547bae">status</a>);</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment"></span> </div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">/**</span></div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment"> * Requests interrupts on a specific digital source.</span></div>
@@ -183,10 +183,10 @@ $(document).ready(function(){initNavTree('_interrupts_8h_source.html',''); initR
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment"> *                                AnalogTrigger</span></div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="comment"> * @param[out] status             Error status variable. 0 on success.</span></div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="group__hal__interrupts.html#ga42d553aed65587375963d441cb48d6e0">   90</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group__hal__interrupts.html#ga42d553aed65587375963d441cb48d6e0">HAL_RequestInterrupts</a>(HAL_InterruptHandle interruptHandle,</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                           HAL_Handle digitalSourceHandle,</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="group__hal__interrupts.html#ga42d553aed65587375963d441cb48d6e0">   90</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group__hal__interrupts.html#ga42d553aed65587375963d441cb48d6e0">HAL_RequestInterrupts</a>(<a class="code hl_typedef" href="group__hal__types.html#gad56eeacbd7408c10e6dcaa84c774a319">HAL_InterruptHandle</a> interruptHandle,</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                           <a class="code hl_typedef" href="group__hal__types.html#ga5d211f92ccd43d4a51d8212b29536ccd">HAL_Handle</a> digitalSourceHandle,</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                           HAL_AnalogTriggerType analogTriggerType,</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                           int32_t* status);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                           <a class="code hl_variable" href="namespace_eigen_1_1numext.html#ae4642fe9b8f3d42e634712b1d5e2fffe">int32_t</a>* <a class="code hl_function" href="namespaceghc_1_1filesystem.html#a00bcaee548f274868a8b45b7c8547bae">status</a>);</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment"></span> </div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment">/**</span></div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment"> * Sets the edges to trigger the interrupt on.</span></div>
@@ -198,9 +198,9 @@ $(document).ready(function(){initNavTree('_interrupts_8h_source.html',''); initR
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="comment"> * @param[in] fallingEdge     true for triggering on falling edge</span></div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment"> * @param[out] status         Error status variable. 0 on success.</span></div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="group__hal__interrupts.html#ga96e6618288cfac532a31049cda0d48c0">  105</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group__hal__interrupts.html#ga96e6618288cfac532a31049cda0d48c0">HAL_SetInterruptUpSourceEdge</a>(HAL_InterruptHandle interruptHandle,</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                                  HAL_Bool risingEdge, HAL_Bool fallingEdge,</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                                  int32_t* status);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="group__hal__interrupts.html#ga96e6618288cfac532a31049cda0d48c0">  105</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group__hal__interrupts.html#ga96e6618288cfac532a31049cda0d48c0">HAL_SetInterruptUpSourceEdge</a>(<a class="code hl_typedef" href="group__hal__types.html#gad56eeacbd7408c10e6dcaa84c774a319">HAL_InterruptHandle</a> interruptHandle,</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                                  <a class="code hl_typedef" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a> risingEdge, <a class="code hl_typedef" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a> fallingEdge,</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                                  <a class="code hl_variable" href="namespace_eigen_1_1numext.html#ae4642fe9b8f3d42e634712b1d5e2fffe">int32_t</a>* <a class="code hl_function" href="namespaceghc_1_1filesystem.html#a00bcaee548f274868a8b45b7c8547bae">status</a>);</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="comment"></span> </div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="comment">/**</span></div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment"> * Releases a waiting interrupt.</span></div>
@@ -210,12 +210,13 @@ $(document).ready(function(){initNavTree('_interrupts_8h_source.html',''); initR
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="comment"> * @param[in] interruptHandle the interrupt handle to release</span></div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="comment"> * @param[out] status         Error status variable. 0 on success.</span></div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="group__hal__interrupts.html#ga67f157be25831233951cb239c837d098">  117</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group__hal__interrupts.html#ga67f157be25831233951cb239c837d098">HAL_ReleaseWaitingInterrupt</a>(HAL_InterruptHandle interruptHandle,</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>                                 int32_t* status);</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="group__hal__interrupts.html#ga67f157be25831233951cb239c837d098">  117</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="group__hal__interrupts.html#ga67f157be25831233951cb239c837d098">HAL_ReleaseWaitingInterrupt</a>(<a class="code hl_typedef" href="group__hal__types.html#gad56eeacbd7408c10e6dcaa84c774a319">HAL_InterruptHandle</a> interruptHandle,</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>                                 <a class="code hl_variable" href="namespace_eigen_1_1numext.html#ae4642fe9b8f3d42e634712b1d5e2fffe">int32_t</a>* <a class="code hl_function" href="namespaceghc_1_1filesystem.html#a00bcaee548f274868a8b45b7c8547bae">status</a>);</div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="preprocessor">#ifdef __cplusplus</span></div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>}  <span class="comment">// extern &quot;C&quot;</span></div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="preprocessor">#endif</span><span class="comment"></span></div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="comment">/** @} */</span></div>
+<div class="ttc" id="a_types_8h_html"><div class="ttname"><a href="_types_8h.html">Types.h</a></div></div>
 <div class="ttc" id="agroup__hal__interrupts_html_ga35f98945b469afacbfcec081b98a1a1a"><div class="ttname"><a href="group__hal__interrupts.html#ga35f98945b469afacbfcec081b98a1a1a">HAL_ReadInterruptFallingTimestamp</a></div><div class="ttdeci">int64_t HAL_ReadInterruptFallingTimestamp(HAL_InterruptHandle interruptHandle, int32_t *status)</div><div class="ttdoc">Returns the timestamp for the falling interrupt that occurred most recently.</div></div>
 <div class="ttc" id="agroup__hal__interrupts_html_ga42d553aed65587375963d441cb48d6e0"><div class="ttname"><a href="group__hal__interrupts.html#ga42d553aed65587375963d441cb48d6e0">HAL_RequestInterrupts</a></div><div class="ttdeci">void HAL_RequestInterrupts(HAL_InterruptHandle interruptHandle, HAL_Handle digitalSourceHandle, HAL_AnalogTriggerType analogTriggerType, int32_t *status)</div><div class="ttdoc">Requests interrupts on a specific digital source.</div></div>
 <div class="ttc" id="agroup__hal__interrupts_html_ga67f157be25831233951cb239c837d098"><div class="ttname"><a href="group__hal__interrupts.html#ga67f157be25831233951cb239c837d098">HAL_ReleaseWaitingInterrupt</a></div><div class="ttdeci">void HAL_ReleaseWaitingInterrupt(HAL_InterruptHandle interruptHandle, int32_t *status)</div><div class="ttdoc">Releases a waiting interrupt.</div></div>
@@ -224,13 +225,20 @@ $(document).ready(function(){initNavTree('_interrupts_8h_source.html',''); initR
 <div class="ttc" id="agroup__hal__interrupts_html_ga9bd2cfe22ac6a8cf7cdc1dc163728e1d"><div class="ttname"><a href="group__hal__interrupts.html#ga9bd2cfe22ac6a8cf7cdc1dc163728e1d">HAL_WaitForInterrupt</a></div><div class="ttdeci">int64_t HAL_WaitForInterrupt(HAL_InterruptHandle interruptHandle, double timeout, HAL_Bool ignorePrevious, int32_t *status)</div><div class="ttdoc">In synchronous mode, waits for the defined interrupt to occur.</div></div>
 <div class="ttc" id="agroup__hal__interrupts_html_gab85a7a97fabeb4b1af9abe6292f83170"><div class="ttname"><a href="group__hal__interrupts.html#gab85a7a97fabeb4b1af9abe6292f83170">HAL_InitializeInterrupts</a></div><div class="ttdeci">HAL_InterruptHandle HAL_InitializeInterrupts(int32_t *status)</div><div class="ttdoc">Initializes an interrupt.</div></div>
 <div class="ttc" id="agroup__hal__interrupts_html_gabcd95895a76e956a3b19e0d72b46ea9f"><div class="ttname"><a href="group__hal__interrupts.html#gabcd95895a76e956a3b19e0d72b46ea9f">HAL_ReadInterruptRisingTimestamp</a></div><div class="ttdeci">int64_t HAL_ReadInterruptRisingTimestamp(HAL_InterruptHandle interruptHandle, int32_t *status)</div><div class="ttdoc">Returns the timestamp for the rising interrupt that occurred most recently.</div></div>
+<div class="ttc" id="agroup__hal__types_html_ga54a394e45c7b01a0400f147cf3434e8c"><div class="ttname"><a href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a></div><div class="ttdeci">int32_t HAL_Bool</div><div class="ttdef"><b>Definition:</b> Types.h:73</div></div>
+<div class="ttc" id="agroup__hal__types_html_ga5d211f92ccd43d4a51d8212b29536ccd"><div class="ttname"><a href="group__hal__types.html#ga5d211f92ccd43d4a51d8212b29536ccd">HAL_Handle</a></div><div class="ttdeci">int32_t HAL_Handle</div><div class="ttdef"><b>Definition:</b> Types.h:17</div></div>
+<div class="ttc" id="agroup__hal__types_html_gad56eeacbd7408c10e6dcaa84c774a319"><div class="ttname"><a href="group__hal__types.html#gad56eeacbd7408c10e6dcaa84c774a319">HAL_InterruptHandle</a></div><div class="ttdeci">HAL_Handle HAL_InterruptHandle</div><div class="ttdef"><b>Definition:</b> Types.h:41</div></div>
+<div class="ttc" id="ahal_2src_2main_2native_2include_2hal_2_analog_trigger_8h_html"><div class="ttname"><a href="hal_2src_2main_2native_2include_2hal_2_analog_trigger_8h.html">AnalogTrigger.h</a></div></div>
+<div class="ttc" id="anamespace_eigen_1_1numext_html_a26035668345422b5f30be2124b0b6f6e"><div class="ttname"><a href="namespace_eigen_1_1numext.html#a26035668345422b5f30be2124b0b6f6e">Eigen::numext::int64_t</a></div><div class="ttdeci">typedef::int64_t int64_t</div><div class="ttdef"><b>Definition:</b> Meta.h:59</div></div>
+<div class="ttc" id="anamespace_eigen_1_1numext_html_ae4642fe9b8f3d42e634712b1d5e2fffe"><div class="ttname"><a href="namespace_eigen_1_1numext.html#ae4642fe9b8f3d42e634712b1d5e2fffe">Eigen::numext::int32_t</a></div><div class="ttdeci">typedef::int32_t int32_t</div><div class="ttdef"><b>Definition:</b> Meta.h:57</div></div>
+<div class="ttc" id="anamespaceghc_1_1filesystem_html_a00bcaee548f274868a8b45b7c8547bae"><div class="ttname"><a href="namespaceghc_1_1filesystem.html#a00bcaee548f274868a8b45b7c8547bae">ghc::filesystem::status</a></div><div class="ttdeci">GHC_FS_API file_status status(const path &amp;p, std::error_code &amp;ec) noexcept</div><div class="ttdef"><b>Definition:</b> filesystem.hpp:4892</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_7dfa5b6b9262a4050979ee23e0eb392d.html">hal</a></li><li class="navelem"><b>Interrupts.h</b></li>
-    <li class="footer">Generated on Fri Oct 29 2021 07:12:13 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="dir_7dfa5b6b9262a4050979ee23e0eb392d.html">hal</a></li><li class="navelem"><a class="el" href="_interrupts_8h.html">Interrupts.h</a></li>
+    <li class="footer">Generated on Fri Oct 29 2021 22:09:50 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -13,7 +13,9 @@ var group__enums =
       [ "Eigen::Aligned32", "group__enums.html#gga45fe06e29902b7a2773de05ba27b47a1a8a380b1cd0c3e5a6cceac06f8235157a", null ],
       [ "Eigen::Aligned64", "group__enums.html#gga45fe06e29902b7a2773de05ba27b47a1a2639cfa1e8faac751556bc0009fe95a4", null ],
       [ "Eigen::Aligned128", "group__enums.html#gga45fe06e29902b7a2773de05ba27b47a1a60057da2408e499b5656244d0b26cc20", null ],
-      [ "Eigen::Aligned", "group__enums.html#gga45fe06e29902b7a2773de05ba27b47a1ae12d0f8f869c40c76128260af2242bc8", null ]
+      [ "Eigen::AlignedMask", "group__enums.html#gga45fe06e29902b7a2773de05ba27b47a1a47779b66e706c87e0850af31224ae9f6", null ],
+      [ "Eigen::Aligned", "group__enums.html#gga45fe06e29902b7a2773de05ba27b47a1ae12d0f8f869c40c76128260af2242bc8", null ],
+      [ "Eigen::AlignedMax", "group__enums.html#gga45fe06e29902b7a2773de05ba27b47a1ad4d49ef22c9ba2818598e95fdf3608fd", null ]
     ] ],
     [ "Eigen::ComputationInfo", "group__enums.html#ga85fad7b87587764e5cf6b513a9e0ee5e", [
       [ "Eigen::Success", "group__enums.html#gga85fad7b87587764e5cf6b513a9e0ee5ea671a2aeb0f527802806a441d58a80fcf", null ],
@@ -22,15 +24,19 @@ var group__enums =
       [ "Eigen::InvalidInput", "group__enums.html#gga85fad7b87587764e5cf6b513a9e0ee5ea580b2a3cafe585691e789f768fb729bf", null ]
     ] ],
     [ "Eigen::DecompositionOptions", "group__enums.html#gae3e239fb70022eb8747994cf5d68b4a9", [
+      [ "Eigen::Pivoting", "group__enums.html#ggae3e239fb70022eb8747994cf5d68b4a9a9aa7178e7c1c0cb77775fdb111e165dd", null ],
+      [ "Eigen::NoPivoting", "group__enums.html#ggae3e239fb70022eb8747994cf5d68b4a9ac49380314ebfe0e766821663fbd00970", null ],
       [ "Eigen::ComputeFullU", "group__enums.html#ggae3e239fb70022eb8747994cf5d68b4a9a9fa9302d510cee20c26311154937e23f", null ],
       [ "Eigen::ComputeThinU", "group__enums.html#ggae3e239fb70022eb8747994cf5d68b4a9aa7fb4e98834788d0b1b0f2b8467d2527", null ],
       [ "Eigen::ComputeFullV", "group__enums.html#ggae3e239fb70022eb8747994cf5d68b4a9a36581f7c662f7def31efd500c284f930", null ],
       [ "Eigen::ComputeThinV", "group__enums.html#ggae3e239fb70022eb8747994cf5d68b4a9a540036417bfecf2e791a70948c227f47", null ],
       [ "Eigen::EigenvaluesOnly", "group__enums.html#ggae3e239fb70022eb8747994cf5d68b4a9afd06633f270207c373875fd7ca03e906", null ],
       [ "Eigen::ComputeEigenvectors", "group__enums.html#ggae3e239fb70022eb8747994cf5d68b4a9a7f7d17fba3c9bb92158e346d5979d0f4", null ],
+      [ "Eigen::EigVecMask", "group__enums.html#ggae3e239fb70022eb8747994cf5d68b4a9a58b2e52b6b46818217f67d2b38ee90e3", null ],
       [ "Eigen::Ax_lBx", "group__enums.html#ggae3e239fb70022eb8747994cf5d68b4a9a5eb11a88a4bd445f58f1b24598d3848f", null ],
       [ "Eigen::ABx_lx", "group__enums.html#ggae3e239fb70022eb8747994cf5d68b4a9a9a7d9813cec527e299a36b749b0f7e1e", null ],
-      [ "Eigen::BAx_lx", "group__enums.html#ggae3e239fb70022eb8747994cf5d68b4a9a9870817d373c41ba0dc7f6b5ab0895b8", null ]
+      [ "Eigen::BAx_lx", "group__enums.html#ggae3e239fb70022eb8747994cf5d68b4a9a9870817d373c41ba0dc7f6b5ab0895b8", null ],
+      [ "Eigen::GenEigMask", "group__enums.html#ggae3e239fb70022eb8747994cf5d68b4a9a2cd73a7e08a5f26915a562a7f88c6465", null ]
     ] ],
     [ "Eigen::DirectionType", "group__enums.html#gad49a7b3738e273eb00932271b36127f7", [
       [ "Eigen::Vertical", "group__enums.html#ggad49a7b3738e273eb00932271b36127f7ae2efac6e74ecab5e3b0b1561c5ddf83e", null ],

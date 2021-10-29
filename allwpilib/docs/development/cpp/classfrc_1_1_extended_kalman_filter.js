@@ -3,6 +3,7 @@ var classfrc_1_1_extended_kalman_filter =
     [ "ExtendedKalmanFilter", "classfrc_1_1_extended_kalman_filter.html#a082b27abe55706ece8964cbb4bd4e4e7", null ],
     [ "ExtendedKalmanFilter", "classfrc_1_1_extended_kalman_filter.html#a6e8f4790e0e7919bb93549dac3f30daa", null ],
     [ "Correct", "classfrc_1_1_extended_kalman_filter.html#a861f149493a4b397a46108d2ef43af7b", null ],
+    [ "Correct", "classfrc_1_1_extended_kalman_filter.html#a67c03bfab88c0a028743b216896d54eb", null ],
     [ "Correct", "classfrc_1_1_extended_kalman_filter.html#a77f2cd7e268c972f35b4bb435966d360", null ],
     [ "P", "classfrc_1_1_extended_kalman_filter.html#a4d60a3cd10ab605014ab847824a68385", null ],
     [ "P", "classfrc_1_1_extended_kalman_filter.html#ad60af5653b38d334755fbdc559752943", null ],

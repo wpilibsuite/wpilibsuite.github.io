@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-31-ga939cd9</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-32-g2cb171f</span>
    </div>
   </td>
  </tr>
@@ -103,9 +103,8 @@ $(document).ready(function(){initNavTree('group__writer.html',''); initResizable
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga34786576628c2f814b5d109daf0af7d1"><td class="memItemLeft" align="right" valign="top"><a id="ga34786576628c2f814b5d109daf0af7d1" name="ga34786576628c2f814b5d109daf0af7d1"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>MPACK_WRITER_MINIMUM_BUFFER_SIZE</b>&#160;&#160;&#160;32</td></tr>
-<tr class="memdesc:ga34786576628c2f814b5d109daf0af7d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The minimum buffer size for a writer with a flush function. <br /></td></tr>
+<tr class="memitem:ga34786576628c2f814b5d109daf0af7d1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__writer.html#ga34786576628c2f814b5d109daf0af7d1">MPACK_WRITER_MINIMUM_BUFFER_SIZE</a>&#160;&#160;&#160;32</td></tr>
+<tr class="memdesc:ga34786576628c2f814b5d109daf0af7d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The minimum buffer size for a writer with a flush function.  <a href="group__writer.html#ga34786576628c2f814b5d109daf0af7d1">More...</a><br /></td></tr>
 <tr class="separator:ga34786576628c2f814b5d109daf0af7d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
@@ -113,15 +112,14 @@ Typedefs</h2></td></tr>
 <tr class="memitem:gabdb207d4ba6a6ae47efa5ede13436f31"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a></td></tr>
 <tr class="memdesc:gabdb207d4ba6a6ae47efa5ede13436f31"><td class="mdescLeft">&#160;</td><td class="mdescRight">A buffered MessagePack encoder.  <a href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">More...</a><br /></td></tr>
 <tr class="separator:gabdb207d4ba6a6ae47efa5ede13436f31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad5749babfacaa707cbaff06bcbc790a5"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__writer.html#gad5749babfacaa707cbaff06bcbc790a5">mpack_writer_flush_t</a>) (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer, const char *<a class="el" href="classbuffer.html">buffer</a>, size_t count)</td></tr>
+<tr class="memitem:gad5749babfacaa707cbaff06bcbc790a5"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__writer.html#gad5749babfacaa707cbaff06bcbc790a5">mpack_writer_flush_t</a>) (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer, const char *<a class="el" href="classbuffer.html">buffer</a>, size_t <a class="el" href="core_8h.html#a66b93840aa6a29b3802202f99668f78a">count</a>)</td></tr>
 <tr class="memdesc:gad5749babfacaa707cbaff06bcbc790a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The MPack writer's flush function to flush the buffer to the output stream.  <a href="group__writer.html#gad5749babfacaa707cbaff06bcbc790a5">More...</a><br /></td></tr>
 <tr class="separator:gad5749babfacaa707cbaff06bcbc790a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga65d410be0305a59ec15cfe700f8b036a"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__writer.html#ga65d410be0305a59ec15cfe700f8b036a">mpack_writer_error_t</a>) (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer, <a class="el" href="group__common.html#ga9d9f282ca4183ab5190e09d04c1f74c4">mpack_error_t</a> error)</td></tr>
 <tr class="memdesc:ga65d410be0305a59ec15cfe700f8b036a"><td class="mdescLeft">&#160;</td><td class="mdescRight">An error handler function to be called when an error is flagged on the writer.  <a href="group__writer.html#ga65d410be0305a59ec15cfe700f8b036a">More...</a><br /></td></tr>
 <tr class="separator:ga65d410be0305a59ec15cfe700f8b036a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga97ccab59b332d882d386c10b241eb888"><td class="memItemLeft" align="right" valign="top"><a id="ga97ccab59b332d882d386c10b241eb888" name="ga97ccab59b332d882d386c10b241eb888"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>mpack_writer_teardown_t</b>) (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer)</td></tr>
-<tr class="memdesc:ga97ccab59b332d882d386c10b241eb888"><td class="mdescLeft">&#160;</td><td class="mdescRight">A teardown function to be called when the writer is destroyed. <br /></td></tr>
+<tr class="memitem:ga97ccab59b332d882d386c10b241eb888"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__writer.html#ga97ccab59b332d882d386c10b241eb888">mpack_writer_teardown_t</a>) (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer)</td></tr>
+<tr class="memdesc:ga97ccab59b332d882d386c10b241eb888"><td class="mdescLeft">&#160;</td><td class="mdescRight">A teardown function to be called when the writer is destroyed.  <a href="group__writer.html#ga97ccab59b332d882d386c10b241eb888">More...</a><br /></td></tr>
 <tr class="separator:ga97ccab59b332d882d386c10b241eb888"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Lifecycle Functions</h2></td></tr>
@@ -188,104 +186,82 @@ typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>mpack_write
 <tr class="separator:ga17155afc35912817c13802d502f14e80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Integers</h2></td></tr>
-<tr class="memitem:ga4776a1693cf3d69f628ea0306b3867ac"><td class="memItemLeft" align="right" valign="top"><a id="ga4776a1693cf3d69f628ea0306b3867ac" name="ga4776a1693cf3d69f628ea0306b3867ac"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>mpack_write_i8</b> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer, int8_t <a class="el" href="classvalue.html">value</a>)</td></tr>
-<tr class="memdesc:ga4776a1693cf3d69f628ea0306b3867ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes an 8-bit integer in the most efficient packing available. <br /></td></tr>
+<tr class="memitem:ga4776a1693cf3d69f628ea0306b3867ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__writer.html#ga4776a1693cf3d69f628ea0306b3867ac">mpack_write_i8</a> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer, int8_t <a class="el" href="classvalue.html">value</a>)</td></tr>
+<tr class="memdesc:ga4776a1693cf3d69f628ea0306b3867ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes an 8-bit integer in the most efficient packing available.  <a href="group__writer.html#ga4776a1693cf3d69f628ea0306b3867ac">More...</a><br /></td></tr>
 <tr class="separator:ga4776a1693cf3d69f628ea0306b3867ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabf30d21cb4c7c77c4ef99f9f9a1a8791"><td class="memItemLeft" align="right" valign="top"><a id="gabf30d21cb4c7c77c4ef99f9f9a1a8791" name="gabf30d21cb4c7c77c4ef99f9f9a1a8791"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>mpack_write_i16</b> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer, int16_t <a class="el" href="classvalue.html">value</a>)</td></tr>
-<tr class="memdesc:gabf30d21cb4c7c77c4ef99f9f9a1a8791"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a 16-bit integer in the most efficient packing available. <br /></td></tr>
+<tr class="memitem:gabf30d21cb4c7c77c4ef99f9f9a1a8791"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__writer.html#gabf30d21cb4c7c77c4ef99f9f9a1a8791">mpack_write_i16</a> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer, int16_t <a class="el" href="classvalue.html">value</a>)</td></tr>
+<tr class="memdesc:gabf30d21cb4c7c77c4ef99f9f9a1a8791"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a 16-bit integer in the most efficient packing available.  <a href="group__writer.html#gabf30d21cb4c7c77c4ef99f9f9a1a8791">More...</a><br /></td></tr>
 <tr class="separator:gabf30d21cb4c7c77c4ef99f9f9a1a8791"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3a437633c12478dc827977dc7cf6eb66"><td class="memItemLeft" align="right" valign="top"><a id="ga3a437633c12478dc827977dc7cf6eb66" name="ga3a437633c12478dc827977dc7cf6eb66"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>mpack_write_i32</b> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer, int32_t <a class="el" href="classvalue.html">value</a>)</td></tr>
-<tr class="memdesc:ga3a437633c12478dc827977dc7cf6eb66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a 32-bit integer in the most efficient packing available. <br /></td></tr>
+<tr class="memitem:ga3a437633c12478dc827977dc7cf6eb66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__writer.html#ga3a437633c12478dc827977dc7cf6eb66">mpack_write_i32</a> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer, int32_t <a class="el" href="classvalue.html">value</a>)</td></tr>
+<tr class="memdesc:ga3a437633c12478dc827977dc7cf6eb66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a 32-bit integer in the most efficient packing available.  <a href="group__writer.html#ga3a437633c12478dc827977dc7cf6eb66">More...</a><br /></td></tr>
 <tr class="separator:ga3a437633c12478dc827977dc7cf6eb66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab8fcdb4f4ff97c3197a8bb809b88a167"><td class="memItemLeft" align="right" valign="top"><a id="gab8fcdb4f4ff97c3197a8bb809b88a167" name="gab8fcdb4f4ff97c3197a8bb809b88a167"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>mpack_write_i64</b> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer, int64_t <a class="el" href="classvalue.html">value</a>)</td></tr>
-<tr class="memdesc:gab8fcdb4f4ff97c3197a8bb809b88a167"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a 64-bit integer in the most efficient packing available. <br /></td></tr>
+<tr class="memitem:gab8fcdb4f4ff97c3197a8bb809b88a167"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__writer.html#gab8fcdb4f4ff97c3197a8bb809b88a167">mpack_write_i64</a> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer, int64_t <a class="el" href="classvalue.html">value</a>)</td></tr>
+<tr class="memdesc:gab8fcdb4f4ff97c3197a8bb809b88a167"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a 64-bit integer in the most efficient packing available.  <a href="group__writer.html#gab8fcdb4f4ff97c3197a8bb809b88a167">More...</a><br /></td></tr>
 <tr class="separator:gab8fcdb4f4ff97c3197a8bb809b88a167"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3d295121d25491d2bf3bcbb512970817"><td class="memItemLeft" align="right" valign="top"><a id="ga3d295121d25491d2bf3bcbb512970817" name="ga3d295121d25491d2bf3bcbb512970817"></a>
-MPACK_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>mpack_write_int</b> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer, int64_t <a class="el" href="classvalue.html">value</a>)</td></tr>
-<tr class="memdesc:ga3d295121d25491d2bf3bcbb512970817"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes an integer in the most efficient packing available. <br /></td></tr>
+<tr class="memitem:ga3d295121d25491d2bf3bcbb512970817"><td class="memItemLeft" align="right" valign="top">MPACK_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__writer.html#ga3d295121d25491d2bf3bcbb512970817">mpack_write_int</a> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer, int64_t <a class="el" href="classvalue.html">value</a>)</td></tr>
+<tr class="memdesc:ga3d295121d25491d2bf3bcbb512970817"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes an integer in the most efficient packing available.  <a href="group__writer.html#ga3d295121d25491d2bf3bcbb512970817">More...</a><br /></td></tr>
 <tr class="separator:ga3d295121d25491d2bf3bcbb512970817"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga573a41209a4b9125ee28c19cddef309a"><td class="memItemLeft" align="right" valign="top"><a id="ga573a41209a4b9125ee28c19cddef309a" name="ga573a41209a4b9125ee28c19cddef309a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>mpack_write_u8</b> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer, uint8_t <a class="el" href="classvalue.html">value</a>)</td></tr>
-<tr class="memdesc:ga573a41209a4b9125ee28c19cddef309a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes an 8-bit unsigned integer in the most efficient packing available. <br /></td></tr>
+<tr class="memitem:ga573a41209a4b9125ee28c19cddef309a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__writer.html#ga573a41209a4b9125ee28c19cddef309a">mpack_write_u8</a> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer, uint8_t <a class="el" href="classvalue.html">value</a>)</td></tr>
+<tr class="memdesc:ga573a41209a4b9125ee28c19cddef309a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes an 8-bit unsigned integer in the most efficient packing available.  <a href="group__writer.html#ga573a41209a4b9125ee28c19cddef309a">More...</a><br /></td></tr>
 <tr class="separator:ga573a41209a4b9125ee28c19cddef309a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabfd74ba7f9f7fddb04d5b4fc5775342d"><td class="memItemLeft" align="right" valign="top"><a id="gabfd74ba7f9f7fddb04d5b4fc5775342d" name="gabfd74ba7f9f7fddb04d5b4fc5775342d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>mpack_write_u16</b> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer, uint16_t <a class="el" href="classvalue.html">value</a>)</td></tr>
-<tr class="memdesc:gabfd74ba7f9f7fddb04d5b4fc5775342d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes an 16-bit unsigned integer in the most efficient packing available. <br /></td></tr>
+<tr class="memitem:gabfd74ba7f9f7fddb04d5b4fc5775342d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__writer.html#gabfd74ba7f9f7fddb04d5b4fc5775342d">mpack_write_u16</a> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer, uint16_t <a class="el" href="classvalue.html">value</a>)</td></tr>
+<tr class="memdesc:gabfd74ba7f9f7fddb04d5b4fc5775342d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes an 16-bit unsigned integer in the most efficient packing available.  <a href="group__writer.html#gabfd74ba7f9f7fddb04d5b4fc5775342d">More...</a><br /></td></tr>
 <tr class="separator:gabfd74ba7f9f7fddb04d5b4fc5775342d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6c20b876be3a17487a6de49cf5a29b57"><td class="memItemLeft" align="right" valign="top"><a id="ga6c20b876be3a17487a6de49cf5a29b57" name="ga6c20b876be3a17487a6de49cf5a29b57"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>mpack_write_u32</b> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer, uint32_t <a class="el" href="classvalue.html">value</a>)</td></tr>
-<tr class="memdesc:ga6c20b876be3a17487a6de49cf5a29b57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes an 32-bit unsigned integer in the most efficient packing available. <br /></td></tr>
+<tr class="memitem:ga6c20b876be3a17487a6de49cf5a29b57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__writer.html#ga6c20b876be3a17487a6de49cf5a29b57">mpack_write_u32</a> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer, uint32_t <a class="el" href="classvalue.html">value</a>)</td></tr>
+<tr class="memdesc:ga6c20b876be3a17487a6de49cf5a29b57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes an 32-bit unsigned integer in the most efficient packing available.  <a href="group__writer.html#ga6c20b876be3a17487a6de49cf5a29b57">More...</a><br /></td></tr>
 <tr class="separator:ga6c20b876be3a17487a6de49cf5a29b57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga41d333e6d813655b8054c5ec53832c7c"><td class="memItemLeft" align="right" valign="top"><a id="ga41d333e6d813655b8054c5ec53832c7c" name="ga41d333e6d813655b8054c5ec53832c7c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>mpack_write_u64</b> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer, uint64_t <a class="el" href="classvalue.html">value</a>)</td></tr>
-<tr class="memdesc:ga41d333e6d813655b8054c5ec53832c7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes an 64-bit unsigned integer in the most efficient packing available. <br /></td></tr>
+<tr class="memitem:ga41d333e6d813655b8054c5ec53832c7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__writer.html#ga41d333e6d813655b8054c5ec53832c7c">mpack_write_u64</a> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer, uint64_t <a class="el" href="classvalue.html">value</a>)</td></tr>
+<tr class="memdesc:ga41d333e6d813655b8054c5ec53832c7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes an 64-bit unsigned integer in the most efficient packing available.  <a href="group__writer.html#ga41d333e6d813655b8054c5ec53832c7c">More...</a><br /></td></tr>
 <tr class="separator:ga41d333e6d813655b8054c5ec53832c7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4de4d1fdf66df241632d7b734f5f6366"><td class="memItemLeft" align="right" valign="top"><a id="ga4de4d1fdf66df241632d7b734f5f6366" name="ga4de4d1fdf66df241632d7b734f5f6366"></a>
-MPACK_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>mpack_write_uint</b> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer, uint64_t <a class="el" href="classvalue.html">value</a>)</td></tr>
-<tr class="memdesc:ga4de4d1fdf66df241632d7b734f5f6366"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes an unsigned integer in the most efficient packing available. <br /></td></tr>
+<tr class="memitem:ga4de4d1fdf66df241632d7b734f5f6366"><td class="memItemLeft" align="right" valign="top">MPACK_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__writer.html#ga4de4d1fdf66df241632d7b734f5f6366">mpack_write_uint</a> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer, uint64_t <a class="el" href="classvalue.html">value</a>)</td></tr>
+<tr class="memdesc:ga4de4d1fdf66df241632d7b734f5f6366"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes an unsigned integer in the most efficient packing available.  <a href="group__writer.html#ga4de4d1fdf66df241632d7b734f5f6366">More...</a><br /></td></tr>
 <tr class="separator:ga4de4d1fdf66df241632d7b734f5f6366"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Other Basic Types</h2></td></tr>
-<tr class="memitem:ga285ce9cc180f3b623fbf07c67e2f9ca3"><td class="memItemLeft" align="right" valign="top"><a id="ga285ce9cc180f3b623fbf07c67e2f9ca3" name="ga285ce9cc180f3b623fbf07c67e2f9ca3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>mpack_write_float</b> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer, float <a class="el" href="classvalue.html">value</a>)</td></tr>
-<tr class="memdesc:ga285ce9cc180f3b623fbf07c67e2f9ca3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a float. <br /></td></tr>
+<tr class="memitem:ga285ce9cc180f3b623fbf07c67e2f9ca3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__writer.html#ga285ce9cc180f3b623fbf07c67e2f9ca3">mpack_write_float</a> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer, float <a class="el" href="classvalue.html">value</a>)</td></tr>
+<tr class="memdesc:ga285ce9cc180f3b623fbf07c67e2f9ca3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a float.  <a href="group__writer.html#ga285ce9cc180f3b623fbf07c67e2f9ca3">More...</a><br /></td></tr>
 <tr class="separator:ga285ce9cc180f3b623fbf07c67e2f9ca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2bc0c6c6416b9d808be718b41681fd25"><td class="memItemLeft" align="right" valign="top"><a id="ga2bc0c6c6416b9d808be718b41681fd25" name="ga2bc0c6c6416b9d808be718b41681fd25"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>mpack_write_double</b> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer, double <a class="el" href="classvalue.html">value</a>)</td></tr>
-<tr class="memdesc:ga2bc0c6c6416b9d808be718b41681fd25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a double. <br /></td></tr>
+<tr class="memitem:ga2bc0c6c6416b9d808be718b41681fd25"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__writer.html#ga2bc0c6c6416b9d808be718b41681fd25">mpack_write_double</a> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer, double <a class="el" href="classvalue.html">value</a>)</td></tr>
+<tr class="memdesc:ga2bc0c6c6416b9d808be718b41681fd25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a double.  <a href="group__writer.html#ga2bc0c6c6416b9d808be718b41681fd25">More...</a><br /></td></tr>
 <tr class="separator:ga2bc0c6c6416b9d808be718b41681fd25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5d8fa89f571534f5ddbdf81f5bbd5de8"><td class="memItemLeft" align="right" valign="top"><a id="ga5d8fa89f571534f5ddbdf81f5bbd5de8" name="ga5d8fa89f571534f5ddbdf81f5bbd5de8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>mpack_write_bool</b> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer, bool <a class="el" href="classvalue.html">value</a>)</td></tr>
-<tr class="memdesc:ga5d8fa89f571534f5ddbdf81f5bbd5de8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a boolean. <br /></td></tr>
+<tr class="memitem:ga5d8fa89f571534f5ddbdf81f5bbd5de8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__writer.html#ga5d8fa89f571534f5ddbdf81f5bbd5de8">mpack_write_bool</a> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer, bool <a class="el" href="classvalue.html">value</a>)</td></tr>
+<tr class="memdesc:ga5d8fa89f571534f5ddbdf81f5bbd5de8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a boolean.  <a href="group__writer.html#ga5d8fa89f571534f5ddbdf81f5bbd5de8">More...</a><br /></td></tr>
 <tr class="separator:ga5d8fa89f571534f5ddbdf81f5bbd5de8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5d9f083fd8556ba30f93d4ad139d0dad"><td class="memItemLeft" align="right" valign="top"><a id="ga5d9f083fd8556ba30f93d4ad139d0dad" name="ga5d9f083fd8556ba30f93d4ad139d0dad"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>mpack_write_true</b> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer)</td></tr>
-<tr class="memdesc:ga5d9f083fd8556ba30f93d4ad139d0dad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a boolean with value true. <br /></td></tr>
+<tr class="memitem:ga5d9f083fd8556ba30f93d4ad139d0dad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__writer.html#ga5d9f083fd8556ba30f93d4ad139d0dad">mpack_write_true</a> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer)</td></tr>
+<tr class="memdesc:ga5d9f083fd8556ba30f93d4ad139d0dad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a boolean with value true.  <a href="group__writer.html#ga5d9f083fd8556ba30f93d4ad139d0dad">More...</a><br /></td></tr>
 <tr class="separator:ga5d9f083fd8556ba30f93d4ad139d0dad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab05b274195191e6e98c4a8d0ec730f63"><td class="memItemLeft" align="right" valign="top"><a id="gab05b274195191e6e98c4a8d0ec730f63" name="gab05b274195191e6e98c4a8d0ec730f63"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>mpack_write_false</b> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer)</td></tr>
-<tr class="memdesc:gab05b274195191e6e98c4a8d0ec730f63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a boolean with value false. <br /></td></tr>
+<tr class="memitem:gab05b274195191e6e98c4a8d0ec730f63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__writer.html#gab05b274195191e6e98c4a8d0ec730f63">mpack_write_false</a> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer)</td></tr>
+<tr class="memdesc:gab05b274195191e6e98c4a8d0ec730f63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a boolean with value false.  <a href="group__writer.html#gab05b274195191e6e98c4a8d0ec730f63">More...</a><br /></td></tr>
 <tr class="separator:gab05b274195191e6e98c4a8d0ec730f63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaea8d479af0d05cff5194502362ae82a5"><td class="memItemLeft" align="right" valign="top"><a id="gaea8d479af0d05cff5194502362ae82a5" name="gaea8d479af0d05cff5194502362ae82a5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>mpack_write_nil</b> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer)</td></tr>
-<tr class="memdesc:gaea8d479af0d05cff5194502362ae82a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a nil. <br /></td></tr>
+<tr class="memitem:gaea8d479af0d05cff5194502362ae82a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__writer.html#gaea8d479af0d05cff5194502362ae82a5">mpack_write_nil</a> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer)</td></tr>
+<tr class="memdesc:gaea8d479af0d05cff5194502362ae82a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a nil.  <a href="group__writer.html#gaea8d479af0d05cff5194502362ae82a5">More...</a><br /></td></tr>
 <tr class="separator:gaea8d479af0d05cff5194502362ae82a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7a100199b2dc33b41fd5f99c428048ac"><td class="memItemLeft" align="right" valign="top"><a id="ga7a100199b2dc33b41fd5f99c428048ac" name="ga7a100199b2dc33b41fd5f99c428048ac"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>mpack_write_object_bytes</b> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer, const char *<a class="el" href="structdata.html">data</a>, size_t <a class="el" href="classbytes.html">bytes</a>)</td></tr>
-<tr class="memdesc:ga7a100199b2dc33b41fd5f99c428048ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a pre-encoded messagepack object. <br /></td></tr>
+<tr class="memitem:ga7a100199b2dc33b41fd5f99c428048ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__writer.html#ga7a100199b2dc33b41fd5f99c428048ac">mpack_write_object_bytes</a> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer, const char *<a class="el" href="structdata.html">data</a>, size_t <a class="el" href="classbytes.html">bytes</a>)</td></tr>
+<tr class="memdesc:ga7a100199b2dc33b41fd5f99c428048ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a pre-encoded messagepack object.  <a href="group__writer.html#ga7a100199b2dc33b41fd5f99c428048ac">More...</a><br /></td></tr>
 <tr class="separator:ga7a100199b2dc33b41fd5f99c428048ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gada69acbd6803f79cab7573ae9ebc37bd"><td class="memItemLeft" align="right" valign="top"><a id="gada69acbd6803f79cab7573ae9ebc37bd" name="gada69acbd6803f79cab7573ae9ebc37bd"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>mpack_expect_nil</b> (<a class="el" href="group__reader.html#gaee791c36a15344b9e57edae160c86615">mpack_reader_t</a> *reader)</td></tr>
-<tr class="memdesc:gada69acbd6803f79cab7573ae9ebc37bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a nil, raising <a class="el" href="group__common.html#gga9d9f282ca4183ab5190e09d04c1f74c4ac91d0dcefbb9c7b9f41403bbc674aef2">mpack_error_type</a> if the value is not nil. <br /></td></tr>
+<tr class="memitem:gada69acbd6803f79cab7573ae9ebc37bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__writer.html#gada69acbd6803f79cab7573ae9ebc37bd">mpack_expect_nil</a> (<a class="el" href="group__reader.html#gaee791c36a15344b9e57edae160c86615">mpack_reader_t</a> *reader)</td></tr>
+<tr class="memdesc:gada69acbd6803f79cab7573ae9ebc37bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a nil, raising <a class="el" href="group__common.html#gga9d9f282ca4183ab5190e09d04c1f74c4ac91d0dcefbb9c7b9f41403bbc674aef2">mpack_error_type</a> if the value is not nil.  <a href="group__writer.html#gada69acbd6803f79cab7573ae9ebc37bd">More...</a><br /></td></tr>
 <tr class="separator:gada69acbd6803f79cab7573ae9ebc37bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaeafa42ca3ae974494f127eb4b56ed8ae"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__writer.html#gaeafa42ca3ae974494f127eb4b56ed8ae">mpack_expect_bool</a> (<a class="el" href="group__reader.html#gaee791c36a15344b9e57edae160c86615">mpack_reader_t</a> *reader)</td></tr>
 <tr class="memdesc:gaeafa42ca3ae974494f127eb4b56ed8ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a boolean.  <a href="group__writer.html#gaeafa42ca3ae974494f127eb4b56ed8ae">More...</a><br /></td></tr>
 <tr class="separator:gaeafa42ca3ae974494f127eb4b56ed8ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaadfca446696881a598cc4f90892ded88"><td class="memItemLeft" align="right" valign="top"><a id="gaadfca446696881a598cc4f90892ded88" name="gaadfca446696881a598cc4f90892ded88"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>mpack_expect_true</b> (<a class="el" href="group__reader.html#gaee791c36a15344b9e57edae160c86615">mpack_reader_t</a> *reader)</td></tr>
-<tr class="memdesc:gaadfca446696881a598cc4f90892ded88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a boolean, raising <a class="el" href="group__common.html#gga9d9f282ca4183ab5190e09d04c1f74c4ac91d0dcefbb9c7b9f41403bbc674aef2">mpack_error_type</a> if its value is not <code>true</code>. <br /></td></tr>
+<tr class="memitem:gaadfca446696881a598cc4f90892ded88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__writer.html#gaadfca446696881a598cc4f90892ded88">mpack_expect_true</a> (<a class="el" href="group__reader.html#gaee791c36a15344b9e57edae160c86615">mpack_reader_t</a> *reader)</td></tr>
+<tr class="memdesc:gaadfca446696881a598cc4f90892ded88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a boolean, raising <a class="el" href="group__common.html#gga9d9f282ca4183ab5190e09d04c1f74c4ac91d0dcefbb9c7b9f41403bbc674aef2">mpack_error_type</a> if its value is not <code>true</code>.  <a href="group__writer.html#gaadfca446696881a598cc4f90892ded88">More...</a><br /></td></tr>
 <tr class="separator:gaadfca446696881a598cc4f90892ded88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa29ab364a7ae092e93a20b1a24744c0e"><td class="memItemLeft" align="right" valign="top"><a id="gaa29ab364a7ae092e93a20b1a24744c0e" name="gaa29ab364a7ae092e93a20b1a24744c0e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>mpack_expect_false</b> (<a class="el" href="group__reader.html#gaee791c36a15344b9e57edae160c86615">mpack_reader_t</a> *reader)</td></tr>
-<tr class="memdesc:gaa29ab364a7ae092e93a20b1a24744c0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a boolean, raising <a class="el" href="group__common.html#gga9d9f282ca4183ab5190e09d04c1f74c4ac91d0dcefbb9c7b9f41403bbc674aef2">mpack_error_type</a> if its value is not <code>false</code>. <br /></td></tr>
+<tr class="memitem:gaa29ab364a7ae092e93a20b1a24744c0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__writer.html#gaa29ab364a7ae092e93a20b1a24744c0e">mpack_expect_false</a> (<a class="el" href="group__reader.html#gaee791c36a15344b9e57edae160c86615">mpack_reader_t</a> *reader)</td></tr>
+<tr class="memdesc:gaa29ab364a7ae092e93a20b1a24744c0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a boolean, raising <a class="el" href="group__common.html#gga9d9f282ca4183ab5190e09d04c1f74c4ac91d0dcefbb9c7b9f41403bbc674aef2">mpack_error_type</a> if its value is not <code>false</code>.  <a href="group__writer.html#gaa29ab364a7ae092e93a20b1a24744c0e">More...</a><br /></td></tr>
 <tr class="separator:gaa29ab364a7ae092e93a20b1a24744c0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Map and Array Functions</h2></td></tr>
-<tr class="memitem:ga3d2c452b01415f7d86db2ecd1a5aa329"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__writer.html#ga3d2c452b01415f7d86db2ecd1a5aa329">mpack_start_array</a> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer, uint32_t count)</td></tr>
+<tr class="memitem:ga3d2c452b01415f7d86db2ecd1a5aa329"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__writer.html#ga3d2c452b01415f7d86db2ecd1a5aa329">mpack_start_array</a> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer, uint32_t <a class="el" href="core_8h.html#a66b93840aa6a29b3802202f99668f78a">count</a>)</td></tr>
 <tr class="memdesc:ga3d2c452b01415f7d86db2ecd1a5aa329"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens an array.  <a href="group__writer.html#ga3d2c452b01415f7d86db2ecd1a5aa329">More...</a><br /></td></tr>
 <tr class="separator:ga3d2c452b01415f7d86db2ecd1a5aa329"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5c54c857ce7f0bdcea9b2df349cbcc61"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__writer.html#ga5c54c857ce7f0bdcea9b2df349cbcc61">mpack_start_map</a> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer, uint32_t count)</td></tr>
+<tr class="memitem:ga5c54c857ce7f0bdcea9b2df349cbcc61"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__writer.html#ga5c54c857ce7f0bdcea9b2df349cbcc61">mpack_start_map</a> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer, uint32_t <a class="el" href="core_8h.html#a66b93840aa6a29b3802202f99668f78a">count</a>)</td></tr>
 <tr class="memdesc:ga5c54c857ce7f0bdcea9b2df349cbcc61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens a map.  <a href="group__writer.html#ga5c54c857ce7f0bdcea9b2df349cbcc61">More...</a><br /></td></tr>
 <tr class="separator:ga5c54c857ce7f0bdcea9b2df349cbcc61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8267626fa6ec8aeed449e0dbe5139677"><td class="memItemLeft" align="right" valign="top"><a id="ga8267626fa6ec8aeed449e0dbe5139677" name="ga8267626fa6ec8aeed449e0dbe5139677"></a>
-MPACK_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>mpack_builder_compound_push</b> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer)</td></tr>
+<tr class="memitem:ga8267626fa6ec8aeed449e0dbe5139677"><td class="memItemLeft" align="right" valign="top">MPACK_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__writer.html#ga8267626fa6ec8aeed449e0dbe5139677">mpack_builder_compound_push</a> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer)</td></tr>
 <tr class="separator:ga8267626fa6ec8aeed449e0dbe5139677"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9e89422784feb205afe45f674d80c5b1"><td class="memItemLeft" align="right" valign="top"><a id="ga9e89422784feb205afe45f674d80c5b1" name="ga9e89422784feb205afe45f674d80c5b1"></a>
-MPACK_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>mpack_builder_compound_pop</b> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer)</td></tr>
+<tr class="memitem:ga9e89422784feb205afe45f674d80c5b1"><td class="memItemLeft" align="right" valign="top">MPACK_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__writer.html#ga9e89422784feb205afe45f674d80c5b1">mpack_builder_compound_pop</a> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer)</td></tr>
 <tr class="separator:ga9e89422784feb205afe45f674d80c5b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1c597827ddb001bd2551e4f8b7fb1c95"><td class="memItemLeft" align="right" valign="top">MPACK_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__writer.html#ga1c597827ddb001bd2551e4f8b7fb1c95">mpack_finish_array</a> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer)</td></tr>
 <tr class="memdesc:ga1c597827ddb001bd2551e4f8b7fb1c95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finishes writing an array.  <a href="group__writer.html#ga1c597827ddb001bd2551e4f8b7fb1c95">More...</a><br /></td></tr>
@@ -325,18 +301,18 @@ MPACK_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>mpack_bu
 <tr class="memitem:ga2ef20cf65309d8deb6a11f6811c6b639"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__writer.html#ga2ef20cf65309d8deb6a11f6811c6b639">mpack_write_utf8_cstr_or_nil</a> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer, const char *cstr)</td></tr>
 <tr class="memdesc:ga2ef20cf65309d8deb6a11f6811c6b639"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a null-terminated string ensuring that it is valid UTF-8, or writes nil if the given cstr pointer is NULL.  <a href="group__writer.html#ga2ef20cf65309d8deb6a11f6811c6b639">More...</a><br /></td></tr>
 <tr class="separator:ga2ef20cf65309d8deb6a11f6811c6b639"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga379b2db0595d0d0493946290dd827262"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__writer.html#ga379b2db0595d0d0493946290dd827262">mpack_write_bin</a> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer, const char *<a class="el" href="structdata.html">data</a>, uint32_t count)</td></tr>
+<tr class="memitem:ga379b2db0595d0d0493946290dd827262"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__writer.html#ga379b2db0595d0d0493946290dd827262">mpack_write_bin</a> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer, const char *<a class="el" href="structdata.html">data</a>, uint32_t <a class="el" href="core_8h.html#a66b93840aa6a29b3802202f99668f78a">count</a>)</td></tr>
 <tr class="memdesc:ga379b2db0595d0d0493946290dd827262"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a binary blob.  <a href="group__writer.html#ga379b2db0595d0d0493946290dd827262">More...</a><br /></td></tr>
 <tr class="separator:ga379b2db0595d0d0493946290dd827262"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Chunked Data Functions</h2></td></tr>
-<tr class="memitem:ga0f293abb4441a1113b2ed956c3e735ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__writer.html#ga0f293abb4441a1113b2ed956c3e735ad">mpack_start_str</a> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer, uint32_t count)</td></tr>
+<tr class="memitem:ga0f293abb4441a1113b2ed956c3e735ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__writer.html#ga0f293abb4441a1113b2ed956c3e735ad">mpack_start_str</a> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer, uint32_t <a class="el" href="core_8h.html#a66b93840aa6a29b3802202f99668f78a">count</a>)</td></tr>
 <tr class="memdesc:ga0f293abb4441a1113b2ed956c3e735ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens a string.  <a href="group__writer.html#ga0f293abb4441a1113b2ed956c3e735ad">More...</a><br /></td></tr>
 <tr class="separator:ga0f293abb4441a1113b2ed956c3e735ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9d9d905358fe553360e3071485f75b4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__writer.html#ga9d9d905358fe553360e3071485f75b4d">mpack_start_bin</a> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer, uint32_t count)</td></tr>
+<tr class="memitem:ga9d9d905358fe553360e3071485f75b4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__writer.html#ga9d9d905358fe553360e3071485f75b4d">mpack_start_bin</a> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer, uint32_t <a class="el" href="core_8h.html#a66b93840aa6a29b3802202f99668f78a">count</a>)</td></tr>
 <tr class="memdesc:ga9d9d905358fe553360e3071485f75b4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens a binary blob.  <a href="group__writer.html#ga9d9d905358fe553360e3071485f75b4d">More...</a><br /></td></tr>
 <tr class="separator:ga9d9d905358fe553360e3071485f75b4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7f594d59ddfd2729aa2b3758e1641139"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__writer.html#ga7f594d59ddfd2729aa2b3758e1641139">mpack_write_bytes</a> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer, const char *<a class="el" href="structdata.html">data</a>, size_t count)</td></tr>
+<tr class="memitem:ga7f594d59ddfd2729aa2b3758e1641139"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__writer.html#ga7f594d59ddfd2729aa2b3758e1641139">mpack_write_bytes</a> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer, const char *<a class="el" href="structdata.html">data</a>, size_t <a class="el" href="core_8h.html#a66b93840aa6a29b3802202f99668f78a">count</a>)</td></tr>
 <tr class="memdesc:ga7f594d59ddfd2729aa2b3758e1641139"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a portion of bytes for a string, binary blob or extension type which was opened by <a class="el" href="group__writer.html#ga17155afc35912817c13802d502f14e80" title="Writes a MessagePack object header (an MPack Tag.)">mpack_write_tag()</a> or one of the mpack_start_*() functions.  <a href="group__writer.html#ga7f594d59ddfd2729aa2b3758e1641139">More...</a><br /></td></tr>
 <tr class="separator:ga7f594d59ddfd2729aa2b3758e1641139"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaebeaf32b50141b23fcf2883d5f803f20"><td class="memItemLeft" align="right" valign="top">MPACK_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__writer.html#gaebeaf32b50141b23fcf2883d5f803f20">mpack_finish_str</a> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer)</td></tr>
@@ -345,12 +321,29 @@ MPACK_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>mpack_bu
 <tr class="memitem:gaec24731adcb6a9c4cbf36d630cd03d84"><td class="memItemLeft" align="right" valign="top">MPACK_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__writer.html#gaec24731adcb6a9c4cbf36d630cd03d84">mpack_finish_bin</a> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer)</td></tr>
 <tr class="memdesc:gaec24731adcb6a9c4cbf36d630cd03d84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finishes writing a binary blob.  <a href="group__writer.html#gaec24731adcb6a9c4cbf36d630cd03d84">More...</a><br /></td></tr>
 <tr class="separator:gaec24731adcb6a9c4cbf36d630cd03d84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga90451565cf3cd0e62d4e70c8113300c4"><td class="memItemLeft" align="right" valign="top">MPACK_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__writer.html#ga90451565cf3cd0e62d4e70c8113300c4">mpack_finish_type</a> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer, <a class="el" href="group__common.html#ga22f03cf1240d5a917e1b3e7be8ab327e">mpack_type_t</a> type)</td></tr>
+<tr class="memitem:ga90451565cf3cd0e62d4e70c8113300c4"><td class="memItemLeft" align="right" valign="top">MPACK_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__writer.html#ga90451565cf3cd0e62d4e70c8113300c4">mpack_finish_type</a> (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer, <a class="el" href="group__common.html#ga22f03cf1240d5a917e1b3e7be8ab327e">mpack_type_t</a> <a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>)</td></tr>
 <tr class="memdesc:ga90451565cf3cd0e62d4e70c8113300c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finishes writing the given compound type.  <a href="group__writer.html#ga90451565cf3cd0e62d4e70c8113300c4">More...</a><br /></td></tr>
 <tr class="separator:ga90451565cf3cd0e62d4e70c8113300c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p >The MPack Write API encodes structured data of a fixed (hardcoded) schema to MessagePack. </p>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ga34786576628c2f814b5d109daf0af7d1" name="ga34786576628c2f814b5d109daf0af7d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga34786576628c2f814b5d109daf0af7d1">&#9670;&nbsp;</a></span>MPACK_WRITER_MINIMUM_BUFFER_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MPACK_WRITER_MINIMUM_BUFFER_SIZE&#160;&#160;&#160;32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The minimum buffer size for a writer with a flush function. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="ga65d410be0305a59ec15cfe700f8b036a" name="ga65d410be0305a59ec15cfe700f8b036a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga65d410be0305a59ec15cfe700f8b036a">&#9670;&nbsp;</a></span>mpack_writer_error_t</h2>
@@ -379,7 +372,7 @@ MPACK_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>mpack_bu
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* mpack_writer_flush_t) (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer, const char *<a class="el" href="classbuffer.html">buffer</a>, size_t count)</td>
+          <td class="memname">typedef void(* mpack_writer_flush_t) (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer, const char *<a class="el" href="classbuffer.html">buffer</a>, size_t <a class="el" href="core_8h.html#a66b93840aa6a29b3802202f99668f78a">count</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -408,6 +401,22 @@ MPACK_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>mpack_bu
 
 </div>
 </div>
+<a id="ga97ccab59b332d882d386c10b241eb888" name="ga97ccab59b332d882d386c10b241eb888"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga97ccab59b332d882d386c10b241eb888">&#9670;&nbsp;</a></span>mpack_writer_teardown_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* mpack_writer_teardown_t) (<a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *writer)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A teardown function to be called when the writer is destroyed. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ga5e10cc90afff17e2c4352c4399be9433" name="ga5e10cc90afff17e2c4352c4399be9433"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga5e10cc90afff17e2c4352c4399be9433">&#9670;&nbsp;</a></span>mpack_build_array()</h2>
@@ -431,9 +440,9 @@ MPACK_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>mpack_bu
 <p >Builder containers can be nested within normal (known size) containers and vice versa. You can call <a class="el" href="group__writer.html#ga5e10cc90afff17e2c4352c4399be9433" title="Starts building an array.">mpack_build_array()</a>, then <a class="el" href="group__writer.html#ga3d2c452b01415f7d86db2ecd1a5aa329" title="Opens an array.">mpack_start_array()</a> inside it, then <a class="el" href="group__writer.html#ga5e10cc90afff17e2c4352c4399be9433" title="Starts building an array.">mpack_build_array()</a> inside that, and so forth.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__writer.html#ga65e149d035d8de105774ebad2363cac5" title="Completes an array being built.">mpack_complete_array()</a> to complete this array </dd>
 <dd>
-<a class="el" href="group__writer.html#ga3d2c452b01415f7d86db2ecd1a5aa329" title="Opens an array.">mpack_start_array()</a> if you already know the size of the array </dd>
+<a class="el" href="group__writer.html#ga3d2c452b01415f7d86db2ecd1a5aa329" title="Opens an array.">mpack_start_array()</a> if you already know the size <a class="el" href="_third_party_notices_8txt.html#adca0d9de001386c7e55df986703b8282">of</a> the array </dd>
 <dd>
-<a class="el" href="group__writer.html#ga5849bab4afebddae63bb03f5dce5f7d8" title="Starts building a map.">mpack_build_map()</a> for implementation details </dd></dl>
+<a class="el" href="group__writer.html#ga5849bab4afebddae63bb03f5dce5f7d8" title="Starts building a map.">mpack_build_map()</a> <a class="el" href="_third_party_notices_8txt.html#a9a65a8f9c46df7d827b56fa01ef25436">for</a> implementation details </dd></dl>
 
 </div>
 </div>
@@ -463,7 +472,43 @@ MPACK_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>mpack_bu
 <dl class="section note"><dt>Note</dt><dd>When an array or map starts being built, nothing will be flushed until it is completed. If you are building a large message that does not fit in the output stream, you won't get an error about it until everything is written.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__writer.html#ga10d9f55e0a512d88ede66bbbc543f711" title="Completes a map being built.">mpack_complete_map()</a> to complete this map </dd>
 <dd>
-<a class="el" href="group__writer.html#ga5c54c857ce7f0bdcea9b2df349cbcc61" title="Opens a map.">mpack_start_map()</a> if you already know the size of the map </dd></dl>
+<a class="el" href="group__writer.html#ga5c54c857ce7f0bdcea9b2df349cbcc61" title="Opens a map.">mpack_start_map()</a> if you already know the size <a class="el" href="_third_party_notices_8txt.html#adca0d9de001386c7e55df986703b8282">of</a> the map </dd></dl>
+
+</div>
+</div>
+<a id="ga9e89422784feb205afe45f674d80c5b1" name="ga9e89422784feb205afe45f674d80c5b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9e89422784feb205afe45f674d80c5b1">&#9670;&nbsp;</a></span>mpack_builder_compound_pop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MPACK_INLINE void mpack_builder_compound_pop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *&#160;</td>
+          <td class="paramname"><em>writer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga8267626fa6ec8aeed449e0dbe5139677" name="ga8267626fa6ec8aeed449e0dbe5139677"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8267626fa6ec8aeed449e0dbe5139677">&#9670;&nbsp;</a></span>mpack_builder_compound_push()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MPACK_INLINE void mpack_builder_compound_push </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *&#160;</td>
+          <td class="paramname"><em>writer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -527,6 +572,66 @@ MPACK_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>mpack_bu
 
 <p>Reads a boolean. </p>
 <dl class="section note"><dt>Note</dt><dd>Integers will raise mpack_error_type; the value must be strictly a boolean. </dd></dl>
+
+</div>
+</div>
+<a id="gaa29ab364a7ae092e93a20b1a24744c0e" name="gaa29ab364a7ae092e93a20b1a24744c0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa29ab364a7ae092e93a20b1a24744c0e">&#9670;&nbsp;</a></span>mpack_expect_false()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mpack_expect_false </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__reader.html#gaee791c36a15344b9e57edae160c86615">mpack_reader_t</a> *&#160;</td>
+          <td class="paramname"><em>reader</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reads a boolean, raising <a class="el" href="group__common.html#gga9d9f282ca4183ab5190e09d04c1f74c4ac91d0dcefbb9c7b9f41403bbc674aef2">mpack_error_type</a> if its value is not <code>false</code>. </p>
+
+</div>
+</div>
+<a id="gada69acbd6803f79cab7573ae9ebc37bd" name="gada69acbd6803f79cab7573ae9ebc37bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gada69acbd6803f79cab7573ae9ebc37bd">&#9670;&nbsp;</a></span>mpack_expect_nil()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mpack_expect_nil </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__reader.html#gaee791c36a15344b9e57edae160c86615">mpack_reader_t</a> *&#160;</td>
+          <td class="paramname"><em>reader</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reads a nil, raising <a class="el" href="group__common.html#gga9d9f282ca4183ab5190e09d04c1f74c4ac91d0dcefbb9c7b9f41403bbc674aef2">mpack_error_type</a> if the value is not nil. </p>
+
+</div>
+</div>
+<a id="gaadfca446696881a598cc4f90892ded88" name="gaadfca446696881a598cc4f90892ded88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaadfca446696881a598cc4f90892ded88">&#9670;&nbsp;</a></span>mpack_expect_true()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mpack_expect_true </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__reader.html#gaee791c36a15344b9e57edae160c86615">mpack_reader_t</a> *&#160;</td>
+          <td class="paramname"><em>reader</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reads a boolean, raising <a class="el" href="group__common.html#gga9d9f282ca4183ab5190e09d04c1f74c4ac91d0dcefbb9c7b9f41403bbc674aef2">mpack_error_type</a> if its value is not <code>true</code>. </p>
 
 </div>
 </div>
@@ -689,7 +794,7 @@ MPACK_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>mpack_bu
 <p >If you do not know the number of elements to be written ahead of time, call <a class="el" href="group__writer.html#ga5e10cc90afff17e2c4352c4399be9433" title="Starts building an array.">mpack_build_array()</a> instead.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__writer.html#ga1c597827ddb001bd2551e4f8b7fb1c95" title="Finishes writing an array.">mpack_finish_array()</a> </dd>
 <dd>
-<a class="el" href="group__writer.html#ga5e10cc90afff17e2c4352c4399be9433" title="Starts building an array.">mpack_build_array()</a> to count the number of elements automatically </dd></dl>
+<a class="el" href="group__writer.html#ga5e10cc90afff17e2c4352c4399be9433" title="Starts building an array.">mpack_build_array()</a> to <a class="el" href="core_8h.html#a66b93840aa6a29b3802202f99668f78a">count</a> the number <a class="el" href="_third_party_notices_8txt.html#adca0d9de001386c7e55df986703b8282">of</a> elements automatically </dd></dl>
 
 </div>
 </div>
@@ -756,7 +861,7 @@ MPACK_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>mpack_bu
 <p >Remember that while map elements in MessagePack are implicitly ordered, they are not ordered in JSON. If you need elements to be read back in the order they are written, consider use an array instead.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__writer.html#ga3e783297212b505681f32400a7416fa0" title="Finishes writing a map.">mpack_finish_map()</a> </dd>
 <dd>
-<a class="el" href="group__writer.html#ga5849bab4afebddae63bb03f5dce5f7d8" title="Starts building a map.">mpack_build_map()</a> to count the number of key/value pairs automatically </dd></dl>
+<a class="el" href="group__writer.html#ga5849bab4afebddae63bb03f5dce5f7d8" title="Starts building a map.">mpack_build_map()</a> to <a class="el" href="core_8h.html#a66b93840aa6a29b3802202f99668f78a">count</a> the number <a class="el" href="_third_party_notices_8txt.html#adca0d9de001386c7e55df986703b8282">of</a> key/value pairs automatically </dd></dl>
 
 </div>
 </div>
@@ -828,6 +933,36 @@ MPACK_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>mpack_bu
 <p>Writes a binary blob. </p>
 <p >To stream a binary blob in chunks, use <a class="el" href="group__writer.html#ga9d9d905358fe553360e3071485f75b4d" title="Opens a binary blob.">mpack_start_bin()</a> instead.</p>
 <p >You should not call <a class="el" href="group__writer.html#gaec24731adcb6a9c4cbf36d630cd03d84" title="Finishes writing a binary blob.">mpack_finish_bin()</a> after calling this; this performs both start and finish. </p>
+
+</div>
+</div>
+<a id="ga5d8fa89f571534f5ddbdf81f5bbd5de8" name="ga5d8fa89f571534f5ddbdf81f5bbd5de8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5d8fa89f571534f5ddbdf81f5bbd5de8">&#9670;&nbsp;</a></span>mpack_write_bool()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mpack_write_bool </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *&#160;</td>
+          <td class="paramname"><em>writer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Writes a boolean. </p>
 
 </div>
 </div>
@@ -951,6 +1086,292 @@ mpack_finish_ext() </dd>
 
 </div>
 </div>
+<a id="ga2bc0c6c6416b9d808be718b41681fd25" name="ga2bc0c6c6416b9d808be718b41681fd25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2bc0c6c6416b9d808be718b41681fd25">&#9670;&nbsp;</a></span>mpack_write_double()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mpack_write_double </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *&#160;</td>
+          <td class="paramname"><em>writer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Writes a double. </p>
+
+</div>
+</div>
+<a id="gab05b274195191e6e98c4a8d0ec730f63" name="gab05b274195191e6e98c4a8d0ec730f63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab05b274195191e6e98c4a8d0ec730f63">&#9670;&nbsp;</a></span>mpack_write_false()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mpack_write_false </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *&#160;</td>
+          <td class="paramname"><em>writer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Writes a boolean with value false. </p>
+
+</div>
+</div>
+<a id="ga285ce9cc180f3b623fbf07c67e2f9ca3" name="ga285ce9cc180f3b623fbf07c67e2f9ca3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga285ce9cc180f3b623fbf07c67e2f9ca3">&#9670;&nbsp;</a></span>mpack_write_float()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mpack_write_float </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *&#160;</td>
+          <td class="paramname"><em>writer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Writes a float. </p>
+
+</div>
+</div>
+<a id="gabf30d21cb4c7c77c4ef99f9f9a1a8791" name="gabf30d21cb4c7c77c4ef99f9f9a1a8791"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabf30d21cb4c7c77c4ef99f9f9a1a8791">&#9670;&nbsp;</a></span>mpack_write_i16()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mpack_write_i16 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *&#160;</td>
+          <td class="paramname"><em>writer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Writes a 16-bit integer in the most efficient packing available. </p>
+
+</div>
+</div>
+<a id="ga3a437633c12478dc827977dc7cf6eb66" name="ga3a437633c12478dc827977dc7cf6eb66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3a437633c12478dc827977dc7cf6eb66">&#9670;&nbsp;</a></span>mpack_write_i32()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mpack_write_i32 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *&#160;</td>
+          <td class="paramname"><em>writer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Writes a 32-bit integer in the most efficient packing available. </p>
+
+</div>
+</div>
+<a id="gab8fcdb4f4ff97c3197a8bb809b88a167" name="gab8fcdb4f4ff97c3197a8bb809b88a167"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab8fcdb4f4ff97c3197a8bb809b88a167">&#9670;&nbsp;</a></span>mpack_write_i64()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mpack_write_i64 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *&#160;</td>
+          <td class="paramname"><em>writer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Writes a 64-bit integer in the most efficient packing available. </p>
+
+</div>
+</div>
+<a id="ga4776a1693cf3d69f628ea0306b3867ac" name="ga4776a1693cf3d69f628ea0306b3867ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4776a1693cf3d69f628ea0306b3867ac">&#9670;&nbsp;</a></span>mpack_write_i8()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mpack_write_i8 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *&#160;</td>
+          <td class="paramname"><em>writer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int8_t&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Writes an 8-bit integer in the most efficient packing available. </p>
+
+</div>
+</div>
+<a id="ga3d295121d25491d2bf3bcbb512970817" name="ga3d295121d25491d2bf3bcbb512970817"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3d295121d25491d2bf3bcbb512970817">&#9670;&nbsp;</a></span>mpack_write_int()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MPACK_INLINE void mpack_write_int </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *&#160;</td>
+          <td class="paramname"><em>writer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Writes an integer in the most efficient packing available. </p>
+
+</div>
+</div>
+<a id="gaea8d479af0d05cff5194502362ae82a5" name="gaea8d479af0d05cff5194502362ae82a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaea8d479af0d05cff5194502362ae82a5">&#9670;&nbsp;</a></span>mpack_write_nil()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mpack_write_nil </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *&#160;</td>
+          <td class="paramname"><em>writer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Writes a nil. </p>
+
+</div>
+</div>
+<a id="ga7a100199b2dc33b41fd5f99c428048ac" name="ga7a100199b2dc33b41fd5f99c428048ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7a100199b2dc33b41fd5f99c428048ac">&#9670;&nbsp;</a></span>mpack_write_object_bytes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mpack_write_object_bytes </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *&#160;</td>
+          <td class="paramname"><em>writer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>bytes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write a pre-encoded messagepack object. </p>
+
+</div>
+</div>
 <a id="gabdd346fe4eb4e1737807932d19a2909f" name="gabdd346fe4eb4e1737807932d19a2909f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gabdd346fe4eb4e1737807932d19a2909f">&#9670;&nbsp;</a></span>mpack_write_str()</h2>
 
@@ -1031,6 +1452,176 @@ mpack_finish_ext() </dd>
 mpack_finish_ext() </dd>
 <dd>
 <a class="el" href="group__writer.html#ga90451565cf3cd0e62d4e70c8113300c4" title="Finishes writing the given compound type.">mpack_finish_type()</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga5d9f083fd8556ba30f93d4ad139d0dad" name="ga5d9f083fd8556ba30f93d4ad139d0dad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5d9f083fd8556ba30f93d4ad139d0dad">&#9670;&nbsp;</a></span>mpack_write_true()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mpack_write_true </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *&#160;</td>
+          <td class="paramname"><em>writer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Writes a boolean with value true. </p>
+
+</div>
+</div>
+<a id="gabfd74ba7f9f7fddb04d5b4fc5775342d" name="gabfd74ba7f9f7fddb04d5b4fc5775342d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabfd74ba7f9f7fddb04d5b4fc5775342d">&#9670;&nbsp;</a></span>mpack_write_u16()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mpack_write_u16 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *&#160;</td>
+          <td class="paramname"><em>writer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Writes an 16-bit unsigned integer in the most efficient packing available. </p>
+
+</div>
+</div>
+<a id="ga6c20b876be3a17487a6de49cf5a29b57" name="ga6c20b876be3a17487a6de49cf5a29b57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6c20b876be3a17487a6de49cf5a29b57">&#9670;&nbsp;</a></span>mpack_write_u32()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mpack_write_u32 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *&#160;</td>
+          <td class="paramname"><em>writer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Writes an 32-bit unsigned integer in the most efficient packing available. </p>
+
+</div>
+</div>
+<a id="ga41d333e6d813655b8054c5ec53832c7c" name="ga41d333e6d813655b8054c5ec53832c7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga41d333e6d813655b8054c5ec53832c7c">&#9670;&nbsp;</a></span>mpack_write_u64()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mpack_write_u64 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *&#160;</td>
+          <td class="paramname"><em>writer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Writes an 64-bit unsigned integer in the most efficient packing available. </p>
+
+</div>
+</div>
+<a id="ga573a41209a4b9125ee28c19cddef309a" name="ga573a41209a4b9125ee28c19cddef309a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga573a41209a4b9125ee28c19cddef309a">&#9670;&nbsp;</a></span>mpack_write_u8()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mpack_write_u8 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *&#160;</td>
+          <td class="paramname"><em>writer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Writes an 8-bit unsigned integer in the most efficient packing available. </p>
+
+</div>
+</div>
+<a id="ga4de4d1fdf66df241632d7b734f5f6366" name="ga4de4d1fdf66df241632d7b734f5f6366"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4de4d1fdf66df241632d7b734f5f6366">&#9670;&nbsp;</a></span>mpack_write_uint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MPACK_INLINE void mpack_write_uint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__writer.html#gabdb207d4ba6a6ae47efa5ede13436f31">mpack_writer_t</a> *&#160;</td>
+          <td class="paramname"><em>writer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Writes an unsigned integer in the most efficient packing available. </p>
 
 </div>
 </div>
@@ -1535,7 +2126,7 @@ finish" bug from causing a never-ending message. </p>
 
 <p>Initializes an MPack writer using a growable buffer. </p>
 <p >The data is placed in the given data pointer if and when the writer is destroyed without error. The data pointer is NULL during writing, and will remain NULL if an error occurs.</p>
-<p >The allocated data must be freed with <a class="el" href="group__config.html#ga298d7c2e4093bcfe361088df9e35956a" title="Defines the memory free function used by MPack.">MPACK_FREE()</a> (or simply free() if MPack's allocator hasn't been customized.)</p>
+<p >The allocated data must be freed with <a class="el" href="group__config.html#ga298d7c2e4093bcfe361088df9e35956a" title="Defines the memory free function used by MPack.">MPACK_FREE()</a> (or simply <a class="el" href="_third_party_notices_8txt.html#a1ad4e226a400dfc6463430c1efcaa45b">free()</a> if MPack's allocator hasn't been customized.)</p>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">mpack_error_memory</td><td>if the buffer fails to grow when flushing.</td></tr>
@@ -1761,7 +2352,7 @@ finish" bug from causing a never-ending message. </p>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Oct 29 2021 07:12:23 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Oct 29 2021 22:10:01 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

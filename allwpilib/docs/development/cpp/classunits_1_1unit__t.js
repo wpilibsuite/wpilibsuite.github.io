@@ -1,5 +1,6 @@
 var classunits_1_1unit__t =
 [
+    [ "nls", "classunits_1_1unit__t.html#ade7926dca4829a3dab64ae3c2682b491", null ],
     [ "non_linear_scale_type", "classunits_1_1unit__t.html#adb3e922bd9478c385843ee44a7607e14", null ],
     [ "underlying_type", "classunits_1_1unit__t.html#af3f88305faf59e0c71e8e616a2877ceb", null ],
     [ "unit_type", "classunits_1_1unit__t.html#a97925b5862ffd961071a8060d0f036b3", null ],
@@ -21,9 +22,11 @@ var classunits_1_1unit__t =
     [ "operator=", "classunits_1_1unit__t.html#a1af45048f8e5f3be86fc0402d1ecdefd", null ],
     [ "operator=", "classunits_1_1unit__t.html#af37614855a4c866d7237b06b7f9d4ba9", null ],
     [ "operator==", "classunits_1_1unit__t.html#acb13edd0520e3108b5c4b99af455210b", null ],
+    [ "operator==", "classunits_1_1unit__t.html#acb13edd0520e3108b5c4b99af455210b", null ],
     [ "operator>", "classunits_1_1unit__t.html#aa217fffcd201893766279a216c30bd03", null ],
     [ "operator>=", "classunits_1_1unit__t.html#ade9d4c04fc33fc1a62aaef313729aff4", null ],
     [ "to", "classunits_1_1unit__t.html#a848f265210db571a1f7d13aae96c8dd5", null ],
     [ "toLinearized", "classunits_1_1unit__t.html#a80b7f760f0ed5ff1855ec2f3d8e8c6b1", null ],
-    [ "value", "classunits_1_1unit__t.html#a5bb6799c6eb6f4cab7b47490ab03b9a1", null ]
+    [ "value", "classunits_1_1unit__t.html#a5bb6799c6eb6f4cab7b47490ab03b9a1", null ],
+    [ "unit_t", "classunits_1_1unit__t.html#a8d70ccbc4f5e6c787ca26bdd69eb71f5", null ]
 ];

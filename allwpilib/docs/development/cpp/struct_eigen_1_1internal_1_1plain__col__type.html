@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-31-ga939cd9</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-32-g2cb171f</span>
    </div>
   </td>
  </tr>
@@ -97,19 +97,67 @@ $(document).ready(function(){initNavTree('struct_eigen_1_1internal_1_1plain__col
   <div class="headertitle"><div class="title">Eigen::internal::plain_col_type&lt; ExpressionType, Scalar &gt; Struct Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_xpr_helper_8h_source.html">/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/eigeninclude/Eigen/src/Core/util/XprHelper.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ac75ab0cd71ee5bed5adbd9b77eeba12a"><td class="memItemLeft" align="right" valign="top"><a id="ac75ab0cd71ee5bed5adbd9b77eeba12a" name="ac75ab0cd71ee5bed5adbd9b77eeba12a"></a>
-typedef <a class="el" href="class_eigen_1_1_matrix.html">Matrix</a>&lt; Scalar, ExpressionType::RowsAtCompileTime, 1, ExpressionType::PlainObject::Options &amp;~<a class="el" href="group__enums.html#ggaacded1a18ae58b0f554751f6cdf9eb13a77c993a8d9f6efe5c1159fb2ab07dd4f">RowMajor</a>, ExpressionType::MaxRowsAtCompileTime, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>MatrixColType</b></td></tr>
+<tr class="memitem:ac75ab0cd71ee5bed5adbd9b77eeba12a"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_eigen_1_1_matrix.html">Matrix</a>&lt; Scalar, ExpressionType::RowsAtCompileTime, 1, ExpressionType::PlainObject::Options &amp;~<a class="el" href="group__enums.html#ggaacded1a18ae58b0f554751f6cdf9eb13a77c993a8d9f6efe5c1159fb2ab07dd4f">RowMajor</a>, ExpressionType::MaxRowsAtCompileTime, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1plain__col__type.html#ac75ab0cd71ee5bed5adbd9b77eeba12a">MatrixColType</a></td></tr>
 <tr class="separator:ac75ab0cd71ee5bed5adbd9b77eeba12a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17712acb2f07a712205370a99a62f402"><td class="memItemLeft" align="right" valign="top"><a id="a17712acb2f07a712205370a99a62f402" name="a17712acb2f07a712205370a99a62f402"></a>
-typedef <a class="el" href="class_eigen_1_1_array.html">Array</a>&lt; Scalar, ExpressionType::RowsAtCompileTime, 1, ExpressionType::PlainObject::Options &amp;~<a class="el" href="group__enums.html#ggaacded1a18ae58b0f554751f6cdf9eb13a77c993a8d9f6efe5c1159fb2ab07dd4f">RowMajor</a>, ExpressionType::MaxRowsAtCompileTime, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ArrayColType</b></td></tr>
+<tr class="memitem:a17712acb2f07a712205370a99a62f402"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_eigen_1_1_array.html">Array</a>&lt; Scalar, ExpressionType::RowsAtCompileTime, 1, ExpressionType::PlainObject::Options &amp;~<a class="el" href="group__enums.html#ggaacded1a18ae58b0f554751f6cdf9eb13a77c993a8d9f6efe5c1159fb2ab07dd4f">RowMajor</a>, ExpressionType::MaxRowsAtCompileTime, 1 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1plain__col__type.html#a17712acb2f07a712205370a99a62f402">ArrayColType</a></td></tr>
 <tr class="separator:a17712acb2f07a712205370a99a62f402"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50d7bd17cb1a08813dc6d2c58cae4261"><td class="memItemLeft" align="right" valign="top"><a id="a50d7bd17cb1a08813dc6d2c58cae4261" name="a50d7bd17cb1a08813dc6d2c58cae4261"></a>
-typedef <a class="el" href="struct_eigen_1_1internal_1_1conditional.html">conditional</a>&lt; <a class="el" href="struct_eigen_1_1internal_1_1is__same.html">is_same</a>&lt; typenametraits&lt; ExpressionType &gt;::XprKind, <a class="el" href="struct_eigen_1_1_matrix_xpr.html">MatrixXpr</a> &gt;::<a class="el" href="classvalue.html">value</a>, <a class="el" href="class_eigen_1_1_matrix.html">MatrixColType</a>, <a class="el" href="class_eigen_1_1_array.html">ArrayColType</a> &gt;::<a class="el" href="struct_eigen_1_1internal_1_1true__type.html">type</a>&#160;</td><td class="memItemRight" valign="bottom"><b>type</b></td></tr>
+<tr class="memitem:a50d7bd17cb1a08813dc6d2c58cae4261"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_eigen_1_1internal_1_1conditional.html">conditional</a>&lt; <a class="el" href="struct_eigen_1_1internal_1_1is__same.html">is_same</a>&lt; typenametraits&lt; ExpressionType &gt;::XprKind, <a class="el" href="struct_eigen_1_1_matrix_xpr.html">MatrixXpr</a> &gt;::<a class="el" href="classvalue.html">value</a>, <a class="el" href="struct_eigen_1_1internal_1_1plain__col__type.html#ac75ab0cd71ee5bed5adbd9b77eeba12a">MatrixColType</a>, <a class="el" href="struct_eigen_1_1internal_1_1plain__col__type.html#a17712acb2f07a712205370a99a62f402">ArrayColType</a> &gt;::<a class="el" href="struct_eigen_1_1internal_1_1plain__col__type.html#a50d7bd17cb1a08813dc6d2c58cae4261">type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1plain__col__type.html#a50d7bd17cb1a08813dc6d2c58cae4261">type</a></td></tr>
 <tr class="separator:a50d7bd17cb1a08813dc6d2c58cae4261"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a17712acb2f07a712205370a99a62f402" name="a17712acb2f07a712205370a99a62f402"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17712acb2f07a712205370a99a62f402">&#9670;&nbsp;</a></span>ArrayColType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ExpressionType , typename Scalar  = typename ExpressionType::Scalar&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="class_eigen_1_1_array.html">Array</a>&lt;Scalar, ExpressionType::RowsAtCompileTime, 1, ExpressionType::PlainObject::Options &amp; ~<a class="el" href="group__enums.html#ggaacded1a18ae58b0f554751f6cdf9eb13a77c993a8d9f6efe5c1159fb2ab07dd4f">RowMajor</a>, ExpressionType::MaxRowsAtCompileTime, 1&gt; <a class="el" href="struct_eigen_1_1internal_1_1plain__col__type.html">Eigen::internal::plain_col_type</a>&lt; ExpressionType, Scalar &gt;::<a class="el" href="struct_eigen_1_1internal_1_1plain__col__type.html#a17712acb2f07a712205370a99a62f402">ArrayColType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac75ab0cd71ee5bed5adbd9b77eeba12a" name="ac75ab0cd71ee5bed5adbd9b77eeba12a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac75ab0cd71ee5bed5adbd9b77eeba12a">&#9670;&nbsp;</a></span>MatrixColType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ExpressionType , typename Scalar  = typename ExpressionType::Scalar&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="class_eigen_1_1_matrix.html">Matrix</a>&lt;Scalar, ExpressionType::RowsAtCompileTime, 1, ExpressionType::PlainObject::Options &amp; ~<a class="el" href="group__enums.html#ggaacded1a18ae58b0f554751f6cdf9eb13a77c993a8d9f6efe5c1159fb2ab07dd4f">RowMajor</a>, ExpressionType::MaxRowsAtCompileTime, 1&gt; <a class="el" href="struct_eigen_1_1internal_1_1plain__col__type.html">Eigen::internal::plain_col_type</a>&lt; ExpressionType, Scalar &gt;::<a class="el" href="struct_eigen_1_1internal_1_1plain__col__type.html#ac75ab0cd71ee5bed5adbd9b77eeba12a">MatrixColType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a50d7bd17cb1a08813dc6d2c58cae4261" name="a50d7bd17cb1a08813dc6d2c58cae4261"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50d7bd17cb1a08813dc6d2c58cae4261">&#9670;&nbsp;</a></span>type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ExpressionType , typename Scalar  = typename ExpressionType::Scalar&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="struct_eigen_1_1internal_1_1conditional.html">conditional</a>&lt;<a class="el" href="struct_eigen_1_1internal_1_1is__same.html">is_same</a>&lt;typenametraits&lt;ExpressionType&gt;::XprKind,<a class="el" href="struct_eigen_1_1_matrix_xpr.html">MatrixXpr</a>&gt;::<a class="el" href="classvalue.html">value</a>,<a class="el" href="struct_eigen_1_1internal_1_1plain__col__type.html#ac75ab0cd71ee5bed5adbd9b77eeba12a">MatrixColType</a>,<a class="el" href="struct_eigen_1_1internal_1_1plain__col__type.html#a17712acb2f07a712205370a99a62f402">ArrayColType</a>&gt;::<a class="el" href="struct_eigen_1_1internal_1_1plain__col__type.html#a50d7bd17cb1a08813dc6d2c58cae4261">type</a> <a class="el" href="struct_eigen_1_1internal_1_1plain__col__type.html">Eigen::internal::plain_col_type</a>&lt; ExpressionType, Scalar &gt;::<a class="el" href="struct_eigen_1_1internal_1_1plain__col__type.html#a50d7bd17cb1a08813dc6d2c58cae4261">type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/eigeninclude/Eigen/src/Core/util/<a class="el" href="_xpr_helper_8h_source.html">XprHelper.h</a></li>
 </ul>
@@ -118,8 +166,8 @@ typedef <a class="el" href="struct_eigen_1_1internal_1_1conditional.html">condit
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespace_eigen.html">Eigen</a></li><li class="navelem"><b>internal</b></li><li class="navelem"><a class="el" href="struct_eigen_1_1internal_1_1plain__col__type.html">plain_col_type</a></li>
-    <li class="footer">Generated on Fri Oct 29 2021 07:12:27 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespace_eigen.html">Eigen</a></li><li class="navelem"><a class="el" href="namespace_eigen_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="struct_eigen_1_1internal_1_1plain__col__type.html">plain_col_type</a></li>
+    <li class="footer">Generated on Fri Oct 29 2021 22:10:05 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

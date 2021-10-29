@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-31-ga939cd9</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-32-g2cb171f</span>
    </div>
   </td>
  </tr>
@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('inductance_8h_source.html',''); initRe
   <div class="headertitle"><div class="title">inductance.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
+<a href="inductance_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Open Source Software; you can modify and/or share it under the terms of</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// the WPILib BSD license file in the root directory of this project.</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
@@ -122,7 +122,7 @@ $(document).ready(function(){initNavTree('inductance_8h_source.html',''); initRe
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &quot;units/base.h&quot;</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &quot;<a class="code" href="base_8h.html">units/base.h</a>&quot;</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceunits.html">units</a> {<span class="comment"></span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">/**</span></div>
@@ -135,16 +135,19 @@ $(document).ready(function(){initNavTree('inductance_8h_source.html',''); initRe
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#if !defined(DISABLE_PREDEFINED_UNITS) || \</span></div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">    defined(ENABLE_PREDEFINED_INDUCTANCE_UNITS)</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>UNIT_ADD_WITH_METRIC_PREFIXES(</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="namespaceunits.html#a5fcfc6a1a4447a46153137d090cc08a4">   42</a></span><a class="code hl_function" href="namespaceunits.html#ae2bcfe6bda690f4f8cc3ae4646ab24aa">UNIT_ADD_WITH_METRIC_PREFIXES</a>(</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    inductance, henry, henries, H,</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <a class="code hl_struct" href="structunits_1_1unit.html">unit</a>&lt;std::ratio&lt;1&gt;, <a class="code hl_struct" href="structunits_1_1base__unit.html">units::category::inductance_unit</a>&gt;)</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>UNIT_ADD_CATEGORY_TRAIT(inductance)</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><a class="code hl_define" href="base_8h.html#aa0b0ec340728bbef5aeab07641a61948">UNIT_ADD_CATEGORY_TRAIT</a>(inductance)</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="keyword">using namespace </span>inductance;</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>}  <span class="comment">// namespace units</span></div>
+<div class="ttc" id="abase_8h_html"><div class="ttname"><a href="base_8h.html">base.h</a></div></div>
+<div class="ttc" id="abase_8h_html_aa0b0ec340728bbef5aeab07641a61948"><div class="ttname"><a href="base_8h.html#aa0b0ec340728bbef5aeab07641a61948">UNIT_ADD_CATEGORY_TRAIT</a></div><div class="ttdeci">#define UNIT_ADD_CATEGORY_TRAIT(unitCategory)</div><div class="ttdoc">Macro to create the is_category_unit type trait.</div><div class="ttdef"><b>Definition:</b> base.h:381</div></div>
 <div class="ttc" id="anamespaceunits_html"><div class="ttname"><a href="namespaceunits.html">units</a></div><div class="ttdoc">Unit Conversion Library namespace.</div><div class="ttdef"><b>Definition:</b> temperature.h:31</div></div>
+<div class="ttc" id="anamespaceunits_html_ae2bcfe6bda690f4f8cc3ae4646ab24aa"><div class="ttname"><a href="namespaceunits.html#ae2bcfe6bda690f4f8cc3ae4646ab24aa">units::UNIT_ADD_WITH_METRIC_PREFIXES</a></div><div class="ttdeci">UNIT_ADD_WITH_METRIC_PREFIXES(radiation, becquerel, becquerels, Bq, unit&lt; std::ratio&lt; 1 &gt;, units::frequency::hertz &gt;) UNIT_ADD_WITH_METRIC_PREFIXES(radiation</div></div>
 <div class="ttc" id="astructunits_1_1base__unit_html"><div class="ttname"><a href="structunits_1_1base__unit.html">units::base_unit</a></div><div class="ttdoc">Class representing SI base unit types.</div><div class="ttdef"><b>Definition:</b> base.h:752</div></div>
 <div class="ttc" id="astructunits_1_1unit_html"><div class="ttname"><a href="structunits_1_1unit.html">units::unit</a></div><div class="ttdoc">Type representing an arbitrary unit.</div><div class="ttdef"><b>Definition:</b> base.h:878</div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -152,8 +155,8 @@ $(document).ready(function(){initNavTree('inductance_8h_source.html',''); initRe
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_8398b3b11a49d1b73baf320477e5bcca.html">units</a></li><li class="navelem"><b>inductance.h</b></li>
-    <li class="footer">Generated on Fri Oct 29 2021 07:12:21 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="dir_8398b3b11a49d1b73baf320477e5bcca.html">units</a></li><li class="navelem"><a class="el" href="inductance_8h.html">inductance.h</a></li>
+    <li class="footer">Generated on Fri Oct 29 2021 22:09:59 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-31-ga939cd9</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-32-g2cb171f</span>
    </div>
   </td>
  </tr>
@@ -105,19 +105,91 @@ $(document).ready(function(){initNavTree('classfrc_1_1_layout_type.html',''); in
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa67d5befb044d17a67f47b9ca2f88e19"><td class="memItemLeft" align="right" valign="top"><a id="aa67d5befb044d17a67f47b9ca2f88e19" name="aa67d5befb044d17a67f47b9ca2f88e19"></a>
-constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>LayoutType</b> (const char *layoutName)</td></tr>
+<tr class="memitem:aa67d5befb044d17a67f47b9ca2f88e19"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_layout_type.html#aa67d5befb044d17a67f47b9ca2f88e19">LayoutType</a> (const char *layoutName)</td></tr>
 <tr class="separator:aa67d5befb044d17a67f47b9ca2f88e19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b664b41e82b2c05da56e11abdc7f07a"><td class="memItemLeft" align="right" valign="top"><a id="a3b664b41e82b2c05da56e11abdc7f07a" name="a3b664b41e82b2c05da56e11abdc7f07a"></a>
-std::string_view&#160;</td><td class="memItemRight" valign="bottom"><b>GetLayoutName</b> () const</td></tr>
-<tr class="memdesc:a3b664b41e82b2c05da56e11abdc7f07a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the string type of the layout as defined by that layout in <a class="el" href="classfrc_1_1_shuffleboard.html" title="The Shuffleboard class provides a mechanism with which data can be added and laid out in the Shuffleb...">Shuffleboard</a>. <br /></td></tr>
+<tr class="memitem:a5966368cf09cfe03eb02a0f0722f7c43"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_layout_type.html#a5966368cf09cfe03eb02a0f0722f7c43">~LayoutType</a> ()=default</td></tr>
+<tr class="separator:a5966368cf09cfe03eb02a0f0722f7c43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b664b41e82b2c05da56e11abdc7f07a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_layout_type.html#a3b664b41e82b2c05da56e11abdc7f07a">GetLayoutName</a> () const</td></tr>
+<tr class="memdesc:a3b664b41e82b2c05da56e11abdc7f07a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the string type of the layout as defined by that layout in <a class="el" href="classfrc_1_1_shuffleboard.html" title="The Shuffleboard class provides a mechanism with which data can be added and laid out in the Shuffleb...">Shuffleboard</a>.  <a href="classfrc_1_1_layout_type.html#a3b664b41e82b2c05da56e11abdc7f07a">More...</a><br /></td></tr>
 <tr class="separator:a3b664b41e82b2c05da56e11abdc7f07a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Represents the type of a layout in <a class="el" href="classfrc_1_1_shuffleboard.html" title="The Shuffleboard class provides a mechanism with which data can be added and laid out in the Shuffleb...">Shuffleboard</a>. </p>
 <p >Using this is preferred over specifying raw strings, to avoid typos and having to know or look up the exact string name for a desired layout.</p>
-<dl class="section see"><dt>See also</dt><dd>BuiltInLayouts the built-in layout types </dd></dl>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="namespacefrc.html#a3dfa3f031ab695031e54042c1bf44472" title="The types of layouts bundled with Shuffleboard.">BuiltInLayouts</a> the built-in layout types </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aa67d5befb044d17a67f47b9ca2f88e19" name="aa67d5befb044d17a67f47b9ca2f88e19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa67d5befb044d17a67f47b9ca2f88e19">&#9670;&nbsp;</a></span>LayoutType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr frc::LayoutType::LayoutType </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>layoutName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5966368cf09cfe03eb02a0f0722f7c43" name="a5966368cf09cfe03eb02a0f0722f7c43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5966368cf09cfe03eb02a0f0722f7c43">&#9670;&nbsp;</a></span>~LayoutType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">frc::LayoutType::~LayoutType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3b664b41e82b2c05da56e11abdc7f07a" name="a3b664b41e82b2c05da56e11abdc7f07a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b664b41e82b2c05da56e11abdc7f07a">&#9670;&nbsp;</a></span>GetLayoutName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> frc::LayoutType::GetLayoutName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the string type of the layout as defined by that layout in <a class="el" href="classfrc_1_1_shuffleboard.html" title="The Shuffleboard class provides a mechanism with which data can be added and laid out in the Shuffleb...">Shuffleboard</a>. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>frc/shuffleboard/<a class="el" href="_layout_type_8h_source.html">LayoutType.h</a></li>
 </ul>
 </div><!-- contents -->
@@ -125,8 +197,8 @@ std::string_view&#160;</td><td class="memItemRight" valign="bottom"><b>GetLayout
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1_layout_type.html">LayoutType</a></li>
-    <li class="footer">Generated on Fri Oct 29 2021 07:12:28 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_layout_type.html">LayoutType</a></li>
+    <li class="footer">Generated on Fri Oct 29 2021 22:10:07 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

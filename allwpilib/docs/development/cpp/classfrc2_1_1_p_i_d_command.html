@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-31-ga939cd9</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-32-g2cb171f</span>
    </div>
   </td>
  </tr>
@@ -131,11 +131,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad2e9d593fc57730195d8ba4e9735e00b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_p_i_d_command.html#ad2e9d593fc57730195d8ba4e9735e00b">PIDCommand</a> (<a class="el" href="classfrc2_1_1_p_i_d_controller.html">PIDController</a> controller, std::function&lt; double()&gt; measurementSource, double setpoint, std::function&lt; void(double)&gt; useOutput, <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; <a class="el" href="classfrc2_1_1_subsystem.html">Subsystem</a> *const &gt; requirements={})</td></tr>
 <tr class="memdesc:ad2e9d593fc57730195d8ba4e9735e00b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="classfrc2_1_1_p_i_d_command.html" title="A command that controls an output with a PIDController.">PIDCommand</a>, which controls the given output with a <a class="el" href="classfrc2_1_1_p_i_d_controller.html" title="Implements a PID control loop.">PIDController</a> with a constant setpoint.  <a href="classfrc2_1_1_p_i_d_command.html#ad2e9d593fc57730195d8ba4e9735e00b">More...</a><br /></td></tr>
 <tr class="separator:ad2e9d593fc57730195d8ba4e9735e00b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3abdcab93187f856f4050fb28981ef9b"><td class="memItemLeft" align="right" valign="top"><a id="a3abdcab93187f856f4050fb28981ef9b" name="a3abdcab93187f856f4050fb28981ef9b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>PIDCommand</b> (<a class="el" href="classfrc2_1_1_p_i_d_command.html">PIDCommand</a> &amp;&amp;other)=default</td></tr>
+<tr class="memitem:a3abdcab93187f856f4050fb28981ef9b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_p_i_d_command.html#a3abdcab93187f856f4050fb28981ef9b">PIDCommand</a> (<a class="el" href="classfrc2_1_1_p_i_d_command.html">PIDCommand</a> &amp;&amp;other)=default</td></tr>
 <tr class="separator:a3abdcab93187f856f4050fb28981ef9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8dc931c8c3b1cfad8e788dbc02c8110"><td class="memItemLeft" align="right" valign="top"><a id="ad8dc931c8c3b1cfad8e788dbc02c8110" name="ad8dc931c8c3b1cfad8e788dbc02c8110"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>PIDCommand</b> (const <a class="el" href="classfrc2_1_1_p_i_d_command.html">PIDCommand</a> &amp;other)=default</td></tr>
+<tr class="memitem:ad8dc931c8c3b1cfad8e788dbc02c8110"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_p_i_d_command.html#ad8dc931c8c3b1cfad8e788dbc02c8110">PIDCommand</a> (const <a class="el" href="classfrc2_1_1_p_i_d_command.html">PIDCommand</a> &amp;other)=default</td></tr>
 <tr class="separator:ad8dc931c8c3b1cfad8e788dbc02c8110"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4df5aee8c6f1d3d3742b28ada9c02405"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_p_i_d_command.html#a4df5aee8c6f1d3d3742b28ada9c02405">Initialize</a> () override</td></tr>
 <tr class="memdesc:a4df5aee8c6f1d3d3742b28ada9c02405"><td class="mdescLeft">&#160;</td><td class="mdescRight">The initial subroutine of a command.  <a href="classfrc2_1_1_p_i_d_command.html#a4df5aee8c6f1d3d3742b28ada9c02405">More...</a><br /></td></tr>
@@ -149,6 +147,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aaff38dbb49ff2266efcd32bc39214e06"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_p_i_d_controller.html">PIDController</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_p_i_d_command.html#aaff38dbb49ff2266efcd32bc39214e06">GetController</a> ()</td></tr>
 <tr class="memdesc:aaff38dbb49ff2266efcd32bc39214e06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="classfrc2_1_1_p_i_d_controller.html" title="Implements a PID control loop.">PIDController</a> used by the command.  <a href="classfrc2_1_1_p_i_d_command.html#aaff38dbb49ff2266efcd32bc39214e06">More...</a><br /></td></tr>
 <tr class="separator:aaff38dbb49ff2266efcd32bc39214e06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classfrc2_1_1_command_helper"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classfrc2_1_1_command_helper')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classfrc2_1_1_command_helper.html">frc2::CommandHelper&lt; CommandBase, PIDCommand &gt;</a></td></tr>
+<tr class="memitem:a999c2432be3efe11eb786e33afa7ae47 inherit pub_methods_classfrc2_1_1_command_helper"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_helper.html#a999c2432be3efe11eb786e33afa7ae47">CommandHelper</a> ()=default</td></tr>
+<tr class="separator:a999c2432be3efe11eb786e33afa7ae47 inherit pub_methods_classfrc2_1_1_command_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classfrc2_1_1_command_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classfrc2_1_1_command_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classfrc2_1_1_command_base.html">frc2::CommandBase</a></td></tr>
 <tr class="memitem:a64f050689acd13a075633d78786d5aaf inherit pub_methods_classfrc2_1_1_command_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_base.html#a64f050689acd13a075633d78786d5aaf">AddRequirements</a> (std::initializer_list&lt; <a class="el" href="classfrc2_1_1_subsystem.html">Subsystem</a> * &gt; requirements)</td></tr>
 <tr class="memdesc:a64f050689acd13a075633d78786d5aaf inherit pub_methods_classfrc2_1_1_command_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the specified <a class="el" href="classfrc2_1_1_subsystem.html" title="A robot subsystem.">Subsystem</a> requirements to the command.  <a href="classfrc2_1_1_command_base.html#a64f050689acd13a075633d78786d5aaf">More...</a><br /></td></tr>
@@ -165,7 +166,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a575a63113a31811b0234b0aeefca4dff inherit pub_methods_classfrc2_1_1_command_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1_small_set.html">wpi::SmallSet</a>&lt; <a class="el" href="classfrc2_1_1_subsystem.html">Subsystem</a> *, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_base.html#a575a63113a31811b0234b0aeefca4dff">GetRequirements</a> () const override</td></tr>
 <tr class="memdesc:a575a63113a31811b0234b0aeefca4dff inherit pub_methods_classfrc2_1_1_command_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the <a class="el" href="classfrc2_1_1_subsystem.html" title="A robot subsystem.">Subsystem</a> requirements of the command.  <a href="classfrc2_1_1_command_base.html#a575a63113a31811b0234b0aeefca4dff">More...</a><br /></td></tr>
 <tr class="separator:a575a63113a31811b0234b0aeefca4dff inherit pub_methods_classfrc2_1_1_command_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75fa3f1baf64ecde0a946e4da4bbee18 inherit pub_methods_classfrc2_1_1_command_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_base.html#a75fa3f1baf64ecde0a946e4da4bbee18">SetName</a> (std::string_view name)</td></tr>
+<tr class="memitem:a75fa3f1baf64ecde0a946e4da4bbee18 inherit pub_methods_classfrc2_1_1_command_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_base.html#a75fa3f1baf64ecde0a946e4da4bbee18">SetName</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> name)</td></tr>
 <tr class="memdesc:a75fa3f1baf64ecde0a946e4da4bbee18 inherit pub_methods_classfrc2_1_1_command_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name of this <a class="el" href="classfrc2_1_1_command.html" title="A state machine representing a complete action to be performed by the robot.">Command</a>.  <a href="classfrc2_1_1_command_base.html#a75fa3f1baf64ecde0a946e4da4bbee18">More...</a><br /></td></tr>
 <tr class="separator:a75fa3f1baf64ecde0a946e4da4bbee18 inherit pub_methods_classfrc2_1_1_command_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bcb764f5f464d52f3d175fd80790916 inherit pub_methods_classfrc2_1_1_command_base"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_base.html#a9bcb764f5f464d52f3d175fd80790916">GetName</a> () const override</td></tr>
@@ -174,24 +175,24 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acd23702bf1d4155eda6c071e1aa9bdaf inherit pub_methods_classfrc2_1_1_command_base"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_base.html#acd23702bf1d4155eda6c071e1aa9bdaf">GetSubsystem</a> () const</td></tr>
 <tr class="memdesc:acd23702bf1d4155eda6c071e1aa9bdaf inherit pub_methods_classfrc2_1_1_command_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the subsystem name of this <a class="el" href="classfrc2_1_1_command.html" title="A state machine representing a complete action to be performed by the robot.">Command</a>.  <a href="classfrc2_1_1_command_base.html#acd23702bf1d4155eda6c071e1aa9bdaf">More...</a><br /></td></tr>
 <tr class="separator:acd23702bf1d4155eda6c071e1aa9bdaf inherit pub_methods_classfrc2_1_1_command_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae03b1c6ce3a67b2ba0b401e6f5fdb18b inherit pub_methods_classfrc2_1_1_command_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_base.html#ae03b1c6ce3a67b2ba0b401e6f5fdb18b">SetSubsystem</a> (std::string_view subsystem)</td></tr>
+<tr class="memitem:ae03b1c6ce3a67b2ba0b401e6f5fdb18b inherit pub_methods_classfrc2_1_1_command_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_base.html#ae03b1c6ce3a67b2ba0b401e6f5fdb18b">SetSubsystem</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> subsystem)</td></tr>
 <tr class="memdesc:ae03b1c6ce3a67b2ba0b401e6f5fdb18b inherit pub_methods_classfrc2_1_1_command_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the subsystem name of this <a class="el" href="classfrc2_1_1_command.html" title="A state machine representing a complete action to be performed by the robot.">Command</a>.  <a href="classfrc2_1_1_command_base.html#ae03b1c6ce3a67b2ba0b401e6f5fdb18b">More...</a><br /></td></tr>
 <tr class="separator:ae03b1c6ce3a67b2ba0b401e6f5fdb18b inherit pub_methods_classfrc2_1_1_command_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a805d7e700007025500de08d88d53a1e8 inherit pub_methods_classfrc2_1_1_command_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_base.html#a805d7e700007025500de08d88d53a1e8">InitSendable</a> (<a class="el" href="classwpi_1_1_sendable_builder.html">wpi::SendableBuilder</a> &amp;builder) override</td></tr>
 <tr class="memdesc:a805d7e700007025500de08d88d53a1e8 inherit pub_methods_classfrc2_1_1_command_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes this Sendable object.  <a href="classfrc2_1_1_command_base.html#a805d7e700007025500de08d88d53a1e8">More...</a><br /></td></tr>
 <tr class="separator:a805d7e700007025500de08d88d53a1e8 inherit pub_methods_classfrc2_1_1_command_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classfrc2_1_1_command"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classfrc2_1_1_command')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classfrc2_1_1_command.html">frc2::Command</a></td></tr>
-<tr class="memitem:a75bc77ad3055ea5c8d7eba4f9b184026 inherit pub_methods_classfrc2_1_1_command"><td class="memItemLeft" align="right" valign="top"><a id="a75bc77ad3055ea5c8d7eba4f9b184026" name="a75bc77ad3055ea5c8d7eba4f9b184026"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Command</b> (const <a class="el" href="classfrc2_1_1_command.html">Command</a> &amp;)=default</td></tr>
+<tr class="memitem:a7d5d23157039a66b8a5fb1967edf0a10 inherit pub_methods_classfrc2_1_1_command"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command.html#a7d5d23157039a66b8a5fb1967edf0a10">Command</a> ()=default</td></tr>
+<tr class="separator:a7d5d23157039a66b8a5fb1967edf0a10 inherit pub_methods_classfrc2_1_1_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35c2255741bd5841d1c693af1cc833aa inherit pub_methods_classfrc2_1_1_command"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command.html#a35c2255741bd5841d1c693af1cc833aa">~Command</a> ()</td></tr>
+<tr class="separator:a35c2255741bd5841d1c693af1cc833aa inherit pub_methods_classfrc2_1_1_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75bc77ad3055ea5c8d7eba4f9b184026 inherit pub_methods_classfrc2_1_1_command"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command.html#a75bc77ad3055ea5c8d7eba4f9b184026">Command</a> (const <a class="el" href="classfrc2_1_1_command.html">Command</a> &amp;)=default</td></tr>
 <tr class="separator:a75bc77ad3055ea5c8d7eba4f9b184026 inherit pub_methods_classfrc2_1_1_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa53c83ad502c48906767c8eef16ee096 inherit pub_methods_classfrc2_1_1_command"><td class="memItemLeft" align="right" valign="top"><a id="aa53c83ad502c48906767c8eef16ee096" name="aa53c83ad502c48906767c8eef16ee096"></a>
-<a class="el" href="classfrc2_1_1_command.html">Command</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classfrc2_1_1_command.html">Command</a> &amp;rhs)</td></tr>
+<tr class="memitem:aa53c83ad502c48906767c8eef16ee096 inherit pub_methods_classfrc2_1_1_command"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command.html">Command</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command.html#aa53c83ad502c48906767c8eef16ee096">operator=</a> (const <a class="el" href="classfrc2_1_1_command.html">Command</a> &amp;rhs)</td></tr>
 <tr class="separator:aa53c83ad502c48906767c8eef16ee096 inherit pub_methods_classfrc2_1_1_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21996b687122162a9a5a9d30b929aa57 inherit pub_methods_classfrc2_1_1_command"><td class="memItemLeft" align="right" valign="top"><a id="a21996b687122162a9a5a9d30b929aa57" name="a21996b687122162a9a5a9d30b929aa57"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Command</b> (<a class="el" href="classfrc2_1_1_command.html">Command</a> &amp;&amp;)=default</td></tr>
+<tr class="memitem:a21996b687122162a9a5a9d30b929aa57 inherit pub_methods_classfrc2_1_1_command"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command.html#a21996b687122162a9a5a9d30b929aa57">Command</a> (<a class="el" href="classfrc2_1_1_command.html">Command</a> &amp;&amp;)=default</td></tr>
 <tr class="separator:a21996b687122162a9a5a9d30b929aa57 inherit pub_methods_classfrc2_1_1_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6a11135027cc8dc6917a6b290c109ea inherit pub_methods_classfrc2_1_1_command"><td class="memItemLeft" align="right" valign="top"><a id="ae6a11135027cc8dc6917a6b290c109ea" name="ae6a11135027cc8dc6917a6b290c109ea"></a>
-<a class="el" href="classfrc2_1_1_command.html">Command</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classfrc2_1_1_command.html">Command</a> &amp;&amp;)=default</td></tr>
+<tr class="memitem:ae6a11135027cc8dc6917a6b290c109ea inherit pub_methods_classfrc2_1_1_command"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_command.html">Command</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command.html#ae6a11135027cc8dc6917a6b290c109ea">operator=</a> (<a class="el" href="classfrc2_1_1_command.html">Command</a> &amp;&amp;)=default</td></tr>
 <tr class="separator:ae6a11135027cc8dc6917a6b290c109ea inherit pub_methods_classfrc2_1_1_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5e8c12152d195a4f3c06789366aac88 inherit pub_methods_classfrc2_1_1_command"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command.html#af5e8c12152d195a4f3c06789366aac88">IsFinished</a> ()</td></tr>
 <tr class="memdesc:af5e8c12152d195a4f3c06789366aac88 inherit pub_methods_classfrc2_1_1_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the command has finished.  <a href="classfrc2_1_1_command.html#af5e8c12152d195a4f3c06789366aac88">More...</a><br /></td></tr>
@@ -223,9 +224,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa9920c649ab4ac6f37155e19f348145e inherit pub_methods_classfrc2_1_1_command"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command.html#aa9920c649ab4ac6f37155e19f348145e">Schedule</a> (bool interruptible)</td></tr>
 <tr class="memdesc:aa9920c649ab4ac6f37155e19f348145e inherit pub_methods_classfrc2_1_1_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedules this command.  <a href="classfrc2_1_1_command.html#aa9920c649ab4ac6f37155e19f348145e">More...</a><br /></td></tr>
 <tr class="separator:aa9920c649ab4ac6f37155e19f348145e inherit pub_methods_classfrc2_1_1_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad777fdfaac1d3f0668086fe783700710 inherit pub_methods_classfrc2_1_1_command"><td class="memItemLeft" align="right" valign="top"><a id="ad777fdfaac1d3f0668086fe783700710" name="ad777fdfaac1d3f0668086fe783700710"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Schedule</b> ()</td></tr>
-<tr class="memdesc:ad777fdfaac1d3f0668086fe783700710 inherit pub_methods_classfrc2_1_1_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedules this command, defaulting to interruptible. <br /></td></tr>
+<tr class="memitem:ad777fdfaac1d3f0668086fe783700710 inherit pub_methods_classfrc2_1_1_command"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command.html#ad777fdfaac1d3f0668086fe783700710">Schedule</a> ()</td></tr>
+<tr class="memdesc:ad777fdfaac1d3f0668086fe783700710 inherit pub_methods_classfrc2_1_1_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedules this command, defaulting to interruptible.  <a href="classfrc2_1_1_command.html#ad777fdfaac1d3f0668086fe783700710">More...</a><br /></td></tr>
 <tr class="separator:ad777fdfaac1d3f0668086fe783700710 inherit pub_methods_classfrc2_1_1_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0530e175903b9e2721600d728aa251f5 inherit pub_methods_classfrc2_1_1_command"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command.html#a0530e175903b9e2721600d728aa251f5">Cancel</a> ()</td></tr>
 <tr class="memdesc:a0530e175903b9e2721600d728aa251f5 inherit pub_methods_classfrc2_1_1_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancels this command.  <a href="classfrc2_1_1_command.html#a0530e175903b9e2721600d728aa251f5">More...</a><br /></td></tr>
@@ -245,56 +245,49 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Schedule</b> ()</td><
 <tr class="memitem:a5113cbf3655ce8679dd48bf22700b2f4 inherit pub_methods_classfrc2_1_1_command"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command.html#a5113cbf3655ce8679dd48bf22700b2f4">RunsWhenDisabled</a> () const</td></tr>
 <tr class="memdesc:a5113cbf3655ce8679dd48bf22700b2f4 inherit pub_methods_classfrc2_1_1_command"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the given command should run when the robot is disabled.  <a href="classfrc2_1_1_command.html#a5113cbf3655ce8679dd48bf22700b2f4">More...</a><br /></td></tr>
 <tr class="separator:a5113cbf3655ce8679dd48bf22700b2f4 inherit pub_methods_classfrc2_1_1_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classwpi_1_1_sendable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classwpi_1_1_sendable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classwpi_1_1_sendable.html">wpi::Sendable</a></td></tr>
+<tr class="memitem:a37e52c8d490b4cecf5e6fa7e7d47e7ec inherit pub_methods_classwpi_1_1_sendable"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable.html#a37e52c8d490b4cecf5e6fa7e7d47e7ec">~Sendable</a> ()=default</td></tr>
+<tr class="separator:a37e52c8d490b4cecf5e6fa7e7d47e7ec inherit pub_methods_classwpi_1_1_sendable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classwpi_1_1_sendable_helper"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classwpi_1_1_sendable_helper')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classwpi_1_1_sendable_helper.html">wpi::SendableHelper&lt; CommandBase &gt;</a></td></tr>
-<tr class="memitem:aab4f8627d10ab759fb1ea1bbcd106a90 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top"><a id="aab4f8627d10ab759fb1ea1bbcd106a90" name="aab4f8627d10ab759fb1ea1bbcd106a90"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SendableHelper</b> (const <a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;rhs)=default</td></tr>
+<tr class="memitem:aab4f8627d10ab759fb1ea1bbcd106a90 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#aab4f8627d10ab759fb1ea1bbcd106a90">SendableHelper</a> (const <a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;rhs)=default</td></tr>
 <tr class="separator:aab4f8627d10ab759fb1ea1bbcd106a90 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf9409670bb9b5cc16706341bf082c23 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top"><a id="aaf9409670bb9b5cc16706341bf082c23" name="aaf9409670bb9b5cc16706341bf082c23"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SendableHelper</b> (<a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;&amp;rhs)</td></tr>
+<tr class="memitem:aaf9409670bb9b5cc16706341bf082c23 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#aaf9409670bb9b5cc16706341bf082c23">SendableHelper</a> (<a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;&amp;rhs)</td></tr>
 <tr class="separator:aaf9409670bb9b5cc16706341bf082c23 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa52795f3b4aafc83fb167921dee31e2 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top"><a id="afa52795f3b4aafc83fb167921dee31e2" name="afa52795f3b4aafc83fb167921dee31e2"></a>
-<a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;rhs)=default</td></tr>
+<tr class="memitem:afa52795f3b4aafc83fb167921dee31e2 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#afa52795f3b4aafc83fb167921dee31e2">operator=</a> (const <a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;rhs)=default</td></tr>
 <tr class="separator:afa52795f3b4aafc83fb167921dee31e2 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ebcd20db42c07ce8835be6bbcdddb70 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top"><a id="a7ebcd20db42c07ce8835be6bbcdddb70" name="a7ebcd20db42c07ce8835be6bbcdddb70"></a>
-<a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;&amp;rhs)</td></tr>
+<tr class="memitem:a7ebcd20db42c07ce8835be6bbcdddb70 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a7ebcd20db42c07ce8835be6bbcdddb70">operator=</a> (<a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;&amp;rhs)</td></tr>
 <tr class="separator:a7ebcd20db42c07ce8835be6bbcdddb70 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad914b3555af5651aaaa3d8b1cec83b91 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#ad914b3555af5651aaaa3d8b1cec83b91">GetName</a> () const</td></tr>
 <tr class="memdesc:ad914b3555af5651aaaa3d8b1cec83b91 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the name of this Sendable object.  <a href="classwpi_1_1_sendable_helper.html#ad914b3555af5651aaaa3d8b1cec83b91">More...</a><br /></td></tr>
 <tr class="separator:ad914b3555af5651aaaa3d8b1cec83b91 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab63e9f45842f45bfe5332041be0ef215 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#ab63e9f45842f45bfe5332041be0ef215">SetName</a> (std::string_view name)</td></tr>
+<tr class="memitem:ab63e9f45842f45bfe5332041be0ef215 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#ab63e9f45842f45bfe5332041be0ef215">SetName</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> <a class="el" href="core_8h.html#a7fc0249f0f8ba720115d2430f5b86cbaab068931cc450442b63f5b3d276ea4297">name</a>)</td></tr>
 <tr class="memdesc:ab63e9f45842f45bfe5332041be0ef215 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name of this Sendable object.  <a href="classwpi_1_1_sendable_helper.html#ab63e9f45842f45bfe5332041be0ef215">More...</a><br /></td></tr>
 <tr class="separator:ab63e9f45842f45bfe5332041be0ef215 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75eba171de041df5ccdd8118287f9511 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a75eba171de041df5ccdd8118287f9511">SetName</a> (std::string_view subsystem, std::string_view name)</td></tr>
+<tr class="memitem:a75eba171de041df5ccdd8118287f9511 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a75eba171de041df5ccdd8118287f9511">SetName</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> subsystem, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> <a class="el" href="core_8h.html#a7fc0249f0f8ba720115d2430f5b86cbaab068931cc450442b63f5b3d276ea4297">name</a>)</td></tr>
 <tr class="memdesc:a75eba171de041df5ccdd8118287f9511 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets both the subsystem name and device name of this Sendable object.  <a href="classwpi_1_1_sendable_helper.html#a75eba171de041df5ccdd8118287f9511">More...</a><br /></td></tr>
 <tr class="separator:a75eba171de041df5ccdd8118287f9511 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae661490f5da84e30594380eeb5d4952b inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#ae661490f5da84e30594380eeb5d4952b">GetSubsystem</a> () const</td></tr>
 <tr class="memdesc:ae661490f5da84e30594380eeb5d4952b inherit pub_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the subsystem name of this Sendable object.  <a href="classwpi_1_1_sendable_helper.html#ae661490f5da84e30594380eeb5d4952b">More...</a><br /></td></tr>
 <tr class="separator:ae661490f5da84e30594380eeb5d4952b inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11434f29c9ef91c9975969fb88212482 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a11434f29c9ef91c9975969fb88212482">SetSubsystem</a> (std::string_view subsystem)</td></tr>
+<tr class="memitem:a11434f29c9ef91c9975969fb88212482 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a11434f29c9ef91c9975969fb88212482">SetSubsystem</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> subsystem)</td></tr>
 <tr class="memdesc:a11434f29c9ef91c9975969fb88212482 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the subsystem name of this Sendable object.  <a href="classwpi_1_1_sendable_helper.html#a11434f29c9ef91c9975969fb88212482">More...</a><br /></td></tr>
 <tr class="separator:a11434f29c9ef91c9975969fb88212482 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:ae70788622409990009f85b4a6fa246d4"><td class="memItemLeft" align="right" valign="top"><a id="ae70788622409990009f85b4a6fa246d4" name="ae70788622409990009f85b4a6fa246d4"></a>
-<a class="el" href="classfrc2_1_1_p_i_d_controller.html">PIDController</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_controller</b></td></tr>
+<tr class="memitem:ae70788622409990009f85b4a6fa246d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc2_1_1_p_i_d_controller.html">PIDController</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_p_i_d_command.html#ae70788622409990009f85b4a6fa246d4">m_controller</a></td></tr>
 <tr class="separator:ae70788622409990009f85b4a6fa246d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47c896b94790d0943878a0d960413688"><td class="memItemLeft" align="right" valign="top"><a id="a47c896b94790d0943878a0d960413688" name="a47c896b94790d0943878a0d960413688"></a>
-std::function&lt; double()&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_measurement</b></td></tr>
+<tr class="memitem:a47c896b94790d0943878a0d960413688"><td class="memItemLeft" align="right" valign="top">std::function&lt; double()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_p_i_d_command.html#a47c896b94790d0943878a0d960413688">m_measurement</a></td></tr>
 <tr class="separator:a47c896b94790d0943878a0d960413688"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeac7bae30151d8f3fae7d0e00632e36d"><td class="memItemLeft" align="right" valign="top"><a id="aeac7bae30151d8f3fae7d0e00632e36d" name="aeac7bae30151d8f3fae7d0e00632e36d"></a>
-std::function&lt; double()&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_setpoint</b></td></tr>
+<tr class="memitem:aeac7bae30151d8f3fae7d0e00632e36d"><td class="memItemLeft" align="right" valign="top">std::function&lt; double()&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_p_i_d_command.html#aeac7bae30151d8f3fae7d0e00632e36d">m_setpoint</a></td></tr>
 <tr class="separator:aeac7bae30151d8f3fae7d0e00632e36d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ae2a0f17d0231596aa0df34771c8d4c"><td class="memItemLeft" align="right" valign="top"><a id="a6ae2a0f17d0231596aa0df34771c8d4c" name="a6ae2a0f17d0231596aa0df34771c8d4c"></a>
-std::function&lt; void(double)&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_useOutput</b></td></tr>
+<tr class="memitem:a6ae2a0f17d0231596aa0df34771c8d4c"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(double)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_p_i_d_command.html#a6ae2a0f17d0231596aa0df34771c8d4c">m_useOutput</a></td></tr>
 <tr class="separator:a6ae2a0f17d0231596aa0df34771c8d4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classfrc2_1_1_command_base"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classfrc2_1_1_command_base')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classfrc2_1_1_command_base.html">frc2::CommandBase</a></td></tr>
-<tr class="memitem:a48dd8f10481cd16e75fb9c6cb49ccbb6 inherit pro_attribs_classfrc2_1_1_command_base"><td class="memItemLeft" align="right" valign="top"><a id="a48dd8f10481cd16e75fb9c6cb49ccbb6" name="a48dd8f10481cd16e75fb9c6cb49ccbb6"></a>
-<a class="el" href="classwpi_1_1_small_set.html">wpi::SmallSet</a>&lt; <a class="el" href="classfrc2_1_1_subsystem.html">Subsystem</a> *, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_requirements</b></td></tr>
+<tr class="memitem:a48dd8f10481cd16e75fb9c6cb49ccbb6 inherit pro_attribs_classfrc2_1_1_command_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1_small_set.html">wpi::SmallSet</a>&lt; <a class="el" href="classfrc2_1_1_subsystem.html">Subsystem</a> *, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_base.html#a48dd8f10481cd16e75fb9c6cb49ccbb6">m_requirements</a></td></tr>
 <tr class="separator:a48dd8f10481cd16e75fb9c6cb49ccbb6 inherit pro_attribs_classfrc2_1_1_command_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classfrc2_1_1_command"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classfrc2_1_1_command')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classfrc2_1_1_command.html">frc2::Command</a></td></tr>
-<tr class="memitem:a3e88666fcca3af7a516176a2a18dfb6c inherit pro_attribs_classfrc2_1_1_command"><td class="memItemLeft" align="right" valign="top"><a id="a3e88666fcca3af7a516176a2a18dfb6c" name="a3e88666fcca3af7a516176a2a18dfb6c"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isGrouped</b> = false</td></tr>
+<tr class="memitem:a3e88666fcca3af7a516176a2a18dfb6c inherit pro_attribs_classfrc2_1_1_command"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command.html#a3e88666fcca3af7a516176a2a18dfb6c">m_isGrouped</a> = false</td></tr>
 <tr class="separator:a3e88666fcca3af7a516176a2a18dfb6c inherit pro_attribs_classfrc2_1_1_command"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
@@ -302,11 +295,16 @@ Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_classfrc2_1_1_command_helper"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classfrc2_1_1_command_helper')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classfrc2_1_1_command_helper.html">frc2::CommandHelper&lt; CommandBase, PIDCommand &gt;</a></td></tr>
 <tr class="memitem:a05443b01df9dfcefdc191f0714bb3f07 inherit pro_methods_classfrc2_1_1_command_helper"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classfrc2_1_1_command.html">Command</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_helper.html#a05443b01df9dfcefdc191f0714bb3f07">TransferOwnership</a> () &amp;&amp;override</td></tr>
 <tr class="separator:a05443b01df9dfcefdc191f0714bb3f07 inherit pro_methods_classfrc2_1_1_command_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classfrc2_1_1_command_base"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classfrc2_1_1_command_base')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classfrc2_1_1_command_base.html">frc2::CommandBase</a></td></tr>
+<tr class="memitem:afbb8296539ba60bb84e99460a841e526 inherit pro_methods_classfrc2_1_1_command_base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc2_1_1_command_base.html#afbb8296539ba60bb84e99460a841e526">CommandBase</a> ()</td></tr>
+<tr class="separator:afbb8296539ba60bb84e99460a841e526 inherit pro_methods_classfrc2_1_1_command_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classwpi_1_1_sendable_helper"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classwpi_1_1_sendable_helper')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classwpi_1_1_sendable_helper.html">wpi::SendableHelper&lt; CommandBase &gt;</a></td></tr>
-<tr class="memitem:a4cc45e3b86841263aaf59223ffeb3c88 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a4cc45e3b86841263aaf59223ffeb3c88">SetName</a> (std::string_view moduleType, int channel)</td></tr>
+<tr class="memitem:af21a49b911f282fddbb22deca3c9aab5 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#af21a49b911f282fddbb22deca3c9aab5">SendableHelper</a> ()=default</td></tr>
+<tr class="separator:af21a49b911f282fddbb22deca3c9aab5 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cc45e3b86841263aaf59223ffeb3c88 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a4cc45e3b86841263aaf59223ffeb3c88">SetName</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> moduleType, int channel)</td></tr>
 <tr class="memdesc:a4cc45e3b86841263aaf59223ffeb3c88 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name of the sensor with a channel number.  <a href="classwpi_1_1_sendable_helper.html#a4cc45e3b86841263aaf59223ffeb3c88">More...</a><br /></td></tr>
 <tr class="separator:a4cc45e3b86841263aaf59223ffeb3c88 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2953192a91f457768c3d879599ee924 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#ab2953192a91f457768c3d879599ee924">SetName</a> (std::string_view moduleType, int moduleNumber, int channel)</td></tr>
+<tr class="memitem:ab2953192a91f457768c3d879599ee924 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#ab2953192a91f457768c3d879599ee924">SetName</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> moduleType, int moduleNumber, int channel)</td></tr>
 <tr class="memdesc:ab2953192a91f457768c3d879599ee924 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name of the sensor with a module and channel number.  <a href="classwpi_1_1_sendable_helper.html#ab2953192a91f457768c3d879599ee924">More...</a><br /></td></tr>
 <tr class="separator:ab2953192a91f457768c3d879599ee924 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ce2af28692ec77440d09ab8c2d36425 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a7ce2af28692ec77440d09ab8c2d36425">AddChild</a> (std::shared_ptr&lt; <a class="el" href="classwpi_1_1_sendable.html">Sendable</a> &gt; child)</td></tr>
@@ -315,14 +313,16 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a3e272258586ef98d2c1b8f6be76a1663 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a3e272258586ef98d2c1b8f6be76a1663">AddChild</a> (void *child)</td></tr>
 <tr class="memdesc:a3e272258586ef98d2c1b8f6be76a1663 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a child component.  <a href="classwpi_1_1_sendable_helper.html#a3e272258586ef98d2c1b8f6be76a1663">More...</a><br /></td></tr>
 <tr class="separator:a3e272258586ef98d2c1b8f6be76a1663 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b89fa1cc66e9d7b32eaa7df291e2c3b inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a4b89fa1cc66e9d7b32eaa7df291e2c3b">~SendableHelper</a> ()</td></tr>
+<tr class="separator:a4b89fa1cc66e9d7b32eaa7df291e2c3b inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >A command that controls an output with a <a class="el" href="classfrc2_1_1_p_i_d_controller.html" title="Implements a PID control loop.">PIDController</a>. </p>
-<p >Runs forever by default - to add exit conditions and/or other behavior, subclass this class. The controller calculation and output are performed synchronously in the command's execute() method.</p>
+<p >Runs forever by default - to add exit conditions and/or other behavior, subclass this class. The controller calculation and output are performed synchronously in the command's <a class="el" href="_third_party_notices_8txt.html#a89981af9ca50b455aa990c9990b34181">execute()</a> method.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classfrc2_1_1_p_i_d_controller.html" title="Implements a PID control loop.">PIDController</a> </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a39bdb2ce76d4dd13160e3bfc70e8a118" name="a39bdb2ce76d4dd13160e3bfc70e8a118"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39bdb2ce76d4dd13160e3bfc70e8a118">&#9670;&nbsp;</a></span>PIDCommand() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a39bdb2ce76d4dd13160e3bfc70e8a118">&#9670;&nbsp;</a></span>PIDCommand() <span class="overload">[1/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -380,7 +380,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a449a344d61d48d0e6badc6f661838f47" name="a449a344d61d48d0e6badc6f661838f47"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a449a344d61d48d0e6badc6f661838f47">&#9670;&nbsp;</a></span>PIDCommand() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a449a344d61d48d0e6badc6f661838f47">&#9670;&nbsp;</a></span>PIDCommand() <span class="overload">[2/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -438,7 +438,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a6e9c4a9afa9c841a96cab6e1b750aa61" name="a6e9c4a9afa9c841a96cab6e1b750aa61"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e9c4a9afa9c841a96cab6e1b750aa61">&#9670;&nbsp;</a></span>PIDCommand() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e9c4a9afa9c841a96cab6e1b750aa61">&#9670;&nbsp;</a></span>PIDCommand() <span class="overload">[3/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -496,7 +496,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="ad2e9d593fc57730195d8ba4e9735e00b" name="ad2e9d593fc57730195d8ba4e9735e00b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2e9d593fc57730195d8ba4e9735e00b">&#9670;&nbsp;</a></span>PIDCommand() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2e9d593fc57730195d8ba4e9735e00b">&#9670;&nbsp;</a></span>PIDCommand() <span class="overload">[4/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -550,6 +550,58 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a3abdcab93187f856f4050fb28981ef9b" name="a3abdcab93187f856f4050fb28981ef9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3abdcab93187f856f4050fb28981ef9b">&#9670;&nbsp;</a></span>PIDCommand() <span class="overload">[5/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">frc2::PIDCommand::PIDCommand </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classfrc2_1_1_p_i_d_command.html">PIDCommand</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad8dc931c8c3b1cfad8e788dbc02c8110" name="ad8dc931c8c3b1cfad8e788dbc02c8110"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8dc931c8c3b1cfad8e788dbc02c8110">&#9670;&nbsp;</a></span>PIDCommand() <span class="overload">[6/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">frc2::PIDCommand::PIDCommand </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classfrc2_1_1_p_i_d_command.html">PIDCommand</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -671,6 +723,95 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ae70788622409990009f85b4a6fa246d4" name="ae70788622409990009f85b4a6fa246d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae70788622409990009f85b4a6fa246d4">&#9670;&nbsp;</a></span>m_controller</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfrc2_1_1_p_i_d_controller.html">PIDController</a> frc2::PIDCommand::m_controller</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a47c896b94790d0943878a0d960413688" name="a47c896b94790d0943878a0d960413688"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47c896b94790d0943878a0d960413688">&#9670;&nbsp;</a></span>m_measurement</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;double()&gt; frc2::PIDCommand::m_measurement</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeac7bae30151d8f3fae7d0e00632e36d" name="aeac7bae30151d8f3fae7d0e00632e36d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeac7bae30151d8f3fae7d0e00632e36d">&#9670;&nbsp;</a></span>m_setpoint</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;double()&gt; frc2::PIDCommand::m_setpoint</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6ae2a0f17d0231596aa0df34771c8d4c" name="a6ae2a0f17d0231596aa0df34771c8d4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ae2a0f17d0231596aa0df34771c8d4c">&#9670;&nbsp;</a></span>m_useOutput</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;void(double)&gt; frc2::PIDCommand::m_useOutput</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>frc2/command/<a class="el" href="wpilib_new_commands_2src_2main_2native_2include_2frc2_2command_2_p_i_d_command_8h_source.html">PIDCommand.h</a></li>
 </ul>
@@ -679,8 +820,8 @@ Additional Inherited Members</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>frc2</b></li><li class="navelem"><a class="el" href="classfrc2_1_1_p_i_d_command.html">PIDCommand</a></li>
-    <li class="footer">Generated on Fri Oct 29 2021 07:12:29 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespacefrc2.html">frc2</a></li><li class="navelem"><a class="el" href="classfrc2_1_1_p_i_d_command.html">PIDCommand</a></li>
+    <li class="footer">Generated on Fri Oct 29 2021 22:10:08 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

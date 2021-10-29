@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-31-ga939cd9</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-32-g2cb171f</span>
    </div>
   </td>
  </tr>
@@ -282,7 +282,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Obtain a new <a class="el" href="classfrc_1_1_pose2d.html" title="Represents a 2d pose containing translational and rotational elements.">Pose2d</a> from a (constant curvature) velocity. </p>
 <p >See <a href="https://file.tavsys.net/control/controls-engineering-in-frc.pdf">https://file.tavsys.net/control/controls-engineering-in-frc.pdf</a> section 10.2 "Pose exponential" for a derivation.</p>
-<p >The twist is a change in pose in the robot's coordinate frame since the previous pose update. When the user runs exp() on the previous known field-relative pose with the argument being the twist, the user will receive the new field-relative pose.</p>
+<p >The twist is a change in pose in the robot's coordinate frame since the previous pose update. When the user runs <a class="el" href="group___unit_math.html#ga37ffdd257c05eb6916d62bfbbc0890e2" title="Compute exponential function.">exp()</a> on the previous known field-relative pose with the argument being the twist, the user will receive the new field-relative pose.</p>
 <p >"Exp" represents the pose exponential, which is solving a differential equation moving the pose forward in time.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -329,7 +329,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool frc::Pose2d::operator!= </td>
+          <td class="memname">bool <a class="el" href="_array_cwise_unary_ops_8h.html#aa198852a6b380257ea3e34c8f7e6e250">frc::Pose2d::operator!</a>= </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
@@ -607,8 +607,8 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a></li>
-    <li class="footer">Generated on Fri Oct 29 2021 07:12:28 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a></li>
+    <li class="footer">Generated on Fri Oct 29 2021 22:10:07 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

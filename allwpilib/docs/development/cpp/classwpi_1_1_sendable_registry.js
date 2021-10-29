@@ -1,6 +1,8 @@
 var classwpi_1_1_sendable_registry =
 [
-    [ "CallbackData", "structwpi_1_1_sendable_registry_1_1_callback_data.html", null ],
+    [ "CallbackData", "structwpi_1_1_sendable_registry_1_1_callback_data.html", "structwpi_1_1_sendable_registry_1_1_callback_data" ],
+    [ "UID", "classwpi_1_1_sendable_registry.html#a23d07149568824b882e8884c81f111b5", null ],
+    [ "SendableRegistry", "classwpi_1_1_sendable_registry.html#a30fe1c146038649c8e3a3d26bbb0dafa", null ],
     [ "Add", "classwpi_1_1_sendable_registry.html#a562eb25bed5a3d1fa5c34a9d6084e682", null ],
     [ "Add", "classwpi_1_1_sendable_registry.html#af3730b99c18ef7fb478f70b32958101c", null ],
     [ "Add", "classwpi_1_1_sendable_registry.html#a9d07042fc7ece10e3db64d48c0061457", null ],

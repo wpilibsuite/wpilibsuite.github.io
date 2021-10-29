@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-31-ga939cd9</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-32-g2cb171f</span>
    </div>
   </td>
  </tr>
@@ -97,6 +97,8 @@ $(document).ready(function(){initNavTree('classwpi_1_1detail_1_1_promise_factory
   <div class="headertitle"><div class="title">wpi::detail::PromiseFactoryBase Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="future_8h_source.html">wpi/future.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for wpi::detail::PromiseFactoryBase:</div>
 <div class="dyncontent">
@@ -110,35 +112,264 @@ Inheritance diagram for wpi::detail::PromiseFactoryBase:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aea85a69e245aa87ac1c5a09138410a9c"><td class="memItemLeft" align="right" valign="top"><a id="aea85a69e245aa87ac1c5a09138410a9c" name="aea85a69e245aa87ac1c5a09138410a9c"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsActive</b> () const</td></tr>
+<tr class="memitem:a92bf84c89d5fc79a59b318d74f76fa64"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1detail_1_1_promise_factory_base.html#a92bf84c89d5fc79a59b318d74f76fa64">~PromiseFactoryBase</a> ()</td></tr>
+<tr class="separator:a92bf84c89d5fc79a59b318d74f76fa64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea85a69e245aa87ac1c5a09138410a9c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1detail_1_1_promise_factory_base.html#aea85a69e245aa87ac1c5a09138410a9c">IsActive</a> () const</td></tr>
 <tr class="separator:aea85a69e245aa87ac1c5a09138410a9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31d33048b9a8b4ac7f61f2d47404af0a"><td class="memItemLeft" align="right" valign="top"><a id="a31d33048b9a8b4ac7f61f2d47404af0a" name="a31d33048b9a8b4ac7f61f2d47404af0a"></a>
-wpi::mutex &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetResultMutex</b> ()</td></tr>
+<tr class="memitem:a31d33048b9a8b4ac7f61f2d47404af0a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacewpi.html#a59819be5b11c0fbbc0b8e07c7638af24">wpi::mutex</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1detail_1_1_promise_factory_base.html#a31d33048b9a8b4ac7f61f2d47404af0a">GetResultMutex</a> ()</td></tr>
 <tr class="separator:a31d33048b9a8b4ac7f61f2d47404af0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f402f441bde82bd0ec45107da47d359"><td class="memItemLeft" align="right" valign="top"><a id="a5f402f441bde82bd0ec45107da47d359" name="a5f402f441bde82bd0ec45107da47d359"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Notify</b> ()</td></tr>
+<tr class="memitem:a5f402f441bde82bd0ec45107da47d359"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1detail_1_1_promise_factory_base.html#a5f402f441bde82bd0ec45107da47d359">Notify</a> ()</td></tr>
 <tr class="separator:a5f402f441bde82bd0ec45107da47d359"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a078ef44d21dcc346b852ffa74ac75b3c"><td class="memItemLeft" align="right" valign="top"><a id="a078ef44d21dcc346b852ffa74ac75b3c" name="a078ef44d21dcc346b852ffa74ac75b3c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Wait</b> (std::unique_lock&lt; wpi::mutex &gt; &amp;lock)</td></tr>
+<tr class="memitem:a078ef44d21dcc346b852ffa74ac75b3c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1detail_1_1_promise_factory_base.html#a078ef44d21dcc346b852ffa74ac75b3c">Wait</a> (std::unique_lock&lt; <a class="el" href="namespacewpi.html#a59819be5b11c0fbbc0b8e07c7638af24">wpi::mutex</a> &gt; &amp;lock)</td></tr>
 <tr class="separator:a078ef44d21dcc346b852ffa74ac75b3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ad15c96d105f83f506f386b188950af"><td class="memTemplParams" colspan="2"><a id="a7ad15c96d105f83f506f386b188950af" name="a7ad15c96d105f83f506f386b188950af"></a>
-template&lt;class Clock , class Duration &gt; </td></tr>
-<tr class="memitem:a7ad15c96d105f83f506f386b188950af"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>WaitUntil</b> (std::unique_lock&lt; wpi::mutex &gt; &amp;lock, const std::chrono::time_point&lt; Clock, Duration &gt; &amp;timeout_time)</td></tr>
+<tr class="memitem:a7ad15c96d105f83f506f386b188950af"><td class="memTemplParams" colspan="2">template&lt;class Clock , class Duration &gt; </td></tr>
+<tr class="memitem:a7ad15c96d105f83f506f386b188950af"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwpi_1_1detail_1_1_promise_factory_base.html#a7ad15c96d105f83f506f386b188950af">WaitUntil</a> (std::unique_lock&lt; <a class="el" href="namespacewpi.html#a59819be5b11c0fbbc0b8e07c7638af24">wpi::mutex</a> &gt; &amp;lock, const std::chrono::time_point&lt; Clock, Duration &gt; &amp;timeout_time)</td></tr>
 <tr class="separator:a7ad15c96d105f83f506f386b188950af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e62f9f23d578fda6762fd7c849d3d66"><td class="memItemLeft" align="right" valign="top"><a id="a0e62f9f23d578fda6762fd7c849d3d66" name="a0e62f9f23d578fda6762fd7c849d3d66"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>IgnoreResult</b> (uint64_t request)</td></tr>
+<tr class="memitem:a0e62f9f23d578fda6762fd7c849d3d66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1detail_1_1_promise_factory_base.html#a0e62f9f23d578fda6762fd7c849d3d66">IgnoreResult</a> (uint64_t request)</td></tr>
 <tr class="separator:a0e62f9f23d578fda6762fd7c849d3d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad23c629206f5963b847986d19d06f207"><td class="memItemLeft" align="right" valign="top"><a id="ad23c629206f5963b847986d19d06f207" name="ad23c629206f5963b847986d19d06f207"></a>
-uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>CreateRequest</b> ()</td></tr>
+<tr class="memitem:ad23c629206f5963b847986d19d06f207"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1detail_1_1_promise_factory_base.html#ad23c629206f5963b847986d19d06f207">CreateRequest</a> ()</td></tr>
 <tr class="separator:ad23c629206f5963b847986d19d06f207"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af771e13849faabaed72a095dbea0f33b"><td class="memItemLeft" align="right" valign="top"><a id="af771e13849faabaed72a095dbea0f33b" name="af771e13849faabaed72a095dbea0f33b"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>EraseRequest</b> (uint64_t request)</td></tr>
+<tr class="memitem:af771e13849faabaed72a095dbea0f33b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1detail_1_1_promise_factory_base.html#af771e13849faabaed72a095dbea0f33b">EraseRequest</a> (uint64_t request)</td></tr>
 <tr class="separator:af771e13849faabaed72a095dbea0f33b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ae24b032b986e8f9a1f00ffc11471b4"><td class="memItemLeft" align="right" valign="top"><a id="a4ae24b032b986e8f9a1f00ffc11471b4" name="a4ae24b032b986e8f9a1f00ffc11471b4"></a>
-uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>CreateErasedRequest</b> ()</td></tr>
+<tr class="memitem:a4ae24b032b986e8f9a1f00ffc11471b4"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1detail_1_1_promise_factory_base.html#a4ae24b032b986e8f9a1f00ffc11471b4">CreateErasedRequest</a> ()</td></tr>
 <tr class="separator:a4ae24b032b986e8f9a1f00ffc11471b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a92bf84c89d5fc79a59b318d74f76fa64" name="a92bf84c89d5fc79a59b318d74f76fa64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92bf84c89d5fc79a59b318d74f76fa64">&#9670;&nbsp;</a></span>~PromiseFactoryBase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">wpi::detail::PromiseFactoryBase::~PromiseFactoryBase </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4ae24b032b986e8f9a1f00ffc11471b4" name="a4ae24b032b986e8f9a1f00ffc11471b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ae24b032b986e8f9a1f00ffc11471b4">&#9670;&nbsp;</a></span>CreateErasedRequest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t wpi::detail::PromiseFactoryBase::CreateErasedRequest </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad23c629206f5963b847986d19d06f207" name="ad23c629206f5963b847986d19d06f207"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad23c629206f5963b847986d19d06f207">&#9670;&nbsp;</a></span>CreateRequest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t wpi::detail::PromiseFactoryBase::CreateRequest </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af771e13849faabaed72a095dbea0f33b" name="af771e13849faabaed72a095dbea0f33b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af771e13849faabaed72a095dbea0f33b">&#9670;&nbsp;</a></span>EraseRequest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool wpi::detail::PromiseFactoryBase::EraseRequest </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>request</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a31d33048b9a8b4ac7f61f2d47404af0a" name="a31d33048b9a8b4ac7f61f2d47404af0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31d33048b9a8b4ac7f61f2d47404af0a">&#9670;&nbsp;</a></span>GetResultMutex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacewpi.html#a59819be5b11c0fbbc0b8e07c7638af24">wpi::mutex</a> &amp; wpi::detail::PromiseFactoryBase::GetResultMutex </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0e62f9f23d578fda6762fd7c849d3d66" name="a0e62f9f23d578fda6762fd7c849d3d66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e62f9f23d578fda6762fd7c849d3d66">&#9670;&nbsp;</a></span>IgnoreResult()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wpi::detail::PromiseFactoryBase::IgnoreResult </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>request</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aea85a69e245aa87ac1c5a09138410a9c" name="aea85a69e245aa87ac1c5a09138410a9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea85a69e245aa87ac1c5a09138410a9c">&#9670;&nbsp;</a></span>IsActive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool wpi::detail::PromiseFactoryBase::IsActive </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5f402f441bde82bd0ec45107da47d359" name="a5f402f441bde82bd0ec45107da47d359"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f402f441bde82bd0ec45107da47d359">&#9670;&nbsp;</a></span>Notify()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wpi::detail::PromiseFactoryBase::Notify </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a078ef44d21dcc346b852ffa74ac75b3c" name="a078ef44d21dcc346b852ffa74ac75b3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a078ef44d21dcc346b852ffa74ac75b3c">&#9670;&nbsp;</a></span>Wait()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wpi::detail::PromiseFactoryBase::Wait </td>
+          <td>(</td>
+          <td class="paramtype">std::unique_lock&lt; <a class="el" href="namespacewpi.html#a59819be5b11c0fbbc0b8e07c7638af24">wpi::mutex</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>lock</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7ad15c96d105f83f506f386b188950af" name="a7ad15c96d105f83f506f386b188950af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ad15c96d105f83f506f386b188950af">&#9670;&nbsp;</a></span>WaitUntil()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Clock , class Duration &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool wpi::detail::PromiseFactoryBase::WaitUntil </td>
+          <td>(</td>
+          <td class="paramtype">std::unique_lock&lt; <a class="el" href="namespacewpi.html#a59819be5b11c0fbbc0b8e07c7638af24">wpi::mutex</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>lock</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::chrono::time_point&lt; Clock, Duration &gt; &amp;&#160;</td>
+          <td class="paramname"><em>timeout_time</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>wpi/<a class="el" href="future_8h_source.html">future.h</a></li>
 </ul>
@@ -147,8 +378,8 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>CreateErasedReque
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>wpi</b></li><li class="navelem"><a class="el" href="namespacewpi_1_1detail.html">detail</a></li><li class="navelem"><a class="el" href="classwpi_1_1detail_1_1_promise_factory_base.html">PromiseFactoryBase</a></li>
-    <li class="footer">Generated on Fri Oct 29 2021 07:12:31 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="namespacewpi_1_1detail.html">detail</a></li><li class="navelem"><a class="el" href="classwpi_1_1detail_1_1_promise_factory_base.html">PromiseFactoryBase</a></li>
+    <li class="footer">Generated on Fri Oct 29 2021 22:10:09 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

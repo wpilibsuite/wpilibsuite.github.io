@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-31-ga939cd9</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-32-g2cb171f</span>
    </div>
   </td>
  </tr>
@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('wpilib_old_commands_2src_2main_2native
   <div class="headertitle"><div class="title">PIDController.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
+<a href="wpilib_old_commands_2src_2main_2native_2include_2frc_2_p_i_d_controller_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Open Source Software; you can modify and/or share it under the terms of</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// the WPILib BSD license file in the root directory of this project.</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
@@ -103,16 +103,16 @@ $(document).ready(function(){initNavTree('wpilib_old_commands_2src_2main_2native
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;wpi/deprecated.h&gt;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;wpi/mutex.h&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;<a class="code" href="deprecated_8h.html">wpi/deprecated.h</a>&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;<a class="code" href="mutex_8h.html">wpi/mutex.h</a>&gt;</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;frc/Controller.h&quot;</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;frc/Notifier.h&quot;</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;frc/PIDBase.h&quot;</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;frc/PIDSource.h&quot;</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;frc/Timer.h&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="_controller_8h.html">frc/Controller.h</a>&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="wpilibc_2src_2main_2native_2include_2frc_2_notifier_8h.html">frc/Notifier.h</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="_p_i_d_base_8h.html">frc/PIDBase.h</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="_p_i_d_source_8h.html">frc/PIDSource.h</a>&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="wpilibc_2src_2main_2native_2include_2frc_2_timer_8h.html">frc/Timer.h</a>&quot;</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">namespace </span>frc {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacefrc.html">frc</a> {</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">class </span>PIDOutput;</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"></span> </div>
@@ -159,7 +159,7 @@ $(document).ready(function(){initNavTree('wpilib_old_commands_2src_2main_2native
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">   *               particularly affects calculations of the integral and</span></div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">   *               differential terms. The default is 0.05 (50ms).</span></div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  WPI_DEPRECATED(&quot;Use frc2::<a class="code hl_class" href="classfrc2_1_1_p_i_d_controller.html">PIDController</a> class instead.&quot;)</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  WPI_DEPRECATED(&quot;Use <a class="code hl_namespace" href="namespacefrc2.html">frc2</a>::<a class="code hl_class" href="classfrc2_1_1_p_i_d_controller.html">PIDController</a> class instead.&quot;)</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="classfrc_1_1_p_i_d_controller.html#aa5a74330cd88013a605faa2dafe488d8">   67</a></span>  <a class="code hl_class" href="classfrc2_1_1_p_i_d_controller.html">PIDController</a>(<span class="keywordtype">double</span> p, <span class="keywordtype">double</span> i, <span class="keywordtype">double</span> d, <span class="keywordtype">double</span> f, <a class="code hl_class" href="classfrc_1_1_p_i_d_source.html">PIDSource</a>* source,</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                <a class="code hl_class" href="classfrc_1_1_p_i_d_output.html">PIDOutput</a>* output, <span class="keywordtype">double</span> period = 0.05);</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment"></span> </div>
@@ -175,7 +175,7 @@ $(document).ready(function(){initNavTree('wpilib_old_commands_2src_2main_2native
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">   *               particularly affects calculations of the integral and</span></div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment">   *               differential terms. The default is 0.05 (50ms).</span></div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  WPI_DEPRECATED(&quot;Use frc2::<a class="code hl_class" href="classfrc2_1_1_p_i_d_controller.html">PIDController</a> class instead.&quot;)</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  WPI_DEPRECATED(&quot;Use <a class="code hl_namespace" href="namespacefrc2.html">frc2</a>::<a class="code hl_class" href="classfrc2_1_1_p_i_d_controller.html">PIDController</a> class instead.&quot;)</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="classfrc_1_1_p_i_d_controller.html#aa777510ee711e7837fc62392971687de">   83</a></span>  <a class="code hl_class" href="classfrc2_1_1_p_i_d_controller.html">PIDController</a>(<span class="keywordtype">double</span> p, <span class="keywordtype">double</span> i, <span class="keywordtype">double</span> d, <a class="code hl_class" href="classfrc_1_1_p_i_d_source.html">PIDSource</a>&amp; source,</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                <a class="code hl_class" href="classfrc_1_1_p_i_d_output.html">PIDOutput</a>&amp; output, <span class="keywordtype">double</span> period = 0.05);</div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment"></span> </div>
@@ -192,11 +192,11 @@ $(document).ready(function(){initNavTree('wpilib_old_commands_2src_2main_2native
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment">   *               particularly affects calculations of the integral and</span></div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment">   *               differential terms. The default is 0.05 (50ms).</span></div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  WPI_DEPRECATED(&quot;Use frc2::<a class="code hl_class" href="classfrc2_1_1_p_i_d_controller.html">PIDController</a> class instead.&quot;)</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  WPI_DEPRECATED(&quot;Use <a class="code hl_namespace" href="namespacefrc2.html">frc2</a>::<a class="code hl_class" href="classfrc2_1_1_p_i_d_controller.html">PIDController</a> class instead.&quot;)</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="classfrc_1_1_p_i_d_controller.html#a64a517248da26bff00547fe4959cedb0">  100</a></span>  <a class="code hl_class" href="classfrc2_1_1_p_i_d_controller.html">PIDController</a>(<span class="keywordtype">double</span> p, <span class="keywordtype">double</span> i, <span class="keywordtype">double</span> d, <span class="keywordtype">double</span> f, <a class="code hl_class" href="classfrc_1_1_p_i_d_source.html">PIDSource</a>&amp; source,</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                <a class="code hl_class" href="classfrc_1_1_p_i_d_output.html">PIDOutput</a>&amp; output, <span class="keywordtype">double</span> period = 0.05);</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  ~<a class="code hl_class" href="classfrc2_1_1_p_i_d_controller.html">PIDController</a>() override;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="classfrc_1_1_p_i_d_controller.html#a272716c61e58ca462d2eca66c18c8681">  103</a></span>  ~<a class="code hl_class" href="classfrc2_1_1_p_i_d_controller.html">PIDController</a>() override;</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment"></span> </div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="comment">   * Begin running the PIDController.</span></div>
@@ -224,13 +224,16 @@ $(document).ready(function(){initNavTree('wpilib_old_commands_2src_2main_2native
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="classfrc_1_1_p_i_d_controller.html#a3b7642aed6f1bd94982004dacc9408a5">  129</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc2_1_1_p_i_d_controller.html#a988b633966b930abd00c19fcea1b5d48">Reset</a>() override;</div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="classfrc_1_1_p_i_d_controller.html#aab0d4629d5b2ec23b6ce9e5ae233e5f6">  131</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc2_1_1_p_i_d_controller.html#a4ad92de9d1f769b437e80b0702a4e27e">InitSendable</a>(wpi::SendableBuilder&amp; builder) override;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="classfrc_1_1_p_i_d_controller.html#aab0d4629d5b2ec23b6ce9e5ae233e5f6">  131</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc2_1_1_p_i_d_controller.html#a4ad92de9d1f769b437e80b0702a4e27e">InitSendable</a>(<a class="code hl_namespace" href="namespacewpi.html">wpi</a>::SendableBuilder&amp; builder) override;</div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> private:</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>  std::unique_ptr&lt;<a class="code hl_class" href="classfrc_1_1_notifier.html">Notifier</a>&gt; m_controlLoop;</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>  <a class="code hl_namespace" href="namespacestd.html">std</a>::unique_ptr&lt;<a class="code hl_class" href="classfrc_1_1_notifier.html">Notifier</a>&gt; m_controlLoop;</div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>};</div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>}  <span class="comment">// namespace frc</span></div>
+<div class="ttc" id="a_controller_8h_html"><div class="ttname"><a href="_controller_8h.html">Controller.h</a></div></div>
+<div class="ttc" id="a_p_i_d_base_8h_html"><div class="ttname"><a href="_p_i_d_base_8h.html">PIDBase.h</a></div></div>
+<div class="ttc" id="a_p_i_d_source_8h_html"><div class="ttname"><a href="_p_i_d_source_8h.html">PIDSource.h</a></div></div>
 <div class="ttc" id="aclassfrc2_1_1_p_i_d_controller_html"><div class="ttname"><a href="classfrc2_1_1_p_i_d_controller.html">frc2::PIDController</a></div><div class="ttdoc">Implements a PID control loop.</div><div class="ttdef"><b>Definition:</b> PIDController.h:23</div></div>
 <div class="ttc" id="aclassfrc2_1_1_p_i_d_controller_html_a4ad92de9d1f769b437e80b0702a4e27e"><div class="ttname"><a href="classfrc2_1_1_p_i_d_controller.html#a4ad92de9d1f769b437e80b0702a4e27e">frc2::PIDController::InitSendable</a></div><div class="ttdeci">void InitSendable(wpi::SendableBuilder &amp;builder) override</div><div class="ttdoc">Initializes this Sendable object.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_p_i_d_controller_html_a988b633966b930abd00c19fcea1b5d48"><div class="ttname"><a href="classfrc2_1_1_p_i_d_controller.html#a988b633966b930abd00c19fcea1b5d48">frc2::PIDController::Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdoc">Reset the previous error, the integral term, and disable the controller.</div></div>
@@ -239,13 +242,21 @@ $(document).ready(function(){initNavTree('wpilib_old_commands_2src_2main_2native
 <div class="ttc" id="aclassfrc_1_1_p_i_d_base_html"><div class="ttname"><a href="classfrc_1_1_p_i_d_base.html">frc::PIDBase</a></div><div class="ttdoc">Class implements a PID Control Loop.</div><div class="ttdef"><b>Definition:</b> PIDBase.h:38</div></div>
 <div class="ttc" id="aclassfrc_1_1_p_i_d_output_html"><div class="ttname"><a href="classfrc_1_1_p_i_d_output.html">frc::PIDOutput</a></div><div class="ttdoc">PIDOutput interface is a generic output for the PID class.</div><div class="ttdef"><b>Definition:</b> PIDOutput.h:15</div></div>
 <div class="ttc" id="aclassfrc_1_1_p_i_d_source_html"><div class="ttname"><a href="classfrc_1_1_p_i_d_source.html">frc::PIDSource</a></div><div class="ttdoc">PIDSource interface is a generic sensor source for the PID class.</div><div class="ttdef"><b>Definition:</b> PIDSource.h:17</div></div>
+<div class="ttc" id="adeprecated_8h_html"><div class="ttname"><a href="deprecated_8h.html">deprecated.h</a></div></div>
+<div class="ttc" id="amutex_8h_html"><div class="ttname"><a href="mutex_8h.html">mutex.h</a></div></div>
+<div class="ttc" id="anamespacefrc2_html"><div class="ttname"><a href="namespacefrc2.html">frc2</a></div><div class="ttdef"><b>Definition:</b> PIDController.h:16</div></div>
+<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> CameraServerShared.h:13</div></div>
+<div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> json.h:8010</div></div>
+<div class="ttc" id="anamespacewpi_html"><div class="ttname"><a href="namespacewpi.html">wpi</a></div><div class="ttdef"><b>Definition:</b> leb128.h:14</div></div>
+<div class="ttc" id="awpilibc_2src_2main_2native_2include_2frc_2_notifier_8h_html"><div class="ttname"><a href="wpilibc_2src_2main_2native_2include_2frc_2_notifier_8h.html">Notifier.h</a></div></div>
+<div class="ttc" id="awpilibc_2src_2main_2native_2include_2frc_2_timer_8h_html"><div class="ttname"><a href="wpilibc_2src_2main_2native_2include_2frc_2_timer_8h.html">Timer.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_bb1991b688e3fae464f82f03a0e274c4.html">frc</a></li><li class="navelem"><b>PIDController.h</b></li>
-    <li class="footer">Generated on Fri Oct 29 2021 07:12:21 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="dir_bb1991b688e3fae464f82f03a0e274c4.html">frc</a></li><li class="navelem"><a class="el" href="wpilib_old_commands_2src_2main_2native_2include_2frc_2_p_i_d_controller_8h.html">PIDController.h</a></li>
+    <li class="footer">Generated on Fri Oct 29 2021 22:09:59 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

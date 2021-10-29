@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-31-ga939cd9</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-32-g2cb171f</span>
    </div>
   </td>
  </tr>
@@ -97,18 +97,22 @@ $(document).ready(function(){initNavTree('classfrc_1_1_extended_kalman_filter.ht
   <div class="headertitle"><div class="title">frc::ExtendedKalmanFilter&lt; States, Inputs, Outputs &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>A Kalman filter combines predictions from a model and measurements to give an estimate of the true system state.  
+ <a href="classfrc_1_1_extended_kalman_filter.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_extended_kalman_filter_8h_source.html">frc/estimator/ExtendedKalmanFilter.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a082b27abe55706ece8964cbb4bd4e4e7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_extended_kalman_filter.html#a082b27abe55706ece8964cbb4bd4e4e7">ExtendedKalmanFilter</a> (std::function&lt; Eigen::Vector&lt; double, States &gt;(const Eigen::Vector&lt; double, States &gt; &amp;, const Eigen::Vector&lt; double, Inputs &gt; &amp;)&gt; f, std::function&lt; Eigen::Vector&lt; double, Outputs &gt;(const Eigen::Vector&lt; double, States &gt; &amp;, const Eigen::Vector&lt; double, Inputs &gt; &amp;)&gt; h, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, States &gt; &amp;stateStdDevs, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, Outputs &gt; &amp;measurementStdDevs, units::second_t dt)</td></tr>
-<tr class="memdesc:a082b27abe55706ece8964cbb4bd4e4e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an Extended Kalman filter.  <a href="classfrc_1_1_extended_kalman_filter.html#a082b27abe55706ece8964cbb4bd4e4e7">More...</a><br /></td></tr>
+<tr class="memdesc:a082b27abe55706ece8964cbb4bd4e4e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an extended Kalman filter.  <a href="classfrc_1_1_extended_kalman_filter.html#a082b27abe55706ece8964cbb4bd4e4e7">More...</a><br /></td></tr>
 <tr class="separator:a082b27abe55706ece8964cbb4bd4e4e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e8f4790e0e7919bb93549dac3f30daa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_extended_kalman_filter.html#a6e8f4790e0e7919bb93549dac3f30daa">ExtendedKalmanFilter</a> (std::function&lt; Eigen::Vector&lt; double, States &gt;(const Eigen::Vector&lt; double, States &gt; &amp;, const Eigen::Vector&lt; double, Inputs &gt; &amp;)&gt; f, std::function&lt; Eigen::Vector&lt; double, Outputs &gt;(const Eigen::Vector&lt; double, States &gt; &amp;, const Eigen::Vector&lt; double, Inputs &gt; &amp;)&gt; h, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, States &gt; &amp;stateStdDevs, const <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; double, Outputs &gt; &amp;measurementStdDevs, std::function&lt; Eigen::Vector&lt; double, Outputs &gt;(const Eigen::Vector&lt; double, Outputs &gt; &amp;, const Eigen::Vector&lt; double, Outputs &gt; &amp;)&gt; residualFuncY, std::function&lt; Eigen::Vector&lt; double, States &gt;(const Eigen::Vector&lt; double, States &gt; &amp;, const Eigen::Vector&lt; double, States &gt; &amp;)&gt; addFuncX, units::second_t dt)</td></tr>
-<tr class="memdesc:a6e8f4790e0e7919bb93549dac3f30daa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an Extended Kalman filter.  <a href="classfrc_1_1_extended_kalman_filter.html#a6e8f4790e0e7919bb93549dac3f30daa">More...</a><br /></td></tr>
+<tr class="memdesc:a6e8f4790e0e7919bb93549dac3f30daa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an extended Kalman filter.  <a href="classfrc_1_1_extended_kalman_filter.html#a6e8f4790e0e7919bb93549dac3f30daa">More...</a><br /></td></tr>
 <tr class="separator:a6e8f4790e0e7919bb93549dac3f30daa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d60a3cd10ab605014ab847824a68385"><td class="memItemLeft" align="right" valign="top"><a id="a4d60a3cd10ab605014ab847824a68385" name="a4d60a3cd10ab605014ab847824a68385"></a>
-const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>P</b> () const</td></tr>
-<tr class="memdesc:a4d60a3cd10ab605014ab847824a68385"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the error covariance matrix P. <br /></td></tr>
+<tr class="memitem:a4d60a3cd10ab605014ab847824a68385"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_extended_kalman_filter.html#a4d60a3cd10ab605014ab847824a68385">P</a> () const</td></tr>
+<tr class="memdesc:a4d60a3cd10ab605014ab847824a68385"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the error covariance matrix P.  <a href="classfrc_1_1_extended_kalman_filter.html#a4d60a3cd10ab605014ab847824a68385">More...</a><br /></td></tr>
 <tr class="separator:a4d60a3cd10ab605014ab847824a68385"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad60af5653b38d334755fbdc559752943"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_extended_kalman_filter.html#ad60af5653b38d334755fbdc559752943">P</a> (int i, int j) const</td></tr>
 <tr class="memdesc:ad60af5653b38d334755fbdc559752943"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an element of the error covariance matrix P.  <a href="classfrc_1_1_extended_kalman_filter.html#ad60af5653b38d334755fbdc559752943">More...</a><br /></td></tr>
@@ -116,9 +120,8 @@ const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; dou
 <tr class="memitem:a7d6a8c672d26d8fbcc6598381947c823"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_extended_kalman_filter.html#a7d6a8c672d26d8fbcc6598381947c823">SetP</a> (const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; &amp;<a class="el" href="classfrc_1_1_extended_kalman_filter.html#a4d60a3cd10ab605014ab847824a68385">P</a>)</td></tr>
 <tr class="memdesc:a7d6a8c672d26d8fbcc6598381947c823"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current error covariance matrix P.  <a href="classfrc_1_1_extended_kalman_filter.html#a7d6a8c672d26d8fbcc6598381947c823">More...</a><br /></td></tr>
 <tr class="separator:a7d6a8c672d26d8fbcc6598381947c823"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2c1a5a6c27337d834f187e402fc9ff5"><td class="memItemLeft" align="right" valign="top"><a id="ac2c1a5a6c27337d834f187e402fc9ff5" name="ac2c1a5a6c27337d834f187e402fc9ff5"></a>
-const Eigen::Vector&lt; double, States &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>Xhat</b> () const</td></tr>
-<tr class="memdesc:ac2c1a5a6c27337d834f187e402fc9ff5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the state estimate x-hat. <br /></td></tr>
+<tr class="memitem:ac2c1a5a6c27337d834f187e402fc9ff5"><td class="memItemLeft" align="right" valign="top">const Eigen::Vector&lt; double, States &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_extended_kalman_filter.html#ac2c1a5a6c27337d834f187e402fc9ff5">Xhat</a> () const</td></tr>
+<tr class="memdesc:ac2c1a5a6c27337d834f187e402fc9ff5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the state estimate x-hat.  <a href="classfrc_1_1_extended_kalman_filter.html#ac2c1a5a6c27337d834f187e402fc9ff5">More...</a><br /></td></tr>
 <tr class="separator:ac2c1a5a6c27337d834f187e402fc9ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd68484c47143bb0cdddf55120a7e8b5"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_extended_kalman_filter.html#afd68484c47143bb0cdddf55120a7e8b5">Xhat</a> (int i) const</td></tr>
 <tr class="memdesc:afd68484c47143bb0cdddf55120a7e8b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an element of the state estimate x-hat.  <a href="classfrc_1_1_extended_kalman_filter.html#afd68484c47143bb0cdddf55120a7e8b5">More...</a><br /></td></tr>
@@ -129,9 +132,8 @@ const Eigen::Vector&lt; double, States &gt; &amp;&#160;</td><td class="memItemRi
 <tr class="memitem:a9446ab7a24735306b8a13326b711f8ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_extended_kalman_filter.html#a9446ab7a24735306b8a13326b711f8ef">SetXhat</a> (int i, double <a class="el" href="classvalue.html">value</a>)</td></tr>
 <tr class="memdesc:a9446ab7a24735306b8a13326b711f8ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set an element of the initial state estimate x-hat.  <a href="classfrc_1_1_extended_kalman_filter.html#a9446ab7a24735306b8a13326b711f8ef">More...</a><br /></td></tr>
 <tr class="separator:a9446ab7a24735306b8a13326b711f8ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a540f4ee08bced06de29e2267cf7cfe1d"><td class="memItemLeft" align="right" valign="top"><a id="a540f4ee08bced06de29e2267cf7cfe1d" name="a540f4ee08bced06de29e2267cf7cfe1d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Reset</b> ()</td></tr>
-<tr class="memdesc:a540f4ee08bced06de29e2267cf7cfe1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the observer. <br /></td></tr>
+<tr class="memitem:a540f4ee08bced06de29e2267cf7cfe1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_extended_kalman_filter.html#a540f4ee08bced06de29e2267cf7cfe1d">Reset</a> ()</td></tr>
+<tr class="memdesc:a540f4ee08bced06de29e2267cf7cfe1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the observer.  <a href="classfrc_1_1_extended_kalman_filter.html#a540f4ee08bced06de29e2267cf7cfe1d">More...</a><br /></td></tr>
 <tr class="separator:a540f4ee08bced06de29e2267cf7cfe1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaeb5012425d3efbcf75d297a38aaec54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_extended_kalman_filter.html#aaeb5012425d3efbcf75d297a38aaec54">Predict</a> (const Eigen::Vector&lt; double, Inputs &gt; &amp;u, units::second_t dt)</td></tr>
 <tr class="memdesc:aaeb5012425d3efbcf75d297a38aaec54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Project the model into the future with a new control input u.  <a href="classfrc_1_1_extended_kalman_filter.html#aaeb5012425d3efbcf75d297a38aaec54">More...</a><br /></td></tr>
@@ -139,16 +141,30 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Reset</b> ()</td></tr
 <tr class="memitem:a861f149493a4b397a46108d2ef43af7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_extended_kalman_filter.html#a861f149493a4b397a46108d2ef43af7b">Correct</a> (const Eigen::Vector&lt; double, Inputs &gt; &amp;u, const Eigen::Vector&lt; double, Outputs &gt; &amp;y)</td></tr>
 <tr class="memdesc:a861f149493a4b397a46108d2ef43af7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Correct the state estimate x-hat using the measurements in y.  <a href="classfrc_1_1_extended_kalman_filter.html#a861f149493a4b397a46108d2ef43af7b">More...</a><br /></td></tr>
 <tr class="separator:a861f149493a4b397a46108d2ef43af7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67c03bfab88c0a028743b216896d54eb"><td class="memTemplParams" colspan="2"><a id="a67c03bfab88c0a028743b216896d54eb" name="a67c03bfab88c0a028743b216896d54eb"></a>
-template&lt;int Rows&gt; </td></tr>
-<tr class="memitem:a67c03bfab88c0a028743b216896d54eb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Correct</b> (const Eigen::Vector&lt; double, Inputs &gt; &amp;u, const Eigen::Vector&lt; double, Rows &gt; &amp;y, std::function&lt; Eigen::Vector&lt; double, Rows &gt;(const Eigen::Vector&lt; double, States &gt; &amp;, const Eigen::Vector&lt; double, Inputs &gt; &amp;)&gt; h, const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, Rows, Rows &gt; &amp;R)</td></tr>
+<tr class="memitem:a67c03bfab88c0a028743b216896d54eb"><td class="memTemplParams" colspan="2">template&lt;int Rows&gt; </td></tr>
+<tr class="memitem:a67c03bfab88c0a028743b216896d54eb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classfrc_1_1_extended_kalman_filter.html#a67c03bfab88c0a028743b216896d54eb">Correct</a> (const Eigen::Vector&lt; double, Inputs &gt; &amp;u, const Eigen::Vector&lt; double, Rows &gt; &amp;y, std::function&lt; Eigen::Vector&lt; double, Rows &gt;(const Eigen::Vector&lt; double, States &gt; &amp;, const Eigen::Vector&lt; double, Inputs &gt; &amp;)&gt; h, const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, Rows, Rows &gt; &amp;R)</td></tr>
 <tr class="separator:a67c03bfab88c0a028743b216896d54eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77f2cd7e268c972f35b4bb435966d360"><td class="memTemplParams" colspan="2">template&lt;int Rows&gt; </td></tr>
 <tr class="memitem:a77f2cd7e268c972f35b4bb435966d360"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classfrc_1_1_extended_kalman_filter.html#a77f2cd7e268c972f35b4bb435966d360">Correct</a> (const Eigen::Vector&lt; double, Inputs &gt; &amp;u, const Eigen::Vector&lt; double, Rows &gt; &amp;y, std::function&lt; Eigen::Vector&lt; double, Rows &gt;(const Eigen::Vector&lt; double, States &gt; &amp;, const Eigen::Vector&lt; double, Inputs &gt; &amp;)&gt; h, const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, Rows, Rows &gt; &amp;R, std::function&lt; Eigen::Vector&lt; double, Rows &gt;(const Eigen::Vector&lt; double, Rows &gt; &amp;, const Eigen::Vector&lt; double, Rows &gt; &amp;)&gt; residualFuncY, std::function&lt; Eigen::Vector&lt; double, States &gt;(const Eigen::Vector&lt; double, States &gt; &amp;, const Eigen::Vector&lt; double, States &gt;)&gt; addFuncX)</td></tr>
 <tr class="memdesc:a77f2cd7e268c972f35b4bb435966d360"><td class="mdescLeft">&#160;</td><td class="mdescRight">Correct the state estimate x-hat using the measurements in y.  <a href="classfrc_1_1_extended_kalman_filter.html#a77f2cd7e268c972f35b4bb435966d360">More...</a><br /></td></tr>
 <tr class="separator:a77f2cd7e268c972f35b4bb435966d360"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;int States, int Inputs, int Outputs&gt;<br />
+class frc::ExtendedKalmanFilter&lt; States, Inputs, Outputs &gt;</div><p >A Kalman filter combines predictions from a model and measurements to give an estimate of the true system state. </p>
+<p >This is useful because many states cannot be measured directly as a result of sensor noise, or because the state is "hidden".</p>
+<p >Kalman filters use a K gain matrix to determine whether to trust the model or measurements more. Kalman filter theory uses statistics to compute an optimal K gain which minimizes the sum of squares error in the state estimate. This K gain is used to correct the state estimate by some amount of the difference between the actual measurements and the measurements predicted by the model.</p>
+<p >An extended Kalman filter supports nonlinear state and measurement models. It propagates the error covariance by linearizing the models around the state estimate, then applying the linear Kalman filter equations.</p>
+<p >For more on the underlying math, read <a href="https://file.tavsys.net/control/controls-engineering-in-frc.pdf">https://file.tavsys.net/control/controls-engineering-in-frc.pdf</a> chapter 9 "Stochastic control theory".</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">States</td><td>The number of states. </td></tr>
+    <tr><td class="paramname">Inputs</td><td>The number of inputs. </td></tr>
+    <tr><td class="paramname">Outputs</td><td>The number of outputs. </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a082b27abe55706ece8964cbb4bd4e4e7" name="a082b27abe55706ece8964cbb4bd4e4e7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a082b27abe55706ece8964cbb4bd4e4e7">&#9670;&nbsp;</a></span>ExtendedKalmanFilter() <span class="overload">[1/2]</span></h2>
 
@@ -203,7 +219,7 @@ template&lt;int States, int Inputs, int Outputs&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Constructs an Extended Kalman filter. </p>
+<p>Constructs an extended Kalman filter. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">f</td><td>A vector-valued function of x and u that returns the derivative of the state vector. </td></tr>
@@ -283,7 +299,7 @@ template&lt;int States, int Inputs, int Outputs&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Constructs an Extended Kalman filter. </p>
+<p>Constructs an extended Kalman filter. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">f</td><td>A vector-valued function of x and u that returns the derivative of the state vector. </td></tr>
@@ -301,7 +317,7 @@ template&lt;int States, int Inputs, int Outputs&gt; </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a861f149493a4b397a46108d2ef43af7b" name="a861f149493a4b397a46108d2ef43af7b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a861f149493a4b397a46108d2ef43af7b">&#9670;&nbsp;</a></span>Correct() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a861f149493a4b397a46108d2ef43af7b">&#9670;&nbsp;</a></span>Correct() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -347,8 +363,60 @@ template&lt;int States, int Inputs, int Outputs&gt; </div>
 
 </div>
 </div>
+<a id="a67c03bfab88c0a028743b216896d54eb" name="a67c03bfab88c0a028743b216896d54eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67c03bfab88c0a028743b216896d54eb">&#9670;&nbsp;</a></span>Correct() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int States, int Inputs, int Outputs&gt; </div>
+<div class="memtemplate">
+template&lt;int Rows&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classfrc_1_1_extended_kalman_filter.html">frc::ExtendedKalmanFilter</a>&lt; States, Inputs, Outputs &gt;::Correct </td>
+          <td>(</td>
+          <td class="paramtype">const Eigen::Vector&lt; double, Inputs &gt; &amp;&#160;</td>
+          <td class="paramname"><em>u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Eigen::Vector&lt; double, Rows &gt; &amp;&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; Eigen::Vector&lt; double, Rows &gt;(const Eigen::Vector&lt; double, States &gt; &amp;, const Eigen::Vector&lt; double, Inputs &gt; &amp;)&gt;&#160;</td>
+          <td class="paramname"><em>h</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, Rows, Rows &gt; &amp;&#160;</td>
+          <td class="paramname"><em>R</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a77f2cd7e268c972f35b4bb435966d360" name="a77f2cd7e268c972f35b4bb435966d360"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a77f2cd7e268c972f35b4bb435966d360">&#9670;&nbsp;</a></span>Correct() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a77f2cd7e268c972f35b4bb435966d360">&#9670;&nbsp;</a></span>Correct() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -425,8 +493,37 @@ template&lt;int Rows&gt; </div>
 
 </div>
 </div>
+<a id="a4d60a3cd10ab605014ab847824a68385" name="a4d60a3cd10ab605014ab847824a68385"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d60a3cd10ab605014ab847824a68385">&#9670;&nbsp;</a></span>P() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int States, int Inputs, int Outputs&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_eigen_1_1_matrix.html">Eigen::Matrix</a>&lt; double, States, States &gt; &amp; <a class="el" href="classfrc_1_1_extended_kalman_filter.html">frc::ExtendedKalmanFilter</a>&lt; States, Inputs, Outputs &gt;::P </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the error covariance matrix P. </p>
+
+</div>
+</div>
 <a id="ad60af5653b38d334755fbdc559752943" name="ad60af5653b38d334755fbdc559752943"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad60af5653b38d334755fbdc559752943">&#9670;&nbsp;</a></span>P()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad60af5653b38d334755fbdc559752943">&#9670;&nbsp;</a></span>P() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -516,6 +613,35 @@ template&lt;int States, int Inputs, int Outputs&gt; </div>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a540f4ee08bced06de29e2267cf7cfe1d" name="a540f4ee08bced06de29e2267cf7cfe1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a540f4ee08bced06de29e2267cf7cfe1d">&#9670;&nbsp;</a></span>Reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int States, int Inputs, int Outputs&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classfrc_1_1_extended_kalman_filter.html">frc::ExtendedKalmanFilter</a>&lt; States, Inputs, Outputs &gt;::Reset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Resets the observer. </p>
 
 </div>
 </div>
@@ -638,8 +764,37 @@ template&lt;int States, int Inputs, int Outputs&gt; </div>
 
 </div>
 </div>
+<a id="ac2c1a5a6c27337d834f187e402fc9ff5" name="ac2c1a5a6c27337d834f187e402fc9ff5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2c1a5a6c27337d834f187e402fc9ff5">&#9670;&nbsp;</a></span>Xhat() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int States, int Inputs, int Outputs&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const Eigen::Vector&lt; double, States &gt; &amp; <a class="el" href="classfrc_1_1_extended_kalman_filter.html">frc::ExtendedKalmanFilter</a>&lt; States, Inputs, Outputs &gt;::Xhat </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the state estimate x-hat. </p>
+
+</div>
+</div>
 <a id="afd68484c47143bb0cdddf55120a7e8b5" name="afd68484c47143bb0cdddf55120a7e8b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd68484c47143bb0cdddf55120a7e8b5">&#9670;&nbsp;</a></span>Xhat()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#afd68484c47143bb0cdddf55120a7e8b5">&#9670;&nbsp;</a></span>Xhat() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -682,8 +837,8 @@ template&lt;int States, int Inputs, int Outputs&gt; </div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1_extended_kalman_filter.html">ExtendedKalmanFilter</a></li>
-    <li class="footer">Generated on Fri Oct 29 2021 07:12:28 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_extended_kalman_filter.html">ExtendedKalmanFilter</a></li>
+    <li class="footer">Generated on Fri Oct 29 2021 22:10:07 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

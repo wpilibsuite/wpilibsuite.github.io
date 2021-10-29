@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-31-ga939cd9</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-32-g2cb171f</span>
    </div>
   </td>
  </tr>
@@ -98,31 +98,136 @@ $(document).ready(function(){initNavTree('structwpi_1_1_callback_thread_1_1_poll
   <div class="headertitle"><div class="title">wpi::CallbackThread&lt; Derived, TUserInfo, TListenerData, TNotifierData &gt;::Poller Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_callback_manager_8h_source.html">wpi/CallbackManager.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a53ba327b773143a084803f709d13150b"><td class="memItemLeft" align="right" valign="top"><a id="a53ba327b773143a084803f709d13150b" name="a53ba327b773143a084803f709d13150b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Terminate</b> ()</td></tr>
+<tr class="memitem:a53ba327b773143a084803f709d13150b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1_callback_thread_1_1_poller.html#a53ba327b773143a084803f709d13150b">Terminate</a> ()</td></tr>
 <tr class="separator:a53ba327b773143a084803f709d13150b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a88426de62dfad205c04747c52595c3a0"><td class="memItemLeft" align="right" valign="top"><a id="a88426de62dfad205c04747c52595c3a0" name="a88426de62dfad205c04747c52595c3a0"></a>
-std::queue&lt; NotifierData &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>poll_queue</b></td></tr>
+<tr class="memitem:a88426de62dfad205c04747c52595c3a0"><td class="memItemLeft" align="right" valign="top">std::queue&lt; <a class="el" href="classwpi_1_1_callback_thread.html#a966d2420d47d7f10a0993fddfc0b170b">NotifierData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1_callback_thread_1_1_poller.html#a88426de62dfad205c04747c52595c3a0">poll_queue</a></td></tr>
 <tr class="separator:a88426de62dfad205c04747c52595c3a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a862fb759062081e55fa84830878c3a"><td class="memItemLeft" align="right" valign="top"><a id="a0a862fb759062081e55fa84830878c3a" name="a0a862fb759062081e55fa84830878c3a"></a>
-wpi::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>poll_mutex</b></td></tr>
+<tr class="memitem:a0a862fb759062081e55fa84830878c3a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacewpi.html#a59819be5b11c0fbbc0b8e07c7638af24">wpi::mutex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1_callback_thread_1_1_poller.html#a0a862fb759062081e55fa84830878c3a">poll_mutex</a></td></tr>
 <tr class="separator:a0a862fb759062081e55fa84830878c3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30519d1a58c289d34753ba588571b907"><td class="memItemLeft" align="right" valign="top"><a id="a30519d1a58c289d34753ba588571b907" name="a30519d1a58c289d34753ba588571b907"></a>
-wpi::condition_variable&#160;</td><td class="memItemRight" valign="bottom"><b>poll_cond</b></td></tr>
+<tr class="memitem:a30519d1a58c289d34753ba588571b907"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacewpi.html#a97cc1139d8f910187e3d4cd6b8015af8">wpi::condition_variable</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1_callback_thread_1_1_poller.html#a30519d1a58c289d34753ba588571b907">poll_cond</a></td></tr>
 <tr class="separator:a30519d1a58c289d34753ba588571b907"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad60592b664c738ccdd0f112319edc6df"><td class="memItemLeft" align="right" valign="top"><a id="ad60592b664c738ccdd0f112319edc6df" name="ad60592b664c738ccdd0f112319edc6df"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>terminating</b> = false</td></tr>
+<tr class="memitem:ad60592b664c738ccdd0f112319edc6df"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1_callback_thread_1_1_poller.html#ad60592b664c738ccdd0f112319edc6df">terminating</a> = false</td></tr>
 <tr class="separator:ad60592b664c738ccdd0f112319edc6df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a981d05b774f9a1e755579508f4a3e546"><td class="memItemLeft" align="right" valign="top"><a id="a981d05b774f9a1e755579508f4a3e546" name="a981d05b774f9a1e755579508f4a3e546"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>canceling</b> = false</td></tr>
+<tr class="memitem:a981d05b774f9a1e755579508f4a3e546"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1_callback_thread_1_1_poller.html#a981d05b774f9a1e755579508f4a3e546">canceling</a> = false</td></tr>
 <tr class="separator:a981d05b774f9a1e755579508f4a3e546"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a53ba327b773143a084803f709d13150b" name="a53ba327b773143a084803f709d13150b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53ba327b773143a084803f709d13150b">&#9670;&nbsp;</a></span>Terminate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Derived , typename TUserInfo , typename TListenerData  = CallbackListenerData&lt;std::function&lt;void(const TUserInfo&amp; info)&gt;&gt;, typename TNotifierData  = TUserInfo&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classwpi_1_1_callback_thread.html">wpi::CallbackThread</a>&lt; Derived, TUserInfo, TListenerData, TNotifierData &gt;::Poller::Terminate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a981d05b774f9a1e755579508f4a3e546" name="a981d05b774f9a1e755579508f4a3e546"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a981d05b774f9a1e755579508f4a3e546">&#9670;&nbsp;</a></span>canceling</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Derived , typename TUserInfo , typename TListenerData  = CallbackListenerData&lt;std::function&lt;void(const TUserInfo&amp; info)&gt;&gt;, typename TNotifierData  = TUserInfo&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classwpi_1_1_callback_thread.html">wpi::CallbackThread</a>&lt; Derived, TUserInfo, TListenerData, TNotifierData &gt;::Poller::canceling = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a30519d1a58c289d34753ba588571b907" name="a30519d1a58c289d34753ba588571b907"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30519d1a58c289d34753ba588571b907">&#9670;&nbsp;</a></span>poll_cond</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Derived , typename TUserInfo , typename TListenerData  = CallbackListenerData&lt;std::function&lt;void(const TUserInfo&amp; info)&gt;&gt;, typename TNotifierData  = TUserInfo&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacewpi.html#a97cc1139d8f910187e3d4cd6b8015af8">wpi::condition_variable</a> <a class="el" href="classwpi_1_1_callback_thread.html">wpi::CallbackThread</a>&lt; Derived, TUserInfo, TListenerData, TNotifierData &gt;::Poller::poll_cond</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0a862fb759062081e55fa84830878c3a" name="a0a862fb759062081e55fa84830878c3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a862fb759062081e55fa84830878c3a">&#9670;&nbsp;</a></span>poll_mutex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Derived , typename TUserInfo , typename TListenerData  = CallbackListenerData&lt;std::function&lt;void(const TUserInfo&amp; info)&gt;&gt;, typename TNotifierData  = TUserInfo&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacewpi.html#a59819be5b11c0fbbc0b8e07c7638af24">wpi::mutex</a> <a class="el" href="classwpi_1_1_callback_thread.html">wpi::CallbackThread</a>&lt; Derived, TUserInfo, TListenerData, TNotifierData &gt;::Poller::poll_mutex</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a88426de62dfad205c04747c52595c3a0" name="a88426de62dfad205c04747c52595c3a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88426de62dfad205c04747c52595c3a0">&#9670;&nbsp;</a></span>poll_queue</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Derived , typename TUserInfo , typename TListenerData  = CallbackListenerData&lt;std::function&lt;void(const TUserInfo&amp; info)&gt;&gt;, typename TNotifierData  = TUserInfo&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::queue&lt;<a class="el" href="classwpi_1_1_callback_thread.html#a966d2420d47d7f10a0993fddfc0b170b">NotifierData</a>&gt; <a class="el" href="classwpi_1_1_callback_thread.html">wpi::CallbackThread</a>&lt; Derived, TUserInfo, TListenerData, TNotifierData &gt;::Poller::poll_queue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad60592b664c738ccdd0f112319edc6df" name="ad60592b664c738ccdd0f112319edc6df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad60592b664c738ccdd0f112319edc6df">&#9670;&nbsp;</a></span>terminating</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Derived , typename TUserInfo , typename TListenerData  = CallbackListenerData&lt;std::function&lt;void(const TUserInfo&amp; info)&gt;&gt;, typename TNotifierData  = TUserInfo&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classwpi_1_1_callback_thread.html">wpi::CallbackThread</a>&lt; Derived, TUserInfo, TListenerData, TNotifierData &gt;::Poller::terminating = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>wpi/<a class="el" href="_callback_manager_8h_source.html">CallbackManager.h</a></li>
 </ul>
@@ -131,8 +236,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>canceling</b> = false
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>wpi</b></li><li class="navelem"><a class="el" href="classwpi_1_1_callback_thread.html">CallbackThread</a></li><li class="navelem"><a class="el" href="structwpi_1_1_callback_thread_1_1_poller.html">Poller</a></li>
-    <li class="footer">Generated on Fri Oct 29 2021 07:12:30 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="classwpi_1_1_callback_thread.html">CallbackThread</a></li><li class="navelem"><a class="el" href="structwpi_1_1_callback_thread_1_1_poller.html">Poller</a></li>
+    <li class="footer">Generated on Fri Oct 29 2021 22:10:09 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

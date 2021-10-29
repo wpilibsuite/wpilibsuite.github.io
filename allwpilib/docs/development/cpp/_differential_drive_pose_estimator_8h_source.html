@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-31-ga939cd9</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-32-g2cb171f</span>
    </div>
   </td>
  </tr>
@@ -94,24 +94,24 @@ $(document).ready(function(){initNavTree('_differential_drive_pose_estimator_8h_
   <div class="headertitle"><div class="title">DifferentialDrivePoseEstimator.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
+<a href="_differential_drive_pose_estimator_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Open Source Software; you can modify and/or share it under the terms of</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// the WPILib BSD license file in the root directory of this project.</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;wpi/SymbolExports.h&gt;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;wpi/array.h&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;<a class="code" href="_symbol_exports_8h.html">wpi/SymbolExports.h</a>&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;<a class="code" href="wpiutil_2src_2main_2native_2include_2wpi_2array_8h.html">wpi/array.h</a>&gt;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;Eigen/Core&quot;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;frc/estimator/KalmanFilterLatencyCompensator.h&quot;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;frc/estimator/UnscentedKalmanFilter.h&quot;</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;frc/geometry/Pose2d.h&quot;</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;frc/geometry/Rotation2d.h&quot;</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;frc/kinematics/DifferentialDriveWheelSpeeds.h&quot;</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;units/time.h&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="_core.html">Eigen/Core</a>&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="_kalman_filter_latency_compensator_8h.html">frc/estimator/KalmanFilterLatencyCompensator.h</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="_unscented_kalman_filter_8h.html">frc/estimator/UnscentedKalmanFilter.h</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="_pose2d_8h.html">frc/geometry/Pose2d.h</a>&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="_rotation2d_8h.html">frc/geometry/Rotation2d.h</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="_differential_drive_wheel_speeds_8h.html">frc/kinematics/DifferentialDriveWheelSpeeds.h</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="time_8h.html">units/time.h</a>&quot;</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">namespace </span>frc {<span class="comment"></span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacefrc.html">frc</a> {<span class="comment"></span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">/**</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> * This class wraps an Unscented Kalman Filter to fuse latency-compensated</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> * vision measurements with differential drive encoder measurements. It will</span></div>
@@ -141,7 +141,7 @@ $(document).ready(function(){initNavTree('_differential_drive_pose_estimator_8h_
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment"> * &lt;strong&gt;y = [[x, y, theta]]ᵀ &lt;/strong&gt; from vision,</span></div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment"> * or &lt;strong&gt;y = [[dist_l, dist_r, theta]] &lt;/strong&gt; from encoders and gyro.</span></div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classfrc_1_1_differential_drive_pose_estimator.html">   48</a></span><span class="keyword">class </span>WPILIB_DLLEXPORT <a class="code hl_class" href="classfrc_1_1_differential_drive_pose_estimator.html">DifferentialDrivePoseEstimator</a> {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classfrc_1_1_differential_drive_pose_estimator.html">   48</a></span><span class="keyword">class </span><a class="code hl_define" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> <a class="code hl_class" href="classfrc_1_1_differential_drive_pose_estimator.html">DifferentialDrivePoseEstimator</a> {</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> <span class="keyword">public</span>:<span class="comment"></span></div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">   * Constructs a DifferentialDrivePoseEstimator.</span></div>
@@ -308,7 +308,7 @@ $(document).ready(function(){initNavTree('_differential_drive_pose_estimator_8h_
 <div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>  <a class="code hl_class" href="classfrc_1_1_kalman_filter_latency_compensator.html">KalmanFilterLatencyCompensator&lt;5, 3, 3, UnscentedKalmanFilter&lt;5, 3, 3&gt;</a>&gt;</div>
 <div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>      m_latencyCompensator;</div>
 <div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>  std::function&lt;void(<span class="keyword">const</span> Eigen::Vector&lt;double, 3&gt;&amp; u,</div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>                     <span class="keyword">const</span> Eigen::Vector&lt;double, 3&gt;&amp; y)&gt;</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>                     <span class="keyword">const</span> Eigen::Vector&lt;double, 3&gt;&amp; <a class="code hl_variable" href="namespace_eigen_1_1internal.html#a3cc80fc03610837da180f7e6d8e7b3ec">y</a>)&gt;</div>
 <div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>      m_visionCorrect;</div>
 <div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span> </div>
 <div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>  <a class="code hl_class" href="class_eigen_1_1_matrix.html">Eigen::Matrix&lt;double, 3, 3&gt;</a> m_visionContR;</div>
@@ -323,7 +323,7 @@ $(document).ready(function(){initNavTree('_differential_drive_pose_estimator_8h_
 <div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>  <span class="keyword">static</span> <a class="code hl_class" href="classwpi_1_1array.html">wpi::array&lt;double, Dim&gt;</a> StdDevMatrixToArray(</div>
 <div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>      <span class="keyword">const</span> Eigen::Vector&lt;double, Dim&gt;&amp; stdDevs);</div>
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>  <span class="keyword">static</span> Eigen::Vector&lt;double, 5&gt; F(<span class="keyword">const</span> Eigen::Vector&lt;double, 5&gt;&amp; x,</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>  <span class="keyword">static</span> Eigen::Vector&lt;double, 5&gt; <a class="code hl_function" href="namespaceunits_1_1constants.html#a8ef157f2a40ed27a0f834847b332eb72">F</a>(<span class="keyword">const</span> Eigen::Vector&lt;double, 5&gt;&amp; x,</div>
 <div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>                                    <span class="keyword">const</span> Eigen::Vector&lt;double, 3&gt;&amp; u);</div>
 <div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>  <span class="keyword">static</span> Eigen::Vector&lt;double, 5&gt; FillStateVector(<span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_pose2d.html">Pose2d</a>&amp; pose,</div>
 <div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>                                                  units::meter_t leftDistance,</div>
@@ -331,6 +331,14 @@ $(document).ready(function(){initNavTree('_differential_drive_pose_estimator_8h_
 <div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>};</div>
 <div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span> </div>
 <div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>}  <span class="comment">// namespace frc</span></div>
+<div class="ttc" id="a_core_html"><div class="ttname"><a href="_core.html">Core</a></div></div>
+<div class="ttc" id="a_differential_drive_wheel_speeds_8h_html"><div class="ttname"><a href="_differential_drive_wheel_speeds_8h.html">DifferentialDriveWheelSpeeds.h</a></div></div>
+<div class="ttc" id="a_kalman_filter_latency_compensator_8h_html"><div class="ttname"><a href="_kalman_filter_latency_compensator_8h.html">KalmanFilterLatencyCompensator.h</a></div></div>
+<div class="ttc" id="a_pose2d_8h_html"><div class="ttname"><a href="_pose2d_8h.html">Pose2d.h</a></div></div>
+<div class="ttc" id="a_rotation2d_8h_html"><div class="ttname"><a href="_rotation2d_8h.html">Rotation2d.h</a></div></div>
+<div class="ttc" id="a_symbol_exports_8h_html"><div class="ttname"><a href="_symbol_exports_8h.html">SymbolExports.h</a></div></div>
+<div class="ttc" id="a_symbol_exports_8h_html_aac411a8a8db8805ace32d8e07266c44e"><div class="ttname"><a href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a></div><div class="ttdeci">#define WPILIB_DLLEXPORT</div><div class="ttdef"><b>Definition:</b> SymbolExports.h:22</div></div>
+<div class="ttc" id="a_unscented_kalman_filter_8h_html"><div class="ttname"><a href="_unscented_kalman_filter_8h.html">UnscentedKalmanFilter.h</a></div></div>
 <div class="ttc" id="aclass_eigen_1_1_matrix_html"><div class="ttname"><a href="class_eigen_1_1_matrix.html">Eigen::Matrix</a></div><div class="ttdoc">The matrix class, also used for vectors and row-vectors.</div><div class="ttdef"><b>Definition:</b> Matrix.h:180</div></div>
 <div class="ttc" id="aclassfrc_1_1_differential_drive_pose_estimator_html"><div class="ttname"><a href="classfrc_1_1_differential_drive_pose_estimator.html">frc::DifferentialDrivePoseEstimator</a></div><div class="ttdoc">This class wraps an Unscented Kalman Filter to fuse latency-compensated vision measurements with diff...</div><div class="ttdef"><b>Definition:</b> DifferentialDrivePoseEstimator.h:48</div></div>
 <div class="ttc" id="aclassfrc_1_1_differential_drive_pose_estimator_html_a08f5072a0aa4e4fba8d7528427047720"><div class="ttname"><a href="classfrc_1_1_differential_drive_pose_estimator.html#a08f5072a0aa4e4fba8d7528427047720">frc::DifferentialDrivePoseEstimator::AddVisionMeasurement</a></div><div class="ttdeci">void AddVisionMeasurement(const Pose2d &amp;visionRobotPose, units::second_t timestamp)</div><div class="ttdoc">Adds a vision measurement to the Unscented Kalman Filter.</div></div>
@@ -344,16 +352,21 @@ $(document).ready(function(){initNavTree('_differential_drive_pose_estimator_8h_
 <div class="ttc" id="aclassfrc_1_1_kalman_filter_latency_compensator_html"><div class="ttname"><a href="classfrc_1_1_kalman_filter_latency_compensator.html">frc::KalmanFilterLatencyCompensator</a></div><div class="ttdef"><b>Definition:</b> KalmanFilterLatencyCompensator.h:20</div></div>
 <div class="ttc" id="aclassfrc_1_1_pose2d_html"><div class="ttname"><a href="classfrc_1_1_pose2d.html">frc::Pose2d</a></div><div class="ttdoc">Represents a 2d pose containing translational and rotational elements.</div><div class="ttdef"><b>Definition:</b> Pose2d.h:22</div></div>
 <div class="ttc" id="aclassfrc_1_1_rotation2d_html"><div class="ttname"><a href="classfrc_1_1_rotation2d.html">frc::Rotation2d</a></div><div class="ttdoc">A rotation in a 2d coordinate frame represented a point on the unit circle (cosine and sine).</div><div class="ttdef"><b>Definition:</b> Rotation2d.h:21</div></div>
-<div class="ttc" id="aclassfrc_1_1_unscented_kalman_filter_html"><div class="ttname"><a href="classfrc_1_1_unscented_kalman_filter.html">frc::UnscentedKalmanFilter</a></div><div class="ttdef"><b>Definition:</b> UnscentedKalmanFilter.h:24</div></div>
+<div class="ttc" id="aclassfrc_1_1_unscented_kalman_filter_html"><div class="ttname"><a href="classfrc_1_1_unscented_kalman_filter.html">frc::UnscentedKalmanFilter</a></div><div class="ttdoc">A Kalman filter combines predictions from a model and measurements to give an estimate of the true sy...</div><div class="ttdef"><b>Definition:</b> UnscentedKalmanFilter.h:48</div></div>
 <div class="ttc" id="aclasswpi_1_1array_html"><div class="ttname"><a href="classwpi_1_1array.html">wpi::array</a></div><div class="ttdoc">This class is a wrapper around std::array that does compile time size checking.</div><div class="ttdef"><b>Definition:</b> array.h:25</div></div>
+<div class="ttc" id="anamespace_eigen_1_1internal_html_a3cc80fc03610837da180f7e6d8e7b3ec"><div class="ttname"><a href="namespace_eigen_1_1internal.html#a3cc80fc03610837da180f7e6d8e7b3ec">Eigen::internal::y</a></div><div class="ttdeci">const Scalar &amp; y</div><div class="ttdef"><b>Definition:</b> MathFunctions.h:821</div></div>
+<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> CameraServerShared.h:13</div></div>
+<div class="ttc" id="anamespaceunits_1_1constants_html_a8ef157f2a40ed27a0f834847b332eb72"><div class="ttname"><a href="namespaceunits_1_1constants.html#a8ef157f2a40ed27a0f834847b332eb72">units::constants::F</a></div><div class="ttdeci">static constexpr const unit_t&lt; compound_unit&lt; charge::coulomb, inverse&lt; substance::mol &gt; &gt; &gt; F(N_A *e)</div><div class="ttdoc">Faraday constant.</div></div>
 <div class="ttc" id="astructfrc_1_1_differential_drive_wheel_speeds_html"><div class="ttname"><a href="structfrc_1_1_differential_drive_wheel_speeds.html">frc::DifferentialDriveWheelSpeeds</a></div><div class="ttdoc">Represents the wheel speeds for a differential drive drivetrain.</div><div class="ttdef"><b>Definition:</b> DifferentialDriveWheelSpeeds.h:15</div></div>
+<div class="ttc" id="atime_8h_html"><div class="ttname"><a href="time_8h.html">time.h</a></div></div>
+<div class="ttc" id="awpiutil_2src_2main_2native_2include_2wpi_2array_8h_html"><div class="ttname"><a href="wpiutil_2src_2main_2native_2include_2wpi_2array_8h.html">array.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_7b4a0634315f7993a48b0e5d4ddcc644.html">estimator</a></li><li class="navelem"><b>DifferentialDrivePoseEstimator.h</b></li>
-    <li class="footer">Generated on Fri Oct 29 2021 07:12:21 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_7b4a0634315f7993a48b0e5d4ddcc644.html">estimator</a></li><li class="navelem"><a class="el" href="_differential_drive_pose_estimator_8h.html">DifferentialDrivePoseEstimator.h</a></li>
+    <li class="footer">Generated on Fri Oct 29 2021 22:09:59 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-31-ga939cd9</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-32-g2cb171f</span>
    </div>
   </td>
  </tr>
@@ -97,17 +97,132 @@ $(document).ready(function(){initNavTree('struct_eigen_1_1internal_1_1symm__pack
   <div class="headertitle"><div class="title">Eigen::internal::symm_pack_lhs&lt; Scalar, Index, Pack1, Pack2_dummy, StorageOrder &gt; Struct Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_selfadjoint_matrix_matrix_8h_source.html">/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/eigeninclude/Eigen/src/Core/products/SelfadjointMatrixMatrix.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aad8bf0f72a54a95ee37e79f74c603fd5"><td class="memTemplParams" colspan="2"><a id="aad8bf0f72a54a95ee37e79f74c603fd5" name="aad8bf0f72a54a95ee37e79f74c603fd5"></a>
-template&lt;int BlockRows&gt; </td></tr>
-<tr class="memitem:aad8bf0f72a54a95ee37e79f74c603fd5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>pack</b> (Scalar *blockA, const <a class="el" href="class_eigen_1_1internal_1_1const__blas__data__mapper.html">const_blas_data_mapper</a>&lt; Scalar, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a>, StorageOrder &gt; &amp;lhs, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> cols, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> i, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> &amp;count)</td></tr>
+<tr class="memitem:aad8bf0f72a54a95ee37e79f74c603fd5"><td class="memTemplParams" colspan="2">template&lt;int BlockRows&gt; </td></tr>
+<tr class="memitem:aad8bf0f72a54a95ee37e79f74c603fd5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1symm__pack__lhs.html#aad8bf0f72a54a95ee37e79f74c603fd5">pack</a> (Scalar *blockA, const <a class="el" href="class_eigen_1_1internal_1_1const__blas__data__mapper.html">const_blas_data_mapper</a>&lt; Scalar, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a>, StorageOrder &gt; &amp;lhs, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> cols, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> i, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> &amp;<a class="el" href="core_8h.html#a66b93840aa6a29b3802202f99668f78a">count</a>)</td></tr>
 <tr class="separator:aad8bf0f72a54a95ee37e79f74c603fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6a09da9a1adb8a1d9d0f3dc3c632d2e"><td class="memItemLeft" align="right" valign="top"><a id="ae6a09da9a1adb8a1d9d0f3dc3c632d2e" name="ae6a09da9a1adb8a1d9d0f3dc3c632d2e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (Scalar *blockA, const Scalar *_lhs, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> lhsStride, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> cols, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> rows)</td></tr>
+<tr class="memitem:ae6a09da9a1adb8a1d9d0f3dc3c632d2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1symm__pack__lhs.html#ae6a09da9a1adb8a1d9d0f3dc3c632d2e">operator()</a> (Scalar *blockA, const Scalar *_lhs, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> lhsStride, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> cols, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> rows)</td></tr>
 <tr class="separator:ae6a09da9a1adb8a1d9d0f3dc3c632d2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae6a09da9a1adb8a1d9d0f3dc3c632d2e" name="ae6a09da9a1adb8a1d9d0f3dc3c632d2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6a09da9a1adb8a1d9d0f3dc3c632d2e">&#9670;&nbsp;</a></span>operator()()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Scalar , typename <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> , int Pack1, int Pack2_dummy, int StorageOrder&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="struct_eigen_1_1internal_1_1symm__pack__lhs.html">Eigen::internal::symm_pack_lhs</a>&lt; Scalar, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a>, Pack1, Pack2_dummy, StorageOrder &gt;::operator() </td>
+          <td>(</td>
+          <td class="paramtype">Scalar *&#160;</td>
+          <td class="paramname"><em>blockA</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Scalar *&#160;</td>
+          <td class="paramname"><em>_lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a>&#160;</td>
+          <td class="paramname"><em>lhsStride</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a>&#160;</td>
+          <td class="paramname"><em>cols</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a>&#160;</td>
+          <td class="paramname"><em>rows</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aad8bf0f72a54a95ee37e79f74c603fd5" name="aad8bf0f72a54a95ee37e79f74c603fd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad8bf0f72a54a95ee37e79f74c603fd5">&#9670;&nbsp;</a></span>pack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Scalar , typename <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> , int Pack1, int Pack2_dummy, int StorageOrder&gt; </div>
+<div class="memtemplate">
+template&lt;int BlockRows&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="struct_eigen_1_1internal_1_1symm__pack__lhs.html">Eigen::internal::symm_pack_lhs</a>&lt; Scalar, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a>, Pack1, Pack2_dummy, StorageOrder &gt;::pack </td>
+          <td>(</td>
+          <td class="paramtype">Scalar *&#160;</td>
+          <td class="paramname"><em>blockA</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_eigen_1_1internal_1_1const__blas__data__mapper.html">const_blas_data_mapper</a>&lt; Scalar, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a>, StorageOrder &gt; &amp;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a>&#160;</td>
+          <td class="paramname"><em>cols</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a>&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> &amp;&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/eigeninclude/Eigen/src/Core/products/<a class="el" href="_selfadjoint_matrix_matrix_8h_source.html">SelfadjointMatrixMatrix.h</a></li>
 </ul>
@@ -116,8 +231,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (Scala
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespace_eigen.html">Eigen</a></li><li class="navelem"><b>internal</b></li><li class="navelem"><a class="el" href="struct_eigen_1_1internal_1_1symm__pack__lhs.html">symm_pack_lhs</a></li>
-    <li class="footer">Generated on Fri Oct 29 2021 07:12:27 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespace_eigen.html">Eigen</a></li><li class="navelem"><a class="el" href="namespace_eigen_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="struct_eigen_1_1internal_1_1symm__pack__lhs.html">symm_pack_lhs</a></li>
+    <li class="footer">Generated on Fri Oct 29 2021 22:10:06 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

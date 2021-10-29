@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-31-ga939cd9</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-32-g2cb171f</span>
    </div>
   </td>
  </tr>
@@ -98,6 +98,8 @@ $(document).ready(function(){initNavTree('classwpi_1_1_safe_thread_owner.html','
   <div class="headertitle"><div class="title">wpi::SafeThreadOwner&lt; T &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_safe_thread_8h_source.html">wpi/SafeThread.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for wpi::SafeThreadOwner&lt; T &gt;:</div>
 <div class="dyncontent">
@@ -110,61 +112,152 @@ Inheritance diagram for wpi::SafeThreadOwner&lt; T &gt;:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a3256196592aef7b8bcbb89d1c31c28c3"><td class="memItemLeft" align="right" valign="top"><a id="a3256196592aef7b8bcbb89d1c31c28c3" name="a3256196592aef7b8bcbb89d1c31c28c3"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>Proxy</b> = typename <a class="el" href="classwpi_1_1detail_1_1_safe_thread_proxy.html">detail::SafeThreadProxy</a>&lt; T &gt;</td></tr>
+<tr class="memitem:a3256196592aef7b8bcbb89d1c31c28c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_safe_thread_owner.html#a3256196592aef7b8bcbb89d1c31c28c3">Proxy</a> = typename <a class="el" href="classwpi_1_1detail_1_1_safe_thread_proxy.html">detail::SafeThreadProxy</a>&lt; T &gt;</td></tr>
 <tr class="separator:a3256196592aef7b8bcbb89d1c31c28c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0fff88f1c4b769d7207f84500b883445"><td class="memTemplParams" colspan="2"><a id="a0fff88f1c4b769d7207f84500b883445" name="a0fff88f1c4b769d7207f84500b883445"></a>
-template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:a0fff88f1c4b769d7207f84500b883445"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Start</b> (Args &amp;&amp;... args)</td></tr>
+<tr class="memitem:a0fff88f1c4b769d7207f84500b883445"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:a0fff88f1c4b769d7207f84500b883445"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwpi_1_1_safe_thread_owner.html#a0fff88f1c4b769d7207f84500b883445">Start</a> (Args &amp;&amp;... args)</td></tr>
 <tr class="separator:a0fff88f1c4b769d7207f84500b883445"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18600dcdb5a79da9743cfc35217194f8"><td class="memItemLeft" align="right" valign="top"><a id="a18600dcdb5a79da9743cfc35217194f8" name="a18600dcdb5a79da9743cfc35217194f8"></a>
-Proxy&#160;</td><td class="memItemRight" valign="bottom"><b>GetThread</b> () const</td></tr>
+<tr class="memitem:a18600dcdb5a79da9743cfc35217194f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1_safe_thread_owner.html#a3256196592aef7b8bcbb89d1c31c28c3">Proxy</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_safe_thread_owner.html#a18600dcdb5a79da9743cfc35217194f8">GetThread</a> () const</td></tr>
 <tr class="separator:a18600dcdb5a79da9743cfc35217194f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed671a01af0f954d6d95b4a969d2f5f8"><td class="memItemLeft" align="right" valign="top"><a id="aed671a01af0f954d6d95b4a969d2f5f8" name="aed671a01af0f954d6d95b4a969d2f5f8"></a>
-std::shared_ptr&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetThreadSharedPtr</b> () const</td></tr>
+<tr class="memitem:aed671a01af0f954d6d95b4a969d2f5f8"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_safe_thread_owner.html#aed671a01af0f954d6d95b4a969d2f5f8">GetThreadSharedPtr</a> () const</td></tr>
 <tr class="separator:aed671a01af0f954d6d95b4a969d2f5f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classwpi_1_1detail_1_1_safe_thread_owner_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classwpi_1_1detail_1_1_safe_thread_owner_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classwpi_1_1detail_1_1_safe_thread_owner_base.html">wpi::detail::SafeThreadOwnerBase</a></td></tr>
-<tr class="memitem:a0758e9c33e3cddb01e4218a222d50cd0 inherit pub_methods_classwpi_1_1detail_1_1_safe_thread_owner_base"><td class="memItemLeft" align="right" valign="top"><a id="a0758e9c33e3cddb01e4218a222d50cd0" name="a0758e9c33e3cddb01e4218a222d50cd0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Stop</b> ()</td></tr>
+<tr class="memitem:a0758e9c33e3cddb01e4218a222d50cd0 inherit pub_methods_classwpi_1_1detail_1_1_safe_thread_owner_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1detail_1_1_safe_thread_owner_base.html#a0758e9c33e3cddb01e4218a222d50cd0">Stop</a> ()</td></tr>
 <tr class="separator:a0758e9c33e3cddb01e4218a222d50cd0 inherit pub_methods_classwpi_1_1detail_1_1_safe_thread_owner_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8622bf8c84e3c1192036ae1a1a7e1c7b inherit pub_methods_classwpi_1_1detail_1_1_safe_thread_owner_base"><td class="memItemLeft" align="right" valign="top"><a id="a8622bf8c84e3c1192036ae1a1a7e1c7b" name="a8622bf8c84e3c1192036ae1a1a7e1c7b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Join</b> ()</td></tr>
+<tr class="memitem:a8622bf8c84e3c1192036ae1a1a7e1c7b inherit pub_methods_classwpi_1_1detail_1_1_safe_thread_owner_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1detail_1_1_safe_thread_owner_base.html#a8622bf8c84e3c1192036ae1a1a7e1c7b">Join</a> ()</td></tr>
 <tr class="separator:a8622bf8c84e3c1192036ae1a1a7e1c7b inherit pub_methods_classwpi_1_1detail_1_1_safe_thread_owner_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af570ab0a211a7ec57b129977a9f5bb81 inherit pub_methods_classwpi_1_1detail_1_1_safe_thread_owner_base"><td class="memItemLeft" align="right" valign="top"><a id="af570ab0a211a7ec57b129977a9f5bb81" name="af570ab0a211a7ec57b129977a9f5bb81"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SafeThreadOwnerBase</b> (const <a class="el" href="classwpi_1_1detail_1_1_safe_thread_owner_base.html">SafeThreadOwnerBase</a> &amp;)=delete</td></tr>
+<tr class="memitem:aa03dfcd7b33b27efe956bcfe766850d2 inherit pub_methods_classwpi_1_1detail_1_1_safe_thread_owner_base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1detail_1_1_safe_thread_owner_base.html#aa03dfcd7b33b27efe956bcfe766850d2">SafeThreadOwnerBase</a> () noexcept=default</td></tr>
+<tr class="separator:aa03dfcd7b33b27efe956bcfe766850d2 inherit pub_methods_classwpi_1_1detail_1_1_safe_thread_owner_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af570ab0a211a7ec57b129977a9f5bb81 inherit pub_methods_classwpi_1_1detail_1_1_safe_thread_owner_base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1detail_1_1_safe_thread_owner_base.html#af570ab0a211a7ec57b129977a9f5bb81">SafeThreadOwnerBase</a> (const <a class="el" href="classwpi_1_1detail_1_1_safe_thread_owner_base.html">SafeThreadOwnerBase</a> &amp;)=delete</td></tr>
 <tr class="separator:af570ab0a211a7ec57b129977a9f5bb81 inherit pub_methods_classwpi_1_1detail_1_1_safe_thread_owner_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2264ec7cf56b47b31006ee586d577e7 inherit pub_methods_classwpi_1_1detail_1_1_safe_thread_owner_base"><td class="memItemLeft" align="right" valign="top"><a id="ae2264ec7cf56b47b31006ee586d577e7" name="ae2264ec7cf56b47b31006ee586d577e7"></a>
-<a class="el" href="classwpi_1_1detail_1_1_safe_thread_owner_base.html">SafeThreadOwnerBase</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classwpi_1_1detail_1_1_safe_thread_owner_base.html">SafeThreadOwnerBase</a> &amp;)=delete</td></tr>
+<tr class="memitem:ae2264ec7cf56b47b31006ee586d577e7 inherit pub_methods_classwpi_1_1detail_1_1_safe_thread_owner_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1detail_1_1_safe_thread_owner_base.html">SafeThreadOwnerBase</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1detail_1_1_safe_thread_owner_base.html#ae2264ec7cf56b47b31006ee586d577e7">operator=</a> (const <a class="el" href="classwpi_1_1detail_1_1_safe_thread_owner_base.html">SafeThreadOwnerBase</a> &amp;)=delete</td></tr>
 <tr class="separator:ae2264ec7cf56b47b31006ee586d577e7 inherit pub_methods_classwpi_1_1detail_1_1_safe_thread_owner_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a9de932188accccb98f4d011e539a81 inherit pub_methods_classwpi_1_1detail_1_1_safe_thread_owner_base"><td class="memItemLeft" align="right" valign="top"><a id="a1a9de932188accccb98f4d011e539a81" name="a1a9de932188accccb98f4d011e539a81"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SafeThreadOwnerBase</b> (<a class="el" href="classwpi_1_1detail_1_1_safe_thread_owner_base.html">SafeThreadOwnerBase</a> &amp;&amp;other) noexcept</td></tr>
+<tr class="memitem:a1a9de932188accccb98f4d011e539a81 inherit pub_methods_classwpi_1_1detail_1_1_safe_thread_owner_base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1detail_1_1_safe_thread_owner_base.html#a1a9de932188accccb98f4d011e539a81">SafeThreadOwnerBase</a> (<a class="el" href="classwpi_1_1detail_1_1_safe_thread_owner_base.html">SafeThreadOwnerBase</a> &amp;&amp;other) noexcept</td></tr>
 <tr class="separator:a1a9de932188accccb98f4d011e539a81 inherit pub_methods_classwpi_1_1detail_1_1_safe_thread_owner_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39fe7a259fb4daddfd628edf20a5d1d6 inherit pub_methods_classwpi_1_1detail_1_1_safe_thread_owner_base"><td class="memItemLeft" align="right" valign="top"><a id="a39fe7a259fb4daddfd628edf20a5d1d6" name="a39fe7a259fb4daddfd628edf20a5d1d6"></a>
-<a class="el" href="classwpi_1_1detail_1_1_safe_thread_owner_base.html">SafeThreadOwnerBase</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classwpi_1_1detail_1_1_safe_thread_owner_base.html">SafeThreadOwnerBase</a> &amp;&amp;other) noexcept</td></tr>
+<tr class="memitem:a39fe7a259fb4daddfd628edf20a5d1d6 inherit pub_methods_classwpi_1_1detail_1_1_safe_thread_owner_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1detail_1_1_safe_thread_owner_base.html">SafeThreadOwnerBase</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1detail_1_1_safe_thread_owner_base.html#a39fe7a259fb4daddfd628edf20a5d1d6">operator=</a> (<a class="el" href="classwpi_1_1detail_1_1_safe_thread_owner_base.html">SafeThreadOwnerBase</a> &amp;&amp;other) noexcept</td></tr>
 <tr class="separator:a39fe7a259fb4daddfd628edf20a5d1d6 inherit pub_methods_classwpi_1_1detail_1_1_safe_thread_owner_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3049d79839cb03c2c68d80d908d78cd4 inherit pub_methods_classwpi_1_1detail_1_1_safe_thread_owner_base"><td class="memItemLeft" align="right" valign="top"><a id="a3049d79839cb03c2c68d80d908d78cd4" name="a3049d79839cb03c2c68d80d908d78cd4"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>operator bool</b> () const</td></tr>
+<tr class="memitem:aa4c99b4eba93f3cdb0c361f840ae6dfe inherit pub_methods_classwpi_1_1detail_1_1_safe_thread_owner_base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1detail_1_1_safe_thread_owner_base.html#aa4c99b4eba93f3cdb0c361f840ae6dfe">~SafeThreadOwnerBase</a> ()</td></tr>
+<tr class="separator:aa4c99b4eba93f3cdb0c361f840ae6dfe inherit pub_methods_classwpi_1_1detail_1_1_safe_thread_owner_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3049d79839cb03c2c68d80d908d78cd4 inherit pub_methods_classwpi_1_1detail_1_1_safe_thread_owner_base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1detail_1_1_safe_thread_owner_base.html#a3049d79839cb03c2c68d80d908d78cd4">operator bool</a> () const</td></tr>
 <tr class="separator:a3049d79839cb03c2c68d80d908d78cd4 inherit pub_methods_classwpi_1_1detail_1_1_safe_thread_owner_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac66ae6c09921ef4fe93d8b0ce87cbe14 inherit pub_methods_classwpi_1_1detail_1_1_safe_thread_owner_base"><td class="memItemLeft" align="right" valign="top"><a id="ac66ae6c09921ef4fe93d8b0ce87cbe14" name="ac66ae6c09921ef4fe93d8b0ce87cbe14"></a>
-std::thread::native_handle_type&#160;</td><td class="memItemRight" valign="bottom"><b>GetNativeThreadHandle</b> ()</td></tr>
+<tr class="memitem:ac66ae6c09921ef4fe93d8b0ce87cbe14 inherit pub_methods_classwpi_1_1detail_1_1_safe_thread_owner_base"><td class="memItemLeft" align="right" valign="top">std::thread::native_handle_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1detail_1_1_safe_thread_owner_base.html#ac66ae6c09921ef4fe93d8b0ce87cbe14">GetNativeThreadHandle</a> ()</td></tr>
 <tr class="separator:ac66ae6c09921ef4fe93d8b0ce87cbe14 inherit pub_methods_classwpi_1_1detail_1_1_safe_thread_owner_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08cbc270cf2e9cad61020a2d0191b7ab inherit pub_methods_classwpi_1_1detail_1_1_safe_thread_owner_base"><td class="memItemLeft" align="right" valign="top"><a id="a08cbc270cf2e9cad61020a2d0191b7ab" name="a08cbc270cf2e9cad61020a2d0191b7ab"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetJoinAtExit</b> (bool joinAtExit)</td></tr>
+<tr class="memitem:a08cbc270cf2e9cad61020a2d0191b7ab inherit pub_methods_classwpi_1_1detail_1_1_safe_thread_owner_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1detail_1_1_safe_thread_owner_base.html#a08cbc270cf2e9cad61020a2d0191b7ab">SetJoinAtExit</a> (bool joinAtExit)</td></tr>
 <tr class="separator:a08cbc270cf2e9cad61020a2d0191b7ab inherit pub_methods_classwpi_1_1detail_1_1_safe_thread_owner_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_classwpi_1_1detail_1_1_safe_thread_owner_base"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classwpi_1_1detail_1_1_safe_thread_owner_base')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classwpi_1_1detail_1_1_safe_thread_owner_base.html">wpi::detail::SafeThreadOwnerBase</a></td></tr>
-<tr class="memitem:a5467cf5f90486e1ea28d13f237421da3 inherit pro_methods_classwpi_1_1detail_1_1_safe_thread_owner_base"><td class="memItemLeft" align="right" valign="top"><a id="a5467cf5f90486e1ea28d13f237421da3" name="a5467cf5f90486e1ea28d13f237421da3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Start</b> (std::shared_ptr&lt; <a class="el" href="classwpi_1_1_safe_thread.html">SafeThread</a> &gt; thr)</td></tr>
+<tr class="memitem:a5467cf5f90486e1ea28d13f237421da3 inherit pro_methods_classwpi_1_1detail_1_1_safe_thread_owner_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1detail_1_1_safe_thread_owner_base.html#a5467cf5f90486e1ea28d13f237421da3">Start</a> (std::shared_ptr&lt; <a class="el" href="classwpi_1_1_safe_thread.html">SafeThread</a> &gt; thr)</td></tr>
 <tr class="separator:a5467cf5f90486e1ea28d13f237421da3 inherit pro_methods_classwpi_1_1detail_1_1_safe_thread_owner_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34078507a59492a2399c655ff60638a5 inherit pro_methods_classwpi_1_1detail_1_1_safe_thread_owner_base"><td class="memItemLeft" align="right" valign="top"><a id="a34078507a59492a2399c655ff60638a5" name="a34078507a59492a2399c655ff60638a5"></a>
-std::shared_ptr&lt; <a class="el" href="classwpi_1_1_safe_thread.html">SafeThread</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetThreadSharedPtr</b> () const</td></tr>
+<tr class="memitem:a34078507a59492a2399c655ff60638a5 inherit pro_methods_classwpi_1_1detail_1_1_safe_thread_owner_base"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classwpi_1_1_safe_thread.html">SafeThread</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1detail_1_1_safe_thread_owner_base.html#a34078507a59492a2399c655ff60638a5">GetThreadSharedPtr</a> () const</td></tr>
 <tr class="separator:a34078507a59492a2399c655ff60638a5 inherit pro_methods_classwpi_1_1detail_1_1_safe_thread_owner_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a3256196592aef7b8bcbb89d1c31c28c3" name="a3256196592aef7b8bcbb89d1c31c28c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3256196592aef7b8bcbb89d1c31c28c3">&#9670;&nbsp;</a></span>Proxy</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="classwpi_1_1_safe_thread_owner.html">wpi::SafeThreadOwner</a>&lt; T &gt;::<a class="el" href="classwpi_1_1_safe_thread_owner.html#a3256196592aef7b8bcbb89d1c31c28c3">Proxy</a> =  typename <a class="el" href="classwpi_1_1detail_1_1_safe_thread_proxy.html">detail::SafeThreadProxy</a>&lt;T&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a18600dcdb5a79da9743cfc35217194f8" name="a18600dcdb5a79da9743cfc35217194f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18600dcdb5a79da9743cfc35217194f8">&#9670;&nbsp;</a></span>GetThread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwpi_1_1_safe_thread_owner.html#a3256196592aef7b8bcbb89d1c31c28c3">Proxy</a> <a class="el" href="classwpi_1_1_safe_thread_owner.html">wpi::SafeThreadOwner</a>&lt; T &gt;::GetThread </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aed671a01af0f954d6d95b4a969d2f5f8" name="aed671a01af0f954d6d95b4a969d2f5f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed671a01af0f954d6d95b4a969d2f5f8">&#9670;&nbsp;</a></span>GetThreadSharedPtr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; T &gt; <a class="el" href="classwpi_1_1_safe_thread_owner.html">wpi::SafeThreadOwner</a>&lt; T &gt;::GetThreadSharedPtr </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0fff88f1c4b769d7207f84500b883445" name="a0fff88f1c4b769d7207f84500b883445"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fff88f1c4b769d7207f84500b883445">&#9670;&nbsp;</a></span>Start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<div class="memtemplate">
+template&lt;typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classwpi_1_1_safe_thread_owner.html">wpi::SafeThreadOwner</a>&lt; T &gt;::Start </td>
+          <td>(</td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>wpi/<a class="el" href="_safe_thread_8h_source.html">SafeThread.h</a></li>
 </ul>
@@ -173,8 +266,8 @@ std::shared_ptr&lt; <a class="el" href="classwpi_1_1_safe_thread.html">SafeThrea
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>wpi</b></li><li class="navelem"><a class="el" href="classwpi_1_1_safe_thread_owner.html">SafeThreadOwner</a></li>
-    <li class="footer">Generated on Fri Oct 29 2021 07:12:30 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="classwpi_1_1_safe_thread_owner.html">SafeThreadOwner</a></li>
+    <li class="footer">Generated on Fri Oct 29 2021 22:10:09 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

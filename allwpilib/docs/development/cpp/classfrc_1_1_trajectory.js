@@ -1,6 +1,7 @@
 var classfrc_1_1_trajectory =
 [
     [ "State", "structfrc_1_1_trajectory_1_1_state.html", "structfrc_1_1_trajectory_1_1_state" ],
+    [ "Trajectory", "classfrc_1_1_trajectory.html#aa252fefe54b7a988ba429eae605d2457", null ],
     [ "Trajectory", "classfrc_1_1_trajectory.html#abc13b1161ac63b07b5e496ec67acbf82", null ],
     [ "InitialPose", "classfrc_1_1_trajectory.html#af317c5d052e653165ef4567d038b6517", null ],
     [ "operator!=", "classfrc_1_1_trajectory.html#a87a8a48a591677006244409dc568960d", null ],

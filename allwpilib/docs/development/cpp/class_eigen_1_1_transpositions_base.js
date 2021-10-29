@@ -1,9 +1,13 @@
 var class_eigen_1_1_transpositions_base =
 [
     [ "Index", "class_eigen_1_1_transpositions_base.html#a3f5f06118b419e8e6ccbe49ed5b4c91f", null ],
+    [ "IndicesType", "class_eigen_1_1_transpositions_base.html#a9e7d155e0921e39a201a1da9bca1894d", null ],
+    [ "StorageIndex", "class_eigen_1_1_transpositions_base.html#a82d8ab18b21c00a1c0fcf8448c8f63c1", null ],
     [ "coeff", "class_eigen_1_1_transpositions_base.html#abdbb7918c069a033215097f0ccabc821", null ],
     [ "coeffRef", "class_eigen_1_1_transpositions_base.html#acb7c616bb31c0bc0151c0f9765be5b10", null ],
     [ "cols", "class_eigen_1_1_transpositions_base.html#a5d510fab3c65c3a2870ca8e14eecf1b5", null ],
+    [ "derived", "class_eigen_1_1_transpositions_base.html#ad5a1f2d2d8997480c2af2331278421e9", null ],
+    [ "derived", "class_eigen_1_1_transpositions_base.html#a4ea07d7f1a07376e0018c6cae8d88f3f", null ],
     [ "indices", "class_eigen_1_1_transpositions_base.html#af30a2023b0920a66e71f19765bb7f934", null ],
     [ "indices", "class_eigen_1_1_transpositions_base.html#a7b51d177b00d83f2508d0f20d0c0ac2c", null ],
     [ "inverse", "class_eigen_1_1_transpositions_base.html#af71a5d9bdfa15c5be9deb9f2767d571b", null ],

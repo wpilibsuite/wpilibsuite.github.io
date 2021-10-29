@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-31-ga939cd9</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-32-g2cb171f</span>
    </div>
   </td>
  </tr>
@@ -124,11 +124,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ada119a75e1f5c06b14ca290ebb7a5abd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_analog_accelerometer.html#ada119a75e1f5c06b14ca290ebb7a5abd">AnalogAccelerometer</a> (std::shared_ptr&lt; <a class="el" href="classfrc_1_1_analog_input.html">AnalogInput</a> &gt; channel)</td></tr>
 <tr class="memdesc:ada119a75e1f5c06b14ca290ebb7a5abd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new instance of <a class="el" href="classfrc_1_1_accelerometer.html" title="Interface for 3-axis accelerometers.">Accelerometer</a> from an existing <a class="el" href="classfrc_1_1_analog_input.html" title="Analog input class.">AnalogInput</a>.  <a href="classfrc_1_1_analog_accelerometer.html#ada119a75e1f5c06b14ca290ebb7a5abd">More...</a><br /></td></tr>
 <tr class="separator:ada119a75e1f5c06b14ca290ebb7a5abd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9961896914212b6ec717490b6316e3b7"><td class="memItemLeft" align="right" valign="top"><a id="a9961896914212b6ec717490b6316e3b7" name="a9961896914212b6ec717490b6316e3b7"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AnalogAccelerometer</b> (<a class="el" href="classfrc_1_1_analog_accelerometer.html">AnalogAccelerometer</a> &amp;&amp;)=default</td></tr>
+<tr class="memitem:a88abc31297de3e618ddeb616f25aebb4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_analog_accelerometer.html#a88abc31297de3e618ddeb616f25aebb4">~AnalogAccelerometer</a> () override=default</td></tr>
+<tr class="separator:a88abc31297de3e618ddeb616f25aebb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9961896914212b6ec717490b6316e3b7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_analog_accelerometer.html#a9961896914212b6ec717490b6316e3b7">AnalogAccelerometer</a> (<a class="el" href="classfrc_1_1_analog_accelerometer.html">AnalogAccelerometer</a> &amp;&amp;)=default</td></tr>
 <tr class="separator:a9961896914212b6ec717490b6316e3b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad173664ea7e88ea691a06dd46da354b6"><td class="memItemLeft" align="right" valign="top"><a id="ad173664ea7e88ea691a06dd46da354b6" name="ad173664ea7e88ea691a06dd46da354b6"></a>
-<a class="el" href="classfrc_1_1_analog_accelerometer.html">AnalogAccelerometer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classfrc_1_1_analog_accelerometer.html">AnalogAccelerometer</a> &amp;&amp;)=default</td></tr>
+<tr class="memitem:ad173664ea7e88ea691a06dd46da354b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_analog_accelerometer.html">AnalogAccelerometer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_analog_accelerometer.html#ad173664ea7e88ea691a06dd46da354b6">operator=</a> (<a class="el" href="classfrc_1_1_analog_accelerometer.html">AnalogAccelerometer</a> &amp;&amp;)=default</td></tr>
 <tr class="separator:ad173664ea7e88ea691a06dd46da354b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0baa10094440820e7410c0c08e1fade1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_analog_accelerometer.html#a0baa10094440820e7410c0c08e1fade1">GetAcceleration</a> () const</td></tr>
 <tr class="memdesc:a0baa10094440820e7410c0c08e1fade1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the acceleration in Gs.  <a href="classfrc_1_1_analog_accelerometer.html#a0baa10094440820e7410c0c08e1fade1">More...</a><br /></td></tr>
@@ -142,42 +142,43 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac279c0cee7e70b30cccd2380990f7f80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_analog_accelerometer.html#ac279c0cee7e70b30cccd2380990f7f80">InitSendable</a> (<a class="el" href="classwpi_1_1_sendable_builder.html">wpi::SendableBuilder</a> &amp;builder) override</td></tr>
 <tr class="memdesc:ac279c0cee7e70b30cccd2380990f7f80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes this Sendable object.  <a href="classfrc_1_1_analog_accelerometer.html#ac279c0cee7e70b30cccd2380990f7f80">More...</a><br /></td></tr>
 <tr class="separator:ac279c0cee7e70b30cccd2380990f7f80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classwpi_1_1_sendable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classwpi_1_1_sendable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classwpi_1_1_sendable.html">wpi::Sendable</a></td></tr>
+<tr class="memitem:a37e52c8d490b4cecf5e6fa7e7d47e7ec inherit pub_methods_classwpi_1_1_sendable"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable.html#a37e52c8d490b4cecf5e6fa7e7d47e7ec">~Sendable</a> ()=default</td></tr>
+<tr class="separator:a37e52c8d490b4cecf5e6fa7e7d47e7ec inherit pub_methods_classwpi_1_1_sendable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classwpi_1_1_sendable_helper"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classwpi_1_1_sendable_helper')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classwpi_1_1_sendable_helper.html">wpi::SendableHelper&lt; AnalogAccelerometer &gt;</a></td></tr>
-<tr class="memitem:aab4f8627d10ab759fb1ea1bbcd106a90 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top"><a id="aab4f8627d10ab759fb1ea1bbcd106a90" name="aab4f8627d10ab759fb1ea1bbcd106a90"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SendableHelper</b> (const <a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;rhs)=default</td></tr>
+<tr class="memitem:aab4f8627d10ab759fb1ea1bbcd106a90 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#aab4f8627d10ab759fb1ea1bbcd106a90">SendableHelper</a> (const <a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;rhs)=default</td></tr>
 <tr class="separator:aab4f8627d10ab759fb1ea1bbcd106a90 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf9409670bb9b5cc16706341bf082c23 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top"><a id="aaf9409670bb9b5cc16706341bf082c23" name="aaf9409670bb9b5cc16706341bf082c23"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SendableHelper</b> (<a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;&amp;rhs)</td></tr>
+<tr class="memitem:aaf9409670bb9b5cc16706341bf082c23 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#aaf9409670bb9b5cc16706341bf082c23">SendableHelper</a> (<a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;&amp;rhs)</td></tr>
 <tr class="separator:aaf9409670bb9b5cc16706341bf082c23 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa52795f3b4aafc83fb167921dee31e2 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top"><a id="afa52795f3b4aafc83fb167921dee31e2" name="afa52795f3b4aafc83fb167921dee31e2"></a>
-<a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;rhs)=default</td></tr>
+<tr class="memitem:afa52795f3b4aafc83fb167921dee31e2 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#afa52795f3b4aafc83fb167921dee31e2">operator=</a> (const <a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;rhs)=default</td></tr>
 <tr class="separator:afa52795f3b4aafc83fb167921dee31e2 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ebcd20db42c07ce8835be6bbcdddb70 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top"><a id="a7ebcd20db42c07ce8835be6bbcdddb70" name="a7ebcd20db42c07ce8835be6bbcdddb70"></a>
-<a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;&amp;rhs)</td></tr>
+<tr class="memitem:a7ebcd20db42c07ce8835be6bbcdddb70 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a7ebcd20db42c07ce8835be6bbcdddb70">operator=</a> (<a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;&amp;rhs)</td></tr>
 <tr class="separator:a7ebcd20db42c07ce8835be6bbcdddb70 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad914b3555af5651aaaa3d8b1cec83b91 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#ad914b3555af5651aaaa3d8b1cec83b91">GetName</a> () const</td></tr>
 <tr class="memdesc:ad914b3555af5651aaaa3d8b1cec83b91 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the name of this Sendable object.  <a href="classwpi_1_1_sendable_helper.html#ad914b3555af5651aaaa3d8b1cec83b91">More...</a><br /></td></tr>
 <tr class="separator:ad914b3555af5651aaaa3d8b1cec83b91 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab63e9f45842f45bfe5332041be0ef215 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#ab63e9f45842f45bfe5332041be0ef215">SetName</a> (std::string_view name)</td></tr>
+<tr class="memitem:ab63e9f45842f45bfe5332041be0ef215 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#ab63e9f45842f45bfe5332041be0ef215">SetName</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> <a class="el" href="core_8h.html#a7fc0249f0f8ba720115d2430f5b86cbaab068931cc450442b63f5b3d276ea4297">name</a>)</td></tr>
 <tr class="memdesc:ab63e9f45842f45bfe5332041be0ef215 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name of this Sendable object.  <a href="classwpi_1_1_sendable_helper.html#ab63e9f45842f45bfe5332041be0ef215">More...</a><br /></td></tr>
 <tr class="separator:ab63e9f45842f45bfe5332041be0ef215 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75eba171de041df5ccdd8118287f9511 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a75eba171de041df5ccdd8118287f9511">SetName</a> (std::string_view subsystem, std::string_view name)</td></tr>
+<tr class="memitem:a75eba171de041df5ccdd8118287f9511 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a75eba171de041df5ccdd8118287f9511">SetName</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> subsystem, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> <a class="el" href="core_8h.html#a7fc0249f0f8ba720115d2430f5b86cbaab068931cc450442b63f5b3d276ea4297">name</a>)</td></tr>
 <tr class="memdesc:a75eba171de041df5ccdd8118287f9511 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets both the subsystem name and device name of this Sendable object.  <a href="classwpi_1_1_sendable_helper.html#a75eba171de041df5ccdd8118287f9511">More...</a><br /></td></tr>
 <tr class="separator:a75eba171de041df5ccdd8118287f9511 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae661490f5da84e30594380eeb5d4952b inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#ae661490f5da84e30594380eeb5d4952b">GetSubsystem</a> () const</td></tr>
 <tr class="memdesc:ae661490f5da84e30594380eeb5d4952b inherit pub_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the subsystem name of this Sendable object.  <a href="classwpi_1_1_sendable_helper.html#ae661490f5da84e30594380eeb5d4952b">More...</a><br /></td></tr>
 <tr class="separator:ae661490f5da84e30594380eeb5d4952b inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11434f29c9ef91c9975969fb88212482 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a11434f29c9ef91c9975969fb88212482">SetSubsystem</a> (std::string_view subsystem)</td></tr>
+<tr class="memitem:a11434f29c9ef91c9975969fb88212482 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a11434f29c9ef91c9975969fb88212482">SetSubsystem</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> subsystem)</td></tr>
 <tr class="memdesc:a11434f29c9ef91c9975969fb88212482 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the subsystem name of this Sendable object.  <a href="classwpi_1_1_sendable_helper.html#a11434f29c9ef91c9975969fb88212482">More...</a><br /></td></tr>
 <tr class="separator:a11434f29c9ef91c9975969fb88212482 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_classwpi_1_1_sendable_helper"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classwpi_1_1_sendable_helper')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classwpi_1_1_sendable_helper.html">wpi::SendableHelper&lt; AnalogAccelerometer &gt;</a></td></tr>
-<tr class="memitem:a4cc45e3b86841263aaf59223ffeb3c88 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a4cc45e3b86841263aaf59223ffeb3c88">SetName</a> (std::string_view moduleType, int channel)</td></tr>
+<tr class="memitem:af21a49b911f282fddbb22deca3c9aab5 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#af21a49b911f282fddbb22deca3c9aab5">SendableHelper</a> ()=default</td></tr>
+<tr class="separator:af21a49b911f282fddbb22deca3c9aab5 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cc45e3b86841263aaf59223ffeb3c88 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a4cc45e3b86841263aaf59223ffeb3c88">SetName</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> moduleType, int channel)</td></tr>
 <tr class="memdesc:a4cc45e3b86841263aaf59223ffeb3c88 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name of the sensor with a channel number.  <a href="classwpi_1_1_sendable_helper.html#a4cc45e3b86841263aaf59223ffeb3c88">More...</a><br /></td></tr>
 <tr class="separator:a4cc45e3b86841263aaf59223ffeb3c88 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2953192a91f457768c3d879599ee924 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#ab2953192a91f457768c3d879599ee924">SetName</a> (std::string_view moduleType, int moduleNumber, int channel)</td></tr>
+<tr class="memitem:ab2953192a91f457768c3d879599ee924 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#ab2953192a91f457768c3d879599ee924">SetName</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> moduleType, int moduleNumber, int channel)</td></tr>
 <tr class="memdesc:ab2953192a91f457768c3d879599ee924 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name of the sensor with a module and channel number.  <a href="classwpi_1_1_sendable_helper.html#ab2953192a91f457768c3d879599ee924">More...</a><br /></td></tr>
 <tr class="separator:ab2953192a91f457768c3d879599ee924 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ce2af28692ec77440d09ab8c2d36425 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a7ce2af28692ec77440d09ab8c2d36425">AddChild</a> (std::shared_ptr&lt; <a class="el" href="classwpi_1_1_sendable.html">Sendable</a> &gt; child)</td></tr>
@@ -186,13 +187,15 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a3e272258586ef98d2c1b8f6be76a1663 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a3e272258586ef98d2c1b8f6be76a1663">AddChild</a> (void *child)</td></tr>
 <tr class="memdesc:a3e272258586ef98d2c1b8f6be76a1663 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a child component.  <a href="classwpi_1_1_sendable_helper.html#a3e272258586ef98d2c1b8f6be76a1663">More...</a><br /></td></tr>
 <tr class="separator:a3e272258586ef98d2c1b8f6be76a1663 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b89fa1cc66e9d7b32eaa7df291e2c3b inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a4b89fa1cc66e9d7b32eaa7df291e2c3b">~SendableHelper</a> ()</td></tr>
+<tr class="separator:a4b89fa1cc66e9d7b32eaa7df291e2c3b inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Handle operation of an analog accelerometer. </p>
 <p >The accelerometer reads acceleration directly through the sensor. Many sensors have multiple axis and can be treated as multiple devices. Each is calibrated by finding the center value over a period of time. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aab32335254fd6909d74089c1eeda1c0a" name="aab32335254fd6909d74089c1eeda1c0a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab32335254fd6909d74089c1eeda1c0a">&#9670;&nbsp;</a></span>AnalogAccelerometer() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aab32335254fd6909d74089c1eeda1c0a">&#9670;&nbsp;</a></span>AnalogAccelerometer() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -227,7 +230,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="a8912f6aaa97d4d1db5a11b697d55966b" name="a8912f6aaa97d4d1db5a11b697d55966b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8912f6aaa97d4d1db5a11b697d55966b">&#9670;&nbsp;</a></span>AnalogAccelerometer() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8912f6aaa97d4d1db5a11b697d55966b">&#9670;&nbsp;</a></span>AnalogAccelerometer() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -262,7 +265,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <a id="ada119a75e1f5c06b14ca290ebb7a5abd" name="ada119a75e1f5c06b14ca290ebb7a5abd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada119a75e1f5c06b14ca290ebb7a5abd">&#9670;&nbsp;</a></span>AnalogAccelerometer() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ada119a75e1f5c06b14ca290ebb7a5abd">&#9670;&nbsp;</a></span>AnalogAccelerometer() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -293,6 +296,57 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a88abc31297de3e618ddeb616f25aebb4" name="a88abc31297de3e618ddeb616f25aebb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88abc31297de3e618ddeb616f25aebb4">&#9670;&nbsp;</a></span>~AnalogAccelerometer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">frc::AnalogAccelerometer::~AnalogAccelerometer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9961896914212b6ec717490b6316e3b7" name="a9961896914212b6ec717490b6316e3b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9961896914212b6ec717490b6316e3b7">&#9670;&nbsp;</a></span>AnalogAccelerometer() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">frc::AnalogAccelerometer::AnalogAccelerometer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classfrc_1_1_analog_accelerometer.html">AnalogAccelerometer</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -351,6 +405,32 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 
 <p>Implements <a class="el" href="classwpi_1_1_sendable.html#a02dfae73ea50b297f05151eafdc2efe6">wpi::Sendable</a>.</p>
+
+</div>
+</div>
+<a id="ad173664ea7e88ea691a06dd46da354b6" name="ad173664ea7e88ea691a06dd46da354b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad173664ea7e88ea691a06dd46da354b6">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfrc_1_1_analog_accelerometer.html">AnalogAccelerometer</a> &amp; frc::AnalogAccelerometer::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classfrc_1_1_analog_accelerometer.html">AnalogAccelerometer</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -416,8 +496,8 @@ Additional Inherited Members</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1_analog_accelerometer.html">AnalogAccelerometer</a></li>
-    <li class="footer">Generated on Fri Oct 29 2021 07:12:28 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_analog_accelerometer.html">AnalogAccelerometer</a></li>
+    <li class="footer">Generated on Fri Oct 29 2021 22:10:07 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

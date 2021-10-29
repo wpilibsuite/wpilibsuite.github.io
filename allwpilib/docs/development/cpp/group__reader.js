@@ -12,6 +12,7 @@ var group__reader =
     [ "mpack_done_bin", "group__reader.html#gaa4676c4b0761de4f864fd81c347a15a0", null ],
     [ "mpack_done_map", "group__reader.html#ga86165fc780e7adef09f4b45aee54842a", null ],
     [ "mpack_done_str", "group__reader.html#gaaad37015e0c53704d9356de06b493de6", null ],
+    [ "mpack_done_type", "group__reader.html#ga65cd03cc254315c2e5bfe2a7d9043ee8", null ],
     [ "mpack_peek_tag", "group__reader.html#ga397a8d0738b8d68753a470a988b813aa", null ],
     [ "mpack_read_bytes", "group__reader.html#gaeb91e8d4e2a7b7f6562d8bbb7400275c", null ],
     [ "mpack_read_bytes_alloc", "group__reader.html#ga93f5ab68116c0de69a823d7d839f8033", null ],

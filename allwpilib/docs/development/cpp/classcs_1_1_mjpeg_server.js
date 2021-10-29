@@ -1,5 +1,6 @@
 var classcs_1_1_mjpeg_server =
 [
+    [ "MjpegServer", "classcs_1_1_mjpeg_server.html#a885b674ead2793e02edbc84b0b2b3bbe", null ],
     [ "MjpegServer", "classcs_1_1_mjpeg_server.html#a7acbaeb0eaa511b0afb2f993b7bab974", null ],
     [ "MjpegServer", "classcs_1_1_mjpeg_server.html#aac51b278b1ac77dd8ac95f3e57daa25a", null ],
     [ "GetListenAddress", "classcs_1_1_mjpeg_server.html#a8b2294c7a8710e8ad8904454cee2ccf8", null ],

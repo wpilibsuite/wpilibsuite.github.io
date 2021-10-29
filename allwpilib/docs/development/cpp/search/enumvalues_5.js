@@ -1,6 +1,17 @@
 var searchData=
 [
-  ['failed_0',['FAILED',['../classwpi_1_1_web_socket.html#a767b9ee610b2638448e936302cd3b1b3a9d850e9667a5ed87f9755a566fdd08e7',1,'wpi::WebSocket']]],
-  ['flags_1',['Flags',['../class_eigen_1_1_dense_base.html#abe6133e07ff4a782c99abd7ee83bdfa6a7392c9b2ad41ba3c16fdc5306c04d581',1,'Eigen::DenseBase']]],
-  ['fullpivhouseholderqrpreconditioner_2',['FullPivHouseholderQRPreconditioner',['../group__enums.html#gga46eba0d5c621f590b8cf1b53af31d56eabd745dcaff7019c5f918c68809e5ea50',1,'Eigen']]]
+  ['eigen_5finternal_5fcompilation_5ferror_5for_5fyou_5fmade_5fa_5fprogramming_5fmistake_0',['EIGEN_INTERNAL_COMPILATION_ERROR_OR_YOU_MADE_A_PROGRAMMING_MISTAKE',['../struct_eigen_1_1internal_1_1static__assertion_3_01true_01_4.html#ab8592d8b71c10dc498bc1cb83ecf99adafcd5474d187738b66e40cf2fd554fd3a',1,'Eigen::internal::static_assertion&lt; true &gt;']]],
+  ['eigen_5finternal_5ferror_5fplease_5ffile_5fa_5fbug_5freport_1',['EIGEN_INTERNAL_ERROR_PLEASE_FILE_A_BUG_REPORT',['../struct_eigen_1_1internal_1_1static__assertion_3_01true_01_4.html#ab8592d8b71c10dc498bc1cb83ecf99ada47f6f804e5051ec1bb7f666d6aa9ab10',1,'Eigen::internal::static_assertion&lt; true &gt;']]],
+  ['eigen_5finternal_5ferror_5fplease_5ffile_5fa_5fbug_5freport_5f_5finvalid_5fcost_5fvalue_2',['EIGEN_INTERNAL_ERROR_PLEASE_FILE_A_BUG_REPORT__INVALID_COST_VALUE',['../struct_eigen_1_1internal_1_1static__assertion_3_01true_01_4.html#ab8592d8b71c10dc498bc1cb83ecf99ada798e4fa11d2938ee5b8f69d8940c5ef0',1,'Eigen::internal::static_assertion&lt; true &gt;']]],
+  ['eigenvaluesonly_3',['EigenvaluesOnly',['../group__enums.html#ggae3e239fb70022eb8747994cf5d68b4a9afd06633f270207c373875fd7ca03e906',1,'Eigen']]],
+  ['eigvecmask_4',['EigVecMask',['../group__enums.html#ggae3e239fb70022eb8747994cf5d68b4a9a58b2e52b6b46818217f67d2b38ee90e3',1,'Eigen']]],
+  ['enablecoeff_5',['EnableCoeff',['../class_eigen_1_1_product_impl_3_01_lhs_00_01_rhs_00_01_option_00_01_dense_01_4.html#a4f8a2881e476f846346679f15ea9ed30a8f6d3888112ef7f4716597eb25aa1ffe',1,'Eigen::ProductImpl&lt; Lhs, Rhs, Option, Dense &gt;']]],
+  ['encoder_6',['Encoder',['../namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9a87d487f6f605eb96e61be67988e41e6d',1,'hal']]],
+  ['error_7',['error',['../namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5aea5ac52de38b8cf793e5d933bfb76edf45',1,'detail::digits']]],
+  ['evaluate_8',['Evaluate',['../struct_eigen_1_1internal_1_1nested__eval.html#a4b7971f09b95374f7e1e49272346b08baa1f3d1cb5e715314885deb4c16950dfe',1,'Eigen::internal::nested_eval']]],
+  ['evaluatorflags_9',['EvaluatorFlags',['../struct_eigen_1_1internal_1_1traits_3_01_matrix_3_01___scalar_00_01___rows_00_01___cols_00_01___o4c9772ffb3eee7280611af9a479b3583.html#a925d65de16b97db7a8aad7c5750f0450a95cb9930c37e2438ca912634070a9278',1,'Eigen::internal::traits&lt; Matrix&lt; _Scalar, _Rows, _Cols, _Options, _MaxRows, _MaxCols &gt; &gt;']]],
+  ['executable_5fformat_5ferror_10',['executable_format_error',['../namespacewpi.html#a0cc73ce1be7e2680fb97374e03368001a4dfaf9c996cf045f32d17edc9754fc95',1,'wpi']]],
+  ['exists_11',['exists',['../namespaceghc_1_1filesystem_1_1detail.html#a5f693e585200b86ff4b0e2d39f0dc22fae087923eb5dd1310f5f25ddd5ae5b580',1,'ghc::filesystem::detail']]],
+  ['exp_12',['exp',['../core_8h.html#a824a8e3e13800e82ebdc3fb042eeed91ab0ab0254bd58eb87eaee3172ba49fefb',1,'core.h']]],
+  ['exponentbits_13',['ExponentBits',['../struct_eigen_1_1internal_1_1pldexp__fast__impl.html#a350e7111d835f71d920997648c9bdf8faf4f64fd91109a01a7602ee06a4710af4',1,'Eigen::internal::pldexp_fast_impl']]]
 ];

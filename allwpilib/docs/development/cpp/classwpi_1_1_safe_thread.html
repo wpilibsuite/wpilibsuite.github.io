@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-31-ga939cd9</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-32-g2cb171f</span>
    </div>
   </td>
  </tr>
@@ -117,28 +117,144 @@ Inheritance diagram for wpi::SafeThread:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa535e5b5a08c0544beebf6abc73a582c"><td class="memItemLeft" align="right" valign="top"><a id="aa535e5b5a08c0544beebf6abc73a582c" name="aa535e5b5a08c0544beebf6abc73a582c"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Main</b> ()=0</td></tr>
+<tr class="memitem:a9a41aefab8745d898932a4be0b48be01"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_safe_thread.html#a9a41aefab8745d898932a4be0b48be01">~SafeThread</a> ()=default</td></tr>
+<tr class="separator:a9a41aefab8745d898932a4be0b48be01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa535e5b5a08c0544beebf6abc73a582c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_safe_thread.html#aa535e5b5a08c0544beebf6abc73a582c">Main</a> ()=0</td></tr>
 <tr class="separator:aa535e5b5a08c0544beebf6abc73a582c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a7b61d8719e659dbb558ea1506832294c"><td class="memItemLeft" align="right" valign="top"><a id="a7b61d8719e659dbb558ea1506832294c" name="a7b61d8719e659dbb558ea1506832294c"></a>
-wpi::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>m_mutex</b></td></tr>
+<tr class="memitem:a7b61d8719e659dbb558ea1506832294c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacewpi.html#a59819be5b11c0fbbc0b8e07c7638af24">wpi::mutex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_safe_thread.html#a7b61d8719e659dbb558ea1506832294c">m_mutex</a></td></tr>
 <tr class="separator:a7b61d8719e659dbb558ea1506832294c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5706c2501ba681490c7bd14280ac67d2"><td class="memItemLeft" align="right" valign="top"><a id="a5706c2501ba681490c7bd14280ac67d2" name="a5706c2501ba681490c7bd14280ac67d2"></a>
-std::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_active</b> {true}</td></tr>
+<tr class="memitem:a5706c2501ba681490c7bd14280ac67d2"><td class="memItemLeft" align="right" valign="top">std::atomic_bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_safe_thread.html#a5706c2501ba681490c7bd14280ac67d2">m_active</a> {true}</td></tr>
 <tr class="separator:a5706c2501ba681490c7bd14280ac67d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0c6d59bd613deb8daa6943edc4d0112"><td class="memItemLeft" align="right" valign="top"><a id="aa0c6d59bd613deb8daa6943edc4d0112" name="aa0c6d59bd613deb8daa6943edc4d0112"></a>
-wpi::condition_variable&#160;</td><td class="memItemRight" valign="bottom"><b>m_cond</b></td></tr>
+<tr class="memitem:aa0c6d59bd613deb8daa6943edc4d0112"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacewpi.html#a97cc1139d8f910187e3d4cd6b8015af8">wpi::condition_variable</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_safe_thread.html#aa0c6d59bd613deb8daa6943edc4d0112">m_cond</a></td></tr>
 <tr class="separator:aa0c6d59bd613deb8daa6943edc4d0112"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc49183ae12842d036acfebf5123d0d0"><td class="memItemLeft" align="right" valign="top"><a id="acc49183ae12842d036acfebf5123d0d0" name="acc49183ae12842d036acfebf5123d0d0"></a>
-std::thread::id&#160;</td><td class="memItemRight" valign="bottom"><b>m_threadId</b></td></tr>
+<tr class="memitem:acc49183ae12842d036acfebf5123d0d0"><td class="memItemLeft" align="right" valign="top">std::thread::id&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_safe_thread.html#acc49183ae12842d036acfebf5123d0d0">m_threadId</a></td></tr>
 <tr class="separator:acc49183ae12842d036acfebf5123d0d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Base class for <a class="el" href="classwpi_1_1_safe_thread_owner.html">SafeThreadOwner</a> threads. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a9a41aefab8745d898932a4be0b48be01" name="a9a41aefab8745d898932a4be0b48be01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a41aefab8745d898932a4be0b48be01">&#9670;&nbsp;</a></span>~SafeThread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual wpi::SafeThread::~SafeThread </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa535e5b5a08c0544beebf6abc73a582c" name="aa535e5b5a08c0544beebf6abc73a582c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa535e5b5a08c0544beebf6abc73a582c">&#9670;&nbsp;</a></span>Main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void wpi::SafeThread::Main </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classwpi_1_1_callback_thread.html#ad951f2fb7746b1048f494e5fefdcef88">wpi::CallbackThread&lt; Derived, TUserInfo, TListenerData, TNotifierData &gt;</a>, <a class="el" href="classwpi_1_1java_1_1_j_callback_thread.html#ad8db5df09c13c01b5245a7f0eeed76d3">wpi::java::JCallbackThread&lt; T &gt;</a>, and <a class="el" href="classwpi_1_1detail_1_1_worker_thread_thread.html#a0a575b39105806fc177758459cfd8504">wpi::detail::WorkerThreadThread&lt; R, T &gt;</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a5706c2501ba681490c7bd14280ac67d2" name="a5706c2501ba681490c7bd14280ac67d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5706c2501ba681490c7bd14280ac67d2">&#9670;&nbsp;</a></span>m_active</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::atomic_bool wpi::SafeThread::m_active {true}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa0c6d59bd613deb8daa6943edc4d0112" name="aa0c6d59bd613deb8daa6943edc4d0112"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0c6d59bd613deb8daa6943edc4d0112">&#9670;&nbsp;</a></span>m_cond</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacewpi.html#a97cc1139d8f910187e3d4cd6b8015af8">wpi::condition_variable</a> wpi::SafeThread::m_cond</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7b61d8719e659dbb558ea1506832294c" name="a7b61d8719e659dbb558ea1506832294c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b61d8719e659dbb558ea1506832294c">&#9670;&nbsp;</a></span>m_mutex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacewpi.html#a59819be5b11c0fbbc0b8e07c7638af24">wpi::mutex</a> wpi::SafeThread::m_mutex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">mutable</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acc49183ae12842d036acfebf5123d0d0" name="acc49183ae12842d036acfebf5123d0d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc49183ae12842d036acfebf5123d0d0">&#9670;&nbsp;</a></span>m_threadId</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::thread::id wpi::SafeThread::m_threadId</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>wpi/<a class="el" href="_safe_thread_8h_source.html">SafeThread.h</a></li>
 </ul>
 </div><!-- contents -->
@@ -146,8 +262,8 @@ std::thread::id&#160;</td><td class="memItemRight" valign="bottom"><b>m_threadId
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>wpi</b></li><li class="navelem"><a class="el" href="classwpi_1_1_safe_thread.html">SafeThread</a></li>
-    <li class="footer">Generated on Fri Oct 29 2021 07:12:30 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="classwpi_1_1_safe_thread.html">SafeThread</a></li>
+    <li class="footer">Generated on Fri Oct 29 2021 22:10:09 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-31-ga939cd9</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-32-g2cb171f</span>
    </div>
   </td>
  </tr>
@@ -98,50 +98,265 @@ $(document).ready(function(){initNavTree('classwpi_1_1_http_request.html',''); i
   <div class="headertitle"><div class="title">wpi::HttpRequest Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_http_util_8h_source.html">wpi/HttpUtil.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6265eafc0bf2f534d8bcdf19f693702d"><td class="memItemLeft" align="right" valign="top"><a id="a6265eafc0bf2f534d8bcdf19f693702d" name="a6265eafc0bf2f534d8bcdf19f693702d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>HttpRequest</b> (const <a class="el" href="classwpi_1_1_http_location.html">HttpLocation</a> &amp;loc)</td></tr>
+<tr class="memitem:a269380d47eaf23252a77e8ec6517f8f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_http_request.html#a269380d47eaf23252a77e8ec6517f8f1">HttpRequest</a> ()=default</td></tr>
+<tr class="separator:a269380d47eaf23252a77e8ec6517f8f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6265eafc0bf2f534d8bcdf19f693702d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_http_request.html#a6265eafc0bf2f534d8bcdf19f693702d">HttpRequest</a> (const <a class="el" href="classwpi_1_1_http_location.html">HttpLocation</a> &amp;loc)</td></tr>
 <tr class="separator:a6265eafc0bf2f534d8bcdf19f693702d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9d63d4e40b0dc890aba1588ad6d47da"><td class="memTemplParams" colspan="2"><a id="ac9d63d4e40b0dc890aba1588ad6d47da" name="ac9d63d4e40b0dc890aba1588ad6d47da"></a>
-template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ac9d63d4e40b0dc890aba1588ad6d47da"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>HttpRequest</b> (const <a class="el" href="classwpi_1_1_http_location.html">HttpLocation</a> &amp;loc, const T &amp;extraParams)</td></tr>
+<tr class="memitem:ac9d63d4e40b0dc890aba1588ad6d47da"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ac9d63d4e40b0dc890aba1588ad6d47da"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwpi_1_1_http_request.html#ac9d63d4e40b0dc890aba1588ad6d47da">HttpRequest</a> (const <a class="el" href="classwpi_1_1_http_location.html">HttpLocation</a> &amp;loc, const T &amp;extraParams)</td></tr>
 <tr class="separator:ac9d63d4e40b0dc890aba1588ad6d47da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cecbacd0985866b68190d87f0fe2718"><td class="memItemLeft" align="right" valign="top"><a id="a0cecbacd0985866b68190d87f0fe2718" name="a0cecbacd0985866b68190d87f0fe2718"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>HttpRequest</b> (const <a class="el" href="classwpi_1_1_http_location.html">HttpLocation</a> &amp;loc, std::string_view path_)</td></tr>
+<tr class="memitem:a0cecbacd0985866b68190d87f0fe2718"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_http_request.html#a0cecbacd0985866b68190d87f0fe2718">HttpRequest</a> (const <a class="el" href="classwpi_1_1_http_location.html">HttpLocation</a> &amp;loc, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> path_)</td></tr>
 <tr class="separator:a0cecbacd0985866b68190d87f0fe2718"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a905e8ec575def56babee4f13b26c7bbe"><td class="memTemplParams" colspan="2"><a id="a905e8ec575def56babee4f13b26c7bbe" name="a905e8ec575def56babee4f13b26c7bbe"></a>
-template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a905e8ec575def56babee4f13b26c7bbe"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>HttpRequest</b> (const <a class="el" href="classwpi_1_1_http_location.html">HttpLocation</a> &amp;loc, std::string_view path_, const T &amp;params)</td></tr>
+<tr class="memitem:a905e8ec575def56babee4f13b26c7bbe"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a905e8ec575def56babee4f13b26c7bbe"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwpi_1_1_http_request.html#a905e8ec575def56babee4f13b26c7bbe">HttpRequest</a> (const <a class="el" href="classwpi_1_1_http_location.html">HttpLocation</a> &amp;loc, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> path_, const T &amp;params)</td></tr>
 <tr class="separator:a905e8ec575def56babee4f13b26c7bbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:aca785f84b63de2d52f53acb01cea6ad7"><td class="memItemLeft" align="right" valign="top"><a id="aca785f84b63de2d52f53acb01cea6ad7" name="aca785f84b63de2d52f53acb01cea6ad7"></a>
-<a class="el" href="classwpi_1_1_small_string.html">SmallString</a>&lt; 128 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>host</b></td></tr>
+<tr class="memitem:aca785f84b63de2d52f53acb01cea6ad7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1_small_string.html">SmallString</a>&lt; 128 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_http_request.html#aca785f84b63de2d52f53acb01cea6ad7">host</a></td></tr>
 <tr class="separator:aca785f84b63de2d52f53acb01cea6ad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3e8f5fe6aeb03365375fa5a6bd79bc0"><td class="memItemLeft" align="right" valign="top"><a id="ac3e8f5fe6aeb03365375fa5a6bd79bc0" name="ac3e8f5fe6aeb03365375fa5a6bd79bc0"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>port</b></td></tr>
+<tr class="memitem:ac3e8f5fe6aeb03365375fa5a6bd79bc0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_http_request.html#ac3e8f5fe6aeb03365375fa5a6bd79bc0">port</a></td></tr>
 <tr class="separator:ac3e8f5fe6aeb03365375fa5a6bd79bc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5453f71256bc3d528c992968d33ec48"><td class="memItemLeft" align="right" valign="top"><a id="af5453f71256bc3d528c992968d33ec48" name="af5453f71256bc3d528c992968d33ec48"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>auth</b></td></tr>
+<tr class="memitem:af5453f71256bc3d528c992968d33ec48"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_http_request.html#af5453f71256bc3d528c992968d33ec48">auth</a></td></tr>
 <tr class="separator:af5453f71256bc3d528c992968d33ec48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a846b9b8d59c05dce11bc5c21428441c6"><td class="memItemLeft" align="right" valign="top"><a id="a846b9b8d59c05dce11bc5c21428441c6" name="a846b9b8d59c05dce11bc5c21428441c6"></a>
-<a class="el" href="classwpi_1_1_small_string.html">SmallString</a>&lt; 128 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>path</b></td></tr>
+<tr class="memitem:a846b9b8d59c05dce11bc5c21428441c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1_small_string.html">SmallString</a>&lt; 128 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_http_request.html#a846b9b8d59c05dce11bc5c21428441c6">path</a></td></tr>
 <tr class="separator:a846b9b8d59c05dce11bc5c21428441c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a269380d47eaf23252a77e8ec6517f8f1" name="a269380d47eaf23252a77e8ec6517f8f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a269380d47eaf23252a77e8ec6517f8f1">&#9670;&nbsp;</a></span>HttpRequest() <span class="overload">[1/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">wpi::HttpRequest::HttpRequest </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6265eafc0bf2f534d8bcdf19f693702d" name="a6265eafc0bf2f534d8bcdf19f693702d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6265eafc0bf2f534d8bcdf19f693702d">&#9670;&nbsp;</a></span>HttpRequest() <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">wpi::HttpRequest::HttpRequest </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classwpi_1_1_http_location.html">HttpLocation</a> &amp;&#160;</td>
+          <td class="paramname"><em>loc</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac9d63d4e40b0dc890aba1588ad6d47da" name="ac9d63d4e40b0dc890aba1588ad6d47da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9d63d4e40b0dc890aba1588ad6d47da">&#9670;&nbsp;</a></span>HttpRequest() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">wpi::HttpRequest::HttpRequest </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classwpi_1_1_http_location.html">HttpLocation</a> &amp;&#160;</td>
+          <td class="paramname"><em>loc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>extraParams</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0cecbacd0985866b68190d87f0fe2718" name="a0cecbacd0985866b68190d87f0fe2718"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cecbacd0985866b68190d87f0fe2718">&#9670;&nbsp;</a></span>HttpRequest() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">wpi::HttpRequest::HttpRequest </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classwpi_1_1_http_location.html">HttpLocation</a> &amp;&#160;</td>
+          <td class="paramname"><em>loc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>path_</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a905e8ec575def56babee4f13b26c7bbe" name="a905e8ec575def56babee4f13b26c7bbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a905e8ec575def56babee4f13b26c7bbe">&#9670;&nbsp;</a></span>HttpRequest() <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">wpi::HttpRequest::HttpRequest </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classwpi_1_1_http_location.html">HttpLocation</a> &amp;&#160;</td>
+          <td class="paramname"><em>loc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>path_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>params</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="af5453f71256bc3d528c992968d33ec48" name="af5453f71256bc3d528c992968d33ec48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5453f71256bc3d528c992968d33ec48">&#9670;&nbsp;</a></span>auth</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string wpi::HttpRequest::auth</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aca785f84b63de2d52f53acb01cea6ad7" name="aca785f84b63de2d52f53acb01cea6ad7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca785f84b63de2d52f53acb01cea6ad7">&#9670;&nbsp;</a></span>host</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwpi_1_1_small_string.html">SmallString</a>&lt;128&gt; wpi::HttpRequest::host</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a846b9b8d59c05dce11bc5c21428441c6" name="a846b9b8d59c05dce11bc5c21428441c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a846b9b8d59c05dce11bc5c21428441c6">&#9670;&nbsp;</a></span>path</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwpi_1_1_small_string.html">SmallString</a>&lt;128&gt; wpi::HttpRequest::path</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac3e8f5fe6aeb03365375fa5a6bd79bc0" name="ac3e8f5fe6aeb03365375fa5a6bd79bc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3e8f5fe6aeb03365375fa5a6bd79bc0">&#9670;&nbsp;</a></span>port</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int wpi::HttpRequest::port</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>wpi/<a class="el" href="_http_util_8h_source.html">HttpUtil.h</a></li>
-<li>wpi/HttpUtil.inc</li>
+<li>wpi/<a class="el" href="_http_util_8inc.html">HttpUtil.inc</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>wpi</b></li><li class="navelem"><a class="el" href="classwpi_1_1_http_request.html">HttpRequest</a></li>
-    <li class="footer">Generated on Fri Oct 29 2021 07:12:30 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="classwpi_1_1_http_request.html">HttpRequest</a></li>
+    <li class="footer">Generated on Fri Oct 29 2021 22:10:09 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

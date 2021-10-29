@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-31-ga939cd9</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-32-g2cb171f</span>
    </div>
   </td>
  </tr>
@@ -99,80 +99,697 @@ $(document).ready(function(){initNavTree('group__hal__ctre__pcm.html',''); initR
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga7e7c502c11bceeaa3d4388cc560a2e33"><td class="memItemLeft" align="right" valign="top"><a id="ga7e7c502c11bceeaa3d4388cc560a2e33" name="ga7e7c502c11bceeaa3d4388cc560a2e33"></a>
-HAL_CTREPCMHandle&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_InitializeCTREPCM</b> (int32_t module, const char *allocationLocation, int32_t *status)</td></tr>
+<tr class="memitem:ga7e7c502c11bceeaa3d4388cc560a2e33"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__hal__types.html#ga3ca64a4b4ad3b49da918c0d0e89f94e6">HAL_CTREPCMHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__ctre__pcm.html#ga7e7c502c11bceeaa3d4388cc560a2e33">HAL_InitializeCTREPCM</a> (int32_t module, const char *allocationLocation, int32_t *status)</td></tr>
 <tr class="separator:ga7e7c502c11bceeaa3d4388cc560a2e33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae066218dee92c2aa9968c1190dfc4e04"><td class="memItemLeft" align="right" valign="top"><a id="gae066218dee92c2aa9968c1190dfc4e04" name="gae066218dee92c2aa9968c1190dfc4e04"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_FreeCTREPCM</b> (HAL_CTREPCMHandle handle)</td></tr>
+<tr class="memitem:gae066218dee92c2aa9968c1190dfc4e04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__ctre__pcm.html#gae066218dee92c2aa9968c1190dfc4e04">HAL_FreeCTREPCM</a> (<a class="el" href="group__hal__types.html#ga3ca64a4b4ad3b49da918c0d0e89f94e6">HAL_CTREPCMHandle</a> handle)</td></tr>
 <tr class="separator:gae066218dee92c2aa9968c1190dfc4e04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad312213732297264a6828c5a33869945"><td class="memItemLeft" align="right" valign="top"><a id="gad312213732297264a6828c5a33869945" name="gad312213732297264a6828c5a33869945"></a>
-HAL_Bool&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_CheckCTREPCMSolenoidChannel</b> (int32_t channel)</td></tr>
+<tr class="memitem:gad312213732297264a6828c5a33869945"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__ctre__pcm.html#gad312213732297264a6828c5a33869945">HAL_CheckCTREPCMSolenoidChannel</a> (int32_t channel)</td></tr>
 <tr class="separator:gad312213732297264a6828c5a33869945"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga29ce11f7b095d5c44aea14a4002fab80"><td class="memItemLeft" align="right" valign="top"><a id="ga29ce11f7b095d5c44aea14a4002fab80" name="ga29ce11f7b095d5c44aea14a4002fab80"></a>
-HAL_Bool&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetCTREPCMCompressor</b> (HAL_CTREPCMHandle handle, int32_t *status)</td></tr>
+<tr class="memitem:ga29ce11f7b095d5c44aea14a4002fab80"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__ctre__pcm.html#ga29ce11f7b095d5c44aea14a4002fab80">HAL_GetCTREPCMCompressor</a> (<a class="el" href="group__hal__types.html#ga3ca64a4b4ad3b49da918c0d0e89f94e6">HAL_CTREPCMHandle</a> handle, int32_t *status)</td></tr>
 <tr class="separator:ga29ce11f7b095d5c44aea14a4002fab80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga96902d5026fb7286fe8b267091a738ec"><td class="memItemLeft" align="right" valign="top"><a id="ga96902d5026fb7286fe8b267091a738ec" name="ga96902d5026fb7286fe8b267091a738ec"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_SetCTREPCMClosedLoopControl</b> (HAL_CTREPCMHandle handle, HAL_Bool enabled, int32_t *status)</td></tr>
+<tr class="memitem:ga96902d5026fb7286fe8b267091a738ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__ctre__pcm.html#ga96902d5026fb7286fe8b267091a738ec">HAL_SetCTREPCMClosedLoopControl</a> (<a class="el" href="group__hal__types.html#ga3ca64a4b4ad3b49da918c0d0e89f94e6">HAL_CTREPCMHandle</a> handle, <a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a> enabled, int32_t *status)</td></tr>
 <tr class="separator:ga96902d5026fb7286fe8b267091a738ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0e5f6e0aa374aba444d400cd5ceb5283"><td class="memItemLeft" align="right" valign="top"><a id="ga0e5f6e0aa374aba444d400cd5ceb5283" name="ga0e5f6e0aa374aba444d400cd5ceb5283"></a>
-HAL_Bool&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetCTREPCMClosedLoopControl</b> (HAL_CTREPCMHandle handle, int32_t *status)</td></tr>
+<tr class="memitem:ga0e5f6e0aa374aba444d400cd5ceb5283"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__ctre__pcm.html#ga0e5f6e0aa374aba444d400cd5ceb5283">HAL_GetCTREPCMClosedLoopControl</a> (<a class="el" href="group__hal__types.html#ga3ca64a4b4ad3b49da918c0d0e89f94e6">HAL_CTREPCMHandle</a> handle, int32_t *status)</td></tr>
 <tr class="separator:ga0e5f6e0aa374aba444d400cd5ceb5283"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3ee16641f23cc12e64970ee4e2f4e02b"><td class="memItemLeft" align="right" valign="top"><a id="ga3ee16641f23cc12e64970ee4e2f4e02b" name="ga3ee16641f23cc12e64970ee4e2f4e02b"></a>
-HAL_Bool&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetCTREPCMPressureSwitch</b> (HAL_CTREPCMHandle handle, int32_t *status)</td></tr>
+<tr class="memitem:ga3ee16641f23cc12e64970ee4e2f4e02b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__ctre__pcm.html#ga3ee16641f23cc12e64970ee4e2f4e02b">HAL_GetCTREPCMPressureSwitch</a> (<a class="el" href="group__hal__types.html#ga3ca64a4b4ad3b49da918c0d0e89f94e6">HAL_CTREPCMHandle</a> handle, int32_t *status)</td></tr>
 <tr class="separator:ga3ee16641f23cc12e64970ee4e2f4e02b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa1e83a1b061e83e283ed2ced82e3b232"><td class="memItemLeft" align="right" valign="top"><a id="gaa1e83a1b061e83e283ed2ced82e3b232" name="gaa1e83a1b061e83e283ed2ced82e3b232"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetCTREPCMCompressorCurrent</b> (HAL_CTREPCMHandle handle, int32_t *status)</td></tr>
+<tr class="memitem:gaa1e83a1b061e83e283ed2ced82e3b232"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__ctre__pcm.html#gaa1e83a1b061e83e283ed2ced82e3b232">HAL_GetCTREPCMCompressorCurrent</a> (<a class="el" href="group__hal__types.html#ga3ca64a4b4ad3b49da918c0d0e89f94e6">HAL_CTREPCMHandle</a> handle, int32_t *status)</td></tr>
 <tr class="separator:gaa1e83a1b061e83e283ed2ced82e3b232"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga968656fb7c7381ab21f92941aa7c4e9b"><td class="memItemLeft" align="right" valign="top"><a id="ga968656fb7c7381ab21f92941aa7c4e9b" name="ga968656fb7c7381ab21f92941aa7c4e9b"></a>
-HAL_Bool&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetCTREPCMCompressorCurrentTooHighFault</b> (HAL_CTREPCMHandle handle, int32_t *status)</td></tr>
+<tr class="memitem:ga968656fb7c7381ab21f92941aa7c4e9b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__ctre__pcm.html#ga968656fb7c7381ab21f92941aa7c4e9b">HAL_GetCTREPCMCompressorCurrentTooHighFault</a> (<a class="el" href="group__hal__types.html#ga3ca64a4b4ad3b49da918c0d0e89f94e6">HAL_CTREPCMHandle</a> handle, int32_t *status)</td></tr>
 <tr class="separator:ga968656fb7c7381ab21f92941aa7c4e9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga97ff51dfb17fb757905f8866b9f808bb"><td class="memItemLeft" align="right" valign="top"><a id="ga97ff51dfb17fb757905f8866b9f808bb" name="ga97ff51dfb17fb757905f8866b9f808bb"></a>
-HAL_Bool&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetCTREPCMCompressorCurrentTooHighStickyFault</b> (HAL_CTREPCMHandle handle, int32_t *status)</td></tr>
+<tr class="memitem:ga97ff51dfb17fb757905f8866b9f808bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__ctre__pcm.html#ga97ff51dfb17fb757905f8866b9f808bb">HAL_GetCTREPCMCompressorCurrentTooHighStickyFault</a> (<a class="el" href="group__hal__types.html#ga3ca64a4b4ad3b49da918c0d0e89f94e6">HAL_CTREPCMHandle</a> handle, int32_t *status)</td></tr>
 <tr class="separator:ga97ff51dfb17fb757905f8866b9f808bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae3ea7c16f263f8a9bec196d499803496"><td class="memItemLeft" align="right" valign="top"><a id="gae3ea7c16f263f8a9bec196d499803496" name="gae3ea7c16f263f8a9bec196d499803496"></a>
-HAL_Bool&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetCTREPCMCompressorShortedStickyFault</b> (HAL_CTREPCMHandle handle, int32_t *status)</td></tr>
+<tr class="memitem:gae3ea7c16f263f8a9bec196d499803496"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__ctre__pcm.html#gae3ea7c16f263f8a9bec196d499803496">HAL_GetCTREPCMCompressorShortedStickyFault</a> (<a class="el" href="group__hal__types.html#ga3ca64a4b4ad3b49da918c0d0e89f94e6">HAL_CTREPCMHandle</a> handle, int32_t *status)</td></tr>
 <tr class="separator:gae3ea7c16f263f8a9bec196d499803496"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1f1c02127a36e8d98e3570f93912210e"><td class="memItemLeft" align="right" valign="top"><a id="ga1f1c02127a36e8d98e3570f93912210e" name="ga1f1c02127a36e8d98e3570f93912210e"></a>
-HAL_Bool&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetCTREPCMCompressorShortedFault</b> (HAL_CTREPCMHandle handle, int32_t *status)</td></tr>
+<tr class="memitem:ga1f1c02127a36e8d98e3570f93912210e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__ctre__pcm.html#ga1f1c02127a36e8d98e3570f93912210e">HAL_GetCTREPCMCompressorShortedFault</a> (<a class="el" href="group__hal__types.html#ga3ca64a4b4ad3b49da918c0d0e89f94e6">HAL_CTREPCMHandle</a> handle, int32_t *status)</td></tr>
 <tr class="separator:ga1f1c02127a36e8d98e3570f93912210e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2ed2a9a126647cc62afd78f8af4c33ef"><td class="memItemLeft" align="right" valign="top"><a id="ga2ed2a9a126647cc62afd78f8af4c33ef" name="ga2ed2a9a126647cc62afd78f8af4c33ef"></a>
-HAL_Bool&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetCTREPCMCompressorNotConnectedStickyFault</b> (HAL_CTREPCMHandle handle, int32_t *status)</td></tr>
+<tr class="memitem:ga2ed2a9a126647cc62afd78f8af4c33ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__ctre__pcm.html#ga2ed2a9a126647cc62afd78f8af4c33ef">HAL_GetCTREPCMCompressorNotConnectedStickyFault</a> (<a class="el" href="group__hal__types.html#ga3ca64a4b4ad3b49da918c0d0e89f94e6">HAL_CTREPCMHandle</a> handle, int32_t *status)</td></tr>
 <tr class="separator:ga2ed2a9a126647cc62afd78f8af4c33ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga952ce55b4a548ed963f9dc9ca221bf88"><td class="memItemLeft" align="right" valign="top"><a id="ga952ce55b4a548ed963f9dc9ca221bf88" name="ga952ce55b4a548ed963f9dc9ca221bf88"></a>
-HAL_Bool&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetCTREPCMCompressorNotConnectedFault</b> (HAL_CTREPCMHandle handle, int32_t *status)</td></tr>
+<tr class="memitem:ga952ce55b4a548ed963f9dc9ca221bf88"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__ctre__pcm.html#ga952ce55b4a548ed963f9dc9ca221bf88">HAL_GetCTREPCMCompressorNotConnectedFault</a> (<a class="el" href="group__hal__types.html#ga3ca64a4b4ad3b49da918c0d0e89f94e6">HAL_CTREPCMHandle</a> handle, int32_t *status)</td></tr>
 <tr class="separator:ga952ce55b4a548ed963f9dc9ca221bf88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8af9d0e86be613855eb65382a9845c8e"><td class="memItemLeft" align="right" valign="top"><a id="ga8af9d0e86be613855eb65382a9845c8e" name="ga8af9d0e86be613855eb65382a9845c8e"></a>
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetCTREPCMSolenoids</b> (HAL_CTREPCMHandle handle, int32_t *status)</td></tr>
+<tr class="memitem:ga8af9d0e86be613855eb65382a9845c8e"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__ctre__pcm.html#ga8af9d0e86be613855eb65382a9845c8e">HAL_GetCTREPCMSolenoids</a> (<a class="el" href="group__hal__types.html#ga3ca64a4b4ad3b49da918c0d0e89f94e6">HAL_CTREPCMHandle</a> handle, int32_t *status)</td></tr>
 <tr class="separator:ga8af9d0e86be613855eb65382a9845c8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga50d847323f1afb93aefa955adad88b15"><td class="memItemLeft" align="right" valign="top"><a id="ga50d847323f1afb93aefa955adad88b15" name="ga50d847323f1afb93aefa955adad88b15"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_SetCTREPCMSolenoids</b> (HAL_CTREPCMHandle handle, int32_t mask, int32_t values, int32_t *status)</td></tr>
+<tr class="memitem:ga50d847323f1afb93aefa955adad88b15"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__ctre__pcm.html#ga50d847323f1afb93aefa955adad88b15">HAL_SetCTREPCMSolenoids</a> (<a class="el" href="group__hal__types.html#ga3ca64a4b4ad3b49da918c0d0e89f94e6">HAL_CTREPCMHandle</a> handle, int32_t mask, int32_t values, int32_t *status)</td></tr>
 <tr class="separator:ga50d847323f1afb93aefa955adad88b15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5879446b44ade5c4b41ee039703b1501"><td class="memItemLeft" align="right" valign="top"><a id="ga5879446b44ade5c4b41ee039703b1501" name="ga5879446b44ade5c4b41ee039703b1501"></a>
-int32_t&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetCTREPCMSolenoidDisabledList</b> (HAL_CTREPCMHandle handle, int32_t *status)</td></tr>
+<tr class="memitem:ga5879446b44ade5c4b41ee039703b1501"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__ctre__pcm.html#ga5879446b44ade5c4b41ee039703b1501">HAL_GetCTREPCMSolenoidDisabledList</a> (<a class="el" href="group__hal__types.html#ga3ca64a4b4ad3b49da918c0d0e89f94e6">HAL_CTREPCMHandle</a> handle, int32_t *status)</td></tr>
 <tr class="separator:ga5879446b44ade5c4b41ee039703b1501"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab1656b7db06a029c231e10668facf3bc"><td class="memItemLeft" align="right" valign="top"><a id="gab1656b7db06a029c231e10668facf3bc" name="gab1656b7db06a029c231e10668facf3bc"></a>
-HAL_Bool&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetCTREPCMSolenoidVoltageStickyFault</b> (HAL_CTREPCMHandle handle, int32_t *status)</td></tr>
+<tr class="memitem:gab1656b7db06a029c231e10668facf3bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__ctre__pcm.html#gab1656b7db06a029c231e10668facf3bc">HAL_GetCTREPCMSolenoidVoltageStickyFault</a> (<a class="el" href="group__hal__types.html#ga3ca64a4b4ad3b49da918c0d0e89f94e6">HAL_CTREPCMHandle</a> handle, int32_t *status)</td></tr>
 <tr class="separator:gab1656b7db06a029c231e10668facf3bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8f070c606de918338652fc01bffa929a"><td class="memItemLeft" align="right" valign="top"><a id="ga8f070c606de918338652fc01bffa929a" name="ga8f070c606de918338652fc01bffa929a"></a>
-HAL_Bool&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetCTREPCMSolenoidVoltageFault</b> (HAL_CTREPCMHandle handle, int32_t *status)</td></tr>
+<tr class="memitem:ga8f070c606de918338652fc01bffa929a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__ctre__pcm.html#ga8f070c606de918338652fc01bffa929a">HAL_GetCTREPCMSolenoidVoltageFault</a> (<a class="el" href="group__hal__types.html#ga3ca64a4b4ad3b49da918c0d0e89f94e6">HAL_CTREPCMHandle</a> handle, int32_t *status)</td></tr>
 <tr class="separator:ga8f070c606de918338652fc01bffa929a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga20b9af3c278dd9e338fdc77d16d9fe4e"><td class="memItemLeft" align="right" valign="top"><a id="ga20b9af3c278dd9e338fdc77d16d9fe4e" name="ga20b9af3c278dd9e338fdc77d16d9fe4e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_ClearAllCTREPCMStickyFaults</b> (HAL_CTREPCMHandle handle, int32_t *status)</td></tr>
+<tr class="memitem:ga20b9af3c278dd9e338fdc77d16d9fe4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__ctre__pcm.html#ga20b9af3c278dd9e338fdc77d16d9fe4e">HAL_ClearAllCTREPCMStickyFaults</a> (<a class="el" href="group__hal__types.html#ga3ca64a4b4ad3b49da918c0d0e89f94e6">HAL_CTREPCMHandle</a> handle, int32_t *status)</td></tr>
 <tr class="separator:ga20b9af3c278dd9e338fdc77d16d9fe4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga37ca98b2bfb7c19abd1683422f653ee5"><td class="memItemLeft" align="right" valign="top"><a id="ga37ca98b2bfb7c19abd1683422f653ee5" name="ga37ca98b2bfb7c19abd1683422f653ee5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_FireCTREPCMOneShot</b> (HAL_CTREPCMHandle handle, int32_t index, int32_t *status)</td></tr>
+<tr class="memitem:ga37ca98b2bfb7c19abd1683422f653ee5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__ctre__pcm.html#ga37ca98b2bfb7c19abd1683422f653ee5">HAL_FireCTREPCMOneShot</a> (<a class="el" href="group__hal__types.html#ga3ca64a4b4ad3b49da918c0d0e89f94e6">HAL_CTREPCMHandle</a> handle, int32_t index, int32_t *status)</td></tr>
 <tr class="separator:ga37ca98b2bfb7c19abd1683422f653ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad32bd62bc1e4316c7a904abaccc58096"><td class="memItemLeft" align="right" valign="top"><a id="gad32bd62bc1e4316c7a904abaccc58096" name="gad32bd62bc1e4316c7a904abaccc58096"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_SetCTREPCMOneShotDuration</b> (HAL_CTREPCMHandle handle, int32_t index, int32_t durMs, int32_t *status)</td></tr>
+<tr class="memitem:gad32bd62bc1e4316c7a904abaccc58096"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__ctre__pcm.html#gad32bd62bc1e4316c7a904abaccc58096">HAL_SetCTREPCMOneShotDuration</a> (<a class="el" href="group__hal__types.html#ga3ca64a4b4ad3b49da918c0d0e89f94e6">HAL_CTREPCMHandle</a> handle, int32_t index, int32_t durMs, int32_t *status)</td></tr>
 <tr class="separator:gad32bd62bc1e4316c7a904abaccc58096"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="gad312213732297264a6828c5a33869945" name="gad312213732297264a6828c5a33869945"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad312213732297264a6828c5a33869945">&#9670;&nbsp;</a></span>HAL_CheckCTREPCMSolenoidChannel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a> HAL_CheckCTREPCMSolenoidChannel </td>
+          <td>(</td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>channel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga20b9af3c278dd9e338fdc77d16d9fe4e" name="ga20b9af3c278dd9e338fdc77d16d9fe4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga20b9af3c278dd9e338fdc77d16d9fe4e">&#9670;&nbsp;</a></span>HAL_ClearAllCTREPCMStickyFaults()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HAL_ClearAllCTREPCMStickyFaults </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#ga3ca64a4b4ad3b49da918c0d0e89f94e6">HAL_CTREPCMHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t *&#160;</td>
+          <td class="paramname"><em>status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga37ca98b2bfb7c19abd1683422f653ee5" name="ga37ca98b2bfb7c19abd1683422f653ee5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga37ca98b2bfb7c19abd1683422f653ee5">&#9670;&nbsp;</a></span>HAL_FireCTREPCMOneShot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HAL_FireCTREPCMOneShot </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#ga3ca64a4b4ad3b49da918c0d0e89f94e6">HAL_CTREPCMHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t *&#160;</td>
+          <td class="paramname"><em>status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae066218dee92c2aa9968c1190dfc4e04" name="gae066218dee92c2aa9968c1190dfc4e04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae066218dee92c2aa9968c1190dfc4e04">&#9670;&nbsp;</a></span>HAL_FreeCTREPCM()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HAL_FreeCTREPCM </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#ga3ca64a4b4ad3b49da918c0d0e89f94e6">HAL_CTREPCMHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga0e5f6e0aa374aba444d400cd5ceb5283" name="ga0e5f6e0aa374aba444d400cd5ceb5283"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0e5f6e0aa374aba444d400cd5ceb5283">&#9670;&nbsp;</a></span>HAL_GetCTREPCMClosedLoopControl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a> HAL_GetCTREPCMClosedLoopControl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#ga3ca64a4b4ad3b49da918c0d0e89f94e6">HAL_CTREPCMHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t *&#160;</td>
+          <td class="paramname"><em>status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga29ce11f7b095d5c44aea14a4002fab80" name="ga29ce11f7b095d5c44aea14a4002fab80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga29ce11f7b095d5c44aea14a4002fab80">&#9670;&nbsp;</a></span>HAL_GetCTREPCMCompressor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a> HAL_GetCTREPCMCompressor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#ga3ca64a4b4ad3b49da918c0d0e89f94e6">HAL_CTREPCMHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t *&#160;</td>
+          <td class="paramname"><em>status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa1e83a1b061e83e283ed2ced82e3b232" name="gaa1e83a1b061e83e283ed2ced82e3b232"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa1e83a1b061e83e283ed2ced82e3b232">&#9670;&nbsp;</a></span>HAL_GetCTREPCMCompressorCurrent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HAL_GetCTREPCMCompressorCurrent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#ga3ca64a4b4ad3b49da918c0d0e89f94e6">HAL_CTREPCMHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t *&#160;</td>
+          <td class="paramname"><em>status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga968656fb7c7381ab21f92941aa7c4e9b" name="ga968656fb7c7381ab21f92941aa7c4e9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga968656fb7c7381ab21f92941aa7c4e9b">&#9670;&nbsp;</a></span>HAL_GetCTREPCMCompressorCurrentTooHighFault()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a> HAL_GetCTREPCMCompressorCurrentTooHighFault </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#ga3ca64a4b4ad3b49da918c0d0e89f94e6">HAL_CTREPCMHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t *&#160;</td>
+          <td class="paramname"><em>status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga97ff51dfb17fb757905f8866b9f808bb" name="ga97ff51dfb17fb757905f8866b9f808bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga97ff51dfb17fb757905f8866b9f808bb">&#9670;&nbsp;</a></span>HAL_GetCTREPCMCompressorCurrentTooHighStickyFault()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a> HAL_GetCTREPCMCompressorCurrentTooHighStickyFault </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#ga3ca64a4b4ad3b49da918c0d0e89f94e6">HAL_CTREPCMHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t *&#160;</td>
+          <td class="paramname"><em>status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga952ce55b4a548ed963f9dc9ca221bf88" name="ga952ce55b4a548ed963f9dc9ca221bf88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga952ce55b4a548ed963f9dc9ca221bf88">&#9670;&nbsp;</a></span>HAL_GetCTREPCMCompressorNotConnectedFault()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a> HAL_GetCTREPCMCompressorNotConnectedFault </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#ga3ca64a4b4ad3b49da918c0d0e89f94e6">HAL_CTREPCMHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t *&#160;</td>
+          <td class="paramname"><em>status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga2ed2a9a126647cc62afd78f8af4c33ef" name="ga2ed2a9a126647cc62afd78f8af4c33ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2ed2a9a126647cc62afd78f8af4c33ef">&#9670;&nbsp;</a></span>HAL_GetCTREPCMCompressorNotConnectedStickyFault()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a> HAL_GetCTREPCMCompressorNotConnectedStickyFault </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#ga3ca64a4b4ad3b49da918c0d0e89f94e6">HAL_CTREPCMHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t *&#160;</td>
+          <td class="paramname"><em>status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga1f1c02127a36e8d98e3570f93912210e" name="ga1f1c02127a36e8d98e3570f93912210e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1f1c02127a36e8d98e3570f93912210e">&#9670;&nbsp;</a></span>HAL_GetCTREPCMCompressorShortedFault()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a> HAL_GetCTREPCMCompressorShortedFault </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#ga3ca64a4b4ad3b49da918c0d0e89f94e6">HAL_CTREPCMHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t *&#160;</td>
+          <td class="paramname"><em>status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae3ea7c16f263f8a9bec196d499803496" name="gae3ea7c16f263f8a9bec196d499803496"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae3ea7c16f263f8a9bec196d499803496">&#9670;&nbsp;</a></span>HAL_GetCTREPCMCompressorShortedStickyFault()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a> HAL_GetCTREPCMCompressorShortedStickyFault </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#ga3ca64a4b4ad3b49da918c0d0e89f94e6">HAL_CTREPCMHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t *&#160;</td>
+          <td class="paramname"><em>status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga3ee16641f23cc12e64970ee4e2f4e02b" name="ga3ee16641f23cc12e64970ee4e2f4e02b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3ee16641f23cc12e64970ee4e2f4e02b">&#9670;&nbsp;</a></span>HAL_GetCTREPCMPressureSwitch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a> HAL_GetCTREPCMPressureSwitch </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#ga3ca64a4b4ad3b49da918c0d0e89f94e6">HAL_CTREPCMHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t *&#160;</td>
+          <td class="paramname"><em>status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga5879446b44ade5c4b41ee039703b1501" name="ga5879446b44ade5c4b41ee039703b1501"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5879446b44ade5c4b41ee039703b1501">&#9670;&nbsp;</a></span>HAL_GetCTREPCMSolenoidDisabledList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t HAL_GetCTREPCMSolenoidDisabledList </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#ga3ca64a4b4ad3b49da918c0d0e89f94e6">HAL_CTREPCMHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t *&#160;</td>
+          <td class="paramname"><em>status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga8af9d0e86be613855eb65382a9845c8e" name="ga8af9d0e86be613855eb65382a9845c8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8af9d0e86be613855eb65382a9845c8e">&#9670;&nbsp;</a></span>HAL_GetCTREPCMSolenoids()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int32_t HAL_GetCTREPCMSolenoids </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#ga3ca64a4b4ad3b49da918c0d0e89f94e6">HAL_CTREPCMHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t *&#160;</td>
+          <td class="paramname"><em>status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga8f070c606de918338652fc01bffa929a" name="ga8f070c606de918338652fc01bffa929a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8f070c606de918338652fc01bffa929a">&#9670;&nbsp;</a></span>HAL_GetCTREPCMSolenoidVoltageFault()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a> HAL_GetCTREPCMSolenoidVoltageFault </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#ga3ca64a4b4ad3b49da918c0d0e89f94e6">HAL_CTREPCMHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t *&#160;</td>
+          <td class="paramname"><em>status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gab1656b7db06a029c231e10668facf3bc" name="gab1656b7db06a029c231e10668facf3bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab1656b7db06a029c231e10668facf3bc">&#9670;&nbsp;</a></span>HAL_GetCTREPCMSolenoidVoltageStickyFault()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a> HAL_GetCTREPCMSolenoidVoltageStickyFault </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#ga3ca64a4b4ad3b49da918c0d0e89f94e6">HAL_CTREPCMHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t *&#160;</td>
+          <td class="paramname"><em>status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga7e7c502c11bceeaa3d4388cc560a2e33" name="ga7e7c502c11bceeaa3d4388cc560a2e33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7e7c502c11bceeaa3d4388cc560a2e33">&#9670;&nbsp;</a></span>HAL_InitializeCTREPCM()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__hal__types.html#ga3ca64a4b4ad3b49da918c0d0e89f94e6">HAL_CTREPCMHandle</a> HAL_InitializeCTREPCM </td>
+          <td>(</td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>module</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>allocationLocation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t *&#160;</td>
+          <td class="paramname"><em>status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga96902d5026fb7286fe8b267091a738ec" name="ga96902d5026fb7286fe8b267091a738ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga96902d5026fb7286fe8b267091a738ec">&#9670;&nbsp;</a></span>HAL_SetCTREPCMClosedLoopControl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HAL_SetCTREPCMClosedLoopControl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#ga3ca64a4b4ad3b49da918c0d0e89f94e6">HAL_CTREPCMHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a>&#160;</td>
+          <td class="paramname"><em>enabled</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t *&#160;</td>
+          <td class="paramname"><em>status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gad32bd62bc1e4316c7a904abaccc58096" name="gad32bd62bc1e4316c7a904abaccc58096"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad32bd62bc1e4316c7a904abaccc58096">&#9670;&nbsp;</a></span>HAL_SetCTREPCMOneShotDuration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HAL_SetCTREPCMOneShotDuration </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#ga3ca64a4b4ad3b49da918c0d0e89f94e6">HAL_CTREPCMHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>durMs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t *&#160;</td>
+          <td class="paramname"><em>status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga50d847323f1afb93aefa955adad88b15" name="ga50d847323f1afb93aefa955adad88b15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga50d847323f1afb93aefa955adad88b15">&#9670;&nbsp;</a></span>HAL_SetCTREPCMSolenoids()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HAL_SetCTREPCMSolenoids </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#ga3ca64a4b4ad3b49da918c0d0e89f94e6">HAL_CTREPCMHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>mask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>values</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t *&#160;</td>
+          <td class="paramname"><em>status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Oct 29 2021 07:12:23 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Oct 29 2021 22:10:01 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

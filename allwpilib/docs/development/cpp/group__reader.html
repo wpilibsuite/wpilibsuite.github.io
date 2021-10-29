@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-31-ga939cd9</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-32-g2cb171f</span>
    </div>
   </td>
  </tr>
@@ -103,9 +103,8 @@ $(document).ready(function(){initNavTree('group__reader.html',''); initResizable
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:gac8b222eb575099fa92f086eeeb8dc83f"><td class="memItemLeft" align="right" valign="top"><a id="gac8b222eb575099fa92f086eeeb8dc83f" name="gac8b222eb575099fa92f086eeeb8dc83f"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>MPACK_READER_MINIMUM_BUFFER_SIZE</b>&#160;&#160;&#160;32</td></tr>
-<tr class="memdesc:gac8b222eb575099fa92f086eeeb8dc83f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The minimum buffer size for a reader with a fill function. <br /></td></tr>
+<tr class="memitem:gac8b222eb575099fa92f086eeeb8dc83f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__reader.html#gac8b222eb575099fa92f086eeeb8dc83f">MPACK_READER_MINIMUM_BUFFER_SIZE</a>&#160;&#160;&#160;32</td></tr>
+<tr class="memdesc:gac8b222eb575099fa92f086eeeb8dc83f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The minimum buffer size for a reader with a fill function.  <a href="group__reader.html#gac8b222eb575099fa92f086eeeb8dc83f">More...</a><br /></td></tr>
 <tr class="separator:gac8b222eb575099fa92f086eeeb8dc83f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
@@ -113,28 +112,27 @@ Typedefs</h2></td></tr>
 <tr class="memitem:gaee791c36a15344b9e57edae160c86615"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="group__reader.html#gaee791c36a15344b9e57edae160c86615">mpack_reader_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__reader.html#gaee791c36a15344b9e57edae160c86615">mpack_reader_t</a></td></tr>
 <tr class="memdesc:gaee791c36a15344b9e57edae160c86615"><td class="mdescLeft">&#160;</td><td class="mdescRight">A buffered MessagePack decoder.  <a href="group__reader.html#gaee791c36a15344b9e57edae160c86615">More...</a><br /></td></tr>
 <tr class="separator:gaee791c36a15344b9e57edae160c86615"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga97503ca06d41d58c60226b2732661eda"><td class="memItemLeft" align="right" valign="top">typedef size_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__reader.html#ga97503ca06d41d58c60226b2732661eda">mpack_reader_fill_t</a>) (<a class="el" href="group__reader.html#gaee791c36a15344b9e57edae160c86615">mpack_reader_t</a> *reader, char *<a class="el" href="classbuffer.html">buffer</a>, size_t count)</td></tr>
+<tr class="memitem:ga97503ca06d41d58c60226b2732661eda"><td class="memItemLeft" align="right" valign="top">typedef size_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__reader.html#ga97503ca06d41d58c60226b2732661eda">mpack_reader_fill_t</a>) (<a class="el" href="group__reader.html#gaee791c36a15344b9e57edae160c86615">mpack_reader_t</a> *reader, char *<a class="el" href="classbuffer.html">buffer</a>, size_t <a class="el" href="core_8h.html#a66b93840aa6a29b3802202f99668f78a">count</a>)</td></tr>
 <tr class="memdesc:ga97503ca06d41d58c60226b2732661eda"><td class="mdescLeft">&#160;</td><td class="mdescRight">The MPack reader's fill function.  <a href="group__reader.html#ga97503ca06d41d58c60226b2732661eda">More...</a><br /></td></tr>
 <tr class="separator:ga97503ca06d41d58c60226b2732661eda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6a0b236c7befe9cb959dabce15acd23b"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__reader.html#ga6a0b236c7befe9cb959dabce15acd23b">mpack_reader_skip_t</a>) (<a class="el" href="group__reader.html#gaee791c36a15344b9e57edae160c86615">mpack_reader_t</a> *reader, size_t count)</td></tr>
+<tr class="memitem:ga6a0b236c7befe9cb959dabce15acd23b"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__reader.html#ga6a0b236c7befe9cb959dabce15acd23b">mpack_reader_skip_t</a>) (<a class="el" href="group__reader.html#gaee791c36a15344b9e57edae160c86615">mpack_reader_t</a> *reader, size_t <a class="el" href="core_8h.html#a66b93840aa6a29b3802202f99668f78a">count</a>)</td></tr>
 <tr class="memdesc:ga6a0b236c7befe9cb959dabce15acd23b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The MPack reader's skip function.  <a href="group__reader.html#ga6a0b236c7befe9cb959dabce15acd23b">More...</a><br /></td></tr>
 <tr class="separator:ga6a0b236c7befe9cb959dabce15acd23b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga799a3f21adc8e229c6040ab42d90bef3"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__reader.html#ga799a3f21adc8e229c6040ab42d90bef3">mpack_reader_error_t</a>) (<a class="el" href="group__reader.html#gaee791c36a15344b9e57edae160c86615">mpack_reader_t</a> *reader, <a class="el" href="group__common.html#ga9d9f282ca4183ab5190e09d04c1f74c4">mpack_error_t</a> error)</td></tr>
 <tr class="memdesc:ga799a3f21adc8e229c6040ab42d90bef3"><td class="mdescLeft">&#160;</td><td class="mdescRight">An error handler function to be called when an error is flagged on the reader.  <a href="group__reader.html#ga799a3f21adc8e229c6040ab42d90bef3">More...</a><br /></td></tr>
 <tr class="separator:ga799a3f21adc8e229c6040ab42d90bef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadda6baaccdcf0ad9c5e212be9992cf5b"><td class="memItemLeft" align="right" valign="top"><a id="gadda6baaccdcf0ad9c5e212be9992cf5b" name="gadda6baaccdcf0ad9c5e212be9992cf5b"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>mpack_reader_teardown_t</b>) (<a class="el" href="group__reader.html#gaee791c36a15344b9e57edae160c86615">mpack_reader_t</a> *reader)</td></tr>
-<tr class="memdesc:gadda6baaccdcf0ad9c5e212be9992cf5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A teardown function to be called when the reader is destroyed. <br /></td></tr>
+<tr class="memitem:gadda6baaccdcf0ad9c5e212be9992cf5b"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__reader.html#gadda6baaccdcf0ad9c5e212be9992cf5b">mpack_reader_teardown_t</a>) (<a class="el" href="group__reader.html#gaee791c36a15344b9e57edae160c86615">mpack_reader_t</a> *reader)</td></tr>
+<tr class="memdesc:gadda6baaccdcf0ad9c5e212be9992cf5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A teardown function to be called when the reader is destroyed.  <a href="group__reader.html#gadda6baaccdcf0ad9c5e212be9992cf5b">More...</a><br /></td></tr>
 <tr class="separator:gadda6baaccdcf0ad9c5e212be9992cf5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Lifecycle Functions</h2></td></tr>
-<tr class="memitem:ga1d79c00c6c013b879b164c26753b3e83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__reader.html#ga1d79c00c6c013b879b164c26753b3e83">mpack_reader_init</a> (<a class="el" href="group__reader.html#gaee791c36a15344b9e57edae160c86615">mpack_reader_t</a> *reader, char *<a class="el" href="classbuffer.html">buffer</a>, size_t size, size_t count)</td></tr>
+<tr class="memitem:ga1d79c00c6c013b879b164c26753b3e83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__reader.html#ga1d79c00c6c013b879b164c26753b3e83">mpack_reader_init</a> (<a class="el" href="group__reader.html#gaee791c36a15344b9e57edae160c86615">mpack_reader_t</a> *reader, char *<a class="el" href="classbuffer.html">buffer</a>, size_t size, size_t <a class="el" href="core_8h.html#a66b93840aa6a29b3802202f99668f78a">count</a>)</td></tr>
 <tr class="memdesc:ga1d79c00c6c013b879b164c26753b3e83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes an MPack reader with the given buffer.  <a href="group__reader.html#ga1d79c00c6c013b879b164c26753b3e83">More...</a><br /></td></tr>
 <tr class="separator:ga1d79c00c6c013b879b164c26753b3e83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga729bf4c0a79516e97a65d2e278f336e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__reader.html#ga729bf4c0a79516e97a65d2e278f336e0">mpack_reader_init_error</a> (<a class="el" href="group__reader.html#gaee791c36a15344b9e57edae160c86615">mpack_reader_t</a> *reader, <a class="el" href="group__common.html#ga9d9f282ca4183ab5190e09d04c1f74c4">mpack_error_t</a> error)</td></tr>
 <tr class="memdesc:ga729bf4c0a79516e97a65d2e278f336e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes an MPack reader directly into an error state.  <a href="group__reader.html#ga729bf4c0a79516e97a65d2e278f336e0">More...</a><br /></td></tr>
 <tr class="separator:ga729bf4c0a79516e97a65d2e278f336e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga18f41d6786155f265769351ef550e331"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__reader.html#ga18f41d6786155f265769351ef550e331">mpack_reader_init_data</a> (<a class="el" href="group__reader.html#gaee791c36a15344b9e57edae160c86615">mpack_reader_t</a> *reader, const char *<a class="el" href="structdata.html">data</a>, size_t count)</td></tr>
+<tr class="memitem:ga18f41d6786155f265769351ef550e331"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__reader.html#ga18f41d6786155f265769351ef550e331">mpack_reader_init_data</a> (<a class="el" href="group__reader.html#gaee791c36a15344b9e57edae160c86615">mpack_reader_t</a> *reader, const char *<a class="el" href="structdata.html">data</a>, size_t <a class="el" href="core_8h.html#a66b93840aa6a29b3802202f99668f78a">count</a>)</td></tr>
 <tr class="memdesc:ga18f41d6786155f265769351ef550e331"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes an MPack reader to parse a pre-loaded contiguous chunk of data.  <a href="group__reader.html#ga18f41d6786155f265769351ef550e331">More...</a><br /></td></tr>
 <tr class="separator:ga18f41d6786155f265769351ef550e331"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadf19892a6dd87d86bdd02646528964ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__reader.html#gadf19892a6dd87d86bdd02646528964ff">mpack_reader_init_filename</a> (<a class="el" href="group__reader.html#gaee791c36a15344b9e57edae160c86615">mpack_reader_t</a> *reader, const char *filename)</td></tr>
@@ -181,7 +179,7 @@ typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>mpack_reade
 <tr class="memitem:ga79fddaff0668be09865990e533969dcd"><td class="memItemLeft" align="right" valign="top">MPACK_INLINE void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__reader.html#ga79fddaff0668be09865990e533969dcd">mpack_reader_context</a> (<a class="el" href="group__reader.html#gaee791c36a15344b9e57edae160c86615">mpack_reader_t</a> *reader)</td></tr>
 <tr class="memdesc:ga79fddaff0668be09865990e533969dcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the custom context for reader callbacks.  <a href="group__reader.html#ga79fddaff0668be09865990e533969dcd">More...</a><br /></td></tr>
 <tr class="separator:ga79fddaff0668be09865990e533969dcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf4eab68e9d1751ff9c6c853d563d9a0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__reader.html#gaf4eab68e9d1751ff9c6c853d563d9a0e">mpack_reader_set_fill</a> (<a class="el" href="group__reader.html#gaee791c36a15344b9e57edae160c86615">mpack_reader_t</a> *reader, <a class="el" href="group__reader.html#ga97503ca06d41d58c60226b2732661eda">mpack_reader_fill_t</a> fill)</td></tr>
+<tr class="memitem:gaf4eab68e9d1751ff9c6c853d563d9a0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__reader.html#gaf4eab68e9d1751ff9c6c853d563d9a0e">mpack_reader_set_fill</a> (<a class="el" href="group__reader.html#gaee791c36a15344b9e57edae160c86615">mpack_reader_t</a> *reader, <a class="el" href="group__reader.html#ga97503ca06d41d58c60226b2732661eda">mpack_reader_fill_t</a> <a class="el" href="format_8h.html#aa261c3477724224b49f5dd92aec0c03a">fill</a>)</td></tr>
 <tr class="memdesc:gaf4eab68e9d1751ff9c6c853d563d9a0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the fill function to refill the data buffer when it runs out of data.  <a href="group__reader.html#gaf4eab68e9d1751ff9c6c853d563d9a0e">More...</a><br /></td></tr>
 <tr class="separator:gaf4eab68e9d1751ff9c6c853d563d9a0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa925114414e77ff809fcaaba399c8162"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__reader.html#gaa925114414e77ff809fcaaba399c8162">mpack_reader_set_skip</a> (<a class="el" href="group__reader.html#gaee791c36a15344b9e57edae160c86615">mpack_reader_t</a> *reader, <a class="el" href="group__reader.html#ga6a0b236c7befe9cb959dabce15acd23b">mpack_reader_skip_t</a> skip)</td></tr>
@@ -213,8 +211,7 @@ typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>mpack_reade
 <tr class="memitem:ga397a8d0738b8d68753a470a988b813aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__common.html#ga008da69ac6b5582a893f2d2ffd37f4ac">mpack_tag_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__reader.html#ga397a8d0738b8d68753a470a988b813aa">mpack_peek_tag</a> (<a class="el" href="group__reader.html#gaee791c36a15344b9e57edae160c86615">mpack_reader_t</a> *reader)</td></tr>
 <tr class="memdesc:ga397a8d0738b8d68753a470a988b813aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses the next MessagePack object header (an MPack tag) without advancing the reader.  <a href="group__reader.html#ga397a8d0738b8d68753a470a988b813aa">More...</a><br /></td></tr>
 <tr class="separator:ga397a8d0738b8d68753a470a988b813aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga65cd03cc254315c2e5bfe2a7d9043ee8"><td class="memItemLeft" align="right" valign="top"><a id="ga65cd03cc254315c2e5bfe2a7d9043ee8" name="ga65cd03cc254315c2e5bfe2a7d9043ee8"></a>
-MPACK_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>mpack_done_type</b> (<a class="el" href="group__reader.html#gaee791c36a15344b9e57edae160c86615">mpack_reader_t</a> *reader, <a class="el" href="group__common.html#ga22f03cf1240d5a917e1b3e7be8ab327e">mpack_type_t</a> type)</td></tr>
+<tr class="memitem:ga65cd03cc254315c2e5bfe2a7d9043ee8"><td class="memItemLeft" align="right" valign="top">MPACK_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__reader.html#ga65cd03cc254315c2e5bfe2a7d9043ee8">mpack_done_type</a> (<a class="el" href="group__reader.html#gaee791c36a15344b9e57edae160c86615">mpack_reader_t</a> *reader, <a class="el" href="group__common.html#ga22f03cf1240d5a917e1b3e7be8ab327e">mpack_type_t</a> <a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>)</td></tr>
 <tr class="separator:ga65cd03cc254315c2e5bfe2a7d9043ee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2b5b8fd101d63c96b6b89e675c981b78"><td class="memItemLeft" align="right" valign="top">MPACK_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__reader.html#ga2b5b8fd101d63c96b6b89e675c981b78">mpack_done_array</a> (<a class="el" href="group__reader.html#gaee791c36a15344b9e57edae160c86615">mpack_reader_t</a> *reader)</td></tr>
 <tr class="memdesc:ga2b5b8fd101d63c96b6b89e675c981b78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finishes reading an array.  <a href="group__reader.html#ga2b5b8fd101d63c96b6b89e675c981b78">More...</a><br /></td></tr>
@@ -233,10 +230,10 @@ MPACK_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>mpack_do
 <tr class="separator:ga438bb2b85fbbd06cd8f10d5c8079427e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">String and Data Functions</h2></td></tr>
-<tr class="memitem:ga0c7e1dd2be56ce3d596326c4463e7229"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__reader.html#ga0c7e1dd2be56ce3d596326c4463e7229">mpack_skip_bytes</a> (<a class="el" href="group__reader.html#gaee791c36a15344b9e57edae160c86615">mpack_reader_t</a> *reader, size_t count)</td></tr>
+<tr class="memitem:ga0c7e1dd2be56ce3d596326c4463e7229"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__reader.html#ga0c7e1dd2be56ce3d596326c4463e7229">mpack_skip_bytes</a> (<a class="el" href="group__reader.html#gaee791c36a15344b9e57edae160c86615">mpack_reader_t</a> *reader, size_t <a class="el" href="core_8h.html#a66b93840aa6a29b3802202f99668f78a">count</a>)</td></tr>
 <tr class="memdesc:ga0c7e1dd2be56ce3d596326c4463e7229"><td class="mdescLeft">&#160;</td><td class="mdescRight">Skips bytes from the underlying stream.  <a href="group__reader.html#ga0c7e1dd2be56ce3d596326c4463e7229">More...</a><br /></td></tr>
 <tr class="separator:ga0c7e1dd2be56ce3d596326c4463e7229"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaeb91e8d4e2a7b7f6562d8bbb7400275c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__reader.html#gaeb91e8d4e2a7b7f6562d8bbb7400275c">mpack_read_bytes</a> (<a class="el" href="group__reader.html#gaee791c36a15344b9e57edae160c86615">mpack_reader_t</a> *reader, char *p, size_t count)</td></tr>
+<tr class="memitem:gaeb91e8d4e2a7b7f6562d8bbb7400275c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__reader.html#gaeb91e8d4e2a7b7f6562d8bbb7400275c">mpack_read_bytes</a> (<a class="el" href="group__reader.html#gaee791c36a15344b9e57edae160c86615">mpack_reader_t</a> *reader, char *p, size_t <a class="el" href="core_8h.html#a66b93840aa6a29b3802202f99668f78a">count</a>)</td></tr>
 <tr class="memdesc:gaeb91e8d4e2a7b7f6562d8bbb7400275c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads bytes from a string, binary blob or extension object, copying them into the given buffer.  <a href="group__reader.html#gaeb91e8d4e2a7b7f6562d8bbb7400275c">More...</a><br /></td></tr>
 <tr class="separator:gaeb91e8d4e2a7b7f6562d8bbb7400275c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaee9d5bd9ec3d123dac575651f0ec2186"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__reader.html#gaee9d5bd9ec3d123dac575651f0ec2186">mpack_read_utf8</a> (<a class="el" href="group__reader.html#gaee791c36a15344b9e57edae160c86615">mpack_reader_t</a> *reader, char *p, size_t byte_count)</td></tr>
@@ -248,16 +245,16 @@ MPACK_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>mpack_do
 <tr class="memitem:gad053c4bccda721a25c48d66fa0f211cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__reader.html#gad053c4bccda721a25c48d66fa0f211cf">mpack_read_utf8_cstr</a> (<a class="el" href="group__reader.html#gaee791c36a15344b9e57edae160c86615">mpack_reader_t</a> *reader, char *buf, size_t buffer_size, size_t byte_count)</td></tr>
 <tr class="memdesc:gad053c4bccda721a25c48d66fa0f211cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads bytes from a string, ensures that the string is valid UTF-8 with no NUL bytes, copies the bytes into the given buffer and adds a null-terminator.  <a href="group__reader.html#gad053c4bccda721a25c48d66fa0f211cf">More...</a><br /></td></tr>
 <tr class="separator:gad053c4bccda721a25c48d66fa0f211cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga93f5ab68116c0de69a823d7d839f8033"><td class="memItemLeft" align="right" valign="top">MPACK_INLINE char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__reader.html#ga93f5ab68116c0de69a823d7d839f8033">mpack_read_bytes_alloc</a> (<a class="el" href="group__reader.html#gaee791c36a15344b9e57edae160c86615">mpack_reader_t</a> *reader, size_t count)</td></tr>
+<tr class="memitem:ga93f5ab68116c0de69a823d7d839f8033"><td class="memItemLeft" align="right" valign="top">MPACK_INLINE char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__reader.html#ga93f5ab68116c0de69a823d7d839f8033">mpack_read_bytes_alloc</a> (<a class="el" href="group__reader.html#gaee791c36a15344b9e57edae160c86615">mpack_reader_t</a> *reader, size_t <a class="el" href="core_8h.html#a66b93840aa6a29b3802202f99668f78a">count</a>)</td></tr>
 <tr class="memdesc:ga93f5ab68116c0de69a823d7d839f8033"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads bytes from a string, binary blob or extension object, allocating storage for them and returning the allocated pointer.  <a href="group__reader.html#ga93f5ab68116c0de69a823d7d839f8033">More...</a><br /></td></tr>
 <tr class="separator:ga93f5ab68116c0de69a823d7d839f8033"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4777ac528d7abbc7313469737546e1a4"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__reader.html#ga4777ac528d7abbc7313469737546e1a4">mpack_read_bytes_inplace</a> (<a class="el" href="group__reader.html#gaee791c36a15344b9e57edae160c86615">mpack_reader_t</a> *reader, size_t count)</td></tr>
+<tr class="memitem:ga4777ac528d7abbc7313469737546e1a4"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__reader.html#ga4777ac528d7abbc7313469737546e1a4">mpack_read_bytes_inplace</a> (<a class="el" href="group__reader.html#gaee791c36a15344b9e57edae160c86615">mpack_reader_t</a> *reader, size_t <a class="el" href="core_8h.html#a66b93840aa6a29b3802202f99668f78a">count</a>)</td></tr>
 <tr class="memdesc:ga4777ac528d7abbc7313469737546e1a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads bytes from a string, binary blob or extension object in-place in the buffer.  <a href="group__reader.html#ga4777ac528d7abbc7313469737546e1a4">More...</a><br /></td></tr>
 <tr class="separator:ga4777ac528d7abbc7313469737546e1a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga76af5d206358a692b2aeeec6dbeff29c"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__reader.html#ga76af5d206358a692b2aeeec6dbeff29c">mpack_read_utf8_inplace</a> (<a class="el" href="group__reader.html#gaee791c36a15344b9e57edae160c86615">mpack_reader_t</a> *reader, size_t count)</td></tr>
+<tr class="memitem:ga76af5d206358a692b2aeeec6dbeff29c"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__reader.html#ga76af5d206358a692b2aeeec6dbeff29c">mpack_read_utf8_inplace</a> (<a class="el" href="group__reader.html#gaee791c36a15344b9e57edae160c86615">mpack_reader_t</a> *reader, size_t <a class="el" href="core_8h.html#a66b93840aa6a29b3802202f99668f78a">count</a>)</td></tr>
 <tr class="memdesc:ga76af5d206358a692b2aeeec6dbeff29c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads bytes from a string in-place in the buffer and ensures they are valid UTF-8.  <a href="group__reader.html#ga76af5d206358a692b2aeeec6dbeff29c">More...</a><br /></td></tr>
 <tr class="separator:ga76af5d206358a692b2aeeec6dbeff29c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac5cd4b489f3c5ffd3b5d114efb58a21f"><td class="memItemLeft" align="right" valign="top">MPACK_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__reader.html#gac5cd4b489f3c5ffd3b5d114efb58a21f">mpack_should_read_bytes_inplace</a> (<a class="el" href="group__reader.html#gaee791c36a15344b9e57edae160c86615">mpack_reader_t</a> *reader, size_t count)</td></tr>
+<tr class="memitem:gac5cd4b489f3c5ffd3b5d114efb58a21f"><td class="memItemLeft" align="right" valign="top">MPACK_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__reader.html#gac5cd4b489f3c5ffd3b5d114efb58a21f">mpack_should_read_bytes_inplace</a> (<a class="el" href="group__reader.html#gaee791c36a15344b9e57edae160c86615">mpack_reader_t</a> *reader, size_t <a class="el" href="core_8h.html#a66b93840aa6a29b3802202f99668f78a">count</a>)</td></tr>
 <tr class="memdesc:gac5cd4b489f3c5ffd3b5d114efb58a21f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if it's a good idea to read the given number of bytes in-place.  <a href="group__reader.html#gac5cd4b489f3c5ffd3b5d114efb58a21f">More...</a><br /></td></tr>
 <tr class="separator:gac5cd4b489f3c5ffd3b5d114efb58a21f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -289,6 +286,22 @@ MPACK_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>mpack_do
 
 </div>
 </div>
+<a id="gac8b222eb575099fa92f086eeeb8dc83f" name="gac8b222eb575099fa92f086eeeb8dc83f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac8b222eb575099fa92f086eeeb8dc83f">&#9670;&nbsp;</a></span>MPACK_READER_MINIMUM_BUFFER_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MPACK_READER_MINIMUM_BUFFER_SIZE&#160;&#160;&#160;32</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The minimum buffer size for a reader with a fill function. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="ga799a3f21adc8e229c6040ab42d90bef3" name="ga799a3f21adc8e229c6040ab42d90bef3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga799a3f21adc8e229c6040ab42d90bef3">&#9670;&nbsp;</a></span>mpack_reader_error_t</h2>
@@ -317,7 +330,7 @@ MPACK_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>mpack_do
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef size_t(* mpack_reader_fill_t) (<a class="el" href="group__reader.html#gaee791c36a15344b9e57edae160c86615">mpack_reader_t</a> *reader, char *<a class="el" href="classbuffer.html">buffer</a>, size_t count)</td>
+          <td class="memname">typedef size_t(* mpack_reader_fill_t) (<a class="el" href="group__reader.html#gaee791c36a15344b9e57edae160c86615">mpack_reader_t</a> *reader, char *<a class="el" href="classbuffer.html">buffer</a>, size_t <a class="el" href="core_8h.html#a66b93840aa6a29b3802202f99668f78a">count</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -337,7 +350,7 @@ MPACK_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>mpack_do
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* mpack_reader_skip_t) (<a class="el" href="group__reader.html#gaee791c36a15344b9e57edae160c86615">mpack_reader_t</a> *reader, size_t count)</td>
+          <td class="memname">typedef void(* mpack_reader_skip_t) (<a class="el" href="group__reader.html#gaee791c36a15344b9e57edae160c86615">mpack_reader_t</a> *reader, size_t <a class="el" href="core_8h.html#a66b93840aa6a29b3802202f99668f78a">count</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -365,6 +378,22 @@ MPACK_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>mpack_do
 <p >The decoder wraps an existing buffer and, optionally, a fill function. This allows efficiently decoding data from existing memory buffers, files, streams, etc.</p>
 <p >All read operations are synchronous; they will block until the requested data is fully read, or an error occurs.</p>
 <p >This structure is opaque; its fields should not be accessed outside of MPack. </p>
+
+</div>
+</div>
+<a id="gadda6baaccdcf0ad9c5e212be9992cf5b" name="gadda6baaccdcf0ad9c5e212be9992cf5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadda6baaccdcf0ad9c5e212be9992cf5b">&#9670;&nbsp;</a></span>mpack_reader_teardown_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* mpack_reader_teardown_t) (<a class="el" href="group__reader.html#gaee791c36a15344b9e57edae160c86615">mpack_reader_t</a> *reader)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A teardown function to be called when the reader is destroyed. </p>
 
 </div>
 </div>
@@ -474,6 +503,34 @@ MPACK_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>mpack_do
 
 </div>
 </div>
+<a id="ga65cd03cc254315c2e5bfe2a7d9043ee8" name="ga65cd03cc254315c2e5bfe2a7d9043ee8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga65cd03cc254315c2e5bfe2a7d9043ee8">&#9670;&nbsp;</a></span>mpack_done_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MPACK_INLINE void mpack_done_type </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__reader.html#gaee791c36a15344b9e57edae160c86615">mpack_reader_t</a> *&#160;</td>
+          <td class="paramname"><em>reader</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__common.html#ga22f03cf1240d5a917e1b3e7be8ab327e">mpack_type_t</a>&#160;</td>
+          <td class="paramname"><em>type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ga397a8d0738b8d68753a470a988b813aa" name="ga397a8d0738b8d68753a470a988b813aa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga397a8d0738b8d68753a470a988b813aa">&#9670;&nbsp;</a></span>mpack_peek_tag()</h2>
 
@@ -573,7 +630,7 @@ MPACK_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>mpack_do
 </div><div class="memdoc">
 
 <p>Reads bytes from a string, binary blob or extension object, allocating storage for them and returning the allocated pointer. </p>
-<p >The allocated string must be freed with <a class="el" href="group__config.html#ga298d7c2e4093bcfe361088df9e35956a" title="Defines the memory free function used by MPack.">MPACK_FREE()</a> (or simply free() if MPack's allocator hasn't been customized.)</p>
+<p >The allocated string must be freed with <a class="el" href="group__config.html#ga298d7c2e4093bcfe361088df9e35956a" title="Defines the memory free function used by MPack.">MPACK_FREE()</a> (or simply <a class="el" href="_third_party_notices_8txt.html#a1ad4e226a400dfc6463430c1efcaa45b">free()</a> if MPack's allocator hasn't been customized.)</p>
 <p >Returns NULL if any error occurs, or if count is zero. </p>
 
 </div>
@@ -1750,7 +1807,7 @@ mpack_done_ext() </dd></dl>
 
 <p>Initializes an MPack writer using a growable buffer. </p>
 <p >The data is placed in the given data pointer if and when the writer is destroyed without error. The data pointer is NULL during writing, and will remain NULL if an error occurs.</p>
-<p >The allocated data must be freed with <a class="el" href="group__config.html#ga298d7c2e4093bcfe361088df9e35956a" title="Defines the memory free function used by MPack.">MPACK_FREE()</a> (or simply free() if MPack's allocator hasn't been customized.)</p>
+<p >The allocated data must be freed with <a class="el" href="group__config.html#ga298d7c2e4093bcfe361088df9e35956a" title="Defines the memory free function used by MPack.">MPACK_FREE()</a> (or simply <a class="el" href="_third_party_notices_8txt.html#a1ad4e226a400dfc6463430c1efcaa45b">free()</a> if MPack's allocator hasn't been customized.)</p>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">mpack_error_memory</td><td>if the buffer fails to grow when flushing.</td></tr>
@@ -1820,7 +1877,7 @@ mpack_done_ext() </dd></dl>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Oct 29 2021 07:12:23 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Oct 29 2021 22:10:01 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

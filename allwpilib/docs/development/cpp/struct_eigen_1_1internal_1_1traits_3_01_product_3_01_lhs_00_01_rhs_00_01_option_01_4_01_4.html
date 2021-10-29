@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-31-ga939cd9</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-32-g2cb171f</span>
    </div>
   </td>
  </tr>
@@ -97,45 +97,193 @@ $(document).ready(function(){initNavTree('struct_eigen_1_1internal_1_1traits_3_0
   <div class="headertitle"><div class="title">Eigen::internal::traits&lt; Product&lt; Lhs, Rhs, Option &gt; &gt; Struct Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_product_8h_source.html">/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/eigeninclude/Eigen/src/Core/Product.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a057a8dc2f19f10d550cd573c31725e03"><td class="memItemLeft" align="right" valign="top"><a id="a057a8dc2f19f10d550cd573c31725e03" name="a057a8dc2f19f10d550cd573c31725e03"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<b>RowsAtCompileTime</b> = LhsTraits::RowsAtCompileTime
-, <b>ColsAtCompileTime</b> = RhsTraits::ColsAtCompileTime
-, <b>MaxRowsAtCompileTime</b> = LhsTraits::MaxRowsAtCompileTime
-, <b>MaxColsAtCompileTime</b> = RhsTraits::MaxColsAtCompileTime
+<tr class="memitem:a057a8dc2f19f10d550cd573c31725e03"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_product_3_01_lhs_00_01_rhs_00_01_option_01_4_01_4.html#a057a8dc2f19f10d550cd573c31725e03a0c86fbf463668c2174d73628e7f71269">RowsAtCompileTime</a> = LhsTraits::RowsAtCompileTime
+, <a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_product_3_01_lhs_00_01_rhs_00_01_option_01_4_01_4.html#a057a8dc2f19f10d550cd573c31725e03a2471c4a250eb747025df4e9bd788ded7">ColsAtCompileTime</a> = RhsTraits::ColsAtCompileTime
+, <a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_product_3_01_lhs_00_01_rhs_00_01_option_01_4_01_4.html#a057a8dc2f19f10d550cd573c31725e03a2bc714111e81afbfedba763318ec6a26">MaxRowsAtCompileTime</a> = LhsTraits::MaxRowsAtCompileTime
+, <a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_product_3_01_lhs_00_01_rhs_00_01_option_01_4_01_4.html#a057a8dc2f19f10d550cd573c31725e03a8e984ef6938187f6860b9d5cb334a485">MaxColsAtCompileTime</a> = RhsTraits::MaxColsAtCompileTime
 , <br />
-&#160;&#160;<b>InnerSize</b> = EIGEN_SIZE_MIN_PREFER_FIXED(LhsTraits::ColsAtCompileTime, RhsTraits::RowsAtCompileTime)
-, <b>Flags</b>
+&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_product_3_01_lhs_00_01_rhs_00_01_option_01_4_01_4.html#a057a8dc2f19f10d550cd573c31725e03a7a829eda6fe7b2daaf6bdd8a38bc684c">InnerSize</a> = EIGEN_SIZE_MIN_PREFER_FIXED(LhsTraits::ColsAtCompileTime, RhsTraits::RowsAtCompileTime)
+, <a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_product_3_01_lhs_00_01_rhs_00_01_option_01_4_01_4.html#a057a8dc2f19f10d550cd573c31725e03a8fedff91fd8f342a7205e3a39771f994">Flags</a>
 <br />
  }</td></tr>
 <tr class="separator:a057a8dc2f19f10d550cd573c31725e03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fd76e36f8afc58da6d2d5646b671807"><td class="memItemLeft" align="right" valign="top"><a id="a6fd76e36f8afc58da6d2d5646b671807" name="a6fd76e36f8afc58da6d2d5646b671807"></a>
-typedef <a class="el" href="struct_eigen_1_1internal_1_1remove__all.html">remove_all</a>&lt; Lhs &gt;::type&#160;</td><td class="memItemRight" valign="bottom"><b>LhsCleaned</b></td></tr>
+<tr class="memitem:a6fd76e36f8afc58da6d2d5646b671807"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_eigen_1_1internal_1_1remove__all.html">remove_all</a>&lt; Lhs &gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_product_3_01_lhs_00_01_rhs_00_01_option_01_4_01_4.html#a6fd76e36f8afc58da6d2d5646b671807">LhsCleaned</a></td></tr>
 <tr class="separator:a6fd76e36f8afc58da6d2d5646b671807"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fd90d8da68fa0e0877534a52aa0ad62"><td class="memItemLeft" align="right" valign="top"><a id="a6fd90d8da68fa0e0877534a52aa0ad62" name="a6fd90d8da68fa0e0877534a52aa0ad62"></a>
-typedef <a class="el" href="struct_eigen_1_1internal_1_1remove__all.html">remove_all</a>&lt; Rhs &gt;::type&#160;</td><td class="memItemRight" valign="bottom"><b>RhsCleaned</b></td></tr>
+<tr class="memitem:a6fd90d8da68fa0e0877534a52aa0ad62"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_eigen_1_1internal_1_1remove__all.html">remove_all</a>&lt; Rhs &gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_product_3_01_lhs_00_01_rhs_00_01_option_01_4_01_4.html#a6fd90d8da68fa0e0877534a52aa0ad62">RhsCleaned</a></td></tr>
 <tr class="separator:a6fd90d8da68fa0e0877534a52aa0ad62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2558de0f7d3f7e00f3e129406665a1dc"><td class="memItemLeft" align="right" valign="top"><a id="a2558de0f7d3f7e00f3e129406665a1dc" name="a2558de0f7d3f7e00f3e129406665a1dc"></a>
-typedef <a class="el" href="struct_eigen_1_1internal_1_1traits.html">traits</a>&lt; LhsCleaned &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>LhsTraits</b></td></tr>
+<tr class="memitem:a2558de0f7d3f7e00f3e129406665a1dc"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_eigen_1_1internal_1_1traits.html">traits</a>&lt; <a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_product_3_01_lhs_00_01_rhs_00_01_option_01_4_01_4.html#a6fd76e36f8afc58da6d2d5646b671807">LhsCleaned</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_product_3_01_lhs_00_01_rhs_00_01_option_01_4_01_4.html#a2558de0f7d3f7e00f3e129406665a1dc">LhsTraits</a></td></tr>
 <tr class="separator:a2558de0f7d3f7e00f3e129406665a1dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c368e4a12fcde66f08ea07ab706c037"><td class="memItemLeft" align="right" valign="top"><a id="a5c368e4a12fcde66f08ea07ab706c037" name="a5c368e4a12fcde66f08ea07ab706c037"></a>
-typedef <a class="el" href="struct_eigen_1_1internal_1_1traits.html">traits</a>&lt; RhsCleaned &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>RhsTraits</b></td></tr>
+<tr class="memitem:a5c368e4a12fcde66f08ea07ab706c037"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_eigen_1_1internal_1_1traits.html">traits</a>&lt; <a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_product_3_01_lhs_00_01_rhs_00_01_option_01_4_01_4.html#a6fd90d8da68fa0e0877534a52aa0ad62">RhsCleaned</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_product_3_01_lhs_00_01_rhs_00_01_option_01_4_01_4.html#a5c368e4a12fcde66f08ea07ab706c037">RhsTraits</a></td></tr>
 <tr class="separator:a5c368e4a12fcde66f08ea07ab706c037"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a120ac65f1353062ed28220521a12cbb4"><td class="memItemLeft" align="right" valign="top"><a id="a120ac65f1353062ed28220521a12cbb4" name="a120ac65f1353062ed28220521a12cbb4"></a>
-typedef <a class="el" href="struct_eigen_1_1_matrix_xpr.html">MatrixXpr</a>&#160;</td><td class="memItemRight" valign="bottom"><b>XprKind</b></td></tr>
+<tr class="memitem:a120ac65f1353062ed28220521a12cbb4"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_eigen_1_1_matrix_xpr.html">MatrixXpr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_product_3_01_lhs_00_01_rhs_00_01_option_01_4_01_4.html#a120ac65f1353062ed28220521a12cbb4">XprKind</a></td></tr>
 <tr class="separator:a120ac65f1353062ed28220521a12cbb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9530ce7eba1d3c4f2d4119307438e7ca"><td class="memItemLeft" align="right" valign="top"><a id="a9530ce7eba1d3c4f2d4119307438e7ca" name="a9530ce7eba1d3c4f2d4119307438e7ca"></a>
-typedef <a class="el" href="struct_eigen_1_1_scalar_binary_op_traits.html">ScalarBinaryOpTraits</a>&lt; typenametraits&lt; LhsCleaned &gt;::Scalar, typenametraits&lt; RhsCleaned &gt;::Scalar &gt;::ReturnType&#160;</td><td class="memItemRight" valign="bottom"><b>Scalar</b></td></tr>
+<tr class="memitem:a9530ce7eba1d3c4f2d4119307438e7ca"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_eigen_1_1_scalar_binary_op_traits.html">ScalarBinaryOpTraits</a>&lt; typenametraits&lt; <a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_product_3_01_lhs_00_01_rhs_00_01_option_01_4_01_4.html#a6fd76e36f8afc58da6d2d5646b671807">LhsCleaned</a> &gt;::<a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_product_3_01_lhs_00_01_rhs_00_01_option_01_4_01_4.html#a9530ce7eba1d3c4f2d4119307438e7ca">Scalar</a>, typenametraits&lt; <a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_product_3_01_lhs_00_01_rhs_00_01_option_01_4_01_4.html#a6fd90d8da68fa0e0877534a52aa0ad62">RhsCleaned</a> &gt;::<a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_product_3_01_lhs_00_01_rhs_00_01_option_01_4_01_4.html#a9530ce7eba1d3c4f2d4119307438e7ca">Scalar</a> &gt;::ReturnType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_product_3_01_lhs_00_01_rhs_00_01_option_01_4_01_4.html#a9530ce7eba1d3c4f2d4119307438e7ca">Scalar</a></td></tr>
 <tr class="separator:a9530ce7eba1d3c4f2d4119307438e7ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6180591b57be098ea1f3e4695ef216f"><td class="memItemLeft" align="right" valign="top"><a id="ae6180591b57be098ea1f3e4695ef216f" name="ae6180591b57be098ea1f3e4695ef216f"></a>
-typedef <a class="el" href="struct_eigen_1_1internal_1_1product__promote__storage__type.html">product_promote_storage_type</a>&lt; typenameLhsTraits::StorageKind, typenameRhsTraits::StorageKind, <a class="el" href="struct_eigen_1_1internal_1_1product__type.html">internal::product_type</a>&lt; Lhs, Rhs &gt;::ret &gt;::ret&#160;</td><td class="memItemRight" valign="bottom"><b>StorageKind</b></td></tr>
+<tr class="memitem:ae6180591b57be098ea1f3e4695ef216f"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_eigen_1_1internal_1_1product__promote__storage__type.html">product_promote_storage_type</a>&lt; typenameLhsTraits::StorageKind, typenameRhsTraits::StorageKind, <a class="el" href="struct_eigen_1_1internal_1_1product__type.html">internal::product_type</a>&lt; Lhs, Rhs &gt;::ret &gt;::ret&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_product_3_01_lhs_00_01_rhs_00_01_option_01_4_01_4.html#ae6180591b57be098ea1f3e4695ef216f">StorageKind</a></td></tr>
 <tr class="separator:ae6180591b57be098ea1f3e4695ef216f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b025df521f21dee7b42fe4a528060ee"><td class="memItemLeft" align="right" valign="top"><a id="a1b025df521f21dee7b42fe4a528060ee" name="a1b025df521f21dee7b42fe4a528060ee"></a>
-typedef <a class="el" href="struct_eigen_1_1internal_1_1promote__index__type.html">promote_index_type</a>&lt; typenameLhsTraits::StorageIndex, typenameRhsTraits::StorageIndex &gt;::type&#160;</td><td class="memItemRight" valign="bottom"><b>StorageIndex</b></td></tr>
+<tr class="memitem:a1b025df521f21dee7b42fe4a528060ee"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_eigen_1_1internal_1_1promote__index__type.html">promote_index_type</a>&lt; typenameLhsTraits::StorageIndex, typenameRhsTraits::StorageIndex &gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_product_3_01_lhs_00_01_rhs_00_01_option_01_4_01_4.html#a1b025df521f21dee7b42fe4a528060ee">StorageIndex</a></td></tr>
 <tr class="separator:a1b025df521f21dee7b42fe4a528060ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a6fd76e36f8afc58da6d2d5646b671807" name="a6fd76e36f8afc58da6d2d5646b671807"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fd76e36f8afc58da6d2d5646b671807">&#9670;&nbsp;</a></span>LhsCleaned</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Lhs , typename Rhs , int Option&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="struct_eigen_1_1internal_1_1remove__all.html">remove_all</a>&lt;Lhs&gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a> <a class="el" href="struct_eigen_1_1internal_1_1traits.html">Eigen::internal::traits</a>&lt; <a class="el" href="class_eigen_1_1_product.html">Product</a>&lt; Lhs, Rhs, Option &gt; &gt;::<a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_product_3_01_lhs_00_01_rhs_00_01_option_01_4_01_4.html#a6fd76e36f8afc58da6d2d5646b671807">LhsCleaned</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2558de0f7d3f7e00f3e129406665a1dc" name="a2558de0f7d3f7e00f3e129406665a1dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2558de0f7d3f7e00f3e129406665a1dc">&#9670;&nbsp;</a></span>LhsTraits</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Lhs , typename Rhs , int Option&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="struct_eigen_1_1internal_1_1traits.html">traits</a>&lt;<a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_product_3_01_lhs_00_01_rhs_00_01_option_01_4_01_4.html#a6fd76e36f8afc58da6d2d5646b671807">LhsCleaned</a>&gt; <a class="el" href="struct_eigen_1_1internal_1_1traits.html">Eigen::internal::traits</a>&lt; <a class="el" href="class_eigen_1_1_product.html">Product</a>&lt; Lhs, Rhs, Option &gt; &gt;::<a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_product_3_01_lhs_00_01_rhs_00_01_option_01_4_01_4.html#a2558de0f7d3f7e00f3e129406665a1dc">LhsTraits</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6fd90d8da68fa0e0877534a52aa0ad62" name="a6fd90d8da68fa0e0877534a52aa0ad62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fd90d8da68fa0e0877534a52aa0ad62">&#9670;&nbsp;</a></span>RhsCleaned</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Lhs , typename Rhs , int Option&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="struct_eigen_1_1internal_1_1remove__all.html">remove_all</a>&lt;Rhs&gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a> <a class="el" href="struct_eigen_1_1internal_1_1traits.html">Eigen::internal::traits</a>&lt; <a class="el" href="class_eigen_1_1_product.html">Product</a>&lt; Lhs, Rhs, Option &gt; &gt;::<a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_product_3_01_lhs_00_01_rhs_00_01_option_01_4_01_4.html#a6fd90d8da68fa0e0877534a52aa0ad62">RhsCleaned</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5c368e4a12fcde66f08ea07ab706c037" name="a5c368e4a12fcde66f08ea07ab706c037"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c368e4a12fcde66f08ea07ab706c037">&#9670;&nbsp;</a></span>RhsTraits</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Lhs , typename Rhs , int Option&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="struct_eigen_1_1internal_1_1traits.html">traits</a>&lt;<a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_product_3_01_lhs_00_01_rhs_00_01_option_01_4_01_4.html#a6fd90d8da68fa0e0877534a52aa0ad62">RhsCleaned</a>&gt; <a class="el" href="struct_eigen_1_1internal_1_1traits.html">Eigen::internal::traits</a>&lt; <a class="el" href="class_eigen_1_1_product.html">Product</a>&lt; Lhs, Rhs, Option &gt; &gt;::<a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_product_3_01_lhs_00_01_rhs_00_01_option_01_4_01_4.html#a5c368e4a12fcde66f08ea07ab706c037">RhsTraits</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9530ce7eba1d3c4f2d4119307438e7ca" name="a9530ce7eba1d3c4f2d4119307438e7ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9530ce7eba1d3c4f2d4119307438e7ca">&#9670;&nbsp;</a></span>Scalar</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Lhs , typename Rhs , int Option&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="struct_eigen_1_1_scalar_binary_op_traits.html">ScalarBinaryOpTraits</a>&lt;typenametraits&lt;<a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_product_3_01_lhs_00_01_rhs_00_01_option_01_4_01_4.html#a6fd76e36f8afc58da6d2d5646b671807">LhsCleaned</a>&gt;::<a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_product_3_01_lhs_00_01_rhs_00_01_option_01_4_01_4.html#a9530ce7eba1d3c4f2d4119307438e7ca">Scalar</a>,typenametraits&lt;<a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_product_3_01_lhs_00_01_rhs_00_01_option_01_4_01_4.html#a6fd90d8da68fa0e0877534a52aa0ad62">RhsCleaned</a>&gt;::<a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_product_3_01_lhs_00_01_rhs_00_01_option_01_4_01_4.html#a9530ce7eba1d3c4f2d4119307438e7ca">Scalar</a>&gt;::ReturnType <a class="el" href="struct_eigen_1_1internal_1_1traits.html">Eigen::internal::traits</a>&lt; <a class="el" href="class_eigen_1_1_product.html">Product</a>&lt; Lhs, Rhs, Option &gt; &gt;::<a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_product_3_01_lhs_00_01_rhs_00_01_option_01_4_01_4.html#a9530ce7eba1d3c4f2d4119307438e7ca">Scalar</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1b025df521f21dee7b42fe4a528060ee" name="a1b025df521f21dee7b42fe4a528060ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b025df521f21dee7b42fe4a528060ee">&#9670;&nbsp;</a></span>StorageIndex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Lhs , typename Rhs , int Option&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="struct_eigen_1_1internal_1_1promote__index__type.html">promote_index_type</a>&lt;typenameLhsTraits::StorageIndex,typenameRhsTraits::StorageIndex&gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a> <a class="el" href="struct_eigen_1_1internal_1_1traits.html">Eigen::internal::traits</a>&lt; <a class="el" href="class_eigen_1_1_product.html">Product</a>&lt; Lhs, Rhs, Option &gt; &gt;::<a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_product_3_01_lhs_00_01_rhs_00_01_option_01_4_01_4.html#a1b025df521f21dee7b42fe4a528060ee">StorageIndex</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae6180591b57be098ea1f3e4695ef216f" name="ae6180591b57be098ea1f3e4695ef216f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6180591b57be098ea1f3e4695ef216f">&#9670;&nbsp;</a></span>StorageKind</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Lhs , typename Rhs , int Option&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="struct_eigen_1_1internal_1_1product__promote__storage__type.html">product_promote_storage_type</a>&lt;typenameLhsTraits::StorageKind,typenameRhsTraits::StorageKind,<a class="el" href="struct_eigen_1_1internal_1_1product__type.html">internal::product_type</a>&lt;Lhs,Rhs&gt;::ret&gt;::ret <a class="el" href="struct_eigen_1_1internal_1_1traits.html">Eigen::internal::traits</a>&lt; <a class="el" href="class_eigen_1_1_product.html">Product</a>&lt; Lhs, Rhs, Option &gt; &gt;::<a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_product_3_01_lhs_00_01_rhs_00_01_option_01_4_01_4.html#ae6180591b57be098ea1f3e4695ef216f">StorageKind</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a120ac65f1353062ed28220521a12cbb4" name="a120ac65f1353062ed28220521a12cbb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a120ac65f1353062ed28220521a12cbb4">&#9670;&nbsp;</a></span>XprKind</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Lhs , typename Rhs , int Option&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="struct_eigen_1_1_matrix_xpr.html">MatrixXpr</a> <a class="el" href="struct_eigen_1_1internal_1_1traits.html">Eigen::internal::traits</a>&lt; <a class="el" href="class_eigen_1_1_product.html">Product</a>&lt; Lhs, Rhs, Option &gt; &gt;::<a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_product_3_01_lhs_00_01_rhs_00_01_option_01_4_01_4.html#a120ac65f1353062ed28220521a12cbb4">XprKind</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a057a8dc2f19f10d550cd573c31725e03" name="a057a8dc2f19f10d550cd573c31725e03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a057a8dc2f19f10d550cd573c31725e03">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Lhs , typename Rhs , int Option&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a057a8dc2f19f10d550cd573c31725e03a0c86fbf463668c2174d73628e7f71269" name="a057a8dc2f19f10d550cd573c31725e03a0c86fbf463668c2174d73628e7f71269"></a>RowsAtCompileTime&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a057a8dc2f19f10d550cd573c31725e03a2471c4a250eb747025df4e9bd788ded7" name="a057a8dc2f19f10d550cd573c31725e03a2471c4a250eb747025df4e9bd788ded7"></a>ColsAtCompileTime&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a057a8dc2f19f10d550cd573c31725e03a2bc714111e81afbfedba763318ec6a26" name="a057a8dc2f19f10d550cd573c31725e03a2bc714111e81afbfedba763318ec6a26"></a>MaxRowsAtCompileTime&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a057a8dc2f19f10d550cd573c31725e03a8e984ef6938187f6860b9d5cb334a485" name="a057a8dc2f19f10d550cd573c31725e03a8e984ef6938187f6860b9d5cb334a485"></a>MaxColsAtCompileTime&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a057a8dc2f19f10d550cd573c31725e03a7a829eda6fe7b2daaf6bdd8a38bc684c" name="a057a8dc2f19f10d550cd573c31725e03a7a829eda6fe7b2daaf6bdd8a38bc684c"></a>InnerSize&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a057a8dc2f19f10d550cd573c31725e03a8fedff91fd8f342a7205e3a39771f994" name="a057a8dc2f19f10d550cd573c31725e03a8fedff91fd8f342a7205e3a39771f994"></a>Flags&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/eigeninclude/Eigen/src/Core/<a class="el" href="_product_8h_source.html">Product.h</a></li>
 </ul>
@@ -144,8 +292,8 @@ typedef <a class="el" href="struct_eigen_1_1internal_1_1promote__index__type.htm
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespace_eigen.html">Eigen</a></li><li class="navelem"><b>internal</b></li><li class="navelem"><a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_product_3_01_lhs_00_01_rhs_00_01_option_01_4_01_4.html">traits&lt; Product&lt; Lhs, Rhs, Option &gt; &gt;</a></li>
-    <li class="footer">Generated on Fri Oct 29 2021 07:12:27 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespace_eigen.html">Eigen</a></li><li class="navelem"><a class="el" href="namespace_eigen_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_product_3_01_lhs_00_01_rhs_00_01_option_01_4_01_4.html">traits&lt; Product&lt; Lhs, Rhs, Option &gt; &gt;</a></li>
+    <li class="footer">Generated on Fri Oct 29 2021 22:10:06 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

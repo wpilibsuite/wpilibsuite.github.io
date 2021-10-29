@@ -1,5 +1,6 @@
 var classfrc_1_1_command =
 [
+    [ "SubsystemSet", "classfrc_1_1_command.html#a5075af354b50e11610449f9e8597a883", null ],
     [ "Command", "classfrc_1_1_command.html#a5de92743e2afd524fc247a4aeeae0fce", null ],
     [ "Command", "classfrc_1_1_command.html#a0e28d6d5c363150c8d48a2f62ef1928e", null ],
     [ "Command", "classfrc_1_1_command.html#acf579e15bc6c70d4937858f0e839edf3", null ],
@@ -8,7 +9,13 @@ var classfrc_1_1_command =
     [ "Command", "classfrc_1_1_command.html#a3f7d56d4ff84094d5722611f436cbfdb", null ],
     [ "Command", "classfrc_1_1_command.html#a05c391a1955980bde9b9bd7d48d1899b", null ],
     [ "Command", "classfrc_1_1_command.html#a257567545abadd8178fe3a9eb64ba30a", null ],
+    [ "~Command", "classfrc_1_1_command.html#a661d545d207d3a81724721095fb5dcf3", null ],
+    [ "Command", "classfrc_1_1_command.html#aa13a1dbf63a412f3f6b825624d849a51", null ],
     [ "_Cancel", "classfrc_1_1_command.html#ad5180cb79824a93fa0d7d17a01eea162", null ],
+    [ "_End", "classfrc_1_1_command.html#a63be62c1db4059dfe14a4b9438df8863", null ],
+    [ "_Execute", "classfrc_1_1_command.html#a250dce83bcf4f0059da22b8ef3866ef1", null ],
+    [ "_Initialize", "classfrc_1_1_command.html#ab86a155464284948db333cda103491b8", null ],
+    [ "_Interrupted", "classfrc_1_1_command.html#a9bb6e2e64eababbf2ddaf62b16fbc4c5", null ],
     [ "AssertUnlocked", "classfrc_1_1_command.html#a5d1b3eacfbdeaa5c88417825a1e4c8d7", null ],
     [ "Cancel", "classfrc_1_1_command.html#af816dc206e90bdad6ae895fb5e5574c2", null ],
     [ "ClearRequirements", "classfrc_1_1_command.html#aa7c84392f88831e02a761615e7170457", null ],
@@ -31,6 +38,7 @@ var classfrc_1_1_command =
     [ "IsParented", "classfrc_1_1_command.html#ad66e97b0447e36aec3e4370a20fa5e4a", null ],
     [ "IsRunning", "classfrc_1_1_command.html#a5f6d91da111c81e554759c66b2aa5ee6", null ],
     [ "IsTimedOut", "classfrc_1_1_command.html#ae0a347b105cc5e7a0bff6ea07a9100ec", null ],
+    [ "operator=", "classfrc_1_1_command.html#a9ce0417d2e328e7592a48376281d35c0", null ],
     [ "Requires", "classfrc_1_1_command.html#ad5633c00c38027e8c978b40caf4fb9d5", null ],
     [ "Run", "classfrc_1_1_command.html#a6a57e379abe8b0a358342c6394be78e7", null ],
     [ "SetInterruptible", "classfrc_1_1_command.html#ab657ac42c885ee9e5b7fff126b732f2c", null ],
@@ -41,5 +49,8 @@ var classfrc_1_1_command =
     [ "SetTimeout", "classfrc_1_1_command.html#a89e8359a369764274a4fcede7f8853cd", null ],
     [ "Start", "classfrc_1_1_command.html#a0f4501af3516c00803f8540ac6c61175", null ],
     [ "TimeSinceInitialized", "classfrc_1_1_command.html#ab29c1b983b4843e5c167324b89d21c69", null ],
-    [ "WillRunWhenDisabled", "classfrc_1_1_command.html#a280811e6ef09e710203dd42ceae5b761", null ]
+    [ "WillRunWhenDisabled", "classfrc_1_1_command.html#a280811e6ef09e710203dd42ceae5b761", null ],
+    [ "CommandGroup", "classfrc_1_1_command.html#a74a5eec0a51871fda0db6a47a7eae304", null ],
+    [ "ConditionalCommand", "classfrc_1_1_command.html#aa41536bbe44d220ff3b5ad4fdbf780f0", null ],
+    [ "Scheduler", "classfrc_1_1_command.html#afb88c77ea5daaefa6c8fa6bc5b9aa5c1", null ]
 ];

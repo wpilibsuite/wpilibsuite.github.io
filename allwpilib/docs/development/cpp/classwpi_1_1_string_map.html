@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-31-ga939cd9</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-32-g2cb171f</span>
    </div>
   </td>
  </tr>
@@ -115,174 +115,694 @@ Inheritance diagram for wpi::StringMap&lt; ValueTy &gt;:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ae8978fa4e75d0ae4f346985454b56f67"><td class="memItemLeft" align="right" valign="top"><a id="ae8978fa4e75d0ae4f346985454b56f67" name="ae8978fa4e75d0ae4f346985454b56f67"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>MapEntryTy</b> = <a class="el" href="classwpi_1_1_string_map_entry.html">StringMapEntry</a>&lt; ValueTy &gt;</td></tr>
+<tr class="memitem:ae8978fa4e75d0ae4f346985454b56f67"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map.html#ae8978fa4e75d0ae4f346985454b56f67">MapEntryTy</a> = <a class="el" href="classwpi_1_1_string_map_entry.html">StringMapEntry</a>&lt; ValueTy &gt;</td></tr>
 <tr class="separator:ae8978fa4e75d0ae4f346985454b56f67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a9a9fb32b1d4efc77119db0bb441e1f"><td class="memItemLeft" align="right" valign="top"><a id="a5a9a9fb32b1d4efc77119db0bb441e1f" name="a5a9a9fb32b1d4efc77119db0bb441e1f"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>key_type</b> = const char *</td></tr>
+<tr class="memitem:a5a9a9fb32b1d4efc77119db0bb441e1f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map.html#a5a9a9fb32b1d4efc77119db0bb441e1f">key_type</a> = const char *</td></tr>
 <tr class="separator:a5a9a9fb32b1d4efc77119db0bb441e1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44b8ed9f353c01186a3d810861fe11f8"><td class="memItemLeft" align="right" valign="top"><a id="a44b8ed9f353c01186a3d810861fe11f8" name="a44b8ed9f353c01186a3d810861fe11f8"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>mapped_type</b> = ValueTy</td></tr>
+<tr class="memitem:a44b8ed9f353c01186a3d810861fe11f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map.html#a44b8ed9f353c01186a3d810861fe11f8">mapped_type</a> = ValueTy</td></tr>
 <tr class="separator:a44b8ed9f353c01186a3d810861fe11f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18e9f3f950f581f2cfccc7d9bb3f3f02"><td class="memItemLeft" align="right" valign="top"><a id="a18e9f3f950f581f2cfccc7d9bb3f3f02" name="a18e9f3f950f581f2cfccc7d9bb3f3f02"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>value_type</b> = <a class="el" href="classwpi_1_1_string_map_entry.html">StringMapEntry</a>&lt; ValueTy &gt;</td></tr>
+<tr class="memitem:a18e9f3f950f581f2cfccc7d9bb3f3f02"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map.html#a18e9f3f950f581f2cfccc7d9bb3f3f02">value_type</a> = <a class="el" href="classwpi_1_1_string_map_entry.html">StringMapEntry</a>&lt; ValueTy &gt;</td></tr>
 <tr class="separator:a18e9f3f950f581f2cfccc7d9bb3f3f02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a5c64436055efff631a026914c1da2d"><td class="memItemLeft" align="right" valign="top"><a id="a7a5c64436055efff631a026914c1da2d" name="a7a5c64436055efff631a026914c1da2d"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>size_type</b> = size_t</td></tr>
+<tr class="memitem:a7a5c64436055efff631a026914c1da2d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map.html#a7a5c64436055efff631a026914c1da2d">size_type</a> = size_t</td></tr>
 <tr class="separator:a7a5c64436055efff631a026914c1da2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a5e4213ded1db6d8202490405f2cc6b"><td class="memItemLeft" align="right" valign="top"><a id="a2a5e4213ded1db6d8202490405f2cc6b" name="a2a5e4213ded1db6d8202490405f2cc6b"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>const_iterator</b> = <a class="el" href="classwpi_1_1_string_map_const_iterator.html">StringMapConstIterator</a>&lt; ValueTy &gt;</td></tr>
+<tr class="memitem:a2a5e4213ded1db6d8202490405f2cc6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map.html#a2a5e4213ded1db6d8202490405f2cc6b">const_iterator</a> = <a class="el" href="classwpi_1_1_string_map_const_iterator.html">StringMapConstIterator</a>&lt; ValueTy &gt;</td></tr>
 <tr class="separator:a2a5e4213ded1db6d8202490405f2cc6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cf0d712be4485aa2bc6d2983375f250"><td class="memItemLeft" align="right" valign="top"><a id="a3cf0d712be4485aa2bc6d2983375f250" name="a3cf0d712be4485aa2bc6d2983375f250"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>iterator</b> = <a class="el" href="classwpi_1_1_string_map_iterator.html">StringMapIterator</a>&lt; ValueTy &gt;</td></tr>
+<tr class="memitem:a3cf0d712be4485aa2bc6d2983375f250"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map.html#a3cf0d712be4485aa2bc6d2983375f250">iterator</a> = <a class="el" href="classwpi_1_1_string_map_iterator.html">StringMapIterator</a>&lt; ValueTy &gt;</td></tr>
 <tr class="separator:a3cf0d712be4485aa2bc6d2983375f250"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a11c5e95da0d4587da151d02c6a470e6b"><td class="memItemLeft" align="right" valign="top"><a id="a11c5e95da0d4587da151d02c6a470e6b" name="a11c5e95da0d4587da151d02c6a470e6b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>StringMap</b> (unsigned InitialSize)</td></tr>
+<tr class="memitem:a8923877df3fa8730d876991ec57a6846"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map.html#a8923877df3fa8730d876991ec57a6846">StringMap</a> ()</td></tr>
+<tr class="separator:a8923877df3fa8730d876991ec57a6846"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11c5e95da0d4587da151d02c6a470e6b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map.html#a11c5e95da0d4587da151d02c6a470e6b">StringMap</a> (unsigned InitialSize)</td></tr>
 <tr class="separator:a11c5e95da0d4587da151d02c6a470e6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a496f1ae5f09a6a93e0cb87e8954b9b28"><td class="memItemLeft" align="right" valign="top"><a id="a496f1ae5f09a6a93e0cb87e8954b9b28" name="a496f1ae5f09a6a93e0cb87e8954b9b28"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>StringMap</b> (std::initializer_list&lt; std::pair&lt; std::string_view, ValueTy &gt; &gt; List)</td></tr>
+<tr class="memitem:a496f1ae5f09a6a93e0cb87e8954b9b28"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map.html#a496f1ae5f09a6a93e0cb87e8954b9b28">StringMap</a> (std::initializer_list&lt; std::pair&lt; <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>, ValueTy &gt; &gt; List)</td></tr>
 <tr class="separator:a496f1ae5f09a6a93e0cb87e8954b9b28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fc9f401847d41e998793e12f8a753e6"><td class="memItemLeft" align="right" valign="top"><a id="a8fc9f401847d41e998793e12f8a753e6" name="a8fc9f401847d41e998793e12f8a753e6"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>StringMap</b> (<a class="el" href="classwpi_1_1_string_map.html">StringMap</a> &amp;&amp;RHS)</td></tr>
+<tr class="memitem:a8fc9f401847d41e998793e12f8a753e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map.html#a8fc9f401847d41e998793e12f8a753e6">StringMap</a> (<a class="el" href="classwpi_1_1_string_map.html">StringMap</a> &amp;&amp;RHS)</td></tr>
 <tr class="separator:a8fc9f401847d41e998793e12f8a753e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a415d4019bc639168683acce20b84f449"><td class="memItemLeft" align="right" valign="top"><a id="a415d4019bc639168683acce20b84f449" name="a415d4019bc639168683acce20b84f449"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>StringMap</b> (const <a class="el" href="classwpi_1_1_string_map.html">StringMap</a> &amp;RHS)</td></tr>
+<tr class="memitem:a415d4019bc639168683acce20b84f449"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map.html#a415d4019bc639168683acce20b84f449">StringMap</a> (const <a class="el" href="classwpi_1_1_string_map.html">StringMap</a> &amp;RHS)</td></tr>
 <tr class="separator:a415d4019bc639168683acce20b84f449"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af91a3bf535ea8a17dafbc1bf5495243e"><td class="memItemLeft" align="right" valign="top"><a id="af91a3bf535ea8a17dafbc1bf5495243e" name="af91a3bf535ea8a17dafbc1bf5495243e"></a>
-<a class="el" href="classwpi_1_1_string_map.html">StringMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classwpi_1_1_string_map.html">StringMap</a> RHS)</td></tr>
+<tr class="memitem:af91a3bf535ea8a17dafbc1bf5495243e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1_string_map.html">StringMap</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map.html#af91a3bf535ea8a17dafbc1bf5495243e">operator=</a> (<a class="el" href="classwpi_1_1_string_map.html">StringMap</a> RHS)</td></tr>
 <tr class="separator:af91a3bf535ea8a17dafbc1bf5495243e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab52125385777a1fabf363e5ef56a3266"><td class="memItemLeft" align="right" valign="top"><a id="ab52125385777a1fabf363e5ef56a3266" name="ab52125385777a1fabf363e5ef56a3266"></a>
-<a class="el" href="classwpi_1_1_string_map_iterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> ()</td></tr>
+<tr class="memitem:abb8037327c0f233d84905a4fa4f6f303"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map.html#abb8037327c0f233d84905a4fa4f6f303">~StringMap</a> ()</td></tr>
+<tr class="separator:abb8037327c0f233d84905a4fa4f6f303"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab52125385777a1fabf363e5ef56a3266"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1_string_map.html#a3cf0d712be4485aa2bc6d2983375f250">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map.html#ab52125385777a1fabf363e5ef56a3266">begin</a> ()</td></tr>
 <tr class="separator:ab52125385777a1fabf363e5ef56a3266"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f99366cb7947ec892e466c38e216203"><td class="memItemLeft" align="right" valign="top"><a id="a6f99366cb7947ec892e466c38e216203" name="a6f99366cb7947ec892e466c38e216203"></a>
-<a class="el" href="classwpi_1_1_string_map_iterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> ()</td></tr>
+<tr class="memitem:a6f99366cb7947ec892e466c38e216203"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1_string_map.html#a3cf0d712be4485aa2bc6d2983375f250">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map.html#a6f99366cb7947ec892e466c38e216203">end</a> ()</td></tr>
 <tr class="separator:a6f99366cb7947ec892e466c38e216203"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af33388ba0e5004d0ce00ad7f910c266b"><td class="memItemLeft" align="right" valign="top"><a id="af33388ba0e5004d0ce00ad7f910c266b" name="af33388ba0e5004d0ce00ad7f910c266b"></a>
-<a class="el" href="classwpi_1_1_string_map_const_iterator.html">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>begin</b> () const</td></tr>
+<tr class="memitem:af33388ba0e5004d0ce00ad7f910c266b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1_string_map.html#a2a5e4213ded1db6d8202490405f2cc6b">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map.html#af33388ba0e5004d0ce00ad7f910c266b">begin</a> () const</td></tr>
 <tr class="separator:af33388ba0e5004d0ce00ad7f910c266b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56b4a10806281bf675cbc39cc163c788"><td class="memItemLeft" align="right" valign="top"><a id="a56b4a10806281bf675cbc39cc163c788" name="a56b4a10806281bf675cbc39cc163c788"></a>
-<a class="el" href="classwpi_1_1_string_map_const_iterator.html">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>end</b> () const</td></tr>
+<tr class="memitem:a56b4a10806281bf675cbc39cc163c788"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1_string_map.html#a2a5e4213ded1db6d8202490405f2cc6b">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map.html#a56b4a10806281bf675cbc39cc163c788">end</a> () const</td></tr>
 <tr class="separator:a56b4a10806281bf675cbc39cc163c788"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7e55c87d952c4256aa4a4bba18621f2"><td class="memItemLeft" align="right" valign="top"><a id="ad7e55c87d952c4256aa4a4bba18621f2" name="ad7e55c87d952c4256aa4a4bba18621f2"></a>
-<a class="el" href="classwpi_1_1iterator__range.html">iterator_range</a>&lt; <a class="el" href="classwpi_1_1_string_map_key_iterator.html">StringMapKeyIterator</a>&lt; ValueTy &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>keys</b> () const</td></tr>
+<tr class="memitem:ad7e55c87d952c4256aa4a4bba18621f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1iterator__range.html">iterator_range</a>&lt; <a class="el" href="classwpi_1_1_string_map_key_iterator.html">StringMapKeyIterator</a>&lt; ValueTy &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map.html#ad7e55c87d952c4256aa4a4bba18621f2">keys</a> () const</td></tr>
 <tr class="separator:ad7e55c87d952c4256aa4a4bba18621f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa22876640c093203d9b555ed6a2280e2"><td class="memItemLeft" align="right" valign="top"><a id="aa22876640c093203d9b555ed6a2280e2" name="aa22876640c093203d9b555ed6a2280e2"></a>
-<a class="el" href="classwpi_1_1_string_map_iterator.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>find</b> (std::string_view Key)</td></tr>
+<tr class="memitem:aa22876640c093203d9b555ed6a2280e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1_string_map.html#a3cf0d712be4485aa2bc6d2983375f250">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map.html#aa22876640c093203d9b555ed6a2280e2">find</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> Key)</td></tr>
 <tr class="separator:aa22876640c093203d9b555ed6a2280e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d9235b24077229e0b3570e2d4ff6460"><td class="memItemLeft" align="right" valign="top"><a id="a3d9235b24077229e0b3570e2d4ff6460" name="a3d9235b24077229e0b3570e2d4ff6460"></a>
-<a class="el" href="classwpi_1_1_string_map_const_iterator.html">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>find</b> (std::string_view Key) const</td></tr>
+<tr class="memitem:a3d9235b24077229e0b3570e2d4ff6460"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1_string_map.html#a2a5e4213ded1db6d8202490405f2cc6b">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map.html#a3d9235b24077229e0b3570e2d4ff6460">find</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> Key) const</td></tr>
 <tr class="separator:a3d9235b24077229e0b3570e2d4ff6460"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23d970e8c58667f3810a714a3f03df83"><td class="memItemLeft" align="right" valign="top"><a id="a23d970e8c58667f3810a714a3f03df83" name="a23d970e8c58667f3810a714a3f03df83"></a>
-ValueTy&#160;</td><td class="memItemRight" valign="bottom"><b>lookup</b> (std::string_view Key) const</td></tr>
-<tr class="memdesc:a23d970e8c58667f3810a714a3f03df83"><td class="mdescLeft">&#160;</td><td class="mdescRight">lookup - Return the entry for the specified key, or a default constructed value if no such entry exists. <br /></td></tr>
+<tr class="memitem:a23d970e8c58667f3810a714a3f03df83"><td class="memItemLeft" align="right" valign="top">ValueTy&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map.html#a23d970e8c58667f3810a714a3f03df83">lookup</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> Key) const</td></tr>
+<tr class="memdesc:a23d970e8c58667f3810a714a3f03df83"><td class="mdescLeft">&#160;</td><td class="mdescRight">lookup - Return the entry for the specified key, or a default constructed value if no such entry exists.  <a href="classwpi_1_1_string_map.html#a23d970e8c58667f3810a714a3f03df83">More...</a><br /></td></tr>
 <tr class="separator:a23d970e8c58667f3810a714a3f03df83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a485bb2c284481d883271893db21ee15f"><td class="memItemLeft" align="right" valign="top"><a id="a485bb2c284481d883271893db21ee15f" name="a485bb2c284481d883271893db21ee15f"></a>
-ValueTy &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (std::string_view Key)</td></tr>
-<tr class="memdesc:a485bb2c284481d883271893db21ee15f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lookup the ValueTy for the <code>Key</code>, or create a default constructed value if the key is not in the map. <br /></td></tr>
+<tr class="memitem:a485bb2c284481d883271893db21ee15f"><td class="memItemLeft" align="right" valign="top">ValueTy &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map.html#a485bb2c284481d883271893db21ee15f">operator[]</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> Key)</td></tr>
+<tr class="memdesc:a485bb2c284481d883271893db21ee15f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lookup the ValueTy for the <code>Key</code>, or create a default constructed value if the key is not in the map.  <a href="classwpi_1_1_string_map.html#a485bb2c284481d883271893db21ee15f">More...</a><br /></td></tr>
 <tr class="separator:a485bb2c284481d883271893db21ee15f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a3857363aa67a624573601a708c29b0"><td class="memItemLeft" align="right" valign="top"><a id="a0a3857363aa67a624573601a708c29b0" name="a0a3857363aa67a624573601a708c29b0"></a>
-size_type&#160;</td><td class="memItemRight" valign="bottom"><b>count</b> (std::string_view Key) const</td></tr>
-<tr class="memdesc:a0a3857363aa67a624573601a708c29b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">count - Return 1 if the element is in the map, 0 otherwise. <br /></td></tr>
+<tr class="memitem:a0a3857363aa67a624573601a708c29b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1_string_map.html#a7a5c64436055efff631a026914c1da2d">size_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map.html#a0a3857363aa67a624573601a708c29b0">count</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> Key) const</td></tr>
+<tr class="memdesc:a0a3857363aa67a624573601a708c29b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">count - Return 1 if the element is in the map, 0 otherwise.  <a href="classwpi_1_1_string_map.html#a0a3857363aa67a624573601a708c29b0">More...</a><br /></td></tr>
 <tr class="separator:a0a3857363aa67a624573601a708c29b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4758ddddb13fcc2799785ef68ee3e104"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map.html#a4758ddddb13fcc2799785ef68ee3e104">insert</a> (<a class="el" href="classwpi_1_1_string_map_entry.html">MapEntryTy</a> *KeyValue)</td></tr>
+<tr class="memitem:a4758ddddb13fcc2799785ef68ee3e104"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map.html#a4758ddddb13fcc2799785ef68ee3e104">insert</a> (<a class="el" href="classwpi_1_1_string_map.html#ae8978fa4e75d0ae4f346985454b56f67">MapEntryTy</a> *KeyValue)</td></tr>
 <tr class="memdesc:a4758ddddb13fcc2799785ef68ee3e104"><td class="mdescLeft">&#160;</td><td class="mdescRight">insert - Insert the specified key/value pair into the map.  <a href="classwpi_1_1_string_map.html#a4758ddddb13fcc2799785ef68ee3e104">More...</a><br /></td></tr>
 <tr class="separator:a4758ddddb13fcc2799785ef68ee3e104"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:addec4b710b668a15aca12732466aa7c4"><td class="memItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="classwpi_1_1_string_map_iterator.html">iterator</a>, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map.html#addec4b710b668a15aca12732466aa7c4">insert</a> (std::pair&lt; std::string_view, ValueTy &gt; KV)</td></tr>
+<tr class="memitem:addec4b710b668a15aca12732466aa7c4"><td class="memItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="classwpi_1_1_string_map.html#a3cf0d712be4485aa2bc6d2983375f250">iterator</a>, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map.html#addec4b710b668a15aca12732466aa7c4">insert</a> (std::pair&lt; <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>, ValueTy &gt; KV)</td></tr>
 <tr class="memdesc:addec4b710b668a15aca12732466aa7c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">insert - Inserts the specified key/value pair into the map if the key isn't already in the map.  <a href="classwpi_1_1_string_map.html#addec4b710b668a15aca12732466aa7c4">More...</a><br /></td></tr>
 <tr class="separator:addec4b710b668a15aca12732466aa7c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f0689a782174e4f60707df8cce57979"><td class="memTemplParams" colspan="2">template&lt;typename... ArgsTy&gt; </td></tr>
-<tr class="memitem:a2f0689a782174e4f60707df8cce57979"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="classwpi_1_1_string_map_iterator.html">iterator</a>, bool &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map.html#a2f0689a782174e4f60707df8cce57979">try_emplace</a> (std::string_view Key, ArgsTy &amp;&amp;... Args)</td></tr>
+<tr class="memitem:a2f0689a782174e4f60707df8cce57979"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="classwpi_1_1_string_map.html#a3cf0d712be4485aa2bc6d2983375f250">iterator</a>, bool &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map.html#a2f0689a782174e4f60707df8cce57979">try_emplace</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> Key, ArgsTy &amp;&amp;... Args)</td></tr>
 <tr class="memdesc:a2f0689a782174e4f60707df8cce57979"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emplace a new element for the specified key into the map if the key isn't already in the map.  <a href="classwpi_1_1_string_map.html#a2f0689a782174e4f60707df8cce57979">More...</a><br /></td></tr>
 <tr class="separator:a2f0689a782174e4f60707df8cce57979"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d8b0c604b9d8910a7d9a63a7d55d248"><td class="memItemLeft" align="right" valign="top"><a id="a3d8b0c604b9d8910a7d9a63a7d55d248" name="a3d8b0c604b9d8910a7d9a63a7d55d248"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> ()</td></tr>
+<tr class="memitem:a3d8b0c604b9d8910a7d9a63a7d55d248"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map.html#a3d8b0c604b9d8910a7d9a63a7d55d248">clear</a> ()</td></tr>
 <tr class="separator:a3d8b0c604b9d8910a7d9a63a7d55d248"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa20c773a80ea040dd167526918bfec2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map.html#aa20c773a80ea040dd167526918bfec2f">remove</a> (<a class="el" href="classwpi_1_1_string_map_entry.html">MapEntryTy</a> *KeyValue)</td></tr>
+<tr class="memitem:aa20c773a80ea040dd167526918bfec2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map.html#aa20c773a80ea040dd167526918bfec2f">remove</a> (<a class="el" href="classwpi_1_1_string_map.html#ae8978fa4e75d0ae4f346985454b56f67">MapEntryTy</a> *KeyValue)</td></tr>
 <tr class="memdesc:aa20c773a80ea040dd167526918bfec2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove - Remove the specified key/value pair from the map, but do not erase it.  <a href="classwpi_1_1_string_map.html#aa20c773a80ea040dd167526918bfec2f">More...</a><br /></td></tr>
 <tr class="separator:aa20c773a80ea040dd167526918bfec2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8d2dddf99f7e371e159150b4f96d1a8"><td class="memItemLeft" align="right" valign="top"><a id="ac8d2dddf99f7e371e159150b4f96d1a8" name="ac8d2dddf99f7e371e159150b4f96d1a8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>erase</b> (<a class="el" href="classwpi_1_1_string_map_iterator.html">iterator</a> I)</td></tr>
+<tr class="memitem:ac8d2dddf99f7e371e159150b4f96d1a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map.html#ac8d2dddf99f7e371e159150b4f96d1a8">erase</a> (<a class="el" href="classwpi_1_1_string_map.html#a3cf0d712be4485aa2bc6d2983375f250">iterator</a> I)</td></tr>
 <tr class="separator:ac8d2dddf99f7e371e159150b4f96d1a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8bd27eb9b59a8ba7cdfd0ff9e63a713"><td class="memItemLeft" align="right" valign="top"><a id="ae8bd27eb9b59a8ba7cdfd0ff9e63a713" name="ae8bd27eb9b59a8ba7cdfd0ff9e63a713"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>erase</b> (std::string_view Key)</td></tr>
+<tr class="memitem:ae8bd27eb9b59a8ba7cdfd0ff9e63a713"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map.html#ae8bd27eb9b59a8ba7cdfd0ff9e63a713">erase</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> Key)</td></tr>
 <tr class="separator:ae8bd27eb9b59a8ba7cdfd0ff9e63a713"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classwpi_1_1_string_map_impl"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classwpi_1_1_string_map_impl')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classwpi_1_1_string_map_impl.html">wpi::StringMapImpl</a></td></tr>
-<tr class="memitem:af12b401894d2fc1ca2259bb75107492a inherit pub_methods_classwpi_1_1_string_map_impl"><td class="memItemLeft" align="right" valign="top"><a id="af12b401894d2fc1ca2259bb75107492a" name="af12b401894d2fc1ca2259bb75107492a"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>getNumBuckets</b> () const</td></tr>
+<tr class="memitem:af12b401894d2fc1ca2259bb75107492a inherit pub_methods_classwpi_1_1_string_map_impl"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map_impl.html#af12b401894d2fc1ca2259bb75107492a">getNumBuckets</a> () const</td></tr>
 <tr class="separator:af12b401894d2fc1ca2259bb75107492a inherit pub_methods_classwpi_1_1_string_map_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fff70d9d1eab1a7f179dd71b4a1e2eb inherit pub_methods_classwpi_1_1_string_map_impl"><td class="memItemLeft" align="right" valign="top"><a id="a0fff70d9d1eab1a7f179dd71b4a1e2eb" name="a0fff70d9d1eab1a7f179dd71b4a1e2eb"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>getNumItems</b> () const</td></tr>
+<tr class="memitem:a0fff70d9d1eab1a7f179dd71b4a1e2eb inherit pub_methods_classwpi_1_1_string_map_impl"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map_impl.html#a0fff70d9d1eab1a7f179dd71b4a1e2eb">getNumItems</a> () const</td></tr>
 <tr class="separator:a0fff70d9d1eab1a7f179dd71b4a1e2eb inherit pub_methods_classwpi_1_1_string_map_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9729d7bb6b610da06891f2a57e82b3b2 inherit pub_methods_classwpi_1_1_string_map_impl"><td class="memItemLeft" align="right" valign="top"><a id="a9729d7bb6b610da06891f2a57e82b3b2" name="a9729d7bb6b610da06891f2a57e82b3b2"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>empty</b> () const</td></tr>
+<tr class="memitem:a9729d7bb6b610da06891f2a57e82b3b2 inherit pub_methods_classwpi_1_1_string_map_impl"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map_impl.html#a9729d7bb6b610da06891f2a57e82b3b2">empty</a> () const</td></tr>
 <tr class="separator:a9729d7bb6b610da06891f2a57e82b3b2 inherit pub_methods_classwpi_1_1_string_map_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad84d49c2d000c4cc81a323888d9d160c inherit pub_methods_classwpi_1_1_string_map_impl"><td class="memItemLeft" align="right" valign="top"><a id="ad84d49c2d000c4cc81a323888d9d160c" name="ad84d49c2d000c4cc81a323888d9d160c"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () const</td></tr>
+<tr class="memitem:ad84d49c2d000c4cc81a323888d9d160c inherit pub_methods_classwpi_1_1_string_map_impl"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map_impl.html#ad84d49c2d000c4cc81a323888d9d160c">size</a> () const</td></tr>
 <tr class="separator:ad84d49c2d000c4cc81a323888d9d160c inherit pub_methods_classwpi_1_1_string_map_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf1d39fa63b8fa604a84e44802c30f9d inherit pub_methods_classwpi_1_1_string_map_impl"><td class="memItemLeft" align="right" valign="top"><a id="abf1d39fa63b8fa604a84e44802c30f9d" name="abf1d39fa63b8fa604a84e44802c30f9d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="el" href="classwpi_1_1_string_map_impl.html">StringMapImpl</a> &amp;Other)</td></tr>
+<tr class="memitem:abf1d39fa63b8fa604a84e44802c30f9d inherit pub_methods_classwpi_1_1_string_map_impl"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map_impl.html#abf1d39fa63b8fa604a84e44802c30f9d">swap</a> (<a class="el" href="classwpi_1_1_string_map_impl.html">StringMapImpl</a> &amp;Other)</td></tr>
 <tr class="separator:abf1d39fa63b8fa604a84e44802c30f9d inherit pub_methods_classwpi_1_1_string_map_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_static_methods_classwpi_1_1_string_map_impl"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classwpi_1_1_string_map_impl')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classwpi_1_1_string_map_impl.html">wpi::StringMapImpl</a></td></tr>
-<tr class="memitem:ae010d14168febc2b4ca2a17ae1526aff inherit pub_static_methods_classwpi_1_1_string_map_impl"><td class="memItemLeft" align="right" valign="top"><a id="ae010d14168febc2b4ca2a17ae1526aff" name="ae010d14168febc2b4ca2a17ae1526aff"></a>
-static <a class="el" href="classwpi_1_1_string_map_entry_base.html">StringMapEntryBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getTombstoneVal</b> ()</td></tr>
+<tr class="memitem:ae010d14168febc2b4ca2a17ae1526aff inherit pub_static_methods_classwpi_1_1_string_map_impl"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classwpi_1_1_string_map_entry_base.html">StringMapEntryBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map_impl.html#ae010d14168febc2b4ca2a17ae1526aff">getTombstoneVal</a> ()</td></tr>
 <tr class="separator:ae010d14168febc2b4ca2a17ae1526aff inherit pub_static_methods_classwpi_1_1_string_map_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classwpi_1_1_string_map_impl"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classwpi_1_1_string_map_impl')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classwpi_1_1_string_map_impl.html">wpi::StringMapImpl</a></td></tr>
-<tr class="memitem:a44a34859394e7a2da23193933427a599 inherit pro_methods_classwpi_1_1_string_map_impl"><td class="memItemLeft" align="right" valign="top"><a id="a44a34859394e7a2da23193933427a599" name="a44a34859394e7a2da23193933427a599"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>StringMapImpl</b> (unsigned itemSize)</td></tr>
+<tr class="memitem:a44a34859394e7a2da23193933427a599 inherit pro_methods_classwpi_1_1_string_map_impl"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map_impl.html#a44a34859394e7a2da23193933427a599">StringMapImpl</a> (unsigned itemSize)</td></tr>
 <tr class="separator:a44a34859394e7a2da23193933427a599 inherit pro_methods_classwpi_1_1_string_map_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55b5b1473ba11894f4418219fe118161 inherit pro_methods_classwpi_1_1_string_map_impl"><td class="memItemLeft" align="right" valign="top"><a id="a55b5b1473ba11894f4418219fe118161" name="a55b5b1473ba11894f4418219fe118161"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>StringMapImpl</b> (<a class="el" href="classwpi_1_1_string_map_impl.html">StringMapImpl</a> &amp;&amp;RHS) noexcept</td></tr>
+<tr class="memitem:a55b5b1473ba11894f4418219fe118161 inherit pro_methods_classwpi_1_1_string_map_impl"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map_impl.html#a55b5b1473ba11894f4418219fe118161">StringMapImpl</a> (<a class="el" href="classwpi_1_1_string_map_impl.html">StringMapImpl</a> &amp;&amp;RHS) noexcept</td></tr>
 <tr class="separator:a55b5b1473ba11894f4418219fe118161 inherit pro_methods_classwpi_1_1_string_map_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b98f9bf71fb71cf06047abcfc83b8e6 inherit pro_methods_classwpi_1_1_string_map_impl"><td class="memItemLeft" align="right" valign="top"><a id="a0b98f9bf71fb71cf06047abcfc83b8e6" name="a0b98f9bf71fb71cf06047abcfc83b8e6"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>StringMapImpl</b> (unsigned InitSize, unsigned ItemSize)</td></tr>
+<tr class="memitem:a0b98f9bf71fb71cf06047abcfc83b8e6 inherit pro_methods_classwpi_1_1_string_map_impl"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map_impl.html#a0b98f9bf71fb71cf06047abcfc83b8e6">StringMapImpl</a> (unsigned InitSize, unsigned <a class="el" href="classwpi_1_1_string_map_impl.html#a80e7e40f6cb0d279259e1bfcf35f311f">ItemSize</a>)</td></tr>
 <tr class="separator:a0b98f9bf71fb71cf06047abcfc83b8e6 inherit pro_methods_classwpi_1_1_string_map_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f835d2ac20a25dc58ff82e2b29ab919 inherit pro_methods_classwpi_1_1_string_map_impl"><td class="memItemLeft" align="right" valign="top"><a id="a7f835d2ac20a25dc58ff82e2b29ab919" name="a7f835d2ac20a25dc58ff82e2b29ab919"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>RehashTable</b> (unsigned BucketNo=0)</td></tr>
+<tr class="memitem:a7f835d2ac20a25dc58ff82e2b29ab919 inherit pro_methods_classwpi_1_1_string_map_impl"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map_impl.html#a7f835d2ac20a25dc58ff82e2b29ab919">RehashTable</a> (unsigned BucketNo=0)</td></tr>
 <tr class="separator:a7f835d2ac20a25dc58ff82e2b29ab919 inherit pro_methods_classwpi_1_1_string_map_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c5bea908ffaeaf17711b1c3864e8c8a inherit pro_methods_classwpi_1_1_string_map_impl"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map_impl.html#a7c5bea908ffaeaf17711b1c3864e8c8a">LookupBucketFor</a> (std::string_view Key)</td></tr>
+<tr class="memitem:a7c5bea908ffaeaf17711b1c3864e8c8a inherit pro_methods_classwpi_1_1_string_map_impl"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map_impl.html#a7c5bea908ffaeaf17711b1c3864e8c8a">LookupBucketFor</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> Key)</td></tr>
 <tr class="memdesc:a7c5bea908ffaeaf17711b1c3864e8c8a inherit pro_methods_classwpi_1_1_string_map_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">LookupBucketFor - Look up the bucket that the specified string should end up in.  <a href="classwpi_1_1_string_map_impl.html#a7c5bea908ffaeaf17711b1c3864e8c8a">More...</a><br /></td></tr>
 <tr class="separator:a7c5bea908ffaeaf17711b1c3864e8c8a inherit pro_methods_classwpi_1_1_string_map_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65555b392a351e5ada97641a186d339d inherit pro_methods_classwpi_1_1_string_map_impl"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map_impl.html#a65555b392a351e5ada97641a186d339d">FindKey</a> (std::string_view Key) const</td></tr>
+<tr class="memitem:a65555b392a351e5ada97641a186d339d inherit pro_methods_classwpi_1_1_string_map_impl"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map_impl.html#a65555b392a351e5ada97641a186d339d">FindKey</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> Key) const</td></tr>
 <tr class="memdesc:a65555b392a351e5ada97641a186d339d inherit pro_methods_classwpi_1_1_string_map_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">FindKey - Look up the bucket that contains the specified key.  <a href="classwpi_1_1_string_map_impl.html#a65555b392a351e5ada97641a186d339d">More...</a><br /></td></tr>
 <tr class="separator:a65555b392a351e5ada97641a186d339d inherit pro_methods_classwpi_1_1_string_map_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae27f17956939c49c4fc02714e954661b inherit pro_methods_classwpi_1_1_string_map_impl"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map_impl.html#ae27f17956939c49c4fc02714e954661b">RemoveKey</a> (<a class="el" href="classwpi_1_1_string_map_entry_base.html">StringMapEntryBase</a> *V)</td></tr>
 <tr class="memdesc:ae27f17956939c49c4fc02714e954661b inherit pro_methods_classwpi_1_1_string_map_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">RemoveKey - Remove the specified <a class="el" href="classwpi_1_1_string_map_entry.html" title="StringMapEntry - This is used to represent one value that is inserted into a StringMap.">StringMapEntry</a> from the table, but do not delete it.  <a href="classwpi_1_1_string_map_impl.html#ae27f17956939c49c4fc02714e954661b">More...</a><br /></td></tr>
 <tr class="separator:ae27f17956939c49c4fc02714e954661b inherit pro_methods_classwpi_1_1_string_map_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0d0254818a483d4625553e5546e8283 inherit pro_methods_classwpi_1_1_string_map_impl"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1_string_map_entry_base.html">StringMapEntryBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map_impl.html#ad0d0254818a483d4625553e5546e8283">RemoveKey</a> (std::string_view Key)</td></tr>
+<tr class="memitem:ad0d0254818a483d4625553e5546e8283 inherit pro_methods_classwpi_1_1_string_map_impl"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1_string_map_entry_base.html">StringMapEntryBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map_impl.html#ad0d0254818a483d4625553e5546e8283">RemoveKey</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> Key)</td></tr>
 <tr class="memdesc:ad0d0254818a483d4625553e5546e8283 inherit pro_methods_classwpi_1_1_string_map_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">RemoveKey - Remove the <a class="el" href="classwpi_1_1_string_map_entry.html" title="StringMapEntry - This is used to represent one value that is inserted into a StringMap.">StringMapEntry</a> for the specified key from the table, returning it.  <a href="classwpi_1_1_string_map_impl.html#ad0d0254818a483d4625553e5546e8283">More...</a><br /></td></tr>
 <tr class="separator:ad0d0254818a483d4625553e5546e8283 inherit pro_methods_classwpi_1_1_string_map_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74cb0b18356cd3e10f345ddd200c14a6 inherit pro_methods_classwpi_1_1_string_map_impl"><td class="memItemLeft" align="right" valign="top"><a id="a74cb0b18356cd3e10f345ddd200c14a6" name="a74cb0b18356cd3e10f345ddd200c14a6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (unsigned Size)</td></tr>
-<tr class="memdesc:a74cb0b18356cd3e10f345ddd200c14a6 inherit pro_methods_classwpi_1_1_string_map_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate the table with the specified number of buckets and otherwise setup the map as empty. <br /></td></tr>
+<tr class="memitem:a74cb0b18356cd3e10f345ddd200c14a6 inherit pro_methods_classwpi_1_1_string_map_impl"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map_impl.html#a74cb0b18356cd3e10f345ddd200c14a6">init</a> (unsigned Size)</td></tr>
+<tr class="memdesc:a74cb0b18356cd3e10f345ddd200c14a6 inherit pro_methods_classwpi_1_1_string_map_impl"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate the table with the specified number of buckets and otherwise setup the map as empty.  <a href="classwpi_1_1_string_map_impl.html#a74cb0b18356cd3e10f345ddd200c14a6">More...</a><br /></td></tr>
 <tr class="separator:a74cb0b18356cd3e10f345ddd200c14a6 inherit pro_methods_classwpi_1_1_string_map_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classwpi_1_1_string_map_impl"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classwpi_1_1_string_map_impl')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classwpi_1_1_string_map_impl.html">wpi::StringMapImpl</a></td></tr>
-<tr class="memitem:a4f6743330a64e2007e138a725b1a400b inherit pro_attribs_classwpi_1_1_string_map_impl"><td class="memItemLeft" align="right" valign="top"><a id="a4f6743330a64e2007e138a725b1a400b" name="a4f6743330a64e2007e138a725b1a400b"></a>
-<a class="el" href="classwpi_1_1_string_map_entry_base.html">StringMapEntryBase</a> **&#160;</td><td class="memItemRight" valign="bottom"><b>TheTable</b> = nullptr</td></tr>
+<tr class="memitem:a4f6743330a64e2007e138a725b1a400b inherit pro_attribs_classwpi_1_1_string_map_impl"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1_string_map_entry_base.html">StringMapEntryBase</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map_impl.html#a4f6743330a64e2007e138a725b1a400b">TheTable</a> = nullptr</td></tr>
 <tr class="separator:a4f6743330a64e2007e138a725b1a400b inherit pro_attribs_classwpi_1_1_string_map_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a623638342c905f80702de4f1f06102a9 inherit pro_attribs_classwpi_1_1_string_map_impl"><td class="memItemLeft" align="right" valign="top"><a id="a623638342c905f80702de4f1f06102a9" name="a623638342c905f80702de4f1f06102a9"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>NumBuckets</b> = 0</td></tr>
+<tr class="memitem:a623638342c905f80702de4f1f06102a9 inherit pro_attribs_classwpi_1_1_string_map_impl"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map_impl.html#a623638342c905f80702de4f1f06102a9">NumBuckets</a> = 0</td></tr>
 <tr class="separator:a623638342c905f80702de4f1f06102a9 inherit pro_attribs_classwpi_1_1_string_map_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8aa1217bbf965e08395bd5c1b9994a56 inherit pro_attribs_classwpi_1_1_string_map_impl"><td class="memItemLeft" align="right" valign="top"><a id="a8aa1217bbf965e08395bd5c1b9994a56" name="a8aa1217bbf965e08395bd5c1b9994a56"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>NumItems</b> = 0</td></tr>
+<tr class="memitem:a8aa1217bbf965e08395bd5c1b9994a56 inherit pro_attribs_classwpi_1_1_string_map_impl"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map_impl.html#a8aa1217bbf965e08395bd5c1b9994a56">NumItems</a> = 0</td></tr>
 <tr class="separator:a8aa1217bbf965e08395bd5c1b9994a56 inherit pro_attribs_classwpi_1_1_string_map_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a627bc80564917174b0bea8724a30b7e1 inherit pro_attribs_classwpi_1_1_string_map_impl"><td class="memItemLeft" align="right" valign="top"><a id="a627bc80564917174b0bea8724a30b7e1" name="a627bc80564917174b0bea8724a30b7e1"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>NumTombstones</b> = 0</td></tr>
+<tr class="memitem:a627bc80564917174b0bea8724a30b7e1 inherit pro_attribs_classwpi_1_1_string_map_impl"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map_impl.html#a627bc80564917174b0bea8724a30b7e1">NumTombstones</a> = 0</td></tr>
 <tr class="separator:a627bc80564917174b0bea8724a30b7e1 inherit pro_attribs_classwpi_1_1_string_map_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80e7e40f6cb0d279259e1bfcf35f311f inherit pro_attribs_classwpi_1_1_string_map_impl"><td class="memItemLeft" align="right" valign="top"><a id="a80e7e40f6cb0d279259e1bfcf35f311f" name="a80e7e40f6cb0d279259e1bfcf35f311f"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><b>ItemSize</b></td></tr>
+<tr class="memitem:a80e7e40f6cb0d279259e1bfcf35f311f inherit pro_attribs_classwpi_1_1_string_map_impl"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_string_map_impl.html#a80e7e40f6cb0d279259e1bfcf35f311f">ItemSize</a></td></tr>
 <tr class="separator:a80e7e40f6cb0d279259e1bfcf35f311f inherit pro_attribs_classwpi_1_1_string_map_impl"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename ValueTy&gt;<br />
 class wpi::StringMap&lt; ValueTy &gt;</div><p ><a class="el" href="classwpi_1_1_string_map.html" title="StringMap - This is an unconventional map that is specialized for handling keys that are &quot;strings&quot;,...">StringMap</a> - This is an unconventional map that is specialized for handling keys that are "strings", which are basically ranges of bytes. </p>
 <p >This does some funky memory allocation and hashing things to make it extremely efficient, storing the string data <em>after</em> the value in the map. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a2a5e4213ded1db6d8202490405f2cc6b" name="a2a5e4213ded1db6d8202490405f2cc6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a5e4213ded1db6d8202490405f2cc6b">&#9670;&nbsp;</a></span>const_iterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ValueTy &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="classwpi_1_1_string_map.html">wpi::StringMap</a>&lt; ValueTy &gt;::<a class="el" href="classwpi_1_1_string_map.html#a2a5e4213ded1db6d8202490405f2cc6b">const_iterator</a> =  <a class="el" href="classwpi_1_1_string_map_const_iterator.html">StringMapConstIterator</a>&lt;ValueTy&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3cf0d712be4485aa2bc6d2983375f250" name="a3cf0d712be4485aa2bc6d2983375f250"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cf0d712be4485aa2bc6d2983375f250">&#9670;&nbsp;</a></span>iterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ValueTy &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="classwpi_1_1_string_map.html">wpi::StringMap</a>&lt; ValueTy &gt;::<a class="el" href="classwpi_1_1_string_map.html#a3cf0d712be4485aa2bc6d2983375f250">iterator</a> =  <a class="el" href="classwpi_1_1_string_map_iterator.html">StringMapIterator</a>&lt;ValueTy&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5a9a9fb32b1d4efc77119db0bb441e1f" name="a5a9a9fb32b1d4efc77119db0bb441e1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a9a9fb32b1d4efc77119db0bb441e1f">&#9670;&nbsp;</a></span>key_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ValueTy &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="classwpi_1_1_string_map.html">wpi::StringMap</a>&lt; ValueTy &gt;::<a class="el" href="classwpi_1_1_string_map.html#a5a9a9fb32b1d4efc77119db0bb441e1f">key_type</a> =  const char*</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae8978fa4e75d0ae4f346985454b56f67" name="ae8978fa4e75d0ae4f346985454b56f67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8978fa4e75d0ae4f346985454b56f67">&#9670;&nbsp;</a></span>MapEntryTy</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ValueTy &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="classwpi_1_1_string_map.html">wpi::StringMap</a>&lt; ValueTy &gt;::<a class="el" href="classwpi_1_1_string_map.html#ae8978fa4e75d0ae4f346985454b56f67">MapEntryTy</a> =  <a class="el" href="classwpi_1_1_string_map_entry.html">StringMapEntry</a>&lt;ValueTy&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a44b8ed9f353c01186a3d810861fe11f8" name="a44b8ed9f353c01186a3d810861fe11f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44b8ed9f353c01186a3d810861fe11f8">&#9670;&nbsp;</a></span>mapped_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ValueTy &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="classwpi_1_1_string_map.html">wpi::StringMap</a>&lt; ValueTy &gt;::<a class="el" href="classwpi_1_1_string_map.html#a44b8ed9f353c01186a3d810861fe11f8">mapped_type</a> =  ValueTy</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7a5c64436055efff631a026914c1da2d" name="a7a5c64436055efff631a026914c1da2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a5c64436055efff631a026914c1da2d">&#9670;&nbsp;</a></span>size_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ValueTy &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="classwpi_1_1_string_map.html">wpi::StringMap</a>&lt; ValueTy &gt;::<a class="el" href="classwpi_1_1_string_map.html#a7a5c64436055efff631a026914c1da2d">size_type</a> =  size_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a18e9f3f950f581f2cfccc7d9bb3f3f02" name="a18e9f3f950f581f2cfccc7d9bb3f3f02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18e9f3f950f581f2cfccc7d9bb3f3f02">&#9670;&nbsp;</a></span>value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ValueTy &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="classwpi_1_1_string_map.html">wpi::StringMap</a>&lt; ValueTy &gt;::<a class="el" href="classwpi_1_1_string_map.html#a18e9f3f950f581f2cfccc7d9bb3f3f02">value_type</a> =  <a class="el" href="classwpi_1_1_string_map_entry.html">StringMapEntry</a>&lt;ValueTy&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a8923877df3fa8730d876991ec57a6846" name="a8923877df3fa8730d876991ec57a6846"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8923877df3fa8730d876991ec57a6846">&#9670;&nbsp;</a></span>StringMap() <span class="overload">[1/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ValueTy &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwpi_1_1_string_map.html">wpi::StringMap</a>&lt; ValueTy &gt;::<a class="el" href="classwpi_1_1_string_map.html">StringMap</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a11c5e95da0d4587da151d02c6a470e6b" name="a11c5e95da0d4587da151d02c6a470e6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11c5e95da0d4587da151d02c6a470e6b">&#9670;&nbsp;</a></span>StringMap() <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ValueTy &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwpi_1_1_string_map.html">wpi::StringMap</a>&lt; ValueTy &gt;::<a class="el" href="classwpi_1_1_string_map.html">StringMap</a> </td>
+          <td>(</td>
+          <td class="paramtype">unsigned&#160;</td>
+          <td class="paramname"><em>InitialSize</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a496f1ae5f09a6a93e0cb87e8954b9b28" name="a496f1ae5f09a6a93e0cb87e8954b9b28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a496f1ae5f09a6a93e0cb87e8954b9b28">&#9670;&nbsp;</a></span>StringMap() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ValueTy &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwpi_1_1_string_map.html">wpi::StringMap</a>&lt; ValueTy &gt;::<a class="el" href="classwpi_1_1_string_map.html">StringMap</a> </td>
+          <td>(</td>
+          <td class="paramtype">std::initializer_list&lt; std::pair&lt; <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>, ValueTy &gt; &gt;&#160;</td>
+          <td class="paramname"><em>List</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8fc9f401847d41e998793e12f8a753e6" name="a8fc9f401847d41e998793e12f8a753e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fc9f401847d41e998793e12f8a753e6">&#9670;&nbsp;</a></span>StringMap() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ValueTy &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwpi_1_1_string_map.html">wpi::StringMap</a>&lt; ValueTy &gt;::<a class="el" href="classwpi_1_1_string_map.html">StringMap</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classwpi_1_1_string_map.html">StringMap</a>&lt; ValueTy &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>RHS</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a415d4019bc639168683acce20b84f449" name="a415d4019bc639168683acce20b84f449"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a415d4019bc639168683acce20b84f449">&#9670;&nbsp;</a></span>StringMap() <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ValueTy &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwpi_1_1_string_map.html">wpi::StringMap</a>&lt; ValueTy &gt;::<a class="el" href="classwpi_1_1_string_map.html">StringMap</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classwpi_1_1_string_map.html">StringMap</a>&lt; ValueTy &gt; &amp;&#160;</td>
+          <td class="paramname"><em>RHS</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abb8037327c0f233d84905a4fa4f6f303" name="abb8037327c0f233d84905a4fa4f6f303"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb8037327c0f233d84905a4fa4f6f303">&#9670;&nbsp;</a></span>~StringMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ValueTy &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwpi_1_1_string_map.html">wpi::StringMap</a>&lt; ValueTy &gt;::~<a class="el" href="classwpi_1_1_string_map.html">StringMap</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab52125385777a1fabf363e5ef56a3266" name="ab52125385777a1fabf363e5ef56a3266"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab52125385777a1fabf363e5ef56a3266">&#9670;&nbsp;</a></span>begin() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ValueTy &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwpi_1_1_string_map.html#a3cf0d712be4485aa2bc6d2983375f250">iterator</a> <a class="el" href="classwpi_1_1_string_map.html">wpi::StringMap</a>&lt; ValueTy &gt;::begin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af33388ba0e5004d0ce00ad7f910c266b" name="af33388ba0e5004d0ce00ad7f910c266b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af33388ba0e5004d0ce00ad7f910c266b">&#9670;&nbsp;</a></span>begin() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ValueTy &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwpi_1_1_string_map.html#a2a5e4213ded1db6d8202490405f2cc6b">const_iterator</a> <a class="el" href="classwpi_1_1_string_map.html">wpi::StringMap</a>&lt; ValueTy &gt;::begin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3d8b0c604b9d8910a7d9a63a7d55d248" name="a3d8b0c604b9d8910a7d9a63a7d55d248"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d8b0c604b9d8910a7d9a63a7d55d248">&#9670;&nbsp;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ValueTy &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classwpi_1_1_string_map.html">wpi::StringMap</a>&lt; ValueTy &gt;::clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0a3857363aa67a624573601a708c29b0" name="a0a3857363aa67a624573601a708c29b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a3857363aa67a624573601a708c29b0">&#9670;&nbsp;</a></span>count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ValueTy &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwpi_1_1_string_map.html#a7a5c64436055efff631a026914c1da2d">size_type</a> <a class="el" href="classwpi_1_1_string_map.html">wpi::StringMap</a>&lt; ValueTy &gt;::count </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>Key</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>count - Return 1 if the element is in the map, 0 otherwise. </p>
+
+</div>
+</div>
+<a id="a6f99366cb7947ec892e466c38e216203" name="a6f99366cb7947ec892e466c38e216203"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f99366cb7947ec892e466c38e216203">&#9670;&nbsp;</a></span>end() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ValueTy &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwpi_1_1_string_map.html#a3cf0d712be4485aa2bc6d2983375f250">iterator</a> <a class="el" href="classwpi_1_1_string_map.html">wpi::StringMap</a>&lt; ValueTy &gt;::end </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a56b4a10806281bf675cbc39cc163c788" name="a56b4a10806281bf675cbc39cc163c788"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56b4a10806281bf675cbc39cc163c788">&#9670;&nbsp;</a></span>end() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ValueTy &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwpi_1_1_string_map.html#a2a5e4213ded1db6d8202490405f2cc6b">const_iterator</a> <a class="el" href="classwpi_1_1_string_map.html">wpi::StringMap</a>&lt; ValueTy &gt;::end </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac8d2dddf99f7e371e159150b4f96d1a8" name="ac8d2dddf99f7e371e159150b4f96d1a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8d2dddf99f7e371e159150b4f96d1a8">&#9670;&nbsp;</a></span>erase() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ValueTy &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classwpi_1_1_string_map.html">wpi::StringMap</a>&lt; ValueTy &gt;::erase </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classwpi_1_1_string_map.html#a3cf0d712be4485aa2bc6d2983375f250">iterator</a>&#160;</td>
+          <td class="paramname"><em>I</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae8bd27eb9b59a8ba7cdfd0ff9e63a713" name="ae8bd27eb9b59a8ba7cdfd0ff9e63a713"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8bd27eb9b59a8ba7cdfd0ff9e63a713">&#9670;&nbsp;</a></span>erase() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ValueTy &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classwpi_1_1_string_map.html">wpi::StringMap</a>&lt; ValueTy &gt;::erase </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>Key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa22876640c093203d9b555ed6a2280e2" name="aa22876640c093203d9b555ed6a2280e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa22876640c093203d9b555ed6a2280e2">&#9670;&nbsp;</a></span>find() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ValueTy &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwpi_1_1_string_map.html#a3cf0d712be4485aa2bc6d2983375f250">iterator</a> <a class="el" href="classwpi_1_1_string_map.html">wpi::StringMap</a>&lt; ValueTy &gt;::find </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>Key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3d9235b24077229e0b3570e2d4ff6460" name="a3d9235b24077229e0b3570e2d4ff6460"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d9235b24077229e0b3570e2d4ff6460">&#9670;&nbsp;</a></span>find() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ValueTy &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwpi_1_1_string_map.html#a2a5e4213ded1db6d8202490405f2cc6b">const_iterator</a> <a class="el" href="classwpi_1_1_string_map.html">wpi::StringMap</a>&lt; ValueTy &gt;::find </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>Key</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a4758ddddb13fcc2799785ef68ee3e104" name="a4758ddddb13fcc2799785ef68ee3e104"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4758ddddb13fcc2799785ef68ee3e104">&#9670;&nbsp;</a></span>insert() <span class="overload">[1/2]</span></h2>
 
@@ -297,7 +817,7 @@ template&lt;typename ValueTy &gt; </div>
         <tr>
           <td class="memname">bool <a class="el" href="classwpi_1_1_string_map.html">wpi::StringMap</a>&lt; ValueTy &gt;::insert </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1_string_map_entry.html">MapEntryTy</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classwpi_1_1_string_map.html#ae8978fa4e75d0ae4f346985454b56f67">MapEntryTy</a> *&#160;</td>
           <td class="paramname"><em>KeyValue</em></td><td>)</td>
           <td></td>
         </tr>
@@ -326,9 +846,9 @@ template&lt;typename ValueTy &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::pair&lt; <a class="el" href="classwpi_1_1_string_map_iterator.html">iterator</a>, bool &gt; <a class="el" href="classwpi_1_1_string_map.html">wpi::StringMap</a>&lt; ValueTy &gt;::insert </td>
+          <td class="memname">std::pair&lt; <a class="el" href="classwpi_1_1_string_map.html#a3cf0d712be4485aa2bc6d2983375f250">iterator</a>, bool &gt; <a class="el" href="classwpi_1_1_string_map.html">wpi::StringMap</a>&lt; ValueTy &gt;::insert </td>
           <td>(</td>
-          <td class="paramtype">std::pair&lt; std::string_view, ValueTy &gt;&#160;</td>
+          <td class="paramtype">std::pair&lt; <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>, ValueTy &gt;&#160;</td>
           <td class="paramname"><em>KV</em></td><td>)</td>
           <td></td>
         </tr>
@@ -342,6 +862,121 @@ template&lt;typename ValueTy &gt; </div>
 
 <p>insert - Inserts the specified key/value pair into the map if the key isn't already in the map. </p>
 <p >The bool component of the returned pair is true if and only if the insertion takes place, and the iterator component of the pair points to the element with key equivalent to the key of the pair. </p>
+
+</div>
+</div>
+<a id="ad7e55c87d952c4256aa4a4bba18621f2" name="ad7e55c87d952c4256aa4a4bba18621f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7e55c87d952c4256aa4a4bba18621f2">&#9670;&nbsp;</a></span>keys()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ValueTy &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwpi_1_1iterator__range.html">iterator_range</a>&lt; <a class="el" href="classwpi_1_1_string_map_key_iterator.html">StringMapKeyIterator</a>&lt; ValueTy &gt; &gt; <a class="el" href="classwpi_1_1_string_map.html">wpi::StringMap</a>&lt; ValueTy &gt;::keys </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a23d970e8c58667f3810a714a3f03df83" name="a23d970e8c58667f3810a714a3f03df83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23d970e8c58667f3810a714a3f03df83">&#9670;&nbsp;</a></span>lookup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ValueTy &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ValueTy <a class="el" href="classwpi_1_1_string_map.html">wpi::StringMap</a>&lt; ValueTy &gt;::lookup </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>Key</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>lookup - Return the entry for the specified key, or a default constructed value if no such entry exists. </p>
+
+</div>
+</div>
+<a id="af91a3bf535ea8a17dafbc1bf5495243e" name="af91a3bf535ea8a17dafbc1bf5495243e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af91a3bf535ea8a17dafbc1bf5495243e">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ValueTy &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwpi_1_1_string_map.html">StringMap</a> &amp; <a class="el" href="classwpi_1_1_string_map.html">wpi::StringMap</a>&lt; ValueTy &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classwpi_1_1_string_map.html">StringMap</a>&lt; ValueTy &gt;&#160;</td>
+          <td class="paramname"><em>RHS</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a485bb2c284481d883271893db21ee15f" name="a485bb2c284481d883271893db21ee15f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a485bb2c284481d883271893db21ee15f">&#9670;&nbsp;</a></span>operator[]()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ValueTy &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ValueTy &amp; <a class="el" href="classwpi_1_1_string_map.html">wpi::StringMap</a>&lt; ValueTy &gt;::operator[] </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>Key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Lookup the ValueTy for the <code>Key</code>, or create a default constructed value if the key is not in the map. </p>
 
 </div>
 </div>
@@ -359,7 +994,7 @@ template&lt;typename ValueTy &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classwpi_1_1_string_map.html">wpi::StringMap</a>&lt; ValueTy &gt;::remove </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classwpi_1_1_string_map_entry.html">MapEntryTy</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classwpi_1_1_string_map.html#ae8978fa4e75d0ae4f346985454b56f67">MapEntryTy</a> *&#160;</td>
           <td class="paramname"><em>KeyValue</em></td><td>)</td>
           <td></td>
         </tr>
@@ -390,9 +1025,9 @@ template&lt;typename... ArgsTy&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::pair&lt; <a class="el" href="classwpi_1_1_string_map_iterator.html">iterator</a>, bool &gt; <a class="el" href="classwpi_1_1_string_map.html">wpi::StringMap</a>&lt; ValueTy &gt;::try_emplace </td>
+          <td class="memname">std::pair&lt; <a class="el" href="classwpi_1_1_string_map.html#a3cf0d712be4485aa2bc6d2983375f250">iterator</a>, bool &gt; <a class="el" href="classwpi_1_1_string_map.html">wpi::StringMap</a>&lt; ValueTy &gt;::try_emplace </td>
           <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>Key</em>, </td>
         </tr>
         <tr>
@@ -427,8 +1062,8 @@ template&lt;typename... ArgsTy&gt; </div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>wpi</b></li><li class="navelem"><a class="el" href="classwpi_1_1_string_map.html">StringMap</a></li>
-    <li class="footer">Generated on Fri Oct 29 2021 07:12:30 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="classwpi_1_1_string_map.html">StringMap</a></li>
+    <li class="footer">Generated on Fri Oct 29 2021 22:10:09 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -1,5 +1,11 @@
 var classcs_1_1_http_camera =
 [
+    [ "HttpCameraKind", "classcs_1_1_http_camera.html#a83a6f6ff2f5c00b49faf6488aab9321d", [
+      [ "kUnknown", "classcs_1_1_http_camera.html#a83a6f6ff2f5c00b49faf6488aab9321dad046dd82c51480b98656cf5077835de1", null ],
+      [ "kMJPGStreamer", "classcs_1_1_http_camera.html#a83a6f6ff2f5c00b49faf6488aab9321da21eac708647501c1961d597898838582", null ],
+      [ "kCSCore", "classcs_1_1_http_camera.html#a83a6f6ff2f5c00b49faf6488aab9321dabfc70e68ff7f22d8fca0ab3e6e020f4e", null ],
+      [ "kAxis", "classcs_1_1_http_camera.html#a83a6f6ff2f5c00b49faf6488aab9321dacff84bf2f22913f78ea13b4c2079ff92", null ]
+    ] ],
     [ "HttpCamera", "classcs_1_1_http_camera.html#a083aafa8d6621b2d6b92a97a7e22dac6", null ],
     [ "HttpCamera", "classcs_1_1_http_camera.html#a113e3be8347f30e5708e8aea5dd2121e", null ],
     [ "HttpCamera", "classcs_1_1_http_camera.html#ada17866aa09cba574d3219352019b217", null ],

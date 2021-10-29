@@ -29,5 +29,9 @@ var classfrc_1_1_camera_server =
     [ "StartAutomaticCapture", "classfrc_1_1_camera_server.html#a0f2ede76f073a394decafabef9072a31", null ],
     [ "StartAutomaticCapture", "classfrc_1_1_camera_server.html#aa924e55df147ad1ec1984a2788b5b9fa", null ],
     [ "StartAutomaticCapture", "classfrc_1_1_camera_server.html#acb48c7abfe69a40f819ded9ed3adf446", null ],
-    [ "StartAutomaticCapture", "classfrc_1_1_camera_server.html#aafa53d876b218ccdadad61d80a95fcb1", null ]
+    [ "StartAutomaticCapture", "classfrc_1_1_camera_server.html#aafa53d876b218ccdadad61d80a95fcb1", null ],
+    [ "kBasePort", "classfrc_1_1_camera_server.html#a94ad1047b2af0a2d27f2db2d95a68bb1", null ],
+    [ "kSize160x120", "classfrc_1_1_camera_server.html#a9e7e3166bfea1cb80e1fa00b40cd85ab", null ],
+    [ "kSize320x240", "classfrc_1_1_camera_server.html#a94ec5cb0631002669048a9262bd42d0b", null ],
+    [ "kSize640x480", "classfrc_1_1_camera_server.html#ab7c055c3bc5d13ccffe13a11260b1f8f", null ]
 ];

@@ -7,6 +7,8 @@ var group__writer =
     [ "mpack_writer_teardown_t", "group__writer.html#ga97ccab59b332d882d386c10b241eb888", null ],
     [ "mpack_build_array", "group__writer.html#ga5e10cc90afff17e2c4352c4399be9433", null ],
     [ "mpack_build_map", "group__writer.html#ga5849bab4afebddae63bb03f5dce5f7d8", null ],
+    [ "mpack_builder_compound_pop", "group__writer.html#ga9e89422784feb205afe45f674d80c5b1", null ],
+    [ "mpack_builder_compound_push", "group__writer.html#ga8267626fa6ec8aeed449e0dbe5139677", null ],
     [ "mpack_complete_array", "group__writer.html#ga65e149d035d8de105774ebad2363cac5", null ],
     [ "mpack_complete_map", "group__writer.html#ga10d9f55e0a512d88ede66bbbc543f711", null ],
     [ "mpack_expect_bool", "group__writer.html#gaeafa42ca3ae974494f127eb4b56ed8ae", null ],

@@ -1,0 +1,5 @@
+var struct_eigen_1_1internal_1_1evaluator_3_01_ref_3_01_plain_object_type_00_01_ref_options_00_01_stride_type_01_4_01_4 =
+[
+    [ "XprType", "struct_eigen_1_1internal_1_1evaluator_3_01_ref_3_01_plain_object_type_00_01_ref_options_00_01_stride_type_01_4_01_4.html#a49f98301ac153b880b54008edd822e9e", null ],
+    [ "evaluator", "struct_eigen_1_1internal_1_1evaluator_3_01_ref_3_01_plain_object_type_00_01_ref_options_00_01_stride_type_01_4_01_4.html#ada3672ffa0e742024c710069ad8665f8", null ]
+];

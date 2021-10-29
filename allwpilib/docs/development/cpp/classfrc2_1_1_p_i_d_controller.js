@@ -1,6 +1,9 @@
 var classfrc2_1_1_p_i_d_controller =
 [
     [ "PIDController", "classfrc2_1_1_p_i_d_controller.html#a55e77de5cbf001b2cf19679aa8ccd7e0", null ],
+    [ "~PIDController", "classfrc2_1_1_p_i_d_controller.html#acbfe0668dfb83dc00630f43952dbf5eb", null ],
+    [ "PIDController", "classfrc2_1_1_p_i_d_controller.html#a7d9a67fecaf4f02b2c0f539ba049d991", null ],
+    [ "PIDController", "classfrc2_1_1_p_i_d_controller.html#ae217fee1b9bf8b3369e9116150f2d625", null ],
     [ "AtSetpoint", "classfrc2_1_1_p_i_d_controller.html#a5903654c786be29b989623d2f087d30c", null ],
     [ "Calculate", "classfrc2_1_1_p_i_d_controller.html#a2a88e16ce52d6eb446cf2a9bbb84fe27", null ],
     [ "Calculate", "classfrc2_1_1_p_i_d_controller.html#ab366affdd527d8c675d86f4878b5e07c", null ],
@@ -15,6 +18,8 @@ var classfrc2_1_1_p_i_d_controller =
     [ "GetVelocityError", "classfrc2_1_1_p_i_d_controller.html#a9c91e3e65b6b1ac739881ba31e3caf38", null ],
     [ "InitSendable", "classfrc2_1_1_p_i_d_controller.html#a4ad92de9d1f769b437e80b0702a4e27e", null ],
     [ "IsContinuousInputEnabled", "classfrc2_1_1_p_i_d_controller.html#af3799e4042fc11b0056936e5df989f09", null ],
+    [ "operator=", "classfrc2_1_1_p_i_d_controller.html#ab010b755464d06acf08d3be60bca59ee", null ],
+    [ "operator=", "classfrc2_1_1_p_i_d_controller.html#ae26ad063098514035f7dbbb8b51d12ce", null ],
     [ "Reset", "classfrc2_1_1_p_i_d_controller.html#a988b633966b930abd00c19fcea1b5d48", null ],
     [ "SetD", "classfrc2_1_1_p_i_d_controller.html#a37edada95dde6ed605e64ddb489e67e4", null ],
     [ "SetI", "classfrc2_1_1_p_i_d_controller.html#a791a8bf79434c38973ebc831661d07eb", null ],

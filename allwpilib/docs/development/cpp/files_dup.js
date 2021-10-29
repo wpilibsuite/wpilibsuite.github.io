@@ -16,16 +16,20 @@ var files_dup =
     [ "vision", "dir_e0a9384abf5c2f50047c6336e9d3d267.html", "dir_e0a9384abf5c2f50047c6336e9d3d267" ],
     [ "wpi", "dir_1224104d412225b996ab6dfa83431a88.html", "dir_1224104d412225b996ab6dfa83431a88" ],
     [ "wpimath", "dir_9ed6d559e9d3ae0e5e98be60a74f2d52.html", "dir_9ed6d559e9d3ae0e5e98be60a74f2d52" ],
-    [ "cscore.h", "cscore_8h_source.html", null ],
-    [ "cscore_c.h", "cscore__c_8h_source.html", null ],
-    [ "cscore_cpp.h", "cscore__cpp_8h_source.html", null ],
-    [ "cscore_cv.h", "cscore__cv_8h_source.html", null ],
-    [ "cscore_oo.h", "cscore__oo_8h_source.html", null ],
-    [ "cscore_raw.h", "cscore__raw_8h_source.html", null ],
-    [ "cscore_raw_cv.h", "cscore__raw__cv_8h_source.html", null ],
-    [ "ntcore.h", "ntcore_8h_source.html", null ],
-    [ "ntcore_c.h", "ntcore__c_8h_source.html", null ],
-    [ "ntcore_cpp.h", "ntcore__cpp_8h_source.html", null ],
-    [ "ntcore_test.h", "ntcore__test_8h_source.html", null ],
-    [ "WPILibVersion.h", "_w_p_i_lib_version_8h_source.html", null ]
+    [ "cscore.h", "cscore_8h.html", null ],
+    [ "cscore_c.h", "cscore__c_8h.html", "cscore__c_8h" ],
+    [ "cscore_cpp.h", "cscore__cpp_8h.html", "cscore__cpp_8h" ],
+    [ "cscore_cv.h", "cscore__cv_8h.html", "cscore__cv_8h" ],
+    [ "cscore_oo.h", "cscore__oo_8h.html", null ],
+    [ "cscore_oo.inc", "cscore__oo_8inc.html", "cscore__oo_8inc" ],
+    [ "cscore_raw.h", "cscore__raw_8h.html", "cscore__raw_8h" ],
+    [ "cscore_raw_cv.h", "cscore__raw__cv_8h.html", [
+      [ "cs::RawCvSource", "classcs_1_1_raw_cv_source.html", "classcs_1_1_raw_cv_source" ],
+      [ "cs::RawCvSink", "classcs_1_1_raw_cv_sink.html", "classcs_1_1_raw_cv_sink" ]
+    ] ],
+    [ "ntcore.h", "ntcore_8h.html", null ],
+    [ "ntcore_c.h", "ntcore__c_8h.html", "ntcore__c_8h" ],
+    [ "ntcore_cpp.h", "ntcore__cpp_8h.html", "ntcore__cpp_8h" ],
+    [ "ntcore_test.h", "ntcore__test_8h.html", "ntcore__test_8h" ],
+    [ "WPILibVersion.h", "_w_p_i_lib_version_8h.html", "_w_p_i_lib_version_8h" ]
 ];

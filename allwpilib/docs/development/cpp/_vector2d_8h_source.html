@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-31-ga939cd9</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-32-g2cb171f</span>
    </div>
   </td>
  </tr>
@@ -94,20 +94,20 @@ $(document).ready(function(){initNavTree('_vector2d_8h_source.html',''); initRes
   <div class="headertitle"><div class="title">Vector2d.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
+<a href="_vector2d_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Open Source Software; you can modify and/or share it under the terms of</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// the WPILib BSD license file in the root directory of this project.</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span>frc {</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacefrc.html">frc</a> {</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"></span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">/**</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> * This is a 2D vector struct that supports basic vector operations.</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="structfrc_1_1_vector2d.html">   12</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structfrc_1_1_vector2d.html">Vector2d</a> {</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  <a class="code hl_struct" href="structfrc_1_1_vector2d.html">Vector2d</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  <a class="code hl_struct" href="structfrc_1_1_vector2d.html">Vector2d</a>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y);</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="structfrc_1_1_vector2d.html#aad18ae9e274b81866bdaa570ad364994">   13</a></span>  <a class="code hl_function" href="structfrc_1_1_vector2d.html#aad18ae9e274b81866bdaa570ad364994">Vector2d</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="structfrc_1_1_vector2d.html#ac5722dbd64e0abe25a5fbfeea056982f">   14</a></span>  <a class="code hl_function" href="structfrc_1_1_vector2d.html#ac5722dbd64e0abe25a5fbfeea056982f">Vector2d</a>(<span class="keywordtype">double</span> <a class="code hl_variable" href="structfrc_1_1_vector2d.html#ae9c161cc01e7e5c36337ed42a79851a4">x</a>, <span class="keywordtype">double</span> <a class="code hl_variable" href="structfrc_1_1_vector2d.html#aa4269191722377f2ab3ab82440bc7661">y</a>);</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"></span> </div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">   * Rotate a vector in Cartesian space.</span></div>
@@ -135,23 +135,28 @@ $(document).ready(function(){initNavTree('_vector2d_8h_source.html',''); initRes
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="structfrc_1_1_vector2d.html#a39e098936668880f44c815b18966b5c9">   40</a></span>  <span class="keywordtype">double</span> <a class="code hl_function" href="structfrc_1_1_vector2d.html#a39e098936668880f44c815b18966b5c9">ScalarProject</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structfrc_1_1_vector2d.html">Vector2d</a>&amp; vec) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <span class="keywordtype">double</span> x = 0.0;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <span class="keywordtype">double</span> y = 0.0;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="structfrc_1_1_vector2d.html#ae9c161cc01e7e5c36337ed42a79851a4">   42</a></span>  <span class="keywordtype">double</span> <a class="code hl_variable" href="structfrc_1_1_vector2d.html#ae9c161cc01e7e5c36337ed42a79851a4">x</a> = 0.0;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="structfrc_1_1_vector2d.html#aa4269191722377f2ab3ab82440bc7661">   43</a></span>  <span class="keywordtype">double</span> <a class="code hl_variable" href="structfrc_1_1_vector2d.html#aa4269191722377f2ab3ab82440bc7661">y</a> = 0.0;</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>};</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>}  <span class="comment">// namespace frc</span></div>
+<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> CameraServerShared.h:13</div></div>
 <div class="ttc" id="astructfrc_1_1_vector2d_html"><div class="ttname"><a href="structfrc_1_1_vector2d.html">frc::Vector2d</a></div><div class="ttdoc">This is a 2D vector struct that supports basic vector operations.</div><div class="ttdef"><b>Definition:</b> Vector2d.h:12</div></div>
 <div class="ttc" id="astructfrc_1_1_vector2d_html_a2a0ce93dc2ab69f3ea4e7b9947d4166d"><div class="ttname"><a href="structfrc_1_1_vector2d.html#a2a0ce93dc2ab69f3ea4e7b9947d4166d">frc::Vector2d::Dot</a></div><div class="ttdeci">double Dot(const Vector2d &amp;vec) const</div><div class="ttdoc">Returns dot product of this vector with argument.</div></div>
 <div class="ttc" id="astructfrc_1_1_vector2d_html_a39e098936668880f44c815b18966b5c9"><div class="ttname"><a href="structfrc_1_1_vector2d.html#a39e098936668880f44c815b18966b5c9">frc::Vector2d::ScalarProject</a></div><div class="ttdeci">double ScalarProject(const Vector2d &amp;vec) const</div><div class="ttdoc">Returns scalar projection of this vector onto argument.</div></div>
 <div class="ttc" id="astructfrc_1_1_vector2d_html_a716d9494db9b4c049364eb20387a50eb"><div class="ttname"><a href="structfrc_1_1_vector2d.html#a716d9494db9b4c049364eb20387a50eb">frc::Vector2d::Magnitude</a></div><div class="ttdeci">double Magnitude() const</div><div class="ttdoc">Returns magnitude of vector.</div></div>
 <div class="ttc" id="astructfrc_1_1_vector2d_html_a983ba36797f487832eaa014af2e3fcdc"><div class="ttname"><a href="structfrc_1_1_vector2d.html#a983ba36797f487832eaa014af2e3fcdc">frc::Vector2d::Rotate</a></div><div class="ttdeci">void Rotate(double angle)</div><div class="ttdoc">Rotate a vector in Cartesian space.</div></div>
+<div class="ttc" id="astructfrc_1_1_vector2d_html_aa4269191722377f2ab3ab82440bc7661"><div class="ttname"><a href="structfrc_1_1_vector2d.html#aa4269191722377f2ab3ab82440bc7661">frc::Vector2d::y</a></div><div class="ttdeci">double y</div><div class="ttdef"><b>Definition:</b> Vector2d.h:43</div></div>
+<div class="ttc" id="astructfrc_1_1_vector2d_html_aad18ae9e274b81866bdaa570ad364994"><div class="ttname"><a href="structfrc_1_1_vector2d.html#aad18ae9e274b81866bdaa570ad364994">frc::Vector2d::Vector2d</a></div><div class="ttdeci">Vector2d()=default</div></div>
+<div class="ttc" id="astructfrc_1_1_vector2d_html_ac5722dbd64e0abe25a5fbfeea056982f"><div class="ttname"><a href="structfrc_1_1_vector2d.html#ac5722dbd64e0abe25a5fbfeea056982f">frc::Vector2d::Vector2d</a></div><div class="ttdeci">Vector2d(double x, double y)</div></div>
+<div class="ttc" id="astructfrc_1_1_vector2d_html_ae9c161cc01e7e5c36337ed42a79851a4"><div class="ttname"><a href="structfrc_1_1_vector2d.html#ae9c161cc01e7e5c36337ed42a79851a4">frc::Vector2d::x</a></div><div class="ttdeci">double x</div><div class="ttdef"><b>Definition:</b> Vector2d.h:42</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_fcdce402877842ae45be332f822e2127.html">drive</a></li><li class="navelem"><b>Vector2d.h</b></li>
-    <li class="footer">Generated on Fri Oct 29 2021 07:12:14 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_fcdce402877842ae45be332f822e2127.html">drive</a></li><li class="navelem"><a class="el" href="_vector2d_8h.html">Vector2d.h</a></li>
+    <li class="footer">Generated on Fri Oct 29 2021 22:09:51 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

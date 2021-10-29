@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-31-ga939cd9</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-32-g2cb171f</span>
    </div>
   </td>
  </tr>
@@ -97,6 +97,8 @@ $(document).ready(function(){initNavTree('classwpi_1_1_network_acceptor.html',''
   <div class="headertitle"><div class="title">wpi::NetworkAcceptor Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_network_acceptor_8h_source.html">wpi/NetworkAcceptor.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for wpi::NetworkAcceptor:</div>
 <div class="dyncontent">
@@ -109,22 +111,206 @@ Inheritance diagram for wpi::NetworkAcceptor:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab9486fe2213a3d34c405b77b92c0c4bc"><td class="memItemLeft" align="right" valign="top"><a id="ab9486fe2213a3d34c405b77b92c0c4bc" name="ab9486fe2213a3d34c405b77b92c0c4bc"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>start</b> ()=0</td></tr>
+<tr class="memitem:a0c35718af52e7d06d779efe17b686da5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_network_acceptor.html#a0c35718af52e7d06d779efe17b686da5">NetworkAcceptor</a> ()=default</td></tr>
+<tr class="separator:a0c35718af52e7d06d779efe17b686da5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01789e5886178168c4e636a92057e75f"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_network_acceptor.html#a01789e5886178168c4e636a92057e75f">~NetworkAcceptor</a> ()=default</td></tr>
+<tr class="separator:a01789e5886178168c4e636a92057e75f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9486fe2213a3d34c405b77b92c0c4bc"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_network_acceptor.html#ab9486fe2213a3d34c405b77b92c0c4bc">start</a> ()=0</td></tr>
 <tr class="separator:ab9486fe2213a3d34c405b77b92c0c4bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a820ed44af9d0c56ff56956db418aabf8"><td class="memItemLeft" align="right" valign="top"><a id="a820ed44af9d0c56ff56956db418aabf8" name="a820ed44af9d0c56ff56956db418aabf8"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>shutdown</b> ()=0</td></tr>
+<tr class="memitem:a820ed44af9d0c56ff56956db418aabf8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_network_acceptor.html#a820ed44af9d0c56ff56956db418aabf8">shutdown</a> ()=0</td></tr>
 <tr class="separator:a820ed44af9d0c56ff56956db418aabf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8db2be5952de354fa7827a541034eaeb"><td class="memItemLeft" align="right" valign="top"><a id="a8db2be5952de354fa7827a541034eaeb" name="a8db2be5952de354fa7827a541034eaeb"></a>
-virtual std::unique_ptr&lt; <a class="el" href="classwpi_1_1_network_stream.html">NetworkStream</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>accept</b> ()=0</td></tr>
+<tr class="memitem:a8db2be5952de354fa7827a541034eaeb"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="classwpi_1_1_network_stream.html">NetworkStream</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_network_acceptor.html#a8db2be5952de354fa7827a541034eaeb">accept</a> ()=0</td></tr>
 <tr class="separator:a8db2be5952de354fa7827a541034eaeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacf2e8e33c51b6103e4b4cf5679e5308"><td class="memItemLeft" align="right" valign="top"><a id="aacf2e8e33c51b6103e4b4cf5679e5308" name="aacf2e8e33c51b6103e4b4cf5679e5308"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>NetworkAcceptor</b> (const <a class="el" href="classwpi_1_1_network_acceptor.html">NetworkAcceptor</a> &amp;)=delete</td></tr>
+<tr class="memitem:aacf2e8e33c51b6103e4b4cf5679e5308"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_network_acceptor.html#aacf2e8e33c51b6103e4b4cf5679e5308">NetworkAcceptor</a> (const <a class="el" href="classwpi_1_1_network_acceptor.html">NetworkAcceptor</a> &amp;)=delete</td></tr>
 <tr class="separator:aacf2e8e33c51b6103e4b4cf5679e5308"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23408bfa7da4e4a10e53c3c99d35160b"><td class="memItemLeft" align="right" valign="top"><a id="a23408bfa7da4e4a10e53c3c99d35160b" name="a23408bfa7da4e4a10e53c3c99d35160b"></a>
-<a class="el" href="classwpi_1_1_network_acceptor.html">NetworkAcceptor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classwpi_1_1_network_acceptor.html">NetworkAcceptor</a> &amp;)=delete</td></tr>
+<tr class="memitem:a23408bfa7da4e4a10e53c3c99d35160b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1_network_acceptor.html">NetworkAcceptor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_network_acceptor.html#a23408bfa7da4e4a10e53c3c99d35160b">operator=</a> (const <a class="el" href="classwpi_1_1_network_acceptor.html">NetworkAcceptor</a> &amp;)=delete</td></tr>
 <tr class="separator:a23408bfa7da4e4a10e53c3c99d35160b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a0c35718af52e7d06d779efe17b686da5" name="a0c35718af52e7d06d779efe17b686da5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c35718af52e7d06d779efe17b686da5">&#9670;&nbsp;</a></span>NetworkAcceptor() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">wpi::NetworkAcceptor::NetworkAcceptor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a01789e5886178168c4e636a92057e75f" name="a01789e5886178168c4e636a92057e75f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01789e5886178168c4e636a92057e75f">&#9670;&nbsp;</a></span>~NetworkAcceptor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual wpi::NetworkAcceptor::~NetworkAcceptor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aacf2e8e33c51b6103e4b4cf5679e5308" name="aacf2e8e33c51b6103e4b4cf5679e5308"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacf2e8e33c51b6103e4b4cf5679e5308">&#9670;&nbsp;</a></span>NetworkAcceptor() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">wpi::NetworkAcceptor::NetworkAcceptor </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classwpi_1_1_network_acceptor.html">NetworkAcceptor</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a8db2be5952de354fa7827a541034eaeb" name="a8db2be5952de354fa7827a541034eaeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8db2be5952de354fa7827a541034eaeb">&#9670;&nbsp;</a></span>accept()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::unique_ptr&lt; <a class="el" href="classwpi_1_1_network_stream.html">NetworkStream</a> &gt; wpi::NetworkAcceptor::accept </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classwpi_1_1_t_c_p_acceptor.html#a5507aabb06017db0d96e78e2167c3181">wpi::TCPAcceptor</a>.</p>
+
+</div>
+</div>
+<a id="a23408bfa7da4e4a10e53c3c99d35160b" name="a23408bfa7da4e4a10e53c3c99d35160b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23408bfa7da4e4a10e53c3c99d35160b">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwpi_1_1_network_acceptor.html">NetworkAcceptor</a> &amp; wpi::NetworkAcceptor::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classwpi_1_1_network_acceptor.html">NetworkAcceptor</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a820ed44af9d0c56ff56956db418aabf8" name="a820ed44af9d0c56ff56956db418aabf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a820ed44af9d0c56ff56956db418aabf8">&#9670;&nbsp;</a></span>shutdown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void wpi::NetworkAcceptor::shutdown </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classwpi_1_1_t_c_p_acceptor.html#a11fb241fe7c111e186266a8fdaac8896">wpi::TCPAcceptor</a>.</p>
+
+</div>
+</div>
+<a id="ab9486fe2213a3d34c405b77b92c0c4bc" name="ab9486fe2213a3d34c405b77b92c0c4bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9486fe2213a3d34c405b77b92c0c4bc">&#9670;&nbsp;</a></span>start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int wpi::NetworkAcceptor::start </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classwpi_1_1_t_c_p_acceptor.html#a724c5c51fcc810c15a7d7290ac0a3e0e">wpi::TCPAcceptor</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>wpi/<a class="el" href="_network_acceptor_8h_source.html">NetworkAcceptor.h</a></li>
 </ul>
@@ -133,8 +319,8 @@ virtual std::unique_ptr&lt; <a class="el" href="classwpi_1_1_network_stream.html
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>wpi</b></li><li class="navelem"><a class="el" href="classwpi_1_1_network_acceptor.html">NetworkAcceptor</a></li>
-    <li class="footer">Generated on Fri Oct 29 2021 07:12:30 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="classwpi_1_1_network_acceptor.html">NetworkAcceptor</a></li>
+    <li class="footer">Generated on Fri Oct 29 2021 22:10:09 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

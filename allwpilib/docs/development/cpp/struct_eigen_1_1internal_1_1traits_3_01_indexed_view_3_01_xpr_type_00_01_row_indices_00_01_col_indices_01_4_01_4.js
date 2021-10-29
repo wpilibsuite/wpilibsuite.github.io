@@ -1,0 +1,4 @@
+var struct_eigen_1_1internal_1_1traits_3_01_indexed_view_3_01_xpr_type_00_01_row_indices_00_01_col_indices_01_4_01_4 =
+[
+    [ "BlockType", "struct_eigen_1_1internal_1_1traits_3_01_indexed_view_3_01_xpr_type_00_01_row_indices_00_01_col_indices_01_4_01_4.html#afb5005f5a859693876e722e4da049ebb", null ]
+];

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-31-ga939cd9</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-32-g2cb171f</span>
    </div>
   </td>
  </tr>
@@ -98,6 +98,8 @@ $(document).ready(function(){initNavTree('struct_eigen_1_1internal_1_1evaluator_
   <div class="headertitle"><div class="title">Eigen::internal::evaluator&lt; Reshaped&lt; ArgType, Rows, Cols, Order &gt; &gt; Struct Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_reshaped_8h_source.html">/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/eigeninclude/Eigen/src/Core/Reshaped.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Eigen::internal::evaluator&lt; Reshaped&lt; ArgType, Rows, Cols, Order &gt; &gt;:</div>
 <div class="dyncontent">
@@ -110,40 +112,157 @@ Inheritance diagram for Eigen::internal::evaluator&lt; Reshaped&lt; ArgType, Row
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a44217530dce45f2a6014a669a9ae9b35"><td class="memItemLeft" align="right" valign="top"><a id="a44217530dce45f2a6014a669a9ae9b35" name="a44217530dce45f2a6014a669a9ae9b35"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<b>CoeffReadCost</b> = evaluator&lt;ArgType&gt;::CoeffReadCost
-, <b>HasDirectAccess</b> = traits&lt;XprType&gt;::HasDirectAccess
-, <b>FlagsLinearAccessBit</b> = (traits&lt;XprType&gt;::RowsAtCompileTime == 1 || traits&lt;XprType&gt;::ColsAtCompileTime == 1 || HasDirectAccess) ? LinearAccessBit : 0
-, <b>FlagsRowMajorBit</b> = (traits&lt;XprType&gt;::ReshapedStorageOrder==int(RowMajor)) ? RowMajorBit : 0
+<tr class="memitem:a44217530dce45f2a6014a669a9ae9b35"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1evaluator_3_01_reshaped_3_01_arg_type_00_01_rows_00_01_cols_00_01_order_01_4_01_4.html#a44217530dce45f2a6014a669a9ae9b35a34c73eae07fb53bae7d60cd862ab17b0">CoeffReadCost</a> = evaluator&lt;ArgType&gt;::CoeffReadCost
+, <a class="el" href="struct_eigen_1_1internal_1_1evaluator_3_01_reshaped_3_01_arg_type_00_01_rows_00_01_cols_00_01_order_01_4_01_4.html#a44217530dce45f2a6014a669a9ae9b35af4766e8a4d9318efbd52bb57264e41fc">HasDirectAccess</a> = traits&lt;XprType&gt;::HasDirectAccess
+, <a class="el" href="struct_eigen_1_1internal_1_1evaluator_3_01_reshaped_3_01_arg_type_00_01_rows_00_01_cols_00_01_order_01_4_01_4.html#a44217530dce45f2a6014a669a9ae9b35ad8de1097cea1addc0b3490033998862e">FlagsLinearAccessBit</a> = (traits&lt;XprType&gt;::RowsAtCompileTime == 1 || traits&lt;XprType&gt;::ColsAtCompileTime == 1 || HasDirectAccess) ? LinearAccessBit : 0
+, <a class="el" href="struct_eigen_1_1internal_1_1evaluator_3_01_reshaped_3_01_arg_type_00_01_rows_00_01_cols_00_01_order_01_4_01_4.html#a44217530dce45f2a6014a669a9ae9b35ab1edab42c42a314b370bbf233ef3949a">FlagsRowMajorBit</a> = (traits&lt;XprType&gt;::ReshapedStorageOrder==int(RowMajor)) ? RowMajorBit : 0
 , <br />
-&#160;&#160;<b>FlagsDirectAccessBit</b> = HasDirectAccess ? DirectAccessBit : 0
-, <b>Flags0</b> = evaluator&lt;ArgType&gt;::Flags &amp; (HereditaryBits &amp; ~RowMajorBit)
-, <b>Flags</b> = Flags0 | FlagsLinearAccessBit | FlagsRowMajorBit | FlagsDirectAccessBit
-, <b>PacketAlignment</b> = unpacket_traits&lt;PacketScalar&gt;::alignment
+&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1evaluator_3_01_reshaped_3_01_arg_type_00_01_rows_00_01_cols_00_01_order_01_4_01_4.html#a44217530dce45f2a6014a669a9ae9b35a14f838ce749f73d6108d4ebd70228195">FlagsDirectAccessBit</a> = HasDirectAccess ? DirectAccessBit : 0
+, <a class="el" href="struct_eigen_1_1internal_1_1evaluator_3_01_reshaped_3_01_arg_type_00_01_rows_00_01_cols_00_01_order_01_4_01_4.html#a44217530dce45f2a6014a669a9ae9b35ab8ba25f20e8d9b4079366630ae0aa58f">Flags0</a> = evaluator&lt;ArgType&gt;::Flags &amp; (HereditaryBits &amp; ~RowMajorBit)
+, <a class="el" href="struct_eigen_1_1internal_1_1evaluator_3_01_reshaped_3_01_arg_type_00_01_rows_00_01_cols_00_01_order_01_4_01_4.html#a44217530dce45f2a6014a669a9ae9b35ae482306f4b145b091b4eef0725666187">Flags</a> = Flags0 | FlagsLinearAccessBit | FlagsRowMajorBit | FlagsDirectAccessBit
+, <a class="el" href="struct_eigen_1_1internal_1_1evaluator_3_01_reshaped_3_01_arg_type_00_01_rows_00_01_cols_00_01_order_01_4_01_4.html#a44217530dce45f2a6014a669a9ae9b35ac1b6b103bb340ed343bd3048b557b528">PacketAlignment</a> = unpacket_traits&lt;PacketScalar&gt;::alignment
 , <br />
-&#160;&#160;<b>Alignment</b> = evaluator&lt;ArgType&gt;::Alignment
+&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1evaluator_3_01_reshaped_3_01_arg_type_00_01_rows_00_01_cols_00_01_order_01_4_01_4.html#a44217530dce45f2a6014a669a9ae9b35a6477fa17a47e6be33eca89013048d1d0">Alignment</a> = evaluator&lt;ArgType&gt;::Alignment
 <br />
  }</td></tr>
 <tr class="separator:a44217530dce45f2a6014a669a9ae9b35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86b3d96dd4eb95cfd1748a64ae1655fa"><td class="memItemLeft" align="right" valign="top"><a id="a86b3d96dd4eb95cfd1748a64ae1655fa" name="a86b3d96dd4eb95cfd1748a64ae1655fa"></a>
-typedef <a class="el" href="class_eigen_1_1_reshaped.html">Reshaped</a>&lt; ArgType, Rows, Cols, Order &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>XprType</b></td></tr>
+<tr class="memitem:a86b3d96dd4eb95cfd1748a64ae1655fa"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_eigen_1_1_reshaped.html">Reshaped</a>&lt; ArgType, Rows, Cols, Order &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1evaluator_3_01_reshaped_3_01_arg_type_00_01_rows_00_01_cols_00_01_order_01_4_01_4.html#a86b3d96dd4eb95cfd1748a64ae1655fa">XprType</a></td></tr>
 <tr class="separator:a86b3d96dd4eb95cfd1748a64ae1655fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6209929a360312975bc692cccd246e10"><td class="memItemLeft" align="right" valign="top"><a id="a6209929a360312975bc692cccd246e10" name="a6209929a360312975bc692cccd246e10"></a>
-typedef XprType::Scalar&#160;</td><td class="memItemRight" valign="bottom"><b>Scalar</b></td></tr>
+<tr class="memitem:a6209929a360312975bc692cccd246e10"><td class="memItemLeft" align="right" valign="top">typedef XprType::Scalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1evaluator_3_01_reshaped_3_01_arg_type_00_01_rows_00_01_cols_00_01_order_01_4_01_4.html#a6209929a360312975bc692cccd246e10">Scalar</a></td></tr>
 <tr class="separator:a6209929a360312975bc692cccd246e10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d3c741dfab3e2097e46856b3987ecd7"><td class="memItemLeft" align="right" valign="top"><a id="a3d3c741dfab3e2097e46856b3987ecd7" name="a3d3c741dfab3e2097e46856b3987ecd7"></a>
-typedef <a class="el" href="struct_eigen_1_1internal_1_1packet__traits.html">packet_traits</a>&lt; Scalar &gt;::type&#160;</td><td class="memItemRight" valign="bottom"><b>PacketScalar</b></td></tr>
+<tr class="memitem:a3d3c741dfab3e2097e46856b3987ecd7"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_eigen_1_1internal_1_1packet__traits.html">packet_traits</a>&lt; <a class="el" href="struct_eigen_1_1internal_1_1evaluator_3_01_reshaped_3_01_arg_type_00_01_rows_00_01_cols_00_01_order_01_4_01_4.html#a6209929a360312975bc692cccd246e10">Scalar</a> &gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1evaluator_3_01_reshaped_3_01_arg_type_00_01_rows_00_01_cols_00_01_order_01_4_01_4.html#a3d3c741dfab3e2097e46856b3987ecd7">PacketScalar</a></td></tr>
 <tr class="separator:a3d3c741dfab3e2097e46856b3987ecd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a74050804ed4a1141a05eacbabe6afb"><td class="memItemLeft" align="right" valign="top"><a id="a4a74050804ed4a1141a05eacbabe6afb" name="a4a74050804ed4a1141a05eacbabe6afb"></a>
-typedef <a class="el" href="struct_eigen_1_1internal_1_1reshaped__evaluator.html">reshaped_evaluator</a>&lt; ArgType, Rows, Cols, Order, HasDirectAccess &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>reshaped_evaluator_type</b></td></tr>
+<tr class="memitem:a4a74050804ed4a1141a05eacbabe6afb"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_eigen_1_1internal_1_1reshaped__evaluator.html">reshaped_evaluator</a>&lt; ArgType, Rows, Cols, Order, <a class="el" href="struct_eigen_1_1internal_1_1evaluator_3_01_reshaped_3_01_arg_type_00_01_rows_00_01_cols_00_01_order_01_4_01_4.html#a44217530dce45f2a6014a669a9ae9b35af4766e8a4d9318efbd52bb57264e41fc">HasDirectAccess</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1evaluator_3_01_reshaped_3_01_arg_type_00_01_rows_00_01_cols_00_01_order_01_4_01_4.html#a4a74050804ed4a1141a05eacbabe6afb">reshaped_evaluator_type</a></td></tr>
 <tr class="separator:a4a74050804ed4a1141a05eacbabe6afb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5c81a1570c220a82daebeffd487570d6"><td class="memItemLeft" align="right" valign="top"><a id="a5c81a1570c220a82daebeffd487570d6" name="a5c81a1570c220a82daebeffd487570d6"></a>
-EIGEN_DEVICE_FUNC&#160;</td><td class="memItemRight" valign="bottom"><b>evaluator</b> (const <a class="el" href="class_eigen_1_1_reshaped.html">XprType</a> &amp;xpr)</td></tr>
+<tr class="memitem:a5c81a1570c220a82daebeffd487570d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_macros_8h.html#a9efec3cfd22b9a33bead9c6718d128da">EIGEN_DEVICE_FUNC</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1evaluator_3_01_reshaped_3_01_arg_type_00_01_rows_00_01_cols_00_01_order_01_4_01_4.html#a5c81a1570c220a82daebeffd487570d6">evaluator</a> (const <a class="el" href="struct_eigen_1_1internal_1_1evaluator_3_01_reshaped_3_01_arg_type_00_01_rows_00_01_cols_00_01_order_01_4_01_4.html#a86b3d96dd4eb95cfd1748a64ae1655fa">XprType</a> &amp;xpr)</td></tr>
 <tr class="separator:a5c81a1570c220a82daebeffd487570d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a3d3c741dfab3e2097e46856b3987ecd7" name="a3d3c741dfab3e2097e46856b3987ecd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d3c741dfab3e2097e46856b3987ecd7">&#9670;&nbsp;</a></span>PacketScalar</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ArgType , int Rows, int Cols, int Order&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="struct_eigen_1_1internal_1_1packet__traits.html">packet_traits</a>&lt;<a class="el" href="struct_eigen_1_1internal_1_1evaluator_3_01_reshaped_3_01_arg_type_00_01_rows_00_01_cols_00_01_order_01_4_01_4.html#a6209929a360312975bc692cccd246e10">Scalar</a>&gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a> <a class="el" href="struct_eigen_1_1internal_1_1evaluator.html">Eigen::internal::evaluator</a>&lt; <a class="el" href="class_eigen_1_1_reshaped.html">Reshaped</a>&lt; ArgType, Rows, Cols, Order &gt; &gt;::<a class="el" href="struct_eigen_1_1internal_1_1evaluator_3_01_reshaped_3_01_arg_type_00_01_rows_00_01_cols_00_01_order_01_4_01_4.html#a3d3c741dfab3e2097e46856b3987ecd7">PacketScalar</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4a74050804ed4a1141a05eacbabe6afb" name="a4a74050804ed4a1141a05eacbabe6afb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a74050804ed4a1141a05eacbabe6afb">&#9670;&nbsp;</a></span>reshaped_evaluator_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ArgType , int Rows, int Cols, int Order&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="struct_eigen_1_1internal_1_1reshaped__evaluator.html">reshaped_evaluator</a>&lt;ArgType, Rows, Cols, Order, <a class="el" href="struct_eigen_1_1internal_1_1evaluator_3_01_reshaped_3_01_arg_type_00_01_rows_00_01_cols_00_01_order_01_4_01_4.html#a44217530dce45f2a6014a669a9ae9b35af4766e8a4d9318efbd52bb57264e41fc">HasDirectAccess</a>&gt; <a class="el" href="struct_eigen_1_1internal_1_1evaluator.html">Eigen::internal::evaluator</a>&lt; <a class="el" href="class_eigen_1_1_reshaped.html">Reshaped</a>&lt; ArgType, Rows, Cols, Order &gt; &gt;::<a class="el" href="struct_eigen_1_1internal_1_1evaluator_3_01_reshaped_3_01_arg_type_00_01_rows_00_01_cols_00_01_order_01_4_01_4.html#a4a74050804ed4a1141a05eacbabe6afb">reshaped_evaluator_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6209929a360312975bc692cccd246e10" name="a6209929a360312975bc692cccd246e10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6209929a360312975bc692cccd246e10">&#9670;&nbsp;</a></span>Scalar</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ArgType , int Rows, int Cols, int Order&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef XprType::Scalar <a class="el" href="struct_eigen_1_1internal_1_1evaluator.html">Eigen::internal::evaluator</a>&lt; <a class="el" href="class_eigen_1_1_reshaped.html">Reshaped</a>&lt; ArgType, Rows, Cols, Order &gt; &gt;::<a class="el" href="struct_eigen_1_1internal_1_1evaluator_3_01_reshaped_3_01_arg_type_00_01_rows_00_01_cols_00_01_order_01_4_01_4.html#a6209929a360312975bc692cccd246e10">Scalar</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a86b3d96dd4eb95cfd1748a64ae1655fa" name="a86b3d96dd4eb95cfd1748a64ae1655fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86b3d96dd4eb95cfd1748a64ae1655fa">&#9670;&nbsp;</a></span>XprType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ArgType , int Rows, int Cols, int Order&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="class_eigen_1_1_reshaped.html">Reshaped</a>&lt;ArgType, Rows, Cols, Order&gt; <a class="el" href="struct_eigen_1_1internal_1_1evaluator.html">Eigen::internal::evaluator</a>&lt; <a class="el" href="class_eigen_1_1_reshaped.html">Reshaped</a>&lt; ArgType, Rows, Cols, Order &gt; &gt;::<a class="el" href="struct_eigen_1_1internal_1_1evaluator_3_01_reshaped_3_01_arg_type_00_01_rows_00_01_cols_00_01_order_01_4_01_4.html#a86b3d96dd4eb95cfd1748a64ae1655fa">XprType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a44217530dce45f2a6014a669a9ae9b35" name="a44217530dce45f2a6014a669a9ae9b35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44217530dce45f2a6014a669a9ae9b35">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ArgType , int Rows, int Cols, int Order&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a44217530dce45f2a6014a669a9ae9b35a34c73eae07fb53bae7d60cd862ab17b0" name="a44217530dce45f2a6014a669a9ae9b35a34c73eae07fb53bae7d60cd862ab17b0"></a>CoeffReadCost&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a44217530dce45f2a6014a669a9ae9b35af4766e8a4d9318efbd52bb57264e41fc" name="a44217530dce45f2a6014a669a9ae9b35af4766e8a4d9318efbd52bb57264e41fc"></a>HasDirectAccess&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a44217530dce45f2a6014a669a9ae9b35ad8de1097cea1addc0b3490033998862e" name="a44217530dce45f2a6014a669a9ae9b35ad8de1097cea1addc0b3490033998862e"></a>FlagsLinearAccessBit&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a44217530dce45f2a6014a669a9ae9b35ab1edab42c42a314b370bbf233ef3949a" name="a44217530dce45f2a6014a669a9ae9b35ab1edab42c42a314b370bbf233ef3949a"></a>FlagsRowMajorBit&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a44217530dce45f2a6014a669a9ae9b35a14f838ce749f73d6108d4ebd70228195" name="a44217530dce45f2a6014a669a9ae9b35a14f838ce749f73d6108d4ebd70228195"></a>FlagsDirectAccessBit&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a44217530dce45f2a6014a669a9ae9b35ab8ba25f20e8d9b4079366630ae0aa58f" name="a44217530dce45f2a6014a669a9ae9b35ab8ba25f20e8d9b4079366630ae0aa58f"></a>Flags0&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a44217530dce45f2a6014a669a9ae9b35ae482306f4b145b091b4eef0725666187" name="a44217530dce45f2a6014a669a9ae9b35ae482306f4b145b091b4eef0725666187"></a>Flags&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a44217530dce45f2a6014a669a9ae9b35ac1b6b103bb340ed343bd3048b557b528" name="a44217530dce45f2a6014a669a9ae9b35ac1b6b103bb340ed343bd3048b557b528"></a>PacketAlignment&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a44217530dce45f2a6014a669a9ae9b35a6477fa17a47e6be33eca89013048d1d0" name="a44217530dce45f2a6014a669a9ae9b35a6477fa17a47e6be33eca89013048d1d0"></a>Alignment&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a5c81a1570c220a82daebeffd487570d6" name="a5c81a1570c220a82daebeffd487570d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c81a1570c220a82daebeffd487570d6">&#9670;&nbsp;</a></span>evaluator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ArgType , int Rows, int Cols, int Order&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_macros_8h.html#a9efec3cfd22b9a33bead9c6718d128da">EIGEN_DEVICE_FUNC</a> <a class="el" href="struct_eigen_1_1internal_1_1evaluator.html">Eigen::internal::evaluator</a>&lt; <a class="el" href="class_eigen_1_1_reshaped.html">Reshaped</a>&lt; ArgType, Rows, Cols, Order &gt; &gt;::<a class="el" href="struct_eigen_1_1internal_1_1evaluator.html">evaluator</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_eigen_1_1internal_1_1evaluator_3_01_reshaped_3_01_arg_type_00_01_rows_00_01_cols_00_01_order_01_4_01_4.html#a86b3d96dd4eb95cfd1748a64ae1655fa">XprType</a> &amp;&#160;</td>
+          <td class="paramname"><em>xpr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/eigeninclude/Eigen/src/Core/<a class="el" href="_reshaped_8h_source.html">Reshaped.h</a></li>
 </ul>
@@ -152,8 +271,8 @@ EIGEN_DEVICE_FUNC&#160;</td><td class="memItemRight" valign="bottom"><b>evaluato
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespace_eigen.html">Eigen</a></li><li class="navelem"><b>internal</b></li><li class="navelem"><a class="el" href="struct_eigen_1_1internal_1_1evaluator_3_01_reshaped_3_01_arg_type_00_01_rows_00_01_cols_00_01_order_01_4_01_4.html">evaluator&lt; Reshaped&lt; ArgType, Rows, Cols, Order &gt; &gt;</a></li>
-    <li class="footer">Generated on Fri Oct 29 2021 07:12:26 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespace_eigen.html">Eigen</a></li><li class="navelem"><a class="el" href="namespace_eigen_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="struct_eigen_1_1internal_1_1evaluator_3_01_reshaped_3_01_arg_type_00_01_rows_00_01_cols_00_01_order_01_4_01_4.html">evaluator&lt; Reshaped&lt; ArgType, Rows, Cols, Order &gt; &gt;</a></li>
+    <li class="footer">Generated on Fri Oct 29 2021 22:10:05 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-31-ga939cd9</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-32-g2cb171f</span>
    </div>
   </td>
  </tr>
@@ -111,17 +111,13 @@ Inheritance diagram for units::unit&lt; Conversion, BaseUnit, PiExponent, Transl
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a80a7bfacd08e44750f2f00789705c7b4"><td class="memItemLeft" align="right" valign="top"><a id="a80a7bfacd08e44750f2f00789705c7b4" name="a80a7bfacd08e44750f2f00789705c7b4"></a>
-typedef units::traits::unit_traits&lt; BaseUnit &gt;::base_unit_type&#160;</td><td class="memItemRight" valign="bottom"><b>base_unit_type</b></td></tr>
+<tr class="memitem:a80a7bfacd08e44750f2f00789705c7b4"><td class="memItemLeft" align="right" valign="top">typedef units::traits::unit_traits&lt; BaseUnit &gt;::<a class="el" href="structunits_1_1unit.html#a80a7bfacd08e44750f2f00789705c7b4">base_unit_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunits_1_1unit.html#a80a7bfacd08e44750f2f00789705c7b4">base_unit_type</a></td></tr>
 <tr class="separator:a80a7bfacd08e44750f2f00789705c7b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f2b640f43170629369706775699fdbe"><td class="memItemLeft" align="right" valign="top"><a id="a0f2b640f43170629369706775699fdbe" name="a0f2b640f43170629369706775699fdbe"></a>
-typedef std::ratio_multiply&lt; typename BaseUnit::conversion_ratio, Conversion &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>conversion_ratio</b></td></tr>
+<tr class="memitem:a0f2b640f43170629369706775699fdbe"><td class="memItemLeft" align="right" valign="top">typedef std::ratio_multiply&lt; typename BaseUnit::conversion_ratio, Conversion &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunits_1_1unit.html#a0f2b640f43170629369706775699fdbe">conversion_ratio</a></td></tr>
 <tr class="separator:a0f2b640f43170629369706775699fdbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aadc106afe2fedc05c154ff9f2c16025f"><td class="memItemLeft" align="right" valign="top"><a id="aadc106afe2fedc05c154ff9f2c16025f" name="aadc106afe2fedc05c154ff9f2c16025f"></a>
-typedef std::ratio_add&lt; typename BaseUnit::pi_exponent_ratio, PiExponent &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>pi_exponent_ratio</b></td></tr>
+<tr class="memitem:aadc106afe2fedc05c154ff9f2c16025f"><td class="memItemLeft" align="right" valign="top">typedef std::ratio_add&lt; typename BaseUnit::pi_exponent_ratio, PiExponent &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunits_1_1unit.html#aadc106afe2fedc05c154ff9f2c16025f">pi_exponent_ratio</a></td></tr>
 <tr class="separator:aadc106afe2fedc05c154ff9f2c16025f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cdaa6959c83b6ddb1038d99a31e7814"><td class="memItemLeft" align="right" valign="top"><a id="a0cdaa6959c83b6ddb1038d99a31e7814" name="a0cdaa6959c83b6ddb1038d99a31e7814"></a>
-typedef std::ratio_add&lt; std::ratio_multiply&lt; typename BaseUnit::conversion_ratio, Translation &gt;, typename BaseUnit::translation_ratio &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>translation_ratio</b></td></tr>
+<tr class="memitem:a0cdaa6959c83b6ddb1038d99a31e7814"><td class="memItemLeft" align="right" valign="top">typedef std::ratio_add&lt; std::ratio_multiply&lt; typename BaseUnit::conversion_ratio, Translation &gt;, typename BaseUnit::translation_ratio &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structunits_1_1unit.html#a0cdaa6959c83b6ddb1038d99a31e7814">translation_ratio</a></td></tr>
 <tr class="separator:a0cdaa6959c83b6ddb1038d99a31e7814"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -143,7 +139,72 @@ struct units::unit&lt; Conversion, BaseUnit, PiExponent, Translation &gt;</div><
   </table>
   </dd>
 </dl>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a80a7bfacd08e44750f2f00789705c7b4" name="a80a7bfacd08e44750f2f00789705c7b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80a7bfacd08e44750f2f00789705c7b4">&#9670;&nbsp;</a></span>base_unit_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Conversion , class BaseUnit , class PiExponent  = std::ratio&lt;0&gt;, class Translation  = std::ratio&lt;0&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef units::traits::unit_traits&lt;BaseUnit&gt;::<a class="el" href="structunits_1_1unit.html#a80a7bfacd08e44750f2f00789705c7b4">base_unit_type</a> <a class="el" href="structunits_1_1unit.html">units::unit</a>&lt; Conversion, BaseUnit, PiExponent, Translation &gt;::<a class="el" href="structunits_1_1unit.html#a80a7bfacd08e44750f2f00789705c7b4">base_unit_type</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0f2b640f43170629369706775699fdbe" name="a0f2b640f43170629369706775699fdbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f2b640f43170629369706775699fdbe">&#9670;&nbsp;</a></span>conversion_ratio</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Conversion , class BaseUnit , class PiExponent  = std::ratio&lt;0&gt;, class Translation  = std::ratio&lt;0&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::ratio_multiply&lt;typename BaseUnit::conversion_ratio, Conversion&gt; <a class="el" href="structunits_1_1unit.html">units::unit</a>&lt; Conversion, BaseUnit, PiExponent, Translation &gt;::<a class="el" href="structunits_1_1unit.html#a0f2b640f43170629369706775699fdbe">conversion_ratio</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aadc106afe2fedc05c154ff9f2c16025f" name="aadc106afe2fedc05c154ff9f2c16025f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadc106afe2fedc05c154ff9f2c16025f">&#9670;&nbsp;</a></span>pi_exponent_ratio</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Conversion , class BaseUnit , class PiExponent  = std::ratio&lt;0&gt;, class Translation  = std::ratio&lt;0&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::ratio_add&lt;typename BaseUnit::pi_exponent_ratio, PiExponent&gt; <a class="el" href="structunits_1_1unit.html">units::unit</a>&lt; Conversion, BaseUnit, PiExponent, Translation &gt;::<a class="el" href="structunits_1_1unit.html#aadc106afe2fedc05c154ff9f2c16025f">pi_exponent_ratio</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0cdaa6959c83b6ddb1038d99a31e7814" name="a0cdaa6959c83b6ddb1038d99a31e7814"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cdaa6959c83b6ddb1038d99a31e7814">&#9670;&nbsp;</a></span>translation_ratio</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Conversion , class BaseUnit , class PiExponent  = std::ratio&lt;0&gt;, class Translation  = std::ratio&lt;0&gt;&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::ratio_add&lt;std::ratio_multiply&lt;typename BaseUnit::conversion_ratio, Translation&gt;, typename BaseUnit::translation_ratio&gt; <a class="el" href="structunits_1_1unit.html">units::unit</a>&lt; Conversion, BaseUnit, PiExponent, Translation &gt;::<a class="el" href="structunits_1_1unit.html#a0cdaa6959c83b6ddb1038d99a31e7814">translation_ratio</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li>units/<a class="el" href="base_8h_source.html">base.h</a></li>
 </ul>
 </div><!-- contents -->
@@ -152,7 +213,7 @@ struct units::unit&lt; Conversion, BaseUnit, PiExponent, Translation &gt;</div><
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceunits.html">units</a></li><li class="navelem"><a class="el" href="structunits_1_1unit.html">unit</a></li>
-    <li class="footer">Generated on Fri Oct 29 2021 07:12:30 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Oct 29 2021 22:10:08 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-31-ga939cd9</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-32-g2cb171f</span>
    </div>
   </td>
  </tr>
@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('classwpi_1_1_managed_static.html','');
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="classwpi_1_1_managed_static.html" title="ManagedStatic - This transparently changes the behavior of global statics to be lazily constructed on...">ManagedStatic</a> - This transparently changes the behavior of global statics to be lazily constructed on demand (good for reducing startup times of dynamic libraries that link in LLVM components) and for making destruction be explicit through the wpi_shutdown() function call.  
+<p><a class="el" href="classwpi_1_1_managed_static.html" title="ManagedStatic - This transparently changes the behavior of global statics to be lazily constructed on...">ManagedStatic</a> - This transparently changes the behavior of global statics to be lazily constructed on demand (good for reducing startup times of dynamic libraries that link in LLVM components) and for making destruction be explicit through the <a class="el" href="namespacewpi.html#a78b4698ef29b2bb9cc6d24902b6b5799" title="wpi_shutdown - Deallocate and destroy all ManagedStatic variables.">wpi_shutdown()</a> function call.  
  <a href="classwpi_1_1_managed_static.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_managed_static_8h_source.html">wpi/ManagedStatic.h</a>&gt;</code></p>
@@ -114,54 +114,219 @@ Inheritance diagram for wpi::ManagedStatic&lt; C, Creator, Deleter &gt;:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad471a46160a7b6eee340d0b4d3801322"><td class="memItemLeft" align="right" valign="top"><a id="ad471a46160a7b6eee340d0b4d3801322" name="ad471a46160a7b6eee340d0b4d3801322"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ManagedStatic</b> (C *created, void(*deleter)(void *))</td></tr>
+<tr class="memitem:a50db33f3ff6a245384b34376b209f441"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_managed_static.html#a50db33f3ff6a245384b34376b209f441">ManagedStatic</a> ()=default</td></tr>
+<tr class="separator:a50db33f3ff6a245384b34376b209f441"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad471a46160a7b6eee340d0b4d3801322"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_managed_static.html#ad471a46160a7b6eee340d0b4d3801322">ManagedStatic</a> (C *created, void(*deleter)(void *))</td></tr>
 <tr class="separator:ad471a46160a7b6eee340d0b4d3801322"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55b80d0754ee06d7a98181eae3461355"><td class="memItemLeft" align="right" valign="top"><a id="a55b80d0754ee06d7a98181eae3461355" name="a55b80d0754ee06d7a98181eae3461355"></a>
-C &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> ()</td></tr>
+<tr class="memitem:a55b80d0754ee06d7a98181eae3461355"><td class="memItemLeft" align="right" valign="top">C &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_managed_static.html#a55b80d0754ee06d7a98181eae3461355">operator*</a> ()</td></tr>
 <tr class="separator:a55b80d0754ee06d7a98181eae3461355"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaede7307c2b890250f74b7c9f5c2bf47"><td class="memItemLeft" align="right" valign="top"><a id="aaede7307c2b890250f74b7c9f5c2bf47" name="aaede7307c2b890250f74b7c9f5c2bf47"></a>
-C *&#160;</td><td class="memItemRight" valign="bottom"><b>operator-&gt;</b> ()</td></tr>
+<tr class="memitem:aaede7307c2b890250f74b7c9f5c2bf47"><td class="memItemLeft" align="right" valign="top">C *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_managed_static.html#aaede7307c2b890250f74b7c9f5c2bf47">operator-&gt;</a> ()</td></tr>
 <tr class="separator:aaede7307c2b890250f74b7c9f5c2bf47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc81802c8ca6c0bfe5a7920fc6143d29"><td class="memItemLeft" align="right" valign="top"><a id="abc81802c8ca6c0bfe5a7920fc6143d29" name="abc81802c8ca6c0bfe5a7920fc6143d29"></a>
-const C &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> () const</td></tr>
+<tr class="memitem:abc81802c8ca6c0bfe5a7920fc6143d29"><td class="memItemLeft" align="right" valign="top">const C &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_managed_static.html#abc81802c8ca6c0bfe5a7920fc6143d29">operator*</a> () const</td></tr>
 <tr class="separator:abc81802c8ca6c0bfe5a7920fc6143d29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a574f47de30fb4ec8b13942ad2260d430"><td class="memItemLeft" align="right" valign="top"><a id="a574f47de30fb4ec8b13942ad2260d430" name="a574f47de30fb4ec8b13942ad2260d430"></a>
-const C *&#160;</td><td class="memItemRight" valign="bottom"><b>operator-&gt;</b> () const</td></tr>
+<tr class="memitem:a574f47de30fb4ec8b13942ad2260d430"><td class="memItemLeft" align="right" valign="top">const C *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_managed_static.html#a574f47de30fb4ec8b13942ad2260d430">operator-&gt;</a> () const</td></tr>
 <tr class="separator:a574f47de30fb4ec8b13942ad2260d430"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classwpi_1_1_managed_static_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classwpi_1_1_managed_static_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classwpi_1_1_managed_static_base.html">wpi::ManagedStaticBase</a></td></tr>
-<tr class="memitem:ab1ccc6c654666fe9b9da93144180eb2a inherit pub_methods_classwpi_1_1_managed_static_base"><td class="memItemLeft" align="right" valign="top"><a id="ab1ccc6c654666fe9b9da93144180eb2a" name="ab1ccc6c654666fe9b9da93144180eb2a"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isConstructed</b> () const</td></tr>
-<tr class="memdesc:ab1ccc6c654666fe9b9da93144180eb2a inherit pub_methods_classwpi_1_1_managed_static_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">isConstructed - Return true if this object has not been created yet. <br /></td></tr>
+<tr class="memitem:ab1ccc6c654666fe9b9da93144180eb2a inherit pub_methods_classwpi_1_1_managed_static_base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_managed_static_base.html#ab1ccc6c654666fe9b9da93144180eb2a">isConstructed</a> () const</td></tr>
+<tr class="memdesc:ab1ccc6c654666fe9b9da93144180eb2a inherit pub_methods_classwpi_1_1_managed_static_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">isConstructed - Return true if this object has not been created yet.  <a href="classwpi_1_1_managed_static_base.html#ab1ccc6c654666fe9b9da93144180eb2a">More...</a><br /></td></tr>
 <tr class="separator:ab1ccc6c654666fe9b9da93144180eb2a inherit pub_methods_classwpi_1_1_managed_static_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2dbcfbe2bdb72bc42edbef89313482a6 inherit pub_methods_classwpi_1_1_managed_static_base"><td class="memItemLeft" align="right" valign="top"><a id="a2dbcfbe2bdb72bc42edbef89313482a6" name="a2dbcfbe2bdb72bc42edbef89313482a6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>destroy</b> () const</td></tr>
+<tr class="memitem:a2dbcfbe2bdb72bc42edbef89313482a6 inherit pub_methods_classwpi_1_1_managed_static_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_managed_static_base.html#a2dbcfbe2bdb72bc42edbef89313482a6">destroy</a> () const</td></tr>
 <tr class="separator:a2dbcfbe2bdb72bc42edbef89313482a6 inherit pub_methods_classwpi_1_1_managed_static_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_classwpi_1_1_managed_static_base"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classwpi_1_1_managed_static_base')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classwpi_1_1_managed_static_base.html">wpi::ManagedStaticBase</a></td></tr>
-<tr class="memitem:afa0532a6e0a8461de0cf3ff6281d1088 inherit pro_methods_classwpi_1_1_managed_static_base"><td class="memItemLeft" align="right" valign="top"><a id="afa0532a6e0a8461de0cf3ff6281d1088" name="afa0532a6e0a8461de0cf3ff6281d1088"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterManagedStatic</b> (void *(*creator)(), void(*deleter)(void *)) const</td></tr>
+<tr class="memitem:afa0532a6e0a8461de0cf3ff6281d1088 inherit pro_methods_classwpi_1_1_managed_static_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_managed_static_base.html#afa0532a6e0a8461de0cf3ff6281d1088">RegisterManagedStatic</a> (void *(*creator)(), void(*deleter)(void *)) const</td></tr>
 <tr class="separator:afa0532a6e0a8461de0cf3ff6281d1088 inherit pro_methods_classwpi_1_1_managed_static_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2e13e8ce3be477485cc19a44226c15d inherit pro_methods_classwpi_1_1_managed_static_base"><td class="memItemLeft" align="right" valign="top"><a id="ac2e13e8ce3be477485cc19a44226c15d" name="ac2e13e8ce3be477485cc19a44226c15d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterManagedStatic</b> (void *created, void(*deleter)(void *)) const</td></tr>
+<tr class="memitem:ac2e13e8ce3be477485cc19a44226c15d inherit pro_methods_classwpi_1_1_managed_static_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_managed_static_base.html#ac2e13e8ce3be477485cc19a44226c15d">RegisterManagedStatic</a> (void *created, void(*deleter)(void *)) const</td></tr>
 <tr class="separator:ac2e13e8ce3be477485cc19a44226c15d inherit pro_methods_classwpi_1_1_managed_static_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classwpi_1_1_managed_static_base"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classwpi_1_1_managed_static_base')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classwpi_1_1_managed_static_base.html">wpi::ManagedStaticBase</a></td></tr>
-<tr class="memitem:afcb41212f82e31d06b6a9a5fad64ffaf inherit pro_attribs_classwpi_1_1_managed_static_base"><td class="memItemLeft" align="right" valign="top"><a id="afcb41212f82e31d06b6a9a5fad64ffaf" name="afcb41212f82e31d06b6a9a5fad64ffaf"></a>
-std::atomic&lt; void * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Ptr</b></td></tr>
+<tr class="memitem:afcb41212f82e31d06b6a9a5fad64ffaf inherit pro_attribs_classwpi_1_1_managed_static_base"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; void * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_managed_static_base.html#afcb41212f82e31d06b6a9a5fad64ffaf">Ptr</a></td></tr>
 <tr class="separator:afcb41212f82e31d06b6a9a5fad64ffaf inherit pro_attribs_classwpi_1_1_managed_static_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80556703b2bdb7df2c79598701e65674 inherit pro_attribs_classwpi_1_1_managed_static_base"><td class="memItemLeft" align="right" valign="top"><a id="a80556703b2bdb7df2c79598701e65674" name="a80556703b2bdb7df2c79598701e65674"></a>
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>DeleterFn</b> )(void *)</td></tr>
+<tr class="memitem:a80556703b2bdb7df2c79598701e65674 inherit pro_attribs_classwpi_1_1_managed_static_base"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_managed_static_base.html#a80556703b2bdb7df2c79598701e65674">DeleterFn</a> )(void *)</td></tr>
 <tr class="separator:a80556703b2bdb7df2c79598701e65674 inherit pro_attribs_classwpi_1_1_managed_static_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35695aa540164c4ac35f1b6a675ce88e inherit pro_attribs_classwpi_1_1_managed_static_base"><td class="memItemLeft" align="right" valign="top"><a id="a35695aa540164c4ac35f1b6a675ce88e" name="a35695aa540164c4ac35f1b6a675ce88e"></a>
-const <a class="el" href="classwpi_1_1_managed_static_base.html">ManagedStaticBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>Next</b></td></tr>
+<tr class="memitem:a35695aa540164c4ac35f1b6a675ce88e inherit pro_attribs_classwpi_1_1_managed_static_base"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classwpi_1_1_managed_static_base.html">ManagedStaticBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_managed_static_base.html#a35695aa540164c4ac35f1b6a675ce88e">Next</a></td></tr>
 <tr class="separator:a35695aa540164c4ac35f1b6a675ce88e inherit pro_attribs_classwpi_1_1_managed_static_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;class C, class Creator = object_creator&lt;C&gt;, class Deleter = object_deleter&lt;C&gt;&gt;<br />
-class wpi::ManagedStatic&lt; C, Creator, Deleter &gt;</div><p ><a class="el" href="classwpi_1_1_managed_static.html" title="ManagedStatic - This transparently changes the behavior of global statics to be lazily constructed on...">ManagedStatic</a> - This transparently changes the behavior of global statics to be lazily constructed on demand (good for reducing startup times of dynamic libraries that link in LLVM components) and for making destruction be explicit through the wpi_shutdown() function call. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+class wpi::ManagedStatic&lt; C, Creator, Deleter &gt;</div><p ><a class="el" href="classwpi_1_1_managed_static.html" title="ManagedStatic - This transparently changes the behavior of global statics to be lazily constructed on...">ManagedStatic</a> - This transparently changes the behavior of global statics to be lazily constructed on demand (good for reducing startup times of dynamic libraries that link in LLVM components) and for making destruction be explicit through the <a class="el" href="namespacewpi.html#a78b4698ef29b2bb9cc6d24902b6b5799" title="wpi_shutdown - Deallocate and destroy all ManagedStatic variables.">wpi_shutdown()</a> function call. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a50db33f3ff6a245384b34376b209f441" name="a50db33f3ff6a245384b34376b209f441"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50db33f3ff6a245384b34376b209f441">&#9670;&nbsp;</a></span>ManagedStatic() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class C , class Creator  = object_creator&lt;C&gt;, class Deleter  = object_deleter&lt;C&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwpi_1_1_managed_static.html">wpi::ManagedStatic</a>&lt; C, Creator, Deleter &gt;::<a class="el" href="classwpi_1_1_managed_static.html">ManagedStatic</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad471a46160a7b6eee340d0b4d3801322" name="ad471a46160a7b6eee340d0b4d3801322"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad471a46160a7b6eee340d0b4d3801322">&#9670;&nbsp;</a></span>ManagedStatic() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class C , class Creator  = object_creator&lt;C&gt;, class Deleter  = object_deleter&lt;C&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwpi_1_1_managed_static.html">wpi::ManagedStatic</a>&lt; C, Creator, Deleter &gt;::<a class="el" href="classwpi_1_1_managed_static.html">ManagedStatic</a> </td>
+          <td>(</td>
+          <td class="paramtype">C *&#160;</td>
+          <td class="paramname"><em>created</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(*)(void *)&#160;</td>
+          <td class="paramname"><em>deleter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a55b80d0754ee06d7a98181eae3461355" name="a55b80d0754ee06d7a98181eae3461355"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55b80d0754ee06d7a98181eae3461355">&#9670;&nbsp;</a></span>operator*() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class C , class Creator  = object_creator&lt;C&gt;, class Deleter  = object_deleter&lt;C&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">C &amp; <a class="el" href="classwpi_1_1_managed_static.html">wpi::ManagedStatic</a>&lt; C, Creator, Deleter &gt;::operator* </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abc81802c8ca6c0bfe5a7920fc6143d29" name="abc81802c8ca6c0bfe5a7920fc6143d29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc81802c8ca6c0bfe5a7920fc6143d29">&#9670;&nbsp;</a></span>operator*() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class C , class Creator  = object_creator&lt;C&gt;, class Deleter  = object_deleter&lt;C&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const C &amp; <a class="el" href="classwpi_1_1_managed_static.html">wpi::ManagedStatic</a>&lt; C, Creator, Deleter &gt;::operator* </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaede7307c2b890250f74b7c9f5c2bf47" name="aaede7307c2b890250f74b7c9f5c2bf47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaede7307c2b890250f74b7c9f5c2bf47">&#9670;&nbsp;</a></span>operator-&gt;() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class C , class Creator  = object_creator&lt;C&gt;, class Deleter  = object_deleter&lt;C&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">C * <a class="el" href="classwpi_1_1_managed_static.html">wpi::ManagedStatic</a>&lt; C, Creator, Deleter &gt;::operator-&gt; </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a574f47de30fb4ec8b13942ad2260d430" name="a574f47de30fb4ec8b13942ad2260d430"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a574f47de30fb4ec8b13942ad2260d430">&#9670;&nbsp;</a></span>operator-&gt;() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class C , class Creator  = object_creator&lt;C&gt;, class Deleter  = object_deleter&lt;C&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const C * <a class="el" href="classwpi_1_1_managed_static.html">wpi::ManagedStatic</a>&lt; C, Creator, Deleter &gt;::operator-&gt; </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>wpi/<a class="el" href="_managed_static_8h_source.html">ManagedStatic.h</a></li>
 </ul>
 </div><!-- contents -->
@@ -169,8 +334,8 @@ class wpi::ManagedStatic&lt; C, Creator, Deleter &gt;</div><p ><a class="el" hre
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>wpi</b></li><li class="navelem"><a class="el" href="classwpi_1_1_managed_static.html">ManagedStatic</a></li>
-    <li class="footer">Generated on Fri Oct 29 2021 07:12:30 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="classwpi_1_1_managed_static.html">ManagedStatic</a></li>
+    <li class="footer">Generated on Fri Oct 29 2021 22:10:09 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

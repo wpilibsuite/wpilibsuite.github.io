@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-31-ga939cd9</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-32-g2cb171f</span>
    </div>
   </td>
  </tr>
@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('_watchdog_8h_source.html',''); initRes
   <div class="headertitle"><div class="title">Watchdog.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
+<a href="_watchdog_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Open Source Software; you can modify and/or share it under the terms of</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// the WPILib BSD license file in the root directory of this project.</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
@@ -104,11 +104,11 @@ $(document).ready(function(){initNavTree('_watchdog_8h_source.html',''); initRes
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;string_view&gt;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;utility&gt;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;units/time.h&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;<a class="code" href="time_8h.html">units/time.h</a>&gt;</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;frc/Tracer.h&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="_tracer_8h.html">frc/Tracer.h</a>&quot;</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span>frc {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacefrc.html">frc</a> {</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"></span> </div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">/**</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> * A class that&#39;s a wrapper around a watchdog timer.</span></div>
@@ -131,15 +131,15 @@ $(document).ready(function(){initNavTree('_watchdog_8h_source.html',''); initRes
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="classfrc_1_1_watchdog.html#af466c4a726aa55292216af925b400b7e">   35</a></span>  <a class="code hl_function" href="classfrc_1_1_watchdog.html#af466c4a726aa55292216af925b400b7e">Watchdog</a>(units::second_t timeout, std::function&lt;<span class="keywordtype">void</span>()&gt; callback);</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Callable, <span class="keyword">typename</span> Arg, <span class="keyword">typename</span>... Args&gt;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <a class="code hl_function" href="classfrc_1_1_watchdog.html#af466c4a726aa55292216af925b400b7e">Watchdog</a>(units::second_t timeout, Callable&amp;&amp; f, Arg&amp;&amp; arg, Args&amp;&amp;... args)</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classfrc_1_1_watchdog.html#aaf50fdb91b2eadd066e7f5854c849c4d">   38</a></span>  <a class="code hl_function" href="classfrc_1_1_watchdog.html#aaf50fdb91b2eadd066e7f5854c849c4d">Watchdog</a>(units::second_t timeout, Callable&amp;&amp; f, Arg&amp;&amp; <a class="code hl_function" href="core_8h.html#a2c8e80c1b1c8b7747e99b8e9a24a0429">arg</a>, Args&amp;&amp;... args)</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>      : <a class="code hl_class" href="classfrc_1_1_watchdog.html">Watchdog</a>(timeout,</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                 std::bind(std::forward&lt;Callable&gt;(f), std::forward&lt;Arg&gt;(arg),</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                           std::forward&lt;Args&gt;(args)...)) {}</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                 <a class="code hl_namespace" href="namespacestd.html">std</a>::bind(<a class="code hl_namespace" href="namespacestd.html">std</a>::forward&lt;Callable&gt;(f), <a class="code hl_namespace" href="namespacestd.html">std</a>::forward&lt;Arg&gt;(<a class="code hl_function" href="core_8h.html#a2c8e80c1b1c8b7747e99b8e9a24a0429">arg</a>),</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                           <a class="code hl_namespace" href="namespacestd.html">std</a>::forward&lt;Args&gt;(args)...)) {}</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <a class="code hl_class" href="classfrc_1_1_watchdog.html">~Watchdog</a>();</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classfrc_1_1_watchdog.html#aa5748acc01dfa554babf7f98560dae90">   43</a></span>  <a class="code hl_function" href="classfrc_1_1_watchdog.html#aa5748acc01dfa554babf7f98560dae90">~Watchdog</a>();</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <a class="code hl_function" href="classfrc_1_1_watchdog.html#af466c4a726aa55292216af925b400b7e">Watchdog</a>(<a class="code hl_class" href="classfrc_1_1_watchdog.html">Watchdog</a>&amp;&amp; rhs);</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <a class="code hl_class" href="classfrc_1_1_watchdog.html">Watchdog</a>&amp; operator=(<a class="code hl_class" href="classfrc_1_1_watchdog.html">Watchdog</a>&amp;&amp; rhs);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classfrc_1_1_watchdog.html#a583c054b7a8eef1822877752028620c1">   45</a></span>  <a class="code hl_function" href="classfrc_1_1_watchdog.html#a583c054b7a8eef1822877752028620c1">Watchdog</a>(<a class="code hl_class" href="classfrc_1_1_watchdog.html">Watchdog</a>&amp;&amp; rhs);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classfrc_1_1_watchdog.html#a5450300b12616a03ab289bef50152878">   46</a></span>  <a class="code hl_class" href="classfrc_1_1_watchdog.html">Watchdog</a>&amp; <a class="code hl_function" href="classfrc_1_1_watchdog.html#a5450300b12616a03ab289bef50152878">operator=</a>(<a class="code hl_class" href="classfrc_1_1_watchdog.html">Watchdog</a>&amp;&amp; rhs);</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment"></span> </div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">   * Returns the time since the watchdog was last fed.</span></div>
@@ -172,7 +172,7 @@ $(document).ready(function(){initNavTree('_watchdog_8h_source.html',''); initRes
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment">   *</span></div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment">   * @param epochName The name to associate with the epoch.</span></div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="classfrc_1_1_watchdog.html#a9bec44e4063d4750f1cc77a2a08440eb">   79</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_watchdog.html#a9bec44e4063d4750f1cc77a2a08440eb">AddEpoch</a>(std::string_view epochName);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="classfrc_1_1_watchdog.html#a9bec44e4063d4750f1cc77a2a08440eb">   79</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_watchdog.html#a9bec44e4063d4750f1cc77a2a08440eb">AddEpoch</a>(<a class="code hl_typedef" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> epochName);</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment"></span> </div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="comment">   * Prints list of epochs added so far and their times.</span></div>
@@ -224,32 +224,43 @@ $(document).ready(function(){initNavTree('_watchdog_8h_source.html',''); initRes
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>  <span class="keyword">class </span>Impl;</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>  Impl* m_impl;</div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>  <span class="keywordtype">bool</span> operator&gt;(<span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_watchdog.html">Watchdog</a>&amp; rhs) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="namespacewpi.html#af9f5d37ffdbdece9dc4a138912d2384d">operator&gt;</a>(<span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_watchdog.html">Watchdog</a>&amp; rhs) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>  <span class="keyword">static</span> Impl* GetImpl();</div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>};</div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>}  <span class="comment">// namespace frc</span></div>
+<div class="ttc" id="a_tracer_8h_html"><div class="ttname"><a href="_tracer_8h.html">Tracer.h</a></div></div>
 <div class="ttc" id="aclassfrc_1_1_tracer_html"><div class="ttname"><a href="classfrc_1_1_tracer.html">frc::Tracer</a></div><div class="ttdoc">A class for keeping track of how much time it takes for different parts of code to execute.</div><div class="ttdef"><b>Definition:</b> Tracer.h:26</div></div>
 <div class="ttc" id="aclassfrc_1_1_watchdog_html"><div class="ttname"><a href="classfrc_1_1_watchdog.html">frc::Watchdog</a></div><div class="ttdoc">A class that's a wrapper around a watchdog timer.</div><div class="ttdef"><b>Definition:</b> Watchdog.h:26</div></div>
+<div class="ttc" id="aclassfrc_1_1_watchdog_html_a5450300b12616a03ab289bef50152878"><div class="ttname"><a href="classfrc_1_1_watchdog.html#a5450300b12616a03ab289bef50152878">frc::Watchdog::operator=</a></div><div class="ttdeci">Watchdog &amp; operator=(Watchdog &amp;&amp;rhs)</div></div>
+<div class="ttc" id="aclassfrc_1_1_watchdog_html_a583c054b7a8eef1822877752028620c1"><div class="ttname"><a href="classfrc_1_1_watchdog.html#a583c054b7a8eef1822877752028620c1">frc::Watchdog::Watchdog</a></div><div class="ttdeci">Watchdog(Watchdog &amp;&amp;rhs)</div></div>
 <div class="ttc" id="aclassfrc_1_1_watchdog_html_a6fd1c5ad30040101b26a62261e3d029e"><div class="ttname"><a href="classfrc_1_1_watchdog.html#a6fd1c5ad30040101b26a62261e3d029e">frc::Watchdog::IsExpired</a></div><div class="ttdeci">bool IsExpired() const</div><div class="ttdoc">Returns true if the watchdog timer has expired.</div></div>
 <div class="ttc" id="aclassfrc_1_1_watchdog_html_a854390dec35d194be1e04330a6aae7a8"><div class="ttname"><a href="classfrc_1_1_watchdog.html#a854390dec35d194be1e04330a6aae7a8">frc::Watchdog::GetTime</a></div><div class="ttdeci">units::second_t GetTime() const</div><div class="ttdoc">Returns the time since the watchdog was last fed.</div></div>
 <div class="ttc" id="aclassfrc_1_1_watchdog_html_a87c3ccb5871c216a19fde16574b36290"><div class="ttname"><a href="classfrc_1_1_watchdog.html#a87c3ccb5871c216a19fde16574b36290">frc::Watchdog::Disable</a></div><div class="ttdeci">void Disable()</div><div class="ttdoc">Disables the watchdog timer.</div></div>
 <div class="ttc" id="aclassfrc_1_1_watchdog_html_a9bec44e4063d4750f1cc77a2a08440eb"><div class="ttname"><a href="classfrc_1_1_watchdog.html#a9bec44e4063d4750f1cc77a2a08440eb">frc::Watchdog::AddEpoch</a></div><div class="ttdeci">void AddEpoch(std::string_view epochName)</div><div class="ttdoc">Adds time since last epoch to the list printed by PrintEpochs().</div></div>
 <div class="ttc" id="aclassfrc_1_1_watchdog_html_a9daffd96fcc3e427ddff5be98417704a"><div class="ttname"><a href="classfrc_1_1_watchdog.html#a9daffd96fcc3e427ddff5be98417704a">frc::Watchdog::SuppressTimeoutMessage</a></div><div class="ttdeci">void SuppressTimeoutMessage(bool suppress)</div><div class="ttdoc">Enable or disable suppression of the generic timeout message.</div></div>
+<div class="ttc" id="aclassfrc_1_1_watchdog_html_aa5748acc01dfa554babf7f98560dae90"><div class="ttname"><a href="classfrc_1_1_watchdog.html#aa5748acc01dfa554babf7f98560dae90">frc::Watchdog::~Watchdog</a></div><div class="ttdeci">~Watchdog()</div></div>
+<div class="ttc" id="aclassfrc_1_1_watchdog_html_aaf50fdb91b2eadd066e7f5854c849c4d"><div class="ttname"><a href="classfrc_1_1_watchdog.html#aaf50fdb91b2eadd066e7f5854c849c4d">frc::Watchdog::Watchdog</a></div><div class="ttdeci">Watchdog(units::second_t timeout, Callable &amp;&amp;f, Arg &amp;&amp;arg, Args &amp;&amp;... args)</div><div class="ttdef"><b>Definition:</b> Watchdog.h:38</div></div>
 <div class="ttc" id="aclassfrc_1_1_watchdog_html_aca268b2b351e5286aa3166e3db5451d6"><div class="ttname"><a href="classfrc_1_1_watchdog.html#aca268b2b351e5286aa3166e3db5451d6">frc::Watchdog::Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdoc">Resets the watchdog timer.</div></div>
 <div class="ttc" id="aclassfrc_1_1_watchdog_html_adac6704a2b814e57f1921db612aa0b92"><div class="ttname"><a href="classfrc_1_1_watchdog.html#adac6704a2b814e57f1921db612aa0b92">frc::Watchdog::GetTimeout</a></div><div class="ttdeci">units::second_t GetTimeout() const</div><div class="ttdoc">Returns the watchdog's timeout.</div></div>
 <div class="ttc" id="aclassfrc_1_1_watchdog_html_adbf21b5f221c80544d439bfebbb76772"><div class="ttname"><a href="classfrc_1_1_watchdog.html#adbf21b5f221c80544d439bfebbb76772">frc::Watchdog::Enable</a></div><div class="ttdeci">void Enable()</div><div class="ttdoc">Enables the watchdog timer.</div></div>
 <div class="ttc" id="aclassfrc_1_1_watchdog_html_af3a170ce0e1b2d2d4d84914e1ffa7e9f"><div class="ttname"><a href="classfrc_1_1_watchdog.html#af3a170ce0e1b2d2d4d84914e1ffa7e9f">frc::Watchdog::SetTimeout</a></div><div class="ttdeci">void SetTimeout(units::second_t timeout)</div><div class="ttdoc">Sets the watchdog's timeout.</div></div>
 <div class="ttc" id="aclassfrc_1_1_watchdog_html_af466c4a726aa55292216af925b400b7e"><div class="ttname"><a href="classfrc_1_1_watchdog.html#af466c4a726aa55292216af925b400b7e">frc::Watchdog::Watchdog</a></div><div class="ttdeci">Watchdog(units::second_t timeout, std::function&lt; void()&gt; callback)</div><div class="ttdoc">Watchdog constructor.</div></div>
 <div class="ttc" id="aclassfrc_1_1_watchdog_html_afed0766fe7a562022a43fe9202221468"><div class="ttname"><a href="classfrc_1_1_watchdog.html#afed0766fe7a562022a43fe9202221468">frc::Watchdog::PrintEpochs</a></div><div class="ttdeci">void PrintEpochs()</div><div class="ttdoc">Prints list of epochs added so far and their times.</div></div>
+<div class="ttc" id="acore_8h_html_a204ca715c2febee035464fa53dfc50c4"><div class="ttname"><a href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">string_view</a></div><div class="ttdeci">basic_string_view&lt; char &gt; string_view</div><div class="ttdef"><b>Definition:</b> core.h:529</div></div>
+<div class="ttc" id="acore_8h_html_a2c8e80c1b1c8b7747e99b8e9a24a0429"><div class="ttname"><a href="core_8h.html#a2c8e80c1b1c8b7747e99b8e9a24a0429">arg</a></div><div class="ttdeci">auto arg(const Char *name, const T &amp;arg) -&gt; detail::named_arg&lt; Char, T &gt;</div><div class="ttdoc">\rst Returns a named argument to be used in a formatting function.</div><div class="ttdef"><b>Definition:</b> core.h:1725</div></div>
+<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> CameraServerShared.h:13</div></div>
+<div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> json.h:8010</div></div>
+<div class="ttc" id="anamespacewpi_html_af9f5d37ffdbdece9dc4a138912d2384d"><div class="ttname"><a href="namespacewpi.html#af9f5d37ffdbdece9dc4a138912d2384d">wpi::operator&gt;</a></div><div class="ttdeci">bool operator&gt;(const StringMap&lt; ValueTy &gt; &amp;lhs, const StringMap&lt; ValueTy &gt; &amp;rhs)</div><div class="ttdef"><b>Definition:</b> StringMap.h:625</div></div>
+<div class="ttc" id="atime_8h_html"><div class="ttname"><a href="time_8h.html">time.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><b>Watchdog.h</b></li>
-    <li class="footer">Generated on Fri Oct 29 2021 07:12:14 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="_watchdog_8h.html">Watchdog.h</a></li>
+    <li class="footer">Generated on Fri Oct 29 2021 22:09:51 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

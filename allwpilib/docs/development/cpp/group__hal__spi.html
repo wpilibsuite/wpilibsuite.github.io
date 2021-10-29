@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-31-ga939cd9</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-32-g2cb171f</span>
    </div>
   </td>
  </tr>
@@ -108,7 +108,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ga390d8bf5857ea987a606b47394f75e19"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__spi.html#ga390d8bf5857ea987a606b47394f75e19">HAL_WriteSPI</a> (HAL_SPIPort port, const uint8_t *dataToSend, int32_t sendSize)</td></tr>
 <tr class="memdesc:ga390d8bf5857ea987a606b47394f75e19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes a write transaction with the device.  <a href="group__hal__spi.html#ga390d8bf5857ea987a606b47394f75e19">More...</a><br /></td></tr>
 <tr class="separator:ga390d8bf5857ea987a606b47394f75e19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2ac079dcc211039fccff72ac75e41f0a"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__spi.html#ga2ac079dcc211039fccff72ac75e41f0a">HAL_ReadSPI</a> (HAL_SPIPort port, uint8_t *<a class="el" href="classbuffer.html">buffer</a>, int32_t count)</td></tr>
+<tr class="memitem:ga2ac079dcc211039fccff72ac75e41f0a"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__spi.html#ga2ac079dcc211039fccff72ac75e41f0a">HAL_ReadSPI</a> (HAL_SPIPort port, uint8_t *<a class="el" href="classbuffer.html">buffer</a>, int32_t <a class="el" href="core_8h.html#a66b93840aa6a29b3802202f99668f78a">count</a>)</td></tr>
 <tr class="memdesc:ga2ac079dcc211039fccff72ac75e41f0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes a read from the device.  <a href="group__hal__spi.html#ga2ac079dcc211039fccff72ac75e41f0a">More...</a><br /></td></tr>
 <tr class="separator:ga2ac079dcc211039fccff72ac75e41f0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6c79f2c1a53777af8912dd29efe6f78e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__spi.html#ga6c79f2c1a53777af8912dd29efe6f78e">HAL_CloseSPI</a> (HAL_SPIPort port)</td></tr>
@@ -117,7 +117,7 @@ Functions</h2></td></tr>
 <tr class="memitem:gaa20dfef106257122f9b915c93bd28d3b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__spi.html#gaa20dfef106257122f9b915c93bd28d3b">HAL_SetSPISpeed</a> (HAL_SPIPort port, int32_t speed)</td></tr>
 <tr class="memdesc:gaa20dfef106257122f9b915c93bd28d3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the clock speed for the SPI bus.  <a href="group__hal__spi.html#gaa20dfef106257122f9b915c93bd28d3b">More...</a><br /></td></tr>
 <tr class="separator:gaa20dfef106257122f9b915c93bd28d3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaead28e2b911d96f42c567ddcb2386224"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__spi.html#gaead28e2b911d96f42c567ddcb2386224">HAL_SetSPIOpts</a> (HAL_SPIPort port, HAL_Bool msbFirst, HAL_Bool sampleOnTrailing, HAL_Bool clkIdleHigh)</td></tr>
+<tr class="memitem:gaead28e2b911d96f42c567ddcb2386224"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__spi.html#gaead28e2b911d96f42c567ddcb2386224">HAL_SetSPIOpts</a> (HAL_SPIPort port, <a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a> msbFirst, <a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a> sampleOnTrailing, <a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a> clkIdleHigh)</td></tr>
 <tr class="memdesc:gaead28e2b911d96f42c567ddcb2386224"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the SPI options.  <a href="group__hal__spi.html#gaead28e2b911d96f42c567ddcb2386224">More...</a><br /></td></tr>
 <tr class="separator:gaead28e2b911d96f42c567ddcb2386224"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaef73b829767ac068975ce5d2c93e3b27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__spi.html#gaef73b829767ac068975ce5d2c93e3b27">HAL_SetSPIChipSelectActiveHigh</a> (HAL_SPIPort port, int32_t *status)</td></tr>
@@ -141,7 +141,7 @@ Functions</h2></td></tr>
 <tr class="memitem:gaeab0c9497b31c83f83e526df6f0c6758"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__spi.html#gaeab0c9497b31c83f83e526df6f0c6758">HAL_StartSPIAutoRate</a> (HAL_SPIPort port, double period, int32_t *status)</td></tr>
 <tr class="memdesc:gaeab0c9497b31c83f83e526df6f0c6758"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the period for automatic SPI accumulation.  <a href="group__hal__spi.html#gaeab0c9497b31c83f83e526df6f0c6758">More...</a><br /></td></tr>
 <tr class="separator:gaeab0c9497b31c83f83e526df6f0c6758"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaccf64c2bb95259438ad2c750de5d5482"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__spi.html#gaccf64c2bb95259438ad2c750de5d5482">HAL_StartSPIAutoTrigger</a> (HAL_SPIPort port, HAL_Handle digitalSourceHandle, HAL_AnalogTriggerType analogTriggerType, HAL_Bool triggerRising, HAL_Bool triggerFalling, int32_t *status)</td></tr>
+<tr class="memitem:gaccf64c2bb95259438ad2c750de5d5482"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__spi.html#gaccf64c2bb95259438ad2c750de5d5482">HAL_StartSPIAutoTrigger</a> (HAL_SPIPort port, <a class="el" href="group__hal__types.html#ga5d211f92ccd43d4a51d8212b29536ccd">HAL_Handle</a> digitalSourceHandle, HAL_AnalogTriggerType analogTriggerType, <a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a> triggerRising, <a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a> triggerFalling, int32_t *status)</td></tr>
 <tr class="memdesc:gaccf64c2bb95259438ad2c750de5d5482"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the auto SPI accumulator on a specific trigger.  <a href="group__hal__spi.html#gaccf64c2bb95259438ad2c750de5d5482">More...</a><br /></td></tr>
 <tr class="separator:gaccf64c2bb95259438ad2c750de5d5482"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga066adb08304046ab0137867ce88606e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__spi.html#ga066adb08304046ab0137867ce88606e4">HAL_StopSPIAuto</a> (HAL_SPIPort port, int32_t *status)</td></tr>
@@ -162,8 +162,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ga21450e78e5744b36151025a62aa07c22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__spi.html#ga21450e78e5744b36151025a62aa07c22">HAL_ConfigureSPIAutoStall</a> (HAL_SPIPort port, int32_t csToSclkTicks, int32_t stallTicks, int32_t pow2BytesPerRead, int32_t *status)</td></tr>
 <tr class="memdesc:ga21450e78e5744b36151025a62aa07c22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the Auto SPI Stall time between reads.  <a href="group__hal__spi.html#ga21450e78e5744b36151025a62aa07c22">More...</a><br /></td></tr>
 <tr class="separator:ga21450e78e5744b36151025a62aa07c22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae58880a5ca64d2a518180674610928a7"><td class="memItemLeft" align="right" valign="top"><a id="gae58880a5ca64d2a518180674610928a7" name="gae58880a5ca64d2a518180674610928a7"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_ENUM</b> (HAL_SPIPort)</td></tr>
+<tr class="memitem:gae58880a5ca64d2a518180674610928a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__spi.html#gae58880a5ca64d2a518180674610928a7">HAL_ENUM</a> (HAL_SPIPort)</td></tr>
 <tr class="separator:gae58880a5ca64d2a518180674610928a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -249,6 +248,24 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="gae58880a5ca64d2a518180674610928a7" name="gae58880a5ca64d2a518180674610928a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae58880a5ca64d2a518180674610928a7">&#9670;&nbsp;</a></span>HAL_ENUM()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HAL_ENUM </td>
+          <td>(</td>
+          <td class="paramtype">HAL_SPIPort&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -765,19 +782,19 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">HAL_Bool&#160;</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a>&#160;</td>
           <td class="paramname"><em>msbFirst</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">HAL_Bool&#160;</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a>&#160;</td>
           <td class="paramname"><em>sampleOnTrailing</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">HAL_Bool&#160;</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a>&#160;</td>
           <td class="paramname"><em>clkIdleHigh</em>&#160;</td>
         </tr>
         <tr>
@@ -897,7 +914,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">HAL_Handle&#160;</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#ga5d211f92ccd43d4a51d8212b29536ccd">HAL_Handle</a>&#160;</td>
           <td class="paramname"><em>digitalSourceHandle</em>, </td>
         </tr>
         <tr>
@@ -909,13 +926,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">HAL_Bool&#160;</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a>&#160;</td>
           <td class="paramname"><em>triggerRising</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">HAL_Bool&#160;</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a>&#160;</td>
           <td class="paramname"><em>triggerFalling</em>, </td>
         </tr>
         <tr>
@@ -1089,7 +1106,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Oct 29 2021 07:12:23 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Oct 29 2021 22:10:01 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

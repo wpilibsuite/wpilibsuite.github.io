@@ -1,8 +1,10 @@
 var classfrc_1_1_p_s4_controller =
 [
-    [ "Axis", "structfrc_1_1_p_s4_controller_1_1_axis.html", null ],
-    [ "Button", "structfrc_1_1_p_s4_controller_1_1_button.html", null ],
+    [ "Axis", "structfrc_1_1_p_s4_controller_1_1_axis.html", "structfrc_1_1_p_s4_controller_1_1_axis" ],
+    [ "Button", "structfrc_1_1_p_s4_controller_1_1_button.html", "structfrc_1_1_p_s4_controller_1_1_button" ],
     [ "PS4Controller", "classfrc_1_1_p_s4_controller.html#a8da5815a438fe4d07fec619a772aa7f3", null ],
+    [ "~PS4Controller", "classfrc_1_1_p_s4_controller.html#aebefb3596dc57d82b8a3d861fcdb6b0e", null ],
+    [ "PS4Controller", "classfrc_1_1_p_s4_controller.html#adfce9851e9901945d05fd250dd8bf538", null ],
     [ "GetCircleButton", "classfrc_1_1_p_s4_controller.html#a83437f884958564d68d489fab5473f87", null ],
     [ "GetCircleButtonPressed", "classfrc_1_1_p_s4_controller.html#a972fcfc6aeea1d18f82b50153d1c820d", null ],
     [ "GetCircleButtonReleased", "classfrc_1_1_p_s4_controller.html#af3da77ad531c2cd1fe2240da224d634c", null ],
@@ -50,5 +52,6 @@ var classfrc_1_1_p_s4_controller =
     [ "GetTouchpadReleased", "classfrc_1_1_p_s4_controller.html#a9f724e3c97ced244da7482ce2bd3561b", null ],
     [ "GetTriangleButton", "classfrc_1_1_p_s4_controller.html#a9176bb3c32e62bc6847395c4ffafffc0", null ],
     [ "GetTriangleButtonPressed", "classfrc_1_1_p_s4_controller.html#aab587418eda3bd7c9e6dca7e19f8369e", null ],
-    [ "GetTriangleButtonReleased", "classfrc_1_1_p_s4_controller.html#a94f7910d08e289a733d36d677d24c21d", null ]
+    [ "GetTriangleButtonReleased", "classfrc_1_1_p_s4_controller.html#a94f7910d08e289a733d36d677d24c21d", null ],
+    [ "operator=", "classfrc_1_1_p_s4_controller.html#ae1e37826165b20e0916ea0a4aeaefa20", null ]
 ];

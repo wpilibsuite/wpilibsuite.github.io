@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-31-ga939cd9</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-32-g2cb171f</span>
    </div>
   </td>
  </tr>
@@ -91,35 +91,86 @@ $(document).ready(function(){initNavTree('globals_eval.html',''); initResizable(
 </div>
 
 <div class="contents">
-&#160;<ul>
-<li>mpack_error_bug&#160;:&#160;<a class="el" href="group__common.html#gga9d9f282ca4183ab5190e09d04c1f74c4ae35afae5a24379821fa74315be1aa0d6">mpack.h</a></li>
-<li>mpack_error_data&#160;:&#160;<a class="el" href="group__common.html#gga9d9f282ca4183ab5190e09d04c1f74c4ae53cbed8fcc42915d71ae37d121b22e8">mpack.h</a></li>
-<li>mpack_error_eof&#160;:&#160;<a class="el" href="group__common.html#gga9d9f282ca4183ab5190e09d04c1f74c4a0b01d4850a0856cdf7a24bf22e3a5e14">mpack.h</a></li>
-<li>mpack_error_invalid&#160;:&#160;<a class="el" href="group__common.html#gga9d9f282ca4183ab5190e09d04c1f74c4a6d6111704fd59c034f9958c353c6da93">mpack.h</a></li>
-<li>mpack_error_io&#160;:&#160;<a class="el" href="group__common.html#gga9d9f282ca4183ab5190e09d04c1f74c4a6581b50527f1c278f852c91bea70f847">mpack.h</a></li>
-<li>mpack_error_memory&#160;:&#160;<a class="el" href="group__common.html#gga9d9f282ca4183ab5190e09d04c1f74c4a39db970382d81fc5a4b80dd0b61df5cf">mpack.h</a></li>
-<li>mpack_error_too_big&#160;:&#160;<a class="el" href="group__common.html#gga9d9f282ca4183ab5190e09d04c1f74c4a575cd33925a41fe7c157162b233b8308">mpack.h</a></li>
-<li>mpack_error_type&#160;:&#160;<a class="el" href="group__common.html#gga9d9f282ca4183ab5190e09d04c1f74c4ac91d0dcefbb9c7b9f41403bbc674aef2">mpack.h</a></li>
-<li>mpack_error_unsupported&#160;:&#160;<a class="el" href="group__common.html#gga9d9f282ca4183ab5190e09d04c1f74c4a8618d0842dfb9b10c09feccef4794eee">mpack.h</a></li>
-<li>mpack_ok&#160;:&#160;<a class="el" href="group__common.html#gga9d9f282ca4183ab5190e09d04c1f74c4a642a07519ef145fc9dd1068230c4a661">mpack.h</a></li>
-<li>mpack_type_array&#160;:&#160;<a class="el" href="group__common.html#gga22f03cf1240d5a917e1b3e7be8ab327eabc1bfe5856870df99fa51a39923e6349">mpack.h</a></li>
-<li>mpack_type_bin&#160;:&#160;<a class="el" href="group__common.html#gga22f03cf1240d5a917e1b3e7be8ab327ea7b364aaa7af779777366ab36df2b3eb6">mpack.h</a></li>
-<li>mpack_type_bool&#160;:&#160;<a class="el" href="group__common.html#gga22f03cf1240d5a917e1b3e7be8ab327ea09eeb9595c0537ed4cdf2b11a4dd4d59">mpack.h</a></li>
-<li>mpack_type_double&#160;:&#160;<a class="el" href="group__common.html#gga22f03cf1240d5a917e1b3e7be8ab327ea46d1cf5028e3a0113be8edd73648a7ca">mpack.h</a></li>
-<li>mpack_type_float&#160;:&#160;<a class="el" href="group__common.html#gga22f03cf1240d5a917e1b3e7be8ab327eab1614d2e0ffe43791a22db286b95d39b">mpack.h</a></li>
-<li>mpack_type_int&#160;:&#160;<a class="el" href="group__common.html#gga22f03cf1240d5a917e1b3e7be8ab327eab3ad5f31d28f4102ec5b9eee498f186e">mpack.h</a></li>
-<li>mpack_type_map&#160;:&#160;<a class="el" href="group__common.html#gga22f03cf1240d5a917e1b3e7be8ab327ea0cdc6eb2c069333405d0d23602f7006a">mpack.h</a></li>
-<li>mpack_type_missing&#160;:&#160;<a class="el" href="group__common.html#gga22f03cf1240d5a917e1b3e7be8ab327ea0f53cbbeba7fd1b87394980b832c3fb9">mpack.h</a></li>
-<li>mpack_type_nil&#160;:&#160;<a class="el" href="group__common.html#gga22f03cf1240d5a917e1b3e7be8ab327eaade66ddfcf1133c0ac00015ab26bd2b4">mpack.h</a></li>
-<li>mpack_type_str&#160;:&#160;<a class="el" href="group__common.html#gga22f03cf1240d5a917e1b3e7be8ab327ea1e84e3b33ffa7dfc3bde110bd9455d12">mpack.h</a></li>
-<li>mpack_type_uint&#160;:&#160;<a class="el" href="group__common.html#gga22f03cf1240d5a917e1b3e7be8ab327eae163adb67a277a223bbfe62ff3d42654">mpack.h</a></li>
+&#160;
+
+<h3><a id="index_c" name="index_c"></a>- c -</h3><ul>
+<li>CS_BAD_URL&#160;:&#160;<a class="el" href="group__cscore__c__api.html#ggafd2b8be5bc92a0a85ec51d40af1d1322a0a86d35502281c64d9e18df3651c2e5f">cscore_c.h</a></li>
+<li>CS_CONNECTION_AUTO_MANAGE&#160;:&#160;<a class="el" href="group__cscore__c__api.html#gga4a0bad578a21faca1701631a0d491875abb3f61f1699e3ab278f04139d81088e7">cscore_c.h</a></li>
+<li>CS_CONNECTION_FORCE_CLOSE&#160;:&#160;<a class="el" href="group__cscore__c__api.html#gga4a0bad578a21faca1701631a0d491875ae392aa533fc341587b547751c66c2baa">cscore_c.h</a></li>
+<li>CS_CONNECTION_KEEP_OPEN&#160;:&#160;<a class="el" href="group__cscore__c__api.html#gga4a0bad578a21faca1701631a0d491875ac373b70d521e151fa18598218e71de16">cscore_c.h</a></li>
+<li>CS_EMPTY_VALUE&#160;:&#160;<a class="el" href="group__cscore__c__api.html#ggafd2b8be5bc92a0a85ec51d40af1d1322a7c05f71ef1e74830a77484def90119a1">cscore_c.h</a></li>
+<li>CS_HTTP_AXIS&#160;:&#160;<a class="el" href="group__cscore__c__api.html#gga61ab6e0263fe88aa1da0e21fc25a5a4aaf06ad2e731561f9743538e8e95542ea6">cscore_c.h</a></li>
+<li>CS_HTTP_CSCORE&#160;:&#160;<a class="el" href="group__cscore__c__api.html#gga61ab6e0263fe88aa1da0e21fc25a5a4aa38ad8566d838beb5687ce1d93df4b15e">cscore_c.h</a></li>
+<li>CS_HTTP_MJPGSTREAMER&#160;:&#160;<a class="el" href="group__cscore__c__api.html#gga61ab6e0263fe88aa1da0e21fc25a5a4aa3659cfb297635baec275e2d03fe61347">cscore_c.h</a></li>
+<li>CS_HTTP_UNKNOWN&#160;:&#160;<a class="el" href="group__cscore__c__api.html#gga61ab6e0263fe88aa1da0e21fc25a5a4aad5d50238e7d5806819d2f605670cc8e2">cscore_c.h</a></li>
+<li>CS_INVALID_HANDLE&#160;:&#160;<a class="el" href="group__cscore__c__api.html#ggafd2b8be5bc92a0a85ec51d40af1d1322a6040fb5253a49bb534616abc1bb2eadf">cscore_c.h</a></li>
+<li>CS_INVALID_PROPERTY&#160;:&#160;<a class="el" href="group__cscore__c__api.html#ggafd2b8be5bc92a0a85ec51d40af1d1322aa91f4e9d8fd72a18bfddcb44e8c6c936">cscore_c.h</a></li>
+<li>CS_LOG_CRITICAL&#160;:&#160;<a class="el" href="group__cscore__c__api.html#gga387389ba85dfc7a8d8d1f4c714e0c8aba5628ddc3ef008d21cb32411307902606">cscore_c.h</a></li>
+<li>CS_LOG_DEBUG&#160;:&#160;<a class="el" href="group__cscore__c__api.html#gga387389ba85dfc7a8d8d1f4c714e0c8aba32ce212ddd6a37d017a5c157aa6096a2">cscore_c.h</a></li>
+<li>CS_LOG_DEBUG1&#160;:&#160;<a class="el" href="group__cscore__c__api.html#gga387389ba85dfc7a8d8d1f4c714e0c8aba3d330256634cc789b8f44ea617c4578e">cscore_c.h</a></li>
+<li>CS_LOG_DEBUG2&#160;:&#160;<a class="el" href="group__cscore__c__api.html#gga387389ba85dfc7a8d8d1f4c714e0c8aba895bb6a4c91ef7f8ce52eb50e23f5c0b">cscore_c.h</a></li>
+<li>CS_LOG_DEBUG3&#160;:&#160;<a class="el" href="group__cscore__c__api.html#gga387389ba85dfc7a8d8d1f4c714e0c8abab7caf431dfcfb4fb757adfed32581b63">cscore_c.h</a></li>
+<li>CS_LOG_DEBUG4&#160;:&#160;<a class="el" href="group__cscore__c__api.html#gga387389ba85dfc7a8d8d1f4c714e0c8abaa4b2f8338582eb3900f4315ef1cd1c5b">cscore_c.h</a></li>
+<li>CS_LOG_ERROR&#160;:&#160;<a class="el" href="group__cscore__c__api.html#gga387389ba85dfc7a8d8d1f4c714e0c8abaac484ecfeabfe38cbd727ca7e14e6eac">cscore_c.h</a></li>
+<li>CS_LOG_INFO&#160;:&#160;<a class="el" href="group__cscore__c__api.html#gga387389ba85dfc7a8d8d1f4c714e0c8aba82c90146fd37f0e044a56af2b543ce06">cscore_c.h</a></li>
+<li>CS_LOG_WARNING&#160;:&#160;<a class="el" href="group__cscore__c__api.html#gga387389ba85dfc7a8d8d1f4c714e0c8aba314e39149093b5c0b5bd56bd8664730e">cscore_c.h</a></li>
+<li>CS_NETWORK_INTERFACES_CHANGED&#160;:&#160;<a class="el" href="group__cscore__c__api.html#gga21079bb71b0c5fdd9c190902e81475c3a7b9666c31511e610bb839f77ca6f3ab1">cscore_c.h</a></li>
+<li>CS_OK&#160;:&#160;<a class="el" href="group__cscore__c__api.html#ggafd2b8be5bc92a0a85ec51d40af1d1322a94f36dec8bcf3b15f4bedcf76f4ce1eb">cscore_c.h</a></li>
+<li>CS_PIXFMT_BGR&#160;:&#160;<a class="el" href="group__cscore__c__api.html#gga889cbcd56e14e2bd223cc9c84d4da2c4a23a4eea82ada01483025bfcffeabb2ec">cscore_c.h</a></li>
+<li>CS_PIXFMT_GRAY&#160;:&#160;<a class="el" href="group__cscore__c__api.html#gga889cbcd56e14e2bd223cc9c84d4da2c4a26f35234b5274c2d40086610c1cfac72">cscore_c.h</a></li>
+<li>CS_PIXFMT_MJPEG&#160;:&#160;<a class="el" href="group__cscore__c__api.html#gga889cbcd56e14e2bd223cc9c84d4da2c4a9336b427e8b017ae95fbd4c851e9cd42">cscore_c.h</a></li>
+<li>CS_PIXFMT_RGB565&#160;:&#160;<a class="el" href="group__cscore__c__api.html#gga889cbcd56e14e2bd223cc9c84d4da2c4a30a2d3c9949d409348ad1e6d2b7a5b30">cscore_c.h</a></li>
+<li>CS_PIXFMT_UNKNOWN&#160;:&#160;<a class="el" href="group__cscore__c__api.html#gga889cbcd56e14e2bd223cc9c84d4da2c4aae0b83a29ebc3caf6aba12ca3332eb91">cscore_c.h</a></li>
+<li>CS_PIXFMT_YUYV&#160;:&#160;<a class="el" href="group__cscore__c__api.html#gga889cbcd56e14e2bd223cc9c84d4da2c4aad5221e344f415720cdbb78c365cfa25">cscore_c.h</a></li>
+<li>CS_PROP_BOOLEAN&#160;:&#160;<a class="el" href="group__cscore__c__api.html#gga748df10eca5adcbc533b0fe788daf22ead8c642f4d1ec6deaed002ba91cfbb523">cscore_c.h</a></li>
+<li>CS_PROP_ENUM&#160;:&#160;<a class="el" href="group__cscore__c__api.html#gga748df10eca5adcbc533b0fe788daf22ea95f3e1369d580248f00f714485ea48fc">cscore_c.h</a></li>
+<li>CS_PROP_INTEGER&#160;:&#160;<a class="el" href="group__cscore__c__api.html#gga748df10eca5adcbc533b0fe788daf22ead19532b425f5b42414ea31935106aabe">cscore_c.h</a></li>
+<li>CS_PROP_NONE&#160;:&#160;<a class="el" href="group__cscore__c__api.html#gga748df10eca5adcbc533b0fe788daf22eac7f082aac24441ac645e6a7c6c0f6911">cscore_c.h</a></li>
+<li>CS_PROP_STRING&#160;:&#160;<a class="el" href="group__cscore__c__api.html#gga748df10eca5adcbc533b0fe788daf22eaf4c6f6b6bcb0764597071dbc757494ff">cscore_c.h</a></li>
+<li>CS_PROPERTY_WRITE_FAILED&#160;:&#160;<a class="el" href="group__cscore__c__api.html#ggafd2b8be5bc92a0a85ec51d40af1d1322a4d128f0ab912d8058113bc3533251a25">cscore_c.h</a></li>
+<li>CS_READ_FAILED&#160;:&#160;<a class="el" href="group__cscore__c__api.html#ggafd2b8be5bc92a0a85ec51d40af1d1322acd1fea783197c3a5a6a577a98e8f6ff5">cscore_c.h</a></li>
+<li>CS_SINK_CREATED&#160;:&#160;<a class="el" href="group__cscore__c__api.html#gga21079bb71b0c5fdd9c190902e81475c3aefbcd9677520737f9280148f1fde9c52">cscore_c.h</a></li>
+<li>CS_SINK_CV&#160;:&#160;<a class="el" href="group__cscore__c__api.html#ggac4d8e712e12b167a7038c76f195bab10ae6d961ab808534b7d620afb93eecf3ee">cscore_c.h</a></li>
+<li>CS_SINK_DESTROYED&#160;:&#160;<a class="el" href="group__cscore__c__api.html#gga21079bb71b0c5fdd9c190902e81475c3a676ac6a8af7a65daa1d0c0d77f4622d2">cscore_c.h</a></li>
+<li>CS_SINK_DISABLED&#160;:&#160;<a class="el" href="group__cscore__c__api.html#gga21079bb71b0c5fdd9c190902e81475c3afff9d3a7201165c29a54e4839ebbe9f2">cscore_c.h</a></li>
+<li>CS_SINK_ENABLED&#160;:&#160;<a class="el" href="group__cscore__c__api.html#gga21079bb71b0c5fdd9c190902e81475c3a39f86a5d85f8d95045c83b4cf33eb4a6">cscore_c.h</a></li>
+<li>CS_SINK_MJPEG&#160;:&#160;<a class="el" href="group__cscore__c__api.html#ggac4d8e712e12b167a7038c76f195bab10a8917be75b8090fae73d2421941d8c9c5">cscore_c.h</a></li>
+<li>CS_SINK_PROPERTY_CHOICES_UPDATED&#160;:&#160;<a class="el" href="group__cscore__c__api.html#gga21079bb71b0c5fdd9c190902e81475c3a79c76fdcdd0b9781e6dd2bf0cbf140d7">cscore_c.h</a></li>
+<li>CS_SINK_PROPERTY_CREATED&#160;:&#160;<a class="el" href="group__cscore__c__api.html#gga21079bb71b0c5fdd9c190902e81475c3a6d2cb69a1d31425354a40c5d6816d0b5">cscore_c.h</a></li>
+<li>CS_SINK_PROPERTY_VALUE_UPDATED&#160;:&#160;<a class="el" href="group__cscore__c__api.html#gga21079bb71b0c5fdd9c190902e81475c3a21e5ff31a5a21d43b5191945287928da">cscore_c.h</a></li>
+<li>CS_SINK_RAW&#160;:&#160;<a class="el" href="group__cscore__c__api.html#ggac4d8e712e12b167a7038c76f195bab10a89a81b59fc747e5eade7cb9a5bc760e7">cscore_c.h</a></li>
+<li>CS_SINK_SOURCE_CHANGED&#160;:&#160;<a class="el" href="group__cscore__c__api.html#gga21079bb71b0c5fdd9c190902e81475c3ab849772de50596d65b6e9f225f3958f9">cscore_c.h</a></li>
+<li>CS_SINK_UNKNOWN&#160;:&#160;<a class="el" href="group__cscore__c__api.html#ggac4d8e712e12b167a7038c76f195bab10af39e7039a56f2764e6254ab5684c7d70">cscore_c.h</a></li>
+<li>CS_SOURCE_BYTES_RECEIVED&#160;:&#160;<a class="el" href="group__cscore__c__api.html#ggaaaab82f52d0ca0b385c9d2c198be5483a5ff9215882855e58cbd4cf0db101ef12">cscore_c.h</a></li>
+<li>CS_SOURCE_CONNECTED&#160;:&#160;<a class="el" href="group__cscore__c__api.html#gga21079bb71b0c5fdd9c190902e81475c3a29eab2f6cc9d1d01a17b43daebdb1301">cscore_c.h</a></li>
+<li>CS_SOURCE_CREATED&#160;:&#160;<a class="el" href="group__cscore__c__api.html#gga21079bb71b0c5fdd9c190902e81475c3a3ff53d1af220786d99ffffd89ef22911">cscore_c.h</a></li>
+<li>CS_SOURCE_CV&#160;:&#160;<a class="el" href="group__cscore__c__api.html#ggac837e2c01d7df4368ee75df217d82406aef9691cb2529d8eed45affefd5ce6300">cscore_c.h</a></li>
+<li>CS_SOURCE_DESTROYED&#160;:&#160;<a class="el" href="group__cscore__c__api.html#gga21079bb71b0c5fdd9c190902e81475c3ae3827c87996709068c25edae19ec0b14">cscore_c.h</a></li>
+<li>CS_SOURCE_DISCONNECTED&#160;:&#160;<a class="el" href="group__cscore__c__api.html#gga21079bb71b0c5fdd9c190902e81475c3adcb8fd3fc7bdda7b97ec51a36aa4f0c9">cscore_c.h</a></li>
+<li>CS_SOURCE_FRAMES_RECEIVED&#160;:&#160;<a class="el" href="group__cscore__c__api.html#ggaaaab82f52d0ca0b385c9d2c198be5483a5f824d41539a27d553abafbcc2281c71">cscore_c.h</a></li>
+<li>CS_SOURCE_HTTP&#160;:&#160;<a class="el" href="group__cscore__c__api.html#ggac837e2c01d7df4368ee75df217d82406a5a5280a50a1d758c433390de50260c98">cscore_c.h</a></li>
+<li>CS_SOURCE_IS_DISCONNECTED&#160;:&#160;<a class="el" href="group__cscore__c__api.html#ggafd2b8be5bc92a0a85ec51d40af1d1322adee5eaa684a5a52054ad0d74f123a7e9">cscore_c.h</a></li>
+<li>CS_SOURCE_PROPERTY_CHOICES_UPDATED&#160;:&#160;<a class="el" href="group__cscore__c__api.html#gga21079bb71b0c5fdd9c190902e81475c3af307e6ee575c3d9baca9e136312cca47">cscore_c.h</a></li>
+<li>CS_SOURCE_PROPERTY_CREATED&#160;:&#160;<a class="el" href="group__cscore__c__api.html#gga21079bb71b0c5fdd9c190902e81475c3a003a020892232b23259a1c4cde9f6a1b">cscore_c.h</a></li>
+<li>CS_SOURCE_PROPERTY_VALUE_UPDATED&#160;:&#160;<a class="el" href="group__cscore__c__api.html#gga21079bb71b0c5fdd9c190902e81475c3adb43fc50437dd5dd736e741909e94d6a">cscore_c.h</a></li>
+<li>CS_SOURCE_RAW&#160;:&#160;<a class="el" href="group__cscore__c__api.html#ggac837e2c01d7df4368ee75df217d82406addabbd23bf38f9d142709ee69ef28f27">cscore_c.h</a></li>
+<li>CS_SOURCE_UNKNOWN&#160;:&#160;<a class="el" href="group__cscore__c__api.html#ggac837e2c01d7df4368ee75df217d82406a613fa58ec2070d0de9cf9d6edfb4a3f4">cscore_c.h</a></li>
+<li>CS_SOURCE_USB&#160;:&#160;<a class="el" href="group__cscore__c__api.html#ggac837e2c01d7df4368ee75df217d82406a531216d1d4b3ea14fa63f0b2ccb854fb">cscore_c.h</a></li>
+<li>CS_SOURCE_VIDEOMODE_CHANGED&#160;:&#160;<a class="el" href="group__cscore__c__api.html#gga21079bb71b0c5fdd9c190902e81475c3a940ec3ae42cf11732c2e9b2073c625a3">cscore_c.h</a></li>
+<li>CS_SOURCE_VIDEOMODES_UPDATED&#160;:&#160;<a class="el" href="group__cscore__c__api.html#gga21079bb71b0c5fdd9c190902e81475c3a1eb497fc911b1145506192630ad6c03e">cscore_c.h</a></li>
+<li>CS_TELEMETRY_NOT_ENABLED&#160;:&#160;<a class="el" href="group__cscore__c__api.html#ggafd2b8be5bc92a0a85ec51d40af1d1322ad006566272bc582192fe56bd147c59de">cscore_c.h</a></li>
+<li>CS_TELEMETRY_UPDATED&#160;:&#160;<a class="el" href="group__cscore__c__api.html#gga21079bb71b0c5fdd9c190902e81475c3a352a5fbd8f908aa5c1c14708a3481f16">cscore_c.h</a></li>
+<li>CS_UNSUPPORTED_MODE&#160;:&#160;<a class="el" href="group__cscore__c__api.html#ggafd2b8be5bc92a0a85ec51d40af1d1322a5da7b35b0e18abe776351458b3a326f8">cscore_c.h</a></li>
+<li>CS_USB_CAMERAS_CHANGED&#160;:&#160;<a class="el" href="group__cscore__c__api.html#gga21079bb71b0c5fdd9c190902e81475c3a3ba29e93a04740b07d503ecffdf3972b">cscore_c.h</a></li>
+<li>CS_WRONG_HANDLE_SUBTYPE&#160;:&#160;<a class="el" href="group__cscore__c__api.html#ggafd2b8be5bc92a0a85ec51d40af1d1322a06476a540bb2e3f19ef82c11fd328c3c">cscore_c.h</a></li>
+<li>CS_WRONG_PROPERTY_TYPE&#160;:&#160;<a class="el" href="group__cscore__c__api.html#ggafd2b8be5bc92a0a85ec51d40af1d1322a59979f5aa91069026ee134f9228e7d0c">cscore_c.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Oct 29 2021 07:12:31 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Oct 29 2021 22:10:10 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

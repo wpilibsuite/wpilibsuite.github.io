@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-31-ga939cd9</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-32-g2cb171f</span>
    </div>
   </td>
  </tr>
@@ -106,15 +106,15 @@ $(document).ready(function(){initNavTree('classfrc_1_1_debouncer.html',''); init
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a2b92ddc90e41162b1e2cdf63d72a35ed"><td class="memItemLeft" align="right" valign="top"><a id="a2b92ddc90e41162b1e2cdf63d72a35ed" name="a2b92ddc90e41162b1e2cdf63d72a35ed"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>DebounceType</b> { <b>kRising</b>
-, <b>kFalling</b>
-, <b>kBoth</b>
+<tr class="memitem:a2b92ddc90e41162b1e2cdf63d72a35ed"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_debouncer.html#a2b92ddc90e41162b1e2cdf63d72a35ed">DebounceType</a> { <a class="el" href="classfrc_1_1_debouncer.html#a2b92ddc90e41162b1e2cdf63d72a35edacdfee4c3a41f8748356da9f954b2dd28">kRising</a>
+, <a class="el" href="classfrc_1_1_debouncer.html#a2b92ddc90e41162b1e2cdf63d72a35eda1589b3468cc11662c8635ad7fbf73a60">kFalling</a>
+, <a class="el" href="classfrc_1_1_debouncer.html#a2b92ddc90e41162b1e2cdf63d72a35edab9172434a6b71d3b1d338b5b5a445597">kBoth</a>
  }</td></tr>
 <tr class="separator:a2b92ddc90e41162b1e2cdf63d72a35ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0f25468fdc8e496f300dda321703d562"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_debouncer.html#a0f25468fdc8e496f300dda321703d562">Debouncer</a> (units::second_t debounceTime, DebounceType type=DebounceType::kRising)</td></tr>
+<tr class="memitem:a0f25468fdc8e496f300dda321703d562"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_debouncer.html#a0f25468fdc8e496f300dda321703d562">Debouncer</a> (units::second_t debounceTime, <a class="el" href="classfrc_1_1_debouncer.html#a2b92ddc90e41162b1e2cdf63d72a35ed">DebounceType</a> <a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>=DebounceType::kRising)</td></tr>
 <tr class="memdesc:a0f25468fdc8e496f300dda321703d562"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="classfrc_1_1_debouncer.html" title="A simple debounce filter for boolean streams.">Debouncer</a>.  <a href="classfrc_1_1_debouncer.html#a0f25468fdc8e496f300dda321703d562">More...</a><br /></td></tr>
 <tr class="separator:a0f25468fdc8e496f300dda321703d562"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb25033539c9a1b84b2521c01c3ec864"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_debouncer.html#adb25033539c9a1b84b2521c01c3ec864">Calculate</a> (bool input)</td></tr>
@@ -124,7 +124,27 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >A simple debounce filter for boolean streams. </p>
 <p >Requires that the boolean change value from baseline for a specified period of time before the filtered value changes. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a2b92ddc90e41162b1e2cdf63d72a35ed" name="a2b92ddc90e41162b1e2cdf63d72a35ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b92ddc90e41162b1e2cdf63d72a35ed">&#9670;&nbsp;</a></span>DebounceType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classfrc_1_1_debouncer.html#a2b92ddc90e41162b1e2cdf63d72a35ed">frc::Debouncer::DebounceType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a2b92ddc90e41162b1e2cdf63d72a35edacdfee4c3a41f8748356da9f954b2dd28" name="a2b92ddc90e41162b1e2cdf63d72a35edacdfee4c3a41f8748356da9f954b2dd28"></a>kRising&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2b92ddc90e41162b1e2cdf63d72a35eda1589b3468cc11662c8635ad7fbf73a60" name="a2b92ddc90e41162b1e2cdf63d72a35eda1589b3468cc11662c8635ad7fbf73a60"></a>kFalling&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2b92ddc90e41162b1e2cdf63d72a35edab9172434a6b71d3b1d338b5b5a445597" name="a2b92ddc90e41162b1e2cdf63d72a35edab9172434a6b71d3b1d338b5b5a445597"></a>kBoth&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a0f25468fdc8e496f300dda321703d562" name="a0f25468fdc8e496f300dda321703d562"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0f25468fdc8e496f300dda321703d562">&#9670;&nbsp;</a></span>Debouncer()</h2>
 
@@ -143,7 +163,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">DebounceType&#160;</td>
+          <td class="paramtype"><a class="el" href="classfrc_1_1_debouncer.html#a2b92ddc90e41162b1e2cdf63d72a35ed">DebounceType</a>&#160;</td>
           <td class="paramname"><em>type</em> = <code>DebounceType::kRising</code>&#160;</td>
         </tr>
         <tr>
@@ -206,8 +226,8 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1_debouncer.html">Debouncer</a></li>
-    <li class="footer">Generated on Fri Oct 29 2021 07:12:28 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_debouncer.html">Debouncer</a></li>
+    <li class="footer">Generated on Fri Oct 29 2021 22:10:07 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

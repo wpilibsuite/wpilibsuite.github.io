@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-31-ga939cd9</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-32-g2cb171f</span>
    </div>
   </td>
  </tr>
@@ -99,49 +99,333 @@ $(document).ready(function(){initNavTree('struct_eigen_1_1internal_1_1auto__diff
   <div class="headertitle"><div class="title">Eigen::internal::auto_diff_special_op&lt; DerivativeType, true &gt; Struct Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_auto_diff_scalar_8h_source.html">/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/eigeninclude/unsupported/Eigen/src/AutoDiff/AutoDiffScalar.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a434fb02de7bd03cffe71ab8bf8040397"><td class="memItemLeft" align="right" valign="top"><a id="a434fb02de7bd03cffe71ab8bf8040397" name="a434fb02de7bd03cffe71ab8bf8040397"></a>
-typedef <a class="el" href="struct_eigen_1_1internal_1_1remove__all.html">remove_all</a>&lt; DerivativeType &gt;::type&#160;</td><td class="memItemRight" valign="bottom"><b>DerType</b></td></tr>
+<tr class="memitem:a434fb02de7bd03cffe71ab8bf8040397"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_eigen_1_1internal_1_1remove__all.html">remove_all</a>&lt; DerivativeType &gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01true_01_4.html#a434fb02de7bd03cffe71ab8bf8040397">DerType</a></td></tr>
 <tr class="separator:a434fb02de7bd03cffe71ab8bf8040397"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb3703f50130a333540c1877a32863e3"><td class="memItemLeft" align="right" valign="top"><a id="aeb3703f50130a333540c1877a32863e3" name="aeb3703f50130a333540c1877a32863e3"></a>
-typedef <a class="el" href="struct_eigen_1_1internal_1_1traits.html">traits</a>&lt; DerType &gt;::Scalar&#160;</td><td class="memItemRight" valign="bottom"><b>Scalar</b></td></tr>
+<tr class="memitem:aeb3703f50130a333540c1877a32863e3"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_eigen_1_1internal_1_1traits.html">traits</a>&lt; <a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01true_01_4.html#a434fb02de7bd03cffe71ab8bf8040397">DerType</a> &gt;::<a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01true_01_4.html#aeb3703f50130a333540c1877a32863e3">Scalar</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01true_01_4.html#aeb3703f50130a333540c1877a32863e3">Scalar</a></td></tr>
 <tr class="separator:aeb3703f50130a333540c1877a32863e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a644725ead071291629ad0e0116b003e5"><td class="memItemLeft" align="right" valign="top"><a id="a644725ead071291629ad0e0116b003e5" name="a644725ead071291629ad0e0116b003e5"></a>
-typedef <a class="el" href="struct_eigen_1_1_num_traits.html">NumTraits</a>&lt; Scalar &gt;::Real&#160;</td><td class="memItemRight" valign="bottom"><b>Real</b></td></tr>
+<tr class="memitem:a644725ead071291629ad0e0116b003e5"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_eigen_1_1_num_traits.html">NumTraits</a>&lt; <a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01true_01_4.html#aeb3703f50130a333540c1877a32863e3">Scalar</a> &gt;::<a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01true_01_4.html#a644725ead071291629ad0e0116b003e5">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01true_01_4.html#a644725ead071291629ad0e0116b003e5">Real</a></td></tr>
 <tr class="separator:a644725ead071291629ad0e0116b003e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:afb454f154b362ef4433e3046c1e5bffb"><td class="memItemLeft" align="right" valign="top"><a id="afb454f154b362ef4433e3046c1e5bffb" name="afb454f154b362ef4433e3046c1e5bffb"></a>
-const <a class="el" href="class_eigen_1_1_auto_diff_scalar.html">AutoDiffScalar</a>&lt; DerivativeType &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>derived</b> () const</td></tr>
+<tr class="memitem:afb454f154b362ef4433e3046c1e5bffb"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_eigen_1_1_auto_diff_scalar.html">AutoDiffScalar</a>&lt; DerivativeType &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01true_01_4.html#afb454f154b362ef4433e3046c1e5bffb">derived</a> () const</td></tr>
 <tr class="separator:afb454f154b362ef4433e3046c1e5bffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54a5087bb46537b6455fe4799ae25cdc"><td class="memItemLeft" align="right" valign="top"><a id="a54a5087bb46537b6455fe4799ae25cdc" name="a54a5087bb46537b6455fe4799ae25cdc"></a>
-<a class="el" href="class_eigen_1_1_auto_diff_scalar.html">AutoDiffScalar</a>&lt; DerivativeType &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>derived</b> ()</td></tr>
+<tr class="memitem:a54a5087bb46537b6455fe4799ae25cdc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_eigen_1_1_auto_diff_scalar.html">AutoDiffScalar</a>&lt; DerivativeType &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01true_01_4.html#a54a5087bb46537b6455fe4799ae25cdc">derived</a> ()</td></tr>
 <tr class="separator:a54a5087bb46537b6455fe4799ae25cdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3ad835b6f3982d1df8898ed344a049f"><td class="memItemLeft" align="right" valign="top"><a id="ac3ad835b6f3982d1df8898ed344a049f" name="ac3ad835b6f3982d1df8898ed344a049f"></a>
-const <a class="el" href="class_eigen_1_1_auto_diff_scalar.html">AutoDiffScalar</a>&lt; DerType &amp; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator+</b> (const Real &amp;other) const</td></tr>
+<tr class="memitem:ac3ad835b6f3982d1df8898ed344a049f"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_eigen_1_1_auto_diff_scalar.html">AutoDiffScalar</a>&lt; <a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01true_01_4.html#a434fb02de7bd03cffe71ab8bf8040397">DerType</a> &amp; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01true_01_4.html#ac3ad835b6f3982d1df8898ed344a049f">operator+</a> (const <a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01true_01_4.html#a644725ead071291629ad0e0116b003e5">Real</a> &amp;other) const</td></tr>
 <tr class="separator:ac3ad835b6f3982d1df8898ed344a049f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad066749e18c4d20f5adf50f26f3047b8"><td class="memItemLeft" align="right" valign="top"><a id="ad066749e18c4d20f5adf50f26f3047b8" name="ad066749e18c4d20f5adf50f26f3047b8"></a>
-<a class="el" href="class_eigen_1_1_auto_diff_scalar.html">AutoDiffScalar</a>&lt; DerivativeType &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator+=</b> (const Real &amp;other)</td></tr>
+<tr class="memitem:ad066749e18c4d20f5adf50f26f3047b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_eigen_1_1_auto_diff_scalar.html">AutoDiffScalar</a>&lt; DerivativeType &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01true_01_4.html#ad066749e18c4d20f5adf50f26f3047b8">operator+=</a> (const <a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01true_01_4.html#a644725ead071291629ad0e0116b003e5">Real</a> &amp;other)</td></tr>
 <tr class="separator:ad066749e18c4d20f5adf50f26f3047b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d44520d6033891369d240b830428011"><td class="memItemLeft" align="right" valign="top"><a id="a4d44520d6033891369d240b830428011" name="a4d44520d6033891369d240b830428011"></a>
-const <a class="el" href="class_eigen_1_1_auto_diff_scalar.html">AutoDiffScalar</a>&lt; typename <a class="el" href="class_eigen_1_1_cwise_unary_op.html">CwiseUnaryOp</a>&lt; <a class="el" href="struct_eigen_1_1internal_1_1bind2nd__op.html">bind2nd_op</a>&lt; <a class="el" href="struct_eigen_1_1internal_1_1scalar__product__op.html">scalar_product_op</a>&lt; Scalar, Real &gt; &gt;, DerType &gt;::Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (const Real &amp;other) const</td></tr>
+<tr class="memitem:a4d44520d6033891369d240b830428011"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_eigen_1_1_auto_diff_scalar.html">AutoDiffScalar</a>&lt; typename <a class="el" href="class_eigen_1_1_cwise_unary_op.html">CwiseUnaryOp</a>&lt; <a class="el" href="struct_eigen_1_1internal_1_1bind2nd__op.html">bind2nd_op</a>&lt; <a class="el" href="struct_eigen_1_1internal_1_1scalar__product__op.html">scalar_product_op</a>&lt; <a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01true_01_4.html#aeb3703f50130a333540c1877a32863e3">Scalar</a>, <a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01true_01_4.html#a644725ead071291629ad0e0116b003e5">Real</a> &gt; &gt;, <a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01true_01_4.html#a434fb02de7bd03cffe71ab8bf8040397">DerType</a> &gt;::Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01true_01_4.html#a4d44520d6033891369d240b830428011">operator*</a> (const <a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01true_01_4.html#a644725ead071291629ad0e0116b003e5">Real</a> &amp;other) const</td></tr>
 <tr class="separator:a4d44520d6033891369d240b830428011"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44fa016f46bdfbe90a6877ac885e240a"><td class="memItemLeft" align="right" valign="top"><a id="a44fa016f46bdfbe90a6877ac885e240a" name="a44fa016f46bdfbe90a6877ac885e240a"></a>
-<a class="el" href="class_eigen_1_1_auto_diff_scalar.html">AutoDiffScalar</a>&lt; DerivativeType &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*=</b> (const Scalar &amp;other)</td></tr>
+<tr class="memitem:a44fa016f46bdfbe90a6877ac885e240a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_eigen_1_1_auto_diff_scalar.html">AutoDiffScalar</a>&lt; DerivativeType &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01true_01_4.html#a44fa016f46bdfbe90a6877ac885e240a">operator*=</a> (const <a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01true_01_4.html#aeb3703f50130a333540c1877a32863e3">Scalar</a> &amp;other)</td></tr>
 <tr class="separator:a44fa016f46bdfbe90a6877ac885e240a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a80051a428122f306a0455fdd693061fa"><td class="memItemLeft" align="right" valign="top"><a id="a80051a428122f306a0455fdd693061fa" name="a80051a428122f306a0455fdd693061fa"></a>
-const <a class="el" href="class_eigen_1_1_auto_diff_scalar.html">AutoDiffScalar</a>&lt; DerType &amp; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator+</b> (const Real &amp;a, const <a class="el" href="class_eigen_1_1_auto_diff_scalar.html">AutoDiffScalar</a>&lt; DerivativeType &gt; &amp;b)</td></tr>
+<tr class="memitem:a80051a428122f306a0455fdd693061fa"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_eigen_1_1_auto_diff_scalar.html">AutoDiffScalar</a>&lt; <a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01true_01_4.html#a434fb02de7bd03cffe71ab8bf8040397">DerType</a> &amp; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01true_01_4.html#a80051a428122f306a0455fdd693061fa">operator+</a> (const <a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01true_01_4.html#a644725ead071291629ad0e0116b003e5">Real</a> &amp;a, const <a class="el" href="class_eigen_1_1_auto_diff_scalar.html">AutoDiffScalar</a>&lt; DerivativeType &gt; &amp;b)</td></tr>
 <tr class="separator:a80051a428122f306a0455fdd693061fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4bd1d6068672b064ee7638eee295e0d1"><td class="memItemLeft" align="right" valign="top"><a id="a4bd1d6068672b064ee7638eee295e0d1" name="a4bd1d6068672b064ee7638eee295e0d1"></a>
-const <a class="el" href="class_eigen_1_1_auto_diff_scalar.html">AutoDiffScalar</a>&lt; typename <a class="el" href="class_eigen_1_1_cwise_unary_op.html">CwiseUnaryOp</a>&lt; <a class="el" href="struct_eigen_1_1internal_1_1bind1st__op.html">bind1st_op</a>&lt; <a class="el" href="struct_eigen_1_1internal_1_1scalar__product__op.html">scalar_product_op</a>&lt; Real, Scalar &gt; &gt;, DerType &gt;::Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (const Real &amp;other, const <a class="el" href="class_eigen_1_1_auto_diff_scalar.html">AutoDiffScalar</a>&lt; DerivativeType &gt; &amp;a)</td></tr>
+<tr class="memitem:a4bd1d6068672b064ee7638eee295e0d1"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_eigen_1_1_auto_diff_scalar.html">AutoDiffScalar</a>&lt; typename <a class="el" href="class_eigen_1_1_cwise_unary_op.html">CwiseUnaryOp</a>&lt; <a class="el" href="struct_eigen_1_1internal_1_1bind1st__op.html">bind1st_op</a>&lt; <a class="el" href="struct_eigen_1_1internal_1_1scalar__product__op.html">scalar_product_op</a>&lt; <a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01true_01_4.html#a644725ead071291629ad0e0116b003e5">Real</a>, <a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01true_01_4.html#aeb3703f50130a333540c1877a32863e3">Scalar</a> &gt; &gt;, <a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01true_01_4.html#a434fb02de7bd03cffe71ab8bf8040397">DerType</a> &gt;::Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01true_01_4.html#a4bd1d6068672b064ee7638eee295e0d1">operator*</a> (const <a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01true_01_4.html#a644725ead071291629ad0e0116b003e5">Real</a> &amp;other, const <a class="el" href="class_eigen_1_1_auto_diff_scalar.html">AutoDiffScalar</a>&lt; DerivativeType &gt; &amp;a)</td></tr>
 <tr class="separator:a4bd1d6068672b064ee7638eee295e0d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a434fb02de7bd03cffe71ab8bf8040397" name="a434fb02de7bd03cffe71ab8bf8040397"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a434fb02de7bd03cffe71ab8bf8040397">&#9670;&nbsp;</a></span>DerType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename DerivativeType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="struct_eigen_1_1internal_1_1remove__all.html">remove_all</a>&lt;DerivativeType&gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a> <a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op.html">Eigen::internal::auto_diff_special_op</a>&lt; DerivativeType, true &gt;::<a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01true_01_4.html#a434fb02de7bd03cffe71ab8bf8040397">DerType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a644725ead071291629ad0e0116b003e5" name="a644725ead071291629ad0e0116b003e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a644725ead071291629ad0e0116b003e5">&#9670;&nbsp;</a></span>Real</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename DerivativeType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="struct_eigen_1_1_num_traits.html">NumTraits</a>&lt;<a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01true_01_4.html#aeb3703f50130a333540c1877a32863e3">Scalar</a>&gt;::<a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01true_01_4.html#a644725ead071291629ad0e0116b003e5">Real</a> <a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op.html">Eigen::internal::auto_diff_special_op</a>&lt; DerivativeType, true &gt;::<a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01true_01_4.html#a644725ead071291629ad0e0116b003e5">Real</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeb3703f50130a333540c1877a32863e3" name="aeb3703f50130a333540c1877a32863e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb3703f50130a333540c1877a32863e3">&#9670;&nbsp;</a></span>Scalar</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename DerivativeType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="struct_eigen_1_1internal_1_1traits.html">traits</a>&lt;<a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01true_01_4.html#a434fb02de7bd03cffe71ab8bf8040397">DerType</a>&gt;::<a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01true_01_4.html#aeb3703f50130a333540c1877a32863e3">Scalar</a> <a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op.html">Eigen::internal::auto_diff_special_op</a>&lt; DerivativeType, true &gt;::<a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01true_01_4.html#aeb3703f50130a333540c1877a32863e3">Scalar</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a54a5087bb46537b6455fe4799ae25cdc" name="a54a5087bb46537b6455fe4799ae25cdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54a5087bb46537b6455fe4799ae25cdc">&#9670;&nbsp;</a></span>derived() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename DerivativeType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_eigen_1_1_auto_diff_scalar.html">AutoDiffScalar</a>&lt; DerivativeType &gt; &amp; <a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op.html">Eigen::internal::auto_diff_special_op</a>&lt; DerivativeType, true &gt;::derived </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afb454f154b362ef4433e3046c1e5bffb" name="afb454f154b362ef4433e3046c1e5bffb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb454f154b362ef4433e3046c1e5bffb">&#9670;&nbsp;</a></span>derived() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename DerivativeType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_eigen_1_1_auto_diff_scalar.html">AutoDiffScalar</a>&lt; DerivativeType &gt; &amp; <a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op.html">Eigen::internal::auto_diff_special_op</a>&lt; DerivativeType, true &gt;::derived </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4d44520d6033891369d240b830428011" name="a4d44520d6033891369d240b830428011"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d44520d6033891369d240b830428011">&#9670;&nbsp;</a></span>operator*()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename DerivativeType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_eigen_1_1_auto_diff_scalar.html">AutoDiffScalar</a>&lt; typename <a class="el" href="class_eigen_1_1_cwise_unary_op.html">CwiseUnaryOp</a>&lt; <a class="el" href="struct_eigen_1_1internal_1_1bind2nd__op.html">bind2nd_op</a>&lt; <a class="el" href="struct_eigen_1_1internal_1_1scalar__product__op.html">scalar_product_op</a>&lt; <a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01true_01_4.html#aeb3703f50130a333540c1877a32863e3">Scalar</a>, <a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01true_01_4.html#a644725ead071291629ad0e0116b003e5">Real</a> &gt; &gt;, <a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01true_01_4.html#a434fb02de7bd03cffe71ab8bf8040397">DerType</a> &gt;::Type &gt; <a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op.html">Eigen::internal::auto_diff_special_op</a>&lt; DerivativeType, true &gt;::operator* </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01true_01_4.html#a644725ead071291629ad0e0116b003e5">Real</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a44fa016f46bdfbe90a6877ac885e240a" name="a44fa016f46bdfbe90a6877ac885e240a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44fa016f46bdfbe90a6877ac885e240a">&#9670;&nbsp;</a></span>operator*=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename DerivativeType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_eigen_1_1_auto_diff_scalar.html">AutoDiffScalar</a>&lt; DerivativeType &gt; &amp; <a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op.html">Eigen::internal::auto_diff_special_op</a>&lt; DerivativeType, true &gt;::operator*= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01true_01_4.html#aeb3703f50130a333540c1877a32863e3">Scalar</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac3ad835b6f3982d1df8898ed344a049f" name="ac3ad835b6f3982d1df8898ed344a049f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3ad835b6f3982d1df8898ed344a049f">&#9670;&nbsp;</a></span>operator+()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename DerivativeType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_eigen_1_1_auto_diff_scalar.html">AutoDiffScalar</a>&lt; <a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01true_01_4.html#a434fb02de7bd03cffe71ab8bf8040397">DerType</a> &amp; &gt; <a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op.html">Eigen::internal::auto_diff_special_op</a>&lt; DerivativeType, true &gt;::operator+ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01true_01_4.html#a644725ead071291629ad0e0116b003e5">Real</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad066749e18c4d20f5adf50f26f3047b8" name="ad066749e18c4d20f5adf50f26f3047b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad066749e18c4d20f5adf50f26f3047b8">&#9670;&nbsp;</a></span>operator+=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename DerivativeType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_eigen_1_1_auto_diff_scalar.html">AutoDiffScalar</a>&lt; DerivativeType &gt; &amp; <a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op.html">Eigen::internal::auto_diff_special_op</a>&lt; DerivativeType, true &gt;::operator+= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01true_01_4.html#a644725ead071291629ad0e0116b003e5">Real</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="a4bd1d6068672b064ee7638eee295e0d1" name="a4bd1d6068672b064ee7638eee295e0d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bd1d6068672b064ee7638eee295e0d1">&#9670;&nbsp;</a></span>operator*</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename DerivativeType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_eigen_1_1_auto_diff_scalar.html">AutoDiffScalar</a>&lt; typename <a class="el" href="class_eigen_1_1_cwise_unary_op.html">CwiseUnaryOp</a>&lt; <a class="el" href="struct_eigen_1_1internal_1_1bind1st__op.html">bind1st_op</a>&lt; <a class="el" href="struct_eigen_1_1internal_1_1scalar__product__op.html">scalar_product_op</a>&lt; <a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01true_01_4.html#a644725ead071291629ad0e0116b003e5">Real</a>, <a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01true_01_4.html#aeb3703f50130a333540c1877a32863e3">Scalar</a> &gt; &gt;, <a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01true_01_4.html#a434fb02de7bd03cffe71ab8bf8040397">DerType</a> &gt;::Type &gt; operator* </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01true_01_4.html#a644725ead071291629ad0e0116b003e5">Real</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_eigen_1_1_auto_diff_scalar.html">AutoDiffScalar</a>&lt; DerivativeType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>a</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a80051a428122f306a0455fdd693061fa" name="a80051a428122f306a0455fdd693061fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80051a428122f306a0455fdd693061fa">&#9670;&nbsp;</a></span>operator+</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename DerivativeType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_eigen_1_1_auto_diff_scalar.html">AutoDiffScalar</a>&lt; <a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01true_01_4.html#a434fb02de7bd03cffe71ab8bf8040397">DerType</a> &amp; &gt; operator+ </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01true_01_4.html#a644725ead071291629ad0e0116b003e5">Real</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_eigen_1_1_auto_diff_scalar.html">AutoDiffScalar</a>&lt; DerivativeType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/eigeninclude/unsupported/Eigen/src/AutoDiff/<a class="el" href="_auto_diff_scalar_8h_source.html">AutoDiffScalar.h</a></li>
 </ul>
@@ -150,8 +434,8 @@ const <a class="el" href="class_eigen_1_1_auto_diff_scalar.html">AutoDiffScalar<
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespace_eigen.html">Eigen</a></li><li class="navelem"><b>internal</b></li><li class="navelem"><a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01true_01_4.html">auto_diff_special_op&lt; DerivativeType, true &gt;</a></li>
-    <li class="footer">Generated on Fri Oct 29 2021 07:12:25 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespace_eigen.html">Eigen</a></li><li class="navelem"><a class="el" href="namespace_eigen_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="struct_eigen_1_1internal_1_1auto__diff__special__op_3_01_derivative_type_00_01true_01_4.html">auto_diff_special_op&lt; DerivativeType, true &gt;</a></li>
+    <li class="footer">Generated on Fri Oct 29 2021 22:10:04 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

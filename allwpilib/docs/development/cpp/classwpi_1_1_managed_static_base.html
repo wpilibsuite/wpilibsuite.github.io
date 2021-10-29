@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-31-ga939cd9</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-32-g2cb171f</span>
    </div>
   </td>
  </tr>
@@ -116,38 +116,215 @@ Inheritance diagram for wpi::ManagedStaticBase:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab1ccc6c654666fe9b9da93144180eb2a"><td class="memItemLeft" align="right" valign="top"><a id="ab1ccc6c654666fe9b9da93144180eb2a" name="ab1ccc6c654666fe9b9da93144180eb2a"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isConstructed</b> () const</td></tr>
-<tr class="memdesc:ab1ccc6c654666fe9b9da93144180eb2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">isConstructed - Return true if this object has not been created yet. <br /></td></tr>
+<tr class="memitem:ab1ccc6c654666fe9b9da93144180eb2a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_managed_static_base.html#ab1ccc6c654666fe9b9da93144180eb2a">isConstructed</a> () const</td></tr>
+<tr class="memdesc:ab1ccc6c654666fe9b9da93144180eb2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">isConstructed - Return true if this object has not been created yet.  <a href="classwpi_1_1_managed_static_base.html#ab1ccc6c654666fe9b9da93144180eb2a">More...</a><br /></td></tr>
 <tr class="separator:ab1ccc6c654666fe9b9da93144180eb2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2dbcfbe2bdb72bc42edbef89313482a6"><td class="memItemLeft" align="right" valign="top"><a id="a2dbcfbe2bdb72bc42edbef89313482a6" name="a2dbcfbe2bdb72bc42edbef89313482a6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>destroy</b> () const</td></tr>
+<tr class="memitem:a2dbcfbe2bdb72bc42edbef89313482a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_managed_static_base.html#a2dbcfbe2bdb72bc42edbef89313482a6">destroy</a> () const</td></tr>
 <tr class="separator:a2dbcfbe2bdb72bc42edbef89313482a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:afa0532a6e0a8461de0cf3ff6281d1088"><td class="memItemLeft" align="right" valign="top"><a id="afa0532a6e0a8461de0cf3ff6281d1088" name="afa0532a6e0a8461de0cf3ff6281d1088"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterManagedStatic</b> (void *(*creator)(), void(*deleter)(void *)) const</td></tr>
+<tr class="memitem:afa0532a6e0a8461de0cf3ff6281d1088"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_managed_static_base.html#afa0532a6e0a8461de0cf3ff6281d1088">RegisterManagedStatic</a> (void *(*creator)(), void(*deleter)(void *)) const</td></tr>
 <tr class="separator:afa0532a6e0a8461de0cf3ff6281d1088"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2e13e8ce3be477485cc19a44226c15d"><td class="memItemLeft" align="right" valign="top"><a id="ac2e13e8ce3be477485cc19a44226c15d" name="ac2e13e8ce3be477485cc19a44226c15d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterManagedStatic</b> (void *created, void(*deleter)(void *)) const</td></tr>
+<tr class="memitem:ac2e13e8ce3be477485cc19a44226c15d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_managed_static_base.html#ac2e13e8ce3be477485cc19a44226c15d">RegisterManagedStatic</a> (void *created, void(*deleter)(void *)) const</td></tr>
 <tr class="separator:ac2e13e8ce3be477485cc19a44226c15d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:afcb41212f82e31d06b6a9a5fad64ffaf"><td class="memItemLeft" align="right" valign="top"><a id="afcb41212f82e31d06b6a9a5fad64ffaf" name="afcb41212f82e31d06b6a9a5fad64ffaf"></a>
-std::atomic&lt; void * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Ptr</b></td></tr>
+<tr class="memitem:afcb41212f82e31d06b6a9a5fad64ffaf"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; void * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_managed_static_base.html#afcb41212f82e31d06b6a9a5fad64ffaf">Ptr</a></td></tr>
 <tr class="separator:afcb41212f82e31d06b6a9a5fad64ffaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80556703b2bdb7df2c79598701e65674"><td class="memItemLeft" align="right" valign="top"><a id="a80556703b2bdb7df2c79598701e65674" name="a80556703b2bdb7df2c79598701e65674"></a>
-void(*&#160;</td><td class="memItemRight" valign="bottom"><b>DeleterFn</b> )(void *)</td></tr>
+<tr class="memitem:a80556703b2bdb7df2c79598701e65674"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_managed_static_base.html#a80556703b2bdb7df2c79598701e65674">DeleterFn</a> )(void *)</td></tr>
 <tr class="separator:a80556703b2bdb7df2c79598701e65674"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35695aa540164c4ac35f1b6a675ce88e"><td class="memItemLeft" align="right" valign="top"><a id="a35695aa540164c4ac35f1b6a675ce88e" name="a35695aa540164c4ac35f1b6a675ce88e"></a>
-const <a class="el" href="classwpi_1_1_managed_static_base.html">ManagedStaticBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>Next</b></td></tr>
+<tr class="memitem:a35695aa540164c4ac35f1b6a675ce88e"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classwpi_1_1_managed_static_base.html">ManagedStaticBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_managed_static_base.html#a35695aa540164c4ac35f1b6a675ce88e">Next</a></td></tr>
 <tr class="separator:a35695aa540164c4ac35f1b6a675ce88e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p ><a class="el" href="classwpi_1_1_managed_static_base.html" title="ManagedStaticBase - Common base class for ManagedStatic instances.">ManagedStaticBase</a> - Common base class for <a class="el" href="classwpi_1_1_managed_static.html" title="ManagedStatic - This transparently changes the behavior of global statics to be lazily constructed on...">ManagedStatic</a> instances. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2dbcfbe2bdb72bc42edbef89313482a6" name="a2dbcfbe2bdb72bc42edbef89313482a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dbcfbe2bdb72bc42edbef89313482a6">&#9670;&nbsp;</a></span>destroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wpi::ManagedStaticBase::destroy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab1ccc6c654666fe9b9da93144180eb2a" name="ab1ccc6c654666fe9b9da93144180eb2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1ccc6c654666fe9b9da93144180eb2a">&#9670;&nbsp;</a></span>isConstructed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool wpi::ManagedStaticBase::isConstructed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>isConstructed - Return true if this object has not been created yet. </p>
+
+</div>
+</div>
+<a id="afa0532a6e0a8461de0cf3ff6281d1088" name="afa0532a6e0a8461de0cf3ff6281d1088"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa0532a6e0a8461de0cf3ff6281d1088">&#9670;&nbsp;</a></span>RegisterManagedStatic() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wpi::ManagedStaticBase::RegisterManagedStatic </td>
+          <td>(</td>
+          <td class="paramtype">void *(*)()&#160;</td>
+          <td class="paramname"><em>creator</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(*)(void *)&#160;</td>
+          <td class="paramname"><em>deleter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac2e13e8ce3be477485cc19a44226c15d" name="ac2e13e8ce3be477485cc19a44226c15d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2e13e8ce3be477485cc19a44226c15d">&#9670;&nbsp;</a></span>RegisterManagedStatic() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wpi::ManagedStaticBase::RegisterManagedStatic </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>created</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(*)(void *)&#160;</td>
+          <td class="paramname"><em>deleter</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a80556703b2bdb7df2c79598701e65674" name="a80556703b2bdb7df2c79598701e65674"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80556703b2bdb7df2c79598701e65674">&#9670;&nbsp;</a></span>DeleterFn</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* wpi::ManagedStaticBase::DeleterFn) (void *)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">mutable</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a35695aa540164c4ac35f1b6a675ce88e" name="a35695aa540164c4ac35f1b6a675ce88e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35695aa540164c4ac35f1b6a675ce88e">&#9670;&nbsp;</a></span>Next</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classwpi_1_1_managed_static_base.html">ManagedStaticBase</a>* wpi::ManagedStaticBase::Next</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">mutable</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afcb41212f82e31d06b6a9a5fad64ffaf" name="afcb41212f82e31d06b6a9a5fad64ffaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcb41212f82e31d06b6a9a5fad64ffaf">&#9670;&nbsp;</a></span>Ptr</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::atomic&lt;void *&gt; wpi::ManagedStaticBase::Ptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">mutable</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>wpi/<a class="el" href="_managed_static_8h_source.html">ManagedStatic.h</a></li>
 </ul>
 </div><!-- contents -->
@@ -155,8 +332,8 @@ const <a class="el" href="classwpi_1_1_managed_static_base.html">ManagedStaticBa
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>wpi</b></li><li class="navelem"><a class="el" href="classwpi_1_1_managed_static_base.html">ManagedStaticBase</a></li>
-    <li class="footer">Generated on Fri Oct 29 2021 07:12:30 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="classwpi_1_1_managed_static_base.html">ManagedStaticBase</a></li>
+    <li class="footer">Generated on Fri Oct 29 2021 22:10:09 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

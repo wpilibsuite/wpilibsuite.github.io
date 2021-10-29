@@ -12,7 +12,7 @@ var modules =
     [ "ntcore C++ object-oriented API", "group__ntcore__cpp__api.html", "group__ntcore__cpp__api" ],
     [ "cscore C++ function API", "group__cscore__cpp__api.html", "group__cscore__cpp__api" ],
     [ "cscore C API", "group__cscore__c__api.html", "group__cscore__c__api" ],
-    [ "Raw Image Functions", "group__cscore__raw__cfunc.html", null ],
+    [ "Raw Image Functions", "group__cscore__raw__cfunc.html", "group__cscore__raw__cfunc" ],
     [ "cscore C++ object-oriented API", "group__cscore__oo.html", "group__cscore__oo" ],
     [ "Unit Containers", "group___unit_containers.html", "group___unit_containers" ],
     [ "Unit Types", "group___unit_types.html", "group___unit_types" ],

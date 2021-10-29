@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-31-ga939cd9</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-32-g2cb171f</span>
    </div>
   </td>
  </tr>
@@ -121,11 +121,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1762339273834e07d70185d47136be1f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_nidec_brushless.html#a1762339273834e07d70185d47136be1f">NidecBrushless</a> (int pwmChannel, int dioChannel)</td></tr>
 <tr class="memdesc:a1762339273834e07d70185d47136be1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classfrc_1_1_nidec_brushless.html#a1762339273834e07d70185d47136be1f">More...</a><br /></td></tr>
 <tr class="separator:a1762339273834e07d70185d47136be1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76cd9ec2cf6681e5afb65b2199eceb64"><td class="memItemLeft" align="right" valign="top"><a id="a76cd9ec2cf6681e5afb65b2199eceb64" name="a76cd9ec2cf6681e5afb65b2199eceb64"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>NidecBrushless</b> (<a class="el" href="classfrc_1_1_nidec_brushless.html">NidecBrushless</a> &amp;&amp;)=default</td></tr>
+<tr class="memitem:ae4e949825fb8141f04be3f62360b56eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_nidec_brushless.html#ae4e949825fb8141f04be3f62360b56eb">~NidecBrushless</a> () override=default</td></tr>
+<tr class="separator:ae4e949825fb8141f04be3f62360b56eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76cd9ec2cf6681e5afb65b2199eceb64"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_nidec_brushless.html#a76cd9ec2cf6681e5afb65b2199eceb64">NidecBrushless</a> (<a class="el" href="classfrc_1_1_nidec_brushless.html">NidecBrushless</a> &amp;&amp;)=default</td></tr>
 <tr class="separator:a76cd9ec2cf6681e5afb65b2199eceb64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2f04f10434bdcf0b0b6a41eb76cbefc"><td class="memItemLeft" align="right" valign="top"><a id="af2f04f10434bdcf0b0b6a41eb76cbefc" name="af2f04f10434bdcf0b0b6a41eb76cbefc"></a>
-<a class="el" href="classfrc_1_1_nidec_brushless.html">NidecBrushless</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classfrc_1_1_nidec_brushless.html">NidecBrushless</a> &amp;&amp;)=default</td></tr>
+<tr class="memitem:af2f04f10434bdcf0b0b6a41eb76cbefc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_nidec_brushless.html">NidecBrushless</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_nidec_brushless.html#af2f04f10434bdcf0b0b6a41eb76cbefc">operator=</a> (<a class="el" href="classfrc_1_1_nidec_brushless.html">NidecBrushless</a> &amp;&amp;)=default</td></tr>
 <tr class="separator:af2f04f10434bdcf0b0b6a41eb76cbefc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0fbeb8d79bbb8930b413b571abf255b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_nidec_brushless.html#ad0fbeb8d79bbb8930b413b571abf255b">Set</a> (double speed) override</td></tr>
 <tr class="memdesc:ad0fbeb8d79bbb8930b413b571abf255b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the <a class="el" href="classfrc_1_1_p_w_m.html" title="Class implements the PWM generation in the FPGA.">PWM</a> value.  <a href="classfrc_1_1_nidec_brushless.html#ad0fbeb8d79bbb8930b413b571abf255b">More...</a><br /></td></tr>
@@ -156,15 +156,19 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a822e493f3c3894a0fc53e38d0274fe33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes this Sendable object.  <a href="classfrc_1_1_nidec_brushless.html#a822e493f3c3894a0fc53e38d0274fe33">More...</a><br /></td></tr>
 <tr class="separator:a822e493f3c3894a0fc53e38d0274fe33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classfrc_1_1_speed_controller"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classfrc_1_1_speed_controller')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classfrc_1_1_speed_controller.html">frc::SpeedController</a></td></tr>
+<tr class="memitem:a4ef9f2180123f5dddb586b1759e85fa8 inherit pub_methods_classfrc_1_1_speed_controller"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_speed_controller.html#a4ef9f2180123f5dddb586b1759e85fa8">~SpeedController</a> ()=default</td></tr>
+<tr class="separator:a4ef9f2180123f5dddb586b1759e85fa8 inherit pub_methods_classfrc_1_1_speed_controller"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8252b1dbd027218c7966b15d0f9faff7 inherit pub_methods_classfrc_1_1_speed_controller"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_speed_controller.html#a8252b1dbd027218c7966b15d0f9faff7">SetVoltage</a> (units::volt_t output)</td></tr>
 <tr class="memdesc:a8252b1dbd027218c7966b15d0f9faff7 inherit pub_methods_classfrc_1_1_speed_controller"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the voltage output of the <a class="el" href="classfrc_1_1_speed_controller.html" title="Interface for speed controlling devices.">SpeedController</a>.  <a href="classfrc_1_1_speed_controller.html#a8252b1dbd027218c7966b15d0f9faff7">More...</a><br /></td></tr>
 <tr class="separator:a8252b1dbd027218c7966b15d0f9faff7 inherit pub_methods_classfrc_1_1_speed_controller"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classfrc_1_1_motor_safety"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classfrc_1_1_motor_safety')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classfrc_1_1_motor_safety.html">frc::MotorSafety</a></td></tr>
-<tr class="memitem:ac9a6ed8e2bf1f658264dd499be9efcc1 inherit pub_methods_classfrc_1_1_motor_safety"><td class="memItemLeft" align="right" valign="top"><a id="ac9a6ed8e2bf1f658264dd499be9efcc1" name="ac9a6ed8e2bf1f658264dd499be9efcc1"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>MotorSafety</b> (<a class="el" href="classfrc_1_1_motor_safety.html">MotorSafety</a> &amp;&amp;rhs)</td></tr>
+<tr class="memitem:a6f4cd35e3bc3caa8fe3120e00b3d3cbd inherit pub_methods_classfrc_1_1_motor_safety"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_motor_safety.html#a6f4cd35e3bc3caa8fe3120e00b3d3cbd">MotorSafety</a> ()</td></tr>
+<tr class="separator:a6f4cd35e3bc3caa8fe3120e00b3d3cbd inherit pub_methods_classfrc_1_1_motor_safety"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe80d604ac851fdaae3f4f973a0392c7 inherit pub_methods_classfrc_1_1_motor_safety"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_motor_safety.html#afe80d604ac851fdaae3f4f973a0392c7">~MotorSafety</a> ()</td></tr>
+<tr class="separator:afe80d604ac851fdaae3f4f973a0392c7 inherit pub_methods_classfrc_1_1_motor_safety"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9a6ed8e2bf1f658264dd499be9efcc1 inherit pub_methods_classfrc_1_1_motor_safety"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_motor_safety.html#ac9a6ed8e2bf1f658264dd499be9efcc1">MotorSafety</a> (<a class="el" href="classfrc_1_1_motor_safety.html">MotorSafety</a> &amp;&amp;rhs)</td></tr>
 <tr class="separator:ac9a6ed8e2bf1f658264dd499be9efcc1 inherit pub_methods_classfrc_1_1_motor_safety"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4f35126be3de4f3627ff6124d82d143 inherit pub_methods_classfrc_1_1_motor_safety"><td class="memItemLeft" align="right" valign="top"><a id="aa4f35126be3de4f3627ff6124d82d143" name="aa4f35126be3de4f3627ff6124d82d143"></a>
-<a class="el" href="classfrc_1_1_motor_safety.html">MotorSafety</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classfrc_1_1_motor_safety.html">MotorSafety</a> &amp;&amp;rhs)</td></tr>
+<tr class="memitem:aa4f35126be3de4f3627ff6124d82d143 inherit pub_methods_classfrc_1_1_motor_safety"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_motor_safety.html">MotorSafety</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_motor_safety.html#aa4f35126be3de4f3627ff6124d82d143">operator=</a> (<a class="el" href="classfrc_1_1_motor_safety.html">MotorSafety</a> &amp;&amp;rhs)</td></tr>
 <tr class="separator:aa4f35126be3de4f3627ff6124d82d143 inherit pub_methods_classfrc_1_1_motor_safety"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64f96194caddf9df5e0ab9871fb2b7a3 inherit pub_methods_classfrc_1_1_motor_safety"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_motor_safety.html#a64f96194caddf9df5e0ab9871fb2b7a3">Feed</a> ()</td></tr>
 <tr class="memdesc:a64f96194caddf9df5e0ab9871fb2b7a3 inherit pub_methods_classfrc_1_1_motor_safety"><td class="mdescLeft">&#160;</td><td class="mdescRight">Feed the motor safety object.  <a href="classfrc_1_1_motor_safety.html#a64f96194caddf9df5e0ab9871fb2b7a3">More...</a><br /></td></tr>
@@ -187,32 +191,31 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1449c25e11582cbea7d3e2254479f42b inherit pub_methods_classfrc_1_1_motor_safety"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_motor_safety.html#a1449c25e11582cbea7d3e2254479f42b">Check</a> ()</td></tr>
 <tr class="memdesc:a1449c25e11582cbea7d3e2254479f42b inherit pub_methods_classfrc_1_1_motor_safety"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if this motor has exceeded its timeout.  <a href="classfrc_1_1_motor_safety.html#a1449c25e11582cbea7d3e2254479f42b">More...</a><br /></td></tr>
 <tr class="separator:a1449c25e11582cbea7d3e2254479f42b inherit pub_methods_classfrc_1_1_motor_safety"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classwpi_1_1_sendable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classwpi_1_1_sendable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classwpi_1_1_sendable.html">wpi::Sendable</a></td></tr>
+<tr class="memitem:a37e52c8d490b4cecf5e6fa7e7d47e7ec inherit pub_methods_classwpi_1_1_sendable"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable.html#a37e52c8d490b4cecf5e6fa7e7d47e7ec">~Sendable</a> ()=default</td></tr>
+<tr class="separator:a37e52c8d490b4cecf5e6fa7e7d47e7ec inherit pub_methods_classwpi_1_1_sendable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classwpi_1_1_sendable_helper"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classwpi_1_1_sendable_helper')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classwpi_1_1_sendable_helper.html">wpi::SendableHelper&lt; NidecBrushless &gt;</a></td></tr>
-<tr class="memitem:aab4f8627d10ab759fb1ea1bbcd106a90 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top"><a id="aab4f8627d10ab759fb1ea1bbcd106a90" name="aab4f8627d10ab759fb1ea1bbcd106a90"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SendableHelper</b> (const <a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;rhs)=default</td></tr>
+<tr class="memitem:aab4f8627d10ab759fb1ea1bbcd106a90 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#aab4f8627d10ab759fb1ea1bbcd106a90">SendableHelper</a> (const <a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;rhs)=default</td></tr>
 <tr class="separator:aab4f8627d10ab759fb1ea1bbcd106a90 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf9409670bb9b5cc16706341bf082c23 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top"><a id="aaf9409670bb9b5cc16706341bf082c23" name="aaf9409670bb9b5cc16706341bf082c23"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SendableHelper</b> (<a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;&amp;rhs)</td></tr>
+<tr class="memitem:aaf9409670bb9b5cc16706341bf082c23 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#aaf9409670bb9b5cc16706341bf082c23">SendableHelper</a> (<a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;&amp;rhs)</td></tr>
 <tr class="separator:aaf9409670bb9b5cc16706341bf082c23 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa52795f3b4aafc83fb167921dee31e2 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top"><a id="afa52795f3b4aafc83fb167921dee31e2" name="afa52795f3b4aafc83fb167921dee31e2"></a>
-<a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;rhs)=default</td></tr>
+<tr class="memitem:afa52795f3b4aafc83fb167921dee31e2 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#afa52795f3b4aafc83fb167921dee31e2">operator=</a> (const <a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;rhs)=default</td></tr>
 <tr class="separator:afa52795f3b4aafc83fb167921dee31e2 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ebcd20db42c07ce8835be6bbcdddb70 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top"><a id="a7ebcd20db42c07ce8835be6bbcdddb70" name="a7ebcd20db42c07ce8835be6bbcdddb70"></a>
-<a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;&amp;rhs)</td></tr>
+<tr class="memitem:a7ebcd20db42c07ce8835be6bbcdddb70 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a7ebcd20db42c07ce8835be6bbcdddb70">operator=</a> (<a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;&amp;rhs)</td></tr>
 <tr class="separator:a7ebcd20db42c07ce8835be6bbcdddb70 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad914b3555af5651aaaa3d8b1cec83b91 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#ad914b3555af5651aaaa3d8b1cec83b91">GetName</a> () const</td></tr>
 <tr class="memdesc:ad914b3555af5651aaaa3d8b1cec83b91 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the name of this Sendable object.  <a href="classwpi_1_1_sendable_helper.html#ad914b3555af5651aaaa3d8b1cec83b91">More...</a><br /></td></tr>
 <tr class="separator:ad914b3555af5651aaaa3d8b1cec83b91 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab63e9f45842f45bfe5332041be0ef215 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#ab63e9f45842f45bfe5332041be0ef215">SetName</a> (std::string_view name)</td></tr>
+<tr class="memitem:ab63e9f45842f45bfe5332041be0ef215 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#ab63e9f45842f45bfe5332041be0ef215">SetName</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> <a class="el" href="core_8h.html#a7fc0249f0f8ba720115d2430f5b86cbaab068931cc450442b63f5b3d276ea4297">name</a>)</td></tr>
 <tr class="memdesc:ab63e9f45842f45bfe5332041be0ef215 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name of this Sendable object.  <a href="classwpi_1_1_sendable_helper.html#ab63e9f45842f45bfe5332041be0ef215">More...</a><br /></td></tr>
 <tr class="separator:ab63e9f45842f45bfe5332041be0ef215 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75eba171de041df5ccdd8118287f9511 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a75eba171de041df5ccdd8118287f9511">SetName</a> (std::string_view subsystem, std::string_view name)</td></tr>
+<tr class="memitem:a75eba171de041df5ccdd8118287f9511 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a75eba171de041df5ccdd8118287f9511">SetName</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> subsystem, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> <a class="el" href="core_8h.html#a7fc0249f0f8ba720115d2430f5b86cbaab068931cc450442b63f5b3d276ea4297">name</a>)</td></tr>
 <tr class="memdesc:a75eba171de041df5ccdd8118287f9511 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets both the subsystem name and device name of this Sendable object.  <a href="classwpi_1_1_sendable_helper.html#a75eba171de041df5ccdd8118287f9511">More...</a><br /></td></tr>
 <tr class="separator:a75eba171de041df5ccdd8118287f9511 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae661490f5da84e30594380eeb5d4952b inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#ae661490f5da84e30594380eeb5d4952b">GetSubsystem</a> () const</td></tr>
 <tr class="memdesc:ae661490f5da84e30594380eeb5d4952b inherit pub_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the subsystem name of this Sendable object.  <a href="classwpi_1_1_sendable_helper.html#ae661490f5da84e30594380eeb5d4952b">More...</a><br /></td></tr>
 <tr class="separator:ae661490f5da84e30594380eeb5d4952b inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11434f29c9ef91c9975969fb88212482 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a11434f29c9ef91c9975969fb88212482">SetSubsystem</a> (std::string_view subsystem)</td></tr>
+<tr class="memitem:a11434f29c9ef91c9975969fb88212482 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a11434f29c9ef91c9975969fb88212482">SetSubsystem</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> subsystem)</td></tr>
 <tr class="memdesc:a11434f29c9ef91c9975969fb88212482 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the subsystem name of this Sendable object.  <a href="classwpi_1_1_sendable_helper.html#a11434f29c9ef91c9975969fb88212482">More...</a><br /></td></tr>
 <tr class="separator:a11434f29c9ef91c9975969fb88212482 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -223,10 +226,12 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memdesc:a2a666ba39461317728e52fbaa9cdca32 inherit pub_static_methods_classfrc_1_1_motor_safety"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the motors to see if any have timed out.  <a href="classfrc_1_1_motor_safety.html#a2a666ba39461317728e52fbaa9cdca32">More...</a><br /></td></tr>
 <tr class="separator:a2a666ba39461317728e52fbaa9cdca32 inherit pub_static_methods_classfrc_1_1_motor_safety"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classwpi_1_1_sendable_helper"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classwpi_1_1_sendable_helper')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classwpi_1_1_sendable_helper.html">wpi::SendableHelper&lt; NidecBrushless &gt;</a></td></tr>
-<tr class="memitem:a4cc45e3b86841263aaf59223ffeb3c88 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a4cc45e3b86841263aaf59223ffeb3c88">SetName</a> (std::string_view moduleType, int channel)</td></tr>
+<tr class="memitem:af21a49b911f282fddbb22deca3c9aab5 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#af21a49b911f282fddbb22deca3c9aab5">SendableHelper</a> ()=default</td></tr>
+<tr class="separator:af21a49b911f282fddbb22deca3c9aab5 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cc45e3b86841263aaf59223ffeb3c88 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a4cc45e3b86841263aaf59223ffeb3c88">SetName</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> moduleType, int channel)</td></tr>
 <tr class="memdesc:a4cc45e3b86841263aaf59223ffeb3c88 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name of the sensor with a channel number.  <a href="classwpi_1_1_sendable_helper.html#a4cc45e3b86841263aaf59223ffeb3c88">More...</a><br /></td></tr>
 <tr class="separator:a4cc45e3b86841263aaf59223ffeb3c88 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2953192a91f457768c3d879599ee924 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#ab2953192a91f457768c3d879599ee924">SetName</a> (std::string_view moduleType, int moduleNumber, int channel)</td></tr>
+<tr class="memitem:ab2953192a91f457768c3d879599ee924 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#ab2953192a91f457768c3d879599ee924">SetName</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> moduleType, int moduleNumber, int channel)</td></tr>
 <tr class="memdesc:ab2953192a91f457768c3d879599ee924 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name of the sensor with a module and channel number.  <a href="classwpi_1_1_sendable_helper.html#ab2953192a91f457768c3d879599ee924">More...</a><br /></td></tr>
 <tr class="separator:ab2953192a91f457768c3d879599ee924 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ce2af28692ec77440d09ab8c2d36425 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a7ce2af28692ec77440d09ab8c2d36425">AddChild</a> (std::shared_ptr&lt; <a class="el" href="classwpi_1_1_sendable.html">Sendable</a> &gt; child)</td></tr>
@@ -235,12 +240,14 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a3e272258586ef98d2c1b8f6be76a1663 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a3e272258586ef98d2c1b8f6be76a1663">AddChild</a> (void *child)</td></tr>
 <tr class="memdesc:a3e272258586ef98d2c1b8f6be76a1663 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a child component.  <a href="classwpi_1_1_sendable_helper.html#a3e272258586ef98d2c1b8f6be76a1663">More...</a><br /></td></tr>
 <tr class="separator:a3e272258586ef98d2c1b8f6be76a1663 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b89fa1cc66e9d7b32eaa7df291e2c3b inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a4b89fa1cc66e9d7b32eaa7df291e2c3b">~SendableHelper</a> ()</td></tr>
+<tr class="separator:a4b89fa1cc66e9d7b32eaa7df291e2c3b inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Nidec Brushless Motor. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1762339273834e07d70185d47136be1f" name="a1762339273834e07d70185d47136be1f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1762339273834e07d70185d47136be1f">&#9670;&nbsp;</a></span>NidecBrushless()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1762339273834e07d70185d47136be1f">&#9670;&nbsp;</a></span>NidecBrushless() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -273,6 +280,57 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ae4e949825fb8141f04be3f62360b56eb" name="ae4e949825fb8141f04be3f62360b56eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4e949825fb8141f04be3f62360b56eb">&#9670;&nbsp;</a></span>~NidecBrushless()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">frc::NidecBrushless::~NidecBrushless </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a76cd9ec2cf6681e5afb65b2199eceb64" name="a76cd9ec2cf6681e5afb65b2199eceb64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76cd9ec2cf6681e5afb65b2199eceb64">&#9670;&nbsp;</a></span>NidecBrushless() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">frc::NidecBrushless::NidecBrushless </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classfrc_1_1_nidec_brushless.html">NidecBrushless</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -400,7 +458,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classfrc_1_1_motor_safety.html">frc::MotorSafety</a>.</p>
+<p>Implements <a class="el" href="classfrc_1_1_motor_safety.html#a601228c7ebc676162bdecedeba071c58">frc::MotorSafety</a>.</p>
 
 </div>
 </div>
@@ -467,6 +525,32 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 
 <p>Implements <a class="el" href="classwpi_1_1_sendable.html#a02dfae73ea50b297f05151eafdc2efe6">wpi::Sendable</a>.</p>
+
+</div>
+</div>
+<a id="af2f04f10434bdcf0b0b6a41eb76cbefc" name="af2f04f10434bdcf0b0b6a41eb76cbefc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2f04f10434bdcf0b0b6a41eb76cbefc">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfrc_1_1_nidec_brushless.html">NidecBrushless</a> &amp; frc::NidecBrushless::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classfrc_1_1_nidec_brushless.html">NidecBrushless</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -566,7 +650,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classfrc_1_1_motor_safety.html">frc::MotorSafety</a>.</p>
+<p>Implements <a class="el" href="classfrc_1_1_motor_safety.html#a0269b4f422dd90c886074a41a5f7400a">frc::MotorSafety</a>.</p>
 
 </div>
 </div>
@@ -578,8 +662,8 @@ Additional Inherited Members</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1_nidec_brushless.html">NidecBrushless</a></li>
-    <li class="footer">Generated on Fri Oct 29 2021 07:12:28 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_nidec_brushless.html">NidecBrushless</a></li>
+    <li class="footer">Generated on Fri Oct 29 2021 22:10:07 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

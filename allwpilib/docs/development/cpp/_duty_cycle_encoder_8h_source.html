@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-31-ga939cd9</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-32-g2cb171f</span>
    </div>
   </td>
  </tr>
@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('_duty_cycle_encoder_8h_source.html',''
   <div class="headertitle"><div class="title">DutyCycleEncoder.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
+<a href="_duty_cycle_encoder_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Open Source Software; you can modify and/or share it under the terms of</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// the WPILib BSD license file in the root directory of this project.</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
@@ -102,17 +102,17 @@ $(document).ready(function(){initNavTree('_duty_cycle_encoder_8h_source.html',''
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;hal/SimDevice.h&gt;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;hal/Types.h&gt;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;units/angle.h&gt;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;wpi/sendable/Sendable.h&gt;</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;wpi/sendable/SendableHelper.h&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;<a class="code" href="_sim_device_8h.html">hal/SimDevice.h</a>&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;<a class="code" href="_types_8h.html">hal/Types.h</a>&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;<a class="code" href="angle_8h.html">units/angle.h</a>&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;<a class="code" href="_sendable_8h.html">wpi/sendable/Sendable.h</a>&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;<a class="code" href="_sendable_helper_8h.html">wpi/sendable/SendableHelper.h</a>&gt;</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;frc/AnalogTrigger.h&quot;</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;frc/Counter.h&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="wpilibc_2src_2main_2native_2include_2frc_2_analog_trigger_8h.html">frc/AnalogTrigger.h</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="wpilibc_2src_2main_2native_2include_2frc_2_counter_8h.html">frc/Counter.h</a>&quot;</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">namespace </span>frc {</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">class </span>DutyCycle;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacefrc.html">frc</a> {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">class </span><a class="code hl_enumvalue" href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9a3e015efacb6f8cb02bd37cafec901301">DutyCycle</a>;</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">class </span>DigitalSource;</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"></span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">/**</span></div>
@@ -172,10 +172,10 @@ $(document).ready(function(){initNavTree('_duty_cycle_encoder_8h_source.html',''
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="classfrc_1_1_duty_cycle_encoder.html#a033273e6b99813f6109674680a229cfd">   77</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classfrc_1_1_duty_cycle_encoder.html#a033273e6b99813f6109674680a229cfd">DutyCycleEncoder</a>(std::shared_ptr&lt;DigitalSource&gt; digitalSource);</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  <a class="code hl_class" href="classfrc_1_1_duty_cycle_encoder.html">~DutyCycleEncoder</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="classfrc_1_1_duty_cycle_encoder.html#a7a87ce134f93c339629684fe3f84ad90">   79</a></span>  <a class="code hl_function" href="classfrc_1_1_duty_cycle_encoder.html#a7a87ce134f93c339629684fe3f84ad90">~DutyCycleEncoder</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  <a class="code hl_function" href="classfrc_1_1_duty_cycle_encoder.html#af2521e7124e017d4bb5f9d82ea574e35">DutyCycleEncoder</a>(<a class="code hl_class" href="classfrc_1_1_duty_cycle_encoder.html">DutyCycleEncoder</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  <a class="code hl_class" href="classfrc_1_1_duty_cycle_encoder.html">DutyCycleEncoder</a>&amp; operator=(<a class="code hl_class" href="classfrc_1_1_duty_cycle_encoder.html">DutyCycleEncoder</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="classfrc_1_1_duty_cycle_encoder.html#af3b87f633d1fc2ab81b597c629e9df0b">   81</a></span>  <a class="code hl_function" href="classfrc_1_1_duty_cycle_encoder.html#af3b87f633d1fc2ab81b597c629e9df0b">DutyCycleEncoder</a>(<a class="code hl_class" href="classfrc_1_1_duty_cycle_encoder.html">DutyCycleEncoder</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="classfrc_1_1_duty_cycle_encoder.html#ab26c9d36eae47cc86860ff9874c9c19f">   82</a></span>  <a class="code hl_class" href="classfrc_1_1_duty_cycle_encoder.html">DutyCycleEncoder</a>&amp; <a class="code hl_function" href="classfrc_1_1_duty_cycle_encoder.html#ab26c9d36eae47cc86860ff9874c9c19f">operator=</a>(<a class="code hl_class" href="classfrc_1_1_duty_cycle_encoder.html">DutyCycleEncoder</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment"></span> </div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">   * Get the frequency in Hz of the duty cycle signal from the encoder.</span></div>
@@ -278,6 +278,11 @@ $(document).ready(function(){initNavTree('_duty_cycle_encoder_8h_source.html',''
 <div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>  hal::SimBoolean m_simIsConnected;</div>
 <div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>};</div>
 <div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>}  <span class="comment">// namespace frc</span></div>
+<div class="ttc" id="a_sendable_8h_html"><div class="ttname"><a href="_sendable_8h.html">Sendable.h</a></div></div>
+<div class="ttc" id="a_sendable_helper_8h_html"><div class="ttname"><a href="_sendable_helper_8h.html">SendableHelper.h</a></div></div>
+<div class="ttc" id="a_sim_device_8h_html"><div class="ttname"><a href="_sim_device_8h.html">SimDevice.h</a></div></div>
+<div class="ttc" id="a_types_8h_html"><div class="ttname"><a href="_types_8h.html">Types.h</a></div></div>
+<div class="ttc" id="aangle_8h_html"><div class="ttname"><a href="angle_8h.html">angle.h</a></div></div>
 <div class="ttc" id="aclassfrc_1_1_digital_source_html"><div class="ttname"><a href="classfrc_1_1_digital_source.html">frc::DigitalSource</a></div><div class="ttdoc">DigitalSource Interface.</div><div class="ttdef"><b>Definition:</b> DigitalSource.h:22</div></div>
 <div class="ttc" id="aclassfrc_1_1_duty_cycle_encoder_html"><div class="ttname"><a href="classfrc_1_1_duty_cycle_encoder.html">frc::DutyCycleEncoder</a></div><div class="ttdoc">Class for supporting duty cycle/PWM encoders, such as the US Digital MA3 with PWM Output,...</div><div class="ttdef"><b>Definition:</b> DutyCycleEncoder.h:28</div></div>
 <div class="ttc" id="aclassfrc_1_1_duty_cycle_encoder_html_a033273e6b99813f6109674680a229cfd"><div class="ttname"><a href="classfrc_1_1_duty_cycle_encoder.html#a033273e6b99813f6109674680a229cfd">frc::DutyCycleEncoder::DutyCycleEncoder</a></div><div class="ttdeci">DutyCycleEncoder(std::shared_ptr&lt; DigitalSource &gt; digitalSource)</div><div class="ttdoc">Construct a new DutyCycleEncoder attached to a DigitalSource object.</div></div>
@@ -288,6 +293,7 @@ $(document).ready(function(){initNavTree('_duty_cycle_encoder_8h_source.html',''
 <div class="ttc" id="aclassfrc_1_1_duty_cycle_encoder_html_a510264a3bb1c89a93c733e623b6082f8"><div class="ttname"><a href="classfrc_1_1_duty_cycle_encoder.html#a510264a3bb1c89a93c733e623b6082f8">frc::DutyCycleEncoder::DutyCycleEncoder</a></div><div class="ttdeci">DutyCycleEncoder(DigitalSource &amp;digitalSource)</div><div class="ttdoc">Construct a new DutyCycleEncoder attached to a DigitalSource object.</div></div>
 <div class="ttc" id="aclassfrc_1_1_duty_cycle_encoder_html_a5a4011f1ec7e2fc4e2b25e2eea0061b9"><div class="ttname"><a href="classfrc_1_1_duty_cycle_encoder.html#a5a4011f1ec7e2fc4e2b25e2eea0061b9">frc::DutyCycleEncoder::DutyCycleEncoder</a></div><div class="ttdeci">DutyCycleEncoder(DigitalSource *digitalSource)</div><div class="ttdoc">Construct a new DutyCycleEncoder attached to a DigitalSource object.</div></div>
 <div class="ttc" id="aclassfrc_1_1_duty_cycle_encoder_html_a66c33804bb43a906ea9ae65fccb4e752"><div class="ttname"><a href="classfrc_1_1_duty_cycle_encoder.html#a66c33804bb43a906ea9ae65fccb4e752">frc::DutyCycleEncoder::GetDistancePerRotation</a></div><div class="ttdeci">double GetDistancePerRotation() const</div><div class="ttdoc">Get the distance per rotation for this encoder.</div></div>
+<div class="ttc" id="aclassfrc_1_1_duty_cycle_encoder_html_a7a87ce134f93c339629684fe3f84ad90"><div class="ttname"><a href="classfrc_1_1_duty_cycle_encoder.html#a7a87ce134f93c339629684fe3f84ad90">frc::DutyCycleEncoder::~DutyCycleEncoder</a></div><div class="ttdeci">~DutyCycleEncoder() override=default</div></div>
 <div class="ttc" id="aclassfrc_1_1_duty_cycle_encoder_html_a7e3bdba84ed3c3643b6c3311e480fb91"><div class="ttname"><a href="classfrc_1_1_duty_cycle_encoder.html#a7e3bdba84ed3c3643b6c3311e480fb91">frc::DutyCycleEncoder::GetFrequency</a></div><div class="ttdeci">int GetFrequency() const</div><div class="ttdoc">Get the frequency in Hz of the duty cycle signal from the encoder.</div></div>
 <div class="ttc" id="aclassfrc_1_1_duty_cycle_encoder_html_a82ff91f628934d5a849f51302fdd18e6"><div class="ttname"><a href="classfrc_1_1_duty_cycle_encoder.html#a82ff91f628934d5a849f51302fdd18e6">frc::DutyCycleEncoder::GetSourceChannel</a></div><div class="ttdeci">int GetSourceChannel() const</div><div class="ttdoc">Get the channel of the source.</div></div>
 <div class="ttc" id="aclassfrc_1_1_duty_cycle_encoder_html_a897dbd042c23299243fed139745178ae"><div class="ttname"><a href="classfrc_1_1_duty_cycle_encoder.html#a897dbd042c23299243fed139745178ae">frc::DutyCycleEncoder::SetDistancePerRotation</a></div><div class="ttdeci">void SetDistancePerRotation(double distancePerRotation)</div><div class="ttdoc">Set the distance per rotation of the encoder.</div></div>
@@ -295,20 +301,26 @@ $(document).ready(function(){initNavTree('_duty_cycle_encoder_8h_source.html',''
 <div class="ttc" id="aclassfrc_1_1_duty_cycle_encoder_html_a9a8175dd49bf125b4cb4f5470392a237"><div class="ttname"><a href="classfrc_1_1_duty_cycle_encoder.html#a9a8175dd49bf125b4cb4f5470392a237">frc::DutyCycleEncoder::DutyCycleEncoder</a></div><div class="ttdeci">DutyCycleEncoder(std::shared_ptr&lt; DutyCycle &gt; dutyCycle)</div><div class="ttdoc">Construct a new DutyCycleEncoder attached to an existing DutyCycle object.</div></div>
 <div class="ttc" id="aclassfrc_1_1_duty_cycle_encoder_html_aa0e1961e47a8f19f5166a7f32fa565d2"><div class="ttname"><a href="classfrc_1_1_duty_cycle_encoder.html#aa0e1961e47a8f19f5166a7f32fa565d2">frc::DutyCycleEncoder::InitSendable</a></div><div class="ttdeci">void InitSendable(wpi::SendableBuilder &amp;builder) override</div><div class="ttdoc">Initializes this Sendable object.</div></div>
 <div class="ttc" id="aclassfrc_1_1_duty_cycle_encoder_html_aa902217541586c9305c55a15ae169b8c"><div class="ttname"><a href="classfrc_1_1_duty_cycle_encoder.html#aa902217541586c9305c55a15ae169b8c">frc::DutyCycleEncoder::Get</a></div><div class="ttdeci">units::turn_t Get() const</div><div class="ttdoc">Get the encoder value since the last reset.</div></div>
+<div class="ttc" id="aclassfrc_1_1_duty_cycle_encoder_html_ab26c9d36eae47cc86860ff9874c9c19f"><div class="ttname"><a href="classfrc_1_1_duty_cycle_encoder.html#ab26c9d36eae47cc86860ff9874c9c19f">frc::DutyCycleEncoder::operator=</a></div><div class="ttdeci">DutyCycleEncoder &amp; operator=(DutyCycleEncoder &amp;&amp;)=default</div></div>
 <div class="ttc" id="aclassfrc_1_1_duty_cycle_encoder_html_ac749c7d3591e4a79f044d7763cf9fd72"><div class="ttname"><a href="classfrc_1_1_duty_cycle_encoder.html#ac749c7d3591e4a79f044d7763cf9fd72">frc::DutyCycleEncoder::Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdoc">Reset the Encoder distance to zero.</div></div>
 <div class="ttc" id="aclassfrc_1_1_duty_cycle_encoder_html_aeb80ad8d4a22b2aed01700b52e537f1d"><div class="ttname"><a href="classfrc_1_1_duty_cycle_encoder.html#aeb80ad8d4a22b2aed01700b52e537f1d">frc::DutyCycleEncoder::SetConnectedFrequencyThreshold</a></div><div class="ttdeci">void SetConnectedFrequencyThreshold(int frequency)</div><div class="ttdoc">Change the frequency threshold for detecting connection used by IsConnected.</div></div>
 <div class="ttc" id="aclassfrc_1_1_duty_cycle_encoder_html_af2521e7124e017d4bb5f9d82ea574e35"><div class="ttname"><a href="classfrc_1_1_duty_cycle_encoder.html#af2521e7124e017d4bb5f9d82ea574e35">frc::DutyCycleEncoder::DutyCycleEncoder</a></div><div class="ttdeci">DutyCycleEncoder(int channel)</div><div class="ttdoc">Construct a new DutyCycleEncoder on a specific channel.</div></div>
+<div class="ttc" id="aclassfrc_1_1_duty_cycle_encoder_html_af3b87f633d1fc2ab81b597c629e9df0b"><div class="ttname"><a href="classfrc_1_1_duty_cycle_encoder.html#af3b87f633d1fc2ab81b597c629e9df0b">frc::DutyCycleEncoder::DutyCycleEncoder</a></div><div class="ttdeci">DutyCycleEncoder(DutyCycleEncoder &amp;&amp;)=default</div></div>
 <div class="ttc" id="aclassfrc_1_1_duty_cycle_html"><div class="ttname"><a href="classfrc_1_1_duty_cycle.html">frc::DutyCycle</a></div><div class="ttdoc">Class to read a duty cycle PWM input.</div><div class="ttdef"><b>Definition:</b> DutyCycle.h:30</div></div>
 <div class="ttc" id="aclasswpi_1_1_sendable_builder_html"><div class="ttname"><a href="classwpi_1_1_sendable_builder.html">wpi::SendableBuilder</a></div><div class="ttdef"><b>Definition:</b> SendableBuilder.h:18</div></div>
 <div class="ttc" id="aclasswpi_1_1_sendable_helper_html"><div class="ttname"><a href="classwpi_1_1_sendable_helper.html">wpi::SendableHelper</a></div><div class="ttdoc">A helper class for use with objects that add themselves to SendableRegistry.</div><div class="ttdef"><b>Definition:</b> SendableHelper.h:24</div></div>
 <div class="ttc" id="aclasswpi_1_1_sendable_html"><div class="ttname"><a href="classwpi_1_1_sendable.html">wpi::Sendable</a></div><div class="ttdoc">Interface for Sendable objects.</div><div class="ttdef"><b>Definition:</b> Sendable.h:16</div></div>
+<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> CameraServerShared.h:13</div></div>
+<div class="ttc" id="anamespacehal_html_a2e846f89b7ea1bed682347804f2c9cc9a3e015efacb6f8cb02bd37cafec901301"><div class="ttname"><a href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9a3e015efacb6f8cb02bd37cafec901301">hal::HAL_HandleEnum::DutyCycle</a></div><div class="ttdeci">@ DutyCycle</div></div>
+<div class="ttc" id="awpilibc_2src_2main_2native_2include_2frc_2_analog_trigger_8h_html"><div class="ttname"><a href="wpilibc_2src_2main_2native_2include_2frc_2_analog_trigger_8h.html">AnalogTrigger.h</a></div></div>
+<div class="ttc" id="awpilibc_2src_2main_2native_2include_2frc_2_counter_8h_html"><div class="ttname"><a href="wpilibc_2src_2main_2native_2include_2frc_2_counter_8h.html">Counter.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><b>DutyCycleEncoder.h</b></li>
-    <li class="footer">Generated on Fri Oct 29 2021 07:12:14 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="_duty_cycle_encoder_8h.html">DutyCycleEncoder.h</a></li>
+    <li class="footer">Generated on Fri Oct 29 2021 22:09:51 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

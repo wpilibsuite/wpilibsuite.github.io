@@ -1,5 +1,7 @@
 var classwpi_1_1uv_1_1_signal =
 [
+    [ "Signal", "classwpi_1_1uv_1_1_signal.html#ab66bd215cf62ebad608b859521504f64", null ],
+    [ "~Signal", "classwpi_1_1uv_1_1_signal.html#a62a1faf1e2aaa86cf33833e56f6b6f42", null ],
     [ "Create", "classwpi_1_1uv_1_1_signal.html#ab9b892903e7792addbe441470a334882", null ],
     [ "Create", "classwpi_1_1uv_1_1_signal.html#a6640201679e9d592eca3cdae8ab61a37", null ],
     [ "GetSignal", "classwpi_1_1uv_1_1_signal.html#a240413423f8af87939c08bd4d9caee0b", null ],

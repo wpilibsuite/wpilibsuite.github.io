@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-31-ga939cd9</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-32-g2cb171f</span>
    </div>
   </td>
  </tr>
@@ -107,19 +107,33 @@ $(document).ready(function(){initNavTree('classfrc_1_1_trajectory_parameterizer.
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:aff18e213c6211e26ff5a317bef2011e4"><td class="memItemLeft" align="right" valign="top"><a id="aff18e213c6211e26ff5a317bef2011e4" name="aff18e213c6211e26ff5a317bef2011e4"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>PoseWithCurvature</b> = std::pair&lt; <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a>, <a class="el" href="classunits_1_1unit__t.html">units::curvature_t</a> &gt;</td></tr>
+<tr class="memitem:aff18e213c6211e26ff5a317bef2011e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_trajectory_parameterizer.html#aff18e213c6211e26ff5a317bef2011e4">PoseWithCurvature</a> = std::pair&lt; <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a>, <a class="el" href="namespaceunits.html#ad6027770bc97176b198c3d330cde7a75">units::curvature_t</a> &gt;</td></tr>
 <tr class="separator:aff18e213c6211e26ff5a317bef2011e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aad03889115dbe39dd0afed7d166c4424"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classfrc_1_1_trajectory.html">Trajectory</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_trajectory_parameterizer.html#aad03889115dbe39dd0afed7d166c4424">TimeParameterizeTrajectory</a> (const std::vector&lt; PoseWithCurvature &gt; &amp;points, const std::vector&lt; std::unique_ptr&lt; <a class="el" href="classfrc_1_1_trajectory_constraint.html">TrajectoryConstraint</a> &gt; &gt; &amp;constraints, units::meters_per_second_t startVelocity, units::meters_per_second_t endVelocity, units::meters_per_second_t maxVelocity, units::meters_per_second_squared_t maxAcceleration, bool reversed)</td></tr>
+<tr class="memitem:aad03889115dbe39dd0afed7d166c4424"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classfrc_1_1_trajectory.html">Trajectory</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_trajectory_parameterizer.html#aad03889115dbe39dd0afed7d166c4424">TimeParameterizeTrajectory</a> (const std::vector&lt; <a class="el" href="classfrc_1_1_trajectory_parameterizer.html#aff18e213c6211e26ff5a317bef2011e4">PoseWithCurvature</a> &gt; &amp;points, const std::vector&lt; std::unique_ptr&lt; <a class="el" href="classfrc_1_1_trajectory_constraint.html">TrajectoryConstraint</a> &gt; &gt; &amp;constraints, units::meters_per_second_t startVelocity, units::meters_per_second_t endVelocity, units::meters_per_second_t maxVelocity, units::meters_per_second_squared_t maxAcceleration, bool reversed)</td></tr>
 <tr class="memdesc:aad03889115dbe39dd0afed7d166c4424"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameterize the trajectory by time.  <a href="classfrc_1_1_trajectory_parameterizer.html#aad03889115dbe39dd0afed7d166c4424">More...</a><br /></td></tr>
 <tr class="separator:aad03889115dbe39dd0afed7d166c4424"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Class used to parameterize a trajectory by time. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="aff18e213c6211e26ff5a317bef2011e4" name="aff18e213c6211e26ff5a317bef2011e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff18e213c6211e26ff5a317bef2011e4">&#9670;&nbsp;</a></span>PoseWithCurvature</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="classfrc_1_1_trajectory_parameterizer.html#aff18e213c6211e26ff5a317bef2011e4">frc::TrajectoryParameterizer::PoseWithCurvature</a> =  std::pair&lt;<a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a>, <a class="el" href="namespaceunits.html#ad6027770bc97176b198c3d330cde7a75">units::curvature_t</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="aad03889115dbe39dd0afed7d166c4424" name="aad03889115dbe39dd0afed7d166c4424"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aad03889115dbe39dd0afed7d166c4424">&#9670;&nbsp;</a></span>TimeParameterizeTrajectory()</h2>
 
@@ -132,7 +146,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">static <a class="el" href="classfrc_1_1_trajectory.html">Trajectory</a> frc::TrajectoryParameterizer::TimeParameterizeTrajectory </td>
           <td>(</td>
-          <td class="paramtype">const std::vector&lt; PoseWithCurvature &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classfrc_1_1_trajectory_parameterizer.html#aff18e213c6211e26ff5a317bef2011e4">PoseWithCurvature</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>points</em>, </td>
         </tr>
         <tr>
@@ -211,8 +225,8 @@ Static Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1_trajectory_parameterizer.html">TrajectoryParameterizer</a></li>
-    <li class="footer">Generated on Fri Oct 29 2021 07:12:29 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_trajectory_parameterizer.html">TrajectoryParameterizer</a></li>
+    <li class="footer">Generated on Fri Oct 29 2021 22:10:08 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

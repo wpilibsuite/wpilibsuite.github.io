@@ -1,6 +1,7 @@
 var classnt_1_1_network_table =
 [
     [ "NetworkTable", "classnt_1_1_network_table.html#ad82f666270ef11b0c1c839b791857865", null ],
+    [ "~NetworkTable", "classnt_1_1_network_table.html#a52f82b78ec06985a58c5f4ee6a3b0270", null ],
     [ "AddEntryListener", "classnt_1_1_network_table.html#a427d305abba4c9a4aedd39830f8f5da1", null ],
     [ "AddEntryListener", "classnt_1_1_network_table.html#a15b26248d42376d52f9a497084bb1f73", null ],
     [ "AddSubTableListener", "classnt_1_1_network_table.html#a72599c5033c8a97467b323da853fbb95", null ],
@@ -29,6 +30,7 @@ var classnt_1_1_network_table =
     [ "IsPersistent", "classnt_1_1_network_table.html#a67799d8acb9f259617333aea58f9baa1", null ],
     [ "LoadEntries", "classnt_1_1_network_table.html#ab50c9f3d0678bb4013508ebd39907f39", null ],
     [ "NormalizeKey", "classnt_1_1_network_table.html#a53893da2ccfea5138df1d5052b6dbb29", null ],
+    [ "NormalizeKey", "classnt_1_1_network_table.html#aff47d35eb815d688be12c8853fa53ae6", null ],
     [ "PutBoolean", "classnt_1_1_network_table.html#a62b0e2ad8439a6047372c36c27b1bfad", null ],
     [ "PutBooleanArray", "classnt_1_1_network_table.html#a53a4d23305c994e1da89b4919379d39d", null ],
     [ "PutNumber", "classnt_1_1_network_table.html#a15a85814c448e325c9ba6f0944bdc5d5", null ],
@@ -50,5 +52,6 @@ var classnt_1_1_network_table =
     [ "SetDefaultValue", "classnt_1_1_network_table.html#a905fffafb489f0f76af78db1bb7033a8", null ],
     [ "SetFlags", "classnt_1_1_network_table.html#a78988917d1574281edce78532790569f", null ],
     [ "SetPersistent", "classnt_1_1_network_table.html#ada5f9eea21ce749b77664308f7f85a4f", null ],
+    [ "NetworkTableInstance", "classnt_1_1_network_table.html#a99d2f31dacd310fe96ffa03aa791fd85", null ],
     [ "PATH_SEPARATOR_CHAR", "classnt_1_1_network_table.html#ab0d5324921b216090f76b0c699bb0247", null ]
 ];

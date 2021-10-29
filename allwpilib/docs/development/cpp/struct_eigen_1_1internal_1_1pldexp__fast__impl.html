@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-31-ga939cd9</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-32-g2cb171f</span>
    </div>
   </td>
  </tr>
@@ -98,30 +98,138 @@ $(document).ready(function(){initNavTree('struct_eigen_1_1internal_1_1pldexp__fa
   <div class="headertitle"><div class="title">Eigen::internal::pldexp_fast_impl&lt; Packet &gt; Struct Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_generic_packet_math_functions_8h_source.html">/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/eigeninclude/Eigen/src/Core/arch/Default/GenericPacketMathFunctions.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a350e7111d835f71d920997648c9bdf8f"><td class="memItemLeft" align="right" valign="top"><a id="a350e7111d835f71d920997648c9bdf8f" name="a350e7111d835f71d920997648c9bdf8f"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>TotalBits</b> = sizeof(Scalar) * CHAR_BIT
-, <b>MantissaBits</b> = numext::numeric_limits&lt;Scalar&gt;::digits - 1
-, <b>ExponentBits</b> = int(TotalBits) - int(MantissaBits) - 1
+<tr class="memitem:a350e7111d835f71d920997648c9bdf8f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="struct_eigen_1_1internal_1_1pldexp__fast__impl.html#a350e7111d835f71d920997648c9bdf8fa41d77d0b94532c2b90bbdfd3cdbd91f0">TotalBits</a> = sizeof(Scalar) * CHAR_BIT
+, <a class="el" href="struct_eigen_1_1internal_1_1pldexp__fast__impl.html#a350e7111d835f71d920997648c9bdf8fa05b78112285aa5fc05331e20c17604c9">MantissaBits</a> = numext::numeric_limits&lt;Scalar&gt;::digits - 1
+, <a class="el" href="struct_eigen_1_1internal_1_1pldexp__fast__impl.html#a350e7111d835f71d920997648c9bdf8faf4f64fd91109a01a7602ee06a4710af4">ExponentBits</a> = int(TotalBits) - int(MantissaBits) - 1
  }</td></tr>
 <tr class="separator:a350e7111d835f71d920997648c9bdf8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7dbba390200861f59c3ac4792280476f"><td class="memItemLeft" align="right" valign="top"><a id="a7dbba390200861f59c3ac4792280476f" name="a7dbba390200861f59c3ac4792280476f"></a>
-typedef <a class="el" href="struct_eigen_1_1internal_1_1unpacket__traits.html">unpacket_traits</a>&lt; Packet &gt;::integer_packet&#160;</td><td class="memItemRight" valign="bottom"><b>PacketI</b></td></tr>
+<tr class="memitem:a7dbba390200861f59c3ac4792280476f"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_eigen_1_1internal_1_1unpacket__traits.html">unpacket_traits</a>&lt; Packet &gt;::integer_packet&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1pldexp__fast__impl.html#a7dbba390200861f59c3ac4792280476f">PacketI</a></td></tr>
 <tr class="separator:a7dbba390200861f59c3ac4792280476f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d00f68c48ddbb3cd1932438a2de8f2f"><td class="memItemLeft" align="right" valign="top"><a id="a1d00f68c48ddbb3cd1932438a2de8f2f" name="a1d00f68c48ddbb3cd1932438a2de8f2f"></a>
-typedef <a class="el" href="struct_eigen_1_1internal_1_1unpacket__traits.html">unpacket_traits</a>&lt; Packet &gt;::type&#160;</td><td class="memItemRight" valign="bottom"><b>Scalar</b></td></tr>
+<tr class="memitem:a1d00f68c48ddbb3cd1932438a2de8f2f"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_eigen_1_1internal_1_1unpacket__traits.html">unpacket_traits</a>&lt; Packet &gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1pldexp__fast__impl.html#a1d00f68c48ddbb3cd1932438a2de8f2f">Scalar</a></td></tr>
 <tr class="separator:a1d00f68c48ddbb3cd1932438a2de8f2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa91c334922aecfcdacbb831d1f7997f"><td class="memItemLeft" align="right" valign="top"><a id="aaa91c334922aecfcdacbb831d1f7997f" name="aaa91c334922aecfcdacbb831d1f7997f"></a>
-typedef <a class="el" href="struct_eigen_1_1internal_1_1unpacket__traits.html">unpacket_traits</a>&lt; PacketI &gt;::type&#160;</td><td class="memItemRight" valign="bottom"><b>ScalarI</b></td></tr>
+<tr class="memitem:aaa91c334922aecfcdacbb831d1f7997f"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_eigen_1_1internal_1_1unpacket__traits.html">unpacket_traits</a>&lt; <a class="el" href="struct_eigen_1_1internal_1_1pldexp__fast__impl.html#a7dbba390200861f59c3ac4792280476f">PacketI</a> &gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1pldexp__fast__impl.html#aaa91c334922aecfcdacbb831d1f7997f">ScalarI</a></td></tr>
 <tr class="separator:aaa91c334922aecfcdacbb831d1f7997f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a6d2f6f3ce635840017bfd7e3c5f63e55"><td class="memItemLeft" align="right" valign="top"><a id="a6d2f6f3ce635840017bfd7e3c5f63e55" name="a6d2f6f3ce635840017bfd7e3c5f63e55"></a>
-static EIGEN_STRONG_INLINE EIGEN_DEVICE_FUNC Packet&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> (const Packet &amp;a, const Packet &amp;exponent)</td></tr>
+<tr class="memitem:a6d2f6f3ce635840017bfd7e3c5f63e55"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_macros_8h.html#af2b60117c00a6e75812de43bfe7db3b1">EIGEN_STRONG_INLINE</a> <a class="el" href="_macros_8h.html#a9efec3cfd22b9a33bead9c6718d128da">EIGEN_DEVICE_FUNC</a> Packet&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1pldexp__fast__impl.html#a6d2f6f3ce635840017bfd7e3c5f63e55">run</a> (const Packet &amp;a, const Packet &amp;exponent)</td></tr>
 <tr class="separator:a6d2f6f3ce635840017bfd7e3c5f63e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a7dbba390200861f59c3ac4792280476f" name="a7dbba390200861f59c3ac4792280476f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dbba390200861f59c3ac4792280476f">&#9670;&nbsp;</a></span>PacketI</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Packet &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="struct_eigen_1_1internal_1_1unpacket__traits.html">unpacket_traits</a>&lt;Packet&gt;::integer_packet <a class="el" href="struct_eigen_1_1internal_1_1pldexp__fast__impl.html">Eigen::internal::pldexp_fast_impl</a>&lt; Packet &gt;::<a class="el" href="struct_eigen_1_1internal_1_1pldexp__fast__impl.html#a7dbba390200861f59c3ac4792280476f">PacketI</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1d00f68c48ddbb3cd1932438a2de8f2f" name="a1d00f68c48ddbb3cd1932438a2de8f2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d00f68c48ddbb3cd1932438a2de8f2f">&#9670;&nbsp;</a></span>Scalar</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Packet &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="struct_eigen_1_1internal_1_1unpacket__traits.html">unpacket_traits</a>&lt;Packet&gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a> <a class="el" href="struct_eigen_1_1internal_1_1pldexp__fast__impl.html">Eigen::internal::pldexp_fast_impl</a>&lt; Packet &gt;::<a class="el" href="struct_eigen_1_1internal_1_1pldexp__fast__impl.html#a1d00f68c48ddbb3cd1932438a2de8f2f">Scalar</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaa91c334922aecfcdacbb831d1f7997f" name="aaa91c334922aecfcdacbb831d1f7997f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa91c334922aecfcdacbb831d1f7997f">&#9670;&nbsp;</a></span>ScalarI</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Packet &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="struct_eigen_1_1internal_1_1unpacket__traits.html">unpacket_traits</a>&lt;<a class="el" href="struct_eigen_1_1internal_1_1pldexp__fast__impl.html#a7dbba390200861f59c3ac4792280476f">PacketI</a>&gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a> <a class="el" href="struct_eigen_1_1internal_1_1pldexp__fast__impl.html">Eigen::internal::pldexp_fast_impl</a>&lt; Packet &gt;::<a class="el" href="struct_eigen_1_1internal_1_1pldexp__fast__impl.html#aaa91c334922aecfcdacbb831d1f7997f">ScalarI</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a350e7111d835f71d920997648c9bdf8f" name="a350e7111d835f71d920997648c9bdf8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a350e7111d835f71d920997648c9bdf8f">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Packet &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a350e7111d835f71d920997648c9bdf8fa41d77d0b94532c2b90bbdfd3cdbd91f0" name="a350e7111d835f71d920997648c9bdf8fa41d77d0b94532c2b90bbdfd3cdbd91f0"></a>TotalBits&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a350e7111d835f71d920997648c9bdf8fa05b78112285aa5fc05331e20c17604c9" name="a350e7111d835f71d920997648c9bdf8fa05b78112285aa5fc05331e20c17604c9"></a>MantissaBits&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a350e7111d835f71d920997648c9bdf8faf4f64fd91109a01a7602ee06a4710af4" name="a350e7111d835f71d920997648c9bdf8faf4f64fd91109a01a7602ee06a4710af4"></a>ExponentBits&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6d2f6f3ce635840017bfd7e3c5f63e55" name="a6d2f6f3ce635840017bfd7e3c5f63e55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d2f6f3ce635840017bfd7e3c5f63e55">&#9670;&nbsp;</a></span>run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Packet &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="_macros_8h.html#af2b60117c00a6e75812de43bfe7db3b1">EIGEN_STRONG_INLINE</a> <a class="el" href="_macros_8h.html#a9efec3cfd22b9a33bead9c6718d128da">EIGEN_DEVICE_FUNC</a> Packet <a class="el" href="struct_eigen_1_1internal_1_1pldexp__fast__impl.html">Eigen::internal::pldexp_fast_impl</a>&lt; Packet &gt;::run </td>
+          <td>(</td>
+          <td class="paramtype">const Packet &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Packet &amp;&#160;</td>
+          <td class="paramname"><em>exponent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/eigeninclude/Eigen/src/Core/arch/Default/<a class="el" href="_generic_packet_math_functions_8h_source.html">GenericPacketMathFunctions.h</a></li>
 </ul>
@@ -130,8 +238,8 @@ static EIGEN_STRONG_INLINE EIGEN_DEVICE_FUNC Packet&#160;</td><td class="memItem
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespace_eigen.html">Eigen</a></li><li class="navelem"><b>internal</b></li><li class="navelem"><a class="el" href="struct_eigen_1_1internal_1_1pldexp__fast__impl.html">pldexp_fast_impl</a></li>
-    <li class="footer">Generated on Fri Oct 29 2021 07:12:27 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespace_eigen.html">Eigen</a></li><li class="navelem"><a class="el" href="namespace_eigen_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="struct_eigen_1_1internal_1_1pldexp__fast__impl.html">pldexp_fast_impl</a></li>
+    <li class="footer">Generated on Fri Oct 29 2021 22:10:06 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

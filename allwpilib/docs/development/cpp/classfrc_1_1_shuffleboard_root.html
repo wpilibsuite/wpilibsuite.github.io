@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-31-ga939cd9</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-32-g2cb171f</span>
    </div>
   </td>
  </tr>
@@ -114,7 +114,7 @@ Inheritance diagram for frc::ShuffleboardRoot:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1a7b86350fdfb3a0789498b4fce1e575"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classfrc_1_1_shuffleboard_tab.html">ShuffleboardTab</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_shuffleboard_root.html#a1a7b86350fdfb3a0789498b4fce1e575">GetTab</a> (std::string_view title)=0</td></tr>
+<tr class="memitem:a1a7b86350fdfb3a0789498b4fce1e575"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classfrc_1_1_shuffleboard_tab.html">ShuffleboardTab</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_shuffleboard_root.html#a1a7b86350fdfb3a0789498b4fce1e575">GetTab</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> title)=0</td></tr>
 <tr class="memdesc:a1a7b86350fdfb3a0789498b4fce1e575"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the tab with the given title, creating it if it does not already exist.  <a href="classfrc_1_1_shuffleboard_root.html#a1a7b86350fdfb3a0789498b4fce1e575">More...</a><br /></td></tr>
 <tr class="separator:a1a7b86350fdfb3a0789498b4fce1e575"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59c9b95f0dcb7f008a87f074e4650117"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_shuffleboard_root.html#a59c9b95f0dcb7f008a87f074e4650117">Update</a> ()=0</td></tr>
@@ -129,7 +129,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af2ee79e5148ba2879f997b1bb99e2af3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_shuffleboard_root.html#af2ee79e5148ba2879f997b1bb99e2af3">SelectTab</a> (int index)=0</td></tr>
 <tr class="memdesc:af2ee79e5148ba2879f997b1bb99e2af3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selects the tab in the dashboard with the given index in the range [0..n-1], where <em>n</em> is the number of tabs in the dashboard at the time this method is called.  <a href="classfrc_1_1_shuffleboard_root.html#af2ee79e5148ba2879f997b1bb99e2af3">More...</a><br /></td></tr>
 <tr class="separator:af2ee79e5148ba2879f997b1bb99e2af3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a554f0d5c84d23ec0da77ae1d126404de"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_shuffleboard_root.html#a554f0d5c84d23ec0da77ae1d126404de">SelectTab</a> (std::string_view title)=0</td></tr>
+<tr class="memitem:a554f0d5c84d23ec0da77ae1d126404de"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_shuffleboard_root.html#a554f0d5c84d23ec0da77ae1d126404de">SelectTab</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> title)=0</td></tr>
 <tr class="memdesc:a554f0d5c84d23ec0da77ae1d126404de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selects the tab in the dashboard with the given title.  <a href="classfrc_1_1_shuffleboard_root.html#a554f0d5c84d23ec0da77ae1d126404de">More...</a><br /></td></tr>
 <tr class="separator:a554f0d5c84d23ec0da77ae1d126404de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -208,7 +208,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual <a class="el" href="classfrc_1_1_shuffleboard_tab.html">ShuffleboardTab</a> &amp; frc::ShuffleboardRoot::GetTab </td>
           <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>title</em></td><td>)</td>
           <td></td>
         </tr>
@@ -281,7 +281,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void frc::ShuffleboardRoot::SelectTab </td>
           <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>title</em></td><td>)</td>
           <td></td>
         </tr>
@@ -342,8 +342,8 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1_shuffleboard_root.html">ShuffleboardRoot</a></li>
-    <li class="footer">Generated on Fri Oct 29 2021 07:12:28 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_shuffleboard_root.html">ShuffleboardRoot</a></li>
+    <li class="footer">Generated on Fri Oct 29 2021 22:10:07 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

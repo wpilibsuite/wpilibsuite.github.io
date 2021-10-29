@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-31-ga939cd9</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-32-g2cb171f</span>
    </div>
   </td>
  </tr>
@@ -97,33 +97,150 @@ $(document).ready(function(){initNavTree('struct_eigen_1_1internal_1_1redux__tra
   <div class="headertitle"><div class="title">Eigen::internal::redux_traits&lt; Func, Evaluator &gt; Struct Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_redux_8h_source.html">/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/eigeninclude/Eigen/src/Core/Redux.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a5179a12b8fa5d8e2144813ea7fdaa44e"><td class="memItemLeft" align="right" valign="top"><a id="a5179a12b8fa5d8e2144813ea7fdaa44e" name="a5179a12b8fa5d8e2144813ea7fdaa44e"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>PacketSize</b> = unpacket_traits&lt;PacketType&gt;::size
-, <b>InnerMaxSize</b>
-, <b>OuterMaxSize</b>
-, <b>SliceVectorizedWork</b>
+<tr class="memitem:a5179a12b8fa5d8e2144813ea7fdaa44e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="struct_eigen_1_1internal_1_1redux__traits.html#a5179a12b8fa5d8e2144813ea7fdaa44eaccbb80ac2c9edd5b15449a047087421a">PacketSize</a> = unpacket_traits&lt;PacketType&gt;::size
+, <a class="el" href="struct_eigen_1_1internal_1_1redux__traits.html#a5179a12b8fa5d8e2144813ea7fdaa44eabf26aba4ca9f1180732c9290f7f0d347">InnerMaxSize</a>
+, <a class="el" href="struct_eigen_1_1internal_1_1redux__traits.html#a5179a12b8fa5d8e2144813ea7fdaa44ead5eb070f26a07fe1aba8dddf7054fa93">OuterMaxSize</a>
+, <a class="el" href="struct_eigen_1_1internal_1_1redux__traits.html#a5179a12b8fa5d8e2144813ea7fdaa44ea821db4b5fe84004cab8388812ea7ba36">SliceVectorizedWork</a>
  }</td></tr>
 <tr class="separator:a5179a12b8fa5d8e2144813ea7fdaa44e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac65b1dce667d77ff5de961b05b5228cf"><td class="memItemLeft" align="right" valign="top"><a id="ac65b1dce667d77ff5de961b05b5228cf" name="ac65b1dce667d77ff5de961b05b5228cf"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>MightVectorize</b>
-, <b>MayLinearVectorize</b> = bool(MightVectorize) &amp;&amp; (int(Evaluator::Flags)&amp;LinearAccessBit)
-, <b>MaySliceVectorize</b> = bool(MightVectorize) &amp;&amp; (int(SliceVectorizedWork)==Dynamic || int(SliceVectorizedWork)&gt;=3)
+<tr class="memitem:ac65b1dce667d77ff5de961b05b5228cf"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="struct_eigen_1_1internal_1_1redux__traits.html#ac65b1dce667d77ff5de961b05b5228cfae649a0d425530e310b776f7a185c193c">MightVectorize</a>
+, <a class="el" href="struct_eigen_1_1internal_1_1redux__traits.html#ac65b1dce667d77ff5de961b05b5228cfa48f20186c779abb3bf9702974b3b5bdb">MayLinearVectorize</a> = bool(MightVectorize) &amp;&amp; (int(Evaluator::Flags)&amp;LinearAccessBit)
+, <a class="el" href="struct_eigen_1_1internal_1_1redux__traits.html#ac65b1dce667d77ff5de961b05b5228cfa4933c2e2924bf74ee0d847af2fd55984">MaySliceVectorize</a> = bool(MightVectorize) &amp;&amp; (int(SliceVectorizedWork)==Dynamic || int(SliceVectorizedWork)&gt;=3)
  }</td></tr>
 <tr class="separator:ac65b1dce667d77ff5de961b05b5228cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3a9a02ba6acd486c26132ca24e5d580"><td class="memItemLeft" align="right" valign="top"><a id="af3a9a02ba6acd486c26132ca24e5d580" name="af3a9a02ba6acd486c26132ca24e5d580"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>Traversal</b>
+<tr class="memitem:af3a9a02ba6acd486c26132ca24e5d580"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="struct_eigen_1_1internal_1_1redux__traits.html#af3a9a02ba6acd486c26132ca24e5d580ab1fdab364d83124755b01f4a7cd1c5d2">Traversal</a>
  }</td></tr>
 <tr class="separator:af3a9a02ba6acd486c26132ca24e5d580"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b1a53ea561c4837eee29268bac0d772"><td class="memItemLeft" align="right" valign="top"><a id="a8b1a53ea561c4837eee29268bac0d772" name="a8b1a53ea561c4837eee29268bac0d772"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>Cost</b>
-, <b>UnrollingLimit</b> = EIGEN_UNROLLING_LIMIT * (int(Traversal) == int(DefaultTraversal) ? 1 : int(PacketSize))
+<tr class="memitem:a8b1a53ea561c4837eee29268bac0d772"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="struct_eigen_1_1internal_1_1redux__traits.html#a8b1a53ea561c4837eee29268bac0d772aff369a9dffbca5e507712fb884bc10ce">Cost</a>
+, <a class="el" href="struct_eigen_1_1internal_1_1redux__traits.html#a8b1a53ea561c4837eee29268bac0d772ab77c34de158a02239d627f4c26dbc862">UnrollingLimit</a> = EIGEN_UNROLLING_LIMIT * (int(Traversal) == int(DefaultTraversal) ? 1 : int(PacketSize))
  }</td></tr>
 <tr class="separator:a8b1a53ea561c4837eee29268bac0d772"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3d912b03f0b9c9499ef17c30b5863b9"><td class="memItemLeft" align="right" valign="top"><a id="ab3d912b03f0b9c9499ef17c30b5863b9" name="ab3d912b03f0b9c9499ef17c30b5863b9"></a>enum &#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="memitem:ab3d912b03f0b9c9499ef17c30b5863b9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"></td></tr>
 <tr class="separator:ab3d912b03f0b9c9499ef17c30b5863b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfba3b8a442912f364cded2d4fd01871"><td class="memItemLeft" align="right" valign="top"><a id="acfba3b8a442912f364cded2d4fd01871" name="acfba3b8a442912f364cded2d4fd01871"></a>
-typedef <a class="el" href="struct_eigen_1_1internal_1_1find__best__packet.html">find_best_packet</a>&lt; typenameEvaluator::Scalar, Evaluator::SizeAtCompileTime &gt;::type&#160;</td><td class="memItemRight" valign="bottom"><b>PacketType</b></td></tr>
+<tr class="memitem:acfba3b8a442912f364cded2d4fd01871"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_eigen_1_1internal_1_1find__best__packet.html">find_best_packet</a>&lt; typenameEvaluator::Scalar, Evaluator::SizeAtCompileTime &gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1redux__traits.html#acfba3b8a442912f364cded2d4fd01871">PacketType</a></td></tr>
 <tr class="separator:acfba3b8a442912f364cded2d4fd01871"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="acfba3b8a442912f364cded2d4fd01871" name="acfba3b8a442912f364cded2d4fd01871"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfba3b8a442912f364cded2d4fd01871">&#9670;&nbsp;</a></span>PacketType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Func , typename Evaluator &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="struct_eigen_1_1internal_1_1find__best__packet.html">find_best_packet</a>&lt;typenameEvaluator::Scalar,Evaluator::SizeAtCompileTime&gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a> <a class="el" href="struct_eigen_1_1internal_1_1redux__traits.html">Eigen::internal::redux_traits</a>&lt; Func, Evaluator &gt;::<a class="el" href="struct_eigen_1_1internal_1_1redux__traits.html#acfba3b8a442912f364cded2d4fd01871">PacketType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a5179a12b8fa5d8e2144813ea7fdaa44e" name="a5179a12b8fa5d8e2144813ea7fdaa44e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5179a12b8fa5d8e2144813ea7fdaa44e">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Func , typename Evaluator &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5179a12b8fa5d8e2144813ea7fdaa44eaccbb80ac2c9edd5b15449a047087421a" name="a5179a12b8fa5d8e2144813ea7fdaa44eaccbb80ac2c9edd5b15449a047087421a"></a>PacketSize&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5179a12b8fa5d8e2144813ea7fdaa44eabf26aba4ca9f1180732c9290f7f0d347" name="a5179a12b8fa5d8e2144813ea7fdaa44eabf26aba4ca9f1180732c9290f7f0d347"></a>InnerMaxSize&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5179a12b8fa5d8e2144813ea7fdaa44ead5eb070f26a07fe1aba8dddf7054fa93" name="a5179a12b8fa5d8e2144813ea7fdaa44ead5eb070f26a07fe1aba8dddf7054fa93"></a>OuterMaxSize&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5179a12b8fa5d8e2144813ea7fdaa44ea821db4b5fe84004cab8388812ea7ba36" name="a5179a12b8fa5d8e2144813ea7fdaa44ea821db4b5fe84004cab8388812ea7ba36"></a>SliceVectorizedWork&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="ac65b1dce667d77ff5de961b05b5228cf" name="ac65b1dce667d77ff5de961b05b5228cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac65b1dce667d77ff5de961b05b5228cf">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Func , typename Evaluator &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac65b1dce667d77ff5de961b05b5228cfae649a0d425530e310b776f7a185c193c" name="ac65b1dce667d77ff5de961b05b5228cfae649a0d425530e310b776f7a185c193c"></a>MightVectorize&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac65b1dce667d77ff5de961b05b5228cfa48f20186c779abb3bf9702974b3b5bdb" name="ac65b1dce667d77ff5de961b05b5228cfa48f20186c779abb3bf9702974b3b5bdb"></a>MayLinearVectorize&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac65b1dce667d77ff5de961b05b5228cfa4933c2e2924bf74ee0d847af2fd55984" name="ac65b1dce667d77ff5de961b05b5228cfa4933c2e2924bf74ee0d847af2fd55984"></a>MaySliceVectorize&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="af3a9a02ba6acd486c26132ca24e5d580" name="af3a9a02ba6acd486c26132ca24e5d580"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3a9a02ba6acd486c26132ca24e5d580">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Func , typename Evaluator &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af3a9a02ba6acd486c26132ca24e5d580ab1fdab364d83124755b01f4a7cd1c5d2" name="af3a9a02ba6acd486c26132ca24e5d580ab1fdab364d83124755b01f4a7cd1c5d2"></a>Traversal&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a8b1a53ea561c4837eee29268bac0d772" name="a8b1a53ea561c4837eee29268bac0d772"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b1a53ea561c4837eee29268bac0d772">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Func , typename Evaluator &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a8b1a53ea561c4837eee29268bac0d772aff369a9dffbca5e507712fb884bc10ce" name="a8b1a53ea561c4837eee29268bac0d772aff369a9dffbca5e507712fb884bc10ce"></a>Cost&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a8b1a53ea561c4837eee29268bac0d772ab77c34de158a02239d627f4c26dbc862" name="a8b1a53ea561c4837eee29268bac0d772ab77c34de158a02239d627f4c26dbc862"></a>UnrollingLimit&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="ab3d912b03f0b9c9499ef17c30b5863b9" name="ab3d912b03f0b9c9499ef17c30b5863b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3d912b03f0b9c9499ef17c30b5863b9">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Func , typename Evaluator &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/eigeninclude/Eigen/src/Core/<a class="el" href="_redux_8h_source.html">Redux.h</a></li>
 </ul>
@@ -132,8 +249,8 @@ typedef <a class="el" href="struct_eigen_1_1internal_1_1find__best__packet.html"
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespace_eigen.html">Eigen</a></li><li class="navelem"><b>internal</b></li><li class="navelem"><a class="el" href="struct_eigen_1_1internal_1_1redux__traits.html">redux_traits</a></li>
-    <li class="footer">Generated on Fri Oct 29 2021 07:12:27 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespace_eigen.html">Eigen</a></li><li class="navelem"><a class="el" href="namespace_eigen_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="struct_eigen_1_1internal_1_1redux__traits.html">redux_traits</a></li>
+    <li class="footer">Generated on Fri Oct 29 2021 22:10:06 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

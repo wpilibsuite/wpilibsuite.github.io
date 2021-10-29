@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-31-ga939cd9</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-32-g2cb171f</span>
    </div>
   </td>
  </tr>
@@ -98,29 +98,126 @@ $(document).ready(function(){initNavTree('struct_eigen_1_1internal_1_1triangular
   <div class="headertitle"><div class="title">Eigen::internal::triangular_assignment_loop&lt; Kernel, Mode, UnrollCount, SetOpposite &gt; Struct Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_triangular_matrix_8h_source.html">/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/eigeninclude/Eigen/src/Core/TriangularMatrix.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a20bf46cb722cc63c2682a79fc8560fa6"><td class="memItemLeft" align="right" valign="top"><a id="a20bf46cb722cc63c2682a79fc8560fa6" name="a20bf46cb722cc63c2682a79fc8560fa6"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>col</b> = (UnrollCount-1) / DstXprType::RowsAtCompileTime
-, <b>row</b> = (UnrollCount-1) % DstXprType::RowsAtCompileTime
+<tr class="memitem:a20bf46cb722cc63c2682a79fc8560fa6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="struct_eigen_1_1internal_1_1triangular__assignment__loop.html#a20bf46cb722cc63c2682a79fc8560fa6a86f13c31c4632afbcd4b665b030131fe">col</a> = (UnrollCount-1) / DstXprType::RowsAtCompileTime
+, <a class="el" href="struct_eigen_1_1internal_1_1triangular__assignment__loop.html#a20bf46cb722cc63c2682a79fc8560fa6a07cc1aec2663825d5bbeea78818f5170">row</a> = (UnrollCount-1) % DstXprType::RowsAtCompileTime
  }</td></tr>
 <tr class="separator:a20bf46cb722cc63c2682a79fc8560fa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3b34b01e072c973b4ae85356f9984a1"><td class="memItemLeft" align="right" valign="top"><a id="ad3b34b01e072c973b4ae85356f9984a1" name="ad3b34b01e072c973b4ae85356f9984a1"></a>
-typedef Kernel::DstEvaluatorType&#160;</td><td class="memItemRight" valign="bottom"><b>DstEvaluatorType</b></td></tr>
+<tr class="memitem:ad3b34b01e072c973b4ae85356f9984a1"><td class="memItemLeft" align="right" valign="top">typedef Kernel::DstEvaluatorType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1triangular__assignment__loop.html#ad3b34b01e072c973b4ae85356f9984a1">DstEvaluatorType</a></td></tr>
 <tr class="separator:ad3b34b01e072c973b4ae85356f9984a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2f24d7211c8c3c2f3dad07ebfff4848"><td class="memItemLeft" align="right" valign="top"><a id="ab2f24d7211c8c3c2f3dad07ebfff4848" name="ab2f24d7211c8c3c2f3dad07ebfff4848"></a>
-typedef DstEvaluatorType::XprType&#160;</td><td class="memItemRight" valign="bottom"><b>DstXprType</b></td></tr>
+<tr class="memitem:ab2f24d7211c8c3c2f3dad07ebfff4848"><td class="memItemLeft" align="right" valign="top">typedef DstEvaluatorType::XprType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1triangular__assignment__loop.html#ab2f24d7211c8c3c2f3dad07ebfff4848">DstXprType</a></td></tr>
 <tr class="separator:ab2f24d7211c8c3c2f3dad07ebfff4848"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47a7999acf8ec526cce8fb63c6c49ab9"><td class="memItemLeft" align="right" valign="top"><a id="a47a7999acf8ec526cce8fb63c6c49ab9" name="a47a7999acf8ec526cce8fb63c6c49ab9"></a>
-typedef Kernel::Scalar&#160;</td><td class="memItemRight" valign="bottom"><b>Scalar</b></td></tr>
+<tr class="memitem:a47a7999acf8ec526cce8fb63c6c49ab9"><td class="memItemLeft" align="right" valign="top">typedef Kernel::Scalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1triangular__assignment__loop.html#a47a7999acf8ec526cce8fb63c6c49ab9">Scalar</a></td></tr>
 <tr class="separator:a47a7999acf8ec526cce8fb63c6c49ab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:adac5998cbef1f81240d3dfbdc46fa269"><td class="memItemLeft" align="right" valign="top"><a id="adac5998cbef1f81240d3dfbdc46fa269" name="adac5998cbef1f81240d3dfbdc46fa269"></a>
-static EIGEN_DEVICE_FUNC void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> (Kernel &amp;kernel)</td></tr>
+<tr class="memitem:adac5998cbef1f81240d3dfbdc46fa269"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_macros_8h.html#a9efec3cfd22b9a33bead9c6718d128da">EIGEN_DEVICE_FUNC</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1triangular__assignment__loop.html#adac5998cbef1f81240d3dfbdc46fa269">run</a> (Kernel &amp;kernel)</td></tr>
 <tr class="separator:adac5998cbef1f81240d3dfbdc46fa269"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="ad3b34b01e072c973b4ae85356f9984a1" name="ad3b34b01e072c973b4ae85356f9984a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3b34b01e072c973b4ae85356f9984a1">&#9670;&nbsp;</a></span>DstEvaluatorType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Kernel , unsigned int Mode, int UnrollCount, bool SetOpposite&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef Kernel::DstEvaluatorType <a class="el" href="struct_eigen_1_1internal_1_1triangular__assignment__loop.html">Eigen::internal::triangular_assignment_loop</a>&lt; Kernel, Mode, UnrollCount, SetOpposite &gt;::<a class="el" href="struct_eigen_1_1internal_1_1triangular__assignment__loop.html#ad3b34b01e072c973b4ae85356f9984a1">DstEvaluatorType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab2f24d7211c8c3c2f3dad07ebfff4848" name="ab2f24d7211c8c3c2f3dad07ebfff4848"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2f24d7211c8c3c2f3dad07ebfff4848">&#9670;&nbsp;</a></span>DstXprType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Kernel , unsigned int Mode, int UnrollCount, bool SetOpposite&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef DstEvaluatorType::XprType <a class="el" href="struct_eigen_1_1internal_1_1triangular__assignment__loop.html">Eigen::internal::triangular_assignment_loop</a>&lt; Kernel, Mode, UnrollCount, SetOpposite &gt;::<a class="el" href="struct_eigen_1_1internal_1_1triangular__assignment__loop.html#ab2f24d7211c8c3c2f3dad07ebfff4848">DstXprType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a47a7999acf8ec526cce8fb63c6c49ab9" name="a47a7999acf8ec526cce8fb63c6c49ab9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47a7999acf8ec526cce8fb63c6c49ab9">&#9670;&nbsp;</a></span>Scalar</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Kernel , unsigned int Mode, int UnrollCount, bool SetOpposite&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef Kernel::Scalar <a class="el" href="struct_eigen_1_1internal_1_1triangular__assignment__loop.html">Eigen::internal::triangular_assignment_loop</a>&lt; Kernel, Mode, UnrollCount, SetOpposite &gt;::<a class="el" href="struct_eigen_1_1internal_1_1triangular__assignment__loop.html#a47a7999acf8ec526cce8fb63c6c49ab9">Scalar</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a20bf46cb722cc63c2682a79fc8560fa6" name="a20bf46cb722cc63c2682a79fc8560fa6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20bf46cb722cc63c2682a79fc8560fa6">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Kernel , unsigned int Mode, int UnrollCount, bool SetOpposite&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a20bf46cb722cc63c2682a79fc8560fa6a86f13c31c4632afbcd4b665b030131fe" name="a20bf46cb722cc63c2682a79fc8560fa6a86f13c31c4632afbcd4b665b030131fe"></a>col&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a20bf46cb722cc63c2682a79fc8560fa6a07cc1aec2663825d5bbeea78818f5170" name="a20bf46cb722cc63c2682a79fc8560fa6a07cc1aec2663825d5bbeea78818f5170"></a>row&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="adac5998cbef1f81240d3dfbdc46fa269" name="adac5998cbef1f81240d3dfbdc46fa269"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adac5998cbef1f81240d3dfbdc46fa269">&#9670;&nbsp;</a></span>run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Kernel , unsigned int Mode, int UnrollCount, bool SetOpposite&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="_macros_8h.html#a9efec3cfd22b9a33bead9c6718d128da">EIGEN_DEVICE_FUNC</a> void <a class="el" href="struct_eigen_1_1internal_1_1triangular__assignment__loop.html">Eigen::internal::triangular_assignment_loop</a>&lt; Kernel, Mode, UnrollCount, SetOpposite &gt;::run </td>
+          <td>(</td>
+          <td class="paramtype">Kernel &amp;&#160;</td>
+          <td class="paramname"><em>kernel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/eigeninclude/Eigen/src/Core/<a class="el" href="_triangular_matrix_8h_source.html">TriangularMatrix.h</a></li>
 </ul>
@@ -129,8 +226,8 @@ static EIGEN_DEVICE_FUNC void&#160;</td><td class="memItemRight" valign="bottom"
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespace_eigen.html">Eigen</a></li><li class="navelem"><b>internal</b></li><li class="navelem"><a class="el" href="struct_eigen_1_1internal_1_1triangular__assignment__loop.html">triangular_assignment_loop</a></li>
-    <li class="footer">Generated on Fri Oct 29 2021 07:12:27 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespace_eigen.html">Eigen</a></li><li class="navelem"><a class="el" href="namespace_eigen_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="struct_eigen_1_1internal_1_1triangular__assignment__loop.html">triangular_assignment_loop</a></li>
+    <li class="footer">Generated on Fri Oct 29 2021 22:10:06 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

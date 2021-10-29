@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-31-ga939cd9</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-32-g2cb171f</span>
    </div>
   </td>
  </tr>
@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('_built_in_accelerometer_sim_8h_source.
   <div class="headertitle"><div class="title">BuiltInAccelerometerSim.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
+<a href="_built_in_accelerometer_sim_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Open Source Software; you can modify and/or share it under the terms of</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// the WPILib BSD license file in the root directory of this project.</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
@@ -102,11 +102,11 @@ $(document).ready(function(){initNavTree('_built_in_accelerometer_sim_8h_source.
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;hal/Accelerometer.h&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;<a class="code" href="hal_2src_2main_2native_2include_2hal_2_accelerometer_8h.html">hal/Accelerometer.h</a>&gt;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;frc/simulation/CallbackStore.h&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="_callback_store_8h.html">frc/simulation/CallbackStore.h</a>&quot;</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">namespace </span>frc {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacefrc.html">frc</a> {</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">class </span>BuiltInAccelerometer;</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('_built_in_accelerometer_sim_8h_source.
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">   * @return the CallbackStore object associated with this callback</span></div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_built_in_accelerometer_sim.html#a8bb7ca6ff8e443c5a26c033e1c7b1e8a">   43</a></span>  [[nodiscard]] std::unique_ptr&lt;CallbackStore&gt; <a class="code hl_function" href="classfrc_1_1sim_1_1_built_in_accelerometer_sim.html#a8bb7ca6ff8e443c5a26c033e1c7b1e8a">RegisterActiveCallback</a>(</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>      NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>      <a class="code hl_typedef" href="namespacefrc_1_1sim.html#ae1c49733c190593b52d487461bac9083">NotifyCallback</a> callback, <span class="keywordtype">bool</span> initialNotify);</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment"></span> </div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">   * Check whether the accelerometer is active.</span></div>
@@ -161,7 +161,7 @@ $(document).ready(function(){initNavTree('_built_in_accelerometer_sim_8h_source.
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">   * @return the CallbackStore object associated with this callback</span></div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_built_in_accelerometer_sim.html#a82ddc2acf661d47ba833bb4116c15507">   67</a></span>  [[nodiscard]] std::unique_ptr&lt;CallbackStore&gt; <a class="code hl_function" href="classfrc_1_1sim_1_1_built_in_accelerometer_sim.html#a82ddc2acf661d47ba833bb4116c15507">RegisterRangeCallback</a>(</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>      NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>      <a class="code hl_typedef" href="namespacefrc_1_1sim.html#ae1c49733c190593b52d487461bac9083">NotifyCallback</a> callback, <span class="keywordtype">bool</span> initialNotify);</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment"></span> </div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">   * Check the range of this accelerometer.</span></div>
@@ -185,7 +185,7 @@ $(document).ready(function(){initNavTree('_built_in_accelerometer_sim_8h_source.
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="comment">   * @return the CallbackStore object associated with this callback</span></div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_built_in_accelerometer_sim.html#a6cb279ec3a2a4f37cf565b8fbb6e8aae">   91</a></span>  [[nodiscard]] std::unique_ptr&lt;CallbackStore&gt; <a class="code hl_function" href="classfrc_1_1sim_1_1_built_in_accelerometer_sim.html#a6cb279ec3a2a4f37cf565b8fbb6e8aae">RegisterXCallback</a>(</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>      NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>      <a class="code hl_typedef" href="namespacefrc_1_1sim.html#ae1c49733c190593b52d487461bac9083">NotifyCallback</a> callback, <span class="keywordtype">bool</span> initialNotify);</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="comment"></span> </div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment">   * Measure the X axis value.</span></div>
@@ -209,7 +209,7 @@ $(document).ready(function(){initNavTree('_built_in_accelerometer_sim_8h_source.
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="comment">   * @return the CallbackStore object associated with this callback</span></div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_built_in_accelerometer_sim.html#ad2c1e979e4bbb38d9f9bc50c194e8c96">  115</a></span>  [[nodiscard]] std::unique_ptr&lt;CallbackStore&gt; <a class="code hl_function" href="classfrc_1_1sim_1_1_built_in_accelerometer_sim.html#ad2c1e979e4bbb38d9f9bc50c194e8c96">RegisterYCallback</a>(</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>      NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>      <a class="code hl_typedef" href="namespacefrc_1_1sim.html#ae1c49733c190593b52d487461bac9083">NotifyCallback</a> callback, <span class="keywordtype">bool</span> initialNotify);</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment"></span> </div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment">   * Measure the Y axis value.</span></div>
@@ -223,7 +223,7 @@ $(document).ready(function(){initNavTree('_built_in_accelerometer_sim_8h_source.
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="comment">   *</span></div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="comment">   * @param y the new reading of the Y axis</span></div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_built_in_accelerometer_sim.html#a9836087384402b023ac44156df38cbba">  130</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1sim_1_1_built_in_accelerometer_sim.html#a9836087384402b023ac44156df38cbba">SetY</a>(<span class="keywordtype">double</span> y);</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_built_in_accelerometer_sim.html#a9836087384402b023ac44156df38cbba">  130</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1sim_1_1_built_in_accelerometer_sim.html#a9836087384402b023ac44156df38cbba">SetY</a>(<span class="keywordtype">double</span> <a class="code hl_variable" href="namespace_eigen_1_1internal.html#a3cc80fc03610837da180f7e6d8e7b3ec">y</a>);</div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="comment"></span> </div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="comment">   * Register a callback to be run whenever the Z axis value changes.</span></div>
@@ -233,7 +233,7 @@ $(document).ready(function(){initNavTree('_built_in_accelerometer_sim_8h_source.
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span><span class="comment">   * @return the CallbackStore object associated with this callback</span></div>
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_built_in_accelerometer_sim.html#ae8ba62f90c8620cb0a1534c160e75e4d">  139</a></span>  [[nodiscard]] std::unique_ptr&lt;CallbackStore&gt; <a class="code hl_function" href="classfrc_1_1sim_1_1_built_in_accelerometer_sim.html#ae8ba62f90c8620cb0a1534c160e75e4d">RegisterZCallback</a>(</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>      NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>      <a class="code hl_typedef" href="namespacefrc_1_1sim.html#ae1c49733c190593b52d487461bac9083">NotifyCallback</a> callback, <span class="keywordtype">bool</span> initialNotify);</div>
 <div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="comment"></span> </div>
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="comment">   * Measure the Z axis value.</span></div>
@@ -259,6 +259,7 @@ $(document).ready(function(){initNavTree('_built_in_accelerometer_sim_8h_source.
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>};</div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>}  <span class="comment">// namespace sim</span></div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>}  <span class="comment">// namespace frc</span></div>
+<div class="ttc" id="a_callback_store_8h_html"><div class="ttname"><a href="_callback_store_8h.html">CallbackStore.h</a></div></div>
 <div class="ttc" id="aclassfrc_1_1_built_in_accelerometer_html"><div class="ttname"><a href="classfrc_1_1_built_in_accelerometer.html">frc::BuiltInAccelerometer</a></div><div class="ttdoc">Built-in accelerometer.</div><div class="ttdef"><b>Definition:</b> BuiltInAccelerometer.h:21</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1_built_in_accelerometer_sim_html"><div class="ttname"><a href="classfrc_1_1sim_1_1_built_in_accelerometer_sim.html">frc::sim::BuiltInAccelerometerSim</a></div><div class="ttdoc">Class to control a simulated built-in accelerometer.</div><div class="ttdef"><b>Definition:</b> BuiltInAccelerometerSim.h:22</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1_built_in_accelerometer_sim_html_a093e18e2107519f6bcda05e5dbe90d80"><div class="ttname"><a href="classfrc_1_1sim_1_1_built_in_accelerometer_sim.html#a093e18e2107519f6bcda05e5dbe90d80">frc::sim::BuiltInAccelerometerSim::SetZ</a></div><div class="ttdeci">void SetZ(double z)</div><div class="ttdoc">Change the Z axis value of the accelerometer.</div></div>
@@ -279,13 +280,17 @@ $(document).ready(function(){initNavTree('_built_in_accelerometer_sim_8h_source.
 <div class="ttc" id="aclassfrc_1_1sim_1_1_built_in_accelerometer_sim_html_ae0c41fdbc83df11526a3a86bebb4b4dc"><div class="ttname"><a href="classfrc_1_1sim_1_1_built_in_accelerometer_sim.html#ae0c41fdbc83df11526a3a86bebb4b4dc">frc::sim::BuiltInAccelerometerSim::BuiltInAccelerometerSim</a></div><div class="ttdeci">BuiltInAccelerometerSim()</div><div class="ttdoc">Constructs for the first built-in accelerometer.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1_built_in_accelerometer_sim_html_ae763257376190a3c5c80b7b99edc9397"><div class="ttname"><a href="classfrc_1_1sim_1_1_built_in_accelerometer_sim.html#ae763257376190a3c5c80b7b99edc9397">frc::sim::BuiltInAccelerometerSim::SetX</a></div><div class="ttdeci">void SetX(double x)</div><div class="ttdoc">Change the X axis value of the accelerometer.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1_built_in_accelerometer_sim_html_ae8ba62f90c8620cb0a1534c160e75e4d"><div class="ttname"><a href="classfrc_1_1sim_1_1_built_in_accelerometer_sim.html#ae8ba62f90c8620cb0a1534c160e75e4d">frc::sim::BuiltInAccelerometerSim::RegisterZCallback</a></div><div class="ttdeci">std::unique_ptr&lt; CallbackStore &gt; RegisterZCallback(NotifyCallback callback, bool initialNotify)</div><div class="ttdoc">Register a callback to be run whenever the Z axis value changes.</div></div>
+<div class="ttc" id="ahal_2src_2main_2native_2include_2hal_2_accelerometer_8h_html"><div class="ttname"><a href="hal_2src_2main_2native_2include_2hal_2_accelerometer_8h.html">Accelerometer.h</a></div></div>
+<div class="ttc" id="anamespace_eigen_1_1internal_html_a3cc80fc03610837da180f7e6d8e7b3ec"><div class="ttname"><a href="namespace_eigen_1_1internal.html#a3cc80fc03610837da180f7e6d8e7b3ec">Eigen::internal::y</a></div><div class="ttdeci">const Scalar &amp; y</div><div class="ttdef"><b>Definition:</b> MathFunctions.h:821</div></div>
+<div class="ttc" id="anamespacefrc_1_1sim_html_ae1c49733c190593b52d487461bac9083"><div class="ttname"><a href="namespacefrc_1_1sim.html#ae1c49733c190593b52d487461bac9083">frc::sim::NotifyCallback</a></div><div class="ttdeci">std::function&lt; void(std::string_view, const HAL_Value *)&gt; NotifyCallback</div><div class="ttdef"><b>Definition:</b> CallbackStore.h:14</div></div>
+<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> CameraServerShared.h:13</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_297dc702852f645e4b9e531dac2da27d.html">simulation</a></li><li class="navelem"><b>BuiltInAccelerometerSim.h</b></li>
-    <li class="footer">Generated on Fri Oct 29 2021 07:12:14 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_297dc702852f645e4b9e531dac2da27d.html">simulation</a></li><li class="navelem"><a class="el" href="_built_in_accelerometer_sim_8h.html">BuiltInAccelerometerSim.h</a></li>
+    <li class="footer">Generated on Fri Oct 29 2021 22:09:51 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

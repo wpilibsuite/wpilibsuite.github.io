@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-31-ga939cd9</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-32-g2cb171f</span>
    </div>
   </td>
  </tr>
@@ -99,86 +99,123 @@ $(document).ready(function(){initNavTree('group__hal__encoder.html',''); initRes
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gaa54c77d5065b82a89317f384a343a706"><td class="memItemLeft" align="right" valign="top"><a id="gaa54c77d5065b82a89317f384a343a706" name="gaa54c77d5065b82a89317f384a343a706"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_ENUM</b> (HAL_EncoderIndexingType)</td></tr>
-<tr class="memdesc:gaa54c77d5065b82a89317f384a343a706"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type of index pulse for the encoder. <br /></td></tr>
+<tr class="memitem:gaa54c77d5065b82a89317f384a343a706"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__encoder.html#gaa54c77d5065b82a89317f384a343a706">HAL_ENUM</a> (HAL_EncoderIndexingType)</td></tr>
+<tr class="memdesc:gaa54c77d5065b82a89317f384a343a706"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type of index pulse for the encoder.  <a href="group__hal__encoder.html#gaa54c77d5065b82a89317f384a343a706">More...</a><br /></td></tr>
 <tr class="separator:gaa54c77d5065b82a89317f384a343a706"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafa07bd7dc73fd175ba7893a95cc86106"><td class="memItemLeft" align="right" valign="top"><a id="gafa07bd7dc73fd175ba7893a95cc86106" name="gafa07bd7dc73fd175ba7893a95cc86106"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_ENUM</b> (HAL_EncoderEncodingType)</td></tr>
-<tr class="memdesc:gafa07bd7dc73fd175ba7893a95cc86106"><td class="mdescLeft">&#160;</td><td class="mdescRight">The encoding scaling of the encoder. <br /></td></tr>
+<tr class="memitem:gafa07bd7dc73fd175ba7893a95cc86106"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__encoder.html#gafa07bd7dc73fd175ba7893a95cc86106">HAL_ENUM</a> (HAL_EncoderEncodingType)</td></tr>
+<tr class="memdesc:gafa07bd7dc73fd175ba7893a95cc86106"><td class="mdescLeft">&#160;</td><td class="mdescRight">The encoding scaling of the encoder.  <a href="group__hal__encoder.html#gafa07bd7dc73fd175ba7893a95cc86106">More...</a><br /></td></tr>
 <tr class="separator:gafa07bd7dc73fd175ba7893a95cc86106"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga14a91a7307c5e25108f12fe90199f745"><td class="memItemLeft" align="right" valign="top">HAL_EncoderHandle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__encoder.html#ga14a91a7307c5e25108f12fe90199f745">HAL_InitializeEncoder</a> (HAL_Handle digitalSourceHandleA, HAL_AnalogTriggerType analogTriggerTypeA, HAL_Handle digitalSourceHandleB, HAL_AnalogTriggerType analogTriggerTypeB, HAL_Bool reverseDirection, HAL_EncoderEncodingType encodingType, int32_t *status)</td></tr>
+<tr class="memitem:ga14a91a7307c5e25108f12fe90199f745"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__hal__types.html#gac6893dc6cb4e4822ff231c55ef766b24">HAL_EncoderHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__encoder.html#ga14a91a7307c5e25108f12fe90199f745">HAL_InitializeEncoder</a> (<a class="el" href="group__hal__types.html#ga5d211f92ccd43d4a51d8212b29536ccd">HAL_Handle</a> digitalSourceHandleA, HAL_AnalogTriggerType analogTriggerTypeA, <a class="el" href="group__hal__types.html#ga5d211f92ccd43d4a51d8212b29536ccd">HAL_Handle</a> digitalSourceHandleB, HAL_AnalogTriggerType analogTriggerTypeB, <a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a> reverseDirection, HAL_EncoderEncodingType encodingType, int32_t *status)</td></tr>
 <tr class="memdesc:ga14a91a7307c5e25108f12fe90199f745"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes an encoder.  <a href="group__hal__encoder.html#ga14a91a7307c5e25108f12fe90199f745">More...</a><br /></td></tr>
 <tr class="separator:ga14a91a7307c5e25108f12fe90199f745"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5ac1d8296891fd36e8ca78a3be67de8a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__encoder.html#ga5ac1d8296891fd36e8ca78a3be67de8a">HAL_FreeEncoder</a> (HAL_EncoderHandle encoderHandle, int32_t *status)</td></tr>
+<tr class="memitem:ga5ac1d8296891fd36e8ca78a3be67de8a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__encoder.html#ga5ac1d8296891fd36e8ca78a3be67de8a">HAL_FreeEncoder</a> (<a class="el" href="group__hal__types.html#gac6893dc6cb4e4822ff231c55ef766b24">HAL_EncoderHandle</a> encoderHandle, int32_t *status)</td></tr>
 <tr class="memdesc:ga5ac1d8296891fd36e8ca78a3be67de8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees an encoder.  <a href="group__hal__encoder.html#ga5ac1d8296891fd36e8ca78a3be67de8a">More...</a><br /></td></tr>
 <tr class="separator:ga5ac1d8296891fd36e8ca78a3be67de8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa9f4051cb83bcd5ba25031cfab3c59a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__encoder.html#gaa9f4051cb83bcd5ba25031cfab3c59a6">HAL_SetEncoderSimDevice</a> (HAL_EncoderHandle handle, HAL_SimDeviceHandle device)</td></tr>
+<tr class="memitem:gaa9f4051cb83bcd5ba25031cfab3c59a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__encoder.html#gaa9f4051cb83bcd5ba25031cfab3c59a6">HAL_SetEncoderSimDevice</a> (<a class="el" href="group__hal__types.html#gac6893dc6cb4e4822ff231c55ef766b24">HAL_EncoderHandle</a> handle, <a class="el" href="group__hal__types.html#ga98fa2df487adcab74d30a15d55725cc9">HAL_SimDeviceHandle</a> device)</td></tr>
 <tr class="memdesc:gaa9f4051cb83bcd5ba25031cfab3c59a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates the encoder is used by a simulated device.  <a href="group__hal__encoder.html#gaa9f4051cb83bcd5ba25031cfab3c59a6">More...</a><br /></td></tr>
 <tr class="separator:gaa9f4051cb83bcd5ba25031cfab3c59a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac830c4961d0ddb67cdc02bc6cb52ec12"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__encoder.html#gac830c4961d0ddb67cdc02bc6cb52ec12">HAL_GetEncoder</a> (HAL_EncoderHandle encoderHandle, int32_t *status)</td></tr>
+<tr class="memitem:gac830c4961d0ddb67cdc02bc6cb52ec12"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__encoder.html#gac830c4961d0ddb67cdc02bc6cb52ec12">HAL_GetEncoder</a> (<a class="el" href="group__hal__types.html#gac6893dc6cb4e4822ff231c55ef766b24">HAL_EncoderHandle</a> encoderHandle, int32_t *status)</td></tr>
 <tr class="memdesc:gac830c4961d0ddb67cdc02bc6cb52ec12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current counts of the encoder after encoding type scaling.  <a href="group__hal__encoder.html#gac830c4961d0ddb67cdc02bc6cb52ec12">More...</a><br /></td></tr>
 <tr class="separator:gac830c4961d0ddb67cdc02bc6cb52ec12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3fab873a71e053508ecd012a3896b364"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__encoder.html#ga3fab873a71e053508ecd012a3896b364">HAL_GetEncoderRaw</a> (HAL_EncoderHandle encoderHandle, int32_t *status)</td></tr>
+<tr class="memitem:ga3fab873a71e053508ecd012a3896b364"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__encoder.html#ga3fab873a71e053508ecd012a3896b364">HAL_GetEncoderRaw</a> (<a class="el" href="group__hal__types.html#gac6893dc6cb4e4822ff231c55ef766b24">HAL_EncoderHandle</a> encoderHandle, int32_t *status)</td></tr>
 <tr class="memdesc:ga3fab873a71e053508ecd012a3896b364"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the raw counts of the encoder.  <a href="group__hal__encoder.html#ga3fab873a71e053508ecd012a3896b364">More...</a><br /></td></tr>
 <tr class="separator:ga3fab873a71e053508ecd012a3896b364"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae4e4cfc0aa3ef5f24f1eeedab2c8b0f6"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__encoder.html#gae4e4cfc0aa3ef5f24f1eeedab2c8b0f6">HAL_GetEncoderEncodingScale</a> (HAL_EncoderHandle encoderHandle, int32_t *status)</td></tr>
+<tr class="memitem:gae4e4cfc0aa3ef5f24f1eeedab2c8b0f6"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__encoder.html#gae4e4cfc0aa3ef5f24f1eeedab2c8b0f6">HAL_GetEncoderEncodingScale</a> (<a class="el" href="group__hal__types.html#gac6893dc6cb4e4822ff231c55ef766b24">HAL_EncoderHandle</a> encoderHandle, int32_t *status)</td></tr>
 <tr class="memdesc:gae4e4cfc0aa3ef5f24f1eeedab2c8b0f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the encoder scale value.  <a href="group__hal__encoder.html#gae4e4cfc0aa3ef5f24f1eeedab2c8b0f6">More...</a><br /></td></tr>
 <tr class="separator:gae4e4cfc0aa3ef5f24f1eeedab2c8b0f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga969d95c6dcf80cf1d73969c56d13f9ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__encoder.html#ga969d95c6dcf80cf1d73969c56d13f9ab">HAL_ResetEncoder</a> (HAL_EncoderHandle encoderHandle, int32_t *status)</td></tr>
+<tr class="memitem:ga969d95c6dcf80cf1d73969c56d13f9ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__encoder.html#ga969d95c6dcf80cf1d73969c56d13f9ab">HAL_ResetEncoder</a> (<a class="el" href="group__hal__types.html#gac6893dc6cb4e4822ff231c55ef766b24">HAL_EncoderHandle</a> encoderHandle, int32_t *status)</td></tr>
 <tr class="memdesc:ga969d95c6dcf80cf1d73969c56d13f9ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the current encoder value.  <a href="group__hal__encoder.html#ga969d95c6dcf80cf1d73969c56d13f9ab">More...</a><br /></td></tr>
 <tr class="separator:ga969d95c6dcf80cf1d73969c56d13f9ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad859111d75e05ba26d40b958a6a16095"><td class="memItemLeft" align="right" valign="top"><a id="gad859111d75e05ba26d40b958a6a16095" name="gad859111d75e05ba26d40b958a6a16095"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetEncoderPeriod</b> (HAL_EncoderHandle encoderHandle, int32_t *status)</td></tr>
+<tr class="memitem:gad859111d75e05ba26d40b958a6a16095"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__encoder.html#gad859111d75e05ba26d40b958a6a16095">HAL_GetEncoderPeriod</a> (<a class="el" href="group__hal__types.html#gac6893dc6cb4e4822ff231c55ef766b24">HAL_EncoderHandle</a> encoderHandle, int32_t *status)</td></tr>
 <tr class="separator:gad859111d75e05ba26d40b958a6a16095"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3ca4bdf4f4db251a6cc0be007ecbc416"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__encoder.html#ga3ca4bdf4f4db251a6cc0be007ecbc416">HAL_SetEncoderMaxPeriod</a> (HAL_EncoderHandle encoderHandle, double maxPeriod, int32_t *status)</td></tr>
+<tr class="memitem:ga3ca4bdf4f4db251a6cc0be007ecbc416"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__encoder.html#ga3ca4bdf4f4db251a6cc0be007ecbc416">HAL_SetEncoderMaxPeriod</a> (<a class="el" href="group__hal__types.html#gac6893dc6cb4e4822ff231c55ef766b24">HAL_EncoderHandle</a> encoderHandle, double maxPeriod, int32_t *status)</td></tr>
 <tr class="memdesc:ga3ca4bdf4f4db251a6cc0be007ecbc416"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the maximum period where the device is still considered "moving".  <a href="group__hal__encoder.html#ga3ca4bdf4f4db251a6cc0be007ecbc416">More...</a><br /></td></tr>
 <tr class="separator:ga3ca4bdf4f4db251a6cc0be007ecbc416"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3b8d4edae55d88f73117ae1e378ce965"><td class="memItemLeft" align="right" valign="top">HAL_Bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__encoder.html#ga3b8d4edae55d88f73117ae1e378ce965">HAL_GetEncoderStopped</a> (HAL_EncoderHandle encoderHandle, int32_t *status)</td></tr>
+<tr class="memitem:ga3b8d4edae55d88f73117ae1e378ce965"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__encoder.html#ga3b8d4edae55d88f73117ae1e378ce965">HAL_GetEncoderStopped</a> (<a class="el" href="group__hal__types.html#gac6893dc6cb4e4822ff231c55ef766b24">HAL_EncoderHandle</a> encoderHandle, int32_t *status)</td></tr>
 <tr class="memdesc:ga3b8d4edae55d88f73117ae1e378ce965"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if the clock is stopped.  <a href="group__hal__encoder.html#ga3b8d4edae55d88f73117ae1e378ce965">More...</a><br /></td></tr>
 <tr class="separator:ga3b8d4edae55d88f73117ae1e378ce965"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4878dde90cc81c2c08766a3b1e53b036"><td class="memItemLeft" align="right" valign="top">HAL_Bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__encoder.html#ga4878dde90cc81c2c08766a3b1e53b036">HAL_GetEncoderDirection</a> (HAL_EncoderHandle encoderHandle, int32_t *status)</td></tr>
+<tr class="memitem:ga4878dde90cc81c2c08766a3b1e53b036"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__encoder.html#ga4878dde90cc81c2c08766a3b1e53b036">HAL_GetEncoderDirection</a> (<a class="el" href="group__hal__types.html#gac6893dc6cb4e4822ff231c55ef766b24">HAL_EncoderHandle</a> encoderHandle, int32_t *status)</td></tr>
 <tr class="memdesc:ga4878dde90cc81c2c08766a3b1e53b036"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the last direction the encoder value changed.  <a href="group__hal__encoder.html#ga4878dde90cc81c2c08766a3b1e53b036">More...</a><br /></td></tr>
 <tr class="separator:ga4878dde90cc81c2c08766a3b1e53b036"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga709fd36ea2db5e2f60877185bab5f451"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__encoder.html#ga709fd36ea2db5e2f60877185bab5f451">HAL_GetEncoderDistance</a> (HAL_EncoderHandle encoderHandle, int32_t *status)</td></tr>
+<tr class="memitem:ga709fd36ea2db5e2f60877185bab5f451"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__encoder.html#ga709fd36ea2db5e2f60877185bab5f451">HAL_GetEncoderDistance</a> (<a class="el" href="group__hal__types.html#gac6893dc6cb4e4822ff231c55ef766b24">HAL_EncoderHandle</a> encoderHandle, int32_t *status)</td></tr>
 <tr class="memdesc:ga709fd36ea2db5e2f60877185bab5f451"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current distance traveled by the encoder.  <a href="group__hal__encoder.html#ga709fd36ea2db5e2f60877185bab5f451">More...</a><br /></td></tr>
 <tr class="separator:ga709fd36ea2db5e2f60877185bab5f451"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf72690908d0ab31d028dfdc5dad136ff"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__encoder.html#gaf72690908d0ab31d028dfdc5dad136ff">HAL_GetEncoderRate</a> (HAL_EncoderHandle encoderHandle, int32_t *status)</td></tr>
+<tr class="memitem:gaf72690908d0ab31d028dfdc5dad136ff"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__encoder.html#gaf72690908d0ab31d028dfdc5dad136ff">HAL_GetEncoderRate</a> (<a class="el" href="group__hal__types.html#gac6893dc6cb4e4822ff231c55ef766b24">HAL_EncoderHandle</a> encoderHandle, int32_t *status)</td></tr>
 <tr class="memdesc:gaf72690908d0ab31d028dfdc5dad136ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current rate of the encoder.  <a href="group__hal__encoder.html#gaf72690908d0ab31d028dfdc5dad136ff">More...</a><br /></td></tr>
 <tr class="separator:gaf72690908d0ab31d028dfdc5dad136ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1d955f7e71c52ce6166a2bacc6739be9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__encoder.html#ga1d955f7e71c52ce6166a2bacc6739be9">HAL_SetEncoderMinRate</a> (HAL_EncoderHandle encoderHandle, double minRate, int32_t *status)</td></tr>
+<tr class="memitem:ga1d955f7e71c52ce6166a2bacc6739be9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__encoder.html#ga1d955f7e71c52ce6166a2bacc6739be9">HAL_SetEncoderMinRate</a> (<a class="el" href="group__hal__types.html#gac6893dc6cb4e4822ff231c55ef766b24">HAL_EncoderHandle</a> encoderHandle, double minRate, int32_t *status)</td></tr>
 <tr class="memdesc:ga1d955f7e71c52ce6166a2bacc6739be9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the minimum rate to be considered moving by the encoder.  <a href="group__hal__encoder.html#ga1d955f7e71c52ce6166a2bacc6739be9">More...</a><br /></td></tr>
 <tr class="separator:ga1d955f7e71c52ce6166a2bacc6739be9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1885ae55cebb2b97e2c3605c21ce98f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__encoder.html#ga1885ae55cebb2b97e2c3605c21ce98f1">HAL_SetEncoderDistancePerPulse</a> (HAL_EncoderHandle encoderHandle, double distancePerPulse, int32_t *status)</td></tr>
+<tr class="memitem:ga1885ae55cebb2b97e2c3605c21ce98f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__encoder.html#ga1885ae55cebb2b97e2c3605c21ce98f1">HAL_SetEncoderDistancePerPulse</a> (<a class="el" href="group__hal__types.html#gac6893dc6cb4e4822ff231c55ef766b24">HAL_EncoderHandle</a> encoderHandle, double distancePerPulse, int32_t *status)</td></tr>
 <tr class="memdesc:ga1885ae55cebb2b97e2c3605c21ce98f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the distance traveled per encoder pulse.  <a href="group__hal__encoder.html#ga1885ae55cebb2b97e2c3605c21ce98f1">More...</a><br /></td></tr>
 <tr class="separator:ga1885ae55cebb2b97e2c3605c21ce98f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga690eb0d907f4cbb69f34d6e2635151f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__encoder.html#ga690eb0d907f4cbb69f34d6e2635151f7">HAL_SetEncoderReverseDirection</a> (HAL_EncoderHandle encoderHandle, HAL_Bool reverseDirection, int32_t *status)</td></tr>
+<tr class="memitem:ga690eb0d907f4cbb69f34d6e2635151f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__encoder.html#ga690eb0d907f4cbb69f34d6e2635151f7">HAL_SetEncoderReverseDirection</a> (<a class="el" href="group__hal__types.html#gac6893dc6cb4e4822ff231c55ef766b24">HAL_EncoderHandle</a> encoderHandle, <a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a> reverseDirection, int32_t *status)</td></tr>
 <tr class="memdesc:ga690eb0d907f4cbb69f34d6e2635151f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets if to reverse the direction of the encoder.  <a href="group__hal__encoder.html#ga690eb0d907f4cbb69f34d6e2635151f7">More...</a><br /></td></tr>
 <tr class="separator:ga690eb0d907f4cbb69f34d6e2635151f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0ea6b8f3d4fdb98320b69ed80bbd118a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__encoder.html#ga0ea6b8f3d4fdb98320b69ed80bbd118a">HAL_SetEncoderSamplesToAverage</a> (HAL_EncoderHandle encoderHandle, int32_t samplesToAverage, int32_t *status)</td></tr>
+<tr class="memitem:ga0ea6b8f3d4fdb98320b69ed80bbd118a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__encoder.html#ga0ea6b8f3d4fdb98320b69ed80bbd118a">HAL_SetEncoderSamplesToAverage</a> (<a class="el" href="group__hal__types.html#gac6893dc6cb4e4822ff231c55ef766b24">HAL_EncoderHandle</a> encoderHandle, int32_t samplesToAverage, int32_t *status)</td></tr>
 <tr class="memdesc:ga0ea6b8f3d4fdb98320b69ed80bbd118a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the number of encoder samples to average when calculating encoder rate.  <a href="group__hal__encoder.html#ga0ea6b8f3d4fdb98320b69ed80bbd118a">More...</a><br /></td></tr>
 <tr class="separator:ga0ea6b8f3d4fdb98320b69ed80bbd118a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga59cc1f78976c7c4f0f483a42dfe43caa"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__encoder.html#ga59cc1f78976c7c4f0f483a42dfe43caa">HAL_GetEncoderSamplesToAverage</a> (HAL_EncoderHandle encoderHandle, int32_t *status)</td></tr>
+<tr class="memitem:ga59cc1f78976c7c4f0f483a42dfe43caa"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__encoder.html#ga59cc1f78976c7c4f0f483a42dfe43caa">HAL_GetEncoderSamplesToAverage</a> (<a class="el" href="group__hal__types.html#gac6893dc6cb4e4822ff231c55ef766b24">HAL_EncoderHandle</a> encoderHandle, int32_t *status)</td></tr>
 <tr class="memdesc:ga59cc1f78976c7c4f0f483a42dfe43caa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current samples to average value.  <a href="group__hal__encoder.html#ga59cc1f78976c7c4f0f483a42dfe43caa">More...</a><br /></td></tr>
 <tr class="separator:ga59cc1f78976c7c4f0f483a42dfe43caa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae37a7e58f0cd174f549c2db25935c9ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__encoder.html#gae37a7e58f0cd174f549c2db25935c9ee">HAL_SetEncoderIndexSource</a> (HAL_EncoderHandle encoderHandle, HAL_Handle digitalSourceHandle, HAL_AnalogTriggerType analogTriggerType, HAL_EncoderIndexingType type, int32_t *status)</td></tr>
+<tr class="memitem:gae37a7e58f0cd174f549c2db25935c9ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__encoder.html#gae37a7e58f0cd174f549c2db25935c9ee">HAL_SetEncoderIndexSource</a> (<a class="el" href="group__hal__types.html#gac6893dc6cb4e4822ff231c55ef766b24">HAL_EncoderHandle</a> encoderHandle, <a class="el" href="group__hal__types.html#ga5d211f92ccd43d4a51d8212b29536ccd">HAL_Handle</a> digitalSourceHandle, HAL_AnalogTriggerType analogTriggerType, HAL_EncoderIndexingType <a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>, int32_t *status)</td></tr>
 <tr class="memdesc:gae37a7e58f0cd174f549c2db25935c9ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the source for an index pulse on the encoder.  <a href="group__hal__encoder.html#gae37a7e58f0cd174f549c2db25935c9ee">More...</a><br /></td></tr>
 <tr class="separator:gae37a7e58f0cd174f549c2db25935c9ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab6488dae8c6071fd9922808afc031cfd"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__encoder.html#gab6488dae8c6071fd9922808afc031cfd">HAL_GetEncoderFPGAIndex</a> (HAL_EncoderHandle encoderHandle, int32_t *status)</td></tr>
+<tr class="memitem:gab6488dae8c6071fd9922808afc031cfd"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__encoder.html#gab6488dae8c6071fd9922808afc031cfd">HAL_GetEncoderFPGAIndex</a> (<a class="el" href="group__hal__types.html#gac6893dc6cb4e4822ff231c55ef766b24">HAL_EncoderHandle</a> encoderHandle, int32_t *status)</td></tr>
 <tr class="memdesc:gab6488dae8c6071fd9922808afc031cfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the FPGA index of the encoder.  <a href="group__hal__encoder.html#gab6488dae8c6071fd9922808afc031cfd">More...</a><br /></td></tr>
 <tr class="separator:gab6488dae8c6071fd9922808afc031cfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga883c644c9b9effbabc3fcc5494e989a8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__encoder.html#ga883c644c9b9effbabc3fcc5494e989a8">HAL_GetEncoderDecodingScaleFactor</a> (HAL_EncoderHandle encoderHandle, int32_t *status)</td></tr>
+<tr class="memitem:ga883c644c9b9effbabc3fcc5494e989a8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__encoder.html#ga883c644c9b9effbabc3fcc5494e989a8">HAL_GetEncoderDecodingScaleFactor</a> (<a class="el" href="group__hal__types.html#gac6893dc6cb4e4822ff231c55ef766b24">HAL_EncoderHandle</a> encoderHandle, int32_t *status)</td></tr>
 <tr class="memdesc:ga883c644c9b9effbabc3fcc5494e989a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the decoding scale factor of the encoder.  <a href="group__hal__encoder.html#ga883c644c9b9effbabc3fcc5494e989a8">More...</a><br /></td></tr>
 <tr class="separator:ga883c644c9b9effbabc3fcc5494e989a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac8e8b9404204045bc7c4c92070787c17"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__encoder.html#gac8e8b9404204045bc7c4c92070787c17">HAL_GetEncoderDistancePerPulse</a> (HAL_EncoderHandle encoderHandle, int32_t *status)</td></tr>
+<tr class="memitem:gac8e8b9404204045bc7c4c92070787c17"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__encoder.html#gac8e8b9404204045bc7c4c92070787c17">HAL_GetEncoderDistancePerPulse</a> (<a class="el" href="group__hal__types.html#gac6893dc6cb4e4822ff231c55ef766b24">HAL_EncoderHandle</a> encoderHandle, int32_t *status)</td></tr>
 <tr class="memdesc:gac8e8b9404204045bc7c4c92070787c17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the user set distance per pulse of the encoder.  <a href="group__hal__encoder.html#gac8e8b9404204045bc7c4c92070787c17">More...</a><br /></td></tr>
 <tr class="separator:gac8e8b9404204045bc7c4c92070787c17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae38ad041836be4aa2a0a457ac1b97c40"><td class="memItemLeft" align="right" valign="top">HAL_EncoderEncodingType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__encoder.html#gae38ad041836be4aa2a0a457ac1b97c40">HAL_GetEncoderEncodingType</a> (HAL_EncoderHandle encoderHandle, int32_t *status)</td></tr>
+<tr class="memitem:gae38ad041836be4aa2a0a457ac1b97c40"><td class="memItemLeft" align="right" valign="top">HAL_EncoderEncodingType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__encoder.html#gae38ad041836be4aa2a0a457ac1b97c40">HAL_GetEncoderEncodingType</a> (<a class="el" href="group__hal__types.html#gac6893dc6cb4e4822ff231c55ef766b24">HAL_EncoderHandle</a> encoderHandle, int32_t *status)</td></tr>
 <tr class="memdesc:gae38ad041836be4aa2a0a457ac1b97c40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the encoding type of the encoder.  <a href="group__hal__encoder.html#gae38ad041836be4aa2a0a457ac1b97c40">More...</a><br /></td></tr>
 <tr class="separator:gae38ad041836be4aa2a0a457ac1b97c40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="gafa07bd7dc73fd175ba7893a95cc86106" name="gafa07bd7dc73fd175ba7893a95cc86106"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafa07bd7dc73fd175ba7893a95cc86106">&#9670;&nbsp;</a></span>HAL_ENUM() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HAL_ENUM </td>
+          <td>(</td>
+          <td class="paramtype">HAL_EncoderEncodingType&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The encoding scaling of the encoder. </p>
+
+</div>
+</div>
+<a id="gaa54c77d5065b82a89317f384a343a706" name="gaa54c77d5065b82a89317f384a343a706"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa54c77d5065b82a89317f384a343a706">&#9670;&nbsp;</a></span>HAL_ENUM() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HAL_ENUM </td>
+          <td>(</td>
+          <td class="paramtype">HAL_EncoderIndexingType&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The type of index pulse for the encoder. </p>
+
+</div>
+</div>
 <a id="ga5ac1d8296891fd36e8ca78a3be67de8a" name="ga5ac1d8296891fd36e8ca78a3be67de8a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga5ac1d8296891fd36e8ca78a3be67de8a">&#9670;&nbsp;</a></span>HAL_FreeEncoder()</h2>
 
@@ -188,7 +225,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetEncoderPerio
         <tr>
           <td class="memname">void HAL_FreeEncoder </td>
           <td>(</td>
-          <td class="paramtype">HAL_EncoderHandle&#160;</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#gac6893dc6cb4e4822ff231c55ef766b24">HAL_EncoderHandle</a>&#160;</td>
           <td class="paramname"><em>encoderHandle</em>, </td>
         </tr>
         <tr>
@@ -225,7 +262,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetEncoderPerio
         <tr>
           <td class="memname">int32_t HAL_GetEncoder </td>
           <td>(</td>
-          <td class="paramtype">HAL_EncoderHandle&#160;</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#gac6893dc6cb4e4822ff231c55ef766b24">HAL_EncoderHandle</a>&#160;</td>
           <td class="paramname"><em>encoderHandle</em>, </td>
         </tr>
         <tr>
@@ -264,7 +301,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetEncoderPerio
         <tr>
           <td class="memname">double HAL_GetEncoderDecodingScaleFactor </td>
           <td>(</td>
-          <td class="paramtype">HAL_EncoderHandle&#160;</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#gac6893dc6cb4e4822ff231c55ef766b24">HAL_EncoderHandle</a>&#160;</td>
           <td class="paramname"><em>encoderHandle</em>, </td>
         </tr>
         <tr>
@@ -301,9 +338,9 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetEncoderPerio
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HAL_Bool HAL_GetEncoderDirection </td>
+          <td class="memname"><a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a> HAL_GetEncoderDirection </td>
           <td>(</td>
-          <td class="paramtype">HAL_EncoderHandle&#160;</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#gac6893dc6cb4e4822ff231c55ef766b24">HAL_EncoderHandle</a>&#160;</td>
           <td class="paramname"><em>encoderHandle</em>, </td>
         </tr>
         <tr>
@@ -341,7 +378,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetEncoderPerio
         <tr>
           <td class="memname">double HAL_GetEncoderDistance </td>
           <td>(</td>
-          <td class="paramtype">HAL_EncoderHandle&#160;</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#gac6893dc6cb4e4822ff231c55ef766b24">HAL_EncoderHandle</a>&#160;</td>
           <td class="paramname"><em>encoderHandle</em>, </td>
         </tr>
         <tr>
@@ -380,7 +417,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetEncoderPerio
         <tr>
           <td class="memname">double HAL_GetEncoderDistancePerPulse </td>
           <td>(</td>
-          <td class="paramtype">HAL_EncoderHandle&#160;</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#gac6893dc6cb4e4822ff231c55ef766b24">HAL_EncoderHandle</a>&#160;</td>
           <td class="paramname"><em>encoderHandle</em>, </td>
         </tr>
         <tr>
@@ -418,7 +455,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetEncoderPerio
         <tr>
           <td class="memname">int32_t HAL_GetEncoderEncodingScale </td>
           <td>(</td>
-          <td class="paramtype">HAL_EncoderHandle&#160;</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#gac6893dc6cb4e4822ff231c55ef766b24">HAL_EncoderHandle</a>&#160;</td>
           <td class="paramname"><em>encoderHandle</em>, </td>
         </tr>
         <tr>
@@ -457,7 +494,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetEncoderPerio
         <tr>
           <td class="memname">HAL_EncoderEncodingType HAL_GetEncoderEncodingType </td>
           <td>(</td>
-          <td class="paramtype">HAL_EncoderHandle&#160;</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#gac6893dc6cb4e4822ff231c55ef766b24">HAL_EncoderHandle</a>&#160;</td>
           <td class="paramname"><em>encoderHandle</em>, </td>
         </tr>
         <tr>
@@ -495,7 +532,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetEncoderPerio
         <tr>
           <td class="memname">int32_t HAL_GetEncoderFPGAIndex </td>
           <td>(</td>
-          <td class="paramtype">HAL_EncoderHandle&#160;</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#gac6893dc6cb4e4822ff231c55ef766b24">HAL_EncoderHandle</a>&#160;</td>
           <td class="paramname"><em>encoderHandle</em>, </td>
         </tr>
         <tr>
@@ -524,6 +561,34 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetEncoderPerio
 
 </div>
 </div>
+<a id="gad859111d75e05ba26d40b958a6a16095" name="gad859111d75e05ba26d40b958a6a16095"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad859111d75e05ba26d40b958a6a16095">&#9670;&nbsp;</a></span>HAL_GetEncoderPeriod()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double HAL_GetEncoderPeriod </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#gac6893dc6cb4e4822ff231c55ef766b24">HAL_EncoderHandle</a>&#160;</td>
+          <td class="paramname"><em>encoderHandle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t *&#160;</td>
+          <td class="paramname"><em>status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="gaf72690908d0ab31d028dfdc5dad136ff" name="gaf72690908d0ab31d028dfdc5dad136ff"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaf72690908d0ab31d028dfdc5dad136ff">&#9670;&nbsp;</a></span>HAL_GetEncoderRate()</h2>
 
@@ -533,7 +598,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetEncoderPerio
         <tr>
           <td class="memname">double HAL_GetEncoderRate </td>
           <td>(</td>
-          <td class="paramtype">HAL_EncoderHandle&#160;</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#gac6893dc6cb4e4822ff231c55ef766b24">HAL_EncoderHandle</a>&#160;</td>
           <td class="paramname"><em>encoderHandle</em>, </td>
         </tr>
         <tr>
@@ -572,7 +637,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetEncoderPerio
         <tr>
           <td class="memname">int32_t HAL_GetEncoderRaw </td>
           <td>(</td>
-          <td class="paramtype">HAL_EncoderHandle&#160;</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#gac6893dc6cb4e4822ff231c55ef766b24">HAL_EncoderHandle</a>&#160;</td>
           <td class="paramname"><em>encoderHandle</em>, </td>
         </tr>
         <tr>
@@ -611,7 +676,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetEncoderPerio
         <tr>
           <td class="memname">int32_t HAL_GetEncoderSamplesToAverage </td>
           <td>(</td>
-          <td class="paramtype">HAL_EncoderHandle&#160;</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#gac6893dc6cb4e4822ff231c55ef766b24">HAL_EncoderHandle</a>&#160;</td>
           <td class="paramname"><em>encoderHandle</em>, </td>
         </tr>
         <tr>
@@ -647,9 +712,9 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetEncoderPerio
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HAL_Bool HAL_GetEncoderStopped </td>
+          <td class="memname"><a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a> HAL_GetEncoderStopped </td>
           <td>(</td>
-          <td class="paramtype">HAL_EncoderHandle&#160;</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#gac6893dc6cb4e4822ff231c55ef766b24">HAL_EncoderHandle</a>&#160;</td>
           <td class="paramname"><em>encoderHandle</em>, </td>
         </tr>
         <tr>
@@ -686,9 +751,9 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetEncoderPerio
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HAL_EncoderHandle HAL_InitializeEncoder </td>
+          <td class="memname"><a class="el" href="group__hal__types.html#gac6893dc6cb4e4822ff231c55ef766b24">HAL_EncoderHandle</a> HAL_InitializeEncoder </td>
           <td>(</td>
-          <td class="paramtype">HAL_Handle&#160;</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#ga5d211f92ccd43d4a51d8212b29536ccd">HAL_Handle</a>&#160;</td>
           <td class="paramname"><em>digitalSourceHandleA</em>, </td>
         </tr>
         <tr>
@@ -700,7 +765,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetEncoderPerio
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">HAL_Handle&#160;</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#ga5d211f92ccd43d4a51d8212b29536ccd">HAL_Handle</a>&#160;</td>
           <td class="paramname"><em>digitalSourceHandleB</em>, </td>
         </tr>
         <tr>
@@ -712,7 +777,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetEncoderPerio
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">HAL_Bool&#160;</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a>&#160;</td>
           <td class="paramname"><em>reverseDirection</em>, </td>
         </tr>
         <tr>
@@ -761,7 +826,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetEncoderPerio
         <tr>
           <td class="memname">void HAL_ResetEncoder </td>
           <td>(</td>
-          <td class="paramtype">HAL_EncoderHandle&#160;</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#gac6893dc6cb4e4822ff231c55ef766b24">HAL_EncoderHandle</a>&#160;</td>
           <td class="paramname"><em>encoderHandle</em>, </td>
         </tr>
         <tr>
@@ -799,7 +864,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetEncoderPerio
         <tr>
           <td class="memname">void HAL_SetEncoderDistancePerPulse </td>
           <td>(</td>
-          <td class="paramtype">HAL_EncoderHandle&#160;</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#gac6893dc6cb4e4822ff231c55ef766b24">HAL_EncoderHandle</a>&#160;</td>
           <td class="paramname"><em>encoderHandle</em>, </td>
         </tr>
         <tr>
@@ -844,13 +909,13 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetEncoderPerio
         <tr>
           <td class="memname">void HAL_SetEncoderIndexSource </td>
           <td>(</td>
-          <td class="paramtype">HAL_EncoderHandle&#160;</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#gac6893dc6cb4e4822ff231c55ef766b24">HAL_EncoderHandle</a>&#160;</td>
           <td class="paramname"><em>encoderHandle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">HAL_Handle&#160;</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#ga5d211f92ccd43d4a51d8212b29536ccd">HAL_Handle</a>&#160;</td>
           <td class="paramname"><em>digitalSourceHandle</em>, </td>
         </tr>
         <tr>
@@ -903,7 +968,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetEncoderPerio
         <tr>
           <td class="memname">void HAL_SetEncoderMaxPeriod </td>
           <td>(</td>
-          <td class="paramtype">HAL_EncoderHandle&#160;</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#gac6893dc6cb4e4822ff231c55ef766b24">HAL_EncoderHandle</a>&#160;</td>
           <td class="paramname"><em>encoderHandle</em>, </td>
         </tr>
         <tr>
@@ -948,7 +1013,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetEncoderPerio
         <tr>
           <td class="memname">void HAL_SetEncoderMinRate </td>
           <td>(</td>
-          <td class="paramtype">HAL_EncoderHandle&#160;</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#gac6893dc6cb4e4822ff231c55ef766b24">HAL_EncoderHandle</a>&#160;</td>
           <td class="paramname"><em>encoderHandle</em>, </td>
         </tr>
         <tr>
@@ -993,13 +1058,13 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetEncoderPerio
         <tr>
           <td class="memname">void HAL_SetEncoderReverseDirection </td>
           <td>(</td>
-          <td class="paramtype">HAL_EncoderHandle&#160;</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#gac6893dc6cb4e4822ff231c55ef766b24">HAL_EncoderHandle</a>&#160;</td>
           <td class="paramname"><em>encoderHandle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">HAL_Bool&#160;</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a>&#160;</td>
           <td class="paramname"><em>reverseDirection</em>, </td>
         </tr>
         <tr>
@@ -1038,7 +1103,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetEncoderPerio
         <tr>
           <td class="memname">void HAL_SetEncoderSamplesToAverage </td>
           <td>(</td>
-          <td class="paramtype">HAL_EncoderHandle&#160;</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#gac6893dc6cb4e4822ff231c55ef766b24">HAL_EncoderHandle</a>&#160;</td>
           <td class="paramname"><em>encoderHandle</em>, </td>
         </tr>
         <tr>
@@ -1082,13 +1147,13 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetEncoderPerio
         <tr>
           <td class="memname">void HAL_SetEncoderSimDevice </td>
           <td>(</td>
-          <td class="paramtype">HAL_EncoderHandle&#160;</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#gac6893dc6cb4e4822ff231c55ef766b24">HAL_EncoderHandle</a>&#160;</td>
           <td class="paramname"><em>handle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">HAL_SimDeviceHandle&#160;</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#ga98fa2df487adcab74d30a15d55725cc9">HAL_SimDeviceHandle</a>&#160;</td>
           <td class="paramname"><em>device</em>&#160;</td>
         </tr>
         <tr>
@@ -1115,7 +1180,7 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>HAL_GetEncoderPerio
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Oct 29 2021 07:12:23 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Oct 29 2021 22:10:01 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

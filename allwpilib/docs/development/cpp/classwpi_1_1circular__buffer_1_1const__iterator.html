@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-31-ga939cd9</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-32-g2cb171f</span>
    </div>
   </td>
  </tr>
@@ -98,46 +98,296 @@ $(document).ready(function(){initNavTree('classwpi_1_1circular__buffer_1_1const_
   <div class="headertitle"><div class="title">wpi::circular_buffer&lt; T &gt;::const_iterator Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="circular__buffer_8h_source.html">wpi/circular_buffer.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a668348f409fcf4c4ee448eb4aa22eb40"><td class="memItemLeft" align="right" valign="top"><a id="a668348f409fcf4c4ee448eb4aa22eb40" name="a668348f409fcf4c4ee448eb4aa22eb40"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>iterator_category</b> = std::forward_iterator_tag</td></tr>
+<tr class="memitem:a668348f409fcf4c4ee448eb4aa22eb40"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1circular__buffer_1_1const__iterator.html#a668348f409fcf4c4ee448eb4aa22eb40">iterator_category</a> = std::forward_iterator_tag</td></tr>
 <tr class="separator:a668348f409fcf4c4ee448eb4aa22eb40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a341473c2b03878586a86d3af8e658f63"><td class="memItemLeft" align="right" valign="top"><a id="a341473c2b03878586a86d3af8e658f63" name="a341473c2b03878586a86d3af8e658f63"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>value_type</b> = T</td></tr>
+<tr class="memitem:a341473c2b03878586a86d3af8e658f63"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1circular__buffer_1_1const__iterator.html#a341473c2b03878586a86d3af8e658f63">value_type</a> = T</td></tr>
 <tr class="separator:a341473c2b03878586a86d3af8e658f63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a134ee2a206609ea2ccd7d21c2f4ea362"><td class="memItemLeft" align="right" valign="top"><a id="a134ee2a206609ea2ccd7d21c2f4ea362" name="a134ee2a206609ea2ccd7d21c2f4ea362"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>difference_type</b> = std::ptrdiff_t</td></tr>
+<tr class="memitem:a134ee2a206609ea2ccd7d21c2f4ea362"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1circular__buffer_1_1const__iterator.html#a134ee2a206609ea2ccd7d21c2f4ea362">difference_type</a> = std::ptrdiff_t</td></tr>
 <tr class="separator:a134ee2a206609ea2ccd7d21c2f4ea362"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3560b219d485586f71428c899246c96"><td class="memItemLeft" align="right" valign="top"><a id="ab3560b219d485586f71428c899246c96" name="ab3560b219d485586f71428c899246c96"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>pointer</b> = T *</td></tr>
+<tr class="memitem:ab3560b219d485586f71428c899246c96"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1circular__buffer_1_1const__iterator.html#ab3560b219d485586f71428c899246c96">pointer</a> = T *</td></tr>
 <tr class="separator:ab3560b219d485586f71428c899246c96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e66b02c295905a313f0b4fda5d74be6"><td class="memItemLeft" align="right" valign="top"><a id="a6e66b02c295905a313f0b4fda5d74be6" name="a6e66b02c295905a313f0b4fda5d74be6"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>const_reference</b> = const T &amp;</td></tr>
+<tr class="memitem:a6e66b02c295905a313f0b4fda5d74be6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1circular__buffer_1_1const__iterator.html#a6e66b02c295905a313f0b4fda5d74be6">const_reference</a> = const T &amp;</td></tr>
 <tr class="separator:a6e66b02c295905a313f0b4fda5d74be6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aaa271a6012b68b501fd7fc9f755804b1"><td class="memItemLeft" align="right" valign="top"><a id="aaa271a6012b68b501fd7fc9f755804b1" name="aaa271a6012b68b501fd7fc9f755804b1"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>const_iterator</b> (const <a class="el" href="classwpi_1_1circular__buffer.html">circular_buffer</a> *<a class="el" href="classbuffer.html">buffer</a>, size_t index)</td></tr>
+<tr class="memitem:aaa271a6012b68b501fd7fc9f755804b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1circular__buffer_1_1const__iterator.html#aaa271a6012b68b501fd7fc9f755804b1">const_iterator</a> (const <a class="el" href="classwpi_1_1circular__buffer.html">circular_buffer</a> *<a class="el" href="classbuffer.html">buffer</a>, size_t index)</td></tr>
 <tr class="separator:aaa271a6012b68b501fd7fc9f755804b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a008e8d119e3f3e58b14455f4d805e8"><td class="memItemLeft" align="right" valign="top"><a id="a2a008e8d119e3f3e58b14455f4d805e8" name="a2a008e8d119e3f3e58b14455f4d805e8"></a>
-<a class="el" href="classwpi_1_1circular__buffer_1_1const__iterator.html">const_iterator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator++</b> ()</td></tr>
+<tr class="memitem:a2a008e8d119e3f3e58b14455f4d805e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1circular__buffer_1_1const__iterator.html">const_iterator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1circular__buffer_1_1const__iterator.html#a2a008e8d119e3f3e58b14455f4d805e8">operator++</a> ()</td></tr>
 <tr class="separator:a2a008e8d119e3f3e58b14455f4d805e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3a392df53453d83194539e7f687ce7a"><td class="memItemLeft" align="right" valign="top"><a id="ad3a392df53453d83194539e7f687ce7a" name="ad3a392df53453d83194539e7f687ce7a"></a>
-<a class="el" href="classwpi_1_1circular__buffer_1_1const__iterator.html">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator++</b> (int)</td></tr>
+<tr class="memitem:ad3a392df53453d83194539e7f687ce7a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1circular__buffer_1_1const__iterator.html">const_iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1circular__buffer_1_1const__iterator.html#ad3a392df53453d83194539e7f687ce7a">operator++</a> (int)</td></tr>
 <tr class="separator:ad3a392df53453d83194539e7f687ce7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abef65601b74cd52c57e830fad731fb28"><td class="memItemLeft" align="right" valign="top"><a id="abef65601b74cd52c57e830fad731fb28" name="abef65601b74cd52c57e830fad731fb28"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="classwpi_1_1circular__buffer_1_1const__iterator.html">const_iterator</a> &amp;other) const</td></tr>
+<tr class="memitem:abef65601b74cd52c57e830fad731fb28"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1circular__buffer_1_1const__iterator.html#abef65601b74cd52c57e830fad731fb28">operator==</a> (const <a class="el" href="classwpi_1_1circular__buffer_1_1const__iterator.html">const_iterator</a> &amp;other) const</td></tr>
 <tr class="separator:abef65601b74cd52c57e830fad731fb28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a502f662ad6950df4e5f98399a574f6ec"><td class="memItemLeft" align="right" valign="top"><a id="a502f662ad6950df4e5f98399a574f6ec" name="a502f662ad6950df4e5f98399a574f6ec"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="classwpi_1_1circular__buffer_1_1const__iterator.html">const_iterator</a> &amp;other) const</td></tr>
+<tr class="memitem:a502f662ad6950df4e5f98399a574f6ec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1circular__buffer_1_1const__iterator.html#a502f662ad6950df4e5f98399a574f6ec">operator!=</a> (const <a class="el" href="classwpi_1_1circular__buffer_1_1const__iterator.html">const_iterator</a> &amp;other) const</td></tr>
 <tr class="separator:a502f662ad6950df4e5f98399a574f6ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e243a83217301c1adbbadd9e9d1caf4"><td class="memItemLeft" align="right" valign="top"><a id="a2e243a83217301c1adbbadd9e9d1caf4" name="a2e243a83217301c1adbbadd9e9d1caf4"></a>
-const_reference&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> () const</td></tr>
+<tr class="memitem:a2e243a83217301c1adbbadd9e9d1caf4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1circular__buffer_1_1const__iterator.html#a6e66b02c295905a313f0b4fda5d74be6">const_reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1circular__buffer_1_1const__iterator.html#a2e243a83217301c1adbbadd9e9d1caf4">operator*</a> () const</td></tr>
 <tr class="separator:a2e243a83217301c1adbbadd9e9d1caf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a6e66b02c295905a313f0b4fda5d74be6" name="a6e66b02c295905a313f0b4fda5d74be6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e66b02c295905a313f0b4fda5d74be6">&#9670;&nbsp;</a></span>const_reference</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="classwpi_1_1circular__buffer.html">wpi::circular_buffer</a>&lt; T &gt;::<a class="el" href="classwpi_1_1circular__buffer_1_1const__iterator.html#a6e66b02c295905a313f0b4fda5d74be6">const_iterator::const_reference</a> =  const T&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a134ee2a206609ea2ccd7d21c2f4ea362" name="a134ee2a206609ea2ccd7d21c2f4ea362"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a134ee2a206609ea2ccd7d21c2f4ea362">&#9670;&nbsp;</a></span>difference_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="classwpi_1_1circular__buffer.html">wpi::circular_buffer</a>&lt; T &gt;::<a class="el" href="classwpi_1_1circular__buffer_1_1const__iterator.html#a134ee2a206609ea2ccd7d21c2f4ea362">const_iterator::difference_type</a> =  std::ptrdiff_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a668348f409fcf4c4ee448eb4aa22eb40" name="a668348f409fcf4c4ee448eb4aa22eb40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a668348f409fcf4c4ee448eb4aa22eb40">&#9670;&nbsp;</a></span>iterator_category</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="classwpi_1_1circular__buffer.html">wpi::circular_buffer</a>&lt; T &gt;::<a class="el" href="classwpi_1_1circular__buffer_1_1const__iterator.html#a668348f409fcf4c4ee448eb4aa22eb40">const_iterator::iterator_category</a> =  std::forward_iterator_tag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab3560b219d485586f71428c899246c96" name="ab3560b219d485586f71428c899246c96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3560b219d485586f71428c899246c96">&#9670;&nbsp;</a></span>pointer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="classwpi_1_1circular__buffer.html">wpi::circular_buffer</a>&lt; T &gt;::<a class="el" href="classwpi_1_1circular__buffer_1_1const__iterator.html#ab3560b219d485586f71428c899246c96">const_iterator::pointer</a> =  T*</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a341473c2b03878586a86d3af8e658f63" name="a341473c2b03878586a86d3af8e658f63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a341473c2b03878586a86d3af8e658f63">&#9670;&nbsp;</a></span>value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="classwpi_1_1circular__buffer.html">wpi::circular_buffer</a>&lt; T &gt;::<a class="el" href="classwpi_1_1circular__buffer_1_1const__iterator.html#a341473c2b03878586a86d3af8e658f63">const_iterator::value_type</a> =  T</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aaa271a6012b68b501fd7fc9f755804b1" name="aaa271a6012b68b501fd7fc9f755804b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa271a6012b68b501fd7fc9f755804b1">&#9670;&nbsp;</a></span>const_iterator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwpi_1_1circular__buffer.html">wpi::circular_buffer</a>&lt; T &gt;::const_iterator::const_iterator </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classwpi_1_1circular__buffer.html">circular_buffer</a> *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a502f662ad6950df4e5f98399a574f6ec" name="a502f662ad6950df4e5f98399a574f6ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a502f662ad6950df4e5f98399a574f6ec">&#9670;&nbsp;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classwpi_1_1circular__buffer.html">wpi::circular_buffer</a>&lt; T &gt;::<a class="el" href="_array_cwise_unary_ops_8h.html#aa198852a6b380257ea3e34c8f7e6e250">const_iterator::operator!</a>= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classwpi_1_1circular__buffer_1_1const__iterator.html">const_iterator</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2e243a83217301c1adbbadd9e9d1caf4" name="a2e243a83217301c1adbbadd9e9d1caf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e243a83217301c1adbbadd9e9d1caf4">&#9670;&nbsp;</a></span>operator*()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwpi_1_1circular__buffer_1_1const__iterator.html#a6e66b02c295905a313f0b4fda5d74be6">const_reference</a> <a class="el" href="classwpi_1_1circular__buffer.html">wpi::circular_buffer</a>&lt; T &gt;::const_iterator::operator* </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2a008e8d119e3f3e58b14455f4d805e8" name="a2a008e8d119e3f3e58b14455f4d805e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a008e8d119e3f3e58b14455f4d805e8">&#9670;&nbsp;</a></span>operator++() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwpi_1_1circular__buffer_1_1const__iterator.html">const_iterator</a> &amp; <a class="el" href="classwpi_1_1circular__buffer.html">wpi::circular_buffer</a>&lt; T &gt;::const_iterator::operator++ </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad3a392df53453d83194539e7f687ce7a" name="ad3a392df53453d83194539e7f687ce7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3a392df53453d83194539e7f687ce7a">&#9670;&nbsp;</a></span>operator++() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwpi_1_1circular__buffer_1_1const__iterator.html">const_iterator</a> <a class="el" href="classwpi_1_1circular__buffer.html">wpi::circular_buffer</a>&lt; T &gt;::const_iterator::operator++ </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abef65601b74cd52c57e830fad731fb28" name="abef65601b74cd52c57e830fad731fb28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abef65601b74cd52c57e830fad731fb28">&#9670;&nbsp;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classwpi_1_1circular__buffer.html">wpi::circular_buffer</a>&lt; T &gt;::const_iterator::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classwpi_1_1circular__buffer_1_1const__iterator.html">const_iterator</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>wpi/<a class="el" href="circular__buffer_8h_source.html">circular_buffer.h</a></li>
 </ul>
@@ -146,8 +396,8 @@ const_reference&#160;</td><td class="memItemRight" valign="bottom"><b>operator*<
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>wpi</b></li><li class="navelem"><a class="el" href="classwpi_1_1circular__buffer.html">circular_buffer</a></li><li class="navelem"><a class="el" href="classwpi_1_1circular__buffer_1_1const__iterator.html">const_iterator</a></li>
-    <li class="footer">Generated on Fri Oct 29 2021 07:12:30 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="classwpi_1_1circular__buffer.html">circular_buffer</a></li><li class="navelem"><a class="el" href="classwpi_1_1circular__buffer_1_1const__iterator.html">const_iterator</a></li>
+    <li class="footer">Generated on Fri Oct 29 2021 22:10:09 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

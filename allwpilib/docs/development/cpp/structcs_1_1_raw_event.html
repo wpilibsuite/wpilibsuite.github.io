@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-31-ga939cd9</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-32-g2cb171f</span>
    </div>
   </td>
  </tr>
@@ -116,86 +116,454 @@ Inheritance diagram for cs::RawEvent:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ad0b7b8d5828aa966bb95fc2bbe8bf25e"><td class="memItemLeft" align="right" valign="top"><a id="ad0b7b8d5828aa966bb95fc2bbe8bf25e" name="ad0b7b8d5828aa966bb95fc2bbe8bf25e"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Kind</b> { <br />
-&#160;&#160;<b>kSourceCreated</b> = CS_SOURCE_CREATED
-, <b>kSourceDestroyed</b> = CS_SOURCE_DESTROYED
-, <b>kSourceConnected</b> = CS_SOURCE_CONNECTED
-, <b>kSourceDisconnected</b> = CS_SOURCE_DISCONNECTED
+<tr class="memitem:ad0b7b8d5828aa966bb95fc2bbe8bf25e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcs_1_1_raw_event.html#ad0b7b8d5828aa966bb95fc2bbe8bf25e">Kind</a> { <br />
+&#160;&#160;<a class="el" href="structcs_1_1_raw_event.html#ad0b7b8d5828aa966bb95fc2bbe8bf25ea8d9a5fb7e9083127d3df917f6526f8f6">kSourceCreated</a> = CS_SOURCE_CREATED
+, <a class="el" href="structcs_1_1_raw_event.html#ad0b7b8d5828aa966bb95fc2bbe8bf25eab3b96d722798b81e87744b661ed1f56e">kSourceDestroyed</a> = CS_SOURCE_DESTROYED
+, <a class="el" href="structcs_1_1_raw_event.html#ad0b7b8d5828aa966bb95fc2bbe8bf25eaf76458f98066b4b10940f686b8c1f55f">kSourceConnected</a> = CS_SOURCE_CONNECTED
+, <a class="el" href="structcs_1_1_raw_event.html#ad0b7b8d5828aa966bb95fc2bbe8bf25ea9258c6cd93550c4b9187dc410f294a32">kSourceDisconnected</a> = CS_SOURCE_DISCONNECTED
 , <br />
-&#160;&#160;<b>kSourceVideoModesUpdated</b> = CS_SOURCE_VIDEOMODES_UPDATED
-, <b>kSourceVideoModeChanged</b> = CS_SOURCE_VIDEOMODE_CHANGED
-, <b>kSourcePropertyCreated</b> = CS_SOURCE_PROPERTY_CREATED
-, <b>kSourcePropertyValueUpdated</b> = CS_SOURCE_PROPERTY_VALUE_UPDATED
+&#160;&#160;<a class="el" href="structcs_1_1_raw_event.html#ad0b7b8d5828aa966bb95fc2bbe8bf25eada69b3df582f96dbe74a31aa7b897c95">kSourceVideoModesUpdated</a> = CS_SOURCE_VIDEOMODES_UPDATED
+, <a class="el" href="structcs_1_1_raw_event.html#ad0b7b8d5828aa966bb95fc2bbe8bf25ea4307bd98e64012a053c47c54fd19e5ef">kSourceVideoModeChanged</a> = CS_SOURCE_VIDEOMODE_CHANGED
+, <a class="el" href="structcs_1_1_raw_event.html#ad0b7b8d5828aa966bb95fc2bbe8bf25ea1184a1c7467bcf73e96cf0c499c5035b">kSourcePropertyCreated</a> = CS_SOURCE_PROPERTY_CREATED
+, <a class="el" href="structcs_1_1_raw_event.html#ad0b7b8d5828aa966bb95fc2bbe8bf25ea6aa9f377cb0f09d4d01a7fb2ceb22380">kSourcePropertyValueUpdated</a> = CS_SOURCE_PROPERTY_VALUE_UPDATED
 , <br />
-&#160;&#160;<b>kSourcePropertyChoicesUpdated</b> = CS_SOURCE_PROPERTY_CHOICES_UPDATED
-, <b>kSinkSourceChanged</b> = CS_SINK_SOURCE_CHANGED
-, <b>kSinkCreated</b> = CS_SINK_CREATED
-, <b>kSinkDestroyed</b> = CS_SINK_DESTROYED
+&#160;&#160;<a class="el" href="structcs_1_1_raw_event.html#ad0b7b8d5828aa966bb95fc2bbe8bf25eab1f4e5c1bde420ae3578523d998039d5">kSourcePropertyChoicesUpdated</a> = CS_SOURCE_PROPERTY_CHOICES_UPDATED
+, <a class="el" href="structcs_1_1_raw_event.html#ad0b7b8d5828aa966bb95fc2bbe8bf25ea0ceb8a1a4098607257526797b7a4c370">kSinkSourceChanged</a> = CS_SINK_SOURCE_CHANGED
+, <a class="el" href="structcs_1_1_raw_event.html#ad0b7b8d5828aa966bb95fc2bbe8bf25ea8ab75150b01daaeb2310d17ec932a0b0">kSinkCreated</a> = CS_SINK_CREATED
+, <a class="el" href="structcs_1_1_raw_event.html#ad0b7b8d5828aa966bb95fc2bbe8bf25eaa639b6663638a18066f2687f075eeb1a">kSinkDestroyed</a> = CS_SINK_DESTROYED
 , <br />
-&#160;&#160;<b>kSinkEnabled</b> = CS_SINK_ENABLED
-, <b>kSinkDisabled</b> = CS_SINK_DISABLED
-, <b>kNetworkInterfacesChanged</b> = CS_NETWORK_INTERFACES_CHANGED
-, <b>kTelemetryUpdated</b> = CS_TELEMETRY_UPDATED
+&#160;&#160;<a class="el" href="structcs_1_1_raw_event.html#ad0b7b8d5828aa966bb95fc2bbe8bf25ea35bd159cb634d3a01489f785b553ccab">kSinkEnabled</a> = CS_SINK_ENABLED
+, <a class="el" href="structcs_1_1_raw_event.html#ad0b7b8d5828aa966bb95fc2bbe8bf25ea62273460a10900ed9f1b9668e645dd04">kSinkDisabled</a> = CS_SINK_DISABLED
+, <a class="el" href="structcs_1_1_raw_event.html#ad0b7b8d5828aa966bb95fc2bbe8bf25ea9c968b843774b1177958dc1e676a8a0c">kNetworkInterfacesChanged</a> = CS_NETWORK_INTERFACES_CHANGED
+, <a class="el" href="structcs_1_1_raw_event.html#ad0b7b8d5828aa966bb95fc2bbe8bf25ea00f315883d0b9eb4fa86baac4a80c525">kTelemetryUpdated</a> = CS_TELEMETRY_UPDATED
 , <br />
-&#160;&#160;<b>kSinkPropertyCreated</b> = CS_SINK_PROPERTY_CREATED
-, <b>kSinkPropertyValueUpdated</b> = CS_SINK_PROPERTY_VALUE_UPDATED
-, <b>kSinkPropertyChoicesUpdated</b> = CS_SINK_PROPERTY_CHOICES_UPDATED
-, <b>kUsbCamerasChanged</b> = CS_USB_CAMERAS_CHANGED
+&#160;&#160;<a class="el" href="structcs_1_1_raw_event.html#ad0b7b8d5828aa966bb95fc2bbe8bf25ea36784a172d3db818429b82023bc556a5">kSinkPropertyCreated</a> = CS_SINK_PROPERTY_CREATED
+, <a class="el" href="structcs_1_1_raw_event.html#ad0b7b8d5828aa966bb95fc2bbe8bf25ea820bda4336bdcaf5c773b5bbc983e862">kSinkPropertyValueUpdated</a> = CS_SINK_PROPERTY_VALUE_UPDATED
+, <a class="el" href="structcs_1_1_raw_event.html#ad0b7b8d5828aa966bb95fc2bbe8bf25ea84c33a85eacab88f997c6bd8976691c9">kSinkPropertyChoicesUpdated</a> = CS_SINK_PROPERTY_CHOICES_UPDATED
+, <a class="el" href="structcs_1_1_raw_event.html#ad0b7b8d5828aa966bb95fc2bbe8bf25ea096a9c4634b8e8cab21411c8cdc88263">kUsbCamerasChanged</a> = CS_USB_CAMERAS_CHANGED
 <br />
  }</td></tr>
 <tr class="separator:ad0b7b8d5828aa966bb95fc2bbe8bf25e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aab9ada362441ac5dd50d942d257e4c81"><td class="memItemLeft" align="right" valign="top"><a id="aab9ada362441ac5dd50d942d257e4c81" name="aab9ada362441ac5dd50d942d257e4c81"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>RawEvent</b> (RawEvent::Kind kind_)</td></tr>
+<tr class="memitem:af6c97cd12ca023a5b63cf6a596a2b709"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcs_1_1_raw_event.html#af6c97cd12ca023a5b63cf6a596a2b709">RawEvent</a> ()=default</td></tr>
+<tr class="separator:af6c97cd12ca023a5b63cf6a596a2b709"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab9ada362441ac5dd50d942d257e4c81"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcs_1_1_raw_event.html#aab9ada362441ac5dd50d942d257e4c81">RawEvent</a> (<a class="el" href="structcs_1_1_raw_event.html#ad0b7b8d5828aa966bb95fc2bbe8bf25e">RawEvent::Kind</a> kind_)</td></tr>
 <tr class="separator:aab9ada362441ac5dd50d942d257e4c81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab83937134512331ae8b1ae4528446ee3"><td class="memItemLeft" align="right" valign="top"><a id="ab83937134512331ae8b1ae4528446ee3" name="ab83937134512331ae8b1ae4528446ee3"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>RawEvent</b> (std::string_view name_, CS_Handle handle_, RawEvent::Kind kind_)</td></tr>
+<tr class="memitem:ab83937134512331ae8b1ae4528446ee3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcs_1_1_raw_event.html#ab83937134512331ae8b1ae4528446ee3">RawEvent</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> name_, <a class="el" href="group__cscore__typedefs.html#gaaf43d8c8d4ebeddebde752192da90a60">CS_Handle</a> handle_, <a class="el" href="structcs_1_1_raw_event.html#ad0b7b8d5828aa966bb95fc2bbe8bf25e">RawEvent::Kind</a> kind_)</td></tr>
 <tr class="separator:ab83937134512331ae8b1ae4528446ee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac55faad0d4ecec19772439e4adbc04b"><td class="memItemLeft" align="right" valign="top"><a id="aac55faad0d4ecec19772439e4adbc04b" name="aac55faad0d4ecec19772439e4adbc04b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>RawEvent</b> (std::string_view name_, CS_Source source_, const <a class="el" href="structcs_1_1_video_mode.html">VideoMode</a> &amp;mode_)</td></tr>
+<tr class="memitem:aac55faad0d4ecec19772439e4adbc04b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcs_1_1_raw_event.html#aac55faad0d4ecec19772439e4adbc04b">RawEvent</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> name_, <a class="el" href="group__cscore__typedefs.html#ga075eec9cfd46a2885390588d9f1fe7f0">CS_Source</a> source_, const <a class="el" href="structcs_1_1_video_mode.html">VideoMode</a> &amp;mode_)</td></tr>
 <tr class="separator:aac55faad0d4ecec19772439e4adbc04b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6de7cde91b33233e8df659962e504733"><td class="memItemLeft" align="right" valign="top"><a id="a6de7cde91b33233e8df659962e504733" name="a6de7cde91b33233e8df659962e504733"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>RawEvent</b> (std::string_view name_, CS_Source source_, RawEvent::Kind kind_, CS_Property property_, <a class="el" href="group__cscore__c__api.html#ga748df10eca5adcbc533b0fe788daf22e">CS_PropertyKind</a> propertyKind_, int value_, std::string_view valueStr_)</td></tr>
+<tr class="memitem:a6de7cde91b33233e8df659962e504733"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcs_1_1_raw_event.html#a6de7cde91b33233e8df659962e504733">RawEvent</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> name_, <a class="el" href="group__cscore__typedefs.html#ga075eec9cfd46a2885390588d9f1fe7f0">CS_Source</a> source_, <a class="el" href="structcs_1_1_raw_event.html#ad0b7b8d5828aa966bb95fc2bbe8bf25e">RawEvent::Kind</a> kind_, <a class="el" href="group__cscore__typedefs.html#ga5dcd1c91880b349ce94a3dd495264377">CS_Property</a> property_, <a class="el" href="group__cscore__c__api.html#ga748df10eca5adcbc533b0fe788daf22e">CS_PropertyKind</a> propertyKind_, int value_, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> valueStr_)</td></tr>
 <tr class="separator:a6de7cde91b33233e8df659962e504733"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a51a32420fbb0e990c122aa2f0906e677"><td class="memItemLeft" align="right" valign="top"><a id="a51a32420fbb0e990c122aa2f0906e677" name="a51a32420fbb0e990c122aa2f0906e677"></a>
-Kind&#160;</td><td class="memItemRight" valign="bottom"><b>kind</b></td></tr>
+<tr class="memitem:a51a32420fbb0e990c122aa2f0906e677"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcs_1_1_raw_event.html#ad0b7b8d5828aa966bb95fc2bbe8bf25e">Kind</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcs_1_1_raw_event.html#a51a32420fbb0e990c122aa2f0906e677">kind</a></td></tr>
 <tr class="separator:a51a32420fbb0e990c122aa2f0906e677"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a762b1faf22c4b888c363945f263800ec"><td class="memItemLeft" align="right" valign="top"><a id="a762b1faf22c4b888c363945f263800ec" name="a762b1faf22c4b888c363945f263800ec"></a>
-CS_Source&#160;</td><td class="memItemRight" valign="bottom"><b>sourceHandle</b> = CS_INVALID_HANDLE</td></tr>
+<tr class="memitem:a762b1faf22c4b888c363945f263800ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__cscore__typedefs.html#ga075eec9cfd46a2885390588d9f1fe7f0">CS_Source</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcs_1_1_raw_event.html#a762b1faf22c4b888c363945f263800ec">sourceHandle</a> = <a class="el" href="group__cscore__c__api.html#ggafd2b8be5bc92a0a85ec51d40af1d1322a6040fb5253a49bb534616abc1bb2eadf">CS_INVALID_HANDLE</a></td></tr>
 <tr class="separator:a762b1faf22c4b888c363945f263800ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20d2d7a6fc5f11662bbd2f8839eb8b4e"><td class="memItemLeft" align="right" valign="top"><a id="a20d2d7a6fc5f11662bbd2f8839eb8b4e" name="a20d2d7a6fc5f11662bbd2f8839eb8b4e"></a>
-CS_Sink&#160;</td><td class="memItemRight" valign="bottom"><b>sinkHandle</b> = CS_INVALID_HANDLE</td></tr>
+<tr class="memitem:a20d2d7a6fc5f11662bbd2f8839eb8b4e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__cscore__typedefs.html#ga801a0f9c4b68e600b81395876b4eabd7">CS_Sink</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcs_1_1_raw_event.html#a20d2d7a6fc5f11662bbd2f8839eb8b4e">sinkHandle</a> = <a class="el" href="group__cscore__c__api.html#ggafd2b8be5bc92a0a85ec51d40af1d1322a6040fb5253a49bb534616abc1bb2eadf">CS_INVALID_HANDLE</a></td></tr>
 <tr class="separator:a20d2d7a6fc5f11662bbd2f8839eb8b4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42be29ff0a6b631b98d309e5bfd082d5"><td class="memItemLeft" align="right" valign="top"><a id="a42be29ff0a6b631b98d309e5bfd082d5" name="a42be29ff0a6b631b98d309e5bfd082d5"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td></tr>
+<tr class="memitem:a42be29ff0a6b631b98d309e5bfd082d5"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcs_1_1_raw_event.html#a42be29ff0a6b631b98d309e5bfd082d5">name</a></td></tr>
 <tr class="separator:a42be29ff0a6b631b98d309e5bfd082d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07ce5e163e404ec11b367fa9eddc2ef7"><td class="memItemLeft" align="right" valign="top"><a id="a07ce5e163e404ec11b367fa9eddc2ef7" name="a07ce5e163e404ec11b367fa9eddc2ef7"></a>
-<a class="el" href="structcs_1_1_video_mode.html">VideoMode</a>&#160;</td><td class="memItemRight" valign="bottom"><b>mode</b></td></tr>
+<tr class="memitem:a07ce5e163e404ec11b367fa9eddc2ef7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcs_1_1_video_mode.html">VideoMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcs_1_1_raw_event.html#a07ce5e163e404ec11b367fa9eddc2ef7">mode</a></td></tr>
 <tr class="separator:a07ce5e163e404ec11b367fa9eddc2ef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b0fe3b3119f4847109f18dff338f19d"><td class="memItemLeft" align="right" valign="top"><a id="a6b0fe3b3119f4847109f18dff338f19d" name="a6b0fe3b3119f4847109f18dff338f19d"></a>
-CS_Property&#160;</td><td class="memItemRight" valign="bottom"><b>propertyHandle</b></td></tr>
+<tr class="memitem:a6b0fe3b3119f4847109f18dff338f19d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__cscore__typedefs.html#ga5dcd1c91880b349ce94a3dd495264377">CS_Property</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcs_1_1_raw_event.html#a6b0fe3b3119f4847109f18dff338f19d">propertyHandle</a></td></tr>
 <tr class="separator:a6b0fe3b3119f4847109f18dff338f19d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbb861b2dd2b3cc770f5d5a285c12739"><td class="memItemLeft" align="right" valign="top"><a id="abbb861b2dd2b3cc770f5d5a285c12739" name="abbb861b2dd2b3cc770f5d5a285c12739"></a>
-<a class="el" href="group__cscore__c__api.html#ga748df10eca5adcbc533b0fe788daf22e">CS_PropertyKind</a>&#160;</td><td class="memItemRight" valign="bottom"><b>propertyKind</b></td></tr>
+<tr class="memitem:abbb861b2dd2b3cc770f5d5a285c12739"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__cscore__c__api.html#ga748df10eca5adcbc533b0fe788daf22e">CS_PropertyKind</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcs_1_1_raw_event.html#abbb861b2dd2b3cc770f5d5a285c12739">propertyKind</a></td></tr>
 <tr class="separator:abbb861b2dd2b3cc770f5d5a285c12739"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38f3b6552029a03ab0c68fb2b90d0596"><td class="memItemLeft" align="right" valign="top"><a id="a38f3b6552029a03ab0c68fb2b90d0596" name="a38f3b6552029a03ab0c68fb2b90d0596"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>value</b></td></tr>
+<tr class="memitem:a38f3b6552029a03ab0c68fb2b90d0596"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcs_1_1_raw_event.html#a38f3b6552029a03ab0c68fb2b90d0596">value</a></td></tr>
 <tr class="separator:a38f3b6552029a03ab0c68fb2b90d0596"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80ff8f9f131cfa7e61c7da467719a82e"><td class="memItemLeft" align="right" valign="top"><a id="a80ff8f9f131cfa7e61c7da467719a82e" name="a80ff8f9f131cfa7e61c7da467719a82e"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>valueStr</b></td></tr>
+<tr class="memitem:a80ff8f9f131cfa7e61c7da467719a82e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcs_1_1_raw_event.html#a80ff8f9f131cfa7e61c7da467719a82e">valueStr</a></td></tr>
 <tr class="separator:a80ff8f9f131cfa7e61c7da467719a82e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab606442031f460269fee5de0eee69d70"><td class="memItemLeft" align="right" valign="top"><a id="ab606442031f460269fee5de0eee69d70" name="ab606442031f460269fee5de0eee69d70"></a>
-CS_Listener&#160;</td><td class="memItemRight" valign="bottom"><b>listener</b> {0}</td></tr>
+<tr class="memitem:ab606442031f460269fee5de0eee69d70"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__cscore__typedefs.html#gacc95a72cf624459ca04bf9e70f827a07">CS_Listener</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcs_1_1_raw_event.html#ab606442031f460269fee5de0eee69d70">listener</a> {0}</td></tr>
 <tr class="separator:ab606442031f460269fee5de0eee69d70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Listener event. </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="ad0b7b8d5828aa966bb95fc2bbe8bf25e" name="ad0b7b8d5828aa966bb95fc2bbe8bf25e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0b7b8d5828aa966bb95fc2bbe8bf25e">&#9670;&nbsp;</a></span>Kind</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="structcs_1_1_raw_event.html#ad0b7b8d5828aa966bb95fc2bbe8bf25e">cs::RawEvent::Kind</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad0b7b8d5828aa966bb95fc2bbe8bf25ea8d9a5fb7e9083127d3df917f6526f8f6" name="ad0b7b8d5828aa966bb95fc2bbe8bf25ea8d9a5fb7e9083127d3df917f6526f8f6"></a>kSourceCreated&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad0b7b8d5828aa966bb95fc2bbe8bf25eab3b96d722798b81e87744b661ed1f56e" name="ad0b7b8d5828aa966bb95fc2bbe8bf25eab3b96d722798b81e87744b661ed1f56e"></a>kSourceDestroyed&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad0b7b8d5828aa966bb95fc2bbe8bf25eaf76458f98066b4b10940f686b8c1f55f" name="ad0b7b8d5828aa966bb95fc2bbe8bf25eaf76458f98066b4b10940f686b8c1f55f"></a>kSourceConnected&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad0b7b8d5828aa966bb95fc2bbe8bf25ea9258c6cd93550c4b9187dc410f294a32" name="ad0b7b8d5828aa966bb95fc2bbe8bf25ea9258c6cd93550c4b9187dc410f294a32"></a>kSourceDisconnected&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad0b7b8d5828aa966bb95fc2bbe8bf25eada69b3df582f96dbe74a31aa7b897c95" name="ad0b7b8d5828aa966bb95fc2bbe8bf25eada69b3df582f96dbe74a31aa7b897c95"></a>kSourceVideoModesUpdated&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad0b7b8d5828aa966bb95fc2bbe8bf25ea4307bd98e64012a053c47c54fd19e5ef" name="ad0b7b8d5828aa966bb95fc2bbe8bf25ea4307bd98e64012a053c47c54fd19e5ef"></a>kSourceVideoModeChanged&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad0b7b8d5828aa966bb95fc2bbe8bf25ea1184a1c7467bcf73e96cf0c499c5035b" name="ad0b7b8d5828aa966bb95fc2bbe8bf25ea1184a1c7467bcf73e96cf0c499c5035b"></a>kSourcePropertyCreated&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad0b7b8d5828aa966bb95fc2bbe8bf25ea6aa9f377cb0f09d4d01a7fb2ceb22380" name="ad0b7b8d5828aa966bb95fc2bbe8bf25ea6aa9f377cb0f09d4d01a7fb2ceb22380"></a>kSourcePropertyValueUpdated&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad0b7b8d5828aa966bb95fc2bbe8bf25eab1f4e5c1bde420ae3578523d998039d5" name="ad0b7b8d5828aa966bb95fc2bbe8bf25eab1f4e5c1bde420ae3578523d998039d5"></a>kSourcePropertyChoicesUpdated&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad0b7b8d5828aa966bb95fc2bbe8bf25ea0ceb8a1a4098607257526797b7a4c370" name="ad0b7b8d5828aa966bb95fc2bbe8bf25ea0ceb8a1a4098607257526797b7a4c370"></a>kSinkSourceChanged&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad0b7b8d5828aa966bb95fc2bbe8bf25ea8ab75150b01daaeb2310d17ec932a0b0" name="ad0b7b8d5828aa966bb95fc2bbe8bf25ea8ab75150b01daaeb2310d17ec932a0b0"></a>kSinkCreated&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad0b7b8d5828aa966bb95fc2bbe8bf25eaa639b6663638a18066f2687f075eeb1a" name="ad0b7b8d5828aa966bb95fc2bbe8bf25eaa639b6663638a18066f2687f075eeb1a"></a>kSinkDestroyed&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad0b7b8d5828aa966bb95fc2bbe8bf25ea35bd159cb634d3a01489f785b553ccab" name="ad0b7b8d5828aa966bb95fc2bbe8bf25ea35bd159cb634d3a01489f785b553ccab"></a>kSinkEnabled&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad0b7b8d5828aa966bb95fc2bbe8bf25ea62273460a10900ed9f1b9668e645dd04" name="ad0b7b8d5828aa966bb95fc2bbe8bf25ea62273460a10900ed9f1b9668e645dd04"></a>kSinkDisabled&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad0b7b8d5828aa966bb95fc2bbe8bf25ea9c968b843774b1177958dc1e676a8a0c" name="ad0b7b8d5828aa966bb95fc2bbe8bf25ea9c968b843774b1177958dc1e676a8a0c"></a>kNetworkInterfacesChanged&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad0b7b8d5828aa966bb95fc2bbe8bf25ea00f315883d0b9eb4fa86baac4a80c525" name="ad0b7b8d5828aa966bb95fc2bbe8bf25ea00f315883d0b9eb4fa86baac4a80c525"></a>kTelemetryUpdated&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad0b7b8d5828aa966bb95fc2bbe8bf25ea36784a172d3db818429b82023bc556a5" name="ad0b7b8d5828aa966bb95fc2bbe8bf25ea36784a172d3db818429b82023bc556a5"></a>kSinkPropertyCreated&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad0b7b8d5828aa966bb95fc2bbe8bf25ea820bda4336bdcaf5c773b5bbc983e862" name="ad0b7b8d5828aa966bb95fc2bbe8bf25ea820bda4336bdcaf5c773b5bbc983e862"></a>kSinkPropertyValueUpdated&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad0b7b8d5828aa966bb95fc2bbe8bf25ea84c33a85eacab88f997c6bd8976691c9" name="ad0b7b8d5828aa966bb95fc2bbe8bf25ea84c33a85eacab88f997c6bd8976691c9"></a>kSinkPropertyChoicesUpdated&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad0b7b8d5828aa966bb95fc2bbe8bf25ea096a9c4634b8e8cab21411c8cdc88263" name="ad0b7b8d5828aa966bb95fc2bbe8bf25ea096a9c4634b8e8cab21411c8cdc88263"></a>kUsbCamerasChanged&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="af6c97cd12ca023a5b63cf6a596a2b709" name="af6c97cd12ca023a5b63cf6a596a2b709"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6c97cd12ca023a5b63cf6a596a2b709">&#9670;&nbsp;</a></span>RawEvent() <span class="overload">[1/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">cs::RawEvent::RawEvent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aab9ada362441ac5dd50d942d257e4c81" name="aab9ada362441ac5dd50d942d257e4c81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab9ada362441ac5dd50d942d257e4c81">&#9670;&nbsp;</a></span>RawEvent() <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">cs::RawEvent::RawEvent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcs_1_1_raw_event.html#ad0b7b8d5828aa966bb95fc2bbe8bf25e">RawEvent::Kind</a>&#160;</td>
+          <td class="paramname"><em>kind_</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab83937134512331ae8b1ae4528446ee3" name="ab83937134512331ae8b1ae4528446ee3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab83937134512331ae8b1ae4528446ee3">&#9670;&nbsp;</a></span>RawEvent() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">cs::RawEvent::RawEvent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>name_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__cscore__typedefs.html#gaaf43d8c8d4ebeddebde752192da90a60">CS_Handle</a>&#160;</td>
+          <td class="paramname"><em>handle_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structcs_1_1_raw_event.html#ad0b7b8d5828aa966bb95fc2bbe8bf25e">RawEvent::Kind</a>&#160;</td>
+          <td class="paramname"><em>kind_</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aac55faad0d4ecec19772439e4adbc04b" name="aac55faad0d4ecec19772439e4adbc04b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac55faad0d4ecec19772439e4adbc04b">&#9670;&nbsp;</a></span>RawEvent() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">cs::RawEvent::RawEvent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>name_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__cscore__typedefs.html#ga075eec9cfd46a2885390588d9f1fe7f0">CS_Source</a>&#160;</td>
+          <td class="paramname"><em>source_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structcs_1_1_video_mode.html">VideoMode</a> &amp;&#160;</td>
+          <td class="paramname"><em>mode_</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6de7cde91b33233e8df659962e504733" name="a6de7cde91b33233e8df659962e504733"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6de7cde91b33233e8df659962e504733">&#9670;&nbsp;</a></span>RawEvent() <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">cs::RawEvent::RawEvent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>name_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__cscore__typedefs.html#ga075eec9cfd46a2885390588d9f1fe7f0">CS_Source</a>&#160;</td>
+          <td class="paramname"><em>source_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structcs_1_1_raw_event.html#ad0b7b8d5828aa966bb95fc2bbe8bf25e">RawEvent::Kind</a>&#160;</td>
+          <td class="paramname"><em>kind_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__cscore__typedefs.html#ga5dcd1c91880b349ce94a3dd495264377">CS_Property</a>&#160;</td>
+          <td class="paramname"><em>property_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__cscore__c__api.html#ga748df10eca5adcbc533b0fe788daf22e">CS_PropertyKind</a>&#160;</td>
+          <td class="paramname"><em>propertyKind_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>valueStr_</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a51a32420fbb0e990c122aa2f0906e677" name="a51a32420fbb0e990c122aa2f0906e677"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51a32420fbb0e990c122aa2f0906e677">&#9670;&nbsp;</a></span>kind</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structcs_1_1_raw_event.html#ad0b7b8d5828aa966bb95fc2bbe8bf25e">Kind</a> cs::RawEvent::kind</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab606442031f460269fee5de0eee69d70" name="ab606442031f460269fee5de0eee69d70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab606442031f460269fee5de0eee69d70">&#9670;&nbsp;</a></span>listener</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__cscore__typedefs.html#gacc95a72cf624459ca04bf9e70f827a07">CS_Listener</a> cs::RawEvent::listener {0}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a07ce5e163e404ec11b367fa9eddc2ef7" name="a07ce5e163e404ec11b367fa9eddc2ef7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07ce5e163e404ec11b367fa9eddc2ef7">&#9670;&nbsp;</a></span>mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structcs_1_1_video_mode.html">VideoMode</a> cs::RawEvent::mode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a42be29ff0a6b631b98d309e5bfd082d5" name="a42be29ff0a6b631b98d309e5bfd082d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42be29ff0a6b631b98d309e5bfd082d5">&#9670;&nbsp;</a></span>name</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string cs::RawEvent::name</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6b0fe3b3119f4847109f18dff338f19d" name="a6b0fe3b3119f4847109f18dff338f19d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b0fe3b3119f4847109f18dff338f19d">&#9670;&nbsp;</a></span>propertyHandle</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__cscore__typedefs.html#ga5dcd1c91880b349ce94a3dd495264377">CS_Property</a> cs::RawEvent::propertyHandle</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abbb861b2dd2b3cc770f5d5a285c12739" name="abbb861b2dd2b3cc770f5d5a285c12739"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbb861b2dd2b3cc770f5d5a285c12739">&#9670;&nbsp;</a></span>propertyKind</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__cscore__c__api.html#ga748df10eca5adcbc533b0fe788daf22e">CS_PropertyKind</a> cs::RawEvent::propertyKind</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a20d2d7a6fc5f11662bbd2f8839eb8b4e" name="a20d2d7a6fc5f11662bbd2f8839eb8b4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20d2d7a6fc5f11662bbd2f8839eb8b4e">&#9670;&nbsp;</a></span>sinkHandle</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__cscore__typedefs.html#ga801a0f9c4b68e600b81395876b4eabd7">CS_Sink</a> cs::RawEvent::sinkHandle = <a class="el" href="group__cscore__c__api.html#ggafd2b8be5bc92a0a85ec51d40af1d1322a6040fb5253a49bb534616abc1bb2eadf">CS_INVALID_HANDLE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a762b1faf22c4b888c363945f263800ec" name="a762b1faf22c4b888c363945f263800ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a762b1faf22c4b888c363945f263800ec">&#9670;&nbsp;</a></span>sourceHandle</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__cscore__typedefs.html#ga075eec9cfd46a2885390588d9f1fe7f0">CS_Source</a> cs::RawEvent::sourceHandle = <a class="el" href="group__cscore__c__api.html#ggafd2b8be5bc92a0a85ec51d40af1d1322a6040fb5253a49bb534616abc1bb2eadf">CS_INVALID_HANDLE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a38f3b6552029a03ab0c68fb2b90d0596" name="a38f3b6552029a03ab0c68fb2b90d0596"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38f3b6552029a03ab0c68fb2b90d0596">&#9670;&nbsp;</a></span>value</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int cs::RawEvent::value</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a80ff8f9f131cfa7e61c7da467719a82e" name="a80ff8f9f131cfa7e61c7da467719a82e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80ff8f9f131cfa7e61c7da467719a82e">&#9670;&nbsp;</a></span>valueStr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string cs::RawEvent::valueStr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="cscore__cpp_8h_source.html">cscore_cpp.h</a></li>
 </ul>
 </div><!-- contents -->
@@ -204,7 +572,7 @@ CS_Listener&#160;</td><td class="memItemRight" valign="bottom"><b>listener</b> {
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacecs.html">cs</a></li><li class="navelem"><a class="el" href="structcs_1_1_raw_event.html">RawEvent</a></li>
-    <li class="footer">Generated on Fri Oct 29 2021 07:12:23 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Oct 29 2021 22:10:02 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

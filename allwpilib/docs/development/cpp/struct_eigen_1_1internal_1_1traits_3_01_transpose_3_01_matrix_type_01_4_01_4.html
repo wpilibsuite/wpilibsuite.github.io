@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-31-ga939cd9</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-32-g2cb171f</span>
    </div>
   </td>
  </tr>
@@ -97,6 +97,8 @@ $(document).ready(function(){initNavTree('struct_eigen_1_1internal_1_1traits_3_0
   <div class="headertitle"><div class="title">Eigen::internal::traits&lt; Transpose&lt; MatrixType &gt; &gt; Struct Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_transpose_8h_source.html">/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/eigeninclude/Eigen/src/Core/Transpose.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Eigen::internal::traits&lt; Transpose&lt; MatrixType &gt; &gt;:</div>
 <div class="dyncontent">
@@ -109,29 +111,89 @@ Inheritance diagram for Eigen::internal::traits&lt; Transpose&lt; MatrixType &gt
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a230a05dddb41460b73737a0a03875a7f"><td class="memItemLeft" align="right" valign="top"><a id="a230a05dddb41460b73737a0a03875a7f" name="a230a05dddb41460b73737a0a03875a7f"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<b>RowsAtCompileTime</b> = MatrixType::ColsAtCompileTime
-, <b>ColsAtCompileTime</b> = MatrixType::RowsAtCompileTime
-, <b>MaxRowsAtCompileTime</b> = MatrixType::MaxColsAtCompileTime
-, <b>MaxColsAtCompileTime</b> = MatrixType::MaxRowsAtCompileTime
+<tr class="memitem:a230a05dddb41460b73737a0a03875a7f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_transpose_3_01_matrix_type_01_4_01_4.html#a230a05dddb41460b73737a0a03875a7fa5e25bd02c9fe4c579d5ad7e397d858a8">RowsAtCompileTime</a> = MatrixType::ColsAtCompileTime
+, <a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_transpose_3_01_matrix_type_01_4_01_4.html#a230a05dddb41460b73737a0a03875a7fad5086c1a3191186d34974fe898e69668">ColsAtCompileTime</a> = MatrixType::RowsAtCompileTime
+, <a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_transpose_3_01_matrix_type_01_4_01_4.html#a230a05dddb41460b73737a0a03875a7fa804b9e298366688d3b6bb760afa1ac41">MaxRowsAtCompileTime</a> = MatrixType::MaxColsAtCompileTime
+, <a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_transpose_3_01_matrix_type_01_4_01_4.html#a230a05dddb41460b73737a0a03875a7fa3acc64c5fdfc191ea7da3722c1c2a301">MaxColsAtCompileTime</a> = MatrixType::MaxRowsAtCompileTime
 , <br />
-&#160;&#160;<b>FlagsLvalueBit</b> = is_lvalue&lt;MatrixType&gt;::value ? LvalueBit : 0
-, <b>Flags0</b> = traits&lt;MatrixTypeNestedPlain&gt;::Flags &amp; ~(LvalueBit | NestByRefBit)
-, <b>Flags1</b> = Flags0 | FlagsLvalueBit
-, <b>Flags</b> = Flags1 ^ RowMajorBit
+&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_transpose_3_01_matrix_type_01_4_01_4.html#a230a05dddb41460b73737a0a03875a7fab1184e5c20df6a6ae5313e68e2510cfa">FlagsLvalueBit</a> = is_lvalue&lt;MatrixType&gt;::value ? LvalueBit : 0
+, <a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_transpose_3_01_matrix_type_01_4_01_4.html#a230a05dddb41460b73737a0a03875a7fad9efac70f466e193d434a625891204fe">Flags0</a> = traits&lt;MatrixTypeNestedPlain&gt;::Flags &amp; ~(LvalueBit | NestByRefBit)
+, <a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_transpose_3_01_matrix_type_01_4_01_4.html#a230a05dddb41460b73737a0a03875a7fa8869a04c0d6a92675ecf87b23ea58c6b">Flags1</a> = Flags0 | FlagsLvalueBit
+, <a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_transpose_3_01_matrix_type_01_4_01_4.html#a230a05dddb41460b73737a0a03875a7faec2a145e0a62f0b6bffd9338d9ddb13a">Flags</a> = Flags1 ^ RowMajorBit
 , <br />
-&#160;&#160;<b>InnerStrideAtCompileTime</b> = inner_stride_at_compile_time&lt;MatrixType&gt;::ret
-, <b>OuterStrideAtCompileTime</b> = outer_stride_at_compile_time&lt;MatrixType&gt;::ret
+&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_transpose_3_01_matrix_type_01_4_01_4.html#a230a05dddb41460b73737a0a03875a7fa35cac228f015805d5aca313fe2b877c0">InnerStrideAtCompileTime</a> = inner_stride_at_compile_time&lt;MatrixType&gt;::ret
+, <a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_transpose_3_01_matrix_type_01_4_01_4.html#a230a05dddb41460b73737a0a03875a7fa6bb957e5001662f230c8ef0431cdc6dd">OuterStrideAtCompileTime</a> = outer_stride_at_compile_time&lt;MatrixType&gt;::ret
 <br />
  }</td></tr>
 <tr class="separator:a230a05dddb41460b73737a0a03875a7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af03354ff50cf117fe23a0caac756e3ee"><td class="memItemLeft" align="right" valign="top"><a id="af03354ff50cf117fe23a0caac756e3ee" name="af03354ff50cf117fe23a0caac756e3ee"></a>
-typedef <a class="el" href="struct_eigen_1_1internal_1_1ref__selector.html">ref_selector</a>&lt; MatrixType &gt;::type&#160;</td><td class="memItemRight" valign="bottom"><b>MatrixTypeNested</b></td></tr>
+<tr class="memitem:af03354ff50cf117fe23a0caac756e3ee"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_eigen_1_1internal_1_1ref__selector.html">ref_selector</a>&lt; MatrixType &gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_transpose_3_01_matrix_type_01_4_01_4.html#af03354ff50cf117fe23a0caac756e3ee">MatrixTypeNested</a></td></tr>
 <tr class="separator:af03354ff50cf117fe23a0caac756e3ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5b6205259511832d2015de8dcf8e40b"><td class="memItemLeft" align="right" valign="top"><a id="ae5b6205259511832d2015de8dcf8e40b" name="ae5b6205259511832d2015de8dcf8e40b"></a>
-typedef <a class="el" href="struct_eigen_1_1internal_1_1remove__reference.html">remove_reference</a>&lt; MatrixTypeNested &gt;::type&#160;</td><td class="memItemRight" valign="bottom"><b>MatrixTypeNestedPlain</b></td></tr>
+<tr class="memitem:ae5b6205259511832d2015de8dcf8e40b"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_eigen_1_1internal_1_1remove__reference.html">remove_reference</a>&lt; <a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_transpose_3_01_matrix_type_01_4_01_4.html#af03354ff50cf117fe23a0caac756e3ee">MatrixTypeNested</a> &gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_transpose_3_01_matrix_type_01_4_01_4.html#ae5b6205259511832d2015de8dcf8e40b">MatrixTypeNestedPlain</a></td></tr>
 <tr class="separator:ae5b6205259511832d2015de8dcf8e40b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="af03354ff50cf117fe23a0caac756e3ee" name="af03354ff50cf117fe23a0caac756e3ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af03354ff50cf117fe23a0caac756e3ee">&#9670;&nbsp;</a></span>MatrixTypeNested</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MatrixType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="struct_eigen_1_1internal_1_1ref__selector.html">ref_selector</a>&lt;MatrixType&gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a> <a class="el" href="struct_eigen_1_1internal_1_1traits.html">Eigen::internal::traits</a>&lt; <a class="el" href="class_eigen_1_1_transpose.html">Transpose</a>&lt; MatrixType &gt; &gt;::<a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_transpose_3_01_matrix_type_01_4_01_4.html#af03354ff50cf117fe23a0caac756e3ee">MatrixTypeNested</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae5b6205259511832d2015de8dcf8e40b" name="ae5b6205259511832d2015de8dcf8e40b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5b6205259511832d2015de8dcf8e40b">&#9670;&nbsp;</a></span>MatrixTypeNestedPlain</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MatrixType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="struct_eigen_1_1internal_1_1remove__reference.html">remove_reference</a>&lt;<a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_transpose_3_01_matrix_type_01_4_01_4.html#af03354ff50cf117fe23a0caac756e3ee">MatrixTypeNested</a>&gt;::<a class="el" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a> <a class="el" href="struct_eigen_1_1internal_1_1traits.html">Eigen::internal::traits</a>&lt; <a class="el" href="class_eigen_1_1_transpose.html">Transpose</a>&lt; MatrixType &gt; &gt;::<a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_transpose_3_01_matrix_type_01_4_01_4.html#ae5b6205259511832d2015de8dcf8e40b">MatrixTypeNestedPlain</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a230a05dddb41460b73737a0a03875a7f" name="a230a05dddb41460b73737a0a03875a7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a230a05dddb41460b73737a0a03875a7f">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MatrixType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a230a05dddb41460b73737a0a03875a7fa5e25bd02c9fe4c579d5ad7e397d858a8" name="a230a05dddb41460b73737a0a03875a7fa5e25bd02c9fe4c579d5ad7e397d858a8"></a>RowsAtCompileTime&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a230a05dddb41460b73737a0a03875a7fad5086c1a3191186d34974fe898e69668" name="a230a05dddb41460b73737a0a03875a7fad5086c1a3191186d34974fe898e69668"></a>ColsAtCompileTime&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a230a05dddb41460b73737a0a03875a7fa804b9e298366688d3b6bb760afa1ac41" name="a230a05dddb41460b73737a0a03875a7fa804b9e298366688d3b6bb760afa1ac41"></a>MaxRowsAtCompileTime&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a230a05dddb41460b73737a0a03875a7fa3acc64c5fdfc191ea7da3722c1c2a301" name="a230a05dddb41460b73737a0a03875a7fa3acc64c5fdfc191ea7da3722c1c2a301"></a>MaxColsAtCompileTime&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a230a05dddb41460b73737a0a03875a7fab1184e5c20df6a6ae5313e68e2510cfa" name="a230a05dddb41460b73737a0a03875a7fab1184e5c20df6a6ae5313e68e2510cfa"></a>FlagsLvalueBit&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a230a05dddb41460b73737a0a03875a7fad9efac70f466e193d434a625891204fe" name="a230a05dddb41460b73737a0a03875a7fad9efac70f466e193d434a625891204fe"></a>Flags0&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a230a05dddb41460b73737a0a03875a7fa8869a04c0d6a92675ecf87b23ea58c6b" name="a230a05dddb41460b73737a0a03875a7fa8869a04c0d6a92675ecf87b23ea58c6b"></a>Flags1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a230a05dddb41460b73737a0a03875a7faec2a145e0a62f0b6bffd9338d9ddb13a" name="a230a05dddb41460b73737a0a03875a7faec2a145e0a62f0b6bffd9338d9ddb13a"></a>Flags&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a230a05dddb41460b73737a0a03875a7fa35cac228f015805d5aca313fe2b877c0" name="a230a05dddb41460b73737a0a03875a7fa35cac228f015805d5aca313fe2b877c0"></a>InnerStrideAtCompileTime&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a230a05dddb41460b73737a0a03875a7fa6bb957e5001662f230c8ef0431cdc6dd" name="a230a05dddb41460b73737a0a03875a7fa6bb957e5001662f230c8ef0431cdc6dd"></a>OuterStrideAtCompileTime&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/eigeninclude/Eigen/src/Core/<a class="el" href="_transpose_8h_source.html">Transpose.h</a></li>
 </ul>
@@ -140,8 +202,8 @@ typedef <a class="el" href="struct_eigen_1_1internal_1_1remove__reference.html">
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespace_eigen.html">Eigen</a></li><li class="navelem"><b>internal</b></li><li class="navelem"><a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_transpose_3_01_matrix_type_01_4_01_4.html">traits&lt; Transpose&lt; MatrixType &gt; &gt;</a></li>
-    <li class="footer">Generated on Fri Oct 29 2021 07:12:27 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespace_eigen.html">Eigen</a></li><li class="navelem"><a class="el" href="namespace_eigen_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_transpose_3_01_matrix_type_01_4_01_4.html">traits&lt; Transpose&lt; MatrixType &gt; &gt;</a></li>
+    <li class="footer">Generated on Fri Oct 29 2021 22:10:06 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

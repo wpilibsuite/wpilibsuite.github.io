@@ -1,5 +1,6 @@
 var classfrc_1_1_robot_controller =
 [
+    [ "RobotController", "classfrc_1_1_robot_controller.html#a5456e9704430bc4446e65e2f891e429a", null ],
     [ "GetBatteryVoltage", "classfrc_1_1_robot_controller.html#a4b1e42e825583c82664a4ecc5d81b83f", null ],
     [ "GetBrownoutVoltage", "classfrc_1_1_robot_controller.html#a921d7fbfc4de347b75a6d95dde2d7ed5", null ],
     [ "GetCANStatus", "classfrc_1_1_robot_controller.html#a58e7b24ddd479303b64d2b9ccff255a9", null ],

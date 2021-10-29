@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-31-ga939cd9</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1-32-g2cb171f</span>
    </div>
   </td>
  </tr>
@@ -97,43 +97,389 @@ $(document).ready(function(){initNavTree('classfrc_1_1_camera_server_shared.html
   <div class="headertitle"><div class="title">frc::CameraServerShared Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_camera_server_shared_8h_source.html">cameraserver/CameraServerShared.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a627a6b39b8575403a2080b46627b15fe"><td class="memItemLeft" align="right" valign="top"><a id="a627a6b39b8575403a2080b46627b15fe" name="a627a6b39b8575403a2080b46627b15fe"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ReportUsbCamera</b> (int id)=0</td></tr>
+<tr class="memitem:a6965b69567abcc572cd61927269f72c2"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_camera_server_shared.html#a6965b69567abcc572cd61927269f72c2">~CameraServerShared</a> ()=default</td></tr>
+<tr class="separator:a6965b69567abcc572cd61927269f72c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a627a6b39b8575403a2080b46627b15fe"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_camera_server_shared.html#a627a6b39b8575403a2080b46627b15fe">ReportUsbCamera</a> (int id)=0</td></tr>
 <tr class="separator:a627a6b39b8575403a2080b46627b15fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fe61b0b3d8ad4e8468190fa39759368"><td class="memItemLeft" align="right" valign="top"><a id="a4fe61b0b3d8ad4e8468190fa39759368" name="a4fe61b0b3d8ad4e8468190fa39759368"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ReportAxisCamera</b> (int id)=0</td></tr>
+<tr class="memitem:a4fe61b0b3d8ad4e8468190fa39759368"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_camera_server_shared.html#a4fe61b0b3d8ad4e8468190fa39759368">ReportAxisCamera</a> (int id)=0</td></tr>
 <tr class="separator:a4fe61b0b3d8ad4e8468190fa39759368"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf4c5ac98cb56ea368a7a5eaed088605"><td class="memItemLeft" align="right" valign="top"><a id="acf4c5ac98cb56ea368a7a5eaed088605" name="acf4c5ac98cb56ea368a7a5eaed088605"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ReportVideoServer</b> (int id)=0</td></tr>
+<tr class="memitem:acf4c5ac98cb56ea368a7a5eaed088605"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_camera_server_shared.html#acf4c5ac98cb56ea368a7a5eaed088605">ReportVideoServer</a> (int id)=0</td></tr>
 <tr class="separator:acf4c5ac98cb56ea368a7a5eaed088605"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a55200c966195336e9f403ce1972f8b"><td class="memItemLeft" align="right" valign="top"><a id="a6a55200c966195336e9f403ce1972f8b" name="a6a55200c966195336e9f403ce1972f8b"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCameraServerErrorV</b> (fmt::string_view format, fmt::format_args args)=0</td></tr>
+<tr class="memitem:a6a55200c966195336e9f403ce1972f8b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_camera_server_shared.html#a6a55200c966195336e9f403ce1972f8b">SetCameraServerErrorV</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">fmt::string_view</a> <a class="el" href="xchar_8h.html#adbec664fb40387a823078cb103b965f9">format</a>, <a class="el" href="core_8h.html#abd8c737296655b44480da4fb422add24">fmt::format_args</a> args)=0</td></tr>
 <tr class="separator:a6a55200c966195336e9f403ce1972f8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a160778f34d2b35ffe5d0ffba53ece6f0"><td class="memItemLeft" align="right" valign="top"><a id="a160778f34d2b35ffe5d0ffba53ece6f0" name="a160778f34d2b35ffe5d0ffba53ece6f0"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetVisionRunnerErrorV</b> (fmt::string_view format, fmt::format_args args)=0</td></tr>
+<tr class="memitem:a160778f34d2b35ffe5d0ffba53ece6f0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_camera_server_shared.html#a160778f34d2b35ffe5d0ffba53ece6f0">SetVisionRunnerErrorV</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">fmt::string_view</a> <a class="el" href="xchar_8h.html#adbec664fb40387a823078cb103b965f9">format</a>, <a class="el" href="core_8h.html#abd8c737296655b44480da4fb422add24">fmt::format_args</a> args)=0</td></tr>
 <tr class="separator:a160778f34d2b35ffe5d0ffba53ece6f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6778a07717ba1ee701385f4f4b993eed"><td class="memItemLeft" align="right" valign="top"><a id="a6778a07717ba1ee701385f4f4b993eed" name="a6778a07717ba1ee701385f4f4b993eed"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ReportDriverStationErrorV</b> (fmt::string_view format, fmt::format_args args)=0</td></tr>
+<tr class="memitem:a6778a07717ba1ee701385f4f4b993eed"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_camera_server_shared.html#a6778a07717ba1ee701385f4f4b993eed">ReportDriverStationErrorV</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">fmt::string_view</a> <a class="el" href="xchar_8h.html#adbec664fb40387a823078cb103b965f9">format</a>, <a class="el" href="core_8h.html#abd8c737296655b44480da4fb422add24">fmt::format_args</a> args)=0</td></tr>
 <tr class="separator:a6778a07717ba1ee701385f4f4b993eed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90cb37209fb6cf9b1868432922e447b9"><td class="memItemLeft" align="right" valign="top"><a id="a90cb37209fb6cf9b1868432922e447b9" name="a90cb37209fb6cf9b1868432922e447b9"></a>
-virtual std::pair&lt; std::thread::id, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetRobotMainThreadId</b> () const =0</td></tr>
+<tr class="memitem:a90cb37209fb6cf9b1868432922e447b9"><td class="memItemLeft" align="right" valign="top">virtual std::pair&lt; std::thread::id, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_camera_server_shared.html#a90cb37209fb6cf9b1868432922e447b9">GetRobotMainThreadId</a> () const =0</td></tr>
 <tr class="separator:a90cb37209fb6cf9b1868432922e447b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb9d7719c22ddfcfe80575281f102d99"><td class="memTemplParams" colspan="2"><a id="afb9d7719c22ddfcfe80575281f102d99" name="afb9d7719c22ddfcfe80575281f102d99"></a>
-template&lt;typename S , typename... Args&gt; </td></tr>
-<tr class="memitem:afb9d7719c22ddfcfe80575281f102d99"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SetCameraServerError</b> (const S &amp;format, Args &amp;&amp;... args)</td></tr>
+<tr class="memitem:afb9d7719c22ddfcfe80575281f102d99"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a> , typename... Args&gt; </td></tr>
+<tr class="memitem:afb9d7719c22ddfcfe80575281f102d99"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classfrc_1_1_camera_server_shared.html#afb9d7719c22ddfcfe80575281f102d99">SetCameraServerError</a> (const <a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a> &amp;<a class="el" href="xchar_8h.html#adbec664fb40387a823078cb103b965f9">format</a>, Args &amp;&amp;... args)</td></tr>
 <tr class="separator:afb9d7719c22ddfcfe80575281f102d99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad65a3b56dde3181dd7f81bfb3329a772"><td class="memTemplParams" colspan="2"><a id="ad65a3b56dde3181dd7f81bfb3329a772" name="ad65a3b56dde3181dd7f81bfb3329a772"></a>
-template&lt;typename S , typename... Args&gt; </td></tr>
-<tr class="memitem:ad65a3b56dde3181dd7f81bfb3329a772"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SetVisionRunnerError</b> (const S &amp;format, Args &amp;&amp;... args)</td></tr>
+<tr class="memitem:ad65a3b56dde3181dd7f81bfb3329a772"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a> , typename... Args&gt; </td></tr>
+<tr class="memitem:ad65a3b56dde3181dd7f81bfb3329a772"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classfrc_1_1_camera_server_shared.html#ad65a3b56dde3181dd7f81bfb3329a772">SetVisionRunnerError</a> (const <a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a> &amp;<a class="el" href="xchar_8h.html#adbec664fb40387a823078cb103b965f9">format</a>, Args &amp;&amp;... args)</td></tr>
 <tr class="separator:ad65a3b56dde3181dd7f81bfb3329a772"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a112e7dc4294b719d0886786149246778"><td class="memTemplParams" colspan="2"><a id="a112e7dc4294b719d0886786149246778" name="a112e7dc4294b719d0886786149246778"></a>
-template&lt;typename S , typename... Args&gt; </td></tr>
-<tr class="memitem:a112e7dc4294b719d0886786149246778"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ReportDriverStationError</b> (const S &amp;format, Args &amp;&amp;... args)</td></tr>
+<tr class="memitem:a112e7dc4294b719d0886786149246778"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a> , typename... Args&gt; </td></tr>
+<tr class="memitem:a112e7dc4294b719d0886786149246778"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classfrc_1_1_camera_server_shared.html#a112e7dc4294b719d0886786149246778">ReportDriverStationError</a> (const <a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a> &amp;<a class="el" href="xchar_8h.html#adbec664fb40387a823078cb103b965f9">format</a>, Args &amp;&amp;... args)</td></tr>
 <tr class="separator:a112e7dc4294b719d0886786149246778"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a6965b69567abcc572cd61927269f72c2" name="a6965b69567abcc572cd61927269f72c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6965b69567abcc572cd61927269f72c2">&#9670;&nbsp;</a></span>~CameraServerShared()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual frc::CameraServerShared::~CameraServerShared </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a90cb37209fb6cf9b1868432922e447b9" name="a90cb37209fb6cf9b1868432922e447b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90cb37209fb6cf9b1868432922e447b9">&#9670;&nbsp;</a></span>GetRobotMainThreadId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::pair&lt; std::thread::id, bool &gt; frc::CameraServerShared::GetRobotMainThreadId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4fe61b0b3d8ad4e8468190fa39759368" name="a4fe61b0b3d8ad4e8468190fa39759368"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fe61b0b3d8ad4e8468190fa39759368">&#9670;&nbsp;</a></span>ReportAxisCamera()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void frc::CameraServerShared::ReportAxisCamera </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a112e7dc4294b719d0886786149246778" name="a112e7dc4294b719d0886786149246778"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a112e7dc4294b719d0886786149246778">&#9670;&nbsp;</a></span>ReportDriverStationError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a> , typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void frc::CameraServerShared::ReportDriverStationError </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a> &amp;&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6778a07717ba1ee701385f4f4b993eed" name="a6778a07717ba1ee701385f4f4b993eed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6778a07717ba1ee701385f4f4b993eed">&#9670;&nbsp;</a></span>ReportDriverStationErrorV()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void frc::CameraServerShared::ReportDriverStationErrorV </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">fmt::string_view</a>&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="core_8h.html#abd8c737296655b44480da4fb422add24">fmt::format_args</a>&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a627a6b39b8575403a2080b46627b15fe" name="a627a6b39b8575403a2080b46627b15fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a627a6b39b8575403a2080b46627b15fe">&#9670;&nbsp;</a></span>ReportUsbCamera()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void frc::CameraServerShared::ReportUsbCamera </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acf4c5ac98cb56ea368a7a5eaed088605" name="acf4c5ac98cb56ea368a7a5eaed088605"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf4c5ac98cb56ea368a7a5eaed088605">&#9670;&nbsp;</a></span>ReportVideoServer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void frc::CameraServerShared::ReportVideoServer </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afb9d7719c22ddfcfe80575281f102d99" name="afb9d7719c22ddfcfe80575281f102d99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb9d7719c22ddfcfe80575281f102d99">&#9670;&nbsp;</a></span>SetCameraServerError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a> , typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void frc::CameraServerShared::SetCameraServerError </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a> &amp;&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6a55200c966195336e9f403ce1972f8b" name="a6a55200c966195336e9f403ce1972f8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a55200c966195336e9f403ce1972f8b">&#9670;&nbsp;</a></span>SetCameraServerErrorV()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void frc::CameraServerShared::SetCameraServerErrorV </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">fmt::string_view</a>&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="core_8h.html#abd8c737296655b44480da4fb422add24">fmt::format_args</a>&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad65a3b56dde3181dd7f81bfb3329a772" name="ad65a3b56dde3181dd7f81bfb3329a772"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad65a3b56dde3181dd7f81bfb3329a772">&#9670;&nbsp;</a></span>SetVisionRunnerError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a> , typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void frc::CameraServerShared::SetVisionRunnerError </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a> &amp;&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a160778f34d2b35ffe5d0ffba53ece6f0" name="a160778f34d2b35ffe5d0ffba53ece6f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a160778f34d2b35ffe5d0ffba53ece6f0">&#9670;&nbsp;</a></span>SetVisionRunnerErrorV()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void frc::CameraServerShared::SetVisionRunnerErrorV </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">fmt::string_view</a>&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="core_8h.html#abd8c737296655b44480da4fb422add24">fmt::format_args</a>&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>cameraserver/<a class="el" href="_camera_server_shared_8h_source.html">CameraServerShared.h</a></li>
 </ul>
@@ -142,8 +488,8 @@ template&lt;typename S , typename... Args&gt; </td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1_camera_server_shared.html">CameraServerShared</a></li>
-    <li class="footer">Generated on Fri Oct 29 2021 07:12:28 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_camera_server_shared.html">CameraServerShared</a></li>
+    <li class="footer">Generated on Fri Oct 29 2021 22:10:07 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

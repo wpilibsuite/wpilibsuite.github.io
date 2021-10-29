@@ -3,15 +3,23 @@ var group__ntcore__cpp__api =
     [ "nt::RpcCall", "classnt_1_1_rpc_call.html", [
       [ "RpcCall", "classnt_1_1_rpc_call.html#aa6493da6a008bcc6115a8ec2a61a2fac", null ],
       [ "RpcCall", "classnt_1_1_rpc_call.html#a134ae7c121b6dd483c3295868d90d1f5", null ],
+      [ "RpcCall", "classnt_1_1_rpc_call.html#aa6337b942779162da46099a08b549e4b", null ],
+      [ "RpcCall", "classnt_1_1_rpc_call.html#a0464a89a36e00b3f6ebb2c84f62c1c0e", null ],
       [ "~RpcCall", "classnt_1_1_rpc_call.html#aee23105757db0dc09083315a86e492d5", null ],
       [ "CancelResult", "classnt_1_1_rpc_call.html#a34f19c639816582febfe271251ba5696", null ],
       [ "GetCall", "classnt_1_1_rpc_call.html#a5edd4ad6d14ea9634141f47998331cc0", null ],
       [ "GetEntry", "classnt_1_1_rpc_call.html#aeba7d6f024d351abd52c260491b73222", null ],
       [ "GetResult", "classnt_1_1_rpc_call.html#adaad76c8055ac78a34415d0c8737e50e", null ],
       [ "GetResult", "classnt_1_1_rpc_call.html#a1d4ca2c6c383e3344e45f029be8a2a52", null ],
-      [ "operator bool", "classnt_1_1_rpc_call.html#aa0bc6fd3a8849936265649d2aee22834", null ]
+      [ "operator bool", "classnt_1_1_rpc_call.html#aa0bc6fd3a8849936265649d2aee22834", null ],
+      [ "operator=", "classnt_1_1_rpc_call.html#af77b5040a0c1ecbb8f68b359e39fa9d2", null ],
+      [ "swap", "classnt_1_1_rpc_call.html#a5d014a3352a970fe9dbde9c40682c0f3", null ]
     ] ],
     [ "nt::Value", "classnt_1_1_value.html", [
+      [ "Value", "classnt_1_1_value.html#a0223a64ebeb9473f6adc43c9546d6305", null ],
+      [ "Value", "classnt_1_1_value.html#a53743e254fd5369dc32ec8bdc88eca04", null ],
+      [ "~Value", "classnt_1_1_value.html#afc0ee0426a5205f282fdb8244ec2f61b", null ],
+      [ "Value", "classnt_1_1_value.html#a41eb59e79fe54c443dfaa3b9ad63f6f4", null ],
       [ "GetBoolean", "classnt_1_1_value.html#ae1b222a23b97972a9916da60c9b9ece6", null ],
       [ "GetBooleanArray", "classnt_1_1_value.html#afd09768e5c8ad7c38b26404bf6b5e832", null ],
       [ "GetDouble", "classnt_1_1_value.html#a96571689d8b7aca5dbb01d3c2e79e960", null ],
@@ -47,9 +55,11 @@ var group__ntcore__cpp__api =
       [ "MakeStringArray", "classnt_1_1_value.html#a5c4228052d054071ef3a7a4066e4d6e9", null ],
       [ "MakeStringArray", "classnt_1_1_value.html#a37829f45cd9a14cfe1fd7dc43df87655", null ],
       [ "MakeStringArray", "classnt_1_1_value.html#a59ac440a9444c1c374e41cbbc5e2d3ff", null ],
+      [ "operator=", "classnt_1_1_value.html#ad0479e9d943b6f13dd05ef95d46b9c6f", null ],
       [ "time", "classnt_1_1_value.html#afa55ec69dc7df92803e979e367a42029", null ],
       [ "type", "classnt_1_1_value.html#a509a0bc56afac0feb3a0d11f72612770", null ],
-      [ "value", "classnt_1_1_value.html#aa11778407dd938a7227019a42ad85008", null ]
+      [ "value", "classnt_1_1_value.html#aa11778407dd938a7227019a42ad85008", null ],
+      [ "operator==", "classnt_1_1_value.html#a53d426708bd9b1a13c9e5b425063dcaa", null ]
     ] ],
     [ "nt::NetworkTableInstance", "classnt_1_1_network_table_instance.html", [
       [ "LogLevel", "classnt_1_1_network_table_instance.html#a88dfe5b82924f347c572cdada2707150", [
@@ -197,10 +207,12 @@ var group__ntcore__cpp__api =
       [ "SetString", "classnt_1_1_network_table_entry.html#a518a90dd9aca358fb8f8bfff709c4132", null ],
       [ "SetStringArray", "classnt_1_1_network_table_entry.html#ac23374d6cd453233ed2e6731427ef0a1", null ],
       [ "SetStringArray", "classnt_1_1_network_table_entry.html#a48fc4f1132a902e64cfb8fd119727615", null ],
-      [ "SetValue", "classnt_1_1_network_table_entry.html#a724c000a87563b6ddaa421cca4290f63", null ]
+      [ "SetValue", "classnt_1_1_network_table_entry.html#a724c000a87563b6ddaa421cca4290f63", null ],
+      [ "m_handle", "classnt_1_1_network_table_entry.html#aa572f030d9cbd67bbdf320d0c0be807f", null ]
     ] ],
     [ "nt::NetworkTable", "classnt_1_1_network_table.html", [
       [ "NetworkTable", "classnt_1_1_network_table.html#ad82f666270ef11b0c1c839b791857865", null ],
+      [ "~NetworkTable", "classnt_1_1_network_table.html#a52f82b78ec06985a58c5f4ee6a3b0270", null ],
       [ "AddEntryListener", "classnt_1_1_network_table.html#a427d305abba4c9a4aedd39830f8f5da1", null ],
       [ "AddEntryListener", "classnt_1_1_network_table.html#a15b26248d42376d52f9a497084bb1f73", null ],
       [ "AddSubTableListener", "classnt_1_1_network_table.html#a72599c5033c8a97467b323da853fbb95", null ],
@@ -229,6 +241,7 @@ var group__ntcore__cpp__api =
       [ "IsPersistent", "classnt_1_1_network_table.html#a67799d8acb9f259617333aea58f9baa1", null ],
       [ "LoadEntries", "classnt_1_1_network_table.html#ab50c9f3d0678bb4013508ebd39907f39", null ],
       [ "NormalizeKey", "classnt_1_1_network_table.html#a53893da2ccfea5138df1d5052b6dbb29", null ],
+      [ "NormalizeKey", "classnt_1_1_network_table.html#aff47d35eb815d688be12c8853fa53ae6", null ],
       [ "PutBoolean", "classnt_1_1_network_table.html#a62b0e2ad8439a6047372c36c27b1bfad", null ],
       [ "PutBooleanArray", "classnt_1_1_network_table.html#a53a4d23305c994e1da89b4919379d39d", null ],
       [ "PutNumber", "classnt_1_1_network_table.html#a15a85814c448e325c9ba6f0944bdc5d5", null ],
@@ -250,6 +263,7 @@ var group__ntcore__cpp__api =
       [ "SetDefaultValue", "classnt_1_1_network_table.html#a905fffafb489f0f76af78db1bb7033a8", null ],
       [ "SetFlags", "classnt_1_1_network_table.html#a78988917d1574281edce78532790569f", null ],
       [ "SetPersistent", "classnt_1_1_network_table.html#ada5f9eea21ce749b77664308f7f85a4f", null ],
+      [ "NetworkTableInstance", "classnt_1_1_network_table.html#a99d2f31dacd310fe96ffa03aa791fd85", null ],
       [ "PATH_SEPARATOR_CHAR", "classnt_1_1_network_table.html#ab0d5324921b216090f76b0c699bb0247", null ]
     ] ],
     [ "nt::NetworkTableValue", "group__ntcore__cpp__api.html#ga2bdfee8c11f9a4cfb1951cc824428725", null ],
@@ -262,5 +276,15 @@ var group__ntcore__cpp__api =
       [ "nt::EntryListenerFlags::kUpdate", "group__ntcore__cpp__api.html#gga18cdbe0a76922ec319acdb027ee88f29a0ccb0be5fa05a46c301a4f70d2a036cd", null ],
       [ "nt::EntryListenerFlags::kFlags", "group__ntcore__cpp__api.html#gga18cdbe0a76922ec319acdb027ee88f29afc5104febfc8a08878f3b5b589298a18", null ]
     ] ],
-    [ "nt::NetworkTableType", "group__ntcore__cpp__api.html#ga6389efeaed0733f40baa02cd3070a15c", null ]
+    [ "nt::NetworkTableType", "group__ntcore__cpp__api.html#ga6389efeaed0733f40baa02cd3070a15c", [
+      [ "nt::NetworkTableType::kUnassigned", "group__ntcore__cpp__api.html#gga6389efeaed0733f40baa02cd3070a15ca41ba12ed492ce20c3ff503a553ae85ea", null ],
+      [ "nt::NetworkTableType::kBoolean", "group__ntcore__cpp__api.html#gga6389efeaed0733f40baa02cd3070a15ca57f58630ea0106aa965e5bf61a49d02c", null ],
+      [ "nt::NetworkTableType::kDouble", "group__ntcore__cpp__api.html#gga6389efeaed0733f40baa02cd3070a15ca7fb3efa35444cd88d5a31dc125ca9c28", null ],
+      [ "nt::NetworkTableType::kString", "group__ntcore__cpp__api.html#gga6389efeaed0733f40baa02cd3070a15ca302e56d566a2561033b27c13680ea4b2", null ],
+      [ "nt::NetworkTableType::kRaw", "group__ntcore__cpp__api.html#gga6389efeaed0733f40baa02cd3070a15cabd440e87576477e8111424302a843c30", null ],
+      [ "nt::NetworkTableType::kBooleanArray", "group__ntcore__cpp__api.html#gga6389efeaed0733f40baa02cd3070a15ca74a2c02b2ecfbc77d60fa2f37958be6b", null ],
+      [ "nt::NetworkTableType::kDoubleArray", "group__ntcore__cpp__api.html#gga6389efeaed0733f40baa02cd3070a15ca3b0c09d2d3b86da2330c195889798d72", null ],
+      [ "nt::NetworkTableType::kStringArray", "group__ntcore__cpp__api.html#gga6389efeaed0733f40baa02cd3070a15cab77ee53359ad606360288eaba24142bf", null ],
+      [ "nt::NetworkTableType::kRpc", "group__ntcore__cpp__api.html#gga6389efeaed0733f40baa02cd3070a15ca6e7af25906963812381b145a083e6492", null ]
+    ] ]
 ];
