@@ -30,414 +30,422 @@
 <span class="sourceLineNo">018</span><a id="line.18"></a>
 <span class="sourceLineNo">019</span><a id="line.19">/**</a>
 <span class="sourceLineNo">020</span><a id="line.20"> * A Kalman filter combines predictions from a model and measurements to give an estimate of the</a>
-<span class="sourceLineNo">021</span><a id="line.21"> * true ystem state. This is useful because many states cannot be measured directly as a result of</a>
+<span class="sourceLineNo">021</span><a id="line.21"> * true system state. This is useful because many states cannot be measured directly as a result of</a>
 <span class="sourceLineNo">022</span><a id="line.22"> * sensor noise, or because the state is "hidden".</a>
 <span class="sourceLineNo">023</span><a id="line.23"> *</a>
-<span class="sourceLineNo">024</span><a id="line.24"> * &lt;p&gt;The Unscented Kalman filter is similar to the {@link KalmanFilter Kalman filter}, except that</a>
-<span class="sourceLineNo">025</span><a id="line.25"> * it propagates carefully chosen points called sigma points through the non-linear model to obtain</a>
-<span class="sourceLineNo">026</span><a id="line.26"> * an estimate of the true covariance (as opposed to a linearized version of it). This means that</a>
-<span class="sourceLineNo">027</span><a id="line.27"> * the UKF works with nonlinear systems.</a>
-<span class="sourceLineNo">028</span><a id="line.28"> */</a>
-<span class="sourceLineNo">029</span><a id="line.29">@SuppressWarnings({"MemberName", "ClassTypeParameterName"})</a>
-<span class="sourceLineNo">030</span><a id="line.30">public class UnscentedKalmanFilter&lt;States extends Num, Inputs extends Num, Outputs extends Num&gt;</a>
-<span class="sourceLineNo">031</span><a id="line.31">    implements KalmanTypeFilter&lt;States, Inputs, Outputs&gt; {</a>
-<span class="sourceLineNo">032</span><a id="line.32">  private final Nat&lt;States&gt; m_states;</a>
-<span class="sourceLineNo">033</span><a id="line.33">  private final Nat&lt;Outputs&gt; m_outputs;</a>
-<span class="sourceLineNo">034</span><a id="line.34"></a>
-<span class="sourceLineNo">035</span><a id="line.35">  private final BiFunction&lt;Matrix&lt;States, N1&gt;, Matrix&lt;Inputs, N1&gt;, Matrix&lt;States, N1&gt;&gt; m_f;</a>
-<span class="sourceLineNo">036</span><a id="line.36">  private final BiFunction&lt;Matrix&lt;States, N1&gt;, Matrix&lt;Inputs, N1&gt;, Matrix&lt;Outputs, N1&gt;&gt; m_h;</a>
-<span class="sourceLineNo">037</span><a id="line.37"></a>
-<span class="sourceLineNo">038</span><a id="line.38">  private BiFunction&lt;Matrix&lt;States, ?&gt;, Matrix&lt;?, N1&gt;, Matrix&lt;States, N1&gt;&gt; m_meanFuncX;</a>
-<span class="sourceLineNo">039</span><a id="line.39">  private BiFunction&lt;Matrix&lt;Outputs, ?&gt;, Matrix&lt;?, N1&gt;, Matrix&lt;Outputs, N1&gt;&gt; m_meanFuncY;</a>
-<span class="sourceLineNo">040</span><a id="line.40">  private BiFunction&lt;Matrix&lt;States, N1&gt;, Matrix&lt;States, N1&gt;, Matrix&lt;States, N1&gt;&gt; m_residualFuncX;</a>
-<span class="sourceLineNo">041</span><a id="line.41">  private BiFunction&lt;Matrix&lt;Outputs, N1&gt;, Matrix&lt;Outputs, N1&gt;, Matrix&lt;Outputs, N1&gt;&gt; m_residualFuncY;</a>
-<span class="sourceLineNo">042</span><a id="line.42">  private BiFunction&lt;Matrix&lt;States, N1&gt;, Matrix&lt;States, N1&gt;, Matrix&lt;States, N1&gt;&gt; m_addFuncX;</a>
-<span class="sourceLineNo">043</span><a id="line.43"></a>
-<span class="sourceLineNo">044</span><a id="line.44">  private Matrix&lt;States, N1&gt; m_xHat;</a>
-<span class="sourceLineNo">045</span><a id="line.45">  private Matrix&lt;States, States&gt; m_P;</a>
-<span class="sourceLineNo">046</span><a id="line.46">  private final Matrix&lt;States, States&gt; m_contQ;</a>
-<span class="sourceLineNo">047</span><a id="line.47">  private final Matrix&lt;Outputs, Outputs&gt; m_contR;</a>
-<span class="sourceLineNo">048</span><a id="line.48">  private Matrix&lt;States, ?&gt; m_sigmasF;</a>
-<span class="sourceLineNo">049</span><a id="line.49">  private double m_dtSeconds;</a>
-<span class="sourceLineNo">050</span><a id="line.50"></a>
-<span class="sourceLineNo">051</span><a id="line.51">  private final MerweScaledSigmaPoints&lt;States&gt; m_pts;</a>
-<span class="sourceLineNo">052</span><a id="line.52"></a>
-<span class="sourceLineNo">053</span><a id="line.53">  /**</a>
-<span class="sourceLineNo">054</span><a id="line.54">   * Constructs an Unscented Kalman Filter.</a>
-<span class="sourceLineNo">055</span><a id="line.55">   *</a>
-<span class="sourceLineNo">056</span><a id="line.56">   * @param states A Nat representing the number of states.</a>
-<span class="sourceLineNo">057</span><a id="line.57">   * @param outputs A Nat representing the number of outputs.</a>
-<span class="sourceLineNo">058</span><a id="line.58">   * @param f A vector-valued function of x and u that returns the derivative of the state vector.</a>
-<span class="sourceLineNo">059</span><a id="line.59">   * @param h A vector-valued function of x and u that returns the measurement vector.</a>
-<span class="sourceLineNo">060</span><a id="line.60">   * @param stateStdDevs Standard deviations of model states.</a>
-<span class="sourceLineNo">061</span><a id="line.61">   * @param measurementStdDevs Standard deviations of measurements.</a>
-<span class="sourceLineNo">062</span><a id="line.62">   * @param nominalDtSeconds Nominal discretization timestep.</a>
-<span class="sourceLineNo">063</span><a id="line.63">   */</a>
-<span class="sourceLineNo">064</span><a id="line.64">  @SuppressWarnings("LambdaParameterName")</a>
-<span class="sourceLineNo">065</span><a id="line.65">  public UnscentedKalmanFilter(</a>
-<span class="sourceLineNo">066</span><a id="line.66">      Nat&lt;States&gt; states,</a>
-<span class="sourceLineNo">067</span><a id="line.67">      Nat&lt;Outputs&gt; outputs,</a>
-<span class="sourceLineNo">068</span><a id="line.68">      BiFunction&lt;Matrix&lt;States, N1&gt;, Matrix&lt;Inputs, N1&gt;, Matrix&lt;States, N1&gt;&gt; f,</a>
-<span class="sourceLineNo">069</span><a id="line.69">      BiFunction&lt;Matrix&lt;States, N1&gt;, Matrix&lt;Inputs, N1&gt;, Matrix&lt;Outputs, N1&gt;&gt; h,</a>
-<span class="sourceLineNo">070</span><a id="line.70">      Matrix&lt;States, N1&gt; stateStdDevs,</a>
-<span class="sourceLineNo">071</span><a id="line.71">      Matrix&lt;Outputs, N1&gt; measurementStdDevs,</a>
-<span class="sourceLineNo">072</span><a id="line.72">      double nominalDtSeconds) {</a>
-<span class="sourceLineNo">073</span><a id="line.73">    this(</a>
-<span class="sourceLineNo">074</span><a id="line.74">        states,</a>
-<span class="sourceLineNo">075</span><a id="line.75">        outputs,</a>
-<span class="sourceLineNo">076</span><a id="line.76">        f,</a>
-<span class="sourceLineNo">077</span><a id="line.77">        h,</a>
-<span class="sourceLineNo">078</span><a id="line.78">        stateStdDevs,</a>
-<span class="sourceLineNo">079</span><a id="line.79">        measurementStdDevs,</a>
-<span class="sourceLineNo">080</span><a id="line.80">        (sigmas, Wm) -&gt; sigmas.times(Matrix.changeBoundsUnchecked(Wm)),</a>
-<span class="sourceLineNo">081</span><a id="line.81">        (sigmas, Wm) -&gt; sigmas.times(Matrix.changeBoundsUnchecked(Wm)),</a>
-<span class="sourceLineNo">082</span><a id="line.82">        Matrix::minus,</a>
-<span class="sourceLineNo">083</span><a id="line.83">        Matrix::minus,</a>
-<span class="sourceLineNo">084</span><a id="line.84">        Matrix::plus,</a>
-<span class="sourceLineNo">085</span><a id="line.85">        nominalDtSeconds);</a>
-<span class="sourceLineNo">086</span><a id="line.86">  }</a>
-<span class="sourceLineNo">087</span><a id="line.87"></a>
-<span class="sourceLineNo">088</span><a id="line.88">  /**</a>
-<span class="sourceLineNo">089</span><a id="line.89">   * Constructs an unscented Kalman filter with custom mean, residual, and addition functions. Using</a>
-<span class="sourceLineNo">090</span><a id="line.90">   * custom functions for arithmetic can be useful if you have angles in the state or measurements,</a>
-<span class="sourceLineNo">091</span><a id="line.91">   * because they allow you to correctly account for the modular nature of angle arithmetic.</a>
-<span class="sourceLineNo">092</span><a id="line.92">   *</a>
-<span class="sourceLineNo">093</span><a id="line.93">   * @param states A Nat representing the number of states.</a>
-<span class="sourceLineNo">094</span><a id="line.94">   * @param outputs A Nat representing the number of outputs.</a>
-<span class="sourceLineNo">095</span><a id="line.95">   * @param f A vector-valued function of x and u that returns the derivative of the state vector.</a>
-<span class="sourceLineNo">096</span><a id="line.96">   * @param h A vector-valued function of x and u that returns the measurement vector.</a>
-<span class="sourceLineNo">097</span><a id="line.97">   * @param stateStdDevs Standard deviations of model states.</a>
-<span class="sourceLineNo">098</span><a id="line.98">   * @param measurementStdDevs Standard deviations of measurements.</a>
-<span class="sourceLineNo">099</span><a id="line.99">   * @param meanFuncX A function that computes the mean of 2 * States + 1 state vectors using a</a>
-<span class="sourceLineNo">100</span><a id="line.100">   *     given set of weights.</a>
-<span class="sourceLineNo">101</span><a id="line.101">   * @param meanFuncY A function that computes the mean of 2 * States + 1 measurement vectors using</a>
-<span class="sourceLineNo">102</span><a id="line.102">   *     a given set of weights.</a>
-<span class="sourceLineNo">103</span><a id="line.103">   * @param residualFuncX A function that computes the residual of two state vectors (i.e. it</a>
-<span class="sourceLineNo">104</span><a id="line.104">   *     subtracts them.)</a>
-<span class="sourceLineNo">105</span><a id="line.105">   * @param residualFuncY A function that computes the residual of two measurement vectors (i.e. it</a>
-<span class="sourceLineNo">106</span><a id="line.106">   *     subtracts them.)</a>
-<span class="sourceLineNo">107</span><a id="line.107">   * @param addFuncX A function that adds two state vectors.</a>
-<span class="sourceLineNo">108</span><a id="line.108">   * @param nominalDtSeconds Nominal discretization timestep.</a>
-<span class="sourceLineNo">109</span><a id="line.109">   */</a>
-<span class="sourceLineNo">110</span><a id="line.110">  @SuppressWarnings("ParameterName")</a>
-<span class="sourceLineNo">111</span><a id="line.111">  public UnscentedKalmanFilter(</a>
-<span class="sourceLineNo">112</span><a id="line.112">      Nat&lt;States&gt; states,</a>
-<span class="sourceLineNo">113</span><a id="line.113">      Nat&lt;Outputs&gt; outputs,</a>
-<span class="sourceLineNo">114</span><a id="line.114">      BiFunction&lt;Matrix&lt;States, N1&gt;, Matrix&lt;Inputs, N1&gt;, Matrix&lt;States, N1&gt;&gt; f,</a>
-<span class="sourceLineNo">115</span><a id="line.115">      BiFunction&lt;Matrix&lt;States, N1&gt;, Matrix&lt;Inputs, N1&gt;, Matrix&lt;Outputs, N1&gt;&gt; h,</a>
-<span class="sourceLineNo">116</span><a id="line.116">      Matrix&lt;States, N1&gt; stateStdDevs,</a>
-<span class="sourceLineNo">117</span><a id="line.117">      Matrix&lt;Outputs, N1&gt; measurementStdDevs,</a>
-<span class="sourceLineNo">118</span><a id="line.118">      BiFunction&lt;Matrix&lt;States, ?&gt;, Matrix&lt;?, N1&gt;, Matrix&lt;States, N1&gt;&gt; meanFuncX,</a>
-<span class="sourceLineNo">119</span><a id="line.119">      BiFunction&lt;Matrix&lt;Outputs, ?&gt;, Matrix&lt;?, N1&gt;, Matrix&lt;Outputs, N1&gt;&gt; meanFuncY,</a>
-<span class="sourceLineNo">120</span><a id="line.120">      BiFunction&lt;Matrix&lt;States, N1&gt;, Matrix&lt;States, N1&gt;, Matrix&lt;States, N1&gt;&gt; residualFuncX,</a>
-<span class="sourceLineNo">121</span><a id="line.121">      BiFunction&lt;Matrix&lt;Outputs, N1&gt;, Matrix&lt;Outputs, N1&gt;, Matrix&lt;Outputs, N1&gt;&gt; residualFuncY,</a>
-<span class="sourceLineNo">122</span><a id="line.122">      BiFunction&lt;Matrix&lt;States, N1&gt;, Matrix&lt;States, N1&gt;, Matrix&lt;States, N1&gt;&gt; addFuncX,</a>
-<span class="sourceLineNo">123</span><a id="line.123">      double nominalDtSeconds) {</a>
-<span class="sourceLineNo">124</span><a id="line.124">    this.m_states = states;</a>
-<span class="sourceLineNo">125</span><a id="line.125">    this.m_outputs = outputs;</a>
-<span class="sourceLineNo">126</span><a id="line.126"></a>
-<span class="sourceLineNo">127</span><a id="line.127">    m_f = f;</a>
-<span class="sourceLineNo">128</span><a id="line.128">    m_h = h;</a>
-<span class="sourceLineNo">129</span><a id="line.129"></a>
-<span class="sourceLineNo">130</span><a id="line.130">    m_meanFuncX = meanFuncX;</a>
-<span class="sourceLineNo">131</span><a id="line.131">    m_meanFuncY = meanFuncY;</a>
-<span class="sourceLineNo">132</span><a id="line.132">    m_residualFuncX = residualFuncX;</a>
-<span class="sourceLineNo">133</span><a id="line.133">    m_residualFuncY = residualFuncY;</a>
-<span class="sourceLineNo">134</span><a id="line.134">    m_addFuncX = addFuncX;</a>
-<span class="sourceLineNo">135</span><a id="line.135"></a>
-<span class="sourceLineNo">136</span><a id="line.136">    m_dtSeconds = nominalDtSeconds;</a>
+<span class="sourceLineNo">024</span><a id="line.24"> * &lt;p&gt;Kalman filters use a K gain matrix to determine whether to trust the model or measurements</a>
+<span class="sourceLineNo">025</span><a id="line.25"> * more. Kalman filter theory uses statistics to compute an optimal K gain which minimizes the sum</a>
+<span class="sourceLineNo">026</span><a id="line.26"> * of squares error in the state estimate. This K gain is used to correct the state estimate by some</a>
+<span class="sourceLineNo">027</span><a id="line.27"> * amount of the difference between the actual measurements and the measurements predicted by the</a>
+<span class="sourceLineNo">028</span><a id="line.28"> * model.</a>
+<span class="sourceLineNo">029</span><a id="line.29"> *</a>
+<span class="sourceLineNo">030</span><a id="line.30"> * &lt;p&gt;An unscented Kalman filter uses nonlinear state and measurement models. It propagates the</a>
+<span class="sourceLineNo">031</span><a id="line.31"> * error covariance using sigma points chosen to approximate the true probability distribution.</a>
+<span class="sourceLineNo">032</span><a id="line.32"> *</a>
+<span class="sourceLineNo">033</span><a id="line.33"> * &lt;p&gt;For more on the underlying math, read</a>
+<span class="sourceLineNo">034</span><a id="line.34"> * https://file.tavsys.net/control/controls-engineering-in-frc.pdf chapter 9 "Stochastic control</a>
+<span class="sourceLineNo">035</span><a id="line.35"> * theory".</a>
+<span class="sourceLineNo">036</span><a id="line.36"> */</a>
+<span class="sourceLineNo">037</span><a id="line.37">@SuppressWarnings({"MemberName", "ClassTypeParameterName"})</a>
+<span class="sourceLineNo">038</span><a id="line.38">public class UnscentedKalmanFilter&lt;States extends Num, Inputs extends Num, Outputs extends Num&gt;</a>
+<span class="sourceLineNo">039</span><a id="line.39">    implements KalmanTypeFilter&lt;States, Inputs, Outputs&gt; {</a>
+<span class="sourceLineNo">040</span><a id="line.40">  private final Nat&lt;States&gt; m_states;</a>
+<span class="sourceLineNo">041</span><a id="line.41">  private final Nat&lt;Outputs&gt; m_outputs;</a>
+<span class="sourceLineNo">042</span><a id="line.42"></a>
+<span class="sourceLineNo">043</span><a id="line.43">  private final BiFunction&lt;Matrix&lt;States, N1&gt;, Matrix&lt;Inputs, N1&gt;, Matrix&lt;States, N1&gt;&gt; m_f;</a>
+<span class="sourceLineNo">044</span><a id="line.44">  private final BiFunction&lt;Matrix&lt;States, N1&gt;, Matrix&lt;Inputs, N1&gt;, Matrix&lt;Outputs, N1&gt;&gt; m_h;</a>
+<span class="sourceLineNo">045</span><a id="line.45"></a>
+<span class="sourceLineNo">046</span><a id="line.46">  private BiFunction&lt;Matrix&lt;States, ?&gt;, Matrix&lt;?, N1&gt;, Matrix&lt;States, N1&gt;&gt; m_meanFuncX;</a>
+<span class="sourceLineNo">047</span><a id="line.47">  private BiFunction&lt;Matrix&lt;Outputs, ?&gt;, Matrix&lt;?, N1&gt;, Matrix&lt;Outputs, N1&gt;&gt; m_meanFuncY;</a>
+<span class="sourceLineNo">048</span><a id="line.48">  private BiFunction&lt;Matrix&lt;States, N1&gt;, Matrix&lt;States, N1&gt;, Matrix&lt;States, N1&gt;&gt; m_residualFuncX;</a>
+<span class="sourceLineNo">049</span><a id="line.49">  private BiFunction&lt;Matrix&lt;Outputs, N1&gt;, Matrix&lt;Outputs, N1&gt;, Matrix&lt;Outputs, N1&gt;&gt; m_residualFuncY;</a>
+<span class="sourceLineNo">050</span><a id="line.50">  private BiFunction&lt;Matrix&lt;States, N1&gt;, Matrix&lt;States, N1&gt;, Matrix&lt;States, N1&gt;&gt; m_addFuncX;</a>
+<span class="sourceLineNo">051</span><a id="line.51"></a>
+<span class="sourceLineNo">052</span><a id="line.52">  private Matrix&lt;States, N1&gt; m_xHat;</a>
+<span class="sourceLineNo">053</span><a id="line.53">  private Matrix&lt;States, States&gt; m_P;</a>
+<span class="sourceLineNo">054</span><a id="line.54">  private final Matrix&lt;States, States&gt; m_contQ;</a>
+<span class="sourceLineNo">055</span><a id="line.55">  private final Matrix&lt;Outputs, Outputs&gt; m_contR;</a>
+<span class="sourceLineNo">056</span><a id="line.56">  private Matrix&lt;States, ?&gt; m_sigmasF;</a>
+<span class="sourceLineNo">057</span><a id="line.57">  private double m_dtSeconds;</a>
+<span class="sourceLineNo">058</span><a id="line.58"></a>
+<span class="sourceLineNo">059</span><a id="line.59">  private final MerweScaledSigmaPoints&lt;States&gt; m_pts;</a>
+<span class="sourceLineNo">060</span><a id="line.60"></a>
+<span class="sourceLineNo">061</span><a id="line.61">  /**</a>
+<span class="sourceLineNo">062</span><a id="line.62">   * Constructs an Unscented Kalman Filter.</a>
+<span class="sourceLineNo">063</span><a id="line.63">   *</a>
+<span class="sourceLineNo">064</span><a id="line.64">   * @param states A Nat representing the number of states.</a>
+<span class="sourceLineNo">065</span><a id="line.65">   * @param outputs A Nat representing the number of outputs.</a>
+<span class="sourceLineNo">066</span><a id="line.66">   * @param f A vector-valued function of x and u that returns the derivative of the state vector.</a>
+<span class="sourceLineNo">067</span><a id="line.67">   * @param h A vector-valued function of x and u that returns the measurement vector.</a>
+<span class="sourceLineNo">068</span><a id="line.68">   * @param stateStdDevs Standard deviations of model states.</a>
+<span class="sourceLineNo">069</span><a id="line.69">   * @param measurementStdDevs Standard deviations of measurements.</a>
+<span class="sourceLineNo">070</span><a id="line.70">   * @param nominalDtSeconds Nominal discretization timestep.</a>
+<span class="sourceLineNo">071</span><a id="line.71">   */</a>
+<span class="sourceLineNo">072</span><a id="line.72">  @SuppressWarnings("LambdaParameterName")</a>
+<span class="sourceLineNo">073</span><a id="line.73">  public UnscentedKalmanFilter(</a>
+<span class="sourceLineNo">074</span><a id="line.74">      Nat&lt;States&gt; states,</a>
+<span class="sourceLineNo">075</span><a id="line.75">      Nat&lt;Outputs&gt; outputs,</a>
+<span class="sourceLineNo">076</span><a id="line.76">      BiFunction&lt;Matrix&lt;States, N1&gt;, Matrix&lt;Inputs, N1&gt;, Matrix&lt;States, N1&gt;&gt; f,</a>
+<span class="sourceLineNo">077</span><a id="line.77">      BiFunction&lt;Matrix&lt;States, N1&gt;, Matrix&lt;Inputs, N1&gt;, Matrix&lt;Outputs, N1&gt;&gt; h,</a>
+<span class="sourceLineNo">078</span><a id="line.78">      Matrix&lt;States, N1&gt; stateStdDevs,</a>
+<span class="sourceLineNo">079</span><a id="line.79">      Matrix&lt;Outputs, N1&gt; measurementStdDevs,</a>
+<span class="sourceLineNo">080</span><a id="line.80">      double nominalDtSeconds) {</a>
+<span class="sourceLineNo">081</span><a id="line.81">    this(</a>
+<span class="sourceLineNo">082</span><a id="line.82">        states,</a>
+<span class="sourceLineNo">083</span><a id="line.83">        outputs,</a>
+<span class="sourceLineNo">084</span><a id="line.84">        f,</a>
+<span class="sourceLineNo">085</span><a id="line.85">        h,</a>
+<span class="sourceLineNo">086</span><a id="line.86">        stateStdDevs,</a>
+<span class="sourceLineNo">087</span><a id="line.87">        measurementStdDevs,</a>
+<span class="sourceLineNo">088</span><a id="line.88">        (sigmas, Wm) -&gt; sigmas.times(Matrix.changeBoundsUnchecked(Wm)),</a>
+<span class="sourceLineNo">089</span><a id="line.89">        (sigmas, Wm) -&gt; sigmas.times(Matrix.changeBoundsUnchecked(Wm)),</a>
+<span class="sourceLineNo">090</span><a id="line.90">        Matrix::minus,</a>
+<span class="sourceLineNo">091</span><a id="line.91">        Matrix::minus,</a>
+<span class="sourceLineNo">092</span><a id="line.92">        Matrix::plus,</a>
+<span class="sourceLineNo">093</span><a id="line.93">        nominalDtSeconds);</a>
+<span class="sourceLineNo">094</span><a id="line.94">  }</a>
+<span class="sourceLineNo">095</span><a id="line.95"></a>
+<span class="sourceLineNo">096</span><a id="line.96">  /**</a>
+<span class="sourceLineNo">097</span><a id="line.97">   * Constructs an unscented Kalman filter with custom mean, residual, and addition functions. Using</a>
+<span class="sourceLineNo">098</span><a id="line.98">   * custom functions for arithmetic can be useful if you have angles in the state or measurements,</a>
+<span class="sourceLineNo">099</span><a id="line.99">   * because they allow you to correctly account for the modular nature of angle arithmetic.</a>
+<span class="sourceLineNo">100</span><a id="line.100">   *</a>
+<span class="sourceLineNo">101</span><a id="line.101">   * @param states A Nat representing the number of states.</a>
+<span class="sourceLineNo">102</span><a id="line.102">   * @param outputs A Nat representing the number of outputs.</a>
+<span class="sourceLineNo">103</span><a id="line.103">   * @param f A vector-valued function of x and u that returns the derivative of the state vector.</a>
+<span class="sourceLineNo">104</span><a id="line.104">   * @param h A vector-valued function of x and u that returns the measurement vector.</a>
+<span class="sourceLineNo">105</span><a id="line.105">   * @param stateStdDevs Standard deviations of model states.</a>
+<span class="sourceLineNo">106</span><a id="line.106">   * @param measurementStdDevs Standard deviations of measurements.</a>
+<span class="sourceLineNo">107</span><a id="line.107">   * @param meanFuncX A function that computes the mean of 2 * States + 1 state vectors using a</a>
+<span class="sourceLineNo">108</span><a id="line.108">   *     given set of weights.</a>
+<span class="sourceLineNo">109</span><a id="line.109">   * @param meanFuncY A function that computes the mean of 2 * States + 1 measurement vectors using</a>
+<span class="sourceLineNo">110</span><a id="line.110">   *     a given set of weights.</a>
+<span class="sourceLineNo">111</span><a id="line.111">   * @param residualFuncX A function that computes the residual of two state vectors (i.e. it</a>
+<span class="sourceLineNo">112</span><a id="line.112">   *     subtracts them.)</a>
+<span class="sourceLineNo">113</span><a id="line.113">   * @param residualFuncY A function that computes the residual of two measurement vectors (i.e. it</a>
+<span class="sourceLineNo">114</span><a id="line.114">   *     subtracts them.)</a>
+<span class="sourceLineNo">115</span><a id="line.115">   * @param addFuncX A function that adds two state vectors.</a>
+<span class="sourceLineNo">116</span><a id="line.116">   * @param nominalDtSeconds Nominal discretization timestep.</a>
+<span class="sourceLineNo">117</span><a id="line.117">   */</a>
+<span class="sourceLineNo">118</span><a id="line.118">  @SuppressWarnings("ParameterName")</a>
+<span class="sourceLineNo">119</span><a id="line.119">  public UnscentedKalmanFilter(</a>
+<span class="sourceLineNo">120</span><a id="line.120">      Nat&lt;States&gt; states,</a>
+<span class="sourceLineNo">121</span><a id="line.121">      Nat&lt;Outputs&gt; outputs,</a>
+<span class="sourceLineNo">122</span><a id="line.122">      BiFunction&lt;Matrix&lt;States, N1&gt;, Matrix&lt;Inputs, N1&gt;, Matrix&lt;States, N1&gt;&gt; f,</a>
+<span class="sourceLineNo">123</span><a id="line.123">      BiFunction&lt;Matrix&lt;States, N1&gt;, Matrix&lt;Inputs, N1&gt;, Matrix&lt;Outputs, N1&gt;&gt; h,</a>
+<span class="sourceLineNo">124</span><a id="line.124">      Matrix&lt;States, N1&gt; stateStdDevs,</a>
+<span class="sourceLineNo">125</span><a id="line.125">      Matrix&lt;Outputs, N1&gt; measurementStdDevs,</a>
+<span class="sourceLineNo">126</span><a id="line.126">      BiFunction&lt;Matrix&lt;States, ?&gt;, Matrix&lt;?, N1&gt;, Matrix&lt;States, N1&gt;&gt; meanFuncX,</a>
+<span class="sourceLineNo">127</span><a id="line.127">      BiFunction&lt;Matrix&lt;Outputs, ?&gt;, Matrix&lt;?, N1&gt;, Matrix&lt;Outputs, N1&gt;&gt; meanFuncY,</a>
+<span class="sourceLineNo">128</span><a id="line.128">      BiFunction&lt;Matrix&lt;States, N1&gt;, Matrix&lt;States, N1&gt;, Matrix&lt;States, N1&gt;&gt; residualFuncX,</a>
+<span class="sourceLineNo">129</span><a id="line.129">      BiFunction&lt;Matrix&lt;Outputs, N1&gt;, Matrix&lt;Outputs, N1&gt;, Matrix&lt;Outputs, N1&gt;&gt; residualFuncY,</a>
+<span class="sourceLineNo">130</span><a id="line.130">      BiFunction&lt;Matrix&lt;States, N1&gt;, Matrix&lt;States, N1&gt;, Matrix&lt;States, N1&gt;&gt; addFuncX,</a>
+<span class="sourceLineNo">131</span><a id="line.131">      double nominalDtSeconds) {</a>
+<span class="sourceLineNo">132</span><a id="line.132">    this.m_states = states;</a>
+<span class="sourceLineNo">133</span><a id="line.133">    this.m_outputs = outputs;</a>
+<span class="sourceLineNo">134</span><a id="line.134"></a>
+<span class="sourceLineNo">135</span><a id="line.135">    m_f = f;</a>
+<span class="sourceLineNo">136</span><a id="line.136">    m_h = h;</a>
 <span class="sourceLineNo">137</span><a id="line.137"></a>
-<span class="sourceLineNo">138</span><a id="line.138">    m_contQ = StateSpaceUtil.makeCovarianceMatrix(states, stateStdDevs);</a>
-<span class="sourceLineNo">139</span><a id="line.139">    m_contR = StateSpaceUtil.makeCovarianceMatrix(outputs, measurementStdDevs);</a>
-<span class="sourceLineNo">140</span><a id="line.140"></a>
-<span class="sourceLineNo">141</span><a id="line.141">    m_pts = new MerweScaledSigmaPoints&lt;&gt;(states);</a>
-<span class="sourceLineNo">142</span><a id="line.142"></a>
-<span class="sourceLineNo">143</span><a id="line.143">    reset();</a>
-<span class="sourceLineNo">144</span><a id="line.144">  }</a>
+<span class="sourceLineNo">138</span><a id="line.138">    m_meanFuncX = meanFuncX;</a>
+<span class="sourceLineNo">139</span><a id="line.139">    m_meanFuncY = meanFuncY;</a>
+<span class="sourceLineNo">140</span><a id="line.140">    m_residualFuncX = residualFuncX;</a>
+<span class="sourceLineNo">141</span><a id="line.141">    m_residualFuncY = residualFuncY;</a>
+<span class="sourceLineNo">142</span><a id="line.142">    m_addFuncX = addFuncX;</a>
+<span class="sourceLineNo">143</span><a id="line.143"></a>
+<span class="sourceLineNo">144</span><a id="line.144">    m_dtSeconds = nominalDtSeconds;</a>
 <span class="sourceLineNo">145</span><a id="line.145"></a>
-<span class="sourceLineNo">146</span><a id="line.146">  @SuppressWarnings({"ParameterName", "LocalVariableName"})</a>
-<span class="sourceLineNo">147</span><a id="line.147">  static &lt;S extends Num, C extends Num&gt; Pair&lt;Matrix&lt;C, N1&gt;, Matrix&lt;C, C&gt;&gt; unscentedTransform(</a>
-<span class="sourceLineNo">148</span><a id="line.148">      Nat&lt;S&gt; s,</a>
-<span class="sourceLineNo">149</span><a id="line.149">      Nat&lt;C&gt; dim,</a>
-<span class="sourceLineNo">150</span><a id="line.150">      Matrix&lt;C, ?&gt; sigmas,</a>
-<span class="sourceLineNo">151</span><a id="line.151">      Matrix&lt;?, N1&gt; Wm,</a>
-<span class="sourceLineNo">152</span><a id="line.152">      Matrix&lt;?, N1&gt; Wc,</a>
-<span class="sourceLineNo">153</span><a id="line.153">      BiFunction&lt;Matrix&lt;C, ?&gt;, Matrix&lt;?, N1&gt;, Matrix&lt;C, N1&gt;&gt; meanFunc,</a>
-<span class="sourceLineNo">154</span><a id="line.154">      BiFunction&lt;Matrix&lt;C, N1&gt;, Matrix&lt;C, N1&gt;, Matrix&lt;C, N1&gt;&gt; residualFunc) {</a>
-<span class="sourceLineNo">155</span><a id="line.155">    if (sigmas.getNumRows() != dim.getNum() || sigmas.getNumCols() != 2 * s.getNum() + 1) {</a>
-<span class="sourceLineNo">156</span><a id="line.156">      throw new IllegalArgumentException(</a>
-<span class="sourceLineNo">157</span><a id="line.157">          "Sigmas must be covDim by 2 * states + 1! Got "</a>
-<span class="sourceLineNo">158</span><a id="line.158">              + sigmas.getNumRows()</a>
-<span class="sourceLineNo">159</span><a id="line.159">              + " by "</a>
-<span class="sourceLineNo">160</span><a id="line.160">              + sigmas.getNumCols());</a>
-<span class="sourceLineNo">161</span><a id="line.161">    }</a>
-<span class="sourceLineNo">162</span><a id="line.162"></a>
-<span class="sourceLineNo">163</span><a id="line.163">    if (Wm.getNumRows() != 2 * s.getNum() + 1 || Wm.getNumCols() != 1) {</a>
+<span class="sourceLineNo">146</span><a id="line.146">    m_contQ = StateSpaceUtil.makeCovarianceMatrix(states, stateStdDevs);</a>
+<span class="sourceLineNo">147</span><a id="line.147">    m_contR = StateSpaceUtil.makeCovarianceMatrix(outputs, measurementStdDevs);</a>
+<span class="sourceLineNo">148</span><a id="line.148"></a>
+<span class="sourceLineNo">149</span><a id="line.149">    m_pts = new MerweScaledSigmaPoints&lt;&gt;(states);</a>
+<span class="sourceLineNo">150</span><a id="line.150"></a>
+<span class="sourceLineNo">151</span><a id="line.151">    reset();</a>
+<span class="sourceLineNo">152</span><a id="line.152">  }</a>
+<span class="sourceLineNo">153</span><a id="line.153"></a>
+<span class="sourceLineNo">154</span><a id="line.154">  @SuppressWarnings({"ParameterName", "LocalVariableName"})</a>
+<span class="sourceLineNo">155</span><a id="line.155">  static &lt;S extends Num, C extends Num&gt; Pair&lt;Matrix&lt;C, N1&gt;, Matrix&lt;C, C&gt;&gt; unscentedTransform(</a>
+<span class="sourceLineNo">156</span><a id="line.156">      Nat&lt;S&gt; s,</a>
+<span class="sourceLineNo">157</span><a id="line.157">      Nat&lt;C&gt; dim,</a>
+<span class="sourceLineNo">158</span><a id="line.158">      Matrix&lt;C, ?&gt; sigmas,</a>
+<span class="sourceLineNo">159</span><a id="line.159">      Matrix&lt;?, N1&gt; Wm,</a>
+<span class="sourceLineNo">160</span><a id="line.160">      Matrix&lt;?, N1&gt; Wc,</a>
+<span class="sourceLineNo">161</span><a id="line.161">      BiFunction&lt;Matrix&lt;C, ?&gt;, Matrix&lt;?, N1&gt;, Matrix&lt;C, N1&gt;&gt; meanFunc,</a>
+<span class="sourceLineNo">162</span><a id="line.162">      BiFunction&lt;Matrix&lt;C, N1&gt;, Matrix&lt;C, N1&gt;, Matrix&lt;C, N1&gt;&gt; residualFunc) {</a>
+<span class="sourceLineNo">163</span><a id="line.163">    if (sigmas.getNumRows() != dim.getNum() || sigmas.getNumCols() != 2 * s.getNum() + 1) {</a>
 <span class="sourceLineNo">164</span><a id="line.164">      throw new IllegalArgumentException(</a>
-<span class="sourceLineNo">165</span><a id="line.165">          "Wm must be 2 * states + 1 by 1! Got " + Wm.getNumRows() + " by " + Wm.getNumCols());</a>
-<span class="sourceLineNo">166</span><a id="line.166">    }</a>
-<span class="sourceLineNo">167</span><a id="line.167"></a>
-<span class="sourceLineNo">168</span><a id="line.168">    if (Wc.getNumRows() != 2 * s.getNum() + 1 || Wc.getNumCols() != 1) {</a>
-<span class="sourceLineNo">169</span><a id="line.169">      throw new IllegalArgumentException(</a>
-<span class="sourceLineNo">170</span><a id="line.170">          "Wc must be 2 * states + 1 by 1! Got " + Wc.getNumRows() + " by " + Wc.getNumCols());</a>
-<span class="sourceLineNo">171</span><a id="line.171">    }</a>
-<span class="sourceLineNo">172</span><a id="line.172"></a>
-<span class="sourceLineNo">173</span><a id="line.173">    // New mean is usually just the sum of the sigmas * weight:</a>
-<span class="sourceLineNo">174</span><a id="line.174">    //       n</a>
-<span class="sourceLineNo">175</span><a id="line.175">    // dot = Σ W[k] Xᵢ[k]</a>
-<span class="sourceLineNo">176</span><a id="line.176">    //      k=1</a>
-<span class="sourceLineNo">177</span><a id="line.177">    Matrix&lt;C, N1&gt; x = meanFunc.apply(sigmas, Wm);</a>
-<span class="sourceLineNo">178</span><a id="line.178"></a>
-<span class="sourceLineNo">179</span><a id="line.179">    // New covariance is the sum of the outer product of the residuals times the</a>
-<span class="sourceLineNo">180</span><a id="line.180">    // weights</a>
-<span class="sourceLineNo">181</span><a id="line.181">    Matrix&lt;C, ?&gt; y = new Matrix&lt;&gt;(new SimpleMatrix(dim.getNum(), 2 * s.getNum() + 1));</a>
-<span class="sourceLineNo">182</span><a id="line.182">    for (int i = 0; i &lt; 2 * s.getNum() + 1; i++) {</a>
-<span class="sourceLineNo">183</span><a id="line.183">      // y[:, i] = sigmas[:, i] - x</a>
-<span class="sourceLineNo">184</span><a id="line.184">      y.setColumn(i, residualFunc.apply(sigmas.extractColumnVector(i), x));</a>
-<span class="sourceLineNo">185</span><a id="line.185">    }</a>
-<span class="sourceLineNo">186</span><a id="line.186">    Matrix&lt;C, C&gt; P =</a>
-<span class="sourceLineNo">187</span><a id="line.187">        y.times(Matrix.changeBoundsUnchecked(Wc.diag()))</a>
-<span class="sourceLineNo">188</span><a id="line.188">            .times(Matrix.changeBoundsUnchecked(y.transpose()));</a>
-<span class="sourceLineNo">189</span><a id="line.189"></a>
-<span class="sourceLineNo">190</span><a id="line.190">    return new Pair&lt;&gt;(x, P);</a>
-<span class="sourceLineNo">191</span><a id="line.191">  }</a>
-<span class="sourceLineNo">192</span><a id="line.192"></a>
-<span class="sourceLineNo">193</span><a id="line.193">  /**</a>
-<span class="sourceLineNo">194</span><a id="line.194">   * Returns the error covariance matrix P.</a>
-<span class="sourceLineNo">195</span><a id="line.195">   *</a>
-<span class="sourceLineNo">196</span><a id="line.196">   * @return the error covariance matrix P.</a>
-<span class="sourceLineNo">197</span><a id="line.197">   */</a>
-<span class="sourceLineNo">198</span><a id="line.198">  @Override</a>
-<span class="sourceLineNo">199</span><a id="line.199">  public Matrix&lt;States, States&gt; getP() {</a>
-<span class="sourceLineNo">200</span><a id="line.200">    return m_P;</a>
-<span class="sourceLineNo">201</span><a id="line.201">  }</a>
-<span class="sourceLineNo">202</span><a id="line.202"></a>
-<span class="sourceLineNo">203</span><a id="line.203">  /**</a>
-<span class="sourceLineNo">204</span><a id="line.204">   * Returns an element of the error covariance matrix P.</a>
-<span class="sourceLineNo">205</span><a id="line.205">   *</a>
-<span class="sourceLineNo">206</span><a id="line.206">   * @param row Row of P.</a>
-<span class="sourceLineNo">207</span><a id="line.207">   * @param col Column of P.</a>
-<span class="sourceLineNo">208</span><a id="line.208">   * @return the value of the error covariance matrix P at (i, j).</a>
-<span class="sourceLineNo">209</span><a id="line.209">   */</a>
-<span class="sourceLineNo">210</span><a id="line.210">  @Override</a>
-<span class="sourceLineNo">211</span><a id="line.211">  public double getP(int row, int col) {</a>
-<span class="sourceLineNo">212</span><a id="line.212">    return m_P.get(row, col);</a>
-<span class="sourceLineNo">213</span><a id="line.213">  }</a>
-<span class="sourceLineNo">214</span><a id="line.214"></a>
-<span class="sourceLineNo">215</span><a id="line.215">  /**</a>
-<span class="sourceLineNo">216</span><a id="line.216">   * Sets the entire error covariance matrix P.</a>
-<span class="sourceLineNo">217</span><a id="line.217">   *</a>
-<span class="sourceLineNo">218</span><a id="line.218">   * @param newP The new value of P to use.</a>
-<span class="sourceLineNo">219</span><a id="line.219">   */</a>
-<span class="sourceLineNo">220</span><a id="line.220">  @Override</a>
-<span class="sourceLineNo">221</span><a id="line.221">  public void setP(Matrix&lt;States, States&gt; newP) {</a>
-<span class="sourceLineNo">222</span><a id="line.222">    m_P = newP;</a>
-<span class="sourceLineNo">223</span><a id="line.223">  }</a>
-<span class="sourceLineNo">224</span><a id="line.224"></a>
-<span class="sourceLineNo">225</span><a id="line.225">  /**</a>
-<span class="sourceLineNo">226</span><a id="line.226">   * Returns the state estimate x-hat.</a>
-<span class="sourceLineNo">227</span><a id="line.227">   *</a>
-<span class="sourceLineNo">228</span><a id="line.228">   * @return the state estimate x-hat.</a>
-<span class="sourceLineNo">229</span><a id="line.229">   */</a>
-<span class="sourceLineNo">230</span><a id="line.230">  @Override</a>
-<span class="sourceLineNo">231</span><a id="line.231">  public Matrix&lt;States, N1&gt; getXhat() {</a>
-<span class="sourceLineNo">232</span><a id="line.232">    return m_xHat;</a>
-<span class="sourceLineNo">233</span><a id="line.233">  }</a>
-<span class="sourceLineNo">234</span><a id="line.234"></a>
-<span class="sourceLineNo">235</span><a id="line.235">  /**</a>
-<span class="sourceLineNo">236</span><a id="line.236">   * Returns an element of the state estimate x-hat.</a>
-<span class="sourceLineNo">237</span><a id="line.237">   *</a>
-<span class="sourceLineNo">238</span><a id="line.238">   * @param row Row of x-hat.</a>
-<span class="sourceLineNo">239</span><a id="line.239">   * @return the value of the state estimate x-hat at i.</a>
-<span class="sourceLineNo">240</span><a id="line.240">   */</a>
-<span class="sourceLineNo">241</span><a id="line.241">  @Override</a>
-<span class="sourceLineNo">242</span><a id="line.242">  public double getXhat(int row) {</a>
-<span class="sourceLineNo">243</span><a id="line.243">    return m_xHat.get(row, 0);</a>
-<span class="sourceLineNo">244</span><a id="line.244">  }</a>
-<span class="sourceLineNo">245</span><a id="line.245"></a>
-<span class="sourceLineNo">246</span><a id="line.246">  /**</a>
-<span class="sourceLineNo">247</span><a id="line.247">   * Set initial state estimate x-hat.</a>
-<span class="sourceLineNo">248</span><a id="line.248">   *</a>
-<span class="sourceLineNo">249</span><a id="line.249">   * @param xHat The state estimate x-hat.</a>
-<span class="sourceLineNo">250</span><a id="line.250">   */</a>
-<span class="sourceLineNo">251</span><a id="line.251">  @SuppressWarnings("ParameterName")</a>
-<span class="sourceLineNo">252</span><a id="line.252">  @Override</a>
-<span class="sourceLineNo">253</span><a id="line.253">  public void setXhat(Matrix&lt;States, N1&gt; xHat) {</a>
-<span class="sourceLineNo">254</span><a id="line.254">    m_xHat = xHat;</a>
-<span class="sourceLineNo">255</span><a id="line.255">  }</a>
-<span class="sourceLineNo">256</span><a id="line.256"></a>
-<span class="sourceLineNo">257</span><a id="line.257">  /**</a>
-<span class="sourceLineNo">258</span><a id="line.258">   * Set an element of the initial state estimate x-hat.</a>
-<span class="sourceLineNo">259</span><a id="line.259">   *</a>
-<span class="sourceLineNo">260</span><a id="line.260">   * @param row Row of x-hat.</a>
-<span class="sourceLineNo">261</span><a id="line.261">   * @param value Value for element of x-hat.</a>
-<span class="sourceLineNo">262</span><a id="line.262">   */</a>
-<span class="sourceLineNo">263</span><a id="line.263">  @Override</a>
-<span class="sourceLineNo">264</span><a id="line.264">  public void setXhat(int row, double value) {</a>
-<span class="sourceLineNo">265</span><a id="line.265">    m_xHat.set(row, 0, value);</a>
-<span class="sourceLineNo">266</span><a id="line.266">  }</a>
-<span class="sourceLineNo">267</span><a id="line.267"></a>
-<span class="sourceLineNo">268</span><a id="line.268">  /** Resets the observer. */</a>
-<span class="sourceLineNo">269</span><a id="line.269">  @Override</a>
-<span class="sourceLineNo">270</span><a id="line.270">  public void reset() {</a>
-<span class="sourceLineNo">271</span><a id="line.271">    m_xHat = new Matrix&lt;&gt;(m_states, Nat.N1());</a>
-<span class="sourceLineNo">272</span><a id="line.272">    m_P = new Matrix&lt;&gt;(m_states, m_states);</a>
-<span class="sourceLineNo">273</span><a id="line.273">    m_sigmasF = new Matrix&lt;&gt;(new SimpleMatrix(m_states.getNum(), 2 * m_states.getNum() + 1));</a>
+<span class="sourceLineNo">165</span><a id="line.165">          "Sigmas must be covDim by 2 * states + 1! Got "</a>
+<span class="sourceLineNo">166</span><a id="line.166">              + sigmas.getNumRows()</a>
+<span class="sourceLineNo">167</span><a id="line.167">              + " by "</a>
+<span class="sourceLineNo">168</span><a id="line.168">              + sigmas.getNumCols());</a>
+<span class="sourceLineNo">169</span><a id="line.169">    }</a>
+<span class="sourceLineNo">170</span><a id="line.170"></a>
+<span class="sourceLineNo">171</span><a id="line.171">    if (Wm.getNumRows() != 2 * s.getNum() + 1 || Wm.getNumCols() != 1) {</a>
+<span class="sourceLineNo">172</span><a id="line.172">      throw new IllegalArgumentException(</a>
+<span class="sourceLineNo">173</span><a id="line.173">          "Wm must be 2 * states + 1 by 1! Got " + Wm.getNumRows() + " by " + Wm.getNumCols());</a>
+<span class="sourceLineNo">174</span><a id="line.174">    }</a>
+<span class="sourceLineNo">175</span><a id="line.175"></a>
+<span class="sourceLineNo">176</span><a id="line.176">    if (Wc.getNumRows() != 2 * s.getNum() + 1 || Wc.getNumCols() != 1) {</a>
+<span class="sourceLineNo">177</span><a id="line.177">      throw new IllegalArgumentException(</a>
+<span class="sourceLineNo">178</span><a id="line.178">          "Wc must be 2 * states + 1 by 1! Got " + Wc.getNumRows() + " by " + Wc.getNumCols());</a>
+<span class="sourceLineNo">179</span><a id="line.179">    }</a>
+<span class="sourceLineNo">180</span><a id="line.180"></a>
+<span class="sourceLineNo">181</span><a id="line.181">    // New mean is usually just the sum of the sigmas * weight:</a>
+<span class="sourceLineNo">182</span><a id="line.182">    //       n</a>
+<span class="sourceLineNo">183</span><a id="line.183">    // dot = Σ W[k] Xᵢ[k]</a>
+<span class="sourceLineNo">184</span><a id="line.184">    //      k=1</a>
+<span class="sourceLineNo">185</span><a id="line.185">    Matrix&lt;C, N1&gt; x = meanFunc.apply(sigmas, Wm);</a>
+<span class="sourceLineNo">186</span><a id="line.186"></a>
+<span class="sourceLineNo">187</span><a id="line.187">    // New covariance is the sum of the outer product of the residuals times the</a>
+<span class="sourceLineNo">188</span><a id="line.188">    // weights</a>
+<span class="sourceLineNo">189</span><a id="line.189">    Matrix&lt;C, ?&gt; y = new Matrix&lt;&gt;(new SimpleMatrix(dim.getNum(), 2 * s.getNum() + 1));</a>
+<span class="sourceLineNo">190</span><a id="line.190">    for (int i = 0; i &lt; 2 * s.getNum() + 1; i++) {</a>
+<span class="sourceLineNo">191</span><a id="line.191">      // y[:, i] = sigmas[:, i] - x</a>
+<span class="sourceLineNo">192</span><a id="line.192">      y.setColumn(i, residualFunc.apply(sigmas.extractColumnVector(i), x));</a>
+<span class="sourceLineNo">193</span><a id="line.193">    }</a>
+<span class="sourceLineNo">194</span><a id="line.194">    Matrix&lt;C, C&gt; P =</a>
+<span class="sourceLineNo">195</span><a id="line.195">        y.times(Matrix.changeBoundsUnchecked(Wc.diag()))</a>
+<span class="sourceLineNo">196</span><a id="line.196">            .times(Matrix.changeBoundsUnchecked(y.transpose()));</a>
+<span class="sourceLineNo">197</span><a id="line.197"></a>
+<span class="sourceLineNo">198</span><a id="line.198">    return new Pair&lt;&gt;(x, P);</a>
+<span class="sourceLineNo">199</span><a id="line.199">  }</a>
+<span class="sourceLineNo">200</span><a id="line.200"></a>
+<span class="sourceLineNo">201</span><a id="line.201">  /**</a>
+<span class="sourceLineNo">202</span><a id="line.202">   * Returns the error covariance matrix P.</a>
+<span class="sourceLineNo">203</span><a id="line.203">   *</a>
+<span class="sourceLineNo">204</span><a id="line.204">   * @return the error covariance matrix P.</a>
+<span class="sourceLineNo">205</span><a id="line.205">   */</a>
+<span class="sourceLineNo">206</span><a id="line.206">  @Override</a>
+<span class="sourceLineNo">207</span><a id="line.207">  public Matrix&lt;States, States&gt; getP() {</a>
+<span class="sourceLineNo">208</span><a id="line.208">    return m_P;</a>
+<span class="sourceLineNo">209</span><a id="line.209">  }</a>
+<span class="sourceLineNo">210</span><a id="line.210"></a>
+<span class="sourceLineNo">211</span><a id="line.211">  /**</a>
+<span class="sourceLineNo">212</span><a id="line.212">   * Returns an element of the error covariance matrix P.</a>
+<span class="sourceLineNo">213</span><a id="line.213">   *</a>
+<span class="sourceLineNo">214</span><a id="line.214">   * @param row Row of P.</a>
+<span class="sourceLineNo">215</span><a id="line.215">   * @param col Column of P.</a>
+<span class="sourceLineNo">216</span><a id="line.216">   * @return the value of the error covariance matrix P at (i, j).</a>
+<span class="sourceLineNo">217</span><a id="line.217">   */</a>
+<span class="sourceLineNo">218</span><a id="line.218">  @Override</a>
+<span class="sourceLineNo">219</span><a id="line.219">  public double getP(int row, int col) {</a>
+<span class="sourceLineNo">220</span><a id="line.220">    return m_P.get(row, col);</a>
+<span class="sourceLineNo">221</span><a id="line.221">  }</a>
+<span class="sourceLineNo">222</span><a id="line.222"></a>
+<span class="sourceLineNo">223</span><a id="line.223">  /**</a>
+<span class="sourceLineNo">224</span><a id="line.224">   * Sets the entire error covariance matrix P.</a>
+<span class="sourceLineNo">225</span><a id="line.225">   *</a>
+<span class="sourceLineNo">226</span><a id="line.226">   * @param newP The new value of P to use.</a>
+<span class="sourceLineNo">227</span><a id="line.227">   */</a>
+<span class="sourceLineNo">228</span><a id="line.228">  @Override</a>
+<span class="sourceLineNo">229</span><a id="line.229">  public void setP(Matrix&lt;States, States&gt; newP) {</a>
+<span class="sourceLineNo">230</span><a id="line.230">    m_P = newP;</a>
+<span class="sourceLineNo">231</span><a id="line.231">  }</a>
+<span class="sourceLineNo">232</span><a id="line.232"></a>
+<span class="sourceLineNo">233</span><a id="line.233">  /**</a>
+<span class="sourceLineNo">234</span><a id="line.234">   * Returns the state estimate x-hat.</a>
+<span class="sourceLineNo">235</span><a id="line.235">   *</a>
+<span class="sourceLineNo">236</span><a id="line.236">   * @return the state estimate x-hat.</a>
+<span class="sourceLineNo">237</span><a id="line.237">   */</a>
+<span class="sourceLineNo">238</span><a id="line.238">  @Override</a>
+<span class="sourceLineNo">239</span><a id="line.239">  public Matrix&lt;States, N1&gt; getXhat() {</a>
+<span class="sourceLineNo">240</span><a id="line.240">    return m_xHat;</a>
+<span class="sourceLineNo">241</span><a id="line.241">  }</a>
+<span class="sourceLineNo">242</span><a id="line.242"></a>
+<span class="sourceLineNo">243</span><a id="line.243">  /**</a>
+<span class="sourceLineNo">244</span><a id="line.244">   * Returns an element of the state estimate x-hat.</a>
+<span class="sourceLineNo">245</span><a id="line.245">   *</a>
+<span class="sourceLineNo">246</span><a id="line.246">   * @param row Row of x-hat.</a>
+<span class="sourceLineNo">247</span><a id="line.247">   * @return the value of the state estimate x-hat at i.</a>
+<span class="sourceLineNo">248</span><a id="line.248">   */</a>
+<span class="sourceLineNo">249</span><a id="line.249">  @Override</a>
+<span class="sourceLineNo">250</span><a id="line.250">  public double getXhat(int row) {</a>
+<span class="sourceLineNo">251</span><a id="line.251">    return m_xHat.get(row, 0);</a>
+<span class="sourceLineNo">252</span><a id="line.252">  }</a>
+<span class="sourceLineNo">253</span><a id="line.253"></a>
+<span class="sourceLineNo">254</span><a id="line.254">  /**</a>
+<span class="sourceLineNo">255</span><a id="line.255">   * Set initial state estimate x-hat.</a>
+<span class="sourceLineNo">256</span><a id="line.256">   *</a>
+<span class="sourceLineNo">257</span><a id="line.257">   * @param xHat The state estimate x-hat.</a>
+<span class="sourceLineNo">258</span><a id="line.258">   */</a>
+<span class="sourceLineNo">259</span><a id="line.259">  @SuppressWarnings("ParameterName")</a>
+<span class="sourceLineNo">260</span><a id="line.260">  @Override</a>
+<span class="sourceLineNo">261</span><a id="line.261">  public void setXhat(Matrix&lt;States, N1&gt; xHat) {</a>
+<span class="sourceLineNo">262</span><a id="line.262">    m_xHat = xHat;</a>
+<span class="sourceLineNo">263</span><a id="line.263">  }</a>
+<span class="sourceLineNo">264</span><a id="line.264"></a>
+<span class="sourceLineNo">265</span><a id="line.265">  /**</a>
+<span class="sourceLineNo">266</span><a id="line.266">   * Set an element of the initial state estimate x-hat.</a>
+<span class="sourceLineNo">267</span><a id="line.267">   *</a>
+<span class="sourceLineNo">268</span><a id="line.268">   * @param row Row of x-hat.</a>
+<span class="sourceLineNo">269</span><a id="line.269">   * @param value Value for element of x-hat.</a>
+<span class="sourceLineNo">270</span><a id="line.270">   */</a>
+<span class="sourceLineNo">271</span><a id="line.271">  @Override</a>
+<span class="sourceLineNo">272</span><a id="line.272">  public void setXhat(int row, double value) {</a>
+<span class="sourceLineNo">273</span><a id="line.273">    m_xHat.set(row, 0, value);</a>
 <span class="sourceLineNo">274</span><a id="line.274">  }</a>
 <span class="sourceLineNo">275</span><a id="line.275"></a>
-<span class="sourceLineNo">276</span><a id="line.276">  /**</a>
-<span class="sourceLineNo">277</span><a id="line.277">   * Project the model into the future with a new control input u.</a>
-<span class="sourceLineNo">278</span><a id="line.278">   *</a>
-<span class="sourceLineNo">279</span><a id="line.279">   * @param u New control input from controller.</a>
-<span class="sourceLineNo">280</span><a id="line.280">   * @param dtSeconds Timestep for prediction.</a>
-<span class="sourceLineNo">281</span><a id="line.281">   */</a>
-<span class="sourceLineNo">282</span><a id="line.282">  @SuppressWarnings({"LocalVariableName", "ParameterName"})</a>
-<span class="sourceLineNo">283</span><a id="line.283">  @Override</a>
-<span class="sourceLineNo">284</span><a id="line.284">  public void predict(Matrix&lt;Inputs, N1&gt; u, double dtSeconds) {</a>
-<span class="sourceLineNo">285</span><a id="line.285">    // Discretize Q before projecting mean and covariance forward</a>
-<span class="sourceLineNo">286</span><a id="line.286">    Matrix&lt;States, States&gt; contA =</a>
-<span class="sourceLineNo">287</span><a id="line.287">        NumericalJacobian.numericalJacobianX(m_states, m_states, m_f, m_xHat, u);</a>
-<span class="sourceLineNo">288</span><a id="line.288">    var discQ = Discretization.discretizeAQTaylor(contA, m_contQ, dtSeconds).getSecond();</a>
-<span class="sourceLineNo">289</span><a id="line.289"></a>
-<span class="sourceLineNo">290</span><a id="line.290">    var sigmas = m_pts.sigmaPoints(m_xHat, m_P);</a>
-<span class="sourceLineNo">291</span><a id="line.291"></a>
-<span class="sourceLineNo">292</span><a id="line.292">    for (int i = 0; i &lt; m_pts.getNumSigmas(); ++i) {</a>
-<span class="sourceLineNo">293</span><a id="line.293">      Matrix&lt;States, N1&gt; x = sigmas.extractColumnVector(i);</a>
-<span class="sourceLineNo">294</span><a id="line.294"></a>
-<span class="sourceLineNo">295</span><a id="line.295">      m_sigmasF.setColumn(i, NumericalIntegration.rk4(m_f, x, u, dtSeconds));</a>
-<span class="sourceLineNo">296</span><a id="line.296">    }</a>
+<span class="sourceLineNo">276</span><a id="line.276">  /** Resets the observer. */</a>
+<span class="sourceLineNo">277</span><a id="line.277">  @Override</a>
+<span class="sourceLineNo">278</span><a id="line.278">  public void reset() {</a>
+<span class="sourceLineNo">279</span><a id="line.279">    m_xHat = new Matrix&lt;&gt;(m_states, Nat.N1());</a>
+<span class="sourceLineNo">280</span><a id="line.280">    m_P = new Matrix&lt;&gt;(m_states, m_states);</a>
+<span class="sourceLineNo">281</span><a id="line.281">    m_sigmasF = new Matrix&lt;&gt;(new SimpleMatrix(m_states.getNum(), 2 * m_states.getNum() + 1));</a>
+<span class="sourceLineNo">282</span><a id="line.282">  }</a>
+<span class="sourceLineNo">283</span><a id="line.283"></a>
+<span class="sourceLineNo">284</span><a id="line.284">  /**</a>
+<span class="sourceLineNo">285</span><a id="line.285">   * Project the model into the future with a new control input u.</a>
+<span class="sourceLineNo">286</span><a id="line.286">   *</a>
+<span class="sourceLineNo">287</span><a id="line.287">   * @param u New control input from controller.</a>
+<span class="sourceLineNo">288</span><a id="line.288">   * @param dtSeconds Timestep for prediction.</a>
+<span class="sourceLineNo">289</span><a id="line.289">   */</a>
+<span class="sourceLineNo">290</span><a id="line.290">  @SuppressWarnings({"LocalVariableName", "ParameterName"})</a>
+<span class="sourceLineNo">291</span><a id="line.291">  @Override</a>
+<span class="sourceLineNo">292</span><a id="line.292">  public void predict(Matrix&lt;Inputs, N1&gt; u, double dtSeconds) {</a>
+<span class="sourceLineNo">293</span><a id="line.293">    // Discretize Q before projecting mean and covariance forward</a>
+<span class="sourceLineNo">294</span><a id="line.294">    Matrix&lt;States, States&gt; contA =</a>
+<span class="sourceLineNo">295</span><a id="line.295">        NumericalJacobian.numericalJacobianX(m_states, m_states, m_f, m_xHat, u);</a>
+<span class="sourceLineNo">296</span><a id="line.296">    var discQ = Discretization.discretizeAQTaylor(contA, m_contQ, dtSeconds).getSecond();</a>
 <span class="sourceLineNo">297</span><a id="line.297"></a>
-<span class="sourceLineNo">298</span><a id="line.298">    var ret =</a>
-<span class="sourceLineNo">299</span><a id="line.299">        unscentedTransform(</a>
-<span class="sourceLineNo">300</span><a id="line.300">            m_states,</a>
-<span class="sourceLineNo">301</span><a id="line.301">            m_states,</a>
-<span class="sourceLineNo">302</span><a id="line.302">            m_sigmasF,</a>
-<span class="sourceLineNo">303</span><a id="line.303">            m_pts.getWm(),</a>
-<span class="sourceLineNo">304</span><a id="line.304">            m_pts.getWc(),</a>
-<span class="sourceLineNo">305</span><a id="line.305">            m_meanFuncX,</a>
-<span class="sourceLineNo">306</span><a id="line.306">            m_residualFuncX);</a>
-<span class="sourceLineNo">307</span><a id="line.307"></a>
-<span class="sourceLineNo">308</span><a id="line.308">    m_xHat = ret.getFirst();</a>
-<span class="sourceLineNo">309</span><a id="line.309">    m_P = ret.getSecond().plus(discQ);</a>
-<span class="sourceLineNo">310</span><a id="line.310">    m_dtSeconds = dtSeconds;</a>
-<span class="sourceLineNo">311</span><a id="line.311">  }</a>
-<span class="sourceLineNo">312</span><a id="line.312"></a>
-<span class="sourceLineNo">313</span><a id="line.313">  /**</a>
-<span class="sourceLineNo">314</span><a id="line.314">   * Correct the state estimate x-hat using the measurements in y.</a>
-<span class="sourceLineNo">315</span><a id="line.315">   *</a>
-<span class="sourceLineNo">316</span><a id="line.316">   * @param u Same control input used in the predict step.</a>
-<span class="sourceLineNo">317</span><a id="line.317">   * @param y Measurement vector.</a>
-<span class="sourceLineNo">318</span><a id="line.318">   */</a>
-<span class="sourceLineNo">319</span><a id="line.319">  @SuppressWarnings("ParameterName")</a>
-<span class="sourceLineNo">320</span><a id="line.320">  @Override</a>
-<span class="sourceLineNo">321</span><a id="line.321">  public void correct(Matrix&lt;Inputs, N1&gt; u, Matrix&lt;Outputs, N1&gt; y) {</a>
-<span class="sourceLineNo">322</span><a id="line.322">    correct(</a>
-<span class="sourceLineNo">323</span><a id="line.323">        m_outputs, u, y, m_h, m_contR, m_meanFuncY, m_residualFuncY, m_residualFuncX, m_addFuncX);</a>
-<span class="sourceLineNo">324</span><a id="line.324">  }</a>
-<span class="sourceLineNo">325</span><a id="line.325"></a>
-<span class="sourceLineNo">326</span><a id="line.326">  /**</a>
-<span class="sourceLineNo">327</span><a id="line.327">   * Correct the state estimate x-hat using the measurements in y.</a>
-<span class="sourceLineNo">328</span><a id="line.328">   *</a>
-<span class="sourceLineNo">329</span><a id="line.329">   * &lt;p&gt;This is useful for when the measurements available during a timestep's Correct() call vary.</a>
-<span class="sourceLineNo">330</span><a id="line.330">   * The h(x, u) passed to the constructor is used if one is not provided (the two-argument version</a>
-<span class="sourceLineNo">331</span><a id="line.331">   * of this function).</a>
-<span class="sourceLineNo">332</span><a id="line.332">   *</a>
-<span class="sourceLineNo">333</span><a id="line.333">   * @param &lt;R&gt; Number of measurements in y.</a>
-<span class="sourceLineNo">334</span><a id="line.334">   * @param rows Number of rows in y.</a>
-<span class="sourceLineNo">335</span><a id="line.335">   * @param u Same control input used in the predict step.</a>
-<span class="sourceLineNo">336</span><a id="line.336">   * @param y Measurement vector.</a>
-<span class="sourceLineNo">337</span><a id="line.337">   * @param h A vector-valued function of x and u that returns the measurement vector.</a>
-<span class="sourceLineNo">338</span><a id="line.338">   * @param R Measurement noise covariance matrix (continuous-time).</a>
-<span class="sourceLineNo">339</span><a id="line.339">   */</a>
-<span class="sourceLineNo">340</span><a id="line.340">  @SuppressWarnings({"ParameterName", "LambdaParameterName", "LocalVariableName"})</a>
-<span class="sourceLineNo">341</span><a id="line.341">  public &lt;R extends Num&gt; void correct(</a>
-<span class="sourceLineNo">342</span><a id="line.342">      Nat&lt;R&gt; rows,</a>
-<span class="sourceLineNo">343</span><a id="line.343">      Matrix&lt;Inputs, N1&gt; u,</a>
-<span class="sourceLineNo">344</span><a id="line.344">      Matrix&lt;R, N1&gt; y,</a>
-<span class="sourceLineNo">345</span><a id="line.345">      BiFunction&lt;Matrix&lt;States, N1&gt;, Matrix&lt;Inputs, N1&gt;, Matrix&lt;R, N1&gt;&gt; h,</a>
-<span class="sourceLineNo">346</span><a id="line.346">      Matrix&lt;R, R&gt; R) {</a>
-<span class="sourceLineNo">347</span><a id="line.347">    BiFunction&lt;Matrix&lt;R, ?&gt;, Matrix&lt;?, N1&gt;, Matrix&lt;R, N1&gt;&gt; meanFuncY =</a>
-<span class="sourceLineNo">348</span><a id="line.348">        (sigmas, Wm) -&gt; sigmas.times(Matrix.changeBoundsUnchecked(Wm));</a>
-<span class="sourceLineNo">349</span><a id="line.349">    BiFunction&lt;Matrix&lt;States, N1&gt;, Matrix&lt;States, N1&gt;, Matrix&lt;States, N1&gt;&gt; residualFuncX =</a>
-<span class="sourceLineNo">350</span><a id="line.350">        Matrix::minus;</a>
-<span class="sourceLineNo">351</span><a id="line.351">    BiFunction&lt;Matrix&lt;R, N1&gt;, Matrix&lt;R, N1&gt;, Matrix&lt;R, N1&gt;&gt; residualFuncY = Matrix::minus;</a>
-<span class="sourceLineNo">352</span><a id="line.352">    BiFunction&lt;Matrix&lt;States, N1&gt;, Matrix&lt;States, N1&gt;, Matrix&lt;States, N1&gt;&gt; addFuncX = Matrix::plus;</a>
-<span class="sourceLineNo">353</span><a id="line.353">    correct(rows, u, y, h, R, meanFuncY, residualFuncY, residualFuncX, addFuncX);</a>
-<span class="sourceLineNo">354</span><a id="line.354">  }</a>
-<span class="sourceLineNo">355</span><a id="line.355"></a>
-<span class="sourceLineNo">356</span><a id="line.356">  /**</a>
-<span class="sourceLineNo">357</span><a id="line.357">   * Correct the state estimate x-hat using the measurements in y.</a>
-<span class="sourceLineNo">358</span><a id="line.358">   *</a>
-<span class="sourceLineNo">359</span><a id="line.359">   * &lt;p&gt;This is useful for when the measurements available during a timestep's Correct() call vary.</a>
-<span class="sourceLineNo">360</span><a id="line.360">   * The h(x, u) passed to the constructor is used if one is not provided (the two-argument version</a>
-<span class="sourceLineNo">361</span><a id="line.361">   * of this function).</a>
-<span class="sourceLineNo">362</span><a id="line.362">   *</a>
-<span class="sourceLineNo">363</span><a id="line.363">   * @param &lt;R&gt; Number of measurements in y.</a>
-<span class="sourceLineNo">364</span><a id="line.364">   * @param rows Number of rows in y.</a>
-<span class="sourceLineNo">365</span><a id="line.365">   * @param u Same control input used in the predict step.</a>
-<span class="sourceLineNo">366</span><a id="line.366">   * @param y Measurement vector.</a>
-<span class="sourceLineNo">367</span><a id="line.367">   * @param h A vector-valued function of x and u that returns the measurement vector.</a>
-<span class="sourceLineNo">368</span><a id="line.368">   * @param R Measurement noise covariance matrix (continuous-time).</a>
-<span class="sourceLineNo">369</span><a id="line.369">   * @param meanFuncY A function that computes the mean of 2 * States + 1 measurement vectors using</a>
-<span class="sourceLineNo">370</span><a id="line.370">   *     a given set of weights.</a>
-<span class="sourceLineNo">371</span><a id="line.371">   * @param residualFuncY A function that computes the residual of two measurement vectors (i.e. it</a>
-<span class="sourceLineNo">372</span><a id="line.372">   *     subtracts them.)</a>
-<span class="sourceLineNo">373</span><a id="line.373">   * @param residualFuncX A function that computes the residual of two state vectors (i.e. it</a>
-<span class="sourceLineNo">374</span><a id="line.374">   *     subtracts them.)</a>
-<span class="sourceLineNo">375</span><a id="line.375">   * @param addFuncX A function that adds two state vectors.</a>
-<span class="sourceLineNo">376</span><a id="line.376">   */</a>
-<span class="sourceLineNo">377</span><a id="line.377">  @SuppressWarnings({"ParameterName", "LocalVariableName"})</a>
-<span class="sourceLineNo">378</span><a id="line.378">  public &lt;R extends Num&gt; void correct(</a>
-<span class="sourceLineNo">379</span><a id="line.379">      Nat&lt;R&gt; rows,</a>
-<span class="sourceLineNo">380</span><a id="line.380">      Matrix&lt;Inputs, N1&gt; u,</a>
-<span class="sourceLineNo">381</span><a id="line.381">      Matrix&lt;R, N1&gt; y,</a>
-<span class="sourceLineNo">382</span><a id="line.382">      BiFunction&lt;Matrix&lt;States, N1&gt;, Matrix&lt;Inputs, N1&gt;, Matrix&lt;R, N1&gt;&gt; h,</a>
-<span class="sourceLineNo">383</span><a id="line.383">      Matrix&lt;R, R&gt; R,</a>
-<span class="sourceLineNo">384</span><a id="line.384">      BiFunction&lt;Matrix&lt;R, ?&gt;, Matrix&lt;?, N1&gt;, Matrix&lt;R, N1&gt;&gt; meanFuncY,</a>
-<span class="sourceLineNo">385</span><a id="line.385">      BiFunction&lt;Matrix&lt;R, N1&gt;, Matrix&lt;R, N1&gt;, Matrix&lt;R, N1&gt;&gt; residualFuncY,</a>
-<span class="sourceLineNo">386</span><a id="line.386">      BiFunction&lt;Matrix&lt;States, N1&gt;, Matrix&lt;States, N1&gt;, Matrix&lt;States, N1&gt;&gt; residualFuncX,</a>
-<span class="sourceLineNo">387</span><a id="line.387">      BiFunction&lt;Matrix&lt;States, N1&gt;, Matrix&lt;States, N1&gt;, Matrix&lt;States, N1&gt;&gt; addFuncX) {</a>
-<span class="sourceLineNo">388</span><a id="line.388">    final var discR = Discretization.discretizeR(R, m_dtSeconds);</a>
-<span class="sourceLineNo">389</span><a id="line.389"></a>
-<span class="sourceLineNo">390</span><a id="line.390">    // Transform sigma points into measurement space</a>
-<span class="sourceLineNo">391</span><a id="line.391">    Matrix&lt;R, ?&gt; sigmasH = new Matrix&lt;&gt;(new SimpleMatrix(rows.getNum(), 2 * m_states.getNum() + 1));</a>
-<span class="sourceLineNo">392</span><a id="line.392">    var sigmas = m_pts.sigmaPoints(m_xHat, m_P);</a>
-<span class="sourceLineNo">393</span><a id="line.393">    for (int i = 0; i &lt; m_pts.getNumSigmas(); i++) {</a>
-<span class="sourceLineNo">394</span><a id="line.394">      Matrix&lt;R, N1&gt; hRet = h.apply(sigmas.extractColumnVector(i), u);</a>
-<span class="sourceLineNo">395</span><a id="line.395">      sigmasH.setColumn(i, hRet);</a>
-<span class="sourceLineNo">396</span><a id="line.396">    }</a>
+<span class="sourceLineNo">298</span><a id="line.298">    var sigmas = m_pts.sigmaPoints(m_xHat, m_P);</a>
+<span class="sourceLineNo">299</span><a id="line.299"></a>
+<span class="sourceLineNo">300</span><a id="line.300">    for (int i = 0; i &lt; m_pts.getNumSigmas(); ++i) {</a>
+<span class="sourceLineNo">301</span><a id="line.301">      Matrix&lt;States, N1&gt; x = sigmas.extractColumnVector(i);</a>
+<span class="sourceLineNo">302</span><a id="line.302"></a>
+<span class="sourceLineNo">303</span><a id="line.303">      m_sigmasF.setColumn(i, NumericalIntegration.rk4(m_f, x, u, dtSeconds));</a>
+<span class="sourceLineNo">304</span><a id="line.304">    }</a>
+<span class="sourceLineNo">305</span><a id="line.305"></a>
+<span class="sourceLineNo">306</span><a id="line.306">    var ret =</a>
+<span class="sourceLineNo">307</span><a id="line.307">        unscentedTransform(</a>
+<span class="sourceLineNo">308</span><a id="line.308">            m_states,</a>
+<span class="sourceLineNo">309</span><a id="line.309">            m_states,</a>
+<span class="sourceLineNo">310</span><a id="line.310">            m_sigmasF,</a>
+<span class="sourceLineNo">311</span><a id="line.311">            m_pts.getWm(),</a>
+<span class="sourceLineNo">312</span><a id="line.312">            m_pts.getWc(),</a>
+<span class="sourceLineNo">313</span><a id="line.313">            m_meanFuncX,</a>
+<span class="sourceLineNo">314</span><a id="line.314">            m_residualFuncX);</a>
+<span class="sourceLineNo">315</span><a id="line.315"></a>
+<span class="sourceLineNo">316</span><a id="line.316">    m_xHat = ret.getFirst();</a>
+<span class="sourceLineNo">317</span><a id="line.317">    m_P = ret.getSecond().plus(discQ);</a>
+<span class="sourceLineNo">318</span><a id="line.318">    m_dtSeconds = dtSeconds;</a>
+<span class="sourceLineNo">319</span><a id="line.319">  }</a>
+<span class="sourceLineNo">320</span><a id="line.320"></a>
+<span class="sourceLineNo">321</span><a id="line.321">  /**</a>
+<span class="sourceLineNo">322</span><a id="line.322">   * Correct the state estimate x-hat using the measurements in y.</a>
+<span class="sourceLineNo">323</span><a id="line.323">   *</a>
+<span class="sourceLineNo">324</span><a id="line.324">   * @param u Same control input used in the predict step.</a>
+<span class="sourceLineNo">325</span><a id="line.325">   * @param y Measurement vector.</a>
+<span class="sourceLineNo">326</span><a id="line.326">   */</a>
+<span class="sourceLineNo">327</span><a id="line.327">  @SuppressWarnings("ParameterName")</a>
+<span class="sourceLineNo">328</span><a id="line.328">  @Override</a>
+<span class="sourceLineNo">329</span><a id="line.329">  public void correct(Matrix&lt;Inputs, N1&gt; u, Matrix&lt;Outputs, N1&gt; y) {</a>
+<span class="sourceLineNo">330</span><a id="line.330">    correct(</a>
+<span class="sourceLineNo">331</span><a id="line.331">        m_outputs, u, y, m_h, m_contR, m_meanFuncY, m_residualFuncY, m_residualFuncX, m_addFuncX);</a>
+<span class="sourceLineNo">332</span><a id="line.332">  }</a>
+<span class="sourceLineNo">333</span><a id="line.333"></a>
+<span class="sourceLineNo">334</span><a id="line.334">  /**</a>
+<span class="sourceLineNo">335</span><a id="line.335">   * Correct the state estimate x-hat using the measurements in y.</a>
+<span class="sourceLineNo">336</span><a id="line.336">   *</a>
+<span class="sourceLineNo">337</span><a id="line.337">   * &lt;p&gt;This is useful for when the measurements available during a timestep's Correct() call vary.</a>
+<span class="sourceLineNo">338</span><a id="line.338">   * The h(x, u) passed to the constructor is used if one is not provided (the two-argument version</a>
+<span class="sourceLineNo">339</span><a id="line.339">   * of this function).</a>
+<span class="sourceLineNo">340</span><a id="line.340">   *</a>
+<span class="sourceLineNo">341</span><a id="line.341">   * @param &lt;R&gt; Number of measurements in y.</a>
+<span class="sourceLineNo">342</span><a id="line.342">   * @param rows Number of rows in y.</a>
+<span class="sourceLineNo">343</span><a id="line.343">   * @param u Same control input used in the predict step.</a>
+<span class="sourceLineNo">344</span><a id="line.344">   * @param y Measurement vector.</a>
+<span class="sourceLineNo">345</span><a id="line.345">   * @param h A vector-valued function of x and u that returns the measurement vector.</a>
+<span class="sourceLineNo">346</span><a id="line.346">   * @param R Measurement noise covariance matrix (continuous-time).</a>
+<span class="sourceLineNo">347</span><a id="line.347">   */</a>
+<span class="sourceLineNo">348</span><a id="line.348">  @SuppressWarnings({"ParameterName", "LambdaParameterName", "LocalVariableName"})</a>
+<span class="sourceLineNo">349</span><a id="line.349">  public &lt;R extends Num&gt; void correct(</a>
+<span class="sourceLineNo">350</span><a id="line.350">      Nat&lt;R&gt; rows,</a>
+<span class="sourceLineNo">351</span><a id="line.351">      Matrix&lt;Inputs, N1&gt; u,</a>
+<span class="sourceLineNo">352</span><a id="line.352">      Matrix&lt;R, N1&gt; y,</a>
+<span class="sourceLineNo">353</span><a id="line.353">      BiFunction&lt;Matrix&lt;States, N1&gt;, Matrix&lt;Inputs, N1&gt;, Matrix&lt;R, N1&gt;&gt; h,</a>
+<span class="sourceLineNo">354</span><a id="line.354">      Matrix&lt;R, R&gt; R) {</a>
+<span class="sourceLineNo">355</span><a id="line.355">    BiFunction&lt;Matrix&lt;R, ?&gt;, Matrix&lt;?, N1&gt;, Matrix&lt;R, N1&gt;&gt; meanFuncY =</a>
+<span class="sourceLineNo">356</span><a id="line.356">        (sigmas, Wm) -&gt; sigmas.times(Matrix.changeBoundsUnchecked(Wm));</a>
+<span class="sourceLineNo">357</span><a id="line.357">    BiFunction&lt;Matrix&lt;States, N1&gt;, Matrix&lt;States, N1&gt;, Matrix&lt;States, N1&gt;&gt; residualFuncX =</a>
+<span class="sourceLineNo">358</span><a id="line.358">        Matrix::minus;</a>
+<span class="sourceLineNo">359</span><a id="line.359">    BiFunction&lt;Matrix&lt;R, N1&gt;, Matrix&lt;R, N1&gt;, Matrix&lt;R, N1&gt;&gt; residualFuncY = Matrix::minus;</a>
+<span class="sourceLineNo">360</span><a id="line.360">    BiFunction&lt;Matrix&lt;States, N1&gt;, Matrix&lt;States, N1&gt;, Matrix&lt;States, N1&gt;&gt; addFuncX = Matrix::plus;</a>
+<span class="sourceLineNo">361</span><a id="line.361">    correct(rows, u, y, h, R, meanFuncY, residualFuncY, residualFuncX, addFuncX);</a>
+<span class="sourceLineNo">362</span><a id="line.362">  }</a>
+<span class="sourceLineNo">363</span><a id="line.363"></a>
+<span class="sourceLineNo">364</span><a id="line.364">  /**</a>
+<span class="sourceLineNo">365</span><a id="line.365">   * Correct the state estimate x-hat using the measurements in y.</a>
+<span class="sourceLineNo">366</span><a id="line.366">   *</a>
+<span class="sourceLineNo">367</span><a id="line.367">   * &lt;p&gt;This is useful for when the measurements available during a timestep's Correct() call vary.</a>
+<span class="sourceLineNo">368</span><a id="line.368">   * The h(x, u) passed to the constructor is used if one is not provided (the two-argument version</a>
+<span class="sourceLineNo">369</span><a id="line.369">   * of this function).</a>
+<span class="sourceLineNo">370</span><a id="line.370">   *</a>
+<span class="sourceLineNo">371</span><a id="line.371">   * @param &lt;R&gt; Number of measurements in y.</a>
+<span class="sourceLineNo">372</span><a id="line.372">   * @param rows Number of rows in y.</a>
+<span class="sourceLineNo">373</span><a id="line.373">   * @param u Same control input used in the predict step.</a>
+<span class="sourceLineNo">374</span><a id="line.374">   * @param y Measurement vector.</a>
+<span class="sourceLineNo">375</span><a id="line.375">   * @param h A vector-valued function of x and u that returns the measurement vector.</a>
+<span class="sourceLineNo">376</span><a id="line.376">   * @param R Measurement noise covariance matrix (continuous-time).</a>
+<span class="sourceLineNo">377</span><a id="line.377">   * @param meanFuncY A function that computes the mean of 2 * States + 1 measurement vectors using</a>
+<span class="sourceLineNo">378</span><a id="line.378">   *     a given set of weights.</a>
+<span class="sourceLineNo">379</span><a id="line.379">   * @param residualFuncY A function that computes the residual of two measurement vectors (i.e. it</a>
+<span class="sourceLineNo">380</span><a id="line.380">   *     subtracts them.)</a>
+<span class="sourceLineNo">381</span><a id="line.381">   * @param residualFuncX A function that computes the residual of two state vectors (i.e. it</a>
+<span class="sourceLineNo">382</span><a id="line.382">   *     subtracts them.)</a>
+<span class="sourceLineNo">383</span><a id="line.383">   * @param addFuncX A function that adds two state vectors.</a>
+<span class="sourceLineNo">384</span><a id="line.384">   */</a>
+<span class="sourceLineNo">385</span><a id="line.385">  @SuppressWarnings({"ParameterName", "LocalVariableName"})</a>
+<span class="sourceLineNo">386</span><a id="line.386">  public &lt;R extends Num&gt; void correct(</a>
+<span class="sourceLineNo">387</span><a id="line.387">      Nat&lt;R&gt; rows,</a>
+<span class="sourceLineNo">388</span><a id="line.388">      Matrix&lt;Inputs, N1&gt; u,</a>
+<span class="sourceLineNo">389</span><a id="line.389">      Matrix&lt;R, N1&gt; y,</a>
+<span class="sourceLineNo">390</span><a id="line.390">      BiFunction&lt;Matrix&lt;States, N1&gt;, Matrix&lt;Inputs, N1&gt;, Matrix&lt;R, N1&gt;&gt; h,</a>
+<span class="sourceLineNo">391</span><a id="line.391">      Matrix&lt;R, R&gt; R,</a>
+<span class="sourceLineNo">392</span><a id="line.392">      BiFunction&lt;Matrix&lt;R, ?&gt;, Matrix&lt;?, N1&gt;, Matrix&lt;R, N1&gt;&gt; meanFuncY,</a>
+<span class="sourceLineNo">393</span><a id="line.393">      BiFunction&lt;Matrix&lt;R, N1&gt;, Matrix&lt;R, N1&gt;, Matrix&lt;R, N1&gt;&gt; residualFuncY,</a>
+<span class="sourceLineNo">394</span><a id="line.394">      BiFunction&lt;Matrix&lt;States, N1&gt;, Matrix&lt;States, N1&gt;, Matrix&lt;States, N1&gt;&gt; residualFuncX,</a>
+<span class="sourceLineNo">395</span><a id="line.395">      BiFunction&lt;Matrix&lt;States, N1&gt;, Matrix&lt;States, N1&gt;, Matrix&lt;States, N1&gt;&gt; addFuncX) {</a>
+<span class="sourceLineNo">396</span><a id="line.396">    final var discR = Discretization.discretizeR(R, m_dtSeconds);</a>
 <span class="sourceLineNo">397</span><a id="line.397"></a>
-<span class="sourceLineNo">398</span><a id="line.398">    // Mean and covariance of prediction passed through unscented transform</a>
-<span class="sourceLineNo">399</span><a id="line.399">    var transRet =</a>
-<span class="sourceLineNo">400</span><a id="line.400">        unscentedTransform(</a>
-<span class="sourceLineNo">401</span><a id="line.401">            m_states, rows, sigmasH, m_pts.getWm(), m_pts.getWc(), meanFuncY, residualFuncY);</a>
-<span class="sourceLineNo">402</span><a id="line.402">    var yHat = transRet.getFirst();</a>
-<span class="sourceLineNo">403</span><a id="line.403">    var Py = transRet.getSecond().plus(discR);</a>
-<span class="sourceLineNo">404</span><a id="line.404"></a>
-<span class="sourceLineNo">405</span><a id="line.405">    // Compute cross covariance of the state and the measurements</a>
-<span class="sourceLineNo">406</span><a id="line.406">    Matrix&lt;States, R&gt; Pxy = new Matrix&lt;&gt;(m_states, rows);</a>
-<span class="sourceLineNo">407</span><a id="line.407">    for (int i = 0; i &lt; m_pts.getNumSigmas(); i++) {</a>
-<span class="sourceLineNo">408</span><a id="line.408">      // Pxy += (sigmas_f[:, i] - x̂)(sigmas_h[:, i] - ŷ)ᵀ W_c[i]</a>
-<span class="sourceLineNo">409</span><a id="line.409">      var dx = residualFuncX.apply(m_sigmasF.extractColumnVector(i), m_xHat);</a>
-<span class="sourceLineNo">410</span><a id="line.410">      var dy = residualFuncY.apply(sigmasH.extractColumnVector(i), yHat).transpose();</a>
-<span class="sourceLineNo">411</span><a id="line.411"></a>
-<span class="sourceLineNo">412</span><a id="line.412">      Pxy = Pxy.plus(dx.times(dy).times(m_pts.getWc(i)));</a>
-<span class="sourceLineNo">413</span><a id="line.413">    }</a>
-<span class="sourceLineNo">414</span><a id="line.414"></a>
-<span class="sourceLineNo">415</span><a id="line.415">    // K = P_{xy} P_y⁻¹</a>
-<span class="sourceLineNo">416</span><a id="line.416">    // Kᵀ = P_yᵀ⁻¹ P_{xy}ᵀ</a>
-<span class="sourceLineNo">417</span><a id="line.417">    // P_yᵀKᵀ = P_{xy}ᵀ</a>
-<span class="sourceLineNo">418</span><a id="line.418">    // Kᵀ = P_yᵀ.solve(P_{xy}ᵀ)</a>
-<span class="sourceLineNo">419</span><a id="line.419">    // K = (P_yᵀ.solve(P_{xy}ᵀ)ᵀ</a>
-<span class="sourceLineNo">420</span><a id="line.420">    Matrix&lt;States, R&gt; K = new Matrix&lt;&gt;(Py.transpose().solve(Pxy.transpose()).transpose());</a>
-<span class="sourceLineNo">421</span><a id="line.421"></a>
-<span class="sourceLineNo">422</span><a id="line.422">    // x̂ₖ₊₁⁺ = x̂ₖ₊₁⁻ + K(y − ŷ)</a>
-<span class="sourceLineNo">423</span><a id="line.423">    m_xHat = addFuncX.apply(m_xHat, K.times(residualFuncY.apply(y, yHat)));</a>
-<span class="sourceLineNo">424</span><a id="line.424"></a>
-<span class="sourceLineNo">425</span><a id="line.425">    // Pₖ₊₁⁺ = Pₖ₊₁⁻ − KP_yKᵀ</a>
-<span class="sourceLineNo">426</span><a id="line.426">    m_P = m_P.minus(K.times(Py).times(K.transpose()));</a>
-<span class="sourceLineNo">427</span><a id="line.427">  }</a>
-<span class="sourceLineNo">428</span><a id="line.428">}</a>
+<span class="sourceLineNo">398</span><a id="line.398">    // Transform sigma points into measurement space</a>
+<span class="sourceLineNo">399</span><a id="line.399">    Matrix&lt;R, ?&gt; sigmasH = new Matrix&lt;&gt;(new SimpleMatrix(rows.getNum(), 2 * m_states.getNum() + 1));</a>
+<span class="sourceLineNo">400</span><a id="line.400">    var sigmas = m_pts.sigmaPoints(m_xHat, m_P);</a>
+<span class="sourceLineNo">401</span><a id="line.401">    for (int i = 0; i &lt; m_pts.getNumSigmas(); i++) {</a>
+<span class="sourceLineNo">402</span><a id="line.402">      Matrix&lt;R, N1&gt; hRet = h.apply(sigmas.extractColumnVector(i), u);</a>
+<span class="sourceLineNo">403</span><a id="line.403">      sigmasH.setColumn(i, hRet);</a>
+<span class="sourceLineNo">404</span><a id="line.404">    }</a>
+<span class="sourceLineNo">405</span><a id="line.405"></a>
+<span class="sourceLineNo">406</span><a id="line.406">    // Mean and covariance of prediction passed through unscented transform</a>
+<span class="sourceLineNo">407</span><a id="line.407">    var transRet =</a>
+<span class="sourceLineNo">408</span><a id="line.408">        unscentedTransform(</a>
+<span class="sourceLineNo">409</span><a id="line.409">            m_states, rows, sigmasH, m_pts.getWm(), m_pts.getWc(), meanFuncY, residualFuncY);</a>
+<span class="sourceLineNo">410</span><a id="line.410">    var yHat = transRet.getFirst();</a>
+<span class="sourceLineNo">411</span><a id="line.411">    var Py = transRet.getSecond().plus(discR);</a>
+<span class="sourceLineNo">412</span><a id="line.412"></a>
+<span class="sourceLineNo">413</span><a id="line.413">    // Compute cross covariance of the state and the measurements</a>
+<span class="sourceLineNo">414</span><a id="line.414">    Matrix&lt;States, R&gt; Pxy = new Matrix&lt;&gt;(m_states, rows);</a>
+<span class="sourceLineNo">415</span><a id="line.415">    for (int i = 0; i &lt; m_pts.getNumSigmas(); i++) {</a>
+<span class="sourceLineNo">416</span><a id="line.416">      // Pxy += (sigmas_f[:, i] - x̂)(sigmas_h[:, i] - ŷ)ᵀ W_c[i]</a>
+<span class="sourceLineNo">417</span><a id="line.417">      var dx = residualFuncX.apply(m_sigmasF.extractColumnVector(i), m_xHat);</a>
+<span class="sourceLineNo">418</span><a id="line.418">      var dy = residualFuncY.apply(sigmasH.extractColumnVector(i), yHat).transpose();</a>
+<span class="sourceLineNo">419</span><a id="line.419"></a>
+<span class="sourceLineNo">420</span><a id="line.420">      Pxy = Pxy.plus(dx.times(dy).times(m_pts.getWc(i)));</a>
+<span class="sourceLineNo">421</span><a id="line.421">    }</a>
+<span class="sourceLineNo">422</span><a id="line.422"></a>
+<span class="sourceLineNo">423</span><a id="line.423">    // K = P_{xy} P_y⁻¹</a>
+<span class="sourceLineNo">424</span><a id="line.424">    // Kᵀ = P_yᵀ⁻¹ P_{xy}ᵀ</a>
+<span class="sourceLineNo">425</span><a id="line.425">    // P_yᵀKᵀ = P_{xy}ᵀ</a>
+<span class="sourceLineNo">426</span><a id="line.426">    // Kᵀ = P_yᵀ.solve(P_{xy}ᵀ)</a>
+<span class="sourceLineNo">427</span><a id="line.427">    // K = (P_yᵀ.solve(P_{xy}ᵀ)ᵀ</a>
+<span class="sourceLineNo">428</span><a id="line.428">    Matrix&lt;States, R&gt; K = new Matrix&lt;&gt;(Py.transpose().solve(Pxy.transpose()).transpose());</a>
+<span class="sourceLineNo">429</span><a id="line.429"></a>
+<span class="sourceLineNo">430</span><a id="line.430">    // x̂ₖ₊₁⁺ = x̂ₖ₊₁⁻ + K(y − ŷ)</a>
+<span class="sourceLineNo">431</span><a id="line.431">    m_xHat = addFuncX.apply(m_xHat, K.times(residualFuncY.apply(y, yHat)));</a>
+<span class="sourceLineNo">432</span><a id="line.432"></a>
+<span class="sourceLineNo">433</span><a id="line.433">    // Pₖ₊₁⁺ = Pₖ₊₁⁻ − KP_yKᵀ</a>
+<span class="sourceLineNo">434</span><a id="line.434">    m_P = m_P.minus(K.times(Py).times(K.transpose()));</a>
+<span class="sourceLineNo">435</span><a id="line.435">  }</a>
+<span class="sourceLineNo">436</span><a id="line.436">}</a>
 
 
 
