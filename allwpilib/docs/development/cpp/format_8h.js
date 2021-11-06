@@ -145,7 +145,7 @@ var format_8h =
     [ "num_bits< int128_t >", "format_8h.html#acbe0a8761992f2e4e8c386494ab0ff52", null ],
     [ "num_bits< uint128_t >", "format_8h.html#a376e7f716016af7f2de3fd974a75045e", null ],
     [ "prefix_append", "format_8h.html#a98fdf1336c7732a2b57b5866b57586b7", null ],
-    [ "print", "format_8h.html#aa348a72f26ad98c21315d54f255f6fcb", null ],
+    [ "print", "format_8h.html#a4b7c06a301760f9866b4d66f5c9386a9", null ],
     [ "promote_float", "format_8h.html#ae42461fdb7afc8f5ce0a0011e443dbb3", null ],
     [ "promote_float", "format_8h.html#aaf13f5768e8390acf49a3d61527b1211", null ],
     [ "ptr", "format_8h.html#aa6ec2d4315570f27d9637ce3c770e787", null ],

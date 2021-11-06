@@ -51,7 +51,7 @@ var format_inl_8h =
     [ "operator*", "format-inl_8h.html#a5f2429037339f44b8d88e7ccf7ae6347", null ],
     [ "operator==", "format-inl_8h.html#aa603b042d25caa96cdd2e68d95948651", null ],
     [ "power_of_10_64", "format-inl_8h.html#a5f3f2c32d9c84acf623c1104cb467143", null ],
-    [ "print", "format-inl_8h.html#aa348a72f26ad98c21315d54f255f6fcb", null ],
+    [ "print", "format-inl_8h.html#a4b7c06a301760f9866b4d66f5c9386a9", null ],
     [ "remove_trailing_zeros", "format-inl_8h.html#a83117db8135a641068152ca16b84f2c8", null ],
     [ "remove_trailing_zeros", "format-inl_8h.html#a9fc2fb80666f3b16561c5e76c6339d5d", null ],
     [ "report_error", "format-inl_8h.html#a500ea148a2d7d71c2b2ab8888f8f10f0", null ],

@@ -125,7 +125,7 @@ var namespacedetail =
     [ "operator<<", "namespacedetail.html#a6717b2662168acee70dfbbdd3168adf4", null ],
     [ "operator==", "namespacedetail.html#aa603b042d25caa96cdd2e68d95948651", null ],
     [ "power_of_10_64", "namespacedetail.html#a5f3f2c32d9c84acf623c1104cb467143", null ],
-    [ "print", "namespacedetail.html#aa348a72f26ad98c21315d54f255f6fcb", null ],
+    [ "print", "namespacedetail.html#a4b7c06a301760f9866b4d66f5c9386a9", null ],
     [ "range_begin", "namespacedetail.html#a379579c5cd4dea85f22752fc3382e845", null ],
     [ "range_begin", "namespacedetail.html#a0b0f31fb8598cbf414f80bc9104be477", null ],
     [ "range_begin", "namespacedetail.html#a8a1d402c0a162daf8e9b637abe48ca4e", null ],

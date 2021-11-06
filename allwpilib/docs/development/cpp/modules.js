@@ -7,13 +7,13 @@ var modules =
     [ "Reader API", "group__reader.html", "group__reader" ],
     [ "Expect API", "group__expect.html", "group__expect" ],
     [ "Node API", "group__node.html", "group__node" ],
-    [ "ntcore C++ API", "group__ntcore__cpp__handle__api.html", "group__ntcore__cpp__handle__api" ],
     [ "ntcore C API", "group__ntcore__c__api.html", "group__ntcore__c__api" ],
     [ "ntcore C++ object-oriented API", "group__ntcore__cpp__api.html", "group__ntcore__cpp__api" ],
-    [ "cscore C++ function API", "group__cscore__cpp__api.html", "group__cscore__cpp__api" ],
+    [ "ntcore C++ API", "group__ntcore__cpp__handle__api.html", "group__ntcore__cpp__handle__api" ],
+    [ "cscore C++ object-oriented API", "group__cscore__oo.html", "group__cscore__oo" ],
     [ "cscore C API", "group__cscore__c__api.html", "group__cscore__c__api" ],
     [ "Raw Image Functions", "group__cscore__raw__cfunc.html", "group__cscore__raw__cfunc" ],
-    [ "cscore C++ object-oriented API", "group__cscore__oo.html", "group__cscore__oo" ],
+    [ "cscore C++ function API", "group__cscore__cpp__api.html", "group__cscore__cpp__api" ],
     [ "Unit Containers", "group___unit_containers.html", "group___unit_containers" ],
     [ "Unit Types", "group___unit_types.html", "group___unit_types" ],
     [ "Unit Manipulators", "group___unit_manipulators.html", "group___unit_manipulators" ],
@@ -22,7 +22,7 @@ var modules =
     [ "Explicit Conversion", "group___conversion.html", "group___conversion" ],
     [ "Type Traits", "group___type_traits.html", "group___type_traits" ],
     [ "Global matrix typedefs", "group__matrixtypedefs.html", null ],
+    [ "Global array typedefs", "group__arraytypedefs.html", null ],
     [ "Flags", "group__flags.html", "group__flags" ],
-    [ "Enumerations", "group__enums.html", "group__enums" ],
-    [ "Global array typedefs", "group__arraytypedefs.html", null ]
+    [ "Enumerations", "group__enums.html", "group__enums" ]
 ];

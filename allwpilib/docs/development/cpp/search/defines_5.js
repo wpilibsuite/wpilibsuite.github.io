@@ -40,7 +40,7 @@ var searchData=
   ['fmt_5fhas_5ffeature_37',['FMT_HAS_FEATURE',['../core_8h.html#a749169f277bb21ccf12b1c665e68e88a',1,'core.h']]],
   ['fmt_5fhas_5fgxx_5fcxx11_38',['FMT_HAS_GXX_CXX11',['../core_8h.html#a1e3ffe834c427bc295b6880efcd17976',1,'core.h']]],
   ['fmt_5fhas_5finclude_39',['FMT_HAS_INCLUDE',['../core_8h.html#afa144e698f8df527d6e51688eb9abbd1',1,'core.h']]],
-  ['fmt_5ficc_5fversion_40',['FMT_ICC_VERSION',['../format_8h.html#a061a90c1c2008acd7b0161cde41c1a11',1,'FMT_ICC_VERSION():&#160;format.h'],['../core_8h.html#a061a90c1c2008acd7b0161cde41c1a11',1,'FMT_ICC_VERSION():&#160;core.h']]],
+  ['fmt_5ficc_5fversion_40',['FMT_ICC_VERSION',['../core_8h.html#a061a90c1c2008acd7b0161cde41c1a11',1,'FMT_ICC_VERSION():&#160;core.h'],['../format_8h.html#a061a90c1c2008acd7b0161cde41c1a11',1,'FMT_ICC_VERSION():&#160;format.h']]],
   ['fmt_5finc_41',['FMT_INC',['../format_8h.html#a1180be02df7e510ba4ea045c4ca8eaa6',1,'format.h']]],
   ['fmt_5finline_42',['FMT_INLINE',['../core_8h.html#aba4c375a41fe80858992762b3bc5c75e',1,'core.h']]],
   ['fmt_5finline_5fnamespace_43',['FMT_INLINE_NAMESPACE',['../core_8h.html#a750d1276ba35fb73b8f2998389a5f8c6',1,'core.h']]],
