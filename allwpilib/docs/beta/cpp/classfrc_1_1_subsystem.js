@@ -1,6 +1,7 @@
 var classfrc_1_1_subsystem =
 [
     [ "Subsystem", "classfrc_1_1_subsystem.html#a6e9d67c0f56f96da8b605dedea55132c", null ],
+    [ "Subsystem", "classfrc_1_1_subsystem.html#a640987ec192b673a2141b71d3887d27d", null ],
     [ "AddChild", "classfrc_1_1_subsystem.html#af1919e941843966993365b0fd4892a34", null ],
     [ "AddChild", "classfrc_1_1_subsystem.html#a30d485a185ac7901e09530d1402d18f5", null ],
     [ "AddChild", "classfrc_1_1_subsystem.html#a3d5c38c79b5778e9e72b2bdc3d9144d8", null ],
@@ -15,9 +16,11 @@ var classfrc_1_1_subsystem =
     [ "GetSubsystem", "classfrc_1_1_subsystem.html#a0a37b8ae610a3bc6d97cfc2ebba449aa", null ],
     [ "InitDefaultCommand", "classfrc_1_1_subsystem.html#ac62e213c6c1c4bc3d12530c5d2fe94a5", null ],
     [ "InitSendable", "classfrc_1_1_subsystem.html#ae15724ae90278588777eba6cbed925fe", null ],
+    [ "operator=", "classfrc_1_1_subsystem.html#a78eb6af5bfaadd71700c309fd539537d", null ],
     [ "Periodic", "classfrc_1_1_subsystem.html#afcb1c92c628e067293f99ba6a55e1df6", null ],
     [ "SetCurrentCommand", "classfrc_1_1_subsystem.html#a6e3c1968fbb174c21fd12209550a3f1f", null ],
     [ "SetDefaultCommand", "classfrc_1_1_subsystem.html#aa62d29f60d07a76c3c8e8d70169abfaa", null ],
     [ "SetName", "classfrc_1_1_subsystem.html#af56acfffe2f1379550f52858ff3f0942", null ],
-    [ "SetSubsystem", "classfrc_1_1_subsystem.html#ae0f35348627641fcce846d7bb757a195", null ]
+    [ "SetSubsystem", "classfrc_1_1_subsystem.html#ae0f35348627641fcce846d7bb757a195", null ],
+    [ "Scheduler", "classfrc_1_1_subsystem.html#afb88c77ea5daaefa6c8fa6bc5b9aa5c1", null ]
 ];

@@ -1,5 +1,8 @@
 var classfrc_1_1_shuffleboard_container =
 [
+    [ "ShuffleboardContainer", "classfrc_1_1_shuffleboard_container.html#aea0440088bc364e21d070537a551b51e", null ],
+    [ "ShuffleboardContainer", "classfrc_1_1_shuffleboard_container.html#a32b260c3faf66d9cf05485bff037a8ab", null ],
+    [ "~ShuffleboardContainer", "classfrc_1_1_shuffleboard_container.html#ab09d34e46083b657460557d4dcc5c8a0", null ],
     [ "Add", "classfrc_1_1_shuffleboard_container.html#a956e703a937e9ee8d0a5fe5415f42aa4", null ],
     [ "Add", "classfrc_1_1_shuffleboard_container.html#a9203a6f4ed31a1bef6b3e328ab170d01", null ],
     [ "Add", "classfrc_1_1_shuffleboard_container.html#a224d67f512781948792128f574a42a06", null ],
@@ -34,5 +37,7 @@ var classfrc_1_1_shuffleboard_container =
     [ "GetLayout", "classfrc_1_1_shuffleboard_container.html#ae7f210329f9630dc14c134c11a1d44ea", null ],
     [ "GetLayout", "classfrc_1_1_shuffleboard_container.html#a7ab25da097595e26e9f176d62f36c404", null ],
     [ "GetLayout", "classfrc_1_1_shuffleboard_container.html#a4afe6daf70583b58190b7a8b30e941b3", null ],
-    [ "GetLayout", "classfrc_1_1_shuffleboard_container.html#a776a5852407f8e385454cad710795d02", null ]
+    [ "GetLayout", "classfrc_1_1_shuffleboard_container.html#a776a5852407f8e385454cad710795d02", null ],
+    [ "SimpleWidget", "classfrc_1_1_shuffleboard_container.html#a0b86e6f2293f4f37d1dc6017379b429d", null ],
+    [ "m_isLayout", "classfrc_1_1_shuffleboard_container.html#a9981551ff318cd1578d976bdae948aad", null ]
 ];

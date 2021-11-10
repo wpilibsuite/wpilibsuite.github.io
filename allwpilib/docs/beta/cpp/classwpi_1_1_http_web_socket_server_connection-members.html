@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('classwpi_1_1_http_web_socket_server_co
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="classwpi_1_1_http_server_connection.html#a49235d25ea52d88faab2633741fd5d37">BuildCommonHeaders</a>(raw_ostream &amp;os)</td><td class="entry"><a class="el" href="classwpi_1_1_http_server_connection.html">wpi::HttpServerConnection</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">virtual</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classwpi_1_1_http_server_connection.html#abc4c5490c7f33ec73d71a9622b4128da">BuildHeader</a>(raw_ostream &amp;os, int code, std::string_view codeText, std::string_view contentType, uint64_t contentLength, std::string_view extra={})</td><td class="entry"><a class="el" href="classwpi_1_1_http_server_connection.html">wpi::HttpServerConnection</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>HttpServerConnection</b>(std::shared_ptr&lt; uv::Stream &gt; stream) (defined in <a class="el" href="classwpi_1_1_http_server_connection.html">wpi::HttpServerConnection</a>)</td><td class="entry"><a class="el" href="classwpi_1_1_http_server_connection.html">wpi::HttpServerConnection</a></td><td class="entry"><span class="mlabel">explicit</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classwpi_1_1_http_server_connection.html#a204be8b4e203e024cb08e6650dd17d8d">HttpServerConnection</a>(std::shared_ptr&lt; uv::Stream &gt; stream)</td><td class="entry"><a class="el" href="classwpi_1_1_http_server_connection.html">wpi::HttpServerConnection</a></td><td class="entry"><span class="mlabel">explicit</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classwpi_1_1_http_web_socket_server_connection.html#a389ccfa5ca05ac24ef2935574b481d37">HttpWebSocketServerConnection</a>(std::shared_ptr&lt; uv::Stream &gt; stream, span&lt; const std::string_view &gt; protocols)</td><td class="entry"><a class="el" href="classwpi_1_1_http_web_socket_server_connection.html">wpi::HttpWebSocketServerConnection&lt; Derived &gt;</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classwpi_1_1_http_web_socket_server_connection.html#a8b48cdc3a852e77d1cfb7a8ebb4931f4">HttpWebSocketServerConnection</a>(std::shared_ptr&lt; uv::Stream &gt; stream, std::initializer_list&lt; std::string_view &gt; protocols)</td><td class="entry"><a class="el" href="classwpi_1_1_http_web_socket_server_connection.html">wpi::HttpWebSocketServerConnection&lt; Derived &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classwpi_1_1_http_web_socket_server_connection.html#a630fcfc52cab0f50adbfc38b2349c447">IsValidWsUpgrade</a>(std::string_view protocol)</td><td class="entry"><a class="el" href="classwpi_1_1_http_web_socket_server_connection.html">wpi::HttpWebSocketServerConnection&lt; Derived &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></td></tr>
@@ -117,13 +117,13 @@ $(document).ready(function(){initNavTree('classwpi_1_1_http_web_socket_server_co
   <tr class="odd"><td class="entry"><a class="el" href="classwpi_1_1_http_server_connection.html#a6878054742f5deb6191c45499e4ab6e5">SendError</a>(int code, std::string_view message={})</td><td class="entry"><a class="el" href="classwpi_1_1_http_server_connection.html">wpi::HttpServerConnection</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classwpi_1_1_http_server_connection.html#aca323f8c2114ec8510ce571fe647d4d7">SendResponse</a>(int code, std::string_view codeText, std::string_view contentType, std::string_view content, std::string_view extraHeader={})</td><td class="entry"><a class="el" href="classwpi_1_1_http_server_connection.html">wpi::HttpServerConnection</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">virtual</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classwpi_1_1_http_server_connection.html#a548a44730f8b4303d97bc0390407324d">SendStaticResponse</a>(int code, std::string_view codeText, std::string_view contentType, std::string_view content, bool gzipped, std::string_view extraHeader={})</td><td class="entry"><a class="el" href="classwpi_1_1_http_server_connection.html">wpi::HttpServerConnection</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">virtual</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>~HttpServerConnection</b>()=default (defined in <a class="el" href="classwpi_1_1_http_server_connection.html">wpi::HttpServerConnection</a>)</td><td class="entry"><a class="el" href="classwpi_1_1_http_server_connection.html">wpi::HttpServerConnection</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classwpi_1_1_http_server_connection.html#a724e3f5bec8d51d91b2ae3b507e27767">~HttpServerConnection</a>()=default</td><td class="entry"><a class="el" href="classwpi_1_1_http_server_connection.html">wpi::HttpServerConnection</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:52 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:40 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

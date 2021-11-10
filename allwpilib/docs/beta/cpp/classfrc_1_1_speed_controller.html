@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -109,10 +109,10 @@ Inheritance diagram for frc::SpeedController:</div>
   <img src="classfrc_1_1_speed_controller.png" usemap="#frc::SpeedController_map" alt=""/>
   <map id="frc::SpeedController_map" name="frc::SpeedController_map">
 <area href="classfrc_1_1_motor_controller.html" title="Interface for motor controlling devices." alt="frc::MotorController" shape="rect" coords="256,56,417,80"/>
-<area href="classfrc_1_1_motor_controller_group.html" alt="frc::MotorControllerGroup" shape="rect" coords="0,112,161,136"/>
+<area href="classfrc_1_1_motor_controller_group.html" title="Allows multiple MotorController objects to be linked together." alt="frc::MotorControllerGroup" shape="rect" coords="0,112,161,136"/>
 <area href="classfrc_1_1_nidec_brushless.html" title="Nidec Brushless Motor." alt="frc::NidecBrushless" shape="rect" coords="171,112,332,136"/>
 <area href="classfrc_1_1_p_w_m_motor_controller.html" title="Common base class for all PWM Motor Controllers." alt="frc::PWMMotorController" shape="rect" coords="342,112,503,136"/>
-<area href="classfrc_1_1_speed_controller_group.html" alt="frc::SpeedControllerGroup" shape="rect" coords="513,112,674,136"/>
+<area href="classfrc_1_1_speed_controller_group.html" title="Allows multiple SpeedController objects to be linked together." alt="frc::SpeedControllerGroup" shape="rect" coords="513,112,674,136"/>
 <area href="classfrc_1_1_d_m_c60.html" title="Digilent DMC 60 Motor Controller." alt="frc::DMC60" shape="rect" coords="513,168,674,192"/>
 <area href="classfrc_1_1_jaguar.html" title="Luminary Micro / Vex Robotics Jaguar Motor Controller with PWM control." alt="frc::Jaguar" shape="rect" coords="513,224,674,248"/>
 <area href="classfrc_1_1_p_w_m_spark_max.html" title="REV Robotics SPARK MAX Motor Controller." alt="frc::PWMSparkMax" shape="rect" coords="513,280,674,304"/>
@@ -130,6 +130,8 @@ Inheritance diagram for frc::SpeedController:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a4ef9f2180123f5dddb586b1759e85fa8"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_speed_controller.html#a4ef9f2180123f5dddb586b1759e85fa8">~SpeedController</a> ()=default</td></tr>
+<tr class="separator:a4ef9f2180123f5dddb586b1759e85fa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f0cefeb5a3ab00111b472bfaaf55ab7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_speed_controller.html#a3f0cefeb5a3ab00111b472bfaaf55ab7">Set</a> (double speed)=0</td></tr>
 <tr class="memdesc:a3f0cefeb5a3ab00111b472bfaaf55ab7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Common interface for setting the speed of a speed controller.  <a href="classfrc_1_1_speed_controller.html#a3f0cefeb5a3ab00111b472bfaaf55ab7">More...</a><br /></td></tr>
 <tr class="separator:a3f0cefeb5a3ab00111b472bfaaf55ab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,7 +156,34 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Interface for speed controlling devices. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000066">Deprecated:</a></b></dt><dd>Use <a class="el" href="classfrc_1_1_motor_controller.html" title="Interface for motor controlling devices.">MotorController</a>. </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a4ef9f2180123f5dddb586b1759e85fa8" name="a4ef9f2180123f5dddb586b1759e85fa8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ef9f2180123f5dddb586b1759e85fa8">&#9670;&nbsp;</a></span>~SpeedController()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual frc::SpeedController::~SpeedController </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a707b81e11fb0258c9ce7d969a6cdb60a" name="a707b81e11fb0258c9ce7d969a6cdb60a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a707b81e11fb0258c9ce7d969a6cdb60a">&#9670;&nbsp;</a></span>Disable()</h2>
 
@@ -377,7 +406,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Common interface to stop the motor until Set is called again. </p>
 
-<p>Implemented in <a class="el" href="classfrc_1_1_motor_controller_group.html#a1018f6fa8af739eb2527ab5edbdca8b2">frc::MotorControllerGroup</a>, and <a class="el" href="classfrc_1_1_speed_controller_group.html#a0d9e7ef06194a4125d677acc9fef9f34">frc::SpeedControllerGroup</a>.</p>
+<p>Implemented in <a class="el" href="classfrc_1_1_motor_controller_group.html#a1018f6fa8af739eb2527ab5edbdca8b2">frc::MotorControllerGroup</a>, <a class="el" href="classfrc_1_1_nidec_brushless.html#a2ff988ba4a5488c8da0ba2237fc26c3c">frc::NidecBrushless</a>, <a class="el" href="classfrc_1_1_p_w_m_motor_controller.html#a7d268832fe2fc1a6a5dde3f27095a026">frc::PWMMotorController</a>, and <a class="el" href="classfrc_1_1_speed_controller_group.html#a0d9e7ef06194a4125d677acc9fef9f34">frc::SpeedControllerGroup</a>.</p>
 
 </div>
 </div>
@@ -389,8 +418,8 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1_speed_controller.html">SpeedController</a></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:51 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_speed_controller.html">SpeedController</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:38 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

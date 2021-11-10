@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('threadpool_8h_source.html',''); initRe
   <div class="headertitle"><div class="title">threadpool.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/* Copyright Joyent, Inc. and other Node contributors. All rights reserved.</span></div>
+<a href="threadpool_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/* Copyright Joyent, Inc. and other Node contributors. All rights reserved.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> *</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> * Permission is hereby granted, free of charge, to any person obtaining a copy</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * of this software and associated documentation files (the &quot;Software&quot;), to</span></div>
@@ -124,22 +124,27 @@ $(document).ready(function(){initNavTree('threadpool_8h_source.html',''); initRe
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#define UV_THREADPOOL_H_</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="structuv____work.html">   30</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structuv____work.html">uv__work</a> {</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  void (*work)(<span class="keyword">struct </span><a class="code hl_struct" href="structuv____work.html">uv__work</a> *w);</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  void (*done)(<span class="keyword">struct </span><a class="code hl_struct" href="structuv____work.html">uv__work</a> *w, <span class="keywordtype">int</span> status);</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <span class="keyword">struct </span><a class="code hl_struct" href="structuv__loop__s.html">uv_loop_s</a>* loop;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <span class="keywordtype">void</span>* wq[2];</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="structuv____work.html#ae15a4e35dbd9a3172961df99b2c931a8">   31</a></span>  void (*<a class="code hl_variable" href="structuv____work.html#ae15a4e35dbd9a3172961df99b2c931a8">work</a>)(<span class="keyword">struct </span><a class="code hl_struct" href="structuv____work.html">uv__work</a> *w);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="structuv____work.html#ad7ea3cfc241af50786d5c5822c1bfe53">   32</a></span>  void (*<a class="code hl_variable" href="structuv____work.html#ad7ea3cfc241af50786d5c5822c1bfe53">done</a>)(<span class="keyword">struct </span><a class="code hl_struct" href="structuv____work.html">uv__work</a> *w, <span class="keywordtype">int</span> <a class="code hl_function" href="namespaceghc_1_1filesystem.html#a00bcaee548f274868a8b45b7c8547bae">status</a>);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="structuv____work.html#a902db58d27271a1c0baa31f2a499fc00">   33</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="structuv__loop__s.html">uv_loop_s</a>* <a class="code hl_variable" href="structuv____work.html#a902db58d27271a1c0baa31f2a499fc00">loop</a>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="structuv____work.html#a2c6eda71852844b5bf702340a76ca8e6">   34</a></span>  <span class="keywordtype">void</span>* <a class="code hl_variable" href="structuv____work.html#a2c6eda71852844b5bf702340a76ca8e6">wq</a>[2];</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>};</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#endif </span><span class="comment">/* UV_THREADPOOL_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="anamespaceghc_1_1filesystem_html_a00bcaee548f274868a8b45b7c8547bae"><div class="ttname"><a href="namespaceghc_1_1filesystem.html#a00bcaee548f274868a8b45b7c8547bae">ghc::filesystem::status</a></div><div class="ttdeci">GHC_FS_API file_status status(const path &amp;p, std::error_code &amp;ec) noexcept</div><div class="ttdef"><b>Definition:</b> filesystem.hpp:4892</div></div>
 <div class="ttc" id="astructuv____work_html"><div class="ttname"><a href="structuv____work.html">uv__work</a></div><div class="ttdef"><b>Definition:</b> threadpool.h:30</div></div>
+<div class="ttc" id="astructuv____work_html_a2c6eda71852844b5bf702340a76ca8e6"><div class="ttname"><a href="structuv____work.html#a2c6eda71852844b5bf702340a76ca8e6">uv__work::wq</a></div><div class="ttdeci">void * wq[2]</div><div class="ttdef"><b>Definition:</b> threadpool.h:34</div></div>
+<div class="ttc" id="astructuv____work_html_a902db58d27271a1c0baa31f2a499fc00"><div class="ttname"><a href="structuv____work.html#a902db58d27271a1c0baa31f2a499fc00">uv__work::loop</a></div><div class="ttdeci">struct uv_loop_s * loop</div><div class="ttdef"><b>Definition:</b> threadpool.h:33</div></div>
+<div class="ttc" id="astructuv____work_html_ad7ea3cfc241af50786d5c5822c1bfe53"><div class="ttname"><a href="structuv____work.html#ad7ea3cfc241af50786d5c5822c1bfe53">uv__work::done</a></div><div class="ttdeci">void(* done)(struct uv__work *w, int status)</div><div class="ttdef"><b>Definition:</b> threadpool.h:32</div></div>
+<div class="ttc" id="astructuv____work_html_ae15a4e35dbd9a3172961df99b2c931a8"><div class="ttname"><a href="structuv____work.html#ae15a4e35dbd9a3172961df99b2c931a8">uv__work::work</a></div><div class="ttdeci">void(* work)(struct uv__work *w)</div><div class="ttdef"><b>Definition:</b> threadpool.h:31</div></div>
 <div class="ttc" id="astructuv__loop__s_html"><div class="ttname"><a href="structuv__loop__s.html">uv_loop_s</a></div><div class="ttdef"><b>Definition:</b> uv.h:1644</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_087b1a8e0ed1488a006d59bf0cd93b9d.html">libuv</a></li><li class="navelem"><a class="el" href="dir_87a6640707d1b098e35356ebaaac7457.html">include</a></li><li class="navelem"><a class="el" href="dir_34c5f5e54a24c1a85a7bd1a33795e3a6.html">uv</a></li><li class="navelem"><b>threadpool.h</b></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:44 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="dir_087b1a8e0ed1488a006d59bf0cd93b9d.html">libuv</a></li><li class="navelem"><a class="el" href="dir_87a6640707d1b098e35356ebaaac7457.html">include</a></li><li class="navelem"><a class="el" href="dir_34c5f5e54a24c1a85a7bd1a33795e3a6.html">uv</a></li><li class="navelem"><a class="el" href="threadpool_8h.html">threadpool.h</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:30 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

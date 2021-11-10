@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -115,52 +115,221 @@ Inheritance diagram for cs::VideoMode:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:af609b1218157529a43d8400e646e183c"><td class="memItemLeft" align="right" valign="top"><a id="af609b1218157529a43d8400e646e183c" name="af609b1218157529a43d8400e646e183c"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>PixelFormat</b> { <br />
-&#160;&#160;<b>kUnknown</b> = CS_PIXFMT_UNKNOWN
-, <b>kMJPEG</b> = CS_PIXFMT_MJPEG
-, <b>kYUYV</b> = CS_PIXFMT_YUYV
-, <b>kRGB565</b> = CS_PIXFMT_RGB565
+<tr class="memitem:af609b1218157529a43d8400e646e183c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcs_1_1_video_mode.html#af609b1218157529a43d8400e646e183c">PixelFormat</a> { <br />
+&#160;&#160;<a class="el" href="structcs_1_1_video_mode.html#af609b1218157529a43d8400e646e183ca30ac416074440d95b3d54defeba28251">kUnknown</a> = CS_PIXFMT_UNKNOWN
+, <a class="el" href="structcs_1_1_video_mode.html#af609b1218157529a43d8400e646e183ca9283d3e71becf7f9a45e93c1a6c9f439">kMJPEG</a> = CS_PIXFMT_MJPEG
+, <a class="el" href="structcs_1_1_video_mode.html#af609b1218157529a43d8400e646e183ca079dbdeb2ee22b4a1fca071e2a067afc">kYUYV</a> = CS_PIXFMT_YUYV
+, <a class="el" href="structcs_1_1_video_mode.html#af609b1218157529a43d8400e646e183cad9275bfc801596c593d252f4b12a8fbd">kRGB565</a> = CS_PIXFMT_RGB565
 , <br />
-&#160;&#160;<b>kBGR</b> = CS_PIXFMT_BGR
-, <b>kGray</b> = CS_PIXFMT_GRAY
+&#160;&#160;<a class="el" href="structcs_1_1_video_mode.html#af609b1218157529a43d8400e646e183ca6dd1f0ef1bc181b52b5e0c357b665d04">kBGR</a> = CS_PIXFMT_BGR
+, <a class="el" href="structcs_1_1_video_mode.html#af609b1218157529a43d8400e646e183ca3cba1faed93be76a17daf0d962e48015">kGray</a> = CS_PIXFMT_GRAY
 <br />
  }</td></tr>
 <tr class="separator:af609b1218157529a43d8400e646e183c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a163bf1a68be118da4263fb77ff51620f"><td class="memItemLeft" align="right" valign="top"><a id="a163bf1a68be118da4263fb77ff51620f" name="a163bf1a68be118da4263fb77ff51620f"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>VideoMode</b> (PixelFormat pixelFormat_, int width_, int height_, int fps_)</td></tr>
+<tr class="memitem:a1ab1b4d090c15a11850819d4c2bafbb5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcs_1_1_video_mode.html#a1ab1b4d090c15a11850819d4c2bafbb5">VideoMode</a> ()</td></tr>
+<tr class="separator:a1ab1b4d090c15a11850819d4c2bafbb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a163bf1a68be118da4263fb77ff51620f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcs_1_1_video_mode.html#a163bf1a68be118da4263fb77ff51620f">VideoMode</a> (<a class="el" href="structcs_1_1_video_mode.html#af609b1218157529a43d8400e646e183c">PixelFormat</a> pixelFormat_, int width_, int height_, int fps_)</td></tr>
 <tr class="separator:a163bf1a68be118da4263fb77ff51620f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7edfda92cb98f2dfb6e91e310e73f8d1"><td class="memItemLeft" align="right" valign="top"><a id="a7edfda92cb98f2dfb6e91e310e73f8d1" name="a7edfda92cb98f2dfb6e91e310e73f8d1"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>operator bool</b> () const</td></tr>
+<tr class="memitem:a7edfda92cb98f2dfb6e91e310e73f8d1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcs_1_1_video_mode.html#a7edfda92cb98f2dfb6e91e310e73f8d1">operator bool</a> () const</td></tr>
 <tr class="separator:a7edfda92cb98f2dfb6e91e310e73f8d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fd009ed027c50ca9790fd292aff9258"><td class="memItemLeft" align="right" valign="top"><a id="a7fd009ed027c50ca9790fd292aff9258" name="a7fd009ed027c50ca9790fd292aff9258"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="structcs_1_1_video_mode.html">VideoMode</a> &amp;other) const</td></tr>
+<tr class="memitem:a7fd009ed027c50ca9790fd292aff9258"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcs_1_1_video_mode.html#a7fd009ed027c50ca9790fd292aff9258">operator==</a> (const <a class="el" href="structcs_1_1_video_mode.html">VideoMode</a> &amp;other) const</td></tr>
 <tr class="separator:a7fd009ed027c50ca9790fd292aff9258"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae49551cdd0382d00ad9b716373559fb2"><td class="memItemLeft" align="right" valign="top"><a id="ae49551cdd0382d00ad9b716373559fb2" name="ae49551cdd0382d00ad9b716373559fb2"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="structcs_1_1_video_mode.html">VideoMode</a> &amp;other) const</td></tr>
+<tr class="memitem:ae49551cdd0382d00ad9b716373559fb2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcs_1_1_video_mode.html#ae49551cdd0382d00ad9b716373559fb2">operator!=</a> (const <a class="el" href="structcs_1_1_video_mode.html">VideoMode</a> &amp;other) const</td></tr>
 <tr class="separator:ae49551cdd0382d00ad9b716373559fb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_attribs_struct_c_s___video_mode"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_struct_c_s___video_mode')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="struct_c_s___video_mode.html">CS_VideoMode</a></td></tr>
-<tr class="memitem:a8b576fed8622dea23ffa91139e0b3ea6 inherit pub_attribs_struct_c_s___video_mode"><td class="memItemLeft" align="right" valign="top"><a id="a8b576fed8622dea23ffa91139e0b3ea6" name="a8b576fed8622dea23ffa91139e0b3ea6"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>pixelFormat</b></td></tr>
+<tr class="memitem:a8b576fed8622dea23ffa91139e0b3ea6 inherit pub_attribs_struct_c_s___video_mode"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c_s___video_mode.html#a8b576fed8622dea23ffa91139e0b3ea6">pixelFormat</a></td></tr>
 <tr class="separator:a8b576fed8622dea23ffa91139e0b3ea6 inherit pub_attribs_struct_c_s___video_mode"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7712c4356a511ba2d7daee027b509de1 inherit pub_attribs_struct_c_s___video_mode"><td class="memItemLeft" align="right" valign="top"><a id="a7712c4356a511ba2d7daee027b509de1" name="a7712c4356a511ba2d7daee027b509de1"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>width</b></td></tr>
+<tr class="memitem:a7712c4356a511ba2d7daee027b509de1 inherit pub_attribs_struct_c_s___video_mode"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c_s___video_mode.html#a7712c4356a511ba2d7daee027b509de1">width</a></td></tr>
 <tr class="separator:a7712c4356a511ba2d7daee027b509de1 inherit pub_attribs_struct_c_s___video_mode"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada90f303ae60ea79624fdf03d6094c1e inherit pub_attribs_struct_c_s___video_mode"><td class="memItemLeft" align="right" valign="top"><a id="ada90f303ae60ea79624fdf03d6094c1e" name="ada90f303ae60ea79624fdf03d6094c1e"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>height</b></td></tr>
+<tr class="memitem:ada90f303ae60ea79624fdf03d6094c1e inherit pub_attribs_struct_c_s___video_mode"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c_s___video_mode.html#ada90f303ae60ea79624fdf03d6094c1e">height</a></td></tr>
 <tr class="separator:ada90f303ae60ea79624fdf03d6094c1e inherit pub_attribs_struct_c_s___video_mode"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd82e2bba6ed8fc0164c67629dbf0c98 inherit pub_attribs_struct_c_s___video_mode"><td class="memItemLeft" align="right" valign="top"><a id="abd82e2bba6ed8fc0164c67629dbf0c98" name="abd82e2bba6ed8fc0164c67629dbf0c98"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>fps</b></td></tr>
+<tr class="memitem:abd82e2bba6ed8fc0164c67629dbf0c98 inherit pub_attribs_struct_c_s___video_mode"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c_s___video_mode.html#abd82e2bba6ed8fc0164c67629dbf0c98">fps</a></td></tr>
 <tr class="separator:abd82e2bba6ed8fc0164c67629dbf0c98 inherit pub_attribs_struct_c_s___video_mode"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Video mode. </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="af609b1218157529a43d8400e646e183c" name="af609b1218157529a43d8400e646e183c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af609b1218157529a43d8400e646e183c">&#9670;&nbsp;</a></span>PixelFormat</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="structcs_1_1_video_mode.html#af609b1218157529a43d8400e646e183c">cs::VideoMode::PixelFormat</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af609b1218157529a43d8400e646e183ca30ac416074440d95b3d54defeba28251" name="af609b1218157529a43d8400e646e183ca30ac416074440d95b3d54defeba28251"></a>kUnknown&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af609b1218157529a43d8400e646e183ca9283d3e71becf7f9a45e93c1a6c9f439" name="af609b1218157529a43d8400e646e183ca9283d3e71becf7f9a45e93c1a6c9f439"></a>kMJPEG&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af609b1218157529a43d8400e646e183ca079dbdeb2ee22b4a1fca071e2a067afc" name="af609b1218157529a43d8400e646e183ca079dbdeb2ee22b4a1fca071e2a067afc"></a>kYUYV&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af609b1218157529a43d8400e646e183cad9275bfc801596c593d252f4b12a8fbd" name="af609b1218157529a43d8400e646e183cad9275bfc801596c593d252f4b12a8fbd"></a>kRGB565&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af609b1218157529a43d8400e646e183ca6dd1f0ef1bc181b52b5e0c357b665d04" name="af609b1218157529a43d8400e646e183ca6dd1f0ef1bc181b52b5e0c357b665d04"></a>kBGR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af609b1218157529a43d8400e646e183ca3cba1faed93be76a17daf0d962e48015" name="af609b1218157529a43d8400e646e183ca3cba1faed93be76a17daf0d962e48015"></a>kGray&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a1ab1b4d090c15a11850819d4c2bafbb5" name="a1ab1b4d090c15a11850819d4c2bafbb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ab1b4d090c15a11850819d4c2bafbb5">&#9670;&nbsp;</a></span>VideoMode() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">cs::VideoMode::VideoMode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a163bf1a68be118da4263fb77ff51620f" name="a163bf1a68be118da4263fb77ff51620f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a163bf1a68be118da4263fb77ff51620f">&#9670;&nbsp;</a></span>VideoMode() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">cs::VideoMode::VideoMode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcs_1_1_video_mode.html#af609b1218157529a43d8400e646e183c">PixelFormat</a>&#160;</td>
+          <td class="paramname"><em>pixelFormat_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>fps_</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a7edfda92cb98f2dfb6e91e310e73f8d1" name="a7edfda92cb98f2dfb6e91e310e73f8d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7edfda92cb98f2dfb6e91e310e73f8d1">&#9670;&nbsp;</a></span>operator bool()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">cs::VideoMode::operator bool </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae49551cdd0382d00ad9b716373559fb2" name="ae49551cdd0382d00ad9b716373559fb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae49551cdd0382d00ad9b716373559fb2">&#9670;&nbsp;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="_array_cwise_unary_ops_8h.html#aa198852a6b380257ea3e34c8f7e6e250">cs::VideoMode::operator!</a>= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structcs_1_1_video_mode.html">VideoMode</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7fd009ed027c50ca9790fd292aff9258" name="a7fd009ed027c50ca9790fd292aff9258"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fd009ed027c50ca9790fd292aff9258">&#9670;&nbsp;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool cs::VideoMode::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structcs_1_1_video_mode.html">VideoMode</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="cscore__cpp_8h_source.html">cscore_cpp.h</a></li>
 </ul>
 </div><!-- contents -->
@@ -169,7 +338,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>fps</b></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacecs.html">cs</a></li><li class="navelem"><a class="el" href="structcs_1_1_video_mode.html">VideoMode</a></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:45 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:32 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

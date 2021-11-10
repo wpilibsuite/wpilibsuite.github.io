@@ -1,20 +1,6 @@
 var searchData=
 [
-  ['m_5facceptgzip_0',['m_acceptGzip',['../classwpi_1_1_http_server_connection.html#a7d0ec3d4643c9afb51ba386a5f6b0127',1,'wpi::HttpServerConnection']]],
-  ['m_5fclampfunc_1',['m_clampFunc',['../classfrc_1_1_linear_system_loop.html#a3dd25f25df422ef1c0771457bd83eb1b',1,'frc::LinearSystemLoop']]],
-  ['m_5fdataconn_2',['m_dataConn',['../classwpi_1_1_http_server_connection.html#a37acb1c41763dd1747d501341e4b3412',1,'wpi::HttpServerConnection']]],
-  ['m_5fendconn_3',['m_endConn',['../classwpi_1_1_http_server_connection.html#a9bec057a14ee5ebbfd3577b79ea94eb1',1,'wpi::HttpServerConnection']]],
-  ['m_5fkeepalive_4',['m_keepAlive',['../classwpi_1_1_http_server_connection.html#aaf9bb2bf10955876bd1582d135effc2d',1,'wpi::HttpServerConnection']]],
-  ['m_5fmaxiterations_5',['m_maxIterations',['../class_eigen_1_1_self_adjoint_eigen_solver.html#a9ba10b83f095b18dbea345db7304acfa',1,'Eigen::SelfAdjointEigenSolver']]],
-  ['m_5fmaxiterationsperrow_6',['m_maxIterationsPerRow',['../class_eigen_1_1_real_schur.html#a5cf45fb60964a3e7ea3a6718a8d7acdf',1,'Eigen::RealSchur::m_maxIterationsPerRow()'],['../class_eigen_1_1_complex_schur.html#ad37ef6058ce690a1fac4cc524b70cbf0',1,'Eigen::ComplexSchur::m_maxIterationsPerRow()']]],
-  ['m_5fmessagecompleteconn_7',['m_messageCompleteConn',['../classwpi_1_1_http_server_connection.html#ae6bb816fa5df965770d7be84ea0f6dd3',1,'wpi::HttpServerConnection']]],
-  ['m_5frequest_8',['m_request',['../classwpi_1_1_http_server_connection.html#a951b0349c8d32f238dd07288f855dde5',1,'wpi::HttpServerConnection']]],
-  ['m_5fstream_9',['m_stream',['../classwpi_1_1_http_server_connection.html#a93f24fcfd3d8d4099539f460c740c001',1,'wpi::HttpServerConnection']]],
-  ['m_5fvalue_10',['m_value',['../structunits_1_1linear__scale.html#a46d98f82582a5043fc2743e8cfed4e05',1,'units::linear_scale::m_value()'],['../structunits_1_1decibel__scale.html#a9716193561ed712aeafdd6b86e376936',1,'units::decibel_scale::m_value()']]],
-  ['m_5fwebsocket_11',['m_websocket',['../classwpi_1_1_http_web_socket_server_connection.html#a795c640317fc1269dfe2f6adca4af012',1,'wpi::HttpWebSocketServerConnection']]],
-  ['maxacceleration_12',['maxAcceleration',['../structfrc_1_1_trajectory_constraint_1_1_min_max.html#a8c026d38680f80b6f7cee6070b02afb3',1,'frc::TrajectoryConstraint::MinMax']]],
-  ['message_13',['message',['../classnt_1_1_log_message.html#ac96f427a1107c0f4076f549c06ebb40b',1,'nt::LogMessage::message()'],['../struct_n_t___log_message.html#a1ea767b01ef4ffe026d1b3bb9553dbbc',1,'NT_LogMessage::message()']]],
-  ['messagebegin_14',['messageBegin',['../classwpi_1_1_http_parser.html#acdd80c106ba77bfe430151b3a9db78fc',1,'wpi::HttpParser']]],
-  ['messagecomplete_15',['messageComplete',['../classwpi_1_1_http_parser.html#a8022236defcd5a438407436116e5c129',1,'wpi::HttpParser']]],
-  ['minacceleration_16',['minAcceleration',['../structfrc_1_1_trajectory_constraint_1_1_min_max.html#a7ffbb771bf63970d5aec016d38f4bd8b',1,'frc::TrajectoryConstraint::MinMax']]]
+  ['julian_5fyear_0',['julian_year',['../namespaceunits.html#a3f09fd2ffad59f4d04964936fdc33336',1,'units']]],
+  ['julian_5fyears_1',['julian_years',['../namespaceunits.html#a372b7401a511cf98f83fea548c6caa6f',1,'units']]],
+  ['jurisdiction_2',['jurisdiction',['../_third_party_notices_8txt.html#abf627714421a512b81b1697c30bfd6d6',1,'ThirdPartyNotices.txt']]]
 ];

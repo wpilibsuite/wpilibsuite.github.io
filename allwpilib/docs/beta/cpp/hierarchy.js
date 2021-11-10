@@ -895,7 +895,9 @@ var hierarchy =
     [ "Eigen::internal::enable_if_ref< T, Derived >", "struct_eigen_1_1internal_1_1enable__if__ref.html", null ],
     [ "Eigen::internal::enable_if_ref< Ref< T >, Derived >", "struct_eigen_1_1internal_1_1enable__if__ref_3_01_ref_3_01_t_01_4_00_01_derived_01_4.html", null ],
     [ "std::enable_shared_from_this", null, [
+      [ "wpi::DsClient", "classwpi_1_1_ds_client.html", null ],
       [ "wpi::HttpWebSocketServerConnection< Derived >", "classwpi_1_1_http_web_socket_server_connection.html", null ],
+      [ "wpi::ParallelTcpConnector", "classwpi_1_1_parallel_tcp_connector.html", null ],
       [ "wpi::WebSocket", "classwpi_1_1_web_socket.html", null ],
       [ "wpi::WebSocketServer", "classwpi_1_1_web_socket_server.html", null ],
       [ "wpi::uv::Handle", "classwpi_1_1uv_1_1_handle.html", [
@@ -1674,8 +1676,6 @@ var hierarchy =
       [ "wpi::hashing::detail::is_hashable_data< std::pair< T, U > >", "structwpi_1_1hashing_1_1detail_1_1is__hashable__data_3_01std_1_1pair_3_01_t_00_01_u_01_4_01_4.html", null ]
     ] ],
     [ "wpi::detail::internal_iterator< BasicJsonType >", "structwpi_1_1detail_1_1internal__iterator.html", null ],
-    [ "wpi::IntrusiveRefCntPtr< T >", "classwpi_1_1_intrusive_ref_cnt_ptr.html", null ],
-    [ "wpi::IntrusiveRefCntPtrInfo< T >", "structwpi_1_1_intrusive_ref_cnt_ptr_info.html", null ],
     [ "Eigen::internal::inverse_impl< MatrixType >", "struct_eigen_1_1internal_1_1inverse__impl.html", null ],
     [ "Eigen::internal::invoke_result< F, ArgType0, ArgType1, ArgType2 >", "struct_eigen_1_1internal_1_1invoke__result.html", null ],
     [ "Eigen::internal::invoke_result< F, ArgType0, ArgType1, void >", "struct_eigen_1_1internal_1_1invoke__result_3_01_f_00_01_arg_type0_00_01_arg_type1_00_01void_01_4.html", null ],
@@ -2286,8 +2286,8 @@ var hierarchy =
     [ "Eigen::internal::pminmax_impl< PropagateNaN >", "struct_eigen_1_1internal_1_1pminmax__impl_3_01_propagate_na_n_01_4.html", null ],
     [ "Eigen::internal::pminmax_impl< PropagateNumbers >", "struct_eigen_1_1internal_1_1pminmax__impl_3_01_propagate_numbers_01_4.html", null ],
     [ "frc::PneumaticsBase", "classfrc_1_1_pneumatics_base.html", [
-      [ "frc::PneumaticsControlModule", "classfrc_1_1_pneumatics_control_module.html", null ],
-      [ "frc::PneumaticsHub", "classfrc_1_1_pneumatics_hub.html", null ]
+      [ "frc::PneumaticHub", "classfrc_1_1_pneumatic_hub.html", null ],
+      [ "frc::PneumaticsControlModule", "classfrc_1_1_pneumatics_control_module.html", null ]
     ] ],
     [ "Eigen::internal::pointer_based_stl_iterator< XprType >", "class_eigen_1_1internal_1_1pointer__based__stl__iterator.html", null ],
     [ "wpi::PointerIntPair< PointerTy, IntBits, IntType, PtrTraits, Info >", "classwpi_1_1_pointer_int_pair.html", null ],
@@ -2524,7 +2524,6 @@ var hierarchy =
     [ "Eigen::internal::ref_selector< Rhs >", "struct_eigen_1_1internal_1_1ref__selector.html", null ],
     [ "Eigen::internal::ref_selector< RhsType >", "struct_eigen_1_1internal_1_1ref__selector.html", null ],
     [ "Eigen::internal::ref_selector< XprType >", "struct_eigen_1_1internal_1_1ref__selector.html", null ],
-    [ "wpi::RefCountedBase< Derived >", "classwpi_1_1_ref_counted_base.html", null ],
     [ "wpi::iterator_facade_base< DerivedT, IteratorCategoryT, T, DifferenceTypeT, PointerT, ReferenceT >::ReferenceProxy", "classwpi_1_1iterator__facade__base_1_1_reference_proxy.html", null ],
     [ "frc::sim::RelaySim", "classfrc_1_1sim_1_1_relay_sim.html", null ],
     [ "Eigen::internal::remove_all< T >", "struct_eigen_1_1internal_1_1remove__all.html", null ],
@@ -2999,6 +2998,7 @@ var hierarchy =
     [ "wpi::SendableRegistry", "classwpi_1_1_sendable_registry.html", null ],
     [ "frc::SensorUtil", "classfrc_1_1_sensor_util.html", null ],
     [ "hal::SerialHelper", "classhal_1_1_serial_helper.html", null ],
+    [ "wpi::json::serializer", "classwpi_1_1json_1_1serializer.html", null ],
     [ "frc::SerialPort", "classfrc_1_1_serial_port.html", null ],
     [ "wpi::WebSocketServer::ServerOptions", "structwpi_1_1_web_socket_server_1_1_server_options.html", null ],
     [ "Eigen::internal::generic_product_impl< Lhs, Rhs, DenseShape, DenseShape, OuterProduct >::set", "struct_eigen_1_1internal_1_1generic__product__impl_3_01_lhs_00_01_rhs_00_01_dense_shape_00_01_de53b08926de0225703046b27d8aadeb7a.html", null ],
@@ -3046,9 +3046,6 @@ var hierarchy =
     [ "frc::sim::SimDeviceSim", "classfrc_1_1sim_1_1_sim_device_sim.html", null ],
     [ "wpi::uv::SimpleBufferPool< DEPTH >", "classwpi_1_1uv_1_1_simple_buffer_pool.html", null ],
     [ "frc::SimpleMotorFeedforward< Distance >", "classfrc_1_1_simple_motor_feedforward.html", null ],
-    [ "wpi::simplify_type< From >", "structwpi_1_1simplify__type.html", null ],
-    [ "wpi::simplify_type< const IntrusiveRefCntPtr< T > >", "structwpi_1_1simplify__type_3_01const_01_intrusive_ref_cnt_ptr_3_01_t_01_4_01_4.html", null ],
-    [ "wpi::simplify_type< IntrusiveRefCntPtr< T > >", "structwpi_1_1simplify__type_3_01_intrusive_ref_cnt_ptr_3_01_t_01_4_01_4.html", null ],
     [ "Eigen::internal::SingleRange", "struct_eigen_1_1internal_1_1_single_range.html", null ],
     [ "Eigen::internal::size_at_compile_time< _Rows, _Cols >", "struct_eigen_1_1internal_1_1size__at__compile__time.html", null ],
     [ "Eigen::internal::size_of_xpr_at_compile_time< XprType >", "struct_eigen_1_1internal_1_1size__of__xpr__at__compile__time.html", null ],
@@ -3225,7 +3222,6 @@ var hierarchy =
     [ "Eigen::internal::ternary_result_of_select< Func, ArgType0, ArgType1, ArgType2, sizeof(has_tr1_result)>", "struct_eigen_1_1internal_1_1ternary__result__of__select_3_01_func_00_01_arg_type0_00_01_arg_type6eb986b9b1e9aafbcbfee4e37d87eaa7.html", null ],
     [ "text_style", "classtext__style.html", null ],
     [ "thousands_sep_result< Char >", "structthousands__sep__result.html", null ],
-    [ "wpi::ThreadSafeRefCountedBase< Derived >", "classwpi_1_1_thread_safe_ref_counted_base.html", null ],
     [ "frc::Timer", "classfrc_1_1_timer.html", null ],
     [ "wpi::detail::to_json_fn", "structwpi_1_1detail_1_1to__json__fn.html", null ],
     [ "frc::Tracer", "classfrc_1_1_tracer.html", null ],
@@ -3789,6 +3785,7 @@ var hierarchy =
     [ "wpi::UidVector< T, reuse_threshold >", "classwpi_1_1_uid_vector.html", null ],
     [ "wpi::impl::UidVectorIterator< It >", "classwpi_1_1impl_1_1_uid_vector_iterator.html", null ],
     [ "detail::uint128_wrapper", "structdetail_1_1uint128__wrapper.html", null ],
+    [ "wpi::Uleb128Reader", "classwpi_1_1_uleb128_reader.html", null ],
     [ "frc::sim::UltrasonicSim", "classfrc_1_1sim_1_1_ultrasonic_sim.html", null ],
     [ "Eigen::internal::unaligned_dense_assignment_loop< IsAligned >", "struct_eigen_1_1internal_1_1unaligned__dense__assignment__loop.html", null ],
     [ "Eigen::internal::unaligned_dense_assignment_loop< false >", "struct_eigen_1_1internal_1_1unaligned__dense__assignment__loop_3_01false_01_4.html", null ],

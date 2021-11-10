@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('_sendable_chooser_8h_source.html','');
   <div class="headertitle"><div class="title">SendableChooser.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
+<a href="_sendable_chooser_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Open Source Software; you can modify and/or share it under the terms of</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// the WPILib BSD license file in the root directory of this project.</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
@@ -103,12 +103,12 @@ $(document).ready(function(){initNavTree('_sendable_chooser_8h_source.html','');
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;string_view&gt;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;wpi/StringMap.h&gt;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;wpi/deprecated.h&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;<a class="code" href="_string_map_8h.html">wpi/StringMap.h</a>&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;<a class="code" href="deprecated_8h.html">wpi/deprecated.h</a>&gt;</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;frc/smartdashboard/SendableChooserBase.h&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="_sendable_chooser_base_8h.html">frc/smartdashboard/SendableChooserBase.h</a>&quot;</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span>frc {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacefrc.html">frc</a> {</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"></span> </div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">/**</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> * The SendableChooser class is a useful tool for presenting a selection of</span></div>
@@ -137,10 +137,10 @@ $(document).ready(function(){initNavTree('_sendable_chooser_8h_source.html','');
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <span class="keyword">static</span> std::weak_ptr&lt;U&gt; _unwrap_smart_ptr(<span class="keyword">const</span> std::shared_ptr&lt;U&gt;&amp; <a class="code hl_class" href="classvalue.html">value</a>);</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <a class="code hl_class" href="classfrc_1_1_sendable_chooser.html">SendableChooser</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <a class="code hl_class" href="classfrc_1_1_sendable_chooser.html">~SendableChooser</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <a class="code hl_class" href="classfrc_1_1_sendable_chooser.html">SendableChooser</a>(<a class="code hl_class" href="classfrc_1_1_sendable_chooser.html">SendableChooser</a>&amp;&amp; rhs) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <a class="code hl_class" href="classfrc_1_1_sendable_chooser.html">SendableChooser</a>&amp; operator=(<a class="code hl_class" href="classfrc_1_1_sendable_chooser.html">SendableChooser</a>&amp;&amp; rhs) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classfrc_1_1_sendable_chooser.html#ac1a304c6ce610f15ab0051e85bfd1978">   44</a></span>  <a class="code hl_function" href="classfrc_1_1_sendable_chooser.html#ac1a304c6ce610f15ab0051e85bfd1978">SendableChooser</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classfrc_1_1_sendable_chooser.html#a9970d00c1035724acc705b315d119e91">   45</a></span>  <a class="code hl_function" href="classfrc_1_1_sendable_chooser.html#a9970d00c1035724acc705b315d119e91">~SendableChooser</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classfrc_1_1_sendable_chooser.html#a61e25379739ee1f9f3a4e35e4b54395f">   46</a></span>  <a class="code hl_function" href="classfrc_1_1_sendable_chooser.html#a61e25379739ee1f9f3a4e35e4b54395f">SendableChooser</a>(<a class="code hl_class" href="classfrc_1_1_sendable_chooser.html">SendableChooser</a>&amp;&amp; rhs) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="classfrc_1_1_sendable_chooser.html#a0c115466800a3cb0ff933ce6872e2005">   47</a></span>  <a class="code hl_class" href="classfrc_1_1_sendable_chooser.html">SendableChooser</a>&amp; <a class="code hl_function" href="classfrc_1_1_sendable_chooser.html#a0c115466800a3cb0ff933ce6872e2005">operator=</a>(<a class="code hl_class" href="classfrc_1_1_sendable_chooser.html">SendableChooser</a>&amp;&amp; rhs) = <span class="keywordflow">default</span>;</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment"></span> </div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">   * Adds the given object to the list of options.</span></div>
@@ -151,7 +151,7 @@ $(document).ready(function(){initNavTree('_sendable_chooser_8h_source.html','');
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">   * @param name   the name of the option</span></div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">   * @param object the option</span></div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_sendable_chooser.html#aaa1f52d5ecc0929bffcefb2801b1c3cf">AddOption</a>(std::string_view name, T <span class="keywordtype">object</span>);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_sendable_chooser.html#aaa1f52d5ecc0929bffcefb2801b1c3cf">AddOption</a>(<a class="code hl_typedef" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> name, T <span class="keywordtype">object</span>);</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment"></span> </div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">   * Add the given object to the list of options and marks it as the default.</span></div>
@@ -162,7 +162,7 @@ $(document).ready(function(){initNavTree('_sendable_chooser_8h_source.html','');
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">   * @param name   the name of the option</span></div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">   * @param object the option</span></div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_sendable_chooser.html#a347cd324e81176fa4e32f2a0f7a77158">SetDefaultOption</a>(std::string_view name, T <span class="keywordtype">object</span>);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_sendable_chooser.html#a347cd324e81176fa4e32f2a0f7a77158">SetDefaultOption</a>(<a class="code hl_typedef" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> name, T <span class="keywordtype">object</span>);</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment"></span> </div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">   * Adds the given object to the list of options.</span></div>
@@ -176,7 +176,7 @@ $(document).ready(function(){initNavTree('_sendable_chooser_8h_source.html','');
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment">   * @param object the option</span></div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  WPI_DEPRECATED(<span class="stringliteral">&quot;use AddOption() instead&quot;</span>)</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="classfrc_1_1_sendable_chooser.html#ab01426bbcb86a824bd0e9af426b47ba0">   83</a></span>  void <a class="code hl_function" href="classfrc_1_1_sendable_chooser.html#ab01426bbcb86a824bd0e9af426b47ba0">AddObject</a>(std::<a class="code hl_class" href="classbasic__string__view.html">string_view</a> name, T <span class="keywordtype">object</span>) { <a class="code hl_function" href="classfrc_1_1_sendable_chooser.html#aaa1f52d5ecc0929bffcefb2801b1c3cf">AddOption</a>(name, <span class="keywordtype">object</span>); }</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="classfrc_1_1_sendable_chooser.html#ab01426bbcb86a824bd0e9af426b47ba0">   83</a></span>  void <a class="code hl_function" href="classfrc_1_1_sendable_chooser.html#ab01426bbcb86a824bd0e9af426b47ba0">AddObject</a>(<a class="code hl_namespace" href="namespacestd.html">std</a>::<a class="code hl_class" href="classbasic__string__view.html">string_view</a> name, T <span class="keywordtype">object</span>) { <a class="code hl_function" href="classfrc_1_1_sendable_chooser.html#aaa1f52d5ecc0929bffcefb2801b1c3cf">AddOption</a>(name, <span class="keywordtype">object</span>); }</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment"></span> </div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="comment">   * Add the given object to the list of options and marks it as the default.</span></div>
@@ -190,7 +190,7 @@ $(document).ready(function(){initNavTree('_sendable_chooser_8h_source.html','');
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment">   * @param object the option</span></div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  WPI_DEPRECATED(<span class="stringliteral">&quot;use SetDefaultOption() instead&quot;</span>)</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="classfrc_1_1_sendable_chooser.html#a6d0bcabbab460e10f846abe03865641e">   97</a></span>  void <a class="code hl_function" href="classfrc_1_1_sendable_chooser.html#a6d0bcabbab460e10f846abe03865641e">AddDefault</a>(std::<a class="code hl_class" href="classbasic__string__view.html">string_view</a> name, T <span class="keywordtype">object</span>) {</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="classfrc_1_1_sendable_chooser.html#a6d0bcabbab460e10f846abe03865641e">   97</a></span>  void <a class="code hl_function" href="classfrc_1_1_sendable_chooser.html#a6d0bcabbab460e10f846abe03865641e">AddDefault</a>(<a class="code hl_namespace" href="namespacestd.html">std</a>::<a class="code hl_class" href="classbasic__string__view.html">string_view</a> name, T <span class="keywordtype">object</span>) {</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <a class="code hl_function" href="classfrc_1_1_sendable_chooser.html#a347cd324e81176fa4e32f2a0f7a77158">SetDefaultOption</a>(name, <span class="keywordtype">object</span>);</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  }</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment"></span> </div>
@@ -212,26 +212,37 @@ $(document).ready(function(){initNavTree('_sendable_chooser_8h_source.html','');
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>}  <span class="comment">// namespace frc</span></div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="preprocessor">#include &quot;frc/smartdashboard/SendableChooser.inc&quot;</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="preprocessor">#include &quot;<a class="code" href="_sendable_chooser_8inc.html">frc/smartdashboard/SendableChooser.inc</a>&quot;</span></div>
+<div class="ttc" id="a_sendable_chooser_8inc_html"><div class="ttname"><a href="_sendable_chooser_8inc.html">SendableChooser.inc</a></div></div>
+<div class="ttc" id="a_sendable_chooser_base_8h_html"><div class="ttname"><a href="_sendable_chooser_base_8h.html">SendableChooserBase.h</a></div></div>
+<div class="ttc" id="a_string_map_8h_html"><div class="ttname"><a href="_string_map_8h.html">StringMap.h</a></div></div>
 <div class="ttc" id="aclassbasic__string__view_html"><div class="ttname"><a href="classbasic__string__view.html">basic_string_view&lt; char &gt;</a></div></div>
 <div class="ttc" id="aclassfrc_1_1_sendable_chooser_base_html"><div class="ttname"><a href="classfrc_1_1_sendable_chooser_base.html">frc::SendableChooserBase</a></div><div class="ttdoc">This class is a non-template base class for SendableChooser.</div><div class="ttdef"><b>Definition:</b> SendableChooserBase.h:25</div></div>
 <div class="ttc" id="aclassfrc_1_1_sendable_chooser_html"><div class="ttname"><a href="classfrc_1_1_sendable_chooser.html">frc::SendableChooser</a></div><div class="ttdoc">The SendableChooser class is a useful tool for presenting a selection of options to the SmartDashboar...</div><div class="ttdef"><b>Definition:</b> SendableChooser.h:31</div></div>
+<div class="ttc" id="aclassfrc_1_1_sendable_chooser_html_a0c115466800a3cb0ff933ce6872e2005"><div class="ttname"><a href="classfrc_1_1_sendable_chooser.html#a0c115466800a3cb0ff933ce6872e2005">frc::SendableChooser::operator=</a></div><div class="ttdeci">SendableChooser &amp; operator=(SendableChooser &amp;&amp;rhs)=default</div></div>
 <div class="ttc" id="aclassfrc_1_1_sendable_chooser_html_a347cd324e81176fa4e32f2a0f7a77158"><div class="ttname"><a href="classfrc_1_1_sendable_chooser.html#a347cd324e81176fa4e32f2a0f7a77158">frc::SendableChooser::SetDefaultOption</a></div><div class="ttdeci">void SetDefaultOption(std::string_view name, T object)</div><div class="ttdoc">Add the given object to the list of options and marks it as the default.</div><div class="ttdef"><b>Definition:</b> SendableChooser.inc:26</div></div>
+<div class="ttc" id="aclassfrc_1_1_sendable_chooser_html_a61e25379739ee1f9f3a4e35e4b54395f"><div class="ttname"><a href="classfrc_1_1_sendable_chooser.html#a61e25379739ee1f9f3a4e35e4b54395f">frc::SendableChooser::SendableChooser</a></div><div class="ttdeci">SendableChooser(SendableChooser &amp;&amp;rhs)=default</div></div>
 <div class="ttc" id="aclassfrc_1_1_sendable_chooser_html_a6d0bcabbab460e10f846abe03865641e"><div class="ttname"><a href="classfrc_1_1_sendable_chooser.html#a6d0bcabbab460e10f846abe03865641e">frc::SendableChooser::AddDefault</a></div><div class="ttdeci">void AddDefault(std::string_view name, T object)</div><div class="ttdoc">Add the given object to the list of options and marks it as the default.</div><div class="ttdef"><b>Definition:</b> SendableChooser.h:97</div></div>
 <div class="ttc" id="aclassfrc_1_1_sendable_chooser_html_a80e334966831bfc40c0498e256dbf739"><div class="ttname"><a href="classfrc_1_1_sendable_chooser.html#a80e334966831bfc40c0498e256dbf739">frc::SendableChooser::GetSelected</a></div><div class="ttdeci">auto GetSelected() -&gt; decltype(_unwrap_smart_ptr(m_choices[&quot;&quot;]))</div><div class="ttdoc">Returns a copy of the selected option (a raw pointer U* if T = std::unique_ptr&lt;U&gt; or a std::weak_ptr&lt;...</div><div class="ttdef"><b>Definition:</b> SendableChooser.inc:32</div></div>
+<div class="ttc" id="aclassfrc_1_1_sendable_chooser_html_a9970d00c1035724acc705b315d119e91"><div class="ttname"><a href="classfrc_1_1_sendable_chooser.html#a9970d00c1035724acc705b315d119e91">frc::SendableChooser::~SendableChooser</a></div><div class="ttdeci">~SendableChooser() override=default</div></div>
 <div class="ttc" id="aclassfrc_1_1_sendable_chooser_html_aaa1f52d5ecc0929bffcefb2801b1c3cf"><div class="ttname"><a href="classfrc_1_1_sendable_chooser.html#aaa1f52d5ecc0929bffcefb2801b1c3cf">frc::SendableChooser::AddOption</a></div><div class="ttdeci">void AddOption(std::string_view name, T object)</div><div class="ttdoc">Adds the given object to the list of options.</div><div class="ttdef"><b>Definition:</b> SendableChooser.inc:21</div></div>
 <div class="ttc" id="aclassfrc_1_1_sendable_chooser_html_ab01426bbcb86a824bd0e9af426b47ba0"><div class="ttname"><a href="classfrc_1_1_sendable_chooser.html#ab01426bbcb86a824bd0e9af426b47ba0">frc::SendableChooser::AddObject</a></div><div class="ttdeci">void AddObject(std::string_view name, T object)</div><div class="ttdoc">Adds the given object to the list of options.</div><div class="ttdef"><b>Definition:</b> SendableChooser.h:83</div></div>
+<div class="ttc" id="aclassfrc_1_1_sendable_chooser_html_ac1a304c6ce610f15ab0051e85bfd1978"><div class="ttname"><a href="classfrc_1_1_sendable_chooser.html#ac1a304c6ce610f15ab0051e85bfd1978">frc::SendableChooser::SendableChooser</a></div><div class="ttdeci">SendableChooser()=default</div></div>
 <div class="ttc" id="aclassfrc_1_1_sendable_chooser_html_ae078ae010f7367ce84e63c005062bfc0"><div class="ttname"><a href="classfrc_1_1_sendable_chooser.html#ae078ae010f7367ce84e63c005062bfc0">frc::SendableChooser::InitSendable</a></div><div class="ttdeci">void InitSendable(nt::NTSendableBuilder &amp;builder) override</div><div class="ttdoc">Initializes this Sendable object.</div><div class="ttdef"><b>Definition:</b> SendableChooser.inc:49</div></div>
 <div class="ttc" id="aclassnt_1_1_n_t_sendable_builder_html"><div class="ttname"><a href="classnt_1_1_n_t_sendable_builder.html">nt::NTSendableBuilder</a></div><div class="ttdef"><b>Definition:</b> NTSendableBuilder.h:19</div></div>
 <div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1120</div></div>
 <div class="ttc" id="aclasswpi_1_1_string_map_html"><div class="ttname"><a href="classwpi_1_1_string_map.html">wpi::StringMap</a></div><div class="ttdoc">StringMap - This is an unconventional map that is specialized for handling keys that are &quot;strings&quot;,...</div><div class="ttdef"><b>Definition:</b> StringMap.h:205</div></div>
+<div class="ttc" id="acore_8h_html_a204ca715c2febee035464fa53dfc50c4"><div class="ttname"><a href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">string_view</a></div><div class="ttdeci">basic_string_view&lt; char &gt; string_view</div><div class="ttdef"><b>Definition:</b> core.h:529</div></div>
+<div class="ttc" id="adeprecated_8h_html"><div class="ttname"><a href="deprecated_8h.html">deprecated.h</a></div></div>
+<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> VisionRunner.inc:9</div></div>
+<div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> Errc.h:84</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_b02f085c5688c41df73c48b2d64de380.html">smartdashboard</a></li><li class="navelem"><b>SendableChooser.h</b></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:35 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_b02f085c5688c41df73c48b2d64de380.html">smartdashboard</a></li><li class="navelem"><a class="el" href="_sendable_chooser_8h.html">SendableChooser.h</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:20 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

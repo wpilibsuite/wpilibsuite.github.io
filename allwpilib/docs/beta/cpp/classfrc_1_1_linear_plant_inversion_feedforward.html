@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -127,9 +127,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa9906a7e98478279aa27affa4b537d61"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_plant_inversion_feedforward.html#aa9906a7e98478279aa27affa4b537d61">Reset</a> (const Eigen::Vector&lt; double, States &gt; &amp;initialState)</td></tr>
 <tr class="memdesc:aa9906a7e98478279aa27affa4b537d61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the feedforward with a specified initial state vector.  <a href="classfrc_1_1_linear_plant_inversion_feedforward.html#aa9906a7e98478279aa27affa4b537d61">More...</a><br /></td></tr>
 <tr class="separator:aa9906a7e98478279aa27affa4b537d61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7dc707b0f3d1281c472141fc2dfdf148"><td class="memItemLeft" align="right" valign="top"><a id="a7dc707b0f3d1281c472141fc2dfdf148" name="a7dc707b0f3d1281c472141fc2dfdf148"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Reset</b> ()</td></tr>
-<tr class="memdesc:a7dc707b0f3d1281c472141fc2dfdf148"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the feedforward with a zero initial state vector. <br /></td></tr>
+<tr class="memitem:a7dc707b0f3d1281c472141fc2dfdf148"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_plant_inversion_feedforward.html#a7dc707b0f3d1281c472141fc2dfdf148">Reset</a> ()</td></tr>
+<tr class="memdesc:a7dc707b0f3d1281c472141fc2dfdf148"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the feedforward with a zero initial state vector.  <a href="classfrc_1_1_linear_plant_inversion_feedforward.html#a7dc707b0f3d1281c472141fc2dfdf148">More...</a><br /></td></tr>
 <tr class="separator:a7dc707b0f3d1281c472141fc2dfdf148"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9b6d045a2758d8f674922d4db66beee"><td class="memItemLeft" align="right" valign="top">Eigen::Vector&lt; double, Inputs &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_linear_plant_inversion_feedforward.html#ae9b6d045a2758d8f674922d4db66beee">Calculate</a> (const Eigen::Vector&lt; double, States &gt; &amp;nextR)</td></tr>
 <tr class="memdesc:ae9b6d045a2758d8f674922d4db66beee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the feedforward with only the desired future reference.  <a href="classfrc_1_1_linear_plant_inversion_feedforward.html#ae9b6d045a2758d8f674922d4db66beee">More...</a><br /></td></tr>
@@ -142,7 +141,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Reset</b> ()</td></tr
 <div class="textblock"><div class="compoundTemplParams">template&lt;int States, int Inputs&gt;<br />
 class frc::LinearPlantInversionFeedforward&lt; States, Inputs &gt;</div><p >Constructs a plant inversion model-based feedforward from a <a class="el" href="classfrc_1_1_linear_system.html" title="A plant defined using state-space notation.">LinearSystem</a>. </p>
 <p >The feedforward is calculated as <b> u_ff = B<sup>+</sup> (r_k+1 - A r_k) </b>, where <b> B<sup>+</sup> </b> is the pseudoinverse of B.</p>
-<p >For more on the underlying math, read <a href="https://file.tavsys.net/control/controls-engineering-in-frc.pdf">https://file.tavsys.net/control/controls-engineering-in-frc.pdf</a>. </p>
+<p >For more on the underlying math, read <a href="https://file.tavsys.net/control/controls-engineering-in-frc.pdf">https://file.tavsys.net/control/controls-engineering-in-frc.pdf</a>.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">States</td><td>The number of states. </td></tr>
+    <tr><td class="paramname">Inputs</td><td>The number of inputs. </td></tr>
+  </table>
+  </dd>
+</dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7e18a8c46ecb28a04209aa1a4455d7a0" name="a7e18a8c46ecb28a04209aa1a4455d7a0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7e18a8c46ecb28a04209aa1a4455d7a0">&#9670;&nbsp;</a></span>LinearPlantInversionFeedforward() <span class="overload">[1/2]</span></h2>
@@ -183,6 +189,12 @@ template&lt;int Outputs&gt; </div>
 </div><div class="memdoc">
 
 <p>Constructs a feedforward with the given plant. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Outputs</td><td>The number of outputs. </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">plant</td><td>The plant being controlled. </td></tr>
@@ -402,8 +414,37 @@ template&lt;int States, int Inputs&gt; </div>
 
 </div>
 </div>
+<a id="a7dc707b0f3d1281c472141fc2dfdf148" name="a7dc707b0f3d1281c472141fc2dfdf148"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dc707b0f3d1281c472141fc2dfdf148">&#9670;&nbsp;</a></span>Reset() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int States, int Inputs&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classfrc_1_1_linear_plant_inversion_feedforward.html">frc::LinearPlantInversionFeedforward</a>&lt; States, Inputs &gt;::Reset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Resets the feedforward with a zero initial state vector. </p>
+
+</div>
+</div>
 <a id="aa9906a7e98478279aa27affa4b537d61" name="aa9906a7e98478279aa27affa4b537d61"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa9906a7e98478279aa27affa4b537d61">&#9670;&nbsp;</a></span>Reset()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9906a7e98478279aa27affa4b537d61">&#9670;&nbsp;</a></span>Reset() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -513,8 +554,8 @@ template&lt;int States, int Inputs&gt; </div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1_linear_plant_inversion_feedforward.html">LinearPlantInversionFeedforward</a></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:50 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_linear_plant_inversion_feedforward.html">LinearPlantInversionFeedforward</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:38 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

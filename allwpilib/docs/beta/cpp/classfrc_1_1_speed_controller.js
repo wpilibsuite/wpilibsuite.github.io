@@ -1,5 +1,6 @@
 var classfrc_1_1_speed_controller =
 [
+    [ "~SpeedController", "classfrc_1_1_speed_controller.html#a4ef9f2180123f5dddb586b1759e85fa8", null ],
     [ "Disable", "classfrc_1_1_speed_controller.html#a707b81e11fb0258c9ce7d969a6cdb60a", null ],
     [ "Get", "classfrc_1_1_speed_controller.html#a6af00a4289ba5a5e42cabd3d9a310300", null ],
     [ "GetInverted", "classfrc_1_1_speed_controller.html#ae717573b01e70fda23468bbf4c843d05", null ],

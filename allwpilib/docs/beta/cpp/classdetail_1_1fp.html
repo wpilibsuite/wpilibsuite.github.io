@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -99,43 +99,188 @@ $(document).ready(function(){initNavTree('classdetail_1_1fp.html',''); initResiz
   <div class="headertitle"><div class="title">detail::fp Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="format-inl_8h_source.html">/home/runner/work/allwpilib/allwpilib/wpiutil/src/main/native/fmtlib/include/fmt/format-inl.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a68e336177e1c0037f4cf303986e47f5e"><td class="memItemLeft" align="right" valign="top"><a id="a68e336177e1c0037f4cf303986e47f5e" name="a68e336177e1c0037f4cf303986e47f5e"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>fp</b> (uint64_t f_val, int e_val)</td></tr>
+<tr class="memitem:ae51e1a76b79af98a98567d3b57e5482a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1fp.html#ae51e1a76b79af98a98567d3b57e5482a">fp</a> ()</td></tr>
+<tr class="separator:ae51e1a76b79af98a98567d3b57e5482a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68e336177e1c0037f4cf303986e47f5e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1fp.html#a68e336177e1c0037f4cf303986e47f5e">fp</a> (uint64_t f_val, int e_val)</td></tr>
 <tr class="separator:a68e336177e1c0037f4cf303986e47f5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bd6f5a8690531e2fb80b794979dd328"><td class="memTemplParams" colspan="2"><a id="a8bd6f5a8690531e2fb80b794979dd328" name="a8bd6f5a8690531e2fb80b794979dd328"></a>
-template&lt;typename Double &gt; </td></tr>
-<tr class="memitem:a8bd6f5a8690531e2fb80b794979dd328"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>fp</b> (Double d)</td></tr>
+<tr class="memitem:a8bd6f5a8690531e2fb80b794979dd328"><td class="memTemplParams" colspan="2">template&lt;typename Double &gt; </td></tr>
+<tr class="memitem:a8bd6f5a8690531e2fb80b794979dd328"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdetail_1_1fp.html#a8bd6f5a8690531e2fb80b794979dd328">fp</a> (Double d)</td></tr>
 <tr class="separator:a8bd6f5a8690531e2fb80b794979dd328"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0750d409ae2f9eae45be8a07ff8a8f0f"><td class="memTemplParams" colspan="2"><a id="a0750d409ae2f9eae45be8a07ff8a8f0f" name="a0750d409ae2f9eae45be8a07ff8a8f0f"></a>
-template&lt;typename Float , FMT_ENABLE_IF(is_supported_float&lt; Float &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </td></tr>
-<tr class="memitem:a0750d409ae2f9eae45be8a07ff8a8f0f"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>assign</b> (Float d)</td></tr>
+<tr class="memitem:a0750d409ae2f9eae45be8a07ff8a8f0f"><td class="memTemplParams" colspan="2">template&lt;typename Float , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(is_supported_float&lt; Float &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </td></tr>
+<tr class="memitem:a0750d409ae2f9eae45be8a07ff8a8f0f"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdetail_1_1fp.html#a0750d409ae2f9eae45be8a07ff8a8f0f">assign</a> (Float d)</td></tr>
 <tr class="separator:a0750d409ae2f9eae45be8a07ff8a8f0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9897c87291aa84aa3a909d8bfea69e1"><td class="memTemplParams" colspan="2"><a id="ae9897c87291aa84aa3a909d8bfea69e1" name="ae9897c87291aa84aa3a909d8bfea69e1"></a>
-template&lt;typename Float , FMT_ENABLE_IF(!is_supported_float&lt; Float &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </td></tr>
-<tr class="memitem:ae9897c87291aa84aa3a909d8bfea69e1"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>assign</b> (Float)</td></tr>
+<tr class="memitem:ae9897c87291aa84aa3a909d8bfea69e1"><td class="memTemplParams" colspan="2">template&lt;typename Float , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(!is_supported_float&lt; Float &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </td></tr>
+<tr class="memitem:ae9897c87291aa84aa3a909d8bfea69e1"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classdetail_1_1fp.html#ae9897c87291aa84aa3a909d8bfea69e1">assign</a> (Float)</td></tr>
 <tr class="separator:ae9897c87291aa84aa3a909d8bfea69e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a66273e2e7390c72f24c7ae8ca20286c9"><td class="memItemLeft" align="right" valign="top"><a id="a66273e2e7390c72f24c7ae8ca20286c9" name="a66273e2e7390c72f24c7ae8ca20286c9"></a>
-significand_type&#160;</td><td class="memItemRight" valign="bottom"><b>f</b></td></tr>
+<tr class="memitem:a66273e2e7390c72f24c7ae8ca20286c9"><td class="memItemLeft" align="right" valign="top">significand_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1fp.html#a66273e2e7390c72f24c7ae8ca20286c9">f</a></td></tr>
 <tr class="separator:a66273e2e7390c72f24c7ae8ca20286c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bc195dc7de66ecea08d907da1e5ae0e"><td class="memItemLeft" align="right" valign="top"><a id="a6bc195dc7de66ecea08d907da1e5ae0e" name="a6bc195dc7de66ecea08d907da1e5ae0e"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>e</b></td></tr>
+<tr class="memitem:a6bc195dc7de66ecea08d907da1e5ae0e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1fp.html#a6bc195dc7de66ecea08d907da1e5ae0e">e</a></td></tr>
 <tr class="separator:a6bc195dc7de66ecea08d907da1e5ae0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a6a972f413b54152bc3a748bbe41b39c5"><td class="memItemLeft" align="right" valign="top">static FMT_CONSTEXPR_DECL const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1fp.html#a6a972f413b54152bc3a748bbe41b39c5">double_significand_size</a></td></tr>
+<tr class="memitem:a6a972f413b54152bc3a748bbe41b39c5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="core_8h.html#af4388801466a5994a363d6005616371a">FMT_CONSTEXPR_DECL</a> const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1fp.html#a6a972f413b54152bc3a748bbe41b39c5">double_significand_size</a></td></tr>
 <tr class="separator:a6a972f413b54152bc3a748bbe41b39c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29162b07369f8fc9659c355142a9e862"><td class="memItemLeft" align="right" valign="top">static FMT_CONSTEXPR_DECL const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1fp.html#a29162b07369f8fc9659c355142a9e862">implicit_bit</a></td></tr>
+<tr class="memitem:a29162b07369f8fc9659c355142a9e862"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="core_8h.html#af4388801466a5994a363d6005616371a">FMT_CONSTEXPR_DECL</a> const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1fp.html#a29162b07369f8fc9659c355142a9e862">implicit_bit</a></td></tr>
 <tr class="separator:a29162b07369f8fc9659c355142a9e862"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f2854e6e5d216065cec775894f1103f"><td class="memItemLeft" align="right" valign="top">static FMT_CONSTEXPR_DECL const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1fp.html#a1f2854e6e5d216065cec775894f1103f">significand_size</a></td></tr>
+<tr class="memitem:a1f2854e6e5d216065cec775894f1103f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="core_8h.html#af4388801466a5994a363d6005616371a">FMT_CONSTEXPR_DECL</a> const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1fp.html#a1f2854e6e5d216065cec775894f1103f">significand_size</a></td></tr>
 <tr class="separator:a1f2854e6e5d216065cec775894f1103f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ae51e1a76b79af98a98567d3b57e5482a" name="ae51e1a76b79af98a98567d3b57e5482a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae51e1a76b79af98a98567d3b57e5482a">&#9670;&nbsp;</a></span>fp() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">detail::fp::fp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a68e336177e1c0037f4cf303986e47f5e" name="a68e336177e1c0037f4cf303986e47f5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68e336177e1c0037f4cf303986e47f5e">&#9670;&nbsp;</a></span>fp() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">detail::fp::fp </td>
+          <td>(</td>
+          <td class="paramtype">uint64_t&#160;</td>
+          <td class="paramname"><em>f_val</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>e_val</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8bd6f5a8690531e2fb80b794979dd328" name="a8bd6f5a8690531e2fb80b794979dd328"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bd6f5a8690531e2fb80b794979dd328">&#9670;&nbsp;</a></span>fp() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Double &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">detail::fp::fp </td>
+          <td>(</td>
+          <td class="paramtype">Double&#160;</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0750d409ae2f9eae45be8a07ff8a8f0f" name="a0750d409ae2f9eae45be8a07ff8a8f0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0750d409ae2f9eae45be8a07ff8a8f0f">&#9670;&nbsp;</a></span>assign() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Float , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(is_supported_float&lt; Float &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool detail::fp::assign </td>
+          <td>(</td>
+          <td class="paramtype">Float&#160;</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae9897c87291aa84aa3a909d8bfea69e1" name="ae9897c87291aa84aa3a909d8bfea69e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9897c87291aa84aa3a909d8bfea69e1">&#9670;&nbsp;</a></span>assign() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Float , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(!is_supported_float&lt; Float &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool detail::fp::assign </td>
+          <td>(</td>
+          <td class="paramtype">Float&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a6a972f413b54152bc3a748bbe41b39c5" name="a6a972f413b54152bc3a748bbe41b39c5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6a972f413b54152bc3a748bbe41b39c5">&#9670;&nbsp;</a></span>double_significand_size</h2>
@@ -147,7 +292,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">FMT_CONSTEXPR_DECL const int detail::fp::double_significand_size</td>
+          <td class="memname"><a class="el" href="core_8h.html#af4388801466a5994a363d6005616371a">FMT_CONSTEXPR_DECL</a> const int detail::fp::double_significand_size</td>
         </tr>
       </table>
   </td>
@@ -161,6 +306,34 @@ Static Public Attributes</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
+<a id="a6bc195dc7de66ecea08d907da1e5ae0e" name="a6bc195dc7de66ecea08d907da1e5ae0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bc195dc7de66ecea08d907da1e5ae0e">&#9670;&nbsp;</a></span>e</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int detail::fp::e</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a66273e2e7390c72f24c7ae8ca20286c9" name="a66273e2e7390c72f24c7ae8ca20286c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66273e2e7390c72f24c7ae8ca20286c9">&#9670;&nbsp;</a></span>f</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">significand_type detail::fp::f</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a29162b07369f8fc9659c355142a9e862" name="a29162b07369f8fc9659c355142a9e862"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a29162b07369f8fc9659c355142a9e862">&#9670;&nbsp;</a></span>implicit_bit</h2>
 
@@ -171,7 +344,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">FMT_CONSTEXPR_DECL const uint64_t detail::fp::implicit_bit</td>
+          <td class="memname"><a class="el" href="core_8h.html#af4388801466a5994a363d6005616371a">FMT_CONSTEXPR_DECL</a> const uint64_t detail::fp::implicit_bit</td>
         </tr>
       </table>
   </td>
@@ -181,7 +354,8 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">      1ULL &lt;&lt; double_significand_size</div>
+<div class="line">      1ULL &lt;&lt; <a class="code hl_variable" href="classdetail_1_1fp.html#a6a972f413b54152bc3a748bbe41b39c5">double_significand_size</a></div>
+<div class="ttc" id="aclassdetail_1_1fp_html_a6a972f413b54152bc3a748bbe41b39c5"><div class="ttname"><a href="classdetail_1_1fp.html#a6a972f413b54152bc3a748bbe41b39c5">detail::fp::double_significand_size</a></div><div class="ttdeci">static FMT_CONSTEXPR_DECL const int double_significand_size</div><div class="ttdef"><b>Definition:</b> format-inl.h:190</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -195,7 +369,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">FMT_CONSTEXPR_DECL const int detail::fp::significand_size</td>
+          <td class="memname"><a class="el" href="core_8h.html#af4388801466a5994a363d6005616371a">FMT_CONSTEXPR_DECL</a> const int detail::fp::significand_size</td>
         </tr>
       </table>
   </td>
@@ -205,7 +379,8 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">      bits&lt;significand_type&gt;::value</div>
+<div class="line">      <a class="code hl_variable" href="structdetail_1_1bits.html#a134cb2b37412e119fc92dcd132bb0cda">bits&lt;significand_type&gt;::value</a></div>
+<div class="ttc" id="astructdetail_1_1bits_html_a134cb2b37412e119fc92dcd132bb0cda"><div class="ttname"><a href="structdetail_1_1bits.html#a134cb2b37412e119fc92dcd132bb0cda">detail::bits::value</a></div><div class="ttdeci">static FMT_CONSTEXPR_DECL const int value</div><div class="ttdef"><b>Definition:</b> format-inl.h:159</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -217,8 +392,8 @@ Static Public Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>detail</b></li><li class="navelem"><a class="el" href="classdetail_1_1fp.html">fp</a></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:45 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespacedetail.html">detail</a></li><li class="navelem"><a class="el" href="classdetail_1_1fp.html">fp</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:32 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

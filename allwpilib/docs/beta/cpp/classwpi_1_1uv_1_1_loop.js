@@ -1,5 +1,15 @@
 var classwpi_1_1uv_1_1_loop =
 [
+    [ "Time", "classwpi_1_1uv_1_1_loop.html#a241e9b75503d6a133272a9bcb1595abc", null ],
+    [ "Mode", "classwpi_1_1uv_1_1_loop.html#a030385de408258c4e42bd198ee89443d", [
+      [ "kDefault", "classwpi_1_1uv_1_1_loop.html#a030385de408258c4e42bd198ee89443da25e6062650f000496420340f138cb252", null ],
+      [ "kOnce", "classwpi_1_1uv_1_1_loop.html#a030385de408258c4e42bd198ee89443da44c9465e42159146f13c26c4f9a6d508", null ],
+      [ "kNoWait", "classwpi_1_1uv_1_1_loop.html#a030385de408258c4e42bd198ee89443da54e16ad4f3622846d97344506a3af916", null ]
+    ] ],
+    [ "Loop", "classwpi_1_1uv_1_1_loop.html#aa5024b14aefe8586ccd3c4030af8e456", null ],
+    [ "Loop", "classwpi_1_1uv_1_1_loop.html#a38f336d240e7bce8fb345abfc2dced00", null ],
+    [ "Loop", "classwpi_1_1uv_1_1_loop.html#a145a7da14ae6fd88ba1213ec3643dd30", null ],
+    [ "~Loop", "classwpi_1_1uv_1_1_loop.html#ad27d9d581126068affc472002e61f60e", null ],
     [ "Close", "classwpi_1_1uv_1_1_loop.html#a3a0caaf3b425604e91107a4c6a011c5b", null ],
     [ "Create", "classwpi_1_1uv_1_1_loop.html#a2dbb2b54c0168a2ae92729a4e0b4a722", null ],
     [ "Fork", "classwpi_1_1uv_1_1_loop.html#a1ecaf36e65ead41cb190d890ec03f093", null ],
@@ -11,11 +21,13 @@ var classwpi_1_1uv_1_1_loop =
     [ "GetTimeout", "classwpi_1_1uv_1_1_loop.html#af72905fa513c4e2b266ee34cc7c76a85", null ],
     [ "IsAlive", "classwpi_1_1uv_1_1_loop.html#a6a23dfa3d6390b5bebe2db1b5cfb6a3e", null ],
     [ "Now", "classwpi_1_1uv_1_1_loop.html#a5393f9422f2e5fcbf0924a5d781d087e", null ],
+    [ "operator=", "classwpi_1_1uv_1_1_loop.html#af6b3b9c6e924a9ef2f9600b3c462e69f", null ],
+    [ "operator=", "classwpi_1_1uv_1_1_loop.html#a9d8800f722bc5197660ebd284e92f27d", null ],
     [ "ReportError", "classwpi_1_1uv_1_1_loop.html#a0f30699d9bc13ab4228a0d9d4d5837c0", null ],
     [ "Run", "classwpi_1_1uv_1_1_loop.html#ab25e9ec1e845f950b0c744f58d908e6a", null ],
     [ "SetData", "classwpi_1_1uv_1_1_loop.html#a8707c857c85c26bb43a7b191be52402d", null ],
     [ "Stop", "classwpi_1_1uv_1_1_loop.html#ab6d8d53040e38622b199105146632773", null ],
     [ "UpdateTime", "classwpi_1_1uv_1_1_loop.html#a807bbf6646a5d8374896cf9d33c28889", null ],
-    [ "Walk", "classwpi_1_1uv_1_1_loop.html#ad372f53c9e0627a3d84ca87e42fd2a0b", null ],
+    [ "Walk", "classwpi_1_1uv_1_1_loop.html#ab9e8f230eda495879496f6de522ab945", null ],
     [ "error", "classwpi_1_1uv_1_1_loop.html#aecde1d29bb84fe26990fcdeb4b72f3ac", null ]
 ];

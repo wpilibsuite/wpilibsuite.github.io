@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -118,18 +118,19 @@ Inheritance diagram for frc::MechanismObject2d:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a4b6e40e44ac75390494d6d2c17b53aae"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_mechanism_object2d.html#a4b6e40e44ac75390494d6d2c17b53aae">~MechanismObject2d</a> ()=default</td></tr>
+<tr class="separator:a4b6e40e44ac75390494d6d2c17b53aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fa131845cfc3de7d4bff881d91a4149"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_mechanism_object2d.html#a3fa131845cfc3de7d4bff881d91a4149">GetName</a> () const</td></tr>
 <tr class="memdesc:a3fa131845cfc3de7d4bff881d91a4149"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the object's name.  <a href="classfrc_1_1_mechanism_object2d.html#a3fa131845cfc3de7d4bff881d91a4149">More...</a><br /></td></tr>
 <tr class="separator:a3fa131845cfc3de7d4bff881d91a4149"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a354a97b9e66b6ed690f2844ea99fb076"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args, typename  = std::enable_if_t&lt;std::is_convertible_v&lt;T*, MechanismObject2d*&gt;&gt;&gt; </td></tr>
-<tr class="memitem:a354a97b9e66b6ed690f2844ea99fb076"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classfrc_1_1_mechanism_object2d.html#a354a97b9e66b6ed690f2844ea99fb076">Append</a> (std::string_view name, Args &amp;&amp;... args)</td></tr>
+<tr class="memitem:a354a97b9e66b6ed690f2844ea99fb076"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classfrc_1_1_mechanism_object2d.html#a354a97b9e66b6ed690f2844ea99fb076">Append</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> name, Args &amp;&amp;... args)</td></tr>
 <tr class="memdesc:a354a97b9e66b6ed690f2844ea99fb076"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append a Mechanism object that is based on this one.  <a href="classfrc_1_1_mechanism_object2d.html#a354a97b9e66b6ed690f2844ea99fb076">More...</a><br /></td></tr>
 <tr class="separator:a354a97b9e66b6ed690f2844ea99fb076"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a5cc20b8822d489a0a42ebc31e25c90b8"><td class="memItemLeft" align="right" valign="top"><a id="a5cc20b8822d489a0a42ebc31e25c90b8" name="a5cc20b8822d489a0a42ebc31e25c90b8"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>MechanismObject2d</b> (std::string_view name)</td></tr>
+<tr class="memitem:a5cc20b8822d489a0a42ebc31e25c90b8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_mechanism_object2d.html#a5cc20b8822d489a0a42ebc31e25c90b8">MechanismObject2d</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> name)</td></tr>
 <tr class="separator:a5cc20b8822d489a0a42ebc31e25c90b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05ac68d2c4a33c381dec6586806f1c5a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_mechanism_object2d.html#a05ac68d2c4a33c381dec6586806f1c5a">UpdateEntries</a> (std::shared_ptr&lt; <a class="el" href="classnt_1_1_network_table.html">nt::NetworkTable</a> &gt; table)=0</td></tr>
 <tr class="memdesc:a05ac68d2c4a33c381dec6586806f1c5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update all entries with new ones from a new table.  <a href="classfrc_1_1_mechanism_object2d.html#a05ac68d2c4a33c381dec6586806f1c5a">More...</a><br /></td></tr>
@@ -137,21 +138,71 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a3c560d9523161fa58cd4c550078499a9"><td class="memItemLeft" align="right" valign="top"><a id="a3c560d9523161fa58cd4c550078499a9" name="a3c560d9523161fa58cd4c550078499a9"></a>
-wpi::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>m_mutex</b></td></tr>
+<tr class="memitem:a3c560d9523161fa58cd4c550078499a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacewpi.html#a59819be5b11c0fbbc0b8e07c7638af24">wpi::mutex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_mechanism_object2d.html#a3c560d9523161fa58cd4c550078499a9">m_mutex</a></td></tr>
 <tr class="separator:a3c560d9523161fa58cd4c550078499a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:af2157e93dd3038076fb4f928e737c69d"><td class="memItemLeft" align="right" valign="top"><a id="af2157e93dd3038076fb4f928e737c69d" name="af2157e93dd3038076fb4f928e737c69d"></a>
-class&#160;</td><td class="memItemRight" valign="bottom"><b>Mechanism2d</b></td></tr>
+<tr class="memitem:af2157e93dd3038076fb4f928e737c69d"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_mechanism_object2d.html#af2157e93dd3038076fb4f928e737c69d">Mechanism2d</a></td></tr>
 <tr class="separator:af2157e93dd3038076fb4f928e737c69d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Common base class for all <a class="el" href="classfrc_1_1_mechanism2d.html" title="Visual 2D representation of arms, elevators, and general mechanisms through a node-based API.">Mechanism2d</a> node types. </p>
 <p >To append another node, call Append with the type of node and its construction parameters. None of the node types are designed to be constructed directly, and are owned by their parent node/container - obtain pointers from the Append function or similar factory methods.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classfrc_1_1_mechanism2d.html" title="Visual 2D representation of arms, elevators, and general mechanisms through a node-based API.">Mechanism2d</a>. </dd></dl>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a5cc20b8822d489a0a42ebc31e25c90b8" name="a5cc20b8822d489a0a42ebc31e25c90b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cc20b8822d489a0a42ebc31e25c90b8">&#9670;&nbsp;</a></span>MechanismObject2d()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">frc::MechanismObject2d::MechanismObject2d </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4b6e40e44ac75390494d6d2c17b53aae" name="a4b6e40e44ac75390494d6d2c17b53aae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b6e40e44ac75390494d6d2c17b53aae">&#9670;&nbsp;</a></span>~MechanismObject2d()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual frc::MechanismObject2d::~MechanismObject2d </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a354a97b9e66b6ed690f2844ea99fb076" name="a354a97b9e66b6ed690f2844ea99fb076"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a354a97b9e66b6ed690f2844ea99fb076">&#9670;&nbsp;</a></span>Append()</h2>
 
@@ -166,7 +217,7 @@ template&lt;typename T , typename... Args, typename  = std::enable_if_t&lt;std::
         <tr>
           <td class="memname">T * frc::MechanismObject2d::Append </td>
           <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
@@ -262,6 +313,52 @@ template&lt;typename T , typename... Args, typename  = std::enable_if_t&lt;std::
 
 </div>
 </div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="af2157e93dd3038076fb4f928e737c69d" name="af2157e93dd3038076fb4f928e737c69d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2157e93dd3038076fb4f928e737c69d">&#9670;&nbsp;</a></span>Mechanism2d</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="classfrc_1_1_mechanism2d.html">Mechanism2d</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a3c560d9523161fa58cd4c550078499a9" name="a3c560d9523161fa58cd4c550078499a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c560d9523161fa58cd4c550078499a9">&#9670;&nbsp;</a></span>m_mutex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacewpi.html#a59819be5b11c0fbbc0b8e07c7638af24">wpi::mutex</a> frc::MechanismObject2d::m_mutex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">mutable</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>frc/smartdashboard/<a class="el" href="_mechanism_object2d_8h_source.html">MechanismObject2d.h</a></li>
 </ul>
@@ -270,8 +367,8 @@ template&lt;typename T , typename... Args, typename  = std::enable_if_t&lt;std::
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1_mechanism_object2d.html">MechanismObject2d</a></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:50 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_mechanism_object2d.html">MechanismObject2d</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:38 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

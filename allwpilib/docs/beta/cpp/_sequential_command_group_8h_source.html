@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('_sequential_command_group_8h_source.ht
   <div class="headertitle"><div class="title">SequentialCommandGroup.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
+<a href="_sequential_command_group_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Open Source Software; you can modify and/or share it under the terms of</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// the WPILib BSD license file in the root directory of this project.</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
@@ -111,14 +111,14 @@ $(document).ready(function(){initNavTree('_sequential_command_group_8h_source.ht
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;utility&gt;</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;wpi/span.h&gt;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &lt;<a class="code" href="span_8h.html">wpi/span.h</a>&gt;</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &quot;frc2/command/CommandGroupBase.h&quot;</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &quot;frc2/command/CommandHelper.h&quot;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &quot;<a class="code" href="_command_group_base_8h.html">frc2/command/CommandGroupBase.h</a>&quot;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &quot;<a class="code" href="_command_helper_8h.html">frc2/command/CommandHelper.h</a>&quot;</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">namespace </span>frc2 {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacefrc2.html">frc2</a> {</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">const</span> <span class="keywordtype">size_t</span> invalid_index = std::numeric_limits&lt;size_t&gt;::max();</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="namespacefrc2.html#aea5b4588c328245930bd43062ff9560f">   25</a></span><span class="keyword">const</span> <span class="keywordtype">size_t</span> <a class="code hl_variable" href="namespacefrc2.html#aea5b4588c328245930bd43062ff9560f">invalid_index</a> = <a class="code hl_function" href="namespaceunits_1_1math.html#a44b68b796057241089a0a9f3b954d21c">std::numeric_limits&lt;size_t&gt;::max</a>();</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment"></span> </div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">/**</span></div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment"> * A CommandGroups that runs a list of commands in sequence.</span></div>
@@ -147,29 +147,29 @@ $(document).ready(function(){initNavTree('_sequential_command_group_8h_source.ht
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">   * @param commands the commands to include in this group.</span></div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <span class="keyword">template</span> &lt;<span class="keyword">class</span>... Types,</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            <span class="keyword">typename</span> = std::enable_if_t&lt;std::conjunction_v&lt;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>            <span class="keyword">typename</span> = <a class="code hl_typedef" href="core_8h.html#a012819c9e8b5e04872a271f50f8b8196">std::enable_if_t</a>&lt;std::conjunction_v&lt;</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                std::is_base_of&lt;Command, std::remove_reference_t&lt;Types&gt;&gt;...&gt;&gt;&gt;</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classfrc2_1_1_sequential_command_group.html#a77beee17a072fc437c97964fdd8c89b8">   56</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classfrc2_1_1_sequential_command_group.html#a77beee17a072fc437c97964fdd8c89b8">SequentialCommandGroup</a>(Types&amp;&amp;... commands) {</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    AddCommands(std::forward&lt;Types&gt;(commands)...);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <a class="code hl_function" href="classfrc2_1_1_sequential_command_group.html#aace40670788c61fb219e3c756ef56ee9">AddCommands</a>(std::forward&lt;Types&gt;(commands)...);</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  }</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <a class="code hl_function" href="classfrc2_1_1_sequential_command_group.html#a5fe55d2c910e536f472e8bccb02058e2">SequentialCommandGroup</a>(<a class="code hl_class" href="classfrc2_1_1_sequential_command_group.html">SequentialCommandGroup</a>&amp;&amp; other) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="classfrc2_1_1_sequential_command_group.html#a5b466e171c49f2e3915be510035f231a">   60</a></span>  <a class="code hl_function" href="classfrc2_1_1_sequential_command_group.html#a5b466e171c49f2e3915be510035f231a">SequentialCommandGroup</a>(<a class="code hl_class" href="classfrc2_1_1_sequential_command_group.html">SequentialCommandGroup</a>&amp;&amp; other) = <span class="keywordflow">default</span>;</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  <span class="comment">// No copy constructors for command groups</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <a class="code hl_function" href="classfrc2_1_1_sequential_command_group.html#a5fe55d2c910e536f472e8bccb02058e2">SequentialCommandGroup</a>(<span class="keyword">const</span> <a class="code hl_class" href="classfrc2_1_1_sequential_command_group.html">SequentialCommandGroup</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="classfrc2_1_1_sequential_command_group.html#ae696a4e67089fae5f5bdf9f98721bfe7">   63</a></span>  <a class="code hl_function" href="classfrc2_1_1_sequential_command_group.html#ae696a4e67089fae5f5bdf9f98721bfe7">SequentialCommandGroup</a>(<span class="keyword">const</span> <a class="code hl_class" href="classfrc2_1_1_sequential_command_group.html">SequentialCommandGroup</a>&amp;) = <span class="keyword">delete</span>;</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="comment">// Prevent template expansion from emulating copy ctor</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <a class="code hl_function" href="classfrc2_1_1_sequential_command_group.html#a5fe55d2c910e536f472e8bccb02058e2">SequentialCommandGroup</a>(<a class="code hl_class" href="classfrc2_1_1_sequential_command_group.html">SequentialCommandGroup</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="classfrc2_1_1_sequential_command_group.html#ab7850d2c08942259c2e5e45dec1fd12e">   66</a></span>  <a class="code hl_function" href="classfrc2_1_1_sequential_command_group.html#ab7850d2c08942259c2e5e45dec1fd12e">SequentialCommandGroup</a>(<a class="code hl_class" href="classfrc2_1_1_sequential_command_group.html">SequentialCommandGroup</a>&amp;) = <span class="keyword">delete</span>;</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  <span class="keyword">template</span> &lt;<span class="keyword">class</span>... Types,</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            <span class="keyword">typename</span> = std::enable_if_t&lt;std::conjunction_v&lt;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            <span class="keyword">typename</span> = <a class="code hl_typedef" href="core_8h.html#a012819c9e8b5e04872a271f50f8b8196">std::enable_if_t</a>&lt;std::conjunction_v&lt;</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                std::is_base_of&lt;Command, std::remove_reference_t&lt;Types&gt;&gt;...&gt;&gt;&gt;</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  <span class="keywordtype">void</span> AddCommands(Types&amp;&amp;... commands) {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="classfrc2_1_1_sequential_command_group.html#aace40670788c61fb219e3c756ef56ee9">   71</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc2_1_1_sequential_command_group.html#aace40670788c61fb219e3c756ef56ee9">AddCommands</a>(Types&amp;&amp;... commands) {</div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    std::vector&lt;std::unique_ptr&lt;Command&gt;&gt; foo;</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    ((void)foo.emplace_back(std::make_unique&lt;std::remove_reference_t&lt;Types&gt;&gt;(</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>         std::forward&lt;Types&gt;(commands))),</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>     ...);</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    AddCommands(std::move(foo));</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <a class="code hl_function" href="classfrc2_1_1_sequential_command_group.html#aace40670788c61fb219e3c756ef56ee9">AddCommands</a>(std::move(foo));</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  }</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="classfrc2_1_1_sequential_command_group.html#a31c087934c49ab620029b7c2249fbb6e">   79</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc2_1_1_sequential_command_group.html#a31c087934c49ab620029b7c2249fbb6e">Initialize</a>() <span class="keyword">override</span>;</div>
@@ -193,10 +193,10 @@ $(document).ready(function(){initNavTree('_sequential_command_group_8h_source.ht
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>      <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  <span class="keywordtype">void</span> AddCommands(std::vector&lt;std::unique_ptr&lt;Command&gt;&gt;&amp;&amp; commands) <span class="keyword">final</span>;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc2_1_1_sequential_command_group.html#aace40670788c61fb219e3c756ef56ee9">AddCommands</a>(std::vector&lt;std::unique_ptr&lt;Command&gt;&gt;&amp;&amp; commands) <span class="keyword">final</span>;</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  <a class="code hl_class" href="classwpi_1_1_small_vector.html">wpi::SmallVector&lt;std::unique_ptr&lt;Command&gt;</a>, 4&gt; m_commands;</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  <span class="keywordtype">size_t</span> m_currentCommandIndex{invalid_index};</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  <span class="keywordtype">size_t</span> m_currentCommandIndex{<a class="code hl_variable" href="namespacefrc2.html#aea5b4588c328245930bd43062ff9560f">invalid_index</a>};</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  <span class="keywordtype">bool</span> m_runWhenDisabled{<span class="keyword">true</span>};</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>};</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>}  <span class="comment">// namespace frc2</span></div>
@@ -204,26 +204,37 @@ $(document).ready(function(){initNavTree('_sequential_command_group_8h_source.ht
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="preprocessor">#ifdef _WIN32</span></div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="preprocessor">#pragma warning(pop)</span></div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a_command_group_base_8h_html"><div class="ttname"><a href="_command_group_base_8h.html">CommandGroupBase.h</a></div></div>
+<div class="ttc" id="a_command_helper_8h_html"><div class="ttname"><a href="_command_helper_8h.html">CommandHelper.h</a></div></div>
 <div class="ttc" id="aclassfrc2_1_1_command_helper_html"><div class="ttname"><a href="classfrc2_1_1_command_helper.html">frc2::CommandHelper</a></div><div class="ttdoc">CRTP implementation to allow polymorphic decorator functions in Command.</div><div class="ttdef"><b>Definition:</b> CommandHelper.h:23</div></div>
 <div class="ttc" id="aclassfrc2_1_1_sequential_command_group_html"><div class="ttname"><a href="classfrc2_1_1_sequential_command_group.html">frc2::SequentialCommandGroup</a></div><div class="ttdoc">A CommandGroups that runs a list of commands in sequence.</div><div class="ttdef"><b>Definition:</b> SequentialCommandGroup.h:34</div></div>
 <div class="ttc" id="aclassfrc2_1_1_sequential_command_group_html_a089385b0790dee592c70ae54891be209"><div class="ttname"><a href="classfrc2_1_1_sequential_command_group.html#a089385b0790dee592c70ae54891be209">frc2::SequentialCommandGroup::Execute</a></div><div class="ttdeci">void Execute() override</div><div class="ttdoc">The main body of a command.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_sequential_command_group_html_a19f9f2781148cd42ec1847f21cf1369c"><div class="ttname"><a href="classfrc2_1_1_sequential_command_group.html#a19f9f2781148cd42ec1847f21cf1369c">frc2::SequentialCommandGroup::IsFinished</a></div><div class="ttdeci">bool IsFinished() override</div><div class="ttdoc">Whether the command has finished.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_sequential_command_group_html_a31c087934c49ab620029b7c2249fbb6e"><div class="ttname"><a href="classfrc2_1_1_sequential_command_group.html#a31c087934c49ab620029b7c2249fbb6e">frc2::SequentialCommandGroup::Initialize</a></div><div class="ttdeci">void Initialize() override</div><div class="ttdoc">The initial subroutine of a command.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_sequential_command_group_html_a5aa6a2bc503b46495ec47d24ccdf82e5"><div class="ttname"><a href="classfrc2_1_1_sequential_command_group.html#a5aa6a2bc503b46495ec47d24ccdf82e5">frc2::SequentialCommandGroup::RunsWhenDisabled</a></div><div class="ttdeci">bool RunsWhenDisabled() const override</div><div class="ttdoc">Whether the given command should run when the robot is disabled.</div></div>
+<div class="ttc" id="aclassfrc2_1_1_sequential_command_group_html_a5b466e171c49f2e3915be510035f231a"><div class="ttname"><a href="classfrc2_1_1_sequential_command_group.html#a5b466e171c49f2e3915be510035f231a">frc2::SequentialCommandGroup::SequentialCommandGroup</a></div><div class="ttdeci">SequentialCommandGroup(SequentialCommandGroup &amp;&amp;other)=default</div></div>
 <div class="ttc" id="aclassfrc2_1_1_sequential_command_group_html_a5fe55d2c910e536f472e8bccb02058e2"><div class="ttname"><a href="classfrc2_1_1_sequential_command_group.html#a5fe55d2c910e536f472e8bccb02058e2">frc2::SequentialCommandGroup::SequentialCommandGroup</a></div><div class="ttdeci">SequentialCommandGroup(std::vector&lt; std::unique_ptr&lt; Command &gt; &gt; &amp;&amp;commands)</div><div class="ttdoc">Creates a new SequentialCommandGroup.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_sequential_command_group_html_a77beee17a072fc437c97964fdd8c89b8"><div class="ttname"><a href="classfrc2_1_1_sequential_command_group.html#a77beee17a072fc437c97964fdd8c89b8">frc2::SequentialCommandGroup::SequentialCommandGroup</a></div><div class="ttdeci">SequentialCommandGroup(Types &amp;&amp;... commands)</div><div class="ttdoc">Creates a new SequentialCommandGroup.</div><div class="ttdef"><b>Definition:</b> SequentialCommandGroup.h:56</div></div>
 <div class="ttc" id="aclassfrc2_1_1_sequential_command_group_html_a798af677bbcbb29270d828749c551bec"><div class="ttname"><a href="classfrc2_1_1_sequential_command_group.html#a798af677bbcbb29270d828749c551bec">frc2::SequentialCommandGroup::End</a></div><div class="ttdeci">void End(bool interrupted) override</div><div class="ttdoc">The action to take when the command ends.</div></div>
+<div class="ttc" id="aclassfrc2_1_1_sequential_command_group_html_aace40670788c61fb219e3c756ef56ee9"><div class="ttname"><a href="classfrc2_1_1_sequential_command_group.html#aace40670788c61fb219e3c756ef56ee9">frc2::SequentialCommandGroup::AddCommands</a></div><div class="ttdeci">void AddCommands(Types &amp;&amp;... commands)</div><div class="ttdef"><b>Definition:</b> SequentialCommandGroup.h:71</div></div>
+<div class="ttc" id="aclassfrc2_1_1_sequential_command_group_html_ab7850d2c08942259c2e5e45dec1fd12e"><div class="ttname"><a href="classfrc2_1_1_sequential_command_group.html#ab7850d2c08942259c2e5e45dec1fd12e">frc2::SequentialCommandGroup::SequentialCommandGroup</a></div><div class="ttdeci">SequentialCommandGroup(SequentialCommandGroup &amp;)=delete</div></div>
 <div class="ttc" id="aclassfrc2_1_1_sequential_command_group_html_ac3e6741fb467452aed2511115ac88faf"><div class="ttname"><a href="classfrc2_1_1_sequential_command_group.html#ac3e6741fb467452aed2511115ac88faf">frc2::SequentialCommandGroup::AndThen</a></div><div class="ttdeci">SequentialCommandGroup AndThen(std::function&lt; void()&gt; toRun, wpi::span&lt; Subsystem *const &gt; requirements={}) &amp;&amp;override</div><div class="ttdoc">Decorates this command with a runnable to run after the command finishes.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_sequential_command_group_html_adcd4d525096b03629279f6c4a411ea03"><div class="ttname"><a href="classfrc2_1_1_sequential_command_group.html#adcd4d525096b03629279f6c4a411ea03">frc2::SequentialCommandGroup::BeforeStarting</a></div><div class="ttdeci">SequentialCommandGroup BeforeStarting(std::function&lt; void()&gt; toRun, wpi::span&lt; Subsystem *const &gt; requirements={}) &amp;&amp;override</div><div class="ttdoc">Decorates this command with a runnable to run before this command starts.</div></div>
+<div class="ttc" id="aclassfrc2_1_1_sequential_command_group_html_ae696a4e67089fae5f5bdf9f98721bfe7"><div class="ttname"><a href="classfrc2_1_1_sequential_command_group.html#ae696a4e67089fae5f5bdf9f98721bfe7">frc2::SequentialCommandGroup::SequentialCommandGroup</a></div><div class="ttdeci">SequentialCommandGroup(const SequentialCommandGroup &amp;)=delete</div></div>
 <div class="ttc" id="aclasswpi_1_1_small_vector_html"><div class="ttname"><a href="classwpi_1_1_small_vector.html">wpi::SmallVector</a></div><div class="ttdoc">This is a 'vector' (really, a variable-sized array), optimized for the case when the array is small.</div><div class="ttdef"><b>Definition:</b> SmallVector.h:856</div></div>
 <div class="ttc" id="aclasswpi_1_1span_html"><div class="ttname"><a href="classwpi_1_1span.html">wpi::span</a></div><div class="ttdef"><b>Definition:</b> span.h:114</div></div>
+<div class="ttc" id="acore_8h_html_a012819c9e8b5e04872a271f50f8b8196"><div class="ttname"><a href="core_8h.html#a012819c9e8b5e04872a271f50f8b8196">enable_if_t</a></div><div class="ttdeci">typename std::enable_if&lt; B, T &gt;::type enable_if_t</div><div class="ttdef"><b>Definition:</b> core.h:321</div></div>
+<div class="ttc" id="anamespacefrc2_html"><div class="ttname"><a href="namespacefrc2.html">frc2</a></div><div class="ttdef"><b>Definition:</b> PIDController.h:16</div></div>
+<div class="ttc" id="anamespacefrc2_html_aea5b4588c328245930bd43062ff9560f"><div class="ttname"><a href="namespacefrc2.html#aea5b4588c328245930bd43062ff9560f">frc2::invalid_index</a></div><div class="ttdeci">const size_t invalid_index</div><div class="ttdef"><b>Definition:</b> SequentialCommandGroup.h:25</div></div>
+<div class="ttc" id="anamespaceunits_1_1math_html_a44b68b796057241089a0a9f3b954d21c"><div class="ttname"><a href="namespaceunits_1_1math.html#a44b68b796057241089a0a9f3b954d21c">units::math::max</a></div><div class="ttdeci">UnitTypeLhs() max(const UnitTypeLhs &amp;lhs, const UnitTypeRhs &amp;rhs)</div><div class="ttdef"><b>Definition:</b> base.h:3392</div></div>
+<div class="ttc" id="aspan_8h_html"><div class="ttname"><a href="span_8h.html">span.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_e7d5d1c9c07b3d6a0a849f7ca2bfcaa9.html">frc2</a></li><li class="navelem"><a class="el" href="dir_25d5854705192c92d2d003534c71255a.html">command</a></li><li class="navelem"><b>SequentialCommandGroup.h</b></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:35 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="dir_e7d5d1c9c07b3d6a0a849f7ca2bfcaa9.html">frc2</a></li><li class="navelem"><a class="el" href="dir_25d5854705192c92d2d003534c71255a.html">command</a></li><li class="navelem"><a class="el" href="_sequential_command_group_8h.html">SequentialCommandGroup.h</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:21 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

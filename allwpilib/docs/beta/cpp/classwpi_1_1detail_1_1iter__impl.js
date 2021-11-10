@@ -29,5 +29,6 @@ var classwpi_1_1detail_1_1iter__impl =
     [ "operator>=", "classwpi_1_1detail_1_1iter__impl.html#a5ddacdc1929048a1e94c1f501b53184f", null ],
     [ "operator[]", "classwpi_1_1detail_1_1iter__impl.html#a2db183c704895665dbc5ffb2fa80d13d", null ],
     [ "value", "classwpi_1_1detail_1_1iter__impl.html#a9fa458ba5099ae88fd85f749ffeebcc3", null ],
+    [ "::wpi::JsonTest", "classwpi_1_1detail_1_1iter__impl.html#ae4c8471f14ddd7551d7208a5926f0f70", null ],
     [ "operator+", "classwpi_1_1detail_1_1iter__impl.html#a94108d1a7563e103534f23eb5c1ee175", null ]
 ];

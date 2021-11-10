@@ -1,5 +1,9 @@
 var classfrc2_1_1_command =
 [
+    [ "Command", "classfrc2_1_1_command.html#a7d5d23157039a66b8a5fb1967edf0a10", null ],
+    [ "~Command", "classfrc2_1_1_command.html#a35c2255741bd5841d1c693af1cc833aa", null ],
+    [ "Command", "classfrc2_1_1_command.html#a75bc77ad3055ea5c8d7eba4f9b184026", null ],
+    [ "Command", "classfrc2_1_1_command.html#a21996b687122162a9a5a9d30b929aa57", null ],
     [ "AndThen", "classfrc2_1_1_command.html#a82d7a714c4c6162d3d5fc426d9ceeb5b", null ],
     [ "AndThen", "classfrc2_1_1_command.html#ab0cc63118f578b328222ab2e9f1b7b65", null ],
     [ "AsProxy", "classfrc2_1_1_command.html#afd847a1c3b2097e9d13cd0c1b00dbacf", null ],
@@ -8,12 +12,15 @@ var classfrc2_1_1_command =
     [ "Cancel", "classfrc2_1_1_command.html#a0530e175903b9e2721600d728aa251f5", null ],
     [ "End", "classfrc2_1_1_command.html#a134eda3756f00c667bb5415b23ee920c", null ],
     [ "Execute", "classfrc2_1_1_command.html#a7d7ea1271f7dcc65c0ba3221d179b510", null ],
+    [ "GetName", "classfrc2_1_1_command.html#a44d39463d12f6dd89c165f6faa746b6b", null ],
     [ "GetRequirements", "classfrc2_1_1_command.html#a4830db450b1382e0b7395143e457ddc6", null ],
     [ "HasRequirement", "classfrc2_1_1_command.html#acf24aef63d176810eb1376defc1116b4", null ],
     [ "Initialize", "classfrc2_1_1_command.html#ad3f1971a1b44ecdd4683d766f831bccd", null ],
     [ "IsFinished", "classfrc2_1_1_command.html#af5e8c12152d195a4f3c06789366aac88", null ],
     [ "IsGrouped", "classfrc2_1_1_command.html#a81972b9524bbf1080ce61fd962493e40", null ],
     [ "IsScheduled", "classfrc2_1_1_command.html#a03316d8a51ffcb8262e6f751ae42a494", null ],
+    [ "operator=", "classfrc2_1_1_command.html#ae6a11135027cc8dc6917a6b290c109ea", null ],
+    [ "operator=", "classfrc2_1_1_command.html#aa53c83ad502c48906767c8eef16ee096", null ],
     [ "Perpetually", "classfrc2_1_1_command.html#a4e72c5be424accbf416cf35be061c918", null ],
     [ "RunsWhenDisabled", "classfrc2_1_1_command.html#a5113cbf3655ce8679dd48bf22700b2f4", null ],
     [ "Schedule", "classfrc2_1_1_command.html#ad777fdfaac1d3f0668086fe783700710", null ],
@@ -21,5 +28,6 @@ var classfrc2_1_1_command =
     [ "SetGrouped", "classfrc2_1_1_command.html#a8c3e7ee729136e7e7e18e1e3a48a079a", null ],
     [ "TransferOwnership", "classfrc2_1_1_command.html#af4c5f5b02b388017df79f36354a43bf2", null ],
     [ "WithInterrupt", "classfrc2_1_1_command.html#ad5d6a753ec2790f274bc7b884e9e305b", null ],
-    [ "WithTimeout", "classfrc2_1_1_command.html#a7d1ba6905ebca2f7e000942b318b59ae", null ]
+    [ "WithTimeout", "classfrc2_1_1_command.html#a7d1ba6905ebca2f7e000942b318b59ae", null ],
+    [ "m_isGrouped", "classfrc2_1_1_command.html#a3e88666fcca3af7a516176a2a18dfb6c", null ]
 ];

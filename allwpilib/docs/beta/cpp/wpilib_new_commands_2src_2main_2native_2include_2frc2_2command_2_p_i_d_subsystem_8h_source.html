@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -94,17 +94,17 @@ $(document).ready(function(){initNavTree('wpilib_new_commands_2src_2main_2native
   <div class="headertitle"><div class="title">PIDSubsystem.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
+<a href="wpilib_new_commands_2src_2main_2native_2include_2frc2_2command_2_p_i_d_subsystem_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Open Source Software; you can modify and/or share it under the terms of</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// the WPILib BSD license file in the root directory of this project.</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;frc/controller/PIDController.h&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;<a class="code" href="wpimath_2src_2main_2native_2include_2frc_2controller_2_p_i_d_controller_8h.html">frc/controller/PIDController.h</a>&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;frc2/command/SubsystemBase.h&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="_subsystem_base_8h.html">frc2/command/SubsystemBase.h</a>&quot;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span>frc2 {<span class="comment"></span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacefrc2.html">frc2</a> {<span class="comment"></span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">/**</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> * A subsystem that uses a PIDController to control an output.  The controller</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> * is run synchronously from the subsystem&#39;s periodic() method.</span></div>
@@ -162,8 +162,8 @@ $(document).ready(function(){initNavTree('wpilib_new_commands_2src_2main_2native
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="classfrc2_1_1_p_i_d_subsystem.html#adcffcd9b14091e3caeefe1d5ba32f10b">   66</a></span>  <a class="code hl_class" href="classfrc2_1_1_p_i_d_controller.html">PIDController</a>&amp; <a class="code hl_function" href="classfrc2_1_1_p_i_d_subsystem.html#adcffcd9b14091e3caeefe1d5ba32f10b">GetController</a>();</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> <span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  <a class="code hl_class" href="classfrc2_1_1_p_i_d_controller.html">PIDController</a> m_controller;</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  <span class="keywordtype">bool</span> m_enabled{<span class="keyword">false</span>};</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="classfrc2_1_1_p_i_d_subsystem.html#a22d7490c91d98ae187d812c5c1fbce37">   69</a></span>  <a class="code hl_class" href="classfrc2_1_1_p_i_d_controller.html">PIDController</a> <a class="code hl_variable" href="classfrc2_1_1_p_i_d_subsystem.html#a22d7490c91d98ae187d812c5c1fbce37">m_controller</a>;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="classfrc2_1_1_p_i_d_subsystem.html#abf36af4af41831b283accd6b752ff20c">   70</a></span>  <span class="keywordtype">bool</span> <a class="code hl_variable" href="classfrc2_1_1_p_i_d_subsystem.html#abf36af4af41831b283accd6b752ff20c">m_enabled</a>{<span class="keyword">false</span>};</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment"></span> </div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">   * Returns the measurement of the process variable used by the PIDController.</span></div>
@@ -184,26 +184,31 @@ $(document).ready(function(){initNavTree('wpilib_new_commands_2src_2main_2native
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  <span class="keywordtype">double</span> m_setpoint{0};</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>};</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>}  <span class="comment">// namespace frc2</span></div>
+<div class="ttc" id="a_subsystem_base_8h_html"><div class="ttname"><a href="_subsystem_base_8h.html">SubsystemBase.h</a></div></div>
 <div class="ttc" id="aclassfrc2_1_1_p_i_d_controller_html"><div class="ttname"><a href="classfrc2_1_1_p_i_d_controller.html">frc2::PIDController</a></div><div class="ttdoc">Implements a PID control loop.</div><div class="ttdef"><b>Definition:</b> PIDController.h:23</div></div>
 <div class="ttc" id="aclassfrc2_1_1_p_i_d_subsystem_html"><div class="ttname"><a href="classfrc2_1_1_p_i_d_subsystem.html">frc2::PIDSubsystem</a></div><div class="ttdoc">A subsystem that uses a PIDController to control an output.</div><div class="ttdef"><b>Definition:</b> PIDSubsystem.h:18</div></div>
 <div class="ttc" id="aclassfrc2_1_1_p_i_d_subsystem_html_a185f89219de0dbc8c5b476e6cf2bfcfd"><div class="ttname"><a href="classfrc2_1_1_p_i_d_subsystem.html#a185f89219de0dbc8c5b476e6cf2bfcfd">frc2::PIDSubsystem::IsEnabled</a></div><div class="ttdeci">bool IsEnabled()</div><div class="ttdoc">Returns whether the controller is enabled.</div></div>
+<div class="ttc" id="aclassfrc2_1_1_p_i_d_subsystem_html_a22d7490c91d98ae187d812c5c1fbce37"><div class="ttname"><a href="classfrc2_1_1_p_i_d_subsystem.html#a22d7490c91d98ae187d812c5c1fbce37">frc2::PIDSubsystem::m_controller</a></div><div class="ttdeci">PIDController m_controller</div><div class="ttdef"><b>Definition:</b> PIDSubsystem.h:69</div></div>
 <div class="ttc" id="aclassfrc2_1_1_p_i_d_subsystem_html_a3668bf3dcfb529c00075210c23809187"><div class="ttname"><a href="classfrc2_1_1_p_i_d_subsystem.html#a3668bf3dcfb529c00075210c23809187">frc2::PIDSubsystem::Enable</a></div><div class="ttdeci">virtual void Enable()</div><div class="ttdoc">Enables the PID control.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_p_i_d_subsystem_html_a682a32890b742eb9b43cbb2adb656997"><div class="ttname"><a href="classfrc2_1_1_p_i_d_subsystem.html#a682a32890b742eb9b43cbb2adb656997">frc2::PIDSubsystem::UseOutput</a></div><div class="ttdeci">virtual void UseOutput(double output, double setpoint)=0</div><div class="ttdoc">Uses the output from the PIDController.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_p_i_d_subsystem_html_a99c42caaa509009866c23857b0e43ebd"><div class="ttname"><a href="classfrc2_1_1_p_i_d_subsystem.html#a99c42caaa509009866c23857b0e43ebd">frc2::PIDSubsystem::GetSetpoint</a></div><div class="ttdeci">double GetSetpoint() const</div><div class="ttdoc">Gets the setpoint for the subsystem.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_p_i_d_subsystem_html_a9d964985879992fd705a2a85c7a59aea"><div class="ttname"><a href="classfrc2_1_1_p_i_d_subsystem.html#a9d964985879992fd705a2a85c7a59aea">frc2::PIDSubsystem::PIDSubsystem</a></div><div class="ttdeci">PIDSubsystem(PIDController controller, double initialPosition=0)</div><div class="ttdoc">Creates a new PIDSubsystem.</div></div>
+<div class="ttc" id="aclassfrc2_1_1_p_i_d_subsystem_html_abf36af4af41831b283accd6b752ff20c"><div class="ttname"><a href="classfrc2_1_1_p_i_d_subsystem.html#abf36af4af41831b283accd6b752ff20c">frc2::PIDSubsystem::m_enabled</a></div><div class="ttdeci">bool m_enabled</div><div class="ttdef"><b>Definition:</b> PIDSubsystem.h:70</div></div>
 <div class="ttc" id="aclassfrc2_1_1_p_i_d_subsystem_html_ac966423fa431636242fb4e470e55df0e"><div class="ttname"><a href="classfrc2_1_1_p_i_d_subsystem.html#ac966423fa431636242fb4e470e55df0e">frc2::PIDSubsystem::Disable</a></div><div class="ttdeci">virtual void Disable()</div><div class="ttdoc">Disables the PID control.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_p_i_d_subsystem_html_ad891cdb3d19530b92b64b7cd92e93f3a"><div class="ttname"><a href="classfrc2_1_1_p_i_d_subsystem.html#ad891cdb3d19530b92b64b7cd92e93f3a">frc2::PIDSubsystem::Periodic</a></div><div class="ttdeci">void Periodic() override</div><div class="ttdoc">This method is called periodically by the CommandScheduler.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_p_i_d_subsystem_html_ad9a1881c37b6550da2b43e309047f593"><div class="ttname"><a href="classfrc2_1_1_p_i_d_subsystem.html#ad9a1881c37b6550da2b43e309047f593">frc2::PIDSubsystem::GetMeasurement</a></div><div class="ttdeci">virtual double GetMeasurement()=0</div><div class="ttdoc">Returns the measurement of the process variable used by the PIDController.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_p_i_d_subsystem_html_adcffcd9b14091e3caeefe1d5ba32f10b"><div class="ttname"><a href="classfrc2_1_1_p_i_d_subsystem.html#adcffcd9b14091e3caeefe1d5ba32f10b">frc2::PIDSubsystem::GetController</a></div><div class="ttdeci">PIDController &amp; GetController()</div><div class="ttdoc">Returns the PIDController.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_p_i_d_subsystem_html_afaaec0da24b606760ec3003bfc0f6362"><div class="ttname"><a href="classfrc2_1_1_p_i_d_subsystem.html#afaaec0da24b606760ec3003bfc0f6362">frc2::PIDSubsystem::SetSetpoint</a></div><div class="ttdeci">void SetSetpoint(double setpoint)</div><div class="ttdoc">Sets the setpoint for the subsystem.</div></div>
 <div class="ttc" id="aclassfrc2_1_1_subsystem_base_html"><div class="ttname"><a href="classfrc2_1_1_subsystem_base.html">frc2::SubsystemBase</a></div><div class="ttdoc">A base for subsystems that handles registration in the constructor, and provides a more intuitive met...</div><div class="ttdef"><b>Definition:</b> SubsystemBase.h:22</div></div>
+<div class="ttc" id="anamespacefrc2_html"><div class="ttname"><a href="namespacefrc2.html">frc2</a></div><div class="ttdef"><b>Definition:</b> PIDController.h:16</div></div>
+<div class="ttc" id="awpimath_2src_2main_2native_2include_2frc_2controller_2_p_i_d_controller_8h_html"><div class="ttname"><a href="wpimath_2src_2main_2native_2include_2frc_2controller_2_p_i_d_controller_8h.html">PIDController.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_e7d5d1c9c07b3d6a0a849f7ca2bfcaa9.html">frc2</a></li><li class="navelem"><a class="el" href="dir_25d5854705192c92d2d003534c71255a.html">command</a></li><li class="navelem"><b>PIDSubsystem.h</b></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:35 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="dir_e7d5d1c9c07b3d6a0a849f7ca2bfcaa9.html">frc2</a></li><li class="navelem"><a class="el" href="dir_25d5854705192c92d2d003534c71255a.html">command</a></li><li class="navelem"><a class="el" href="wpilib_new_commands_2src_2main_2native_2include_2frc2_2command_2_p_i_d_subsystem_8h.html">PIDSubsystem.h</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:21 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

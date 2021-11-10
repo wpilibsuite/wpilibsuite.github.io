@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -98,6 +98,8 @@ $(document).ready(function(){initNavTree('classfrc_1_1_kalman_filter_latency_com
   <div class="headertitle"><div class="title">frc::KalmanFilterLatencyCompensator&lt; States, Inputs, Outputs, KalmanFilterType &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_kalman_filter_latency_compensator_8h_source.html">frc/estimator/KalmanFilterLatencyCompensator.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -106,9 +108,8 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2fd858c67952d32c89d6b35f0d241ab1"><td class="memItemLeft" align="right" valign="top"><a id="a2fd858c67952d32c89d6b35f0d241ab1" name="a2fd858c67952d32c89d6b35f0d241ab1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Reset</b> ()</td></tr>
-<tr class="memdesc:a2fd858c67952d32c89d6b35f0d241ab1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the observer snapshot buffer. <br /></td></tr>
+<tr class="memitem:a2fd858c67952d32c89d6b35f0d241ab1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_kalman_filter_latency_compensator.html#a2fd858c67952d32c89d6b35f0d241ab1">Reset</a> ()</td></tr>
+<tr class="memdesc:a2fd858c67952d32c89d6b35f0d241ab1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the observer snapshot buffer.  <a href="classfrc_1_1_kalman_filter_latency_compensator.html#a2fd858c67952d32c89d6b35f0d241ab1">More...</a><br /></td></tr>
 <tr class="separator:a2fd858c67952d32c89d6b35f0d241ab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afef84fb6a12305d76a60d40550aaa870"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_kalman_filter_latency_compensator.html#afef84fb6a12305d76a60d40550aaa870">AddObserverState</a> (const KalmanFilterType &amp;observer, Eigen::Vector&lt; double, Inputs &gt; u, Eigen::Vector&lt; double, Outputs &gt; localY, units::second_t timestamp)</td></tr>
 <tr class="memdesc:afef84fb6a12305d76a60d40550aaa870"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add past observer states to the observer snapshots list.  <a href="classfrc_1_1_kalman_filter_latency_compensator.html#afef84fb6a12305d76a60d40550aaa870">More...</a><br /></td></tr>
@@ -250,6 +251,35 @@ template&lt;int Rows&gt; </div>
 
 </div>
 </div>
+<a id="a2fd858c67952d32c89d6b35f0d241ab1" name="a2fd858c67952d32c89d6b35f0d241ab1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fd858c67952d32c89d6b35f0d241ab1">&#9670;&nbsp;</a></span>Reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int States, int Inputs, int Outputs, typename KalmanFilterType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classfrc_1_1_kalman_filter_latency_compensator.html">frc::KalmanFilterLatencyCompensator</a>&lt; States, Inputs, Outputs, KalmanFilterType &gt;::Reset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Clears the observer snapshot buffer. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>frc/estimator/<a class="el" href="_kalman_filter_latency_compensator_8h_source.html">KalmanFilterLatencyCompensator.h</a></li>
 </ul>
@@ -258,8 +288,8 @@ template&lt;int Rows&gt; </div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1_kalman_filter_latency_compensator.html">KalmanFilterLatencyCompensator</a></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:50 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_kalman_filter_latency_compensator.html">KalmanFilterLatencyCompensator</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:38 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

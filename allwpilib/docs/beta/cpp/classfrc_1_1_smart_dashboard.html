@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -92,135 +92,167 @@ $(document).ready(function(){initNavTree('classfrc_1_1_smart_dashboard.html','')
 
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classfrc_1_1_smart_dashboard-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">frc::SmartDashboard Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_smart_dashboard_8h_source.html">frc/smartdashboard/SmartDashboard.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a19c77aedec277a9e313968f58cec6d16"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a19c77aedec277a9e313968f58cec6d16">SmartDashboard</a> ()=delete</td></tr>
+<tr class="separator:a19c77aedec277a9e313968f58cec6d16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a11f647e990c2ffdbc30bc85f26aa342c"><td class="memItemLeft" align="right" valign="top"><a id="a11f647e990c2ffdbc30bc85f26aa342c" name="a11f647e990c2ffdbc30bc85f26aa342c"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> ()</td></tr>
+<tr class="memitem:a11f647e990c2ffdbc30bc85f26aa342c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a11f647e990c2ffdbc30bc85f26aa342c">init</a> ()</td></tr>
 <tr class="separator:a11f647e990c2ffdbc30bc85f26aa342c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f4407586f602f5396e2016f6742e4f1"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a8f4407586f602f5396e2016f6742e4f1">ContainsKey</a> (std::string_view key)</td></tr>
+<tr class="memitem:a8f4407586f602f5396e2016f6742e4f1"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a8f4407586f602f5396e2016f6742e4f1">ContainsKey</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> key)</td></tr>
 <tr class="memdesc:a8f4407586f602f5396e2016f6742e4f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether the given key is in this table.  <a href="classfrc_1_1_smart_dashboard.html#a8f4407586f602f5396e2016f6742e4f1">More...</a><br /></td></tr>
 <tr class="separator:a8f4407586f602f5396e2016f6742e4f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af621a7cf5cdf3aecfcef671b210586c7"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#af621a7cf5cdf3aecfcef671b210586c7">GetKeys</a> (int types=0)</td></tr>
 <tr class="separator:af621a7cf5cdf3aecfcef671b210586c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32c56d4fb8814f3d9a6b784f4718a96e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a32c56d4fb8814f3d9a6b784f4718a96e">SetPersistent</a> (std::string_view key)</td></tr>
+<tr class="memitem:a32c56d4fb8814f3d9a6b784f4718a96e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a32c56d4fb8814f3d9a6b784f4718a96e">SetPersistent</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> key)</td></tr>
 <tr class="memdesc:a32c56d4fb8814f3d9a6b784f4718a96e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes a key's value persistent through program restarts.  <a href="classfrc_1_1_smart_dashboard.html#a32c56d4fb8814f3d9a6b784f4718a96e">More...</a><br /></td></tr>
 <tr class="separator:a32c56d4fb8814f3d9a6b784f4718a96e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b57b5b29062e43b6e54a2378acb4912"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a7b57b5b29062e43b6e54a2378acb4912">ClearPersistent</a> (std::string_view key)</td></tr>
+<tr class="memitem:a7b57b5b29062e43b6e54a2378acb4912"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a7b57b5b29062e43b6e54a2378acb4912">ClearPersistent</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> key)</td></tr>
 <tr class="memdesc:a7b57b5b29062e43b6e54a2378acb4912"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop making a key's value persistent through program restarts.  <a href="classfrc_1_1_smart_dashboard.html#a7b57b5b29062e43b6e54a2378acb4912">More...</a><br /></td></tr>
 <tr class="separator:a7b57b5b29062e43b6e54a2378acb4912"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a164dfc9f3dae6ef7ddde0b2963cef6ad"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a164dfc9f3dae6ef7ddde0b2963cef6ad">IsPersistent</a> (std::string_view key)</td></tr>
+<tr class="memitem:a164dfc9f3dae6ef7ddde0b2963cef6ad"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a164dfc9f3dae6ef7ddde0b2963cef6ad">IsPersistent</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> key)</td></tr>
 <tr class="memdesc:a164dfc9f3dae6ef7ddde0b2963cef6ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the value is persistent through program restarts.  <a href="classfrc_1_1_smart_dashboard.html#a164dfc9f3dae6ef7ddde0b2963cef6ad">More...</a><br /></td></tr>
 <tr class="separator:a164dfc9f3dae6ef7ddde0b2963cef6ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab38e0da9cc160eb971f832ab20cc4f5a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#ab38e0da9cc160eb971f832ab20cc4f5a">SetFlags</a> (std::string_view key, unsigned int flags)</td></tr>
+<tr class="memitem:ab38e0da9cc160eb971f832ab20cc4f5a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#ab38e0da9cc160eb971f832ab20cc4f5a">SetFlags</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> key, unsigned int flags)</td></tr>
 <tr class="memdesc:ab38e0da9cc160eb971f832ab20cc4f5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets flags on the specified key in this table.  <a href="classfrc_1_1_smart_dashboard.html#ab38e0da9cc160eb971f832ab20cc4f5a">More...</a><br /></td></tr>
 <tr class="separator:ab38e0da9cc160eb971f832ab20cc4f5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbd84c4abd15b32de6a10388f74d7527"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#abbd84c4abd15b32de6a10388f74d7527">ClearFlags</a> (std::string_view key, unsigned int flags)</td></tr>
+<tr class="memitem:abbd84c4abd15b32de6a10388f74d7527"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#abbd84c4abd15b32de6a10388f74d7527">ClearFlags</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> key, unsigned int flags)</td></tr>
 <tr class="memdesc:abbd84c4abd15b32de6a10388f74d7527"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears flags on the specified key in this table.  <a href="classfrc_1_1_smart_dashboard.html#abbd84c4abd15b32de6a10388f74d7527">More...</a><br /></td></tr>
 <tr class="separator:abbd84c4abd15b32de6a10388f74d7527"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf5555cc7b9779fd0e49ada464d184ee"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#acf5555cc7b9779fd0e49ada464d184ee">GetFlags</a> (std::string_view key)</td></tr>
+<tr class="memitem:acf5555cc7b9779fd0e49ada464d184ee"><td class="memItemLeft" align="right" valign="top">static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#acf5555cc7b9779fd0e49ada464d184ee">GetFlags</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> key)</td></tr>
 <tr class="memdesc:acf5555cc7b9779fd0e49ada464d184ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the flags for the specified key.  <a href="classfrc_1_1_smart_dashboard.html#acf5555cc7b9779fd0e49ada464d184ee">More...</a><br /></td></tr>
 <tr class="separator:acf5555cc7b9779fd0e49ada464d184ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf24c2bb1b356c03dc77952738448d73"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#adf24c2bb1b356c03dc77952738448d73">Delete</a> (std::string_view key)</td></tr>
+<tr class="memitem:adf24c2bb1b356c03dc77952738448d73"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#adf24c2bb1b356c03dc77952738448d73">Delete</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> key)</td></tr>
 <tr class="memdesc:adf24c2bb1b356c03dc77952738448d73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes the specified key in this table.  <a href="classfrc_1_1_smart_dashboard.html#adf24c2bb1b356c03dc77952738448d73">More...</a><br /></td></tr>
 <tr class="separator:adf24c2bb1b356c03dc77952738448d73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50571883b1d5f307e27c83cad7cf6331"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classnt_1_1_network_table_entry.html">nt::NetworkTableEntry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a50571883b1d5f307e27c83cad7cf6331">GetEntry</a> (std::string_view key)</td></tr>
+<tr class="memitem:a50571883b1d5f307e27c83cad7cf6331"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classnt_1_1_network_table_entry.html">nt::NetworkTableEntry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a50571883b1d5f307e27c83cad7cf6331">GetEntry</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> key)</td></tr>
 <tr class="memdesc:a50571883b1d5f307e27c83cad7cf6331"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an NT Entry mapping to the specified key.  <a href="classfrc_1_1_smart_dashboard.html#a50571883b1d5f307e27c83cad7cf6331">More...</a><br /></td></tr>
 <tr class="separator:a50571883b1d5f307e27c83cad7cf6331"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa90ca18e34a7e9a88c00bb42140dce2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#aaa90ca18e34a7e9a88c00bb42140dce2">PutData</a> (std::string_view key, <a class="el" href="classwpi_1_1_sendable.html">wpi::Sendable</a> *<a class="el" href="structdata.html">data</a>)</td></tr>
+<tr class="memitem:aaa90ca18e34a7e9a88c00bb42140dce2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#aaa90ca18e34a7e9a88c00bb42140dce2">PutData</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> key, <a class="el" href="classwpi_1_1_sendable.html">wpi::Sendable</a> *<a class="el" href="structdata.html">data</a>)</td></tr>
 <tr class="memdesc:aaa90ca18e34a7e9a88c00bb42140dce2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps the specified key to the specified value in this table.  <a href="classfrc_1_1_smart_dashboard.html#aaa90ca18e34a7e9a88c00bb42140dce2">More...</a><br /></td></tr>
 <tr class="separator:aaa90ca18e34a7e9a88c00bb42140dce2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a208198305ca09f239597ac8b0eeda82b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a208198305ca09f239597ac8b0eeda82b">PutData</a> (<a class="el" href="classwpi_1_1_sendable.html">wpi::Sendable</a> *<a class="el" href="classvalue.html">value</a>)</td></tr>
 <tr class="memdesc:a208198305ca09f239597ac8b0eeda82b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps the specified key (where the key is the name of the Sendable) to the specified value in this table.  <a href="classfrc_1_1_smart_dashboard.html#a208198305ca09f239597ac8b0eeda82b">More...</a><br /></td></tr>
 <tr class="separator:a208198305ca09f239597ac8b0eeda82b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a110007a43a94dbd2696e4601e9747072"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classwpi_1_1_sendable.html">wpi::Sendable</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a110007a43a94dbd2696e4601e9747072">GetData</a> (std::string_view keyName)</td></tr>
+<tr class="memitem:a110007a43a94dbd2696e4601e9747072"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classwpi_1_1_sendable.html">wpi::Sendable</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a110007a43a94dbd2696e4601e9747072">GetData</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> keyName)</td></tr>
 <tr class="memdesc:a110007a43a94dbd2696e4601e9747072"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value at the specified key.  <a href="classfrc_1_1_smart_dashboard.html#a110007a43a94dbd2696e4601e9747072">More...</a><br /></td></tr>
 <tr class="separator:a110007a43a94dbd2696e4601e9747072"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2adca064781251a19bbfe7eee1e0546b"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a2adca064781251a19bbfe7eee1e0546b">PutBoolean</a> (std::string_view keyName, bool <a class="el" href="classvalue.html">value</a>)</td></tr>
+<tr class="memitem:a2adca064781251a19bbfe7eee1e0546b"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a2adca064781251a19bbfe7eee1e0546b">PutBoolean</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> keyName, bool <a class="el" href="classvalue.html">value</a>)</td></tr>
 <tr class="memdesc:a2adca064781251a19bbfe7eee1e0546b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps the specified key to the specified value in this table.  <a href="classfrc_1_1_smart_dashboard.html#a2adca064781251a19bbfe7eee1e0546b">More...</a><br /></td></tr>
 <tr class="separator:a2adca064781251a19bbfe7eee1e0546b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49e71dc61c772ef2049a92e3194c4722"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a49e71dc61c772ef2049a92e3194c4722">SetDefaultBoolean</a> (std::string_view key, bool defaultValue)</td></tr>
+<tr class="memitem:a49e71dc61c772ef2049a92e3194c4722"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a49e71dc61c772ef2049a92e3194c4722">SetDefaultBoolean</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> key, bool defaultValue)</td></tr>
 <tr class="memdesc:a49e71dc61c772ef2049a92e3194c4722"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current value in the table, setting it if it does not exist.  <a href="classfrc_1_1_smart_dashboard.html#a49e71dc61c772ef2049a92e3194c4722">More...</a><br /></td></tr>
 <tr class="separator:a49e71dc61c772ef2049a92e3194c4722"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3288c71a63733a350d4b61e7205ce17b"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a3288c71a63733a350d4b61e7205ce17b">GetBoolean</a> (std::string_view keyName, bool defaultValue)</td></tr>
+<tr class="memitem:a3288c71a63733a350d4b61e7205ce17b"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a3288c71a63733a350d4b61e7205ce17b">GetBoolean</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> keyName, bool defaultValue)</td></tr>
 <tr class="memdesc:a3288c71a63733a350d4b61e7205ce17b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value at the specified key.  <a href="classfrc_1_1_smart_dashboard.html#a3288c71a63733a350d4b61e7205ce17b">More...</a><br /></td></tr>
 <tr class="separator:a3288c71a63733a350d4b61e7205ce17b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a552b5c251ddbbca810fe04cb1b1e45eb"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a552b5c251ddbbca810fe04cb1b1e45eb">PutNumber</a> (std::string_view keyName, double <a class="el" href="classvalue.html">value</a>)</td></tr>
+<tr class="memitem:a552b5c251ddbbca810fe04cb1b1e45eb"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a552b5c251ddbbca810fe04cb1b1e45eb">PutNumber</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> keyName, double <a class="el" href="classvalue.html">value</a>)</td></tr>
 <tr class="memdesc:a552b5c251ddbbca810fe04cb1b1e45eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps the specified key to the specified value in this table.  <a href="classfrc_1_1_smart_dashboard.html#a552b5c251ddbbca810fe04cb1b1e45eb">More...</a><br /></td></tr>
 <tr class="separator:a552b5c251ddbbca810fe04cb1b1e45eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26adc4ec9939ad07315e5a17f9d81577"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a26adc4ec9939ad07315e5a17f9d81577">SetDefaultNumber</a> (std::string_view key, double defaultValue)</td></tr>
+<tr class="memitem:a26adc4ec9939ad07315e5a17f9d81577"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a26adc4ec9939ad07315e5a17f9d81577">SetDefaultNumber</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> key, double defaultValue)</td></tr>
 <tr class="memdesc:a26adc4ec9939ad07315e5a17f9d81577"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current value in the table, setting it if it does not exist.  <a href="classfrc_1_1_smart_dashboard.html#a26adc4ec9939ad07315e5a17f9d81577">More...</a><br /></td></tr>
 <tr class="separator:a26adc4ec9939ad07315e5a17f9d81577"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2ac6b23c26a2fc0431119ee558b1528"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#aa2ac6b23c26a2fc0431119ee558b1528">GetNumber</a> (std::string_view keyName, double defaultValue)</td></tr>
+<tr class="memitem:aa2ac6b23c26a2fc0431119ee558b1528"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#aa2ac6b23c26a2fc0431119ee558b1528">GetNumber</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> keyName, double defaultValue)</td></tr>
 <tr class="memdesc:aa2ac6b23c26a2fc0431119ee558b1528"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value at the specified key.  <a href="classfrc_1_1_smart_dashboard.html#aa2ac6b23c26a2fc0431119ee558b1528">More...</a><br /></td></tr>
 <tr class="separator:aa2ac6b23c26a2fc0431119ee558b1528"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace8c320634dc59d9d2ae60b8eef7cd7e"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#ace8c320634dc59d9d2ae60b8eef7cd7e">PutString</a> (std::string_view keyName, std::string_view <a class="el" href="classvalue.html">value</a>)</td></tr>
+<tr class="memitem:ace8c320634dc59d9d2ae60b8eef7cd7e"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#ace8c320634dc59d9d2ae60b8eef7cd7e">PutString</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> keyName, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> <a class="el" href="classvalue.html">value</a>)</td></tr>
 <tr class="memdesc:ace8c320634dc59d9d2ae60b8eef7cd7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps the specified key to the specified value in this table.  <a href="classfrc_1_1_smart_dashboard.html#ace8c320634dc59d9d2ae60b8eef7cd7e">More...</a><br /></td></tr>
 <tr class="separator:ace8c320634dc59d9d2ae60b8eef7cd7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66c28da9fc850a2603c116eac0cda445"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a66c28da9fc850a2603c116eac0cda445">SetDefaultString</a> (std::string_view key, std::string_view defaultValue)</td></tr>
+<tr class="memitem:a66c28da9fc850a2603c116eac0cda445"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a66c28da9fc850a2603c116eac0cda445">SetDefaultString</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> key, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> defaultValue)</td></tr>
 <tr class="memdesc:a66c28da9fc850a2603c116eac0cda445"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current value in the table, setting it if it does not exist.  <a href="classfrc_1_1_smart_dashboard.html#a66c28da9fc850a2603c116eac0cda445">More...</a><br /></td></tr>
 <tr class="separator:a66c28da9fc850a2603c116eac0cda445"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a504c72f746c42fdbaae6a0a42d25b039"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a504c72f746c42fdbaae6a0a42d25b039">GetString</a> (std::string_view keyName, std::string_view defaultValue)</td></tr>
+<tr class="memitem:a504c72f746c42fdbaae6a0a42d25b039"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a504c72f746c42fdbaae6a0a42d25b039">GetString</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> keyName, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> defaultValue)</td></tr>
 <tr class="memdesc:a504c72f746c42fdbaae6a0a42d25b039"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value at the specified key.  <a href="classfrc_1_1_smart_dashboard.html#a504c72f746c42fdbaae6a0a42d25b039">More...</a><br /></td></tr>
 <tr class="separator:a504c72f746c42fdbaae6a0a42d25b039"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18596add360bb461fbb9287bc2139269"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a18596add360bb461fbb9287bc2139269">PutBooleanArray</a> (std::string_view key, <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const int &gt; <a class="el" href="classvalue.html">value</a>)</td></tr>
+<tr class="memitem:a18596add360bb461fbb9287bc2139269"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a18596add360bb461fbb9287bc2139269">PutBooleanArray</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> key, <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const int &gt; <a class="el" href="classvalue.html">value</a>)</td></tr>
 <tr class="memdesc:a18596add360bb461fbb9287bc2139269"><td class="mdescLeft">&#160;</td><td class="mdescRight">Put a boolean array in the table.  <a href="classfrc_1_1_smart_dashboard.html#a18596add360bb461fbb9287bc2139269">More...</a><br /></td></tr>
 <tr class="separator:a18596add360bb461fbb9287bc2139269"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b77c192fe4c9b0ad40895aa43d307b8"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a6b77c192fe4c9b0ad40895aa43d307b8">SetDefaultBooleanArray</a> (std::string_view key, <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const int &gt; defaultValue)</td></tr>
+<tr class="memitem:a6b77c192fe4c9b0ad40895aa43d307b8"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a6b77c192fe4c9b0ad40895aa43d307b8">SetDefaultBooleanArray</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> key, <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const int &gt; defaultValue)</td></tr>
 <tr class="memdesc:a6b77c192fe4c9b0ad40895aa43d307b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current value in the table, setting it if it does not exist.  <a href="classfrc_1_1_smart_dashboard.html#a6b77c192fe4c9b0ad40895aa43d307b8">More...</a><br /></td></tr>
 <tr class="separator:a6b77c192fe4c9b0ad40895aa43d307b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47bb8e3486fbbdaf3edbd4eec41de73c"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a47bb8e3486fbbdaf3edbd4eec41de73c">GetBooleanArray</a> (std::string_view key, <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const int &gt; defaultValue)</td></tr>
+<tr class="memitem:a47bb8e3486fbbdaf3edbd4eec41de73c"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a47bb8e3486fbbdaf3edbd4eec41de73c">GetBooleanArray</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> key, <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const int &gt; defaultValue)</td></tr>
 <tr class="memdesc:a47bb8e3486fbbdaf3edbd4eec41de73c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the boolean array the key maps to.  <a href="classfrc_1_1_smart_dashboard.html#a47bb8e3486fbbdaf3edbd4eec41de73c">More...</a><br /></td></tr>
 <tr class="separator:a47bb8e3486fbbdaf3edbd4eec41de73c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a526d3a7f702dd02537d71d3ee602f0d9"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a526d3a7f702dd02537d71d3ee602f0d9">PutNumberArray</a> (std::string_view key, <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const double &gt; <a class="el" href="classvalue.html">value</a>)</td></tr>
+<tr class="memitem:a526d3a7f702dd02537d71d3ee602f0d9"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a526d3a7f702dd02537d71d3ee602f0d9">PutNumberArray</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> key, <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const double &gt; <a class="el" href="classvalue.html">value</a>)</td></tr>
 <tr class="memdesc:a526d3a7f702dd02537d71d3ee602f0d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Put a number array in the table.  <a href="classfrc_1_1_smart_dashboard.html#a526d3a7f702dd02537d71d3ee602f0d9">More...</a><br /></td></tr>
 <tr class="separator:a526d3a7f702dd02537d71d3ee602f0d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c50bddd1af2bb348603d3372382609b"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a2c50bddd1af2bb348603d3372382609b">SetDefaultNumberArray</a> (std::string_view key, <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const double &gt; defaultValue)</td></tr>
+<tr class="memitem:a2c50bddd1af2bb348603d3372382609b"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a2c50bddd1af2bb348603d3372382609b">SetDefaultNumberArray</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> key, <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const double &gt; defaultValue)</td></tr>
 <tr class="memdesc:a2c50bddd1af2bb348603d3372382609b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current value in the table, setting it if it does not exist.  <a href="classfrc_1_1_smart_dashboard.html#a2c50bddd1af2bb348603d3372382609b">More...</a><br /></td></tr>
 <tr class="separator:a2c50bddd1af2bb348603d3372382609b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae31d7df5ddc073034816077b560a0438"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#ae31d7df5ddc073034816077b560a0438">GetNumberArray</a> (std::string_view key, <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const double &gt; defaultValue)</td></tr>
+<tr class="memitem:ae31d7df5ddc073034816077b560a0438"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#ae31d7df5ddc073034816077b560a0438">GetNumberArray</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> key, <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const double &gt; defaultValue)</td></tr>
 <tr class="memdesc:ae31d7df5ddc073034816077b560a0438"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number array the key maps to.  <a href="classfrc_1_1_smart_dashboard.html#ae31d7df5ddc073034816077b560a0438">More...</a><br /></td></tr>
 <tr class="separator:ae31d7df5ddc073034816077b560a0438"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0542cacc8635d0af209b5e884ff1e17a"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a0542cacc8635d0af209b5e884ff1e17a">PutStringArray</a> (std::string_view key, <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const std::string &gt; <a class="el" href="classvalue.html">value</a>)</td></tr>
+<tr class="memitem:a0542cacc8635d0af209b5e884ff1e17a"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a0542cacc8635d0af209b5e884ff1e17a">PutStringArray</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> key, <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const std::string &gt; <a class="el" href="classvalue.html">value</a>)</td></tr>
 <tr class="memdesc:a0542cacc8635d0af209b5e884ff1e17a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Put a string array in the table.  <a href="classfrc_1_1_smart_dashboard.html#a0542cacc8635d0af209b5e884ff1e17a">More...</a><br /></td></tr>
 <tr class="separator:a0542cacc8635d0af209b5e884ff1e17a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02bf0582c8301593dae69952db0e05bd"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a02bf0582c8301593dae69952db0e05bd">SetDefaultStringArray</a> (std::string_view key, <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const std::string &gt; defaultValue)</td></tr>
+<tr class="memitem:a02bf0582c8301593dae69952db0e05bd"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a02bf0582c8301593dae69952db0e05bd">SetDefaultStringArray</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> key, <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const std::string &gt; defaultValue)</td></tr>
 <tr class="memdesc:a02bf0582c8301593dae69952db0e05bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current value in the table, setting it if it does not exist.  <a href="classfrc_1_1_smart_dashboard.html#a02bf0582c8301593dae69952db0e05bd">More...</a><br /></td></tr>
 <tr class="separator:a02bf0582c8301593dae69952db0e05bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6160f90df04c6b23c7fe44a994566d5"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#ac6160f90df04c6b23c7fe44a994566d5">GetStringArray</a> (std::string_view key, <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const std::string &gt; defaultValue)</td></tr>
+<tr class="memitem:ac6160f90df04c6b23c7fe44a994566d5"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#ac6160f90df04c6b23c7fe44a994566d5">GetStringArray</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> key, <a class="el" href="classwpi_1_1span.html">wpi::span</a>&lt; const std::string &gt; defaultValue)</td></tr>
 <tr class="memdesc:ac6160f90df04c6b23c7fe44a994566d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the string array the key maps to.  <a href="classfrc_1_1_smart_dashboard.html#ac6160f90df04c6b23c7fe44a994566d5">More...</a><br /></td></tr>
 <tr class="separator:ac6160f90df04c6b23c7fe44a994566d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8df2ee68e497a5e83f58cd1dd34a91cb"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a8df2ee68e497a5e83f58cd1dd34a91cb">PutRaw</a> (std::string_view key, std::string_view <a class="el" href="classvalue.html">value</a>)</td></tr>
+<tr class="memitem:a8df2ee68e497a5e83f58cd1dd34a91cb"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a8df2ee68e497a5e83f58cd1dd34a91cb">PutRaw</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> key, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> <a class="el" href="classvalue.html">value</a>)</td></tr>
 <tr class="memdesc:a8df2ee68e497a5e83f58cd1dd34a91cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Put a raw value (byte array) in the table.  <a href="classfrc_1_1_smart_dashboard.html#a8df2ee68e497a5e83f58cd1dd34a91cb">More...</a><br /></td></tr>
 <tr class="separator:a8df2ee68e497a5e83f58cd1dd34a91cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a285efd717cebe1658313eed1a44fd323"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a285efd717cebe1658313eed1a44fd323">SetDefaultRaw</a> (std::string_view key, std::string_view defaultValue)</td></tr>
+<tr class="memitem:a285efd717cebe1658313eed1a44fd323"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a285efd717cebe1658313eed1a44fd323">SetDefaultRaw</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> key, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> defaultValue)</td></tr>
 <tr class="memdesc:a285efd717cebe1658313eed1a44fd323"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current value in the table, setting it if it does not exist.  <a href="classfrc_1_1_smart_dashboard.html#a285efd717cebe1658313eed1a44fd323">More...</a><br /></td></tr>
 <tr class="separator:a285efd717cebe1658313eed1a44fd323"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78695b6a4ef4beb1cc2972a812c44348"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a78695b6a4ef4beb1cc2972a812c44348">GetRaw</a> (std::string_view key, std::string_view defaultValue)</td></tr>
+<tr class="memitem:a78695b6a4ef4beb1cc2972a812c44348"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a78695b6a4ef4beb1cc2972a812c44348">GetRaw</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> key, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> defaultValue)</td></tr>
 <tr class="memdesc:a78695b6a4ef4beb1cc2972a812c44348"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the raw value (byte array) the key maps to.  <a href="classfrc_1_1_smart_dashboard.html#a78695b6a4ef4beb1cc2972a812c44348">More...</a><br /></td></tr>
 <tr class="separator:a78695b6a4ef4beb1cc2972a812c44348"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1792c8832041f463cbcebe66cab5c151"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a1792c8832041f463cbcebe66cab5c151">PutValue</a> (std::string_view keyName, std::shared_ptr&lt; <a class="el" href="classnt_1_1_value.html">nt::Value</a> &gt; <a class="el" href="classvalue.html">value</a>)</td></tr>
+<tr class="memitem:a1792c8832041f463cbcebe66cab5c151"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a1792c8832041f463cbcebe66cab5c151">PutValue</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> keyName, std::shared_ptr&lt; <a class="el" href="classnt_1_1_value.html">nt::Value</a> &gt; <a class="el" href="classvalue.html">value</a>)</td></tr>
 <tr class="memdesc:a1792c8832041f463cbcebe66cab5c151"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps the specified key to the specified complex value (such as an array) in this table.  <a href="classfrc_1_1_smart_dashboard.html#a1792c8832041f463cbcebe66cab5c151">More...</a><br /></td></tr>
 <tr class="separator:a1792c8832041f463cbcebe66cab5c151"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90fa00f837974f47f83c2ec11369826d"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a90fa00f837974f47f83c2ec11369826d">SetDefaultValue</a> (std::string_view key, std::shared_ptr&lt; <a class="el" href="classnt_1_1_value.html">nt::Value</a> &gt; defaultValue)</td></tr>
+<tr class="memitem:a90fa00f837974f47f83c2ec11369826d"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a90fa00f837974f47f83c2ec11369826d">SetDefaultValue</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> key, std::shared_ptr&lt; <a class="el" href="classnt_1_1_value.html">nt::Value</a> &gt; defaultValue)</td></tr>
 <tr class="memdesc:a90fa00f837974f47f83c2ec11369826d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current value in the table, setting it if it does not exist.  <a href="classfrc_1_1_smart_dashboard.html#a90fa00f837974f47f83c2ec11369826d">More...</a><br /></td></tr>
 <tr class="separator:a90fa00f837974f47f83c2ec11369826d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43b596ee370d1946729bc379f2cc0df7"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classnt_1_1_value.html">nt::Value</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a43b596ee370d1946729bc379f2cc0df7">GetValue</a> (std::string_view keyName)</td></tr>
+<tr class="memitem:a43b596ee370d1946729bc379f2cc0df7"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classnt_1_1_value.html">nt::Value</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a43b596ee370d1946729bc379f2cc0df7">GetValue</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> keyName)</td></tr>
 <tr class="memdesc:a43b596ee370d1946729bc379f2cc0df7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the complex value (such as an array) in this table into the complex data object.  <a href="classfrc_1_1_smart_dashboard.html#a43b596ee370d1946729bc379f2cc0df7">More...</a><br /></td></tr>
 <tr class="separator:a43b596ee370d1946729bc379f2cc0df7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abef357cf2da835cb30c09ce731e4d0e4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#abef357cf2da835cb30c09ce731e4d0e4">PostListenerTask</a> (std::function&lt; void()&gt; task)</td></tr>
 <tr class="memdesc:abef357cf2da835cb30c09ce731e4d0e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Posts a task from a listener to the ListenerExecutor, so that it can be run synchronously from the main loop on the next call to updateValues().  <a href="classfrc_1_1_smart_dashboard.html#abef357cf2da835cb30c09ce731e4d0e4">More...</a><br /></td></tr>
 <tr class="separator:abef357cf2da835cb30c09ce731e4d0e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c67bfb95aa178064ca6112496a04a1a"><td class="memItemLeft" align="right" valign="top"><a id="a1c67bfb95aa178064ca6112496a04a1a" name="a1c67bfb95aa178064ca6112496a04a1a"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateValues</b> ()</td></tr>
-<tr class="memdesc:a1c67bfb95aa178064ca6112496a04a1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts all sendable data to the dashboard. <br /></td></tr>
+<tr class="memitem:a1c67bfb95aa178064ca6112496a04a1a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_smart_dashboard.html#a1c67bfb95aa178064ca6112496a04a1a">UpdateValues</a> ()</td></tr>
+<tr class="memdesc:a1c67bfb95aa178064ca6112496a04a1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Puts all sendable data to the dashboard.  <a href="classfrc_1_1_smart_dashboard.html#a1c67bfb95aa178064ca6112496a04a1a">More...</a><br /></td></tr>
 <tr class="separator:a1c67bfb95aa178064ca6112496a04a1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a19c77aedec277a9e313968f58cec6d16" name="a19c77aedec277a9e313968f58cec6d16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19c77aedec277a9e313968f58cec6d16">&#9670;&nbsp;</a></span>SmartDashboard()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">frc::SmartDashboard::SmartDashboard </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="abbd84c4abd15b32de6a10388f74d7527" name="abbd84c4abd15b32de6a10388f74d7527"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abbd84c4abd15b32de6a10388f74d7527">&#9670;&nbsp;</a></span>ClearFlags()</h2>
@@ -234,7 +266,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateValues</
         <tr>
           <td class="memname">static void frc::SmartDashboard::ClearFlags </td>
           <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>
@@ -280,7 +312,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateValues</
         <tr>
           <td class="memname">static void frc::SmartDashboard::ClearPersistent </td>
           <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>key</em></td><td>)</td>
           <td></td>
         </tr>
@@ -315,7 +347,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateValues</
         <tr>
           <td class="memname">static bool frc::SmartDashboard::ContainsKey </td>
           <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>key</em></td><td>)</td>
           <td></td>
         </tr>
@@ -350,7 +382,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateValues</
         <tr>
           <td class="memname">static void frc::SmartDashboard::Delete </td>
           <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>key</em></td><td>)</td>
           <td></td>
         </tr>
@@ -384,7 +416,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateValues</
         <tr>
           <td class="memname">static bool frc::SmartDashboard::GetBoolean </td>
           <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>keyName</em>, </td>
         </tr>
         <tr>
@@ -431,7 +463,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateValues</
         <tr>
           <td class="memname">static std::vector&lt; int &gt; frc::SmartDashboard::GetBooleanArray </td>
           <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>
@@ -481,7 +513,7 @@ The returned array is std::vector&lt;int&gt; instead of std::vector&lt;bool&gt; 
         <tr>
           <td class="memname">static <a class="el" href="classwpi_1_1_sendable.html">wpi::Sendable</a> * frc::SmartDashboard::GetData </td>
           <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>keyName</em></td><td>)</td>
           <td></td>
         </tr>
@@ -516,7 +548,7 @@ The returned array is std::vector&lt;int&gt; instead of std::vector&lt;bool&gt; 
         <tr>
           <td class="memname">static <a class="el" href="classnt_1_1_network_table_entry.html">nt::NetworkTableEntry</a> frc::SmartDashboard::GetEntry </td>
           <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>key</em></td><td>)</td>
           <td></td>
         </tr>
@@ -552,7 +584,7 @@ The returned array is std::vector&lt;int&gt; instead of std::vector&lt;bool&gt; 
         <tr>
           <td class="memname">static unsigned int frc::SmartDashboard::GetFlags </td>
           <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>key</em></td><td>)</td>
           <td></td>
         </tr>
@@ -620,7 +652,7 @@ The returned array is std::vector&lt;int&gt; instead of std::vector&lt;bool&gt; 
         <tr>
           <td class="memname">static double frc::SmartDashboard::GetNumber </td>
           <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>keyName</em>, </td>
         </tr>
         <tr>
@@ -667,7 +699,7 @@ The returned array is std::vector&lt;int&gt; instead of std::vector&lt;bool&gt; 
         <tr>
           <td class="memname">static std::vector&lt; double &gt; frc::SmartDashboard::GetNumberArray </td>
           <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>
@@ -715,13 +747,13 @@ The returned array is std::vector&lt;int&gt; instead of std::vector&lt;bool&gt; 
         <tr>
           <td class="memname">static std::string frc::SmartDashboard::GetRaw </td>
           <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>defaultValue</em>&#160;</td>
         </tr>
         <tr>
@@ -763,13 +795,13 @@ The returned array is std::vector&lt;int&gt; instead of std::vector&lt;bool&gt; 
         <tr>
           <td class="memname">static std::string frc::SmartDashboard::GetString </td>
           <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>keyName</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>defaultValue</em>&#160;</td>
         </tr>
         <tr>
@@ -810,7 +842,7 @@ The returned array is std::vector&lt;int&gt; instead of std::vector&lt;bool&gt; 
         <tr>
           <td class="memname">static std::vector&lt; std::string &gt; frc::SmartDashboard::GetStringArray </td>
           <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>
@@ -858,7 +890,7 @@ The returned array is std::vector&lt;int&gt; instead of std::vector&lt;bool&gt; 
         <tr>
           <td class="memname">static std::shared_ptr&lt; <a class="el" href="classnt_1_1_value.html">nt::Value</a> &gt; frc::SmartDashboard::GetValue </td>
           <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>keyName</em></td><td>)</td>
           <td></td>
         </tr>
@@ -880,6 +912,31 @@ The returned array is std::vector&lt;int&gt; instead of std::vector&lt;bool&gt; 
 
 </div>
 </div>
+<a id="a11f647e990c2ffdbc30bc85f26aa342c" name="a11f647e990c2ffdbc30bc85f26aa342c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11f647e990c2ffdbc30bc85f26aa342c">&#9670;&nbsp;</a></span>init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void frc::SmartDashboard::init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a164dfc9f3dae6ef7ddde0b2963cef6ad" name="a164dfc9f3dae6ef7ddde0b2963cef6ad"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a164dfc9f3dae6ef7ddde0b2963cef6ad">&#9670;&nbsp;</a></span>IsPersistent()</h2>
 
@@ -892,7 +949,7 @@ The returned array is std::vector&lt;int&gt; instead of std::vector&lt;bool&gt; 
         <tr>
           <td class="memname">static bool frc::SmartDashboard::IsPersistent </td>
           <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>key</em></td><td>)</td>
           <td></td>
         </tr>
@@ -961,7 +1018,7 @@ The returned array is std::vector&lt;int&gt; instead of std::vector&lt;bool&gt; 
         <tr>
           <td class="memname">static bool frc::SmartDashboard::PutBoolean </td>
           <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>keyName</em>, </td>
         </tr>
         <tr>
@@ -1008,7 +1065,7 @@ The returned array is std::vector&lt;int&gt; instead of std::vector&lt;bool&gt; 
         <tr>
           <td class="memname">static bool frc::SmartDashboard::PutBooleanArray </td>
           <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>
@@ -1055,7 +1112,7 @@ The returned array is std::vector&lt;int&gt; instead of std::vector&lt;bool&gt; 
         <tr>
           <td class="memname">static void frc::SmartDashboard::PutData </td>
           <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>
@@ -1138,7 +1195,7 @@ The returned array is std::vector&lt;int&gt; instead of std::vector&lt;bool&gt; 
         <tr>
           <td class="memname">static bool frc::SmartDashboard::PutNumber </td>
           <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>keyName</em>, </td>
         </tr>
         <tr>
@@ -1185,7 +1242,7 @@ The returned array is std::vector&lt;int&gt; instead of std::vector&lt;bool&gt; 
         <tr>
           <td class="memname">static bool frc::SmartDashboard::PutNumberArray </td>
           <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>
@@ -1231,13 +1288,13 @@ The returned array is std::vector&lt;int&gt; instead of std::vector&lt;bool&gt; 
         <tr>
           <td class="memname">static bool frc::SmartDashboard::PutRaw </td>
           <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>
@@ -1277,13 +1334,13 @@ The returned array is std::vector&lt;int&gt; instead of std::vector&lt;bool&gt; 
         <tr>
           <td class="memname">static bool frc::SmartDashboard::PutString </td>
           <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>keyName</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>
@@ -1324,7 +1381,7 @@ The returned array is std::vector&lt;int&gt; instead of std::vector&lt;bool&gt; 
         <tr>
           <td class="memname">static bool frc::SmartDashboard::PutStringArray </td>
           <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>
@@ -1370,7 +1427,7 @@ The returned array is std::vector&lt;int&gt; instead of std::vector&lt;bool&gt; 
         <tr>
           <td class="memname">static bool frc::SmartDashboard::PutValue </td>
           <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>keyName</em>, </td>
         </tr>
         <tr>
@@ -1417,7 +1474,7 @@ The returned array is std::vector&lt;int&gt; instead of std::vector&lt;bool&gt; 
         <tr>
           <td class="memname">static bool frc::SmartDashboard::SetDefaultBoolean </td>
           <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>
@@ -1463,7 +1520,7 @@ The returned array is std::vector&lt;int&gt; instead of std::vector&lt;bool&gt; 
         <tr>
           <td class="memname">static bool frc::SmartDashboard::SetDefaultBooleanArray </td>
           <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>
@@ -1509,7 +1566,7 @@ The returned array is std::vector&lt;int&gt; instead of std::vector&lt;bool&gt; 
         <tr>
           <td class="memname">static bool frc::SmartDashboard::SetDefaultNumber </td>
           <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>
@@ -1555,7 +1612,7 @@ The returned array is std::vector&lt;int&gt; instead of std::vector&lt;bool&gt; 
         <tr>
           <td class="memname">static bool frc::SmartDashboard::SetDefaultNumberArray </td>
           <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>
@@ -1601,13 +1658,13 @@ The returned array is std::vector&lt;int&gt; instead of std::vector&lt;bool&gt; 
         <tr>
           <td class="memname">static bool frc::SmartDashboard::SetDefaultRaw </td>
           <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>defaultValue</em>&#160;</td>
         </tr>
         <tr>
@@ -1647,13 +1704,13 @@ The returned array is std::vector&lt;int&gt; instead of std::vector&lt;bool&gt; 
         <tr>
           <td class="memname">static bool frc::SmartDashboard::SetDefaultString </td>
           <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>defaultValue</em>&#160;</td>
         </tr>
         <tr>
@@ -1693,7 +1750,7 @@ The returned array is std::vector&lt;int&gt; instead of std::vector&lt;bool&gt; 
         <tr>
           <td class="memname">static bool frc::SmartDashboard::SetDefaultStringArray </td>
           <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>
@@ -1739,7 +1796,7 @@ The returned array is std::vector&lt;int&gt; instead of std::vector&lt;bool&gt; 
         <tr>
           <td class="memname">static bool frc::SmartDashboard::SetDefaultValue </td>
           <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>
@@ -1785,7 +1842,7 @@ The returned array is std::vector&lt;int&gt; instead of std::vector&lt;bool&gt; 
         <tr>
           <td class="memname">static void frc::SmartDashboard::SetFlags </td>
           <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>
@@ -1831,7 +1888,7 @@ The returned array is std::vector&lt;int&gt; instead of std::vector&lt;bool&gt; 
         <tr>
           <td class="memname">static void frc::SmartDashboard::SetPersistent </td>
           <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>key</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1853,6 +1910,33 @@ The returned array is std::vector&lt;int&gt; instead of std::vector&lt;bool&gt; 
 
 </div>
 </div>
+<a id="a1c67bfb95aa178064ca6112496a04a1a" name="a1c67bfb95aa178064ca6112496a04a1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c67bfb95aa178064ca6112496a04a1a">&#9670;&nbsp;</a></span>UpdateValues()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void frc::SmartDashboard::UpdateValues </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Puts all sendable data to the dashboard. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>frc/smartdashboard/<a class="el" href="_smart_dashboard_8h_source.html">SmartDashboard.h</a></li>
 </ul>
@@ -1861,8 +1945,8 @@ The returned array is std::vector&lt;int&gt; instead of std::vector&lt;bool&gt; 
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1_smart_dashboard.html">SmartDashboard</a></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:51 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_smart_dashboard.html">SmartDashboard</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:38 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

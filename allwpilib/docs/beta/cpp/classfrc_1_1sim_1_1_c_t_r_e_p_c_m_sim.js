@@ -2,6 +2,7 @@ var classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim =
 [
     [ "CTREPCMSim", "classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#ae2ef17e785c274dc678888bbbc3131a6", null ],
     [ "CTREPCMSim", "classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a9140141d59f1e49db9beef8e5a23465d", null ],
+    [ "CTREPCMSim", "classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a6cf45a9ad6fde1191161afb029a14839", null ],
     [ "GetAllSolenoidOutputs", "classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a9e1bc0879bf026f0c6180d86cc402170", null ],
     [ "GetClosedLoopEnabled", "classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#a67f0ff95e7bbe0929b98ed9bbb898642", null ],
     [ "GetCompressorCurrent", "classfrc_1_1sim_1_1_c_t_r_e_p_c_m_sim.html#ab8a98178e8bb84f2720808d55dcfc82b", null ],

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -99,28 +99,146 @@ $(document).ready(function(){initNavTree('structwpi_1_1detail_1_1_worker_thread_
   <div class="headertitle"><div class="title">wpi::detail::WorkerThreadAsync&lt; R &gt; Struct Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_worker_thread_8h_source.html">wpi/WorkerThread.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:abdcc1e45615171b07e1fdf8872cec824"><td class="memItemLeft" align="right" valign="top"><a id="abdcc1e45615171b07e1fdf8872cec824" name="abdcc1e45615171b07e1fdf8872cec824"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>AfterWorkFunction</b> = std::function&lt; void(R)&gt;</td></tr>
+<tr class="memitem:abdcc1e45615171b07e1fdf8872cec824"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1detail_1_1_worker_thread_async.html#abdcc1e45615171b07e1fdf8872cec824">AfterWorkFunction</a> = std::function&lt; void(R)&gt;</td></tr>
 <tr class="separator:abdcc1e45615171b07e1fdf8872cec824"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5937fca28ee52b6a69e8bef26e4d6faf"><td class="memItemLeft" align="right" valign="top"><a id="a5937fca28ee52b6a69e8bef26e4d6faf" name="a5937fca28ee52b6a69e8bef26e4d6faf"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetLoop</b> (<a class="el" href="classwpi_1_1uv_1_1_loop.html">uv::Loop</a> &amp;loop)</td></tr>
+<tr class="memitem:af226fc2381e4c578a72e372ca1291481"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1detail_1_1_worker_thread_async.html#af226fc2381e4c578a72e372ca1291481">~WorkerThreadAsync</a> ()</td></tr>
+<tr class="separator:af226fc2381e4c578a72e372ca1291481"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5937fca28ee52b6a69e8bef26e4d6faf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1detail_1_1_worker_thread_async.html#a5937fca28ee52b6a69e8bef26e4d6faf">SetLoop</a> (<a class="el" href="classwpi_1_1uv_1_1_loop.html">uv::Loop</a> &amp;loop)</td></tr>
 <tr class="separator:a5937fca28ee52b6a69e8bef26e4d6faf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8acbba2b8378fe82a3d1d638aaf0ec38"><td class="memItemLeft" align="right" valign="top"><a id="a8acbba2b8378fe82a3d1d638aaf0ec38" name="a8acbba2b8378fe82a3d1d638aaf0ec38"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>UnsetLoop</b> ()</td></tr>
+<tr class="memitem:a8acbba2b8378fe82a3d1d638aaf0ec38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1detail_1_1_worker_thread_async.html#a8acbba2b8378fe82a3d1d638aaf0ec38">UnsetLoop</a> ()</td></tr>
 <tr class="separator:a8acbba2b8378fe82a3d1d638aaf0ec38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ab4a2ee7b305a07371f9cf65e21afacc0"><td class="memItemLeft" align="right" valign="top"><a id="ab4a2ee7b305a07371f9cf65e21afacc0" name="ab4a2ee7b305a07371f9cf65e21afacc0"></a>
-std::weak_ptr&lt; <a class="el" href="classwpi_1_1uv_1_1_async.html">uv::Async</a>&lt; AfterWorkFunction, R &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_async</b></td></tr>
+<tr class="memitem:ab4a2ee7b305a07371f9cf65e21afacc0"><td class="memItemLeft" align="right" valign="top">std::weak_ptr&lt; <a class="el" href="classwpi_1_1uv_1_1_async.html">uv::Async</a>&lt; <a class="el" href="structwpi_1_1detail_1_1_worker_thread_async.html#abdcc1e45615171b07e1fdf8872cec824">AfterWorkFunction</a>, R &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1detail_1_1_worker_thread_async.html#ab4a2ee7b305a07371f9cf65e21afacc0">m_async</a></td></tr>
 <tr class="separator:ab4a2ee7b305a07371f9cf65e21afacc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="abdcc1e45615171b07e1fdf8872cec824" name="abdcc1e45615171b07e1fdf8872cec824"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdcc1e45615171b07e1fdf8872cec824">&#9670;&nbsp;</a></span>AfterWorkFunction</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename R &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="structwpi_1_1detail_1_1_worker_thread_async.html">wpi::detail::WorkerThreadAsync</a>&lt; R &gt;::<a class="el" href="structwpi_1_1detail_1_1_worker_thread_async.html#abdcc1e45615171b07e1fdf8872cec824">AfterWorkFunction</a> =  std::function&lt;void(R)&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="af226fc2381e4c578a72e372ca1291481" name="af226fc2381e4c578a72e372ca1291481"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af226fc2381e4c578a72e372ca1291481">&#9670;&nbsp;</a></span>~WorkerThreadAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename R &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structwpi_1_1detail_1_1_worker_thread_async.html">wpi::detail::WorkerThreadAsync</a>&lt; R &gt;::~<a class="el" href="structwpi_1_1detail_1_1_worker_thread_async.html">WorkerThreadAsync</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a5937fca28ee52b6a69e8bef26e4d6faf" name="a5937fca28ee52b6a69e8bef26e4d6faf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5937fca28ee52b6a69e8bef26e4d6faf">&#9670;&nbsp;</a></span>SetLoop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename R &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="structwpi_1_1detail_1_1_worker_thread_async.html">wpi::detail::WorkerThreadAsync</a>&lt; R &gt;::SetLoop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classwpi_1_1uv_1_1_loop.html">uv::Loop</a> &amp;&#160;</td>
+          <td class="paramname"><em>loop</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8acbba2b8378fe82a3d1d638aaf0ec38" name="a8acbba2b8378fe82a3d1d638aaf0ec38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8acbba2b8378fe82a3d1d638aaf0ec38">&#9670;&nbsp;</a></span>UnsetLoop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename R &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="structwpi_1_1detail_1_1_worker_thread_async.html">wpi::detail::WorkerThreadAsync</a>&lt; R &gt;::UnsetLoop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ab4a2ee7b305a07371f9cf65e21afacc0" name="ab4a2ee7b305a07371f9cf65e21afacc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4a2ee7b305a07371f9cf65e21afacc0">&#9670;&nbsp;</a></span>m_async</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename R &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::weak_ptr&lt;<a class="el" href="classwpi_1_1uv_1_1_async.html">uv::Async</a>&lt;<a class="el" href="structwpi_1_1detail_1_1_worker_thread_async.html#abdcc1e45615171b07e1fdf8872cec824">AfterWorkFunction</a>, R&gt; &gt; <a class="el" href="structwpi_1_1detail_1_1_worker_thread_async.html">wpi::detail::WorkerThreadAsync</a>&lt; R &gt;::m_async</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>wpi/<a class="el" href="_worker_thread_8h_source.html">WorkerThread.h</a></li>
 </ul>
@@ -129,8 +247,8 @@ std::weak_ptr&lt; <a class="el" href="classwpi_1_1uv_1_1_async.html">uv::Async</
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>wpi</b></li><li class="navelem"><a class="el" href="namespacewpi_1_1detail.html">detail</a></li><li class="navelem"><a class="el" href="structwpi_1_1detail_1_1_worker_thread_async.html">WorkerThreadAsync</a></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:53 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="namespacewpi_1_1detail.html">detail</a></li><li class="navelem"><a class="el" href="structwpi_1_1detail_1_1_worker_thread_async.html">WorkerThreadAsync</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:41 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

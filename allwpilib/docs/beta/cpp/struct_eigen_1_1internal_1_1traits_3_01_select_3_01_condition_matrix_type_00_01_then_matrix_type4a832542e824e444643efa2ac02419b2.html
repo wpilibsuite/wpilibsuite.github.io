@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -97,6 +97,8 @@ $(document).ready(function(){initNavTree('struct_eigen_1_1internal_1_1traits_3_0
   <div class="headertitle"><div class="title">Eigen::internal::traits&lt; Select&lt; ConditionMatrixType, ThenMatrixType, ElseMatrixType &gt; &gt; Struct Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_select_8h_source.html">/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/eigeninclude/Eigen/src/Core/Select.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Eigen::internal::traits&lt; Select&lt; ConditionMatrixType, ThenMatrixType, ElseMatrixType &gt; &gt;:</div>
 <div class="dyncontent">
@@ -109,35 +111,150 @@ Inheritance diagram for Eigen::internal::traits&lt; Select&lt; ConditionMatrixTy
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a1729348317b79c750721bc09360b8a0a"><td class="memItemLeft" align="right" valign="top"><a id="a1729348317b79c750721bc09360b8a0a" name="a1729348317b79c750721bc09360b8a0a"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<b>RowsAtCompileTime</b> = ConditionMatrixType::RowsAtCompileTime
-, <b>ColsAtCompileTime</b> = ConditionMatrixType::ColsAtCompileTime
-, <b>MaxRowsAtCompileTime</b> = ConditionMatrixType::MaxRowsAtCompileTime
-, <b>MaxColsAtCompileTime</b> = ConditionMatrixType::MaxColsAtCompileTime
+<tr class="memitem:a2882d884ae2dc21e89f87cdb2a0d8ebc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_select_3_01_condition_matrix_type_00_01_then_matrix_type4a832542e824e444643efa2ac02419b2.html#a2882d884ae2dc21e89f87cdb2a0d8ebca05caf70f1b7edc07d3d229ca4506371f">RowsAtCompileTime</a> = ConditionMatrixType::RowsAtCompileTime
+, <a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_select_3_01_condition_matrix_type_00_01_then_matrix_type4a832542e824e444643efa2ac02419b2.html#a2882d884ae2dc21e89f87cdb2a0d8ebcae602391fd111e6bd8639aad352311a42">ColsAtCompileTime</a> = ConditionMatrixType::ColsAtCompileTime
+, <a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_select_3_01_condition_matrix_type_00_01_then_matrix_type4a832542e824e444643efa2ac02419b2.html#a2882d884ae2dc21e89f87cdb2a0d8ebca994149e9d9fdd87e5a118676043265c6">MaxRowsAtCompileTime</a> = ConditionMatrixType::MaxRowsAtCompileTime
+, <a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_select_3_01_condition_matrix_type_00_01_then_matrix_type4a832542e824e444643efa2ac02419b2.html#a2882d884ae2dc21e89f87cdb2a0d8ebca8278719d26c3ea26a18f19f0f52ef047">MaxColsAtCompileTime</a> = ConditionMatrixType::MaxColsAtCompileTime
 , <br />
-&#160;&#160;<b>Flags</b> = (unsigned int)ThenMatrixType::Flags &amp; ElseMatrixType::Flags &amp; RowMajorBit
+&#160;&#160;<a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_select_3_01_condition_matrix_type_00_01_then_matrix_type4a832542e824e444643efa2ac02419b2.html#a2882d884ae2dc21e89f87cdb2a0d8ebca7c77d179bd13c068a50ec3f8bb1b2d38">Flags</a> = (unsigned int)ThenMatrixType::Flags &amp; ElseMatrixType::Flags &amp; RowMajorBit
 <br />
  }</td></tr>
-<tr class="separator:a1729348317b79c750721bc09360b8a0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af25bcfe2b10edd4c712db322a67cf38d"><td class="memItemLeft" align="right" valign="top"><a id="af25bcfe2b10edd4c712db322a67cf38d" name="af25bcfe2b10edd4c712db322a67cf38d"></a>
-typedef <a class="el" href="struct_eigen_1_1internal_1_1traits.html">traits</a>&lt; ThenMatrixType &gt;::Scalar&#160;</td><td class="memItemRight" valign="bottom"><b>Scalar</b></td></tr>
+<tr class="separator:a2882d884ae2dc21e89f87cdb2a0d8ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af25bcfe2b10edd4c712db322a67cf38d"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_eigen_1_1internal_1_1traits.html">traits</a>&lt; ThenMatrixType &gt;::<a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_select_3_01_condition_matrix_type_00_01_then_matrix_type4a832542e824e444643efa2ac02419b2.html#af25bcfe2b10edd4c712db322a67cf38d">Scalar</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_select_3_01_condition_matrix_type_00_01_then_matrix_type4a832542e824e444643efa2ac02419b2.html#af25bcfe2b10edd4c712db322a67cf38d">Scalar</a></td></tr>
 <tr class="separator:af25bcfe2b10edd4c712db322a67cf38d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5ff0d811757bd62f57f49f9da050632"><td class="memItemLeft" align="right" valign="top"><a id="af5ff0d811757bd62f57f49f9da050632" name="af5ff0d811757bd62f57f49f9da050632"></a>
-typedef <a class="el" href="struct_eigen_1_1_dense.html">Dense</a>&#160;</td><td class="memItemRight" valign="bottom"><b>StorageKind</b></td></tr>
+<tr class="memitem:af5ff0d811757bd62f57f49f9da050632"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_eigen_1_1_dense.html">Dense</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_select_3_01_condition_matrix_type_00_01_then_matrix_type4a832542e824e444643efa2ac02419b2.html#af5ff0d811757bd62f57f49f9da050632">StorageKind</a></td></tr>
 <tr class="separator:af5ff0d811757bd62f57f49f9da050632"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1324cdd8949a97a6842bfbf1f6b59be"><td class="memItemLeft" align="right" valign="top"><a id="ad1324cdd8949a97a6842bfbf1f6b59be" name="ad1324cdd8949a97a6842bfbf1f6b59be"></a>
-typedef <a class="el" href="struct_eigen_1_1internal_1_1traits.html">traits</a>&lt; ThenMatrixType &gt;::XprKind&#160;</td><td class="memItemRight" valign="bottom"><b>XprKind</b></td></tr>
+<tr class="memitem:ad1324cdd8949a97a6842bfbf1f6b59be"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_eigen_1_1internal_1_1traits.html">traits</a>&lt; ThenMatrixType &gt;::<a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_select_3_01_condition_matrix_type_00_01_then_matrix_type4a832542e824e444643efa2ac02419b2.html#ad1324cdd8949a97a6842bfbf1f6b59be">XprKind</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_select_3_01_condition_matrix_type_00_01_then_matrix_type4a832542e824e444643efa2ac02419b2.html#ad1324cdd8949a97a6842bfbf1f6b59be">XprKind</a></td></tr>
 <tr class="separator:ad1324cdd8949a97a6842bfbf1f6b59be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2e9ab45462bbc1d5acf0efd4470df84"><td class="memItemLeft" align="right" valign="top"><a id="ab2e9ab45462bbc1d5acf0efd4470df84" name="ab2e9ab45462bbc1d5acf0efd4470df84"></a>
-typedef ConditionMatrixType::Nested&#160;</td><td class="memItemRight" valign="bottom"><b>ConditionMatrixNested</b></td></tr>
+<tr class="memitem:ab2e9ab45462bbc1d5acf0efd4470df84"><td class="memItemLeft" align="right" valign="top">typedef ConditionMatrixType::Nested&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_select_3_01_condition_matrix_type_00_01_then_matrix_type4a832542e824e444643efa2ac02419b2.html#ab2e9ab45462bbc1d5acf0efd4470df84">ConditionMatrixNested</a></td></tr>
 <tr class="separator:ab2e9ab45462bbc1d5acf0efd4470df84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f974812f22d59116a88af721159cdda"><td class="memItemLeft" align="right" valign="top"><a id="a5f974812f22d59116a88af721159cdda" name="a5f974812f22d59116a88af721159cdda"></a>
-typedef ThenMatrixType::Nested&#160;</td><td class="memItemRight" valign="bottom"><b>ThenMatrixNested</b></td></tr>
+<tr class="memitem:a5f974812f22d59116a88af721159cdda"><td class="memItemLeft" align="right" valign="top">typedef ThenMatrixType::Nested&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_select_3_01_condition_matrix_type_00_01_then_matrix_type4a832542e824e444643efa2ac02419b2.html#a5f974812f22d59116a88af721159cdda">ThenMatrixNested</a></td></tr>
 <tr class="separator:a5f974812f22d59116a88af721159cdda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78d8b57ded5a7dd4adde5f46675dfd5a"><td class="memItemLeft" align="right" valign="top"><a id="a78d8b57ded5a7dd4adde5f46675dfd5a" name="a78d8b57ded5a7dd4adde5f46675dfd5a"></a>
-typedef ElseMatrixType::Nested&#160;</td><td class="memItemRight" valign="bottom"><b>ElseMatrixNested</b></td></tr>
+<tr class="memitem:a78d8b57ded5a7dd4adde5f46675dfd5a"><td class="memItemLeft" align="right" valign="top">typedef ElseMatrixType::Nested&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_select_3_01_condition_matrix_type_00_01_then_matrix_type4a832542e824e444643efa2ac02419b2.html#a78d8b57ded5a7dd4adde5f46675dfd5a">ElseMatrixNested</a></td></tr>
 <tr class="separator:a78d8b57ded5a7dd4adde5f46675dfd5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="ab2e9ab45462bbc1d5acf0efd4470df84" name="ab2e9ab45462bbc1d5acf0efd4470df84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2e9ab45462bbc1d5acf0efd4470df84">&#9670;&nbsp;</a></span>ConditionMatrixNested</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ConditionMatrixType , typename ThenMatrixType , typename ElseMatrixType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef ConditionMatrixType::Nested <a class="el" href="struct_eigen_1_1internal_1_1traits.html">Eigen::internal::traits</a>&lt; <a class="el" href="class_eigen_1_1_select.html">Select</a>&lt; ConditionMatrixType, ThenMatrixType, ElseMatrixType &gt; &gt;::<a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_select_3_01_condition_matrix_type_00_01_then_matrix_type4a832542e824e444643efa2ac02419b2.html#ab2e9ab45462bbc1d5acf0efd4470df84">ConditionMatrixNested</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a78d8b57ded5a7dd4adde5f46675dfd5a" name="a78d8b57ded5a7dd4adde5f46675dfd5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78d8b57ded5a7dd4adde5f46675dfd5a">&#9670;&nbsp;</a></span>ElseMatrixNested</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ConditionMatrixType , typename ThenMatrixType , typename ElseMatrixType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef ElseMatrixType::Nested <a class="el" href="struct_eigen_1_1internal_1_1traits.html">Eigen::internal::traits</a>&lt; <a class="el" href="class_eigen_1_1_select.html">Select</a>&lt; ConditionMatrixType, ThenMatrixType, ElseMatrixType &gt; &gt;::<a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_select_3_01_condition_matrix_type_00_01_then_matrix_type4a832542e824e444643efa2ac02419b2.html#a78d8b57ded5a7dd4adde5f46675dfd5a">ElseMatrixNested</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af25bcfe2b10edd4c712db322a67cf38d" name="af25bcfe2b10edd4c712db322a67cf38d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af25bcfe2b10edd4c712db322a67cf38d">&#9670;&nbsp;</a></span>Scalar</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ConditionMatrixType , typename ThenMatrixType , typename ElseMatrixType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="struct_eigen_1_1internal_1_1traits.html">traits</a>&lt;ThenMatrixType&gt;::<a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_select_3_01_condition_matrix_type_00_01_then_matrix_type4a832542e824e444643efa2ac02419b2.html#af25bcfe2b10edd4c712db322a67cf38d">Scalar</a> <a class="el" href="struct_eigen_1_1internal_1_1traits.html">Eigen::internal::traits</a>&lt; <a class="el" href="class_eigen_1_1_select.html">Select</a>&lt; ConditionMatrixType, ThenMatrixType, ElseMatrixType &gt; &gt;::<a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_select_3_01_condition_matrix_type_00_01_then_matrix_type4a832542e824e444643efa2ac02419b2.html#af25bcfe2b10edd4c712db322a67cf38d">Scalar</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af5ff0d811757bd62f57f49f9da050632" name="af5ff0d811757bd62f57f49f9da050632"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5ff0d811757bd62f57f49f9da050632">&#9670;&nbsp;</a></span>StorageKind</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ConditionMatrixType , typename ThenMatrixType , typename ElseMatrixType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="struct_eigen_1_1_dense.html">Dense</a> <a class="el" href="struct_eigen_1_1internal_1_1traits.html">Eigen::internal::traits</a>&lt; <a class="el" href="class_eigen_1_1_select.html">Select</a>&lt; ConditionMatrixType, ThenMatrixType, ElseMatrixType &gt; &gt;::<a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_select_3_01_condition_matrix_type_00_01_then_matrix_type4a832542e824e444643efa2ac02419b2.html#af5ff0d811757bd62f57f49f9da050632">StorageKind</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5f974812f22d59116a88af721159cdda" name="a5f974812f22d59116a88af721159cdda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f974812f22d59116a88af721159cdda">&#9670;&nbsp;</a></span>ThenMatrixNested</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ConditionMatrixType , typename ThenMatrixType , typename ElseMatrixType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef ThenMatrixType::Nested <a class="el" href="struct_eigen_1_1internal_1_1traits.html">Eigen::internal::traits</a>&lt; <a class="el" href="class_eigen_1_1_select.html">Select</a>&lt; ConditionMatrixType, ThenMatrixType, ElseMatrixType &gt; &gt;::<a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_select_3_01_condition_matrix_type_00_01_then_matrix_type4a832542e824e444643efa2ac02419b2.html#a5f974812f22d59116a88af721159cdda">ThenMatrixNested</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad1324cdd8949a97a6842bfbf1f6b59be" name="ad1324cdd8949a97a6842bfbf1f6b59be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1324cdd8949a97a6842bfbf1f6b59be">&#9670;&nbsp;</a></span>XprKind</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ConditionMatrixType , typename ThenMatrixType , typename ElseMatrixType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="struct_eigen_1_1internal_1_1traits.html">traits</a>&lt;ThenMatrixType&gt;::<a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_select_3_01_condition_matrix_type_00_01_then_matrix_type4a832542e824e444643efa2ac02419b2.html#ad1324cdd8949a97a6842bfbf1f6b59be">XprKind</a> <a class="el" href="struct_eigen_1_1internal_1_1traits.html">Eigen::internal::traits</a>&lt; <a class="el" href="class_eigen_1_1_select.html">Select</a>&lt; ConditionMatrixType, ThenMatrixType, ElseMatrixType &gt; &gt;::<a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_select_3_01_condition_matrix_type_00_01_then_matrix_type4a832542e824e444643efa2ac02419b2.html#ad1324cdd8949a97a6842bfbf1f6b59be">XprKind</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a2882d884ae2dc21e89f87cdb2a0d8ebc" name="a2882d884ae2dc21e89f87cdb2a0d8ebc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2882d884ae2dc21e89f87cdb2a0d8ebc">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ConditionMatrixType , typename ThenMatrixType , typename ElseMatrixType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a2882d884ae2dc21e89f87cdb2a0d8ebca05caf70f1b7edc07d3d229ca4506371f" name="a2882d884ae2dc21e89f87cdb2a0d8ebca05caf70f1b7edc07d3d229ca4506371f"></a>RowsAtCompileTime&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2882d884ae2dc21e89f87cdb2a0d8ebcae602391fd111e6bd8639aad352311a42" name="a2882d884ae2dc21e89f87cdb2a0d8ebcae602391fd111e6bd8639aad352311a42"></a>ColsAtCompileTime&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2882d884ae2dc21e89f87cdb2a0d8ebca994149e9d9fdd87e5a118676043265c6" name="a2882d884ae2dc21e89f87cdb2a0d8ebca994149e9d9fdd87e5a118676043265c6"></a>MaxRowsAtCompileTime&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2882d884ae2dc21e89f87cdb2a0d8ebca8278719d26c3ea26a18f19f0f52ef047" name="a2882d884ae2dc21e89f87cdb2a0d8ebca8278719d26c3ea26a18f19f0f52ef047"></a>MaxColsAtCompileTime&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2882d884ae2dc21e89f87cdb2a0d8ebca7c77d179bd13c068a50ec3f8bb1b2d38" name="a2882d884ae2dc21e89f87cdb2a0d8ebca7c77d179bd13c068a50ec3f8bb1b2d38"></a>Flags&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/eigeninclude/Eigen/src/Core/<a class="el" href="_select_8h_source.html">Select.h</a></li>
 </ul>
@@ -146,8 +263,8 @@ typedef ElseMatrixType::Nested&#160;</td><td class="memItemRight" valign="bottom
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespace_eigen.html">Eigen</a></li><li class="navelem"><b>internal</b></li><li class="navelem"><a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_select_3_01_condition_matrix_type_00_01_then_matrix_type4a832542e824e444643efa2ac02419b2.html">traits&lt; Select&lt; ConditionMatrixType, ThenMatrixType, ElseMatrixType &gt; &gt;</a></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:49 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespace_eigen.html">Eigen</a></li><li class="navelem"><a class="el" href="namespace_eigen_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="struct_eigen_1_1internal_1_1traits_3_01_select_3_01_condition_matrix_type_00_01_then_matrix_type4a832542e824e444643efa2ac02419b2.html">traits&lt; Select&lt; ConditionMatrixType, ThenMatrixType, ElseMatrixType &gt; &gt;</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:37 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -94,21 +94,21 @@ $(document).ready(function(){initNavTree('_mecanum_drive_odometry_8h_source.html
   <div class="headertitle"><div class="title">MecanumDriveOdometry.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
+<a href="_mecanum_drive_odometry_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Open Source Software; you can modify and/or share it under the terms of</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// the WPILib BSD license file in the root directory of this project.</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;wpi/SymbolExports.h&gt;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;wpi/timestamp.h&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;<a class="code" href="_symbol_exports_8h.html">wpi/SymbolExports.h</a>&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;<a class="code" href="timestamp_8h.html">wpi/timestamp.h</a>&gt;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;frc/geometry/Pose2d.h&quot;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;frc/kinematics/MecanumDriveKinematics.h&quot;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;frc/kinematics/MecanumDriveWheelSpeeds.h&quot;</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;units/time.h&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="_pose2d_8h.html">frc/geometry/Pose2d.h</a>&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="_mecanum_drive_kinematics_8h.html">frc/kinematics/MecanumDriveKinematics.h</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="_mecanum_drive_wheel_speeds_8h.html">frc/kinematics/MecanumDriveWheelSpeeds.h</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="time_8h.html">units/time.h</a>&quot;</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span>frc {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacefrc.html">frc</a> {</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"></span> </div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">/**</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> * Class for mecanum drive odometry. Odometry allows you to track the robot&#39;s</span></div>
@@ -119,7 +119,7 @@ $(document).ready(function(){initNavTree('_mecanum_drive_odometry_8h_source.html
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"> * path following. Furthermore, odometry can be used for latency compensation</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"> * when using computer-vision systems.</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="classfrc_1_1_mecanum_drive_odometry.html">   26</a></span><span class="keyword">class </span>WPILIB_DLLEXPORT <a class="code hl_class" href="classfrc_1_1_mecanum_drive_odometry.html">MecanumDriveOdometry</a> {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="classfrc_1_1_mecanum_drive_odometry.html">   26</a></span><span class="keyword">class </span><a class="code hl_define" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> <a class="code hl_class" href="classfrc_1_1_mecanum_drive_odometry.html">MecanumDriveOdometry</a> {</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> <span class="keyword">public</span>:<span class="comment"></span></div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">   * Constructs a MecanumDriveOdometry object.</span></div>
@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('_mecanum_drive_odometry_8h_source.html
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="classfrc_1_1_mecanum_drive_odometry.html#ac0411e0dfcb4e342b25ac9cba2d8c060">   35</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classfrc_1_1_mecanum_drive_odometry.html#ac0411e0dfcb4e342b25ac9cba2d8c060">MecanumDriveOdometry</a>(<a class="code hl_class" href="classfrc_1_1_mecanum_drive_kinematics.html">MecanumDriveKinematics</a> kinematics,</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                                <span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_rotation2d.html">Rotation2d</a>&amp; gyroAngle,</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                                <span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_pose2d.html">Pose2d</a>&amp; initialPose = <a class="code hl_class" href="classfrc_1_1_pose2d.html">Pose2d</a>());</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                                <span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_pose2d.html">Pose2d</a>&amp; initialPose = <a class="code hl_variable" href="namespacefrc.html#a6bd6f612dd62c1c703e83570f282ce38">Pose2d</a>());</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment"></span> </div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">   * Resets the robot&#39;s position on the field.</span></div>
@@ -199,6 +199,11 @@ $(document).ready(function(){initNavTree('_mecanum_drive_odometry_8h_source.html
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>};</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>}  <span class="comment">// namespace frc</span></div>
+<div class="ttc" id="a_mecanum_drive_kinematics_8h_html"><div class="ttname"><a href="_mecanum_drive_kinematics_8h.html">MecanumDriveKinematics.h</a></div></div>
+<div class="ttc" id="a_mecanum_drive_wheel_speeds_8h_html"><div class="ttname"><a href="_mecanum_drive_wheel_speeds_8h.html">MecanumDriveWheelSpeeds.h</a></div></div>
+<div class="ttc" id="a_pose2d_8h_html"><div class="ttname"><a href="_pose2d_8h.html">Pose2d.h</a></div></div>
+<div class="ttc" id="a_symbol_exports_8h_html"><div class="ttname"><a href="_symbol_exports_8h.html">SymbolExports.h</a></div></div>
+<div class="ttc" id="a_symbol_exports_8h_html_aac411a8a8db8805ace32d8e07266c44e"><div class="ttname"><a href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a></div><div class="ttdeci">#define WPILIB_DLLEXPORT</div><div class="ttdef"><b>Definition:</b> SymbolExports.h:22</div></div>
 <div class="ttc" id="aclassfrc_1_1_mecanum_drive_kinematics_html"><div class="ttname"><a href="classfrc_1_1_mecanum_drive_kinematics.html">frc::MecanumDriveKinematics</a></div><div class="ttdoc">Helper class that converts a chassis velocity (dx, dy, and dtheta components) into individual wheel s...</div><div class="ttdef"><b>Definition:</b> MecanumDriveKinematics.h:40</div></div>
 <div class="ttc" id="aclassfrc_1_1_mecanum_drive_odometry_html"><div class="ttname"><a href="classfrc_1_1_mecanum_drive_odometry.html">frc::MecanumDriveOdometry</a></div><div class="ttdoc">Class for mecanum drive odometry.</div><div class="ttdef"><b>Definition:</b> MecanumDriveOdometry.h:26</div></div>
 <div class="ttc" id="aclassfrc_1_1_mecanum_drive_odometry_html_a268bf16d286733cf25443013583c8283"><div class="ttname"><a href="classfrc_1_1_mecanum_drive_odometry.html#a268bf16d286733cf25443013583c8283">frc::MecanumDriveOdometry::GetPose</a></div><div class="ttdeci">const Pose2d &amp; GetPose() const</div><div class="ttdoc">Returns the position of the robot on the field.</div><div class="ttdef"><b>Definition:</b> MecanumDriveOdometry.h:58</div></div>
@@ -210,14 +215,18 @@ $(document).ready(function(){initNavTree('_mecanum_drive_odometry_8h_source.html
 <div class="ttc" id="aclassfrc_1_1_pose2d_html_ab58cd85d929e96cbc40360409196921c"><div class="ttname"><a href="classfrc_1_1_pose2d.html#ab58cd85d929e96cbc40360409196921c">frc::Pose2d::Rotation</a></div><div class="ttdeci">const Rotation2d &amp; Rotation() const</div><div class="ttdoc">Returns the underlying rotation.</div><div class="ttdef"><b>Definition:</b> Pose2d.h:112</div></div>
 <div class="ttc" id="aclassfrc_1_1_rotation2d_html"><div class="ttname"><a href="classfrc_1_1_rotation2d.html">frc::Rotation2d</a></div><div class="ttdoc">A rotation in a 2d coordinate frame represented a point on the unit circle (cosine and sine).</div><div class="ttdef"><b>Definition:</b> Rotation2d.h:21</div></div>
 <div class="ttc" id="agroup__ntcore__utility__func_html_ga9e57c1308e76272f160b24b18b3ee254"><div class="ttname"><a href="group__ntcore__utility__func.html#ga9e57c1308e76272f160b24b18b3ee254">nt::Now</a></div><div class="ttdeci">uint64_t Now()</div><div class="ttdoc">Returns monotonic current time in 1 us increments.</div></div>
+<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> VisionRunner.inc:9</div></div>
+<div class="ttc" id="anamespacefrc_html_a6bd6f612dd62c1c703e83570f282ce38"><div class="ttname"><a href="namespacefrc.html#a6bd6f612dd62c1c703e83570f282ce38">frc::Pose2d</a></div><div class="ttdeci">class WPILIB_DLLEXPORT Pose2d</div><div class="ttdef"><b>Definition:</b> Transform2d.h:13</div></div>
 <div class="ttc" id="astructfrc_1_1_mecanum_drive_wheel_speeds_html"><div class="ttname"><a href="structfrc_1_1_mecanum_drive_wheel_speeds.html">frc::MecanumDriveWheelSpeeds</a></div><div class="ttdoc">Represents the wheel speeds for a mecanum drive drivetrain.</div><div class="ttdef"><b>Definition:</b> MecanumDriveWheelSpeeds.h:15</div></div>
+<div class="ttc" id="atime_8h_html"><div class="ttname"><a href="time_8h.html">time.h</a></div></div>
+<div class="ttc" id="atimestamp_8h_html"><div class="ttname"><a href="timestamp_8h.html">timestamp.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_d2a0b1acc90a71e3394af07d8da08800.html">kinematics</a></li><li class="navelem"><b>MecanumDriveOdometry.h</b></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:42 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_d2a0b1acc90a71e3394af07d8da08800.html">kinematics</a></li><li class="navelem"><a class="el" href="_mecanum_drive_odometry_8h.html">MecanumDriveOdometry.h</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:29 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

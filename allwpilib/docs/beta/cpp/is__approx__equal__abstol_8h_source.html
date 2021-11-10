@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -94,19 +94,19 @@ $(document).ready(function(){initNavTree('is__approx__equal__abstol_8h_source.ht
   <div class="headertitle"><div class="title">is_approx_equal_abstol.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<a href="is__approx__equal__abstol_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;Eigen/Core&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;<a class="code" href="_core.html">Eigen/Core</a>&gt;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span>drake {</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedrake.html">drake</a> {</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"></span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">/// Returns true if and only if the two matrices are equal to within a certain</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">/// absolute elementwise @p tolerance.  Special values (infinities, NaN, etc.)</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">/// do not compare as equal elements.</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> DerivedA, <span class="keyword">typename</span> DerivedB&gt;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keywordtype">bool</span> is_approx_equal_abstol(<span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_matrix_base.html">Eigen::MatrixBase&lt;DerivedA&gt;</a>&amp; m1,</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="namespacedrake.html#a3cd8151cc95b5b95de9a9b882e27ed84">   13</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="namespacedrake.html#a3cd8151cc95b5b95de9a9b882e27ed84">is_approx_equal_abstol</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_matrix_base.html">Eigen::MatrixBase&lt;DerivedA&gt;</a>&amp; m1,</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>                            <span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_matrix_base.html">Eigen::MatrixBase&lt;DerivedB&gt;</a>&amp; m2,</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>                            <span class="keywordtype">double</span> tolerance) {</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  <span class="keywordflow">return</span> (</div>
@@ -131,21 +131,21 @@ $(document).ready(function(){initNavTree('is__approx__equal__abstol_8h_source.ht
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">/// pool. It is possible that other columns of m2 would also match m1(i) but</span></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">/// that m2(j) is the only match possible for a later column of m1.</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment"></span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> DerivedA, <span class="keyword">typename</span> DerivedB&gt;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keywordtype">bool</span> IsApproxEqualAbsTolWithPermutedColumns(</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="namespacedrake.html#ab8c3f5f0514513155be9f674f2c2cd63">   38</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="namespacedrake.html#ab8c3f5f0514513155be9f674f2c2cd63">IsApproxEqualAbsTolWithPermutedColumns</a>(</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_matrix_base.html">Eigen::MatrixBase&lt;DerivedA&gt;</a>&amp; m1,</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">const</span> <a class="code hl_class" href="class_eigen_1_1_matrix_base.html">Eigen::MatrixBase&lt;DerivedB&gt;</a>&amp; m2, <span class="keywordtype">double</span> tolerance) {</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <span class="keywordflow">if</span> ((m1.cols() != m2.cols()) || (m1.rows() != m2.rows())) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  std::vector&lt;bool&gt; available(m2.cols());</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; m2.cols(); i++) available[i] = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  std::vector&lt;bool&gt; <a class="code hl_variable" href="_third_party_notices_8txt.html#a4835db66bbf715a0269996098abf4e94">available</a>(m2.cols());</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; m2.cols(); i++) <a class="code hl_variable" href="_third_party_notices_8txt.html#a4835db66bbf715a0269996098abf4e94">available</a>[i] = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; m1.cols(); i++) {</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordtype">bool</span> found_match = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; m2.cols(); j++) {</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>      <span class="keywordflow">if</span> (available[j] &amp;&amp;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>          is_approx_equal_abstol(m1.col(i), m2.col(j), tolerance)) {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>      <span class="keywordflow">if</span> (<a class="code hl_variable" href="_third_party_notices_8txt.html#a4835db66bbf715a0269996098abf4e94">available</a>[j] &amp;&amp;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>          <a class="code hl_function" href="namespacedrake.html#a3cd8151cc95b5b95de9a9b882e27ed84">is_approx_equal_abstol</a>(m1.col(i), m2.col(j), tolerance)) {</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        found_match = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        available[j] = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <a class="code hl_variable" href="_third_party_notices_8txt.html#a4835db66bbf715a0269996098abf4e94">available</a>[j] = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>      }</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    }</div>
@@ -156,14 +156,19 @@ $(document).ready(function(){initNavTree('is__approx__equal__abstol_8h_source.ht
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>}  <span class="comment">// namespace drake</span></div>
+<div class="ttc" id="a_core_html"><div class="ttname"><a href="_core.html">Core</a></div></div>
+<div class="ttc" id="a_third_party_notices_8txt_html_a4835db66bbf715a0269996098abf4e94"><div class="ttname"><a href="_third_party_notices_8txt.html#a4835db66bbf715a0269996098abf4e94">available</a></div><div class="ttdeci">including without and apparatus in any patent Licensable by such Contributor that would be but for the grant of the by the offering for having or transfer of either its Contributions or its Contributor Version Secondary License means either the GNU General Public the GNU Lesser General Public the GNU Affero General Public or any later versions of those licenses Source Code Form means the form of the work preferred for making modifications You includes any entity that is controlled or is under common control with You For purposes of this control direct or to cause the direction or management of such whether by contract or royalty non exclusive make available</div><div class="ttdef"><b>Definition:</b> ThirdPartyNotices.txt:511</div></div>
 <div class="ttc" id="aclass_eigen_1_1_matrix_base_html"><div class="ttname"><a href="class_eigen_1_1_matrix_base.html">Eigen::MatrixBase</a></div><div class="ttdoc">Base class for all dense matrices, vectors, and expressions.</div><div class="ttdef"><b>Definition:</b> MatrixBase.h:50</div></div>
+<div class="ttc" id="anamespacedrake_html"><div class="ttname"><a href="namespacedrake.html">drake</a></div><div class="ttdef"><b>Definition:</b> discrete_algebraic_riccati_equation.h:9</div></div>
+<div class="ttc" id="anamespacedrake_html_a3cd8151cc95b5b95de9a9b882e27ed84"><div class="ttname"><a href="namespacedrake.html#a3cd8151cc95b5b95de9a9b882e27ed84">drake::is_approx_equal_abstol</a></div><div class="ttdeci">bool is_approx_equal_abstol(const Eigen::MatrixBase&lt; DerivedA &gt; &amp;m1, const Eigen::MatrixBase&lt; DerivedB &gt; &amp;m2, double tolerance)</div><div class="ttdoc">Returns true if and only if the two matrices are equal to within a certain absolute elementwise toler...</div><div class="ttdef"><b>Definition:</b> is_approx_equal_abstol.h:13</div></div>
+<div class="ttc" id="anamespacedrake_html_ab8c3f5f0514513155be9f674f2c2cd63"><div class="ttname"><a href="namespacedrake.html#ab8c3f5f0514513155be9f674f2c2cd63">drake::IsApproxEqualAbsTolWithPermutedColumns</a></div><div class="ttdeci">bool IsApproxEqualAbsTolWithPermutedColumns(const Eigen::MatrixBase&lt; DerivedA &gt; &amp;m1, const Eigen::MatrixBase&lt; DerivedB &gt; &amp;m2, double tolerance)</div><div class="ttdoc">Returns true if and only if a simple greedy search reveals a permutation of the columns of m2 to make...</div><div class="ttdef"><b>Definition:</b> is_approx_equal_abstol.h:38</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_3096fa119feaaf68acf7be783be3d79f.html">drake</a></li><li class="navelem"><a class="el" href="dir_533b608e0d491fadd970e32351d4ba56.html">common</a></li><li class="navelem"><b>is_approx_equal_abstol.h</b></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:42 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="dir_3096fa119feaaf68acf7be783be3d79f.html">drake</a></li><li class="navelem"><a class="el" href="dir_533b608e0d491fadd970e32351d4ba56.html">common</a></li><li class="navelem"><a class="el" href="is__approx__equal__abstol_8h.html">is_approx_equal_abstol.h</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:29 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

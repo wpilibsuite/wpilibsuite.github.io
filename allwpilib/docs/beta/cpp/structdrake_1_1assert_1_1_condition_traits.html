@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -98,19 +98,73 @@ $(document).ready(function(){initNavTree('structdrake_1_1assert_1_1_condition_tr
   <div class="headertitle"><div class="title">drake::assert::ConditionTraits&lt; Condition &gt; Struct Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="drake__assert_8h_source.html">drake/common/drake_assert.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:abe2f52c77ed7d767b38dc77e491a0578"><td class="memItemLeft" align="right" valign="top"><a id="abe2f52c77ed7d767b38dc77e491a0578" name="abe2f52c77ed7d767b38dc77e491a0578"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>Evaluate</b> (const Condition &amp;<a class="el" href="classvalue.html">value</a>)</td></tr>
+<tr class="memitem:abe2f52c77ed7d767b38dc77e491a0578"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdrake_1_1assert_1_1_condition_traits.html#abe2f52c77ed7d767b38dc77e491a0578">Evaluate</a> (const Condition &amp;<a class="el" href="classvalue.html">value</a>)</td></tr>
 <tr class="separator:abe2f52c77ed7d767b38dc77e491a0578"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a5e6e691ab6c4b914b0c7f35a9ac4d5ec"><td class="memItemLeft" align="right" valign="top"><a id="a5e6e691ab6c4b914b0c7f35a9ac4d5ec" name="a5e6e691ab6c4b914b0c7f35a9ac4d5ec"></a>
-static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_valid</b> = std::is_convertible_v&lt;Condition, bool&gt;</td></tr>
+<tr class="memitem:a5e6e691ab6c4b914b0c7f35a9ac4d5ec"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdrake_1_1assert_1_1_condition_traits.html#a5e6e691ab6c4b914b0c7f35a9ac4d5ec">is_valid</a> = std::is_convertible_v&lt;Condition, bool&gt;</td></tr>
 <tr class="separator:a5e6e691ab6c4b914b0c7f35a9ac4d5ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="abe2f52c77ed7d767b38dc77e491a0578" name="abe2f52c77ed7d767b38dc77e491a0578"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe2f52c77ed7d767b38dc77e491a0578">&#9670;&nbsp;</a></span>Evaluate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Condition &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool <a class="el" href="structdrake_1_1assert_1_1_condition_traits.html">drake::assert::ConditionTraits</a>&lt; Condition &gt;::Evaluate </td>
+          <td>(</td>
+          <td class="paramtype">const Condition &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a5e6e691ab6c4b914b0c7f35a9ac4d5ec" name="a5e6e691ab6c4b914b0c7f35a9ac4d5ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e6e691ab6c4b914b0c7f35a9ac4d5ec">&#9670;&nbsp;</a></span>is_valid</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Condition &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool <a class="el" href="structdrake_1_1assert_1_1_condition_traits.html">drake::assert::ConditionTraits</a>&lt; Condition &gt;::is_valid = std::is_convertible_v&lt;Condition, bool&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>drake/common/<a class="el" href="drake__assert_8h_source.html">drake_assert.h</a></li>
 </ul>
@@ -119,8 +173,8 @@ static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_v
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>drake</b></li><li class="navelem"><b>assert</b></li><li class="navelem"><a class="el" href="structdrake_1_1assert_1_1_condition_traits.html">ConditionTraits</a></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:45 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespacedrake.html">drake</a></li><li class="navelem"><a class="el" href="namespacedrake_1_1assert.html">assert</a></li><li class="navelem"><a class="el" href="structdrake_1_1assert_1_1_condition_traits.html">ConditionTraits</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:32 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

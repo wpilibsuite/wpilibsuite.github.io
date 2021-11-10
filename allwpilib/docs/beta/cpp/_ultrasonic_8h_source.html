@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('_ultrasonic_8h_source.html',''); initR
   <div class="headertitle"><div class="title">Ultrasonic.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
+<a href="_ultrasonic_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Open Source Software; you can modify and/or share it under the terms of</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// the WPILib BSD license file in the root directory of this project.</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
@@ -105,16 +105,16 @@ $(document).ready(function(){initNavTree('_ultrasonic_8h_source.html',''); initR
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;thread&gt;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;hal/SimDevice.h&gt;</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;units/length.h&gt;</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;units/time.h&gt;</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;units/velocity.h&gt;</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;wpi/sendable/Sendable.h&gt;</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;wpi/sendable/SendableHelper.h&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;<a class="code" href="_sim_device_8h.html">hal/SimDevice.h</a>&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;<a class="code" href="length_8h.html">units/length.h</a>&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;<a class="code" href="time_8h.html">units/time.h</a>&gt;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;<a class="code" href="velocity_8h.html">units/velocity.h</a>&gt;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;<a class="code" href="_sendable_8h.html">wpi/sendable/Sendable.h</a>&gt;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;<a class="code" href="_sendable_helper_8h.html">wpi/sendable/SendableHelper.h</a>&gt;</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &quot;frc/Counter.h&quot;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &quot;<a class="code" href="wpilibc_2src_2main_2native_2include_2frc_2_counter_8h.html">frc/Counter.h</a>&quot;</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">namespace </span>frc {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacefrc.html">frc</a> {</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">class </span>DigitalInput;</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">class </span>DigitalOutput;</div>
@@ -181,12 +181,12 @@ $(document).ready(function(){initNavTree('_ultrasonic_8h_source.html',''); initR
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="classfrc_1_1_ultrasonic.html#a1cf7dbe16212d71d22b8b0158321e0ae">   85</a></span>  <a class="code hl_function" href="classfrc_1_1_ultrasonic.html#a1cf7dbe16212d71d22b8b0158321e0ae">Ultrasonic</a>(std::shared_ptr&lt;DigitalOutput&gt; pingChannel,</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>             std::shared_ptr&lt;DigitalInput&gt; echoChannel);</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  <a class="code hl_class" href="classfrc_1_1_ultrasonic.html">~Ultrasonic</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="classfrc_1_1_ultrasonic.html#a3473cfd2cdc61f741ffe5e0745607db8">   88</a></span>  <a class="code hl_function" href="classfrc_1_1_ultrasonic.html#a3473cfd2cdc61f741ffe5e0745607db8">~Ultrasonic</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  <a class="code hl_function" href="classfrc_1_1_ultrasonic.html#a3f3e7c18aa293f67c237dd4501153e05">Ultrasonic</a>(<a class="code hl_class" href="classfrc_1_1_ultrasonic.html">Ultrasonic</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  <a class="code hl_class" href="classfrc_1_1_ultrasonic.html">Ultrasonic</a>&amp; operator=(<a class="code hl_class" href="classfrc_1_1_ultrasonic.html">Ultrasonic</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="classfrc_1_1_ultrasonic.html#a121b2a5b93c67c69f53cdaa79fd63aa0">   90</a></span>  <a class="code hl_function" href="classfrc_1_1_ultrasonic.html#a121b2a5b93c67c69f53cdaa79fd63aa0">Ultrasonic</a>(<a class="code hl_class" href="classfrc_1_1_ultrasonic.html">Ultrasonic</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="classfrc_1_1_ultrasonic.html#aa81d6876dad5789c5f8695131cf3c0f4">   91</a></span>  <a class="code hl_class" href="classfrc_1_1_ultrasonic.html">Ultrasonic</a>&amp; <a class="code hl_function" href="classfrc_1_1_ultrasonic.html#aa81d6876dad5789c5f8695131cf3c0f4">operator=</a>(<a class="code hl_class" href="classfrc_1_1_ultrasonic.html">Ultrasonic</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  <span class="keywordtype">int</span> GetEchoChannel() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="classfrc_1_1_ultrasonic.html#a8d2148fb9cc46da032a7d7762655bb94">   93</a></span>  <span class="keywordtype">int</span> <a class="code hl_function" href="classfrc_1_1_ultrasonic.html#a8d2148fb9cc46da032a7d7762655bb94">GetEchoChannel</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment"></span> </div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment">   * Single ping to ultrasonic sensor.</span></div>
@@ -231,9 +231,9 @@ $(document).ready(function(){initNavTree('_ultrasonic_8h_source.html',''); initR
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno"><a class="line" href="classfrc_1_1_ultrasonic.html#add97ba93c8eb139b7525b7205e6fd8bb">  136</a></span>  units::meter_t <a class="code hl_function" href="classfrc_1_1_ultrasonic.html#add97ba93c8eb139b7525b7205e6fd8bb">GetRange</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>  <span class="keywordtype">bool</span> IsEnabled() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno"><a class="line" href="classfrc_1_1_ultrasonic.html#aaaf0f92854933c8ac8b8fa5b747c19ef">  138</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classfrc_1_1_ultrasonic.html#aaaf0f92854933c8ac8b8fa5b747c19ef">IsEnabled</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>  <span class="keywordtype">void</span> SetEnabled(<span class="keywordtype">bool</span> enable);</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno"><a class="line" href="classfrc_1_1_ultrasonic.html#a6ce3eec9198fe8399231800c8584dff8">  140</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_ultrasonic.html#a6ce3eec9198fe8399231800c8584dff8">SetEnabled</a>(<span class="keywordtype">bool</span> enable);</div>
 <div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
 <div class="line"><a id="l00142" name="l00142"></a><span class="lineno"><a class="line" href="classfrc_1_1_ultrasonic.html#a0226d94c06e4205c9675d73422843538">  142</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_ultrasonic.html#a0226d94c06e4205c9675d73422843538">InitSendable</a>(<a class="code hl_class" href="classwpi_1_1_sendable_builder.html">wpi::SendableBuilder</a>&amp; builder) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
@@ -261,7 +261,7 @@ $(document).ready(function(){initNavTree('_ultrasonic_8h_source.html',''); initR
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> UltrasonicChecker();</div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>  <span class="comment">// Time (sec) for the ping trigger pulse.</span></div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">double</span> kPingTime = 10 * 1e-6;</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">double</span> kPingTime = 10 * 1<a class="code hl_function" href="namespaceunits_1_1constants.html#acebb59adda640396795adcdc84a78297">e</a>-6;</div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>  <span class="comment">// Priority that the ultrasonic round robin task runs.</span></div>
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">int</span> kPriority = 64;</div>
@@ -290,29 +290,44 @@ $(document).ready(function(){initNavTree('_ultrasonic_8h_source.html',''); initR
 <div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>};</div>
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>}  <span class="comment">// namespace frc</span></div>
+<div class="ttc" id="a_sendable_8h_html"><div class="ttname"><a href="_sendable_8h.html">Sendable.h</a></div></div>
+<div class="ttc" id="a_sendable_helper_8h_html"><div class="ttname"><a href="_sendable_helper_8h.html">SendableHelper.h</a></div></div>
+<div class="ttc" id="a_sim_device_8h_html"><div class="ttname"><a href="_sim_device_8h.html">SimDevice.h</a></div></div>
 <div class="ttc" id="aclassfrc_1_1_counter_html"><div class="ttname"><a href="classfrc_1_1_counter.html">frc::Counter</a></div><div class="ttdoc">Class for counting the number of ticks on a digital input channel.</div><div class="ttdef"><b>Definition:</b> Counter.h:35</div></div>
 <div class="ttc" id="aclassfrc_1_1_digital_input_html"><div class="ttname"><a href="classfrc_1_1_digital_input.html">frc::DigitalInput</a></div><div class="ttdoc">Class to read a digital input.</div><div class="ttdef"><b>Definition:</b> DigitalInput.h:27</div></div>
 <div class="ttc" id="aclassfrc_1_1_digital_output_html"><div class="ttname"><a href="classfrc_1_1_digital_output.html">frc::DigitalOutput</a></div><div class="ttdoc">Class to write to digital outputs.</div><div class="ttdef"><b>Definition:</b> DigitalOutput.h:24</div></div>
 <div class="ttc" id="aclassfrc_1_1_ultrasonic_html"><div class="ttname"><a href="classfrc_1_1_ultrasonic.html">frc::Ultrasonic</a></div><div class="ttdoc">Ultrasonic rangefinder class.</div><div class="ttdef"><b>Definition:</b> Ultrasonic.h:39</div></div>
 <div class="ttc" id="aclassfrc_1_1_ultrasonic_html_a0226d94c06e4205c9675d73422843538"><div class="ttname"><a href="classfrc_1_1_ultrasonic.html#a0226d94c06e4205c9675d73422843538">frc::Ultrasonic::InitSendable</a></div><div class="ttdeci">void InitSendable(wpi::SendableBuilder &amp;builder) override</div><div class="ttdoc">Initializes this Sendable object.</div></div>
+<div class="ttc" id="aclassfrc_1_1_ultrasonic_html_a121b2a5b93c67c69f53cdaa79fd63aa0"><div class="ttname"><a href="classfrc_1_1_ultrasonic.html#a121b2a5b93c67c69f53cdaa79fd63aa0">frc::Ultrasonic::Ultrasonic</a></div><div class="ttdeci">Ultrasonic(Ultrasonic &amp;&amp;)=default</div></div>
 <div class="ttc" id="aclassfrc_1_1_ultrasonic_html_a1cbdb9dfc79b7d582ff925b6f6e1c9b3"><div class="ttname"><a href="classfrc_1_1_ultrasonic.html#a1cbdb9dfc79b7d582ff925b6f6e1c9b3">frc::Ultrasonic::SetAutomaticMode</a></div><div class="ttdeci">static void SetAutomaticMode(bool enabling)</div><div class="ttdoc">Turn Automatic mode on/off.</div></div>
 <div class="ttc" id="aclassfrc_1_1_ultrasonic_html_a1cf7dbe16212d71d22b8b0158321e0ae"><div class="ttname"><a href="classfrc_1_1_ultrasonic.html#a1cf7dbe16212d71d22b8b0158321e0ae">frc::Ultrasonic::Ultrasonic</a></div><div class="ttdeci">Ultrasonic(std::shared_ptr&lt; DigitalOutput &gt; pingChannel, std::shared_ptr&lt; DigitalInput &gt; echoChannel)</div><div class="ttdoc">Create an instance of an Ultrasonic Sensor from a DigitalInput for the echo channel and a DigitalOutp...</div></div>
+<div class="ttc" id="aclassfrc_1_1_ultrasonic_html_a3473cfd2cdc61f741ffe5e0745607db8"><div class="ttname"><a href="classfrc_1_1_ultrasonic.html#a3473cfd2cdc61f741ffe5e0745607db8">frc::Ultrasonic::~Ultrasonic</a></div><div class="ttdeci">~Ultrasonic() override</div></div>
 <div class="ttc" id="aclassfrc_1_1_ultrasonic_html_a36e253521888583d9089cda0df03b772"><div class="ttname"><a href="classfrc_1_1_ultrasonic.html#a36e253521888583d9089cda0df03b772">frc::Ultrasonic::Ping</a></div><div class="ttdeci">void Ping()</div><div class="ttdoc">Single ping to ultrasonic sensor.</div></div>
 <div class="ttc" id="aclassfrc_1_1_ultrasonic_html_a3f3e7c18aa293f67c237dd4501153e05"><div class="ttname"><a href="classfrc_1_1_ultrasonic.html#a3f3e7c18aa293f67c237dd4501153e05">frc::Ultrasonic::Ultrasonic</a></div><div class="ttdeci">Ultrasonic(int pingChannel, int echoChannel)</div><div class="ttdoc">Create an instance of the Ultrasonic Sensor.</div></div>
+<div class="ttc" id="aclassfrc_1_1_ultrasonic_html_a6ce3eec9198fe8399231800c8584dff8"><div class="ttname"><a href="classfrc_1_1_ultrasonic.html#a6ce3eec9198fe8399231800c8584dff8">frc::Ultrasonic::SetEnabled</a></div><div class="ttdeci">void SetEnabled(bool enable)</div></div>
+<div class="ttc" id="aclassfrc_1_1_ultrasonic_html_a8d2148fb9cc46da032a7d7762655bb94"><div class="ttname"><a href="classfrc_1_1_ultrasonic.html#a8d2148fb9cc46da032a7d7762655bb94">frc::Ultrasonic::GetEchoChannel</a></div><div class="ttdeci">int GetEchoChannel() const</div></div>
 <div class="ttc" id="aclassfrc_1_1_ultrasonic_html_a9a857cae4a36aac2401f03f035a50c7f"><div class="ttname"><a href="classfrc_1_1_ultrasonic.html#a9a857cae4a36aac2401f03f035a50c7f">frc::Ultrasonic::Ultrasonic</a></div><div class="ttdeci">Ultrasonic(DigitalOutput &amp;pingChannel, DigitalInput &amp;echoChannel)</div><div class="ttdoc">Create an instance of an Ultrasonic Sensor from a DigitalInput for the echo channel and a DigitalOutp...</div></div>
+<div class="ttc" id="aclassfrc_1_1_ultrasonic_html_aa81d6876dad5789c5f8695131cf3c0f4"><div class="ttname"><a href="classfrc_1_1_ultrasonic.html#aa81d6876dad5789c5f8695131cf3c0f4">frc::Ultrasonic::operator=</a></div><div class="ttdeci">Ultrasonic &amp; operator=(Ultrasonic &amp;&amp;)=default</div></div>
+<div class="ttc" id="aclassfrc_1_1_ultrasonic_html_aaaf0f92854933c8ac8b8fa5b747c19ef"><div class="ttname"><a href="classfrc_1_1_ultrasonic.html#aaaf0f92854933c8ac8b8fa5b747c19ef">frc::Ultrasonic::IsEnabled</a></div><div class="ttdeci">bool IsEnabled() const</div></div>
 <div class="ttc" id="aclassfrc_1_1_ultrasonic_html_add97ba93c8eb139b7525b7205e6fd8bb"><div class="ttname"><a href="classfrc_1_1_ultrasonic.html#add97ba93c8eb139b7525b7205e6fd8bb">frc::Ultrasonic::GetRange</a></div><div class="ttdeci">units::meter_t GetRange() const</div><div class="ttdoc">Get the range from the ultrasonic sensor.</div></div>
 <div class="ttc" id="aclassfrc_1_1_ultrasonic_html_ae89068be5a36dfd5f80cb39706718497"><div class="ttname"><a href="classfrc_1_1_ultrasonic.html#ae89068be5a36dfd5f80cb39706718497">frc::Ultrasonic::Ultrasonic</a></div><div class="ttdeci">Ultrasonic(DigitalOutput *pingChannel, DigitalInput *echoChannel)</div><div class="ttdoc">Create an instance of an Ultrasonic Sensor from a DigitalInput for the echo channel and a DigitalOutp...</div></div>
 <div class="ttc" id="aclassfrc_1_1_ultrasonic_html_af80f1a81773d6733a51336539fe36d4e"><div class="ttname"><a href="classfrc_1_1_ultrasonic.html#af80f1a81773d6733a51336539fe36d4e">frc::Ultrasonic::IsRangeValid</a></div><div class="ttdeci">bool IsRangeValid() const</div><div class="ttdoc">Check if there is a valid range measurement.</div></div>
 <div class="ttc" id="aclasswpi_1_1_sendable_builder_html"><div class="ttname"><a href="classwpi_1_1_sendable_builder.html">wpi::SendableBuilder</a></div><div class="ttdef"><b>Definition:</b> SendableBuilder.h:18</div></div>
 <div class="ttc" id="aclasswpi_1_1_sendable_helper_html"><div class="ttname"><a href="classwpi_1_1_sendable_helper.html">wpi::SendableHelper</a></div><div class="ttdoc">A helper class for use with objects that add themselves to SendableRegistry.</div><div class="ttdef"><b>Definition:</b> SendableHelper.h:24</div></div>
 <div class="ttc" id="aclasswpi_1_1_sendable_html"><div class="ttname"><a href="classwpi_1_1_sendable.html">wpi::Sendable</a></div><div class="ttdoc">Interface for Sendable objects.</div><div class="ttdef"><b>Definition:</b> Sendable.h:16</div></div>
+<div class="ttc" id="alength_8h_html"><div class="ttname"><a href="length_8h.html">length.h</a></div></div>
+<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> VisionRunner.inc:9</div></div>
+<div class="ttc" id="anamespaceunits_1_1constants_html_acebb59adda640396795adcdc84a78297"><div class="ttname"><a href="namespaceunits_1_1constants.html#acebb59adda640396795adcdc84a78297">units::constants::e</a></div><div class="ttdeci">static constexpr const charge::coulomb_t e(1.6021766208e-19)</div><div class="ttdoc">elementary charge.</div></div>
+<div class="ttc" id="atime_8h_html"><div class="ttname"><a href="time_8h.html">time.h</a></div></div>
+<div class="ttc" id="avelocity_8h_html"><div class="ttname"><a href="velocity_8h.html">velocity.h</a></div></div>
+<div class="ttc" id="awpilibc_2src_2main_2native_2include_2frc_2_counter_8h_html"><div class="ttname"><a href="wpilibc_2src_2main_2native_2include_2frc_2_counter_8h.html">Counter.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><b>Ultrasonic.h</b></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:35 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="_ultrasonic_8h.html">Ultrasonic.h</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:20 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

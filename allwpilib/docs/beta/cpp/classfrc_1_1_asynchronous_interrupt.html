@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('classfrc_1_1_asynchronous_interrupt.ht
 </div><!--header-->
 <div class="contents">
 
-<p>Class for handling asynchronous interrupts.  
+<p>Class for handling asynchronous interrupts using a callback thread.  
  <a href="classfrc_1_1_asynchronous_interrupt.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_asynchronous_interrupt_8h_source.html">frc/AsynchronousInterrupt.h</a>&gt;</code></p>
@@ -115,17 +115,19 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a32816592841e44948d53193804085e46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an Asynchronous Interrupt from a Digital Source.  <a href="classfrc_1_1_asynchronous_interrupt.html#a32816592841e44948d53193804085e46">More...</a><br /></td></tr>
 <tr class="separator:a32816592841e44948d53193804085e46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fba7e6f7f76d51bb60752be8bc4abcc"><td class="memTemplParams" colspan="2">template&lt;typename Callable , typename Arg , typename... Args&gt; </td></tr>
-<tr class="memitem:a9fba7e6f7f76d51bb60752be8bc4abcc"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classfrc_1_1_asynchronous_interrupt.html#a9fba7e6f7f76d51bb60752be8bc4abcc">AsynchronousInterrupt</a> (<a class="el" href="classfrc_1_1_digital_source.html">DigitalSource</a> &amp;source, Callable &amp;&amp;f, Arg &amp;&amp;arg, Args &amp;&amp;... args)</td></tr>
+<tr class="memitem:a9fba7e6f7f76d51bb60752be8bc4abcc"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classfrc_1_1_asynchronous_interrupt.html#a9fba7e6f7f76d51bb60752be8bc4abcc">AsynchronousInterrupt</a> (<a class="el" href="classfrc_1_1_digital_source.html">DigitalSource</a> &amp;source, Callable &amp;&amp;f, Arg &amp;&amp;<a class="el" href="_array_cwise_unary_ops_8h.html#a41ceecca5805bbcbeb0928339a0714da">arg</a>, Args &amp;&amp;... args)</td></tr>
 <tr class="memdesc:a9fba7e6f7f76d51bb60752be8bc4abcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an Asynchronous Interrupt from a Digital Source.  <a href="classfrc_1_1_asynchronous_interrupt.html#a9fba7e6f7f76d51bb60752be8bc4abcc">More...</a><br /></td></tr>
 <tr class="separator:a9fba7e6f7f76d51bb60752be8bc4abcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a903d8cad0fc1338d96e2a3931d4974d3"><td class="memTemplParams" colspan="2">template&lt;typename Callable , typename Arg , typename... Args&gt; </td></tr>
-<tr class="memitem:a903d8cad0fc1338d96e2a3931d4974d3"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classfrc_1_1_asynchronous_interrupt.html#a903d8cad0fc1338d96e2a3931d4974d3">AsynchronousInterrupt</a> (<a class="el" href="classfrc_1_1_digital_source.html">DigitalSource</a> *source, Callable &amp;&amp;f, Arg &amp;&amp;arg, Args &amp;&amp;... args)</td></tr>
+<tr class="memitem:a903d8cad0fc1338d96e2a3931d4974d3"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classfrc_1_1_asynchronous_interrupt.html#a903d8cad0fc1338d96e2a3931d4974d3">AsynchronousInterrupt</a> (<a class="el" href="classfrc_1_1_digital_source.html">DigitalSource</a> *source, Callable &amp;&amp;f, Arg &amp;&amp;<a class="el" href="_array_cwise_unary_ops_8h.html#a41ceecca5805bbcbeb0928339a0714da">arg</a>, Args &amp;&amp;... args)</td></tr>
 <tr class="memdesc:a903d8cad0fc1338d96e2a3931d4974d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an Asynchronous Interrupt from a Digital Source.  <a href="classfrc_1_1_asynchronous_interrupt.html#a903d8cad0fc1338d96e2a3931d4974d3">More...</a><br /></td></tr>
 <tr class="separator:a903d8cad0fc1338d96e2a3931d4974d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2c37f854947f414a2bb5a9688ad9233"><td class="memTemplParams" colspan="2">template&lt;typename Callable , typename Arg , typename... Args&gt; </td></tr>
-<tr class="memitem:ae2c37f854947f414a2bb5a9688ad9233"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classfrc_1_1_asynchronous_interrupt.html#ae2c37f854947f414a2bb5a9688ad9233">AsynchronousInterrupt</a> (std::shared_ptr&lt; <a class="el" href="classfrc_1_1_digital_source.html">DigitalSource</a> &gt; source, Callable &amp;&amp;f, Arg &amp;&amp;arg, Args &amp;&amp;... args)</td></tr>
+<tr class="memitem:ae2c37f854947f414a2bb5a9688ad9233"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classfrc_1_1_asynchronous_interrupt.html#ae2c37f854947f414a2bb5a9688ad9233">AsynchronousInterrupt</a> (std::shared_ptr&lt; <a class="el" href="classfrc_1_1_digital_source.html">DigitalSource</a> &gt; source, Callable &amp;&amp;f, Arg &amp;&amp;<a class="el" href="_array_cwise_unary_ops_8h.html#a41ceecca5805bbcbeb0928339a0714da">arg</a>, Args &amp;&amp;... args)</td></tr>
 <tr class="memdesc:ae2c37f854947f414a2bb5a9688ad9233"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an Asynchronous Interrupt from a Digital Source.  <a href="classfrc_1_1_asynchronous_interrupt.html#ae2c37f854947f414a2bb5a9688ad9233">More...</a><br /></td></tr>
 <tr class="separator:ae2c37f854947f414a2bb5a9688ad9233"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25e6e36fe7af95204d0694d2912ff677"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_asynchronous_interrupt.html#a25e6e36fe7af95204d0694d2912ff677">~AsynchronousInterrupt</a> ()</td></tr>
+<tr class="separator:a25e6e36fe7af95204d0694d2912ff677"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac103d447e8628cc467f828b6c793389a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_asynchronous_interrupt.html#ac103d447e8628cc467f828b6c793389a">Enable</a> ()</td></tr>
 <tr class="memdesc:ac103d447e8628cc467f828b6c793389a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables interrupt callbacks.  <a href="classfrc_1_1_asynchronous_interrupt.html#ac103d447e8628cc467f828b6c793389a">More...</a><br /></td></tr>
 <tr class="separator:ac103d447e8628cc467f828b6c793389a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,10 +145,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae4be083edecc23fb8deae8f4fffbcc66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Class for handling asynchronous interrupts. </p>
+<div class="textblock"><p >Class for handling asynchronous interrupts using a callback thread. </p>
 <p >By default, interrupts will occur on rising edge. Callbacks are disabled by default, and <a class="el" href="classfrc_1_1_asynchronous_interrupt.html#ac103d447e8628cc467f828b6c793389a" title="Enables interrupt callbacks.">Enable()</a> must be called before they will occur.</p>
 <p >Both rising and falling edges can be indicated in one callback if both a rising and falling edge occurred since the previous callback.</p>
-<p >Synchronous interrupts are handled by the <a class="el" href="classfrc_1_1_synchronous_interrupt.html" title="Class for handling ssynchronous interrupts.">SynchronousInterrupt</a> class. </p>
+<p >Synchronous (blocking) interrupts are handled by the <a class="el" href="classfrc_1_1_synchronous_interrupt.html" title="Class for handling synchronous (blocking) interrupts.">SynchronousInterrupt</a> class. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1ce5704519ae1f20555718b1541a3f2f" name="a1ce5704519ae1f20555718b1541a3f2f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1ce5704519ae1f20555718b1541a3f2f">&#9670;&nbsp;</a></span>AsynchronousInterrupt() <span class="overload">[1/6]</span></h2>
@@ -176,7 +178,14 @@ Public Member Functions</h2></td></tr>
 
 <p>Construct an Asynchronous Interrupt from a Digital Source. </p>
 <p >At construction, the interrupt will trigger on the rising edge.</p>
-<p >The first bool in the callback is rising, the second is falling. </p>
+<p >The first bool in the callback indicates the rising edge triggered the interrupt, the second bool is falling edge.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>the <a class="el" href="classfrc_1_1_digital_source.html" title="DigitalSource Interface.">DigitalSource</a> the interrupts are triggered from </td></tr>
+    <tr><td class="paramname">callback</td><td>the callback function to call when the interrupt is triggered </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -208,7 +217,14 @@ Public Member Functions</h2></td></tr>
 
 <p>Construct an Asynchronous Interrupt from a Digital Source. </p>
 <p >At construction, the interrupt will trigger on the rising edge.</p>
-<p >The first bool in the callback is rising, the 2nd is falling. </p>
+<p >The first bool in the callback indicates the rising edge triggered the interrupt, the second bool is falling edge.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>the <a class="el" href="classfrc_1_1_digital_source.html" title="DigitalSource Interface.">DigitalSource</a> the interrupts are triggered from </td></tr>
+    <tr><td class="paramname">callback</td><td>the callback function to call when the interrupt is triggered </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -240,7 +256,14 @@ Public Member Functions</h2></td></tr>
 
 <p>Construct an Asynchronous Interrupt from a Digital Source. </p>
 <p >At construction, the interrupt will trigger on the rising edge.</p>
-<p >The first bool in the callback is rising, the 2nd is falling. </p>
+<p >The first bool in the callback indicates the rising edge triggered the interrupt, the second bool is falling edge.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>the <a class="el" href="classfrc_1_1_digital_source.html" title="DigitalSource Interface.">DigitalSource</a> the interrupts are triggered from </td></tr>
+    <tr><td class="paramname">callback</td><td>the callback function to call when the interrupt is triggered </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -294,7 +317,15 @@ template&lt;typename Callable , typename Arg , typename... Args&gt; </div>
 
 <p>Construct an Asynchronous Interrupt from a Digital Source. </p>
 <p >At construction, the interrupt will trigger on the rising edge.</p>
-<p >The first bool in the callback is rising, the 2nd is falling. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>the <a class="el" href="classfrc_1_1_digital_source.html" title="DigitalSource Interface.">DigitalSource</a> the interrupts are triggered from </td></tr>
+    <tr><td class="paramname">f</td><td>the callback function to call when the interrupt is triggered </td></tr>
+    <tr><td class="paramname">arg</td><td>the first argument, interrupt was triggered on rising edge </td></tr>
+    <tr><td class="paramname">args</td><td>the remaing arguments, interrupt was triggered on falling edge </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -348,7 +379,15 @@ template&lt;typename Callable , typename Arg , typename... Args&gt; </div>
 
 <p>Construct an Asynchronous Interrupt from a Digital Source. </p>
 <p >At construction, the interrupt will trigger on the rising edge.</p>
-<p >The first bool in the callback is rising, the 2nd is falling. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>the <a class="el" href="classfrc_1_1_digital_source.html" title="DigitalSource Interface.">DigitalSource</a> the interrupts are triggered from </td></tr>
+    <tr><td class="paramname">f</td><td>the callback function to call when the interrupt is triggered </td></tr>
+    <tr><td class="paramname">arg</td><td>the first argument, interrupt was triggered on rising edge </td></tr>
+    <tr><td class="paramname">args</td><td>the remaing arguments, interrupt was triggered on falling edge </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -402,7 +441,32 @@ template&lt;typename Callable , typename Arg , typename... Args&gt; </div>
 
 <p>Construct an Asynchronous Interrupt from a Digital Source. </p>
 <p >At construction, the interrupt will trigger on the rising edge.</p>
-<p >The first bool in the callback is rising, the 2nd is falling. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>the <a class="el" href="classfrc_1_1_digital_source.html" title="DigitalSource Interface.">DigitalSource</a> the interrupts are triggered from </td></tr>
+    <tr><td class="paramname">f</td><td>the callback function to call when the interrupt is triggered </td></tr>
+    <tr><td class="paramname">arg</td><td>the first argument, interrupt was triggered on rising edge </td></tr>
+    <tr><td class="paramname">args</td><td>the remaing arguments, interrupt was triggered on falling edge </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a25e6e36fe7af95204d0694d2912ff677" name="a25e6e36fe7af95204d0694d2912ff677"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25e6e36fe7af95204d0694d2912ff677">&#9670;&nbsp;</a></span>~AsynchronousInterrupt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">frc::AsynchronousInterrupt::~AsynchronousInterrupt </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -464,7 +528,7 @@ template&lt;typename Callable , typename Arg , typename... Args&gt; </div>
 
 <p>Get the timestamp of the last falling edge. </p>
 <p >This function does not require the interrupt to be enabled to work.</p>
-<p >This only works if falling edge was configured using SetInterruptEdges. </p><dl class="section return"><dt>Returns</dt><dd>the timestamp in seconds relative to getFPGATime </dd></dl>
+<p >This only works if falling edge was configured using SetInterruptEdges. </p><dl class="section return"><dt>Returns</dt><dd>the timestamp in seconds relative to GetFPGATime </dd></dl>
 
 </div>
 </div>
@@ -485,7 +549,7 @@ template&lt;typename Callable , typename Arg , typename... Args&gt; </div>
 
 <p>Get the timestamp of the last rising edge. </p>
 <p >This function does not require the interrupt to be enabled to work.</p>
-<p >This only works if rising edge was configured using SetInterruptEdges. </p><dl class="section return"><dt>Returns</dt><dd>the timestamp in seconds relative to getFPGATime </dd></dl>
+<p >This only works if rising edge was configured using SetInterruptEdges. </p><dl class="section return"><dt>Returns</dt><dd>the timestamp in seconds relative to GetFPGATime </dd></dl>
 
 </div>
 </div>
@@ -534,8 +598,8 @@ template&lt;typename Callable , typename Arg , typename... Args&gt; </div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1_asynchronous_interrupt.html">AsynchronousInterrupt</a></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:50 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_asynchronous_interrupt.html">AsynchronousInterrupt</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:37 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

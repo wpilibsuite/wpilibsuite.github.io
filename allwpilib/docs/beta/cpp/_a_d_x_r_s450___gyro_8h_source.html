@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('_a_d_x_r_s450___gyro_8h_source.html','
   <div class="headertitle"><div class="title">ADXRS450_Gyro.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
+<a href="_a_d_x_r_s450___gyro_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Open Source Software; you can modify and/or share it under the terms of</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// the WPILib BSD license file in the root directory of this project.</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
@@ -102,14 +102,14 @@ $(document).ready(function(){initNavTree('_a_d_x_r_s450___gyro_8h_source.html','
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;hal/SimDevice.h&gt;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;wpi/sendable/Sendable.h&gt;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;wpi/sendable/SendableHelper.h&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;<a class="code" href="_sim_device_8h.html">hal/SimDevice.h</a>&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;<a class="code" href="_sendable_8h.html">wpi/sendable/Sendable.h</a>&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;<a class="code" href="_sendable_helper_8h.html">wpi/sendable/SendableHelper.h</a>&gt;</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;frc/SPI.h&quot;</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;frc/interfaces/Gyro.h&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="wpilibc_2src_2main_2native_2include_2frc_2_s_p_i_8h.html">frc/SPI.h</a>&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="_gyro_8h.html">frc/interfaces/Gyro.h</a>&quot;</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">namespace </span>frc {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacefrc.html">frc</a> {</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"></span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">/**</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> * Use a rate gyro to return the robots heading relative to a starting position.</span></div>
@@ -138,12 +138,12 @@ $(document).ready(function(){initNavTree('_a_d_x_r_s450___gyro_8h_source.html','
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">   *</span></div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">   * @param port The SPI port the gyro is attached to.</span></div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classfrc_1_1_a_d_x_r_s450___gyro.html#a6389885a2e8e4cf7f2df9593731117a3">   45</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classfrc_1_1_a_d_x_r_s450___gyro.html#a6389885a2e8e4cf7f2df9593731117a3">ADXRS450_Gyro</a>(SPI::Port port);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classfrc_1_1_a_d_x_r_s450___gyro.html#a6389885a2e8e4cf7f2df9593731117a3">   45</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classfrc_1_1_a_d_x_r_s450___gyro.html#a6389885a2e8e4cf7f2df9593731117a3">ADXRS450_Gyro</a>(<a class="code hl_enumeration" href="classfrc_1_1_s_p_i.html#ad5a4b71c1c453570e8b23d489e15fc03">SPI::Port</a> port);</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <a class="code hl_class" href="classfrc_1_1_a_d_x_r_s450___gyro.html">~ADXRS450_Gyro</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="classfrc_1_1_a_d_x_r_s450___gyro.html#a72e2eb9eb921d3712af1a6ff1d1a30ca">   47</a></span>  <a class="code hl_function" href="classfrc_1_1_a_d_x_r_s450___gyro.html#a72e2eb9eb921d3712af1a6ff1d1a30ca">~ADXRS450_Gyro</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <a class="code hl_function" href="classfrc_1_1_a_d_x_r_s450___gyro.html#af475580220a2e02ebdd3c02a4c43e774">ADXRS450_Gyro</a>(<a class="code hl_class" href="classfrc_1_1_a_d_x_r_s450___gyro.html">ADXRS450_Gyro</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <a class="code hl_class" href="classfrc_1_1_a_d_x_r_s450___gyro.html">ADXRS450_Gyro</a>&amp; operator=(<a class="code hl_class" href="classfrc_1_1_a_d_x_r_s450___gyro.html">ADXRS450_Gyro</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classfrc_1_1_a_d_x_r_s450___gyro.html#afecdc9df87ead925bc99e0b3e0493a40">   49</a></span>  <a class="code hl_function" href="classfrc_1_1_a_d_x_r_s450___gyro.html#afecdc9df87ead925bc99e0b3e0493a40">ADXRS450_Gyro</a>(<a class="code hl_class" href="classfrc_1_1_a_d_x_r_s450___gyro.html">ADXRS450_Gyro</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="classfrc_1_1_a_d_x_r_s450___gyro.html#a4a667e5409b79e209e58528668e4f602">   50</a></span>  <a class="code hl_class" href="classfrc_1_1_a_d_x_r_s450___gyro.html">ADXRS450_Gyro</a>&amp; <a class="code hl_function" href="classfrc_1_1_a_d_x_r_s450___gyro.html#a4a667e5409b79e209e58528668e4f602">operator=</a>(<a class="code hl_class" href="classfrc_1_1_a_d_x_r_s450___gyro.html">ADXRS450_Gyro</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment"></span> </div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">   * Return the actual angle in degrees that the robot is currently facing.</span></div>
@@ -196,7 +196,7 @@ $(document).ready(function(){initNavTree('_a_d_x_r_s450___gyro_8h_source.html','
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="classfrc_1_1_a_d_x_r_s450___gyro.html#a23e4d724a4b21b2446b685689b1ab94d">  101</a></span>  <span class="keywordtype">int</span> <a class="code hl_function" href="classfrc_1_1_a_d_x_r_s450___gyro.html#a23e4d724a4b21b2446b685689b1ab94d">GetPort</a>() const;</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="classfrc_1_1_a_d_x_r_s450___gyro.html#a5edf45bd453caa9ea69526c85e79163f">  103</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_a_d_x_r_s450___gyro.html#a5edf45bd453caa9ea69526c85e79163f">InitSendable</a>(wpi::SendableBuilder&amp; builder) override;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="classfrc_1_1_a_d_x_r_s450___gyro.html#a5edf45bd453caa9ea69526c85e79163f">  103</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_a_d_x_r_s450___gyro.html#a5edf45bd453caa9ea69526c85e79163f">InitSendable</a>(<a class="code hl_namespace" href="namespacewpi.html">wpi</a>::SendableBuilder&amp; builder) override;</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> private:</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  <a class="code hl_class" href="classfrc_1_1_s_p_i.html">SPI</a> m_spi;</div>
@@ -206,31 +206,43 @@ $(document).ready(function(){initNavTree('_a_d_x_r_s450___gyro_8h_source.html','
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  <a class="code hl_namespace" href="namespacehal.html">hal</a>::SimDouble m_simAngle;</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>  <a class="code hl_namespace" href="namespacehal.html">hal</a>::SimDouble m_simRate;</div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  uint16_t ReadRegister(<span class="keywordtype">int</span> reg);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  <a class="code hl_variable" href="namespace_eigen_1_1numext.html#a8b2dc01f744a47c608f4eddb4ca41e5e">uint16_t</a> ReadRegister(<span class="keywordtype">int</span> reg);</div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>};</div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>}  <span class="comment">// namespace frc</span></div>
+<div class="ttc" id="a_gyro_8h_html"><div class="ttname"><a href="_gyro_8h.html">Gyro.h</a></div></div>
+<div class="ttc" id="a_sendable_8h_html"><div class="ttname"><a href="_sendable_8h.html">Sendable.h</a></div></div>
+<div class="ttc" id="a_sendable_helper_8h_html"><div class="ttname"><a href="_sendable_helper_8h.html">SendableHelper.h</a></div></div>
+<div class="ttc" id="a_sim_device_8h_html"><div class="ttname"><a href="_sim_device_8h.html">SimDevice.h</a></div></div>
 <div class="ttc" id="aclassfrc_1_1_a_d_x_r_s450___gyro_html"><div class="ttname"><a href="classfrc_1_1_a_d_x_r_s450___gyro.html">frc::ADXRS450_Gyro</a></div><div class="ttdoc">Use a rate gyro to return the robots heading relative to a starting position.</div><div class="ttdef"><b>Definition:</b> ADXRS450_Gyro.h:33</div></div>
 <div class="ttc" id="aclassfrc_1_1_a_d_x_r_s450___gyro_html_a23e4d724a4b21b2446b685689b1ab94d"><div class="ttname"><a href="classfrc_1_1_a_d_x_r_s450___gyro.html#a23e4d724a4b21b2446b685689b1ab94d">frc::ADXRS450_Gyro::GetPort</a></div><div class="ttdeci">int GetPort() const</div><div class="ttdoc">Get the SPI port number.</div></div>
 <div class="ttc" id="aclassfrc_1_1_a_d_x_r_s450___gyro_html_a294f39dd58e1728d27f0570640f4ff2f"><div class="ttname"><a href="classfrc_1_1_a_d_x_r_s450___gyro.html#a294f39dd58e1728d27f0570640f4ff2f">frc::ADXRS450_Gyro::GetRate</a></div><div class="ttdeci">double GetRate() const override</div><div class="ttdoc">Return the rate of rotation of the gyro.</div></div>
+<div class="ttc" id="aclassfrc_1_1_a_d_x_r_s450___gyro_html_a4a667e5409b79e209e58528668e4f602"><div class="ttname"><a href="classfrc_1_1_a_d_x_r_s450___gyro.html#a4a667e5409b79e209e58528668e4f602">frc::ADXRS450_Gyro::operator=</a></div><div class="ttdeci">ADXRS450_Gyro &amp; operator=(ADXRS450_Gyro &amp;&amp;)=default</div></div>
 <div class="ttc" id="aclassfrc_1_1_a_d_x_r_s450___gyro_html_a4e2a2b0fcd3b03a479e05eb8f22deaa1"><div class="ttname"><a href="classfrc_1_1_a_d_x_r_s450___gyro.html#a4e2a2b0fcd3b03a479e05eb8f22deaa1">frc::ADXRS450_Gyro::Calibrate</a></div><div class="ttdeci">void Calibrate() final</div><div class="ttdoc">Initialize the gyro.</div></div>
 <div class="ttc" id="aclassfrc_1_1_a_d_x_r_s450___gyro_html_a548505e23354192ac81ffed5d21c9981"><div class="ttname"><a href="classfrc_1_1_a_d_x_r_s450___gyro.html#a548505e23354192ac81ffed5d21c9981">frc::ADXRS450_Gyro::Reset</a></div><div class="ttdeci">void Reset() override</div><div class="ttdoc">Reset the gyro.</div></div>
 <div class="ttc" id="aclassfrc_1_1_a_d_x_r_s450___gyro_html_a5edf45bd453caa9ea69526c85e79163f"><div class="ttname"><a href="classfrc_1_1_a_d_x_r_s450___gyro.html#a5edf45bd453caa9ea69526c85e79163f">frc::ADXRS450_Gyro::InitSendable</a></div><div class="ttdeci">void InitSendable(wpi::SendableBuilder &amp;builder) override</div><div class="ttdoc">Initializes this Sendable object.</div></div>
 <div class="ttc" id="aclassfrc_1_1_a_d_x_r_s450___gyro_html_a6389885a2e8e4cf7f2df9593731117a3"><div class="ttname"><a href="classfrc_1_1_a_d_x_r_s450___gyro.html#a6389885a2e8e4cf7f2df9593731117a3">frc::ADXRS450_Gyro::ADXRS450_Gyro</a></div><div class="ttdeci">ADXRS450_Gyro(SPI::Port port)</div><div class="ttdoc">Gyro constructor on the specified SPI port.</div></div>
+<div class="ttc" id="aclassfrc_1_1_a_d_x_r_s450___gyro_html_a72e2eb9eb921d3712af1a6ff1d1a30ca"><div class="ttname"><a href="classfrc_1_1_a_d_x_r_s450___gyro.html#a72e2eb9eb921d3712af1a6ff1d1a30ca">frc::ADXRS450_Gyro::~ADXRS450_Gyro</a></div><div class="ttdeci">~ADXRS450_Gyro() override=default</div></div>
 <div class="ttc" id="aclassfrc_1_1_a_d_x_r_s450___gyro_html_aa556e13cbce13edd8989e07d75d8885d"><div class="ttname"><a href="classfrc_1_1_a_d_x_r_s450___gyro.html#aa556e13cbce13edd8989e07d75d8885d">frc::ADXRS450_Gyro::GetAngle</a></div><div class="ttdeci">double GetAngle() const override</div><div class="ttdoc">Return the actual angle in degrees that the robot is currently facing.</div></div>
 <div class="ttc" id="aclassfrc_1_1_a_d_x_r_s450___gyro_html_af475580220a2e02ebdd3c02a4c43e774"><div class="ttname"><a href="classfrc_1_1_a_d_x_r_s450___gyro.html#af475580220a2e02ebdd3c02a4c43e774">frc::ADXRS450_Gyro::ADXRS450_Gyro</a></div><div class="ttdeci">ADXRS450_Gyro()</div><div class="ttdoc">Gyro constructor on onboard CS0.</div></div>
+<div class="ttc" id="aclassfrc_1_1_a_d_x_r_s450___gyro_html_afecdc9df87ead925bc99e0b3e0493a40"><div class="ttname"><a href="classfrc_1_1_a_d_x_r_s450___gyro.html#afecdc9df87ead925bc99e0b3e0493a40">frc::ADXRS450_Gyro::ADXRS450_Gyro</a></div><div class="ttdeci">ADXRS450_Gyro(ADXRS450_Gyro &amp;&amp;)=default</div></div>
 <div class="ttc" id="aclassfrc_1_1_gyro_html"><div class="ttname"><a href="classfrc_1_1_gyro.html">frc::Gyro</a></div><div class="ttdoc">Interface for yaw rate gyros.</div><div class="ttdef"><b>Definition:</b> Gyro.h:16</div></div>
 <div class="ttc" id="aclassfrc_1_1_s_p_i_html"><div class="ttname"><a href="classfrc_1_1_s_p_i.html">frc::SPI</a></div><div class="ttdoc">SPI bus interface class.</div><div class="ttdef"><b>Definition:</b> SPI.h:27</div></div>
+<div class="ttc" id="aclassfrc_1_1_s_p_i_html_ad5a4b71c1c453570e8b23d489e15fc03"><div class="ttname"><a href="classfrc_1_1_s_p_i.html#ad5a4b71c1c453570e8b23d489e15fc03">frc::SPI::Port</a></div><div class="ttdeci">Port</div><div class="ttdef"><b>Definition:</b> SPI.h:29</div></div>
 <div class="ttc" id="aclasswpi_1_1_sendable_helper_html"><div class="ttname"><a href="classwpi_1_1_sendable_helper.html">wpi::SendableHelper</a></div><div class="ttdoc">A helper class for use with objects that add themselves to SendableRegistry.</div><div class="ttdef"><b>Definition:</b> SendableHelper.h:24</div></div>
 <div class="ttc" id="aclasswpi_1_1_sendable_html"><div class="ttname"><a href="classwpi_1_1_sendable.html">wpi::Sendable</a></div><div class="ttdoc">Interface for Sendable objects.</div><div class="ttdef"><b>Definition:</b> Sendable.h:16</div></div>
-<div class="ttc" id="anamespacehal_html"><div class="ttname"><a href="namespacehal.html">hal</a></div><div class="ttdoc">WPILib Hardware Abstraction Layer (HAL) namespace.</div><div class="ttdef"><b>Definition:</b> ChipObject.h:41</div></div>
+<div class="ttc" id="anamespace_eigen_1_1numext_html_a8b2dc01f744a47c608f4eddb4ca41e5e"><div class="ttname"><a href="namespace_eigen_1_1numext.html#a8b2dc01f744a47c608f4eddb4ca41e5e">Eigen::numext::uint16_t</a></div><div class="ttdeci">typedef::uint16_t uint16_t</div><div class="ttdef"><b>Definition:</b> Meta.h:54</div></div>
+<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> VisionRunner.inc:9</div></div>
+<div class="ttc" id="anamespacehal_html"><div class="ttname"><a href="namespacehal.html">hal</a></div><div class="ttdoc">WPILib Hardware Abstraction Layer (HAL) namespace.</div><div class="ttdef"><b>Definition:</b> SimDataValue.h:16</div></div>
+<div class="ttc" id="anamespacewpi_html"><div class="ttname"><a href="namespacewpi.html">wpi</a></div><div class="ttdef"><b>Definition:</b> PortForwarder.h:13</div></div>
+<div class="ttc" id="awpilibc_2src_2main_2native_2include_2frc_2_s_p_i_8h_html"><div class="ttname"><a href="wpilibc_2src_2main_2native_2include_2frc_2_s_p_i_8h.html">SPI.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><b>ADXRS450_Gyro.h</b></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:34 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="_a_d_x_r_s450___gyro_8h.html">ADXRS450_Gyro.h</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:20 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -106,21 +106,73 @@ $(document).ready(function(){initNavTree('classformat__arg__store.html',''); ini
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a191fd70a63bba0bbc4b0735c1d25a39c"><td class="memItemLeft" align="right" valign="top"><a id="a191fd70a63bba0bbc4b0735c1d25a39c" name="a191fd70a63bba0bbc4b0735c1d25a39c"></a>
-FMT_CONSTEXPR FMT_INLINE&#160;</td><td class="memItemRight" valign="bottom"><b>format_arg_store</b> (const Args &amp;... args)</td></tr>
+<tr class="memitem:a191fd70a63bba0bbc4b0735c1d25a39c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classformat__arg__store.html#a191fd70a63bba0bbc4b0735c1d25a39c">format_arg_store</a> (const Args &amp;... args)</td></tr>
 <tr class="separator:a191fd70a63bba0bbc4b0735c1d25a39c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:ab8e9e33cc7b78829001a86ef6110ebb6"><td class="memItemLeft" align="right" valign="top"><a id="ab8e9e33cc7b78829001a86ef6110ebb6" name="ab8e9e33cc7b78829001a86ef6110ebb6"></a>
-class&#160;</td><td class="memItemRight" valign="bottom"><b>basic_format_args&lt; Context &gt;</b></td></tr>
+<tr class="memitem:ab8e9e33cc7b78829001a86ef6110ebb6"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classformat__arg__store.html#ab8e9e33cc7b78829001a86ef6110ebb6">basic_format_args&lt; Context &gt;</a></td></tr>
 <tr class="separator:ab8e9e33cc7b78829001a86ef6110ebb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename Context, typename... Args&gt;<br />
 class format_arg_store&lt; Context, Args &gt;</div><p >\rst An array of references to arguments. </p>
-<p >It can be implicitly converted into <code>~fmt<a class="el" href="classbasic__format__args.html" title="\rst A view of a collection of formatting arguments.">basic_format_args</a></code> for passing into type-erased formatting functions such as <code>~fmt::vformat</code>. \endrst </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+<p >It can be implicitly converted into <code>~fmt<a class="el" href="classbasic__format__args.html" title="\rst A view of a collection of formatting arguments.">basic_format_args</a></code> for passing into type-erased formatting functions such as <code>~fmt<a class="el" href="xchar_8h.html#a240b345af98fec48e13a5e2bc4e9e167">vformat</a></code>. \endrst </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a191fd70a63bba0bbc4b0735c1d25a39c" name="a191fd70a63bba0bbc4b0735c1d25a39c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a191fd70a63bba0bbc4b0735c1d25a39c">&#9670;&nbsp;</a></span>format_arg_store()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Context , typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> <a class="el" href="core_8h.html#aba4c375a41fe80858992762b3bc5c75e">FMT_INLINE</a> <a class="el" href="classformat__arg__store.html">format_arg_store</a>&lt; Context, Args &gt;::<a class="el" href="classformat__arg__store.html">format_arg_store</a> </td>
+          <td>(</td>
+          <td class="paramtype">const Args &amp;...&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="ab8e9e33cc7b78829001a86ef6110ebb6" name="ab8e9e33cc7b78829001a86ef6110ebb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8e9e33cc7b78829001a86ef6110ebb6">&#9670;&nbsp;</a></span>basic_format_args&lt; Context &gt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Context , typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class <a class="el" href="classbasic__format__args.html">basic_format_args</a>&lt; Context &gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>/home/runner/work/allwpilib/allwpilib/wpiutil/src/main/native/fmtlib/include/fmt/<a class="el" href="core_8h_source.html">core.h</a></li>
 </ul>
 </div><!-- contents -->
@@ -129,7 +181,7 @@ class format_arg_store&lt; Context, Args &gt;</div><p >\rst An array of referenc
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classformat__arg__store.html">format_arg_store</a></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:44 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:32 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

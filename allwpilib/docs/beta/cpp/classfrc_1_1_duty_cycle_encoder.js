@@ -7,6 +7,8 @@ var classfrc_1_1_duty_cycle_encoder =
     [ "DutyCycleEncoder", "classfrc_1_1_duty_cycle_encoder.html#a510264a3bb1c89a93c733e623b6082f8", null ],
     [ "DutyCycleEncoder", "classfrc_1_1_duty_cycle_encoder.html#a5a4011f1ec7e2fc4e2b25e2eea0061b9", null ],
     [ "DutyCycleEncoder", "classfrc_1_1_duty_cycle_encoder.html#a033273e6b99813f6109674680a229cfd", null ],
+    [ "~DutyCycleEncoder", "classfrc_1_1_duty_cycle_encoder.html#a7a87ce134f93c339629684fe3f84ad90", null ],
+    [ "DutyCycleEncoder", "classfrc_1_1_duty_cycle_encoder.html#af3b87f633d1fc2ab81b597c629e9df0b", null ],
     [ "Get", "classfrc_1_1_duty_cycle_encoder.html#aa902217541586c9305c55a15ae169b8c", null ],
     [ "GetDistance", "classfrc_1_1_duty_cycle_encoder.html#a245498d3e1770a72137bd65a784868ab", null ],
     [ "GetDistancePerRotation", "classfrc_1_1_duty_cycle_encoder.html#a66c33804bb43a906ea9ae65fccb4e752", null ],
@@ -15,6 +17,7 @@ var classfrc_1_1_duty_cycle_encoder =
     [ "GetSourceChannel", "classfrc_1_1_duty_cycle_encoder.html#a82ff91f628934d5a849f51302fdd18e6", null ],
     [ "InitSendable", "classfrc_1_1_duty_cycle_encoder.html#aa0e1961e47a8f19f5166a7f32fa565d2", null ],
     [ "IsConnected", "classfrc_1_1_duty_cycle_encoder.html#a3b613a97453957b3c63b6415e95fdc69", null ],
+    [ "operator=", "classfrc_1_1_duty_cycle_encoder.html#ab26c9d36eae47cc86860ff9874c9c19f", null ],
     [ "Reset", "classfrc_1_1_duty_cycle_encoder.html#ac749c7d3591e4a79f044d7763cf9fd72", null ],
     [ "SetConnectedFrequencyThreshold", "classfrc_1_1_duty_cycle_encoder.html#aeb80ad8d4a22b2aed01700b52e537f1d", null ],
     [ "SetDistancePerRotation", "classfrc_1_1_duty_cycle_encoder.html#a897dbd042c23299243fed139745178ae", null ]

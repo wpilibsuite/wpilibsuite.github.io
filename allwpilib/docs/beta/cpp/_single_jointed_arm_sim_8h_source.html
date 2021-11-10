@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('_single_jointed_arm_sim_8h_source.html
   <div class="headertitle"><div class="title">SingleJointedArmSim.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
+<a href="_single_jointed_arm_sim_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Open Source Software; you can modify and/or share it under the terms of</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// the WPILib BSD license file in the root directory of this project.</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
@@ -102,15 +102,15 @@ $(document).ready(function(){initNavTree('_single_jointed_arm_sim_8h_source.html
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;array&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;units/angle.h&gt;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;units/length.h&gt;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;units/mass.h&gt;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;units/moment_of_inertia.h&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;<a class="code" href="angle_8h.html">units/angle.h</a>&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;<a class="code" href="length_8h.html">units/length.h</a>&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;<a class="code" href="mass_8h.html">units/mass.h</a>&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;<a class="code" href="moment__of__inertia_8h.html">units/moment_of_inertia.h</a>&gt;</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;frc/simulation/LinearSystemSim.h&quot;</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;frc/system/plant/DCMotor.h&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="_linear_system_sim_8h.html">frc/simulation/LinearSystemSim.h</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="_d_c_motor_8h.html">frc/system/plant/DCMotor.h</a>&quot;</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">namespace </span>frc::sim {<span class="comment"></span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacefrc_1_1sim.html">frc::sim</a> {<span class="comment"></span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">/**</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> * Represents a simulated arm mechanism.</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> */</span></div>
@@ -252,8 +252,11 @@ $(document).ready(function(){initNavTree('_single_jointed_arm_sim_8h_source.html
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>  <span class="keywordtype">bool</span> m_simulateGravity;</div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>};</div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>}  <span class="comment">// namespace frc::sim</span></div>
+<div class="ttc" id="a_d_c_motor_8h_html"><div class="ttname"><a href="_d_c_motor_8h.html">DCMotor.h</a></div></div>
+<div class="ttc" id="a_linear_system_sim_8h_html"><div class="ttname"><a href="_linear_system_sim_8h.html">LinearSystemSim.h</a></div></div>
+<div class="ttc" id="aangle_8h_html"><div class="ttname"><a href="angle_8h.html">angle.h</a></div></div>
 <div class="ttc" id="aclassfrc_1_1_d_c_motor_html"><div class="ttname"><a href="classfrc_1_1_d_c_motor.html">frc::DCMotor</a></div><div class="ttdoc">Holds the constants for a DC motor.</div><div class="ttdef"><b>Definition:</b> DCMotor.h:20</div></div>
-<div class="ttc" id="aclassfrc_1_1_linear_system_html"><div class="ttname"><a href="classfrc_1_1_linear_system.html">frc::LinearSystem</a></div><div class="ttdoc">A plant defined using state-space notation.</div><div class="ttdef"><b>Definition:</b> LinearSystem.h:26</div></div>
+<div class="ttc" id="aclassfrc_1_1_linear_system_html"><div class="ttname"><a href="classfrc_1_1_linear_system.html">frc::LinearSystem</a></div><div class="ttdoc">A plant defined using state-space notation.</div><div class="ttdef"><b>Definition:</b> LinearSystem.h:31</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1_linear_system_sim_html"><div class="ttname"><a href="classfrc_1_1sim_1_1_linear_system_sim.html">frc::sim::LinearSystemSim</a></div><div class="ttdoc">This class helps simulate linear systems.</div><div class="ttdef"><b>Definition:</b> LinearSystemSim.h:31</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1_single_jointed_arm_sim_html"><div class="ttname"><a href="classfrc_1_1sim_1_1_single_jointed_arm_sim.html">frc::sim::SingleJointedArmSim</a></div><div class="ttdoc">Represents a simulated arm mechanism.</div><div class="ttdef"><b>Definition:</b> SingleJointedArmSim.h:21</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1_single_jointed_arm_sim_html_a0a809cf9543fc9c601df912cdfd2a13d"><div class="ttname"><a href="classfrc_1_1sim_1_1_single_jointed_arm_sim.html#a0a809cf9543fc9c601df912cdfd2a13d">frc::sim::SingleJointedArmSim::WouldHitLowerLimit</a></div><div class="ttdeci">bool WouldHitLowerLimit(units::radian_t armAngle) const</div><div class="ttdoc">Returns whether the arm would hit the lower limit.</div></div>
@@ -268,13 +271,17 @@ $(document).ready(function(){initNavTree('_single_jointed_arm_sim_8h_source.html
 <div class="ttc" id="aclassfrc_1_1sim_1_1_single_jointed_arm_sim_html_abc446d399e9fd57573c731bade2e5ae4"><div class="ttname"><a href="classfrc_1_1sim_1_1_single_jointed_arm_sim.html#abc446d399e9fd57573c731bade2e5ae4">frc::sim::SingleJointedArmSim::WouldHitUpperLimit</a></div><div class="ttdeci">bool WouldHitUpperLimit(units::radian_t armAngle) const</div><div class="ttdoc">Returns whether the arm would hit the upper limit.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1_single_jointed_arm_sim_html_acc330cff8accec3e3f49cce7f2630d39"><div class="ttname"><a href="classfrc_1_1sim_1_1_single_jointed_arm_sim.html#acc330cff8accec3e3f49cce7f2630d39">frc::sim::SingleJointedArmSim::HasHitLowerLimit</a></div><div class="ttdeci">bool HasHitLowerLimit() const</div><div class="ttdoc">Returns whether the arm has hit the lower limit.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1_single_jointed_arm_sim_html_af8157c4879cd1a27a2048ea729f6f365"><div class="ttname"><a href="classfrc_1_1sim_1_1_single_jointed_arm_sim.html#af8157c4879cd1a27a2048ea729f6f365">frc::sim::SingleJointedArmSim::SetInputVoltage</a></div><div class="ttdeci">void SetInputVoltage(units::volt_t voltage)</div><div class="ttdoc">Sets the input voltage for the arm.</div></div>
+<div class="ttc" id="alength_8h_html"><div class="ttname"><a href="length_8h.html">length.h</a></div></div>
+<div class="ttc" id="amass_8h_html"><div class="ttname"><a href="mass_8h.html">mass.h</a></div></div>
+<div class="ttc" id="amoment__of__inertia_8h_html"><div class="ttname"><a href="moment__of__inertia_8h.html">moment_of_inertia.h</a></div></div>
+<div class="ttc" id="anamespacefrc_1_1sim_html"><div class="ttname"><a href="namespacefrc_1_1sim.html">frc::sim</a></div><div class="ttdef"><b>Definition:</b> DutyCycleSim.h:15</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_297dc702852f645e4b9e531dac2da27d.html">simulation</a></li><li class="navelem"><b>SingleJointedArmSim.h</b></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:35 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_297dc702852f645e4b9e531dac2da27d.html">simulation</a></li><li class="navelem"><a class="el" href="_single_jointed_arm_sim_8h.html">SingleJointedArmSim.h</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:20 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -97,52 +97,409 @@ $(document).ready(function(){initNavTree('classwpi_1_1_u_d_p_client.html',''); i
   <div class="headertitle"><div class="title">wpi::UDPClient Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_u_d_p_client_8h_source.html">wpi/UDPClient.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6796644123d036b92550ab8e037d7b68"><td class="memItemLeft" align="right" valign="top"><a id="a6796644123d036b92550ab8e037d7b68" name="a6796644123d036b92550ab8e037d7b68"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>UDPClient</b> (<a class="el" href="classwpi_1_1_logger.html">Logger</a> &amp;logger)</td></tr>
+<tr class="memitem:a6796644123d036b92550ab8e037d7b68"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_u_d_p_client.html#a6796644123d036b92550ab8e037d7b68">UDPClient</a> (<a class="el" href="classwpi_1_1_logger.html">Logger</a> &amp;logger)</td></tr>
 <tr class="separator:a6796644123d036b92550ab8e037d7b68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61b42504b49a8a73ea36fb31ed9a45bb"><td class="memItemLeft" align="right" valign="top"><a id="a61b42504b49a8a73ea36fb31ed9a45bb" name="a61b42504b49a8a73ea36fb31ed9a45bb"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>UDPClient</b> (std::string_view address, <a class="el" href="classwpi_1_1_logger.html">Logger</a> &amp;logger)</td></tr>
+<tr class="memitem:a61b42504b49a8a73ea36fb31ed9a45bb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_u_d_p_client.html#a61b42504b49a8a73ea36fb31ed9a45bb">UDPClient</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> address, <a class="el" href="classwpi_1_1_logger.html">Logger</a> &amp;logger)</td></tr>
 <tr class="separator:a61b42504b49a8a73ea36fb31ed9a45bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a228132664971beff51bb99cd81187be0"><td class="memItemLeft" align="right" valign="top"><a id="a228132664971beff51bb99cd81187be0" name="a228132664971beff51bb99cd81187be0"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>UDPClient</b> (const <a class="el" href="classwpi_1_1_u_d_p_client.html">UDPClient</a> &amp;other)=delete</td></tr>
+<tr class="memitem:a228132664971beff51bb99cd81187be0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_u_d_p_client.html#a228132664971beff51bb99cd81187be0">UDPClient</a> (const <a class="el" href="classwpi_1_1_u_d_p_client.html">UDPClient</a> &amp;other)=delete</td></tr>
 <tr class="separator:a228132664971beff51bb99cd81187be0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc48ec4430240de3a4fea50df70f6c74"><td class="memItemLeft" align="right" valign="top"><a id="acc48ec4430240de3a4fea50df70f6c74" name="acc48ec4430240de3a4fea50df70f6c74"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>UDPClient</b> (<a class="el" href="classwpi_1_1_u_d_p_client.html">UDPClient</a> &amp;&amp;other)</td></tr>
+<tr class="memitem:acc48ec4430240de3a4fea50df70f6c74"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_u_d_p_client.html#acc48ec4430240de3a4fea50df70f6c74">UDPClient</a> (<a class="el" href="classwpi_1_1_u_d_p_client.html">UDPClient</a> &amp;&amp;other)</td></tr>
 <tr class="separator:acc48ec4430240de3a4fea50df70f6c74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e4475864be9c754e6228c9fb168ab0f"><td class="memItemLeft" align="right" valign="top"><a id="a0e4475864be9c754e6228c9fb168ab0f" name="a0e4475864be9c754e6228c9fb168ab0f"></a>
-<a class="el" href="classwpi_1_1_u_d_p_client.html">UDPClient</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classwpi_1_1_u_d_p_client.html">UDPClient</a> &amp;other)=delete</td></tr>
+<tr class="memitem:ad98657a290e6b6d800f98db67770914d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_u_d_p_client.html#ad98657a290e6b6d800f98db67770914d">~UDPClient</a> ()</td></tr>
+<tr class="separator:ad98657a290e6b6d800f98db67770914d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e4475864be9c754e6228c9fb168ab0f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1_u_d_p_client.html">UDPClient</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_u_d_p_client.html#a0e4475864be9c754e6228c9fb168ab0f">operator=</a> (const <a class="el" href="classwpi_1_1_u_d_p_client.html">UDPClient</a> &amp;other)=delete</td></tr>
 <tr class="separator:a0e4475864be9c754e6228c9fb168ab0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98add3840c365734aad6798875261aaf"><td class="memItemLeft" align="right" valign="top"><a id="a98add3840c365734aad6798875261aaf" name="a98add3840c365734aad6798875261aaf"></a>
-<a class="el" href="classwpi_1_1_u_d_p_client.html">UDPClient</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classwpi_1_1_u_d_p_client.html">UDPClient</a> &amp;&amp;other)</td></tr>
+<tr class="memitem:a98add3840c365734aad6798875261aaf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1_u_d_p_client.html">UDPClient</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_u_d_p_client.html#a98add3840c365734aad6798875261aaf">operator=</a> (<a class="el" href="classwpi_1_1_u_d_p_client.html">UDPClient</a> &amp;&amp;other)</td></tr>
 <tr class="separator:a98add3840c365734aad6798875261aaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb6fafd85c1c26b682717a0449b99bd0"><td class="memItemLeft" align="right" valign="top"><a id="adb6fafd85c1c26b682717a0449b99bd0" name="adb6fafd85c1c26b682717a0449b99bd0"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>start</b> ()</td></tr>
+<tr class="memitem:adb6fafd85c1c26b682717a0449b99bd0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_u_d_p_client.html#adb6fafd85c1c26b682717a0449b99bd0">start</a> ()</td></tr>
 <tr class="separator:adb6fafd85c1c26b682717a0449b99bd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a9d2726c2c07641269d8e99b00270ad"><td class="memItemLeft" align="right" valign="top"><a id="a6a9d2726c2c07641269d8e99b00270ad" name="a6a9d2726c2c07641269d8e99b00270ad"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>start</b> (int port)</td></tr>
+<tr class="memitem:a6a9d2726c2c07641269d8e99b00270ad"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_u_d_p_client.html#a6a9d2726c2c07641269d8e99b00270ad">start</a> (int port)</td></tr>
 <tr class="separator:a6a9d2726c2c07641269d8e99b00270ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23103cc547c083ec02fe9a2e31bc6cf6"><td class="memItemLeft" align="right" valign="top"><a id="a23103cc547c083ec02fe9a2e31bc6cf6" name="a23103cc547c083ec02fe9a2e31bc6cf6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>shutdown</b> ()</td></tr>
+<tr class="memitem:a23103cc547c083ec02fe9a2e31bc6cf6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_u_d_p_client.html#a23103cc547c083ec02fe9a2e31bc6cf6">shutdown</a> ()</td></tr>
 <tr class="separator:a23103cc547c083ec02fe9a2e31bc6cf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bc9165b883fdacd0ed31696feef345d"><td class="memItemLeft" align="right" valign="top"><a id="a9bc9165b883fdacd0ed31696feef345d" name="a9bc9165b883fdacd0ed31696feef345d"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>send</b> (<a class="el" href="classwpi_1_1span.html">span</a>&lt; const uint8_t &gt; <a class="el" href="structdata.html">data</a>, std::string_view server, int port)</td></tr>
+<tr class="memitem:a9bc9165b883fdacd0ed31696feef345d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_u_d_p_client.html#a9bc9165b883fdacd0ed31696feef345d">send</a> (<a class="el" href="classwpi_1_1span.html">span</a>&lt; const uint8_t &gt; <a class="el" href="structdata.html">data</a>, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> server, int port)</td></tr>
 <tr class="separator:a9bc9165b883fdacd0ed31696feef345d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab42af11028b25f392dd25d10747310c5"><td class="memItemLeft" align="right" valign="top"><a id="ab42af11028b25f392dd25d10747310c5" name="ab42af11028b25f392dd25d10747310c5"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>send</b> (std::string_view <a class="el" href="structdata.html">data</a>, std::string_view server, int port)</td></tr>
+<tr class="memitem:ab42af11028b25f392dd25d10747310c5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_u_d_p_client.html#ab42af11028b25f392dd25d10747310c5">send</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> <a class="el" href="structdata.html">data</a>, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> server, int port)</td></tr>
 <tr class="separator:ab42af11028b25f392dd25d10747310c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3c1ab28b4717d597e91c087d07c2293"><td class="memItemLeft" align="right" valign="top"><a id="af3c1ab28b4717d597e91c087d07c2293" name="af3c1ab28b4717d597e91c087d07c2293"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>receive</b> (uint8_t *data_received, int receive_len)</td></tr>
+<tr class="memitem:af3c1ab28b4717d597e91c087d07c2293"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_u_d_p_client.html#af3c1ab28b4717d597e91c087d07c2293">receive</a> (uint8_t *data_received, int receive_len)</td></tr>
 <tr class="separator:af3c1ab28b4717d597e91c087d07c2293"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef56757433ce1ad6a570d1bca52f2731"><td class="memItemLeft" align="right" valign="top"><a id="aef56757433ce1ad6a570d1bca52f2731" name="aef56757433ce1ad6a570d1bca52f2731"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>receive</b> (uint8_t *data_received, int receive_len, <a class="el" href="classwpi_1_1_small_vector_impl.html">SmallVectorImpl</a>&lt; char &gt; *addr_received, int *port_received)</td></tr>
+<tr class="memitem:aef56757433ce1ad6a570d1bca52f2731"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_u_d_p_client.html#aef56757433ce1ad6a570d1bca52f2731">receive</a> (uint8_t *data_received, int receive_len, <a class="el" href="classwpi_1_1_small_vector_impl.html">SmallVectorImpl</a>&lt; char &gt; *addr_received, int *port_received)</td></tr>
 <tr class="separator:aef56757433ce1ad6a570d1bca52f2731"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e3a48744d427a72a56cb01d1633f31b"><td class="memItemLeft" align="right" valign="top"><a id="a4e3a48744d427a72a56cb01d1633f31b" name="a4e3a48744d427a72a56cb01d1633f31b"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>set_timeout</b> (double timeout)</td></tr>
+<tr class="memitem:a4e3a48744d427a72a56cb01d1633f31b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_u_d_p_client.html#a4e3a48744d427a72a56cb01d1633f31b">set_timeout</a> (double timeout)</td></tr>
 <tr class="separator:a4e3a48744d427a72a56cb01d1633f31b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a6796644123d036b92550ab8e037d7b68" name="a6796644123d036b92550ab8e037d7b68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6796644123d036b92550ab8e037d7b68">&#9670;&nbsp;</a></span>UDPClient() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">wpi::UDPClient::UDPClient </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classwpi_1_1_logger.html">Logger</a> &amp;&#160;</td>
+          <td class="paramname"><em>logger</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a61b42504b49a8a73ea36fb31ed9a45bb" name="a61b42504b49a8a73ea36fb31ed9a45bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61b42504b49a8a73ea36fb31ed9a45bb">&#9670;&nbsp;</a></span>UDPClient() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">wpi::UDPClient::UDPClient </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classwpi_1_1_logger.html">Logger</a> &amp;&#160;</td>
+          <td class="paramname"><em>logger</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a228132664971beff51bb99cd81187be0" name="a228132664971beff51bb99cd81187be0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a228132664971beff51bb99cd81187be0">&#9670;&nbsp;</a></span>UDPClient() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">wpi::UDPClient::UDPClient </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classwpi_1_1_u_d_p_client.html">UDPClient</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acc48ec4430240de3a4fea50df70f6c74" name="acc48ec4430240de3a4fea50df70f6c74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc48ec4430240de3a4fea50df70f6c74">&#9670;&nbsp;</a></span>UDPClient() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">wpi::UDPClient::UDPClient </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classwpi_1_1_u_d_p_client.html">UDPClient</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad98657a290e6b6d800f98db67770914d" name="ad98657a290e6b6d800f98db67770914d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad98657a290e6b6d800f98db67770914d">&#9670;&nbsp;</a></span>~UDPClient()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">wpi::UDPClient::~UDPClient </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0e4475864be9c754e6228c9fb168ab0f" name="a0e4475864be9c754e6228c9fb168ab0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e4475864be9c754e6228c9fb168ab0f">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwpi_1_1_u_d_p_client.html">UDPClient</a> &amp; wpi::UDPClient::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classwpi_1_1_u_d_p_client.html">UDPClient</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a98add3840c365734aad6798875261aaf" name="a98add3840c365734aad6798875261aaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98add3840c365734aad6798875261aaf">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwpi_1_1_u_d_p_client.html">UDPClient</a> &amp; wpi::UDPClient::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classwpi_1_1_u_d_p_client.html">UDPClient</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af3c1ab28b4717d597e91c087d07c2293" name="af3c1ab28b4717d597e91c087d07c2293"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3c1ab28b4717d597e91c087d07c2293">&#9670;&nbsp;</a></span>receive() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int wpi::UDPClient::receive </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>data_received</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>receive_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aef56757433ce1ad6a570d1bca52f2731" name="aef56757433ce1ad6a570d1bca52f2731"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef56757433ce1ad6a570d1bca52f2731">&#9670;&nbsp;</a></span>receive() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int wpi::UDPClient::receive </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>data_received</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>receive_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classwpi_1_1_small_vector_impl.html">SmallVectorImpl</a>&lt; char &gt; *&#160;</td>
+          <td class="paramname"><em>addr_received</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>port_received</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9bc9165b883fdacd0ed31696feef345d" name="a9bc9165b883fdacd0ed31696feef345d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bc9165b883fdacd0ed31696feef345d">&#9670;&nbsp;</a></span>send() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int wpi::UDPClient::send </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classwpi_1_1span.html">span</a>&lt; const uint8_t &gt;&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>server</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>port</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab42af11028b25f392dd25d10747310c5" name="ab42af11028b25f392dd25d10747310c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab42af11028b25f392dd25d10747310c5">&#9670;&nbsp;</a></span>send() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int wpi::UDPClient::send </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>server</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>port</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4e3a48744d427a72a56cb01d1633f31b" name="a4e3a48744d427a72a56cb01d1633f31b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e3a48744d427a72a56cb01d1633f31b">&#9670;&nbsp;</a></span>set_timeout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int wpi::UDPClient::set_timeout </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>timeout</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a23103cc547c083ec02fe9a2e31bc6cf6" name="a23103cc547c083ec02fe9a2e31bc6cf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23103cc547c083ec02fe9a2e31bc6cf6">&#9670;&nbsp;</a></span>shutdown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wpi::UDPClient::shutdown </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adb6fafd85c1c26b682717a0449b99bd0" name="adb6fafd85c1c26b682717a0449b99bd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb6fafd85c1c26b682717a0449b99bd0">&#9670;&nbsp;</a></span>start() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int wpi::UDPClient::start </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6a9d2726c2c07641269d8e99b00270ad" name="a6a9d2726c2c07641269d8e99b00270ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a9d2726c2c07641269d8e99b00270ad">&#9670;&nbsp;</a></span>start() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int wpi::UDPClient::start </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>port</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>wpi/<a class="el" href="_u_d_p_client_8h_source.html">UDPClient.h</a></li>
 </ul>
@@ -151,8 +508,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>set_timeout</b> (doubl
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>wpi</b></li><li class="navelem"><a class="el" href="classwpi_1_1_u_d_p_client.html">UDPClient</a></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:53 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="classwpi_1_1_u_d_p_client.html">UDPClient</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:40 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -1,5 +1,7 @@
 var classwpi_1_1_http_server_connection =
 [
+    [ "HttpServerConnection", "classwpi_1_1_http_server_connection.html#a204be8b4e203e024cb08e6650dd17d8d", null ],
+    [ "~HttpServerConnection", "classwpi_1_1_http_server_connection.html#a724e3f5bec8d51d91b2ae3b507e27767", null ],
     [ "BuildCommonHeaders", "classwpi_1_1_http_server_connection.html#a49235d25ea52d88faab2633741fd5d37", null ],
     [ "BuildHeader", "classwpi_1_1_http_server_connection.html#abc4c5490c7f33ec73d71a9622b4128da", null ],
     [ "ProcessRequest", "classwpi_1_1_http_server_connection.html#a9fcd9c70806c07e8bdc29618eae2008c", null ],

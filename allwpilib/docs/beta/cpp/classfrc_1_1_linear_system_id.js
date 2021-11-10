@@ -1,5 +1,7 @@
 var classfrc_1_1_linear_system_id =
 [
+    [ "Acceleration_t", "classfrc_1_1_linear_system_id.html#a51c8f481c2d224b0dc56733a636dd4ac", null ],
+    [ "Velocity_t", "classfrc_1_1_linear_system_id.html#a7ac5852330ccb899e2fca03610259715", null ],
     [ "DrivetrainVelocitySystem", "classfrc_1_1_linear_system_id.html#a307ffa3928fd91d869d7d4a2c69a156c", null ],
     [ "ElevatorSystem", "classfrc_1_1_linear_system_id.html#a9c705d691b32e7aa8767dcd196b4bc80", null ],
     [ "FlywheelSystem", "classfrc_1_1_linear_system_id.html#ae88f743980122d1e2c19ea4dd2c72edc", null ],

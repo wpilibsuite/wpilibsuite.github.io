@@ -1,5 +1,8 @@
 var classwpi_1_1uv_1_1_timer =
 [
+    [ "Time", "classwpi_1_1uv_1_1_timer.html#ad766cbba1cd9695e8ba2fbff6d8e0485", null ],
+    [ "Timer", "classwpi_1_1uv_1_1_timer.html#ab6ea408ec979004f57ee40a594da8f27", null ],
+    [ "~Timer", "classwpi_1_1uv_1_1_timer.html#af6527ae2ce3a390db3b2f111b3050a52", null ],
     [ "Again", "classwpi_1_1uv_1_1_timer.html#ad9c46edb725ae3584084833f039eecdd", null ],
     [ "Create", "classwpi_1_1uv_1_1_timer.html#ab06552f30ff07ac2c08adb0fc6d992aa", null ],
     [ "Create", "classwpi_1_1uv_1_1_timer.html#a6dd72b9332297b7b2a9e6f210aff21eb", null ],

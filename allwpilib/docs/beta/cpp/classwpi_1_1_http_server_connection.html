@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -99,6 +99,8 @@ $(document).ready(function(){initNavTree('classwpi_1_1_http_server_connection.ht
   <div class="headertitle"><div class="title">wpi::HttpServerConnection Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_http_server_connection_8h_source.html">wpi/HttpServerConnection.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for wpi::HttpServerConnection:</div>
 <div class="dyncontent">
@@ -111,9 +113,10 @@ Inheritance diagram for wpi::HttpServerConnection:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a204be8b4e203e024cb08e6650dd17d8d"><td class="memItemLeft" align="right" valign="top"><a id="a204be8b4e203e024cb08e6650dd17d8d" name="a204be8b4e203e024cb08e6650dd17d8d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>HttpServerConnection</b> (std::shared_ptr&lt; <a class="el" href="classwpi_1_1uv_1_1_stream.html">uv::Stream</a> &gt; stream)</td></tr>
+<tr class="memitem:a204be8b4e203e024cb08e6650dd17d8d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_http_server_connection.html#a204be8b4e203e024cb08e6650dd17d8d">HttpServerConnection</a> (std::shared_ptr&lt; <a class="el" href="classwpi_1_1uv_1_1_stream.html">uv::Stream</a> &gt; stream)</td></tr>
 <tr class="separator:a204be8b4e203e024cb08e6650dd17d8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a724e3f5bec8d51d91b2ae3b507e27767"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_http_server_connection.html#a724e3f5bec8d51d91b2ae3b507e27767">~HttpServerConnection</a> ()=default</td></tr>
+<tr class="separator:a724e3f5bec8d51d91b2ae3b507e27767"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -123,53 +126,98 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a49235d25ea52d88faab2633741fd5d37"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_http_server_connection.html#a49235d25ea52d88faab2633741fd5d37">BuildCommonHeaders</a> (<a class="el" href="classwpi_1_1raw__ostream.html">raw_ostream</a> &amp;os)</td></tr>
 <tr class="memdesc:a49235d25ea52d88faab2633741fd5d37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build common response headers.  <a href="classwpi_1_1_http_server_connection.html#a49235d25ea52d88faab2633741fd5d37">More...</a><br /></td></tr>
 <tr class="separator:a49235d25ea52d88faab2633741fd5d37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc4c5490c7f33ec73d71a9622b4128da"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_http_server_connection.html#abc4c5490c7f33ec73d71a9622b4128da">BuildHeader</a> (<a class="el" href="classwpi_1_1raw__ostream.html">raw_ostream</a> &amp;os, int code, std::string_view codeText, std::string_view contentType, uint64_t contentLength, std::string_view extra={})</td></tr>
+<tr class="memitem:abc4c5490c7f33ec73d71a9622b4128da"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_http_server_connection.html#abc4c5490c7f33ec73d71a9622b4128da">BuildHeader</a> (<a class="el" href="classwpi_1_1raw__ostream.html">raw_ostream</a> &amp;os, int code, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> codeText, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> contentType, uint64_t contentLength, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> extra={})</td></tr>
 <tr class="memdesc:abc4c5490c7f33ec73d71a9622b4128da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build HTTP response header, along with other header information like mimetype.  <a href="classwpi_1_1_http_server_connection.html#abc4c5490c7f33ec73d71a9622b4128da">More...</a><br /></td></tr>
 <tr class="separator:abc4c5490c7f33ec73d71a9622b4128da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97555b65a6acd9942b349f2852e3ca16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_http_server_connection.html#a97555b65a6acd9942b349f2852e3ca16">SendData</a> (<a class="el" href="classwpi_1_1span.html">span</a>&lt; const <a class="el" href="classwpi_1_1uv_1_1_buffer.html">uv::Buffer</a> &gt; bufs, bool closeAfter=false)</td></tr>
 <tr class="memdesc:a97555b65a6acd9942b349f2852e3ca16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send data to client.  <a href="classwpi_1_1_http_server_connection.html#a97555b65a6acd9942b349f2852e3ca16">More...</a><br /></td></tr>
 <tr class="separator:a97555b65a6acd9942b349f2852e3ca16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca323f8c2114ec8510ce571fe647d4d7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_http_server_connection.html#aca323f8c2114ec8510ce571fe647d4d7">SendResponse</a> (int code, std::string_view codeText, std::string_view contentType, std::string_view content, std::string_view extraHeader={})</td></tr>
+<tr class="memitem:aca323f8c2114ec8510ce571fe647d4d7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_http_server_connection.html#aca323f8c2114ec8510ce571fe647d4d7">SendResponse</a> (int code, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> codeText, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> contentType, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> content, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> extraHeader={})</td></tr>
 <tr class="memdesc:aca323f8c2114ec8510ce571fe647d4d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send HTTP response, along with other header information like mimetype.  <a href="classwpi_1_1_http_server_connection.html#aca323f8c2114ec8510ce571fe647d4d7">More...</a><br /></td></tr>
 <tr class="separator:aca323f8c2114ec8510ce571fe647d4d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a548a44730f8b4303d97bc0390407324d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_http_server_connection.html#a548a44730f8b4303d97bc0390407324d">SendStaticResponse</a> (int code, std::string_view codeText, std::string_view contentType, std::string_view content, bool gzipped, std::string_view extraHeader={})</td></tr>
+<tr class="memitem:a548a44730f8b4303d97bc0390407324d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_http_server_connection.html#a548a44730f8b4303d97bc0390407324d">SendStaticResponse</a> (int code, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> codeText, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> contentType, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> content, bool gzipped, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> extraHeader={})</td></tr>
 <tr class="memdesc:a548a44730f8b4303d97bc0390407324d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send HTTP response from static data, along with other header information like mimetype.  <a href="classwpi_1_1_http_server_connection.html#a548a44730f8b4303d97bc0390407324d">More...</a><br /></td></tr>
 <tr class="separator:a548a44730f8b4303d97bc0390407324d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6878054742f5deb6191c45499e4ab6e5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_http_server_connection.html#a6878054742f5deb6191c45499e4ab6e5">SendError</a> (int code, std::string_view message={})</td></tr>
+<tr class="memitem:a6878054742f5deb6191c45499e4ab6e5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_http_server_connection.html#a6878054742f5deb6191c45499e4ab6e5">SendError</a> (int code, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> message={})</td></tr>
 <tr class="memdesc:a6878054742f5deb6191c45499e4ab6e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send error header and message.  <a href="classwpi_1_1_http_server_connection.html#a6878054742f5deb6191c45499e4ab6e5">More...</a><br /></td></tr>
 <tr class="separator:a6878054742f5deb6191c45499e4ab6e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a951b0349c8d32f238dd07288f855dde5"><td class="memItemLeft" align="right" valign="top"><a id="a951b0349c8d32f238dd07288f855dde5" name="a951b0349c8d32f238dd07288f855dde5"></a>
-<a class="el" href="classwpi_1_1_http_parser.html">HttpParser</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_request</b> {HttpParser::kRequest}</td></tr>
-<tr class="memdesc:a951b0349c8d32f238dd07288f855dde5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The HTTP request. <br /></td></tr>
+<tr class="memitem:a951b0349c8d32f238dd07288f855dde5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1_http_parser.html">HttpParser</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_http_server_connection.html#a951b0349c8d32f238dd07288f855dde5">m_request</a> {<a class="el" href="classwpi_1_1_http_parser.html#a6918117bdaaaee040dd421de4c4dfb28a20030a7b7d69f1916e6a2c1099b24585">HttpParser::kRequest</a>}</td></tr>
+<tr class="memdesc:a951b0349c8d32f238dd07288f855dde5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The HTTP request.  <a href="classwpi_1_1_http_server_connection.html#a951b0349c8d32f238dd07288f855dde5">More...</a><br /></td></tr>
 <tr class="separator:a951b0349c8d32f238dd07288f855dde5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf9bb2bf10955876bd1582d135effc2d"><td class="memItemLeft" align="right" valign="top"><a id="aaf9bb2bf10955876bd1582d135effc2d" name="aaf9bb2bf10955876bd1582d135effc2d"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_keepAlive</b> = false</td></tr>
-<tr class="memdesc:aaf9bb2bf10955876bd1582d135effc2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the connection should be kept alive. <br /></td></tr>
+<tr class="memitem:aaf9bb2bf10955876bd1582d135effc2d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_http_server_connection.html#aaf9bb2bf10955876bd1582d135effc2d">m_keepAlive</a> = false</td></tr>
+<tr class="memdesc:aaf9bb2bf10955876bd1582d135effc2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the connection should be kept alive.  <a href="classwpi_1_1_http_server_connection.html#aaf9bb2bf10955876bd1582d135effc2d">More...</a><br /></td></tr>
 <tr class="separator:aaf9bb2bf10955876bd1582d135effc2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d0ec3d4643c9afb51ba386a5f6b0127"><td class="memItemLeft" align="right" valign="top"><a id="a7d0ec3d4643c9afb51ba386a5f6b0127" name="a7d0ec3d4643c9afb51ba386a5f6b0127"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_acceptGzip</b> = false</td></tr>
-<tr class="memdesc:a7d0ec3d4643c9afb51ba386a5f6b0127"><td class="mdescLeft">&#160;</td><td class="mdescRight">If gzip is an acceptable encoding for responses. <br /></td></tr>
+<tr class="memitem:a7d0ec3d4643c9afb51ba386a5f6b0127"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_http_server_connection.html#a7d0ec3d4643c9afb51ba386a5f6b0127">m_acceptGzip</a> = false</td></tr>
+<tr class="memdesc:a7d0ec3d4643c9afb51ba386a5f6b0127"><td class="mdescLeft">&#160;</td><td class="mdescRight">If gzip is an acceptable encoding for responses.  <a href="classwpi_1_1_http_server_connection.html#a7d0ec3d4643c9afb51ba386a5f6b0127">More...</a><br /></td></tr>
 <tr class="separator:a7d0ec3d4643c9afb51ba386a5f6b0127"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93f24fcfd3d8d4099539f460c740c001"><td class="memItemLeft" align="right" valign="top"><a id="a93f24fcfd3d8d4099539f460c740c001" name="a93f24fcfd3d8d4099539f460c740c001"></a>
-<a class="el" href="classwpi_1_1uv_1_1_stream.html">uv::Stream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_stream</b></td></tr>
-<tr class="memdesc:a93f24fcfd3d8d4099539f460c740c001"><td class="mdescLeft">&#160;</td><td class="mdescRight">The underlying stream for the connection. <br /></td></tr>
+<tr class="memitem:a93f24fcfd3d8d4099539f460c740c001"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1uv_1_1_stream.html">uv::Stream</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_http_server_connection.html#a93f24fcfd3d8d4099539f460c740c001">m_stream</a></td></tr>
+<tr class="memdesc:a93f24fcfd3d8d4099539f460c740c001"><td class="mdescLeft">&#160;</td><td class="mdescRight">The underlying stream for the connection.  <a href="classwpi_1_1_http_server_connection.html#a93f24fcfd3d8d4099539f460c740c001">More...</a><br /></td></tr>
 <tr class="separator:a93f24fcfd3d8d4099539f460c740c001"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37acb1c41763dd1747d501341e4b3412"><td class="memItemLeft" align="right" valign="top"><a id="a37acb1c41763dd1747d501341e4b3412" name="a37acb1c41763dd1747d501341e4b3412"></a>
-<a class="el" href="classwpi_1_1sig_1_1_scoped_connection.html">sig::ScopedConnection</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_dataConn</b></td></tr>
-<tr class="memdesc:a37acb1c41763dd1747d501341e4b3412"><td class="mdescLeft">&#160;</td><td class="mdescRight">The header reader connection. <br /></td></tr>
+<tr class="memitem:a37acb1c41763dd1747d501341e4b3412"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1sig_1_1_scoped_connection.html">sig::ScopedConnection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_http_server_connection.html#a37acb1c41763dd1747d501341e4b3412">m_dataConn</a></td></tr>
+<tr class="memdesc:a37acb1c41763dd1747d501341e4b3412"><td class="mdescLeft">&#160;</td><td class="mdescRight">The header reader connection.  <a href="classwpi_1_1_http_server_connection.html#a37acb1c41763dd1747d501341e4b3412">More...</a><br /></td></tr>
 <tr class="separator:a37acb1c41763dd1747d501341e4b3412"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bec057a14ee5ebbfd3577b79ea94eb1"><td class="memItemLeft" align="right" valign="top"><a id="a9bec057a14ee5ebbfd3577b79ea94eb1" name="a9bec057a14ee5ebbfd3577b79ea94eb1"></a>
-<a class="el" href="classwpi_1_1sig_1_1_scoped_connection.html">sig::ScopedConnection</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_endConn</b></td></tr>
-<tr class="memdesc:a9bec057a14ee5ebbfd3577b79ea94eb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The end stream connection. <br /></td></tr>
+<tr class="memitem:a9bec057a14ee5ebbfd3577b79ea94eb1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1sig_1_1_scoped_connection.html">sig::ScopedConnection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_http_server_connection.html#a9bec057a14ee5ebbfd3577b79ea94eb1">m_endConn</a></td></tr>
+<tr class="memdesc:a9bec057a14ee5ebbfd3577b79ea94eb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The end stream connection.  <a href="classwpi_1_1_http_server_connection.html#a9bec057a14ee5ebbfd3577b79ea94eb1">More...</a><br /></td></tr>
 <tr class="separator:a9bec057a14ee5ebbfd3577b79ea94eb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6bb816fa5df965770d7be84ea0f6dd3"><td class="memItemLeft" align="right" valign="top"><a id="ae6bb816fa5df965770d7be84ea0f6dd3" name="ae6bb816fa5df965770d7be84ea0f6dd3"></a>
-<a class="el" href="classwpi_1_1sig_1_1_connection.html">sig::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_messageCompleteConn</b></td></tr>
-<tr class="memdesc:ae6bb816fa5df965770d7be84ea0f6dd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The message complete connection. <br /></td></tr>
+<tr class="memitem:ae6bb816fa5df965770d7be84ea0f6dd3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1sig_1_1_connection.html">sig::Connection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_http_server_connection.html#ae6bb816fa5df965770d7be84ea0f6dd3">m_messageCompleteConn</a></td></tr>
+<tr class="memdesc:ae6bb816fa5df965770d7be84ea0f6dd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The message complete connection.  <a href="classwpi_1_1_http_server_connection.html#ae6bb816fa5df965770d7be84ea0f6dd3">More...</a><br /></td></tr>
 <tr class="separator:ae6bb816fa5df965770d7be84ea0f6dd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a204be8b4e203e024cb08e6650dd17d8d" name="a204be8b4e203e024cb08e6650dd17d8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a204be8b4e203e024cb08e6650dd17d8d">&#9670;&nbsp;</a></span>HttpServerConnection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">wpi::HttpServerConnection::HttpServerConnection </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classwpi_1_1uv_1_1_stream.html">uv::Stream</a> &gt;&#160;</td>
+          <td class="paramname"><em>stream</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a724e3f5bec8d51d91b2ae3b507e27767" name="a724e3f5bec8d51d91b2ae3b507e27767"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a724e3f5bec8d51d91b2ae3b507e27767">&#9670;&nbsp;</a></span>~HttpServerConnection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual wpi::HttpServerConnection::~HttpServerConnection </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a49235d25ea52d88faab2633741fd5d37" name="a49235d25ea52d88faab2633741fd5d37"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a49235d25ea52d88faab2633741fd5d37">&#9670;&nbsp;</a></span>BuildCommonHeaders()</h2>
@@ -232,13 +280,13 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_acceptGzip</b> = fa
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>codeText</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>contentType</em>, </td>
         </tr>
         <tr>
@@ -250,7 +298,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_acceptGzip</b> = fa
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>extra</em> = <code>{}</code>&#160;</td>
         </tr>
         <tr>
@@ -375,7 +423,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_acceptGzip</b> = fa
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>message</em> = <code>{}</code>&#160;</td>
         </tr>
         <tr>
@@ -421,25 +469,25 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_acceptGzip</b> = fa
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>codeText</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>contentType</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>content</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>extraHeader</em> = <code>{}</code>&#160;</td>
         </tr>
         <tr>
@@ -488,19 +536,19 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_acceptGzip</b> = fa
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>codeText</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>contentType</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>content</em>, </td>
         </tr>
         <tr>
@@ -512,7 +560,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_acceptGzip</b> = fa
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>extraHeader</em> = <code>{}</code>&#160;</td>
         </tr>
         <tr>
@@ -544,6 +592,175 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_acceptGzip</b> = fa
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a7d0ec3d4643c9afb51ba386a5f6b0127" name="a7d0ec3d4643c9afb51ba386a5f6b0127"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d0ec3d4643c9afb51ba386a5f6b0127">&#9670;&nbsp;</a></span>m_acceptGzip</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool wpi::HttpServerConnection::m_acceptGzip = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If gzip is an acceptable encoding for responses. </p>
+
+</div>
+</div>
+<a id="a37acb1c41763dd1747d501341e4b3412" name="a37acb1c41763dd1747d501341e4b3412"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37acb1c41763dd1747d501341e4b3412">&#9670;&nbsp;</a></span>m_dataConn</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwpi_1_1sig_1_1_scoped_connection.html">sig::ScopedConnection</a> wpi::HttpServerConnection::m_dataConn</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The header reader connection. </p>
+
+</div>
+</div>
+<a id="a9bec057a14ee5ebbfd3577b79ea94eb1" name="a9bec057a14ee5ebbfd3577b79ea94eb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bec057a14ee5ebbfd3577b79ea94eb1">&#9670;&nbsp;</a></span>m_endConn</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwpi_1_1sig_1_1_scoped_connection.html">sig::ScopedConnection</a> wpi::HttpServerConnection::m_endConn</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The end stream connection. </p>
+
+</div>
+</div>
+<a id="aaf9bb2bf10955876bd1582d135effc2d" name="aaf9bb2bf10955876bd1582d135effc2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf9bb2bf10955876bd1582d135effc2d">&#9670;&nbsp;</a></span>m_keepAlive</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool wpi::HttpServerConnection::m_keepAlive = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Whether the connection should be kept alive. </p>
+
+</div>
+</div>
+<a id="ae6bb816fa5df965770d7be84ea0f6dd3" name="ae6bb816fa5df965770d7be84ea0f6dd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6bb816fa5df965770d7be84ea0f6dd3">&#9670;&nbsp;</a></span>m_messageCompleteConn</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwpi_1_1sig_1_1_connection.html">sig::Connection</a> wpi::HttpServerConnection::m_messageCompleteConn</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The message complete connection. </p>
+
+</div>
+</div>
+<a id="a951b0349c8d32f238dd07288f855dde5" name="a951b0349c8d32f238dd07288f855dde5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a951b0349c8d32f238dd07288f855dde5">&#9670;&nbsp;</a></span>m_request</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwpi_1_1_http_parser.html">HttpParser</a> wpi::HttpServerConnection::m_request {<a class="el" href="classwpi_1_1_http_parser.html#a6918117bdaaaee040dd421de4c4dfb28a20030a7b7d69f1916e6a2c1099b24585">HttpParser::kRequest</a>}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The HTTP request. </p>
+
+</div>
+</div>
+<a id="a93f24fcfd3d8d4099539f460c740c001" name="a93f24fcfd3d8d4099539f460c740c001"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93f24fcfd3d8d4099539f460c740c001">&#9670;&nbsp;</a></span>m_stream</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwpi_1_1uv_1_1_stream.html">uv::Stream</a>&amp; wpi::HttpServerConnection::m_stream</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The underlying stream for the connection. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>wpi/<a class="el" href="_http_server_connection_8h_source.html">HttpServerConnection.h</a></li>
 </ul>
@@ -552,8 +769,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_acceptGzip</b> = fa
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>wpi</b></li><li class="navelem"><a class="el" href="classwpi_1_1_http_server_connection.html">HttpServerConnection</a></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:52 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="classwpi_1_1_http_server_connection.html">HttpServerConnection</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:40 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

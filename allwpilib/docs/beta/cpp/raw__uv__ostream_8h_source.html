@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('raw__uv__ostream_8h_source.html',''); 
   <div class="headertitle"><div class="title">raw_uv_ostream.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
+<a href="raw__uv__ostream_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Open Source Software; you can modify and/or share it under the terms of</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// the WPILib BSD license file in the root directory of this project.</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
@@ -104,12 +104,12 @@ $(document).ready(function(){initNavTree('raw__uv__ostream_8h_source.html',''); 
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;functional&gt;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;utility&gt;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;wpi/SmallVector.h&quot;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;wpi/raw_ostream.h&quot;</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;wpi/span.h&quot;</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;wpi/uv/Buffer.h&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="_small_vector_8h.html">wpi/SmallVector.h</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="raw__ostream_8h.html">wpi/raw_ostream.h</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="span_8h.html">wpi/span.h</a>&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="_buffer_8h.html">wpi/uv/Buffer.h</a>&quot;</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">namespace </span>wpi {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacewpi.html">wpi</a> {</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"></span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">/**</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> * raw_ostream style output to a SmallVector of uv::Buffer buffers.  Fixed-size</span></div>
@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('raw__uv__ostream_8h_source.html',''); 
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">   *                  performed using Buffer::Allocate().</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="classwpi_1_1raw__uv__ostream.html#aa9168297669f8c477f911694a4df464c">   31</a></span>  <a class="code hl_function" href="classwpi_1_1raw__uv__ostream.html#aa9168297669f8c477f911694a4df464c">raw_uv_ostream</a>(<a class="code hl_class" href="classwpi_1_1_small_vector_impl.html">SmallVectorImpl&lt;uv::Buffer&gt;</a>&amp; <a class="code hl_function" href="classwpi_1_1raw__uv__ostream.html#ab6d4a1a2d44430001cbd6c74b52647a5">bufs</a>, <span class="keywordtype">size_t</span> allocSize)</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>      : m_bufs(<a class="code hl_function" href="classwpi_1_1raw__uv__ostream.html#ab6d4a1a2d44430001cbd6c74b52647a5">bufs</a>), m_alloc([=] { <span class="keywordflow">return</span> uv::Buffer::Allocate(allocSize); }) {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>      : m_bufs(<a class="code hl_function" href="classwpi_1_1raw__uv__ostream.html#ab6d4a1a2d44430001cbd6c74b52647a5">bufs</a>), m_alloc([=] { <span class="keywordflow">return</span> <a class="code hl_function" href="classwpi_1_1uv_1_1_buffer.html#a5189d92a1c07235f0503dd4f6fdffa34">uv::Buffer::Allocate</a>(allocSize); }) {</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_function" href="classwpi_1_1raw__ostream.html#aa4a39ffb16e40a429eb314efedf74e69">SetUnbuffered</a>();</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  }</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment"></span> </div>
@@ -136,50 +136,66 @@ $(document).ready(function(){initNavTree('raw__uv__ostream_8h_source.html',''); 
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classwpi_1_1raw__uv__ostream.html#a041c14b189aaad66c3b9e55f9fde6ed3">   41</a></span>  <a class="code hl_function" href="classwpi_1_1raw__uv__ostream.html#a041c14b189aaad66c3b9e55f9fde6ed3">raw_uv_ostream</a>(<a class="code hl_class" href="classwpi_1_1_small_vector_impl.html">SmallVectorImpl&lt;uv::Buffer&gt;</a>&amp; <a class="code hl_function" href="classwpi_1_1raw__uv__ostream.html#ab6d4a1a2d44430001cbd6c74b52647a5">bufs</a>,</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                 std::function&lt;<a class="code hl_class" href="classwpi_1_1uv_1_1_buffer.html">uv::Buffer</a>()&gt; alloc)</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>      : m_bufs(<a class="code hl_function" href="classwpi_1_1raw__uv__ostream.html#ab6d4a1a2d44430001cbd6c74b52647a5">bufs</a>), m_alloc(std::move(alloc)) {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>      : m_bufs(<a class="code hl_function" href="classwpi_1_1raw__uv__ostream.html#ab6d4a1a2d44430001cbd6c74b52647a5">bufs</a>), m_alloc(<a class="code hl_namespace" href="namespacestd.html">std</a>::move(alloc)) {</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <a class="code hl_function" href="classwpi_1_1raw__ostream.html#aa4a39ffb16e40a429eb314efedf74e69">SetUnbuffered</a>();</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  }</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <a class="code hl_class" href="classwpi_1_1raw__uv__ostream.html">~raw_uv_ostream</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="classwpi_1_1raw__uv__ostream.html#a7b288467ae6260c9070914aad8042c42">   47</a></span>  <a class="code hl_function" href="classwpi_1_1raw__uv__ostream.html#a7b288467ae6260c9070914aad8042c42">~raw_uv_ostream</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment"></span> </div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">   * Returns an span to the buffers.</span></div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="classwpi_1_1raw__uv__ostream.html#ab6d4a1a2d44430001cbd6c74b52647a5">   52</a></span>  <a class="code hl_class" href="classwpi_1_1span.html">span&lt;uv::Buffer&gt;</a> <a class="code hl_function" href="classwpi_1_1raw__uv__ostream.html#ab6d4a1a2d44430001cbd6c74b52647a5">bufs</a>() { <span class="keywordflow">return</span> m_bufs; }</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <span class="keywordtype">void</span> flush() = <span class="keyword">delete</span>;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="keywordtype">void</span> write_impl(<span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_struct" href="structdata.html">data</a>, <span class="keywordtype">size_t</span> len) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  uint64_t current_pos() <span class="keyword">const override</span>;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <a class="code hl_class" href="classwpi_1_1_small_vector_impl.html">SmallVectorImpl&lt;uv::Buffer&gt;</a>&amp; m_bufs;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  std::function&lt;<a class="code hl_class" href="classwpi_1_1uv_1_1_buffer.html">uv::Buffer</a>()&gt; m_alloc;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <span class="comment">// How much allocated space is left in the current buffer.</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <span class="keywordtype">size_t</span> m_left = 0;</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>};</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}  <span class="comment">// namespace wpi</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="preprocessor">#endif  </span><span class="comment">// WPIUTIL_WPI_RAW_UV_OSTREAM_H_</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classwpi_1_1raw__uv__ostream.html#aa9716286219806fed9d8900b21ce1602">   54</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1raw__uv__ostream.html#aa9716286219806fed9d8900b21ce1602">flush</a>() = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment"></span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">   * Resets the amount of allocated space.</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classwpi_1_1raw__uv__ostream.html#a269802356e03d295f6a5223501395f29">   59</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1raw__uv__ostream.html#a269802356e03d295f6a5223501395f29">reset</a>() { m_left = 0; }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  <span class="keywordtype">void</span> write_impl(<span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_struct" href="structdata.html">data</a>, <span class="keywordtype">size_t</span> len) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <a class="code hl_variable" href="namespace_eigen_1_1numext.html#a637f20cd528b31ef3ce8d1ef803ebbde">uint64_t</a> current_pos() <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <a class="code hl_class" href="classwpi_1_1_small_vector_impl.html">SmallVectorImpl&lt;uv::Buffer&gt;</a>&amp; m_bufs;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  std::function&lt;<a class="code hl_class" href="classwpi_1_1uv_1_1_buffer.html">uv::Buffer</a>()&gt; m_alloc;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  <span class="comment">// How much allocated space is left in the current buffer.</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  <span class="keywordtype">size_t</span> m_left = 0;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>};</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>}  <span class="comment">// namespace wpi</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="preprocessor">#endif  </span><span class="comment">// WPIUTIL_WPI_RAW_UV_OSTREAM_H_</span></div>
+<div class="ttc" id="a_buffer_8h_html"><div class="ttname"><a href="_buffer_8h.html">Buffer.h</a></div></div>
+<div class="ttc" id="a_small_vector_8h_html"><div class="ttname"><a href="_small_vector_8h.html">SmallVector.h</a></div></div>
 <div class="ttc" id="aclasswpi_1_1_small_vector_impl_html"><div class="ttname"><a href="classwpi_1_1_small_vector_impl.html">wpi::SmallVectorImpl</a></div><div class="ttdoc">This class consists of common code factored out of the SmallVector class to reduce code duplication b...</div><div class="ttdef"><b>Definition:</b> SmallVector.h:332</div></div>
 <div class="ttc" id="aclasswpi_1_1raw__ostream_html"><div class="ttname"><a href="classwpi_1_1raw__ostream.html">wpi::raw_ostream</a></div><div class="ttdoc">This class implements an extremely fast bulk output stream that can only output to a stream.</div><div class="ttdef"><b>Definition:</b> raw_ostream.h:40</div></div>
 <div class="ttc" id="aclasswpi_1_1raw__ostream_html_aa4a39ffb16e40a429eb314efedf74e69"><div class="ttname"><a href="classwpi_1_1raw__ostream.html#aa4a39ffb16e40a429eb314efedf74e69">wpi::raw_ostream::SetUnbuffered</a></div><div class="ttdeci">void SetUnbuffered()</div><div class="ttdoc">Set the stream to be unbuffered.</div><div class="ttdef"><b>Definition:</b> raw_ostream.h:123</div></div>
 <div class="ttc" id="aclasswpi_1_1raw__uv__ostream_html"><div class="ttname"><a href="classwpi_1_1raw__uv__ostream.html">wpi::raw_uv_ostream</a></div><div class="ttdoc">raw_ostream style output to a SmallVector of uv::Buffer buffers.</div><div class="ttdef"><b>Definition:</b> raw_uv_ostream.h:23</div></div>
 <div class="ttc" id="aclasswpi_1_1raw__uv__ostream_html_a041c14b189aaad66c3b9e55f9fde6ed3"><div class="ttname"><a href="classwpi_1_1raw__uv__ostream.html#a041c14b189aaad66c3b9e55f9fde6ed3">wpi::raw_uv_ostream::raw_uv_ostream</a></div><div class="ttdeci">raw_uv_ostream(SmallVectorImpl&lt; uv::Buffer &gt; &amp;bufs, std::function&lt; uv::Buffer()&gt; alloc)</div><div class="ttdoc">Construct a new raw_uv_ostream.</div><div class="ttdef"><b>Definition:</b> raw_uv_ostream.h:41</div></div>
+<div class="ttc" id="aclasswpi_1_1raw__uv__ostream_html_a269802356e03d295f6a5223501395f29"><div class="ttname"><a href="classwpi_1_1raw__uv__ostream.html#a269802356e03d295f6a5223501395f29">wpi::raw_uv_ostream::reset</a></div><div class="ttdeci">void reset()</div><div class="ttdoc">Resets the amount of allocated space.</div><div class="ttdef"><b>Definition:</b> raw_uv_ostream.h:59</div></div>
+<div class="ttc" id="aclasswpi_1_1raw__uv__ostream_html_a7b288467ae6260c9070914aad8042c42"><div class="ttname"><a href="classwpi_1_1raw__uv__ostream.html#a7b288467ae6260c9070914aad8042c42">wpi::raw_uv_ostream::~raw_uv_ostream</a></div><div class="ttdeci">~raw_uv_ostream() override=default</div></div>
 <div class="ttc" id="aclasswpi_1_1raw__uv__ostream_html_aa9168297669f8c477f911694a4df464c"><div class="ttname"><a href="classwpi_1_1raw__uv__ostream.html#aa9168297669f8c477f911694a4df464c">wpi::raw_uv_ostream::raw_uv_ostream</a></div><div class="ttdeci">raw_uv_ostream(SmallVectorImpl&lt; uv::Buffer &gt; &amp;bufs, size_t allocSize)</div><div class="ttdoc">Construct a new raw_uv_ostream.</div><div class="ttdef"><b>Definition:</b> raw_uv_ostream.h:31</div></div>
+<div class="ttc" id="aclasswpi_1_1raw__uv__ostream_html_aa9716286219806fed9d8900b21ce1602"><div class="ttname"><a href="classwpi_1_1raw__uv__ostream.html#aa9716286219806fed9d8900b21ce1602">wpi::raw_uv_ostream::flush</a></div><div class="ttdeci">void flush()=delete</div></div>
 <div class="ttc" id="aclasswpi_1_1raw__uv__ostream_html_ab6d4a1a2d44430001cbd6c74b52647a5"><div class="ttname"><a href="classwpi_1_1raw__uv__ostream.html#ab6d4a1a2d44430001cbd6c74b52647a5">wpi::raw_uv_ostream::bufs</a></div><div class="ttdeci">span&lt; uv::Buffer &gt; bufs()</div><div class="ttdoc">Returns an span to the buffers.</div><div class="ttdef"><b>Definition:</b> raw_uv_ostream.h:52</div></div>
 <div class="ttc" id="aclasswpi_1_1span_html"><div class="ttname"><a href="classwpi_1_1span.html">wpi::span</a></div><div class="ttdef"><b>Definition:</b> span.h:114</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1_buffer_html"><div class="ttname"><a href="classwpi_1_1uv_1_1_buffer.html">wpi::uv::Buffer</a></div><div class="ttdoc">Data buffer.</div><div class="ttdef"><b>Definition:</b> Buffer.h:23</div></div>
+<div class="ttc" id="aclasswpi_1_1uv_1_1_buffer_html_a5189d92a1c07235f0503dd4f6fdffa34"><div class="ttname"><a href="classwpi_1_1uv_1_1_buffer.html#a5189d92a1c07235f0503dd4f6fdffa34">wpi::uv::Buffer::Allocate</a></div><div class="ttdeci">static Buffer Allocate(size_t size)</div><div class="ttdef"><b>Definition:</b> Buffer.h:52</div></div>
+<div class="ttc" id="anamespace_eigen_1_1numext_html_a637f20cd528b31ef3ce8d1ef803ebbde"><div class="ttname"><a href="namespace_eigen_1_1numext.html#a637f20cd528b31ef3ce8d1ef803ebbde">Eigen::numext::uint64_t</a></div><div class="ttdeci">typedef::uint64_t uint64_t</div><div class="ttdef"><b>Definition:</b> Meta.h:58</div></div>
+<div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> Errc.h:84</div></div>
+<div class="ttc" id="anamespacewpi_html"><div class="ttname"><a href="namespacewpi.html">wpi</a></div><div class="ttdef"><b>Definition:</b> PortForwarder.h:13</div></div>
+<div class="ttc" id="araw__ostream_8h_html"><div class="ttname"><a href="raw__ostream_8h.html">raw_ostream.h</a></div></div>
+<div class="ttc" id="aspan_8h_html"><div class="ttname"><a href="span_8h.html">span.h</a></div></div>
 <div class="ttc" id="astructdata_html"><div class="ttname"><a href="structdata.html">data</a></div><div class="ttdef"><b>Definition:</b> format.h:897</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><b>raw_uv_ostream.h</b></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:44 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><a class="el" href="raw__uv__ostream_8h.html">raw_uv_ostream.h</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:30 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

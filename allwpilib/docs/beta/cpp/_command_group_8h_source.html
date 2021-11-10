@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('_command_group_8h_source.html',''); in
   <div class="headertitle"><div class="title">CommandGroup.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
+<a href="_command_group_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Open Source Software; you can modify and/or share it under the terms of</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// the WPILib BSD license file in the root directory of this project.</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
@@ -103,12 +103,12 @@ $(document).ready(function(){initNavTree('_command_group_8h_source.html',''); in
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;string_view&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;units/time.h&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;<a class="code" href="time_8h.html">units/time.h</a>&gt;</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;frc/commands/Command.h&quot;</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;frc/commands/CommandGroupEntry.h&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="wpilib_old_commands_2src_2main_2native_2include_2frc_2commands_2_command_8h.html">frc/commands/Command.h</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="_command_group_entry_8h.html">frc/commands/CommandGroupEntry.h</a>&quot;</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span>frc {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacefrc.html">frc</a> {</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"></span> </div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">/**</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> * A CommandGroup is a list of commands which are executed in sequence.</span></div>
@@ -129,19 +129,19 @@ $(document).ready(function(){initNavTree('_command_group_8h_source.html',''); in
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classfrc_1_1_command_group.html">   34</a></span><span class="keyword">class </span><a class="code hl_class" href="classfrc_1_1_command_group.html">CommandGroup</a> : <span class="keyword">public</span> <a class="code hl_class" href="classfrc_1_1_command.html">Command</a> {</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <a class="code hl_class" href="classfrc_1_1_command_group.html">CommandGroup</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="classfrc_1_1_command_group.html#a037d2fc890c4801c108894588dcba8e9">   36</a></span>  <a class="code hl_function" href="classfrc_1_1_command_group.html#a037d2fc890c4801c108894588dcba8e9">CommandGroup</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment"></span> </div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">   * Creates a new CommandGroup with the given name.</span></div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">   *</span></div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">   * @param name The name for this command group</span></div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classfrc_1_1_command_group.html#aac0366062af947f0a6250d2cb771379d">   43</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classfrc_1_1_command_group.html#aac0366062af947f0a6250d2cb771379d">CommandGroup</a>(std::string_view name);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classfrc_1_1_command_group.html#aac0366062af947f0a6250d2cb771379d">   43</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classfrc_1_1_command_group.html#aac0366062af947f0a6250d2cb771379d">CommandGroup</a>(<a class="code hl_typedef" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> name);</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <a class="code hl_class" href="classfrc_1_1_command_group.html">~CommandGroup</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classfrc_1_1_command_group.html#a548389f679dc39c8b6fdd013699ff318">   45</a></span>  <a class="code hl_function" href="classfrc_1_1_command_group.html#a548389f679dc39c8b6fdd013699ff318">~CommandGroup</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <a class="code hl_class" href="classfrc_1_1_command_group.html">CommandGroup</a>(<a class="code hl_class" href="classfrc_1_1_command_group.html">CommandGroup</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <a class="code hl_class" href="classfrc_1_1_command_group.html">CommandGroup</a>&amp; operator=(<a class="code hl_class" href="classfrc_1_1_command_group.html">CommandGroup</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="classfrc_1_1_command_group.html#a29a03c1e607cd4ef997ef52571309239">   47</a></span>  <a class="code hl_function" href="classfrc_1_1_command_group.html#a29a03c1e607cd4ef997ef52571309239">CommandGroup</a>(<a class="code hl_class" href="classfrc_1_1_command_group.html">CommandGroup</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classfrc_1_1_command_group.html#a256ccbfafdaea19b7c036929a48b880a">   48</a></span>  <a class="code hl_class" href="classfrc_1_1_command_group.html">CommandGroup</a>&amp; <a class="code hl_function" href="classfrc_1_1_command_group.html#a256ccbfafdaea19b7c036929a48b880a">operator=</a>(<a class="code hl_class" href="classfrc_1_1_command_group.html">CommandGroup</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment"></span> </div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">   * Adds a new Command to the group. The Command will be started after all the</span></div>
@@ -223,9 +223,9 @@ $(document).ready(function(){initNavTree('_command_group_8h_source.html',''); in
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="classfrc_1_1_command_group.html#a76df274bd89b823503e0ab12a897f820">  128</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_command_group.html#a76df274bd89b823503e0ab12a897f820">AddParallel</a>(<a class="code hl_class" href="classfrc_1_1_command.html">Command</a>* command, units::second_t timeout);</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>  <span class="keywordtype">bool</span> IsInterruptible() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="classfrc_1_1_command_group.html#abf1e593e7fc87a385f32b6e0ebf7613a">  130</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classfrc_1_1_command_group.html#abf1e593e7fc87a385f32b6e0ebf7613a">IsInterruptible</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>  <span class="keywordtype">int</span> GetSize() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="classfrc_1_1_command_group.html#a4d13169c046bc91d3e69ce03b2709d07">  132</a></span>  <span class="keywordtype">int</span> <a class="code hl_function" href="classfrc_1_1_command_group.html#a4d13169c046bc91d3e69ce03b2709d07">GetSize</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> <span class="keyword">protected</span>:<span class="comment"></span></div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="comment">  /**</span></div>
@@ -253,10 +253,10 @@ $(document).ready(function(){initNavTree('_command_group_8h_source.html',''); in
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno"><a class="line" href="classfrc_1_1_command_group.html#a2a54d0bf08d57c1d1cf2f4ff4ecab805">  158</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_command_group.html#a2a54d0bf08d57c1d1cf2f4ff4ecab805">Interrupted</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>  <span class="keywordtype">void</span> _Initialize() <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>  <span class="keywordtype">void</span> _Execute() <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>  <span class="keywordtype">void</span> _End() <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>  <span class="keywordtype">void</span> _Interrupted() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="classfrc_1_1_command_group.html#a40bc24e274d0b85b4c7eae4311d337e6">  160</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_command_group.html#a40bc24e274d0b85b4c7eae4311d337e6">_Initialize</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno"><a class="line" href="classfrc_1_1_command_group.html#ae7d78ab6da98e4fdaf3566fcda974d02">  161</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_command_group.html#ae7d78ab6da98e4fdaf3566fcda974d02">_Execute</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno"><a class="line" href="classfrc_1_1_command_group.html#a98d11ac6cf870ce4bfcbd70cd5f1c806">  162</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_command_group.html#a98d11ac6cf870ce4bfcbd70cd5f1c806">_End</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno"><a class="line" href="classfrc_1_1_command_group.html#a6666108e38c45ce3a86be83fc647929d">  163</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_command_group.html#a6666108e38c45ce3a86be83fc647929d">_Interrupted</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> <span class="keyword">private</span>:</div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>  <span class="keywordtype">void</span> CancelConflicts(<a class="code hl_class" href="classfrc_1_1_command.html">Command</a>* command);</div>
@@ -272,25 +272,40 @@ $(document).ready(function(){initNavTree('_command_group_8h_source.html',''); in
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>};</div>
 <div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span> </div>
 <div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>}  <span class="comment">// namespace frc</span></div>
+<div class="ttc" id="a_command_group_entry_8h_html"><div class="ttname"><a href="_command_group_entry_8h.html">CommandGroupEntry.h</a></div></div>
 <div class="ttc" id="aclassfrc_1_1_command_group_html"><div class="ttname"><a href="classfrc_1_1_command_group.html">frc::CommandGroup</a></div><div class="ttdoc">A CommandGroup is a list of commands which are executed in sequence.</div><div class="ttdef"><b>Definition:</b> CommandGroup.h:34</div></div>
+<div class="ttc" id="aclassfrc_1_1_command_group_html_a037d2fc890c4801c108894588dcba8e9"><div class="ttname"><a href="classfrc_1_1_command_group.html#a037d2fc890c4801c108894588dcba8e9">frc::CommandGroup::CommandGroup</a></div><div class="ttdeci">CommandGroup()=default</div></div>
 <div class="ttc" id="aclassfrc_1_1_command_group_html_a08df0889578941a8370e86374d3856c5"><div class="ttname"><a href="classfrc_1_1_command_group.html#a08df0889578941a8370e86374d3856c5">frc::CommandGroup::Execute</a></div><div class="ttdeci">void Execute() override</div><div class="ttdoc">Can be overridden by teams.</div></div>
+<div class="ttc" id="aclassfrc_1_1_command_group_html_a256ccbfafdaea19b7c036929a48b880a"><div class="ttname"><a href="classfrc_1_1_command_group.html#a256ccbfafdaea19b7c036929a48b880a">frc::CommandGroup::operator=</a></div><div class="ttdeci">CommandGroup &amp; operator=(CommandGroup &amp;&amp;)=default</div></div>
 <div class="ttc" id="aclassfrc_1_1_command_group_html_a27396af16cd7858a517aa482c39787dd"><div class="ttname"><a href="classfrc_1_1_command_group.html#a27396af16cd7858a517aa482c39787dd">frc::CommandGroup::AddParallel</a></div><div class="ttdeci">void AddParallel(Command *command)</div><div class="ttdoc">Adds a new child Command to the group.</div></div>
+<div class="ttc" id="aclassfrc_1_1_command_group_html_a29a03c1e607cd4ef997ef52571309239"><div class="ttname"><a href="classfrc_1_1_command_group.html#a29a03c1e607cd4ef997ef52571309239">frc::CommandGroup::CommandGroup</a></div><div class="ttdeci">CommandGroup(CommandGroup &amp;&amp;)=default</div></div>
 <div class="ttc" id="aclassfrc_1_1_command_group_html_a2a54d0bf08d57c1d1cf2f4ff4ecab805"><div class="ttname"><a href="classfrc_1_1_command_group.html#a2a54d0bf08d57c1d1cf2f4ff4ecab805">frc::CommandGroup::Interrupted</a></div><div class="ttdeci">void Interrupted() override</div><div class="ttdoc">Can be overridden by teams.</div></div>
 <div class="ttc" id="aclassfrc_1_1_command_group_html_a34df75b0c3f8ed52e5df08951c4984a9"><div class="ttname"><a href="classfrc_1_1_command_group.html#a34df75b0c3f8ed52e5df08951c4984a9">frc::CommandGroup::IsFinished</a></div><div class="ttdeci">bool IsFinished() override</div><div class="ttdoc">Can be overridden by teams.</div></div>
 <div class="ttc" id="aclassfrc_1_1_command_group_html_a369e18ff0ff13e340202477ba19383f9"><div class="ttname"><a href="classfrc_1_1_command_group.html#a369e18ff0ff13e340202477ba19383f9">frc::CommandGroup::Initialize</a></div><div class="ttdeci">void Initialize() override</div><div class="ttdoc">Can be overridden by teams.</div></div>
+<div class="ttc" id="aclassfrc_1_1_command_group_html_a40bc24e274d0b85b4c7eae4311d337e6"><div class="ttname"><a href="classfrc_1_1_command_group.html#a40bc24e274d0b85b4c7eae4311d337e6">frc::CommandGroup::_Initialize</a></div><div class="ttdeci">void _Initialize() override</div></div>
 <div class="ttc" id="aclassfrc_1_1_command_group_html_a4a747d7b886fdb886c9289b489410fd1"><div class="ttname"><a href="classfrc_1_1_command_group.html#a4a747d7b886fdb886c9289b489410fd1">frc::CommandGroup::End</a></div><div class="ttdeci">void End() override</div><div class="ttdoc">Can be overridden by teams.</div></div>
 <div class="ttc" id="aclassfrc_1_1_command_group_html_a4c46d380bcdc9eb75cceae1407efb1f1"><div class="ttname"><a href="classfrc_1_1_command_group.html#a4c46d380bcdc9eb75cceae1407efb1f1">frc::CommandGroup::AddSequential</a></div><div class="ttdeci">void AddSequential(Command *command)</div><div class="ttdoc">Adds a new Command to the group.</div></div>
+<div class="ttc" id="aclassfrc_1_1_command_group_html_a4d13169c046bc91d3e69ce03b2709d07"><div class="ttname"><a href="classfrc_1_1_command_group.html#a4d13169c046bc91d3e69ce03b2709d07">frc::CommandGroup::GetSize</a></div><div class="ttdeci">int GetSize() const</div></div>
+<div class="ttc" id="aclassfrc_1_1_command_group_html_a548389f679dc39c8b6fdd013699ff318"><div class="ttname"><a href="classfrc_1_1_command_group.html#a548389f679dc39c8b6fdd013699ff318">frc::CommandGroup::~CommandGroup</a></div><div class="ttdeci">~CommandGroup() override=default</div></div>
+<div class="ttc" id="aclassfrc_1_1_command_group_html_a6666108e38c45ce3a86be83fc647929d"><div class="ttname"><a href="classfrc_1_1_command_group.html#a6666108e38c45ce3a86be83fc647929d">frc::CommandGroup::_Interrupted</a></div><div class="ttdeci">void _Interrupted() override</div></div>
 <div class="ttc" id="aclassfrc_1_1_command_group_html_a76df274bd89b823503e0ab12a897f820"><div class="ttname"><a href="classfrc_1_1_command_group.html#a76df274bd89b823503e0ab12a897f820">frc::CommandGroup::AddParallel</a></div><div class="ttdeci">void AddParallel(Command *command, units::second_t timeout)</div><div class="ttdoc">Adds a new child Command to the group with the given timeout.</div></div>
+<div class="ttc" id="aclassfrc_1_1_command_group_html_a98d11ac6cf870ce4bfcbd70cd5f1c806"><div class="ttname"><a href="classfrc_1_1_command_group.html#a98d11ac6cf870ce4bfcbd70cd5f1c806">frc::CommandGroup::_End</a></div><div class="ttdeci">void _End() override</div></div>
 <div class="ttc" id="aclassfrc_1_1_command_group_html_a9dea466200dbc08d7ea936aa4d42a2ec"><div class="ttname"><a href="classfrc_1_1_command_group.html#a9dea466200dbc08d7ea936aa4d42a2ec">frc::CommandGroup::AddSequential</a></div><div class="ttdeci">void AddSequential(Command *command, units::second_t timeout)</div><div class="ttdoc">Adds a new Command to the group with a given timeout.</div></div>
 <div class="ttc" id="aclassfrc_1_1_command_group_html_aac0366062af947f0a6250d2cb771379d"><div class="ttname"><a href="classfrc_1_1_command_group.html#aac0366062af947f0a6250d2cb771379d">frc::CommandGroup::CommandGroup</a></div><div class="ttdeci">CommandGroup(std::string_view name)</div><div class="ttdoc">Creates a new CommandGroup with the given name.</div></div>
+<div class="ttc" id="aclassfrc_1_1_command_group_html_abf1e593e7fc87a385f32b6e0ebf7613a"><div class="ttname"><a href="classfrc_1_1_command_group.html#abf1e593e7fc87a385f32b6e0ebf7613a">frc::CommandGroup::IsInterruptible</a></div><div class="ttdeci">bool IsInterruptible() const</div></div>
+<div class="ttc" id="aclassfrc_1_1_command_group_html_ae7d78ab6da98e4fdaf3566fcda974d02"><div class="ttname"><a href="classfrc_1_1_command_group.html#ae7d78ab6da98e4fdaf3566fcda974d02">frc::CommandGroup::_Execute</a></div><div class="ttdeci">void _Execute() override</div></div>
 <div class="ttc" id="aclassfrc_1_1_command_html"><div class="ttname"><a href="classfrc_1_1_command.html">frc::Command</a></div><div class="ttdoc">The Command class is at the very core of the entire command framework.</div><div class="ttdef"><b>Definition:</b> Command.h:46</div></div>
+<div class="ttc" id="acore_8h_html_a204ca715c2febee035464fa53dfc50c4"><div class="ttname"><a href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">string_view</a></div><div class="ttdeci">basic_string_view&lt; char &gt; string_view</div><div class="ttdef"><b>Definition:</b> core.h:529</div></div>
+<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> VisionRunner.inc:9</div></div>
+<div class="ttc" id="atime_8h_html"><div class="ttname"><a href="time_8h.html">time.h</a></div></div>
+<div class="ttc" id="awpilib_old_commands_2src_2main_2native_2include_2frc_2commands_2_command_8h_html"><div class="ttname"><a href="wpilib_old_commands_2src_2main_2native_2include_2frc_2commands_2_command_8h.html">Command.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_bb1991b688e3fae464f82f03a0e274c4.html">frc</a></li><li class="navelem"><a class="el" href="dir_4ab5eeb5ed54f6cf3cf8c80dd363976a.html">commands</a></li><li class="navelem"><b>CommandGroup.h</b></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:35 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="dir_bb1991b688e3fae464f82f03a0e274c4.html">frc</a></li><li class="navelem"><a class="el" href="dir_4ab5eeb5ed54f6cf3cf8c80dd363976a.html">commands</a></li><li class="navelem"><a class="el" href="_command_group_8h.html">CommandGroup.h</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:21 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

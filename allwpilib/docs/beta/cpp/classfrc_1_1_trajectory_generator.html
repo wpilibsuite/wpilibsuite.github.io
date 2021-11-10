@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -106,8 +106,7 @@ $(document).ready(function(){initNavTree('classfrc_1_1_trajectory_generator.html
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a239306eb310908a5a418b57f31f29379"><td class="memItemLeft" align="right" valign="top"><a id="a239306eb310908a5a418b57f31f29379" name="a239306eb310908a5a418b57f31f29379"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>PoseWithCurvature</b> = std::pair&lt; <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a>, <a class="el" href="classunits_1_1unit__t.html">units::curvature_t</a> &gt;</td></tr>
+<tr class="memitem:a239306eb310908a5a418b57f31f29379"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_trajectory_generator.html#a239306eb310908a5a418b57f31f29379">PoseWithCurvature</a> = std::pair&lt; <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a>, <a class="el" href="namespaceunits.html#ad6027770bc97176b198c3d330cde7a75">units::curvature_t</a> &gt;</td></tr>
 <tr class="separator:a239306eb310908a5a418b57f31f29379"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
@@ -125,7 +124,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:a6ecbc444af71033c7f8d296a77824e2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a trajectory from the given waypoints and config.  <a href="classfrc_1_1_trajectory_generator.html#a6ecbc444af71033c7f8d296a77824e2a">More...</a><br /></td></tr>
 <tr class="separator:a6ecbc444af71033c7f8d296a77824e2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab011ac2d0577cd02098a42db6b762b5a"><td class="memTemplParams" colspan="2">template&lt;typename <a class="el" href="classfrc_1_1_spline.html">Spline</a> &gt; </td></tr>
-<tr class="memitem:ab011ac2d0577cd02098a42db6b762b5a"><td class="memTemplItemLeft" align="right" valign="top">static std::vector&lt; PoseWithCurvature &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classfrc_1_1_trajectory_generator.html#ab011ac2d0577cd02098a42db6b762b5a">SplinePointsFromSplines</a> (const std::vector&lt; <a class="el" href="classfrc_1_1_spline.html">Spline</a> &gt; &amp;splines)</td></tr>
+<tr class="memitem:ab011ac2d0577cd02098a42db6b762b5a"><td class="memTemplItemLeft" align="right" valign="top">static std::vector&lt; <a class="el" href="classfrc_1_1_trajectory_generator.html#a239306eb310908a5a418b57f31f29379">PoseWithCurvature</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classfrc_1_1_trajectory_generator.html#ab011ac2d0577cd02098a42db6b762b5a">SplinePointsFromSplines</a> (const std::vector&lt; <a class="el" href="classfrc_1_1_spline.html">Spline</a> &gt; &amp;splines)</td></tr>
 <tr class="memdesc:ab011ac2d0577cd02098a42db6b762b5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate spline points from a vector of splines by parameterizing the splines.  <a href="classfrc_1_1_trajectory_generator.html#ab011ac2d0577cd02098a42db6b762b5a">More...</a><br /></td></tr>
 <tr class="separator:ab011ac2d0577cd02098a42db6b762b5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a2b8900988d66af4275707dd6431305"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_trajectory_generator.html#a4a2b8900988d66af4275707dd6431305">SetErrorHandler</a> (std::function&lt; void(const char *)&gt; func)</td></tr>
@@ -134,7 +133,22 @@ Static Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Helper class used to generate trajectories with various constraints. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a239306eb310908a5a418b57f31f29379" name="a239306eb310908a5a418b57f31f29379"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a239306eb310908a5a418b57f31f29379">&#9670;&nbsp;</a></span>PoseWithCurvature</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="classfrc_1_1_trajectory_generator.html#a239306eb310908a5a418b57f31f29379">frc::TrajectoryGenerator::PoseWithCurvature</a> =  std::pair&lt;<a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a>, <a class="el" href="namespaceunits.html#ad6027770bc97176b198c3d330cde7a75">units::curvature_t</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a439a48388aa69117eea3b2fa582d6254" name="a439a48388aa69117eea3b2fa582d6254"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a439a48388aa69117eea3b2fa582d6254">&#9670;&nbsp;</a></span>GenerateTrajectory() <span class="overload">[1/4]</span></h2>
 
@@ -398,7 +412,7 @@ template&lt;typename <a class="el" href="classfrc_1_1_spline.html">Spline</a> &g
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static std::vector&lt; PoseWithCurvature &gt; frc::TrajectoryGenerator::SplinePointsFromSplines </td>
+          <td class="memname">static std::vector&lt; <a class="el" href="classfrc_1_1_trajectory_generator.html#a239306eb310908a5a418b57f31f29379">PoseWithCurvature</a> &gt; frc::TrajectoryGenerator::SplinePointsFromSplines </td>
           <td>(</td>
           <td class="paramtype">const std::vector&lt; <a class="el" href="classfrc_1_1_spline.html">Spline</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>splines</em></td><td>)</td>
@@ -431,8 +445,8 @@ template&lt;typename <a class="el" href="classfrc_1_1_spline.html">Spline</a> &g
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1_trajectory_generator.html">TrajectoryGenerator</a></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:51 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_trajectory_generator.html">TrajectoryGenerator</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:38 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

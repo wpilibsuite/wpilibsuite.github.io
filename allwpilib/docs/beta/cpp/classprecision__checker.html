@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -97,21 +97,110 @@ $(document).ready(function(){initNavTree('classprecision__checker.html',''); ini
   <div class="headertitle"><div class="title">precision_checker&lt; ErrorHandler &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="format_8h_source.html">/home/runner/work/allwpilib/allwpilib/wpiutil/src/main/native/fmtlib/include/fmt/format.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a958b58398c6e46b50af8e44294ffc6a9"><td class="memItemLeft" align="right" valign="top"><a id="a958b58398c6e46b50af8e44294ffc6a9" name="a958b58398c6e46b50af8e44294ffc6a9"></a>
-FMT_CONSTEXPR&#160;</td><td class="memItemRight" valign="bottom"><b>precision_checker</b> (ErrorHandler &amp;eh)</td></tr>
+<tr class="memitem:a958b58398c6e46b50af8e44294ffc6a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classprecision__checker.html#a958b58398c6e46b50af8e44294ffc6a9">precision_checker</a> (ErrorHandler &amp;eh)</td></tr>
 <tr class="separator:a958b58398c6e46b50af8e44294ffc6a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9b7375b79558b6f510f0d8c45e03eb8"><td class="memTemplParams" colspan="2"><a id="ad9b7375b79558b6f510f0d8c45e03eb8" name="ad9b7375b79558b6f510f0d8c45e03eb8"></a>
-template&lt;typename T , FMT_ENABLE_IF(is_integer&lt; T &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </td></tr>
-<tr class="memitem:ad9b7375b79558b6f510f0d8c45e03eb8"><td class="memTemplItemLeft" align="right" valign="top">FMT_CONSTEXPR auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator()</b> (T <a class="el" href="classvalue.html">value</a>) -&gt; unsigned long long</td></tr>
+<tr class="memitem:ad9b7375b79558b6f510f0d8c45e03eb8"><td class="memTemplParams" colspan="2">template&lt;typename T , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(<a class="el" href="format_8h.html#a180c7fe352095f4ad7379ede8d1da1a0">is_integer</a>&lt; T &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </td></tr>
+<tr class="memitem:ad9b7375b79558b6f510f0d8c45e03eb8"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classprecision__checker.html#ad9b7375b79558b6f510f0d8c45e03eb8">operator()</a> (T <a class="el" href="classvalue.html">value</a>) -&gt; unsigned long long</td></tr>
 <tr class="separator:ad9b7375b79558b6f510f0d8c45e03eb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86a60f46953ef469cf6a932570cedf32"><td class="memTemplParams" colspan="2"><a id="a86a60f46953ef469cf6a932570cedf32" name="a86a60f46953ef469cf6a932570cedf32"></a>
-template&lt;typename T , FMT_ENABLE_IF(!is_integer&lt; T &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </td></tr>
-<tr class="memitem:a86a60f46953ef469cf6a932570cedf32"><td class="memTemplItemLeft" align="right" valign="top">FMT_CONSTEXPR auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator()</b> (T) -&gt; unsigned long long</td></tr>
+<tr class="memitem:a86a60f46953ef469cf6a932570cedf32"><td class="memTemplParams" colspan="2">template&lt;typename T , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(!<a class="el" href="format_8h.html#a180c7fe352095f4ad7379ede8d1da1a0">is_integer</a>&lt; T &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </td></tr>
+<tr class="memitem:a86a60f46953ef469cf6a932570cedf32"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classprecision__checker.html#a86a60f46953ef469cf6a932570cedf32">operator()</a> (T) -&gt; unsigned long long</td></tr>
 <tr class="separator:a86a60f46953ef469cf6a932570cedf32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a958b58398c6e46b50af8e44294ffc6a9" name="a958b58398c6e46b50af8e44294ffc6a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a958b58398c6e46b50af8e44294ffc6a9">&#9670;&nbsp;</a></span>precision_checker()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ErrorHandler &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> <a class="el" href="classprecision__checker.html">precision_checker</a>&lt; ErrorHandler &gt;::<a class="el" href="classprecision__checker.html">precision_checker</a> </td>
+          <td>(</td>
+          <td class="paramtype">ErrorHandler &amp;&#160;</td>
+          <td class="paramname"><em>eh</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad9b7375b79558b6f510f0d8c45e03eb8" name="ad9b7375b79558b6f510f0d8c45e03eb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9b7375b79558b6f510f0d8c45e03eb8">&#9670;&nbsp;</a></span>operator()() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ErrorHandler &gt; </div>
+<div class="memtemplate">
+template&lt;typename T , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(<a class="el" href="format_8h.html#a180c7fe352095f4ad7379ede8d1da1a0">is_integer</a>&lt; T &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> auto <a class="el" href="classprecision__checker.html">precision_checker</a>&lt; ErrorHandler &gt;::operator() </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td> -&gt; unsigned long long </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a86a60f46953ef469cf6a932570cedf32" name="a86a60f46953ef469cf6a932570cedf32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86a60f46953ef469cf6a932570cedf32">&#9670;&nbsp;</a></span>operator()() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ErrorHandler &gt; </div>
+<div class="memtemplate">
+template&lt;typename T , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(!<a class="el" href="format_8h.html#a180c7fe352095f4ad7379ede8d1da1a0">is_integer</a>&lt; T &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="core_8h.html#a69201cb276383873487bf68b4ef8b4cd">FMT_CONSTEXPR</a> auto <a class="el" href="classprecision__checker.html">precision_checker</a>&lt; ErrorHandler &gt;::operator() </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> -&gt; unsigned long long </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>/home/runner/work/allwpilib/allwpilib/wpiutil/src/main/native/fmtlib/include/fmt/<a class="el" href="format_8h_source.html">format.h</a></li>
 </ul>
@@ -121,7 +210,7 @@ template&lt;typename T , FMT_ENABLE_IF(!is_integer&lt; T &gt;::<a class="el" hre
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classprecision__checker.html">precision_checker</a></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:45 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:32 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

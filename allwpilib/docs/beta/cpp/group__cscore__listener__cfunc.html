@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -99,47 +99,357 @@ $(document).ready(function(){initNavTree('group__cscore__listener__cfunc.html','
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga63ebcb721a3d6a11744d7ac8640002ce"><td class="memItemLeft" align="right" valign="top"><a id="ga63ebcb721a3d6a11744d7ac8640002ce" name="ga63ebcb721a3d6a11744d7ac8640002ce"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>CS_SetListenerOnStart</b> (void(*onStart)(void *<a class="el" href="structdata.html">data</a>), void *<a class="el" href="structdata.html">data</a>)</td></tr>
+<tr class="memitem:ga63ebcb721a3d6a11744d7ac8640002ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cscore__listener__cfunc.html#ga63ebcb721a3d6a11744d7ac8640002ce">CS_SetListenerOnStart</a> (void(*onStart)(void *<a class="el" href="structdata.html">data</a>), void *<a class="el" href="structdata.html">data</a>)</td></tr>
 <tr class="separator:ga63ebcb721a3d6a11744d7ac8640002ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4cbd1deafda979fdfc21112cd6abe9f3"><td class="memItemLeft" align="right" valign="top"><a id="ga4cbd1deafda979fdfc21112cd6abe9f3" name="ga4cbd1deafda979fdfc21112cd6abe9f3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>CS_SetListenerOnExit</b> (void(*onExit)(void *<a class="el" href="structdata.html">data</a>), void *<a class="el" href="structdata.html">data</a>)</td></tr>
+<tr class="memitem:ga4cbd1deafda979fdfc21112cd6abe9f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cscore__listener__cfunc.html#ga4cbd1deafda979fdfc21112cd6abe9f3">CS_SetListenerOnExit</a> (void(*onExit)(void *<a class="el" href="structdata.html">data</a>), void *<a class="el" href="structdata.html">data</a>)</td></tr>
 <tr class="separator:ga4cbd1deafda979fdfc21112cd6abe9f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga99a8dd6069f7f3f96aa923c5cc1a809b"><td class="memItemLeft" align="right" valign="top"><a id="ga99a8dd6069f7f3f96aa923c5cc1a809b" name="ga99a8dd6069f7f3f96aa923c5cc1a809b"></a>
-CS_Listener&#160;</td><td class="memItemRight" valign="bottom"><b>CS_AddListener</b> (void *<a class="el" href="structdata.html">data</a>, void(*callback)(void *<a class="el" href="structdata.html">data</a>, const struct <a class="el" href="struct_c_s___event.html">CS_Event</a> *event), int eventMask, CS_Bool immediateNotify, CS_Status *status)</td></tr>
+<tr class="memitem:ga99a8dd6069f7f3f96aa923c5cc1a809b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__cscore__typedefs.html#gacc95a72cf624459ca04bf9e70f827a07">CS_Listener</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cscore__listener__cfunc.html#ga99a8dd6069f7f3f96aa923c5cc1a809b">CS_AddListener</a> (void *<a class="el" href="structdata.html">data</a>, void(*callback)(void *<a class="el" href="structdata.html">data</a>, const struct <a class="el" href="struct_c_s___event.html">CS_Event</a> *event), int eventMask, <a class="el" href="group__cscore__typedefs.html#gac2cc6a97b0195a8369709b6e03a7581c">CS_Bool</a> immediateNotify, <a class="el" href="group__cscore__typedefs.html#ga56491588761e81abbf1168ecbf3926f5">CS_Status</a> *status)</td></tr>
 <tr class="separator:ga99a8dd6069f7f3f96aa923c5cc1a809b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6abb2e33f17c5dc953be4926d74a2c12"><td class="memItemLeft" align="right" valign="top"><a id="ga6abb2e33f17c5dc953be4926d74a2c12" name="ga6abb2e33f17c5dc953be4926d74a2c12"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>CS_RemoveListener</b> (CS_Listener handle, CS_Status *status)</td></tr>
+<tr class="memitem:ga6abb2e33f17c5dc953be4926d74a2c12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cscore__listener__cfunc.html#ga6abb2e33f17c5dc953be4926d74a2c12">CS_RemoveListener</a> (<a class="el" href="group__cscore__typedefs.html#gacc95a72cf624459ca04bf9e70f827a07">CS_Listener</a> handle, <a class="el" href="group__cscore__typedefs.html#ga56491588761e81abbf1168ecbf3926f5">CS_Status</a> *status)</td></tr>
 <tr class="separator:ga6abb2e33f17c5dc953be4926d74a2c12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga21d6e884c0c36beb8c52d972615b9a81"><td class="memItemLeft" align="right" valign="top"><a id="ga21d6e884c0c36beb8c52d972615b9a81" name="ga21d6e884c0c36beb8c52d972615b9a81"></a>
-CS_ListenerPoller&#160;</td><td class="memItemRight" valign="bottom"><b>CS_CreateListenerPoller</b> (void)</td></tr>
+<tr class="memitem:ga21d6e884c0c36beb8c52d972615b9a81"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__cscore__typedefs.html#ga58c5d606aaff1901511ace3f5832e08f">CS_ListenerPoller</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cscore__listener__cfunc.html#ga21d6e884c0c36beb8c52d972615b9a81">CS_CreateListenerPoller</a> (void)</td></tr>
 <tr class="separator:ga21d6e884c0c36beb8c52d972615b9a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4f5bc25de5215aba49945ef1bdb845de"><td class="memItemLeft" align="right" valign="top"><a id="ga4f5bc25de5215aba49945ef1bdb845de" name="ga4f5bc25de5215aba49945ef1bdb845de"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>CS_DestroyListenerPoller</b> (CS_ListenerPoller poller)</td></tr>
+<tr class="memitem:ga4f5bc25de5215aba49945ef1bdb845de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cscore__listener__cfunc.html#ga4f5bc25de5215aba49945ef1bdb845de">CS_DestroyListenerPoller</a> (<a class="el" href="group__cscore__typedefs.html#ga58c5d606aaff1901511ace3f5832e08f">CS_ListenerPoller</a> poller)</td></tr>
 <tr class="separator:ga4f5bc25de5215aba49945ef1bdb845de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga044bf78b743ee16be34a230262e518e9"><td class="memItemLeft" align="right" valign="top"><a id="ga044bf78b743ee16be34a230262e518e9" name="ga044bf78b743ee16be34a230262e518e9"></a>
-CS_Listener&#160;</td><td class="memItemRight" valign="bottom"><b>CS_AddPolledListener</b> (CS_ListenerPoller poller, int eventMask, CS_Bool immediateNotify, CS_Status *status)</td></tr>
+<tr class="memitem:ga044bf78b743ee16be34a230262e518e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__cscore__typedefs.html#gacc95a72cf624459ca04bf9e70f827a07">CS_Listener</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cscore__listener__cfunc.html#ga044bf78b743ee16be34a230262e518e9">CS_AddPolledListener</a> (<a class="el" href="group__cscore__typedefs.html#ga58c5d606aaff1901511ace3f5832e08f">CS_ListenerPoller</a> poller, int eventMask, <a class="el" href="group__cscore__typedefs.html#gac2cc6a97b0195a8369709b6e03a7581c">CS_Bool</a> immediateNotify, <a class="el" href="group__cscore__typedefs.html#ga56491588761e81abbf1168ecbf3926f5">CS_Status</a> *status)</td></tr>
 <tr class="separator:ga044bf78b743ee16be34a230262e518e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac4c88f2fc6e89278983bcc367cbcad8a"><td class="memItemLeft" align="right" valign="top"><a id="gac4c88f2fc6e89278983bcc367cbcad8a" name="gac4c88f2fc6e89278983bcc367cbcad8a"></a>
-struct <a class="el" href="struct_c_s___event.html">CS_Event</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>CS_PollListener</b> (CS_ListenerPoller poller, int *count)</td></tr>
+<tr class="memitem:gac4c88f2fc6e89278983bcc367cbcad8a"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_c_s___event.html">CS_Event</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cscore__listener__cfunc.html#gac4c88f2fc6e89278983bcc367cbcad8a">CS_PollListener</a> (<a class="el" href="group__cscore__typedefs.html#ga58c5d606aaff1901511ace3f5832e08f">CS_ListenerPoller</a> poller, int *<a class="el" href="core_8h.html#a66b93840aa6a29b3802202f99668f78a">count</a>)</td></tr>
 <tr class="separator:gac4c88f2fc6e89278983bcc367cbcad8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga84212a407b428588d8e6095323ee4582"><td class="memItemLeft" align="right" valign="top"><a id="ga84212a407b428588d8e6095323ee4582" name="ga84212a407b428588d8e6095323ee4582"></a>
-struct <a class="el" href="struct_c_s___event.html">CS_Event</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>CS_PollListenerTimeout</b> (CS_ListenerPoller poller, int *count, double timeout, CS_Bool *timedOut)</td></tr>
+<tr class="memitem:ga84212a407b428588d8e6095323ee4582"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="struct_c_s___event.html">CS_Event</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cscore__listener__cfunc.html#ga84212a407b428588d8e6095323ee4582">CS_PollListenerTimeout</a> (<a class="el" href="group__cscore__typedefs.html#ga58c5d606aaff1901511ace3f5832e08f">CS_ListenerPoller</a> poller, int *<a class="el" href="core_8h.html#a66b93840aa6a29b3802202f99668f78a">count</a>, double timeout, <a class="el" href="group__cscore__typedefs.html#gac2cc6a97b0195a8369709b6e03a7581c">CS_Bool</a> *timedOut)</td></tr>
 <tr class="separator:ga84212a407b428588d8e6095323ee4582"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae8a62cbc77e6edf13f778491cff0a2fd"><td class="memItemLeft" align="right" valign="top"><a id="gae8a62cbc77e6edf13f778491cff0a2fd" name="gae8a62cbc77e6edf13f778491cff0a2fd"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>CS_FreeEvents</b> (struct <a class="el" href="struct_c_s___event.html">CS_Event</a> *arr, int count)</td></tr>
+<tr class="memitem:gae8a62cbc77e6edf13f778491cff0a2fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cscore__listener__cfunc.html#gae8a62cbc77e6edf13f778491cff0a2fd">CS_FreeEvents</a> (struct <a class="el" href="struct_c_s___event.html">CS_Event</a> *arr, int <a class="el" href="core_8h.html#a66b93840aa6a29b3802202f99668f78a">count</a>)</td></tr>
 <tr class="separator:gae8a62cbc77e6edf13f778491cff0a2fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga748a935102fab2b693d49682cff0913b"><td class="memItemLeft" align="right" valign="top"><a id="ga748a935102fab2b693d49682cff0913b" name="ga748a935102fab2b693d49682cff0913b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>CS_CancelPollListener</b> (CS_ListenerPoller poller)</td></tr>
+<tr class="memitem:ga748a935102fab2b693d49682cff0913b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__cscore__listener__cfunc.html#ga748a935102fab2b693d49682cff0913b">CS_CancelPollListener</a> (<a class="el" href="group__cscore__typedefs.html#ga58c5d606aaff1901511ace3f5832e08f">CS_ListenerPoller</a> poller)</td></tr>
 <tr class="separator:ga748a935102fab2b693d49682cff0913b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ga99a8dd6069f7f3f96aa923c5cc1a809b" name="ga99a8dd6069f7f3f96aa923c5cc1a809b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga99a8dd6069f7f3f96aa923c5cc1a809b">&#9670;&nbsp;</a></span>CS_AddListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__cscore__typedefs.html#gacc95a72cf624459ca04bf9e70f827a07">CS_Listener</a> CS_AddListener </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void(*)(void *<a class="el" href="structdata.html">data</a>, const struct <a class="el" href="struct_c_s___event.html">CS_Event</a> *event)&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>eventMask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__cscore__typedefs.html#gac2cc6a97b0195a8369709b6e03a7581c">CS_Bool</a>&#160;</td>
+          <td class="paramname"><em>immediateNotify</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__cscore__typedefs.html#ga56491588761e81abbf1168ecbf3926f5">CS_Status</a> *&#160;</td>
+          <td class="paramname"><em>status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga044bf78b743ee16be34a230262e518e9" name="ga044bf78b743ee16be34a230262e518e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga044bf78b743ee16be34a230262e518e9">&#9670;&nbsp;</a></span>CS_AddPolledListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__cscore__typedefs.html#gacc95a72cf624459ca04bf9e70f827a07">CS_Listener</a> CS_AddPolledListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__cscore__typedefs.html#ga58c5d606aaff1901511ace3f5832e08f">CS_ListenerPoller</a>&#160;</td>
+          <td class="paramname"><em>poller</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>eventMask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__cscore__typedefs.html#gac2cc6a97b0195a8369709b6e03a7581c">CS_Bool</a>&#160;</td>
+          <td class="paramname"><em>immediateNotify</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__cscore__typedefs.html#ga56491588761e81abbf1168ecbf3926f5">CS_Status</a> *&#160;</td>
+          <td class="paramname"><em>status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga748a935102fab2b693d49682cff0913b" name="ga748a935102fab2b693d49682cff0913b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga748a935102fab2b693d49682cff0913b">&#9670;&nbsp;</a></span>CS_CancelPollListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CS_CancelPollListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__cscore__typedefs.html#ga58c5d606aaff1901511ace3f5832e08f">CS_ListenerPoller</a>&#160;</td>
+          <td class="paramname"><em>poller</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga21d6e884c0c36beb8c52d972615b9a81" name="ga21d6e884c0c36beb8c52d972615b9a81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga21d6e884c0c36beb8c52d972615b9a81">&#9670;&nbsp;</a></span>CS_CreateListenerPoller()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__cscore__typedefs.html#ga58c5d606aaff1901511ace3f5832e08f">CS_ListenerPoller</a> CS_CreateListenerPoller </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga4f5bc25de5215aba49945ef1bdb845de" name="ga4f5bc25de5215aba49945ef1bdb845de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4f5bc25de5215aba49945ef1bdb845de">&#9670;&nbsp;</a></span>CS_DestroyListenerPoller()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CS_DestroyListenerPoller </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__cscore__typedefs.html#ga58c5d606aaff1901511ace3f5832e08f">CS_ListenerPoller</a>&#160;</td>
+          <td class="paramname"><em>poller</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae8a62cbc77e6edf13f778491cff0a2fd" name="gae8a62cbc77e6edf13f778491cff0a2fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae8a62cbc77e6edf13f778491cff0a2fd">&#9670;&nbsp;</a></span>CS_FreeEvents()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CS_FreeEvents </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="struct_c_s___event.html">CS_Event</a> *&#160;</td>
+          <td class="paramname"><em>arr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gac4c88f2fc6e89278983bcc367cbcad8a" name="gac4c88f2fc6e89278983bcc367cbcad8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac4c88f2fc6e89278983bcc367cbcad8a">&#9670;&nbsp;</a></span>CS_PollListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="struct_c_s___event.html">CS_Event</a> * CS_PollListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__cscore__typedefs.html#ga58c5d606aaff1901511ace3f5832e08f">CS_ListenerPoller</a>&#160;</td>
+          <td class="paramname"><em>poller</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga84212a407b428588d8e6095323ee4582" name="ga84212a407b428588d8e6095323ee4582"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga84212a407b428588d8e6095323ee4582">&#9670;&nbsp;</a></span>CS_PollListenerTimeout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="struct_c_s___event.html">CS_Event</a> * CS_PollListenerTimeout </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__cscore__typedefs.html#ga58c5d606aaff1901511ace3f5832e08f">CS_ListenerPoller</a>&#160;</td>
+          <td class="paramname"><em>poller</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>timeout</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__cscore__typedefs.html#gac2cc6a97b0195a8369709b6e03a7581c">CS_Bool</a> *&#160;</td>
+          <td class="paramname"><em>timedOut</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga6abb2e33f17c5dc953be4926d74a2c12" name="ga6abb2e33f17c5dc953be4926d74a2c12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6abb2e33f17c5dc953be4926d74a2c12">&#9670;&nbsp;</a></span>CS_RemoveListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CS_RemoveListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__cscore__typedefs.html#gacc95a72cf624459ca04bf9e70f827a07">CS_Listener</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__cscore__typedefs.html#ga56491588761e81abbf1168ecbf3926f5">CS_Status</a> *&#160;</td>
+          <td class="paramname"><em>status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga4cbd1deafda979fdfc21112cd6abe9f3" name="ga4cbd1deafda979fdfc21112cd6abe9f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4cbd1deafda979fdfc21112cd6abe9f3">&#9670;&nbsp;</a></span>CS_SetListenerOnExit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CS_SetListenerOnExit </td>
+          <td>(</td>
+          <td class="paramtype">void(*)(void *<a class="el" href="structdata.html">data</a>)&#160;</td>
+          <td class="paramname"><em>onExit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga63ebcb721a3d6a11744d7ac8640002ce" name="ga63ebcb721a3d6a11744d7ac8640002ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga63ebcb721a3d6a11744d7ac8640002ce">&#9670;&nbsp;</a></span>CS_SetListenerOnStart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CS_SetListenerOnStart </td>
+          <td>(</td>
+          <td class="paramtype">void(*)(void *<a class="el" href="structdata.html">data</a>)&#160;</td>
+          <td class="paramname"><em>onStart</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:44 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:32 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -1,5 +1,16 @@
 var classfrc_1_1_driver_station =
 [
+    [ "Alliance", "classfrc_1_1_driver_station.html#a5461226aab199d7e2fb0657cd2d81f58", [
+      [ "kRed", "classfrc_1_1_driver_station.html#a5461226aab199d7e2fb0657cd2d81f58a5da9a84ca70520011400bfa49e306a9d", null ],
+      [ "kBlue", "classfrc_1_1_driver_station.html#a5461226aab199d7e2fb0657cd2d81f58a42a734d9d3155f5969ade5b7681feb17", null ],
+      [ "kInvalid", "classfrc_1_1_driver_station.html#a5461226aab199d7e2fb0657cd2d81f58ace7ff78f7a39c61fdd25c7457108a314", null ]
+    ] ],
+    [ "MatchType", "classfrc_1_1_driver_station.html#a9213f6e23391b910d010820e16005352", [
+      [ "kNone", "classfrc_1_1_driver_station.html#a9213f6e23391b910d010820e16005352afea5f76f360e22893dc25f5709aadc63", null ],
+      [ "kPractice", "classfrc_1_1_driver_station.html#a9213f6e23391b910d010820e16005352a3ca8714d8429361152f9bd7dd7cba6d8", null ],
+      [ "kQualification", "classfrc_1_1_driver_station.html#a9213f6e23391b910d010820e16005352a36d814fe8f34840d39a2bf861b066e8c", null ],
+      [ "kElimination", "classfrc_1_1_driver_station.html#a9213f6e23391b910d010820e16005352a6ef6356038c94bcedf70efebf56127ce", null ]
+    ] ],
     [ "GetAlliance", "classfrc_1_1_driver_station.html#a08806a56ef8bf4e86ac48ba861093629", null ],
     [ "GetBatteryVoltage", "classfrc_1_1_driver_station.html#ad732bb08931c8a83fb5e59b8337003b0", null ],
     [ "GetEventName", "classfrc_1_1_driver_station.html#a3f96120f4127ae36efe3b4794ce593ed", null ],
@@ -46,5 +57,6 @@ var classfrc_1_1_driver_station =
     [ "SilenceJoystickConnectionWarning", "classfrc_1_1_driver_station.html#ad92dee0301f96316ffd2a28a22ab9e54", null ],
     [ "WaitForData", "classfrc_1_1_driver_station.html#a17926a2d9ecf8fd16a2c8fb5eafe9080", null ],
     [ "WaitForData", "classfrc_1_1_driver_station.html#a77dc9aa0e52c50dea3dfd2bbf066ec97", null ],
-    [ "WakeupWaitForData", "classfrc_1_1_driver_station.html#a1b91ad93ca0de7be7e2d4d3723257e6f", null ]
+    [ "WakeupWaitForData", "classfrc_1_1_driver_station.html#a1b91ad93ca0de7be7e2d4d3723257e6f", null ],
+    [ "kJoystickPorts", "classfrc_1_1_driver_station.html#ae95b20dbb78d92dfd36b4f8d93f5ce2b", null ]
 ];

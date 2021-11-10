@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -106,17 +106,15 @@ $(document).ready(function(){initNavTree('structwpi_1_1_function_pointer_like_ty
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a4892f000e36ac7d2981e2bf9d8a8b93d"><td class="memItemLeft" align="right" valign="top"><a id="a4892f000e36ac7d2981e2bf9d8a8b93d" name="a4892f000e36ac7d2981e2bf9d8a8b93d"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>NumLowBitsAvailable</b> = detail::ConstantLog2&lt;Alignment&gt;::value
+<tr class="memitem:a8de6914bc5651cb275988771027ddff7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="structwpi_1_1_function_pointer_like_type_traits.html#a8de6914bc5651cb275988771027ddff7a6dd9cfbb626782d1ce008980d83b0ef6">NumLowBitsAvailable</a> = detail::ConstantLog2&lt;Alignment&gt;::value
  }</td></tr>
-<tr class="separator:a4892f000e36ac7d2981e2bf9d8a8b93d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a8de6914bc5651cb275988771027ddff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a4dac9c5d9909daef3a4b4f83a63b6a9f"><td class="memItemLeft" align="right" valign="top"><a id="a4dac9c5d9909daef3a4b4f83a63b6a9f" name="a4dac9c5d9909daef3a4b4f83a63b6a9f"></a>
-static void *&#160;</td><td class="memItemRight" valign="bottom"><b>getAsVoidPointer</b> (FunctionPointerT P)</td></tr>
+<tr class="memitem:a4dac9c5d9909daef3a4b4f83a63b6a9f"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1_function_pointer_like_type_traits.html#a4dac9c5d9909daef3a4b4f83a63b6a9f">getAsVoidPointer</a> (FunctionPointerT P)</td></tr>
 <tr class="separator:a4dac9c5d9909daef3a4b4f83a63b6a9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25e7aafc25d0aab10e7bdf93c991e73f"><td class="memItemLeft" align="right" valign="top"><a id="a25e7aafc25d0aab10e7bdf93c991e73f" name="a25e7aafc25d0aab10e7bdf93c991e73f"></a>
-static FunctionPointerT&#160;</td><td class="memItemRight" valign="bottom"><b>getFromVoidPointer</b> (void *P)</td></tr>
+<tr class="memitem:a25e7aafc25d0aab10e7bdf93c991e73f"><td class="memItemLeft" align="right" valign="top">static FunctionPointerT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwpi_1_1_function_pointer_like_type_traits.html#a25e7aafc25d0aab10e7bdf93c991e73f">getFromVoidPointer</a> (void *P)</td></tr>
 <tr class="separator:a25e7aafc25d0aab10e7bdf93c991e73f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -124,7 +122,84 @@ static FunctionPointerT&#160;</td><td class="memItemRight" valign="bottom"><b>ge
 struct wpi::FunctionPointerLikeTypeTraits&lt; Alignment, FunctionPointerT &gt;</div><p >Provide suitable custom traits struct for function pointers. </p>
 <p >Function pointers can't be directly given these traits as functions can't have their alignment computed with <code>alignof</code> and we need different casting.</p>
 <p >To rely on higher alignment for a specialized use, you can provide a customized form of this template explicitly with higher alignment, and potentially use alignment attributes on functions to satisfy that. </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a8de6914bc5651cb275988771027ddff7" name="a8de6914bc5651cb275988771027ddff7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8de6914bc5651cb275988771027ddff7">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int Alignment, typename FunctionPointerT &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a8de6914bc5651cb275988771027ddff7a6dd9cfbb626782d1ce008980d83b0ef6" name="a8de6914bc5651cb275988771027ddff7a6dd9cfbb626782d1ce008980d83b0ef6"></a>NumLowBitsAvailable&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4dac9c5d9909daef3a4b4f83a63b6a9f" name="a4dac9c5d9909daef3a4b4f83a63b6a9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dac9c5d9909daef3a4b4f83a63b6a9f">&#9670;&nbsp;</a></span>getAsVoidPointer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int Alignment, typename FunctionPointerT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void * <a class="el" href="structwpi_1_1_function_pointer_like_type_traits.html">wpi::FunctionPointerLikeTypeTraits</a>&lt; Alignment, FunctionPointerT &gt;::getAsVoidPointer </td>
+          <td>(</td>
+          <td class="paramtype">FunctionPointerT&#160;</td>
+          <td class="paramname"><em>P</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a25e7aafc25d0aab10e7bdf93c991e73f" name="a25e7aafc25d0aab10e7bdf93c991e73f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25e7aafc25d0aab10e7bdf93c991e73f">&#9670;&nbsp;</a></span>getFromVoidPointer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int Alignment, typename FunctionPointerT &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static FunctionPointerT <a class="el" href="structwpi_1_1_function_pointer_like_type_traits.html">wpi::FunctionPointerLikeTypeTraits</a>&lt; Alignment, FunctionPointerT &gt;::getFromVoidPointer </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>P</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li>wpi/<a class="el" href="_pointer_like_type_traits_8h_source.html">PointerLikeTypeTraits.h</a></li>
 </ul>
 </div><!-- contents -->
@@ -132,8 +207,8 @@ struct wpi::FunctionPointerLikeTypeTraits&lt; Alignment, FunctionPointerT &gt;</
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>wpi</b></li><li class="navelem"><a class="el" href="structwpi_1_1_function_pointer_like_type_traits.html">FunctionPointerLikeTypeTraits</a></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:52 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="structwpi_1_1_function_pointer_like_type_traits.html">FunctionPointerLikeTypeTraits</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:40 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

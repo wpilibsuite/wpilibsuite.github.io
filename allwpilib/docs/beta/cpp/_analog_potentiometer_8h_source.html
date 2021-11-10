@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('_analog_potentiometer_8h_source.html',
   <div class="headertitle"><div class="title">AnalogPotentiometer.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
+<a href="_analog_potentiometer_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Open Source Software; you can modify and/or share it under the terms of</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// the WPILib BSD license file in the root directory of this project.</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
@@ -102,12 +102,12 @@ $(document).ready(function(){initNavTree('_analog_potentiometer_8h_source.html',
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;wpi/sendable/Sendable.h&gt;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;wpi/sendable/SendableHelper.h&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;<a class="code" href="_sendable_8h.html">wpi/sendable/Sendable.h</a>&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;<a class="code" href="_sendable_helper_8h.html">wpi/sendable/SendableHelper.h</a>&gt;</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;frc/AnalogInput.h&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="wpilibc_2src_2main_2native_2include_2frc_2_analog_input_8h.html">frc/AnalogInput.h</a>&quot;</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">namespace </span>frc {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacefrc.html">frc</a> {</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"></span> </div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">/**</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> * Class for reading analog potentiometers. Analog potentiometers read in an</span></div>
@@ -185,10 +185,10 @@ $(document).ready(function(){initNavTree('_analog_potentiometer_8h_source.html',
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="classfrc_1_1_analog_potentiometer.html#a33071b711fe779b91767bf4422b3f15f">   89</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classfrc_1_1_analog_potentiometer.html#a33071b711fe779b91767bf4422b3f15f">AnalogPotentiometer</a>(std::shared_ptr&lt;AnalogInput&gt; input,</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                               <span class="keywordtype">double</span> fullRange = 1.0, <span class="keywordtype">double</span> offset = 0.0);</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  <a class="code hl_class" href="classfrc_1_1_analog_potentiometer.html">~AnalogPotentiometer</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="classfrc_1_1_analog_potentiometer.html#aa2bf722b35e53b64890fc405d92ab0b8">   92</a></span>  <a class="code hl_function" href="classfrc_1_1_analog_potentiometer.html#aa2bf722b35e53b64890fc405d92ab0b8">~AnalogPotentiometer</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  <a class="code hl_function" href="classfrc_1_1_analog_potentiometer.html#a96c24c23e88281fc414d6330baa1e2b2">AnalogPotentiometer</a>(<a class="code hl_class" href="classfrc_1_1_analog_potentiometer.html">AnalogPotentiometer</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  <a class="code hl_class" href="classfrc_1_1_analog_potentiometer.html">AnalogPotentiometer</a>&amp; operator=(<a class="code hl_class" href="classfrc_1_1_analog_potentiometer.html">AnalogPotentiometer</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="classfrc_1_1_analog_potentiometer.html#a037c828ba9908b54d2b0815f15a407e6">   94</a></span>  <a class="code hl_function" href="classfrc_1_1_analog_potentiometer.html#a037c828ba9908b54d2b0815f15a407e6">AnalogPotentiometer</a>(<a class="code hl_class" href="classfrc_1_1_analog_potentiometer.html">AnalogPotentiometer</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="classfrc_1_1_analog_potentiometer.html#ad4b8f4d3f80ce4155fdad4e4c6f337a6">   95</a></span>  <a class="code hl_class" href="classfrc_1_1_analog_potentiometer.html">AnalogPotentiometer</a>&amp; <a class="code hl_function" href="classfrc_1_1_analog_potentiometer.html#ad4b8f4d3f80ce4155fdad4e4c6f337a6">operator=</a>(<a class="code hl_class" href="classfrc_1_1_analog_potentiometer.html">AnalogPotentiometer</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment"></span> </div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="comment">   * Get the current reading of the potentiometer.</span></div>
@@ -206,23 +206,30 @@ $(document).ready(function(){initNavTree('_analog_potentiometer_8h_source.html',
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>};</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>}  <span class="comment">// namespace frc</span></div>
+<div class="ttc" id="a_sendable_8h_html"><div class="ttname"><a href="_sendable_8h.html">Sendable.h</a></div></div>
+<div class="ttc" id="a_sendable_helper_8h_html"><div class="ttname"><a href="_sendable_helper_8h.html">SendableHelper.h</a></div></div>
 <div class="ttc" id="aclassfrc_1_1_analog_input_html"><div class="ttname"><a href="classfrc_1_1_analog_input.html">frc::AnalogInput</a></div><div class="ttdoc">Analog input class.</div><div class="ttdef"><b>Definition:</b> AnalogInput.h:31</div></div>
 <div class="ttc" id="aclassfrc_1_1_analog_potentiometer_html"><div class="ttname"><a href="classfrc_1_1_analog_potentiometer.html">frc::AnalogPotentiometer</a></div><div class="ttdoc">Class for reading analog potentiometers.</div><div class="ttdef"><b>Definition:</b> AnalogPotentiometer.h:23</div></div>
+<div class="ttc" id="aclassfrc_1_1_analog_potentiometer_html_a037c828ba9908b54d2b0815f15a407e6"><div class="ttname"><a href="classfrc_1_1_analog_potentiometer.html#a037c828ba9908b54d2b0815f15a407e6">frc::AnalogPotentiometer::AnalogPotentiometer</a></div><div class="ttdeci">AnalogPotentiometer(AnalogPotentiometer &amp;&amp;)=default</div></div>
 <div class="ttc" id="aclassfrc_1_1_analog_potentiometer_html_a073e6a9c96e187be0feab33c3908d745"><div class="ttname"><a href="classfrc_1_1_analog_potentiometer.html#a073e6a9c96e187be0feab33c3908d745">frc::AnalogPotentiometer::Get</a></div><div class="ttdeci">double Get() const</div><div class="ttdoc">Get the current reading of the potentiometer.</div></div>
 <div class="ttc" id="aclassfrc_1_1_analog_potentiometer_html_a33071b711fe779b91767bf4422b3f15f"><div class="ttname"><a href="classfrc_1_1_analog_potentiometer.html#a33071b711fe779b91767bf4422b3f15f">frc::AnalogPotentiometer::AnalogPotentiometer</a></div><div class="ttdeci">AnalogPotentiometer(std::shared_ptr&lt; AnalogInput &gt; input, double fullRange=1.0, double offset=0.0)</div><div class="ttdoc">Construct an Analog Potentiometer object from an existing Analog Input pointer.</div></div>
 <div class="ttc" id="aclassfrc_1_1_analog_potentiometer_html_a96c24c23e88281fc414d6330baa1e2b2"><div class="ttname"><a href="classfrc_1_1_analog_potentiometer.html#a96c24c23e88281fc414d6330baa1e2b2">frc::AnalogPotentiometer::AnalogPotentiometer</a></div><div class="ttdeci">AnalogPotentiometer(int channel, double fullRange=1.0, double offset=0.0)</div><div class="ttdoc">Construct an Analog Potentiometer object from a channel number.</div></div>
+<div class="ttc" id="aclassfrc_1_1_analog_potentiometer_html_aa2bf722b35e53b64890fc405d92ab0b8"><div class="ttname"><a href="classfrc_1_1_analog_potentiometer.html#aa2bf722b35e53b64890fc405d92ab0b8">frc::AnalogPotentiometer::~AnalogPotentiometer</a></div><div class="ttdeci">~AnalogPotentiometer() override=default</div></div>
 <div class="ttc" id="aclassfrc_1_1_analog_potentiometer_html_aca0f7310f17e2e7349d353548eed4a1a"><div class="ttname"><a href="classfrc_1_1_analog_potentiometer.html#aca0f7310f17e2e7349d353548eed4a1a">frc::AnalogPotentiometer::InitSendable</a></div><div class="ttdeci">void InitSendable(wpi::SendableBuilder &amp;builder) override</div><div class="ttdoc">Initializes this Sendable object.</div></div>
+<div class="ttc" id="aclassfrc_1_1_analog_potentiometer_html_ad4b8f4d3f80ce4155fdad4e4c6f337a6"><div class="ttname"><a href="classfrc_1_1_analog_potentiometer.html#ad4b8f4d3f80ce4155fdad4e4c6f337a6">frc::AnalogPotentiometer::operator=</a></div><div class="ttdeci">AnalogPotentiometer &amp; operator=(AnalogPotentiometer &amp;&amp;)=default</div></div>
 <div class="ttc" id="aclassfrc_1_1_analog_potentiometer_html_ae4b0fbd9b8669ccf0ef6e218193c772b"><div class="ttname"><a href="classfrc_1_1_analog_potentiometer.html#ae4b0fbd9b8669ccf0ef6e218193c772b">frc::AnalogPotentiometer::AnalogPotentiometer</a></div><div class="ttdeci">AnalogPotentiometer(AnalogInput *input, double fullRange=1.0, double offset=0.0)</div><div class="ttdoc">Construct an Analog Potentiometer object from an existing Analog Input pointer.</div></div>
 <div class="ttc" id="aclasswpi_1_1_sendable_builder_html"><div class="ttname"><a href="classwpi_1_1_sendable_builder.html">wpi::SendableBuilder</a></div><div class="ttdef"><b>Definition:</b> SendableBuilder.h:18</div></div>
 <div class="ttc" id="aclasswpi_1_1_sendable_helper_html"><div class="ttname"><a href="classwpi_1_1_sendable_helper.html">wpi::SendableHelper</a></div><div class="ttdoc">A helper class for use with objects that add themselves to SendableRegistry.</div><div class="ttdef"><b>Definition:</b> SendableHelper.h:24</div></div>
 <div class="ttc" id="aclasswpi_1_1_sendable_html"><div class="ttname"><a href="classwpi_1_1_sendable.html">wpi::Sendable</a></div><div class="ttdoc">Interface for Sendable objects.</div><div class="ttdef"><b>Definition:</b> Sendable.h:16</div></div>
+<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> VisionRunner.inc:9</div></div>
+<div class="ttc" id="awpilibc_2src_2main_2native_2include_2frc_2_analog_input_8h_html"><div class="ttname"><a href="wpilibc_2src_2main_2native_2include_2frc_2_analog_input_8h.html">AnalogInput.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><b>AnalogPotentiometer.h</b></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:34 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="_analog_potentiometer_8h.html">AnalogPotentiometer.h</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:20 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

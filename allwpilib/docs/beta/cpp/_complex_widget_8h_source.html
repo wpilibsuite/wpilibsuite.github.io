@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('_complex_widget_8h_source.html',''); i
   <div class="headertitle"><div class="title">ComplexWidget.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
+<a href="_complex_widget_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Open Source Software; you can modify and/or share it under the terms of</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// the WPILib BSD license file in the root directory of this project.</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
@@ -103,16 +103,16 @@ $(document).ready(function(){initNavTree('_complex_widget_8h_source.html',''); i
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;string_view&gt;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;networktables/NetworkTable.h&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;<a class="code" href="_network_table_8h.html">networktables/NetworkTable.h</a>&gt;</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;frc/shuffleboard/ShuffleboardWidget.h&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="_shuffleboard_widget_8h.html">frc/shuffleboard/ShuffleboardWidget.h</a>&quot;</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">namespace </span>wpi {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacewpi.html">wpi</a> {</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">class </span>Sendable;</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">class </span>SendableBuilder;</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>}  <span class="comment">// namespace wpi</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">namespace </span>frc {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacefrc.html">frc</a> {</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">class </span>ShuffleboardContainer;</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"></span> </div>
@@ -122,10 +122,10 @@ $(document).ready(function(){initNavTree('_complex_widget_8h_source.html',''); i
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="classfrc_1_1_complex_widget.html">   27</a></span><span class="keyword">class </span><a class="code hl_class" href="classfrc_1_1_complex_widget.html">ComplexWidget</a> final : <span class="keyword">public</span> <a class="code hl_class" href="classfrc_1_1_shuffleboard_widget.html">ShuffleboardWidget</a>&lt;ComplexWidget&gt; {</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <a class="code hl_class" href="classfrc_1_1_complex_widget.html">ComplexWidget</a>(<a class="code hl_class" href="classfrc_1_1_shuffleboard_container.html">ShuffleboardContainer</a>&amp; parent, std::string_view title,</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classfrc_1_1_complex_widget.html#a9d0be6b134271f4c4e3469692621b54a">   29</a></span>  <a class="code hl_function" href="classfrc_1_1_complex_widget.html#a9d0be6b134271f4c4e3469692621b54a">ComplexWidget</a>(<a class="code hl_class" href="classfrc_1_1_shuffleboard_container.html">ShuffleboardContainer</a>&amp; parent, <a class="code hl_typedef" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> title,</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                <a class="code hl_class" href="classwpi_1_1_sendable.html">wpi::Sendable</a>&amp; sendable);</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  <a class="code hl_class" href="classfrc_1_1_complex_widget.html">~ComplexWidget</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="classfrc_1_1_complex_widget.html#ab1a56817752e478acee85b506dc36a68">   32</a></span>  <a class="code hl_function" href="classfrc_1_1_complex_widget.html#ab1a56817752e478acee85b506dc36a68">~ComplexWidget</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classfrc_1_1_complex_widget.html#a98eab198798b7719f3a3cc330a13e5ab">   34</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_complex_widget.html#a98eab198798b7719f3a3cc330a13e5ab">EnableIfActuator</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
@@ -140,20 +140,27 @@ $(document).ready(function(){initNavTree('_complex_widget_8h_source.html',''); i
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>};</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>}  <span class="comment">// namespace frc</span></div>
+<div class="ttc" id="a_network_table_8h_html"><div class="ttname"><a href="_network_table_8h.html">NetworkTable.h</a></div></div>
+<div class="ttc" id="a_shuffleboard_widget_8h_html"><div class="ttname"><a href="_shuffleboard_widget_8h.html">ShuffleboardWidget.h</a></div></div>
 <div class="ttc" id="aclassfrc_1_1_complex_widget_html"><div class="ttname"><a href="classfrc_1_1_complex_widget.html">frc::ComplexWidget</a></div><div class="ttdoc">A Shuffleboard widget that handles a Sendable object such as a speed controller or sensor.</div><div class="ttdef"><b>Definition:</b> ComplexWidget.h:27</div></div>
 <div class="ttc" id="aclassfrc_1_1_complex_widget_html_a0c6b77ed05f282fca32f1323b9f898a7"><div class="ttname"><a href="classfrc_1_1_complex_widget.html#a0c6b77ed05f282fca32f1323b9f898a7">frc::ComplexWidget::BuildInto</a></div><div class="ttdeci">void BuildInto(std::shared_ptr&lt; nt::NetworkTable &gt; parentTable, std::shared_ptr&lt; nt::NetworkTable &gt; metaTable) override</div><div class="ttdoc">Builds the entries for this value.</div></div>
 <div class="ttc" id="aclassfrc_1_1_complex_widget_html_a3452e989b3fb4923a5258f3f1f90d147"><div class="ttname"><a href="classfrc_1_1_complex_widget.html#a3452e989b3fb4923a5258f3f1f90d147">frc::ComplexWidget::DisableIfActuator</a></div><div class="ttdeci">void DisableIfActuator() override</div><div class="ttdoc">Disables user control of this widget in the Shuffleboard application.</div></div>
 <div class="ttc" id="aclassfrc_1_1_complex_widget_html_a98eab198798b7719f3a3cc330a13e5ab"><div class="ttname"><a href="classfrc_1_1_complex_widget.html#a98eab198798b7719f3a3cc330a13e5ab">frc::ComplexWidget::EnableIfActuator</a></div><div class="ttdeci">void EnableIfActuator() override</div><div class="ttdoc">Enables user control of this widget in the Shuffleboard application.</div></div>
+<div class="ttc" id="aclassfrc_1_1_complex_widget_html_a9d0be6b134271f4c4e3469692621b54a"><div class="ttname"><a href="classfrc_1_1_complex_widget.html#a9d0be6b134271f4c4e3469692621b54a">frc::ComplexWidget::ComplexWidget</a></div><div class="ttdeci">ComplexWidget(ShuffleboardContainer &amp;parent, std::string_view title, wpi::Sendable &amp;sendable)</div></div>
+<div class="ttc" id="aclassfrc_1_1_complex_widget_html_ab1a56817752e478acee85b506dc36a68"><div class="ttname"><a href="classfrc_1_1_complex_widget.html#ab1a56817752e478acee85b506dc36a68">frc::ComplexWidget::~ComplexWidget</a></div><div class="ttdeci">~ComplexWidget() override</div></div>
 <div class="ttc" id="aclassfrc_1_1_shuffleboard_container_html"><div class="ttname"><a href="classfrc_1_1_shuffleboard_container.html">frc::ShuffleboardContainer</a></div><div class="ttdoc">Common interface for objects that can contain shuffleboard components.</div><div class="ttdef"><b>Definition:</b> ShuffleboardContainer.h:42</div></div>
 <div class="ttc" id="aclassfrc_1_1_shuffleboard_widget_html"><div class="ttname"><a href="classfrc_1_1_shuffleboard_widget.html">frc::ShuffleboardWidget</a></div><div class="ttdoc">Abstract superclass for widgets.</div><div class="ttdef"><b>Definition:</b> ShuffleboardWidget.h:29</div></div>
 <div class="ttc" id="aclasswpi_1_1_sendable_html"><div class="ttname"><a href="classwpi_1_1_sendable.html">wpi::Sendable</a></div><div class="ttdoc">Interface for Sendable objects.</div><div class="ttdef"><b>Definition:</b> Sendable.h:16</div></div>
+<div class="ttc" id="acore_8h_html_a204ca715c2febee035464fa53dfc50c4"><div class="ttname"><a href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">string_view</a></div><div class="ttdeci">basic_string_view&lt; char &gt; string_view</div><div class="ttdef"><b>Definition:</b> core.h:529</div></div>
+<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> VisionRunner.inc:9</div></div>
+<div class="ttc" id="anamespacewpi_html"><div class="ttname"><a href="namespacewpi.html">wpi</a></div><div class="ttdef"><b>Definition:</b> PortForwarder.h:13</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_dca1c19c73302e87d1cbe8eae641dd78.html">shuffleboard</a></li><li class="navelem"><b>ComplexWidget.h</b></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:35 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_dca1c19c73302e87d1cbe8eae641dd78.html">shuffleboard</a></li><li class="navelem"><a class="el" href="_complex_widget_8h.html">ComplexWidget.h</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:20 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

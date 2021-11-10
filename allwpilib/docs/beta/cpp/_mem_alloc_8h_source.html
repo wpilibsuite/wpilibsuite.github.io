@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -113,11 +113,11 @@ $(document).ready(function(){initNavTree('_mem_alloc_8h_source.html',''); initRe
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#ifndef WPIUTIL_WPI_MEMALLOC_H</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#define WPIUTIL_WPI_MEMALLOC_H</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &quot;wpi/Compiler.h&quot;</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &quot;wpi/ErrorHandling.h&quot;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &quot;<a class="code" href="_compiler_8h.html">wpi/Compiler.h</a>&quot;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &quot;<a class="code" href="_error_handling_8h.html">wpi/ErrorHandling.h</a>&quot;</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;cstdlib&gt;</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span>wpi {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacewpi.html">wpi</a> {</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#ifdef _WIN32</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#pragma warning(push)</span></div>
@@ -127,25 +127,25 @@ $(document).ready(function(){initNavTree('_mem_alloc_8h_source.html',''); initRe
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#pragma warning(disable : 28183)</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>LLVM_ATTRIBUTE_RETURNS_NONNULL <span class="keyword">inline</span> <span class="keywordtype">void</span> *safe_malloc(<span class="keywordtype">size_t</span> Sz) {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="namespacewpi.html#a01feba2e98f9634bb529eac857ffa4fb">   34</a></span><a class="code hl_define" href="_compiler_8h.html#acbae7c06e77fa64145cca176963b6863">LLVM_ATTRIBUTE_RETURNS_NONNULL</a> <span class="keyword">inline</span> <span class="keywordtype">void</span> *<a class="code hl_function" href="namespacewpi.html#a01feba2e98f9634bb529eac857ffa4fb">safe_malloc</a>(<span class="keywordtype">size_t</span> Sz) {</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <span class="keywordtype">void</span> *Result = std::malloc(Sz);</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="keywordflow">if</span> (Result == <span class="keyword">nullptr</span>)</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    report_bad_alloc_error(<span class="stringliteral">&quot;Allocation failed&quot;</span>);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <a class="code hl_function" href="namespacewpi.html#a6e3cd886beda7a2289aa18773f3aa103">report_bad_alloc_error</a>(<span class="stringliteral">&quot;Allocation failed&quot;</span>);</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keywordflow">return</span> Result;</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>}</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>LLVM_ATTRIBUTE_RETURNS_NONNULL <span class="keyword">inline</span> <span class="keywordtype">void</span> *safe_calloc(<span class="keywordtype">size_t</span> Count,</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="namespacewpi.html#aa3107b50e4fba4c211bc3981f452dfbc">   41</a></span><a class="code hl_define" href="_compiler_8h.html#acbae7c06e77fa64145cca176963b6863">LLVM_ATTRIBUTE_RETURNS_NONNULL</a> <span class="keyword">inline</span> <span class="keywordtype">void</span> *<a class="code hl_function" href="namespacewpi.html#aa3107b50e4fba4c211bc3981f452dfbc">safe_calloc</a>(<span class="keywordtype">size_t</span> Count,</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                                                        <span class="keywordtype">size_t</span> Sz) {</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <span class="keywordtype">void</span> *Result = std::calloc(Count, Sz);</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <span class="keywordflow">if</span> (Result == <span class="keyword">nullptr</span>)</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    report_bad_alloc_error(<span class="stringliteral">&quot;Allocation failed&quot;</span>);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <a class="code hl_function" href="namespacewpi.html#a6e3cd886beda7a2289aa18773f3aa103">report_bad_alloc_error</a>(<span class="stringliteral">&quot;Allocation failed&quot;</span>);</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <span class="keywordflow">return</span> Result;</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>}</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>LLVM_ATTRIBUTE_RETURNS_NONNULL <span class="keyword">inline</span> <span class="keywordtype">void</span> *safe_realloc(<span class="keywordtype">void</span> *Ptr, <span class="keywordtype">size_t</span> Sz) {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="namespacewpi.html#a780a79e5410f3c9082aa1ff62d997151">   49</a></span><a class="code hl_define" href="_compiler_8h.html#acbae7c06e77fa64145cca176963b6863">LLVM_ATTRIBUTE_RETURNS_NONNULL</a> <span class="keyword">inline</span> <span class="keywordtype">void</span> *<a class="code hl_function" href="namespacewpi.html#a780a79e5410f3c9082aa1ff62d997151">safe_realloc</a>(<span class="keywordtype">void</span> *Ptr, <span class="keywordtype">size_t</span> Sz) {</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <span class="keywordtype">void</span> *Result = std::realloc(Ptr, Sz);</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keywordflow">if</span> (Result == <span class="keyword">nullptr</span>)</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    report_bad_alloc_error(<span class="stringliteral">&quot;Allocation failed&quot;</span>);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <a class="code hl_function" href="namespacewpi.html#a6e3cd886beda7a2289aa18773f3aa103">report_bad_alloc_error</a>(<span class="stringliteral">&quot;Allocation failed&quot;</span>);</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <span class="keywordflow">return</span> Result;</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>}</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
@@ -155,13 +155,21 @@ $(document).ready(function(){initNavTree('_mem_alloc_8h_source.html',''); initRe
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>}</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a_compiler_8h_html"><div class="ttname"><a href="_compiler_8h.html">Compiler.h</a></div></div>
+<div class="ttc" id="a_compiler_8h_html_acbae7c06e77fa64145cca176963b6863"><div class="ttname"><a href="_compiler_8h.html#acbae7c06e77fa64145cca176963b6863">LLVM_ATTRIBUTE_RETURNS_NONNULL</a></div><div class="ttdeci">#define LLVM_ATTRIBUTE_RETURNS_NONNULL</div><div class="ttdef"><b>Definition:</b> Compiler.h:227</div></div>
+<div class="ttc" id="a_error_handling_8h_html"><div class="ttname"><a href="_error_handling_8h.html">ErrorHandling.h</a></div></div>
+<div class="ttc" id="anamespacewpi_html"><div class="ttname"><a href="namespacewpi.html">wpi</a></div><div class="ttdef"><b>Definition:</b> PortForwarder.h:13</div></div>
+<div class="ttc" id="anamespacewpi_html_a01feba2e98f9634bb529eac857ffa4fb"><div class="ttname"><a href="namespacewpi.html#a01feba2e98f9634bb529eac857ffa4fb">wpi::safe_malloc</a></div><div class="ttdeci">LLVM_ATTRIBUTE_RETURNS_NONNULL void * safe_malloc(size_t Sz)</div><div class="ttdef"><b>Definition:</b> MemAlloc.h:34</div></div>
+<div class="ttc" id="anamespacewpi_html_a6e3cd886beda7a2289aa18773f3aa103"><div class="ttname"><a href="namespacewpi.html#a6e3cd886beda7a2289aa18773f3aa103">wpi::report_bad_alloc_error</a></div><div class="ttdeci">void report_bad_alloc_error(const char *Reason, bool GenCrashDiag=true)</div><div class="ttdoc">Reports a bad alloc error, calling any user defined bad alloc error handler.</div></div>
+<div class="ttc" id="anamespacewpi_html_a780a79e5410f3c9082aa1ff62d997151"><div class="ttname"><a href="namespacewpi.html#a780a79e5410f3c9082aa1ff62d997151">wpi::safe_realloc</a></div><div class="ttdeci">LLVM_ATTRIBUTE_RETURNS_NONNULL void * safe_realloc(void *Ptr, size_t Sz)</div><div class="ttdef"><b>Definition:</b> MemAlloc.h:49</div></div>
+<div class="ttc" id="anamespacewpi_html_aa3107b50e4fba4c211bc3981f452dfbc"><div class="ttname"><a href="namespacewpi.html#aa3107b50e4fba4c211bc3981f452dfbc">wpi::safe_calloc</a></div><div class="ttdeci">LLVM_ATTRIBUTE_RETURNS_NONNULL void * safe_calloc(size_t Count, size_t Sz)</div><div class="ttdef"><b>Definition:</b> MemAlloc.h:41</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><a class="el" href="_mem_alloc_8h.html">MemAlloc.h</a></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:44 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:30 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

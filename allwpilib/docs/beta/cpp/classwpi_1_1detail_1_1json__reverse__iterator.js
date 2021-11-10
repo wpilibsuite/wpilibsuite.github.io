@@ -1,6 +1,7 @@
 var classwpi_1_1detail_1_1json__reverse__iterator =
 [
     [ "base_iterator", "classwpi_1_1detail_1_1json__reverse__iterator.html#a37f742664dbf63f457f46db969a60b81", null ],
+    [ "difference_type", "classwpi_1_1detail_1_1json__reverse__iterator.html#a9bbc868eb26f618c4cdd7733f231dfd7", null ],
     [ "reference", "classwpi_1_1detail_1_1json__reverse__iterator.html#adddbf249e1ee32fac4a42619d176fe40", null ],
     [ "json_reverse_iterator", "classwpi_1_1detail_1_1json__reverse__iterator.html#a800c75482a5b6a82f5c699855630d7e1", null ],
     [ "json_reverse_iterator", "classwpi_1_1detail_1_1json__reverse__iterator.html#adc331656bee3a88dd64dcf5c58a350b9", null ],

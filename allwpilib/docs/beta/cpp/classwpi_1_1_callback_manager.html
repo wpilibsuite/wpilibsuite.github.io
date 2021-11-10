@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -99,64 +99,498 @@ $(document).ready(function(){initNavTree('classwpi_1_1_callback_manager.html',''
   <div class="headertitle"><div class="title">wpi::CallbackManager&lt; Derived, Thread &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_callback_manager_8h_source.html">wpi/CallbackManager.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a57512b7b7501b1a04eadcc2472da0be3"><td class="memItemLeft" align="right" valign="top"><a id="a57512b7b7501b1a04eadcc2472da0be3" name="a57512b7b7501b1a04eadcc2472da0be3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetOnStart</b> (std::function&lt; void()&gt; on_start)</td></tr>
+<tr class="memitem:a57512b7b7501b1a04eadcc2472da0be3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_callback_manager.html#a57512b7b7501b1a04eadcc2472da0be3">SetOnStart</a> (std::function&lt; void()&gt; on_start)</td></tr>
 <tr class="separator:a57512b7b7501b1a04eadcc2472da0be3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29e9703ab9a1eee597e147fe54e5737c"><td class="memItemLeft" align="right" valign="top"><a id="a29e9703ab9a1eee597e147fe54e5737c" name="a29e9703ab9a1eee597e147fe54e5737c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetOnExit</b> (std::function&lt; void()&gt; on_exit)</td></tr>
+<tr class="memitem:a29e9703ab9a1eee597e147fe54e5737c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_callback_manager.html#a29e9703ab9a1eee597e147fe54e5737c">SetOnExit</a> (std::function&lt; void()&gt; on_exit)</td></tr>
 <tr class="separator:a29e9703ab9a1eee597e147fe54e5737c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9e1603ece984e4facf2bb82a98d7b4c"><td class="memItemLeft" align="right" valign="top"><a id="ab9e1603ece984e4facf2bb82a98d7b4c" name="ab9e1603ece984e4facf2bb82a98d7b4c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Stop</b> ()</td></tr>
+<tr class="memitem:ab9e1603ece984e4facf2bb82a98d7b4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_callback_manager.html#ab9e1603ece984e4facf2bb82a98d7b4c">Stop</a> ()</td></tr>
 <tr class="separator:ab9e1603ece984e4facf2bb82a98d7b4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aade785f9b47b8430efd56ae160759ab1"><td class="memItemLeft" align="right" valign="top"><a id="aade785f9b47b8430efd56ae160759ab1" name="aade785f9b47b8430efd56ae160759ab1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Remove</b> (unsigned int listener_uid)</td></tr>
+<tr class="memitem:aade785f9b47b8430efd56ae160759ab1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_callback_manager.html#aade785f9b47b8430efd56ae160759ab1">Remove</a> (unsigned int listener_uid)</td></tr>
 <tr class="separator:aade785f9b47b8430efd56ae160759ab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afacb27910960d8141ed44caeba900650"><td class="memItemLeft" align="right" valign="top"><a id="afacb27910960d8141ed44caeba900650" name="afacb27910960d8141ed44caeba900650"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>CreatePoller</b> ()</td></tr>
+<tr class="memitem:afacb27910960d8141ed44caeba900650"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_callback_manager.html#afacb27910960d8141ed44caeba900650">CreatePoller</a> ()</td></tr>
 <tr class="separator:afacb27910960d8141ed44caeba900650"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5dd2ee2beb31e045137020c18db672bb"><td class="memItemLeft" align="right" valign="top"><a id="a5dd2ee2beb31e045137020c18db672bb" name="a5dd2ee2beb31e045137020c18db672bb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RemovePoller</b> (unsigned int poller_uid)</td></tr>
+<tr class="memitem:a5dd2ee2beb31e045137020c18db672bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_callback_manager.html#a5dd2ee2beb31e045137020c18db672bb">RemovePoller</a> (unsigned int poller_uid)</td></tr>
 <tr class="separator:a5dd2ee2beb31e045137020c18db672bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5dc7e043ff33d4d44038bf7e3b7e6004"><td class="memItemLeft" align="right" valign="top"><a id="a5dc7e043ff33d4d44038bf7e3b7e6004" name="a5dc7e043ff33d4d44038bf7e3b7e6004"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>WaitForQueue</b> (double timeout)</td></tr>
+<tr class="memitem:a5dc7e043ff33d4d44038bf7e3b7e6004"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_callback_manager.html#a5dc7e043ff33d4d44038bf7e3b7e6004">WaitForQueue</a> (double timeout)</td></tr>
 <tr class="separator:a5dc7e043ff33d4d44038bf7e3b7e6004"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad05d19aec24f4fdf0b74d1018677c706"><td class="memItemLeft" align="right" valign="top"><a id="ad05d19aec24f4fdf0b74d1018677c706" name="ad05d19aec24f4fdf0b74d1018677c706"></a>
-std::vector&lt; typename Thread::UserInfo &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Poll</b> (unsigned int poller_uid)</td></tr>
+<tr class="memitem:ad05d19aec24f4fdf0b74d1018677c706"><td class="memItemLeft" align="right" valign="top">std::vector&lt; typename Thread::UserInfo &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_callback_manager.html#ad05d19aec24f4fdf0b74d1018677c706">Poll</a> (unsigned int poller_uid)</td></tr>
 <tr class="separator:ad05d19aec24f4fdf0b74d1018677c706"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add09a19bad1371f2f377aeb7c008eb29"><td class="memItemLeft" align="right" valign="top"><a id="add09a19bad1371f2f377aeb7c008eb29" name="add09a19bad1371f2f377aeb7c008eb29"></a>
-std::vector&lt; typename Thread::UserInfo &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Poll</b> (unsigned int poller_uid, double timeout, bool *timed_out)</td></tr>
+<tr class="memitem:add09a19bad1371f2f377aeb7c008eb29"><td class="memItemLeft" align="right" valign="top">std::vector&lt; typename Thread::UserInfo &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_callback_manager.html#add09a19bad1371f2f377aeb7c008eb29">Poll</a> (unsigned int poller_uid, double timeout, bool *timed_out)</td></tr>
 <tr class="separator:add09a19bad1371f2f377aeb7c008eb29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ef044e8ab03d1e480320f948170cabd"><td class="memItemLeft" align="right" valign="top"><a id="a5ef044e8ab03d1e480320f948170cabd" name="a5ef044e8ab03d1e480320f948170cabd"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>CancelPoll</b> (unsigned int poller_uid)</td></tr>
+<tr class="memitem:a5ef044e8ab03d1e480320f948170cabd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_callback_manager.html#a5ef044e8ab03d1e480320f948170cabd">CancelPoll</a> (unsigned int poller_uid)</td></tr>
 <tr class="separator:a5ef044e8ab03d1e480320f948170cabd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:aeb9468514ad021b13824e7210df98d83"><td class="memTemplParams" colspan="2"><a id="aeb9468514ad021b13824e7210df98d83" name="aeb9468514ad021b13824e7210df98d83"></a>
-template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:aeb9468514ad021b13824e7210df98d83"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>DoStart</b> (Args &amp;&amp;... args)</td></tr>
+<tr class="memitem:aeb9468514ad021b13824e7210df98d83"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:aeb9468514ad021b13824e7210df98d83"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwpi_1_1_callback_manager.html#aeb9468514ad021b13824e7210df98d83">DoStart</a> (Args &amp;&amp;... args)</td></tr>
 <tr class="separator:aeb9468514ad021b13824e7210df98d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6811664e8ccc4af2b44168126c3edd97"><td class="memTemplParams" colspan="2"><a id="a6811664e8ccc4af2b44168126c3edd97" name="a6811664e8ccc4af2b44168126c3edd97"></a>
-template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:a6811664e8ccc4af2b44168126c3edd97"><td class="memTemplItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memTemplItemRight" valign="bottom"><b>DoAdd</b> (Args &amp;&amp;... args)</td></tr>
+<tr class="memitem:a6811664e8ccc4af2b44168126c3edd97"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:a6811664e8ccc4af2b44168126c3edd97"><td class="memTemplItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwpi_1_1_callback_manager.html#a6811664e8ccc4af2b44168126c3edd97">DoAdd</a> (Args &amp;&amp;... args)</td></tr>
 <tr class="separator:a6811664e8ccc4af2b44168126c3edd97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d6b5dda438051b85b6fa108d4fdad46"><td class="memTemplParams" colspan="2"><a id="a2d6b5dda438051b85b6fa108d4fdad46" name="a2d6b5dda438051b85b6fa108d4fdad46"></a>
-template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:a2d6b5dda438051b85b6fa108d4fdad46"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Send</b> (unsigned int only_listener, Args &amp;&amp;... args)</td></tr>
+<tr class="memitem:a2d6b5dda438051b85b6fa108d4fdad46"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:a2d6b5dda438051b85b6fa108d4fdad46"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwpi_1_1_callback_manager.html#a2d6b5dda438051b85b6fa108d4fdad46">Send</a> (unsigned int only_listener, Args &amp;&amp;... args)</td></tr>
 <tr class="separator:a2d6b5dda438051b85b6fa108d4fdad46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14190d8c5c72691b886e2d7dee6efeae"><td class="memItemLeft" align="right" valign="top"><a id="a14190d8c5c72691b886e2d7dee6efeae" name="a14190d8c5c72691b886e2d7dee6efeae"></a>
-<a class="el" href="classwpi_1_1_safe_thread_owner.html">wpi::SafeThreadOwner</a>&lt; Thread &gt;::Proxy&#160;</td><td class="memItemRight" valign="bottom"><b>GetThread</b> () const</td></tr>
+<tr class="memitem:a14190d8c5c72691b886e2d7dee6efeae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1_safe_thread_owner.html">wpi::SafeThreadOwner</a>&lt; Thread &gt;::Proxy&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_callback_manager.html#a14190d8c5c72691b886e2d7dee6efeae">GetThread</a> () const</td></tr>
 <tr class="separator:a14190d8c5c72691b886e2d7dee6efeae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a8c9f4207f0fc56fe624ab809e49d8ec7"><td class="memItemLeft" align="right" valign="top"><a id="a8c9f4207f0fc56fe624ab809e49d8ec7" name="a8c9f4207f0fc56fe624ab809e49d8ec7"></a>
-class&#160;</td><td class="memItemRight" valign="bottom"><b>RpcServerTest</b></td></tr>
+<tr class="memitem:a8c9f4207f0fc56fe624ab809e49d8ec7"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_callback_manager.html#a8c9f4207f0fc56fe624ab809e49d8ec7">RpcServerTest</a></td></tr>
 <tr class="separator:a8c9f4207f0fc56fe624ab809e49d8ec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a5ef044e8ab03d1e480320f948170cabd" name="a5ef044e8ab03d1e480320f948170cabd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ef044e8ab03d1e480320f948170cabd">&#9670;&nbsp;</a></span>CancelPoll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Derived , typename Thread &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classwpi_1_1_callback_manager.html">wpi::CallbackManager</a>&lt; Derived, Thread &gt;::CancelPoll </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>poller_uid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afacb27910960d8141ed44caeba900650" name="afacb27910960d8141ed44caeba900650"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afacb27910960d8141ed44caeba900650">&#9670;&nbsp;</a></span>CreatePoller()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Derived , typename Thread &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int <a class="el" href="classwpi_1_1_callback_manager.html">wpi::CallbackManager</a>&lt; Derived, Thread &gt;::CreatePoller </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6811664e8ccc4af2b44168126c3edd97" name="a6811664e8ccc4af2b44168126c3edd97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6811664e8ccc4af2b44168126c3edd97">&#9670;&nbsp;</a></span>DoAdd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Derived , typename Thread &gt; </div>
+<div class="memtemplate">
+template&lt;typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int <a class="el" href="classwpi_1_1_callback_manager.html">wpi::CallbackManager</a>&lt; Derived, Thread &gt;::DoAdd </td>
+          <td>(</td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeb9468514ad021b13824e7210df98d83" name="aeb9468514ad021b13824e7210df98d83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb9468514ad021b13824e7210df98d83">&#9670;&nbsp;</a></span>DoStart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Derived , typename Thread &gt; </div>
+<div class="memtemplate">
+template&lt;typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classwpi_1_1_callback_manager.html">wpi::CallbackManager</a>&lt; Derived, Thread &gt;::DoStart </td>
+          <td>(</td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a14190d8c5c72691b886e2d7dee6efeae" name="a14190d8c5c72691b886e2d7dee6efeae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14190d8c5c72691b886e2d7dee6efeae">&#9670;&nbsp;</a></span>GetThread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Derived , typename Thread &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwpi_1_1_safe_thread_owner.html">wpi::SafeThreadOwner</a>&lt; Thread &gt;::Proxy <a class="el" href="classwpi_1_1_callback_manager.html">wpi::CallbackManager</a>&lt; Derived, Thread &gt;::GetThread </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad05d19aec24f4fdf0b74d1018677c706" name="ad05d19aec24f4fdf0b74d1018677c706"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad05d19aec24f4fdf0b74d1018677c706">&#9670;&nbsp;</a></span>Poll() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Derived , typename Thread &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; typename Thread::UserInfo &gt; <a class="el" href="classwpi_1_1_callback_manager.html">wpi::CallbackManager</a>&lt; Derived, Thread &gt;::Poll </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>poller_uid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="add09a19bad1371f2f377aeb7c008eb29" name="add09a19bad1371f2f377aeb7c008eb29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add09a19bad1371f2f377aeb7c008eb29">&#9670;&nbsp;</a></span>Poll() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Derived , typename Thread &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; typename Thread::UserInfo &gt; <a class="el" href="classwpi_1_1_callback_manager.html">wpi::CallbackManager</a>&lt; Derived, Thread &gt;::Poll </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>poller_uid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>timeout</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>timed_out</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aade785f9b47b8430efd56ae160759ab1" name="aade785f9b47b8430efd56ae160759ab1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aade785f9b47b8430efd56ae160759ab1">&#9670;&nbsp;</a></span>Remove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Derived , typename Thread &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classwpi_1_1_callback_manager.html">wpi::CallbackManager</a>&lt; Derived, Thread &gt;::Remove </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>listener_uid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5dd2ee2beb31e045137020c18db672bb" name="a5dd2ee2beb31e045137020c18db672bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dd2ee2beb31e045137020c18db672bb">&#9670;&nbsp;</a></span>RemovePoller()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Derived , typename Thread &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classwpi_1_1_callback_manager.html">wpi::CallbackManager</a>&lt; Derived, Thread &gt;::RemovePoller </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>poller_uid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2d6b5dda438051b85b6fa108d4fdad46" name="a2d6b5dda438051b85b6fa108d4fdad46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d6b5dda438051b85b6fa108d4fdad46">&#9670;&nbsp;</a></span>Send()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Derived , typename Thread &gt; </div>
+<div class="memtemplate">
+template&lt;typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classwpi_1_1_callback_manager.html">wpi::CallbackManager</a>&lt; Derived, Thread &gt;::Send </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>only_listener</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Args &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a29e9703ab9a1eee597e147fe54e5737c" name="a29e9703ab9a1eee597e147fe54e5737c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29e9703ab9a1eee597e147fe54e5737c">&#9670;&nbsp;</a></span>SetOnExit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Derived , typename Thread &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classwpi_1_1_callback_manager.html">wpi::CallbackManager</a>&lt; Derived, Thread &gt;::SetOnExit </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; void()&gt;&#160;</td>
+          <td class="paramname"><em>on_exit</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a57512b7b7501b1a04eadcc2472da0be3" name="a57512b7b7501b1a04eadcc2472da0be3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57512b7b7501b1a04eadcc2472da0be3">&#9670;&nbsp;</a></span>SetOnStart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Derived , typename Thread &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classwpi_1_1_callback_manager.html">wpi::CallbackManager</a>&lt; Derived, Thread &gt;::SetOnStart </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; void()&gt;&#160;</td>
+          <td class="paramname"><em>on_start</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab9e1603ece984e4facf2bb82a98d7b4c" name="ab9e1603ece984e4facf2bb82a98d7b4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9e1603ece984e4facf2bb82a98d7b4c">&#9670;&nbsp;</a></span>Stop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Derived , typename Thread &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classwpi_1_1_callback_manager.html">wpi::CallbackManager</a>&lt; Derived, Thread &gt;::Stop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5dc7e043ff33d4d44038bf7e3b7e6004" name="a5dc7e043ff33d4d44038bf7e3b7e6004"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dc7e043ff33d4d44038bf7e3b7e6004">&#9670;&nbsp;</a></span>WaitForQueue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Derived , typename Thread &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classwpi_1_1_callback_manager.html">wpi::CallbackManager</a>&lt; Derived, Thread &gt;::WaitForQueue </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>timeout</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="a8c9f4207f0fc56fe624ab809e49d8ec7" name="a8c9f4207f0fc56fe624ab809e49d8ec7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c9f4207f0fc56fe624ab809e49d8ec7">&#9670;&nbsp;</a></span>RpcServerTest</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Derived , typename Thread &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">friend class RpcServerTest</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>wpi/<a class="el" href="_callback_manager_8h_source.html">CallbackManager.h</a></li>
 </ul>
@@ -165,8 +599,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>RpcServerTest</b></t
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>wpi</b></li><li class="navelem"><a class="el" href="classwpi_1_1_callback_manager.html">CallbackManager</a></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:52 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="classwpi_1_1_callback_manager.html">CallbackManager</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:40 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

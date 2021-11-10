@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('_socket_error_8h_source.html',''); ini
   <div class="headertitle"><div class="title">SocketError.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
+<a href="_socket_error_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Open Source Software; you can modify and/or share it under the terms of</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// the WPILib BSD license file in the root directory of this project.</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
@@ -103,26 +103,29 @@ $(document).ready(function(){initNavTree('_socket_error_8h_source.html',''); ini
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span>wpi {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacewpi.html">wpi</a> {</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keywordtype">int</span> SocketErrno();</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="namespacewpi.html#af979beb47215754d9f91b67aab2dc4e7">   12</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="namespacewpi.html#af979beb47215754d9f91b67aab2dc4e7">SocketErrno</a>();</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>std::string SocketStrerror(<span class="keywordtype">int</span> code);</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="namespacewpi.html#a8b76c9ad108ae76959df39c1d0b6f03b">   14</a></span>std::string <a class="code hl_function" href="namespacewpi.html#a8b76c9ad108ae76959df39c1d0b6f03b">SocketStrerror</a>(<span class="keywordtype">int</span> code);</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">inline</span> std::string SocketStrerror() {</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  <span class="keywordflow">return</span> SocketStrerror(SocketErrno());</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="namespacewpi.html#aa4d3b98c9badfe33b94b7c6ec1ad3f9f">   16</a></span><span class="keyword">inline</span> std::string <a class="code hl_function" href="namespacewpi.html#a8b76c9ad108ae76959df39c1d0b6f03b">SocketStrerror</a>() {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="namespacewpi.html#a8b76c9ad108ae76959df39c1d0b6f03b">SocketStrerror</a>(<a class="code hl_function" href="namespacewpi.html#af979beb47215754d9f91b67aab2dc4e7">SocketErrno</a>());</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>}</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>}  <span class="comment">// namespace wpi</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#endif  </span><span class="comment">// WPIUTIL_WPI_SOCKETERROR_H_</span></div>
+<div class="ttc" id="anamespacewpi_html"><div class="ttname"><a href="namespacewpi.html">wpi</a></div><div class="ttdef"><b>Definition:</b> PortForwarder.h:13</div></div>
+<div class="ttc" id="anamespacewpi_html_a8b76c9ad108ae76959df39c1d0b6f03b"><div class="ttname"><a href="namespacewpi.html#a8b76c9ad108ae76959df39c1d0b6f03b">wpi::SocketStrerror</a></div><div class="ttdeci">std::string SocketStrerror(int code)</div></div>
+<div class="ttc" id="anamespacewpi_html_af979beb47215754d9f91b67aab2dc4e7"><div class="ttname"><a href="namespacewpi.html#af979beb47215754d9f91b67aab2dc4e7">wpi::SocketErrno</a></div><div class="ttdeci">int SocketErrno()</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><b>SocketError.h</b></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:44 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><a class="el" href="_socket_error_8h.html">SocketError.h</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:30 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

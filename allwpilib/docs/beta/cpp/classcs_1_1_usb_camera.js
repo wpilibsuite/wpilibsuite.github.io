@@ -1,5 +1,6 @@
 var classcs_1_1_usb_camera =
 [
+    [ "UsbCamera", "classcs_1_1_usb_camera.html#ad7421452f3cf43b8205f0f54f325e4a9", null ],
     [ "UsbCamera", "classcs_1_1_usb_camera.html#ad4dec1794c9d3b607ff94aca5908856f", null ],
     [ "UsbCamera", "classcs_1_1_usb_camera.html#a95d3bd23d0f2aaee0da60363682cfd2a", null ],
     [ "EnumerateUsbCameras", "classcs_1_1_usb_camera.html#a18439020ec5857556c0455b259830c3a", null ],

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -92,6 +92,7 @@ $(document).ready(function(){initNavTree('namespacehal.html',''); initResizable(
 
 <div class="header">
   <div class="summary">
+<a href="#namespaces">Namespaces</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
@@ -103,6 +104,13 @@ $(document).ready(function(){initNavTree('namespacehal.html',''); initResizable(
 <p>WPILib Hardware Abstraction Layer (HAL) namespace.  
 <a href="namespacehal.html#details">More...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespacehal_1_1detail"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehal_1_1detail.html">detail</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacehal_1_1impl"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehal_1_1impl.html">impl</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhal_1_1_digital_handle_resource.html">DigitalHandleResource</a></td></tr>
@@ -145,40 +153,40 @@ Classes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:a2e846f89b7ea1bed682347804f2c9cc9"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9">HAL_HandleEnum</a> { <br />
-&#160;&#160;<b>Undefined</b> = 0
-, <b>DIO</b> = 1
-, <b>Port</b> = 2
-, <b>Notifier</b> = 3
+&#160;&#160;<a class="el" href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9aec0fc0100c4fc1ce4eea230c3dc10360">Undefined</a> = 0
+, <a class="el" href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9a920d269f8e1a33f6426ba979ccdfb289">DIO</a> = wpi::kHandleTypeHALBase
+, <a class="el" href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9a60aaf44d4b562252c04db7f98497e9aa">Port</a> = 2
+, <a class="el" href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9aa8683be34c4605cd25095821a41df850">Notifier</a> = 3
 , <br />
-&#160;&#160;<b>Interrupt</b> = 4
-, <b>AnalogOutput</b> = 5
-, <b>AnalogInput</b> = 6
-, <b>AnalogTrigger</b> = 7
+&#160;&#160;<a class="el" href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9a1ce92afa20b1c7f6a4e5d0dc73e5c92a">Interrupt</a> = 4
+, <a class="el" href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9ab7f10dcf952a352d8894d9abb84f567a">AnalogOutput</a> = 5
+, <a class="el" href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9a04f4bd876f98b3ab1095598fcca71975">AnalogInput</a> = 6
+, <a class="el" href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9aec09f3508c623639bcc5c2654a88575f">AnalogTrigger</a> = 7
 , <br />
-&#160;&#160;<b>Relay</b> = 8
-, <b>PWM</b> = 9
-, <b>DigitalPWM</b> = 10
-, <b>Counter</b> = 11
+&#160;&#160;<a class="el" href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9a34c4c50fc7bdd0394f3954f73f2be34d">Relay</a> = 8
+, <a class="el" href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9a8449bc264b69c3a0fe8b60361eaf7aeb">PWM</a> = 9
+, <a class="el" href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9a9f3ccb8a77182de4199d75dd413b329f">DigitalPWM</a> = 10
+, <a class="el" href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9a64d129224a5377b63e9727479ec987d9">Counter</a> = 11
 , <br />
-&#160;&#160;<b>FPGAEncoder</b> = 12
-, <b>Encoder</b> = 13
-, <b>Compressor</b> = 14
-, <b>Solenoid</b> = 15
+&#160;&#160;<a class="el" href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9aeb662ab4657282969835fb68a285d8b8">FPGAEncoder</a> = 12
+, <a class="el" href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9a87d487f6f605eb96e61be67988e41e6d">Encoder</a> = 13
+, <a class="el" href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9aeeb612b01877f2490f950420f36b102e">Compressor</a> = 14
+, <a class="el" href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9acd0cc31af3b532343f47d341e0489d5a">Solenoid</a> = 15
 , <br />
-&#160;&#160;<b>AnalogGyro</b> = 16
-, <b>Vendor</b> = 17
-, <b>SimulationJni</b> = 18
-, <b>CAN</b> = 19
+&#160;&#160;<a class="el" href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9a3b0b83bda8c31fbd566c0bfb1c320c5f">AnalogGyro</a> = 16
+, <a class="el" href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9aec9ceefe0c19f4c029008c23e3c947b7">Vendor</a> = 17
+, <a class="el" href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9a3ceaf454cbc82e153b3c6f02187d223a">SimulationJni</a> = 18
+, <a class="el" href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9a6d5050f7a97e7e2e881a4e09dfbd6087">CAN</a> = 19
 , <br />
-&#160;&#160;<b>SerialPort</b> = 20
-, <b>DutyCycle</b> = 21
-, <b>DMA</b> = 22
-, <b>AddressableLED</b> = 23
+&#160;&#160;<a class="el" href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9a14f5eb6cd81b5d77e4b60bfbb3586421">SerialPort</a> = 20
+, <a class="el" href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9a3e015efacb6f8cb02bd37cafec901301">DutyCycle</a> = 21
+, <a class="el" href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9a33fd5f6391f2f0cb4c91179d7f521949">DMA</a> = 22
+, <a class="el" href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9ae21208902b69a2005c5aac085887b0b9">AddressableLED</a> = 23
 , <br />
-&#160;&#160;<b>CTREPCM</b> = 24
-, <b>CTREPDP</b> = 25
-, <b>REVPDH</b> = 26
-, <b>REVPH</b> = 27
+&#160;&#160;<a class="el" href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9a22912d4fe610d46be1769655dfdc08a6">CTREPCM</a> = 24
+, <a class="el" href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9a42f9d82c942ac83c70dea32c6da8461b">CTREPDP</a> = 25
+, <a class="el" href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9a0edbf6e8f762d9da7dcff85e8cf46db7">REVPDH</a> = 26
+, <a class="el" href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9ab7b6b98a2e5cc91c86e6341e27c46d3a">REVPH</a> = 27
 <br />
  }</td></tr>
 <tr class="memdesc:a2e846f89b7ea1bed682347804f2c9cc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum of HAL handle types.  <a href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9">More...</a><br /></td></tr>
@@ -186,48 +194,47 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aa824c02dcbbe7fc687592d258125cd27"><td class="memItemLeft" align="right" valign="top">static int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehal.html#aa824c02dcbbe7fc687592d258125cd27">getHandleIndex</a> (HAL_Handle handle)</td></tr>
+<tr class="memitem:aa824c02dcbbe7fc687592d258125cd27"><td class="memItemLeft" align="right" valign="top">static int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehal.html#aa824c02dcbbe7fc687592d258125cd27">getHandleIndex</a> (<a class="el" href="group__hal__types.html#ga5d211f92ccd43d4a51d8212b29536ccd">HAL_Handle</a> handle)</td></tr>
 <tr class="memdesc:aa824c02dcbbe7fc687592d258125cd27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the handle index from a handle.  <a href="namespacehal.html#aa824c02dcbbe7fc687592d258125cd27">More...</a><br /></td></tr>
 <tr class="separator:aa824c02dcbbe7fc687592d258125cd27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ad49bca178b45691f84dedd641d2fc1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9">HAL_HandleEnum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehal.html#a7ad49bca178b45691f84dedd641d2fc1">getHandleType</a> (HAL_Handle handle)</td></tr>
+<tr class="memitem:a7ad49bca178b45691f84dedd641d2fc1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9">HAL_HandleEnum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehal.html#a7ad49bca178b45691f84dedd641d2fc1">getHandleType</a> (<a class="el" href="group__hal__types.html#ga5d211f92ccd43d4a51d8212b29536ccd">HAL_Handle</a> handle)</td></tr>
 <tr class="memdesc:a7ad49bca178b45691f84dedd641d2fc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the handle type from a handle.  <a href="namespacehal.html#a7ad49bca178b45691f84dedd641d2fc1">More...</a><br /></td></tr>
 <tr class="separator:a7ad49bca178b45691f84dedd641d2fc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49c55731c73dca723cc5ff27dcfb6ba6"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehal.html#a49c55731c73dca723cc5ff27dcfb6ba6">isHandleType</a> (HAL_Handle handle, <a class="el" href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9">HAL_HandleEnum</a> handleType)</td></tr>
+<tr class="memitem:a49c55731c73dca723cc5ff27dcfb6ba6"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehal.html#a49c55731c73dca723cc5ff27dcfb6ba6">isHandleType</a> (<a class="el" href="group__hal__types.html#ga5d211f92ccd43d4a51d8212b29536ccd">HAL_Handle</a> handle, <a class="el" href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9">HAL_HandleEnum</a> handleType)</td></tr>
 <tr class="memdesc:a49c55731c73dca723cc5ff27dcfb6ba6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get if the handle is a specific type.  <a href="namespacehal.html#a49c55731c73dca723cc5ff27dcfb6ba6">More...</a><br /></td></tr>
 <tr class="separator:a49c55731c73dca723cc5ff27dcfb6ba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02472d7f1ea49f5e871a3b8fcc0e1a41"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehal.html#a02472d7f1ea49f5e871a3b8fcc0e1a41">isHandleCorrectVersion</a> (HAL_Handle handle, int16_t version)</td></tr>
+<tr class="memitem:a02472d7f1ea49f5e871a3b8fcc0e1a41"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehal.html#a02472d7f1ea49f5e871a3b8fcc0e1a41">isHandleCorrectVersion</a> (<a class="el" href="group__hal__types.html#ga5d211f92ccd43d4a51d8212b29536ccd">HAL_Handle</a> handle, int16_t version)</td></tr>
 <tr class="memdesc:a02472d7f1ea49f5e871a3b8fcc0e1a41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get if the version of the handle is correct.  <a href="namespacehal.html#a02472d7f1ea49f5e871a3b8fcc0e1a41">More...</a><br /></td></tr>
 <tr class="separator:a02472d7f1ea49f5e871a3b8fcc0e1a41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbf5817bf5e1c8a4c8d0684f3bb2c2b6"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehal.html#afbf5817bf5e1c8a4c8d0684f3bb2c2b6">getHandleTypedIndex</a> (HAL_Handle handle, <a class="el" href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9">HAL_HandleEnum</a> enumType, int16_t version)</td></tr>
+<tr class="memitem:afbf5817bf5e1c8a4c8d0684f3bb2c2b6"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehal.html#afbf5817bf5e1c8a4c8d0684f3bb2c2b6">getHandleTypedIndex</a> (<a class="el" href="group__hal__types.html#ga5d211f92ccd43d4a51d8212b29536ccd">HAL_Handle</a> handle, <a class="el" href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9">HAL_HandleEnum</a> enumType, int16_t version)</td></tr>
 <tr class="memdesc:afbf5817bf5e1c8a4c8d0684f3bb2c2b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get if the handle is a correct type and version.  <a href="namespacehal.html#afbf5817bf5e1c8a4c8d0684f3bb2c2b6">More...</a><br /></td></tr>
 <tr class="separator:afbf5817bf5e1c8a4c8d0684f3bb2c2b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abda8f141e53785a3eb6b21731b4a1389"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehal.html#abda8f141e53785a3eb6b21731b4a1389">getPortHandleChannel</a> (HAL_PortHandle handle)</td></tr>
+<tr class="memitem:abda8f141e53785a3eb6b21731b4a1389"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehal.html#abda8f141e53785a3eb6b21731b4a1389">getPortHandleChannel</a> (<a class="el" href="group__hal__types.html#ga5e9644ba085a365cba2614c02e003a33">HAL_PortHandle</a> handle)</td></tr>
 <tr class="memdesc:abda8f141e53785a3eb6b21731b4a1389"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the port channel of a port handle.  <a href="namespacehal.html#abda8f141e53785a3eb6b21731b4a1389">More...</a><br /></td></tr>
 <tr class="separator:abda8f141e53785a3eb6b21731b4a1389"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d30f3a339e2682c13cee115ed96931e"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehal.html#a3d30f3a339e2682c13cee115ed96931e">getPortHandleModule</a> (HAL_PortHandle handle)</td></tr>
+<tr class="memitem:a3d30f3a339e2682c13cee115ed96931e"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehal.html#a3d30f3a339e2682c13cee115ed96931e">getPortHandleModule</a> (<a class="el" href="group__hal__types.html#ga5e9644ba085a365cba2614c02e003a33">HAL_PortHandle</a> handle)</td></tr>
 <tr class="memdesc:a3d30f3a339e2682c13cee115ed96931e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the port module of a port handle.  <a href="namespacehal.html#a3d30f3a339e2682c13cee115ed96931e">More...</a><br /></td></tr>
 <tr class="separator:a3d30f3a339e2682c13cee115ed96931e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad84dad1b1cf4fb4185ceb4eb6fe282ea"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehal.html#ad84dad1b1cf4fb4185ceb4eb6fe282ea">getPortHandleSPIEnable</a> (HAL_PortHandle handle)</td></tr>
+<tr class="memitem:ad84dad1b1cf4fb4185ceb4eb6fe282ea"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehal.html#ad84dad1b1cf4fb4185ceb4eb6fe282ea">getPortHandleSPIEnable</a> (<a class="el" href="group__hal__types.html#ga5e9644ba085a365cba2614c02e003a33">HAL_PortHandle</a> handle)</td></tr>
 <tr class="memdesc:ad84dad1b1cf4fb4185ceb4eb6fe282ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the SPI channel of a port handle.  <a href="namespacehal.html#ad84dad1b1cf4fb4185ceb4eb6fe282ea">More...</a><br /></td></tr>
 <tr class="separator:ad84dad1b1cf4fb4185ceb4eb6fe282ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ebb354330e8415469e51cb52c615ac5"><td class="memItemLeft" align="right" valign="top">HAL_PortHandle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehal.html#a6ebb354330e8415469e51cb52c615ac5">createPortHandle</a> (uint8_t channel, uint8_t module)</td></tr>
+<tr class="memitem:a6ebb354330e8415469e51cb52c615ac5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__hal__types.html#ga5e9644ba085a365cba2614c02e003a33">HAL_PortHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehal.html#a6ebb354330e8415469e51cb52c615ac5">createPortHandle</a> (uint8_t channel, uint8_t module)</td></tr>
 <tr class="memdesc:a6ebb354330e8415469e51cb52c615ac5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a port handle.  <a href="namespacehal.html#a6ebb354330e8415469e51cb52c615ac5">More...</a><br /></td></tr>
 <tr class="separator:a6ebb354330e8415469e51cb52c615ac5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd9e6fe86aa997774ce9cd678f6b2786"><td class="memItemLeft" align="right" valign="top">HAL_PortHandle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehal.html#abd9e6fe86aa997774ce9cd678f6b2786">createPortHandleForSPI</a> (uint8_t channel)</td></tr>
+<tr class="memitem:abd9e6fe86aa997774ce9cd678f6b2786"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__hal__types.html#ga5e9644ba085a365cba2614c02e003a33">HAL_PortHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehal.html#abd9e6fe86aa997774ce9cd678f6b2786">createPortHandleForSPI</a> (uint8_t channel)</td></tr>
 <tr class="memdesc:abd9e6fe86aa997774ce9cd678f6b2786"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a port handle for SPI.  <a href="namespacehal.html#abd9e6fe86aa997774ce9cd678f6b2786">More...</a><br /></td></tr>
 <tr class="separator:abd9e6fe86aa997774ce9cd678f6b2786"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39c5c5e666bd856368820ba66b28e8f9"><td class="memItemLeft" align="right" valign="top">HAL_Handle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehal.html#a39c5c5e666bd856368820ba66b28e8f9">createHandle</a> (int16_t index, <a class="el" href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9">HAL_HandleEnum</a> handleType, int16_t version)</td></tr>
+<tr class="memitem:a39c5c5e666bd856368820ba66b28e8f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__hal__types.html#ga5d211f92ccd43d4a51d8212b29536ccd">HAL_Handle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehal.html#a39c5c5e666bd856368820ba66b28e8f9">createHandle</a> (int16_t index, <a class="el" href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9">HAL_HandleEnum</a> handleType, int16_t version)</td></tr>
 <tr class="memdesc:a39c5c5e666bd856368820ba66b28e8f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a handle for a specific index, type and version.  <a href="namespacehal.html#a39c5c5e666bd856368820ba66b28e8f9">More...</a><br /></td></tr>
 <tr class="separator:a39c5c5e666bd856368820ba66b28e8f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8fafafcab9f6d02c41abd00fffa19734"><td class="memTemplParams" colspan="2">template&lt;typename Functor &gt; </td></tr>
-<tr class="memitem:a8fafafcab9f6d02c41abd00fffa19734"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacehal.html#a8fafafcab9f6d02c41abd00fffa19734">UnsafeManipulateDIO</a> (HAL_DigitalHandle handle, int32_t *status, Functor func)</td></tr>
+<tr class="memitem:a8fafafcab9f6d02c41abd00fffa19734"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacehal.html#a8fafafcab9f6d02c41abd00fffa19734">UnsafeManipulateDIO</a> (<a class="el" href="group__hal__types.html#gad68dd9f33ec5603d75b09ece547ff164">HAL_DigitalHandle</a> handle, int32_t *status, Functor func)</td></tr>
 <tr class="memdesc:a8fafafcab9f6d02c41abd00fffa19734"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unsafe digital output set function This function can be used to perform fast and determinstically set digital outputs.  <a href="namespacehal.html#a8fafafcab9f6d02c41abd00fffa19734">More...</a><br /></td></tr>
 <tr class="separator:a8fafafcab9f6d02c41abd00fffa19734"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a3d0b58d1c8b9d63821d271d822d68f10"><td class="memItemLeft" align="right" valign="top"><a id="a3d0b58d1c8b9d63821d271d822d68f10" name="a3d0b58d1c8b9d63821d271d822d68f10"></a>
-constexpr int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>InvalidHandleIndex</b> = -1</td></tr>
+<tr class="memitem:a3d0b58d1c8b9d63821d271d822d68f10"><td class="memItemLeft" align="right" valign="top">constexpr int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacehal.html#a3d0b58d1c8b9d63821d271d822d68f10">InvalidHandleIndex</a> = -1</td></tr>
 <tr class="separator:a3d0b58d1c8b9d63821d271d822d68f10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -255,6 +262,36 @@ constexpr int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>InvalidH
 
 <p>Enum of HAL handle types. </p>
 <p >Vendors/Teams should use Vendor (17). </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a2e846f89b7ea1bed682347804f2c9cc9aec0fc0100c4fc1ce4eea230c3dc10360" name="a2e846f89b7ea1bed682347804f2c9cc9aec0fc0100c4fc1ce4eea230c3dc10360"></a>Undefined&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2e846f89b7ea1bed682347804f2c9cc9a920d269f8e1a33f6426ba979ccdfb289" name="a2e846f89b7ea1bed682347804f2c9cc9a920d269f8e1a33f6426ba979ccdfb289"></a>DIO&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2e846f89b7ea1bed682347804f2c9cc9a60aaf44d4b562252c04db7f98497e9aa" name="a2e846f89b7ea1bed682347804f2c9cc9a60aaf44d4b562252c04db7f98497e9aa"></a>Port&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2e846f89b7ea1bed682347804f2c9cc9aa8683be34c4605cd25095821a41df850" name="a2e846f89b7ea1bed682347804f2c9cc9aa8683be34c4605cd25095821a41df850"></a>Notifier&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2e846f89b7ea1bed682347804f2c9cc9a1ce92afa20b1c7f6a4e5d0dc73e5c92a" name="a2e846f89b7ea1bed682347804f2c9cc9a1ce92afa20b1c7f6a4e5d0dc73e5c92a"></a>Interrupt&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2e846f89b7ea1bed682347804f2c9cc9ab7f10dcf952a352d8894d9abb84f567a" name="a2e846f89b7ea1bed682347804f2c9cc9ab7f10dcf952a352d8894d9abb84f567a"></a>AnalogOutput&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2e846f89b7ea1bed682347804f2c9cc9a04f4bd876f98b3ab1095598fcca71975" name="a2e846f89b7ea1bed682347804f2c9cc9a04f4bd876f98b3ab1095598fcca71975"></a>AnalogInput&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2e846f89b7ea1bed682347804f2c9cc9aec09f3508c623639bcc5c2654a88575f" name="a2e846f89b7ea1bed682347804f2c9cc9aec09f3508c623639bcc5c2654a88575f"></a>AnalogTrigger&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2e846f89b7ea1bed682347804f2c9cc9a34c4c50fc7bdd0394f3954f73f2be34d" name="a2e846f89b7ea1bed682347804f2c9cc9a34c4c50fc7bdd0394f3954f73f2be34d"></a>Relay&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2e846f89b7ea1bed682347804f2c9cc9a8449bc264b69c3a0fe8b60361eaf7aeb" name="a2e846f89b7ea1bed682347804f2c9cc9a8449bc264b69c3a0fe8b60361eaf7aeb"></a>PWM&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2e846f89b7ea1bed682347804f2c9cc9a9f3ccb8a77182de4199d75dd413b329f" name="a2e846f89b7ea1bed682347804f2c9cc9a9f3ccb8a77182de4199d75dd413b329f"></a>DigitalPWM&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2e846f89b7ea1bed682347804f2c9cc9a64d129224a5377b63e9727479ec987d9" name="a2e846f89b7ea1bed682347804f2c9cc9a64d129224a5377b63e9727479ec987d9"></a>Counter&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2e846f89b7ea1bed682347804f2c9cc9aeb662ab4657282969835fb68a285d8b8" name="a2e846f89b7ea1bed682347804f2c9cc9aeb662ab4657282969835fb68a285d8b8"></a>FPGAEncoder&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2e846f89b7ea1bed682347804f2c9cc9a87d487f6f605eb96e61be67988e41e6d" name="a2e846f89b7ea1bed682347804f2c9cc9a87d487f6f605eb96e61be67988e41e6d"></a>Encoder&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2e846f89b7ea1bed682347804f2c9cc9aeeb612b01877f2490f950420f36b102e" name="a2e846f89b7ea1bed682347804f2c9cc9aeeb612b01877f2490f950420f36b102e"></a>Compressor&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2e846f89b7ea1bed682347804f2c9cc9acd0cc31af3b532343f47d341e0489d5a" name="a2e846f89b7ea1bed682347804f2c9cc9acd0cc31af3b532343f47d341e0489d5a"></a>Solenoid&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2e846f89b7ea1bed682347804f2c9cc9a3b0b83bda8c31fbd566c0bfb1c320c5f" name="a2e846f89b7ea1bed682347804f2c9cc9a3b0b83bda8c31fbd566c0bfb1c320c5f"></a>AnalogGyro&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2e846f89b7ea1bed682347804f2c9cc9aec9ceefe0c19f4c029008c23e3c947b7" name="a2e846f89b7ea1bed682347804f2c9cc9aec9ceefe0c19f4c029008c23e3c947b7"></a>Vendor&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2e846f89b7ea1bed682347804f2c9cc9a3ceaf454cbc82e153b3c6f02187d223a" name="a2e846f89b7ea1bed682347804f2c9cc9a3ceaf454cbc82e153b3c6f02187d223a"></a>SimulationJni&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2e846f89b7ea1bed682347804f2c9cc9a6d5050f7a97e7e2e881a4e09dfbd6087" name="a2e846f89b7ea1bed682347804f2c9cc9a6d5050f7a97e7e2e881a4e09dfbd6087"></a>CAN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2e846f89b7ea1bed682347804f2c9cc9a14f5eb6cd81b5d77e4b60bfbb3586421" name="a2e846f89b7ea1bed682347804f2c9cc9a14f5eb6cd81b5d77e4b60bfbb3586421"></a>SerialPort&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2e846f89b7ea1bed682347804f2c9cc9a3e015efacb6f8cb02bd37cafec901301" name="a2e846f89b7ea1bed682347804f2c9cc9a3e015efacb6f8cb02bd37cafec901301"></a>DutyCycle&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2e846f89b7ea1bed682347804f2c9cc9a33fd5f6391f2f0cb4c91179d7f521949" name="a2e846f89b7ea1bed682347804f2c9cc9a33fd5f6391f2f0cb4c91179d7f521949"></a>DMA&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2e846f89b7ea1bed682347804f2c9cc9ae21208902b69a2005c5aac085887b0b9" name="a2e846f89b7ea1bed682347804f2c9cc9ae21208902b69a2005c5aac085887b0b9"></a>AddressableLED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2e846f89b7ea1bed682347804f2c9cc9a22912d4fe610d46be1769655dfdc08a6" name="a2e846f89b7ea1bed682347804f2c9cc9a22912d4fe610d46be1769655dfdc08a6"></a>CTREPCM&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2e846f89b7ea1bed682347804f2c9cc9a42f9d82c942ac83c70dea32c6da8461b" name="a2e846f89b7ea1bed682347804f2c9cc9a42f9d82c942ac83c70dea32c6da8461b"></a>CTREPDP&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2e846f89b7ea1bed682347804f2c9cc9a0edbf6e8f762d9da7dcff85e8cf46db7" name="a2e846f89b7ea1bed682347804f2c9cc9a0edbf6e8f762d9da7dcff85e8cf46db7"></a>REVPDH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a2e846f89b7ea1bed682347804f2c9cc9ab7b6b98a2e5cc91c86e6341e27c46d3a" name="a2e846f89b7ea1bed682347804f2c9cc9ab7b6b98a2e5cc91c86e6341e27c46d3a"></a>REVPH&#160;</td><td class="fielddoc"></td></tr>
+</table>
 
 </div>
 </div>
@@ -266,7 +303,7 @@ constexpr int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>InvalidH
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HAL_Handle hal::createHandle </td>
+          <td class="memname"><a class="el" href="group__hal__types.html#ga5d211f92ccd43d4a51d8212b29536ccd">HAL_Handle</a> hal::createHandle </td>
           <td>(</td>
           <td class="paramtype">int16_t&#160;</td>
           <td class="paramname"><em>index</em>, </td>
@@ -312,7 +349,7 @@ constexpr int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>InvalidH
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HAL_PortHandle hal::createPortHandle </td>
+          <td class="memname"><a class="el" href="group__hal__types.html#ga5e9644ba085a365cba2614c02e003a33">HAL_PortHandle</a> hal::createPortHandle </td>
           <td>(</td>
           <td class="paramtype">uint8_t&#160;</td>
           <td class="paramname"><em>channel</em>, </td>
@@ -350,7 +387,7 @@ constexpr int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>InvalidH
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">HAL_PortHandle hal::createPortHandleForSPI </td>
+          <td class="memname"><a class="el" href="group__hal__types.html#ga5e9644ba085a365cba2614c02e003a33">HAL_PortHandle</a> hal::createPortHandleForSPI </td>
           <td>(</td>
           <td class="paramtype">uint8_t&#160;</td>
           <td class="paramname"><em>channel</em></td><td>)</td>
@@ -382,7 +419,7 @@ constexpr int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>InvalidH
         <tr>
           <td class="memname">static int16_t hal::getHandleIndex </td>
           <td>(</td>
-          <td class="paramtype">HAL_Handle&#160;</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#ga5d211f92ccd43d4a51d8212b29536ccd">HAL_Handle</a>&#160;</td>
           <td class="paramname"><em>handle</em></td><td>)</td>
           <td></td>
         </tr>
@@ -417,7 +454,7 @@ constexpr int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>InvalidH
         <tr>
           <td class="memname">static <a class="el" href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9">HAL_HandleEnum</a> hal::getHandleType </td>
           <td>(</td>
-          <td class="paramtype">HAL_Handle&#160;</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#ga5d211f92ccd43d4a51d8212b29536ccd">HAL_Handle</a>&#160;</td>
           <td class="paramname"><em>handle</em></td><td>)</td>
           <td></td>
         </tr>
@@ -452,7 +489,7 @@ constexpr int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>InvalidH
         <tr>
           <td class="memname">int16_t hal::getHandleTypedIndex </td>
           <td>(</td>
-          <td class="paramtype">HAL_Handle&#160;</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#ga5d211f92ccd43d4a51d8212b29536ccd">HAL_Handle</a>&#160;</td>
           <td class="paramname"><em>handle</em>, </td>
         </tr>
         <tr>
@@ -506,7 +543,7 @@ constexpr int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>InvalidH
         <tr>
           <td class="memname">int16_t hal::getPortHandleChannel </td>
           <td>(</td>
-          <td class="paramtype">HAL_PortHandle&#160;</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#ga5e9644ba085a365cba2614c02e003a33">HAL_PortHandle</a>&#160;</td>
           <td class="paramname"><em>handle</em></td><td>)</td>
           <td></td>
         </tr>
@@ -541,7 +578,7 @@ constexpr int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>InvalidH
         <tr>
           <td class="memname">int16_t hal::getPortHandleModule </td>
           <td>(</td>
-          <td class="paramtype">HAL_PortHandle&#160;</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#ga5e9644ba085a365cba2614c02e003a33">HAL_PortHandle</a>&#160;</td>
           <td class="paramname"><em>handle</em></td><td>)</td>
           <td></td>
         </tr>
@@ -576,7 +613,7 @@ constexpr int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>InvalidH
         <tr>
           <td class="memname">int16_t hal::getPortHandleSPIEnable </td>
           <td>(</td>
-          <td class="paramtype">HAL_PortHandle&#160;</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#ga5e9644ba085a365cba2614c02e003a33">HAL_PortHandle</a>&#160;</td>
           <td class="paramname"><em>handle</em></td><td>)</td>
           <td></td>
         </tr>
@@ -611,7 +648,7 @@ constexpr int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>InvalidH
         <tr>
           <td class="memname">static bool hal::isHandleCorrectVersion </td>
           <td>(</td>
-          <td class="paramtype">HAL_Handle&#160;</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#ga5d211f92ccd43d4a51d8212b29536ccd">HAL_Handle</a>&#160;</td>
           <td class="paramname"><em>handle</em>, </td>
         </tr>
         <tr>
@@ -658,7 +695,7 @@ constexpr int16_t&#160;</td><td class="memItemRight" valign="bottom"><b>InvalidH
         <tr>
           <td class="memname">static bool hal::isHandleType </td>
           <td>(</td>
-          <td class="paramtype">HAL_Handle&#160;</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#ga5d211f92ccd43d4a51d8212b29536ccd">HAL_Handle</a>&#160;</td>
           <td class="paramname"><em>handle</em>, </td>
         </tr>
         <tr>
@@ -703,7 +740,7 @@ template&lt;typename Functor &gt; </div>
         <tr>
           <td class="memname">void hal::UnsafeManipulateDIO </td>
           <td>(</td>
-          <td class="paramtype">HAL_DigitalHandle&#160;</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#gad68dd9f33ec5603d75b09ece547ff164">HAL_DigitalHandle</a>&#160;</td>
           <td class="paramname"><em>handle</em>, </td>
         </tr>
         <tr>
@@ -739,13 +776,36 @@ template&lt;typename Functor &gt; </div>
 
 </div>
 </div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a3d0b58d1c8b9d63821d271d822d68f10" name="a3d0b58d1c8b9d63821d271d822d68f10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d0b58d1c8b9d63821d271d822d68f10">&#9670;&nbsp;</a></span>InvalidHandleIndex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int16_t hal::InvalidHandleIndex = -1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacehal.html">hal</a></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:51 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:39 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

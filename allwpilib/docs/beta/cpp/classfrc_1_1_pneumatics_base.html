@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -98,86 +98,710 @@ $(document).ready(function(){initNavTree('classfrc_1_1_pneumatics_base.html','')
   <div class="headertitle"><div class="title">frc::PneumaticsBase Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_pneumatics_base_8h_source.html">frc/PneumaticsBase.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for frc::PneumaticsBase:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="classfrc_1_1_pneumatics_base.png" usemap="#frc::PneumaticsBase_map" alt=""/>
   <map id="frc::PneumaticsBase_map" name="frc::PneumaticsBase_map">
-<area href="classfrc_1_1_pneumatics_control_module.html" alt="frc::PneumaticsControlModule" shape="rect" coords="0,56,181,80"/>
-<area href="classfrc_1_1_pneumatics_hub.html" alt="frc::PneumaticsHub" shape="rect" coords="191,56,372,80"/>
+<area href="classfrc_1_1_pneumatic_hub.html" alt="frc::PneumaticHub" shape="rect" coords="0,56,181,80"/>
+<area href="classfrc_1_1_pneumatics_control_module.html" alt="frc::PneumaticsControlModule" shape="rect" coords="191,56,372,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae7ef8d78b0df4e32d58871c42d45495f"><td class="memItemLeft" align="right" valign="top"><a id="ae7ef8d78b0df4e32d58871c42d45495f" name="ae7ef8d78b0df4e32d58871c42d45495f"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetCompressor</b> () const =0</td></tr>
+<tr class="memitem:a77f34494a62f6580ebf0012833a937da"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_pneumatics_base.html#a77f34494a62f6580ebf0012833a937da">~PneumaticsBase</a> ()=default</td></tr>
+<tr class="separator:a77f34494a62f6580ebf0012833a937da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7ef8d78b0df4e32d58871c42d45495f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_pneumatics_base.html#ae7ef8d78b0df4e32d58871c42d45495f">GetCompressor</a> () const =0</td></tr>
 <tr class="separator:ae7ef8d78b0df4e32d58871c42d45495f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2a09a4dbdee2797cd66fd2b28e95d2c"><td class="memItemLeft" align="right" valign="top"><a id="af2a09a4dbdee2797cd66fd2b28e95d2c" name="af2a09a4dbdee2797cd66fd2b28e95d2c"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetPressureSwitch</b> () const =0</td></tr>
+<tr class="memitem:af2a09a4dbdee2797cd66fd2b28e95d2c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_pneumatics_base.html#af2a09a4dbdee2797cd66fd2b28e95d2c">GetPressureSwitch</a> () const =0</td></tr>
 <tr class="separator:af2a09a4dbdee2797cd66fd2b28e95d2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3be738bd8d81296d11eaa2a1c0f3be3"><td class="memItemLeft" align="right" valign="top"><a id="ad3be738bd8d81296d11eaa2a1c0f3be3" name="ad3be738bd8d81296d11eaa2a1c0f3be3"></a>
-virtual double&#160;</td><td class="memItemRight" valign="bottom"><b>GetCompressorCurrent</b> () const =0</td></tr>
+<tr class="memitem:ad3be738bd8d81296d11eaa2a1c0f3be3"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_pneumatics_base.html#ad3be738bd8d81296d11eaa2a1c0f3be3">GetCompressorCurrent</a> () const =0</td></tr>
 <tr class="separator:ad3be738bd8d81296d11eaa2a1c0f3be3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdd186887338e1253f8bcce0283b2e8a"><td class="memItemLeft" align="right" valign="top"><a id="acdd186887338e1253f8bcce0283b2e8a" name="acdd186887338e1253f8bcce0283b2e8a"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetClosedLoopControl</b> (bool on)=0</td></tr>
+<tr class="memitem:acdd186887338e1253f8bcce0283b2e8a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_pneumatics_base.html#acdd186887338e1253f8bcce0283b2e8a">SetClosedLoopControl</a> (bool on)=0</td></tr>
 <tr class="separator:acdd186887338e1253f8bcce0283b2e8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0644cfbffd43d75fe995c72af4952cc"><td class="memItemLeft" align="right" valign="top"><a id="ad0644cfbffd43d75fe995c72af4952cc" name="ad0644cfbffd43d75fe995c72af4952cc"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetClosedLoopControl</b> () const =0</td></tr>
+<tr class="memitem:ad0644cfbffd43d75fe995c72af4952cc"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_pneumatics_base.html#ad0644cfbffd43d75fe995c72af4952cc">GetClosedLoopControl</a> () const =0</td></tr>
 <tr class="separator:ad0644cfbffd43d75fe995c72af4952cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b5fdac79320553254cabc15118e1298"><td class="memItemLeft" align="right" valign="top"><a id="a0b5fdac79320553254cabc15118e1298" name="a0b5fdac79320553254cabc15118e1298"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSolenoids</b> (int mask, int values)=0</td></tr>
+<tr class="memitem:a0b5fdac79320553254cabc15118e1298"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_pneumatics_base.html#a0b5fdac79320553254cabc15118e1298">SetSolenoids</a> (int mask, int values)=0</td></tr>
 <tr class="separator:a0b5fdac79320553254cabc15118e1298"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacf4ac281029aebe4b774a036d5e8cfd"><td class="memItemLeft" align="right" valign="top"><a id="aacf4ac281029aebe4b774a036d5e8cfd" name="aacf4ac281029aebe4b774a036d5e8cfd"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>GetSolenoids</b> () const =0</td></tr>
+<tr class="memitem:aacf4ac281029aebe4b774a036d5e8cfd"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_pneumatics_base.html#aacf4ac281029aebe4b774a036d5e8cfd">GetSolenoids</a> () const =0</td></tr>
 <tr class="separator:aacf4ac281029aebe4b774a036d5e8cfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10ed7d280a402532bf649169053e98d8"><td class="memItemLeft" align="right" valign="top"><a id="a10ed7d280a402532bf649169053e98d8" name="a10ed7d280a402532bf649169053e98d8"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>GetModuleNumber</b> () const =0</td></tr>
+<tr class="memitem:a10ed7d280a402532bf649169053e98d8"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_pneumatics_base.html#a10ed7d280a402532bf649169053e98d8">GetModuleNumber</a> () const =0</td></tr>
 <tr class="separator:a10ed7d280a402532bf649169053e98d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6c1ac9be8d3cac8696e20242aa62100"><td class="memItemLeft" align="right" valign="top"><a id="ae6c1ac9be8d3cac8696e20242aa62100" name="ae6c1ac9be8d3cac8696e20242aa62100"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>GetSolenoidDisabledList</b> () const =0</td></tr>
+<tr class="memitem:ae6c1ac9be8d3cac8696e20242aa62100"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_pneumatics_base.html#ae6c1ac9be8d3cac8696e20242aa62100">GetSolenoidDisabledList</a> () const =0</td></tr>
 <tr class="separator:ae6c1ac9be8d3cac8696e20242aa62100"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b279e56be78d6d81aa542c545d06927"><td class="memItemLeft" align="right" valign="top"><a id="a5b279e56be78d6d81aa542c545d06927" name="a5b279e56be78d6d81aa542c545d06927"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>FireOneShot</b> (int index)=0</td></tr>
+<tr class="memitem:a5b279e56be78d6d81aa542c545d06927"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_pneumatics_base.html#a5b279e56be78d6d81aa542c545d06927">FireOneShot</a> (int index)=0</td></tr>
 <tr class="separator:a5b279e56be78d6d81aa542c545d06927"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57424c17d7b533cd925354c57abe032c"><td class="memItemLeft" align="right" valign="top"><a id="a57424c17d7b533cd925354c57abe032c" name="a57424c17d7b533cd925354c57abe032c"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetOneShotDuration</b> (int index, units::second_t duration)=0</td></tr>
+<tr class="memitem:a57424c17d7b533cd925354c57abe032c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_pneumatics_base.html#a57424c17d7b533cd925354c57abe032c">SetOneShotDuration</a> (int index, units::second_t duration)=0</td></tr>
 <tr class="separator:a57424c17d7b533cd925354c57abe032c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a752aa5019f761564e01550dce8334bec"><td class="memItemLeft" align="right" valign="top"><a id="a752aa5019f761564e01550dce8334bec" name="a752aa5019f761564e01550dce8334bec"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>CheckSolenoidChannel</b> (int channel) const =0</td></tr>
+<tr class="memitem:a752aa5019f761564e01550dce8334bec"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_pneumatics_base.html#a752aa5019f761564e01550dce8334bec">CheckSolenoidChannel</a> (int channel) const =0</td></tr>
 <tr class="separator:a752aa5019f761564e01550dce8334bec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb9433ac951c0fa850afbb0e0a80aa46"><td class="memItemLeft" align="right" valign="top"><a id="aeb9433ac951c0fa850afbb0e0a80aa46" name="aeb9433ac951c0fa850afbb0e0a80aa46"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>CheckAndReserveSolenoids</b> (int mask)=0</td></tr>
+<tr class="memitem:aeb9433ac951c0fa850afbb0e0a80aa46"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_pneumatics_base.html#aeb9433ac951c0fa850afbb0e0a80aa46">CheckAndReserveSolenoids</a> (int mask)=0</td></tr>
 <tr class="separator:aeb9433ac951c0fa850afbb0e0a80aa46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c095dfe8120c1a1e08abba7d0d863d5"><td class="memItemLeft" align="right" valign="top"><a id="a8c095dfe8120c1a1e08abba7d0d863d5" name="a8c095dfe8120c1a1e08abba7d0d863d5"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>UnreserveSolenoids</b> (int mask)=0</td></tr>
+<tr class="memitem:a8c095dfe8120c1a1e08abba7d0d863d5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_pneumatics_base.html#a8c095dfe8120c1a1e08abba7d0d863d5">UnreserveSolenoids</a> (int mask)=0</td></tr>
 <tr class="separator:a8c095dfe8120c1a1e08abba7d0d863d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6b84ef772e5313bd67178616f257b08"><td class="memItemLeft" align="right" valign="top"><a id="ac6b84ef772e5313bd67178616f257b08" name="ac6b84ef772e5313bd67178616f257b08"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>ReserveCompressor</b> ()=0</td></tr>
+<tr class="memitem:ac6b84ef772e5313bd67178616f257b08"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_pneumatics_base.html#ac6b84ef772e5313bd67178616f257b08">ReserveCompressor</a> ()=0</td></tr>
 <tr class="separator:ac6b84ef772e5313bd67178616f257b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f31953cb4f841ffb3a2c7458587ad8d"><td class="memItemLeft" align="right" valign="top"><a id="a6f31953cb4f841ffb3a2c7458587ad8d" name="a6f31953cb4f841ffb3a2c7458587ad8d"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>UnreserveCompressor</b> ()=0</td></tr>
+<tr class="memitem:a6f31953cb4f841ffb3a2c7458587ad8d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_pneumatics_base.html#a6f31953cb4f841ffb3a2c7458587ad8d">UnreserveCompressor</a> ()=0</td></tr>
 <tr class="separator:a6f31953cb4f841ffb3a2c7458587ad8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a133fe2675cd72936a6f59dc2fa4803b0"><td class="memItemLeft" align="right" valign="top"><a id="a133fe2675cd72936a6f59dc2fa4803b0" name="a133fe2675cd72936a6f59dc2fa4803b0"></a>
-virtual <a class="el" href="classfrc_1_1_solenoid.html">Solenoid</a>&#160;</td><td class="memItemRight" valign="bottom"><b>MakeSolenoid</b> (int channel)=0</td></tr>
+<tr class="memitem:a133fe2675cd72936a6f59dc2fa4803b0"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classfrc_1_1_solenoid.html">Solenoid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_pneumatics_base.html#a133fe2675cd72936a6f59dc2fa4803b0">MakeSolenoid</a> (int channel)=0</td></tr>
 <tr class="separator:a133fe2675cd72936a6f59dc2fa4803b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04d30e25a22b0520683f3399f9550dd0"><td class="memItemLeft" align="right" valign="top"><a id="a04d30e25a22b0520683f3399f9550dd0" name="a04d30e25a22b0520683f3399f9550dd0"></a>
-virtual <a class="el" href="classfrc_1_1_double_solenoid.html">DoubleSolenoid</a>&#160;</td><td class="memItemRight" valign="bottom"><b>MakeDoubleSolenoid</b> (int forwardChannel, int reverseChannel)=0</td></tr>
+<tr class="memitem:a04d30e25a22b0520683f3399f9550dd0"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classfrc_1_1_double_solenoid.html">DoubleSolenoid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_pneumatics_base.html#a04d30e25a22b0520683f3399f9550dd0">MakeDoubleSolenoid</a> (int forwardChannel, int reverseChannel)=0</td></tr>
 <tr class="separator:a04d30e25a22b0520683f3399f9550dd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b0da19a21229f4773cd6896b93e14f9"><td class="memItemLeft" align="right" valign="top"><a id="a5b0da19a21229f4773cd6896b93e14f9" name="a5b0da19a21229f4773cd6896b93e14f9"></a>
-virtual <a class="el" href="classfrc_1_1_compressor.html">Compressor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>MakeCompressor</b> ()=0</td></tr>
+<tr class="memitem:a5b0da19a21229f4773cd6896b93e14f9"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classfrc_1_1_compressor.html">Compressor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_pneumatics_base.html#a5b0da19a21229f4773cd6896b93e14f9">MakeCompressor</a> ()=0</td></tr>
 <tr class="separator:a5b0da19a21229f4773cd6896b93e14f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a26e6de07746aec386608010ce0fe324d"><td class="memItemLeft" align="right" valign="top"><a id="a26e6de07746aec386608010ce0fe324d" name="a26e6de07746aec386608010ce0fe324d"></a>
-static std::shared_ptr&lt; <a class="el" href="classfrc_1_1_pneumatics_base.html">PneumaticsBase</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetForType</b> (int module, PneumaticsModuleType moduleType)</td></tr>
+<tr class="memitem:a26e6de07746aec386608010ce0fe324d"><td class="memItemLeft" align="right" valign="top">static std::shared_ptr&lt; <a class="el" href="classfrc_1_1_pneumatics_base.html">PneumaticsBase</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_pneumatics_base.html#a26e6de07746aec386608010ce0fe324d">GetForType</a> (int module, <a class="el" href="namespacefrc.html#ad678d767ab62c6e84bc2fcac7655a725">PneumaticsModuleType</a> moduleType)</td></tr>
 <tr class="separator:a26e6de07746aec386608010ce0fe324d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cea877694232acecab5f4d1a195263c"><td class="memItemLeft" align="right" valign="top"><a id="a6cea877694232acecab5f4d1a195263c" name="a6cea877694232acecab5f4d1a195263c"></a>
-static int&#160;</td><td class="memItemRight" valign="bottom"><b>GetDefaultForType</b> (PneumaticsModuleType moduleType)</td></tr>
+<tr class="memitem:a6cea877694232acecab5f4d1a195263c"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_pneumatics_base.html#a6cea877694232acecab5f4d1a195263c">GetDefaultForType</a> (<a class="el" href="namespacefrc.html#ad678d767ab62c6e84bc2fcac7655a725">PneumaticsModuleType</a> moduleType)</td></tr>
 <tr class="separator:a6cea877694232acecab5f4d1a195263c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a77f34494a62f6580ebf0012833a937da" name="a77f34494a62f6580ebf0012833a937da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77f34494a62f6580ebf0012833a937da">&#9670;&nbsp;</a></span>~PneumaticsBase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual frc::PneumaticsBase::~PneumaticsBase </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aeb9433ac951c0fa850afbb0e0a80aa46" name="aeb9433ac951c0fa850afbb0e0a80aa46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb9433ac951c0fa850afbb0e0a80aa46">&#9670;&nbsp;</a></span>CheckAndReserveSolenoids()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int frc::PneumaticsBase::CheckAndReserveSolenoids </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mask</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classfrc_1_1_pneumatic_hub.html#ae8aa48f257c5f469455ac9a4fb19f94f">frc::PneumaticHub</a>, and <a class="el" href="classfrc_1_1_pneumatics_control_module.html#aff106c9fa67f0bb0291339a0711e0997">frc::PneumaticsControlModule</a>.</p>
+
+</div>
+</div>
+<a id="a752aa5019f761564e01550dce8334bec" name="a752aa5019f761564e01550dce8334bec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a752aa5019f761564e01550dce8334bec">&#9670;&nbsp;</a></span>CheckSolenoidChannel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool frc::PneumaticsBase::CheckSolenoidChannel </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>channel</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classfrc_1_1_pneumatic_hub.html#a8096d7eeee0b3b0e2e732380ccfcc193">frc::PneumaticHub</a>, and <a class="el" href="classfrc_1_1_pneumatics_control_module.html#a67dd12503e9ba9842b37a166cea9d89b">frc::PneumaticsControlModule</a>.</p>
+
+</div>
+</div>
+<a id="a5b279e56be78d6d81aa542c545d06927" name="a5b279e56be78d6d81aa542c545d06927"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b279e56be78d6d81aa542c545d06927">&#9670;&nbsp;</a></span>FireOneShot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void frc::PneumaticsBase::FireOneShot </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classfrc_1_1_pneumatic_hub.html#ad806a30c112d61716e9dce08e03b3910">frc::PneumaticHub</a>, and <a class="el" href="classfrc_1_1_pneumatics_control_module.html#a14bf3c6437e23765136da7b383d0fd26">frc::PneumaticsControlModule</a>.</p>
+
+</div>
+</div>
+<a id="ad0644cfbffd43d75fe995c72af4952cc" name="ad0644cfbffd43d75fe995c72af4952cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0644cfbffd43d75fe995c72af4952cc">&#9670;&nbsp;</a></span>GetClosedLoopControl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool frc::PneumaticsBase::GetClosedLoopControl </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classfrc_1_1_pneumatic_hub.html#ae8126349f82f757eaf05d22c26126d0e">frc::PneumaticHub</a>, and <a class="el" href="classfrc_1_1_pneumatics_control_module.html#adaf0401c3c2405115c8458bed6f75047">frc::PneumaticsControlModule</a>.</p>
+
+</div>
+</div>
+<a id="ae7ef8d78b0df4e32d58871c42d45495f" name="ae7ef8d78b0df4e32d58871c42d45495f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7ef8d78b0df4e32d58871c42d45495f">&#9670;&nbsp;</a></span>GetCompressor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool frc::PneumaticsBase::GetCompressor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classfrc_1_1_pneumatic_hub.html#a87053cda6fa055bfa0c2c060f210cf8d">frc::PneumaticHub</a>, and <a class="el" href="classfrc_1_1_pneumatics_control_module.html#a61fe8ceed8c432664dd473fcf6b44334">frc::PneumaticsControlModule</a>.</p>
+
+</div>
+</div>
+<a id="ad3be738bd8d81296d11eaa2a1c0f3be3" name="ad3be738bd8d81296d11eaa2a1c0f3be3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3be738bd8d81296d11eaa2a1c0f3be3">&#9670;&nbsp;</a></span>GetCompressorCurrent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual double frc::PneumaticsBase::GetCompressorCurrent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classfrc_1_1_pneumatic_hub.html#ab0fd665070575e55d4f3383356d3f8b5">frc::PneumaticHub</a>, and <a class="el" href="classfrc_1_1_pneumatics_control_module.html#a4dc230c8d128705aa3fb098a4c13679e">frc::PneumaticsControlModule</a>.</p>
+
+</div>
+</div>
+<a id="a6cea877694232acecab5f4d1a195263c" name="a6cea877694232acecab5f4d1a195263c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cea877694232acecab5f4d1a195263c">&#9670;&nbsp;</a></span>GetDefaultForType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int frc::PneumaticsBase::GetDefaultForType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacefrc.html#ad678d767ab62c6e84bc2fcac7655a725">PneumaticsModuleType</a>&#160;</td>
+          <td class="paramname"><em>moduleType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a26e6de07746aec386608010ce0fe324d" name="a26e6de07746aec386608010ce0fe324d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26e6de07746aec386608010ce0fe324d">&#9670;&nbsp;</a></span>GetForType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::shared_ptr&lt; <a class="el" href="classfrc_1_1_pneumatics_base.html">PneumaticsBase</a> &gt; frc::PneumaticsBase::GetForType </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>module</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacefrc.html#ad678d767ab62c6e84bc2fcac7655a725">PneumaticsModuleType</a>&#160;</td>
+          <td class="paramname"><em>moduleType</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a10ed7d280a402532bf649169053e98d8" name="a10ed7d280a402532bf649169053e98d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10ed7d280a402532bf649169053e98d8">&#9670;&nbsp;</a></span>GetModuleNumber()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int frc::PneumaticsBase::GetModuleNumber </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classfrc_1_1_pneumatic_hub.html#a6628d20cac249aa3e8b06c07d096640b">frc::PneumaticHub</a>, and <a class="el" href="classfrc_1_1_pneumatics_control_module.html#a6960fa8d5f358f78e4ce77997166adf6">frc::PneumaticsControlModule</a>.</p>
+
+</div>
+</div>
+<a id="af2a09a4dbdee2797cd66fd2b28e95d2c" name="af2a09a4dbdee2797cd66fd2b28e95d2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2a09a4dbdee2797cd66fd2b28e95d2c">&#9670;&nbsp;</a></span>GetPressureSwitch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool frc::PneumaticsBase::GetPressureSwitch </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classfrc_1_1_pneumatic_hub.html#a5de944c78f9b486cd0f1c0e366bdbfa0">frc::PneumaticHub</a>, and <a class="el" href="classfrc_1_1_pneumatics_control_module.html#ac047a7cda5bbb0ec24bcd60056a8a28a">frc::PneumaticsControlModule</a>.</p>
+
+</div>
+</div>
+<a id="ae6c1ac9be8d3cac8696e20242aa62100" name="ae6c1ac9be8d3cac8696e20242aa62100"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6c1ac9be8d3cac8696e20242aa62100">&#9670;&nbsp;</a></span>GetSolenoidDisabledList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int frc::PneumaticsBase::GetSolenoidDisabledList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classfrc_1_1_pneumatic_hub.html#a268eab6c9828909543cabbab4664cb6b">frc::PneumaticHub</a>, and <a class="el" href="classfrc_1_1_pneumatics_control_module.html#a039f2c403abfcf14f41d9ba0a4826415">frc::PneumaticsControlModule</a>.</p>
+
+</div>
+</div>
+<a id="aacf4ac281029aebe4b774a036d5e8cfd" name="aacf4ac281029aebe4b774a036d5e8cfd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacf4ac281029aebe4b774a036d5e8cfd">&#9670;&nbsp;</a></span>GetSolenoids()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int frc::PneumaticsBase::GetSolenoids </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classfrc_1_1_pneumatic_hub.html#aee89c21599e90025ebc4f8744f70921c">frc::PneumaticHub</a>, and <a class="el" href="classfrc_1_1_pneumatics_control_module.html#ab6b23c1c20d3c1f9bac79e46afe3262a">frc::PneumaticsControlModule</a>.</p>
+
+</div>
+</div>
+<a id="a5b0da19a21229f4773cd6896b93e14f9" name="a5b0da19a21229f4773cd6896b93e14f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b0da19a21229f4773cd6896b93e14f9">&#9670;&nbsp;</a></span>MakeCompressor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classfrc_1_1_compressor.html">Compressor</a> frc::PneumaticsBase::MakeCompressor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classfrc_1_1_pneumatic_hub.html#aae51fa49bec21e2cc2d57cc1d448a7d0">frc::PneumaticHub</a>, and <a class="el" href="classfrc_1_1_pneumatics_control_module.html#ae12378a5d9e355a2cca9d45a58cd4de6">frc::PneumaticsControlModule</a>.</p>
+
+</div>
+</div>
+<a id="a04d30e25a22b0520683f3399f9550dd0" name="a04d30e25a22b0520683f3399f9550dd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04d30e25a22b0520683f3399f9550dd0">&#9670;&nbsp;</a></span>MakeDoubleSolenoid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classfrc_1_1_double_solenoid.html">DoubleSolenoid</a> frc::PneumaticsBase::MakeDoubleSolenoid </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>forwardChannel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>reverseChannel</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classfrc_1_1_pneumatic_hub.html#ac465b45e305be9f744f554736a0f5345">frc::PneumaticHub</a>, and <a class="el" href="classfrc_1_1_pneumatics_control_module.html#a941182d227aac62685d425a61a6b6c91">frc::PneumaticsControlModule</a>.</p>
+
+</div>
+</div>
+<a id="a133fe2675cd72936a6f59dc2fa4803b0" name="a133fe2675cd72936a6f59dc2fa4803b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a133fe2675cd72936a6f59dc2fa4803b0">&#9670;&nbsp;</a></span>MakeSolenoid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classfrc_1_1_solenoid.html">Solenoid</a> frc::PneumaticsBase::MakeSolenoid </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>channel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classfrc_1_1_pneumatic_hub.html#a86db407c62d04c3a0289d3c4caf93b39">frc::PneumaticHub</a>, and <a class="el" href="classfrc_1_1_pneumatics_control_module.html#ac472d88f03e74395af093cd33286cdf3">frc::PneumaticsControlModule</a>.</p>
+
+</div>
+</div>
+<a id="ac6b84ef772e5313bd67178616f257b08" name="ac6b84ef772e5313bd67178616f257b08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6b84ef772e5313bd67178616f257b08">&#9670;&nbsp;</a></span>ReserveCompressor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool frc::PneumaticsBase::ReserveCompressor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classfrc_1_1_pneumatic_hub.html#a5c47bf44b2e62cd1d0dc8a16ab0162a3">frc::PneumaticHub</a>, and <a class="el" href="classfrc_1_1_pneumatics_control_module.html#aab15f9083a2b4f46ae216fcfa233982f">frc::PneumaticsControlModule</a>.</p>
+
+</div>
+</div>
+<a id="acdd186887338e1253f8bcce0283b2e8a" name="acdd186887338e1253f8bcce0283b2e8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdd186887338e1253f8bcce0283b2e8a">&#9670;&nbsp;</a></span>SetClosedLoopControl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void frc::PneumaticsBase::SetClosedLoopControl </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>on</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classfrc_1_1_pneumatic_hub.html#ab78d346fb0a41ce6b6e7088fe62a76a7">frc::PneumaticHub</a>, and <a class="el" href="classfrc_1_1_pneumatics_control_module.html#a80632827eacefa3f38d5ecba4813e2c3">frc::PneumaticsControlModule</a>.</p>
+
+</div>
+</div>
+<a id="a57424c17d7b533cd925354c57abe032c" name="a57424c17d7b533cd925354c57abe032c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57424c17d7b533cd925354c57abe032c">&#9670;&nbsp;</a></span>SetOneShotDuration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void frc::PneumaticsBase::SetOneShotDuration </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">units::second_t&#160;</td>
+          <td class="paramname"><em>duration</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classfrc_1_1_pneumatic_hub.html#a597933380fd79083ed4d79c6ab5fa6b1">frc::PneumaticHub</a>, and <a class="el" href="classfrc_1_1_pneumatics_control_module.html#adfd89a2e0cfba6527ba39acc1dd87302">frc::PneumaticsControlModule</a>.</p>
+
+</div>
+</div>
+<a id="a0b5fdac79320553254cabc15118e1298" name="a0b5fdac79320553254cabc15118e1298"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b5fdac79320553254cabc15118e1298">&#9670;&nbsp;</a></span>SetSolenoids()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void frc::PneumaticsBase::SetSolenoids </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>values</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classfrc_1_1_pneumatic_hub.html#ab9d7913752002290c6e7891d090e6642">frc::PneumaticHub</a>, and <a class="el" href="classfrc_1_1_pneumatics_control_module.html#aaf56a0ad3683ad5a65df4ce44deff83a">frc::PneumaticsControlModule</a>.</p>
+
+</div>
+</div>
+<a id="a6f31953cb4f841ffb3a2c7458587ad8d" name="a6f31953cb4f841ffb3a2c7458587ad8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f31953cb4f841ffb3a2c7458587ad8d">&#9670;&nbsp;</a></span>UnreserveCompressor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void frc::PneumaticsBase::UnreserveCompressor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classfrc_1_1_pneumatic_hub.html#a231ae7af4a1f9281aac1865092f6953c">frc::PneumaticHub</a>, and <a class="el" href="classfrc_1_1_pneumatics_control_module.html#aec317064099179d0631cf4e3f0bf8b99">frc::PneumaticsControlModule</a>.</p>
+
+</div>
+</div>
+<a id="a8c095dfe8120c1a1e08abba7d0d863d5" name="a8c095dfe8120c1a1e08abba7d0d863d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c095dfe8120c1a1e08abba7d0d863d5">&#9670;&nbsp;</a></span>UnreserveSolenoids()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void frc::PneumaticsBase::UnreserveSolenoids </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mask</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classfrc_1_1_pneumatic_hub.html#ada76a94629d93cb0d3baaf48418aae6c">frc::PneumaticHub</a>, and <a class="el" href="classfrc_1_1_pneumatics_control_module.html#a3d9d39bf7400e779de8802a56d888c0a">frc::PneumaticsControlModule</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>frc/<a class="el" href="_pneumatics_base_8h_source.html">PneumaticsBase.h</a></li>
 </ul>
@@ -186,8 +810,8 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>GetDefaultForTy
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1_pneumatics_base.html">PneumaticsBase</a></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:50 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_pneumatics_base.html">PneumaticsBase</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:38 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

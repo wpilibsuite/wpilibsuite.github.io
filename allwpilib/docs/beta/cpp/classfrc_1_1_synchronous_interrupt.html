@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -99,49 +99,45 @@ $(document).ready(function(){initNavTree('classfrc_1_1_synchronous_interrupt.htm
 </div><!--header-->
 <div class="contents">
 
-<p>Class for handling ssynchronous interrupts.  
+<p>Class for handling synchronous (blocking) interrupts.  
  <a href="classfrc_1_1_synchronous_interrupt.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_synchronous_interrupt_8h_source.html">frc/SynchronousInterrupt.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a04e85bd02e5fdb0b11097f4078e9db46"><td class="memItemLeft" align="right" valign="top"><a id="a04e85bd02e5fdb0b11097f4078e9db46" name="a04e85bd02e5fdb0b11097f4078e9db46"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>WaitResult</b> { <b>kTimeout</b> = 0x0
-, <b>kRisingEdge</b> = 0x1
-, <b>kFallingEdge</b> = 0x100
-, <b>kBoth</b> = 0x101
+<tr class="memitem:a04e85bd02e5fdb0b11097f4078e9db46"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_synchronous_interrupt.html#a04e85bd02e5fdb0b11097f4078e9db46">WaitResult</a> { <a class="el" href="classfrc_1_1_synchronous_interrupt.html#a04e85bd02e5fdb0b11097f4078e9db46a4f9aa9dad0ad61115ecfb7d7c66e58ee">kTimeout</a> = 0x0
+, <a class="el" href="classfrc_1_1_synchronous_interrupt.html#a04e85bd02e5fdb0b11097f4078e9db46ae382c7f5861066911da799d380ed54ce">kRisingEdge</a> = 0x1
+, <a class="el" href="classfrc_1_1_synchronous_interrupt.html#a04e85bd02e5fdb0b11097f4078e9db46a5265dbe42e948fdde28964c1b8dc275a">kFallingEdge</a> = 0x100
+, <a class="el" href="classfrc_1_1_synchronous_interrupt.html#a04e85bd02e5fdb0b11097f4078e9db46a6363b1b95d58000ca62f5e0e6f86ad71">kBoth</a> = 0x101
  }</td></tr>
 <tr class="separator:a04e85bd02e5fdb0b11097f4078e9db46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9913a721246324ad96bde55ceac8717d"><td class="memItemLeft" align="right" valign="top"><a id="a9913a721246324ad96bde55ceac8717d" name="a9913a721246324ad96bde55ceac8717d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SynchronousInterrupt</b> (<a class="el" href="classfrc_1_1_digital_source.html">DigitalSource</a> &amp;source)</td></tr>
-<tr class="memdesc:a9913a721246324ad96bde55ceac8717d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a Synchronous Interrupt from a Digital Source. <br /></td></tr>
+<tr class="memitem:a9913a721246324ad96bde55ceac8717d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_synchronous_interrupt.html#a9913a721246324ad96bde55ceac8717d">SynchronousInterrupt</a> (<a class="el" href="classfrc_1_1_digital_source.html">DigitalSource</a> &amp;source)</td></tr>
+<tr class="memdesc:a9913a721246324ad96bde55ceac8717d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a Synchronous Interrupt from a Digital Source.  <a href="classfrc_1_1_synchronous_interrupt.html#a9913a721246324ad96bde55ceac8717d">More...</a><br /></td></tr>
 <tr class="separator:a9913a721246324ad96bde55ceac8717d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a861057b7cec30be38ec73785ce30befc"><td class="memItemLeft" align="right" valign="top"><a id="a861057b7cec30be38ec73785ce30befc" name="a861057b7cec30be38ec73785ce30befc"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SynchronousInterrupt</b> (<a class="el" href="classfrc_1_1_digital_source.html">DigitalSource</a> *source)</td></tr>
-<tr class="memdesc:a861057b7cec30be38ec73785ce30befc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a Synchronous Interrupt from a Digital Source. <br /></td></tr>
+<tr class="memitem:a861057b7cec30be38ec73785ce30befc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_synchronous_interrupt.html#a861057b7cec30be38ec73785ce30befc">SynchronousInterrupt</a> (<a class="el" href="classfrc_1_1_digital_source.html">DigitalSource</a> *source)</td></tr>
+<tr class="memdesc:a861057b7cec30be38ec73785ce30befc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a Synchronous Interrupt from a Digital Source.  <a href="classfrc_1_1_synchronous_interrupt.html#a861057b7cec30be38ec73785ce30befc">More...</a><br /></td></tr>
 <tr class="separator:a861057b7cec30be38ec73785ce30befc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0b6926bc778585655bae647808b7352"><td class="memItemLeft" align="right" valign="top"><a id="ac0b6926bc778585655bae647808b7352" name="ac0b6926bc778585655bae647808b7352"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SynchronousInterrupt</b> (std::shared_ptr&lt; <a class="el" href="classfrc_1_1_digital_source.html">DigitalSource</a> &gt; source)</td></tr>
-<tr class="memdesc:ac0b6926bc778585655bae647808b7352"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a Synchronous Interrupt from a Digital Source. <br /></td></tr>
+<tr class="memitem:ac0b6926bc778585655bae647808b7352"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_synchronous_interrupt.html#ac0b6926bc778585655bae647808b7352">SynchronousInterrupt</a> (std::shared_ptr&lt; <a class="el" href="classfrc_1_1_digital_source.html">DigitalSource</a> &gt; source)</td></tr>
+<tr class="memdesc:ac0b6926bc778585655bae647808b7352"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a Synchronous Interrupt from a Digital Source.  <a href="classfrc_1_1_synchronous_interrupt.html#ac0b6926bc778585655bae647808b7352">More...</a><br /></td></tr>
 <tr class="separator:ac0b6926bc778585655bae647808b7352"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e5f63226df72a6dbaa749a326bf247b"><td class="memItemLeft" align="right" valign="top"><a id="a1e5f63226df72a6dbaa749a326bf247b" name="a1e5f63226df72a6dbaa749a326bf247b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SynchronousInterrupt</b> (<a class="el" href="classfrc_1_1_synchronous_interrupt.html">SynchronousInterrupt</a> &amp;&amp;)=default</td></tr>
+<tr class="memitem:a0dab3700df664b77d0740b23438dd8e4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_synchronous_interrupt.html#a0dab3700df664b77d0740b23438dd8e4">~SynchronousInterrupt</a> ()</td></tr>
+<tr class="separator:a0dab3700df664b77d0740b23438dd8e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e5f63226df72a6dbaa749a326bf247b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_synchronous_interrupt.html#a1e5f63226df72a6dbaa749a326bf247b">SynchronousInterrupt</a> (<a class="el" href="classfrc_1_1_synchronous_interrupt.html">SynchronousInterrupt</a> &amp;&amp;)=default</td></tr>
 <tr class="separator:a1e5f63226df72a6dbaa749a326bf247b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83c982f0077b141183ac097197c76992"><td class="memItemLeft" align="right" valign="top"><a id="a83c982f0077b141183ac097197c76992" name="a83c982f0077b141183ac097197c76992"></a>
-<a class="el" href="classfrc_1_1_synchronous_interrupt.html">SynchronousInterrupt</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classfrc_1_1_synchronous_interrupt.html">SynchronousInterrupt</a> &amp;&amp;)=default</td></tr>
+<tr class="memitem:a83c982f0077b141183ac097197c76992"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_synchronous_interrupt.html">SynchronousInterrupt</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_synchronous_interrupt.html#a83c982f0077b141183ac097197c76992">operator=</a> (<a class="el" href="classfrc_1_1_synchronous_interrupt.html">SynchronousInterrupt</a> &amp;&amp;)=default</td></tr>
 <tr class="separator:a83c982f0077b141183ac097197c76992"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b8dc0167c153a385f37045294bc7018"><td class="memItemLeft" align="right" valign="top">WaitResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_synchronous_interrupt.html#a6b8dc0167c153a385f37045294bc7018">WaitForInterrupt</a> (units::second_t timeout, bool ignorePrevious=true)</td></tr>
+<tr class="memitem:a6b8dc0167c153a385f37045294bc7018"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_synchronous_interrupt.html#a04e85bd02e5fdb0b11097f4078e9db46">WaitResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_synchronous_interrupt.html#a6b8dc0167c153a385f37045294bc7018">WaitForInterrupt</a> (units::second_t timeout, bool ignorePrevious=true)</td></tr>
 <tr class="memdesc:a6b8dc0167c153a385f37045294bc7018"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for an interrupt to occur.  <a href="classfrc_1_1_synchronous_interrupt.html#a6b8dc0167c153a385f37045294bc7018">More...</a><br /></td></tr>
 <tr class="separator:a6b8dc0167c153a385f37045294bc7018"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a295687b0407fc461631aa091ecd24793"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_synchronous_interrupt.html#a295687b0407fc461631aa091ecd24793">SetInterruptEdges</a> (bool risingEdge, bool fallingEdge)</td></tr>
 <tr class="memdesc:a295687b0407fc461631aa091ecd24793"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set which edges cause an interrupt to occur.  <a href="classfrc_1_1_synchronous_interrupt.html#a295687b0407fc461631aa091ecd24793">More...</a><br /></td></tr>
 <tr class="separator:a295687b0407fc461631aa091ecd24793"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a71f2f474e4289710ae4e116e340701"><td class="memItemLeft" align="right" valign="top"><a id="a5a71f2f474e4289710ae4e116e340701" name="a5a71f2f474e4289710ae4e116e340701"></a>
-units::second_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetRisingTimestamp</b> ()</td></tr>
-<tr class="memdesc:a5a71f2f474e4289710ae4e116e340701"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the timestamp (relative to FPGA Time) of the last rising edge. <br /></td></tr>
+<tr class="memitem:a5a71f2f474e4289710ae4e116e340701"><td class="memItemLeft" align="right" valign="top">units::second_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_synchronous_interrupt.html#a5a71f2f474e4289710ae4e116e340701">GetRisingTimestamp</a> ()</td></tr>
+<tr class="memdesc:a5a71f2f474e4289710ae4e116e340701"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the timestamp (relative to FPGA Time) of the last rising edge.  <a href="classfrc_1_1_synchronous_interrupt.html#a5a71f2f474e4289710ae4e116e340701">More...</a><br /></td></tr>
 <tr class="separator:a5a71f2f474e4289710ae4e116e340701"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b7caabeba0700609aa2309ca7717e1e"><td class="memItemLeft" align="right" valign="top">units::second_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_synchronous_interrupt.html#a9b7caabeba0700609aa2309ca7717e1e">GetFallingTimestamp</a> ()</td></tr>
 <tr class="memdesc:a9b7caabeba0700609aa2309ca7717e1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the timestamp of the last falling edge.  <a href="classfrc_1_1_synchronous_interrupt.html#a9b7caabeba0700609aa2309ca7717e1e">More...</a><br /></td></tr>
@@ -151,10 +147,177 @@ units::second_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetRisingT
 <tr class="separator:ae94259cbbdcb6b303c514b4f99a238c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Class for handling ssynchronous interrupts. </p>
+<div class="textblock"><p >Class for handling synchronous (blocking) interrupts. </p>
 <p >By default, interrupts will occur on rising edge.</p>
-<p >Asynchronous interrupts are handled by the <a class="el" href="classfrc_1_1_asynchronous_interrupt.html" title="Class for handling asynchronous interrupts.">AsynchronousInterrupt</a> class. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<p >Asynchronous interrupts are handled by the <a class="el" href="classfrc_1_1_asynchronous_interrupt.html" title="Class for handling asynchronous interrupts using a callback thread.">AsynchronousInterrupt</a> class. </p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a04e85bd02e5fdb0b11097f4078e9db46" name="a04e85bd02e5fdb0b11097f4078e9db46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04e85bd02e5fdb0b11097f4078e9db46">&#9670;&nbsp;</a></span>WaitResult</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classfrc_1_1_synchronous_interrupt.html#a04e85bd02e5fdb0b11097f4078e9db46">frc::SynchronousInterrupt::WaitResult</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a04e85bd02e5fdb0b11097f4078e9db46a4f9aa9dad0ad61115ecfb7d7c66e58ee" name="a04e85bd02e5fdb0b11097f4078e9db46a4f9aa9dad0ad61115ecfb7d7c66e58ee"></a>kTimeout&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a04e85bd02e5fdb0b11097f4078e9db46ae382c7f5861066911da799d380ed54ce" name="a04e85bd02e5fdb0b11097f4078e9db46ae382c7f5861066911da799d380ed54ce"></a>kRisingEdge&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a04e85bd02e5fdb0b11097f4078e9db46a5265dbe42e948fdde28964c1b8dc275a" name="a04e85bd02e5fdb0b11097f4078e9db46a5265dbe42e948fdde28964c1b8dc275a"></a>kFallingEdge&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a04e85bd02e5fdb0b11097f4078e9db46a6363b1b95d58000ca62f5e0e6f86ad71" name="a04e85bd02e5fdb0b11097f4078e9db46a6363b1b95d58000ca62f5e0e6f86ad71"></a>kBoth&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a9913a721246324ad96bde55ceac8717d" name="a9913a721246324ad96bde55ceac8717d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9913a721246324ad96bde55ceac8717d">&#9670;&nbsp;</a></span>SynchronousInterrupt() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">frc::SynchronousInterrupt::SynchronousInterrupt </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classfrc_1_1_digital_source.html">DigitalSource</a> &amp;&#160;</td>
+          <td class="paramname"><em>source</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct a Synchronous Interrupt from a Digital Source. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>the <a class="el" href="classfrc_1_1_digital_source.html" title="DigitalSource Interface.">DigitalSource</a> the interrupts are triggered from </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a861057b7cec30be38ec73785ce30befc" name="a861057b7cec30be38ec73785ce30befc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a861057b7cec30be38ec73785ce30befc">&#9670;&nbsp;</a></span>SynchronousInterrupt() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">frc::SynchronousInterrupt::SynchronousInterrupt </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classfrc_1_1_digital_source.html">DigitalSource</a> *&#160;</td>
+          <td class="paramname"><em>source</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct a Synchronous Interrupt from a Digital Source. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>the <a class="el" href="classfrc_1_1_digital_source.html" title="DigitalSource Interface.">DigitalSource</a> the interrupts are triggered from </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac0b6926bc778585655bae647808b7352" name="ac0b6926bc778585655bae647808b7352"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0b6926bc778585655bae647808b7352">&#9670;&nbsp;</a></span>SynchronousInterrupt() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">frc::SynchronousInterrupt::SynchronousInterrupt </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classfrc_1_1_digital_source.html">DigitalSource</a> &gt;&#160;</td>
+          <td class="paramname"><em>source</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct a Synchronous Interrupt from a Digital Source. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>the <a class="el" href="classfrc_1_1_digital_source.html" title="DigitalSource Interface.">DigitalSource</a> the interrupts are triggered from </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0dab3700df664b77d0740b23438dd8e4" name="a0dab3700df664b77d0740b23438dd8e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0dab3700df664b77d0740b23438dd8e4">&#9670;&nbsp;</a></span>~SynchronousInterrupt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">frc::SynchronousInterrupt::~SynchronousInterrupt </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1e5f63226df72a6dbaa749a326bf247b" name="a1e5f63226df72a6dbaa749a326bf247b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e5f63226df72a6dbaa749a326bf247b">&#9670;&nbsp;</a></span>SynchronousInterrupt() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">frc::SynchronousInterrupt::SynchronousInterrupt </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classfrc_1_1_synchronous_interrupt.html">SynchronousInterrupt</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a9b7caabeba0700609aa2309ca7717e1e" name="a9b7caabeba0700609aa2309ca7717e1e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9b7caabeba0700609aa2309ca7717e1e">&#9670;&nbsp;</a></span>GetFallingTimestamp()</h2>
 
@@ -173,6 +336,52 @@ units::second_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetRisingT
 <p>Get the timestamp of the last falling edge. </p>
 <p >This function does not require the interrupt to be enabled to work.</p>
 <p >This only works if falling edge was configured using setInterruptEdges. </p><dl class="section return"><dt>Returns</dt><dd>the timestamp in seconds relative to getFPGATime </dd></dl>
+
+</div>
+</div>
+<a id="a5a71f2f474e4289710ae4e116e340701" name="a5a71f2f474e4289710ae4e116e340701"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a71f2f474e4289710ae4e116e340701">&#9670;&nbsp;</a></span>GetRisingTimestamp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">units::second_t frc::SynchronousInterrupt::GetRisingTimestamp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the timestamp (relative to FPGA Time) of the last rising edge. </p>
+<dl class="section return"><dt>Returns</dt><dd>the timestamp in seconds relative to getFPGATime </dd></dl>
+
+</div>
+</div>
+<a id="a83c982f0077b141183ac097197c76992" name="a83c982f0077b141183ac097197c76992"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83c982f0077b141183ac097197c76992">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfrc_1_1_synchronous_interrupt.html">SynchronousInterrupt</a> &amp; frc::SynchronousInterrupt::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classfrc_1_1_synchronous_interrupt.html">SynchronousInterrupt</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -220,7 +429,7 @@ units::second_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetRisingT
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">WaitResult frc::SynchronousInterrupt::WaitForInterrupt </td>
+          <td class="memname"><a class="el" href="classfrc_1_1_synchronous_interrupt.html#a04e85bd02e5fdb0b11097f4078e9db46">WaitResult</a> frc::SynchronousInterrupt::WaitForInterrupt </td>
           <td>(</td>
           <td class="paramtype">units::second_t&#160;</td>
           <td class="paramname"><em>timeout</em>, </td>
@@ -280,8 +489,8 @@ units::second_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetRisingT
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1_synchronous_interrupt.html">SynchronousInterrupt</a></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:51 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_synchronous_interrupt.html">SynchronousInterrupt</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:38 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

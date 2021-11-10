@@ -4,6 +4,7 @@ var group__hal__serialport =
     [ "HAL_CloseSerial", "group__hal__serialport.html#ga51a28d7e9c4befe140468afb9dfb2b77", null ],
     [ "HAL_DisableSerialTermination", "group__hal__serialport.html#ga8969a109884d86c95adf819496c64784", null ],
     [ "HAL_EnableSerialTermination", "group__hal__serialport.html#gafcf5b2de69d717550fb9aacfc2e55c78", null ],
+    [ "HAL_ENUM", "group__hal__serialport.html#gaa827902ab8c266aa857612cd506e834e", null ],
     [ "HAL_FlushSerial", "group__hal__serialport.html#ga44158b47d770a7de455e3fa13b2b14d7", null ],
     [ "HAL_GetSerialBytesReceived", "group__hal__serialport.html#ga40907488b04e763afa0cbb17444faae4", null ],
     [ "HAL_GetSerialFD", "group__hal__serialport.html#ga4d963e6ee5bd583e4efbfe42b7ac0804", null ],

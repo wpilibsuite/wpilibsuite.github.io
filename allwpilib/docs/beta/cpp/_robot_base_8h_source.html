@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('_robot_base_8h_source.html',''); initR
   <div class="headertitle"><div class="title">RobotBase.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
+<a href="_robot_base_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Open Source Software; you can modify and/or share it under the terms of</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// the WPILib BSD license file in the root directory of this project.</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
@@ -103,24 +103,24 @@ $(document).ready(function(){initNavTree('_robot_base_8h_source.html',''); initR
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;chrono&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;thread&gt;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;hal/DriverStation.h&gt;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;hal/HALBase.h&gt;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;hal/Main.h&gt;</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;wpi/condition_variable.h&gt;</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;wpi/deprecated.h&gt;</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;wpi/mutex.h&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;<a class="code" href="hal_2src_2main_2native_2include_2hal_2_driver_station_8h.html">hal/DriverStation.h</a>&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;<a class="code" href="_h_a_l_base_8h.html">hal/HALBase.h</a>&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;<a class="code" href="_main_8h.html">hal/Main.h</a>&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;<a class="code" href="condition__variable_8h.html">wpi/condition_variable.h</a>&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;<a class="code" href="deprecated_8h.html">wpi/deprecated.h</a>&gt;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;<a class="code" href="mutex_8h.html">wpi/mutex.h</a>&gt;</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;frc/Errors.h&quot;</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;frc/RuntimeType.h&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html">frc/Errors.h</a>&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;<a class="code" href="_runtime_type_8h.html">frc/RuntimeType.h</a>&quot;</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">namespace </span>frc {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacefrc.html">frc</a> {</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keywordtype">int</span> RunHALInitialization();</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="namespacefrc.html#a8d83e7ec5a444cd625593917680b750c">   22</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="namespacefrc.html#a8d83e7ec5a444cd625593917680b750c">RunHALInitialization</a>();</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span>impl {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="namespacefrc_1_1impl.html">   24</a></span><span class="keyword">namespace </span>impl {</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> Robot&gt;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keywordtype">void</span> RunRobot(wpi::mutex&amp; m, Robot** robot) {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="namespacefrc_1_1impl.html#ab27ebebfd151bdd128c4876ca9f195f6">   27</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="namespacefrc_1_1impl.html#ab27ebebfd151bdd128c4876ca9f195f6">RunRobot</a>(<a class="code hl_typedef" href="namespacewpi.html#a59819be5b11c0fbbc0b8e07c7638af24">wpi::mutex</a>&amp; m, Robot** robot) {</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <span class="keywordflow">try</span> {</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keyword">static</span> Robot theRobot;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    {</div>
@@ -128,17 +128,17 @@ $(document).ready(function(){initNavTree('_robot_base_8h_source.html',''); initR
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>      *robot = &amp;theRobot;</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    }</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    theRobot.StartCompetition();</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_runtime_error.html">frc::RuntimeError</a>&amp; e) {</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    e.<a class="code hl_function" href="classfrc_1_1_runtime_error.html#aabab6854c640922e9be9b72c237c90c7">Report</a>();</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    FRC_ReportError(</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_runtime_error.html">frc::RuntimeError</a>&amp; <a class="code hl_function" href="namespaceunits_1_1constants.html#acebb59adda640396795adcdc84a78297">e</a>) {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <a class="code hl_function" href="namespaceunits_1_1constants.html#acebb59adda640396795adcdc84a78297">e</a>.Report();</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <a class="code hl_define" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a89aececfad081ca3a319cbca54288764">FRC_ReportError</a>(</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        err::Error, <span class="stringliteral">&quot;{}&quot;</span>,</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="stringliteral">&quot;The robot program quit unexpectedly.&quot;</span></div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="stringliteral">&quot; This is usually due to a code error.\n&quot;</span></div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="stringliteral">&quot;  The above stacktrace can help determine where the error occurred.\n&quot;</span></div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="stringliteral">&quot;  See https://wpilib.org/stacktrace for more information.\n&quot;</span>);</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordflow">throw</span>;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e) {</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <a class="code hl_function" href="group__hal__driverstation.html#ga13435855e61c724e9708bdd90baee155">HAL_SendError</a>(1, err::Error, 0, e.what(), <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, 1);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; <a class="code hl_function" href="namespaceunits_1_1constants.html#acebb59adda640396795adcdc84a78297">e</a>) {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <a class="code hl_function" href="group__hal__driverstation.html#ga13435855e61c724e9708bdd90baee155">HAL_SendError</a>(1, err::Error, 0, <a class="code hl_function" href="namespaceunits_1_1constants.html#acebb59adda640396795adcdc84a78297">e</a>.what(), <span class="stringliteral">&quot;&quot;</span>, <span class="stringliteral">&quot;&quot;</span>, 1);</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordflow">throw</span>;</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  }</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>}</div>
@@ -146,14 +146,14 @@ $(document).ready(function(){initNavTree('_robot_base_8h_source.html',''); initR
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>}  <span class="comment">// namespace impl</span></div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> Robot&gt;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keywordtype">int</span> StartRobot() {</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <span class="keywordtype">int</span> halInit = RunHALInitialization();</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="namespacefrc.html#a34e168565dec463c0b67d584e80c2c0d">   53</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="namespacefrc.html#a34e168565dec463c0b67d584e80c2c0d">StartRobot</a>() {</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <span class="keywordtype">int</span> halInit = <a class="code hl_function" href="namespacefrc.html#a8d83e7ec5a444cd625593917680b750c">RunHALInitialization</a>();</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <span class="keywordflow">if</span> (halInit != 0) {</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordflow">return</span> halInit;</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  }</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <span class="keyword">static</span> wpi::mutex m;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <span class="keyword">static</span> wpi::condition_variable cv;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <span class="keyword">static</span> <a class="code hl_typedef" href="namespacewpi.html#a59819be5b11c0fbbc0b8e07c7638af24">wpi::mutex</a> m;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <span class="keyword">static</span> <a class="code hl_typedef" href="namespacewpi.html#a97cc1139d8f910187e3d4cd6b8015af8">wpi::condition_variable</a> <a class="code hl_namespace" href="namespacecv.html">cv</a>;</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  <span class="keyword">static</span> Robot* robot = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  <span class="keyword">static</span> <span class="keywordtype">bool</span> exited = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
@@ -168,7 +168,7 @@ $(document).ready(function(){initNavTree('_robot_base_8h_source.html',''); initR
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>          robot = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>          exited = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        }</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        cv.notify_all();</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <a class="code hl_namespace" href="namespacecv.html">cv</a>.notify_all();</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keywordflow">throw</span>;</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>      }</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
@@ -178,7 +178,7 @@ $(document).ready(function(){initNavTree('_robot_base_8h_source.html',''); initR
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        robot = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        exited = <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>      }</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>      cv.notify_all();</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>      <a class="code hl_namespace" href="namespacecv.html">cv</a>.notify_all();</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    });</div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <a class="code hl_function" href="group__hal__relay.html#ga5a2669a007e3a128476891f5712c9543">HAL_RunMain</a>();</div>
@@ -191,7 +191,7 @@ $(document).ready(function(){initNavTree('_robot_base_8h_source.html',''); initR
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="comment">// prefer to join, but detach to exit if it doesn&#39;t exit in a timely manner</span></div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keyword">using namespace </span>std::chrono_literals;</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    std::unique_lock lock{m};</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="keywordflow">if</span> (cv.wait_for(lock, 1s, [] { return exited; })) {</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="keywordflow">if</span> (<a class="code hl_namespace" href="namespacecv.html">cv</a>.wait_for(lock, 1s, [] { return exited; })) {</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>      thr.join();</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>      thr.detach();</div>
@@ -302,18 +302,18 @@ $(document).ready(function(){initNavTree('_robot_base_8h_source.html',''); initR
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span><span class="comment">   * Gets the ID of the main robot thread.</span></div>
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno"><a class="line" href="classfrc_1_1_robot_base.html#a8f20ff1baf57e7adf720c641ed1f576c">  209</a></span>  static std::thread::<span class="keywordtype">id</span> <a class="code hl_function" href="classfrc_1_1_robot_base.html#a8f20ff1baf57e7adf720c641ed1f576c">GetThreadId</a>();</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno"><a class="line" href="classfrc_1_1_robot_base.html#a8f20ff1baf57e7adf720c641ed1f576c">  209</a></span>  static <a class="code hl_namespace" href="namespacestd.html">std</a>::thread::<span class="keywordtype">id</span> <a class="code hl_function" href="classfrc_1_1_robot_base.html#a8f20ff1baf57e7adf720c641ed1f576c">GetThreadId</a>();</div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>  virtual <span class="keywordtype">void</span> StartCompetition() = 0;</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno"><a class="line" href="classfrc_1_1_robot_base.html#ab90e4c11b23579f3f711f873e9c4ce16">  211</a></span>  virtual <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_robot_base.html#ab90e4c11b23579f3f711f873e9c4ce16">StartCompetition</a>() = 0;</div>
 <div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span> </div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>  virtual <span class="keywordtype">void</span> EndCompetition() = 0;</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno"><a class="line" href="classfrc_1_1_robot_base.html#ae241a58e0b0ab87c95609c45d885b030">  213</a></span>  virtual <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_robot_base.html#ae241a58e0b0ab87c95609c45d885b030">EndCompetition</a>() = 0;</div>
 <div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span><span class="comment"></span> </div>
 <div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span><span class="comment">   * Get the current runtime type.</span></div>
 <div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span><span class="comment">   *</span></div>
 <div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span><span class="comment">   * @return Current runtime type.</span></div>
 <div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno"><a class="line" href="classfrc_1_1_robot_base.html#abd85d1b2ba146df890185e3372f90df2">  220</a></span>  static RuntimeType <a class="code hl_function" href="classfrc_1_1_robot_base.html#abd85d1b2ba146df890185e3372f90df2">GetRuntimeType</a>();</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno"><a class="line" href="classfrc_1_1_robot_base.html#abd85d1b2ba146df890185e3372f90df2">  220</a></span>  static <a class="code hl_enumeration" href="namespacefrc.html#ace6d4bb3b8c926d6b8a1e69fa3df37d5">RuntimeType</a> <a class="code hl_function" href="classfrc_1_1_robot_base.html#abd85d1b2ba146df890185e3372f90df2">GetRuntimeType</a>();</div>
 <div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span><span class="comment"></span> </div>
 <div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span><span class="comment">   * Get if the robot is real.</span></div>
@@ -348,16 +348,19 @@ $(document).ready(function(){initNavTree('_robot_base_8h_source.html',''); initR
 <div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00253" name="l00253"></a><span class="lineno"><a class="line" href="classfrc_1_1_robot_base.html#a1da594bfb434873d127c55c1f4117004">  253</a></span>  <a class="code hl_function" href="classfrc_1_1_robot_base.html#a1da594bfb434873d127c55c1f4117004">RobotBase</a>();</div>
 <div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span> </div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>  <span class="keyword">virtual</span> <a class="code hl_class" href="classfrc_1_1_robot_base.html">~RobotBase</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno"><a class="line" href="classfrc_1_1_robot_base.html#af0e6e38bbcd61791a2bdb782b0e43d00">  255</a></span>  <span class="keyword">virtual</span> <a class="code hl_function" href="classfrc_1_1_robot_base.html#af0e6e38bbcd61791a2bdb782b0e43d00">~RobotBase</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span> </div>
 <div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span> <span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>  <a class="code hl_function" href="classfrc_1_1_robot_base.html#a1da594bfb434873d127c55c1f4117004">RobotBase</a>(<a class="code hl_class" href="classfrc_1_1_robot_base.html">RobotBase</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>  <a class="code hl_class" href="classfrc_1_1_robot_base.html">RobotBase</a>&amp; operator=(<a class="code hl_class" href="classfrc_1_1_robot_base.html">RobotBase</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno"><a class="line" href="classfrc_1_1_robot_base.html#af57ab954142a0b6019cf12c922d4c731">  258</a></span>  <a class="code hl_function" href="classfrc_1_1_robot_base.html#af57ab954142a0b6019cf12c922d4c731">RobotBase</a>(<a class="code hl_class" href="classfrc_1_1_robot_base.html">RobotBase</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno"><a class="line" href="classfrc_1_1_robot_base.html#aa6342e6cae35030a2e76bc9e24af0488">  259</a></span>  <a class="code hl_class" href="classfrc_1_1_robot_base.html">RobotBase</a>&amp; <a class="code hl_function" href="classfrc_1_1_robot_base.html#aa6342e6cae35030a2e76bc9e24af0488">operator=</a>(<a class="code hl_class" href="classfrc_1_1_robot_base.html">RobotBase</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
 <div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span> </div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>  <span class="keyword">static</span> std::thread::id m_threadId;</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno"><a class="line" href="classfrc_1_1_robot_base.html#a9246139fc99f851f53d09c238155cd70">  261</a></span>  <span class="keyword">static</span> std::thread::id <a class="code hl_variable" href="classfrc_1_1_robot_base.html#a9246139fc99f851f53d09c238155cd70">m_threadId</a>;</div>
 <div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>};</div>
 <div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span> </div>
 <div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>}  <span class="comment">// namespace frc</span></div>
+<div class="ttc" id="a_h_a_l_base_8h_html"><div class="ttname"><a href="_h_a_l_base_8h.html">HALBase.h</a></div></div>
+<div class="ttc" id="a_main_8h_html"><div class="ttname"><a href="_main_8h.html">Main.h</a></div></div>
+<div class="ttc" id="a_runtime_type_8h_html"><div class="ttname"><a href="_runtime_type_8h.html">RuntimeType.h</a></div></div>
 <div class="ttc" id="aclassfrc_1_1_robot_base_html"><div class="ttname"><a href="classfrc_1_1_robot_base.html">frc::RobotBase</a></div><div class="ttdoc">Implement a Robot Program framework.</div><div class="ttdef"><b>Definition:</b> RobotBase.h:122</div></div>
 <div class="ttc" id="aclassfrc_1_1_robot_base_html_a1da594bfb434873d127c55c1f4117004"><div class="ttname"><a href="classfrc_1_1_robot_base.html#a1da594bfb434873d127c55c1f4117004">frc::RobotBase::RobotBase</a></div><div class="ttdeci">RobotBase()</div><div class="ttdoc">Constructor for a generic robot program.</div></div>
 <div class="ttc" id="aclassfrc_1_1_robot_base_html_a2c1dab1c96a32013a136e38030097abd"><div class="ttname"><a href="classfrc_1_1_robot_base.html#a2c1dab1c96a32013a136e38030097abd">frc::RobotBase::IsReal</a></div><div class="ttdeci">static constexpr bool IsReal()</div><div class="ttdoc">Get if the robot is real.</div><div class="ttdef"><b>Definition:</b> RobotBase.h:227</div></div>
@@ -366,28 +369,49 @@ $(document).ready(function(){initNavTree('_robot_base_8h_source.html',''); initR
 <div class="ttc" id="aclassfrc_1_1_robot_base_html_a46b5a3e9546fe7b6ca2b5b19e94d870e"><div class="ttname"><a href="classfrc_1_1_robot_base.html#a46b5a3e9546fe7b6ca2b5b19e94d870e">frc::RobotBase::IsNewDataAvailable</a></div><div class="ttdeci">bool IsNewDataAvailable() const</div><div class="ttdoc">Indicates if new data is available from the driver station.</div></div>
 <div class="ttc" id="aclassfrc_1_1_robot_base_html_a4e10653232959cf9c2fee095c916cf2b"><div class="ttname"><a href="classfrc_1_1_robot_base.html#a4e10653232959cf9c2fee095c916cf2b">frc::RobotBase::IsTest</a></div><div class="ttdeci">bool IsTest() const</div><div class="ttdoc">Determine if the robot is currently in Test mode.</div></div>
 <div class="ttc" id="aclassfrc_1_1_robot_base_html_a8f20ff1baf57e7adf720c641ed1f576c"><div class="ttname"><a href="classfrc_1_1_robot_base.html#a8f20ff1baf57e7adf720c641ed1f576c">frc::RobotBase::GetThreadId</a></div><div class="ttdeci">static std::thread::id GetThreadId()</div><div class="ttdoc">Gets the ID of the main robot thread.</div></div>
+<div class="ttc" id="aclassfrc_1_1_robot_base_html_a9246139fc99f851f53d09c238155cd70"><div class="ttname"><a href="classfrc_1_1_robot_base.html#a9246139fc99f851f53d09c238155cd70">frc::RobotBase::m_threadId</a></div><div class="ttdeci">static std::thread::id m_threadId</div><div class="ttdef"><b>Definition:</b> RobotBase.h:261</div></div>
+<div class="ttc" id="aclassfrc_1_1_robot_base_html_aa6342e6cae35030a2e76bc9e24af0488"><div class="ttname"><a href="classfrc_1_1_robot_base.html#aa6342e6cae35030a2e76bc9e24af0488">frc::RobotBase::operator=</a></div><div class="ttdeci">RobotBase &amp; operator=(RobotBase &amp;&amp;)=default</div></div>
 <div class="ttc" id="aclassfrc_1_1_robot_base_html_aad77f461c170076a2f2f5477f1d62354"><div class="ttname"><a href="classfrc_1_1_robot_base.html#aad77f461c170076a2f2f5477f1d62354">frc::RobotBase::IsAutonomousEnabled</a></div><div class="ttdeci">bool IsAutonomousEnabled() const</div><div class="ttdoc">Determine if the robot is currently in Autonomous mode and enabled.</div></div>
 <div class="ttc" id="aclassfrc_1_1_robot_base_html_aae83dcda11146ce65a0825cd38001d58"><div class="ttname"><a href="classfrc_1_1_robot_base.html#aae83dcda11146ce65a0825cd38001d58">frc::RobotBase::IsEnabled</a></div><div class="ttdeci">bool IsEnabled() const</div><div class="ttdoc">Determine if the Robot is currently enabled.</div></div>
+<div class="ttc" id="aclassfrc_1_1_robot_base_html_ab90e4c11b23579f3f711f873e9c4ce16"><div class="ttname"><a href="classfrc_1_1_robot_base.html#ab90e4c11b23579f3f711f873e9c4ce16">frc::RobotBase::StartCompetition</a></div><div class="ttdeci">virtual void StartCompetition()=0</div></div>
 <div class="ttc" id="aclassfrc_1_1_robot_base_html_abb315455cf2315e223523882454ca1c7"><div class="ttname"><a href="classfrc_1_1_robot_base.html#abb315455cf2315e223523882454ca1c7">frc::RobotBase::IsTeleop</a></div><div class="ttdeci">bool IsTeleop() const</div><div class="ttdoc">Determine if the robot is currently in Operator Control mode.</div></div>
 <div class="ttc" id="aclassfrc_1_1_robot_base_html_abd85d1b2ba146df890185e3372f90df2"><div class="ttname"><a href="classfrc_1_1_robot_base.html#abd85d1b2ba146df890185e3372f90df2">frc::RobotBase::GetRuntimeType</a></div><div class="ttdeci">static RuntimeType GetRuntimeType()</div><div class="ttdoc">Get the current runtime type.</div></div>
 <div class="ttc" id="aclassfrc_1_1_robot_base_html_ac9693ec00691571f9825d96c0ec86128"><div class="ttname"><a href="classfrc_1_1_robot_base.html#ac9693ec00691571f9825d96c0ec86128">frc::RobotBase::IsOperatorControl</a></div><div class="ttdeci">bool IsOperatorControl() const</div><div class="ttdoc">Determine if the robot is currently in Operator Control mode.</div></div>
 <div class="ttc" id="aclassfrc_1_1_robot_base_html_ade497eb4c64bf1f8c8b5946a9e7d5ca6"><div class="ttname"><a href="classfrc_1_1_robot_base.html#ade497eb4c64bf1f8c8b5946a9e7d5ca6">frc::RobotBase::IsDisabled</a></div><div class="ttdeci">bool IsDisabled() const</div><div class="ttdoc">Determine if the Robot is currently disabled.</div></div>
+<div class="ttc" id="aclassfrc_1_1_robot_base_html_ae241a58e0b0ab87c95609c45d885b030"><div class="ttname"><a href="classfrc_1_1_robot_base.html#ae241a58e0b0ab87c95609c45d885b030">frc::RobotBase::EndCompetition</a></div><div class="ttdeci">virtual void EndCompetition()=0</div></div>
 <div class="ttc" id="aclassfrc_1_1_robot_base_html_ae5e2a210367c7237ff41ec65c4ea35b4"><div class="ttname"><a href="classfrc_1_1_robot_base.html#ae5e2a210367c7237ff41ec65c4ea35b4">frc::RobotBase::IsAutonomous</a></div><div class="ttdeci">bool IsAutonomous() const</div><div class="ttdoc">Determine if the robot is currently in Autonomous mode.</div></div>
 <div class="ttc" id="aclassfrc_1_1_robot_base_html_aeb6120060634dacb79883a3f76154e20"><div class="ttname"><a href="classfrc_1_1_robot_base.html#aeb6120060634dacb79883a3f76154e20">frc::RobotBase::IsTeleopEnabled</a></div><div class="ttdeci">bool IsTeleopEnabled() const</div><div class="ttdoc">Determine if the robot is current in Operator Control mode and enabled.</div></div>
+<div class="ttc" id="aclassfrc_1_1_robot_base_html_af0e6e38bbcd61791a2bdb782b0e43d00"><div class="ttname"><a href="classfrc_1_1_robot_base.html#af0e6e38bbcd61791a2bdb782b0e43d00">frc::RobotBase::~RobotBase</a></div><div class="ttdeci">virtual ~RobotBase()=default</div></div>
+<div class="ttc" id="aclassfrc_1_1_robot_base_html_af57ab954142a0b6019cf12c922d4c731"><div class="ttname"><a href="classfrc_1_1_robot_base.html#af57ab954142a0b6019cf12c922d4c731">frc::RobotBase::RobotBase</a></div><div class="ttdeci">RobotBase(RobotBase &amp;&amp;)=default</div></div>
 <div class="ttc" id="aclassfrc_1_1_runtime_error_html"><div class="ttname"><a href="classfrc_1_1_runtime_error.html">frc::RuntimeError</a></div><div class="ttdoc">Runtime error exception.</div><div class="ttdef"><b>Definition:</b> Errors.h:20</div></div>
-<div class="ttc" id="aclassfrc_1_1_runtime_error_html_aabab6854c640922e9be9b72c237c90c7"><div class="ttname"><a href="classfrc_1_1_runtime_error.html#aabab6854c640922e9be9b72c237c90c7">frc::RuntimeError::Report</a></div><div class="ttdeci">void Report() const</div><div class="ttdoc">Reports error to Driver Station (using HAL_SendError).</div></div>
+<div class="ttc" id="acondition__variable_8h_html"><div class="ttname"><a href="condition__variable_8h.html">condition_variable.h</a></div></div>
+<div class="ttc" id="adeprecated_8h_html"><div class="ttname"><a href="deprecated_8h.html">deprecated.h</a></div></div>
 <div class="ttc" id="agroup__hal__capi_html_gafccf269a24459a444068863528a7c963"><div class="ttname"><a href="group__hal__capi.html#gafccf269a24459a444068863528a7c963">HAL_Shutdown</a></div><div class="ttdeci">void HAL_Shutdown(void)</div><div class="ttdoc">Call this to shut down HAL.</div></div>
 <div class="ttc" id="agroup__hal__driverstation_html_ga13435855e61c724e9708bdd90baee155"><div class="ttname"><a href="group__hal__driverstation.html#ga13435855e61c724e9708bdd90baee155">HAL_SendError</a></div><div class="ttdeci">int32_t HAL_SendError(HAL_Bool isError, int32_t errorCode, HAL_Bool isLVCode, const char *details, const char *location, const char *callStack, HAL_Bool printMsg)</div><div class="ttdoc">Sends an error to the driver station.</div></div>
 <div class="ttc" id="agroup__hal__relay_html_ga5a2669a007e3a128476891f5712c9543"><div class="ttname"><a href="group__hal__relay.html#ga5a2669a007e3a128476891f5712c9543">HAL_RunMain</a></div><div class="ttdeci">void HAL_RunMain(void)</div><div class="ttdoc">Runs the main function provided to HAL_SetMain().</div></div>
 <div class="ttc" id="agroup__hal__relay_html_gadf0b5133a2848804f15298579e9e94dc"><div class="ttname"><a href="group__hal__relay.html#gadf0b5133a2848804f15298579e9e94dc">HAL_HasMain</a></div><div class="ttdeci">HAL_Bool HAL_HasMain(void)</div><div class="ttdoc">Returns true if HAL_SetMain() has been called.</div></div>
 <div class="ttc" id="agroup__hal__relay_html_gaf51728a6358166efc0a0e30678c907a6"><div class="ttname"><a href="group__hal__relay.html#gaf51728a6358166efc0a0e30678c907a6">HAL_ExitMain</a></div><div class="ttdeci">void HAL_ExitMain(void)</div><div class="ttdoc">Causes HAL_RunMain() to exit.</div></div>
+<div class="ttc" id="ahal_2src_2main_2native_2include_2hal_2_driver_station_8h_html"><div class="ttname"><a href="hal_2src_2main_2native_2include_2hal_2_driver_station_8h.html">DriverStation.h</a></div></div>
+<div class="ttc" id="amutex_8h_html"><div class="ttname"><a href="mutex_8h.html">mutex.h</a></div></div>
+<div class="ttc" id="anamespacecv_html"><div class="ttname"><a href="namespacecv.html">cv</a></div><div class="ttdef"><b>Definition:</b> VisionPipeline.h:7</div></div>
+<div class="ttc" id="anamespacefrc_1_1impl_html_ab27ebebfd151bdd128c4876ca9f195f6"><div class="ttname"><a href="namespacefrc_1_1impl.html#ab27ebebfd151bdd128c4876ca9f195f6">frc::impl::RunRobot</a></div><div class="ttdeci">void RunRobot(wpi::mutex &amp;m, Robot **robot)</div><div class="ttdef"><b>Definition:</b> RobotBase.h:27</div></div>
+<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> VisionRunner.inc:9</div></div>
+<div class="ttc" id="anamespacefrc_html_a34e168565dec463c0b67d584e80c2c0d"><div class="ttname"><a href="namespacefrc.html#a34e168565dec463c0b67d584e80c2c0d">frc::StartRobot</a></div><div class="ttdeci">int StartRobot()</div><div class="ttdef"><b>Definition:</b> RobotBase.h:53</div></div>
+<div class="ttc" id="anamespacefrc_html_a8d83e7ec5a444cd625593917680b750c"><div class="ttname"><a href="namespacefrc.html#a8d83e7ec5a444cd625593917680b750c">frc::RunHALInitialization</a></div><div class="ttdeci">int RunHALInitialization()</div></div>
+<div class="ttc" id="anamespacefrc_html_ace6d4bb3b8c926d6b8a1e69fa3df37d5"><div class="ttname"><a href="namespacefrc.html#ace6d4bb3b8c926d6b8a1e69fa3df37d5">frc::RuntimeType</a></div><div class="ttdeci">RuntimeType</div><div class="ttdef"><b>Definition:</b> RuntimeType.h:8</div></div>
+<div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> Errc.h:84</div></div>
+<div class="ttc" id="anamespaceunits_1_1constants_html_acebb59adda640396795adcdc84a78297"><div class="ttname"><a href="namespaceunits_1_1constants.html#acebb59adda640396795adcdc84a78297">units::constants::e</a></div><div class="ttdeci">static constexpr const charge::coulomb_t e(1.6021766208e-19)</div><div class="ttdoc">elementary charge.</div></div>
+<div class="ttc" id="anamespacewpi_html_a59819be5b11c0fbbc0b8e07c7638af24"><div class="ttname"><a href="namespacewpi.html#a59819be5b11c0fbbc0b8e07c7638af24">wpi::mutex</a></div><div class="ttdeci">::std::mutex mutex</div><div class="ttdef"><b>Definition:</b> mutex.h:17</div></div>
+<div class="ttc" id="anamespacewpi_html_a97cc1139d8f910187e3d4cd6b8015af8"><div class="ttname"><a href="namespacewpi.html#a97cc1139d8f910187e3d4cd6b8015af8">wpi::condition_variable</a></div><div class="ttdeci">::std::condition_variable condition_variable</div><div class="ttdef"><b>Definition:</b> condition_variable.h:16</div></div>
+<div class="ttc" id="awpilibc_2src_2main_2native_2include_2frc_2_errors_8h_html"><div class="ttname"><a href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html">Errors.h</a></div></div>
+<div class="ttc" id="awpilibc_2src_2main_2native_2include_2frc_2_errors_8h_html_a89aececfad081ca3a319cbca54288764"><div class="ttname"><a href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a89aececfad081ca3a319cbca54288764">FRC_ReportError</a></div><div class="ttdeci">#define FRC_ReportError(status, format,...)</div><div class="ttdoc">Reports an error to the driver station (using HAL_SendError).</div><div class="ttdef"><b>Definition:</b> Errors.h:131</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><b>RobotBase.h</b></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:35 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="_robot_base_8h.html">RobotBase.h</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:20 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

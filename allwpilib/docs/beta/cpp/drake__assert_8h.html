@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -93,6 +93,7 @@ $(document).ready(function(){initNavTree('drake__assert_8h.html',''); initResiza
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
@@ -111,51 +112,84 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdrake_1_1assert_1_1_condition_traits.html">drake::assert::ConditionTraits&lt; Condition &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespacedrake"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedrake.html">drake</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacedrake_1_1internal"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedrake_1_1internal.html">drake::internal</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacedrake_1_1assert"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedrake_1_1assert.html">drake::assert</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a5b5f61792fe51f289ef43521b8ceaf26"><td class="memItemLeft" align="right" valign="top"><a id="a5b5f61792fe51f289ef43521b8ceaf26" name="a5b5f61792fe51f289ef43521b8ceaf26"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DRAKE_ASSERT_IS_ARMED</b></td></tr>
+<tr class="memitem:a5b5f61792fe51f289ef43521b8ceaf26"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drake__assert_8h.html#a5b5f61792fe51f289ef43521b8ceaf26">DRAKE_ASSERT_IS_ARMED</a></td></tr>
 <tr class="separator:a5b5f61792fe51f289ef43521b8ceaf26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf9506c208e2a7d09f67d1a9ab84992a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drake__assert_8h.html#aaf9506c208e2a7d09f67d1a9ab84992a">DRAKE_UNREACHABLE</a>()</td></tr>
 <tr class="separator:aaf9506c208e2a7d09f67d1a9ab84992a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90a6aa22721ddd3bc514c45d8e1d8674"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drake__assert_8h.html#a90a6aa22721ddd3bc514c45d8e1d8674">DRAKE_DEMAND</a>(condition)</td></tr>
 <tr class="separator:a90a6aa22721ddd3bc514c45d8e1d8674"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d126d5c79d6e74d5f03f8c81e4b3a63"><td class="memItemLeft" align="right" valign="top"><a id="a0d126d5c79d6e74d5f03f8c81e4b3a63" name="a0d126d5c79d6e74d5f03f8c81e4b3a63"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>DRAKE_ASSERT</b>(condition)&#160;&#160;&#160;DRAKE_DEMAND(condition)</td></tr>
+<tr class="memitem:a0d126d5c79d6e74d5f03f8c81e4b3a63"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drake__assert_8h.html#a0d126d5c79d6e74d5f03f8c81e4b3a63">DRAKE_ASSERT</a>(condition)&#160;&#160;&#160;<a class="el" href="drake__assert_8h.html#a90a6aa22721ddd3bc514c45d8e1d8674">DRAKE_DEMAND</a>(condition)</td></tr>
 <tr class="separator:a0d126d5c79d6e74d5f03f8c81e4b3a63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53797785bb2511ded7061028fcca65c5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drake__assert_8h.html#a53797785bb2511ded7061028fcca65c5">DRAKE_ASSERT_VOID</a>(expression)</td></tr>
 <tr class="separator:a53797785bb2511ded7061028fcca65c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a1555b594d10aad05d02addac282d35ec"><td class="memItemLeft" align="right" valign="top"><a id="a1555b594d10aad05d02addac282d35ec" name="a1555b594d10aad05d02addac282d35ec"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>drake::internal::Abort</b> (const char *condition, const char *func, const char *file, int line)</td></tr>
+<tr class="memitem:a1555b594d10aad05d02addac282d35ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedrake_1_1internal.html#a1555b594d10aad05d02addac282d35ec">drake::internal::Abort</a> (const char *condition, const char *func, const char *<a class="el" href="_third_party_notices_8txt.html#a26ca7d096ec8797bc2156266e64e5a4a">file</a>, int line)</td></tr>
 <tr class="separator:a1555b594d10aad05d02addac282d35ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abffd0ad8e5a39757c70d2e40443f4f59"><td class="memItemLeft" align="right" valign="top"><a id="abffd0ad8e5a39757c70d2e40443f4f59" name="abffd0ad8e5a39757c70d2e40443f4f59"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>drake::internal::AssertionFailed</b> (const char *condition, const char *func, const char *file, int line)</td></tr>
+<tr class="memitem:abffd0ad8e5a39757c70d2e40443f4f59"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedrake_1_1internal.html#abffd0ad8e5a39757c70d2e40443f4f59">drake::internal::AssertionFailed</a> (const char *condition, const char *func, const char *<a class="el" href="_third_party_notices_8txt.html#a26ca7d096ec8797bc2156266e64e5a4a">file</a>, int line)</td></tr>
 <tr class="separator:abffd0ad8e5a39757c70d2e40443f4f59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97b5239aadb12956444c2dea4d95df30"><td class="memTemplParams" colspan="2"><a id="a97b5239aadb12956444c2dea4d95df30" name="a97b5239aadb12956444c2dea4d95df30"></a>
-template&lt;bool &gt; </td></tr>
-<tr class="memitem:a97b5239aadb12956444c2dea4d95df30"><td class="memTemplItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>drake::internal::DrakeAssertWasUsedWithRawPointer</b> ()</td></tr>
+<tr class="memitem:a97b5239aadb12956444c2dea4d95df30"><td class="memTemplParams" colspan="2">template&lt;bool &gt; </td></tr>
+<tr class="memitem:a97b5239aadb12956444c2dea4d95df30"><td class="memTemplItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedrake_1_1internal.html#a97b5239aadb12956444c2dea4d95df30">drake::internal::DrakeAssertWasUsedWithRawPointer</a> ()</td></tr>
 <tr class="separator:a97b5239aadb12956444c2dea4d95df30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5f8dd2c95a5dc1fff5704e84b813b76"><td class="memItemLeft" align="right" valign="top"><a id="aa5f8dd2c95a5dc1fff5704e84b813b76" name="aa5f8dd2c95a5dc1fff5704e84b813b76"></a>
-template&lt;&gt; </td></tr>
-<tr class="memitem:aa5f8dd2c95a5dc1fff5704e84b813b76"><td class="memTemplItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>drake::internal::DrakeAssertWasUsedWithRawPointer&lt; true &gt;</b> ()</td></tr>
+<tr class="memitem:aa5f8dd2c95a5dc1fff5704e84b813b76"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:aa5f8dd2c95a5dc1fff5704e84b813b76"><td class="memTemplItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedrake_1_1internal.html#aa5f8dd2c95a5dc1fff5704e84b813b76">drake::internal::DrakeAssertWasUsedWithRawPointer&lt; true &gt;</a> ()</td></tr>
 <tr class="separator:aa5f8dd2c95a5dc1fff5704e84b813b76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ada5c985728d5a4c83dafa8f1a8cfd291"><td class="memItemLeft" align="right" valign="top"><a id="ada5c985728d5a4c83dafa8f1a8cfd291" name="ada5c985728d5a4c83dafa8f1a8cfd291"></a>
-constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>drake::kDrakeAssertIsArmed</b> = true</td></tr>
+<tr class="memitem:ada5c985728d5a4c83dafa8f1a8cfd291"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedrake.html#ada5c985728d5a4c83dafa8f1a8cfd291">drake::kDrakeAssertIsArmed</a> = true</td></tr>
 <tr class="separator:ada5c985728d5a4c83dafa8f1a8cfd291"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75884a83d298f0dd1d14bc3ea8bee021"><td class="memItemLeft" align="right" valign="top"><a id="a75884a83d298f0dd1d14bc3ea8bee021" name="a75884a83d298f0dd1d14bc3ea8bee021"></a>
-constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>drake::kDrakeAssertIsDisarmed</b> = false</td></tr>
+<tr class="memitem:a75884a83d298f0dd1d14bc3ea8bee021"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedrake.html#a75884a83d298f0dd1d14bc3ea8bee021">drake::kDrakeAssertIsDisarmed</a> = false</td></tr>
 <tr class="separator:a75884a83d298f0dd1d14bc3ea8bee021"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Provides Drake's assertion implementation. </p>
 <p >This is intended to be used both within Drake and by other software. Drake's asserts can be armed and disarmed independently from the system-wide asserts. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a0d126d5c79d6e74d5f03f8c81e4b3a63" name="a0d126d5c79d6e74d5f03f8c81e4b3a63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d126d5c79d6e74d5f03f8c81e4b3a63">&#9670;&nbsp;</a></span>DRAKE_ASSERT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DRAKE_ASSERT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">condition</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="drake__assert_8h.html#a90a6aa22721ddd3bc514c45d8e1d8674">DRAKE_DEMAND</a>(condition)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5b5f61792fe51f289ef43521b8ceaf26" name="a5b5f61792fe51f289ef43521b8ceaf26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b5f61792fe51f289ef43521b8ceaf26">&#9670;&nbsp;</a></span>DRAKE_ASSERT_IS_ARMED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DRAKE_ASSERT_IS_ARMED</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a53797785bb2511ded7061028fcca65c5" name="a53797785bb2511ded7061028fcca65c5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a53797785bb2511ded7061028fcca65c5">&#9670;&nbsp;</a></span>DRAKE_ASSERT_VOID</h2>
 
@@ -199,13 +233,15 @@ constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>drake::kDra
 <div class="line">    typedef ::drake::assert::ConditionTraits&lt;                                \</div>
 <div class="line">        typename std::remove_cv_t&lt;<span class="keyword">decltype</span>(condition)&gt;&gt; Trait;               \</div>
 <div class="line">    static_assert(Trait::is_valid, <span class="stringliteral">&quot;Condition should be bool-convertible.&quot;</span>); \</div>
-<div class="line">    ::drake::internal::DrakeAssertWasUsedWithRawPointer&lt;                     \</div>
+<div class="line">    <a class="code hl_function" href="namespacedrake_1_1internal.html#a97b5239aadb12956444c2dea4d95df30">::drake::internal::DrakeAssertWasUsedWithRawPointer</a>&lt;                     \</div>
 <div class="line">        std::is_pointer_v&lt;<span class="keyword">decltype</span>(condition)&gt;&gt;();                           \</div>
-<div class="line">    if (!Trait::Evaluate(condition)) {                                       \</div>
-<div class="line">      ::drake::internal::AssertionFailed(                                    \</div>
+<div class="line">    if (!Trait::Evaluate(condition)) {                                       <a class="code hl_function" href="namespacedrake_1_1internal.html#abffd0ad8e5a39757c70d2e40443f4f59">\</a></div>
+<div class="line"><a class="code hl_function" href="namespacedrake_1_1internal.html#abffd0ad8e5a39757c70d2e40443f4f59">      ::drake::internal::AssertionFailed</a>(                                    \</div>
 <div class="line">           #condition, __func__, __FILE__, __LINE__);                        \</div>
 <div class="line">    }                                                                        \</div>
 <div class="line">  } <span class="keywordflow">while</span> (0)</div>
+<div class="ttc" id="anamespacedrake_1_1internal_html_a97b5239aadb12956444c2dea4d95df30"><div class="ttname"><a href="namespacedrake_1_1internal.html#a97b5239aadb12956444c2dea4d95df30">drake::internal::DrakeAssertWasUsedWithRawPointer</a></div><div class="ttdeci">constexpr void DrakeAssertWasUsedWithRawPointer()</div><div class="ttdef"><b>Definition:</b> drake_assert.h:92</div></div>
+<div class="ttc" id="anamespacedrake_1_1internal_html_abffd0ad8e5a39757c70d2e40443f4f59"><div class="ttname"><a href="namespacedrake_1_1internal.html#abffd0ad8e5a39757c70d2e40443f4f59">drake::internal::AssertionFailed</a></div><div class="ttdeci">void AssertionFailed(const char *condition, const char *func, const char *file, int line)</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -223,8 +259,9 @@ constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>drake::kDra
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">  ::drake::internal::Abort(                                             \</div>
+<b>Value:</b><div class="fragment"><div class="line">  <a class="code hl_function" href="namespacedrake_1_1internal.html#a1555b594d10aad05d02addac282d35ec">::drake::internal::Abort</a>(                                             \</div>
 <div class="line">      <span class="stringliteral">&quot;Unreachable code was reached?!&quot;</span>, __func__, __FILE__, __LINE__)</div>
+<div class="ttc" id="anamespacedrake_1_1internal_html_a1555b594d10aad05d02addac282d35ec"><div class="ttname"><a href="namespacedrake_1_1internal.html#a1555b594d10aad05d02addac282d35ec">drake::internal::Abort</a></div><div class="ttdeci">void Abort(const char *condition, const char *func, const char *file, int line)</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -234,7 +271,7 @@ constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><b>drake::kDra
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3096fa119feaaf68acf7be783be3d79f.html">drake</a></li><li class="navelem"><a class="el" href="dir_533b608e0d491fadd970e32351d4ba56.html">common</a></li><li class="navelem"><a class="el" href="drake__assert_8h.html">drake_assert.h</a></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:44 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:31 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

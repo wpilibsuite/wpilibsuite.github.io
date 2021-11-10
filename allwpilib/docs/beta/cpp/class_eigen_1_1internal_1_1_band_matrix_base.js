@@ -1,6 +1,11 @@
 var class_eigen_1_1internal_1_1_band_matrix_base =
 [
-    [ "DiagonalIntReturnType", "struct_eigen_1_1internal_1_1_band_matrix_base_1_1_diagonal_int_return_type.html", null ],
+    [ "DiagonalIntReturnType", "struct_eigen_1_1internal_1_1_band_matrix_base_1_1_diagonal_int_return_type.html", "struct_eigen_1_1internal_1_1_band_matrix_base_1_1_diagonal_int_return_type" ],
+    [ "Base", "class_eigen_1_1internal_1_1_band_matrix_base.html#af06810be4827bc9268e0d02fea6b4e62", null ],
+    [ "CoefficientsType", "class_eigen_1_1internal_1_1_band_matrix_base.html#a17c354627a5d45343b09ed4254b2871c", null ],
+    [ "DenseMatrixType", "class_eigen_1_1internal_1_1_band_matrix_base.html#a4b465b7b73aa09b04a05f9d94f6a7f58", null ],
+    [ "Scalar", "class_eigen_1_1internal_1_1_band_matrix_base.html#afca234d64175589fd9f35bb54e99a0cb", null ],
+    [ "StorageIndex", "class_eigen_1_1internal_1_1_band_matrix_base.html#a2f52fc1689db7ecbf7abe30d2b184f65", null ],
     [ "coeffs", "class_eigen_1_1internal_1_1_band_matrix_base.html#a9ce29768f413dc222ca4da3be4c3850e", null ],
     [ "coeffs", "class_eigen_1_1internal_1_1_band_matrix_base.html#a6d7907b36aee1c3b9da1412b565e4936", null ],
     [ "col", "class_eigen_1_1internal_1_1_band_matrix_base.html#a30685b7021fc61bdc10e75873923dfab", null ],
@@ -13,7 +18,10 @@ var class_eigen_1_1internal_1_1_band_matrix_base =
     [ "diagonal", "class_eigen_1_1internal_1_1_band_matrix_base.html#a68c645022231461e07abbc2895b7a5fd", null ],
     [ "diagonal", "class_eigen_1_1internal_1_1_band_matrix_base.html#ad824b64076d3a6879e75220c12742bb4", null ],
     [ "diagonal", "class_eigen_1_1internal_1_1_band_matrix_base.html#a5f488a3136419f6ab9cf6056fa268006", null ],
+    [ "diagonalLength", "class_eigen_1_1internal_1_1_band_matrix_base.html#a591e1a809bd6957740356a962f922626", null ],
+    [ "evalTo", "class_eigen_1_1internal_1_1_band_matrix_base.html#a48c573fc9b58a2d4dd0741b284124a64", null ],
     [ "rows", "class_eigen_1_1internal_1_1_band_matrix_base.html#af1d12fdb3361e150427e1fd94ebb1f14", null ],
     [ "subs", "class_eigen_1_1internal_1_1_band_matrix_base.html#a1115fe9b5a07d5218dacc15655a413cb", null ],
-    [ "supers", "class_eigen_1_1internal_1_1_band_matrix_base.html#a58617da0d75d22b1f8dfdfde702ebb4a", null ]
+    [ "supers", "class_eigen_1_1internal_1_1_band_matrix_base.html#a58617da0d75d22b1f8dfdfde702ebb4a", null ],
+    [ "toDenseMatrix", "class_eigen_1_1internal_1_1_band_matrix_base.html#aacfa0b85201b8503376a9998987f81f7", null ]
 ];

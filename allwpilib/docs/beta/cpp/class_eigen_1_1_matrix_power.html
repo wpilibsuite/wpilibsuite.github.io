@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -124,11 +124,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa1258393dc13acd6e401e000f99b915f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_matrix_power.html#aa1258393dc13acd6e401e000f99b915f">compute</a> (ResultType &amp;res, RealScalar p)</td></tr>
 <tr class="memdesc:aa1258393dc13acd6e401e000f99b915f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the matrix power.  <a href="class_eigen_1_1_matrix_power.html#aa1258393dc13acd6e401e000f99b915f">More...</a><br /></td></tr>
 <tr class="separator:aa1258393dc13acd6e401e000f99b915f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade4446998c2e4d83278c426944b7b72b"><td class="memItemLeft" align="right" valign="top"><a id="ade4446998c2e4d83278c426944b7b72b" name="ade4446998c2e4d83278c426944b7b72b"></a>
-<a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a>&#160;</td><td class="memItemRight" valign="bottom"><b>rows</b> () const</td></tr>
+<tr class="memitem:ade4446998c2e4d83278c426944b7b72b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_matrix_power.html#ade4446998c2e4d83278c426944b7b72b">rows</a> () const</td></tr>
 <tr class="separator:ade4446998c2e4d83278c426944b7b72b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e8d572202d337a5d651781fbcd72bbf"><td class="memItemLeft" align="right" valign="top"><a id="a2e8d572202d337a5d651781fbcd72bbf" name="a2e8d572202d337a5d651781fbcd72bbf"></a>
-<a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a>&#160;</td><td class="memItemRight" valign="bottom"><b>cols</b> () const</td></tr>
+<tr class="memitem:a2e8d572202d337a5d651781fbcd72bbf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_matrix_power.html#a2e8d572202d337a5d651781fbcd72bbf">cols</a> () const</td></tr>
 <tr class="separator:a2e8d572202d337a5d651781fbcd72bbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -140,7 +138,7 @@ class Eigen::MatrixPower&lt; MatrixType &gt;</div><p >Class for computing matrix
   </table>
   </dd>
 </dl>
-<p>This class is capable of computing real/complex matrices raised to an arbitrary real power. Meanwhile, it saves the result of Schur decomposition if an non-integral power has even been calculated. Therefore, if you want to compute multiple (&gt;= 2) matrix powers for the same matrix, using the class directly is more efficient than calling MatrixBase::pow().</p>
+<p>This class is capable of computing real/complex matrices raised to an arbitrary real power. Meanwhile, it saves the result of Schur decomposition if an non-integral power has even been calculated. Therefore, if you want to compute multiple (&gt;= 2) matrix powers for the same matrix, using the class directly is more efficient than calling <a class="el" href="namespaceunits_1_1math.html#a8bc48cef3fdfae35910a4bbe5011abcd" title="computes the value of value raised to the power">MatrixBase::pow()</a>.</p>
 <p >Example: </p><div class="fragment"></div><!-- fragment --><p> Output: </p><pre class="fragment"></pre> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a5eb445525601510413b53cd347c44716" name="a5eb445525601510413b53cd347c44716"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5eb445525601510413b53cd347c44716">&#9670;&nbsp;</a></span>MatrixPower()</h2>
@@ -180,6 +178,34 @@ template&lt;typename MatrixType &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2e8d572202d337a5d651781fbcd72bbf" name="a2e8d572202d337a5d651781fbcd72bbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e8d572202d337a5d651781fbcd72bbf">&#9670;&nbsp;</a></span>cols()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MatrixType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> <a class="el" href="class_eigen_1_1_matrix_power.html">Eigen::MatrixPower</a>&lt; MatrixType &gt;::cols </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aa1258393dc13acd6e401e000f99b915f" name="aa1258393dc13acd6e401e000f99b915f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa1258393dc13acd6e401e000f99b915f">&#9670;&nbsp;</a></span>compute()</h2>
 
@@ -258,6 +284,34 @@ template&lt;typename MatrixType &gt; </div>
 
 </div>
 </div>
+<a id="ade4446998c2e4d83278c426944b7b72b" name="ade4446998c2e4d83278c426944b7b72b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade4446998c2e4d83278c426944b7b72b">&#9670;&nbsp;</a></span>rows()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MatrixType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> <a class="el" href="class_eigen_1_1_matrix_power.html">Eigen::MatrixPower</a>&lt; MatrixType &gt;::rows </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/eigeninclude/unsupported/Eigen/src/MatrixFunctions/<a class="el" href="_matrix_power_8h_source.html">MatrixPower.h</a></li>
 </ul>
@@ -267,7 +321,7 @@ template&lt;typename MatrixType &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_eigen.html">Eigen</a></li><li class="navelem"><a class="el" href="class_eigen_1_1_matrix_power.html">MatrixPower</a></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:46 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:33 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

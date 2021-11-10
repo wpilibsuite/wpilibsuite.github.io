@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -94,10 +94,13 @@ $(document).ready(function(){initNavTree('classghc_1_1filesystem_1_1path.html','
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="classghc_1_1filesystem_1_1path-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">ghc::filesystem::path Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="filesystem_8hpp_source.html">wpi/ghc/filesystem.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ghc::filesystem::path:</div>
 <div class="dyncontent">
@@ -107,55 +110,325 @@ Inheritance diagram for ghc::filesystem::path:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a46f9c53068e1374efab8fb17e50da7c2"><td class="memItemLeft" align="right" valign="top"><a id="a46f9c53068e1374efab8fb17e50da7c2" name="a46f9c53068e1374efab8fb17e50da7c2"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>value_type</b> = const <a class="el" href="classghc_1_1filesystem_1_1path.html">path</a></td></tr>
+<tr class="memitem:a46f9c53068e1374efab8fb17e50da7c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classghc_1_1filesystem_1_1path.html#a46f9c53068e1374efab8fb17e50da7c2">value_type</a> = const <a class="el" href="classghc_1_1filesystem_1_1path.html">path</a></td></tr>
 <tr class="separator:a46f9c53068e1374efab8fb17e50da7c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a369da3e97c9ed3a46eccc58ff43d64be"><td class="memItemLeft" align="right" valign="top"><a id="a369da3e97c9ed3a46eccc58ff43d64be" name="a369da3e97c9ed3a46eccc58ff43d64be"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>difference_type</b> = std::ptrdiff_t</td></tr>
+<tr class="memitem:a369da3e97c9ed3a46eccc58ff43d64be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classghc_1_1filesystem_1_1path.html#a369da3e97c9ed3a46eccc58ff43d64be">difference_type</a> = std::ptrdiff_t</td></tr>
 <tr class="separator:a369da3e97c9ed3a46eccc58ff43d64be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5256bf0b9e755f7d3fac75724746f6a"><td class="memItemLeft" align="right" valign="top"><a id="ab5256bf0b9e755f7d3fac75724746f6a" name="ab5256bf0b9e755f7d3fac75724746f6a"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>pointer</b> = const <a class="el" href="classghc_1_1filesystem_1_1path.html">path</a> *</td></tr>
+<tr class="memitem:ab5256bf0b9e755f7d3fac75724746f6a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classghc_1_1filesystem_1_1path.html#ab5256bf0b9e755f7d3fac75724746f6a">pointer</a> = const <a class="el" href="classghc_1_1filesystem_1_1path.html">path</a> *</td></tr>
 <tr class="separator:ab5256bf0b9e755f7d3fac75724746f6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1b6a1f777bcdc47c170d796e0d7b976"><td class="memItemLeft" align="right" valign="top"><a id="ad1b6a1f777bcdc47c170d796e0d7b976" name="ad1b6a1f777bcdc47c170d796e0d7b976"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>reference</b> = const <a class="el" href="classghc_1_1filesystem_1_1path.html">path</a> &amp;</td></tr>
+<tr class="memitem:ad1b6a1f777bcdc47c170d796e0d7b976"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classghc_1_1filesystem_1_1path.html#ad1b6a1f777bcdc47c170d796e0d7b976">reference</a> = const <a class="el" href="classghc_1_1filesystem_1_1path.html">path</a> &amp;</td></tr>
 <tr class="separator:ad1b6a1f777bcdc47c170d796e0d7b976"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67f41019e1ed4d2015e1e037506b370a"><td class="memItemLeft" align="right" valign="top"><a id="a67f41019e1ed4d2015e1e037506b370a" name="a67f41019e1ed4d2015e1e037506b370a"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>iterator_category</b> = std::bidirectional_iterator_tag</td></tr>
+<tr class="memitem:a67f41019e1ed4d2015e1e037506b370a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classghc_1_1filesystem_1_1path.html#a67f41019e1ed4d2015e1e037506b370a">iterator_category</a> = std::bidirectional_iterator_tag</td></tr>
 <tr class="separator:a67f41019e1ed4d2015e1e037506b370a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a803d7960ed25b4b3c7778e7b9cc50dcf"><td class="memItemLeft" align="right" valign="top"><a id="a803d7960ed25b4b3c7778e7b9cc50dcf" name="a803d7960ed25b4b3c7778e7b9cc50dcf"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>iterator</b> ()</td></tr>
+<tr class="memitem:a803d7960ed25b4b3c7778e7b9cc50dcf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classghc_1_1filesystem_1_1path.html#a803d7960ed25b4b3c7778e7b9cc50dcf">iterator</a> ()</td></tr>
 <tr class="separator:a803d7960ed25b4b3c7778e7b9cc50dcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c7a2ccb2f7e7521f4ebe2702d554094"><td class="memItemLeft" align="right" valign="top"><a id="a9c7a2ccb2f7e7521f4ebe2702d554094" name="a9c7a2ccb2f7e7521f4ebe2702d554094"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>iterator</b> (const <a class="el" href="classghc_1_1filesystem_1_1path.html">path</a> &amp;p, const impl_string_type::const_iterator &amp;pos)</td></tr>
+<tr class="memitem:a9c7a2ccb2f7e7521f4ebe2702d554094"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classghc_1_1filesystem_1_1path.html#a9c7a2ccb2f7e7521f4ebe2702d554094">iterator</a> (const <a class="el" href="classghc_1_1filesystem_1_1path.html">path</a> &amp;p, const impl_string_type::const_iterator &amp;pos)</td></tr>
 <tr class="separator:a9c7a2ccb2f7e7521f4ebe2702d554094"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac642f154637cb54fc84b26a6212e640e"><td class="memItemLeft" align="right" valign="top"><a id="ac642f154637cb54fc84b26a6212e640e" name="ac642f154637cb54fc84b26a6212e640e"></a>
-iterator &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator++</b> ()</td></tr>
+<tr class="memitem:ac642f154637cb54fc84b26a6212e640e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classghc_1_1filesystem_1_1path.html#a803d7960ed25b4b3c7778e7b9cc50dcf">iterator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classghc_1_1filesystem_1_1path.html#ac642f154637cb54fc84b26a6212e640e">operator++</a> ()</td></tr>
 <tr class="separator:ac642f154637cb54fc84b26a6212e640e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69d731bfb38bf9f82c8b3f7688185928"><td class="memItemLeft" align="right" valign="top"><a id="a69d731bfb38bf9f82c8b3f7688185928" name="a69d731bfb38bf9f82c8b3f7688185928"></a>
-iterator&#160;</td><td class="memItemRight" valign="bottom"><b>operator++</b> (int)</td></tr>
+<tr class="memitem:a69d731bfb38bf9f82c8b3f7688185928"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classghc_1_1filesystem_1_1path.html#a803d7960ed25b4b3c7778e7b9cc50dcf">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classghc_1_1filesystem_1_1path.html#a69d731bfb38bf9f82c8b3f7688185928">operator++</a> (int)</td></tr>
 <tr class="separator:a69d731bfb38bf9f82c8b3f7688185928"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9dd00d9fd6768f75e269f791d88122ca"><td class="memItemLeft" align="right" valign="top"><a id="a9dd00d9fd6768f75e269f791d88122ca" name="a9dd00d9fd6768f75e269f791d88122ca"></a>
-iterator &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator--</b> ()</td></tr>
+<tr class="memitem:a9dd00d9fd6768f75e269f791d88122ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classghc_1_1filesystem_1_1path.html#a803d7960ed25b4b3c7778e7b9cc50dcf">iterator</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classghc_1_1filesystem_1_1path.html#a9dd00d9fd6768f75e269f791d88122ca">operator--</a> ()</td></tr>
 <tr class="separator:a9dd00d9fd6768f75e269f791d88122ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a718b0e904a4d94b5eb1c1dd7aba041a8"><td class="memItemLeft" align="right" valign="top"><a id="a718b0e904a4d94b5eb1c1dd7aba041a8" name="a718b0e904a4d94b5eb1c1dd7aba041a8"></a>
-iterator&#160;</td><td class="memItemRight" valign="bottom"><b>operator--</b> (int)</td></tr>
+<tr class="memitem:a718b0e904a4d94b5eb1c1dd7aba041a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classghc_1_1filesystem_1_1path.html#a803d7960ed25b4b3c7778e7b9cc50dcf">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classghc_1_1filesystem_1_1path.html#a718b0e904a4d94b5eb1c1dd7aba041a8">operator--</a> (int)</td></tr>
 <tr class="separator:a718b0e904a4d94b5eb1c1dd7aba041a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a364bf7f1a341e6f2748528e0e608babc"><td class="memItemLeft" align="right" valign="top"><a id="a364bf7f1a341e6f2748528e0e608babc" name="a364bf7f1a341e6f2748528e0e608babc"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const iterator &amp;other) const</td></tr>
+<tr class="memitem:a364bf7f1a341e6f2748528e0e608babc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classghc_1_1filesystem_1_1path.html#a364bf7f1a341e6f2748528e0e608babc">operator==</a> (const <a class="el" href="classghc_1_1filesystem_1_1path.html#a803d7960ed25b4b3c7778e7b9cc50dcf">iterator</a> &amp;other) const</td></tr>
 <tr class="separator:a364bf7f1a341e6f2748528e0e608babc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74baea35ce034bea5ea795e54d972066"><td class="memItemLeft" align="right" valign="top"><a id="a74baea35ce034bea5ea795e54d972066" name="a74baea35ce034bea5ea795e54d972066"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const iterator &amp;other) const</td></tr>
+<tr class="memitem:a74baea35ce034bea5ea795e54d972066"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classghc_1_1filesystem_1_1path.html#a74baea35ce034bea5ea795e54d972066">operator!=</a> (const <a class="el" href="classghc_1_1filesystem_1_1path.html#a803d7960ed25b4b3c7778e7b9cc50dcf">iterator</a> &amp;other) const</td></tr>
 <tr class="separator:a74baea35ce034bea5ea795e54d972066"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac163b6b5ed34ac6f2fdcc322198fe5e1"><td class="memItemLeft" align="right" valign="top"><a id="ac163b6b5ed34ac6f2fdcc322198fe5e1" name="ac163b6b5ed34ac6f2fdcc322198fe5e1"></a>
-<a class="el" href="classghc_1_1filesystem_1_1path.html">reference</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> () const</td></tr>
+<tr class="memitem:ac163b6b5ed34ac6f2fdcc322198fe5e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classghc_1_1filesystem_1_1path.html#ad1b6a1f777bcdc47c170d796e0d7b976">reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classghc_1_1filesystem_1_1path.html#ac163b6b5ed34ac6f2fdcc322198fe5e1">operator*</a> () const</td></tr>
 <tr class="separator:ac163b6b5ed34ac6f2fdcc322198fe5e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc875b3b7d814c1e20f8f4ea175a1829"><td class="memItemLeft" align="right" valign="top"><a id="abc875b3b7d814c1e20f8f4ea175a1829" name="abc875b3b7d814c1e20f8f4ea175a1829"></a>
-<a class="el" href="classghc_1_1filesystem_1_1path.html">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator-&gt;</b> () const</td></tr>
+<tr class="memitem:abc875b3b7d814c1e20f8f4ea175a1829"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classghc_1_1filesystem_1_1path.html#ab5256bf0b9e755f7d3fac75724746f6a">pointer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classghc_1_1filesystem_1_1path.html#abc875b3b7d814c1e20f8f4ea175a1829">operator-&gt;</a> () const</td></tr>
 <tr class="separator:abc875b3b7d814c1e20f8f4ea175a1829"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:aee063bfc44b745cfd5fc65006dde4e52"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classghc_1_1filesystem_1_1path.html#aee063bfc44b745cfd5fc65006dde4e52">path</a></td></tr>
+<tr class="separator:aee063bfc44b745cfd5fc65006dde4e52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a369da3e97c9ed3a46eccc58ff43d64be" name="a369da3e97c9ed3a46eccc58ff43d64be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a369da3e97c9ed3a46eccc58ff43d64be">&#9670;&nbsp;</a></span>difference_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="classghc_1_1filesystem_1_1path.html#a369da3e97c9ed3a46eccc58ff43d64be">ghc::filesystem::path::difference_type</a> =  std::ptrdiff_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a67f41019e1ed4d2015e1e037506b370a" name="a67f41019e1ed4d2015e1e037506b370a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67f41019e1ed4d2015e1e037506b370a">&#9670;&nbsp;</a></span>iterator_category</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="classghc_1_1filesystem_1_1path.html#a67f41019e1ed4d2015e1e037506b370a">ghc::filesystem::path::iterator_category</a> =  std::bidirectional_iterator_tag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab5256bf0b9e755f7d3fac75724746f6a" name="ab5256bf0b9e755f7d3fac75724746f6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5256bf0b9e755f7d3fac75724746f6a">&#9670;&nbsp;</a></span>pointer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="classghc_1_1filesystem_1_1path.html#ab5256bf0b9e755f7d3fac75724746f6a">ghc::filesystem::path::pointer</a> =  const <a class="el" href="classghc_1_1filesystem_1_1path.html">path</a>*</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad1b6a1f777bcdc47c170d796e0d7b976" name="ad1b6a1f777bcdc47c170d796e0d7b976"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1b6a1f777bcdc47c170d796e0d7b976">&#9670;&nbsp;</a></span>reference</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="classghc_1_1filesystem_1_1path.html#ad1b6a1f777bcdc47c170d796e0d7b976">ghc::filesystem::path::reference</a> =  const <a class="el" href="classghc_1_1filesystem_1_1path.html">path</a>&amp;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a46f9c53068e1374efab8fb17e50da7c2" name="a46f9c53068e1374efab8fb17e50da7c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46f9c53068e1374efab8fb17e50da7c2">&#9670;&nbsp;</a></span>value_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="classghc_1_1filesystem_1_1path.html#a46f9c53068e1374efab8fb17e50da7c2">ghc::filesystem::path::value_type</a> =  const <a class="el" href="classghc_1_1filesystem_1_1path.html">path</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a803d7960ed25b4b3c7778e7b9cc50dcf" name="a803d7960ed25b4b3c7778e7b9cc50dcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a803d7960ed25b4b3c7778e7b9cc50dcf">&#9670;&nbsp;</a></span>iterator() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ghc::filesystem::path::iterator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9c7a2ccb2f7e7521f4ebe2702d554094" name="a9c7a2ccb2f7e7521f4ebe2702d554094"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c7a2ccb2f7e7521f4ebe2702d554094">&#9670;&nbsp;</a></span>iterator() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ghc::filesystem::path::iterator </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classghc_1_1filesystem_1_1path.html">path</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const impl_string_type::const_iterator &amp;&#160;</td>
+          <td class="paramname"><em>pos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a74baea35ce034bea5ea795e54d972066" name="a74baea35ce034bea5ea795e54d972066"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74baea35ce034bea5ea795e54d972066">&#9670;&nbsp;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="_array_cwise_unary_ops_8h.html#aa198852a6b380257ea3e34c8f7e6e250">ghc::filesystem::path::operator!</a>= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classghc_1_1filesystem_1_1path.html#a803d7960ed25b4b3c7778e7b9cc50dcf">iterator</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac163b6b5ed34ac6f2fdcc322198fe5e1" name="ac163b6b5ed34ac6f2fdcc322198fe5e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac163b6b5ed34ac6f2fdcc322198fe5e1">&#9670;&nbsp;</a></span>operator*()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classghc_1_1filesystem_1_1path.html#ad1b6a1f777bcdc47c170d796e0d7b976">reference</a> ghc::filesystem::path::operator* </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac642f154637cb54fc84b26a6212e640e" name="ac642f154637cb54fc84b26a6212e640e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac642f154637cb54fc84b26a6212e640e">&#9670;&nbsp;</a></span>operator++() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classghc_1_1filesystem_1_1path.html#a803d7960ed25b4b3c7778e7b9cc50dcf">iterator</a> &amp; ghc::filesystem::path::operator++ </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a69d731bfb38bf9f82c8b3f7688185928" name="a69d731bfb38bf9f82c8b3f7688185928"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69d731bfb38bf9f82c8b3f7688185928">&#9670;&nbsp;</a></span>operator++() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classghc_1_1filesystem_1_1path.html#a803d7960ed25b4b3c7778e7b9cc50dcf">iterator</a> ghc::filesystem::path::operator++ </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9dd00d9fd6768f75e269f791d88122ca" name="a9dd00d9fd6768f75e269f791d88122ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dd00d9fd6768f75e269f791d88122ca">&#9670;&nbsp;</a></span>operator--() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classghc_1_1filesystem_1_1path.html#a803d7960ed25b4b3c7778e7b9cc50dcf">iterator</a> &amp; ghc::filesystem::path::operator-- </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a718b0e904a4d94b5eb1c1dd7aba041a8" name="a718b0e904a4d94b5eb1c1dd7aba041a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a718b0e904a4d94b5eb1c1dd7aba041a8">&#9670;&nbsp;</a></span>operator--() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classghc_1_1filesystem_1_1path.html#a803d7960ed25b4b3c7778e7b9cc50dcf">iterator</a> ghc::filesystem::path::operator-- </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abc875b3b7d814c1e20f8f4ea175a1829" name="abc875b3b7d814c1e20f8f4ea175a1829"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc875b3b7d814c1e20f8f4ea175a1829">&#9670;&nbsp;</a></span>operator-&gt;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classghc_1_1filesystem_1_1path.html#ab5256bf0b9e755f7d3fac75724746f6a">pointer</a> ghc::filesystem::path::operator-&gt; </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a364bf7f1a341e6f2748528e0e608babc" name="a364bf7f1a341e6f2748528e0e608babc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a364bf7f1a341e6f2748528e0e608babc">&#9670;&nbsp;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ghc::filesystem::path::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classghc_1_1filesystem_1_1path.html#a803d7960ed25b4b3c7778e7b9cc50dcf">iterator</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="aee063bfc44b745cfd5fc65006dde4e52" name="aee063bfc44b745cfd5fc65006dde4e52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee063bfc44b745cfd5fc65006dde4e52">&#9670;&nbsp;</a></span>path</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="filesystem_8hpp.html#a4102824714f591524ae37d2e9d05a47b">GHC_INLINE</a> ghc::filesystem::path::path</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>wpi/ghc/<a class="el" href="filesystem_8hpp_source.html">filesystem.hpp</a></li>
 </ul>
@@ -164,8 +437,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>ghc</b></li><li class="navelem"><b>filesystem</b></li><li class="navelem"><a class="el" href="classghc_1_1filesystem_1_1path.html">path</a></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:51 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespaceghc.html">ghc</a></li><li class="navelem"><a class="el" href="namespaceghc_1_1filesystem.html">filesystem</a></li><li class="navelem"><a class="el" href="classghc_1_1filesystem_1_1path.html">path</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:39 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

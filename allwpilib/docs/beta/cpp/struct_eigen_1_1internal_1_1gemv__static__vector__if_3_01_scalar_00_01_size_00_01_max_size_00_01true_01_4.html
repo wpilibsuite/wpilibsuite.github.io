@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -99,26 +99,92 @@ $(document).ready(function(){initNavTree('struct_eigen_1_1internal_1_1gemv__stat
   <div class="headertitle"><div class="title">Eigen::internal::gemv_static_vector_if&lt; Scalar, Size, MaxSize, true &gt; Struct Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_general_product_8h_source.html">/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/eigeninclude/Eigen/src/Core/GeneralProduct.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ab725049eadea93fb3b61f4d52c5633fc"><td class="memItemLeft" align="right" valign="top"><a id="ab725049eadea93fb3b61f4d52c5633fc" name="ab725049eadea93fb3b61f4d52c5633fc"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>ForceAlignment</b> = internal::packet_traits&lt;Scalar&gt;::Vectorizable
-, <b>PacketSize</b> = internal::packet_traits&lt;Scalar&gt;::size
+<tr class="memitem:a719bebc9b65f0b01460a2f375d995611"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="struct_eigen_1_1internal_1_1gemv__static__vector__if_3_01_scalar_00_01_size_00_01_max_size_00_01true_01_4.html#a719bebc9b65f0b01460a2f375d995611a9d9d38fb554677d5255fea3c4f11fd87">ForceAlignment</a> = internal::packet_traits&lt;Scalar&gt;::Vectorizable
+, <a class="el" href="struct_eigen_1_1internal_1_1gemv__static__vector__if_3_01_scalar_00_01_size_00_01_max_size_00_01true_01_4.html#a719bebc9b65f0b01460a2f375d995611a82755e289ebad600455338edf5fb502f">PacketSize</a> = internal::packet_traits&lt;Scalar&gt;::size
  }</td></tr>
-<tr class="separator:ab725049eadea93fb3b61f4d52c5633fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a719bebc9b65f0b01460a2f375d995611"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a56c2618f5407b0dedf44d23e58bbc6ea"><td class="memItemLeft" align="right" valign="top"><a id="a56c2618f5407b0dedf44d23e58bbc6ea" name="a56c2618f5407b0dedf44d23e58bbc6ea"></a>
-EIGEN_STRONG_INLINE Scalar *&#160;</td><td class="memItemRight" valign="bottom"><b>data</b> ()</td></tr>
+<tr class="memitem:a56c2618f5407b0dedf44d23e58bbc6ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_macros_8h.html#af2b60117c00a6e75812de43bfe7db3b1">EIGEN_STRONG_INLINE</a> Scalar *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1gemv__static__vector__if_3_01_scalar_00_01_size_00_01_max_size_00_01true_01_4.html#a56c2618f5407b0dedf44d23e58bbc6ea">data</a> ()</td></tr>
 <tr class="separator:a56c2618f5407b0dedf44d23e58bbc6ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a2b9b29bb0e25a591296c6e10ee8a8fd6"><td class="memItemLeft" align="right" valign="top"><a id="a2b9b29bb0e25a591296c6e10ee8a8fd6" name="a2b9b29bb0e25a591296c6e10ee8a8fd6"></a>
-<a class="el" href="struct_eigen_1_1internal_1_1plain__array.html">internal::plain_array</a>&lt; Scalar, EIGEN_SIZE_MIN_PREFER_FIXED(Size, MaxSize)+(ForceAlignment?EIGEN_MAX_ALIGN_BYTES:0), 0 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_data</b></td></tr>
+<tr class="memitem:a2b9b29bb0e25a591296c6e10ee8a8fd6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_eigen_1_1internal_1_1plain__array.html">internal::plain_array</a>&lt; Scalar, <a class="el" href="_macros_8h.html#af2d58514e6156c4da2d4af66fafd0b12">EIGEN_SIZE_MIN_PREFER_FIXED</a>(Size, MaxSize)+(<a class="el" href="struct_eigen_1_1internal_1_1gemv__static__vector__if_3_01_scalar_00_01_size_00_01_max_size_00_01true_01_4.html#a719bebc9b65f0b01460a2f375d995611a9d9d38fb554677d5255fea3c4f11fd87">ForceAlignment</a>?EIGEN_MAX_ALIGN_BYTES:0), 0 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1gemv__static__vector__if_3_01_scalar_00_01_size_00_01_max_size_00_01true_01_4.html#a2b9b29bb0e25a591296c6e10ee8a8fd6">m_data</a></td></tr>
 <tr class="separator:a2b9b29bb0e25a591296c6e10ee8a8fd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a719bebc9b65f0b01460a2f375d995611" name="a719bebc9b65f0b01460a2f375d995611"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a719bebc9b65f0b01460a2f375d995611">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Scalar , int Size, int MaxSize&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a719bebc9b65f0b01460a2f375d995611a9d9d38fb554677d5255fea3c4f11fd87" name="a719bebc9b65f0b01460a2f375d995611a9d9d38fb554677d5255fea3c4f11fd87"></a>ForceAlignment&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a719bebc9b65f0b01460a2f375d995611a82755e289ebad600455338edf5fb502f" name="a719bebc9b65f0b01460a2f375d995611a82755e289ebad600455338edf5fb502f"></a>PacketSize&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a56c2618f5407b0dedf44d23e58bbc6ea" name="a56c2618f5407b0dedf44d23e58bbc6ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56c2618f5407b0dedf44d23e58bbc6ea">&#9670;&nbsp;</a></span>data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Scalar , int Size, int MaxSize&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_macros_8h.html#af2b60117c00a6e75812de43bfe7db3b1">EIGEN_STRONG_INLINE</a> Scalar * <a class="el" href="struct_eigen_1_1internal_1_1gemv__static__vector__if.html">Eigen::internal::gemv_static_vector_if</a>&lt; Scalar, Size, MaxSize, true &gt;::<a class="el" href="structdata.html">data</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a2b9b29bb0e25a591296c6e10ee8a8fd6" name="a2b9b29bb0e25a591296c6e10ee8a8fd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b9b29bb0e25a591296c6e10ee8a8fd6">&#9670;&nbsp;</a></span>m_data</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Scalar , int Size, int MaxSize&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_eigen_1_1internal_1_1plain__array.html">internal::plain_array</a>&lt;Scalar,<a class="el" href="_macros_8h.html#af2d58514e6156c4da2d4af66fafd0b12">EIGEN_SIZE_MIN_PREFER_FIXED</a>(Size,MaxSize)+(<a class="el" href="struct_eigen_1_1internal_1_1gemv__static__vector__if_3_01_scalar_00_01_size_00_01_max_size_00_01true_01_4.html#a719bebc9b65f0b01460a2f375d995611a9d9d38fb554677d5255fea3c4f11fd87">ForceAlignment</a>?EIGEN_MAX_ALIGN_BYTES:0),0&gt; <a class="el" href="struct_eigen_1_1internal_1_1gemv__static__vector__if.html">Eigen::internal::gemv_static_vector_if</a>&lt; Scalar, Size, MaxSize, true &gt;::m_data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/eigeninclude/Eigen/src/Core/<a class="el" href="_general_product_8h_source.html">GeneralProduct.h</a></li>
 </ul>
@@ -127,8 +193,8 @@ Public Attributes</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespace_eigen.html">Eigen</a></li><li class="navelem"><b>internal</b></li><li class="navelem"><a class="el" href="struct_eigen_1_1internal_1_1gemv__static__vector__if_3_01_scalar_00_01_size_00_01_max_size_00_01true_01_4.html">gemv_static_vector_if&lt; Scalar, Size, MaxSize, true &gt;</a></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:48 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespace_eigen.html">Eigen</a></li><li class="navelem"><a class="el" href="namespace_eigen_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="struct_eigen_1_1internal_1_1gemv__static__vector__if_3_01_scalar_00_01_size_00_01_max_size_00_01true_01_4.html">gemv_static_vector_if&lt; Scalar, Size, MaxSize, true &gt;</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:35 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

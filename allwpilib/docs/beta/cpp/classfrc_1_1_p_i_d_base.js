@@ -2,6 +2,7 @@ var classfrc_1_1_p_i_d_base =
 [
     [ "PIDBase", "classfrc_1_1_p_i_d_base.html#af2c0a74b4babbd07d8480cb9d12a6683", null ],
     [ "PIDBase", "classfrc_1_1_p_i_d_base.html#adda4036b7f7ee6fbde3b8be11ed7e815", null ],
+    [ "~PIDBase", "classfrc_1_1_p_i_d_base.html#ae92d188a06c008b65984e7c446616421", null ],
     [ "Calculate", "classfrc_1_1_p_i_d_base.html#ab3f0b76795193a57826f9ca2a79dccc6", null ],
     [ "CalculateFeedForward", "classfrc_1_1_p_i_d_base.html#a5a197d678bc07e66123f74f8921d7c5f", null ],
     [ "Get", "classfrc_1_1_p_i_d_base.html#a2306672165f183aab81f1efb50c6d97a", null ],
@@ -33,5 +34,11 @@ var classfrc_1_1_p_i_d_base =
     [ "SetPIDSourceType", "classfrc_1_1_p_i_d_base.html#af0b78753bbfb56f2694cb78191cce13f", null ],
     [ "SetSetpoint", "classfrc_1_1_p_i_d_base.html#a7aa61f9f4a17c0185d04294123b104b8", null ],
     [ "SetTolerance", "classfrc_1_1_p_i_d_base.html#aa45b3fd09b92484da6d24e5eb73a1aaf", null ],
-    [ "SetToleranceBuffer", "classfrc_1_1_p_i_d_base.html#a8efb877379e48e0151403cbd6c29c6ed", null ]
+    [ "SetToleranceBuffer", "classfrc_1_1_p_i_d_base.html#a8efb877379e48e0151403cbd6c29c6ed", null ],
+    [ "m_enabled", "classfrc_1_1_p_i_d_base.html#aef228e8fcfc8b2c6c6416c83d18e9d53", null ],
+    [ "m_pidInput", "classfrc_1_1_p_i_d_base.html#acce6d5146946c8959d3551c12590213b", null ],
+    [ "m_pidOutput", "classfrc_1_1_p_i_d_base.html#a0370914e1e9285e76d3522857e4ddaac", null ],
+    [ "m_pidWriteMutex", "classfrc_1_1_p_i_d_base.html#a94553e6aca86cbab2b0334ba00f12dee", null ],
+    [ "m_setpointTimer", "classfrc_1_1_p_i_d_base.html#a4070a8da63e154f2bdca283805c71de6", null ],
+    [ "m_thisMutex", "classfrc_1_1_p_i_d_base.html#a4f55cce71d60a29448b23bd0f20205f7", null ]
 ];

@@ -9,5 +9,7 @@ var classfrc2_1_1_p_i_d_subsystem =
     [ "IsEnabled", "classfrc2_1_1_p_i_d_subsystem.html#a185f89219de0dbc8c5b476e6cf2bfcfd", null ],
     [ "Periodic", "classfrc2_1_1_p_i_d_subsystem.html#ad891cdb3d19530b92b64b7cd92e93f3a", null ],
     [ "SetSetpoint", "classfrc2_1_1_p_i_d_subsystem.html#afaaec0da24b606760ec3003bfc0f6362", null ],
-    [ "UseOutput", "classfrc2_1_1_p_i_d_subsystem.html#a682a32890b742eb9b43cbb2adb656997", null ]
+    [ "UseOutput", "classfrc2_1_1_p_i_d_subsystem.html#a682a32890b742eb9b43cbb2adb656997", null ],
+    [ "m_controller", "classfrc2_1_1_p_i_d_subsystem.html#a22d7490c91d98ae187d812c5c1fbce37", null ],
+    [ "m_enabled", "classfrc2_1_1_p_i_d_subsystem.html#abf36af4af41831b283accd6b752ff20c", null ]
 ];

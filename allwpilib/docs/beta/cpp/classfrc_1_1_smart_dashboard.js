@@ -1,5 +1,6 @@
 var classfrc_1_1_smart_dashboard =
 [
+    [ "SmartDashboard", "classfrc_1_1_smart_dashboard.html#a19c77aedec277a9e313968f58cec6d16", null ],
     [ "ClearFlags", "classfrc_1_1_smart_dashboard.html#abbd84c4abd15b32de6a10388f74d7527", null ],
     [ "ClearPersistent", "classfrc_1_1_smart_dashboard.html#a7b57b5b29062e43b6e54a2378acb4912", null ],
     [ "ContainsKey", "classfrc_1_1_smart_dashboard.html#a8f4407586f602f5396e2016f6742e4f1", null ],
@@ -16,6 +17,7 @@ var classfrc_1_1_smart_dashboard =
     [ "GetString", "classfrc_1_1_smart_dashboard.html#a504c72f746c42fdbaae6a0a42d25b039", null ],
     [ "GetStringArray", "classfrc_1_1_smart_dashboard.html#ac6160f90df04c6b23c7fe44a994566d5", null ],
     [ "GetValue", "classfrc_1_1_smart_dashboard.html#a43b596ee370d1946729bc379f2cc0df7", null ],
+    [ "init", "classfrc_1_1_smart_dashboard.html#a11f647e990c2ffdbc30bc85f26aa342c", null ],
     [ "IsPersistent", "classfrc_1_1_smart_dashboard.html#a164dfc9f3dae6ef7ddde0b2963cef6ad", null ],
     [ "PostListenerTask", "classfrc_1_1_smart_dashboard.html#abef357cf2da835cb30c09ce731e4d0e4", null ],
     [ "PutBoolean", "classfrc_1_1_smart_dashboard.html#a2adca064781251a19bbfe7eee1e0546b", null ],

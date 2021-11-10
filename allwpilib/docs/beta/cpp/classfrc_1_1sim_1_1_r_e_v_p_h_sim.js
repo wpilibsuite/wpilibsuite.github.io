@@ -2,6 +2,7 @@ var classfrc_1_1sim_1_1_r_e_v_p_h_sim =
 [
     [ "REVPHSim", "classfrc_1_1sim_1_1_r_e_v_p_h_sim.html#a9ac9f4228652a821301f0dc5c05f2014", null ],
     [ "REVPHSim", "classfrc_1_1sim_1_1_r_e_v_p_h_sim.html#a7445ab573eb479ffa8fcb97c2d042e8e", null ],
+    [ "REVPHSim", "classfrc_1_1sim_1_1_r_e_v_p_h_sim.html#a1cebcecad6fa212d54c3e4f3d5749fbd", null ],
     [ "GetAllSolenoidOutputs", "classfrc_1_1sim_1_1_r_e_v_p_h_sim.html#a2a6360c4acd39e8261c369ed6189c033", null ],
     [ "GetClosedLoopEnabled", "classfrc_1_1sim_1_1_r_e_v_p_h_sim.html#a17fd55e18f833fc0bb73a0392e927553", null ],
     [ "GetCompressorCurrent", "classfrc_1_1sim_1_1_r_e_v_p_h_sim.html#ae33ed6628269cdc29ddc124cd68a7b2f", null ],

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -107,48 +107,123 @@ $(document).ready(function(){initNavTree('classnt_1_1_rpc_answer.html',''); init
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1f86f0f26f86f66a6ce46dab8fd42f8c"><td class="memItemLeft" align="right" valign="top"><a id="a1f86f0f26f86f66a6ce46dab8fd42f8c" name="a1f86f0f26f86f66a6ce46dab8fd42f8c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>RpcAnswer</b> (NT_Entry entry_, NT_RpcCall call_, std::string_view name_, std::string_view params_, <a class="el" href="structnt_1_1_connection_info.html">ConnectionInfo</a> conn_)</td></tr>
+<tr class="memitem:a0d08fcd73e9a4e969a72ac5ea727469b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_rpc_answer.html#a0d08fcd73e9a4e969a72ac5ea727469b">RpcAnswer</a> ()=default</td></tr>
+<tr class="separator:a0d08fcd73e9a4e969a72ac5ea727469b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f86f0f26f86f66a6ce46dab8fd42f8c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_rpc_answer.html#a1f86f0f26f86f66a6ce46dab8fd42f8c">RpcAnswer</a> (<a class="el" href="group__ntcore__c__api.html#gaf64e436c9ab92f866d57519eeb2a2a09">NT_Entry</a> entry_, <a class="el" href="group__ntcore__c__api.html#gafa6b3230375c43a5f6cc86537a16baa3">NT_RpcCall</a> call_, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> name_, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> params_, <a class="el" href="structnt_1_1_connection_info.html">ConnectionInfo</a> conn_)</td></tr>
 <tr class="separator:a1f86f0f26f86f66a6ce46dab8fd42f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11dab1003d3be6dc7701a9836eaa649b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_rpc_answer.html#a11dab1003d3be6dc7701a9836eaa649b">operator bool</a> () const</td></tr>
 <tr class="memdesc:a11dab1003d3be6dc7701a9836eaa649b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if the native handle is valid.  <a href="classnt_1_1_rpc_answer.html#a11dab1003d3be6dc7701a9836eaa649b">More...</a><br /></td></tr>
 <tr class="separator:a11dab1003d3be6dc7701a9836eaa649b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4347298cf4b5a1878f02346a923ea92"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_rpc_answer.html#aa4347298cf4b5a1878f02346a923ea92">PostResponse</a> (std::string_view result) const</td></tr>
+<tr class="memitem:aa4347298cf4b5a1878f02346a923ea92"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_rpc_answer.html#aa4347298cf4b5a1878f02346a923ea92">PostResponse</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> result) const</td></tr>
 <tr class="memdesc:aa4347298cf4b5a1878f02346a923ea92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Post RPC response (return value) for a polled RPC.  <a href="classnt_1_1_rpc_answer.html#aa4347298cf4b5a1878f02346a923ea92">More...</a><br /></td></tr>
 <tr class="separator:aa4347298cf4b5a1878f02346a923ea92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a99a1533f73a240d94d079e389aa0e480"><td class="memItemLeft" align="right" valign="top"><a id="a99a1533f73a240d94d079e389aa0e480" name="a99a1533f73a240d94d079e389aa0e480"></a>
-NT_Entry&#160;</td><td class="memItemRight" valign="bottom"><b>entry</b> {0}</td></tr>
-<tr class="memdesc:a99a1533f73a240d94d079e389aa0e480"><td class="mdescLeft">&#160;</td><td class="mdescRight">Entry handle. <br /></td></tr>
+<tr class="memitem:a99a1533f73a240d94d079e389aa0e480"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#gaf64e436c9ab92f866d57519eeb2a2a09">NT_Entry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_rpc_answer.html#a99a1533f73a240d94d079e389aa0e480">entry</a> {0}</td></tr>
+<tr class="memdesc:a99a1533f73a240d94d079e389aa0e480"><td class="mdescLeft">&#160;</td><td class="mdescRight">Entry handle.  <a href="classnt_1_1_rpc_answer.html#a99a1533f73a240d94d079e389aa0e480">More...</a><br /></td></tr>
 <tr class="separator:a99a1533f73a240d94d079e389aa0e480"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12f30deea8ee389a91470e31229c22c8"><td class="memItemLeft" align="right" valign="top"><a id="a12f30deea8ee389a91470e31229c22c8" name="a12f30deea8ee389a91470e31229c22c8"></a>
-NT_RpcCall&#160;</td><td class="memItemRight" valign="bottom"><b>call</b> {0}</td></tr>
-<tr class="memdesc:a12f30deea8ee389a91470e31229c22c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call handle. <br /></td></tr>
+<tr class="memitem:a12f30deea8ee389a91470e31229c22c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__ntcore__c__api.html#gafa6b3230375c43a5f6cc86537a16baa3">NT_RpcCall</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_rpc_answer.html#a12f30deea8ee389a91470e31229c22c8">call</a> {0}</td></tr>
+<tr class="memdesc:a12f30deea8ee389a91470e31229c22c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call handle.  <a href="classnt_1_1_rpc_answer.html#a12f30deea8ee389a91470e31229c22c8">More...</a><br /></td></tr>
 <tr class="separator:a12f30deea8ee389a91470e31229c22c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeaa34e5bac1d86f916ebd74fbc2d6cac"><td class="memItemLeft" align="right" valign="top"><a id="aeaa34e5bac1d86f916ebd74fbc2d6cac" name="aeaa34e5bac1d86f916ebd74fbc2d6cac"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>name</b></td></tr>
-<tr class="memdesc:aeaa34e5bac1d86f916ebd74fbc2d6cac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Entry name. <br /></td></tr>
+<tr class="memitem:aeaa34e5bac1d86f916ebd74fbc2d6cac"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_rpc_answer.html#aeaa34e5bac1d86f916ebd74fbc2d6cac">name</a></td></tr>
+<tr class="memdesc:aeaa34e5bac1d86f916ebd74fbc2d6cac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Entry name.  <a href="classnt_1_1_rpc_answer.html#aeaa34e5bac1d86f916ebd74fbc2d6cac">More...</a><br /></td></tr>
 <tr class="separator:aeaa34e5bac1d86f916ebd74fbc2d6cac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45ad01a1bdff4c3b5d242c85c2f417d3"><td class="memItemLeft" align="right" valign="top"><a id="a45ad01a1bdff4c3b5d242c85c2f417d3" name="a45ad01a1bdff4c3b5d242c85c2f417d3"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>params</b></td></tr>
-<tr class="memdesc:a45ad01a1bdff4c3b5d242c85c2f417d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call raw parameters. <br /></td></tr>
+<tr class="memitem:a45ad01a1bdff4c3b5d242c85c2f417d3"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_rpc_answer.html#a45ad01a1bdff4c3b5d242c85c2f417d3">params</a></td></tr>
+<tr class="memdesc:a45ad01a1bdff4c3b5d242c85c2f417d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call raw parameters.  <a href="classnt_1_1_rpc_answer.html#a45ad01a1bdff4c3b5d242c85c2f417d3">More...</a><br /></td></tr>
 <tr class="separator:a45ad01a1bdff4c3b5d242c85c2f417d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a397c033f5a5a28fb256d38a7fff449e9"><td class="memItemLeft" align="right" valign="top"><a id="a397c033f5a5a28fb256d38a7fff449e9" name="a397c033f5a5a28fb256d38a7fff449e9"></a>
-<a class="el" href="structnt_1_1_connection_info.html">ConnectionInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>conn</b></td></tr>
-<tr class="memdesc:a397c033f5a5a28fb256d38a7fff449e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connection that called the RPC. <br /></td></tr>
+<tr class="memitem:a397c033f5a5a28fb256d38a7fff449e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structnt_1_1_connection_info.html">ConnectionInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_rpc_answer.html#a397c033f5a5a28fb256d38a7fff449e9">conn</a></td></tr>
+<tr class="memdesc:a397c033f5a5a28fb256d38a7fff449e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connection that called the RPC.  <a href="classnt_1_1_rpc_answer.html#a397c033f5a5a28fb256d38a7fff449e9">More...</a><br /></td></tr>
 <tr class="separator:a397c033f5a5a28fb256d38a7fff449e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a75bc005ff406f5a20ed8a1cc76400e97"><td class="memItemLeft" align="right" valign="top"><a id="a75bc005ff406f5a20ed8a1cc76400e97" name="a75bc005ff406f5a20ed8a1cc76400e97"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="el" href="classnt_1_1_rpc_answer.html">RpcAnswer</a> &amp;first, <a class="el" href="classnt_1_1_rpc_answer.html">RpcAnswer</a> &amp;second)</td></tr>
+<tr class="memitem:a75bc005ff406f5a20ed8a1cc76400e97"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnt_1_1_rpc_answer.html#a75bc005ff406f5a20ed8a1cc76400e97">swap</a> (<a class="el" href="classnt_1_1_rpc_answer.html">RpcAnswer</a> &amp;first, <a class="el" href="classnt_1_1_rpc_answer.html">RpcAnswer</a> &amp;second)</td></tr>
 <tr class="separator:a75bc005ff406f5a20ed8a1cc76400e97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >NetworkTables Remote Procedure Call (Server Side) </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a0d08fcd73e9a4e969a72ac5ea727469b" name="a0d08fcd73e9a4e969a72ac5ea727469b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d08fcd73e9a4e969a72ac5ea727469b">&#9670;&nbsp;</a></span>RpcAnswer() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">nt::RpcAnswer::RpcAnswer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1f86f0f26f86f66a6ce46dab8fd42f8c" name="a1f86f0f26f86f66a6ce46dab8fd42f8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f86f0f26f86f66a6ce46dab8fd42f8c">&#9670;&nbsp;</a></span>RpcAnswer() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">nt::RpcAnswer::RpcAnswer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__ntcore__c__api.html#gaf64e436c9ab92f866d57519eeb2a2a09">NT_Entry</a>&#160;</td>
+          <td class="paramname"><em>entry_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__ntcore__c__api.html#gafa6b3230375c43a5f6cc86537a16baa3">NT_RpcCall</a>&#160;</td>
+          <td class="paramname"><em>call_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>name_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>params_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structnt_1_1_connection_info.html">ConnectionInfo</a>&#160;</td>
+          <td class="paramname"><em>conn_</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a11dab1003d3be6dc7701a9836eaa649b" name="a11dab1003d3be6dc7701a9836eaa649b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a11dab1003d3be6dc7701a9836eaa649b">&#9670;&nbsp;</a></span>operator bool()</h2>
 
@@ -189,7 +264,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="e
         <tr>
           <td class="memname">bool nt::RpcAnswer::PostResponse </td>
           <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>result</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -212,6 +287,132 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="e
 
 </div>
 </div>
+<h2 class="groupheader">Friends And Related Function Documentation</h2>
+<a id="a75bc005ff406f5a20ed8a1cc76400e97" name="a75bc005ff406f5a20ed8a1cc76400e97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75bc005ff406f5a20ed8a1cc76400e97">&#9670;&nbsp;</a></span>swap</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void swap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classnt_1_1_rpc_answer.html">RpcAnswer</a> &amp;&#160;</td>
+          <td class="paramname"><em>first</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classnt_1_1_rpc_answer.html">RpcAnswer</a> &amp;&#160;</td>
+          <td class="paramname"><em>second</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a12f30deea8ee389a91470e31229c22c8" name="a12f30deea8ee389a91470e31229c22c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12f30deea8ee389a91470e31229c22c8">&#9670;&nbsp;</a></span>call</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__ntcore__c__api.html#gafa6b3230375c43a5f6cc86537a16baa3">NT_RpcCall</a> nt::RpcAnswer::call {0}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">mutable</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Call handle. </p>
+
+</div>
+</div>
+<a id="a397c033f5a5a28fb256d38a7fff449e9" name="a397c033f5a5a28fb256d38a7fff449e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a397c033f5a5a28fb256d38a7fff449e9">&#9670;&nbsp;</a></span>conn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structnt_1_1_connection_info.html">ConnectionInfo</a> nt::RpcAnswer::conn</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Connection that called the RPC. </p>
+
+</div>
+</div>
+<a id="a99a1533f73a240d94d079e389aa0e480" name="a99a1533f73a240d94d079e389aa0e480"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99a1533f73a240d94d079e389aa0e480">&#9670;&nbsp;</a></span>entry</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__ntcore__c__api.html#gaf64e436c9ab92f866d57519eeb2a2a09">NT_Entry</a> nt::RpcAnswer::entry {0}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Entry handle. </p>
+
+</div>
+</div>
+<a id="aeaa34e5bac1d86f916ebd74fbc2d6cac" name="aeaa34e5bac1d86f916ebd74fbc2d6cac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeaa34e5bac1d86f916ebd74fbc2d6cac">&#9670;&nbsp;</a></span>name</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string nt::RpcAnswer::name</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Entry name. </p>
+
+</div>
+</div>
+<a id="a45ad01a1bdff4c3b5d242c85c2f417d3" name="a45ad01a1bdff4c3b5d242c85c2f417d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45ad01a1bdff4c3b5d242c85c2f417d3">&#9670;&nbsp;</a></span>params</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string nt::RpcAnswer::params</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Call raw parameters. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="ntcore__cpp_8h_source.html">ntcore_cpp.h</a></li>
 </ul>
@@ -221,7 +422,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="e
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacent.html">nt</a></li><li class="navelem"><a class="el" href="classnt_1_1_rpc_answer.html">RpcAnswer</a></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:52 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:39 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -126,6 +126,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adda4036b7f7ee6fbde3b8be11ed7e815"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_p_i_d_base.html#adda4036b7f7ee6fbde3b8be11ed7e815">PIDBase</a> (double p, double i, double d, double f, <a class="el" href="classfrc_1_1_p_i_d_source.html">PIDSource</a> &amp;source, <a class="el" href="classfrc_1_1_p_i_d_output.html">PIDOutput</a> &amp;output)</td></tr>
 <tr class="memdesc:adda4036b7f7ee6fbde3b8be11ed7e815"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a PID object with the given constants for P, I, D.  <a href="classfrc_1_1_p_i_d_base.html#adda4036b7f7ee6fbde3b8be11ed7e815">More...</a><br /></td></tr>
 <tr class="separator:adda4036b7f7ee6fbde3b8be11ed7e815"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae92d188a06c008b65984e7c446616421"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_p_i_d_base.html#ae92d188a06c008b65984e7c446616421">~PIDBase</a> () override=default</td></tr>
+<tr class="separator:ae92d188a06c008b65984e7c446616421"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2306672165f183aab81f1efb50c6d97a"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_p_i_d_base.html#a2306672165f183aab81f1efb50c6d97a">Get</a> () const</td></tr>
 <tr class="memdesc:a2306672165f183aab81f1efb50c6d97a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the current PID result.  <a href="classfrc_1_1_p_i_d_base.html#a2306672165f183aab81f1efb50c6d97a">More...</a><br /></td></tr>
 <tr class="separator:a2306672165f183aab81f1efb50c6d97a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -183,11 +185,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6c15286ceae23ba38a0ee283400d9045"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_p_i_d_base.html#a6c15286ceae23ba38a0ee283400d9045">GetAvgError</a> () const</td></tr>
 <tr class="memdesc:a6c15286ceae23ba38a0ee283400d9045"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current average of the error over the past few iterations.  <a href="classfrc_1_1_p_i_d_base.html#a6c15286ceae23ba38a0ee283400d9045">More...</a><br /></td></tr>
 <tr class="separator:a6c15286ceae23ba38a0ee283400d9045"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0b78753bbfb56f2694cb78191cce13f"><td class="memItemLeft" align="right" valign="top"><a id="af0b78753bbfb56f2694cb78191cce13f" name="af0b78753bbfb56f2694cb78191cce13f"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPIDSourceType</b> (PIDSourceType pidSource)</td></tr>
-<tr class="memdesc:af0b78753bbfb56f2694cb78191cce13f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets what type of input the PID controller will use. <br /></td></tr>
+<tr class="memitem:af0b78753bbfb56f2694cb78191cce13f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_p_i_d_base.html#af0b78753bbfb56f2694cb78191cce13f">SetPIDSourceType</a> (<a class="el" href="namespacefrc.html#acfdec6974045d98b2be2a2877a5659cc">PIDSourceType</a> pidSource)</td></tr>
+<tr class="memdesc:af0b78753bbfb56f2694cb78191cce13f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets what type of input the PID controller will use.  <a href="classfrc_1_1_p_i_d_base.html#af0b78753bbfb56f2694cb78191cce13f">More...</a><br /></td></tr>
 <tr class="separator:af0b78753bbfb56f2694cb78191cce13f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfc7bf4860946eb3ab01ea3ac3fc9819"><td class="memItemLeft" align="right" valign="top">virtual PIDSourceType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_p_i_d_base.html#abfc7bf4860946eb3ab01ea3ac3fc9819">GetPIDSourceType</a> () const</td></tr>
+<tr class="memitem:abfc7bf4860946eb3ab01ea3ac3fc9819"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacefrc.html#acfdec6974045d98b2be2a2877a5659cc">PIDSourceType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_p_i_d_base.html#abfc7bf4860946eb3ab01ea3ac3fc9819">GetPIDSourceType</a> () const</td></tr>
 <tr class="memdesc:abfc7bf4860946eb3ab01ea3ac3fc9819"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the type of input the PID controller is using.  <a href="classfrc_1_1_p_i_d_base.html#abfc7bf4860946eb3ab01ea3ac3fc9819">More...</a><br /></td></tr>
 <tr class="separator:abfc7bf4860946eb3ab01ea3ac3fc9819"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa45b3fd09b92484da6d24e5eb73a1aaf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_p_i_d_base.html#aa45b3fd09b92484da6d24e5eb73a1aaf">SetTolerance</a> (double percent)</td></tr>
@@ -215,38 +216,37 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPIDSourceT
 <tr class="memdesc:ae6161c9cf7426ae84775a74b80f4545c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes this Sendable object.  <a href="classfrc_1_1_p_i_d_base.html#ae6161c9cf7426ae84775a74b80f4545c">More...</a><br /></td></tr>
 <tr class="separator:ae6161c9cf7426ae84775a74b80f4545c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classfrc_1_1_p_i_d_interface"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classfrc_1_1_p_i_d_interface')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classfrc_1_1_p_i_d_interface.html">frc::PIDInterface</a></td></tr>
-<tr class="memitem:a5b312741bc600cc08d34bbc21b34d5d2 inherit pub_methods_classfrc_1_1_p_i_d_interface"><td class="memItemLeft" align="right" valign="top"><a id="a5b312741bc600cc08d34bbc21b34d5d2" name="a5b312741bc600cc08d34bbc21b34d5d2"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>PIDInterface</b> (<a class="el" href="classfrc_1_1_p_i_d_interface.html">PIDInterface</a> &amp;&amp;)=default</td></tr>
+<tr class="memitem:a1c19ecd0af675f5a3c3c6ce6a9d13917 inherit pub_methods_classfrc_1_1_p_i_d_interface"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_p_i_d_interface.html#a1c19ecd0af675f5a3c3c6ce6a9d13917">PIDInterface</a> ()=default</td></tr>
+<tr class="separator:a1c19ecd0af675f5a3c3c6ce6a9d13917 inherit pub_methods_classfrc_1_1_p_i_d_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b312741bc600cc08d34bbc21b34d5d2 inherit pub_methods_classfrc_1_1_p_i_d_interface"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_p_i_d_interface.html#a5b312741bc600cc08d34bbc21b34d5d2">PIDInterface</a> (<a class="el" href="classfrc_1_1_p_i_d_interface.html">PIDInterface</a> &amp;&amp;)=default</td></tr>
 <tr class="separator:a5b312741bc600cc08d34bbc21b34d5d2 inherit pub_methods_classfrc_1_1_p_i_d_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a989a7714cab15cc800ca0b5bf4d9fd30 inherit pub_methods_classfrc_1_1_p_i_d_interface"><td class="memItemLeft" align="right" valign="top"><a id="a989a7714cab15cc800ca0b5bf4d9fd30" name="a989a7714cab15cc800ca0b5bf4d9fd30"></a>
-<a class="el" href="classfrc_1_1_p_i_d_interface.html">PIDInterface</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classfrc_1_1_p_i_d_interface.html">PIDInterface</a> &amp;&amp;)=default</td></tr>
+<tr class="memitem:a989a7714cab15cc800ca0b5bf4d9fd30 inherit pub_methods_classfrc_1_1_p_i_d_interface"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_p_i_d_interface.html">PIDInterface</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_p_i_d_interface.html#a989a7714cab15cc800ca0b5bf4d9fd30">operator=</a> (<a class="el" href="classfrc_1_1_p_i_d_interface.html">PIDInterface</a> &amp;&amp;)=default</td></tr>
 <tr class="separator:a989a7714cab15cc800ca0b5bf4d9fd30 inherit pub_methods_classfrc_1_1_p_i_d_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classwpi_1_1_sendable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classwpi_1_1_sendable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classwpi_1_1_sendable.html">wpi::Sendable</a></td></tr>
+<tr class="memitem:a37e52c8d490b4cecf5e6fa7e7d47e7ec inherit pub_methods_classwpi_1_1_sendable"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable.html#a37e52c8d490b4cecf5e6fa7e7d47e7ec">~Sendable</a> ()=default</td></tr>
+<tr class="separator:a37e52c8d490b4cecf5e6fa7e7d47e7ec inherit pub_methods_classwpi_1_1_sendable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classwpi_1_1_sendable_helper"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classwpi_1_1_sendable_helper')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classwpi_1_1_sendable_helper.html">wpi::SendableHelper&lt; PIDBase &gt;</a></td></tr>
-<tr class="memitem:aab4f8627d10ab759fb1ea1bbcd106a90 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top"><a id="aab4f8627d10ab759fb1ea1bbcd106a90" name="aab4f8627d10ab759fb1ea1bbcd106a90"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SendableHelper</b> (const <a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;rhs)=default</td></tr>
+<tr class="memitem:aab4f8627d10ab759fb1ea1bbcd106a90 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#aab4f8627d10ab759fb1ea1bbcd106a90">SendableHelper</a> (const <a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;rhs)=default</td></tr>
 <tr class="separator:aab4f8627d10ab759fb1ea1bbcd106a90 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf9409670bb9b5cc16706341bf082c23 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top"><a id="aaf9409670bb9b5cc16706341bf082c23" name="aaf9409670bb9b5cc16706341bf082c23"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SendableHelper</b> (<a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;&amp;rhs)</td></tr>
+<tr class="memitem:aaf9409670bb9b5cc16706341bf082c23 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#aaf9409670bb9b5cc16706341bf082c23">SendableHelper</a> (<a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;&amp;rhs)</td></tr>
 <tr class="separator:aaf9409670bb9b5cc16706341bf082c23 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa52795f3b4aafc83fb167921dee31e2 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top"><a id="afa52795f3b4aafc83fb167921dee31e2" name="afa52795f3b4aafc83fb167921dee31e2"></a>
-<a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;rhs)=default</td></tr>
+<tr class="memitem:afa52795f3b4aafc83fb167921dee31e2 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#afa52795f3b4aafc83fb167921dee31e2">operator=</a> (const <a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;rhs)=default</td></tr>
 <tr class="separator:afa52795f3b4aafc83fb167921dee31e2 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ebcd20db42c07ce8835be6bbcdddb70 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top"><a id="a7ebcd20db42c07ce8835be6bbcdddb70" name="a7ebcd20db42c07ce8835be6bbcdddb70"></a>
-<a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;&amp;rhs)</td></tr>
+<tr class="memitem:a7ebcd20db42c07ce8835be6bbcdddb70 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a7ebcd20db42c07ce8835be6bbcdddb70">operator=</a> (<a class="el" href="classwpi_1_1_sendable_helper.html">SendableHelper</a> &amp;&amp;rhs)</td></tr>
 <tr class="separator:a7ebcd20db42c07ce8835be6bbcdddb70 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad914b3555af5651aaaa3d8b1cec83b91 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#ad914b3555af5651aaaa3d8b1cec83b91">GetName</a> () const</td></tr>
 <tr class="memdesc:ad914b3555af5651aaaa3d8b1cec83b91 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the name of this Sendable object.  <a href="classwpi_1_1_sendable_helper.html#ad914b3555af5651aaaa3d8b1cec83b91">More...</a><br /></td></tr>
 <tr class="separator:ad914b3555af5651aaaa3d8b1cec83b91 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab63e9f45842f45bfe5332041be0ef215 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#ab63e9f45842f45bfe5332041be0ef215">SetName</a> (std::string_view name)</td></tr>
+<tr class="memitem:ab63e9f45842f45bfe5332041be0ef215 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#ab63e9f45842f45bfe5332041be0ef215">SetName</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> <a class="el" href="core_8h.html#a7fc0249f0f8ba720115d2430f5b86cbaab068931cc450442b63f5b3d276ea4297">name</a>)</td></tr>
 <tr class="memdesc:ab63e9f45842f45bfe5332041be0ef215 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name of this Sendable object.  <a href="classwpi_1_1_sendable_helper.html#ab63e9f45842f45bfe5332041be0ef215">More...</a><br /></td></tr>
 <tr class="separator:ab63e9f45842f45bfe5332041be0ef215 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75eba171de041df5ccdd8118287f9511 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a75eba171de041df5ccdd8118287f9511">SetName</a> (std::string_view subsystem, std::string_view name)</td></tr>
+<tr class="memitem:a75eba171de041df5ccdd8118287f9511 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a75eba171de041df5ccdd8118287f9511">SetName</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> subsystem, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> <a class="el" href="core_8h.html#a7fc0249f0f8ba720115d2430f5b86cbaab068931cc450442b63f5b3d276ea4297">name</a>)</td></tr>
 <tr class="memdesc:a75eba171de041df5ccdd8118287f9511 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets both the subsystem name and device name of this Sendable object.  <a href="classwpi_1_1_sendable_helper.html#a75eba171de041df5ccdd8118287f9511">More...</a><br /></td></tr>
 <tr class="separator:a75eba171de041df5ccdd8118287f9511 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae661490f5da84e30594380eeb5d4952b inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#ae661490f5da84e30594380eeb5d4952b">GetSubsystem</a> () const</td></tr>
 <tr class="memdesc:ae661490f5da84e30594380eeb5d4952b inherit pub_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the subsystem name of this Sendable object.  <a href="classwpi_1_1_sendable_helper.html#ae661490f5da84e30594380eeb5d4952b">More...</a><br /></td></tr>
 <tr class="separator:ae661490f5da84e30594380eeb5d4952b inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11434f29c9ef91c9975969fb88212482 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a11434f29c9ef91c9975969fb88212482">SetSubsystem</a> (std::string_view subsystem)</td></tr>
+<tr class="memitem:a11434f29c9ef91c9975969fb88212482 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a11434f29c9ef91c9975969fb88212482">SetSubsystem</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> subsystem)</td></tr>
 <tr class="memdesc:a11434f29c9ef91c9975969fb88212482 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the subsystem name of this Sendable object.  <a href="classwpi_1_1_sendable_helper.html#a11434f29c9ef91c9975969fb88212482">More...</a><br /></td></tr>
 <tr class="separator:a11434f29c9ef91c9975969fb88212482 inherit pub_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -262,10 +262,12 @@ Protected Member Functions</h2></td></tr>
 <tr class="memdesc:aefb4d295fc742464bb25ef348d33fdab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wraps error around for continuous inputs.  <a href="classfrc_1_1_p_i_d_base.html#aefb4d295fc742464bb25ef348d33fdab">More...</a><br /></td></tr>
 <tr class="separator:aefb4d295fc742464bb25ef348d33fdab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classwpi_1_1_sendable_helper"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classwpi_1_1_sendable_helper')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classwpi_1_1_sendable_helper.html">wpi::SendableHelper&lt; PIDBase &gt;</a></td></tr>
-<tr class="memitem:a4cc45e3b86841263aaf59223ffeb3c88 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a4cc45e3b86841263aaf59223ffeb3c88">SetName</a> (std::string_view moduleType, int channel)</td></tr>
+<tr class="memitem:af21a49b911f282fddbb22deca3c9aab5 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#af21a49b911f282fddbb22deca3c9aab5">SendableHelper</a> ()=default</td></tr>
+<tr class="separator:af21a49b911f282fddbb22deca3c9aab5 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cc45e3b86841263aaf59223ffeb3c88 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a4cc45e3b86841263aaf59223ffeb3c88">SetName</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> moduleType, int channel)</td></tr>
 <tr class="memdesc:a4cc45e3b86841263aaf59223ffeb3c88 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name of the sensor with a channel number.  <a href="classwpi_1_1_sendable_helper.html#a4cc45e3b86841263aaf59223ffeb3c88">More...</a><br /></td></tr>
 <tr class="separator:a4cc45e3b86841263aaf59223ffeb3c88 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2953192a91f457768c3d879599ee924 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#ab2953192a91f457768c3d879599ee924">SetName</a> (std::string_view moduleType, int moduleNumber, int channel)</td></tr>
+<tr class="memitem:ab2953192a91f457768c3d879599ee924 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#ab2953192a91f457768c3d879599ee924">SetName</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> moduleType, int moduleNumber, int channel)</td></tr>
 <tr class="memdesc:ab2953192a91f457768c3d879599ee924 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the name of the sensor with a module and channel number.  <a href="classwpi_1_1_sendable_helper.html#ab2953192a91f457768c3d879599ee924">More...</a><br /></td></tr>
 <tr class="separator:ab2953192a91f457768c3d879599ee924 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ce2af28692ec77440d09ab8c2d36425 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a7ce2af28692ec77440d09ab8c2d36425">AddChild</a> (std::shared_ptr&lt; <a class="el" href="classwpi_1_1_sendable.html">Sendable</a> &gt; child)</td></tr>
@@ -274,33 +276,29 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a3e272258586ef98d2c1b8f6be76a1663 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a3e272258586ef98d2c1b8f6be76a1663">AddChild</a> (void *child)</td></tr>
 <tr class="memdesc:a3e272258586ef98d2c1b8f6be76a1663 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a child component.  <a href="classwpi_1_1_sendable_helper.html#a3e272258586ef98d2c1b8f6be76a1663">More...</a><br /></td></tr>
 <tr class="separator:a3e272258586ef98d2c1b8f6be76a1663 inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b89fa1cc66e9d7b32eaa7df291e2c3b inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_sendable_helper.html#a4b89fa1cc66e9d7b32eaa7df291e2c3b">~SendableHelper</a> ()</td></tr>
+<tr class="separator:a4b89fa1cc66e9d7b32eaa7df291e2c3b inherit pro_methods_classwpi_1_1_sendable_helper"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:aef228e8fcfc8b2c6c6416c83d18e9d53"><td class="memItemLeft" align="right" valign="top"><a id="aef228e8fcfc8b2c6c6416c83d18e9d53" name="aef228e8fcfc8b2c6c6416c83d18e9d53"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_enabled</b> = false</td></tr>
+<tr class="memitem:aef228e8fcfc8b2c6c6416c83d18e9d53"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_p_i_d_base.html#aef228e8fcfc8b2c6c6416c83d18e9d53">m_enabled</a> = false</td></tr>
 <tr class="separator:aef228e8fcfc8b2c6c6416c83d18e9d53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f55cce71d60a29448b23bd0f20205f7"><td class="memItemLeft" align="right" valign="top"><a id="a4f55cce71d60a29448b23bd0f20205f7" name="a4f55cce71d60a29448b23bd0f20205f7"></a>
-wpi::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>m_thisMutex</b></td></tr>
+<tr class="memitem:a4f55cce71d60a29448b23bd0f20205f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacewpi.html#a59819be5b11c0fbbc0b8e07c7638af24">wpi::mutex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_p_i_d_base.html#a4f55cce71d60a29448b23bd0f20205f7">m_thisMutex</a></td></tr>
 <tr class="separator:a4f55cce71d60a29448b23bd0f20205f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94553e6aca86cbab2b0334ba00f12dee"><td class="memItemLeft" align="right" valign="top"><a id="a94553e6aca86cbab2b0334ba00f12dee" name="a94553e6aca86cbab2b0334ba00f12dee"></a>
-wpi::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>m_pidWriteMutex</b></td></tr>
+<tr class="memitem:a94553e6aca86cbab2b0334ba00f12dee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacewpi.html#a59819be5b11c0fbbc0b8e07c7638af24">wpi::mutex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_p_i_d_base.html#a94553e6aca86cbab2b0334ba00f12dee">m_pidWriteMutex</a></td></tr>
 <tr class="separator:a94553e6aca86cbab2b0334ba00f12dee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acce6d5146946c8959d3551c12590213b"><td class="memItemLeft" align="right" valign="top"><a id="acce6d5146946c8959d3551c12590213b" name="acce6d5146946c8959d3551c12590213b"></a>
-<a class="el" href="classfrc_1_1_p_i_d_source.html">PIDSource</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pidInput</b></td></tr>
+<tr class="memitem:acce6d5146946c8959d3551c12590213b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_p_i_d_source.html">PIDSource</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_p_i_d_base.html#acce6d5146946c8959d3551c12590213b">m_pidInput</a></td></tr>
 <tr class="separator:acce6d5146946c8959d3551c12590213b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0370914e1e9285e76d3522857e4ddaac"><td class="memItemLeft" align="right" valign="top"><a id="a0370914e1e9285e76d3522857e4ddaac" name="a0370914e1e9285e76d3522857e4ddaac"></a>
-<a class="el" href="classfrc_1_1_p_i_d_output.html">PIDOutput</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pidOutput</b></td></tr>
+<tr class="memitem:a0370914e1e9285e76d3522857e4ddaac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_p_i_d_output.html">PIDOutput</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_p_i_d_base.html#a0370914e1e9285e76d3522857e4ddaac">m_pidOutput</a></td></tr>
 <tr class="separator:a0370914e1e9285e76d3522857e4ddaac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4070a8da63e154f2bdca283805c71de6"><td class="memItemLeft" align="right" valign="top"><a id="a4070a8da63e154f2bdca283805c71de6" name="a4070a8da63e154f2bdca283805c71de6"></a>
-<a class="el" href="classfrc_1_1_timer.html">Timer</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_setpointTimer</b></td></tr>
+<tr class="memitem:a4070a8da63e154f2bdca283805c71de6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_timer.html">Timer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_p_i_d_base.html#a4070a8da63e154f2bdca283805c71de6">m_setpointTimer</a></td></tr>
 <tr class="separator:a4070a8da63e154f2bdca283805c71de6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Class implements a PID Control Loop. </p>
 <p >Creates a separate thread which reads the given <a class="el" href="classfrc_1_1_p_i_d_source.html" title="PIDSource interface is a generic sensor source for the PID class.">PIDSource</a> and takes care of the integral calculations, as well as writing the given <a class="el" href="classfrc_1_1_p_i_d_output.html" title="PIDOutput interface is a generic output for the PID class.">PIDOutput</a>.</p>
 <p >This feedback controller runs in discrete time, so time deltas are not used in the integral and derivative calculations. Therefore, the sample rate affects the controller's behavior for a given set of PID constants.</p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000057">Deprecated:</a></b></dt><dd>All APIs which use this have been deprecated. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000076">Deprecated:</a></b></dt><dd>All APIs which use this have been deprecated. </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af2c0a74b4babbd07d8480cb9d12a6683" name="af2c0a74b4babbd07d8480cb9d12a6683"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af2c0a74b4babbd07d8480cb9d12a6683">&#9670;&nbsp;</a></span>PIDBase() <span class="overload">[1/2]</span></h2>
@@ -422,6 +420,31 @@ wpi::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>m_pidWriteMutex
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ae92d188a06c008b65984e7c446616421" name="ae92d188a06c008b65984e7c446616421"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae92d188a06c008b65984e7c446616421">&#9670;&nbsp;</a></span>~PIDBase()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">frc::PIDBase::~PIDBase </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -603,7 +626,7 @@ wpi::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>m_pidWriteMutex
 <p>Get the Differential coefficient. </p>
 <dl class="section return"><dt>Returns</dt><dd>differential coefficient </dd></dl>
 
-<p>Implements <a class="el" href="classfrc_1_1_p_i_d_interface.html">frc::PIDInterface</a>.</p>
+<p>Implements <a class="el" href="classfrc_1_1_p_i_d_interface.html#a49c7c42a1e4dd4c2aa08c8477d3f6033">frc::PIDInterface</a>.</p>
 
 </div>
 </div>
@@ -709,7 +732,7 @@ wpi::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>m_pidWriteMutex
 <p>Get the Integral coefficient. </p>
 <dl class="section return"><dt>Returns</dt><dd>integral coefficient </dd></dl>
 
-<p>Implements <a class="el" href="classfrc_1_1_p_i_d_interface.html">frc::PIDInterface</a>.</p>
+<p>Implements <a class="el" href="classfrc_1_1_p_i_d_interface.html#a22952189d4688655e11aa209420c59c0">frc::PIDInterface</a>.</p>
 
 </div>
 </div>
@@ -739,7 +762,7 @@ wpi::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>m_pidWriteMutex
 <p>Get the Proportional coefficient. </p>
 <dl class="section return"><dt>Returns</dt><dd>proportional coefficient </dd></dl>
 
-<p>Implements <a class="el" href="classfrc_1_1_p_i_d_interface.html">frc::PIDInterface</a>.</p>
+<p>Implements <a class="el" href="classfrc_1_1_p_i_d_interface.html#a02318e3d0ea46e65711f42b3faa52506">frc::PIDInterface</a>.</p>
 
 </div>
 </div>
@@ -753,7 +776,7 @@ wpi::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>m_pidWriteMutex
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual PIDSourceType frc::PIDBase::GetPIDSourceType </td>
+          <td class="memname">virtual <a class="el" href="namespacefrc.html#acfdec6974045d98b2be2a2877a5659cc">PIDSourceType</a> frc::PIDBase::GetPIDSourceType </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -797,7 +820,7 @@ wpi::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>m_pidWriteMutex
 <p>Returns the current setpoint of the <a class="el" href="classfrc_1_1_p_i_d_base.html" title="Class implements a PID Control Loop.">PIDBase</a>. </p>
 <dl class="section return"><dt>Returns</dt><dd>the current setpoint </dd></dl>
 
-<p>Implements <a class="el" href="classfrc_1_1_p_i_d_interface.html">frc::PIDInterface</a>.</p>
+<p>Implements <a class="el" href="classfrc_1_1_p_i_d_interface.html#add95ac7fde3468d12f221c0d3ee55601">frc::PIDInterface</a>.</p>
 
 </div>
 </div>
@@ -834,8 +857,6 @@ wpi::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>m_pidWriteMutex
 </dl>
 
 <p>Implements <a class="el" href="classwpi_1_1_sendable.html#a02dfae73ea50b297f05151eafdc2efe6">wpi::Sendable</a>.</p>
-
-<p>Reimplemented in <a class="el" href="classfrc_1_1_p_i_d_controller.html#aab0d4629d5b2ec23b6ce9e5ae233e5f6">frc::PIDController</a>.</p>
 
 </div>
 </div>
@@ -897,7 +918,7 @@ wpi::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>m_pidWriteMutex
 <p >PIDControllers can be nested by passing a <a class="el" href="classfrc_1_1_p_i_d_controller.html" title="Class implements a PID Control Loop.">PIDController</a> as another <a class="el" href="classfrc_1_1_p_i_d_controller.html" title="Class implements a PID Control Loop.">PIDController</a>'s output. In that case, the output of the parent controller becomes the input (i.e., the reference) of the child.</p>
 <p >It is the caller's responsibility to put the data into a valid form for <a class="el" href="classfrc_1_1_p_i_d_base.html#a7aa61f9f4a17c0185d04294123b104b8" title="Set the setpoint for the PIDBase.">SetSetpoint()</a>. </p>
 
-<p>Implements <a class="el" href="classfrc_1_1_p_i_d_output.html">frc::PIDOutput</a>.</p>
+<p>Implements <a class="el" href="classfrc_1_1_p_i_d_output.html#a1e416c6129b15f21c70ed859a5658b18">frc::PIDOutput</a>.</p>
 
 </div>
 </div>
@@ -926,9 +947,7 @@ wpi::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>m_pidWriteMutex
 
 <p>Reset the previous error, the integral term, and disable the controller. </p>
 
-<p>Implements <a class="el" href="classfrc_1_1_p_i_d_interface.html">frc::PIDInterface</a>.</p>
-
-<p>Reimplemented in <a class="el" href="classfrc_1_1_p_i_d_controller.html#a3b7642aed6f1bd94982004dacc9408a5">frc::PIDController</a>.</p>
+<p>Implements <a class="el" href="classfrc_1_1_p_i_d_interface.html#a5d3e5a7d36244e85e3c33440ee6088c3">frc::PIDInterface</a>.</p>
 
 </div>
 </div>
@@ -1280,7 +1299,7 @@ wpi::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>m_pidWriteMutex
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classfrc_1_1_p_i_d_interface.html">frc::PIDInterface</a>.</p>
+<p>Implements <a class="el" href="classfrc_1_1_p_i_d_interface.html#ab07855f0db90e2ee5f69e7f9d96e0ec6">frc::PIDInterface</a>.</p>
 
 </div>
 </div>
@@ -1344,6 +1363,34 @@ wpi::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>m_pidWriteMutex
 
 </div>
 </div>
+<a id="af0b78753bbfb56f2694cb78191cce13f" name="af0b78753bbfb56f2694cb78191cce13f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0b78753bbfb56f2694cb78191cce13f">&#9670;&nbsp;</a></span>SetPIDSourceType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void frc::PIDBase::SetPIDSourceType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacefrc.html#acfdec6974045d98b2be2a2877a5659cc">PIDSourceType</a>&#160;</td>
+          <td class="paramname"><em>pidSource</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets what type of input the PID controller will use. </p>
+
+</div>
+</div>
 <a id="a7aa61f9f4a17c0185d04294123b104b8" name="a7aa61f9f4a17c0185d04294123b104b8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7aa61f9f4a17c0185d04294123b104b8">&#9670;&nbsp;</a></span>SetSetpoint()</h2>
 
@@ -1376,7 +1423,7 @@ wpi::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>m_pidWriteMutex
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classfrc_1_1_p_i_d_interface.html">frc::PIDInterface</a>.</p>
+<p>Implements <a class="el" href="classfrc_1_1_p_i_d_interface.html#aea88aa854abe47e5d7b0c35f7d9d0c7a">frc::PIDInterface</a>.</p>
 
 </div>
 </div>
@@ -1449,6 +1496,139 @@ wpi::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>m_pidWriteMutex
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="aef228e8fcfc8b2c6c6416c83d18e9d53" name="aef228e8fcfc8b2c6c6416c83d18e9d53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef228e8fcfc8b2c6c6416c83d18e9d53">&#9670;&nbsp;</a></span>m_enabled</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool frc::PIDBase::m_enabled = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acce6d5146946c8959d3551c12590213b" name="acce6d5146946c8959d3551c12590213b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acce6d5146946c8959d3551c12590213b">&#9670;&nbsp;</a></span>m_pidInput</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfrc_1_1_p_i_d_source.html">PIDSource</a>* frc::PIDBase::m_pidInput</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0370914e1e9285e76d3522857e4ddaac" name="a0370914e1e9285e76d3522857e4ddaac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0370914e1e9285e76d3522857e4ddaac">&#9670;&nbsp;</a></span>m_pidOutput</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfrc_1_1_p_i_d_output.html">PIDOutput</a>* frc::PIDBase::m_pidOutput</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a94553e6aca86cbab2b0334ba00f12dee" name="a94553e6aca86cbab2b0334ba00f12dee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94553e6aca86cbab2b0334ba00f12dee">&#9670;&nbsp;</a></span>m_pidWriteMutex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacewpi.html#a59819be5b11c0fbbc0b8e07c7638af24">wpi::mutex</a> frc::PIDBase::m_pidWriteMutex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">mutable</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4070a8da63e154f2bdca283805c71de6" name="a4070a8da63e154f2bdca283805c71de6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4070a8da63e154f2bdca283805c71de6">&#9670;&nbsp;</a></span>m_setpointTimer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfrc_1_1_timer.html">Timer</a> frc::PIDBase::m_setpointTimer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4f55cce71d60a29448b23bd0f20205f7" name="a4f55cce71d60a29448b23bd0f20205f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f55cce71d60a29448b23bd0f20205f7">&#9670;&nbsp;</a></span>m_thisMutex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacewpi.html#a59819be5b11c0fbbc0b8e07c7638af24">wpi::mutex</a> frc::PIDBase::m_thisMutex</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">mutable</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>frc/<a class="el" href="_p_i_d_base_8h_source.html">PIDBase.h</a></li>
 </ul>
@@ -1457,8 +1637,8 @@ wpi::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>m_pidWriteMutex
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1_p_i_d_base.html">PIDBase</a></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:50 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_p_i_d_base.html">PIDBase</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:38 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

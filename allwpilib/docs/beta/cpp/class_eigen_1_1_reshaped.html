@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -115,19 +115,16 @@ Inheritance diagram for Eigen::Reshaped&lt; XprType, Rows, Cols, Order &gt;:</di
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a511b1e04dff96e59a9936c628f1b8422"><td class="memItemLeft" align="right" valign="top"><a id="a511b1e04dff96e59a9936c628f1b8422" name="a511b1e04dff96e59a9936c628f1b8422"></a>
-typedef <a class="el" href="class_eigen_1_1_reshaped_impl.html">Impl</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Base</b></td></tr>
+<tr class="memitem:a511b1e04dff96e59a9936c628f1b8422"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_eigen_1_1_reshaped_impl.html">Impl</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_reshaped.html#a511b1e04dff96e59a9936c628f1b8422">Base</a></td></tr>
 <tr class="separator:a511b1e04dff96e59a9936c628f1b8422"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aeb41b44bf341c2876a74eab537825396"><td class="memItemLeft" align="right" valign="top"><a id="aeb41b44bf341c2876a74eab537825396" name="aeb41b44bf341c2876a74eab537825396"></a>
-EIGEN_DEVICE_FUNC&#160;</td><td class="memItemRight" valign="bottom"><b>Reshaped</b> (XprType &amp;xpr)</td></tr>
-<tr class="memdesc:aeb41b44bf341c2876a74eab537825396"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fixed-size constructor. <br /></td></tr>
+<tr class="memitem:aeb41b44bf341c2876a74eab537825396"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_macros_8h.html#a9efec3cfd22b9a33bead9c6718d128da">EIGEN_DEVICE_FUNC</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_reshaped.html#aeb41b44bf341c2876a74eab537825396">Reshaped</a> (XprType &amp;xpr)</td></tr>
+<tr class="memdesc:aeb41b44bf341c2876a74eab537825396"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fixed-size constructor.  <a href="class_eigen_1_1_reshaped.html#aeb41b44bf341c2876a74eab537825396">More...</a><br /></td></tr>
 <tr class="separator:aeb41b44bf341c2876a74eab537825396"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d77eac9f63a5b8aa77205ba58c2074b"><td class="memItemLeft" align="right" valign="top"><a id="a0d77eac9f63a5b8aa77205ba58c2074b" name="a0d77eac9f63a5b8aa77205ba58c2074b"></a>
-EIGEN_DEVICE_FUNC&#160;</td><td class="memItemRight" valign="bottom"><b>Reshaped</b> (XprType &amp;xpr, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> reshapeRows, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> reshapeCols)</td></tr>
-<tr class="memdesc:a0d77eac9f63a5b8aa77205ba58c2074b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dynamic-size constructor. <br /></td></tr>
+<tr class="memitem:a0d77eac9f63a5b8aa77205ba58c2074b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_macros_8h.html#a9efec3cfd22b9a33bead9c6718d128da">EIGEN_DEVICE_FUNC</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1_reshaped.html#a0d77eac9f63a5b8aa77205ba58c2074b">Reshaped</a> (XprType &amp;xpr, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> reshapeRows, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> reshapeCols)</td></tr>
+<tr class="memdesc:a0d77eac9f63a5b8aa77205ba58c2074b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dynamic-size constructor.  <a href="class_eigen_1_1_reshaped.html#a0d77eac9f63a5b8aa77205ba58c2074b">More...</a><br /></td></tr>
 <tr class="separator:a0d77eac9f63a5b8aa77205ba58c2074b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -145,7 +142,102 @@ class Eigen::Reshaped&lt; XprType, Rows, Cols, Order &gt;</div><p >Expression of
 <p>This class represents an expression of either a fixed-size or dynamic-size reshape. It is the return type of DenseBase::reshaped(NRowsType,NColsType) and most of the time this is the only way it is used.</p>
 <p >However, in C++98, if you want to directly maniputate reshaped expressions, for instance if you want to write a function returning such an expression, you will need to use this class. In C++11, it is advised to use the <em>auto</em> keyword for such use cases.</p>
 <p >Here is an example illustrating the dynamic case: </p><div class="fragment"></div><!-- fragment --><p> Output: </p><pre class="fragment"></pre><p >Here is an example illustrating the fixed-size case: </p><div class="fragment"></div><!-- fragment --><p> Output: </p><pre class="fragment"></pre><dl class="section see"><dt>See also</dt><dd>DenseBase::reshaped(NRowsType,NColsType) </dd></dl>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a511b1e04dff96e59a9936c628f1b8422" name="a511b1e04dff96e59a9936c628f1b8422"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a511b1e04dff96e59a9936c628f1b8422">&#9670;&nbsp;</a></span>Base</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename XprType , int Rows, int Cols, int Order&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="class_eigen_1_1_reshaped_impl.html">Impl</a> <a class="el" href="class_eigen_1_1_reshaped.html">Eigen::Reshaped</a>&lt; XprType, Rows, Cols, Order &gt;::<a class="el" href="class_eigen_1_1_reshaped.html#a511b1e04dff96e59a9936c628f1b8422">Base</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aeb41b44bf341c2876a74eab537825396" name="aeb41b44bf341c2876a74eab537825396"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb41b44bf341c2876a74eab537825396">&#9670;&nbsp;</a></span>Reshaped() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename XprType , int Rows, int Cols, int Order&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_macros_8h.html#a9efec3cfd22b9a33bead9c6718d128da">EIGEN_DEVICE_FUNC</a> <a class="el" href="class_eigen_1_1_reshaped.html">Eigen::Reshaped</a>&lt; XprType, Rows, Cols, Order &gt;::<a class="el" href="class_eigen_1_1_reshaped.html">Reshaped</a> </td>
+          <td>(</td>
+          <td class="paramtype">XprType &amp;&#160;</td>
+          <td class="paramname"><em>xpr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Fixed-size constructor. </p>
+
+</div>
+</div>
+<a id="a0d77eac9f63a5b8aa77205ba58c2074b" name="a0d77eac9f63a5b8aa77205ba58c2074b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d77eac9f63a5b8aa77205ba58c2074b">&#9670;&nbsp;</a></span>Reshaped() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename XprType , int Rows, int Cols, int Order&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_macros_8h.html#a9efec3cfd22b9a33bead9c6718d128da">EIGEN_DEVICE_FUNC</a> <a class="el" href="class_eigen_1_1_reshaped.html">Eigen::Reshaped</a>&lt; XprType, Rows, Cols, Order &gt;::<a class="el" href="class_eigen_1_1_reshaped.html">Reshaped</a> </td>
+          <td>(</td>
+          <td class="paramtype">XprType &amp;&#160;</td>
+          <td class="paramname"><em>xpr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a>&#160;</td>
+          <td class="paramname"><em>reshapeRows</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a>&#160;</td>
+          <td class="paramname"><em>reshapeCols</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Dynamic-size constructor. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/eigeninclude/Eigen/src/Core/util/<a class="el" href="_forward_declarations_8h_source.html">ForwardDeclarations.h</a></li>
 <li>/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/eigeninclude/Eigen/src/Core/<a class="el" href="_reshaped_8h_source.html">Reshaped.h</a></li>
 </ul>
 </div><!-- contents -->
@@ -154,7 +246,7 @@ class Eigen::Reshaped&lt; XprType, Rows, Cols, Order &gt;</div><p >Expression of
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_eigen.html">Eigen</a></li><li class="navelem"><a class="el" href="class_eigen_1_1_reshaped.html">Reshaped</a></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:46 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:34 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

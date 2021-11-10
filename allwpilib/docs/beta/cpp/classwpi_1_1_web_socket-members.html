@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -115,8 +115,8 @@ $(document).ready(function(){initNavTree('classwpi_1_1_web_socket.html',''); ini
   <tr class="odd"><td class="entry"><a class="el" href="classwpi_1_1_web_socket.html#a6e883858a7406edf0942375e7fc35c9d">IsOpen</a>() const</td><td class="entry"><a class="el" href="classwpi_1_1_web_socket.html">wpi::WebSocket</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classwpi_1_1_web_socket.html#a767b9ee610b2638448e936302cd3b1b3a7cdf46d1415e2440640848a0ffeef926">OPEN</a> enum value</td><td class="entry"><a class="el" href="classwpi_1_1_web_socket.html">wpi::WebSocket</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classwpi_1_1_web_socket.html#a43ecb040198b66d0d88a4250d56085a4">open</a></td><td class="entry"><a class="el" href="classwpi_1_1_web_socket.html">wpi::WebSocket</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>operator=</b>(const WebSocket &amp;)=delete (defined in <a class="el" href="classwpi_1_1_web_socket.html">wpi::WebSocket</a>)</td><td class="entry"><a class="el" href="classwpi_1_1_web_socket.html">wpi::WebSocket</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>operator=</b>(WebSocket &amp;&amp;)=delete (defined in <a class="el" href="classwpi_1_1_web_socket.html">wpi::WebSocket</a>)</td><td class="entry"><a class="el" href="classwpi_1_1_web_socket.html">wpi::WebSocket</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classwpi_1_1_web_socket.html#a42d638cbd0f73f2bb808d4fbdb0d6704">operator=</a>(const WebSocket &amp;)=delete</td><td class="entry"><a class="el" href="classwpi_1_1_web_socket.html">wpi::WebSocket</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classwpi_1_1_web_socket.html#a1e50e1fa4875baf0c09b4f052cb7c666">operator=</a>(WebSocket &amp;&amp;)=delete</td><td class="entry"><a class="el" href="classwpi_1_1_web_socket.html">wpi::WebSocket</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classwpi_1_1_web_socket.html#a0206ee21dc8765fe3648d1a6a1a54ea5">ping</a></td><td class="entry"><a class="el" href="classwpi_1_1_web_socket.html">wpi::WebSocket</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classwpi_1_1_web_socket.html#adf7938b5b72c64df87f0db631933c372">pong</a></td><td class="entry"><a class="el" href="classwpi_1_1_web_socket.html">wpi::WebSocket</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classwpi_1_1_web_socket.html#ad0eec9ac27351f759b323b20652e5687">SendBinary</a>(span&lt; const uv::Buffer &gt; data, std::function&lt; void(span&lt; uv::Buffer &gt;, uv::Error)&gt; callback)</td><td class="entry"><a class="el" href="classwpi_1_1_web_socket.html">wpi::WebSocket</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
@@ -138,19 +138,20 @@ $(document).ready(function(){initNavTree('classwpi_1_1_web_socket.html',''); ini
   <tr class="even"><td class="entry"><a class="el" href="classwpi_1_1_web_socket.html#a9eb36dee2f7319a43cd4a794cf635262">SetCombineFragments</a>(bool combine)</td><td class="entry"><a class="el" href="classwpi_1_1_web_socket.html">wpi::WebSocket</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classwpi_1_1_web_socket.html#aae601d5e644d628ebb9295d86b007bd0">SetData</a>(std::shared_ptr&lt; void &gt; data)</td><td class="entry"><a class="el" href="classwpi_1_1_web_socket.html">wpi::WebSocket</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classwpi_1_1_web_socket.html#ad8ed71cfabb44f5ccfdd9069d6958444">SetMaxMessageSize</a>(size_t size)</td><td class="entry"><a class="el" href="classwpi_1_1_web_socket.html">wpi::WebSocket</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classwpi_1_1_web_socket.html#a767b9ee610b2638448e936302cd3b1b3">State</a> enum name</td><td class="entry"><a class="el" href="classwpi_1_1_web_socket.html">wpi::WebSocket</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classwpi_1_1_web_socket.html#af7d2b14ca14d8b5e7fa29fda1fc974ad">Terminate</a>(uint16_t code=1006, std::string_view reason=&quot;terminated&quot;)</td><td class="entry"><a class="el" href="classwpi_1_1_web_socket.html">wpi::WebSocket</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classwpi_1_1_web_socket.html#a52a220899cf024226a920822171780f0">text</a></td><td class="entry"><a class="el" href="classwpi_1_1_web_socket.html">wpi::WebSocket</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>WebSocket</b>(uv::Stream &amp;stream, bool server, const private_init &amp;) (defined in <a class="el" href="classwpi_1_1_web_socket.html">wpi::WebSocket</a>)</td><td class="entry"><a class="el" href="classwpi_1_1_web_socket.html">wpi::WebSocket</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>WebSocket</b>(const WebSocket &amp;)=delete (defined in <a class="el" href="classwpi_1_1_web_socket.html">wpi::WebSocket</a>)</td><td class="entry"><a class="el" href="classwpi_1_1_web_socket.html">wpi::WebSocket</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>WebSocket</b>(WebSocket &amp;&amp;)=delete (defined in <a class="el" href="classwpi_1_1_web_socket.html">wpi::WebSocket</a>)</td><td class="entry"><a class="el" href="classwpi_1_1_web_socket.html">wpi::WebSocket</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>~WebSocket</b>() (defined in <a class="el" href="classwpi_1_1_web_socket.html">wpi::WebSocket</a>)</td><td class="entry"><a class="el" href="classwpi_1_1_web_socket.html">wpi::WebSocket</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classwpi_1_1_web_socket.html#a05c555e1888a64b4b42643809a860c30">Shutdown</a>()</td><td class="entry"><a class="el" href="classwpi_1_1_web_socket.html">wpi::WebSocket</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classwpi_1_1_web_socket.html#a767b9ee610b2638448e936302cd3b1b3">State</a> enum name</td><td class="entry"><a class="el" href="classwpi_1_1_web_socket.html">wpi::WebSocket</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classwpi_1_1_web_socket.html#af7d2b14ca14d8b5e7fa29fda1fc974ad">Terminate</a>(uint16_t code=1006, std::string_view reason=&quot;terminated&quot;)</td><td class="entry"><a class="el" href="classwpi_1_1_web_socket.html">wpi::WebSocket</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classwpi_1_1_web_socket.html#a52a220899cf024226a920822171780f0">text</a></td><td class="entry"><a class="el" href="classwpi_1_1_web_socket.html">wpi::WebSocket</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classwpi_1_1_web_socket.html#ab386ef356db98b06265b13eb3bba05fd">WebSocket</a>(uv::Stream &amp;stream, bool server, const private_init &amp;)</td><td class="entry"><a class="el" href="classwpi_1_1_web_socket.html">wpi::WebSocket</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classwpi_1_1_web_socket.html#a90d39961a858a8b924e9fa9de269b539">WebSocket</a>(const WebSocket &amp;)=delete</td><td class="entry"><a class="el" href="classwpi_1_1_web_socket.html">wpi::WebSocket</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classwpi_1_1_web_socket.html#afac10196362eb4251fb4b818c322e60b">WebSocket</a>(WebSocket &amp;&amp;)=delete</td><td class="entry"><a class="el" href="classwpi_1_1_web_socket.html">wpi::WebSocket</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classwpi_1_1_web_socket.html#a8bc1b5b8dc1585b9e98f25195012bc4a">~WebSocket</a>()</td><td class="entry"><a class="el" href="classwpi_1_1_web_socket.html">wpi::WebSocket</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:53 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:40 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

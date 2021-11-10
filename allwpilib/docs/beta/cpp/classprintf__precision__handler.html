@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -97,18 +97,75 @@ $(document).ready(function(){initNavTree('classprintf__precision__handler.html',
   <div class="headertitle"><div class="title">printf_precision_handler Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="printf_8h_source.html">/home/runner/work/allwpilib/allwpilib/wpiutil/src/main/native/fmtlib/include/fmt/printf.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0e1a27c78d694a25ad86c78df5b8cc87"><td class="memTemplParams" colspan="2"><a id="a0e1a27c78d694a25ad86c78df5b8cc87" name="a0e1a27c78d694a25ad86c78df5b8cc87"></a>
-template&lt;typename T , FMT_ENABLE_IF(std::is_integral&lt; T &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </td></tr>
-<tr class="memitem:a0e1a27c78d694a25ad86c78df5b8cc87"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator()</b> (T <a class="el" href="classvalue.html">value</a>)</td></tr>
+<tr class="memitem:a0e1a27c78d694a25ad86c78df5b8cc87"><td class="memTemplParams" colspan="2">template&lt;typename T , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(std::is_integral&lt; T &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </td></tr>
+<tr class="memitem:a0e1a27c78d694a25ad86c78df5b8cc87"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classprintf__precision__handler.html#a0e1a27c78d694a25ad86c78df5b8cc87">operator()</a> (T <a class="el" href="classvalue.html">value</a>)</td></tr>
 <tr class="separator:a0e1a27c78d694a25ad86c78df5b8cc87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac51c0a7807a8286c95b9119f735d046a"><td class="memTemplParams" colspan="2"><a id="ac51c0a7807a8286c95b9119f735d046a" name="ac51c0a7807a8286c95b9119f735d046a"></a>
-template&lt;typename T , FMT_ENABLE_IF(!std::is_integral&lt; T &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </td></tr>
-<tr class="memitem:ac51c0a7807a8286c95b9119f735d046a"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator()</b> (T)</td></tr>
+<tr class="memitem:ac51c0a7807a8286c95b9119f735d046a"><td class="memTemplParams" colspan="2">template&lt;typename T , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(!std::is_integral&lt; T &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </td></tr>
+<tr class="memitem:ac51c0a7807a8286c95b9119f735d046a"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classprintf__precision__handler.html#ac51c0a7807a8286c95b9119f735d046a">operator()</a> (T)</td></tr>
 <tr class="separator:ac51c0a7807a8286c95b9119f735d046a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0e1a27c78d694a25ad86c78df5b8cc87" name="a0e1a27c78d694a25ad86c78df5b8cc87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e1a27c78d694a25ad86c78df5b8cc87">&#9670;&nbsp;</a></span>operator()() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(std::is_integral&lt; T &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int printf_precision_handler::operator() </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac51c0a7807a8286c95b9119f735d046a" name="ac51c0a7807a8286c95b9119f735d046a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac51c0a7807a8286c95b9119f735d046a">&#9670;&nbsp;</a></span>operator()() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , <a class="el" href="core_8h.html#ab02671eb0d43965fe2957e844f427451">FMT_ENABLE_IF</a>(!std::is_integral&lt; T &gt;::<a class="el" href="classvalue.html">value</a>) &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int printf_precision_handler::operator() </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>/home/runner/work/allwpilib/allwpilib/wpiutil/src/main/native/fmtlib/include/fmt/<a class="el" href="printf_8h_source.html">printf.h</a></li>
 </ul>
@@ -118,7 +175,7 @@ template&lt;typename T , FMT_ENABLE_IF(!std::is_integral&lt; T &gt;::<a class="e
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classprintf__precision__handler.html">printf_precision_handler</a></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:45 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:32 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

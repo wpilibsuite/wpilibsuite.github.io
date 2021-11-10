@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('never__destroyed_8h_source.html',''); 
   <div class="headertitle"><div class="title">never_destroyed.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<a href="never__destroyed_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;new&gt;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;type_traits&gt;</span></div>
@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('never__destroyed_8h_source.html',''); 
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="drake__copyable_8h.html">drake/common/drake_copyable.h</a>&quot;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span>drake {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedrake.html">drake</a> {</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"></span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">/// Wraps an underlying type T such that its storage is a direct member field</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">/// of this object (i.e., without any indirection into the heap), but *unlike*</span></div>
@@ -190,10 +190,10 @@ $(document).ready(function(){initNavTree('never__destroyed_8h_source.html',''); 
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment"></span> </div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment">  /// Returns the underlying T reference.</span></div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="classdrake_1_1never__destroyed.html#a05ab0e6875219da80dd0f9b595ce92c1">   96</a></span><span class="comment"></span>  T&amp; <a class="code hl_function" href="classdrake_1_1never__destroyed.html#a05ab0e6875219da80dd0f9b595ce92c1">access</a>() { <span class="keywordflow">return</span> *<span class="keyword">reinterpret_cast&lt;</span>T*<span class="keyword">&gt;</span>(&amp;storage_); }</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  <span class="keyword">const</span> T&amp; <a class="code hl_function" href="classdrake_1_1never__destroyed.html#a05ab0e6875219da80dd0f9b595ce92c1">access</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> *<span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span>T*<span class="keyword">&gt;</span>(&amp;storage_); }</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="classdrake_1_1never__destroyed.html#af3c2a57f2ee3092e08b1a19af1722b7d">   97</a></span>  <span class="keyword">const</span> T&amp; <a class="code hl_function" href="classdrake_1_1never__destroyed.html#af3c2a57f2ee3092e08b1a19af1722b7d">access</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> *<span class="keyword">reinterpret_cast&lt;</span><span class="keyword">const </span>T*<span class="keyword">&gt;</span>(&amp;storage_); }</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  <span class="keyword">typename</span> std::aligned_storage&lt;<span class="keyword">sizeof</span>(T), <span class="keyword">alignof</span>(T)&gt;::type storage_;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  <span class="keyword">typename</span> std::aligned_storage&lt;<span class="keyword">sizeof</span>(T), <span class="keyword">alignof</span>(T)&gt;<a class="code hl_enumeration" href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">::type</a> storage_;</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>};</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>}  <span class="comment">// namespace drake</span></div>
@@ -201,15 +201,18 @@ $(document).ready(function(){initNavTree('never__destroyed_8h_source.html',''); 
 <div class="ttc" id="aclassdrake_1_1never__destroyed_html_a05ab0e6875219da80dd0f9b595ce92c1"><div class="ttname"><a href="classdrake_1_1never__destroyed.html#a05ab0e6875219da80dd0f9b595ce92c1">drake::never_destroyed::access</a></div><div class="ttdeci">T &amp; access()</div><div class="ttdoc">Returns the underlying T reference.</div><div class="ttdef"><b>Definition:</b> never_destroyed.h:96</div></div>
 <div class="ttc" id="aclassdrake_1_1never__destroyed_html_a51021f5918c56e9131c3764987a5b531"><div class="ttname"><a href="classdrake_1_1never__destroyed.html#a51021f5918c56e9131c3764987a5b531">drake::never_destroyed::~never_destroyed</a></div><div class="ttdeci">~never_destroyed()=default</div><div class="ttdoc">Does nothing. Guaranteed!</div></div>
 <div class="ttc" id="aclassdrake_1_1never__destroyed_html_a5a491c3d4e9d0b32cc4fb044efa44ecb"><div class="ttname"><a href="classdrake_1_1never__destroyed.html#a5a491c3d4e9d0b32cc4fb044efa44ecb">drake::never_destroyed::never_destroyed</a></div><div class="ttdeci">never_destroyed(Args &amp;&amp;... args)</div><div class="ttdoc">Passes the constructor arguments along to T using perfect forwarding.</div><div class="ttdef"><b>Definition:</b> never_destroyed.h:87</div></div>
+<div class="ttc" id="aclassdrake_1_1never__destroyed_html_af3c2a57f2ee3092e08b1a19af1722b7d"><div class="ttname"><a href="classdrake_1_1never__destroyed.html#af3c2a57f2ee3092e08b1a19af1722b7d">drake::never_destroyed::access</a></div><div class="ttdeci">const T &amp; access() const</div><div class="ttdef"><b>Definition:</b> never_destroyed.h:97</div></div>
+<div class="ttc" id="acore_8h_html_a7aead736a07eaf25623ad7bfa1f0ee2d"><div class="ttname"><a href="core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></div><div class="ttdeci">type</div><div class="ttdef"><b>Definition:</b> core.h:1048</div></div>
 <div class="ttc" id="adrake__copyable_8h_html"><div class="ttname"><a href="drake__copyable_8h.html">drake_copyable.h</a></div><div class="ttdoc">Provides careful macros to selectively enable or disable the special member functions for copy-constr...</div></div>
 <div class="ttc" id="adrake__copyable_8h_html_a3ee22789c29a46dddd6a7fd2b982731c"><div class="ttname"><a href="drake__copyable_8h.html#a3ee22789c29a46dddd6a7fd2b982731c">DRAKE_NO_COPY_NO_MOVE_NO_ASSIGN</a></div><div class="ttdeci">#define DRAKE_NO_COPY_NO_MOVE_NO_ASSIGN(Classname)</div><div class="ttdoc">DRAKE_NO_COPY_NO_MOVE_NO_ASSIGN deletes the special member functions for copy-construction,...</div><div class="ttdef"><b>Definition:</b> drake_copyable.h:33</div></div>
+<div class="ttc" id="anamespacedrake_html"><div class="ttname"><a href="namespacedrake.html">drake</a></div><div class="ttdef"><b>Definition:</b> discrete_algebraic_riccati_equation.h:9</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_3096fa119feaaf68acf7be783be3d79f.html">drake</a></li><li class="navelem"><a class="el" href="dir_533b608e0d491fadd970e32351d4ba56.html">common</a></li><li class="navelem"><b>never_destroyed.h</b></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:42 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="dir_3096fa119feaaf68acf7be783be3d79f.html">drake</a></li><li class="navelem"><a class="el" href="dir_533b608e0d491fadd970e32351d4ba56.html">common</a></li><li class="navelem"><a class="el" href="never__destroyed_8h.html">never_destroyed.h</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:29 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

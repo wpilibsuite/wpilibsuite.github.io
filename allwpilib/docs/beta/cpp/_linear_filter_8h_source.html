@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('_linear_filter_8h_source.html',''); in
   <div class="headertitle"><div class="title">LinearFilter.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
+<a href="_linear_filter_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Open Source Software; you can modify and/or share it under the terms of</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// the WPILib BSD license file in the root directory of this project.</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
@@ -106,15 +106,15 @@ $(document).ready(function(){initNavTree('_linear_filter_8h_source.html',''); in
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;stdexcept&gt;</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;wpi/circular_buffer.h&gt;</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;wpi/span.h&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;<a class="code" href="circular__buffer_8h.html">wpi/circular_buffer.h</a>&gt;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;<a class="code" href="span_8h.html">wpi/span.h</a>&gt;</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;Eigen/Core&quot;</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;Eigen/QR&quot;</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;units/time.h&quot;</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &quot;wpimath/MathShared.h&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="_core.html">Eigen/Core</a>&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="_q_r.html">Eigen/QR</a>&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;<a class="code" href="time_8h.html">units/time.h</a>&quot;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &quot;<a class="code" href="_math_shared_8h.html">wpimath/MathShared.h</a>&quot;</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">namespace </span>frc {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacefrc.html">frc</a> {</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"></span> </div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">/**</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"> * This class implements a linear, digital filter. All types of FIR and IIR</span></div>
@@ -176,21 +176,21 @@ $(document).ready(function(){initNavTree('_linear_filter_8h_source.html',''); in
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment">   * @param fbGains The &quot;feedback&quot; or IIR gains.</span></div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="classfrc_1_1_linear_filter.html#aea766a0ce1bd742f5884cbd82a839924">   82</a></span>  <a class="code hl_function" href="classfrc_1_1_linear_filter.html#aea766a0ce1bd742f5884cbd82a839924">LinearFilter</a>(<a class="code hl_class" href="classwpi_1_1span.html">wpi::span&lt;const double&gt;</a> ffGains, <a class="code hl_class" href="classwpi_1_1span.html">wpi::span&lt;const double&gt;</a> fbGains)</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>      : m_inputs(ffGains.size()),</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        m_outputs(fbGains.size()),</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        m_inputGains(ffGains.begin(), ffGains.end()),</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        m_outputGains(fbGains.begin(), fbGains.end()) {</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; ffGains.size(); ++i) {</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>      : m_inputs(ffGains.<a class="code hl_function" href="namespace_eigen_1_1internal.html#aa3c1588240009c3c17b3e477512b2ffd">size</a>()),</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        m_outputs(fbGains.<a class="code hl_function" href="namespace_eigen_1_1internal.html#aa3c1588240009c3c17b3e477512b2ffd">size</a>()),</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        m_inputGains(ffGains.<a class="code hl_function" href="namespaceghc_1_1filesystem.html#a5f795790830f15b8959bdf1af7b2dbad">begin</a>(), ffGains.<a class="code hl_variable" href="namespace_eigen_1_1placeholders.html#a24a00ff0f09137dcde6952ff29fb9f9d">end</a>()),</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        m_outputGains(fbGains.<a class="code hl_function" href="namespaceghc_1_1filesystem.html#a5f795790830f15b8959bdf1af7b2dbad">begin</a>(), fbGains.<a class="code hl_variable" href="namespace_eigen_1_1placeholders.html#a24a00ff0f09137dcde6952ff29fb9f9d">end</a>()) {</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; ffGains.<a class="code hl_function" href="classwpi_1_1span.html#aa8904b247558813df6c35011f5d5709b">size</a>(); ++i) {</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>      m_inputs.emplace_front(0.0);</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    }</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; fbGains.size(); ++i) {</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; fbGains.<a class="code hl_function" href="classwpi_1_1span.html#aa8904b247558813df6c35011f5d5709b">size</a>(); ++i) {</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>      m_outputs.emplace_front(0.0);</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    }</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keyword">static</span> <span class="keywordtype">int</span> instances = 0;</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    instances++;</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    wpi::math::MathSharedStore::ReportUsage(</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        wpi::math::MathUsageId::kFilter_Linear, 1);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <a class="code hl_function" href="classwpi_1_1math_1_1_math_shared_store.html#acb19ed2b71e5afb6abd2b09e183c873a">wpi::math::MathSharedStore::ReportUsage</a>(</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        <a class="code hl_enumvalue" href="namespacewpi_1_1math.html#af988a6ae82b74fd638848ac5824ad461a11e81cc0057710f794d85054d322a982">wpi::math::MathUsageId::kFilter_Linear</a>, 1);</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  }</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment"></span> </div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment">  /**</span></div>
@@ -221,7 +221,7 @@ $(document).ready(function(){initNavTree('_linear_filter_8h_source.html',''); in
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="classfrc_1_1_linear_filter.html#afdd3ea779ffc816aabef3c922f4652ac">  126</a></span>  <span class="keyword">static</span> <a class="code hl_class" href="classfrc_1_1_linear_filter.html">LinearFilter&lt;T&gt;</a> <a class="code hl_function" href="classfrc_1_1_linear_filter.html#afdd3ea779ffc816aabef3c922f4652ac">SinglePoleIIR</a>(<span class="keywordtype">double</span> timeConstant,</div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>                                       units::second_t period) {</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <span class="keywordtype">double</span> gain = <a class="code hl_function" href="group___unit_math.html#ga37ffdd257c05eb6916d62bfbbc0890e2">std::exp</a>(-period.to&lt;<span class="keywordtype">double</span>&gt;() / timeConstant);</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <span class="keywordtype">double</span> gain = std::exp(-period.value() / timeConstant);</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classfrc_1_1_linear_filter.html#aea766a0ce1bd742f5884cbd82a839924">LinearFilter</a>({1.0 - gain}, {-gain});</div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>  }</div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="comment"></span> </div>
@@ -240,7 +240,7 @@ $(document).ready(function(){initNavTree('_linear_filter_8h_source.html',''); in
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="comment">   *                     user.</span></div>
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno"><a class="line" href="classfrc_1_1_linear_filter.html#a5c4a4c49c259b7664b663606b42ec4e1">  146</a></span>  <span class="keyword">static</span> <a class="code hl_class" href="classfrc_1_1_linear_filter.html">LinearFilter&lt;T&gt;</a> <a class="code hl_function" href="classfrc_1_1_linear_filter.html#a5c4a4c49c259b7664b663606b42ec4e1">HighPass</a>(<span class="keywordtype">double</span> timeConstant, units::second_t period) {</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    <span class="keywordtype">double</span> gain = <a class="code hl_function" href="group___unit_math.html#ga37ffdd257c05eb6916d62bfbbc0890e2">std::exp</a>(-period.to&lt;<span class="keywordtype">double</span>&gt;() / timeConstant);</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    <span class="keywordtype">double</span> gain = std::exp(-period.value() / timeConstant);</div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classfrc_1_1_linear_filter.html#aea766a0ce1bd742f5884cbd82a839924">LinearFilter</a>({gain, -gain}, {-gain});</div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>  }</div>
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="comment"></span> </div>
@@ -306,11 +306,11 @@ $(document).ready(function(){initNavTree('_linear_filter_8h_source.html',''); in
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    <span class="keyword">static_assert</span>(Derivative &lt; Samples,</div>
 <div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>                  <span class="stringliteral">&quot;Order of derivative must be less than number of samples.&quot;</span>);</div>
 <div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span> </div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>    <a class="code hl_class" href="class_eigen_1_1_matrix.html">Eigen::Matrix&lt;double, Samples, Samples&gt;</a> S;</div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> row = 0; row &lt; Samples; ++row) {</div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> col = 0; col &lt; Samples; ++col) {</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>        <span class="keywordtype">double</span> s = 1 - Samples + col;</div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>        S(row, col) = std::pow(s, row);</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>    <a class="code hl_class" href="class_eigen_1_1_matrix.html">Eigen::Matrix&lt;double, Samples, Samples&gt;</a> <a class="code hl_define" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a>;</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code hl_function" href="_block_methods_8h.html#ace0220ddc85e95e756b362cda5bf17c9">row</a> = 0; <a class="code hl_function" href="_block_methods_8h.html#ace0220ddc85e95e756b362cda5bf17c9">row</a> &lt; Samples; ++<a class="code hl_function" href="_block_methods_8h.html#ace0220ddc85e95e756b362cda5bf17c9">row</a>) {</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code hl_function" href="_block_methods_8h.html#a00a58bf5d6022e451612db73ffbf4aef">col</a> = 0; <a class="code hl_function" href="_block_methods_8h.html#a00a58bf5d6022e451612db73ffbf4aef">col</a> &lt; Samples; ++<a class="code hl_function" href="_block_methods_8h.html#a00a58bf5d6022e451612db73ffbf4aef">col</a>) {</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>        <span class="keywordtype">double</span> s = 1 - Samples + <a class="code hl_function" href="_block_methods_8h.html#a00a58bf5d6022e451612db73ffbf4aef">col</a>;</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>        <a class="code hl_define" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a>(<a class="code hl_function" href="_block_methods_8h.html#ace0220ddc85e95e756b362cda5bf17c9">row</a>, <a class="code hl_function" href="_block_methods_8h.html#a00a58bf5d6022e451612db73ffbf4aef">col</a>) = <a class="code hl_function" href="namespaceunits_1_1math.html#a8bc48cef3fdfae35910a4bbe5011abcd">std::pow</a>(s, <a class="code hl_function" href="_block_methods_8h.html#ace0220ddc85e95e756b362cda5bf17c9">row</a>);</div>
 <div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>      }</div>
 <div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>    }</div>
 <div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span> </div>
@@ -321,7 +321,7 @@ $(document).ready(function(){initNavTree('_linear_filter_8h_source.html',''); in
 <div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>    }</div>
 <div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
 <div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>    Eigen::Vector&lt;double, Samples&gt; a =</div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>        S.householderQr().solve(d) / std::pow(period.to&lt;<span class="keywordtype">double</span>&gt;(), Derivative);</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>        <a class="code hl_define" href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a>.householderQr().solve(d) / <a class="code hl_function" href="namespaceunits_1_1math.html#a8bc48cef3fdfae35910a4bbe5011abcd">std::pow</a>(period.value(), Derivative);</div>
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
 <div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    <span class="comment">// Reverse gains list</span></div>
 <div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    std::vector&lt;double&gt; gains;</div>
@@ -336,8 +336,8 @@ $(document).ready(function(){initNavTree('_linear_filter_8h_source.html',''); in
 <div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span><span class="comment">   * Reset the filter state.</span></div>
 <div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00242" name="l00242"></a><span class="lineno"><a class="line" href="classfrc_1_1_linear_filter.html#ac197e7d5cea0a24d9729cc63bc0f122f">  242</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_linear_filter.html#ac197e7d5cea0a24d9729cc63bc0f122f">Reset</a>() {</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    std::fill(m_inputs.begin(), m_inputs.end(), T{0.0});</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    std::fill(m_outputs.begin(), m_outputs.end(), T{0.0});</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    <a class="code hl_function" href="format_8h.html#aa261c3477724224b49f5dd92aec0c03a">std::fill</a>(m_inputs.begin(), m_inputs.end(), T{0.0});</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    <a class="code hl_function" href="format_8h.html#aa261c3477724224b49f5dd92aec0c03a">std::fill</a>(m_outputs.begin(), m_outputs.end(), T{0.0});</div>
 <div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>  }</div>
 <div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span><span class="comment"></span> </div>
 <div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span><span class="comment">  /**</span></div>
@@ -392,6 +392,12 @@ $(document).ready(function(){initNavTree('_linear_filter_8h_source.html',''); in
 <div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>};</div>
 <div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span> </div>
 <div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>}  <span class="comment">// namespace frc</span></div>
+<div class="ttc" id="a_block_methods_8h_html_a00a58bf5d6022e451612db73ffbf4aef"><div class="ttname"><a href="_block_methods_8h.html#a00a58bf5d6022e451612db73ffbf4aef">col</a></div><div class="ttdeci">EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE ColXpr col(Index i)</div><div class="ttdoc">This is the const version of col().</div><div class="ttdef"><b>Definition:</b> BlockMethods.h:1097</div></div>
+<div class="ttc" id="a_block_methods_8h_html_ace0220ddc85e95e756b362cda5bf17c9"><div class="ttname"><a href="_block_methods_8h.html#ace0220ddc85e95e756b362cda5bf17c9">row</a></div><div class="ttdeci">EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE RowXpr row(Index i)</div><div class="ttdoc">This is the const version of row(). *‍/.</div><div class="ttdef"><b>Definition:</b> BlockMethods.h:1118</div></div>
+<div class="ttc" id="a_core_html"><div class="ttname"><a href="_core.html">Core</a></div></div>
+<div class="ttc" id="a_math_shared_8h_html"><div class="ttname"><a href="_math_shared_8h.html">MathShared.h</a></div></div>
+<div class="ttc" id="a_q_r_html"><div class="ttname"><a href="_q_r.html">QR</a></div></div>
+<div class="ttc" id="acircular__buffer_8h_html"><div class="ttname"><a href="circular__buffer_8h.html">circular_buffer.h</a></div></div>
 <div class="ttc" id="aclass_eigen_1_1_matrix_html"><div class="ttname"><a href="class_eigen_1_1_matrix.html">Eigen::Matrix</a></div><div class="ttdoc">The matrix class, also used for vectors and row-vectors.</div><div class="ttdef"><b>Definition:</b> Matrix.h:180</div></div>
 <div class="ttc" id="aclassfrc_1_1_linear_filter_html"><div class="ttname"><a href="classfrc_1_1_linear_filter.html">frc::LinearFilter</a></div><div class="ttdoc">This class implements a linear, digital filter.</div><div class="ttdef"><b>Definition:</b> LinearFilter.h:74</div></div>
 <div class="ttc" id="aclassfrc_1_1_linear_filter_html_a4ce233ce452caec0f7489ddbb12ca980"><div class="ttname"><a href="classfrc_1_1_linear_filter.html#a4ce233ce452caec0f7489ddbb12ca980">frc::LinearFilter::Calculate</a></div><div class="ttdeci">T Calculate(T input)</div><div class="ttdoc">Calculates the next value of the filter.</div><div class="ttdef"><b>Definition:</b> LinearFilter.h:254</div></div>
@@ -403,15 +409,26 @@ $(document).ready(function(){initNavTree('_linear_filter_8h_source.html',''); in
 <div class="ttc" id="aclassfrc_1_1_linear_filter_html_aea766a0ce1bd742f5884cbd82a839924"><div class="ttname"><a href="classfrc_1_1_linear_filter.html#aea766a0ce1bd742f5884cbd82a839924">frc::LinearFilter::LinearFilter</a></div><div class="ttdeci">LinearFilter(wpi::span&lt; const double &gt; ffGains, wpi::span&lt; const double &gt; fbGains)</div><div class="ttdoc">Create a linear FIR or IIR filter.</div><div class="ttdef"><b>Definition:</b> LinearFilter.h:82</div></div>
 <div class="ttc" id="aclassfrc_1_1_linear_filter_html_afdd3ea779ffc816aabef3c922f4652ac"><div class="ttname"><a href="classfrc_1_1_linear_filter.html#afdd3ea779ffc816aabef3c922f4652ac">frc::LinearFilter::SinglePoleIIR</a></div><div class="ttdeci">static LinearFilter&lt; T &gt; SinglePoleIIR(double timeConstant, units::second_t period)</div><div class="ttdoc">Creates a one-pole IIR low-pass filter of the form:  y[n] = (1 - gain) x[n] + gain y[n-1]  where gain...</div><div class="ttdef"><b>Definition:</b> LinearFilter.h:126</div></div>
 <div class="ttc" id="aclasswpi_1_1circular__buffer_html"><div class="ttname"><a href="classwpi_1_1circular__buffer.html">wpi::circular_buffer</a></div><div class="ttdoc">This is a simple circular buffer so we don't need to &quot;bucket brigade&quot; copy old values.</div><div class="ttdef"><b>Definition:</b> circular_buffer.h:17</div></div>
+<div class="ttc" id="aclasswpi_1_1math_1_1_math_shared_store_html_acb19ed2b71e5afb6abd2b09e183c873a"><div class="ttname"><a href="classwpi_1_1math_1_1_math_shared_store.html#acb19ed2b71e5afb6abd2b09e183c873a">wpi::math::MathSharedStore::ReportUsage</a></div><div class="ttdeci">static void ReportUsage(MathUsageId id, int count)</div><div class="ttdef"><b>Definition:</b> MathShared.h:70</div></div>
 <div class="ttc" id="aclasswpi_1_1span_html"><div class="ttname"><a href="classwpi_1_1span.html">wpi::span</a></div><div class="ttdef"><b>Definition:</b> span.h:114</div></div>
-<div class="ttc" id="agroup___unit_math_html_ga37ffdd257c05eb6916d62bfbbc0890e2"><div class="ttname"><a href="group___unit_math.html#ga37ffdd257c05eb6916d62bfbbc0890e2">units::math::exp</a></div><div class="ttdeci">dimensionless::scalar_t exp(const ScalarUnit x) noexcept</div><div class="ttdoc">Compute exponential function.</div><div class="ttdef"><b>Definition:</b> math.h:332</div></div>
+<div class="ttc" id="aclasswpi_1_1span_html_aa8904b247558813df6c35011f5d5709b"><div class="ttname"><a href="classwpi_1_1span.html#aa8904b247558813df6c35011f5d5709b">wpi::span::size</a></div><div class="ttdeci">constexpr size_type size() const noexcept</div><div class="ttdef"><b>Definition:</b> span.h:291</div></div>
+<div class="ttc" id="aformat_8h_html_aa261c3477724224b49f5dd92aec0c03a"><div class="ttname"><a href="format_8h.html#aa261c3477724224b49f5dd92aec0c03a">fill</a></div><div class="ttdeci">FMT_NOINLINE FMT_CONSTEXPR auto fill(OutputIt it, size_t n, const fill_t&lt; Char &gt; &amp;fill) -&gt; OutputIt</div><div class="ttdef"><b>Definition:</b> format.h:1264</div></div>
+<div class="ttc" id="anamespace_eigen_1_1internal_html_aa3c1588240009c3c17b3e477512b2ffd"><div class="ttname"><a href="namespace_eigen_1_1internal.html#aa3c1588240009c3c17b3e477512b2ffd">Eigen::internal::size</a></div><div class="ttdeci">EIGEN_CONSTEXPR Index size(const T &amp;x)</div><div class="ttdef"><b>Definition:</b> Meta.h:479</div></div>
+<div class="ttc" id="anamespace_eigen_1_1placeholders_html_a24a00ff0f09137dcde6952ff29fb9f9d"><div class="ttname"><a href="namespace_eigen_1_1placeholders.html#a24a00ff0f09137dcde6952ff29fb9f9d">Eigen::placeholders::end</a></div><div class="ttdeci">static EIGEN_DEPRECATED const end_t end</div><div class="ttdef"><b>Definition:</b> IndexedViewHelper.h:181</div></div>
+<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> VisionRunner.inc:9</div></div>
+<div class="ttc" id="anamespaceghc_1_1filesystem_html_a5f795790830f15b8959bdf1af7b2dbad"><div class="ttname"><a href="namespaceghc_1_1filesystem.html#a5f795790830f15b8959bdf1af7b2dbad">ghc::filesystem::begin</a></div><div class="ttdeci">GHC_FS_API directory_iterator begin(directory_iterator iter) noexcept</div><div class="ttdef"><b>Definition:</b> filesystem.hpp:5746</div></div>
+<div class="ttc" id="anamespaceunits_1_1math_html_a8bc48cef3fdfae35910a4bbe5011abcd"><div class="ttname"><a href="namespaceunits_1_1math.html#a8bc48cef3fdfae35910a4bbe5011abcd">units::math::pow</a></div><div class="ttdeci">auto pow(const UnitType &amp;value) noexcept -&gt; unit_t&lt; typename units::detail::power_of_unit&lt; power, typename units::traits::unit_t_traits&lt; UnitType &gt;::unit_type &gt;::type, typename units::traits::unit_t_traits&lt; UnitType &gt;::underlying_type, linear_scale &gt;</div><div class="ttdoc">computes the value of value raised to the power</div><div class="ttdef"><b>Definition:</b> base.h:2784</div></div>
+<div class="ttc" id="anamespacewpi_1_1math_html_af988a6ae82b74fd638848ac5824ad461a11e81cc0057710f794d85054d322a982"><div class="ttname"><a href="namespacewpi_1_1math.html#af988a6ae82b74fd638848ac5824ad461a11e81cc0057710f794d85054d322a982">wpi::math::MathUsageId::kFilter_Linear</a></div><div class="ttdeci">@ kFilter_Linear</div></div>
+<div class="ttc" id="aspan_8h_html"><div class="ttname"><a href="span_8h.html">span.h</a></div></div>
+<div class="ttc" id="atime_8h_html"><div class="ttname"><a href="time_8h.html">time.h</a></div></div>
+<div class="ttc" id="awpilibc_2src_2main_2native_2include_2frc_2_errors_8h_html_a82134794782845c50b9a960bb191ba30"><div class="ttname"><a href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a></div><div class="ttdeci">#define S(label, offset, message)</div><div class="ttdef"><b>Definition:</b> Errors.h:119</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_11fa3620b13e96ccc6d4bbc9ccdbdb01.html">filter</a></li><li class="navelem"><b>LinearFilter.h</b></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:42 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_11fa3620b13e96ccc6d4bbc9ccdbdb01.html">filter</a></li><li class="navelem"><a class="el" href="_linear_filter_8h.html">LinearFilter.h</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:29 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

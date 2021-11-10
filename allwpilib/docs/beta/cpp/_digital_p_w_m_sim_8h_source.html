@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('_digital_p_w_m_sim_8h_source.html','')
   <div class="headertitle"><div class="title">DigitalPWMSim.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
+<a href="_digital_p_w_m_sim_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Open Source Software; you can modify and/or share it under the terms of</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// the WPILib BSD license file in the root directory of this project.</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
@@ -102,9 +102,9 @@ $(document).ready(function(){initNavTree('_digital_p_w_m_sim_8h_source.html','')
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;frc/simulation/CallbackStore.h&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="_callback_store_8h.html">frc/simulation/CallbackStore.h</a>&quot;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span>frc {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacefrc.html">frc</a> {</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">class </span>DigitalOutput;</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
@@ -151,7 +151,7 @@ $(document).ready(function(){initNavTree('_digital_p_w_m_sim_8h_source.html','')
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">   * @return the CallbackStore object associated with this callback</span></div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_digital_p_w_m_sim.html#a5a09fdfd961613b2c09a8a5517b1eddb">   57</a></span>  [[nodiscard]] std::unique_ptr&lt;CallbackStore&gt; <a class="code hl_function" href="classfrc_1_1sim_1_1_digital_p_w_m_sim.html#a5a09fdfd961613b2c09a8a5517b1eddb">RegisterInitializedCallback</a>(</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>      NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>      <a class="code hl_typedef" href="namespacefrc_1_1sim.html#ae1c49733c190593b52d487461bac9083">NotifyCallback</a> callback, <span class="keywordtype">bool</span> initialNotify);</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment"></span> </div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">   * Check whether this PWM output has been initialized.</span></div>
@@ -175,7 +175,7 @@ $(document).ready(function(){initNavTree('_digital_p_w_m_sim_8h_source.html','')
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment">   * @return the CallbackStore object associated with this callback</span></div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_digital_p_w_m_sim.html#a3bb69cb51f4c0b1b8c417c6a00f11d1c">   81</a></span>  [[nodiscard]] std::unique_ptr&lt;CallbackStore&gt; <a class="code hl_function" href="classfrc_1_1sim_1_1_digital_p_w_m_sim.html#a3bb69cb51f4c0b1b8c417c6a00f11d1c">RegisterDutyCycleCallback</a>(</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>      NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>      <a class="code hl_typedef" href="namespacefrc_1_1sim.html#ae1c49733c190593b52d487461bac9083">NotifyCallback</a> callback, <span class="keywordtype">bool</span> initialNotify);</div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="comment"></span> </div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="comment">   * Read the duty cycle value.</span></div>
@@ -199,7 +199,7 @@ $(document).ready(function(){initNavTree('_digital_p_w_m_sim_8h_source.html','')
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment">   * @return the CallbackStore object associated with this callback</span></div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_digital_p_w_m_sim.html#a0f785d8fe75facb401bc07e8f3ee1e7e">  105</a></span>  [[nodiscard]] std::unique_ptr&lt;CallbackStore&gt; <a class="code hl_function" href="classfrc_1_1sim_1_1_digital_p_w_m_sim.html#a0f785d8fe75facb401bc07e8f3ee1e7e">RegisterPinCallback</a>(</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>      NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>      <a class="code hl_typedef" href="namespacefrc_1_1sim.html#ae1c49733c190593b52d487461bac9083">NotifyCallback</a> callback, <span class="keywordtype">bool</span> initialNotify);</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment"></span> </div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="comment">   * Check the pin number.</span></div>
@@ -221,12 +221,13 @@ $(document).ready(function(){initNavTree('_digital_p_w_m_sim_8h_source.html','')
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_digital_p_w_m_sim.html#a327b41dc3f1d37a2c3cdcd23ee1478e5">  125</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1sim_1_1_digital_p_w_m_sim.html#a327b41dc3f1d37a2c3cdcd23ee1478e5">ResetData</a>();</div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classfrc_1_1sim_1_1_digital_p_w_m_sim.html#a0e86f7e03ba68d8decd0ee1f95f37d38">DigitalPWMSim</a>(<span class="keywordtype">int</span> index) : m_index{index} {}</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classfrc_1_1sim_1_1_digital_p_w_m_sim.html#a0e86f7e03ba68d8decd0ee1f95f37d38">DigitalPWMSim</a>(<span class="keywordtype">int</span> index) : m_index{<a class="code hl_enumvalue" href="core_8h.html#a7fc0249f0f8ba720115d2430f5b86cbaa6a992d5529f459a44fee58c733255e86">index</a>} {}</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>  <span class="keywordtype">int</span> m_index;</div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>};</div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>}  <span class="comment">// namespace sim</span></div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>}  <span class="comment">// namespace frc</span></div>
+<div class="ttc" id="a_callback_store_8h_html"><div class="ttname"><a href="_callback_store_8h.html">CallbackStore.h</a></div></div>
 <div class="ttc" id="aclassfrc_1_1_digital_output_html"><div class="ttname"><a href="classfrc_1_1_digital_output.html">frc::DigitalOutput</a></div><div class="ttdoc">Class to write to digital outputs.</div><div class="ttdef"><b>Definition:</b> DigitalOutput.h:24</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1_digital_p_w_m_sim_html"><div class="ttname"><a href="classfrc_1_1sim_1_1_digital_p_w_m_sim.html">frc::sim::DigitalPWMSim</a></div><div class="ttdoc">Class to control a simulated digital PWM output.</div><div class="ttdef"><b>Definition:</b> DigitalPWMSim.h:23</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1_digital_p_w_m_sim_html_a0e86f7e03ba68d8decd0ee1f95f37d38"><div class="ttname"><a href="classfrc_1_1sim_1_1_digital_p_w_m_sim.html#a0e86f7e03ba68d8decd0ee1f95f37d38">frc::sim::DigitalPWMSim::DigitalPWMSim</a></div><div class="ttdeci">DigitalPWMSim(const DigitalOutput &amp;digitalOutput)</div><div class="ttdoc">Constructs from a DigitalOutput object.</div></div>
@@ -242,13 +243,16 @@ $(document).ready(function(){initNavTree('_digital_p_w_m_sim_8h_source.html','')
 <div class="ttc" id="aclassfrc_1_1sim_1_1_digital_p_w_m_sim_html_abc9a5bf74e5c6cfeee88af8750bb9acf"><div class="ttname"><a href="classfrc_1_1sim_1_1_digital_p_w_m_sim.html#abc9a5bf74e5c6cfeee88af8750bb9acf">frc::sim::DigitalPWMSim::GetInitialized</a></div><div class="ttdeci">bool GetInitialized() const</div><div class="ttdoc">Check whether this PWM output has been initialized.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1_digital_p_w_m_sim_html_ad267a1d1308d5d24c1765e2f9f45e224"><div class="ttname"><a href="classfrc_1_1sim_1_1_digital_p_w_m_sim.html#ad267a1d1308d5d24c1765e2f9f45e224">frc::sim::DigitalPWMSim::SetInitialized</a></div><div class="ttdeci">void SetInitialized(bool initialized)</div><div class="ttdoc">Define whether this PWM output has been initialized.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1_digital_p_w_m_sim_html_af9d898145f2d20d5cdcd3bae7cb03845"><div class="ttname"><a href="classfrc_1_1sim_1_1_digital_p_w_m_sim.html#af9d898145f2d20d5cdcd3bae7cb03845">frc::sim::DigitalPWMSim::GetPin</a></div><div class="ttdeci">int GetPin() const</div><div class="ttdoc">Check the pin number.</div></div>
+<div class="ttc" id="acore_8h_html_a7fc0249f0f8ba720115d2430f5b86cbaa6a992d5529f459a44fee58c733255e86"><div class="ttname"><a href="core_8h.html#a7fc0249f0f8ba720115d2430f5b86cbaa6a992d5529f459a44fee58c733255e86">arg_id_kind::index</a></div><div class="ttdeci">@ index</div></div>
+<div class="ttc" id="anamespacefrc_1_1sim_html_ae1c49733c190593b52d487461bac9083"><div class="ttname"><a href="namespacefrc_1_1sim.html#ae1c49733c190593b52d487461bac9083">frc::sim::NotifyCallback</a></div><div class="ttdeci">std::function&lt; void(std::string_view, const HAL_Value *)&gt; NotifyCallback</div><div class="ttdef"><b>Definition:</b> CallbackStore.h:14</div></div>
+<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> VisionRunner.inc:9</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_297dc702852f645e4b9e531dac2da27d.html">simulation</a></li><li class="navelem"><b>DigitalPWMSim.h</b></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:35 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_297dc702852f645e4b9e531dac2da27d.html">simulation</a></li><li class="navelem"><a class="el" href="_digital_p_w_m_sim_8h.html">DigitalPWMSim.h</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:20 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

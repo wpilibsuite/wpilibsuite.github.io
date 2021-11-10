@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('_robo_rio_sim_8h_source.html',''); ini
   <div class="headertitle"><div class="title">RoboRioSim.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
+<a href="_robo_rio_sim_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Open Source Software; you can modify and/or share it under the terms of</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// the WPILib BSD license file in the root directory of this project.</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
@@ -102,12 +102,12 @@ $(document).ready(function(){initNavTree('_robo_rio_sim_8h_source.html',''); ini
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;units/current.h&gt;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;units/voltage.h&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;<a class="code" href="current_8h.html">units/current.h</a>&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;<a class="code" href="voltage_8h.html">units/voltage.h</a>&gt;</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;frc/simulation/CallbackStore.h&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="_callback_store_8h.html">frc/simulation/CallbackStore.h</a>&quot;</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">namespace </span>frc::sim {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacefrc_1_1sim.html">frc::sim</a> {</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"></span> </div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">/**</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> * A utility class to control a simulated RoboRIO.</span></div>
@@ -122,7 +122,7 @@ $(document).ready(function(){initNavTree('_robo_rio_sim_8h_source.html',''); ini
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">   * @return the CallbackStore object associated with this callback</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  [[nodiscard]] <span class="keyword">static</span> std::unique_ptr&lt;CallbackStore&gt;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_robo_rio_sim.html#a50bf0eda9c29481f0a73e250a0159bdc">   29</a></span>  <a class="code hl_function" href="classfrc_1_1sim_1_1_robo_rio_sim.html#a50bf0eda9c29481f0a73e250a0159bdc">RegisterFPGAButtonCallback</a>(NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_robo_rio_sim.html#a50bf0eda9c29481f0a73e250a0159bdc">   29</a></span>  <a class="code hl_function" href="classfrc_1_1sim_1_1_robo_rio_sim.html#a50bf0eda9c29481f0a73e250a0159bdc">RegisterFPGAButtonCallback</a>(<a class="code hl_typedef" href="namespacefrc_1_1sim.html#ae1c49733c190593b52d487461bac9083">NotifyCallback</a> callback, <span class="keywordtype">bool</span> initialNotify);</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment"></span> </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">   * Query the state of the FPGA button.</span></div>
@@ -146,7 +146,7 @@ $(document).ready(function(){initNavTree('_robo_rio_sim_8h_source.html',''); ini
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">   * @return the CallbackStore object associated with this callback</span></div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  [[nodiscard]] <span class="keyword">static</span> std::unique_ptr&lt;CallbackStore&gt;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_robo_rio_sim.html#acd1e83fe32d0d2a5372d82a4bccf73f2">   53</a></span>  <a class="code hl_function" href="classfrc_1_1sim_1_1_robo_rio_sim.html#acd1e83fe32d0d2a5372d82a4bccf73f2">RegisterVInVoltageCallback</a>(NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_robo_rio_sim.html#acd1e83fe32d0d2a5372d82a4bccf73f2">   53</a></span>  <a class="code hl_function" href="classfrc_1_1sim_1_1_robo_rio_sim.html#acd1e83fe32d0d2a5372d82a4bccf73f2">RegisterVInVoltageCallback</a>(<a class="code hl_typedef" href="namespacefrc_1_1sim.html#ae1c49733c190593b52d487461bac9083">NotifyCallback</a> callback, <span class="keywordtype">bool</span> initialNotify);</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment"></span> </div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">   * Measure the Vin voltage.</span></div>
@@ -171,7 +171,7 @@ $(document).ready(function(){initNavTree('_robo_rio_sim_8h_source.html',''); ini
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment">   * @return the CallbackStore object associated with this callback</span></div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  [[nodiscard]] <span class="keyword">static</span> std::unique_ptr&lt;CallbackStore&gt;</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_robo_rio_sim.html#a12f94943f7936dbc7b1642dbd4a4e00e">   78</a></span>  <a class="code hl_function" href="classfrc_1_1sim_1_1_robo_rio_sim.html#a12f94943f7936dbc7b1642dbd4a4e00e">RegisterVInCurrentCallback</a>(NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_robo_rio_sim.html#a12f94943f7936dbc7b1642dbd4a4e00e">   78</a></span>  <a class="code hl_function" href="classfrc_1_1sim_1_1_robo_rio_sim.html#a12f94943f7936dbc7b1642dbd4a4e00e">RegisterVInCurrentCallback</a>(<a class="code hl_typedef" href="namespacefrc_1_1sim.html#ae1c49733c190593b52d487461bac9083">NotifyCallback</a> callback, <span class="keywordtype">bool</span> initialNotify);</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment"></span> </div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="comment">   * Measure the Vin current.</span></div>
@@ -196,7 +196,7 @@ $(document).ready(function(){initNavTree('_robo_rio_sim_8h_source.html',''); ini
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment">   * @return the CallbackStore object associated with this callback</span></div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  [[nodiscard]] <span class="keyword">static</span> std::unique_ptr&lt;CallbackStore&gt;</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_robo_rio_sim.html#a423a51fdfbefb84fe12fb292732294f9">  103</a></span>  <a class="code hl_function" href="classfrc_1_1sim_1_1_robo_rio_sim.html#a423a51fdfbefb84fe12fb292732294f9">RegisterUserVoltage6VCallback</a>(NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_robo_rio_sim.html#a423a51fdfbefb84fe12fb292732294f9">  103</a></span>  <a class="code hl_function" href="classfrc_1_1sim_1_1_robo_rio_sim.html#a423a51fdfbefb84fe12fb292732294f9">RegisterUserVoltage6VCallback</a>(<a class="code hl_typedef" href="namespacefrc_1_1sim.html#ae1c49733c190593b52d487461bac9083">NotifyCallback</a> callback, <span class="keywordtype">bool</span> initialNotify);</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment"></span> </div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="comment">   * Measure the 6V rail voltage.</span></div>
@@ -221,7 +221,7 @@ $(document).ready(function(){initNavTree('_robo_rio_sim_8h_source.html',''); ini
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="comment">   * @return the CallbackStore object associated with this callback</span></div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>  [[nodiscard]] <span class="keyword">static</span> std::unique_ptr&lt;CallbackStore&gt;</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_robo_rio_sim.html#af402b7bd2f647e148ad3999a4d8df2ec">  128</a></span>  <a class="code hl_function" href="classfrc_1_1sim_1_1_robo_rio_sim.html#af402b7bd2f647e148ad3999a4d8df2ec">RegisterUserCurrent6VCallback</a>(NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_robo_rio_sim.html#af402b7bd2f647e148ad3999a4d8df2ec">  128</a></span>  <a class="code hl_function" href="classfrc_1_1sim_1_1_robo_rio_sim.html#af402b7bd2f647e148ad3999a4d8df2ec">RegisterUserCurrent6VCallback</a>(<a class="code hl_typedef" href="namespacefrc_1_1sim.html#ae1c49733c190593b52d487461bac9083">NotifyCallback</a> callback, <span class="keywordtype">bool</span> initialNotify);</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="comment"></span> </div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="comment">   * Measure the 6V rail current.</span></div>
@@ -246,7 +246,7 @@ $(document).ready(function(){initNavTree('_robo_rio_sim_8h_source.html',''); ini
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="comment">   * @return the CallbackStore object associated with this callback</span></div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>  [[nodiscard]] <span class="keyword">static</span> std::unique_ptr&lt;CallbackStore&gt;</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_robo_rio_sim.html#ab5a82767c97b9c694b5cde1fadee9f6a">  153</a></span>  <a class="code hl_function" href="classfrc_1_1sim_1_1_robo_rio_sim.html#ab5a82767c97b9c694b5cde1fadee9f6a">RegisterUserActive6VCallback</a>(NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_robo_rio_sim.html#ab5a82767c97b9c694b5cde1fadee9f6a">  153</a></span>  <a class="code hl_function" href="classfrc_1_1sim_1_1_robo_rio_sim.html#ab5a82767c97b9c694b5cde1fadee9f6a">RegisterUserActive6VCallback</a>(<a class="code hl_typedef" href="namespacefrc_1_1sim.html#ae1c49733c190593b52d487461bac9083">NotifyCallback</a> callback, <span class="keywordtype">bool</span> initialNotify);</div>
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="comment"></span> </div>
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="comment">   * Get the 6V rail active state.</span></div>
@@ -271,7 +271,7 @@ $(document).ready(function(){initNavTree('_robo_rio_sim_8h_source.html',''); ini
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span><span class="comment">   * @return the CallbackStore object associated with this callback</span></div>
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>  [[nodiscard]] <span class="keyword">static</span> std::unique_ptr&lt;CallbackStore&gt;</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_robo_rio_sim.html#a0e4e59b217e53db07fc0eeb90b146376">  178</a></span>  <a class="code hl_function" href="classfrc_1_1sim_1_1_robo_rio_sim.html#a0e4e59b217e53db07fc0eeb90b146376">RegisterUserVoltage5VCallback</a>(NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_robo_rio_sim.html#a0e4e59b217e53db07fc0eeb90b146376">  178</a></span>  <a class="code hl_function" href="classfrc_1_1sim_1_1_robo_rio_sim.html#a0e4e59b217e53db07fc0eeb90b146376">RegisterUserVoltage5VCallback</a>(<a class="code hl_typedef" href="namespacefrc_1_1sim.html#ae1c49733c190593b52d487461bac9083">NotifyCallback</a> callback, <span class="keywordtype">bool</span> initialNotify);</div>
 <div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="comment"></span> </div>
 <div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span><span class="comment">   * Measure the 5V rail voltage.</span></div>
@@ -296,7 +296,7 @@ $(document).ready(function(){initNavTree('_robo_rio_sim_8h_source.html',''); ini
 <div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="comment">   * @return the CallbackStore object associated with this callback</span></div>
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>  [[nodiscard]] <span class="keyword">static</span> std::unique_ptr&lt;CallbackStore&gt;</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_robo_rio_sim.html#ad590d4fa0a4c56695deede1cc929ea56">  203</a></span>  <a class="code hl_function" href="classfrc_1_1sim_1_1_robo_rio_sim.html#ad590d4fa0a4c56695deede1cc929ea56">RegisterUserCurrent5VCallback</a>(NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_robo_rio_sim.html#ad590d4fa0a4c56695deede1cc929ea56">  203</a></span>  <a class="code hl_function" href="classfrc_1_1sim_1_1_robo_rio_sim.html#ad590d4fa0a4c56695deede1cc929ea56">RegisterUserCurrent5VCallback</a>(<a class="code hl_typedef" href="namespacefrc_1_1sim.html#ae1c49733c190593b52d487461bac9083">NotifyCallback</a> callback, <span class="keywordtype">bool</span> initialNotify);</div>
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="comment"></span> </div>
 <div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="comment">   * Measure the 5V rail current.</span></div>
@@ -321,7 +321,7 @@ $(document).ready(function(){initNavTree('_robo_rio_sim_8h_source.html',''); ini
 <div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span><span class="comment">   * @return the CallbackStore object associated with this callback</span></div>
 <div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>  [[nodiscard]] <span class="keyword">static</span> std::unique_ptr&lt;CallbackStore&gt;</div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_robo_rio_sim.html#aacc6640f2197474ea6c6f2c392b7d9a5">  228</a></span>  <a class="code hl_function" href="classfrc_1_1sim_1_1_robo_rio_sim.html#aacc6640f2197474ea6c6f2c392b7d9a5">RegisterUserActive5VCallback</a>(NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_robo_rio_sim.html#aacc6640f2197474ea6c6f2c392b7d9a5">  228</a></span>  <a class="code hl_function" href="classfrc_1_1sim_1_1_robo_rio_sim.html#aacc6640f2197474ea6c6f2c392b7d9a5">RegisterUserActive5VCallback</a>(<a class="code hl_typedef" href="namespacefrc_1_1sim.html#ae1c49733c190593b52d487461bac9083">NotifyCallback</a> callback, <span class="keywordtype">bool</span> initialNotify);</div>
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span><span class="comment"></span> </div>
 <div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span><span class="comment">   * Get the 5V rail active state.</span></div>
@@ -346,7 +346,7 @@ $(document).ready(function(){initNavTree('_robo_rio_sim_8h_source.html',''); ini
 <div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span><span class="comment">   * @return the CallbackStore object associated with this callback</span></div>
 <div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>  [[nodiscard]] <span class="keyword">static</span> std::unique_ptr&lt;CallbackStore&gt;</div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_robo_rio_sim.html#a9d18ef81ed18354a593f3c66f9489999">  253</a></span>  <a class="code hl_function" href="classfrc_1_1sim_1_1_robo_rio_sim.html#a9d18ef81ed18354a593f3c66f9489999">RegisterUserVoltage3V3Callback</a>(NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_robo_rio_sim.html#a9d18ef81ed18354a593f3c66f9489999">  253</a></span>  <a class="code hl_function" href="classfrc_1_1sim_1_1_robo_rio_sim.html#a9d18ef81ed18354a593f3c66f9489999">RegisterUserVoltage3V3Callback</a>(<a class="code hl_typedef" href="namespacefrc_1_1sim.html#ae1c49733c190593b52d487461bac9083">NotifyCallback</a> callback, <span class="keywordtype">bool</span> initialNotify);</div>
 <div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span><span class="comment"></span> </div>
 <div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span><span class="comment">   * Measure the 3.3V rail voltage.</span></div>
@@ -371,7 +371,7 @@ $(document).ready(function(){initNavTree('_robo_rio_sim_8h_source.html',''); ini
 <div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span><span class="comment">   * @return the CallbackStore object associated with this callback</span></div>
 <div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>  [[nodiscard]] <span class="keyword">static</span> std::unique_ptr&lt;CallbackStore&gt;</div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_robo_rio_sim.html#aef79d47353b903498aa66cbe4b2e87d1">  278</a></span>  <a class="code hl_function" href="classfrc_1_1sim_1_1_robo_rio_sim.html#aef79d47353b903498aa66cbe4b2e87d1">RegisterUserCurrent3V3Callback</a>(NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_robo_rio_sim.html#aef79d47353b903498aa66cbe4b2e87d1">  278</a></span>  <a class="code hl_function" href="classfrc_1_1sim_1_1_robo_rio_sim.html#aef79d47353b903498aa66cbe4b2e87d1">RegisterUserCurrent3V3Callback</a>(<a class="code hl_typedef" href="namespacefrc_1_1sim.html#ae1c49733c190593b52d487461bac9083">NotifyCallback</a> callback, <span class="keywordtype">bool</span> initialNotify);</div>
 <div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span><span class="comment"></span> </div>
 <div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span><span class="comment">   * Measure the 3.3V rail current.</span></div>
@@ -396,7 +396,7 @@ $(document).ready(function(){initNavTree('_robo_rio_sim_8h_source.html',''); ini
 <div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span><span class="comment">   * @return the CallbackStore object associated with this callback</span></div>
 <div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>  [[nodiscard]] <span class="keyword">static</span> std::unique_ptr&lt;CallbackStore&gt;</div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_robo_rio_sim.html#aad1025fa6022631dc8acb851678a8b04">  303</a></span>  <a class="code hl_function" href="classfrc_1_1sim_1_1_robo_rio_sim.html#aad1025fa6022631dc8acb851678a8b04">RegisterUserActive3V3Callback</a>(NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_robo_rio_sim.html#aad1025fa6022631dc8acb851678a8b04">  303</a></span>  <a class="code hl_function" href="classfrc_1_1sim_1_1_robo_rio_sim.html#aad1025fa6022631dc8acb851678a8b04">RegisterUserActive3V3Callback</a>(<a class="code hl_typedef" href="namespacefrc_1_1sim.html#ae1c49733c190593b52d487461bac9083">NotifyCallback</a> callback, <span class="keywordtype">bool</span> initialNotify);</div>
 <div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span><span class="comment"></span> </div>
 <div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span><span class="comment">   * Get the 3.3V rail active state.</span></div>
@@ -422,7 +422,7 @@ $(document).ready(function(){initNavTree('_robo_rio_sim_8h_source.html',''); ini
 <div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span><span class="comment">   * @return the CallbackStore object associated with this callback</span></div>
 <div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>  [[nodiscard]] <span class="keyword">static</span> std::unique_ptr&lt;CallbackStore&gt;</div>
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_robo_rio_sim.html#ad8bf21a6fac9b55a23cd100ab110344f">  329</a></span>  <a class="code hl_function" href="classfrc_1_1sim_1_1_robo_rio_sim.html#ad8bf21a6fac9b55a23cd100ab110344f">RegisterUserFaults6VCallback</a>(NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_robo_rio_sim.html#ad8bf21a6fac9b55a23cd100ab110344f">  329</a></span>  <a class="code hl_function" href="classfrc_1_1sim_1_1_robo_rio_sim.html#ad8bf21a6fac9b55a23cd100ab110344f">RegisterUserFaults6VCallback</a>(<a class="code hl_typedef" href="namespacefrc_1_1sim.html#ae1c49733c190593b52d487461bac9083">NotifyCallback</a> callback, <span class="keywordtype">bool</span> initialNotify);</div>
 <div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span><span class="comment"></span> </div>
 <div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span><span class="comment">   * Get the 6V rail number of faults.</span></div>
@@ -448,7 +448,7 @@ $(document).ready(function(){initNavTree('_robo_rio_sim_8h_source.html',''); ini
 <div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span><span class="comment">   * @return the CallbackStore object associated with this callback</span></div>
 <div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>  [[nodiscard]] <span class="keyword">static</span> std::unique_ptr&lt;CallbackStore&gt;</div>
-<div class="line"><a id="l00355" name="l00355"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_robo_rio_sim.html#a90fefcd8c1b00e9cb3dc6a332cda8d7f">  355</a></span>  <a class="code hl_function" href="classfrc_1_1sim_1_1_robo_rio_sim.html#a90fefcd8c1b00e9cb3dc6a332cda8d7f">RegisterUserFaults5VCallback</a>(NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_robo_rio_sim.html#a90fefcd8c1b00e9cb3dc6a332cda8d7f">  355</a></span>  <a class="code hl_function" href="classfrc_1_1sim_1_1_robo_rio_sim.html#a90fefcd8c1b00e9cb3dc6a332cda8d7f">RegisterUserFaults5VCallback</a>(<a class="code hl_typedef" href="namespacefrc_1_1sim.html#ae1c49733c190593b52d487461bac9083">NotifyCallback</a> callback, <span class="keywordtype">bool</span> initialNotify);</div>
 <div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span><span class="comment"></span> </div>
 <div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span><span class="comment">   * Get the 5V rail number of faults.</span></div>
@@ -474,7 +474,7 @@ $(document).ready(function(){initNavTree('_robo_rio_sim_8h_source.html',''); ini
 <div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span><span class="comment">   * @return the CallbackStore object associated with this callback</span></div>
 <div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>  [[nodiscard]] <span class="keyword">static</span> std::unique_ptr&lt;CallbackStore&gt;</div>
-<div class="line"><a id="l00381" name="l00381"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_robo_rio_sim.html#a3bf071166dad9347255dc56181375336">  381</a></span>  <a class="code hl_function" href="classfrc_1_1sim_1_1_robo_rio_sim.html#a3bf071166dad9347255dc56181375336">RegisterUserFaults3V3Callback</a>(NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_robo_rio_sim.html#a3bf071166dad9347255dc56181375336">  381</a></span>  <a class="code hl_function" href="classfrc_1_1sim_1_1_robo_rio_sim.html#a3bf071166dad9347255dc56181375336">RegisterUserFaults3V3Callback</a>(<a class="code hl_typedef" href="namespacefrc_1_1sim.html#ae1c49733c190593b52d487461bac9083">NotifyCallback</a> callback, <span class="keywordtype">bool</span> initialNotify);</div>
 <div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span><span class="comment"></span> </div>
 <div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span><span class="comment">   * Get the 3.3V rail number of faults.</span></div>
@@ -498,7 +498,7 @@ $(document).ready(function(){initNavTree('_robo_rio_sim_8h_source.html',''); ini
 <div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span><span class="comment">   * @return the CallbackStore object associated with this callback</span></div>
 <div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span>  [[nodiscard]] <span class="keyword">static</span> std::unique_ptr&lt;CallbackStore&gt;</div>
-<div class="line"><a id="l00405" name="l00405"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_robo_rio_sim.html#a538a191872c8bdef5835ce8b009ffc48">  405</a></span>  <a class="code hl_function" href="classfrc_1_1sim_1_1_robo_rio_sim.html#a538a191872c8bdef5835ce8b009ffc48">RegisterBrownoutVoltageCallback</a>(NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
+<div class="line"><a id="l00405" name="l00405"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_robo_rio_sim.html#a538a191872c8bdef5835ce8b009ffc48">  405</a></span>  <a class="code hl_function" href="classfrc_1_1sim_1_1_robo_rio_sim.html#a538a191872c8bdef5835ce8b009ffc48">RegisterBrownoutVoltageCallback</a>(<a class="code hl_typedef" href="namespacefrc_1_1sim.html#ae1c49733c190593b52d487461bac9083">NotifyCallback</a> callback, <span class="keywordtype">bool</span> initialNotify);</div>
 <div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span><span class="comment"></span> </div>
 <div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00408" name="l00408"></a><span class="lineno">  408</span><span class="comment">   * Measure the brownout voltage.</span></div>
@@ -520,6 +520,7 @@ $(document).ready(function(){initNavTree('_robo_rio_sim_8h_source.html',''); ini
 <div class="line"><a id="l00424" name="l00424"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_robo_rio_sim.html#a3b3ecab62f5d4b647e5d3c5af688f34c">  424</a></span>  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1sim_1_1_robo_rio_sim.html#a3b3ecab62f5d4b647e5d3c5af688f34c">ResetData</a>();</div>
 <div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span>};</div>
 <div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span>}  <span class="comment">// namespace frc::sim</span></div>
+<div class="ttc" id="a_callback_store_8h_html"><div class="ttname"><a href="_callback_store_8h.html">CallbackStore.h</a></div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1_robo_rio_sim_html"><div class="ttname"><a href="classfrc_1_1sim_1_1_robo_rio_sim.html">frc::sim::RoboRioSim</a></div><div class="ttdoc">A utility class to control a simulated RoboRIO.</div><div class="ttdef"><b>Definition:</b> RoboRioSim.h:19</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1_robo_rio_sim_html_a0b7085c3a384ea50ba6429e80badaa18"><div class="ttname"><a href="classfrc_1_1sim_1_1_robo_rio_sim.html#a0b7085c3a384ea50ba6429e80badaa18">frc::sim::RoboRioSim::GetUserCurrent3V3</a></div><div class="ttdeci">static units::ampere_t GetUserCurrent3V3()</div><div class="ttdoc">Measure the 3.3V rail current.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1_robo_rio_sim_html_a0e4e59b217e53db07fc0eeb90b146376"><div class="ttname"><a href="classfrc_1_1sim_1_1_robo_rio_sim.html#a0e4e59b217e53db07fc0eeb90b146376">frc::sim::RoboRioSim::RegisterUserVoltage5VCallback</a></div><div class="ttdeci">static std::unique_ptr&lt; CallbackStore &gt; RegisterUserVoltage5VCallback(NotifyCallback callback, bool initialNotify)</div><div class="ttdoc">Register a callback to be run whenever the 5V rail voltage changes.</div></div>
@@ -570,13 +571,17 @@ $(document).ready(function(){initNavTree('_robo_rio_sim_8h_source.html',''); ini
 <div class="ttc" id="aclassfrc_1_1sim_1_1_robo_rio_sim_html_ae52266ac688763a744b00bb65206559e"><div class="ttname"><a href="classfrc_1_1sim_1_1_robo_rio_sim.html#ae52266ac688763a744b00bb65206559e">frc::sim::RoboRioSim::SetUserCurrent3V3</a></div><div class="ttdeci">static void SetUserCurrent3V3(units::ampere_t userCurrent3V3)</div><div class="ttdoc">Define the 3.3V rail current.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1_robo_rio_sim_html_aef79d47353b903498aa66cbe4b2e87d1"><div class="ttname"><a href="classfrc_1_1sim_1_1_robo_rio_sim.html#aef79d47353b903498aa66cbe4b2e87d1">frc::sim::RoboRioSim::RegisterUserCurrent3V3Callback</a></div><div class="ttdeci">static std::unique_ptr&lt; CallbackStore &gt; RegisterUserCurrent3V3Callback(NotifyCallback callback, bool initialNotify)</div><div class="ttdoc">Register a callback to be run whenever the 3.3V rail current changes.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1_robo_rio_sim_html_af402b7bd2f647e148ad3999a4d8df2ec"><div class="ttname"><a href="classfrc_1_1sim_1_1_robo_rio_sim.html#af402b7bd2f647e148ad3999a4d8df2ec">frc::sim::RoboRioSim::RegisterUserCurrent6VCallback</a></div><div class="ttdeci">static std::unique_ptr&lt; CallbackStore &gt; RegisterUserCurrent6VCallback(NotifyCallback callback, bool initialNotify)</div><div class="ttdoc">Register a callback to be run whenever the 6V rail current changes.</div></div>
+<div class="ttc" id="acurrent_8h_html"><div class="ttname"><a href="current_8h.html">current.h</a></div></div>
+<div class="ttc" id="anamespacefrc_1_1sim_html"><div class="ttname"><a href="namespacefrc_1_1sim.html">frc::sim</a></div><div class="ttdef"><b>Definition:</b> DutyCycleSim.h:15</div></div>
+<div class="ttc" id="anamespacefrc_1_1sim_html_ae1c49733c190593b52d487461bac9083"><div class="ttname"><a href="namespacefrc_1_1sim.html#ae1c49733c190593b52d487461bac9083">frc::sim::NotifyCallback</a></div><div class="ttdeci">std::function&lt; void(std::string_view, const HAL_Value *)&gt; NotifyCallback</div><div class="ttdef"><b>Definition:</b> CallbackStore.h:14</div></div>
+<div class="ttc" id="avoltage_8h_html"><div class="ttname"><a href="voltage_8h.html">voltage.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_297dc702852f645e4b9e531dac2da27d.html">simulation</a></li><li class="navelem"><b>RoboRioSim.h</b></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:35 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_297dc702852f645e4b9e531dac2da27d.html">simulation</a></li><li class="navelem"><a class="el" href="_robo_rio_sim_8h.html">RoboRioSim.h</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:20 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

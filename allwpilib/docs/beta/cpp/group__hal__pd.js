@@ -1,5 +1,6 @@
 var group__hal__pd =
 [
+    [ "HAL_DEFAULT_POWER_DISTRIBUTION_MODULE", "group__hal__pd.html#ga95c5a465ac3f05fc8446c3c4be7eba58", null ],
     [ "HAL_CheckPowerDistributionChannel", "group__hal__pd.html#gabd7460fdcfb9efddf6d63de888eb8d72", null ],
     [ "HAL_CheckPowerDistributionModule", "group__hal__pd.html#ga4ed7fea46dbcafe5f8bdfef300e2e9d8", null ],
     [ "HAL_CleanPowerDistribution", "group__hal__pd.html#ga0d6a4aaa5e2f0ec3547bd5a587da9f39", null ],

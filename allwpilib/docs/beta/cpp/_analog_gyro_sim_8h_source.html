@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('_analog_gyro_sim_8h_source.html',''); 
   <div class="headertitle"><div class="title">AnalogGyroSim.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
+<a href="_analog_gyro_sim_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Open Source Software; you can modify and/or share it under the terms of</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// the WPILib BSD license file in the root directory of this project.</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
@@ -102,11 +102,11 @@ $(document).ready(function(){initNavTree('_analog_gyro_sim_8h_source.html',''); 
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;frc/simulation/CallbackStore.h&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="_callback_store_8h.html">frc/simulation/CallbackStore.h</a>&quot;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span>frc {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacefrc.html">frc</a> {</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">class </span>AnalogGyro;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">class </span><a class="code hl_enumvalue" href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9a3b0b83bda8c31fbd566c0bfb1c320c5f">AnalogGyro</a>;</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span>sim {</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"></span> </div>
@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('_analog_gyro_sim_8h_source.html',''); 
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">   * @return the CallbackStore object associated with this callback</span></div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_analog_gyro_sim.html#adfe5e6a8b17f0a6a22d5ba7d85f64c70">   43</a></span>  [[nodiscard]] std::unique_ptr&lt;CallbackStore&gt; <a class="code hl_function" href="classfrc_1_1sim_1_1_analog_gyro_sim.html#adfe5e6a8b17f0a6a22d5ba7d85f64c70">RegisterAngleCallback</a>(</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>      NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>      <a class="code hl_typedef" href="namespacefrc_1_1sim.html#ae1c49733c190593b52d487461bac9083">NotifyCallback</a> callback, <span class="keywordtype">bool</span> initialNotify);</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment"></span> </div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">   * Get the current angle of the gyro.</span></div>
@@ -161,7 +161,7 @@ $(document).ready(function(){initNavTree('_analog_gyro_sim_8h_source.html',''); 
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">   * @return the CallbackStore object associated with this callback</span></div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_analog_gyro_sim.html#a6c2a362f70a88e6f16a613cebc4e501b">   67</a></span>  [[nodiscard]] std::unique_ptr&lt;CallbackStore&gt; <a class="code hl_function" href="classfrc_1_1sim_1_1_analog_gyro_sim.html#a6c2a362f70a88e6f16a613cebc4e501b">RegisterRateCallback</a>(</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>      NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>      <a class="code hl_typedef" href="namespacefrc_1_1sim.html#ae1c49733c190593b52d487461bac9083">NotifyCallback</a> callback, <span class="keywordtype">bool</span> initialNotify);</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment"></span> </div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">   * Get the rate of angle change on this gyro.</span></div>
@@ -186,7 +186,7 @@ $(document).ready(function(){initNavTree('_analog_gyro_sim_8h_source.html',''); 
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment">   * @return the CallbackStore object associated with this callback</span></div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_analog_gyro_sim.html#aa9d039efee9f3ad82c8a300f5236676e">   92</a></span>  [[nodiscard]] std::unique_ptr&lt;CallbackStore&gt; <a class="code hl_function" href="classfrc_1_1sim_1_1_analog_gyro_sim.html#aa9d039efee9f3ad82c8a300f5236676e">RegisterInitializedCallback</a>(</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>      NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>      <a class="code hl_typedef" href="namespacefrc_1_1sim.html#ae1c49733c190593b52d487461bac9083">NotifyCallback</a> callback, <span class="keywordtype">bool</span> initialNotify);</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="comment"></span> </div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment">   * Check if the gyro is initialized.</span></div>
@@ -212,6 +212,7 @@ $(document).ready(function(){initNavTree('_analog_gyro_sim_8h_source.html',''); 
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>};</div>
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>}  <span class="comment">// namespace sim</span></div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>}  <span class="comment">// namespace frc</span></div>
+<div class="ttc" id="a_callback_store_8h_html"><div class="ttname"><a href="_callback_store_8h.html">CallbackStore.h</a></div></div>
 <div class="ttc" id="aclassfrc_1_1_analog_gyro_html"><div class="ttname"><a href="classfrc_1_1_analog_gyro.html">frc::AnalogGyro</a></div><div class="ttdoc">Use a rate gyro to return the robots heading relative to a starting position.</div><div class="ttdef"><b>Definition:</b> AnalogGyro.h:34</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1_analog_gyro_sim_html"><div class="ttname"><a href="classfrc_1_1sim_1_1_analog_gyro_sim.html">frc::sim::AnalogGyroSim</a></div><div class="ttdoc">Class to control a simulated analog gyro.</div><div class="ttdef"><b>Definition:</b> AnalogGyroSim.h:20</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1_analog_gyro_sim_html_a0107f092c5f8e225d9466acb614d168e"><div class="ttname"><a href="classfrc_1_1sim_1_1_analog_gyro_sim.html#a0107f092c5f8e225d9466acb614d168e">frc::sim::AnalogGyroSim::GetInitialized</a></div><div class="ttdeci">bool GetInitialized() const</div><div class="ttdoc">Check if the gyro is initialized.</div></div>
@@ -226,13 +227,16 @@ $(document).ready(function(){initNavTree('_analog_gyro_sim_8h_source.html',''); 
 <div class="ttc" id="aclassfrc_1_1sim_1_1_analog_gyro_sim_html_aa9d039efee9f3ad82c8a300f5236676e"><div class="ttname"><a href="classfrc_1_1sim_1_1_analog_gyro_sim.html#aa9d039efee9f3ad82c8a300f5236676e">frc::sim::AnalogGyroSim::RegisterInitializedCallback</a></div><div class="ttdeci">std::unique_ptr&lt; CallbackStore &gt; RegisterInitializedCallback(NotifyCallback callback, bool initialNotify)</div><div class="ttdoc">Register a callback on whether the gyro is initialized.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1_analog_gyro_sim_html_ad978afa708d67f13d2b97dc4df487b95"><div class="ttname"><a href="classfrc_1_1sim_1_1_analog_gyro_sim.html#ad978afa708d67f13d2b97dc4df487b95">frc::sim::AnalogGyroSim::AnalogGyroSim</a></div><div class="ttdeci">AnalogGyroSim(int channel)</div><div class="ttdoc">Constructs from an analog input channel number.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1_analog_gyro_sim_html_adfe5e6a8b17f0a6a22d5ba7d85f64c70"><div class="ttname"><a href="classfrc_1_1sim_1_1_analog_gyro_sim.html#adfe5e6a8b17f0a6a22d5ba7d85f64c70">frc::sim::AnalogGyroSim::RegisterAngleCallback</a></div><div class="ttdeci">std::unique_ptr&lt; CallbackStore &gt; RegisterAngleCallback(NotifyCallback callback, bool initialNotify)</div><div class="ttdoc">Register a callback on the angle.</div></div>
+<div class="ttc" id="anamespacefrc_1_1sim_html_ae1c49733c190593b52d487461bac9083"><div class="ttname"><a href="namespacefrc_1_1sim.html#ae1c49733c190593b52d487461bac9083">frc::sim::NotifyCallback</a></div><div class="ttdeci">std::function&lt; void(std::string_view, const HAL_Value *)&gt; NotifyCallback</div><div class="ttdef"><b>Definition:</b> CallbackStore.h:14</div></div>
+<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> VisionRunner.inc:9</div></div>
+<div class="ttc" id="anamespacehal_html_a2e846f89b7ea1bed682347804f2c9cc9a3b0b83bda8c31fbd566c0bfb1c320c5f"><div class="ttname"><a href="namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9a3b0b83bda8c31fbd566c0bfb1c320c5f">hal::HAL_HandleEnum::AnalogGyro</a></div><div class="ttdeci">@ AnalogGyro</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_297dc702852f645e4b9e531dac2da27d.html">simulation</a></li><li class="navelem"><b>AnalogGyroSim.h</b></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:35 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_297dc702852f645e4b9e531dac2da27d.html">simulation</a></li><li class="navelem"><a class="el" href="_analog_gyro_sim_8h.html">AnalogGyroSim.h</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:20 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

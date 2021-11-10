@@ -1,18 +1,30 @@
 var class_eigen_1_1_array =
 [
+    [ "Base", "class_eigen_1_1_array.html#a2482d54f7eb9b935156dadc665fe8b65", null ],
+    [ "PlainObject", "class_eigen_1_1_array.html#a8d4364c2b1f0a8268868e979c6116b7e", null ],
     [ "Array", "class_eigen_1_1_array.html#a715524a79accfdc70dbc8cab1d7086ae", null ],
+    [ "Array", "class_eigen_1_1_array.html#abcac99438e63d02a939727997e32b4ec", null ],
+    [ "Array", "class_eigen_1_1_array.html#a3dd2f09f5133f31d434a98d60a48ede3", null ],
+    [ "Array", "class_eigen_1_1_array.html#ae2c43c4d02176b5dcd1037fde7eaa97e", null ],
     [ "Array", "class_eigen_1_1_array.html#adefff5a86babb44c362bd799c1cda965", null ],
     [ "Array", "class_eigen_1_1_array.html#ad4d80ab64904b4b4e8e59d8a96f659b4", null ],
     [ "Array", "class_eigen_1_1_array.html#a085268ca25404d706e7b8f4d33f15513", null ],
     [ "Array", "class_eigen_1_1_array.html#a7a08ebcc8bef6c9df21becd525792240", null ],
+    [ "base", "class_eigen_1_1_array.html#a375cda7db7420fb6b3b2b76b1ffcb1bf", null ],
+    [ "base", "class_eigen_1_1_array.html#af32b10168e17983d9472b41b9784de0c", null ],
     [ "coeff", "class_eigen_1_1_array.html#aef6a8cde4adb3cd2fc23bf7ff3a1556c", null ],
     [ "coeff", "class_eigen_1_1_array.html#aa5a84a35bf7dc5c42abf4a3e9fde222c", null ],
     [ "coeffRef", "class_eigen_1_1_array.html#a0b2393f9c1501d4e01190b7767cc3211", null ],
     [ "coeffRef", "class_eigen_1_1_array.html#a1e115ef49def4d387bc2ae8ffee559fb", null ],
     [ "coeffRef", "class_eigen_1_1_array.html#ad6ab241435124b11a3921df752d28daf", null ],
     [ "coeffRef", "class_eigen_1_1_array.html#ae44be1764295d434bea1afca54fab261", null ],
+    [ "innerStride", "class_eigen_1_1_array.html#ae7d5821cb9b30cd114cfb828d13bd66c", null ],
     [ "operator=", "class_eigen_1_1_array.html#ae66feb02ee3f49be402f5ca6f11def82", null ],
     [ "operator=", "class_eigen_1_1_array.html#a4315b21797cd7daadfd84b95253714b1", null ],
     [ "operator=", "class_eigen_1_1_array.html#a141aa836385af5bd17b49eda1510cbf2", null ],
-    [ "operator=", "class_eigen_1_1_array.html#a6c1ab1cec484ed9ef2dbfcebf95f4fc1", null ]
+    [ "operator=", "class_eigen_1_1_array.html#a6c1ab1cec484ed9ef2dbfcebf95f4fc1", null ],
+    [ "outerStride", "class_eigen_1_1_array.html#a44cdf79a00bf7ab0db90a5eefa7c45d0", null ],
+    [ "internal::conservative_resize_like_impl", "class_eigen_1_1_array.html#a398280cc73160285ad14db73a8e85c94", null ],
+    [ "internal::matrix_swap_impl", "class_eigen_1_1_array.html#aab39995bda190be6874c21bc93040422", null ],
+    [ "m_storage", "class_eigen_1_1_array.html#a1f9b65493a9a3eb3375c3177a080a5e1", null ]
 ];

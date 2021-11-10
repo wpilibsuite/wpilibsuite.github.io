@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('tree_8h_source.html',''); initResizabl
   <div class="headertitle"><div class="title">tree.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*-</span></div>
+<a href="tree_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*-</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * Copyright 2002 Niels Provos &lt;provos@citi.umich.edu&gt;</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> * All rights reserved.</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> *</span></div>
@@ -126,7 +126,7 @@ $(document).ready(function(){initNavTree('tree_8h_source.html',''); initResizabl
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor"># if __GNUC__</span></div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#  define UV__UNUSED __attribute__((unused))</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor"># else</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#  define UV__UNUSED</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="tree_8h.html#a3f87458f081ce465acba54b9d04798dc">   33</a></span><span class="preprocessor">#  define UV__UNUSED</span></div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor"># endif</span></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
@@ -157,55 +157,55 @@ $(document).ready(function(){initNavTree('tree_8h_source.html',''); initResizabl
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment"> * The maximum height of a red-black tree is 2lg (n+1).</span></div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment"> */</span></div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">#define SPLAY_HEAD(name, type)                                                \</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="tree_8h.html#ae44db866f1d8a9963860666f057d40db">   64</a></span><span class="preprocessor">#define SPLAY_HEAD(name, type)                                                \</span></div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="preprocessor">struct name {                                                                 \</span></div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">  struct type *sph_root; </span><span class="comment">/* root of the tree */</span><span class="preprocessor">                               \</span></div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="preprocessor">}</span></div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="preprocessor">#define SPLAY_INITIALIZER(root)                                               \</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="tree_8h.html#a02c068eb5f4b900668ceb4e380a0da4d">   69</a></span><span class="preprocessor">#define SPLAY_INITIALIZER(root)                                               \</span></div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="preprocessor">  { NULL }</span></div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="preprocessor">#define SPLAY_INIT(root) do {                                                 \</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="tree_8h.html#acfe6ca037b56bc1115fbfb4fbe709525">   72</a></span><span class="preprocessor">#define SPLAY_INIT(root) do {                                                 \</span></div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="preprocessor">  (root)-&gt;sph_root = NULL;                                                    \</span></div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="preprocessor">} while (</span><span class="comment">/*CONSTCOND*/</span><span class="preprocessor"> 0)</span></div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="preprocessor">#define SPLAY_ENTRY(type)                                                     \</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="tree_8h.html#a763ee00a62d0b20f98cbc53f0df500cc">   76</a></span><span class="preprocessor">#define SPLAY_ENTRY(type)                                                     \</span></div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="preprocessor">struct {                                                                      \</span></div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="preprocessor">  struct type *spe_left;          </span><span class="comment">/* left element */</span><span class="preprocessor">                          \</span></div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="preprocessor">  struct type *spe_right;         </span><span class="comment">/* right element */</span><span class="preprocessor">                         \</span></div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="preprocessor">}</span></div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="preprocessor">#define SPLAY_LEFT(elm, field)    (elm)-&gt;field.spe_left</span></div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="preprocessor">#define SPLAY_RIGHT(elm, field)   (elm)-&gt;field.spe_right</span></div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="preprocessor">#define SPLAY_ROOT(head)          (head)-&gt;sph_root</span></div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="preprocessor">#define SPLAY_EMPTY(head)         (SPLAY_ROOT(head) == NULL)</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="tree_8h.html#a1182dffa92cc3c64fa473f9b9856214f">   82</a></span><span class="preprocessor">#define SPLAY_LEFT(elm, field)    (elm)-&gt;field.spe_left</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="tree_8h.html#a97d791c8cf32170965daf98eb12ce9e8">   83</a></span><span class="preprocessor">#define SPLAY_RIGHT(elm, field)   (elm)-&gt;field.spe_right</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="tree_8h.html#a5f6b92ec0c0ceccee94990625fa9a9ab">   84</a></span><span class="preprocessor">#define SPLAY_ROOT(head)          (head)-&gt;sph_root</span></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="tree_8h.html#acd5a15948e7307457700a1e70af1baf0">   85</a></span><span class="preprocessor">#define SPLAY_EMPTY(head)         (SPLAY_ROOT(head) == NULL)</span></div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="comment">/* SPLAY_ROTATE_{LEFT,RIGHT} expect that tmp hold SPLAY_{RIGHT,LEFT} */</span></div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="preprocessor">#define SPLAY_ROTATE_RIGHT(head, tmp, field) do {                             \</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno"><a class="line" href="tree_8h.html#aa65d98a3b7e75564fe55a31408cddb34">   88</a></span><span class="preprocessor">#define SPLAY_ROTATE_RIGHT(head, tmp, field) do {                             \</span></div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="preprocessor">  SPLAY_LEFT((head)-&gt;sph_root, field) = SPLAY_RIGHT(tmp, field);              \</span></div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="preprocessor">  SPLAY_RIGHT(tmp, field) = (head)-&gt;sph_root;                                 \</span></div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="preprocessor">  (head)-&gt;sph_root = tmp;                                                     \</span></div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="preprocessor">} while (</span><span class="comment">/*CONSTCOND*/</span><span class="preprocessor"> 0)</span></div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="preprocessor">#define SPLAY_ROTATE_LEFT(head, tmp, field) do {                              \</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="tree_8h.html#a2791cb4e69e346621ce0f5f5b6f072ac">   94</a></span><span class="preprocessor">#define SPLAY_ROTATE_LEFT(head, tmp, field) do {                              \</span></div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="preprocessor">  SPLAY_RIGHT((head)-&gt;sph_root, field) = SPLAY_LEFT(tmp, field);              \</span></div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="preprocessor">  SPLAY_LEFT(tmp, field) = (head)-&gt;sph_root;                                  \</span></div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="preprocessor">  (head)-&gt;sph_root = tmp;                                                     \</span></div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="preprocessor">} while (</span><span class="comment">/*CONSTCOND*/</span><span class="preprocessor"> 0)</span></div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="preprocessor">#define SPLAY_LINKLEFT(head, tmp, field) do {                                 \</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno"><a class="line" href="tree_8h.html#a0831038ecc96179cf79c87a963be1254">  100</a></span><span class="preprocessor">#define SPLAY_LINKLEFT(head, tmp, field) do {                                 \</span></div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="preprocessor">  SPLAY_LEFT(tmp, field) = (head)-&gt;sph_root;                                  \</span></div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="preprocessor">  tmp = (head)-&gt;sph_root;                                                     \</span></div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="preprocessor">  (head)-&gt;sph_root = SPLAY_LEFT((head)-&gt;sph_root, field);                     \</span></div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="preprocessor">} while (</span><span class="comment">/*CONSTCOND*/</span><span class="preprocessor"> 0)</span></div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="preprocessor">#define SPLAY_LINKRIGHT(head, tmp, field) do {                                \</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="tree_8h.html#a7d93f3c61541d0af520bf5bc5d9e0247">  106</a></span><span class="preprocessor">#define SPLAY_LINKRIGHT(head, tmp, field) do {                                \</span></div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="preprocessor">  SPLAY_RIGHT(tmp, field) = (head)-&gt;sph_root;                                 \</span></div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="preprocessor">  tmp = (head)-&gt;sph_root;                                                     \</span></div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="preprocessor">  (head)-&gt;sph_root = SPLAY_RIGHT((head)-&gt;sph_root, field);                    \</span></div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="preprocessor">} while (</span><span class="comment">/*CONSTCOND*/</span><span class="preprocessor"> 0)</span></div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="preprocessor">#define SPLAY_ASSEMBLE(head, node, left, right, field) do {                   \</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="tree_8h.html#aab316feeb1d3c7058bae7cc3b55f1a14">  112</a></span><span class="preprocessor">#define SPLAY_ASSEMBLE(head, node, left, right, field) do {                   \</span></div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="preprocessor">  SPLAY_RIGHT(left, field) = SPLAY_LEFT((head)-&gt;sph_root, field);             \</span></div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="preprocessor">  SPLAY_LEFT(right, field) = SPLAY_RIGHT((head)-&gt;sph_root, field);            \</span></div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="preprocessor">  SPLAY_LEFT((head)-&gt;sph_root, field) = SPLAY_RIGHT(node, field);             \</span></div>
@@ -214,7 +214,7 @@ $(document).ready(function(){initNavTree('tree_8h_source.html',''); initResizabl
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment">/* Generates prototypes and inline functions */</span></div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="preprocessor">#define SPLAY_PROTOTYPE(name, type, field, cmp)                               \</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="tree_8h.html#a75ee3833aa4387ba31979341c84b6954">  121</a></span><span class="preprocessor">#define SPLAY_PROTOTYPE(name, type, field, cmp)                               \</span></div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="preprocessor">void name##_SPLAY(struct name *, struct type *);                              \</span></div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="preprocessor">void name##_SPLAY_MINMAX(struct name *, int);                                 \</span></div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="preprocessor">struct type *name##_SPLAY_INSERT(struct name *, struct type *);               \</span></div>
@@ -256,7 +256,7 @@ $(document).ready(function(){initNavTree('tree_8h_source.html',''); initResizabl
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="comment">/* Main splay operation.</span></div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span><span class="comment"> * Moves node close to the key of elm to top</span></div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><span class="preprocessor">#define SPLAY_GENERATE(name, type, field, cmp)                                \</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno"><a class="line" href="tree_8h.html#a16173671c451dceee32260e5e7661d48">  163</a></span><span class="preprocessor">#define SPLAY_GENERATE(name, type, field, cmp)                                \</span></div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="preprocessor">struct type *                                                                 \</span></div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span><span class="preprocessor">name##_SPLAY_INSERT(struct name *head, struct type *elm)                      \</span></div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span><span class="preprocessor">{                                                                             \</span></div>
@@ -371,39 +371,39 @@ $(document).ready(function(){initNavTree('tree_8h_source.html',''); initResizabl
 <div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span><span class="preprocessor">    }                                                                         \</span></div>
 <div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span><span class="preprocessor">  }                                                                           \</span></div>
 <div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span><span class="preprocessor">  SPLAY_ASSEMBLE(head, &amp;__node, __left, __right, field);                      \</span></div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span><span class="preprocessor">}</span></div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span> </div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno"><a class="line" href="tree_8h.html#acd35c28f4261c9857cdd7670cf0eee1e">  278</a></span><span class="preprocessor">}</span></div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno"><a class="line" href="tree_8h.html#ab0d99fe18af2c95116d74d1df5f3ac8b">  279</a></span> </div>
 <div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span><span class="preprocessor">#define SPLAY_NEGINF  -1</span></div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span><span class="preprocessor">#define SPLAY_INF     1</span></div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span> </div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span><span class="preprocessor">#define SPLAY_INSERT(name, x, y)  name##_SPLAY_INSERT(x, y)</span></div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span><span class="preprocessor">#define SPLAY_REMOVE(name, x, y)  name##_SPLAY_REMOVE(x, y)</span></div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span><span class="preprocessor">#define SPLAY_FIND(name, x, y)    name##_SPLAY_FIND(x, y)</span></div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno"><a class="line" href="tree_8h.html#ac1282629fe287a75eda9a08c34ff4009">  281</a></span><span class="preprocessor">#define SPLAY_INF     1</span></div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno"><a class="line" href="tree_8h.html#adae97bc6106b301bd4bf94a7ee0f8a3a">  282</a></span> </div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno"><a class="line" href="tree_8h.html#a640590d10a440909b2f4d0c6c5fd4ac7">  283</a></span><span class="preprocessor">#define SPLAY_INSERT(name, x, y)  name##_SPLAY_INSERT(x, y)</span></div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno"><a class="line" href="tree_8h.html#a27d2f6ae2430eb964191f478963895c4">  284</a></span><span class="preprocessor">#define SPLAY_REMOVE(name, x, y)  name##_SPLAY_REMOVE(x, y)</span></div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno"><a class="line" href="tree_8h.html#a44260dfd30bc1e4021cade34124f48a2">  285</a></span><span class="preprocessor">#define SPLAY_FIND(name, x, y)    name##_SPLAY_FIND(x, y)</span></div>
 <div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span><span class="preprocessor">#define SPLAY_NEXT(name, x, y)    name##_SPLAY_NEXT(x, y)</span></div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span><span class="preprocessor">#define SPLAY_MIN(name, x)        (SPLAY_EMPTY(x) ? NULL                      \</span></div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno"><a class="line" href="tree_8h.html#a52c3d63bf730d8735892aa9eeb516b3e">  287</a></span><span class="preprocessor">#define SPLAY_MIN(name, x)        (SPLAY_EMPTY(x) ? NULL                      \</span></div>
 <div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span><span class="preprocessor">                                  : name##_SPLAY_MIN_MAX(x, SPLAY_NEGINF))</span></div>
 <div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span><span class="preprocessor">#define SPLAY_MAX(name, x)        (SPLAY_EMPTY(x) ? NULL                      \</span></div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span><span class="preprocessor">                                  : name##_SPLAY_MIN_MAX(x, SPLAY_INF))</span></div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno"><a class="line" href="tree_8h.html#a715a87d3912dd5875b5f36621efa89c5">  290</a></span><span class="preprocessor">                                  : name##_SPLAY_MIN_MAX(x, SPLAY_INF))</span></div>
 <div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span> </div>
 <div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span><span class="preprocessor">#define SPLAY_FOREACH(x, name, head)                                          \</span></div>
 <div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span><span class="preprocessor">  for ((x) = SPLAY_MIN(name, head);                                           \</span></div>
 <div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span><span class="preprocessor">       (x) != NULL;                                                           \</span></div>
 <div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span><span class="preprocessor">       (x) = SPLAY_NEXT(name, head, x))</span></div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span> </div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno"><a class="line" href="tree_8h.html#a8036fa6f14fe429545b9228ec92e026f">  296</a></span> </div>
 <div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span><span class="comment">/* Macros that define a red-black tree */</span></div>
 <div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span><span class="preprocessor">#define RB_HEAD(name, type)                                                   \</span></div>
 <div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span><span class="preprocessor">struct name {                                                                 \</span></div>
 <div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span><span class="preprocessor">  struct type *rbh_root; </span><span class="comment">/* root of the tree */</span><span class="preprocessor">                               \</span></div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span><span class="preprocessor">}</span></div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno"><a class="line" href="tree_8h.html#afbea90211a1872bdaf4f86d23dbf5cfd">  301</a></span><span class="preprocessor">}</span></div>
 <div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span> </div>
 <div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span><span class="preprocessor">#define RB_INITIALIZER(root)                                                  \</span></div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span><span class="preprocessor">  { NULL }</span></div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno"><a class="line" href="tree_8h.html#aeebbb1dbfd0312bdf51a4b3a44eaa525">  304</a></span><span class="preprocessor">  { NULL }</span></div>
 <div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span> </div>
 <div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span><span class="preprocessor">#define RB_INIT(root) do {                                                    \</span></div>
 <div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span><span class="preprocessor">  (root)-&gt;rbh_root = NULL;                                                    \</span></div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span><span class="preprocessor">} while (</span><span class="comment">/*CONSTCOND*/</span><span class="preprocessor"> 0)</span></div>
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span> </div>
-<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span><span class="preprocessor">#define RB_BLACK  0</span></div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno"><a class="line" href="tree_8h.html#a9776c921e63661755728d05e55484d0b">  308</a></span><span class="preprocessor">} while (</span><span class="comment">/*CONSTCOND*/</span><span class="preprocessor"> 0)</span></div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno"><a class="line" href="tree_8h.html#aebf73e751fbdd4b625db308dbf04d0d2">  309</a></span> </div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno"><a class="line" href="tree_8h.html#a9c7350c93a42f7c017405c95676a3092">  310</a></span><span class="preprocessor">#define RB_BLACK  0</span></div>
 <div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span><span class="preprocessor">#define RB_RED    1</span></div>
 <div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span><span class="preprocessor">#define RB_ENTRY(type)                                                        \</span></div>
 <div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span><span class="preprocessor">struct {                                                                      \</span></div>
@@ -411,29 +411,29 @@ $(document).ready(function(){initNavTree('tree_8h_source.html',''); initResizabl
 <div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span><span class="preprocessor">  struct type *rbe_right;       </span><span class="comment">/* right element */</span><span class="preprocessor">                           \</span></div>
 <div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span><span class="preprocessor">  struct type *rbe_parent;      </span><span class="comment">/* parent element */</span><span class="preprocessor">                          \</span></div>
 <div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span><span class="preprocessor">  int rbe_color;                </span><span class="comment">/* node color */</span><span class="preprocessor">                              \</span></div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span><span class="preprocessor">}</span></div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span> </div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span><span class="preprocessor">#define RB_LEFT(elm, field)     (elm)-&gt;field.rbe_left</span></div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span><span class="preprocessor">#define RB_RIGHT(elm, field)    (elm)-&gt;field.rbe_right</span></div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span><span class="preprocessor">#define RB_PARENT(elm, field)   (elm)-&gt;field.rbe_parent</span></div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span><span class="preprocessor">#define RB_COLOR(elm, field)    (elm)-&gt;field.rbe_color</span></div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno"><a class="line" href="tree_8h.html#a3357266d7e28607f499cbb049adac9d0">  318</a></span><span class="preprocessor">}</span></div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno"><a class="line" href="tree_8h.html#a40d5d980a9da19c9347fdd4560ea999a">  319</a></span> </div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno"><a class="line" href="tree_8h.html#a18413e366064c57a09478aa84f56677f">  320</a></span><span class="preprocessor">#define RB_LEFT(elm, field)     (elm)-&gt;field.rbe_left</span></div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno"><a class="line" href="tree_8h.html#a6c34afb761c6aa84cef8aba54b46b032">  321</a></span><span class="preprocessor">#define RB_RIGHT(elm, field)    (elm)-&gt;field.rbe_right</span></div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno"><a class="line" href="tree_8h.html#aebfe9f6de31553dc906d5910b6b604b0">  322</a></span><span class="preprocessor">#define RB_PARENT(elm, field)   (elm)-&gt;field.rbe_parent</span></div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno"><a class="line" href="tree_8h.html#a0d85aa035345c2d3f890bf6bc602c068">  323</a></span><span class="preprocessor">#define RB_COLOR(elm, field)    (elm)-&gt;field.rbe_color</span></div>
 <div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span><span class="preprocessor">#define RB_ROOT(head)           (head)-&gt;rbh_root</span></div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span><span class="preprocessor">#define RB_EMPTY(head)          (RB_ROOT(head) == NULL)</span></div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno"><a class="line" href="tree_8h.html#a22ac8df3f28664e8d6bc70032eb32380">  325</a></span><span class="preprocessor">#define RB_EMPTY(head)          (RB_ROOT(head) == NULL)</span></div>
 <div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span> </div>
 <div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span><span class="preprocessor">#define RB_SET(elm, parent, field) do {                                       \</span></div>
 <div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span><span class="preprocessor">  RB_PARENT(elm, field) = parent;                                             \</span></div>
 <div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span><span class="preprocessor">  RB_LEFT(elm, field) = RB_RIGHT(elm, field) = NULL;                          \</span></div>
 <div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span><span class="preprocessor">  RB_COLOR(elm, field) = RB_RED;                                              \</span></div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span><span class="preprocessor">} while (</span><span class="comment">/*CONSTCOND*/</span><span class="preprocessor"> 0)</span></div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno"><a class="line" href="tree_8h.html#ae18c494fbc0b1f9331f35d585078d10d">  331</a></span><span class="preprocessor">} while (</span><span class="comment">/*CONSTCOND*/</span><span class="preprocessor"> 0)</span></div>
 <div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span> </div>
 <div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span><span class="preprocessor">#define RB_SET_BLACKRED(black, red, field) do {                               \</span></div>
 <div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span><span class="preprocessor">  RB_COLOR(black, field) = RB_BLACK;                                          \</span></div>
 <div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span><span class="preprocessor">  RB_COLOR(red, field) = RB_RED;                                              \</span></div>
 <div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span><span class="preprocessor">} while (</span><span class="comment">/*CONSTCOND*/</span><span class="preprocessor"> 0)</span></div>
-<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span> </div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno"><a class="line" href="tree_8h.html#aa8a785bf6106b1926889c882ec093f15">  337</a></span> </div>
 <div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span><span class="preprocessor">#ifndef RB_AUGMENT</span></div>
 <div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span><span class="preprocessor">#define RB_AUGMENT(x)  do {} while (0)</span></div>
-<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno"><a class="line" href="tree_8h.html#a3d320c9b1b009d30ea8bbeae6d2cb738">  340</a></span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span> </div>
 <div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span><span class="preprocessor">#define RB_ROTATE_LEFT(head, elm, tmp, field) do {                            \</span></div>
 <div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span><span class="preprocessor">  (tmp) = RB_RIGHT(elm, field);                                               \</span></div>
@@ -453,7 +453,7 @@ $(document).ready(function(){initNavTree('tree_8h_source.html',''); initResizabl
 <div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span><span class="preprocessor">  RB_AUGMENT(tmp);                                                            \</span></div>
 <div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span><span class="preprocessor">  if ((RB_PARENT(tmp, field)))                                                \</span></div>
 <div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span><span class="preprocessor">    RB_AUGMENT(RB_PARENT(tmp, field));                                        \</span></div>
-<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span><span class="preprocessor">} while (</span><span class="comment">/*CONSTCOND*/</span><span class="preprocessor"> 0)</span></div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno"><a class="line" href="tree_8h.html#a08ae7198a66e4d3548016cf07ca1c0fb">  360</a></span><span class="preprocessor">} while (</span><span class="comment">/*CONSTCOND*/</span><span class="preprocessor"> 0)</span></div>
 <div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span> </div>
 <div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span><span class="preprocessor">#define RB_ROTATE_RIGHT(head, elm, tmp, field) do {                           \</span></div>
 <div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span><span class="preprocessor">  (tmp) = RB_LEFT(elm, field);                                                \</span></div>
@@ -474,11 +474,11 @@ $(document).ready(function(){initNavTree('tree_8h_source.html',''); initResizabl
 <div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span><span class="preprocessor">  if ((RB_PARENT(tmp, field)))                                                \</span></div>
 <div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span><span class="preprocessor">    RB_AUGMENT(RB_PARENT(tmp, field));                                        \</span></div>
 <div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span><span class="preprocessor">} while (</span><span class="comment">/*CONSTCOND*/</span><span class="preprocessor"> 0)</span></div>
-<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span> </div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno"><a class="line" href="tree_8h.html#a4f31c441ab7126be5ca1b0eda203d2cd">  381</a></span> </div>
 <div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span><span class="comment">/* Generates prototypes and inline functions */</span></div>
-<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span><span class="preprocessor">#define  RB_PROTOTYPE(name, type, field, cmp)                                 \</span></div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno"><a class="line" href="tree_8h.html#ad8163b022562664ed2daafad8c601e5a">  383</a></span><span class="preprocessor">#define  RB_PROTOTYPE(name, type, field, cmp)                                 \</span></div>
 <div class="line"><a id="l00384" name="l00384"></a><span class="lineno">  384</span><span class="preprocessor">  RB_PROTOTYPE_INTERNAL(name, type, field, cmp,)</span></div>
-<div class="line"><a id="l00385" name="l00385"></a><span class="lineno">  385</span><span class="preprocessor">#define  RB_PROTOTYPE_STATIC(name, type, field, cmp)                          \</span></div>
+<div class="line"><a id="l00385" name="l00385"></a><span class="lineno"><a class="line" href="tree_8h.html#ac24e599cbd9ee9d860282816ac736a07">  385</a></span><span class="preprocessor">#define  RB_PROTOTYPE_STATIC(name, type, field, cmp)                          \</span></div>
 <div class="line"><a id="l00386" name="l00386"></a><span class="lineno">  386</span><span class="preprocessor">  RB_PROTOTYPE_INTERNAL(name, type, field, cmp, UV__UNUSED static)</span></div>
 <div class="line"><a id="l00387" name="l00387"></a><span class="lineno">  387</span><span class="preprocessor">#define RB_PROTOTYPE_INTERNAL(name, type, field, cmp, attr)                   \</span></div>
 <div class="line"><a id="l00388" name="l00388"></a><span class="lineno">  388</span><span class="preprocessor">attr void name##_RB_INSERT_COLOR(struct name *, struct type *);               \</span></div>
@@ -493,11 +493,11 @@ $(document).ready(function(){initNavTree('tree_8h_source.html',''); initResizabl
 <div class="line"><a id="l00397" name="l00397"></a><span class="lineno">  397</span><span class="preprocessor">                                                                              \</span></div>
 <div class="line"><a id="l00398" name="l00398"></a><span class="lineno">  398</span><span class="preprocessor"></span> </div>
 <div class="line"><a id="l00399" name="l00399"></a><span class="lineno">  399</span><span class="comment">/* Main rb operation.</span></div>
-<div class="line"><a id="l00400" name="l00400"></a><span class="lineno">  400</span><span class="comment"> * Moves node close to the key of elm to top</span></div>
+<div class="line"><a id="l00400" name="l00400"></a><span class="lineno"><a class="line" href="tree_8h.html#aef943a700d479a15f16744ba51dd1141">  400</a></span><span class="comment"> * Moves node close to the key of elm to top</span></div>
 <div class="line"><a id="l00401" name="l00401"></a><span class="lineno">  401</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00402" name="l00402"></a><span class="lineno">  402</span><span class="preprocessor">#define  RB_GENERATE(name, type, field, cmp)                                  \</span></div>
+<div class="line"><a id="l00402" name="l00402"></a><span class="lineno"><a class="line" href="tree_8h.html#a70771841c3ed0487d47ed426bc6b089e">  402</a></span><span class="preprocessor">#define  RB_GENERATE(name, type, field, cmp)                                  \</span></div>
 <div class="line"><a id="l00403" name="l00403"></a><span class="lineno">  403</span><span class="preprocessor">  RB_GENERATE_INTERNAL(name, type, field, cmp,)</span></div>
-<div class="line"><a id="l00404" name="l00404"></a><span class="lineno">  404</span><span class="preprocessor">#define  RB_GENERATE_STATIC(name, type, field, cmp)                           \</span></div>
+<div class="line"><a id="l00404" name="l00404"></a><span class="lineno"><a class="line" href="tree_8h.html#a01d155a5dadb714960941b7c5bfb1d50">  404</a></span><span class="preprocessor">#define  RB_GENERATE_STATIC(name, type, field, cmp)                           \</span></div>
 <div class="line"><a id="l00405" name="l00405"></a><span class="lineno">  405</span><span class="preprocessor">  RB_GENERATE_INTERNAL(name, type, field, cmp, UV__UNUSED static)</span></div>
 <div class="line"><a id="l00406" name="l00406"></a><span class="lineno">  406</span><span class="preprocessor">#define RB_GENERATE_INTERNAL(name, type, field, cmp, attr)                    \</span></div>
 <div class="line"><a id="l00407" name="l00407"></a><span class="lineno">  407</span><span class="preprocessor">attr void                                                                     \</span></div>
@@ -817,44 +817,44 @@ $(document).ready(function(){initNavTree('tree_8h_source.html',''); initResizabl
 <div class="line"><a id="l00721" name="l00721"></a><span class="lineno">  721</span><span class="preprocessor">      tmp = RB_RIGHT(tmp, field);                                             \</span></div>
 <div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span><span class="preprocessor">  }                                                                           \</span></div>
 <div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span><span class="preprocessor">  return (parent);                                                            \</span></div>
-<div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span><span class="preprocessor">}</span></div>
-<div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span> </div>
+<div class="line"><a id="l00724" name="l00724"></a><span class="lineno"><a class="line" href="tree_8h.html#a2b26b7c6b32e00d863fd1ae346fb3bb5">  724</a></span><span class="preprocessor">}</span></div>
+<div class="line"><a id="l00725" name="l00725"></a><span class="lineno"><a class="line" href="tree_8h.html#a763f4baa123753e9fc466ea178229715">  725</a></span> </div>
 <div class="line"><a id="l00726" name="l00726"></a><span class="lineno">  726</span><span class="preprocessor">#define RB_NEGINF   -1</span></div>
-<div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span><span class="preprocessor">#define RB_INF      1</span></div>
-<div class="line"><a id="l00728" name="l00728"></a><span class="lineno">  728</span> </div>
-<div class="line"><a id="l00729" name="l00729"></a><span class="lineno">  729</span><span class="preprocessor">#define RB_INSERT(name, x, y)   name##_RB_INSERT(x, y)</span></div>
-<div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span><span class="preprocessor">#define RB_REMOVE(name, x, y)   name##_RB_REMOVE(x, y)</span></div>
-<div class="line"><a id="l00731" name="l00731"></a><span class="lineno">  731</span><span class="preprocessor">#define RB_FIND(name, x, y)     name##_RB_FIND(x, y)</span></div>
-<div class="line"><a id="l00732" name="l00732"></a><span class="lineno">  732</span><span class="preprocessor">#define RB_NFIND(name, x, y)    name##_RB_NFIND(x, y)</span></div>
-<div class="line"><a id="l00733" name="l00733"></a><span class="lineno">  733</span><span class="preprocessor">#define RB_NEXT(name, x, y)     name##_RB_NEXT(y)</span></div>
-<div class="line"><a id="l00734" name="l00734"></a><span class="lineno">  734</span><span class="preprocessor">#define RB_PREV(name, x, y)     name##_RB_PREV(y)</span></div>
+<div class="line"><a id="l00727" name="l00727"></a><span class="lineno"><a class="line" href="tree_8h.html#a5b9861a8925c953340e483ae0a0f5120">  727</a></span><span class="preprocessor">#define RB_INF      1</span></div>
+<div class="line"><a id="l00728" name="l00728"></a><span class="lineno"><a class="line" href="tree_8h.html#ad97eb44d2c39debda8cfbbbbcb354cce">  728</a></span> </div>
+<div class="line"><a id="l00729" name="l00729"></a><span class="lineno"><a class="line" href="tree_8h.html#af0ae89dc9239fbe8c056eeed595cedac">  729</a></span><span class="preprocessor">#define RB_INSERT(name, x, y)   name##_RB_INSERT(x, y)</span></div>
+<div class="line"><a id="l00730" name="l00730"></a><span class="lineno"><a class="line" href="tree_8h.html#a70e614029f71a8debff2d42ce72a160b">  730</a></span><span class="preprocessor">#define RB_REMOVE(name, x, y)   name##_RB_REMOVE(x, y)</span></div>
+<div class="line"><a id="l00731" name="l00731"></a><span class="lineno"><a class="line" href="tree_8h.html#a2852fb3d5ccc9f1d3a245096fee9eb0b">  731</a></span><span class="preprocessor">#define RB_FIND(name, x, y)     name##_RB_FIND(x, y)</span></div>
+<div class="line"><a id="l00732" name="l00732"></a><span class="lineno"><a class="line" href="tree_8h.html#a2e0a645fac7c63886eaa1bbc78ca3696">  732</a></span><span class="preprocessor">#define RB_NFIND(name, x, y)    name##_RB_NFIND(x, y)</span></div>
+<div class="line"><a id="l00733" name="l00733"></a><span class="lineno"><a class="line" href="tree_8h.html#a0827c86d4c8c63495f665141d857f380">  733</a></span><span class="preprocessor">#define RB_NEXT(name, x, y)     name##_RB_NEXT(y)</span></div>
+<div class="line"><a id="l00734" name="l00734"></a><span class="lineno"><a class="line" href="tree_8h.html#a6a78e155b3b5a296ba9c0ab15b70fb8d">  734</a></span><span class="preprocessor">#define RB_PREV(name, x, y)     name##_RB_PREV(y)</span></div>
 <div class="line"><a id="l00735" name="l00735"></a><span class="lineno">  735</span><span class="preprocessor">#define RB_MIN(name, x)         name##_RB_MINMAX(x, RB_NEGINF)</span></div>
-<div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span><span class="preprocessor">#define RB_MAX(name, x)         name##_RB_MINMAX(x, RB_INF)</span></div>
+<div class="line"><a id="l00736" name="l00736"></a><span class="lineno"><a class="line" href="tree_8h.html#a1d7436c418f56d0b50ebc4c4273d71b6">  736</a></span><span class="preprocessor">#define RB_MAX(name, x)         name##_RB_MINMAX(x, RB_INF)</span></div>
 <div class="line"><a id="l00737" name="l00737"></a><span class="lineno">  737</span> </div>
 <div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span><span class="preprocessor">#define RB_FOREACH(x, name, head)                                             \</span></div>
 <div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span><span class="preprocessor">  for ((x) = RB_MIN(name, head);                                              \</span></div>
 <div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span><span class="preprocessor">       (x) != NULL;                                                           \</span></div>
-<div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span><span class="preprocessor">       (x) = name##_RB_NEXT(x))</span></div>
+<div class="line"><a id="l00741" name="l00741"></a><span class="lineno"><a class="line" href="tree_8h.html#a231d21c956e25b24406cbf8ff856508d">  741</a></span><span class="preprocessor">       (x) = name##_RB_NEXT(x))</span></div>
 <div class="line"><a id="l00742" name="l00742"></a><span class="lineno">  742</span> </div>
 <div class="line"><a id="l00743" name="l00743"></a><span class="lineno">  743</span><span class="preprocessor">#define RB_FOREACH_FROM(x, name, y)                                           \</span></div>
 <div class="line"><a id="l00744" name="l00744"></a><span class="lineno">  744</span><span class="preprocessor">  for ((x) = (y);                                                             \</span></div>
 <div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span><span class="preprocessor">      ((x) != NULL) &amp;&amp; ((y) = name##_RB_NEXT(x), (x) != NULL);                \</span></div>
-<div class="line"><a id="l00746" name="l00746"></a><span class="lineno">  746</span><span class="preprocessor">       (x) = (y))</span></div>
+<div class="line"><a id="l00746" name="l00746"></a><span class="lineno"><a class="line" href="tree_8h.html#aabadd40831e862632d55eb8c867fd258">  746</a></span><span class="preprocessor">       (x) = (y))</span></div>
 <div class="line"><a id="l00747" name="l00747"></a><span class="lineno">  747</span> </div>
 <div class="line"><a id="l00748" name="l00748"></a><span class="lineno">  748</span><span class="preprocessor">#define RB_FOREACH_SAFE(x, name, head, y)                                     \</span></div>
 <div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span><span class="preprocessor">  for ((x) = RB_MIN(name, head);                                              \</span></div>
 <div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span><span class="preprocessor">      ((x) != NULL) &amp;&amp; ((y) = name##_RB_NEXT(x), (x) != NULL);                \</span></div>
-<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span><span class="preprocessor">       (x) = (y))</span></div>
+<div class="line"><a id="l00751" name="l00751"></a><span class="lineno"><a class="line" href="tree_8h.html#ae6d8b4211e268f05895ea7c312873968">  751</a></span><span class="preprocessor">       (x) = (y))</span></div>
 <div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span> </div>
 <div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span><span class="preprocessor">#define RB_FOREACH_REVERSE(x, name, head)                                     \</span></div>
 <div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span><span class="preprocessor">  for ((x) = RB_MAX(name, head);                                              \</span></div>
 <div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span><span class="preprocessor">       (x) != NULL;                                                           \</span></div>
-<div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span><span class="preprocessor">       (x) = name##_RB_PREV(x))</span></div>
+<div class="line"><a id="l00756" name="l00756"></a><span class="lineno"><a class="line" href="tree_8h.html#ab64fa0884a65611c65fb9b9eca9908d7">  756</a></span><span class="preprocessor">       (x) = name##_RB_PREV(x))</span></div>
 <div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span> </div>
 <div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span><span class="preprocessor">#define RB_FOREACH_REVERSE_FROM(x, name, y)                                   \</span></div>
 <div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span><span class="preprocessor">  for ((x) = (y);                                                             \</span></div>
 <div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span><span class="preprocessor">      ((x) != NULL) &amp;&amp; ((y) = name##_RB_PREV(x), (x) != NULL);                \</span></div>
-<div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span><span class="preprocessor">       (x) = (y))</span></div>
+<div class="line"><a id="l00761" name="l00761"></a><span class="lineno"><a class="line" href="tree_8h.html#ac278702349f5b1ac7c63d069b16d239b">  761</a></span><span class="preprocessor">       (x) = (y))</span></div>
 <div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span> </div>
 <div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span><span class="preprocessor">#define RB_FOREACH_REVERSE_SAFE(x, name, head, y)                             \</span></div>
 <div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span><span class="preprocessor">  for ((x) = RB_MAX(name, head);                                              \</span></div>
@@ -867,8 +867,8 @@ $(document).ready(function(){initNavTree('tree_8h_source.html',''); initResizabl
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_087b1a8e0ed1488a006d59bf0cd93b9d.html">libuv</a></li><li class="navelem"><a class="el" href="dir_87a6640707d1b098e35356ebaaac7457.html">include</a></li><li class="navelem"><a class="el" href="dir_34c5f5e54a24c1a85a7bd1a33795e3a6.html">uv</a></li><li class="navelem"><b>tree.h</b></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:44 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="dir_087b1a8e0ed1488a006d59bf0cd93b9d.html">libuv</a></li><li class="navelem"><a class="el" href="dir_87a6640707d1b098e35356ebaaac7457.html">include</a></li><li class="navelem"><a class="el" href="dir_34c5f5e54a24c1a85a7bd1a33795e3a6.html">uv</a></li><li class="navelem"><a class="el" href="tree_8h.html">tree.h</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:30 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

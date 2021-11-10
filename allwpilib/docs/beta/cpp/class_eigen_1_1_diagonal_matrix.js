@@ -1,5 +1,10 @@
 var class_eigen_1_1_diagonal_matrix =
 [
+    [ "DiagonalVectorType", "class_eigen_1_1_diagonal_matrix.html#a15bb0b30b931772c81d558207dd3804b", null ],
+    [ "Nested", "class_eigen_1_1_diagonal_matrix.html#aed13866129663f9ad9e8efd5bd10ece7", null ],
+    [ "Scalar", "class_eigen_1_1_diagonal_matrix.html#a927965f00d816212b6651b1f6bce783d", null ],
+    [ "StorageIndex", "class_eigen_1_1_diagonal_matrix.html#aaebe61dfe47cc30064d8daaee8092d62", null ],
+    [ "StorageKind", "class_eigen_1_1_diagonal_matrix.html#ac61c867d48e814e1f90ae8b3ad73ae1b", null ],
     [ "DiagonalMatrix", "class_eigen_1_1_diagonal_matrix.html#a828c0f7d55a4f66908e76b3af1acc37f", null ],
     [ "DiagonalMatrix", "class_eigen_1_1_diagonal_matrix.html#a82e6fd9b8f7f614bc05b4f941a875d7a", null ],
     [ "DiagonalMatrix", "class_eigen_1_1_diagonal_matrix.html#a1443056b287f069d6771d7945e45ad60", null ],
@@ -15,5 +20,6 @@ var class_eigen_1_1_diagonal_matrix =
     [ "setIdentity", "class_eigen_1_1_diagonal_matrix.html#a4d52100471c1212cbaba950b0c39f8c9", null ],
     [ "setIdentity", "class_eigen_1_1_diagonal_matrix.html#ae0cb9721da2963320857ec4b64eed1ea", null ],
     [ "setZero", "class_eigen_1_1_diagonal_matrix.html#a4d9b1c1fd53e4bee2e94098c8378db8e", null ],
-    [ "setZero", "class_eigen_1_1_diagonal_matrix.html#a9f1a1ca602e5432b6856d3a6783a6d1c", null ]
+    [ "setZero", "class_eigen_1_1_diagonal_matrix.html#a9f1a1ca602e5432b6856d3a6783a6d1c", null ],
+    [ "m_diagonal", "class_eigen_1_1_diagonal_matrix.html#aecf48407617023fcdb1c808b7d3720be", null ]
 ];

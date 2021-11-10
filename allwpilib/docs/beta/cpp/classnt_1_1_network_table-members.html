@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -125,9 +125,9 @@ $(document).ready(function(){initNavTree('classnt_1_1_network_table.html',''); i
   <tr class="odd"><td class="entry"><a class="el" href="classnt_1_1_network_table.html#a67799d8acb9f259617333aea58f9baa1">IsPersistent</a>(std::string_view key) const</td><td class="entry"><a class="el" href="classnt_1_1_network_table.html">nt::NetworkTable</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classnt_1_1_network_table.html#ab50c9f3d0678bb4013508ebd39907f39">LoadEntries</a>(std::string_view filename, std::function&lt; void(size_t line, const char *msg)&gt; warn)</td><td class="entry"><a class="el" href="classnt_1_1_network_table.html">nt::NetworkTable</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classnt_1_1_network_table.html#ad82f666270ef11b0c1c839b791857865">NetworkTable</a>(NT_Inst inst, std::string_view path, const private_init &amp;)</td><td class="entry"><a class="el" href="classnt_1_1_network_table.html">nt::NetworkTable</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>NetworkTableInstance</b> (defined in <a class="el" href="classnt_1_1_network_table.html">nt::NetworkTable</a>)</td><td class="entry"><a class="el" href="classnt_1_1_network_table.html">nt::NetworkTable</a></td><td class="entry"><span class="mlabel">friend</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classnt_1_1_network_table.html#a99d2f31dacd310fe96ffa03aa791fd85">NetworkTableInstance</a></td><td class="entry"><a class="el" href="classnt_1_1_network_table.html">nt::NetworkTable</a></td><td class="entry"><span class="mlabel">friend</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classnt_1_1_network_table.html#a53893da2ccfea5138df1d5052b6dbb29">NormalizeKey</a>(std::string_view key, bool withLeadingSlash=true)</td><td class="entry"><a class="el" href="classnt_1_1_network_table.html">nt::NetworkTable</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>NormalizeKey</b>(std::string_view key, wpi::SmallVectorImpl&lt; char &gt; &amp;buf, bool withLeadingSlash=true) (defined in <a class="el" href="classnt_1_1_network_table.html">nt::NetworkTable</a>)</td><td class="entry"><a class="el" href="classnt_1_1_network_table.html">nt::NetworkTable</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classnt_1_1_network_table.html#aff47d35eb815d688be12c8853fa53ae6">NormalizeKey</a>(std::string_view key, wpi::SmallVectorImpl&lt; char &gt; &amp;buf, bool withLeadingSlash=true)</td><td class="entry"><a class="el" href="classnt_1_1_network_table.html">nt::NetworkTable</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classnt_1_1_network_table.html#ab0d5324921b216090f76b0c699bb0247">PATH_SEPARATOR_CHAR</a></td><td class="entry"><a class="el" href="classnt_1_1_network_table.html">nt::NetworkTable</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classnt_1_1_network_table.html#a62b0e2ad8439a6047372c36c27b1bfad">PutBoolean</a>(std::string_view key, bool value)</td><td class="entry"><a class="el" href="classnt_1_1_network_table.html">nt::NetworkTable</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classnt_1_1_network_table.html#a53a4d23305c994e1da89b4919379d39d">PutBooleanArray</a>(std::string_view key, wpi::span&lt; const int &gt; value)</td><td class="entry"><a class="el" href="classnt_1_1_network_table.html">nt::NetworkTable</a></td><td class="entry"></td></tr>
@@ -150,13 +150,13 @@ $(document).ready(function(){initNavTree('classnt_1_1_network_table.html',''); i
   <tr class="even"><td class="entry"><a class="el" href="classnt_1_1_network_table.html#a905fffafb489f0f76af78db1bb7033a8">SetDefaultValue</a>(std::string_view key, std::shared_ptr&lt; Value &gt; defaultValue)</td><td class="entry"><a class="el" href="classnt_1_1_network_table.html">nt::NetworkTable</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classnt_1_1_network_table.html#a78988917d1574281edce78532790569f">SetFlags</a>(std::string_view key, unsigned int flags)</td><td class="entry"><a class="el" href="classnt_1_1_network_table.html">nt::NetworkTable</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classnt_1_1_network_table.html#ada5f9eea21ce749b77664308f7f85a4f">SetPersistent</a>(std::string_view key)</td><td class="entry"><a class="el" href="classnt_1_1_network_table.html">nt::NetworkTable</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="odd"><td class="entry"><b>~NetworkTable</b>() (defined in <a class="el" href="classnt_1_1_network_table.html">nt::NetworkTable</a>)</td><td class="entry"><a class="el" href="classnt_1_1_network_table.html">nt::NetworkTable</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classnt_1_1_network_table.html#a52f82b78ec06985a58c5f4ee6a3b0270">~NetworkTable</a>()</td><td class="entry"><a class="el" href="classnt_1_1_network_table.html">nt::NetworkTable</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:52 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:39 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

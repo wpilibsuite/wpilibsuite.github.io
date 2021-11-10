@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -98,26 +98,108 @@ $(document).ready(function(){initNavTree('struct_eigen_1_1internal_1_1copy__usin
   <div class="headertitle"><div class="title">Eigen::internal::copy_using_evaluator_DefaultTraversal_CompleteUnrolling&lt; Kernel, Index, Stop &gt; Struct Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_assign_evaluator_8h_source.html">/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/eigeninclude/Eigen/src/Core/AssignEvaluator.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:abc920095d518c9e4bf66a83dc60bcdc6"><td class="memItemLeft" align="right" valign="top"><a id="abc920095d518c9e4bf66a83dc60bcdc6" name="abc920095d518c9e4bf66a83dc60bcdc6"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>outer</b> = Index / DstXprType::InnerSizeAtCompileTime
-, <b>inner</b> = Index % DstXprType::InnerSizeAtCompileTime
+<tr class="memitem:a235db5d066651a5375715488a3b6cae9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="struct_eigen_1_1internal_1_1copy__using__evaluator___default_traversal___complete_unrolling.html#a235db5d066651a5375715488a3b6cae9afbd061078254992594603e8fa10268fd">outer</a> = Index / DstXprType::InnerSizeAtCompileTime
+, <a class="el" href="struct_eigen_1_1internal_1_1copy__using__evaluator___default_traversal___complete_unrolling.html#a235db5d066651a5375715488a3b6cae9a105f567642512d7601745a34662c0a01">inner</a> = Index % DstXprType::InnerSizeAtCompileTime
  }</td></tr>
-<tr class="separator:abc920095d518c9e4bf66a83dc60bcdc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa8b115419f4f7254c00e31026d89ad6"><td class="memItemLeft" align="right" valign="top"><a id="afa8b115419f4f7254c00e31026d89ad6" name="afa8b115419f4f7254c00e31026d89ad6"></a>
-typedef Kernel::DstEvaluatorType&#160;</td><td class="memItemRight" valign="bottom"><b>DstEvaluatorType</b></td></tr>
+<tr class="separator:a235db5d066651a5375715488a3b6cae9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa8b115419f4f7254c00e31026d89ad6"><td class="memItemLeft" align="right" valign="top">typedef Kernel::DstEvaluatorType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1copy__using__evaluator___default_traversal___complete_unrolling.html#afa8b115419f4f7254c00e31026d89ad6">DstEvaluatorType</a></td></tr>
 <tr class="separator:afa8b115419f4f7254c00e31026d89ad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26932dba1235922ba07998e8b6afd88e"><td class="memItemLeft" align="right" valign="top"><a id="a26932dba1235922ba07998e8b6afd88e" name="a26932dba1235922ba07998e8b6afd88e"></a>
-typedef DstEvaluatorType::XprType&#160;</td><td class="memItemRight" valign="bottom"><b>DstXprType</b></td></tr>
+<tr class="memitem:a26932dba1235922ba07998e8b6afd88e"><td class="memItemLeft" align="right" valign="top">typedef DstEvaluatorType::XprType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1copy__using__evaluator___default_traversal___complete_unrolling.html#a26932dba1235922ba07998e8b6afd88e">DstXprType</a></td></tr>
 <tr class="separator:a26932dba1235922ba07998e8b6afd88e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a9d9964d1daebdb781f198dc25cde8d1f"><td class="memItemLeft" align="right" valign="top"><a id="a9d9964d1daebdb781f198dc25cde8d1f" name="a9d9964d1daebdb781f198dc25cde8d1f"></a>
-static EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> (Kernel &amp;kernel)</td></tr>
+<tr class="memitem:a9d9964d1daebdb781f198dc25cde8d1f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_macros_8h.html#a9efec3cfd22b9a33bead9c6718d128da">EIGEN_DEVICE_FUNC</a> <a class="el" href="_macros_8h.html#af2b60117c00a6e75812de43bfe7db3b1">EIGEN_STRONG_INLINE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1copy__using__evaluator___default_traversal___complete_unrolling.html#a9d9964d1daebdb781f198dc25cde8d1f">run</a> (Kernel &amp;kernel)</td></tr>
 <tr class="separator:a9d9964d1daebdb781f198dc25cde8d1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="afa8b115419f4f7254c00e31026d89ad6" name="afa8b115419f4f7254c00e31026d89ad6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa8b115419f4f7254c00e31026d89ad6">&#9670;&nbsp;</a></span>DstEvaluatorType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Kernel , int Index, int Stop&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef Kernel::DstEvaluatorType <a class="el" href="struct_eigen_1_1internal_1_1copy__using__evaluator___default_traversal___complete_unrolling.html">Eigen::internal::copy_using_evaluator_DefaultTraversal_CompleteUnrolling</a>&lt; Kernel, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a>, Stop &gt;::<a class="el" href="struct_eigen_1_1internal_1_1copy__using__evaluator___default_traversal___complete_unrolling.html#afa8b115419f4f7254c00e31026d89ad6">DstEvaluatorType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a26932dba1235922ba07998e8b6afd88e" name="a26932dba1235922ba07998e8b6afd88e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26932dba1235922ba07998e8b6afd88e">&#9670;&nbsp;</a></span>DstXprType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Kernel , int Index, int Stop&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef DstEvaluatorType::XprType <a class="el" href="struct_eigen_1_1internal_1_1copy__using__evaluator___default_traversal___complete_unrolling.html">Eigen::internal::copy_using_evaluator_DefaultTraversal_CompleteUnrolling</a>&lt; Kernel, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a>, Stop &gt;::<a class="el" href="struct_eigen_1_1internal_1_1copy__using__evaluator___default_traversal___complete_unrolling.html#a26932dba1235922ba07998e8b6afd88e">DstXprType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a235db5d066651a5375715488a3b6cae9" name="a235db5d066651a5375715488a3b6cae9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a235db5d066651a5375715488a3b6cae9">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Kernel , int Index, int Stop&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a235db5d066651a5375715488a3b6cae9afbd061078254992594603e8fa10268fd" name="a235db5d066651a5375715488a3b6cae9afbd061078254992594603e8fa10268fd"></a>outer&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a235db5d066651a5375715488a3b6cae9a105f567642512d7601745a34662c0a01" name="a235db5d066651a5375715488a3b6cae9a105f567642512d7601745a34662c0a01"></a>inner&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a9d9964d1daebdb781f198dc25cde8d1f" name="a9d9964d1daebdb781f198dc25cde8d1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d9964d1daebdb781f198dc25cde8d1f">&#9670;&nbsp;</a></span>run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Kernel , int Index, int Stop&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="_macros_8h.html#a9efec3cfd22b9a33bead9c6718d128da">EIGEN_DEVICE_FUNC</a> <a class="el" href="_macros_8h.html#af2b60117c00a6e75812de43bfe7db3b1">EIGEN_STRONG_INLINE</a> void <a class="el" href="struct_eigen_1_1internal_1_1copy__using__evaluator___default_traversal___complete_unrolling.html">Eigen::internal::copy_using_evaluator_DefaultTraversal_CompleteUnrolling</a>&lt; Kernel, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a>, Stop &gt;::run </td>
+          <td>(</td>
+          <td class="paramtype">Kernel &amp;&#160;</td>
+          <td class="paramname"><em>kernel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/eigeninclude/Eigen/src/Core/<a class="el" href="_assign_evaluator_8h_source.html">AssignEvaluator.h</a></li>
 </ul>
@@ -126,8 +208,8 @@ static EIGEN_DEVICE_FUNC EIGEN_STRONG_INLINE void&#160;</td><td class="memItemRi
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespace_eigen.html">Eigen</a></li><li class="navelem"><b>internal</b></li><li class="navelem"><a class="el" href="struct_eigen_1_1internal_1_1copy__using__evaluator___default_traversal___complete_unrolling.html">copy_using_evaluator_DefaultTraversal_CompleteUnrolling</a></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:47 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespace_eigen.html">Eigen</a></li><li class="navelem"><a class="el" href="namespace_eigen_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="struct_eigen_1_1internal_1_1copy__using__evaluator___default_traversal___complete_unrolling.html">copy_using_evaluator_DefaultTraversal_CompleteUnrolling</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:35 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

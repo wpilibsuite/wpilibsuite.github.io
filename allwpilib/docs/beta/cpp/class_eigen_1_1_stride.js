@@ -5,5 +5,7 @@ var class_eigen_1_1_stride =
     [ "Stride", "class_eigen_1_1_stride.html#ab769b5a97db488b06bf305f4ab970189", null ],
     [ "Stride", "class_eigen_1_1_stride.html#a052fed680cf28ea284714be591bfbf86", null ],
     [ "inner", "class_eigen_1_1_stride.html#a273be7c2c02e930f7a544249e7dd6a78", null ],
-    [ "outer", "class_eigen_1_1_stride.html#aeea8a1248c7f8262e6efc7094df8cf85", null ]
+    [ "outer", "class_eigen_1_1_stride.html#aeea8a1248c7f8262e6efc7094df8cf85", null ],
+    [ "m_inner", "class_eigen_1_1_stride.html#a814628314f01f4d2f9dad719c3d3b6b4", null ],
+    [ "m_outer", "class_eigen_1_1_stride.html#a51b8ad2f1cd7da4c8db87c34240e9d71", null ]
 ];

@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('_network_table_entry_8h_source.html','
   <div class="headertitle"><div class="title">NetworkTableEntry.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
+<a href="_network_table_entry_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Open Source Software; you can modify and/or share it under the terms of</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// the WPILib BSD license file in the root directory of this project.</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
@@ -109,13 +109,13 @@ $(document).ready(function(){initNavTree('_network_table_entry_8h_source.html','
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;string_view&gt;</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;wpi/span.h&gt;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;<a class="code" href="span_8h.html">wpi/span.h</a>&gt;</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;networktables/NetworkTableType.h&quot;</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &quot;networktables/NetworkTableValue.h&quot;</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &quot;networktables/RpcCall.h&quot;</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &quot;ntcore_c.h&quot;</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &quot;ntcore_cpp.h&quot;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;<a class="code" href="_network_table_type_8h.html">networktables/NetworkTableType.h</a>&quot;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &quot;<a class="code" href="_network_table_value_8h.html">networktables/NetworkTableValue.h</a>&quot;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &quot;<a class="code" href="_rpc_call_8h.html">networktables/RpcCall.h</a>&quot;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &quot;<a class="code" href="ntcore__c_8h.html">ntcore_c.h</a>&quot;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &quot;<a class="code" href="ntcore__cpp_8h.html">ntcore_cpp.h</a>&quot;</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacent.html">nt</a> {</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('_network_table_entry_8h_source.html','
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">   * Flag values (as returned by GetFlags()).</span></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classnt_1_1_network_table_entry.html#ac8b068af2c558727aaee4451b3e0b739">   37</a></span>  <span class="keyword">enum</span> <a class="code hl_enumeration" href="classnt_1_1_network_table_entry.html#ac8b068af2c558727aaee4451b3e0b739">Flags</a> { kPersistent = NT_PERSISTENT };</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classnt_1_1_network_table_entry.html#ac8b068af2c558727aaee4451b3e0b739">   37</a></span>  <span class="keyword">enum</span> <a class="code hl_enumeration" href="classnt_1_1_network_table_entry.html#ac8b068af2c558727aaee4451b3e0b739">Flags</a> { <a class="code hl_enumvalue" href="classnt_1_1_network_table_entry.html#ac8b068af2c558727aaee4451b3e0b739ac493bd8fdc6e9fd059602e78913bd5ef">kPersistent</a> = <a class="code hl_enumvalue" href="group__ntcore__c__api.html#gga3cca2867677bf312d4d8df4aa48a09d7a3a52e7917f951a0c6ea1b70ef48efb65">NT_PERSISTENT</a> };</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment"></span> </div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">   * Construct invalid instance.</span></div>
@@ -142,21 +142,21 @@ $(document).ready(function(){initNavTree('_network_table_entry_8h_source.html','
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">   *</span></div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">   * @param handle Native handle</span></div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classnt_1_1_network_table_entry.html#ad7c2c4a066ad972e868208737f347487">NetworkTableEntry</a>(NT_Entry handle);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classnt_1_1_network_table_entry.html#ad7c2c4a066ad972e868208737f347487">NetworkTableEntry</a>(<a class="code hl_typedef" href="group__ntcore__c__api.html#gaf64e436c9ab92f866d57519eeb2a2a09">NT_Entry</a> handle);</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment"></span> </div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">   * Determines if the native handle is valid.</span></div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">   *</span></div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">   * @return True if the native handle is valid, false otherwise.</span></div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classnt_1_1_network_table_entry.html#a2c31cdb970cbbde65af3a802f45e5c84">   56</a></span>  <span class="keyword">explicit</span> <span class="keyword">operator</span> bool()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_handle != 0; }</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classnt_1_1_network_table_entry.html#a2c31cdb970cbbde65af3a802f45e5c84">   56</a></span>  <span class="keyword">explicit</span> <span class="keyword">operator</span> bool()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classnt_1_1_network_table_entry.html#aa572f030d9cbd67bbdf320d0c0be807f">m_handle</a> != 0; }</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment"></span> </div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">   * Gets the native handle for the entry.</span></div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">   *</span></div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">   * @return Native handle</span></div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  NT_Entry <a class="code hl_function" href="classnt_1_1_network_table_entry.html#aa966e01dfbbc1082a41cd7ae28a4520b">GetHandle</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <a class="code hl_typedef" href="group__ntcore__c__api.html#gaf64e436c9ab92f866d57519eeb2a2a09">NT_Entry</a> <a class="code hl_function" href="classnt_1_1_network_table_entry.html#aa966e01dfbbc1082a41cd7ae28a4520b">GetHandle</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment"></span> </div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">   * Gets the instance for the entry.</span></div>
@@ -198,7 +198,7 @@ $(document).ready(function(){initNavTree('_network_table_entry_8h_source.html','
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="comment">   *</span></div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment">   * @return Entry last change time</span></div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>  uint64_t <a class="code hl_function" href="classnt_1_1_network_table_entry.html#a0ef7721a1363032fc19c145421a6a218">GetLastChange</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>  <a class="code hl_variable" href="namespace_eigen_1_1numext.html#a637f20cd528b31ef3ce8d1ef803ebbde">uint64_t</a> <a class="code hl_function" href="classnt_1_1_network_table_entry.html#a0ef7721a1363032fc19c145421a6a218">GetLastChange</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="comment"></span> </div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="comment">   * Gets combined information about the entry.</span></div>
@@ -239,7 +239,7 @@ $(document).ready(function(){initNavTree('_network_table_entry_8h_source.html','
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span><span class="comment">   * @param defaultValue the value to be returned if no value is found</span></div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span><span class="comment">   * @return the entry&#39;s value or the given default value</span></div>
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>  std::string <a class="code hl_function" href="classnt_1_1_network_table_entry.html#ae7243b7295005e5bab57caadb0e8d262">GetString</a>(std::string_view defaultValue) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>  std::string <a class="code hl_function" href="classnt_1_1_network_table_entry.html#ae7243b7295005e5bab57caadb0e8d262">GetString</a>(<a class="code hl_typedef" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> defaultValue) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="comment"></span> </div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span><span class="comment">   * Gets the entry&#39;s value as a raw. If the entry does not exist or is of</span></div>
@@ -248,7 +248,7 @@ $(document).ready(function(){initNavTree('_network_table_entry_8h_source.html','
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="comment">   * @param defaultValue the value to be returned if no value is found</span></div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span><span class="comment">   * @return the entry&#39;s value or the given default value</span></div>
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>  std::string <a class="code hl_function" href="classnt_1_1_network_table_entry.html#a72d0c476f247c2b10c41a0e2be0c9741">GetRaw</a>(std::string_view defaultValue) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>  std::string <a class="code hl_function" href="classnt_1_1_network_table_entry.html#a72d0c476f247c2b10c41a0e2be0c9741">GetRaw</a>(<a class="code hl_typedef" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> defaultValue) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span><span class="comment"></span> </div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span><span class="comment">   * Gets the entry&#39;s value as a boolean array. If the entry does not exist</span></div>
@@ -365,7 +365,7 @@ $(document).ready(function(){initNavTree('_network_table_entry_8h_source.html','
 <div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span><span class="comment">   * @param defaultValue the default value to set</span></div>
 <div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span><span class="comment">   * @return False if the entry exists with a different type</span></div>
 <div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classnt_1_1_network_table_entry.html#a730bc0d1c6b1b71e93c1e79efe4a25a4">SetDefaultString</a>(std::string_view defaultValue);</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classnt_1_1_network_table_entry.html#a730bc0d1c6b1b71e93c1e79efe4a25a4">SetDefaultString</a>(<a class="code hl_typedef" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> defaultValue);</div>
 <div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span><span class="comment"></span> </div>
 <div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span><span class="comment">   * Sets the entry&#39;s value if it does not exist.</span></div>
@@ -373,7 +373,7 @@ $(document).ready(function(){initNavTree('_network_table_entry_8h_source.html','
 <div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span><span class="comment">   * @param defaultValue the default value to set</span></div>
 <div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span><span class="comment">   * @return False if the entry exists with a different type</span></div>
 <div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classnt_1_1_network_table_entry.html#aa4a6fe4de92ed8e5a7e49a6c8edc21df">SetDefaultRaw</a>(std::string_view defaultValue);</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classnt_1_1_network_table_entry.html#aa4a6fe4de92ed8e5a7e49a6c8edc21df">SetDefaultRaw</a>(<a class="code hl_typedef" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> defaultValue);</div>
 <div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span><span class="comment"></span> </div>
 <div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span><span class="comment">   * Sets the entry&#39;s value if it does not exist.</span></div>
@@ -453,7 +453,7 @@ $(document).ready(function(){initNavTree('_network_table_entry_8h_source.html','
 <div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span><span class="comment">   * @param value the value to set</span></div>
 <div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span><span class="comment">   * @return False if the entry exists with a different type</span></div>
 <div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classnt_1_1_network_table_entry.html#a518a90dd9aca358fb8f8bfff709c4132">SetString</a>(std::string_view <a class="code hl_class" href="classvalue.html">value</a>);</div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classnt_1_1_network_table_entry.html#a518a90dd9aca358fb8f8bfff709c4132">SetString</a>(<a class="code hl_typedef" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> <a class="code hl_class" href="classvalue.html">value</a>);</div>
 <div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span><span class="comment"></span> </div>
 <div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span><span class="comment">   * Sets the entry&#39;s value.</span></div>
@@ -461,7 +461,7 @@ $(document).ready(function(){initNavTree('_network_table_entry_8h_source.html','
 <div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span><span class="comment">   * @param value the value to set</span></div>
 <div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span><span class="comment">   * @return False if the entry exists with a different type</span></div>
 <div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classnt_1_1_network_table_entry.html#a81e308ed020fa4e97da302c70f565932">SetRaw</a>(std::string_view <a class="code hl_class" href="classvalue.html">value</a>);</div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classnt_1_1_network_table_entry.html#a81e308ed020fa4e97da302c70f565932">SetRaw</a>(<a class="code hl_typedef" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> <a class="code hl_class" href="classvalue.html">value</a>);</div>
 <div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span><span class="comment"></span> </div>
 <div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span><span class="comment">   * Sets the entry&#39;s value.</span></div>
@@ -557,7 +557,7 @@ $(document).ready(function(){initNavTree('_network_table_entry_8h_source.html','
 <div class="line"><a id="l00461" name="l00461"></a><span class="lineno">  461</span><span class="comment">   *</span></div>
 <div class="line"><a id="l00462" name="l00462"></a><span class="lineno">  462</span><span class="comment">   * @param value the value to set</span></div>
 <div class="line"><a id="l00463" name="l00463"></a><span class="lineno">  463</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00464" name="l00464"></a><span class="lineno">  464</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classnt_1_1_network_table_entry.html#aa6c37d25f8cc0cf1b15b3bdf485b6f78">ForceSetString</a>(std::string_view <a class="code hl_class" href="classvalue.html">value</a>);</div>
+<div class="line"><a id="l00464" name="l00464"></a><span class="lineno">  464</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classnt_1_1_network_table_entry.html#aa6c37d25f8cc0cf1b15b3bdf485b6f78">ForceSetString</a>(<a class="code hl_typedef" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> <a class="code hl_class" href="classvalue.html">value</a>);</div>
 <div class="line"><a id="l00465" name="l00465"></a><span class="lineno">  465</span><span class="comment"></span> </div>
 <div class="line"><a id="l00466" name="l00466"></a><span class="lineno">  466</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00467" name="l00467"></a><span class="lineno">  467</span><span class="comment">   * Sets the entry&#39;s value.  If the value is of different type, the type is</span></div>
@@ -565,7 +565,7 @@ $(document).ready(function(){initNavTree('_network_table_entry_8h_source.html','
 <div class="line"><a id="l00469" name="l00469"></a><span class="lineno">  469</span><span class="comment">   *</span></div>
 <div class="line"><a id="l00470" name="l00470"></a><span class="lineno">  470</span><span class="comment">   * @param value the value to set</span></div>
 <div class="line"><a id="l00471" name="l00471"></a><span class="lineno">  471</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00472" name="l00472"></a><span class="lineno">  472</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classnt_1_1_network_table_entry.html#a98a461f55b6e7bd8cf80a8a2ae691b2d">ForceSetRaw</a>(std::string_view <a class="code hl_class" href="classvalue.html">value</a>);</div>
+<div class="line"><a id="l00472" name="l00472"></a><span class="lineno">  472</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classnt_1_1_network_table_entry.html#a98a461f55b6e7bd8cf80a8a2ae691b2d">ForceSetRaw</a>(<a class="code hl_typedef" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> <a class="code hl_class" href="classvalue.html">value</a>);</div>
 <div class="line"><a id="l00473" name="l00473"></a><span class="lineno">  473</span><span class="comment"></span> </div>
 <div class="line"><a id="l00474" name="l00474"></a><span class="lineno">  474</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00475" name="l00475"></a><span class="lineno">  475</span><span class="comment">   * Sets the entry&#39;s value.  If the value is of different type, the type is</span></div>
@@ -636,14 +636,14 @@ $(document).ready(function(){initNavTree('_network_table_entry_8h_source.html','
 <div class="line"><a id="l00540" name="l00540"></a><span class="lineno">  540</span><span class="comment">   *</span></div>
 <div class="line"><a id="l00541" name="l00541"></a><span class="lineno">  541</span><span class="comment">   * @param flags the flags to set (bitmask)</span></div>
 <div class="line"><a id="l00542" name="l00542"></a><span class="lineno">  542</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classnt_1_1_network_table_entry.html#a4270eadcf91f20b9afc2f1ccc243c661">SetFlags</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> flags);</div>
+<div class="line"><a id="l00543" name="l00543"></a><span class="lineno">  543</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classnt_1_1_network_table_entry.html#a4270eadcf91f20b9afc2f1ccc243c661">SetFlags</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_enumeration" href="namespacewpi.html#a7b0000b45b0b55789f757f1c3d2461cb">flags</a>);</div>
 <div class="line"><a id="l00544" name="l00544"></a><span class="lineno">  544</span><span class="comment"></span> </div>
 <div class="line"><a id="l00545" name="l00545"></a><span class="lineno">  545</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00546" name="l00546"></a><span class="lineno">  546</span><span class="comment">   * Clears flags.</span></div>
 <div class="line"><a id="l00547" name="l00547"></a><span class="lineno">  547</span><span class="comment">   *</span></div>
 <div class="line"><a id="l00548" name="l00548"></a><span class="lineno">  548</span><span class="comment">   * @param flags the flags to clear (bitmask)</span></div>
 <div class="line"><a id="l00549" name="l00549"></a><span class="lineno">  549</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classnt_1_1_network_table_entry.html#a613247d73ff5cd6c3e311300336a5b92">ClearFlags</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> flags);</div>
+<div class="line"><a id="l00550" name="l00550"></a><span class="lineno">  550</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classnt_1_1_network_table_entry.html#a613247d73ff5cd6c3e311300336a5b92">ClearFlags</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_enumeration" href="namespacewpi.html#a7b0000b45b0b55789f757f1c3d2461cb">flags</a>);</div>
 <div class="line"><a id="l00551" name="l00551"></a><span class="lineno">  551</span><span class="comment"></span> </div>
 <div class="line"><a id="l00552" name="l00552"></a><span class="lineno">  552</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00553" name="l00553"></a><span class="lineno">  553</span><span class="comment">   * Make value persistent through program restarts.</span></div>
@@ -693,7 +693,7 @@ $(document).ready(function(){initNavTree('_network_table_entry_8h_source.html','
 <div class="line"><a id="l00597" name="l00597"></a><span class="lineno">  597</span><span class="comment">   * @param params      parameter</span></div>
 <div class="line"><a id="l00598" name="l00598"></a><span class="lineno">  598</span><span class="comment">   * @return RPC call object.</span></div>
 <div class="line"><a id="l00599" name="l00599"></a><span class="lineno">  599</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>  <a class="code hl_class" href="classnt_1_1_rpc_call.html">RpcCall</a> <a class="code hl_function" href="classnt_1_1_network_table_entry.html#aaa2d36a2b406f2cd442cf326d434d805">CallRpc</a>(std::string_view params);</div>
+<div class="line"><a id="l00600" name="l00600"></a><span class="lineno">  600</span>  <a class="code hl_class" href="classnt_1_1_rpc_call.html">RpcCall</a> <a class="code hl_function" href="classnt_1_1_network_table_entry.html#aaa2d36a2b406f2cd442cf326d434d805">CallRpc</a>(<a class="code hl_typedef" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> params);</div>
 <div class="line"><a id="l00601" name="l00601"></a><span class="lineno">  601</span><span class="comment"></span> </div>
 <div class="line"><a id="l00602" name="l00602"></a><span class="lineno">  602</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00603" name="l00603"></a><span class="lineno">  603</span><span class="comment">   * Add a listener for changes to this entry.</span></div>
@@ -702,23 +702,23 @@ $(document).ready(function(){initNavTree('_network_table_entry_8h_source.html','
 <div class="line"><a id="l00606" name="l00606"></a><span class="lineno">  606</span><span class="comment">   * @param flags             NotifyKind bitmask</span></div>
 <div class="line"><a id="l00607" name="l00607"></a><span class="lineno">  607</span><span class="comment">   * @return Listener handle</span></div>
 <div class="line"><a id="l00608" name="l00608"></a><span class="lineno">  608</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>  NT_EntryListener <a class="code hl_function" href="classnt_1_1_network_table_entry.html#ab20138138e4a37456b6fedcd4c662293">AddListener</a>(</div>
+<div class="line"><a id="l00609" name="l00609"></a><span class="lineno">  609</span>  <a class="code hl_typedef" href="group__ntcore__c__api.html#gad91d5f62743ec7bc10e2dde32748188d">NT_EntryListener</a> <a class="code hl_function" href="classnt_1_1_network_table_entry.html#ab20138138e4a37456b6fedcd4c662293">AddListener</a>(</div>
 <div class="line"><a id="l00610" name="l00610"></a><span class="lineno">  610</span>      std::function&lt;<span class="keywordtype">void</span>(<span class="keyword">const</span> <a class="code hl_class" href="classnt_1_1_entry_notification.html">EntryNotification</a>&amp; event)&gt; callback,</div>
-<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span>      <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> flags) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00611" name="l00611"></a><span class="lineno">  611</span>      <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_enumeration" href="namespacewpi.html#a7b0000b45b0b55789f757f1c3d2461cb">flags</a>) <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00612" name="l00612"></a><span class="lineno">  612</span><span class="comment"></span> </div>
 <div class="line"><a id="l00613" name="l00613"></a><span class="lineno">  613</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span><span class="comment">   * Remove an entry listener.</span></div>
 <div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span><span class="comment">   *</span></div>
 <div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span><span class="comment">   * @param entry_listener Listener handle to remove</span></div>
 <div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classnt_1_1_network_table_entry.html#ac37d154edc18c3ccb8b2737ac2761bd7">RemoveListener</a>(NT_EntryListener entry_listener);</div>
+<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classnt_1_1_network_table_entry.html#ac37d154edc18c3ccb8b2737ac2761bd7">RemoveListener</a>(<a class="code hl_typedef" href="group__ntcore__c__api.html#gad91d5f62743ec7bc10e2dde32748188d">NT_EntryListener</a> entry_listener);</div>
 <div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span><span class="comment"></span> </div>
 <div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span><span class="comment">   * Equality operator.  Returns true if both instances refer to the same</span></div>
 <div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span><span class="comment">   * native handle.</span></div>
 <div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00624" name="l00624"></a><span class="lineno"><a class="line" href="classnt_1_1_network_table_entry.html#aece2974ceb986ce7295dc8c4e56768e7">  624</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classnt_1_1_network_table_entry.html#aece2974ceb986ce7295dc8c4e56768e7">operator==</a>(<span class="keyword">const</span> <a class="code hl_class" href="classnt_1_1_network_table_entry.html">NetworkTableEntry</a>&amp; oth)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>    <span class="keywordflow">return</span> m_handle == oth.m_handle;</div>
+<div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classnt_1_1_network_table_entry.html#aa572f030d9cbd67bbdf320d0c0be807f">m_handle</a> == oth.<a class="code hl_variable" href="classnt_1_1_network_table_entry.html#aa572f030d9cbd67bbdf320d0c0be807f">m_handle</a>;</div>
 <div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>  }</div>
 <div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span><span class="comment"></span> </div>
 <div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span><span class="comment">  /** Inequality operator. */</span></div>
@@ -728,14 +728,18 @@ $(document).ready(function(){initNavTree('_network_table_entry_8h_source.html','
 <div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span> </div>
 <div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span> <span class="keyword">protected</span>:</div>
 <div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span>  <span class="comment">/* Native handle */</span></div>
-<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span>  NT_Entry m_handle{0};</div>
+<div class="line"><a id="l00635" name="l00635"></a><span class="lineno"><a class="line" href="classnt_1_1_network_table_entry.html#aa572f030d9cbd67bbdf320d0c0be807f">  635</a></span>  <a class="code hl_typedef" href="group__ntcore__c__api.html#gaf64e436c9ab92f866d57519eeb2a2a09">NT_Entry</a> <a class="code hl_variable" href="classnt_1_1_network_table_entry.html#aa572f030d9cbd67bbdf320d0c0be807f">m_handle</a>{0};</div>
 <div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span>};</div>
 <div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span> </div>
 <div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span>}  <span class="comment">// namespace nt</span></div>
 <div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span> </div>
-<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span><span class="preprocessor">#include &quot;networktables/NetworkTableEntry.inc&quot;</span></div>
+<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span><span class="preprocessor">#include &quot;<a class="code" href="_network_table_entry_8inc.html">networktables/NetworkTableEntry.inc</a>&quot;</span></div>
 <div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span> </div>
 <div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span><span class="preprocessor">#endif  </span><span class="comment">// NTCORE_NETWORKTABLES_NETWORKTABLEENTRY_H_</span></div>
+<div class="ttc" id="a_network_table_entry_8inc_html"><div class="ttname"><a href="_network_table_entry_8inc.html">NetworkTableEntry.inc</a></div></div>
+<div class="ttc" id="a_network_table_type_8h_html"><div class="ttname"><a href="_network_table_type_8h.html">NetworkTableType.h</a></div></div>
+<div class="ttc" id="a_network_table_value_8h_html"><div class="ttname"><a href="_network_table_value_8h.html">NetworkTableValue.h</a></div></div>
+<div class="ttc" id="a_rpc_call_8h_html"><div class="ttname"><a href="_rpc_call_8h.html">RpcCall.h</a></div></div>
 <div class="ttc" id="aclassnt_1_1_entry_notification_html"><div class="ttname"><a href="classnt_1_1_entry_notification.html">nt::EntryNotification</a></div><div class="ttdoc">NetworkTables Entry Notification.</div><div class="ttdef"><b>Definition:</b> ntcore_cpp.h:176</div></div>
 <div class="ttc" id="aclassnt_1_1_network_table_entry_html"><div class="ttname"><a href="classnt_1_1_network_table_entry.html">nt::NetworkTableEntry</a></div><div class="ttdoc">NetworkTables Entry.</div><div class="ttdef"><b>Definition:</b> NetworkTableEntry.h:32</div></div>
 <div class="ttc" id="aclassnt_1_1_network_table_entry_html_a00a5f0a430822358da3c588d46f2b02e"><div class="ttname"><a href="classnt_1_1_network_table_entry.html#a00a5f0a430822358da3c588d46f2b02e">nt::NetworkTableEntry::GetType</a></div><div class="ttdeci">NetworkTableType GetType() const</div><div class="ttdoc">Gets the type of the entry.</div><div class="ttdef"><b>Definition:</b> NetworkTableEntry.inc:34</div></div>
@@ -770,6 +774,7 @@ $(document).ready(function(){initNavTree('_network_table_entry_8h_source.html','
 <div class="ttc" id="aclassnt_1_1_network_table_entry_html_a98a461f55b6e7bd8cf80a8a2ae691b2d"><div class="ttname"><a href="classnt_1_1_network_table_entry.html#a98a461f55b6e7bd8cf80a8a2ae691b2d">nt::NetworkTableEntry::ForceSetRaw</a></div><div class="ttdeci">void ForceSetRaw(std::string_view value)</div><div class="ttdoc">Sets the entry's value.</div><div class="ttdef"><b>Definition:</b> NetworkTableEntry.inc:256</div></div>
 <div class="ttc" id="aclassnt_1_1_network_table_entry_html_aa151b407de61db2e32d6fed008d21a8f"><div class="ttname"><a href="classnt_1_1_network_table_entry.html#aa151b407de61db2e32d6fed008d21a8f">nt::NetworkTableEntry::SetDefaultDoubleArray</a></div><div class="ttdeci">bool SetDefaultDoubleArray(wpi::span&lt; const double &gt; defaultValue)</div><div class="ttdoc">Sets the entry's value if it does not exist.</div><div class="ttdef"><b>Definition:</b> NetworkTableEntry.inc:163</div></div>
 <div class="ttc" id="aclassnt_1_1_network_table_entry_html_aa4a6fe4de92ed8e5a7e49a6c8edc21df"><div class="ttname"><a href="classnt_1_1_network_table_entry.html#aa4a6fe4de92ed8e5a7e49a6c8edc21df">nt::NetworkTableEntry::SetDefaultRaw</a></div><div class="ttdeci">bool SetDefaultRaw(std::string_view defaultValue)</div><div class="ttdoc">Sets the entry's value if it does not exist.</div><div class="ttdef"><b>Definition:</b> NetworkTableEntry.inc:149</div></div>
+<div class="ttc" id="aclassnt_1_1_network_table_entry_html_aa572f030d9cbd67bbdf320d0c0be807f"><div class="ttname"><a href="classnt_1_1_network_table_entry.html#aa572f030d9cbd67bbdf320d0c0be807f">nt::NetworkTableEntry::m_handle</a></div><div class="ttdeci">NT_Entry m_handle</div><div class="ttdef"><b>Definition:</b> NetworkTableEntry.h:635</div></div>
 <div class="ttc" id="aclassnt_1_1_network_table_entry_html_aa6c37d25f8cc0cf1b15b3bdf485b6f78"><div class="ttname"><a href="classnt_1_1_network_table_entry.html#aa6c37d25f8cc0cf1b15b3bdf485b6f78">nt::NetworkTableEntry::ForceSetString</a></div><div class="ttdeci">void ForceSetString(std::string_view value)</div><div class="ttdoc">Sets the entry's value.</div><div class="ttdef"><b>Definition:</b> NetworkTableEntry.inc:252</div></div>
 <div class="ttc" id="aclassnt_1_1_network_table_entry_html_aa966e01dfbbc1082a41cd7ae28a4520b"><div class="ttname"><a href="classnt_1_1_network_table_entry.html#aa966e01dfbbc1082a41cd7ae28a4520b">nt::NetworkTableEntry::GetHandle</a></div><div class="ttdeci">NT_Entry GetHandle() const</div><div class="ttdoc">Gets the native handle for the entry.</div><div class="ttdef"><b>Definition:</b> NetworkTableEntry.inc:22</div></div>
 <div class="ttc" id="aclassnt_1_1_network_table_entry_html_aaa2d36a2b406f2cd442cf326d434d805"><div class="ttname"><a href="classnt_1_1_network_table_entry.html#aaa2d36a2b406f2cd442cf326d434d805">nt::NetworkTableEntry::CallRpc</a></div><div class="ttdeci">RpcCall CallRpc(std::string_view params)</div><div class="ttdoc">Call a RPC function.</div><div class="ttdef"><b>Definition:</b> NetworkTableEntry.inc:329</div></div>
@@ -779,6 +784,7 @@ $(document).ready(function(){initNavTree('_network_table_entry_8h_source.html','
 <div class="ttc" id="aclassnt_1_1_network_table_entry_html_ac37d154edc18c3ccb8b2737ac2761bd7"><div class="ttname"><a href="classnt_1_1_network_table_entry.html#ac37d154edc18c3ccb8b2737ac2761bd7">nt::NetworkTableEntry::RemoveListener</a></div><div class="ttdeci">void RemoveListener(NT_EntryListener entry_listener)</div><div class="ttdoc">Remove an entry listener.</div><div class="ttdef"><b>Definition:</b> NetworkTableEntry.inc:339</div></div>
 <div class="ttc" id="aclassnt_1_1_network_table_entry_html_ac5e59ff8130fd3af674b72fb2698abb1"><div class="ttname"><a href="classnt_1_1_network_table_entry.html#ac5e59ff8130fd3af674b72fb2698abb1">nt::NetworkTableEntry::SetDefaultBoolean</a></div><div class="ttdeci">bool SetDefaultBoolean(bool defaultValue)</div><div class="ttdoc">Sets the entry's value if it does not exist.</div><div class="ttdef"><b>Definition:</b> NetworkTableEntry.inc:137</div></div>
 <div class="ttc" id="aclassnt_1_1_network_table_entry_html_ac8b068af2c558727aaee4451b3e0b739"><div class="ttname"><a href="classnt_1_1_network_table_entry.html#ac8b068af2c558727aaee4451b3e0b739">nt::NetworkTableEntry::Flags</a></div><div class="ttdeci">Flags</div><div class="ttdoc">Flag values (as returned by GetFlags()).</div><div class="ttdef"><b>Definition:</b> NetworkTableEntry.h:37</div></div>
+<div class="ttc" id="aclassnt_1_1_network_table_entry_html_ac8b068af2c558727aaee4451b3e0b739ac493bd8fdc6e9fd059602e78913bd5ef"><div class="ttname"><a href="classnt_1_1_network_table_entry.html#ac8b068af2c558727aaee4451b3e0b739ac493bd8fdc6e9fd059602e78913bd5ef">nt::NetworkTableEntry::kPersistent</a></div><div class="ttdeci">@ kPersistent</div><div class="ttdef"><b>Definition:</b> NetworkTableEntry.h:37</div></div>
 <div class="ttc" id="aclassnt_1_1_network_table_entry_html_acb1ae48e06f583091ef75cb8e4a7ff68"><div class="ttname"><a href="classnt_1_1_network_table_entry.html#acb1ae48e06f583091ef75cb8e4a7ff68">nt::NetworkTableEntry::ForceSetDoubleArray</a></div><div class="ttdeci">void ForceSetDoubleArray(wpi::span&lt; const double &gt; value)</div><div class="ttdoc">Sets the entry's value.</div><div class="ttdef"><b>Definition:</b> NetworkTableEntry.inc:280</div></div>
 <div class="ttc" id="aclassnt_1_1_network_table_entry_html_acb595ff44aeda11d0fa3a727c298272a"><div class="ttname"><a href="classnt_1_1_network_table_entry.html#acb595ff44aeda11d0fa3a727c298272a">nt::NetworkTableEntry::operator!=</a></div><div class="ttdeci">bool operator!=(const NetworkTableEntry &amp;oth) const</div><div class="ttdoc">Inequality operator.</div><div class="ttdef"><b>Definition:</b> NetworkTableEntry.h:629</div></div>
 <div class="ttc" id="aclassnt_1_1_network_table_entry_html_acb5bbb25a722a9ed35fb72e3639d36a5"><div class="ttname"><a href="classnt_1_1_network_table_entry.html#acb5bbb25a722a9ed35fb72e3639d36a5">nt::NetworkTableEntry::GetValue</a></div><div class="ttdeci">std::shared_ptr&lt; Value &gt; GetValue() const</div><div class="ttdoc">Gets the entry's value.</div><div class="ttdef"><b>Definition:</b> NetworkTableEntry.inc:50</div></div>
@@ -798,16 +804,25 @@ $(document).ready(function(){initNavTree('_network_table_entry_8h_source.html','
 <div class="ttc" id="aclassnt_1_1_rpc_call_html"><div class="ttname"><a href="classnt_1_1_rpc_call.html">nt::RpcCall</a></div><div class="ttdoc">NetworkTables Remote Procedure Call.</div><div class="ttdef"><b>Definition:</b> RpcCall.h:21</div></div>
 <div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1120</div></div>
 <div class="ttc" id="aclasswpi_1_1span_html"><div class="ttname"><a href="classwpi_1_1span.html">wpi::span</a></div><div class="ttdef"><b>Definition:</b> span.h:114</div></div>
+<div class="ttc" id="acore_8h_html_a204ca715c2febee035464fa53dfc50c4"><div class="ttname"><a href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">string_view</a></div><div class="ttdeci">basic_string_view&lt; char &gt; string_view</div><div class="ttdef"><b>Definition:</b> core.h:529</div></div>
+<div class="ttc" id="agroup__ntcore__c__api_html_gad91d5f62743ec7bc10e2dde32748188d"><div class="ttname"><a href="group__ntcore__c__api.html#gad91d5f62743ec7bc10e2dde32748188d">NT_EntryListener</a></div><div class="ttdeci">NT_Handle NT_EntryListener</div><div class="ttdef"><b>Definition:</b> ntcore_c.h:35</div></div>
+<div class="ttc" id="agroup__ntcore__c__api_html_gaf64e436c9ab92f866d57519eeb2a2a09"><div class="ttname"><a href="group__ntcore__c__api.html#gaf64e436c9ab92f866d57519eeb2a2a09">NT_Entry</a></div><div class="ttdeci">NT_Handle NT_Entry</div><div class="ttdef"><b>Definition:</b> ntcore_c.h:34</div></div>
+<div class="ttc" id="agroup__ntcore__c__api_html_gga3cca2867677bf312d4d8df4aa48a09d7a3a52e7917f951a0c6ea1b70ef48efb65"><div class="ttname"><a href="group__ntcore__c__api.html#gga3cca2867677bf312d4d8df4aa48a09d7a3a52e7917f951a0c6ea1b70ef48efb65">NT_PERSISTENT</a></div><div class="ttdeci">@ NT_PERSISTENT</div><div class="ttdef"><b>Definition:</b> ntcore_c.h:60</div></div>
 <div class="ttc" id="agroup__ntcore__cpp__api_html_ga6389efeaed0733f40baa02cd3070a15c"><div class="ttname"><a href="group__ntcore__cpp__api.html#ga6389efeaed0733f40baa02cd3070a15c">nt::NetworkTableType</a></div><div class="ttdeci">NetworkTableType</div><div class="ttdoc">NetworkTable entry type.</div><div class="ttdef"><b>Definition:</b> NetworkTableType.h:16</div></div>
-<div class="ttc" id="anamespacent_html"><div class="ttname"><a href="namespacent.html">nt</a></div><div class="ttdoc">NetworkTables (ntcore) namespace.</div><div class="ttdef"><b>Definition:</b> ntcore_cpp.h:24</div></div>
+<div class="ttc" id="anamespace_eigen_1_1numext_html_a637f20cd528b31ef3ce8d1ef803ebbde"><div class="ttname"><a href="namespace_eigen_1_1numext.html#a637f20cd528b31ef3ce8d1ef803ebbde">Eigen::numext::uint64_t</a></div><div class="ttdeci">typedef::uint64_t uint64_t</div><div class="ttdef"><b>Definition:</b> Meta.h:58</div></div>
+<div class="ttc" id="anamespacent_html"><div class="ttname"><a href="namespacent.html">nt</a></div><div class="ttdoc">NetworkTables (ntcore) namespace.</div><div class="ttdef"><b>Definition:</b> NetworkTableEntry.inc:15</div></div>
+<div class="ttc" id="anamespacewpi_html_a7b0000b45b0b55789f757f1c3d2461cb"><div class="ttname"><a href="namespacewpi.html#a7b0000b45b0b55789f757f1c3d2461cb">wpi::flags</a></div><div class="ttdeci">flags</div><div class="ttdef"><b>Definition:</b> http_parser.h:206</div></div>
+<div class="ttc" id="antcore__c_8h_html"><div class="ttname"><a href="ntcore__c_8h.html">ntcore_c.h</a></div></div>
+<div class="ttc" id="antcore__cpp_8h_html"><div class="ttname"><a href="ntcore__cpp_8h.html">ntcore_cpp.h</a></div></div>
+<div class="ttc" id="aspan_8h_html"><div class="ttname"><a href="span_8h.html">span.h</a></div></div>
 <div class="ttc" id="astructnt_1_1_entry_info_html"><div class="ttname"><a href="structnt_1_1_entry_info.html">nt::EntryInfo</a></div><div class="ttdoc">NetworkTables Entry Information.</div><div class="ttdef"><b>Definition:</b> ntcore_cpp.h:35</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_46f80a5b907f4a68e6277ec93a133082.html">networktables</a></li><li class="navelem"><b>NetworkTableEntry.h</b></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:34 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="dir_46f80a5b907f4a68e6277ec93a133082.html">networktables</a></li><li class="navelem"><a class="el" href="_network_table_entry_8h.html">NetworkTableEntry.h</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:19 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

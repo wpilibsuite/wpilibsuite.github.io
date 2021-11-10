@@ -15,5 +15,6 @@ var classfrc_1_1sim_1_1_generic_h_i_d_sim =
     [ "SetPOVCount", "classfrc_1_1sim_1_1_generic_h_i_d_sim.html#abd1bf586dcd6cd0c72e791211f07fad0", null ],
     [ "SetRawAxis", "classfrc_1_1sim_1_1_generic_h_i_d_sim.html#aaf8bd426f1931bda1daa5c2feb14c9f7", null ],
     [ "SetRawButton", "classfrc_1_1sim_1_1_generic_h_i_d_sim.html#a42deac0815dc2fb3967c636c0695349c", null ],
-    [ "SetType", "classfrc_1_1sim_1_1_generic_h_i_d_sim.html#a8d568347fc2e9ee472ad20872ffb9cad", null ]
+    [ "SetType", "classfrc_1_1sim_1_1_generic_h_i_d_sim.html#a8d568347fc2e9ee472ad20872ffb9cad", null ],
+    [ "m_port", "classfrc_1_1sim_1_1_generic_h_i_d_sim.html#af0d24f353d1890d03ff68ae1f71330ae", null ]
 ];

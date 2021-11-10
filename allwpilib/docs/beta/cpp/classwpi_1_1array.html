@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -111,43 +111,327 @@ Inheritance diagram for wpi::array&lt; T, N &gt;:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a59c9fcdd33a39224b31b69dd005a8b62"><td class="memItemLeft" align="right" valign="top"><a id="a59c9fcdd33a39224b31b69dd005a8b62" name="a59c9fcdd33a39224b31b69dd005a8b62"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>array</b> (<a class="el" href="structwpi_1_1empty__array__t.html">empty_array_t</a>)</td></tr>
+<tr class="memitem:a59c9fcdd33a39224b31b69dd005a8b62"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1array.html#a59c9fcdd33a39224b31b69dd005a8b62">array</a> (<a class="el" href="structwpi_1_1empty__array__t.html">empty_array_t</a>)</td></tr>
 <tr class="separator:a59c9fcdd33a39224b31b69dd005a8b62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d1a00091869579014036fc7c14ba86e"><td class="memTemplParams" colspan="2"><a id="a6d1a00091869579014036fc7c14ba86e" name="a6d1a00091869579014036fc7c14ba86e"></a>
-template&lt;typename... Ts&gt; </td></tr>
-<tr class="memitem:a6d1a00091869579014036fc7c14ba86e"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><b>array</b> (T arg, Ts &amp;&amp;... args)</td></tr>
+<tr class="memitem:a6d1a00091869579014036fc7c14ba86e"><td class="memTemplParams" colspan="2">template&lt;typename... Ts&gt; </td></tr>
+<tr class="memitem:a6d1a00091869579014036fc7c14ba86e"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classwpi_1_1array.html#a6d1a00091869579014036fc7c14ba86e">array</a> (T <a class="el" href="_array_cwise_unary_ops_8h.html#a41ceecca5805bbcbeb0928339a0714da">arg</a>, Ts &amp;&amp;... args)</td></tr>
 <tr class="separator:a6d1a00091869579014036fc7c14ba86e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adcbba6d46ba698ddec893f48b748ddb1"><td class="memItemLeft" align="right" valign="top"><a id="adcbba6d46ba698ddec893f48b748ddb1" name="adcbba6d46ba698ddec893f48b748ddb1"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>array</b> (const <a class="el" href="classwpi_1_1array.html">array</a>&lt; T, N &gt; &amp;)=default</td></tr>
+<tr class="memitem:adcbba6d46ba698ddec893f48b748ddb1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1array.html#adcbba6d46ba698ddec893f48b748ddb1">array</a> (const <a class="el" href="classwpi_1_1array.html">array</a>&lt; T, N &gt; &amp;)=default</td></tr>
 <tr class="separator:adcbba6d46ba698ddec893f48b748ddb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ef832f9d799acc54b2f0478f1d706cb"><td class="memItemLeft" align="right" valign="top"><a id="a4ef832f9d799acc54b2f0478f1d706cb" name="a4ef832f9d799acc54b2f0478f1d706cb"></a>
-<a class="el" href="classwpi_1_1array.html">array</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classwpi_1_1array.html">array</a>&lt; T, N &gt; &amp;)=default</td></tr>
+<tr class="memitem:a4ef832f9d799acc54b2f0478f1d706cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1array.html">array</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1array.html#a4ef832f9d799acc54b2f0478f1d706cb">operator=</a> (const <a class="el" href="classwpi_1_1array.html">array</a>&lt; T, N &gt; &amp;)=default</td></tr>
 <tr class="separator:a4ef832f9d799acc54b2f0478f1d706cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10a87412249e7e7b6a46f33564e20673"><td class="memItemLeft" align="right" valign="top"><a id="a10a87412249e7e7b6a46f33564e20673" name="a10a87412249e7e7b6a46f33564e20673"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>array</b> (<a class="el" href="classwpi_1_1array.html">array</a>&lt; T, N &gt; &amp;&amp;)=default</td></tr>
+<tr class="memitem:a10a87412249e7e7b6a46f33564e20673"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1array.html#a10a87412249e7e7b6a46f33564e20673">array</a> (<a class="el" href="classwpi_1_1array.html">array</a>&lt; T, N &gt; &amp;&amp;)=default</td></tr>
 <tr class="separator:a10a87412249e7e7b6a46f33564e20673"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34275dd872a54626159c0fe077dd77ca"><td class="memItemLeft" align="right" valign="top"><a id="a34275dd872a54626159c0fe077dd77ca" name="a34275dd872a54626159c0fe077dd77ca"></a>
-<a class="el" href="classwpi_1_1array.html">array</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classwpi_1_1array.html">array</a>&lt; T, N &gt; &amp;&amp;)=default</td></tr>
+<tr class="memitem:a34275dd872a54626159c0fe077dd77ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1array.html">array</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1array.html#a34275dd872a54626159c0fe077dd77ca">operator=</a> (<a class="el" href="classwpi_1_1array.html">array</a>&lt; T, N &gt; &amp;&amp;)=default</td></tr>
 <tr class="separator:a34275dd872a54626159c0fe077dd77ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a692a65f2e70d4d33d590e22c17cba49f"><td class="memItemLeft" align="right" valign="top"><a id="a692a65f2e70d4d33d590e22c17cba49f" name="a692a65f2e70d4d33d590e22c17cba49f"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>array</b> (const std::array&lt; T, N &gt; &amp;rhs)</td></tr>
+<tr class="memitem:a692a65f2e70d4d33d590e22c17cba49f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1array.html#a692a65f2e70d4d33d590e22c17cba49f">array</a> (const std::array&lt; T, N &gt; &amp;rhs)</td></tr>
 <tr class="separator:a692a65f2e70d4d33d590e22c17cba49f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1676d4f0daef7d50261417a9cbc87e4"><td class="memItemLeft" align="right" valign="top"><a id="ab1676d4f0daef7d50261417a9cbc87e4" name="ab1676d4f0daef7d50261417a9cbc87e4"></a>
-<a class="el" href="classwpi_1_1array.html">array</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const std::array&lt; T, N &gt; &amp;rhs)</td></tr>
+<tr class="memitem:ab1676d4f0daef7d50261417a9cbc87e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1array.html">array</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1array.html#ab1676d4f0daef7d50261417a9cbc87e4">operator=</a> (const std::array&lt; T, N &gt; &amp;rhs)</td></tr>
 <tr class="separator:ab1676d4f0daef7d50261417a9cbc87e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ec1ca887bd677207d649c03967f8632"><td class="memItemLeft" align="right" valign="top"><a id="a3ec1ca887bd677207d649c03967f8632" name="a3ec1ca887bd677207d649c03967f8632"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>array</b> (std::array&lt; T, N &gt; &amp;&amp;rhs)</td></tr>
+<tr class="memitem:a3ec1ca887bd677207d649c03967f8632"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1array.html#a3ec1ca887bd677207d649c03967f8632">array</a> (std::array&lt; T, N &gt; &amp;&amp;rhs)</td></tr>
 <tr class="separator:a3ec1ca887bd677207d649c03967f8632"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a217ed72743c795883eeed528fbb18b46"><td class="memItemLeft" align="right" valign="top"><a id="a217ed72743c795883eeed528fbb18b46" name="a217ed72743c795883eeed528fbb18b46"></a>
-<a class="el" href="classwpi_1_1array.html">array</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (std::array&lt; T, N &gt; &amp;&amp;rhs)</td></tr>
+<tr class="memitem:a217ed72743c795883eeed528fbb18b46"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1array.html">array</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1array.html#a217ed72743c795883eeed528fbb18b46">operator=</a> (std::array&lt; T, N &gt; &amp;&amp;rhs)</td></tr>
 <tr class="separator:a217ed72743c795883eeed528fbb18b46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename T, size_t N&gt;<br />
 class wpi::array&lt; T, N &gt;</div><p >This class is a wrapper around std::array that does compile time size checking. </p>
 <p >std::array's implicit constructor can lead result in uninitialized elements if the number of arguments doesn't match the std::array size. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a59c9fcdd33a39224b31b69dd005a8b62" name="a59c9fcdd33a39224b31b69dd005a8b62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59c9fcdd33a39224b31b69dd005a8b62">&#9670;&nbsp;</a></span>array() <span class="overload">[1/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; T, N &gt;::<a class="el" href="classwpi_1_1array.html">array</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structwpi_1_1empty__array__t.html">empty_array_t</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6d1a00091869579014036fc7c14ba86e" name="a6d1a00091869579014036fc7c14ba86e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d1a00091869579014036fc7c14ba86e">&#9670;&nbsp;</a></span>array() <span class="overload">[2/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , size_t N&gt; </div>
+<div class="memtemplate">
+template&lt;typename... Ts&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; T, N &gt;::<a class="el" href="classwpi_1_1array.html">array</a> </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>arg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Ts &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adcbba6d46ba698ddec893f48b748ddb1" name="adcbba6d46ba698ddec893f48b748ddb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcbba6d46ba698ddec893f48b748ddb1">&#9670;&nbsp;</a></span>array() <span class="overload">[3/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; T, N &gt;::<a class="el" href="classwpi_1_1array.html">array</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classwpi_1_1array.html">array</a>&lt; T, N &gt; &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a10a87412249e7e7b6a46f33564e20673" name="a10a87412249e7e7b6a46f33564e20673"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10a87412249e7e7b6a46f33564e20673">&#9670;&nbsp;</a></span>array() <span class="overload">[4/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; T, N &gt;::<a class="el" href="classwpi_1_1array.html">array</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classwpi_1_1array.html">array</a>&lt; T, N &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a692a65f2e70d4d33d590e22c17cba49f" name="a692a65f2e70d4d33d590e22c17cba49f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a692a65f2e70d4d33d590e22c17cba49f">&#9670;&nbsp;</a></span>array() <span class="overload">[5/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; T, N &gt;::<a class="el" href="classwpi_1_1array.html">array</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::array&lt; T, N &gt; &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3ec1ca887bd677207d649c03967f8632" name="a3ec1ca887bd677207d649c03967f8632"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ec1ca887bd677207d649c03967f8632">&#9670;&nbsp;</a></span>array() <span class="overload">[6/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; T, N &gt;::<a class="el" href="classwpi_1_1array.html">array</a> </td>
+          <td>(</td>
+          <td class="paramtype">std::array&lt; T, N &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a34275dd872a54626159c0fe077dd77ca" name="a34275dd872a54626159c0fe077dd77ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34275dd872a54626159c0fe077dd77ca">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwpi_1_1array.html">array</a> &amp; <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; T, N &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classwpi_1_1array.html">array</a>&lt; T, N &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4ef832f9d799acc54b2f0478f1d706cb" name="a4ef832f9d799acc54b2f0478f1d706cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ef832f9d799acc54b2f0478f1d706cb">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwpi_1_1array.html">array</a> &amp; <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; T, N &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classwpi_1_1array.html">array</a>&lt; T, N &gt; &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab1676d4f0daef7d50261417a9cbc87e4" name="ab1676d4f0daef7d50261417a9cbc87e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1676d4f0daef7d50261417a9cbc87e4">&#9670;&nbsp;</a></span>operator=() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwpi_1_1array.html">array</a> &amp; <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; T, N &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const std::array&lt; T, N &gt; &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a217ed72743c795883eeed528fbb18b46" name="a217ed72743c795883eeed528fbb18b46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a217ed72743c795883eeed528fbb18b46">&#9670;&nbsp;</a></span>operator=() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , size_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwpi_1_1array.html">array</a> &amp; <a class="el" href="classwpi_1_1array.html">wpi::array</a>&lt; T, N &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">std::array&lt; T, N &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>rhs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>wpi/<a class="el" href="wpiutil_2src_2main_2native_2include_2wpi_2array_8h_source.html">array.h</a></li>
 </ul>
 </div><!-- contents -->
@@ -155,8 +439,8 @@ class wpi::array&lt; T, N &gt;</div><p >This class is a wrapper around std::arra
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>wpi</b></li><li class="navelem"><a class="el" href="classwpi_1_1array.html">array</a></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:52 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="classwpi_1_1array.html">array</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:40 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

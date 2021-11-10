@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -98,29 +98,148 @@ $(document).ready(function(){initNavTree('class_eigen_1_1internal_1_1qr__precond
   <div class="headertitle"><div class="title">Eigen::internal::qr_preconditioner_impl&lt; MatrixType, FullPivHouseholderQRPreconditioner, PreconditionIfMoreRowsThanCols, true &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_jacobi_s_v_d_8h_source.html">/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/eigeninclude/Eigen/src/SVD/JacobiSVD.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a10fbfe93509cdca213858313fa8b3bdb"><td class="memItemLeft" align="right" valign="top"><a id="a10fbfe93509cdca213858313fa8b3bdb" name="a10fbfe93509cdca213858313fa8b3bdb"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>RowsAtCompileTime</b> = MatrixType::RowsAtCompileTime
-, <b>MaxRowsAtCompileTime</b> = MatrixType::MaxRowsAtCompileTime
+<tr class="memitem:ad42877f1885bd1faed86b5de0015be8d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="class_eigen_1_1internal_1_1qr__preconditioner__impl_3_01_matrix_type_00_01_full_piv_householder_b68efcf0da0383d73ce7fb20aafa2293.html#ad42877f1885bd1faed86b5de0015be8dac04646de84f44a8376e8c5fa64922112">RowsAtCompileTime</a> = MatrixType::RowsAtCompileTime
+, <a class="el" href="class_eigen_1_1internal_1_1qr__preconditioner__impl_3_01_matrix_type_00_01_full_piv_householder_b68efcf0da0383d73ce7fb20aafa2293.html#ad42877f1885bd1faed86b5de0015be8dafe974d81c81f824bd0e4a51c62028ba6">MaxRowsAtCompileTime</a> = MatrixType::MaxRowsAtCompileTime
  }</td></tr>
-<tr class="separator:a10fbfe93509cdca213858313fa8b3bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6598c76a30eba4be4175fd6024520646"><td class="memItemLeft" align="right" valign="top"><a id="a6598c76a30eba4be4175fd6024520646" name="a6598c76a30eba4be4175fd6024520646"></a>
-typedef MatrixType::Scalar&#160;</td><td class="memItemRight" valign="bottom"><b>Scalar</b></td></tr>
+<tr class="separator:ad42877f1885bd1faed86b5de0015be8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6598c76a30eba4be4175fd6024520646"><td class="memItemLeft" align="right" valign="top">typedef MatrixType::Scalar&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1internal_1_1qr__preconditioner__impl_3_01_matrix_type_00_01_full_piv_householder_b68efcf0da0383d73ce7fb20aafa2293.html#a6598c76a30eba4be4175fd6024520646">Scalar</a></td></tr>
 <tr class="separator:a6598c76a30eba4be4175fd6024520646"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd199f9e16acf39324487c2bcff62fc1"><td class="memItemLeft" align="right" valign="top"><a id="acd199f9e16acf39324487c2bcff62fc1" name="acd199f9e16acf39324487c2bcff62fc1"></a>
-typedef <a class="el" href="class_eigen_1_1_matrix.html">Matrix</a>&lt; Scalar, 1, RowsAtCompileTime, <a class="el" href="group__enums.html#ggaacded1a18ae58b0f554751f6cdf9eb13a77c993a8d9f6efe5c1159fb2ab07dd4f">RowMajor</a>, 1, MaxRowsAtCompileTime &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>WorkspaceType</b></td></tr>
+<tr class="memitem:acd199f9e16acf39324487c2bcff62fc1"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="class_eigen_1_1_matrix.html">Matrix</a>&lt; <a class="el" href="class_eigen_1_1internal_1_1qr__preconditioner__impl_3_01_matrix_type_00_01_full_piv_householder_b68efcf0da0383d73ce7fb20aafa2293.html#a6598c76a30eba4be4175fd6024520646">Scalar</a>, 1, <a class="el" href="class_eigen_1_1internal_1_1qr__preconditioner__impl_3_01_matrix_type_00_01_full_piv_householder_b68efcf0da0383d73ce7fb20aafa2293.html#ad42877f1885bd1faed86b5de0015be8dac04646de84f44a8376e8c5fa64922112">RowsAtCompileTime</a>, <a class="el" href="group__enums.html#ggaacded1a18ae58b0f554751f6cdf9eb13a77c993a8d9f6efe5c1159fb2ab07dd4f">RowMajor</a>, 1, <a class="el" href="class_eigen_1_1internal_1_1qr__preconditioner__impl_3_01_matrix_type_00_01_full_piv_householder_b68efcf0da0383d73ce7fb20aafa2293.html#ad42877f1885bd1faed86b5de0015be8dafe974d81c81f824bd0e4a51c62028ba6">MaxRowsAtCompileTime</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1internal_1_1qr__preconditioner__impl_3_01_matrix_type_00_01_full_piv_householder_b68efcf0da0383d73ce7fb20aafa2293.html#acd199f9e16acf39324487c2bcff62fc1">WorkspaceType</a></td></tr>
 <tr class="separator:acd199f9e16acf39324487c2bcff62fc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aaf51bc2637a96e8069128f3ee9eb1726"><td class="memItemLeft" align="right" valign="top"><a id="aaf51bc2637a96e8069128f3ee9eb1726" name="aaf51bc2637a96e8069128f3ee9eb1726"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>allocate</b> (const <a class="el" href="class_eigen_1_1_jacobi_s_v_d.html">JacobiSVD</a>&lt; MatrixType, <a class="el" href="group__enums.html#gga46eba0d5c621f590b8cf1b53af31d56eabd745dcaff7019c5f918c68809e5ea50">FullPivHouseholderQRPreconditioner</a> &gt; &amp;svd)</td></tr>
+<tr class="memitem:aaf51bc2637a96e8069128f3ee9eb1726"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1internal_1_1qr__preconditioner__impl_3_01_matrix_type_00_01_full_piv_householder_b68efcf0da0383d73ce7fb20aafa2293.html#aaf51bc2637a96e8069128f3ee9eb1726">allocate</a> (const <a class="el" href="class_eigen_1_1_jacobi_s_v_d.html">JacobiSVD</a>&lt; MatrixType, <a class="el" href="group__enums.html#gga46eba0d5c621f590b8cf1b53af31d56eabd745dcaff7019c5f918c68809e5ea50">FullPivHouseholderQRPreconditioner</a> &gt; &amp;svd)</td></tr>
 <tr class="separator:aaf51bc2637a96e8069128f3ee9eb1726"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9e7960349091e9d4c44b9a0a31b0931"><td class="memItemLeft" align="right" valign="top"><a id="ab9e7960349091e9d4c44b9a0a31b0931" name="ab9e7960349091e9d4c44b9a0a31b0931"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> (<a class="el" href="class_eigen_1_1_jacobi_s_v_d.html">JacobiSVD</a>&lt; MatrixType, <a class="el" href="group__enums.html#gga46eba0d5c621f590b8cf1b53af31d56eabd745dcaff7019c5f918c68809e5ea50">FullPivHouseholderQRPreconditioner</a> &gt; &amp;svd, const MatrixType &amp;matrix)</td></tr>
+<tr class="memitem:ab9e7960349091e9d4c44b9a0a31b0931"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eigen_1_1internal_1_1qr__preconditioner__impl_3_01_matrix_type_00_01_full_piv_householder_b68efcf0da0383d73ce7fb20aafa2293.html#ab9e7960349091e9d4c44b9a0a31b0931">run</a> (<a class="el" href="class_eigen_1_1_jacobi_s_v_d.html">JacobiSVD</a>&lt; MatrixType, <a class="el" href="group__enums.html#gga46eba0d5c621f590b8cf1b53af31d56eabd745dcaff7019c5f918c68809e5ea50">FullPivHouseholderQRPreconditioner</a> &gt; &amp;svd, const MatrixType &amp;matrix)</td></tr>
 <tr class="separator:ab9e7960349091e9d4c44b9a0a31b0931"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a6598c76a30eba4be4175fd6024520646" name="a6598c76a30eba4be4175fd6024520646"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6598c76a30eba4be4175fd6024520646">&#9670;&nbsp;</a></span>Scalar</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MatrixType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef MatrixType::Scalar <a class="el" href="struct_eigen_1_1internal_1_1qr__preconditioner__impl.html">Eigen::internal::qr_preconditioner_impl</a>&lt; MatrixType, <a class="el" href="group__enums.html#gga46eba0d5c621f590b8cf1b53af31d56eabd745dcaff7019c5f918c68809e5ea50">FullPivHouseholderQRPreconditioner</a>, <a class="el" href="namespace_eigen_1_1internal.html#a50c39a8fc3aba77f78fe3feb8e2e6896af43dd09c4617ed9311811a15db114b62">PreconditionIfMoreRowsThanCols</a>, true &gt;::<a class="el" href="class_eigen_1_1internal_1_1qr__preconditioner__impl_3_01_matrix_type_00_01_full_piv_householder_b68efcf0da0383d73ce7fb20aafa2293.html#a6598c76a30eba4be4175fd6024520646">Scalar</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acd199f9e16acf39324487c2bcff62fc1" name="acd199f9e16acf39324487c2bcff62fc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd199f9e16acf39324487c2bcff62fc1">&#9670;&nbsp;</a></span>WorkspaceType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MatrixType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="class_eigen_1_1_matrix.html">Matrix</a>&lt;<a class="el" href="class_eigen_1_1internal_1_1qr__preconditioner__impl_3_01_matrix_type_00_01_full_piv_householder_b68efcf0da0383d73ce7fb20aafa2293.html#a6598c76a30eba4be4175fd6024520646">Scalar</a>, 1, <a class="el" href="class_eigen_1_1internal_1_1qr__preconditioner__impl_3_01_matrix_type_00_01_full_piv_householder_b68efcf0da0383d73ce7fb20aafa2293.html#ad42877f1885bd1faed86b5de0015be8dac04646de84f44a8376e8c5fa64922112">RowsAtCompileTime</a>, <a class="el" href="group__enums.html#ggaacded1a18ae58b0f554751f6cdf9eb13a77c993a8d9f6efe5c1159fb2ab07dd4f">RowMajor</a>, 1, <a class="el" href="class_eigen_1_1internal_1_1qr__preconditioner__impl_3_01_matrix_type_00_01_full_piv_householder_b68efcf0da0383d73ce7fb20aafa2293.html#ad42877f1885bd1faed86b5de0015be8dafe974d81c81f824bd0e4a51c62028ba6">MaxRowsAtCompileTime</a>&gt; <a class="el" href="struct_eigen_1_1internal_1_1qr__preconditioner__impl.html">Eigen::internal::qr_preconditioner_impl</a>&lt; MatrixType, <a class="el" href="group__enums.html#gga46eba0d5c621f590b8cf1b53af31d56eabd745dcaff7019c5f918c68809e5ea50">FullPivHouseholderQRPreconditioner</a>, <a class="el" href="namespace_eigen_1_1internal.html#a50c39a8fc3aba77f78fe3feb8e2e6896af43dd09c4617ed9311811a15db114b62">PreconditionIfMoreRowsThanCols</a>, true &gt;::<a class="el" href="class_eigen_1_1internal_1_1qr__preconditioner__impl_3_01_matrix_type_00_01_full_piv_householder_b68efcf0da0383d73ce7fb20aafa2293.html#acd199f9e16acf39324487c2bcff62fc1">WorkspaceType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="ad42877f1885bd1faed86b5de0015be8d" name="ad42877f1885bd1faed86b5de0015be8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad42877f1885bd1faed86b5de0015be8d">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MatrixType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad42877f1885bd1faed86b5de0015be8dac04646de84f44a8376e8c5fa64922112" name="ad42877f1885bd1faed86b5de0015be8dac04646de84f44a8376e8c5fa64922112"></a>RowsAtCompileTime&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad42877f1885bd1faed86b5de0015be8dafe974d81c81f824bd0e4a51c62028ba6" name="ad42877f1885bd1faed86b5de0015be8dafe974d81c81f824bd0e4a51c62028ba6"></a>MaxRowsAtCompileTime&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aaf51bc2637a96e8069128f3ee9eb1726" name="aaf51bc2637a96e8069128f3ee9eb1726"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf51bc2637a96e8069128f3ee9eb1726">&#9670;&nbsp;</a></span>allocate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MatrixType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="struct_eigen_1_1internal_1_1qr__preconditioner__impl.html">Eigen::internal::qr_preconditioner_impl</a>&lt; MatrixType, <a class="el" href="group__enums.html#gga46eba0d5c621f590b8cf1b53af31d56eabd745dcaff7019c5f918c68809e5ea50">FullPivHouseholderQRPreconditioner</a>, <a class="el" href="namespace_eigen_1_1internal.html#a50c39a8fc3aba77f78fe3feb8e2e6896af43dd09c4617ed9311811a15db114b62">PreconditionIfMoreRowsThanCols</a>, true &gt;::allocate </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_eigen_1_1_jacobi_s_v_d.html">JacobiSVD</a>&lt; MatrixType, <a class="el" href="group__enums.html#gga46eba0d5c621f590b8cf1b53af31d56eabd745dcaff7019c5f918c68809e5ea50">FullPivHouseholderQRPreconditioner</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>svd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab9e7960349091e9d4c44b9a0a31b0931" name="ab9e7960349091e9d4c44b9a0a31b0931"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9e7960349091e9d4c44b9a0a31b0931">&#9670;&nbsp;</a></span>run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename MatrixType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="struct_eigen_1_1internal_1_1qr__preconditioner__impl.html">Eigen::internal::qr_preconditioner_impl</a>&lt; MatrixType, <a class="el" href="group__enums.html#gga46eba0d5c621f590b8cf1b53af31d56eabd745dcaff7019c5f918c68809e5ea50">FullPivHouseholderQRPreconditioner</a>, <a class="el" href="namespace_eigen_1_1internal.html#a50c39a8fc3aba77f78fe3feb8e2e6896af43dd09c4617ed9311811a15db114b62">PreconditionIfMoreRowsThanCols</a>, true &gt;::run </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_eigen_1_1_jacobi_s_v_d.html">JacobiSVD</a>&lt; MatrixType, <a class="el" href="group__enums.html#gga46eba0d5c621f590b8cf1b53af31d56eabd745dcaff7019c5f918c68809e5ea50">FullPivHouseholderQRPreconditioner</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>svd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const MatrixType &amp;&#160;</td>
+          <td class="paramname"><em>matrix</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/eigeninclude/Eigen/src/SVD/<a class="el" href="_jacobi_s_v_d_8h_source.html">JacobiSVD.h</a></li>
 </ul>
@@ -129,8 +248,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> (<a class="el
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespace_eigen.html">Eigen</a></li><li class="navelem"><b>internal</b></li><li class="navelem"><a class="el" href="class_eigen_1_1internal_1_1qr__preconditioner__impl_3_01_matrix_type_00_01_full_piv_householder_b68efcf0da0383d73ce7fb20aafa2293.html">qr_preconditioner_impl&lt; MatrixType, FullPivHouseholderQRPreconditioner, PreconditionIfMoreRowsThanCols, true &gt;</a></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:49 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespace_eigen.html">Eigen</a></li><li class="navelem"><a class="el" href="namespace_eigen_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="class_eigen_1_1internal_1_1qr__preconditioner__impl_3_01_matrix_type_00_01_full_piv_householder_b68efcf0da0383d73ce7fb20aafa2293.html">qr_preconditioner_impl&lt; MatrixType, FullPivHouseholderQRPreconditioner, PreconditionIfMoreRowsThanCols, true &gt;</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:36 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

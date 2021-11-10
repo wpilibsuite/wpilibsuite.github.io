@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('_power_distribution_sim_8h_source.html
   <div class="headertitle"><div class="title">PowerDistributionSim.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
+<a href="_power_distribution_sim_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Open Source Software; you can modify and/or share it under the terms of</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// the WPILib BSD license file in the root directory of this project.</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
@@ -102,9 +102,9 @@ $(document).ready(function(){initNavTree('_power_distribution_sim_8h_source.html
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;frc/simulation/CallbackStore.h&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="_callback_store_8h.html">frc/simulation/CallbackStore.h</a>&quot;</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span>frc {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacefrc.html">frc</a> {</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">class </span>PowerDistribution;</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('_power_distribution_sim_8h_source.html
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">   * @return the CallbackStore object associated with this callback</span></div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_power_distribution_sim.html#a56a008c22f587e88d842919b916345ee">   43</a></span>  [[nodiscard]] std::unique_ptr&lt;CallbackStore&gt; <a class="code hl_function" href="classfrc_1_1sim_1_1_power_distribution_sim.html#a56a008c22f587e88d842919b916345ee">RegisterInitializedCallback</a>(</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>      NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>      <a class="code hl_typedef" href="namespacefrc_1_1sim.html#ae1c49733c190593b52d487461bac9083">NotifyCallback</a> callback, <span class="keywordtype">bool</span> initialNotify);</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment"></span> </div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">   * Check whether the PowerDistribution has been initialized.</span></div>
@@ -162,7 +162,7 @@ $(document).ready(function(){initNavTree('_power_distribution_sim_8h_source.html
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">   * @return the CallbackStore object associated with this callback</span></div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_power_distribution_sim.html#abc7b39cc3512bb96607ffeff98ba6ac6">   68</a></span>  [[nodiscard]] std::unique_ptr&lt;CallbackStore&gt; <a class="code hl_function" href="classfrc_1_1sim_1_1_power_distribution_sim.html#abc7b39cc3512bb96607ffeff98ba6ac6">RegisterTemperatureCallback</a>(</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>      NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>      <a class="code hl_typedef" href="namespacefrc_1_1sim.html#ae1c49733c190593b52d487461bac9083">NotifyCallback</a> callback, <span class="keywordtype">bool</span> initialNotify);</div>
 <div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment"></span> </div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">   * Check the temperature of the PowerDistribution.</span></div>
@@ -187,7 +187,7 @@ $(document).ready(function(){initNavTree('_power_distribution_sim_8h_source.html
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="comment">   * @return the CallbackStore object associated with this callback</span></div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_power_distribution_sim.html#aaebf842ad22631c2ade5ffe05a3fc481">   93</a></span>  [[nodiscard]] std::unique_ptr&lt;CallbackStore&gt; <a class="code hl_function" href="classfrc_1_1sim_1_1_power_distribution_sim.html#aaebf842ad22631c2ade5ffe05a3fc481">RegisterVoltageCallback</a>(</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>      NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>      <a class="code hl_typedef" href="namespacefrc_1_1sim.html#ae1c49733c190593b52d487461bac9083">NotifyCallback</a> callback, <span class="keywordtype">bool</span> initialNotify);</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment"></span> </div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment">   * Check the PowerDistribution voltage.</span></div>
@@ -213,7 +213,7 @@ $(document).ready(function(){initNavTree('_power_distribution_sim_8h_source.html
 <div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment">   * @return the CallbackStore object associated with this callback</span></div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="classfrc_1_1sim_1_1_power_distribution_sim.html#a3c8f9d99b9e0d7011243c45db6d3e151">  119</a></span>  [[nodiscard]] std::unique_ptr&lt;CallbackStore&gt; <a class="code hl_function" href="classfrc_1_1sim_1_1_power_distribution_sim.html#a3c8f9d99b9e0d7011243c45db6d3e151">RegisterCurrentCallback</a>(</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>      <span class="keywordtype">int</span> channel, NotifyCallback callback, <span class="keywordtype">bool</span> initialNotify);</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>      <span class="keywordtype">int</span> channel, <a class="code hl_typedef" href="namespacefrc_1_1sim.html#ae1c49733c190593b52d487461bac9083">NotifyCallback</a> callback, <span class="keywordtype">bool</span> initialNotify);</div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="comment"></span> </div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="comment">   * Read the current in one of the PowerDistribution channels.</span></div>
@@ -261,6 +261,7 @@ $(document).ready(function(){initNavTree('_power_distribution_sim_8h_source.html
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>};</div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>}  <span class="comment">// namespace sim</span></div>
 <div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>}  <span class="comment">// namespace frc</span></div>
+<div class="ttc" id="a_callback_store_8h_html"><div class="ttname"><a href="_callback_store_8h.html">CallbackStore.h</a></div></div>
 <div class="ttc" id="aclassfrc_1_1_power_distribution_html"><div class="ttname"><a href="classfrc_1_1_power_distribution.html">frc::PowerDistribution</a></div><div class="ttdoc">Class for getting voltage, current, temperature, power and energy from the CAN PDP.</div><div class="ttdef"><b>Definition:</b> PowerDistribution.h:18</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1_power_distribution_sim_html"><div class="ttname"><a href="classfrc_1_1sim_1_1_power_distribution_sim.html">frc::sim::PowerDistributionSim</a></div><div class="ttdoc">Class to control a simulated Power Distribution Panel (PowerDistribution).</div><div class="ttdef"><b>Definition:</b> PowerDistributionSim.h:20</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1_power_distribution_sim_html_a1ce99eb91a0faa2260da13d4e2a2ed86"><div class="ttname"><a href="classfrc_1_1sim_1_1_power_distribution_sim.html#a1ce99eb91a0faa2260da13d4e2a2ed86">frc::sim::PowerDistributionSim::GetInitialized</a></div><div class="ttdeci">bool GetInitialized() const</div><div class="ttdoc">Check whether the PowerDistribution has been initialized.</div></div>
@@ -280,13 +281,15 @@ $(document).ready(function(){initNavTree('_power_distribution_sim_8h_source.html
 <div class="ttc" id="aclassfrc_1_1sim_1_1_power_distribution_sim_html_ad04cfc6dd21a132cda925a6204f532ed"><div class="ttname"><a href="classfrc_1_1sim_1_1_power_distribution_sim.html#ad04cfc6dd21a132cda925a6204f532ed">frc::sim::PowerDistributionSim::SetCurrent</a></div><div class="ttdeci">void SetCurrent(int channel, double current)</div><div class="ttdoc">Change the current in the given channel.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1_power_distribution_sim_html_ad29d204717a56084fbed57be1bee01d8"><div class="ttname"><a href="classfrc_1_1sim_1_1_power_distribution_sim.html#ad29d204717a56084fbed57be1bee01d8">frc::sim::PowerDistributionSim::PowerDistributionSim</a></div><div class="ttdeci">PowerDistributionSim(const PowerDistribution &amp;pdp)</div><div class="ttdoc">Constructs from a PowerDistribution object.</div></div>
 <div class="ttc" id="aclassfrc_1_1sim_1_1_power_distribution_sim_html_afebe9c7b57c367e301242aaf3d4433a2"><div class="ttname"><a href="classfrc_1_1sim_1_1_power_distribution_sim.html#afebe9c7b57c367e301242aaf3d4433a2">frc::sim::PowerDistributionSim::GetCurrent</a></div><div class="ttdeci">double GetCurrent(int channel) const</div><div class="ttdoc">Read the current in one of the PowerDistribution channels.</div></div>
+<div class="ttc" id="anamespacefrc_1_1sim_html_ae1c49733c190593b52d487461bac9083"><div class="ttname"><a href="namespacefrc_1_1sim.html#ae1c49733c190593b52d487461bac9083">frc::sim::NotifyCallback</a></div><div class="ttdeci">std::function&lt; void(std::string_view, const HAL_Value *)&gt; NotifyCallback</div><div class="ttdef"><b>Definition:</b> CallbackStore.h:14</div></div>
+<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> VisionRunner.inc:9</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_297dc702852f645e4b9e531dac2da27d.html">simulation</a></li><li class="navelem"><b>PowerDistributionSim.h</b></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:35 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_297dc702852f645e4b9e531dac2da27d.html">simulation</a></li><li class="navelem"><a class="el" href="_power_distribution_sim_8h.html">PowerDistributionSim.h</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:20 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

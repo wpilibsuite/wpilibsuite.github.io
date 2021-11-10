@@ -1,5 +1,7 @@
 var classwpi_1_1uv_1_1_pipe =
 [
+    [ "Pipe", "classwpi_1_1uv_1_1_pipe.html#a5388ba886a4ea4c810cdc480a864cf4a", null ],
+    [ "~Pipe", "classwpi_1_1uv_1_1_pipe.html#a733bf110cc734a9b97421522ace9f3dd", null ],
     [ "Accept", "classwpi_1_1uv_1_1_pipe.html#ac8b9ba913cd7ca1580aeab45023589e3", null ],
     [ "Accept", "classwpi_1_1uv_1_1_pipe.html#afa3933df2db81521c11f9310e58fe6e8", null ],
     [ "Bind", "classwpi_1_1uv_1_1_pipe.html#aaa3dc37e2ac7715502b7310ddcf031e8", null ],

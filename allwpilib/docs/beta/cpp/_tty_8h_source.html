@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -94,21 +94,21 @@ $(document).ready(function(){initNavTree('_tty_8h_source.html',''); initResizabl
   <div class="headertitle"><div class="title">Tty.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
+<a href="_tty_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Open Source Software; you can modify and/or share it under the terms of</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// the WPILib BSD license file in the root directory of this project.</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#ifndef WPIUTIL_WPI_UV_TTY_H_</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#define WPIUTIL_WPI_UV_TTY_H_</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;uv.h&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;<a class="code" href="uv_8h.html">uv.h</a>&gt;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;utility&gt;</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;wpi/uv/Stream.h&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="_stream_8h.html">wpi/uv/Stream.h</a>&quot;</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span>wpi::uv {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacewpi_1_1uv.html">wpi::uv</a> {</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">class </span>Loop;</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">class </span>Tty;</div>
@@ -121,8 +121,8 @@ $(document).ready(function(){initNavTree('_tty_8h_source.html',''); initResizabl
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <span class="keyword">struct </span>private_init {};</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <span class="keyword">explicit</span> <a class="code hl_class" href="classwpi_1_1uv_1_1_tty.html">Tty</a>(<span class="keyword">const</span> private_init&amp;) {}</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <a class="code hl_class" href="classwpi_1_1uv_1_1_tty.html">~Tty</a>() <span class="keyword">noexcept</span> <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1_tty.html#a30da70992f5a828711ff18125d94eeb3">   28</a></span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classwpi_1_1uv_1_1_tty.html#a30da70992f5a828711ff18125d94eeb3">Tty</a>(<span class="keyword">const</span> private_init&amp;) {}</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1_tty.html#a12a9a992bc9961f3cd0720eb9e207120">   29</a></span>  <a class="code hl_function" href="classwpi_1_1uv_1_1_tty.html#a12a9a992bc9961f3cd0720eb9e207120">~Tty</a>() noexcept override = default;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment"></span> </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">   * Create a TTY handle.</span></div>
@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('_tty_8h_source.html',''); initResizabl
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">   * @param readable Specifies if you plan on calling StartRead().  stdin is</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">   *                 readable, stdout is not.</span></div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1_tty.html#a13138923615fcf2de813a998305bfacc">   39</a></span>  <span class="keyword">static</span> std::shared_ptr&lt;Tty&gt; <a class="code hl_function" href="classwpi_1_1uv_1_1_tty.html#a13138923615fcf2de813a998305bfacc">Create</a>(<a class="code hl_class" href="classwpi_1_1uv_1_1_loop.html">Loop</a>&amp; loop, uv_file fd, <span class="keywordtype">bool</span> readable);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1_tty.html#a13138923615fcf2de813a998305bfacc">   39</a></span>  static <a class="code hl_namespace" href="namespacestd.html">std</a>::shared_ptr&lt;<a class="code hl_class" href="classwpi_1_1uv_1_1_tty.html">Tty</a>&gt; <a class="code hl_function" href="classwpi_1_1uv_1_1_tty.html#a13138923615fcf2de813a998305bfacc">Create</a>(<a class="code hl_class" href="classwpi_1_1uv_1_1_loop.html">Loop</a>&amp; loop, <a class="code hl_typedef" href="unix_8h.html#a3e0dacd349e5c9b36895e83499367624">uv_file</a> fd, <span class="keywordtype">bool</span> readable);</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment"></span> </div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">   * Create a TTY handle.</span></div>
@@ -142,8 +142,8 @@ $(document).ready(function(){initNavTree('_tty_8h_source.html',''); initResizabl
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">   * @param readable Specifies if you plan on calling StartRead().  stdin is</span></div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">   *                 readable, stdout is not.</span></div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1_tty.html#a1faab21a95e90943019223e765af3563">   49</a></span>  <span class="keyword">static</span> std::shared_ptr&lt;Tty&gt; <a class="code hl_function" href="classwpi_1_1uv_1_1_tty.html#a1faab21a95e90943019223e765af3563">Create</a>(<span class="keyword">const</span> std::shared_ptr&lt;Loop&gt;&amp; loop,</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                                     uv_file fd, <span class="keywordtype">bool</span> readable) {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1_tty.html#a1faab21a95e90943019223e765af3563">   49</a></span>  static <a class="code hl_namespace" href="namespacestd.html">std</a>::shared_ptr&lt;<a class="code hl_class" href="classwpi_1_1uv_1_1_tty.html">Tty</a>&gt; <a class="code hl_function" href="classwpi_1_1uv_1_1_tty.html#a13138923615fcf2de813a998305bfacc">Create</a>(const <a class="code hl_namespace" href="namespacestd.html">std</a>::shared_ptr&lt;<a class="code hl_class" href="classwpi_1_1uv_1_1_loop.html">Loop</a>&gt;&amp; loop,</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                                     <a class="code hl_typedef" href="unix_8h.html#a3e0dacd349e5c9b36895e83499367624">uv_file</a> fd, <span class="keywordtype">bool</span> readable) {</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classwpi_1_1uv_1_1_tty.html#a13138923615fcf2de813a998305bfacc">Create</a>(*loop, fd, readable);</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  }</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment"></span> </div>
@@ -152,8 +152,8 @@ $(document).ready(function(){initNavTree('_tty_8h_source.html',''); initResizabl
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">   *</span></div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">   * @param mode terminal mode</span></div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1_tty.html#a42cb617dfc44dc45ab22f81c300c9c4b">   59</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1uv_1_1_tty.html#a42cb617dfc44dc45ab22f81c300c9c4b">SetMode</a>(uv_tty_mode_t mode) {</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordtype">int</span> err = uv_tty_set_mode(<a class="code hl_function" href="classwpi_1_1uv_1_1_stream_impl.html#abe9d294278bf93bb772056650421d0b1">GetRaw</a>(), mode);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1_tty.html#a42cb617dfc44dc45ab22f81c300c9c4b">   59</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1uv_1_1_tty.html#a42cb617dfc44dc45ab22f81c300c9c4b">SetMode</a>(<a class="code hl_enumeration" href="uv_8h.html#a24f34e390870f3cc83538f7c5096a5fb">uv_tty_mode_t</a> mode) {</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordtype">int</span> err = <a class="code hl_function" href="uv_8h.html#a74625ecedc88f9e2f1e81cbee151d8e6">uv_tty_set_mode</a>(<a class="code hl_function" href="classwpi_1_1uv_1_1_stream_impl.html#abe9d294278bf93bb772056650421d0b1">GetRaw</a>(), mode);</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordflow">if</span> (err &lt; 0) {</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>      <a class="code hl_function" href="classwpi_1_1uv_1_1_handle.html#a3ca72664bb4f606fb214e1fe23261bbf">ReportError</a>(err);</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    }</div>
@@ -163,7 +163,7 @@ $(document).ready(function(){initNavTree('_tty_8h_source.html',''); initResizabl
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">   * Reset TTY settings to default values for the next process to take over.</span></div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">   * Typically called when the program exits.</span></div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1_tty.html#a5ad4ede21e66f00f090ff2e6cfdb5c6b">   70</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1uv_1_1_tty.html#a5ad4ede21e66f00f090ff2e6cfdb5c6b">ResetMode</a>() { Invoke(&amp;uv_tty_reset_mode); }</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1_tty.html#a5ad4ede21e66f00f090ff2e6cfdb5c6b">   70</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1uv_1_1_tty.html#a5ad4ede21e66f00f090ff2e6cfdb5c6b">ResetMode</a>() { <a class="code hl_function" href="classwpi_1_1uv_1_1_handle.html#ac57b8059a53c5b83f25ea84f99c24f7a">Invoke</a>(&amp;<a class="code hl_function" href="uv_8h.html#a90f74302e25ebde838a4e11fcc833d1c">uv_tty_reset_mode</a>); }</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment"></span> </div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">   * Gets the current window size.</span></div>
@@ -171,7 +171,7 @@ $(document).ready(function(){initNavTree('_tty_8h_source.html',''); initResizabl
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1_tty.html#ab56e9ca014f990848423505eb88d2f00">   76</a></span>  std::pair&lt;int, int&gt; <a class="code hl_function" href="classwpi_1_1uv_1_1_tty.html#ab56e9ca014f990848423505eb88d2f00">GetWindowSize</a>() {</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordtype">int</span> width = 0, height = 0;</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    Invoke(&amp;uv_tty_get_winsize, <a class="code hl_function" href="classwpi_1_1uv_1_1_stream_impl.html#abe9d294278bf93bb772056650421d0b1">GetRaw</a>(), &amp;width, &amp;height);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <a class="code hl_function" href="classwpi_1_1uv_1_1_handle.html#ac57b8059a53c5b83f25ea84f99c24f7a">Invoke</a>(&amp;<a class="code hl_function" href="uv_8h.html#ab295025c03a1c074e507a75033bcd1c5">uv_tty_get_winsize</a>, <a class="code hl_function" href="classwpi_1_1uv_1_1_stream_impl.html#abe9d294278bf93bb772056650421d0b1">GetRaw</a>(), &amp;width, &amp;height);</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordflow">return</span> std::make_pair(width, height);</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  }</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>};</div>
@@ -179,23 +179,34 @@ $(document).ready(function(){initNavTree('_tty_8h_source.html',''); initResizabl
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>}  <span class="comment">// namespace wpi::uv</span></div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="preprocessor">#endif  </span><span class="comment">// WPIUTIL_WPI_UV_TTY_H_</span></div>
+<div class="ttc" id="a_stream_8h_html"><div class="ttname"><a href="_stream_8h.html">Stream.h</a></div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1_handle_html_a3ca72664bb4f606fb214e1fe23261bbf"><div class="ttname"><a href="classwpi_1_1uv_1_1_handle.html#a3ca72664bb4f606fb214e1fe23261bbf">wpi::uv::Handle::ReportError</a></div><div class="ttdeci">void ReportError(int err) const</div><div class="ttdoc">Report an error.</div><div class="ttdef"><b>Definition:</b> Handle.h:235</div></div>
-<div class="ttc" id="aclasswpi_1_1uv_1_1_loop_html"><div class="ttname"><a href="classwpi_1_1uv_1_1_loop.html">wpi::uv::Loop</a></div><div class="ttdoc">Event loop.</div><div class="ttdef"><b>Definition:</b> Loop.h:35</div></div>
-<div class="ttc" id="aclasswpi_1_1uv_1_1_stream_impl_html"><div class="ttname"><a href="classwpi_1_1uv_1_1_stream_impl.html">wpi::uv::StreamImpl</a></div><div class="ttdef"><b>Definition:</b> Stream.h:276</div></div>
-<div class="ttc" id="aclasswpi_1_1uv_1_1_stream_impl_html_abe9d294278bf93bb772056650421d0b1"><div class="ttname"><a href="classwpi_1_1uv_1_1_stream_impl.html#abe9d294278bf93bb772056650421d0b1">wpi::uv::StreamImpl&lt; Tty, uv_tty_t &gt;::GetRaw</a></div><div class="ttdeci">uv_tty_t * GetRaw() const noexcept</div><div class="ttdoc">Get the underlying handle data structure.</div><div class="ttdef"><b>Definition:</b> Stream.h:291</div></div>
+<div class="ttc" id="aclasswpi_1_1uv_1_1_handle_html_ac57b8059a53c5b83f25ea84f99c24f7a"><div class="ttname"><a href="classwpi_1_1uv_1_1_handle.html#ac57b8059a53c5b83f25ea84f99c24f7a">wpi::uv::Handle::Invoke</a></div><div class="ttdeci">bool Invoke(F &amp;&amp;f, Args &amp;&amp;... args) const</div><div class="ttdef"><b>Definition:</b> Handle.h:250</div></div>
+<div class="ttc" id="aclasswpi_1_1uv_1_1_loop_html"><div class="ttname"><a href="classwpi_1_1uv_1_1_loop.html">wpi::uv::Loop</a></div><div class="ttdoc">Event loop.</div><div class="ttdef"><b>Definition:</b> Loop.h:36</div></div>
+<div class="ttc" id="aclasswpi_1_1uv_1_1_stream_impl_html"><div class="ttname"><a href="classwpi_1_1uv_1_1_stream_impl.html">wpi::uv::StreamImpl</a></div><div class="ttdef"><b>Definition:</b> Stream.h:277</div></div>
+<div class="ttc" id="aclasswpi_1_1uv_1_1_stream_impl_html_abe9d294278bf93bb772056650421d0b1"><div class="ttname"><a href="classwpi_1_1uv_1_1_stream_impl.html#abe9d294278bf93bb772056650421d0b1">wpi::uv::StreamImpl&lt; Tty, uv_tty_t &gt;::GetRaw</a></div><div class="ttdeci">uv_tty_t * GetRaw() const noexcept</div><div class="ttdoc">Get the underlying handle data structure.</div><div class="ttdef"><b>Definition:</b> Stream.h:292</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1_tty_html"><div class="ttname"><a href="classwpi_1_1uv_1_1_tty.html">wpi::uv::Tty</a></div><div class="ttdoc">TTY handle.</div><div class="ttdef"><b>Definition:</b> Tty.h:24</div></div>
+<div class="ttc" id="aclasswpi_1_1uv_1_1_tty_html_a12a9a992bc9961f3cd0720eb9e207120"><div class="ttname"><a href="classwpi_1_1uv_1_1_tty.html#a12a9a992bc9961f3cd0720eb9e207120">wpi::uv::Tty::~Tty</a></div><div class="ttdeci">~Tty() noexcept override=default</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1_tty_html_a13138923615fcf2de813a998305bfacc"><div class="ttname"><a href="classwpi_1_1uv_1_1_tty.html#a13138923615fcf2de813a998305bfacc">wpi::uv::Tty::Create</a></div><div class="ttdeci">static std::shared_ptr&lt; Tty &gt; Create(Loop &amp;loop, uv_file fd, bool readable)</div><div class="ttdoc">Create a TTY handle.</div></div>
-<div class="ttc" id="aclasswpi_1_1uv_1_1_tty_html_a1faab21a95e90943019223e765af3563"><div class="ttname"><a href="classwpi_1_1uv_1_1_tty.html#a1faab21a95e90943019223e765af3563">wpi::uv::Tty::Create</a></div><div class="ttdeci">static std::shared_ptr&lt; Tty &gt; Create(const std::shared_ptr&lt; Loop &gt; &amp;loop, uv_file fd, bool readable)</div><div class="ttdoc">Create a TTY handle.</div><div class="ttdef"><b>Definition:</b> Tty.h:49</div></div>
+<div class="ttc" id="aclasswpi_1_1uv_1_1_tty_html_a30da70992f5a828711ff18125d94eeb3"><div class="ttname"><a href="classwpi_1_1uv_1_1_tty.html#a30da70992f5a828711ff18125d94eeb3">wpi::uv::Tty::Tty</a></div><div class="ttdeci">Tty(const private_init &amp;)</div><div class="ttdef"><b>Definition:</b> Tty.h:28</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1_tty_html_a42cb617dfc44dc45ab22f81c300c9c4b"><div class="ttname"><a href="classwpi_1_1uv_1_1_tty.html#a42cb617dfc44dc45ab22f81c300c9c4b">wpi::uv::Tty::SetMode</a></div><div class="ttdeci">void SetMode(uv_tty_mode_t mode)</div><div class="ttdoc">Set the TTY using the specified terminal mode.</div><div class="ttdef"><b>Definition:</b> Tty.h:59</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1_tty_html_a5ad4ede21e66f00f090ff2e6cfdb5c6b"><div class="ttname"><a href="classwpi_1_1uv_1_1_tty.html#a5ad4ede21e66f00f090ff2e6cfdb5c6b">wpi::uv::Tty::ResetMode</a></div><div class="ttdeci">void ResetMode()</div><div class="ttdoc">Reset TTY settings to default values for the next process to take over.</div><div class="ttdef"><b>Definition:</b> Tty.h:70</div></div>
 <div class="ttc" id="aclasswpi_1_1uv_1_1_tty_html_ab56e9ca014f990848423505eb88d2f00"><div class="ttname"><a href="classwpi_1_1uv_1_1_tty.html#ab56e9ca014f990848423505eb88d2f00">wpi::uv::Tty::GetWindowSize</a></div><div class="ttdeci">std::pair&lt; int, int &gt; GetWindowSize()</div><div class="ttdoc">Gets the current window size.</div><div class="ttdef"><b>Definition:</b> Tty.h:76</div></div>
+<div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> Errc.h:84</div></div>
+<div class="ttc" id="anamespacewpi_1_1uv_html"><div class="ttname"><a href="namespacewpi_1_1uv.html">wpi::uv</a></div><div class="ttdef"><b>Definition:</b> DsClient.h:17</div></div>
+<div class="ttc" id="aunix_8h_html_a3e0dacd349e5c9b36895e83499367624"><div class="ttname"><a href="unix_8h.html#a3e0dacd349e5c9b36895e83499367624">uv_file</a></div><div class="ttdeci">int uv_file</div><div class="ttdef"><b>Definition:</b> unix.h:119</div></div>
+<div class="ttc" id="auv_8h_html"><div class="ttname"><a href="uv_8h.html">uv.h</a></div></div>
+<div class="ttc" id="auv_8h_html_a24f34e390870f3cc83538f7c5096a5fb"><div class="ttname"><a href="uv_8h.html#a24f34e390870f3cc83538f7c5096a5fb">uv_tty_mode_t</a></div><div class="ttdeci">uv_tty_mode_t</div><div class="ttdef"><b>Definition:</b> uv.h:674</div></div>
+<div class="ttc" id="auv_8h_html_a74625ecedc88f9e2f1e81cbee151d8e6"><div class="ttname"><a href="uv_8h.html#a74625ecedc88f9e2f1e81cbee151d8e6">uv_tty_set_mode</a></div><div class="ttdeci">UV_EXTERN int uv_tty_set_mode(uv_tty_t *, uv_tty_mode_t mode)</div></div>
+<div class="ttc" id="auv_8h_html_a90f74302e25ebde838a4e11fcc833d1c"><div class="ttname"><a href="uv_8h.html#a90f74302e25ebde838a4e11fcc833d1c">uv_tty_reset_mode</a></div><div class="ttdeci">UV_EXTERN int uv_tty_reset_mode(void)</div></div>
+<div class="ttc" id="auv_8h_html_ab295025c03a1c074e507a75033bcd1c5"><div class="ttname"><a href="uv_8h.html#ab295025c03a1c074e507a75033bcd1c5">uv_tty_get_winsize</a></div><div class="ttdeci">UV_EXTERN int uv_tty_get_winsize(uv_tty_t *, int *width, int *height)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><a class="el" href="dir_25302867c2307ab8d43a1b1d664c1ea4.html">uv</a></li><li class="navelem"><b>Tty.h</b></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:44 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><a class="el" href="dir_25302867c2307ab8d43a1b1d664c1ea4.html">uv</a></li><li class="navelem"><a class="el" href="_tty_8h.html">Tty.h</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:30 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

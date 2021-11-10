@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -98,24 +98,144 @@ $(document).ready(function(){initNavTree('struct_eigen_1_1internal_1_1triangular
   <div class="headertitle"><div class="title">Eigen::internal::triangular_matrix_vector_product&lt; Index, Mode, LhsScalar, ConjLhs, RhsScalar, ConjRhs, ColMajor, Version &gt; Struct Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_triangular_matrix_vector_8h_source.html">/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/eigeninclude/Eigen/src/Core/products/TriangularMatrixVector.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a4f0ecf288aed5f0480d0af0f93b5f6da"><td class="memItemLeft" align="right" valign="top"><a id="a4f0ecf288aed5f0480d0af0f93b5f6da" name="a4f0ecf288aed5f0480d0af0f93b5f6da"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>IsLower</b> = ((Mode&amp;Lower)==Lower)
-, <b>HasUnitDiag</b> = (Mode &amp; UnitDiag)==UnitDiag
-, <b>HasZeroDiag</b> = (Mode &amp; ZeroDiag)==ZeroDiag
+<tr class="memitem:ae86fb055344cd870f6400fc69b6e277d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="struct_eigen_1_1internal_1_1triangular__matrix__vector__product_3_01_index_00_01_mode_00_01_lhs_ba3c1ba3cb379196807b17d99fce4e08.html#ae86fb055344cd870f6400fc69b6e277da091914fb7e0c37301a96b33f47b071e4">IsLower</a> = ((Mode&amp;Lower)==Lower)
+, <a class="el" href="struct_eigen_1_1internal_1_1triangular__matrix__vector__product_3_01_index_00_01_mode_00_01_lhs_ba3c1ba3cb379196807b17d99fce4e08.html#ae86fb055344cd870f6400fc69b6e277daa75635f874dee1fc9186b9b42a5413b9">HasUnitDiag</a> = (Mode &amp; UnitDiag)==UnitDiag
+, <a class="el" href="struct_eigen_1_1internal_1_1triangular__matrix__vector__product_3_01_index_00_01_mode_00_01_lhs_ba3c1ba3cb379196807b17d99fce4e08.html#ae86fb055344cd870f6400fc69b6e277dae95be7c9beeb7c7e6fefd729c5aaf6cb">HasZeroDiag</a> = (Mode &amp; ZeroDiag)==ZeroDiag
  }</td></tr>
-<tr class="separator:a4f0ecf288aed5f0480d0af0f93b5f6da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afccdd81dbf01beeca47d629449753ee3"><td class="memItemLeft" align="right" valign="top"><a id="afccdd81dbf01beeca47d629449753ee3" name="afccdd81dbf01beeca47d629449753ee3"></a>
-typedef <a class="el" href="struct_eigen_1_1_scalar_binary_op_traits.html">ScalarBinaryOpTraits</a>&lt; LhsScalar, RhsScalar &gt;::ReturnType&#160;</td><td class="memItemRight" valign="bottom"><b>ResScalar</b></td></tr>
+<tr class="separator:ae86fb055344cd870f6400fc69b6e277d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afccdd81dbf01beeca47d629449753ee3"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_eigen_1_1_scalar_binary_op_traits.html">ScalarBinaryOpTraits</a>&lt; LhsScalar, RhsScalar &gt;::ReturnType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1triangular__matrix__vector__product_3_01_index_00_01_mode_00_01_lhs_ba3c1ba3cb379196807b17d99fce4e08.html#afccdd81dbf01beeca47d629449753ee3">ResScalar</a></td></tr>
 <tr class="separator:afccdd81dbf01beeca47d629449753ee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a89cb957348fb21a7125fcb511a750df2"><td class="memItemLeft" align="right" valign="top"><a id="a89cb957348fb21a7125fcb511a750df2" name="a89cb957348fb21a7125fcb511a750df2"></a>
-static EIGEN_DONT_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>run</b> (<a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> _rows, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> _cols, const LhsScalar *_lhs, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> lhsStride, const RhsScalar *_rhs, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> rhsIncr, ResScalar *_res, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> resIncr, const RhsScalar &amp;alpha)</td></tr>
+<tr class="memitem:a89cb957348fb21a7125fcb511a750df2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_macros_8h.html#aa715c1fe854205b27e962ee7d7e06faf">EIGEN_DONT_INLINE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1triangular__matrix__vector__product_3_01_index_00_01_mode_00_01_lhs_ba3c1ba3cb379196807b17d99fce4e08.html#a89cb957348fb21a7125fcb511a750df2">run</a> (<a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> _rows, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> _cols, const LhsScalar *_lhs, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> lhsStride, const RhsScalar *_rhs, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> rhsIncr, <a class="el" href="struct_eigen_1_1internal_1_1triangular__matrix__vector__product_3_01_index_00_01_mode_00_01_lhs_ba3c1ba3cb379196807b17d99fce4e08.html#afccdd81dbf01beeca47d629449753ee3">ResScalar</a> *_res, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> resIncr, const RhsScalar &amp;alpha)</td></tr>
 <tr class="separator:a89cb957348fb21a7125fcb511a750df2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="afccdd81dbf01beeca47d629449753ee3" name="afccdd81dbf01beeca47d629449753ee3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afccdd81dbf01beeca47d629449753ee3">&#9670;&nbsp;</a></span>ResScalar</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> , int Mode, typename LhsScalar , bool ConjLhs, typename RhsScalar , bool ConjRhs, int Version&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="struct_eigen_1_1_scalar_binary_op_traits.html">ScalarBinaryOpTraits</a>&lt;LhsScalar,RhsScalar&gt;::ReturnType <a class="el" href="struct_eigen_1_1internal_1_1triangular__matrix__vector__product.html">Eigen::internal::triangular_matrix_vector_product</a>&lt; <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a>, Mode, LhsScalar, ConjLhs, RhsScalar, ConjRhs, <a class="el" href="group__enums.html#ggaacded1a18ae58b0f554751f6cdf9eb13a0103672ae41005ab03b4176c765afd62">ColMajor</a>, <a class="el" href="_third_party_notices_8txt.html#a33b5d1de6924a44864dbf7394f6ea45f">Version</a> &gt;::<a class="el" href="struct_eigen_1_1internal_1_1triangular__matrix__vector__product_3_01_index_00_01_mode_00_01_lhs_ba3c1ba3cb379196807b17d99fce4e08.html#afccdd81dbf01beeca47d629449753ee3">ResScalar</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="ae86fb055344cd870f6400fc69b6e277d" name="ae86fb055344cd870f6400fc69b6e277d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae86fb055344cd870f6400fc69b6e277d">&#9670;&nbsp;</a></span>anonymous enum</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> , int Mode, typename LhsScalar , bool ConjLhs, typename RhsScalar , bool ConjRhs, int Version&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae86fb055344cd870f6400fc69b6e277da091914fb7e0c37301a96b33f47b071e4" name="ae86fb055344cd870f6400fc69b6e277da091914fb7e0c37301a96b33f47b071e4"></a>IsLower&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae86fb055344cd870f6400fc69b6e277daa75635f874dee1fc9186b9b42a5413b9" name="ae86fb055344cd870f6400fc69b6e277daa75635f874dee1fc9186b9b42a5413b9"></a>HasUnitDiag&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae86fb055344cd870f6400fc69b6e277dae95be7c9beeb7c7e6fefd729c5aaf6cb" name="ae86fb055344cd870f6400fc69b6e277dae95be7c9beeb7c7e6fefd729c5aaf6cb"></a>HasZeroDiag&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a89cb957348fb21a7125fcb511a750df2" name="a89cb957348fb21a7125fcb511a750df2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89cb957348fb21a7125fcb511a750df2">&#9670;&nbsp;</a></span>run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> , int Mode, typename LhsScalar , bool ConjLhs, typename RhsScalar , bool ConjRhs, int Version&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_macros_8h.html#aa715c1fe854205b27e962ee7d7e06faf">EIGEN_DONT_INLINE</a> void <a class="el" href="struct_eigen_1_1internal_1_1triangular__matrix__vector__product.html">Eigen::internal::triangular_matrix_vector_product</a>&lt; <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a>, Mode, LhsScalar, ConjLhs, RhsScalar, ConjRhs, <a class="el" href="group__enums.html#ggaacded1a18ae58b0f554751f6cdf9eb13a0103672ae41005ab03b4176c765afd62">ColMajor</a>, <a class="el" href="_third_party_notices_8txt.html#a33b5d1de6924a44864dbf7394f6ea45f">Version</a> &gt;::run </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a>&#160;</td>
+          <td class="paramname"><em>_rows</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a>&#160;</td>
+          <td class="paramname"><em>_cols</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const LhsScalar *&#160;</td>
+          <td class="paramname"><em>_lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a>&#160;</td>
+          <td class="paramname"><em>lhsStride</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RhsScalar *&#160;</td>
+          <td class="paramname"><em>_rhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a>&#160;</td>
+          <td class="paramname"><em>rhsIncr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_eigen_1_1internal_1_1triangular__matrix__vector__product_3_01_index_00_01_mode_00_01_lhs_ba3c1ba3cb379196807b17d99fce4e08.html#afccdd81dbf01beeca47d629449753ee3">ResScalar</a> *&#160;</td>
+          <td class="paramname"><em>_res</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a>&#160;</td>
+          <td class="paramname"><em>resIncr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RhsScalar &amp;&#160;</td>
+          <td class="paramname"><em>alpha</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/eigeninclude/Eigen/src/Core/products/<a class="el" href="_triangular_matrix_vector_8h_source.html">TriangularMatrixVector.h</a></li>
 </ul>
@@ -124,8 +244,8 @@ static EIGEN_DONT_INLINE void&#160;</td><td class="memItemRight" valign="bottom"
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespace_eigen.html">Eigen</a></li><li class="navelem"><b>internal</b></li><li class="navelem"><a class="el" href="struct_eigen_1_1internal_1_1triangular__matrix__vector__product_3_01_index_00_01_mode_00_01_lhs_ba3c1ba3cb379196807b17d99fce4e08.html">triangular_matrix_vector_product&lt; Index, Mode, LhsScalar, ConjLhs, RhsScalar, ConjRhs, ColMajor, Version &gt;</a></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:49 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespace_eigen.html">Eigen</a></li><li class="navelem"><a class="el" href="namespace_eigen_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="struct_eigen_1_1internal_1_1triangular__matrix__vector__product_3_01_index_00_01_mode_00_01_lhs_ba3c1ba3cb379196807b17d99fce4e08.html">triangular_matrix_vector_product&lt; Index, Mode, LhsScalar, ConjLhs, RhsScalar, ConjRhs, ColMajor, Version &gt;</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:37 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

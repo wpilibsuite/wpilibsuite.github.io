@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -107,61 +107,148 @@ $(document).ready(function(){initNavTree('classfrc_1_1_simple_motor_feedforward.
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a42c7ddd5b2eccd3c2a572112aae33337"><td class="memItemLeft" align="right" valign="top"><a id="a42c7ddd5b2eccd3c2a572112aae33337" name="a42c7ddd5b2eccd3c2a572112aae33337"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>Velocity</b> = <a class="el" href="group___unit_types.html#ga36d8b8cf508bd5ac7854d15f6eaf2d7c">units::compound_unit</a>&lt; Distance, <a class="el" href="group___unit_manipulators.html#ga18b87c9f4576fb72ddc0b2a516a42d41">units::inverse</a>&lt; units::seconds &gt; &gt;</td></tr>
+<tr class="memitem:a42c7ddd5b2eccd3c2a572112aae33337"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_simple_motor_feedforward.html#a42c7ddd5b2eccd3c2a572112aae33337">Velocity</a> = <a class="el" href="group___unit_types.html#ga36d8b8cf508bd5ac7854d15f6eaf2d7c">units::compound_unit</a>&lt; Distance, <a class="el" href="group___unit_manipulators.html#ga18b87c9f4576fb72ddc0b2a516a42d41">units::inverse</a>&lt; units::seconds &gt; &gt;</td></tr>
 <tr class="separator:a42c7ddd5b2eccd3c2a572112aae33337"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9ec1082620cd57dac1f41bccd311e8e"><td class="memItemLeft" align="right" valign="top"><a id="aa9ec1082620cd57dac1f41bccd311e8e" name="aa9ec1082620cd57dac1f41bccd311e8e"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>Acceleration</b> = <a class="el" href="group___unit_types.html#ga36d8b8cf508bd5ac7854d15f6eaf2d7c">units::compound_unit</a>&lt; Velocity, <a class="el" href="group___unit_manipulators.html#ga18b87c9f4576fb72ddc0b2a516a42d41">units::inverse</a>&lt; units::seconds &gt; &gt;</td></tr>
+<tr class="memitem:aa9ec1082620cd57dac1f41bccd311e8e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_simple_motor_feedforward.html#aa9ec1082620cd57dac1f41bccd311e8e">Acceleration</a> = <a class="el" href="group___unit_types.html#ga36d8b8cf508bd5ac7854d15f6eaf2d7c">units::compound_unit</a>&lt; <a class="el" href="classfrc_1_1_simple_motor_feedforward.html#a42c7ddd5b2eccd3c2a572112aae33337">Velocity</a>, <a class="el" href="group___unit_manipulators.html#ga18b87c9f4576fb72ddc0b2a516a42d41">units::inverse</a>&lt; units::seconds &gt; &gt;</td></tr>
 <tr class="separator:aa9ec1082620cd57dac1f41bccd311e8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b224763d289ff47061af046422bf4db"><td class="memItemLeft" align="right" valign="top"><a id="a9b224763d289ff47061af046422bf4db" name="a9b224763d289ff47061af046422bf4db"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>kv_unit</b> = <a class="el" href="group___unit_types.html#ga36d8b8cf508bd5ac7854d15f6eaf2d7c">units::compound_unit</a>&lt; units::volts, <a class="el" href="group___unit_manipulators.html#ga18b87c9f4576fb72ddc0b2a516a42d41">units::inverse</a>&lt; Velocity &gt; &gt;</td></tr>
+<tr class="memitem:a9b224763d289ff47061af046422bf4db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_simple_motor_feedforward.html#a9b224763d289ff47061af046422bf4db">kv_unit</a> = <a class="el" href="group___unit_types.html#ga36d8b8cf508bd5ac7854d15f6eaf2d7c">units::compound_unit</a>&lt; units::volts, <a class="el" href="group___unit_manipulators.html#ga18b87c9f4576fb72ddc0b2a516a42d41">units::inverse</a>&lt; <a class="el" href="classfrc_1_1_simple_motor_feedforward.html#a42c7ddd5b2eccd3c2a572112aae33337">Velocity</a> &gt; &gt;</td></tr>
 <tr class="separator:a9b224763d289ff47061af046422bf4db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58ae48792a7dbdeb9b9443361a7a219a"><td class="memItemLeft" align="right" valign="top"><a id="a58ae48792a7dbdeb9b9443361a7a219a" name="a58ae48792a7dbdeb9b9443361a7a219a"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>ka_unit</b> = <a class="el" href="group___unit_types.html#ga36d8b8cf508bd5ac7854d15f6eaf2d7c">units::compound_unit</a>&lt; units::volts, <a class="el" href="group___unit_manipulators.html#ga18b87c9f4576fb72ddc0b2a516a42d41">units::inverse</a>&lt; Acceleration &gt; &gt;</td></tr>
+<tr class="memitem:a58ae48792a7dbdeb9b9443361a7a219a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_simple_motor_feedforward.html#a58ae48792a7dbdeb9b9443361a7a219a">ka_unit</a> = <a class="el" href="group___unit_types.html#ga36d8b8cf508bd5ac7854d15f6eaf2d7c">units::compound_unit</a>&lt; units::volts, <a class="el" href="group___unit_manipulators.html#ga18b87c9f4576fb72ddc0b2a516a42d41">units::inverse</a>&lt; <a class="el" href="classfrc_1_1_simple_motor_feedforward.html#aa9ec1082620cd57dac1f41bccd311e8e">Acceleration</a> &gt; &gt;</td></tr>
 <tr class="separator:a58ae48792a7dbdeb9b9443361a7a219a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac0aa2831119b468a83b9a391bbe74e18"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_simple_motor_feedforward.html#ac0aa2831119b468a83b9a391bbe74e18">SimpleMotorFeedforward</a> (units::volt_t kS, <a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; kv_unit &gt; kV, <a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; ka_unit &gt; kA=<a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; ka_unit &gt;(0))</td></tr>
+<tr class="memitem:af8afc264c79bdba33103517e65c7203b"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_simple_motor_feedforward.html#af8afc264c79bdba33103517e65c7203b">SimpleMotorFeedforward</a> ()=default</td></tr>
+<tr class="separator:af8afc264c79bdba33103517e65c7203b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0aa2831119b468a83b9a391bbe74e18"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_simple_motor_feedforward.html#ac0aa2831119b468a83b9a391bbe74e18">SimpleMotorFeedforward</a> (units::volt_t <a class="el" href="classfrc_1_1_simple_motor_feedforward.html#a339fc3d231d056359f2e81915d9cc6fe">kS</a>, <a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; <a class="el" href="classfrc_1_1_simple_motor_feedforward.html#a9b224763d289ff47061af046422bf4db">kv_unit</a> &gt; <a class="el" href="classfrc_1_1_simple_motor_feedforward.html#a650d678be87bffadfe552b28fb3d581c">kV</a>, <a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; <a class="el" href="classfrc_1_1_simple_motor_feedforward.html#a58ae48792a7dbdeb9b9443361a7a219a">ka_unit</a> &gt; <a class="el" href="classfrc_1_1_simple_motor_feedforward.html#a6e22518a0479e98bc509a5f026c225a1">kA</a>=<a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; <a class="el" href="classfrc_1_1_simple_motor_feedforward.html#a58ae48792a7dbdeb9b9443361a7a219a">ka_unit</a> &gt;(0))</td></tr>
 <tr class="memdesc:ac0aa2831119b468a83b9a391bbe74e18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="classfrc_1_1_simple_motor_feedforward.html" title="A helper class that computes feedforward voltages for a simple permanent-magnet DC motor.">SimpleMotorFeedforward</a> with the specified gains.  <a href="classfrc_1_1_simple_motor_feedforward.html#ac0aa2831119b468a83b9a391bbe74e18">More...</a><br /></td></tr>
 <tr class="separator:ac0aa2831119b468a83b9a391bbe74e18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73aa2d93966118c8c2029fcebc1100fa"><td class="memItemLeft" align="right" valign="top">constexpr units::volt_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_simple_motor_feedforward.html#a73aa2d93966118c8c2029fcebc1100fa">Calculate</a> (<a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; Velocity &gt; velocity, <a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; Acceleration &gt; acceleration=<a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; Acceleration &gt;(0)) const</td></tr>
+<tr class="memitem:a73aa2d93966118c8c2029fcebc1100fa"><td class="memItemLeft" align="right" valign="top">constexpr units::volt_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_simple_motor_feedforward.html#a73aa2d93966118c8c2029fcebc1100fa">Calculate</a> (<a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; <a class="el" href="classfrc_1_1_simple_motor_feedforward.html#a42c7ddd5b2eccd3c2a572112aae33337">Velocity</a> &gt; velocity, <a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; <a class="el" href="classfrc_1_1_simple_motor_feedforward.html#aa9ec1082620cd57dac1f41bccd311e8e">Acceleration</a> &gt; acceleration=<a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; <a class="el" href="classfrc_1_1_simple_motor_feedforward.html#aa9ec1082620cd57dac1f41bccd311e8e">Acceleration</a> &gt;(0)) const</td></tr>
 <tr class="memdesc:a73aa2d93966118c8c2029fcebc1100fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the feedforward from the gains and setpoints.  <a href="classfrc_1_1_simple_motor_feedforward.html#a73aa2d93966118c8c2029fcebc1100fa">More...</a><br /></td></tr>
 <tr class="separator:a73aa2d93966118c8c2029fcebc1100fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4137b38faf0f3d55c720a1ee0a4764c2"><td class="memItemLeft" align="right" valign="top">units::volt_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_simple_motor_feedforward.html#a4137b38faf0f3d55c720a1ee0a4764c2">Calculate</a> (<a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; Velocity &gt; currentVelocity, <a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; Velocity &gt; nextVelocity, units::second_t dt) const</td></tr>
+<tr class="memitem:a4137b38faf0f3d55c720a1ee0a4764c2"><td class="memItemLeft" align="right" valign="top">units::volt_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_simple_motor_feedforward.html#a4137b38faf0f3d55c720a1ee0a4764c2">Calculate</a> (<a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; <a class="el" href="classfrc_1_1_simple_motor_feedforward.html#a42c7ddd5b2eccd3c2a572112aae33337">Velocity</a> &gt; currentVelocity, <a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; <a class="el" href="classfrc_1_1_simple_motor_feedforward.html#a42c7ddd5b2eccd3c2a572112aae33337">Velocity</a> &gt; nextVelocity, units::second_t dt) const</td></tr>
 <tr class="memdesc:a4137b38faf0f3d55c720a1ee0a4764c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the feedforward from the gains and setpoints.  <a href="classfrc_1_1_simple_motor_feedforward.html#a4137b38faf0f3d55c720a1ee0a4764c2">More...</a><br /></td></tr>
 <tr class="separator:a4137b38faf0f3d55c720a1ee0a4764c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad27c807d256c075dfda30f959d009be1"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; Velocity &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_simple_motor_feedforward.html#ad27c807d256c075dfda30f959d009be1">MaxAchievableVelocity</a> (units::volt_t maxVoltage, <a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; Acceleration &gt; acceleration) const</td></tr>
+<tr class="memitem:ad27c807d256c075dfda30f959d009be1"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; <a class="el" href="classfrc_1_1_simple_motor_feedforward.html#a42c7ddd5b2eccd3c2a572112aae33337">Velocity</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_simple_motor_feedforward.html#ad27c807d256c075dfda30f959d009be1">MaxAchievableVelocity</a> (units::volt_t maxVoltage, <a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; <a class="el" href="classfrc_1_1_simple_motor_feedforward.html#aa9ec1082620cd57dac1f41bccd311e8e">Acceleration</a> &gt; acceleration) const</td></tr>
 <tr class="memdesc:ad27c807d256c075dfda30f959d009be1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the maximum achievable velocity given a maximum voltage supply and an acceleration.  <a href="classfrc_1_1_simple_motor_feedforward.html#ad27c807d256c075dfda30f959d009be1">More...</a><br /></td></tr>
 <tr class="separator:ad27c807d256c075dfda30f959d009be1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31af82ca7662724a9bfe9b0fbc2b097b"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; Velocity &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_simple_motor_feedforward.html#a31af82ca7662724a9bfe9b0fbc2b097b">MinAchievableVelocity</a> (units::volt_t maxVoltage, <a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; Acceleration &gt; acceleration) const</td></tr>
+<tr class="memitem:a31af82ca7662724a9bfe9b0fbc2b097b"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; <a class="el" href="classfrc_1_1_simple_motor_feedforward.html#a42c7ddd5b2eccd3c2a572112aae33337">Velocity</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_simple_motor_feedforward.html#a31af82ca7662724a9bfe9b0fbc2b097b">MinAchievableVelocity</a> (units::volt_t maxVoltage, <a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; <a class="el" href="classfrc_1_1_simple_motor_feedforward.html#aa9ec1082620cd57dac1f41bccd311e8e">Acceleration</a> &gt; acceleration) const</td></tr>
 <tr class="memdesc:a31af82ca7662724a9bfe9b0fbc2b097b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the minimum achievable velocity given a maximum voltage supply and an acceleration.  <a href="classfrc_1_1_simple_motor_feedforward.html#a31af82ca7662724a9bfe9b0fbc2b097b">More...</a><br /></td></tr>
 <tr class="separator:a31af82ca7662724a9bfe9b0fbc2b097b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7529e10859e4da448510937f464557e8"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; Acceleration &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_simple_motor_feedforward.html#a7529e10859e4da448510937f464557e8">MaxAchievableAcceleration</a> (units::volt_t maxVoltage, <a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; Velocity &gt; velocity) const</td></tr>
+<tr class="memitem:a7529e10859e4da448510937f464557e8"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; <a class="el" href="classfrc_1_1_simple_motor_feedforward.html#aa9ec1082620cd57dac1f41bccd311e8e">Acceleration</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_simple_motor_feedforward.html#a7529e10859e4da448510937f464557e8">MaxAchievableAcceleration</a> (units::volt_t maxVoltage, <a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; <a class="el" href="classfrc_1_1_simple_motor_feedforward.html#a42c7ddd5b2eccd3c2a572112aae33337">Velocity</a> &gt; velocity) const</td></tr>
 <tr class="memdesc:a7529e10859e4da448510937f464557e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the maximum achievable acceleration given a maximum voltage supply and a velocity.  <a href="classfrc_1_1_simple_motor_feedforward.html#a7529e10859e4da448510937f464557e8">More...</a><br /></td></tr>
 <tr class="separator:a7529e10859e4da448510937f464557e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad3075ea0ee5a0217b737a62357cfe12"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; Acceleration &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_simple_motor_feedforward.html#aad3075ea0ee5a0217b737a62357cfe12">MinAchievableAcceleration</a> (units::volt_t maxVoltage, <a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; Velocity &gt; velocity) const</td></tr>
+<tr class="memitem:aad3075ea0ee5a0217b737a62357cfe12"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; <a class="el" href="classfrc_1_1_simple_motor_feedforward.html#aa9ec1082620cd57dac1f41bccd311e8e">Acceleration</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_simple_motor_feedforward.html#aad3075ea0ee5a0217b737a62357cfe12">MinAchievableAcceleration</a> (units::volt_t maxVoltage, <a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; <a class="el" href="classfrc_1_1_simple_motor_feedforward.html#a42c7ddd5b2eccd3c2a572112aae33337">Velocity</a> &gt; velocity) const</td></tr>
 <tr class="memdesc:aad3075ea0ee5a0217b737a62357cfe12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the minimum achievable acceleration given a maximum voltage supply and a velocity.  <a href="classfrc_1_1_simple_motor_feedforward.html#aad3075ea0ee5a0217b737a62357cfe12">More...</a><br /></td></tr>
 <tr class="separator:aad3075ea0ee5a0217b737a62357cfe12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a339fc3d231d056359f2e81915d9cc6fe"><td class="memItemLeft" align="right" valign="top"><a id="a339fc3d231d056359f2e81915d9cc6fe" name="a339fc3d231d056359f2e81915d9cc6fe"></a>
-units::volt_t&#160;</td><td class="memItemRight" valign="bottom"><b>kS</b> {0}</td></tr>
+<tr class="memitem:a339fc3d231d056359f2e81915d9cc6fe"><td class="memItemLeft" align="right" valign="top">units::volt_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_simple_motor_feedforward.html#a339fc3d231d056359f2e81915d9cc6fe">kS</a> {0}</td></tr>
 <tr class="separator:a339fc3d231d056359f2e81915d9cc6fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a650d678be87bffadfe552b28fb3d581c"><td class="memItemLeft" align="right" valign="top"><a id="a650d678be87bffadfe552b28fb3d581c" name="a650d678be87bffadfe552b28fb3d581c"></a>
-<a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; kv_unit &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>kV</b> {0}</td></tr>
+<tr class="memitem:a650d678be87bffadfe552b28fb3d581c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; <a class="el" href="classfrc_1_1_simple_motor_feedforward.html#a9b224763d289ff47061af046422bf4db">kv_unit</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_simple_motor_feedforward.html#a650d678be87bffadfe552b28fb3d581c">kV</a> {0}</td></tr>
 <tr class="separator:a650d678be87bffadfe552b28fb3d581c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e22518a0479e98bc509a5f026c225a1"><td class="memItemLeft" align="right" valign="top"><a id="a6e22518a0479e98bc509a5f026c225a1" name="a6e22518a0479e98bc509a5f026c225a1"></a>
-<a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; ka_unit &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>kA</b> {0}</td></tr>
+<tr class="memitem:a6e22518a0479e98bc509a5f026c225a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; <a class="el" href="classfrc_1_1_simple_motor_feedforward.html#a58ae48792a7dbdeb9b9443361a7a219a">ka_unit</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_simple_motor_feedforward.html#a6e22518a0479e98bc509a5f026c225a1">kA</a> {0}</td></tr>
 <tr class="separator:a6e22518a0479e98bc509a5f026c225a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;class Distance&gt;<br />
 class frc::SimpleMotorFeedforward&lt; Distance &gt;</div><p >A helper class that computes feedforward voltages for a simple permanent-magnet DC motor. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="aa9ec1082620cd57dac1f41bccd311e8e" name="aa9ec1082620cd57dac1f41bccd311e8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9ec1082620cd57dac1f41bccd311e8e">&#9670;&nbsp;</a></span>Acceleration</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Distance &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="classfrc_1_1_simple_motor_feedforward.html">frc::SimpleMotorFeedforward</a>&lt; Distance &gt;::<a class="el" href="classfrc_1_1_simple_motor_feedforward.html#aa9ec1082620cd57dac1f41bccd311e8e">Acceleration</a> =  <a class="el" href="group___unit_types.html#ga36d8b8cf508bd5ac7854d15f6eaf2d7c">units::compound_unit</a>&lt;<a class="el" href="classfrc_1_1_simple_motor_feedforward.html#a42c7ddd5b2eccd3c2a572112aae33337">Velocity</a>, <a class="el" href="group___unit_manipulators.html#ga18b87c9f4576fb72ddc0b2a516a42d41">units::inverse</a>&lt;units::seconds&gt; &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a58ae48792a7dbdeb9b9443361a7a219a" name="a58ae48792a7dbdeb9b9443361a7a219a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58ae48792a7dbdeb9b9443361a7a219a">&#9670;&nbsp;</a></span>ka_unit</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Distance &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="classfrc_1_1_simple_motor_feedforward.html">frc::SimpleMotorFeedforward</a>&lt; Distance &gt;::<a class="el" href="classfrc_1_1_simple_motor_feedforward.html#a58ae48792a7dbdeb9b9443361a7a219a">ka_unit</a> =  <a class="el" href="group___unit_types.html#ga36d8b8cf508bd5ac7854d15f6eaf2d7c">units::compound_unit</a>&lt;units::volts, <a class="el" href="group___unit_manipulators.html#ga18b87c9f4576fb72ddc0b2a516a42d41">units::inverse</a>&lt;<a class="el" href="classfrc_1_1_simple_motor_feedforward.html#aa9ec1082620cd57dac1f41bccd311e8e">Acceleration</a>&gt; &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9b224763d289ff47061af046422bf4db" name="a9b224763d289ff47061af046422bf4db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b224763d289ff47061af046422bf4db">&#9670;&nbsp;</a></span>kv_unit</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Distance &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="classfrc_1_1_simple_motor_feedforward.html">frc::SimpleMotorFeedforward</a>&lt; Distance &gt;::<a class="el" href="classfrc_1_1_simple_motor_feedforward.html#a9b224763d289ff47061af046422bf4db">kv_unit</a> =  <a class="el" href="group___unit_types.html#ga36d8b8cf508bd5ac7854d15f6eaf2d7c">units::compound_unit</a>&lt;units::volts, <a class="el" href="group___unit_manipulators.html#ga18b87c9f4576fb72ddc0b2a516a42d41">units::inverse</a>&lt;<a class="el" href="classfrc_1_1_simple_motor_feedforward.html#a42c7ddd5b2eccd3c2a572112aae33337">Velocity</a>&gt; &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a42c7ddd5b2eccd3c2a572112aae33337" name="a42c7ddd5b2eccd3c2a572112aae33337"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42c7ddd5b2eccd3c2a572112aae33337">&#9670;&nbsp;</a></span>Velocity</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Distance &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a">using</a> <a class="el" href="classfrc_1_1_simple_motor_feedforward.html">frc::SimpleMotorFeedforward</a>&lt; Distance &gt;::<a class="el" href="classfrc_1_1_simple_motor_feedforward.html#a42c7ddd5b2eccd3c2a572112aae33337">Velocity</a> =  <a class="el" href="group___unit_types.html#ga36d8b8cf508bd5ac7854d15f6eaf2d7c">units::compound_unit</a>&lt;Distance, <a class="el" href="group___unit_manipulators.html#ga18b87c9f4576fb72ddc0b2a516a42d41">units::inverse</a>&lt;units::seconds&gt; &gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="af8afc264c79bdba33103517e65c7203b" name="af8afc264c79bdba33103517e65c7203b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8afc264c79bdba33103517e65c7203b">&#9670;&nbsp;</a></span>SimpleMotorFeedforward() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Distance &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classfrc_1_1_simple_motor_feedforward.html">frc::SimpleMotorFeedforward</a>&lt; Distance &gt;::<a class="el" href="classfrc_1_1_simple_motor_feedforward.html">SimpleMotorFeedforward</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ac0aa2831119b468a83b9a391bbe74e18" name="ac0aa2831119b468a83b9a391bbe74e18"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac0aa2831119b468a83b9a391bbe74e18">&#9670;&nbsp;</a></span>SimpleMotorFeedforward()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0aa2831119b468a83b9a391bbe74e18">&#9670;&nbsp;</a></span>SimpleMotorFeedforward() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -180,14 +267,14 @@ template&lt;class Distance &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; kv_unit &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; <a class="el" href="classfrc_1_1_simple_motor_feedforward.html#a9b224763d289ff47061af046422bf4db">kv_unit</a> &gt;&#160;</td>
           <td class="paramname"><em>kV</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; ka_unit &gt;&#160;</td>
-          <td class="paramname"><em>kA</em> = <code><a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt;ka_unit&gt;(0)</code>&#160;</td>
+          <td class="paramtype"><a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; <a class="el" href="classfrc_1_1_simple_motor_feedforward.html#a58ae48792a7dbdeb9b9443361a7a219a">ka_unit</a> &gt;&#160;</td>
+          <td class="paramname"><em>kA</em> = <code><a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt;<a class="el" href="classfrc_1_1_simple_motor_feedforward.html#a58ae48792a7dbdeb9b9443361a7a219a">ka_unit</a>&gt;(0)</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -229,13 +316,13 @@ template&lt;class Distance &gt; </div>
         <tr>
           <td class="memname">units::volt_t <a class="el" href="classfrc_1_1_simple_motor_feedforward.html">frc::SimpleMotorFeedforward</a>&lt; Distance &gt;::Calculate </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; Velocity &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; <a class="el" href="classfrc_1_1_simple_motor_feedforward.html#a42c7ddd5b2eccd3c2a572112aae33337">Velocity</a> &gt;&#160;</td>
           <td class="paramname"><em>currentVelocity</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; Velocity &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; <a class="el" href="classfrc_1_1_simple_motor_feedforward.html#a42c7ddd5b2eccd3c2a572112aae33337">Velocity</a> &gt;&#160;</td>
           <td class="paramname"><em>nextVelocity</em>, </td>
         </tr>
         <tr>
@@ -284,14 +371,14 @@ template&lt;class Distance &gt; </div>
         <tr>
           <td class="memname">constexpr units::volt_t <a class="el" href="classfrc_1_1_simple_motor_feedforward.html">frc::SimpleMotorFeedforward</a>&lt; Distance &gt;::Calculate </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; Velocity &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; <a class="el" href="classfrc_1_1_simple_motor_feedforward.html#a42c7ddd5b2eccd3c2a572112aae33337">Velocity</a> &gt;&#160;</td>
           <td class="paramname"><em>velocity</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; Acceleration &gt;&#160;</td>
-          <td class="paramname"><em>acceleration</em> = <code><a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt;Acceleration&gt;(0)</code>&#160;</td>
+          <td class="paramtype"><a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; <a class="el" href="classfrc_1_1_simple_motor_feedforward.html#aa9ec1082620cd57dac1f41bccd311e8e">Acceleration</a> &gt;&#160;</td>
+          <td class="paramname"><em>acceleration</em> = <code><a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt;<a class="el" href="classfrc_1_1_simple_motor_feedforward.html#aa9ec1082620cd57dac1f41bccd311e8e">Acceleration</a>&gt;(0)</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -330,7 +417,7 @@ template&lt;class Distance &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; Acceleration &gt; <a class="el" href="classfrc_1_1_simple_motor_feedforward.html">frc::SimpleMotorFeedforward</a>&lt; Distance &gt;::MaxAchievableAcceleration </td>
+          <td class="memname">constexpr <a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; <a class="el" href="classfrc_1_1_simple_motor_feedforward.html#aa9ec1082620cd57dac1f41bccd311e8e">Acceleration</a> &gt; <a class="el" href="classfrc_1_1_simple_motor_feedforward.html">frc::SimpleMotorFeedforward</a>&lt; Distance &gt;::MaxAchievableAcceleration </td>
           <td>(</td>
           <td class="paramtype">units::volt_t&#160;</td>
           <td class="paramname"><em>maxVoltage</em>, </td>
@@ -338,7 +425,7 @@ template&lt;class Distance &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; Velocity &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; <a class="el" href="classfrc_1_1_simple_motor_feedforward.html#a42c7ddd5b2eccd3c2a572112aae33337">Velocity</a> &gt;&#160;</td>
           <td class="paramname"><em>velocity</em>&#160;</td>
         </tr>
         <tr>
@@ -379,7 +466,7 @@ template&lt;class Distance &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; Velocity &gt; <a class="el" href="classfrc_1_1_simple_motor_feedforward.html">frc::SimpleMotorFeedforward</a>&lt; Distance &gt;::MaxAchievableVelocity </td>
+          <td class="memname">constexpr <a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; <a class="el" href="classfrc_1_1_simple_motor_feedforward.html#a42c7ddd5b2eccd3c2a572112aae33337">Velocity</a> &gt; <a class="el" href="classfrc_1_1_simple_motor_feedforward.html">frc::SimpleMotorFeedforward</a>&lt; Distance &gt;::MaxAchievableVelocity </td>
           <td>(</td>
           <td class="paramtype">units::volt_t&#160;</td>
           <td class="paramname"><em>maxVoltage</em>, </td>
@@ -387,7 +474,7 @@ template&lt;class Distance &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; Acceleration &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; <a class="el" href="classfrc_1_1_simple_motor_feedforward.html#aa9ec1082620cd57dac1f41bccd311e8e">Acceleration</a> &gt;&#160;</td>
           <td class="paramname"><em>acceleration</em>&#160;</td>
         </tr>
         <tr>
@@ -428,7 +515,7 @@ template&lt;class Distance &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; Acceleration &gt; <a class="el" href="classfrc_1_1_simple_motor_feedforward.html">frc::SimpleMotorFeedforward</a>&lt; Distance &gt;::MinAchievableAcceleration </td>
+          <td class="memname">constexpr <a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; <a class="el" href="classfrc_1_1_simple_motor_feedforward.html#aa9ec1082620cd57dac1f41bccd311e8e">Acceleration</a> &gt; <a class="el" href="classfrc_1_1_simple_motor_feedforward.html">frc::SimpleMotorFeedforward</a>&lt; Distance &gt;::MinAchievableAcceleration </td>
           <td>(</td>
           <td class="paramtype">units::volt_t&#160;</td>
           <td class="paramname"><em>maxVoltage</em>, </td>
@@ -436,7 +523,7 @@ template&lt;class Distance &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; Velocity &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; <a class="el" href="classfrc_1_1_simple_motor_feedforward.html#a42c7ddd5b2eccd3c2a572112aae33337">Velocity</a> &gt;&#160;</td>
           <td class="paramname"><em>velocity</em>&#160;</td>
         </tr>
         <tr>
@@ -477,7 +564,7 @@ template&lt;class Distance &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; Velocity &gt; <a class="el" href="classfrc_1_1_simple_motor_feedforward.html">frc::SimpleMotorFeedforward</a>&lt; Distance &gt;::MinAchievableVelocity </td>
+          <td class="memname">constexpr <a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; <a class="el" href="classfrc_1_1_simple_motor_feedforward.html#a42c7ddd5b2eccd3c2a572112aae33337">Velocity</a> &gt; <a class="el" href="classfrc_1_1_simple_motor_feedforward.html">frc::SimpleMotorFeedforward</a>&lt; Distance &gt;::MinAchievableVelocity </td>
           <td>(</td>
           <td class="paramtype">units::volt_t&#160;</td>
           <td class="paramname"><em>maxVoltage</em>, </td>
@@ -485,7 +572,7 @@ template&lt;class Distance &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; Acceleration &gt;&#160;</td>
+          <td class="paramtype"><a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt; <a class="el" href="classfrc_1_1_simple_motor_feedforward.html#aa9ec1082620cd57dac1f41bccd311e8e">Acceleration</a> &gt;&#160;</td>
           <td class="paramname"><em>acceleration</em>&#160;</td>
         </tr>
         <tr>
@@ -514,6 +601,55 @@ template&lt;class Distance &gt; </div>
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a6e22518a0479e98bc509a5f026c225a1" name="a6e22518a0479e98bc509a5f026c225a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e22518a0479e98bc509a5f026c225a1">&#9670;&nbsp;</a></span>kA</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Distance &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt;<a class="el" href="classfrc_1_1_simple_motor_feedforward.html#a58ae48792a7dbdeb9b9443361a7a219a">ka_unit</a>&gt; <a class="el" href="classfrc_1_1_simple_motor_feedforward.html">frc::SimpleMotorFeedforward</a>&lt; Distance &gt;::kA {0}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a339fc3d231d056359f2e81915d9cc6fe" name="a339fc3d231d056359f2e81915d9cc6fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a339fc3d231d056359f2e81915d9cc6fe">&#9670;&nbsp;</a></span>kS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Distance &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">units::volt_t <a class="el" href="classfrc_1_1_simple_motor_feedforward.html">frc::SimpleMotorFeedforward</a>&lt; Distance &gt;::kS {0}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a650d678be87bffadfe552b28fb3d581c" name="a650d678be87bffadfe552b28fb3d581c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a650d678be87bffadfe552b28fb3d581c">&#9670;&nbsp;</a></span>kV</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Distance &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classunits_1_1unit__t.html">units::unit_t</a>&lt;<a class="el" href="classfrc_1_1_simple_motor_feedforward.html#a9b224763d289ff47061af046422bf4db">kv_unit</a>&gt; <a class="el" href="classfrc_1_1_simple_motor_feedforward.html">frc::SimpleMotorFeedforward</a>&lt; Distance &gt;::kV {0}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>frc/controller/<a class="el" href="_simple_motor_feedforward_8h_source.html">SimpleMotorFeedforward.h</a></li>
 </ul>
@@ -522,8 +658,8 @@ template&lt;class Distance &gt; </div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1_simple_motor_feedforward.html">SimpleMotorFeedforward</a></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:50 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_simple_motor_feedforward.html">SimpleMotorFeedforward</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:38 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

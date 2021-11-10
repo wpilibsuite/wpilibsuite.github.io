@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -109,13 +109,13 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ae159ad6296eb95b830faad4806b316f2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_shuffleboard.html#ae159ad6296eb95b830faad4806b316f2">Update</a> ()</td></tr>
 <tr class="memdesc:ae159ad6296eb95b830faad4806b316f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates all the values in <a class="el" href="classfrc_1_1_shuffleboard.html" title="The Shuffleboard class provides a mechanism with which data can be added and laid out in the Shuffleb...">Shuffleboard</a>.  <a href="classfrc_1_1_shuffleboard.html#ae159ad6296eb95b830faad4806b316f2">More...</a><br /></td></tr>
 <tr class="separator:ae159ad6296eb95b830faad4806b316f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ea58d4b33df9a5665c3fcaea6eaecd7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classfrc_1_1_shuffleboard_tab.html">ShuffleboardTab</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_shuffleboard.html#a2ea58d4b33df9a5665c3fcaea6eaecd7">GetTab</a> (std::string_view title)</td></tr>
+<tr class="memitem:a2ea58d4b33df9a5665c3fcaea6eaecd7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classfrc_1_1_shuffleboard_tab.html">ShuffleboardTab</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_shuffleboard.html#a2ea58d4b33df9a5665c3fcaea6eaecd7">GetTab</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> title)</td></tr>
 <tr class="memdesc:a2ea58d4b33df9a5665c3fcaea6eaecd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the <a class="el" href="classfrc_1_1_shuffleboard.html" title="The Shuffleboard class provides a mechanism with which data can be added and laid out in the Shuffleb...">Shuffleboard</a> tab with the given title, creating it if it does not already exist.  <a href="classfrc_1_1_shuffleboard.html#a2ea58d4b33df9a5665c3fcaea6eaecd7">More...</a><br /></td></tr>
 <tr class="separator:a2ea58d4b33df9a5665c3fcaea6eaecd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a236723565aece950c4d7cffe23e5dc79"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_shuffleboard.html#a236723565aece950c4d7cffe23e5dc79">SelectTab</a> (int index)</td></tr>
 <tr class="memdesc:a236723565aece950c4d7cffe23e5dc79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selects the tab in the dashboard with the given index in the range [0..n-1], where <em>n</em> is the number of tabs in the dashboard at the time this method is called.  <a href="classfrc_1_1_shuffleboard.html#a236723565aece950c4d7cffe23e5dc79">More...</a><br /></td></tr>
 <tr class="separator:a236723565aece950c4d7cffe23e5dc79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50bf9fe6514999fabd8f84229bfa3cb5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_shuffleboard.html#a50bf9fe6514999fabd8f84229bfa3cb5">SelectTab</a> (std::string_view title)</td></tr>
+<tr class="memitem:a50bf9fe6514999fabd8f84229bfa3cb5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_shuffleboard.html#a50bf9fe6514999fabd8f84229bfa3cb5">SelectTab</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> title)</td></tr>
 <tr class="memdesc:a50bf9fe6514999fabd8f84229bfa3cb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selects the tab in the dashboard with the given title.  <a href="classfrc_1_1_shuffleboard.html#a50bf9fe6514999fabd8f84229bfa3cb5">More...</a><br /></td></tr>
 <tr class="separator:a50bf9fe6514999fabd8f84229bfa3cb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a809ca18b657c08273a7a282997f3437e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_shuffleboard.html#a809ca18b657c08273a7a282997f3437e">EnableActuatorWidgets</a> ()</td></tr>
@@ -130,24 +130,23 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a088c1eb3ce89ceae17a8615ad75a67c6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_shuffleboard.html#a088c1eb3ce89ceae17a8615ad75a67c6">StopRecording</a> ()</td></tr>
 <tr class="memdesc:a088c1eb3ce89ceae17a8615ad75a67c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops data recording on the dashboard.  <a href="classfrc_1_1_shuffleboard.html#a088c1eb3ce89ceae17a8615ad75a67c6">More...</a><br /></td></tr>
 <tr class="separator:a088c1eb3ce89ceae17a8615ad75a67c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a196b5a5897e3682469eb5d49e4908d34"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_shuffleboard.html#a196b5a5897e3682469eb5d49e4908d34">SetRecordingFileNameFormat</a> (std::string_view format)</td></tr>
+<tr class="memitem:a196b5a5897e3682469eb5d49e4908d34"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_shuffleboard.html#a196b5a5897e3682469eb5d49e4908d34">SetRecordingFileNameFormat</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> <a class="el" href="xchar_8h.html#adbec664fb40387a823078cb103b965f9">format</a>)</td></tr>
 <tr class="memdesc:a196b5a5897e3682469eb5d49e4908d34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the file name format for new recording files to use.  <a href="classfrc_1_1_shuffleboard.html#a196b5a5897e3682469eb5d49e4908d34">More...</a><br /></td></tr>
 <tr class="separator:a196b5a5897e3682469eb5d49e4908d34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2c9a24d42a9af896484d6c86bb11c7a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_shuffleboard.html#ad2c9a24d42a9af896484d6c86bb11c7a">ClearRecordingFileNameFormat</a> ()</td></tr>
 <tr class="memdesc:ad2c9a24d42a9af896484d6c86bb11c7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the custom name format for recording files.  <a href="classfrc_1_1_shuffleboard.html#ad2c9a24d42a9af896484d6c86bb11c7a">More...</a><br /></td></tr>
 <tr class="separator:ad2c9a24d42a9af896484d6c86bb11c7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b39ec5b16d3be759c0e93ac053aa2f7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_shuffleboard.html#a3b39ec5b16d3be759c0e93ac053aa2f7">AddEventMarker</a> (std::string_view name, std::string_view description, ShuffleboardEventImportance importance)</td></tr>
+<tr class="memitem:a3b39ec5b16d3be759c0e93ac053aa2f7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_shuffleboard.html#a3b39ec5b16d3be759c0e93ac053aa2f7">AddEventMarker</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> name, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> description, <a class="el" href="namespacefrc.html#a7150d1b34eeaf4d5ef8b480a7f25afe1">ShuffleboardEventImportance</a> importance)</td></tr>
 <tr class="memdesc:a3b39ec5b16d3be759c0e93ac053aa2f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies <a class="el" href="classfrc_1_1_shuffleboard.html" title="The Shuffleboard class provides a mechanism with which data can be added and laid out in the Shuffleb...">Shuffleboard</a> of an event.  <a href="classfrc_1_1_shuffleboard.html#a3b39ec5b16d3be759c0e93ac053aa2f7">More...</a><br /></td></tr>
 <tr class="separator:a3b39ec5b16d3be759c0e93ac053aa2f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9db81bbca5e9acbc04975860531aa8cb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_shuffleboard.html#a9db81bbca5e9acbc04975860531aa8cb">AddEventMarker</a> (std::string_view name, ShuffleboardEventImportance importance)</td></tr>
+<tr class="memitem:a9db81bbca5e9acbc04975860531aa8cb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_shuffleboard.html#a9db81bbca5e9acbc04975860531aa8cb">AddEventMarker</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> name, <a class="el" href="namespacefrc.html#a7150d1b34eeaf4d5ef8b480a7f25afe1">ShuffleboardEventImportance</a> importance)</td></tr>
 <tr class="memdesc:a9db81bbca5e9acbc04975860531aa8cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies <a class="el" href="classfrc_1_1_shuffleboard.html" title="The Shuffleboard class provides a mechanism with which data can be added and laid out in the Shuffleb...">Shuffleboard</a> of an event.  <a href="classfrc_1_1_shuffleboard.html#a9db81bbca5e9acbc04975860531aa8cb">More...</a><br /></td></tr>
 <tr class="separator:a9db81bbca5e9acbc04975860531aa8cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a068ffafc5a6233332e0c3d1113194a4a"><td class="memItemLeft" align="right" valign="top"><a id="a068ffafc5a6233332e0c3d1113194a4a" name="a068ffafc5a6233332e0c3d1113194a4a"></a>
-static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><b>kBaseTableName</b> = &quot;/Shuffleboard&quot;</td></tr>
-<tr class="memdesc:a068ffafc5a6233332e0c3d1113194a4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the base NetworkTable into which all <a class="el" href="classfrc_1_1_shuffleboard.html" title="The Shuffleboard class provides a mechanism with which data can be added and laid out in the Shuffleb...">Shuffleboard</a> data will be added. <br /></td></tr>
+<tr class="memitem:a068ffafc5a6233332e0c3d1113194a4a"><td class="memItemLeft" align="right" valign="top">static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_shuffleboard.html#a068ffafc5a6233332e0c3d1113194a4a">kBaseTableName</a> = &quot;/Shuffleboard&quot;</td></tr>
+<tr class="memdesc:a068ffafc5a6233332e0c3d1113194a4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the base NetworkTable into which all <a class="el" href="classfrc_1_1_shuffleboard.html" title="The Shuffleboard class provides a mechanism with which data can be added and laid out in the Shuffleb...">Shuffleboard</a> data will be added.  <a href="classfrc_1_1_shuffleboard.html#a068ffafc5a6233332e0c3d1113194a4a">More...</a><br /></td></tr>
 <tr class="separator:a068ffafc5a6233332e0c3d1113194a4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -182,13 +181,13 @@ static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"
         <tr>
           <td class="memname">static void frc::Shuffleboard::AddEventMarker </td>
           <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ShuffleboardEventImportance&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacefrc.html#a7150d1b34eeaf4d5ef8b480a7f25afe1">ShuffleboardEventImportance</a>&#160;</td>
           <td class="paramname"><em>importance</em>&#160;</td>
         </tr>
         <tr>
@@ -206,7 +205,8 @@ static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"
 
 <p>Notifies <a class="el" href="classfrc_1_1_shuffleboard.html" title="The Shuffleboard class provides a mechanism with which data can be added and laid out in the Shuffleb...">Shuffleboard</a> of an event. </p>
 <p >Events can range from as trivial as a change in a command state to as critical as a total power loss or component failure. If <a class="el" href="classfrc_1_1_shuffleboard.html" title="The Shuffleboard class provides a mechanism with which data can be added and laid out in the Shuffleb...">Shuffleboard</a> is recording, the event will also be recorded.</p>
-<p >If </p><div class="fragment"><div class="line">name </div>
+<p >If </p><div class="fragment"><div class="line"><a class="code hl_function" href="namespaceunits.html#a82e0d5a63e2f3163115029c091db136b">name</a> </div>
+<div class="ttc" id="anamespaceunits_html_a82e0d5a63e2f3163115029c091db136b"><div class="ttname"><a href="namespaceunits.html#a82e0d5a63e2f3163115029c091db136b">units::name</a></div><div class="ttdeci">constexpr const char * name(const T &amp;)</div></div>
 </div><!-- fragment --><p> is </p><div class="fragment"><div class="line"><span class="keyword">null</span> </div>
 </div><!-- fragment --><p> or empty, no event will be sent and an error will be printed to the driver station.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -231,19 +231,19 @@ static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"
         <tr>
           <td class="memname">static void frc::Shuffleboard::AddEventMarker </td>
           <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>description</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ShuffleboardEventImportance&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacefrc.html#a7150d1b34eeaf4d5ef8b480a7f25afe1">ShuffleboardEventImportance</a>&#160;</td>
           <td class="paramname"><em>importance</em>&#160;</td>
         </tr>
         <tr>
@@ -261,7 +261,7 @@ static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"
 
 <p>Notifies <a class="el" href="classfrc_1_1_shuffleboard.html" title="The Shuffleboard class provides a mechanism with which data can be added and laid out in the Shuffleb...">Shuffleboard</a> of an event. </p>
 <p >Events can range from as trivial as a change in a command state to as critical as a total power loss or component failure. If <a class="el" href="classfrc_1_1_shuffleboard.html" title="The Shuffleboard class provides a mechanism with which data can be added and laid out in the Shuffleb...">Shuffleboard</a> is recording, the event will also be recorded.</p>
-<p >If </p><div class="fragment"><div class="line">name </div>
+<p >If </p><div class="fragment"><div class="line"><a class="code hl_function" href="namespaceunits.html#a82e0d5a63e2f3163115029c091db136b">name</a> </div>
 </div><!-- fragment --><p> is </p><div class="fragment"><div class="line"><span class="keyword">null</span> </div>
 </div><!-- fragment --><p> or empty, no event will be sent and an error will be printed to the driver station.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -372,7 +372,7 @@ static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"
         <tr>
           <td class="memname">static <a class="el" href="classfrc_1_1_shuffleboard_tab.html">ShuffleboardTab</a> &amp; frc::Shuffleboard::GetTab </td>
           <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>title</em></td><td>)</td>
           <td></td>
         </tr>
@@ -441,7 +441,7 @@ static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"
         <tr>
           <td class="memname">static void frc::Shuffleboard::SelectTab </td>
           <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>title</em></td><td>)</td>
           <td></td>
         </tr>
@@ -475,7 +475,7 @@ static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"
         <tr>
           <td class="memname">static void frc::Shuffleboard::SetRecordingFileNameFormat </td>
           <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>format</em></td><td>)</td>
           <td></td>
         </tr>
@@ -588,6 +588,31 @@ static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a068ffafc5a6233332e0c3d1113194a4a" name="a068ffafc5a6233332e0c3d1113194a4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a068ffafc5a6233332e0c3d1113194a4a">&#9670;&nbsp;</a></span>kBaseTableName</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr const char* frc::Shuffleboard::kBaseTableName = &quot;/Shuffleboard&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The name of the base NetworkTable into which all <a class="el" href="classfrc_1_1_shuffleboard.html" title="The Shuffleboard class provides a mechanism with which data can be added and laid out in the Shuffleb...">Shuffleboard</a> data will be added. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>frc/shuffleboard/<a class="el" href="_shuffleboard_8h_source.html">Shuffleboard.h</a></li>
 </ul>
@@ -596,8 +621,8 @@ static constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1_shuffleboard.html">Shuffleboard</a></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:50 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_shuffleboard.html">Shuffleboard</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:38 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

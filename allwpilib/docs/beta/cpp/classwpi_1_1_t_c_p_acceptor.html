@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -97,6 +97,8 @@ $(document).ready(function(){initNavTree('classwpi_1_1_t_c_p_acceptor.html','');
   <div class="headertitle"><div class="title">wpi::TCPAcceptor Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_t_c_p_acceptor_8h_source.html">wpi/TCPAcceptor.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for wpi::TCPAcceptor:</div>
 <div class="dyncontent">
@@ -109,9 +111,10 @@ Inheritance diagram for wpi::TCPAcceptor:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a28eab79fd2108f26d7fe5a53f2453337"><td class="memItemLeft" align="right" valign="top"><a id="a28eab79fd2108f26d7fe5a53f2453337" name="a28eab79fd2108f26d7fe5a53f2453337"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>TCPAcceptor</b> (int port, std::string_view address, <a class="el" href="classwpi_1_1_logger.html">Logger</a> &amp;logger)</td></tr>
+<tr class="memitem:a28eab79fd2108f26d7fe5a53f2453337"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_t_c_p_acceptor.html#a28eab79fd2108f26d7fe5a53f2453337">TCPAcceptor</a> (int port, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> address, <a class="el" href="classwpi_1_1_logger.html">Logger</a> &amp;logger)</td></tr>
 <tr class="separator:a28eab79fd2108f26d7fe5a53f2453337"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3c2bd09254ef47a2cae98cc7d8eaf4b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_t_c_p_acceptor.html#af3c2bd09254ef47a2cae98cc7d8eaf4b">~TCPAcceptor</a> () override</td></tr>
+<tr class="separator:af3c2bd09254ef47a2cae98cc7d8eaf4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a724c5c51fcc810c15a7d7290ac0a3e0e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_t_c_p_acceptor.html#a724c5c51fcc810c15a7d7290ac0a3e0e">start</a> () override</td></tr>
 <tr class="separator:a724c5c51fcc810c15a7d7290ac0a3e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11fb241fe7c111e186266a8fdaac8896"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_t_c_p_acceptor.html#a11fb241fe7c111e186266a8fdaac8896">shutdown</a> () final</td></tr>
@@ -119,13 +122,75 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5507aabb06017db0d96e78e2167c3181"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classwpi_1_1_network_stream.html">NetworkStream</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_t_c_p_acceptor.html#a5507aabb06017db0d96e78e2167c3181">accept</a> () override</td></tr>
 <tr class="separator:a5507aabb06017db0d96e78e2167c3181"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classwpi_1_1_network_acceptor"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classwpi_1_1_network_acceptor')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classwpi_1_1_network_acceptor.html">wpi::NetworkAcceptor</a></td></tr>
-<tr class="memitem:aacf2e8e33c51b6103e4b4cf5679e5308 inherit pub_methods_classwpi_1_1_network_acceptor"><td class="memItemLeft" align="right" valign="top"><a id="aacf2e8e33c51b6103e4b4cf5679e5308" name="aacf2e8e33c51b6103e4b4cf5679e5308"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>NetworkAcceptor</b> (const <a class="el" href="classwpi_1_1_network_acceptor.html">NetworkAcceptor</a> &amp;)=delete</td></tr>
+<tr class="memitem:a0c35718af52e7d06d779efe17b686da5 inherit pub_methods_classwpi_1_1_network_acceptor"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_network_acceptor.html#a0c35718af52e7d06d779efe17b686da5">NetworkAcceptor</a> ()=default</td></tr>
+<tr class="separator:a0c35718af52e7d06d779efe17b686da5 inherit pub_methods_classwpi_1_1_network_acceptor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01789e5886178168c4e636a92057e75f inherit pub_methods_classwpi_1_1_network_acceptor"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_network_acceptor.html#a01789e5886178168c4e636a92057e75f">~NetworkAcceptor</a> ()=default</td></tr>
+<tr class="separator:a01789e5886178168c4e636a92057e75f inherit pub_methods_classwpi_1_1_network_acceptor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacf2e8e33c51b6103e4b4cf5679e5308 inherit pub_methods_classwpi_1_1_network_acceptor"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_network_acceptor.html#aacf2e8e33c51b6103e4b4cf5679e5308">NetworkAcceptor</a> (const <a class="el" href="classwpi_1_1_network_acceptor.html">NetworkAcceptor</a> &amp;)=delete</td></tr>
 <tr class="separator:aacf2e8e33c51b6103e4b4cf5679e5308 inherit pub_methods_classwpi_1_1_network_acceptor"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23408bfa7da4e4a10e53c3c99d35160b inherit pub_methods_classwpi_1_1_network_acceptor"><td class="memItemLeft" align="right" valign="top"><a id="a23408bfa7da4e4a10e53c3c99d35160b" name="a23408bfa7da4e4a10e53c3c99d35160b"></a>
-<a class="el" href="classwpi_1_1_network_acceptor.html">NetworkAcceptor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classwpi_1_1_network_acceptor.html">NetworkAcceptor</a> &amp;)=delete</td></tr>
+<tr class="memitem:a23408bfa7da4e4a10e53c3c99d35160b inherit pub_methods_classwpi_1_1_network_acceptor"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1_network_acceptor.html">NetworkAcceptor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_network_acceptor.html#a23408bfa7da4e4a10e53c3c99d35160b">operator=</a> (const <a class="el" href="classwpi_1_1_network_acceptor.html">NetworkAcceptor</a> &amp;)=delete</td></tr>
 <tr class="separator:a23408bfa7da4e4a10e53c3c99d35160b inherit pub_methods_classwpi_1_1_network_acceptor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a28eab79fd2108f26d7fe5a53f2453337" name="a28eab79fd2108f26d7fe5a53f2453337"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28eab79fd2108f26d7fe5a53f2453337">&#9670;&nbsp;</a></span>TCPAcceptor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">wpi::TCPAcceptor::TCPAcceptor </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classwpi_1_1_logger.html">Logger</a> &amp;&#160;</td>
+          <td class="paramname"><em>logger</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af3c2bd09254ef47a2cae98cc7d8eaf4b" name="af3c2bd09254ef47a2cae98cc7d8eaf4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3c2bd09254ef47a2cae98cc7d8eaf4b">&#9670;&nbsp;</a></span>~TCPAcceptor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">wpi::TCPAcceptor::~TCPAcceptor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a5507aabb06017db0d96e78e2167c3181" name="a5507aabb06017db0d96e78e2167c3181"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5507aabb06017db0d96e78e2167c3181">&#9670;&nbsp;</a></span>accept()</h2>
@@ -150,7 +215,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classwpi_1_1_network_acceptor.html">wpi::NetworkAcceptor</a>.</p>
+<p>Implements <a class="el" href="classwpi_1_1_network_acceptor.html#a8db2be5952de354fa7827a541034eaeb">wpi::NetworkAcceptor</a>.</p>
 
 </div>
 </div>
@@ -177,7 +242,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classwpi_1_1_network_acceptor.html">wpi::NetworkAcceptor</a>.</p>
+<p>Implements <a class="el" href="classwpi_1_1_network_acceptor.html#a820ed44af9d0c56ff56956db418aabf8">wpi::NetworkAcceptor</a>.</p>
 
 </div>
 </div>
@@ -204,7 +269,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classwpi_1_1_network_acceptor.html">wpi::NetworkAcceptor</a>.</p>
+<p>Implements <a class="el" href="classwpi_1_1_network_acceptor.html#ab9486fe2213a3d34c405b77b92c0c4bc">wpi::NetworkAcceptor</a>.</p>
 
 </div>
 </div>
@@ -216,8 +281,8 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>wpi</b></li><li class="navelem"><a class="el" href="classwpi_1_1_t_c_p_acceptor.html">TCPAcceptor</a></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:53 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="classwpi_1_1_t_c_p_acceptor.html">TCPAcceptor</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:40 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

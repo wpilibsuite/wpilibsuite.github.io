@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -108,9 +108,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a42d70c4f7b4987b6878fd09581bce1e1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_holonomic_drive_controller.html#a42d70c4f7b4987b6878fd09581bce1e1">HolonomicDriveController</a> (<a class="el" href="classfrc2_1_1_p_i_d_controller.html">frc2::PIDController</a> xController, <a class="el" href="classfrc2_1_1_p_i_d_controller.html">frc2::PIDController</a> yController, <a class="el" href="classfrc_1_1_profiled_p_i_d_controller.html">ProfiledPIDController</a>&lt; units::radian &gt; thetaController)</td></tr>
 <tr class="memdesc:a42d70c4f7b4987b6878fd09581bce1e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a holonomic drive controller.  <a href="classfrc_1_1_holonomic_drive_controller.html#a42d70c4f7b4987b6878fd09581bce1e1">More...</a><br /></td></tr>
 <tr class="separator:a42d70c4f7b4987b6878fd09581bce1e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a541440376f1de7e2ca3b98a38f90d699"><td class="memItemLeft" align="right" valign="top"><a id="a541440376f1de7e2ca3b98a38f90d699" name="a541440376f1de7e2ca3b98a38f90d699"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>AtReference</b> () const</td></tr>
-<tr class="memdesc:a541440376f1de7e2ca3b98a38f90d699"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the pose error is within tolerance of the reference. <br /></td></tr>
+<tr class="memitem:a541440376f1de7e2ca3b98a38f90d699"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_holonomic_drive_controller.html#a541440376f1de7e2ca3b98a38f90d699">AtReference</a> () const</td></tr>
+<tr class="memdesc:a541440376f1de7e2ca3b98a38f90d699"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the pose error is within tolerance of the reference.  <a href="classfrc_1_1_holonomic_drive_controller.html#a541440376f1de7e2ca3b98a38f90d699">More...</a><br /></td></tr>
 <tr class="separator:a541440376f1de7e2ca3b98a38f90d699"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c111c2c83d6277b1126cab5ca95d518"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_holonomic_drive_controller.html#a3c111c2c83d6277b1126cab5ca95d518">SetTolerance</a> (const <a class="el" href="classfrc_1_1_pose2d.html">Pose2d</a> &amp;tolerance)</td></tr>
 <tr class="memdesc:a3c111c2c83d6277b1126cab5ca95d518"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the pose error which is considered tolerable for use with <a class="el" href="classfrc_1_1_holonomic_drive_controller.html#a541440376f1de7e2ca3b98a38f90d699" title="Returns true if the pose error is within tolerance of the reference.">AtReference()</a>.  <a href="classfrc_1_1_holonomic_drive_controller.html#a3c111c2c83d6277b1126cab5ca95d518">More...</a><br /></td></tr>
@@ -175,6 +174,25 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>AtReference</b> () co
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a541440376f1de7e2ca3b98a38f90d699" name="a541440376f1de7e2ca3b98a38f90d699"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a541440376f1de7e2ca3b98a38f90d699">&#9670;&nbsp;</a></span>AtReference()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool frc::HolonomicDriveController::AtReference </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns true if the pose error is within tolerance of the reference. </p>
+
+</div>
+</div>
 <a id="a50694abd7f07c2a99f5166347360bb01" name="a50694abd7f07c2a99f5166347360bb01"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a50694abd7f07c2a99f5166347360bb01">&#9670;&nbsp;</a></span>Calculate() <span class="overload">[1/2]</span></h2>
 
@@ -333,8 +351,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>AtReference</b> () co
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1_holonomic_drive_controller.html">HolonomicDriveController</a></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:50 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_holonomic_drive_controller.html">HolonomicDriveController</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:38 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

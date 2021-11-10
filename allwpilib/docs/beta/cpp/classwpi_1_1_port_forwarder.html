@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -106,13 +106,11 @@ $(document).ready(function(){initNavTree('classwpi_1_1_port_forwarder.html','');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:acc335fb133bb1f9327383dff47f1f8b8"><td class="memItemLeft" align="right" valign="top"><a id="acc335fb133bb1f9327383dff47f1f8b8" name="acc335fb133bb1f9327383dff47f1f8b8"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>PortForwarder</b> (const <a class="el" href="classwpi_1_1_port_forwarder.html">PortForwarder</a> &amp;)=delete</td></tr>
+<tr class="memitem:acc335fb133bb1f9327383dff47f1f8b8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_port_forwarder.html#acc335fb133bb1f9327383dff47f1f8b8">PortForwarder</a> (const <a class="el" href="classwpi_1_1_port_forwarder.html">PortForwarder</a> &amp;)=delete</td></tr>
 <tr class="separator:acc335fb133bb1f9327383dff47f1f8b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a571752c1b33a0c4d1c3954cd232d505d"><td class="memItemLeft" align="right" valign="top"><a id="a571752c1b33a0c4d1c3954cd232d505d" name="a571752c1b33a0c4d1c3954cd232d505d"></a>
-<a class="el" href="classwpi_1_1_port_forwarder.html">PortForwarder</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classwpi_1_1_port_forwarder.html">PortForwarder</a> &amp;)=delete</td></tr>
+<tr class="memitem:a571752c1b33a0c4d1c3954cd232d505d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classwpi_1_1_port_forwarder.html">PortForwarder</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_port_forwarder.html#a571752c1b33a0c4d1c3954cd232d505d">operator=</a> (const <a class="el" href="classwpi_1_1_port_forwarder.html">PortForwarder</a> &amp;)=delete</td></tr>
 <tr class="separator:a571752c1b33a0c4d1c3954cd232d505d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a255fdc5125d14e3987a91f58767d3f62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_port_forwarder.html#a255fdc5125d14e3987a91f58767d3f62">Add</a> (unsigned int port, std::string_view remoteHost, unsigned int remotePort)</td></tr>
+<tr class="memitem:a255fdc5125d14e3987a91f58767d3f62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_port_forwarder.html#a255fdc5125d14e3987a91f58767d3f62">Add</a> (unsigned int port, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> remoteHost, unsigned int remotePort)</td></tr>
 <tr class="memdesc:a255fdc5125d14e3987a91f58767d3f62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forward a local TCP port to a remote host and port.  <a href="classwpi_1_1_port_forwarder.html#a255fdc5125d14e3987a91f58767d3f62">More...</a><br /></td></tr>
 <tr class="separator:a255fdc5125d14e3987a91f58767d3f62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7714761ade7f7d9f7158d3990ec3739"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classwpi_1_1_port_forwarder.html#ab7714761ade7f7d9f7158d3990ec3739">Remove</a> (unsigned int port)</td></tr>
@@ -128,7 +126,34 @@ Static Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Forward ports to another host. </p>
 <p >This is primarily useful for accessing Ethernet-connected devices from a computer tethered to the RoboRIO USB port. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="acc335fb133bb1f9327383dff47f1f8b8" name="acc335fb133bb1f9327383dff47f1f8b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc335fb133bb1f9327383dff47f1f8b8">&#9670;&nbsp;</a></span>PortForwarder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">wpi::PortForwarder::PortForwarder </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classwpi_1_1_port_forwarder.html">PortForwarder</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a255fdc5125d14e3987a91f58767d3f62" name="a255fdc5125d14e3987a91f58767d3f62"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a255fdc5125d14e3987a91f58767d3f62">&#9670;&nbsp;</a></span>Add()</h2>
 
@@ -144,7 +169,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
           <td class="paramname"><em>remoteHost</em>, </td>
         </tr>
         <tr>
@@ -202,6 +227,32 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a571752c1b33a0c4d1c3954cd232d505d" name="a571752c1b33a0c4d1c3954cd232d505d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a571752c1b33a0c4d1c3954cd232d505d">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classwpi_1_1_port_forwarder.html">PortForwarder</a> &amp; wpi::PortForwarder::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classwpi_1_1_port_forwarder.html">PortForwarder</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ab7714761ade7f7d9f7158d3990ec3739" name="ab7714761ade7f7d9f7158d3990ec3739"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab7714761ade7f7d9f7158d3990ec3739">&#9670;&nbsp;</a></span>Remove()</h2>
 
@@ -236,8 +287,8 @@ Static Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>wpi</b></li><li class="navelem"><a class="el" href="classwpi_1_1_port_forwarder.html">PortForwarder</a></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:52 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="classwpi_1_1_port_forwarder.html">PortForwarder</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:40 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

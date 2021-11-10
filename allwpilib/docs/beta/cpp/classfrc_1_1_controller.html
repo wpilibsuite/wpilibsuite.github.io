@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -114,11 +114,13 @@ Inheritance diagram for frc::Controller:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a83967a2525c6f47b6ab33afd20af2822"><td class="memItemLeft" align="right" valign="top"><a id="a83967a2525c6f47b6ab33afd20af2822" name="a83967a2525c6f47b6ab33afd20af2822"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Controller</b> (<a class="el" href="classfrc_1_1_controller.html">Controller</a> &amp;&amp;)=default</td></tr>
+<tr class="memitem:a7562d7174db177c257a25be5b25beda5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_controller.html#a7562d7174db177c257a25be5b25beda5">Controller</a> ()=default</td></tr>
+<tr class="separator:a7562d7174db177c257a25be5b25beda5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac378ac587ea83ded056aea6d2d4b1990"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_controller.html#ac378ac587ea83ded056aea6d2d4b1990">~Controller</a> ()=default</td></tr>
+<tr class="separator:ac378ac587ea83ded056aea6d2d4b1990"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83967a2525c6f47b6ab33afd20af2822"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_controller.html#a83967a2525c6f47b6ab33afd20af2822">Controller</a> (<a class="el" href="classfrc_1_1_controller.html">Controller</a> &amp;&amp;)=default</td></tr>
 <tr class="separator:a83967a2525c6f47b6ab33afd20af2822"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37a7c6515d1f1bd272892c49dc295f78"><td class="memItemLeft" align="right" valign="top"><a id="a37a7c6515d1f1bd272892c49dc295f78" name="a37a7c6515d1f1bd272892c49dc295f78"></a>
-<a class="el" href="classfrc_1_1_controller.html">Controller</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classfrc_1_1_controller.html">Controller</a> &amp;&amp;)=default</td></tr>
+<tr class="memitem:a37a7c6515d1f1bd272892c49dc295f78"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_controller.html">Controller</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_controller.html#a37a7c6515d1f1bd272892c49dc295f78">operator=</a> (<a class="el" href="classfrc_1_1_controller.html">Controller</a> &amp;&amp;)=default</td></tr>
 <tr class="separator:a37a7c6515d1f1bd272892c49dc295f78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe9797ba44fa1b2c7ba401cfb86cff96"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_controller.html#abe9797ba44fa1b2c7ba401cfb86cff96">Enable</a> ()=0</td></tr>
 <tr class="memdesc:abe9797ba44fa1b2c7ba401cfb86cff96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows the control loop to run.  <a href="classfrc_1_1_controller.html#abe9797ba44fa1b2c7ba401cfb86cff96">More...</a><br /></td></tr>
@@ -130,8 +132,85 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Interface for Controllers. </p>
 <p >Common interface for controllers. Controllers run control loops, the most common are PID controllers and their variants, but this includes anything that is controlling an actuator in a separate thread.</p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000053">Deprecated:</a></b></dt><dd>Only used by the deprecated <a class="el" href="classfrc_1_1_p_i_d_controller.html" title="Class implements a PID Control Loop.">PIDController</a> </dd></dl>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000064">Deprecated:</a></b></dt><dd>Only used by the deprecated <a class="el" href="classfrc_1_1_p_i_d_controller.html" title="Class implements a PID Control Loop.">PIDController</a> </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a7562d7174db177c257a25be5b25beda5" name="a7562d7174db177c257a25be5b25beda5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7562d7174db177c257a25be5b25beda5">&#9670;&nbsp;</a></span>Controller() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">frc::Controller::Controller </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac378ac587ea83ded056aea6d2d4b1990" name="ac378ac587ea83ded056aea6d2d4b1990"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac378ac587ea83ded056aea6d2d4b1990">&#9670;&nbsp;</a></span>~Controller()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual frc::Controller::~Controller </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a83967a2525c6f47b6ab33afd20af2822" name="a83967a2525c6f47b6ab33afd20af2822"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83967a2525c6f47b6ab33afd20af2822">&#9670;&nbsp;</a></span>Controller() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">frc::Controller::Controller </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classfrc_1_1_controller.html">Controller</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a1ffe042f609f945a91f9bbba35add1ed" name="a1ffe042f609f945a91f9bbba35add1ed"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1ffe042f609f945a91f9bbba35add1ed">&#9670;&nbsp;</a></span>Disable()</h2>
 
@@ -190,6 +269,32 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a37a7c6515d1f1bd272892c49dc295f78" name="a37a7c6515d1f1bd272892c49dc295f78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37a7c6515d1f1bd272892c49dc295f78">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfrc_1_1_controller.html">Controller</a> &amp; frc::Controller::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classfrc_1_1_controller.html">Controller</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>frc/<a class="el" href="_controller_8h_source.html">Controller.h</a></li>
 </ul>
@@ -198,8 +303,8 @@ Public Member Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1_controller.html">Controller</a></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:50 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_controller.html">Controller</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:38 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

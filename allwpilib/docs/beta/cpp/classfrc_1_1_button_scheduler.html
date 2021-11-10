@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -98,6 +98,8 @@ $(document).ready(function(){initNavTree('classfrc_1_1_button_scheduler.html',''
   <div class="headertitle"><div class="title">frc::ButtonScheduler Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_button_scheduler_8h_source.html">frc/buttons/ButtonScheduler.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for frc::ButtonScheduler:</div>
 <div class="dyncontent">
@@ -114,34 +116,252 @@ Inheritance diagram for frc::ButtonScheduler:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a06149e76a98a6c90ec201f7f89582e18"><td class="memItemLeft" align="right" valign="top"><a id="a06149e76a98a6c90ec201f7f89582e18" name="a06149e76a98a6c90ec201f7f89582e18"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ButtonScheduler</b> (bool last, <a class="el" href="classfrc_1_1_trigger.html">Trigger</a> *button, <a class="el" href="classfrc_1_1_command.html">Command</a> *orders)</td></tr>
+<tr class="memitem:a06149e76a98a6c90ec201f7f89582e18"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_button_scheduler.html#a06149e76a98a6c90ec201f7f89582e18">ButtonScheduler</a> (bool last, <a class="el" href="classfrc_1_1_trigger.html">Trigger</a> *button, <a class="el" href="classfrc_1_1_command.html">Command</a> *orders)</td></tr>
 <tr class="separator:a06149e76a98a6c90ec201f7f89582e18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80ec8f57a494e9a492147e7c5ab48fb5"><td class="memItemLeft" align="right" valign="top"><a id="a80ec8f57a494e9a492147e7c5ab48fb5" name="a80ec8f57a494e9a492147e7c5ab48fb5"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ButtonScheduler</b> (<a class="el" href="classfrc_1_1_button_scheduler.html">ButtonScheduler</a> &amp;&amp;)=default</td></tr>
+<tr class="memitem:a6c81c34e5b7e19eb3b970b9f9036ab65"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_button_scheduler.html#a6c81c34e5b7e19eb3b970b9f9036ab65">~ButtonScheduler</a> ()=default</td></tr>
+<tr class="separator:a6c81c34e5b7e19eb3b970b9f9036ab65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80ec8f57a494e9a492147e7c5ab48fb5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_button_scheduler.html#a80ec8f57a494e9a492147e7c5ab48fb5">ButtonScheduler</a> (<a class="el" href="classfrc_1_1_button_scheduler.html">ButtonScheduler</a> &amp;&amp;)=default</td></tr>
 <tr class="separator:a80ec8f57a494e9a492147e7c5ab48fb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6a14273faf0f59ba2256a8b3b50cf93"><td class="memItemLeft" align="right" valign="top"><a id="ab6a14273faf0f59ba2256a8b3b50cf93" name="ab6a14273faf0f59ba2256a8b3b50cf93"></a>
-<a class="el" href="classfrc_1_1_button_scheduler.html">ButtonScheduler</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classfrc_1_1_button_scheduler.html">ButtonScheduler</a> &amp;&amp;)=default</td></tr>
+<tr class="memitem:ab6a14273faf0f59ba2256a8b3b50cf93"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_button_scheduler.html">ButtonScheduler</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_button_scheduler.html#ab6a14273faf0f59ba2256a8b3b50cf93">operator=</a> (<a class="el" href="classfrc_1_1_button_scheduler.html">ButtonScheduler</a> &amp;&amp;)=default</td></tr>
 <tr class="separator:ab6a14273faf0f59ba2256a8b3b50cf93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7138bff01c09541320af5261e7d63080"><td class="memItemLeft" align="right" valign="top"><a id="a7138bff01c09541320af5261e7d63080" name="a7138bff01c09541320af5261e7d63080"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Execute</b> ()=0</td></tr>
+<tr class="memitem:a7138bff01c09541320af5261e7d63080"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_button_scheduler.html#a7138bff01c09541320af5261e7d63080">Execute</a> ()=0</td></tr>
 <tr class="separator:a7138bff01c09541320af5261e7d63080"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5239fa6625885f917cc67b9c8ede484"><td class="memItemLeft" align="right" valign="top"><a id="ad5239fa6625885f917cc67b9c8ede484" name="ad5239fa6625885f917cc67b9c8ede484"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Start</b> ()</td></tr>
+<tr class="memitem:ad5239fa6625885f917cc67b9c8ede484"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_button_scheduler.html#ad5239fa6625885f917cc67b9c8ede484">Start</a> ()</td></tr>
 <tr class="separator:ad5239fa6625885f917cc67b9c8ede484"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:aba6a36212bdc7d913888111166d619f6"><td class="memItemLeft" align="right" valign="top"><a id="aba6a36212bdc7d913888111166d619f6" name="aba6a36212bdc7d913888111166d619f6"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_pressedLast</b></td></tr>
+<tr class="memitem:aba6a36212bdc7d913888111166d619f6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_button_scheduler.html#aba6a36212bdc7d913888111166d619f6">m_pressedLast</a></td></tr>
 <tr class="separator:aba6a36212bdc7d913888111166d619f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a408a5a35dbce66e76af905de21a8f2ec"><td class="memItemLeft" align="right" valign="top"><a id="a408a5a35dbce66e76af905de21a8f2ec" name="a408a5a35dbce66e76af905de21a8f2ec"></a>
-<a class="el" href="classfrc_1_1_trigger.html">Trigger</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_button</b></td></tr>
+<tr class="memitem:a408a5a35dbce66e76af905de21a8f2ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_trigger.html">Trigger</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_button_scheduler.html#a408a5a35dbce66e76af905de21a8f2ec">m_button</a></td></tr>
 <tr class="separator:a408a5a35dbce66e76af905de21a8f2ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cd97586c9cc008fc33b1d60f4e09290"><td class="memItemLeft" align="right" valign="top"><a id="a3cd97586c9cc008fc33b1d60f4e09290" name="a3cd97586c9cc008fc33b1d60f4e09290"></a>
-<a class="el" href="classfrc_1_1_command.html">Command</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_command</b></td></tr>
+<tr class="memitem:a3cd97586c9cc008fc33b1d60f4e09290"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_command.html">Command</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_button_scheduler.html#a3cd97586c9cc008fc33b1d60f4e09290">m_command</a></td></tr>
 <tr class="separator:a3cd97586c9cc008fc33b1d60f4e09290"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a06149e76a98a6c90ec201f7f89582e18" name="a06149e76a98a6c90ec201f7f89582e18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06149e76a98a6c90ec201f7f89582e18">&#9670;&nbsp;</a></span>ButtonScheduler() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">frc::ButtonScheduler::ButtonScheduler </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>last</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classfrc_1_1_trigger.html">Trigger</a> *&#160;</td>
+          <td class="paramname"><em>button</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classfrc_1_1_command.html">Command</a> *&#160;</td>
+          <td class="paramname"><em>orders</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6c81c34e5b7e19eb3b970b9f9036ab65" name="a6c81c34e5b7e19eb3b970b9f9036ab65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c81c34e5b7e19eb3b970b9f9036ab65">&#9670;&nbsp;</a></span>~ButtonScheduler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual frc::ButtonScheduler::~ButtonScheduler </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a80ec8f57a494e9a492147e7c5ab48fb5" name="a80ec8f57a494e9a492147e7c5ab48fb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80ec8f57a494e9a492147e7c5ab48fb5">&#9670;&nbsp;</a></span>ButtonScheduler() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">frc::ButtonScheduler::ButtonScheduler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classfrc_1_1_button_scheduler.html">ButtonScheduler</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a7138bff01c09541320af5261e7d63080" name="a7138bff01c09541320af5261e7d63080"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7138bff01c09541320af5261e7d63080">&#9670;&nbsp;</a></span>Execute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void frc::ButtonScheduler::Execute </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classfrc_1_1_cancel_button_scheduler.html#ae0507346436d7e458d64d35ff1de3f12">frc::CancelButtonScheduler</a>, <a class="el" href="classfrc_1_1_held_button_scheduler.html#a7700881e2892987a65f4fac2e2257409">frc::HeldButtonScheduler</a>, <a class="el" href="classfrc_1_1_pressed_button_scheduler.html#a8d8ea458525d1bf842c70b71a28eae94">frc::PressedButtonScheduler</a>, <a class="el" href="classfrc_1_1_released_button_scheduler.html#ad4e9980781d6b5ed9654e920f32f45de">frc::ReleasedButtonScheduler</a>, and <a class="el" href="classfrc_1_1_toggle_button_scheduler.html#ab11c62eb5c27cc4708bafc63d4a09933">frc::ToggleButtonScheduler</a>.</p>
+
+</div>
+</div>
+<a id="ab6a14273faf0f59ba2256a8b3b50cf93" name="ab6a14273faf0f59ba2256a8b3b50cf93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6a14273faf0f59ba2256a8b3b50cf93">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfrc_1_1_button_scheduler.html">ButtonScheduler</a> &amp; frc::ButtonScheduler::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classfrc_1_1_button_scheduler.html">ButtonScheduler</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad5239fa6625885f917cc67b9c8ede484" name="ad5239fa6625885f917cc67b9c8ede484"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5239fa6625885f917cc67b9c8ede484">&#9670;&nbsp;</a></span>Start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void frc::ButtonScheduler::Start </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a408a5a35dbce66e76af905de21a8f2ec" name="a408a5a35dbce66e76af905de21a8f2ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a408a5a35dbce66e76af905de21a8f2ec">&#9670;&nbsp;</a></span>m_button</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfrc_1_1_trigger.html">Trigger</a>* frc::ButtonScheduler::m_button</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3cd97586c9cc008fc33b1d60f4e09290" name="a3cd97586c9cc008fc33b1d60f4e09290"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cd97586c9cc008fc33b1d60f4e09290">&#9670;&nbsp;</a></span>m_command</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfrc_1_1_command.html">Command</a>* frc::ButtonScheduler::m_command</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aba6a36212bdc7d913888111166d619f6" name="aba6a36212bdc7d913888111166d619f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba6a36212bdc7d913888111166d619f6">&#9670;&nbsp;</a></span>m_pressedLast</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool frc::ButtonScheduler::m_pressedLast</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>frc/buttons/<a class="el" href="_button_scheduler_8h_source.html">ButtonScheduler.h</a></li>
 </ul>
@@ -150,8 +370,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_pressedLast</b></td
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>frc</b></li><li class="navelem"><a class="el" href="classfrc_1_1_button_scheduler.html">ButtonScheduler</a></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:50 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_button_scheduler.html">ButtonScheduler</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:37 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

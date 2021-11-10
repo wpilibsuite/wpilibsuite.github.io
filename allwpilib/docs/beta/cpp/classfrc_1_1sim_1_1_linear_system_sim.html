@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -116,14 +116,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae2e2edcc10c643e4010df537e997a30a"><td class="memItemLeft" align="right" valign="top">const Eigen::Vector&lt; double, Outputs &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_linear_system_sim.html#ae2e2edcc10c643e4010df537e997a30a">GetOutput</a> () const</td></tr>
 <tr class="memdesc:ae2e2edcc10c643e4010df537e997a30a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current output of the plant.  <a href="classfrc_1_1sim_1_1_linear_system_sim.html#ae2e2edcc10c643e4010df537e997a30a">More...</a><br /></td></tr>
 <tr class="separator:ae2e2edcc10c643e4010df537e997a30a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ebbe7d917b6a01e401f364ddf2f7ea6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_linear_system_sim.html#a1ebbe7d917b6a01e401f364ddf2f7ea6">GetOutput</a> (int row) const</td></tr>
+<tr class="memitem:a1ebbe7d917b6a01e401f364ddf2f7ea6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_linear_system_sim.html#a1ebbe7d917b6a01e401f364ddf2f7ea6">GetOutput</a> (int <a class="el" href="_block_methods_8h.html#ace0220ddc85e95e756b362cda5bf17c9">row</a>) const</td></tr>
 <tr class="memdesc:a1ebbe7d917b6a01e401f364ddf2f7ea6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an element of the current output of the plant.  <a href="classfrc_1_1sim_1_1_linear_system_sim.html#a1ebbe7d917b6a01e401f364ddf2f7ea6">More...</a><br /></td></tr>
 <tr class="separator:a1ebbe7d917b6a01e401f364ddf2f7ea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af26d1060d065d462c3cb40938d6080fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_linear_system_sim.html#af26d1060d065d462c3cb40938d6080fc">SetInput</a> (const Eigen::Vector&lt; double, Inputs &gt; &amp;u)</td></tr>
 <tr class="memdesc:af26d1060d065d462c3cb40938d6080fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the system inputs (usually voltages).  <a href="classfrc_1_1sim_1_1_linear_system_sim.html#af26d1060d065d462c3cb40938d6080fc">More...</a><br /></td></tr>
 <tr class="separator:af26d1060d065d462c3cb40938d6080fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af299d4995d6ac6f9f21d4fb17cbda690"><td class="memItemLeft" align="right" valign="top"><a id="af299d4995d6ac6f9f21d4fb17cbda690" name="af299d4995d6ac6f9f21d4fb17cbda690"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetInput</b> (int row, double <a class="el" href="classvalue.html">value</a>)</td></tr>
+<tr class="memitem:af299d4995d6ac6f9f21d4fb17cbda690"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_linear_system_sim.html#af299d4995d6ac6f9f21d4fb17cbda690">SetInput</a> (int <a class="el" href="_block_methods_8h.html#ace0220ddc85e95e756b362cda5bf17c9">row</a>, double <a class="el" href="classvalue.html">value</a>)</td></tr>
 <tr class="separator:af299d4995d6ac6f9f21d4fb17cbda690"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a1bd454408012c639d467ec921f5761"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_linear_system_sim.html#a9a1bd454408012c639d467ec921f5761">SetState</a> (const Eigen::Vector&lt; double, States &gt; &amp;state)</td></tr>
 <tr class="memdesc:a9a1bd454408012c639d467ec921f5761"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the system state.  <a href="classfrc_1_1sim_1_1_linear_system_sim.html#a9a1bd454408012c639d467ec921f5761">More...</a><br /></td></tr>
@@ -143,20 +142,15 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a5ab91d924603ed77a927832d901b7213"><td class="memItemLeft" align="right" valign="top"><a id="a5ab91d924603ed77a927832d901b7213" name="a5ab91d924603ed77a927832d901b7213"></a>
-<a class="el" href="classfrc_1_1_linear_system.html">LinearSystem</a>&lt; States, Inputs, Outputs &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_plant</b></td></tr>
+<tr class="memitem:a5ab91d924603ed77a927832d901b7213"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_linear_system.html">LinearSystem</a>&lt; States, Inputs, Outputs &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_linear_system_sim.html#a5ab91d924603ed77a927832d901b7213">m_plant</a></td></tr>
 <tr class="separator:a5ab91d924603ed77a927832d901b7213"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4496f46e155d2100b3c8a8a3c4042f9"><td class="memItemLeft" align="right" valign="top"><a id="ac4496f46e155d2100b3c8a8a3c4042f9" name="ac4496f46e155d2100b3c8a8a3c4042f9"></a>
-Eigen::Vector&lt; double, States &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_x</b></td></tr>
+<tr class="memitem:ac4496f46e155d2100b3c8a8a3c4042f9"><td class="memItemLeft" align="right" valign="top">Eigen::Vector&lt; double, States &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_linear_system_sim.html#ac4496f46e155d2100b3c8a8a3c4042f9">m_x</a></td></tr>
 <tr class="separator:ac4496f46e155d2100b3c8a8a3c4042f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a396ae7d605c69820b077db83932aab0b"><td class="memItemLeft" align="right" valign="top"><a id="a396ae7d605c69820b077db83932aab0b" name="a396ae7d605c69820b077db83932aab0b"></a>
-Eigen::Vector&lt; double, Outputs &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_y</b></td></tr>
+<tr class="memitem:a396ae7d605c69820b077db83932aab0b"><td class="memItemLeft" align="right" valign="top">Eigen::Vector&lt; double, Outputs &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_linear_system_sim.html#a396ae7d605c69820b077db83932aab0b">m_y</a></td></tr>
 <tr class="separator:a396ae7d605c69820b077db83932aab0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50a56687a92a7e8fc32e90974ff19ac1"><td class="memItemLeft" align="right" valign="top"><a id="a50a56687a92a7e8fc32e90974ff19ac1" name="a50a56687a92a7e8fc32e90974ff19ac1"></a>
-Eigen::Vector&lt; double, Inputs &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_u</b></td></tr>
+<tr class="memitem:a50a56687a92a7e8fc32e90974ff19ac1"><td class="memItemLeft" align="right" valign="top">Eigen::Vector&lt; double, Inputs &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_linear_system_sim.html#a50a56687a92a7e8fc32e90974ff19ac1">m_u</a></td></tr>
 <tr class="separator:a50a56687a92a7e8fc32e90974ff19ac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a57c56b8d93938f82856bacac3494b6"><td class="memItemLeft" align="right" valign="top"><a id="a3a57c56b8d93938f82856bacac3494b6" name="a3a57c56b8d93938f82856bacac3494b6"></a>
-std::array&lt; double, Outputs &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_measurementStdDevs</b></td></tr>
+<tr class="memitem:a3a57c56b8d93938f82856bacac3494b6"><td class="memItemLeft" align="right" valign="top">std::array&lt; double, Outputs &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1sim_1_1_linear_system_sim.html#a3a57c56b8d93938f82856bacac3494b6">m_measurementStdDevs</a></td></tr>
 <tr class="separator:a3a57c56b8d93938f82856bacac3494b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -360,7 +354,7 @@ template&lt;int States, int Inputs, int Outputs&gt; </div>
 </div>
 </div>
 <a id="af26d1060d065d462c3cb40938d6080fc" name="af26d1060d065d462c3cb40938d6080fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af26d1060d065d462c3cb40938d6080fc">&#9670;&nbsp;</a></span>SetInput()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af26d1060d065d462c3cb40938d6080fc">&#9670;&nbsp;</a></span>SetInput() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -392,6 +386,44 @@ template&lt;int States, int Inputs, int Outputs&gt; </div>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="af299d4995d6ac6f9f21d4fb17cbda690" name="af299d4995d6ac6f9f21d4fb17cbda690"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af299d4995d6ac6f9f21d4fb17cbda690">&#9670;&nbsp;</a></span>SetInput() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int States, int Inputs, int Outputs&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classfrc_1_1sim_1_1_linear_system_sim.html">frc::sim::LinearSystemSim</a>&lt; States, Inputs, Outputs &gt;::SetInput </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>row</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -521,6 +553,127 @@ template&lt;int States, int Inputs, int Outputs&gt; </div>
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a3a57c56b8d93938f82856bacac3494b6" name="a3a57c56b8d93938f82856bacac3494b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a57c56b8d93938f82856bacac3494b6">&#9670;&nbsp;</a></span>m_measurementStdDevs</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int States, int Inputs, int Outputs&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;double, Outputs&gt; <a class="el" href="classfrc_1_1sim_1_1_linear_system_sim.html">frc::sim::LinearSystemSim</a>&lt; States, Inputs, Outputs &gt;::m_measurementStdDevs</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5ab91d924603ed77a927832d901b7213" name="a5ab91d924603ed77a927832d901b7213"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ab91d924603ed77a927832d901b7213">&#9670;&nbsp;</a></span>m_plant</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int States, int Inputs, int Outputs&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfrc_1_1_linear_system.html">LinearSystem</a>&lt;States, Inputs, Outputs&gt; <a class="el" href="classfrc_1_1sim_1_1_linear_system_sim.html">frc::sim::LinearSystemSim</a>&lt; States, Inputs, Outputs &gt;::m_plant</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a50a56687a92a7e8fc32e90974ff19ac1" name="a50a56687a92a7e8fc32e90974ff19ac1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50a56687a92a7e8fc32e90974ff19ac1">&#9670;&nbsp;</a></span>m_u</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int States, int Inputs, int Outputs&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::Vector&lt;double, Inputs&gt; <a class="el" href="classfrc_1_1sim_1_1_linear_system_sim.html">frc::sim::LinearSystemSim</a>&lt; States, Inputs, Outputs &gt;::m_u</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac4496f46e155d2100b3c8a8a3c4042f9" name="ac4496f46e155d2100b3c8a8a3c4042f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4496f46e155d2100b3c8a8a3c4042f9">&#9670;&nbsp;</a></span>m_x</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int States, int Inputs, int Outputs&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::Vector&lt;double, States&gt; <a class="el" href="classfrc_1_1sim_1_1_linear_system_sim.html">frc::sim::LinearSystemSim</a>&lt; States, Inputs, Outputs &gt;::m_x</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a396ae7d605c69820b077db83932aab0b" name="a396ae7d605c69820b077db83932aab0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a396ae7d605c69820b077db83932aab0b">&#9670;&nbsp;</a></span>m_y</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int States, int Inputs, int Outputs&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Eigen::Vector&lt;double, Outputs&gt; <a class="el" href="classfrc_1_1sim_1_1_linear_system_sim.html">frc::sim::LinearSystemSim</a>&lt; States, Inputs, Outputs &gt;::m_y</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>frc/simulation/<a class="el" href="_linear_system_sim_8h_source.html">LinearSystemSim.h</a></li>
 </ul>
@@ -529,8 +682,8 @@ template&lt;int States, int Inputs, int Outputs&gt; </div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>frc</b></li><li class="navelem"><b>sim</b></li><li class="navelem"><a class="el" href="classfrc_1_1sim_1_1_linear_system_sim.html">LinearSystemSim</a></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:51 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="namespacefrc_1_1sim.html">sim</a></li><li class="navelem"><a class="el" href="classfrc_1_1sim_1_1_linear_system_sim.html">LinearSystemSim</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:39 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

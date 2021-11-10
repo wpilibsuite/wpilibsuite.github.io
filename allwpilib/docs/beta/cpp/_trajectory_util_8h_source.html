@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('_trajectory_util_8h_source.html',''); 
   <div class="headertitle"><div class="title">TrajectoryUtil.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
+<a href="_trajectory_util_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// Copyright (c) FIRST and other WPILib contributors.</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Open Source Software; you can modify and/or share it under the terms of</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// the WPILib BSD license file in the root directory of this project.</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
@@ -103,14 +103,14 @@ $(document).ready(function(){initNavTree('_trajectory_util_8h_source.html',''); 
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;string_view&gt;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;wpi/SymbolExports.h&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;<a class="code" href="_symbol_exports_8h.html">wpi/SymbolExports.h</a>&gt;</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;frc/trajectory/Trajectory.h&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="_trajectory_8h.html">frc/trajectory/Trajectory.h</a>&quot;</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">namespace </span>frc {</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="classfrc_1_1_trajectory_util.html">   15</a></span><span class="keyword">class </span>WPILIB_DLLEXPORT <a class="code hl_class" href="classfrc_1_1_trajectory_util.html">TrajectoryUtil</a> {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacefrc.html">frc</a> {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="classfrc_1_1_trajectory_util.html">   15</a></span><span class="keyword">class </span><a class="code hl_define" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a> <a class="code hl_class" href="classfrc_1_1_trajectory_util.html">TrajectoryUtil</a> {</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  <a class="code hl_class" href="classfrc_1_1_trajectory_util.html">TrajectoryUtil</a>() = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="classfrc_1_1_trajectory_util.html#a6f217da5496993c64516ca8f62d256b3">   17</a></span>  <a class="code hl_function" href="classfrc_1_1_trajectory_util.html#a6f217da5496993c64516ca8f62d256b3">TrajectoryUtil</a>() = <span class="keyword">delete</span>;</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"></span> </div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">   * Exports a Trajectory to a PathWeaver-style JSON file.</span></div>
@@ -119,7 +119,7 @@ $(document).ready(function(){initNavTree('_trajectory_util_8h_source.html',''); 
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">   * @param path the path of the file to export to</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="classfrc_1_1_trajectory_util.html#a40b6ebdf79a22f253419a47f2b281558">   25</a></span>  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_trajectory_util.html#a40b6ebdf79a22f253419a47f2b281558">ToPathweaverJson</a>(<span class="keyword">const</span> <a class="code hl_class" href="classfrc_1_1_trajectory.html">Trajectory</a>&amp; trajectory,</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                               std::string_view path);<span class="comment"></span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                               <a class="code hl_typedef" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> path);<span class="comment"></span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">   * Imports a Trajectory from a PathWeaver-style JSON file.</span></div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">   *</span></div>
@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('_trajectory_util_8h_source.html',''); 
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">   *</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">   * @return The trajectory represented by the file.</span></div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classfrc_1_1_trajectory_util.html#ab3249d8755e185b9efa432e5511486f1">   34</a></span>  <span class="keyword">static</span> <a class="code hl_class" href="classfrc_1_1_trajectory.html">Trajectory</a> <a class="code hl_function" href="classfrc_1_1_trajectory_util.html#ab3249d8755e185b9efa432e5511486f1">FromPathweaverJson</a>(std::string_view path);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classfrc_1_1_trajectory_util.html#ab3249d8755e185b9efa432e5511486f1">   34</a></span>  <span class="keyword">static</span> <a class="code hl_class" href="classfrc_1_1_trajectory.html">Trajectory</a> <a class="code hl_function" href="classfrc_1_1_trajectory_util.html#ab3249d8755e185b9efa432e5511486f1">FromPathweaverJson</a>(<a class="code hl_typedef" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> path);</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment"></span> </div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">   * Deserializes a Trajectory from PathWeaver-style JSON.</span></div>
@@ -145,22 +145,28 @@ $(document).ready(function(){initNavTree('_trajectory_util_8h_source.html',''); 
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">   *</span></div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">   * @return the trajectory represented by the JSON</span></div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="classfrc_1_1_trajectory_util.html#acb182ac16c33321567484f08de9c8b5d">   52</a></span>  <span class="keyword">static</span> <a class="code hl_class" href="classfrc_1_1_trajectory.html">Trajectory</a> <a class="code hl_function" href="classfrc_1_1_trajectory_util.html#acb182ac16c33321567484f08de9c8b5d">DeserializeTrajectory</a>(std::string_view jsonStr);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="classfrc_1_1_trajectory_util.html#acb182ac16c33321567484f08de9c8b5d">   52</a></span>  <span class="keyword">static</span> <a class="code hl_class" href="classfrc_1_1_trajectory.html">Trajectory</a> <a class="code hl_function" href="classfrc_1_1_trajectory_util.html#acb182ac16c33321567484f08de9c8b5d">DeserializeTrajectory</a>(<a class="code hl_typedef" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> jsonStr);</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>};</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>}  <span class="comment">// namespace frc</span></div>
+<div class="ttc" id="a_symbol_exports_8h_html"><div class="ttname"><a href="_symbol_exports_8h.html">SymbolExports.h</a></div></div>
+<div class="ttc" id="a_symbol_exports_8h_html_aac411a8a8db8805ace32d8e07266c44e"><div class="ttname"><a href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a></div><div class="ttdeci">#define WPILIB_DLLEXPORT</div><div class="ttdef"><b>Definition:</b> SymbolExports.h:22</div></div>
+<div class="ttc" id="a_trajectory_8h_html"><div class="ttname"><a href="_trajectory_8h.html">Trajectory.h</a></div></div>
 <div class="ttc" id="aclassfrc_1_1_trajectory_html"><div class="ttname"><a href="classfrc_1_1_trajectory.html">frc::Trajectory</a></div><div class="ttdoc">Represents a time-parameterized trajectory.</div><div class="ttdef"><b>Definition:</b> Trajectory.h:28</div></div>
 <div class="ttc" id="aclassfrc_1_1_trajectory_util_html"><div class="ttname"><a href="classfrc_1_1_trajectory_util.html">frc::TrajectoryUtil</a></div><div class="ttdef"><b>Definition:</b> TrajectoryUtil.h:15</div></div>
 <div class="ttc" id="aclassfrc_1_1_trajectory_util_html_a09371a143df1577b48adf5ce83e36020"><div class="ttname"><a href="classfrc_1_1_trajectory_util.html#a09371a143df1577b48adf5ce83e36020">frc::TrajectoryUtil::SerializeTrajectory</a></div><div class="ttdeci">static std::string SerializeTrajectory(const Trajectory &amp;trajectory)</div><div class="ttdoc">Deserializes a Trajectory from PathWeaver-style JSON.</div></div>
 <div class="ttc" id="aclassfrc_1_1_trajectory_util_html_a40b6ebdf79a22f253419a47f2b281558"><div class="ttname"><a href="classfrc_1_1_trajectory_util.html#a40b6ebdf79a22f253419a47f2b281558">frc::TrajectoryUtil::ToPathweaverJson</a></div><div class="ttdeci">static void ToPathweaverJson(const Trajectory &amp;trajectory, std::string_view path)</div><div class="ttdoc">Exports a Trajectory to a PathWeaver-style JSON file.</div></div>
+<div class="ttc" id="aclassfrc_1_1_trajectory_util_html_a6f217da5496993c64516ca8f62d256b3"><div class="ttname"><a href="classfrc_1_1_trajectory_util.html#a6f217da5496993c64516ca8f62d256b3">frc::TrajectoryUtil::TrajectoryUtil</a></div><div class="ttdeci">TrajectoryUtil()=delete</div></div>
 <div class="ttc" id="aclassfrc_1_1_trajectory_util_html_ab3249d8755e185b9efa432e5511486f1"><div class="ttname"><a href="classfrc_1_1_trajectory_util.html#ab3249d8755e185b9efa432e5511486f1">frc::TrajectoryUtil::FromPathweaverJson</a></div><div class="ttdeci">static Trajectory FromPathweaverJson(std::string_view path)</div><div class="ttdoc">Imports a Trajectory from a PathWeaver-style JSON file.</div></div>
 <div class="ttc" id="aclassfrc_1_1_trajectory_util_html_acb182ac16c33321567484f08de9c8b5d"><div class="ttname"><a href="classfrc_1_1_trajectory_util.html#acb182ac16c33321567484f08de9c8b5d">frc::TrajectoryUtil::DeserializeTrajectory</a></div><div class="ttdeci">static Trajectory DeserializeTrajectory(std::string_view jsonStr)</div><div class="ttdoc">Serializes a Trajectory to PathWeaver-style JSON.</div></div>
+<div class="ttc" id="acore_8h_html_a204ca715c2febee035464fa53dfc50c4"><div class="ttname"><a href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">string_view</a></div><div class="ttdeci">basic_string_view&lt; char &gt; string_view</div><div class="ttdef"><b>Definition:</b> core.h:529</div></div>
+<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> VisionRunner.inc:9</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_b42dbd3ffe797209985ac3b5870ef1e5.html">trajectory</a></li><li class="navelem"><b>TrajectoryUtil.h</b></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:43 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_b42dbd3ffe797209985ac3b5870ef1e5.html">trajectory</a></li><li class="navelem"><a class="el" href="_trajectory_util_8h.html">TrajectoryUtil.h</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:29 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

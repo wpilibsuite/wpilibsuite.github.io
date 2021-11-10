@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-1</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
    </div>
   </td>
  </tr>
@@ -98,6 +98,8 @@ $(document).ready(function(){initNavTree('struct_eigen_1_1internal_1_1lhs__proce
   <div class="headertitle"><div class="title">Eigen::internal::lhs_process_one_packet&lt; nr, LhsProgress, RhsProgress, LhsScalar, RhsScalar, ResScalar, AccPacket, LhsPacket, RhsPacket, ResPacket, GEBPTraits, LinearMapper, DataMapper &gt; Struct Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="products_2_general_block_panel_kernel_8h_source.html">/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/eigeninclude/Eigen/src/Core/products/GeneralBlockPanelKernel.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Eigen::internal::lhs_process_one_packet&lt; nr, LhsProgress, RhsProgress, LhsScalar, RhsScalar, ResScalar, AccPacket, LhsPacket, RhsPacket, ResPacket, GEBPTraits, LinearMapper, DataMapper &gt;:</div>
 <div class="dyncontent">
@@ -110,19 +112,248 @@ Inheritance diagram for Eigen::internal::lhs_process_one_packet&lt; nr, LhsProgr
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a955a4a73108611425414ef15a9eb630d"><td class="memItemLeft" align="right" valign="top"><a id="a955a4a73108611425414ef15a9eb630d" name="a955a4a73108611425414ef15a9eb630d"></a>
-typedef GEBPTraits::RhsPacketx4&#160;</td><td class="memItemRight" valign="bottom"><b>RhsPacketx4</b></td></tr>
+<tr class="memitem:a955a4a73108611425414ef15a9eb630d"><td class="memItemLeft" align="right" valign="top">typedef GEBPTraits::RhsPacketx4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1lhs__process__one__packet.html#a955a4a73108611425414ef15a9eb630d">RhsPacketx4</a></td></tr>
 <tr class="separator:a955a4a73108611425414ef15a9eb630d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae326b9e70b20178d2a01dd3533c34c8c"><td class="memItemLeft" align="right" valign="top"><a id="ae326b9e70b20178d2a01dd3533c34c8c" name="ae326b9e70b20178d2a01dd3533c34c8c"></a>
-EIGEN_STRONG_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>peeled_kc_onestep</b> (<a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> K, const LhsScalar *blA, const RhsScalar *blB, GEBPTraits <a class="el" href="struct_eigen_1_1internal_1_1traits.html">traits</a>, LhsPacket *A0, RhsPacketx4 *rhs_panel, RhsPacket *T0, AccPacket *C0, AccPacket *C1, AccPacket *C2, AccPacket *C3)</td></tr>
+<tr class="memitem:ae326b9e70b20178d2a01dd3533c34c8c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_macros_8h.html#af2b60117c00a6e75812de43bfe7db3b1">EIGEN_STRONG_INLINE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1lhs__process__one__packet.html#ae326b9e70b20178d2a01dd3533c34c8c">peeled_kc_onestep</a> (<a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> K, const LhsScalar *blA, const RhsScalar *blB, GEBPTraits <a class="el" href="struct_eigen_1_1internal_1_1traits.html">traits</a>, LhsPacket *A0, <a class="el" href="struct_eigen_1_1internal_1_1lhs__process__one__packet.html#a955a4a73108611425414ef15a9eb630d">RhsPacketx4</a> *rhs_panel, RhsPacket *T0, AccPacket *C0, AccPacket *C1, AccPacket *C2, AccPacket *C3)</td></tr>
 <tr class="separator:ae326b9e70b20178d2a01dd3533c34c8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c218bcadde54abce7fc54cab86b463f"><td class="memItemLeft" align="right" valign="top"><a id="a7c218bcadde54abce7fc54cab86b463f" name="a7c218bcadde54abce7fc54cab86b463f"></a>
-EIGEN_STRONG_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const DataMapper &amp;res, const LhsScalar *blockA, const RhsScalar *blockB, ResScalar alpha, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> peelStart, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> peelEnd, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> strideA, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> strideB, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> offsetA, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> offsetB, int prefetch_res_offset, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> peeled_kc, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> pk, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> cols, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> depth, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> packet_cols4)</td></tr>
+<tr class="memitem:a7c218bcadde54abce7fc54cab86b463f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_macros_8h.html#af2b60117c00a6e75812de43bfe7db3b1">EIGEN_STRONG_INLINE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_eigen_1_1internal_1_1lhs__process__one__packet.html#a7c218bcadde54abce7fc54cab86b463f">operator()</a> (const DataMapper &amp;res, const LhsScalar *blockA, const RhsScalar *blockB, ResScalar alpha, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> peelStart, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> peelEnd, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> strideA, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> strideB, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> offsetA, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> offsetB, int prefetch_res_offset, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> peeled_kc, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> pk, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> cols, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> depth, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> packet_cols4)</td></tr>
 <tr class="separator:a7c218bcadde54abce7fc54cab86b463f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a955a4a73108611425414ef15a9eb630d" name="a955a4a73108611425414ef15a9eb630d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a955a4a73108611425414ef15a9eb630d">&#9670;&nbsp;</a></span>RhsPacketx4</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int nr, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> LhsProgress, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> RhsProgress, typename LhsScalar , typename RhsScalar , typename ResScalar , typename AccPacket , typename LhsPacket , typename RhsPacket , typename ResPacket , typename GEBPTraits , typename LinearMapper , typename DataMapper &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef GEBPTraits::RhsPacketx4 <a class="el" href="struct_eigen_1_1internal_1_1lhs__process__one__packet.html">Eigen::internal::lhs_process_one_packet</a>&lt; nr, LhsProgress, RhsProgress, LhsScalar, RhsScalar, ResScalar, AccPacket, LhsPacket, RhsPacket, ResPacket, GEBPTraits, LinearMapper, DataMapper &gt;::<a class="el" href="struct_eigen_1_1internal_1_1lhs__process__one__packet.html#a955a4a73108611425414ef15a9eb630d">RhsPacketx4</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a7c218bcadde54abce7fc54cab86b463f" name="a7c218bcadde54abce7fc54cab86b463f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c218bcadde54abce7fc54cab86b463f">&#9670;&nbsp;</a></span>operator()()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int nr, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> LhsProgress, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> RhsProgress, typename LhsScalar , typename RhsScalar , typename ResScalar , typename AccPacket , typename LhsPacket , typename RhsPacket , typename ResPacket , typename GEBPTraits , typename LinearMapper , typename DataMapper &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_macros_8h.html#af2b60117c00a6e75812de43bfe7db3b1">EIGEN_STRONG_INLINE</a> void <a class="el" href="struct_eigen_1_1internal_1_1lhs__process__one__packet.html">Eigen::internal::lhs_process_one_packet</a>&lt; nr, LhsProgress, RhsProgress, LhsScalar, RhsScalar, ResScalar, AccPacket, LhsPacket, RhsPacket, ResPacket, GEBPTraits, LinearMapper, DataMapper &gt;::operator() </td>
+          <td>(</td>
+          <td class="paramtype">const DataMapper &amp;&#160;</td>
+          <td class="paramname"><em>res</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const LhsScalar *&#160;</td>
+          <td class="paramname"><em>blockA</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RhsScalar *&#160;</td>
+          <td class="paramname"><em>blockB</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ResScalar&#160;</td>
+          <td class="paramname"><em>alpha</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a>&#160;</td>
+          <td class="paramname"><em>peelStart</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a>&#160;</td>
+          <td class="paramname"><em>peelEnd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a>&#160;</td>
+          <td class="paramname"><em>strideA</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a>&#160;</td>
+          <td class="paramname"><em>strideB</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a>&#160;</td>
+          <td class="paramname"><em>offsetA</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a>&#160;</td>
+          <td class="paramname"><em>offsetB</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>prefetch_res_offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a>&#160;</td>
+          <td class="paramname"><em>peeled_kc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a>&#160;</td>
+          <td class="paramname"><em>pk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a>&#160;</td>
+          <td class="paramname"><em>cols</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a>&#160;</td>
+          <td class="paramname"><em>depth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a>&#160;</td>
+          <td class="paramname"><em>packet_cols4</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae326b9e70b20178d2a01dd3533c34c8c" name="ae326b9e70b20178d2a01dd3533c34c8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae326b9e70b20178d2a01dd3533c34c8c">&#9670;&nbsp;</a></span>peeled_kc_onestep()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int nr, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> LhsProgress, <a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a> RhsProgress, typename LhsScalar , typename RhsScalar , typename ResScalar , typename AccPacket , typename LhsPacket , typename RhsPacket , typename ResPacket , typename GEBPTraits , typename LinearMapper , typename DataMapper &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_macros_8h.html#af2b60117c00a6e75812de43bfe7db3b1">EIGEN_STRONG_INLINE</a> void <a class="el" href="struct_eigen_1_1internal_1_1lhs__process__one__packet.html">Eigen::internal::lhs_process_one_packet</a>&lt; nr, LhsProgress, RhsProgress, LhsScalar, RhsScalar, ResScalar, AccPacket, LhsPacket, RhsPacket, ResPacket, GEBPTraits, LinearMapper, DataMapper &gt;::peeled_kc_onestep </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespace_eigen.html#a62e77e0933482dafde8fe197d9a2cfde">Index</a>&#160;</td>
+          <td class="paramname"><em>K</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const LhsScalar *&#160;</td>
+          <td class="paramname"><em>blA</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const RhsScalar *&#160;</td>
+          <td class="paramname"><em>blB</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GEBPTraits&#160;</td>
+          <td class="paramname"><em>traits</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">LhsPacket *&#160;</td>
+          <td class="paramname"><em>A0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_eigen_1_1internal_1_1lhs__process__one__packet.html#a955a4a73108611425414ef15a9eb630d">RhsPacketx4</a> *&#160;</td>
+          <td class="paramname"><em>rhs_panel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">RhsPacket *&#160;</td>
+          <td class="paramname"><em>T0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AccPacket *&#160;</td>
+          <td class="paramname"><em>C0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AccPacket *&#160;</td>
+          <td class="paramname"><em>C1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AccPacket *&#160;</td>
+          <td class="paramname"><em>C2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AccPacket *&#160;</td>
+          <td class="paramname"><em>C3</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>/home/runner/work/allwpilib/allwpilib/wpimath/src/main/native/eigeninclude/Eigen/src/Core/products/<a class="el" href="products_2_general_block_panel_kernel_8h_source.html">GeneralBlockPanelKernel.h</a></li>
 </ul>
@@ -131,8 +362,8 @@ EIGEN_STRONG_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><b>o
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespace_eigen.html">Eigen</a></li><li class="navelem"><b>internal</b></li><li class="navelem"><a class="el" href="struct_eigen_1_1internal_1_1lhs__process__one__packet.html">lhs_process_one_packet</a></li>
-    <li class="footer">Generated on Wed Oct 20 2021 01:08:48 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="namespace_eigen.html">Eigen</a></li><li class="navelem"><a class="el" href="namespace_eigen_1_1internal.html">internal</a></li><li class="navelem"><a class="el" href="struct_eigen_1_1internal_1_1lhs__process__one__packet.html">lhs_process_one_packet</a></li>
+    <li class="footer">Generated on Wed Nov 10 2021 05:28:36 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
