@@ -116,14 +116,25 @@
 <span class="sourceLineNo">104</span><a id="line.104">    return m_pwm.getChannel();</a>
 <span class="sourceLineNo">105</span><a id="line.105">  }</a>
 <span class="sourceLineNo">106</span><a id="line.106"></a>
-<span class="sourceLineNo">107</span><a id="line.107">  @Override</a>
-<span class="sourceLineNo">108</span><a id="line.108">  public void initSendable(SendableBuilder builder) {</a>
-<span class="sourceLineNo">109</span><a id="line.109">    builder.setSmartDashboardType("Motor Controller");</a>
-<span class="sourceLineNo">110</span><a id="line.110">    builder.setActuator(true);</a>
-<span class="sourceLineNo">111</span><a id="line.111">    builder.setSafeState(this::disable);</a>
-<span class="sourceLineNo">112</span><a id="line.112">    builder.addDoubleProperty("Value", this::get, this::set);</a>
-<span class="sourceLineNo">113</span><a id="line.113">  }</a>
-<span class="sourceLineNo">114</span><a id="line.114">}</a>
+<span class="sourceLineNo">107</span><a id="line.107">  /**</a>
+<span class="sourceLineNo">108</span><a id="line.108">   * Optionally eliminate the deadband from a motor controller.</a>
+<span class="sourceLineNo">109</span><a id="line.109">   *</a>
+<span class="sourceLineNo">110</span><a id="line.110">   * @param eliminateDeadband If true, set the motor curve for the motor controller to eliminate the</a>
+<span class="sourceLineNo">111</span><a id="line.111">   *     deadband in the middle of the range. Otherwise, keep the full range without modifying any</a>
+<span class="sourceLineNo">112</span><a id="line.112">   *     values.</a>
+<span class="sourceLineNo">113</span><a id="line.113">   */</a>
+<span class="sourceLineNo">114</span><a id="line.114">  public void enableDeadbandElimination(boolean eliminateDeadband) {</a>
+<span class="sourceLineNo">115</span><a id="line.115">    m_pwm.enableDeadbandElimination(eliminateDeadband);</a>
+<span class="sourceLineNo">116</span><a id="line.116">  }</a>
+<span class="sourceLineNo">117</span><a id="line.117"></a>
+<span class="sourceLineNo">118</span><a id="line.118">  @Override</a>
+<span class="sourceLineNo">119</span><a id="line.119">  public void initSendable(SendableBuilder builder) {</a>
+<span class="sourceLineNo">120</span><a id="line.120">    builder.setSmartDashboardType("Motor Controller");</a>
+<span class="sourceLineNo">121</span><a id="line.121">    builder.setActuator(true);</a>
+<span class="sourceLineNo">122</span><a id="line.122">    builder.setSafeState(this::disable);</a>
+<span class="sourceLineNo">123</span><a id="line.123">    builder.addDoubleProperty("Value", this::get, this::set);</a>
+<span class="sourceLineNo">124</span><a id="line.124">  }</a>
+<span class="sourceLineNo">125</span><a id="line.125">}</a>
 
 
 
