@@ -88,129 +88,132 @@
 <span class="sourceLineNo">076</span><a id="line.76"></a>
 <span class="sourceLineNo">077</span><a id="line.77">    var C = plant.getC();</a>
 <span class="sourceLineNo">078</span><a id="line.78"></a>
-<span class="sourceLineNo">079</span><a id="line.79">    // isStabilizable(Aᵀ, Cᵀ) will tell us if the system is observable.</a>
-<span class="sourceLineNo">080</span><a id="line.80">    var isObservable = StateSpaceUtil.isStabilizable(discA.transpose(), C.transpose());</a>
-<span class="sourceLineNo">081</span><a id="line.81">    if (!isObservable) {</a>
-<span class="sourceLineNo">082</span><a id="line.82">      MathSharedStore.reportError(</a>
-<span class="sourceLineNo">083</span><a id="line.83">          "The system passed to the Kalman filter is not observable!",</a>
-<span class="sourceLineNo">084</span><a id="line.84">          Thread.currentThread().getStackTrace());</a>
-<span class="sourceLineNo">085</span><a id="line.85">      throw new IllegalArgumentException(</a>
-<span class="sourceLineNo">086</span><a id="line.86">          "The system passed to the Kalman filter is not observable!");</a>
-<span class="sourceLineNo">087</span><a id="line.87">    }</a>
-<span class="sourceLineNo">088</span><a id="line.88"></a>
-<span class="sourceLineNo">089</span><a id="line.89">    var P =</a>
-<span class="sourceLineNo">090</span><a id="line.90">        new Matrix&lt;&gt;(</a>
-<span class="sourceLineNo">091</span><a id="line.91">            Drake.discreteAlgebraicRiccatiEquation(discA.transpose(), C.transpose(), discQ, discR));</a>
-<span class="sourceLineNo">092</span><a id="line.92"></a>
-<span class="sourceLineNo">093</span><a id="line.93">    // S = CPCᵀ + R</a>
-<span class="sourceLineNo">094</span><a id="line.94">    var S = C.times(P).times(C.transpose()).plus(discR);</a>
+<span class="sourceLineNo">079</span><a id="line.79">    if (!StateSpaceUtil.isDetectable(discA, C)) {</a>
+<span class="sourceLineNo">080</span><a id="line.80">      var builder =</a>
+<span class="sourceLineNo">081</span><a id="line.81">          new StringBuilder("The system passed to the Kalman filter is unobservable!\n\nA =\n");</a>
+<span class="sourceLineNo">082</span><a id="line.82">      builder.append(discA.getStorage().toString());</a>
+<span class="sourceLineNo">083</span><a id="line.83">      builder.append("\nC =\n");</a>
+<span class="sourceLineNo">084</span><a id="line.84">      builder.append(C.getStorage().toString());</a>
+<span class="sourceLineNo">085</span><a id="line.85">      builder.append("\n");</a>
+<span class="sourceLineNo">086</span><a id="line.86"></a>
+<span class="sourceLineNo">087</span><a id="line.87">      var msg = builder.toString();</a>
+<span class="sourceLineNo">088</span><a id="line.88">      MathSharedStore.reportError(msg, Thread.currentThread().getStackTrace());</a>
+<span class="sourceLineNo">089</span><a id="line.89">      throw new IllegalArgumentException(msg);</a>
+<span class="sourceLineNo">090</span><a id="line.90">    }</a>
+<span class="sourceLineNo">091</span><a id="line.91"></a>
+<span class="sourceLineNo">092</span><a id="line.92">    var P =</a>
+<span class="sourceLineNo">093</span><a id="line.93">        new Matrix&lt;&gt;(</a>
+<span class="sourceLineNo">094</span><a id="line.94">            Drake.discreteAlgebraicRiccatiEquation(discA.transpose(), C.transpose(), discQ, discR));</a>
 <span class="sourceLineNo">095</span><a id="line.95"></a>
-<span class="sourceLineNo">096</span><a id="line.96">    // We want to put K = PCᵀS⁻¹ into Ax = b form so we can solve it more</a>
-<span class="sourceLineNo">097</span><a id="line.97">    // efficiently.</a>
-<span class="sourceLineNo">098</span><a id="line.98">    //</a>
-<span class="sourceLineNo">099</span><a id="line.99">    // K = PCᵀS⁻¹</a>
-<span class="sourceLineNo">100</span><a id="line.100">    // KS = PCᵀ</a>
-<span class="sourceLineNo">101</span><a id="line.101">    // (KS)ᵀ = (PCᵀ)ᵀ</a>
-<span class="sourceLineNo">102</span><a id="line.102">    // SᵀKᵀ = CPᵀ</a>
-<span class="sourceLineNo">103</span><a id="line.103">    //</a>
-<span class="sourceLineNo">104</span><a id="line.104">    // The solution of Ax = b can be found via x = A.solve(b).</a>
-<span class="sourceLineNo">105</span><a id="line.105">    //</a>
-<span class="sourceLineNo">106</span><a id="line.106">    // Kᵀ = Sᵀ.solve(CPᵀ)</a>
-<span class="sourceLineNo">107</span><a id="line.107">    // K = (Sᵀ.solve(CPᵀ))ᵀ</a>
-<span class="sourceLineNo">108</span><a id="line.108">    m_K =</a>
-<span class="sourceLineNo">109</span><a id="line.109">        new Matrix&lt;&gt;(</a>
-<span class="sourceLineNo">110</span><a id="line.110">            S.transpose().getStorage().solve((C.times(P.transpose())).getStorage()).transpose());</a>
-<span class="sourceLineNo">111</span><a id="line.111"></a>
-<span class="sourceLineNo">112</span><a id="line.112">    reset();</a>
-<span class="sourceLineNo">113</span><a id="line.113">  }</a>
+<span class="sourceLineNo">096</span><a id="line.96">    // S = CPCᵀ + R</a>
+<span class="sourceLineNo">097</span><a id="line.97">    var S = C.times(P).times(C.transpose()).plus(discR);</a>
+<span class="sourceLineNo">098</span><a id="line.98"></a>
+<span class="sourceLineNo">099</span><a id="line.99">    // We want to put K = PCᵀS⁻¹ into Ax = b form so we can solve it more</a>
+<span class="sourceLineNo">100</span><a id="line.100">    // efficiently.</a>
+<span class="sourceLineNo">101</span><a id="line.101">    //</a>
+<span class="sourceLineNo">102</span><a id="line.102">    // K = PCᵀS⁻¹</a>
+<span class="sourceLineNo">103</span><a id="line.103">    // KS = PCᵀ</a>
+<span class="sourceLineNo">104</span><a id="line.104">    // (KS)ᵀ = (PCᵀ)ᵀ</a>
+<span class="sourceLineNo">105</span><a id="line.105">    // SᵀKᵀ = CPᵀ</a>
+<span class="sourceLineNo">106</span><a id="line.106">    //</a>
+<span class="sourceLineNo">107</span><a id="line.107">    // The solution of Ax = b can be found via x = A.solve(b).</a>
+<span class="sourceLineNo">108</span><a id="line.108">    //</a>
+<span class="sourceLineNo">109</span><a id="line.109">    // Kᵀ = Sᵀ.solve(CPᵀ)</a>
+<span class="sourceLineNo">110</span><a id="line.110">    // K = (Sᵀ.solve(CPᵀ))ᵀ</a>
+<span class="sourceLineNo">111</span><a id="line.111">    m_K =</a>
+<span class="sourceLineNo">112</span><a id="line.112">        new Matrix&lt;&gt;(</a>
+<span class="sourceLineNo">113</span><a id="line.113">            S.transpose().getStorage().solve((C.times(P.transpose())).getStorage()).transpose());</a>
 <span class="sourceLineNo">114</span><a id="line.114"></a>
-<span class="sourceLineNo">115</span><a id="line.115">  public void reset() {</a>
-<span class="sourceLineNo">116</span><a id="line.116">    m_xHat = new Matrix&lt;&gt;(m_states, Nat.N1());</a>
-<span class="sourceLineNo">117</span><a id="line.117">  }</a>
-<span class="sourceLineNo">118</span><a id="line.118"></a>
-<span class="sourceLineNo">119</span><a id="line.119">  /**</a>
-<span class="sourceLineNo">120</span><a id="line.120">   * Returns the steady-state Kalman gain matrix K.</a>
-<span class="sourceLineNo">121</span><a id="line.121">   *</a>
-<span class="sourceLineNo">122</span><a id="line.122">   * @return The steady-state Kalman gain matrix K.</a>
-<span class="sourceLineNo">123</span><a id="line.123">   */</a>
-<span class="sourceLineNo">124</span><a id="line.124">  public Matrix&lt;States, Outputs&gt; getK() {</a>
-<span class="sourceLineNo">125</span><a id="line.125">    return m_K;</a>
-<span class="sourceLineNo">126</span><a id="line.126">  }</a>
-<span class="sourceLineNo">127</span><a id="line.127"></a>
-<span class="sourceLineNo">128</span><a id="line.128">  /**</a>
-<span class="sourceLineNo">129</span><a id="line.129">   * Returns an element of the steady-state Kalman gain matrix K.</a>
-<span class="sourceLineNo">130</span><a id="line.130">   *</a>
-<span class="sourceLineNo">131</span><a id="line.131">   * @param row Row of K.</a>
-<span class="sourceLineNo">132</span><a id="line.132">   * @param col Column of K.</a>
-<span class="sourceLineNo">133</span><a id="line.133">   * @return the element (i, j) of the steady-state Kalman gain matrix K.</a>
-<span class="sourceLineNo">134</span><a id="line.134">   */</a>
-<span class="sourceLineNo">135</span><a id="line.135">  public double getK(int row, int col) {</a>
-<span class="sourceLineNo">136</span><a id="line.136">    return m_K.get(row, col);</a>
-<span class="sourceLineNo">137</span><a id="line.137">  }</a>
-<span class="sourceLineNo">138</span><a id="line.138"></a>
-<span class="sourceLineNo">139</span><a id="line.139">  /**</a>
-<span class="sourceLineNo">140</span><a id="line.140">   * Set initial state estimate x-hat.</a>
-<span class="sourceLineNo">141</span><a id="line.141">   *</a>
-<span class="sourceLineNo">142</span><a id="line.142">   * @param xhat The state estimate x-hat.</a>
-<span class="sourceLineNo">143</span><a id="line.143">   */</a>
-<span class="sourceLineNo">144</span><a id="line.144">  public void setXhat(Matrix&lt;States, N1&gt; xhat) {</a>
-<span class="sourceLineNo">145</span><a id="line.145">    this.m_xHat = xhat;</a>
-<span class="sourceLineNo">146</span><a id="line.146">  }</a>
-<span class="sourceLineNo">147</span><a id="line.147"></a>
-<span class="sourceLineNo">148</span><a id="line.148">  /**</a>
-<span class="sourceLineNo">149</span><a id="line.149">   * Set an element of the initial state estimate x-hat.</a>
-<span class="sourceLineNo">150</span><a id="line.150">   *</a>
-<span class="sourceLineNo">151</span><a id="line.151">   * @param row Row of x-hat.</a>
-<span class="sourceLineNo">152</span><a id="line.152">   * @param value Value for element of x-hat.</a>
-<span class="sourceLineNo">153</span><a id="line.153">   */</a>
-<span class="sourceLineNo">154</span><a id="line.154">  public void setXhat(int row, double value) {</a>
-<span class="sourceLineNo">155</span><a id="line.155">    m_xHat.set(row, 0, value);</a>
-<span class="sourceLineNo">156</span><a id="line.156">  }</a>
-<span class="sourceLineNo">157</span><a id="line.157"></a>
-<span class="sourceLineNo">158</span><a id="line.158">  /**</a>
-<span class="sourceLineNo">159</span><a id="line.159">   * Returns the state estimate x-hat.</a>
-<span class="sourceLineNo">160</span><a id="line.160">   *</a>
-<span class="sourceLineNo">161</span><a id="line.161">   * @return The state estimate x-hat.</a>
-<span class="sourceLineNo">162</span><a id="line.162">   */</a>
-<span class="sourceLineNo">163</span><a id="line.163">  public Matrix&lt;States, N1&gt; getXhat() {</a>
-<span class="sourceLineNo">164</span><a id="line.164">    return m_xHat;</a>
-<span class="sourceLineNo">165</span><a id="line.165">  }</a>
-<span class="sourceLineNo">166</span><a id="line.166"></a>
-<span class="sourceLineNo">167</span><a id="line.167">  /**</a>
-<span class="sourceLineNo">168</span><a id="line.168">   * Returns an element of the state estimate x-hat.</a>
-<span class="sourceLineNo">169</span><a id="line.169">   *</a>
-<span class="sourceLineNo">170</span><a id="line.170">   * @param row Row of x-hat.</a>
-<span class="sourceLineNo">171</span><a id="line.171">   * @return the state estimate x-hat at i.</a>
-<span class="sourceLineNo">172</span><a id="line.172">   */</a>
-<span class="sourceLineNo">173</span><a id="line.173">  public double getXhat(int row) {</a>
-<span class="sourceLineNo">174</span><a id="line.174">    return m_xHat.get(row, 0);</a>
-<span class="sourceLineNo">175</span><a id="line.175">  }</a>
-<span class="sourceLineNo">176</span><a id="line.176"></a>
-<span class="sourceLineNo">177</span><a id="line.177">  /**</a>
-<span class="sourceLineNo">178</span><a id="line.178">   * Project the model into the future with a new control input u.</a>
-<span class="sourceLineNo">179</span><a id="line.179">   *</a>
-<span class="sourceLineNo">180</span><a id="line.180">   * @param u New control input from controller.</a>
-<span class="sourceLineNo">181</span><a id="line.181">   * @param dtSeconds Timestep for prediction.</a>
-<span class="sourceLineNo">182</span><a id="line.182">   */</a>
-<span class="sourceLineNo">183</span><a id="line.183">  @SuppressWarnings("ParameterName")</a>
-<span class="sourceLineNo">184</span><a id="line.184">  public void predict(Matrix&lt;Inputs, N1&gt; u, double dtSeconds) {</a>
-<span class="sourceLineNo">185</span><a id="line.185">    this.m_xHat = m_plant.calculateX(m_xHat, u, dtSeconds);</a>
-<span class="sourceLineNo">186</span><a id="line.186">  }</a>
-<span class="sourceLineNo">187</span><a id="line.187"></a>
-<span class="sourceLineNo">188</span><a id="line.188">  /**</a>
-<span class="sourceLineNo">189</span><a id="line.189">   * Correct the state estimate x-hat using the measurements in y.</a>
-<span class="sourceLineNo">190</span><a id="line.190">   *</a>
-<span class="sourceLineNo">191</span><a id="line.191">   * @param u Same control input used in the last predict step.</a>
-<span class="sourceLineNo">192</span><a id="line.192">   * @param y Measurement vector.</a>
-<span class="sourceLineNo">193</span><a id="line.193">   */</a>
-<span class="sourceLineNo">194</span><a id="line.194">  @SuppressWarnings("ParameterName")</a>
-<span class="sourceLineNo">195</span><a id="line.195">  public void correct(Matrix&lt;Inputs, N1&gt; u, Matrix&lt;Outputs, N1&gt; y) {</a>
-<span class="sourceLineNo">196</span><a id="line.196">    final var C = m_plant.getC();</a>
-<span class="sourceLineNo">197</span><a id="line.197">    final var D = m_plant.getD();</a>
-<span class="sourceLineNo">198</span><a id="line.198">    // x̂ₖ₊₁⁺ = x̂ₖ₊₁⁻ + K(y − (Cx̂ₖ₊₁⁻ + Duₖ₊₁))</a>
-<span class="sourceLineNo">199</span><a id="line.199">    m_xHat = m_xHat.plus(m_K.times(y.minus(C.times(m_xHat).plus(D.times(u)))));</a>
-<span class="sourceLineNo">200</span><a id="line.200">  }</a>
-<span class="sourceLineNo">201</span><a id="line.201">}</a>
+<span class="sourceLineNo">115</span><a id="line.115">    reset();</a>
+<span class="sourceLineNo">116</span><a id="line.116">  }</a>
+<span class="sourceLineNo">117</span><a id="line.117"></a>
+<span class="sourceLineNo">118</span><a id="line.118">  public void reset() {</a>
+<span class="sourceLineNo">119</span><a id="line.119">    m_xHat = new Matrix&lt;&gt;(m_states, Nat.N1());</a>
+<span class="sourceLineNo">120</span><a id="line.120">  }</a>
+<span class="sourceLineNo">121</span><a id="line.121"></a>
+<span class="sourceLineNo">122</span><a id="line.122">  /**</a>
+<span class="sourceLineNo">123</span><a id="line.123">   * Returns the steady-state Kalman gain matrix K.</a>
+<span class="sourceLineNo">124</span><a id="line.124">   *</a>
+<span class="sourceLineNo">125</span><a id="line.125">   * @return The steady-state Kalman gain matrix K.</a>
+<span class="sourceLineNo">126</span><a id="line.126">   */</a>
+<span class="sourceLineNo">127</span><a id="line.127">  public Matrix&lt;States, Outputs&gt; getK() {</a>
+<span class="sourceLineNo">128</span><a id="line.128">    return m_K;</a>
+<span class="sourceLineNo">129</span><a id="line.129">  }</a>
+<span class="sourceLineNo">130</span><a id="line.130"></a>
+<span class="sourceLineNo">131</span><a id="line.131">  /**</a>
+<span class="sourceLineNo">132</span><a id="line.132">   * Returns an element of the steady-state Kalman gain matrix K.</a>
+<span class="sourceLineNo">133</span><a id="line.133">   *</a>
+<span class="sourceLineNo">134</span><a id="line.134">   * @param row Row of K.</a>
+<span class="sourceLineNo">135</span><a id="line.135">   * @param col Column of K.</a>
+<span class="sourceLineNo">136</span><a id="line.136">   * @return the element (i, j) of the steady-state Kalman gain matrix K.</a>
+<span class="sourceLineNo">137</span><a id="line.137">   */</a>
+<span class="sourceLineNo">138</span><a id="line.138">  public double getK(int row, int col) {</a>
+<span class="sourceLineNo">139</span><a id="line.139">    return m_K.get(row, col);</a>
+<span class="sourceLineNo">140</span><a id="line.140">  }</a>
+<span class="sourceLineNo">141</span><a id="line.141"></a>
+<span class="sourceLineNo">142</span><a id="line.142">  /**</a>
+<span class="sourceLineNo">143</span><a id="line.143">   * Set initial state estimate x-hat.</a>
+<span class="sourceLineNo">144</span><a id="line.144">   *</a>
+<span class="sourceLineNo">145</span><a id="line.145">   * @param xhat The state estimate x-hat.</a>
+<span class="sourceLineNo">146</span><a id="line.146">   */</a>
+<span class="sourceLineNo">147</span><a id="line.147">  public void setXhat(Matrix&lt;States, N1&gt; xhat) {</a>
+<span class="sourceLineNo">148</span><a id="line.148">    this.m_xHat = xhat;</a>
+<span class="sourceLineNo">149</span><a id="line.149">  }</a>
+<span class="sourceLineNo">150</span><a id="line.150"></a>
+<span class="sourceLineNo">151</span><a id="line.151">  /**</a>
+<span class="sourceLineNo">152</span><a id="line.152">   * Set an element of the initial state estimate x-hat.</a>
+<span class="sourceLineNo">153</span><a id="line.153">   *</a>
+<span class="sourceLineNo">154</span><a id="line.154">   * @param row Row of x-hat.</a>
+<span class="sourceLineNo">155</span><a id="line.155">   * @param value Value for element of x-hat.</a>
+<span class="sourceLineNo">156</span><a id="line.156">   */</a>
+<span class="sourceLineNo">157</span><a id="line.157">  public void setXhat(int row, double value) {</a>
+<span class="sourceLineNo">158</span><a id="line.158">    m_xHat.set(row, 0, value);</a>
+<span class="sourceLineNo">159</span><a id="line.159">  }</a>
+<span class="sourceLineNo">160</span><a id="line.160"></a>
+<span class="sourceLineNo">161</span><a id="line.161">  /**</a>
+<span class="sourceLineNo">162</span><a id="line.162">   * Returns the state estimate x-hat.</a>
+<span class="sourceLineNo">163</span><a id="line.163">   *</a>
+<span class="sourceLineNo">164</span><a id="line.164">   * @return The state estimate x-hat.</a>
+<span class="sourceLineNo">165</span><a id="line.165">   */</a>
+<span class="sourceLineNo">166</span><a id="line.166">  public Matrix&lt;States, N1&gt; getXhat() {</a>
+<span class="sourceLineNo">167</span><a id="line.167">    return m_xHat;</a>
+<span class="sourceLineNo">168</span><a id="line.168">  }</a>
+<span class="sourceLineNo">169</span><a id="line.169"></a>
+<span class="sourceLineNo">170</span><a id="line.170">  /**</a>
+<span class="sourceLineNo">171</span><a id="line.171">   * Returns an element of the state estimate x-hat.</a>
+<span class="sourceLineNo">172</span><a id="line.172">   *</a>
+<span class="sourceLineNo">173</span><a id="line.173">   * @param row Row of x-hat.</a>
+<span class="sourceLineNo">174</span><a id="line.174">   * @return the state estimate x-hat at i.</a>
+<span class="sourceLineNo">175</span><a id="line.175">   */</a>
+<span class="sourceLineNo">176</span><a id="line.176">  public double getXhat(int row) {</a>
+<span class="sourceLineNo">177</span><a id="line.177">    return m_xHat.get(row, 0);</a>
+<span class="sourceLineNo">178</span><a id="line.178">  }</a>
+<span class="sourceLineNo">179</span><a id="line.179"></a>
+<span class="sourceLineNo">180</span><a id="line.180">  /**</a>
+<span class="sourceLineNo">181</span><a id="line.181">   * Project the model into the future with a new control input u.</a>
+<span class="sourceLineNo">182</span><a id="line.182">   *</a>
+<span class="sourceLineNo">183</span><a id="line.183">   * @param u New control input from controller.</a>
+<span class="sourceLineNo">184</span><a id="line.184">   * @param dtSeconds Timestep for prediction.</a>
+<span class="sourceLineNo">185</span><a id="line.185">   */</a>
+<span class="sourceLineNo">186</span><a id="line.186">  @SuppressWarnings("ParameterName")</a>
+<span class="sourceLineNo">187</span><a id="line.187">  public void predict(Matrix&lt;Inputs, N1&gt; u, double dtSeconds) {</a>
+<span class="sourceLineNo">188</span><a id="line.188">    this.m_xHat = m_plant.calculateX(m_xHat, u, dtSeconds);</a>
+<span class="sourceLineNo">189</span><a id="line.189">  }</a>
+<span class="sourceLineNo">190</span><a id="line.190"></a>
+<span class="sourceLineNo">191</span><a id="line.191">  /**</a>
+<span class="sourceLineNo">192</span><a id="line.192">   * Correct the state estimate x-hat using the measurements in y.</a>
+<span class="sourceLineNo">193</span><a id="line.193">   *</a>
+<span class="sourceLineNo">194</span><a id="line.194">   * @param u Same control input used in the last predict step.</a>
+<span class="sourceLineNo">195</span><a id="line.195">   * @param y Measurement vector.</a>
+<span class="sourceLineNo">196</span><a id="line.196">   */</a>
+<span class="sourceLineNo">197</span><a id="line.197">  @SuppressWarnings("ParameterName")</a>
+<span class="sourceLineNo">198</span><a id="line.198">  public void correct(Matrix&lt;Inputs, N1&gt; u, Matrix&lt;Outputs, N1&gt; y) {</a>
+<span class="sourceLineNo">199</span><a id="line.199">    final var C = m_plant.getC();</a>
+<span class="sourceLineNo">200</span><a id="line.200">    final var D = m_plant.getD();</a>
+<span class="sourceLineNo">201</span><a id="line.201">    // x̂ₖ₊₁⁺ = x̂ₖ₊₁⁻ + K(y − (Cx̂ₖ₊₁⁻ + Duₖ₊₁))</a>
+<span class="sourceLineNo">202</span><a id="line.202">    m_xHat = m_xHat.plus(m_K.times(y.minus(C.times(m_xHat).plus(D.times(u)))));</a>
+<span class="sourceLineNo">203</span><a id="line.203">  }</a>
+<span class="sourceLineNo">204</span><a id="line.204">}</a>
 
 
 

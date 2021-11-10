@@ -21,7 +21,7 @@
 <span class="sourceLineNo">009</span><a id="line.9">import edu.wpi.first.hal.InterruptJNI;</a>
 <span class="sourceLineNo">010</span><a id="line.10"></a>
 <span class="sourceLineNo">011</span><a id="line.11">/**</a>
-<span class="sourceLineNo">012</span><a id="line.12"> * Class for handling sychronous interrupts.</a>
+<span class="sourceLineNo">012</span><a id="line.12"> * Class for handling synchronous (blocking) interrupts.</a>
 <span class="sourceLineNo">013</span><a id="line.13"> *</a>
 <span class="sourceLineNo">014</span><a id="line.14"> * &lt;p&gt;By default, interrupts will occur on rising edge.</a>
 <span class="sourceLineNo">015</span><a id="line.15"> *</a>
@@ -48,11 +48,11 @@
 <span class="sourceLineNo">036</span><a id="line.36">    }</a>
 <span class="sourceLineNo">037</span><a id="line.37"></a>
 <span class="sourceLineNo">038</span><a id="line.38">    /**</a>
-<span class="sourceLineNo">039</span><a id="line.39">     * Create a wait result.</a>
+<span class="sourceLineNo">039</span><a id="line.39">     * Create a wait result enum.</a>
 <span class="sourceLineNo">040</span><a id="line.40">     *</a>
-<span class="sourceLineNo">041</span><a id="line.41">     * @param rising True if a rising edge occured.</a>
-<span class="sourceLineNo">042</span><a id="line.42">     * @param falling True if a falling edge occured.</a>
-<span class="sourceLineNo">043</span><a id="line.43">     * @return A wait result.</a>
+<span class="sourceLineNo">041</span><a id="line.41">     * @param rising True if a rising edge occurred.</a>
+<span class="sourceLineNo">042</span><a id="line.42">     * @param falling True if a falling edge occurred.</a>
+<span class="sourceLineNo">043</span><a id="line.43">     * @return A wait result enum.</a>
 <span class="sourceLineNo">044</span><a id="line.44">     */</a>
 <span class="sourceLineNo">045</span><a id="line.45">    public static WaitResult getValue(boolean rising, boolean falling) {</a>
 <span class="sourceLineNo">046</span><a id="line.46">      if (rising &amp;&amp; falling) {</a>
@@ -95,11 +95,11 @@
 <span class="sourceLineNo">083</span><a id="line.83">  /**</a>
 <span class="sourceLineNo">084</span><a id="line.84">   * Wait for interrupt that returns the raw result value from the hardware.</a>
 <span class="sourceLineNo">085</span><a id="line.85">   *</a>
-<span class="sourceLineNo">086</span><a id="line.86">   * &lt;p&gt;Used by AsynchronousInterrupt. Users prefer to use waitForInterrupt.</a>
+<span class="sourceLineNo">086</span><a id="line.86">   * &lt;p&gt;Used by AsynchronousInterrupt. Users should use waitForInterrupt.</a>
 <span class="sourceLineNo">087</span><a id="line.87">   *</a>
 <span class="sourceLineNo">088</span><a id="line.88">   * @param timeoutSeconds The timeout in seconds. 0 or less will return immediately.</a>
-<span class="sourceLineNo">089</span><a id="line.89">   * @param ignorePrevious True to ignore if a previous interrupt has occured, and only wait for a</a>
-<span class="sourceLineNo">090</span><a id="line.90">   *     new trigger. False will consider if an interrupt has occured since the last time the</a>
+<span class="sourceLineNo">089</span><a id="line.89">   * @param ignorePrevious True to ignore if a previous interrupt has occurred, and only wait for a</a>
+<span class="sourceLineNo">090</span><a id="line.90">   *     new trigger. False will consider if an interrupt has occurred since the last time the</a>
 <span class="sourceLineNo">091</span><a id="line.91">   *     interrupt was read.</a>
 <span class="sourceLineNo">092</span><a id="line.92">   * @return The raw hardware interrupt result</a>
 <span class="sourceLineNo">093</span><a id="line.93">   */</a>
@@ -111,10 +111,10 @@
 <span class="sourceLineNo">099</span><a id="line.99">   * Wait for an interrupt.</a>
 <span class="sourceLineNo">100</span><a id="line.100">   *</a>
 <span class="sourceLineNo">101</span><a id="line.101">   * @param timeoutSeconds The timeout in seconds. 0 or less will return immediately.</a>
-<span class="sourceLineNo">102</span><a id="line.102">   * @param ignorePrevious True to ignore if a previous interrupt has occured, and only wait for a</a>
-<span class="sourceLineNo">103</span><a id="line.103">   *     new trigger. False will consider if an interrupt has occured since the last time the</a>
+<span class="sourceLineNo">102</span><a id="line.102">   * @param ignorePrevious True to ignore if a previous interrupt has occurred, and only wait for a</a>
+<span class="sourceLineNo">103</span><a id="line.103">   *     new trigger. False will consider if an interrupt has occurred since the last time the</a>
 <span class="sourceLineNo">104</span><a id="line.104">   *     interrupt was read.</a>
-<span class="sourceLineNo">105</span><a id="line.105">   * @return Result of which edges were triggered, or if an timeout occured.</a>
+<span class="sourceLineNo">105</span><a id="line.105">   * @return Result of which edges were triggered, or if an timeout occurred.</a>
 <span class="sourceLineNo">106</span><a id="line.106">   */</a>
 <span class="sourceLineNo">107</span><a id="line.107">  public WaitResult waitForInterrupt(double timeoutSeconds, boolean ignorePrevious) {</a>
 <span class="sourceLineNo">108</span><a id="line.108">    int result = InterruptJNI.waitForInterrupt(m_handle, timeoutSeconds, ignorePrevious);</a>
@@ -129,10 +129,10 @@
 <span class="sourceLineNo">117</span><a id="line.117">  }</a>
 <span class="sourceLineNo">118</span><a id="line.118"></a>
 <span class="sourceLineNo">119</span><a id="line.119">  /**</a>
-<span class="sourceLineNo">120</span><a id="line.120">   * Wait for an interrupt, ingoring any previously occuring interrupts.</a>
+<span class="sourceLineNo">120</span><a id="line.120">   * Wait for an interrupt, ignoring any previously occurring interrupts.</a>
 <span class="sourceLineNo">121</span><a id="line.121">   *</a>
 <span class="sourceLineNo">122</span><a id="line.122">   * @param timeoutSeconds The timeout in seconds. 0 or less will return immediately.</a>
-<span class="sourceLineNo">123</span><a id="line.123">   * @return Result of which edges were triggered, or if an timeout occured.</a>
+<span class="sourceLineNo">123</span><a id="line.123">   * @return Result of which edges were triggered, or if an timeout occurred.</a>
 <span class="sourceLineNo">124</span><a id="line.124">   */</a>
 <span class="sourceLineNo">125</span><a id="line.125">  public WaitResult waitForInterrupt(double timeoutSeconds) {</a>
 <span class="sourceLineNo">126</span><a id="line.126">    return waitForInterrupt(timeoutSeconds, true);</a>

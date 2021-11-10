@@ -172,14 +172,19 @@
 <span class="sourceLineNo">160</span><a id="line.160">    int numChannels = getNumChannels();</a>
 <span class="sourceLineNo">161</span><a id="line.161">    for (int i = 0; i &lt; numChannels; ++i) {</a>
 <span class="sourceLineNo">162</span><a id="line.162">      final int chan = i;</a>
-<span class="sourceLineNo">163</span><a id="line.163">      builder.addDoubleProperty("Chan" + i, () -&gt; getCurrent(chan), null);</a>
-<span class="sourceLineNo">164</span><a id="line.164">    }</a>
-<span class="sourceLineNo">165</span><a id="line.165">    builder.addDoubleProperty("Voltage", this::getVoltage, null);</a>
-<span class="sourceLineNo">166</span><a id="line.166">    builder.addDoubleProperty("TotalCurrent", this::getTotalCurrent, null);</a>
-<span class="sourceLineNo">167</span><a id="line.167">    builder.addBooleanProperty(</a>
-<span class="sourceLineNo">168</span><a id="line.168">        "SwitchableChannel", this::getSwitchableChannel, this::setSwitchableChannel);</a>
-<span class="sourceLineNo">169</span><a id="line.169">  }</a>
-<span class="sourceLineNo">170</span><a id="line.170">}</a>
+<span class="sourceLineNo">163</span><a id="line.163">      builder.addDoubleProperty(</a>
+<span class="sourceLineNo">164</span><a id="line.164">          "Chan" + i, () -&gt; PowerDistributionJNI.getChannelCurrentNoError(m_handle, chan), null);</a>
+<span class="sourceLineNo">165</span><a id="line.165">    }</a>
+<span class="sourceLineNo">166</span><a id="line.166">    builder.addDoubleProperty(</a>
+<span class="sourceLineNo">167</span><a id="line.167">        "Voltage", () -&gt; PowerDistributionJNI.getVoltageNoError(m_handle), null);</a>
+<span class="sourceLineNo">168</span><a id="line.168">    builder.addDoubleProperty(</a>
+<span class="sourceLineNo">169</span><a id="line.169">        "TotalCurrent", () -&gt; PowerDistributionJNI.getTotalCurrent(m_handle), null);</a>
+<span class="sourceLineNo">170</span><a id="line.170">    builder.addBooleanProperty(</a>
+<span class="sourceLineNo">171</span><a id="line.171">        "SwitchableChannel",</a>
+<span class="sourceLineNo">172</span><a id="line.172">        () -&gt; PowerDistributionJNI.getSwitchableChannelNoError(m_handle),</a>
+<span class="sourceLineNo">173</span><a id="line.173">        value -&gt; PowerDistributionJNI.setSwitchableChannel(m_handle, value));</a>
+<span class="sourceLineNo">174</span><a id="line.174">  }</a>
+<span class="sourceLineNo">175</span><a id="line.175">}</a>
 
 
 
