@@ -1,5 +1,7 @@
 var NAVTREEINDEX178 =
 {
+"structwpi_1_1_web_socket_1_1_client_options.html":[4,0,20,188,0],
+"structwpi_1_1_web_socket_1_1_client_options.html#a6837084fc6459e52f1702b924ef126b8":[4,0,20,188,0,1],
 "structwpi_1_1_web_socket_1_1_client_options.html#a6837084fc6459e52f1702b924ef126b8":[5,0,13,187,0,1],
 "structwpi_1_1_web_socket_1_1_client_options.html#a8151a3ab73093622ed51639adf1a4a70":[4,0,20,188,0,2],
 "structwpi_1_1_web_socket_1_1_client_options.html#a8151a3ab73093622ed51639adf1a4a70":[5,0,13,187,0,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX178 =
 "structwpi_1_1detail_1_1is__compatible__object__type.html#aa2724f0b4d21f658ee3591fc97f28893":[5,0,13,0,32,0],
 "structwpi_1_1detail_1_1is__compatible__object__type__impl.html":[4,0,20,0,33],
 "structwpi_1_1detail_1_1is__compatible__object__type__impl.html":[5,0,13,0,33],
-"structwpi_1_1detail_1_1is__compatible__object__type__impl_3_01true_00_01_real_type_00_01_compatible_object_type_01_4.html":[5,0,13,0,34],
-"structwpi_1_1detail_1_1is__compatible__object__type__impl_3_01true_00_01_real_type_00_01_compatible_object_type_01_4.html":[4,0,20,0,34],
-"structwpi_1_1detail_1_1is__compatible__object__type__impl_3_01true_00_01_real_type_00_01_compatible_object_type_01_4.html#a785bd9fbdc4c6887bfd0f51010cd512b":[5,0,13,0,34,0]
+"structwpi_1_1detail_1_1is__compatible__object__type__impl_3_01true_00_01_real_type_00_01_compatible_object_type_01_4.html":[5,0,13,0,34]
 };

@@ -3,6 +3,7 @@ var classfrc_1_1_p_w_m_motor_controller =
     [ "PWMMotorController", "classfrc_1_1_p_w_m_motor_controller.html#abe44af44fba50c21985a23bab6f9ce43", null ],
     [ "PWMMotorController", "classfrc_1_1_p_w_m_motor_controller.html#a23586a3111a6b7114bbaa6df952c9c92", null ],
     [ "Disable", "classfrc_1_1_p_w_m_motor_controller.html#a0910c229495436a8dc94dcbd478c0bae", null ],
+    [ "EnableDeadbandElimination", "classfrc_1_1_p_w_m_motor_controller.html#af01da92d086e8f38b5ca6a63948af86d", null ],
     [ "Get", "classfrc_1_1_p_w_m_motor_controller.html#abdf28e68ae00418333a3ece09627a037", null ],
     [ "GetChannel", "classfrc_1_1_p_w_m_motor_controller.html#afa39100c2ad5b9d491e79d44d03c90ff", null ],
     [ "GetDescription", "classfrc_1_1_p_w_m_motor_controller.html#adce0f524fe91c63a0deaa64144457b47", null ],

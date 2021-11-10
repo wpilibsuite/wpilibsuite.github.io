@@ -1,5 +1,7 @@
 var NAVTREEINDEX149 =
 {
+"struct_eigen_1_1internal_1_1evaluator_3_01_partial_redux_expr_3_01_arg_type_00_01_member_op_00_01_direction_01_4_01_4.html#af284bce80bc99697934df88f6a14b838":[5,0,4,2,288,2],
+"struct_eigen_1_1internal_1_1evaluator_3_01_plain_object_base_3_01_derived_01_4_01_4.html":[5,0,4,2,289],
 "struct_eigen_1_1internal_1_1evaluator_3_01_plain_object_base_3_01_derived_01_4_01_4.html":[4,0,7,4,291],
 "struct_eigen_1_1internal_1_1evaluator_3_01_plain_object_base_3_01_derived_01_4_01_4.html#a416680292a751d9cd3faccad831e069a":[5,0,4,2,289,4],
 "struct_eigen_1_1internal_1_1evaluator_3_01_plain_object_base_3_01_derived_01_4_01_4.html#a416680292a751d9cd3faccad831e069a":[4,0,7,4,291,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX149 =
 "struct_eigen_1_1internal_1_1first__aligned__impl_3_01_alignment_00_01_derived_00_01false_01_4.html#a6bcfd273a6d60345207910363afddf1b":[4,0,7,4,326,0],
 "struct_eigen_1_1internal_1_1functor__has__linear__access.html":[4,0,7,4,329],
 "struct_eigen_1_1internal_1_1functor__has__linear__access.html":[5,0,4,2,327],
-"struct_eigen_1_1internal_1_1functor__traits.html":[4,0,7,4,330],
-"struct_eigen_1_1internal_1_1functor__traits.html":[5,0,4,2,328],
-"struct_eigen_1_1internal_1_1functor__traits_3_01add__assign__op_3_01_dst_scalar_00_01_src_scalar_01_4_01_4.html":[4,0,7,4,331]
+"struct_eigen_1_1internal_1_1functor__traits.html":[4,0,7,4,330]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX177 =
 {
+"structwpi_1_1_dense_map_info_3_01int_01_4.html#af915204f12f5f61c2674025502ea95b9":[4,0,20,32,2],
+"structwpi_1_1_dense_map_info_3_01long_01_4.html":[5,0,13,32],
 "structwpi_1_1_dense_map_info_3_01long_01_4.html":[4,0,20,33],
 "structwpi_1_1_dense_map_info_3_01long_01_4.html#a11f31382bdd378172fb3cb00ebb763ef":[5,0,13,32,1],
 "structwpi_1_1_dense_map_info_3_01long_01_4.html#a11f31382bdd378172fb3cb00ebb763ef":[4,0,20,33,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX177 =
 "structwpi_1_1_small_vector_storage.html#af86c755841f45eb03002912e68bec774":[5,0,13,161,0],
 "structwpi_1_1_small_vector_storage_3_01_t_00_010_01_4.html":[4,0,20,163],
 "structwpi_1_1_small_vector_storage_3_01_t_00_010_01_4.html":[5,0,13,162],
-"structwpi_1_1_web_socket_1_1_client_options.html":[5,0,13,187,0],
-"structwpi_1_1_web_socket_1_1_client_options.html":[4,0,20,188,0],
-"structwpi_1_1_web_socket_1_1_client_options.html#a6837084fc6459e52f1702b924ef126b8":[4,0,20,188,0,1]
+"structwpi_1_1_web_socket_1_1_client_options.html":[5,0,13,187,0]
 };

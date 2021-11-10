@@ -1,5 +1,7 @@
 var NAVTREEINDEX166 =
 {
+"struct_eigen_1_1internal_1_1traits_3_01_transpositions_3_01_size_at_compile_time_00_01_max_size_a3e3a58d21bfa7053a385355887ee81d.html#a8c7c6257ce259676efa40a7327f796f4":[4,0,7,4,1225,1],
+"struct_eigen_1_1internal_1_1traits_3_01_transpositions_wrapper_3_01___indices_type_01_4_01_4.html":[5,0,4,2,1224],
 "struct_eigen_1_1internal_1_1traits_3_01_transpositions_wrapper_3_01___indices_type_01_4_01_4.html":[4,0,7,4,1226],
 "struct_eigen_1_1internal_1_1traits_3_01_transpositions_wrapper_3_01___indices_type_01_4_01_4.html#aea036f22fc1651d176a90241e96ae4d9":[5,0,4,2,1224,0],
 "struct_eigen_1_1internal_1_1traits_3_01_transpositions_wrapper_3_01___indices_type_01_4_01_4.html#aea036f22fc1651d176a90241e96ae4d9":[4,0,7,4,1226,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX166 =
 "struct_eigen_1_1internal_1_1type__casting__traits_3_01float_00_01double_01_4.html":[4,0,7,4,1282],
 "struct_eigen_1_1internal_1_1type__casting__traits_3_01float_00_01float_01_4.html":[4,0,7,4,1284],
 "struct_eigen_1_1internal_1_1type__casting__traits_3_01float_00_01float_01_4.html":[5,0,4,2,1282],
-"struct_eigen_1_1internal_1_1type__casting__traits_3_01float_00_01int_01_4.html":[4,0,7,4,1285],
-"struct_eigen_1_1internal_1_1type__casting__traits_3_01float_00_01int_01_4.html":[5,0,4,2,1283],
-"struct_eigen_1_1internal_1_1type__casting__traits_3_01float_00_01numext_1_1int16__t_01_4.html":[5,0,4,2,1284]
+"struct_eigen_1_1internal_1_1type__casting__traits_3_01float_00_01int_01_4.html":[4,0,7,4,1285]
 };

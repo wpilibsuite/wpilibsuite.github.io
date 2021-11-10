@@ -1,5 +1,7 @@
 var NAVTREEINDEX171 =
 {
+"structchrono__formatter.html#a6b87424e33cfac3cd1ab97ab457fda7c":[5,0,49,26],
+"structchrono__formatter.html#a6f677762e639dbd9cf7a6c54dff68bd0":[5,0,49,10],
 "structchrono__formatter.html#a77d009d92809b334402daea95f6ffa67":[5,0,49,43],
 "structchrono__formatter.html#a787102f1c12877eb30f83657dbf51bd7":[5,0,49,5],
 "structchrono__formatter.html#a806024ac1a6ef25971ca35ff7868079a":[5,0,49,34],
@@ -247,7 +249,5 @@ var NAVTREEINDEX171 =
 "structdetail_1_1integer__sequence.html#ad1483b15cf25402cf653f8ec3b485241":[5,0,1,21,0],
 "structdetail_1_1integer__sequence.html#ad1483b15cf25402cf653f8ec3b485241":[4,0,3,22,0],
 "structdetail_1_1is__compiled__string.html":[4,0,3,23],
-"structdetail_1_1is__compiled__string.html":[5,0,1,22],
-"structdetail_1_1is__locale.html":[4,0,3,24],
-"structdetail_1_1is__locale.html":[5,0,1,23]
+"structdetail_1_1is__compiled__string.html":[5,0,1,22]
 };

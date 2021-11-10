@@ -1,5 +1,7 @@
 var NAVTREEINDEX176 =
 {
+"structuv__dirent__s.html":[5,0,207],
+"structuv__dirent__s.html#aa54978584ef03a77b4c3027909da772a":[5,0,207,1],
 "structuv__dirent__s.html#aad1b480800ccab684153290755baa047":[5,0,207,0],
 "structuv__fs__event__s.html":[5,0,208],
 "structuv__fs__event__s.html#a0f8b11773b3b20884e9871b9a4824500":[5,0,208,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX176 =
 "structwpi_1_1_dense_map_info_3_01int_01_4.html#a89b48298fec3a9f817b827a9476894dd":[4,0,20,32,0],
 "structwpi_1_1_dense_map_info_3_01int_01_4.html#adfca0a855a20f82f0c039b8cbc1c4c7b":[5,0,13,31,3],
 "structwpi_1_1_dense_map_info_3_01int_01_4.html#adfca0a855a20f82f0c039b8cbc1c4c7b":[4,0,20,32,3],
-"structwpi_1_1_dense_map_info_3_01int_01_4.html#af915204f12f5f61c2674025502ea95b9":[5,0,13,31,2],
-"structwpi_1_1_dense_map_info_3_01int_01_4.html#af915204f12f5f61c2674025502ea95b9":[4,0,20,32,2],
-"structwpi_1_1_dense_map_info_3_01long_01_4.html":[5,0,13,32]
+"structwpi_1_1_dense_map_info_3_01int_01_4.html#af915204f12f5f61c2674025502ea95b9":[5,0,13,31,2]
 };

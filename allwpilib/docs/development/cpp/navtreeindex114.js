@@ -1,5 +1,7 @@
 var NAVTREEINDEX114 =
 {
+"functions_rela_h.html":[5,3,6,8],
+"functions_rela_i.html":[5,3,6,9],
 "functions_rela_j.html":[5,3,6,10],
 "functions_rela_l.html":[5,3,6,11],
 "functions_rela_m.html":[5,3,6,12],
@@ -153,8 +155,8 @@ var NAVTREEINDEX114 =
 "globals_r.html":[6,1,0,17],
 "globals_s.html":[6,1,0,18],
 "globals_t.html":[6,1,0,19],
-"globals_type.html":[6,1,3],
 "globals_type.html":[6,1,3,0],
+"globals_type.html":[6,1,3],
 "globals_type_b.html":[6,1,3,1],
 "globals_type_c.html":[6,1,3,2],
 "globals_type_d.html":[6,1,3,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX114 =
 "group___unit_math.html#gaed3e6783dc5ab1dda006913aa53f17c8":[3,18,23],
 "group___unit_math.html#gaef69e3da7b1cf820853dc8bb5043e1e7":[3,18,25],
 "group___unit_math.html#gaf02e920d1b57574f1c8ae3974d1e3c80":[3,18,24],
-"group___unit_math.html#gaf0a50351f8f51550d00e9831b60e1850":[3,18,29],
-"group___unit_math.html#gafeea9aa149ff1d941ed830ec389bf7f4":[3,18,8],
-"group___unit_math.html#gaffaf53aeed1529243100d0922bdce834":[3,18,4]
+"group___unit_math.html#gaf0a50351f8f51550d00e9831b60e1850":[3,18,29]
 };
