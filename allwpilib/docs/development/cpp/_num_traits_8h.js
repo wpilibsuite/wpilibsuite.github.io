@@ -7,7 +7,6 @@ var _num_traits_8h =
     [ "Eigen::internal::default_digits_impl< T, false, false >", "struct_eigen_1_1internal_1_1default__digits__impl_3_01_t_00_01false_00_01false_01_4.html", "struct_eigen_1_1internal_1_1default__digits__impl_3_01_t_00_01false_00_01false_01_4" ],
     [ "Eigen::internal::default_digits_impl< T, false, true >", "struct_eigen_1_1internal_1_1default__digits__impl_3_01_t_00_01false_00_01true_01_4.html", "struct_eigen_1_1internal_1_1default__digits__impl_3_01_t_00_01false_00_01true_01_4" ],
     [ "Eigen::GenericNumTraits< T >", "struct_eigen_1_1_generic_num_traits.html", "struct_eigen_1_1_generic_num_traits" ],
-    [ "Eigen::NumTraits< T >", "struct_eigen_1_1_num_traits.html", null ],
     [ "Eigen::NumTraits< float >", "struct_eigen_1_1_num_traits_3_01float_01_4.html", "struct_eigen_1_1_num_traits_3_01float_01_4" ],
     [ "Eigen::NumTraits< double >", "struct_eigen_1_1_num_traits_3_01double_01_4.html", "struct_eigen_1_1_num_traits_3_01double_01_4" ],
     [ "Eigen::NumTraits< long double >", "struct_eigen_1_1_num_traits_3_01long_01double_01_4.html", "struct_eigen_1_1_num_traits_3_01long_01double_01_4" ],

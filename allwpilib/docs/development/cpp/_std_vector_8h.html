@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2-1-g32468a4</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2-2-g075144f</span>
    </div>
   </td>
  </tr>
@@ -150,7 +150,7 @@ Macros</h2></td></tr>
 <div class="line">    typedef vector_base::iterator iterator;  \</div>
 <div class="line">    explicit vector(<span class="keyword">const</span> allocator_type&amp; a = allocator_type()) : vector_base(a) {}  \</div>
 <div class="line">    template&lt;typename InputIterator&gt; \</div>
-<div class="line">    vector(InputIterator <a class="code hl_function" href="namespacedetail.html#a7c8bc5fb5ef4750d192614dd7f0cf396">first</a>, InputIterator <a class="code hl_variable" href="namespace_eigen.html#a2dd8b20d08336af23947e054a17415ee">last</a>, <span class="keyword">const</span> allocator_type&amp; a = allocator_type()) : vector_base(<a class="code hl_function" href="namespacedetail.html#a7c8bc5fb5ef4750d192614dd7f0cf396">first</a>, <a class="code hl_variable" href="namespace_eigen.html#a2dd8b20d08336af23947e054a17415ee">last</a>, a) {} \</div>
+<div class="line">    vector(InputIterator <a class="code hl_function" href="namespacedetail.html#a7c8bc5fb5ef4750d192614dd7f0cf396">first</a>, InputIterator <a class="code hl_variable" href="group___core___module.html#ga2dd8b20d08336af23947e054a17415ee">last</a>, <span class="keyword">const</span> allocator_type&amp; a = allocator_type()) : vector_base(<a class="code hl_function" href="namespacedetail.html#a7c8bc5fb5ef4750d192614dd7f0cf396">first</a>, <a class="code hl_variable" href="group___core___module.html#ga2dd8b20d08336af23947e054a17415ee">last</a>, a) {} \</div>
 <div class="line">    vector(<span class="keyword">const</span> vector&amp; <a class="code hl_function" href="namespaceunits_1_1constants.html#acfa211a9904208ac580676b5cc42b04a">c</a>) : vector_base(<a class="code hl_function" href="namespaceunits_1_1constants.html#acfa211a9904208ac580676b5cc42b04a">c</a>) {}  \</div>
 <div class="line">    explicit vector(size_type num, <span class="keyword">const</span> <a class="code hl_typedef" href="namespacedetail.html#a13f263662d2a7d37893dbacfc534889f">value_type</a>&amp; val = <a class="code hl_typedef" href="namespacedetail.html#a13f263662d2a7d37893dbacfc534889f">value_type</a>()) : vector_base(num, val) {} \</div>
 <div class="line">    vector(iterator start_, iterator end_) : vector_base(start_, end_) {}  \</div>
@@ -160,7 +160,7 @@ Macros</h2></td></tr>
 <div class="line">    } \</div>
 <div class="line">  }; \</div>
 <div class="line">}</div>
-<div class="ttc" id="anamespace_eigen_html_a2dd8b20d08336af23947e054a17415ee"><div class="ttname"><a href="namespace_eigen.html#a2dd8b20d08336af23947e054a17415ee">Eigen::last</a></div><div class="ttdeci">static const symbolic::SymbolExpr&lt; internal::symbolic_last_tag &gt; last</div><div class="ttdoc">Can be used as a parameter to Eigen::seq and Eigen::seqN functions to symbolically reference the last...</div><div class="ttdef"><b>Definition:</b> IndexedViewHelper.h:38</div></div>
+<div class="ttc" id="agroup___core___module_html_ga2dd8b20d08336af23947e054a17415ee"><div class="ttname"><a href="group___core___module.html#ga2dd8b20d08336af23947e054a17415ee">Eigen::last</a></div><div class="ttdeci">static const symbolic::SymbolExpr&lt; internal::symbolic_last_tag &gt; last</div><div class="ttdoc">Can be used as a parameter to Eigen::seq and Eigen::seqN functions to symbolically reference the last...</div><div class="ttdef"><b>Definition:</b> IndexedViewHelper.h:38</div></div>
 <div class="ttc" id="anamespacedetail_html_a13f263662d2a7d37893dbacfc534889f"><div class="ttname"><a href="namespacedetail.html#a13f263662d2a7d37893dbacfc534889f">detail::value_type</a></div><div class="ttdeci">remove_cvref_t&lt; decltype(*detail::range_begin(std::declval&lt; Range &gt;()))&gt; value_type</div><div class="ttdef"><b>Definition:</b> ranges.h:246</div></div>
 <div class="ttc" id="anamespacedetail_html_a7c8bc5fb5ef4750d192614dd7f0cf396"><div class="ttname"><a href="namespacedetail.html#a7c8bc5fb5ef4750d192614dd7f0cf396">detail::first</a></div><div class="ttdeci">const T &amp; first(const T &amp;value, const Tail &amp;...)</div><div class="ttdef"><b>Definition:</b> compile.h:178</div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> Errc.h:84</div></div>
@@ -189,8 +189,8 @@ Macros</h2></td></tr>
 <div class="line">    typedef <span class="keyword">typename</span> vector_base::const_iterator const_iterator;  \</div>
 <div class="line">    explicit vector(<span class="keyword">const</span> allocator_type&amp; a = allocator_type()) : vector_base(a) {}  \</div>
 <div class="line">    template&lt;typename InputIterator&gt; \</div>
-<div class="line">    vector(InputIterator <a class="code hl_function" href="namespacedetail.html#a7c8bc5fb5ef4750d192614dd7f0cf396">first</a>, InputIterator <a class="code hl_variable" href="namespace_eigen.html#a2dd8b20d08336af23947e054a17415ee">last</a>, <span class="keyword">const</span> allocator_type&amp; a = allocator_type()) \</div>
-<div class="line">    : vector_base(<a class="code hl_function" href="namespacedetail.html#a7c8bc5fb5ef4750d192614dd7f0cf396">first</a>, <a class="code hl_variable" href="namespace_eigen.html#a2dd8b20d08336af23947e054a17415ee">last</a>, a) {} \</div>
+<div class="line">    vector(InputIterator <a class="code hl_function" href="namespacedetail.html#a7c8bc5fb5ef4750d192614dd7f0cf396">first</a>, InputIterator <a class="code hl_variable" href="group___core___module.html#ga2dd8b20d08336af23947e054a17415ee">last</a>, <span class="keyword">const</span> allocator_type&amp; a = allocator_type()) \</div>
+<div class="line">    : vector_base(<a class="code hl_function" href="namespacedetail.html#a7c8bc5fb5ef4750d192614dd7f0cf396">first</a>, <a class="code hl_variable" href="group___core___module.html#ga2dd8b20d08336af23947e054a17415ee">last</a>, a) {} \</div>
 <div class="line">    vector(<span class="keyword">const</span> vector&amp; <a class="code hl_function" href="namespaceunits_1_1constants.html#acfa211a9904208ac580676b5cc42b04a">c</a>) : vector_base(<a class="code hl_function" href="namespaceunits_1_1constants.html#acfa211a9904208ac580676b5cc42b04a">c</a>) {}  \</div>
 <div class="line">    explicit vector(size_type num, <span class="keyword">const</span> <a class="code hl_typedef" href="namespacedetail.html#a13f263662d2a7d37893dbacfc534889f">value_type</a>&amp; val = <a class="code hl_typedef" href="namespacedetail.html#a13f263662d2a7d37893dbacfc534889f">value_type</a>()) : vector_base(num, val) {} \</div>
 <div class="line">    vector(iterator start_, iterator end_) : vector_base(start_, end_) {}  \</div>
@@ -207,7 +207,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_bfb2597c438c4234fbdcce568a9e650d.html">eigeninclude</a></li><li class="navelem"><a class="el" href="dir_81addad79085c513f45446cf62836735.html">Eigen</a></li><li class="navelem"><a class="el" href="dir_e429501dd9edb337aeb96d684aa3b6ff.html">src</a></li><li class="navelem"><a class="el" href="dir_6f7dc829694c49aa971a6635d9a7ac85.html">StlSupport</a></li><li class="navelem"><a class="el" href="_std_vector_8h.html">StdVector.h</a></li>
-    <li class="footer">Generated on Sat Nov 13 2021 16:58:27 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Nov 16 2021 19:25:39 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

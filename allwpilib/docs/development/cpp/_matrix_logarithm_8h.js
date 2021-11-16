@@ -2,8 +2,6 @@ var _matrix_logarithm_8h =
 [
     [ "Eigen::internal::matrix_log_min_pade_degree< Scalar >", "struct_eigen_1_1internal_1_1matrix__log__min__pade__degree.html", "struct_eigen_1_1internal_1_1matrix__log__min__pade__degree" ],
     [ "Eigen::internal::matrix_log_max_pade_degree< Scalar >", "struct_eigen_1_1internal_1_1matrix__log__max__pade__degree.html", "struct_eigen_1_1internal_1_1matrix__log__max__pade__degree" ],
-    [ "Eigen::internal::MatrixLogarithmAtomic< MatrixType >", "class_eigen_1_1internal_1_1_matrix_logarithm_atomic.html", "class_eigen_1_1internal_1_1_matrix_logarithm_atomic" ],
-    [ "Eigen::MatrixLogarithmReturnValue< Derived >", "class_eigen_1_1_matrix_logarithm_return_value.html", "class_eigen_1_1_matrix_logarithm_return_value" ],
     [ "Eigen::internal::traits< MatrixLogarithmReturnValue< Derived > >", "struct_eigen_1_1internal_1_1traits_3_01_matrix_logarithm_return_value_3_01_derived_01_4_01_4.html", "struct_eigen_1_1internal_1_1traits_3_01_matrix_logarithm_return_value_3_01_derived_01_4_01_4" ],
     [ "matrix_log_compute_2x2", "_matrix_logarithm_8h.html#a1cb8d312c017f94570a52317fd1ece5f", null ],
     [ "matrix_log_compute_big", "_matrix_logarithm_8h.html#ac2de7acbbff34ec236ee5e9fdb2eee38", null ],

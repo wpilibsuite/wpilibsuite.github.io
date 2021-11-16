@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2-1-g32468a4</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2-2-g075144f</span>
    </div>
   </td>
  </tr>
@@ -988,7 +988,7 @@ $(document).ready(function(){initNavTree('_dense_map_8h_source.html',''); initRe
 <div class="line"><a id="l00892" name="l00892"></a><span class="lineno">  892</span>      <span class="comment">// the tricky bits of DenseMap&#39;s storage system: the buckets are not</span></div>
 <div class="line"><a id="l00893" name="l00893"></a><span class="lineno">  893</span>      <span class="comment">// fully initialized. Thus we swap every key, but we may have</span></div>
 <div class="line"><a id="l00894" name="l00894"></a><span class="lineno">  894</span>      <span class="comment">// a one-directional move of the value.</span></div>
-<div class="line"><a id="l00895" name="l00895"></a><span class="lineno">  895</span>      <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = 0, <a class="code hl_function" href="namespaceunits_1_1constants.html#acebb59adda640396795adcdc84a78297">e</a> = InlineBuckets; i != <a class="code hl_function" href="namespaceunits_1_1constants.html#acebb59adda640396795adcdc84a78297">e</a>; ++i) {</div>
+<div class="line"><a id="l00895" name="l00895"></a><span class="lineno">  895</span>      <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = 0, <a class="code hl_variable" href="namespacewpi_1_1numbers.html#a2d77ce99cbb4b9e449846009e5828e58">e</a> = InlineBuckets; i != <a class="code hl_variable" href="namespacewpi_1_1numbers.html#a2d77ce99cbb4b9e449846009e5828e58">e</a>; ++i) {</div>
 <div class="line"><a id="l00896" name="l00896"></a><span class="lineno">  896</span>        BucketT *LHSB = &amp;getInlineBuckets()[i],</div>
 <div class="line"><a id="l00897" name="l00897"></a><span class="lineno">  897</span>                *RHSB = &amp;RHS.getInlineBuckets()[i];</div>
 <div class="line"><a id="l00898" name="l00898"></a><span class="lineno">  898</span>        <span class="keywordtype">bool</span> hasLHSValue = (!KeyInfoT::isEqual(LHSB-&gt;getFirst(), EmptyKey) &amp;&amp;</div>
@@ -1029,7 +1029,7 @@ $(document).ready(function(){initNavTree('_dense_map_8h_source.html',''); initRe
 <div class="line"><a id="l00933" name="l00933"></a><span class="lineno">  933</span>    <span class="comment">// count hasn&#39;t actually rotated in this case. So we have to carefully</span></div>
 <div class="line"><a id="l00934" name="l00934"></a><span class="lineno">  934</span>    <span class="comment">// move construct the keys and values into their new locations, but there</span></div>
 <div class="line"><a id="l00935" name="l00935"></a><span class="lineno">  935</span>    <span class="comment">// is no need to re-hash things.</span></div>
-<div class="line"><a id="l00936" name="l00936"></a><span class="lineno">  936</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = 0, <a class="code hl_function" href="namespaceunits_1_1constants.html#acebb59adda640396795adcdc84a78297">e</a> = InlineBuckets; i != <a class="code hl_function" href="namespaceunits_1_1constants.html#acebb59adda640396795adcdc84a78297">e</a>; ++i) {</div>
+<div class="line"><a id="l00936" name="l00936"></a><span class="lineno">  936</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = 0, <a class="code hl_variable" href="namespacewpi_1_1numbers.html#a2d77ce99cbb4b9e449846009e5828e58">e</a> = InlineBuckets; i != <a class="code hl_variable" href="namespacewpi_1_1numbers.html#a2d77ce99cbb4b9e449846009e5828e58">e</a>; ++i) {</div>
 <div class="line"><a id="l00937" name="l00937"></a><span class="lineno">  937</span>      BucketT *NewB = &amp;LargeSide.getInlineBuckets()[i],</div>
 <div class="line"><a id="l00938" name="l00938"></a><span class="lineno">  938</span>              *OldB = &amp;SmallSide.getInlineBuckets()[i];</div>
 <div class="line"><a id="l00939" name="l00939"></a><span class="lineno">  939</span>      ::new (&amp;NewB-&gt;getFirst()) KeyT(std::move(OldB-&gt;getFirst()));</div>
@@ -1440,9 +1440,9 @@ $(document).ready(function(){initNavTree('_dense_map_8h_source.html',''); initRe
 <div class="ttc" id="anamespacedetail_html_a7c8bc5fb5ef4750d192614dd7f0cf396"><div class="ttname"><a href="namespacedetail.html#a7c8bc5fb5ef4750d192614dd7f0cf396">detail::first</a></div><div class="ttdeci">const T &amp; first(const T &amp;value, const Tail &amp;...)</div><div class="ttdef"><b>Definition:</b> compile.h:178</div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> Errc.h:84</div></div>
 <div class="ttc" id="anamespacestd_html_a96fe9b71b86c96cbbd77452a4d949675"><div class="ttname"><a href="namespacestd.html#a96fe9b71b86c96cbbd77452a4d949675">std::swap</a></div><div class="ttdeci">void swap(wpi::SmallPtrSet&lt; T, N &gt; &amp;LHS, wpi::SmallPtrSet&lt; T, N &gt; &amp;RHS)</div><div class="ttdoc">Implement std::swap in terms of SmallPtrSet swap.</div><div class="ttdef"><b>Definition:</b> SmallPtrSet.h:457</div></div>
-<div class="ttc" id="anamespaceunits_1_1constants_html_acebb59adda640396795adcdc84a78297"><div class="ttname"><a href="namespaceunits_1_1constants.html#acebb59adda640396795adcdc84a78297">units::constants::e</a></div><div class="ttdeci">static constexpr const charge::coulomb_t e(1.6021766208e-19)</div><div class="ttdoc">elementary charge.</div></div>
 <div class="ttc" id="anamespaceunits_1_1math_html_a44b68b796057241089a0a9f3b954d21c"><div class="ttname"><a href="namespaceunits_1_1math.html#a44b68b796057241089a0a9f3b954d21c">units::math::max</a></div><div class="ttdeci">UnitTypeLhs() max(const UnitTypeLhs &amp;lhs, const UnitTypeRhs &amp;rhs)</div><div class="ttdef"><b>Definition:</b> base.h:3392</div></div>
 <div class="ttc" id="anamespacewpi_1_1detail_html_aa6ae57edcc25d4177064c3bc234a106b"><div class="ttname"><a href="namespacewpi_1_1detail.html#aa6ae57edcc25d4177064c3bc234a106b">wpi::detail::swap</a></div><div class="ttdeci">void swap(SafeThreadOwnerBase &amp;lhs, SafeThreadOwnerBase &amp;rhs) noexcept</div></div>
+<div class="ttc" id="anamespacewpi_1_1numbers_html_a2d77ce99cbb4b9e449846009e5828e58"><div class="ttname"><a href="namespacewpi_1_1numbers.html#a2d77ce99cbb4b9e449846009e5828e58">wpi::numbers::e</a></div><div class="ttdeci">constexpr double e</div><div class="ttdef"><b>Definition:</b> numbers:50</div></div>
 <div class="ttc" id="anamespacewpi_html"><div class="ttname"><a href="namespacewpi.html">wpi</a></div><div class="ttdef"><b>Definition:</b> PortForwarder.h:13</div></div>
 <div class="ttc" id="anamespacewpi_html_a0e35647cd9f9f0d2c097ea72e6d9f608"><div class="ttname"><a href="namespacewpi.html#a0e35647cd9f9f0d2c097ea72e6d9f608">wpi::capacity_in_bytes</a></div><div class="ttdeci">size_t capacity_in_bytes(const SmallVector&lt; T, N &gt; &amp;X)</div><div class="ttdef"><b>Definition:</b> SmallVector.h:925</div></div>
 <div class="ttc" id="anamespacewpi_html_a1be06425de1e3346544e3600fda4f352"><div class="ttname"><a href="namespacewpi.html#a1be06425de1e3346544e3600fda4f352">wpi::Log2_32_Ceil</a></div><div class="ttdeci">unsigned Log2_32_Ceil(uint32_t Value)</div><div class="ttdoc">Return the ceil log base 2 of the specified value, 32 if the value is zero.</div><div class="ttdef"><b>Definition:</b> MathExtras.h:543</div></div>
@@ -1466,7 +1466,7 @@ $(document).ready(function(){initNavTree('_dense_map_8h_source.html',''); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><a class="el" href="_dense_map_8h.html">DenseMap.h</a></li>
-    <li class="footer">Generated on Sat Nov 13 2021 16:58:25 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Nov 16 2021 19:25:38 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

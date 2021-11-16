@@ -1,6 +1,5 @@
 var _matrix_base_8h =
 [
-    [ "Eigen::MatrixBase< Derived >", "class_eigen_1_1_matrix_base.html", "class_eigen_1_1_matrix_base" ],
     [ "Eigen::MatrixBase< Derived >::DiagonalIndexReturnType< Index >", "struct_eigen_1_1_matrix_base_1_1_diagonal_index_return_type.html", "struct_eigen_1_1_matrix_base_1_1_diagonal_index_return_type" ],
     [ "Eigen::MatrixBase< Derived >::ConstDiagonalIndexReturnType< Index >", "struct_eigen_1_1_matrix_base_1_1_const_diagonal_index_return_type.html", "struct_eigen_1_1_matrix_base_1_1_const_diagonal_index_return_type" ],
     [ "Eigen::MatrixBase< Derived >::TriangularViewReturnType< Mode >", "struct_eigen_1_1_matrix_base_1_1_triangular_view_return_type.html", "struct_eigen_1_1_matrix_base_1_1_triangular_view_return_type" ],

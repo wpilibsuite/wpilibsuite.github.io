@@ -39,7 +39,7 @@ var class_eigen_1_1_matrix_base =
     [ "applyOnTheLeft", "class_eigen_1_1_matrix_base.html#a3a08ad41e81d8ad4a37b5d5c7490e765", null ],
     [ "applyOnTheLeft", "class_eigen_1_1_matrix_base.html#ae17f612f93b9df39acdaa5b60de3548d", null ],
     [ "applyOnTheRight", "class_eigen_1_1_matrix_base.html#a45d91752925d2757fc8058a293b15462", null ],
-    [ "applyOnTheRight", "class_eigen_1_1_matrix_base.html#a6832d3df19ff15dd9e13406608ffb3f2", null ],
+    [ "applyOnTheRight", "group___jacobi___module.html#ga6832d3df19ff15dd9e13406608ffb3f2", null ],
     [ "array", "class_eigen_1_1_matrix_base.html#a6bd01a3c94daf864579f14510aa320f8", null ],
     [ "array", "class_eigen_1_1_matrix_base.html#a16e8d97540c7563696ba7131f2dc6318", null ],
     [ "asDiagonal", "class_eigen_1_1_matrix_base.html#a22df3e4cfe9e81535c3590fd91fd639c", null ],

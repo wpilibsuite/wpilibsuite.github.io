@@ -9,7 +9,6 @@ var _matrix_exponential_8h =
     [ "Eigen::internal::is_exp_known_type< float >", "struct_eigen_1_1internal_1_1is__exp__known__type_3_01float_01_4.html", null ],
     [ "Eigen::internal::is_exp_known_type< double >", "struct_eigen_1_1internal_1_1is__exp__known__type_3_01double_01_4.html", null ],
     [ "Eigen::internal::is_exp_known_type< long double >", "struct_eigen_1_1internal_1_1is__exp__known__type_3_01long_01double_01_4.html", null ],
-    [ "Eigen::MatrixExponentialReturnValue< Derived >", "struct_eigen_1_1_matrix_exponential_return_value.html", "struct_eigen_1_1_matrix_exponential_return_value" ],
     [ "Eigen::internal::traits< MatrixExponentialReturnValue< Derived > >", "struct_eigen_1_1internal_1_1traits_3_01_matrix_exponential_return_value_3_01_derived_01_4_01_4.html", "struct_eigen_1_1internal_1_1traits_3_01_matrix_exponential_return_value_3_01_derived_01_4_01_4" ],
     [ "matrix_exp_compute", "_matrix_exponential_8h.html#a927766ddb1b8b0f0b17e4c982bc50c72", null ],
     [ "matrix_exp_compute", "_matrix_exponential_8h.html#a31f2d6a505f108b760c422f937f49924", null ],

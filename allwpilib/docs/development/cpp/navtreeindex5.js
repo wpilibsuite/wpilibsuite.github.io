@@ -1,5 +1,9 @@
 var NAVTREEINDEX5 =
 {
+"_diagonal_matrix_8h.html":[6,0,3,0,0,1,26],
+"_diagonal_matrix_8h_source.html":[6,0,3,0,0,1,26],
+"_diagonal_product_8h.html":[6,0,3,0,0,1,27],
+"_diagonal_product_8h_source.html":[6,0,3,0,0,1,27],
 "_differential_drive_8h.html":[6,0,6,0,0],
 "_differential_drive_8h_source.html":[6,0,6,0,0],
 "_differential_drive_kinematics_8h.html":[6,0,5,5,1],
@@ -182,6 +186,7 @@ var NAVTREEINDEX5 =
 "_eigen_solver_8h.html":[6,0,3,0,0,2,2],
 "_eigen_solver_8h_source.html":[6,0,3,0,0,2,2],
 "_eigenvalues.html":[6,0,3,0,3],
+"_eigenvalues.html#a36393d27f3cfa8f0101f04e50b6a06c8":[6,0,3,0,3,0],
 "_elevator_feedforward_8h.html":[6,0,5,0,2],
 "_elevator_feedforward_8h_source.html":[6,0,5,0,2],
 "_elevator_sim_8h.html":[6,0,6,5,19],
@@ -244,10 +249,5 @@ var NAVTREEINDEX5 =
 "_endian_8h.html#a05b3da1030c8817d521109e369f2ce4a":[6,0,14,21,33],
 "_endian_8h.html#a05b3da1030c8817d521109e369f2ce4aa4bb14baff5ff4874718634128661335a":[6,0,14,21,33,0],
 "_endian_8h.html#a05b3da1030c8817d521109e369f2ce4aa96580efae18851161be0ccf4a21beb8a":[6,0,14,21,33,2],
-"_endian_8h.html#a05b3da1030c8817d521109e369f2ce4aae4d5c1946d271fec6ebe3c1e377b3af5":[6,0,14,21,33,1],
-"_endian_8h.html#a07950802296de1e87d32d177f92f40fe":[6,0,14,21,5],
-"_endian_8h.html#a0a0e31c1443d783dd28f201fdfbc91ae":[6,0,14,21,23],
-"_endian_8h.html#a0a527f6b2a97f4811f4322f6a8f23ea2":[6,0,14,21,72],
-"_endian_8h.html#a0b1ca9a79ddfd9656641b3eed565c99c":[6,0,14,21,7],
-"_endian_8h.html#a0b334f5c9d0026ab975cd6d2e0b66f59":[6,0,14,21,28]
+"_endian_8h.html#a05b3da1030c8817d521109e369f2ce4aae4d5c1946d271fec6ebe3c1e377b3af5":[6,0,14,21,33,1]
 };

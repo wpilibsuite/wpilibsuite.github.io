@@ -1,10 +1,7 @@
 var _matrix_function_8h =
 [
-    [ "Eigen::internal::MatrixFunctionAtomic< MatrixType >", "class_eigen_1_1internal_1_1_matrix_function_atomic.html", "class_eigen_1_1internal_1_1_matrix_function_atomic" ],
-    [ "Eigen::internal::matrix_function_compute< MatrixType, IsComplex >", "struct_eigen_1_1internal_1_1matrix__function__compute.html", "struct_eigen_1_1internal_1_1matrix__function__compute" ],
     [ "Eigen::internal::matrix_function_compute< MatrixType, 0 >", "struct_eigen_1_1internal_1_1matrix__function__compute_3_01_matrix_type_00_010_01_4.html", "struct_eigen_1_1internal_1_1matrix__function__compute_3_01_matrix_type_00_010_01_4" ],
     [ "Eigen::internal::matrix_function_compute< MatrixType, 1 >", "struct_eigen_1_1internal_1_1matrix__function__compute_3_01_matrix_type_00_011_01_4.html", "struct_eigen_1_1internal_1_1matrix__function__compute_3_01_matrix_type_00_011_01_4" ],
-    [ "Eigen::MatrixFunctionReturnValue< Derived >", "class_eigen_1_1_matrix_function_return_value.html", "class_eigen_1_1_matrix_function_return_value" ],
     [ "Eigen::internal::traits< MatrixFunctionReturnValue< Derived > >", "struct_eigen_1_1internal_1_1traits_3_01_matrix_function_return_value_3_01_derived_01_4_01_4.html", "struct_eigen_1_1internal_1_1traits_3_01_matrix_function_return_value_3_01_derived_01_4_01_4" ],
     [ "matrix_function_compute_above_diagonal", "_matrix_function_8h.html#a8ff76c47bde59d8af688e5925bed8f17", null ],
     [ "matrix_function_compute_block_atomic", "_matrix_function_8h.html#a53e617df189868a791e44d2c4e94403f", null ],

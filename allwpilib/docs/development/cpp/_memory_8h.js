@@ -6,7 +6,6 @@ var _memory_8h =
     [ "Eigen::internal::smart_memmove_helper< T, false >", "struct_eigen_1_1internal_1_1smart__memmove__helper_3_01_t_00_01false_01_4.html", "struct_eigen_1_1internal_1_1smart__memmove__helper_3_01_t_00_01false_01_4" ],
     [ "Eigen::internal::aligned_stack_memory_handler< T >", "class_eigen_1_1internal_1_1aligned__stack__memory__handler.html", "class_eigen_1_1internal_1_1aligned__stack__memory__handler" ],
     [ "Eigen::internal::scoped_array< T >", "class_eigen_1_1internal_1_1scoped__array.html", "class_eigen_1_1internal_1_1scoped__array" ],
-    [ "Eigen::aligned_allocator< T >", "class_eigen_1_1aligned__allocator.html", "class_eigen_1_1aligned__allocator" ],
     [ "Eigen::aligned_allocator< T >::rebind< U >", "struct_eigen_1_1aligned__allocator_1_1rebind.html", "struct_eigen_1_1aligned__allocator_1_1rebind" ],
     [ "ei_declare_aligned_stack_constructed_variable", "_memory_8h.html#ae4bf2b34741512d206aa238550a2c42c", null ],
     [ "ei_declare_local_nested_eval", "_memory_8h.html#a7a83708592281a0b5a18f0ad99e8560b", null ],

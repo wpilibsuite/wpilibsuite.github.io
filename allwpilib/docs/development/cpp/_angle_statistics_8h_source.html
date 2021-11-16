@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2-1-g32468a4</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2-2-g075144f</span>
    </div>
   </td>
  </tr>
@@ -157,7 +157,7 @@ $(document).ready(function(){initNavTree('_angle_statistics_8h_source.html','');
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>                                       <span class="keywordtype">int</span> angleStateIdx) {</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  Eigen::Vector&lt;double, States&gt; ret = a + <a class="code hl_variable" href="namespaceunits.html#a77b2abc79841f7f67c7bc406b7c5083b">b</a>;</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  ret[angleStateIdx] =</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>      <a class="code hl_function" href="namespacefrc.html#aa026a3c3f3053fcafb58c6be2fa589fa">InputModulus</a>(ret[angleStateIdx], -<a class="code hl_function" href="namespaceunits_1_1constants.html#ac21e1951369036630989db48beff4185">wpi::numbers::pi</a>, <a class="code hl_function" href="namespaceunits_1_1constants.html#ac21e1951369036630989db48beff4185">wpi::numbers::pi</a>);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>      <a class="code hl_function" href="namespacefrc.html#aa026a3c3f3053fcafb58c6be2fa589fa">InputModulus</a>(ret[angleStateIdx], -<a class="code hl_variable" href="namespacewpi_1_1numbers.html#a0ae4789f64cab45c196f44d2f1f39b6f">wpi::numbers::pi</a>, <a class="code hl_variable" href="namespacewpi_1_1numbers.html#a0ae4789f64cab45c196f44d2f1f39b6f">wpi::numbers::pi</a>);</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="keywordflow">return</span> ret;</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>}</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment"></span> </div>
@@ -235,8 +235,8 @@ $(document).ready(function(){initNavTree('_angle_statistics_8h_source.html','');
 <div class="ttc" id="anamespacefrc_html_a7270bc5006a5a8b905ba4b8a9616c3c8"><div class="ttname"><a href="namespacefrc.html#a7270bc5006a5a8b905ba4b8a9616c3c8">frc::AngleModulus</a></div><div class="ttdeci">constexpr WPILIB_DLLEXPORT units::radian_t AngleModulus(units::radian_t angle)</div><div class="ttdoc">Wraps an angle to the range -pi to pi radians (-180 to 180 degrees).</div><div class="ttdef"><b>Definition:</b> MathUtil.h:52</div></div>
 <div class="ttc" id="anamespacefrc_html_aa026a3c3f3053fcafb58c6be2fa589fa"><div class="ttname"><a href="namespacefrc.html#aa026a3c3f3053fcafb58c6be2fa589fa">frc::InputModulus</a></div><div class="ttdeci">constexpr T InputModulus(T input, T minimumInput, T maximumInput)</div><div class="ttdoc">Returns modulus of input.</div><div class="ttdef"><b>Definition:</b> MathUtil.h:32</div></div>
 <div class="ttc" id="anamespacefrc_html_aae5520badaf7b2cea7920648d7183d1a"><div class="ttname"><a href="namespacefrc.html#aae5520badaf7b2cea7920648d7183d1a">frc::AngleResidual</a></div><div class="ttdeci">Eigen::Vector&lt; double, States &gt; AngleResidual(const Eigen::Vector&lt; double, States &gt; &amp;a, const Eigen::Vector&lt; double, States &gt; &amp;b, int angleStateIdx)</div><div class="ttdoc">Subtracts a and b while normalizing the resulting value in the selected row as if it were an angle.</div><div class="ttdef"><b>Definition:</b> AngleStatistics.h:24</div></div>
-<div class="ttc" id="anamespaceunits_1_1constants_html_ac21e1951369036630989db48beff4185"><div class="ttname"><a href="namespaceunits_1_1constants.html#ac21e1951369036630989db48beff4185">units::constants::pi</a></div><div class="ttdeci">static constexpr const unit_t&lt; PI &gt; pi(1)</div><div class="ttdoc">Ratio of a circle's circumference to its diameter.</div></div>
 <div class="ttc" id="anamespaceunits_html_a77b2abc79841f7f67c7bc406b7c5083b"><div class="ttname"><a href="namespaceunits.html#a77b2abc79841f7f67c7bc406b7c5083b">units::b</a></div><div class="ttdeci">b</div><div class="ttdef"><b>Definition:</b> data.h:44</div></div>
+<div class="ttc" id="anamespacewpi_1_1numbers_html_a0ae4789f64cab45c196f44d2f1f39b6f"><div class="ttname"><a href="namespacewpi_1_1numbers.html#a0ae4789f64cab45c196f44d2f1f39b6f">wpi::numbers::pi</a></div><div class="ttdeci">constexpr double pi</div><div class="ttdef"><b>Definition:</b> numbers:53</div></div>
 <div class="ttc" id="anumbers_html"><div class="ttname"><a href="numbers.html">numbers</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -244,7 +244,7 @@ $(document).ready(function(){initNavTree('_angle_statistics_8h_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_7b4a0634315f7993a48b0e5d4ddcc644.html">estimator</a></li><li class="navelem"><a class="el" href="_angle_statistics_8h.html">AngleStatistics.h</a></li>
-    <li class="footer">Generated on Sat Nov 13 2021 16:58:25 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Tue Nov 16 2021 19:25:37 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

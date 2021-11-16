@@ -6,10 +6,11 @@ var searchData=
   ['impl_3',['impl',['../namespacewpi_1_1impl.html',1,'wpi']]],
   ['java_4',['java',['../namespacewpi_1_1java.html',1,'wpi']]],
   ['math_5',['math',['../namespacewpi_1_1math.html',1,'wpi']]],
-  ['sig_6',['sig',['../namespacewpi_1_1sig.html',1,'wpi']]],
-  ['support_7',['support',['../namespacewpi_1_1support.html',1,'wpi']]],
-  ['sys_8',['sys',['../namespacewpi_1_1sys.html',1,'wpi']]],
-  ['trait_9',['trait',['../namespacewpi_1_1sig_1_1trait.html',1,'wpi::sig']]],
-  ['uv_10',['uv',['../namespacewpi_1_1uv.html',1,'wpi']]],
-  ['wpi_11',['wpi',['../namespacewpi.html',1,'']]]
+  ['numbers_6',['numbers',['../namespacewpi_1_1numbers.html',1,'wpi']]],
+  ['sig_7',['sig',['../namespacewpi_1_1sig.html',1,'wpi']]],
+  ['support_8',['support',['../namespacewpi_1_1support.html',1,'wpi']]],
+  ['sys_9',['sys',['../namespacewpi_1_1sys.html',1,'wpi']]],
+  ['trait_10',['trait',['../namespacewpi_1_1sig_1_1trait.html',1,'wpi::sig']]],
+  ['uv_11',['uv',['../namespacewpi_1_1uv.html',1,'wpi']]],
+  ['wpi_12',['wpi',['../namespacewpi.html',1,'']]]
 ];

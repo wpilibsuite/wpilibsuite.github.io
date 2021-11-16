@@ -1,7 +1,6 @@
 var _transpose_8h =
 [
     [ "Eigen::internal::traits< Transpose< MatrixType > >", "struct_eigen_1_1internal_1_1traits_3_01_transpose_3_01_matrix_type_01_4_01_4.html", "struct_eigen_1_1internal_1_1traits_3_01_transpose_3_01_matrix_type_01_4_01_4" ],
-    [ "Eigen::Transpose< MatrixType >", "class_eigen_1_1_transpose.html", "class_eigen_1_1_transpose" ],
     [ "Eigen::internal::TransposeImpl_base< MatrixType, HasDirectAccess >", "struct_eigen_1_1internal_1_1_transpose_impl__base.html", "struct_eigen_1_1internal_1_1_transpose_impl__base" ],
     [ "Eigen::internal::TransposeImpl_base< MatrixType, false >", "struct_eigen_1_1internal_1_1_transpose_impl__base_3_01_matrix_type_00_01false_01_4.html", "struct_eigen_1_1internal_1_1_transpose_impl__base_3_01_matrix_type_00_01false_01_4" ],
     [ "Eigen::TransposeImpl< XprType, StorageKind >", "class_eigen_1_1_transpose_impl.html", "class_eigen_1_1_transpose_impl" ],
