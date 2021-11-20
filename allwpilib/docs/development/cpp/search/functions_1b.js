@@ -178,7 +178,7 @@ var searchData=
   ['_7esolverbase_175',['~SolverBase',['../class_eigen_1_1_solver_base.html#a5a9bb1cec6324ffd4016319e9ae94477',1,'Eigen::SolverBase']]],
   ['_7espan_176',['~span',['../classwpi_1_1span.html#a1e404f53054f2677aafddb907c23120a',1,'wpi::span']]],
   ['_7espeedcontroller_177',['~SpeedController',['../classfrc_1_1_speed_controller.html#a4ef9f2180123f5dddb586b1759e85fa8',1,'frc::SpeedController']]],
-  ['_7espi_178',['~SPI',['../classfrc_1_1_s_p_i.html#ade227dccb960c0ba23a6e34532e33415',1,'frc::SPI']]],
+  ['_7espi_178',['~SPI',['../classfrc_1_1_s_p_i.html#a6c8f8c27aaadf2c0d8483825db0f5901',1,'frc::SPI']]],
   ['_7espline_179',['~Spline',['../classfrc_1_1_spline.html#a083284ba10b2c1d6c62928727b4217be',1,'frc::Spline']]],
   ['_7estartcommand_180',['~StartCommand',['../classfrc_1_1_start_command.html#a6ac121af9af174e5c4335c9bf6a25e7e',1,'frc::StartCommand']]],
   ['_7estringmap_181',['~StringMap',['../classwpi_1_1_string_map.html#abb8037327c0f233d84905a4fa4f6f303',1,'wpi::StringMap']]],
