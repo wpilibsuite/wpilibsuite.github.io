@@ -1,7 +1,5 @@
 var NAVTREEINDEX16 =
 {
-"_pose2d_8h.html#aa084f2ee573258a862b973c9343ee02e":[6,0,5,4,0,2],
-"_pose2d_8h_source.html":[6,0,5,4,0],
 "_power_distribution_data_8h.html":[6,0,9,2,17],
 "_power_distribution_data_8h.html#a062e2a403ab8d96119e9345244286a99":[6,0,9,2,17,3],
 "_power_distribution_data_8h.html#a0d05e200fd0304be07a71aabee5d2fc1":[6,0,9,2,17,8],
@@ -249,5 +247,7 @@ var NAVTREEINDEX16 =
 "_robot_drive_base_8h.html":[6,0,6,0,3],
 "_robot_drive_base_8h_source.html":[6,0,6,0,3],
 "_robot_state_8h.html":[6,0,6,62],
-"_robot_state_8h_source.html":[6,0,6,62]
+"_robot_state_8h_source.html":[6,0,6,62],
+"_rotation2d_8h.html":[6,0,5,4,1],
+"_rotation2d_8h.html#a3e552b5d2528819c1ed371cdad15173a":[6,0,5,4,1,2]
 };

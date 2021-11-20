@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2-3-gf0ab6df</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2-4-geb83559</span>
    </div>
   </td>
  </tr>
@@ -149,11 +149,11 @@ $(document).ready(function(){initNavTree('_eigen_8h_source.html',''); initResiza
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">auto</span> out = ctx.out();</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; Rows; ++i) {</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; Cols; ++j) {</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        out = <a class="code hl_function" href="wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a3c4d8499969f1378aea4db1993e7c319">fmt::format_to</a>(out, <span class="stringliteral">&quot;  {:f}&quot;</span>, mat(i, j));</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        out = <a class="code hl_function" href="core_8h.html#acccb7c60aa962b39ef947435def89471">fmt::format_to</a>(out, <span class="stringliteral">&quot;  {:f}&quot;</span>, mat(i, j));</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>      }</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>      <span class="keywordflow">if</span> (i &lt; Rows - 1) {</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        out = <a class="code hl_function" href="wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a3c4d8499969f1378aea4db1993e7c319">fmt::format_to</a>(out, <span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        out = <a class="code hl_function" href="core_8h.html#acccb7c60aa962b39ef947435def89471">fmt::format_to</a>(out, <span class="stringliteral">&quot;\n&quot;</span>);</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>      }</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    }</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
@@ -163,19 +163,19 @@ $(document).ready(function(){initNavTree('_eigen_8h_source.html',''); initResiza
 <div class="ttc" id="a_core_html"><div class="ttname"><a href="_core.html">Core</a></div></div>
 <div class="ttc" id="aclass_eigen_1_1_matrix_html"><div class="ttname"><a href="class_eigen_1_1_matrix.html">Eigen::Matrix</a></div><div class="ttdoc">The matrix class, also used for vectors and row-vectors.</div><div class="ttdef"><b>Definition:</b> Matrix.h:180</div></div>
 <div class="ttc" id="acore_8h_html_a7f31f076b2eb408741895533f9222baa"><div class="ttname"><a href="core_8h.html#a7f31f076b2eb408741895533f9222baa">format_parse_context</a></div><div class="ttdeci">basic_format_parse_context&lt; char &gt; format_parse_context</div><div class="ttdef"><b>Definition:</b> core.h:686</div></div>
+<div class="ttc" id="acore_8h_html_acccb7c60aa962b39ef947435def89471"><div class="ttname"><a href="core_8h.html#acccb7c60aa962b39ef947435def89471">format_to</a></div><div class="ttdeci">FMT_INLINE auto format_to(OutputIt out, format_string&lt; T... &gt; fmt, T &amp;&amp;... args) -&gt; OutputIt</div><div class="ttdoc">\rst Formats args according to specifications in fmt, writes the result to the output iterator out an...</div><div class="ttdef"><b>Definition:</b> core.h:2913</div></div>
 <div class="ttc" id="aformat_8h_html"><div class="ttname"><a href="format_8h.html">format.h</a></div></div>
 <div class="ttc" id="anamespace_eigen_1_1placeholders_html_a24a00ff0f09137dcde6952ff29fb9f9d"><div class="ttname"><a href="namespace_eigen_1_1placeholders.html#a24a00ff0f09137dcde6952ff29fb9f9d">Eigen::placeholders::end</a></div><div class="ttdeci">static EIGEN_DEPRECATED const end_t end</div><div class="ttdef"><b>Definition:</b> IndexedViewHelper.h:181</div></div>
-<div class="ttc" id="anamespace_eigen_html"><div class="ttname"><a href="namespace_eigen.html">Eigen</a></div><div class="ttdoc">Namespace containing all symbols from the Eigen library.</div><div class="ttdef"><b>Definition:</b> Core:141</div></div>
+<div class="ttc" id="anamespace_eigen_html"><div class="ttname"><a href="namespace_eigen.html">Eigen</a></div><div class="ttdoc">Namespace containing all symbols from the Eigen library.</div><div class="ttdef"><b>Definition:</b> AutoDiff:13</div></div>
 <div class="ttc" id="astructfmt_1_1formatter_3_01_eigen_1_1_matrix_3_01double_00_01_rows_00_01_cols_00_01_args_8_8_8_01_4_01_4_html_abbd4f91ac3a5a117d0d2edf04410c2f3"><div class="ttname"><a href="structfmt_1_1formatter_3_01_eigen_1_1_matrix_3_01double_00_01_rows_00_01_cols_00_01_args_8_8_8_01_4_01_4.html#abbd4f91ac3a5a117d0d2edf04410c2f3">fmt::formatter&lt; Eigen::Matrix&lt; double, Rows, Cols, Args... &gt; &gt;::format</a></div><div class="ttdeci">auto format(const Eigen::Matrix&lt; double, Rows, Cols, Args... &gt; &amp;mat, FormatContext &amp;ctx)</div><div class="ttdoc">Writes out a formatted matrix.</div><div class="ttdef"><b>Definition:</b> Eigen.h:51</div></div>
 <div class="ttc" id="astructfmt_1_1formatter_3_01_eigen_1_1_matrix_3_01double_00_01_rows_00_01_cols_00_01_args_8_8_8_01_4_01_4_html_afb8f8983bf0c299e73fb2d7bb52ddb32"><div class="ttname"><a href="structfmt_1_1formatter_3_01_eigen_1_1_matrix_3_01double_00_01_rows_00_01_cols_00_01_args_8_8_8_01_4_01_4.html#afb8f8983bf0c299e73fb2d7bb52ddb32">fmt::formatter&lt; Eigen::Matrix&lt; double, Rows, Cols, Args... &gt; &gt;::parse</a></div><div class="ttdeci">constexpr auto parse(fmt::format_parse_context &amp;ctx)</div><div class="ttdoc">Format string parser.</div><div class="ttdef"><b>Definition:</b> Eigen.h:30</div></div>
-<div class="ttc" id="awpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h_html_a3c4d8499969f1378aea4db1993e7c319"><div class="ttname"><a href="wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a3c4d8499969f1378aea4db1993e7c319">format_to</a></div><div class="ttdeci">auto format_to(OutputIt out, const text_style &amp;ts, const S &amp;format_str, Args &amp;&amp;... args) -&gt; typename std::enable_if&lt; enable, OutputIt &gt;::type</div><div class="ttdoc">\rst Formats arguments with the given text_style, writes the result to the output iterator out and re...</div><div class="ttdef"><b>Definition:</b> color.h:617</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_405795ac50a5647e96ff81bf21bb5d20.html">fmt</a></li><li class="navelem"><a class="el" href="_eigen_8h.html">Eigen.h</a></li>
-    <li class="footer">Generated on Tue Nov 16 2021 22:40:41 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Nov 20 2021 09:05:36 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

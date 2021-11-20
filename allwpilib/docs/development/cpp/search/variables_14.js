@@ -19,11 +19,12 @@ var searchData=
   ['unused_5f_16',['unused_',['../unionuv__rwlock__t.html#ab930a64984592b65ea6e361723d4bffd',1,'uv_rwlock_t::unused_()'],['../unionuv__cond__t.html#a9450859e709d8e3116816c3c65121bf3',1,'uv_cond_t::unused_()']]],
   ['upgrade_17',['upgrade',['../classwpi_1_1_web_socket_server_helper.html#a025a9715a7bfb52043a282b116e60e52',1,'wpi::WebSocketServerHelper::upgrade()'],['../structwpi_1_1http__parser.html#a600d39df8c275a5e64e3c28e9d5bc5b9',1,'wpi::http_parser::upgrade()']]],
   ['upper_18',['upper',['../structfloat__specs.html#a226d0c4e62d509590cc438e052858d36',1,'float_specs::upper()'],['../structdetail_1_1accumulator.html#a03dfd4b7f01ae786012dea3d7fbbce2a',1,'detail::accumulator::upper()'],['../structdetail_1_1boundaries.html#a68002826ee9ca01f9c56504edd7a01e2',1,'detail::boundaries::upper()']]],
-  ['url_19',['url',['../classwpi_1_1_http_parser.html#a2e61cb22e5a8131f3165b98c1ea48c9c',1,'wpi::HttpParser::url()'],['../classwpi_1_1_http_location.html#a464dfeb88d41a5ed2c0d4587de9ee640',1,'wpi::HttpLocation::url()']]],
+  ['url_19',['url',['../classwpi_1_1_http_location.html#a464dfeb88d41a5ed2c0d4587de9ee640',1,'wpi::HttpLocation::url()'],['../classwpi_1_1_http_parser.html#a2e61cb22e5a8131f3165b98c1ea48c9c',1,'wpi::HttpParser::url()']]],
   ['use_20',['use',['../_third_party_notices_8txt.html#aed409b7655f018e9bf6000800dadf378',1,'ThirdPartyNotices.txt']]],
   ['use_5fgrisu_21',['use_grisu',['../structfloat__specs.html#aa09e76d489fd92f8eab5098a14bf41cd',1,'float_specs']]],
-  ['user_22',['user',['../structuv__cpu__times__s.html#a7f7b938d6e2866734520e5ee7782647d',1,'uv_cpu_times_s::user()'],['../classwpi_1_1_http_location.html#a33ae0c0c89a5360cd8f70cd115157c00',1,'wpi::HttpLocation::user()']]],
-  ['username_23',['username',['../structuv__passwd__s.html#a148fe33f75839e553a66b40635dd6d2c',1,'uv_passwd_s']]],
-  ['users_24',['users',['../struct_eigen_1_1internal_1_1_gemm_parallel_info.html#ae2a039eef23196ca53108a2d3b8dc319',1,'Eigen::internal::GemmParallelInfo']]],
-  ['using_25',['using',['../_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a',1,'ThirdPartyNotices.txt']]]
+  ['usedigital_22',['useDigital',['../struct_h_a_l___r_e_v_p_h_compressor_config.html#aa3c23e77c42c9fdb1e5078a43b47c0b6',1,'HAL_REVPHCompressorConfig']]],
+  ['user_23',['user',['../classwpi_1_1_http_location.html#a33ae0c0c89a5360cd8f70cd115157c00',1,'wpi::HttpLocation::user()'],['../structuv__cpu__times__s.html#a7f7b938d6e2866734520e5ee7782647d',1,'uv_cpu_times_s::user()']]],
+  ['username_24',['username',['../structuv__passwd__s.html#a148fe33f75839e553a66b40635dd6d2c',1,'uv_passwd_s']]],
+  ['users_25',['users',['../struct_eigen_1_1internal_1_1_gemm_parallel_info.html#ae2a039eef23196ca53108a2d3b8dc319',1,'Eigen::internal::GemmParallelInfo']]],
+  ['using_26',['using',['../_third_party_notices_8txt.html#a881b68e0ffb52565a3f885536d8f020a',1,'ThirdPartyNotices.txt']]]
 ];

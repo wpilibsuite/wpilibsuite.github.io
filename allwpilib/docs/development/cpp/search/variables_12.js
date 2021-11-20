@@ -92,7 +92,7 @@ var searchData=
   ['statv_89',['statV',['../namespaceunits.html#a93ca94d0ff66352813800bd6dcb1bb0b',1,'units']]],
   ['statvolt_90',['statvolt',['../namespaceunits.html#a419d9b7804f68ca52937dc889b82f94b',1,'units']]],
   ['statvolts_91',['statvolts',['../namespaceunits.html#a5152d55c3a0604db8cf531ea9cb3c1f6',1,'units']]],
-  ['stdio_92',['stdio',['../structwpi_1_1uv_1_1_process_1_1_option.html#a615754c0112bb1a21ba4d5bdbd09247d',1,'wpi::uv::Process::Option::stdio()'],['../structuv__process__options__s.html#a48fa7367530baa12365d55632c1c1a39',1,'uv_process_options_s::stdio()']]],
+  ['stdio_92',['stdio',['../structwpi_1_1uv_1_1_process_1_1_option.html#a5ad0cadf8a6524a527d45e25b76ccf65',1,'wpi::uv::Process::Option::stdio()'],['../structuv__process__options__s.html#a48fa7367530baa12365d55632c1c1a39',1,'uv_process_options_s::stdio()']]],
   ['stdio_5fcount_93',['stdio_count',['../structuv__process__options__s.html#a73d89821eff52c6730e7aa34c19f0a97',1,'uv_process_options_s']]],
   ['stop_5fflag_94',['stop_flag',['../structuv__loop__s.html#a2242d12da8a204da6ab203ff646d95ea',1,'uv_loop_s']]],
   ['stoppage_95',['stoppage',['../_third_party_notices_8txt.html#a566f776ba28f95e2ae93fba6e3c3c27e',1,'ThirdPartyNotices.txt']]],
