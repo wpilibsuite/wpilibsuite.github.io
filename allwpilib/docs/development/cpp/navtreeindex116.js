@@ -1,5 +1,7 @@
 var NAVTREEINDEX116 =
 {
+"locale_8h.html":[6,0,4,0,0,7],
+"locale_8h_source.html":[6,0,4,0,0,7],
 "luminous__flux_8h.html":[6,0,12,24],
 "luminous__flux_8h.html#ae03e1bc1ecc92dd1ee9965a8cb14c499":[6,0,12,24,0],
 "luminous__flux_8h_source.html":[6,0,12,24],
@@ -247,7 +249,5 @@ var NAVTREEINDEX116 =
 "namespace_eigen_1_1half__impl.html#aab937800733511857db8110f4ff897aa":[4,0,7,2,35],
 "namespace_eigen_1_1half__impl.html#aaf9519d6138e9c7c72b193d66aa82312":[4,0,7,2,28],
 "namespace_eigen_1_1half__impl.html#ab1c41e364ef52722b1ddb764638407b9":[4,0,7,2,37],
-"namespace_eigen_1_1half__impl.html#ab4470e33b563a37526eb6b24a162a0c9":[4,0,7,2,48],
-"namespace_eigen_1_1half__impl.html#ac65bd00e8ea323d0eff2ef01ebf56217":[4,0,7,2,46],
-"namespace_eigen_1_1half__impl.html#ac896d50fb8a455a610ee06c5616e73db":[4,0,7,2,31]
+"namespace_eigen_1_1half__impl.html#ab4470e33b563a37526eb6b24a162a0c9":[4,0,7,2,48]
 };

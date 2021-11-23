@@ -1527,6 +1527,8 @@ var hierarchy =
     [ "HAL_JoystickPOVs", "struct_h_a_l___joystick_p_o_vs.html", null ],
     [ "HAL_MatchInfo", "struct_h_a_l___match_info.html", null ],
     [ "HAL_REVPHCompressorConfig", "struct_h_a_l___r_e_v_p_h_compressor_config.html", null ],
+    [ "HAL_REVPHFaults", "struct_h_a_l___r_e_v_p_h_faults.html", null ],
+    [ "HAL_REVPHStickyFaults", "struct_h_a_l___r_e_v_p_h_sticky_faults.html", null ],
     [ "HAL_Value", "struct_h_a_l___value.html", null ],
     [ "HALSIM_NotifierInfo", "struct_h_a_l_s_i_m___notifier_info.html", null ],
     [ "basic_format_arg< Context >::handle", "classbasic__format__arg_1_1handle.html", null ],

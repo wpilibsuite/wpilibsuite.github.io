@@ -1,5 +1,7 @@
 var NAVTREEINDEX131 =
 {
+"namespacewpi_1_1sig_1_1detail.html":[4,0,20,6,0],
+"namespacewpi_1_1sig_1_1detail.html#ae9285405da5d87bb699b6f1ed01d93fd":[4,0,20,6,0,12],
 "namespacewpi_1_1sig_1_1trait.html":[4,0,20,6,1],
 "namespacewpi_1_1sig_1_1trait.html#a1862ba77d02d51ff569f9113a62b0b5b":[4,0,20,6,1,4],
 "namespacewpi_1_1sig_1_1trait.html#a39e8d5ca40586c65d5e9425faf5dd830":[4,0,20,6,1,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX131 =
 "printf_8h.html#aece57ac974e070300788ffc59bb5f779":[6,0,4,0,0,10,22],
 "printf_8h.html#aed55e442a2239d9b97bea3f0195d33b1":[6,0,4,0,0,10,25],
 "printf_8h_source.html":[6,0,4,0,0,10],
-"priority__mutex_8h.html":[6,0,14,65],
-"priority__mutex_8h_source.html":[6,0,14,65],
-"priority__queue_8h.html":[6,0,14,66]
+"priority__mutex_8h.html":[6,0,14,65]
 };
