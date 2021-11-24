@@ -1,7 +1,5 @@
 var NAVTREEINDEX148 =
 {
-"struct_eigen_1_1internal_1_1log1p__impl_3_01std_1_1complex_3_01_real_scalar_01_4_01_4.html#afdf60c92332e0463ee10245d0cdc6f05":[5,0,4,2,668,0],
-"struct_eigen_1_1internal_1_1log1p__impl_3_01std_1_1complex_3_01_real_scalar_01_4_01_4.html#afdf60c92332e0463ee10245d0cdc6f05":[4,0,7,4,670,0],
 "struct_eigen_1_1internal_1_1log1p__retval.html":[5,0,4,2,669],
 "struct_eigen_1_1internal_1_1log1p__retval.html":[4,0,7,4,671],
 "struct_eigen_1_1internal_1_1log1p__retval.html#ad20e438f9c73d391972259df9fa21c06":[5,0,4,2,669,0],
@@ -249,5 +247,7 @@ var NAVTREEINDEX148 =
 "struct_eigen_1_1internal_1_1member__lpnorm.html#adf898059ff6e3128311a015284e0d390":[5,0,4,2,719,1],
 "struct_eigen_1_1internal_1_1member__lpnorm.html#adf898059ff6e3128311a015284e0d390":[4,0,7,4,721,1],
 "struct_eigen_1_1internal_1_1member__lpnorm_1_1_cost.html":[4,0,7,4,721,0],
-"struct_eigen_1_1internal_1_1member__lpnorm_1_1_cost.html":[5,0,4,2,719,0]
+"struct_eigen_1_1internal_1_1member__lpnorm_1_1_cost.html":[5,0,4,2,719,0],
+"struct_eigen_1_1internal_1_1member__redux.html":[4,0,7,4,722],
+"struct_eigen_1_1internal_1_1member__redux.html":[5,0,4,2,720]
 };

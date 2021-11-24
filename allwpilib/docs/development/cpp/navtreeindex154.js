@@ -1,7 +1,5 @@
 var NAVTREEINDEX154 =
 {
-"struct_eigen_1_1internal_1_1scalar__bessel__i0__op.html":[5,0,4,2,995],
-"struct_eigen_1_1internal_1_1scalar__bessel__i0__op.html":[4,0,7,4,997],
 "struct_eigen_1_1internal_1_1scalar__bessel__i0e__op.html":[5,0,4,2,996],
 "struct_eigen_1_1internal_1_1scalar__bessel__i0e__op.html":[4,0,7,4,998],
 "struct_eigen_1_1internal_1_1scalar__bessel__i1__op.html":[5,0,4,2,997],
@@ -249,5 +247,7 @@ var NAVTREEINDEX154 =
 "struct_eigen_1_1internal_1_1scalar__fuzzy__default__impl_3_01_scalar_00_01false_00_01true_01_4.html":[5,0,4,2,1050],
 "struct_eigen_1_1internal_1_1scalar__fuzzy__default__impl_3_01_scalar_00_01false_00_01true_01_4.html":[4,0,7,4,1052],
 "struct_eigen_1_1internal_1_1scalar__fuzzy__default__impl_3_01_scalar_00_01false_00_01true_01_4.html#a3f6981d578ec5831bab06a632cf331ed":[4,0,7,4,1052,3],
-"struct_eigen_1_1internal_1_1scalar__fuzzy__default__impl_3_01_scalar_00_01false_00_01true_01_4.html#a3f6981d578ec5831bab06a632cf331ed":[5,0,4,2,1050,3]
+"struct_eigen_1_1internal_1_1scalar__fuzzy__default__impl_3_01_scalar_00_01false_00_01true_01_4.html#a3f6981d578ec5831bab06a632cf331ed":[5,0,4,2,1050,3],
+"struct_eigen_1_1internal_1_1scalar__fuzzy__default__impl_3_01_scalar_00_01false_00_01true_01_4.html#a560f675905d950f17bcf850c3ad17e84":[4,0,7,4,1052,0],
+"struct_eigen_1_1internal_1_1scalar__fuzzy__default__impl_3_01_scalar_00_01false_00_01true_01_4.html#a560f675905d950f17bcf850c3ad17e84":[5,0,4,2,1050,0]
 };

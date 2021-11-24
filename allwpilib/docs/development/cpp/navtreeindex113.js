@@ -1,7 +1,5 @@
 var NAVTREEINDEX113 =
 {
-"group__hal__simdevice.html#ga0be6a1ad887572b47ef84ecb4c8e5d5d":[3,1,24,12],
-"group__hal__simdevice.html#ga10aabdc965263e8fcfa2c10678d40660":[3,1,24,1],
 "group__hal__simdevice.html#ga1331dc441f146dbb42ccc4cb3af54bf4":[3,1,24,13],
 "group__hal__simdevice.html#ga16fbed705d05d3ad30e66facb2947fdd":[3,1,24,2],
 "group__hal__simdevice.html#ga208247d10a836d74ccc9aba2eb5bc51d":[3,1,24,20],
@@ -249,5 +247,7 @@ var NAVTREEINDEX113 =
 "group__ntcore__cpp__api.html#gabefa1316ff1efa7c7bf48d855a8a7ea3":[3,10,7],
 "group__ntcore__cpp__api.html#gga6389efeaed0733f40baa02cd3070a15ca302e56d566a2561033b27c13680ea4b2":[3,10,8,3],
 "group__ntcore__cpp__api.html#gga6389efeaed0733f40baa02cd3070a15ca3b0c09d2d3b86da2330c195889798d72":[3,10,8,6],
-"group__ntcore__cpp__api.html#gga6389efeaed0733f40baa02cd3070a15ca41ba12ed492ce20c3ff503a553ae85ea":[3,10,8,0]
+"group__ntcore__cpp__api.html#gga6389efeaed0733f40baa02cd3070a15ca41ba12ed492ce20c3ff503a553ae85ea":[3,10,8,0],
+"group__ntcore__cpp__api.html#gga6389efeaed0733f40baa02cd3070a15ca57f58630ea0106aa965e5bf61a49d02c":[3,10,8,1],
+"group__ntcore__cpp__api.html#gga6389efeaed0733f40baa02cd3070a15ca6e7af25906963812381b145a083e6492":[3,10,8,8]
 };

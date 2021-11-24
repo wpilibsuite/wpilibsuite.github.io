@@ -1,7 +1,5 @@
 var NAVTREEINDEX164 =
 {
-"structchar__t__impl.html":[5,0,46],
-"structchar__t__impl_3_01_s_00_01enable__if__t_3_01is__string_3_01_s_01_4_1_1value_01_4_01_4.html":[5,0,47],
 "structchar__t__impl_3_01_s_00_01enable__if__t_3_01is__string_3_01_s_01_4_1_1value_01_4_01_4.html#aacf65351860f35619648528929a2217d":[5,0,47,0],
 "structchar__t__impl_3_01_s_00_01enable__if__t_3_01is__string_3_01_s_01_4_1_1value_01_4_01_4.html#aeffb154f81d18f0e473cda2c9e94ed69":[5,0,47,1],
 "structchrono__format__checker.html":[5,0,48],
@@ -249,5 +247,7 @@ var NAVTREEINDEX164 =
 "structdetail_1_1fallback__uintptr.html#a54970cfa9d6c862b450365cb6258cea5":[5,0,1,11,0],
 "structdetail_1_1fallback__uintptr.html#aa801da8a7b2110d75442375f26a0b186":[4,0,3,12,1],
 "structdetail_1_1fallback__uintptr.html#aa801da8a7b2110d75442375f26a0b186":[5,0,1,11,1],
-"structdetail_1_1fixed__handler.html":[5,0,1,12]
+"structdetail_1_1fixed__handler.html":[5,0,1,12],
+"structdetail_1_1fixed__handler.html":[4,0,3,13],
+"structdetail_1_1fixed__handler.html#a10ad7dbb5ca338a1773853047da3b250":[5,0,1,12,0]
 };

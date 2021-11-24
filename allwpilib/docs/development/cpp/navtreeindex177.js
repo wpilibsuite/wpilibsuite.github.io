@@ -1,7 +1,5 @@
 var NAVTREEINDEX177 =
 {
-"win_8h.html#abd001a85744e535b6866d1df88b13e08":[6,0,10,0,0,10,58],
-"win_8h.html#abd41f95695a8171c8a13280b1d8a864e":[6,0,10,0,0,10,81],
 "win_8h.html#ac50762666aa00bd3a4308158510f1748":[6,0,10,0,0,10,12],
 "win_8h.html#ac6b94ce26e9237f4ef05bf956dd8ff2b":[6,0,10,0,0,10,60],
 "win_8h.html#ac829c8548a12616f5e59380f9a7c15df":[6,0,10,0,0,10,82],
@@ -249,5 +247,7 @@ var NAVTREEINDEX177 =
 "wpimath_2src_2main_2native_2include_2units_2_constants_8h.html#a360dd9d7e5172b9305e399d5763a1db2":[6,0,12,10,8],
 "wpimath_2src_2main_2native_2include_2units_2_constants_8h.html#a3cc6ca133a1f041d5eb87411e6494ffe":[6,0,12,10,11],
 "wpimath_2src_2main_2native_2include_2units_2_constants_8h.html#a45315516ed3b8c16f802b3c69269be9e":[6,0,12,10,12],
-"wpimath_2src_2main_2native_2include_2units_2_constants_8h.html#a50afc391c7c2d37a1d0a6baffd90f899":[6,0,12,10,0]
+"wpimath_2src_2main_2native_2include_2units_2_constants_8h.html#a50afc391c7c2d37a1d0a6baffd90f899":[6,0,12,10,0],
+"wpimath_2src_2main_2native_2include_2units_2_constants_8h.html#a88751eee8d448ad7d24121e14fa7582a":[6,0,12,10,6],
+"wpimath_2src_2main_2native_2include_2units_2_constants_8h.html#a8ef157f2a40ed27a0f834847b332eb72":[6,0,12,10,4]
 };

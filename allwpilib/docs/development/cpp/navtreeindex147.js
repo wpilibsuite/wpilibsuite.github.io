@@ -1,7 +1,5 @@
 var NAVTREEINDEX147 =
 {
-"struct_eigen_1_1internal_1_1is__convertible__impl.html#a669ca27d966dcb0c69f2e3bbb15689bd":[4,0,7,4,610,0],
-"struct_eigen_1_1internal_1_1is__convertible__impl.html#a669ca27d966dcb0c69f2e3bbb15689bd":[5,0,4,2,608,0],
 "struct_eigen_1_1internal_1_1is__diagonal.html":[4,0,7,4,611],
 "struct_eigen_1_1internal_1_1is__diagonal.html":[5,0,4,2,609],
 "struct_eigen_1_1internal_1_1is__diagonal_3_01_diagonal_base_3_01_t_01_4_01_4.html":[4,0,7,4,612],
@@ -249,5 +247,7 @@ var NAVTREEINDEX147 =
 "struct_eigen_1_1internal_1_1log1p__impl.html#a3e719f0a9b451449306e3fc93a60cdec":[4,0,7,4,669,0],
 "struct_eigen_1_1internal_1_1log1p__impl.html#a3e719f0a9b451449306e3fc93a60cdec":[5,0,4,2,667,0],
 "struct_eigen_1_1internal_1_1log1p__impl_3_01std_1_1complex_3_01_real_scalar_01_4_01_4.html":[5,0,4,2,668],
-"struct_eigen_1_1internal_1_1log1p__impl_3_01std_1_1complex_3_01_real_scalar_01_4_01_4.html":[4,0,7,4,670]
+"struct_eigen_1_1internal_1_1log1p__impl_3_01std_1_1complex_3_01_real_scalar_01_4_01_4.html":[4,0,7,4,670],
+"struct_eigen_1_1internal_1_1log1p__impl_3_01std_1_1complex_3_01_real_scalar_01_4_01_4.html#afdf60c92332e0463ee10245d0cdc6f05":[5,0,4,2,668,0],
+"struct_eigen_1_1internal_1_1log1p__impl_3_01std_1_1complex_3_01_real_scalar_01_4_01_4.html#afdf60c92332e0463ee10245d0cdc6f05":[4,0,7,4,670,0]
 };

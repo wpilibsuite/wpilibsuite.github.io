@@ -1,7 +1,5 @@
 var NAVTREEINDEX127 =
 {
-"namespacefrc_1_1detail.html#afe898c078f5988633750d70d4e14feff":[4,0,9,0,10],
-"namespacefrc_1_1err.html":[4,0,9,1],
 "namespacefrc_1_1filesystem.html":[4,0,9,2],
 "namespacefrc_1_1filesystem.html#a1e50d6abbff56e325440d1f8405acbcb":[4,0,9,2,0],
 "namespacefrc_1_1filesystem.html#a633e968867d2d64e089fea4e1a8ed2b4":[4,0,9,2,2],
@@ -249,5 +247,7 @@ var NAVTREEINDEX127 =
 "namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9a04f4bd876f98b3ab1095598fcca71975":[4,0,13,14,6],
 "namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9a0edbf6e8f762d9da7dcff85e8cf46db7":[4,0,13,14,26],
 "namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9a14f5eb6cd81b5d77e4b60bfbb3586421":[4,0,13,14,20],
-"namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9a1ce92afa20b1c7f6a4e5d0dc73e5c92a":[4,0,13,14,4]
+"namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9a1ce92afa20b1c7f6a4e5d0dc73e5c92a":[4,0,13,14,4],
+"namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9a22912d4fe610d46be1769655dfdc08a6":[4,0,13,14,24],
+"namespacehal.html#a2e846f89b7ea1bed682347804f2c9cc9a33fd5f6391f2f0cb4c91179d7f521949":[4,0,13,14,22]
 };

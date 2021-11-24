@@ -1,7 +1,5 @@
 var NAVTREEINDEX114 =
 {
-"group__ntcore__cpp__api.html#gga6389efeaed0733f40baa02cd3070a15ca57f58630ea0106aa965e5bf61a49d02c":[3,10,8,1],
-"group__ntcore__cpp__api.html#gga6389efeaed0733f40baa02cd3070a15ca6e7af25906963812381b145a083e6492":[3,10,8,8],
 "group__ntcore__cpp__api.html#gga6389efeaed0733f40baa02cd3070a15ca74a2c02b2ecfbc77d60fa2f37958be6b":[3,10,8,5],
 "group__ntcore__cpp__api.html#gga6389efeaed0733f40baa02cd3070a15ca7fb3efa35444cd88d5a31dc125ca9c28":[3,10,8,2],
 "group__ntcore__cpp__api.html#gga6389efeaed0733f40baa02cd3070a15cab77ee53359ad606360288eaba24142bf":[3,10,8,7],
@@ -249,5 +247,7 @@ var NAVTREEINDEX114 =
 "group__ntcore__valuesetters__cfunc.html":[3,9,9,3],
 "group__ntcore__valuesetters__cfunc.html#ga0cb0f1870887cbab71cd712fe0b2f22a":[3,9,9,3,5],
 "group__ntcore__valuesetters__cfunc.html#ga4241b3336dd976d05d3b679efd68f213":[3,9,9,3,0],
-"group__ntcore__valuesetters__cfunc.html#ga6b4b5303883bf3d784fc7aa8922ab8ad":[3,9,9,3,1]
+"group__ntcore__valuesetters__cfunc.html#ga6b4b5303883bf3d784fc7aa8922ab8ad":[3,9,9,3,1],
+"group__ntcore__valuesetters__cfunc.html#ga8755e7e7edfb2ee133766b437d12f7fb":[3,9,9,3,6],
+"group__ntcore__valuesetters__cfunc.html#ga8e17f345bf4191a95ffde5ab0fe390b8":[3,9,9,3,2]
 };

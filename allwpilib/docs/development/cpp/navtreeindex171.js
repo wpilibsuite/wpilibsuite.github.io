@@ -1,7 +1,5 @@
 var NAVTREEINDEX171 =
 {
-"structwpi_1_1_scoped_fatal_error_handler.html#a5a1e31ebc880befdb69fef75d46c8789":[4,0,20,142,1],
-"structwpi_1_1_scoped_fatal_error_handler.html#a5a1e31ebc880befdb69fef75d46c8789":[5,0,13,140,1],
 "structwpi_1_1_scoped_fatal_error_handler.html#aebd86fe2096e557da0e16dc5677a9906":[4,0,20,142,0],
 "structwpi_1_1_scoped_fatal_error_handler.html#aebd86fe2096e557da0e16dc5677a9906":[5,0,13,140,0],
 "structwpi_1_1_sendable_registry_1_1_callback_data.html":[4,0,20,146,0],
@@ -249,5 +247,7 @@ var NAVTREEINDEX171 =
 "structwpi_1_1detail_1_1has__to__json.html#a2175507386e91c3671ed1feddf0b9c8a":[4,0,20,0,22,0],
 "structwpi_1_1detail_1_1has__to__json.html#a2175507386e91c3671ed1feddf0b9c8a":[5,0,13,0,22,0],
 "structwpi_1_1detail_1_1internal__iterator.html":[4,0,20,0,25],
-"structwpi_1_1detail_1_1internal__iterator.html":[5,0,13,0,25]
+"structwpi_1_1detail_1_1internal__iterator.html":[5,0,13,0,25],
+"structwpi_1_1detail_1_1internal__iterator.html#a0b089e9e27dfe2ec92c298e945bf928d":[5,0,13,0,25,2],
+"structwpi_1_1detail_1_1internal__iterator.html#a0b089e9e27dfe2ec92c298e945bf928d":[4,0,20,0,25,2]
 };

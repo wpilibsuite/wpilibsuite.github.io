@@ -1,7 +1,5 @@
 var NAVTREEINDEX134 =
 {
-"struct_eigen_1_1_num_traits_3_01_array_3_01_scalar_00_01_rows_00_01_cols_00_01_options_00_01_max_rows_00_01_max_cols_01_4_01_4.html#a2424310bbf6d8d20521d6a8c79324981":[5,0,4,120,2],
-"struct_eigen_1_1_num_traits_3_01_array_3_01_scalar_00_01_rows_00_01_cols_00_01_options_00_01_max_rows_00_01_max_cols_01_4_01_4.html#a4724a5585f6b9bb8b5b3bdce7de6f3bd":[5,0,4,120,4],
 "struct_eigen_1_1_num_traits_3_01_array_3_01_scalar_00_01_rows_00_01_cols_00_01_options_00_01_max_rows_00_01_max_cols_01_4_01_4.html#a4724a5585f6b9bb8b5b3bdce7de6f3bd":[4,0,7,123,4],
 "struct_eigen_1_1_num_traits_3_01_array_3_01_scalar_00_01_rows_00_01_cols_00_01_options_00_01_max_rows_00_01_max_cols_01_4_01_4.html#a4b36f130a9f51f5012d2630ca70431d7":[5,0,4,120,5],
 "struct_eigen_1_1_num_traits_3_01_array_3_01_scalar_00_01_rows_00_01_cols_00_01_options_00_01_max_rows_00_01_max_cols_01_4_01_4.html#a4b36f130a9f51f5012d2630ca70431d7":[4,0,7,123,5],
@@ -249,5 +247,7 @@ var NAVTREEINDEX134 =
 "struct_eigen_1_1half__impl_1_1____half__raw.html#a75c6435aaa367f7b9b7cddd9f9981c09":[5,0,4,1,0,2],
 "struct_eigen_1_1half__impl_1_1____half__raw.html#a75c6435aaa367f7b9b7cddd9f9981c09":[4,0,7,2,0,2],
 "struct_eigen_1_1half__impl_1_1____half__raw.html#ab175d4a6bd3e1d9eb94b9741cb7c8d03":[5,0,4,1,0,0],
-"struct_eigen_1_1half__impl_1_1____half__raw.html#ab175d4a6bd3e1d9eb94b9741cb7c8d03":[4,0,7,2,0,0]
+"struct_eigen_1_1half__impl_1_1____half__raw.html#ab175d4a6bd3e1d9eb94b9741cb7c8d03":[4,0,7,2,0,0],
+"struct_eigen_1_1half__impl_1_1half__base.html":[5,0,4,1,2],
+"struct_eigen_1_1half__impl_1_1half__base.html":[4,0,7,2,2]
 };

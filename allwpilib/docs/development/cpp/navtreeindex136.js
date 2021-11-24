@@ -1,7 +1,5 @@
 var NAVTREEINDEX136 =
 {
-"struct_eigen_1_1internal_1_1_hessenberg_decomposition_matrix_h_return_type.html#a7f1d84113072d2d2e507d3821ff9f15c":[3,26,0,2],
-"struct_eigen_1_1internal_1_1_hessenberg_decomposition_matrix_h_return_type.html#aa6d46d84c1343c964c50457ca4ddf9fa":[3,26,0,0],
 "struct_eigen_1_1internal_1_1_hessenberg_decomposition_matrix_h_return_type.html#accffcc918345d174926e679a82e371e7":[3,26,0,4],
 "struct_eigen_1_1internal_1_1_hessenberg_decomposition_matrix_h_return_type.html#ad0a6e19c33a4feb42b7ced19ea9aa28b":[3,26,0,3],
 "struct_eigen_1_1internal_1_1_householder_sequence_shape.html":[5,0,4,2,534],
@@ -249,5 +247,7 @@ var NAVTREEINDEX136 =
 "struct_eigen_1_1internal_1_1abs__knowing__score.html#a5e8bf72072f7610591df4e9b6eaf25a5":[4,0,7,4,6,0],
 "struct_eigen_1_1internal_1_1abs__knowing__score.html#a5e8bf72072f7610591df4e9b6eaf25a5":[5,0,4,2,4,0],
 "struct_eigen_1_1internal_1_1abs__knowing__score.html#ae43aa25e52af13ab934224535a1606e2":[5,0,4,2,4,1],
-"struct_eigen_1_1internal_1_1abs__knowing__score.html#ae43aa25e52af13ab934224535a1606e2":[4,0,7,4,6,1]
+"struct_eigen_1_1internal_1_1abs__knowing__score.html#ae43aa25e52af13ab934224535a1606e2":[4,0,7,4,6,1],
+"struct_eigen_1_1internal_1_1abs__knowing__score_3_01_scalar_00_01typename_01scalar__score__coeff5c3b449f8772ed2666062ac71b9807cd.html":[4,0,7,4,7],
+"struct_eigen_1_1internal_1_1abs__knowing__score_3_01_scalar_00_01typename_01scalar__score__coeff5c3b449f8772ed2666062ac71b9807cd.html":[5,0,4,2,5]
 };

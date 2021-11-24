@@ -1,7 +1,6 @@
 var classfrc_1_1_power_distribution =
 [
     [ "ModuleType", "classfrc_1_1_power_distribution.html#a3f8cf3a17c7112e56bec6ebcb44147d6", [
-      [ "kAutomatic", "classfrc_1_1_power_distribution.html#a3f8cf3a17c7112e56bec6ebcb44147d6a0edd03ba1f5a73f26d1fd764255ddaa1", null ],
       [ "kCTRE", "classfrc_1_1_power_distribution.html#a3f8cf3a17c7112e56bec6ebcb44147d6a2efa3163ad264f03ef4855a019acceb8", null ],
       [ "kRev", "classfrc_1_1_power_distribution.html#a3f8cf3a17c7112e56bec6ebcb44147d6ab4c84bd235b56aed0c84442004bf3928", null ]
     ] ],

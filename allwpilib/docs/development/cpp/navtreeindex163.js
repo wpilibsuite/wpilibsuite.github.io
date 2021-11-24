@@ -1,7 +1,5 @@
 var NAVTREEINDEX163 =
 {
-"struct_h_a_l___d_m_a_sample.html#a8a3bc3bcf128247b72b280bae7cb1d5c":[3,1,23,0,2],
-"struct_h_a_l___d_m_a_sample.html#af6b614251f68cd8bfebd5416a884b712":[3,1,23,0,0],
 "struct_h_a_l___joystick_axes.html":[3,1,15,1],
 "struct_h_a_l___joystick_axes.html#ac0601f26133aad58e9ef4dadf146de6d":[3,1,15,1,1],
 "struct_h_a_l___joystick_axes.html#ae17b86ab52dea8557afcde52a10af779":[3,1,15,1,0],
@@ -249,5 +247,7 @@ var NAVTREEINDEX163 =
 "structbuffer__traits.html":[5,0,41],
 "structbuffer__traits.html#a5893f2bf793dec2d447df77b896401fa":[5,0,41,0],
 "structbuffer__traits.html#ad77608ed99030b7058f3abf5c2cc0d1e":[5,0,41,2],
-"structbuffer__traits.html#aeed28e01e909034205ab15e5b02441f3":[5,0,41,1]
+"structbuffer__traits.html#aeed28e01e909034205ab15e5b02441f3":[5,0,41,1],
+"structchar__t__impl.html":[5,0,46],
+"structchar__t__impl_3_01_s_00_01enable__if__t_3_01is__string_3_01_s_01_4_1_1value_01_4_01_4.html":[5,0,47]
 };

@@ -1,7 +1,5 @@
 var NAVTREEINDEX170 =
 {
-"structwpi_1_1_dense_map_info_3_01_t_01_5_01_4.html#a06273ac0f53d7d6f193b52038c102e56":[5,0,13,40,0],
-"structwpi_1_1_dense_map_info_3_01_t_01_5_01_4.html#a06273ac0f53d7d6f193b52038c102e56":[4,0,20,42,0],
 "structwpi_1_1_dense_map_info_3_01_t_01_5_01_4.html#a93fcfb7658b14911bb7252790f6d4a6f":[5,0,13,40,1],
 "structwpi_1_1_dense_map_info_3_01_t_01_5_01_4.html#a93fcfb7658b14911bb7252790f6d4a6f":[4,0,20,42,1],
 "structwpi_1_1_dense_map_info_3_01_t_01_5_01_4.html#a9a0feb452d8c6761a789bd5ffd388983":[4,0,20,42,3],
@@ -249,5 +247,7 @@ var NAVTREEINDEX170 =
 "structwpi_1_1_round_up_to_power_of_two_h_3_01_n_00_01false_01_4.html":[4,0,20,139],
 "structwpi_1_1_round_up_to_power_of_two_h_3_01_n_00_01false_01_4.html":[5,0,13,137],
 "structwpi_1_1_scoped_fatal_error_handler.html":[4,0,20,142],
-"structwpi_1_1_scoped_fatal_error_handler.html":[5,0,13,140]
+"structwpi_1_1_scoped_fatal_error_handler.html":[5,0,13,140],
+"structwpi_1_1_scoped_fatal_error_handler.html#a5a1e31ebc880befdb69fef75d46c8789":[4,0,20,142,1],
+"structwpi_1_1_scoped_fatal_error_handler.html#a5a1e31ebc880befdb69fef75d46c8789":[5,0,13,140,1]
 };
