@@ -1,5 +1,7 @@
 var NAVTREEINDEX21 =
 {
+"_xbox_controller_8h.html":[6,0,5,85],
+"_xbox_controller_8h_source.html":[6,0,5,85],
 "_xbox_controller_sim_8h.html":[6,0,5,6,36],
 "_xbox_controller_sim_8h_source.html":[6,0,5,6,36],
 "_xpr_helper_8h.html":[6,0,3,0,0,1,3,14],
@@ -242,12 +244,10 @@ var NAVTREEINDEX21 =
 "circular__buffer_8h.html":[6,0,14,10],
 "circular__buffer_8h_source.html":[6,0,14,10],
 "circular__buffer_8inc.html":[6,0,14,11],
-"class_eigen_1_1_aligned_box.html":[5,0,4,7],
 "class_eigen_1_1_aligned_box.html":[4,0,7,10],
+"class_eigen_1_1_aligned_box.html":[5,0,4,7],
 "class_eigen_1_1_angle_axis.html":[4,0,7,11],
 "class_eigen_1_1_angle_axis.html":[5,0,4,8],
 "class_eigen_1_1_arithmetic_sequence.html":[3,30,43],
-"class_eigen_1_1_arithmetic_sequence.html#a0a2723ed514e5eaababd1c09fe1d61ae":[3,30,43,13],
-"class_eigen_1_1_arithmetic_sequence.html#a112698202b3718706f2cdfefc706df8a":[3,30,43,10],
-"class_eigen_1_1_arithmetic_sequence.html#a2709b0a6a10bbb742e0f6880823fa330":[3,30,43,12]
+"class_eigen_1_1_arithmetic_sequence.html#a0a2723ed514e5eaababd1c09fe1d61ae":[3,30,43,13]
 };

@@ -2800,6 +2800,7 @@ var hierarchy =
       ] ],
       [ "frc::AnalogTrigger", "classfrc_1_1_analog_trigger.html", null ],
       [ "frc::AnalogTriggerOutput", "classfrc_1_1_analog_trigger_output.html", null ],
+      [ "frc::BangBangController", "classfrc_1_1_bang_bang_controller.html", null ],
       [ "frc::BuiltInAccelerometer", "classfrc_1_1_built_in_accelerometer.html", null ],
       [ "frc::Command", "classfrc_1_1_command.html", [
         [ "frc::CommandGroup", "classfrc_1_1_command_group.html", null ],
@@ -2912,6 +2913,9 @@ var hierarchy =
     ] ],
     [ "wpi::SendableHelper< AnalogTriggerOutput >", "classwpi_1_1_sendable_helper.html", [
       [ "frc::AnalogTriggerOutput", "classfrc_1_1_analog_trigger_output.html", null ]
+    ] ],
+    [ "wpi::SendableHelper< BangBangController >", "classwpi_1_1_sendable_helper.html", [
+      [ "frc::BangBangController", "classfrc_1_1_bang_bang_controller.html", null ]
     ] ],
     [ "wpi::SendableHelper< BuiltInAccelerometer >", "classwpi_1_1_sendable_helper.html", [
       [ "frc::BuiltInAccelerometer", "classfrc_1_1_built_in_accelerometer.html", null ]

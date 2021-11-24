@@ -1825,6 +1825,7 @@ var annotated_dup =
       [ "AnalogTriggerOutput", "classfrc_1_1_analog_trigger_output.html", "classfrc_1_1_analog_trigger_output" ],
       [ "ArmFeedforward", "classfrc_1_1_arm_feedforward.html", "classfrc_1_1_arm_feedforward" ],
       [ "AsynchronousInterrupt", "classfrc_1_1_asynchronous_interrupt.html", "classfrc_1_1_asynchronous_interrupt" ],
+      [ "BangBangController", "classfrc_1_1_bang_bang_controller.html", "classfrc_1_1_bang_bang_controller" ],
       [ "BuiltInAccelerometer", "classfrc_1_1_built_in_accelerometer.html", "classfrc_1_1_built_in_accelerometer" ],
       [ "Button", "classfrc_1_1_button.html", "classfrc_1_1_button" ],
       [ "ButtonScheduler", "classfrc_1_1_button_scheduler.html", "classfrc_1_1_button_scheduler" ],

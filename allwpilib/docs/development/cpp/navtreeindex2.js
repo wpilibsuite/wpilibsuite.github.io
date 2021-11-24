@@ -247,7 +247,7 @@ var NAVTREEINDEX2 =
 "_b_float16_8h_source.html":[6,0,3,0,0,1,0,1,0],
 "_band_matrix_8h.html":[6,0,3,0,0,1,10],
 "_band_matrix_8h_source.html":[6,0,3,0,0,1,10],
-"_base64_8h.html":[6,0,14,7],
-"_base64_8h.html#a1b3dba60397b9cada557c0d71c05b62f":[6,0,14,7,7],
-"_base64_8h.html#a4351dc23f99c30ed993190988f3da889":[6,0,14,7,10]
+"_bang_bang_controller_8h.html":[6,0,7,0,1],
+"_bang_bang_controller_8h_source.html":[6,0,7,0,1],
+"_base64_8h.html":[6,0,14,7]
 };

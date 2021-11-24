@@ -1,5 +1,7 @@
 var NAVTREEINDEX3 =
 {
+"_base64_8h.html#a1b3dba60397b9cada557c0d71c05b62f":[6,0,14,7,7],
+"_base64_8h.html#a4351dc23f99c30ed993190988f3da889":[6,0,14,7,10],
 "_base64_8h.html#a46c4d7b36efb76fd101c8cd219c9bdb8":[6,0,14,7,4],
 "_base64_8h.html#a54a2cf06e04019f9efafca5db093ef85":[6,0,14,7,2],
 "_base64_8h.html#a762ff79f9bb32d72681ecbc27f84fea6":[6,0,14,7,8],
@@ -247,7 +249,5 @@ var NAVTREEINDEX3 =
 "_chip_object_8h.html":[6,0,9,15],
 "_chip_object_8h_source.html":[6,0,9,15],
 "_cholesky.html":[6,0,3,0,1],
-"_cholesky.html#aecbb92aec43cdd0b1123310806e57b00":[6,0,3,0,1,0],
-"_col_piv_householder_q_r_8h.html":[6,0,3,0,0,8,0],
-"_col_piv_householder_q_r_8h_source.html":[6,0,3,0,0,8,0]
+"_cholesky.html#aecbb92aec43cdd0b1123310806e57b00":[6,0,3,0,1,0]
 };

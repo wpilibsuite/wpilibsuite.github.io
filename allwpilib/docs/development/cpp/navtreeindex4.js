@@ -1,5 +1,7 @@
 var NAVTREEINDEX4 =
 {
+"_col_piv_householder_q_r_8h.html":[6,0,3,0,0,8,0],
+"_col_piv_householder_q_r_8h_source.html":[6,0,3,0,0,8,0],
 "_color8_bit_8h.html":[6,0,5,8,1],
 "_color8_bit_8h.html#af23e0d617ddcb6f8eb3dad37e179086f":[6,0,5,8,1,1],
 "_color8_bit_8h_source.html":[6,0,5,8,1],
@@ -123,8 +125,8 @@ var NAVTREEINDEX4 =
 "_conj_helper_8h.html":[6,0,3,0,0,1,0,1,1],
 "_conj_helper_8h.html#a5d280610f8422e6d287362bd57e0c837":[6,0,3,0,0,1,0,1,1,6],
 "_conj_helper_8h_source.html":[6,0,3,0,0,1,0,1,1],
-"_control_affine_plant_inversion_feedforward_8h.html":[6,0,7,0,1],
-"_control_affine_plant_inversion_feedforward_8h_source.html":[6,0,7,0,1],
+"_control_affine_plant_inversion_feedforward_8h.html":[6,0,7,0,2],
+"_control_affine_plant_inversion_feedforward_8h_source.html":[6,0,7,0,2],
 "_controller_8h.html":[6,0,5,28],
 "_controller_8h_source.html":[6,0,5,28],
 "_convert_u_t_f_8h.html":[6,0,14,15],
@@ -247,7 +249,5 @@ var NAVTREEINDEX4 =
 "_dense_map_8h_source.html":[6,0,14,17],
 "_dense_map_info_8h.html":[6,0,14,18],
 "_dense_map_info_8h_source.html":[6,0,14,18],
-"_dense_storage_8h.html":[6,0,3,0,0,1,24],
-"_dense_storage_8h.html#a0f7142ecdc385ba5e9dcf80f996c2e25":[6,0,3,0,0,1,24,21],
-"_dense_storage_8h.html#a45e68b364df58c08174d828c064a5b89":[6,0,3,0,0,1,24,20]
+"_dense_storage_8h.html":[6,0,3,0,0,1,24]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX8 =
 {
+"_hashing_8h.html#a05c9062372910aace422924b08ccc1fa":[6,0,14,31,33],
+"_hashing_8h.html#a1e332b41c41dab4c3c89aac1c84f5601":[6,0,14,31,14],
 "_hashing_8h.html#a26c1390b275d6080f5136db6cc67f76a":[6,0,14,31,20],
 "_hashing_8h.html#a2acecc42600e73f0064b6f513ead6aa2":[6,0,14,31,8],
 "_hashing_8h.html#a47151083519c05148a589a9c1c5ba63e":[6,0,14,31,12],
@@ -33,8 +35,8 @@ var NAVTREEINDEX8 =
 "_held_button_scheduler_8h_source.html":[6,0,6,0,3],
 "_hessenberg_decomposition_8h.html":[6,0,3,0,0,2,5],
 "_hessenberg_decomposition_8h_source.html":[6,0,3,0,0,2,5],
-"_holonomic_drive_controller_8h.html":[6,0,7,0,3],
-"_holonomic_drive_controller_8h_source.html":[6,0,7,0,3],
+"_holonomic_drive_controller_8h.html":[6,0,7,0,4],
+"_holonomic_drive_controller_8h_source.html":[6,0,7,0,4],
 "_householder.html":[6,0,3,0,4],
 "_householder.html#ad9787d843c48e739029389b36afab402":[6,0,3,0,4,0],
 "_householder_8h.html":[6,0,3,0,0,3,1],
@@ -185,10 +187,10 @@ var NAVTREEINDEX8 =
 "_limited_handle_resource_8h_source.html":[6,0,9,1,5],
 "_linear_filter_8h.html":[6,0,7,2,0],
 "_linear_filter_8h_source.html":[6,0,7,2,0],
-"_linear_plant_inversion_feedforward_8h.html":[6,0,7,0,4],
-"_linear_plant_inversion_feedforward_8h_source.html":[6,0,7,0,4],
-"_linear_quadratic_regulator_8h.html":[6,0,7,0,5],
-"_linear_quadratic_regulator_8h_source.html":[6,0,7,0,5],
+"_linear_plant_inversion_feedforward_8h.html":[6,0,7,0,5],
+"_linear_plant_inversion_feedforward_8h_source.html":[6,0,7,0,5],
+"_linear_quadratic_regulator_8h.html":[6,0,7,0,6],
+"_linear_quadratic_regulator_8h_source.html":[6,0,7,0,6],
 "_linear_system_8h.html":[6,0,7,7,2],
 "_linear_system_8h_source.html":[6,0,7,7,2],
 "_linear_system_id_8h.html":[6,0,7,7,0,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX8 =
 "_macros_8h.html#a23fafe2bd4e27ecadab4deb95691bcf4":[6,0,3,0,0,1,3,7,44],
 "_macros_8h.html#a25f979bbb7bb48bdd9486d46c53f461a":[6,0,3,0,0,1,3,7,141],
 "_macros_8h.html#a2a07ba221d47a7d636fd13678c8c75b3":[6,0,3,0,0,1,3,7,131],
-"_macros_8h.html#a2e5d5054c3dfcf7642af8bf98e917d67":[6,0,3,0,0,1,3,7,59],
-"_macros_8h.html#a2f930d4106c741795c4c291bd57ff672":[6,0,3,0,0,1,3,7,19],
-"_macros_8h.html#a30b0ae667a0abd9a1dfb6e81fd3a7743":[6,0,3,0,0,1,3,7,53]
+"_macros_8h.html#a2e5d5054c3dfcf7642af8bf98e917d67":[6,0,3,0,0,1,3,7,59]
 };
