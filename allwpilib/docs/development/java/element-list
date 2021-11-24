@@ -33,6 +33,7 @@ edu.wpi.first.wpilibj.drive
 edu.wpi.first.wpilibj.interfaces
 edu.wpi.first.wpilibj.livewindow
 edu.wpi.first.wpilibj.motorcontrol
+edu.wpi.first.wpilibj.pidwrappers
 edu.wpi.first.wpilibj.shuffleboard
 edu.wpi.first.wpilibj.simulation
 edu.wpi.first.wpilibj.smartdashboard
