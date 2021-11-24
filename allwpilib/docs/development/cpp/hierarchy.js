@@ -586,7 +586,9 @@ var hierarchy =
     [ "Eigen::internal::member_redux< BinaryOpT, Scalar >::Cost< Size >", "struct_eigen_1_1internal_1_1member__redux_1_1_cost.html", null ],
     [ "frc::CounterBase", "classfrc_1_1_counter_base.html", [
       [ "frc::Counter", "classfrc_1_1_counter.html", null ],
-      [ "frc::Encoder", "classfrc_1_1_encoder.html", null ]
+      [ "frc::Encoder", "classfrc_1_1_encoder.html", [
+        [ "frc::PIDEncoder", "classfrc_1_1_p_i_d_encoder.html", null ]
+      ] ]
     ] ],
     [ "detail::counting_iterator", "classdetail_1_1counting__iterator.html", null ],
     [ "Eigen::Cross< Lhs, Rhs >", "class_eigen_1_1_cross.html", null ],
@@ -1511,7 +1513,9 @@ var hierarchy =
     [ "Eigen::internal::glue_shapes< DenseShape, TriangularShape >", "struct_eigen_1_1internal_1_1glue__shapes_3_01_dense_shape_00_01_triangular_shape_01_4.html", null ],
     [ "frc::Gyro", "classfrc_1_1_gyro.html", [
       [ "frc::ADXRS450_Gyro", "classfrc_1_1_a_d_x_r_s450___gyro.html", null ],
-      [ "frc::AnalogGyro", "classfrc_1_1_analog_gyro.html", null ]
+      [ "frc::AnalogGyro", "classfrc_1_1_analog_gyro.html", [
+        [ "frc::PIDAnalogGyro", "classfrc_1_1_p_i_d_analog_gyro.html", null ]
+      ] ]
     ] ],
     [ "HAL_AddressableLEDData", "struct_h_a_l___addressable_l_e_d_data.html", [
       [ "frc::AddressableLED::LEDData", "classfrc_1_1_addressable_l_e_d_1_1_l_e_d_data.html", null ]
@@ -2247,11 +2251,18 @@ var hierarchy =
     [ "frc::PIDOutput", "classfrc_1_1_p_i_d_output.html", [
       [ "frc::PIDBase", "classfrc_1_1_p_i_d_base.html", null ],
       [ "frc::PIDCommand", "classfrc_1_1_p_i_d_command.html", null ],
+      [ "frc::PIDMotorController", "classfrc_1_1_p_i_d_motor_controller.html", null ],
       [ "frc::PIDSubsystem", "classfrc_1_1_p_i_d_subsystem.html", null ]
     ] ],
     [ "frc::PIDSource", "classfrc_1_1_p_i_d_source.html", [
+      [ "frc::PIDAnalogAccelerometer", "classfrc_1_1_p_i_d_analog_accelerometer.html", null ],
+      [ "frc::PIDAnalogGyro", "classfrc_1_1_p_i_d_analog_gyro.html", null ],
+      [ "frc::PIDAnalogInput", "classfrc_1_1_p_i_d_analog_input.html", null ],
+      [ "frc::PIDAnalogPotentiometer", "classfrc_1_1_p_i_d_analog_potentiometer.html", null ],
       [ "frc::PIDCommand", "classfrc_1_1_p_i_d_command.html", null ],
-      [ "frc::PIDSubsystem", "classfrc_1_1_p_i_d_subsystem.html", null ]
+      [ "frc::PIDEncoder", "classfrc_1_1_p_i_d_encoder.html", null ],
+      [ "frc::PIDSubsystem", "classfrc_1_1_p_i_d_subsystem.html", null ],
+      [ "frc::PIDUltrasonic", "classfrc_1_1_p_i_d_ultrasonic.html", null ]
     ] ],
     [ "Eigen::internal::plain_array< T, Size, MatrixOrArrayOptions, Alignment >", "struct_eigen_1_1internal_1_1plain__array.html", null ],
     [ "Eigen::internal::plain_array< T, 0, MatrixOrArrayOptions, Alignment >", "struct_eigen_1_1internal_1_1plain__array_3_01_t_00_010_00_01_matrix_or_array_options_00_01_alignment_01_4.html", null ],
@@ -2775,12 +2786,18 @@ var hierarchy =
         [ "frc2::TrapezoidProfileSubsystem< Distance >", "classfrc2_1_1_trapezoid_profile_subsystem.html", null ]
       ] ],
       [ "frc::ADXRS450_Gyro", "classfrc_1_1_a_d_x_r_s450___gyro.html", null ],
-      [ "frc::AnalogAccelerometer", "classfrc_1_1_analog_accelerometer.html", null ],
+      [ "frc::AnalogAccelerometer", "classfrc_1_1_analog_accelerometer.html", [
+        [ "frc::PIDAnalogAccelerometer", "classfrc_1_1_p_i_d_analog_accelerometer.html", null ]
+      ] ],
       [ "frc::AnalogEncoder", "classfrc_1_1_analog_encoder.html", null ],
       [ "frc::AnalogGyro", "classfrc_1_1_analog_gyro.html", null ],
-      [ "frc::AnalogInput", "classfrc_1_1_analog_input.html", null ],
+      [ "frc::AnalogInput", "classfrc_1_1_analog_input.html", [
+        [ "frc::PIDAnalogInput", "classfrc_1_1_p_i_d_analog_input.html", null ]
+      ] ],
       [ "frc::AnalogOutput", "classfrc_1_1_analog_output.html", null ],
-      [ "frc::AnalogPotentiometer", "classfrc_1_1_analog_potentiometer.html", null ],
+      [ "frc::AnalogPotentiometer", "classfrc_1_1_analog_potentiometer.html", [
+        [ "frc::PIDAnalogPotentiometer", "classfrc_1_1_p_i_d_analog_potentiometer.html", null ]
+      ] ],
       [ "frc::AnalogTrigger", "classfrc_1_1_analog_trigger.html", null ],
       [ "frc::AnalogTriggerOutput", "classfrc_1_1_analog_trigger_output.html", null ],
       [ "frc::BuiltInAccelerometer", "classfrc_1_1_built_in_accelerometer.html", null ],
@@ -2808,11 +2825,13 @@ var hierarchy =
       [ "frc::DutyCycle", "classfrc_1_1_duty_cycle.html", null ],
       [ "frc::DutyCycleEncoder", "classfrc_1_1_duty_cycle_encoder.html", null ],
       [ "frc::Encoder", "classfrc_1_1_encoder.html", null ],
+      [ "frc::ExternalDirectionCounter", "classfrc_1_1_external_direction_counter.html", null ],
       [ "frc::KilloughDrive", "classfrc_1_1_killough_drive.html", null ],
       [ "frc::MecanumDrive", "classfrc_1_1_mecanum_drive.html", null ],
       [ "frc::MotorControllerGroup", "classfrc_1_1_motor_controller_group.html", null ],
       [ "frc::NidecBrushless", "classfrc_1_1_nidec_brushless.html", null ],
       [ "frc::PIDBase", "classfrc_1_1_p_i_d_base.html", null ],
+      [ "frc::PIDMotorController", "classfrc_1_1_p_i_d_motor_controller.html", null ],
       [ "frc::PWM", "classfrc_1_1_p_w_m.html", [
         [ "frc::Servo", "classfrc_1_1_servo.html", null ]
       ] ],
@@ -2826,6 +2845,7 @@ var hierarchy =
       [ "frc::Subsystem", "classfrc_1_1_subsystem.html", [
         [ "frc::PIDSubsystem", "classfrc_1_1_p_i_d_subsystem.html", null ]
       ] ],
+      [ "frc::Tachometer", "classfrc_1_1_tachometer.html", null ],
       [ "frc::Trigger", "classfrc_1_1_trigger.html", [
         [ "frc::Button", "classfrc_1_1_button.html", [
           [ "frc::InternalButton", "classfrc_1_1_internal_button.html", null ],
@@ -2834,7 +2854,10 @@ var hierarchy =
           [ "frc::POVButton", "classfrc_1_1_p_o_v_button.html", null ]
         ] ]
       ] ],
-      [ "frc::Ultrasonic", "classfrc_1_1_ultrasonic.html", null ],
+      [ "frc::Ultrasonic", "classfrc_1_1_ultrasonic.html", [
+        [ "frc::PIDUltrasonic", "classfrc_1_1_p_i_d_ultrasonic.html", null ]
+      ] ],
+      [ "frc::UpDownCounter", "classfrc_1_1_up_down_counter.html", null ],
       [ "nt::NTSendable", "classnt_1_1_n_t_sendable.html", [
         [ "frc2::CommandScheduler", "classfrc2_1_1_command_scheduler.html", null ],
         [ "frc::ADXL345_I2C", "classfrc_1_1_a_d_x_l345___i2_c.html", null ],
@@ -2932,6 +2955,9 @@ var hierarchy =
     [ "wpi::SendableHelper< Encoder >", "classwpi_1_1_sendable_helper.html", [
       [ "frc::Encoder", "classfrc_1_1_encoder.html", null ]
     ] ],
+    [ "wpi::SendableHelper< ExternalDirectionCounter >", "classwpi_1_1_sendable_helper.html", [
+      [ "frc::ExternalDirectionCounter", "classfrc_1_1_external_direction_counter.html", null ]
+    ] ],
     [ "wpi::SendableHelper< Field2d >", "classwpi_1_1_sendable_helper.html", [
       [ "frc::Field2d", "classfrc_1_1_field2d.html", null ]
     ] ],
@@ -2992,11 +3018,17 @@ var hierarchy =
     [ "wpi::SendableHelper< SubsystemBase >", "classwpi_1_1_sendable_helper.html", [
       [ "frc2::SubsystemBase", "classfrc2_1_1_subsystem_base.html", null ]
     ] ],
+    [ "wpi::SendableHelper< Tachometer >", "classwpi_1_1_sendable_helper.html", [
+      [ "frc::Tachometer", "classfrc_1_1_tachometer.html", null ]
+    ] ],
     [ "wpi::SendableHelper< Trigger >", "classwpi_1_1_sendable_helper.html", [
       [ "frc::Trigger", "classfrc_1_1_trigger.html", null ]
     ] ],
     [ "wpi::SendableHelper< Ultrasonic >", "classwpi_1_1_sendable_helper.html", [
       [ "frc::Ultrasonic", "classfrc_1_1_ultrasonic.html", null ]
+    ] ],
+    [ "wpi::SendableHelper< UpDownCounter >", "classwpi_1_1_sendable_helper.html", [
+      [ "frc::UpDownCounter", "classfrc_1_1_up_down_counter.html", null ]
     ] ],
     [ "wpi::SendableRegistry", "classwpi_1_1_sendable_registry.html", null ],
     [ "frc::SensorUtil", "classfrc_1_1_sensor_util.html", null ],
@@ -3132,6 +3164,7 @@ var hierarchy =
       [ "frc::MotorController", "classfrc_1_1_motor_controller.html", [
         [ "frc::MotorControllerGroup", "classfrc_1_1_motor_controller_group.html", null ],
         [ "frc::NidecBrushless", "classfrc_1_1_nidec_brushless.html", null ],
+        [ "frc::PIDMotorController", "classfrc_1_1_p_i_d_motor_controller.html", null ],
         [ "frc::PWMMotorController", "classfrc_1_1_p_w_m_motor_controller.html", null ],
         [ "frc::SpeedControllerGroup", "classfrc_1_1_speed_controller_group.html", null ]
       ] ]

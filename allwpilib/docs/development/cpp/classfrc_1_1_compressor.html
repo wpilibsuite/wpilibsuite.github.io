@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2-8-ga993122</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2-11-g3aa54fa</span>
    </div>
   </td>
  </tr>
@@ -143,15 +143,23 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a06ae308102dae55c994b4a57f8079dd8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_compressor.html#a06ae308102dae55c994b4a57f8079dd8">GetPressureSwitchValue</a> () const</td></tr>
 <tr class="memdesc:a06ae308102dae55c994b4a57f8079dd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the pressure switch is triggered.  <a href="classfrc_1_1_compressor.html#a06ae308102dae55c994b4a57f8079dd8">More...</a><br /></td></tr>
 <tr class="separator:a06ae308102dae55c994b4a57f8079dd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f8cb85389b09d01a4f9cb069266e100"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_compressor.html#a3f8cb85389b09d01a4f9cb069266e100">GetCompressorCurrent</a> () const</td></tr>
-<tr class="memdesc:a3f8cb85389b09d01a4f9cb069266e100"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query how much current the compressor is drawing.  <a href="classfrc_1_1_compressor.html#a3f8cb85389b09d01a4f9cb069266e100">More...</a><br /></td></tr>
-<tr class="separator:a3f8cb85389b09d01a4f9cb069266e100"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8d8008aac0ab4ee20d860f36265cee0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_compressor.html#ad8d8008aac0ab4ee20d860f36265cee0">SetClosedLoopControl</a> (bool on)</td></tr>
-<tr class="memdesc:ad8d8008aac0ab4ee20d860f36265cee0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables automatically turning the compressor on when the pressure is low.  <a href="classfrc_1_1_compressor.html#ad8d8008aac0ab4ee20d860f36265cee0">More...</a><br /></td></tr>
-<tr class="separator:ad8d8008aac0ab4ee20d860f36265cee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e4a22bdcb62c60840100e723ddf2aa3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_compressor.html#a3e4a22bdcb62c60840100e723ddf2aa3">GetClosedLoopControl</a> () const</td></tr>
-<tr class="memdesc:a3e4a22bdcb62c60840100e723ddf2aa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the compressor will automatically turn on when the pressure is low.  <a href="classfrc_1_1_compressor.html#a3e4a22bdcb62c60840100e723ddf2aa3">More...</a><br /></td></tr>
-<tr class="separator:a3e4a22bdcb62c60840100e723ddf2aa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d0165e21a3745f281142e60d5824028"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_compressor.html#a5d0165e21a3745f281142e60d5824028">GetCurrent</a> () const</td></tr>
+<tr class="memdesc:a5d0165e21a3745f281142e60d5824028"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query how much current the compressor is drawing.  <a href="classfrc_1_1_compressor.html#a5d0165e21a3745f281142e60d5824028">More...</a><br /></td></tr>
+<tr class="separator:a5d0165e21a3745f281142e60d5824028"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcd369cad107fa0c1dc6139ad498fa5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_compressor.html#afcd369cad107fa0c1dc6139ad498fa5e">Disable</a> ()</td></tr>
+<tr class="memdesc:afcd369cad107fa0c1dc6139ad498fa5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable the compressor.  <a href="classfrc_1_1_compressor.html#afcd369cad107fa0c1dc6139ad498fa5e">More...</a><br /></td></tr>
+<tr class="separator:afcd369cad107fa0c1dc6139ad498fa5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07cc62fe68f8cd47af3b61517bae3e9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_compressor.html#a07cc62fe68f8cd47af3b61517bae3e9c">EnableDigital</a> ()</td></tr>
+<tr class="memdesc:a07cc62fe68f8cd47af3b61517bae3e9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable compressor closed loop control using digital input.  <a href="classfrc_1_1_compressor.html#a07cc62fe68f8cd47af3b61517bae3e9c">More...</a><br /></td></tr>
+<tr class="separator:a07cc62fe68f8cd47af3b61517bae3e9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9885b8832b0a4b7a25cbb6604502015e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_compressor.html#a9885b8832b0a4b7a25cbb6604502015e">EnableAnalog</a> (double minAnalogVoltage, double maxAnalogVoltage)</td></tr>
+<tr class="memdesc:a9885b8832b0a4b7a25cbb6604502015e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable compressor closed loop control using analog input.  <a href="classfrc_1_1_compressor.html#a9885b8832b0a4b7a25cbb6604502015e">More...</a><br /></td></tr>
+<tr class="separator:a9885b8832b0a4b7a25cbb6604502015e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2517b3ea7f1808fa145817cbb0100b98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_compressor.html#a2517b3ea7f1808fa145817cbb0100b98">EnableHybrid</a> (double minAnalogVoltage, double maxAnalogVoltage)</td></tr>
+<tr class="memdesc:a2517b3ea7f1808fa145817cbb0100b98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable compressor closed loop control using hybrid input.  <a href="classfrc_1_1_compressor.html#a2517b3ea7f1808fa145817cbb0100b98">More...</a><br /></td></tr>
+<tr class="separator:a2517b3ea7f1808fa145817cbb0100b98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e2bbef2ea2972adb6109d264e915a99"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacefrc.html#a498a2d59993362a6264f53be5572b823">CompressorConfigType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_compressor.html#a3e2bbef2ea2972adb6109d264e915a99">GetConfigType</a> () const</td></tr>
+<tr class="separator:a3e2bbef2ea2972adb6109d264e915a99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90c5a691c412a71d37e890aa59512774"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_compressor.html#a90c5a691c412a71d37e890aa59512774">InitSendable</a> (<a class="el" href="classwpi_1_1_sendable_builder.html">wpi::SendableBuilder</a> &amp;builder) override</td></tr>
 <tr class="memdesc:a90c5a691c412a71d37e890aa59512774"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes this Sendable object.  <a href="classfrc_1_1_compressor.html#a90c5a691c412a71d37e890aa59512774">More...</a><br /></td></tr>
 <tr class="separator:a90c5a691c412a71d37e890aa59512774"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -357,6 +365,63 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="afcd369cad107fa0c1dc6139ad498fa5e" name="afcd369cad107fa0c1dc6139ad498fa5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcd369cad107fa0c1dc6139ad498fa5e">&#9670;&nbsp;</a></span>Disable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void frc::Compressor::Disable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Disable the compressor. </p>
+
+</div>
+</div>
+<a id="a9885b8832b0a4b7a25cbb6604502015e" name="a9885b8832b0a4b7a25cbb6604502015e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9885b8832b0a4b7a25cbb6604502015e">&#9670;&nbsp;</a></span>EnableAnalog()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void frc::Compressor::EnableAnalog </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>minAnalogVoltage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>maxAnalogVoltage</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable compressor closed loop control using analog input. </p>
+<p >On CTRE PCM, this will enable digital control.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">minAnalogVoltage</td><td>The minimum voltage to enable compressor </td></tr>
+    <tr><td class="paramname">maxAnalogVoltage</td><td>The maximum voltage to disable compressor </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ae0c0c4e96a8a6c2429c43ab3f99e7cf0" name="ae0c0c4e96a8a6c2429c43ab3f99e7cf0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae0c0c4e96a8a6c2429c43ab3f99e7cf0">&#9670;&nbsp;</a></span>Enabled()</h2>
 
@@ -377,14 +442,71 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a3e4a22bdcb62c60840100e723ddf2aa3" name="a3e4a22bdcb62c60840100e723ddf2aa3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e4a22bdcb62c60840100e723ddf2aa3">&#9670;&nbsp;</a></span>GetClosedLoopControl()</h2>
+<a id="a07cc62fe68f8cd47af3b61517bae3e9c" name="a07cc62fe68f8cd47af3b61517bae3e9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07cc62fe68f8cd47af3b61517bae3e9c">&#9670;&nbsp;</a></span>EnableDigital()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool frc::Compressor::GetClosedLoopControl </td>
+          <td class="memname">void frc::Compressor::EnableDigital </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable compressor closed loop control using digital input. </p>
+
+</div>
+</div>
+<a id="a2517b3ea7f1808fa145817cbb0100b98" name="a2517b3ea7f1808fa145817cbb0100b98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2517b3ea7f1808fa145817cbb0100b98">&#9670;&nbsp;</a></span>EnableHybrid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void frc::Compressor::EnableHybrid </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>minAnalogVoltage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>maxAnalogVoltage</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable compressor closed loop control using hybrid input. </p>
+<p >On CTRE PCM, this will enable digital control.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">minAnalogVoltage</td><td>The minimum voltage to enable compressor </td></tr>
+    <tr><td class="paramname">maxAnalogVoltage</td><td>The maximum voltage to disable compressor </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3e2bbef2ea2972adb6109d264e915a99" name="a3e2bbef2ea2972adb6109d264e915a99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e2bbef2ea2972adb6109d264e915a99">&#9670;&nbsp;</a></span>GetConfigType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacefrc.html#a498a2d59993362a6264f53be5572b823">CompressorConfigType</a> frc::Compressor::GetConfigType </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -392,19 +514,16 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns true if the compressor will automatically turn on when the pressure is low. </p>
-<dl class="section return"><dt>Returns</dt><dd>True if closed loop control of the compressor is enabled. False if disabled. </dd></dl>
-
 </div>
 </div>
-<a id="a3f8cb85389b09d01a4f9cb069266e100" name="a3f8cb85389b09d01a4f9cb069266e100"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f8cb85389b09d01a4f9cb069266e100">&#9670;&nbsp;</a></span>GetCompressorCurrent()</h2>
+<a id="a5d0165e21a3745f281142e60d5824028" name="a5d0165e21a3745f281142e60d5824028"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d0165e21a3745f281142e60d5824028">&#9670;&nbsp;</a></span>GetCurrent()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double frc::Compressor::GetCompressorCurrent </td>
+          <td class="memname">double frc::Compressor::GetCurrent </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -525,32 +644,6 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="ad8d8008aac0ab4ee20d860f36265cee0" name="ad8d8008aac0ab4ee20d860f36265cee0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8d8008aac0ab4ee20d860f36265cee0">&#9670;&nbsp;</a></span>SetClosedLoopControl()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void frc::Compressor::SetClosedLoopControl </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>on</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Enables or disables automatically turning the compressor on when the pressure is low. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">on</td><td>Set to true to enable closed loop control of the compressor. False to disable. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a860fca78ae417ac8af88f10c6030092c" name="a860fca78ae417ac8af88f10c6030092c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a860fca78ae417ac8af88f10c6030092c">&#9670;&nbsp;</a></span>Start()</h2>
 
@@ -567,7 +660,8 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Starts closed-loop control. </p>
-<p >Note that closed loop control is enabled by default. </p>
+<p >Note that closed loop control is enabled by default.</p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000061">Deprecated:</a></b></dt><dd>Use <a class="el" href="classfrc_1_1_compressor.html#a07cc62fe68f8cd47af3b61517bae3e9c" title="Enable compressor closed loop control using digital input.">EnableDigital()</a> instead. </dd></dl>
 
 </div>
 </div>
@@ -587,7 +681,8 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Stops closed-loop control. </p>
-<p >Note that closed loop control is enabled by default. </p>
+<p >Note that closed loop control is enabled by default.</p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000062">Deprecated:</a></b></dt><dd>Use <a class="el" href="classfrc_1_1_compressor.html#afcd369cad107fa0c1dc6139ad498fa5e" title="Disable the compressor.">Disable()</a> instead. </dd></dl>
 
 </div>
 </div>
@@ -600,7 +695,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_compressor.html">Compressor</a></li>
-    <li class="footer">Generated on Tue Nov 23 2021 05:18:56 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Wed Nov 24 2021 04:36:59 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

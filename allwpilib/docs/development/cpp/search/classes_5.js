@@ -131,6 +131,7 @@ var searchData=
   ['external_5fconstructor_3c_20value_5ft_3a_3anumber_5funsigned_20_3e_128',['external_constructor&lt; value_t::number_unsigned &gt;',['../structwpi_1_1detail_1_1external__constructor_3_01value__t_1_1number__unsigned_01_4.html',1,'wpi::detail']]],
   ['external_5fconstructor_3c_20value_5ft_3a_3aobject_20_3e_129',['external_constructor&lt; value_t::object &gt;',['../structwpi_1_1detail_1_1external__constructor_3_01value__t_1_1object_01_4.html',1,'wpi::detail']]],
   ['external_5fconstructor_3c_20value_5ft_3a_3astring_20_3e_130',['external_constructor&lt; value_t::string &gt;',['../structwpi_1_1detail_1_1external__constructor_3_01value__t_1_1string_01_4.html',1,'wpi::detail']]],
-  ['extract_5fdata_5fselector_131',['extract_data_selector',['../struct_eigen_1_1internal_1_1extract__data__selector.html',1,'Eigen::internal']]],
-  ['extract_5fdata_5fselector_3c_20t_2c_20false_20_3e_132',['extract_data_selector&lt; T, false &gt;',['../struct_eigen_1_1internal_1_1extract__data__selector_3_01_t_00_01false_01_4.html',1,'Eigen::internal']]]
+  ['externaldirectioncounter_131',['ExternalDirectionCounter',['../classfrc_1_1_external_direction_counter.html',1,'frc']]],
+  ['extract_5fdata_5fselector_132',['extract_data_selector',['../struct_eigen_1_1internal_1_1extract__data__selector.html',1,'Eigen::internal']]],
+  ['extract_5fdata_5fselector_3c_20t_2c_20false_20_3e_133',['extract_data_selector&lt; T, false &gt;',['../struct_eigen_1_1internal_1_1extract__data__selector_3_01_t_00_01false_01_4.html',1,'Eigen::internal']]]
 ];

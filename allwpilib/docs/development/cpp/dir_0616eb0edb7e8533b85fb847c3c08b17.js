@@ -1,5 +1,6 @@
 var dir_0616eb0edb7e8533b85fb847c3c08b17 =
 [
+    [ "counter", "dir_74044dfbe8cf2331ca1fdcb619b3db7b.html", "dir_74044dfbe8cf2331ca1fdcb619b3db7b" ],
     [ "drive", "dir_fcdce402877842ae45be332f822e2127.html", "dir_fcdce402877842ae45be332f822e2127" ],
     [ "interfaces", "dir_7c5c7c66abcfed5b03cc4b86e8bed2e2.html", "dir_7c5c7c66abcfed5b03cc4b86e8bed2e2" ],
     [ "livewindow", "dir_9ca97cc90ae1cd0bcd0d2fbcb2617eef.html", "dir_9ca97cc90ae1cd0bcd0d2fbcb2617eef" ],
@@ -65,6 +66,7 @@ var dir_0616eb0edb7e8533b85fb847c3c08b17 =
     [ "Compressor.h", "_compressor_8h.html", [
       [ "frc::Compressor", "classfrc_1_1_compressor.html", "classfrc_1_1_compressor" ]
     ] ],
+    [ "CompressorConfigType.h", "_compressor_config_type_8h.html", "_compressor_config_type_8h" ],
     [ "Controller.h", "_controller_8h.html", [
       [ "frc::Controller", "classfrc_1_1_controller.html", "classfrc_1_1_controller" ]
     ] ],

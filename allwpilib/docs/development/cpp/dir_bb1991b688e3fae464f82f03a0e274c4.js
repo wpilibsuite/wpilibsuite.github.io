@@ -2,6 +2,7 @@ var dir_bb1991b688e3fae464f82f03a0e274c4 =
 [
     [ "buttons", "dir_2806a47f1bd27756a9266462cf76a864.html", "dir_2806a47f1bd27756a9266462cf76a864" ],
     [ "commands", "dir_4ab5eeb5ed54f6cf3cf8c80dd363976a.html", "dir_4ab5eeb5ed54f6cf3cf8c80dd363976a" ],
+    [ "pidwrappers", "dir_bb2ddbe3688b44e20ee4d49d621d3374.html", "dir_bb2ddbe3688b44e20ee4d49d621d3374" ],
     [ "PIDBase.h", "_p_i_d_base_8h.html", [
       [ "frc::PIDBase", "classfrc_1_1_p_i_d_base.html", "classfrc_1_1_p_i_d_base" ]
     ] ],

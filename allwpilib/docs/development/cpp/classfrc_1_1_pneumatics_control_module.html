@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2-8-ga993122</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2-11-g3aa54fa</span>
    </div>
   </td>
  </tr>
@@ -120,10 +120,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afb4e8e8c9deca9521560ca375b22f715"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61fe8ceed8c432664dd473fcf6b44334"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_pneumatics_control_module.html#a61fe8ceed8c432664dd473fcf6b44334">GetCompressor</a> () const override</td></tr>
 <tr class="separator:a61fe8ceed8c432664dd473fcf6b44334"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80632827eacefa3f38d5ecba4813e2c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_pneumatics_control_module.html#a80632827eacefa3f38d5ecba4813e2c3">SetClosedLoopControl</a> (bool enabled) override</td></tr>
-<tr class="separator:a80632827eacefa3f38d5ecba4813e2c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adaf0401c3c2405115c8458bed6f75047"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_pneumatics_control_module.html#adaf0401c3c2405115c8458bed6f75047">GetClosedLoopControl</a> () const override</td></tr>
-<tr class="separator:adaf0401c3c2405115c8458bed6f75047"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe58bd46e77270ecdf98077113ba8f22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_pneumatics_control_module.html#abe58bd46e77270ecdf98077113ba8f22">DisableCompressor</a> () override</td></tr>
+<tr class="separator:abe58bd46e77270ecdf98077113ba8f22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf438d538321789f4cf026d34378e957"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_pneumatics_control_module.html#aaf438d538321789f4cf026d34378e957">EnableCompressorDigital</a> () override</td></tr>
+<tr class="separator:aaf438d538321789f4cf026d34378e957"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7be31cceba04c24fdf6fb057dd09616c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_pneumatics_control_module.html#a7be31cceba04c24fdf6fb057dd09616c">EnableCompressorAnalog</a> (double minAnalogVoltage, double maxAnalogVoltage) override</td></tr>
+<tr class="separator:a7be31cceba04c24fdf6fb057dd09616c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0926f53ad91b529b092c3027fee4bbc4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_pneumatics_control_module.html#a0926f53ad91b529b092c3027fee4bbc4">EnableCompressorHybrid</a> (double minAnalogVoltage, double maxAnalogVoltage) override</td></tr>
+<tr class="separator:a0926f53ad91b529b092c3027fee4bbc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a635d4690eca044b9fd5e35585aabb514"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacefrc.html#a498a2d59993362a6264f53be5572b823">CompressorConfigType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_pneumatics_control_module.html#a635d4690eca044b9fd5e35585aabb514">GetCompressorConfigType</a> () const override</td></tr>
+<tr class="separator:a635d4690eca044b9fd5e35585aabb514"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac047a7cda5bbb0ec24bcd60056a8a28a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_pneumatics_control_module.html#ac047a7cda5bbb0ec24bcd60056a8a28a">GetPressureSwitch</a> () const override</td></tr>
 <tr class="separator:ac047a7cda5bbb0ec24bcd60056a8a28a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4dc230c8d128705aa3fb098a4c13679e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_pneumatics_control_module.html#a4dc230c8d128705aa3fb098a4c13679e">GetCompressorCurrent</a> () const override</td></tr>
@@ -336,6 +342,136 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="abe58bd46e77270ecdf98077113ba8f22" name="abe58bd46e77270ecdf98077113ba8f22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe58bd46e77270ecdf98077113ba8f22">&#9670;&nbsp;</a></span>DisableCompressor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void frc::PneumaticsControlModule::DisableCompressor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classfrc_1_1_pneumatics_base.html#a49e29f7f37ca4d541f01919ed5c277da">frc::PneumaticsBase</a>.</p>
+
+</div>
+</div>
+<a id="a7be31cceba04c24fdf6fb057dd09616c" name="a7be31cceba04c24fdf6fb057dd09616c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7be31cceba04c24fdf6fb057dd09616c">&#9670;&nbsp;</a></span>EnableCompressorAnalog()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void frc::PneumaticsControlModule::EnableCompressorAnalog </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>minAnalogVoltage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>maxAnalogVoltage</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classfrc_1_1_pneumatics_base.html#a6c53f3c1b9b6e64c76bd9def67049067">frc::PneumaticsBase</a>.</p>
+
+</div>
+</div>
+<a id="aaf438d538321789f4cf026d34378e957" name="aaf438d538321789f4cf026d34378e957"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf438d538321789f4cf026d34378e957">&#9670;&nbsp;</a></span>EnableCompressorDigital()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void frc::PneumaticsControlModule::EnableCompressorDigital </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classfrc_1_1_pneumatics_base.html#a6424bfb2cf5c7cd777f886abe7d53903">frc::PneumaticsBase</a>.</p>
+
+</div>
+</div>
+<a id="a0926f53ad91b529b092c3027fee4bbc4" name="a0926f53ad91b529b092c3027fee4bbc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0926f53ad91b529b092c3027fee4bbc4">&#9670;&nbsp;</a></span>EnableCompressorHybrid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void frc::PneumaticsControlModule::EnableCompressorHybrid </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>minAnalogVoltage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>maxAnalogVoltage</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classfrc_1_1_pneumatics_base.html#af43c3cd29af6108748b8bde6e9770186">frc::PneumaticsBase</a>.</p>
+
+</div>
+</div>
 <a id="a14bf3c6437e23765136da7b383d0fd26" name="a14bf3c6437e23765136da7b383d0fd26"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a14bf3c6437e23765136da7b383d0fd26">&#9670;&nbsp;</a></span>FireOneShot()</h2>
 
@@ -364,33 +500,6 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="adaf0401c3c2405115c8458bed6f75047" name="adaf0401c3c2405115c8458bed6f75047"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adaf0401c3c2405115c8458bed6f75047">&#9670;&nbsp;</a></span>GetClosedLoopControl()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool frc::PneumaticsControlModule::GetClosedLoopControl </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="classfrc_1_1_pneumatics_base.html#ad0644cfbffd43d75fe995c72af4952cc">frc::PneumaticsBase</a>.</p>
-
-</div>
-</div>
 <a id="a61fe8ceed8c432664dd473fcf6b44334" name="a61fe8ceed8c432664dd473fcf6b44334"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a61fe8ceed8c432664dd473fcf6b44334">&#9670;&nbsp;</a></span>GetCompressor()</h2>
 
@@ -415,6 +524,33 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="classfrc_1_1_pneumatics_base.html#ae7ef8d78b0df4e32d58871c42d45495f">frc::PneumaticsBase</a>.</p>
+
+</div>
+</div>
+<a id="a635d4690eca044b9fd5e35585aabb514" name="a635d4690eca044b9fd5e35585aabb514"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a635d4690eca044b9fd5e35585aabb514">&#9670;&nbsp;</a></span>GetCompressorConfigType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacefrc.html#a498a2d59993362a6264f53be5572b823">CompressorConfigType</a> frc::PneumaticsControlModule::GetCompressorConfigType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classfrc_1_1_pneumatics_base.html#ac3bef158c253774e76b9fa65f3ed2d77">frc::PneumaticsBase</a>.</p>
 
 </div>
 </div>
@@ -809,34 +945,6 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a80632827eacefa3f38d5ecba4813e2c3" name="a80632827eacefa3f38d5ecba4813e2c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a80632827eacefa3f38d5ecba4813e2c3">&#9670;&nbsp;</a></span>SetClosedLoopControl()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void frc::PneumaticsControlModule::SetClosedLoopControl </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>enabled</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="classfrc_1_1_pneumatics_base.html#acdd186887338e1253f8bcce0283b2e8a">frc::PneumaticsBase</a>.</p>
-
-</div>
-</div>
 <a id="adfd89a2e0cfba6527ba39acc1dd87302" name="adfd89a2e0cfba6527ba39acc1dd87302"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adfd89a2e0cfba6527ba39acc1dd87302">&#9670;&nbsp;</a></span>SetOneShotDuration()</h2>
 
@@ -1022,7 +1130,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_pneumatics_control_module.html">PneumaticsControlModule</a></li>
-    <li class="footer">Generated on Tue Nov 23 2021 05:18:56 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Wed Nov 24 2021 04:36:59 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
