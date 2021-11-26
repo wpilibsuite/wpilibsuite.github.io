@@ -4056,6 +4056,7 @@ var hierarchy =
     [ "wpi::detail::WorkerThreadAsync< R >", "structwpi_1_1detail_1_1_worker_thread_async.html", null ],
     [ "wpi::detail::WorkerThreadAsync< void >", "structwpi_1_1detail_1_1_worker_thread_async_3_01void_01_4.html", null ],
     [ "wpi::detail::WorkerThreadRequest< R, T >", "structwpi_1_1detail_1_1_worker_thread_request.html", null ],
+    [ "WPI_ServiceData", "struct_w_p_i___service_data.html", null ],
     [ "wpi::wpi_shutdown_obj", "structwpi_1_1wpi__shutdown__obj.html", null ],
     [ "write_int_arg< UInt >", "structwrite__int__arg.html", null ],
     [ "write_int_data< Char >", "structwrite__int__data.html", null ],

@@ -2812,6 +2812,7 @@ var annotated_dup =
     [ "view", "structview.html", null ],
     [ "weekday", "classweekday.html", "classweekday" ],
     [ "width_checker", "classwidth__checker.html", "classwidth__checker" ],
+    [ "WPI_ServiceData", "struct_w_p_i___service_data.html", "struct_w_p_i___service_data" ],
     [ "write_int_arg", "structwrite__int__arg.html", "structwrite__int__arg" ],
     [ "write_int_data", "structwrite__int__data.html", "structwrite__int__data" ]
 ];

@@ -20,5 +20,6 @@ var namespacewpi_1_1java =
     [ "MakeJIntArray", "namespacewpi_1_1java.html#afd8252e0c11698f82fa6a139a9b69268", null ],
     [ "MakeJIntArray", "namespacewpi_1_1java.html#aaf77f2f93ed39e36454dc10072314efc", null ],
     [ "MakeJString", "namespacewpi_1_1java.html#a03d617c196aeee2778c8b22699dd4acb", null ],
-    [ "MakeJStringArray", "namespacewpi_1_1java.html#a70b85e53225cfdd4f6e038b20f922737", null ]
+    [ "MakeJStringArray", "namespacewpi_1_1java.html#a70b85e53225cfdd4f6e038b20f922737", null ],
+    [ "MakeJStringArray", "namespacewpi_1_1java.html#add6978ead113293b425c42ceb63698d7", null ]
 ];

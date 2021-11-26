@@ -109,6 +109,8 @@ var dir_1224104d412225b996ab6dfa83431a88 =
     [ "MemAlloc.h", "_mem_alloc_8h.html", "_mem_alloc_8h" ],
     [ "MimeTypes.h", "_mime_types_8h.html", "_mime_types_8h" ],
     [ "mpack.h", "mpack_8h.html", "mpack_8h" ],
+    [ "MulticastServiceAnnouncer.h", "_multicast_service_announcer_8h.html", "_multicast_service_announcer_8h" ],
+    [ "MulticastServiceResolver.h", "_multicast_service_resolver_8h.html", "_multicast_service_resolver_8h" ],
     [ "mutex.h", "mutex_8h.html", "mutex_8h" ],
     [ "NetworkAcceptor.h", "_network_acceptor_8h.html", [
       [ "wpi::NetworkAcceptor", "classwpi_1_1_network_acceptor.html", "classwpi_1_1_network_acceptor" ]
