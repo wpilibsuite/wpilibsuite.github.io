@@ -19,8 +19,9 @@ var searchData=
   ['workerthreadrequest_16',['WorkerThreadRequest',['../structwpi_1_1detail_1_1_worker_thread_request.html',1,'wpi::detail']]],
   ['workerthreadthread_17',['WorkerThreadThread',['../classwpi_1_1detail_1_1_worker_thread_thread.html',1,'wpi::detail']]],
   ['workreq_18',['WorkReq',['../classwpi_1_1uv_1_1_work_req.html',1,'wpi::uv']]],
-  ['wpi_5fshutdown_5fobj_19',['wpi_shutdown_obj',['../structwpi_1_1wpi__shutdown__obj.html',1,'wpi']]],
-  ['write_5fint_5farg_20',['write_int_arg',['../structwrite__int__arg.html',1,'']]],
-  ['write_5fint_5fdata_21',['write_int_data',['../structwrite__int__data.html',1,'']]],
-  ['writereq_22',['WriteReq',['../classwpi_1_1uv_1_1_write_req.html',1,'wpi::uv']]]
+  ['wpi_5fservicedata_19',['WPI_ServiceData',['../struct_w_p_i___service_data.html',1,'']]],
+  ['wpi_5fshutdown_5fobj_20',['wpi_shutdown_obj',['../structwpi_1_1wpi__shutdown__obj.html',1,'wpi']]],
+  ['write_5fint_5farg_21',['write_int_arg',['../structwrite__int__arg.html',1,'']]],
+  ['write_5fint_5fdata_22',['write_int_data',['../structwrite__int__data.html',1,'']]],
+  ['writereq_23',['WriteReq',['../classwpi_1_1uv_1_1_write_req.html',1,'wpi::uv']]]
 ];

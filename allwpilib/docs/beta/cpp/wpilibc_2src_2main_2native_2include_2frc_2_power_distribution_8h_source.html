@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-3</span>
    </div>
   </td>
  </tr>
@@ -114,12 +114,12 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>                          <span class="keyword">public</span> <a class="code hl_class" href="classwpi_1_1_sendable_helper.html">wpi::SendableHelper</a>&lt;PowerDistribution&gt; {</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> <span class="keyword">public</span>:</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="classfrc_1_1_power_distribution.html#a99a61eb339f18e9c576c40034248f8f0">   20</a></span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="classfrc_1_1_power_distribution.html#a99a61eb339f18e9c576c40034248f8f0">kDefaultModule</a> = -1;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="classfrc_1_1_power_distribution.html#a3f8cf3a17c7112e56bec6ebcb44147d6">   21</a></span>  <span class="keyword">enum class</span> <a class="code hl_enumeration" href="classfrc_1_1_power_distribution.html#a3f8cf3a17c7112e56bec6ebcb44147d6">ModuleType</a> { <a class="code hl_enumvalue" href="classfrc_1_1_power_distribution.html#a3f8cf3a17c7112e56bec6ebcb44147d6a0edd03ba1f5a73f26d1fd764255ddaa1">kAutomatic</a> = 0, <a class="code hl_enumvalue" href="classfrc_1_1_power_distribution.html#a3f8cf3a17c7112e56bec6ebcb44147d6a2efa3163ad264f03ef4855a019acceb8">kCTRE</a> = 1, <a class="code hl_enumvalue" href="classfrc_1_1_power_distribution.html#a3f8cf3a17c7112e56bec6ebcb44147d6ab4c84bd235b56aed0c84442004bf3928">kRev</a> = 2 };</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="classfrc_1_1_power_distribution.html#a3f8cf3a17c7112e56bec6ebcb44147d6">   21</a></span>  <span class="keyword">enum class</span> <a class="code hl_enumeration" href="classfrc_1_1_power_distribution.html#a3f8cf3a17c7112e56bec6ebcb44147d6">ModuleType</a> { <a class="code hl_enumvalue" href="classfrc_1_1_power_distribution.html#a3f8cf3a17c7112e56bec6ebcb44147d6a2efa3163ad264f03ef4855a019acceb8">kCTRE</a> = 1, <a class="code hl_enumvalue" href="classfrc_1_1_power_distribution.html#a3f8cf3a17c7112e56bec6ebcb44147d6ab4c84bd235b56aed0c84442004bf3928">kRev</a> = 2 };</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"></span> </div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">   * Constructs a PowerDistribution.</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">   * Uses the default CAN ID.</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">   * Uses the default CAN ID (0 for CTRE and 1 for REV).</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="classfrc_1_1_power_distribution.html#a4a3f400b44e9daa078c69cecba077d42">   28</a></span>  <a class="code hl_function" href="classfrc_1_1_power_distribution.html#a4a3f400b44e9daa078c69cecba077d42">PowerDistribution</a>();</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment"></span> </div>
@@ -216,7 +216,6 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div class="ttc" id="aclassfrc_1_1_power_distribution_html_a217c4bf63b3b7102c5a963e2b7abcb8a"><div class="ttname"><a href="classfrc_1_1_power_distribution.html#a217c4bf63b3b7102c5a963e2b7abcb8a">frc::PowerDistribution::SetSwitchableChannel</a></div><div class="ttdeci">void SetSwitchableChannel(bool enabled)</div></div>
 <div class="ttc" id="aclassfrc_1_1_power_distribution_html_a3bfdfa0c4211a0130111347a12b9c8aa"><div class="ttname"><a href="classfrc_1_1_power_distribution.html#a3bfdfa0c4211a0130111347a12b9c8aa">frc::PowerDistribution::GetTotalPower</a></div><div class="ttdeci">double GetTotalPower() const</div><div class="ttdoc">Query the total power drawn from the monitored PDP channels.</div></div>
 <div class="ttc" id="aclassfrc_1_1_power_distribution_html_a3f8cf3a17c7112e56bec6ebcb44147d6"><div class="ttname"><a href="classfrc_1_1_power_distribution.html#a3f8cf3a17c7112e56bec6ebcb44147d6">frc::PowerDistribution::ModuleType</a></div><div class="ttdeci">ModuleType</div><div class="ttdef"><b>Definition:</b> PowerDistribution.h:21</div></div>
-<div class="ttc" id="aclassfrc_1_1_power_distribution_html_a3f8cf3a17c7112e56bec6ebcb44147d6a0edd03ba1f5a73f26d1fd764255ddaa1"><div class="ttname"><a href="classfrc_1_1_power_distribution.html#a3f8cf3a17c7112e56bec6ebcb44147d6a0edd03ba1f5a73f26d1fd764255ddaa1">frc::PowerDistribution::ModuleType::kAutomatic</a></div><div class="ttdeci">@ kAutomatic</div></div>
 <div class="ttc" id="aclassfrc_1_1_power_distribution_html_a3f8cf3a17c7112e56bec6ebcb44147d6a2efa3163ad264f03ef4855a019acceb8"><div class="ttname"><a href="classfrc_1_1_power_distribution.html#a3f8cf3a17c7112e56bec6ebcb44147d6a2efa3163ad264f03ef4855a019acceb8">frc::PowerDistribution::ModuleType::kCTRE</a></div><div class="ttdeci">@ kCTRE</div></div>
 <div class="ttc" id="aclassfrc_1_1_power_distribution_html_a3f8cf3a17c7112e56bec6ebcb44147d6ab4c84bd235b56aed0c84442004bf3928"><div class="ttname"><a href="classfrc_1_1_power_distribution.html#a3f8cf3a17c7112e56bec6ebcb44147d6ab4c84bd235b56aed0c84442004bf3928">frc::PowerDistribution::ModuleType::kRev</a></div><div class="ttdeci">@ kRev</div></div>
 <div class="ttc" id="aclassfrc_1_1_power_distribution_html_a49e7043a1349d367db8a32db43b2919b"><div class="ttname"><a href="classfrc_1_1_power_distribution.html#a49e7043a1349d367db8a32db43b2919b">frc::PowerDistribution::PowerDistribution</a></div><div class="ttdeci">PowerDistribution(PowerDistribution &amp;&amp;)=default</div></div>
@@ -235,14 +234,14 @@ $(document).ready(function(){initNavTree('wpilibc_2src_2main_2native_2include_2f
 <div class="ttc" id="aclasswpi_1_1_sendable_builder_html"><div class="ttname"><a href="classwpi_1_1_sendable_builder.html">wpi::SendableBuilder</a></div><div class="ttdef"><b>Definition:</b> SendableBuilder.h:18</div></div>
 <div class="ttc" id="aclasswpi_1_1_sendable_helper_html"><div class="ttname"><a href="classwpi_1_1_sendable_helper.html">wpi::SendableHelper</a></div><div class="ttdoc">A helper class for use with objects that add themselves to SendableRegistry.</div><div class="ttdef"><b>Definition:</b> SendableHelper.h:24</div></div>
 <div class="ttc" id="aclasswpi_1_1_sendable_html"><div class="ttname"><a href="classwpi_1_1_sendable.html">wpi::Sendable</a></div><div class="ttdoc">Interface for Sendable objects.</div><div class="ttdef"><b>Definition:</b> Sendable.h:16</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> VisionRunner.inc:9</div></div>
+<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> VisionRunner.h:15</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="wpilibc_2src_2main_2native_2include_2frc_2_power_distribution_8h.html">PowerDistribution.h</a></li>
-    <li class="footer">Generated on Thu Nov 11 2021 02:25:45 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Nov 27 2021 19:20:10 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

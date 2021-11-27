@@ -1,11 +1,7 @@
 var searchData=
 [
-  ['table_20functions_0',['Table Functions',['../group__ntcore__table__cfunc.html',1,'(Global Namespace)'],['../group__ntcore__table__func.html',1,'(Global Namespace)']]],
-  ['tags_20and_20common_20elements_1',['Tags and Common Elements',['../group__common.html',1,'']]],
-  ['telemetry_20functions_2',['Telemetry Functions',['../group__cscore__telemetry__cfunc.html',1,'(Global Namespace)'],['../group__cscore__telemetry__func.html',1,'(Global Namespace)']]],
-  ['threads_20functions_3',['Threads Functions',['../group__hal__threads.html',1,'']]],
-  ['type_20definitions_4',['Type Definitions',['../group__hal__types.html',1,'']]],
-  ['type_20traits_5',['Type Traits',['../group___type_traits.html',1,'']]],
-  ['typed_20getters_6',['Typed Getters',['../group__ntcore__typedgetters__cfunc.html',1,'']]],
-  ['typedefs_7',['Typedefs',['../group__cscore__typedefs.html',1,'']]]
+  ['raw_20image_20functions_0',['Raw Image Functions',['../group__cscore__raw__cfunc.html',1,'']]],
+  ['reader_20api_1',['Reader API',['../group__reader.html',1,'']]],
+  ['remote_20procedure_20call_20functions_2',['Remote Procedure Call Functions',['../group__ntcore__rpc__cfunc.html',1,'(Global Namespace)'],['../group__ntcore__rpc__func.html',1,'(Global Namespace)']]],
+  ['rev_20ph_20functions_3',['REV PH Functions',['../group__hal__rev__ph.html',1,'']]]
 ];

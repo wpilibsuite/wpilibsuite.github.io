@@ -1,9 +1,6 @@
 var _triangular_matrix_8h =
 [
-    [ "Eigen::TriangularBase< Derived >", "class_eigen_1_1_triangular_base.html", "class_eigen_1_1_triangular_base" ],
     [ "Eigen::internal::traits< TriangularView< MatrixType, _Mode > >", "struct_eigen_1_1internal_1_1traits_3_01_triangular_view_3_01_matrix_type_00_01___mode_01_4_01_4.html", "struct_eigen_1_1internal_1_1traits_3_01_triangular_view_3_01_matrix_type_00_01___mode_01_4_01_4" ],
-    [ "Eigen::TriangularView< _MatrixType, _Mode >", "class_eigen_1_1_triangular_view.html", "class_eigen_1_1_triangular_view" ],
-    [ "Eigen::TriangularViewImpl< _MatrixType, _Mode, Dense >", "class_eigen_1_1_triangular_view_impl_3_01___matrix_type_00_01___mode_00_01_dense_01_4.html", "class_eigen_1_1_triangular_view_impl_3_01___matrix_type_00_01___mode_00_01_dense_01_4" ],
     [ "Eigen::internal::evaluator_traits< TriangularView< MatrixType, Mode > >", "struct_eigen_1_1internal_1_1evaluator__traits_3_01_triangular_view_3_01_matrix_type_00_01_mode_01_4_01_4.html", "struct_eigen_1_1internal_1_1evaluator__traits_3_01_triangular_view_3_01_matrix_type_00_01_mode_01_4_01_4" ],
     [ "Eigen::internal::unary_evaluator< TriangularView< MatrixType, Mode >, IndexBased >", "struct_eigen_1_1internal_1_1unary__evaluator_3_01_triangular_view_3_01_matrix_type_00_01_mode_01_4_00_01_index_based_01_4.html", "struct_eigen_1_1internal_1_1unary__evaluator_3_01_triangular_view_3_01_matrix_type_00_01_mode_01_4_00_01_index_based_01_4" ],
     [ "Eigen::internal::Triangular2Triangular", "struct_eigen_1_1internal_1_1_triangular2_triangular.html", null ],

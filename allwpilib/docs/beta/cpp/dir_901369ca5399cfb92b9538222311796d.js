@@ -3,6 +3,9 @@ var dir_901369ca5399cfb92b9538222311796d =
     [ "ArmFeedforward.h", "_arm_feedforward_8h.html", [
       [ "frc::ArmFeedforward", "classfrc_1_1_arm_feedforward.html", "classfrc_1_1_arm_feedforward" ]
     ] ],
+    [ "BangBangController.h", "_bang_bang_controller_8h.html", [
+      [ "frc::BangBangController", "classfrc_1_1_bang_bang_controller.html", "classfrc_1_1_bang_bang_controller" ]
+    ] ],
     [ "ControlAffinePlantInversionFeedforward.h", "_control_affine_plant_inversion_feedforward_8h.html", [
       [ "frc::ControlAffinePlantInversionFeedforward< States, Inputs >", "classfrc_1_1_control_affine_plant_inversion_feedforward.html", "classfrc_1_1_control_affine_plant_inversion_feedforward" ]
     ] ],

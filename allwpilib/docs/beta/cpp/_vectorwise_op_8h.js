@@ -1,12 +1,10 @@
 var _vectorwise_op_8h =
 [
     [ "Eigen::internal::traits< PartialReduxExpr< MatrixType, MemberOp, Direction > >", "struct_eigen_1_1internal_1_1traits_3_01_partial_redux_expr_3_01_matrix_type_00_01_member_op_00_01_direction_01_4_01_4.html", "struct_eigen_1_1internal_1_1traits_3_01_partial_redux_expr_3_01_matrix_type_00_01_member_op_00_01_direction_01_4_01_4" ],
-    [ "Eigen::PartialReduxExpr< MatrixType, MemberOp, Direction >", "class_eigen_1_1_partial_redux_expr.html", "class_eigen_1_1_partial_redux_expr" ],
     [ "Eigen::internal::member_lpnorm< p, ResultType, Scalar >", "struct_eigen_1_1internal_1_1member__lpnorm.html", "struct_eigen_1_1internal_1_1member__lpnorm" ],
     [ "Eigen::internal::member_lpnorm< p, ResultType, Scalar >::Cost< Size >", "struct_eigen_1_1internal_1_1member__lpnorm_1_1_cost.html", null ],
     [ "Eigen::internal::member_redux< BinaryOpT, Scalar >", "struct_eigen_1_1internal_1_1member__redux.html", "struct_eigen_1_1internal_1_1member__redux" ],
     [ "Eigen::internal::member_redux< BinaryOpT, Scalar >::Cost< Size >", "struct_eigen_1_1internal_1_1member__redux_1_1_cost.html", null ],
-    [ "Eigen::VectorwiseOp< ExpressionType, Direction >", "class_eigen_1_1_vectorwise_op.html", "class_eigen_1_1_vectorwise_op" ],
     [ "Eigen::VectorwiseOp< ExpressionType, Direction >::ReturnType< Functor, ReturnScalar >", "struct_eigen_1_1_vectorwise_op_1_1_return_type.html", "struct_eigen_1_1_vectorwise_op_1_1_return_type" ],
     [ "Eigen::VectorwiseOp< ExpressionType, Direction >::ReduxReturnType< BinaryOp >", "struct_eigen_1_1_vectorwise_op_1_1_redux_return_type.html", "struct_eigen_1_1_vectorwise_op_1_1_redux_return_type" ],
     [ "Eigen::VectorwiseOp< ExpressionType, Direction >::ExtendedType< OtherDerived >", "struct_eigen_1_1_vectorwise_op_1_1_extended_type.html", "struct_eigen_1_1_vectorwise_op_1_1_extended_type" ],

@@ -12,7 +12,7 @@ var searchData=
   ['math_9',['math',['../math.html',1,'']]],
   ['math_2eh_10',['math.h',['../math_8h.html',1,'']]],
   ['mathextras_2eh_11',['MathExtras.h',['../_math_extras_8h.html',1,'']]],
-  ['mathfunctions_2eh_12',['MathFunctions.h',['../arch_2_a_v_x_2_math_functions_8h.html',1,'(Global Namespace)'],['../arch_2_n_e_o_n_2_math_functions_8h.html',1,'(Global Namespace)'],['../arch_2_s_s_e_2_math_functions_8h.html',1,'(Global Namespace)'],['../_math_functions_8h.html',1,'(Global Namespace)']]],
+  ['mathfunctions_2eh_12',['MathFunctions.h',['../arch_2_s_s_e_2_math_functions_8h.html',1,'(Global Namespace)'],['../_math_functions_8h.html',1,'(Global Namespace)'],['../arch_2_n_e_o_n_2_math_functions_8h.html',1,'(Global Namespace)'],['../arch_2_a_v_x_2_math_functions_8h.html',1,'(Global Namespace)']]],
   ['mathfunctionsimpl_2eh_13',['MathFunctionsImpl.h',['../_math_functions_impl_8h.html',1,'']]],
   ['mathshared_2eh_14',['MathShared.h',['../_math_shared_8h.html',1,'']]],
   ['mathutil_2eh_15',['MathUtil.h',['../_math_util_8h.html',1,'']]],
@@ -52,5 +52,7 @@ var searchData=
   ['motorcontrollergroup_2einc_49',['MotorControllerGroup.inc',['../_motor_controller_group_8inc.html',1,'']]],
   ['motorsafety_2eh_50',['MotorSafety.h',['../_motor_safety_8h.html',1,'']]],
   ['mpack_2eh_51',['mpack.h',['../mpack_8h.html',1,'']]],
-  ['mutex_2eh_52',['mutex.h',['../mutex_8h.html',1,'']]]
+  ['multicastserviceannouncer_2eh_52',['MulticastServiceAnnouncer.h',['../_multicast_service_announcer_8h.html',1,'']]],
+  ['multicastserviceresolver_2eh_53',['MulticastServiceResolver.h',['../_multicast_service_resolver_8h.html',1,'']]],
+  ['mutex_2eh_54',['mutex.h',['../mutex_8h.html',1,'']]]
 ];

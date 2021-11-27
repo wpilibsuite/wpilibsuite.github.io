@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-3</span>
    </div>
   </td>
  </tr>
@@ -92,13 +92,29 @@ $(document).ready(function(){initNavTree('group__hal__rev__ph.html',''); initRes
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">REV PH Functions<div class="ingroups"><a class="el" href="group__hal__capi.html">WPILib HAL API</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_h_a_l___r_e_v_p_h_compressor_config.html">HAL_REVPHCompressorConfig</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Storage for compressor config.  <a href="struct_h_a_l___r_e_v_p_h_compressor_config.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_h_a_l___r_e_v_p_h_faults.html">HAL_REVPHFaults</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Storage for REV PH Faults.  <a href="struct_h_a_l___r_e_v_p_h_faults.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_h_a_l___r_e_v_p_h_sticky_faults.html">HAL_REVPHStickyFaults</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Storage for REV PH Sticky Faults.  <a href="struct_h_a_l___r_e_v_p_h_sticky_faults.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:gac493ef38f5557da40d01d4c9490dfbb8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__rev__ph.html#gac493ef38f5557da40d01d4c9490dfbb8">HAL_ENUM</a> (HAL_REVPHCompressorConfigType)</td></tr>
+<tr class="memdesc:gac493ef38f5557da40d01d4c9490dfbb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The compressor configuration type.  <a href="group__hal__rev__ph.html#gac493ef38f5557da40d01d4c9490dfbb8">More...</a><br /></td></tr>
+<tr class="separator:gac493ef38f5557da40d01d4c9490dfbb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga750af87a7c5278ab2d140bbdbf030811"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__hal__types.html#gae3a4214d066684c281a11333c0ebf03c">HAL_REVPHHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__rev__ph.html#ga750af87a7c5278ab2d140bbdbf030811">HAL_InitializeREVPH</a> (int32_t module, const char *allocationLocation, int32_t *status)</td></tr>
 <tr class="separator:ga750af87a7c5278ab2d140bbdbf030811"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5a308c2cae2445961480b9b931ca9306"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__rev__ph.html#ga5a308c2cae2445961480b9b931ca9306">HAL_FreeREVPH</a> (<a class="el" href="group__hal__types.html#gae3a4214d066684c281a11333c0ebf03c">HAL_REVPHHandle</a> handle)</td></tr>
@@ -109,10 +125,18 @@ Functions</h2></td></tr>
 <tr class="separator:gad4e2d68f1c147233cbf438d8d04e9bc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaedc576384089784816b381679720fd09"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__rev__ph.html#gaedc576384089784816b381679720fd09">HAL_GetREVPHCompressor</a> (<a class="el" href="group__hal__types.html#gae3a4214d066684c281a11333c0ebf03c">HAL_REVPHHandle</a> handle, int32_t *status)</td></tr>
 <tr class="separator:gaedc576384089784816b381679720fd09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga56032d67b4962968e483a275fba1ced0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__rev__ph.html#ga56032d67b4962968e483a275fba1ced0">HAL_SetREVPHClosedLoopControl</a> (<a class="el" href="group__hal__types.html#gae3a4214d066684c281a11333c0ebf03c">HAL_REVPHHandle</a> handle, <a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a> enabled, int32_t *status)</td></tr>
-<tr class="separator:ga56032d67b4962968e483a275fba1ced0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3088ea66d002af3c1ff6ae2b23ee399f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__rev__ph.html#ga3088ea66d002af3c1ff6ae2b23ee399f">HAL_GetREVPHClosedLoopControl</a> (<a class="el" href="group__hal__types.html#gae3a4214d066684c281a11333c0ebf03c">HAL_REVPHHandle</a> handle, int32_t *status)</td></tr>
-<tr class="separator:ga3088ea66d002af3c1ff6ae2b23ee399f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafa7b94751546e572f14456f02e5ae9e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__rev__ph.html#gafa7b94751546e572f14456f02e5ae9e0">HAL_SetREVPHCompressorConfig</a> (<a class="el" href="group__hal__types.html#gae3a4214d066684c281a11333c0ebf03c">HAL_REVPHHandle</a> handle, const <a class="el" href="struct_h_a_l___r_e_v_p_h_compressor_config.html">HAL_REVPHCompressorConfig</a> *config, int32_t *status)</td></tr>
+<tr class="separator:gafa7b94751546e572f14456f02e5ae9e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga62dcb0019475fa52aec1384280b72c17"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__rev__ph.html#ga62dcb0019475fa52aec1384280b72c17">HAL_SetREVPHClosedLoopControlDisabled</a> (<a class="el" href="group__hal__types.html#gae3a4214d066684c281a11333c0ebf03c">HAL_REVPHHandle</a> handle, int32_t *status)</td></tr>
+<tr class="separator:ga62dcb0019475fa52aec1384280b72c17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa4825dd1c18d63473d6f98a20b3592d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__rev__ph.html#gaa4825dd1c18d63473d6f98a20b3592d7">HAL_SetREVPHClosedLoopControlDigital</a> (<a class="el" href="group__hal__types.html#gae3a4214d066684c281a11333c0ebf03c">HAL_REVPHHandle</a> handle, int32_t *status)</td></tr>
+<tr class="separator:gaa4825dd1c18d63473d6f98a20b3592d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa48f2f99050d2baaca3e3d36f2f20d18"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__rev__ph.html#gaa48f2f99050d2baaca3e3d36f2f20d18">HAL_SetREVPHClosedLoopControlAnalog</a> (<a class="el" href="group__hal__types.html#gae3a4214d066684c281a11333c0ebf03c">HAL_REVPHHandle</a> handle, double minAnalogVoltage, double maxAnalogVoltage, int32_t *status)</td></tr>
+<tr class="separator:gaa48f2f99050d2baaca3e3d36f2f20d18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab2a94030388297e8fb6be85225f1b8c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__rev__ph.html#gab2a94030388297e8fb6be85225f1b8c4">HAL_SetREVPHClosedLoopControlHybrid</a> (<a class="el" href="group__hal__types.html#gae3a4214d066684c281a11333c0ebf03c">HAL_REVPHHandle</a> handle, double minAnalogVoltage, double maxAnalogVoltage, int32_t *status)</td></tr>
+<tr class="separator:gab2a94030388297e8fb6be85225f1b8c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga27456b679b6456a9b76517d21064f6a4"><td class="memItemLeft" align="right" valign="top">HAL_REVPHCompressorConfigType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__rev__ph.html#ga27456b679b6456a9b76517d21064f6a4">HAL_GetREVPHCompressorConfig</a> (<a class="el" href="group__hal__types.html#gae3a4214d066684c281a11333c0ebf03c">HAL_REVPHHandle</a> handle, int32_t *status)</td></tr>
+<tr class="separator:ga27456b679b6456a9b76517d21064f6a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab20a09d194f38a484f471a342bf9317f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__rev__ph.html#gab20a09d194f38a484f471a342bf9317f">HAL_GetREVPHPressureSwitch</a> (<a class="el" href="group__hal__types.html#gae3a4214d066684c281a11333c0ebf03c">HAL_REVPHHandle</a> handle, int32_t *status)</td></tr>
 <tr class="separator:gab20a09d194f38a484f471a342bf9317f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab7cb13ace23b86a7fd2608a270907360"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__rev__ph.html#gab7cb13ace23b86a7fd2608a270907360">HAL_GetREVPHCompressorCurrent</a> (<a class="el" href="group__hal__types.html#gae3a4214d066684c281a11333c0ebf03c">HAL_REVPHHandle</a> handle, int32_t *status)</td></tr>
@@ -125,6 +149,10 @@ Functions</h2></td></tr>
 <tr class="separator:gae403c42380f518c0fccf23a421210c05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae077629ca319c0d3dae91295c0b7a2a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__rev__ph.html#gae077629ca319c0d3dae91295c0b7a2a9">HAL_FireREVPHOneShot</a> (<a class="el" href="group__hal__types.html#gae3a4214d066684c281a11333c0ebf03c">HAL_REVPHHandle</a> handle, int32_t index, int32_t durMs, int32_t *status)</td></tr>
 <tr class="separator:gae077629ca319c0d3dae91295c0b7a2a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa9fb040c3b82e79245f4111e29493eaf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_h_a_l___r_e_v_p_h_faults.html">HAL_REVPHFaults</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__rev__ph.html#gaa9fb040c3b82e79245f4111e29493eaf">HAL_GetREVPHFaults</a> (<a class="el" href="group__hal__types.html#gae3a4214d066684c281a11333c0ebf03c">HAL_REVPHHandle</a> handle, int32_t *status)</td></tr>
+<tr class="separator:gaa9fb040c3b82e79245f4111e29493eaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa34f8496600e346560f5d43d58c7fc59"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_h_a_l___r_e_v_p_h_sticky_faults.html">HAL_REVPHStickyFaults</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__rev__ph.html#gaa34f8496600e346560f5d43d58c7fc59">HAL_GetREVPHStickyFaults</a> (<a class="el" href="group__hal__types.html#gae3a4214d066684c281a11333c0ebf03c">HAL_REVPHHandle</a> handle, int32_t *status)</td></tr>
+<tr class="separator:gaa34f8496600e346560f5d43d58c7fc59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Function Documentation</h2>
@@ -161,6 +189,26 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="gac493ef38f5557da40d01d4c9490dfbb8" name="gac493ef38f5557da40d01d4c9490dfbb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac493ef38f5557da40d01d4c9490dfbb8">&#9670;&nbsp;</a></span>HAL_ENUM()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HAL_ENUM </td>
+          <td>(</td>
+          <td class="paramtype">HAL_REVPHCompressorConfigType&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The compressor configuration type. </p>
 
 </div>
 </div>
@@ -256,34 +304,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga3088ea66d002af3c1ff6ae2b23ee399f" name="ga3088ea66d002af3c1ff6ae2b23ee399f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3088ea66d002af3c1ff6ae2b23ee399f">&#9670;&nbsp;</a></span>HAL_GetREVPHClosedLoopControl()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a> HAL_GetREVPHClosedLoopControl </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__hal__types.html#gae3a4214d066684c281a11333c0ebf03c">HAL_REVPHHandle</a>&#160;</td>
-          <td class="paramname"><em>handle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int32_t *&#160;</td>
-          <td class="paramname"><em>status</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="gaedc576384089784816b381679720fd09" name="gaedc576384089784816b381679720fd09"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaedc576384089784816b381679720fd09">&#9670;&nbsp;</a></span>HAL_GetREVPHCompressor()</h2>
 
@@ -312,6 +332,34 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ga27456b679b6456a9b76517d21064f6a4" name="ga27456b679b6456a9b76517d21064f6a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga27456b679b6456a9b76517d21064f6a4">&#9670;&nbsp;</a></span>HAL_GetREVPHCompressorConfig()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">HAL_REVPHCompressorConfigType HAL_GetREVPHCompressorConfig </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#gae3a4214d066684c281a11333c0ebf03c">HAL_REVPHHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t *&#160;</td>
+          <td class="paramname"><em>status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="gab7cb13ace23b86a7fd2608a270907360" name="gab7cb13ace23b86a7fd2608a270907360"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gab7cb13ace23b86a7fd2608a270907360">&#9670;&nbsp;</a></span>HAL_GetREVPHCompressorCurrent()</h2>
 
@@ -320,6 +368,34 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">double HAL_GetREVPHCompressorCurrent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#gae3a4214d066684c281a11333c0ebf03c">HAL_REVPHHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t *&#160;</td>
+          <td class="paramname"><em>status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa9fb040c3b82e79245f4111e29493eaf" name="gaa9fb040c3b82e79245f4111e29493eaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa9fb040c3b82e79245f4111e29493eaf">&#9670;&nbsp;</a></span>HAL_GetREVPHFaults()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_h_a_l___r_e_v_p_h_faults.html">HAL_REVPHFaults</a> HAL_GetREVPHFaults </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__hal__types.html#gae3a4214d066684c281a11333c0ebf03c">HAL_REVPHHandle</a>&#160;</td>
           <td class="paramname"><em>handle</em>, </td>
@@ -396,6 +472,34 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="gaa34f8496600e346560f5d43d58c7fc59" name="gaa34f8496600e346560f5d43d58c7fc59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa34f8496600e346560f5d43d58c7fc59">&#9670;&nbsp;</a></span>HAL_GetREVPHStickyFaults()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_h_a_l___r_e_v_p_h_sticky_faults.html">HAL_REVPHStickyFaults</a> HAL_GetREVPHStickyFaults </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#gae3a4214d066684c281a11333c0ebf03c">HAL_REVPHHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t *&#160;</td>
+          <td class="paramname"><em>status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ga750af87a7c5278ab2d140bbdbf030811" name="ga750af87a7c5278ab2d140bbdbf030811"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga750af87a7c5278ab2d140bbdbf030811">&#9670;&nbsp;</a></span>HAL_InitializeREVPH()</h2>
 
@@ -430,14 +534,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga56032d67b4962968e483a275fba1ced0" name="ga56032d67b4962968e483a275fba1ced0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga56032d67b4962968e483a275fba1ced0">&#9670;&nbsp;</a></span>HAL_SetREVPHClosedLoopControl()</h2>
+<a id="gaa48f2f99050d2baaca3e3d36f2f20d18" name="gaa48f2f99050d2baaca3e3d36f2f20d18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa48f2f99050d2baaca3e3d36f2f20d18">&#9670;&nbsp;</a></span>HAL_SetREVPHClosedLoopControlAnalog()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void HAL_SetREVPHClosedLoopControl </td>
+          <td class="memname">void HAL_SetREVPHClosedLoopControlAnalog </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__hal__types.html#gae3a4214d066684c281a11333c0ebf03c">HAL_REVPHHandle</a>&#160;</td>
           <td class="paramname"><em>handle</em>, </td>
@@ -445,8 +549,144 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a>&#160;</td>
-          <td class="paramname"><em>enabled</em>, </td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>minAnalogVoltage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>maxAnalogVoltage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t *&#160;</td>
+          <td class="paramname"><em>status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa4825dd1c18d63473d6f98a20b3592d7" name="gaa4825dd1c18d63473d6f98a20b3592d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa4825dd1c18d63473d6f98a20b3592d7">&#9670;&nbsp;</a></span>HAL_SetREVPHClosedLoopControlDigital()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HAL_SetREVPHClosedLoopControlDigital </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#gae3a4214d066684c281a11333c0ebf03c">HAL_REVPHHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t *&#160;</td>
+          <td class="paramname"><em>status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga62dcb0019475fa52aec1384280b72c17" name="ga62dcb0019475fa52aec1384280b72c17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga62dcb0019475fa52aec1384280b72c17">&#9670;&nbsp;</a></span>HAL_SetREVPHClosedLoopControlDisabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HAL_SetREVPHClosedLoopControlDisabled </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#gae3a4214d066684c281a11333c0ebf03c">HAL_REVPHHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t *&#160;</td>
+          <td class="paramname"><em>status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gab2a94030388297e8fb6be85225f1b8c4" name="gab2a94030388297e8fb6be85225f1b8c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab2a94030388297e8fb6be85225f1b8c4">&#9670;&nbsp;</a></span>HAL_SetREVPHClosedLoopControlHybrid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HAL_SetREVPHClosedLoopControlHybrid </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#gae3a4214d066684c281a11333c0ebf03c">HAL_REVPHHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>minAnalogVoltage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>maxAnalogVoltage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t *&#160;</td>
+          <td class="paramname"><em>status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gafa7b94751546e572f14456f02e5ae9e0" name="gafa7b94751546e572f14456f02e5ae9e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafa7b94751546e572f14456f02e5ae9e0">&#9670;&nbsp;</a></span>HAL_SetREVPHCompressorConfig()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HAL_SetREVPHCompressorConfig </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__hal__types.html#gae3a4214d066684c281a11333c0ebf03c">HAL_REVPHHandle</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_h_a_l___r_e_v_p_h_compressor_config.html">HAL_REVPHCompressorConfig</a> *&#160;</td>
+          <td class="paramname"><em>config</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -509,7 +749,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Nov 11 2021 02:25:57 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Nov 27 2021 19:20:24 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

@@ -21,7 +21,6 @@ var dir_0e042f599448b2c33df19dc2eb4b18db =
     [ "SymbolicIndex.h", "_symbolic_index_8h.html", [
       [ "Eigen::symbolic::ValueExpr< IndexType >", "class_eigen_1_1symbolic_1_1_value_expr.html", "class_eigen_1_1symbolic_1_1_value_expr" ],
       [ "Eigen::symbolic::ValueExpr< internal::FixedInt< N > >", "class_eigen_1_1symbolic_1_1_value_expr_3_01internal_1_1_fixed_int_3_01_n_01_4_01_4.html", "class_eigen_1_1symbolic_1_1_value_expr_3_01internal_1_1_fixed_int_3_01_n_01_4_01_4" ],
-      [ "Eigen::symbolic::BaseExpr< Derived >", "class_eigen_1_1symbolic_1_1_base_expr.html", "class_eigen_1_1symbolic_1_1_base_expr" ],
       [ "Eigen::symbolic::is_symbolic< T >", "struct_eigen_1_1symbolic_1_1is__symbolic.html", null ],
       [ "Eigen::symbolic::SymbolValue< Tag >", "class_eigen_1_1symbolic_1_1_symbol_value.html", "class_eigen_1_1symbolic_1_1_symbol_value" ],
       [ "Eigen::symbolic::SymbolExpr< tag >", "class_eigen_1_1symbolic_1_1_symbol_expr.html", "class_eigen_1_1symbolic_1_1_symbol_expr" ],

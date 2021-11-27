@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-3</span>
    </div>
   </td>
  </tr>
@@ -255,6 +255,18 @@ Functions</h2></td></tr>
 <tr class="memitem:a3e480ba592c699bb36b4d82656d3c134"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1uv.html#a3e480ba592c699bb36b4d82656d3c134">NameToAddr</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> ip, in6_addr *addr)</td></tr>
 <tr class="memdesc:a3e480ba592c699bb36b4d82656d3c134"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a string containing an IPv6 address to binary format.  <a href="namespacewpi_1_1uv.html#a3e480ba592c699bb36b4d82656d3c134">More...</a><br /></td></tr>
 <tr class="separator:a3e480ba592c699bb36b4d82656d3c134"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a517565ddbb3c0fea140a6ec60c7c9a47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1uv.html#a517565ddbb3c0fea140a6ec60c7c9a47">QueueWork</a> (<a class="el" href="classwpi_1_1uv_1_1_loop.html">Loop</a> &amp;loop, const std::shared_ptr&lt; <a class="el" href="classwpi_1_1uv_1_1_work_req.html">WorkReq</a> &gt; &amp;req)</td></tr>
+<tr class="memdesc:a517565ddbb3c0fea140a6ec60c7c9a47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a work request which will run on the thread pool.  <a href="namespacewpi_1_1uv.html#a517565ddbb3c0fea140a6ec60c7c9a47">More...</a><br /></td></tr>
+<tr class="separator:a517565ddbb3c0fea140a6ec60c7c9a47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab530fe6af79260b0fe47ee837dd92a6d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1uv.html#ab530fe6af79260b0fe47ee837dd92a6d">QueueWork</a> (const std::shared_ptr&lt; <a class="el" href="classwpi_1_1uv_1_1_loop.html">Loop</a> &gt; &amp;loop, const std::shared_ptr&lt; <a class="el" href="classwpi_1_1uv_1_1_work_req.html">WorkReq</a> &gt; &amp;req)</td></tr>
+<tr class="memdesc:ab530fe6af79260b0fe47ee837dd92a6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a work request which will run on the thread pool.  <a href="namespacewpi_1_1uv.html#ab530fe6af79260b0fe47ee837dd92a6d">More...</a><br /></td></tr>
+<tr class="separator:ab530fe6af79260b0fe47ee837dd92a6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8265cfdcc118df24dc08c92830805967"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1uv.html#a8265cfdcc118df24dc08c92830805967">QueueWork</a> (<a class="el" href="classwpi_1_1uv_1_1_loop.html">Loop</a> &amp;loop, std::function&lt; void()&gt; work, std::function&lt; void()&gt; afterWork)</td></tr>
+<tr class="memdesc:a8265cfdcc118df24dc08c92830805967"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a work request which will run on the thread pool.  <a href="namespacewpi_1_1uv.html#a8265cfdcc118df24dc08c92830805967">More...</a><br /></td></tr>
+<tr class="separator:a8265cfdcc118df24dc08c92830805967"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab509dab8b7b2189d66857d09ffe37036"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1uv.html#ab509dab8b7b2189d66857d09ffe37036">QueueWork</a> (const std::shared_ptr&lt; <a class="el" href="classwpi_1_1uv_1_1_loop.html">Loop</a> &gt; &amp;loop, std::function&lt; void()&gt; work, std::function&lt; void()&gt; afterWork)</td></tr>
+<tr class="memdesc:ab509dab8b7b2189d66857d09ffe37036"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a work request which will run on the thread pool.  <a href="namespacewpi_1_1uv.html#ab509dab8b7b2189d66857d09ffe37036">More...</a><br /></td></tr>
+<tr class="separator:ab509dab8b7b2189d66857d09ffe37036"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7214e8e41f8614d081e1be5a424858f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1uv.html#a7214e8e41f8614d081e1be5a424858f1">GetNameInfo</a> (<a class="el" href="classwpi_1_1uv_1_1_loop.html">Loop</a> &amp;loop, const std::shared_ptr&lt; <a class="el" href="classwpi_1_1uv_1_1_get_name_info_req.html">GetNameInfoReq</a> &gt; &amp;req, const sockaddr &amp;addr, int <a class="el" href="namespacewpi.html#a7b0000b45b0b55789f757f1c3d2461cb">flags</a>=0)</td></tr>
 <tr class="memdesc:a7214e8e41f8614d081e1be5a424858f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchronous getnameinfo(3).  <a href="namespacewpi_1_1uv.html#a7214e8e41f8614d081e1be5a424858f1">More...</a><br /></td></tr>
 <tr class="separator:a7214e8e41f8614d081e1be5a424858f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -291,18 +303,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a0d5215fa922231f37cbe083a5c8f1461"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1uv.html#a0d5215fa922231f37cbe083a5c8f1461">GetNameInfo6</a> (const std::shared_ptr&lt; <a class="el" href="classwpi_1_1uv_1_1_loop.html">Loop</a> &gt; &amp;loop, std::function&lt; void(const char *, const char *)&gt; callback, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> ip, unsigned int port, int <a class="el" href="namespacewpi.html#a7b0000b45b0b55789f757f1c3d2461cb">flags</a>=0)</td></tr>
 <tr class="memdesc:a0d5215fa922231f37cbe083a5c8f1461"><td class="mdescLeft">&#160;</td><td class="mdescRight">Asynchronous IPv6 getnameinfo(3).  <a href="namespacewpi_1_1uv.html#a0d5215fa922231f37cbe083a5c8f1461">More...</a><br /></td></tr>
 <tr class="separator:a0d5215fa922231f37cbe083a5c8f1461"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a517565ddbb3c0fea140a6ec60c7c9a47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1uv.html#a517565ddbb3c0fea140a6ec60c7c9a47">QueueWork</a> (<a class="el" href="classwpi_1_1uv_1_1_loop.html">Loop</a> &amp;loop, const std::shared_ptr&lt; <a class="el" href="classwpi_1_1uv_1_1_work_req.html">WorkReq</a> &gt; &amp;req)</td></tr>
-<tr class="memdesc:a517565ddbb3c0fea140a6ec60c7c9a47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a work request which will run on the thread pool.  <a href="namespacewpi_1_1uv.html#a517565ddbb3c0fea140a6ec60c7c9a47">More...</a><br /></td></tr>
-<tr class="separator:a517565ddbb3c0fea140a6ec60c7c9a47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab530fe6af79260b0fe47ee837dd92a6d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1uv.html#ab530fe6af79260b0fe47ee837dd92a6d">QueueWork</a> (const std::shared_ptr&lt; <a class="el" href="classwpi_1_1uv_1_1_loop.html">Loop</a> &gt; &amp;loop, const std::shared_ptr&lt; <a class="el" href="classwpi_1_1uv_1_1_work_req.html">WorkReq</a> &gt; &amp;req)</td></tr>
-<tr class="memdesc:ab530fe6af79260b0fe47ee837dd92a6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a work request which will run on the thread pool.  <a href="namespacewpi_1_1uv.html#ab530fe6af79260b0fe47ee837dd92a6d">More...</a><br /></td></tr>
-<tr class="separator:ab530fe6af79260b0fe47ee837dd92a6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8265cfdcc118df24dc08c92830805967"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1uv.html#a8265cfdcc118df24dc08c92830805967">QueueWork</a> (<a class="el" href="classwpi_1_1uv_1_1_loop.html">Loop</a> &amp;loop, std::function&lt; void()&gt; work, std::function&lt; void()&gt; afterWork)</td></tr>
-<tr class="memdesc:a8265cfdcc118df24dc08c92830805967"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a work request which will run on the thread pool.  <a href="namespacewpi_1_1uv.html#a8265cfdcc118df24dc08c92830805967">More...</a><br /></td></tr>
-<tr class="separator:a8265cfdcc118df24dc08c92830805967"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab509dab8b7b2189d66857d09ffe37036"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi_1_1uv.html#ab509dab8b7b2189d66857d09ffe37036">QueueWork</a> (const std::shared_ptr&lt; <a class="el" href="classwpi_1_1uv_1_1_loop.html">Loop</a> &gt; &amp;loop, std::function&lt; void()&gt; work, std::function&lt; void()&gt; afterWork)</td></tr>
-<tr class="memdesc:ab509dab8b7b2189d66857d09ffe37036"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a work request which will run on the thread pool.  <a href="namespacewpi_1_1uv.html#ab509dab8b7b2189d66857d09ffe37036">More...</a><br /></td></tr>
-<tr class="separator:ab509dab8b7b2189d66857d09ffe37036"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a2fde9e2f062d9f9e6c3cc17f430c249b" name="a2fde9e2f062d9f9e6c3cc17f430c249b"></a>
@@ -1863,7 +1863,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li><li class="navelem"><a class="el" href="namespacewpi_1_1uv.html">uv</a></li>
-    <li class="footer">Generated on Thu Nov 11 2021 02:26:07 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Nov 27 2021 19:20:34 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

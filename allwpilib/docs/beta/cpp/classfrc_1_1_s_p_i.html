@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-3</span>
    </div>
   </td>
  </tr>
@@ -123,8 +123,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a584d5d8c0aa471413e933164c69b4c60"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_s_p_i.html#a584d5d8c0aa471413e933164c69b4c60">SPI</a> (<a class="el" href="classfrc_1_1_s_p_i.html#ad5a4b71c1c453570e8b23d489e15fc03">Port</a> port)</td></tr>
 <tr class="memdesc:a584d5d8c0aa471413e933164c69b4c60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classfrc_1_1_s_p_i.html#a584d5d8c0aa471413e933164c69b4c60">More...</a><br /></td></tr>
 <tr class="separator:a584d5d8c0aa471413e933164c69b4c60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade227dccb960c0ba23a6e34532e33415"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_s_p_i.html#ade227dccb960c0ba23a6e34532e33415">~SPI</a> ()</td></tr>
-<tr class="separator:ade227dccb960c0ba23a6e34532e33415"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c8f8c27aaadf2c0d8483825db0f5901"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_s_p_i.html#a6c8f8c27aaadf2c0d8483825db0f5901">~SPI</a> ()</td></tr>
+<tr class="separator:a6c8f8c27aaadf2c0d8483825db0f5901"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2817c775463cc19be7aaa12a4f6cc96"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_s_p_i.html#aa2817c775463cc19be7aaa12a4f6cc96">SPI</a> (<a class="el" href="classfrc_1_1_s_p_i.html">SPI</a> &amp;&amp;)=default</td></tr>
 <tr class="separator:aa2817c775463cc19be7aaa12a4f6cc96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac865f4382b8fde6094ad0f34957f0f68"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfrc_1_1_s_p_i.html">SPI</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_s_p_i.html#ac865f4382b8fde6094ad0f34957f0f68">operator=</a> (<a class="el" href="classfrc_1_1_s_p_i.html">SPI</a> &amp;&amp;)=default</td></tr>
@@ -320,19 +320,27 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ade227dccb960c0ba23a6e34532e33415" name="ade227dccb960c0ba23a6e34532e33415"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade227dccb960c0ba23a6e34532e33415">&#9670;&nbsp;</a></span>~SPI()</h2>
+<a id="a6c8f8c27aaadf2c0d8483825db0f5901" name="a6c8f8c27aaadf2c0d8483825db0f5901"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c8f8c27aaadf2c0d8483825db0f5901">&#9670;&nbsp;</a></span>~SPI()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">frc::SPI::~SPI </td>
+          <td class="memname">virtual frc::SPI::~SPI </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -738,7 +746,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Initialize the accumulator. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000056">Deprecated:</a></b></dt><dd>Use unit-safe version instead. InitAccumulator(units::second_t period, int cmd, int xferSize, int validMask, int validValue, int dataShift, int dataSize, bool isSigned, bool bigEndian)</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000059">Deprecated:</a></b></dt><dd>Use unit-safe version instead. InitAccumulator(units::second_t period, int cmd, int xferSize, int validMask, int validValue, int dataShift, int dataSize, bool isSigned, bool bigEndian)</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">period</td><td>Time between reads </td></tr>
@@ -1275,7 +1283,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Configure that the data is stable on the falling edge and the data changes on the rising edge. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000053">Deprecated:</a></b></dt><dd>Use <a class="el" href="classfrc_1_1_s_p_i.html#ab4cc05f9f0c8ae3ce16757ce4b1c4a80" title="Configure that the data is stable on the trailing edge and the data changes on the leading edge.">SetSampleDataOnTrailingEdge()</a> instead.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000056">Deprecated:</a></b></dt><dd>Use <a class="el" href="classfrc_1_1_s_p_i.html#ab4cc05f9f0c8ae3ce16757ce4b1c4a80" title="Configure that the data is stable on the trailing edge and the data changes on the leading edge.">SetSampleDataOnTrailingEdge()</a> instead.</dd></dl>
 
 </div>
 </div>
@@ -1314,7 +1322,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Configure that the data is stable on the rising edge and the data changes on the falling edge. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000054">Deprecated:</a></b></dt><dd>Use <a class="el" href="classfrc_1_1_s_p_i.html#ab78a7f35b03ccc3d62b656d5430a5eb9" title="Configure that the data is stable on the leading edge and the data changes on the trailing edge.">SetSampleDataOnLeadingEdge()</a> instead.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000057">Deprecated:</a></b></dt><dd>Use <a class="el" href="classfrc_1_1_s_p_i.html#ab78a7f35b03ccc3d62b656d5430a5eb9" title="Configure that the data is stable on the leading edge and the data changes on the trailing edge.">SetSampleDataOnLeadingEdge()</a> instead.</dd></dl>
 
 </div>
 </div>
@@ -1355,7 +1363,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Start running the automatic <a class="el" href="classfrc_1_1_s_p_i.html" title="SPI bus interface class.">SPI</a> transfer engine at a periodic rate. </p>
 <p ><a class="el" href="classfrc_1_1_s_p_i.html#ade47943406f4534df47293166dd2dae6" title="Initialize automatic SPI transfer engine.">InitAuto()</a> and <a class="el" href="classfrc_1_1_s_p_i.html#a744aac37ffe2f9f81a770492970aee96" title="Set the data to be transmitted by the engine.">SetAutoTransmitData()</a> must be called before calling this function.</p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000055">Deprecated:</a></b></dt><dd>use unit-safe <a class="el" href="classfrc_1_1_s_p_i.html#a7d77b758daa0cc642fcd08482b70f07d" title="Start running the automatic SPI transfer engine at a periodic rate.">StartAutoRate(units::second_t period)</a> instead.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000058">Deprecated:</a></b></dt><dd>use unit-safe <a class="el" href="classfrc_1_1_s_p_i.html#a7d77b758daa0cc642fcd08482b70f07d" title="Start running the automatic SPI transfer engine at a periodic rate.">StartAutoRate(units::second_t period)</a> instead.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">period</td><td>period between transfers, in seconds (us resolution) </td></tr>
@@ -1646,7 +1654,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_s_p_i.html">SPI</a></li>
-    <li class="footer">Generated on Thu Nov 11 2021 02:26:04 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Nov 27 2021 19:20:31 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

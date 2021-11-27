@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>WPILibC++: Relay Output Functions</title>
+<title>WPILibC++: Main loop functions</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-2</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-3</span>
    </div>
   </td>
  </tr>
@@ -93,12 +93,24 @@ $(document).ready(function(){initNavTree('group__hal__relay.html',''); initResiz
 <div class="header">
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">Relay Output Functions<div class="ingroups"><a class="el" href="group__hal__capi.html">WPILib HAL API</a></div></div></div>
+  <div class="headertitle"><div class="title">Main loop functions<div class="ingroups"><a class="el" href="group__hal__capi.html">WPILib HAL API</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ga66cdf67a66681444a472b9319e3dcb90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__relay.html#ga66cdf67a66681444a472b9319e3dcb90">HAL_SetMain</a> (void *param, void(*mainFunc)(void *), void(*exitFunc)(void *))</td></tr>
+<tr class="memdesc:ga66cdf67a66681444a472b9319e3dcb90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets up the system to run the provided main loop in the main thread (e.g.  <a href="group__hal__relay.html#ga66cdf67a66681444a472b9319e3dcb90">More...</a><br /></td></tr>
+<tr class="separator:ga66cdf67a66681444a472b9319e3dcb90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadf0b5133a2848804f15298579e9e94dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__relay.html#gadf0b5133a2848804f15298579e9e94dc">HAL_HasMain</a> (void)</td></tr>
+<tr class="memdesc:gadf0b5133a2848804f15298579e9e94dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if <a class="el" href="group__hal__relay.html#ga66cdf67a66681444a472b9319e3dcb90" title="Sets up the system to run the provided main loop in the main thread (e.g.">HAL_SetMain()</a> has been called.  <a href="group__hal__relay.html#gadf0b5133a2848804f15298579e9e94dc">More...</a><br /></td></tr>
+<tr class="separator:gadf0b5133a2848804f15298579e9e94dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5a2669a007e3a128476891f5712c9543"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__relay.html#ga5a2669a007e3a128476891f5712c9543">HAL_RunMain</a> (void)</td></tr>
+<tr class="memdesc:ga5a2669a007e3a128476891f5712c9543"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the main function provided to <a class="el" href="group__hal__relay.html#ga66cdf67a66681444a472b9319e3dcb90" title="Sets up the system to run the provided main loop in the main thread (e.g.">HAL_SetMain()</a>.  <a href="group__hal__relay.html#ga5a2669a007e3a128476891f5712c9543">More...</a><br /></td></tr>
+<tr class="separator:ga5a2669a007e3a128476891f5712c9543"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf51728a6358166efc0a0e30678c907a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__relay.html#gaf51728a6358166efc0a0e30678c907a6">HAL_ExitMain</a> (void)</td></tr>
+<tr class="memdesc:gaf51728a6358166efc0a0e30678c907a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Causes <a class="el" href="group__hal__relay.html#ga5a2669a007e3a128476891f5712c9543" title="Runs the main function provided to HAL_SetMain().">HAL_RunMain()</a> to exit.  <a href="group__hal__relay.html#gaf51728a6358166efc0a0e30678c907a6">More...</a><br /></td></tr>
+<tr class="separator:gaf51728a6358166efc0a0e30678c907a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadf040f28ee5149bc748e2305c1a31a3f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__hal__types.html#gaec8309df99bc5b4a5b15a71804fef9d5">HAL_RelayHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__relay.html#gadf040f28ee5149bc748e2305c1a31a3f">HAL_InitializeRelayPort</a> (<a class="el" href="group__hal__types.html#ga5e9644ba085a365cba2614c02e003a33">HAL_PortHandle</a> portHandle, <a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a> fwd, const char *allocationLocation, int32_t *status)</td></tr>
 <tr class="memdesc:gadf040f28ee5149bc748e2305c1a31a3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a relay.  <a href="group__hal__relay.html#gadf040f28ee5149bc748e2305c1a31a3f">More...</a><br /></td></tr>
 <tr class="separator:gadf040f28ee5149bc748e2305c1a31a3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -114,18 +126,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ga9dbde33a4fa2ae209a43dc1b62b93cab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__relay.html#ga9dbde33a4fa2ae209a43dc1b62b93cab">HAL_GetRelay</a> (<a class="el" href="group__hal__types.html#gaec8309df99bc5b4a5b15a71804fef9d5">HAL_RelayHandle</a> relayPortHandle, int32_t *status)</td></tr>
 <tr class="memdesc:ga9dbde33a4fa2ae209a43dc1b62b93cab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current state of the relay channel.  <a href="group__hal__relay.html#ga9dbde33a4fa2ae209a43dc1b62b93cab">More...</a><br /></td></tr>
 <tr class="separator:ga9dbde33a4fa2ae209a43dc1b62b93cab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga66cdf67a66681444a472b9319e3dcb90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__relay.html#ga66cdf67a66681444a472b9319e3dcb90">HAL_SetMain</a> (void *param, void(*mainFunc)(void *), void(*exitFunc)(void *))</td></tr>
-<tr class="memdesc:ga66cdf67a66681444a472b9319e3dcb90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets up the system to run the provided main loop in the main thread (e.g.  <a href="group__hal__relay.html#ga66cdf67a66681444a472b9319e3dcb90">More...</a><br /></td></tr>
-<tr class="separator:ga66cdf67a66681444a472b9319e3dcb90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadf0b5133a2848804f15298579e9e94dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__hal__types.html#ga54a394e45c7b01a0400f147cf3434e8c">HAL_Bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__relay.html#gadf0b5133a2848804f15298579e9e94dc">HAL_HasMain</a> (void)</td></tr>
-<tr class="memdesc:gadf0b5133a2848804f15298579e9e94dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if <a class="el" href="group__hal__relay.html#ga66cdf67a66681444a472b9319e3dcb90" title="Sets up the system to run the provided main loop in the main thread (e.g.">HAL_SetMain()</a> has been called.  <a href="group__hal__relay.html#gadf0b5133a2848804f15298579e9e94dc">More...</a><br /></td></tr>
-<tr class="separator:gadf0b5133a2848804f15298579e9e94dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5a2669a007e3a128476891f5712c9543"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__relay.html#ga5a2669a007e3a128476891f5712c9543">HAL_RunMain</a> (void)</td></tr>
-<tr class="memdesc:ga5a2669a007e3a128476891f5712c9543"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the main function provided to <a class="el" href="group__hal__relay.html#ga66cdf67a66681444a472b9319e3dcb90" title="Sets up the system to run the provided main loop in the main thread (e.g.">HAL_SetMain()</a>.  <a href="group__hal__relay.html#ga5a2669a007e3a128476891f5712c9543">More...</a><br /></td></tr>
-<tr class="separator:ga5a2669a007e3a128476891f5712c9543"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf51728a6358166efc0a0e30678c907a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hal__relay.html#gaf51728a6358166efc0a0e30678c907a6">HAL_ExitMain</a> (void)</td></tr>
-<tr class="memdesc:gaf51728a6358166efc0a0e30678c907a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Causes <a class="el" href="group__hal__relay.html#ga5a2669a007e3a128476891f5712c9543" title="Runs the main function provided to HAL_SetMain().">HAL_RunMain()</a> to exit.  <a href="group__hal__relay.html#gaf51728a6358166efc0a0e30678c907a6">More...</a><br /></td></tr>
-<tr class="separator:gaf51728a6358166efc0a0e30678c907a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Function Documentation</h2>
@@ -432,7 +432,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Nov 11 2021 02:25:57 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Nov 27 2021 19:20:24 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

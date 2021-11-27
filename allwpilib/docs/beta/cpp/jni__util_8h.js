@@ -26,5 +26,6 @@ var jni__util_8h =
     [ "MakeJIntArray", "jni__util_8h.html#afd8252e0c11698f82fa6a139a9b69268", null ],
     [ "MakeJIntArray", "jni__util_8h.html#aaf77f2f93ed39e36454dc10072314efc", null ],
     [ "MakeJString", "jni__util_8h.html#a03d617c196aeee2778c8b22699dd4acb", null ],
-    [ "MakeJStringArray", "jni__util_8h.html#a70b85e53225cfdd4f6e038b20f922737", null ]
+    [ "MakeJStringArray", "jni__util_8h.html#a70b85e53225cfdd4f6e038b20f922737", null ],
+    [ "MakeJStringArray", "jni__util_8h.html#add6978ead113293b425c42ceb63698d7", null ]
 ];

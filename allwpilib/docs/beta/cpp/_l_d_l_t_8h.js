@@ -1,7 +1,6 @@
 var _l_d_l_t_8h =
 [
     [ "Eigen::internal::traits< LDLT< _MatrixType, _UpLo > >", "struct_eigen_1_1internal_1_1traits_3_01_l_d_l_t_3_01___matrix_type_00_01___up_lo_01_4_01_4.html", "struct_eigen_1_1internal_1_1traits_3_01_l_d_l_t_3_01___matrix_type_00_01___up_lo_01_4_01_4" ],
-    [ "Eigen::LDLT< _MatrixType, _UpLo >", "class_eigen_1_1_l_d_l_t.html", "class_eigen_1_1_l_d_l_t" ],
     [ "Eigen::internal::ldlt_inplace< Lower >", "struct_eigen_1_1internal_1_1ldlt__inplace_3_01_lower_01_4.html", "struct_eigen_1_1internal_1_1ldlt__inplace_3_01_lower_01_4" ],
     [ "Eigen::internal::ldlt_inplace< Upper >", "struct_eigen_1_1internal_1_1ldlt__inplace_3_01_upper_01_4.html", "struct_eigen_1_1internal_1_1ldlt__inplace_3_01_upper_01_4" ],
     [ "Eigen::internal::LDLT_Traits< MatrixType, Lower >", "struct_eigen_1_1internal_1_1_l_d_l_t___traits_3_01_matrix_type_00_01_lower_01_4.html", "struct_eigen_1_1internal_1_1_l_d_l_t___traits_3_01_matrix_type_00_01_lower_01_4" ],
