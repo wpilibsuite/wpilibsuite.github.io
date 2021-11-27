@@ -156,28 +156,28 @@
 <span class="sourceLineNo">144</span><a id="line.144">   * @return the {@link CallbackStore} object associated with this callback. Save a reference to</a>
 <span class="sourceLineNo">145</span><a id="line.145">   *     this object so GC doesn't cancel the callback.</a>
 <span class="sourceLineNo">146</span><a id="line.146">   */</a>
-<span class="sourceLineNo">147</span><a id="line.147">  public CallbackStore registerClosedLoopEnabledCallback(</a>
+<span class="sourceLineNo">147</span><a id="line.147">  public CallbackStore registerCompressorConfigTypeCallback(</a>
 <span class="sourceLineNo">148</span><a id="line.148">      NotifyCallback callback, boolean initialNotify) {</a>
-<span class="sourceLineNo">149</span><a id="line.149">    int uid = REVPHDataJNI.registerClosedLoopEnabledCallback(m_index, callback, initialNotify);</a>
-<span class="sourceLineNo">150</span><a id="line.150">    return new CallbackStore(m_index, uid, REVPHDataJNI::cancelClosedLoopEnabledCallback);</a>
+<span class="sourceLineNo">149</span><a id="line.149">    int uid = REVPHDataJNI.registerCompressorConfigTypeCallback(m_index, callback, initialNotify);</a>
+<span class="sourceLineNo">150</span><a id="line.150">    return new CallbackStore(m_index, uid, REVPHDataJNI::cancelCompressorConfigTypeCallback);</a>
 <span class="sourceLineNo">151</span><a id="line.151">  }</a>
 <span class="sourceLineNo">152</span><a id="line.152"></a>
 <span class="sourceLineNo">153</span><a id="line.153">  /**</a>
 <span class="sourceLineNo">154</span><a id="line.154">   * Check whether the closed loop compressor control is active.</a>
 <span class="sourceLineNo">155</span><a id="line.155">   *</a>
-<span class="sourceLineNo">156</span><a id="line.156">   * @return true if active</a>
+<span class="sourceLineNo">156</span><a id="line.156">   * @return config type</a>
 <span class="sourceLineNo">157</span><a id="line.157">   */</a>
-<span class="sourceLineNo">158</span><a id="line.158">  public boolean getClosedLoopEnabled() {</a>
-<span class="sourceLineNo">159</span><a id="line.159">    return REVPHDataJNI.getClosedLoopEnabled(m_index);</a>
+<span class="sourceLineNo">158</span><a id="line.158">  public int getCompressorConfigType() {</a>
+<span class="sourceLineNo">159</span><a id="line.159">    return REVPHDataJNI.getCompressorConfigType(m_index);</a>
 <span class="sourceLineNo">160</span><a id="line.160">  }</a>
 <span class="sourceLineNo">161</span><a id="line.161"></a>
 <span class="sourceLineNo">162</span><a id="line.162">  /**</a>
 <span class="sourceLineNo">163</span><a id="line.163">   * Turn on/off the closed loop control of the compressor.</a>
 <span class="sourceLineNo">164</span><a id="line.164">   *</a>
-<span class="sourceLineNo">165</span><a id="line.165">   * @param closedLoopEnabled whether the control loop is active</a>
+<span class="sourceLineNo">165</span><a id="line.165">   * @param compressorConfigType compressor config type</a>
 <span class="sourceLineNo">166</span><a id="line.166">   */</a>
-<span class="sourceLineNo">167</span><a id="line.167">  public void setClosedLoopEnabled(boolean closedLoopEnabled) {</a>
-<span class="sourceLineNo">168</span><a id="line.168">    REVPHDataJNI.setClosedLoopEnabled(m_index, closedLoopEnabled);</a>
+<span class="sourceLineNo">167</span><a id="line.167">  public void setCompressorConfigType(int compressorConfigType) {</a>
+<span class="sourceLineNo">168</span><a id="line.168">    REVPHDataJNI.setCompressorConfigType(m_index, compressorConfigType);</a>
 <span class="sourceLineNo">169</span><a id="line.169">  }</a>
 <span class="sourceLineNo">170</span><a id="line.170"></a>
 <span class="sourceLineNo">171</span><a id="line.171">  /**</a>
