@@ -1030,6 +1030,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a6670129d8dd67d55733dacac82fb6354"><td class="memItemLeft" align="right" valign="top">std::string_view::size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a6670129d8dd67d55733dacac82fb6354">rfind_lower</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> str, const char *other) noexcept</td></tr>
 <tr class="memdesc:a6670129d8dd67d55733dacac82fb6354"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search for the last string <code>other</code> in <code>str</code>, ignoring case.  <a href="namespacewpi.html#a6670129d8dd67d55733dacac82fb6354">More...</a><br /></td></tr>
 <tr class="separator:a6670129d8dd67d55733dacac82fb6354"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f010ee3e4dec5c5697534c0059aa046"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a7f010ee3e4dec5c5697534c0059aa046">substr</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> str, std::string_view::size_type start, std::string_view::size_type n=std::string_view::npos) noexcept</td></tr>
+<tr class="memdesc:a7f010ee3e4dec5c5697534c0059aa046"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the substring of <code>str</code> from [start, start + n).  <a href="namespacewpi.html#a7f010ee3e4dec5c5697534c0059aa046">More...</a><br /></td></tr>
+<tr class="separator:a7f010ee3e4dec5c5697534c0059aa046"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0739f65c4cc2835777cc34e9241c377"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#af0739f65c4cc2835777cc34e9241c377">starts_with</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> str, <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> prefix) noexcept</td></tr>
 <tr class="memdesc:af0739f65c4cc2835777cc34e9241c377"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if <code>str</code> starts with the given <code>prefix</code>.  <a href="namespacewpi.html#af0739f65c4cc2835777cc34e9241c377">More...</a><br /></td></tr>
 <tr class="separator:af0739f65c4cc2835777cc34e9241c377"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1090,6 +1093,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a7f57db8fe105b74dbfbd5897fa695c14"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a7f57db8fe105b74dbfbd5897fa695c14">drop_back</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> str, std::string_view::size_type n=1) noexcept</td></tr>
 <tr class="memdesc:a7f57db8fe105b74dbfbd5897fa695c14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a string_view equal to <code>str</code> but with the last <code>n</code> elements dropped.  <a href="namespacewpi.html#a7f57db8fe105b74dbfbd5897fa695c14">More...</a><br /></td></tr>
 <tr class="separator:a7f57db8fe105b74dbfbd5897fa695c14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff2f9b2ee4f037743d32eb831bb487c4"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#aff2f9b2ee4f037743d32eb831bb487c4">take_front</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> str, std::string_view::size_type n=1) noexcept</td></tr>
+<tr class="memdesc:aff2f9b2ee4f037743d32eb831bb487c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a view equal to <code>str</code> but with only the first <code>n</code> elements remaining.  <a href="namespacewpi.html#aff2f9b2ee4f037743d32eb831bb487c4">More...</a><br /></td></tr>
+<tr class="separator:aff2f9b2ee4f037743d32eb831bb487c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8a98666f01d85b3920861e2477e7926"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#aa8a98666f01d85b3920861e2477e7926">take_back</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> str, std::string_view::size_type n=1) noexcept</td></tr>
+<tr class="memdesc:aa8a98666f01d85b3920861e2477e7926"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a view equal to <code>str</code> but with only the last <code>n</code> elements remaining.  <a href="namespacewpi.html#aa8a98666f01d85b3920861e2477e7926">More...</a><br /></td></tr>
+<tr class="separator:aa8a98666f01d85b3920861e2477e7926"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f22fd8158dd46fe207d828ab907c6a9"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacewpi.html#a0f22fd8158dd46fe207d828ab907c6a9">slice</a> (<a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> str, std::string_view::size_type start, std::string_view::size_type end) noexcept</td></tr>
 <tr class="memdesc:a0f22fd8158dd46fe207d828ab907c6a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the substring of <code>str</code> from [start, end).  <a href="namespacewpi.html#a0f22fd8158dd46fe207d828ab907c6a9">More...</a><br /></td></tr>
 <tr class="separator:a0f22fd8158dd46fe207d828ab907c6a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -9396,6 +9405,135 @@ template&lt;class T , size_t N&gt; </div>
 
 </div>
 </div>
+<a id="a7f010ee3e4dec5c5697534c0059aa046" name="a7f010ee3e4dec5c5697534c0059aa046"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f010ee3e4dec5c5697534c0059aa046">&#9670;&nbsp;</a></span>substr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> wpi::substr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string_view::size_type&#160;</td>
+          <td class="paramname"><em>start</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string_view::size_type&#160;</td>
+          <td class="paramname"><em>n</em> = <code>std::string_view::npos</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the substring of <code>str</code> from [start, start + n). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">start</td><td>The index of the starting character in the substring; if the index is npos or greater than the length of the string then the empty substring will be returned.</td></tr>
+    <tr><td class="paramname">n</td><td>The number of characters to included in the substring. If n exceeds the number of characters remaining in the string, the string suffix (starting with <code>start</code>) will be returned. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa8a98666f01d85b3920861e2477e7926" name="aa8a98666f01d85b3920861e2477e7926"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8a98666f01d85b3920861e2477e7926">&#9670;&nbsp;</a></span>take_back()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> wpi::take_back </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string_view::size_type&#160;</td>
+          <td class="paramname"><em>n</em> = <code>1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a view equal to <code>str</code> but with only the last <code>n</code> elements remaining. </p>
+<p >If <code>n</code> is greater than the length of the string, the entire string is returned. </p>
+
+</div>
+</div>
+<a id="aff2f9b2ee4f037743d32eb831bb487c4" name="aff2f9b2ee4f037743d32eb831bb487c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff2f9b2ee4f037743d32eb831bb487c4">&#9670;&nbsp;</a></span>take_front()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> wpi::take_front </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramname"><em>str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string_view::size_type&#160;</td>
+          <td class="paramname"><em>n</em> = <code>1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a view equal to <code>str</code> but with only the first <code>n</code> elements remaining. </p>
+<p >If <code>n</code> is greater than the length of the string, the entire string is returned. </p>
+
+</div>
+</div>
 <a id="a47d0773c177190213ead75a95fe7fc46" name="a47d0773c177190213ead75a95fe7fc46"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a47d0773c177190213ead75a95fe7fc46">&#9670;&nbsp;</a></span>toLower()</h2>
 
@@ -9816,7 +9954,7 @@ template&lt;class T , size_t N&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacewpi.html">wpi</a></li>
-    <li class="footer">Generated on Sat Nov 27 2021 19:20:33 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Nov 28 2021 05:35:17 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
