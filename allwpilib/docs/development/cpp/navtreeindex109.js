@@ -1,5 +1,6 @@
 var NAVTREEINDEX109 =
 {
+"group__cscore__c__api.html#ggafd2b8be5bc92a0a85ec51d40af1d1322acd1fea783197c3a5a6a577a98e8f6ff5":[3,11,30,6],
 "group__cscore__c__api.html#ggafd2b8be5bc92a0a85ec51d40af1d1322ad006566272bc582192fe56bd147c59de":[3,11,30,10],
 "group__cscore__c__api.html#ggafd2b8be5bc92a0a85ec51d40af1d1322adee5eaa684a5a52054ad0d74f123a7e9":[3,11,30,7],
 "group__cscore__camera__property__func.html":[3,13,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX109 =
 "group__cscore__usbcamera__cfunc.html#ga677c046028ed1f1b8df4970362989d1c":[3,11,5,0],
 "group__cscore__usbcamera__cfunc.html#gade5e1d1755eebf099beba279cfcb87c3":[3,11,5,2],
 "group__cscore__usbcamera__cfunc.html#gaf20e10071bc6485edeaf5b13e8d9fd1b":[3,11,5,1],
-"group__cscore__usbcamera__func.html":[3,13,4],
-"group__cscore__usbcamera__func.html#ga5720a0a76f3bb8bceaa8db89ff4482ab":[3,13,4,0]
+"group__cscore__usbcamera__func.html":[3,13,4]
 };

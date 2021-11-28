@@ -1,5 +1,6 @@
 var NAVTREEINDEX112 =
 {
+"group__hal__errors.html#ga01ecb9d6ea0dc15d38fae6a35fcd71d2":[3,1,8,28],
 "group__hal__errors.html#ga083e21f7fd6914bc430c977ac9fdc519":[3,1,8,69],
 "group__hal__errors.html#ga0a9e9d097bbf67b3718683b04c9a5d38":[3,1,8,51],
 "group__hal__errors.html#ga0f1d325131d0a38133b09748be099b9a":[3,1,8,17],
@@ -248,6 +249,5 @@ var NAVTREEINDEX112 =
 "group__hal__serialport.html#ga142ac7d0669849f2b77c7b07946d57a1":[3,1,18,9],
 "group__hal__serialport.html#ga1474b8fbb2bb329c8ef77e2e60217423":[3,1,18,14],
 "group__hal__serialport.html#ga1d0aff56a421ada99c255652fe4e4d36":[3,1,18,12],
-"group__hal__serialport.html#ga246b0a38411bdf75e54cf898ad539673":[3,1,18,18],
-"group__hal__serialport.html#ga2726e92155f6064b265b29275992a458":[3,1,18,13]
+"group__hal__serialport.html#ga246b0a38411bdf75e54cf898ad539673":[3,1,18,18]
 };

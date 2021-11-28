@@ -1,5 +1,6 @@
 var NAVTREEINDEX111 =
 {
+"group__hal__analogtrigger.html#ga3e41157e63a8668277ba24ab716f31d2":[3,1,31,3],
 "group__hal__analogtrigger.html#ga48627e2947670c867be01bbce213e9dc":[3,1,31,10],
 "group__hal__analogtrigger.html#ga5416ba50d2c46ecbc8d3ca2d08ef9573":[3,1,31,9],
 "group__hal__analogtrigger.html#ga69e4c7e259fdd1a79a6ac3c04edb89c5":[3,1,31,11],
@@ -248,6 +249,5 @@ var NAVTREEINDEX111 =
 "group__hal__encoder.html#gae4e4cfc0aa3ef5f24f1eeedab2c8b0f6":[3,1,13,8],
 "group__hal__encoder.html#gaf72690908d0ab31d028dfdc5dad136ff":[3,1,13,12],
 "group__hal__encoder.html#gafa07bd7dc73fd175ba7893a95cc86106":[3,1,13,0],
-"group__hal__errors.html":[3,1,8],
-"group__hal__errors.html#ga01ecb9d6ea0dc15d38fae6a35fcd71d2":[3,1,8,28]
+"group__hal__errors.html":[3,1,8]
 };
