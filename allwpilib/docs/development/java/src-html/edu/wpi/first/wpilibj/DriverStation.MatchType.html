@@ -1337,21 +1337,33 @@
 <span class="sourceLineNo">1325</span><a id="line.1325">  }</a>
 <span class="sourceLineNo">1326</span><a id="line.1326"></a>
 <span class="sourceLineNo">1327</span><a id="line.1327">  /**</a>
-<span class="sourceLineNo">1328</span><a id="line.1328">   * Updates the data in the control word cache. Updates if the force parameter is set, or if 50ms</a>
-<span class="sourceLineNo">1329</span><a id="line.1329">   * have passed since the last update.</a>
-<span class="sourceLineNo">1330</span><a id="line.1330">   *</a>
-<span class="sourceLineNo">1331</span><a id="line.1331">   * @param force True to force an update to the cache, otherwise update if 50ms have passed.</a>
-<span class="sourceLineNo">1332</span><a id="line.1332">   */</a>
-<span class="sourceLineNo">1333</span><a id="line.1333">  private static void updateControlWord(boolean force) {</a>
-<span class="sourceLineNo">1334</span><a id="line.1334">    long now = System.currentTimeMillis();</a>
-<span class="sourceLineNo">1335</span><a id="line.1335">    synchronized (m_controlWordMutex) {</a>
-<span class="sourceLineNo">1336</span><a id="line.1336">      if (now - m_lastControlWordUpdate &gt; 50 || force) {</a>
-<span class="sourceLineNo">1337</span><a id="line.1337">        HAL.getControlWord(m_controlWordCache);</a>
-<span class="sourceLineNo">1338</span><a id="line.1338">        m_lastControlWordUpdate = now;</a>
-<span class="sourceLineNo">1339</span><a id="line.1339">      }</a>
-<span class="sourceLineNo">1340</span><a id="line.1340">    }</a>
-<span class="sourceLineNo">1341</span><a id="line.1341">  }</a>
-<span class="sourceLineNo">1342</span><a id="line.1342">}</a>
+<span class="sourceLineNo">1328</span><a id="line.1328">   * Forces a control word cache update, and update the passed in control word.</a>
+<span class="sourceLineNo">1329</span><a id="line.1329">   *</a>
+<span class="sourceLineNo">1330</span><a id="line.1330">   * @param word Word to update.</a>
+<span class="sourceLineNo">1331</span><a id="line.1331">   */</a>
+<span class="sourceLineNo">1332</span><a id="line.1332">  public static void updateControlWordFromCache(ControlWord word) {</a>
+<span class="sourceLineNo">1333</span><a id="line.1333">    synchronized (m_controlWordMutex) {</a>
+<span class="sourceLineNo">1334</span><a id="line.1334">      updateControlWord(true);</a>
+<span class="sourceLineNo">1335</span><a id="line.1335">      word.update(m_controlWordCache);</a>
+<span class="sourceLineNo">1336</span><a id="line.1336">    }</a>
+<span class="sourceLineNo">1337</span><a id="line.1337">  }</a>
+<span class="sourceLineNo">1338</span><a id="line.1338"></a>
+<span class="sourceLineNo">1339</span><a id="line.1339">  /**</a>
+<span class="sourceLineNo">1340</span><a id="line.1340">   * Updates the data in the control word cache. Updates if the force parameter is set, or if 50ms</a>
+<span class="sourceLineNo">1341</span><a id="line.1341">   * have passed since the last update.</a>
+<span class="sourceLineNo">1342</span><a id="line.1342">   *</a>
+<span class="sourceLineNo">1343</span><a id="line.1343">   * @param force True to force an update to the cache, otherwise update if 50ms have passed.</a>
+<span class="sourceLineNo">1344</span><a id="line.1344">   */</a>
+<span class="sourceLineNo">1345</span><a id="line.1345">  private static void updateControlWord(boolean force) {</a>
+<span class="sourceLineNo">1346</span><a id="line.1346">    long now = System.currentTimeMillis();</a>
+<span class="sourceLineNo">1347</span><a id="line.1347">    synchronized (m_controlWordMutex) {</a>
+<span class="sourceLineNo">1348</span><a id="line.1348">      if (now - m_lastControlWordUpdate &gt; 50 || force) {</a>
+<span class="sourceLineNo">1349</span><a id="line.1349">        HAL.getControlWord(m_controlWordCache);</a>
+<span class="sourceLineNo">1350</span><a id="line.1350">        m_lastControlWordUpdate = now;</a>
+<span class="sourceLineNo">1351</span><a id="line.1351">      }</a>
+<span class="sourceLineNo">1352</span><a id="line.1352">    }</a>
+<span class="sourceLineNo">1353</span><a id="line.1353">  }</a>
+<span class="sourceLineNo">1354</span><a id="line.1354">}</a>
 
 
 
