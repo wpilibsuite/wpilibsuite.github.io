@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-3-6-gd51a1d3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-3-7-g1c4a8bf</span>
    </div>
   </td>
  </tr>
@@ -141,10 +141,10 @@ $(document).ready(function(){initNavTree('magnetic__field__strength_8h_source.ht
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">// abbreviation.</span></div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#if !defined(DISABLE_PREDEFINED_UNITS) || \</span></div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">    defined(ENABLE_PREDEFINED_MAGNETIC_FIELD_STRENGTH_UNITS)</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="namespaceunits.html#abbf3a12277f057acc6b6d2518bec2091">   48</a></span><a class="code hl_function" href="namespaceunits.html#a4b48dbb59414aa4e8086c0df76a1586b">UNIT_ADD_WITH_METRIC_PREFIXES</a>(</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="namespaceunits.html#abbf3a12277f057acc6b6d2518bec2091">   48</a></span><a class="code hl_function" href="namespaceunits.html#af44745cefa7531f9cc739e07c17d0229">UNIT_ADD_WITH_METRIC_PREFIXES</a>(</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    magnetic_field_strength, tesla, teslas, Te,</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <a class="code hl_struct" href="structunits_1_1unit.html">unit</a>&lt;std::ratio&lt;1&gt;, <a class="code hl_struct" href="structunits_1_1base__unit.html">units::category::magnetic_field_strength_unit</a>&gt;)</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><a class="code hl_function" href="namespaceunits.html#a561ccbed9f8172380f7247ac4fb2a248">UNIT_ADD</a>(</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><a class="code hl_function" href="namespaceunits.html#a33c85b1d520761c32b424300fb98111c">UNIT_ADD</a>(</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="namespaceunits.html#ae5abc18fc8428c40bbc7805627eb5ad1">   52</a></span>    magnetic_field_strength, <a class="code hl_variable" href="namespaceunits.html#a622851f0b67539bfb3e87b2cf39e6ed1">gauss</a>, <a class="code hl_variable" href="namespaceunits.html#a622851f0b67539bfb3e87b2cf39e6ed1">gauss</a>, <a class="code hl_variable" href="namespaceunits.html#ae5abc18fc8428c40bbc7805627eb5ad1">G</a>,</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <a class="code hl_typedef" href="group___unit_types.html#ga36d8b8cf508bd5ac7854d15f6eaf2d7c">compound_unit</a>&lt;magnetic_flux::<a class="code hl_variable" href="namespaceunits.html#a5e0cd4ef5241a20f2feef3e2d105d86a">maxwell</a>, <a class="code hl_typedef" href="group___unit_manipulators.html#ga18b87c9f4576fb72ddc0b2a516a42d41">inverse</a>&lt;<a class="code hl_typedef" href="group___unit_manipulators.html#ga38048bc5246636a5eb0007262475dc38">squared</a>&lt;length::centimeter&gt;&gt;&gt;)</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
@@ -160,12 +160,12 @@ $(document).ready(function(){initNavTree('magnetic__field__strength_8h_source.ht
 <div class="ttc" id="agroup___unit_types_html_ga36d8b8cf508bd5ac7854d15f6eaf2d7c"><div class="ttname"><a href="group___unit_types.html#ga36d8b8cf508bd5ac7854d15f6eaf2d7c">units::compound_unit</a></div><div class="ttdeci">typename units::detail::compound_impl&lt; U, Us... &gt;::type compound_unit</div><div class="ttdoc">Represents a unit type made up from other units.</div><div class="ttdef"><b>Definition:</b> base.h:1428</div></div>
 <div class="ttc" id="alength_8h_html"><div class="ttname"><a href="length_8h.html">length.h</a></div></div>
 <div class="ttc" id="amagnetic__flux_8h_html"><div class="ttname"><a href="magnetic__flux_8h.html">magnetic_flux.h</a></div></div>
-<div class="ttc" id="anamespaceunits_html"><div class="ttname"><a href="namespaceunits.html">units</a></div><div class="ttdoc">Unit Conversion Library namespace.</div><div class="ttdef"><b>Definition:</b> charge.h:33</div></div>
-<div class="ttc" id="anamespaceunits_html_a4b48dbb59414aa4e8086c0df76a1586b"><div class="ttname"><a href="namespaceunits.html#a4b48dbb59414aa4e8086c0df76a1586b">units::UNIT_ADD_WITH_METRIC_PREFIXES</a></div><div class="ttdeci">UNIT_ADD_WITH_METRIC_PREFIXES(charge, coulomb, coulombs, C, unit&lt; std::ratio&lt; 1 &gt;, units::category::charge_unit &gt;) UNIT_ADD_WITH_METRIC_PREFIXES(charge</div></div>
-<div class="ttc" id="anamespaceunits_html_a561ccbed9f8172380f7247ac4fb2a248"><div class="ttname"><a href="namespaceunits.html#a561ccbed9f8172380f7247ac4fb2a248">units::UNIT_ADD</a></div><div class="ttdeci">compound_unit&lt; luminous_flux::lumen, inverse&lt; squared&lt; length::foot &gt; &gt; &gt; UNIT_ADD(illuminance, lumens_per_square_inch, lumens_per_square_inch, lm_per_in_sq, compound_unit&lt; luminous_flux::lumen, inverse&lt; squared&lt; length::inch &gt; &gt; &gt;) UNIT_ADD(illuminance</div></div>
+<div class="ttc" id="anamespaceunits_html"><div class="ttname"><a href="namespaceunits.html">units</a></div><div class="ttdoc">Unit Conversion Library namespace.</div><div class="ttdef"><b>Definition:</b> magnetic_flux.h:31</div></div>
+<div class="ttc" id="anamespaceunits_html_a33c85b1d520761c32b424300fb98111c"><div class="ttname"><a href="namespaceunits.html#a33c85b1d520761c32b424300fb98111c">units::UNIT_ADD</a></div><div class="ttdeci">UNIT_ADD(concentration, ppm, parts_per_million, ppm, unit&lt; std::ratio&lt; 1, 1000000 &gt;, units::category::scalar_unit &gt;) UNIT_ADD(concentration</div></div>
 <div class="ttc" id="anamespaceunits_html_a5e0cd4ef5241a20f2feef3e2d105d86a"><div class="ttname"><a href="namespaceunits.html#a5e0cd4ef5241a20f2feef3e2d105d86a">units::maxwell</a></div><div class="ttdeci">maxwell</div><div class="ttdef"><b>Definition:</b> magnetic_flux.h:46</div></div>
 <div class="ttc" id="anamespaceunits_html_a622851f0b67539bfb3e87b2cf39e6ed1"><div class="ttname"><a href="namespaceunits.html#a622851f0b67539bfb3e87b2cf39e6ed1">units::gauss</a></div><div class="ttdeci">gauss</div><div class="ttdef"><b>Definition:</b> magnetic_field_strength.h:52</div></div>
 <div class="ttc" id="anamespaceunits_html_ae5abc18fc8428c40bbc7805627eb5ad1"><div class="ttname"><a href="namespaceunits.html#ae5abc18fc8428c40bbc7805627eb5ad1">units::G</a></div><div class="ttdeci">G</div><div class="ttdef"><b>Definition:</b> magnetic_field_strength.h:52</div></div>
+<div class="ttc" id="anamespaceunits_html_af44745cefa7531f9cc739e07c17d0229"><div class="ttname"><a href="namespaceunits.html#af44745cefa7531f9cc739e07c17d0229">units::UNIT_ADD_WITH_METRIC_PREFIXES</a></div><div class="ttdeci">UNIT_ADD_WITH_METRIC_PREFIXES(magnetic_flux, weber, webers, Wb, unit&lt; std::ratio&lt; 1 &gt;, units::category::magnetic_flux_unit &gt;) UNIT_ADD(magnetic_flux</div></div>
 <div class="ttc" id="astructunits_1_1base__unit_html"><div class="ttname"><a href="structunits_1_1base__unit.html">units::base_unit</a></div><div class="ttdoc">Class representing SI base unit types.</div><div class="ttdef"><b>Definition:</b> base.h:752</div></div>
 <div class="ttc" id="astructunits_1_1unit_html"><div class="ttname"><a href="structunits_1_1unit.html">units::unit</a></div><div class="ttdoc">Type representing an arbitrary unit.</div><div class="ttdef"><b>Definition:</b> base.h:878</div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -174,7 +174,7 @@ $(document).ready(function(){initNavTree('magnetic__field__strength_8h_source.ht
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_8398b3b11a49d1b73baf320477e5bcca.html">units</a></li><li class="navelem"><a class="el" href="magnetic__field__strength_8h.html">magnetic_field_strength.h</a></li>
-    <li class="footer">Generated on Wed Dec 1 2021 06:02:08 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Thu Dec 2 2021 21:51:24 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

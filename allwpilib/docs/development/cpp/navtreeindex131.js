@@ -1,14 +1,5 @@
 var NAVTREEINDEX131 =
 {
-"namespacewpi.html#ac32a7896ab3ee6b24926527703eabade":[4,0,20,442],
-"namespacewpi.html#ac503c8c47490fca90512a88b23b65358":[4,0,20,228],
-"namespacewpi.html#ac54c2f26ecf324df5da9128c77052d31":[4,0,20,252],
-"namespacewpi.html#ac654fbccde78931efbd96a33a8af5726":[4,0,20,201],
-"namespacewpi.html#ac792221430e4bf80c1b31493afd90bfe":[4,0,20,207],
-"namespacewpi.html#ac792221430e4bf80c1b31493afd90bfea34299b0f92763294d72a3117752dbbe0":[4,0,20,207,3],
-"namespacewpi.html#ac792221430e4bf80c1b31493afd90bfea673cb258ea483b0e6f31d55cf61311d1":[4,0,20,207,1],
-"namespacewpi.html#ac792221430e4bf80c1b31493afd90bfeaa1d30cd6c73259c50b7ce68207a7650f":[4,0,20,207,0],
-"namespacewpi.html#ac792221430e4bf80c1b31493afd90bfeac785c0d8e74261d6cbde1d63f8535ed2":[4,0,20,207,2],
 "namespacewpi.html#ac9954615e01ad150570a0e1d4548d879":[4,0,20,195],
 "namespacewpi.html#acc6fd03a9b591a2f187f0a44e2b4a356":[4,0,20,360],
 "namespacewpi.html#acdf6e574a80a2f8050ab7d25db6cc90f":[4,0,20,334],
@@ -249,5 +240,14 @@ var NAVTREEINDEX131 =
 "namespacewpi_1_1sig_1_1trait.html#a39e8d5ca40586c65d5e9425faf5dd830":[4,0,20,6,1,3],
 "namespacewpi_1_1sig_1_1trait.html#a49acbcd347fe785acf97827036e0f4ca":[4,0,20,6,1,2],
 "namespacewpi_1_1sig_1_1trait.html#ac0a23e1ac42586205de9b6168e659983":[4,0,20,6,1,5],
-"namespacewpi_1_1sig_1_1trait_1_1detail.html":[4,0,20,6,1,0]
+"namespacewpi_1_1sig_1_1trait_1_1detail.html":[4,0,20,6,1,0],
+"namespacewpi_1_1sig_1_1trait_1_1detail.html#a32bb49982f6734c062c3df2680b3fe65":[4,0,20,6,1,0,8],
+"namespacewpi_1_1support.html":[4,0,20,7],
+"namespacewpi_1_1support.html#a05b3da1030c8817d521109e369f2ce4a":[4,0,20,7,32],
+"namespacewpi_1_1support.html#a05b3da1030c8817d521109e369f2ce4aa4bb14baff5ff4874718634128661335a":[4,0,20,7,32,0],
+"namespacewpi_1_1support.html#a05b3da1030c8817d521109e369f2ce4aa96580efae18851161be0ccf4a21beb8a":[4,0,20,7,32,2],
+"namespacewpi_1_1support.html#a05b3da1030c8817d521109e369f2ce4aae4d5c1946d271fec6ebe3c1e377b3af5":[4,0,20,7,32,1],
+"namespacewpi_1_1support.html#a07950802296de1e87d32d177f92f40fe":[4,0,20,7,4],
+"namespacewpi_1_1support.html#a0a0e31c1443d783dd28f201fdfbc91ae":[4,0,20,7,22],
+"namespacewpi_1_1support.html#a0b1ca9a79ddfd9656641b3eed565c99c":[4,0,20,7,6]
 };

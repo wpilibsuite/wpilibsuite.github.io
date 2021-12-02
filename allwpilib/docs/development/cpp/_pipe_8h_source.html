@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-3-6-gd51a1d3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-3-7-g1c4a8bf</span>
    </div>
   </td>
  </tr>
@@ -205,7 +205,7 @@ $(document).ready(function(){initNavTree('_pipe_8h_source.html',''); initResizab
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="comment">   *</span></div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment">   * @param file A valid file handle (either a file descriptor or a HANDLE).</span></div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1_pipe.html#a2d054e32744ceea7be43d77604c4a1d9">  112</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1uv_1_1_pipe.html#a2d054e32744ceea7be43d77604c4a1d9">Open</a>(<a class="code hl_typedef" href="win_8h.html#a3e0dacd349e5c9b36895e83499367624">uv_file</a> <a class="code hl_variable" href="_third_party_notices_8txt.html#a26ca7d096ec8797bc2156266e64e5a4a">file</a>) { <a class="code hl_function" href="classwpi_1_1uv_1_1_handle.html#ac57b8059a53c5b83f25ea84f99c24f7a">Invoke</a>(&amp;<a class="code hl_function" href="uv_8h.html#ae8a411ba9abd376992d4d56e0a412048">uv_pipe_open</a>, <a class="code hl_function" href="classwpi_1_1uv_1_1_network_stream_impl.html#a0e1ffd085ad94b2ac4b018cebfd0e1d1">GetRaw</a>(), <a class="code hl_variable" href="_third_party_notices_8txt.html#a26ca7d096ec8797bc2156266e64e5a4a">file</a>); }</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="classwpi_1_1uv_1_1_pipe.html#a2d054e32744ceea7be43d77604c4a1d9">  112</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classwpi_1_1uv_1_1_pipe.html#a2d054e32744ceea7be43d77604c4a1d9">Open</a>(<a class="code hl_typedef" href="unix_8h.html#a3e0dacd349e5c9b36895e83499367624">uv_file</a> <a class="code hl_variable" href="_third_party_notices_8txt.html#a26ca7d096ec8797bc2156266e64e5a4a">file</a>) { <a class="code hl_function" href="classwpi_1_1uv_1_1_handle.html#ac57b8059a53c5b83f25ea84f99c24f7a">Invoke</a>(&amp;<a class="code hl_function" href="uv_8h.html#ae8a411ba9abd376992d4d56e0a412048">uv_pipe_open</a>, <a class="code hl_function" href="classwpi_1_1uv_1_1_network_stream_impl.html#a0e1ffd085ad94b2ac4b018cebfd0e1d1">GetRaw</a>(), <a class="code hl_variable" href="_third_party_notices_8txt.html#a26ca7d096ec8797bc2156266e64e5a4a">file</a>); }</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="comment"></span> </div>
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="comment">  /**</span></div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="comment">   * Bind the pipe to a file path (Unix) or a name (Windows).</span></div>
@@ -329,22 +329,22 @@ $(document).ready(function(){initNavTree('_pipe_8h_source.html',''); initResizab
 <div class="ttc" id="aclasswpi_1_1uv_1_1_pipe_html_afa3933df2db81521c11f9310e58fe6e8"><div class="ttname"><a href="classwpi_1_1uv_1_1_pipe.html#afa3933df2db81521c11f9310e58fe6e8">wpi::uv::Pipe::Accept</a></div><div class="ttdeci">bool Accept(const std::shared_ptr&lt; Pipe &gt; &amp;client)</div><div class="ttdoc">Accept incoming connection.</div><div class="ttdef"><b>Definition:</b> Pipe.h:100</div></div>
 <div class="ttc" id="acore_8h_html_a204ca715c2febee035464fa53dfc50c4"><div class="ttname"><a href="core_8h.html#a204ca715c2febee035464fa53dfc50c4">string_view</a></div><div class="ttdeci">basic_string_view&lt; char &gt; string_view</div><div class="ttdef"><b>Definition:</b> core.h:529</div></div>
 <div class="ttc" id="acore_8h_html_a501bb1bb2f0cc5706178ed237958e73b"><div class="ttname"><a href="core_8h.html#a501bb1bb2f0cc5706178ed237958e73b">count</a></div><div class="ttdeci">constexpr auto count() -&gt; size_t</div><div class="ttdef"><b>Definition:</b> core.h:1039</div></div>
-<div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> SmallVector.h:931</div></div>
-<div class="ttc" id="anamespacewpi_1_1uv_html"><div class="ttname"><a href="namespacewpi_1_1uv.html">wpi::uv</a></div><div class="ttdef"><b>Definition:</b> ParallelTcpConnector.h:22</div></div>
+<div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> SmallPtrSet.h:453</div></div>
+<div class="ttc" id="anamespacewpi_1_1uv_html"><div class="ttname"><a href="namespacewpi_1_1uv.html">wpi::uv</a></div><div class="ttdef"><b>Definition:</b> DsClient.h:17</div></div>
 <div class="ttc" id="anamespacewpi_html_a7b0000b45b0b55789f757f1c3d2461cb"><div class="ttname"><a href="namespacewpi.html#a7b0000b45b0b55789f757f1c3d2461cb">wpi::flags</a></div><div class="ttdeci">flags</div><div class="ttdef"><b>Definition:</b> http_parser.h:206</div></div>
+<div class="ttc" id="aunix_8h_html_a3e0dacd349e5c9b36895e83499367624"><div class="ttname"><a href="unix_8h.html#a3e0dacd349e5c9b36895e83499367624">uv_file</a></div><div class="ttdeci">int uv_file</div><div class="ttdef"><b>Definition:</b> unix.h:119</div></div>
 <div class="ttc" id="auv_2_network_stream_8h_html"><div class="ttname"><a href="uv_2_network_stream_8h.html">NetworkStream.h</a></div></div>
 <div class="ttc" id="auv_8h_html"><div class="ttname"><a href="uv_8h.html">uv.h</a></div></div>
 <div class="ttc" id="auv_8h_html_a85a54b50b92f7db0e1097337ff0f4d54"><div class="ttname"><a href="uv_8h.html#a85a54b50b92f7db0e1097337ff0f4d54">uv_pipe_pending_instances</a></div><div class="ttdeci">UV_EXTERN void uv_pipe_pending_instances(uv_pipe_t *handle, int count)</div></div>
 <div class="ttc" id="auv_8h_html_ae8a411ba9abd376992d4d56e0a412048"><div class="ttname"><a href="uv_8h.html#ae8a411ba9abd376992d4d56e0a412048">uv_pipe_open</a></div><div class="ttdeci">UV_EXTERN int uv_pipe_open(uv_pipe_t *, uv_file file)</div></div>
 <div class="ttc" id="auv_8h_html_ae9afdb2920eddf970fc259afd8eee28d"><div class="ttname"><a href="uv_8h.html#ae9afdb2920eddf970fc259afd8eee28d">uv_pipe_chmod</a></div><div class="ttdeci">UV_EXTERN int uv_pipe_chmod(uv_pipe_t *handle, int flags)</div></div>
-<div class="ttc" id="awin_8h_html_a3e0dacd349e5c9b36895e83499367624"><div class="ttname"><a href="win_8h.html#a3e0dacd349e5c9b36895e83499367624">uv_file</a></div><div class="ttdeci">int uv_file</div><div class="ttdef"><b>Definition:</b> win.h:232</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><a class="el" href="dir_25302867c2307ab8d43a1b1d664c1ea4.html">uv</a></li><li class="navelem"><a class="el" href="_pipe_8h.html">Pipe.h</a></li>
-    <li class="footer">Generated on Wed Dec 1 2021 06:02:09 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Thu Dec 2 2021 21:51:25 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
