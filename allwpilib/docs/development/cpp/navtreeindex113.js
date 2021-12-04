@@ -1,5 +1,12 @@
 var NAVTREEINDEX113 =
 {
+"group__hal__serialport.html#ga4d963e6ee5bd583e4efbfe42b7ac0804":[3,1,4,7],
+"group__hal__serialport.html#ga51a28d7e9c4befe140468afb9dfb2b77":[3,1,4,1],
+"group__hal__serialport.html#ga5eb24f060c01f778eaa200d5becc4b0c":[3,1,4,20],
+"group__hal__serialport.html#ga8969a109884d86c95adf819496c64784":[3,1,4,2],
+"group__hal__serialport.html#ga920509fb1c9c760920968a352f0c4cd4":[3,1,4,11],
+"group__hal__serialport.html#ga9ff7874b14fd399a0306e7d93fac3961":[3,1,4,19],
+"group__hal__serialport.html#gaa827902ab8c266aa857612cd506e834e":[3,1,4,4],
 "group__hal__serialport.html#gac0d4c46396fc2d16aab56684fc5e630f":[3,1,4,17],
 "group__hal__serialport.html#gac96d7ee243777b36907298dcb575d766":[3,1,4,0],
 "group__hal__serialport.html#gad735a72203a15b8f964f4520ce48a2dd":[3,1,4,16],
@@ -242,12 +249,5 @@ var NAVTREEINDEX113 =
 "group__ntcore__connectionlistener__func.html#ga1591a54ca6babaef052683ac470fc452":[3,8,3,5],
 "group__ntcore__connectionlistener__func.html#ga3ad4de68b938004d607196c6abf27dad":[3,8,3,9],
 "group__ntcore__connectionlistener__func.html#gaa88729f7f2563d47a4371de5e5c8badc":[3,8,3,0],
-"group__ntcore__connectionlistener__func.html#gaabb526df98891dd02f12a8b90c75c1e2":[3,8,3,4],
-"group__ntcore__connectionlistener__func.html#gaba15e80c285bf56279775fb6d1dd9dd5":[3,8,3,6],
-"group__ntcore__connectionlistener__func.html#gabb4d7814ef7c944bab2e07c44e107e15":[3,8,3,7],
-"group__ntcore__connectionlistener__func.html#gabe8a6896e2acde803a1bafd7c9dca421":[3,8,3,8],
-"group__ntcore__connectionlistener__func.html#gaf15e7dfa175ea46f2c0ff728a53c8723":[3,8,3,1],
-"group__ntcore__connectionlistener__func.html#gaf3f2e2a96f87a11c85b8110810cdca01":[3,8,3,3],
-"group__ntcore__connectionlistener__func.html#gaf40981b49ae44aa901af719afed08e2c":[3,8,3,2],
-"group__ntcore__cpp__api.html":[3,10]
+"group__ntcore__connectionlistener__func.html#gaabb526df98891dd02f12a8b90c75c1e2":[3,8,3,4]
 };

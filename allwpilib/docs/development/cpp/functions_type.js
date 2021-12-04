@@ -23,5 +23,6 @@ var functions_type =
     [ "u", "functions_type_u.html", null ],
     [ "v", "functions_type_v.html", null ],
     [ "w", "functions_type_w.html", null ],
-    [ "x", "functions_type_x.html", null ]
+    [ "x", "functions_type_x.html", null ],
+    [ "z", "functions_type_z.html", null ]
 ];

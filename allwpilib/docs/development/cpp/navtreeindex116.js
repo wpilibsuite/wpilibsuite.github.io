@@ -1,5 +1,12 @@
 var NAVTREEINDEX116 =
 {
+"illuminance_8h.html#aa23cc88f290d5da7125b2491d199e38e":[6,0,12,20,3],
+"illuminance_8h.html#aba47e9b5f3d353b8155407c71276322b":[6,0,12,20,4],
+"illuminance_8h.html#ad5c1e56833dfc4be01999284476764e6":[6,0,12,20,5],
+"illuminance_8h.html#af7233ce5506454d846deae75a7b0d342":[6,0,12,20,1],
+"illuminance_8h_source.html":[6,0,12,20],
+"impedance_8h.html":[6,0,12,21],
+"impedance_8h.html#a033e0bf8866fb02316129521b1699bd6":[6,0,12,21,0],
 "impedance_8h_source.html":[6,0,12,21],
 "include_2wpi_2_chrono_8h.html":[6,0,14,9],
 "include_2wpi_2_chrono_8h.html#a17444a3da59200223bbf5987e31c6f8e":[6,0,14,9,2],
@@ -242,12 +249,5 @@ var NAVTREEINDEX116 =
 "mass_8h.html#aa94010d6299c6d8acccf9647fef66634":[6,0,12,28,1],
 "mass_8h.html#ae953ea35eaae483641065974c8fb7bea":[6,0,12,28,4],
 "mass_8h.html#af8e4972985bd025575c5101daf34e505":[6,0,12,28,3],
-"mass_8h_source.html":[6,0,12,28],
-"math.html":[6,0,14,49],
-"math_8h.html":[6,0,12,29],
-"math_8h.html#ac116d974bbc8c2852b3885de2e672d54":[6,0,12,29,9],
-"math_8h_source.html":[6,0,12,29],
-"md__home_runner_work_allwpilib_allwpilib__l_i_c_e_n_s_e.html":[0],
-"modules.html":[3],
-"moment__of__inertia_8h.html":[6,0,12,30]
+"mass_8h_source.html":[6,0,12,28]
 };

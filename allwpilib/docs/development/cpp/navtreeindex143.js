@@ -1,5 +1,12 @@
 var NAVTREEINDEX143 =
 {
+"struct_eigen_1_1internal_1_1find__best__packet.html":[5,0,4,2,319],
+"struct_eigen_1_1internal_1_1find__best__packet.html#afed7af837191c3080af5efbfd703c5c4":[4,0,7,4,321,0],
+"struct_eigen_1_1internal_1_1find__best__packet.html#afed7af837191c3080af5efbfd703c5c4":[5,0,4,2,319,0],
+"struct_eigen_1_1internal_1_1find__best__packet__helper.html":[4,0,7,4,322],
+"struct_eigen_1_1internal_1_1find__best__packet__helper.html":[5,0,4,2,320],
+"struct_eigen_1_1internal_1_1find__best__packet__helper_3_01_size_00_01_packet_type_00_01false_01_4.html":[5,0,4,2,321],
+"struct_eigen_1_1internal_1_1find__best__packet__helper_3_01_size_00_01_packet_type_00_01false_01_4.html":[4,0,7,4,323],
 "struct_eigen_1_1internal_1_1find__best__packet__helper_3_01_size_00_01_packet_type_00_01false_01_4.html#a8c088a604d8c920b1403d6124be7dc23":[4,0,7,4,323,0],
 "struct_eigen_1_1internal_1_1find__best__packet__helper_3_01_size_00_01_packet_type_00_01false_01_4.html#a8c088a604d8c920b1403d6124be7dc23":[5,0,4,2,321,0],
 "struct_eigen_1_1internal_1_1find__best__packet__helper_3_01_size_00_01_packet_type_00_01true_01_4.html":[5,0,4,2,322],
@@ -242,12 +249,5 @@ var NAVTREEINDEX143 =
 "struct_eigen_1_1internal_1_1gebp__kernel.html#a4c8886e454ae8d3af15aa8b4dc99f9bf":[5,0,4,2,429,14],
 "struct_eigen_1_1internal_1_1gebp__kernel.html#a68a2f808d1eb2ff7e16d737669bc046c":[5,0,4,2,429,16],
 "struct_eigen_1_1internal_1_1gebp__kernel.html#a68a2f808d1eb2ff7e16d737669bc046c":[4,0,7,4,431,16],
-"struct_eigen_1_1internal_1_1gebp__kernel.html#a6a1a2ff6e30bb70ed43572392dd0530a":[4,0,7,4,431,22],
-"struct_eigen_1_1internal_1_1gebp__kernel.html#a6a1a2ff6e30bb70ed43572392dd0530a":[5,0,4,2,429,22],
-"struct_eigen_1_1internal_1_1gebp__kernel.html#a7eef96f46b7d49f8dce11b26cfb06f2b":[5,0,4,2,429,6],
-"struct_eigen_1_1internal_1_1gebp__kernel.html#a7eef96f46b7d49f8dce11b26cfb06f2b":[4,0,7,4,431,6],
-"struct_eigen_1_1internal_1_1gebp__kernel.html#a7fa8b2eaca5e85eea073ce4244e18cb4":[5,0,4,2,429,5],
-"struct_eigen_1_1internal_1_1gebp__kernel.html#a7fa8b2eaca5e85eea073ce4244e18cb4":[4,0,7,4,431,5],
-"struct_eigen_1_1internal_1_1gebp__kernel.html#a81f4cbf35d0cba450e00951fc2ce5990":[5,0,4,2,429,2],
-"struct_eigen_1_1internal_1_1gebp__kernel.html#a81f4cbf35d0cba450e00951fc2ce5990":[4,0,7,4,431,2]
+"struct_eigen_1_1internal_1_1gebp__kernel.html#a6a1a2ff6e30bb70ed43572392dd0530a":[4,0,7,4,431,22]
 };
