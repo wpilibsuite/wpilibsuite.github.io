@@ -58,10 +58,10 @@
 <span class="sourceLineNo">046</span><a id="line.46">  /**</a>
 <span class="sourceLineNo">047</span><a id="line.47">   * Construct a Ramsete unicycle controller.</a>
 <span class="sourceLineNo">048</span><a id="line.48">   *</a>
-<span class="sourceLineNo">049</span><a id="line.49">   * @param b Tuning parameter (b &amp;gt; 0) for which larger values make convergence more aggressive</a>
-<span class="sourceLineNo">050</span><a id="line.50">   *     like a proportional term.</a>
-<span class="sourceLineNo">051</span><a id="line.51">   * @param zeta Tuning parameter (0 &amp;lt; zeta &amp;lt; 1) for which larger values provide more damping</a>
-<span class="sourceLineNo">052</span><a id="line.52">   *     in response.</a>
+<span class="sourceLineNo">049</span><a id="line.49">   * @param b Tuning parameter (b &amp;gt; 0 rad²/m²) for which larger values make convergence more</a>
+<span class="sourceLineNo">050</span><a id="line.50">   *     aggressive like a proportional term.</a>
+<span class="sourceLineNo">051</span><a id="line.51">   * @param zeta Tuning parameter (0 rad⁻¹ &amp;lt; zeta &amp;lt; 1 rad⁻¹) for which larger values provide</a>
+<span class="sourceLineNo">052</span><a id="line.52">   *     more damping in response.</a>
 <span class="sourceLineNo">053</span><a id="line.53">   */</a>
 <span class="sourceLineNo">054</span><a id="line.54">  @SuppressWarnings("ParameterName")</a>
 <span class="sourceLineNo">055</span><a id="line.55">  public RamseteController(double b, double zeta) {</a>
@@ -70,8 +70,8 @@
 <span class="sourceLineNo">058</span><a id="line.58">  }</a>
 <span class="sourceLineNo">059</span><a id="line.59"></a>
 <span class="sourceLineNo">060</span><a id="line.60">  /**</a>
-<span class="sourceLineNo">061</span><a id="line.61">   * Construct a Ramsete unicycle controller. The default arguments for b and zeta of 2.0 and 0.7</a>
-<span class="sourceLineNo">062</span><a id="line.62">   * have been well-tested to produce desirable results.</a>
+<span class="sourceLineNo">061</span><a id="line.61">   * Construct a Ramsete unicycle controller. The default arguments for b and zeta of 2.0 rad²/m²</a>
+<span class="sourceLineNo">062</span><a id="line.62">   * and 0.7 rad⁻¹ have been well-tested to produce desirable results.</a>
 <span class="sourceLineNo">063</span><a id="line.63">   */</a>
 <span class="sourceLineNo">064</span><a id="line.64">  public RamseteController() {</a>
 <span class="sourceLineNo">065</span><a id="line.65">    this(2.0, 0.7);</a>
