@@ -1,5 +1,7 @@
 var NAVTREEINDEX166 =
 {
+"structfloat__specs.html#a05bc60d16c34a874a5c79d576581d386":[5,0,77,1],
+"structfloat__specs.html#a0f0bf3e55b78b4354809190563ff1c2d":[5,0,77,3],
 "structfloat__specs.html#a226d0c4e62d509590cc438e052858d36":[5,0,77,6],
 "structfloat__specs.html#a35bd958ad708d346daa69e72f5fa957a":[5,0,77,4],
 "structfloat__specs.html#a4933ad92b9509eefb94338c4c0a532b3":[5,0,77,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX166 =
 "structfrc_1_1_spline_parameterizer_1_1_malformed_spline_exception.html":[4,0,9,195,0],
 "structfrc_1_1_spline_parameterizer_1_1_malformed_spline_exception.html#aed08af34cb758d15c9a56656105cdfc1":[5,0,6,191,0,0],
 "structfrc_1_1_spline_parameterizer_1_1_malformed_spline_exception.html#aed08af34cb758d15c9a56656105cdfc1":[4,0,9,195,0,0],
-"structfrc_1_1_swerve_module_state.html":[5,0,6,199],
-"structfrc_1_1_swerve_module_state.html":[4,0,9,203],
-"structfrc_1_1_swerve_module_state.html#a156f23b8877aebb0820c48e2e536ae43":[4,0,9,203,0]
+"structfrc_1_1_swerve_module_state.html":[5,0,6,199]
 };

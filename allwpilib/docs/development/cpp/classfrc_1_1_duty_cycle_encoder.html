@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-3-10-g04957a6</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-3-12-g3ef2dab</span>
    </div>
   </td>
  </tr>
@@ -157,6 +157,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa902217541586c9305c55a15ae169b8c"><td class="memItemLeft" align="right" valign="top">units::turn_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_duty_cycle_encoder.html#aa902217541586c9305c55a15ae169b8c">Get</a> () const</td></tr>
 <tr class="memdesc:aa902217541586c9305c55a15ae169b8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the encoder value since the last reset.  <a href="classfrc_1_1_duty_cycle_encoder.html#aa902217541586c9305c55a15ae169b8c">More...</a><br /></td></tr>
 <tr class="separator:aa902217541586c9305c55a15ae169b8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2c7fb29c783a00ed6aac60c1ec00c97"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_duty_cycle_encoder.html#ae2c7fb29c783a00ed6aac60c1ec00c97">SetDutyCycleRange</a> (double min, double max)</td></tr>
+<tr class="memdesc:ae2c7fb29c783a00ed6aac60c1ec00c97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the encoder duty cycle range.  <a href="classfrc_1_1_duty_cycle_encoder.html#ae2c7fb29c783a00ed6aac60c1ec00c97">More...</a><br /></td></tr>
+<tr class="separator:ae2c7fb29c783a00ed6aac60c1ec00c97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a897dbd042c23299243fed139745178ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_duty_cycle_encoder.html#a897dbd042c23299243fed139745178ae">SetDistancePerRotation</a> (double distancePerRotation)</td></tr>
 <tr class="memdesc:a897dbd042c23299243fed139745178ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the distance per rotation of the encoder.  <a href="classfrc_1_1_duty_cycle_encoder.html#a897dbd042c23299243fed139745178ae">More...</a><br /></td></tr>
 <tr class="separator:a897dbd042c23299243fed139745178ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -792,6 +795,44 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="ae2c7fb29c783a00ed6aac60c1ec00c97" name="ae2c7fb29c783a00ed6aac60c1ec00c97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2c7fb29c783a00ed6aac60c1ec00c97">&#9670;&nbsp;</a></span>SetDutyCycleRange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void frc::DutyCycleEncoder::SetDutyCycleRange </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>min</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>max</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the encoder duty cycle range. </p>
+<p >As the encoder needs to maintain a duty cycle, the duty cycle cannot go all the way to 0% or all the way to 100%. For example, an encoder with a 4096 us period might have a minimum duty cycle of 1 us / 4096 us and a maximum duty cycle of 4095 / 4096 us. Setting the range will result in an encoder duty cycle less than or equal to the minimum being output as 0 rotation, the duty cycle greater than or equal to the maximum being output as 1 rotation, and values in between linearly scaled from 0 to 1.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">min</td><td>minimum duty cycle (0-1 range) </td></tr>
+    <tr><td class="paramname">max</td><td>maximum duty cycle (0-1 range) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>frc/<a class="el" href="_duty_cycle_encoder_8h_source.html">DutyCycleEncoder.h</a></li>
 </ul>
@@ -801,7 +842,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li><li class="navelem"><a class="el" href="classfrc_1_1_duty_cycle_encoder.html">DutyCycleEncoder</a></li>
-    <li class="footer">Generated on Sat Dec 4 2021 02:24:50 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Dec 5 2021 22:31:30 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

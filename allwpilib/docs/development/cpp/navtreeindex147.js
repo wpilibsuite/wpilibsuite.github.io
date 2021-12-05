@@ -1,5 +1,7 @@
 var NAVTREEINDEX147 =
 {
+"struct_eigen_1_1internal_1_1is__arithmetic_3_01signed_01long_01_4.html":[5,0,4,2,597],
+"struct_eigen_1_1internal_1_1is__arithmetic_3_01signed_01short_01_4.html":[4,0,7,4,600],
 "struct_eigen_1_1internal_1_1is__arithmetic_3_01signed_01short_01_4.html":[5,0,4,2,598],
 "struct_eigen_1_1internal_1_1is__arithmetic_3_01unsigned_01char_01_4.html":[4,0,7,4,601],
 "struct_eigen_1_1internal_1_1is__arithmetic_3_01unsigned_01char_01_4.html":[5,0,4,2,599],
@@ -247,7 +249,5 @@ var NAVTREEINDEX147 =
 "struct_eigen_1_1internal_1_1llt__inplace.html":[5,0,4,2,661],
 "struct_eigen_1_1internal_1_1llt__inplace_3_01_scalar_00_01_lower_01_4.html":[4,0,7,4,664],
 "struct_eigen_1_1internal_1_1llt__inplace_3_01_scalar_00_01_lower_01_4.html":[5,0,4,2,662],
-"struct_eigen_1_1internal_1_1llt__inplace_3_01_scalar_00_01_lower_01_4.html#a740535ced836b91d158c77b72223324d":[5,0,4,2,662,0],
-"struct_eigen_1_1internal_1_1llt__inplace_3_01_scalar_00_01_lower_01_4.html#a740535ced836b91d158c77b72223324d":[4,0,7,4,664,0],
-"struct_eigen_1_1internal_1_1llt__inplace_3_01_scalar_00_01_lower_01_4.html#a88a62e53c6984ed5e0512a04b637b5b7":[4,0,7,4,664,1]
+"struct_eigen_1_1internal_1_1llt__inplace_3_01_scalar_00_01_lower_01_4.html#a740535ced836b91d158c77b72223324d":[5,0,4,2,662,0]
 };

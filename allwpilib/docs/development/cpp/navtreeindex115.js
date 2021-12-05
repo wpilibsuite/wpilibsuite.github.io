@@ -1,5 +1,7 @@
 var NAVTREEINDEX115 =
 {
+"group__ntcore__utility__cfunc.html#ga54b3029e8c81551f1f69bf7d03ebbbb1":[3,9,7,3],
+"group__ntcore__utility__cfunc.html#ga560d63022a5d123bb7d3739a9ce80403":[3,9,7,11],
 "group__ntcore__utility__cfunc.html#ga61fc33bc14ee480cfcd318f04aebfac6":[3,9,7,10],
 "group__ntcore__utility__cfunc.html#ga6792d01b286e3efb79f102c20404d58d":[3,9,7,14],
 "group__ntcore__utility__cfunc.html#ga773358c9d2b473bad2aaff51384d8eaa":[3,9,7,8],
@@ -23,8 +25,8 @@ var NAVTREEINDEX115 =
 "group__reader.html#ga0aa3b265fb5ece9c4cba0f2b1bfbdb53":[3,5,46],
 "group__reader.html#ga0b209288e5aa980d3a2ed8aaf7fa72ce":[3,5,34],
 "group__reader.html#ga0c7e1dd2be56ce3d596326c4463e7229":[3,5,40],
-"group__reader.html#ga15181d2c6766254010359db02f5b036a":[3,5,44],
 "group__reader.html#ga15181d2c6766254010359db02f5b036a":[3,4,60],
+"group__reader.html#ga15181d2c6766254010359db02f5b036a":[3,5,44],
 "group__reader.html#ga15496dcbb58a2a66dfe97d8778d54274":[3,5,26],
 "group__reader.html#ga18f41d6786155f265769351ef550e331":[3,5,28],
 "group__reader.html#ga1cf5a2d9b687d94f637a36123ef7cec0":[3,4,54],
@@ -117,11 +119,11 @@ var NAVTREEINDEX115 =
 "group__writer.html#ga97ccab59b332d882d386c10b241eb888":[3,4,4],
 "group__writer.html#ga9d9d905358fe553360e3071485f75b4d":[3,4,21],
 "group__writer.html#ga9e89422784feb205afe45f674d80c5b1":[3,4,7],
-"group__writer.html#gaa29ab364a7ae092e93a20b1a24744c0e":[3,6,23],
 "group__writer.html#gaa29ab364a7ae092e93a20b1a24744c0e":[3,4,12],
+"group__writer.html#gaa29ab364a7ae092e93a20b1a24744c0e":[3,6,23],
 "group__writer.html#gaa9bb1d322382b99269b446c614f9c97f":[3,4,50],
-"group__writer.html#gaadfca446696881a598cc4f90892ded88":[3,6,58],
 "group__writer.html#gaadfca446696881a598cc4f90892ded88":[3,4,14],
+"group__writer.html#gaadfca446696881a598cc4f90892ded88":[3,6,58],
 "group__writer.html#gab05b274195191e6e98c4a8d0ec730f63":[3,4,30],
 "group__writer.html#gab7ebd9e04e546444625d8984a5fd42fc":[3,4,65],
 "group__writer.html#gab8fcdb4f4ff97c3197a8bb809b88a167":[3,4,34],
@@ -247,7 +249,5 @@ var NAVTREEINDEX115 =
 "http__parser_8h_source.html":[6,0,14,33],
 "illuminance_8h.html":[6,0,12,20],
 "illuminance_8h.html#a561ccbed9f8172380f7247ac4fb2a248":[6,0,12,20,0],
-"illuminance_8h.html#a6a0ba5e615f001f7f96674da10edd979":[6,0,12,20,7],
-"illuminance_8h.html#a8fee208b4000912d01959dd5c3d8b38a":[6,0,12,20,2],
-"illuminance_8h.html#a9acef1ae3a212a35c0f0d8d7af08ad03":[6,0,12,20,6]
+"illuminance_8h.html#a6a0ba5e615f001f7f96674da10edd979":[6,0,12,20,7]
 };

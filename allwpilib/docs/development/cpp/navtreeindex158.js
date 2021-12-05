@@ -1,5 +1,7 @@
 var NAVTREEINDEX158 =
 {
+"struct_eigen_1_1internal_1_1traits_3_01_hessenberg_decomposition_matrix_h_return_type_3_01_matrix_type_01_4_01_4.html#a61ecfbcb348b94ba026196609af64ca4":[5,0,4,2,1182,0],
+"struct_eigen_1_1internal_1_1traits_3_01_householder_q_r_3_01___matrix_type_01_4_01_4.html":[4,0,7,4,1185],
 "struct_eigen_1_1internal_1_1traits_3_01_householder_q_r_3_01___matrix_type_01_4_01_4.html":[5,0,4,2,1183],
 "struct_eigen_1_1internal_1_1traits_3_01_householder_q_r_3_01___matrix_type_01_4_01_4.html#a8736b87942476758264d072ad48564c2":[5,0,4,2,1183,2],
 "struct_eigen_1_1internal_1_1traits_3_01_householder_q_r_3_01___matrix_type_01_4_01_4.html#a8736b87942476758264d072ad48564c2":[4,0,7,4,1185,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX158 =
 "struct_eigen_1_1internal_1_1traits_3_01_self_adjoint_view_3_01_matrix_type_00_01_up_lo_01_4_01_4.html#a78fbe1472ee4d87826b253c2b194062b":[5,0,4,2,1218,2],
 "struct_eigen_1_1internal_1_1traits_3_01_self_adjoint_view_3_01_matrix_type_00_01_up_lo_01_4_01_4.html#a9a5dcf20cb07f9a3fb8f7ec32f8eaaad":[4,0,7,4,1220,3],
 "struct_eigen_1_1internal_1_1traits_3_01_self_adjoint_view_3_01_matrix_type_00_01_up_lo_01_4_01_4.html#a9a5dcf20cb07f9a3fb8f7ec32f8eaaad":[5,0,4,2,1218,3],
-"struct_eigen_1_1internal_1_1traits_3_01_self_adjoint_view_3_01_matrix_type_00_01_up_lo_01_4_01_4.html#aeaf9375b523c8415dddb7e48b60a3347":[4,0,7,4,1220,0],
-"struct_eigen_1_1internal_1_1traits_3_01_self_adjoint_view_3_01_matrix_type_00_01_up_lo_01_4_01_4.html#aeaf9375b523c8415dddb7e48b60a3347":[5,0,4,2,1218,0],
-"struct_eigen_1_1internal_1_1traits_3_01_solve_3_01_decomposition_00_01_rhs_type_01_4_01_4.html":[5,0,4,2,1219]
+"struct_eigen_1_1internal_1_1traits_3_01_self_adjoint_view_3_01_matrix_type_00_01_up_lo_01_4_01_4.html#aeaf9375b523c8415dddb7e48b60a3347":[4,0,7,4,1220,0]
 };

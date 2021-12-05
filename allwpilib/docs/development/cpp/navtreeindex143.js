@@ -1,5 +1,7 @@
 var NAVTREEINDEX143 =
 {
+"struct_eigen_1_1internal_1_1fast__accurate__exp2_3_01float_01_4.html#afd14f4eb51ef798edf78ee67e8508a99":[5,0,4,2,318,0],
+"struct_eigen_1_1internal_1_1find__best__packet.html":[4,0,7,4,321],
 "struct_eigen_1_1internal_1_1find__best__packet.html":[5,0,4,2,319],
 "struct_eigen_1_1internal_1_1find__best__packet.html#afed7af837191c3080af5efbfd703c5c4":[4,0,7,4,321,0],
 "struct_eigen_1_1internal_1_1find__best__packet.html#afed7af837191c3080af5efbfd703c5c4":[5,0,4,2,319,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX143 =
 "struct_eigen_1_1internal_1_1gebp__kernel.html#a3714d980724edaa1290eb1470b753498":[5,0,4,2,429,10],
 "struct_eigen_1_1internal_1_1gebp__kernel.html#a4c8886e454ae8d3af15aa8b4dc99f9bf":[4,0,7,4,431,14],
 "struct_eigen_1_1internal_1_1gebp__kernel.html#a4c8886e454ae8d3af15aa8b4dc99f9bf":[5,0,4,2,429,14],
-"struct_eigen_1_1internal_1_1gebp__kernel.html#a68a2f808d1eb2ff7e16d737669bc046c":[5,0,4,2,429,16],
-"struct_eigen_1_1internal_1_1gebp__kernel.html#a68a2f808d1eb2ff7e16d737669bc046c":[4,0,7,4,431,16],
-"struct_eigen_1_1internal_1_1gebp__kernel.html#a6a1a2ff6e30bb70ed43572392dd0530a":[4,0,7,4,431,22]
+"struct_eigen_1_1internal_1_1gebp__kernel.html#a68a2f808d1eb2ff7e16d737669bc046c":[5,0,4,2,429,16]
 };

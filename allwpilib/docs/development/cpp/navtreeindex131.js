@@ -1,5 +1,7 @@
 var NAVTREEINDEX131 =
 {
+"namespacewpi.html#ac32a7896ab3ee6b24926527703eabade":[4,0,20,442],
+"namespacewpi.html#ac503c8c47490fca90512a88b23b65358":[4,0,20,228],
 "namespacewpi.html#ac54c2f26ecf324df5da9128c77052d31":[4,0,20,252],
 "namespacewpi.html#ac654fbccde78931efbd96a33a8af5726":[4,0,20,201],
 "namespacewpi.html#ac792221430e4bf80c1b31493afd90bfe":[4,0,20,207],
@@ -247,7 +249,5 @@ var NAVTREEINDEX131 =
 "namespacewpi_1_1sig_1_1trait.html#a39e8d5ca40586c65d5e9425faf5dd830":[4,0,20,6,1,3],
 "namespacewpi_1_1sig_1_1trait.html#a49acbcd347fe785acf97827036e0f4ca":[4,0,20,6,1,2],
 "namespacewpi_1_1sig_1_1trait.html#ac0a23e1ac42586205de9b6168e659983":[4,0,20,6,1,5],
-"namespacewpi_1_1sig_1_1trait_1_1detail.html":[4,0,20,6,1,0],
-"namespacewpi_1_1sig_1_1trait_1_1detail.html#a32bb49982f6734c062c3df2680b3fe65":[4,0,20,6,1,0,8],
-"namespacewpi_1_1support.html":[4,0,20,7]
+"namespacewpi_1_1sig_1_1trait_1_1detail.html":[4,0,20,6,1,0]
 };

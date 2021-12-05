@@ -1,5 +1,7 @@
 var NAVTREEINDEX134 =
 {
+"struct_eigen_1_1_matrix_base_1_1cross__product__return__type.html":[3,26,16,3],
+"struct_eigen_1_1_matrix_base_1_1cross__product__return__type.html#a42dbbe162affc9b2f2d4a143d7070a94":[3,26,16,3,0],
 "struct_eigen_1_1_matrix_base_1_1cross__product__return__type.html#ad0d0f7a06c69ccea87a0ec5c397d8ec5":[3,26,16,3,1],
 "struct_eigen_1_1_matrix_exponential_return_value.html":[3,30,5],
 "struct_eigen_1_1_matrix_exponential_return_value.html#a3dd2c65c7c6cdc41ab17415ee11899a0":[3,30,5,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX134 =
 "struct_eigen_1_1general__product__to__triangular__selector_3_01_matrix_type_00_01_product_type_00_01_up_lo_00_01true_01_4.html#a3102a63fe7b1c0bfaa90b2acf9fa025f":[5,0,4,74,0],
 "struct_eigen_1_1half.html":[4,0,7,81],
 "struct_eigen_1_1half.html":[5,0,4,78],
-"struct_eigen_1_1half.html#a128c010ae7f6f974d57f2f8fcabff25a":[5,0,4,78,0],
-"struct_eigen_1_1half.html#a128c010ae7f6f974d57f2f8fcabff25a":[4,0,7,81,0],
-"struct_eigen_1_1half.html#a17384583ab989a4685921bb02d92b90a":[5,0,4,78,6]
+"struct_eigen_1_1half.html#a128c010ae7f6f974d57f2f8fcabff25a":[5,0,4,78,0]
 };

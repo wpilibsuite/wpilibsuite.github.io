@@ -1,5 +1,7 @@
 var NAVTREEINDEX108 =
 {
+"group___unit_manipulators.html#ga3af81695b9701ebe2db4f058f082a615":[3,17,4],
+"group___unit_manipulators.html#ga4278ee8cb796f22534570134325a4d52":[3,17,2],
 "group___unit_manipulators.html#ga7b3ab2db5e74ea2fbcd7e370c3676e21":[3,17,7],
 "group___unit_manipulators.html#ga85526b34ae64aa914711e963006c2ac7":[3,17,21],
 "group___unit_manipulators.html#ga86f4dc14b9068dd50b2f3a51219139f1":[3,17,25],
@@ -247,7 +249,5 @@ var NAVTREEINDEX108 =
 "group__cscore__c__api.html#ggafd2b8be5bc92a0a85ec51d40af1d1322aa91f4e9d8fd72a18bfddcb44e8c6c936":[3,14,30,4],
 "group__cscore__c__api.html#ggafd2b8be5bc92a0a85ec51d40af1d1322acd1fea783197c3a5a6a577a98e8f6ff5":[3,14,30,6],
 "group__cscore__c__api.html#ggafd2b8be5bc92a0a85ec51d40af1d1322ad006566272bc582192fe56bd147c59de":[3,14,30,10],
-"group__cscore__c__api.html#ggafd2b8be5bc92a0a85ec51d40af1d1322adee5eaa684a5a52054ad0d74f123a7e9":[3,14,30,7],
-"group__cscore__camera__property__func.html":[3,13,3],
-"group__cscore__camera__property__func.html#ga2dcccaf5617eb8bfd4680e2c67359a24":[3,13,3,0]
+"group__cscore__c__api.html#ggafd2b8be5bc92a0a85ec51d40af1d1322adee5eaa684a5a52054ad0d74f123a7e9":[3,14,30,7]
 };

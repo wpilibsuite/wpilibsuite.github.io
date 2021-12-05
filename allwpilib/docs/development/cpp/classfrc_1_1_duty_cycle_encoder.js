@@ -20,5 +20,6 @@ var classfrc_1_1_duty_cycle_encoder =
     [ "operator=", "classfrc_1_1_duty_cycle_encoder.html#ab26c9d36eae47cc86860ff9874c9c19f", null ],
     [ "Reset", "classfrc_1_1_duty_cycle_encoder.html#ac749c7d3591e4a79f044d7763cf9fd72", null ],
     [ "SetConnectedFrequencyThreshold", "classfrc_1_1_duty_cycle_encoder.html#aeb80ad8d4a22b2aed01700b52e537f1d", null ],
-    [ "SetDistancePerRotation", "classfrc_1_1_duty_cycle_encoder.html#a897dbd042c23299243fed139745178ae", null ]
+    [ "SetDistancePerRotation", "classfrc_1_1_duty_cycle_encoder.html#a897dbd042c23299243fed139745178ae", null ],
+    [ "SetDutyCycleRange", "classfrc_1_1_duty_cycle_encoder.html#ae2c7fb29c783a00ed6aac60c1ec00c97", null ]
 ];

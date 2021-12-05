@@ -1,5 +1,7 @@
 var NAVTREEINDEX169 =
 {
+"structunits_1_1unit.html":[3,16,1],
+"structunits_1_1unit.html#a0cdaa6959c83b6ddb1038d99a31e7814":[3,16,1,3],
 "structunits_1_1unit.html#a0f2b640f43170629369706775699fdbe":[3,16,1,1],
 "structunits_1_1unit.html#a80a7bfacd08e44750f2f00789705c7b4":[3,16,1,0],
 "structunits_1_1unit.html#aadc106afe2fedc05c154ff9f2c16025f":[3,16,1,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX169 =
 "structwpi_1_1_callback_thread_1_1_poller.html#ad60592b664c738ccdd0f112319edc6df":[5,0,13,20,0,5],
 "structwpi_1_1_dense_map_info.html":[5,0,13,28],
 "structwpi_1_1_dense_map_info.html":[4,0,20,30],
-"structwpi_1_1_dense_map_info_3_01_pointer_int_pair_3_01_pointer_ty_00_01_int_bits_00_01_int_type_01_4_01_4.html":[5,0,13,34],
-"structwpi_1_1_dense_map_info_3_01_pointer_int_pair_3_01_pointer_ty_00_01_int_bits_00_01_int_type_01_4_01_4.html":[4,0,20,36],
-"structwpi_1_1_dense_map_info_3_01_pointer_int_pair_3_01_pointer_ty_00_01_int_bits_00_01_int_type_01_4_01_4.html#a1acf92505de011d9ed45b3da4ea00bd1":[4,0,20,36,2]
+"structwpi_1_1_dense_map_info_3_01_pointer_int_pair_3_01_pointer_ty_00_01_int_bits_00_01_int_type_01_4_01_4.html":[5,0,13,34]
 };

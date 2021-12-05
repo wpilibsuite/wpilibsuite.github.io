@@ -1,5 +1,7 @@
 var NAVTREEINDEX113 =
 {
+"group__hal__serialport.html#ga44158b47d770a7de455e3fa13b2b14d7":[3,1,4,5],
+"group__hal__serialport.html#ga4863d9b0d9672a05b93e09b917f64841":[3,1,4,15],
 "group__hal__serialport.html#ga4d963e6ee5bd583e4efbfe42b7ac0804":[3,1,4,7],
 "group__hal__serialport.html#ga51a28d7e9c4befe140468afb9dfb2b77":[3,1,4,1],
 "group__hal__serialport.html#ga5eb24f060c01f778eaa200d5becc4b0c":[3,1,4,20],
@@ -247,7 +249,5 @@ var NAVTREEINDEX113 =
 "group__ntcore__connectionlistener__cfunc.html#gac64a972063e3be3fe4d7ae3859e7c062":[3,9,3,1],
 "group__ntcore__connectionlistener__func.html":[3,8,3],
 "group__ntcore__connectionlistener__func.html#ga1591a54ca6babaef052683ac470fc452":[3,8,3,5],
-"group__ntcore__connectionlistener__func.html#ga3ad4de68b938004d607196c6abf27dad":[3,8,3,9],
-"group__ntcore__connectionlistener__func.html#gaa88729f7f2563d47a4371de5e5c8badc":[3,8,3,0],
-"group__ntcore__connectionlistener__func.html#gaabb526df98891dd02f12a8b90c75c1e2":[3,8,3,4]
+"group__ntcore__connectionlistener__func.html#ga3ad4de68b938004d607196c6abf27dad":[3,8,3,9]
 };
