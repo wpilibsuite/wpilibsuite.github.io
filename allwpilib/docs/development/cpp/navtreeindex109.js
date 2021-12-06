@@ -1,5 +1,13 @@
 var NAVTREEINDEX109 =
 {
+"group__cscore__c__api.html#ggafd2b8be5bc92a0a85ec51d40af1d1322a5da7b35b0e18abe776351458b3a326f8":[3,14,30,11],
+"group__cscore__c__api.html#ggafd2b8be5bc92a0a85ec51d40af1d1322a6040fb5253a49bb534616abc1bb2eadf":[3,14,30,2],
+"group__cscore__c__api.html#ggafd2b8be5bc92a0a85ec51d40af1d1322a7c05f71ef1e74830a77484def90119a1":[3,14,30,8],
+"group__cscore__c__api.html#ggafd2b8be5bc92a0a85ec51d40af1d1322a94f36dec8bcf3b15f4bedcf76f4ce1eb":[3,14,30,1],
+"group__cscore__c__api.html#ggafd2b8be5bc92a0a85ec51d40af1d1322aa91f4e9d8fd72a18bfddcb44e8c6c936":[3,14,30,4],
+"group__cscore__c__api.html#ggafd2b8be5bc92a0a85ec51d40af1d1322acd1fea783197c3a5a6a577a98e8f6ff5":[3,14,30,6],
+"group__cscore__c__api.html#ggafd2b8be5bc92a0a85ec51d40af1d1322ad006566272bc582192fe56bd147c59de":[3,14,30,10],
+"group__cscore__c__api.html#ggafd2b8be5bc92a0a85ec51d40af1d1322adee5eaa684a5a52054ad0d74f123a7e9":[3,14,30,7],
 "group__cscore__camera__property__func.html":[3,13,3],
 "group__cscore__camera__property__func.html#ga2dcccaf5617eb8bfd4680e2c67359a24":[3,13,3,0],
 "group__cscore__camera__property__func.html#ga4bb402500f2a0fe26d95b23d8804f7fb":[3,13,3,4],
@@ -241,13 +249,5 @@ var NAVTREEINDEX109 =
 "group__cscore__typedefs.html#ga801a0f9c4b68e600b81395876b4eabd7":[3,14,0,5],
 "group__cscore__typedefs.html#gaaf43d8c8d4ebeddebde752192da90a60":[3,14,0,1],
 "group__cscore__typedefs.html#gac2cc6a97b0195a8369709b6e03a7581c":[3,14,0,0],
-"group__cscore__typedefs.html#gacc95a72cf624459ca04bf9e70f827a07":[3,14,0,2],
-"group__cscore__usbcamera__cfunc.html":[3,14,5],
-"group__cscore__usbcamera__cfunc.html#ga677c046028ed1f1b8df4970362989d1c":[3,14,5,0],
-"group__cscore__usbcamera__cfunc.html#gade5e1d1755eebf099beba279cfcb87c3":[3,14,5,2],
-"group__cscore__usbcamera__cfunc.html#gaf20e10071bc6485edeaf5b13e8d9fd1b":[3,14,5,1],
-"group__cscore__usbcamera__func.html":[3,13,4],
-"group__cscore__usbcamera__func.html#ga5720a0a76f3bb8bceaa8db89ff4482ab":[3,13,4,0],
-"group__cscore__usbcamera__func.html#gab91d85d1cba9dcf14dc758afb6a0aa7f":[3,13,4,1],
-"group__cscore__usbcamera__func.html#gac5ffacfbec383b3571a5ba4f59f0f7a7":[3,13,4,2]
+"group__cscore__typedefs.html#gacc95a72cf624459ca04bf9e70f827a07":[3,14,0,2]
 };

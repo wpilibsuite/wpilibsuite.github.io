@@ -1,5 +1,13 @@
 var NAVTREEINDEX115 =
 {
+"group__ntcore__utility__cfunc.html#ga0fd423cd0d8bd810ac2f93bb03688784":[3,9,7,16],
+"group__ntcore__utility__cfunc.html#ga20f8444d4db738f7734050ff402dbe72":[3,9,7,15],
+"group__ntcore__utility__cfunc.html#ga28656328928d31d24d2169b371f3001c":[3,9,7,4],
+"group__ntcore__utility__cfunc.html#ga2e357f638ce86385617f8153217fb8a9":[3,9,7,9],
+"group__ntcore__utility__cfunc.html#ga318f92316feef67a743ae1a5a0aa1c3c":[3,9,7,13],
+"group__ntcore__utility__cfunc.html#ga450a48403c69d964e8e2ab1152b02925":[3,9,7,12],
+"group__ntcore__utility__cfunc.html#ga540661ffa87f4823209688cd5581f896":[3,9,7,0],
+"group__ntcore__utility__cfunc.html#ga5416499ba52778f1d9ac97bdff80bb34":[3,9,7,2],
 "group__ntcore__utility__cfunc.html#ga54b3029e8c81551f1f69bf7d03ebbbb1":[3,9,7,3],
 "group__ntcore__utility__cfunc.html#ga560d63022a5d123bb7d3739a9ce80403":[3,9,7,11],
 "group__ntcore__utility__cfunc.html#ga61fc33bc14ee480cfcd318f04aebfac6":[3,9,7,10],
@@ -241,13 +249,5 @@ var NAVTREEINDEX115 =
 "http__parser_8h.html#af3a0b479c88b876facf868f0c7a6b598a8534d7d9e32ee9a877dddc70f7abdefd":[6,0,14,33,21,5],
 "http__parser_8h.html#af3a0b479c88b876facf868f0c7a6b598ac6a7f4a78be5640ed5c926efaf8301c2":[6,0,14,33,21,7],
 "http__parser_8h.html#af3a0b479c88b876facf868f0c7a6b598ae015b71bf6bfa3cfe09f78f1c9360235":[6,0,14,33,21,6],
-"http__parser_8h.html#af3a0b479c88b876facf868f0c7a6b598af8e30e235a6bdffaac9f1945ce205851":[6,0,14,33,21,1],
-"http__parser_8h.html#af3a0b479c88b876facf868f0c7a6b598afb2e77eaed47bcfcfee307b2e1aff53a":[6,0,14,33,21,2],
-"http__parser_8h.html#af568f1219d61f5c74f4de5caac588a90":[6,0,14,33,35],
-"http__parser_8h.html#afb999672cce2ebd7f952bd3f28d8f5e5":[6,0,14,33,11],
-"http__parser_8h.html#afc98ce08cafe77beb6171b08d3065181":[6,0,14,33,30],
-"http__parser_8h_source.html":[6,0,14,33],
-"illuminance_8h.html":[6,0,12,20],
-"illuminance_8h.html#a561ccbed9f8172380f7247ac4fb2a248":[6,0,12,20,0],
-"illuminance_8h.html#a6a0ba5e615f001f7f96674da10edd979":[6,0,12,20,7]
+"http__parser_8h.html#af3a0b479c88b876facf868f0c7a6b598af8e30e235a6bdffaac9f1945ce205851":[6,0,14,33,21,1]
 };

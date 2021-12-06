@@ -1,5 +1,13 @@
 var NAVTREEINDEX167 =
 {
+"structfrc_1_1_spline_1_1_control_vector.html#a7fa1176e9fa0c34ab45d3baf168d75c6":[5,0,6,189,0,0],
+"structfrc_1_1_spline_1_1_control_vector.html#afd356b7244bceb1c2206177a0281500f":[4,0,9,193,0,1],
+"structfrc_1_1_spline_1_1_control_vector.html#afd356b7244bceb1c2206177a0281500f":[5,0,6,189,0,1],
+"structfrc_1_1_spline_parameterizer_1_1_malformed_spline_exception.html":[5,0,6,191,0],
+"structfrc_1_1_spline_parameterizer_1_1_malformed_spline_exception.html":[4,0,9,195,0],
+"structfrc_1_1_spline_parameterizer_1_1_malformed_spline_exception.html#aed08af34cb758d15c9a56656105cdfc1":[5,0,6,191,0,0],
+"structfrc_1_1_spline_parameterizer_1_1_malformed_spline_exception.html#aed08af34cb758d15c9a56656105cdfc1":[4,0,9,195,0,0],
+"structfrc_1_1_swerve_module_state.html":[5,0,6,199],
 "structfrc_1_1_swerve_module_state.html":[4,0,9,203],
 "structfrc_1_1_swerve_module_state.html#a156f23b8877aebb0820c48e2e536ae43":[4,0,9,203,0],
 "structfrc_1_1_swerve_module_state.html#a156f23b8877aebb0820c48e2e536ae43":[5,0,6,199,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX167 =
 "structnull__chrono__spec__handler.html#a4a18fff2695c903b63a91fb5efd4e406":[5,0,175,8],
 "structnull__chrono__spec__handler.html#a51e0a2bae55921656a122f412b6a4a6d":[5,0,175,5],
 "structnull__chrono__spec__handler.html#a5908aadf3cdacb5d43b21410ade87ab3":[5,0,175,22],
-"structnull__chrono__spec__handler.html#a604b7d94705fe9d7f7749f0e7aba7315":[5,0,175,14],
-"structnull__chrono__spec__handler.html#a7685ed91053881a270a62b1cc15cb295":[5,0,175,10],
-"structnull__chrono__spec__handler.html#a8c08c91fd037813b3def818b5fbfc920":[5,0,175,2],
-"structnull__chrono__spec__handler.html#a9b5fec72875ee8622cbb010ea89ef614":[5,0,175,0],
-"structnull__chrono__spec__handler.html#a9bc077c33a34f55e3cea129a6bf0d7cf":[5,0,175,13],
-"structnull__chrono__spec__handler.html#aa6c25945b057dc858e71e9c4c5a843c5":[5,0,175,23],
-"structnull__chrono__spec__handler.html#aae2080b92bbc4101e6e2985c0af26279":[5,0,175,11],
-"structnull__chrono__spec__handler.html#aaf8943eaeeedc59172da99904d3f4853":[5,0,175,1],
-"structnull__chrono__spec__handler.html#ab8cac801545d557c8f185990320627a9":[5,0,175,16]
+"structnull__chrono__spec__handler.html#a604b7d94705fe9d7f7749f0e7aba7315":[5,0,175,14]
 };

@@ -1,5 +1,13 @@
 var NAVTREEINDEX130 =
 {
+"namespaceunits_1_1solid__angle.html":[4,0,19,34],
+"namespaceunits_1_1substance.html":[4,0,19,35],
+"namespaceunits_1_1temperature.html":[4,0,19,36],
+"namespaceunits_1_1time.html":[4,0,19,37],
+"namespaceunits_1_1torque.html":[4,0,19,38],
+"namespaceunits_1_1traits.html":[3,21,0],
+"namespaceunits_1_1traits.html#ae7756e0f6e8322f5c6150be2b871e544":[4,0,19,39,13],
+"namespaceunits_1_1velocity.html":[4,0,19,40],
 "namespaceunits_1_1voltage.html":[4,0,19,41],
 "namespaceunits_1_1volume.html":[4,0,19,42],
 "namespacewpi.html":[4,0,20],
@@ -241,13 +249,5 @@ var NAVTREEINDEX130 =
 "namespacewpi.html#ab9199d95a0d0ca4ba23a42b8c9cd4763":[4,0,20,425],
 "namespacewpi.html#ab9c663588a7ff49ab4cb3ffb71e5d5c6":[4,0,20,259],
 "namespacewpi.html#ab9e2b9c52f4cd86842aa577863b93c2a":[4,0,20,322],
-"namespacewpi.html#abba808be054c9d45a724cc14bf47b45b":[4,0,20,339],
-"namespacewpi.html#abc0832dfca121b25b2bafc62df9bf0fa":[4,0,20,238],
-"namespacewpi.html#abd4df2968e94c4ee3ac050889f633446":[4,0,20,275],
-"namespacewpi.html#abfb563f4c667933f0ebf44c6ca54e7ba":[4,0,20,377],
-"namespacewpi.html#ac0c14a6177075406fca400c8f46d0dc5":[4,0,20,244],
-"namespacewpi.html#ac1334c1afcb5a1b5592e57a78436915b":[4,0,20,279],
-"namespacewpi.html#ac1971c129c3896d6dcc5c413c9255eae":[4,0,20,273],
-"namespacewpi.html#ac2bd96b09718980689f6278dd7ea224d":[4,0,20,381],
-"namespacewpi.html#ac2c6f38176a757997f4548366d10941c":[4,0,20,387]
+"namespacewpi.html#abba808be054c9d45a724cc14bf47b45b":[4,0,20,339]
 };

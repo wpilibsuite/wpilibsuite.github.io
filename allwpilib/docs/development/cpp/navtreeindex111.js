@@ -1,5 +1,13 @@
 var NAVTREEINDEX111 =
 {
+"group__hal__analogoutput.html#ga400c209027c3925b0cb5915518a0df03":[3,1,23,3],
+"group__hal__analogoutput.html#gae7c27e9e9a630f49826ba81cd07b71d6":[3,1,23,2],
+"group__hal__analogoutput.html#gaf545e147fa22c41055022c845d51258e":[3,1,23,4],
+"group__hal__analogtrigger.html":[3,1,31],
+"group__hal__analogtrigger.html#ga0bea6e6dcf72bcdad4c3450107a4ca13":[3,1,31,0],
+"group__hal__analogtrigger.html#ga3e41157e63a8668277ba24ab716f31d2":[3,1,31,3],
+"group__hal__analogtrigger.html#ga48627e2947670c867be01bbce213e9dc":[3,1,31,10],
+"group__hal__analogtrigger.html#ga5416ba50d2c46ecbc8d3ca2d08ef9573":[3,1,31,9],
 "group__hal__analogtrigger.html#ga69e4c7e259fdd1a79a6ac3c04edb89c5":[3,1,31,11],
 "group__hal__analogtrigger.html#ga741ca0b967f3a37b19f054d8689ab413":[3,1,31,6],
 "group__hal__analogtrigger.html#ga893494d423d24ebfded18d16761fcaaf":[3,1,31,2],
@@ -241,13 +249,5 @@ var NAVTREEINDEX111 =
 "group__hal__encoder.html#gac830c4961d0ddb67cdc02bc6cb52ec12":[3,1,29,3],
 "group__hal__encoder.html#gac8e8b9404204045bc7c4c92070787c17":[3,1,29,7],
 "group__hal__encoder.html#gad859111d75e05ba26d40b958a6a16095":[3,1,29,11],
-"group__hal__encoder.html#gae37a7e58f0cd174f549c2db25935c9ee":[3,1,29,19],
-"group__hal__encoder.html#gae38ad041836be4aa2a0a457ac1b97c40":[3,1,29,9],
-"group__hal__encoder.html#gae4e4cfc0aa3ef5f24f1eeedab2c8b0f6":[3,1,29,8],
-"group__hal__encoder.html#gaf72690908d0ab31d028dfdc5dad136ff":[3,1,29,12],
-"group__hal__encoder.html#gafa07bd7dc73fd175ba7893a95cc86106":[3,1,29,0],
-"group__hal__errors.html":[3,1,28],
-"group__hal__errors.html#ga01ecb9d6ea0dc15d38fae6a35fcd71d2":[3,1,28,28],
-"group__hal__errors.html#ga083e21f7fd6914bc430c977ac9fdc519":[3,1,28,69],
-"group__hal__errors.html#ga0a9e9d097bbf67b3718683b04c9a5d38":[3,1,28,51]
+"group__hal__encoder.html#gae37a7e58f0cd174f549c2db25935c9ee":[3,1,29,19]
 };

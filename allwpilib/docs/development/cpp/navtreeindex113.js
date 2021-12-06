@@ -1,5 +1,13 @@
 var NAVTREEINDEX113 =
 {
+"group__hal__serialport.html#ga128dd0ce9d90b16cd1eb16f080d5db84":[3,1,4,10],
+"group__hal__serialport.html#ga142ac7d0669849f2b77c7b07946d57a1":[3,1,4,9],
+"group__hal__serialport.html#ga1474b8fbb2bb329c8ef77e2e60217423":[3,1,4,14],
+"group__hal__serialport.html#ga1d0aff56a421ada99c255652fe4e4d36":[3,1,4,12],
+"group__hal__serialport.html#ga246b0a38411bdf75e54cf898ad539673":[3,1,4,18],
+"group__hal__serialport.html#ga2726e92155f6064b265b29275992a458":[3,1,4,13],
+"group__hal__serialport.html#ga3108f1fe6c2a30a7304d9a27f7fd3033":[3,1,4,8],
+"group__hal__serialport.html#ga40907488b04e763afa0cbb17444faae4":[3,1,4,6],
 "group__hal__serialport.html#ga44158b47d770a7de455e3fa13b2b14d7":[3,1,4,5],
 "group__hal__serialport.html#ga4863d9b0d9672a05b93e09b917f64841":[3,1,4,15],
 "group__hal__serialport.html#ga4d963e6ee5bd583e4efbfe42b7ac0804":[3,1,4,7],
@@ -241,13 +249,5 @@ var NAVTREEINDEX113 =
 "group__ntcore__connectionlistener__cfunc.html#ga0689545a1b4f59bf3a87aa3c758d3bfb":[3,9,3,5],
 "group__ntcore__connectionlistener__cfunc.html#ga282378649f6a456e676c7a62a84441f8":[3,9,3,3],
 "group__ntcore__connectionlistener__cfunc.html#ga30da30d14e88db7075247c726505e996":[3,9,3,8],
-"group__ntcore__connectionlistener__cfunc.html#ga33fd5270cf7f6904b262b9c5dd990f29":[3,9,3,7],
-"group__ntcore__connectionlistener__cfunc.html#ga53a9ed3c083d6fb4b89cb7ba399ed1ec":[3,9,3,6],
-"group__ntcore__connectionlistener__cfunc.html#ga546b57059e05ace74ed522bd204b6cb3":[3,9,3,9],
-"group__ntcore__connectionlistener__cfunc.html#ga59dc84868226f7f0005c98d862f50697":[3,9,3,0],
-"group__ntcore__connectionlistener__cfunc.html#gaa018bc4434a3e580ab944f8e0dac7221":[3,9,3,2],
-"group__ntcore__connectionlistener__cfunc.html#gac64a972063e3be3fe4d7ae3859e7c062":[3,9,3,1],
-"group__ntcore__connectionlistener__func.html":[3,8,3],
-"group__ntcore__connectionlistener__func.html#ga1591a54ca6babaef052683ac470fc452":[3,8,3,5],
-"group__ntcore__connectionlistener__func.html#ga3ad4de68b938004d607196c6abf27dad":[3,8,3,9]
+"group__ntcore__connectionlistener__cfunc.html#ga33fd5270cf7f6904b262b9c5dd990f29":[3,9,3,7]
 };

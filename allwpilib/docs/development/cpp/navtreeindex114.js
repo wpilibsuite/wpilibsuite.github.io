@@ -1,5 +1,13 @@
 var NAVTREEINDEX114 =
 {
+"group__ntcore__connectionlistener__cfunc.html#ga53a9ed3c083d6fb4b89cb7ba399ed1ec":[3,9,3,6],
+"group__ntcore__connectionlistener__cfunc.html#ga546b57059e05ace74ed522bd204b6cb3":[3,9,3,9],
+"group__ntcore__connectionlistener__cfunc.html#ga59dc84868226f7f0005c98d862f50697":[3,9,3,0],
+"group__ntcore__connectionlistener__cfunc.html#gaa018bc4434a3e580ab944f8e0dac7221":[3,9,3,2],
+"group__ntcore__connectionlistener__cfunc.html#gac64a972063e3be3fe4d7ae3859e7c062":[3,9,3,1],
+"group__ntcore__connectionlistener__func.html":[3,8,3],
+"group__ntcore__connectionlistener__func.html#ga1591a54ca6babaef052683ac470fc452":[3,8,3,5],
+"group__ntcore__connectionlistener__func.html#ga3ad4de68b938004d607196c6abf27dad":[3,8,3,9],
 "group__ntcore__connectionlistener__func.html#gaa88729f7f2563d47a4371de5e5c8badc":[3,8,3,0],
 "group__ntcore__connectionlistener__func.html#gaabb526df98891dd02f12a8b90c75c1e2":[3,8,3,4],
 "group__ntcore__connectionlistener__func.html#gaba15e80c285bf56279775fb6d1dd9dd5":[3,8,3,6],
@@ -241,13 +249,5 @@ var NAVTREEINDEX114 =
 "group__ntcore__typedgetters__cfunc.html#gae0baa9869569002315d5197c1556649f":[3,9,9,1,7],
 "group__ntcore__typedgetters__cfunc.html#gae8d919274723d48f0b0cf7b6c4113a26":[3,9,9,1,4],
 "group__ntcore__typedgetters__cfunc.html#gafb09ff2210ccef872da2b2667b990096":[3,9,9,1,13],
-"group__ntcore__utility__cfunc.html":[3,9,7],
-"group__ntcore__utility__cfunc.html#ga0fd423cd0d8bd810ac2f93bb03688784":[3,9,7,16],
-"group__ntcore__utility__cfunc.html#ga20f8444d4db738f7734050ff402dbe72":[3,9,7,15],
-"group__ntcore__utility__cfunc.html#ga28656328928d31d24d2169b371f3001c":[3,9,7,4],
-"group__ntcore__utility__cfunc.html#ga2e357f638ce86385617f8153217fb8a9":[3,9,7,9],
-"group__ntcore__utility__cfunc.html#ga318f92316feef67a743ae1a5a0aa1c3c":[3,9,7,13],
-"group__ntcore__utility__cfunc.html#ga450a48403c69d964e8e2ab1152b02925":[3,9,7,12],
-"group__ntcore__utility__cfunc.html#ga540661ffa87f4823209688cd5581f896":[3,9,7,0],
-"group__ntcore__utility__cfunc.html#ga5416499ba52778f1d9ac97bdff80bb34":[3,9,7,2]
+"group__ntcore__utility__cfunc.html":[3,9,7]
 };

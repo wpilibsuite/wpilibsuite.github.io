@@ -1,5 +1,13 @@
 var NAVTREEINDEX133 =
 {
+"priority__mutex_8h_source.html":[6,0,14,67],
+"priority__queue_8h.html":[6,0,14,68],
+"priority__queue_8h_source.html":[6,0,14,68],
+"products_2_general_block_panel_kernel_8h.html":[6,0,3,0,0,1,2,0],
+"products_2_general_block_panel_kernel_8h.html#a04dbd7a9ba7069a05726b5b09d1ee5db":[6,0,3,0,0,1,2,0,52],
+"products_2_general_block_panel_kernel_8h.html#a121474197896326494c83a9f4457662a":[6,0,3,0,0,1,2,0,28],
+"products_2_general_block_panel_kernel_8h.html#a1e6275c853bebca33e54ecf95e53cad5":[6,0,3,0,0,1,2,0,32],
+"products_2_general_block_panel_kernel_8h.html#a258cde696fdcccd807baf9346562bcc2":[6,0,3,0,0,1,2,0,30],
 "products_2_general_block_panel_kernel_8h.html#a2669f89ff38296a38e6d973552eb4e33":[6,0,3,0,0,1,2,0,39],
 "products_2_general_block_panel_kernel_8h.html#a2cfc0330ba567d63a496be1cac8427ae":[6,0,3,0,0,1,2,0,40],
 "products_2_general_block_panel_kernel_8h.html#a3d25c17e046c1bc4de77c0b4d4267322":[6,0,3,0,0,1,2,0,29],
@@ -241,13 +249,5 @@ var NAVTREEINDEX133 =
 "struct_eigen_1_1_matrix_base_1_1_const_diagonal_index_return_type.html":[3,26,16,0],
 "struct_eigen_1_1_matrix_base_1_1_const_diagonal_index_return_type.html#abb869f9b5b8910a80171a10b85bc8dd8":[3,26,16,0,0],
 "struct_eigen_1_1_matrix_base_1_1_const_self_adjoint_view_return_type.html":[3,26,16,1],
-"struct_eigen_1_1_matrix_base_1_1_const_self_adjoint_view_return_type.html#ac13928d91344ce53f99519d53299348c":[3,26,16,1,0],
-"struct_eigen_1_1_matrix_base_1_1_const_triangular_view_return_type.html":[3,26,16,2],
-"struct_eigen_1_1_matrix_base_1_1_const_triangular_view_return_type.html#a40f14663a6e3112a6d9829ba37c7e30d":[3,26,16,2,0],
-"struct_eigen_1_1_matrix_base_1_1_diagonal_index_return_type.html":[3,26,16,4],
-"struct_eigen_1_1_matrix_base_1_1_diagonal_index_return_type.html#a4c66b5491a63942f06d1c0edebc8e390":[3,26,16,4,0],
-"struct_eigen_1_1_matrix_base_1_1_self_adjoint_view_return_type.html":[3,26,16,5],
-"struct_eigen_1_1_matrix_base_1_1_self_adjoint_view_return_type.html#a5773a46c08e277d36bc4c4d790436c2b":[3,26,16,5,0],
-"struct_eigen_1_1_matrix_base_1_1_triangular_view_return_type.html":[3,26,16,6],
-"struct_eigen_1_1_matrix_base_1_1_triangular_view_return_type.html#a12df3e7a526bab6affc069db34ce4b69":[3,26,16,6,0]
+"struct_eigen_1_1_matrix_base_1_1_const_self_adjoint_view_return_type.html#ac13928d91344ce53f99519d53299348c":[3,26,16,1,0]
 };

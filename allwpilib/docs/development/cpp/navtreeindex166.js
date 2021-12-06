@@ -1,5 +1,13 @@
 var NAVTREEINDEX166 =
 {
+"structfallback__formatter.html#a6e0e3d2b91209937e0eb04880d5040e4":[5,0,72,0],
+"structfill__t.html":[5,0,73],
+"structfill__t.html#a205a72162ea2b2b2938d7ddccd35966f":[5,0,73,1],
+"structfill__t.html#a2f9cfa8b68ae1ccc39745b534b7ea814":[5,0,73,3],
+"structfill__t.html#a89ac8b3e760b219368ce2b010ea654e8":[5,0,73,4],
+"structfill__t.html#a96d2a7e6af20388e8523baef24d68fb9":[5,0,73,0],
+"structfill__t.html#aab3ca37e25fc1a654337c796d0d8e1d9":[5,0,73,2],
+"structfloat__specs.html":[5,0,77],
 "structfloat__specs.html#a05bc60d16c34a874a5c79d576581d386":[5,0,77,1],
 "structfloat__specs.html#a0f0bf3e55b78b4354809190563ff1c2d":[5,0,77,3],
 "structfloat__specs.html#a226d0c4e62d509590cc438e052858d36":[5,0,77,6],
@@ -241,13 +249,5 @@ var NAVTREEINDEX166 =
 "structfrc_1_1_p_s4_controller_1_1_button.html#afe7d62626c9e5ae792807de41fa726a0":[5,0,6,141,1,2],
 "structfrc_1_1_spline_1_1_control_vector.html":[4,0,9,193,0],
 "structfrc_1_1_spline_1_1_control_vector.html":[5,0,6,189,0],
-"structfrc_1_1_spline_1_1_control_vector.html#a7fa1176e9fa0c34ab45d3baf168d75c6":[4,0,9,193,0,0],
-"structfrc_1_1_spline_1_1_control_vector.html#a7fa1176e9fa0c34ab45d3baf168d75c6":[5,0,6,189,0,0],
-"structfrc_1_1_spline_1_1_control_vector.html#afd356b7244bceb1c2206177a0281500f":[4,0,9,193,0,1],
-"structfrc_1_1_spline_1_1_control_vector.html#afd356b7244bceb1c2206177a0281500f":[5,0,6,189,0,1],
-"structfrc_1_1_spline_parameterizer_1_1_malformed_spline_exception.html":[5,0,6,191,0],
-"structfrc_1_1_spline_parameterizer_1_1_malformed_spline_exception.html":[4,0,9,195,0],
-"structfrc_1_1_spline_parameterizer_1_1_malformed_spline_exception.html#aed08af34cb758d15c9a56656105cdfc1":[5,0,6,191,0,0],
-"structfrc_1_1_spline_parameterizer_1_1_malformed_spline_exception.html#aed08af34cb758d15c9a56656105cdfc1":[4,0,9,195,0,0],
-"structfrc_1_1_swerve_module_state.html":[5,0,6,199]
+"structfrc_1_1_spline_1_1_control_vector.html#a7fa1176e9fa0c34ab45d3baf168d75c6":[4,0,9,193,0,0]
 };
