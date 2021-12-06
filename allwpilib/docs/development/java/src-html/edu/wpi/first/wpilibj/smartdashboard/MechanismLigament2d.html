@@ -140,7 +140,7 @@
 <span class="sourceLineNo">128</span><a id="line.128">  }</a>
 <span class="sourceLineNo">129</span><a id="line.129"></a>
 <span class="sourceLineNo">130</span><a id="line.130">  @Override</a>
-<span class="sourceLineNo">131</span><a id="line.131">  protected synchronized void updateEntries(NetworkTable table) {</a>
+<span class="sourceLineNo">131</span><a id="line.131">  protected void updateEntries(NetworkTable table) {</a>
 <span class="sourceLineNo">132</span><a id="line.132">    table.getEntry(".type").setString("line");</a>
 <span class="sourceLineNo">133</span><a id="line.133">    m_angleEntry = table.getEntry("angle");</a>
 <span class="sourceLineNo">134</span><a id="line.134">    m_lengthEntry = table.getEntry("length");</a>
@@ -150,7 +150,7 @@
 <span class="sourceLineNo">138</span><a id="line.138">  }</a>
 <span class="sourceLineNo">139</span><a id="line.139"></a>
 <span class="sourceLineNo">140</span><a id="line.140">  /** Flush latest data to NT. */</a>
-<span class="sourceLineNo">141</span><a id="line.141">  private synchronized void flush() {</a>
+<span class="sourceLineNo">141</span><a id="line.141">  private void flush() {</a>
 <span class="sourceLineNo">142</span><a id="line.142">    if (m_angleEntry != null) {</a>
 <span class="sourceLineNo">143</span><a id="line.143">      m_angleEntry.setDouble(m_angle);</a>
 <span class="sourceLineNo">144</span><a id="line.144">    }</a>
