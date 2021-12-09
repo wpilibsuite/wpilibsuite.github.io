@@ -651,8 +651,8 @@
 <span class="sourceLineNo">639</span><a id="line.639">   * number of iterations to average with setToleranceBuffer() (defaults to 1). getAvgError() is</a>
 <span class="sourceLineNo">640</span><a id="line.640">   * used for the onTarget() function.</a>
 <span class="sourceLineNo">641</span><a id="line.641">   *</a>
-<span class="sourceLineNo">642</span><a id="line.642">   * @deprecated Use getError(), which is now already filtered.</a>
-<span class="sourceLineNo">643</span><a id="line.643">   * @return the current average of the error</a>
+<span class="sourceLineNo">642</span><a id="line.642">   * @return the current average of the error</a>
+<span class="sourceLineNo">643</span><a id="line.643">   * @deprecated Use getError(), which is now already filtered.</a>
 <span class="sourceLineNo">644</span><a id="line.644">   */</a>
 <span class="sourceLineNo">645</span><a id="line.645">  @Deprecated</a>
 <span class="sourceLineNo">646</span><a id="line.646">  public double getAvgError() {</a>
@@ -688,9 +688,9 @@
 <span class="sourceLineNo">676</span><a id="line.676">   * object. Use it by creating the type of tolerance that you want to use: setTolerance(new</a>
 <span class="sourceLineNo">677</span><a id="line.677">   * PIDController.AbsoluteTolerance(0.1))</a>
 <span class="sourceLineNo">678</span><a id="line.678">   *</a>
-<span class="sourceLineNo">679</span><a id="line.679">   * @deprecated Use setPercentTolerance() instead.</a>
-<span class="sourceLineNo">680</span><a id="line.680">   * @param tolerance A tolerance object of the right type, e.g. PercentTolerance or</a>
-<span class="sourceLineNo">681</span><a id="line.681">   *     AbsoluteTolerance</a>
+<span class="sourceLineNo">679</span><a id="line.679">   * @param tolerance A tolerance object of the right type, e.g. PercentTolerance or</a>
+<span class="sourceLineNo">680</span><a id="line.680">   *     AbsoluteTolerance</a>
+<span class="sourceLineNo">681</span><a id="line.681">   * @deprecated Use setPercentTolerance() instead.</a>
 <span class="sourceLineNo">682</span><a id="line.682">   */</a>
 <span class="sourceLineNo">683</span><a id="line.683">  @Deprecated</a>
 <span class="sourceLineNo">684</span><a id="line.684">  public void setTolerance(Tolerance tolerance) {</a>
@@ -733,8 +733,8 @@
 <span class="sourceLineNo">721</span><a id="line.721">   * erroneous measurements when the mechanism is on target. However, the mechanism will not</a>
 <span class="sourceLineNo">722</span><a id="line.722">   * register as on target for at least the specified bufLength cycles.</a>
 <span class="sourceLineNo">723</span><a id="line.723">   *</a>
-<span class="sourceLineNo">724</span><a id="line.724">   * @deprecated Use a LinearFilter as the input.</a>
-<span class="sourceLineNo">725</span><a id="line.725">   * @param bufLength Number of previous cycles to average.</a>
+<span class="sourceLineNo">724</span><a id="line.724">   * @param bufLength Number of previous cycles to average.</a>
+<span class="sourceLineNo">725</span><a id="line.725">   * @deprecated Use a LinearFilter as the input.</a>
 <span class="sourceLineNo">726</span><a id="line.726">   */</a>
 <span class="sourceLineNo">727</span><a id="line.727">  @Deprecated</a>
 <span class="sourceLineNo">728</span><a id="line.728">  public void setToleranceBuffer(int bufLength) {</a>

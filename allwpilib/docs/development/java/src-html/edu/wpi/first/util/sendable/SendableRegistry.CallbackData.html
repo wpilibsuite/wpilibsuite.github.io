@@ -474,7 +474,7 @@
 <span class="sourceLineNo">462</span><a id="line.462">   * @param dataHandle data handle to get data object passed to callback</a>
 <span class="sourceLineNo">463</span><a id="line.463">   * @param callback function to call for each object</a>
 <span class="sourceLineNo">464</span><a id="line.464">   */</a>
-<span class="sourceLineNo">465</span><a id="line.465">  @SuppressWarnings("PMD.AvoidCatchingThrowable")</a>
+<span class="sourceLineNo">465</span><a id="line.465">  @SuppressWarnings({"PMD.AvoidCatchingThrowable", "PMD.AvoidReassigningCatchVariables"})</a>
 <span class="sourceLineNo">466</span><a id="line.466">  public static synchronized void foreachLiveWindow(</a>
 <span class="sourceLineNo">467</span><a id="line.467">      int dataHandle, Consumer&lt;CallbackData&gt; callback) {</a>
 <span class="sourceLineNo">468</span><a id="line.468">    CallbackData cbdata = new CallbackData();</a>

@@ -162,7 +162,7 @@
 <span class="sourceLineNo">150</span><a id="line.150">   * @return if architecture is aarch64</a>
 <span class="sourceLineNo">151</span><a id="line.151">   */</a>
 <span class="sourceLineNo">152</span><a id="line.152">  public static boolean isAarch64() {</a>
-<span class="sourceLineNo">153</span><a id="line.153">    return System.getProperty("os.arch").equals("aarch64");</a>
+<span class="sourceLineNo">153</span><a id="line.153">    return "aarch64".equals(System.getProperty("os.arch"));</a>
 <span class="sourceLineNo">154</span><a id="line.154">  }</a>
 <span class="sourceLineNo">155</span><a id="line.155"></a>
 <span class="sourceLineNo">156</span><a id="line.156">  public static boolean isLinux() {</a>

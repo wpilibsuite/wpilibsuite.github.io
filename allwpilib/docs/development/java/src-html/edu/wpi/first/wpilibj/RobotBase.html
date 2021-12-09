@@ -325,7 +325,7 @@
 <span class="sourceLineNo">313</span><a id="line.313">  private static boolean m_suppressExitWarning;</a>
 <span class="sourceLineNo">314</span><a id="line.314"></a>
 <span class="sourceLineNo">315</span><a id="line.315">  /** Run the robot main loop. */</a>
-<span class="sourceLineNo">316</span><a id="line.316">  @SuppressWarnings("PMD.AvoidCatchingThrowable")</a>
+<span class="sourceLineNo">316</span><a id="line.316">  @SuppressWarnings({"PMD.AvoidCatchingThrowable", "PMD.AvoidReassigningCatchVariables"})</a>
 <span class="sourceLineNo">317</span><a id="line.317">  private static &lt;T extends RobotBase&gt; void runRobot(Supplier&lt;T&gt; robotSupplier) {</a>
 <span class="sourceLineNo">318</span><a id="line.318">    System.out.println("********** Robot program starting **********");</a>
 <span class="sourceLineNo">319</span><a id="line.319"></a>
