@@ -2673,6 +2673,7 @@ var annotated_dup =
     [ "HAL_REVPHCompressorConfig", "struct_h_a_l___r_e_v_p_h_compressor_config.html", "struct_h_a_l___r_e_v_p_h_compressor_config" ],
     [ "HAL_REVPHFaults", "struct_h_a_l___r_e_v_p_h_faults.html", "struct_h_a_l___r_e_v_p_h_faults" ],
     [ "HAL_REVPHStickyFaults", "struct_h_a_l___r_e_v_p_h_sticky_faults.html", "struct_h_a_l___r_e_v_p_h_sticky_faults" ],
+    [ "HAL_REVPHVersion", "struct_h_a_l___r_e_v_p_h_version.html", "struct_h_a_l___r_e_v_p_h_version" ],
     [ "HAL_Value", "struct_h_a_l___value.html", "struct_h_a_l___value" ],
     [ "HALSIM_NotifierInfo", "struct_h_a_l_s_i_m___notifier_info.html", "struct_h_a_l_s_i_m___notifier_info" ],
     [ "ifaddrs", "structifaddrs.html", "structifaddrs" ],
