@@ -9,8 +9,8 @@ var searchData=
   ['pidsourcetype_6',['PIDSourceType',['../namespacefrc.html#acfdec6974045d98b2be2a2877a5659cc',1,'frc']]],
   ['pixelformat_7',['PixelFormat',['../structcs_1_1_video_mode.html#af609b1218157529a43d8400e646e183c',1,'cs::VideoMode']]],
   ['pneumaticsmoduletype_8',['PneumaticsModuleType',['../namespacefrc.html#ad678d767ab62c6e84bc2fcac7655a725',1,'frc']]],
-  ['port_9',['Port',['../classfrc_1_1_s_p_i.html#ad5a4b71c1c453570e8b23d489e15fc03',1,'frc::SPI::Port()'],['../classfrc_1_1_serial_port.html#ac863fb1cd3a134f359434e58033d7138',1,'frc::SerialPort::Port()'],['../classfrc_1_1_i2_c.html#ae90c40da73cf515c2554ef94064d842b',1,'frc::I2C::Port()']]],
+  ['port_9',['Port',['../classfrc_1_1_serial_port.html#ac863fb1cd3a134f359434e58033d7138',1,'frc::SerialPort::Port()'],['../classfrc_1_1_i2_c.html#ae90c40da73cf515c2554ef94064d842b',1,'frc::I2C::Port()'],['../classfrc_1_1_s_p_i.html#ad5a4b71c1c453570e8b23d489e15fc03',1,'frc::SPI::Port()']]],
   ['portable_5ferror_10',['portable_error',['../namespaceghc_1_1filesystem_1_1detail.html#a5f693e585200b86ff4b0e2d39f0dc22f',1,'ghc::filesystem::detail']]],
-  ['powerctlfields_11',['PowerCtlFields',['../classfrc_1_1_a_d_x_l345___s_p_i.html#ab0964ef022e400efad4585c8825bb296',1,'frc::ADXL345_SPI::PowerCtlFields()'],['../classfrc_1_1_a_d_x_l345___i2_c.html#a1eb123f8d1b3dc4e120bcc51e5fde860',1,'frc::ADXL345_I2C::PowerCtlFields()']]],
+  ['powerctlfields_11',['PowerCtlFields',['../classfrc_1_1_a_d_x_l345___i2_c.html#a1eb123f8d1b3dc4e120bcc51e5fde860',1,'frc::ADXL345_I2C::PowerCtlFields()'],['../classfrc_1_1_a_d_x_l345___s_p_i.html#ab0964ef022e400efad4585c8825bb296',1,'frc::ADXL345_SPI::PowerCtlFields()']]],
   ['productimpltype_12',['ProductImplType',['../namespace_eigen.html#a15a3e26ba06f3c60d2f2e46f56045f27',1,'Eigen']]]
 ];

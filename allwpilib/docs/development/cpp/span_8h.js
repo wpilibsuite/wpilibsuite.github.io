@@ -17,6 +17,7 @@ var span_8h =
     [ "std::tuple_size< wpi::span< ElementType, Extent > >", "classstd_1_1tuple__size_3_01wpi_1_1span_3_01_element_type_00_01_extent_01_4_01_4.html", null ],
     [ "std::tuple_element< I, wpi::span< ElementType, Extent > >", "classstd_1_1tuple__element_3_01_i_00_01wpi_1_1span_3_01_element_type_00_01_extent_01_4_01_4.html", "classstd_1_1tuple__element_3_01_i_00_01wpi_1_1span_3_01_element_type_00_01_extent_01_4_01_4" ],
     [ "remove_pointer_t", "span_8h.html#ad5aec138436459518e03b347be4a9561", null ],
+    [ "uncvref_t", "span_8h.html#ad7989691524c4283ec6ef011a57486f4", null ],
     [ "as_bytes", "span_8h.html#ae828a8c77bdebb5204250519838ed8dc", null ],
     [ "as_writable_bytes", "span_8h.html#a70214806b2200e893f4f33e54fb6166a", null ],
     [ "get", "span_8h.html#a642b2450b4eef7de6728e218adde13b5", null ],

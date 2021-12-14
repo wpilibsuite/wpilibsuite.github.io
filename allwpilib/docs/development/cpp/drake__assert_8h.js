@@ -8,8 +8,6 @@ var drake__assert_8h =
     [ "DRAKE_UNREACHABLE", "drake__assert_8h.html#aaf9506c208e2a7d09f67d1a9ab84992a", null ],
     [ "Abort", "drake__assert_8h.html#a1555b594d10aad05d02addac282d35ec", null ],
     [ "AssertionFailed", "drake__assert_8h.html#abffd0ad8e5a39757c70d2e40443f4f59", null ],
-    [ "DrakeAssertWasUsedWithRawPointer", "drake__assert_8h.html#a97b5239aadb12956444c2dea4d95df30", null ],
-    [ "DrakeAssertWasUsedWithRawPointer< true >", "drake__assert_8h.html#aa5f8dd2c95a5dc1fff5704e84b813b76", null ],
     [ "kDrakeAssertIsArmed", "drake__assert_8h.html#ada5c985728d5a4c83dafa8f1a8cfd291", null ],
     [ "kDrakeAssertIsDisarmed", "drake__assert_8h.html#a75884a83d298f0dd1d14bc3ea8bee021", null ]
 ];
