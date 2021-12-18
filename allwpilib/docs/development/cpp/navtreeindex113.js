@@ -1,5 +1,14 @@
 var NAVTREEINDEX113 =
 {
+"group__hal__serialport.html#ga1d0aff56a421ada99c255652fe4e4d36":[3,1,3,12],
+"group__hal__serialport.html#ga246b0a38411bdf75e54cf898ad539673":[3,1,3,18],
+"group__hal__serialport.html#ga2726e92155f6064b265b29275992a458":[3,1,3,13],
+"group__hal__serialport.html#ga3108f1fe6c2a30a7304d9a27f7fd3033":[3,1,3,8],
+"group__hal__serialport.html#ga40907488b04e763afa0cbb17444faae4":[3,1,3,6],
+"group__hal__serialport.html#ga44158b47d770a7de455e3fa13b2b14d7":[3,1,3,5],
+"group__hal__serialport.html#ga4863d9b0d9672a05b93e09b917f64841":[3,1,3,15],
+"group__hal__serialport.html#ga4d963e6ee5bd583e4efbfe42b7ac0804":[3,1,3,7],
+"group__hal__serialport.html#ga51a28d7e9c4befe140468afb9dfb2b77":[3,1,3,1],
 "group__hal__serialport.html#ga5eb24f060c01f778eaa200d5becc4b0c":[3,1,3,20],
 "group__hal__serialport.html#ga8969a109884d86c95adf819496c64784":[3,1,3,2],
 "group__hal__serialport.html#ga920509fb1c9c760920968a352f0c4cd4":[3,1,3,11],
@@ -240,14 +249,5 @@ var NAVTREEINDEX113 =
 "group__ntcore__connectionlistener__cfunc.html#ga33fd5270cf7f6904b262b9c5dd990f29":[3,10,3,7],
 "group__ntcore__connectionlistener__cfunc.html#ga53a9ed3c083d6fb4b89cb7ba399ed1ec":[3,10,3,6],
 "group__ntcore__connectionlistener__cfunc.html#ga546b57059e05ace74ed522bd204b6cb3":[3,10,3,9],
-"group__ntcore__connectionlistener__cfunc.html#ga59dc84868226f7f0005c98d862f50697":[3,10,3,0],
-"group__ntcore__connectionlistener__cfunc.html#gaa018bc4434a3e580ab944f8e0dac7221":[3,10,3,2],
-"group__ntcore__connectionlistener__cfunc.html#gac64a972063e3be3fe4d7ae3859e7c062":[3,10,3,1],
-"group__ntcore__connectionlistener__func.html":[3,9,3],
-"group__ntcore__connectionlistener__func.html#ga1591a54ca6babaef052683ac470fc452":[3,9,3,5],
-"group__ntcore__connectionlistener__func.html#ga3ad4de68b938004d607196c6abf27dad":[3,9,3,9],
-"group__ntcore__connectionlistener__func.html#gaa88729f7f2563d47a4371de5e5c8badc":[3,9,3,0],
-"group__ntcore__connectionlistener__func.html#gaabb526df98891dd02f12a8b90c75c1e2":[3,9,3,4],
-"group__ntcore__connectionlistener__func.html#gaba15e80c285bf56279775fb6d1dd9dd5":[3,9,3,6],
-"group__ntcore__connectionlistener__func.html#gabb4d7814ef7c944bab2e07c44e107e15":[3,9,3,7]
+"group__ntcore__connectionlistener__cfunc.html#ga59dc84868226f7f0005c98d862f50697":[3,10,3,0]
 };

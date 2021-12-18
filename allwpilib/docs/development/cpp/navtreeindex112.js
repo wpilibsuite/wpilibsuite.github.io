@@ -1,5 +1,14 @@
 var NAVTREEINDEX112 =
 {
+"group__hal__errors.html#ga0f99373a700cea2561e434dfe8f09a41":[3,1,12,59],
+"group__hal__errors.html#ga1556a254f5ef6d667899ecc1fef411fd":[3,1,12,8],
+"group__hal__errors.html#ga1678ea6e52c42ed7a5d2e0886597ebf1":[3,1,12,45],
+"group__hal__errors.html#ga186444985aee6c3f9805980ad04b5525":[3,1,12,25],
+"group__hal__errors.html#ga1ac6a3629bdb7227b5654a9c5ba575b0":[3,1,12,47],
+"group__hal__errors.html#ga1da1420ada5c3e3655b12ecf03861dc2":[3,1,12,26],
+"group__hal__errors.html#ga21455764586d49d75850cfe97cece461":[3,1,12,19],
+"group__hal__errors.html#ga287bf1c69269142b2402d67460522247":[3,1,12,9],
+"group__hal__errors.html#ga31fcc14c01904eec19d24b8c39263ae1":[3,1,12,33],
 "group__hal__errors.html#ga3293292ffb326062bfbeae6924cb7ebe":[3,1,12,75],
 "group__hal__errors.html#ga3381e4439fe819a9c5fa97277a93b5d6":[3,1,12,41],
 "group__hal__errors.html#ga366b02cc261b9d338e2b977fd3509d56":[3,1,12,62],
@@ -240,14 +249,5 @@ var NAVTREEINDEX112 =
 "group__hal__serialport.html":[3,1,3],
 "group__hal__serialport.html#ga128dd0ce9d90b16cd1eb16f080d5db84":[3,1,3,10],
 "group__hal__serialport.html#ga142ac7d0669849f2b77c7b07946d57a1":[3,1,3,9],
-"group__hal__serialport.html#ga1474b8fbb2bb329c8ef77e2e60217423":[3,1,3,14],
-"group__hal__serialport.html#ga1d0aff56a421ada99c255652fe4e4d36":[3,1,3,12],
-"group__hal__serialport.html#ga246b0a38411bdf75e54cf898ad539673":[3,1,3,18],
-"group__hal__serialport.html#ga2726e92155f6064b265b29275992a458":[3,1,3,13],
-"group__hal__serialport.html#ga3108f1fe6c2a30a7304d9a27f7fd3033":[3,1,3,8],
-"group__hal__serialport.html#ga40907488b04e763afa0cbb17444faae4":[3,1,3,6],
-"group__hal__serialport.html#ga44158b47d770a7de455e3fa13b2b14d7":[3,1,3,5],
-"group__hal__serialport.html#ga4863d9b0d9672a05b93e09b917f64841":[3,1,3,15],
-"group__hal__serialport.html#ga4d963e6ee5bd583e4efbfe42b7ac0804":[3,1,3,7],
-"group__hal__serialport.html#ga51a28d7e9c4befe140468afb9dfb2b77":[3,1,3,1]
+"group__hal__serialport.html#ga1474b8fbb2bb329c8ef77e2e60217423":[3,1,3,14]
 };
