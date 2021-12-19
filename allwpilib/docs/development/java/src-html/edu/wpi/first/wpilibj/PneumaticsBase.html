@@ -106,44 +106,46 @@
 <span class="sourceLineNo">094</span><a id="line.94"></a>
 <span class="sourceLineNo">095</span><a id="line.95">  void enableCompressorHybrid(double minAnalogVoltage, double maxAnalogVoltage);</a>
 <span class="sourceLineNo">096</span><a id="line.96"></a>
-<span class="sourceLineNo">097</span><a id="line.97">  CompressorConfigType getCompressorConfigType();</a>
+<span class="sourceLineNo">097</span><a id="line.97">  double getAnalogVoltage(int channel);</a>
 <span class="sourceLineNo">098</span><a id="line.98"></a>
-<span class="sourceLineNo">099</span><a id="line.99">  /**</a>
-<span class="sourceLineNo">100</span><a id="line.100">   * Check if a solenoid channel is valid.</a>
-<span class="sourceLineNo">101</span><a id="line.101">   *</a>
-<span class="sourceLineNo">102</span><a id="line.102">   * @param channel Channel to check</a>
-<span class="sourceLineNo">103</span><a id="line.103">   * @return True if channel exists</a>
-<span class="sourceLineNo">104</span><a id="line.104">   */</a>
-<span class="sourceLineNo">105</span><a id="line.105">  boolean checkSolenoidChannel(int channel);</a>
-<span class="sourceLineNo">106</span><a id="line.106"></a>
-<span class="sourceLineNo">107</span><a id="line.107">  /**</a>
-<span class="sourceLineNo">108</span><a id="line.108">   * Check to see if the masked solenoids can be reserved, and if not reserve them.</a>
-<span class="sourceLineNo">109</span><a id="line.109">   *</a>
-<span class="sourceLineNo">110</span><a id="line.110">   * @param mask The solenoid mask to reserve</a>
-<span class="sourceLineNo">111</span><a id="line.111">   * @return 0 if successful, mask of solenoids that couldn't be allocated otherwise</a>
-<span class="sourceLineNo">112</span><a id="line.112">   */</a>
-<span class="sourceLineNo">113</span><a id="line.113">  int checkAndReserveSolenoids(int mask);</a>
-<span class="sourceLineNo">114</span><a id="line.114"></a>
-<span class="sourceLineNo">115</span><a id="line.115">  /**</a>
-<span class="sourceLineNo">116</span><a id="line.116">   * Unreserve the masked solenoids.</a>
-<span class="sourceLineNo">117</span><a id="line.117">   *</a>
-<span class="sourceLineNo">118</span><a id="line.118">   * @param mask The solenoid mask to unreserve</a>
-<span class="sourceLineNo">119</span><a id="line.119">   */</a>
-<span class="sourceLineNo">120</span><a id="line.120">  void unreserveSolenoids(int mask);</a>
-<span class="sourceLineNo">121</span><a id="line.121"></a>
-<span class="sourceLineNo">122</span><a id="line.122">  boolean reserveCompressor();</a>
+<span class="sourceLineNo">099</span><a id="line.99">  CompressorConfigType getCompressorConfigType();</a>
+<span class="sourceLineNo">100</span><a id="line.100"></a>
+<span class="sourceLineNo">101</span><a id="line.101">  /**</a>
+<span class="sourceLineNo">102</span><a id="line.102">   * Check if a solenoid channel is valid.</a>
+<span class="sourceLineNo">103</span><a id="line.103">   *</a>
+<span class="sourceLineNo">104</span><a id="line.104">   * @param channel Channel to check</a>
+<span class="sourceLineNo">105</span><a id="line.105">   * @return True if channel exists</a>
+<span class="sourceLineNo">106</span><a id="line.106">   */</a>
+<span class="sourceLineNo">107</span><a id="line.107">  boolean checkSolenoidChannel(int channel);</a>
+<span class="sourceLineNo">108</span><a id="line.108"></a>
+<span class="sourceLineNo">109</span><a id="line.109">  /**</a>
+<span class="sourceLineNo">110</span><a id="line.110">   * Check to see if the masked solenoids can be reserved, and if not reserve them.</a>
+<span class="sourceLineNo">111</span><a id="line.111">   *</a>
+<span class="sourceLineNo">112</span><a id="line.112">   * @param mask The solenoid mask to reserve</a>
+<span class="sourceLineNo">113</span><a id="line.113">   * @return 0 if successful, mask of solenoids that couldn't be allocated otherwise</a>
+<span class="sourceLineNo">114</span><a id="line.114">   */</a>
+<span class="sourceLineNo">115</span><a id="line.115">  int checkAndReserveSolenoids(int mask);</a>
+<span class="sourceLineNo">116</span><a id="line.116"></a>
+<span class="sourceLineNo">117</span><a id="line.117">  /**</a>
+<span class="sourceLineNo">118</span><a id="line.118">   * Unreserve the masked solenoids.</a>
+<span class="sourceLineNo">119</span><a id="line.119">   *</a>
+<span class="sourceLineNo">120</span><a id="line.120">   * @param mask The solenoid mask to unreserve</a>
+<span class="sourceLineNo">121</span><a id="line.121">   */</a>
+<span class="sourceLineNo">122</span><a id="line.122">  void unreserveSolenoids(int mask);</a>
 <span class="sourceLineNo">123</span><a id="line.123"></a>
-<span class="sourceLineNo">124</span><a id="line.124">  void unreserveCompressor();</a>
+<span class="sourceLineNo">124</span><a id="line.124">  boolean reserveCompressor();</a>
 <span class="sourceLineNo">125</span><a id="line.125"></a>
-<span class="sourceLineNo">126</span><a id="line.126">  @Override</a>
-<span class="sourceLineNo">127</span><a id="line.127">  void close();</a>
-<span class="sourceLineNo">128</span><a id="line.128"></a>
-<span class="sourceLineNo">129</span><a id="line.129">  Solenoid makeSolenoid(int channel);</a>
+<span class="sourceLineNo">126</span><a id="line.126">  void unreserveCompressor();</a>
+<span class="sourceLineNo">127</span><a id="line.127"></a>
+<span class="sourceLineNo">128</span><a id="line.128">  @Override</a>
+<span class="sourceLineNo">129</span><a id="line.129">  void close();</a>
 <span class="sourceLineNo">130</span><a id="line.130"></a>
-<span class="sourceLineNo">131</span><a id="line.131">  DoubleSolenoid makeDoubleSolenoid(int forwardChannel, int reverseChannel);</a>
+<span class="sourceLineNo">131</span><a id="line.131">  Solenoid makeSolenoid(int channel);</a>
 <span class="sourceLineNo">132</span><a id="line.132"></a>
-<span class="sourceLineNo">133</span><a id="line.133">  Compressor makeCompressor();</a>
-<span class="sourceLineNo">134</span><a id="line.134">}</a>
+<span class="sourceLineNo">133</span><a id="line.133">  DoubleSolenoid makeDoubleSolenoid(int forwardChannel, int reverseChannel);</a>
+<span class="sourceLineNo">134</span><a id="line.134"></a>
+<span class="sourceLineNo">135</span><a id="line.135">  Compressor makeCompressor();</a>
+<span class="sourceLineNo">136</span><a id="line.136">}</a>
 
 
 
