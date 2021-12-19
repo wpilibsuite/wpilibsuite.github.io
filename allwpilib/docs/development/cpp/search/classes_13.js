@@ -365,7 +365,7 @@ var searchData=
   ['static_5fconst_362',['static_const',['../structwpi_1_1detail_1_1static__const.html',1,'wpi::detail']]],
   ['std_5fstring_5fview_363',['std_string_view',['../structstd__string__view.html',1,'']]],
   ['stem_5ffunction_364',['stem_function',['../struct_eigen_1_1internal_1_1stem__function.html',1,'Eigen::internal']]],
-  ['stickyfaults_365',['StickyFaults',['../structfrc_1_1_pneumatic_hub_1_1_sticky_faults.html',1,'frc::PneumaticHub']]],
+  ['stickyfaults_365',['StickyFaults',['../structfrc_1_1_pneumatic_hub_1_1_sticky_faults.html',1,'frc::PneumaticHub::StickyFaults'],['../structfrc_1_1_power_distribution_1_1_sticky_faults.html',1,'frc::PowerDistribution::StickyFaults']]],
   ['storage_5fkind_5fto_5fevaluator_5fkind_366',['storage_kind_to_evaluator_kind',['../struct_eigen_1_1internal_1_1storage__kind__to__evaluator__kind.html',1,'Eigen::internal']]],
   ['storage_5fkind_5fto_5fshape_367',['storage_kind_to_shape',['../struct_eigen_1_1internal_1_1storage__kind__to__shape.html',1,'Eigen::internal']]],
   ['storage_5fkind_5fto_5fshape_3c_20dense_20_3e_368',['storage_kind_to_shape&lt; Dense &gt;',['../struct_eigen_1_1internal_1_1storage__kind__to__shape_3_01_dense_01_4.html',1,'Eigen::internal']]],

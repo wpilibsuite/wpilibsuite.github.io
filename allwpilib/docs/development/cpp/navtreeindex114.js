@@ -1,5 +1,14 @@
 var NAVTREEINDEX114 =
 {
+"group__ntcore__c__api.html#gga5a37c1408d3bd3090edcfd497c00acbeace42dd753fd0b3d0a77255329038158e":[3,10,35,7],
+"group__ntcore__c__api.html#gga5a37c1408d3bd3090edcfd497c00acbeada6bc55080c67188f5a3d29c8677dff9":[3,10,35,5],
+"group__ntcore__c__api.html#gga625cf01c8aa4a321d9a4790033fc3846a049d02bf6c74edb4b94379bfc525e944":[3,10,36,3],
+"group__ntcore__c__api.html#gga625cf01c8aa4a321d9a4790033fc3846a20b780415e186ab599843746d6bc50f9":[3,10,36,4],
+"group__ntcore__c__api.html#gga625cf01c8aa4a321d9a4790033fc3846a3a889f3d024455adf7dee2d5eb408b03":[3,10,36,5],
+"group__ntcore__c__api.html#gga625cf01c8aa4a321d9a4790033fc3846aa5f27c746541a29f1750c9ea26a31da9":[3,10,36,2],
+"group__ntcore__c__api.html#gga625cf01c8aa4a321d9a4790033fc3846ae74d3a0e730d6f2ea468013e93f5ac21":[3,10,36,1],
+"group__ntcore__c__api.html#gga625cf01c8aa4a321d9a4790033fc3846af9093dfdbdaf46e6a15ffbff6f731d63":[3,10,36,0],
+"group__ntcore__c__api.html#gga85e32a7c652ecd10ca642d78ec21e46aa03d4fa4f6dcb6edcac5acc44af9a3ad8":[3,10,38,2],
 "group__ntcore__c__api.html#gga85e32a7c652ecd10ca642d78ec21e46aa04270a16b7af9cb6e30690e955b7525f":[3,10,38,1],
 "group__ntcore__c__api.html#gga85e32a7c652ecd10ca642d78ec21e46aa1685168fba9a2a6255052085dae43ea9":[3,10,38,6],
 "group__ntcore__c__api.html#gga85e32a7c652ecd10ca642d78ec21e46aa2ee92bf0c53dad9a5e26761bb4fb0f55":[3,10,38,3],
@@ -240,14 +249,5 @@ var NAVTREEINDEX114 =
 "group__ntcore__table__cfunc.html#gafce13bfbcc1dcf58bde987c2488971a5":[3,10,1,3],
 "group__ntcore__table__func.html":[3,9,1],
 "group__ntcore__table__func.html#ga03d0a723385257cf6bd2cfb81f896b59":[3,9,1,1],
-"group__ntcore__table__func.html#ga16ae14eb3fcf593ca51d05a9fe2e9a81":[3,9,1,9],
-"group__ntcore__table__func.html#ga17986f858997ebc452e3df78040ce68c":[3,9,1,6],
-"group__ntcore__table__func.html#ga17b4721bbd422853a29db96d63920c0a":[3,9,1,0],
-"group__ntcore__table__func.html#ga1a21fd80f383c92102bf3654f6cdca4f":[3,9,1,5],
-"group__ntcore__table__func.html#ga292e4d9eaa943ad91c59d01372d8c1c0":[3,9,1,12],
-"group__ntcore__table__func.html#ga32288247f346760be7d38e005146b0ef":[3,9,1,3],
-"group__ntcore__table__func.html#ga4072d1b4344f0844664021c371c9e3e5":[3,9,1,2],
-"group__ntcore__table__func.html#ga6e0720e30da1c87d3479d4b94bef8138":[3,9,1,10],
-"group__ntcore__table__func.html#ga70a9d991624ff61e0d293d3fbd23fa22":[3,9,1,4],
-"group__ntcore__table__func.html#gaa14a553ed4e2301ceda8b3de7f54a8ea":[3,9,1,7]
+"group__ntcore__table__func.html#ga16ae14eb3fcf593ca51d05a9fe2e9a81":[3,9,1,9]
 };

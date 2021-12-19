@@ -19,7 +19,7 @@ var searchData=
   ['vectorwise_5freverse_5finplace_5fimpl_3c_20horizontal_20_3e_16',['vectorwise_reverse_inplace_impl&lt; Horizontal &gt;',['../struct_eigen_1_1internal_1_1vectorwise__reverse__inplace__impl_3_01_horizontal_01_4.html',1,'Eigen::internal']]],
   ['vectorwise_5freverse_5finplace_5fimpl_3c_20vertical_20_3e_17',['vectorwise_reverse_inplace_impl&lt; Vertical &gt;',['../struct_eigen_1_1internal_1_1vectorwise__reverse__inplace__impl_3_01_vertical_01_4.html',1,'Eigen::internal']]],
   ['vectorwiseop_18',['VectorwiseOp',['../class_eigen_1_1_vectorwise_op.html',1,'Eigen']]],
-  ['version_19',['Version',['../structfrc_1_1_pneumatic_hub_1_1_version.html',1,'frc::PneumaticHub']]],
+  ['version_19',['Version',['../structfrc_1_1_pneumatic_hub_1_1_version.html',1,'frc::PneumaticHub::Version'],['../structfrc_1_1_power_distribution_1_1_version.html',1,'frc::PowerDistribution::Version']]],
   ['versiontuple_20',['VersionTuple',['../classwpi_1_1_version_tuple.html',1,'wpi']]],
   ['victor_21',['Victor',['../classfrc_1_1_victor.html',1,'frc']]],
   ['victorsp_22',['VictorSP',['../classfrc_1_1_victor_s_p.html',1,'frc']]],

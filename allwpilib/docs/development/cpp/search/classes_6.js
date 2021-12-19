@@ -7,7 +7,7 @@ var searchData=
   ['fast_5faccurate_5fexp2_4',['fast_accurate_exp2',['../struct_eigen_1_1internal_1_1fast__accurate__exp2.html',1,'Eigen::internal']]],
   ['fast_5faccurate_5fexp2_3c_20double_20_3e_5',['fast_accurate_exp2&lt; double &gt;',['../struct_eigen_1_1internal_1_1fast__accurate__exp2_3_01double_01_4.html',1,'Eigen::internal']]],
   ['fast_5faccurate_5fexp2_3c_20float_20_3e_6',['fast_accurate_exp2&lt; float &gt;',['../struct_eigen_1_1internal_1_1fast__accurate__exp2_3_01float_01_4.html',1,'Eigen::internal']]],
-  ['faults_7',['Faults',['../structfrc_1_1_pneumatic_hub_1_1_faults.html',1,'frc::PneumaticHub']]],
+  ['faults_7',['Faults',['../structfrc_1_1_pneumatic_hub_1_1_faults.html',1,'frc::PneumaticHub::Faults'],['../structfrc_1_1_power_distribution_1_1_faults.html',1,'frc::PowerDistribution::Faults']]],
   ['field2d_8',['Field2d',['../classfrc_1_1_field2d.html',1,'frc']]],
   ['fieldobject2d_9',['FieldObject2d',['../classfrc_1_1_field_object2d.html',1,'frc']]],
   ['file_5fstatus_10',['file_status',['../classghc_1_1filesystem_1_1file__status.html',1,'ghc::filesystem']]],
