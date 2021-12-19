@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-3-35-ge44ed75</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-3-38-g34b2d0d</span>
    </div>
   </td>
  </tr>
@@ -191,47 +191,56 @@ $(document).ready(function(){initNavTree('_compressor_8h_source.html',''); initR
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="comment">   *</span></div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="comment">   * @return The current through the compressor, in amps</span></div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="classfrc_1_1_compressor.html#a5d0165e21a3745f281142e60d5824028">   98</a></span>  <span class="keywordtype">double</span> <a class="code hl_function" href="classfrc_1_1_compressor.html#a5d0165e21a3745f281142e60d5824028">GetCurrent</a>() const;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="classfrc_1_1_compressor.html#a86b8dc0f9657d67ff3c4cf7434c874e2">   98</a></span>  <a class="code hl_namespace" href="namespaceunits.html">units</a>::ampere_t <a class="code hl_function" href="classfrc_1_1_compressor.html#a86b8dc0f9657d67ff3c4cf7434c874e2">GetCurrent</a>() const;</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment"></span> </div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment">   * Disable the compressor.</span></div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="classfrc_1_1_compressor.html#afcd369cad107fa0c1dc6139ad498fa5e">  103</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_compressor.html#afcd369cad107fa0c1dc6139ad498fa5e">Disable</a>();</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment"></span> </div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="comment">   * Enable compressor closed loop control using digital input.</span></div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="classfrc_1_1_compressor.html#a07cc62fe68f8cd47af3b61517bae3e9c">  108</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_compressor.html#a07cc62fe68f8cd47af3b61517bae3e9c">EnableDigital</a>();</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="comment"></span> </div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="comment">   * Enable compressor closed loop control using analog input.</span></div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="comment">   * &lt;p&gt;On CTRE PCM, this will enable digital control.</span></div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="comment">   * @param minAnalogVoltage The minimum voltage to enable compressor</span></div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment">   * @param maxAnalogVoltage The maximum voltage to disable compressor</span></div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="classfrc_1_1_compressor.html#a9885b8832b0a4b7a25cbb6604502015e">  118</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_compressor.html#a9885b8832b0a4b7a25cbb6604502015e">EnableAnalog</a>(<span class="keywordtype">double</span> minAnalogVoltage, <span class="keywordtype">double</span> maxAnalogVoltage);</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment"></span> </div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="comment">   * Enable compressor closed loop control using hybrid input.</span></div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="comment">   * On CTRE PCM, this will enable digital control.</span></div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="comment">   * @param minAnalogVoltage The minimum voltage to enable compressor</span></div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="comment">   * @param maxAnalogVoltage The maximum voltage to disable compressor</span></div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="classfrc_1_1_compressor.html#a2517b3ea7f1808fa145817cbb0100b98">  128</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_compressor.html#a2517b3ea7f1808fa145817cbb0100b98">EnableHybrid</a>(<span class="keywordtype">double</span> minAnalogVoltage, <span class="keywordtype">double</span> maxAnalogVoltage);</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="classfrc_1_1_compressor.html#a3e2bbef2ea2972adb6109d264e915a99">  130</a></span>  <a class="code hl_enumeration" href="namespacefrc.html#a498a2d59993362a6264f53be5572b823">CompressorConfigType</a> <a class="code hl_function" href="classfrc_1_1_compressor.html#a3e2bbef2ea2972adb6109d264e915a99">GetConfigType</a>() const;</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="classfrc_1_1_compressor.html#a90c5a691c412a71d37e890aa59512774">  132</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_compressor.html#a90c5a691c412a71d37e890aa59512774">InitSendable</a>(<a class="code hl_namespace" href="namespacewpi.html">wpi</a>::SendableBuilder&amp; builder) override;</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> private:</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>  <a class="code hl_namespace" href="namespacestd.html">std</a>::shared_ptr&lt;<a class="code hl_class" href="classfrc_1_1_pneumatics_base.html">PneumaticsBase</a>&gt; m_module;</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>};</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment">   * Query the analog input voltage (on channel 0) (if supported).</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="comment">   * @return The analog input voltage, in volts</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="classfrc_1_1_compressor.html#a27a99d6f58aef9128742a839c5c583b1">  105</a></span>  <a class="code hl_namespace" href="namespaceunits.html">units</a>::volt_t <a class="code hl_function" href="classfrc_1_1_compressor.html#a27a99d6f58aef9128742a839c5c583b1">GetAnalogVoltage</a>() const;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="comment"></span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="comment">   * Disable the compressor.</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="classfrc_1_1_compressor.html#afcd369cad107fa0c1dc6139ad498fa5e">  110</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_compressor.html#afcd369cad107fa0c1dc6139ad498fa5e">Disable</a>();</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="comment"></span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="comment">   * Enable compressor closed loop control using digital input.</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno"><a class="line" href="classfrc_1_1_compressor.html#a07cc62fe68f8cd47af3b61517bae3e9c">  115</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_compressor.html#a07cc62fe68f8cd47af3b61517bae3e9c">EnableDigital</a>();</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment"></span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="comment">   * Enable compressor closed loop control using analog input.</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="comment">   * &lt;p&gt;On CTRE PCM, this will enable digital control.</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="comment">   * @param minAnalogVoltage The minimum voltage to enable compressor</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="comment">   * @param maxAnalogVoltage The maximum voltage to disable compressor</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="classfrc_1_1_compressor.html#a3f8f29c0745e0484cb04baa46ced69c4">  125</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_compressor.html#a3f8f29c0745e0484cb04baa46ced69c4">EnableAnalog</a>(<a class="code hl_namespace" href="namespaceunits.html">units</a>::volt_t minAnalogVoltage,</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>                    <a class="code hl_namespace" href="namespaceunits.html">units</a>::volt_t maxAnalogVoltage);</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="comment"></span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="comment">   * Enable compressor closed loop control using hybrid input.</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="comment">   * On CTRE PCM, this will enable digital control.</span></div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="comment">   * @param minAnalogVoltage The minimum voltage to enable compressor</span></div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="comment">   * @param maxAnalogVoltage The maximum voltage to disable compressor</span></div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno"><a class="line" href="classfrc_1_1_compressor.html#a54524a318ceb20815e33dac55ac34b66">  136</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_compressor.html#a54524a318ceb20815e33dac55ac34b66">EnableHybrid</a>(<a class="code hl_namespace" href="namespaceunits.html">units</a>::volt_t minAnalogVoltage,</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>                    <a class="code hl_namespace" href="namespaceunits.html">units</a>::volt_t maxAnalogVoltage);</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="classfrc_1_1_compressor.html#a3e2bbef2ea2972adb6109d264e915a99">  139</a></span>  <a class="code hl_enumeration" href="namespacefrc.html#a498a2d59993362a6264f53be5572b823">CompressorConfigType</a> <a class="code hl_function" href="classfrc_1_1_compressor.html#a3e2bbef2ea2972adb6109d264e915a99">GetConfigType</a>() const;</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno"><a class="line" href="classfrc_1_1_compressor.html#a90c5a691c412a71d37e890aa59512774">  141</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_compressor.html#a90c5a691c412a71d37e890aa59512774">InitSendable</a>(<a class="code hl_namespace" href="namespacewpi.html">wpi</a>::SendableBuilder&amp; builder) override;</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> private:</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>  <a class="code hl_namespace" href="namespacestd.html">std</a>::shared_ptr&lt;<a class="code hl_class" href="classfrc_1_1_pneumatics_base.html">PneumaticsBase</a>&gt; m_module;</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>};</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>}  <span class="comment">// namespace frc</span></div>
 <div class="ttc" id="a_compressor_config_type_8h_html"><div class="ttname"><a href="_compressor_config_type_8h.html">CompressorConfigType.h</a></div></div>
 <div class="ttc" id="a_pneumatics_base_8h_html"><div class="ttname"><a href="_pneumatics_base_8h.html">PneumaticsBase.h</a></div></div>
 <div class="ttc" id="a_pneumatics_module_type_8h_html"><div class="ttname"><a href="_pneumatics_module_type_8h.html">PneumaticsModuleType.h</a></div></div>
@@ -244,21 +253,22 @@ $(document).ready(function(){initNavTree('_compressor_8h_source.html',''); initR
 <div class="ttc" id="aclassfrc_1_1_compressor_html_a06ae308102dae55c994b4a57f8079dd8"><div class="ttname"><a href="classfrc_1_1_compressor.html#a06ae308102dae55c994b4a57f8079dd8">frc::Compressor::GetPressureSwitchValue</a></div><div class="ttdeci">bool GetPressureSwitchValue() const</div><div class="ttdoc">Check if the pressure switch is triggered.</div></div>
 <div class="ttc" id="aclassfrc_1_1_compressor_html_a07cc62fe68f8cd47af3b61517bae3e9c"><div class="ttname"><a href="classfrc_1_1_compressor.html#a07cc62fe68f8cd47af3b61517bae3e9c">frc::Compressor::EnableDigital</a></div><div class="ttdeci">void EnableDigital()</div><div class="ttdoc">Enable compressor closed loop control using digital input.</div></div>
 <div class="ttc" id="aclassfrc_1_1_compressor_html_a170e8ea482f8f3daa4718f0164a6a056"><div class="ttname"><a href="classfrc_1_1_compressor.html#a170e8ea482f8f3daa4718f0164a6a056">frc::Compressor::Compressor</a></div><div class="ttdeci">Compressor(PneumaticsModuleType moduleType)</div><div class="ttdoc">Constructs a compressor for a default module and specified type.</div></div>
-<div class="ttc" id="aclassfrc_1_1_compressor_html_a2517b3ea7f1808fa145817cbb0100b98"><div class="ttname"><a href="classfrc_1_1_compressor.html#a2517b3ea7f1808fa145817cbb0100b98">frc::Compressor::EnableHybrid</a></div><div class="ttdeci">void EnableHybrid(double minAnalogVoltage, double maxAnalogVoltage)</div><div class="ttdoc">Enable compressor closed loop control using hybrid input.</div></div>
+<div class="ttc" id="aclassfrc_1_1_compressor_html_a27a99d6f58aef9128742a839c5c583b1"><div class="ttname"><a href="classfrc_1_1_compressor.html#a27a99d6f58aef9128742a839c5c583b1">frc::Compressor::GetAnalogVoltage</a></div><div class="ttdeci">units::volt_t GetAnalogVoltage() const</div><div class="ttdoc">Query the analog input voltage (on channel 0) (if supported).</div></div>
 <div class="ttc" id="aclassfrc_1_1_compressor_html_a3e2bbef2ea2972adb6109d264e915a99"><div class="ttname"><a href="classfrc_1_1_compressor.html#a3e2bbef2ea2972adb6109d264e915a99">frc::Compressor::GetConfigType</a></div><div class="ttdeci">CompressorConfigType GetConfigType() const</div></div>
-<div class="ttc" id="aclassfrc_1_1_compressor_html_a5d0165e21a3745f281142e60d5824028"><div class="ttname"><a href="classfrc_1_1_compressor.html#a5d0165e21a3745f281142e60d5824028">frc::Compressor::GetCurrent</a></div><div class="ttdeci">double GetCurrent() const</div><div class="ttdoc">Query how much current the compressor is drawing.</div></div>
+<div class="ttc" id="aclassfrc_1_1_compressor_html_a3f8f29c0745e0484cb04baa46ced69c4"><div class="ttname"><a href="classfrc_1_1_compressor.html#a3f8f29c0745e0484cb04baa46ced69c4">frc::Compressor::EnableAnalog</a></div><div class="ttdeci">void EnableAnalog(units::volt_t minAnalogVoltage, units::volt_t maxAnalogVoltage)</div><div class="ttdoc">Enable compressor closed loop control using analog input.</div></div>
+<div class="ttc" id="aclassfrc_1_1_compressor_html_a54524a318ceb20815e33dac55ac34b66"><div class="ttname"><a href="classfrc_1_1_compressor.html#a54524a318ceb20815e33dac55ac34b66">frc::Compressor::EnableHybrid</a></div><div class="ttdeci">void EnableHybrid(units::volt_t minAnalogVoltage, units::volt_t maxAnalogVoltage)</div><div class="ttdoc">Enable compressor closed loop control using hybrid input.</div></div>
 <div class="ttc" id="aclassfrc_1_1_compressor_html_a611d6e7a65adc221d6d815b8f3fae016"><div class="ttname"><a href="classfrc_1_1_compressor.html#a611d6e7a65adc221d6d815b8f3fae016">frc::Compressor::Compressor</a></div><div class="ttdeci">Compressor(int module, PneumaticsModuleType moduleType)</div><div class="ttdoc">Constructs a compressor for a specified module and type.</div></div>
 <div class="ttc" id="aclassfrc_1_1_compressor_html_a69b170eb04bca7f76bb8fb790395110a"><div class="ttname"><a href="classfrc_1_1_compressor.html#a69b170eb04bca7f76bb8fb790395110a">frc::Compressor::operator=</a></div><div class="ttdeci">Compressor &amp; operator=(const Compressor &amp;)=delete</div></div>
 <div class="ttc" id="aclassfrc_1_1_compressor_html_a860fca78ae417ac8af88f10c6030092c"><div class="ttname"><a href="classfrc_1_1_compressor.html#a860fca78ae417ac8af88f10c6030092c">frc::Compressor::Start</a></div><div class="ttdeci">void Start()</div><div class="ttdoc">Starts closed-loop control.</div></div>
+<div class="ttc" id="aclassfrc_1_1_compressor_html_a86b8dc0f9657d67ff3c4cf7434c874e2"><div class="ttname"><a href="classfrc_1_1_compressor.html#a86b8dc0f9657d67ff3c4cf7434c874e2">frc::Compressor::GetCurrent</a></div><div class="ttdeci">units::ampere_t GetCurrent() const</div><div class="ttdoc">Query how much current the compressor is drawing.</div></div>
 <div class="ttc" id="aclassfrc_1_1_compressor_html_a90c5a691c412a71d37e890aa59512774"><div class="ttname"><a href="classfrc_1_1_compressor.html#a90c5a691c412a71d37e890aa59512774">frc::Compressor::InitSendable</a></div><div class="ttdeci">void InitSendable(wpi::SendableBuilder &amp;builder) override</div><div class="ttdoc">Initializes this Sendable object.</div></div>
 <div class="ttc" id="aclassfrc_1_1_compressor_html_a92f9f9ca25f12a425e00a584f6e3033b"><div class="ttname"><a href="classfrc_1_1_compressor.html#a92f9f9ca25f12a425e00a584f6e3033b">frc::Compressor::Compressor</a></div><div class="ttdeci">Compressor(Compressor &amp;&amp;)=default</div></div>
-<div class="ttc" id="aclassfrc_1_1_compressor_html_a9885b8832b0a4b7a25cbb6604502015e"><div class="ttname"><a href="classfrc_1_1_compressor.html#a9885b8832b0a4b7a25cbb6604502015e">frc::Compressor::EnableAnalog</a></div><div class="ttdeci">void EnableAnalog(double minAnalogVoltage, double maxAnalogVoltage)</div><div class="ttdoc">Enable compressor closed loop control using analog input.</div></div>
 <div class="ttc" id="aclassfrc_1_1_compressor_html_ae0c0c4e96a8a6c2429c43ab3f99e7cf0"><div class="ttname"><a href="classfrc_1_1_compressor.html#ae0c0c4e96a8a6c2429c43ab3f99e7cf0">frc::Compressor::Enabled</a></div><div class="ttdeci">bool Enabled() const</div><div class="ttdoc">Check if compressor output is active.</div></div>
 <div class="ttc" id="aclassfrc_1_1_compressor_html_aecf6eeb3f7ab1306838c229b23da9d6c"><div class="ttname"><a href="classfrc_1_1_compressor.html#aecf6eeb3f7ab1306838c229b23da9d6c">frc::Compressor::Compressor</a></div><div class="ttdeci">Compressor(const Compressor &amp;)=delete</div></div>
 <div class="ttc" id="aclassfrc_1_1_compressor_html_af4157c3eb17f69a5eea66356c2bfcdc2"><div class="ttname"><a href="classfrc_1_1_compressor.html#af4157c3eb17f69a5eea66356c2bfcdc2">frc::Compressor::Stop</a></div><div class="ttdeci">void Stop()</div><div class="ttdoc">Stops closed-loop control.</div></div>
 <div class="ttc" id="aclassfrc_1_1_compressor_html_af9c8dcd60df772872e90cb8a54f934c8"><div class="ttname"><a href="classfrc_1_1_compressor.html#af9c8dcd60df772872e90cb8a54f934c8">frc::Compressor::operator=</a></div><div class="ttdeci">Compressor &amp; operator=(Compressor &amp;&amp;)=default</div></div>
 <div class="ttc" id="aclassfrc_1_1_compressor_html_afcd369cad107fa0c1dc6139ad498fa5e"><div class="ttname"><a href="classfrc_1_1_compressor.html#afcd369cad107fa0c1dc6139ad498fa5e">frc::Compressor::Disable</a></div><div class="ttdeci">void Disable()</div><div class="ttdoc">Disable the compressor.</div></div>
-<div class="ttc" id="aclassfrc_1_1_pneumatics_base_html"><div class="ttname"><a href="classfrc_1_1_pneumatics_base.html">frc::PneumaticsBase</a></div><div class="ttdef"><b>Definition:</b> PneumaticsBase.h:18</div></div>
+<div class="ttc" id="aclassfrc_1_1_pneumatics_base_html"><div class="ttname"><a href="classfrc_1_1_pneumatics_base.html">frc::PneumaticsBase</a></div><div class="ttdef"><b>Definition:</b> PneumaticsBase.h:20</div></div>
 <div class="ttc" id="aclasswpi_1_1_sendable_helper_html"><div class="ttname"><a href="classwpi_1_1_sendable_helper.html">wpi::SendableHelper</a></div><div class="ttdoc">A helper class for use with objects that add themselves to SendableRegistry.</div><div class="ttdef"><b>Definition:</b> SendableHelper.h:24</div></div>
 <div class="ttc" id="aclasswpi_1_1_sendable_html"><div class="ttname"><a href="classwpi_1_1_sendable.html">wpi::Sendable</a></div><div class="ttdoc">Interface for Sendable objects.</div><div class="ttdef"><b>Definition:</b> Sendable.h:16</div></div>
 <div class="ttc" id="adeprecated_8h_html"><div class="ttname"><a href="deprecated_8h.html">deprecated.h</a></div></div>
@@ -266,6 +276,7 @@ $(document).ready(function(){initNavTree('_compressor_8h_source.html',''); initR
 <div class="ttc" id="anamespacefrc_html_a498a2d59993362a6264f53be5572b823"><div class="ttname"><a href="namespacefrc.html#a498a2d59993362a6264f53be5572b823">frc::CompressorConfigType</a></div><div class="ttdeci">CompressorConfigType</div><div class="ttdef"><b>Definition:</b> CompressorConfigType.h:8</div></div>
 <div class="ttc" id="anamespacefrc_html_ad678d767ab62c6e84bc2fcac7655a725"><div class="ttname"><a href="namespacefrc.html#ad678d767ab62c6e84bc2fcac7655a725">frc::PneumaticsModuleType</a></div><div class="ttdeci">PneumaticsModuleType</div><div class="ttdef"><b>Definition:</b> PneumaticsModuleType.h:8</div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition:</b> SmallVector.h:931</div></div>
+<div class="ttc" id="anamespaceunits_html"><div class="ttname"><a href="namespaceunits.html">units</a></div><div class="ttdoc">Unit Conversion Library namespace.</div><div class="ttdef"><b>Definition:</b> moment_of_inertia.h:11</div></div>
 <div class="ttc" id="anamespacewpi_html"><div class="ttname"><a href="namespacewpi.html">wpi</a></div><div class="ttdef"><b>Definition:</b> StringExtras.h:27</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -273,7 +284,7 @@ $(document).ready(function(){initNavTree('_compressor_8h_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="_compressor_8h.html">Compressor.h</a></li>
-    <li class="footer">Generated on Sun Dec 19 2021 15:37:55 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Dec 19 2021 21:44:07 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

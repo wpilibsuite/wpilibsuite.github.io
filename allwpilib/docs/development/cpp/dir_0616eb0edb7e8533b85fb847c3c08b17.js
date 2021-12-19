@@ -136,7 +136,10 @@ var dir_0616eb0edb7e8533b85fb847c3c08b17 =
       [ "frc::Notifier", "classfrc_1_1_notifier.html", "classfrc_1_1_notifier" ]
     ] ],
     [ "PneumaticHub.h", "_pneumatic_hub_8h.html", [
-      [ "frc::PneumaticHub", "classfrc_1_1_pneumatic_hub.html", "classfrc_1_1_pneumatic_hub" ]
+      [ "frc::PneumaticHub", "classfrc_1_1_pneumatic_hub.html", "classfrc_1_1_pneumatic_hub" ],
+      [ "frc::PneumaticHub::Version", "structfrc_1_1_pneumatic_hub_1_1_version.html", "structfrc_1_1_pneumatic_hub_1_1_version" ],
+      [ "frc::PneumaticHub::Faults", "structfrc_1_1_pneumatic_hub_1_1_faults.html", "structfrc_1_1_pneumatic_hub_1_1_faults" ],
+      [ "frc::PneumaticHub::StickyFaults", "structfrc_1_1_pneumatic_hub_1_1_sticky_faults.html", "structfrc_1_1_pneumatic_hub_1_1_sticky_faults" ]
     ] ],
     [ "PneumaticsBase.h", "_pneumatics_base_8h.html", [
       [ "frc::PneumaticsBase", "classfrc_1_1_pneumatics_base.html", "classfrc_1_1_pneumatics_base" ]
