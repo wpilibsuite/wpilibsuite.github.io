@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-3-32-gdc53146</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-3-33-gc46636f</span>
    </div>
   </td>
  </tr>
@@ -111,77 +111,82 @@ $(document).ready(function(){initNavTree('_external_direction_counter_8h_source.
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacefrc.html">frc</a> {</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">class </span>DigitalSource;</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"></span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">/** Counter using external direction. */</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="classfrc_1_1_external_direction_counter.html">   19</a></span><span class="keyword">class </span><a class="code hl_class" href="classfrc_1_1_external_direction_counter.html">ExternalDirectionCounter</a></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    : <span class="keyword">public</span> <a class="code hl_class" href="classwpi_1_1_sendable.html">wpi::Sendable</a>,</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>      <span class="keyword">public</span> <a class="code hl_class" href="classwpi_1_1_sendable_helper.html">wpi::SendableHelper</a>&lt;ExternalDirectionCounter&gt; {</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> <span class="keyword">public</span>:<span class="comment"></span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">   * Constructs a new ExternalDirectionCounter.</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">   * @param countSource The source for counting.</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">   * @param directionSource The source for selecting count direction.</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classfrc_1_1_external_direction_counter.html#abf8e649d7680c58d4fe043e1e341adde">   29</a></span>  <a class="code hl_function" href="classfrc_1_1_external_direction_counter.html#abf8e649d7680c58d4fe043e1e341adde">ExternalDirectionCounter</a>(<a class="code hl_class" href="classfrc_1_1_digital_source.html">DigitalSource</a>&amp; countSource,</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                           <a class="code hl_class" href="classfrc_1_1_digital_source.html">DigitalSource</a>&amp; directionSource);</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment"></span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">   * Constructs a new ExternalDirectionCounter.</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">   * @param countSource The source for counting.</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">   * @param directionSource The source for selecting count direction.</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="classfrc_1_1_external_direction_counter.html#abdf1c6afef95b5416eba54287eee2f42">   38</a></span>  <a class="code hl_function" href="classfrc_1_1_external_direction_counter.html#abdf1c6afef95b5416eba54287eee2f42">ExternalDirectionCounter</a>(std::shared_ptr&lt;DigitalSource&gt; countSource,</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                           std::shared_ptr&lt;DigitalSource&gt; directionSource);</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="classfrc_1_1_external_direction_counter.html#aecc9d1775ba6c1175e80142bd3681100">   41</a></span>  <a class="code hl_function" href="classfrc_1_1_external_direction_counter.html#aecc9d1775ba6c1175e80142bd3681100">~ExternalDirectionCounter</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classfrc_1_1_external_direction_counter.html#aaf54ce829fa84f35bba338ed179af269">   43</a></span>  <a class="code hl_function" href="classfrc_1_1_external_direction_counter.html#aaf54ce829fa84f35bba338ed179af269">ExternalDirectionCounter</a>(<a class="code hl_class" href="classfrc_1_1_external_direction_counter.html">ExternalDirectionCounter</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classfrc_1_1_external_direction_counter.html#aaac95dd496c60998f8b834d3b801bc07">   44</a></span>  <a class="code hl_class" href="classfrc_1_1_external_direction_counter.html">ExternalDirectionCounter</a>&amp; <a class="code hl_function" href="classfrc_1_1_external_direction_counter.html#aaac95dd496c60998f8b834d3b801bc07">operator=</a>(<a class="code hl_class" href="classfrc_1_1_external_direction_counter.html">ExternalDirectionCounter</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment"></span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">   * Gets the current count.</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">   * @return The current count.</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="classfrc_1_1_external_direction_counter.html#a2a0b04b35298fb1e0e90844f635a157f">   51</a></span>  <span class="keywordtype">int</span> <a class="code hl_function" href="classfrc_1_1_external_direction_counter.html#a2a0b04b35298fb1e0e90844f635a157f">GetCount</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment"></span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">   * Sets to revert the counter direction.</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">   * @param reverseDirection True to reverse counting direction.</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="classfrc_1_1_external_direction_counter.html#a7998663504064254b4f203e7f887b08f">   58</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_external_direction_counter.html#a7998663504064254b4f203e7f887b08f">SetReverseDirection</a>(<span class="keywordtype">bool</span> reverseDirection);</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment"></span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">  /** Resets the current count. */</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classfrc_1_1_external_direction_counter.html#afca42d8e036cc1720fdc92828d5fd894">   61</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_external_direction_counter.html#afca42d8e036cc1720fdc92828d5fd894">Reset</a>();</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment"></span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment">   * Sets the edge configuration for counting.</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="comment">   * @param configuration The counting edge configuration.</span></div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="classfrc_1_1_external_direction_counter.html#a69af6cabe3454316b35eb8bfc7fb9c4b">   68</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_external_direction_counter.html#a69af6cabe3454316b35eb8bfc7fb9c4b">SetEdgeConfiguration</a>(<a class="code hl_enumeration" href="namespacefrc.html#a91bd7a402531072636e0dfbedef7a472">EdgeConfiguration</a> configuration);</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> <span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="classfrc_1_1_external_direction_counter.html#ada7a6db217fb9ac004eae141418fb6bc">   71</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_external_direction_counter.html#ada7a6db217fb9ac004eae141418fb6bc">InitSendable</a>(<a class="code hl_class" href="classwpi_1_1_sendable_builder.html">wpi::SendableBuilder</a>&amp; builder) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  std::shared_ptr&lt;DigitalSource&gt; m_countSource;</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  std::shared_ptr&lt;DigitalSource&gt; m_directionSource;</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  hal::Handle&lt;HAL_CounterHandle&gt; m_handle;</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <a class="code hl_variable" href="namespace_eigen_1_1numext.html#ae4642fe9b8f3d42e634712b1d5e2fffe">int32_t</a> m_index = 0;</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>};</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">/** Counter using external direction.</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> * &lt;p&gt;This counts on an edge from one digital input and the whether it counts</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> * up or down based on the state of a second digital input.</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="classfrc_1_1_external_direction_counter.html">   24</a></span><span class="keyword">class </span><a class="code hl_class" href="classfrc_1_1_external_direction_counter.html">ExternalDirectionCounter</a></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    : <span class="keyword">public</span> <a class="code hl_class" href="classwpi_1_1_sendable.html">wpi::Sendable</a>,</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>      <span class="keyword">public</span> <a class="code hl_class" href="classwpi_1_1_sendable_helper.html">wpi::SendableHelper</a>&lt;ExternalDirectionCounter&gt; {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> <span class="keyword">public</span>:<span class="comment"></span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">   * Constructs a new ExternalDirectionCounter.</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">   * @param countSource The source for counting.</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">   * @param directionSource The source for selecting count direction.</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="classfrc_1_1_external_direction_counter.html#abf8e649d7680c58d4fe043e1e341adde">   34</a></span>  <a class="code hl_function" href="classfrc_1_1_external_direction_counter.html#abf8e649d7680c58d4fe043e1e341adde">ExternalDirectionCounter</a>(<a class="code hl_class" href="classfrc_1_1_digital_source.html">DigitalSource</a>&amp; countSource,</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                           <a class="code hl_class" href="classfrc_1_1_digital_source.html">DigitalSource</a>&amp; directionSource);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment"></span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">   * Constructs a new ExternalDirectionCounter.</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">   * @param countSource The source for counting.</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">   * @param directionSource The source for selecting count direction.</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classfrc_1_1_external_direction_counter.html#abdf1c6afef95b5416eba54287eee2f42">   43</a></span>  <a class="code hl_function" href="classfrc_1_1_external_direction_counter.html#abdf1c6afef95b5416eba54287eee2f42">ExternalDirectionCounter</a>(std::shared_ptr&lt;DigitalSource&gt; countSource,</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                           std::shared_ptr&lt;DigitalSource&gt; directionSource);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classfrc_1_1_external_direction_counter.html#aecc9d1775ba6c1175e80142bd3681100">   46</a></span>  <a class="code hl_function" href="classfrc_1_1_external_direction_counter.html#aecc9d1775ba6c1175e80142bd3681100">~ExternalDirectionCounter</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classfrc_1_1_external_direction_counter.html#aaf54ce829fa84f35bba338ed179af269">   48</a></span>  <a class="code hl_function" href="classfrc_1_1_external_direction_counter.html#aaf54ce829fa84f35bba338ed179af269">ExternalDirectionCounter</a>(<a class="code hl_class" href="classfrc_1_1_external_direction_counter.html">ExternalDirectionCounter</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="classfrc_1_1_external_direction_counter.html#aaac95dd496c60998f8b834d3b801bc07">   49</a></span>  <a class="code hl_class" href="classfrc_1_1_external_direction_counter.html">ExternalDirectionCounter</a>&amp; <a class="code hl_function" href="classfrc_1_1_external_direction_counter.html#aaac95dd496c60998f8b834d3b801bc07">operator=</a>(<a class="code hl_class" href="classfrc_1_1_external_direction_counter.html">ExternalDirectionCounter</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment"></span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">   * Gets the current count.</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">   * @return The current count.</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classfrc_1_1_external_direction_counter.html#a2a0b04b35298fb1e0e90844f635a157f">   56</a></span>  <span class="keywordtype">int</span> <a class="code hl_function" href="classfrc_1_1_external_direction_counter.html#a2a0b04b35298fb1e0e90844f635a157f">GetCount</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment"></span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">   * Sets to reverse the counter direction.</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">   * @param reverseDirection True to reverse counting direction.</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="classfrc_1_1_external_direction_counter.html#a7998663504064254b4f203e7f887b08f">   63</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_external_direction_counter.html#a7998663504064254b4f203e7f887b08f">SetReverseDirection</a>(<span class="keywordtype">bool</span> reverseDirection);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="comment"></span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">  /** Resets the current count. */</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="classfrc_1_1_external_direction_counter.html#afca42d8e036cc1720fdc92828d5fd894">   66</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_external_direction_counter.html#afca42d8e036cc1720fdc92828d5fd894">Reset</a>();</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment"></span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">   * Sets the edge configuration for counting.</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">   * @param configuration The counting edge configuration.</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="classfrc_1_1_external_direction_counter.html#a69af6cabe3454316b35eb8bfc7fb9c4b">   73</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_external_direction_counter.html#a69af6cabe3454316b35eb8bfc7fb9c4b">SetEdgeConfiguration</a>(<a class="code hl_enumeration" href="namespacefrc.html#a91bd7a402531072636e0dfbedef7a472">EdgeConfiguration</a> configuration);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="classfrc_1_1_external_direction_counter.html#ada7a6db217fb9ac004eae141418fb6bc">   76</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classfrc_1_1_external_direction_counter.html#ada7a6db217fb9ac004eae141418fb6bc">InitSendable</a>(<a class="code hl_class" href="classwpi_1_1_sendable_builder.html">wpi::SendableBuilder</a>&amp; builder) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  std::shared_ptr&lt;DigitalSource&gt; m_countSource;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  std::shared_ptr&lt;DigitalSource&gt; m_directionSource;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  hal::Handle&lt;HAL_CounterHandle&gt; m_handle;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  <a class="code hl_variable" href="namespace_eigen_1_1numext.html#ae4642fe9b8f3d42e634712b1d5e2fffe">int32_t</a> m_index = 0;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>};</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>}  <span class="comment">// namespace frc</span></div>
 <div class="ttc" id="a_edge_configuration_8h_html"><div class="ttname"><a href="_edge_configuration_8h.html">EdgeConfiguration.h</a></div></div>
 <div class="ttc" id="a_sendable_8h_html"><div class="ttname"><a href="_sendable_8h.html">Sendable.h</a></div></div>
 <div class="ttc" id="a_sendable_helper_8h_html"><div class="ttname"><a href="_sendable_helper_8h.html">SendableHelper.h</a></div></div>
 <div class="ttc" id="a_types_8h_html"><div class="ttname"><a href="_types_8h.html">Types.h</a></div></div>
 <div class="ttc" id="aclassfrc_1_1_digital_source_html"><div class="ttname"><a href="classfrc_1_1_digital_source.html">frc::DigitalSource</a></div><div class="ttdoc">DigitalSource Interface.</div><div class="ttdef"><b>Definition:</b> DigitalSource.h:22</div></div>
-<div class="ttc" id="aclassfrc_1_1_external_direction_counter_html"><div class="ttname"><a href="classfrc_1_1_external_direction_counter.html">frc::ExternalDirectionCounter</a></div><div class="ttdoc">Counter using external direction.</div><div class="ttdef"><b>Definition:</b> ExternalDirectionCounter.h:21</div></div>
+<div class="ttc" id="aclassfrc_1_1_external_direction_counter_html"><div class="ttname"><a href="classfrc_1_1_external_direction_counter.html">frc::ExternalDirectionCounter</a></div><div class="ttdoc">Counter using external direction.</div><div class="ttdef"><b>Definition:</b> ExternalDirectionCounter.h:26</div></div>
 <div class="ttc" id="aclassfrc_1_1_external_direction_counter_html_a2a0b04b35298fb1e0e90844f635a157f"><div class="ttname"><a href="classfrc_1_1_external_direction_counter.html#a2a0b04b35298fb1e0e90844f635a157f">frc::ExternalDirectionCounter::GetCount</a></div><div class="ttdeci">int GetCount() const</div><div class="ttdoc">Gets the current count.</div></div>
 <div class="ttc" id="aclassfrc_1_1_external_direction_counter_html_a69af6cabe3454316b35eb8bfc7fb9c4b"><div class="ttname"><a href="classfrc_1_1_external_direction_counter.html#a69af6cabe3454316b35eb8bfc7fb9c4b">frc::ExternalDirectionCounter::SetEdgeConfiguration</a></div><div class="ttdeci">void SetEdgeConfiguration(EdgeConfiguration configuration)</div><div class="ttdoc">Sets the edge configuration for counting.</div></div>
-<div class="ttc" id="aclassfrc_1_1_external_direction_counter_html_a7998663504064254b4f203e7f887b08f"><div class="ttname"><a href="classfrc_1_1_external_direction_counter.html#a7998663504064254b4f203e7f887b08f">frc::ExternalDirectionCounter::SetReverseDirection</a></div><div class="ttdeci">void SetReverseDirection(bool reverseDirection)</div><div class="ttdoc">Sets to revert the counter direction.</div></div>
+<div class="ttc" id="aclassfrc_1_1_external_direction_counter_html_a7998663504064254b4f203e7f887b08f"><div class="ttname"><a href="classfrc_1_1_external_direction_counter.html#a7998663504064254b4f203e7f887b08f">frc::ExternalDirectionCounter::SetReverseDirection</a></div><div class="ttdeci">void SetReverseDirection(bool reverseDirection)</div><div class="ttdoc">Sets to reverse the counter direction.</div></div>
 <div class="ttc" id="aclassfrc_1_1_external_direction_counter_html_aaac95dd496c60998f8b834d3b801bc07"><div class="ttname"><a href="classfrc_1_1_external_direction_counter.html#aaac95dd496c60998f8b834d3b801bc07">frc::ExternalDirectionCounter::operator=</a></div><div class="ttdeci">ExternalDirectionCounter &amp; operator=(ExternalDirectionCounter &amp;&amp;)=default</div></div>
 <div class="ttc" id="aclassfrc_1_1_external_direction_counter_html_aaf54ce829fa84f35bba338ed179af269"><div class="ttname"><a href="classfrc_1_1_external_direction_counter.html#aaf54ce829fa84f35bba338ed179af269">frc::ExternalDirectionCounter::ExternalDirectionCounter</a></div><div class="ttdeci">ExternalDirectionCounter(ExternalDirectionCounter &amp;&amp;)=default</div></div>
 <div class="ttc" id="aclassfrc_1_1_external_direction_counter_html_abdf1c6afef95b5416eba54287eee2f42"><div class="ttname"><a href="classfrc_1_1_external_direction_counter.html#abdf1c6afef95b5416eba54287eee2f42">frc::ExternalDirectionCounter::ExternalDirectionCounter</a></div><div class="ttdeci">ExternalDirectionCounter(std::shared_ptr&lt; DigitalSource &gt; countSource, std::shared_ptr&lt; DigitalSource &gt; directionSource)</div><div class="ttdoc">Constructs a new ExternalDirectionCounter.</div></div>
@@ -201,7 +206,7 @@ $(document).ready(function(){initNavTree('_external_direction_counter_8h_source.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_0616eb0edb7e8533b85fb847c3c08b17.html">frc</a></li><li class="navelem"><a class="el" href="dir_74044dfbe8cf2331ca1fdcb619b3db7b.html">counter</a></li><li class="navelem"><a class="el" href="_external_direction_counter_8h.html">ExternalDirectionCounter.h</a></li>
-    <li class="footer">Generated on Sun Dec 19 2021 05:37:30 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sun Dec 19 2021 05:47:35 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
