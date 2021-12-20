@@ -152,12 +152,12 @@
 <span class="sourceLineNo">140</span><a id="line.140">    } catch (UnsatisfiedLinkError ule) {</a>
 <span class="sourceLineNo">141</span><a id="line.141">      // Then load the hash from the input file</a>
 <span class="sourceLineNo">142</span><a id="line.142">      String resname = RuntimeDetector.getLibraryResource(m_libraryName);</a>
-<span class="sourceLineNo">143</span><a id="line.143">      String hash = null;</a>
+<span class="sourceLineNo">143</span><a id="line.143">      String hash;</a>
 <span class="sourceLineNo">144</span><a id="line.144">      try (InputStream is = m_loadClass.getResourceAsStream(resname)) {</a>
 <span class="sourceLineNo">145</span><a id="line.145">        if (is == null) {</a>
 <span class="sourceLineNo">146</span><a id="line.146">          throw new IOException(getLoadErrorMessage(ule));</a>
 <span class="sourceLineNo">147</span><a id="line.147">        }</a>
-<span class="sourceLineNo">148</span><a id="line.148">        MessageDigest md = null;</a>
+<span class="sourceLineNo">148</span><a id="line.148">        MessageDigest md;</a>
 <span class="sourceLineNo">149</span><a id="line.149">        try {</a>
 <span class="sourceLineNo">150</span><a id="line.150">          md = MessageDigest.getInstance("MD5");</a>
 <span class="sourceLineNo">151</span><a id="line.151">        } catch (NoSuchAlgorithmException nsae) {</a>

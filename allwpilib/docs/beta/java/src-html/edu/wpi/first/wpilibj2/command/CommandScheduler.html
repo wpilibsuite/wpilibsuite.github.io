@@ -182,7 +182,7 @@
 <span class="sourceLineNo">170</span><a id="line.170">    // Do nothing if the scheduler is disabled, the robot is disabled and the command doesn't</a>
 <span class="sourceLineNo">171</span><a id="line.171">    // run when disabled, or the command is already scheduled.</a>
 <span class="sourceLineNo">172</span><a id="line.172">    if (m_disabled</a>
-<span class="sourceLineNo">173</span><a id="line.173">        || (RobotState.isDisabled() &amp;&amp; !command.runsWhenDisabled())</a>
+<span class="sourceLineNo">173</span><a id="line.173">        || RobotState.isDisabled() &amp;&amp; !command.runsWhenDisabled()</a>
 <span class="sourceLineNo">174</span><a id="line.174">        || m_scheduledCommands.containsKey(command)) {</a>
 <span class="sourceLineNo">175</span><a id="line.175">      return;</a>
 <span class="sourceLineNo">176</span><a id="line.176">    }</a>

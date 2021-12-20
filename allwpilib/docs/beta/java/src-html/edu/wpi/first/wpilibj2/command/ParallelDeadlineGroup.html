@@ -104,7 +104,7 @@
 <span class="sourceLineNo">092</span><a id="line.92">      if (commandRunning.getKey().isFinished()) {</a>
 <span class="sourceLineNo">093</span><a id="line.93">        commandRunning.getKey().end(false);</a>
 <span class="sourceLineNo">094</span><a id="line.94">        commandRunning.setValue(false);</a>
-<span class="sourceLineNo">095</span><a id="line.95">        if (commandRunning.getKey() == m_deadline) {</a>
+<span class="sourceLineNo">095</span><a id="line.95">        if (commandRunning.getKey().equals(m_deadline)) {</a>
 <span class="sourceLineNo">096</span><a id="line.96">          m_finished = true;</a>
 <span class="sourceLineNo">097</span><a id="line.97">        }</a>
 <span class="sourceLineNo">098</span><a id="line.98">      }</a>
