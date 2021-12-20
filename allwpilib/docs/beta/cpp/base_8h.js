@@ -148,5 +148,14 @@ var base_8h =
     [ "operator>=", "base_8h.html#a9984d65cde63e7b97cfd8df035c50b7b", null ],
     [ "pow", "base_8h.html#a8bc48cef3fdfae35910a4bbe5011abcd", null ],
     [ "to_string", "base_8h.html#a0fc33d31c4dcf18fd9a2c272f6370b0a", null ],
-    [ "unit_cast", "base_8h.html#ga850c3e5c380d1eb1d718128966819c70", null ]
+    [ "unit_cast", "base_8h.html#ga850c3e5c380d1eb1d718128966819c70", null ],
+    [ "has_decibel_scale_v", "base_8h.html#a548216e183f61c908e6db527be2a7858", null ],
+    [ "has_linear_scale_v", "base_8h.html#a679ec0736cd021e6e37ed0f710b5b6d7", null ],
+    [ "is_convertible_unit_v", "base_8h.html#a67512190e68b1583ae56ba6bbcdcaa7c", null ],
+    [ "is_ratio_v", "base_8h.html#af854617ff2c81618056fe5c43d5da755", null ],
+    [ "is_same_scale_v", "base_8h.html#ab1aeb0147750127deaeef7fe452da3f0", null ],
+    [ "is_unit_t_v", "base_8h.html#ac83d29f444a9de60d7f454200e33ffbc", null ],
+    [ "is_unit_v", "base_8h.html#abacb2c1570fc66b2d9838618e6b06be3", null ],
+    [ "is_unit_value_t_category_v", "base_8h.html#a923c255fea7c6ba3d4e7f191a42e93e8", null ],
+    [ "is_unit_value_t_v", "base_8h.html#aff46b9ed6f1f6c7580c7b2a44ce801ab", null ]
 ];

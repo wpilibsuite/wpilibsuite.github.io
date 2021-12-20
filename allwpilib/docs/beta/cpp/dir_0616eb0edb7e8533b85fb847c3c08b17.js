@@ -136,7 +136,10 @@ var dir_0616eb0edb7e8533b85fb847c3c08b17 =
       [ "frc::Notifier", "classfrc_1_1_notifier.html", "classfrc_1_1_notifier" ]
     ] ],
     [ "PneumaticHub.h", "_pneumatic_hub_8h.html", [
-      [ "frc::PneumaticHub", "classfrc_1_1_pneumatic_hub.html", "classfrc_1_1_pneumatic_hub" ]
+      [ "frc::PneumaticHub", "classfrc_1_1_pneumatic_hub.html", "classfrc_1_1_pneumatic_hub" ],
+      [ "frc::PneumaticHub::Version", "structfrc_1_1_pneumatic_hub_1_1_version.html", "structfrc_1_1_pneumatic_hub_1_1_version" ],
+      [ "frc::PneumaticHub::Faults", "structfrc_1_1_pneumatic_hub_1_1_faults.html", "structfrc_1_1_pneumatic_hub_1_1_faults" ],
+      [ "frc::PneumaticHub::StickyFaults", "structfrc_1_1_pneumatic_hub_1_1_sticky_faults.html", "structfrc_1_1_pneumatic_hub_1_1_sticky_faults" ]
     ] ],
     [ "PneumaticsBase.h", "_pneumatics_base_8h.html", [
       [ "frc::PneumaticsBase", "classfrc_1_1_pneumatics_base.html", "classfrc_1_1_pneumatics_base" ]
@@ -146,7 +149,10 @@ var dir_0616eb0edb7e8533b85fb847c3c08b17 =
     ] ],
     [ "PneumaticsModuleType.h", "_pneumatics_module_type_8h.html", "_pneumatics_module_type_8h" ],
     [ "PowerDistribution.h", "wpilibc_2src_2main_2native_2include_2frc_2_power_distribution_8h.html", [
-      [ "frc::PowerDistribution", "classfrc_1_1_power_distribution.html", "classfrc_1_1_power_distribution" ]
+      [ "frc::PowerDistribution", "classfrc_1_1_power_distribution.html", "classfrc_1_1_power_distribution" ],
+      [ "frc::PowerDistribution::Version", "structfrc_1_1_power_distribution_1_1_version.html", "structfrc_1_1_power_distribution_1_1_version" ],
+      [ "frc::PowerDistribution::Faults", "structfrc_1_1_power_distribution_1_1_faults.html", "structfrc_1_1_power_distribution_1_1_faults" ],
+      [ "frc::PowerDistribution::StickyFaults", "structfrc_1_1_power_distribution_1_1_sticky_faults.html", "structfrc_1_1_power_distribution_1_1_sticky_faults" ]
     ] ],
     [ "Preferences.h", "_preferences_8h.html", [
       [ "frc::Preferences", "classfrc_1_1_preferences.html", "classfrc_1_1_preferences" ]

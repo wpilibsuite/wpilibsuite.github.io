@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-4</span>
    </div>
   </td>
  </tr>
@@ -118,7 +118,7 @@ $(document).ready(function(){initNavTree('_kalman_filter_8h_source.html',''); in
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &quot;<a class="code" href="_math_shared_8h.html">wpimath/MathShared.h</a>&quot;</span></div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacefrc.html">frc</a> {</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedetail.html">detail</a> {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="namespacefrc_1_1detail.html">   25</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacedetail.html">detail</a> {</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment"></span> </div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">/**</span></div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment"> * A Kalman filter combines predictions from a model and measurements to give an</span></div>
@@ -169,7 +169,7 @@ $(document).ready(function(){initNavTree('_kalman_filter_8h_source.html',''); in
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; C = plant.<a class="code hl_function" href="classfrc_1_1_linear_system.html#ac000dde0466e9b9ae06b06f46531b0ec">C</a>();</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordflow">if</span> (!IsDetectable&lt;States, Outputs&gt;(discA, C)) {</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>      std::string msg = <a class="code hl_function" href="core_8h.html#a67a186790128b6b0810bccb5d1e91a72">fmt::format</a>(</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>      std::string msg = <a class="code hl_function" href="wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a8b34a9364f5d6ca43a8a24f96a6db55b">fmt::format</a>(</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>          <span class="stringliteral">&quot;The system passed to the Kalman filter is &quot;</span></div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>          <span class="stringliteral">&quot;unobservable!\n\nA =\n{}\nC =\n{}\n&quot;</span>,</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>          discA, C);</div>
@@ -380,15 +380,15 @@ $(document).ready(function(){initNavTree('_kalman_filter_8h_source.html',''); in
 <div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> core.h:1120</div></div>
 <div class="ttc" id="aclasswpi_1_1array_html"><div class="ttname"><a href="classwpi_1_1array.html">wpi::array</a></div><div class="ttdoc">This class is a wrapper around std::array that does compile time size checking.</div><div class="ttdef"><b>Definition:</b> array.h:25</div></div>
 <div class="ttc" id="aclasswpi_1_1math_1_1_math_shared_store_html_ab091bae578ff11340651b46e1edd5c47"><div class="ttname"><a href="classwpi_1_1math_1_1_math_shared_store.html#ab091bae578ff11340651b46e1edd5c47">wpi::math::MathSharedStore::ReportError</a></div><div class="ttdeci">static void ReportError(const S &amp;format, Args &amp;&amp;... args)</div><div class="ttdef"><b>Definition:</b> MathShared.h:57</div></div>
-<div class="ttc" id="acore_8h_html_a67a186790128b6b0810bccb5d1e91a72"><div class="ttname"><a href="core_8h.html#a67a186790128b6b0810bccb5d1e91a72">format</a></div><div class="ttdeci">FMT_INLINE auto format(format_string&lt; T... &gt; fmt, T &amp;&amp;... args) -&gt; std::string</div><div class="ttdoc">\rst Formats args according to specifications in fmt and returns the result as a string.</div><div class="ttdef"><b>Definition:</b> core.h:2885</div></div>
 <div class="ttc" id="adiscrete__algebraic__riccati__equation_8h_html"><div class="ttname"><a href="discrete__algebraic__riccati__equation_8h.html">discrete_algebraic_riccati_equation.h</a></div></div>
 <div class="ttc" id="anamespace_eigen_1_1internal_html_a3cc80fc03610837da180f7e6d8e7b3ec"><div class="ttname"><a href="namespace_eigen_1_1internal.html#a3cc80fc03610837da180f7e6d8e7b3ec">Eigen::internal::y</a></div><div class="ttdeci">const Scalar &amp; y</div><div class="ttdef"><b>Definition:</b> MathFunctions.h:821</div></div>
-<div class="ttc" id="anamespacedetail_html"><div class="ttname"><a href="namespacedetail.html">detail</a></div><div class="ttdef"><b>Definition:</b> ranges.h:47</div></div>
+<div class="ttc" id="anamespacedetail_html"><div class="ttname"><a href="namespacedetail.html">detail</a></div><div class="ttdef"><b>Definition:</b> ostream.h:20</div></div>
 <div class="ttc" id="anamespacedrake_1_1math_html_a3472d444e88dbd0ac9a47f4166b3eb8a"><div class="ttname"><a href="namespacedrake_1_1math.html#a3472d444e88dbd0ac9a47f4166b3eb8a">drake::math::DiscreteAlgebraicRiccatiEquation</a></div><div class="ttdeci">WPILIB_DLLEXPORT Eigen::MatrixXd DiscreteAlgebraicRiccatiEquation(const Eigen::Ref&lt; const Eigen::MatrixXd &gt; &amp;A, const Eigen::Ref&lt; const Eigen::MatrixXd &gt; &amp;B, const Eigen::Ref&lt; const Eigen::MatrixXd &gt; &amp;Q, const Eigen::Ref&lt; const Eigen::MatrixXd &gt; &amp;R)</div><div class="ttdoc">Computes the unique stabilizing solution X to the discrete-time algebraic Riccati equation:</div></div>
-<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> VisionRunner.h:15</div></div>
+<div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> CameraServerShared.h:13</div></div>
 <div class="ttc" id="anamespacefrc_html_abfc33e74861108dcfe356758beee417d"><div class="ttname"><a href="namespacefrc.html#abfc33e74861108dcfe356758beee417d">frc::MakeCovMatrix</a></div><div class="ttdeci">Eigen::Matrix&lt; double, sizeof...(Ts), sizeof...(Ts)&gt; MakeCovMatrix(Ts... stdDevs)</div><div class="ttdoc">Creates a covariance matrix from the given vector for use with Kalman filters.</div><div class="ttdef"><b>Definition:</b> StateSpaceUtil.h:150</div></div>
 <div class="ttc" id="atime_8h_html"><div class="ttname"><a href="time_8h.html">time.h</a></div></div>
 <div class="ttc" id="awpilibc_2src_2main_2native_2include_2frc_2_errors_8h_html_a82134794782845c50b9a960bb191ba30"><div class="ttname"><a href="wpilibc_2src_2main_2native_2include_2frc_2_errors_8h.html#a82134794782845c50b9a960bb191ba30">S</a></div><div class="ttdeci">#define S(label, offset, message)</div><div class="ttdef"><b>Definition:</b> Errors.h:119</div></div>
+<div class="ttc" id="awpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h_html_a8b34a9364f5d6ca43a8a24f96a6db55b"><div class="ttname"><a href="wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a8b34a9364f5d6ca43a8a24f96a6db55b">format</a></div><div class="ttdeci">std::basic_string&lt; Char &gt; format(const text_style &amp;ts, const S &amp;format_str, const Args &amp;... args)</div><div class="ttdoc">\rst Formats arguments and returns the result as a string using ANSI escape sequences to specify text...</div><div class="ttdef"><b>Definition:</b> color.h:583</div></div>
 <div class="ttc" id="awpiutil_2src_2main_2native_2include_2wpi_2array_8h_html"><div class="ttname"><a href="wpiutil_2src_2main_2native_2include_2wpi_2array_8h.html">array.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -396,7 +396,7 @@ $(document).ready(function(){initNavTree('_kalman_filter_8h_source.html',''); in
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_7b4a0634315f7993a48b0e5d4ddcc644.html">estimator</a></li><li class="navelem"><a class="el" href="_kalman_filter_8h.html">KalmanFilter.h</a></li>
-    <li class="footer">Generated on Sun Nov 28 2021 05:35:07 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Mon Dec 20 2021 04:37:37 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

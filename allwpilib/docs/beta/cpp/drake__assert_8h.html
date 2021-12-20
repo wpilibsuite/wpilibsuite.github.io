@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-3</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-4</span>
    </div>
   </td>
  </tr>
@@ -140,12 +140,6 @@ Functions</h2></td></tr>
 <tr class="separator:a1555b594d10aad05d02addac282d35ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abffd0ad8e5a39757c70d2e40443f4f59"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedrake_1_1internal.html#abffd0ad8e5a39757c70d2e40443f4f59">drake::internal::AssertionFailed</a> (const char *condition, const char *func, const char *<a class="el" href="_third_party_notices_8txt.html#a26ca7d096ec8797bc2156266e64e5a4a">file</a>, int line)</td></tr>
 <tr class="separator:abffd0ad8e5a39757c70d2e40443f4f59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97b5239aadb12956444c2dea4d95df30"><td class="memTemplParams" colspan="2">template&lt;bool &gt; </td></tr>
-<tr class="memitem:a97b5239aadb12956444c2dea4d95df30"><td class="memTemplItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedrake_1_1internal.html#a97b5239aadb12956444c2dea4d95df30">drake::internal::DrakeAssertWasUsedWithRawPointer</a> ()</td></tr>
-<tr class="separator:a97b5239aadb12956444c2dea4d95df30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5f8dd2c95a5dc1fff5704e84b813b76"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
-<tr class="memitem:aa5f8dd2c95a5dc1fff5704e84b813b76"><td class="memTemplItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedrake_1_1internal.html#aa5f8dd2c95a5dc1fff5704e84b813b76">drake::internal::DrakeAssertWasUsedWithRawPointer&lt; true &gt;</a> ()</td></tr>
-<tr class="separator:aa5f8dd2c95a5dc1fff5704e84b813b76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -233,14 +227,16 @@ Variables</h2></td></tr>
 <div class="line">    typedef ::drake::assert::ConditionTraits&lt;                                \</div>
 <div class="line">        typename std::remove_cv_t&lt;<span class="keyword">decltype</span>(condition)&gt;&gt; Trait;               \</div>
 <div class="line">    static_assert(Trait::is_valid, <span class="stringliteral">&quot;Condition should be bool-convertible.&quot;</span>); \</div>
-<div class="line">    <a class="code hl_function" href="namespacedrake_1_1internal.html#a97b5239aadb12956444c2dea4d95df30">::drake::internal::DrakeAssertWasUsedWithRawPointer</a>&lt;                     \</div>
-<div class="line">        std::is_pointer_v&lt;<span class="keyword">decltype</span>(condition)&gt;&gt;();                           \</div>
+<div class="line">    static_assert(                                                           \</div>
+<div class="line">        !std::is_pointer_v&lt;<span class="keyword">decltype</span>(condition)&gt;,                             \</div>
+<div class="line">        <span class="stringliteral">&quot;When using DRAKE_DEMAND on a raw pointer, always write out &quot;</span>        \</div>
+<div class="line">        <span class="stringliteral">&quot;DRAKE_DEMAND(foo != nullptr), do not write DRAKE_DEMAND(foo) &quot;</span>      \</div>
+<div class="line">        <span class="stringliteral">&quot;and rely on implicit pointer-to-bool conversion.&quot;</span>);                 \</div>
 <div class="line">    if (!Trait::Evaluate(condition)) {                                       <a class="code hl_function" href="namespacedrake_1_1internal.html#abffd0ad8e5a39757c70d2e40443f4f59">\</a></div>
 <div class="line"><a class="code hl_function" href="namespacedrake_1_1internal.html#abffd0ad8e5a39757c70d2e40443f4f59">      ::drake::internal::AssertionFailed</a>(                                    \</div>
 <div class="line">           #condition, __func__, __FILE__, __LINE__);                        \</div>
 <div class="line">    }                                                                        \</div>
 <div class="line">  } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="anamespacedrake_1_1internal_html_a97b5239aadb12956444c2dea4d95df30"><div class="ttname"><a href="namespacedrake_1_1internal.html#a97b5239aadb12956444c2dea4d95df30">drake::internal::DrakeAssertWasUsedWithRawPointer</a></div><div class="ttdeci">constexpr void DrakeAssertWasUsedWithRawPointer()</div><div class="ttdef"><b>Definition:</b> drake_assert.h:92</div></div>
 <div class="ttc" id="anamespacedrake_1_1internal_html_abffd0ad8e5a39757c70d2e40443f4f59"><div class="ttname"><a href="namespacedrake_1_1internal.html#abffd0ad8e5a39757c70d2e40443f4f59">drake::internal::AssertionFailed</a></div><div class="ttdeci">void AssertionFailed(const char *condition, const char *func, const char *file, int line)</div></div>
 </div><!-- fragment -->
 </div>
@@ -271,7 +267,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_3096fa119feaaf68acf7be783be3d79f.html">drake</a></li><li class="navelem"><a class="el" href="dir_533b608e0d491fadd970e32351d4ba56.html">common</a></li><li class="navelem"><a class="el" href="drake__assert_8h.html">drake_assert.h</a></li>
-    <li class="footer">Generated on Sun Nov 28 2021 05:35:09 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Mon Dec 20 2021 04:37:40 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

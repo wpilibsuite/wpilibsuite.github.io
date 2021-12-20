@@ -27,7 +27,7 @@ var _generic_packet_math_functions_8h =
     [ "pexp_double", "_generic_packet_math_functions_8h.html#a4a94ca912e2d77814307381b8767eccb", null ],
     [ "pexp_float", "_generic_packet_math_functions_8h.html#adf8efa275ad2eee600065f2a23b6d9ec", null ],
     [ "pfrexp_generic", "_generic_packet_math_functions_8h.html#ace01ecfb4f96a051479c259c31cddba8", null ],
-    [ "pfrexp_generic_get_biased_exponent", "_generic_packet_math_functions_8h.html#afee8a210263b3aff85ec85a60c34344a", null ],
+    [ "pfrexp_generic_get_biased_exponent", "_generic_packet_math_functions_8h.html#ae613bd261d7701bbc5d18a4f800ca60f", null ],
     [ "pldexp_generic", "_generic_packet_math_functions_8h.html#abaa447709922cc22eb5dddfa2e7cf967", null ],
     [ "plog2_double", "_generic_packet_math_functions_8h.html#a80e883dd40e96d32b64e359efc094736", null ],
     [ "plog2_float", "_generic_packet_math_functions_8h.html#a1cbc86aaaff67191df5754cd34a19d91", null ],
