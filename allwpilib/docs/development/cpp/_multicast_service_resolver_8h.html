@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-4-1-gb5fd297</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-4-2-g2ad2d2c</span>
    </div>
   </td>
  </tr>
@@ -128,10 +128,10 @@ Functions</h2></td></tr>
 <tr class="separator:a6d3612c29475bbebfa4c238d2046e4be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6aebfbbc364cc123dae9f1bcd1027d83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_synchronization_8h.html#a4e842b28ce72a1d1dc778397b5f81b87">WPI_EventHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_multicast_service_resolver_8h.html#a6aebfbbc364cc123dae9f1bcd1027d83">WPI_GetMulticastServiceResolverEventHandle</a> (<a class="el" href="_multicast_service_resolver_8h.html#a22e22e7546d0071175fe60e312b704d4">WPI_MulticastServiceResolverHandle</a> handle)</td></tr>
 <tr class="separator:a6aebfbbc364cc123dae9f1bcd1027d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89a8f2f538a9801d84490587e2b667b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_w_p_i___service_data.html">WPI_ServiceData</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_multicast_service_resolver_8h.html#a89a8f2f538a9801d84490587e2b667b9">WPI_GetMulticastServiceResolverData</a> (<a class="el" href="_multicast_service_resolver_8h.html#a22e22e7546d0071175fe60e312b704d4">WPI_MulticastServiceResolverHandle</a> handle, int32_t *dataCount)</td></tr>
-<tr class="separator:a89a8f2f538a9801d84490587e2b667b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0a4f59b54dba45cb5b0c1c8175652f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_multicast_service_resolver_8h.html#aa0a4f59b54dba45cb5b0c1c8175652f9">WPI_FreeServiceData</a> (<a class="el" href="struct_w_p_i___service_data.html">WPI_ServiceData</a> **serviceData)</td></tr>
-<tr class="separator:aa0a4f59b54dba45cb5b0c1c8175652f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3bf38dca1e4926bbec44b7241de12b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_w_p_i___service_data.html">WPI_ServiceData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_multicast_service_resolver_8h.html#ac3bf38dca1e4926bbec44b7241de12b6">WPI_GetMulticastServiceResolverData</a> (<a class="el" href="_multicast_service_resolver_8h.html#a22e22e7546d0071175fe60e312b704d4">WPI_MulticastServiceResolverHandle</a> handle, int32_t *dataCount)</td></tr>
+<tr class="separator:ac3bf38dca1e4926bbec44b7241de12b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c586ca4c9b2803001ec1c7437229391"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_multicast_service_resolver_8h.html#a8c586ca4c9b2803001ec1c7437229391">WPI_FreeServiceData</a> (<a class="el" href="struct_w_p_i___service_data.html">WPI_ServiceData</a> *serviceData, int32_t length)</td></tr>
+<tr class="separator:a8c586ca4c9b2803001ec1c7437229391"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a22e22e7546d0071175fe60e312b704d4" name="a22e22e7546d0071175fe60e312b704d4"></a>
@@ -199,8 +199,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa0a4f59b54dba45cb5b0c1c8175652f9" name="aa0a4f59b54dba45cb5b0c1c8175652f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa0a4f59b54dba45cb5b0c1c8175652f9">&#9670;&nbsp;</a></span>WPI_FreeServiceData()</h2>
+<a id="a8c586ca4c9b2803001ec1c7437229391" name="a8c586ca4c9b2803001ec1c7437229391"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c586ca4c9b2803001ec1c7437229391">&#9670;&nbsp;</a></span>WPI_FreeServiceData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -208,23 +208,33 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void WPI_FreeServiceData </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_w_p_i___service_data.html">WPI_ServiceData</a> **&#160;</td>
-          <td class="paramname"><em>serviceData</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="struct_w_p_i___service_data.html">WPI_ServiceData</a> *&#160;</td>
+          <td class="paramname"><em>serviceData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a89a8f2f538a9801d84490587e2b667b9" name="a89a8f2f538a9801d84490587e2b667b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a89a8f2f538a9801d84490587e2b667b9">&#9670;&nbsp;</a></span>WPI_GetMulticastServiceResolverData()</h2>
+<a id="ac3bf38dca1e4926bbec44b7241de12b6" name="ac3bf38dca1e4926bbec44b7241de12b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3bf38dca1e4926bbec44b7241de12b6">&#9670;&nbsp;</a></span>WPI_GetMulticastServiceResolverData()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_w_p_i___service_data.html">WPI_ServiceData</a> ** WPI_GetMulticastServiceResolverData </td>
+          <td class="memname"><a class="el" href="struct_w_p_i___service_data.html">WPI_ServiceData</a> * WPI_GetMulticastServiceResolverData </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="_multicast_service_resolver_8h.html#a22e22e7546d0071175fe60e312b704d4">WPI_MulticastServiceResolverHandle</a>&#160;</td>
           <td class="paramname"><em>handle</em>, </td>
@@ -323,7 +333,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><a class="el" href="_multicast_service_resolver_8h.html">MulticastServiceResolver.h</a></li>
-    <li class="footer">Generated on Tue Dec 21 2021 19:36:09 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Wed Dec 22 2021 17:59:19 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
