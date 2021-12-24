@@ -67,57 +67,59 @@
 <span class="sourceLineNo">055</span><a id="line.55">   * Get the servo position.</a>
 <span class="sourceLineNo">056</span><a id="line.56">   *</a>
 <span class="sourceLineNo">057</span><a id="line.57">   * &lt;p&gt;Servo values range from 0.0 to 1.0 corresponding to the range of full left to full right.</a>
-<span class="sourceLineNo">058</span><a id="line.58">   *</a>
-<span class="sourceLineNo">059</span><a id="line.59">   * @return Position from 0.0 to 1.0.</a>
-<span class="sourceLineNo">060</span><a id="line.60">   */</a>
-<span class="sourceLineNo">061</span><a id="line.61">  public double get() {</a>
-<span class="sourceLineNo">062</span><a id="line.62">    return getPosition();</a>
-<span class="sourceLineNo">063</span><a id="line.63">  }</a>
-<span class="sourceLineNo">064</span><a id="line.64"></a>
-<span class="sourceLineNo">065</span><a id="line.65">  /**</a>
-<span class="sourceLineNo">066</span><a id="line.66">   * Set the servo angle.</a>
-<span class="sourceLineNo">067</span><a id="line.67">   *</a>
-<span class="sourceLineNo">068</span><a id="line.68">   * &lt;p&gt;The angles are based on the HS-322HD Servo, and have a range of 0 to 180 degrees.</a>
+<span class="sourceLineNo">058</span><a id="line.58">   * This returns the commanded position, not the position that the servo is actually at, as the</a>
+<span class="sourceLineNo">059</span><a id="line.59">   * servo does not report its own position.</a>
+<span class="sourceLineNo">060</span><a id="line.60">   *</a>
+<span class="sourceLineNo">061</span><a id="line.61">   * @return Position from 0.0 to 1.0.</a>
+<span class="sourceLineNo">062</span><a id="line.62">   */</a>
+<span class="sourceLineNo">063</span><a id="line.63">  public double get() {</a>
+<span class="sourceLineNo">064</span><a id="line.64">    return getPosition();</a>
+<span class="sourceLineNo">065</span><a id="line.65">  }</a>
+<span class="sourceLineNo">066</span><a id="line.66"></a>
+<span class="sourceLineNo">067</span><a id="line.67">  /**</a>
+<span class="sourceLineNo">068</span><a id="line.68">   * Set the servo angle.</a>
 <span class="sourceLineNo">069</span><a id="line.69">   *</a>
-<span class="sourceLineNo">070</span><a id="line.70">   * &lt;p&gt;Servo angles that are out of the supported range of the servo simply "saturate" in that</a>
-<span class="sourceLineNo">071</span><a id="line.71">   * direction In other words, if the servo has a range of (X degrees to Y degrees) than angles of</a>
-<span class="sourceLineNo">072</span><a id="line.72">   * less than X result in an angle of X being set and angles of more than Y degrees result in an</a>
-<span class="sourceLineNo">073</span><a id="line.73">   * angle of Y being set.</a>
-<span class="sourceLineNo">074</span><a id="line.74">   *</a>
-<span class="sourceLineNo">075</span><a id="line.75">   * @param degrees The angle in degrees to set the servo.</a>
-<span class="sourceLineNo">076</span><a id="line.76">   */</a>
-<span class="sourceLineNo">077</span><a id="line.77">  public void setAngle(double degrees) {</a>
-<span class="sourceLineNo">078</span><a id="line.78">    if (degrees &lt; kMinServoAngle) {</a>
-<span class="sourceLineNo">079</span><a id="line.79">      degrees = kMinServoAngle;</a>
-<span class="sourceLineNo">080</span><a id="line.80">    } else if (degrees &gt; kMaxServoAngle) {</a>
-<span class="sourceLineNo">081</span><a id="line.81">      degrees = kMaxServoAngle;</a>
-<span class="sourceLineNo">082</span><a id="line.82">    }</a>
-<span class="sourceLineNo">083</span><a id="line.83"></a>
-<span class="sourceLineNo">084</span><a id="line.84">    setPosition(((degrees - kMinServoAngle)) / getServoAngleRange());</a>
-<span class="sourceLineNo">085</span><a id="line.85">  }</a>
-<span class="sourceLineNo">086</span><a id="line.86"></a>
-<span class="sourceLineNo">087</span><a id="line.87">  /**</a>
-<span class="sourceLineNo">088</span><a id="line.88">   * Get the servo angle.</a>
-<span class="sourceLineNo">089</span><a id="line.89">   *</a>
-<span class="sourceLineNo">090</span><a id="line.90">   * &lt;p&gt;Assume that the servo angle is linear with respect to the PWM value (big assumption, need to</a>
-<span class="sourceLineNo">091</span><a id="line.91">   * test).</a>
-<span class="sourceLineNo">092</span><a id="line.92">   *</a>
-<span class="sourceLineNo">093</span><a id="line.93">   * @return The angle in degrees to which the servo is set.</a>
-<span class="sourceLineNo">094</span><a id="line.94">   */</a>
-<span class="sourceLineNo">095</span><a id="line.95">  public double getAngle() {</a>
-<span class="sourceLineNo">096</span><a id="line.96">    return getPosition() * getServoAngleRange() + kMinServoAngle;</a>
-<span class="sourceLineNo">097</span><a id="line.97">  }</a>
-<span class="sourceLineNo">098</span><a id="line.98"></a>
-<span class="sourceLineNo">099</span><a id="line.99">  private double getServoAngleRange() {</a>
-<span class="sourceLineNo">100</span><a id="line.100">    return kMaxServoAngle - kMinServoAngle;</a>
-<span class="sourceLineNo">101</span><a id="line.101">  }</a>
-<span class="sourceLineNo">102</span><a id="line.102"></a>
-<span class="sourceLineNo">103</span><a id="line.103">  @Override</a>
-<span class="sourceLineNo">104</span><a id="line.104">  public void initSendable(SendableBuilder builder) {</a>
-<span class="sourceLineNo">105</span><a id="line.105">    builder.setSmartDashboardType("Servo");</a>
-<span class="sourceLineNo">106</span><a id="line.106">    builder.addDoubleProperty("Value", this::get, this::set);</a>
-<span class="sourceLineNo">107</span><a id="line.107">  }</a>
-<span class="sourceLineNo">108</span><a id="line.108">}</a>
+<span class="sourceLineNo">070</span><a id="line.70">   * &lt;p&gt;The angles are based on the HS-322HD Servo, and have a range of 0 to 180 degrees.</a>
+<span class="sourceLineNo">071</span><a id="line.71">   *</a>
+<span class="sourceLineNo">072</span><a id="line.72">   * &lt;p&gt;Servo angles that are out of the supported range of the servo simply "saturate" in that</a>
+<span class="sourceLineNo">073</span><a id="line.73">   * direction In other words, if the servo has a range of (X degrees to Y degrees) than angles of</a>
+<span class="sourceLineNo">074</span><a id="line.74">   * less than X result in an angle of X being set and angles of more than Y degrees result in an</a>
+<span class="sourceLineNo">075</span><a id="line.75">   * angle of Y being set.</a>
+<span class="sourceLineNo">076</span><a id="line.76">   *</a>
+<span class="sourceLineNo">077</span><a id="line.77">   * @param degrees The angle in degrees to set the servo.</a>
+<span class="sourceLineNo">078</span><a id="line.78">   */</a>
+<span class="sourceLineNo">079</span><a id="line.79">  public void setAngle(double degrees) {</a>
+<span class="sourceLineNo">080</span><a id="line.80">    if (degrees &lt; kMinServoAngle) {</a>
+<span class="sourceLineNo">081</span><a id="line.81">      degrees = kMinServoAngle;</a>
+<span class="sourceLineNo">082</span><a id="line.82">    } else if (degrees &gt; kMaxServoAngle) {</a>
+<span class="sourceLineNo">083</span><a id="line.83">      degrees = kMaxServoAngle;</a>
+<span class="sourceLineNo">084</span><a id="line.84">    }</a>
+<span class="sourceLineNo">085</span><a id="line.85"></a>
+<span class="sourceLineNo">086</span><a id="line.86">    setPosition(((degrees - kMinServoAngle)) / getServoAngleRange());</a>
+<span class="sourceLineNo">087</span><a id="line.87">  }</a>
+<span class="sourceLineNo">088</span><a id="line.88"></a>
+<span class="sourceLineNo">089</span><a id="line.89">  /**</a>
+<span class="sourceLineNo">090</span><a id="line.90">   * Get the servo angle.</a>
+<span class="sourceLineNo">091</span><a id="line.91">   *</a>
+<span class="sourceLineNo">092</span><a id="line.92">   * &lt;p&gt;This returns the commanded angle, not the angle that the servo is actually at, as the servo</a>
+<span class="sourceLineNo">093</span><a id="line.93">   * does not report its own angle.</a>
+<span class="sourceLineNo">094</span><a id="line.94">   *</a>
+<span class="sourceLineNo">095</span><a id="line.95">   * @return The angle in degrees to which the servo is set.</a>
+<span class="sourceLineNo">096</span><a id="line.96">   */</a>
+<span class="sourceLineNo">097</span><a id="line.97">  public double getAngle() {</a>
+<span class="sourceLineNo">098</span><a id="line.98">    return getPosition() * getServoAngleRange() + kMinServoAngle;</a>
+<span class="sourceLineNo">099</span><a id="line.99">  }</a>
+<span class="sourceLineNo">100</span><a id="line.100"></a>
+<span class="sourceLineNo">101</span><a id="line.101">  private double getServoAngleRange() {</a>
+<span class="sourceLineNo">102</span><a id="line.102">    return kMaxServoAngle - kMinServoAngle;</a>
+<span class="sourceLineNo">103</span><a id="line.103">  }</a>
+<span class="sourceLineNo">104</span><a id="line.104"></a>
+<span class="sourceLineNo">105</span><a id="line.105">  @Override</a>
+<span class="sourceLineNo">106</span><a id="line.106">  public void initSendable(SendableBuilder builder) {</a>
+<span class="sourceLineNo">107</span><a id="line.107">    builder.setSmartDashboardType("Servo");</a>
+<span class="sourceLineNo">108</span><a id="line.108">    builder.addDoubleProperty("Value", this::get, this::set);</a>
+<span class="sourceLineNo">109</span><a id="line.109">  }</a>
+<span class="sourceLineNo">110</span><a id="line.110">}</a>
 
 
 
