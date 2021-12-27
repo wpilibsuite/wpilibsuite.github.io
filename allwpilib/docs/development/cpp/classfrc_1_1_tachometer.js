@@ -8,6 +8,7 @@ var classfrc_1_1_tachometer =
     [ "GetFrequency", "classfrc_1_1_tachometer.html#a32c192d190fd9680e6886752d7aa6f7f", null ],
     [ "GetPeriod", "classfrc_1_1_tachometer.html#a7d7081cdac74b1f0c3a39b2bc9942039", null ],
     [ "GetRevolutionsPerMinute", "classfrc_1_1_tachometer.html#a576578906f7e7ca7992afe57b442bc4b", null ],
+    [ "GetRevolutionsPerSecond", "classfrc_1_1_tachometer.html#a43e9978f0c0131f53e526ca8769f279f", null ],
     [ "GetSamplesToAverage", "classfrc_1_1_tachometer.html#a9fdc5c83a1ac4b64d828e2d68cc64656", null ],
     [ "GetStopped", "classfrc_1_1_tachometer.html#ae4a08b074b21e78ca0029d9432642098", null ],
     [ "InitSendable", "classfrc_1_1_tachometer.html#a8e3db6b5fc9aeee97ff01a88a1fe89ec", null ],

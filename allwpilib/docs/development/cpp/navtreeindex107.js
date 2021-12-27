@@ -1,5 +1,8 @@
 var NAVTREEINDEX107 =
 {
+"functions_func_p.html":[5,3,1,16],
+"functions_func_q.html":[5,3,1,17],
+"functions_func_r.html":[5,3,1,18],
 "functions_func_s.html":[5,3,1,19],
 "functions_func_t.html":[5,3,1,20],
 "functions_func_u.html":[5,3,1,21],
@@ -246,8 +249,5 @@ var NAVTREEINDEX107 =
 "group___matrix_functions___module.html#matrixbase_matrixfunction":[3,30,13,0,0,5],
 "group___matrix_functions___module.html#matrixbase_matrixfunction":[3,30,13,0,5],
 "group___matrix_functions___module.html#matrixbase_matrixfunction":[0,5],
-"group___matrix_functions___module.html#matrixbase_pow":[3,30,13,0,0,4],
-"group___matrix_functions___module.html#matrixbase_pow":[3,30,13,0,4],
-"group___matrix_functions___module.html#matrixbase_pow":[0,4],
-"group___matrix_functions___module.html#matrixbase_sin":[3,30,13,0,6]
+"group___matrix_functions___module.html#matrixbase_pow":[3,30,13,0,0,4]
 };

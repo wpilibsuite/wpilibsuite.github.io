@@ -1,5 +1,8 @@
 var NAVTREEINDEX108 =
 {
+"group___matrix_functions___module.html#matrixbase_pow":[3,30,13,0,4],
+"group___matrix_functions___module.html#matrixbase_pow":[0,4],
+"group___matrix_functions___module.html#matrixbase_sin":[3,30,13,0,6],
 "group___matrix_functions___module.html#matrixbase_sin":[3,30,13,0,0,6],
 "group___matrix_functions___module.html#matrixbase_sin":[0,6],
 "group___matrix_functions___module.html#matrixbase_sinh":[3,30,13,0,0,7],
@@ -246,8 +249,5 @@ var NAVTREEINDEX108 =
 "group__cscore__c__api.html#gga61ab6e0263fe88aa1da0e21fc25a5a4aad5d50238e7d5806819d2f605670cc8e2":[3,13,24,0],
 "group__cscore__c__api.html#gga61ab6e0263fe88aa1da0e21fc25a5a4aaf06ad2e731561f9743538e8e95542ea6":[3,13,24,3],
 "group__cscore__c__api.html#gga748df10eca5adcbc533b0fe788daf22ea95f3e1369d580248f00f714485ea48fc":[3,13,27,4],
-"group__cscore__c__api.html#gga748df10eca5adcbc533b0fe788daf22eac7f082aac24441ac645e6a7c6c0f6911":[3,13,27,0],
-"group__cscore__c__api.html#gga748df10eca5adcbc533b0fe788daf22ead19532b425f5b42414ea31935106aabe":[3,13,27,2],
-"group__cscore__c__api.html#gga748df10eca5adcbc533b0fe788daf22ead8c642f4d1ec6deaed002ba91cfbb523":[3,13,27,1],
-"group__cscore__c__api.html#gga748df10eca5adcbc533b0fe788daf22eaf4c6f6b6bcb0764597071dbc757494ff":[3,13,27,3]
+"group__cscore__c__api.html#gga748df10eca5adcbc533b0fe788daf22eac7f082aac24441ac645e6a7c6c0f6911":[3,13,27,0]
 };

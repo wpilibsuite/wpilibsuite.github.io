@@ -1,5 +1,8 @@
 var NAVTREEINDEX111 =
 {
+"group__hal__analoggyro.html#gadc7a11e59c368c174d79abe8fdeaea5e":[3,1,9,9],
+"group__hal__analoginput.html":[3,1,4],
+"group__hal__analoginput.html#ga02f152b2f03f34e45343791b307d0452":[3,1,4,3],
 "group__hal__analoginput.html#ga0f6a90fde07eda6f64d27edff7e6746a":[3,1,4,17],
 "group__hal__analoginput.html#ga3217a276a5295f6f9d13fa205edff47b":[3,1,4,11],
 "group__hal__analoginput.html#ga34d0a68a34c9fcc696d96b1102c7b3f8":[3,1,4,15],
@@ -246,8 +249,5 @@ var NAVTREEINDEX111 =
 "group__hal__dutycycle.html#ga749fddc16c0a0e1fb3264d1dc0c51b68":[3,1,16,0],
 "group__hal__dutycycle.html#ga86097e61efe8ea0b69abec9fd6834b0f":[3,1,16,5],
 "group__hal__dutycycle.html#ga865ad4b78e206155778194c53864532a":[3,1,16,6],
-"group__hal__dutycycle.html#gaad02f940114dda3b4d133e2f2a461ed4":[3,1,16,7],
-"group__hal__dutycycle.html#gab44e1f3fef711037c935565e6b3a45c0":[3,1,16,2],
-"group__hal__dutycycle.html#gac6ee0f5f0df7b6949be45b715b07667e":[3,1,16,4],
-"group__hal__encoder.html":[3,1,26]
+"group__hal__dutycycle.html#gaad02f940114dda3b4d133e2f2a461ed4":[3,1,16,7]
 };
