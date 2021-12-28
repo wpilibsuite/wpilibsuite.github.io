@@ -1,5 +1,6 @@
 var NAVTREEINDEX180 =
 {
+"wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203ca8f72f2a45cee9a5f2e0afe5d2bb9d4b1":[6,0,4,0,0,2,6,125],
 "wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203ca9047140da3bd5d20676eb94102443e5a":[6,0,4,0,0,2,6,23],
 "wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203ca91c001e5547439063fefe550d83533b6":[6,0,4,0,0,2,6,122],
 "wpiutil_2src_2main_2native_2fmtlib_2include_2fmt_2color_8h.html#a80d1dc5f416b97f92939a4166d41203ca93b1453c8ec5a548389c935052536ccb":[6,0,4,0,0,2,6,101],
