@@ -76,9 +76,6 @@ var dir_0616eb0edb7e8533b85fb847c3c08b17 =
     [ "CounterBase.h", "_counter_base_8h.html", [
       [ "frc::CounterBase", "classfrc_1_1_counter_base.html", "classfrc_1_1_counter_base" ]
     ] ],
-    [ "Debouncer.h", "_debouncer_8h.html", [
-      [ "frc::Debouncer", "classfrc_1_1_debouncer.html", "classfrc_1_1_debouncer" ]
-    ] ],
     [ "DigitalGlitchFilter.h", "_digital_glitch_filter_8h.html", [
       [ "frc::DigitalGlitchFilter", "classfrc_1_1_digital_glitch_filter.html", "classfrc_1_1_digital_glitch_filter" ]
     ] ],
