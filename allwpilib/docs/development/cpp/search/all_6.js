@@ -47,7 +47,7 @@ var searchData=
   ['deallocate_44',['deallocate',['../class_eigen_1_1aligned__allocator.html#ae00326806b7ba19c141c6c61a5f7b1ad',1,'Eigen::aligned_allocator']]],
   ['deallocate_45',['Deallocate',['../classwpi_1_1uv_1_1_buffer.html#a16898826e47cb2ca079c9af9a6684ad4',1,'wpi::uv::Buffer']]],
   ['deallocate_5fbuffer_46',['deallocate_buffer',['../namespacewpi.html#a693165287d8a8a5159fd739216188620',1,'wpi']]],
-  ['debounce_47',['Debounce',['../classfrc2_1_1_trigger.html#ae50a85b2471b1bc5562a7bf77a73e5b8',1,'frc2::Trigger']]],
+  ['debounce_47',['Debounce',['../classfrc2_1_1_trigger.html#a8d6d3cda00f72b19187f94c0590ebc01',1,'frc2::Trigger']]],
   ['debouncer_48',['Debouncer',['../classfrc_1_1_debouncer.html#a0f25468fdc8e496f300dda321703d562',1,'frc::Debouncer::Debouncer()'],['../classfrc_1_1_debouncer.html',1,'frc::Debouncer']]],
   ['debouncer_2eh_49',['Debouncer.h',['../_debouncer_8h.html',1,'']]],
   ['debouncetype_50',['DebounceType',['../classfrc_1_1_debouncer.html#a2b92ddc90e41162b1e2cdf63d72a35ed',1,'frc::Debouncer']]],
