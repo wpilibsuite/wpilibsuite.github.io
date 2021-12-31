@@ -2012,6 +2012,7 @@ var annotated_dup =
       [ "Talon", "classfrc_1_1_talon.html", "classfrc_1_1_talon" ],
       [ "TimedCommand", "classfrc_1_1_timed_command.html", "classfrc_1_1_timed_command" ],
       [ "TimedRobot", "classfrc_1_1_timed_robot.html", "classfrc_1_1_timed_robot" ],
+      [ "TimeInterpolatableBuffer", "classfrc_1_1_time_interpolatable_buffer.html", "classfrc_1_1_time_interpolatable_buffer" ],
       [ "Timer", "classfrc_1_1_timer.html", "classfrc_1_1_timer" ],
       [ "TimesliceRobot", "classfrc_1_1_timeslice_robot.html", "classfrc_1_1_timeslice_robot" ],
       [ "ToggleButtonScheduler", "classfrc_1_1_toggle_button_scheduler.html", "classfrc_1_1_toggle_button_scheduler" ],

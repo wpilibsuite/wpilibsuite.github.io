@@ -3270,6 +3270,7 @@ var hierarchy =
     [ "Eigen::internal::ternary_result_of_select< Func, ArgType0, ArgType1, ArgType2, sizeof(has_tr1_result)>", "struct_eigen_1_1internal_1_1ternary__result__of__select_3_01_func_00_01_arg_type0_00_01_arg_type6eb986b9b1e9aafbcbfee4e37d87eaa7.html", null ],
     [ "text_style", "classtext__style.html", null ],
     [ "thousands_sep_result< Char >", "structthousands__sep__result.html", null ],
+    [ "frc::TimeInterpolatableBuffer< T >", "classfrc_1_1_time_interpolatable_buffer.html", null ],
     [ "frc::Timer", "classfrc_1_1_timer.html", null ],
     [ "wpi::detail::to_json_fn", "structwpi_1_1detail_1_1to__json__fn.html", null ],
     [ "frc::Tracer", "classfrc_1_1_tracer.html", null ],

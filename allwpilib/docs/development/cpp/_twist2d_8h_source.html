@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-4-21-gb8d019c</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-4-22-g315be87</span>
    </div>
   </td>
  </tr>
@@ -149,8 +149,18 @@ $(document).ready(function(){initNavTree('_twist2d_8h_source.html',''); initResi
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">   * @return Whether the two objects are not equal.</span></div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">   */</span></div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="structfrc_1_1_twist2d.html#a8017e149cd1036161c34aefe733e0076">   55</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="structfrc_1_1_twist2d.html#a8017e149cd1036161c34aefe733e0076">operator!=</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structfrc_1_1_twist2d.html">Twist2d</a>&amp; other)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> !<a class="code hl_function" href="namespacefrc.html#af23e0d617ddcb6f8eb3dad37e179086f">operator==</a>(other); }</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>};</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment"></span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">  /**</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">   * Scale this by a given factor.</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">   * @param factor The factor by which to scale.</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">   * @return The scaled Twist2d.</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="structfrc_1_1_twist2d.html#aee44667fc4a06be8dc7b9386d4ea4944">   63</a></span>  <a class="code hl_struct" href="structfrc_1_1_twist2d.html">Twist2d</a> <a class="code hl_function" href="structfrc_1_1_twist2d.html#aee44667fc4a06be8dc7b9386d4ea4944">operator*</a>(<span class="keywordtype">double</span> factor) {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="structfrc_1_1_twist2d.html">Twist2d</a>{dx * factor, dy * factor, dtheta * factor};</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>};</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}  <span class="comment">// namespace frc</span></div>
 <div class="ttc" id="a_symbol_exports_8h_html"><div class="ttname"><a href="_symbol_exports_8h.html">SymbolExports.h</a></div></div>
 <div class="ttc" id="a_symbol_exports_8h_html_aac411a8a8db8805ace32d8e07266c44e"><div class="ttname"><a href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a></div><div class="ttdeci">#define WPILIB_DLLEXPORT</div><div class="ttdef"><b>Definition:</b> SymbolExports.h:22</div></div>
 <div class="ttc" id="aangle_8h_html"><div class="ttname"><a href="angle_8h.html">angle.h</a></div></div>
@@ -165,13 +175,14 @@ $(document).ready(function(){initNavTree('_twist2d_8h_source.html',''); initResi
 <div class="ttc" id="astructfrc_1_1_twist2d_html_a8017e149cd1036161c34aefe733e0076"><div class="ttname"><a href="structfrc_1_1_twist2d.html#a8017e149cd1036161c34aefe733e0076">frc::Twist2d::operator!=</a></div><div class="ttdeci">bool operator!=(const Twist2d &amp;other) const</div><div class="ttdoc">Checks inequality between this Twist2d and another object.</div><div class="ttdef"><b>Definition:</b> Twist2d.h:55</div></div>
 <div class="ttc" id="astructfrc_1_1_twist2d_html_a935ef5e155342a9392c41470839d4a93"><div class="ttname"><a href="structfrc_1_1_twist2d.html#a935ef5e155342a9392c41470839d4a93">frc::Twist2d::dtheta</a></div><div class="ttdeci">units::radian_t dtheta</div><div class="ttdoc">Angular &quot;dtheta&quot; component (radians)</div><div class="ttdef"><b>Definition:</b> Twist2d.h:35</div></div>
 <div class="ttc" id="astructfrc_1_1_twist2d_html_aa11987fb55e2191bce89ce8781d3896a"><div class="ttname"><a href="structfrc_1_1_twist2d.html#aa11987fb55e2191bce89ce8781d3896a">frc::Twist2d::operator==</a></div><div class="ttdeci">bool operator==(const Twist2d &amp;other) const</div><div class="ttdoc">Checks equality between this Twist2d and another object.</div><div class="ttdef"><b>Definition:</b> Twist2d.h:43</div></div>
+<div class="ttc" id="astructfrc_1_1_twist2d_html_aee44667fc4a06be8dc7b9386d4ea4944"><div class="ttname"><a href="structfrc_1_1_twist2d.html#aee44667fc4a06be8dc7b9386d4ea4944">frc::Twist2d::operator*</a></div><div class="ttdeci">Twist2d operator*(double factor)</div><div class="ttdoc">Scale this by a given factor.</div><div class="ttdef"><b>Definition:</b> Twist2d.h:63</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_9cba4c2fd20eab804c2f7cd73063f328.html">geometry</a></li><li class="navelem"><a class="el" href="_twist2d_8h.html">Twist2d.h</a></li>
-    <li class="footer">Generated on Fri Dec 31 2021 02:33:05 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Dec 31 2021 03:11:27 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

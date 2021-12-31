@@ -487,6 +487,7 @@ var namespacewpi =
     [ "isUInt< 32 >", "namespacewpi.html#af771a1ba991555e3aebf4b0b43fa270b", null ],
     [ "isUInt< 8 >", "namespacewpi.html#a7f73ffa4ad91e9c389e85ebb69d072ce", null ],
     [ "isUIntN", "namespacewpi.html#adc2ea2c155eeb9a3662912e8c2ff880e", null ],
+    [ "Lerp", "namespacewpi.html#a905c54ca4b7fdb1633b425ad9ca5dc48", null ],
     [ "Lo_32", "namespacewpi.html#a30cde0598116042ad77cd369e21b95d3", null ],
     [ "Log2", "namespacewpi.html#a1196434a670e3e907e365ee77a26479c", null ],
     [ "Log2_32", "namespacewpi.html#a12fc40611c1ed874ebee9877f3866da8", null ],

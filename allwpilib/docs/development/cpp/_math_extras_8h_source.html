@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-4-21-gb8d019c</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-4-22-g315be87</span>
    </div>
   </td>
  </tr>
@@ -940,10 +940,24 @@ $(document).ready(function(){initNavTree('_math_extras_8h_source.html',''); init
 <div class="line"><a id="l00844" name="l00844"></a><span class="lineno"><a class="line" href="namespacewpi.html#a0dca6ddf9e17f10ec7699c29819b6c18">  844</a></span><span class="keyword">constexpr</span> <span class="keywordtype">int</span> <a class="code hl_function" href="namespacewpi.html#a0dca6ddf9e17f10ec7699c29819b6c18">sgn</a>(T val) {</div>
 <div class="line"><a id="l00845" name="l00845"></a><span class="lineno">  845</span>  <span class="keywordflow">return</span> (T(0) &lt; val) - (val &lt; T(0));</div>
 <div class="line"><a id="l00846" name="l00846"></a><span class="lineno">  846</span>}</div>
-<div class="line"><a id="l00847" name="l00847"></a><span class="lineno">  847</span> </div>
-<div class="line"><a id="l00848" name="l00848"></a><span class="lineno">  848</span>} <span class="comment">// namespace wpi</span></div>
-<div class="line"><a id="l00849" name="l00849"></a><span class="lineno">  849</span> </div>
-<div class="line"><a id="l00850" name="l00850"></a><span class="lineno">  850</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00847" name="l00847"></a><span class="lineno">  847</span><span class="comment"></span> </div>
+<div class="line"><a id="l00848" name="l00848"></a><span class="lineno">  848</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00849" name="l00849"></a><span class="lineno">  849</span><span class="comment"> * Linearly interpolates between two values.</span></div>
+<div class="line"><a id="l00850" name="l00850"></a><span class="lineno">  850</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00851" name="l00851"></a><span class="lineno">  851</span><span class="comment"> * @param startValue The start value.</span></div>
+<div class="line"><a id="l00852" name="l00852"></a><span class="lineno">  852</span><span class="comment"> * @param endValue The end value.</span></div>
+<div class="line"><a id="l00853" name="l00853"></a><span class="lineno">  853</span><span class="comment"> * @param t The fraction for interpolation.</span></div>
+<div class="line"><a id="l00854" name="l00854"></a><span class="lineno">  854</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00855" name="l00855"></a><span class="lineno">  855</span><span class="comment"> * @return The interpolated value.</span></div>
+<div class="line"><a id="l00856" name="l00856"></a><span class="lineno">  856</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00857" name="l00857"></a><span class="lineno">  857</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00858" name="l00858"></a><span class="lineno"><a class="line" href="namespacewpi.html#a905c54ca4b7fdb1633b425ad9ca5dc48">  858</a></span><span class="keyword">constexpr</span> T <a class="code hl_function" href="namespacewpi.html#a905c54ca4b7fdb1633b425ad9ca5dc48">Lerp</a>(<span class="keyword">const</span> T&amp; startValue, <span class="keyword">const</span> T&amp; endValue, <span class="keywordtype">double</span> t) {</div>
+<div class="line"><a id="l00859" name="l00859"></a><span class="lineno">  859</span>  <span class="keywordflow">return</span> startValue + (endValue - startValue) * t;</div>
+<div class="line"><a id="l00860" name="l00860"></a><span class="lineno">  860</span>}</div>
+<div class="line"><a id="l00861" name="l00861"></a><span class="lineno">  861</span> </div>
+<div class="line"><a id="l00862" name="l00862"></a><span class="lineno">  862</span>} <span class="comment">// namespace wpi</span></div>
+<div class="line"><a id="l00863" name="l00863"></a><span class="lineno">  863</span> </div>
+<div class="line"><a id="l00864" name="l00864"></a><span class="lineno">  864</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="a_array_cwise_unary_ops_8h_html_a6b50fd45f87f306afd49e939b15b9f8f"><div class="ttname"><a href="_array_cwise_unary_ops_8h.html#a6b50fd45f87f306afd49e939b15b9f8f">log2</a></div><div class="ttdeci">EIGEN_DEVICE_FUNC const Log2ReturnType log2() const</div><div class="ttdef"><b>Definition:</b> ArrayCwiseUnaryOps.h:170</div></div>
 <div class="ttc" id="a_compiler_8h_html"><div class="ttname"><a href="_compiler_8h.html">Compiler.h</a></div></div>
 <div class="ttc" id="a_math_extras_8h_html_ace331bebb5bd2780b8dfb7e6e97db7dd"><div class="ttname"><a href="_math_extras_8h.html#ace331bebb5bd2780b8dfb7e6e97db7dd">R6</a></div><div class="ttdeci">#define R6(n)</div></div>
@@ -995,6 +1009,7 @@ $(document).ready(function(){initNavTree('_math_extras_8h_source.html',''); init
 <div class="ttc" id="anamespacewpi_html_a7f73ffa4ad91e9c389e85ebb69d072ce"><div class="ttname"><a href="namespacewpi.html#a7f73ffa4ad91e9c389e85ebb69d072ce">wpi::isUInt&lt; 8 &gt;</a></div><div class="ttdeci">constexpr bool isUInt&lt; 8 &gt;(uint64_t x)</div><div class="ttdef"><b>Definition:</b> MathExtras.h:340</div></div>
 <div class="ttc" id="anamespacewpi_html_a8620da8ae3d73cb976795805f7f2e7c5"><div class="ttname"><a href="namespacewpi.html#a8620da8ae3d73cb976795805f7f2e7c5">wpi::countTrailingOnes</a></div><div class="ttdeci">std::size_t countTrailingOnes(T Value, ZeroBehavior ZB=ZB_Width)</div><div class="ttdoc">Count the number of ones from the least significant bit to the first zero bit.</div><div class="ttdef"><b>Definition:</b> MathExtras.h:469</div></div>
 <div class="ttc" id="anamespacewpi_html_a86598beceb2a41ea10f4335f8d5b99e4"><div class="ttname"><a href="namespacewpi.html#a86598beceb2a41ea10f4335f8d5b99e4">wpi::divideCeil</a></div><div class="ttdeci">uint64_t divideCeil(uint64_t Numerator, uint64_t Denominator)</div><div class="ttdoc">Returns the integer ceil(Numerator / Denominator).</div><div class="ttdef"><b>Definition:</b> MathExtras.h:690</div></div>
+<div class="ttc" id="anamespacewpi_html_a905c54ca4b7fdb1633b425ad9ca5dc48"><div class="ttname"><a href="namespacewpi.html#a905c54ca4b7fdb1633b425ad9ca5dc48">wpi::Lerp</a></div><div class="ttdeci">constexpr T Lerp(const T &amp;startValue, const T &amp;endValue, double t)</div><div class="ttdoc">Linearly interpolates between two values.</div><div class="ttdef"><b>Definition:</b> MathExtras.h:858</div></div>
 <div class="ttc" id="anamespacewpi_html_a9258c13f90593d3af2d92dde80a79e9b"><div class="ttname"><a href="namespacewpi.html#a9258c13f90593d3af2d92dde80a79e9b">wpi::GreatestCommonDivisor64</a></div><div class="ttdeci">uint64_t GreatestCommonDivisor64(uint64_t A, uint64_t B)</div><div class="ttdoc">Return the greatest common divisor of the values using Euclid's algorithm.</div><div class="ttdef"><b>Definition:</b> MathExtras.h:554</div></div>
 <div class="ttc" id="anamespacewpi_html_a9655a7ee20b8dd71819cee2a13c5c359"><div class="ttname"><a href="namespacewpi.html#a9655a7ee20b8dd71819cee2a13c5c359">wpi::SaturatingMultiplyAdd</a></div><div class="ttdeci">std::enable_if&lt; std::is_unsigned&lt; T &gt;::value, T &gt;::type SaturatingMultiplyAdd(T X, T Y, T A, bool *ResultOverflowed=nullptr)</div><div class="ttdoc">Multiply two unsigned integers, X and Y, and add the unsigned integer, A to the product.</div><div class="ttdef"><b>Definition:</b> MathExtras.h:830</div></div>
 <div class="ttc" id="anamespacewpi_html_aa1c3ca08347209b40a7330a66e83bf05"><div class="ttname"><a href="namespacewpi.html#aa1c3ca08347209b40a7330a66e83bf05">wpi::FloatToBits</a></div><div class="ttdeci">uint32_t FloatToBits(float Float)</div><div class="ttdoc">This function takes a float and returns the bit equivalent 32-bit integer.</div><div class="ttdef"><b>Definition:</b> MathExtras.h:592</div></div>
@@ -1052,7 +1067,7 @@ $(document).ready(function(){initNavTree('_math_extras_8h_source.html',''); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1224104d412225b996ab6dfa83431a88.html">wpi</a></li><li class="navelem"><a class="el" href="_math_extras_8h.html">MathExtras.h</a></li>
-    <li class="footer">Generated on Fri Dec 31 2021 02:33:07 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Dec 31 2021 03:11:29 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
