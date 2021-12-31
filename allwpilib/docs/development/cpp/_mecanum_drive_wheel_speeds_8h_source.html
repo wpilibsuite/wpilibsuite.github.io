@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-4-20-g102f23b</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-4-21-gb8d019c</span>
    </div>
   </td>
  </tr>
@@ -130,23 +130,25 @@ $(document).ready(function(){initNavTree('_mecanum_drive_wheel_speeds_8h_source.
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="structfrc_1_1_mecanum_drive_wheel_speeds.html#ab8214c04b8a3dad8bfdedbd1ab245c7b">   34</a></span>  units::meters_per_second_t rearRight = 0_mps;</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment"></span> </div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">  /**</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">   * Normalizes the wheel speeds using some max attainable speed. Sometimes,</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">   * after inverse kinematics, the requested speed from a/several modules may be</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">   * above the max attainable speed for the driving motor on that module. To fix</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">   * this issue, one can &quot;normalize&quot; all the wheel speeds to make sure that all</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">   * requested module speeds are below the absolute threshold, while maintaining</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">   * the ratio of speeds between modules.</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">   *</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">   * @param attainableMaxSpeed The absolute max speed that a wheel can reach.</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">   */</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="structfrc_1_1_mecanum_drive_wheel_speeds.html#a36b5e6e56ef4e66174bc3ba11a1930b3">   46</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="structfrc_1_1_mecanum_drive_wheel_speeds.html#a36b5e6e56ef4e66174bc3ba11a1930b3">Normalize</a>(units::meters_per_second_t attainableMaxSpeed);</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>};</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>}  <span class="comment">// namespace frc</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">   * Renormalizes the wheel speeds if any individual speed is above the</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">   * specified maximum.</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">   * Sometimes, after inverse kinematics, the requested speed from one or</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">   * more wheels may be above the max attainable speed for the driving motor on</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">   * that wheel. To fix this issue, one can reduce all the wheel speeds to make</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">   * sure that all requested module speeds are at-or-below the absolute</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">   * threshold, while maintaining the ratio of speeds between wheels.</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">   *</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">   * @param attainableMaxSpeed The absolute max speed that a wheel can reach.</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">   */</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="structfrc_1_1_mecanum_drive_wheel_speeds.html#a866d78cbd8f6b474685e8b2134693f4a">   48</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="structfrc_1_1_mecanum_drive_wheel_speeds.html#a866d78cbd8f6b474685e8b2134693f4a">Desaturate</a>(units::meters_per_second_t attainableMaxSpeed);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>};</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>}  <span class="comment">// namespace frc</span></div>
 <div class="ttc" id="a_symbol_exports_8h_html"><div class="ttname"><a href="_symbol_exports_8h.html">SymbolExports.h</a></div></div>
 <div class="ttc" id="a_symbol_exports_8h_html_aac411a8a8db8805ace32d8e07266c44e"><div class="ttname"><a href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a></div><div class="ttdeci">#define WPILIB_DLLEXPORT</div><div class="ttdef"><b>Definition:</b> SymbolExports.h:22</div></div>
 <div class="ttc" id="anamespacefrc_html"><div class="ttname"><a href="namespacefrc.html">frc</a></div><div class="ttdef"><b>Definition:</b> CameraServerShared.h:13</div></div>
 <div class="ttc" id="astructfrc_1_1_mecanum_drive_wheel_speeds_html"><div class="ttname"><a href="structfrc_1_1_mecanum_drive_wheel_speeds.html">frc::MecanumDriveWheelSpeeds</a></div><div class="ttdoc">Represents the wheel speeds for a mecanum drive drivetrain.</div><div class="ttdef"><b>Definition:</b> MecanumDriveWheelSpeeds.h:15</div></div>
-<div class="ttc" id="astructfrc_1_1_mecanum_drive_wheel_speeds_html_a36b5e6e56ef4e66174bc3ba11a1930b3"><div class="ttname"><a href="structfrc_1_1_mecanum_drive_wheel_speeds.html#a36b5e6e56ef4e66174bc3ba11a1930b3">frc::MecanumDriveWheelSpeeds::Normalize</a></div><div class="ttdeci">void Normalize(units::meters_per_second_t attainableMaxSpeed)</div><div class="ttdoc">Normalizes the wheel speeds using some max attainable speed.</div></div>
+<div class="ttc" id="astructfrc_1_1_mecanum_drive_wheel_speeds_html_a866d78cbd8f6b474685e8b2134693f4a"><div class="ttname"><a href="structfrc_1_1_mecanum_drive_wheel_speeds.html#a866d78cbd8f6b474685e8b2134693f4a">frc::MecanumDriveWheelSpeeds::Desaturate</a></div><div class="ttdeci">void Desaturate(units::meters_per_second_t attainableMaxSpeed)</div><div class="ttdoc">Renormalizes the wheel speeds if any individual speed is above the specified maximum.</div></div>
 <div class="ttc" id="avelocity_8h_html"><div class="ttname"><a href="velocity_8h.html">velocity.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -154,7 +156,7 @@ $(document).ready(function(){initNavTree('_mecanum_drive_wheel_speeds_8h_source.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4d863b529094b8a59afd2a32ef89b8cd.html">frc</a></li><li class="navelem"><a class="el" href="dir_d2a0b1acc90a71e3394af07d8da08800.html">kinematics</a></li><li class="navelem"><a class="el" href="_mecanum_drive_wheel_speeds_8h.html">MecanumDriveWheelSpeeds.h</a></li>
-    <li class="footer">Generated on Thu Dec 30 2021 21:16:45 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Dec 31 2021 02:33:05 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>
