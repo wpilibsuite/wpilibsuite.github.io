@@ -34,7 +34,7 @@ MathJax.Hub.Config({
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="wpilib-128.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-4-22-g315be87</span>
+   <div id="projectname">WPILibC++<span id="projectnumber">&#160;2022.1.1-beta-4-23-g1f59ff7</span>
    </div>
   </td>
  </tr>
@@ -124,6 +124,12 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_addressable_l_e_d.html">AddressableLED</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A class for driving addressable LEDs, such as WS2812s and NeoPixels.  <a href="classfrc_1_1_addressable_l_e_d.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16448___i_m_u.html">ADIS16448_IMU</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use <a class="el" href="classfrc_1_1_d_m_a.html">DMA</a> <a class="el" href="classfrc_1_1_s_p_i.html" title="SPI bus interface class.">SPI</a> to read rate, acceleration, and magnetometer data from the ADIS16448 IMU and return the robots heading relative to a starting position, AHRS, and instant measurements.  <a href="classfrc_1_1_a_d_i_s16448___i_m_u.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_i_s16470___i_m_u.html">ADIS16470_IMU</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use <a class="el" href="classfrc_1_1_d_m_a.html">DMA</a> <a class="el" href="classfrc_1_1_s_p_i.html" title="SPI bus interface class.">SPI</a> to read rate and acceleration data from the ADIS16470 IMU and return the robot's heading relative to a starting position and instant measurements.  <a href="classfrc_1_1_a_d_i_s16470___i_m_u.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_a_d_x_l345___i2_c.html">ADXL345_I2C</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ADXL345 <a class="el" href="classfrc_1_1_accelerometer.html" title="Interface for 3-axis accelerometers.">Accelerometer</a> on <a class="el" href="classfrc_1_1_i2_c.html" title="I2C bus interface class.">I2C</a>.  <a href="classfrc_1_1_a_d_x_l345___i2_c.html#details">More...</a><br /></td></tr>
@@ -440,6 +446,9 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nidec Brushless Motor.  <a href="classfrc_1_1_nidec_brushless.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_notifier.html">Notifier</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfrc_1_1offset__data.html">offset_data</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">struct to store offset data  <a href="structfrc_1_1offset__data.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfrc_1_1_p_i_d_analog_accelerometer.html">PIDAnalogAccelerometer</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper so that <a class="el" href="classfrc_1_1_p_i_d_source.html" title="PIDSource interface is a generic sensor source for the PID class.">PIDSource</a> is implemented for <a class="el" href="classfrc_1_1_analog_accelerometer.html" title="Handle operation of an analog accelerometer.">AnalogAccelerometer</a> for old <a class="el" href="classfrc_1_1_p_i_d_controller.html" title="Class implements a PID Control Loop.">PIDController</a>.  <a href="classfrc_1_1_p_i_d_analog_accelerometer.html#details">More...</a><br /></td></tr>
@@ -791,6 +800,24 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespacefrc.html#a76b4c6f0018b90c1ef0089c6ab4e1e84acc77076580c409066b5ec61ec7c8e8b1">kFallingPulse</a> = 3
  }</td></tr>
 <tr class="separator:a76b4c6f0018b90c1ef0089c6ab4e1e84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab417cd8c9d2ff79e55b9fe61107eccf2"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ab417cd8c9d2ff79e55b9fe61107eccf2">ADIS16470CalibrationTime</a> { <br />
+&#160;&#160;<a class="el" href="namespacefrc.html#ab417cd8c9d2ff79e55b9fe61107eccf2ab0b8a93c9bf5ddefc0fd376c8b3c530d">_32ms</a> = 0
+, <a class="el" href="namespacefrc.html#ab417cd8c9d2ff79e55b9fe61107eccf2a3cb3056e0645dc2b986cf73e38408ddb">_64ms</a> = 1
+, <a class="el" href="namespacefrc.html#ab417cd8c9d2ff79e55b9fe61107eccf2a73eb12a53d31b30f39bc0719bf5a6468">_128ms</a> = 2
+, <a class="el" href="namespacefrc.html#ab417cd8c9d2ff79e55b9fe61107eccf2ad2a51879df8bd3eaa4f311fa24f30881">_256ms</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="namespacefrc.html#ab417cd8c9d2ff79e55b9fe61107eccf2a05d79f83c5636d144fd53a36b1224a0b">_512ms</a> = 4
+, <a class="el" href="namespacefrc.html#ab417cd8c9d2ff79e55b9fe61107eccf2a14224719a3a5927354cdeebe61588127">_1s</a> = 5
+, <a class="el" href="namespacefrc.html#ab417cd8c9d2ff79e55b9fe61107eccf2a2289da39f901ce1ac9a65802e8c1b673">_2s</a> = 6
+, <a class="el" href="namespacefrc.html#ab417cd8c9d2ff79e55b9fe61107eccf2ae65ec6cd4b2df8ecc52026c85d7a0087">_4s</a> = 7
+, <br />
+&#160;&#160;<a class="el" href="namespacefrc.html#ab417cd8c9d2ff79e55b9fe61107eccf2a343388ccc88415696aaefdee49e40d96">_8s</a> = 8
+, <a class="el" href="namespacefrc.html#ab417cd8c9d2ff79e55b9fe61107eccf2a18debbf0e119174857b7621801096b35">_16s</a> = 9
+, <a class="el" href="namespacefrc.html#ab417cd8c9d2ff79e55b9fe61107eccf2a3930868e03834c854198fcd220ffe14b">_32s</a> = 10
+, <a class="el" href="namespacefrc.html#ab417cd8c9d2ff79e55b9fe61107eccf2aa5394b801375f24fd87f610144ca39e2">_64s</a> = 11
+<br />
+ }</td></tr>
+<tr class="separator:ab417cd8c9d2ff79e55b9fe61107eccf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad678d767ab62c6e84bc2fcac7655a725"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ad678d767ab62c6e84bc2fcac7655a725">PneumaticsModuleType</a> { <a class="el" href="namespacefrc.html#ad678d767ab62c6e84bc2fcac7655a725a22912d4fe610d46be1769655dfdc08a6">CTREPCM</a>
 , <a class="el" href="namespacefrc.html#ad678d767ab62c6e84bc2fcac7655a725ab7b6b98a2e5cc91c86e6341e27c46d3a">REVPH</a>
  }</td></tr>
@@ -1079,8 +1106,252 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:a6bd6f612dd62c1c703e83570f282ce38"><td class="memItemLeft" align="right" valign="top">class <a class="el" href="_symbol_exports_8h.html#aac411a8a8db8805ace32d8e07266c44e">WPILIB_DLLEXPORT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a6bd6f612dd62c1c703e83570f282ce38">Pose2d</a></td></tr>
 <tr class="separator:a6bd6f612dd62c1c703e83570f282ce38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca9c85c19fee9fa92e64d427063b1627"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#aca9c85c19fee9fa92e64d427063b1627">FLASH_CNT</a> = 0x00</td></tr>
+<tr class="memdesc:aca9c85c19fee9fa92e64d427063b1627"><td class="mdescLeft">&#160;</td><td class="mdescRight">ADIS16448 Register Map Declaration.  <a href="namespacefrc.html#aca9c85c19fee9fa92e64d427063b1627">More...</a><br /></td></tr>
+<tr class="separator:aca9c85c19fee9fa92e64d427063b1627"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa94cf97d086ec44e4e4ae517beb2e49"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#aaa94cf97d086ec44e4e4ae517beb2e49">XGYRO_OUT</a> = 0x04</td></tr>
+<tr class="separator:aaa94cf97d086ec44e4e4ae517beb2e49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a267c8a851e2f8f6cfb3204caabdabb65"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a267c8a851e2f8f6cfb3204caabdabb65">YGYRO_OUT</a> = 0x06</td></tr>
+<tr class="separator:a267c8a851e2f8f6cfb3204caabdabb65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dbcb72b45b09c003f6fed60c20c37c4"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a7dbcb72b45b09c003f6fed60c20c37c4">ZGYRO_OUT</a> = 0x08</td></tr>
+<tr class="separator:a7dbcb72b45b09c003f6fed60c20c37c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c7cc9f300b3ff5a6c9ea6ab53e25c23"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a4c7cc9f300b3ff5a6c9ea6ab53e25c23">XACCL_OUT</a> = 0x0A</td></tr>
+<tr class="separator:a4c7cc9f300b3ff5a6c9ea6ab53e25c23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bee329fb7a8f1c15dff62f36bc8c914"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a5bee329fb7a8f1c15dff62f36bc8c914">YACCL_OUT</a> = 0x0C</td></tr>
+<tr class="separator:a5bee329fb7a8f1c15dff62f36bc8c914"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a229cd1c295ca6d5d98fe6611688ac912"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a229cd1c295ca6d5d98fe6611688ac912">ZACCL_OUT</a> = 0x0E</td></tr>
+<tr class="separator:a229cd1c295ca6d5d98fe6611688ac912"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91357c807f875b674e38b60a6c101043"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a91357c807f875b674e38b60a6c101043">XMAGN_OUT</a> = 0x10</td></tr>
+<tr class="separator:a91357c807f875b674e38b60a6c101043"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a163cc649e567608f0cefa88e9bb531cc"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a163cc649e567608f0cefa88e9bb531cc">YMAGN_OUT</a> = 0x12</td></tr>
+<tr class="separator:a163cc649e567608f0cefa88e9bb531cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19cc0d2b395024f842e36b90c40ec594"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a19cc0d2b395024f842e36b90c40ec594">ZMAGN_OUT</a> = 0x14</td></tr>
+<tr class="separator:a19cc0d2b395024f842e36b90c40ec594"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace7625dfd559401852a33473eb00a8ac"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ace7625dfd559401852a33473eb00a8ac">BARO_OUT</a></td></tr>
+<tr class="separator:ace7625dfd559401852a33473eb00a8ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae60be315bb3f292b75d928378964c422"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ae60be315bb3f292b75d928378964c422">TEMP_OUT</a> = 0x18</td></tr>
+<tr class="separator:ae60be315bb3f292b75d928378964c422"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7030337d9ea1f3a07278380a9b29c1e"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ac7030337d9ea1f3a07278380a9b29c1e">XGYRO_OFF</a></td></tr>
+<tr class="separator:ac7030337d9ea1f3a07278380a9b29c1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad90a1b1999ec827a3fda0a2321132d07"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ad90a1b1999ec827a3fda0a2321132d07">YGYRO_OFF</a></td></tr>
+<tr class="separator:ad90a1b1999ec827a3fda0a2321132d07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fda93e217e758dd97788fe39d5f5e58"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a9fda93e217e758dd97788fe39d5f5e58">ZGYRO_OFF</a></td></tr>
+<tr class="separator:a9fda93e217e758dd97788fe39d5f5e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9736681b27256690b4f1736f30a3228f"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a9736681b27256690b4f1736f30a3228f">XACCL_OFF</a></td></tr>
+<tr class="separator:a9736681b27256690b4f1736f30a3228f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a6c5803bcdf154b653784cd6de6b50d"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a5a6c5803bcdf154b653784cd6de6b50d">YACCL_OFF</a></td></tr>
+<tr class="separator:a5a6c5803bcdf154b653784cd6de6b50d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6de5e9bb79545fcc95481d0376df3ff"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#af6de5e9bb79545fcc95481d0376df3ff">ZACCL_OFF</a></td></tr>
+<tr class="separator:af6de5e9bb79545fcc95481d0376df3ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afccdbc767c41d2b6f6ce27d7a6e2fbb8"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#afccdbc767c41d2b6f6ce27d7a6e2fbb8">XMAGN_HIC</a></td></tr>
+<tr class="separator:afccdbc767c41d2b6f6ce27d7a6e2fbb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5c1d5f63a8f91d1b497d9bdccee94fb"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#aa5c1d5f63a8f91d1b497d9bdccee94fb">YMAGN_HIC</a></td></tr>
+<tr class="separator:aa5c1d5f63a8f91d1b497d9bdccee94fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c4e97a290138c4d9cc5cae588f222c9"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a7c4e97a290138c4d9cc5cae588f222c9">ZMAGN_HIC</a></td></tr>
+<tr class="separator:a7c4e97a290138c4d9cc5cae588f222c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad439125d299bac3ac71180b9b2e46f27"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ad439125d299bac3ac71180b9b2e46f27">XMAGN_SIC</a></td></tr>
+<tr class="separator:ad439125d299bac3ac71180b9b2e46f27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a246885d3631775fee4b9721913373139"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a246885d3631775fee4b9721913373139">YMAGN_SIC</a></td></tr>
+<tr class="separator:a246885d3631775fee4b9721913373139"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61c7614c9a1ca6a67754c107b220c32f"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a61c7614c9a1ca6a67754c107b220c32f">ZMAGN_SIC</a></td></tr>
+<tr class="separator:a61c7614c9a1ca6a67754c107b220c32f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5f0bde0ab143139a82b2ca53cbfb3bf"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#af5f0bde0ab143139a82b2ca53cbfb3bf">GPIO_CTRL</a> = 0x32</td></tr>
+<tr class="separator:af5f0bde0ab143139a82b2ca53cbfb3bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f00eeb83cd11f2d36613e6b8a518c2b"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a5f00eeb83cd11f2d36613e6b8a518c2b">MSC_CTRL</a> = 0x34</td></tr>
+<tr class="separator:a5f00eeb83cd11f2d36613e6b8a518c2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cc46d9abff37dae5dc78179a8a5f826"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a8cc46d9abff37dae5dc78179a8a5f826">SMPL_PRD</a></td></tr>
+<tr class="separator:a8cc46d9abff37dae5dc78179a8a5f826"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad06abf235dd26e890ba899aef9cc5e1"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#aad06abf235dd26e890ba899aef9cc5e1">SENS_AVG</a> = 0x38</td></tr>
+<tr class="separator:aad06abf235dd26e890ba899aef9cc5e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0207a4c9e95a04f3fd5f5d51228e2941"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a0207a4c9e95a04f3fd5f5d51228e2941">SEQ_CNT</a> = 0x3A</td></tr>
+<tr class="separator:a0207a4c9e95a04f3fd5f5d51228e2941"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92f8d7cf46056e732f0682013c267d9a"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a92f8d7cf46056e732f0682013c267d9a">DIAG_STAT</a> = 0x3C</td></tr>
+<tr class="separator:a92f8d7cf46056e732f0682013c267d9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cb2c87ebd39ee28804dfcf41ca6f46d"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a1cb2c87ebd39ee28804dfcf41ca6f46d">GLOB_CMD</a> = 0x3E</td></tr>
+<tr class="separator:a1cb2c87ebd39ee28804dfcf41ca6f46d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72977f7cc42f8a2dcbb6b5191c440d9d"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a72977f7cc42f8a2dcbb6b5191c440d9d">ALM_MAG1</a> = 0x40</td></tr>
+<tr class="separator:a72977f7cc42f8a2dcbb6b5191c440d9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a16ae92c0c56fff40b98f5198ec5db0"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a1a16ae92c0c56fff40b98f5198ec5db0">ALM_MAG2</a> = 0x42</td></tr>
+<tr class="separator:a1a16ae92c0c56fff40b98f5198ec5db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a035b084605fcb91037483bb77bce9c66"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a035b084605fcb91037483bb77bce9c66">ALM_SMPL1</a> = 0x44</td></tr>
+<tr class="separator:a035b084605fcb91037483bb77bce9c66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af29d17ede760370fc892336a0a547263"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#af29d17ede760370fc892336a0a547263">ALM_SMPL2</a> = 0x46</td></tr>
+<tr class="separator:af29d17ede760370fc892336a0a547263"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8cdf42e56ecfbc41a8e1dbfa0a6ad8f"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ab8cdf42e56ecfbc41a8e1dbfa0a6ad8f">ALM_CTRL</a> = 0x48</td></tr>
+<tr class="separator:ab8cdf42e56ecfbc41a8e1dbfa0a6ad8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a719b333ad5faacaf977c9c6d06c87537"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a719b333ad5faacaf977c9c6d06c87537">LOT_ID1</a> = 0x52</td></tr>
+<tr class="separator:a719b333ad5faacaf977c9c6d06c87537"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89e673e5c591c7fe1606ef66db325318"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a89e673e5c591c7fe1606ef66db325318">LOT_ID2</a> = 0x54</td></tr>
+<tr class="separator:a89e673e5c591c7fe1606ef66db325318"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98cae000d2c5f3e8c0df54960bd63245"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a98cae000d2c5f3e8c0df54960bd63245">PROD_ID</a> = 0x56</td></tr>
+<tr class="separator:a98cae000d2c5f3e8c0df54960bd63245"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e3bf7fd281c3cf04432ad42b2efc9e9"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a2e3bf7fd281c3cf04432ad42b2efc9e9">SERIAL_NUM</a> = 0x58</td></tr>
+<tr class="separator:a2e3bf7fd281c3cf04432ad42b2efc9e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7f128539f5e2d1cad934f175d2689f2"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#af7f128539f5e2d1cad934f175d2689f2">rad_to_deg</a> = 57.2957795</td></tr>
+<tr class="memdesc:af7f128539f5e2d1cad934f175d2689f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">ADIS16448 Static Constants.  <a href="namespacefrc.html#af7f128539f5e2d1cad934f175d2689f2">More...</a><br /></td></tr>
+<tr class="separator:af7f128539f5e2d1cad934f175d2689f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a143e11a17a1e19be14ddac338f69c064"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a143e11a17a1e19be14ddac338f69c064">deg_to_rad</a> = 0.0174532</td></tr>
+<tr class="separator:a143e11a17a1e19be14ddac338f69c064"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd3eb9792ab7c23d40636a7610027d5a"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#abd3eb9792ab7c23d40636a7610027d5a">grav</a> = 9.81</td></tr>
+<tr class="separator:abd3eb9792ab7c23d40636a7610027d5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca9c85c19fee9fa92e64d427063b1627"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#aca9c85c19fee9fa92e64d427063b1627">FLASH_CNT</a> = 0x00</td></tr>
+<tr class="separator:aca9c85c19fee9fa92e64d427063b1627"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92f8d7cf46056e732f0682013c267d9a"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a92f8d7cf46056e732f0682013c267d9a">DIAG_STAT</a> = 0x02</td></tr>
+<tr class="separator:a92f8d7cf46056e732f0682013c267d9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac73f7a63c9ad8f6b47841bc82e0e70d3"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ac73f7a63c9ad8f6b47841bc82e0e70d3">X_GYRO_LOW</a></td></tr>
+<tr class="separator:ac73f7a63c9ad8f6b47841bc82e0e70d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfdc99383c421d6a57549d1ac79bc09d"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#adfdc99383c421d6a57549d1ac79bc09d">X_GYRO_OUT</a></td></tr>
+<tr class="separator:adfdc99383c421d6a57549d1ac79bc09d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57794094b92bec989780b6254ff86435"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a57794094b92bec989780b6254ff86435">Y_GYRO_LOW</a></td></tr>
+<tr class="separator:a57794094b92bec989780b6254ff86435"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae02e805c08260158c3b6d82a3c625a47"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ae02e805c08260158c3b6d82a3c625a47">Y_GYRO_OUT</a></td></tr>
+<tr class="separator:ae02e805c08260158c3b6d82a3c625a47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dcc20f36217d3572c2ba9c5c88163d1"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a9dcc20f36217d3572c2ba9c5c88163d1">Z_GYRO_LOW</a></td></tr>
+<tr class="separator:a9dcc20f36217d3572c2ba9c5c88163d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0270d5be5df7a1c90475c59a1508c177"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a0270d5be5df7a1c90475c59a1508c177">Z_GYRO_OUT</a></td></tr>
+<tr class="separator:a0270d5be5df7a1c90475c59a1508c177"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37eaf630b0a2ec224593b5bfa3f6df87"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a37eaf630b0a2ec224593b5bfa3f6df87">X_ACCL_LOW</a></td></tr>
+<tr class="separator:a37eaf630b0a2ec224593b5bfa3f6df87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7e2021c52c0548d501cb3ce02d9286c"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#aa7e2021c52c0548d501cb3ce02d9286c">X_ACCL_OUT</a></td></tr>
+<tr class="separator:aa7e2021c52c0548d501cb3ce02d9286c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6782ac5d22de42ea851d0cdb323ccf54"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a6782ac5d22de42ea851d0cdb323ccf54">Y_ACCL_LOW</a></td></tr>
+<tr class="separator:a6782ac5d22de42ea851d0cdb323ccf54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9965423405ab3177f327a0fdb759b26a"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a9965423405ab3177f327a0fdb759b26a">Y_ACCL_OUT</a></td></tr>
+<tr class="separator:a9965423405ab3177f327a0fdb759b26a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea7dc94c478596b241f4b607a9ebbde7"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#aea7dc94c478596b241f4b607a9ebbde7">Z_ACCL_LOW</a></td></tr>
+<tr class="separator:aea7dc94c478596b241f4b607a9ebbde7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a461aac471ed1c7927743bf39dd5bb8a6"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a461aac471ed1c7927743bf39dd5bb8a6">Z_ACCL_OUT</a></td></tr>
+<tr class="separator:a461aac471ed1c7927743bf39dd5bb8a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae60be315bb3f292b75d928378964c422"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ae60be315bb3f292b75d928378964c422">TEMP_OUT</a></td></tr>
+<tr class="separator:ae60be315bb3f292b75d928378964c422"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b43f30071c1008eada93fcade9adfc6"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a7b43f30071c1008eada93fcade9adfc6">TIME_STAMP</a> = 0x1E</td></tr>
+<tr class="separator:a7b43f30071c1008eada93fcade9adfc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af484c575b4576dec999a2c3286a00e8e"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#af484c575b4576dec999a2c3286a00e8e">X_DELTANG_LOW</a></td></tr>
+<tr class="separator:af484c575b4576dec999a2c3286a00e8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bf80bce788ccacc7b787b1ef7ae60e5"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a5bf80bce788ccacc7b787b1ef7ae60e5">X_DELTANG_OUT</a></td></tr>
+<tr class="separator:a5bf80bce788ccacc7b787b1ef7ae60e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d760b2356fa3e796327293887c13c1b"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a2d760b2356fa3e796327293887c13c1b">Y_DELTANG_LOW</a></td></tr>
+<tr class="separator:a2d760b2356fa3e796327293887c13c1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cb49adee7ec07dc938f1466857f6e97"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a0cb49adee7ec07dc938f1466857f6e97">Y_DELTANG_OUT</a></td></tr>
+<tr class="separator:a0cb49adee7ec07dc938f1466857f6e97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dfc5c98c1628085f06d6d9621a7b048"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a1dfc5c98c1628085f06d6d9621a7b048">Z_DELTANG_LOW</a></td></tr>
+<tr class="separator:a1dfc5c98c1628085f06d6d9621a7b048"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82ee11482ab5c49b2c643642abe9c331"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a82ee11482ab5c49b2c643642abe9c331">Z_DELTANG_OUT</a></td></tr>
+<tr class="separator:a82ee11482ab5c49b2c643642abe9c331"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82a391244f7e082fd8290b2f0b2c91cf"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a82a391244f7e082fd8290b2f0b2c91cf">X_DELTVEL_LOW</a></td></tr>
+<tr class="separator:a82a391244f7e082fd8290b2f0b2c91cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53ea2aac9b04b869e2e5f6414aced1d8"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a53ea2aac9b04b869e2e5f6414aced1d8">X_DELTVEL_OUT</a></td></tr>
+<tr class="separator:a53ea2aac9b04b869e2e5f6414aced1d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4c0786fcabe6366e4b0b4ce674451f7"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ab4c0786fcabe6366e4b0b4ce674451f7">Y_DELTVEL_LOW</a></td></tr>
+<tr class="separator:ab4c0786fcabe6366e4b0b4ce674451f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbf0e589b171bc234d79491d665db0db"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#acbf0e589b171bc234d79491d665db0db">Y_DELTVEL_OUT</a></td></tr>
+<tr class="separator:acbf0e589b171bc234d79491d665db0db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10a665d0fdfba407dcda1661530a2ef8"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a10a665d0fdfba407dcda1661530a2ef8">Z_DELTVEL_LOW</a></td></tr>
+<tr class="separator:a10a665d0fdfba407dcda1661530a2ef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86a6c9d0076247af06291cbf2e0d62e2"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a86a6c9d0076247af06291cbf2e0d62e2">Z_DELTVEL_OUT</a></td></tr>
+<tr class="separator:a86a6c9d0076247af06291cbf2e0d62e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73562fe1919e6bb76dac59238433f15e"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a73562fe1919e6bb76dac59238433f15e">XG_BIAS_LOW</a></td></tr>
+<tr class="separator:a73562fe1919e6bb76dac59238433f15e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afae2c58d6548269fade1a55aee292bb4"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#afae2c58d6548269fade1a55aee292bb4">XG_BIAS_HIGH</a></td></tr>
+<tr class="separator:afae2c58d6548269fade1a55aee292bb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a997cb3f1656b0309411aa522cd1804fc"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a997cb3f1656b0309411aa522cd1804fc">YG_BIAS_LOW</a></td></tr>
+<tr class="separator:a997cb3f1656b0309411aa522cd1804fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc8c17462992d39e9ee731f089dbd07b"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#abc8c17462992d39e9ee731f089dbd07b">YG_BIAS_HIGH</a></td></tr>
+<tr class="separator:abc8c17462992d39e9ee731f089dbd07b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22e0662b7b390de30e66353e7dcf7252"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a22e0662b7b390de30e66353e7dcf7252">ZG_BIAS_LOW</a></td></tr>
+<tr class="separator:a22e0662b7b390de30e66353e7dcf7252"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ef37444a4442d71f65d741aef2944a4"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a5ef37444a4442d71f65d741aef2944a4">ZG_BIAS_HIGH</a></td></tr>
+<tr class="separator:a5ef37444a4442d71f65d741aef2944a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad855a2802bc529a7755380cef4f738cf"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ad855a2802bc529a7755380cef4f738cf">XA_BIAS_LOW</a></td></tr>
+<tr class="separator:ad855a2802bc529a7755380cef4f738cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b04e430f7a22dd88a8c2c88e7773b99"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a3b04e430f7a22dd88a8c2c88e7773b99">XA_BIAS_HIGH</a></td></tr>
+<tr class="separator:a3b04e430f7a22dd88a8c2c88e7773b99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebbe74aeb83296370c5a59d123ab77fd"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#aebbe74aeb83296370c5a59d123ab77fd">YA_BIAS_LOW</a></td></tr>
+<tr class="separator:aebbe74aeb83296370c5a59d123ab77fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86ffff509ec3337252598165ef269afc"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a86ffff509ec3337252598165ef269afc">YA_BIAS_HIGH</a></td></tr>
+<tr class="separator:a86ffff509ec3337252598165ef269afc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff72f615349de67f699967134e4ffca4"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#aff72f615349de67f699967134e4ffca4">ZA_BIAS_LOW</a></td></tr>
+<tr class="separator:aff72f615349de67f699967134e4ffca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbfc7d663037dc8ad06ef4ab8a10d865"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#adbfc7d663037dc8ad06ef4ab8a10d865">ZA_BIAS_HIGH</a></td></tr>
+<tr class="separator:adbfc7d663037dc8ad06ef4ab8a10d865"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bc81a55c382ffc6a3ddff17a743ff6e"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a0bc81a55c382ffc6a3ddff17a743ff6e">FILT_CTRL</a> = 0x5C</td></tr>
+<tr class="separator:a0bc81a55c382ffc6a3ddff17a743ff6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f00eeb83cd11f2d36613e6b8a518c2b"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a5f00eeb83cd11f2d36613e6b8a518c2b">MSC_CTRL</a> = 0x60</td></tr>
+<tr class="separator:a5f00eeb83cd11f2d36613e6b8a518c2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdcd0476459ace2fec8aef143a4157d1"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#afdcd0476459ace2fec8aef143a4157d1">UP_SCALE</a> = 0x62</td></tr>
+<tr class="separator:afdcd0476459ace2fec8aef143a4157d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46861deaf1a7d2106414444faa86bec2"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a46861deaf1a7d2106414444faa86bec2">DEC_RATE</a></td></tr>
+<tr class="separator:a46861deaf1a7d2106414444faa86bec2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecefb8f2f1342fc5e266d7629bdc7b84"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#aecefb8f2f1342fc5e266d7629bdc7b84">NULL_CNFG</a> = 0x66</td></tr>
+<tr class="separator:aecefb8f2f1342fc5e266d7629bdc7b84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cb2c87ebd39ee28804dfcf41ca6f46d"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a1cb2c87ebd39ee28804dfcf41ca6f46d">GLOB_CMD</a> = 0x68</td></tr>
+<tr class="separator:a1cb2c87ebd39ee28804dfcf41ca6f46d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66bb0e7e4d3da077d05c4d2faa94aa6"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#ae66bb0e7e4d3da077d05c4d2faa94aa6">FIRM_REV</a> = 0x6C</td></tr>
+<tr class="separator:ae66bb0e7e4d3da077d05c4d2faa94aa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2754b197b5432e4b502342609b8ff7f6"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a2754b197b5432e4b502342609b8ff7f6">FIRM_DM</a></td></tr>
+<tr class="separator:a2754b197b5432e4b502342609b8ff7f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a532d645288cec35c835c629196af6929"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a532d645288cec35c835c629196af6929">FIRM_Y</a> = 0x70</td></tr>
+<tr class="separator:a532d645288cec35c835c629196af6929"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98cae000d2c5f3e8c0df54960bd63245"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a98cae000d2c5f3e8c0df54960bd63245">PROD_ID</a> = 0x72</td></tr>
+<tr class="separator:a98cae000d2c5f3e8c0df54960bd63245"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e3bf7fd281c3cf04432ad42b2efc9e9"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a2e3bf7fd281c3cf04432ad42b2efc9e9">SERIAL_NUM</a></td></tr>
+<tr class="separator:a2e3bf7fd281c3cf04432ad42b2efc9e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a6276075ba113646af3936882e3ef7e"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a8a6276075ba113646af3936882e3ef7e">USER_SCR1</a> = 0x76</td></tr>
+<tr class="separator:a8a6276075ba113646af3936882e3ef7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fcffca1818d908d7ff1a86cc2d61f9f"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a0fcffca1818d908d7ff1a86cc2d61f9f">USER_SCR2</a> = 0x78</td></tr>
+<tr class="separator:a0fcffca1818d908d7ff1a86cc2d61f9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e41c83ef2d7b3e97ff876c36a5ffc76"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a4e41c83ef2d7b3e97ff876c36a5ffc76">USER_SCR3</a> = 0x7A</td></tr>
+<tr class="separator:a4e41c83ef2d7b3e97ff876c36a5ffc76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf1e7685c3437b388897a6a4c4b627fd"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#adf1e7685c3437b388897a6a4c4b627fd">FLSHCNT_LOW</a> = 0x7C</td></tr>
+<tr class="separator:adf1e7685c3437b388897a6a4c4b627fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf6a7157cd27bc0781c11bafa359aa07"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#adf6a7157cd27bc0781c11bafa359aa07">FLSHCNT_HIGH</a> = 0x7E</td></tr>
+<tr class="separator:adf6a7157cd27bc0781c11bafa359aa07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ddd92134375fd7b4bb6ee3942b3146f"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a7ddd92134375fd7b4bb6ee3942b3146f">m_autospi_x_packet</a> [16]</td></tr>
+<tr class="separator:a7ddd92134375fd7b4bb6ee3942b3146f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bcd5d00397ae55d80a135aff0ee9965"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a3bcd5d00397ae55d80a135aff0ee9965">m_autospi_y_packet</a> [16]</td></tr>
+<tr class="separator:a3bcd5d00397ae55d80a135aff0ee9965"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeddac997599e76a01bfa24a1093c90a2"><td class="memItemLeft" align="right" valign="top">static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#aeddac997599e76a01bfa24a1093c90a2">m_autospi_z_packet</a> [16]</td></tr>
+<tr class="separator:aeddac997599e76a01bfa24a1093c90a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2935d59e0bf22fe7547951b22322a04e"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefrc.html#a2935d59e0bf22fe7547951b22322a04e">delta_angle_sf</a> = 2160.0 / 2147483648.0</td></tr>
+<tr class="separator:a2935d59e0bf22fe7547951b22322a04e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="ab417cd8c9d2ff79e55b9fe61107eccf2" name="ab417cd8c9d2ff79e55b9fe61107eccf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab417cd8c9d2ff79e55b9fe61107eccf2">&#9670;&nbsp;</a></span>ADIS16470CalibrationTime</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="namespacefrc.html#ab417cd8c9d2ff79e55b9fe61107eccf2">frc::ADIS16470CalibrationTime</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ab417cd8c9d2ff79e55b9fe61107eccf2ab0b8a93c9bf5ddefc0fd376c8b3c530d" name="ab417cd8c9d2ff79e55b9fe61107eccf2ab0b8a93c9bf5ddefc0fd376c8b3c530d"></a>_32ms&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab417cd8c9d2ff79e55b9fe61107eccf2a3cb3056e0645dc2b986cf73e38408ddb" name="ab417cd8c9d2ff79e55b9fe61107eccf2a3cb3056e0645dc2b986cf73e38408ddb"></a>_64ms&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab417cd8c9d2ff79e55b9fe61107eccf2a73eb12a53d31b30f39bc0719bf5a6468" name="ab417cd8c9d2ff79e55b9fe61107eccf2a73eb12a53d31b30f39bc0719bf5a6468"></a>_128ms&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab417cd8c9d2ff79e55b9fe61107eccf2ad2a51879df8bd3eaa4f311fa24f30881" name="ab417cd8c9d2ff79e55b9fe61107eccf2ad2a51879df8bd3eaa4f311fa24f30881"></a>_256ms&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab417cd8c9d2ff79e55b9fe61107eccf2a05d79f83c5636d144fd53a36b1224a0b" name="ab417cd8c9d2ff79e55b9fe61107eccf2a05d79f83c5636d144fd53a36b1224a0b"></a>_512ms&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab417cd8c9d2ff79e55b9fe61107eccf2a14224719a3a5927354cdeebe61588127" name="ab417cd8c9d2ff79e55b9fe61107eccf2a14224719a3a5927354cdeebe61588127"></a>_1s&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab417cd8c9d2ff79e55b9fe61107eccf2a2289da39f901ce1ac9a65802e8c1b673" name="ab417cd8c9d2ff79e55b9fe61107eccf2a2289da39f901ce1ac9a65802e8c1b673"></a>_2s&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab417cd8c9d2ff79e55b9fe61107eccf2ae65ec6cd4b2df8ecc52026c85d7a0087" name="ab417cd8c9d2ff79e55b9fe61107eccf2ae65ec6cd4b2df8ecc52026c85d7a0087"></a>_4s&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab417cd8c9d2ff79e55b9fe61107eccf2a343388ccc88415696aaefdee49e40d96" name="ab417cd8c9d2ff79e55b9fe61107eccf2a343388ccc88415696aaefdee49e40d96"></a>_8s&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab417cd8c9d2ff79e55b9fe61107eccf2a18debbf0e119174857b7621801096b35" name="ab417cd8c9d2ff79e55b9fe61107eccf2a18debbf0e119174857b7621801096b35"></a>_16s&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab417cd8c9d2ff79e55b9fe61107eccf2a3930868e03834c854198fcd220ffe14b" name="ab417cd8c9d2ff79e55b9fe61107eccf2a3930868e03834c854198fcd220ffe14b"></a>_32s&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ab417cd8c9d2ff79e55b9fe61107eccf2aa5394b801375f24fd87f610144ca39e2" name="ab417cd8c9d2ff79e55b9fe61107eccf2aa5394b801375f24fd87f610144ca39e2"></a>_64s&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <a id="a76b4c6f0018b90c1ef0089c6ab4e1e84" name="a76b4c6f0018b90c1ef0089c6ab4e1e84"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a76b4c6f0018b90c1ef0089c6ab4e1e84">&#9670;&nbsp;</a></span>AnalogTriggerType</h2>
 
@@ -4349,6 +4620,697 @@ template&lt;int CovDim, int States&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="ab8cdf42e56ecfbc41a8e1dbfa0a6ad8f" name="ab8cdf42e56ecfbc41a8e1dbfa0a6ad8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8cdf42e56ecfbc41a8e1dbfa0a6ad8f">&#9670;&nbsp;</a></span>ALM_CTRL</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::ALM_CTRL = 0x48</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a72977f7cc42f8a2dcbb6b5191c440d9d" name="a72977f7cc42f8a2dcbb6b5191c440d9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72977f7cc42f8a2dcbb6b5191c440d9d">&#9670;&nbsp;</a></span>ALM_MAG1</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::ALM_MAG1 = 0x40</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1a16ae92c0c56fff40b98f5198ec5db0" name="a1a16ae92c0c56fff40b98f5198ec5db0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a16ae92c0c56fff40b98f5198ec5db0">&#9670;&nbsp;</a></span>ALM_MAG2</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::ALM_MAG2 = 0x42</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a035b084605fcb91037483bb77bce9c66" name="a035b084605fcb91037483bb77bce9c66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a035b084605fcb91037483bb77bce9c66">&#9670;&nbsp;</a></span>ALM_SMPL1</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::ALM_SMPL1 = 0x44</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af29d17ede760370fc892336a0a547263" name="af29d17ede760370fc892336a0a547263"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af29d17ede760370fc892336a0a547263">&#9670;&nbsp;</a></span>ALM_SMPL2</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::ALM_SMPL2 = 0x46</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ace7625dfd559401852a33473eb00a8ac" name="ace7625dfd559401852a33473eb00a8ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace7625dfd559401852a33473eb00a8ac">&#9670;&nbsp;</a></span>BARO_OUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::BARO_OUT</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    0x16</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a46861deaf1a7d2106414444faa86bec2" name="a46861deaf1a7d2106414444faa86bec2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46861deaf1a7d2106414444faa86bec2">&#9670;&nbsp;</a></span>DEC_RATE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::DEC_RATE</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    0x64</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a143e11a17a1e19be14ddac338f69c064" name="a143e11a17a1e19be14ddac338f69c064"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a143e11a17a1e19be14ddac338f69c064">&#9670;&nbsp;</a></span>deg_to_rad</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const double frc::deg_to_rad = 0.0174532</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2935d59e0bf22fe7547951b22322a04e" name="a2935d59e0bf22fe7547951b22322a04e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2935d59e0bf22fe7547951b22322a04e">&#9670;&nbsp;</a></span>delta_angle_sf</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const double frc::delta_angle_sf = 2160.0 / 2147483648.0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a92f8d7cf46056e732f0682013c267d9a" name="a92f8d7cf46056e732f0682013c267d9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92f8d7cf46056e732f0682013c267d9a">&#9670;&nbsp;</a></span>DIAG_STAT <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::DIAG_STAT = 0x3C</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a92f8d7cf46056e732f0682013c267d9a" name="a92f8d7cf46056e732f0682013c267d9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92f8d7cf46056e732f0682013c267d9a">&#9670;&nbsp;</a></span>DIAG_STAT <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::DIAG_STAT = 0x02</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0bc81a55c382ffc6a3ddff17a743ff6e" name="a0bc81a55c382ffc6a3ddff17a743ff6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bc81a55c382ffc6a3ddff17a743ff6e">&#9670;&nbsp;</a></span>FILT_CTRL</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::FILT_CTRL = 0x5C</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2754b197b5432e4b502342609b8ff7f6" name="a2754b197b5432e4b502342609b8ff7f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2754b197b5432e4b502342609b8ff7f6">&#9670;&nbsp;</a></span>FIRM_DM</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::FIRM_DM</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    0x6E</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae66bb0e7e4d3da077d05c4d2faa94aa6" name="ae66bb0e7e4d3da077d05c4d2faa94aa6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66bb0e7e4d3da077d05c4d2faa94aa6">&#9670;&nbsp;</a></span>FIRM_REV</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::FIRM_REV = 0x6C</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a532d645288cec35c835c629196af6929" name="a532d645288cec35c835c629196af6929"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a532d645288cec35c835c629196af6929">&#9670;&nbsp;</a></span>FIRM_Y</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::FIRM_Y = 0x70</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aca9c85c19fee9fa92e64d427063b1627" name="aca9c85c19fee9fa92e64d427063b1627"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca9c85c19fee9fa92e64d427063b1627">&#9670;&nbsp;</a></span>FLASH_CNT <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::FLASH_CNT = 0x00</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>ADIS16448 Register Map Declaration. </p>
+
+</div>
+</div>
+<a id="aca9c85c19fee9fa92e64d427063b1627" name="aca9c85c19fee9fa92e64d427063b1627"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca9c85c19fee9fa92e64d427063b1627">&#9670;&nbsp;</a></span>FLASH_CNT <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::FLASH_CNT = 0x00</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adf6a7157cd27bc0781c11bafa359aa07" name="adf6a7157cd27bc0781c11bafa359aa07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf6a7157cd27bc0781c11bafa359aa07">&#9670;&nbsp;</a></span>FLSHCNT_HIGH</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::FLSHCNT_HIGH = 0x7E</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adf1e7685c3437b388897a6a4c4b627fd" name="adf1e7685c3437b388897a6a4c4b627fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf1e7685c3437b388897a6a4c4b627fd">&#9670;&nbsp;</a></span>FLSHCNT_LOW</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::FLSHCNT_LOW = 0x7C</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1cb2c87ebd39ee28804dfcf41ca6f46d" name="a1cb2c87ebd39ee28804dfcf41ca6f46d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cb2c87ebd39ee28804dfcf41ca6f46d">&#9670;&nbsp;</a></span>GLOB_CMD <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::GLOB_CMD = 0x3E</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1cb2c87ebd39ee28804dfcf41ca6f46d" name="a1cb2c87ebd39ee28804dfcf41ca6f46d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cb2c87ebd39ee28804dfcf41ca6f46d">&#9670;&nbsp;</a></span>GLOB_CMD <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::GLOB_CMD = 0x68</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af5f0bde0ab143139a82b2ca53cbfb3bf" name="af5f0bde0ab143139a82b2ca53cbfb3bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5f0bde0ab143139a82b2ca53cbfb3bf">&#9670;&nbsp;</a></span>GPIO_CTRL</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::GPIO_CTRL = 0x32</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abd3eb9792ab7c23d40636a7610027d5a" name="abd3eb9792ab7c23d40636a7610027d5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd3eb9792ab7c23d40636a7610027d5a">&#9670;&nbsp;</a></span>grav</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const double frc::grav = 9.81</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a719b333ad5faacaf977c9c6d06c87537" name="a719b333ad5faacaf977c9c6d06c87537"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a719b333ad5faacaf977c9c6d06c87537">&#9670;&nbsp;</a></span>LOT_ID1</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::LOT_ID1 = 0x52</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a89e673e5c591c7fe1606ef66db325318" name="a89e673e5c591c7fe1606ef66db325318"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89e673e5c591c7fe1606ef66db325318">&#9670;&nbsp;</a></span>LOT_ID2</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::LOT_ID2 = 0x54</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7ddd92134375fd7b4bb6ee3942b3146f" name="a7ddd92134375fd7b4bb6ee3942b3146f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ddd92134375fd7b4bb6ee3942b3146f">&#9670;&nbsp;</a></span>m_autospi_x_packet</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::m_autospi_x_packet[16]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    <a class="code hl_variable" href="namespacefrc.html#a5bf80bce788ccacc7b787b1ef7ae60e5">X_DELTANG_OUT</a>, <a class="code hl_variable" href="namespacefrc.html#aca9c85c19fee9fa92e64d427063b1627">FLASH_CNT</a>, <a class="code hl_variable" href="namespacefrc.html#af484c575b4576dec999a2c3286a00e8e">X_DELTANG_LOW</a>, <a class="code hl_variable" href="namespacefrc.html#aca9c85c19fee9fa92e64d427063b1627">FLASH_CNT</a>, <a class="code hl_variable" href="namespacefrc.html#adfdc99383c421d6a57549d1ac79bc09d">X_GYRO_OUT</a>, <a class="code hl_variable" href="namespacefrc.html#aca9c85c19fee9fa92e64d427063b1627">FLASH_CNT</a>,</div>
+<div class="line">    <a class="code hl_variable" href="namespacefrc.html#ae02e805c08260158c3b6d82a3c625a47">Y_GYRO_OUT</a>,    <a class="code hl_variable" href="namespacefrc.html#aca9c85c19fee9fa92e64d427063b1627">FLASH_CNT</a>, <a class="code hl_variable" href="namespacefrc.html#a0270d5be5df7a1c90475c59a1508c177">Z_GYRO_OUT</a>,    <a class="code hl_variable" href="namespacefrc.html#aca9c85c19fee9fa92e64d427063b1627">FLASH_CNT</a>, <a class="code hl_variable" href="namespacefrc.html#aa7e2021c52c0548d501cb3ce02d9286c">X_ACCL_OUT</a>, <a class="code hl_variable" href="namespacefrc.html#aca9c85c19fee9fa92e64d427063b1627">FLASH_CNT</a>,</div>
+<div class="line">    <a class="code hl_variable" href="namespacefrc.html#a9965423405ab3177f327a0fdb759b26a">Y_ACCL_OUT</a>,    <a class="code hl_variable" href="namespacefrc.html#aca9c85c19fee9fa92e64d427063b1627">FLASH_CNT</a>, <a class="code hl_variable" href="namespacefrc.html#a461aac471ed1c7927743bf39dd5bb8a6">Z_ACCL_OUT</a>,    <a class="code hl_variable" href="namespacefrc.html#aca9c85c19fee9fa92e64d427063b1627">FLASH_CNT</a>}</div>
+<div class="ttc" id="anamespacefrc_html_a0270d5be5df7a1c90475c59a1508c177"><div class="ttname"><a href="namespacefrc.html#a0270d5be5df7a1c90475c59a1508c177">frc::Z_GYRO_OUT</a></div><div class="ttdeci">static constexpr uint8_t Z_GYRO_OUT</div><div class="ttdef"><b>Definition:</b> ADIS16470_IMU.h:62</div></div>
+<div class="ttc" id="anamespacefrc_html_a461aac471ed1c7927743bf39dd5bb8a6"><div class="ttname"><a href="namespacefrc.html#a461aac471ed1c7927743bf39dd5bb8a6">frc::Z_ACCL_OUT</a></div><div class="ttdeci">static constexpr uint8_t Z_ACCL_OUT</div><div class="ttdef"><b>Definition:</b> ADIS16470_IMU.h:74</div></div>
+<div class="ttc" id="anamespacefrc_html_a5bf80bce788ccacc7b787b1ef7ae60e5"><div class="ttname"><a href="namespacefrc.html#a5bf80bce788ccacc7b787b1ef7ae60e5">frc::X_DELTANG_OUT</a></div><div class="ttdeci">static constexpr uint8_t X_DELTANG_OUT</div><div class="ttdef"><b>Definition:</b> ADIS16470_IMU.h:81</div></div>
+<div class="ttc" id="anamespacefrc_html_a9965423405ab3177f327a0fdb759b26a"><div class="ttname"><a href="namespacefrc.html#a9965423405ab3177f327a0fdb759b26a">frc::Y_ACCL_OUT</a></div><div class="ttdeci">static constexpr uint8_t Y_ACCL_OUT</div><div class="ttdef"><b>Definition:</b> ADIS16470_IMU.h:70</div></div>
+<div class="ttc" id="anamespacefrc_html_aa7e2021c52c0548d501cb3ce02d9286c"><div class="ttname"><a href="namespacefrc.html#aa7e2021c52c0548d501cb3ce02d9286c">frc::X_ACCL_OUT</a></div><div class="ttdeci">static constexpr uint8_t X_ACCL_OUT</div><div class="ttdef"><b>Definition:</b> ADIS16470_IMU.h:66</div></div>
+<div class="ttc" id="anamespacefrc_html_aca9c85c19fee9fa92e64d427063b1627"><div class="ttname"><a href="namespacefrc.html#aca9c85c19fee9fa92e64d427063b1627">frc::FLASH_CNT</a></div><div class="ttdeci">static constexpr uint8_t FLASH_CNT</div><div class="ttdef"><b>Definition:</b> ADIS16470_IMU.h:50</div></div>
+<div class="ttc" id="anamespacefrc_html_adfdc99383c421d6a57549d1ac79bc09d"><div class="ttname"><a href="namespacefrc.html#adfdc99383c421d6a57549d1ac79bc09d">frc::X_GYRO_OUT</a></div><div class="ttdeci">static constexpr uint8_t X_GYRO_OUT</div><div class="ttdef"><b>Definition:</b> ADIS16470_IMU.h:54</div></div>
+<div class="ttc" id="anamespacefrc_html_ae02e805c08260158c3b6d82a3c625a47"><div class="ttname"><a href="namespacefrc.html#ae02e805c08260158c3b6d82a3c625a47">frc::Y_GYRO_OUT</a></div><div class="ttdeci">static constexpr uint8_t Y_GYRO_OUT</div><div class="ttdef"><b>Definition:</b> ADIS16470_IMU.h:58</div></div>
+<div class="ttc" id="anamespacefrc_html_af484c575b4576dec999a2c3286a00e8e"><div class="ttname"><a href="namespacefrc.html#af484c575b4576dec999a2c3286a00e8e">frc::X_DELTANG_LOW</a></div><div class="ttdeci">static constexpr uint8_t X_DELTANG_LOW</div><div class="ttdef"><b>Definition:</b> ADIS16470_IMU.h:79</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3bcd5d00397ae55d80a135aff0ee9965" name="a3bcd5d00397ae55d80a135aff0ee9965"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3bcd5d00397ae55d80a135aff0ee9965">&#9670;&nbsp;</a></span>m_autospi_y_packet</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::m_autospi_y_packet[16]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    <a class="code hl_variable" href="namespacefrc.html#a0cb49adee7ec07dc938f1466857f6e97">Y_DELTANG_OUT</a>, <a class="code hl_variable" href="namespacefrc.html#aca9c85c19fee9fa92e64d427063b1627">FLASH_CNT</a>, <a class="code hl_variable" href="namespacefrc.html#a2d760b2356fa3e796327293887c13c1b">Y_DELTANG_LOW</a>, <a class="code hl_variable" href="namespacefrc.html#aca9c85c19fee9fa92e64d427063b1627">FLASH_CNT</a>, <a class="code hl_variable" href="namespacefrc.html#adfdc99383c421d6a57549d1ac79bc09d">X_GYRO_OUT</a>, <a class="code hl_variable" href="namespacefrc.html#aca9c85c19fee9fa92e64d427063b1627">FLASH_CNT</a>,</div>
+<div class="line">    <a class="code hl_variable" href="namespacefrc.html#ae02e805c08260158c3b6d82a3c625a47">Y_GYRO_OUT</a>,    <a class="code hl_variable" href="namespacefrc.html#aca9c85c19fee9fa92e64d427063b1627">FLASH_CNT</a>, <a class="code hl_variable" href="namespacefrc.html#a0270d5be5df7a1c90475c59a1508c177">Z_GYRO_OUT</a>,    <a class="code hl_variable" href="namespacefrc.html#aca9c85c19fee9fa92e64d427063b1627">FLASH_CNT</a>, <a class="code hl_variable" href="namespacefrc.html#aa7e2021c52c0548d501cb3ce02d9286c">X_ACCL_OUT</a>, <a class="code hl_variable" href="namespacefrc.html#aca9c85c19fee9fa92e64d427063b1627">FLASH_CNT</a>,</div>
+<div class="line">    <a class="code hl_variable" href="namespacefrc.html#a9965423405ab3177f327a0fdb759b26a">Y_ACCL_OUT</a>,    <a class="code hl_variable" href="namespacefrc.html#aca9c85c19fee9fa92e64d427063b1627">FLASH_CNT</a>, <a class="code hl_variable" href="namespacefrc.html#a461aac471ed1c7927743bf39dd5bb8a6">Z_ACCL_OUT</a>,    <a class="code hl_variable" href="namespacefrc.html#aca9c85c19fee9fa92e64d427063b1627">FLASH_CNT</a>}</div>
+<div class="ttc" id="anamespacefrc_html_a0cb49adee7ec07dc938f1466857f6e97"><div class="ttname"><a href="namespacefrc.html#a0cb49adee7ec07dc938f1466857f6e97">frc::Y_DELTANG_OUT</a></div><div class="ttdeci">static constexpr uint8_t Y_DELTANG_OUT</div><div class="ttdef"><b>Definition:</b> ADIS16470_IMU.h:85</div></div>
+<div class="ttc" id="anamespacefrc_html_a2d760b2356fa3e796327293887c13c1b"><div class="ttname"><a href="namespacefrc.html#a2d760b2356fa3e796327293887c13c1b">frc::Y_DELTANG_LOW</a></div><div class="ttdeci">static constexpr uint8_t Y_DELTANG_LOW</div><div class="ttdef"><b>Definition:</b> ADIS16470_IMU.h:83</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aeddac997599e76a01bfa24a1093c90a2" name="aeddac997599e76a01bfa24a1093c90a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeddac997599e76a01bfa24a1093c90a2">&#9670;&nbsp;</a></span>m_autospi_z_packet</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::m_autospi_z_packet[16]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
+<div class="line">    <a class="code hl_variable" href="namespacefrc.html#a82ee11482ab5c49b2c643642abe9c331">Z_DELTANG_OUT</a>, <a class="code hl_variable" href="namespacefrc.html#aca9c85c19fee9fa92e64d427063b1627">FLASH_CNT</a>, <a class="code hl_variable" href="namespacefrc.html#a1dfc5c98c1628085f06d6d9621a7b048">Z_DELTANG_LOW</a>, <a class="code hl_variable" href="namespacefrc.html#aca9c85c19fee9fa92e64d427063b1627">FLASH_CNT</a>, <a class="code hl_variable" href="namespacefrc.html#adfdc99383c421d6a57549d1ac79bc09d">X_GYRO_OUT</a>, <a class="code hl_variable" href="namespacefrc.html#aca9c85c19fee9fa92e64d427063b1627">FLASH_CNT</a>,</div>
+<div class="line">    <a class="code hl_variable" href="namespacefrc.html#ae02e805c08260158c3b6d82a3c625a47">Y_GYRO_OUT</a>,    <a class="code hl_variable" href="namespacefrc.html#aca9c85c19fee9fa92e64d427063b1627">FLASH_CNT</a>, <a class="code hl_variable" href="namespacefrc.html#a0270d5be5df7a1c90475c59a1508c177">Z_GYRO_OUT</a>,    <a class="code hl_variable" href="namespacefrc.html#aca9c85c19fee9fa92e64d427063b1627">FLASH_CNT</a>, <a class="code hl_variable" href="namespacefrc.html#aa7e2021c52c0548d501cb3ce02d9286c">X_ACCL_OUT</a>, <a class="code hl_variable" href="namespacefrc.html#aca9c85c19fee9fa92e64d427063b1627">FLASH_CNT</a>,</div>
+<div class="line">    <a class="code hl_variable" href="namespacefrc.html#a9965423405ab3177f327a0fdb759b26a">Y_ACCL_OUT</a>,    <a class="code hl_variable" href="namespacefrc.html#aca9c85c19fee9fa92e64d427063b1627">FLASH_CNT</a>, <a class="code hl_variable" href="namespacefrc.html#a461aac471ed1c7927743bf39dd5bb8a6">Z_ACCL_OUT</a>,    <a class="code hl_variable" href="namespacefrc.html#aca9c85c19fee9fa92e64d427063b1627">FLASH_CNT</a>}</div>
+<div class="ttc" id="anamespacefrc_html_a1dfc5c98c1628085f06d6d9621a7b048"><div class="ttname"><a href="namespacefrc.html#a1dfc5c98c1628085f06d6d9621a7b048">frc::Z_DELTANG_LOW</a></div><div class="ttdeci">static constexpr uint8_t Z_DELTANG_LOW</div><div class="ttdef"><b>Definition:</b> ADIS16470_IMU.h:87</div></div>
+<div class="ttc" id="anamespacefrc_html_a82ee11482ab5c49b2c643642abe9c331"><div class="ttname"><a href="namespacefrc.html#a82ee11482ab5c49b2c643642abe9c331">frc::Z_DELTANG_OUT</a></div><div class="ttdeci">static constexpr uint8_t Z_DELTANG_OUT</div><div class="ttdef"><b>Definition:</b> ADIS16470_IMU.h:89</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5f00eeb83cd11f2d36613e6b8a518c2b" name="a5f00eeb83cd11f2d36613e6b8a518c2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f00eeb83cd11f2d36613e6b8a518c2b">&#9670;&nbsp;</a></span>MSC_CTRL <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::MSC_CTRL = 0x34</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5f00eeb83cd11f2d36613e6b8a518c2b" name="a5f00eeb83cd11f2d36613e6b8a518c2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f00eeb83cd11f2d36613e6b8a518c2b">&#9670;&nbsp;</a></span>MSC_CTRL <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::MSC_CTRL = 0x60</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aecefb8f2f1342fc5e266d7629bdc7b84" name="aecefb8f2f1342fc5e266d7629bdc7b84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecefb8f2f1342fc5e266d7629bdc7b84">&#9670;&nbsp;</a></span>NULL_CNFG</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::NULL_CNFG = 0x66</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a6bd6f612dd62c1c703e83570f282ce38" name="a6bd6f612dd62c1c703e83570f282ce38"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6bd6f612dd62c1c703e83570f282ce38">&#9670;&nbsp;</a></span>Pose2d</h2>
 
@@ -4363,13 +5325,1693 @@ template&lt;int CovDim, int States&gt; </div>
 
 </div>
 </div>
+<a id="a98cae000d2c5f3e8c0df54960bd63245" name="a98cae000d2c5f3e8c0df54960bd63245"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98cae000d2c5f3e8c0df54960bd63245">&#9670;&nbsp;</a></span>PROD_ID <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::PROD_ID = 0x56</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a98cae000d2c5f3e8c0df54960bd63245" name="a98cae000d2c5f3e8c0df54960bd63245"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98cae000d2c5f3e8c0df54960bd63245">&#9670;&nbsp;</a></span>PROD_ID <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::PROD_ID = 0x72</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af7f128539f5e2d1cad934f175d2689f2" name="af7f128539f5e2d1cad934f175d2689f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7f128539f5e2d1cad934f175d2689f2">&#9670;&nbsp;</a></span>rad_to_deg</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const double frc::rad_to_deg = 57.2957795</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ADIS16448 Static Constants. </p>
+
+</div>
+</div>
+<a id="aad06abf235dd26e890ba899aef9cc5e1" name="aad06abf235dd26e890ba899aef9cc5e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad06abf235dd26e890ba899aef9cc5e1">&#9670;&nbsp;</a></span>SENS_AVG</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::SENS_AVG = 0x38</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0207a4c9e95a04f3fd5f5d51228e2941" name="a0207a4c9e95a04f3fd5f5d51228e2941"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0207a4c9e95a04f3fd5f5d51228e2941">&#9670;&nbsp;</a></span>SEQ_CNT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::SEQ_CNT = 0x3A</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2e3bf7fd281c3cf04432ad42b2efc9e9" name="a2e3bf7fd281c3cf04432ad42b2efc9e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e3bf7fd281c3cf04432ad42b2efc9e9">&#9670;&nbsp;</a></span>SERIAL_NUM <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::SERIAL_NUM = 0x58</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2e3bf7fd281c3cf04432ad42b2efc9e9" name="a2e3bf7fd281c3cf04432ad42b2efc9e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e3bf7fd281c3cf04432ad42b2efc9e9">&#9670;&nbsp;</a></span>SERIAL_NUM <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::SERIAL_NUM</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    0x74</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8cc46d9abff37dae5dc78179a8a5f826" name="a8cc46d9abff37dae5dc78179a8a5f826"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cc46d9abff37dae5dc78179a8a5f826">&#9670;&nbsp;</a></span>SMPL_PRD</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::SMPL_PRD</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    0x36</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae60be315bb3f292b75d928378964c422" name="ae60be315bb3f292b75d928378964c422"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae60be315bb3f292b75d928378964c422">&#9670;&nbsp;</a></span>TEMP_OUT <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::TEMP_OUT = 0x18</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae60be315bb3f292b75d928378964c422" name="ae60be315bb3f292b75d928378964c422"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae60be315bb3f292b75d928378964c422">&#9670;&nbsp;</a></span>TEMP_OUT <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::TEMP_OUT</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    0x1C</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7b43f30071c1008eada93fcade9adfc6" name="a7b43f30071c1008eada93fcade9adfc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b43f30071c1008eada93fcade9adfc6">&#9670;&nbsp;</a></span>TIME_STAMP</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::TIME_STAMP = 0x1E</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afdcd0476459ace2fec8aef143a4157d1" name="afdcd0476459ace2fec8aef143a4157d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdcd0476459ace2fec8aef143a4157d1">&#9670;&nbsp;</a></span>UP_SCALE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::UP_SCALE = 0x62</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8a6276075ba113646af3936882e3ef7e" name="a8a6276075ba113646af3936882e3ef7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a6276075ba113646af3936882e3ef7e">&#9670;&nbsp;</a></span>USER_SCR1</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::USER_SCR1 = 0x76</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0fcffca1818d908d7ff1a86cc2d61f9f" name="a0fcffca1818d908d7ff1a86cc2d61f9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fcffca1818d908d7ff1a86cc2d61f9f">&#9670;&nbsp;</a></span>USER_SCR2</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::USER_SCR2 = 0x78</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4e41c83ef2d7b3e97ff876c36a5ffc76" name="a4e41c83ef2d7b3e97ff876c36a5ffc76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e41c83ef2d7b3e97ff876c36a5ffc76">&#9670;&nbsp;</a></span>USER_SCR3</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::USER_SCR3 = 0x7A</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a37eaf630b0a2ec224593b5bfa3f6df87" name="a37eaf630b0a2ec224593b5bfa3f6df87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37eaf630b0a2ec224593b5bfa3f6df87">&#9670;&nbsp;</a></span>X_ACCL_LOW</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::X_ACCL_LOW</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    0x10</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa7e2021c52c0548d501cb3ce02d9286c" name="aa7e2021c52c0548d501cb3ce02d9286c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7e2021c52c0548d501cb3ce02d9286c">&#9670;&nbsp;</a></span>X_ACCL_OUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::X_ACCL_OUT</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    0x12</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af484c575b4576dec999a2c3286a00e8e" name="af484c575b4576dec999a2c3286a00e8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af484c575b4576dec999a2c3286a00e8e">&#9670;&nbsp;</a></span>X_DELTANG_LOW</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::X_DELTANG_LOW</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    0x24</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5bf80bce788ccacc7b787b1ef7ae60e5" name="a5bf80bce788ccacc7b787b1ef7ae60e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bf80bce788ccacc7b787b1ef7ae60e5">&#9670;&nbsp;</a></span>X_DELTANG_OUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::X_DELTANG_OUT</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    0x26</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a82a391244f7e082fd8290b2f0b2c91cf" name="a82a391244f7e082fd8290b2f0b2c91cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82a391244f7e082fd8290b2f0b2c91cf">&#9670;&nbsp;</a></span>X_DELTVEL_LOW</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::X_DELTVEL_LOW</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    0x30</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a53ea2aac9b04b869e2e5f6414aced1d8" name="a53ea2aac9b04b869e2e5f6414aced1d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53ea2aac9b04b869e2e5f6414aced1d8">&#9670;&nbsp;</a></span>X_DELTVEL_OUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::X_DELTVEL_OUT</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    0x32</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac73f7a63c9ad8f6b47841bc82e0e70d3" name="ac73f7a63c9ad8f6b47841bc82e0e70d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac73f7a63c9ad8f6b47841bc82e0e70d3">&#9670;&nbsp;</a></span>X_GYRO_LOW</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::X_GYRO_LOW</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    0x04</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="adfdc99383c421d6a57549d1ac79bc09d" name="adfdc99383c421d6a57549d1ac79bc09d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfdc99383c421d6a57549d1ac79bc09d">&#9670;&nbsp;</a></span>X_GYRO_OUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::X_GYRO_OUT</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    0x06</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3b04e430f7a22dd88a8c2c88e7773b99" name="a3b04e430f7a22dd88a8c2c88e7773b99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b04e430f7a22dd88a8c2c88e7773b99">&#9670;&nbsp;</a></span>XA_BIAS_HIGH</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::XA_BIAS_HIGH</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    0x4E</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad855a2802bc529a7755380cef4f738cf" name="ad855a2802bc529a7755380cef4f738cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad855a2802bc529a7755380cef4f738cf">&#9670;&nbsp;</a></span>XA_BIAS_LOW</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::XA_BIAS_LOW</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    0x4C</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9736681b27256690b4f1736f30a3228f" name="a9736681b27256690b4f1736f30a3228f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9736681b27256690b4f1736f30a3228f">&#9670;&nbsp;</a></span>XACCL_OFF</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::XACCL_OFF</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    0x20</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4c7cc9f300b3ff5a6c9ea6ab53e25c23" name="a4c7cc9f300b3ff5a6c9ea6ab53e25c23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c7cc9f300b3ff5a6c9ea6ab53e25c23">&#9670;&nbsp;</a></span>XACCL_OUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::XACCL_OUT = 0x0A</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afae2c58d6548269fade1a55aee292bb4" name="afae2c58d6548269fade1a55aee292bb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afae2c58d6548269fade1a55aee292bb4">&#9670;&nbsp;</a></span>XG_BIAS_HIGH</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::XG_BIAS_HIGH</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    0x42</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a73562fe1919e6bb76dac59238433f15e" name="a73562fe1919e6bb76dac59238433f15e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73562fe1919e6bb76dac59238433f15e">&#9670;&nbsp;</a></span>XG_BIAS_LOW</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::XG_BIAS_LOW</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    0x40</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac7030337d9ea1f3a07278380a9b29c1e" name="ac7030337d9ea1f3a07278380a9b29c1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7030337d9ea1f3a07278380a9b29c1e">&#9670;&nbsp;</a></span>XGYRO_OFF</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::XGYRO_OFF</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    0x1A</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aaa94cf97d086ec44e4e4ae517beb2e49" name="aaa94cf97d086ec44e4e4ae517beb2e49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa94cf97d086ec44e4e4ae517beb2e49">&#9670;&nbsp;</a></span>XGYRO_OUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::XGYRO_OUT = 0x04</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afccdbc767c41d2b6f6ce27d7a6e2fbb8" name="afccdbc767c41d2b6f6ce27d7a6e2fbb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afccdbc767c41d2b6f6ce27d7a6e2fbb8">&#9670;&nbsp;</a></span>XMAGN_HIC</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::XMAGN_HIC</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    0x26</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a91357c807f875b674e38b60a6c101043" name="a91357c807f875b674e38b60a6c101043"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91357c807f875b674e38b60a6c101043">&#9670;&nbsp;</a></span>XMAGN_OUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::XMAGN_OUT = 0x10</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad439125d299bac3ac71180b9b2e46f27" name="ad439125d299bac3ac71180b9b2e46f27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad439125d299bac3ac71180b9b2e46f27">&#9670;&nbsp;</a></span>XMAGN_SIC</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::XMAGN_SIC</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    0x2C</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6782ac5d22de42ea851d0cdb323ccf54" name="a6782ac5d22de42ea851d0cdb323ccf54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6782ac5d22de42ea851d0cdb323ccf54">&#9670;&nbsp;</a></span>Y_ACCL_LOW</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::Y_ACCL_LOW</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    0x14</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9965423405ab3177f327a0fdb759b26a" name="a9965423405ab3177f327a0fdb759b26a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9965423405ab3177f327a0fdb759b26a">&#9670;&nbsp;</a></span>Y_ACCL_OUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::Y_ACCL_OUT</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    0x16</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2d760b2356fa3e796327293887c13c1b" name="a2d760b2356fa3e796327293887c13c1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d760b2356fa3e796327293887c13c1b">&#9670;&nbsp;</a></span>Y_DELTANG_LOW</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::Y_DELTANG_LOW</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    0x28</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a0cb49adee7ec07dc938f1466857f6e97" name="a0cb49adee7ec07dc938f1466857f6e97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cb49adee7ec07dc938f1466857f6e97">&#9670;&nbsp;</a></span>Y_DELTANG_OUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::Y_DELTANG_OUT</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    0x2A</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab4c0786fcabe6366e4b0b4ce674451f7" name="ab4c0786fcabe6366e4b0b4ce674451f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4c0786fcabe6366e4b0b4ce674451f7">&#9670;&nbsp;</a></span>Y_DELTVEL_LOW</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::Y_DELTVEL_LOW</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    0x34</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="acbf0e589b171bc234d79491d665db0db" name="acbf0e589b171bc234d79491d665db0db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbf0e589b171bc234d79491d665db0db">&#9670;&nbsp;</a></span>Y_DELTVEL_OUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::Y_DELTVEL_OUT</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    0x36</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a57794094b92bec989780b6254ff86435" name="a57794094b92bec989780b6254ff86435"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57794094b92bec989780b6254ff86435">&#9670;&nbsp;</a></span>Y_GYRO_LOW</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::Y_GYRO_LOW</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    0x08</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae02e805c08260158c3b6d82a3c625a47" name="ae02e805c08260158c3b6d82a3c625a47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae02e805c08260158c3b6d82a3c625a47">&#9670;&nbsp;</a></span>Y_GYRO_OUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::Y_GYRO_OUT</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    0x0A</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a86ffff509ec3337252598165ef269afc" name="a86ffff509ec3337252598165ef269afc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86ffff509ec3337252598165ef269afc">&#9670;&nbsp;</a></span>YA_BIAS_HIGH</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::YA_BIAS_HIGH</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    0x52</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aebbe74aeb83296370c5a59d123ab77fd" name="aebbe74aeb83296370c5a59d123ab77fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebbe74aeb83296370c5a59d123ab77fd">&#9670;&nbsp;</a></span>YA_BIAS_LOW</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::YA_BIAS_LOW</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    0x50</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5a6c5803bcdf154b653784cd6de6b50d" name="a5a6c5803bcdf154b653784cd6de6b50d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a6c5803bcdf154b653784cd6de6b50d">&#9670;&nbsp;</a></span>YACCL_OFF</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::YACCL_OFF</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    0x22</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5bee329fb7a8f1c15dff62f36bc8c914" name="a5bee329fb7a8f1c15dff62f36bc8c914"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bee329fb7a8f1c15dff62f36bc8c914">&#9670;&nbsp;</a></span>YACCL_OUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::YACCL_OUT = 0x0C</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abc8c17462992d39e9ee731f089dbd07b" name="abc8c17462992d39e9ee731f089dbd07b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc8c17462992d39e9ee731f089dbd07b">&#9670;&nbsp;</a></span>YG_BIAS_HIGH</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::YG_BIAS_HIGH</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    0x46</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a997cb3f1656b0309411aa522cd1804fc" name="a997cb3f1656b0309411aa522cd1804fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a997cb3f1656b0309411aa522cd1804fc">&#9670;&nbsp;</a></span>YG_BIAS_LOW</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::YG_BIAS_LOW</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    0x44</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad90a1b1999ec827a3fda0a2321132d07" name="ad90a1b1999ec827a3fda0a2321132d07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad90a1b1999ec827a3fda0a2321132d07">&#9670;&nbsp;</a></span>YGYRO_OFF</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::YGYRO_OFF</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    0x1C</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a267c8a851e2f8f6cfb3204caabdabb65" name="a267c8a851e2f8f6cfb3204caabdabb65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a267c8a851e2f8f6cfb3204caabdabb65">&#9670;&nbsp;</a></span>YGYRO_OUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::YGYRO_OUT = 0x06</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa5c1d5f63a8f91d1b497d9bdccee94fb" name="aa5c1d5f63a8f91d1b497d9bdccee94fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5c1d5f63a8f91d1b497d9bdccee94fb">&#9670;&nbsp;</a></span>YMAGN_HIC</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::YMAGN_HIC</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    0x28</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a163cc649e567608f0cefa88e9bb531cc" name="a163cc649e567608f0cefa88e9bb531cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a163cc649e567608f0cefa88e9bb531cc">&#9670;&nbsp;</a></span>YMAGN_OUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::YMAGN_OUT = 0x12</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a246885d3631775fee4b9721913373139" name="a246885d3631775fee4b9721913373139"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a246885d3631775fee4b9721913373139">&#9670;&nbsp;</a></span>YMAGN_SIC</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::YMAGN_SIC</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    0x2E</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aea7dc94c478596b241f4b607a9ebbde7" name="aea7dc94c478596b241f4b607a9ebbde7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea7dc94c478596b241f4b607a9ebbde7">&#9670;&nbsp;</a></span>Z_ACCL_LOW</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::Z_ACCL_LOW</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    0x18</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a461aac471ed1c7927743bf39dd5bb8a6" name="a461aac471ed1c7927743bf39dd5bb8a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a461aac471ed1c7927743bf39dd5bb8a6">&#9670;&nbsp;</a></span>Z_ACCL_OUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::Z_ACCL_OUT</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    0x1A</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a1dfc5c98c1628085f06d6d9621a7b048" name="a1dfc5c98c1628085f06d6d9621a7b048"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dfc5c98c1628085f06d6d9621a7b048">&#9670;&nbsp;</a></span>Z_DELTANG_LOW</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::Z_DELTANG_LOW</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    0x2C</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a82ee11482ab5c49b2c643642abe9c331" name="a82ee11482ab5c49b2c643642abe9c331"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82ee11482ab5c49b2c643642abe9c331">&#9670;&nbsp;</a></span>Z_DELTANG_OUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::Z_DELTANG_OUT</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    0x2E</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a10a665d0fdfba407dcda1661530a2ef8" name="a10a665d0fdfba407dcda1661530a2ef8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10a665d0fdfba407dcda1661530a2ef8">&#9670;&nbsp;</a></span>Z_DELTVEL_LOW</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::Z_DELTVEL_LOW</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    0x38</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a86a6c9d0076247af06291cbf2e0d62e2" name="a86a6c9d0076247af06291cbf2e0d62e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86a6c9d0076247af06291cbf2e0d62e2">&#9670;&nbsp;</a></span>Z_DELTVEL_OUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::Z_DELTVEL_OUT</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    0x3A</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9dcc20f36217d3572c2ba9c5c88163d1" name="a9dcc20f36217d3572c2ba9c5c88163d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dcc20f36217d3572c2ba9c5c88163d1">&#9670;&nbsp;</a></span>Z_GYRO_LOW</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::Z_GYRO_LOW</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    0x0C</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a0270d5be5df7a1c90475c59a1508c177" name="a0270d5be5df7a1c90475c59a1508c177"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0270d5be5df7a1c90475c59a1508c177">&#9670;&nbsp;</a></span>Z_GYRO_OUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::Z_GYRO_OUT</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    0x0E</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="adbfc7d663037dc8ad06ef4ab8a10d865" name="adbfc7d663037dc8ad06ef4ab8a10d865"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbfc7d663037dc8ad06ef4ab8a10d865">&#9670;&nbsp;</a></span>ZA_BIAS_HIGH</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::ZA_BIAS_HIGH</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    0x56</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aff72f615349de67f699967134e4ffca4" name="aff72f615349de67f699967134e4ffca4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff72f615349de67f699967134e4ffca4">&#9670;&nbsp;</a></span>ZA_BIAS_LOW</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::ZA_BIAS_LOW</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    0x54</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af6de5e9bb79545fcc95481d0376df3ff" name="af6de5e9bb79545fcc95481d0376df3ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6de5e9bb79545fcc95481d0376df3ff">&#9670;&nbsp;</a></span>ZACCL_OFF</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::ZACCL_OFF</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    0x24</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a229cd1c295ca6d5d98fe6611688ac912" name="a229cd1c295ca6d5d98fe6611688ac912"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a229cd1c295ca6d5d98fe6611688ac912">&#9670;&nbsp;</a></span>ZACCL_OUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::ZACCL_OUT = 0x0E</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5ef37444a4442d71f65d741aef2944a4" name="a5ef37444a4442d71f65d741aef2944a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ef37444a4442d71f65d741aef2944a4">&#9670;&nbsp;</a></span>ZG_BIAS_HIGH</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::ZG_BIAS_HIGH</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    0x4A</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a22e0662b7b390de30e66353e7dcf7252" name="a22e0662b7b390de30e66353e7dcf7252"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22e0662b7b390de30e66353e7dcf7252">&#9670;&nbsp;</a></span>ZG_BIAS_LOW</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::ZG_BIAS_LOW</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    0x48</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9fda93e217e758dd97788fe39d5f5e58" name="a9fda93e217e758dd97788fe39d5f5e58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fda93e217e758dd97788fe39d5f5e58">&#9670;&nbsp;</a></span>ZGYRO_OFF</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::ZGYRO_OFF</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    0x1E</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7dbcb72b45b09c003f6fed60c20c37c4" name="a7dbcb72b45b09c003f6fed60c20c37c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dbcb72b45b09c003f6fed60c20c37c4">&#9670;&nbsp;</a></span>ZGYRO_OUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::ZGYRO_OUT = 0x08</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7c4e97a290138c4d9cc5cae588f222c9" name="a7c4e97a290138c4d9cc5cae588f222c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c4e97a290138c4d9cc5cae588f222c9">&#9670;&nbsp;</a></span>ZMAGN_HIC</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::ZMAGN_HIC</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    0x2A</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a19cc0d2b395024f842e36b90c40ec594" name="a19cc0d2b395024f842e36b90c40ec594"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19cc0d2b395024f842e36b90c40ec594">&#9670;&nbsp;</a></span>ZMAGN_OUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::ZMAGN_OUT = 0x14</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a61c7614c9a1ca6a67754c107b220c32f" name="a61c7614c9a1ca6a67754c107b220c32f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61c7614c9a1ca6a67754c107b220c32f">&#9670;&nbsp;</a></span>ZMAGN_SIC</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr uint8_t frc::ZMAGN_SIC</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    0x30</div>
+</div><!-- fragment -->
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacefrc.html">frc</a></li>
-    <li class="footer">Generated on Fri Dec 31 2021 03:11:38 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Fri Dec 31 2021 03:46:55 for WPILibC++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 </body>

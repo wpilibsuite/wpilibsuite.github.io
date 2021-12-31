@@ -1,5 +1,24 @@
 var searchData=
 [
-  ['y_0',['y',['../structfrc_1_1_spline_1_1_control_vector.html#afd356b7244bceb1c2206177a0281500f',1,'frc::Spline::ControlVector::y()'],['../structfrc_1_1_vector2d.html#aa4269191722377f2ab3ab82440bc7661',1,'frc::Vector2d::y()'],['../namespace_eigen_1_1internal.html#a3cc80fc03610837da180f7e6d8e7b3ec',1,'Eigen::internal::y()'],['../namespace_eigen_1_1numext.html#a36862639fe0e8879b650a1111db1eec6',1,'Eigen::numext::y()']]],
-  ['yaxis_1',['YAxis',['../structfrc_1_1_a_d_x_l345___i2_c_1_1_all_axes.html#a375fa745ce776f8c7e21c55dc778eaeb',1,'frc::ADXL345_I2C::AllAxes::YAxis()'],['../structfrc_1_1_a_d_x_l345___s_p_i_1_1_all_axes.html#a5c871c94e1391d82f3cd65a8a1f97434',1,'frc::ADXL345_SPI::AllAxes::YAxis()'],['../structfrc_1_1_a_d_x_l362_1_1_all_axes.html#a965ef5a451165cc62db79901e0dc390b',1,'frc::ADXL362::AllAxes::YAxis()']]]
+  ['y_0',['y',['../structfrc_1_1_vector2d.html#aa4269191722377f2ab3ab82440bc7661',1,'frc::Vector2d::y()'],['../structfrc_1_1_spline_1_1_control_vector.html#afd356b7244bceb1c2206177a0281500f',1,'frc::Spline::ControlVector::y()'],['../namespace_eigen_1_1internal.html#a3cc80fc03610837da180f7e6d8e7b3ec',1,'Eigen::internal::y()'],['../namespace_eigen_1_1numext.html#a36862639fe0e8879b650a1111db1eec6',1,'Eigen::numext::y()']]],
+  ['y_5faccl_5flow_1',['Y_ACCL_LOW',['../namespacefrc.html#a6782ac5d22de42ea851d0cdb323ccf54',1,'frc']]],
+  ['y_5faccl_5fout_2',['Y_ACCL_OUT',['../namespacefrc.html#a9965423405ab3177f327a0fdb759b26a',1,'frc']]],
+  ['y_5fdeltang_5flow_3',['Y_DELTANG_LOW',['../namespacefrc.html#a2d760b2356fa3e796327293887c13c1b',1,'frc']]],
+  ['y_5fdeltang_5fout_4',['Y_DELTANG_OUT',['../namespacefrc.html#a0cb49adee7ec07dc938f1466857f6e97',1,'frc']]],
+  ['y_5fdeltvel_5flow_5',['Y_DELTVEL_LOW',['../namespacefrc.html#ab4c0786fcabe6366e4b0b4ce674451f7',1,'frc']]],
+  ['y_5fdeltvel_5fout_6',['Y_DELTVEL_OUT',['../namespacefrc.html#acbf0e589b171bc234d79491d665db0db',1,'frc']]],
+  ['y_5fgyro_5flow_7',['Y_GYRO_LOW',['../namespacefrc.html#a57794094b92bec989780b6254ff86435',1,'frc']]],
+  ['y_5fgyro_5fout_8',['Y_GYRO_OUT',['../namespacefrc.html#ae02e805c08260158c3b6d82a3c625a47',1,'frc']]],
+  ['ya_5fbias_5fhigh_9',['YA_BIAS_HIGH',['../namespacefrc.html#a86ffff509ec3337252598165ef269afc',1,'frc']]],
+  ['ya_5fbias_5flow_10',['YA_BIAS_LOW',['../namespacefrc.html#aebbe74aeb83296370c5a59d123ab77fd',1,'frc']]],
+  ['yaccl_5foff_11',['YACCL_OFF',['../namespacefrc.html#a5a6c5803bcdf154b653784cd6de6b50d',1,'frc']]],
+  ['yaccl_5fout_12',['YACCL_OUT',['../namespacefrc.html#a5bee329fb7a8f1c15dff62f36bc8c914',1,'frc']]],
+  ['yaxis_13',['YAxis',['../structfrc_1_1_a_d_x_l362_1_1_all_axes.html#a965ef5a451165cc62db79901e0dc390b',1,'frc::ADXL362::AllAxes::YAxis()'],['../structfrc_1_1_a_d_x_l345___s_p_i_1_1_all_axes.html#a5c871c94e1391d82f3cd65a8a1f97434',1,'frc::ADXL345_SPI::AllAxes::YAxis()'],['../structfrc_1_1_a_d_x_l345___i2_c_1_1_all_axes.html#a375fa745ce776f8c7e21c55dc778eaeb',1,'frc::ADXL345_I2C::AllAxes::YAxis()']]],
+  ['yg_5fbias_5fhigh_14',['YG_BIAS_HIGH',['../namespacefrc.html#abc8c17462992d39e9ee731f089dbd07b',1,'frc']]],
+  ['yg_5fbias_5flow_15',['YG_BIAS_LOW',['../namespacefrc.html#a997cb3f1656b0309411aa522cd1804fc',1,'frc']]],
+  ['ygyro_5foff_16',['YGYRO_OFF',['../namespacefrc.html#ad90a1b1999ec827a3fda0a2321132d07',1,'frc']]],
+  ['ygyro_5fout_17',['YGYRO_OUT',['../namespacefrc.html#a267c8a851e2f8f6cfb3204caabdabb65',1,'frc']]],
+  ['ymagn_5fhic_18',['YMAGN_HIC',['../namespacefrc.html#aa5c1d5f63a8f91d1b497d9bdccee94fb',1,'frc']]],
+  ['ymagn_5fout_19',['YMAGN_OUT',['../namespacefrc.html#a163cc649e567608f0cefa88e9bb531cc',1,'frc']]],
+  ['ymagn_5fsic_20',['YMAGN_SIC',['../namespacefrc.html#a246885d3631775fee4b9721913373139',1,'frc']]]
 ];

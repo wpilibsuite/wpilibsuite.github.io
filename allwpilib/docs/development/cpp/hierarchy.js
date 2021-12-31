@@ -2210,6 +2210,7 @@ var hierarchy =
     [ "wpi::object_deleter< T >", "structwpi_1_1object__deleter.html", null ],
     [ "wpi::object_deleter< T[N]>", "structwpi_1_1object__deleter_3_01_t_0f_n_0e_4.html", null ],
     [ "frc::KalmanFilterLatencyCompensator< States, Inputs, Outputs, KalmanFilterType >::ObserverSnapshot", "structfrc_1_1_kalman_filter_latency_compensator_1_1_observer_snapshot.html", null ],
+    [ "frc::offset_data", "structfrc_1_1offset__data.html", null ],
     [ "Eigen::internal::operator_bitwise_helper< T >", "struct_eigen_1_1internal_1_1operator__bitwise__helper.html", [
       [ "Eigen::internal::bitwise_helper< T, typename internal::enable_if< is_scalar< T >::value &&(NumTraits< T >::IsInteger||NumTraits< T >::RequireInitialization)>::type >", "struct_eigen_1_1internal_1_1bitwise__helper_3_01_t_00_01typename_01internal_1_1enable__if_3_01is511f9b17390a86cf8902d79021239f89.html", null ]
     ] ],
@@ -2867,6 +2868,8 @@ var hierarchy =
       [ "frc::UpDownCounter", "classfrc_1_1_up_down_counter.html", null ],
       [ "nt::NTSendable", "classnt_1_1_n_t_sendable.html", [
         [ "frc2::CommandScheduler", "classfrc2_1_1_command_scheduler.html", null ],
+        [ "frc::ADIS16448_IMU", "classfrc_1_1_a_d_i_s16448___i_m_u.html", null ],
+        [ "frc::ADIS16470_IMU", "classfrc_1_1_a_d_i_s16470___i_m_u.html", null ],
         [ "frc::ADXL345_I2C", "classfrc_1_1_a_d_x_l345___i2_c.html", null ],
         [ "frc::ADXL345_SPI", "classfrc_1_1_a_d_x_l345___s_p_i.html", null ],
         [ "frc::ADXL362", "classfrc_1_1_a_d_x_l362.html", null ],
@@ -2884,6 +2887,12 @@ var hierarchy =
       ] ]
     ] ],
     [ "wpi::SendableHelper< Derived >", "classwpi_1_1_sendable_helper.html", null ],
+    [ "wpi::SendableHelper< ADIS16448_IMU >", "classwpi_1_1_sendable_helper.html", [
+      [ "frc::ADIS16448_IMU", "classfrc_1_1_a_d_i_s16448___i_m_u.html", null ]
+    ] ],
+    [ "wpi::SendableHelper< ADIS16470_IMU >", "classwpi_1_1_sendable_helper.html", [
+      [ "frc::ADIS16470_IMU", "classfrc_1_1_a_d_i_s16470___i_m_u.html", null ]
+    ] ],
     [ "wpi::SendableHelper< ADXL345_I2C >", "classwpi_1_1_sendable_helper.html", [
       [ "frc::ADXL345_I2C", "classfrc_1_1_a_d_x_l345___i2_c.html", null ]
     ] ],
