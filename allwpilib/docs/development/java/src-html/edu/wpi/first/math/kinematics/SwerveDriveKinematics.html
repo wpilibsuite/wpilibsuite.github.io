@@ -92,8 +92,8 @@
 <span class="sourceLineNo">080</span><a id="line.80">   *     component, the robot will rotate around that corner.</a>
 <span class="sourceLineNo">081</span><a id="line.81">   * @return An array containing the module states. Use caution because these module states are not</a>
 <span class="sourceLineNo">082</span><a id="line.82">   *     normalized. Sometimes, a user input may cause one of the module speeds to go above the</a>
-<span class="sourceLineNo">083</span><a id="line.83">   *     attainable max velocity. Use the {@link #normalizeWheelSpeeds(SwerveModuleState[], double)</a>
-<span class="sourceLineNo">084</span><a id="line.84">   *     normalizeWheelSpeeds} function to rectify this issue.</a>
+<span class="sourceLineNo">083</span><a id="line.83">   *     attainable max velocity. Use the {@link #desaturateWheelSpeeds(SwerveModuleState[], double)</a>
+<span class="sourceLineNo">084</span><a id="line.84">   *     DesaturateWheelSpeeds} function to rectify this issue.</a>
 <span class="sourceLineNo">085</span><a id="line.85">   */</a>
 <span class="sourceLineNo">086</span><a id="line.86">  @SuppressWarnings("LocalVariableName")</a>
 <span class="sourceLineNo">087</span><a id="line.87">  public SwerveModuleState[] toSwerveModuleStates(</a>
@@ -183,27 +183,28 @@
 <span class="sourceLineNo">171</span><a id="line.171">  }</a>
 <span class="sourceLineNo">172</span><a id="line.172"></a>
 <span class="sourceLineNo">173</span><a id="line.173">  /**</a>
-<span class="sourceLineNo">174</span><a id="line.174">   * Normalizes the wheel speeds using some max attainable speed. Sometimes, after inverse</a>
-<span class="sourceLineNo">175</span><a id="line.175">   * kinematics, the requested speed from a/several modules may be above the max attainable speed</a>
-<span class="sourceLineNo">176</span><a id="line.176">   * for the driving motor on that module. To fix this issue, one can "normalize" all the wheel</a>
-<span class="sourceLineNo">177</span><a id="line.177">   * speeds to make sure that all requested module speeds are below the absolute threshold, while</a>
-<span class="sourceLineNo">178</span><a id="line.178">   * maintaining the ratio of speeds between modules.</a>
-<span class="sourceLineNo">179</span><a id="line.179">   *</a>
-<span class="sourceLineNo">180</span><a id="line.180">   * @param moduleStates Reference to array of module states. The array will be mutated with the</a>
-<span class="sourceLineNo">181</span><a id="line.181">   *     normalized speeds!</a>
-<span class="sourceLineNo">182</span><a id="line.182">   * @param attainableMaxSpeedMetersPerSecond The absolute max speed that a module can reach.</a>
-<span class="sourceLineNo">183</span><a id="line.183">   */</a>
-<span class="sourceLineNo">184</span><a id="line.184">  public static void normalizeWheelSpeeds(</a>
-<span class="sourceLineNo">185</span><a id="line.185">      SwerveModuleState[] moduleStates, double attainableMaxSpeedMetersPerSecond) {</a>
-<span class="sourceLineNo">186</span><a id="line.186">    double realMaxSpeed = Collections.max(Arrays.asList(moduleStates)).speedMetersPerSecond;</a>
-<span class="sourceLineNo">187</span><a id="line.187">    if (realMaxSpeed &gt; attainableMaxSpeedMetersPerSecond) {</a>
-<span class="sourceLineNo">188</span><a id="line.188">      for (SwerveModuleState moduleState : moduleStates) {</a>
-<span class="sourceLineNo">189</span><a id="line.189">        moduleState.speedMetersPerSecond =</a>
-<span class="sourceLineNo">190</span><a id="line.190">            moduleState.speedMetersPerSecond / realMaxSpeed * attainableMaxSpeedMetersPerSecond;</a>
-<span class="sourceLineNo">191</span><a id="line.191">      }</a>
-<span class="sourceLineNo">192</span><a id="line.192">    }</a>
-<span class="sourceLineNo">193</span><a id="line.193">  }</a>
-<span class="sourceLineNo">194</span><a id="line.194">}</a>
+<span class="sourceLineNo">174</span><a id="line.174">   * Renormalizes the wheel speeds if any individual speed is above the specified maximum.</a>
+<span class="sourceLineNo">175</span><a id="line.175">   *</a>
+<span class="sourceLineNo">176</span><a id="line.176">   * &lt;p&gt;Sometimes, after inverse kinematics, the requested speed from one or more modules may be</a>
+<span class="sourceLineNo">177</span><a id="line.177">   * above the max attainable speed for the driving motor on that module. To fix this issue, one can</a>
+<span class="sourceLineNo">178</span><a id="line.178">   * reduce all the wheel speeds to make sure that all requested module speeds are at-or-below the</a>
+<span class="sourceLineNo">179</span><a id="line.179">   * absolute threshold, while maintaining the ratio of speeds between modules.</a>
+<span class="sourceLineNo">180</span><a id="line.180">   *</a>
+<span class="sourceLineNo">181</span><a id="line.181">   * @param moduleStates Reference to array of module states. The array will be mutated with the</a>
+<span class="sourceLineNo">182</span><a id="line.182">   *     normalized speeds!</a>
+<span class="sourceLineNo">183</span><a id="line.183">   * @param attainableMaxSpeedMetersPerSecond The absolute max speed that a module can reach.</a>
+<span class="sourceLineNo">184</span><a id="line.184">   */</a>
+<span class="sourceLineNo">185</span><a id="line.185">  public static void desaturateWheelSpeeds(</a>
+<span class="sourceLineNo">186</span><a id="line.186">      SwerveModuleState[] moduleStates, double attainableMaxSpeedMetersPerSecond) {</a>
+<span class="sourceLineNo">187</span><a id="line.187">    double realMaxSpeed = Collections.max(Arrays.asList(moduleStates)).speedMetersPerSecond;</a>
+<span class="sourceLineNo">188</span><a id="line.188">    if (realMaxSpeed &gt; attainableMaxSpeedMetersPerSecond) {</a>
+<span class="sourceLineNo">189</span><a id="line.189">      for (SwerveModuleState moduleState : moduleStates) {</a>
+<span class="sourceLineNo">190</span><a id="line.190">        moduleState.speedMetersPerSecond =</a>
+<span class="sourceLineNo">191</span><a id="line.191">            moduleState.speedMetersPerSecond / realMaxSpeed * attainableMaxSpeedMetersPerSecond;</a>
+<span class="sourceLineNo">192</span><a id="line.192">      }</a>
+<span class="sourceLineNo">193</span><a id="line.193">    }</a>
+<span class="sourceLineNo">194</span><a id="line.194">  }</a>
+<span class="sourceLineNo">195</span><a id="line.195">}</a>
 
 
 

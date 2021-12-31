@@ -372,7 +372,7 @@
 <span class="sourceLineNo">360</span><a id="line.360">   * @return The normalized input.</a>
 <span class="sourceLineNo">361</span><a id="line.361">   */</a>
 <span class="sourceLineNo">362</span><a id="line.362">  protected Matrix&lt;N2, N1&gt; clampInput(Matrix&lt;N2, N1&gt; u) {</a>
-<span class="sourceLineNo">363</span><a id="line.363">    return StateSpaceUtil.normalizeInputVector(u, RobotController.getBatteryVoltage());</a>
+<span class="sourceLineNo">363</span><a id="line.363">    return StateSpaceUtil.desaturateInputVector(u, RobotController.getBatteryVoltage());</a>
 <span class="sourceLineNo">364</span><a id="line.364">  }</a>
 <span class="sourceLineNo">365</span><a id="line.365"></a>
 <span class="sourceLineNo">366</span><a id="line.366">  /** Represents the different states of the drivetrain. */</a>

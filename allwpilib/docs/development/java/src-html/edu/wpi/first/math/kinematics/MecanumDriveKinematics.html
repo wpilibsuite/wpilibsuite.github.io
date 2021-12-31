@@ -98,7 +98,7 @@
 <span class="sourceLineNo">086</span><a id="line.86">   *     component, the robot will rotate around that corner.</a>
 <span class="sourceLineNo">087</span><a id="line.87">   * @return The wheel speeds. Use caution because they are not normalized. Sometimes, a user input</a>
 <span class="sourceLineNo">088</span><a id="line.88">   *     may cause one of the wheel speeds to go above the attainable max velocity. Use the {@link</a>
-<span class="sourceLineNo">089</span><a id="line.89">   *     MecanumDriveWheelSpeeds#normalize(double)} function to rectify this issue.</a>
+<span class="sourceLineNo">089</span><a id="line.89">   *     MecanumDriveWheelSpeeds#desaturate(double)} function to rectify this issue.</a>
 <span class="sourceLineNo">090</span><a id="line.90">   */</a>
 <span class="sourceLineNo">091</span><a id="line.91">  public MecanumDriveWheelSpeeds toWheelSpeeds(</a>
 <span class="sourceLineNo">092</span><a id="line.92">      ChassisSpeeds chassisSpeeds, Translation2d centerOfRotationMeters) {</a>

@@ -371,7 +371,7 @@
 <span class="sourceLineNo">359</span><a id="line.359">        m_controller.calculate(m_pose.get(), desiredState, m_desiredRotation.get());</a>
 <span class="sourceLineNo">360</span><a id="line.360">    var targetWheelSpeeds = m_kinematics.toWheelSpeeds(targetChassisSpeeds);</a>
 <span class="sourceLineNo">361</span><a id="line.361"></a>
-<span class="sourceLineNo">362</span><a id="line.362">    targetWheelSpeeds.normalize(m_maxWheelVelocityMetersPerSecond);</a>
+<span class="sourceLineNo">362</span><a id="line.362">    targetWheelSpeeds.desaturate(m_maxWheelVelocityMetersPerSecond);</a>
 <span class="sourceLineNo">363</span><a id="line.363"></a>
 <span class="sourceLineNo">364</span><a id="line.364">    var frontLeftSpeedSetpoint = targetWheelSpeeds.frontLeftMetersPerSecond;</a>
 <span class="sourceLineNo">365</span><a id="line.365">    var rearLeftSpeedSetpoint = targetWheelSpeeds.rearLeftMetersPerSecond;</a>

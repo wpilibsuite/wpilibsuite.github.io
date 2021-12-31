@@ -69,7 +69,7 @@
 <span class="sourceLineNo">057</span><a id="line.57">        controller,</a>
 <span class="sourceLineNo">058</span><a id="line.58">        new LinearPlantInversionFeedforward&lt;&gt;(plant, dtSeconds),</a>
 <span class="sourceLineNo">059</span><a id="line.59">        observer,</a>
-<span class="sourceLineNo">060</span><a id="line.60">        u -&gt; StateSpaceUtil.normalizeInputVector(u, maxVoltageVolts));</a>
+<span class="sourceLineNo">060</span><a id="line.60">        u -&gt; StateSpaceUtil.desaturateInputVector(u, maxVoltageVolts));</a>
 <span class="sourceLineNo">061</span><a id="line.61">  }</a>
 <span class="sourceLineNo">062</span><a id="line.62"></a>
 <span class="sourceLineNo">063</span><a id="line.63">  /**</a>
@@ -116,7 +116,7 @@
 <span class="sourceLineNo">104</span><a id="line.104">        controller,</a>
 <span class="sourceLineNo">105</span><a id="line.105">        feedforward,</a>
 <span class="sourceLineNo">106</span><a id="line.106">        observer,</a>
-<span class="sourceLineNo">107</span><a id="line.107">        u -&gt; StateSpaceUtil.normalizeInputVector(u, maxVoltageVolts));</a>
+<span class="sourceLineNo">107</span><a id="line.107">        u -&gt; StateSpaceUtil.desaturateInputVector(u, maxVoltageVolts));</a>
 <span class="sourceLineNo">108</span><a id="line.108">  }</a>
 <span class="sourceLineNo">109</span><a id="line.109"></a>
 <span class="sourceLineNo">110</span><a id="line.110">  /**</a>

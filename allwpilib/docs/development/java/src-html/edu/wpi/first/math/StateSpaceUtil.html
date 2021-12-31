@@ -165,7 +165,7 @@
 <span class="sourceLineNo">153</span><a id="line.153">  }</a>
 <span class="sourceLineNo">154</span><a id="line.154"></a>
 <span class="sourceLineNo">155</span><a id="line.155">  /**</a>
-<span class="sourceLineNo">156</span><a id="line.156">   * Normalize all inputs if any excedes the maximum magnitude. Useful for systems such as</a>
+<span class="sourceLineNo">156</span><a id="line.156">   * Renormalize all inputs if any exceeds the maximum magnitude. Useful for systems such as</a>
 <span class="sourceLineNo">157</span><a id="line.157">   * differential drivetrains.</a>
 <span class="sourceLineNo">158</span><a id="line.158">   *</a>
 <span class="sourceLineNo">159</span><a id="line.159">   * @param u The input vector.</a>
@@ -173,7 +173,7 @@
 <span class="sourceLineNo">161</span><a id="line.161">   * @param &lt;I&gt; The number of inputs.</a>
 <span class="sourceLineNo">162</span><a id="line.162">   * @return The normalizedInput</a>
 <span class="sourceLineNo">163</span><a id="line.163">   */</a>
-<span class="sourceLineNo">164</span><a id="line.164">  public static &lt;I extends Num&gt; Matrix&lt;I, N1&gt; normalizeInputVector(</a>
+<span class="sourceLineNo">164</span><a id="line.164">  public static &lt;I extends Num&gt; Matrix&lt;I, N1&gt; desaturateInputVector(</a>
 <span class="sourceLineNo">165</span><a id="line.165">      Matrix&lt;I, N1&gt; u, double maxMagnitude) {</a>
 <span class="sourceLineNo">166</span><a id="line.166">    double maxValue = u.maxAbs();</a>
 <span class="sourceLineNo">167</span><a id="line.167">    boolean isCapped = maxValue &gt; maxMagnitude;</a>
