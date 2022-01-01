@@ -1,5 +1,9 @@
 var NAVTREEINDEX164 =
 {
+"struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet2f_01_4.html#a38ecc9bf646ead4cd47c13073c9be2f8":[4,0,7,4,1395,1],
+"struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet2f_01_4.html#a47244fe23db856d6688aa4304fa71ba6":[4,0,7,4,1395,2],
+"struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet2f_01_4.html#a47244fe23db856d6688aa4304fa71ba6":[5,0,4,2,1393,2],
+"struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet2i_01_4.html":[5,0,4,2,1394],
 "struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet2i_01_4.html":[4,0,7,4,1396],
 "struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet2i_01_4.html#a9616d03c8c5cc855c0db0609914cff77":[5,0,4,2,1394,1],
 "struct_eigen_1_1internal_1_1unpacket__traits_3_01_packet2i_01_4.html#a9616d03c8c5cc855c0db0609914cff77":[4,0,7,4,1396,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX164 =
 "struct_h_a_l___d_m_a_sample.html#af6b614251f68cd8bfebd5416a884b712":[3,1,29,0,0],
 "struct_h_a_l___joystick_axes.html":[3,1,32,1],
 "struct_h_a_l___joystick_axes.html#ac0601f26133aad58e9ef4dadf146de6d":[3,1,32,1,1],
-"struct_h_a_l___joystick_axes.html#ae17b86ab52dea8557afcde52a10af779":[3,1,32,1,0],
-"struct_h_a_l___joystick_buttons.html":[3,1,32,3],
-"struct_h_a_l___joystick_buttons.html#a38ec62e88472f4c7918af189d4043cd4":[3,1,32,3,0],
-"struct_h_a_l___joystick_buttons.html#ad2aeabb6cc9c523c765132c1749e82fd":[3,1,32,3,1],
-"struct_h_a_l___joystick_descriptor.html":[3,1,32,4]
+"struct_h_a_l___joystick_axes.html#ae17b86ab52dea8557afcde52a10af779":[3,1,32,1,0]
 };

@@ -1,5 +1,9 @@
 var NAVTREEINDEX169 =
 {
+"structfrc_1_1_p_s4_controller_1_1_axis.html#a8cbbd793d659eb8c2e9833448e3bbf37":[5,0,6,144,0,2],
+"structfrc_1_1_p_s4_controller_1_1_axis.html#a8cbbd793d659eb8c2e9833448e3bbf37":[4,0,9,148,0,2],
+"structfrc_1_1_p_s4_controller_1_1_button.html":[5,0,6,144,1],
+"structfrc_1_1_p_s4_controller_1_1_button.html":[4,0,9,148,1],
 "structfrc_1_1_p_s4_controller_1_1_button.html#a277e67c0f719e90494700d1dd29d6782":[4,0,9,148,1,12],
 "structfrc_1_1_p_s4_controller_1_1_button.html#a277e67c0f719e90494700d1dd29d6782":[5,0,6,144,1,12],
 "structfrc_1_1_p_s4_controller_1_1_button.html#a2f08c343289e971faf79ed12a13a1330":[5,0,6,144,1,4],
@@ -245,9 +249,5 @@ var NAVTREEINDEX169 =
 "structfrc_1_1_swerve_module_state.html":[5,0,6,202],
 "structfrc_1_1_swerve_module_state.html":[4,0,9,206],
 "structfrc_1_1_swerve_module_state.html#a156f23b8877aebb0820c48e2e536ae43":[4,0,9,206,0],
-"structfrc_1_1_swerve_module_state.html#a156f23b8877aebb0820c48e2e536ae43":[5,0,6,202,0],
-"structfrc_1_1_swerve_module_state.html#a686b128ca4f86f83788ef08024523fa8":[4,0,9,206,2],
-"structfrc_1_1_swerve_module_state.html#a686b128ca4f86f83788ef08024523fa8":[5,0,6,202,2],
-"structfrc_1_1_swerve_module_state.html#ab8c668b9aaea89c1ce37502c09c18c0c":[5,0,6,202,1],
-"structfrc_1_1_swerve_module_state.html#ab8c668b9aaea89c1ce37502c09c18c0c":[4,0,9,206,1]
+"structfrc_1_1_swerve_module_state.html#a156f23b8877aebb0820c48e2e536ae43":[5,0,6,202,0]
 };

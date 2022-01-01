@@ -637,7 +637,7 @@ var searchData=
   ['getsecond_634',['getSecond',['../structwpi_1_1detail_1_1_dense_map_pair.html#abac9483debab584be9671ca707cbca2c',1,'wpi::detail::DenseMapPair::getSecond() const'],['../structwpi_1_1detail_1_1_dense_map_pair.html#a7c66538739d6172405c643159e27d40a',1,'wpi::detail::DenseMapPair::getSecond()']]],
   ['getselected_635',['GetSelected',['../classfrc_1_1_sendable_chooser.html#a80e334966831bfc40c0498e256dbf739',1,'frc::SendableChooser']]],
   ['getsendable_636',['GetSendable',['../classwpi_1_1_sendable_registry.html#a1fd9a7c0264195d2b9d8e321e7cd4319',1,'wpi::SendableRegistry']]],
-  ['getsendablecamerawrapper_637',['GetSendableCameraWrapper',['../namespacefrc_1_1detail.html#a24edaf9aa18e20819b781e5e0407632a',1,'frc::detail']]],
+  ['getsendablecamerawrapper_637',['GetSendableCameraWrapper',['../namespacefrc_1_1detail.html#a90b0aec968eaf7b479274b4643e47879',1,'frc::detail']]],
   ['getsendqueuecount_638',['GetSendQueueCount',['../classwpi_1_1uv_1_1_udp.html#a601a52a6eb38772e688cfeee50d5e81d',1,'wpi::uv::Udp']]],
   ['getsendqueuesize_639',['GetSendQueueSize',['../classwpi_1_1uv_1_1_udp.html#a9cf1c0cda5eaf54431f8f863a4143cf0',1,'wpi::uv::Udp']]],
   ['getserver_640',['GetServer',['../classfrc_1_1_camera_server.html#aed7ae0275f068c641f8c48d73c362b6c',1,'frc::CameraServer::GetServer()'],['../classfrc_1_1_camera_server.html#a6cb21420afd03361abe164ea1cb15bf6',1,'frc::CameraServer::GetServer(std::string_view name)']]],

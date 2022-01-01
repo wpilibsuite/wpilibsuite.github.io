@@ -1,5 +1,9 @@
 var NAVTREEINDEX168 =
 {
+"structdragonbox_1_1float__info_3_01float_01_4.html#a8841e713f9fc7d0c37b3a5bb187c468c":[4,0,5,3,7],
+"structdragonbox_1_1float__info_3_01float_01_4.html#a911eab5205c78be0e2e0a1567a1d2b3b":[4,0,5,3,3],
+"structdragonbox_1_1float__info_3_01float_01_4.html#a911eab5205c78be0e2e0a1567a1d2b3b":[5,0,2,3,3],
+"structdragonbox_1_1float__info_3_01float_01_4.html#a981c1dff6331cee782417a864a57b33c":[5,0,2,3,2],
 "structdragonbox_1_1float__info_3_01float_01_4.html#a981c1dff6331cee782417a864a57b33c":[4,0,5,3,2],
 "structdragonbox_1_1float__info_3_01float_01_4.html#a9cce74756bd380756e6d62cc177f7c11":[4,0,5,3,18],
 "structdragonbox_1_1float__info_3_01float_01_4.html#a9cce74756bd380756e6d62cc177f7c11":[5,0,2,3,18],
@@ -245,9 +249,5 @@ var NAVTREEINDEX168 =
 "structfrc_1_1_p_s4_controller_1_1_axis.html#a86c7321e37b1dada95c66a165bca6c85":[4,0,9,148,0,4],
 "structfrc_1_1_p_s4_controller_1_1_axis.html#a86c7321e37b1dada95c66a165bca6c85":[5,0,6,144,0,4],
 "structfrc_1_1_p_s4_controller_1_1_axis.html#a8706b7d02be28856fab55aed81f1fa1a":[5,0,6,144,0,0],
-"structfrc_1_1_p_s4_controller_1_1_axis.html#a8706b7d02be28856fab55aed81f1fa1a":[4,0,9,148,0,0],
-"structfrc_1_1_p_s4_controller_1_1_axis.html#a8cbbd793d659eb8c2e9833448e3bbf37":[5,0,6,144,0,2],
-"structfrc_1_1_p_s4_controller_1_1_axis.html#a8cbbd793d659eb8c2e9833448e3bbf37":[4,0,9,148,0,2],
-"structfrc_1_1_p_s4_controller_1_1_button.html":[5,0,6,144,1],
-"structfrc_1_1_p_s4_controller_1_1_button.html":[4,0,9,148,1]
+"structfrc_1_1_p_s4_controller_1_1_axis.html#a8706b7d02be28856fab55aed81f1fa1a":[4,0,9,148,0,0]
 };

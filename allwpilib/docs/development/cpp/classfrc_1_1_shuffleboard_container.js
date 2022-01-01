@@ -18,6 +18,7 @@ var classfrc_1_1_shuffleboard_container =
     [ "Add", "classfrc_1_1_shuffleboard_container.html#ace2ffcff409cd270a928ff6ac63c9aa1", null ],
     [ "AddBoolean", "classfrc_1_1_shuffleboard_container.html#a1096ca6bb667f374c53e764533ec52de", null ],
     [ "AddBooleanArray", "classfrc_1_1_shuffleboard_container.html#a21cf26f9843d16e890ead31498ae1b00", null ],
+    [ "AddCamera", "classfrc_1_1_shuffleboard_container.html#a207fdd571bc73df0cccc5e4b6641e4e2", null ],
     [ "AddNumber", "classfrc_1_1_shuffleboard_container.html#a185b3a0483508b904578d3605194e491", null ],
     [ "AddNumberArray", "classfrc_1_1_shuffleboard_container.html#a9b57ced98c80e96ae39cf531056a1682", null ],
     [ "AddPersistent", "classfrc_1_1_shuffleboard_container.html#a838c2b6b4e4b112c98920d92311b6f49", null ],

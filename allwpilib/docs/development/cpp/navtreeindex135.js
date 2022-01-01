@@ -1,5 +1,9 @@
 var NAVTREEINDEX135 =
 {
+"products_2_general_block_panel_kernel_8h.html#af54c39fce85e0ecb82abea537c4f5593":[6,0,3,0,0,1,2,0,27],
+"products_2_general_block_panel_kernel_8h.html#afd0fd36ec2339c1bdd08a5cb65e13af4":[6,0,3,0,0,1,2,0,26],
+"products_2_general_block_panel_kernel_8h.html#afdeb6ba09f15bc99d1ceac589d8a3b25":[6,0,3,0,0,1,2,0,31],
+"products_2_general_block_panel_kernel_8h_source.html":[6,0,3,0,0,1,2,0],
 "radiation_8h.html":[6,0,12,33],
 "radiation_8h.html#a1771e96618514d3b4eb5510397d618ba":[6,0,12,33,5],
 "radiation_8h.html#a34ce607bc5674e28cfa6087e7022a02d":[6,0,12,33,3],
@@ -245,9 +249,5 @@ var NAVTREEINDEX135 =
 "struct_eigen_1_1_num_traits_3_01_array_3_01_scalar_00_01_rows_00_01_cols_00_01_options_00_01_max_rows_00_01_max_cols_01_4_01_4.html#a4724a5585f6b9bb8b5b3bdce7de6f3bd":[5,0,4,120,4],
 "struct_eigen_1_1_num_traits_3_01_array_3_01_scalar_00_01_rows_00_01_cols_00_01_options_00_01_max_rows_00_01_max_cols_01_4_01_4.html#a4724a5585f6b9bb8b5b3bdce7de6f3bd":[4,0,7,123,4],
 "struct_eigen_1_1_num_traits_3_01_array_3_01_scalar_00_01_rows_00_01_cols_00_01_options_00_01_max_rows_00_01_max_cols_01_4_01_4.html#a4b36f130a9f51f5012d2630ca70431d7":[5,0,4,120,5],
-"struct_eigen_1_1_num_traits_3_01_array_3_01_scalar_00_01_rows_00_01_cols_00_01_options_00_01_max_rows_00_01_max_cols_01_4_01_4.html#a4b36f130a9f51f5012d2630ca70431d7":[4,0,7,123,5],
-"struct_eigen_1_1_num_traits_3_01_array_3_01_scalar_00_01_rows_00_01_cols_00_01_options_00_01_max_rows_00_01_max_cols_01_4_01_4.html#aa65515eccc2c3f0f88080835c975fbc2":[5,0,4,120,0],
-"struct_eigen_1_1_num_traits_3_01_array_3_01_scalar_00_01_rows_00_01_cols_00_01_options_00_01_max_rows_00_01_max_cols_01_4_01_4.html#aa65515eccc2c3f0f88080835c975fbc2":[4,0,7,123,0],
-"struct_eigen_1_1_num_traits_3_01_array_3_01_scalar_00_01_rows_00_01_cols_00_01_options_00_01_max_rows_00_01_max_cols_01_4_01_4.html#ac42a505b6455600139fa25a967de04d6":[4,0,7,123,7],
-"struct_eigen_1_1_num_traits_3_01_array_3_01_scalar_00_01_rows_00_01_cols_00_01_options_00_01_max_rows_00_01_max_cols_01_4_01_4.html#ac42a505b6455600139fa25a967de04d6":[5,0,4,120,7]
+"struct_eigen_1_1_num_traits_3_01_array_3_01_scalar_00_01_rows_00_01_cols_00_01_options_00_01_max_rows_00_01_max_cols_01_4_01_4.html#a4b36f130a9f51f5012d2630ca70431d7":[4,0,7,123,5]
 };

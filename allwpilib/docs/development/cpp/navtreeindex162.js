@@ -1,5 +1,9 @@
 var NAVTREEINDEX162 =
 {
+"struct_eigen_1_1internal_1_1type__casting__traits_3_01float_00_01numext_1_1int64__t_01_4.html":[4,0,7,4,1288],
+"struct_eigen_1_1internal_1_1type__casting__traits_3_01float_00_01numext_1_1int8__t_01_4.html":[5,0,4,2,1287],
+"struct_eigen_1_1internal_1_1type__casting__traits_3_01float_00_01numext_1_1int8__t_01_4.html":[4,0,7,4,1289],
+"struct_eigen_1_1internal_1_1type__casting__traits_3_01float_00_01numext_1_1uint16__t_01_4.html":[5,0,4,2,1288],
 "struct_eigen_1_1internal_1_1type__casting__traits_3_01float_00_01numext_1_1uint16__t_01_4.html":[4,0,7,4,1290],
 "struct_eigen_1_1internal_1_1type__casting__traits_3_01float_00_01numext_1_1uint32__t_01_4.html":[4,0,7,4,1291],
 "struct_eigen_1_1internal_1_1type__casting__traits_3_01float_00_01numext_1_1uint32__t_01_4.html":[5,0,4,2,1289],
@@ -245,9 +249,5 @@ var NAVTREEINDEX162 =
 "struct_eigen_1_1internal_1_1unary__evaluator_3_01_cwise_unary_view_3_01_unary_op_00_01_arg_type_01_4_00_01_index_based_01_4.html#a1dc4e0e9eada10c0155463701f494246":[5,0,4,2,1371,7],
 "struct_eigen_1_1internal_1_1unary__evaluator_3_01_cwise_unary_view_3_01_unary_op_00_01_arg_type_01_4_00_01_index_based_01_4.html#a54cdd967b6d7ddc1cc61edc52f20798d":[4,0,7,4,1373,8],
 "struct_eigen_1_1internal_1_1unary__evaluator_3_01_cwise_unary_view_3_01_unary_op_00_01_arg_type_01_4_00_01_index_based_01_4.html#a54cdd967b6d7ddc1cc61edc52f20798d":[5,0,4,2,1371,8],
-"struct_eigen_1_1internal_1_1unary__evaluator_3_01_cwise_unary_view_3_01_unary_op_00_01_arg_type_01_4_00_01_index_based_01_4.html#a619bcf2d07a67587972232fc18cc2fb9":[4,0,7,4,1373,9],
-"struct_eigen_1_1internal_1_1unary__evaluator_3_01_cwise_unary_view_3_01_unary_op_00_01_arg_type_01_4_00_01_index_based_01_4.html#a619bcf2d07a67587972232fc18cc2fb9":[5,0,4,2,1371,9],
-"struct_eigen_1_1internal_1_1unary__evaluator_3_01_cwise_unary_view_3_01_unary_op_00_01_arg_type_01_4_00_01_index_based_01_4.html#a9edbb6c7f6ae15ad3e8cc4123632a531":[4,0,7,4,1373,6],
-"struct_eigen_1_1internal_1_1unary__evaluator_3_01_cwise_unary_view_3_01_unary_op_00_01_arg_type_01_4_00_01_index_based_01_4.html#a9edbb6c7f6ae15ad3e8cc4123632a531":[5,0,4,2,1371,6],
-"struct_eigen_1_1internal_1_1unary__evaluator_3_01_cwise_unary_view_3_01_unary_op_00_01_arg_type_01_4_00_01_index_based_01_4.html#aaa618f8ab4054698507a28e7bd389c24":[4,0,7,4,1373,2]
+"struct_eigen_1_1internal_1_1unary__evaluator_3_01_cwise_unary_view_3_01_unary_op_00_01_arg_type_01_4_00_01_index_based_01_4.html#a619bcf2d07a67587972232fc18cc2fb9":[4,0,7,4,1373,9]
 };

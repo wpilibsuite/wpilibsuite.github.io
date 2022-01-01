@@ -1,5 +1,9 @@
 var NAVTREEINDEX152 =
 {
+"struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01double_01_4_01_4.html#aa201000fa7adc5d0ff2556c0b138f0e2":[5,0,4,2,778,3],
+"struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html":[4,0,7,4,781],
+"struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html":[5,0,4,2,779],
+"struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a26ca9289181f825939af56a94afc23db":[4,0,7,4,781,2],
 "struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a26ca9289181f825939af56a94afc23db":[5,0,4,2,779,2],
 "struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a26ca9289181f825939af56a94afc23db":[5,0,4,2,779,0],
 "struct_eigen_1_1internal_1_1packet__traits_3_01std_1_1complex_3_01float_01_4_01_4.html#a26ca9289181f825939af56a94afc23db":[4,0,7,4,781,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX152 =
 "struct_eigen_1_1internal_1_1pow__impl.html#ab43c85f98bf7849582d90d5044d3c5fd":[4,0,7,4,828,0],
 "struct_eigen_1_1internal_1_1pow__impl_3_01_scalar_x_00_01_scalar_y_00_01true_01_4.html":[5,0,4,2,827],
 "struct_eigen_1_1internal_1_1pow__impl_3_01_scalar_x_00_01_scalar_y_00_01true_01_4.html":[4,0,7,4,829],
-"struct_eigen_1_1internal_1_1pow__impl_3_01_scalar_x_00_01_scalar_y_00_01true_01_4.html#a03ee925b6c3569dc25b880c04d22063a":[5,0,4,2,827,0],
-"struct_eigen_1_1internal_1_1pow__impl_3_01_scalar_x_00_01_scalar_y_00_01true_01_4.html#a03ee925b6c3569dc25b880c04d22063a":[4,0,7,4,829,0],
-"struct_eigen_1_1internal_1_1pow__impl_3_01_scalar_x_00_01_scalar_y_00_01true_01_4.html#a77a3eb6ae98679ed7ad23b6a965b4221":[5,0,4,2,827,1],
-"struct_eigen_1_1internal_1_1pow__impl_3_01_scalar_x_00_01_scalar_y_00_01true_01_4.html#a77a3eb6ae98679ed7ad23b6a965b4221":[4,0,7,4,829,1],
-"struct_eigen_1_1internal_1_1ppolevl.html":[5,0,4,2,828]
+"struct_eigen_1_1internal_1_1pow__impl_3_01_scalar_x_00_01_scalar_y_00_01true_01_4.html#a03ee925b6c3569dc25b880c04d22063a":[5,0,4,2,827,0]
 };
