@@ -138,56 +138,68 @@
 <span class="sourceLineNo">126</span><a id="line.126">    return m_module.getAnalogVoltage(0);</a>
 <span class="sourceLineNo">127</span><a id="line.127">  }</a>
 <span class="sourceLineNo">128</span><a id="line.128"></a>
-<span class="sourceLineNo">129</span><a id="line.129">  /** Disable the compressor. */</a>
-<span class="sourceLineNo">130</span><a id="line.130">  public void disable() {</a>
-<span class="sourceLineNo">131</span><a id="line.131">    m_module.disableCompressor();</a>
-<span class="sourceLineNo">132</span><a id="line.132">  }</a>
-<span class="sourceLineNo">133</span><a id="line.133"></a>
-<span class="sourceLineNo">134</span><a id="line.134">  /** Enable compressor closed loop control using digital input. */</a>
-<span class="sourceLineNo">135</span><a id="line.135">  public void enableDigital() {</a>
-<span class="sourceLineNo">136</span><a id="line.136">    m_module.enableCompressorDigital();</a>
+<span class="sourceLineNo">129</span><a id="line.129">  /**</a>
+<span class="sourceLineNo">130</span><a id="line.130">   * Query the analog sensor pressure (on channel 0) (if supported). Note this is only for use with</a>
+<span class="sourceLineNo">131</span><a id="line.131">   * the REV Analog Pressure Sensor.</a>
+<span class="sourceLineNo">132</span><a id="line.132">   *</a>
+<span class="sourceLineNo">133</span><a id="line.133">   * @return The analog sensor pressure, in PSI</a>
+<span class="sourceLineNo">134</span><a id="line.134">   */</a>
+<span class="sourceLineNo">135</span><a id="line.135">  public double getPressure() {</a>
+<span class="sourceLineNo">136</span><a id="line.136">    return m_module.getPressure(0);</a>
 <span class="sourceLineNo">137</span><a id="line.137">  }</a>
 <span class="sourceLineNo">138</span><a id="line.138"></a>
-<span class="sourceLineNo">139</span><a id="line.139">  /**</a>
-<span class="sourceLineNo">140</span><a id="line.140">   * Enable compressor closed loop control using analog input.</a>
-<span class="sourceLineNo">141</span><a id="line.141">   *</a>
-<span class="sourceLineNo">142</span><a id="line.142">   * &lt;p&gt;On CTRE PCM, this will enable digital control.</a>
-<span class="sourceLineNo">143</span><a id="line.143">   *</a>
-<span class="sourceLineNo">144</span><a id="line.144">   * @param minAnalogVoltage The minimum voltage to enable compressor</a>
-<span class="sourceLineNo">145</span><a id="line.145">   * @param maxAnalogVoltage The maximum voltage to disable compressor</a>
-<span class="sourceLineNo">146</span><a id="line.146">   */</a>
-<span class="sourceLineNo">147</span><a id="line.147">  public void enableAnalog(double minAnalogVoltage, double maxAnalogVoltage) {</a>
-<span class="sourceLineNo">148</span><a id="line.148">    m_module.enableCompressorAnalog(minAnalogVoltage, maxAnalogVoltage);</a>
-<span class="sourceLineNo">149</span><a id="line.149">  }</a>
-<span class="sourceLineNo">150</span><a id="line.150"></a>
-<span class="sourceLineNo">151</span><a id="line.151">  /**</a>
-<span class="sourceLineNo">152</span><a id="line.152">   * Enable compressor closed loop control using hybrid input.</a>
-<span class="sourceLineNo">153</span><a id="line.153">   *</a>
-<span class="sourceLineNo">154</span><a id="line.154">   * &lt;p&gt;On CTRE PCM, this will enable digital control.</a>
-<span class="sourceLineNo">155</span><a id="line.155">   *</a>
-<span class="sourceLineNo">156</span><a id="line.156">   * @param minAnalogVoltage The minimum voltage to enable compressor</a>
-<span class="sourceLineNo">157</span><a id="line.157">   * @param maxAnalogVoltage The maximum voltage to disable compressor</a>
-<span class="sourceLineNo">158</span><a id="line.158">   */</a>
-<span class="sourceLineNo">159</span><a id="line.159">  public void enableHybrid(double minAnalogVoltage, double maxAnalogVoltage) {</a>
-<span class="sourceLineNo">160</span><a id="line.160">    m_module.enableCompressorHybrid(minAnalogVoltage, maxAnalogVoltage);</a>
-<span class="sourceLineNo">161</span><a id="line.161">  }</a>
-<span class="sourceLineNo">162</span><a id="line.162"></a>
-<span class="sourceLineNo">163</span><a id="line.163">  /**</a>
-<span class="sourceLineNo">164</span><a id="line.164">   * Gets the current operating mode of the Compressor.</a>
+<span class="sourceLineNo">139</span><a id="line.139">  /** Disable the compressor. */</a>
+<span class="sourceLineNo">140</span><a id="line.140">  public void disable() {</a>
+<span class="sourceLineNo">141</span><a id="line.141">    m_module.disableCompressor();</a>
+<span class="sourceLineNo">142</span><a id="line.142">  }</a>
+<span class="sourceLineNo">143</span><a id="line.143"></a>
+<span class="sourceLineNo">144</span><a id="line.144">  /** Enable compressor closed loop control using digital input. */</a>
+<span class="sourceLineNo">145</span><a id="line.145">  public void enableDigital() {</a>
+<span class="sourceLineNo">146</span><a id="line.146">    m_module.enableCompressorDigital();</a>
+<span class="sourceLineNo">147</span><a id="line.147">  }</a>
+<span class="sourceLineNo">148</span><a id="line.148"></a>
+<span class="sourceLineNo">149</span><a id="line.149">  /**</a>
+<span class="sourceLineNo">150</span><a id="line.150">   * Enable compressor closed loop control using analog input. Note this is only for use with the</a>
+<span class="sourceLineNo">151</span><a id="line.151">   * REV Analog Pressure Sensor.</a>
+<span class="sourceLineNo">152</span><a id="line.152">   *</a>
+<span class="sourceLineNo">153</span><a id="line.153">   * &lt;p&gt;On CTRE PCM, this will enable digital control.</a>
+<span class="sourceLineNo">154</span><a id="line.154">   *</a>
+<span class="sourceLineNo">155</span><a id="line.155">   * @param minPressure The minimum pressure in PSI to enable compressor</a>
+<span class="sourceLineNo">156</span><a id="line.156">   * @param maxPressure The maximum pressure in PSI to disable compressor</a>
+<span class="sourceLineNo">157</span><a id="line.157">   */</a>
+<span class="sourceLineNo">158</span><a id="line.158">  public void enableAnalog(double minPressure, double maxPressure) {</a>
+<span class="sourceLineNo">159</span><a id="line.159">    m_module.enableCompressorAnalog(minPressure, maxPressure);</a>
+<span class="sourceLineNo">160</span><a id="line.160">  }</a>
+<span class="sourceLineNo">161</span><a id="line.161"></a>
+<span class="sourceLineNo">162</span><a id="line.162">  /**</a>
+<span class="sourceLineNo">163</span><a id="line.163">   * Enable compressor closed loop control using hybrid input. Note this is only for use with the</a>
+<span class="sourceLineNo">164</span><a id="line.164">   * REV Analog Pressure Sensor.</a>
 <span class="sourceLineNo">165</span><a id="line.165">   *</a>
-<span class="sourceLineNo">166</span><a id="line.166">   * @return true if compressor is operating on closed-loop mode</a>
-<span class="sourceLineNo">167</span><a id="line.167">   */</a>
-<span class="sourceLineNo">168</span><a id="line.168">  public CompressorConfigType getConfigType() {</a>
-<span class="sourceLineNo">169</span><a id="line.169">    return m_module.getCompressorConfigType();</a>
-<span class="sourceLineNo">170</span><a id="line.170">  }</a>
-<span class="sourceLineNo">171</span><a id="line.171"></a>
-<span class="sourceLineNo">172</span><a id="line.172">  @Override</a>
-<span class="sourceLineNo">173</span><a id="line.173">  public void initSendable(SendableBuilder builder) {</a>
-<span class="sourceLineNo">174</span><a id="line.174">    builder.setSmartDashboardType("Compressor");</a>
-<span class="sourceLineNo">175</span><a id="line.175">    builder.addBooleanProperty("Enabled", this::enabled, null);</a>
-<span class="sourceLineNo">176</span><a id="line.176">    builder.addBooleanProperty("Pressure switch", this::getPressureSwitchValue, null);</a>
-<span class="sourceLineNo">177</span><a id="line.177">  }</a>
-<span class="sourceLineNo">178</span><a id="line.178">}</a>
+<span class="sourceLineNo">166</span><a id="line.166">   * &lt;p&gt;On CTRE PCM, this will enable digital control.</a>
+<span class="sourceLineNo">167</span><a id="line.167">   *</a>
+<span class="sourceLineNo">168</span><a id="line.168">   * @param minPressure The minimum pressure in PSI to enable compressor</a>
+<span class="sourceLineNo">169</span><a id="line.169">   * @param maxPressure The maximum pressure in PSI to disable compressor</a>
+<span class="sourceLineNo">170</span><a id="line.170">   */</a>
+<span class="sourceLineNo">171</span><a id="line.171">  public void enableHybrid(double minPressure, double maxPressure) {</a>
+<span class="sourceLineNo">172</span><a id="line.172">    m_module.enableCompressorHybrid(minPressure, maxPressure);</a>
+<span class="sourceLineNo">173</span><a id="line.173">  }</a>
+<span class="sourceLineNo">174</span><a id="line.174"></a>
+<span class="sourceLineNo">175</span><a id="line.175">  /**</a>
+<span class="sourceLineNo">176</span><a id="line.176">   * Gets the current operating mode of the Compressor.</a>
+<span class="sourceLineNo">177</span><a id="line.177">   *</a>
+<span class="sourceLineNo">178</span><a id="line.178">   * @return true if compressor is operating on closed-loop mode</a>
+<span class="sourceLineNo">179</span><a id="line.179">   */</a>
+<span class="sourceLineNo">180</span><a id="line.180">  public CompressorConfigType getConfigType() {</a>
+<span class="sourceLineNo">181</span><a id="line.181">    return m_module.getCompressorConfigType();</a>
+<span class="sourceLineNo">182</span><a id="line.182">  }</a>
+<span class="sourceLineNo">183</span><a id="line.183"></a>
+<span class="sourceLineNo">184</span><a id="line.184">  @Override</a>
+<span class="sourceLineNo">185</span><a id="line.185">  public void initSendable(SendableBuilder builder) {</a>
+<span class="sourceLineNo">186</span><a id="line.186">    builder.setSmartDashboardType("Compressor");</a>
+<span class="sourceLineNo">187</span><a id="line.187">    builder.addBooleanProperty("Enabled", this::enabled, null);</a>
+<span class="sourceLineNo">188</span><a id="line.188">    builder.addBooleanProperty("Pressure switch", this::getPressureSwitchValue, null);</a>
+<span class="sourceLineNo">189</span><a id="line.189">  }</a>
+<span class="sourceLineNo">190</span><a id="line.190">}</a>
 
 
 
